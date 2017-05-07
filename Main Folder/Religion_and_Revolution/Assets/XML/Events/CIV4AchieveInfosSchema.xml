@@ -1,0 +1,86 @@
+<!-- Sid Meier's Civilization 4 -->
+<!-- Achievement Infos Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="BuildingType" content="textOnly"/>
+	<ElementType name="UnitType" content="textOnly"/>
+	<ElementType name="ProfessionType" content="textOnly"/>
+	<ElementType name="YieldType" content="textOnly"/>
+	<ElementType name="iNumber" content="textOnly" dt:type="int"/>
+	<ElementType name="NumBuilding" content="eltOnly">
+		<element type="BuildingType"/>
+		<element type="iNumber"/>
+	</ElementType>
+	<ElementType name="NumUnit" content="eltOnly">
+		<element type="UnitType"/>
+		<element type="iNumber"/>
+	</ElementType>
+	<ElementType name="NumProfession" content="eltOnly">
+		<element type="ProfessionType"/>
+		<element type="iNumber"/>
+	</ElementType>
+	<ElementType name="YieldProduce" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iNumber"/>
+	</ElementType>
+	<ElementType name="NumBuildings" content="eltOnly">
+		<element type="NumBuilding" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="NumUnits" content="eltOnly">
+		<element type="NumUnit" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="NumProfessions" content="eltOnly">
+		<element type="NumProfession" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldProduced" content="eltOnly">
+		<element type="YieldProduce" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="bActive" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAfterMove" content="textOnly" dt:type="boolean"/>
+	<ElementType name="HeaderTextKey" content="textOnly"/>
+	<ElementType name="BodyTextKey" content="textOnly"/>
+	<ElementType name="PictureFileName" content="textOnly"/>
+	<ElementType name="iPictureX" content="textOnly" dt:type="int"/>
+	<ElementType name="iPictureY" content="textOnly" dt:type="int"/>
+	<ElementType name="iLowTurnNumber" content="textOnly" dt:type="int"/>
+	<ElementType name="iHighTurnNumber" content="textOnly" dt:type="int"/>
+	<ElementType name="bLandDiscovered" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDiscoverEast" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDiscoverWest" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iNumColonies" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumEuroContacts" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumNativeContacts" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumGoodsTraded" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumCombatsWonNeeded" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumSeaCombatsWonNeeded" content="textOnly" dt:type="int"/>
+	<ElementType name="AchieveInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="bActive"/>
+		<element type="bAfterMove"/>
+		<element type="HeaderTextKey"/>
+		<element type="BodyTextKey"/>
+		<element type="PictureFileName"/>
+		<element type="iPictureX"/>
+		<element type="iPictureY"/>
+		<element type="iLowTurnNumber"/>
+		<element type="iHighTurnNumber"/>
+		<element type="bLandDiscovered"/>
+		<element type="bDiscoverEast"/>
+		<element type="bDiscoverWest"/>
+		<element type="iNumColonies"/>
+		<element type="iNumEuroContacts"/>
+		<element type="iNumNativeContacts"/>
+		<element type="iNumGoodsTraded"/>
+		<element type="iNumCombatsWonNeeded"/>
+		<element type="iNumSeaCombatsWonNeeded"/>
+		<element type="NumBuildings"/>
+		<element type="NumUnits"/>
+		<element type="NumProfessions"/>
+		<element type="YieldProduced"/>
+	</ElementType>
+	<ElementType name="Civ4AchieveInfos" content="eltOnly">
+		<element type="AchieveInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>

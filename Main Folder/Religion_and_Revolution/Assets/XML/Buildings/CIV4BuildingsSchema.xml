@@ -1,0 +1,298 @@
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Building Schema -->
+<!-- -->
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="DefaultBuilding" content="textOnly"/>
+	<ElementType name="VictoryType" content="textOnly"/>
+	<ElementType name="iThreshold" content="textOnly" dt:type="int"/>
+	<ElementType name="VictoryThreshold" content="eltOnly">
+		<element type="VictoryType"/>
+		<element type="iThreshold"/>
+	</ElementType>
+	<ElementType name="VictoryThresholds" content="eltOnly">
+		<element type="VictoryThreshold" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildingClassInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="DefaultBuilding"/>
+		<element type="VictoryThresholds"/>
+	</ElementType>
+	<ElementType name="BuildingClassInfos" content="eltOnly">
+		<element type="BuildingClassInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildingClass" content="textOnly"/>
+	<ElementType name="SpecialBuildingType" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="Civilopedia" content="textOnly"/>
+	<ElementType name="Help" content="textOnly"/>
+	<ElementType name="Strategy" content="textOnly"/>
+	<ElementType name="ArtDefineTag" content="textOnly"/>
+	<ElementType name="MovieDefineTag" content="textOnly"/>
+	<ElementType name="VictoryPrereq" content="textOnly"/>
+	<ElementType name="FreeStartEra" content="textOnly"/>
+	<ElementType name="MaxStartEra" content="textOnly"/>
+	<ElementType name="ProductionTraitType" content="textOnly"/>
+	<ElementType name="iProductionTrait" content="textOnly" dt:type="int"/>
+	<ElementType name="ProductionTrait" content="eltOnly">
+		<element type="ProductionTraitType"/>
+		<element type="iProductionTrait"/>
+	</ElementType>
+	<ElementType name="ProductionTraits" content="eltOnly">
+		<element type="ProductionTrait" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bWorksWater" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bWater" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRiver" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCapital" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNationalWonder" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNeverCapture" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCenterInCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iHurryCostModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinAreaSize" content="textOnly" dt:type="int"/>
+	<ElementType name="iConquestProb" content="textOnly" dt:type="int"/>
+	<ElementType name="iCitiesPrereq" content="textOnly" dt:type="int"/>
+	<ElementType name="iTeamsPrereq" content="textOnly" dt:type="int"/>
+	<ElementType name="iLevelPrereq" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinLatitude" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxLatitude" content="textOnly" dt:type="int"/>
+	<ElementType name="iExperience" content="textOnly" dt:type="int"/>
+	<ElementType name="iFoodKept" content="textOnly" dt:type="int"/>
+	<ElementType name="iHealRateChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iMilitaryProductionModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iDefense" content="textOnly" dt:type="int"/>
+	<ElementType name="iBombardDefense" content="textOnly" dt:type="int"/>
+	<ElementType name="iAsset" content="textOnly" dt:type="int"/>
+	<ElementType name="iPower" content="textOnly" dt:type="int"/>
+	<ElementType name="iYieldStorage" content="textOnly" dt:type="int"/>
+	<ElementType name="iOverflowSellPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iSpecialBuildingPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="fVisibilityPriority" content="textOnly"/>
+	<ElementType name="FreePromotion" content="textOnly"/>
+	<ElementType name="iYield" content="textOnly" dt:type="int"/>
+	<ElementType name="YieldType" content="textOnly"/>
+	<ElementType name="iModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iYieldChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iProfessionOutput" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxWorkers" content="textOnly" dt:type="int"/>
+	<ElementType name="LandPlotYieldChange" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldChange"/>
+	</ElementType>
+	<ElementType name="LandPlotYieldChanges" content="eltOnly">
+		<element type="LandPlotYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SeaPlotYieldChange" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldChange"/>
+	</ElementType>
+	<ElementType name="SeaPlotYieldChanges" content="eltOnly">
+		<element type="SeaPlotYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RiverPlotYieldChange" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldChange"/>
+	</ElementType>
+	<ElementType name="RiverPlotYieldChanges" content="eltOnly">
+		<element type="RiverPlotYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldChange" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldChange"/>
+	</ElementType>
+	<ElementType name="YieldChanges" content="eltOnly">
+		<element type="YieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldCost" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iCost"/>
+	</ElementType>
+	<ElementType name="YieldCosts" content="eltOnly">
+		<element type="YieldCost" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldModifier" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iModifier"/>
+	</ElementType>
+	<ElementType name="YieldModifiers" content="eltOnly">
+		<element type="YieldModifier" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ConstructSound" content="textOnly"/>
+	<ElementType name="iProductonModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="UnitCombatType" content="textOnly"/>
+	<ElementType name="UnitCombatFreeExperience" content="eltOnly">
+		<element type="UnitCombatType"/>
+		<element type="iExperience"/>
+	</ElementType>
+	<ElementType name="UnitCombatFreeExperiences" content="eltOnly">
+		<element type="UnitCombatFreeExperience" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DomainType" content="textOnly"/>
+	<ElementType name="DomainFreeExperience" content="eltOnly">
+		<element type="DomainType"/>
+		<element type="iExperience"/>
+	</ElementType>
+	<ElementType name="DomainFreeExperiences" content="eltOnly">
+		<element type="DomainFreeExperience" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iProductionModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="DomainProductionModifier" content="eltOnly">
+		<element type="DomainType"/>
+		<element type="iProductionModifier"/>
+	</ElementType>
+	<ElementType name="DomainProductionModifiers" content="eltOnly">
+		<element type="DomainProductionModifier" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildingType" content="textOnly"/>
+	<ElementType name="BuildingClassType" content="textOnly"/>
+	<ElementType name="iNumBuildingNeeded" content="textOnly" dt:type="int"/>
+	<ElementType name="PrereqBuildingClass" content="eltOnly">
+		<element type="BuildingClassType"/>
+		<element type="iNumBuildingNeeded"/>
+	</ElementType>
+	<ElementType name="PrereqBuildingClasses" content="eltOnly">
+		<element type="PrereqBuildingClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bNeededInCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="BuildingClassNeeded" content="eltOnly">
+		<element type="BuildingClassType"/>
+		<element type="bNeededInCity"/>
+	</ElementType>
+	<ElementType name="BuildingClassNeededs" content="eltOnly">
+		<element type="BuildingClassNeeded" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="HotKey" content="textOnly"/>
+	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bShiftDown" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCtrlDown" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iHotKeyPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="iTeachLevel" content="textOnly" dt:type="int"/>
+	<ElementType name="iAICitySize" content="textOnly" dt:type="int"/>
+	<ElementType name="iOrderPriority" content="textOnly" dt:type="int"/>
+	<ElementType name="GenericBuildingInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="ArtDefineTag"/>
+	</ElementType>
+	<ElementType name="GenericBuildingInfos" content="eltOnly">
+		<element type="GenericBuildingInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildingInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="BuildingClass"/>
+		<element type="SpecialBuildingType"/>
+		<element type="iSpecialBuildingPriority"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Strategy"/>
+		<element type="Help" minOccurs="0"/>
+		<element type="ArtDefineTag"/>
+		<element type="MovieDefineTag"/>
+		<element type="VictoryPrereq"/>
+		<element type="FreeStartEra"/>
+		<element type="MaxStartEra"/>
+		<element type="ProductionTraits"/>
+		<element type="FreePromotion"/>
+		<element type="bGraphicalOnly"/>
+		<element type="bWorksWater"/>
+		<element type="bWater"/>
+		<element type="bRiver"/>
+		<element type="bCapital"/>
+		<element type="bNationalWonder"/>
+		<element type="bNeverCapture"/>
+		<element type="bCenterInCity"/>
+		<element type="iAIWeight"/>
+		<element type="YieldCosts"/>
+		<element type="iHurryCostModifier"/>
+		<element type="iAdvancedStartCost"/>
+		<element type="iAdvancedStartCostIncrease"/>
+		<element type="iProfessionOutput"/>
+		<element type="iMaxWorkers"/>
+		<element type="iMinAreaSize"/>
+		<element type="iConquestProb"/>
+		<element type="iCitiesPrereq"/>
+		<element type="iTeamsPrereq"/>
+		<element type="iLevelPrereq"/>
+		<element type="iMinLatitude"/>
+		<element type="iMaxLatitude"/>
+		<element type="iExperience"/>
+		<element type="iFoodKept"/>
+		<element type="iHealRateChange"/>
+		<element type="iMilitaryProductionModifier"/>
+		<element type="iDefense"/>
+		<element type="iBombardDefense"/>
+		<element type="iAsset"/>
+		<element type="iPower"/>
+		<element type="iYieldStorage"/>
+		<element type="iOverflowSellPercent"/>
+		<element type="fVisibilityPriority"/>
+		<element type="LandPlotYieldChanges"/>
+		<element type="SeaPlotYieldChanges"/>
+		<element type="RiverPlotYieldChanges"/>
+		<element type="YieldChanges"/>
+		<element type="YieldModifiers" minOccurs="0"/>
+		<element type="ConstructSound"/>
+		<element type="UnitCombatFreeExperiences"/>
+		<element type="DomainFreeExperiences"/>
+		<element type="DomainProductionModifiers"/>
+		<element type="PrereqBuildingClasses"/>
+		<element type="BuildingClassNeededs"/>
+		<element type="HotKey"/>
+		<element type="bAltDown"/>
+		<element type="bShiftDown"/>
+		<element type="bCtrlDown"/>
+		<element type="iHotKeyPriority"/>
+		<element type="iTeachLevel"/>
+		<element type="iAICitySize"/>
+		<element type="iOrderPriority" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="BuildingInfos" content="eltOnly">
+		<element type="BuildingInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SpecialBuildingName" content="textOnly"/>
+	<ElementType name="SpecialBuildingDescription" content="textOnly"/>
+	<ElementType name="ArtStyleType" content="textOnly"/>
+	<ElementType name="iRequiredPopulation" content="textOnly" dt:type="int"/>
+	<ElementType name="FontButtonIndex" content="textOnly" dt:type="int"/>
+	<ElementType name="fScale" content="textOnly"/>
+	<ElementType name="bValid" content="textOnly" dt:type="boolean"/>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="NatureObject" content="textOnly"/>
+	<ElementType name="SpecialBuildingInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="bValid"/>
+		<element type="FontButtonIndex"/>
+		<element type="ProductionTraits"/>
+		<element type="Button"/>
+		<element type="NatureObject"/>
+	</ElementType>
+	<ElementType name="SpecialBuildingInfos" content="eltOnly">
+		<element type="SpecialBuildingInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4BuildingClassInfos" content="eltOnly">
+		<element type="BuildingClassInfos" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="Civ4GenericBuildingInfos" content="eltOnly">
+		<element type="GenericBuildingInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4BuildingInfos" content="eltOnly">
+		<element type="BuildingInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4SpecialBuildingInfos" content="eltOnly">
+		<element type="SpecialBuildingInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4Buildings" content="eltOnly">
+		<element type="BuildingClassInfos" minOccurs="0"/>
+		<element type="BuildingInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>

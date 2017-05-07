@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CV">
+      <UniqueIdentifier>{c375148e-5317-4bfe-aba7-a9857bb72992}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV\CPP">
+      <UniqueIdentifier>{8779033f-0e1b-49ea-921f-1d81835af88c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV\Header">
+      <UniqueIdentifier>{11d031e0-3fbc-4bb9-bd79-074939b670df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{c76f7635-c85c-43dc-8782-3e6c6ff5ff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\CPP">
+      <UniqueIdentifier>{f3d94bd6-5c3a-4eb3-bcc1-0151bb10dda4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Header">
+      <UniqueIdentifier>{a5060bb7-8865-42f4-b2fd-5bac3178bc52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{a0189487-7389-4b0f-9ce9-a857cbdfa827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\CPP">
+      <UniqueIdentifier>{0e74251b-030d-49d7-8ee6-e683b74f9358}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Header">
+      <UniqueIdentifier>{aa4136ad-52f9-4c41-964d-e3f92da6d137}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DLLSources\CyArea.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyAreaInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArgsList.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArtFileMgr.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArtFileMgrInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCity.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface3.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface4.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface5.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyDeal.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyDealInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyEnumsInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGame.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameCoreUtils.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameCoreUtilsInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameInterface3.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameTextMgr.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameTextMgrInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContext.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface3.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface4.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface5.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface6.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface7.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyHallOfFameInfo.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyHallOfFameInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfoInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfoInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfoInterface3.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMap.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapGenerator.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapGeneratorInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayer.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface3.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface4.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlot.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlotInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlotInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyRandomInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyReplayInfo.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CySelectionGroup.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CySelectionGroupInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyStructsInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTeam.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTeamInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRoute.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRouteGroup.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRouteGroupInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRouteInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUnit.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUnitInterface1.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUnitInterface2.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvArea.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvArtFileMgr.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCity.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCityAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvDeal.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvDiploParameters.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvDLLButtonPopup.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvDLLEntity.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvDLLPython.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvDLLWidgetData.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvFractal.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGame.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGameAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGameCoreDLL.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGameCoreUtils.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGameTextMgr.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGlobals.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvHallOfFameInfo.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvInfos.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvInfoWater.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvInitCore.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvMap.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvMapGenerator.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayer.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlot.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPopupInfo.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPopupReturn.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvRandom.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvReplayInfo.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvReplayMessage.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvSelectionGroup.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvSelectionGroupAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvStructs.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTalkingHeadMessage.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTeam.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTeamAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTextScreens.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTradeRoute.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTradeRouteGroup.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvUnit.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvUnitAI.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvXMLLoadUtility.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvXMLLoadUtilityGet.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvXMLLoadUtilityInit.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvXMLLoadUtilitySet.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\_precompile.cpp">
+      <Filter>Misc\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\FAssert.cpp">
+      <Filter>Misc\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\FDialogTemplate.cpp">
+      <Filter>Misc\CPP</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DLLSources\CyArea.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyArgsList.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyArtFileMgr.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyCity.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyDeal.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGame.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGameCoreUtils.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGameTextMgr.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGlobalContext.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyHallOfFameInfo.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyMap.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyMapGenerator.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyPlayer.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyPlot.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyReplayInfo.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CySelectionGroup.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyTeam.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyTradeRoute.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyTradeRouteGroup.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyUnit.h">
+      <Filter>Python\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvArea.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvArtFileMgr.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvCity.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvCityAI.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDeal.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDefines.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDiploParameters.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLButtonPopup.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLDataStreamIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLEngineIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLEntity.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLEntityIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLEventReporterIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLFAStarIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLFlagEntityIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLIniParserIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLInterfaceIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLPlotBuilderIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLPythonIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLSymbolIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLUtilityIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLWidgetData.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvDLLXMLIFaceBase.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvEnums.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvFractal.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGame.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGameAI.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGameCoreDLL.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGameCoreDLLDefNew.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGameCoreDLLUndefNew.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGameCoreUtils.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGameTextMgr.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGlobals.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvHallOfFameInfo.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvIdVector.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvInfos.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvInfoWater.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvInitCore.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvMap.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvMapGenerator.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayer.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayerAI.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlot.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPopupInfo.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPopupReturn.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvRandom.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvReplayInfo.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvReplayMessage.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvSelectionGroup.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvSelectionGroupAI.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvString.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvStructs.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvTalkingHeadMessage.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvTeam.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvTeamAI.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvTradeRoute.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvTradeRouteGroup.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvUnit.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvUnitAI.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvXMLLoadUtility.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FAssert.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FAStarNode.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FDataStreamBase.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FDialogTemplate.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FFreeListArray.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FFreeListArrayBase.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FFreeListTrashArray.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FInputDevice.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FProfiler.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\FVariableSystem.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\JustInTimeArray.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\LinkedList.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\resource.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DLLSources\FVariableSystem.inl">
+      <Filter>Misc</Filter>
+    </None>
+    <None Include="DLLSources\interfaceDirtyBits.inl">
+      <Filter>Misc</Filter>
+    </None>
+  </ItemGroup>
+</Project>
