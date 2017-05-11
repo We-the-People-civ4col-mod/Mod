@@ -827,7 +827,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_EGEDE_1</Tag>
-		<English>The [OUR_CIV_ADJ] people welcomes [CT_NAME] to the nation God gave as an inheritance for our grandchildren. Join us in our newly built stave church to give thanks to the Lord for bringing us together in these lands.</English>
+		<English>The [OUR_CIV_ADJ] people welcomes [CT_NAME] to the nation God gave us as an inheritance for our grandchildren. Join us in our newly built stave church to give thanks to the Lord for bringing us together in these lands.</English>
 		<French>Les [OUR_CIV_ADJ:3] souhaite la bienvenue &#224; [CT_NAME], que votre [CT_EMPIRE] soit b&#233;ni par notre Saint-P&#232;re. Je remercie le Seigneur de nous avoir fait nous rencontrer en ses terres o&#249; nous allons r&#233;pandre la parole de J&#233;sus.</French>
 		<German>Ich f&#252;hle mich geehrt, das gro&#223;e Staatsoberhaupt [CT_NAME] kennenlernen zu d&#252;rfen! Wie kann das [OUR_CIV_ADJ:3] Volk Euch heute helfen?</German>
 		<Italian>Sono onorato di incontrarti, grande [CT_NAME]! Come pu&#242; aiutarti, oggi, la civilt&#224; [OUR_CIV_ADJ] ?</Italian>
