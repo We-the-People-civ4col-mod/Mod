@@ -4286,6 +4286,54 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Plural>0</Plural>
 		</Spanish>
 	</TEXT>
+		<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SEEHUNTER1</Tag>
+		<English>High-Sea Fisherman I</English>
+		<French>
+			<Text>High-Sea Fisherman I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Hochseefischer I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>High-Sea Fisherman I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>High-Sea Fisherman I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_SEEHUNTER2</Tag>
+		<English>High-Sea Fisherman II</English>
+		<French>
+			<Text>High-Sea Fisherman II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Hochseefischer II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>High-Sea Fisherman II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>High-Sea Fisherman II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FEINT</Tag>
 		<English>Feint</English>
