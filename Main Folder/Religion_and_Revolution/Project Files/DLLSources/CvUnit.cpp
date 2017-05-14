@@ -3002,7 +3002,14 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (pPlot->isPeak() && pPlot->getRouteType() == NO_ROUTE)
 		{
 			// Anything else than Natives, Animals, Pioneers, Scouts, Native Mercenaries and Ranges cannot pass Peaks without Roads
+			/*
 			if (!isNative() && !m_pUnitInfo->isAnimal() && !(getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).getWorkRate() != 0) && !m_pUnitInfo->isNoBadGoodies() && m_pUnitInfo->getUnitClassType() != GC.getDefineINT("UNITCLASS_NATIVE_MERC") && m_pUnitInfo->getUnitClassType() != GC.getDefineINT("UNITCLASS_RANGER"))
+			*/
+			/// Move Into Peak - start - Nightinggale
+			// replaced DLL hardcoding with pure XML setup
+			// it's more friendly to xml modders and it's actually faster at runtime because less data will have to be checked
+			if (!(m_pUnitInfo->allowsMoveIntoPeak() || (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).allowsMoveIntoPeak())))
+			/// Move Into Peak - end - Nightinggale
 			{
 				return false;
 			}

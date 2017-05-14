@@ -665,6 +665,14 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 				szString.append(gDLL->getText("TXT_KEY_UNIT_CAN_MOVE_IMPASSABLE"));
 			}
 
+			/// Move Into Peak - start - Nightinggale
+			if (pUnit->getUnitInfo().allowsMoveIntoPeak())
+			{
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_UNIT_CAN_MOVE_PEAK"));
+			}
+			/// Move Into Peak - end - Nightinggale
+
 			// R&R, ray, Start Logic for Trains
 			if (pUnit->getDomainType() == DOMAIN_LAND && pUnit->cargoSpace() == 6)
 			{
@@ -1189,6 +1197,14 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_FOUND"));
 	}
+
+	/// Move Into Peak - start - Nightinggale
+	if (kProfession.allowsMoveIntoPeak())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_MOVE_PEAK"));
+	}
+	/// Move Into Peak - end - Nightinggale
 
 	if (kProfession.isNoDefensiveBonus())
 	{
@@ -4614,6 +4630,14 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_MOVE_IMPASSABLE"));
 	}
+
+	/// Move Into Peak - start - Nightinggale
+	if (kUnitInfo.allowsMoveIntoPeak())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_MOVE_PEAK"));
+	}
+	/// Move Into Peak - end - Nightinggale
 
 	if (kUnitInfo.isNoBadGoodies())
 	{

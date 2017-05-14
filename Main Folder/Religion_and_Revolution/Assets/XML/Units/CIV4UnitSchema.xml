@@ -416,6 +416,7 @@
 	<ElementType name="bLandYieldChanges" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWaterYieldChanges" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAnimal" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMoveIntoPeak" content="textOnly" dt:type="boolean"/>
 	<ElementType name="UnitInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Class"/>
@@ -447,6 +448,7 @@
 		<element type="bInvisible"/>
 		<element type="bNoDefensiveBonus"/>
 		<element type="bCanMoveImpassable"/>
+		<element type="bMoveIntoPeak" minOccurs="0"/>
 		<element type="bCanMoveAllTerrain"/>
 		<element type="bFlatMovementCost"/>
 		<element type="bIgnoreTerrainCost"/>
@@ -796,6 +798,7 @@
 		<element type="bNoDefensiveBonus"/>
 		<element type="iCombatChange"/>
 		<element type="iMovesChange"/>
+		<element type="bMoveIntoPeak" minOccurs="0"/>
 		<element type="iWorkRate"/>
 		<element type="iMissionaryRate"/>
 		<element type="iPower"/>

@@ -1332,6 +1332,9 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_expert(0),
 	m_learnLevel(0),
 	// TAC - LbD - Ray - END
+	/// Move Into Peak - start - Nightinggale
+	m_bMoveIntoPeak(false),
+	/// Move Into Peak - end - Nightinggale
 	m_bUnarmed(false),
 	m_bNoDefensiveBonus(false),
 	m_abFreePromotions(NULL),
@@ -1648,6 +1651,10 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	m_expert = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_learnLevel, "iLbDLearnLevel");
 	// TAC - LbD - Ray - END
+
+	/// Move Into Peak - start - Nightinggale
+	pXML->GetChildXmlValByName(&m_bMoveIntoPeak, "bMoveIntoPeak");
+	/// Move Into Peak - end - Nightinggale
 
 	pXML->GetChildXmlValByName(&m_bUnarmed, "bUnarmed");
 	pXML->GetChildXmlValByName(&m_bNoDefensiveBonus, "bNoDefensiveBonus");
@@ -2596,6 +2603,10 @@ m_bGatherBoat(false),
 // < JAnimals Mod Start >
 m_bAnimal(false),
 // < JAnimals Mod End >
+m_iLeaderPromotion(NO_PROMOTION),
+/// Move Into Peak - start - Nightinggale
+m_bMoveIntoPeak(false),
+/// Move Into Peak - end - Nightinggale
 m_abUpgradeUnitClass(NULL),
 m_abUnitAIType(NULL),
 m_abNotUnitAIType(NULL),
@@ -3827,6 +3838,9 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	// < JAnimals Mod Start >
 	pXML->GetChildXmlValByName(&m_bAnimal, "bAnimal", false);
 	// < JAnimals Mod End >
+	/// Move Into Peak - start - Nightinggale
+	pXML->GetChildXmlValByName(&m_bMoveIntoPeak, "bMoveIntoPeak");
+	/// Move Into Peak - end - Nightinggale
 	pXML->SetVariableListTagPair(&m_abUpgradeUnitClass, "UnitClassUpgrades", GC.getNumUnitClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_abUnitAIType, "UnitAIs", NUM_UNITAI_TYPES, false);
 	pXML->SetVariableListTagPair(&m_abNotUnitAIType, "NotUnitAIs", NUM_UNITAI_TYPES, false);

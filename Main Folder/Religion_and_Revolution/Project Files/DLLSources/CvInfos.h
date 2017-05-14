@@ -363,6 +363,11 @@ public:
 	DllExport int getYieldsConsumed(int i) const;
 	DllExport int getNumYieldsConsumed() const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
+
+	/// Move Into Peak - start - Nightinggale
+	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}
+	/// Move Into Peak - end - Nightinggale
+
 	DllExport void read(FDataStreamBase* stream);
 	DllExport void write(FDataStreamBase* stream);
 	DllExport bool read(CvXMLLoadUtility* pXML);
@@ -392,6 +397,10 @@ protected:
 	bool m_bCanFound;
 	bool m_bUnarmed;
 	bool m_bNoDefensiveBonus;
+
+	/// Move Into Peak - start - Nightinggale
+	bool m_bMoveIntoPeak;
+	/// Move Into Peak - end - Nightinggale
 
 	// TAC - LbD - Ray - START
 	bool m_LbDused;
@@ -753,6 +762,10 @@ public:
 	DllExport float getUnitMaxSpeed(int iProfession) const;
 	DllExport float getUnitPadTime(int iProfession) const;
 
+	/// Move Into Peak - start - Nightinggale
+	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}
+	/// Move Into Peak - end - Nightinggale
+
 	// Arrays
 	DllExport int getProductionTraits(int i) const;
 	DllExport int getTerrainAttackModifier(int i) const;
@@ -914,6 +927,11 @@ protected:
 	bool m_bAnimal;
 	// < JAnimals Mod End >
 	int m_iLeaderPromotion;
+
+	/// Move Into Peak - start - Nightinggale
+	bool m_bMoveIntoPeak;
+	/// Move Into Peak - end - Nightinggale
+
 	// Arrays
 	int* m_aiProductionTraits;
 	int* m_aiTerrainAttackModifier;

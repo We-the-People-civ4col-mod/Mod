@@ -69,4 +69,12 @@
 		<Italian>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_MOVE_PEAK</Tag>
+		<English>[ICON_BULLET]Can move on mountain peaks</English>
+		<French>[ICON_BULLET]Can move on mountain peaks</French>
+		<German>[ICON_BULLET]Can move on mountain peaks</German>
+		<Italian>[ICON_BULLET]Can move on mountain peaks</Italian>
+		<Spanish>[ICON_BULLET]Can move on mountain peaks</Spanish>
+	</TEXT>
 </Civ4GameText>
