@@ -24,6 +24,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -60,6 +61,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -96,6 +98,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -132,6 +135,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -168,6 +172,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -204,6 +209,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -240,6 +246,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -276,6 +283,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -312,6 +320,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -348,6 +357,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -384,6 +394,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -420,6 +431,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -457,6 +469,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -494,6 +507,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -530,6 +544,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -566,6 +581,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -602,6 +618,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -638,6 +655,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -674,6 +692,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -710,6 +729,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -746,6 +766,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -782,6 +803,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -818,6 +840,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -854,6 +877,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -890,6 +914,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -926,6 +951,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -962,6 +988,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -998,6 +1025,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1034,6 +1062,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1070,6 +1099,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1106,6 +1136,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1142,6 +1173,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1178,6 +1210,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1215,6 +1248,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1251,6 +1285,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1287,6 +1322,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1323,6 +1359,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1359,6 +1396,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1395,6 +1433,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1431,6 +1470,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1467,6 +1507,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1503,6 +1544,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1539,6 +1581,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1575,6 +1618,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1611,6 +1655,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1647,6 +1692,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1683,6 +1729,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1719,6 +1766,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1755,6 +1803,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1791,6 +1840,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1827,6 +1877,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1863,6 +1914,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1900,6 +1952,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1937,6 +1990,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -1973,6 +2027,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2009,6 +2064,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2045,6 +2101,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2081,6 +2138,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2117,6 +2175,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>1</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2153,6 +2212,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>1</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>25</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2189,6 +2249,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>1</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>100</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2230,6 +2291,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>3</iCombatChange>
 			<iMovesChange>1</iMovesChange>
+			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>50</iPower>
@@ -2271,6 +2333,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>4</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>100</iPower>
@@ -2312,6 +2375,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>5</iCombatChange>
 			<iMovesChange>1</iMovesChange>
+			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>100</iPower>
@@ -2358,6 +2422,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>5</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>150</iPower>
@@ -2404,6 +2469,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>6</iCombatChange>
 			<iMovesChange>2</iMovesChange>
+			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>200</iPower>
@@ -2454,6 +2520,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>7</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>150</iPower>
@@ -2495,6 +2562,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>8</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>300</iPower>
@@ -2549,6 +2617,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>8</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>150</iPower>
@@ -2590,6 +2659,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>12</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>300</iPower>
@@ -2644,6 +2714,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>7</iCombatChange>
 			<iMovesChange>2</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>200</iPower>
@@ -2694,6 +2765,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>8</iCombatChange>
 			<iMovesChange>2</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>200</iPower>
@@ -2744,6 +2816,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>8</iCombatChange>
 			<iMovesChange>1</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>350</iPower>
@@ -2794,6 +2867,7 @@
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>11</iCombatChange>
 			<iMovesChange>1</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>350</iPower>
@@ -2844,6 +2918,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>0</iPower>
@@ -2880,6 +2955,7 @@
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>0</iCombatChange>
 			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iPower>00</iPower>
