@@ -2828,7 +2828,7 @@
 				</YieldEquipedNum>
 				<YieldEquipedNum>
 					<YieldType>YIELD_BLADES</YieldType>
-					<iYieldAmount>70</iYieldAmount>
+					<iYieldAmount>100</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
 			<FreePromotions>
@@ -2879,7 +2879,7 @@
 				</YieldEquipedNum>
 				<YieldEquipedNum>
 					<YieldType>YIELD_BLADES</YieldType>
-					<iYieldAmount>70</iYieldAmount>
+					<iYieldAmount>100</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
 			<FreePromotions>
