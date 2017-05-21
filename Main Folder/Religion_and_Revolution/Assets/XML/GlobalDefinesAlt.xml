@@ -671,11 +671,11 @@
 	</Define>
 	<Define>
 		<DefineName>BASE_NATIVE_SLAVE_PRICE</DefineName>
-		<iDefineIntVal>200</iDefineIntVal>
+		<iDefineIntVal>300</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MIN_ROUND_NATIVE_SLAVE</DefineName>
-		<iDefineIntVal>30</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_AFRICAN_SLAVE</DefineName>
@@ -687,7 +687,7 @@
 	</Define>
 	<Define>
 		<DefineName>AFRICAN_SLAVES_CHANCE</DefineName>
-		<iDefineIntVal>30</iDefineIntVal>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MAX_AFRICAN_SLAVES_OFFERED</DefineName>
@@ -863,7 +863,7 @@
 	</Define>
 	<Define>
 		<DefineName>PRICE_CONTINENTAL_GUARD</DefineName>
-		<iDefineIntVal>2000</iDefineIntVal>
+		<iDefineIntVal>3000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_MORTAR</DefineName>
@@ -879,7 +879,7 @@
 	</Define>
 	<Define>
 		<DefineName>PRICE_MORTAR</DefineName>
-		<iDefineIntVal>2000</iDefineIntVal>
+		<iDefineIntVal>3000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_MILITIA</DefineName>

@@ -112,9 +112,9 @@
 			<DefaultUnit>UNIT_ROYAL_CAVALRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_COLONIST</Type>
-			<Description>TXT_KEY_UNIT_COLONIST</Description>
-			<DefaultUnit>UNIT_COLONIST</DefaultUnit>
+			<Type>UNITCLASS_CRIMINAL</Type>
+			<Description>TXT_KEY_UNIT_CRIMINAL</Description>
+			<DefaultUnit>UNIT_CRIMINAL</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_INDENTURED_SERVANT</Type>
@@ -122,9 +122,9 @@
 			<DefaultUnit>UNIT_INDENTURED_SERVANT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_CRIMINAL</Type>
-			<Description>TXT_KEY_UNIT_CRIMINAL</Description>
-			<DefaultUnit>UNIT_CRIMINAL</DefaultUnit>
+			<Type>UNITCLASS_COLONIST</Type>
+			<Description>TXT_KEY_UNIT_COLONIST</Description>
+			<DefaultUnit>UNIT_COLONIST</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_CONVERTED_NATIVE</Type>
@@ -147,14 +147,14 @@
 			<DefaultUnit>UNIT_MINER</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
-			<Type>UNITCLASS_PROSPECTOR</Type>
-			<Description>TXT_KEY_UNIT_PROSPECTOR</Description>
-			<DefaultUnit>UNIT_PROSPECTOR</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
 			<Type>UNITCLASS_STONECUTTER</Type>
 			<Description>TXT_KEY_UNIT_STONECUTTER</Description>
 			<DefaultUnit>UNIT_STONECUTTER</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_PROSPECTOR</Type>
+			<Description>TXT_KEY_UNIT_PROSPECTOR</Description>
+			<DefaultUnit>UNIT_PROSPECTOR</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_LUMBERJACK</Type>
