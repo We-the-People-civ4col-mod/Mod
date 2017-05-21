@@ -2236,7 +2236,31 @@
   <German>"Ich wei&#223; nicht General," meint der Gouverneur, "Wenn ich mir diese Kerle so ansehe. Furchteinfl&#246;&#223;end sind sie mir Sicherheit, aber ihre ranzigen Lederw&#228;mse kann ich bis hier riechen und ihre Ausr&#252;stung ist sicher auch nicht vorschriftsm&#228;&#223;ig. Messer, Tomahawks, langl&#228;ufige Gewehre...und keine Disziplin im Leib, gr&#252;&#223;en nicht mal ihre Offiziere." [NEWLINE][NEWLINE]"Sicher Sir, es sind rauhe Gesellen. Aber wenn ich ehrlich bin, habe ich da drau&#223;en in der Wildniss lieber einen von denen dabei als zehn unserer Gardesoldaten. Die Ranger k&#228;mpfen wie die Indianer, lesen ihre Spuren und dass sie angegriffen haben merkt man erst, wenn alles l&#228;ngst vorbei ist. Unsere Soldaten taugen nur gegen andere europ&#228;ische Truppen. In der Wildniss sind sie so gut wie hilflos."[NEWLINE][NEWLINE] "Na, wenn ihr meint General. Solange sie unsere Frauen und den Rum in Ruhe lassen..."  </German>
   <Italian>You have recruited your third ranger. [NEWLINE][NEWLINE]</Italian>
   <Spanish>You have recruited your third ranger. [NEWLINE][NEWLINE]</Spanish>
- </TEXT> 
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN</Tag>
+  <English>Three Hessian Mercenaries</English>
+  <French>Three Hessian Mercenaries</French>
+  <German>Der Landgraf von Hessen-Kassel stellt euch noch mehr hessische S&#246;ldner zur Verf&#252;gung</German>
+  <Italian>Three Hessian Mercenaries</Italian>
+  <Spanish>Three Hessian Mercenaries</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_HEAD</Tag>
+  <English>Three Hessian Mercenaries</English>
+  <French>Three Hessian Mercenaries</French>
+  <German>Drei hessische S&#246;ldnerregimenter</German>
+  <Italian>Three Hessian Mercenaries</Italian>
+  <Spanish>Three Hessian Mercenaries</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_TEXT</Tag>
+  <English>You have recruited your third hessian regiment. [NEWLINE][NEWLINE]</English>
+  <French>Vous avez recrut&#233; trois gardes forestiers.</French>
+  <German>"Ich wei&#223; nicht General," meint der Gouverneur, "ben&#246;tigen wir denn noch mehr ausl&#228;ndische S&#246;ldner bei uns? Wir k&#246;nnen doch schon mehr schlecht als recht unsere eigenen Truppen ern&#228;hren und unterhalten. Die denken doch nur an ihren Sold. Wenn wir den nicht aufbringen k&#246;nnen, dann zerstreuen sie sich in alle Winde und fangen wom&#246;glich an zu pl&#252;ndern. Und den Landgrafen von Hessen-Kassel m&#252;ssen wir auch noch bezahlen. [NEWLINE][NEWLINE]Naja, wenigstens k&#228;mpfen k&#246;nnen diese Kerle. Man h&#246;rt ja die tollsten Geschichten. Sollen drei Schuss in der Minute abfeuern k&#246;nnen und mit dem Bajonett sollen sie auch ganz flink sein." [NEWLINE][NEWLINE]</German>
+  <Italian>You have recruited your hessian regiment. [NEWLINE][NEWLINE]</Italian>
+  <Spanish>You have recruited your third hessian regiment. [NEWLINE][NEWLINE]</Spanish>
+ </TEXT>  
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
   <English>Three Veterans</English>
