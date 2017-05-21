@@ -390,6 +390,30 @@
   <Spanish>You have built your first cathedral. The Bishop has come to praise this tremendous building, the church and of course...God and to hold a ceremonial mass![NEWLINE][NEWLINE]</Spanish>
  </TEXT>
  <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS</Tag>
+  <English>Your third lumbermill</English>
+  <French>Votre troisi&#232;me la scierie</French>
+  <German>Drei S&#228;gewerke in St&#228;dten</German>
+  <Italian>Your third lumbermill</Italian>
+  <Spanish>Your third lumbermill</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_HEAD</Tag>
+  <English>Your third lumbermill</English>
+  <French>Votre troisi&#232;me la scierie</French>
+  <German>Holzverarbeitung vom Feinsten</German>
+  <Italian>Your third lumbermill</Italian>
+  <Spanish>Your third lumbermill</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_TEXT</Tag>
+  <English>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman![NEWLINE][NEWLINE]</English>
+  <French>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman!</French>
+  <German>Es geht voran in den Kolonien! Drei S&#228;gewerke nennen die braven B&#252;rger in den Kolonien nun schon ihr Eigen. Gott sei es gedankt, dass die Gouverneure so umsichtig waren, denn die Flut der Siedler wird auch in Zukunft Bauholz in Mengen ben&#246;tigen. [NEWLINE][NEWLINE]</German>
+  <Italian>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman!</Italian>
+  <Spanish>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman!</Spanish>
+ </TEXT> 
+ <TEXT>
   <Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER</Tag>
   <English>The Cathedral of the Archbishop</English>
   <French>La Cath&#233;drale de notre Archev&#234;ch&#233;</French>
