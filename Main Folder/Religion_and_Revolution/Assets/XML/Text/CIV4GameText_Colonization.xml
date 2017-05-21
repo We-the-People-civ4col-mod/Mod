@@ -1889,9 +1889,17 @@
 		<Tag>TXT_KEY_BUILD_LODGE</Tag>
 		<English>Build a [LINK=IMPROVEMENT_LODGE]Lodge[\LINK]</English>
 		<French>Construire un [LINK=IMPROVEMENT_LODGE]Abri[\LINK]</French>
-		<German>[LINK=IMPROVEMENT_LODGE]Lagerplatz[\LINK] bauen</German>
+		<German>[LINK=IMPROVEMENT_LODGE]Holzf&#228;llerh&#252;tte[\LINK] bauen</German>
 		<Italian>Costruisci un [LINK=IMPROVEMENT_LODGE]capanno[\LINK]</Italian>
 		<Spanish>Construir un [LINK=IMPROVEMENT_LODGE]Pabell&#243;n[\LINK]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_LUMBERMILL</Tag>
+		<English>Build a [LINK=IMPROVEMENT_LUMBERMILL]Lumbermill[\LINK]</English>
+		<French>Construire un [LINK=IMPROVEMENT_LUMBERMILL]La Scierie[\LINK]</French>
+		<German>[LINK=IMPROVEMENT_LUMBERMILL]S&#228;gem&#252;hle[\LINK] bauen</German>
+		<Italian>Costruisci un [LINK=IMPROVEMENT_LUMBERMILL]Segheria[\LINK]</Italian>
+		<Spanish>Construir un [LINK=IMPROVEMENT_LUMBERMILL]Molino de Aserrar[\LINK]</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ABOUT_CIV4</Tag>

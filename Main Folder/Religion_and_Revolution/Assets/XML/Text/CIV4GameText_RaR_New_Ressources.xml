@@ -4671,9 +4671,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_VALUABLE_WOOD_PEDIA</Tag>
-		<English>[TAB][H1]VALUABLE WOOD[\H1][PARAGRAPH:2][BOLD]Strategy:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Valuable Wood[COLOR_REVERT] can be found both in [LINK=FEATURE_JUNGLE]Jungles[\LINK] and in [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK]. To make a colonist produce Valuable Wood, assign him to the [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Lumberjack (Valuable Wood)[\LINK] profession.[NEWLINE]Valuable Wood production is highest on plots bearing the [LINK=BONUS_GIANT_TREE]Giant Trees[\LINK] Bonus or the [LINK=BONUS_BOREAL_FOREST]Boreal Forest[\LINK] Bonus, and can further be increased by building [LINK=IMPROVEMENT_LODGE]Lodges[\LINK] on Valuable Wood-producing plots and employing [LINK=UNIT_LUMBERJACK]Expert Lumberjacks[\LINK]. These experts can be recruited in Europe.[PARAGRAPH:1]Valuable Wood is the raw material that is required for the production of [LINK=YIELD_FURNITURE]Furniture[\LINK].[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</English>
+		<English>[TAB][H1]VALUABLE WOOD[\H1][PARAGRAPH:2][BOLD]Strategy:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Valuable Wood[COLOR_REVERT] can be found both in [LINK=FEATURE_JUNGLE]Jungles[\LINK] and in [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK]. To make a colonist produce Valuable Wood, assign him to the [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Lumberjack (Valuable Wood)[\LINK] profession.[NEWLINE]Valuable Wood production is highest on plots bearing the [LINK=BONUS_GIANT_TREE]Giant Trees[\LINK] Bonus or the [LINK=BONUS_BOREAL_FOREST]Boreal Forest[\LINK] Bonus, and can further be increased by building [LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_LUMBERMILL]Lumbermills[\LINK] on Valuable Wood-producing plots and employing [LINK=UNIT_LUMBERJACK]Expert Lumberjacks[\LINK]. These experts can be recruited in Europe.[PARAGRAPH:1]Valuable Wood is the raw material that is required for the production of [LINK=YIELD_FURNITURE]Furniture[\LINK].[PARAGRAPH:2][BOLD]Background:[\BOLD][NEWLINE]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</English>
 		<French>[TAB]Les bois d'&#233;b&#233;nisterie, souvent nomm&#233;s bois pr&#233;cieux peuvent &#234;tre des bois des r&#233;gions temp&#233;r&#233;es ou des bois tropicaux. Ils sont utilis&#233;s en &#233;b&#233;nisterie, lutherie, marqueterie, sculpture sous forme de bois massif, feuillets ou bois de placage. Le caract&#232;re pr&#233;cieux, variable suivant les &#233;poques, fait r&#233;f&#233;rence &#224; leurs propri&#233;t&#233;s, leur raret&#233; et leur prix. On les distingue g&#233;n&#233;ralement des bois plus courants tels que le fr&#234;ne, le sapin, l'&#233;pic&#233;a ou le peuplier (bois blancs), le pin, le c&#232;dre rouge (bois rouges) et des bois rouges tropicaux dits exotiques, comme le sipo.</French>
-		<German>[TAB][H1]Edelholz[\H1][PARAGRAPH:2][BOLD]Strategie:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] kann sowohl im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] wie auch in der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK] gefunden werden. Um Edelholz zu schlagen muss einem Kolonisten der Beruf [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Edelholzf&#228;ller[\LINK] zugewiesen werden. [LINK=UNIT_LUMBERJACK]Erfahrene Holzf&#228;ller[\LINK] sind hierf&#252;r besonders geeignet. Besoners hohe Ertr&#228;ge an Edelholz lassen sich auf Feldern mit den Bonus Ressourcen [LINK=BONUS_GIANT_TREE]Urwaldriesen[\LINK] oder [LINK=BONUS_BOREAL_FOREST]Borealwald[\LINK] erzielen. [LINK=IMPROVEMENT_LODGE]Holzf&#228;llerh&#252;tten[\LINK] erh&#246;hen den Ertrag zus&#228;tzlich.[PARAGRAPH:1]Edelholz ist der Rohstoff f&#252;r die Herstellung von [LINK=YIELD_FURNITURE]M&#246;beln[\LINK].[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE]Edelholz ist sehr hart, hat eine hohe dichte, feine Texturen und kann sehr glatt geschliffen werden. Dadurch ist es sehr begehrt um Verzierungen oder hochwertige Holzprodukte, wie zum Beispiel M&#246;bel herzustellen.</German>
+		<German>[TAB][H1]Edelholz[\H1][PARAGRAPH:2][BOLD]Strategie:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] kann sowohl im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] wie auch in der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK] gefunden werden. Um Edelholz zu schlagen muss einem Kolonisten der Beruf [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Edelholzf&#228;ller[\LINK] zugewiesen werden. [LINK=UNIT_LUMBERJACK]Erfahrene Holzf&#228;ller[\LINK] sind hierf&#252;r besonders geeignet. Besoners hohe Ertr&#228;ge an Edelholz lassen sich auf Feldern mit den Bonus Ressourcen [LINK=BONUS_GIANT_TREE]Urwaldriesen[\LINK] oder [LINK=BONUS_BOREAL_FOREST]Borealwald[\LINK] erzielen. [LINK=IMPROVEMENT_LODGE]Holzf&#228;llerh&#252;tten[\LINK] und [LINK=IMPROVEMENT_LUMBERMILL]S&#228;gem&#252;hlen[\LINK] erh&#246;hen den Ertrag zus&#228;tzlich.[PARAGRAPH:1]Edelholz ist der Rohstoff f&#252;r die Herstellung von [LINK=YIELD_FURNITURE]M&#246;beln[\LINK].[PARAGRAPH:2][BOLD]Hintergrund:[\BOLD][NEWLINE]Edelholz ist sehr hart, hat eine hohe dichte, feine Texturen und kann sehr glatt geschliffen werden. Dadurch ist es sehr begehrt um Verzierungen oder hochwertige Holzprodukte, wie zum Beispiel M&#246;bel herzustellen.</German>
 		<Italian>[TAB]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</Italian>
 		<Spanish>[TAB]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</Spanish>
 	</TEXT>
@@ -5979,6 +5979,30 @@
 			<Text>Lumberjack Camp</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL</Tag>
+		<English>Lumbermill</English>
+		<French>
+			<Text>Lumbermill</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>S&#228;gem&#252;hle</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</German>
+		<Italian>
+			<Text>Lumbermill</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Lumbermill</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
 		</Spanish>
 	</TEXT>
 	<TEXT>

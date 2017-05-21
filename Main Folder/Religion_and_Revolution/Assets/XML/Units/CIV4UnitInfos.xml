@@ -102,6 +102,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -643,6 +647,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -1083,6 +1091,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -1494,6 +1506,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -2384,6 +2400,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -2874,6 +2894,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -3215,6 +3239,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -3562,6 +3590,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -3893,6 +3925,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -4217,6 +4253,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -4556,6 +4596,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -4889,6 +4933,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -5228,6 +5276,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -5561,6 +5613,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -5904,6 +5960,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -6241,6 +6301,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -6584,6 +6648,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -6924,6 +6992,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -7257,6 +7329,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -7636,6 +7712,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -7971,6 +8051,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -8300,6 +8384,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -8639,6 +8727,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -8975,6 +9067,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -9307,6 +9403,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -9609,6 +9709,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -9976,6 +10080,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -10340,6 +10448,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -10697,6 +10809,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -11060,6 +11176,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -11416,6 +11536,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -11769,6 +11893,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -12132,6 +12260,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -12492,6 +12624,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -12849,6 +12985,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -13216,6 +13356,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -13577,6 +13721,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -13944,6 +14092,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -14308,6 +14460,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -14664,6 +14820,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -15017,6 +15177,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -15384,6 +15548,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -15732,6 +15900,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -16091,6 +16263,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -18038,6 +18214,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -18366,6 +18546,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -18853,6 +19037,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -19189,6 +19377,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -21118,6 +21310,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -21457,6 +21653,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -21776,6 +21976,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -22144,6 +22348,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -22506,6 +22714,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -23312,6 +23524,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -23681,6 +23897,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -24021,6 +24241,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_COCOA_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -24354,6 +24578,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -24714,6 +24942,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_LODGE</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_LUMBERMILL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>

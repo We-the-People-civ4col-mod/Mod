@@ -155,7 +155,7 @@
 			<bExtraAnimations>1</bExtraAnimations>
 			<fScale>0.6</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Farm2/farm_1x1_building.nif</NIF>
+			<NIF>Art/Structures/Improvements/Farm2/farm_2x1_building.nif</NIF>
 			<KFM/>
 			<Button>,Art/colonization_atlas_buildings.dds,1,14</Button>
 		</ImprovementArtInfo>
@@ -167,6 +167,15 @@
 			<NIF>Art/Structures/Improvements/lumberjack_camp/Lodge.nif</NIF>
 			<KFM/>
 			<Button>,Art/colonization_atlas_buildings.dds,2,14</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_LUMBERMILL</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/lumberjack_camp/Lumbermill.nif</NIF>
+			<KFM>Art/Structures/Improvements/lumberjack_camp/Lumbermill.kfm</KFM>
+			<Button>,Art/colonization_atlas_buildings.dds,8,13</Button>
 		</ImprovementArtInfo>
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_DEEP_MINE</Type>
