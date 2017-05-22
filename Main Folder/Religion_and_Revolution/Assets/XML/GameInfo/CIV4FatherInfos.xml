@@ -288,8 +288,8 @@
 			<RevealImprovements/>
 			<FreeUnits>
 				<FreeUnit>
-					<UnitClass>UNITCLASS_NOBLE</UnitClass>
-					<iFreeUnits>1</iFreeUnits>
+					<UnitClass>UNITCLASS_EMIGRANT</UnitClass>
+					<iFreeUnits>2</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>

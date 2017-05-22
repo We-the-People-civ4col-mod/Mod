@@ -5966,6 +5966,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -6865,6 +6869,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -7774,6 +7782,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -8689,6 +8701,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -9600,6 +9616,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>				
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -10502,6 +10522,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -11401,6 +11425,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -12297,6 +12325,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -13220,6 +13252,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -14132,6 +14168,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -15030,6 +15070,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -15955,6 +15999,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -16855,6 +16903,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -17760,6 +17812,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -18669,6 +18725,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -19572,6 +19632,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -20472,6 +20536,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -21387,6 +21455,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -22267,6 +22339,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -23182,6 +23258,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -24080,6 +24160,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -24971,6 +25055,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -25871,6 +25959,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -26756,6 +26848,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -27661,6 +27757,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -28559,6 +28659,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -29451,6 +29555,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -30348,6 +30456,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -31242,6 +31354,10 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -32127,6 +32243,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -33123,6 +33243,10 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_STATESMAN</UnitClassType>
+					<UnitType>NONE</UnitType>
+				</Unit>
+				<Unit>
+					<UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>

@@ -2284,7 +2284,31 @@
   <German>"Ich wei&#223; nicht General," meint der Gouverneur, "ben&#246;tigen wir denn noch mehr ausl&#228;ndische S&#246;ldner bei uns? Wir k&#246;nnen doch schon mehr schlecht als recht unsere eigenen Truppen ern&#228;hren und unterhalten. Die denken doch nur an ihren Sold. Wenn wir den nicht aufbringen k&#246;nnen, dann zerstreuen sie sich in alle Winde und fangen wom&#246;glich an zu pl&#252;ndern. Und den Landgrafen von Hessen-Kassel m&#252;ssen wir auch noch bezahlen. [NEWLINE][NEWLINE]Naja, wenigstens k&#228;mpfen k&#246;nnen diese Kerle. Man h&#246;rt ja die tollsten Geschichten. Sollen drei Schuss in der Minute abfeuern k&#246;nnen und mit dem Bajonett sollen sie auch ganz flink sein." [NEWLINE][NEWLINE]</German>
   <Italian>You have recruited your hessian regiment. [NEWLINE][NEWLINE]</Italian>
   <Spanish>You have recruited your third hessian regiment. [NEWLINE][NEWLINE]</Spanish>
- </TEXT>  
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE</Tag>
+  <English>Refugees are Welcome</English>
+  <French>Refugees are Welcome</French>
+  <German>Erster Politischer Fl&#252;chtling</German>
+  <Italian>Refugees are Welcome</Italian>
+  <Spanish>Refugees are Welcome</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE_HEAD</Tag>
+  <English>Refugees are Welcome!</English>
+  <French>Refugees are Welcome!</French>
+  <German>Freidenker wohin das Auge blickt!</German>
+  <Italian>Refugees are Welcome!</Italian>
+  <Spanish>Refugees are Welcome!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE_TEXT</Tag>
+  <English>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer. [NEWLINE][NEWLINE]</English>
+  <French>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer. [NEWLINE][NEWLINE]</French>
+  <German>Gouverneur, es ist wieder ein politischer Fl&#252;chtling in der neuen Welt angekommen. Wie man h&#246;rt, ist er ein gebildeter und politisch aufgekl&#228;rter Mann. Ihr solltet ihn eventuell als Verwaltungsbeamten oder auch als Doktor einsetzen. Am besten dient dieser Fremde Eurer Kolonie jedoch, wenn ihr ihn in eine Schule, Akademie oder Universit&#228;t steckt. Er wird schnell einen Beruf erlernen, den ihr derzeit in den Kolonien ganz besonders ben&#246;tigt. Vertraut mir![NEWLINE][NEWLINE]</German>
+  <Italian>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer.  [NEWLINE][NEWLINE]</Italian>
+  <Spanish>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer.  [NEWLINE][NEWLINE]</Spanish>
+ </TEXT>   
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
   <English>Three Veterans</English>
@@ -2477,6 +2501,30 @@
   <Italian>Now you have some well versed train oil cookers. What a bloody handcraft![NEWLINE][NEWLINE]</Italian>
   <Spanish>Now you have some well versed train oil cookers. What a bloody handcraft![NEWLINE][NEWLINE]</Spanish>
  </TEXT>
+<TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER</Tag>
+  <English>Three Expert Trapper</English>
+  <French>Three Expert Trapper</French>
+  <German>Drei erfahrene Fallensteller</German>
+  <Italian>Three Expert Trapper</Italian>
+  <Spanish>Three Expert Trapper</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_HEAD</Tag>
+  <English>Three Expert Trapper</English>
+  <French>Three Expert Trapper</French>
+  <German>Ein edler Pelz</German>
+  <Italian>Three Expert Trapper</Italian>
+  <Spanish>Three Expert Trapper</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_TEXT</Tag>
+  <English>Now you have three experienced trapper. Use them to produce more premium furs![NEWLINE][NEWLINE]</English>
+  <French>Now you have three experienced trapper. Use them to produce more premium furs!</French>
+  <German>"Fallensteller stellen Fallen, hier im Wald den Tieren allen..." siniert Ihr vor Euch hin, als Ihr bei einem Blick aus dem Fenster die neue Ladung feinster Premiumfelle ankommen seht, die die Trapper den gro&#223;en Fluss hinunter in die Stadt gebracht haben. [NEWLINE][NEWLINE]Bald wird es in diesem Teil der Welt keine Bieber, Bären und andere Pelztieren mehr geben, wenn die alte Welt weiterhin so begierig auf diese Luxusware sein sollte. [NEWLINE][NEWLINE]"Ach was..." denkt ihr Euch, "solange die Kolonie daran so gut verdient wie bisher." Und schon ist es mit den Gewissensbissen auch schon wieder vorbei und Ihr widmet Euch wieder Eurem Nachmittagstee. [NEWLINE][NEWLINE]</German>
+  <Italian>Now you have three experienced trapper. Use them to produce more premium furs!</Italian>
+  <Spanish>Now you have three experienced trapper. Use them to produce more premium furs!</Spanish>
+ </TEXT> 
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_WHALING_BOAT</Tag>
   <English>First Whaling Boat</English>

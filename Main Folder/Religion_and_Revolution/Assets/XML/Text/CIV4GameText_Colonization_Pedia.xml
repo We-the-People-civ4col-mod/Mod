@@ -342,6 +342,14 @@
 		<Spanish>Cuesta a&#241;os conseguir el conocimiento, los contactos y la capacidad ret&#243;rica necesarios para ser un Estadista de &#233;xito. Su conocimiento de las normas y de los procedimientos legales hace que sean cruciales para mantener el orden y la disciplina en una colonia creciente. Adem&#225;s, su fuerza, su pasi&#243;n y su habilidad como oradores los convierte en armas poderosas para un asentamiento que desee independizarse.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_EMIGRANT_PEDIA</Tag>
+		<English>At European citizens, who wish to get freedom and human rights, were oppressed by the sovereigns. Many of these unhappy men flee looking for a better life.</English>
+		<French>At European citizens, who wish to get freedom and human rights, were oppressed by the sovereigns. Many of these unhappy men flee looking for a better life.</French>
+		<German>In den europ&#228;ischen Reichen und F&#252;rstent&#252;mern haben sich immer mehr Stadtb&#252;rger f&#252;r die Ideale der Aufkl&#228;rung und der Menschenrechte begeistert. Doch die Könige und Landesf&#252;rsten reagierten mit unnachsichtiger H&#228;rte und unterdr&#252;ckten die Rufe nach einem demokratischen Reich, in dem sich das Volk durch freie Wahlen selbst regieren k&#246;nnte. Vielen verfolgten Liberalen blieb nur die Flucht ins Ausland, um den Schergen der F&#252;rsten zu entkommen.</German>
+		<Italian>At European citizens, who wish to get freedom and human rights, were oppressed by the sovereigns. Many of these unhappy men flee looking for a better life.</Italian>
+		<Spanish>At European citizens, who wish to get freedom and human rights, were oppressed by the sovereigns. Many of these unhappy men flee looking for a better life.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_JESUIT_MISSIONARY_PEDIA</Tag>
 		<English>While many of the intrepid souls that stepped into the American wilderness were soldiers and warriors, nearly as many were men of god, marching into the unknown to spread their faith. Part diplomat, part explorer, the Missionary in many cases became the representative for his fellow Europeans, developing contacts, forming alliances, and all the while actively spreading Christianity to draw the traditions of the New World a little closer to those of the Old.</English>
 		<French>Parmi les &#226;mes intr&#233;pides qui s'aventurent dans les r&#233;gions sauvages am&#233;ricaines, il y a certes des soldats et des guerriers, mais aussi des hommes de Dieu, plongeant vers l'inconnu pour propager leur foi. Moiti&#233; diplomate, moiti&#233; explorateur, le Missionnaire sert souvent d'&#233;missaire pour le compte des Europ&#233;ens, nouant des contacts et formant des alliances tout en propageant activement le christianisme pour rapprocher encore davantage les traditions du Nouveau monde de celles de l'Ancien.</French>

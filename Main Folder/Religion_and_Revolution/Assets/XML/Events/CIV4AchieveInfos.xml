@@ -2859,6 +2859,37 @@
 		<YieldProduced/>
 	</AchieveInfo>
 	<AchieveInfo>
+		<Type>ACHIEVE_THREE_TRAPPER</Type>
+		<Description>TXT_KEY_ACHIEVE_THREE_TRAPPER</Description>
+		<bActive>1</bActive>
+		<bAfterMove>0</bAfterMove>
+		<HeaderTextKey>TXT_KEY_ACHIEVE_THREE_TRAPPER_HEAD</HeaderTextKey>
+		<BodyTextKey>TXT_KEY_ACHIEVE_THREE_TRAPPER_TEXT</BodyTextKey>
+		<PictureFileName>Art/Achievements/trapper.dds</PictureFileName>
+		<iPictureX>360</iPictureX>
+		<iPictureY>240</iPictureY>
+		<iLowTurnNumber>0</iLowTurnNumber>
+		<iHighTurnNumber>10000</iHighTurnNumber>
+		<bLandDiscovered>0</bLandDiscovered>
+		<bDiscoverEast>0</bDiscoverEast>
+		<bDiscoverWest>0</bDiscoverWest>
+		<iNumColonies>0</iNumColonies>
+		<iNumEuroContacts>0</iNumEuroContacts>
+		<iNumNativeContacts>0</iNumNativeContacts>
+		<iNumGoodsTraded>-1</iNumGoodsTraded>
+		<iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+		<iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+		<NumBuildings/>
+		<NumUnits>
+			<NumUnits>
+				<UnitType>UNIT_TRAPPER</UnitType>
+				<iNumber>3</iNumber>
+			</NumUnits>
+		</NumUnits>
+		<NumProfessions/>
+		<YieldProduced/>
+	</AchieveInfo>
+	<AchieveInfo>
 		<Type>ACHIEVE_WHALE_OIL_COOKERS</Type>
 		<Description>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS</Description>
 		<bActive>1</bActive>
@@ -3969,6 +4000,37 @@
 			<NumUnits>
 				<UnitType>UNIT_HESSIAN</UnitType>
 				<iNumber>3</iNumber>
+			</NumUnits>
+		</NumUnits>
+		<NumProfessions/>
+		<YieldProduced/>
+	</AchieveInfo>
+	<AchieveInfo>
+		<Type>ACHIEVE_FIRST_REFUGEE</Type>
+		<Description>TXT_KEY_ACHIEVE_FIRST_REFUGEE</Description>
+		<bActive>1</bActive>
+		<bAfterMove>0</bAfterMove>
+		<HeaderTextKey>TXT_KEY_ACHIEVE_FIRST_REFUGEE_HEAD</HeaderTextKey>
+		<BodyTextKey>TXT_KEY_ACHIEVE_FIRST_REFUGEE_TEXT</BodyTextKey>
+		<PictureFileName>Art/Achievements/political_refugee.dds</PictureFileName>
+		<iPictureX>360</iPictureX>
+		<iPictureY>240</iPictureY>
+		<iLowTurnNumber>0</iLowTurnNumber>
+		<iHighTurnNumber>10000</iHighTurnNumber>
+		<bLandDiscovered>0</bLandDiscovered>
+		<bDiscoverEast>0</bDiscoverEast>
+		<bDiscoverWest>0</bDiscoverWest>
+		<iNumColonies>0</iNumColonies>
+		<iNumEuroContacts>0</iNumEuroContacts>
+		<iNumNativeContacts>0</iNumNativeContacts>
+		<iNumGoodsTraded>-1</iNumGoodsTraded>
+		<iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+		<iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+		<NumBuildings/>
+		<NumUnits>
+			<NumUnits>
+				<UnitType>UNIT_EMIGRANT</UnitType>
+				<iNumber>1</iNumber>
 			</NumUnits>
 		</NumUnits>
 		<NumProfessions/>

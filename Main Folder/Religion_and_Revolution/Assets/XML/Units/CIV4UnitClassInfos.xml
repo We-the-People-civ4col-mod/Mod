@@ -357,6 +357,11 @@
 			<DefaultUnit>UNIT_STATESMAN</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_EMIGRANT</Type>
+			<Description>TXT_KEY_UNIT_EMIGRANT</Description>
+			<DefaultUnit>UNIT_EMIGRANT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_GOVERNOR</Type>
 			<Description>TXT_KEY_UNIT_GOVERNOR</Description>
 			<DefaultUnit>UNIT_GOVERNOR</DefaultUnit>

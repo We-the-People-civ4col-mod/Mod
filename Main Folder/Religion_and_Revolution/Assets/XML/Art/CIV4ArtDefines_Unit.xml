@@ -860,6 +860,23 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_EMIGRANT</Type>
+			<Button>,Art/colonization_atlas_units.dds,3,5</Button>
+			<FullLengthIcon>,Art/Interface/Screens/City_Management/emigrant.dds</FullLengthIcon>
+			<fScale>0.44</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Units/Settler/european_emigrant/Elder_Statesman.nif</NIF>
+			<KFM>Art/Units/Elder_Statesman/Elder_Statesman.kfm</KFM>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop/>
+				<AudioRunTypeEnd/>
+			</AudioRunSounds>
+		</UnitArtInfo>
+		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_NOBLE</Type>
 			<Button>,Art/colonization_atlas_units.dds,7,3</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/noble.dds</FullLengthIcon>
