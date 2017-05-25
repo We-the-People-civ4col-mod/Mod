@@ -34,15 +34,15 @@
 #
 # Note: $(PROGRAMFILES) converts to "C:\Program Files", "C:\Program Files (x86)" or whatever fits your system.
 # run "nmake.exe /P" in cmd.exe to see what it is on your system
-TOOLKIT=$(PROGRAMFILES)\Microsoft Visual C++ Toolkit 2003
-PSDK=$(PROGRAMFILES)\Microsoft SDKs\Windows\v7.0A
+TOOLKIT=D:\Games and Patches\Colonization\Programmieren\Microsoft Visual C++ Toolkit 2003
+PSDK=D:\Games and Patches\Colonization\Programmieren\WindowsSDK
 ## Uncomment to have newly compiled dlls copied to your mod's Assets directory
-YOURMOD=..
+YOURMOD=D:\Games and Patches\Colonization\Programmieren\fertig kompiliert
 
 ## Civ install path
 ## Path to the directory where boost and python is stored
 ## Overwritten by enviroment variable CIV4_LIB_INSTALL_PATH
-CIV4_PATH=$(PROGRAMFILES)\2K Games\Firaxis Games\Sid Meier's Civilization IV Colonization\CvGameCoreDLL
+CIV4_PATH=C:\Spiele\Firaxis Games\Sid Meier's Civilization IV Colonization\CvGameCoreDLL
 
 #### Tools ####
 CC="$(TOOLKIT)\bin\cl.exe"
@@ -51,7 +51,7 @@ LD="$(TOOLKIT)\bin\link.exe"
 RC="$(PSDK)\bin\rc.exe"
 ## Uncomment to build dependencies using fastdep
 ## Overwritten by enviroment variable FASTDEP_FULL_PATH
-FD="bin\fastdep.exe"
+FD="$(MAKEDIR)\bin\fastdep.exe"
 
 #### BLACKLIST ####
 ## Uncomment to block CvTextScreen (accidentally included by Firaxis)
