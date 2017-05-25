@@ -3576,7 +3576,7 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 			CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
 			if (kUnit.getDomainType() == DOMAIN_LAND && kPlayer.getEuropeUnitBuyPrice(eLoopUnit) > 0)
 			{
-				bool bValid = (kUnit.getCombat() > 0);
+				bool bValid = (kUnit.getCombat() > 5);
 				for (int j = 0; j < GC.getNumPromotionInfos() && !bValid; ++j)
 				{
 					if (kUnit.getFreePromotions(j))
