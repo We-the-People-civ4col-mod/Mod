@@ -1,6 +1,6 @@
 Version=11
 BeginGame
-	Description=
+	Description=TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=0

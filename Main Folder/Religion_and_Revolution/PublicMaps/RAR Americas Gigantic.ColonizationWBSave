@@ -856,6 +856,18 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -882,6 +894,11 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -903,6 +920,12 @@ BeginPlayer
 	AttitudePlayer=15, AttitudeExtra=-5
 	AttitudePlayer=18, AttitudeExtra=2
 	AttitudePlayer=25, AttitudeExtra=5
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -936,6 +959,13 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -953,6 +983,11 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -987,6 +1022,14 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1004,6 +1047,11 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1037,6 +1085,13 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1054,6 +1109,11 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1088,6 +1148,14 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1113,6 +1181,11 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1130,6 +1203,10 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1157,6 +1234,18 @@ BeginPlayer
 	AttitudePlayer=24, AttitudeExtra=5
 	AttitudePlayer=31, AttitudeExtra=-2
 	AttitudePlayer=34, AttitudeExtra=5
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1197,6 +1286,16 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1216,6 +1315,11 @@ BeginPlayer
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=8, AttitudeExtra=-10
 	AttitudePlayer=15, AttitudeExtra=-2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1244,6 +1348,11 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1263,6 +1372,10 @@ BeginPlayer
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=20, AttitudeExtra=2
 	AttitudePlayer=34, AttitudeExtra=-2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1292,6 +1405,11 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1312,6 +1430,7 @@ BeginPlayer
 	AttitudePlayer=11, AttitudeExtra=-10
 	AttitudePlayer=25, AttitudeExtra=10
 	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1330,6 +1449,11 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1356,6 +1480,10 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1374,6 +1502,10 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1401,6 +1533,10 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1421,6 +1557,10 @@ BeginPlayer
 	AttitudePlayer=17, AttitudeExtra=2
 	AttitudePlayer=20, AttitudeExtra=-5
 	AttitudePlayer=36, AttitudeExtra=-10
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1450,6 +1590,11 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1467,6 +1612,7 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
 	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
@@ -1495,6 +1641,13 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1513,6 +1666,9 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -1546,6 +1702,16 @@ BeginPlayer
 	CityList=%s
 	CityList=%s
 	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1563,6 +1729,7 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
+	CityList=%s
 	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
@@ -1582,6 +1749,11 @@ BeginPlayer
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=38, AttitudeExtra=2
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
+	CityList=%s
 	CityList=%s
 	CityList=%s
 	CityList=%s
@@ -26962,6 +27134,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -27029,6 +27202,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_MOUNTAINEER2
 		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
@@ -32702,6 +32876,7 @@ EndPlot
 BeginPlot
 	x=20,y=116
 	EuropeType=EUROPE_WEST
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -33090,6 +33265,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_MOUNTAINEER2
 		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
@@ -39117,6 +39293,7 @@ BeginPlot
 		Damage=0
 		Level=1, Experience=0
 		PromotionType=PROMOTION_RANGER2
+		PromotionType=PROMOTION_MINUTEMAN2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -42234,6 +42411,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_MOUNTAINEER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -67200,6 +67378,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_MOUNTAINEER2
 		PromotionType=PROMOTION_MINUTEMAN2
 		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
@@ -74714,6 +74893,7 @@ EndPlot
 BeginPlot
 	x=47,y=73
 	EuropeType=EUROPE_WEST
+	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -90302,7 +90482,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=123
-	BonusType=BONUS_COTTON
+	BonusType=BONUS_HEMP
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
 	TeamReveal=18,
@@ -102643,6 +102823,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_RANGER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -111854,6 +112035,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_MOUNTAINEER2
 		PromotionType=PROMOTION_SWAMP_FOX2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
@@ -114485,6 +114667,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_RANGER2
 		PromotionType=PROMOTION_SWAMP_FOX2
 		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
@@ -125921,6 +126104,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_SWAMP_FOX2
 		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
@@ -128690,6 +128874,7 @@ BeginPlot
 		Damage=0
 		Level=1, Experience=0
 		PromotionType=PROMOTION_SWAMP_FOX2
+		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -132101,6 +132286,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_RANGER2
 		PromotionType=PROMOTION_MOUNTAINEER2
 		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
@@ -150906,6 +151092,7 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
+		PromotionType=PROMOTION_SWAMP_FOX2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -152305,6 +152492,7 @@ BeginPlot
 		Damage=0
 		Level=1, Experience=0
 		PromotionType=PROMOTION_SWAMP_FOX2
+		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit

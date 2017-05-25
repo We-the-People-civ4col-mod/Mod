@@ -350,6 +350,14 @@
 		<Spanish>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] allows increased breeding of [COLOR_HIGHLIGHT_TEXT]livestock[COLOR_REVERT]. Stables will give protection from harsh weather during storms and cold winters for your pups. Also your livestock can give birth in secure environment. The [COLOR_HIGHLIGHT_TEXT]grand horse and cattle market[COLOR_REVERT] enables a supraregional trading of livestock and therefore will increase breeding additionally. </Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA</Tag>
+		<English>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</English>
+		<French>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</French>
+		<German>Grosse Karte von Nord-Amerika. Die Startpositionen der Europäer und Ureinwohner sowie der Ressourcen sind zufällig gewählt.</German>
+		<Italian>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</Italian>
+		<Spanish>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
 		<English>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</English>
 		<French>Repr&#233;sentation fid&#232;le gigantesque des Am&#233;riques (136x256 cases), avec distribution historique des indig&#232;nes et des ressources.</French>
