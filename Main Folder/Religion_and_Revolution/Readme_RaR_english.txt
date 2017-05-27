@@ -34,9 +34,10 @@ Of course the TAC-team.
 Otherwise basically almost every modder out there.
 Please tell us, if we use parts of your work and forgot your name.
 
-	Isabelxxx
+	Nightingale	
+	Writing Bull	
 	Willi_Tell
-	Writing Bull
+	Isabelxxx
 	Dale
 	Kailric
 	Aymerick
@@ -55,16 +56,17 @@ Please tell us, if we use parts of your work and forgot your name.
 	Roamty
 	Kathy
 	agnat86
-	Nightingale
 	Marla_Singer
 	Commander_Bello
 	Vetiarvind
 	Barthoze
+	melcher kürzer	
+	Fankman	
 	...
 
 ------------------
 
-Special Thanks to Infracta for hosting the download of our mod !
+Special Thanks to Mod DB for hosting the download of our mod!
 
 ------------------
 

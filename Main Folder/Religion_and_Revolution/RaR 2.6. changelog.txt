@@ -1,3 +1,23 @@
+Religion and Revolution: Version 2.6 // Changelog
+
+PLEASE NOTE THAT Version 2.6 IS NOT SAVEGAME COMPATIBLE WITH PREVIOUS VERSIONS!
+
+- Game Concepts / Texts for military units updated
+- Some minor bugs and typos fixed
+- Some new events implemented
+- New Unit "Political Refugee" implemented (can be educated very fast in schools).
+- Corrected promotion bombardment and added promotion high-sea fisherman 
+- Removed hardcoding for which units can move into peaks (can be edited in XML now) - by Nightinggale
+- DLL for 2 Plot City Radius corrected / works fine now for both 1 and 2 Plot City radius, 2 Plot is standard
+- Slightly changed required blades for cavalry 
+- Some small changes order of units in Europe Screen and price for Slaves 
+- Improvement of Peak graphic 
+- Implementation of Improvement "Sawmill" 
+- Bugfix military support by King fixed - King grants only military units now - diplomacy feature again works as intended.
+- Some balancing
+- Some small updates to some PublicMaps 
+
+
 Religion and Revolution: Version 2.5.1 // Changelog
 
 Bug Fixes: 

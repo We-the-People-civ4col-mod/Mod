@@ -6,7 +6,7 @@ The mod will already work with the 2 plot city radius WITHOUT any further change
 
 In case you like the older 1 plot city radius version do the following:
 
-Religion and Revolution 2.5 ONE CITY PLOT requires amending of one file before it works properly.
+Religion and Revolution 2.6 ONE CITY PLOT requires amending of one file before it works properly.
 
 a) copy the file "CvGameCoreDLL.dll" from the folder "1 city plot" into the folder /mods/Religion_and_Revolution/Assets and overwrite the existing file.
 b) Play and enjoy 1 plot city radius!

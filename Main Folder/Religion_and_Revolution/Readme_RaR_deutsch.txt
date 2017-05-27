@@ -15,6 +15,9 @@ Es basiert auf TAC (The Authentic Colonization) in der Version 2.03_final.
 Teammitglieder:
 
 	Schmiddie
+	Nightinggale	
+	
+	Inaktive Mitglieder:		
 	raystuttgart
 	Robert Surcouf
 	colonialfan
@@ -34,9 +37,10 @@ Natürlich die TAC-Mannschaft.
 Sonst grundsätzlich fast jeder Modder der bisher veröffentlicht hat.
 Sagen Sie uns bitte, wenn wir Teile Ihrer Arbeit verwenden und Ihren Namen vergessen haben.
 
-	Isabelxxx
+	Nightingale	
+	Writing Bull	
 	Willi_Tell
-	Writing Bull
+	Isabelxxx
 	Dale
 	Kailric
 	Aymerick
@@ -54,16 +58,17 @@ Sagen Sie uns bitte, wenn wir Teile Ihrer Arbeit verwenden und Ihren Namen verge
 	Roamty
 	Kathy
 	agnat86
-	Nightingale
 	Marla_Singer
 	Commander_Bello
 	Vetiarvind
 	Barthoze
+	melcher kürzer	
+	Fankman
 	...
 
 ------------------
 
-Besonderen Dank an Infracta, die den Download unserer Mod hosten !
+Besonderen Dank an Mod DB, die den Download unserer Mod hosten !
 
 ------------------
 
@@ -80,13 +85,6 @@ Spezielle Credits und Dank auch den Schöpfern/Herausgeber des ursprünglichen Spi
 Firaxis und 2Kgames
 
 -------------------
-
-Eine Übersicht aller neuen Features, Erweiterungen und Verbesserungen finden Sie hier:
-
-http://forums.civfanatics.com/showpost.php?p=10892630&postcount=2
-
--------------------
-
 
 Wie installiere ich den Mod?
 
