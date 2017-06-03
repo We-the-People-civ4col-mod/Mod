@@ -1990,19 +1990,19 @@
 	<Description>TXT_KEY_YIELD_WHALE_OIL</Description>
 	<Civilopedia>TXT_KEY_YIELD_WHALE_OIL_PEDIA</Civilopedia>
 	<bCargo>1</bCargo>
-	<iBuyPriceLow>20</iBuyPriceLow>
+	<iBuyPriceLow>18</iBuyPriceLow>
 	<iBuyPriceHigh>25</iBuyPriceHigh>
 	<iBuyPriceMin>6</iBuyPriceMin>
 	<iSellPriceDifference>2</iSellPriceDifference>
-	<iPriceChangeThreshold>1500</iPriceChangeThreshold>
+	<iPriceChangeThreshold>2000</iPriceChangeThreshold>
 	<iPriceCorrectionPercent>1</iPriceCorrectionPercent>
 	<iEuropeVolumeAttrition>-15</iEuropeVolumeAttrition>
-	<iAfricaBuyPriceLow>18</iAfricaBuyPriceLow>
-	<iAfricaBuyPriceHigh>23</iAfricaBuyPriceHigh>
-	<iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
-	<iPortRoyalBuyPriceLow>18</iPortRoyalBuyPriceLow>
-	<iPortRoyalBuyPriceHigh>23</iPortRoyalBuyPriceHigh>
-	<iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+	<iAfricaBuyPriceLow>15</iAfricaBuyPriceLow>
+	<iAfricaBuyPriceHigh>20</iAfricaBuyPriceHigh>
+	<iAfricaSellPriceDifference>3</iAfricaSellPriceDifference>
+	<iPortRoyalBuyPriceLow>16</iPortRoyalBuyPriceLow>
+	<iPortRoyalBuyPriceHigh>22</iPortRoyalBuyPriceHigh>
+	<iPortRoyalSellPriceDifference>4</iPortRoyalSellPriceDifference>
 	<iNativeBuyPrice>-1</iNativeBuyPrice>
 	<iNativeSellPrice>-1</iNativeSellPrice>
 	<iNativeConsumptionPercent>50</iNativeConsumptionPercent>

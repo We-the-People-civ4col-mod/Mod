@@ -2954,6 +2954,14 @@
 		<Spanish>[COLOR_FONT_GOLD]The king receives word that his citizens in the colonies are questioning his judgment.[COLOR_REVERT]</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_1_HELP</Tag>
+		<English>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</English>
+		<French>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</French>
+		<German>[COLOR_FONT_GOLD]Die Nachfrage nach edlem Tranöl in Europa steigt, da die braven Bürger sich aufgrund des neuen Angebots darüber bewusst werden, dass Öl besser brennt als Talg.[COLOR_REVERT]</German>
+		<Italian>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_COMMANDEERED</Tag>
 		<English>Your Lordship, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary Pirates. How shall we respond?</English>
 		<French>Votre Honneur, la marine Royale a r&#233;quisitionn&#233; l'un de nos meilleurs navires pour aider dans une campagne contre des pirates barbares. Comment devons-nous r&#233;pondre ?</French>
@@ -5201,5 +5209,101 @@
 		<German>Noch ein H&#246;fling, der uns hier sagt was wir zu tun uns zu lassen haben? Pah! Der soll bleiben wo der Pfeffer w&#228;chst, Majest&#228;t. Ihr werdet sehen, wir werden die Kolonien f&#252;r Euch auf Vordermann bringen!</German>
 		<Italian>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</Italian>
 		<Spanish>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_POLITICAL_REFUGEE</Tag>
+		<English>It seems that a well educated refugee intends to sail into the New World.</English>
+		<French>It seems that a well educated refugee intends to sail into the New World.</French>
+		<German>Ein Studierter möchte in die Neue Welt reisen und sich %s2_city anschließen.</German>
+		<Italian>It seems that a well educated refugee intends to sail into the New World.</Italian>
+		<Spanish>It seems that a well educated refugee intends to sail into the New World.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_POLITICAL_REFUGEE</Tag>
+		<English>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</English>
+		<French>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</French>
+		<German>Mylord, die Vorzüge der Freiheit in der Neuen Welt lassen auch die Gebildeten aufhorchen. Es heißt, dass einer dieser Studierten sich unseren Kolonien anschließen würde, wenn wir ihm die Überfahrt bezahlen.</German>
+		<Italian>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</Italian>
+		<Spanish>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_1</Tag>
+		<English>For the sake of variety we need a well educated man in our colonies. We will not remain a colony of workers and farmers. Issue the bill of exchange!</English>
+		<French>For the sake of variety we need a well educated man in our colonies. We will not remain a colony of workers and farmers. Issue the bill of exchange!</French>
+		<German>Wir könnten zur Abwechslung mal einen Akademiker brauchen. Wir wollen ja nicht eine Kolonie von Arbeitern und Bauern bleiben. Stellt ihm den Wechsel aus!</German>
+		<Italian>For the sake of variety we need a well educated man in our colonies. We will not remain a colony of workers and farmers. Issue the bill of exchange!</Italian>
+		<Spanish>For the sake of variety we need a well educated man in our colonies. We will not remain a colony of workers and farmers. Issue the bill of exchange!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_2</Tag>
+		<English>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</English>
+		<French>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</French>
+		<German>Lieber nicht, wir sind gerade etwas knapp bei Kasse und diese Studierten sind doch alles Aufschneider, die nur den ganzen Tag im Salon verbringen und kluge Reden schwingen. Ich brauche Leute, die auch anpacken können.</German>
+		<Italian>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</Italian>
+		<Spanish>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_WHALE_OIL_COOKER</Tag>
+		<English>A Master Train Oil Cooker wants to join %s2_city.</English>
+		<French>A Master Train Oil Cooker wants to join %s2_city.</French>
+		<German>In %s2_city möchte sich uns ein Meistertrankocher anschließen.</German>
+		<Italian>A Master Train Oil Cooker wants to join %s2_city.</Italian>
+		<Spanish>A Master Train Oil Cooker wants to join %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_WHALE_OIL_COOKER</Tag>
+		<English>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</English>
+		<French>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</French>
+		<German>Mylord, der Walfang vor unseren Küsten würde gute Gewinne versprechen. Wie es der Zufall will, hat der Kapitän eines Handelsschiffes in Europa einen Meistertrankocher an Bord genommen, der hier ein neues Leben beginnen möchte. Sollen wir im eine Anstellung geben?</German>
+		<Italian>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</Italian>
+		<Spanish>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALE_OIL_COOKER_1</Tag>
+		<English>Actually we always wanted to do this, only the right time for doing this had never opened up. Give him the job!</English>
+		<French>Actually we always wanted to do this, only the right time for doing this had never opened up. Give him the job!</French>
+		<German>Perfekt, das wollten wir doch schon lange in Angriff nehmen. Stellt ihn ein!</German>
+		<Italian>Actually we always wanted to do this, only the right time for doing this had never opened up. Give him the job!</Italian>
+		<Spanish>Actually we always wanted to do this, only the right time for doing this had never opened up. Give him the job!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALE_OIL_COOKER_2</Tag>
+		<English>Oh my god, what a stupid idea! The pirates cruising along our coasts are already waiting for such fat prey! We have not enough military vessels to protect our whaling ships and without procetion this is a rather senseless endeavor. We cannot employ him.</English>
+		<French>Oh my god, what a stupid idea! The pirates cruising along our coasts are already waiting for such fat prey! We have not enough military vessels to protect our whaling ships and without procetion this is a rather senseless endeavor. We cannot employ him.</French>
+		<German>Bei den vielen Piraten, die hier in dieser Gegend zur Zeit kreuzen? Wir haben nicht die Mittel, um alle unsere Walfänger von Kriegschiffen bewachen zu lassen. Und ohne Schutz ist das ein sinnloses Unterfangen. Wir können ihn derzeit nicht gebrauchen.</German>
+		<Italian>Oh my god, what a stupid idea! The pirates cruising along our coasts are already waiting for such fat prey! We have not enough military vessels to protect our whaling ships and without procetion this is a rather senseless endeavor. We cannot employ him.</Italian>
+		<Spanish>Oh my god, what a stupid idea! The pirates cruising along our coasts are already waiting for such fat prey! We have not enough military vessels to protect our whaling ships and without procetion this is a rather senseless endeavor. We cannot employ him.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_WHALING</Tag>
+		<English>A trading company intends to develop %s2_city as basis for their whaling activities.</English>
+		<French>A trading company intends to develop %s2_city as basis for their whaling activities.</French>
+		<German>Eine Handelskompanie möchte %s2_city als Basis für ihren Walfang ausbauen.</German>
+		<Italian>A trading company intends to develop %s2_city as basis for their whaling activities.</Italian>
+		<Spanish>A trading company intends to develop %s2_city as basis for their whaling activities.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_WHALING</Tag>
+		<English>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</English>
+		<French>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</French>
+		<German>Mylord, eine mächtige Handelskompanie möchte eine unserer Kolonien als Basis für ihren Walfang ausbauen. Davon würden wir sicher profitieren. Sie versprechen uns Schiffe, Männer und Baumaterial für neue Gebäude zu liefern, wenn wir im Gegenzug für Ihren Schutz sorgen und die Zölle auf Walspeck sowie Tranöl eine Weile aussetzen.</German>
+		<Italian>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</Italian>
+		<Spanish>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_1</Tag>
+		<English>Agreed, the region and our purse will benefit from this deal. However, I assume that we will need to calm down the reaction of our neighbours.</English>
+		<French>Agreed, the region and our purse will benefit from this deal. However, I assume that we will need to calm down the reaction of our neighbours.</French>
+		<German>Das kommt uns sehr gelegen, die Region und unsere Geldbörse werden davon sehr profitieren. Also einverstanden, setzen Sie die entsprechenden Verträge auf. Die Steuern setz ohnehin der König fest. Mit unseren Nachbarn werden wir uns schon arrangieren.</German>
+		<Italian>Agreed, the region and our purse will benefit from this deal. However, I assume that we will need to calm down the reaction of our neighbours.</Italian>
+		<Spanish>Agreed, the region and our purse will benefit from this deal. However, I assume that we will need to calm down the reaction of our neighbours.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_2</Tag>
+		<English>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</English>
+		<French>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</French>
+		<German>Diese armen Tiere. Sie benötigen unseren Schutz, nicht unsere Harpunen. Außerdem betreiben unsere Nachbarn hier bereits Walfang. Ich möchte die guten Beziehungen nicht gefährden.</German>
+		<Italian>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</Italian>
+		<Spanish>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</Spanish>
 	</TEXT>
 </Civ4GameText>

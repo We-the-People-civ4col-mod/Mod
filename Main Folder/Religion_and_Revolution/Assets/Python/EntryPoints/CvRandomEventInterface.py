@@ -644,6 +644,63 @@ def getHelpCounterblaste2(argsList):
 	if event.getGenericParameter(3) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	return szHelp
+
+def CanDoWhaling1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	iYield = gc.getInfoTypeForString("YIELD_WHALE_OIL")
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.isNone():
+		return false
+	if city.getYieldStored(iYield) < -quantity :
+		return false
+	return true
+
+def applyWhaling1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_WHALE_OIL")
+	iPrice = king.getYieldBuyPrice(iYield)
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(2), 1)
+	city.changeYieldStored(iYield, quantity)
+	if event.getGenericParameter(4) == 1 :
+		player.NBMOD_DecreaseMaxTaxRate()
+	
+def getHelpWhaling1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	city = player.getCity(kTriggeredData.iCityId)
+	iYield = gc.getInfoTypeForString("YIELD_WHALE_OIL")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = localText.getText("TXT_KEY_EVENT_WHALING_1_HELP", ())
+	if event.getGenericParameter(1) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+	if event.getGenericParameter(2) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(4) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+	if event.getGenericParameter(3) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	return szHelp
 	
 ######## WINTER ###########
 
