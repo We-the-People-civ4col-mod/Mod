@@ -1968,7 +1968,7 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>100</iWeight>
+			<iWeight>500</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<Civic>NONE</Civic>
@@ -1996,7 +1996,6 @@
 				<UnitClass>UNITCLASS_FRIGATE</UnitClass>
 				<UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
 				<UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
-				<UnitClass>UNITCLASS_FISHING_BOAT</UnitClass>
 			</UnitsRequired>
 			<iNumUnits>1</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
@@ -2023,7 +2022,7 @@
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
-			<bGlobal>1</bGlobal>
+			<bGlobal>0</bGlobal>
 			<bPickPlayer>0</bPickPlayer>
 			<bOtherPlayerWar>0</bOtherPlayerWar>
 			<bOtherPlayerAI>0</bOtherPlayerAI>
@@ -9631,7 +9630,7 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/event_image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>-1</iWeight>
+			<iWeight>800</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<Civic>NONE</Civic>
@@ -9709,7 +9708,7 @@
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<Civic>NONE</Civic>
-			<iMinTreasury>5000</iMinTreasury>
+			<iMinTreasury>4000</iMinTreasury>
 			<iMinPopulation>10</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>

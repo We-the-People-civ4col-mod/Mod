@@ -6391,7 +6391,7 @@
 			<PythonHelp>getHelpBonus</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
-			<iGenericParameter1>39</iGenericParameter1>
+			<iGenericParameter1>40</iGenericParameter1>
 			<iGenericParameter2>0</iGenericParameter2>
 			<iGenericParameter3>0</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
