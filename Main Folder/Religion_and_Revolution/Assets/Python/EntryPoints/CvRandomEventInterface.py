@@ -1329,7 +1329,7 @@ def canTriggerAntiPirate(argsList):
 	if player.isInRevolution():
 		return false
 	for i in range(gc.getNumUnitInfos()):
-		if gc.getUnitInfo(i).isMatchForLink("UNIT_CARAVEL",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_FLUYT",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_MERCHANTMAN",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_WHALING_BOAT",1):
+		if gc.getUnitInfo(i).isMatchForLink("UNIT_CARAVEL",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_FLUYT",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_MERCHANTMAN",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_WHALING_BOAT",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_CARRACK",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_CARAVELA_REDONDA",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_WEST_INDIAMAN",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_BRIGANTINE",1):
 			iKilledTradeships += CyStatistics().getPlayerNumUnitsLost(kTriggeredData.ePlayer, i)
 	if iKilledTradeships >= event.getGenericParameter(1):
 		(loopUnit, iter) = player.firstUnit()

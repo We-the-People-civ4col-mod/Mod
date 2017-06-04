@@ -5390,8 +5390,216 @@
 		<Tag>TXT_KEY_EVENT_PRIVATEER_5</Tag>
 		<English>This is a pitty, but we cannot change it. However, they did some profitable raids.</English>
 		<French>This is a pitty, but we cannot change it. However, they did some profitable raids.</French>
-		<German>Tja, leider nicht zu &#228;ndern. Wenigstens konnten sie einige profitable Kaperfahrten durchführen.</German>
+		<German>Tja, leider nicht zu &#228;ndern. Wenigstens konnten sie einige profitable Kaperfahrten durchf&#252;hren.</German>
 		<Italian>This is a pitty, but we cannot change it. However, they did some profitable raids.</Italian>
 		<Spanish>This is a pitty, but we cannot change it. However, they did some profitable raids.</Spanish>
-	</TEXT>		
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_TOWNHALL</Tag>
+		<English>A native from a tribe nearby wishes to join our colony.</English>
+		<French></French>
+		<German>Ein Ureinwohner m&#246;chte sich euch schlie&#223;en.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_TOWNHALL_1</Tag>
+		<English>Commander, a native wishes to settle down at our city. He fled from his tribe instead to fight againt their enemies, that means he is a coward.</English>
+		<French></French>
+		<German>Kommandant, ein eingesch&#252;chterter Indianer steht dem&#252;tig in Eurer Gesindestube. Sein Stamm habe ihn versto&#223;en, weil er bei einem &#220;berfall von Conquistadores auf sein Dorf geflohen war, statt zu k&#228;mpfen. Er bittet um Eure Gnade und eine neue Chance.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CONVERTED_TOWNHALL_1</Tag>
+		<English>Okay, give hin a bible.</English>
+		<French></French>
+		<German>Dies sei ihm gew&#228;hrt. Weist ihm eine Arbeit zu.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CONVERTED_TOWNHALL_2</Tag>
+		<English>No, catch him and sell him to the tribe. This will strengthen our relationship with the natives.</English>
+		<French></French>
+		<German>Nehmt ihn gefangen und verkauft ihn an den Stamm, das wird unsere Beziehungen auf lange Sicht st&#228;rken.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_DOCK</Tag>
+		<English>You get a converted native.</English>
+		<French></French>
+		<German>Ein Konvertierter Ureinwohner schlie&#223;t sich Euch an.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_DOCK_1</Tag>
+		<English>Commander, a converted native wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, ein Missionar reist derzeit durch unsere Kolonien. Sein indianischer Diener, der ihn begleitet, will ihn verlassen, weil er die unsittlichen Ann&#228;herungen seines Herrn satt hat.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CONVERTED_DOCK_1</Tag>
+		<English>Okay.</English>
+		<French></French>
+		<German>Unter christlicher N&#228;chstenliebe verstehe ich etwas anderes. Selbstverst&#228;ndlich gew&#228;hren wir dem Indianer Zuflucht.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_CHAPEL</Tag>
+		<English>You get a converted native.</English>
+		<French></French>
+		<German>Ein Konvertierter Ureinwohner schlie&#223;t sich Euch an.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_1</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, der Gemeindepfarrer fragt, ob ihr Euch eines Indianerj&#252;nglings annehmen k&#246;nnt. Er habe Vater und Mutter durch die Blattern verloren und stehe jetzt ganz alleine da.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_2</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, ein Indianer wurde in Eurem Gotteshaus bei dem Versuch erwischt, den silbernen Messkelch zu stehlen. Die Rothaut ist reuig und m&#246;chte ihre Schuld durch t&#228;tige Bu&#223;e begleichen.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_3</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, der Gemeindepfarrer konnte im Beichtstuhl eine Rothaut davon &#252;berzeugen, dass seine halbwilde Natur nicht gottgef&#228;llig ist und nur durch harte Arbeit unter Eurem strengen Kommando gez&#252;gelt werden k&#246;nne.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_4</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, ein vorbeiziehender Indianer hat der Anblick der bunten Glasfenster in Eurem Gotteshaus bezaubert. Er sah das Morgenlicht durch sie hindurch in seine Seele leuchten, meint er. Nun m&#246;chte er unter uns Wei&#223;en leben.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_5</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, ein Indianer erlebte beim zuf&#228;lligen Besuch unseres Gottesdienstes eine Vision. Er sah den Heiland mit einem Flammenschwerte am Altar stehen, in der Linken trug er den abgeschlagenen Kopf eines Wolfes. Ehrf&#252;rchtig m&#246;chte sich die Rothaut nun unserem Kampfe anschlie&#223;en.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_6</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, ein junger Indianer bittet Euch, ihm das Lesen beizubringen, damit er in unserem Gotteshaus die Heilige Schrift studieren kann. Im Gegenzug bietet er an, &#252;berall anzupacken, wo Not am Mann ist.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_7</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, eine Rothaut m&#246;chte Manitou abschw&#246;ren und stattdessen unserem Herrn Jesus Christus dienen.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_8</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, ein Indianerj&#252;ngling hat sich in die Statue der Heiligen Jungfrau Maria verliebt, die in unserem Gotteshaus steht. Er m&#246;chte nun in unserer Gemeinde leben, um stets in ihrer N&#228;he zu sein.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_9</Tag>
+		<English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+		<French></French>
+		<German>Kommandant, wir haben eine Rothaut erwischt, die in den Keller unseres Gotteshauses eingebrochen und ein ganzes F&#228;sschen unseres Messweines ausgesoffen hat. Der Bursche ist reuig und will seine Schuld durch Dienste abtragen.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CONVERTED_CHAPEL_1</Tag>
+		<English>Okay.</English>
+		<French></French>
+		<German>Wir werden uns um ihn k&#252;mmern.</German>
+		<Italian></Italian>
+		<Spanish></Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_3</Tag>
+		<English>A forest fire sparked by lightning has raged across the land near %s2_city.</English>
+		<French>Un feu de for&#234;t provoqu&#233; par la foudre s'est propag&#233; autour de %s2_city.</French>
+		<German>Viele B&#252;rger von %s2_city verlieren bei den Br&#228;nden ihr Hab und Gut. Die Menschen sind emp&#246;rt.</German>
+		<Italian>Un incendio forestale, causato da un fulmine, ha devastato il territorio vicino a %s2_city.</Italian>
+		<Spanish>Un incendio forestal causado por un rayo ha asolado las tierras aleda&#241;as a %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_1</Tag>
+		<English>Playing children from %s2_city sparked a fire in the nearby forest and went home without stamping out the fire. Many acres of forest are burnt-down due to these brats!</English>
+		<French>Catastrophe &#224; %s2_city : l'incendie d'un village s'est propag&#233; &#224; la for&#234;t, br&#251;lant des milliers d'hectares.</French>
+		<German>Kommandant, ein Bursche aus %s2_city und seine Maid wollen heiraten, doch sind ihre V&#228;ter zwei rivalisierende K&#246;hler und einander spinnefeind. Die st&#246;rrischen Waldschraten wollen den Beiden nicht ihren Segen geben. Nun hat sich das verzweifelte P&#228;rchen im Forst versteckt und droht, ein Feuer zu legen, um die Alten zu erpressen. Die B&#252;rger f&#252;rchten, ein Waldbrand k&#246;nne die ganze Gegend verw&#252;sten, und bitten Euch einzugreifen.</German>
+		<Italian>Tragedia nei pressi di %s2_city: &#232; scoppiato un incendio in un villaggio e si &#232; propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
+		<Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CONIFEROUS_FIRE_1</Tag>
+		<English>Organize a replanting effort.</English>
+		<French>Organiser une campagne de reboisement.</French>
+		<German>Schickt den K&#246;hlern je einen Batzen Gold und mein Versprechen, den Liebenden das Hochzeitsbankett zu spendieren. Mammon macht missvergn&#252;gte M&#228;nner m&#252;rbe.</German>
+		<Italian>Organizza un rimboschimento.</Italian>
+		<Spanish>Que empiecen las tareas de repoblaci&#243;n forestal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CONIFEROUS_FIRE_2</Tag>
+		<English>We are too pressed to spare any aid.</English>
+		<French>Nous n'avons pas assez d'argent pour offrir notre aide.</French>
+		<German>Wie hei&#223;t diese Posse - "Romeo und Julia f&#252;r Hinterw&#228;ndler"? Die sollen ihre Streitigkeiten selber regeln.</German>
+		<Italian>Siamo troppo sotto pressione per inviare aiuti.</Italian>
+		<Spanish>Estamos demasiado apurados como para prestarles ayuda.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_3</Tag>
+		<English>A forest fire sparked by lightning has raged across the land near %s2_city.</English>
+		<French>Un feu de for&#234;t provoqu&#233; par la foudre s'est propag&#233; autour de %s2_city.</French>
+		<German>Viele B&#252;rger von %s2_city verlieren bei den Br&#228;nden ihr Hab und Gut. Die Menschen sind emp&#246;rt.</German>
+		<Italian>Un incendio forestale, causato da un fulmine, ha devastato il territorio vicino a %s2_city.</Italian>
+		<Spanish>Un incendio forestal causado por un rayo ha asolado las tierras aleda&#241;as a %s2_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_1</Tag>
+		<English>Playing children from %s2_city sparked a fire in the nearby forest and went home without stamping out the fire. Many acres of forest are burnt-down due to these brats!</English>
+		<French>Catastrophe &#224; %s2_city : l'incendie d'un village s'est propag&#233; &#224; la for&#234;t, br&#251;lant des milliers d'hectares.</French>
+		<German>In %s2_city haben ein paar &#252;berm&#252;tige Burschen dem Dorfnarren eingeredet, durch den nahen Forst streife ein Werwolf, der es auf ihn h&#246;chstpers&#246;nlich abgesehen habe. Daraufhin hat der ver&#228;ngstigte T&#246;lpel im Wald ein Feuer gelegt, um die Bestie zu verbrennen. Der Ostwind hat die Flammen entfacht, und eine Feuerwalze rast durch das Land. Die Todeshitze droht viele Hektar in ru&#223;ige Asche zu verwandeln.</German>
+		<Italian>Tragedia nei pressi di %s2_city: &#232; scoppiato un incendio in un villaggio e si &#232; propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
+		<Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_JUNGLE_FIRE_1</Tag>
+		<English>Organize a replanting effort.</English>
+		<French>Organiser une campagne de reboisement.</French>
+		<German>Verpflichtet so viele helfende H&#228;nde wie Ihr findet, um die Feuersbrunst zu l&#246;schen.</German>
+		<Italian>Organizza un rimboschimento.</Italian>
+		<Spanish>Que empiecen las tareas de repoblaci&#243;n forestal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_JUNGLE_FIRE_2</Tag>
+		<English>We are too pressed to spare any aid.</English>
+		<French>Nous n'avons pas assez d'argent pour offrir notre aide.</French>
+		<German>Schlimme Kunde. Schnell! Spurt euch! Ich brauche sofort einen Schnaps gegen den Schrecken.</German>
+		<Italian>Siamo troppo sotto pressione per inviare aiuti.</Italian>
+		<Spanish>Estamos demasiado apurados como para prestarles ayuda.</Spanish>
+	</TEXT>	
 </Civ4GameText>
