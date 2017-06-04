@@ -2609,6 +2609,61 @@
 		</ArtRef>
 		<ArtRef Name="goal:IMPROVEMENT_FARM">
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_IROQUOIS</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_SOUTH</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>		
+		<ArtRef Name="goal:IMPROVEMENT_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_WEST</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>		
+		<ArtRef Name="goal:IMPROVEMENT_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_EAST</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>		
+		<ArtRef Name="goal:IMPROVEMENT_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_CENTRALAMERICA</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">NNIF:Art/Structures/Improvements/Farm/farm_2x1_building.nif</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM3</Attribute>
