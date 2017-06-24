@@ -4336,24 +4336,48 @@ Multiple repeating units is possible and an equal number will be trained of each
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FEINT</Tag>
-		<English>Feint</English>
+		<English>Feint I</English>
 		<French>
-			<Text>Feinte</Text>
+			<Text>Feinte I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
 		<German>
-			<Text>Finte</Text>
+			<Text>Finte I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Feint</Text>
+			<Text>Feint I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Feint</Text>
+			<Text>Feint I</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
+		<English>Feint II</English>
+		<French>
+			<Text>Feinte II</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Finte II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Feint II</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Feint II</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>

@@ -14628,6 +14628,14 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
+		<English>Relief Battalion</English>
+		<French>Relief Battalion</French>
+		<German>Reservebataillon</German>
+		<Italian>Relief Battalion</Italian>
+		<Spanish>Relief Battalion</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK1</Tag>
 		<English>Storm Attack I</English>
 		<French>
@@ -15214,6 +15222,46 @@
 		<German>Handelsschiff II</German>
 		<Italian>Nave mercantile II</Italian>
 		<Spanish>Buque mercante II</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORCED_MARCH1</Tag>
+		<English>Forced March I</English>
+		<French>
+			<Text>Forced March I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Gewaltmarsch I</German>
+		<Italian>
+			<Text>Forced March I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Forced March I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_FORCED_MARCH2</Tag>
+		<English>Forced March II</English>
+		<French>
+			<Text>Forced March II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Gewaltmarsch II</German>
+		<Italian>
+			<Text>Forced March II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Forced March II</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GENERIC_KING</Tag>
