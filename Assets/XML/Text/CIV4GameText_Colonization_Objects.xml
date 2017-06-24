@@ -1919,48 +1919,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VETERAN_INFANTRY</Tag>
-		<English>Veteran Militiaman:Veteran Militiamen</English>
+		<English>Veteran Infantry Soldier:Veteran Infantry Soldiers</English>
 		<French>
-			<Text>Tirailleur v&#233;t&#233;ran:Tirailleurs v&#233;t&#233;rans</Text>
+			<Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
 		<German>
-			<Text>Erfahrener Milizsoldat:Erfahrene Milizsoldaten</Text>
+			<Text>Erfahrener Infanterist:Erfahrene Infanteristen</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</German>
 		<Italian>
-			<Text>Veteran Militiaman:Veteran Militiamen</Text>
+			<Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Veteran Militiaman:Veteran Militiamen</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_VETERAN_LINE_INFANTRY</Tag>
-		<English>Line Infantry Soldier:Line Infantry Soldiers</English>
-		<French>
-			<Text>V&#233;t&#233;ran d'infanterie:V&#233;t&#233;rans d'infanterie</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Erfahrener Linieninfanterist:Erfahrene Linieninfanteristen</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</German>
-		<Italian>
-			<Text>Line Infantry Soldier:Line Infantry Soldiers</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Line Infantry Soldier:Line Infantry Soldiers</Text>
+			<Text>Veteran Infantry Soldier:Veteran Infantry Soldiers</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>

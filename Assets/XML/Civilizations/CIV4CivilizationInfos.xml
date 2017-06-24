@@ -3409,10 +3409,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -3662,10 +3658,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -3909,10 +3901,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4165,10 +4153,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -4399,10 +4383,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4637,10 +4617,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -4879,10 +4855,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -5118,10 +5090,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5919,10 +5887,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -6825,10 +6789,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -7738,10 +7698,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -8657,10 +8613,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -9572,10 +9524,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -10478,10 +10426,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -11381,10 +11325,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -12281,10 +12221,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -13208,10 +13144,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -14124,10 +14056,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -15026,10 +14954,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -15955,10 +15879,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -16859,10 +16779,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -17768,10 +17684,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -18681,10 +18593,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -19588,10 +19496,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -20492,10 +20396,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -21411,10 +21311,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -22295,10 +22191,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -23214,10 +23106,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -24116,10 +24004,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -25011,10 +24895,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -25915,10 +25795,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -26804,10 +26680,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -27713,10 +27585,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -28615,10 +28483,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -29511,10 +29375,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -30412,10 +30272,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -31310,10 +31166,6 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
 					<UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
@@ -32199,10 +32051,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -33199,10 +33047,6 @@
 				</Unit>
 				<Unit>
 					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<UnitType>NONE</UnitType>
-				</Unit>
-				<Unit>
-					<UnitClassType>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>

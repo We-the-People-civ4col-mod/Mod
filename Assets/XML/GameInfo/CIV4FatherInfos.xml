@@ -2027,7 +2027,7 @@
 			<RevealImprovements/>
 			<FreeUnits>
 				<FreeUnit>
-					<UnitClass>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClass>
+					<UnitClass>UNITCLASS_VETERAN</UnitClass>
 					<iFreeUnits>5</iFreeUnits>
 				</FreeUnit>
 				<FreeUnit>
@@ -2091,7 +2091,7 @@
 			<RevealImprovements/>
 			<FreeUnits>
 				<FreeUnit>
-					<UnitClass>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClass>
+					<UnitClass>UNITCLASS_VETERAN</UnitClass>
 					<iFreeUnits>10</iFreeUnits>
 				</FreeUnit>
 				<FreeUnit>

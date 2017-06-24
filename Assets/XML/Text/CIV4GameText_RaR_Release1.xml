@@ -4383,6 +4383,30 @@ Multiple repeating units is possible and an equal number will be trained of each
 		</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DRILL_SERGEANT</Tag>
+		<English>Drill Sergeant</English>
+		<French>
+			<Text>Drill Sergeant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ausbildungsunteroffizier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Drill Sergeant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Drill Sergeant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_GUARD</Tag>
 		<English>Guard</English>
 		<French>

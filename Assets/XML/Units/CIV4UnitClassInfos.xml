@@ -311,15 +311,10 @@
 			<Description>TXT_KEY_UNIT_TRAIN</Description>
 			<DefaultUnit>UNIT_TRAIN</DefaultUnit>
 		</UnitClassInfo>
-				<UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_VETERAN</Type>
 			<Description>TXT_KEY_UNIT_VETERAN_INFANTRY</Description>
 			<DefaultUnit>UNIT_VETERAN_INFANTRY</DefaultUnit>
-		</UnitClassInfo>
-		<UnitClassInfo>
-			<Type>UNITCLASS_VETERAN_LINE_INFANTRY</Type>
-			<Description>TXT_KEY_UNIT_VETERAN_LINE_INFANTRY</Description>
-			<DefaultUnit>UNIT_VETERAN_LINE_INFANTRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_EUROPEAN_LINE_INFANTRY</Type>

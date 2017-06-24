@@ -511,10 +511,6 @@
 					<iCombatModifier>10</iCombatModifier>
 				</UnitStrengthModifier>
 				<UnitStrengthModifier>
-					<UnitClass>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClass>
-					<iCombatModifier>10</iCombatModifier>
-				</UnitStrengthModifier>
-				<UnitStrengthModifier>
 					<UnitClass>UNITCLASS_HESSIAN</UnitClass>
 					<iCombatModifier>10</iCombatModifier>
 				</UnitStrengthModifier>
@@ -6562,7 +6558,7 @@
 			<BuildingRequiredYieldModifiers/>
 			<UnitStrengthModifiers>
 				<UnitStrengthModifier>
-					<UnitClass>UNITCLASS_VETERAN_LINE_INFANTRY</UnitClass>
+					<UnitClass>UNITCLASS_VETERAN</UnitClass>
 					<iCombatModifier>10</iCombatModifier>
 				</UnitStrengthModifier>
 				<UnitStrengthModifier>

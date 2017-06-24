@@ -2665,7 +2665,7 @@
 		<NumBuildings/>
 		<NumUnits>
 			<NumUnits>
-				<UnitType>UNIT_VETERAN_LINE_INFANTRY</UnitType>
+				<UnitType>UNIT_VETERAN_INFANTRY</UnitType>
 				<iNumber>3</iNumber>
 			</NumUnits>
 		</NumUnits>
@@ -2696,7 +2696,7 @@
 		<NumBuildings/>
 		<NumUnits>
 			<NumUnits>
-				<UnitType>UNIT_VETERAN_LINE_INFANTRY</UnitType>
+				<UnitType>UNIT_VETERAN_INFANTRY</UnitType>
 				<iNumber>20</iNumber>
 			</NumUnits>
 		</NumUnits>
