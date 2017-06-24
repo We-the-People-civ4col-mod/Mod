@@ -1,0 +1,3356 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE</Tag>
+		<English>Royal English:Royal English</English>
+		<French>
+			<Text>anglais:anglaise:anglais:anglaises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>k&#246;niglich englisch:k&#246;niglich englischen:k&#246;niglich englische:k&#246;niglich englischer</German>
+		<Italian>
+			<Text>Inglese:Inglesi</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>ingl&#233;s:ingl&#233;s:ingleses:ingleses</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_FRANCE_EUROPE_ADJECTIVE</Tag>
+		<English>Royal French:Royal French</English>
+		<French>
+			<Text>fran&#231;ais:fran&#231;aise:fran&#231;ais:fran&#231;aises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>k&#246;niglich franz&#246;sisch:k&#246;niglich franz&#246;sischen:k&#246;niglich franz&#246;sische:k&#246;niglich franz&#246;sischer</German>
+		<Italian>
+			<Text>Francese:Francesi</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>franc&#233;s:franc&#233;s:franceses:francesas</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE</Tag>
+		<English>Royal Spanish:Royal Spanish</English>
+		<French>
+			<Text>espagnol:espagnole:espagnols:espagnoles</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>k&#246;niglich spanisch:k&#246;niglich spanischen:k&#246;niglich spanische:k&#246;niglich spanischer</German>
+		<Italian>
+			<Text>Spagnola:Spagnole</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>espa&#241;ol:espa&#241;ol:espa&#241;oles:espa&#241;olas</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
+		<English>Royal Dutch:Royal Dutch</English>
+		<French>
+			<Text>n&#233;erlandais:n&#233;erlandaise:n&#233;erlandais:n&#233;erlandaises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>k&#246;niglich niederl&#228;ndisch:k&#246;niglich niederl&#228;ndischen:k&#246;niglich niederl&#228;ndische:k&#246;niglich niederl&#228;ndischer</German>
+		<Italian>
+			<Text>Olandese:Olandesi</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>holand&#233;s:holandesa:holandeses:holandesas</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
+		<English>Dutch:Dutch</English>
+		<French>
+			<Text>n&#233;erlandais:n&#233;erlandaise:n&#233;erlandais:n&#233;erlandaises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>niederl&#228;ndisch:niederl&#228;ndischen:niederl&#228;ndische:niederl&#228;ndischer</German>
+		<Italian>
+			<Text>Olandese:Olandesi</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>holand&#233;s:holand&#233;s:holandeses:holandeses</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ARAWAK_ADJECTIVE</Tag>
+		<English>Arawak</English>
+		<French>
+			<Text>arawak:arawak:arawaks:arawaks</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Arawak-:Arawak-:Arawak-:Arawak-</German>
+		<Italian>
+			<Text>Arawak</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>arahuaco:arahuaca:arahuacos:arahuacas</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TUPI_ADJECTIVE</Tag>
+		<English>Tupi</English>
+		<French>
+			<Text>tupi:tupi:tupis:tupis</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Tupi-:Tupi-:Tupi-:Tupi-</German>
+		<Italian>
+			<Text>Tupi</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>tup&#237;:tup&#237;:tup&#237;es:tup&#237;es</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_CHEROKEE_ADJECTIVE</Tag>
+		<English>Cherokee</English>
+		<French>
+			<Text>cherokee:cherokee:cherokees:cherokees</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Cherokee-:Cherokee-:Cherokee-:Cherokee-</German>
+		<Italian>
+			<Text>Cherokee</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>cherokee:cherokee:cherokees:cherokees</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_IROQUOIS_ADJECTIVE</Tag>
+		<English>Iroquois</English>
+		<French>
+			<Text>iroquois:iroquois:iroquois:iroquois</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>irokesisch:irokesischen:irokesischen:irokesischer</German>
+		<Italian>
+			<Text>Irochese:Irochesi</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>iroqu&#233;s:iroquesa:iroqueses:iroquesas</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SIOUX_ADJECTIVE</Tag>
+		<English>Sioux</English>
+		<French>
+			<Text>sioux:sioux:sioux:sioux</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Sioux-:Sioux-:Sioux-:Sioux-</German>
+		<Italian>
+			<Text>Sioux</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>sioux:sioux:sioux:sioux</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_NEZ_PERCE_ADJECTIVE</Tag>
+		<English>Nez Perce</English>
+		<French>
+			<Text>Nez Perce:Nez Perce:Nez Perce:Nez Perce</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Nez Perce-:Nez Perce-:Nez Perce-:Nez Perce-</German>
+		<Italian>
+			<Text>Nez Perce</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Nez Perce:Nez Perce:Nez Perce:Nez Perce</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_APACHE_ADJECTIVE</Tag>
+		<English>Apache</English>
+		<French>
+			<Text>apache:apache:apaches:apaches</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Apachen-:Apachen-:Apachen-:Apachen-</German>
+		<Italian>
+			<Text>Apache</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>apache:apache:apaches:apaches</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_AZTEC_ADJECTIVE</Tag>
+		<English>
+			<Text>Aztec:Aztecs</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>aztec:azt&#232;que:aztecs:azt&#232;ques</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>aztekisch:aztekischen:aztekischen:aztekischer</Text>
+			<Gender>Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Azteco:Azteca:Aztechi:Azteche</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>azteca:azteca:aztecas:aztecas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_ENGLAND_ADJECTIVE</Tag>
+		<English>
+			<Text>English:English</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>anglais:anglaise:anglais:anglaises</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>englisch:englischen:englische:englischer</Text>
+			<Gender>Neuter:Neuter:Neuter:Male</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Inglese:Inglese:Inglesi:Inglesi</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>ingl&#233;s:ingl&#233;s:ingleses:inglesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_FRANCE_ADJECTIVE</Tag>
+		<English>
+			<Text>French:French</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>fran&#231;ais:fran&#231;aise:fran&#231;ais:fran&#231;aises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>franz&#246;sisch:franz&#246;sischen:franz&#246;sische:franz&#246;sischer</Text>
+			<Gender>Neuter:Neuter:Neuter:Male</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Francese:Francese:Francesi:Francesi</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>franc&#233;s:franc&#233;s:franceses:francesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_INCA_ADJECTIVE</Tag>
+		<English>
+			<Text>Incan:Incas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>inca:inca:incas:incas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>Inka-:Inka-:Inka-:Inka-</Text>
+			<Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Incaico:Incaica:Incaici:Incaiche</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>inca:inca:incas:incas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SPAIN_ADJECTIVE</Tag>
+		<English>
+			<Text>Spanish:Spanish</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>espagnol:espagnole:espagnols:espagnoles</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>spanisch:spanischen:spanische:spanischer</Text>
+			<Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>
+			<Text>Spagnola:Spagnola:Spagnoli:Spagnole</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>espa&#241;ol:espa&#241;ol:espa&#241;oles:espa&#241;olas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_ADJECTIVE</Tag>
+		<English>Maya</English>
+		<French>
+			<Text>maya:maya:mayas:mayas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Maya-</German>
+		<Italian>
+			<Text>Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
+		<English>Portuguese</English>
+		<French>
+			<Text>portugais:portugaise:portugais:portugaises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>portugiesisch:portugiesischen:portugiesische:portugiesischer</Text>
+			<Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>Portoghese</Italian>
+		<Spanish>Portugues</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_ADJECTIVE</Tag>
+		<English>Royal Portuguese:Royal Portuguese</English>
+		<French>
+			<Text>portugais:portugaise:portugais:portugaises</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>
+			<Text>k&#246;niglich portugiesisch:k&#246;niglich portugiesischen:k&#246;niglich portugiesische:k&#246;niglich portugiesischer</Text>
+			<Gender>Neuter:Neuter:Neuter:Neuter</Gender>
+			<Plural>0:0:0:0</Plural>
+		</German>
+		<Italian>Portughese</Italian>
+		<Spanish>Portuguese</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_DESC</Tag>
+		<English>Maya Empire</English>
+		<French>
+			<Text>Empire Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Maya-St&#228;dtebund</German>
+		<Italian>
+			<Text>Impero Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Imperio Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_MAYA_SHORT_DESC</Tag>
+		<English>Maya</English>
+		<French>
+			<Text>Mayas</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Maya</German>
+		<Italian>
+			<Text>L'Impero Maya:l'Impero Maya:dell'Impero Maya</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Mayapan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
+		<English>Portuguese Colonies</English>
+		<French>Colonies portugaises</French>
+		<German>Col&#243;nias Portuguesas</German>
+		<Italian>Colonie portoghesi</Italian>
+		<Spanish>Portuguese Colonies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_SHORT_DESC</Tag>
+		<English>New Portugal</English>
+		<French>Nouveau Portugal</French>
+		<German>Col&#243;nias Portuguesas</German>
+		<Italian>Nuovo Portogallo</Italian>
+		<Spanish>New Portugal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
+		<English>Portuguese Empire</English>
+		<French>Empire portugais</French>
+		<German>K&#246;nigreich Portugal</German>
+		<Italian>Impero Portoghese</Italian>
+		<Spanish>Portuguese Empire</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_SHORT_DESC</Tag>
+		<English>Portugal</English>
+		<French>Portugal</French>
+		<German>Portugal</German>
+		<Italian>Portogallo</Italian>
+		<Spanish>Portugal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_PEDIA</Tag>
+		<English>Portugal</English>
+		<French>Portugal</French>
+		<German>Portugal</German>
+		<Italian>Portogallo</Italian>
+		<Spanish>Portugal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_LIBERTARIAN</Tag>
+		<English>Libertarian</English>
+		<French>
+			<Text>Libertaire:Libertaire</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</French>
+		<German>Rebellischer Vordenker</German>
+		<Italian>
+			<Text>Liberale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Libertario:Libertaria</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EXPLORERS</Tag>
+		<English>Explorers</English>
+		<French>
+			<Text>Explorateur:Exploratrice</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</French>
+		<German>Geschickter Diplomat</German>
+		<Italian>Explorers</Italian>
+		<Spanish>Explorers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_EXPLORERS_SHORT</Tag>
+		<English>Exp</English>
+		<French>Explor</French>
+		<German>For</German>
+		<Italian>Exp</Italian>
+		<Spanish>Exp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_SCRIPT_FW_DESCR</Tag>
+		<English>Random map that simulates earth-like plate tectonics, geostrophic and monsoon winds and rainfall.</English>
+		<French>Carte al&#233;atoire qui simule la tectonique terrestre, la g&#233;ostrophie, la mousson et la pluie.</French>
+		<German>Zufallsgenerierte Karte mit gro&#223;en zusammenh&#228;ngenden Klimazonen und Gebirgsz&#252;gen</German>
+		<Italian>Random map that simulates earth-like plate tectonics, geostrophic and monsoon winds and rainfall.</Italian>
+		<Spanish>Random map that simulates earth-like plate tectonics, geostrophic and monsoon winds and rainfall.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMESPEED_MARATHON_Old</Tag>
+		<English>Marathon, 2 Phasen</English>
+		<French>
+			<Text>Marathon, 2 phases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Marathon, 2 Phasen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Maratona, 2 Phasen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Marat&#243;n, 2 Phasen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMESPEED_EPIC_Old</Tag>
+		<English>Epic, 2 Phasen</English>
+		<French>
+			<Text>&#201;pique, 2 phases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Episch, 2 Phasen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Epica, 2 Phasen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>&#201;pica, 2 Phasen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMESPEED_NORMAL_Old</Tag>
+		<English>Normal, 2 Phasen</English>
+		<French>
+			<Text>Normale, 2 phases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Normal, 2 Phasen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Normale, 2 Phasen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Normal, 2 Phasen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMESPEED_QUICK_Old</Tag>
+		<English>Quick, 2 Phases</English>
+		<French>
+			<Text>Rapide, 2 phases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Rapide, 2 Phases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Veloce, 2 Phasen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>R&#225;pida, 2 Phasen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_CITY_2</Tag>
+		<English>We would like to offer you the lands this settlement is on as a sign of our respect.</English>
+		<French>Nous aimerions vous offrir cette colonie en gage de notre respect.</French>
+		<German>Wir m&#246;chten diese Siedlung zu Euren Gunsten aufgeben, seid Ihr damit einverstanden?</German>
+		<Italian>Vorremmo offrirti questo insediamento in segno di rispetto.</Italian>
+		<Spanish>Nos gustar&#237;a ofreceros este asentamiento como muestra de respeto.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_BOUND</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Due in %d2 turns[NEWLINE]Cargo: %d3/%d4</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]A &#233;ch&#233;ance dans %d2 tours[NEWLINE]Cargaison : %d3/%d4</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Ankunft in %d2 Runden[NEWLINE]Ladung: %d3/%d4</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Due in %d2 turns[NEWLINE]Cargo: %d3/%d4</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT][NEWLINE]Due in %d2 turns[NEWLINE]Cargo: %d3/%d4</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE</Tag>
+		<English>Turn trade messages [COLOR_HIGHLIGHT_TEXT]on/off[COLOR_REVERT]</English>
+		<French>Activer les messages commerciaux [COLOR_HIGHLIGHT_TEXT]marche/arr&#234;t[COLOR_REVERT]</French>
+		<German>Handels-Anzeige [COLOR_HIGHLIGHT_TEXT]Ein/Aus[COLOR_REVERT]</German>
+		<Italian>Turn trade messages [COLOR_HIGHLIGHT_TEXT]on/off[COLOR_REVERT]</Italian>
+		<Spanish>Turn trade messages [COLOR_HIGHLIGHT_TEXT]on/off[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTE_DESCRIPTION</Tag>
+		<English>%s1_yield from %s2_city to %s3_city</English>
+		<French>%s1_yield de %s2_city vers %s3_city</French>
+		<German>%s1_yield von %s2_city nach %s3_city</German>
+		<Italian>%s1_yield da %s2_city a %s3_city</Italian>
+		<Spanish>%s1_yield por ruta de %s2_city a %s3_city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEVOUT</Tag>
+		<English>Devout</English>
+		<French>
+			<Text>D&#233;v&#244;t:D&#233;vote</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</French>
+		<German>Fromm</German>
+		<Italian>Devoto</Italian>
+		<Spanish>Devout</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_DEVOUT_SHORT</Tag>
+		<English>Dev</English>
+		<French>Devot</French>
+		<German>Frm</German>
+		<Italian>Dev</Italian>
+		<Spanish>Dev</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DOMINATION</Tag>
+		<English>Domination</English>
+		<French>Domination</French>
+		<German>Vorherrschaft</German>
+		<Italian>Domination</Italian>
+		<Spanish>Domination</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DOMINATION_PEDIA</Tag>
+		<English>In Colonial Times, European Powers struggled for supremacy in New World. This mod will allow you to feel a bit of that aspect of Colonization history. You will struggle against natives and European Colonies to establish the largest new nation world has ever seen.</English>
+		<French>Dans les temps coloniaux, les puissances europ&#233;ens luttaient pour la supr&#233;matie dans le Nouveau Monde. Ce mod vous permet de ressentir quelques aspects de cette Histoire colonial, qui marquera &#224; jamais l'Humanit&#233;. Vous combatterez vos rivaux europ&#233;ens et indig&#232;nes pour &#233;tablir la plus grande Nation que le monde n'aura jamais connu.</French>
+		<German>In den Zeiten der Kolonialisierung k&#228;mpften die Europ&#228;ischen M&#228;chte um die Seeherrschaft in der Neuen Welt. Diese M&#246;glichkeiten habt Ihr auch. K&#228;mpft gegen die Ureinwohner und die anderen Kolonialm&#228;chte, um die gr&#246;&#223;te Nation in der Neuen Welt zu werden.</German>
+		<Italian>In Colonial Times, European Powers struggled for supremacy in New World. This mod will allow you to feel a bit of that aspect of Colonization history. You will struggle against natives and European Colonies to establish the largest new nation world has ever seen.</Italian>
+		<Spanish>In Colonial Times, European Powers struggled for supremacy in New World. This mod will allow you to feel a bit of that aspect of Colonization history. You will struggle against natives and European Colonies to establish the largest new nation world has ever seen.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CONQUEST</Tag>
+		<English>Conquest</English>
+		<French>Conqu&#234;te</French>
+		<German>Eroberung</German>
+		<Italian>Conquest</Italian>
+		<Spanish>Conquest</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_CONQUEST_PEDIA</Tag>
+		<English>Eliminate all rivals</English>
+		<French>Eliminer tous vos rivaux</French>
+		<German>Vernichte alle Rivalen ...</German>
+		<Italian>Eliminate all rivals</Italian>
+		<Spanish>Eliminate all rivals</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_VULKAN</Tag>
+		<English>Vulcan</English>
+		<French>Volcan</French>
+		<German>Vulkan</German>
+		<Italian>Vulcan</Italian>
+		<Spanish>Vulcan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_VULKAN_PEDIA</Tag>
+		<English>Vulcan</English>
+		<French>Volcan</French>
+		<German>Vulkan</German>
+		<Italian>Vulcan</Italian>
+		<Spanish>Vulcan</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_NORTH</Tag>
+		<English>Natives of Northamerica</English>
+		<French>
+			<Text>Indig&#232;ne:Indig&#232;nes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Indianer</German>
+		<Italian>
+			<Text>Nativo:Nativi</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Nativo:Nativos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_SCRIPT_LANDMASS_TYPE</Tag>
+		<English>Land allocation</English>
+		<French>Disposition des terres</French>
+		<German>Landverteilung</German>
+		<Italian>Land allocation</Italian>
+		<Spanish>Land allocation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE</Tag>
+		<English>
+			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ren&#233;-Robert Cavelier de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_GOLD_CAPTURE</Tag>
+		<English>You captured %d1 gold from the enemy</English>
+		<French>Vous avez captur&#233; %d1 or &#224; votre ennemi</French>
+		<German>Ihr habt %d1 Gold von Eurem Feind erbeutet</German>
+		<Italian>You captured %d1 gold from the enemy</Italian>
+		<Spanish>You captured %d1 gold from the enemy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HIM_GOLD_CAPTURE</Tag>
+		<English>You lost %d1 gold to Pirates</English>
+		<French>Les pirates vous ont pris %d1 or</French>
+		<German>Ihr verliert %d1 Gold an die Piraten</German>
+		<Italian>You lost %d1 gold to Pirates</Italian>
+		<Spanish>You lost %d1 gold to Pirates</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_NATIVE_ATTITUDE_GOOD2</Tag>
+		<English>[ICON_BULLET]Auto-peace with Natives</English>
+		<French>[ICON_BULLET]Paix automatique avec les indig&#232;nes</French>
+		<German>[ICON_BULLET]Laufende Kriege mit den Ureinwohnern werden sofort friedlich beigelegt</German>
+		<Italian>[ICON_BULLET]Auto-peace with Natives</Italian>
+		<Spanish>[ICON_BULLET]Auto-peace with Natives</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_SCREEN_TOP</Tag>
+		<English>Top</English>
+		<French>Rubrique</French>
+		<German>Nach oben</German>
+		<Italian>Torna a Colonizopedia</Italian>
+		<Spanish>Inicio</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YOU_UNITS_EUROPE_INTERCEPTED</Tag>
+		<English>Your %s1_UnitName was intercepted in Europe by the King.</English>
+		<French>Votre %s1_UnitName a &#233;t&#233; intercept&#233; en Europe par votre Roi.</French>
+		<German>Euer Schiff %s1_UnitName wurde vor der K&#252;ste Europas von der k&#246;niglichen Marine &#252;berfallen.</German>
+		<Italian>Your %s1_UnitName was intercepted in Europe by the King.</Italian>
+		<Spanish>Your %s1_UnitName was intercepted in Europe by the King.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FORCE_START_PEACE</Tag>
+		<English>You cannot declare war within the first 20 turns of the game.</English>
+		<French>Vous ne pouvez pas d&#233;clarer la guerre dnas les 20 premiers tours du jeu.</French>
+		<German>M&#228;&#223;igt Euch! Ihr k&#246;nnt in den ersten 20 Runden keinen Krieg erkl&#228;ren!</German>
+		<Italian>You cannot declare war within the first 20 turns of the game.</Italian>
+		<Spanish>You cannot declare war within the first 20 turns of the game.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_FORCE_START_PEACE</Tag>
+		<English>You overstep your authority attempting to declare war on another European nation!</English>
+		<French>Vous avez outrepass&#233; votre autorit&#233; en tentant de d&#233;clarer la guerre &#224; une autre nation europ&#233;enne !</French>
+		<German>Ihr habt eure Befugnisse &#252;berschritten, als ihr versuchtet, einer anderen Europ&#228;ischen Nation den Krieg zu erkl&#228;ren!</German>
+		<Italian>You overstep your authority attempting to declare war on another European nation!</Italian>
+		<Spanish>You overstep your authority attempting to declare war on another European nation!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLOCOMMENT_FORCE_START_PEACE</Tag>
+		<English>You overstep your authority attempting to declare war on another European nation!</English>
+		<French>Vous avez outrepass&#233; votre autorit&#233; en tent de d&#233;clarer la guerre &#224; une autre nation europ&#233;enne !</French>
+		<German>Ihr habt eure Befugnisse &#252;berschritten, als ihr versuchtet, einer anderen Europ&#228;ischen Nation den Krieg zu erkl&#228;ren!</German>
+		<Italian>You overstep your authority attempting to declare war on another European nation!</Italian>
+		<Spanish>You overstep your authority attempting to declare war on another European nation!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SAIL_EAST</Tag>
+		<English>Sail to the New World - East</English>
+		<French>Partir pour le Nouveau Monde par l'Atlantique</French>
+		<German>Setzt die Segel! Kurs Atlantik!</German>
+		<Italian>Sail to the New World - East</Italian>
+		<Spanish>Sail to the New World - East</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SAIL_WEST</Tag>
+		<English>Sail to the New World - West</English>
+		<French>Partir pour le Nouveau Monde par le Pacifique</French>
+		<German>Setzt die Segel! Kurs Pazifik!</German>
+		<Italian>Sail to the New World - West</Italian>
+		<Spanish>Sail to the New World - West</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_RUNNING_OUT_OF_SPACE</Tag>
+		<English>You are nearly out of room for %F1_yield_icon in %s2_city due to limited storage capacity</English>
+		<French> Vous n'avez presque plus de place pour %F1_yield_icon &#224; %s2_city en raison d'une capacit&#233; de stockage limit&#233;e</French>
+		<German>Der Lagerraum f&#252;r %F1_yield_icon in %s2_city ist fast vollst&#228;ndig ausgenutzt ...</German>
+		<Italian>You are nearly out of room for %F1_yield_icon in %s2_city due to limited storage capacity</Italian>
+		<Spanish>You are nearly out of room for %F1_yield_icon in %s2_city due to limited storage capacity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NO_RAW</Tag>
+		<English>%s1_city is out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</English>
+		<French>%s1_city est &#224; cours de %F2_yield_icon et ne peut ainsi plus produire %F3_yield_icon.</French>
+		<German>Gouverneur, %s1_city steht keinerlei %F2_yield_icon mehr zur Verf&#252;gung. Unsere B&#252;rger k&#246;nnen keine %F3_yield_icon mehr herstellen und drehen D&#228;umchen.</German>
+		<Italian>%s1_city is out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</Italian>
+		<Spanish>%s1_city is out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALMOST_NO_RAW</Tag>
+		<English>%s1_city is almost out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</English>
+		<French>%s1_city est presque &#224; cours de %F2_yield_icon et ne pourra en cons&#233;quence plus produire de %F3_yield_icon.</French>
+		<German>Gouverneur, in %s1_city neigt sich der Lagervorrat an %F2_yield_icon. Bei der Herstellung von %F3_yield_icon werden wir bald ein Problem bekommen.</German>
+		<Italian>%s1_city is almost out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</Italian>
+		<Spanish>%s1_city is almost out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NOT_ENOUGH_RAW</Tag>
+		<English>%s1_city is out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</English>
+		<French>%s1_city est &#224; cours de %F2_yield_icon et ne peut ainsi plus produire de %F3_yield_icon.</French>
+		<German>Gouverneur, wir k&#246;nnten in %s1_city mehr %F3_yield_icon herstellen, st&#252;nde uns dort mehr %F2_yield_icon zur Verf&#252;gung.</German>
+		<Italian>%s1_city is out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</Italian>
+		<Spanish>%s1_city is out of %F2_yield_icon and thus cannot make any %F3_yield_icon.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_FAILED</Tag>
+		<English>Your missionary failed to establish a mission in %s1_CityName.</English>
+		<French>Votre missionnaire n'a pas r&#233;ussi &#224; &#233;tablir une mission &#224; %s1_CityName.</French>
+		<German>Eurem Missionar ist es nicht gelungen, in %s1_CityName eine Mission zu errichten.</German>
+		<Italian>Your missionary failed to establish a mission in %s1_CityName.</Italian>
+		<Spanish>Your missionary failed to establish a mission in %s1_CityName.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TALK_NATIVES_POPUP_MISSION2</Tag>
+		<English>Establish a mission[NEWLINE]Success rate: %d1_success</English>
+		<French>Etablir une mission[NEWLINE]Chances de r&#233;ussite : %d1_success</French>
+		<German>Eine Mission errichten[NEWLINE]Erfolgschance: %d1_success</German>
+		<Italian>Fonda una missione.[NEWLINE]Success rate: %d1_success</Italian>
+		<Spanish>Fundar una misi&#243;n[NEWLINE]Success rate: %d1_success</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_MISSION_FAIL</Tag>
+		<English>"Your missionaries have insulted our Spirits!"</English>
+		<French>"Vos missionnaires ont insult&#233; nos Esprits !"</French>
+		<German>"Eure Missionare haben unsere Geister vertrieben!"</German>
+		<Italian>"Your missionaries have insulted our Spirits!"</Italian>
+		<Spanish>"Your missionaries have insulted our Spirits!"</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_OFFER_CITY_2</Tag>
+		<English>We would like to offer you the lands this settlement is on as a sign of our respect.</English>
+		<French>Nous voulons vous offrir les terres sur lesquels vous vous &#234;tes &#233;tablis en t&#233;moignage de notre respect.</French>
+		<German>Wir m&#246;chten Euch diese Siedlungen &#252;bergeben - als Zeichen des Respekts.</German>
+		<Italian>We would like to offer you the lands this settlement is on as a sign of our respect.</Italian>
+		<Spanish>We would like to offer you the lands this settlement is on as a sign of our respect.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
+		<English>New World Map</English>
+		<French>Carte du Nouveau Monde</French>
+		<German>Karte der Neuen Welt</German>
+		<Italian>New World Map</Italian>
+		<Spanish>New World Map</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_WORLD_MAP</Tag>
+		<English>New World Map</English>
+		<French>Carte du Nouveau Monde</French>
+		<German>Karte der Neuen Welt</German>
+		<Italian>New World Map</Italian>
+		<Spanish>New World Map</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_HURRY_SHORTAGE</Tag>
+		<English>Buy shortfall: %d1 gold</English>
+		<French>Acheter le restant : %d1 gold</French>
+		<German>Kaufe den Fehlbetrag: %d1 Gold</German>
+		<Italian>Buy shortfall: %d1 gold</Italian>
+		<Spanish>Buy shortfall: %d1 gold</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TRADE</Tag>
+		<English>Economic</English>
+		<French>Economique</French>
+		<German>Handel</German>
+		<Italian>Economic</Italian>
+		<Spanish>Economic</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PRODUCTION</Tag>
+		<English>Industrialisation</English>
+		<French>Industrialisation</French>
+		<German>Industrialisierung</German>
+		<Italian>Industrialisation</Italian>
+		<Spanish>Industrialisation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PRODUCTION_PEDIA</Tag>
+		<English>Start the Industrial Revolution (production rate per turn)</English>
+		<French>Commencer la R&#233;volution Industrielle (taux de production par tour)</French>
+		<German>Industrielle Revolution (Produktionsrate pro Runde)</German>
+		<Italian>Start the Industrial Revolution (production rate per turn)</Italian>
+		<Spanish>Start the Industrial Revolution (production rate per turn)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PRODUCTION_RATE</Tag>
+		<English>Start the Industrial Revolution (production rate per turn)</English>
+		<French>Commencer la R&#233;volution Industrielle (taux de production par tour)</French>
+		<German>Industrielle Revolution (Produktionsrate pro Runde)</German>
+		<Italian>Start the Industrial Revolution (production rate per turn)</Italian>
+		<Spanish>Start the Industrial Revolution (production rate per turn)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TOTAL_PROD_RATE</Tag>
+		<English>Total production rate:</English>
+		<French>Production totale :</French>
+		<German>Gesamtproduktionsrate:</German>
+		<Italian>Total production rate:</Italian>
+		<Spanish>Total production rate:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PRODUCTION_OF</Tag>
+		<English>Target amount:</English>
+		<French>Seuil &#224; atteindre :</French>
+		<German>Zielsumme:</German>
+		<Italian>Target amount:</Italian>
+		<Spanish>Target amount:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PLUNDER</Tag>
+		<English>Pirate Plunder</English>
+		<French>Saccage pirate</French>
+		<German>Piraterie</German>
+		<Italian>Pirate Plunder</Italian>
+		<Spanish>Pirate Plunder</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROFESSION_COLONIAL_MILITIA</Tag>
+		<English>
+			<Text>Colonial Militia:Colonial Militias</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Tirailleur:Tirailleurs</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kolonialmiliz:Kolonialmilizen</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Colonial Militia:Colonial Militias</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colonial Militia:Colonial Militias</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROFESSION_LINE_INFANTRY</Tag>
+		<English>Line Infantry</English>
+		<French>
+			<Text>Infanterie de ligne:Infanteries de ligne</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Linieninfanterie:Linieninfanterien</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Line Infantry:Line Infantry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Line Infantry:Line Infantry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROFESSION_ROYAL_LIGHT_INFANTRY</Tag>
+		<English>Royal Light Infantry</English>
+		<French>
+			<Text>Tirailleur royal:Tirailleurs royaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>K&#246;nigliche Leichte Infanterie:K&#246;nigliche Leichte Infanterien</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Royal Light Infantry:Royal Light Infantry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Royal Light Infantry:Royal Light Infantry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_PROFESSION_ROYAL_LINE_INFANTRY</Tag>
+		<English>Royal Line Infantry</English>
+		<French>
+			<Text>Infanterie de ligne royale:Infanteries de ligne royales</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>K&#246;nigliche Linieninfanterie:K&#246;nigliche Linieninfanterien</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Royal Line Infantry:Royal Line Infantry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Royal Line Infantry:Royal Line Infantry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY</Tag>
+		<English>
+			<Text>Cavalry:Cavalry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Cavalerie:Cavaleries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Kavallerie</German>
+		<Italian>
+			<Text>Cavalry:Cavalry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Cavalry:Cavalry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY</Tag>
+		<English>
+			<Text>Royal Cavalry:Royal Cavalry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Cavalerie royale:Cavaleries royales</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>K&#246;nigliche Kavallerie</German>
+		<Italian>
+			<Text>Royal Cavalry:Royal Cavalry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Royal Cavalry:Royal Cavalry</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_PREACHER</Tag>
+		<English>
+			<Text>Preacher:Preachers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Pr&#233;dicateur:Pr&#233;dicateurs</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Prediger:Prediger</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Predicatore:Predicatori</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Predicador:Predicadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT</Tag>
+		<English>Evangelist:Evangelists</English>
+		<French>
+			<Text>Evang&#233;liste:Evang&#233;listes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Evangelist:Evangelisten</German>
+		<Italian>
+			<Text>Evangelista:Evangelisti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Evangelista:Evangelistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Tag>
+		<English>Jesuit Missionary:Jesuit Missionaries</English>
+		<French>
+			<Text>Missionnaire j&#233;suite:Missionnaires j&#233;suites</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Jesuitenmissionar:Jesuitenmissionare</German>
+		<Italian>
+			<Text>Missionario gesuita:Missionari gesuiti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Misionero jesuita:Misioneros jesuit. </Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VOLCANO</Tag>
+		<English>Volcano</English>
+		<French>Volcan</French>
+		<German>Vulkan</German>
+		<Italian>Volcano</Italian>
+		<Spanish>Volcano</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VOLCANO_PEDIA</Tag>
+		<English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Volcanoes[COLOR_REVERT] impassible to all units. They spontaneously erupt on plots with [COLOR_HIGHLIGHT_TEXT]Peaks[COLOR_REVERT], and remain active for a few turns. During this period, no resources can be won from that plot. Improvements and roads on that plot are destroyed, and on adjacent plots, improvements and roads can be endangered as well. Settlements and units will never be destroyed.[NEWLINE][NEWLINE][BOLD]Background[\BOLD][PARAGRAPH:1]A volcano is an opening, or rupture, in a planet's surface or crust, which allows hot, molten rock, ash, and gases to escape from below the surface. Volcanic activity involving the extrusion of rock tends to form mountains or features like mountains over a period of time.</English>
+		<French>Un volcan est un ensemble g&#233;ologique terrestre, sous-marin ou extra-terrestre qui r&#233;sulte de la mont&#233;e d'un magma puis de l'&#233;ruption d'une partie de ce magma. Le magma provient de la fusion partielle du manteau et exceptionnellement de la cro&#251;te terrestre. L'&#233;ruption peut se manifester, de mani&#232;re plus ou moins combin&#233;e, par des &#233;missions de lave, par des &#233;manations ou des explosions de gaz, par des projections de tephras, par des ph&#233;nom&#232;nes hydromagmatiques, etc. Les laves refroidies et les retomb&#233;es de tephras constituent des roches &#233;ruptives qui peuvent s'accumuler et atteindre des milliers de m&#232;tres d'&#233;paisseur formant ainsi des montagnes ou des &#238;les. Selon la nature des mat&#233;riaux, le type d'&#233;ruption, la fr&#233;quence d'&#233;ruption et l'orogen&#232;se, les volcans prennent des formes vari&#233;es, la plus typique &#233;tant celle d'une montagne conique couronn&#233;e par un crat&#232;re ou une caldeira. La d&#233;finition de ce qu'est un volcan a &#233;volu&#233; au cours des derniers si&#232;cles en fonction de la connaissance que les g&#233;ologues en avaient et de la repr&#233;sentation qu'ils pouvaient en donner.</French>
+		<German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vulkane[COLOR_REVERT] sind f&#252;r alle Einheiten unpassierbar. Sie brechen spontan auf Gebirgsgipfeln aus und bleiben einige Runden aktiv. W&#228;hrend dieser Zeit kann kein Rohstoff auf dem Gel&#228;nde gewonnen werden. Gel&#228;ndeverbesserungen und Strassen werden vernichtet. Selbst auf angrenzenden Feldern sind Gel&#228;ndeverbesserungen und Strassen gef&#228;hrdet.[NEWLINE][NEWLINE][BOLD]Hintergrund[\BOLD][PARAGRAPH:1]Ein Vulkan ist eine geologische Struktur, die entsteht, wenn Magma (Gesteinsschmelze) bis an die Oberfl&#228;che eines Planeten (z.B. der Erde) aufsteigt. Alle Begleiterscheinungen, die mit dem Aufstieg und Austritt der glutfl&#252;ssigen Gesteinsschmelze verbunden sind, bezeichnet man als Vulkanismus. Bei einem Vulkanausbruch werden nicht nur glutfl&#252;ssige, sondern auch feste oder gasf&#246;rmige Stoffe freigesetzt (Vulkanismus). Die meisten Vulkane haben ann&#228;hernd die Form eines Kegels, dessen Hangneigung von der Z&#228;higkeit der Lava abh&#228;ngt. Die Gestalt kann aber auch unregelm&#228;&#223;ig sein oder eine kuppelf&#246;rmige Aufw&#246;lbung bilden.</German>
+		<Italian>A volcano is an opening, or rupture, in a planet's surface or crust, which allows hot, molten rock, ash, and gases to escape from below the surface. Volcanic activity involving the extrusion of rock tends to form mountains or features like mountains over a period of time.</Italian>
+		<Spanish>A volcano is an opening, or rupture, in a planet's surface or crust, which allows hot, molten rock, ash, and gases to escape from below the surface. Volcanic activity involving the extrusion of rock tends to form mountains or features like mountains over a period of time.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SAVANNAH</Tag>
+		<English>Savannah</English>
+		<French>
+			<Text>Savane</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Savanne</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Prateria:Praterie</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pradera:Praderas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PRAIRIE</Tag>
+		<English>Prairie</English>
+		<French>
+			<Text>Plaines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Pr&#228;rie</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Pianura:Pianure</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Llanura:Llanuras</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SWAMP</Tag>
+		<English>Swamp</English>
+		<French>
+			<Text>Marais:Marais</Text>
+			<Gender>Male:Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Sumpf</German>
+		<Italian>
+			<Text>Acquitrino</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pantano:Pantanos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_OASIS_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Oases[COLOR_REVERT] occur in flatlands in some [LINK=TERRAIN_DESERT]Deserts[\LINK].[NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]The New World seemed promising to the colonialists. But there were many forbidding places as well. But a brave man can even farm at these barren places: he just needs to find some water.</English>
+		<French>[TAB]Le Nouveau Monde semblait prometteur pour les colons, mais certaines de ses r&#233;gions se sont r&#233;v&#233;l&#233;es hostiles. Un homme d&#233;termin&#233; peut cependant cultiver toute terre &#224; partir du moment o&#249; il trouve de l'eau.</French>
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Oasen[COLOR_REVERT] entstehen gelegentlich in [LINK=TERRAIN_DESERT]W&#252;sten[\LINK].[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Die Neue Welt erschien den europ&#228;ischen Einwanderern h&#228;ufig wie ein Garten Eden, mit sattem Gr&#252;n, &#252;ppigen W&#228;ldern, exotischen Fr&#252;chten, ausgedehnten Fischgr&#252;nden und Urw&#228;ldern voller Wild. Doch es gab auch viele unwirtliche Regionen, insbesondere in wasserarmen, abgeschiedenen Gegenden im Landesinneren. Doch umsichtige Bauern k&#246;nnen selbst an den unwirtlichsten Stellen Ackerbau betreiben - vorausgesetzt, sie finden eine Wasserstelle. </German>
+		<Italian>[TAB]The New World seemed promising to the colonialists. But there were many forbidding places as well. But a brave man can even farm at these barren places: he just needs to find some water.</Italian>
+		<Spanish>[TAB]The New World seemed promising to the colonialists. But there were many forbidding places as well. But a brave man can even farm at these barren places: he just needs to find some water.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_OASIS</Tag>
+		<English>Oasis</English>
+		<French>
+			<Text>Oasis</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Wasserstelle:Wasserstellen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Oasi:Oasi</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Oasis:Oasis</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_TIMBER_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Timber[COLOR_REVERT] can be found in [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK], [LINK=FEATURE_JUNGLE]Jungles[\LINK] or [LINK=FEATURE_FOREST]Forests[\LINK] on all kinds of Terrain.[NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]Lumber or Timber is a term used to describe wood, either standing or that has been processed for use - from the time trees are felled, to its end product as a material suitable for industrial use - as structural material for construction or wood pulp for paper production.</English>
+		<French>[TAB]Le bois est un mat&#233;riau particuli&#232;rement utilis&#233; en construction. La partie du bois utilis&#233; est g&#233;n&#233;ralement le duramen, appel&#233; aussi bois parfait ou « bois de cour » qui constitue la partie centrale de l'arbre. L'aubier, souvent plus clair et l&#233;ger que le duramen, est constitu&#233; de cellules vivantes. il est plus facilement et rapidement attaqu&#233; par les insectes, bact&#233;ries et champignons.</French>
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1]Besonders gutes [COLOR_HIGHLIGHT_TEXT]Bauholz[COLOR_REVERT] l&#228;sst sich gelegentlich in der [LINK=FEATURE_FOREST_TUNDRA]Taiga[\LINK], im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] aber auch in anderen [LINK=FEATURE_FOREST]W&#228;ldern[\LINK] finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Als die Europ&#228;er begannen, die Neue Welt zu kolonisieren, fanden sie in vielen Regionen ausgedehnte W&#228;lder vor. An Holz mangelte es zumeist nicht, um Blockh&#228;user, Palisaden, Bootstege und Lagerhallen zu errichten. Doch gutes, stabiles Bauholz gab es nur an manchen Orten.</German>
+		<Italian>[TAB]Lumber or Timber is a term used to describe wood, either standing or that has been processed for use - from the time trees are felled, to its end product as a material suitable for industrial use - as structural material for construction or wood pulp for paper production.</Italian>
+		<Spanish>[TAB]Lumber or Timber is a term used to describe wood, either standing or that has been processed for use - from the time trees are felled, to its end product as a material suitable for industrial use - as structural material for construction or wood pulp for paper production.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_TIMBER</Tag>
+		<English>Timber</English>
+		<French>Bois de construction</French>
+		<German>Bauholz</German>
+		<Italian>Legname</Italian>
+		<Spanish>Madera</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_MINERALS</Tag>
+		<English>Mineral Resources</English>
+		<French>Ressources min&#233;rales</French>
+		<German>
+			<Text>Erzgestein:Erzgestein</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>Mineral Resources</Italian>
+		<Spanish>Mineral Resources</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_MINERALS_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mineral Resources[COLOR_REVERT] can occur on all [COLOR_HIGHLIGHT_TEXT]Hills[COLOR_REVERT] plots.[NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]When early civilizations began to use metal to construct tools and weapons, the most commonly used metal was bronze. Bronze had the advantage of being readily available and easy to work with. Unfortunately, it was too soft to hold an effective edge. In the mid-14th century BC in central Europe, iron replaced bronze as the metal of choice, and the Iron Age was begun. Since this time, iron has been a valuable commodity. In the new world, where easily accessible seams of iron were not always found in the nearby hills, many colonies turned instead to the iron-rich mineral deposits of nearby swamps and marshes.</English>
+		<French>[TAB]Quand les hommes commenc&#232;rent &#224; fabriquer des outils et des armes en m&#233;tal, le bronze s'av&#233;ra le m&#233;tal le plus couramment employ&#233;. Il avait l'avantage d'&#234;tre facile &#224; obtenir et &#224; travailler, mais il &#233;tait trop tendre pour rester longtemps tranchant. Au milieu du XIVe si&#232;cle av. J.-C., en Europe centrale, le bronze fut progressivement remplac&#233; par le fer, et l'Age de Fer succ&#233;da &#224; l'Age de Bronze. Depuis, le fer est une mati&#232;re premi&#232;re de premier plan. Les gisements de fer d&#233;couverts dans les montagnes sont exploit&#233;s, et le minerai est trait&#233; pour &#234;tre utilis&#233; sous sa forme brute ou dans la production de l'acier.</French>
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Erzgestein[COLOR_REVERT] kann auf [COLOR_HIGHLIGHT_TEXT]H&#252;geln[COLOR_REVERT] jedes Terrains vorkommen..[NEWLINE][NEWLINE][BOLD]Hintergund:[\BOLD][PARAGRAPH:1]Reiche Eisen- oder Silbervorkommen fanden die Europ&#228;er in der Neuen Welt nur an ausgew&#228;hlten Orten vor. Doch h&#228;ufig trafen sie in H&#252;geln und Bergen auf Gesteinsschichten, in denen geringe Erzvorkommen vorhanden waren. Nicht immer war ihre Ausbeutung wirtschaftlich sinnvoll, doch mancherorts bot sie den Sch&#252;rfern eine M&#246;glichkeit, zumindestens ihren Lebensunterhalt zu verdienen. </German>
+		<Italian>[TAB]Quando le prime civilt&#224; cominciarono a usare il metallo per costruire oggetti e armi, il pi&#249; utilizzato era il bronzo; i vantaggi di questo metallo erano la sua facile reperibilit&#224; e la semplice lavorazione. Sfortunatamente, si rivel&#242; troppo morbido per creare lame efficaci. A partire dalla met&#224; del 14&#176; secolo a. C., in Europa il bronzo venne sostituito dal ferro, dando cos&#236; il via all'Et&#224; del Ferro. Da allora, il ferro &#232; diventato una risorsa importante: i depositi di questo metallo e i minerali che lo contengono si trovano nelle montagne, dalle quali vengono estratti e processati per essere usati in forma grezza o nella produzione di acciaio.</Italian>
+		<Spanish>[TAB]Cuando las primeras civilizaciones comenzaron a usar metales para fabricar herramientas y armas, el m&#225;s utilizado era el bronce. Este metal contaba con la ventaja de su gran disponibilidad y de su facilidad a la hora de trabajar con &#233;l. Por desgracia, era demasiado blando para poder tener un filo eficaz. A mediados del siglo XIV a. C., el hierro sustituy&#243; al bronce en Europa central como metal preferido, y comenz&#243; la Edad del Hierro. Desde entonces, el hierro ha sido una mercanc&#237;a valiosa. Los dep&#243;sitos de mineral de hierro se encuentran en las monta&#241;as, y se extraen y procesan para utilizar el hierro en estado puro y en la producci&#243;n de acero.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PEARLS_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shellfish[COLOR_REVERT] live in shallow waters like [LINK=TERRAIN_COAST]Coasts[\LINK] and [COLOR_HIGHLIGHT_TEXT]Fresh Water Lakes[COLOR_REVERT].[NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]A pearl is a hard, rounded object produced by certain mollusks, primarily oysters. Pearl is valued as a gemstone and is cultivated or harvested for jewellery. Pearls are formed inside the shell of certain bivalve mollusks. As a response to an irritating object inside its shell, the mollusk will deposit layers of calcium carbonate (CaCO3) in the form of the minerals aragonite or calcite (both crystalline forms of calcium carbonate) held together by an organic horn-like compound called conchiolin. Before the beginning of the 20th Century, pearl hunting was the most common way of harvesting pearls. Divers manually pulled oysters from ocean floors and river bottoms and checked them individually for pearls. Not all natural oysters produce pearls, however. In fact, in a haul of three tonnes, only three or four oysters will produce perfect pearls. Now, however, almost all pearls used for jewelry are cultured by planting a core or nucleus into pearl oysters. The pearls are usually harvested three years after the planting, but it can take up to as long as six years before a pearl is produced. This mariculture process was first developed by Kokichi Mikimoto in Japan, who was granted a patent for the process in 1896. In the past couple of decades, cultured pearls have been produced with larger oysters in the south Pacific and Indian Ocean. One of the largest pearl-bearing oysters is the Pinctada maxima, which is roughly the size of a dinner plate. South Sea pearls are characterized by their large size and silvery color. Sizes up to 14 mm in diameter are not uncommon. Australia is one of the most important sources of South Sea pearls. Tahitian pearls (also referred to as Titian pearls) are also another South Sea pearl. - Wikipedia </English>
+		<French>[TAB] Les perles sont de petites billes, ganaralement de couleur blanche, craaes par certains mollusques, principalement les huitres. Quand un objet irritant passe a l'intarieur de la coquille, l'animal raagit en entourant l'objet d'une couche de carbonate de calcium CaCO3 sous la forme d'aragonite ou de calcite. Ce malange est appela nacre. Autrefois uniquement obtenues par le hasard, les perles font aujourd'hui l'objet d'une culture (perliculture). Elle a ata mise au point par les Japonais du dabut du xxe siecle aux annaes 1970. Depuis, le secret de leur technique s'est rapandu dans tout les archipels de l'ocaan Pacifique, et la Polynasie francaise est le principal producteur. - Wikipedia </French> 
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Muscheln[COLOR_REVERT] kommen in seichten Gew&#228;ssern vor, wie [LINK=TERRAIN_COAST]K&#252;sten[\LINK] oder [COLOR_HIGHLIGHT_TEXT]Frischwasserseen[COLOR_REVERT].[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Man muss viele Muscheln &#246;ffnen, um von ihrem Fleisch satt zu werden. Doch an den K&#252;sten, an denen die europ&#228;ische Einwanderer reiche Muschelb&#228;nke fanden, fanden sie in ihnen eine wichtige Nahrungsquelle - die Masse macht's.</German>
+		<Italian>[TAB] Le perle sono prodotte dalle ostriche e sono parte integrante del loro organismo, principalmente dalle specie dei mari orientali. Il termine "perla" deriva dal latino "permula", il nome con cui si indicava la conchiglia che la contiene e la cui forma ricorda la "coscia del maiale". Una perla si forma quando un corpo estraneo, come un granello di sabbia, si ferma nella cavita palleale. Esso viene ricoperto da strati successivi di madreperla, allo scopo di difendere i tessuti dell'animale dall'irritazione. Si depositano vari strati di calcio che in combinazione con altri minerali, creano questi particolari oggetti preziosi. La perle ricordiamo che e formata praticamente da nacre meglio conosciuta come madreperla. Per creare perle con forme speciali, quando si estrae la perla dall'ostrica, si immette un frammento di plastica con la forma scelta, che l'ostrica coprira con la madreperla. Il risultato e che, dopo anni di attesa, la perla che nasce ha la forma ingrandita del frammento iniziale. Il colore piu comune nelle perle e il bianco, ma si possono trovare anche perle rosa, color crema, viola scuro, grigie e nere. Grazie alla tecnologia e anni di studio, oggi possiamo anche avere perle con colori bizzarri come il verde, l'azzurro, l'arancione che vengono usate soprattutto nella bigiotteria. Quando si parla di perle nere, oltre alla Akoya e a quelle di fiume, si pensa subito alle costosissime perle di Tahiti, molto pregiate e particolarmente belle. Il valore delle perle pero, non si distingue solo dal colore, ma anche dalla forma e dal lustro, cioe la luce che riesce a riflettere. Una curiosita particolare e che, a differenza delle altre, le ostriche che creano le perle nere sono molto piu delicate e in ogni coltivazione ne muoiono tantissime. Questo e un altro fattore che le rende cosi costose e rare. Ci sono due categorie di perle: le perle di acqua dolce e le perle di acqua salata. Come dice la parola stessa, le perle d'acqua dolce vengono coltivate nei laghi e nei fiumi, mentre le altre provengono dall'oceano e molto spesso dalla lagune. Le tre categorie di perle d'acqua salata sono le Akoya, le perle Tahiti e le costosissime e rare perle South Sea. La madreperla oltre ad essere usata nel mercato dei gioielli, oggi viene usata anche nella cosmetica e per la creazione di particolari vernici. - Wikipedia </Italian>
+		<Spanish>[TAB] Se ignora cual fue el primer pueblo que extrajo las perlas de las ostras, para luego usarlas como decoracion. Pero debido a que las perlas tienen lustre y brillo casi inmediatamente salidas de la ostra que las fabrico, es muy posible que desde apocas prehistoricas se haya utilizado las perlas como adorno. Lo que si puede decirse, es que la fabricacion de joyas a base de perlas, era una actividad bastante extendida y favorecida entre los pueblos antiguos. Sin embargo debido a la extrema rareza de las mismas, las perlas eran una de las gemas mas valiosas conocidas por los pueblos del mundo antiguo, reservadas para la nobleza y personajes extremadamente acaudalados. Actualmente las perlas no tienen tanto valor monetario como en apocas pasadas, principalmente debido a que la mayoria de las perlas son cultivadas, resultando en la devaluacion mercantil de las mismas por aumento en la oferta. De alli que numerosas parabolas y dichos que nos han llegado al presente hablando del proverbial valor de las perlas, no tengan la misma consonancia y valor semantico hoy en dia. - Wikipedia </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_PEARLS</Tag>
+		<English>Shellfish</English>
+		<French>
+			<Text>Coquillages:Coquillages</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Muscheln:Muscheln</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Shell:Shells</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Shell:Shells</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_BISON_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Bisons[COLOR_REVERT] can live in unvegetated flatlands of [LINK=TERRAIN_PLAINS]Prairie[\LINK], [LINK=TERRAIN_GRASS]Grass[\LINK] or [LINK=TERRAIN_SAVANNAH]Savannah[\LINK] Terrain. [NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]During Ice Age bisons came from Asia across the frozen Bering Sea to America and spread over the whole continent. Since native Americans knew about the existence of bisons they hunted it. It delivered with food, leather, bones and fur the basics of all the things, native Americans produced. As the Europeans came to America they began to hunt Bisons in a large scale. Due to the installation of the Yellowstone national park the bison became room to stabilize it's numbers.</English>
+		<French>[TAB]Le bison a &#233;t&#233; un animal caract&#233;ristique de l'Am&#233;rique du Nord et un symbole pour de nombreuses cultures am&#233;rindiennes. Les Am&#233;rindiens des grandes plaines de l'Am&#233;rique du Nord avaient une &#233;conomie largement bas&#233;e sur le bison. Les bisons d'Am&#233;rique du Nord &#233;taient encore 50 &#224; 70 millions avant l'arriv&#233;e des Europ&#233;ens en Am&#233;rique, vivant et migrant sur les plaines herbeuses d'Am&#233;rique du Nord, du Mexique au Canada. Ils ont fris&#233; l'extinction avec la conqu&#234;te de l'Ouest, l'introduction des chevaux et la construction du chemin de fer (vers 1870-1880), o&#249; le massacre des bisons fut une entreprise &#233;conomique &#224; tr&#232;s grande &#233;chelle, mais aussi une strat&#233;gie pour affecter les Am&#233;rindiens. Buffalo Bill (William Frederick Cody) fut un des plus grands chasseurs de bisons.</French>
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]B&#252;ffel[COLOR_REVERT] k&#246;nnen in unbewaldeten Gebieten der [LINK=TERRAIN_PLAINS]Prairie[\LINK], des [LINK=TERRAIN_GRASS]Graslandes[\LINK] oder der [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] vorkommen. [NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]W&#228;hrend der Eiszeit wanderten Bisons von Asien &#252;ber die zugefrorene Beringstra&#223;e nach Amerika ein und breiteten sich &#252;ber den ganzen Kontinent aus. Als vor etwa zehntausend Jahren Vorfahren der Indianer aus Alaska nachr&#252;ckten und den Doppelkontinent besiedelten, stie&#223;en sie auf gewaltige Bisonherden. Der Bison diente ihnen als Nahrung, sein Fell, seine Sehnen und seine Knochen zur Herstellung von Kleidung, Decken, S&#228;tteln, Zaumzeug, Schilden, Seilen, Leim, Kissenf&#252;llungen, Geschirr, Rasseln, Schmuck, Werkzeugen und Tipis - und der B&#252;ffelmist als Brennmaterial.</German>
+		<Italian>[TAB]During Ice Age bisons came from Asia across the frozen Bering Sea to America and spread over the whole continent. Since native Americans knew about the existence of bisons they hunted it. It delivered with food, leather, bones and fur the basics of all the things, native Americans produced. As the Europeans came to America they began to hunt Bisons in a large scale. Due to the installation of the Yellowstone national park the bison became room to stabilize it's numbers.</Italian>
+		<Spanish>[TAB]During Ice Age bisons came from Asia across the frozen Bering Sea to America and spread over the whole continent. Since native Americans knew about the existence of bisons they hunted it. It delivered with food, leather, bones and fur the basics of all the things, native Americans produced. As the Europeans came to America they began to hunt Bisons in a large scale. Due to the installation of the Yellowstone national park the bison became room to stabilize it's numbers.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_BISON</Tag>
+		<English>Bisons</English>
+		<French>
+			<Text>Bison:Bisons</Text>
+			<Gender>male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>B&#252;ffel:B&#252;ffel</Text>
+			<Gender>male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Buffalo:Buffalos</Text>
+			<Gender>male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Buffalo:Buffalos</Text>
+			<Gender>male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SALT_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt Deposits[COLOR_REVERT] can occur on all [LINK=TERRAIN_DESERT]Desert[\LINK] plots.[NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]Edible salt is a mineral, one of the few rocks humans eat. Salt is necessary for the survival of all living creatures, including humans. Salt is involved in regulating the water content (fluid balance) of the body. Salt flavor is one of the basic tastes. In the past, salt was difficult to obtain, but had a great importance in food preservation and as a vital food additive. Therefore, it was a highly valued trade item throughout history. Wars were fought over it; states were formed and destroyed because of it. Roman soldiers were partially paid with salt, and this is still evident in the English language as the word salary derives from the Latin word salarium that means payment in salt (Latin sal), as well as the phrase "worth one's salt". It was also of high value to the Hebrews, Greeks and other peoples of antiquity. During the late Roman Empire and throughout the Middle Ages salt was a precious commodity carried along the salt roads into the heartland of the Germanic tribes. Cities, states and dukedoms along the salt roads exacted heavy duties and taxes for the salt passing through their territories. This practice caused wars, it even caused the formation of cities such as the city of Munich in 1158 when the then Duke of Bavaria Henry XII, called The Lion, decided that the bishops of Freising no longer needed their salt revenue. - Wikipedia</English>
+		<French>[TAB]Le raffinage permet d'obtenir un sel de la couleur blanche jusqu'ici fr&#233;quemment pr&#233;f&#233;r&#233;e par le consommateur. Il est alors compos&#233; de NaCl pratiquement pur (99,9 %), ceci au d&#233;triment de ses qualit&#233;s alimentaires. Le sel du type raffin&#233; reste le plus employ&#233; dans l'alimentation. Environ 7 % du sel raffin&#233; est aussi utilis&#233; comme additif, mais la plus grande partie est destin&#233;e aux usages industriels (fabrication du papier, r&#233;glage de la teinte des textiles et des tissus, production de savons et d&#233;tergents). Le sel a une forte valeur marchande.</French>
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salz[COLOR_REVERT] kann &#252;berall in der [LINK=TERRAIN_DESERT]W&#252;ste[\LINK] vorkommen.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Salz z&#228;hlt von altersher und &#252;berall in der Welt zu den begehrtesten Gew&#252;rzen. Viele traditionelle Fleisch- und Milchspeisen k&#246;nnen ohne Salz nicht zubereitet werden. In S&#252;damerika wurde Salz h&#228;ufig durch das Auswaschen, Filtern und Einkochen salziger Erde gewonnen.</German>
+		<Italian>[TAB]Il sale e anzitutto un esaltatore di sapidita usato in tutte le tradizioni culinarie conosciute ed e ampiamente sfruttato nell'industria conserviera sia come ingrediente che come mezzo di conservazione dei cibi. Quest'ultima proprieta e dovuta all'effetto disidratante che il sale ha sui materiali con cui viene a contatto, da cui estrae l'acqua per osmosi. Sale da cucina additivato di elementi particolari puo essere prescritto per curare o prevenire alcune malattie (ad esempio il sale iodato per il gozzo o addizionato di cloruro di potassio per l'ipertensione). Il sale e anche un reagente usato in chimica, ad esempio per migliorare la precipitazione dei prodotti al termine di una saponificazione. Un uso importante nell'industria chimica e come materia prima negli impianti cloro-soda, in cui viene eseguita l'elettrolisi della salamoia di cloruro di sodio per ottenere cloro gassoso, idrogeno e soda caustica, tutte materie prime fondamentali per l'industria chimica. Il sale trova impiego anche come anti-gelo: sparso sulle superfici ghiacciate, ne provoca lo scioglimento, dato che una miscela di ghiaccio e sale forma un eutettico il cui punto di fusione e inferiore ai meno 10 gradi celsius. - Wikipedia </Italian>
+		<Spanish>[TAB]La sal se puede emplear en la alimentacion con dos objetivos diferentes, por un lado su capacidad de realzar ciertos sabores hace que sea un condimento muy habitual, por otro lado su capacidad de conservar alimentos hace que sea adecuado para la elaboracion de salazones y encurtidos. Se puede decir que el uso de la sal en la alimentacion se centra en estas dos actividades. Muchos de los alimentos poseen una etimologias que recuerdan a la sal como uno de los ingredientes base, ejemplos de ello son: las ensaladas, las salchichas (proveniente del latin salsus: en sal) y las salsas, el salmorejo, etc. El uso de sal en las elaboraciones de ciertos alimentos ha ido descendiendo desde el siglo XVIII, esta afirmacion puede comprobarse en los libros de recetas en los que puede verse un uso 'excesivo' de sal para los gustos de hoy en dia. Se han realizado investigaciones acerca del consumo de sal en los humanos occidentales, y se ha podido comprobar que el 10% de la sal que se ingiere proviene de forma natural de los alimentos, el 15% proviene de lo que se anade durante la elaboraccion casera de los alimentos y el 75% proviene de lo que anaden las industrias alimentarias en el procesado de los alimentos. Estos estudios muestran que un britanico medio a finales del siglo XX consumia cerca de 10 gramos de sal (en mas detalle 10.7 gramos de sal en un varon y 8.0 gramos para las mujeres). Estos datos indican que una dieta baja en sal debe regularse principalmente en la compra de los productos ademas de reducir su cantidad durante el cocinado. Esta probado que las dietas bajas en sal son pobres en sabores, pudiendo afectar incluso a los aromas. La sal al ser consumida induce a provocar un mayor apetito por los alimentos, este efecto es aprovechado a veces por la industria de alimentacion e incluye a veces un alto contenido de sal en los alimentos con el objeto de que se consuma mas. De todas formas la sal posee ventajas en el procesado de alimentos: resulta barata, potencia sabores, elimina sabores acidos, extiende la vida de los alimentos, hace que pesen mas ya que retiene humedad. Algunos autores han investigado la preferencia animal por la sal desde un fundamento endocrino Uno de los sistemas hormonales para la regulacion del sodio en el cuerpo es angiotensina, se ha demostrado que esta hormona es capaz de regular la sensacion de sed, se sabe que esta hormona puede tener influencia en la preferencia psicologica por la sal. Existen casos investigados en los que un tratamiento hormonal (mediante la adrenomedulina denominada ADM) puede llegar a reducir el apetito por la sal. El apetito innato de los animales (incluido el hombre) por la sal ha despertado numerosas investigaciones acerca del efecto y preferencias por el sabor salado, parece ser que los recien nacidos no parecen distinguir el sabor salado y no es hasta pasados cuatro meses desde su nacimiento cuando empiezan a distinguirlo. De la misma forma se sabe la dependencia de la sal disminuye si se disminuye su consumo, este efecto de dependencia dura solo un par de semanas y posteriormente las personas se acostumbran a una dieta baja en sales. El apetito por la sal puede tener una dependencia climatica, por ejemplo, las personas que viven en climas frios pueden tener en sus gastronomias locales una presencia mayor por los alimentos con fuerte sabor salado. - Wikipedia </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_SALT</Tag>
+		<English>Salt</English>
+		<French>
+			<Text>Gisement de sel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Salz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_POTATO_PEDIA</Tag>
+		<English>[BOLD]Strategy:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Potatoes[COLOR_REVERT] grow on [LINK=TERRAIN_PLAINS]Prairie[\LINK], [LINK=TERRAIN_GRASS]Grass[\LINK] or [LINK=TERRAIN_SAVANNAH]Savannah[\LINK] Terrain that is either open or overgrown by [LINK=FEATURE_LIGHT_FOREST]Light Forest[\LINK].[NEWLINE][NEWLINE][BOLD]Background:[\BOLD][PARAGRAPH:1]The potato (plural form: potatoes) (Solanum tuberosum) is a perennial plant of the Solanaceae, or nightshade, family, grown for its starchy tuber. In recent centuries potatoes have become the world's most important tuber crop and its fourth most important source of food energy (after rice, wheat, and maize): farmers and gardeners grow them world-wide. Growers cultivate thousands of different varieties of potato. The potato originated in the Andes, in the area of present-day Peru. Pre-Columbian inhabitants of the Andean cultures cultivated around 200 different kinds of potatoes. Archeological evidence suggests that humans have cultivated the potato for at least 7,000 years. By the seventeenth century the potato had become firmly established as a staple of Europe's poor, leading richer people to spurn it, although this changed gradually, with Antoine-Augustin Parmentier's persuading King Louis XVI of France of the value of the crop. The soup potage Parmentier takes its name from the great horticulturalist. By the end of the 18th century the potato had become popular in France, due to the advocacy of Parmentier. Today, potatoes grow widely in Europe, especially in North European countries such as the British Isles, Germany, Poland, and Russia, due to their ability to thrive in cold, damp climates. Because the potato grew so well in Northern Europe, it may have contributed to the population-explosion there in the 19th century - though not in other centuries. - Wikipedia </English>
+		<French>[TAB] La pomme de terre est une plante vivace herbacae dont le nom ganarique (Solanum) dasignait chez les Romains une variata de morelle. Outre Solanum tuberosum, il existe de nombreuses variatas sauvages poussant en Amarique du Sud, par exemple S. jamesii, S. commersioni, S. maglia ou S. andigenum. Certaines de ces especes, en raison de leur rasistance au froid, de leur pracocita, de leur rasistance aux maladies, ont ata utilisaes pour amaliorer les variatas cultivaes en Europe ou en craer de nouvelles. Le tubercule n'appartient pas a la racine de la plante, mais a sa tige enterrae dont partent des rameaux plus greles appelas rhizomes, a l'extramita desquels se forment les tubercules. a la surface de ces derniers se trouvent les " yeux ", ou bourgeons, qui ont la particularita d'etre disposas de facon halicoidale. Ces yeux se transforment en germes apres une pariode plus ou moins longue de repos. Le tubercule comporte une forte proportion d'eau, pouvant aller jusqu’a 80 %, ainsi que des matieres amylacaes (la facule), du sucre, des matieres albuminoides, des fibres cellulosiques, des alaments minaraux, des diastases et des vitamines (vitamine C, surtout prasente dans la peau) et des toxines (voir plus loin). Les fleurs, groupaes en cymes, comportent cinq sapales et cinq patales soudas formant une sorte de roue a cinq pointes. Elles sont ganaralement blanches ou mauves, mais parfois aussi bleues, pourpres ou violet fonca. Le fruit est une baie, sorte de petite tomate tres ronde renfermant de tres nombreuses graines. - Wikipedia </French>
+		<German>[BOLD]Strategie:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kartoffeln[COLOR_REVERT] wachsen auf [LINK=TERRAIN_GRASS]Grasland[\LINK], [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] oder [LINK=TERRAIN_PLAINS]Prairie[\LINK]. Gelegentlich k&#246;nnen besonders gute Anbaugebiete f&#252;r Kartoffeln auch von [LINK=FEATURE_LIGHT_FOREST]Buschland[\LINK] &#252;berwachsen sein.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][PARAGRAPH:1]Die Kartoffel ist in gro&#223;en Teilen der Welt ein wichtiges Grundnahrungsmittel. Sie stammt aus den s&#252;damerikanischen Anden. Dort lernten die Spanier in der ersten H&#228;lfte des 16. Jahrhunderts von den Inka die Frucht Papa (aus Quechua: die Knolle) kennen. In Europa wurde sie Patata genannt - der englische Name potatoes erinnert noch heute daran, ebenso wie die alte deutsche Bezeichnung Batate, die heute die S&#252;&#223;kartoffel bezeichnet. Nach Europa wurde die Kartoffel zuerst wegen der sch&#246;nen Bl&#252;te und des &#252;ppigen Laubes als reine Zierpflanze importiert und als seltene Pflanze in botanische G&#228;rten aufgenommen.</German>
+		<Italian>[TAB] I tuberi, la parte commestibile della pianta, si sviluppano dal rigonfiamento della parte terminale, epigea, dei lunghi stoloni sotterranei. Il rigonfiamento si forma per il trasporto e l'accumulo dei carboidrati fotosintetizzati dalla parte aerea della pianta, quando essa raggiunge la maturita. I tuberi, quindi, fungono da organo di riserva. La tuberificazione e favorita dall'assenza di luce, dalla temperatura e dall'umidita del suolo. L'accorciarsi del giorno, le basse temperature notturne e l'aumentare dell'umidita, infatti, stimolano gli stoloni a produrre una maggiore quantita di citochinine, degli ormoni vegetali che favoriscono la divisione cellulare. Quando comincia la formazione del tubero, questo diventa il meristema principale e la crescita di tutti gli altri organi rallenta considerevolmente. I tuberi presentano un epidermide sottile ricoperta da piccole lenticelle, suberificate in condizioni di mancanza d'acqua. La presenza di acqua favorisce la crescita di cellule corticali che rompono il sughero e formano delle aperture nelle lenticelle. Al di sotto dell'epidermide si trova il periderma, il floema lo xilema ed il midollo. Tutti questi tessuti sono collegati agli "occhi", delle strutture da cui si originano delle gemme, che rimangono dormienti durante lo sviluppo del tubero ma che possono originare nuovi steli. - Wikipedia </Italian>
+		<Spanish>[TAB] La papa o patata (Solanum tuberosum) es una especie perteneciente a la familia de las Solanaceas, originaria de Amarica del Sur y cultivada en todo el mundo por sus tubarculos comestibles. Domesticada en el altiplano andino por sus habitantes hace 7000 anos, fue llevada a Europa por los conquistadores espanoles mas como una curiosidad botanica que como una planta alimenticia. Con el tiempo su consumo fue creciendo y su cultivo se expandio a todo el mundo hasta posicionarse como uno de los principales para el ser humano. asta continua siendo la base de la alimentacion de millones de personas, una delicia culinaria en muchisimas regiones del globo que han creado decenas de platos que la tienen de protagonista y, ademas, su estudio representa un verdadero desafio para cientificos de varias disciplinas quienes tratan de dilucidar su origen, genatica y fisiologia. Mas aun, adentrados en el campo de la tecnologia, encuentran una gran cantidad de aplicaciones no convencionales para este tubarculo, desde los cosmaticos hasta el papel prensa. - Wikipedia </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_POTATO</Tag>
+		<English>Potatoes</English>
+		<French>
+			<Text>Pommes de terre</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kartoffeln</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Patate</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Papas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DALETEST</Tag>
+		<English>%d1_Num</English>
+		<French>%d1_Num</French>
+		<German>%d1_Num</German>
+		<Italian>%d1_Num</Italian>
+		<Spanish>%d1_Num</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_GOLD_CAPTURE</Tag>
+		<English>You captured %d1 gold from the enemy</English>
+		<French>Vous avez captur&#233; %d1 or &#224; l'ennemi</French>
+		<German>Ihr habt %d1 Gold erbeutet</German>
+		<Italian>Hai catturato %d1 ori dal nemico</Italian>
+		<Spanish>You captured %d1 gold from the enemy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HIM_GOLD_CAPTURE</Tag>
+		<English>You lost %d1 gold to Pirates</English>
+		<French>Les pirates vous ont pris %d1 or</French>
+		<German>Piraten konnten %d1 Gold von Euch erbeuten</German>
+		<Italian>I pirati ti hanno estorto %d1 ori</Italian>
+		<Spanish>You lost %d1 gold to Pirates</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_ADVISOR_TOGGLE</Tag>
+		<English>[COLOR_CYAN]Advisor Menu[COLOR_REVERT]</English>
+		<French>[COLOR_CYAN]Menu des conseillers[COLOR_REVERT]</French>
+		<German>[COLOR_CYAN]Berater Men&#252;[COLOR_REVERT]</German>
+		<Italian>[COLOR_CYAN]Menu Ausiliario[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_CYAN]Advisor Menu[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_SENTRY_WHILE_HEAL_HELP</Tag>
+		<English>The unit remains inactive until it reaches full strength or an enemy unit enters its visibility range.</English>
+		<French>L'unit&#233; reste inactive tant qu'une unit&#233; ennemie ne p&#233;n&#232;tre pas dans son champ de vision.</French>
+		<German>Die Einheit bleibt inaktiv, bis sie vollst&#228;ndig geheilt ist oder eine feindliche Einheit in Sichtweite kommt.</German>
+		<Italian>L'unit&#224; rimane inattiva finch&#233; un'unit&#224; nemica non diventa visibile.</Italian>
+		<Spanish>La unidad permanecer&#225; inactiva hasta que recobre el total de su fuerza o una unidad enemiga se sit&#250;e al alcance de la visibilidad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_SENTRY_NAVAL_UNITS_HELP</Tag>
+		<English>The unit remains inactive until an enemy naval unit enters its visibility range.</English>
+		<French>L'unit&#233; reste inactive tant qu'une unit&#233; ennemie ne p&#233;n&#232;tre pas dans son champ de vision.</French>
+		<German>Die Einheit bleibt inaktiv, bis eine feindliche Seeeinheit in Sichtweite kommt.</German>
+		<Italian>L'unit&#224; rimane inattiva finch&#233; un'unit&#224; nemica non diventa visibile.</Italian>
+		<Spanish>La unidad permanecer&#225; inactiva hasta que una unidad naval enemiga se sit&#250;e al alcance de la visibilidad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_SENTRY_LAND_UNITS_HELP</Tag>
+		<English>The unit remains inactive until an enemy land unit enters its visibility range.</English>
+		<French>L'unit&#233; reste inactive tant qu'une unit&#233; ennemie ne p&#233;n&#232;tre pas dans son champ de vision.</French>
+		<German>Die Einheit bleibt inaktiv, bis eine feindliche Landeinheit in Sichtweite kommt.</German>
+		<Italian>L'unit&#224; rimane inattiva finch&#233; un'unit&#224; nemica non diventa visibile.</Italian>
+		<Spanish>La unidad permanecer&#225; inactiva hasta que una unidad terrestre enemiga se sit&#250;e al alcance de la visibilidad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_MOVE_TO_SENTRY_HELP</Tag>
+		<English>The unit moves until an enemy unit of the same type enters its visibility range.</English>
+		<French>L'unit&#233; reste inactive tant qu'une unit&#233; ennemie ne p&#233;n&#232;tre pas dans son champ de vision.</French>
+		<German>Die Einheit bleibt solange in Bewegung, bis eine feindliche Einheit desselben Typs in Sichtweite kommt.</German>
+		<Italian>L'unit&#224; rimane inattiva finch&#233; un'unit&#224; nemica non diventa visibile.</Italian>
+		<Spanish>La unidad se mueve hasta que una unidad enemiga del mismo tipo se sit&#250;e al alcance de la visibilidad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_SENTRY_HELP</Tag>
+		<English>Order the selected unit to move to a tile. The unit stops before reaching its destination if an enemy unit of the same type enter its visibility range.</English>
+		<French>Ordonner &#224; l'unit&#233; s&#233;lectionn&#233;e de se d&#233;placer vers une case.</French>
+		<German>Schicken Sie die gew&#228;hlte Einheit auf ein gew&#228;hltes Gel&#228;ndefeld. Sollte eine feindliche Einheit in Sichtweite kommen h&#228;lt die Einheit automatisch an.</German>
+		<Italian>Ordina all'unit&#224; selezionata di muoversi su una casella</Italian>
+		<Spanish>Ordena a la unidad seleccionada que se mueva hasta una casilla.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_SENTRY_WHILE_HEAL</Tag>
+		<English>Sentry while Healing</English>
+		<French>En sentinelle jusqu'&#224; gu&#233;rison</French>
+		<German>Wachen w&#228;hrend der Heilung</German>
+		<Italian>Sentry while Healing</Italian>
+		<Spanish>Vigilar al curarse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_SENTRY_NAVAL_UNITS</Tag>
+		<English>Sentry (Naval Units)</English>
+		<French>En sentinelle (unit&#233;s navales)</French>
+		<German>Wache (Seeeinheit)</German>
+		<Italian>Sentry (Naval Units)</Italian>
+		<Spanish>Vigilar (unidades navales)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_SENTRY_LAND_UNITS</Tag>
+		<English>Sentry (Land Units)</English>
+		<French>En sentinelle (unit&#233;s terrestes)</French>
+		<German>Wache (Landeinheit)</German>
+		<Italian>Sentry (Land Units)</Italian>
+		<Spanish>Vigilar (unidades terrestres)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_MOVE_TO_SENTRY</Tag>
+		<English>Move and Sentry</English>
+		<French>D&#233;placer et mettre en sentinelle</French>
+		<German>Wachen w&#228;hrend der Bewegung</German>
+		<Italian>Move and Sentry</Italian>
+		<Spanish>Moverse y Vigilar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_SENTRY</Tag>
+		<English>Go To and Sentry Mode</English>
+		<French>Mode "aller &#224; et mettre en sentinelle"</French>
+		<German>Wachen w&#228;hrend Gehe zu</German>
+		<Italian>Go To and Sentry Mode</Italian>
+		<Spanish>Modo Ir a y Vigilar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_SELECT_UNIT_PROFESSION</Tag>
+		<English>Select All Units (Same Profession)</English>
+		<French>Selectionner toutes les unit&#233;s (m&#234;me type)</French>
+		<German>W&#228;hle alle Einheiten desselben Typs</German>
+		<Italian>Select All Units (Same Profession)</Italian>
+		<Spanish>Seleccionar todas las unidades (de la misma profesion)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_CITY_BOMBARD</Tag>
+		<English>Enable City Bombard</English>
+		<French>Bombardement automatique</French>
+		<German>Automatische Bombardierung</German>
+		<Italian>Enable City Bombard</Italian>
+		<Spanish>Enable City Bombard</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_CITY_BOMBARD_HELP</Tag>
+		<English>Cities bombard automatically when crossing hostile ships</English>
+		<French>Les villes bombardent automatiquement &#224; l'approche de navires hostiles</French>
+		<German>St&#228;dte bombardieren automatisch vorbeifahrende Schiffe</German>
+		<Italian>Enable City Bombard</Italian>
+		<Spanish>Enable City Bombard</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_REJECTED</Tag>
+		<English>Rejected Founding Father</English>
+		<French>P&#232;re fondateur refus&#233;</French>
+		<German>Abgelehnter Gr&#252;ndervater</German>
+		<Italian>Rejected Founding Father</Italian>
+		<Spanish>Rejected Founding Father</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NEW_AI</Tag>
+		<English>Enable AI Patch</English>
+		<French>Activer le patch IA</French>
+		<German>KI Patch</German>
+		<Italian>Enable AI Patch</Italian>
+		<Spanish>Enable AI Patch</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_NEW_AI_HELP</Tag>
+		<English>Enable AI Patch</English>
+		<French>Activer le patch pour l'intelligence artificielle</French>
+		<German>KI Patch (empfohlen)</German>
+		<Italian>Enable AI Patch</Italian>
+		<Spanish>Enable AI Patch</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NO_INDIAN_HARBOUR</Tag>
+		<English>[ICON_BULLET]Cannot enter native villages</English>
+		<French>[ICON_BULLET]Ne peut rentrer dans les villages indig&#232;nes</French>
+		<German>[ICON_BULLET]Kann Ureinwohnerd&#246;rfer nicht anlaufen</German>
+		<Italian>[ICON_BULLET]Cannot enter native villages</Italian>
+		<Spanish>[ICON_BULLET]Cannot enter native villages</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED</Tag>
+		<English>A student will finish his training at the %s3_building of %s2_city soon.</English>
+		<French>Un &#233;tudiant va bient&#244;t achever sa formation dans l'%s3_building de %s2_city.</French>
+		<German>Gouverneur, in %d1 [NUM1:Runde:Runden] wird ein strebsamer B&#252;rger an der %s3_building in %s2_city seine Ausbildung beenden.</German>
+		<Italian>A student will finish his training at the %s3_building of %s2_city soon.</Italian>
+		<Spanish>A student will finish his training at the %s3_building of %s2_city soon.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LBD_EXPERT</Tag>
+		<English>[COLOR_POSITIVE_TEXT]A settler has been promoted to %s1_expert[COLOR_REVERT].</English>
+		<French>[COLOR_POSITIVE_TEXT]Un colon a &#233;t&#233; promu %s1_expert.[COLOR_REVERT]</French>
+		<German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als %s1_expert zu gelten.[COLOR_REVERT]</German>
+		<Italian>[COLOR_POSITIVE_TEXT]A settler has been promoted to %s1_expert.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_POSITIVE_TEXT]A settler has been promoted to %s1_expert.[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LBD_EXPERT_IN_CITY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]A settler has been promoted to %s2_expert.[COLOR_REVERT]</English>
+		<French>[COLOR_POSITIVE_TEXT]Un colon a &#233;t&#233; promu expert %s2_expert.[COLOR_REVERT]</French>
+		<German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist in %s1_city, der lange in seinem Beruf gearbeitet hat, hat nun genug Wissen erlangt, um als %s2_expert zu gelten.[COLOR_REVERT]</German>
+		<Italian>[COLOR_POSITIVE_TEXT]A settler has been promoted to %s2_expert.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_POSITIVE_TEXT]A settler has been promoted to %s2_expert.[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LBD_FREE</Tag>
+		<English>[COLOR_POSITIVE_TEXT]An unfree colonist has become free.[COLOR_REVERT]</English>
+		<French>[COLOR_POSITIVE_TEXT]Un colon a gagn&#233; sa libert&#233;.[COLOR_REVERT]</French>
+		<German>[COLOR_POSITIVE_TEXT]Ein Unfreier hat sich durch harte Arbeit seine Freiheit verdient.[COLOR_REVERT]</German>
+		<Italian>[COLOR_POSITIVE_TEXT]An unfree colonist has become free.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_POSITIVE_TEXT]An unfree colonist has become free.[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LBD_FREE_IN_CITY</Tag>
+		<English>[COLOR_POSITIVE_TEXT]An unfree colonist has become free.[COLOR_REVERT]</English>
+		<French>[COLOR_POSITIVE_TEXT]Un colon a gagn&#233; sa libert&#233;.[COLOR_REVERT]</French>
+		<German>[COLOR_POSITIVE_TEXT]Ein Unfreier in %s1_city hat sich durch harte Arbeit seine Freiheit verdient.[COLOR_REVERT]</German>
+		<Italian>[COLOR_POSITIVE_TEXT]An unfree colonist has become free.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_POSITIVE_TEXT]An unfree colonist has become free.[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LBD_ESCAPE</Tag>
+		<English>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</English>
+		<French>[COLOR_WARNING_TEXT]Un captif s'est enfui de %s1_city.[COLOR_REVERT]</French>
+		<German>[COLOR_WARNING_TEXT]Ein Unfreier in %s1_city ist verschwunden. Man vermutet, dass er in die Wildnis geflohen ist.[COLOR_REVERT]</German>
+		<Italian>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
+		<English>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</English>
+		<French>[ICON_BULLET]Peut accueillir %d1_Num [NUM1:employ&#233;:employ&#233;s]</French>
+		<German>[ICON_BULLET]Bietet %d1_Num [NUM1:Arbeitsplatz:Arbeitspl&#228;tze]</German>
+		<Italian>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</Italian>
+		<Spanish>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_MAX_WORKERS2</Tag>
+		<English>%d1_Num [NUM1:job:jobs]</English>
+		<French>%d1_Num [NUM1:emploi:emplois]</French>
+		<German>%d1_Num [NUM1:Arbeitsplatz:Arbeitspl&#228;tze]</German>
+		<Italian>%d1_Num [NUM1:job:jobs]</Italian>
+		<Spanish>%d1_Num [NUM1:job:jobs]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMPETITIOR_INDEPENDENCE_WAR</Tag>
+		<English>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</English>
+		<French>Les colonies %s1_civ_adjective ont d&#233;clar&#233; la guerre contre leur propre roi !! Ils se battront pour leurs droits jusqu'&#224; ce qu'ils gagnent leur libert&#233;.</French>
+		<German>Die Gemeinschaft der V&#246;lker dieser Welt h&#228;lt den Atem an: Die %s1:2_civ_adjective Kolonien haben sich gegen ihren K&#246;nig erhoben. Sie wollen sich nicht l&#228;nger der Knute eines Tyrannen beugen.</German>
+		<Italian>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</Italian>
+		<Spanish>The %s1_civ_adjective colonies have declared war on their king. They will fight for their rights and their freedom.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SCHOOL_BUILDING_NEEDED</Tag>
+		<English>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Peut &#234;tre form&#233; dans les [COLOR_BUILDING_TEXT][LINK=literal]%s1:2_building[\LINK][COLOR_REVERT]</French>
+		<German>[ICON_BULLET]Ausbildung m&#246;glich in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET]Can be trained in [COLOR_BUILDING_TEXT][LINK=literal]%s1_building[\LINK][COLOR_REVERT]</Spanish>
+	</TEXT> 
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_AIONLY</Tag>
+		<English>[ICON_BULLET][COLOR_WARNING_TEXT]AI Unit only[COLOR_REVERT]</English>
+		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Unit&#233; IA uniquement[COLOR_REVERT]</French>
+		<German>[ICON_BULLET][COLOR_WARNING_TEXT]Steht nur vom Computer gesteuerten Kolonialm&#228;chten zur Verf&#252;gung[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]AI Unit only[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]AI Unit only[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LBD</Tag>
+		<English>[ICON_BULLET]Can become an expert through hard work</English>
+		<French>[ICON_BULLET]Peut devenir un expert en travaillant dur</French>
+		<German>[ICON_BULLET]Kann durch harte Arbeit zum Experten werden</German>
+		<Italian>[ICON_BULLET]Can become an expert through hard work</Italian>
+		<Spanish>[ICON_BULLET]Can become an expert through hard work</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_FREE</Tag>
+		<English>[ICON_BULLET]Can become a free colonist through hard work</English>
+		<French>[ICON_BULLET]Peut devenir un colon libre en travaillant dur</French>
+		<German>[ICON_BULLET]Kann durch harte Arbeit zum Freien Kolonisten werden</German>
+		<Italian>[ICON_BULLET]Can become a free colonist through hard work</Italian>
+		<Spanish>[ICON_BULLET]Can become a free colonist through hard work</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_ESCAPE</Tag>
+		<English>[ICON_BULLET]Can flee</English>
+		<French>[ICON_BULLET]Peut s'enfuir</French>
+		<German>[ICON_BULLET]Kann fliehen, um sich seinem Schicksal zu entziehen</German>
+		<Italian>[ICON_BULLET]Can flee</Italian>
+		<Spanish>[ICON_BULLET]Can flee</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROF_LBD1</Tag>
+		<English>[ICON_BULLET]Can become an expert through hard work after some time</English>
+		<French>[ICON_BULLET]Un colon libre exer&#231;ant cette profession peut devenir un expert au bout d'un certain temps</French>
+		<German>[ICON_BULLET]Ein Freier Kolonist kann nach einiger Zeit zum Experten in diesem Beruf werden</German>
+		<Italian>[ICON_BULLET]Can become an expert through hard work after some time</Italian>
+		<Spanish>[ICON_BULLET]Can become an expert through hard work after some time</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROF_LBD2</Tag>
+		<English>[ICON_BULLET]Can become an expert through hard work after a long time</English>
+		<French>[ICON_BULLET]Un colon libre exer&#231;ant cette profession peut devenir un expert au bout d'un certain temps</French>
+		<German>[ICON_BULLET]Ein Freier Kolonist kann nach langer Zeit zum Experten in diesem Beruf werden</German>
+		<Italian>[ICON_BULLET]Can become an expert through hard work after a long time</Italian>
+		<Spanish>[ICON_BULLET]Can become an expert through hard work after a long time</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROF_LBD3</Tag>
+		<English>[ICON_BULLET]Can become an expert through hard work after a very long time</English>
+		<French>[ICON_BULLET]Un colon libre exer&#231;ant cette profession peut devenir un expert au bout d'une tr&#232;s longue p&#233;riode</French>
+		<German>[ICON_BULLET]Ein Freier Kolonist kann nach sehr langer Zeit zum Experten in diesem Beruf werden</German>
+		<Italian>[ICON_BULLET]Can become an expert through hard work after very long time</Italian>
+		<Spanish>[ICON_BULLET]Can become an expert through hard work after very long time</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAPTURED_AFTER_FIGHT</Tag>
+		<English>An enemy %s1_unit was captured after a fight.</English>
+		<French>L'unit&#233; ennemie %s1_unit a &#233;t&#233; captur&#233;e apr&#232;s la bataille.</French>
+		<German>Gouverneur, wir haben einen feindlichen %s1_unit &#252;berw&#228;ltigen und gefangennehmen k&#246;nnen.</German>
+		<Italian>An enemy %s1_unit was captured after a fight.</Italian>
+		<Spanish>An enemy %s1_unit was captured after a fight.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_ENEMY_SHIP</Tag>
+		<English>An enemy unit was captured after fight.</English>
+		<French>Une unit&#233; ennemie a &#233;t&#233; captur&#233; apr&#232;s le combat.</French>
+		<German>Gouverneur, wir konnten ein feindliches Schiff kapern.</German>
+		<Italian>An enemy unit was captured after fight.</Italian>
+		<Spanish>An enemy unit was captured after fight.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_COCOA</Tag>
+		<English>Cocoa</English>
+		<French>Cacao torr&#233;fi&#233;</French>
+		<German>Kakao</German>
+		<Italian>Cocoa</Italian>
+		<Spanish>Cocoa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COCOA</Tag>
+		<English>Cocoa</English>
+		<French>Cacao torr&#233;fi&#233;</French>
+		<German>Kakao</German>
+		<Italian>Cocoa</Italian>
+		<Spanish>Cocoa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_COCOA</Tag>
+		<English>Cocoa Trees</English>
+		<French>Cacao</French>
+		<German>Kakaob&#228;ume</German>
+		<Italian>Cacao</Italian>
+		<Spanish>Cacao</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_COCOA_PLANTER</Tag>
+		<English>
+			<Text>Cocoa Planter:Cocoa Planters</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Planteur de cacao:Planteurs de cacao</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kakaopfl&#252;cker:Kakaopfl&#252;cker</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Cocoa Planter:Cocoa Planters</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Cocoa Planter:Cocoa Planters</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COCOA_PLANTER</Tag>
+		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
+		<French>Expert planteur de cacao:Experts planteurs de cacao</French>
+		<German>Erfahrener Kakaopfl&#252;cker:Erfahrene Kakaopfl&#252;cker</German>
+		<Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
+		<Spanish>Expert Cocoa Planter:Expert Cocoa Planters</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TORNADO</Tag>
+		<English>Tornado</English>
+		<French>Tornade</French>
+		<German>Tornado</German>
+		<Italian>Tornado</Italian>
+		<Spanish>Tornado</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TORNADO_PEDIA</Tag>
+		<English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tornadoes[COLOR_REVERT] make a plot impassible to all units. They can spontaneously form on any land plot, and remain active for a few turns. During this period, no resources can be won from that plot, and improvements and roads on that plot are destroyed, and on adjacent plots, improvements and roads can be endangered as well. Settlements and units will never be destroyed.[NEWLINE][NEWLINE][BOLD]Background[\BOLD][PARAGRAPH:1]A tornado is a violent, rotating column of air which is in contact with both the surface of the earth and a cumulonimbus cloud or, in rare cases, the base of a cumulus cloud. Tornadoes come in many sizes but are typically in the form of a visible condensation funnel, whose narrow end touches the earth and is often encircled by a cloud of debris.</English>
+		<French>Une tornade est un vortex (tourbillon) de vents extr&#234;mement violents, prenant naissance &#224; la base d'un nuage d'orage (cumulonimbus) lorsque les conditions de cisaillement des vents sont favorables dans la basse atmosph&#232;re. De tr&#232;s faibles tornades peuvent &#233;galement se d&#233;velopper sous des nuages d'averses (cumulus bourgeonnant).</French>
+		<German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tornados[COLOR_REVERT] sind f&#252;r alle Einheiten unpassierbar. Sie k&#246;nnen sich spontan auf dem Land bilden und bleiben einige wenige Runden aktiv. W&#228;hrend dieser Zeit k&#246;nnen auf dem Feld keine Rohstoffe gewonnen werden. Gel&#228;ndeverbesserungen und Strassen werden zerst&#246;rt. Auch auf benachbarten Feldern sind Gel&#228;ndeverbesserungen und Strassen in Gefahr. Siedlungen sind jedoch nicht gef&#228;hrdet.[NEWLINE][NEWLINE][BOLD]Hintergrund[\BOLD][PARAGRAPH:1]Ein Tornado, auch Wind- oder Wasserhose genannt, ist ein kleinr&#228;umiger Luftwirbel in der Erdatmosph&#228;re, der eine ann&#228;hernd senkrechte Drehachse aufweist und im Zusammenhang mit konvektiver Bew&#246;lkung (Cumulus und Cumulonimbus) steht. Der Wirbel erstreckt sich hierbei durchgehend vom Boden bis zur Wolkenuntergrenze und ist von einem Staubwolke umgeben.</German>
+		<Italian>A tornado is a violent, rotating column of air which is in contact with both the surface of the earth and a cumulonimbus cloud or, in rare cases, the base of a cumulus cloud. Tornadoes come in many sizes but are typically in the form of a visible condensation funnel, whose narrow end touches the earth and is often encircled by a cloud of debris.</Italian>
+		<Spanish>A tornado is a violent, rotating column of air which is in contact with both the surface of the earth and a cumulonimbus cloud or, in rare cases, the base of a cumulus cloud. Tornadoes come in many sizes but are typically in the form of a visible condensation funnel, whose narrow end touches the earth and is often encircled by a cloud of debris.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NO_MORE_RESPAWN</Tag>
+		<English>Player %s1_player has withdrawn from the new world.</English>
+		<French>Las de l'insucc&#232;s de %s1_player, son Roi a d&#233;cid&#233; de retirer du Nouveau Monde l'ensemble de ses explorateurs, soldats et colons.</French>
+		<German>Zun&#228;chst hat %s1_player das Schlachtengl&#252;ck verlassen - und nun verliert er auch noch die Gunst seines K&#246;nigs, der es leid ist, zum Gesp&#246;tt der ganzen Welt zu werden. Majest&#228;t geruhen, alle Entdecker, Soldaten und Kolonisten aus der Neuen Welt zur&#252;ck nach Europa zu beordern.</German>
+		<Italian>Player %s1_player has withdrawn from the new world.</Italian>
+		<Spanish>Player %s1_player has withdrawn from the new world.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_TAC_AMERICA_DESC</Tag>
+		<English>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, fixing of several river bugs, fair balanced transferplots and starting positions</English>
+		<French>Version TAC de l'h&#233;misph&#232;re Ouest (Immense):zones temp&#233;r&#233;es r&#233;alistes et coh&#233;rentes, fleuves, montagnes, &#238;les authentiques &#224; la r&#233;alit&#233; avec quelques ajustements dans l'int&#233;r&#234;t du jeu.</French>
+		<German>TAC-Variante der Gesamtamerika-Karte Western Hemisphere (Huge): authentische und zusammenh&#228;ngende Klimazonen, authentische Fl&#252;sse, authentische H&#246;henz&#252;ge, korrekt platzierte Inseln, fair verteilte &#220;berfahrtsfelder nach Europa; Fixing von Fl&#252;ssen, die stromaufw&#228;rts flossen oder im Binnenland versickerten; Fixing von bewaldeten Meeresfeldern</German>
+		<Italian>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, fixing of several river bugs, fair balanced transferplots and starting positions</Italian>
+		<Spanish>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, fixing of several river bugs, fair balanced transferplots and starting positions</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_TAC_NORTHWEST_DESC</Tag>
+		<English>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pazific transferplots, only five Atlantic transferplots und starting positions for different temperate zones and different game experiences</English>
+		<French>Version TAC du passage par le Nord Ouest (Immense):zones temp&#233;r&#233;es r&#233;alistes et coh&#233;rentes, fleuves, montagnes, &#238;les authentiques &#224; la r&#233;alit&#233; avec seulement 5 cases d'acc&#232;s &#224; l'Europe par l'Atlantique servant chacune de position de d&#233;part pour diversifier les exp&#233;riences de jeu.</French>
+		<German>TAC-Variante der Karte Northwest Passage: nur Indianerv&#246;lker aus Nordamerika, authentische und zusammenh&#228;ngende Klimazonen, authentische Fl&#252;sse, authentische H&#246;henz&#252;ge, erstmals Pazifik-&#220;berfahrtsfelder, nur noch f&#252;nf, fair verteilte &#220;berfahrtsfelder im Atlantik, die als Startpositionen in verschiedene Klimazonen f&#252;hren, die unterschiedliche Herausforderungen bieten; Fixing von Fl&#252;ssen, die stromaufw&#228;rts flossen oder im Binnenland versickerten</German>
+		<Italian>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pazific transferplots, only five Atlantic transferplots und starting positions for different temperate zones and different game experiences</Italian>
+		<Spanish>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pazific transferplots, only five Atlantic transferplots und starting positions for different temperate zones and different game experiences</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_TAC_SOUTH_AMERICA_DESC</Tag>
+		<English>TAC-version of South America: transferplots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with less desert plots and more lumber</English>
+		<French>Version TAC de l'Am&#233;rique du Sud avec quelques ajustements au niveau des fleuves, de la jungle et du d&#233;sert en Patagonie.</French>
+		<German>TAC-Variante der Karte South America: nur Indianerv&#246;lker aus S&#252;damerika, mehr Dschungel, mehr Berge, mehr Fl&#252;sse, ausgeglichener balancierte Atlantik-&#220;berfahrtsfelder, erstmals Pazifik-&#220;berfahrtsfelder, S&#252;dzipfel mit weniger W&#252;ste und erstmals mit Holzquellen; Fixing von Fl&#252;ssen, die stromaufw&#228;rts flossen oder im Binnenland versickerten</German>
+		<Italian>TAC-version of South America: transferplots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with less desert plots and more lumber</Italian>
+		<Spanish>TAC-version of South America: transferplots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with less desert plots and more lumber</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_TAC_CENTRAL_AMERICA_DESC</Tag>
+		<English>TAC-map of Central America: from the Caribic Sea to Mexico, from the Mississippi River to Amazon</English>
+		<French>Version TAC de l'Am&#233;rique Centrale : de la mer des Cara&#239;bes au Mexique, du Mississippi &#224; l'Amazone.</French>
+		<German>TAC-Karte von Zentralamerika: von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zum Amazonasdschungel</German>
+		<Italian>TAC-map of Central America: from the Caribic Sea to Mexico, from the Mississippi River to Amazon</Italian>
+		<Spanish>TAC-map of Central America: from the Caribic Sea to Mexico, from the Mississippi River to Amazon</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_TAC_EAST_COAST_DESC</Tag>
+		<English>Huge TAC-map of the East Coast of North America. Technically defined as a small map so that there will be only settlements of the four North American native tribes. From Newfoundland to Florida, from the Great Lakes to the Atlantic.</English>
+		<French>Version TAC de la c&#244;te Est Nord-Am&#233;ricaine. D&#233;fini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Am&#233;ricaines. De Terre-Neuve &#224; la Floride, des Grands Lacs &#224; l'Atlantique.</French>
+		<German>Riesige TAC-Karte der Ostk&#252;ste Nordamerikas. Technisch als &#34;kleine&#34; Karte ausgewiesen, damit sie nur von den vier Indianerst&#228;mmen des Nordens besiedelt ist. Von Neufundland bis Florida, von den Gro&#223;en Seen bis zur Atlantikk&#252;ste.</German>
+		<Italian>Huge TAC-map of the East Coast of North America. Technically defined as a small map so that there will be only settlements of the four North American native tribes. From Newfoundland to Florida, from the Great Lakes to the Atlantic.</Italian>
+		<Spanish>Huge TAC-map of the East Coast of North America. Technically defined as a small map so that there will be only settlements of the four North American native tribes. From Newfoundland to Florida, from the Great Lakes to the Atlantic.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_NATIVE_MERC</Tag>
+		<English>Native Mercenary:Native Mercenaries</English>
+		<French>Mercenaire indig&#232;ne:Mercenaires indig&#232;nes</French>
+		<German>Indianischer S&#246;ldner:Indianische S&#246;ldner</German>
+		<Italian>Native Mercenary:Native Mercenaries</Italian>
+		<Spanish>Native Mercenary:Native Mercenaries</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BOUGHT_NATIVE_MERC</Tag>
+		<English>You have acquired native mercenaries.</English>
+		<French>Vous avez acquis une unit&#233; de mercenaires indig&#232;nes.</French>
+		<German>Gouverneur, unsere einheimischen S&#246;ldner stehen bereit.</German>
+		<Italian>You have acquired native mercenaries.</Italian>
+		<Spanish>You have acquired native mercenaries.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REV_SUPPORT_ARRIVED</Tag>
+		<English>The support troops of %s1_king have arrived.</English>
+		<French>Les renforts du %s1_king sont arriv&#233;s.</French>
+		<German>Die Unterst&#252;tzungstruppen des %s1_king sind eingetroffen.</German>
+		<Italian>The support troops of %s1_king have arrived.</Italian>
+		<Spanish>The support troops of %s1_king have arrived.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EUROPE_WAR_KING_DECREASED_MAX_TAX</Tag>
+		<English>The King is pleased and decreased our maximal tax rate.</English>
+		<French>Le Roi est satisfait et accepte de r&#233;duire notre taux maximal d'imposition.</French>
+		<German>Erfreut &#252;ber unseren Gehorsam hat der K&#246;nig den maximalen Steuersatz um %d1_decrease gesenkt.</German>
+		<Italian>The King is pleased and decreased our maximal tax rate</Italian>
+		<Spanish>The King is pleased and decreased our maximal tax rate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
+		<English>The reinforcement troops of our king have arrived.</English>
+		<French>Les renforts de notre roi sont arriv&#233;s.</French>
+		<German>Die Unterst&#252;tzungstruppen unseres K&#246;nigs sind eingetroffen.</German>
+		<Italian>The reinforcement troops of our king have arrived.</Italian>
+		<Spanish>The reinforcement troops of our king have arrived.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
+		<English>The King is angry and has increased our maximal tax rate.</English>
+		<French>Irrit&#233; par notre d&#233;sob&#233;issance, le roi a augment&#233; notre taux maximal d'imposition de d1_increase%. [NEWLINE] Notre relation avec s2_nation% mais s'est am&#233;lior&#233;e.</French>
+		<German>Ver&#228;rgert &#252;ber unseren Ungehorsam hat der K&#246;nig unseren maximalen Steuersatz um %d1_increase erh&#246;ht.[NEWLINE]Unsere Beziehung zu %s2_nation hat sich jedoch verbessert.</German>
+		<Italian>The King is angry and increased our maximal tax rate.</Italian>
+		<Spanish>The King is angry and increased our maximal tax rate.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY</Tag>
+		<English>There is peace again.</English>
+		<French>Convaincu par notre tribu, %s1_Player accepte la paix.</French>
+		<German>Durch unsere Entsch&#228;digung von unseren guten Absichten &#252;berzeugt, hat %s1_Player das Kriegsbeil wieder begraben.</German>
+		<Italian>It is peace again.</Italian>
+		<Spanish>It is peace again.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BONUS_WHALE</Tag>
+		<English>Sperm Whales</English>
+		<French>
+			<Text>Cachalots</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Pottwale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Balena:Balene</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ballenas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WHALING_BOAT</Tag>
+		<English>Whaling Boat:Whaling Boats</English>
+		<French>
+			<Text>Baleinier</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Walf&#228;nger</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Baleniera:Baleniere</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Barco ballenero:Barcos balleneros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_WHALE_OIL_COOKER</Tag>
+		<English>
+			<Text>Train Oil Cooker:Train Oil Cookers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Affineur d'huile:Affineurs d'huile</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Trankocher:Trankocher</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Train Oil Cooker:Train Oil Cookers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Train Oil Cooker:Train Oil Cookers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_WHALING</Tag>
+		<English>Whaling</English>
+		<French>Chasse &#224; la baleine</French>
+		<German>Waljagd</German>
+		<Italian>Whaling</Italian>
+		<Spanish>Whaling</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_WHALING_HELP</Tag>
+		<English>Will gather blubber from whales until the ship is full</English>
+		<French>P&#234;chera la baleine jusqu'&#224; ce que sa cargaison de graisse soit pleine.</French>
+		<German>Schiff jagt Wale, bis der Frachtraum voller Walspeck ist</German>
+		<Italian>Will gather blubber from whales until the ship is full</Italian>
+		<Spanish>Will gather blubber from whales until the ship is full</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_WHALING_UNLOAD</Tag>
+		<English>Automate Whaling</English>
+		<French>Automatiser la chasse &#224; la baleine</French>
+		<German>Schiff jagt Wale automatisch</German>
+		<Italian>Automate Whaling</Italian>
+		<Spanish>Automate Whaling</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISSION_WHALING_UNLOAD_HELP</Tag>
+		<English>Will gather blubber from whales until the ship is full, then unload cargo at selected port</English>
+		<French>P&#234;chera jusqu'au plein de sa cargaison puis rentrera au port s&#233;lectionn&#233;</French>
+		<German>Schiff geht vollautomatisch auf Waljagd: sucht Bonusressource Wale, sammelt Walspeck und bringt ihn in eine Hafenstadt</German>
+		<Italian>Colletta alimentare a partire dai pesci fino balena o la nave &#232; piena</Italian>
+		<Spanish>Recoger la comida de pescado o la ballena hasta que el barco est&#225; lleno</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT</Tag>
+		<English>Automate Gatherboat</English>
+		<French>Automatiser la p&#234;che</French>
+		<German>Fang automatisieren</German>
+		<Italian>Automatizza i peschereccio</Italian>
+		<Spanish>Automatizar barco pesquero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT_HELP</Tag>
+		<English>Will gather until the ship is full, then unload cargo at the nearest port</English>
+		<French>P&#234;chera jusqu'au plein de sa cargaison puis rentrera au port le plus proche</French>
+		<German>Schiff geht vollautomatisch auf Fang. Sucht Bonusressource, sammelt Ware und bringt sie in eine Hafenstadt</German>
+		<Italian>Colletta alimentare a partire dai pesci fino balena o la nave &#232; piena</Italian>
+		<Spanish>Recoger la comida de pescado o la ballena hasta que el barco est&#225; lleno</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WHALER_UNLOAD</Tag>
+		<English>Your %s1_unit has unloaded its cargo and is ready for another voyage.</English>
+		<French>Votre %s1_unit a d&#233;charg&#233; sa marchandise et est pr&#234;t pour un nouveau voyage.</French>
+		<German>Euer Schiff %s1_unit hat allen Walspeck entladen und ist wieder bereit auszulaufen.</German>
+		<Italian>Your %s1_unit has unloaded its cargo and is ready for another fishing venture.</Italian>
+		<Spanish>Your %s1_unit has unloaded its cargo and is ready for another fishing venture.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WHALER_HELP</Tag>
+		<English>(%s1_symbol_list per turn)</English>
+		<French>(%s1_symbol_list par tour)</French>
+		<German>(%s1_symbol_list pro Runde)</German>
+		<Italian>(%s1_symbol_list per turno)</Italian>
+		<Spanish>(%s1_symbol_list por turno)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WHALER_FULL</Tag>
+		<English>Your %s1_unit is filled to the brim with food from the sea.</English>
+		<French>Votre %s1_unit est rempli de nourriture &#224; ras bord.</French>
+		<German>Das Schiff %s1_unit hat jetzt so viel Walspeck an Bord, wie es fassen kann.</German>
+		<Italian>Il vostro %s1_unit &#232; riempito al bordo con il cibo dal mare.</Italian>
+		<Spanish>Su %s1_unit est&#225; llena hasta el tope con los alimentos del mar.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WHALER_FULL_UNLOAD</Tag>
+		<English>Your %s1_unit is filled to the brim with food from the sea and is returning to %s2_city to unload.</English>
+		<French>Votre %s1_unit est rempli de nourriture &#224; ras bord.</French>
+		<German>Das Schiff %s1_unit hat jetzt so viel Walspeck an Bord, wie es fassen kann.</German>
+		<Italian>Il vostro %s1_unit &#232; riempito al bordo con il cibo dal mare.</Italian>
+		<Spanish>Su %s1_unit est&#225; llena hasta el tope con los alimentos del mar.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SELECT_RETURN_CITY</Tag>
+		<English>Select a City for your %s1_unit to return when cargo hold is full</English>
+		<French>S&#233;lectionner la ville dans laquelle votre %s1_unit doit revenir une fois plein</French>
+		<German>Gouverneur, w&#228;hlt eine K&#252;stenstadt aus, zu der das Schiff %s1_unit fahren soll, wenn sein Frachtraum voll ist!</German>
+		<Italian>Select a City for your %s1_unit to return when cargo hold is full</Italian>
+		<Spanish>Select a City for your %s1_unit to return when cargo hold is full</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CANNOT_WHALE_CITY_RADIUS</Tag>
+		<English>[COLOR_PLAYER_RED]Must be outside City radius[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]Ne peut p&#234;cher qu'&#224; l'ext&#233;rieur du rayon d'une ville[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]Muss au&#223;erhalb des Stadtradius liegen[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]Must be outside City radius[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]Must be outside City radius[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CANNOT_WHALE_CITY_RADIUS_PLOT_WORKED</Tag>
+		<English>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]Cette zone est d&#233;j&#224; exploit&#233;e par les citoyen d'une ville proche[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]Dieser Platz wird bereits durch eine Stadt bewirtschaftet[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CANNOT_WHALE_NO_FISH</Tag>
+		<English>[COLOR_PLAYER_RED]Whale bonus is required[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]Un bonus de baleine est n&#233;cessaire[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]Walvorkommen wird ben&#246;tigt[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]Whale bonus is required[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]Whale bonus is required[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CANNOT_WHALE_NEEDS_WHALER</Tag>
+		<English>[COLOR_PLAYER_RED]Whaling ship required to gather resource[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]Un baleinier est n&#233;cessaire pour p&#234;cher cette ressource[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]Walf&#228;nger wird ben&#246;tigt[COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]Whaling ship required to gather resource[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]Whaling ship required to gather resource[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CANNOT_WHALE_FULL</Tag>
+		<English>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]Plus de place en cargaison pour de la[COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]La soute est pleine ![COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_CANNOT_WHALE_TAKEN</Tag>
+		<English>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</English>
+		<French>[COLOR_PLAYER_RED]Cette zone est d&#233;j&#224; exploit&#233;e par un autre navire de p&#234;che ![COLOR_REVERT]</French>
+		<German>[COLOR_PLAYER_RED]Hier geht bereits ein anderes Schiff auf die Waljagd![COLOR_REVERT]</German>
+		<Italian>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_WHALE_OIL</Tag>
+		<English>Train Oil</English>
+		<French>
+			<Text>Huile de baleine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Tran</German>
+		<Italian>
+			<Text>Olio di balena</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Aceite de ballena</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_WHALE_BLUBBER</Tag>
+		<English>Whale Fat</English>
+		<French>
+			<Text>Graisse de baleine</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Walspeck</German>
+		<Italian>
+			<Text>Whale Fat</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Whale Fat</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WHALE_OIL</Tag>
+		<English>Train Oil</English>
+		<French>
+			<Text>Huile de baleine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Tran</German>
+		<Italian>
+			<Text>Olio di balena</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Aceite de ballena</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WHALE_BLUBBER</Tag>
+		<English>Whale Fat</English>
+		<French>
+			<Text>Graisse de baleine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Walspeck</German>
+		<Italian>
+			<Text>Whale Fat</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Whale Fat</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_WHALE_OIL_COOKER</Tag>
+		<English>Master Train Oil Cooker:Master Train Oil Cookers</English>
+		<French>Ma&#238;tre affineur d'huile:Ma&#238;tres affineur d'huile</French>
+		<German>Meistertrankocher:Meistertrankocher</German>
+		<Italian>Master Train Oil Cooker:Master Train Oil Cookers</Italian>
+		<Spanish>Master Train Oil Cooker:Master Train Oil Cookers</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GATHER_BOAT_WHALING</Tag>
+		<English>[ICON_BULLET]Can gather Whale Fat from sea resource Whale</English>
+		<French>[ICON_BULLET]Peut p&#234;cher de la graisse de baleine en exploitant la ressource maritime Baleine</French>
+		<German>[ICON_BULLET]Kann Walspeck auf Bonusressource Wale gewinnen</German>
+		<Italian>[ICON_BULLET]Can gather Whale Fat from sea resource Whale</Italian>
+		<Spanish>[ICON_BULLET]Can gather Whale Fat from sea resource Whale</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TEHUELCHE_ADJECTIVE</Tag>
+		<English>Tehuelche</English>
+		<French>
+			<Text>tehuelche:tehuelche:tehuelches:tehuelches</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Tehuelche-</German>
+		<Italian>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TEHUELCHE_DESC</Tag>
+		<English>Tehuelche</English>
+		<French>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Tehuelche</German>
+		<Italian>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_TEHUELCHE_SHORT_DESC</Tag>
+		<English>Tehuelche</English>
+		<French>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Tehuelche</German>
+		<Italian>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NO_RAW_ON_FIELD</Tag>
+		<English>Gouvernor, a Settler in %s1_city cannot produce any %F2_yield_icon on his tile.</English>
+		<French>Gouverneur, un colon de %s1_city ne peut plus produire de %F2_yield_icon sur sa case.</French>
+		<German>Gouverneur, ein B&#252;rger aus %s1_city, dem Ihr befohlen hattet, %F2_yield_icon einzubringen, meldet, dass er derzeit nichts zu tun hat.</German>
+		<Italian>Gouvernor, a Settler in %s1_city cannot produce any %F2_yield_icon on his tile.</Italian>
+		<Spanish>Gouvernor, a Settler in %s1_city cannot produce any %F2_yield_icon on his tile.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_REDUCED_REF</Tag>
+		<English>Reduced Royal Expeditionary Force</English>
+		<French>Force exp&#233;ditionnaire du Roi r&#233;duite</French>
+		<German>Kleinere K&#246;nigsarmee</German>
+		<Italian>Reduced Royal Expeditionary Force</Italian>
+		<Spanish>Reduced Royal Expeditionary Force</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_REDUCED_REF_HELP</Tag>
+		<English>Reduced REF for King of Player</English>
+		<French>La Force exp&#233;ditionnaire du Roi a &#233;t&#233; r&#233;duite</French>
+		<German>Halbiert beim Spieler die Expeditionsstreitmacht des K&#246;nigs</German>
+		<Italian>Reduced REF for King of Player</Italian>
+		<Spanish>Reduced REF for King of Player</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PILGRIM</Tag>
+		<English>Pilgrim (Easiest)</English>
+		<French>P&#232;lerin (facile)</French>
+		<German>Pilgerer</German>
+		<Italian>Pellegrino (diff. min.)</Italian>
+		<Spanish>Peregrino (m&#225;s f&#225;cil)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_REVOLUTIONARY</Tag>
+		<English>Revolutionary (Hardest)</English>
+		<French>R&#233;volutionnaire (Dur)</French>
+		<German>Revolution&#228;r</German>
+		<Italian>Rivoluzionario (max)</Italian>
+		<Spanish>Revoluc. (m&#225;s dif&#237;cil)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_DISTANCE</Tag>
+		<English>Distance to Europe:</English>
+		<French>Distance jusqu'&#224; l'Europe :</French>
+		<German>Distanz K&#252;ste zu Europa:</German>
+		<Italian>Distance to Europe:</Italian>
+		<Spanish>Distance to Europe:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_NORTHERN_BORDER</Tag>
+		<English>Northern border:</English>
+		<French>Fronti&#232;re Nord :</French>
+		<German>N&#246;rdliche Grenze</German>
+		<Italian>Northern border:</Italian>
+		<Spanish>Northern border:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_SOUTHERN_BORDER</Tag>
+		<English>Southern border:</English>
+		<French>Fronti&#232;re Sud :</French>
+		<German>S&#252;dliche Grenze:</German>
+		<Italian>Southern border:</Italian>
+		<Spanish>Southern border:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION</Tag>
+		<English>Land allocation:</English>
+		<French>Disposition des terres :</French>
+		<German>Landverteilung:</German>
+		<Italian>Land allocation:</Italian>
+		<Spanish>Land allocation:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_3_FIELDS</Tag>
+		<English>3 fields:</English>
+		<French>3 cases:</French>
+		<German>3 Felder:</German>
+		<Italian>3 fields:</Italian>
+		<Spanish>3 fields:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_4_FIELDS</Tag>
+		<English>4 fields (default):</English>
+		<French>4 cases (par d&#233;faut):</French>
+		<German>4 Felder (Standard):</German>
+		<Italian>4 fields (default):</Italian>
+		<Spanish>4 fields (default):</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_6_FIELDS</Tag>
+		<English>6 fields:</English>
+		<French>6 cases:</French>
+		<German>6 Felder:</German>
+		<Italian>6 fields:</Italian>
+		<Spanish>6 fields:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_8_FIELDS</Tag>
+		<English>8 fields:</English>
+		<French>8 cases:</French>
+		<German>8 Felder:</German>
+		<Italian>8 fields:</Italian>
+		<Spanish>8 fields:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_0</Tag>
+		<English>Few isles (default)</English>
+		<French>Quelques grandes &#238;les (par d&#233;faut)</French>
+		<German>Wenige Inseln (Standard)</German>
+		<Italian>Few isles (default)</Italian>
+		<Spanish>Few isles (default)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_1</Tag>
+		<English>Many isles</English>
+		<French>De nombreuses &#238;les</French>
+		<German>Viele Inseln</German>
+		<Italian>Many isles</Italian>
+		<Spanish>Many isles</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_0</Tag>
+		<English>Latitude 90 degrees north (default)</English>
+		<French>Latitude 90 degr&#233;s Nord (par d&#233;fault)</French>
+		<German>90°N (n&#246;rdliche Breite, Standard)</German>
+		<Italian>Latitude 90 degrees north (default)</Italian>
+		<Spanish>Latitude 90 degrees north (default)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_1</Tag>
+		<English>Latitude 90 degrees south</English>
+		<French>Latitude 90 degr&#233;s Sud</French>
+		<German>90°S (s&#252;dliche Breite)</German>
+		<Italian>Latitude 90 degrees south</Italian>
+		<Spanish>Latitude 90 degrees south</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_0</Tag>
+		<English>Latitude 90 degrees north</English>
+		<French>Latitude 90 degr&#233;s Nord</French>
+		<German>90°N (n&#246;rdliche Breite)</German>
+		<Italian>Latitude 90 degrees north</Italian>
+		<Spanish>Latitude 90 degrees north</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_1</Tag>
+		<English>Latitude 90 degrees south (default)</English>
+		<French>Latitude 90 degr&#233;s Sud (par d&#233;faut)</French>
+		<German>90°S (s&#252;dliche Breite, Standard)</German>
+		<Italian>Latitude 90 degrees south (default)</Italian>
+		<Spanish>Latitude 90 degrees south (default)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_SELECT_EQUATOR</Tag>
+		<English>0° equator</English>
+		<French>0° &#233;quateur</French>
+		<German>0° &#196;quator</German>
+		<Italian>0° equator</Italian>
+		<Spanish>0° equator</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SHUAR_ADJECTIVE</Tag>
+		<English>Shuar</English>
+		<French>
+			<Text>shuar:shuar:shuars:shuars</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</French>
+		<German>Shuar-</German>
+		<Italian>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SHUAR_DESC</Tag>
+		<English>Shuar</English>
+		<French>
+			<Text>Shuars</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Shuar</German>
+		<Italian>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIV_SHUAR_SHORT_DESC</Tag>
+		<English>Shuar</English>
+		<French>
+			<Text>Shuars</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Shuar</German>
+		<Italian>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LEADER_SHUAR</Tag>
+		<English>Nunkui</English>
+		<French>
+			<Text>Nunkui</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Nunkui</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Nunkui</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Nunkui</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_RANDOM_SETTLEMENT_AREAS</Tag>
+		<English>Random settlement areas</English>
+		<French>Positionnement al&#233;atoires des indig&#232;nes</French>
+		<German>Beliebige Siedlungsgebiete der Ureinwohner</German>
+		<Italian>Random settlement areas</Italian>
+		<Spanish>Random settlement areas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_RANDOM_SETTLEMENT_AREAS_HELP</Tag>
+		<English>Random settlement areas</English>
+		<French>Les indig&#232;nes sont plac&#233;s de mani&#232;re al&#233;atoire, sans tenir compte de la lattitude.</French>
+		<German>Ureinwohnerv&#246;lker werden auf der Nord-S&#252;d-Achse zuf&#228;llig und nicht historisch korrekt platziert</German>
+		<Italian>Random settlement areas</Italian>
+		<Spanish>Random settlement areas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_GREAT_CHIEF</Tag>
+		<English>Great Warrior</English>
+		<French>
+			<Text>G&#233;n&#233;ral illustre</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gro&#223;er Krieger</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</German>
+		<Italian>
+			<Text>Grande Generale:Grandi Generali</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Gran general:Grandes generales</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CHEATMENU_TITLE</Tag>
+		<English>AoD Cheat Menu!</English>
+		<French>Menu de triche d'AoD!</French>
+		<German>Eine d&#252;stere Gestalt tritt heran ...</German>
+		<Italian>AoD Cheat Menu!</Italian>
+		<Spanish>AoD Cheat Menu!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CHEATMENU_TEXT</Tag>
+		<English>Please choose an option from below. Remember, I know you cheated!</English>
+		<French>Veuillez choisir l'une des options suivantes. Attention, je sais que vous avez trich&#233;!</French>
+		<German>Gouverneur, wollt Ihr mir Eure Seele verkaufen?</German>
+		<Italian>Please choose an option from below. Remember, I know you cheated!</Italian>
+		<Spanish>Please choose an option from below. Remember, I know you cheated!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CHEATMENU_CANCEL</Tag>
+		<English>I am not a cheater! (CANCEL)</English>
+		<French>Je ne suis pas un tricheur ! (ANNULER)</French>
+		<German>Ich bleibe standhaft. Weiche, Satan! (ABBRUCH)</German>
+		<Italian>I am not a cheater! (CANCEL)</Italian>
+		<Spanish>I am not a cheater! (CANCEL)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AIAUTOPLAY</Tag>
+		<English>Number of turns to AI Autoplay:</English>
+		<French>Nombre de tours en jeu automatis&#233; :</French>
+		<German>Zahl der automatischen Runden:</German>
+		<Italian>Number of turns to AI Autoplay:</Italian>
+		<Spanish>Number of turns to AI Autoplay:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AIAUTOPLAY10</Tag>
+		<English>AI Autoplay 10 Turns</English>
+		<French>Jeu automatis&#233; pendant 10 Tours</French>
+		<German>10 Runden</German>
+		<Italian>AI Autoplay 10 Turns</Italian>
+		<Spanish>AI Autoplay 10 Turns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AIAUTOPLAY50</Tag>
+		<English>AI Autoplay 50 Turns</English>
+		<French>Jeu automatis&#233; pendant 50 Turns</French>
+		<German>50 Runden</German>
+		<Italian>AI Autoplay 50 Turns</Italian>
+		<Spanish>AI Autoplay 50 Turns</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MONEYTREE</Tag>
+		<English>Amount of ducats to add:</English>
+		<French>Montant d'or &#224; ajouter :</French>
+		<German>Seele(n) verkaufen f&#252;r Gold:</German>
+		<Italian>Amount of ducats to add:</Italian>
+		<Spanish>Amount of ducats to add:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MONEYTREE1000</Tag>
+		<English>Add 1000 ducats</English>
+		<French>Ajouter 1000 or</French>
+		<German>Eigene Seele: + 1000 Gold</German>
+		<Italian>Add 1000 ducats</Italian>
+		<Spanish>Add 1000 ducats</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MONEYTREE5000</Tag>
+		<English>Add 5000 ducats</English>
+		<French>Ajouter 5000 or</French>
+		<German>Seelen der Kinder und Enkel: + 5000 Gold</German>
+		<Italian>Add 5000 ducats</Italian>
+		<Spanish>Add 5000 ducats</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_TURN</Tag>
+		<English>[COLOR_FONT_CREAM]Turn:[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</English>
+		<French>[COLOR_FONT_CREAM]Tour :[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</French>
+		<German>[COLOR_FONT_CREAM]Runde:[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</German>
+		<Italian>[COLOR_FONT_CREAM]Turn:[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</Italian>
+		<Spanish>[COLOR_FONT_CREAM]Turn:[COLOR_REVERT] %d1 / %d2[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_TURN_NO_LIMIT</Tag>
+		<English>[COLOR_FONT_CREAM]Turn:[COLOR_REVERT] %d1 / No Limit[NEWLINE][NEWLINE]</English>
+		<French>[COLOR_FONT_CREAM]Turn :[COLOR_REVERT] %d1 / No Limit[NEWLINE][NEWLINE]</French>
+		<German>[COLOR_FONT_CREAM]Runde:[COLOR_REVERT] %d1 / Kein Rundenlimit[NEWLINE][NEWLINE]</German>
+		<Italian>[COLOR_FONT_CREAM]Turn:[COLOR_REVERT] %d1 / No Limit[NEWLINE][NEWLINE]</Italian>
+		<Spanish>[COLOR_FONT_CREAM]Turn:[COLOR_REVERT] %d1 / No Limit[NEWLINE][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_IMMIGRATION_TITLE</Tag>
+		<English>[COLOR_FONT_CREAM]Immigration:[COLOR_REVERT][NEWLINE]</English>
+		<French>[COLOR_FONT_CREAM]Immigration :[COLOR_REVERT][NEWLINE]</French>
+		<German>[COLOR_FONT_CREAM]Einwanderung:[COLOR_REVERT][NEWLINE]</German>
+		<Italian>[COLOR_FONT_CREAM]Immigration:[COLOR_REVERT][NEWLINE]</Italian>
+		<Spanish>[COLOR_FONT_CREAM]Immigration:[COLOR_REVERT][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_IMMIGRATION</Tag>
+		<English>[COLOR_WHITE]   %d1 / %d2%F3 (+ %d4)[COLOR_REVERT][NEWLINE]</English>
+		<French>[COLOR_WHITE]   %d1 / %d2%F3 (+ %d4)[COLOR_REVERT][NEWLINE]</French>
+		<German>[COLOR_WHITE]   %d1 / %d2%F3 (+ %d4)[COLOR_REVERT][NEWLINE]</German>
+		<Italian>[COLOR_WHITE]   %d1 / %d2%F3 (+ %d4)[COLOR_REVERT][NEWLINE]</Italian>
+		<Spanish>[COLOR_WHITE]   %d1 / %d2%F3 (+ %d4)[COLOR_REVERT][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_REBELS_TITLE</Tag>
+		<English>[COLOR_FONT_CREAM]Rebel percent:[COLOR_REVERT][NEWLINE]</English>
+		<French>[COLOR_FONT_CREAM]Sentiment de r&#233;volte :[COLOR_REVERT][NEWLINE]</French>
+		<German>[COLOR_FONT_CREAM]Rebellische Stimmung:[COLOR_REVERT][NEWLINE]</German>
+		<Italian>[COLOR_FONT_CREAM]Rebel percent:[COLOR_REVERT][NEWLINE]</Italian>
+		<Spanish>[COLOR_FONT_CREAM]Rebel percent:[COLOR_REVERT][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_REBELS</Tag>
+		<English>[COLOR_WHITE]   %d1%% [ICON_POWER][COLOR_REVERT][NEWLINE]</English>
+		<French>[COLOR_WHITE]   %d1%% [ICON_POWER][COLOR_REVERT][NEWLINE]</French>
+		<German>[COLOR_WHITE]   %d1%% [ICON_POWER][COLOR_REVERT][NEWLINE]</German>
+		<Italian>[COLOR_WHITE]   %d1%% [ICON_POWER][COLOR_REVERT][NEWLINE]</Italian>
+		<Spanish>[COLOR_WHITE]   %d1%% [ICON_POWER][COLOR_REVERT][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_GENERALS_TITLE</Tag>
+		<English>[COLOR_FONT_CREAM]Great General:[COLOR_REVERT][NEWLINE]</English>
+		<French>[COLOR_FONT_CREAM]G&#233;n&#233;ral illustre :[COLOR_REVERT][NEWLINE]</French>
+		<German>[COLOR_FONT_CREAM]Gro&#223;er General:[COLOR_REVERT][NEWLINE]</German>
+		<Italian>[COLOR_FONT_CREAM]Great General:[COLOR_REVERT][NEWLINE]</Italian>
+		<Spanish>[COLOR_FONT_CREAM]Great General:[COLOR_REVERT][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_GENERALS</Tag>
+		<English>[COLOR_WHITE]   %d1 / %d2 xp[COLOR_REVERT][NEWLINE]</English>
+		<French>[COLOR_WHITE]   %d1 / %d2 xp[COLOR_REVERT][NEWLINE]</French>
+		<German>[COLOR_WHITE]   %d1 / %d2 Erfahrungspunkte[COLOR_REVERT][NEWLINE]</German>
+		<Italian>[COLOR_WHITE]   %d1 / %d2 xp[COLOR_REVERT][NEWLINE]</Italian>
+		<Spanish>[COLOR_WHITE]   %d1 / %d2 xp[COLOR_REVERT][NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_FF</Tag>
+		<English>[NEWLINE][COLOR_FONT_CREAM]%s1:[COLOR_REVERT][NEWLINE]  %s2[NEWLINE]</English>
+		<French>[NEWLINE][COLOR_FONT_CREAM]%s1:[COLOR_REVERT][NEWLINE]  %s2[NEWLINE]</French>
+		<German>[NEWLINE][COLOR_FONT_CREAM]%s1:[COLOR_REVERT][NEWLINE]  %s2[NEWLINE]</German>
+		<Italian>[NEWLINE][COLOR_FONT_CREAM]%s1:[COLOR_REVERT][NEWLINE]  %s2[NEWLINE]</Italian>
+		<Spanish>[NEWLINE][COLOR_FONT_CREAM]%s1:[COLOR_REVERT][NEWLINE]  %s2[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_FF_POINTS</Tag>
+		<English>[COLOR_WHITE]  %d1/%d2%F3[COLOR_REVERT]</English>
+		<French>[COLOR_WHITE]  %d1/%d2%F3[COLOR_REVERT]</French>
+		<German>[COLOR_WHITE]  %d1/%d2%F3[COLOR_REVERT]</German>
+		<Italian>[COLOR_WHITE]  %d1/%d2%F3[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_WHITE]  %d1/%d2%F3[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TIMETEXT_CLOCK</Tag>
+		<English>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Time:[COLOR_REVERT] %s1</English>
+		<French>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Heure :[COLOR_REVERT] %s1</French>
+		<German>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Uhrzeit:[COLOR_REVERT] %s1</German>
+		<Italian>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Time:[COLOR_REVERT] %s1</Italian>
+		<Spanish>[NEWLINE][NEWLINE][COLOR_FONT_CREAM]Time:[COLOR_REVERT] %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
+		<English>Shift units by one row</English>
+		<French>D&#233;caler les unit&#233;s d'une rang&#233;e</French>
+		<German>Einheiten um eine Reihe verschieben</German>
+		<Italian>Shift units by one row</Italian>
+		<Spanish>Shift units by one row</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GOTO_MENU</Tag>
+		<English>Go To Mode (City Selection)</English>
+		<French>Aller &#224; (Choisir une ville)</French>
+		<German>Gehe-zu-Modus (Stadtliste)</German>
+		<Italian>Go To Mode (City Selection)</Italian>
+		<Spanish>Go To Mode (City Selection)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GOTO_MENU_HELP</Tag>
+		<English>Order the selected unit to a city choosen from a menu</English>
+		<English>Ordonne &#224; l'unit&#233; s&#233;lection&#233;e d'aller &#224; la colonie choisie parmi une liste</English>
+		<German>&#214;ffnet ein Men&#252;, mit dem man die gew&#228;hlte Einheit zu einer bestimmten Stadt schicken kann</German>
+		<English>Order the selected unit to a city choosen from a menu</English>
+		<English>Order the selected unit to a city choosen from a menu</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GOTO_MENU_TITLE</Tag>
+		<English>Select destination</English>
+		<French>Assigner la destination</French>
+		<German>Zielsiedlung w&#228;hlen</German>
+		<Italian>Select destination</Italian>
+		<Spanish>Select destination</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GOTO_MENU_SELECTION</Tag>
+		<English>%s1  (%d2)</English>
+		<French>%s1  (%d2)</French>
+		<German>%s1  (%d2)</German>
+		<Italian>%s1  (%d2)</Italian>
+		<Spanish>%s1  (%d2)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_IGNORE_DANGER</Tag>
+		<English>Ignore danger</English>
+		<French>Ignorer les dangers</French>
+		<German>Feinde in Sichtweite ignorieren</German>
+		<Italian>Ignore danger</Italian>
+		<Spanish>Ignore danger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_IGNORE_DANGER_HELP</Tag>
+		<English>Ignore danger</English>
+		<French>L'unit&#233; ne s'arr&#234;te pas, m&#234;me si un ennemi est en vue</French>
+		<German>Einheit wird nicht stoppen, wenn ein Feind in Sichtweite ger&#228;t</German>
+		<Italian>Ignore danger</Italian>
+		<Spanish>Ignore danger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE</Tag>
+		<English>Transport routes:</English>
+		<French>Route commerciale :</French>
+		<German>Liste verf&#252;gbarer Transportrouten</German>
+		<Italian>Trade routes:</Italian>
+		<Spanish>Trade routes:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_NEW_ROUTE</Tag>
+		<English>Create new route:</English>
+		<French>Cr&#233;er une nouvelle route commerciale :</French>
+		<German>Neue Transportroute erstellen:</German>
+		<Italian>Create new route:</Italian>
+		<Spanish>Create new route:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_YIELD_TABLE</Tag>
+		<English>Yield types:</English>
+		<French>Ressource :</French>
+		<German>Warentyp:</German>
+		<Italian>Yield types:</Italian>
+		<Spanish>Yield types:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE</Tag>
+		<English>Source city:</English>
+		<French>Provenance :</French>
+		<German>Exportsiedlung:</German>
+		<Italian>Source city:</Italian>
+		<Spanish>Source city:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_TABLE</Tag>
+		<English>Destination city:</English>
+		<French>Destination :</French>
+		<German>Importsiedlung:</German>
+		<Italian>Destination city:</Italian>
+		<Spanish>Destination city:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_LOAD_GROUP_TABLE</Tag>
+		<English>Load Group:</English>
+		<French>Groupe de Route :</French>
+		<German>Gruppe Laden:</German>
+		<Italian>Gruppo di Carico:</Italian>
+		<Spanish>Grupo de Carga:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HELP_LOAD_TRADE_GROUP</Tag>
+		<English> (click to load)</English>
+		<French> cliquer pour charger</French>
+		<German> Mausklick zu laden</German>
+		<Italian> clicca per caricare</Italian>
+		<Spanish> clic para cargar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_DELETE_GROUP_TABLE</Tag>
+		<English>Delete Group:</English>
+		<French>Supprimer Groupe :</French>
+		<German>Gruppe Entfernen:</German>
+		<Italian>Elimina Gruppo:</Italian>
+		<Spanish>Eliminar Grupo:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HELP_DELETE_TRADE_GROUP</Tag>
+		<English> (click to delete)</English>
+		<French> cliquer pour effacer</French>
+		<German> Mausklick zu l&#246;schen</German>
+		<Italian> clic per rimuovere</Italian>
+		<Spanish> clic para quitar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NAME_COL_TRADE_GROUP</Tag>
+		<English>Name</English>
+		<French>Nom</French>
+		<German>Name</German>
+		<Italian>Nome</Italian>
+		<Spanish>Nombre</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DESC_COL_TRADE_GROUP</Tag>
+		<English>Description</English>
+		<French>Description</French>
+		<German>Beschreibung</German>
+		<Italian>Descrizione</Italian>
+		<Spanish>Descripci&#243;n</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_YIELD_PREVIEW</Tag>
+		<English>Yields</English>
+		<French>Ressources</French>
+		<German>Waren</German>
+		<Italian>Yields</Italian>
+		<Spanish>Yields</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_PREVIEW</Tag>
+		<English>Export</English>
+		<French>Export</French>
+		<German>Export</German>
+		<Italian>Export</Italian>
+		<Spanish>Export</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_PREVIEW</Tag>
+		<English>Import</English>
+		<French>Import</French>
+		<German>Import</German>
+		<Italian>Import</Italian>
+		<Spanish>Import</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE_2</Tag>
+		<English>Name</English>
+		<French>Nom</French>
+		<German>Name</German>
+		<Italian>Name</Italian>
+		<Spanish>Name</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_3</Tag>
+		<English>from</English>
+		<French>de</French>
+		<German>von</German>
+		<Italian>from</Italian>
+		<Spanish>from</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_4</Tag>
+		<English>to</English>
+		<French>vers</French>
+		<German>nach</German>
+		<Italian>to</Italian>
+		<Spanish>to</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MISSING_YIELD</Tag>
+		<English>-</English>
+		<French>-</French>
+		<German>-</German>
+		<Italian>-</Italian>
+		<Spanish>-</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MISSING_CITY</Tag>
+		<English>-</English>
+		<French>-</French>
+		<German>-</German>
+		<Italian>-</Italian>
+		<Spanish>-</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_CLEAR_SELECTION_HELP</Tag>
+		<English>Remove selection</English>
+		<French>Annuler la s&#233;lection</French>
+		<German>Auswahl l&#246;schen</German>
+		<Italian>Remove selection</Italian>
+		<Spanish>Remove selection</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_SELECT_ROUTES_HELP</Tag>
+		<English>Activate all shown trade routes</English>
+		<French>Activer toutes les routes commerciales</French>
+		<German>Alle Transportrouten dieser Liste der Einheit zuweisen</German>
+		<Italian>Activate all shown trade routes</Italian>
+		<Spanish>Activate all shown trade routes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_DESELECT_ROUTES_HELP</Tag>
+		<English>Deactivate all shown trade routes</English>
+		<French>D&#233;sactiver toutes les routes commerciales</French>
+		<German>Alle derzeit zugewiesenen Transportrouten f&#252;r diese Einheit deaktivieren</German>
+		<Italian>Deactivate all shown trade routes</Italian>
+		<Spanish>Deactivate all shown trade routes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IGNORE_DANGER_HELP</Tag>
+		<English>Ignore danger</English>
+		<French>Ignorer les dangers</French>
+		<German>Einheit h&#228;lt derzeit an, wenn ein Feind in Sichtweite ger&#228;t (klicken, um das zu &#228;ndern)</German>
+		<Italian>Ignore danger</Italian>
+		<Spanish>Ignore danger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_CANCEL_IGNORE_DANGER_HELP</Tag>
+		<English>Cancel ignore danger</English>
+		<French>Annuler l'ordre d'ignorer les dangers</French>
+		<German>Einheit h&#228;lt nicht derzeit an, wenn ein Feind in Sichtweite ger&#228;t (klicken, um das zu &#228;ndern)</German>
+		<Italian>Cancel ignore danger</Italian>
+		<Spanish>Cancel ignore danger</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_ADD_SELECTION_HELP</Tag>
+		<English>Add selection as new trade route</English>
+		<French>Ajouter la s&#233;lection en tant que nouvelle route commerciale</French>
+		<German>Diese Transportroute best&#228;tigen und f&#252;r Transporteinheiten zur Verf&#252;gung stellen</German>
+		<Italian>Add selection as new trade route</Italian>
+		<Spanish>Add selection as new trade route</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_RETURN_HELP</Tag>
+		<English>Return to trade routes main view</English>
+		<French>Retourner au menu principal des routes commerciales</French>
+		<German>Zur Routen&#252;bersicht zur&#252;ckkehren</German>
+		<Italian>Return to trade routes main view</Italian>
+		<Spanish>Return to trade routes main view</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_HELP_HELP</Tag>
+		<English>: Help</English>
+		<French>: Aide</French>
+		<German>: Anleitung</German>
+		<Italian>: Help</Italian>
+		<Spanish>: Help</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_YIELD_HELP</Tag>
+		<English>Select a yield type</English>
+		<French>S&#233;lectionner une ressource</French>
+		<German>Warentyp f&#252;r neue Transportroute ausw&#228;hlen</German>
+		<Italian>Select a yield type</Italian>
+		<Spanish>Select a yield type</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_HELP</Tag>
+		<English>Select an export city</English>
+		<French>S&#233;lectionner une colonie exportatrice</French>
+		<German>Exportsiedlung f&#252;r neue Transportroute ausw&#228;hlen (Mindestbest&#228;nde von Waren, die nicht abtransportiert werden sollen, lassen sich vor Ort im Siedlungsbildschirm einstellen)</German>
+		<Italian>Select an export city</Italian>
+		<Spanish>Select an export city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_HELP</Tag>
+		<English>Select an import city</English>
+		<French>S&#233;lectionner une colonie importatrice</French>
+		<German>Importsiedlung f&#252;r neue Transportroute ausw&#228;hlen</German>
+		<Italian>Select an import city</Italian>
+		<Spanish>Select an import city</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SAIL</Tag>
+		<English>Sail to the new world</English>
+		<French>Cap sur le nouveau monde</French>
+		<German>Setzt die Segel!</German>
+		<Italian>Sail to the new world</Italian>
+		<Spanish>Sail to the new world</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SAIL_EAST</Tag>
+		<English>East</English>
+		<French>Atlantique</French>
+		<German>Atlantik</German>
+		<Italian>East</Italian>
+		<Spanish>East</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SAIL_WEST</Tag>
+		<English>West</English>
+		<French>Pacifique</French>
+		<German>Pazifik</German>
+		<Italian>West</Italian>
+		<Spanish>West</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SAIL_EAST_MESSAGE</Tag>
+		<English>New world - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</English>
+		<French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Atlantique[COLOR_REVERT]</French>
+		<German>Kurs [COLOR_HIGHLIGHT_TEXT]Atlantik[COLOR_REVERT]</German>
+		<Italian>New world - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</Italian>
+		<Spanish>New world - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SAIL_WEST_MESSAGE</Tag>
+		<English>New world - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</English>
+		<French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Pacifique[COLOR_REVERT]</French>
+		<German>Kurs [COLOR_HIGHLIGHT_TEXT]Pazifik[COLOR_REVERT]</German>
+		<Italian>New world - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</Italian>
+		<Spanish>New world - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SELL_LABEL</Tag>
+		<English>Sell your ship?</English>
+		<French>Vendre votre bateau ?</French>
+		<German>Schiff verkaufen?</German>
+		<Italian>Sell your ship?</Italian>
+		<Spanish>Sell your ship?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SELL_MESSAGE</Tag>
+		<English>That floating coffin you call a %s1? Well, I'll give you %d2[ICON_GOLD].</English>
+		<French>Ce raffiot que vous appelez %s1 ? Et bien ... je vous en donne %d2[ICON_GOLD].</French>
+		<German>Diesen morschen Kahn nennt ihr %s1? Nun, %d2[ICON_GOLD] seien Euch gew&#228;hrt.</German>
+		<Italian>That floating coffin you call a %s1? Well, I'll give you %d2[ICON_GOLD].</Italian>
+		<Spanish>That floating coffin you call a %s1? Well, I'll give you %d2[ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SELL_SHORT</Tag>
+		<English>Sell your %s1 for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</English>
+		<French>Vendre votre %s1 pour [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD] ?</French>
+		<German>%s1 f&#252;r [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD] verkaufen?</German>
+		<Italian>Sell your %s1 for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</Italian>
+		<Spanish>Sell your %s1 for [COLOR_YELLOW]%d2[COLOR_REVERT][ICON_GOLD]?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_BOYCOTT_LABEL</Tag>
+		<English>Lift that boycott?</English>
+		<French>Lever ce boycott ?</French>
+		<German>Boykott aufheben?</German>
+		<Italian>Lift that boycott?</Italian>
+		<Spanish>Lift that boycott?</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_BOYCOTT_MESSAGE</Tag>
+		<English>Pay us %d1[ICON_GOLD] and you can trade with %s2 again.</English>
+		<French>Offrez nous %d1[ICON_GOLD] et vous pourrez commercer avec %s2 de nouveau.</French>
+		<German>Zahlt Uns %d1[ICON_GOLD] und Ihr d&#252;rft wieder %s2 verkaufen.</German>
+		<Italian>Pay us %d1[ICON_GOLD] and you can trade with %s2 again.</Italian>
+		<Spanish>Pay us %d1[ICON_GOLD] and you can trade with %s2 again.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_WAREHOUSE_INFO</Tag>
+		<English>%s1 - warehouse (max %d2):</English>
+		<French>%s1 - entrep&#244;t d'une capacit&#233; maximale de %d2:</French>
+		<German>%s1 - Warenlager (max %d2):</German>
+		<Italian>%s1 - warehouse (max %d2):</Italian>
+		<Spanish>%s1 - warehouse (max %d2):</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SELECT_DESTINATION</Tag>
+		<English>Select your destination</English>
+		<French>Choisir votre destination</French>
+		<German>Ziel ausw&#228;hlen</German>
+		<Italian>Select your destination</Italian>
+		<Spanish>Select your destination</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_PREVIEW_MODE</Tag>
+		<English>Switch preview mode</English>
+		<French>Afficher la vue externe du port d'arriv&#233;e</French>
+		<German>Stadtvorschau an/aus</German>
+		<Italian>Switch preview mode</Italian>
+		<Spanish>Switch preview mode</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_DIALOG_ACCEPT</Tag>
+		<English>Great! Thank you.</English>
+		<French>Merveilleux ! Merci.</French>
+		<German>Gro&#223;z&#252;gig! Habt Dank.</German>
+		<Italian>Great! Thank you.</Italian>
+		<Spanish>Great! Thank you.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_DIALOG_DECLINE</Tag>
+		<English>Maybe later.</English>
+		<French>Plus tard ...</French>
+		<German>Vorerst nicht.</German>
+		<Italian>Maybe later.</Italian>
+		<Spanish>Maybe later.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_NEAR_CITY</Tag>
+		<English>near %s1</English>
+		<French>aux abords de %s1</French>
+		<German>bei %s1</German>
+		<Italian>near %s1</Italian>
+		<Spanish>near %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TO_CITY</Tag>
+		<English>to [COLOR_YELLOW]%s1[COLOR_REVERT]</English>
+		<French>puis mouillage &#224; [COLOR_YELLOW]%s1[COLOR_REVERT]</French>
+		<German>nach [COLOR_YELLOW]%s1[COLOR_REVERT]</German>
+		<Italian>to [COLOR_YELLOW]%s1[COLOR_REVERT]</Italian>
+		<Spanish>to [COLOR_YELLOW]%s1[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_ROUTE</Tag>
+		<English>[NEWLINE]%s1 route %s2</English>
+		<French>[NEWLINE]%s1 %s2</French>
+		<German>[NEWLINE]%s1 Route %s2</German>
+		<Italian>[NEWLINE]%s1 route %s2</Italian>
+		<Spanish>[NEWLINE]%s1 route %s2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_SHOW_TRADE_LOG</Tag>
+		<English>Show trade log</English>
+		<French>Afficher le registre</French>
+		<German>Zeige Logbuch</German>
+		<Italian>Show trade log</Italian>
+		<Spanish>Show trade log</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_HIDE_TRADE_LOG</Tag>
+		<English>Hide trade log</English>
+		<French>Cacher le registre</French>
+		<German>Verberge Logbuch</German>
+		<Italian>Hide trade log</Italian>
+		<Spanish>Hide trade log</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE_LOG_1</Tag>
+		<English>Yield</English>
+		<French>Ressource</French>
+		<German>Ware</German>
+		<Italian>Yield</Italian>
+		<Spanish>Yield</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE_LOG_2</Tag>
+		<English>Action</English>
+		<French>Action</French>
+		<German>Aktion</German>
+		<Italian>Action</Italian>
+		<Spanish>Action</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE_LOG_3</Tag>
+		<English>[ICON_GOLD]</English>
+		<French>[ICON_GOLD]</French>
+		<German>[ICON_GOLD]</German>
+		<Italian>[ICON_GOLD]</Italian>
+		<Spanish>[ICON_GOLD]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE_LOG_4</Tag>
+		<English>Tax</English>
+		<French>Taxes</French>
+		<German>Tax</German>
+		<Italian>Tax</Italian>
+		<Spanish>Tax</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE_LOG_SOLD</Tag>
+		<English>sold</English>
+		<French>vente</French>
+		<German>verkauft</German>
+		<Italian>sold</Italian>
+		<Spanish>sold</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EU_TRADE_LOG_BOUGHT</Tag>
+		<English>bought</English>
+		<French>achat</French>
+		<German>gekauft</German>
+		<Italian>bought</Italian>
+		<Spanish>bought</Spanish>
+	</TEXT>
+</Civ4GameText>

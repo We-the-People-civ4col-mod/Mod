@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Route Infos -->
+<Civ4RouteInfos xmlns="x-schema:CIV4MiscSchema.xml">
+	<RouteInfos>
+		<RouteInfo>
+			<Type>ROUTE_ROAD</Type>
+			<Description>TXT_KEY_ROUTE_ROAD</Description>
+			<iValue>1</iValue>
+			<iAdvancedStartCost>12</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMovement>30</iMovement>
+			<iFlatMovement>30</iFlatMovement>
+			<Yields/>
+			<Button>Art/Interface/Buttons/Builds/BuildRoad.dds</Button>
+		</RouteInfo>
+		<RouteInfo>
+			<Type>ROUTE_PLASTERED_ROAD</Type>
+			<Description>TXT_KEY_ROUTE_PLASTERED_ROAD</Description>
+			<iValue>2</iValue>
+			<iAdvancedStartCost>20</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMovement>20</iMovement>
+			<iFlatMovement>20</iFlatMovement>
+			<Yields/>
+			<Button>,Art/colonization_atlas_buildings.dds,5,12</Button>
+		</RouteInfo>
+		<RouteInfo>
+			<Type>ROUTE_RAILROAD</Type>
+			<Description>TXT_KEY_ROUTE_RAILROAD</Description>
+			<iValue>3</iValue>
+			<iAdvancedStartCost>30</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iMovement>15</iMovement>
+			<iFlatMovement>15</iFlatMovement>
+			<Yields/>
+			<Button>Art/Interface/Buttons/Builds/Railroad.dds</Button>
+		</RouteInfo>
+	</RouteInfos>
+</Civ4RouteInfos>

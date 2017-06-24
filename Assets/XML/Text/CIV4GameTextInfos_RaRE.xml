@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_DLL_FLAG_ERROR</Tag>
+		<English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</English>
+		<French>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</French>
+		<German>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</German>
+		<Italian>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</Italian>
+		<Spanish>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AUTO_TRADEROUTE_CLEAR_ALL</Tag>
+		<English>Clear All</English>
+		<French>Clear All</French>
+		<German>Clear All</German>
+		<Italian>Clear All</Italian>
+		<Spanish>Clear All</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AUTO_TRADEROUTE_IMPORT_ALL</Tag>
+		<English>Import All Goods</English>
+		<French>Import All Goods</French>
+		<German>Import All Goods</German>
+		<Italian>Import All Goods</Italian>
+		<Spanish>Import All Goods</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_AUTO_TRADEROUTE_AUTO_EXPORT_ALL</Tag>
+		<English>Auto Export All Goods</English>
+		<French>Auto Export All Goods</French>
+		<German>Auto Export All Goods</German>
+		<Italian>Auto Export All Goods</Italian>
+		<Spanish>Auto Export All Goods</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_AUTO_EXPORT_HELP</Tag>
+		<English>Automatic turn export on and off at turn start[NEWLINE]A high number of traderoutes slows down the game and this feature allows disabling traderoutes when there is nothing to transport.[NEWLINE]It should be remembered that restarting exports will not take effect until the next turn. This mean it isn't well suited for cases where you both import and export at the same time.</English>
+		<French>Automatic turn export on and off at turn start[NEWLINE]A high number of traderoutes slows down the game and this feature allows disabling traderoutes when there is nothing to transport.[NEWLINE]It should be remembered that restarting exports will not take effect until the next turn. This mean it isn't well suited for cases where you both import and export at the same time.</French>
+		<German>Automatic turn export on and off at turn start[NEWLINE]A high number of traderoutes slows down the game and this feature allows disabling traderoutes when there is nothing to transport.[NEWLINE]It should be remembered that restarting exports will not take effect until the next turn. This mean it isn't well suited for cases where you both import and export at the same time.</German>
+		<Italian>Automatic turn export on and off at turn start[NEWLINE]A high number of traderoutes slows down the game and this feature allows disabling traderoutes when there is nothing to transport.[NEWLINE]It should be remembered that restarting exports will not take effect until the next turn. This mean it isn't well suited for cases where you both import and export at the same time.</Italian>
+		<Spanish>Automatic turn export on and off at turn start[NEWLINE]A high number of traderoutes slows down the game and this feature allows disabling traderoutes when there is nothing to transport.[NEWLINE]It should be remembered that restarting exports will not take effect until the next turn. This mean it isn't well suited for cases where you both import and export at the same time.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_REDUCED_CITY_DISTANCE</Tag>
+		<English>Reduced Colony Distance</English>
+		<French>Reduced Colony Distance</French>
+		<German>Reduzierte Distanz zwischen Kolonien</German>
+		<Italian>Reduced Colony Distance</Italian>
+		<Spanish>Reduced Colony Distance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAME_OPTION_REDUCED_CITY_DISTANCE_HELP</Tag>
+		<English>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</English>
+		<French>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</French>
+		<German>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</German>
+		<Italian>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Italian>
+		<Spanish>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_BECOMES_STRING</Tag>
+		<English>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</English>
+		<French>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</French>
+		<German>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</German>
+		<Italian>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</Italian>
+		<Spanish>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_CAN_MOVE_PEAK</Tag>
+		<English>[ICON_BULLET]Can move on mountain peaks</English>
+		<French>[ICON_BULLET]Can move on mountain peaks</French>
+		<German>[ICON_BULLET]Kann Berge &#252;berqueren</German>
+		<Italian>[ICON_BULLET]Can move on mountain peaks</Italian>
+		<Spanish>[ICON_BULLET]Can move on mountain peaks</Spanish>
+	</TEXT>
+</Civ4GameText>

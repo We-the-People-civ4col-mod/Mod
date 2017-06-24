@@ -1,0 +1,23 @@
+How do I install the mod ?
+
+1) First make sure that your colonization game is patched to official patch 1.01f.
+(Everything else will cause heavy problems.)
+
+2) Like any other mod, copy Religion_and_Revolution (this folder) to your MODS folder.
+
+The mod will already work with the 2 plot city radius WITHOUT any further changes. 
+
+3) Install "1 plot city radius" feature:
+
+In case you like the older 1 plot city radius version do the following:
+
+Religion and Revolution 2.6 ONE CITY PLOT requires amending of one file before it works properly.
+
+a) copy the file "CvGameCoreDLL.dll" from the folder "1 city plot" into the folder /mods/Religion_and_Revolution/Assets and overwrite the existing file.
+b) Play and enjoy 1 plot city radius!
+
+Note: Savegames aren't compatible between the two DLL files. Switching frequently will cause issues.
+
+Multiplayer should work, though odd things will happen if people don't use the same DLL file.
+
+For changing back to the 2 plot city radius please do the same step with the file in the folder "2 city plot"

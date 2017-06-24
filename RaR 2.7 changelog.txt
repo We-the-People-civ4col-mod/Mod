@@ -1,0 +1,110 @@
+Religion and Revolution: Version 2.7 // Changelog
+
+- Change of some unit graphics
+
+
+
+
+
+
+
+
+Religion and Revolution: Version 2.6 // Changelog
+
+PLEASE NOTE THAT Version 2.6 IS NOT SAVEGAME COMPATIBLE WITH PREVIOUS VERSIONS!
+
+- Game Concepts / Texts for military units updated
+- Some minor bugs and typos fixed
+- Some new events implemented
+- New Unit "Political Refugee" implemented (can be educated very fast in schools).
+- Corrected promotion bombardment and added promotion high-sea fisherman 
+- Removed hardcoding for which units can move into peaks (can be edited in XML now) - by Nightinggale
+- DLL for 2 Plot City Radius corrected / works fine now for both 1 and 2 Plot City radius, 2 Plot is standard
+- Slightly changed required blades for cavalry 
+- Some small changes order of units in Europe Screen and price for Slaves 
+- Improvement of Peak graphic 
+- Implementation of Improvement "Sawmill" 
+- Bugfix military support by King fixed - King grants only military units now - diplomacy feature again works as intended.
+- Some balancing
+- Some small updates to some PublicMaps 
+
+
+Religion and Revolution: Version 2.5.1 // Changelog
+
+Bug Fixes: 
+- Freeze Bug fixed (by Nighttinggale)
+- European Line Infantry can now get promotions
+- Some typing errors fixed
+- 1 City Plot Radius bug fixed
+- Some minor bugs fixed
+
+
+Religion and Revolution: Version 2.5 // Changelog
+
+Units & Professions:
+- specialist unit helebardier: unit deleted
+- specialist unit townguard: unit deleted
+- profession helebardier: deleted
+- profession town guard: deleted
+- Promotion "Promotion Homeland Guard 1-3" implemented ((new tag "<iDomesticBonus>0</iDomesticBonus>")
+- correspoding "Domestic Defense Bonus" for units added (new tag "<iDomesticBonus>0</iDomesticBonus>")
+- new feature: a new feature has been implemented that is based on the "[MODCOMP] Not Allow Specified Professions per Unit" by Kailric which allows to deny professions for units - e.g. if you want that the governor cannot take the profession as a lumberjack - this is your feature!
+
+Other changes:
+- city graphic portugal early: updated
+- improvement farm: graphics modified
+- specialist butcher: unit graphic modified
+- unit graphic settler militia modified
+- unit graphic african slave modified
+- unit graphic settler modified (female settler added)
+- ingame map graphic slightly modified
+- graphic for Port Royal changed (new graphic also by Willi Tell)
+
+Founding Fathers
+- Amendment of the appearance of a lot of founding fathers to a more reasonable order considering the requirements of the early, mid and late game
+
+Traits
+- New Civilization Trait "Agricultural" for Sweden (Swedish civilization trait changed from Forresters to Agricultural):
+->+10% Food production in all settlements
+->-10% Food required for population growth
+- New Civilization Trait "Imperialist" for Russia (Russian civilization trait changed from Hunt tradition to Imperialist):
+Imperialist (Russian civilization trait)
+-> Free promotion: Homeland Guard I (+15% Combat Strength inside your Cultural Borders)
+-> 25% Culture required for Territorial Expansion
+The traits of Sweden and Russia have been changed to focuss a bit more on majaor aspects of the game.
+- Amendment Trait "Undemanding": Food bonus no longer fixed at 2 for each settlement. It now scales with the bell-producing building that is present in the city (1 Food per Basecamp, 2 per Village Hall, etc.)
+- General balancing and amendments of traits for the other European nations and overhaul of the traits for the native nations considering their diversity, historic situation, behaviour and - of course - the game balance. 
+
+Balancing
+- units: terrain boni and mali: decreased
+- units: combat strength of all units modified
+- AIWeight for some buildings modified (AI now handles buildings more effectively and produces weapons)
+- a lot of balancing changes
+
+
+
+Features and Bugfixes imported from RaR Extended (Nightinggale's mod):
+
+RaRE 2.5.2
+Features:
+- added yield change preview when mouse hovering pioneers change terrain buttons (drain marsh)
+- added yield change preview when mouse hovering pioneers change feature buttons (plant forest)
+Fixes:
+- Crash when AI investigated building settlements on the edge of the map when the "Reduced colony distance" game option was on
+
+RaRE 2.5.1
+Fixes:
+- Autoexport wasn't saved correctly
+- Freeze when an AI transport tried to load a yield, which was required by the building currently under construction
+
+RaRE 2.5
+Features: (all done by Nightinggale)
+- added ability to switch between 1 and 2 plot radius for colony catchment area (change of CvGameCoreDLL.dll required in the file directory of the mod)
+- feeder service threshold change to supply construction
+- import/export window now has buttons to set and clear multiple yields with one click (like clear all)
+- autoexport to turn off export when there is nothing to export (no real gameplay change, but should prevent a late game slowdown)
+Fixes:
+- export threshold is no longer capped at 8 bit/255 (wladyslaw17)
+- barbarian pirates now only spawn in areas with access to Europe (wladyslaw17)
+- fixed issue where the feature had to be removed to allow building certain improvements, such as vineyards (Nightinggale)
+- fixed broken hotkeys due to command order (ray)

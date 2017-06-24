@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Jesse Smith (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Culture Level Infos -->
+<Civ4CultureLevelInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<CultureLevelInfos>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_NONE</Type>
+			<Description>TXT_KEY_CULTURELEVEL_NONE</Description>
+			<iThreshold>0</iThreshold>
+		</CultureLevelInfo>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_POOR</Type>
+			<Description>TXT_KEY_CULTURELEVEL_POOR</Description>
+			<iThreshold>0</iThreshold>
+		</CultureLevelInfo>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_FLEDGLING</Type>
+			<Description>TXT_KEY_CULTURELEVEL_FLEDGLING</Description>
+			<iThreshold>100</iThreshold>
+		</CultureLevelInfo>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_DEVELOPING</Type>
+			<Description>TXT_KEY_CULTURELEVEL_DEVELOPING</Description>
+			<iThreshold>300</iThreshold>
+		</CultureLevelInfo>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_REFINED</Type>
+			<Description>TXT_KEY_CULTURELEVEL_REFINED</Description>
+			<iThreshold>1000</iThreshold>
+		</CultureLevelInfo>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_INFLUENTIAL</Type>
+			<Description>TXT_KEY_CULTURELEVEL_INFLUENTIAL</Description>
+			<iThreshold>10000</iThreshold>
+		</CultureLevelInfo>
+		<CultureLevelInfo>
+			<Type>CULTURELEVEL_LEGENDARY</Type>
+			<Description>TXT_KEY_CULTURELEVEL_LEGENDARY</Description>
+			<iThreshold>100000</iThreshold>
+		</CultureLevelInfo>
+	</CultureLevelInfos>
+</Civ4CultureLevelInfo>

@@ -1,0 +1,318 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Event Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="OtherPlayerPopup" content="textOnly"/>
+	<ElementType name="LocalInfoText" content="textOnly"/>
+	<ElementType name="QuestFailText" content="textOnly"/>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="bQuest" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTutorial" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSinglePlayer" content="textOnly" dt:type="boolean"/>
+	<ElementType name="EventArt" content="textOnly"/>
+	<ElementType name="iMinTreasury" content="textOnly" dt:type="int"/>
+	<ElementType name="iGold" content="textOnly" dt:type="int"/>
+	<ElementType name="iRandomGold" content="textOnly" dt:type="int"/>
+	<ElementType name="iCulture" content="textOnly" dt:type="int"/>
+	<ElementType name="iHealth" content="textOnly" dt:type="int"/>
+	<ElementType name="Civic" content="textOnly"/>
+	<ElementType name="iMinPopulation" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxPopulation" content="textOnly" dt:type="int"/>
+	<ElementType name="iPopulationChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinMapLandmass" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinOurLandmass" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxOurLandmass" content="textOnly" dt:type="int"/>
+	<ElementType name="MinDifficulty" content="textOnly"/>
+	<ElementType name="UnitsRequired" content="eltOnly">
+		<element type="UnitClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitClass" content="textOnly"/>
+	<ElementType name="bUnitsOnPlot" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOwnPlot" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iNumUnits" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumUnitsGlobal" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumFreeUnits" content="textOnly" dt:type="int"/>
+	<ElementType name="bDisbandUnit" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iUnitDamagedWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnitDistanceWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnitExperienceWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnitExperience" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnitImmobileTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="UnitPromotion" content="textOnly"/>
+	<ElementType name="UnitCombat" content="textOnly"/>
+	<ElementType name="UnitCombatPromotion" content="eltOnly">
+		<element type="UnitCombat"/>
+		<element type="UnitPromotion"/>
+	</ElementType>
+	<ElementType name="UnitCombatPromotions" content="eltOnly">
+		<element type="UnitCombatPromotion" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitClassPromotion" content="eltOnly">
+		<element type="UnitClass"/>
+		<element type="UnitPromotion"/>
+	</ElementType>
+	<ElementType name="UnitClassPromotions" content="eltOnly">
+		<element type="UnitClassPromotion" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitName" content="textOnly"/>
+	<ElementType name="iRevoltTurns" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinPillage" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxPillage" content="textOnly" dt:type="int"/>
+	<ElementType name="iFood" content="textOnly" dt:type="int"/>
+	<ElementType name="iFoodPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="bTeam" content="textOnly" dt:type="int"/>
+	<ElementType name="bRecurring" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGlobal" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPickPlayer" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoldToPlayer" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOtherPlayerWar" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOtherPlayerAI" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOtherPlayerNative" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOtherPlayerPlayable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iOtherPlayerShareBorders" content="textOnly" dt:type="int"/>
+	<ElementType name="bPickCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPickOtherPlayerCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDeclareWar" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bShowPlot" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iCityFoodWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="PythonCallback" content="textOnly"/>
+	<ElementType name="PythonExpireCheck" content="textOnly"/>
+	<ElementType name="PythonCanDo" content="textOnly"/>
+	<ElementType name="PythonCanDoCity" content="textOnly"/>
+	<ElementType name="PythonCanDoUnit" content="textOnly"/>
+	<ElementType name="PythonHelp" content="textOnly"/>
+	<ElementType name="iWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iAIValue" content="textOnly" dt:type="int"/>
+	<ElementType name="iGenericParameter1" content="textOnly" dt:type="int"/>
+	<ElementType name="iGenericParameter2" content="textOnly" dt:type="int"/>
+	<ElementType name="iGenericParameter3" content="textOnly" dt:type="int"/>
+	<ElementType name="iGenericParameter4" content="textOnly" dt:type="int"/>
+	<ElementType name="iPercentGamesActive" content="textOnly" dt:type="int"/>
+	<ElementType name="bProbabilityUnitMultiply" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bProbabilityBuildingMultiply" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iOurAttitudeModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iAttitudeModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iTheirEnemyAttitudeModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="BuildingsRequired" content="eltOnly">
+		<element type="BuildingClass" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildingClass" content="textOnly"/>
+	<ElementType name="iNumBuildings" content="textOnly" dt:type="int"/>
+	<ElementType name="iBuildingChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumBuildingsGlobal" content="textOnly" dt:type="int"/>
+	<ElementType name="iNumPlotsRequired" content="textOnly" dt:type="int"/>
+	<ElementType name="iPlotType" content="textOnly" dt:type="int"/>
+	<ElementType name="FeaturesRequired" content="eltOnly">
+		<element type="FeatureType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FeatureType" content="textOnly"/>
+	<ElementType name="iFeatureChange" content="textOnly" dt:type="int"/>
+	<ElementType name="TerrainsRequired" content="eltOnly">
+		<element type="TerrainType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TerrainType" content="textOnly"/>
+	<ElementType name="iTerrainChange" content="textOnly" dt:type="int"/>
+	<ElementType name="ImprovementsRequired" content="eltOnly">
+		<element type="ImprovementType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ImprovementType" content="textOnly"/>
+	<ElementType name="iImprovementChange" content="textOnly" dt:type="int"/>
+	<ElementType name="RoutesRequired" content="eltOnly">
+		<element type="RouteType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RouteType" content="textOnly"/>
+	<ElementType name="iRouteChange" content="textOnly" dt:type="int"/>
+	<ElementType name="BonusRevealed" content="textOnly"/>
+	<ElementType name="YieldType" content="textOnly"/>
+	<ElementType name="iExtraYield" content="textOnly" dt:type="int"/>
+	<ElementType name="PlotExtraYield" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iExtraYield"/>
+	</ElementType>
+	<ElementType name="PlotExtraYields" content="eltOnly">
+		<element type="PlotExtraYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BuildingExtraYield" content="eltOnly">
+		<element type="BuildingClass"/>
+		<element type="YieldType"/>
+		<element type="iExtraYield"/>
+	</ElementType>
+	<ElementType name="BuildingExtraYields" content="eltOnly">
+		<element type="BuildingExtraYield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iEventChance" content="textOnly" dt:type="int"/>
+	<ElementType name="EventChance" content="eltOnly">
+		<element type="Event"/>
+		<element type="iEventChance"/>
+	</ElementType>
+	<ElementType name="AdditionalEvents" content="eltOnly">
+		<element type="EventChance" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iEventTime" content="textOnly" dt:type="int"/>
+	<ElementType name="EventTime" content="eltOnly">
+		<element type="Event"/>
+		<element type="iEventTime"/>
+	</ElementType>
+	<ElementType name="EventTimes" content="eltOnly">
+		<element type="EventTime" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Text" content="textOnly"/>
+	<ElementType name="TriggerTexts" content="eltOnly">
+		<element type="TriggerText" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TriggerText" content="eltOnly">
+		<element type="Text"/>
+		<element type="Era"/>
+	</ElementType>
+	<ElementType name="Era" content="textOnly"/>
+	<ElementType name="WorldNewsTexts" content="eltOnly">
+		<element type="Text" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Event" content="textOnly"/>
+	<ElementType name="Events" content="eltOnly">
+		<element type="Event" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="PrereqEvents" content="eltOnly">
+		<element type="Event" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ClearEvents" content="eltOnly">
+		<element type="EventChance" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bPrereqEventPlot" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFrontPopup" content="textOnly" dt:type="boolean"/>
+	<ElementType name="EventTriggerInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="WorldNewsTexts"/>
+		<element type="TriggerTexts"/>
+		<element type="bTutorial"/>
+		<element type="bSinglePlayer"/>
+		<element type="EventArt"/>
+		<element type="iPercentGamesActive"/>
+		<element type="iWeight"/>
+		<element type="bProbabilityUnitMultiply"/>
+		<element type="bProbabilityBuildingMultiply"/>
+		<element type="Civic"/>
+		<element type="iMinTreasury"/>
+		<element type="iMinPopulation"/>
+		<element type="iMaxPopulation"/>
+		<element type="iMinMapLandmass"/>
+		<element type="iMinOurLandmass"/>
+		<element type="iMaxOurLandmass"/>
+		<element type="MinDifficulty"/>
+		<element type="UnitsRequired"/>
+		<element type="iNumUnits"/>
+		<element type="iNumUnitsGlobal"/>
+		<element type="iUnitDamagedWeight"/>
+		<element type="iUnitDistanceWeight"/>
+		<element type="iUnitExperienceWeight"/>
+		<element type="bUnitsOnPlot"/>
+		<element type="BuildingsRequired"/>
+		<element type="iNumBuildings"/>
+		<element type="iNumBuildingsGlobal"/>
+		<element type="iNumPlotsRequired"/>
+		<element type="bOwnPlot"/>
+		<element type="iPlotType"/>
+		<element type="FeaturesRequired"/>
+		<element type="TerrainsRequired"/>
+		<element type="ImprovementsRequired"/>
+		<element type="RoutesRequired"/>
+		<element type="Events"/>
+		<element type="PrereqEvents"/>
+		<element type="bPrereqEventPlot"/>
+		<element type="bRecurring"/>
+		<element type="bTeam"/>
+		<element type="bGlobal"/>
+		<element type="bPickPlayer"/>
+		<element type="bOtherPlayerWar"/>
+		<element type="bOtherPlayerAI"/>
+		<element type="bOtherPlayerNative"/>
+		<element type="bOtherPlayerPlayable"/>
+		<element type="iOtherPlayerShareBorders"/>
+		<element type="bPickCity"/>
+		<element type="bPickOtherPlayerCity"/>
+		<element type="bShowPlot"/>
+		<element type="bFrontPopup"/>
+		<element type="iCityFoodWeight"/>
+		<element type="PythonCanDo"/>
+		<element type="PythonCanDoCity"/>
+		<element type="PythonCanDoUnit"/>
+		<element type="PythonCallback"/>
+	</ElementType>
+	<ElementType name="EventTriggerInfos" content="eltOnly">
+		<element type="EventTriggerInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4EventTriggerInfos" content="eltOnly">
+		<element type="EventTriggerInfos" minOccurs="1" maxOccurs="1"/>
+	</ElementType>
+	<ElementType name="EventInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="LocalInfoText"/>
+		<element type="WorldNewsTexts"/>
+		<element type="OtherPlayerPopup"/>
+		<element type="QuestFailText"/>
+		<element type="bQuest"/>
+		<element type="bGlobal"/>
+		<element type="bTeam"/>
+		<element type="bPickCity"/>
+		<element type="bPickOtherPlayerCity"/>
+		<element type="bDeclareWar"/>
+		<element type="iGold"/>
+		<element type="bGoldToPlayer"/>
+		<element type="iRandomGold"/>
+		<element type="iCulture"/>
+		<element type="iHealth"/>
+		<element type="UnitClass"/>
+		<element type="iNumFreeUnits"/>
+		<element type="bDisbandUnit"/>
+		<element type="iUnitExperience"/>
+		<element type="iUnitImmobileTurns"/>
+		<element type="UnitPromotion"/>
+		<element type="UnitName"/>
+		<element type="UnitCombatPromotions"/>
+		<element type="UnitClassPromotions"/>
+		<element type="BuildingClass"/>
+		<element type="iBuildingChange"/>
+		<element type="BuildingExtraYields"/>
+		<element type="iRevoltTurns"/>
+		<element type="iMinPillage"/>
+		<element type="iMaxPillage"/>
+		<element type="iFood"/>
+		<element type="iFoodPercent"/>
+		<element type="FeatureType"/>
+		<element type="iFeatureChange"/>
+		<element type="ImprovementType"/>
+		<element type="iImprovementChange"/>
+		<element type="RouteType"/>
+		<element type="iRouteChange"/>
+		<element type="BonusRevealed"/>
+		<element type="PlotExtraYields"/>
+		<element type="iOurAttitudeModifier"/>
+		<element type="iAttitudeModifier"/>
+		<element type="iTheirEnemyAttitudeModifier"/>
+		<element type="iPopulationChange"/>
+		<element type="AdditionalEvents"/>
+		<element type="EventTimes"/>
+		<element type="ClearEvents"/>
+		<element type="PythonCallback"/>
+		<element type="PythonExpireCheck"/>
+		<element type="PythonCanDo"/>
+		<element type="PythonHelp"/>
+		<element type="Button"/>
+		<element type="iAIValue"/>
+		<element type="iGenericParameter1"/>
+		<element type="iGenericParameter2"/>
+		<element type="iGenericParameter3"/>
+		<element type="iGenericParameter4"/>
+	</ElementType>
+	<ElementType name="EventInfos" content="eltOnly">
+		<element type="EventInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4EventInfos" content="eltOnly">
+		<element type="EventInfos" minOccurs="1" maxOccurs="1"/>
+	</ElementType>
+</Schema>

@@ -1,0 +1,491 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Terrain Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Civilopedia" content="textOnly"/>
+	<ElementType name="Help" content="textOnly"/>
+	<ElementType name="YieldType" content="textOnly"/>
+	<ElementType name="iValue" content="textOnly" dt:type="int"/>
+	<ElementType name="Yields" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RiverYieldIncreases" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldIntegerPair" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iValue"/>
+	</ElementType>
+	<ElementType name="HillsYieldChanges" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bWater" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bImpassable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFound" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFoundCoast" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iMovement" content="textOnly" dt:type="int"/>
+	<ElementType name="iSeeFrom" content="textOnly" dt:type="int"/>
+	<ElementType name="iSeeThrough" content="textOnly" dt:type="int"/>
+	<ElementType name="iBuildModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iDefense" content="textOnly" dt:type="int"/>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="FootstepAudioType" content="textOnly"/>
+	<ElementType name="FootstepAudioScript" content="textOnly"/>
+	<ElementType name="FootstepSound" content="eltOnly">
+		<element type="FootstepAudioType" minOccurs="1"/>
+		<element type="FootstepAudioScript"/>
+	</ElementType>
+	<ElementType name="FootstepSounds" content="eltOnly">
+		<element type="FootstepSound" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="WorldSoundscapeAudioScript" content="textOnly"/>
+	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="TerrainInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Help" minOccurs="0"/>
+		<element type="ArtDefineTag"/>
+		<element type="Yields"/>
+		<element type="RiverYieldIncreases"/>
+		<element type="bWater"/>
+		<element type="bImpassable"/>
+		<element type="bFound"/>
+		<element type="bFoundCoast"/>
+		<element type="iMovement"/>
+		<element type="iSeeFrom"/>
+		<element type="iSeeThrough"/>
+		<element type="iBuildModifier"/>
+		<element type="iDefense"/>
+		<element type="Button"/>
+		<element type="FootstepSounds"/>
+		<element type="WorldSoundscapeAudioScript" minOccurs="0"/>
+		<element type="bGraphicalOnly"/>
+	</ElementType>
+	<ElementType name="TerrainInfos" content="eltOnly">
+		<element type="TerrainInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="bCargo" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bIsExportYield" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLivestock" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iBuyPriceLow" content="textOnly" dt:type="int"/>
+	<ElementType name="iBuyPriceHigh" content="textOnly" dt:type="int"/>
+	<ElementType name="iBuyPriceMin" content="textOnly" dt:type="int"/>
+	<ElementType name="iSellPriceDifference" content="textOnly" dt:type="int"/>
+	<ElementType name="iPriceChangeThreshold" content="textOnly" dt:type="int"/>
+	<ElementType name="iPriceCorrectionPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iEuropeVolumeAttrition" content="textOnly" dt:type="int"/>
+	<ElementType name="iAfricaBuyPriceLow" content="textOnly" dt:type="int"/>
+	<ElementType name="iAfricaBuyPriceHigh" content="textOnly" dt:type="int"/>
+	<ElementType name="iAfricaSellPriceDifference" content="textOnly" dt:type="int"/>
+	<ElementType name="iPortRoyalBuyPriceLow" content="textOnly" dt:type="int"/>
+	<ElementType name="iPortRoyalBuyPriceHigh" content="textOnly" dt:type="int"/>
+	<ElementType name="iPortRoyalSellPriceDifference" content="textOnly" dt:type="int"/>
+	<ElementType name="iNativeBuyPrice" content="textOnly" dt:type="int"/>
+	<ElementType name="iNativeSellPrice" content="textOnly" dt:type="int"/>
+	<ElementType name="iNativeConsumptionPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iNativeHappy" content="textOnly" dt:type="int"/>
+	<ElementType name="iHillsChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iPeakChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iLakeChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iCityChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinCity" content="textOnly" dt:type="int"/>
+	<ElementType name="iAIWeightPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iAIBaseValue" content="textOnly" dt:type="int"/>
+	<ElementType name="iNativeBaseValue" content="textOnly" dt:type="int"/>
+	<ElementType name="ColorType" content="textOnly"/>
+	<ElementType name="UnitClass" content="textOnly"/>
+	<ElementType name="iTextureIndex" content="textOnly" dt:type="int"/>
+	<ElementType name="iWaterTextureIndex" content="textOnly" dt:type="int"/>
+	<ElementType name="iPower" content="textOnly" dt:type="int"/>
+	<ElementType name="iAsset" content="textOnly" dt:type="int"/>
+	<ElementType name="Icon" content="textOnly"/>
+	<ElementType name="CombiIcon" content="textOnly"/>
+	<ElementType name="HighlightIcon" content="textOnly"/>
+	<ElementType name="YieldInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="bCargo"/>
+		<element type="bIsExportYield" minOccurs="0"/>
+		<element type="bLivestock" minOccurs="0"/>
+		<element type="iBuyPriceLow"/>
+		<element type="iBuyPriceHigh"/>
+		<element type="iBuyPriceMin"/>
+		<element type="iSellPriceDifference"/>
+		<element type="iPriceChangeThreshold"/>
+		<element type="iPriceCorrectionPercent"/>
+		<element type="iEuropeVolumeAttrition" minOccurs="0" maxOccurs="1"/>
+		<element type="iAfricaBuyPriceLow"/>
+		<element type="iAfricaBuyPriceHigh"/>
+		<element type="iAfricaSellPriceDifference"/>
+		<element type="iPortRoyalBuyPriceLow"/>
+		<element type="iPortRoyalBuyPriceHigh"/>
+		<element type="iPortRoyalSellPriceDifference"/>
+		<element type="iNativeBuyPrice"/>
+		<element type="iNativeSellPrice"/>
+		<element type="iNativeConsumptionPercent"/>
+		<element type="iNativeHappy"/>
+		<element type="iHillsChange"/>
+		<element type="iPeakChange"/>
+		<element type="iLakeChange"/>
+		<element type="iCityChange"/>
+		<element type="iMinCity"/>
+		<element type="iAIWeightPercent"/>
+		<element type="iAIBaseValue"/>
+		<element type="iNativeBaseValue"/>
+		<element type="iPower"/>
+		<element type="iAsset"/>
+		<element type="ColorType"/>
+		<element type="UnitClass"/>
+		<element type="iTextureIndex"/>
+		<element type="iWaterTextureIndex"/>
+		<element type="Icon"/>
+		<element type="CombiIcon" minOccurs="0"/>
+		<element type="HighlightIcon"/>
+		<element type="Button"/>
+	</ElementType>
+	<ElementType name="YieldInfos" content="eltOnly">
+		<element type="YieldInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FeatureType" content="textOnly"/>
+	<ElementType name="FeatureName" content="textOnly"/>
+	<ElementType name="YieldChanges" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldIncreases" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iAppearance" content="textOnly" dt:type="int"/>
+	<ElementType name="iDisappearance" content="textOnly" dt:type="int"/>
+	<ElementType name="iTurnDamage" content="textOnly" dt:type="int"/>
+	<ElementType name="bGeneratedEveryRound" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iGrowth" content="textOnly" dt:type="int"/>
+	<ElementType name="bNoCoast" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoRiver" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoAdjacent" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresFlatlands" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresRiver" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoImprovement" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bVisibleAlways" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bTerrain" content="textOnly" dt:type="boolean"/>
+	<ElementType name="TerrainBoolean" content="eltOnly">
+		<element type="TerrainType"/>
+		<element type="bTerrain"/>
+	</ElementType>
+	<ElementType name="TerrainBooleans" content="eltOnly">
+		<element type="TerrainBoolean" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="EffectType" content="textOnly"/>
+	<ElementType name="iEffectProbability" content="textOnly" dt:type="int"/>
+	<ElementType name="OnUnitChangeTo" content="textOnly"/>
+	<ElementType name="FeatureInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Help" minOccurs="0"/>
+		<element type="ArtDefineTag"/>
+		<element type="YieldChanges"/>
+		<element type="RiverYieldIncreases"/>
+		<element type="iMovement"/>
+		<element type="iSeeThrough"/>
+		<element type="iDefense"/>
+		<element type="iAppearance"/>
+		<element type="iDisappearance"/>
+		<element type="iTurnDamage"/>
+		<element type="bGeneratedEveryRound"/>
+		<element type="iGrowth"/>
+		<element type="bNoCoast"/>
+		<element type="bNoRiver"/>
+		<element type="bNoAdjacent"/>
+		<element type="bRequiresFlatlands"/>
+		<element type="bRequiresRiver"/>
+		<element type="bImpassable"/>
+		<element type="bNoCity"/>
+		<element type="bNoImprovement"/>
+		<element type="bVisibleAlways"/>
+		<element type="OnUnitChangeTo"/>
+		<element type="TerrainBooleans"/>
+		<element type="FootstepSounds"/>
+		<element type="WorldSoundscapeAudioScript" minOccurs="0"/>
+		<element type="EffectType"/>
+		<element type="iEffectProbability"/>
+		<element type="iAdvancedStartRemoveCost"/>
+	</ElementType>
+	<ElementType name="FeatureInfos" content="eltOnly">
+		<element type="FeatureInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BonusName" content="textOnly"/>
+	<ElementType name="BuildingType" content="textOnly"/>
+	<ElementType name="TerrainType" content="textOnly"/>
+	<ElementType name="iAIObjective" content="textOnly" dt:type="int"/>
+	<ElementType name="iPlacementOrder" content="textOnly" dt:type="int"/>
+	<ElementType name="iConstAppearance" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinAreaSize" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinLatitude" content="textOnly" dt:type="int"/>
+	<ElementType name="iMaxLatitude" content="textOnly" dt:type="int"/>
+	<ElementType name="iRandApp1" content="textOnly" dt:type="int"/>
+	<ElementType name="iRandApp2" content="textOnly" dt:type="int"/>
+	<ElementType name="iRandApp3" content="textOnly" dt:type="int"/>
+	<ElementType name="iRandApp4" content="textOnly" dt:type="int"/>
+	<ElementType name="Rands" content="eltOnly">
+		<element type="iRandApp1"/>
+		<element type="iRandApp2"/>
+		<element type="iRandApp3"/>
+		<element type="iRandApp4"/>
+	</ElementType>
+	<ElementType name="iPlayer" content="textOnly" dt:type="int"/>
+	<ElementType name="iTilesPer" content="textOnly" dt:type="int"/>
+	<ElementType name="iMinLandPercent" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnique" content="textOnly" dt:type="int"/>
+	<ElementType name="iGroupRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iGroupRand" content="textOnly" dt:type="int"/>
+	<ElementType name="bArea" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPeaks" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bHills" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bOcean" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFlatlands" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNoRiverSide" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFeature" content="textOnly" dt:type="boolean"/>
+	<ElementType name="FeatureBoolean" content="eltOnly">
+		<element type="FeatureType"/>
+		<element type="bFeature"/>
+	</ElementType>
+	<ElementType name="FeatureBooleans" content="eltOnly">
+		<element type="FeatureBoolean" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bFeatureTerrain" content="textOnly" dt:type="boolean"/>
+	<ElementType name="FeatureTerrainBoolean" content="eltOnly">
+		<element type="TerrainType"/>
+		<element type="bFeatureTerrain"/>
+	</ElementType>
+	<ElementType name="FeatureTerrainBooleans" content="eltOnly">
+		<element type="FeatureTerrainBoolean" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="bWhalingboatWorkable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFishingboatWorkable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bUseLSystem" content="textOnly" dt:type="boolean"/>
+	<ElementType name="BonusInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Help" minOccurs="0"/>
+		<element type="ArtDefineTag"/>
+		<element type="BuildingType"/>
+		<element type="YieldChanges"/>
+		<element type="iAIObjective"/>
+		<element type="iPlacementOrder"/>
+		<element type="iConstAppearance"/>
+		<element type="iMinAreaSize"/>
+		<element type="iMinLatitude"/>
+		<element type="iMaxLatitude"/>
+		<element type="Rands"/>
+		<element type="iPlayer"/>
+		<element type="iTilesPer"/>
+		<element type="iMinLandPercent"/>
+		<element type="iUnique"/>
+		<element type="iGroupRange"/>
+		<element type="iGroupRand"/>
+		<element type="bArea"/>
+		<element type="bPeaks"/>
+		<element type="bHills"/>
+		<element type="bOcean" minOccurs="0"/>
+		<element type="bFlatlands"/>
+		<element type="bNoRiverSide"/>
+		<element type="TerrainBooleans"/>
+		<element type="FeatureBooleans"/>
+		<element type="FeatureTerrainBooleans"/>
+		<element type="bUseLSystem" minOccurs="0"/>
+		<element type="bWhalingboatWorkable" minOccurs="0"/>
+		<element type="bFishingboatWorkable" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="BonusInfos" content="eltOnly">
+		<element type="BonusInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4TerrainInfos" content="eltOnly">
+		<element type="TerrainInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4YieldInfos" content="eltOnly">
+		<element type="YieldInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4FeatureInfos" content="eltOnly">
+		<element type="FeatureInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4BonusInfos" content="eltOnly">
+		<element type="BonusInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4Terrain" content="eltOnly">
+		<element type="TerrainInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="YieldInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="FeatureInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="BonusInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ArtDefineTag" content="textOnly"/>
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="iWaterHeight" content="textOnly" dt:type="int"/>
+	<ElementType name="EnvironmentTexture" content="textOnly"/>
+	<ElementType name="fTextureScaleX" content="textOnly"/>
+	<ElementType name="fTextureScaleY" content="textOnly"/>
+	<ElementType name="iPlotsPerCellX" content="textOnly" dt:type="int"/>
+	<ElementType name="iPlotsPerCellY" content="textOnly" dt:type="int"/>
+	<ElementType name="iPlotVertsWide" content="textOnly" dt:type="int"/>
+	<ElementType name="iPlotVertsHigh" content="textOnly" dt:type="int"/>
+	<ElementType name="fZScale" content="textOnly"/>
+	<ElementType name="fPeakScale" content="textOnly"/>
+	<ElementType name="fHillScale" content="textOnly"/>
+	<ElementType name="TerrainTextureInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="ArtDefineTag"/>
+	</ElementType>
+	<ElementType name="TerrainTextureInfos" content="eltOnly">
+		<element type="TerrainTextureInfo" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="PrereqNatureYields" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RouteType" content="textOnly"/>
+	<ElementType name="RouteYields" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RouteYieldChange" content="eltOnly">
+		<element type="RouteType"/>
+		<element type="RouteYields"/>
+	</ElementType>
+	<ElementType name="RouteYieldChanges" content="eltOnly">
+		<element type="RouteYieldChange" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RiverSideYieldChanges" content="eltOnly">
+		<element type="YieldIntegerPair" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BonusType" content="textOnly"/>
+	<ElementType name="bBonusMakesValid" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iDiscoverRand" content="textOnly" dt:type="int"/>
+	<ElementType name="BonusTypeStruct" content="eltOnly">
+		<element type="BonusType"/>
+		<element type="bBonusMakesValid"/>
+		<element type="iDiscoverRand"/>
+		<element type="YieldChanges" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="BonusTypeStructs" content="eltOnly">
+		<element type="BonusTypeStruct" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ImprovementPillage" content="textOnly"/>
+	<ElementType name="ImprovementUpgrade" content="textOnly"/>
+	<ElementType name="bActsAsCity" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bFort" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bMonastery" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bHillsMakesValid" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRiverSideMakesValid" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresRiverSide" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bRequiresFeature" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoody" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bPermanent" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iGoodyRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iFeatureGrowth" content="textOnly" dt:type="int"/>
+	<ElementType name="iDefenseModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iPillageGold" content="textOnly" dt:type="int"/>
+	<ElementType name="bOutsideBorders" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartRemoveCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
+	<ElementType name="iTilesPerGoody" content="textOnly" dt:type="int"/>
+	<ElementType name="iUpgradeTime" content="textOnly" dt:type="int"/>
+	<ElementType name="bMakesValid" content="textOnly" dt:type="boolean"/>
+	<ElementType name="TerrainMakesValid" content="eltOnly">
+		<element type="TerrainType"/>
+		<element type="bMakesValid"/>
+	</ElementType>
+	<ElementType name="TerrainMakesValids" content="eltOnly">
+		<element type="TerrainMakesValid" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="FeatureMakesValid" content="eltOnly">
+		<element type="FeatureType"/>
+		<element type="bMakesValid"/>
+	</ElementType>
+	<ElementType name="FeatureMakesValids" content="eltOnly">
+		<element type="FeatureMakesValid" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="iCulture" content="textOnly" dt:type="int"/>
+	<ElementType name="iCultureRange" content="textOnly" dt:type="int"/>
+	<ElementType name="iVisibilityChange" content="textOnly" dt:type="int"/>
+	<ElementType name="bBombardable" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bUpgradeRequiresFortify" content="textOnly" dt:type="boolean"/>
+	<ElementType name="ImprovementInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+		<element type="Help" minOccurs="0"/>
+		<element type="ArtDefineTag"/>
+		<element type="PrereqNatureYields"/>
+		<element type="YieldIncreases"/>
+		<element type="RiverSideYieldChanges"/>
+		<element type="HillsYieldChanges"/>
+		<element type="bActsAsCity"/>
+		<element type="bFort" minOccurs="0"/>
+		<element type="bMonastery" minOccurs="0"/>
+		<element type="bHillsMakesValid"/>
+		<element type="bRiverSideMakesValid"/>
+		<element type="bRequiresFlatlands"/>
+		<element type="bRequiresRiverSide"/>
+		<element type="bRequiresFeature"/>
+		<element type="bWater"/>
+		<element type="bGoody"/>
+		<element type="bPermanent"/>
+		<element type="bUseLSystem"/>
+		<element type="iAdvancedStartCost"/>
+		<element type="iAdvancedStartCostIncrease"/>
+		<element type="iTilesPerGoody"/>
+		<element type="iGoodyRange"/>
+		<element type="iFeatureGrowth"/>
+		<element type="iUpgradeTime"/>
+		<element type="iDefenseModifier"/>
+		<element type="iPillageGold"/>
+		<element type="bOutsideBorders"/>
+		<element type="TerrainMakesValids"/>
+		<element type="FeatureMakesValids"/>
+		<element type="BonusTypeStructs" maxOccurs="*"/>
+		<element type="ImprovementPillage"/>
+		<element type="ImprovementUpgrade"/>
+		<element type="RouteYieldChanges"/>
+		<element type="WorldSoundscapeAudioScript" minOccurs="0"/>
+		<element type="bGraphicalOnly"/>
+		<element type="iCulture" minOccurs="0"/>
+		<element type="iCultureRange" minOccurs="0"/>
+		<element type="iVisibilityChange" minOccurs="0"/>
+		<element type="iSeeFrom" minOccurs="0"/>
+		<element type="iUnique" minOccurs="0"/>
+		<element type="bBombardable" minOccurs="0"/>
+		<element type="bUpgradeRequiresFortify" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="ImprovementInfos" content="eltOnly">
+		<element type="ImprovementInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="LandscapeInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="iWaterHeight"/>
+		<element type="EnvironmentTexture"/>
+		<element type="fTextureScaleX"/>
+		<element type="fTextureScaleY"/>
+		<element type="iPlotsPerCellX"/>
+		<element type="iPlotsPerCellY"/>
+		<element type="iPlotVertsWide"/>
+		<element type="iPlotVertsHigh"/>
+		<element type="fZScale"/>
+		<element type="fPeakScale"/>
+		<element type="fHillScale"/>
+	</ElementType>
+	<ElementType name="LandscapeInfos" content="eltOnly">
+		<element type="LandscapeInfo" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4TerrainSettings" content="eltOnly">
+		<element type="LandscapeInfos" minOccurs="1" maxOccurs="1"/>
+	</ElementType>
+	<ElementType name="Civ4ImprovementInfos" content="eltOnly">
+		<element type="ImprovementInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>
