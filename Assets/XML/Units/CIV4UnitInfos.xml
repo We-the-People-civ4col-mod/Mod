@@ -18729,7 +18729,7 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>1200</iEuropeCost>
-			<iEuropeCostIncrease>100</iEuropeCostIncrease>
+			<iEuropeCostIncrease>50</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -19593,8 +19593,8 @@
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>700</iEuropeCost>
-			<iEuropeCostIncrease>50</iEuropeCostIncrease>
+			<iEuropeCost>800</iEuropeCost>
+			<iEuropeCostIncrease>100</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -19756,8 +19756,8 @@
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>900</iEuropeCost>
-			<iEuropeCostIncrease>50</iEuropeCostIncrease>
+			<iEuropeCost>1000</iEuropeCost>
+			<iEuropeCostIncrease>100</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>

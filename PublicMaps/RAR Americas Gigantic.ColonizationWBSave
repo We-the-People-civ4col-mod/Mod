@@ -1900,18 +1900,7 @@ EndPlayer
 BeginPlayer
 	Team=47
 	LeaderType=LEADER_CHURCH
-	LeaderName=TXT_KEY_LEADER_CHURCH
-	CivDesc=TXT_KEY_CIV_CHURCH_DESC
-	CivShortDesc=TXT_KEY_CIV_CHURCH_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_CHURCH_ADJECTIVE
-	CivType=CIVILIZATION_CHURCH
-	Color=PLAYERCOLOR_WHITE
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=0
-	StartingGold=0
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
-	Handicap=HANDICAP_EXPLORER
+	CivType=NONE
 EndPlayer
 BeginPlayer
 	Team=48

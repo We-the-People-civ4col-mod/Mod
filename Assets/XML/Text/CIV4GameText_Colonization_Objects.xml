@@ -15184,6 +15184,14 @@
 		<Spanish>Guerra Naval VI</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
+		<English>Great Discoverer</English>
+		<French>Great Discoverer</French>
+		<German>Gro&#223;er Entdecker</German>
+		<Italian>Great Discoverer</Italian>
+		<Spanish>Great Discoverer</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVAL_TRADE1</Tag>
 		<English>Merchant Vessel I</English>
 		<French>Navire de commerce I</French>
