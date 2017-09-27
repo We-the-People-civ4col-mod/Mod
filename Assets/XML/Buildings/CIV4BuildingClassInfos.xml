@@ -343,12 +343,6 @@
 			<VictoryThresholds/>
 		</BuildingClassInfo>
 		<BuildingClassInfo>
-			<Type>BUILDINGCLASS_WHALE_OIL_HOUSE</Type>
-			<Description>TXT_KEY_BUILDING_WHALE_OIL_HOUSE</Description>
-			<DefaultBuilding>BUILDINGCLASS_WHALE_OIL_HOUSE</DefaultBuilding>
-			<VictoryThresholds/>
-		</BuildingClassInfo>
-		<BuildingClassInfo>
 			<Type>BUILDINGCLASS_BLACKSMITH_HOUSE</Type>
 			<Description>TXT_KEY_BUILDING_BLACKSMITH_HOUSE</Description>
 			<DefaultBuilding>BUILDING_BLACKSMITH_HOUSE</DefaultBuilding>
