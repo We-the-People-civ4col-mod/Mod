@@ -79,7 +79,6 @@ class CvPortRoyalScreen:
 		self.SAIL_WEST_STemperate = 35
 		self.SAIL_WEST_SFrigid = 36
 		self.SectorNames = dict([(0, 'NFrigid'), (1, 'NTemperate'), (2, 'NTropic'), (3, 'STropic'), (4, 'STemperate'), (5, 'SFrigid')])
-		self.player = gc.getPlayer(gc.getGame().getActivePlayer())
 		# R&R, vetiarvind, Navigation Sectors - END
 
 		self.bBookIntro, self.bBookOutro = false, false
