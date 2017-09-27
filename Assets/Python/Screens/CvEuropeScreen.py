@@ -529,7 +529,7 @@ class CvEuropeScreen:
 		for i in range(player.getNumEuropeUnits()):
 			loopUnit = player.getEuropeUnit(i)
 			iY, iW = 0, self.DOCK_UNIT_W
-			if (loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_CANNON") or loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_LIGHT_CANNON")):
+			if (loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_HEAVY_ARTILLERY_VETERAN") or loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_LIGHT_ARTILLERY_VETERAN")):
 				iY = -6
 				iW = iW * 17 / 10
 			UnitInfo = gc.getUnitInfo(loopUnit.getUnitType())

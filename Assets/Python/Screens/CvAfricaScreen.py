@@ -532,9 +532,6 @@ class CvAfricaScreen:
 		for i in range(player.getNumAfricaUnits()):
 			loopUnit = player.getAfricaUnit(i)
 			iY, iW = 0, self.DOCK_UNIT_W
-			if (loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_CANNON") or loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_LIGHT_CANNON")):
-				iY = -6
-				iW = iW * 17 / 10
 			UnitInfo = gc.getUnitInfo(loopUnit.getUnitType())
 			iProfession = loopUnit.getProfession()
 			iUnitArtStyle = gc.getCivilizationInfo(player.getCivilizationType()).getUnitArtStyleType()
