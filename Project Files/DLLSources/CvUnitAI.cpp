@@ -1700,8 +1700,17 @@ void CvUnitAI::AI_missionaryMove()
 	{
 		return;
 	}
-	
+
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	
+	// If we have no cities, become a colonist
+	// so that we can found or join one
+	if (kOwner.getNumCities() == 0)
+	{
+		AI_setUnitAIType(UNITAI_COLONIST);
+		AI_colonistMove();
+	}
+
 	CvCity* pCity = (plot()->getOwnerINLINE() == getOwnerINLINE()) ? plot()->getPlotCity() : NULL;
 	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
 	if (bDanger)
@@ -2417,7 +2426,17 @@ void CvUnitAI::AI_offensiveMove()
 void CvUnitAI::AI_attackCityMove()
 {	
 	PROFILE_FUNC();
-	
+
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	// If we have no cities, become a colonist
+	// so that we can found or join one
+	if (kOwner.getNumCities() == 0)
+	{
+		AI_setUnitAIType(UNITAI_COLONIST);
+		AI_colonistMove();
+	}
+
 	if (isCargo())
 	{
 		/*	
