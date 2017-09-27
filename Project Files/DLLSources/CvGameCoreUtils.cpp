@@ -955,10 +955,13 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 					{
 						iCost += (PATH_DAMAGE_WEIGHT * std::max(0, GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage())) / GC.getMAX_HIT_POINTS();
 					}
+					
+					const int info = gDLL->getFAStarIFace()->GetInfo(finder);
+
 					// R&R, Robert Surcouf, Damage on Storm plots, End
 					// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 					// Add additional cost for ending turn in or adjacent to enemy territory based on flags
-					if (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_AVOID_ENEMY_WEIGHT_3)
+					if (info & MOVE_AVOID_ENEMY_WEIGHT_3)
 					{
 						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
 						{
@@ -983,7 +986,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 							}
 						}
 					}
-					else if (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_AVOID_ENEMY_WEIGHT_2)
+					else if (info & MOVE_AVOID_ENEMY_WEIGHT_2)
 					{
 						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
 						{
@@ -1130,7 +1133,9 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	if (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_SAFE_TERRITORY)
+	const int info = gDLL->getFAStarIFace()->GetInfo(finder);
+
+	if (info & MOVE_SAFE_TERRITORY)
 	{
 		if (!(pFromPlot->isRevealed(pSelectionGroup->getHeadTeam(), false)))
 		{
@@ -1146,7 +1151,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		}
 	}
 
-	if (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_NO_ENEMY_TERRITORY)
+	if (info & MOVE_NO_ENEMY_TERRITORY)
 	{
 		if (pFromPlot->isOwned())
 		{
@@ -1163,7 +1168,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	{
 		if ((parent->m_iData2 > 1) || (parent->m_iData1 == 0))
 		{
-			if (!(gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_IGNORE_DANGER))
+			if (!(info & MOVE_IGNORE_DANGER))
 			{
 				if (!(pSelectionGroup->canFight()) && !(pSelectionGroup->alwaysInvisible()))
 				{
@@ -1178,7 +1183,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 
 	if (bAIControl || pFromPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
 	{
-		if (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_THROUGH_ENEMY)
+		if (info & MOVE_THROUGH_ENEMY)
 		{
 			if (!(pSelectionGroup->canMoveOrAttackInto(pFromPlot)))
 			{
