@@ -2313,8 +2313,9 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
 
 		eRivalTeam = pSelectedUnit->getDeclareWarUnitMove(pPlot);
-
-		if (eRivalTeam != NO_TEAM)
+		
+		// Erik: No annoying popup for transport units
+		if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DECLAREWARMOVE);
 			if (NULL != pInfo)
