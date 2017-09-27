@@ -8812,7 +8812,7 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	gDLL->getEventReporterIFace()->populationJoined(getOwnerINLINE(), getID(), pTransferUnit->getID());
 }
 
-bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession)
+bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
 {	
 	int iUnitIndex = getPopulationUnitIndex(pUnit);
 	if(iUnitIndex < 0)
@@ -8867,7 +8867,8 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 	}
 
 	// R&R Abandon City, ray START
-	if (getPopulation() < 1 && isHuman() && (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())) // R&R, ray, code adjusted by checking for ActivePlayer to prevent wrong messages
+	// Erik: Suppress the abandon message if city was razed due to conquest
+	if (!bConquest && getPopulation() < 1 && isHuman() && (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())) // R&R, ray, code adjusted by checking for ActivePlayer to prevent wrong messages
 	{
 		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_TEXT);
 		pInfo->setText(gDLL->getText("ABANDONING_CITY"));
