@@ -2259,7 +2259,7 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 	CvPlot* pPlot = plotXY(iX, iY, 0, 0);
 	FAssert(pPlot != NULL);
 
-	if (!settleOnBonus && pPlot->getBonusType() != NO_BONUS)
+	if (!allowSettleOnBonus && pPlot->getBonusType() != NO_BONUS)
 	{
 		return 0;
 	}
