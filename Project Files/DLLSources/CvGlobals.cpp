@@ -1161,7 +1161,7 @@ void CvGlobals::setActiveLandscapeID(int iLandscapeID)
 }
 
 
-int CvGlobals::getNumTerrainInfos() const
+int CvGlobals::getNumTerrainInfos()
 {
 	return (int)m_paTerrainInfo.size();
 }
@@ -1178,7 +1178,7 @@ CvTerrainInfo& CvGlobals::getTerrainInfo(TerrainTypes eTerrainNum)
 	return *(m_paTerrainInfo[eTerrainNum]);
 }
 
-int CvGlobals::getNumBonusInfos() const
+int CvGlobals::getNumBonusInfos()
 {
 	return (int)m_paBonusInfo.size();
 }
@@ -1195,7 +1195,7 @@ CvBonusInfo& CvGlobals::getBonusInfo(BonusTypes eBonusNum)
 	return *(m_paBonusInfo[eBonusNum]);
 }
 
-int CvGlobals::getNumFeatureInfos() const
+int CvGlobals::getNumFeatureInfos()
 {
 	return (int)m_paFeatureInfo.size();
 }
@@ -1212,7 +1212,7 @@ CvFeatureInfo& CvGlobals::getFeatureInfo(FeatureTypes eFeatureNum)
 	return *(m_paFeatureInfo[eFeatureNum]);
 }
 
-int CvGlobals::getNumCivilizationInfos() const
+int CvGlobals::getNumCivilizationInfos()
 {
 	return (int)m_paCivilizationInfo.size();
 }
@@ -1230,7 +1230,7 @@ CvCivilizationInfo& CvGlobals::getCivilizationInfo(CivilizationTypes eCivilizati
 }
 
 
-int CvGlobals::getNumLeaderHeadInfos() const
+int CvGlobals::getNumLeaderHeadInfos()
 {
 	return (int)m_paLeaderHeadInfo.size();
 }
@@ -1248,7 +1248,7 @@ CvLeaderHeadInfo& CvGlobals::getLeaderHeadInfo(LeaderHeadTypes eLeaderHeadNum)
 }
 
 
-int CvGlobals::getNumTraitInfos() const
+int CvGlobals::getNumTraitInfos()
 {
 	return (int)m_paTraitInfo.size();
 }
@@ -1266,7 +1266,7 @@ CvTraitInfo& CvGlobals::getTraitInfo(TraitTypes eTraitNum)
 }
 
 
-int CvGlobals::getNumCursorInfos() const
+int CvGlobals::getNumCursorInfos()
 {
 	return (int)m_paCursorInfo.size();
 }
@@ -1283,7 +1283,7 @@ CvCursorInfo& CvGlobals::getCursorInfo(CursorTypes eCursorNum)
 	return *(m_paCursorInfo[eCursorNum]);
 }
 
-int CvGlobals::getNumSlideShowInfos() const
+int CvGlobals::getNumSlideShowInfos()
 {
 	return (int)m_paSlideShowInfo.size();
 }
@@ -1300,7 +1300,7 @@ CvSlideShowInfo& CvGlobals::getSlideShowInfo(int iIndex)
 	return *(m_paSlideShowInfo[iIndex]);
 }
 
-int CvGlobals::getNumSlideShowRandomInfos() const
+int CvGlobals::getNumSlideShowRandomInfos()
 {
 	return (int)m_paSlideShowRandomInfo.size();
 }
@@ -1317,7 +1317,7 @@ CvSlideShowRandomInfo& CvGlobals::getSlideShowRandomInfo(int iIndex)
 	return *(m_paSlideShowRandomInfo[iIndex]);
 }
 
-int CvGlobals::getNumWorldPickerInfos() const
+int CvGlobals::getNumWorldPickerInfos()
 {
 	return (int)m_paWorldPickerInfo.size();
 }
@@ -1334,7 +1334,7 @@ CvWorldPickerInfo& CvGlobals::getWorldPickerInfo(int iIndex)
 	return *(m_paWorldPickerInfo[iIndex]);
 }
 
-int CvGlobals::getNumUnitInfos() const
+int CvGlobals::getNumUnitInfos()
 {
 	return (int)m_paUnitInfo.size();
 }
@@ -1351,7 +1351,7 @@ CvUnitInfo& CvGlobals::getUnitInfo(UnitTypes eUnitNum)
 	return *(m_paUnitInfo[eUnitNum]);
 }
 
-int CvGlobals::getNumSpecialUnitInfos() const
+int CvGlobals::getNumSpecialUnitInfos()
 {
 	return (int)m_paSpecialUnitInfo.size();
 }
@@ -1369,7 +1369,7 @@ CvSpecialUnitInfo& CvGlobals::getSpecialUnitInfo(SpecialUnitTypes eSpecialUnitNu
 }
 
 
-int CvGlobals::getNumConceptInfos() const
+int CvGlobals::getNumConceptInfos()
 {
 	return (int)m_paConceptInfo.size();
 }
@@ -1385,7 +1385,7 @@ CvInfoBase& CvGlobals::getConceptInfo(ConceptTypes e)
 	FAssert(e < GC.getNumConceptInfos());
 	return *(m_paConceptInfo[e]);
 }
-int CvGlobals::getNumCalendarInfos() const
+int CvGlobals::getNumCalendarInfos()
 {
 	return (int)m_paCalendarInfo.size();
 }

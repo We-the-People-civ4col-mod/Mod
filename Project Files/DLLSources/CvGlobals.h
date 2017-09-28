@@ -297,58 +297,58 @@ public:
 	DllExport int getActiveLandscapeID();
 	DllExport void setActiveLandscapeID(int iLandscapeID);
 
-	DllExport int getNumTerrainInfos() const;
+	DllExport int getNumTerrainInfos();
 	DllExport std::vector<CvTerrainInfo*>& getTerrainInfo();
 	DllExport CvTerrainInfo& getTerrainInfo(TerrainTypes eTerrainNum);
 
-	DllExport int getNumBonusInfos() const;
+	DllExport int getNumBonusInfos();
 	DllExport std::vector<CvBonusInfo*>& getBonusInfo();
 	DllExport CvBonusInfo& getBonusInfo(BonusTypes eBonusNum);
 
-	DllExport int getNumFeatureInfos() const;
+	DllExport int getNumFeatureInfos();
 	DllExport std::vector<CvFeatureInfo*>& getFeatureInfo();
 	DllExport CvFeatureInfo& getFeatureInfo(FeatureTypes eFeatureNum);
 
-	DllExport int getNumCivilizationInfos() const;
+	DllExport int getNumCivilizationInfos();
 	DllExport std::vector<CvCivilizationInfo*>& getCivilizationInfo();
 	DllExport CvCivilizationInfo& getCivilizationInfo(CivilizationTypes eCivilizationNum);
 
-	DllExport int getNumLeaderHeadInfos() const;
+	DllExport int getNumLeaderHeadInfos();
 	DllExport std::vector<CvLeaderHeadInfo*>& getLeaderHeadInfo();
 	DllExport CvLeaderHeadInfo& getLeaderHeadInfo(LeaderHeadTypes eLeaderHeadNum);
 
-	DllExport int getNumTraitInfos() const;
+	DllExport int getNumTraitInfos();
 	DllExport std::vector<CvTraitInfo*>& getTraitInfo();
 	DllExport	CvTraitInfo& getTraitInfo(TraitTypes eTraitNum);
 
-	DllExport int getNumCursorInfos() const;
+	DllExport int getNumCursorInfos();
 	DllExport std::vector<CvCursorInfo*>& getCursorInfo();
 	DllExport	CvCursorInfo& getCursorInfo(CursorTypes eCursorNum);
 
-	DllExport int getNumSlideShowInfos() const;
+	DllExport int getNumSlideShowInfos();
 	DllExport std::vector<CvSlideShowInfo*>& getSlideShowInfo();
 	DllExport	CvSlideShowInfo& getSlideShowInfo(int iIndex);
 
-	DllExport int getNumSlideShowRandomInfos() const;
+	DllExport int getNumSlideShowRandomInfos();
 	DllExport std::vector<CvSlideShowRandomInfo*>& getSlideShowRandomInfo();
 	DllExport	CvSlideShowRandomInfo& getSlideShowRandomInfo(int iIndex);
 
-	DllExport int getNumWorldPickerInfos() const;
+	DllExport int getNumWorldPickerInfos();
 	DllExport std::vector<CvWorldPickerInfo*>& getWorldPickerInfo();
 	DllExport	CvWorldPickerInfo& getWorldPickerInfo(int iIndex);
 
-	DllExport int getNumUnitInfos() const;
+	DllExport int getNumUnitInfos();
 	DllExport std::vector<CvUnitInfo*>& getUnitInfo();
 	DllExport	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum);
 
-	DllExport int getNumSpecialUnitInfos() const;
+	DllExport int getNumSpecialUnitInfos();
 	DllExport std::vector<CvSpecialUnitInfo*>& getSpecialUnitInfo();
 	DllExport	CvSpecialUnitInfo& getSpecialUnitInfo(SpecialUnitTypes eSpecialUnitNum);
 
-	DllExport int getNumConceptInfos() const;
+	DllExport int getNumConceptInfos();
 	DllExport std::vector<CvInfoBase*>& getConceptInfo();
 	DllExport CvInfoBase& getConceptInfo(ConceptTypes e);
-	DllExport int getNumCalendarInfos() const;
+	DllExport int getNumCalendarInfos();
 	DllExport std::vector<CvInfoBase*>& getCalendarInfo();
 	DllExport CvInfoBase& getCalendarInfo(CalendarTypes e);
 
