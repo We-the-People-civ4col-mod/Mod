@@ -2254,11 +2254,16 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	return std::max(1, iValue);
 }
 
-int CvPlayerAI::AI_foundValueNative(int iX, int iY)
+int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) const
 {
 	CvPlot* pPlot = plotXY(iX, iY, 0, 0);
 	FAssert(pPlot != NULL);
 
+	if (!settleOnBonus && pPlot->getBonusType() != NO_BONUS)
+	{
+		return 0;
+	}
+		
 	if (pPlot->isWater())
 	{
 		return 0;
@@ -9852,7 +9857,7 @@ void CvPlayerAI::AI_createNativeCities()
 		for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 		{
 			CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-			int iValue = AI_foundValueNative(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE());
+			int iValue = AI_foundValueNative(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), false);
 			if (iValue > iBestValue)
 			{
 				iBestValue = iValue;

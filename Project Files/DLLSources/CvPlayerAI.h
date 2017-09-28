@@ -74,7 +74,7 @@ public:
 	int AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist);
 	int AI_foundValue(int iX, int iY, int iMinRivalRange = -1, bool bStartingLoc = false);
 
-	int AI_foundValueNative(int iX, int iY);
+	int AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus = false) const;
 	
 	bool AI_isAreaAlone(CvArea* pArea);
 	bool AI_isCapitalAreaAlone();
