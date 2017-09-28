@@ -5972,6 +5972,136 @@ bool CvUnitAI::AI_europeBuyYields()
 	return false;
 }
 
+bool CvUnitAI::AI_africa()
+{
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (kOwner.getParent() == NO_PLAYER)
+		return false;
+
+	CLLNode<IDInfo>* pUnitNode;
+	CvUnit* pLoopUnit;
+	
+	const CvPlot* pPlot = plot();
+
+	pUnitNode = pPlot->headUnitNode();
+
+	//Sell to Africa
+	std::vector<CvUnit*> apUnits;
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getTransportUnit() == this)
+		{
+			YieldTypes eYield = pLoopUnit->getYield();
+			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
+			{
+				if ((NO_YIELD == eYield) || kOwner.isYieldAfricaTradable(eYield))
+				{
+					apUnits.push_back(pLoopUnit);
+				}
+			}
+		}
+	}
+
+	for (uint i = 0; i < apUnits.size(); ++i)
+	{
+		kOwner.sellYieldUnitToAfrica(apUnits[i], apUnits[i]->getYieldStored(), 0);
+	}
+
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+		CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+
+		if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getAfricaCost() > 0)
+		{
+			// Attempt to buy slaves as long as we have have enough gold and free cargo slots
+			const int iPotentialSlavesToBuy = cargoSpace() - getCargo();
+
+			for (int i=0; i < iPotentialSlavesToBuy; i++)
+			{ 
+				if (kOwner.buyAfricaUnit(eLoopUnit, 100) == NULL)
+					// Early exit since we could not buy anymore
+					break;
+			}
+
+			// No need to consider other units
+			break;
+		}
+	}
+
+	//Pick up units from Africa (FIFO)
+	std::deque<CvUnit*> aUnits;
+	for (int i = 0; i < kOwner.getNumAfricaUnits(); ++i)
+	{
+		aUnits.push_back(kOwner.getAfricaUnit(i));
+	}
+
+	while (!aUnits.empty() && !isFull())
+	{
+		CvUnit* pUnit = aUnits.front();
+		aUnits.pop_front();
+		if (pUnit->canLoadUnit(this, plot(), false))
+		{
+			kOwner.loadUnitFromAfrica(pUnit, this);
+			if (getGroup()->getAutomateType() == AUTOMATE_FULL)
+			{
+				FAssert(pUnit->getGroup() != NULL);
+				pUnit->getGroup()->setAutomateType(AUTOMATE_FULL);
+			}
+		}
+	}
+
+	// R&R, ray, fix for inactive AI - START
+	CvPlot* pStartingPlot = GET_PLAYER(getOwnerINLINE()).getStartingPlot();
+	// R&R, ray, fix for inactive AI - END
+
+	// TAC - AI Improved Naval AI - koma13 - START
+	if (kOwner.getNumCities() > 0)
+	{
+		CvPlot* pNewPlot = AI_bestDestinationPlot();
+
+		if (pNewPlot == NULL)
+		{
+			// R&R, ray, fix for inactive AI - START
+			if (pStartingPlot != NULL)
+			{
+				pNewPlot = pStartingPlot;
+			}
+
+			// old code now in else
+			else
+			{
+				getGroup()->pushMission(MISSION_SKIP);
+				return true;
+			}
+			// R&R, ray, fix for inactive AI - END
+		}
+
+		if (plot() != pNewPlot)
+		{
+			setXY(pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE());
+		}
+	}
+	// TAC - AI Improved Naval AI - koma13 - END
+
+	// R&R, ray, fix for inactive AI - START
+	else if (plot() == NULL && pStartingPlot != NULL)
+	{
+		setXY(pStartingPlot->getX_INLINE(), pStartingPlot->getY_INLINE());
+	}
+	// R&R, ray, fix for inactive AI - END
+
+	FAssert(plot()->isEurope());
+	FAssert(canCrossOcean(plot(), UNIT_TRAVEL_STATE_FROM_AFRICA));
+	
+	crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+	finishMoves();
+	return true;
+}
 
 bool CvUnitAI::AI_europe()
 {

@@ -74,6 +74,7 @@ public:
 	bool AI_transportReturnToPort(bool bUnload, CvCity* pCity);
 	bool AI_moveToCity(bool bUnload, CvCity* pCity);
 	//End TAC Whaling, ray
+	bool AI_africa();
 
 protected:
 
