@@ -152,8 +152,8 @@ public:
 	int getBuildingClassCount(BuildingClassTypes eIndex) const;
 	void changeBuildingClassCount(BuildingClassTypes eIndex, int iChange);
 
-	int getEuropeUnitsPurchased(UnitClassTypes eIndex) const;
-	void changeEuropeUnitsPurchased(UnitClassTypes eIndex, int iChange);
+	int getUnitsPurchasedHistory(UnitClassTypes eIndex) const;
+	void changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange);
 
 	bool isFriendlyTerritory(TeamTypes eTeam) const;
 

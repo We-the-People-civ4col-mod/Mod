@@ -381,6 +381,14 @@ bool CvUnitAI::AI_europeUpdate()
 				return false;
 			}
 		}
+		if (getGroup()->isAutomated() && (getGroup()->getAutomateType() == AUTOMATE_FULL))
+		{
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+			{
+				AI_africa();
+				return false;
+			}
+		}
 	}
 
 	if (getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL))
@@ -419,7 +427,11 @@ bool CvUnitAI::AI_europeUpdate()
 		//End TAC Whaling, ray
 		case UNITAI_TRANSPORT_SEA:
 			AI_europe();
-		    break;
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+			{
+				AI_africa();
+			}
+			break;
 		    
 		case UNITAI_ASSAULT_SEA:
 		case UNITAI_COMBAT_SEA:
@@ -7362,7 +7374,7 @@ void CvUnitAI::AI_doInitialMovePriority()
 			}
 		}
 	}
-	else if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+	else if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
 	{
 		if (getDomainType() == DOMAIN_SEA)
 		{		
@@ -17000,10 +17012,15 @@ bool CvUnitAI::AI_retreatFromDanger()
 									{
 										iValue += (eMissionAI == MISSIONAI_SAIL_TO_EUROPE) ? 1000 : 500;
 									}
+									if (canCrossOcean(pLoopPlot, UNIT_TRAVEL_STATE_TO_AFRICA))
+									{
+										iValue += (eMissionAI == MISSIONAI_SAIL_TO_AFRICA) ? 1000 : 500;
+									}
 								}
 								if (pLoopPlot->getPlotCity() != NULL)
 								{
 									iValue += (eMissionAI != MISSIONAI_SAIL_TO_EUROPE) ? 1000 : 500;
+									iValue += (eMissionAI != MISSIONAI_SAIL_TO_AFRICA) ? 1000 : 500;
 								}
 								
 								if (iValue > iBestValue)

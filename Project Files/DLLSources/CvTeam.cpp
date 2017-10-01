@@ -442,10 +442,10 @@ void CvTeam::shareItems(TeamTypes eTeam)
 	for (int iI = 0; iI < GC.getNumUnitClassInfos(); ++iI)
 	{
 		UnitClassTypes eUnitClass = (UnitClassTypes) iI;
-		int iOtherTeamUnits = GET_TEAM(eTeam).getEuropeUnitsPurchased(eUnitClass);
-		if (getEuropeUnitsPurchased(eUnitClass) < iOtherTeamUnits)
+		int iOtherTeamUnits = GET_TEAM(eTeam).getUnitsPurchasedHistory(eUnitClass);
+		if (getUnitsPurchasedHistory(eUnitClass) < iOtherTeamUnits)
 		{
-			changeEuropeUnitsPurchased(eUnitClass, iOtherTeamUnits - getEuropeUnitsPurchased(eUnitClass));
+			changeUnitsPurchasedHistory(eUnitClass, iOtherTeamUnits - getUnitsPurchasedHistory(eUnitClass));
 		}
 	}
 
@@ -2456,19 +2456,19 @@ void CvTeam::changeBuildingClassCount(BuildingClassTypes eIndex, int iChange)
 	FAssert(getBuildingClassCount(eIndex) >= 0);
 }
 
-int CvTeam::getEuropeUnitsPurchased(UnitClassTypes eIndex) const
+int CvTeam::getUnitsPurchasedHistory(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
 	return m_aiEuropeUnitsPurchased[eIndex];
 }
 
-void CvTeam::changeEuropeUnitsPurchased(UnitClassTypes eIndex, int iChange)
+void CvTeam::changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
 	m_aiEuropeUnitsPurchased[eIndex] += iChange;
-	FAssert(getEuropeUnitsPurchased(eIndex) >= 0);
+	FAssert(getUnitsPurchasedHistory(eIndex) >= 0);
 }
 
 // Protected Functions...

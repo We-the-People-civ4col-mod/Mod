@@ -5571,7 +5571,7 @@ int CvPlayerAI::AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup)
 			{
 				MissionAITypes eMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
 				
-				if ((eMissionAI == MISSIONAI_SAIL_TO_EUROPE) || ((pHeadUnit->AI_getUnitAIState() == UNITAI_STATE_SAIL) && (eMissionAI != MISSIONAI_PICKUP)))
+				if ((eMissionAI == MISSIONAI_SAIL_TO_EUROPE) || (eMissionAI == MISSIONAI_SAIL_TO_AFRICA) || ((pHeadUnit->AI_getUnitAIState() == UNITAI_STATE_SAIL) && (eMissionAI != MISSIONAI_PICKUP)))
 				{
 					iCount += pHeadUnit->cargoSpace();
 				}
@@ -6136,6 +6136,13 @@ void CvPlayerAI::AI_changeNumAIUnits(UnitAITypes eIndex, int iChange)
 			for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
 			{
 				if (m_aEuropeUnits[i]->AI_getUnitAIType() == eIndex)
+				{
+					++iNumUnitAI;
+				}
+			}
+			for (uint i = 0; i < m_aAfricaUnits.size(); ++i)
+			{
+				if (m_aAfricaUnits[i]->AI_getUnitAIType() == eIndex)
 				{
 					++iNumUnitAI;
 				}

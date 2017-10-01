@@ -16216,7 +16216,7 @@ int CvPlayer::getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease) const
 	//iCost += GET_TEAM(getTeam()).getEuropeUnitsPurchased((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
 	if (bIncrease)
 	{
-		iCost += GET_TEAM(getTeam()).getEuropeUnitsPurchased((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
+		iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getEuropeCostIncrease();
 	}
 	// TAC - AI purchases military units - koma13 - END
 
@@ -17228,7 +17228,7 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 	if (NULL != pUnit)
 	{
 		changeGold(-iPrice);
-		GET_TEAM(getTeam()).changeEuropeUnitsPurchased(pUnit->getUnitClassType(), 1);
+		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
 	}
 
@@ -17246,7 +17246,7 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 		return iCost;
 	}
 
-	iCost += GET_TEAM(getTeam()).getEuropeUnitsPurchased((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
+	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
 
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
@@ -17318,7 +17318,7 @@ CvUnit* CvPlayer::buyAfricaUnit(UnitTypes eUnit, int iPriceModifier)
 	if (NULL != pUnit)
 	{
 		changeGold(-iPrice);
-		GET_TEAM(getTeam()).changeEuropeUnitsPurchased(pUnit->getUnitClassType(), 1);
+		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		//gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
 	}
 
@@ -17337,7 +17337,7 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 		return iCost;
 	}
 
-	iCost += GET_TEAM(getTeam()).getEuropeUnitsPurchased((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
+	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
 
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
@@ -17409,7 +17409,7 @@ CvUnit* CvPlayer::buyPortRoyalUnit(UnitTypes eUnit, int iPriceModifier)
 	if (NULL != pUnit)
 	{
 		changeGold(-iPrice);
-		GET_TEAM(getTeam()).changeEuropeUnitsPurchased(pUnit->getUnitClassType(), 1);
+		GET_TEAM(getTeam()).changeUnitsPurchasedHistory(pUnit->getUnitClassType(), 1);
 		//gDLL->getEventReporterIFace()->unitBoughtFromEurope(getID(), pUnit->getID());
 	}
 

@@ -259,7 +259,7 @@ bool CvSelectionGroupAI::AI_update()
 		CvUnit* pHeadUnit = getHeadUnit();
 		if (pHeadUnit != NULL)
 		{
-			if ((pHeadUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE) && AI_isControlled())
+			if ((pHeadUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || pHeadUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA) && AI_isControlled())
 			{
 				pEntityNode = headUnitNode();
 
