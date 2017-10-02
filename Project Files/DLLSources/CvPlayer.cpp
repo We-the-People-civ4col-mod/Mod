@@ -21531,7 +21531,7 @@ void CvPlayer::checkForConquistadors()
 					CvUnit* ConquistadorUnit;
 					ConquistadorUnit = initUnit(ConquistadorType, (ProfessionTypes) GC.getUnitInfo(ConquistadorType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
 					//pay
-					changeGold(-pricetopay);
+					changeGold(-iMercPriceAI);
 				}
 			}
 		}
