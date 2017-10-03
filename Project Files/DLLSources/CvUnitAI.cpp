@@ -422,11 +422,17 @@ bool CvUnitAI::AI_europeUpdate()
 		    break;
 		//TAC Whaling, ray
 		case UNITAI_WORKER_SEA:
-			crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+			}
 			break;
 		//End TAC Whaling, ray
 		case UNITAI_TRANSPORT_SEA:
-			AI_europe();
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				AI_europe();
+			}
 			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
 			{
 				AI_africa();
@@ -437,22 +443,37 @@ bool CvUnitAI::AI_europeUpdate()
 		case UNITAI_COMBAT_SEA:
 			if (GET_PLAYER(getOwnerINLINE()).AI_isKing())
 			{
-				if (hasCargo())
+				if (hasCargo() && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
 				{
 					crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 				}
 			}
 			else
 			{
-				// TAC - AI Assault Sea Fix - koma13 - START
-				if (hasCargo())
+				// Erik: We have to deal correctly with combat ships
+				// like the sloop which may travel to a port with cargo
+				if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
 				{
-					AI_europe();
+					// TAC - AI Assault Sea Fix - koma13 - START
+					if (hasCargo())
+					{
+						AI_europe();
+					}
+					// TAC - AI Assault Sea Fix - koma13 - END
+					crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 				}
-				// TAC - AI Assault Sea Fix - koma13 - END
-				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
-			}
-				
+
+				if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+				{
+					// TAC - AI Assault Sea Fix - koma13 - START
+					if (hasCargo())
+					{
+						AI_africa();
+					}
+					// TAC - AI Assault Sea Fix - koma13 - END
+					crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+				}
+			}				
 			break;
 		case UNITAI_PIRATE_SEA:
 		case UNITAI_ESCORT_SEA:		// TAC - AI Escort Sea - koma13
