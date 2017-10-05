@@ -66,15 +66,15 @@ public:
 	bool AI_acceptUnit(CvUnit* pUnit);
 	bool AI_captureUnit(UnitTypes eUnit, CvPlot* pPlot);
 
-	DomainTypes AI_unitAIDomainType(UnitAITypes eUnitAI);
-	bool AI_unitAIIsCombat(UnitAITypes eUnitAI);
+	DomainTypes AI_unitAIDomainType(UnitAITypes eUnitAI) const;
+	bool AI_unitAIIsCombat(UnitAITypes eUnitAI) const;
 
-	int AI_yieldWeight(YieldTypes eYield);
+	int AI_yieldWeight(YieldTypes eYield) const;
 
 	int AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist);
 	int AI_foundValue(int iX, int iY, int iMinRivalRange = -1, bool bStartingLoc = false);
 
-	int AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus = false) const;
+	int AI_foundValueNative(int iX, int iY, bool settleOnBonus = false) const;
 	
 	bool AI_isAreaAlone(CvArea* pArea);
 	bool AI_isCapitalAreaAlone();
@@ -142,7 +142,7 @@ public:
 	int AI_unitImpassableCount(UnitTypes eUnit);
 	int AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvCity* pCity);
 	int AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea);
-	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea);
+	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const;
 	int AI_unitValuePercent(UnitTypes eUnit, UnitAITypes* peUnitAI, CvArea* pArea);
 	int AI_totalUnitAIs(UnitAITypes eUnitAI);
 	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);
@@ -151,7 +151,7 @@ public:
 
 	int AI_neededExplorers(CvArea* pArea);
 	int AI_neededWorkers(CvArea* pArea);
-	int AI_neededMissionary(CvArea* pArea);
+	//int AI_neededMissionary(CvArea* pArea);
 	
 	int AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove = false);
 	// TAC - AI City Defense - koma13 - START
@@ -234,7 +234,7 @@ public:
 	
     int AI_countDeadlockedBonuses(CvPlot* pPlot);
     
-    int AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves);
+    int AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves) const;
     int AI_getEnemyPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves);
 
 	int AI_goldToUpgradeAllUnits(int iExpThreshold = 0);
@@ -344,8 +344,8 @@ public:
 	int AI_professionUpgradeValue(ProfessionTypes eProfession, UnitTypes eUnit);
 	
 	int AI_unitAIValueMultipler(UnitAITypes eUnitAI);
-	int AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfession);
-	int AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eProfession, const CvPlot* pPlot, UnitAITypes eUnitAI = NO_UNITAI);
+	int AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfession) const;
+	int AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eProfession, const CvPlot* pPlot, UnitAITypes eUnitAI = NO_UNITAI) const;
 	
 	void AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB);
 	

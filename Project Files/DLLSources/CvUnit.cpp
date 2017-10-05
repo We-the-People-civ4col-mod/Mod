@@ -13368,7 +13368,7 @@ bool CvUnit::setSailEurope(EuropeTypes eEurope)
 	return false;
 }
 
-bool CvUnit::canSailEurope(EuropeTypes eEurope)
+bool CvUnit::canSailEurope(EuropeTypes eEurope) const
 {
 	if (eEurope == NO_EUROPE)
 	{

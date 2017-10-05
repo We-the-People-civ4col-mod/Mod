@@ -167,7 +167,7 @@ void CvTeamAI::AI_makeAssignWorkDirty()
 
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 // Find plot strength of teammates and potentially vassals
-int CvTeamAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves, bool bIncludeVassals)
+int CvTeamAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves, bool bIncludeVassals) const
 {
 	int iI;
 	int iPlotStrength = 0;

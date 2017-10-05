@@ -38,7 +38,7 @@ public:
 
 	void AI_makeAssignWorkDirty();
 
-	int AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves, bool bIncludeVassals = false);	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
+	int AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves, bool bIncludeVassals = false) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 
 	void AI_updateAreaStragies(bool bTargets = true);
 	void AI_updateAreaTargets();

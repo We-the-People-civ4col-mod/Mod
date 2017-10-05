@@ -1752,7 +1752,7 @@ bool CvSelectionGroup::isFull()
 }
 
 
-bool CvSelectionGroup::hasCargo()
+bool CvSelectionGroup::hasCargo() const
 {
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 

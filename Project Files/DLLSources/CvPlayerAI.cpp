@@ -1257,7 +1257,7 @@ bool CvPlayerAI::AI_captureUnit(UnitTypes eUnit, CvPlot* pPlot)
 }
 
 
-DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI)
+DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 {
 	switch (eUnitAI)
 	{
@@ -1300,7 +1300,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI)
 	return NO_DOMAIN;
 }
 
-bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI)
+bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI) const
 {
 	switch (eUnitAI)
 	{
@@ -1350,7 +1350,7 @@ bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI)
 }
 
 
-int CvPlayerAI::AI_yieldWeight(YieldTypes eYield)
+int CvPlayerAI::AI_yieldWeight(YieldTypes eYield) const
 {
 	return GC.getYieldInfo(eYield).getAIWeightPercent();
 }
@@ -4794,7 +4794,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 
 
 //This function attempts to return how much gold this unit is worth.
-int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea)
+int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const
 {
 	bool bValid = false;
 	int iValue = 0;
@@ -11098,7 +11098,7 @@ bool CvPlayerAI::AI_isTradeRouteConnection(CvCity* pSourceCity, CvCity* pDestina
 	return false;
 }
 // TAC - AI Economy - koma13 - END
-int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfession)
+int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfession) const
 {
 	if (eProfession == NO_PROFESSION)
 	{
@@ -11270,7 +11270,7 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 	return iValue;
 }
 
-int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eProfession, const CvPlot* pPlot, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eProfession, const CvPlot* pPlot, UnitAITypes eUnitAI) const
 {
 	CvPlot* pCityPlot = NULL;
  	if (pPlot != NULL)
@@ -13212,7 +13212,7 @@ int CvPlayerAI::AI_countDeadlockedBonuses(CvPlot* pPlot)
     return iCount;
 }
 
-int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves)
+int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves) const
 {
 	PROFILE_FUNC();
 

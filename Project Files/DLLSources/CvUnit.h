@@ -652,7 +652,7 @@ public:
 	void setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen);
 
 	bool setSailEurope(EuropeTypes eEurope);
-	bool canSailEurope(EuropeTypes eEurope);
+	bool canSailEurope(EuropeTypes eEurope) const;
 
 	void setHomeCity(CvCity* pNewValue);
 	CvCity* getHomeCity() const;

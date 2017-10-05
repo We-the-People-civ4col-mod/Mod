@@ -61,7 +61,7 @@ public:
 	int baseMoves();
 	bool isWaiting() const;
 	bool isFull();
-	bool hasCargo();
+	bool hasCargo() const;
 	int getCargo() const;
 	bool buildCargoUnitList(CLinkList<IDInfo>& unitList) const;
 	DllExport bool canAllMove();
