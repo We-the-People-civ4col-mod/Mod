@@ -4803,14 +4803,17 @@ bool CvUnit::canLearn() const
 	}
 
 	// R&R, ray, Natives do not talk when furious - START
+	// Erik: natives will not teach if a they are still angry due to bargaining
 	if (isHuman() && isAutomated())
 	{
-		CvCity* pCity = plot()->getPlotCity();
-		PlayerTypes eNativePlayer = pCity->getOwnerINLINE();
-		if (!GET_PLAYER(eNativePlayer).isHuman())
+		const CvCity *const pCity = plot()->getPlotCity();
+		const PlayerTypes eNativePlayer = pCity->getOwnerINLINE();
+		CvPlayerAI& nativePlayer = GET_PLAYER(eNativePlayer);
+
+		if (!nativePlayer.isHuman())
 		{
-			int currentPlayerAttitude = GET_PLAYER(eNativePlayer).AI_getAttitude(getOwnerINLINE(), false);
-			if (currentPlayerAttitude == 0)
+			int currentPlayerAttitude = nativePlayer.AI_getAttitude(getOwnerINLINE(), false);
+			if (currentPlayerAttitude == ATTITUDE_FURIOUS || nativePlayer.getTimeNoTrade() > 0)
 			{
 				return false;
 			}
