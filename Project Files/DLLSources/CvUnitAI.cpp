@@ -4349,19 +4349,27 @@ void CvUnitAI::AI_transportSeaMove()
 	UnitAIStates eStartingState = AI_getUnitAIState();
 	if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 	{
-		if (bPickupUnitsFromEurope || hasCargo())	// TAC - AI Improved Naval AI - koma13
-		{
-			if (AI_sailToEurope(false))
-			{
-				return;
-			}
-		}
-
 		if (AI_continueMission(-1, MISSIONAI_SAIL_TO_EUROPE, MOVE_BUST_FOG))
 		{
 			return;
 		}
-	
+
+		if (AI_continueMission(-1, MISSIONAI_SAIL_TO_AFRICA, MOVE_BUST_FOG))
+		{
+			return;
+		}
+
+		if (!hasAnyUnitInCargo())
+		{
+			if (bPickupUnitsFromEurope || hasCargo())	// TAC - AI Improved Naval AI - koma13
+			{
+				if (AI_sailToEurope(false))
+				{
+					return;
+				}
+			}
+		}
+		
 		if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 		{
 			if (AI_respondToPickup(2, UNITAI_TREASURE))
@@ -4383,7 +4391,7 @@ void CvUnitAI::AI_transportSeaMove()
 			}
 		}
 
-		if (isFull())
+		if (isFull() && !hasAnyUnitInCargo())
 		{
 			if (AI_sailToEurope())
 			{
@@ -4393,21 +4401,24 @@ void CvUnitAI::AI_transportSeaMove()
 		else
 		{		
 			// Custom_House_Mod Start
-			if (AI_travelToPort(15, 6))
+			if (!isFull() && AI_travelToPort(15, 6))
 			{
 				return;
 			}
 			// Custom_House_Mod End
 		}
 		
-		// TAC - AI Improved Naval AI - koma13 - START
-		//if (hasCargo() || (kOwner.getNumEuropeUnits() > 0))
-		if (hasCargo() || bPickupUnitsFromEurope)
-		// TAC - AI Improved Naval AI - koma13 - END
-		{
-			if (AI_sailToEurope())
+		if (!hasAnyUnitInCargo())
+		{		
+			// TAC - AI Improved Naval AI - koma13 - START
+			//if (hasCargo() || (kOwner.getNumEuropeUnits() > 0))
+			if (hasCargo() || bPickupUnitsFromEurope)
+			// TAC - AI Improved Naval AI - koma13 - END
 			{
-				return;
+				if (AI_sailToEurope())
+				{
+					return;
+				}
 			}
 		}
 		AI_setUnitAIState(UNITAI_STATE_DEFAULT);

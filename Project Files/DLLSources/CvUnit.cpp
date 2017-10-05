@@ -8765,6 +8765,33 @@ bool CvUnit::hasCargo() const
 	return (getCargo() > 0);
 }
 
+bool CvUnit::hasAnyUnitInCargo() const
+{
+	CLLNode<IDInfo>* pUnitNode;
+	CvUnit* pLoopUnit;
+	CvPlot* pPlot;
+
+	pPlot = plot();
+
+	pUnitNode = pPlot->headUnitNode();
+	
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		
+		if (pLoopUnit->getTransportUnit() == this)
+		{
+			if (!pLoopUnit->isGoods())
+			{
+				return true;
+			}
+		}
+
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+	}
+	
+	return false;
+}
 
 bool CvUnit::canCargoAllMove() const
 {
