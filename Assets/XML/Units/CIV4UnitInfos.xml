@@ -16631,7 +16631,7 @@
 			<iCombat>3</iCombat>
 			<iXPValueAttack>1</iXPValueAttack>
 			<iXPValueDefense>0</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>20</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
