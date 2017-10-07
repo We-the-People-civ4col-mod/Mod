@@ -167,7 +167,7 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>500</iEuropeCost>
-			<iEuropeCostIncrease>5</iEuropeCostIncrease>
+			<iEuropeCostIncrease>50</iEuropeCostIncrease>
 			<iImmigrationWeight>800</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -712,7 +712,7 @@
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>300</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
+			<iEuropeCostIncrease>30</iEuropeCostIncrease>
 			<iImmigrationWeight>800</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
