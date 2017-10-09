@@ -1707,11 +1707,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED</Tag>
-		<English>A student will finish his training at the %s3_building of %s2_city soon.</English>
-		<French>Un &#233;tudiant va bient&#244;t achever sa formation dans l'%s3_building de %s2_city.</French>
+		<English>A student will finish his training at the %s3_building of %s2_city in %d1_Num [NUM1:turn:turns].</English>
+		<French>Un &#233;tudiant va bient&#244;t achever sa formation dans l'%s3_building de %s2_city : %d1_Num [NUM1:turn:turns].</French>
 		<German>Gouverneur, in %d1 [NUM1:Runde:Runden] wird ein strebsamer B&#252;rger an der %s3_building in %s2_city seine Ausbildung beenden.</German>
-		<Italian>A student will finish his training at the %s3_building of %s2_city soon.</Italian>
-		<Spanish>A student will finish his training at the %s3_building of %s2_city soon.</Spanish>
+		<Italian>A student will finish his training at the %s3_building of %s2_city in %d1_Num [NUM1:turn:turns].</Italian>
+		<Spanish>A student will finish his training at the %s3_building of %s2_city in %d1_Num [NUM1:turn:turns].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LBD_EXPERT</Tag>
