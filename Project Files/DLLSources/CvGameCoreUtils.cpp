@@ -280,9 +280,13 @@ bool shouldUnitMove(const CvUnit* pUnit)
 	}
 	if (!pUnit->isOnMap())
 	{
-		if (pUnit->getUnitTravelState() != UNIT_TRAVEL_STATE_IN_EUROPE)
+		if (!((pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE) || (pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)))
 		{
 			return false;
+		}
+		else
+		{
+			return true;
 		}
 	}
 	return true;
@@ -1663,6 +1667,8 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_AWAIT_PICKUP: szString = L"MISSIONAI_AWAIT_PICKUP"; break;
 	case MISSIONAI_SAIL_TO_EUROPE: szString = L"MISSIONAI_SAIL_TO_EUROPE"; break;
 	case MISSIONAI_SAIL_FROM_EUROPE: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
+	case MISSIONAI_SAIL_TO_AFRICA: szString = L"MISSIONAI_SAIL_TO_AFRICA"; break;
+	case MISSIONAI_SAIL_FROM_AFRICA: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
 	case MISSIONAI_WORKER_SEA: szString = L"MISSIONAI_WORKER_SEA"; break; //TAC Whaling, ray
 	case MISSIONAI_TRANSPORT: szString = L"MISSIONAI_TRANSPORT"; break;
 	case MISSIONAI_TRANSPORT_SEA: szString = L"MISSIONAI_TRANSPORT_SEA"; break;	
