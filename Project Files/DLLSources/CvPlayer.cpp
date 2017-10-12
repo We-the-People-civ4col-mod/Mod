@@ -26,6 +26,7 @@
 #include "CvTradeRoute.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 #include <numeric>
+#include <algorithm>
 
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLEntityIFaceBase.h"
@@ -22650,3 +22651,20 @@ int CvPlayer::getNumTradeGroups() const
 }
 
 // R&R mod, vetiarvind, trade groups - end
+
+
+namespace
+{
+	bool compareUnitValue(CvUnit* pUnitA, CvUnit* pUnitB)
+	{
+		// Erik: Sort the units by the absolute value
+		// since some units may have a negative cost
+		// to signify that they cannot be purchased
+		return abs(pUnitA->getUnitInfo().getEuropeCost()) > abs(pUnitB->getUnitInfo().getEuropeCost());
+	}
+}
+
+void CvPlayer::sortEuropeUnits()
+{
+	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
+}

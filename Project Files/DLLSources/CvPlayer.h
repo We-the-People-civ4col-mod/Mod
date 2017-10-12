@@ -1084,6 +1084,7 @@ public:
 	void updateTransportThreshold();
 	void updateTransportThreshold(YieldTypes eYield);
 	// transport feeder - end - Nightinggale
+	void sortEuropeUnits();
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

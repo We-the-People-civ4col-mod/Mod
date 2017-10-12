@@ -6234,6 +6234,10 @@ bool CvUnitAI::AI_europe()
 	}
 	// TAC - AI purchases military units - koma13 - END
 
+	// Erik: Pick up the most valuable units first (e.g. statesmen)
+	// and leave the less valuable units (e.g. servants) for last
+	kOwner.sortEuropeUnits();
+
 	//Pick up units from Europe (FIFO)
 	std::deque<CvUnit*> aUnits;
 	for (int i = 0; i < kOwner.getNumEuropeUnits(); ++i)
