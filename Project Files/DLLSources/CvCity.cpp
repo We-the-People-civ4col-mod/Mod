@@ -4113,7 +4113,8 @@ void CvCity::changeLandPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiLandPlotYield[eIndex] += std::max(0, getLandPlotYield(eIndex) + iChange);
+		m_aiLandPlotYield[eIndex] += iChange;
+		m_aiLandPlotYield[eIndex] = std::max(m_aiLandPlotYield[eIndex], 0);
 		updateYield();
 	}
 }
@@ -4134,7 +4135,8 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield[eIndex] += std::max(0, getSeaPlotYield(eIndex) + iChange);
+		m_aiSeaPlotYield[eIndex] += iChange;
+		m_aiSeaPlotYield[eIndex] = std::max(m_aiSeaPlotYield[eIndex], 0);
 		updateYield();
 	}
 }
@@ -4155,7 +4157,8 @@ void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiRiverPlotYield[eIndex] += std::max(0, getRiverPlotYield(eIndex) + iChange);
+		m_aiRiverPlotYield[eIndex] += iChange;
+		m_aiRiverPlotYield[eIndex] = std::max(m_aiRiverPlotYield[eIndex], 0);
 		updateYield();
 	}
 }
