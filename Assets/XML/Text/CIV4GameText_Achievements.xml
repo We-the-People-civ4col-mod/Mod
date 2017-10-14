@@ -2308,6 +2308,30 @@
   <German>Gouverneur, es ist wieder ein politischer Fl&#252;chtling in der neuen Welt angekommen. Wie man h&#246;rt, ist er ein gebildeter und politisch aufgekl&#228;rter Mann. Ihr solltet ihn eventuell als Verwaltungsbeamten oder auch als Doktor einsetzen. Am besten dient dieser Fremde Eurer Kolonie jedoch, wenn ihr ihn in eine Schule, Akademie oder Universit&#228;t steckt. Er wird schnell einen Beruf erlernen, den ihr derzeit in den Kolonien ganz besonders ben&#246;tigt. Vertraut mir![NEWLINE][NEWLINE]</German>
   <Italian>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer.  [NEWLINE][NEWLINE]</Italian>
   <Spanish>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer.  [NEWLINE][NEWLINE]</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_GOVERNOR</Tag>
+  <English>The Governor arrives!</English>
+  <French>The Governor arrives!</French>
+  <German>Der K&#246;nig entsendet einen Stellvertreter!</German>
+  <Italian>The Governor arrives!</Italian>
+  <Spanish>The Governor arrives!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_GOVERNOR_HEAD</Tag>
+  <English>The Governor arrives!</English>
+  <French>The Governor arrives!</French>
+  <German>Der Stellvertreter des K&#246;nigs</German>
+  <Italian>The Governor arrives!</Italian>
+  <Spanish>The Governor arrives!</Spanish>
+ </TEXT>
+ <TEXT>
+  <Tag>TXT_KEY_ACHIEVE_GOVERNOR_TEXT</Tag>
+  <English>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</English>
+  <French>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</French>
+  <German>Euer K&#246;nig, Herrscher von Gottes Gnaden, hat seinen Stellvertreter in die Neue Welt gesandt, um die Kontrolle über die Kolonien zu sichern und um eine geordnete Verwaltung aufzubauen. So helfe uns Gott![NEWLINE][NEWLINE]</German>
+  <Italian>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</Italian>
+  <Spanish>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</Spanish>
  </TEXT>   
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
