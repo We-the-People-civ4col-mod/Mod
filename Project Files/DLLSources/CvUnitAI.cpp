@@ -4301,6 +4301,85 @@ void CvUnitAI::AI_workerSeaMove()
 }
 //End TAC Whaling, ray
 
+
+// Erik: Determine whether a non-free unit is more expensive
+// than the default/unrestricted free unit
+int CvUnitAI::AI_getCostDifferenceFreeVsSlave() const
+{
+	int iEuropeMin = INT_MAX;
+	int iAfricaMin = INT_MAX;
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+		
+		if (eLoopUnit != NO_UNIT)
+		{
+			const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+
+			// Find the cheapeast european unit that cannot escape
+			if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getEuropeCost() > 0 && !kUnitInfo.LbD_canEscape())
+			{
+				if (kOwner.getEuropeUnitBuyPrice(eLoopUnit) < iEuropeMin)
+				{
+					iEuropeMin = kOwner.getEuropeUnitBuyPrice(eLoopUnit);
+				}
+			}
+
+			// Find the cheapest african unit that can escape
+			if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getAfricaCost() > 0 && kUnitInfo.LbD_canEscape())
+			{
+				if (kOwner.getAfricaUnitBuyPrice(eLoopUnit) < iAfricaMin)
+				{
+					iAfricaMin = kOwner.getAfricaUnitBuyPrice(eLoopUnit);
+				}
+			}
+		}
+	}
+
+	// We must have found units matching our requirements
+	FAssert(iEuropeMin < INT_MAX);
+	FAssert(iAfricaMin < INT_MAX);
+
+	return iEuropeMin - iAfricaMin;
+}
+
+/// <summary>Find the best port given the conditions</summary>
+bool CvUnitAI::AI_sailToPreferredPort(bool bMove)
+{
+	if (!hasAnyUnitInCargo())
+	{
+		CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+		// In general we should prefer Europe, but we will consider going to Africa if:
+		// 1) We cannot fill our transport ship with more than half the capacity of colonists for the return journey, rounded down
+		const bool bAfricaRatio = (kOwner.getNumEuropeUnits() / static_cast<double>(cargoSpace()) <= 0.5);
+
+		// 2) Our goods must have a higher value in Africa than in Europe
+		const bool bAfricaBetterValue = true;
+		
+		// 3) The price of a slave must be less than a free colonist
+		const int iPriceDifference = AI_getCostDifferenceFreeVsSlave();
+
+		// We should expand on this in a future iteration but this will suffice for now
+		if (bAfricaRatio && bAfricaBetterValue && iPriceDifference > 0)
+		{
+			return AI_sailToAfrica(bMove);
+		}
+		else
+		{
+			return AI_sailToEurope(bMove);
+		}
+	}
+	else
+	{
+		// We cannot sail to a port given these conditions
+		return false;
+	}
+}
+
 void CvUnitAI::AI_transportSeaMove()
 {
 	PROFILE_FUNC();
@@ -4322,7 +4401,6 @@ void CvUnitAI::AI_transportSeaMove()
 			AI_setUnitAIState(UNITAI_STATE_SAIL);
 			return;
 		}
-
 	}
 
 	CvCity* pCity = NULL;
@@ -4332,13 +4410,13 @@ void CvUnitAI::AI_transportSeaMove()
 		{
 			return;
 		}
-		
+
 		if (plot()->getOwner() == getOwner())
 		{
 			pCity = plot()->getPlotCity();
 		}
 	}
-	
+
 	// TAC - AI Improved Naval AI - koma13 - START
 	bool bAtWar = GET_TEAM(getTeam()).getAnyWarPlanCount();
 	int iExtra = (kOwner.AI_isStrategy(STRATEGY_REVOLUTION_PREPARING) && !bAtWar) ? cargoSpace() : 0;
@@ -4349,6 +4427,14 @@ void CvUnitAI::AI_transportSeaMove()
 	UnitAIStates eStartingState = AI_getUnitAIState();
 	if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 	{
+		if (bPickupUnitsFromEurope || hasCargo())	// TAC - AI Improved Naval AI - koma13
+		{
+			if (AI_sailToPreferredPort(false))
+			{
+				return;
+			}
+		}
+
 		if (AI_continueMission(-1, MISSIONAI_SAIL_TO_EUROPE, MOVE_BUST_FOG))
 		{
 			return;
@@ -4359,17 +4445,6 @@ void CvUnitAI::AI_transportSeaMove()
 			return;
 		}
 
-		if (!hasAnyUnitInCargo())
-		{
-			if (bPickupUnitsFromEurope || hasCargo())	// TAC - AI Improved Naval AI - koma13
-			{
-				if (AI_sailToEurope(false))
-				{
-					return;
-				}
-			}
-		}
-		
 		if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 		{
 			if (AI_respondToPickup(2, UNITAI_TREASURE))
@@ -4377,12 +4452,13 @@ void CvUnitAI::AI_transportSeaMove()
 				return;
 			}
 		}
-		
-		if (pCity != NULL)
+
+		// If we happen to be in a city we own, attempt to load as many goods as possible
+		if (pCity != NULL && pCity->getOwner() == getOwner())
 		{
 			AI_collectGoods();
 		}
-	
+
 		if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 		{
 			if (AI_respondToPickup(10, UNITAI_TREASURE))
@@ -4391,39 +4467,40 @@ void CvUnitAI::AI_transportSeaMove()
 			}
 		}
 
-		if (isFull() && !hasAnyUnitInCargo())
+		if (isFull())
 		{
-			if (AI_sailToEurope())
+			if (AI_sailToPreferredPort(true))
 			{
 				return;
 			}
 		}
+		// Else we try to pick up more goods
 		else
-		{		
+		{
 			// Custom_House_Mod Start
-			if (!isFull() && AI_travelToPort(15, 6))
+			if (AI_travelToPort(15, 6))
 			{
 				return;
 			}
 			// Custom_House_Mod End
 		}
-		
-		if (!hasAnyUnitInCargo())
-		{		
-			// TAC - AI Improved Naval AI - koma13 - START
-			//if (hasCargo() || (kOwner.getNumEuropeUnits() > 0))
-			if (hasCargo() || bPickupUnitsFromEurope)
+
+		// This is the same condition as earlier, but
+		// at this point we may have gained cargo that we should sell
+
+		// TAC - AI Improved Naval AI - koma13 - START
+		//if (hasCargo() || (kOwner.getNumEuropeUnits() > 0))
+		if (hasCargo() || bPickupUnitsFromEurope)
 			// TAC - AI Improved Naval AI - koma13 - END
+		{
+			if (AI_sailToPreferredPort(true))
 			{
-				if (AI_sailToEurope())
-				{
-					return;
-				}
+				return;
 			}
 		}
 		AI_setUnitAIState(UNITAI_STATE_DEFAULT);
 	}
-	
+
 	if (AI_deliverUnits())
 	{
 		return;
@@ -4572,7 +4649,7 @@ void CvUnitAI::AI_transportSeaMove()
 		}
 	}
 	
-	if (!isFull())
+	if (!hasAnyUnitInCargo() && !isFull())
 	{
 		if (AI_travelToPort(40))
 		{

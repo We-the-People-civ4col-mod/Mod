@@ -67,6 +67,12 @@ private:
 	ProfessionTypes m_eProfession;
 };
 
+enum Port
+{
+	EUROPE,
+	AFRICA
+};
+
 class CvUnit : public CvDLLEntity
 {
 
@@ -871,6 +877,8 @@ protected:
 	YieldTypes getYieldUncached() const;
 	YieldTypes m_eCachedYield;
 // unit yield cache - end - Nightinggale
+	int CvUnit::getCargoValue(Port port) const;
+
 };
 
 

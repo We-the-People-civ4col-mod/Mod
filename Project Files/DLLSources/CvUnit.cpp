@@ -14622,3 +14622,43 @@ int CvUnit::getAmountForNativeTrade() const
 	return m_AmountForNativeTrade;
 }
 // R&R, ray, Natives Trading - END
+
+// Returns 0 if there are no yield units on the transport to evaluate
+int CvUnit::getCargoValue(Port port) const
+{
+	CvPlot const* const pPlot = plot();
+
+	// TODO: Determine if the plot can  ever be NULL
+	FAssert(pPlot != NULL);
+
+	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
+
+	int sellValue = 0;
+
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getTransportUnit() == this)
+		{
+			YieldTypes eYield = pLoopUnit->getYield();
+
+			if (eYield != NO_YIELD)
+			{
+				if (port == EUROPE && kOwner.isYieldEuropeTradable(eYield))
+				{
+					sellValue += pLoopUnit->getYieldStored() * kEuropePlayer.getYieldBuyPrice(eYield);
+				}
+				if (port == AFRICA && kOwner.isYieldAfricaTradable(eYield))
+				{
+					sellValue += pLoopUnit->getYieldStored() * kEuropePlayer.getYieldAfricaBuyPrice(eYield);
+				}
+			}
+		}
+	}
+
+	return sellValue;
+}
