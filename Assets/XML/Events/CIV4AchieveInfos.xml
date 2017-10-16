@@ -4037,6 +4037,37 @@
 		<YieldProduced/>
 	</AchieveInfo>
 	<AchieveInfo>
+		<Type>ACHIEVE_GOVERNOR</Type>
+		<Description>TXT_KEY_ACHIEVE_GOVERNOR</Description>
+		<bActive>1</bActive>
+		<bAfterMove>0</bAfterMove>
+		<HeaderTextKey>TXT_KEY_ACHIEVE_GOVERNOR_HEAD</HeaderTextKey>
+		<BodyTextKey>TXT_KEY_ACHIEVE_GOVERNOR_TEXT</BodyTextKey>
+		<PictureFileName>Art/Achievements/governor.dds</PictureFileName>
+		<iPictureX>360</iPictureX>
+		<iPictureY>240</iPictureY>
+		<iLowTurnNumber>0</iLowTurnNumber>
+		<iHighTurnNumber>10000</iHighTurnNumber>
+		<bLandDiscovered>0</bLandDiscovered>
+		<bDiscoverEast>0</bDiscoverEast>
+		<bDiscoverWest>0</bDiscoverWest>
+		<iNumColonies>0</iNumColonies>
+		<iNumEuroContacts>0</iNumEuroContacts>
+		<iNumNativeContacts>0</iNumNativeContacts>
+		<iNumGoodsTraded>-1</iNumGoodsTraded>
+		<iNumCombatsWonNeeded>-1</iNumCombatsWonNeeded>
+		<iNumSeaCombatsWonNeeded>-1</iNumSeaCombatsWonNeeded>
+		<NumBuildings/>
+		<NumUnits>
+			<NumUnits>
+				<UnitType>UNIT_GOVERNOR</UnitType>
+				<iNumber>1</iNumber>
+			</NumUnits>
+		</NumUnits>
+		<NumProfessions/>
+		<YieldProduced/>
+	</AchieveInfo>
+	<AchieveInfo>
 		<Type>ACHIEVE_THREE_LUMBERMILLS</Type>
 		<Description>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS</Description>
 		<bActive>1</bActive>
