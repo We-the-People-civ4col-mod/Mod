@@ -4358,7 +4358,7 @@ bool CvUnitAI::AI_sailToPreferredPort(bool bMove)
 		const bool bAfricaRatio = (kOwner.getNumEuropeUnits() / static_cast<double>(cargoSpace()) <= 0.5);
 
 		// 2) Our goods must have a higher value in Africa than in Europe
-		const bool bAfricaBetterValue = true;
+		const bool bAfricaBetterValue = getCargoValue(AFRICA) > getCargoValue(EUROPE);
 		
 		// 3) The price of a slave must be less than a free colonist
 		const int iPriceDifference = AI_getCostDifferenceFreeVsSlave();
