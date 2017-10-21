@@ -32,15 +32,11 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
 	TeamID=1
 	ContactWithTeam=1
-	ContactWithTeam=15
 	ContactWithTeam=38
 	ContactWithTeam=39
 	ContactWithTeam=40
@@ -49,9 +45,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -65,9 +58,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -81,9 +71,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -97,9 +84,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -113,9 +97,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -129,9 +110,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -145,9 +123,6 @@ BeginTeam
 	ContactWithTeam=43
 	ContactWithTeam=44
 	ContactWithTeam=45
-	ContactWithTeam=47
-	ContactWithTeam=48
-	AtWar=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -226,7 +201,6 @@ BeginTeam
 EndTeam
 BeginTeam
 	TeamID=15
-	ContactWithTeam=1
 	ContactWithTeam=8
 	ContactWithTeam=10
 	ContactWithTeam=14
@@ -450,9 +424,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=38
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -466,9 +437,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=39
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -482,9 +450,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=40
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -498,9 +463,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=41
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -514,9 +476,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=42
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -530,9 +489,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=43
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -546,9 +502,6 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=44
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
@@ -562,137 +515,21 @@ BeginTeam
 	ContactWithTeam=6
 	ContactWithTeam=7
 	ContactWithTeam=45
-	ContactWithTeam=46
-	ContactWithTeam=47
-	ContactWithTeam=48
 	RevealMap=0
 EndTeam
 BeginTeam
 	TeamID=46
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
 	ContactWithTeam=46
 	RevealMap=0
 EndTeam
 BeginTeam
 	TeamID=47
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
 	ContactWithTeam=47
-	ContactWithTeam=48
-	PermanentWarPeace=0
-	PermanentWarPeace=1
-	PermanentWarPeace=2
-	PermanentWarPeace=3
-	PermanentWarPeace=4
-	PermanentWarPeace=5
-	PermanentWarPeace=6
-	PermanentWarPeace=7
-	PermanentWarPeace=38
-	PermanentWarPeace=39
-	PermanentWarPeace=40
-	PermanentWarPeace=41
-	PermanentWarPeace=42
-	PermanentWarPeace=43
-	PermanentWarPeace=44
-	PermanentWarPeace=45
-	PermanentWarPeace=48
 	RevealMap=0
 EndTeam
 BeginTeam
 	TeamID=48
-	ContactWithTeam=0
-	ContactWithTeam=1
-	ContactWithTeam=2
-	ContactWithTeam=3
-	ContactWithTeam=4
-	ContactWithTeam=5
-	ContactWithTeam=6
-	ContactWithTeam=7
-	ContactWithTeam=38
-	ContactWithTeam=39
-	ContactWithTeam=40
-	ContactWithTeam=41
-	ContactWithTeam=42
-	ContactWithTeam=43
-	ContactWithTeam=44
-	ContactWithTeam=45
-	ContactWithTeam=47
 	ContactWithTeam=48
-	AtWar=0
-	AtWar=1
-	AtWar=2
-	AtWar=3
-	AtWar=4
-	AtWar=5
-	AtWar=6
-	AtWar=7
-	PermanentWarPeace=0
-	PermanentWarPeace=1
-	PermanentWarPeace=2
-	PermanentWarPeace=3
-	PermanentWarPeace=4
-	PermanentWarPeace=5
-	PermanentWarPeace=6
-	PermanentWarPeace=7
-	PermanentWarPeace=8
-	PermanentWarPeace=9
-	PermanentWarPeace=10
-	PermanentWarPeace=11
-	PermanentWarPeace=12
-	PermanentWarPeace=13
-	PermanentWarPeace=14
-	PermanentWarPeace=15
-	PermanentWarPeace=16
-	PermanentWarPeace=17
-	PermanentWarPeace=18
-	PermanentWarPeace=19
-	PermanentWarPeace=20
-	PermanentWarPeace=21
-	PermanentWarPeace=22
-	PermanentWarPeace=23
-	PermanentWarPeace=24
-	PermanentWarPeace=25
-	PermanentWarPeace=26
-	PermanentWarPeace=27
-	PermanentWarPeace=28
-	PermanentWarPeace=29
-	PermanentWarPeace=30
-	PermanentWarPeace=31
-	PermanentWarPeace=32
-	PermanentWarPeace=33
-	PermanentWarPeace=34
-	PermanentWarPeace=35
-	PermanentWarPeace=36
-	PermanentWarPeace=37
-	PermanentWarPeace=38
-	PermanentWarPeace=39
-	PermanentWarPeace=40
-	PermanentWarPeace=41
-	PermanentWarPeace=42
-	PermanentWarPeace=43
-	PermanentWarPeace=44
-	PermanentWarPeace=45
 	RevealMap=0
 EndTeam
 BeginPlayer
@@ -850,16 +687,6 @@ BeginPlayer
 	AttitudePlayer=21, AttitudeExtra=2
 	AttitudePlayer=22, AttitudeExtra=-10
 	AttitudePlayer=32, AttitudeExtra=5
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -881,10 +708,6 @@ BeginPlayer
 	AttitudePlayer=15, AttitudeExtra=2
 	AttitudePlayer=30, AttitudeExtra=-10
 	AttitudePlayer=32, AttitudeExtra=-5
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -906,12 +729,6 @@ BeginPlayer
 	AttitudePlayer=15, AttitudeExtra=-5
 	AttitudePlayer=18, AttitudeExtra=2
 	AttitudePlayer=25, AttitudeExtra=5
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -932,10 +749,6 @@ BeginPlayer
 	AttitudePlayer=9, AttitudeExtra=2
 	AttitudePlayer=25, AttitudeExtra=-10
 	AttitudePlayer=26, AttitudeExtra=-10
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -953,10 +766,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -978,12 +787,6 @@ BeginPlayer
 	AttitudePlayer=18, AttitudeExtra=-2
 	AttitudePlayer=20, AttitudeExtra=-2
 	AttitudePlayer=36, AttitudeExtra=-5
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1001,9 +804,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1025,11 +825,6 @@ BeginPlayer
 	AttitudePlayer=9, AttitudeExtra=2
 	AttitudePlayer=10, AttitudeExtra=-5
 	AttitudePlayer=22, AttitudeExtra=-2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1047,12 +842,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1074,12 +863,6 @@ BeginPlayer
 	AttitudePlayer=31, AttitudeExtra=2
 	AttitudePlayer=34, AttitudeExtra=-2
 	AttitudePlayer=36, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1100,9 +883,6 @@ BeginPlayer
 	AttitudePlayer=10, AttitudeExtra=2
 	AttitudePlayer=13, AttitudeExtra=-2
 	AttitudePlayer=20, AttitudeExtra=10
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1120,9 +900,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1146,18 +923,6 @@ BeginPlayer
 	AttitudePlayer=24, AttitudeExtra=5
 	AttitudePlayer=31, AttitudeExtra=-2
 	AttitudePlayer=34, AttitudeExtra=5
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1176,16 +941,6 @@ BeginPlayer
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=8, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1205,9 +960,6 @@ BeginPlayer
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=8, AttitudeExtra=-10
 	AttitudePlayer=15, AttitudeExtra=-2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1226,9 +978,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1248,10 +997,6 @@ BeginPlayer
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=20, AttitudeExtra=2
 	AttitudePlayer=34, AttitudeExtra=-2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1272,9 +1017,6 @@ BeginPlayer
 	AttitudePlayer=10, AttitudeExtra=5
 	AttitudePlayer=11, AttitudeExtra=-10
 	AttitudePlayer=26, AttitudeExtra=10
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1294,7 +1036,6 @@ BeginPlayer
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=11, AttitudeExtra=-10
 	AttitudePlayer=25, AttitudeExtra=10
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1313,9 +1054,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1333,10 +1071,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1355,9 +1089,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1377,10 +1108,6 @@ BeginPlayer
 	AttitudePlayer=0, AttitudeExtra=2
 	AttitudePlayer=9, AttitudeExtra=-10
 	AttitudePlayer=32, AttitudeExtra=10
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1401,10 +1128,6 @@ BeginPlayer
 	AttitudePlayer=17, AttitudeExtra=2
 	AttitudePlayer=20, AttitudeExtra=-5
 	AttitudePlayer=36, AttitudeExtra=-10
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1425,10 +1148,6 @@ BeginPlayer
 	AttitudePlayer=8, AttitudeExtra=5
 	AttitudePlayer=9, AttitudeExtra=-5
 	AttitudePlayer=30, AttitudeExtra=10
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1446,7 +1165,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1467,11 +1185,6 @@ BeginPlayer
 	AttitudePlayer=17, AttitudeExtra=-2
 	AttitudePlayer=20, AttitudeExtra=5
 	AttitudePlayer=24, AttitudeExtra=-5
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1490,9 +1203,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1513,13 +1223,6 @@ BeginPlayer
 	AttitudePlayer=13, AttitudeExtra=-5
 	AttitudePlayer=17, AttitudeExtra=-10
 	AttitudePlayer=31, AttitudeExtra=2
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1537,7 +1240,6 @@ BeginPlayer
 	StartingEra=ERA_DISCOVERY
 	RandomStartLocation=false
 	AttitudePlayer=0, AttitudeExtra=2
-	CityList=%s
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
@@ -1686,34 +1388,18 @@ BeginPlayer
 EndPlayer
 BeginPlayer
 	Team=47
-	LeaderType=LEADER_CHURCH
-	LeaderName=TXT_KEY_LEADER_CHURCH
-	CivDesc=TXT_KEY_CIV_CHURCH_DESC
-	CivShortDesc=TXT_KEY_CIV_CHURCH_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_CHURCH_ADJECTIVE
-	CivType=CIVILIZATION_CHURCH
-	Color=PLAYERCOLOR_WHITE
-	ArtStyle=ARTSTYLE_ENGLAND
-	PlayableCiv=0
-	StartingGold=0
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
+	LeaderType=NONE
+	CivType=NONE
+	Color=NONE
+	ArtStyle=NONE
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginPlayer
 	Team=48
-	LeaderType=LEADER_BARBARIAN
-	LeaderName=TXT_KEY_LEADER_BARBARIAN
-	CivDesc=TXT_KEY_CIV_BARBARIAN_DESC
-	CivShortDesc=TXT_KEY_CIV_BARBARIAN_SHORT_DESC
-	CivAdjective=TXT_KEY_CIV_BARBARIAN_ADJECTIVE
-	CivType=CIVILIZATION_BARBARIAN
-	Color=PLAYERCOLOR_BLACK
-	ArtStyle=ARTSTYLE_NATIVES_EAST
-	PlayableCiv=0
-	StartingGold=0
-	StartingEra=ERA_DISCOVERY
-	RandomStartLocation=false
+	LeaderType=NONE
+	CivType=NONE
+	Color=NONE
+	ArtStyle=NONE
 	Handicap=HANDICAP_EXPLORER
 EndPlayer
 BeginMap
@@ -1729,6 +1415,7 @@ BeginMap
 	num plots written=8704
 	num signs written=0
 	Randomize Resources=false
+	Randomize Goodies=true
 EndMap
 
 ### Plot Info ###
@@ -1987,7 +1674,6 @@ EndPlot
 BeginPlot
 	x=0,y=42
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2012,7 +1698,6 @@ EndPlot
 BeginPlot
 	x=0,y=46
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2417,7 +2102,6 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=0,y=114
@@ -2425,20 +2109,17 @@ BeginPlot
 	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=0,y=115
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=0,y=116
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=0,y=117
@@ -2536,7 +2217,6 @@ EndPlot
 BeginPlot
 	x=1,y=6
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2609,7 +2289,6 @@ EndPlot
 BeginPlot
 	x=1,y=18
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2664,7 +2343,6 @@ EndPlot
 BeginPlot
 	x=1,y=27
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -2881,7 +2559,6 @@ EndPlot
 BeginPlot
 	x=1,y=63
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -3176,45 +2853,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=1,y=114
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=7
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=7
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PIONEER, UnitOwner=7
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_WORKER
-	EndUnit
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=1,y=115
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=1,y=116
@@ -3229,7 +2878,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=118
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 EndPlot
@@ -3240,7 +2888,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=120
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -3896,7 +3543,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=103
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -3907,7 +3553,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=105
-	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -3938,7 +3583,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=111
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -3952,20 +3596,17 @@ BeginPlot
 	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=2,y=114
 	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=2,y=115
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=2,y=116
@@ -4364,7 +4005,6 @@ EndPlot
 BeginPlot
 	x=3,y=54
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -4389,7 +4029,6 @@ EndPlot
 BeginPlot
 	x=3,y=58
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -4597,7 +4236,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=93
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -4715,7 +4353,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=116
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -4929,7 +4566,6 @@ EndPlot
 BeginPlot
 	x=4,y=23
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -5026,7 +4662,6 @@ EndPlot
 BeginPlot
 	x=4,y=39
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -5306,14 +4941,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=86
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=30,
 EndPlot
 BeginPlot
 	x=4,y=87
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -5540,7 +5173,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=4,y=124
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=21,
@@ -5747,7 +5379,6 @@ EndPlot
 BeginPlot
 	x=5,y=30
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -6236,7 +5867,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=109
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -6280,7 +5910,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=117
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
@@ -6372,7 +6001,6 @@ EndPlot
 BeginPlot
 	x=6,y=3
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -6422,7 +6050,6 @@ EndPlot
 BeginPlot
 	x=6,y=11
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -6561,7 +6188,6 @@ EndPlot
 BeginPlot
 	x=6,y=34
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -6754,7 +6380,6 @@ EndPlot
 BeginPlot
 	x=6,y=66
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -6828,7 +6453,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=79
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=28,
@@ -6892,7 +6516,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=86
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 	TeamReveal=30,
@@ -6936,7 +6559,6 @@ BeginPlot
 	x=6,y=92
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -7047,7 +6669,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=109
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -7122,7 +6743,6 @@ BeginPlot
 	x=6,y=122
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -7137,7 +6757,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=6,y=124
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=21,
@@ -7419,7 +7038,6 @@ EndPlot
 BeginPlot
 	x=7,y=43
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -7474,7 +7092,6 @@ EndPlot
 BeginPlot
 	x=7,y=52
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -7766,7 +7383,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=99
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -8428,7 +8044,6 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
-		PromotionType=PROMOTION_MINUTEMAN2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -8451,7 +8066,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=80
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -8466,7 +8080,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=82
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -8519,7 +8132,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=90
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 	TeamReveal=16,30,
@@ -8552,7 +8164,6 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
-		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -8649,7 +8260,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=104
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -9519,7 +9129,6 @@ BeginPlot
 	x=9,y=116
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -9608,7 +9217,6 @@ EndPlot
 BeginPlot
 	x=10,y=3
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -9652,7 +9260,6 @@ EndPlot
 BeginPlot
 	x=10,y=10
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -9677,7 +9284,6 @@ EndPlot
 BeginPlot
 	x=10,y=14
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -9780,7 +9386,6 @@ EndPlot
 BeginPlot
 	x=10,y=31
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -9805,7 +9410,6 @@ EndPlot
 BeginPlot
 	x=10,y=35
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -9884,7 +9488,6 @@ EndPlot
 BeginPlot
 	x=10,y=48
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -10043,7 +9646,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=75
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=9,28,
@@ -10179,7 +9781,6 @@ BeginPlot
 	x=10,y=90
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
@@ -10335,7 +9936,6 @@ BeginPlot
 	x=10,y=114
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -10361,7 +9961,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=118
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -10652,7 +10251,6 @@ EndPlot
 BeginPlot
 	x=11,y=39
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -10779,7 +10377,6 @@ EndPlot
 BeginPlot
 	x=11,y=60
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -11064,7 +10661,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=107
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -11294,7 +10890,6 @@ EndPlot
 BeginPlot
 	x=12,y=18
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -11337,7 +10932,6 @@ EndPlot
 BeginPlot
 	x=12,y=25
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -11623,7 +11217,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=73
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 	TeamReveal=9,33,
@@ -12404,7 +11997,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=70
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=11,33,
@@ -12449,7 +12041,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=77
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 	TeamReveal=9,
@@ -12698,7 +12289,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=110
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=1
@@ -12874,7 +12464,6 @@ EndPlot
 BeginPlot
 	x=14,y=12
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -13185,7 +12774,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=64
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=11,
@@ -13475,7 +13063,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=103
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -13570,7 +13157,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=116
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -13869,7 +13455,6 @@ EndPlot
 BeginPlot
 	x=15,y=37
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -14237,7 +13822,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=87
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 	TeamReveal=30,
@@ -14263,7 +13847,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=91
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=16,
@@ -14653,7 +14236,6 @@ EndPlot
 BeginPlot
 	x=16,y=20
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -14720,7 +14302,6 @@ EndPlot
 BeginPlot
 	x=16,y=31
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -14830,7 +14411,6 @@ EndPlot
 BeginPlot
 	x=16,y=49
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -14885,7 +14465,6 @@ EndPlot
 BeginPlot
 	x=16,y=58
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -14957,7 +14536,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=69
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
@@ -14975,7 +14553,6 @@ BeginPlot
 	x=16,y=71
 	isNOfRiver
 	RiverWEDirection=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -15057,7 +14634,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=81
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_DESERT
 	PlotType=0
 	TeamReveal=9,30,
@@ -15153,7 +14729,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=95
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -15356,7 +14931,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=121
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=21,
@@ -15816,7 +15390,6 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
-		PromotionType=PROMOTION_MINUTEMAN2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -16156,7 +15729,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=108
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -16971,7 +16543,6 @@ BeginPlot
 		Damage=0
 		Level=1, Experience=0
 		PromotionType=PROMOTION_RANGER2
-		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -17426,7 +16997,6 @@ EndPlot
 BeginPlot
 	x=19,y=43
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -17558,7 +17128,6 @@ BeginPlot
 	x=19,y=66
 	isNOfRiver
 	RiverWEDirection=1
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
@@ -17571,7 +17140,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=19,y=68
@@ -17579,26 +17148,26 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=19,y=69
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=19,y=70
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=19,y=71
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=19,y=72
@@ -17801,7 +17370,6 @@ BeginPlot
 	x=19,y=99
 	RiverNSDirection=2
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -17832,7 +17400,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=103
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -18056,7 +17623,6 @@ EndPlot
 BeginPlot
 	x=20,y=11
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -18388,7 +17954,7 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=20,y=67
@@ -18416,39 +17982,39 @@ BeginPlot
 		CitizenType=UNIT_NATIVE
 		Player11Culture=30
 	EndCity
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=20,y=68
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=20,y=69
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=20,y=70
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=20,y=71
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=20,y=72
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
-	TeamReveal=2,14,
+	TeamReveal=14,
 EndPlot
 BeginPlot
 	x=20,y=73
@@ -18457,7 +18023,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=2,14,
+	TeamReveal=14,
 EndPlot
 BeginPlot
 	x=20,y=74
@@ -18493,7 +18059,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=79
-	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -18593,7 +18158,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=90
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=32,
@@ -18633,7 +18197,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=96
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -18781,7 +18344,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=119
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -18944,7 +18506,6 @@ EndPlot
 BeginPlot
 	x=21,y=18
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -19139,7 +18700,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=51
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -19257,7 +18817,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=21,y=66
@@ -19265,44 +18825,43 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=21,y=67
 	BonusType=BONUS_CRAB
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=21,y=68
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,26,37,
+	TeamReveal=11,26,37,
 EndPlot
 BeginPlot
 	x=21,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=21,y=70
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=21,y=71
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=21,y=72
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=21,y=73
@@ -19313,7 +18872,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=74
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -19415,7 +18973,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=86
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -19542,7 +19099,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=105
-	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -19574,7 +19130,6 @@ BeginPlot
 	x=21,y=109
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -19695,7 +19250,6 @@ EndPlot
 BeginPlot
 	x=22,y=1
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -20022,7 +19576,6 @@ EndPlot
 BeginPlot
 	x=22,y=56
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -20045,7 +19598,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=60
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=11,
@@ -20081,49 +19633,46 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=2,11,25,26,37,
+	TeamReveal=11,25,26,37,
 EndPlot
 BeginPlot
 	x=22,y=66
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,25,26,37,
+	TeamReveal=11,25,26,37,
 EndPlot
 BeginPlot
 	x=22,y=67
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,25,26,37,
+	TeamReveal=11,25,26,37,
 EndPlot
 BeginPlot
 	x=22,y=68
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,11,25,
+	TeamReveal=11,25,
 EndPlot
 BeginPlot
 	x=22,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,11,
+	TeamReveal=11,
 EndPlot
 BeginPlot
 	x=22,y=70
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=22,y=71
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=22,y=72
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=22,y=73
@@ -20411,7 +19960,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=109
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -20679,7 +20227,6 @@ EndPlot
 BeginPlot
 	x=23,y=22
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -20935,77 +20482,47 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=2,11,25,26,37,
+	TeamReveal=11,25,26,37,
 EndPlot
 BeginPlot
 	x=23,y=66
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,11,25,26,37,
+	TeamReveal=11,25,26,37,
 EndPlot
 BeginPlot
 	x=23,y=67
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVELA_REDONDA, UnitOwner=2
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=3
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_VETERAN_CAVALRY, UnitOwner=2
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		PromotionType=PROMOTION_VETERAN1
-		PromotionType=PROMOTION_FEINT
-		PromotionType=PROMOTION_LEADERSHIP
-		FacingDirection=3
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=2
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=3
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=2,11,25,26,37,
+	TeamReveal=11,25,26,37,
 EndPlot
 BeginPlot
 	x=23,y=68
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,11,25,
+	TeamReveal=11,25,
 EndPlot
 BeginPlot
 	x=23,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=23,y=70
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=23,y=71
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=23,y=72
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=23,y=73
@@ -21207,7 +20724,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=98
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -21243,7 +20759,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=103
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -21566,7 +21081,6 @@ EndPlot
 BeginPlot
 	x=24,y=31
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -21661,7 +21175,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=47
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -21787,7 +21300,7 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=2,25,
+	TeamReveal=25,
 EndPlot
 BeginPlot
 	x=24,y=66
@@ -21797,38 +21310,37 @@ BeginPlot
 	ImprovementType=IMPROVEMENT_FARM
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=2,25,26,37,
+	TeamReveal=25,26,37,
 EndPlot
 BeginPlot
 	x=24,y=67
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,25,26,37,
+	TeamReveal=25,26,37,
 EndPlot
 BeginPlot
 	x=24,y=68
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=2,25,
+	TeamReveal=25,
 EndPlot
 BeginPlot
 	x=24,y=69
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,25,
+	TeamReveal=25,
 EndPlot
 BeginPlot
 	x=24,y=70
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,25,
+	TeamReveal=25,
 EndPlot
 BeginPlot
 	x=24,y=71
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=2,
 EndPlot
 BeginPlot
 	x=24,y=72
@@ -21925,7 +21437,7 @@ BeginPlot
 	x=24,y=83
 	RiverNSDirection=2
 	isWOfRiver
-	BonusType=BONUS_HORSES
+	BonusType=BONUS_CATTLE
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=15,32,
@@ -22047,7 +21559,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=96
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 	TeamReveal=12,
@@ -22307,7 +21818,6 @@ EndPlot
 BeginPlot
 	x=25,y=10
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -22451,7 +21961,6 @@ EndPlot
 BeginPlot
 	x=25,y=35
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -22617,7 +22126,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=64
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=1
@@ -22665,14 +22173,14 @@ BeginPlot
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=2,25,
+	TeamReveal=25,
 EndPlot
 BeginPlot
 	x=25,y=67
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=2,25,
+	TeamReveal=25,
 EndPlot
 BeginPlot
 	x=25,y=68
@@ -22695,7 +22203,6 @@ EndPlot
 BeginPlot
 	x=25,y=71
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -22904,7 +22411,6 @@ BeginPlot
 	x=25,y=102
 	RiverNSDirection=2
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -23156,7 +22662,6 @@ EndPlot
 BeginPlot
 	x=26,y=16
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -23367,7 +22872,6 @@ EndPlot
 BeginPlot
 	x=26,y=53
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -23395,7 +22899,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=58
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=18,
@@ -23535,7 +23038,6 @@ BeginPlot
 	x=26,y=78
 	isNOfRiver
 	RiverWEDirection=1
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -23978,7 +23480,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=23
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -24075,7 +23576,6 @@ EndPlot
 BeginPlot
 	x=27,y=39
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -24412,7 +23912,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=84
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -24848,7 +24347,6 @@ EndPlot
 BeginPlot
 	x=28,y=27
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -25078,7 +24576,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=63
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -25104,7 +24601,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=67
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -25191,7 +24687,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -25269,7 +24764,6 @@ BeginPlot
 	x=28,y=87
 	RiverNSDirection=2
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -25327,7 +24821,6 @@ BeginPlot
 	x=28,y=95
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -25335,7 +24828,6 @@ BeginPlot
 	x=28,y=96
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -25370,7 +24862,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=102
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -25464,7 +24955,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=119
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -25721,7 +25211,6 @@ EndPlot
 BeginPlot
 	x=29,y=34
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -25801,7 +25290,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=48
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=20,
@@ -26096,7 +25584,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=89
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -26386,7 +25873,6 @@ EndPlot
 BeginPlot
 	x=30,y=4
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -26460,7 +25946,6 @@ EndPlot
 BeginPlot
 	x=30,y=16
 	EuropeType=EUROPE_WEST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -26963,7 +26448,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=91
-	BonusType=BONUS_HORSES
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=8,
@@ -27022,7 +26506,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=30,y=100
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -27517,7 +27000,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=52
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=20,
@@ -27591,7 +27073,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=61
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=18,
@@ -27628,7 +27109,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=67
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=10,
@@ -27668,7 +27148,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=73
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=10,
@@ -27690,7 +27169,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=76
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -27814,7 +27292,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=91
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -28350,7 +27827,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=48
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -28391,7 +27867,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=51
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -28596,7 +28071,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=80
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
 	TeamReveal=15,22,
@@ -28766,7 +28240,6 @@ BeginPlot
 	x=32,y=103
 	isNOfRiver
 	RiverWEDirection=1
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -29159,7 +28632,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=39
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=20,
@@ -29420,7 +28892,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=72
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -29444,14 +28915,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=33,y=76
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=33,y=77
@@ -29464,7 +28935,7 @@ BeginPlot
 	x=33,y=78
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
-	TeamReveal=1,15,22,
+	TeamReveal=15,22,
 EndPlot
 BeginPlot
 	x=33,y=79
@@ -29658,7 +29129,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=99
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -29905,7 +29375,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=8
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=34,
@@ -30358,28 +29827,28 @@ BeginPlot
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=34,y=76
 	BonusType=BONUS_PEARLS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=34,y=77
 	BonusType=BONUS_INDIGO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=34,y=78
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=34,y=79
@@ -30397,7 +29866,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=81
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -30429,7 +29897,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=85
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -30495,7 +29962,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=94
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -30574,7 +30040,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=106
-	BonusType=BONUS_WALRUSS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=21,
@@ -30622,7 +30087,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=34,y=114
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=21,
@@ -30825,7 +30289,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=19
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -30851,7 +30314,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=23
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=24,
@@ -30970,7 +30432,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=43
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	RouteType=ROUTE_PLASTERED_ROAD
 	TerrainType=TERRAIN_SAVANNAH
@@ -31088,7 +30549,6 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
-		PromotionType=PROMOTION_MOUNTAINEER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -31209,42 +30669,19 @@ BeginPlot
 	x=35,y=75
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=35,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=35,y=77
 	RouteType=ROUTE_ROAD
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=1
-		Damage=0
-		Level=1, Experience=5
-		FacingDirection=7
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=1
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=7
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PREACHER, UnitOwner=1
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=7
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
 	BeginUnit
 		UnitType=UNIT_NATIVE, UnitOwner=15
 		Profession=PROFESSION_BRAVE
@@ -31262,14 +30699,14 @@ BeginPlot
 		BuildingType=BUILDING_NATIVE_CORN_CHAMBER
 		CitizenType=UNIT_NATIVE
 	EndCity
-	TeamReveal=1,10,15,
+	TeamReveal=10,15,
 EndPlot
 BeginPlot
 	x=35,y=78
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=35,y=79
@@ -31409,7 +30846,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=99
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -31665,7 +31101,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=11
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -31978,7 +31413,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=46
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -32034,7 +31468,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=51
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -32096,7 +31529,6 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
-		PromotionType=PROMOTION_MOUNTAINEER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -32115,7 +31547,6 @@ BeginPlot
 	x=36,y=56
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -32252,33 +31683,33 @@ BeginPlot
 	x=36,y=75
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=36,y=76
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=36,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=36,y=78
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=36,y=79
 	BonusType=BONUS_INDIGO
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,15,22,
+	TeamReveal=15,22,
 EndPlot
 BeginPlot
 	x=36,y=80
@@ -32611,7 +32042,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=7
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=34,
@@ -32674,7 +32104,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=17
-	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=24,
@@ -32777,7 +32206,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=34
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=20,
@@ -32942,7 +32370,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=51
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -32973,7 +32400,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=55
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 	TeamReveal=13,27,
@@ -33101,33 +32527,33 @@ BeginPlot
 	x=37,y=75
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=37,y=76
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=37,y=77
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=37,y=78
 	BonusType=BONUS_PEARLS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=37,y=79
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=1,15,22,
+	TeamReveal=15,22,
 EndPlot
 BeginPlot
 	x=37,y=80
@@ -33673,7 +33099,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=33
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_DESERT
 	PlotType=1
 	TeamReveal=20,
@@ -33734,7 +33159,6 @@ BeginPlot
 		Damage=0
 		Level=1, Experience=0
 		PromotionType=PROMOTION_MOUNTAINEER2
-		PromotionType=PROMOTION_MINUTEMAN2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -33984,37 +33408,35 @@ BeginPlot
 	x=38,y=75
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=38,y=76
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=38,y=77
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=38,y=78
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,15,
+	TeamReveal=15,
 EndPlot
 BeginPlot
 	x=38,y=79
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=1,15,22,
+	TeamReveal=15,22,
 EndPlot
 BeginPlot
 	x=38,y=80
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -34110,7 +33532,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=91
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -34167,7 +33588,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=99
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -34519,7 +33939,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=32
-	BonusType=BONUS_SILVER
 	TerrainType=TERRAIN_DESERT
 	PlotType=0
 	TeamReveal=20,
@@ -34617,7 +34036,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=45
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -34779,7 +34197,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=62
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -34835,7 +34252,6 @@ EndPlot
 BeginPlot
 	x=39,y=71
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -34856,31 +34272,27 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=39,y=75
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=39,y=76
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=39,y=77
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=39,y=78
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=1,22,
+	TeamReveal=22,
 EndPlot
 BeginPlot
 	x=39,y=79
@@ -34945,7 +34357,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=88
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -35239,7 +34650,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=7
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -35524,7 +34934,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=45
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -35778,26 +35187,22 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=40,y=75
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=40,y=76
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=40,y=77
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=40,y=78
@@ -35834,7 +35239,7 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,22,
+	TeamReveal=19,22,
 EndPlot
 BeginPlot
 	x=40,y=84
@@ -35843,7 +35248,7 @@ BeginPlot
 	BonusType=BONUS_TOBACCO
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,22,
+	TeamReveal=19,22,
 EndPlot
 BeginPlot
 	x=40,y=85
@@ -35997,7 +35402,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=102
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -36192,7 +35596,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=10
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=34,
@@ -36222,7 +35625,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=15
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_DESERT
 	PlotType=2
 EndPlot
@@ -36250,7 +35652,6 @@ BeginPlot
 		Damage=0
 		Level=1, Experience=0
 		PromotionType=PROMOTION_SWAMP_FOX2
-		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -36522,7 +35923,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=56
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -36638,20 +36038,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=41,y=75
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=41,y=76
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=1,
 EndPlot
 BeginPlot
 	x=41,y=77
@@ -36670,7 +36067,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=80
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=22,
@@ -36679,33 +36075,33 @@ BeginPlot
 	x=41,y=81
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,22,
+	TeamReveal=22,
 EndPlot
 BeginPlot
 	x=41,y=82
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,22,
+	TeamReveal=22,
 EndPlot
 BeginPlot
 	x=41,y=83
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,22,
+	TeamReveal=19,22,
 EndPlot
 BeginPlot
 	x=41,y=84
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=41,y=85
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=41,y=86
@@ -36753,7 +36149,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=92
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -37023,7 +36418,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=12
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=34,
@@ -37108,7 +36502,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=25
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
 	TeamReveal=34,
@@ -37242,7 +36635,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=39
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -37357,7 +36749,6 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	BonusType=BONUS_GIANT_TREE
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -37551,55 +36942,30 @@ BeginPlot
 	x=42,y=81
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=42,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=0
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=5
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=0
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=5
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CHRISTIAN_MISSIONARY, UnitOwner=0
-		Profession=PROFESSION_MISSIONARY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=5
-		UnitAIType=UNITAI_MISSIONARY
-	EndUnit
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=42,y=83
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=42,y=84
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=42,y=85
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=42,y=86
@@ -37662,7 +37028,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=94
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -37675,7 +37040,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=96
-	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -37688,7 +37052,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=98
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -37879,7 +37242,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -37970,7 +37332,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=19
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=34,
@@ -38081,7 +37442,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=33
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -38273,7 +37633,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=55
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -38432,39 +37791,37 @@ BeginPlot
 	x=43,y=81
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=43,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=43,y=83
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=43,y=84
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=43,y=85
 	BonusType=BONUS_CATTLE
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=43,y=86
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=43,y=87
@@ -38934,7 +38291,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=35
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -38964,7 +38320,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=39
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -39277,45 +38632,41 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=44,y=81
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=44,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=44,y=83
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=44,y=84
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=44,y=85
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=44,y=86
 	BonusType=BONUS_HEMP
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=44,y=87
@@ -39394,7 +38745,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=44,y=95
-	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -39756,7 +39106,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=21
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -40182,7 +39531,6 @@ EndPlot
 BeginPlot
 	x=45,y=79
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -40191,38 +39539,34 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=45,y=81
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=45,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=45,y=83
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=45,y=84
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=45,y=85
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=45,y=86
@@ -40809,7 +40153,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=42
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -40824,7 +40167,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=44
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -41067,32 +40409,28 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=46,y=81
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=46,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=46,y=83
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=46,y=84
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,19,
+	TeamReveal=19,
 EndPlot
 BeginPlot
 	x=46,y=85
@@ -41174,7 +40512,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=97
-	BonusType=BONUS_BOREAL_FOREST
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -41193,7 +40530,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=46,y=100
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -41390,7 +40726,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=7
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -41715,7 +41050,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=50
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -41858,7 +41192,6 @@ EndPlot
 BeginPlot
 	x=47,y=72
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -41915,7 +41248,6 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=47,y=82
@@ -41923,13 +41255,11 @@ BeginPlot
 	BonusType=BONUS_HIGH_SEA_FISH
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=47,y=83
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=47,y=84
@@ -42005,14 +41335,12 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=95
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
 BeginPlot
 	x=47,y=96
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -42124,7 +41452,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=115
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -42209,7 +41536,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=3
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -42430,7 +41756,6 @@ BeginPlot
 		Profession=PROFESSION_BRAVE
 		Damage=0
 		Level=1, Experience=0
-		PromotionType=PROMOTION_GRENADIER2
 		FacingDirection=4
 		UnitAIType=UNITAI_DEFENSIVE
 	EndUnit
@@ -42467,7 +41792,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=39
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -42557,7 +41881,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=48
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -42633,7 +41956,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=56
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -42844,7 +42166,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=88
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -42864,7 +42185,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=91
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=8,
@@ -42909,7 +42229,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=98
-	BonusType=BONUS_FUR
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -43166,7 +42485,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=15
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -43448,7 +42766,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=52
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -43492,34 +42809,33 @@ BeginPlot
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=49,y=59
 	BonusType=BONUS_PEARLS_2
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=49,y=60
 	BonusType=BONUS_IRON
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=49,y=61
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=49,y=62
-	BonusType=BONUS_COCONUT
+	BonusType=BONUS_SUGAR
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=49,y=63
@@ -43704,7 +43020,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=90
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -43790,7 +43105,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=104
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -44165,7 +43479,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=35
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
 	TeamReveal=35,
@@ -44293,7 +43606,6 @@ BeginPlot
 	x=50,y=48
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_SUGAR
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -44390,56 +43702,32 @@ BeginPlot
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=50,y=60
 	BonusType=BONUS_PEARLS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_FLUYT, UnitOwner=4
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=5
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=4
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=5
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CARPENTER, UnitOwner=4
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=5
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=50,y=61
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=50,y=62
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=50,y=63
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=50,y=64
@@ -44764,7 +44052,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=114
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
 	TeamReveal=21,
@@ -45041,7 +44328,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=30
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -45053,7 +44339,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=2
@@ -45077,7 +44362,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=34
-	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -45146,7 +44430,6 @@ BeginPlot
 	x=51,y=43
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -45261,32 +44544,29 @@ BeginPlot
 	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=51,y=60
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=51,y=61
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=51,y=62
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=51,y=63
 	BonusType=BONUS_PEARLS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=51,y=64
@@ -45501,7 +44781,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=51,y=99
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -46126,7 +45405,7 @@ BeginPlot
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=4,13,
+	TeamReveal=13,
 EndPlot
 BeginPlot
 	x=52,y=59
@@ -46138,31 +45417,26 @@ BeginPlot
 	x=52,y=60
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=52,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=52,y=62
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=52,y=63
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=52,y=64
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=52,y=65
@@ -46213,7 +45487,6 @@ EndPlot
 BeginPlot
 	x=52,y=73
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -46279,7 +45552,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=84
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -46383,7 +45655,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=52,y=100
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -46602,7 +45873,6 @@ EndPlot
 BeginPlot
 	x=53,y=9
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -46861,7 +46131,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=45
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -46879,7 +46148,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=47
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=23,
@@ -46905,7 +46173,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=51
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
@@ -46919,7 +46186,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=53
-	BonusType=BONUS_FISH
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=13,
@@ -46965,26 +46231,21 @@ BeginPlot
 	x=53,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=53,y=62
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=53,y=63
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=53,y=64
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=53,y=65
@@ -47131,7 +46392,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=90
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -47275,7 +46535,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=110
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
 	TeamReveal=21,
@@ -47507,7 +46766,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=21
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -47629,7 +46887,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=37
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=1
 	TeamReveal=36,
@@ -47754,7 +47011,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=52
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=13,
@@ -47805,28 +47061,24 @@ BeginPlot
 	x=54,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=54,y=62
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=54,y=63
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=54,y=64
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=54,y=65
@@ -48023,7 +47275,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=95
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -48093,7 +47344,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=106
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -48217,7 +47467,6 @@ EndPlot
 BeginPlot
 	x=55,y=0
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -48306,7 +47555,6 @@ EndPlot
 BeginPlot
 	x=55,y=14
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -48494,7 +47742,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=41
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -48619,7 +47866,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=55,y=60
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -48627,21 +47873,18 @@ BeginPlot
 	x=55,y=61
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=55,y=62
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=55,y=63
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=55,y=64
@@ -48670,7 +47913,6 @@ EndPlot
 BeginPlot
 	x=55,y=68
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -48731,7 +47973,6 @@ EndPlot
 BeginPlot
 	x=55,y=78
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -49226,7 +48467,6 @@ BeginPlot
 	x=56,y=34
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=1
@@ -49320,7 +48560,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=47
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -49594,7 +48833,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=93
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -49623,7 +48861,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=97
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=21,
@@ -49782,7 +49019,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=126
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -49968,7 +49204,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=29
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=17,
@@ -49989,7 +49224,6 @@ BeginPlot
 	x=57,y=32
 	RiverNSDirection=2
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -50098,7 +49332,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=46
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -50506,7 +49739,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=113
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -50527,13 +49759,11 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=117
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=57,y=118
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
 EndPlot
@@ -50725,7 +49955,6 @@ EndPlot
 BeginPlot
 	x=58,y=22
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -51148,7 +50377,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=90
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -51230,7 +50458,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=105
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -51440,7 +50667,6 @@ EndPlot
 BeginPlot
 	x=59,y=14
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -51633,7 +50859,6 @@ BeginPlot
 	x=59,y=39
 	RiverNSDirection=0
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
 	TeamReveal=36,
@@ -51910,19 +51135,16 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=59,y=85
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=59,y=86
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=59,y=87
@@ -52166,7 +51388,6 @@ EndPlot
 BeginPlot
 	x=60,y=3
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -52400,7 +51621,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
@@ -52686,45 +51906,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=60,y=85
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=6
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=6
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FARMER, UnitOwner=6
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_WORKER
-	EndUnit
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=60,y=86
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=60,y=87
@@ -52791,7 +51983,6 @@ EndPlot
 BeginPlot
 	x=60,y=99
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -52852,7 +52043,6 @@ EndPlot
 BeginPlot
 	x=60,y=109
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -52946,7 +52136,6 @@ EndPlot
 BeginPlot
 	x=60,y=126
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -53176,7 +52365,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=36
-	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
@@ -53239,14 +52427,14 @@ BeginPlot
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=61,y=45
 	BonusType=BONUS_MELON
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=61,y=46
@@ -53307,7 +52495,6 @@ EndPlot
 BeginPlot
 	x=61,y=56
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -53380,7 +52567,6 @@ EndPlot
 BeginPlot
 	x=61,y=68
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -53479,21 +52665,18 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=61,y=85
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=61,y=86
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=6,
 EndPlot
 BeginPlot
 	x=61,y=87
@@ -53674,7 +52857,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=117
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -53932,7 +53114,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=33
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=36,
@@ -53998,25 +53179,25 @@ BeginPlot
 	x=62,y=43
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=62,y=44
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=62,y=45
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=62,y=46
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=62,y=47
@@ -54103,7 +53284,6 @@ EndPlot
 BeginPlot
 	x=62,y=61
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -54757,49 +53937,24 @@ BeginPlot
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_MARSH
 	PlotType=2
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=63,y=44
 	BonusType=BONUS_PEARLS
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=63,y=45
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARRACK, UnitOwner=3
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=7
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SCOUT, UnitOwner=3
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=7
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=3
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=7
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=63,y=46
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,36,
+	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=63,y=47
@@ -55006,7 +54161,6 @@ EndPlot
 BeginPlot
 	x=63,y=81
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -55043,7 +54197,6 @@ EndPlot
 BeginPlot
 	x=63,y=87
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -55334,7 +54487,6 @@ EndPlot
 BeginPlot
 	x=64,y=8
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -55425,7 +54577,6 @@ EndPlot
 BeginPlot
 	x=64,y=23
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -55526,41 +54677,34 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=41
-	ImprovementType=IMPROVEMENT_GOODY_HUT
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=42
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=43
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=44
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=45
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=46
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=64,y=47
@@ -55906,7 +55050,6 @@ EndPlot
 BeginPlot
 	x=64,y=104
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -56225,7 +55368,6 @@ EndPlot
 BeginPlot
 	x=65,y=29
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -56300,29 +55442,24 @@ BeginPlot
 	x=65,y=42
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=65,y=43
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=65,y=44
 	TerrainType=TERRAIN_COAST
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=65,y=45
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=65,y=46
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -56461,7 +55598,6 @@ EndPlot
 BeginPlot
 	x=65,y=69
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -56719,20 +55855,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=65,y=112
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=65,y=113
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=65,y=114
@@ -56926,7 +56059,6 @@ EndPlot
 BeginPlot
 	x=66,y=17
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -57035,7 +56167,6 @@ EndPlot
 BeginPlot
 	x=66,y=35
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -57063,7 +56194,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=40
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -57076,32 +56206,27 @@ BeginPlot
 	x=66,y=42
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=66,y=43
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=66,y=44
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=66,y=45
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=66,y=46
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=66,y=47
@@ -57208,7 +56333,6 @@ EndPlot
 BeginPlot
 	x=66,y=64
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -57493,45 +56617,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=66,y=112
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=5
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=5
-		Profession=PROFESSION_HEAVY_CAVALRY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FISHERMAN, UnitOwner=5
-		Profession=PROFESSION_PIONEER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_WORKER
-	EndUnit
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=66,y=113
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=66,y=114
@@ -57870,27 +56966,23 @@ BeginPlot
 	x=67,y=43
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=67,y=44
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=67,y=45
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=67,y=46
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=3,
 EndPlot
 BeginPlot
 	x=67,y=47
@@ -58105,7 +57197,6 @@ EndPlot
 BeginPlot
 	x=67,y=82
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -58142,7 +57233,6 @@ EndPlot
 BeginPlot
 	x=67,y=88
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -58275,7 +57365,6 @@ EndPlot
 BeginPlot
 	x=67,y=110
 	EuropeType=EUROPE_EAST
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -58284,20 +57373,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=67,y=112
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=67,y=113
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=5,
 EndPlot
 BeginPlot
 	x=67,y=114
@@ -58306,7 +57392,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=67,y=115
-	ImprovementType=IMPROVEMENT_GOODY_HUT3
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
