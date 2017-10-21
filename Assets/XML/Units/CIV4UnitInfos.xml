@@ -1743,7 +1743,7 @@
 			<bQuickCombat>0</bQuickCombat>
 			<bRivalTerritory>0</bRivalTerritory>
 			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>0</bFound>
+			<bFound>1</bFound>
 			<bInvisible>0</bInvisible>
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<bCanMoveImpassable>0</bCanMoveImpassable>
@@ -2100,7 +2100,7 @@
 			<bQuickCombat>0</bQuickCombat>
 			<bRivalTerritory>0</bRivalTerritory>
 			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>0</bFound>
+			<bFound>1</bFound>
 			<bInvisible>0</bInvisible>
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<bCanMoveImpassable>0</bCanMoveImpassable>
