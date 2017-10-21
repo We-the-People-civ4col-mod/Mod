@@ -1305,22 +1305,22 @@
 	<iBuyPriceLow>19</iBuyPriceLow>
 	<iBuyPriceHigh>20</iBuyPriceHigh>
 	<iBuyPriceMin>5</iBuyPriceMin>
-	<iSellPriceDifference>1</iSellPriceDifference>
+	<iSellPriceDifference>2</iSellPriceDifference>
 	<iPriceChangeThreshold>1000</iPriceChangeThreshold>
 	<iPriceCorrectionPercent>5</iPriceCorrectionPercent>
 	<iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
 	<iAfricaBuyPriceLow>18</iAfricaBuyPriceLow>
 	<iAfricaBuyPriceHigh>19</iAfricaBuyPriceHigh>
-	<iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
+	<iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
 	<iPortRoyalBuyPriceLow>19</iPortRoyalBuyPriceLow>
 	<iPortRoyalBuyPriceHigh>20</iPortRoyalBuyPriceHigh>
-	<iPortRoyalSellPriceDifference>1</iPortRoyalSellPriceDifference>
+	<iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
 	<iNativeBuyPrice>-1</iNativeBuyPrice>
 	<iNativeSellPrice>10</iNativeSellPrice>
 	<iNativeConsumptionPercent>25</iNativeConsumptionPercent>
 	<iNativeHappy>0</iNativeHappy>
 	<iHillsChange>0</iHillsChange>
-	<iPeakChange>1</iPeakChange>
+	<iPeakChange>0</iPeakChange>
 	<iLakeChange>0</iLakeChange>
 	<iCityChange>0</iCityChange>
 	<iMinCity>0</iMinCity>
@@ -1345,16 +1345,16 @@
 	<iBuyPriceLow>39</iBuyPriceLow>
 	<iBuyPriceHigh>40</iBuyPriceHigh>
 	<iBuyPriceMin>10</iBuyPriceMin>
-	<iSellPriceDifference>2</iSellPriceDifference>
+	<iSellPriceDifference>3</iSellPriceDifference>
 	<iPriceChangeThreshold>1000</iPriceChangeThreshold>
 	<iPriceCorrectionPercent>0</iPriceCorrectionPercent>
 	<iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
 	<iAfricaBuyPriceLow>38</iAfricaBuyPriceLow>
 	<iAfricaBuyPriceHigh>39</iAfricaBuyPriceHigh>
-	<iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
+	<iAfricaSellPriceDifference>3</iAfricaSellPriceDifference>
 	<iPortRoyalBuyPriceLow>39</iPortRoyalBuyPriceLow>
 	<iPortRoyalBuyPriceHigh>40</iPortRoyalBuyPriceHigh>
-	<iPortRoyalSellPriceDifference>2</iPortRoyalSellPriceDifference>
+	<iPortRoyalSellPriceDifference>3</iPortRoyalSellPriceDifference>
 	<iNativeBuyPrice>-1</iNativeBuyPrice>
 	<iNativeSellPrice>20</iNativeSellPrice>
 	<iNativeConsumptionPercent>25</iNativeConsumptionPercent>
