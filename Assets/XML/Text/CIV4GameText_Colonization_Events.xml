@@ -5601,5 +5601,70 @@
 		<German>Schlimme Kunde. Schnell! Spurt euch! Ich brauche sofort einen Schnaps gegen den Schrecken.</German>
 		<Italian>Siamo troppo sotto pressione per inviare aiuti.</Italian>
 		<Spanish>Estamos demasiado apurados como para prestarles ayuda.</Spanish>
-	</TEXT>	
+	</TEXT>
+
+
+
+
+
+
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_ADMIRAL_1</Tag>
+		<English>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</English>
+		<French>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</French>
+		<German>Man munkelt, dass ein untätiger Admiral durch seine Gelage in %s2_city dem örtlichen Statthalter die Haare vom Kompf frisst.</German>
+		<Italian>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</Italian>
+		<Spanish>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_ADMIRAL_1</Tag>
+		<English>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </English>
+		<French>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </French>
+		<German>Mylord, einer unserer neu bestallten Admiräle feiert lieber und labt sich an Wein und Frauen, als dass er unseren jungen Matrosen Seemannschaft beibringt. Seine Gelage sind schon Stadtgespräch. Wir müssen etwas unternehmen, so etwas ist schlecht für die Moral.</German>
+		<Italian>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </Italian>
+		<Spanish>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_ADMIRAL_1_1</Tag>
+		<English>Ah, what the heck! He was at sea for a such a long time. He needs to enjoy his time onshore. Our storage is absolutely full. However, we need to keep an eye on him. </English>
+		<French>Ah, what the heck! He was at sea for a such a long time. He needs to enjoy his time onshore. Our storage is absolutely full. However, we need to keep an eye on him. </French>
+		<German>Ach was, der Mann war lange auf See. Ist doch verständlich, dass er sich ein wenig austoben muss. Lasst ihm den Spaß. Unsere Speicher sind doch prall gefüllt. Aber wir behalten ihn im Auge.</German>
+		<Italian>Ah, what the heck! He was at sea for a such a long time. He needs to enjoy his time onshore. Our storage is absolutely full. However, we need to keep an eye on him. </Italian>
+		<Spanish>Ah, what the heck! He was at sea for a such a long time. He needs to enjoy his time onshore. Our storage is absolutely full. However, we need to keep an eye on him. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_ADMIRAL_1_2</Tag>
+		<English>Ah, what the heck! If he drills his recruits with the same dedication I'm fine with it. He is a tough guy. I'll pay his bill. </English>
+		<French>Ah, what the heck! If he drills his recruits with the same dedication I'm fine with it. He is a tough guy. I'll pay his bill. </French>
+		<German>Wenn er hinterher die jungen Matrosen mit der gleichen Hingabe ausbildet, wie er jetzt dem Wein zuspricht, soll's mir recht sein. Ich werde seine Rechnung persönlich begleichen. Bedenkt, was er für unsere junge Marine für einen Nutzen hat!</German>
+		<Italian>Ah, what the heck! If he drills his recruits with the same dedication I'm fine with it. He is a tough guy. I'll pay his bill. </Italian>
+		<Spanish>Ah, what the heck! If he drills his recruits with the same dedication I'm fine with it. He is a tough guy. I'll pay his bill. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_ADMIRAL_1_3</Tag>
+		<English>Absolutely correct. We will give him a ship. Sea air is the best way to deal with a binge and he can prove his good seamanship. We have a sloop in port. He will take command of this sloop. Issue the sailing order! </English>
+		<French>Absolutely correct. We will give him a ship. Sea air is the best way to deal with a binge and he can prove his good seamanship. We have a sloop in port. He will take command of this sloop. Issue the sailing order!  </French>
+		<German>Ihr habt vollkommen recht, so geht es nicht weiter. Wir werden ihm ein Schiff geben. Seeluft ist das beste Mittel gegen Säuferei. Da kann er mal zeigen, dass er noch nicht all seine Seemannschaft versoffen hat. Es liegt doch eine Sloop im Hafen. Die kann er nehmen. Fertigt nur gleich die Segelorder aus!</German>
+		<Italian>Absolutely correct. We will give him a ship. Sea air is the best way to deal with a binge and he can prove his good seamanship. We have a sloop in port. He will take command of this sloop. Issue the sailing order!  </Italian>
+		<Spanish>Absolutely correct. We will give him a ship. Sea air is the best way to deal with a binge and he can prove his good seamanship. We have a sloop in port. He will take command of this sloop. Issue the sailing order!  </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_ADMIRAL_BORD</Tag>
+		<English>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </English>
+		<French>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </French>
+		<German>In %s2_city rüstet die Marine eine neue Sloop aus. Der Admiral wird wohl bald seine Segelorder erhalten. </German>
+		<Italian>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </Italian>
+		<Spanish>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_ADMIRAL_LAND</Tag>
+		<English>But it seems that the governor in %s2_city is a generous man. </English>
+		<French>But it seems that the governor in %s2_city is a generous man. </French>
+		<German>Aber der Statthalter in %s2_city ist offenbar ein großzügiger Mann.</German>
+		<Italian>But it seems that the governor in %s2_city is a generous man. </Italian>
+		<Spanish>But it seems that the governor in %s2_city is a generous man. </Spanish>
+	</TEXT>
 </Civ4GameText>
