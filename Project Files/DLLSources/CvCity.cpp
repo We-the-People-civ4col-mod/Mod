@@ -5618,7 +5618,8 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 					}
 				}
 
-				FAssert(eBestProfession != NO_PROFESSION);
+				// Erik: No assert since it is possible that a unit would produce 0 yield in any plot profession 
+				//FAssert(eBestProfession != NO_PROFESSION);
 				if(eBestProfession != NO_PROFESSION)
 				{
 					pUnit->setProfession(eBestProfession);

@@ -2574,6 +2574,12 @@ bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo 
 		return false;
 	}
 
+	// Erik: If we have no valid profession to assign, we bail out
+	if (pUnit->getProfession() == NO_PROFESSION)
+	{
+		return false;
+	}
+
 	bool bShowOnlyNonCitizens = (info.getData3() == 0);
 	bool bShowOnlyPlotCitizens = (info.getData3() == 1);
 	//Androrc Multiple Professions per Building
