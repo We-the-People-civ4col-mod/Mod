@@ -2140,6 +2140,10 @@ void CvUnitAI::AI_generalMove()
 	aeUnitAITypes.push_back(UNITAI_OFFENSIVE);
 	aeUnitAITypes.push_back(UNITAI_COUNTER);
 
+	aeUnitAITypes.push_back(UNITAI_ASSAULT_SEA);
+	aeUnitAITypes.push_back(UNITAI_COMBAT_SEA);
+	aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
+
 	if (AI_lead(aeUnitAITypes))
 	{
 		return;
@@ -4725,15 +4729,34 @@ void CvUnitAI::AI_transportSeaMove()
 	return;
 }
 
-// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
-
-/*
-void CvUnitAI::AI_assaultSeaMove()
+// Attempt to determine if a great admiral is waiting in a city
+// if this is the case, we travel there
+bool CvUnitAI::AI_joinGreatAdmiral()
 {
-	AI_transportSeaMove();
-	return;
+	CvUnit* pLoopUnit;
+	CvPlot* plot;
+	int iPathTurns;
+	int iValue;
+	int iBestValue;
+	int iLoop;
+
+	for (pLoopUnit = GET_PLAYER(getOwnerINLINE()).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER(getOwnerINLINE()).nextUnit(&iLoop))
+	{
+		if (pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
+		{
+			plot = pLoopUnit->plot();
+			if (plot != NULL && plot->isCity(true))
+			{
+				// TODO: If there are multiple cities available, choose the closes (best) one
+				//FAssert(!atPlot(pBestPlot));
+				getGroup()->pushMission(MISSION_MOVE_TO, plot->getX_INLINE(), plot->getY_INLINE(), MOVE_IGNORE_DANGER, false, false, NO_MISSIONAI, plot);
+				return true;
+			}
+		}
+	}
+
+	return false;
 }
-*/
 
 void CvUnitAI::AI_assaultSeaMove()
 {
@@ -5434,6 +5457,10 @@ void CvUnitAI::AI_escortSeaMove()
 
 void CvUnitAI::AI_combatSeaMove()
 {
+	// Erik: Check if there's an admiral waiting
+	if (AI_joinGreatAdmiral())
+		return;
+
 	// TAC - AI Improved Naval AI - koma13 - START
 	//if (AI_anyAttack(2, 49))
 	if (AI_anyAttack(1, 49))
