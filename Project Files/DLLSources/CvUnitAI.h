@@ -320,7 +320,7 @@ protected:
 	bool AI_routeCity();
 	bool AI_routeTerritory(bool bImprovementOnly = false);
 	bool AI_travelToUpgradeCity();
-	bool AI_retreatToCity(bool bPrimary = false, int iMaxPath = MAX_INT);
+	bool AI_retreatToCity(bool bPrimary = false, int iMaxPath = MAX_INT, bool bAvoidDanger = false);
 	
 	bool AI_retreatFromDanger();	// TAC - AI Improved Naval AI - koma13
 

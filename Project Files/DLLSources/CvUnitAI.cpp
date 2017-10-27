@@ -2145,7 +2145,7 @@ void CvUnitAI::AI_generalMove()
 		return;
 	}
 	
-	if (AI_retreatToCity())
+	if (AI_retreatToCity(false, MAX_INT, true))
 	{
 		return;
 	}
@@ -10747,7 +10747,9 @@ bool CvUnitAI::AI_lead(std::vector<UnitAITypes>& aeUnitAITypes)
 						{
 							if (!(pLoopUnit->plot()->isVisibleEnemyUnit(this)))
 							{
-								if (generatePath(pLoopUnit->plot(), 0, true))
+								int iPathTurns;
+								// Erik: Great people should avoid dangerous paths
+								if (generatePath(pLoopUnit->plot(), MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3, true, &iPathTurns, false))
 								{
 									// pick the unit with the highest current strength
 									int iCombatStrength = pLoopUnit->currCombatStr(NULL, NULL);
@@ -16941,7 +16943,7 @@ bool CvUnitAI::AI_travelToUpgradeCity()
 }
 
 // Returns true if a mission was pushed...
-bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
+bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath, bool bAvoidDanger)
 {
 	PROFILE_FUNC();
 
@@ -16987,7 +16989,22 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
 				{
 					if (!(pLoopCity->plot()->isVisibleEnemyUnit(this)))
 					{
-						if (!atPlot(pLoopCity->plot()) && generatePath(pLoopCity->plot(), ((iPass > 1) ? MOVE_IGNORE_DANGER : 0), true, &iPathTurns))
+						int iFlags;
+						bool bIgnoredanger = !bAvoidDanger;
+
+						if (!bAvoidDanger)
+						{
+							// Erik: Default / old behaviour
+							iFlags = ((iPass > 1) ? MOVE_IGNORE_DANGER : 0);
+						}
+						else
+						{
+							// Erik: For risk averse units like great generals etc.
+							iFlags = MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3;
+						}
+
+
+						if (!atPlot(pLoopCity->plot()) && generatePath(pLoopCity->plot(), iFlags, true, &iPathTurns, bIgnoredanger))
 						{
 							if (iPathTurns <= ((iPass == 2) ? 1 : iMaxPath))
 							{
