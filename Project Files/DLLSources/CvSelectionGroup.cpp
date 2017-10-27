@@ -3447,7 +3447,7 @@ bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToP
 	{
 		if (GET_PLAYER(getOwnerINLINE()).AI_needsProtection(getHeadUnitAI()))
 		{
-			if (iFlags != MOVE_IGNORE_DANGER)
+			if ((iFlags & MOVE_IGNORE_DANGER)== 0)
 			{
 				if (!bIgnoreDanger || plot()->getPlotCity() != NULL)
 				{
