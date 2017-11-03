@@ -3369,7 +3369,20 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 }
 
+const int MAX_INPUT_YIELDS = 2;
 
+// Erik: In case of multiple input yields, we store
+// the contribution of each input
+struct ProfessionValue
+{
+	int iIncome;
+	int iTarget;
+	int iYieldOutput;
+	int iYieldInput;
+	int iExtraYieldOutput;
+	int iNetYield;
+	int iNetValue;
+};
 
 int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const
 {
@@ -3379,12 +3392,16 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	}
 
 	CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(eProfession);
+	
+	
 	int iIncome = 0;
 	int iTarget = 0;
 	int iYieldOutput = 0;
 	int iYieldInput = 0;
 	int iExtraYieldOutput = 0;
-	
+	int iNetYield = 0;
+	int iNetValue = 0;
+
 	YieldTypes eYieldProducedType = NO_YIELD;
 	YieldTypes eYieldConsumedType = NO_YIELD;
 	
@@ -3484,462 +3501,517 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	{
 		return 0;
 	}
+
+	if (eProfession == 32)
+	{
+		volatile int i = 42;
+	}
+	
+	// Currently, the only yield to require multiple inputs is YIELD_COLOURED_CLOTH (inputs: YIELD_INDIGO and YIELD_CLOTH)
+	// so we do not support anything beyond that at the moment. We should consider asserting much earlier though
+	FAssertMsg(kProfessionInfo.getNumYieldsConsumed() <= MAX_INPUT_YIELDS, "More than 2 input yields are not supported");
+
+	ProfessionValue professionValue[MAX_INPUT_YIELDS];
+	
+	// Erik: If more than one yield is consumed, we have to separately evaluate
+	// their contribution to the output
+	for (int i = 0; i < kProfessionInfo.getNumYieldsConsumed(); i++)
+	{
+		ProfessionValue &pv = professionValue[i];
 		
-	iYieldOutput *= getBaseYieldRateModifier(eYieldProducedType);
-	iYieldOutput /= 100;
+		pv.iYieldInput = iYieldInput;
+		pv.iYieldOutput = iYieldOutput;
+		pv.iExtraYieldOutput = iExtraYieldOutput;
 
-	// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START
-	iYieldOutput = std::max(1, iYieldOutput);
-	// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START- END
-	
-	int iNetYield = getBaseRawYieldProduced(eYieldProducedType);
-
-	CvUnit* pOldUnit = NULL;
-	if (GC.getProfessionInfo(eProfession).isWorkPlot())
-	{
-		CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
-		if (pWorkedPlot != NULL)
-		{
-			iNetYield -= pWorkedPlot->getYield(eYieldProducedType);
-			
-			if ((kProfessionInfo.isWater() && kUnit.isWaterYieldChanges()) || !kProfessionInfo.isWater() && kUnit.isLandYieldChanges())
-			{
-				if (pWorkedPlot->getBonusType() != NO_BONUS && GC.getBonusInfo(pWorkedPlot->getBonusType()).getYieldChange(eYieldProducedType) > 0)
-				{
-					iExtraYieldOutput += kUnit.getBonusYieldChange(eYieldProducedType);
-				}
-			}
-		}
-
-		if (pPlot != NULL && pPlot->isBeingWorked() && pWorkedPlot != pPlot)
-		{
-			iNetYield -= pPlot->getYield(eYieldProducedType);
-			pOldUnit = getUnitWorkingPlot(pPlot);
-		}
-	}
-	else
-	{
-		ProfessionTypes eWorkedProfession = pUnit->getProfession();
-		if (eWorkedProfession != NO_PROFESSION)
-		{
-			// R&R, ray , MYCP partially based on code of Aymerick - START
-			if (GC.getProfessionInfo(eWorkedProfession).getYieldsProduced(0) == eYieldProducedType)
-			{
-				iNetYield -= getProfessionOutput(eWorkedProfession, pUnit);
-			}
-
-			if (GC.getProfessionInfo(eWorkedProfession).getYieldsConsumed(0) == eYieldProducedType)
-			{
-				iNetYield += getProfessionInput(eWorkedProfession, pUnit);
-			}
-			// R&R, ray , MYCP partially based on code of Aymerick - END
-		}
-	}
-
-	// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START
-	// iNetYield *= getBaseYieldRateModifier(eYieldProducedType);
-	// iNetYield /= 100;
-	if (iNetYield != 0)
-	{
-		iNetYield *= getBaseYieldRateModifier(eYieldProducedType);
-		iNetYield /= 100;
-		iNetYield = std::max(1, iNetYield);
-	}
-	// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - END
-
-	iNetYield -= getRawYieldConsumed(eYieldProducedType);
-
-	int iOutputValue = 0;
-	int iInputValue = 0;
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
-	
-	if (!kProfessionInfo.isWorkPlot() && (eYieldProducedType != YIELD_EDUCATION))
-	{
-		int iConsumedAlready = (eYieldConsumedType == NO_YIELD) ? 0 : getRawYieldConsumed(eYieldConsumedType);
-		int iRealInputAvailable = (eYieldConsumedType == NO_YIELD) ? 0 : getRawYieldProduced(eYieldConsumedType) - iConsumedAlready;
+		eYieldConsumedType = (YieldTypes)kProfessionInfo.getYieldsConsumed(i);
 		
-		if (eYieldConsumedType != NO_YIELD)
+		pv.iYieldOutput *= getBaseYieldRateModifier(eYieldProducedType);
+		pv.iYieldOutput /= 100;
+
+		// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START
+		pv.iYieldOutput = std::max(1, pv.iYieldOutput);
+		// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START- END
+
+		pv.iNetYield = getBaseRawYieldProduced(eYieldProducedType);
+
+		CvUnit* pOldUnit = NULL;
+		if (GC.getProfessionInfo(eProfession).isWorkPlot())
 		{
-			bool bDontDiplace = false;
-			if (pPlot != NULL)
+			CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
+			if (pWorkedPlot != NULL)
 			{
-				if (pPlot->isBeingWorked())
+				pv.iNetYield -= pWorkedPlot->getYield(eYieldProducedType);
+
+				if ((kProfessionInfo.isWater() && kUnit.isWaterYieldChanges()) || !kProfessionInfo.isWater() && kUnit.isLandYieldChanges())
 				{
-					CvUnit* pWorkingUnit = getUnitWorkingPlot(pPlot);
-					if (pWorkingUnit != pUnit)
+					if (pWorkedPlot->getBonusType() != NO_BONUS && GC.getBonusInfo(pWorkedPlot->getBonusType()).getYieldChange(eYieldProducedType) > 0)
 					{
-						iRealInputAvailable -= pPlot->getYield(eYieldConsumedType);
-						if (pWorkingUnit == pDisplaceUnit)
-						{
-							bDontDiplace = true;
-						}
+						pv.iExtraYieldOutput += kUnit.getBonusYieldChange(eYieldProducedType);
 					}
 				}
 			}
-			
-			if (!bDontDiplace)
+
+			if (pPlot != NULL && pPlot->isBeingWorked() && pWorkedPlot != pPlot)
 			{
-				if (pDisplaceUnit != NULL)
+				pv.iNetYield -= pPlot->getYield(eYieldProducedType);
+				pOldUnit = getUnitWorkingPlot(pPlot);
+			}
+		}
+		else
+		{
+			ProfessionTypes eWorkedProfession = pUnit->getProfession();
+			if (eWorkedProfession != NO_PROFESSION)
+			{
+				// R&R, ray , MYCP partially based on code of Aymerick - START
+				if (GC.getProfessionInfo(eWorkedProfession).getYieldsProduced(0) == eYieldProducedType)
+				{
+					pv.iNetYield -= getProfessionOutput(eWorkedProfession, pUnit);
+				}
+
+				if (GC.getProfessionInfo(eWorkedProfession).getYieldsConsumed(0) == eYieldProducedType)
+				{
+					pv.iNetYield += getProfessionInput(eWorkedProfession, pUnit);
+				}
+				// R&R, ray , MYCP partially based on code of Aymerick - END
+			}
+		}
+
+		// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - START
+		// iNetYield *= getBaseYieldRateModifier(eYieldProducedType);
+		// iNetYield /= 100;
+		if (pv.iNetYield != 0)
+		{
+			pv.iNetYield *= getBaseYieldRateModifier(eYieldProducedType);
+			pv.iNetYield /= 100;
+			pv.iNetYield = std::max(1, pv.iNetYield);
+		}
+		// R&R, ray, fix for CTD because of negative City Health could modify 1 to 0 - END
+
+		pv.iNetYield -= getRawYieldConsumed(eYieldProducedType);
+
+		int iOutputValue = 0;
+		int iInputValue = 0;
+		CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+		if (!kProfessionInfo.isWorkPlot() && (eYieldProducedType != YIELD_EDUCATION))
+		{
+			int iConsumedAlready = (eYieldConsumedType == NO_YIELD) ? 0 : getRawYieldConsumed(eYieldConsumedType);
+			int iRealInputAvailable = (eYieldConsumedType == NO_YIELD) ? 0 : getRawYieldProduced(eYieldConsumedType) - iConsumedAlready;
+
+			if (eYieldConsumedType != NO_YIELD)
+			{
+				bool bDontDiplace = false;
+				if (pPlot != NULL)
+				{
+					if (pPlot->isBeingWorked())
+					{
+						CvUnit* pWorkingUnit = getUnitWorkingPlot(pPlot);
+						if (pWorkingUnit != pUnit)
+						{
+							iRealInputAvailable -= pPlot->getYield(eYieldConsumedType);
+							if (pWorkingUnit == pDisplaceUnit)
+							{
+								bDontDiplace = true;
+							}
+						}
+					}
+				}
+
+				if (!bDontDiplace)
+				{
+					if (pDisplaceUnit != NULL)
+					{
+						if (pDisplaceUnit->getProfession() == eProfession)
+						{
+							iRealInputAvailable += getProfessionOutput(eProfession, pDisplaceUnit);
+						}
+					}
+				}
+
+				if (pUnit->getProfession() == eProfession)
+				{
+					iRealInputAvailable += getProfessionInput(eProfession, pUnit);
+				}
+			}
+
+			int iEstimatedInputAvailable = 0;
+
+			if (eYieldConsumedType != NO_YIELD)
+			{
+				iEstimatedInputAvailable += iRealInputAvailable + getYieldStored(eYieldConsumedType) / 10;
+
+				int iImports = AI_getTradeBalance(eYieldConsumedType);
+				if (iImports > 0)
+				{
+					iEstimatedInputAvailable += std::min(iImports, getYieldStored(eYieldConsumedType));
+				}
+			}
+
+			if (eYieldConsumedType == NO_YIELD || ((iRealInputAvailable + getYieldStored(eYieldConsumedType)) > 0 && iEstimatedInputAvailable > 0))
+			{
+				CvUnit* pIdealAssignedUnit = NULL;
+				CvUnit* pIdealUnassignedUnit = NULL;
+				int iProfessionCount = 0;
+				for (int i = 0; i < getPopulation(); ++i)
+				{
+					CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+					if (pLoopUnit->getProfession() == eProfession)
+					{
+						iProfessionCount++;
+					}
+					if (pLoopUnit->AI_getIdealProfession() == eProfession)
+					{
+						if (pLoopUnit->getProfession() == eProfession)
+						{
+							pIdealAssignedUnit = pLoopUnit;
+						}
+						else if (!pLoopUnit->isColonistLocked())
+						{
+							pIdealUnassignedUnit = pLoopUnit;
+						}
+					}
+				}
+
+				if ((pDisplaceUnit != NULL) && (pDisplaceUnit != pUnit))
 				{
 					if (pDisplaceUnit->getProfession() == eProfession)
 					{
-						iRealInputAvailable += getProfessionOutput(eProfession, pDisplaceUnit);
+						iProfessionCount--;
 					}
 				}
-			}
-
-			if (pUnit->getProfession() == eProfession)
-			{
-				iRealInputAvailable += getProfessionInput(eProfession, pUnit);
-			}
-		}
-		
-		int iEstimatedInputAvailable = 0;
-		
-		if (eYieldConsumedType != NO_YIELD)
-		{
-			iEstimatedInputAvailable += iRealInputAvailable + getYieldStored(eYieldConsumedType) / 10;
-		
-			int iImports = AI_getTradeBalance(eYieldConsumedType);
-			if (iImports > 0)
-			{
-				iEstimatedInputAvailable += std::min(iImports, getYieldStored(eYieldConsumedType));
-			}
-		}
-		
-		if (eYieldConsumedType == NO_YIELD || ((iRealInputAvailable + getYieldStored(eYieldConsumedType)) > 0 && iEstimatedInputAvailable > 0))
-		{
-			CvUnit* pIdealAssignedUnit = NULL;
-			CvUnit* pIdealUnassignedUnit = NULL;
-			int iProfessionCount = 0;
-			for (int i = 0; i < getPopulation(); ++i)
-			{
-				CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
-				if (pLoopUnit->getProfession() == eProfession)
-				{
-					iProfessionCount ++;
-				}
-				if (pLoopUnit->AI_getIdealProfession() == eProfession)
-				{
-					if (pLoopUnit->getProfession() == eProfession)
-					{
-						pIdealAssignedUnit = pLoopUnit;
-					}
-					else if (!pLoopUnit->isColonistLocked())
-					{
-						pIdealUnassignedUnit = pLoopUnit;
-					}
-				}
-			}
-			
-			if ((pDisplaceUnit != NULL) && (pDisplaceUnit != pUnit))
-			{
-				if (pDisplaceUnit->getProfession() == eProfession)
+				if (pUnit->getProfession() == eProfession)
 				{
 					iProfessionCount--;
 				}
-			}
-			if (pUnit->getProfession() == eProfession)
-			{
-				iProfessionCount--;
-			}
-			FAssert(iProfessionCount >= 0);
-			
-			if (eYieldConsumedType == NO_YIELD)
-			{
-				iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType, true, iYieldOutput);
-			}
-			else
-			{
-				FAssert(iYieldInput > 0);
-				iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType) * iYieldOutput * std::min(iYieldInput, iEstimatedInputAvailable) / std::max(1, iYieldInput);
-				iInputValue += 100 * kOwner.AI_yieldValue(eYieldConsumedType, false) * std::min(iYieldInput, iEstimatedInputAvailable);
-			}
-			
-			
-			if (pIdealUnassignedUnit != NULL)
-			{
-				if (pUnit->AI_getIdealProfession() != eProfession)
-				{
-					iOutputValue /= 3;
-				}
-			}
-			
-			//If the ideal Unit isn't assigned to this profession. What right does this unit have?
-			if (pIdealAssignedUnit != NULL)
-			{
-				if (pIdealAssignedUnit->AI_getIdealProfession() != eProfession)
-				{
-					iOutputValue /= 3;
+				FAssert(iProfessionCount >= 0);
 
-					iOutputValue *= kOwner.AI_professionSuitability(pUnit->getUnitType(), eProfession);
-					iOutputValue /= std::max(1, kOwner.AI_professionSuitability(pIdealAssignedUnit->getUnitType(), eProfession));
-				}
-			}
-			
-			if (eYieldConsumedType != NO_YIELD)
-			{
-				//Strongly discourage conversion of raw materials by poorly qualified units.
-				if (iEstimatedInputAvailable < iYieldInput)
+				if (eYieldConsumedType == NO_YIELD)
 				{
-					if (iRealInputAvailable + getYieldStored(eYieldConsumedType) < iYieldInput)
-					{
-						iOutputValue /= 4;
-					}
+					iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType, true, pv.iYieldOutput);
+				}
+				else
+				{
+					FAssert(pv.iYieldInput > 0);
+					iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType) * pv.iYieldOutput * std::min(pv.iYieldInput, iEstimatedInputAvailable) / std::max(1, pv.iYieldInput);
+					iInputValue += 100 * kOwner.AI_yieldValue(eYieldConsumedType, false) * std::min(pv.iYieldInput, iEstimatedInputAvailable);
+				}
 
-					if (pUnit->AI_getIdealProfession() != eProfession && pIdealUnassignedUnit != NULL)
-					{
-						iOutputValue *= iEstimatedInputAvailable;
-						iOutputValue /= iYieldInput;
-					}
-				}
-			}
-			else
-			{
-				if (pIdealAssignedUnit != NULL)
+
+				if (pIdealUnassignedUnit != NULL)
 				{
-					//Somewhat discourage employment by poorly qualified units.
 					if (pUnit->AI_getIdealProfession() != eProfession)
 					{
-						if (pIdealAssignedUnit->getProfession() == eProfession)
+						iOutputValue /= 3;
+					}
+				}
+
+				//If the ideal Unit isn't assigned to this profession. What right does this unit have?
+				if (pIdealAssignedUnit != NULL)
+				{
+					if (pIdealAssignedUnit->AI_getIdealProfession() != eProfession)
+					{
+						iOutputValue /= 3;
+
+						iOutputValue *= kOwner.AI_professionSuitability(pUnit->getUnitType(), eProfession);
+						iOutputValue /= std::max(1, kOwner.AI_professionSuitability(pIdealAssignedUnit->getUnitType(), eProfession));
+					}
+				}
+
+				if (eYieldConsumedType != NO_YIELD)
+				{
+					//Strongly discourage conversion of raw materials by poorly qualified units.
+					if (iEstimatedInputAvailable < pv.iYieldInput)
+					{
+						if (iRealInputAvailable + getYieldStored(eYieldConsumedType) < pv.iYieldInput)
 						{
-							if (eYieldProducedType == YIELD_CROSSES)
+							iOutputValue /= 4;
+						}
+
+						if (pUnit->AI_getIdealProfession() != eProfession && pIdealUnassignedUnit != NULL)
+						{
+							iOutputValue *= iEstimatedInputAvailable;
+							iOutputValue /= pv.iYieldInput;
+						}
+					}
+				}
+				else
+				{
+					if (pIdealAssignedUnit != NULL)
+					{
+						//Somewhat discourage employment by poorly qualified units.
+						if (pUnit->AI_getIdealProfession() != eProfession)
+						{
+							if (pIdealAssignedUnit->getProfession() == eProfession)
 							{
-								iOutputValue *= 50;
-								iOutputValue /= 100;
-							}
-							else
-							{
-								iOutputValue *= 75;
-								iOutputValue /= 100;
+								if (eYieldProducedType == YIELD_CROSSES)
+								{
+									iOutputValue *= 50;
+									iOutputValue /= 100;
+								}
+								else
+								{
+									iOutputValue *= 75;
+									iOutputValue /= 100;
+								}
 							}
 						}
 					}
 				}
-			}
-			
-			// TAC - AI Economy - koma13 - START
-			/*
-			if (eYieldProducedType == YIELD_BELLS && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS))
-			{
-				if ((iProfessionCount == 0) && (getPopulation() > 3))
-				{
-					iOutputValue *= 2;
-				}
-			}
-			*/
-			
-			if (eYieldProducedType == YIELD_BELLS)
-			{
-				int iCulturePressure = AI_calculateCulturePressure();
 
-				if (iCulturePressure > 0)
-				{
-					iOutputValue *= 2;
-					
-					if (iCulturePressure > 100)
-					{
-						iOutputValue *= 100 + iCulturePressure;
-						iOutputValue /= 100;
-					}
-				}
-				else if (kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) || getCultureLevel() < 2)
+				// TAC - AI Economy - koma13 - START
+				/*
+				if (eYieldProducedType == YIELD_BELLS && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS))
 				{
 					if ((iProfessionCount == 0) && (getPopulation() > 3))
 					{
-						iOutputValue *= (getCultureLevel() < 2 ? 9 : 3);
+						iOutputValue *= 2;
+					}
+				}
+				*/
+
+				if (eYieldProducedType == YIELD_BELLS)
+				{
+					int iCulturePressure = AI_calculateCulturePressure();
+
+					if (iCulturePressure > 0)
+					{
+						iOutputValue *= 2;
+
+						if (iCulturePressure > 100)
+						{
+							iOutputValue *= 100 + iCulturePressure;
+							iOutputValue /= 100;
+						}
+					}
+					else if (kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) || getCultureLevel() < 2)
+					{
+						if ((iProfessionCount == 0) && (getPopulation() > 3))
+						{
+							iOutputValue *= (getCultureLevel() < 2 ? 9 : 3);
+						}
+					}
+				}
+				// TAC - AI Economy - koma13 - END
+			}
+		}
+		else
+		{
+			iOutputValue += (100 * pv.iYieldOutput + 25 * pv.iExtraYieldOutput) * kOwner.AI_yieldValue(eYieldProducedType);
+		}
+
+		iOutputValue *= AI_getYieldOutputWeight(eYieldProducedType);
+		iOutputValue /= 100;
+
+		if (isNative())
+		{
+			// R&R, ray, AI improvement for MYP
+			if (GC.getProfessionInfo(eProfession).getNumYieldsProduced() > 1)
+			{
+				return ((iOutputValue - iInputValue) * 150) / 100;
+			}
+			else
+			{
+				return (iOutputValue - iInputValue);
+			}
+		}
+
+		if (eYieldProducedType != NO_YIELD)
+		{
+			iOutputValue *= 100 + (kOwner.AI_professionSuitability(pUnit, eProfession, pPlot) - 100) / 2;
+			iOutputValue /= 100;
+
+			if (eYieldConsumedType != NO_YIELD)
+			{
+				iOutputValue *= 50 + AI_getYieldAdvantage(eYieldProducedType);
+				iOutputValue /= 150;
+			}
+		}
+
+		if (eYieldConsumedType != NO_YIELD && eYieldConsumedType != YIELD_FOOD)
+		{
+			//VET NewCapacity - begin 4/7
+			if (GC.getNEW_CAPACITY())
+			{
+				if (getTotalYieldStored() > getMaxYieldCapacity())
+				{
+					iInputValue /= 5;
+				}
+			}
+			else
+			{
+				if (getYieldStored(eYieldConsumedType) > getMaxYieldCapacity())
+				{
+					iInputValue /= 5;
+				}
+			}
+			//VET NewCapacity - end 4/7
+		}
+
+		if ((eYieldProducedType != YIELD_FOOD) && GC.getYieldInfo(eYieldProducedType).isCargo())
+		{
+			int iNeededYield = AI_getNeededYield(eYieldProducedType) - pv.iNetYield;
+
+			if (iNeededYield > 0)
+			{
+				int iTraded = AI_getTradeBalance(eYieldProducedType);
+				if (iTraded > 0)
+				{
+					iNeededYield = std::max(1, iNeededYield - iTraded);
+				}
+
+				iNeededYield = std::min(iNeededYield, pv.iYieldOutput);
+				//VET NewCapacity - begin 5/7
+							//int iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getYieldStored(eYieldProducedType)) / getMaxYieldCapacity());
+				int iExtraValue;
+				if (GC.getNEW_CAPACITY())
+				{
+					iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getTotalYieldStored()) / getMaxYieldCapacity());
+				}
+				else
+				{
+					iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getYieldStored(eYieldProducedType)) / getMaxYieldCapacity());
+				}
+				//VET NewCapacity - end 5/7
+				iExtraValue *= AI_getYieldOutputWeight(eYieldProducedType);
+				iExtraValue /= 100;
+				iOutputValue += iExtraValue;
+			}
+
+			int iPercentWasted = 0;
+			if ((pv.iNetYield + pv.iYieldOutput > 0) && GC.getYieldInfo(eYieldProducedType).isCargo())
+			{
+				int iSpareCapacity = std::max(0, getMaxYieldCapacity() - (getYieldStored(eYieldProducedType) + pv.iNetYield));
+				//VET NewCapacity - begin 6/7
+							//int iExcess = getYieldStored(eYieldProducedType) + (iNetYield + iYieldOutput) - getMaxYieldCapacity();
+				int iExcess;
+				if (GC.getNEW_CAPACITY())
+				{
+					iExcess = getTotalYieldStored() + (pv.iNetYield + pv.iYieldOutput) - getMaxYieldCapacity();
+				}
+				else
+				{
+					iExcess = getYieldStored(eYieldProducedType) + (pv.iNetYield + pv.iYieldOutput) - getMaxYieldCapacity();
+				}
+				//VET NewCapacity - end 6/7
+				int iLoss = 0;
+				if (iExcess > 0)
+				{
+					iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
+					iLoss = std::min(iLoss, iExcess);
+				}
+
+				iPercentWasted = 100 - (100 * std::max(0, pv.iYieldOutput - iLoss)) / pv.iYieldOutput;
+			}
+
+			if (iPercentWasted > 0)
+			{
+				int iStubbornness = 10;
+				if (pUnit->AI_getIdealProfession() == eProfession)
+				{
+					iStubbornness += 15;
+				}
+				if (!isHuman())
+				{
+					iStubbornness *= 2;
+				}
+
+				iOutputValue = (iOutputValue * (100 - iPercentWasted)) + iStubbornness * iOutputValue * iPercentWasted / 100;
+				iOutputValue /= 100;
+			}
+		}
+
+		iOutputValue /= 100;
+		iInputValue /= 100;
+
+		if (kProfessionInfo.isWorkPlot() && pPlot != NULL)
+		{
+			if (pPlot->getBonusType() != NO_BONUS)
+			{
+				CvBonusInfo& kBonus = GC.getBonusInfo(pPlot->getBonusType());
+				if (kBonus.getYieldChange(eYieldProducedType) <= 0)
+				{
+					for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+					{
+						iOutputValue -= kBonus.getYieldChange(iYield);
 					}
 				}
 			}
-			// TAC - AI Economy - koma13 - END
 		}
-	}
-	else
-	{
-		iOutputValue += (100 * iYieldOutput + 25 * iExtraYieldOutput) * kOwner.AI_yieldValue(eYieldProducedType);
-	}
-	
-	iOutputValue *= AI_getYieldOutputWeight(eYieldProducedType);
-	iOutputValue /= 100;
-	
-	if (isNative())
-	{
+
+		if (eYieldProducedType == YIELD_FOOD)
+		{
+			int iBaseFood = pv.iNetYield;
+
+			int iDifference = (iBaseFood + getYieldStored(YIELD_FOOD));
+
+			if (iDifference < 0)
+			{
+				iOutputValue += (50 * std::min(pv.iYieldOutput, -iDifference));
+			}
+		}
+
+		pv.iNetValue = (iOutputValue - iInputValue);
+
+		int iMinProfessionValue = kOwner.AI_yieldValue(YIELD_FOOD, true, GC.getFOOD_CONSUMPTION_PER_POPULATION());
+		if (pv.iNetValue <= iMinProfessionValue)
+		{
+			// TAC - AI Economy - koma13 - START
+			//if (!isHuman())
+			if (!isHuman() && (eYieldConsumedType != NO_YIELD))
+				// TAC - AI Economy - koma13 - END
+			{
+				return 0;
+			}
+			else
+			{
+				pv.iNetValue /= 2;
+			}
+		}
+
+		if (pOldUnit != NULL && pOldUnit->getProfession() != eProfession && pOldUnit->getProfession() != NO_PROFESSION)
+		{
+			const CvPlot* pOldPlot = NULL;
+			if (GC.getProfessionInfo(pOldUnit->getProfession()).isWorkPlot())
+			{
+				pOldPlot = pPlot;
+			}
+
+			if (pv.iNetValue <= AI_professionValue(pOldUnit->getProfession(), pOldUnit, pOldPlot, NULL))
+			{
+				return 0;
+			}
+		}
+
 		// R&R, ray, AI improvement for MYP
-		if(GC.getProfessionInfo(eProfession).getNumYieldsProduced() > 1)
+		if (GC.getProfessionInfo(eProfession).getNumYieldsProduced() > 1)
 		{
-			return ((iOutputValue - iInputValue) * 150) / 100;
-		}
-		else
-		{
-			return (iOutputValue - iInputValue);
-		}
-	}
-	
-	if (eYieldProducedType != NO_YIELD)
-	{
-		iOutputValue *= 100 + (kOwner.AI_professionSuitability(pUnit, eProfession, pPlot) - 100) / 2;
-		iOutputValue /= 100;
-
-		if (eYieldConsumedType != NO_YIELD)
-		{
-			iOutputValue *= 50 + AI_getYieldAdvantage(eYieldProducedType);
-			iOutputValue /= 150;
-		}
-	}
-	
-	if (eYieldConsumedType != NO_YIELD && eYieldConsumedType != YIELD_FOOD)
-	{
-//VET NewCapacity - begin 4/7
-		if (GC.getNEW_CAPACITY())
-		{
-			if (getTotalYieldStored() > getMaxYieldCapacity())
-				{iInputValue /= 5;}
-		}
-		else
-		{
-			if (getYieldStored(eYieldConsumedType) > getMaxYieldCapacity())
-			{
-				iInputValue /= 5;
-			}
-		}
-//VET NewCapacity - end 4/7
-	}
-	
-	if ((eYieldProducedType != YIELD_FOOD) && GC.getYieldInfo(eYieldProducedType).isCargo())
-	{
-		int iNeededYield = AI_getNeededYield(eYieldProducedType) - iNetYield;
-		
-		if (iNeededYield > 0)
-		{
-			int iTraded = AI_getTradeBalance(eYieldProducedType);
-			if (iTraded > 0)
-			{
-				iNeededYield = std::max(1, iNeededYield - iTraded);
-			}
-			
-			iNeededYield = std::min(iNeededYield, iYieldOutput);
-//VET NewCapacity - begin 5/7
-			//int iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getYieldStored(eYieldProducedType)) / getMaxYieldCapacity());
-			int iExtraValue;
-			if (GC.getNEW_CAPACITY())
-				{iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getTotalYieldStored()) / getMaxYieldCapacity());}
-			else
-				{iExtraValue = iNeededYield * (50 + 100 * (getMaxYieldCapacity() - getYieldStored(eYieldProducedType)) / getMaxYieldCapacity());}
-//VET NewCapacity - end 5/7
-			iExtraValue *= AI_getYieldOutputWeight(eYieldProducedType);
-			iExtraValue /= 100;
-			iOutputValue += iExtraValue;
-		}
-		
-		int iPercentWasted = 0;
-		if ((iNetYield + iYieldOutput > 0) && GC.getYieldInfo(eYieldProducedType).isCargo())
-		{
-			int iSpareCapacity = std::max(0, getMaxYieldCapacity() - (getYieldStored(eYieldProducedType) + iNetYield));
-//VET NewCapacity - begin 6/7
-			//int iExcess = getYieldStored(eYieldProducedType) + (iNetYield + iYieldOutput) - getMaxYieldCapacity();
-			int iExcess;
-			if (GC.getNEW_CAPACITY())
-				{iExcess = getTotalYieldStored() + (iNetYield + iYieldOutput) - getMaxYieldCapacity();}
-			else
-				{iExcess = getYieldStored(eYieldProducedType) + (iNetYield + iYieldOutput) - getMaxYieldCapacity();}
-//VET NewCapacity - end 6/7
-			int iLoss = 0;
-			if (iExcess > 0)
-			{
-				iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
-				iLoss = std::min(iLoss, iExcess);
-			}
-
-			iPercentWasted = 100 - (100 * std::max(0, iYieldOutput - iLoss)) / iYieldOutput;
-		}
-		
-		if (iPercentWasted > 0)
-		{
-			int iStubbornness = 10;
-			if (pUnit->AI_getIdealProfession() == eProfession)
-			{
-				iStubbornness += 15;
-			}
-			if (!isHuman())
-			{
-				iStubbornness *= 2;
-			}
-			
-			iOutputValue = (iOutputValue * (100 - iPercentWasted)) + iStubbornness * iOutputValue * iPercentWasted / 100;
-			iOutputValue /= 100;
-		}
-	}
-	
-	iOutputValue /= 100;
-	iInputValue /= 100;
-	
-	if (kProfessionInfo.isWorkPlot() && pPlot != NULL)
-	{
-		if (pPlot->getBonusType() != NO_BONUS)
-		{
-			CvBonusInfo& kBonus = GC.getBonusInfo(pPlot->getBonusType());
-			if (kBonus.getYieldChange(eYieldProducedType) <= 0)
-			{
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-				{
-					iOutputValue -= kBonus.getYieldChange(iYield);
-				}
-			}
+			pv.iNetValue = (pv.iNetValue * 150) / 100;
 		}
 	}
 
-	if (eYieldProducedType == YIELD_FOOD)
+	int iCombinedValue = professionValue[0].iNetValue;
+
+	if (kProfessionInfo.getNumYieldsConsumed() > 1)
 	{
-		int iBaseFood = iNetYield;
-		
-		int iDifference = (iBaseFood + getYieldStored(YIELD_FOOD));
-		
-		if (iDifference < 0)
-		{
-			iOutputValue += (50 * std::min(iYieldOutput, -iDifference));
-		}
-	}
-	
-	int iNetValue = (iOutputValue - iInputValue);
-	
-	int iMinProfessionValue = kOwner.AI_yieldValue(YIELD_FOOD, true, GC.getFOOD_CONSUMPTION_PER_POPULATION());
-	if (iNetValue <= iMinProfessionValue)
-	{
-		// TAC - AI Economy - koma13 - START
-		//if (!isHuman())
-		if (!isHuman() && (eYieldConsumedType != NO_YIELD))
-		// TAC - AI Economy - koma13 - END
-		{
+		// This input was not available, return early
+		if (professionValue[0].iNetValue == 0)
 			return 0;
-		}
-		else
+
+		// Erik: In the case of multiple input yields, we use
+		// the max value resulting from the evaluation of the
+		// input yield (if any input is missing / does not contribute, we return early)
+		// This is not strictly correct, but to achieve that we'd have to rewrite 
+		// most of the function and make it far more sophisticated
+		for (int i = 1; i < kProfessionInfo.getNumYieldsConsumed(); i++)
 		{
-			iNetValue /= 2;
-		}
-	}
-	
-	if (pOldUnit != NULL && pOldUnit->getProfession() != eProfession && pOldUnit->getProfession() != NO_PROFESSION)
-	{
-		const CvPlot* pOldPlot = NULL;
-		if (GC.getProfessionInfo(pOldUnit->getProfession()).isWorkPlot())
-		{
-			pOldPlot = pPlot;
-		}
-		
-		if (iNetValue <= AI_professionValue(pOldUnit->getProfession(), pOldUnit, pOldPlot, NULL))
-		{
-			return 0;
+			if (professionValue[i].iNetValue == 0)
+				return 0;
+
+			iCombinedValue = std::max(iCombinedValue, professionValue[i].iNetValue);
 		}
 	}
 
-	// R&R, ray, AI improvement for MYP
-	if(GC.getProfessionInfo(eProfession).getNumYieldsProduced() > 1)
-	{
-		iNetValue = (iNetValue * 150) / 100;
-	}
-
-	return std::max(1, iNetValue);
+	return std::max(1, iCombinedValue);
 }
 
 int CvCityAI::AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const
