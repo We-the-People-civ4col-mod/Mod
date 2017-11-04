@@ -1012,9 +1012,8 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		}
 
 		// R&R mod, vetiarvind, max yield import limit - start | implement Nightinggale's bit twiddling optimization				
-		setImportsLimit((YieldTypes) iData1, iData2 >> 16);
-		setMaintainLevel((YieldTypes) iData1, iData2 & 0xFFFF);
-		//setMaintainLevel((YieldTypes) iData1, iData2);
+		setImportsLimit((YieldTypes) iData1, iData2 & 0xFFFF);
+		setMaintainLevel((YieldTypes) iData1, iData2 >> 16);
 		// R&R mod, vetiarvind, max yield import limit - end
 
 		
