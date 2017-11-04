@@ -3998,7 +3998,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 			return 0;
 
 		// Erik: In the case of multiple input yields, we use
-		// the max value resulting from the evaluation of the
+		// the minimum value resulting from the evaluation of the
 		// input yield (if any input is missing / does not contribute, we return early)
 		// This is not strictly correct, but to achieve that we'd have to rewrite 
 		// most of the function and make it far more sophisticated
@@ -4007,11 +4007,11 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 			if (professionValue[i].iNetValue == 0)
 				return 0;
 
-			iCombinedValue = std::max(iCombinedValue, professionValue[i].iNetValue);
+			iCombinedValue = std::min(iCombinedValue, professionValue[i].iNetValue);
 		}
 	}
 
-	return std::max(1, iCombinedValue);
+	return std::max(0, iCombinedValue);
 }
 
 int CvCityAI::AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const
