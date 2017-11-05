@@ -9979,7 +9979,7 @@
 			<fScale>0.45</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/Great_General/Great_General.nif</NIF>
-			<KFM>Art/Units/Great_General/Great_General.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Great_Admiral/Great_General.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
