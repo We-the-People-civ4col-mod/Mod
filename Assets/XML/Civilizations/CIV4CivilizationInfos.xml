@@ -1330,12 +1330,16 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_VETERAN_CAVALRY</UnitClassType>
-					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_MOUNTED_CONQUISTADOR</UnitClassType>
+					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
 					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+				</FreeUnitClass>
+				<FreeUnitClass>
+					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
+					<FreeUnitProfession>PROFESSION_MISSIONARY</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
