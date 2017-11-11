@@ -1778,7 +1778,7 @@
 			<FreeUnits>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_MILITIA</UnitClass>
-					<iFreeUnits>10</iFreeUnits>
+					<iFreeUnits>5</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
@@ -1913,7 +1913,7 @@
 			<FreeUnits>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_VETERAN</UnitClass>
-					<iFreeUnits>5</iFreeUnits>
+					<iFreeUnits>2</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
@@ -1943,7 +1943,7 @@
 			<FreeUnits>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_HEAVY_ARTILLERY</UnitClass>
-					<iFreeUnits>4</iFreeUnits>
+					<iFreeUnits>2</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
@@ -1998,7 +1998,7 @@
 			<FreeUnits>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
-					<iFreeUnits>2</iFreeUnits>
+					<iFreeUnits>1</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
@@ -2032,7 +2032,7 @@
 				</FreeUnit>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_CONTINENTAL_GUARD</UnitClass>
-					<iFreeUnits>5</iFreeUnits>
+					<iFreeUnits>1</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
@@ -2062,7 +2062,7 @@
 			<FreeUnits>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_HESSIAN</UnitClass>
-					<iFreeUnits>10</iFreeUnits>
+					<iFreeUnits>5</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
@@ -2092,11 +2092,11 @@
 			<FreeUnits>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_VETERAN</UnitClass>
-					<iFreeUnits>10</iFreeUnits>
+					<iFreeUnits>5</iFreeUnits>
 				</FreeUnit>
 				<FreeUnit>
 					<UnitClass>UNITCLASS_VETERAN_DRAGOON</UnitClass>
-					<iFreeUnits>5</iFreeUnits>
+					<iFreeUnits>2</iFreeUnits>
 				</FreeUnit>
 			</FreeUnits>
 			<FatherPointCosts>
