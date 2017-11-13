@@ -1734,15 +1734,19 @@ void CvUnitAI::AI_missionaryMove()
 		return;
 	}
 
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
+	// Erik: Disabled for now, missionaries
+	// will not found or join cities at the start
+	// of the game
+	/*
 	// If we have no cities, become a colonist
 	// so that we can found or join one
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	if (kOwner.getNumCities() == 0)
 	{
 		AI_setUnitAIType(UNITAI_COLONIST);
 		AI_colonistMove();
 	}
+	*/
 
 	CvCity* pCity = (plot()->getOwnerINLINE() == getOwnerINLINE()) ? plot()->getPlotCity() : NULL;
 	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
@@ -2460,8 +2464,11 @@ void CvUnitAI::AI_attackCityMove()
 {	
 	PROFILE_FUNC();
 
+	// Erik: Disabled for now, combat units
+	// will not found or join cities at the start
+	// of the game
+	/*
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-
 	// If we have no cities, become a colonist
 	// so that we can found or join one
 	if (kOwner.getNumCities() == 0)
@@ -2469,6 +2476,7 @@ void CvUnitAI::AI_attackCityMove()
 		AI_setUnitAIType(UNITAI_COLONIST);
 		AI_colonistMove();
 	}
+	*/
 
 	if (isCargo())
 	{
