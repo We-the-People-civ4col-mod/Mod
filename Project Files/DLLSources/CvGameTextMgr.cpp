@@ -7033,7 +7033,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	{
 		return;
 	}
-	CvPlayer& owner = GET_PLAYER(city.getOwnerINLINE());
+	CvPlayerAI& owner = GET_PLAYER(city.getOwnerINLINE());
 
 	setYieldPriceHelp(szBuffer, city.getOwnerINLINE(), eYieldType);
 
@@ -7045,6 +7045,14 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_INFO_YIELD", iYieldDomesticDemand, iYieldDomesticPrice));
 	}
+
+	if (GC.getGameINLINE().isDebugMode())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("(city)AI_estimateYieldValue value: %d1", city.AI_estimateYieldValue(eYieldType, 1)));
+		szBuffer.append(gDLL->getText("(player)AI_yieldValue value: %d1", owner.AI_yieldValue(eYieldType)));
+	}
+
 	// R&R, ray, adjustment Domestic Markets - START
 
 	if (city.isOccupation())
