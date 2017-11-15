@@ -1156,10 +1156,10 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		int iCityDefense = getDefenseModifier();
 		int iDefense = kBuildingInfo.getDefenseModifier();
 		
-		iValue += (iDefense * (40 + 4 * getPopulation())) / (100 + 2 * iCityDefense);
+		iValue += ((iDefense - iCityDefense) * getPopulation()) / (iCityDefense + 1);
 		if (bAtWar)
 		{
-			if (iCityDefense < 50)
+			if (iCityDefense <= 60)
 			{
 				iValue += 100;
 			}
@@ -3687,13 +3687,19 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 
 				if (eYieldConsumedType == NO_YIELD)
 				{
-					iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType, true, pv.iYieldOutput);
+					//iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType, true, pv.iYieldOutput);
+					iOutputValue += 100 * AI_estimateYieldValue(eYieldProducedType, pv.iYieldOutput);
+					
+
+
 				}
 				else
 				{
 					FAssert(pv.iYieldInput > 0);
-					iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType) * pv.iYieldOutput * std::min(pv.iYieldInput, iEstimatedInputAvailable) / std::max(1, pv.iYieldInput);
-					iInputValue += 100 * kOwner.AI_yieldValue(eYieldConsumedType, false) * std::min(pv.iYieldInput, iEstimatedInputAvailable);
+					//iOutputValue += 100 * kOwner.AI_yieldValue(eYieldProducedType) * pv.iYieldOutput * std::min(pv.iYieldInput, iEstimatedInputAvailable) / std::max(1, pv.iYieldInput);
+					iOutputValue += 100 * AI_estimateYieldValue(eYieldProducedType, 1) * pv.iYieldOutput * std::min(pv.iYieldInput, iEstimatedInputAvailable) / std::max(1, pv.iYieldInput);
+					//iInputValue += 100 * kOwner.AI_yieldValue(eYieldConsumedType, false) * std::min(pv.iYieldInput, iEstimatedInputAvailable);
+					iInputValue += 100 * AI_estimateYieldValue(eYieldConsumedType, 1) * std::min(pv.iYieldInput, iEstimatedInputAvailable);
 				}
 
 
@@ -3796,7 +3802,8 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 		}
 		else
 		{
-			iOutputValue += (100 * pv.iYieldOutput + 25 * pv.iExtraYieldOutput) * kOwner.AI_yieldValue(eYieldProducedType);
+			//iOutputValue += (100 * pv.iYieldOutput + 25 * pv.iExtraYieldOutput) * kOwner.AI_yieldValue(eYieldProducedType);
+			iOutputValue += (100 * pv.iYieldOutput + 25 * pv.iExtraYieldOutput) * AI_estimateYieldValue(eYieldProducedType, 1);
 		}
 
 		iOutputValue *= AI_getYieldOutputWeight(eYieldProducedType);
@@ -3952,7 +3959,8 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 
 		pv.iNetValue = (iOutputValue - iInputValue);
 
-		int iMinProfessionValue = kOwner.AI_yieldValue(YIELD_FOOD, true, GC.getFOOD_CONSUMPTION_PER_POPULATION());
+		//int iMinProfessionValue = kOwner.AI_yieldValue(YIELD_FOOD, true, GC.getFOOD_CONSUMPTION_PER_POPULATION());
+		int iMinProfessionValue = AI_estimateYieldValue(YIELD_FOOD, GC.getFOOD_CONSUMPTION_PER_POPULATION());
 		if (pv.iNetValue <= iMinProfessionValue)
 		{
 			// TAC - AI Economy - koma13 - START
@@ -4414,47 +4422,22 @@ int CvCityAI::AI_calculateAlarm(PlayerTypes eIndex) const
 	return (iPositiveAlarm + iNegativeAlarm);
 }
 
+const int YIELD_BELLS_BASE_VALUE = 10;
+const int YIELD_HAMMERS_BASE_VALUE = 10;
+const int YIELD_TOOLS_BASE_VALUE = 10;
+
+
+
 int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
 	
 	switch (eYield)
 	{
+
 		case YIELD_FOOD:
-		case YIELD_LUMBER:
-		case YIELD_STONE:
-		case YIELD_HEMP:
-		case YIELD_ORE:
-		case YIELD_SHEEP:
-		case YIELD_CATTLE:
+		// Strategic resource, no reduction
 		case YIELD_HORSES:
-		case YIELD_COCA_LEAVES:
-		case YIELD_COCOA_FRUITS:
-		case YIELD_COFFEE_BERRIES:
-		case YIELD_TOBACCO:
-		case YIELD_WOOL:
-		case YIELD_COTTON:
-		case YIELD_INDIGO:
-		case YIELD_HIDES:
-		case YIELD_FUR:
-		case YIELD_PREMIUM_FUR:
-		case YIELD_RAW_SALT:
-		case YIELD_RED_PEPPER:	
-		case YIELD_BARLEY:
-		case YIELD_SUGAR:
-		case YIELD_GRAPES:
-		case YIELD_WHALE_BLUBBER:
-		case YIELD_VALUABLE_WOOD:
-		case YIELD_TRADE_GOODS:
-		case YIELD_ROPE:
-		case YIELD_SAILCLOTH:
-		case YIELD_TOOLS:
-		case YIELD_BLADES:
-		case YIELD_MUSKETS:
-		case YIELD_CANNONS:
-		case YIELD_SILVER:
-		case YIELD_GOLD:
-		case YIELD_GEMS:
 		case YIELD_COCOA:
 		case YIELD_COFFEE:
 		case YIELD_CIGARS:
@@ -4468,14 +4451,110 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_SPICES:
 		case YIELD_BEER:
 		case YIELD_RUM:
-		case YIELD_WINE:	
+		case YIELD_WINE:
 		case YIELD_WHALE_OIL:
 		case YIELD_FURNITURE:
+			break;
+		// We punish overproduction of input yields 
+		case YIELD_LUMBER:
+		case YIELD_STONE:
+		case YIELD_HEMP:
+		case YIELD_ORE:
+		case YIELD_SHEEP:
+		case YIELD_CATTLE:
+		case YIELD_COCA_LEAVES:
+		case YIELD_COCOA_FRUITS:
+		case YIELD_COFFEE_BERRIES:
+		case YIELD_TOBACCO:
+		case YIELD_WOOL:
+		case YIELD_COTTON:
+		case YIELD_INDIGO:
+		case YIELD_HIDES:
+		case YIELD_FUR:
+		case YIELD_PREMIUM_FUR:
+		case YIELD_RAW_SALT:
+		case YIELD_RED_PEPPER:
+		case YIELD_BARLEY:
+		case YIELD_SUGAR:
+		case YIELD_GRAPES:
+		case YIELD_WHALE_BLUBBER:
+		case YIELD_VALUABLE_WOOD:
+		{
+			PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
+
+			if (eParent != NO_PLAYER)
+			{
+				CvPlayer& kParent = GET_PLAYER(eParent);
+
+				// We value the yield by what we would have had to pay for it in
+				// a port as long as we only have a small amount of it
+				const int iBaselineAmount = 50;
+
+				// We want to encourage the production of a least a small
+				// amount of any given yield since that makes it more
+				// likely that it can be used as input
+				if (getYieldStored(eYield) <= iBaselineAmount)
+				{
+					const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
+					iValue = iAmount * iBestBuyPrice;
+				}
+				else
+				{ 
+					// Erik: For every 100 units in excess of the maintain level + baseline,
+					// decrement the estimated value by 1 to "punish" overproduction
+					// Note: This should only be applied to input yields and 
+					// not final products like muskets etc.
+					const int iExcessSurplus = std::max(0, getYieldStored(eYield) - getMaintainLevel(eYield)) - iBaselineAmount;
+					const int iReductionFactor = iExcessSurplus / 100;
+					// TODO: Consider domestic prices as well
+					const int iBestSellPrice = std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+					iValue = iAmount * std::max(1, iBestSellPrice - iReductionFactor);
+				}
+			}
+		}
+		break;
+		case YIELD_TRADE_GOODS:
+		// These are strategic yields and their price is never reduced
+		case YIELD_ROPE:
+		case YIELD_SAILCLOTH:
+			break;
+		case YIELD_TOOLS:
+		{
+			const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+			iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
+		}
+		break;
+		case YIELD_BLADES:
+		case YIELD_MUSKETS:
+		case YIELD_CANNONS:
+		// Previous metals are never reduced in value
+		case YIELD_SILVER:
+		case YIELD_GOLD:
+		case YIELD_GEMS:
 		case YIELD_LUXURY_GOODS:
+		break;
 		case YIELD_HAMMERS:
-			break;
+		{
+			const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+			iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
+		}
+		break;
 		case YIELD_BELLS:
-			break;
+		{
+			// Erik: Estimate the value of bells based on this formula: 
+			// If rebel sentiment is <50%: 
+			//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%) 
+			// Else
+			//  Liberty bell value = (10 + pop/5)
+				
+			// Note that the doubles are necessary for the calculation to round correctly
+			const int rebelPercent = getRebelPercent();
+			const double rebelFactor = (125 - getRebelPercent()) / (double)100;
+			const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+				
+			iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
+		}
+		break;
 		case YIELD_CROSSES:
 			break;
 		case YIELD_CULTURE:
@@ -4487,7 +4566,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		default:
 			FAssert(false);
 	}
-	
+
 	return iValue;
 }
 
