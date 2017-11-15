@@ -424,8 +424,8 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_PREACHER</UnitClassType>
@@ -893,8 +893,8 @@
 					<FreeUnitProfession>NONE</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_HUNTER</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_PIONEER</UnitClassType>
+					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
@@ -1721,7 +1721,7 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_TRAPPER</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
@@ -2402,11 +2402,11 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -2753,11 +2753,11 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_LUMBERJACK</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNITCLASS_FARMER</UnitClassType>
-					<FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>
 			<FreeBuildingClasses>
@@ -3267,7 +3267,7 @@
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_HUNTER</UnitClassType>
-					<FreeUnitProfession>NONE</FreeUnitProfession>
+					<FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
 					<UnitClassType>UNITCLASS_COLONIST</UnitClassType>
