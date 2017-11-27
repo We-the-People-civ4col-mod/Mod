@@ -14,6 +14,31 @@
 #include "FVariableSystem.h"
 #include "CvGameCoreUtils.h"
 
+/// xml verification
+#ifdef FASSERT_ENABLE
+
+//
+// function to loop xml files and assert on illegal settings
+// this is usually variable combos, which will cause asserts and bugs later
+static void verifyXMLsettings()
+{
+	for (int i=0; i < GC.getNumEventTriggerInfos(); ++i)
+	{
+		EventTriggerTypes eTrigger = (EventTriggerTypes)i;
+
+		CvEventTriggerInfo& kInfo = GC.getEventTriggerInfo(eTrigger);
+		
+		if (kInfo.isUnitsOnPlot())
+		{
+			FAssertMsg(isPlotEventTrigger(eTrigger), CvString::format("XML error: %s has bUnitsOnPlot set, but failed isPlotEventTrigger()", kInfo.getType()));
+		}
+	}
+}
+#endif
+/// xml verification
+
+
+
 /// XML type preloading - start - Nightinggale
 
 // the concept of preloading XML file types is as follows:
@@ -1035,6 +1060,12 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(false);
 	/// XML type preloading - end - Nightinggale
+
+	/// xml verification
+#ifdef FASSERT_ENABLE
+	verifyXMLsettings();
+#endif
+	/// xml verification
 
 	/*
 	LoadGlobalClassInfo(GC.getColorInfo(), "CIV4ColorVals", "Interface", "Civ4ColorVals/ColorVals/ColorVal", NULL);
