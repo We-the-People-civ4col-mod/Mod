@@ -1433,6 +1433,23 @@ bool CvSelectionGroup::canEverDoCommand(CommandTypes eCommand, int iData1, int i
 			return false;
 		}
 	}
+	// Erik: Coastal transports cannot travel to any foreign port
+	else if (eCommand == COMMAND_SAIL_TO_AFRICA)
+	{
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
+
+		while (pUnitNode != NULL)
+		{
+			CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
+
+			// TODO: Check against the ability to cross ocean plots instead
+			if (pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
+			{
+				return false;
+			}
+			pUnitNode = nextUnitNode(pUnitNode);
+		}
+	}
 
 	return true;
 }

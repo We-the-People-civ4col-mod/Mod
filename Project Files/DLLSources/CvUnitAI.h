@@ -132,6 +132,7 @@ protected:
 	void AI_workerSeaMove();
 	//End TAC Whaling, ray
 	void AI_transportSeaMove();
+	void AI_transportCoastMove();
 	void AI_assaultSeaMove();
 	void AI_escortSeaMove();	// TAC - AI Escort Sea - koma13
 	void AI_combatSeaMove();

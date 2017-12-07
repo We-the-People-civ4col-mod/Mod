@@ -300,8 +300,7 @@ bool CvUnitAI::AI_update()
 			//End TAC Whaling, ray	
 			case UNITAI_TRANSPORT_SEA:
 				AI_transportSeaMove();
-				break;
-			
+				break;			
 				
 			case UNITAI_ASSAULT_SEA:
 				AI_assaultSeaMove();
@@ -327,6 +326,10 @@ bool CvUnitAI::AI_update()
 				AI_escortSeaMove();
 				break;
 			// TAC - AI  Sea - koma13 - END
+
+			case UNITAI_TRANSPORT_COAST:
+				AI_transportCoastMove();
+				break;
 
 			default:
 				FAssert(false);
@@ -479,7 +482,11 @@ bool CvUnitAI::AI_europeUpdate()
 		case UNITAI_ESCORT_SEA:		// TAC - AI Escort Sea - koma13
 			crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 		    break;
-			
+		
+		case UNITAI_TRANSPORT_COAST:
+			FAssertMsg(false, "UNITAI_TRANSPORT_COAST not supported for ships in Europe");
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -690,6 +697,10 @@ int CvUnitAI::AI_groupFirstVal()
 	//End TAC Whaling, ray	
 	case UNITAI_TRANSPORT_SEA:
 		return 20;
+		break;
+
+	case UNITAI_TRANSPORT_COAST:
+		return 19;
 		break;
 
 	case UNITAI_ASSAULT_SEA:
@@ -3736,7 +3747,6 @@ void CvUnitAI::AI_transportMoveRoutes()
 
 void CvUnitAI::AI_transportMoveFull()
 {
-
 	if (AI_breakAutomation())
 	{
 		return;
@@ -4382,6 +4392,51 @@ bool CvUnitAI::AI_sailToPreferredPort(bool bMove)
 		// We cannot sail to a port given these conditions
 		return false;
 	}
+}
+
+void CvUnitAI::AI_transportCoastMove()
+{
+	//const bool bEmpty = !getGroup()->hasCargo();
+
+	if (AI_breakAutomation())
+	{
+		return;
+	}
+
+	// Erik: Colonist transportation has not been implemented yet
+	// TODO: Determine a suitable range, maybe 2 full moves ?
+	/*
+	if (AI_getUnitAIState() == UNITAI_STATE_PICKUP)
+	{
+		if (AI_respondToPickup(10))
+		{
+			AI_setUnitAIState(UNITAI_STATE_PICKUP);
+			return;
+		}
+
+		if (AI_deliverUnits())
+		{
+			return;
+		}
+
+		if (bEmpty)
+		{
+			AI_setUnitAIState(UNITAI_STATE_DEFAULT);
+		}
+	}
+	*/
+	if (getGroup()->AI_tradeRoutes())
+	{
+		return;
+	}
+
+	if (AI_retreatToCity())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
 }
 
 void CvUnitAI::AI_transportSeaMove()
@@ -7569,7 +7624,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 		
 	if (kPromotion.getMovesChange() != 0)
 	{
-		if (eUnitAI == UNITAI_TRANSPORT_SEA)
+		if (eUnitAI == UNITAI_TRANSPORT_SEA || eUnitAI == UNITAI_TRANSPORT_COAST)
 		{
 			iValue += 50 * kPromotion.getMovesChange();
 		}
@@ -7595,7 +7650,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 	}
 	if (kPromotion.getCargoChange() != 0)
 	{
-		if (eUnitAI == UNITAI_TRANSPORT_SEA || eUnitAI == UNITAI_WAGON)
+		if (eUnitAI == UNITAI_TRANSPORT_SEA || eUnitAI == UNITAI_WAGON || eUnitAI == UNITAI_TRANSPORT_COAST)
 		{
 			iValue += kPromotion.getCargoChange() * 50;
 		}

@@ -274,6 +274,8 @@ protected:
 	void AI_cachePlayerCloseness(int iMaxDistance) const;
 	void AI_updateWorkersNeededHere();
 
+	bool AI_hasCoastalRoute() const;
+
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
 };

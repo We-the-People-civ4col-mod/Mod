@@ -600,6 +600,7 @@ bool CvSelectionGroupAI::AI_isDeclareWar(const CvPlot* pPlot)
 			case UNITAI_WORKER_SEA:
 			//End TAC Whaling, ray
 			case UNITAI_TRANSPORT_SEA:
+			case UNITAI_TRANSPORT_COAST:
 				return false;
 				break;
 
@@ -894,6 +895,26 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	std::vector<bool> yieldsToUnload(NUM_YIELD_TYPES, false);
 	std::vector<int> yieldsOnBoard(NUM_YIELD_TYPES, false);
 
+	// Erik: We need to determine if we're dealing with a coastal transport
+	bool bCoastalTransport = false;
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		if (pLoopUnit != NULL)
+		{
+			UnitAITypes aiType = pLoopUnit->AI_getUnitAIType();
+
+			if (aiType == UNITAI_TRANSPORT_COAST)
+			{
+				bCoastalTransport = true;
+				break;
+			}
+		}
+	}
+
 	if (!isHuman() || (getAutomateType() == AUTOMATE_TRANSPORT_FULL))
 	{
 		std::vector<CvTradeRoute*> aiRoutes;
@@ -920,12 +941,17 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			}
 			// traderoute fix - end - Nightinggale
 
+			// Erik: Coastal transports cannot have europe as their destination
+			if (bCoastalTransport && (pRoute->getDestinationCity().eOwner != getOwnerINLINE() || (pRoute->getDestinationCity() == kEurope)))
+				continue;
+
 			CvCity* pSourceCity = ::getCity(pRoute->getSourceCity());
 			CvArea* pSourceWaterArea = pSourceCity->waterArea();
 			// R&R, vetiarvind, max trade capacity  - start
 			DomainTypes domainType = getDomainType();
 			// R&R, vetiarvind, max trade capacity  - end
 
+			
 			if ((pSourceCity != NULL) && ((domainType != DOMAIN_SEA) || (pSourceWaterArea != NULL)))
 			{
 				int iSourceArea = (domainType == DOMAIN_SEA) ? pSourceWaterArea->getID() : pSourceCity->getArea();
@@ -942,7 +968,6 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 						{
 							yieldsToUnload[pRoute->getYield()] = true;
 						}
-
 
 						cityValues[pRoute->getSourceCity()] = 0;
 						cityValues[pRoute->getDestinationCity()] = 0;
@@ -976,7 +1001,6 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 							{
 								yieldsToUnload[pRoute->getYield()] = true;
 							}
-
 
 							cityValues[pRoute->getSourceCity()] = 0;
 							cityValues[pRoute->getDestinationCity()] = 0;
@@ -1066,7 +1090,6 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				int iRouteValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), yieldsToUnload);
 				// R&R mod, vetiarvind, max yield import limit - end
 				
-
 				if (iRouteValue > 0)
 				{
 					cityValues[routes[i]->getDestinationCity()] += iRouteValue;
@@ -1164,7 +1187,6 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			}
 		}
 	}
-
 
 	if ((pPlotCity != NULL) && (kBestDestination.eOwner != NO_PLAYER))
 	{
@@ -1324,6 +1346,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	{
 		if (isHuman())
 		{
+			// Erik: Is this really ok for a coastal transport ?
 			getHeadUnit()->AI_setUnitAIState(UNITAI_STATE_SAIL);
 		}
 	}

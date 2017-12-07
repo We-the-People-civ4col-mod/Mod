@@ -6043,6 +6043,10 @@ int CvPlayer::getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const
 		{
 			iProductionNeeded = 0;
 		}
+		if ((eYield != YIELD_HAMMERS) && (GC.getUnitInfo(eUnit).getDefaultUnitAIType() == UNITAI_TRANSPORT_COAST))
+		{
+			iProductionNeeded = 0;
+		}
 	}
 	// TAC - AI Wagon Train Cheat - koma13 - END
 	iProductionNeeded *= GC.getDefineINT("UNIT_PRODUCTION_PERCENT");

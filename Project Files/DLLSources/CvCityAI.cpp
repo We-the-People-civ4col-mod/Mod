@@ -482,6 +482,18 @@ void CvCityAI::AI_chooseProduction()
 					}
 				}
 			}
+
+			// Erik: Only consider building a coastal transport if at least one other city is coastally reachable and the water area is valid
+			if (pWaterArea != NULL && AI_hasCoastalRoute())
+			{
+				if ((pWaterArea->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) + pWaterArea->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST)) < kPlayer.countNumCoastalCities() / 2)
+				{
+					if (AI_chooseUnit(UNITAI_TRANSPORT_COAST))
+					{
+						return;
+					}
+				}
+			}
 		}
 	}
 
@@ -623,6 +635,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 						
 			case UNITAI_WORKER_SEA:
 			case UNITAI_TRANSPORT_SEA:
+			case UNITAI_TRANSPORT_COAST:
 			case UNITAI_PIRATE_SEA:
 				if (GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI) == 0)
 				{
@@ -709,90 +722,91 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 			{
 				
 				if (canTrain(eLoopUnit))
+				{
+					iValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
+
+				if (iValue > ((iBestOriginalValue * 2) / 3))
+				{
+					iValue *= (getProductionExperience(eLoopUnit) + 10);
+					iValue /= 10;
+
+					//free promotions. slow?
+					//only 1 promotion per source is counted (ie protective isn't counted twice)
+					int iPromotionValue = 0;
+					//buildings
+					for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 					{
-						iValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
-
-						if (iValue > ((iBestOriginalValue * 2) / 3))
+						if (isFreePromotion((PromotionTypes)iJ) && !GC.getUnitInfo(eLoopUnit).getFreePromotions((PromotionTypes)iJ))
 						{
-							iValue *= (getProductionExperience(eLoopUnit) + 10);
-							iValue /= 10;
-
-                            //free promotions. slow?
-                            //only 1 promotion per source is counted (ie protective isn't counted twice)
-                            int iPromotionValue = 0;
-                            //buildings
-                            for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
-                            {
-                                if (isFreePromotion((PromotionTypes)iJ) && !GC.getUnitInfo(eLoopUnit).getFreePromotions((PromotionTypes)iJ))
-                                {
-                                    if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getPromotionInfo((PromotionTypes)iJ).getUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
-                                    {
-                                        iPromotionValue += 15;
-                                        break;
-                                    }
-                                }
-                            }
-
-                            //special to the unit
-                            for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
-                            {
-                                if (GC.getUnitInfo(eLoopUnit).getFreePromotions(iJ))
-                                {
-                                    iPromotionValue += 15;
-                                    break;
-                                }
-                            }
-
-                            //traits
-                            for (iJ = 0; iJ < GC.getNumTraitInfos(); iJ++)
-                            {
-                                if (hasTrait((TraitTypes)iJ))
-                                {
-                                    for (iK = 0; iK < GC.getNumPromotionInfos(); iK++)
-                                    {
-                                        if (GC.getTraitInfo((TraitTypes) iJ).isFreePromotion(iK))
-                                        {
-                                            if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getTraitInfo((TraitTypes) iJ).isFreePromotionUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
-                                            {
-                                                iPromotionValue += 15;
-                                                break;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            iValue *= (iPromotionValue + 100);
-                            iValue /= 100;
-
-							if (bAsync)
+							if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getPromotionInfo((PromotionTypes)iJ).getUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
 							{
-								iValue *= (GC.getASyncRand().get(50, "AI Best Unit ASYNC") + 100);
-								iValue /= 100;
-							}
-							else
-							{
-								iValue *= (GC.getGameINLINE().getSorenRandNum(50, "AI Best Unit") + 100);
-								iValue /= 100;
-							}
-
-
-							iValue *= (GET_PLAYER(getOwnerINLINE()).getNumCities() * 2);
-							iValue /= (GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
-
-							FAssert((MAX_INT / 1000) > iValue);
-							iValue *= 1000;
-					
-							iValue /= std::max(1, (4 + getProductionTurnsLeft(eLoopUnit, 0)));
-
-							iValue = std::max(1, iValue);
-
-							if (iValue > iBestValue)
-							{
-								iBestValue = iValue;
-								eBestUnit = eLoopUnit;
+								iPromotionValue += 15;
+								break;
 							}
 						}
+					}
+
+					//special to the unit
+					for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+					{
+						if (GC.getUnitInfo(eLoopUnit).getFreePromotions(iJ))
+						{
+							iPromotionValue += 15;
+							break;
+						}
+					}
+
+					//traits
+					for (iJ = 0; iJ < GC.getNumTraitInfos(); iJ++)
+					{
+						if (hasTrait((TraitTypes)iJ))
+						{
+							for (iK = 0; iK < GC.getNumPromotionInfos(); iK++)
+							{
+								if (GC.getTraitInfo((TraitTypes)iJ).isFreePromotion(iK))
+								{
+									if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getTraitInfo((TraitTypes)iJ).isFreePromotionUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
+									{
+										iPromotionValue += 15;
+										break;
+									}
+								}
+							}
+						}
+					}
+
+					iValue *= (iPromotionValue + 100);
+					iValue /= 100;
+
+					if (bAsync)
+					{
+						iValue *= (GC.getASyncRand().get(50, "AI Best Unit ASYNC") + 100);
+						iValue /= 100;
+					}
+					else
+					{
+						iValue *= (GC.getGameINLINE().getSorenRandNum(50, "AI Best Unit") + 100);
+						iValue /= 100;
+					}
+
+
+					iValue *= (GET_PLAYER(getOwnerINLINE()).getNumCities() * 2);
+					iValue /= (GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
+
+					FAssert((MAX_INT / 1000) > iValue);
+					iValue *= 1000;
+
+					iValue /= std::max(1, (4 + getProductionTurnsLeft(eLoopUnit, 0)));
+
+					iValue = std::max(1, iValue);
+
+					// Erik: try to check for nounitai
+					if (iValue > iBestValue)
+					{
+						iBestValue = iValue;
+						eBestUnit = eLoopUnit;
+					}
+				}
 					}
 			}
 		}
@@ -806,6 +820,36 @@ BuildingTypes CvCityAI::AI_bestBuilding(int iFocusFlags, int iMaxTurns, bool bAs
 {
 	return AI_bestBuildingThreshold(iFocusFlags, iMaxTurns, /*iMinThreshold*/ 0, bAsync);
 }
+
+/// <summary>Determine if there's a coastal route to another city. Both cities must be in different areas (cannot share continent/island)</summary>
+bool CvCityAI::AI_hasCoastalRoute() const
+{
+	gDLL->getFAStarIFace()->ForceReset(&GC.getCoastalRouteFinder());
+
+	// Erik: determine if it makes sense to build a coastal transport
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	int iLoop;
+	for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
+	{
+		if (pLoopCity != this)
+		{
+			// Determine if these cities share a common water area
+			if (waterArea() == pLoopCity->waterArea())
+			{
+				// Check if there's a coastal / cultural route between the cities
+				if (gDLL->getFAStarIFace()->GeneratePath(&GC.getCoastalRouteFinder(), getX_INLINE(), getY_INLINE(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), false, getOwnerINLINE(), true))
+				{
+					// We found a valid path
+					return true;
+				}
+			}
+		}
+	}
+
+	return false;
+}
+
 
 BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns, int iMinThreshold, bool bAsync) const
 {
@@ -2189,9 +2233,17 @@ void CvCityAI::AI_doHurry(bool bForce)
 	
 	if (getProductionUnit() != NO_UNIT)
 	{
+		// Transport units are important so give them high priority
 		if (getProductionUnitAI() == UNITAI_WAGON)
 		{
-			if (area()->getNumAIUnits(getOwnerINLINE(),UNITAI_WAGON) == 0)
+			if (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) == 0)
+			{
+				iHurryValue += 100;
+			}
+		}
+		if (getProductionUnitAI() == UNITAI_TRANSPORT_COAST)
+		{
+			if (waterArea()->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) == 0)
 			{
 				iHurryValue += 100;
 			}
