@@ -422,6 +422,11 @@
 			<DefaultUnit>UNIT_FLUYT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_COASTAL_TRANSPORT</Type>
+			<Description>TXT_KEY_UNIT_FLUYT</Description>
+			<DefaultUnit>UNIT_COASTAL_TRANSPORT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_CARRACK</Type>
 			<Description>TXT_KEY_UNIT_CARRACK</Description>
 			<DefaultUnit>UNIT_CARRACK</DefaultUnit>
