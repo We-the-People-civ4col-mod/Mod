@@ -26696,8 +26696,8 @@
 			<Class>UNITCLASS_COASTAL_TRANSPORT</Class>
 			<UniqueNames/>
 			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
+			<Capture>UNITCLASS_COASTAL_TRANSPORT</Capture>
+			<Combat>NONE</Combat>
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
@@ -26752,11 +26752,23 @@
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
+			<iAIWeight>100</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
+					<YieldType>YIELD_SAILCLOTH</YieldType>
+					<iCost>20</iCost>
+				</YieldCost>
+				<YieldCost>
+					<YieldType>YIELD_HORSES</YieldType>
+					<iCost>20</iCost>
+				</YieldCost>
+				<YieldCost>
+					<YieldType>YIELD_ROPE</YieldType>
+					<iCost>20</iCost>
+				</YieldCost>
+				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>80</iCost>
+					<iCost>40</iCost>
 				</YieldCost>
 			</YieldCosts>
 			<iHurryCostModifier>0</iHurryCostModifier>
@@ -26765,9 +26777,9 @@
 			<iEuropeCost>-1</iEuropeCost>
 			<iEuropeCostIncrease>0</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>	
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>4</iMoves>
+			<iMoves>3</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iWorkRate>0</iWorkRate>
@@ -26779,11 +26791,16 @@
 					<bTerrainImpassable>1</bTerrainImpassable>
 				</TerrainImpassable>
 			</TerrainImpassables>			
-			<FeatureImpassables/>
+			<FeatureImpassables>
+				<FeatureImpassable>
+					<FeatureType>FEATURE_STORM</FeatureType>
+					<bFeatureImpassable>1</bFeatureImpassable>
+				</FeatureImpassable>
+			</FeatureImpassables>
 			<EvasionBuildings/>
-			<iCombat>22</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
+			<iCombat>2</iCombat>
+			<iXPValueAttack>0</iXPValueAttack>
+			<iXPValueDefense>0</iXPValueDefense>
 			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -26809,8 +26826,8 @@
 			<iCargo>2</iCargo>
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
-			<iAsset>1500</iAsset>
-			<iPower>1000</iPower>
+			<iAsset>100</iAsset>
+			<iPower>0</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>0</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>

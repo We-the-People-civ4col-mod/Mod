@@ -1423,17 +1423,17 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 
 	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
+	// Erik: It's ok to check for a city here since cities they have to be separated by at least 1-non city plot
 	if (pNewPlot->isCity())
 	{
 		return TRUE;
 	}
 
-	// We deliberately ignore open-borders / allied territory for now
-	if (pNewPlot->isWater())
-	{
-		CvTerrainInfo& terrain = GC.getTerrainInfo(pNewPlot->getTerrainType());
-		// TODO: We need a proper tag and should not abuse this
-		if (!terrain.isFoundCoast() || pNewPlot->getOwnerINLINE() == ePlayer)
+	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
+
+	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false))
+	{	
+		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
 		{
 			return TRUE;
 		}

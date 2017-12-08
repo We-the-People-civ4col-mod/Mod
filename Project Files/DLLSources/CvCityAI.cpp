@@ -694,8 +694,7 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 		if (eLoopUnit != NO_UNIT)
 		{
 			if (!isHuman() || (GC.getUnitInfo(eLoopUnit).getDefaultUnitAIType() == eUnitAI))
-			{
-				
+			{		
 				if (canTrain(eLoopUnit))
 				{
 					iOriginalValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
@@ -725,89 +724,88 @@ UnitTypes CvCityAI::AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync) const
 				{
 					iValue = GET_PLAYER(getOwnerINLINE()).AI_unitValue(eLoopUnit, eUnitAI, area());
 
-				if (iValue > ((iBestOriginalValue * 2) / 3))
-				{
-					iValue *= (getProductionExperience(eLoopUnit) + 10);
-					iValue /= 10;
-
-					//free promotions. slow?
-					//only 1 promotion per source is counted (ie protective isn't counted twice)
-					int iPromotionValue = 0;
-					//buildings
-					for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+					if (iValue > ((iBestOriginalValue * 2) / 3))
 					{
-						if (isFreePromotion((PromotionTypes)iJ) && !GC.getUnitInfo(eLoopUnit).getFreePromotions((PromotionTypes)iJ))
+						iValue *= (getProductionExperience(eLoopUnit) + 10);
+						iValue /= 10;
+
+						//free promotions. slow?
+						//only 1 promotion per source is counted (ie protective isn't counted twice)
+						int iPromotionValue = 0;
+						//buildings
+						for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
 						{
-							if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getPromotionInfo((PromotionTypes)iJ).getUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
+							if (isFreePromotion((PromotionTypes)iJ) && !GC.getUnitInfo(eLoopUnit).getFreePromotions((PromotionTypes)iJ))
+							{
+								if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getPromotionInfo((PromotionTypes)iJ).getUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
+								{
+									iPromotionValue += 15;
+									break;
+								}
+							}
+						}
+
+						//special to the unit
+						for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
+						{
+							if (GC.getUnitInfo(eLoopUnit).getFreePromotions(iJ))
 							{
 								iPromotionValue += 15;
 								break;
 							}
 						}
-					}
 
-					//special to the unit
-					for (iJ = 0; iJ < GC.getNumPromotionInfos(); iJ++)
-					{
-						if (GC.getUnitInfo(eLoopUnit).getFreePromotions(iJ))
+						//traits
+						for (iJ = 0; iJ < GC.getNumTraitInfos(); iJ++)
 						{
-							iPromotionValue += 15;
-							break;
-						}
-					}
-
-					//traits
-					for (iJ = 0; iJ < GC.getNumTraitInfos(); iJ++)
-					{
-						if (hasTrait((TraitTypes)iJ))
-						{
-							for (iK = 0; iK < GC.getNumPromotionInfos(); iK++)
+							if (hasTrait((TraitTypes)iJ))
 							{
-								if (GC.getTraitInfo((TraitTypes)iJ).isFreePromotion(iK))
+								for (iK = 0; iK < GC.getNumPromotionInfos(); iK++)
 								{
-									if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getTraitInfo((TraitTypes)iJ).isFreePromotionUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
+									if (GC.getTraitInfo((TraitTypes)iJ).isFreePromotion(iK))
 									{
-										iPromotionValue += 15;
-										break;
+										if ((GC.getUnitInfo(eLoopUnit).getUnitCombatType() != NO_UNITCOMBAT) && GC.getTraitInfo((TraitTypes)iJ).isFreePromotionUnitCombat(GC.getUnitInfo(eLoopUnit).getUnitCombatType()))
+										{
+											iPromotionValue += 15;
+											break;
+										}
 									}
 								}
 							}
 						}
-					}
 
-					iValue *= (iPromotionValue + 100);
-					iValue /= 100;
-
-					if (bAsync)
-					{
-						iValue *= (GC.getASyncRand().get(50, "AI Best Unit ASYNC") + 100);
+						iValue *= (iPromotionValue + 100);
 						iValue /= 100;
-					}
-					else
-					{
-						iValue *= (GC.getGameINLINE().getSorenRandNum(50, "AI Best Unit") + 100);
-						iValue /= 100;
-					}
+
+						if (bAsync)
+						{
+							iValue *= (GC.getASyncRand().get(50, "AI Best Unit ASYNC") + 100);
+							iValue /= 100;
+						}
+						else
+						{
+							iValue *= (GC.getGameINLINE().getSorenRandNum(50, "AI Best Unit") + 100);
+							iValue /= 100;
+						}
 
 
-					iValue *= (GET_PLAYER(getOwnerINLINE()).getNumCities() * 2);
-					iValue /= (GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
+						iValue *= (GET_PLAYER(getOwnerINLINE()).getNumCities() * 2);
+						iValue /= (GET_PLAYER(getOwnerINLINE()).getUnitClassCountPlusMaking((UnitClassTypes)iI) + GET_PLAYER(getOwnerINLINE()).getNumCities() + 1);
 
-					FAssert((MAX_INT / 1000) > iValue);
-					iValue *= 1000;
+						FAssert((MAX_INT / 1000) > iValue);
+						iValue *= 1000;
 
-					iValue /= std::max(1, (4 + getProductionTurnsLeft(eLoopUnit, 0)));
+						iValue /= std::max(1, (4 + getProductionTurnsLeft(eLoopUnit, 0)));
 
-					iValue = std::max(1, iValue);
+						iValue = std::max(1, iValue);
 
-					// Erik: try to check for nounitai
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						eBestUnit = eLoopUnit;
+						if (iValue > iBestValue)
+						{
+							iBestValue = iValue;
+							eBestUnit = eLoopUnit;
+						}
 					}
 				}
-					}
 			}
 		}
 	}

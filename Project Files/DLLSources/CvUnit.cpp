@@ -2949,6 +2949,11 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				{
 					return false;
 				}
+				// Erik: The AI may attempt to pathfind into unrevealed ocean plots so have have to check for the plot being revealed
+				if (DOMAIN_SEA == getDomainType() && !pPlot->isRevealed(getTeam(), false))
+				{
+					return false;
+				}
 			}
 		}
 		else

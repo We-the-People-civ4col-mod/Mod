@@ -15147,7 +15147,9 @@ bool CvUnitAI::AI_joinCityDefender()
 				if (GC.getNEW_CAPACITY())
 				{
 					if ((pCity->getTotalYieldStored() + (iAmount * 2)) > iCapacity)
-						{return false;}
+					{
+						return false;
+					}
 				}
 				else
 //VET NewCapacity - begin 3/4 (ray fix)
@@ -15167,8 +15169,8 @@ bool CvUnitAI::AI_joinCityDefender()
 	}
 
 	AI_setMovePriority(0);
-	joinCity();
-	return true;
+	
+	return joinCity();
 }
 
 bool CvUnitAI::AI_yieldDestination(int iMaxPath)
