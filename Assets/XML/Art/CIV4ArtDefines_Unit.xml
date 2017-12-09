@@ -5034,6 +5034,70 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 <!-- RaR Civil and Military Ships All Nations Units -->
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_SMALL_COASTAL_SHIP</Type>
+			<Button>,Art/colonization_atlas_military.dds,5,15</Button>
+			<FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_caravel.dds</FullLengthIcon>
+			<fScale>0.15</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Units/Ships_Transport/tartane/tartane.nif</NIF>
+			<KFM>Art/Units/Caravel/Caravel.kfm</KFM>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.4</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
+		<UnitArtInfo>
+			<Type>ART_DEF_UNIT_BIG_COASTAL_SHIP</Type>
+			<Button>,Art/colonization_atlas_military.dds,6,15</Button>
+			<FullLengthIcon>,Art/Interface/Screens/Europe/ships/europe_caravel.dds</FullLengthIcon>
+			<fScale>0.15</fScale>
+			<fInterfaceScale>0.95</fInterfaceScale>
+			<NIF>Art/Units/Ships_Transport/trabakul/Caravel.nif</NIF>
+			<KFM>Art/Units/Ships_Transport/trabakul/Caravel.kfm</KFM>
+			<iDamageStates>4</iDamageStates>
+			<TrailDefinition>
+				<Texture>Art/Shared/water_ship_wake.dds</Texture>
+				<fWidth>1</fWidth>
+				<fLength>180.0</fLength>
+				<fTaper>1</fTaper>
+				<fFadeStartTime>.2</fFadeStartTime>
+				<fFadeFalloff>0.35</fFadeFalloff>
+			</TrailDefinition>
+			<fBattleDistance>0.35</fBattleDistance>
+			<fRangedDeathTime>0.31</fRangedDeathTime>
+			<bSmoothMove>1</bSmoothMove>
+			<fAngleInterpRate>720.0</fAngleInterpRate>
+			<fBankRate>.4</fBankRate>
+			<fExchangeAngle>25.0</fExchangeAngle>
+			<bActAsRanged>0</bActAsRanged>
+			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+			<AudioRunSounds>
+				<AudioRunTypeLoop>LOOPSTEP_OCEAN2</AudioRunTypeLoop>
+				<AudioRunTypeEnd>ENDSTEP_OCEAN2</AudioRunTypeEnd>
+			</AudioRunSounds>
+			<SelectionSound>AS3D_UN_OCEAN_END1</SelectionSound>
+			<ActionSound>AS3D_UN_OCEAN_END1</ActionSound>
+		</UnitArtInfo>
 <!-- RaR Ships Caravel -->
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_CARAVEL</Type>

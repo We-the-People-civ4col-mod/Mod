@@ -1706,6 +1706,68 @@
 		<Spanish>[COLOR_UNIT_TEXT]Corvettes[COLOR_REVERT] are excellent escorts for your merchant ships and very well suited for hunting Privateers. However, they are no real match for bigger warships like Frigates, Ships of the Line or Man-O-Wars and also cannot bombard cities.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_SMALL_COASTAL_SHIP</Tag>
+		<English>
+			<Text>Small Coastal Ship:Small Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Small Coastal Ship:Small Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kleiner K&#252;stensegler:Kleine K&#252;stensegler</Text>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Small Coastal Ship:Small Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Small Coastal Ship:Small Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BIG_COASTAL_SHIP</Tag>
+		<English>
+			<Text>Big Coastal Ship:Big Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Big Coastal Ship:Big Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Gro&#223;er K&#252;stensegler:Gro&#223;e K&#252;stensegler</Text>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Big Coastal Ship:Big Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Big Coastal Ship:Big Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples, the bigger one has three slots.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]K&#252;stensegler[COLOR_REVERT] sind eigens für den k&#252;stennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, daf&#252;r aber sehr wendig und au&#223;erdem deutlich ger&#228;umiger und schneller als ein Planwagen. Sie k&#246;nnen nur in [COLOR_HIGHLIGHT_TEXT]K&#252;stennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln k&#246;nnen. Der Kleine K&#252;stensegler hat zwei Frachtpl&#228;tze, der gro&#223;e K&#252;stensegler drei. Beide k&#246;nnen sich nur geringf&#252;gig verteidigen.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</French>
+		<German>[COLOR_UNIT_TEXT]K&#252;stenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der K&#252;ste betrieben. Kleine und wendige - daf&#252;r aber recht ger&#228;umige Segler eignen sich bestens dazu, bereits sehr fr&#252;h nach der Landung in der neuen Welt Schiffe zu bauen, mit denen Waren schnell zwischen den Kolonien hin- und hertransportiert werden k&#246;nnen, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Gr&#246;&#223;e können die K&#252;stensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln. </German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARAVELA_REDONDA</Tag>
 		<English>
 			<Text>Caravela Redonda:Caravelas Redondas</Text>
