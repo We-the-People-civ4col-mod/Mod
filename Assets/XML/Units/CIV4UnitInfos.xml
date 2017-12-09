@@ -26353,10 +26353,10 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Type>UNIT_SMALL_COASTAL_SHIP</Type>
-			<Class>UNITCLASS_COASTAL_TRANSPORT</Class>
+			<Class>UNITCLASS_SMALL_COASTAL_SHIP</Class>
 			<UniqueNames/>
 			<Special>NONE</Special>
-			<Capture>UNITCLASS_COASTAL_TRANSPORT</Capture>
+			<Capture>UNITCLASS_SMALL_COASTAL_SHIP</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
@@ -26512,10 +26512,10 @@
 		</UnitInfo>
 		<UnitInfo>
 			<Type>UNIT_BIG_COASTAL_SHIP</Type>
-			<Class>UNITCLASS_COASTAL_TRANSPORT</Class>
+			<Class>UNITCLASS_BIG_COASTAL_SHIP</Class>
 			<UniqueNames/>
 			<Special>NONE</Special>
-			<Capture>UNITCLASS_COASTAL_TRANSPORT</Capture>
+			<Capture>UNITCLASS_BIG_COASTAL_SHIP</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_SEA</Domain>
 			<DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
