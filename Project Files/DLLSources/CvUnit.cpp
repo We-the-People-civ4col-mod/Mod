@@ -2956,16 +2956,14 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				}
 			}
 		}
-		else
+		
+		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 		{
-			if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
+			if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
 			{
-				if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+				if (bIgnoreLoad || !canLoad(pPlot, true))
 				{
-					if (bIgnoreLoad || !canLoad(pPlot, true))
-					{
-						return false;
-					}
+					return false;
 				}
 			}
 		}
