@@ -28,7 +28,7 @@ static void verifyXMLsettings()
 
 		CvEventTriggerInfo& kInfo = GC.getEventTriggerInfo(eTrigger);
 		
-		if (kInfo.isUnitsOnPlot())
+		if (kInfo.getPercentGamesActive() > 0 && kInfo.isUnitsOnPlot())
 		{
 			FAssertMsg(isPlotEventTrigger(eTrigger), CvString::format("XML error: %s has bUnitsOnPlot set, but failed isPlotEventTrigger()", kInfo.getType()));
 		}
