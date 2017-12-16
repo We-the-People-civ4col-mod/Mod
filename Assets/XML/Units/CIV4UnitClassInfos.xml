@@ -412,6 +412,16 @@
 			<DefaultUnit>UNIT_ROYAL_CAVALRY</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_SMALL_COASTAL_SHIP</Type>
+			<Description>TXT_KEY_UNIT_SMALL_COASTAL_SHIP</Description>
+			<DefaultUnit>UNIT_SMALL_COASTAL_SHIP</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_BIG_COASTAL_SHIP</Type>
+			<Description>TXT_KEY_UNIT_BIG_COASTAL_SHIP</Description>
+			<DefaultUnit>UNIT_BIG_COASTAL_SHIP</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_CARAVEL</Type>
 			<Description>TXT_KEY_UNIT_CARAVEL</Description>
 			<DefaultUnit>UNIT_CARAVEL</DefaultUnit>

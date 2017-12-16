@@ -176,6 +176,7 @@ public:
 	DllExport FAStar& getRouteFinder();
 	DllExport FAStar& getBorderFinder();
 	DllExport FAStar& getAreaFinder();
+	
 	DllExport NiPoint3& getPt3Origin();
 
 	DllExport std::vector<CvInterfaceModeInfo*>& getInterfaceModeInfo();
@@ -1336,6 +1337,12 @@ protected:
 
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
+
+	public:
+		// Erik: Support for coastal route path finding
+		DllExport void setCoastalRouteFinder(FAStar* pVal);
+		FAStar* m_coastalRouteFinder;
+		DllExport FAStar& getCoastalRouteFinder();
 };
 
 extern CvGlobals gGlobals;	// for debugging

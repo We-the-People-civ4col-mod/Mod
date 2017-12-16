@@ -877,8 +877,8 @@ protected:
 	YieldTypes getYieldUncached() const;
 	YieldTypes m_eCachedYield;
 // unit yield cache - end - Nightinggale
-	int CvUnit::getCargoValue(Port port) const;
-
+	int getCargoValue(Port port) const;
+	int canCrossCoastOnly() const;
 };
 
 

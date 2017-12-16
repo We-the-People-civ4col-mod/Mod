@@ -453,7 +453,8 @@ void CvSelectionGroup::pushMission(MissionTypes eMission, int iData1, int iData2
 	mission.iFlags = iFlags;
 	mission.iPushTurn = GC.getGameINLINE().getGameTurn();
 
-	AI_setMissionAI(eMissionAI, pMissionAIPlot, pMissionAIUnit);
+	if (canAllMove()) // K-Mod. Do not set the AI mission type if this is just a "follow" command!
+		AI_setMissionAI(eMissionAI, pMissionAIPlot, pMissionAIUnit);
 
 	insertAtEndMissionQueue(mission, !bAppend);
 
@@ -1430,6 +1431,23 @@ bool CvSelectionGroup::canEverDoCommand(CommandTypes eCommand, int iData1, int i
 			}
 
 			return false;
+		}
+	}
+	// Erik: Coastal transports cannot travel to any foreign port
+	else if (eCommand == COMMAND_SAIL_TO_AFRICA)
+	{
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
+
+		while (pUnitNode != NULL)
+		{
+			CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
+
+			// TODO: Check against the ability to cross ocean plots instead
+			if (pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
+			{
+				return false;
+			}
+			pUnitNode = nextUnitNode(pUnitNode);
 		}
 	}
 
@@ -3447,7 +3465,7 @@ bool CvSelectionGroup::generatePath( const CvPlot* pFromPlot, const CvPlot* pToP
 	{
 		if (GET_PLAYER(getOwnerINLINE()).AI_needsProtection(getHeadUnitAI()))
 		{
-			if (iFlags != MOVE_IGNORE_DANGER)
+			if ((iFlags & MOVE_IGNORE_DANGER)== 0)
 			{
 				if (!bIgnoreDanger || plot()->getPlotCity() != NULL)
 				{

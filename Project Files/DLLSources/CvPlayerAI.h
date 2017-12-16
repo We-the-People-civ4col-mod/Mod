@@ -86,7 +86,7 @@ public:
 	CvCity* AI_findTargetCity(CvArea* pArea);
 
 	int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false);
-	int AI_getUnitDanger(CvUnit* pUnit, int iRange = -1, bool bTestMoves = true, bool bAnyDanger = true);
+	int AI_getUnitDanger(CvUnit* pUnit, int iRange = -1, bool bTestMoves = true, bool bAnyDanger = true) const;
 	
 	// TAC - AI Improved Naval AI - koma13 - START
 	//int AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves = true);

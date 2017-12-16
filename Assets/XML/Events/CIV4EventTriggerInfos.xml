@@ -806,7 +806,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>200</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
@@ -2285,7 +2285,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>200</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8629,7 +8629,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>500</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8697,7 +8697,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>500</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8837,7 +8837,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>100</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8908,7 +8908,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>500</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8979,7 +8979,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>1000</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -9049,7 +9049,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>500</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -10372,7 +10372,7 @@
 			<bTutorial>0</bTutorial>
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/achievements/brigantine.dds</EventArt>
-			<iPercentGamesActive>100</iPercentGamesActive>
+			<iPercentGamesActive>0</iPercentGamesActive>
 			<iWeight>-1</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>

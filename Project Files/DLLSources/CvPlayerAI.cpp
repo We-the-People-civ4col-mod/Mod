@@ -1285,6 +1285,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_ANIMAL_SEA: // R&R, ray, Wild Animals
 	case UNITAI_WORKER_SEA: //TAC Whaling, ray
 	case UNITAI_TRANSPORT_SEA:
+	case UNITAI_TRANSPORT_COAST:
 	case UNITAI_ASSAULT_SEA:
 	case UNITAI_COMBAT_SEA:
 	case UNITAI_PIRATE_SEA:
@@ -1318,6 +1319,7 @@ bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI) const
 	case UNITAI_TREASURE:
 	case UNITAI_YIELD:
 	case UNITAI_GENERAL:
+	case UNITAI_TRANSPORT_COAST:
 		return false;
 		break;
 
@@ -2685,7 +2687,7 @@ int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, boo
 	return iCount;
 }
 
-int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, bool bAnyDanger)
+int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, bool bAnyDanger) const
 {
 	PROFILE_FUNC();
 
@@ -4729,6 +4731,7 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 			break;
 
 		case UNITAI_TRANSPORT_SEA:
+		case UNITAI_TRANSPORT_COAST:
 			break;
 		case UNITAI_ASSAULT_SEA:
 			// TAC - AI Assault Sea - koma13 - START
@@ -4882,6 +4885,7 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 			break;
 
 		case UNITAI_TRANSPORT_SEA:
+		case UNITAI_TRANSPORT_COAST:
 			if (kUnitInfo.getCargoSpace() > 0)
 			{
 				bValid = true;
@@ -5026,6 +5030,7 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		break;
 
 	case UNITAI_TRANSPORT_SEA:
+	case UNITAI_TRANSPORT_COAST:
 
 		iValue += ((4 + kUnitInfo.getMoves()) * (iCargoValue + iDefenseCombatValue / 2)) / 7;
 
@@ -10601,6 +10606,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 		
 		case UNITAI_WORKER_SEA: //TAC Whaling, ray
 		case UNITAI_TRANSPORT_SEA:
+		case UNITAI_TRANSPORT_COAST:
 		case UNITAI_ASSAULT_SEA:
 		case UNITAI_COMBAT_SEA:
 		case UNITAI_PIRATE_SEA:
@@ -10791,17 +10797,15 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_WAGON:
 			{
-				int iNeeded = 1 + getNumCities() + (getNumCities() - countNumCoastalCities());
-				iNeeded /= 3;
-				if (getNumCities() > 1)
-				{
-					iNeeded = std::max(1, iNeeded);
-				}
-
+				// Erik: The number of land transports should depend on the production
+				// vs. consumption rate of all cargo yields as well as the number of cities
+				const int iNeeded = countNumCoastalCities()  / 2;
+				
 				if (iCount < iNeeded)
 				{
-					iValue = 100 + (100 * (iNeeded - iCount)) / iNeeded;
+					iValue = 100 + (100 * (iNeeded - iCount));
 				}
+				
 			}
 			break;
 
@@ -10961,6 +10965,17 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 			if (!AI_isStrategy(STRATEGY_REVOLUTION))
 			{
 				int iNeeded = countNumCoastalCities();
+				if (iCount < iNeeded)
+				{
+					iValue = 100 + 20 * iNeeded + (50 * iNeeded) / (iCount + 1);
+				}
+			}
+			break;
+
+		case UNITAI_TRANSPORT_COAST:
+			{
+				const int iNeeded = countNumCoastalCities() / 2;
+
 				if (iCount < iNeeded)
 				{
 					iValue = 100 + 20 * iNeeded + (50 * iNeeded) / (iCount + 1);
@@ -11398,6 +11413,27 @@ int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eP
 		iValue *= 95;
 		iValue /= 100;
 	}
+
+	if (eUnitAI == UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE || eUnitAI == UNITAI_COUNTER)
+	{
+		const CvUnitInfo& kUnitInfo = pUnit->getUnitInfo();
+
+		// For combat units, we penalize the use of valuable units
+		if (abs(kUnitInfo.getEuropeCost()) > 1000)
+		{
+			iValue *= 50;
+			iValue /= 100;
+		}
+
+		// Erik: If the unit is generally capable of escaping, we prefer it for a combat units since
+		// it will prevent it from escaping
+		if (kUnitInfo.LbD_canEscape())
+		{
+			iValue *= 150;
+			iValue /= 100;
+		}
+	}
+
 	return iValue;
 }
 
@@ -15113,6 +15149,10 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 
 	for (int iUnitAI = 0; iUnitAI < NUM_UNITAI_TYPES; ++iUnitAI)
 	{
+		// Erik: Do not consider units that cannot cross the ocean
+		if (iUnitAI == UNITAI_TRANSPORT_COAST)
+			continue;
+
 		UnitAITypes eLoopUnitAI = (UnitAITypes) iUnitAI;
 		bool bValid = false;
 
@@ -15191,7 +15231,7 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 				UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
 				if (eLoopUnit != NO_UNIT)
 				{
-					CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+					const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
 					if (kUnitInfo.getDefaultProfession() == NO_PROFESSION || kUnitInfo.getDefaultUnitAIType() == UNITAI_DEFENSIVE || kUnitInfo.getDefaultUnitAIType() == UNITAI_COUNTER)
 					{
 						int iPrice = getEuropeUnitBuyPrice(eLoopUnit);
@@ -15211,7 +15251,7 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 								}
 							}
 							*/
-				
+
 							if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COMBAT_SEA)
 							{
 								//if (kUnitInfo.isHiddenNationality())
@@ -15220,25 +15260,25 @@ void CvPlayerAI::AI_updateNextBuyUnit(bool bPriceLimit)
 									iMultipler = 0;
 								}
 							}
-							
+
 							int iGoldValue = AI_unitGoldValue(eLoopUnit, eLoopUnitAI, NULL);
 							int iValue = (iMultipler * iGoldValue) / iPrice;
 							if (getEuropeUnitBuyPrice(eLoopUnit) > getGold())
 							{
 								if (iValue < 100)
-								{	
+								{
 									iValue = 0;
 								}
 							}
-							
-							if (iValue > iBestValue)
+
+							if (iValue > iBestValue && !kUnitInfo.getNotUnitAIType(eLoopUnitAI))
 							{
 								iBestValue = iValue;
 								eBestUnit = eLoopUnit;
 								eBestUnitAI = eLoopUnitAI;
 							}
+							// TAC - AI purchases military units - koma13 - END
 						}
-						// TAC - AI purchases military units - koma13 - END
 					}
 				}
 			}
@@ -15806,16 +15846,12 @@ bool CvPlayerAI::AI_needsProtection(UnitAITypes eUnitAI) const
 	{
 		switch (eUnitAI)
 		{
-		case UNITAI_TRANSPORT_SEA:
-			return true;
-			break;
+			case UNITAI_TRANSPORT_SEA:
+			case UNITAI_TRANSPORT_COAST:
+				break;
 
-		case UNITAI_WORKER_SEA:
-			return true;
-			break;
-
-		default:
-			break;
+			default:
+				break;
 		}
 	}
 

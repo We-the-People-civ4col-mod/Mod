@@ -300,8 +300,7 @@ bool CvUnitAI::AI_update()
 			//End TAC Whaling, ray	
 			case UNITAI_TRANSPORT_SEA:
 				AI_transportSeaMove();
-				break;
-			
+				break;			
 				
 			case UNITAI_ASSAULT_SEA:
 				AI_assaultSeaMove();
@@ -327,6 +326,10 @@ bool CvUnitAI::AI_update()
 				AI_escortSeaMove();
 				break;
 			// TAC - AI  Sea - koma13 - END
+
+			case UNITAI_TRANSPORT_COAST:
+				AI_transportCoastMove();
+				break;
 
 			default:
 				FAssert(false);
@@ -479,7 +482,11 @@ bool CvUnitAI::AI_europeUpdate()
 		case UNITAI_ESCORT_SEA:		// TAC - AI Escort Sea - koma13
 			crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 		    break;
-			
+		
+		case UNITAI_TRANSPORT_COAST:
+			FAssertMsg(false, "UNITAI_TRANSPORT_COAST not supported for ships in Europe");
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -690,6 +697,10 @@ int CvUnitAI::AI_groupFirstVal()
 	//End TAC Whaling, ray	
 	case UNITAI_TRANSPORT_SEA:
 		return 20;
+		break;
+
+	case UNITAI_TRANSPORT_COAST:
+		return 19;
 		break;
 
 	case UNITAI_ASSAULT_SEA:
@@ -2144,12 +2155,16 @@ void CvUnitAI::AI_generalMove()
 	aeUnitAITypes.push_back(UNITAI_OFFENSIVE);
 	aeUnitAITypes.push_back(UNITAI_COUNTER);
 
+	aeUnitAITypes.push_back(UNITAI_ASSAULT_SEA);
+	aeUnitAITypes.push_back(UNITAI_COMBAT_SEA);
+	aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
+
 	if (AI_lead(aeUnitAITypes))
 	{
 		return;
 	}
 	
-	if (AI_retreatToCity())
+	if (AI_retreatToCity(false, MAX_INT, true))
 	{
 		return;
 	}
@@ -3740,7 +3755,6 @@ void CvUnitAI::AI_transportMoveRoutes()
 
 void CvUnitAI::AI_transportMoveFull()
 {
-
 	if (AI_breakAutomation())
 	{
 		return;
@@ -4388,6 +4402,51 @@ bool CvUnitAI::AI_sailToPreferredPort(bool bMove)
 	}
 }
 
+void CvUnitAI::AI_transportCoastMove()
+{
+	//const bool bEmpty = !getGroup()->hasCargo();
+
+	if (AI_breakAutomation())
+	{
+		return;
+	}
+
+	// Erik: Colonist transportation has not been implemented yet
+	// TODO: Determine a suitable range, maybe 2 full moves ?
+	/*
+	if (AI_getUnitAIState() == UNITAI_STATE_PICKUP)
+	{
+		if (AI_respondToPickup(10))
+		{
+			AI_setUnitAIState(UNITAI_STATE_PICKUP);
+			return;
+		}
+
+		if (AI_deliverUnits())
+		{
+			return;
+		}
+
+		if (bEmpty)
+		{
+			AI_setUnitAIState(UNITAI_STATE_DEFAULT);
+		}
+	}
+	*/
+	if (getGroup()->AI_tradeRoutes())
+	{
+		return;
+	}
+
+	if (AI_retreatToCity())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+
 void CvUnitAI::AI_transportSeaMove()
 {
 	PROFILE_FUNC();
@@ -4733,15 +4792,34 @@ void CvUnitAI::AI_transportSeaMove()
 	return;
 }
 
-// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
-
-/*
-void CvUnitAI::AI_assaultSeaMove()
+// Attempt to determine if a great admiral is waiting in a city
+// if this is the case, we travel there
+bool CvUnitAI::AI_joinGreatAdmiral()
 {
-	AI_transportSeaMove();
-	return;
+	CvUnit* pLoopUnit;
+	CvPlot* plot;
+	int iPathTurns;
+	int iValue;
+	int iBestValue;
+	int iLoop;
+
+	for (pLoopUnit = GET_PLAYER(getOwnerINLINE()).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER(getOwnerINLINE()).nextUnit(&iLoop))
+	{
+		if (pLoopUnit->getUnitType() == (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_ADMIRAL")))
+		{
+			plot = pLoopUnit->plot();
+			if (plot != NULL && plot->isCity(true))
+			{
+				// TODO: If there are multiple cities available, choose the closes (best) one
+				//FAssert(!atPlot(pBestPlot));
+				getGroup()->pushMission(MISSION_MOVE_TO, plot->getX_INLINE(), plot->getY_INLINE(), MOVE_IGNORE_DANGER, false, false, NO_MISSIONAI, plot);
+				return true;
+			}
+		}
+	}
+
+	return false;
 }
-*/
 
 void CvUnitAI::AI_assaultSeaMove()
 {
@@ -5442,6 +5520,10 @@ void CvUnitAI::AI_escortSeaMove()
 
 void CvUnitAI::AI_combatSeaMove()
 {
+	// Erik: Check if there's an admiral waiting
+	if (AI_joinGreatAdmiral())
+		return;
+
 	// TAC - AI Improved Naval AI - koma13 - START
 	//if (AI_anyAttack(2, 49))
 	if (AI_anyAttack(1, 49))
@@ -7550,7 +7632,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 		
 	if (kPromotion.getMovesChange() != 0)
 	{
-		if (eUnitAI == UNITAI_TRANSPORT_SEA)
+		if (eUnitAI == UNITAI_TRANSPORT_SEA || eUnitAI == UNITAI_TRANSPORT_COAST)
 		{
 			iValue += 50 * kPromotion.getMovesChange();
 		}
@@ -7576,7 +7658,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 	}
 	if (kPromotion.getCargoChange() != 0)
 	{
-		if (eUnitAI == UNITAI_TRANSPORT_SEA || eUnitAI == UNITAI_WAGON)
+		if (eUnitAI == UNITAI_TRANSPORT_SEA || eUnitAI == UNITAI_WAGON || eUnitAI == UNITAI_TRANSPORT_COAST)
 		{
 			iValue += kPromotion.getCargoChange() * 50;
 		}
@@ -10755,7 +10837,9 @@ bool CvUnitAI::AI_lead(std::vector<UnitAITypes>& aeUnitAITypes)
 						{
 							if (!(pLoopUnit->plot()->isVisibleEnemyUnit(this)))
 							{
-								if (generatePath(pLoopUnit->plot(), 0, true))
+								int iPathTurns;
+								// Erik: Great people should avoid dangerous paths
+								if (generatePath(pLoopUnit->plot(), MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3, true, &iPathTurns, false))
 								{
 									// pick the unit with the highest current strength
 									int iCombatStrength = pLoopUnit->currCombatStr(NULL, NULL);
@@ -15071,7 +15155,9 @@ bool CvUnitAI::AI_joinCityDefender()
 				if (GC.getNEW_CAPACITY())
 				{
 					if ((pCity->getTotalYieldStored() + (iAmount * 2)) > iCapacity)
-						{return false;}
+					{
+						return false;
+					}
 				}
 				else
 //VET NewCapacity - begin 3/4 (ray fix)
@@ -15091,8 +15177,8 @@ bool CvUnitAI::AI_joinCityDefender()
 	}
 
 	AI_setMovePriority(0);
-	joinCity();
-	return true;
+	
+	return joinCity();
 }
 
 bool CvUnitAI::AI_yieldDestination(int iMaxPath)
@@ -16949,7 +17035,7 @@ bool CvUnitAI::AI_travelToUpgradeCity()
 }
 
 // Returns true if a mission was pushed...
-bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
+bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath, bool bAvoidDanger)
 {
 	PROFILE_FUNC();
 
@@ -16995,7 +17081,22 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
 				{
 					if (!(pLoopCity->plot()->isVisibleEnemyUnit(this)))
 					{
-						if (!atPlot(pLoopCity->plot()) && generatePath(pLoopCity->plot(), ((iPass > 1) ? MOVE_IGNORE_DANGER : 0), true, &iPathTurns))
+						int iFlags;
+						bool bIgnoredanger = !bAvoidDanger;
+
+						if (!bAvoidDanger)
+						{
+							// Erik: Default / old behaviour
+							iFlags = ((iPass > 1) ? MOVE_IGNORE_DANGER : 0);
+						}
+						else
+						{
+							// Erik: For risk averse units like great generals etc.
+							iFlags = MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3;
+						}
+
+
+						if (!atPlot(pLoopCity->plot()) && generatePath(pLoopCity->plot(), iFlags, true, &iPathTurns, bIgnoredanger))
 						{
 							if (iPathTurns <= ((iPass == 2) ? 1 : iMaxPath))
 							{

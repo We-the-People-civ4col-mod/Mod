@@ -106,6 +106,9 @@ void CvMap::uninit()
 	SAFE_DELETE_ARRAY(m_pMapPlots);
 
 	m_areas.uninit();
+
+	FAStar* coastalRouteFinder = &GC.getCoastalRouteFinder();
+	gDLL->getFAStarIFace()->destroy(coastalRouteFinder);
 }
 
 // FUNCTION: reset()
@@ -204,6 +207,13 @@ void CvMap::setup()
 	gDLL->getFAStarIFace()->Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
 	gDLL->getFAStarIFace()->Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
 	gDLL->getFAStarIFace()->Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
+	
+	// Erik: We have to create and initialize the coastal route pathfinder since
+	// the exe cannot do this for us
+	FAStar* coastalRouteFinder = gDLL->getFAStarIFace()->create();
+	FAssert(coastalRouteFinder);
+	GC.setCoastalRouteFinder(coastalRouteFinder);
+	gDLL->getFAStarIFace()->Initialize(&GC.getCoastalRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, stepHeuristic, stepCost, coastalRouteValid, NULL, NULL, NULL);
 }
 
 

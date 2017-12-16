@@ -1409,6 +1409,38 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 	return FALSE;
 }
 
+int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
+{
+	CvPlot* pNewPlot;
+	PlayerTypes ePlayer;
+
+	if (parent == NULL)
+	{
+		return TRUE;
+	}
+
+	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+
+	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
+
+	// Erik: It's ok to check for a city here since cities they have to be separated by at least 1-non city plot
+	if (pNewPlot->isCity())
+	{
+		return TRUE;
+	}
+
+	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
+
+	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false))
+	{	
+		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
+		{
+			return TRUE;
+		}
+	}
+
+	return FALSE;
+}
 
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
@@ -1705,6 +1737,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_COUNTER: szString = L"counter"; break;
 	case UNITAI_WORKER_SEA: szString = L"worker sea"; break; //TAC Whaling, ray
 	case UNITAI_TRANSPORT_SEA: szString = L"transport sea"; break;
+	case UNITAI_TRANSPORT_COAST: szString = L"transport coast"; break;
 	case UNITAI_ASSAULT_SEA: szString = L"assault sea"; break;
 	case UNITAI_COMBAT_SEA: szString = L"combat sea"; break;
 	case UNITAI_PIRATE_SEA: szString = L"pirate sea"; break;

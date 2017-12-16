@@ -132,9 +132,11 @@ protected:
 	void AI_workerSeaMove();
 	//End TAC Whaling, ray
 	void AI_transportSeaMove();
+	void AI_transportCoastMove();
 	void AI_assaultSeaMove();
 	void AI_escortSeaMove();	// TAC - AI Escort Sea - koma13
 	void AI_combatSeaMove();
+	bool AI_joinGreatAdmiral();
 
 	void AI_exploreMove();
 	void AI_exploreSeaMove();
@@ -320,7 +322,7 @@ protected:
 	bool AI_routeCity();
 	bool AI_routeTerritory(bool bImprovementOnly = false);
 	bool AI_travelToUpgradeCity();
-	bool AI_retreatToCity(bool bPrimary = false, int iMaxPath = MAX_INT);
+	bool AI_retreatToCity(bool bPrimary = false, int iMaxPath = MAX_INT, bool bAvoidDanger = false);
 	
 	bool AI_retreatFromDanger();	// TAC - AI Improved Naval AI - koma13
 

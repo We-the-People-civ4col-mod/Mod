@@ -68,6 +68,7 @@ m_pathFinder(NULL),
 m_interfacePathFinder(NULL),
 m_stepFinder(NULL),
 m_routeFinder(NULL),
+m_coastalRouteFinder(NULL),
 m_borderFinder(NULL),
 m_areaFinder(NULL),
 m_pDLL(NULL),
@@ -528,6 +529,7 @@ void CvGlobals::uninit()
 	m_interfacePathFinder=NULL;
 	m_stepFinder=NULL;
 	m_routeFinder=NULL;
+	m_coastalRouteFinder = NULL;
 	m_borderFinder=NULL;
 	m_areaFinder=NULL;
 
@@ -652,6 +654,11 @@ FAStar& CvGlobals::getStepFinder()
 FAStar& CvGlobals::getRouteFinder()
 {
 	return *m_routeFinder;
+}
+
+FAStar& CvGlobals::getCoastalRouteFinder()
+{
+	return *m_coastalRouteFinder;
 }
 
 FAStar& CvGlobals::getBorderFinder()
@@ -2777,6 +2784,8 @@ void CvGlobals::setPathFinder(FAStar* pVal) { m_pathFinder = pVal; }
 void CvGlobals::setInterfacePathFinder(FAStar* pVal) { m_interfacePathFinder = pVal; }
 void CvGlobals::setStepFinder(FAStar* pVal) { m_stepFinder = pVal; }
 void CvGlobals::setRouteFinder(FAStar* pVal) { m_routeFinder = pVal; }
+void CvGlobals::setCoastalRouteFinder(FAStar* pVal) { m_coastalRouteFinder = pVal; }
+
 void CvGlobals::setBorderFinder(FAStar* pVal) { m_borderFinder = pVal; }
 void CvGlobals::setAreaFinder(FAStar* pVal) { m_areaFinder = pVal; }
 CvDLLUtilityIFaceBase* CvGlobals::getDLLIFaceNonInl() { return m_pDLL; }

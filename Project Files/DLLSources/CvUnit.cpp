@@ -2410,6 +2410,13 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	case COMMAND_GOTO_MENU:
 		if (getTransportUnit() == NULL || plot()->isValidDomainForAction(getUnitType()))
 		{
+			// Erik: Disable the goto menu for coastal transports for now until we figure
+			// out how to filter the unreachable cities
+			if (canCrossCoastOnly())
+			{
+				return false;
+			}			
+
 			return true;
 			/*
 			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || canAutoCrossOcean(plot()))
@@ -2942,18 +2949,21 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				{
 					return false;
 				}
+				// Erik: The AI may attempt to pathfind into unrevealed ocean plots so have have to check for the plot being revealed
+				if (DOMAIN_SEA == getDomainType() && !pPlot->isRevealed(getTeam(), false))
+				{
+					return false;
+				}
 			}
 		}
-		else
+		
+		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 		{
-			if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
+			if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
 			{
-				if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+				if (bIgnoreLoad || !canLoad(pPlot, true))
 				{
-					if (bIgnoreLoad || !canLoad(pPlot, true))
-					{
-						return false;
-					}
+					return false;
 				}
 			}
 		}
@@ -3367,9 +3377,29 @@ bool CvUnit::isValidPlot(const CvPlot* pPlot) const
 	return true;
 }
 
+int CvUnit::canCrossCoastOnly() const
+{
+	CLLNode<IDInfo>* pUnitNode = getGroup()->headUnitNode();
+
+	// Determine if the unit may enter non-coast water plots
+	while (pUnitNode != NULL)
+	{
+		CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
+
+		if (pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
+		{
+			return true;
+		}
+		pUnitNode = getGroup()->nextUnitNode(pUnitNode);
+	}
+
+	return false;
+}
 
 bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 {
+	const bool canCrossOcean = !canCrossCoastOnly();
+
 	if (eAutomate == NO_AUTOMATE)
 	{
 		return false;
@@ -3407,7 +3437,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 		break;
 
 	case AUTOMATE_SAIL:
-		if (!canAutoCrossOcean(plot()))
+		if (!canCrossOcean || !canAutoCrossOcean(plot()))
 		{
 			return false;
 		}
@@ -3415,7 +3445,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 
 	/*** TRIANGLETRADE 10/28/08 by DPII ***/
 	case AUTOMATE_SAIL_TO_AFRICA:
-		if (!canAutoCrossOcean(plot())) 
+		if (!canCrossOcean || !canAutoCrossOcean(plot()))
 		{
 			return false;
 		}
@@ -3424,11 +3454,12 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 	// R&R, ray, Port Royal
 	case AUTOMATE_SAIL_TO_PORT_ROYAL:	
 		//RaR, ray, fix for Port Royal during WOI - START
-		if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL)) // need to check
+		/*
+		if (!canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL)) // need to check
 		{
 			return false;
 		}
-
+		*/
 		if (!GET_PLAYER(getOwnerINLINE()).canTradeWithPortRoyal())
 		{
 			return false;
@@ -8939,6 +8970,12 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 
 	if (pTradeRoute->getDestinationCity() == IDInfo(ePlayer, CvTradeRoute::EUROPE_CITY_ID))
 	{
+		// Erik: Coastal transports cannot trade with Europe
+		if (canCrossCoastOnly())
+		{
+			return false;
+		}
+
 		if (getDomainType() != DOMAIN_SEA)
 		{
 			return false;
