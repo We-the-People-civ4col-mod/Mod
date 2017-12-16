@@ -574,23 +574,21 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 
 	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
-		aiUnitAIVal[iI] = 0;
-	}
-
-	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
-	{
 		if (bAsync)
 		{
 			aiUnitAIVal[iI] += GC.getASyncRand().get(100, "AI Best UnitAI ASYNC");
 		}
 		else
 		{
-			aiUnitAIVal[iI] += GC.getGameINLINE().getSorenRandNum(100, "AI Best UnitAI");
+			//aiUnitAIVal[iI] += GC.getGameINLINE().getSorenRandNum(100, "AI Best UnitAI");
+			//Erik: Less initial randomness for unit selection
+			aiUnitAIVal[iI] += GC.getGameINLINE().getSorenRandNum(50, "AI Best UnitAI");
 		}
 	}
 
 	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
+		// Erik: Note that no leader is currently making use of this
 		aiUnitAIVal[iI] *= std::max(0, (GC.getLeaderHeadInfo(getPersonalityType()).getUnitAIWeightModifier(iI) + 100));
 		aiUnitAIVal[iI] /= 100;
 		
@@ -618,6 +616,15 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 				}
 				break;
 		
+			case UNITAI_TRANSPORT_COAST:
+				{
+					if (!AI_hasCoastalRoute())
+					{
+						aiUnitAIVal[iI] = 0;
+					}
+				}
+				break;
+
 			case UNITAI_DEFENSIVE:
 				if (GET_PLAYER(getOwnerINLINE()).AI_totalDefendersNeeded(NULL, area(), true) <= 0)
 				{
@@ -635,7 +642,6 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 						
 			case UNITAI_WORKER_SEA:
 			case UNITAI_TRANSPORT_SEA:
-			case UNITAI_TRANSPORT_COAST:
 			case UNITAI_PIRATE_SEA:
 				if (GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI) == 0)
 				{
