@@ -3,15 +3,14 @@ Religion and Revolution: Version 2.7 // Changelog
 Fixes: 
 
 - Corrected several XML issues (duplicates etc.)
-- Removed dialog that asks for confirmation for declaration  of war when entering a native village if the unit in question is a transport
-- Natives will not teach skills if a they are still angry due to bargaining
+- Removed dialog that asks for confirmation for declaration of war when entering a native village if the unit in question is a transport
+- Natives will not teach skills if they are still angry due to bargaining
 - If a size 1 city is razed, the player no longer gets an annoying and redundant message stating that the city will be abandoned
-- Corrected artillery unit texture scaling issue in europe. Removed the code for the other ports since it is not needed
+- Corrected artillery unit texture scaling issue in Europe. Removed the code for the other ports since it is not needed
 - The great tool factory will correctly reduce the food yields of the city 
-- The graduation of colonists will no longer be able to cause a CTD (was only an issue when english text was used)
+- The graduation of colonists will no longer be able to cause a CTD (was only an issue when English text was used)
 - Attempting to assign a unit that produces nothing on a plot (noble, governor etc.) no longer causes a CTD
 - Fix swapped import / export limit parameters
-- Fix missing evaluation of multiple input yields which resulted in a profession requiring multiple inputs being satisfied with any input being preent
 - Fix graphical glitch/redraw problem that happens if the player has insufficient gold to buy a slave in Africa. 
 - Some graphic bugs cavalry and dragoons fixed
 - RaR Americas Gigantic map bug with church fixed
@@ -31,9 +30,10 @@ Map generator:
 
 AI:
 
+- Fix AI handling of professions with multiple input yields
 - AI players can now travel to the African port to sell goods/treasure and buy slaves.
 - AI now sort the units that wait on the European docks by their value. This ensures that the most valuable units get picked up first.
-- Prevent AI transport ships from travelling to Europe if they are carrying at least one unit. The AI should prioritize putting its units to work in the new world and not keep ferrying the same unit(s) back and forth, wasting turns and transport capacity.
+- Prevent AI transport ships from traveling to Europe if they are carrying at least one unit. The AI should prioritize putting its units to work in the new world and not keep ferrying the same unit(s) back and forth, wasting turns and transport capacity.
 - Great generals will now only consider safe paths when relocating between cities. This avoids previously reported issues in which a GG would travel through (or close to) enemy territory
 - AI will now prioritize the production of liberty bells
 - AI will produce the yields that gives the best profit, either in Europe or Africa.
@@ -54,14 +54,14 @@ Other stuff
 - Great General, Great Admiral and Great Chief now have full combat animations
 - New late cityset for Russia 
 - In era expansion now all citysets show a mix of their early and late citysets
-- England now has a new cityset for the lategame (era colonial) that contains some rare colonial buildings (the city shows a mix of late and colonial cityset)
+- England now has a new cityset for the late game (era colonial) that contains some rare colonial buildings (the city shows a mix of late and colonial cityset)
 - Incentives of late military founding fathers have been decreased
 - The Danish King now use the royal anthem instead of the sports anthem (yes Denmark has two anthems)
 
 
 Debug Mode:
 
-- If debug mode is activated (ctrl-Z), we now display the AI's valuation of yields when hoovering over the stored yields inside a city
+- If debug mode is activated (ctrl-Z), we now display the AI's valuation of yields when hovering over the stored yields inside a city
 
 
 
