@@ -15,6 +15,7 @@ Es basiert auf TAC (The Authentic Colonization) in der Version 2.03_final.
 Teammitglieder:
 
 	Schmiddie
+	Devolution
 	Nightinggale	
 	
 	Inaktive Mitglieder:		

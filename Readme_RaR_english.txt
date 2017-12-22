@@ -16,6 +16,9 @@ Thus I will try to summarize / link the most important threads and informations 
 Team members:
 
 	Schmiddie
+	Devolution
+	Nightinggale
+	
 	raystuttgart
 	Robert Surcouf
 	colonialfan
