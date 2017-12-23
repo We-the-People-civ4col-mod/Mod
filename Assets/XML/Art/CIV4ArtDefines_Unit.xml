@@ -244,7 +244,7 @@
 			<Button>,Art/colonization_atlas_units.dds,7,1</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/prospector.dds</FullLengthIcon>
 			<fScale>0.48</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>0.9</fInterfaceScale>
 			<NIF>Art/Units/Settler/Expert_Prospector/Expert_Ore_Miner.nif</NIF>
 			<KFM>Art/Units/Expert_Ore_Miner/Expert_Ore_Miner.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
