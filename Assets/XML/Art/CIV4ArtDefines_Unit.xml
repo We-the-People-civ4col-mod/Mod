@@ -210,7 +210,7 @@
 			<Button>,Art/colonization_atlas_units.dds,3,3</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/furniture_maker.dds</FullLengthIcon>
 			<fScale>0.54</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>0.90</fInterfaceScale>
 			<NIF>Art/Units/Settler/Master_Furniture_Maker/Indentured_Servant.nif</NIF>
 			<KFM>Art/Units/Settler/Master_Furniture_Maker/Indentured_Servant.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
@@ -688,7 +688,7 @@
 			<Button>,Art/colonization_atlas_units.dds,1,1</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/butcher.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
-			<fInterfaceScale>0.8</fInterfaceScale>
+			<fInterfaceScale>0.90</fInterfaceScale>
 			<NIF>Art/Units/Settler/butcher/Expert_Silver_Miner.nif</NIF>
 			<KFM>Art/Units/Settler/butcher/Expert_Silver_Miner.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
