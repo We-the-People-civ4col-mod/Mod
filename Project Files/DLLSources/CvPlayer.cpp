@@ -21688,8 +21688,8 @@ void CvPlayer::checkForPirates()
 // R&R, ray, European Peace -START
 void CvPlayer::checkForEuropeanPeace()
 {
-	// only do sth for human Colonist-Players if not in revolution
-	if(isInRevolution() || !isHuman())
+	// only do this for human Colonist-Players if not in revolution and if AW is not enabled
+	if(isInRevolution() || !isHuman() || GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_WAR))
 	{
 		return;
 	}
