@@ -3399,6 +3399,7 @@ int CvUnit::canCrossCoastOnly() const
 bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 {
 	const bool canCrossOcean = !canCrossCoastOnly();
+	CLLNode<IDInfo>* pUnitNode = NULL;
 
 	if (eAutomate == NO_AUTOMATE)
 	{
@@ -3460,6 +3461,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 			return false;
 		}
 		*/
+
 		if (!GET_PLAYER(getOwnerINLINE()).canTradeWithPortRoyal())
 		{
 			return false;
@@ -3474,14 +3476,20 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 		{
 			return false;
 		}
-		/*if (!canAutoCrossOcean(plot())) 
+		
+		// Erik: We need to determine if all the selected units
+		// can travel to Port Royal
+		pUnitNode = getGroup()->headUnitNode();
+
+		while (pUnitNode != NULL)
 		{
-			return false;
-		}*/
-		//RaR, ray, fix for Port Royal during WOI - START - END
-		if (!getUnitInfo().isHiddenNationality()) 
-		{
-			return false;
+			CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
+
+			if (!pLoopUnit->getUnitInfo().isHiddenNationality())
+			{
+				return false;
+			}
+			pUnitNode = getGroup()->nextUnitNode(pUnitNode);
 		}
 		break;
 
