@@ -12309,7 +12309,9 @@ void CvPlayer::doWarnings()
 						if (pNearestCity != NULL)
 						{
 							// R&R, ray, changes to Wild Animals - START
-							if (pUnit->isBarbarian())
+							// Erik: Make sure that the unit is actually an animal (and not a pirate) when giving the warning about
+							// animals being spotted
+							if (pUnit->isBarbarian() && pUnit->getUnitInfo().isAnimal())
 							{
 								CvWString szBuffer = gDLL->getText("TXT_KEY_ANIMALS_SPOTTED", pNearestCity->getNameKey());
 								gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_INFO, pUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), true, true);
