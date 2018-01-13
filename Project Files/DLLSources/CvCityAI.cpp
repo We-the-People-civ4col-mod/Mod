@@ -3557,12 +3557,6 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	{
 		return 0;
 	}
-
-	if (eProfession == 32)
-	{
-		volatile int i = 42;
-	}
-	
 	// Currently, the only yield to require multiple inputs is YIELD_COLOURED_CLOTH (inputs: YIELD_INDIGO and YIELD_CLOTH)
 	// so we do not support anything beyond that at the moment. We should consider asserting much earlier though
 	FAssertMsg(kProfessionInfo.getNumYieldsConsumed() <= MAX_INPUT_YIELDS, "More than 2 input yields are not supported");
@@ -4341,7 +4335,9 @@ int CvCityAI::AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* p
 					{
 						int iValue = AI_professionValue(eProfession, pUnit, pLoopPlot, NULL);
 						
-						if (iValue > iBestValue)
+						// Erik: Make sure that we pick a plot even if it has no apparent economic value
+						// since the caller of this function cannot deal with the case that no plot was found
+						if (iValue >= iBestValue)
 						{
 							iBestValue = iValue;
 							iBestPlot = iI;
