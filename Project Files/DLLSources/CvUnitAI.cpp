@@ -597,19 +597,19 @@ void CvUnitAI::AI_promote()
 {
 	PROFILE_FUNC();
 
-	PromotionTypes eBestPromotion;
-	int iValue;
-	int iBestValue;
-	int iI;
+	// K-Mod. A quick check to see if we can rule out all promotions in one hit, before we go through them one by one.
+	if (!isPromotionReady())
+		return; // can't get any normal promotions. (see CvUnit::canPromote)
+	// K-Mod end
 
-	iBestValue = 0;
-	eBestPromotion = NO_PROMOTION;
+	int iBestValue = 0;
+	PromotionTypes eBestPromotion = NO_PROMOTION;
 
-	for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
 	{
 		if (canPromote((PromotionTypes)iI, -1))
 		{
-			iValue = AI_promotionValue((PromotionTypes)iI);
+			int iValue = AI_promotionValue((PromotionTypes)iI);
 
 			if (iValue > iBestValue)
 			{
