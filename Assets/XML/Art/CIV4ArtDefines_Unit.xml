@@ -9598,7 +9598,7 @@
 			<Type>ART_DEF_UNIT_PIONEER</Type>
 			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,5</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Pioneer_no_tools.dds</FullLengthIcon>
-			<fScale>0.45</fScale>
+			<fScale>0.50</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Units/Hardy_pioneer_NT/Hardy_pioneer_NT.nif</NIF>
 			<KFM>Art/Units/Hardy_pioneer_NT/Hardy_pioneer_NT.kfm</KFM>
@@ -9615,7 +9615,7 @@
 			<Type>ART_DEF_UNIT_PROFESSION_PIONEER</Type>
 			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,11</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Pioneer.dds</FullLengthIcon>
-			<fScale>0.44</fScale>
+			<fScale>0.50</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Units/Pioneer/Pioneer.nif</NIF>
 			<KFM>Art/Units/Pioneer/Pioneer.kfm</KFM>
@@ -9632,7 +9632,7 @@
 			<Type>ART_DEF_UNIT_PROFESSION_UNIT_PIONEER</Type>
 			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,5</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Hardy_Pioneer.dds</FullLengthIcon>
-			<fScale>0.48</fScale>
+			<fScale>0.50</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
 			<NIF>Art/Units/Hardy_Pioneer/Hardy_Pioneer.nif</NIF>
 			<KFM>Art/Units/Hardy_Pioneer/Hardy_Pioneer.kfm</KFM>
