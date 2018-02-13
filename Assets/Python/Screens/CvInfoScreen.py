@@ -455,7 +455,8 @@ class CvInfoScreen:
 			iLoopPlayerTeam = pLoopPlayer.getTeam()
 			self.aiPlayerToggle.append(True)
 			if (gc.getTeam(iLoopPlayerTeam).isEverAlive()):
-				if (self.pActiveTeam.isHasMet(iLoopPlayerTeam) and not gc.getPlayer(iLoopPlayer).isEurope() and not gc.getPlayer(iLoopPlayer).isNative()):
+				# Erik: Exclude all other players other than Europeans from the graph
+				if (self.pActiveTeam.isHasMet(iLoopPlayerTeam) and not gc.getPlayer(iLoopPlayer).isEurope() and not gc.getPlayer(iLoopPlayer).isNative() and not gc.getGame().isChurchPlayer(iLoopPlayer) and not gc.getGame().isBarbarianPlayer(iLoopPlayer)):
 					self.aiPlayersMet.append(iLoopPlayer)
 					self.iNumPlayersMet += 1
 
@@ -879,15 +880,18 @@ class CvInfoScreen:
 
 			if (gc.getPlayer(iPlayerLoop).isAlive()):
 
-				iNumActivePlayers += 1
+				# Erik: We only include the Europeans when computing the demographics
+				if (not gc.getPlayer(iPlayerLoop).isNative() and not gc.getPlayer(iPlayerLoop).isEurope() and not gc.getGame().isChurchPlayer(iPlayerLoop) and not gc.getGame().isBarbarianPlayer(iPlayerLoop)):
 
-				pCurrPlayer = gc.getPlayer(iPlayerLoop)
-				aiGroupEconomy.append(pCurrPlayer.getGold())
-				aiGroupIndustry.append(pCurrPlayer.getYieldRate(YieldTypes.YIELD_HAMMERS))
-				aiGroupAgriculture.append(pCurrPlayer.calculateTotalYield(YieldTypes.YIELD_FOOD))
-				aiGroupMilitary.append(pCurrPlayer.getPower())
-				aiGroupLandArea.append(pCurrPlayer.getTotalLand() * 1000)
-				aiGroupPopulation.append(pCurrPlayer.getRealPopulation())
+					iNumActivePlayers += 1
+
+					pCurrPlayer = gc.getPlayer(iPlayerLoop)
+					aiGroupEconomy.append(pCurrPlayer.getGold())
+					aiGroupIndustry.append(pCurrPlayer.getYieldRate(YieldTypes.YIELD_HAMMERS))
+					aiGroupAgriculture.append(pCurrPlayer.calculateTotalYield(YieldTypes.YIELD_FOOD))
+					aiGroupMilitary.append(pCurrPlayer.getPower())
+					aiGroupLandArea.append(pCurrPlayer.getTotalLand() * 1000)
+					aiGroupPopulation.append(pCurrPlayer.getRealPopulation())
 
 		aiGroupEconomy.sort()
 		aiGroupIndustry.sort()
