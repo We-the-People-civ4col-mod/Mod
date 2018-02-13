@@ -1136,7 +1136,24 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0; 
 				generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);				
 				generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
-				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReachToSource + turnsToReachFromSourceToDest, aiYieldsLoaded[eYield]);				
+				// Erik: If we can travel from the current plot to the source, and then from source to destination in the same turn,
+				// we have to make sure that we don't overestimate the amount that we should load
+				int turnsRequired;
+				if (turnsToReachToSource == turnsToReachFromSourceToDest)
+				{
+					// No need to add both legs of the journey since that would have the transport load too much cargo for the destination city
+					turnsRequired = turnsToReachToSource + turnsToReachFromSourceToDest - 2;
+					// In case generatePath could ever return 0
+					turnsRequired = std::max(0, turnsRequired);
+				}
+				else
+				{
+					// Slightly underestimate the cargo we should carry (we cannot get this 100% correct since it depends on fractional movement,
+					// other transports, consumption changes at the destination etc.
+					turnsRequired = std::max(turnsToReachToSource, turnsToReachFromSourceToDest);
+				}
+				
+				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsRequired, aiYieldsLoaded[eYield]);
 			}
 			
 			// R&R mod, vetiarvind, max yield import limit - end
@@ -1240,6 +1257,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 						int turnsToReach = 0; 
 						iOriginalAmount = iAmount = std::min(GC.getGameINLINE().getCargoYieldCapacity(), iAmount);
 						generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
+						// Erik: If the destination can be reached in the same turn, subtract a turn
+						turnsToReach = std::max(0, turnsToReach - 1);
 						iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReach, aiYieldsLoaded[eYield]);
 					}
 					
