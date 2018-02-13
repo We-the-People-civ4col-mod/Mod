@@ -20972,57 +20972,59 @@ void CvPlayer::checkForRevolutionSupport()
 	{
 		CvPlayer& potentialRevSupporter = GET_PLAYER((PlayerTypes) iPlayer);
 
-
 		//check if Player is Colonist AND not self AND Player not in revolution himself AND we can contact AND is willing to talk AND we are not at war AND minSupport Attitude reached
 		if(!potentialRevSupporter.isNative() && !potentialRevSupporter.isEurope() && potentialRevSupporter.getID() != getID() && !potentialRevSupporter.isInRevolution() && canContact((PlayerTypes) iPlayer) && potentialRevSupporter.AI_isWillingToTalk(getID()) && potentialRevSupporter.AI_getAttitude(getID(), false) >= GC.getDefineINT("MIN_ATTITUDE_FOR_SUPPORT") && !GET_TEAM(getTeam()).isAtWar(potentialRevSupporter.getTeam()))
 		{
-			//checking random chance for merc
-			int randomSupportValue = GC.getGameINLINE().getSorenRandNum(1000, "Rev Support");
-			int supportChance = GC.getDefineINT("BASE_CHANCE_FOR_SUPPORT");
+			// Erik: We also require that the player is on good terms with the potential supporter's king
+			if (potentialRevSupporter.getParent() != NO_PLAYER && GET_PLAYER(potentialRevSupporter.getParent()).AI_getAttitude(getID(), false) >= GC.getDefineINT("MIN_ATTITUDE_FOR_SUPPORT"))
+			{ 
+				//checking random chance for merc
+				int randomSupportValue = GC.getGameINLINE().getSorenRandNum(1000, "Rev Support");
+				int supportChance = GC.getDefineINT("BASE_CHANCE_FOR_SUPPORT");
 
-			if (supportChance > randomSupportValue)
-			{
-
-				//simple logik for AI
-				if (!isHuman())
+				if (supportChance > randomSupportValue)
 				{
-					//randomize which support AI chooses
-					int randomSupportChoice = GC.getGameINLINE().getSorenRandNum(2, "Rev Support Choice");
-					int supportAmount;
-					UnitTypes DefaultSupportType;
-
-					if (randomSupportChoice > 1)
+					//simple logik for AI
+					if (!isHuman())
 					{
-						supportAmount = GC.getDefineINT("REV_SUPPORT_LAND");
-						DefaultSupportType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REV_SUPPORT_LAND"));
+						//randomize which support AI chooses
+						int randomSupportChoice = GC.getGameINLINE().getSorenRandNum(2, "Rev Support Choice");
+						int supportAmount;
+						UnitTypes DefaultSupportType;
+
+						if (randomSupportChoice > 1)
+						{
+							supportAmount = GC.getDefineINT("REV_SUPPORT_LAND");
+							DefaultSupportType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REV_SUPPORT_LAND"));
+						}
+						else
+						{
+							supportAmount = GC.getDefineINT("REV_SUPPORT_SEA");
+							DefaultSupportType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REV_SUPPORT_SEA"));
+						}
+
+						FAssert(DefaultSupportType != NO_UNIT);
+
+						//creating the units
+						for (int i=0;i<supportAmount;i++)
+						{
+							CvUnit* SupportUnit = initUnit(DefaultSupportType, (ProfessionTypes) GC.getUnitInfo(DefaultSupportType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+						}
 					}
+
+					//more complicated case for human
 					else
 					{
-						supportAmount = GC.getDefineINT("REV_SUPPORT_SEA");
-						DefaultSupportType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REV_SUPPORT_SEA"));
+						// handle this by DiploEvent
+						CvDiploParameters* pDiplo = new CvDiploParameters(potentialRevSupporter.getID());
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GET_REV_SUPPORT"));
+
+						//getting Parent for Text
+						pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(potentialRevSupporter.getParent()).getLeaderType()).getDescription());
+
+						pDiplo->setAIContact(true);
+						gDLL->beginDiplomacy(pDiplo, getID());
 					}
-
-					FAssert(DefaultSupportType != NO_UNIT);
-
-					//creating the units
-					for (int i=0;i<supportAmount;i++)
-					{
-						CvUnit* SupportUnit = initUnit(DefaultSupportType, (ProfessionTypes) GC.getUnitInfo(DefaultSupportType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
-					}
-				}
-
-				//more complicated case for human
-				else
-				{
-					// handle this by DiploEvent
-					CvDiploParameters* pDiplo = new CvDiploParameters(potentialRevSupporter.getID());
-					pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GET_REV_SUPPORT"));
-
-					//getting Parent for Text
-					pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(potentialRevSupporter.getParent()).getLeaderType()).getDescription());
-
-					pDiplo->setAIContact(true);
-					gDLL->beginDiplomacy(pDiplo, getID());
 				}
 			}
 		}
