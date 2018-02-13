@@ -6167,16 +6167,11 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 	}
 	// R&R, ray, changes to Wild Animals - END
 
-	// R&R, ray, Criminals, African Slaves and Naitve Slaves cannot found cities - ONLY for Human Players - START
-	if (isHuman())
+	// Erik: Eventually we'll check against a XML tag, but this'll have to do for now
+	if (isPrisonerOrSlave())
 	{
-		int unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
-		if (unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_PRISONER") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
-		{
-			return false;
-		}
+		return false;
 	}
-	// R&R, ray, Criminals, African Slaves and Naitve Slaves cannot found cities - ONLY for Human Players - END
 
 	if (!m_pUnitInfo->isFound())
 	{
@@ -14714,3 +14709,19 @@ int CvUnit::getCargoValue(Port port) const
 
 	return sellValue;
 }
+
+// Erik: We should come up with a XML tag (e.g. bJoin vs. bFound) so that we don't need to hard-code this
+bool CvUnit::isPrisonerOrSlave() const
+{
+	const int unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
+
+	if (unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_PRISONER") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE") || unitClassIntToBeChecked == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+

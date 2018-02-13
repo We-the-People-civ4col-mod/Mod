@@ -870,6 +870,7 @@ protected:
 	void processUnitCombatType(UnitCombatTypes eUnitCombat, int iChange);
 	void doUnloadYield(int iAmount);
 	bool raidWeapons(std::vector<int>& aYields);
+	bool isPrisonerOrSlave() const;
 
 // unit yield cache - start - Nightinggale
 protected:

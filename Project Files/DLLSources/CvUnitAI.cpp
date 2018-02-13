@@ -1387,11 +1387,14 @@ void CvUnitAI::AI_colonistMove()
 	
 	if ((area()->getCitiesPerPlayer(getOwnerINLINE()) == 0) && (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0))
 	{
-		if (area()->getBestFoundValue(getOwnerINLINE()) > 0)
-		{
-			AI_setUnitAIType(UNITAI_SETTLER);
-			AI_settlerMove();
-			return;
+		if (canFound(NULL))
+		{ 
+			if (area()->getBestFoundValue(getOwnerINLINE()) > 0)
+			{
+				AI_setUnitAIType(UNITAI_SETTLER);
+				AI_settlerMove();
+				return;
+			}
 		}
 	}
 	
@@ -1428,9 +1431,12 @@ void CvUnitAI::AI_colonistMove()
 		if (iDesiredCities > (kOwner.getNumCities() + kOwner.AI_totalUnitAIs(UNITAI_SETTLER)))
 
 		{
-			AI_setUnitAIType(UNITAI_SETTLER);
-			AI_settlerMove();
-			return;
+			if (canFound(NULL))
+			{ 
+				AI_setUnitAIType(UNITAI_SETTLER);
+				AI_settlerMove();
+				return;
+			}
 		}
 	}
 	// TAC - AI City Sites - koma13 - END
