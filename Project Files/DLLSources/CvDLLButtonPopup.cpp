@@ -3051,9 +3051,9 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 			// transport feeder - start - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getImportsLimit(eYield), 10, 999, 0);
 			// transport feeder - end - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getImportsLimit(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getMaintainLevel(eYield), 10, 999, 0);
 
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 
