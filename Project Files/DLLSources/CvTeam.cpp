@@ -817,6 +817,13 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 							if (GET_PLAYER((PlayerTypes)iJ).getTeam() == eTeam)
 							{
 								GET_PLAYER((PlayerTypes)iJ).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR, 1);
+
+								// Erik: If the player declares on an European nation, add major diplo penalty with its king as well
+								// as a minor penalty with the church
+								if (GET_PLAYER((PlayerTypes)iJ).getParent() != NO_PLAYER)
+								{
+									GET_PLAYER(GET_PLAYER((PlayerTypes)iJ).getParent()).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR, 1);
+								}
 							}
 							else if (GET_PLAYER((PlayerTypes)iJ).getTeam() != getID())
 							{
