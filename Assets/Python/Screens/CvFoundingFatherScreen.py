@@ -265,7 +265,8 @@ class CvFoundingFatherScreen:
 							if (gc.getTeam(gc.getPlayer(gc.getGame().getActivePlayer()).getTeam()).isHasMet(gc.getGame().getFatherTeam(i))):
 								screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getCivilizationArtInfo(gc.getCivilizationInfo(gc.getPlayer(k).getCivilizationType()).getArtDefineTag()).getButton() , (self.FatherRecordWidth * (j+ 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10) - (self.FatherRecordHeight / 5), self.BarAreaHeight + self.FatherRecordHeight - 15 + (self.FatherRecordWidth / 5), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 								for m in range(gc.getMAX_PLAYERS()):
-									if (gc.getPlayer(m).getTeam() == gc.getGame().getFatherTeam(i)):
+									# Erik: Skip the the flag icon of the native player in a permanent alliance with a European
+									if (not gc.getPlayer(m).isNative() and gc.getPlayer(m).getTeam() == gc.getGame().getFatherTeam(i)):
 										szTempBuffer = u"  <color=%d,%d,%d,%d>%s</color>" %(gc.getPlayer(m).getPlayerTextColorR(), gc.getPlayer(m).getPlayerTextColorG(), gc.getPlayer(m).getPlayerTextColorB(), gc.getPlayer(m).getPlayerTextColorA(), gc.getPlayer(m).getName())
 										if (len(szTempBuffer) > 50):
 											screen.attachMultilineTextAt(ScrollPanel, "FatherOwner" + str(i), "<font=3>" + szTempBuffer + "</font>", (self.FatherRecordWidth * (j + 1)) + (self.FatherRecordHeight / 20), self.BarAreaHeight + self.FatherRecordHeight - 15 + (self.FatherRecordWidth / 5), self.FatherRecordWidth, 55, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
