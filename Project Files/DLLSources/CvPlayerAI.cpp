@@ -3277,19 +3277,14 @@ int CvPlayerAI::AI_getRebelAttitude(PlayerTypes ePlayer)
 	iBells /= std::max(1, GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent());
 	iBells /= GC.getLeaderHeadInfo(getPersonalityType()).getRebelAttitudeDivisor();
 
-	// R&R, ray, limit negative Attitude of King due to Bells
-	int iCities = GET_PLAYER(ePlayer).getNumCities();
-	if (iCities > 0)
-	{
-		iBells /= iCities;
-	}
-	if (iBells < -10)
-	{
-		iBells = -10;
-	}
-
-	return iBells;
-
+	// Erik: Negative attitude from bells now scale with the rebel sentiment. 
+	// This effectively disables the exploit that allows players to request discounted 
+	// units from their king as long as the king is at least cautious
+	const int iRebelPercent = GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getRebelPercent();
+	// TODO: The maximum should be a XML parameter
+	const int iCappedBells = std::max(-20.0, iBells * ((100 - iRebelPercent) / 100.0));
+		
+	return iCappedBells;
 }
 
 int CvPlayerAI::AI_getWarAttitude(PlayerTypes ePlayer)
