@@ -21263,6 +21263,10 @@ void CvPlayer::checkForStealingImmigrant()
 // R&R, ray, Smuggling - START
 void CvPlayer::checkForSmugglers()
 {
+	// Erik: AI cannot use smuggling ships / Port Royal
+	if (!isHuman())
+		return;
+
 	// not in Revolution
 	if(isInRevolution())
 	{
