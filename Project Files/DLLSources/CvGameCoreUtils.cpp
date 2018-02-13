@@ -913,9 +913,12 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 	pSelectionGroup = ((CvSelectionGroup *)pointer);
 
-	iWorstCost = MAX_INT;
+	//iWorstCost = MAX_INT;
+	iWorstCost = 0;
 	iWorstMovesLeft = MAX_INT;
 	iWorstMax = MAX_INT;
+
+	const int iFlags = gDLL->getFAStarIFace()->GetInfo(finder);
 
 	pUnitNode = pSelectionGroup->headUnitNode();
 
@@ -960,12 +963,10 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 						iCost += (PATH_DAMAGE_WEIGHT * std::max(0, GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage())) / GC.getMAX_HIT_POINTS();
 					}
 					
-					const int info = gDLL->getFAStarIFace()->GetInfo(finder);
-
 					// R&R, Robert Surcouf, Damage on Storm plots, End
 					// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 					// Add additional cost for ending turn in or adjacent to enemy territory based on flags
-					if (info & MOVE_AVOID_ENEMY_WEIGHT_3)
+					if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_3)
 					{
 						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
 						{
@@ -974,8 +975,8 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 						else
 						{
 							CvPlot* pAdjacentPlot;
-							int iI;
-							for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+							
+							for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 							{
 								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
 
@@ -990,7 +991,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 							}
 						}
 					}
-					else if (info & MOVE_AVOID_ENEMY_WEIGHT_2)
+					else if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_2)
 					{
 						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
 						{
@@ -1060,7 +1061,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 				if (pSelectionGroup->AI_isControlled())
 				{
-					if (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_BUST_FOG)
+					if (iFlags & MOVE_BUST_FOG)
 					{
 						for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 						{
@@ -1076,7 +1077,8 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 					}
 				}
 
-				if (iCost < iWorstCost)
+				//if (iCost < iWorstCost)
+				if (iCost > iWorstCost) // K-Mod. (no comment)
 				{
 					iWorstCost = iCost;
 					iWorstMovesLeft = iMovesLeft;
@@ -1086,7 +1088,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		}
 	}
 
-	FAssert(iWorstCost != MAX_INT);
+	//FAssert(iWorstCost != MAX_INT);
 
 	iWorstCost += PATH_STEP_WEIGHT;
 
