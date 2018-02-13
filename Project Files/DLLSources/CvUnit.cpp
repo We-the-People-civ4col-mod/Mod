@@ -3313,6 +3313,13 @@ bool CvUnit::jumpToNearestValidPlot()
 
 				if (pLoopPlot->isRevealed(getTeam(), false))
 				{
+					// Erik: TODO: Do not consider cities not owned by the player
+					// For now we disallow all cities as teleport target
+					if (pLoopPlot->isCity()/* && pLoopPlot->getPlotCity()->getTeam() != getTeam()*/)
+					{ 
+						continue;
+					}
+						
 					// TAC - AI Mauritsstad Bugfix - koma13 - START
 					bool bEuropeTravelstate = (getUnitTravelState() == UNIT_TRAVEL_STATE_FROM_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_TO_EUROPE);
 					if (getUnitTravelState() == NO_UNIT_TRAVEL_STATE || (bEuropeTravelstate && pLoopPlot->isEurope()))
