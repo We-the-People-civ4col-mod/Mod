@@ -331,6 +331,11 @@ class CvForeignAdvisor:
 
 		# draw lines
 		for iSelectedLeader in range(gc.getMAX_PLAYERS()):
+			
+			# Erik: Skip the barbarian player
+			if (gc.getGame().isBarbarianPlayer(iSelectedLeader)):
+				continue
+		
 			bDisplayed = (gc.getPlayer(iSelectedLeader).isAlive() and (gc.getGame().isDebugMode() or gc.getTeam(playerActive.getTeam()).isHasMet(gc.getPlayer(iSelectedLeader).getTeam())))
 
 			if iSelectedLeader in self.listSelectedLeaders or (bNoLeadersSelected and bDisplayed):
