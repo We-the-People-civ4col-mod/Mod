@@ -6823,6 +6823,23 @@ CvPlot* CvUnitAI::findNearbyOceanPlot(CvPlot* pPlot)
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 		
+		// Erik: Filter out plots with impassable terrain and\or feature
+		// We first deal with the unconditional plots (which can never be a valid target)
+		// and then we check unit specific limitations. The latter is not currently
+		// used by the XML but should nevertheless be checked from a strict correctness
+		// perspective
+		if (pLoopPlot->isImpassable())
+			continue;
+
+		if (m_pUnitInfo->getTerrainImpassable(pLoopPlot->getTerrainType()))
+			continue;
+
+		if (pLoopPlot->getFeatureType() != NO_FEATURE)
+		{ 
+			if (m_pUnitInfo->getFeatureImpassable(pLoopPlot->getFeatureType()))
+				continue;
+		}
+			
 		if (AI_plotValid(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(this))
 		{
 			if (pLoopPlot->isRevealed(getTeam(), false))
