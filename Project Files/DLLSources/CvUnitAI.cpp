@@ -15435,9 +15435,9 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 									CvUnit* pAttacker = aGroupCargo[i];
 									if( iVisibleEnemyDefenders > 0 )
 									{
-										CvUnit* pDefender = pLoopPlot->getBestDefender(NO_PLAYER, pAttacker->getOwnerINLINE(), pAttacker, true);
+										const bool bDefender = pLoopPlot->hasDefender(true, NO_PLAYER, pAttacker->getOwnerINLINE(), pAttacker, true);
 										
-										if (pDefender == NULL || !pAttacker->canAttack())
+										if (!bDefender == NULL || !pAttacker->canAttack())
 										{
 											bCanCargoAllUnload = false;
 											break;
@@ -15807,9 +15807,9 @@ bool CvUnitAI::AI_assaultSeaReinforce(bool bNative)
 														for (uint i = 0; i < aGroupCargo.size(); ++i)
 														{
 															CvUnit* pAttacker = aGroupCargo[i];
-															CvUnit* pDefender = pLoopPlot->getBestDefender(NO_PLAYER, pAttacker->getOwnerINLINE(), pAttacker, true);
+															const bool bDefender = pLoopPlot->hasDefender(true, NO_PLAYER, pAttacker->getOwnerINLINE(), pAttacker, true);
 															
-															if (pDefender == NULL || !pAttacker->canAttack())
+															if (!bDefender || !pAttacker->canAttack())
 															{
 																bCanCargoAllUnload = false;
 																break;

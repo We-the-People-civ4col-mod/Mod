@@ -325,10 +325,29 @@ bool CvSelectionGroupAI::AI_update()
 // Returns attack odds out of 100 (the higher, the better...)
 int CvSelectionGroupAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const
 {
+	PROFILE_FUNC();
+
 	CvUnit* pAttacker;
 
 	FAssert(getOwnerINLINE() != NO_PLAYER);
-	
+
+	/************************************************************************************************/
+	/* BETTER_BTS_AI_MOD                      02/21/10                                jdog5000      */
+	/*                                                                                              */
+	/* Efficiency, Lead From Behind                                                                 */
+	/************************************************************************************************/
+	// From Lead From Behind by UncutDragon
+	// original
+	//if (pPlot->getBestDefender(NO_PLAYER, getOwnerINLINE(), NULL, !bPotentialEnemy, bPotentialEnemy) == NULL)
+	// modified
+	if (!pPlot->hasDefender(false, NO_PLAYER, getOwnerINLINE(), NULL, !bPotentialEnemy, bPotentialEnemy))
+		/************************************************************************************************/
+		/* BETTER_BTS_AI_MOD                       END                                                  */
+		/************************************************************************************************/
+	{
+		return 100;
+	}
+
 	int iOdds = 0;
 	pAttacker = AI_getBestGroupAttacker(pPlot, bPotentialEnemy, iOdds);
 
@@ -337,14 +356,8 @@ int CvSelectionGroupAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy)
 		return 0;
 	}
 
-	if (pPlot->getBestDefender(NO_PLAYER, getOwnerINLINE(), pAttacker, !bPotentialEnemy, bPotentialEnemy) == NULL)
-	{
-		return 100;
-	}
-
 	return iOdds;
 }
-
 
 CvUnit* CvSelectionGroupAI::AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce, bool bNoBlitz) const
 {

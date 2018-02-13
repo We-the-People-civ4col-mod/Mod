@@ -2266,7 +2266,7 @@ CvUnit* CvPlot::getBestDefender(PlayerTypes eOwner, PlayerTypes eAttackingPlayer
 					{
 						if (!bTestPotentialEnemy || (eAttackingPlayer == NO_PLAYER) ||  pLoopUnit->isPotentialEnemy(GET_PLAYER(eAttackingPlayer).getTeam(), this) || (NULL != pAttacker && pAttacker->isPotentialEnemy(GET_PLAYER(pLoopUnit->getOwnerINLINE()).getTeam(), this)))
 						{
-							if (!bTestCanMove || pLoopUnit->canMove())
+							if (!bTestCanMove || pLoopUnit->canMove() && !(pLoopUnit->isCargo()))
 							{
 								if (pLoopUnit->isBetterDefenderThan(pBestUnit, pAttacker, true))
 								{
@@ -2281,6 +2281,51 @@ CvUnit* CvPlot::getBestDefender(PlayerTypes eOwner, PlayerTypes eAttackingPlayer
 	}
 
 	return pBestUnit;
+}
+
+///<summary>Efficient alternative to getBestDefender() in case we want to check for any defender being present</summary>
+bool CvPlot::hasDefender(bool bCheckCanAttack, PlayerTypes eOwner, PlayerTypes eAttackingPlayer, const CvUnit* pAttacker, bool bTestAtWar, bool bTestPotentialEnemy, bool bTestCanMove) const
+{
+	CLLNode<IDInfo>* pUnitNode;
+	CvUnit* pLoopUnit;
+	CvUnit* pBestUnit;
+
+	pBestUnit = NULL;
+
+	pUnitNode = headUnitNode();
+
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
+		{
+			if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
+			{
+				if ((eAttackingPlayer == NO_PLAYER) || !(pLoopUnit->isInvisible(GET_PLAYER(eAttackingPlayer).getTeam(), false)))
+				{
+					if (!bTestAtWar || eAttackingPlayer == NO_PLAYER || pLoopUnit->isEnemy(GET_PLAYER(eAttackingPlayer).getTeam(), this) || (NULL != pAttacker && pAttacker->isEnemy(GET_PLAYER(pLoopUnit->getOwnerINLINE()).getTeam(), this)))
+					{
+						if (!bTestPotentialEnemy || (eAttackingPlayer == NO_PLAYER) || pLoopUnit->isPotentialEnemy(GET_PLAYER(eAttackingPlayer).getTeam(), this) || (NULL != pAttacker && pAttacker->isPotentialEnemy(GET_PLAYER(pLoopUnit->getOwnerINLINE()).getTeam(), this)))
+						{
+							if (!bTestCanMove || pLoopUnit->canMove() && !(pLoopUnit->isCargo()))
+							{
+								if (!bCheckCanAttack || (pAttacker == NULL) || (pAttacker->canAttack()))
+								{ 
+									// found a valid defender
+									return true;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// there are no defenders
+	return false;
 }
 
 // returns a sum of the strength (adjusted by firepower) of all the units on a plot
