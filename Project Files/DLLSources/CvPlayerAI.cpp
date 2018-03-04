@@ -3282,7 +3282,7 @@ int CvPlayerAI::AI_getRebelAttitude(PlayerTypes ePlayer)
 	// units from their king as long as the king is at least cautious
 	const int iRebelPercent = GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getRebelPercent();
 	// TODO: The maximum should be a XML parameter
-	const int iCappedBells = std::max(-20.0, iBells * ((100 - iRebelPercent) / 100.0));
+	const int iCappedBells = static_cast<int>(std::max(-20.0, iBells * ((100 - iRebelPercent) / 100.0)));
 		
 	return iCappedBells;
 }
@@ -4639,7 +4639,7 @@ int CvPlayerAI::AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvC
 			int iCityCount = pCity->area()->getCitiesPerPlayer(getID());
 			int iWagonCount = AI_totalAreaUnitAIs(pCity->area(), UNITAI_WAGON);
 
-			int iNeededWagons = iCityCount / 2;
+			int iNeededWagons = iCityCount;
 			if (iNeededWagons < iWagonCount)
 			{
 				iValue += 100 * kUnitInfo.getCargoSpace();
@@ -4650,6 +4650,28 @@ int CvPlayerAI::AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvC
 		{
 			iBestValue = iValue;
 			eBestUnitAI = UNITAI_WAGON;
+		}
+	}
+
+	if (kUnitInfo.getUnitAIType(UNITAI_TRANSPORT_COAST))
+	{
+		int iValue = 0;
+		if (pCity != NULL)
+		{
+			const int iCoastalCityCount = countNumCoastalCities();
+			const int iTransportCount = AI_totalAreaUnitAIs(pCity->area(), UNITAI_TRANSPORT_COAST);
+
+			int iNeededTransports = iCoastalCityCount / 2;
+			if (iNeededTransports < iTransportCount)
+			{
+				iValue += 50 * kUnitInfo.getCargoSpace();
+			}
+		}
+
+		if (iValue > iBestValue)
+		{
+			iBestValue = iValue;
+			eBestUnitAI = UNITAI_TRANSPORT_COAST;
 		}
 	}
 
@@ -4976,11 +4998,13 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		break;
 
 	case UNITAI_WAGON:
+	case UNITAI_TRANSPORT_COAST:
 		iTempValue = iCargoValue + iDefenseCombatValue / 2;
 		iTempValue *= 1 + kUnitInfo.getMoves();
 		iTempValue /= 2;
 		iValue += iTempValue;
 		break;
+
 
 	case UNITAI_TREASURE:
 		break;
@@ -5028,7 +5052,6 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		break;
 
 	case UNITAI_TRANSPORT_SEA:
-	case UNITAI_TRANSPORT_COAST:
 
 		iValue += ((4 + kUnitInfo.getMoves()) * (iCargoValue + iDefenseCombatValue / 2)) / 7;
 
@@ -10683,6 +10706,7 @@ ProfessionTypes CvPlayerAI::AI_idealProfessionForUnitAIType(UnitAITypes eUnitAI,
 //Most notably a "0" means "Don't bother".
 int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 {
+	int iCurrentCount = AI_totalUnitAIs(eUnitAI);
 	int iCount = AI_totalUnitAIs(eUnitAI) + AI_getNumRetiredAIUnits(eUnitAI);
 	int iPopulation = AI_getPopulation() + AI_getNumRetiredAIUnits(UNITAI_MISSIONARY);
 	int iValue = 0;
@@ -10797,13 +10821,24 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 			{
 				// Erik: The number of land transports should depend on the production
 				// vs. consumption rate of all cargo yields as well as the number of cities
-				const int iNeeded = countNumCoastalCities()  / 2;
-				
+				const int iCityCount = getNumCities();
+				const int iNeeded = iCityCount*iCityCount / (countNumCoastalCities() + 1);
+
 				if (iCount < iNeeded)
 				{
-					iValue = 100 + (100 * (iNeeded - iCount));
+					iValue = 100 + (100 * (iNeeded - iCurrentCount));
+				}				
+			}
+			break;
+
+		case UNITAI_TRANSPORT_COAST:
+			{
+				const int iNeeded = countNumCoastalCities() / 2;
+
+				if (iCount < iNeeded)
+				{
+					iValue = 100 + (100 * (iNeeded - iCurrentCount));
 				}
-				
 			}
 			break;
 
@@ -10963,17 +10998,6 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 			if (!AI_isStrategy(STRATEGY_REVOLUTION))
 			{
 				int iNeeded = countNumCoastalCities();
-				if (iCount < iNeeded)
-				{
-					iValue = 100 + 20 * iNeeded + (50 * iNeeded) / (iCount + 1);
-				}
-			}
-			break;
-
-		case UNITAI_TRANSPORT_COAST:
-			{
-				const int iNeeded = countNumCoastalCities() / 2;
-
 				if (iCount < iNeeded)
 				{
 					iValue = 100 + 20 * iNeeded + (50 * iNeeded) / (iCount + 1);

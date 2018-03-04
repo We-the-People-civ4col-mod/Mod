@@ -576,13 +576,13 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 	{
 		if (bAsync)
 		{
-			aiUnitAIVal[iI] += GC.getASyncRand().get(100, "AI Best UnitAI ASYNC");
+			aiUnitAIVal[iI] += GC.getASyncRand().get(25, "AI Best UnitAI ASYNC");
 		}
 		else
 		{
 			//aiUnitAIVal[iI] += GC.getGameINLINE().getSorenRandNum(100, "AI Best UnitAI");
 			//Erik: Less initial randomness for unit selection
-			aiUnitAIVal[iI] += GC.getGameINLINE().getSorenRandNum(50, "AI Best UnitAI");
+			aiUnitAIVal[iI] += GC.getGameINLINE().getSorenRandNum(25, "AI Best UnitAI");
 		}
 	}
 
@@ -608,19 +608,28 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 			{
 			case UNITAI_WAGON:
 				{
-					int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
-					if ((iAreaCities <= 1) || ((area()->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) + area()->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_WAGON)) > iAreaCities))
+					const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
+					if ((iAreaCities <= 1) || ((area()->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) + area()->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_WAGON)) > (iAreaCities*(iAreaCities - 1)) / 2))
 					{
 						aiUnitAIVal[iI] = 0;
+					}
+					else
+					{
+						aiUnitAIVal[iI] = GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
 					}
 				}
 				break;
 		
 			case UNITAI_TRANSPORT_COAST:
 				{
-					if (!AI_hasCoastalRoute())
+					const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
+					if (((area()->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) + area()->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST)) > iAreaCities/2))
 					{
 						aiUnitAIVal[iI] = 0;
+					}			
+					else
+					{
+						aiUnitAIVal[iI] = GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
 					}
 				}
 				break;
