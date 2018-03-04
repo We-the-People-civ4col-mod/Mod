@@ -6363,6 +6363,10 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 		{
 			CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
 
+			// Erik: Do not attempt to make peace with ourselves!
+			if (kLoopPlayer.getTeam() == getTeam())
+				continue;
+
 			if (kLoopPlayer.isAlive() && !kLoopPlayer.isNative() && !kLoopPlayer.isEurope())
 			{
 				kLoopPlayer.AI_changeAttitudeExtra(getID(), kTrait.getEuropeanAttitudeChange());
@@ -6370,7 +6374,7 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 				if (iChange > 0 && kTrait.getEuropeanAttitudeChange() > 0)
 				{
 					// R&R, ray, making peace with Animals fixed
-					if (!GC.getGameINLINE().isBarbarianPlayer(kLoopPlayer.getID())) 
+					if (!GC.getGameINLINE().isBarbarianPlayer(kLoopPlayer.getID()))
 					{
 						GET_TEAM(getTeam()).makePeace(kLoopPlayer.getTeam());
 					}
