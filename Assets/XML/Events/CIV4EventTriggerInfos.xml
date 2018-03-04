@@ -9748,7 +9748,7 @@
 				<Event>EVENT_WHALE_OIL_COOKER_1</Event>
 			</PrereqEvents>
 			<bPrereqEventPlot>1</bPrereqEventPlot>
-			<bRecurring>1</bRecurring>
+			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
 			<bGlobal>0</bGlobal>
 			<bPickPlayer>1</bPickPlayer>
