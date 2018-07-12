@@ -1124,6 +1124,15 @@ DenialTypes CvTeamAI::AI_makePeaceTrade(TeamTypes ePeaceTeam, TeamTypes eTeam) c
 		return NO_DENIAL;
 	}
 
+
+	// Erik: If the AI is fighting the revolutionary war it will not consider
+	// making peave before its kings has lost
+	
+	if (isInRevolution() && GET_TEAM(ePeaceTeam).hasEuropePlayer())
+	{
+		return DENIAL_VICTORY;
+	}
+
 	if (!canChangeWarPeace(ePeaceTeam))
 	{
 		return DENIAL_PEACE_NOT_POSSIBLE_US;
