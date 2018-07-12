@@ -1751,7 +1751,10 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 
 	if (pAttacker != NULL)
 	{
-		pDefender = pPlot->getBestDefender(NO_PLAYER, pAttacker->getOwnerINLINE(), pAttacker, false, (NO_TEAM == pAttacker->getDeclareWarUnitMove(pPlot)));
+		// Erik: In case there are units from multiple players on the target plot, we have to check if we're at war with the target player to avoid
+		// odds from the wrong unit to be displayed
+		// The old "behaviour" is still available by pressing the alt key
+		pDefender = pPlot->getBestDefender(NO_PLAYER, pAttacker->getOwnerINLINE(), pAttacker, !GC.altKey(), (NO_TEAM == pAttacker->getDeclareWarUnitMove(pPlot)));
 
 		ProfessionTypes eProfession = NO_PROFESSION;
 		if(pDefender != NULL)
