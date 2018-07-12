@@ -4587,7 +4587,6 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		break;
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
-		case YIELD_CANNONS:
 		// Previous metals are never reduced in value
 		case YIELD_SILVER:
 		case YIELD_GOLD:
@@ -4623,6 +4622,12 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_HEALTH:
 			break;
 		case YIELD_EDUCATION:
+			break;
+		case YIELD_CANNONS:
+			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
+			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
+			// without this fix) 
+			iValue = 0;
 			break;
 		default:
 			FAssert(false);
