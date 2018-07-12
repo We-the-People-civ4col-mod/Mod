@@ -2157,12 +2157,16 @@ void CvUnitAI::AI_generalMove()
 	std::vector<UnitAITypes> aeUnitAITypes;
 
 	aeUnitAITypes.clear();
-	aeUnitAITypes.push_back(UNITAI_DEFENSIVE);
+	// Erik: Do not consider defensive units
+	//aeUnitAITypes.push_back(UNITAI_DEFENSIVE);
 	aeUnitAITypes.push_back(UNITAI_OFFENSIVE);
 	aeUnitAITypes.push_back(UNITAI_COUNTER);
 
+	// Erik: These are required to get the AI to 
+	// use their great admirals
 	aeUnitAITypes.push_back(UNITAI_ASSAULT_SEA);
 	aeUnitAITypes.push_back(UNITAI_COMBAT_SEA);
+	// Erik: Let's avoid great pirates :P
 	aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
 
 	if (AI_lead(aeUnitAITypes))
