@@ -9608,6 +9608,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 			}
 		}
 
+		/* original bts code
 		if (pNewPlot->isWater())
 		{
 			for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
@@ -9631,6 +9632,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 				}
 			}
 		}
+		} */ // disabled by K-Mod. The game mechanics that this was meant to handle are no longer used. (Nothing to do with K-Mod.)
 
 		if (pNewPlot->isActiveVisible(true))
 		{
