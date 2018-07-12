@@ -247,8 +247,8 @@ protected:
 	bool AI_goody();
 	bool AI_goodyRange(int iRange);
 	
-	bool AI_isValidExplore(CvPlot* pPlot);
-	int AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly = false);
+	bool AI_isValidExplore(CvPlot* pPlot) const;
+	int AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly = false) const;
 	bool AI_explore(bool bFavorOpenBorders = false);
 	bool AI_exploreRange(int iRange);
 	bool AI_exploreFromShip(int iMaxPath);

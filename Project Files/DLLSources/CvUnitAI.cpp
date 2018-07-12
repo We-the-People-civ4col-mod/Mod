@@ -11564,7 +11564,7 @@ bool CvUnitAI::AI_goodyRange(int iRange)
 	
 }
 
-bool CvUnitAI::AI_isValidExplore(CvPlot* pPlot)
+bool CvUnitAI::AI_isValidExplore(CvPlot* pPlot) const
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	if (kOwner.getNumCities() == 0 || kOwner.AI_getNumAIUnits(AI_getUnitAIType()) > 1)
@@ -11594,7 +11594,7 @@ bool CvUnitAI::AI_isValidExplore(CvPlot* pPlot)
 	return true;
 }
 	
-int CvUnitAI::AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly)
+int CvUnitAI::AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly) const
 {
 	int iValue = 0;
 	if (pPlot->isRevealedGoody(getTeam()))
@@ -11621,6 +11621,8 @@ int CvUnitAI::AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly)
 		}
 	}
 	
+	const CvTeam& kTeam = GET_TEAM(getTeam()); // K-Mod
+
 	if (!bImportantOnly || iValue > 0)
 	{
 		for (int i = 0; i < NUM_DIRECTION_TYPES; i++)
@@ -11642,6 +11644,14 @@ int CvUnitAI::AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly)
 						iValue += 500;
 					}
 				}
+
+				// K-Mod. Try to meet teams that we have seen through map trading
+				if (pAdjacentPlot->getRevealedOwner(kTeam.getID(), false) != NO_PLAYER) // note: revealed team can be set before the plot is actually revealed.
+				{
+					if (!kTeam.isHasMet(pAdjacentPlot->getRevealedTeam(kTeam.getID(), false)))
+						iValue += 1000;
+				}
+				// K-Mod end
 			}
 		}
 	}
