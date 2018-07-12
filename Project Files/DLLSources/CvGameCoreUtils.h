@@ -234,6 +234,8 @@ DllExport ImprovementTypes finalImprovementUpgrade(ImprovementTypes eImprovement
 
 DllExport __int64 getBinomialCoefficient(int iN, int iK);
 DllExport int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender);
+int getCombatOddsDraw(CvUnit* pAttacker, CvUnit* pDefender);
+
 
 DllExport void setTradeItem(TradeData* pItem, TradeableItems eItemType, int iData1, const IDInfo* pTransport);
 

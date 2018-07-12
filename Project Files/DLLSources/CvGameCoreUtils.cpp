@@ -332,6 +332,7 @@ __int64 getBinomialCoefficient(int iN, int iK)
 	return iTemp;
 }
 
+
 // FUNCTION: getCombatOdds
 // Calculates combat odds, given two units
 // Returns value from 0-1000
@@ -377,20 +378,95 @@ int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
 	int iNeededRoundsDefender = (pAttacker->currHitPoints() + iDamageToAttacker - 1 ) / iDamageToAttacker;
 	int iMaxRounds = iNeededRoundsAttacker + iNeededRoundsDefender - 1;
 
+	// Erik: This number should be in XML!
+	int iMaxCombatRounds = 7;
 
+	int iLastCombatRound = std::min(iMaxRounds, iMaxCombatRounds);
 
 	float fOdds = 0;
-	for (int iI4 = iNeededRoundsAttacker; iI4 <= iMaxRounds; iI4++)
+
+	// Erik: I've modified this so we only compute the odds until the last round
+	for (int iI4 = iNeededRoundsAttacker; iI4 <= iLastCombatRound; iI4++)
 	{
-		// odds of exactly iI4 out of (iMaxRounds - iI3) draws.
+		// Erik: Old comment was totally wrong LOL
+		// odds of exactly iI4 out of iLastCombatRound draws.
 		// f(k;n,p)=C(n,k)*(p^k)*((1-p)^(n-k))
 		// this needs to be in floating point math
 		//////
 
-		fOdds += ((float)getBinomialCoefficient(iMaxRounds, iI4)) * pow((((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES")), iI4) * pow((1.0f - (((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES"))), (iMaxRounds - iI4));
+		fOdds += ((float)getBinomialCoefficient(iLastCombatRound, iI4)) * pow((((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES")), iI4) * pow((1.0f - (((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES"))), (iLastCombatRound - iI4));
 	}
 
 	return ((int)(1000.0 * (fOdds + 0.0005f)));
+}
+
+int getCombatOddsDraw(CvUnit* pAttacker, CvUnit* pDefender)
+{
+	// setup battle, calculate strengths and odds
+	//////
+
+
+	// Erik: TODO, Cache this variable
+	const int iCombatDieSides = GC.getDefineINT("COMBAT_DIE_SIDES");
+
+	int iAttackerStrength = pAttacker->currCombatStr(NULL, NULL);
+	int iAttackerFirepower = pAttacker->currFirepower(NULL, NULL);
+
+	int iDefenderStrength = pDefender->currCombatStr(pDefender->plot(), pAttacker);
+	int iDefenderFirepower = pDefender->currFirepower(pDefender->plot(), pAttacker);
+
+	FAssert((iAttackerStrength + iDefenderStrength) > 0);
+	FAssert((iAttackerFirepower + iDefenderFirepower) > 0);
+
+	int iDefenderOdds = ((GC.getDefineINT("COMBAT_DIE_SIDES") * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
+	if (iDefenderOdds == 0)
+	{
+		return 1000;
+	}
+	int iAttackerOdds = GC.getDefineINT("COMBAT_DIE_SIDES") - iDefenderOdds;
+	if (iAttackerOdds == 0)
+	{
+		return 0;
+	}
+
+	int iStrengthFactor = ((iAttackerFirepower + iDefenderFirepower + 1) / 2);
+
+	// calculate damage done in one round
+	//////
+
+	int iDamageToAttacker = std::max(1, ((GC.getDefineINT("COMBAT_DAMAGE") * (iDefenderFirepower + iStrengthFactor)) / (iAttackerFirepower + iStrengthFactor)));
+	int iDamageToDefender = std::max(1, ((GC.getDefineINT("COMBAT_DAMAGE") * (iAttackerFirepower + iStrengthFactor)) / (iDefenderFirepower + iStrengthFactor)));
+
+	// calculate needed rounds.
+	// Needed rounds = round_up(health/damage)
+	//////
+
+	int iNeededRoundsAttacker = (std::max(0, pDefender->currHitPoints()) + iDamageToDefender - 1) / iDamageToDefender;
+	int iNeededRoundsDefender = (pAttacker->currHitPoints() + iDamageToAttacker - 1) / iDamageToAttacker;
+
+	// Erik: This is not true anymore since the limited combat rounds feature was introduced
+	int iMaxRounds = iNeededRoundsAttacker + iNeededRoundsDefender - 1;
+
+	// Erik: This number should be in XML!
+	int iMaxCombatRounds = 7;
+
+	int iLastCombatRound = std::min(iMaxRounds, iMaxCombatRounds);
+
+	// Now we determine the chance of a draw
+	// The number of combat rounds must be equal to the combat limit (currently 7) and there cannot have been a winner
+	// during this round.
+	// The interval for draw outcomes is one less than iNeededRoundsAttacker for victory and iLastCombatRound - iNeededRoundsDefender + 1 turns for victory (Inclusive)
+	// Other outcomes need not be considered
+
+	float fDrawOdds = 0;
+
+	for (int i = (iLastCombatRound - iNeededRoundsDefender + 1); i < iNeededRoundsAttacker; i++)
+	{
+		// odds of no winner during the last round
+		fDrawOdds += ((float)getBinomialCoefficient(iLastCombatRound, i)) * pow((((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES")), i) * pow((1.0f - (((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES"))), (iLastCombatRound - i));
+	}
+
+	return ((int)(1000.0 * (fDrawOdds + 0.0005f)));
 }
 
 void setTradeItem(TradeData* pItem, TradeableItems eItemType, int iData1, const IDInfo* pTransport)
