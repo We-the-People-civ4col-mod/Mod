@@ -2693,45 +2693,83 @@ bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlre
 }
 // R&R, ray, Natives raiding party - END
 
+// Most of this function has been restructured / edited for K-Mod.
 void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUnit, bool bEndMove)
 {
-	PROFILE_FUNC();
+	//PROFILE_FUNC();
+	FAssert(!isBusy());
 
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
+	// K-Mod. Some variables to help us regroup appropriately if not everyone can move.
+	CvSelectionGroup* pStaticGroup = 0;
+	UnitAITypes eHeadAI = getHeadUnitAI();
 
-	pUnitNode = headUnitNode();
+	// Copy the list of units to move. (Units may be bumped or killed during the move process; which could mess up the group.)
+	std::vector<IDInfo> originalGroup;
 
-	while (pUnitNode != NULL)
+	if (pCombatUnit)
+		originalGroup.push_back(pCombatUnit->getIDInfo());
+
+	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		if (pCombatUnit == NULL || pUnitNode->m_data != pCombatUnit->getIDInfo())
+			originalGroup.push_back(pUnitNode->m_data);
+	}
+	FAssert(originalGroup.size() == getNumUnits());
+	// K-Mod end
 
-		if ((pLoopUnit->canMove() && ((bCombat && (!pLoopUnit->isNoCityCapture() || !pPlot->isEnemyCity(*pLoopUnit))) ? pLoopUnit->canMoveOrAttackInto(pPlot) : pLoopUnit->canMoveInto(pPlot))) || (pLoopUnit == pCombatUnit))
+	//while (pUnitNode != NULL)
+	for (std::vector<IDInfo>::iterator it = originalGroup.begin(); it != originalGroup.end(); ++it) // K-Mod
+	{
+		//CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		//pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = ::getUnit(*it);
+
+		//if ((pLoopUnit->canMove() && ((bCombat && (!(pLoopUnit->isNoCapture()) || !(pPlot->isEnemyCity(*pLoopUnit)))) ? pLoopUnit->canMoveOrAttackInto(pPlot) : pLoopUnit->canMoveInto(pPlot))) || (pLoopUnit == pCombatUnit))
+		// K-Mod
+		if (pLoopUnit == NULL)
+			continue;
+		if (pLoopUnit->canMove() && (bCombat ? pLoopUnit->canMoveOrAttackInto(pPlot) : pLoopUnit->canMoveInto(pPlot)))
 		{
 			pLoopUnit->move(pPlot, true);
 		}
 		else
 		{
+			/* original bts code
 			pLoopUnit->joinGroup(NULL, true);
-			pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
+			pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false); */
+
+			// K-Mod. all units left behind should stay in the same group. (unless it would mean a change of group AI)
+			// (Note: it is important that units left behind are not in the original group.
+			// The later code assumes that the original group has moved, and if it hasn't, there will be an infinite loop.)
+			if (pStaticGroup)
+				pLoopUnit->joinGroup(pStaticGroup, true);
+			else
+			{
+				pLoopUnit->joinGroup(0, true);
+				if (isHuman() || pLoopUnit->AI_getUnitAIType() == eHeadAI)
+					pStaticGroup = pLoopUnit->getGroup();
+				// else -- wwe could track the ungrouped units; but I don't think there's much point.
+			}
+			//
 		}
+		// K-Mod. If the unit is no longer in the original group; then display it's movement animation now.
+		if (pLoopUnit->getGroupID() != getID())
+			pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
 	}
 
-	//execute move
-	if(bEndMove || !canAllMove())
+	// Execute move animation for units still in this group.
+	if (bEndMove || !canAllMove())
 	{
-		pUnitNode = headUnitNode();
-		while(pUnitNode != NULL)
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
+		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			pUnitNode = nextUnitNode(pUnitNode);
 
 			pLoopUnit->ExecuteMove(((float)(GC.getMissionInfo(MISSION_MOVE_TO).getTime() * gDLL->getMillisecsPerTurn())) / 1000.0f, false);
 		}
 	}
 }
-
 
 // Returns true if move was made...
 bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
