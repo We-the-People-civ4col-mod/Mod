@@ -5,6 +5,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RaR", "RaR.vcxproj", "{3021
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		1 plot debug|Win32 = 1 plot debug|Win32
 		1 plot|Win32 = 1 plot|Win32
 		Assert|Win32 = Assert|Win32
 		Assert-fast|Win32 = Assert-fast|Win32
@@ -14,8 +15,10 @@ Global
 		Release-fast|Win32 = Release-fast|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.ActiveCfg = 1 plot|Win32
-		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.Build.0 = 1 plot|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot debug|Win32.ActiveCfg = 1 plot debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot debug|Win32.Build.0 = 1 plot debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.ActiveCfg = 1 plot debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.Build.0 = 1 plot debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Win32.ActiveCfg = Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Win32.Build.0 = Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert-fast|Win32.ActiveCfg = Assert-fast|Win32
