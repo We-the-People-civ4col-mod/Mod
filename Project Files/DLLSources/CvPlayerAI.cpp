@@ -3629,7 +3629,6 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 	int iGoldWeight;
 	int iWeight;
 	int iBestWeight;
-	int iValue;
 	int iBestValue;
 
 	bTheirGoldDeal = AI_goldDeal(pTheirList);
@@ -3745,7 +3744,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 								if (iWeight > 0)
 								{
-									iValue = AI_targetCityValue(pCity, false);
+									const int iValue = AI_targetCityValue(pCity, false);
 
 									if (iValue > iBestValue)
 									{
@@ -3896,7 +3895,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 								if (iWeight > 0)
 								{
-									iValue = GET_PLAYER(ePlayer).AI_targetCityValue(pCity, false);
+									const int iValue = GET_PLAYER(ePlayer).AI_targetCityValue(pCity, false);
 
 									if (iValue > iBestValue)
 									{

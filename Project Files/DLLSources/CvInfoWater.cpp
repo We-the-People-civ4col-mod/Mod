@@ -29,10 +29,12 @@
 //  PURPOSE :   Default constructor
 //
 //------------------------------------------------------------------------------------------------------
-CvWaterPlaneInfo::CvWaterPlaneInfo()
-{
-
-}
+CvWaterPlaneInfo::CvWaterPlaneInfo() :
+	m_fMaterialAlpha(0.0f),
+	m_BaseTextureScale(0.0f),
+	m_fURate(0.0f),
+	m_fVRate(0.0f)
+{};
 
 //------------------------------------------------------------------------------------------------------
 //
@@ -121,9 +123,19 @@ bool CvWaterPlaneInfo::read(CvXMLLoadUtility* pXML)
 //  PURPOSE :   Default constructor
 //
 //------------------------------------------------------------------------------------------------------
-CvTerrainPlaneInfo::CvTerrainPlaneInfo()
-{
+CvTerrainPlaneInfo::CvTerrainPlaneInfo() :
 
+	m_bGroundPlane(false),
+	m_fMaterialAlpha(0.0f),
+	m_fCloseAlpha(0.0f),
+	m_BaseTextureScaleU(0.0f),
+	m_BaseTextureScaleV(0.0f),
+	m_fURate(0.0f),
+	m_fVRate(0.0f),
+	m_fZHeight(0.0f),
+	m_eFogType(FOG_TYPE_NONE),
+	m_bCitySelection(false)
+{	
 }
 
 //------------------------------------------------------------------------------------------------------
@@ -251,9 +263,10 @@ bool CvTerrainPlaneInfo::read(CvXMLLoadUtility* pXML)
 //  PURPOSE :   Default constructor
 //
 //------------------------------------------------------------------------------------------------------
-CvCameraOverlayInfo::CvCameraOverlayInfo()
+CvCameraOverlayInfo::CvCameraOverlayInfo() :
+	m_bVisible(false),
+	m_eCameraOverlayType(CAMERA_OVERLAY_DECAL)
 {
-
 }
 
 //------------------------------------------------------------------------------------------------------

@@ -328,7 +328,7 @@ void CvReplayInfo::addReplayMessage(CvReplayMessage* pMessage)
 
 void CvReplayInfo::clearReplayMessageMap()
 {
-	for (ReplayMessageList::const_iterator itList = m_listReplayMessages.begin(); itList != m_listReplayMessages.end(); itList++)
+	for (ReplayMessageList::const_iterator itList = m_listReplayMessages.begin(); itList != m_listReplayMessages.end(); ++itList)
 	{
 		const CvReplayMessage* pMessage = *itList;
 		if (NULL != pMessage)

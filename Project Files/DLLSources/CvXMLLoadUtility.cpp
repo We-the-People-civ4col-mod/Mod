@@ -129,10 +129,10 @@ void CvXMLLoadUtility::ResetGlobalEffectInfo()
 //------------------------------------------------------------------------------------------------------
 void CvXMLLoadUtility::MakeMaskFromString(unsigned int *puiMask, char* szMask)
 {
-	int i;	// loop counter
+	const int iLength = (int)strlen(szMask);
 
 	// loop through each character in the szMask parameter
-	for (i=0;i<(int)strlen(szMask);i++)
+	for (int i = 0; i<iLength; i++) 
 	{
 		// if the current character in the string is a zero
 		if (szMask[i] == '0')

@@ -8009,11 +8009,11 @@ void CvPlot::doCulture()
 {
 	PROFILE_FUNC();
 		
-	CvCity* pCity;	
+	//CvCity* pCity;	
 	CvWString szBuffer;
 	PlayerTypes eCulturalOwner;
-	int iGarrison;
-	int iCityStrength;
+	//int iGarrison;
+	//int iCityStrength;
 		
 	doImprovementCulture();
 
@@ -8858,7 +8858,7 @@ int CvPlot::calculateMaxYield(YieldTypes eYield) const
 	}
 
 	int iExtraYieldThreshold = 0;
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); iTrait++)
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 	{
 		CvTraitInfo& trait = GC.getTraitInfo((TraitTypes)iTrait);
 		iExtraYieldThreshold  = std::max(trait.getExtraYieldThreshold(eYield), iExtraYieldThreshold);

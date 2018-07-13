@@ -112,7 +112,7 @@ inline void FVariableSystem::UnInit()
 	{
 		pkVariable = (FVariable*)iIterator->second;
 		if ( pkVariable != NULL ) delete pkVariable;
-		iIterator++;
+		++iIterator;
 	}
 	m_mapVariableMap.clear ();
 }
@@ -183,7 +183,7 @@ inline void FVariableSystem::Write(FDataStreamBase *pStream) const
 		pkVariable->Write(pStream);
 
 		iNumWritten++;
-		iIterator++;
+		++iIterator;
 	}
 
 	assert(iNumWritten==iSize);
@@ -803,7 +803,7 @@ inline std::string FVariableSystem::GetFirstVariableName( )
 inline std::string FVariableSystem::GetNextVariableName( )
 {
 	if ( m_iVariableIterator != m_mapVariableMap.end())
-		m_iVariableIterator++;
+		++m_iVariableIterator;
 
 	if ( m_iVariableIterator != m_mapVariableMap.end())
 		return (*m_iVariableIterator).first;

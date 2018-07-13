@@ -7217,7 +7217,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 {
 	if (eUnit == NO_UNIT)
 	{
-		return false;
+		return NULL;
 	}
 
 	CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
@@ -7225,17 +7225,17 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 
 	if (GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(kUnitInfo.getUnitClassType()) != eUnit)
 	{
-		return false;
+		return NULL;
 	}
 
 	if (!upgradeAvailable(getUnitType(), ((UnitClassTypes)(kUnitInfo.getUnitClassType()))))
 	{
-		return false;
+		return NULL;
 	}
 
 	if (kUnitInfo.getCargoSpace() < getCargo())
 	{
-		return false;
+		return NULL;
 	}
 
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
@@ -7250,7 +7250,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 			{
 				if (kUnitInfo.getSpecialCargo() != pLoopUnit->getSpecialUnitType())
 				{
-					return false;
+					return NULL;
 				}
 			}
 
@@ -7258,7 +7258,7 @@ CvCity* CvUnit::getUpgradeCity(UnitTypes eUnit, bool bSearch, int* iSearchValue)
 			{
 				if (kUnitInfo.getDomainCargo() != pLoopUnit->getDomainType())
 				{
-					return false;
+					return NULL;
 				}
 			}
 		}
@@ -13295,7 +13295,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 				{
 					bool bFound = false;
 					const CvPopupQueue& kPopups = GET_PLAYER(getOwnerINLINE()).getPopups();
-					for (CvPopupQueue::const_iterator it = kPopups.begin(); it != kPopups.end(); it++)
+					for (CvPopupQueue::const_iterator it = kPopups.begin(); it != kPopups.end(); ++it)
 					{
 						CvPopupInfo* pInfo = *it;
 						if (NULL != pInfo)
@@ -13324,7 +13324,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 				{
 					bool bFound = false;
 					const CvPopupQueue& kPopups = GET_PLAYER(getOwnerINLINE()).getPopups();
-					for (CvPopupQueue::const_iterator it = kPopups.begin(); it != kPopups.end(); it++)
+					for (CvPopupQueue::const_iterator it = kPopups.begin(); it != kPopups.end(); ++it)
 					{
 						CvPopupInfo* pInfo = *it;
 						if (NULL != pInfo)
@@ -13354,7 +13354,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 				{
 					bool bFound = false;
 					const CvPopupQueue& kPopups = GET_PLAYER(getOwnerINLINE()).getPopups();
-					for (CvPopupQueue::const_iterator it = kPopups.begin(); it != kPopups.end(); it++)
+					for (CvPopupQueue::const_iterator it = kPopups.begin(); it != kPopups.end(); ++it)
 					{
 						CvPopupInfo* pInfo = *it;
 						if (NULL != pInfo)

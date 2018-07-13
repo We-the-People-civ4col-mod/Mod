@@ -5205,7 +5205,7 @@ bool CvGame::isDestroyedCityName(const CvWString& szName) const
 {
 	std::vector<CvWString>::const_iterator it;
 
-	for (it = m_aszDestroyedCities.begin(); it != m_aszDestroyedCities.end(); it++)
+	for (it = m_aszDestroyedCities.begin(); it != m_aszDestroyedCities.end(); ++it)
 	{
 		if (gDLL->getText(*it) == gDLL->getText(szName))
 		{
@@ -5225,7 +5225,7 @@ bool CvGame::isGreatGeneralBorn(CvWString& szName) const
 {
 	std::vector<CvWString>::const_iterator it;
 
-	for (it = m_aszGreatGeneralBorn.begin(); it != m_aszGreatGeneralBorn.end(); it++)
+	for (it = m_aszGreatGeneralBorn.begin(); it != m_aszGreatGeneralBorn.end(); ++it)
 	{
 		if (*it == szName)
 		{
@@ -5246,7 +5246,7 @@ bool CvGame::isGreatAdmiralBorn(CvWString& szName) const
 {
 	std::vector<CvWString>::const_iterator it;
 
-	for (it = m_aszGreatAdmiralBorn.begin(); it != m_aszGreatAdmiralBorn.end(); it++)
+	for (it = m_aszGreatAdmiralBorn.begin(); it != m_aszGreatAdmiralBorn.end(); ++it)
 	{
 		if (*it == szName)
 		{
@@ -5350,7 +5350,7 @@ bool CvGame::isShipNamed(CvWString& szName) const
 {
 	std::vector<CvWString>::const_iterator it;
 
-	for (it = m_aszShipNamed.begin(); it != m_aszShipNamed.end(); it++)
+	for (it = m_aszShipNamed.begin(); it != m_aszShipNamed.end(); ++it)
 	{
 		if (*it == szName)
 		{
@@ -6663,7 +6663,7 @@ void CvGame::addReplayMessage(ReplayMessageTypes eType, PlayerTypes ePlayer, CvW
 
 void CvGame::clearReplayMessageMap()
 {
-	for (ReplayMessageList::const_iterator itList = m_listReplayMessages.begin(); itList != m_listReplayMessages.end(); itList++)
+	for (ReplayMessageList::const_iterator itList = m_listReplayMessages.begin(); itList != m_listReplayMessages.end(); ++itList)
 	{
 		const CvReplayMessage* pMessage = *itList;
 		if (NULL != pMessage)
@@ -7062,20 +7062,20 @@ void CvGame::write(FDataStreamBase* pStream)
 		std::vector<CvWString>::iterator it;
 
 		pStream->Write(m_aszDestroyedCities.size());
-		for (it = m_aszDestroyedCities.begin(); it != m_aszDestroyedCities.end(); it++)
+		for (it = m_aszDestroyedCities.begin(); it != m_aszDestroyedCities.end(); ++it)
 		{
 			pStream->WriteString(*it);
 		}
 
 		pStream->Write(m_aszGreatGeneralBorn.size());
-		for (it = m_aszGreatGeneralBorn.begin(); it != m_aszGreatGeneralBorn.end(); it++)
+		for (it = m_aszGreatGeneralBorn.begin(); it != m_aszGreatGeneralBorn.end(); ++it)
 		{
 			pStream->WriteString(*it);
 		}
 
 		// R&R, ray, Great Admirals - START
 		pStream->Write(m_aszGreatAdmiralBorn.size());
-		for (it = m_aszGreatAdmiralBorn.begin(); it != m_aszGreatAdmiralBorn.end(); it++)
+		for (it = m_aszGreatAdmiralBorn.begin(); it != m_aszGreatAdmiralBorn.end(); ++it)
 		{
 			pStream->WriteString(*it);
 		}
@@ -7083,7 +7083,7 @@ void CvGame::write(FDataStreamBase* pStream)
 
 		// TAC - Ship Names - Ray - Start
 		pStream->Write(m_aszShipNamed.size());
-		for (it = m_aszShipNamed.begin(); it != m_aszShipNamed.end(); it++)
+		for (it = m_aszShipNamed.begin(); it != m_aszShipNamed.end(); ++it)
 		{
 			pStream->WriteString(*it);
 		}
@@ -7098,7 +7098,7 @@ void CvGame::write(FDataStreamBase* pStream)
 	ReplayMessageList::_Alloc::size_type iSize = m_listReplayMessages.size();
 	pStream->Write(iSize);
 	ReplayMessageList::const_iterator it;
-	for (it = m_listReplayMessages.begin(); it != m_listReplayMessages.end(); it++)
+	for (it = m_listReplayMessages.begin(); it != m_listReplayMessages.end(); ++it)
 	{
 		const CvReplayMessage* pMessage = *it;
 		if (NULL != pMessage)

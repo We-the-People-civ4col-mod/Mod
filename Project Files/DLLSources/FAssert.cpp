@@ -63,7 +63,7 @@ namespace
 
 				sprintf( g_AssertText, "Assert Failed\r\n\r\n"
 					"File:  %s\r\n"
-					"Line:  %d\r\n"
+					"Line:  %u\r\n"
 					"Expression:  %s\r\n"
 					"Message:  %s\r\n"
 					"\r\n"
