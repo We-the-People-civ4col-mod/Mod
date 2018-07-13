@@ -9427,6 +9427,7 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 	if (pCity != NULL)
 	{
 		int iStored = pCity->getYieldStored(eYield);
+	
 		int iMaxCapacity = (eYield == YIELD_FOOD) ? pCity->growthThreshold() : pCity->getMaxYieldCapacity();
 		// transport feeder - start - Nightinggale
 		//int iMaintainLevel = pCity->getMaintainLevel(eYield);
@@ -9494,6 +9495,8 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 				iTotalStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
 //VET NewCapacity - end 6/8
 				iStored += (pCity->AI_getTransitYield(eYield) * 75) / 100;
+				// Erik: Adding this since I suspect a bug may cause this variable to be negative
+				FAssertMsg(iStored >= 0, "iStored expected to be >= 0");
 			}
 
 			iValue = iAmount * 100;
@@ -9553,7 +9556,8 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			int iProductionNeeded = pCity->getProductionNeeded(eYield);
 			// production cache - end - Nightinggale
 
-			if (iStored < iProductionNeeded)
+			// Erik: Production needed can be 0, so we have to deal with it to avoid dividing by zero
+			if (iStored < iProductionNeeded && iProductionNeeded > 0)
 			{
 				iValue *= 150 + 100 * (iProductionNeeded - iStored) / iProductionNeeded;
 				iValue /= 100;
