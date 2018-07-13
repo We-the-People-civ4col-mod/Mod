@@ -15878,6 +15878,8 @@ bool CvPlayerAI::AI_needsProtection(UnitAITypes eUnitAI) const
 		{
 			case UNITAI_TRANSPORT_SEA:
 			case UNITAI_TRANSPORT_COAST:
+				// Erik: Return value was removed by accident, sorry!
+				return true;
 				break;
 
 			default:
