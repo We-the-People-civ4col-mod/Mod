@@ -6095,24 +6095,39 @@ bool CvUnit::pillage()
 		if (pPlot->getTeam() != getTeam())
 		{
 			// Use python to determine pillage amounts...
-			lPillageGold = 0;
+			//lPillageGold = 0;
+			lPillageGold = -1; // K-Mod
 
-			CyPlot* pyPlot = new CyPlot(pPlot);
-			CyUnit* pyUnit = new CyUnit(this);
+			if (GC.getUSE_DO_PILLAGE_GOLD_CALLBACK()) // K-Mod. I've writen C to replace the python callback.
+			{
+				CyPlot* pyPlot = new CyPlot(pPlot);
+				CyUnit* pyUnit = new CyUnit(this);
 
-			CyArgsList argsList;
-			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in plot class
-			argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
+				CyArgsList argsList;
+				argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in plot class
+				argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
 
-			gDLL->getPythonIFace()->callFunction(PYGameModule, "doPillageGold", argsList.makeFunctionArgs(),&lPillageGold);
+				gDLL->getPythonIFace()->callFunction(PYGameModule, "doPillageGold", argsList.makeFunctionArgs(),&lPillageGold);
 
-			delete pyPlot;	// python fxn must not hold on to this pointer
-			delete pyUnit;	// python fxn must not hold on to this pointer
+				delete pyPlot;	// python fxn must not hold on to this pointer
+				delete pyUnit;	// python fxn must not hold on to this pointer
 
 			
-			lPillageGold *= iGrowthPercent;
-			lPillageGold /= 100;
-			iPillageGold = (int)lPillageGold;
+				lPillageGold *= iGrowthPercent;
+				lPillageGold /= 100;
+				iPillageGold = (int)lPillageGold;
+			}
+			// K-Mod. C version of the original python code
+			if (lPillageGold < 0)
+			{
+				int iPillageBase = GC.getImprovementInfo((ImprovementTypes)pPlot->getImprovementType()).getPillageGold();
+				iPillageGold = 0;
+				iPillageGold += GC.getGameINLINE().getSorenRandNum(iPillageBase, "Pillage Gold 1");
+				iPillageGold += GC.getGameINLINE().getSorenRandNum(iPillageBase, "Pillage Gold 2");
+				iPillageGold += getPillageChange() * iPillageGold / 100;
+			}
+			// K-Mod end
+
 			if (iPillageGold > 0)
 			{
 				GET_PLAYER(getOwnerINLINE()).changeGold(iPillageGold);
@@ -8424,22 +8439,37 @@ int CvUnit::fortifyModifier() const
 
 int CvUnit::experienceNeeded() const
 {
-	// Use python to determine pillage amounts...
-	int iExperienceNeeded;
-	long lExperienceNeeded;
+	if (GC.getUSE_GET_EXPERIENCE_NEEDED_CALLBACK()) // K-Mod. I've writen C to replace the python callback.
+	{
 
-	lExperienceNeeded = 0;
-	iExperienceNeeded = 0;
+		// Use python to determine pillage amounts...
+		int iExperienceNeeded;
+		long lExperienceNeeded;
 
-	CyArgsList argsList;
-	argsList.add(getLevel());	// pass in the units level
-	argsList.add(getOwner());	// pass in the units
+		lExperienceNeeded = 0;
+		iExperienceNeeded = 0;
 
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "getExperienceNeeded", argsList.makeFunctionArgs(),&lExperienceNeeded);
+		CyArgsList argsList;
+		argsList.add(getLevel());	// pass in the units level
+		argsList.add(getOwner());	// pass in the units
 
-	iExperienceNeeded = (int)lExperienceNeeded;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "getExperienceNeeded", argsList.makeFunctionArgs(), &lExperienceNeeded);
+
+		iExperienceNeeded = (int)lExperienceNeeded;
+
+		return iExperienceNeeded;
+	}
+	// K-Mod. C version of the original python code.
+	// Note: python rounds towards negative infinity, but C++ rounds towards 0.
+	// So the code needs to be slightly different to achieve the same effect.
+	int iExperienceNeeded = getLevel() * getLevel() + 1;
+
+	int iModifier = GET_PLAYER(getOwnerINLINE()).getLevelExperienceModifier();
+	if (iModifier != 0)
+		iExperienceNeeded = (iExperienceNeeded * (100 + iModifier) + 99) / 100;
 
 	return iExperienceNeeded;
+	// K-Mod end
 }
 
 

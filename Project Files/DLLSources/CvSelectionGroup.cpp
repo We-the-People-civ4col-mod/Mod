@@ -2642,20 +2642,22 @@ bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlre
 
 						bAttack = true;
 
-						CySelectionGroup* pyGroup = new CySelectionGroup(this);
-						CyPlot* pyPlot = new CyPlot(pDestPlot);
-						CyArgsList argsList;
-						argsList.add(gDLL->getPythonIFace()->makePythonObject(pyGroup));	// pass in Selection Group class
-						argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in Plot class
-						long lResult = 0;
-						gDLL->getPythonIFace()->callFunction(PYGameModule, "doCombat", argsList.makeFunctionArgs(), &lResult);
-						delete pyGroup;	// python fxn must not hold on to this pointer
-						delete pyPlot;	// python fxn must not hold on to this pointer
-						if (lResult == 1)
+						if (GC.getUSE_DO_COMBAT_CALLBACK()) // K-Mod. block unused python callbacks
 						{
-							break;
+							CySelectionGroup* pyGroup = new CySelectionGroup(this);
+							CyPlot* pyPlot = new CyPlot(pDestPlot);
+							CyArgsList argsList;
+							argsList.add(gDLL->getPythonIFace()->makePythonObject(pyGroup));	// pass in Selection Group class
+							argsList.add(gDLL->getPythonIFace()->makePythonObject(pyPlot));	// pass in Plot class
+							long lResult = 0;
+							gDLL->getPythonIFace()->callFunction(PYGameModule, "doCombat", argsList.makeFunctionArgs(), &lResult);
+							delete pyGroup;	// python fxn must not hold on to this pointer
+							delete pyPlot;	// python fxn must not hold on to this pointer
+							if (lResult == 1)
+							{
+								break;
+							}
 						}
-
 						if (getNumUnits() > 1)
 						{
 							if (pBestAttackUnit->plot()->isFighting() || pDestPlot->isFighting())

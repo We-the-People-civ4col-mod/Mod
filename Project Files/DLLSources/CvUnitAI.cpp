@@ -88,17 +88,21 @@ bool CvUnitAI::AI_update()
 	getGroup()->resetPath();
 
 	// allow python to handle it
-	CyUnit* pyUnit = new CyUnit(this);
-	CyArgsList argsList;
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_unitUpdate", argsList.makeFunctionArgs(), &lResult);
-	delete pyUnit;	// python fxn must not hold on to this pointer
-	if (lResult == 1)
-	{
-		return false;
+	if (GC.getUSE_AI_UNIT_UPDATE_CALLBACK()) // K-Mod. block unused python callbacks
+	{ 
+		// allow python to handle it
+		CyUnit* pyUnit = new CyUnit(this);
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
+		long lResult=0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_unitUpdate", argsList.makeFunctionArgs(), &lResult);
+		delete pyUnit;	// python fxn must not hold on to this pointer
+		if (lResult == 1)
+		{
+			return false;
+		}
 	}
-	
+
 	if (getUnitTravelState() != NO_UNIT_TRAVEL_STATE)
 	{
 		AI_europeUpdate();

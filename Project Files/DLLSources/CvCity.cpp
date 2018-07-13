@@ -6737,15 +6737,18 @@ void CvCity::doGrowth()
 {
 	int iDiff;
 
-	CyCity* pyCity = new CyCity(this);
-	CyArgsList argsList;
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "doGrowth", argsList.makeFunctionArgs(), &lResult);
-	delete pyCity;	// python fxn must not hold on to this pointer
-	if (lResult == 1)
-	{
-		return;
+	if (GC.getUSE_DO_GROWTH_CALLBACK()) // K-Mod. block unused python callbacks
+	{		
+		CyCity* pyCity = new CyCity(this);
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
+		long lResult=0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "doGrowth", argsList.makeFunctionArgs(), &lResult);
+		delete pyCity;	// python fxn must not hold on to this pointer
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	iDiff = foodDifference();
@@ -7069,17 +7072,19 @@ void CvCity::doYields()
 }
 void CvCity::doCulture()
 {
-	CyCity* pyCity = new CyCity(this);
-	CyArgsList argsList;
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "doCulture", argsList.makeFunctionArgs(), &lResult);
-	delete pyCity;	// python fxn must not hold on to this pointer
-	if (lResult == 1)
+	if (GC.getUSE_DO_CULTURE_CALLBACK()) // K-Mod. block unused python callbacks
 	{
-		return;
+		CyCity* pyCity = new CyCity(this);
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
+		long lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "doCulture", argsList.makeFunctionArgs(), &lResult);
+		delete pyCity;	// python fxn must not hold on to this pointer
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
-
 	changeCulture(getOwnerINLINE(), getCultureRate(), false);
 }
 
@@ -7091,18 +7096,21 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 	int iCultureRange;
 	CultureLevelTypes eCultureLevel = (CultureLevelTypes)0;
 
-	CyCity* pyCity = new CyCity(this);
-	CyArgsList argsList;
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-	argsList.add(bUpdate);
-	argsList.add(ePlayer);
-	argsList.add(iCultureRate);
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "doPlotCulture", argsList.makeFunctionArgs(), &lResult);
-	delete pyCity;	// python fxn must not hold on to this pointer
-	if (lResult == 1)
+	if (GC.getUSE_DO_PLOT_CULTURE_CALLBACK()) // K-Mod. block unused python callbacks
 	{
-		return;
+		CyCity* pyCity = new CyCity(this);
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
+		argsList.add(bUpdate);
+		argsList.add(ePlayer);
+		argsList.add(iCultureRate);
+		long lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "doPlotCulture", argsList.makeFunctionArgs(), &lResult);
+		delete pyCity;	// python fxn must not hold on to this pointer
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	FAssert(NO_PLAYER != ePlayer);
@@ -7270,15 +7278,18 @@ void CvCity::doCheat(bool bAlt, bool bShift, bool bCtrl)
 
 void CvCity::doProduction(bool bAllowNoProduction)
 {
-	CyCity* pyCity = new CyCity(this);
-	CyArgsList argsList;
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "doProduction", argsList.makeFunctionArgs(), &lResult);
-	delete pyCity;	// python fxn must not hold on to this pointer
-	if (lResult == 1)
+	if (GC.getUSE_DO_PRODUCTION_CALLBACK()) // K-Mod. block unused python callbacks
 	{
-		return;
+		CyCity* pyCity = new CyCity(this);
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
+		long lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "doProduction", argsList.makeFunctionArgs(), &lResult);
+		delete pyCity;	// python fxn must not hold on to this pointer
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	if (!isHuman() || isProductionAutomated())

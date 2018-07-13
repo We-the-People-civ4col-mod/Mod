@@ -2484,14 +2484,17 @@ void CvTeamAI::AI_doWar()
 
 	FAssert(!isHuman());
 
-	// allow python to handle it
-	CyArgsList argsList;
-	argsList.add(getID());
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_doWar", argsList.makeFunctionArgs(), &lResult);
-	if (lResult == 1)
-	{
-		return;
+	if (GC.getUSE_AI_DO_WAR_CALLBACK()) // K-Mod. block unused python callbacks
+	{ 
+		// allow python to handle it
+		CyArgsList argsList;
+		argsList.add(getID());
+		long lResult=0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_doWar", argsList.makeFunctionArgs(), &lResult);
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	for (iI = 0; iI < MAX_TEAMS; iI++)

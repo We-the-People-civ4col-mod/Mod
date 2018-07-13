@@ -442,16 +442,19 @@ void CvCityAI::AI_chooseProduction()
 	// only clear the dirty bit if we actually do a check, multiple items might be queued
 	AI_setChooseProductionDirty(false);
 
-	// allow python to handle it
-	CyCity* pyCity = new CyCity(this);
-	CyArgsList argsList;
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_chooseProduction", argsList.makeFunctionArgs(), &lResult);
-	delete pyCity;	// python fxn must not hold on to this pointer
-	if (lResult == 1)
+	if (GC.getUSE_AI_CHOOSE_PRODUCTION_CALLBACK()) // K-Mod. block unused python callbacks
 	{
-		return;
+		// allow python to handle it
+		CyCity* pyCity = new CyCity(this);
+		CyArgsList argsList;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
+		long lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_chooseProduction", argsList.makeFunctionArgs(), &lResult);
+		delete pyCity;	// python fxn must not hold on to this pointer
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	CvArea* pArea = area();

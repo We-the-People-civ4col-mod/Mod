@@ -6720,14 +6720,17 @@ void CvPlayerAI::AI_doDiplo()
 
 	FAssert(!isHuman());
 
-	// allow python to handle it
-	CyArgsList argsList;
-	argsList.add(getID());
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_doDiplo", argsList.makeFunctionArgs(), &lResult);
-	if (lResult == 1)
+	if (GC.getUSE_AI_DO_DIPLO_CALLBACK()) // K-Mod. block unused python callbacks
 	{
-		return;
+		// allow python to handle it
+		CyArgsList argsList;
+		argsList.add(getID());
+		long lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "AI_doDiplo", argsList.makeFunctionArgs(), &lResult);
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	// R&R, ray, the Church - START
@@ -13156,8 +13159,13 @@ void CvPlayerAI::AI_doStrategy()
 
 					if (iValue > 125)
 					{
+						// We have to take into account the determined trait, promotions, bonus vs. the king, ability to
+						// keep producing troops / weapons etc. The AI can probably declare with a significantly smaller army than the king and still win.
 						if (getEuropeMilitary() < NBMOD_GetColonialMilitaryValue())
 						{
+							// Erik: This is wrong, if we have any plans, just cancel them and declare instead.
+							// it's too late to try to conquer someone. If we're are war with indians we can
+							// just choose a civic that gives instant peace.				
 							bool bAtWar = (GET_TEAM(getTeam()).getAnyWarPlanCount() > 0);
 							if (!bAtWar)
 							{

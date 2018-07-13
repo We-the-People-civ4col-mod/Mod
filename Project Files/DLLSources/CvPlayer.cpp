@@ -1441,6 +1441,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		CyArgsList argsList;
 		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyOldCity));	// pass in plot class
 
+		// Erik: Cannot be blocked since its only implemented in python
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "doCityCaptureGold", argsList.makeFunctionArgs(),&lCaptureGold);
 		delete pyOldCity;	// python fxn must not hold on to this pointer
 

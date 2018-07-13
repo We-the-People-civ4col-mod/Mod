@@ -1334,6 +1334,20 @@ protected:
 	int m_iUSE_ON_UPDATE_CALLBACK;
 	int m_iUSE_ON_UNIT_CREATED_CALLBACK;
 	int m_iUSE_ON_UNIT_LOST_CALLBACK;
+	
+	// K-Mod \ RaR
+	bool m_bUSE_AI_UNIT_UPDATE_CALLBACK;
+	bool m_bUSE_AI_DO_DIPLO_CALLBACK;
+	bool m_bUSE_AI_DO_WAR_CALLBACK;
+	bool m_bUSE_DO_GROWTH_CALLBACK;
+	bool m_bUSE_DO_CULTURE_CALLBACK;
+	bool m_bUSE_DO_PLOT_CULTURE_CALLBACK;
+	bool m_bUSE_DO_PRODUCTION_CALLBACK;	
+	bool m_bUSE_AI_CHOOSE_PRODUCTION_CALLBACK;
+	bool m_bUSE_DO_PILLAGE_GOLD_CALLBACK;
+	bool m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK;
+	bool m_bUSE_DO_COMBAT_CALLBACK;
+	// K-Mod \ RaR end
 
 	// DLL interface
 	CvDLLUtilityIFaceBase* m_pDLL;
@@ -1350,6 +1364,18 @@ protected:
 		inline bool ctrlKey() { return (GetKeyState(VK_CONTROL) & 0x8000); }
 		inline bool shiftKey() { return (GetKeyState(VK_SHIFT) & 0x8000); }
 		// NOTE: I've replaced all calls to the gDLL key functions with calls to these functions.
+
+		inline bool getUSE_AI_UNIT_UPDATE_CALLBACK() { return m_bUSE_AI_UNIT_UPDATE_CALLBACK; }
+		inline bool getUSE_AI_DO_DIPLO_CALLBACK() { return m_bUSE_AI_DO_DIPLO_CALLBACK; }
+		inline bool getUSE_AI_DO_WAR_CALLBACK() { return m_bUSE_AI_DO_WAR_CALLBACK; }		
+		inline bool getUSE_DO_GROWTH_CALLBACK() { return m_bUSE_DO_GROWTH_CALLBACK; }
+		inline bool getUSE_DO_CULTURE_CALLBACK() { return m_bUSE_DO_CULTURE_CALLBACK; }
+		inline bool getUSE_DO_PLOT_CULTURE_CALLBACK() { return m_bUSE_DO_PLOT_CULTURE_CALLBACK; }
+		inline bool getUSE_DO_PRODUCTION_CALLBACK() { return m_bUSE_DO_PRODUCTION_CALLBACK; }		
+		inline bool getUSE_AI_CHOOSE_PRODUCTION_CALLBACK() { return m_bUSE_AI_CHOOSE_PRODUCTION_CALLBACK; }
+		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
+		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
+		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
 };
 
 extern CvGlobals gGlobals;	// for debugging
