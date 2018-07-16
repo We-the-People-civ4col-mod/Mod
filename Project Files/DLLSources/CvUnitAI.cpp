@@ -18872,6 +18872,13 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 		return false;
 	}
 
+	// Erik: Leaders and highly promoted units are better off as dedicated military units
+	// and should not work inside a city
+	if (isProfessionalMilitary())
+	{
+		return false;
+	}
+
 	return true;
 }
 

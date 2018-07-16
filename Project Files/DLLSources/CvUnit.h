@@ -735,6 +735,8 @@ public:
 	bool canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE) const;
 	void sailToPortRoyal(UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE);
 
+	bool isProfessionalMilitary() const;
+
 protected:
 
 	int m_iID;

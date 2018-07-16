@@ -10839,7 +10839,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 
 		case UNITAI_TRANSPORT_COAST:
 			{
-				const int iNeeded = countNumCoastalCities() / 2;
+				const int iNeeded = countNumCoastalCities();
 
 				if (iCount < iNeeded)
 				{
@@ -11356,11 +11356,23 @@ int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eP
 		{
 			iValue *= 100 + pUnit->cityAttackModifier();
 			iValue /= 100;
+
+			if (pUnit->isProfessionalMilitary())
+			{
+				iValue *= 200;
+				iValue /= 100;
+			}
 		}
 		else if (eUnitAI == UNITAI_DEFENSIVE)
 		{
 			iValue *= 100 + pUnit->cityDefenseModifier();
 			iValue /= 100;
+		
+			if (pUnit->isProfessionalMilitary())
+			{
+				iValue *= 200;
+				iValue /= 100;
+			}
 		}
 	}
 

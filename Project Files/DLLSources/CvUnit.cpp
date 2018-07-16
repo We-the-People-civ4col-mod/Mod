@@ -14757,3 +14757,30 @@ bool CvUnit::isPrisonerOrSlave() const
 	}
 }
 
+// Erik: Intended to by used by AI to determine if this unit should ever be considered for non-military uses.
+// Hopefully this should help prevent the AI from fielding pioneers with a GG attached!
+bool CvUnit::isProfessionalMilitary() const
+{
+	if (getUnitCombatType() == NO_UNITCOMBAT)
+	{
+		return false;
+	}
+
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+	{
+		// TODO: We need to ignore free-promotions since they should not count towards
+		// military professionals since all units will have these
+		if (isHasPromotion((PromotionTypes)iI))
+		{
+			const CvPromotionInfo& kPromotion = GC.getPromotionInfo((PromotionTypes)iI);
+
+			// We can make this more sophisticated, but for now we concentrate on GGs
+			if (kPromotion.isLeader())
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
