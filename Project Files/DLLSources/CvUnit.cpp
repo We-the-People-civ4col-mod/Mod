@@ -5789,26 +5789,38 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 
 int CvUnit::healTurns(const CvPlot* pPlot) const
 {
-	int iHeal;
-	int iTurns;
-
 	if (!isHurt())
-	{
 		return 0;
-	}
 
-	iHeal = healRate(pPlot);
+	int iHeal = healRate(pPlot);
+
+	/*************************************************************************************************/
+	/* UNOFFICIAL_PATCH                       06/02/10                           LunarMongoose       */
+	/*                                                                                               */
+	/* Bugfix                                                                                        */
+	/*************************************************************************************************/
+	// Mongoose FeatureDamageFix
+	FeatureTypes eFeature = pPlot->getFeatureType();
+	if (eFeature != NO_FEATURE)
+	{
+		iHeal -= GC.getFeatureInfo(eFeature).getTurnDamage();
+	}
+	/*************************************************************************************************/
+	/* UNOFFICIAL_PATCH                         END                                                  */
+	/*************************************************************************************************/
 
 	if (iHeal > 0)
 	{
+		/*
 		iTurns = (getDamage() / iHeal);
 
 		if ((getDamage() % iHeal) != 0)
 		{
-			iTurns++;
+		iTurns++;
 		}
 
-		return iTurns;
+		return iTurns; */
+		return (getDamage() + iHeal - 1) / iHeal; // K-Mod (same, but faster)
 	}
 	else
 	{
