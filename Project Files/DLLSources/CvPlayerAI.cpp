@@ -8644,11 +8644,14 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 			break;
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
+			return !AI_isYieldNeeded(eYield);
+			break;
+		// Erik: It does the AI little good to sell these yields
 		case YIELD_TOOLS:
 		case YIELD_BLADES:
 		case YIELD_MUSKETS:
 		case YIELD_CANNONS:
-			return !AI_isYieldNeeded(eYield);
+			return false;
 			break;
 		case YIELD_COCA_LEAVES:
 		case YIELD_SILVER:
