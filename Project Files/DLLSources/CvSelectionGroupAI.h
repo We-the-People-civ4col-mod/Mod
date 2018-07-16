@@ -7,6 +7,8 @@
 
 #include "CvSelectionGroup.h"
 
+class CvTradeRoute;
+
 class CvSelectionGroupAI : public CvSelectionGroup
 {
 
@@ -55,7 +57,7 @@ public:
 	bool AI_launchAssault(CvPlot* pTargetCityPlot = NULL);
 	void AI_groupBombard();
 
-	int AI_getYieldsLoaded(short* piYields);
+	int AI_getYieldsLoaded(short* piYields) const;
 
 	bool AI_tradeRoutes();
 
@@ -86,6 +88,7 @@ private:
 	void unloadToCity(CvCity* pCity, CvUnit* unit);
 	// R&R mod, vetiarvind, max yield import limit - end
 
+	void processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo, int>& cityValues, std::vector<CvTradeRoute*>& routes, std::vector<int>& routeValues, std::vector<bool>& yieldsDelivered, std::vector<bool>& yieldsToUnload);
 };
 
 #endif

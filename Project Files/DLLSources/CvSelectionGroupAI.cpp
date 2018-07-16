@@ -850,16 +850,12 @@ void CvSelectionGroupAI::AI_groupBombard()
 	}
 }
 
-//The return value is the amount of treasure on board.
-int CvSelectionGroupAI::AI_getYieldsLoaded(short* piYields)
+// Erik: I've changed this function to return the total amount of yields stored 
+// rather than the amount of treasure since that wast used anyway
+int CvSelectionGroupAI::AI_getYieldsLoaded(short* piYields) const
 {
-	if (piYields != NULL)
-	{
-		for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-		{
-			piYields[i] = 0;
-		}
-	}
+	FAssert(piYields != NULL);
+
 	int iAmount = 0;
 
 	CLinkList<IDInfo> unitList;
@@ -871,22 +867,38 @@ int CvSelectionGroupAI::AI_getYieldsLoaded(short* piYields)
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = unitList.next(pUnitNode);
 
+		// Should not be possible, but let's add this for safety
+		if (pLoopUnit == NULL)
+			continue;
+
 		if (pLoopUnit->getYieldStored() > 0)
 		{
-			if (pLoopUnit->getUnitInfo().isTreasure())
+			if (!pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getYield() != NO_YIELD)
 			{
+				piYields[pLoopUnit->getYield()] += pLoopUnit->getYieldStored();
 				iAmount += pLoopUnit->getYieldStored();
 			}
-			else if (pLoopUnit->getYield() != NO_YIELD)
-			{
-				if (piYields != NULL)
-				{
-					piYields[pLoopUnit->getYield()] += pLoopUnit->getYieldStored();
-				}
-			}
-		}
+		}		
 	}
+
 	return iAmount;
+}
+
+void CvSelectionGroupAI::processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo, int>& cityValues, std::vector<CvTradeRoute*>& routes, std::vector<int>& routeValues, std::vector<bool>& yieldsDelivered, std::vector<bool>& yieldsToUnload)
+{
+	routes.push_back(pRoute);
+	routeValues.push_back(0);
+
+	yieldsDelivered[pRoute->getYield()] = true;
+	CvCity* pPlotCity = plot()->getPlotCity();
+
+	if (pPlotCity != NULL && ::getCity(pRoute->getDestinationCity()) == pPlotCity)
+	{
+		yieldsToUnload[pRoute->getYield()] = true;
+	}
+
+	cityValues[pRoute->getSourceCity()] = 0;
+	cityValues[pRoute->getDestinationCity()] = 0;
 }
 
 bool CvSelectionGroupAI::AI_tradeRoutes()
@@ -972,18 +984,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				{
 					if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 					{
-						routes.push_back(pRoute);
-						routeValues.push_back(0);
-
-						yieldsDelivered[pRoute->getYield()] = true;
-
-						if (pPlotCity != NULL && ::getCity(pRoute->getDestinationCity()) == pPlotCity)
-						{
-							yieldsToUnload[pRoute->getYield()] = true;
-						}
-
-						cityValues[pRoute->getSourceCity()] = 0;
-						cityValues[pRoute->getDestinationCity()] = 0;
+						processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 					}
 				}
 			}
@@ -1005,18 +1006,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					{
 						if ((getDomainType() == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 						{
-							routes.push_back(pRoute);
-							routeValues.push_back(0);
-
-							yieldsDelivered[pRoute->getYield()] = true;
-
-							if (pPlotCity != NULL && ::getCity(pRoute->getDestinationCity()) == pPlotCity)
-							{
-								yieldsToUnload[pRoute->getYield()] = true;
-							}
-
-							cityValues[pRoute->getSourceCity()] = 0;
-							cityValues[pRoute->getDestinationCity()] = 0;
+							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 						}
 					}
 					else
@@ -1065,17 +1055,9 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	}
 
 	short aiYieldsLoaded[NUM_YIELD_TYPES];
-	AI_getYieldsLoaded(aiYieldsLoaded);
-
-	bool bNoCargo = true;
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		if (aiYieldsLoaded[i] > 0)
-		{
-			bNoCargo = false;
-			break;
-		}
-	}
+	
+	std::fill(aiYieldsLoaded, aiYieldsLoaded + NUM_YIELD_TYPES, 0);
+	bool bNoCargo = (AI_getYieldsLoaded(aiYieldsLoaded) == 0);
 
 	// R&R mod, vetiarvind, max yield import limit - start	
 	bool bIgnoreDanger = getIgnoreDangerStatus();
