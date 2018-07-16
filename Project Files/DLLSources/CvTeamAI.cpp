@@ -700,7 +700,13 @@ AttitudeTypes CvTeamAI::AI_getAttitude(TeamTypes eTeam, bool bForced) const
 	int iCount;
 	int iI, iJ;
 
-	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
+	// Erik: Sometimes we just can't help but be a bit introspective :P
+	//FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
+	// K-Mod
+	if (eTeam == getID())
+		return ATTITUDE_FRIENDLY;
+	// K-Mod end
+
 
 	iAttitude = 0;
 	iCount = 0;
