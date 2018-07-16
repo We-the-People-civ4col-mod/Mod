@@ -804,10 +804,12 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 			}
 		}
 
+		// Note: iI is a possible player on our team
 		for (iI = 0; iI < MAX_PLAYERS; iI++)
 		{
 			if (GET_PLAYER((PlayerTypes)iI).isAlive())
 			{
+				// Note: iJ  is the target of the declaration
 				for (iJ = 0; iJ < MAX_PLAYERS; iJ++)
 				{
 					if (GET_PLAYER((PlayerTypes)iJ).isAlive())
@@ -816,22 +818,28 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 						{
 							if (GET_PLAYER((PlayerTypes)iJ).getTeam() == eTeam)
 							{
+								// Set the target to remember the war declaration towards all players in the iI's team
 								GET_PLAYER((PlayerTypes)iJ).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR, 1);
 
-								// Erik: If the player declares on an European nation, add major diplo penalty with its king as well
-								// as a minor penalty with the church
+								// Check if the target has a parent (Europe)
 								if (GET_PLAYER((PlayerTypes)iJ).getParent() != NO_PLAYER)
 								{
-									GET_PLAYER(GET_PLAYER((PlayerTypes)iJ).getParent()).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR, 1);
-								}
-							}
-							else if (GET_PLAYER((PlayerTypes)iJ).getTeam() != getID())
-							{
-								if (GET_TEAM(GET_PLAYER((PlayerTypes)iJ).getTeam()).isHasMet(eTeam))
-								{
-									if (GET_TEAM(GET_PLAYER((PlayerTypes)iJ).getTeam()).AI_getAttitude(eTeam) >= ATTITUDE_PLEASED)
+									// Erik: If the player declares war on the colonies of another European nation, add a major diplo penalty 
+									// with its king as well UNLESS they are already at war
+									if (!GET_TEAM(GET_PLAYER(GET_PLAYER((PlayerTypes)iJ).getParent()).getTeam()).isAtWar(GET_PLAYER((PlayerTypes)iJ).getTeam()))
 									{
-										GET_PLAYER((PlayerTypes)iJ).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR_ON_FRIEND, 1);
+										// Set the target's king to remember the war declaration
+										GET_PLAYER(GET_PLAYER((PlayerTypes)iJ).getParent()).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR, 1);
+									}
+									else if (GET_PLAYER((PlayerTypes)iJ).getTeam() != getID())
+									{
+										if (GET_TEAM(GET_PLAYER((PlayerTypes)iJ).getTeam()).isHasMet(eTeam))
+										{
+											if (GET_TEAM(GET_PLAYER((PlayerTypes)iJ).getTeam()).AI_getAttitude(eTeam) >= ATTITUDE_PLEASED)
+											{
+												GET_PLAYER((PlayerTypes)iJ).AI_changeMemoryCount(((PlayerTypes)iI), MEMORY_DECLARED_WAR_ON_FRIEND, 1);
+											}
+										}
 									}
 								}
 							}
