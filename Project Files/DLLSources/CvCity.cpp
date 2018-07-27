@@ -1011,9 +1011,14 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 			removeExport((YieldTypes) iData1);
 		}
 
-		// R&R mod, vetiarvind, max yield import limit - start | implement Nightinggale's bit twiddling optimization				
-		setImportsLimit((YieldTypes) iData1, iData2 & 0xFFFF);
-		setMaintainLevel((YieldTypes) iData1, iData2 >> 16);
+		// R&R mod, vetiarvind, max yield import limit - start | implement Nightinggale's bit twiddling optimization
+		{
+			// see CvDLLButtonPopup::OnOkClicked() for details on how those ints are stored
+			int iMaintainLevel    =  iData2 & 1023;
+			int iImportLimitLevel =  (iData2 >> 10) & 1023;
+			setImportsLimit((YieldTypes) iData1, iImportLimitLevel);
+			setMaintainLevel((YieldTypes) iData1, iMaintainLevel);
+		}
 		// R&R mod, vetiarvind, max yield import limit - end
 
 		
@@ -10545,14 +10550,13 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 				bool bExport = isExport(eYield);
 				bool bMaintainImport = getImportsMaintain(eYield);
 				bool bAutoExport     = bAutoExportAll || isAutoExport(eYield);
-				int iLevel    = getMaintainLevel(eYield);
-				int iMaxLevel = getImportsLimit(eYield);
+				int iMaintainLevel   = getMaintainLevel(eYield);
+				int iImportLimitLevel= getImportsLimit(eYield);
 		
-				int iBuffer = (iMaxLevel << 16);
-				iBuffer |= iLevel & 0xFFFF;
-				iLevel = iBuffer;
+				int iBuffer = iMaintainLevel & 1023; // lowest 10 bits
+				iBuffer |= (iImportLimitLevel & 1023) << 10; // next 10 bits
 
-				doTask(TASK_YIELD_TRADEROUTE, iYield, iLevel, bImport, bExport, bMaintainImport, bAutoExport);
+				doTask(TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 			}
 		}
 	}

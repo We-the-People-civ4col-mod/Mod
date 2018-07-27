@@ -805,6 +805,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 	case BUTTONPOPUP_YIELD_IMPORT_EXPORT:
 		{
+			// Note: has to match code in CvCity::handleAutoTraderouteSetup
+
 			CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 			CvCity* pCity = kPlayer.getCity(info.getData1());
 			if (pCity != NULL)
@@ -814,35 +816,45 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo(eYield).isCargo())
 					{
-
 						// transport feeder - start - Nightinggale
-						bool bImport = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						bool bExport = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
-						bool bMaintainImport = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
-						bool bAutoExport     = (pPopupReturn->getCheckboxBitfield(iYield) & 0x08);
-						int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
-						
 						// R&R mod, vetiarvind, max yield import limit - start
-						if(info.getOption1()) //if we are in "condensed" mode, only consider produced and traded yields
+
+						// if yield is to be skipped, skip it before looking up data for performance reasons
+						if (info.getOption1()) //if we are in "condensed" mode, only consider produced and traded yields
 						{
 							if(!isYieldSupportedInExportPanelForCity(pCity, eYield))
 								continue;
 						}
-						int iMaxLevel = pPopupReturn->getSpinnerWidgetValue(NUM_YIELD_TYPES + iYield);
-						bool bImportsLimitChanged = iMaxLevel != pCity->getImportsLimit(eYield);
+
+						// load yield data and store in human readable variable names						
+						bool bImport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
+						bool bExport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
+						bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
+						bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(iYield) & 0x08);
+						int iMaintainLevel    =  pPopupReturn->getSpinnerWidgetValue(iYield);
+						int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(NUM_YIELD_TYPES + iYield);
 						
-						int iBuffer = (iMaxLevel << 16);
-						iBuffer |= iLevel & 0xFFFF;
-						iLevel = iBuffer;
-						
-						if (bImport != pCity->isImport(eYield) || bExport != pCity->isExport(eYield) || bMaintainImport != pCity->getImportsMaintain(eYield) || iLevel != pCity->getMaintainLevel(eYield)
+						// check if any data is different from the same data in the city
+						if (bImport != pCity->isImport(eYield)
+							|| bExport != pCity->isExport(eYield)
+							|| bMaintainImport != pCity->getImportsMaintain(eYield)
 							|| bAutoExport != pCity->isAutoExport(eYield) // auto traderoute - Nightinggale
-							|| bImportsLimitChanged) // R&R mod, vetiarvind, max yield import limit
+							|| iMaintainLevel != pCity->getMaintainLevel(eYield)
+							|| iImportLimitLevel != pCity->getImportsLimit(eYield) // R&R mod, vetiarvind, max yield import limit
+							)
 						{
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, iLevel, bImport, bExport, bMaintainImport, bAutoExport);
+							// a difference is detected. Send one network package containing everything.
+							// It's not important what changed because the update is all or nothing.
+
+							// first merge the ints values into a single int because the network package only has a single int32 available
+							// 1023 = (2^10)-1, meaning it's a 10 bit bitmask
+							int iBuffer = iMaintainLevel & 1023; // lowest 10 bits
+							iBuffer |= (iImportLimitLevel & 1023) << 10; // next 10 bits
+							// top 12 bits free
+
+							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 						}
 						// R&R mod, vetiarvind, max yield import limit - end
-						
 						// transport feeder - end - Nightinggale
 					}
 				}
@@ -3051,9 +3063,9 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 			// transport feeder - start - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getImportsLimit(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 999, 0);
 			// transport feeder - end - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getMaintainLevel(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getImportsLimit(eYield), 10, 999, 0);
 
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 
