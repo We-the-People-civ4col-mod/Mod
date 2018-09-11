@@ -847,10 +847,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 							// It's not important what changed because the update is all or nothing.
 
 							// first merge the ints values into a single int because the network package only has a single int32 available
-							// 1023 = (2^10)-1, meaning it's a 10 bit bitmask
-							int iBuffer = iMaintainLevel & 1023; // lowest 10 bits
-							iBuffer |= (iImportLimitLevel & 1023) << 10; // next 10 bits
-							// top 12 bits free
+							int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+							iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
 
 							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 						}
@@ -3063,9 +3061,9 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 			// transport feeder - start - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
 			// transport feeder - end - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getImportsLimit(eYield), 10, 999, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
 
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 

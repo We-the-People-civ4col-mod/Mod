@@ -1014,8 +1014,8 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		// R&R mod, vetiarvind, max yield import limit - start | implement Nightinggale's bit twiddling optimization
 		{
 			// see CvDLLButtonPopup::OnOkClicked() for details on how those ints are stored
-			int iMaintainLevel    =  iData2 & 1023;
-			int iImportLimitLevel =  (iData2 >> 10) & 1023;
+			int iMaintainLevel    =  iData2 & 0xFFFF;
+			int iImportLimitLevel =  (iData2 >> 16) & 0xFFFF;
 			setImportsLimit((YieldTypes) iData1, iImportLimitLevel);
 			setMaintainLevel((YieldTypes) iData1, iMaintainLevel);
 		}
@@ -10553,8 +10553,8 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 				int iMaintainLevel   = getMaintainLevel(eYield);
 				int iImportLimitLevel= getImportsLimit(eYield);
 		
-				int iBuffer = iMaintainLevel & 1023; // lowest 10 bits
-				iBuffer |= (iImportLimitLevel & 1023) << 10; // next 10 bits
+				int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+				iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
 
 				doTask(TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 			}
