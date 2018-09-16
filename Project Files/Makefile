@@ -8,10 +8,13 @@
 ####  Copyright 2010 Danny Daemonic  ####
 #########################################
 
-##
-##   MODIFIED. NO longer part of the versioned makefiles
-##
-
+###############################################################
+###############################################################
+###                                                         ###
+###   MODIFIED. NO longer part of the versioned makefiles   ###
+###                                                         ###
+###############################################################
+###############################################################
 
 
 ## User setup
@@ -261,6 +264,9 @@ build: $(Target_BIN)
 !else
 	-COPY "$(Target_BIN)" "..\2 city plot\."
 !endif
+!IF "$(TARGET)" == "Debug" || "$(TARGET)" == "Profile"
+	-COPY "$(Target_PDB)" "$(YOURMOD)\Assets\."
+!ENDIF
 
 precompile: Make_Dir Target_unfinished $(Target_PCH)
 
