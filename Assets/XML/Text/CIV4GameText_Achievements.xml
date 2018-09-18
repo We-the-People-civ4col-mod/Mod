@@ -104,7 +104,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_LANDFALL</Tag>
   <English>Found the New World</English>
-  <French>« Terre en vu ! »</French>
+  <French>Â« Terre en vu ! Â»</French>
   <German>"Land in Sicht!"</German>
   <Italian>Found the New World</Italian>
   <Spanish>Found the New World</Spanish>
@@ -112,7 +112,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_LANDFALL_HEAD</Tag>
   <English>You have discovered the New World</English>
-  <French>« Terre en vue ! »</French>
+  <French>Â« Terre en vue ! Â»</French>
   <German>Eine Neue Welt</German>
   <Italian>You have discovered the New World</Italian>
   <Spanish>You have discovered the New World</Spanish>
@@ -208,7 +208,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
   <English>You have six settlements in the New World</English>
-  <French>« Mais que recherchent ces gens chez nous ? »</French>
+  <French>Â« Mais que recherchent ces gens chez nous ? Â»</French>
   <German>Das Orakel</German>
   <Italian>You have six settlements in the New World</Italian>
   <Spanish>You have six settlements in the New World</Spanish>
@@ -216,7 +216,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_TEXT</Tag>
   <English>You have founded six settlements in the New World! The natives have fear to lose their land.[NEWLINE][NEWLINE]</English>
-  <French>C'est la question que pose un jeune chasseur indig&#232;ne au chamane de son village. Permettre &#224; quelques d&#233;sesp&#233;r&#233;s de trouver refuge est une chose, les voir conqu&#233;rir nos terres en est une autre. Ils viennent de fonder leur sixi&#232;me colonie ![NEWLINE][NEWLINE]Le chamane r&#233;pond : « Lorsque tu recueilles un b&#233;b&#233; jaguar abandonn&#233;e, n'oublie pas qu'un jour il deviendra grand. »</French>
+  <French>C'est la question que pose un jeune chasseur indig&#232;ne au chamane de son village. Permettre &#224; quelques d&#233;sesp&#233;r&#233;s de trouver refuge est une chose, les voir conqu&#233;rir nos terres en est une autre. Ils viennent de fonder leur sixi&#232;me colonie ![NEWLINE][NEWLINE]Le chamane r&#233;pond : Â« Lorsque tu recueilles un b&#233;b&#233; jaguar abandonn&#233;e, n'oublie pas qu'un jour il deviendra grand. Â»</French>
   <German>Ehrf&#252;rchtig schweigt der Rat, als der blinde Alte den Kreis betritt. Der Orakelpriester st&#252;tzt sich auf einen Stab, sein R&#252;cken ist krumm, die Stimme leise und ersch&#246;pft. "Ich habe den G&#246;ttern Eure Sorgen vorgetragen. Eure Furcht, dass der Wei&#223;e Mann sich nicht f&#252;gen will in unsere Welt. Er gr&#252;ndet ein Dorf nach dem n&#228;chsten und nimmt mehr Platz, als ihm zusteht. Ich habe den G&#246;ttern die Frage gestellt, die Euch im Herzen brennt. Sollen wir die Wei&#223;en t&#246;ten? Nun, dies ist die Antwort der G&#246;tter ..." Gespannt beugen sich die M&#228;nner vor.[NEWLINE][NEWLINE]</German>
   <Italian>You have founded six settlements in the New World! The natives have fear to lose their land.</Italian>
   <Spanish>You have founded six settlements in the New World! The natives have fear to lose their land.</Spanish>
@@ -384,7 +384,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_TEXT</Tag>
   <English>You have built your first cathedral. The Bishop has come to praise this tremendous building, the church and of course...God and to hold a ceremonial mass![NEWLINE][NEWLINE]</English>
-  <French>Le voyageur est encore &#224; plusieurs lieues de notre colonie, mais deux tours de pierre se distingue d&#233;j&#224; &#224; l'horizon. « C'est donc elle, notre Cath&#233;drale ! » lui dit son accompagnateur. « Oui », lui r&#233;pond le voyageur « Et en tant qu'&#233;v&#234;que, c'est une joie d'avoir &#233;t&#233; &#233;lu pour l'inaugurer ».</French>
+  <French>Le voyageur est encore &#224; plusieurs lieues de notre colonie, mais deux tours de pierre se distingue d&#233;j&#224; &#224; l'horizon. Â« C'est donc elle, notre Cath&#233;drale ! Â» lui dit son accompagnateur. Â« Oui Â», lui r&#233;pond le voyageur Â« Et en tant qu'&#233;v&#234;que, c'est une joie d'avoir &#233;t&#233; &#233;lu pour l'inaugurer Â».</French>
   <German>Die Gottesfurcht des Gouverneurs hat es Wirklichkeit werden lassen! Oder war es doch eher der weltliche Einfluss von Mutter Kirche? Dies werden die braven B&#252;rger wohl nie erfahren. [NEWLINE][NEWLINE]Die riesige Kathedrale jedoch... Hoch &#252;ber den D&#228;chern der Stadt strahlen ihre wei&#223;en T&#252;rme im Sonnenschein und werfen Ihre Schatten bis weit in die neue Welt hinein. Der Bischof ist gekommen, um das neue Gotteshaus mit einer Messe zu feiern und spricht bereits die ersten feierlichen Worte zu seinen Sch&#228;fchen, bevor diese, d.h. die Missionare und die Nonnen des &#246;rtlichen Klosters, wieder aufbrechen, um die Heidenkinder vom Teufel zu befreien und in den Scho&#223; der Kirche zu f&#252;hren. Die T&#252;rme der riesigen Kathedrale werden ihnen den Weg weisen...[NEWLINE][NEWLINE]</German>
   <Italian>You have built your first cathedral. The Bishop has come to praise this tremendous building, the church and of course...God and to hold a ceremonial mass![NEWLINE][NEWLINE]</Italian>
   <Spanish>You have built your first cathedral. The Bishop has come to praise this tremendous building, the church and of course...God and to hold a ceremonial mass![NEWLINE][NEWLINE]</Spanish>
@@ -457,7 +457,7 @@
   <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_TEXT</Tag>
   <English>You have built your first schoolhouse. The cornerstone of public education is laid.[NEWLINE][NEWLINE]</English>
   <French>Vous venez de construire votre premi&#232;re &#233;cole. Il s'agit des premiers fondements de votre syst&#232;me d'&#232;ducation.</French>
-  <German>"Also ne Kirch ham wa doch, also ich versteh das nich, was brauchn wa noch so´n riesen Kasten mit die ganze B&#228;nke und ner Kanzel?" Ratlos st&#252;tzt sich der vierschr&#246;tige Mann auf seine grobschl&#228;chtige Axt. "Nicht Kanzel, Katheder! Hier werde ich deinem Buben beibringen, die Heilige Schrift zu lesen. Sp&#228;ter lernt er dann alles, was es braucht, um an der rechten Stelle in der Kolonie mit Verstand anzupacken!" "Herr Pfarrer, bei allm Respekt, aba mein Jung wird Holzf&#228;ller!" "So Gott will, vielleicht besser ein brauchbarer Schmied und Werkzeugmacher. Sieh dir dein altes Beil doch an, ich erkenne nicht, auf welcher Seite die Schneide einst war!"[NEWLINE][NEWLINE]</German>
+  <German>"Also ne Kirch ham wa doch, also ich versteh das nich, was brauchn wa noch soÂ´n riesen Kasten mit die ganze B&#228;nke und ner Kanzel?" Ratlos st&#252;tzt sich der vierschr&#246;tige Mann auf seine grobschl&#228;chtige Axt. "Nicht Kanzel, Katheder! Hier werde ich deinem Buben beibringen, die Heilige Schrift zu lesen. Sp&#228;ter lernt er dann alles, was es braucht, um an der rechten Stelle in der Kolonie mit Verstand anzupacken!" "Herr Pfarrer, bei allm Respekt, aba mein Jung wird Holzf&#228;ller!" "So Gott will, vielleicht besser ein brauchbarer Schmied und Werkzeugmacher. Sieh dir dein altes Beil doch an, ich erkenne nicht, auf welcher Seite die Schneide einst war!"[NEWLINE][NEWLINE]</German>
   <Italian>You have built the first schoolhouse. The cornerstone of public education is laid.</Italian>
   <Spanish>You have built the first schoolhouse. The cornerstone of public education is laid.</Spanish>
  </TEXT> 
@@ -480,7 +480,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_TEXT</Tag>
   <English>You have built your first stockade.[NEWLINE][NEWLINE]</English>
-  <French>Une femme s'approche appeur&#233;e d'un soldat : « Mon fils est parti pourchass&#233; un poulet et ne le retrouve plus, je crains pour sa s&#233;curit&#233; ! ». « N'ayez aucune crainte », lui r&#233;pond le soldat, « avec notre nouvelle d&#233;fense, les loups n'erreront plus dans nos rues. »</French>
+  <French>Une femme s'approche appeur&#233;e d'un soldat : Â« Mon fils est parti pourchass&#233; un poulet et ne le retrouve plus, je crains pour sa s&#233;curit&#233; ! Â». Â« N'ayez aucune crainte Â», lui r&#233;pond le soldat, Â« avec notre nouvelle d&#233;fense, les loups n'erreront plus dans nos rues. Â»</French>
   <German>Ein Schatten steht pl&#246;tzlich im T&#252;rrahmen und verdeckt die Abendsonne. Die Frau erschrickt, als sie der Schatten ber&#252;hrt - doch als sie aufsieht, l&#228;chelt sie. "Guten Abend, Eheweib", brummt der Mann freundlich. "Wo steckt denn unser Kleiner?" "Spielt er denn nicht vor der T&#252;r mit den H&#252;hnern?" fragt sie zur&#252;ck und ist erneut besorgt. "Beruhige dich, Weib. Wir sind heute mit dem Verteidigungswerk fertig geworden. Kein Wolf wird mehr zwischen den H&#228;usern umherstreifen, auf der Suche nach einem Huhn. Oder etwas Gr&#246;&#223;erem."[NEWLINE][NEWLINE]</German>
   <Italian>You have built your first stockade.</Italian>
   <Spanish>You have built your first stockade.</Spanish>
@@ -552,7 +552,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_TEXT</Tag>
   <English>You have built your first great bastion.[NEWLINE][NEWLINE]</English>
-  <French>Les artisans rangent leurs outils, le pr&#234;tre apporte sa b&#233;n&#233;diction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilit&#233; de la forteresse. [NEWLINE] [NEWLINE] Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majest&#233;. [NEWLINE][NEWLINE]Au loin, alors que  le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse &#224; l'oreille : « Esp&#233;rons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises ».</French>
+  <French>Les artisans rangent leurs outils, le pr&#234;tre apporte sa b&#233;n&#233;diction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilit&#233; de la forteresse. [NEWLINE] [NEWLINE] Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majest&#233;. [NEWLINE][NEWLINE]Au loin, alors que  le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse &#224; l'oreille : Â« Esp&#233;rons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises Â».</French>
   <German>Die Handwerker legen ihre Werkzeuge beiseite, der Pfarrer segnet die Mauern, die neue Wache zieht auf und der Kommandeur spricht von der Uneinnehmbarkeit dieser Festung.[NEWLINE][NEWLINE] Hoch &#252;ber der Stadt ragt sie auf, stolz und m&#228;chtig - Die erste Gro&#223;e Bastion dieser Festung verleiht ihr ein wahrlich majest&#228;tisches Aussehen.[NEWLINE][NEWLINE] Aus der Ferne lauscht der Gouverneur den Salutsch&#252;ssen. Seine Frau meint fragend zu ihm: "Ob wir uns nun wirklich sicherer f&#252;hlen k&#246;nnen? Wird eine so gro&#223;e Festung unsere Nachbarn nicht vielleicht doch eher provozieren?"</German>
   <Italian>You have built your first great bastion.[NEWLINE][NEWLINE]</Italian>
   <Spanish>You have built your first great bastion.[NEWLINE][NEWLINE]</Spanish>
@@ -1008,7 +1008,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_TEXT</Tag>
   <English>You have won your tenth military victory.[NEWLINE][NEWLINE]</English>
-  <French>« O&#249; est le gouverneur ? », demande le messager en sueur, « J'ai un courrier de ses officiers. ». Le garde tr&#233;pigne et ne peut s'emp&#234;cher de poser la question : « Dites-moi...Nous avons gagn&#233; la bataille ? ». Le messager sourit, « Serais-je ici autrement ? ».</French>
+  <French>Â« O&#249; est le gouverneur ? Â», demande le messager en sueur, Â« J'ai un courrier de ses officiers. Â». Le garde tr&#233;pigne et ne peut s'emp&#234;cher de poser la question : Â« Dites-moi...Nous avons gagn&#233; la bataille ? Â». Le messager sourit, Â« Serais-je ici autrement ? Â».</French>
   <German>Staubig und verschwitzt ist der Bote. Er springt vom Pferd, stolpert, die Wachen k&#246;nnen ihn gerade noch st&#252;tzen. "Wo ist der Gouverneur?" keucht der junge Mann. "Ich habe eine Botschaft von seinen Offizieren." "Ich bringe dich zu ihm", sagt der Unteroffizier der Palastwache, ein graub&#228;rtiger, sehniger Alter. "Sag mir," spricht er bereits im Gehen, "haben wir das Gefecht gewonnen?" Der Bote schmunzelt. "W&#228;re ich sonst hier?" Die Mittagssonne lacht ihn an.[NEWLINE][NEWLINE]</German>
   <Italian>You have won your tenth military victory</Italian>
   <Spanish>You have won your tenth military victory</Spanish>
@@ -1296,7 +1296,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_TEXT</Tag>
   <English>"Hopefully we will reach the colony before the astern approaching storm. [NEWLINE][NEWLINE]Bosun, give order for setting the topsails immediately. Our hold is tightly filled with goods from Europe. We should not sink the profit of the lords into the sea."[NEWLINE][NEWLINE][NEWLINE]</English>
-  <French>« J'esp&#232;re que nous allons atteindre la colonie avant que la temp&#234;te ne se l&#232;ve. »[NEWLINE][NEWLINE]« Commandant, donnez l'ordre de monter les voiles hautes. Notre c&#226;le est remplie de marchandises en provenance d'Europe, nous ne pouvons nous permettre aucun risque de sombrer en mer. »[NEWLINE][NEWLINE]</French>
+  <French>Â« J'esp&#232;re que nous allons atteindre la colonie avant que la temp&#234;te ne se l&#232;ve. Â»[NEWLINE][NEWLINE]Â« Commandant, donnez l'ordre de monter les voiles hautes. Notre c&#226;le est remplie de marchandises en provenance d'Europe, nous ne pouvons nous permettre aucun risque de sombrer en mer. Â»[NEWLINE][NEWLINE]</French>
   <German>"Hoffen wir, dass wir die Kolonie noch vor dem n&#228;chsten Sturm erreichen Bootsmann, unsere Lader&#228;ume sind so gro&#223; wie eine Kiche und randvoll mit den besten Waren aus der alten Welt. Lassen Sie die Toppsegel setzen, damit wir den Profit der hohen Herren nicht doch noch im Meer versenken," meint der K&#228;pt'n zu seinem Bootsmann und blickt sorgenvoll zu der achteraus aufziehenden Wolkenbank.[NEWLINE][NEWLINE] "Aye Aye, Sir," gibt der Boostmann milde l&#228;chelnd zur&#252;ck und denkt sich 'den Profit der hohen Herren? Na, du wirst dir davon doch sicher auch eine sch&#246;ne Scheibe abschneiden Freundchen, wenn ich so an die Kisten in der Achterkaj&#252;te denke..."</German>
   <Italian>"Hopefully we will reach the colony before the astern approaching storm. [NEWLINE][NEWLINE]Bosun, give order for setting the topsails immediately. Our hold is tightly filled with goods from Europe, We should not sink the profit of the lords into the sea."[NEWLINE][NEWLINE][NEWLINE][NEWLINE]</Italian>
   <Spanish>"Hopefully we will reach the colony before the astern approaching storm. [NEWLINE][NEWLINE]Bosun, give order for setting the topsails immediately. Our hold is tightly filled with goods from Europe, We should not sink the profit of the lords into the sea."[NEWLINE][NEWLINE][NEWLINE][NEWLINE]</Spanish>
@@ -1320,7 +1320,7 @@
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP_TEXT</Tag>
   <English>"800,-" offers the city treasurer.[NEWLINE] "No, 1000,-" answers the captain of the smuggler who currently anchored inshore. "Look at this prodigious goods, what do you think where we gained them?"[NEWLINE] "Alright, 900,-, otherwise we directly could have paid the taxes instead of hiring you and your ship," argues the governor's agent. [NEWLINE]"Hurry up! Otherwise the dragoons may catch us all," shouts the militia officer nervously from the background. [NEWLINE]"Ok, deal," agrees the captain and accepts the tightly filled bag from the agent. "Let's go boys, we are in a hurry for our next apointment." </English>
-  <French>- « 800 », propose le tr&#233;sorier de la ville.[NEWLINE]- « Non 1000 », r&#233;pond le contrebandier depuis son navire qui mouille au port. « Regardez donc la qualit&#233; de nos produits, vous croyez qu'on se les est procur&#233;s comment ? »[NEWLINE]- « D'accord, 900, mais pas plus, sinon autant payer les taxes plut&#244;t que d'avoir recours &#224; vos services » explique le n&#233;gociant. [NEWLINE]- « D&#233;p&#234;chez-vous maintenant, on n'a plus le temps » intervient le milicien du port qui touche son bakchich. [NEWLINE]- « Bon, ok pour 900 », r&#233;pond le capitaine. « Allez les gars, on d&#233;barque la marchandise en vitesse pour ne pas prendre de retard ! »</French>
+  <French>- Â« 800 Â», propose le tr&#233;sorier de la ville.[NEWLINE]- Â« Non 1000 Â», r&#233;pond le contrebandier depuis son navire qui mouille au port. Â« Regardez donc la qualit&#233; de nos produits, vous croyez qu'on se les est procur&#233;s comment ? Â»[NEWLINE]- Â« D'accord, 900, mais pas plus, sinon autant payer les taxes plut&#244;t que d'avoir recours &#224; vos services Â» explique le n&#233;gociant. [NEWLINE]- Â« D&#233;p&#234;chez-vous maintenant, on n'a plus le temps Â» intervient le milicien du port qui touche son bakchich. [NEWLINE]- Â« Bon, ok pour 900 Â», r&#233;pond le capitaine. Â« Allez les gars, on d&#233;barque la marchandise en vitesse pour ne pas prendre de retard ! Â»</French>
   <German>"800,-" wagt sich der Stadtk&#228;mmerer vor.[NEWLINE] "Nein, 1000,-" gibt der K&#228;pt'n des Schmugglers zur&#252;ck, der unmittelbar vor der K&#252;ste Anker geworfen hat. "Seht euch diese kostbaren Waren an, was glaubt ihr denn wo die herkommen?"[NEWLINE] "Also gut, 900,-, sonst h&#228;tten wir ja gleich die Steuern bezahlen k&#246;nnen," meint der Stellvertreter des Gouverneurs. [NEWLINE]"Ihr solltet euch besser beeilen, sonst entdecken uns die Dragoner," ruft der Milizoffizier nerv&#246;s dazwischen. [NEWLINE]"Also sch&#246;n," gibt sich der K&#228;pt'n geschlagen, sch&#246;n mit Euch Gesch&#228;fte zu machen," und nimmt den prall gef&#252;llten Lederbeutel entgegen. "Hau'n wir ab, Jungs," ruft er seinen M&#228;nnern zu, "in einer Stunde haben wir schon die n&#228;chste Verabredung." </German>
   <Italian>"800,-" offers the city treasurer.[NEWLINE] "No, 1000,-" answers the captain of the smuggler who currently anchored inshore. "Look at this prodigious goods, what do you think where we gained them?"[NEWLINE] "Alright, 900,-, otherwise we directly could have paid the taxes instead of hiring you and your ship," argues the governor's agent. [NEWLINE]"Hurry up! Otherwise the dragoons may catch us all," shouts the militia officer nervously from the background. [NEWLINE]"Ok, deal," agrees the captain and accepts the tightly filled bag from the agent. "Let's go boys, we are in a hurry for our next apointment."</Italian>
   <Spanish>"800,-" offers the city treasurer.[NEWLINE] "No, 1000,-" answers the captain of the smuggler who currently anchored inshore. "Look at this prodigious goods, what do you think where we gained them?"[NEWLINE] "Alright, 900,-, otherwise we directly could have paid the taxes instead of hiring you and your ship," argues the governor's agent. [NEWLINE]"Hurry up! Otherwise the dragoons may catch us all," shouts the militia officer nervously from the background. [NEWLINE]"Ok, deal," agrees the captain and accepts the tightly filled bag from the agent. "Let's go boys, we are in a hurry for our next apointment.".</Spanish>
@@ -1471,11 +1471,11 @@
  </TEXT>
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE</Tag>
-  <English>Three priate frigates</English>
+  <English>Three pirate frigates</English>
   <French>Trois fr&#233;gates pirates</French>
   <German>Bruder der K&#252;ste d&#252;rft ihr euch nun nennen - mit drei Piratenfregatten verbreitet ihr Angst und Schrecken!</German>
-  <Italian>Three priate frigates</Italian>
-  <Spanish>Three priate frigates</Spanish>
+  <Italian>Tre fregate pirata</Italian>
+  <Spanish>Tres fragatas piratas</Spanish>
  </TEXT>
  <TEXT>
   <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_HEAD</Tag>
@@ -2329,7 +2329,7 @@
   <Tag>TXT_KEY_ACHIEVE_GOVERNOR_TEXT</Tag>
   <English>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</English>
   <French>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</French>
-  <German>Euer K&#246;nig, Herrscher von Gottes Gnaden, hat seinen Stellvertreter in die Neue Welt gesandt, um die Kontrolle über die Kolonien zu sichern und um eine geordnete Verwaltung aufzubauen. So helfe uns Gott![NEWLINE][NEWLINE]</German>
+  <German>Euer K&#246;nig, Herrscher von Gottes Gnaden, hat seinen Stellvertreter in die Neue Welt gesandt, um die Kontrolle Ã¼ber die Kolonien zu sichern und um eine geordnete Verwaltung aufzubauen. So helfe uns Gott![NEWLINE][NEWLINE]</German>
   <Italian>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</Italian>
   <Spanish>Your king, sovereign by grace of God, sent his representative into the New World in order to ensure his power in the colonies. We will have to deal with that. [NEWLINE][NEWLINE]</Spanish>
  </TEXT>   
@@ -2545,7 +2545,7 @@
   <Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_TEXT</Tag>
   <English>Now you have three experienced trapper. Use them to produce more premium furs![NEWLINE][NEWLINE]</English>
   <French>Now you have three experienced trapper. Use them to produce more premium furs!</French>
-  <German>"Fallensteller stellen Fallen, hier im Wald den Tieren allen..." siniert Ihr vor Euch hin, als Ihr bei einem Blick aus dem Fenster die neue Ladung feinster Premiumfelle ankommen seht, die die Trapper den gro&#223;en Fluss hinunter in die Stadt gebracht haben. [NEWLINE][NEWLINE]Bald wird es in diesem Teil der Welt keine Bieber, Bären und andere Pelztieren mehr geben, wenn die alte Welt weiterhin so begierig auf diese Luxusware sein sollte. [NEWLINE][NEWLINE]"Ach was..." denkt ihr Euch, "solange die Kolonie daran so gut verdient wie bisher." Und schon ist es mit den Gewissensbissen auch schon wieder vorbei und Ihr widmet Euch wieder Eurem Nachmittagstee. [NEWLINE][NEWLINE]</German>
+  <German>"Fallensteller stellen Fallen, hier im Wald den Tieren allen..." siniert Ihr vor Euch hin, als Ihr bei einem Blick aus dem Fenster die neue Ladung feinster Premiumfelle ankommen seht, die die Trapper den gro&#223;en Fluss hinunter in die Stadt gebracht haben. [NEWLINE][NEWLINE]Bald wird es in diesem Teil der Welt keine Bieber, BÃ¤ren und andere Pelztieren mehr geben, wenn die alte Welt weiterhin so begierig auf diese Luxusware sein sollte. [NEWLINE][NEWLINE]"Ach was..." denkt ihr Euch, "solange die Kolonie daran so gut verdient wie bisher." Und schon ist es mit den Gewissensbissen auch schon wieder vorbei und Ihr widmet Euch wieder Eurem Nachmittagstee. [NEWLINE][NEWLINE]</German>
   <Italian>Now you have three experienced trapper. Use them to produce more premium furs!</Italian>
   <Spanish>Now you have three experienced trapper. Use them to produce more premium furs!</Spanish>
  </TEXT> 
