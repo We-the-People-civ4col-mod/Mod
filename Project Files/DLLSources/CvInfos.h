@@ -1246,6 +1246,7 @@ public:
 	DllExport int getMissionType() const;
 	DllExport void setMissionType(int iNewType);
 	DllExport int getOverflowSellPercent() const;
+	inline bool isIgnoresBoycott() const                                 {return m_bIgnoresBoycott;}
 	DllExport int getSpecialBuildingPriority() const;
 	DllExport float getVisibilityPriority() const;
 	DllExport bool isWorksWater() const;
@@ -1333,6 +1334,7 @@ protected:
 	int m_iBombardDefenseModifier;
 	int m_iMissionType;
 	int m_iOverflowSellPercent;
+	bool m_bIgnoresBoycott;
 	int m_iSpecialBuildingPriority;
 	float m_fVisibilityPriority;
 	bool m_bWorksWater;

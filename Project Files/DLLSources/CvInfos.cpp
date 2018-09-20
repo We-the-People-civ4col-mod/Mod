@@ -4751,6 +4751,7 @@ m_iDefenseModifier(0),
 m_iBombardDefenseModifier(0),
 m_iMissionType(NO_MISSION),
 m_iOverflowSellPercent(0),
+m_bIgnoresBoycott(false),
 m_iSpecialBuildingPriority(0),
 m_fVisibilityPriority(0.0f),
 m_bWorksWater(false),
@@ -5350,6 +5351,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iDefenseModifier, "iDefense");
 	pXML->GetChildXmlValByName(&m_iBombardDefenseModifier, "iBombardDefense");
 	pXML->GetChildXmlValByName(&m_iOverflowSellPercent, "iOverflowSellPercent");
+	pXML->GetChildXmlValByName(&m_bIgnoresBoycott, "bIgnoresBoycott");
 	pXML->GetChildXmlValByName(&m_iSpecialBuildingPriority, "iSpecialBuildingPriority");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");

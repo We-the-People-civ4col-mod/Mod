@@ -912,6 +912,7 @@
 			<iPower>0</iPower>
 			<iYieldStorage>2900</iYieldStorage>
 			<iOverflowSellPercent>80</iOverflowSellPercent>
+			<bIgnoresBoycott>1</bIgnoresBoycott>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1014,6 +1015,7 @@
 			<iPower>0</iPower>
 			<iYieldStorage>3300</iYieldStorage>
 			<iOverflowSellPercent>90</iOverflowSellPercent>
+			<bIgnoresBoycott>1</bIgnoresBoycott>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
