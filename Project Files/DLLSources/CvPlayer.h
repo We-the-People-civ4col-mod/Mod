@@ -1013,7 +1013,7 @@ protected:
 	int* m_aiProfessionEquipmentModifier;
 	int* m_aiTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-	YieldArray<int> *m_cache_YieldEquipmentAmount;
+	YieldArray<unsigned short> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
 	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
 	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;

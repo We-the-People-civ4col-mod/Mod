@@ -1,245 +1,263 @@
+#ifndef JUST_IN_TIME_ARRAY_H
+#define JUST_IN_TIME_ARRAY_H
 #pragma once
 // JustInTimeArray.h
 
-#include "CvDLLEntity.h"
-#include "CvGlobals.h"
-
 /*
- * Guide for just-in-time array usage
- *  This is classes containing a single pointer. This means from a coding point of view they can be used like an array.
- *  The main difference from normal arrays is that they will not allocate memory until a non-default value is written in it.
- *  This is useful for arrays where say only human players will use them. AI players will then not allocate the memory at all.
- *  The length of the array is hardcoded into the class, eliminating the risk of assuming wrong length.
+ * JustInTimeArray is an array, which allocates just in time for when it's needed.
+ * The deconstructor frees the memory, meaning memory allocation and deallocation is automated.
  *
- *  There is one other major difference between arrays and JustInTimeArrays.
- *    Normal arrays have fixed sized (compiletime) when placed in classes or they are pointers to arrays,
- *     in which case they leak memory unless SAFE_DELETE_ARRAY() is used and they need to be allocated
- *    JustInTimeArrays have the good part of both. Length is set at runtime, yet they can still be added as a variable
- *      to classes, in which case allocation and freeing of memory is automatic and can't leak. 
+ * Each array is of a type set by a specific xml file or other fixed length like MAX_PLAYERS
  *
- *   IMPORTANT:
- *    An array of JustInTimeArrays fail to activate constructor/deconstructor. reset() and init() must be used here
- *     Failure to do so will leak memory and/or fail to set length.
+ * While they work based on enum JITarrayTypes, the cleanest approach is to use a class name from JustInTimeTypes.h
  *
+ * The constructor takes the an argument for the default value (default 0).
+ * Any array without memory allocated will assume all the values to be the default and will not allocate by setting the default value.
+ * Likewise reading from an unallocated array will return the default value. This means the array is perfectly usable without ever being allocated.
+ * In most cases this doesn't matter to the use of the array. Code can use it, get, set and ignore memory management.
  *
- *  Usage:
- *   get() reads data from array. 0 or false is returned when read from an unallocated array.
- *   set() writes data to array. Allocates if needed.
- *   hasContent() and isEmpty() tells if the array is allocated.
- *     They also frees the array if it only contains 0/false.
- *   isAllocated() returns true if the array is allocated but doesn't check contents (faster than hasContent())
- *   read()/write() used for savegames. The bool tells if the data should be read/written.
- *      This allows one-line statements when saving, which includes the if sentence.
- *   reset() frees the array
- *   length() is the length of the array
- *   init() does the same as the constructor and should be used when the constructor isn't called, like in an array of JustInTimeArrays
- *
- *  Adding new types:
- *   Copy class YieldArray and change:
- *    2 * YieldArray (function and constructor) into a suitable name
-*     2 * NUM_YIELD_TYPES into whatever length you need.
- *
- *  The reason why the class function definitions are inside the declaration is to avoid compiler errors regarding templates.
+ * Performance tip: isAllocated is a quick check to tell if all indexes are the default value. Useful if you only care about non-zero values.
  */
+
+class CvXMLLoadUtility;
+class InfoArray;
+class CvPlayer;
+
+#include "CvEnums.h"
+#include "JustInTimeArrayGetType.h"
 
 template<class T> class JustInTimeArray
 {
 private:
-	T* tArray;
-	int m_iLength;
+	T* m_tArray;
+	const unsigned short m_iLength;
+	const unsigned char m_iType;
+	const T m_eDefault;
 
 public:
-	JustInTimeArray(int iLength)
-	{
-		tArray = NULL;
-		m_iLength = iLength;
-	}
+	JustInTimeArray(JITarrayTypes eType, T eDefault = (T)0);
 
-	~JustInTimeArray()
-	{
-		SAFE_DELETE_ARRAY(tArray);
-	}
+	~JustInTimeArray();
 
-	void reset()
-	{
-		SAFE_DELETE_ARRAY(tArray);
-	}
+	// restore all data to default values
+	void reset();
 
+	// non-allocated arrays contains only default values
+	// this is a really fast content check without even looking at array content
+	// note that it is possible to have allocated arrays with only default content
 	inline bool isAllocated() const
 	{
-		return tArray != NULL;
+		return m_tArray != NULL;
 	}
-
-	inline int length()
+	
+	inline int length() const
 	{
 		return m_iLength;
 	}
 
-	// used when constructor isn't called, like in an array
-	inline void init(int iLength)
-	{
-		tArray = NULL;
-		m_iLength = iLength;
-	}
-
+	// get stored value
 	inline T get(int iIndex) const
 	{
 		FAssert(iIndex >= 0);
 		FAssert(iIndex < m_iLength);
-		return tArray ? tArray[iIndex] : 0;
+		return m_tArray ? m_tArray[iIndex] : m_eDefault;
 	}
 
-	inline void set(T value, int iIndex)
-	{
-		FAssert(iIndex >= 0);
-		FAssert(iIndex < m_iLength);
+	// assign argument to storage
+	// returns -1 when freeing the array and 1 when allocating. 0 in all other cases
+	int set(T value, int iIndex);
 
-		if (tArray == NULL)
-		{
-			if (value == 0)
-			{
-				// no need to allocate memory to assign a default (false) value
-				return;
-			}
-			tArray = new T[m_iLength];
-			for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-			{
-				tArray[iIterator] = 0;
-			}
-		}
-		tArray[iIndex] = value;
+	// add argument to stored value
+	// returns -1 when freeing the array and 1 when allocating. 0 in all other cases
+	int add(T value, int iIndex);
+
+	// same as add, but checks index for out of bounds. If it is, then it returns false and does nothing else
+	// returns true if an allow change value (a number goes 0->1 or 1->0)
+	bool addCache(int iChange, int iIndex);
+
+	// adds an info array to the array
+	// use iChange to tell if it should be added or substracted
+	// 1D array are read as all included indexes stores 1
+	// returns true if an allow change value (a number goes 0->1 or 1->0)
+	// CvPlayer and *fpConvert are used to alter index. If set, then fptr is called for pPlayer with the index as argument
+	// It is expected that fptr returns the index, which should be used. Index -1 mean the value will not enter the array.
+	// Useful for converting UnitClasses into Units
+	// fpUpdate is called for changed indexes
+	// arguments:
+	//     int:  index
+	//     bool: bChanged for this index (move from 0->1 or 1->0)
+	bool addCache(int iChange, const InfoArray* pIarray, CvPlayer* pPlayer = NULL, int (CvPlayer::*fpConvert)(int) const = NULL, void (CvPlayer::*fpUpdate)(int, bool) = NULL, JITarrayTypes eType = JIT_ARRAY_NO_TYPE);
+
+	// add a number to all indexes
+	void addAll(int iChange, int iValue);
+
+	// replace value with argument if argument is higher than the already stored value
+	void keepMax(T value, int iIndex);
+
+	// replace value with argument if argument is lower than the already stored value
+	void keepMin(T value, int iIndex);
+
+	JITarrayTypes getType() const
+	{
+		return static_cast<JITarrayTypes>(m_iType);
 	}
 
-	inline void add(T value, int iIndex)
+	bool hasContent();
+	inline bool isEmpty()
 	{
-		this->set(value + this->get(iIndex), iIndex);
+		return !hasContent();
 	}
 
-	inline void keepMax(T value, int iIndex)
-	{
-		if (value > get(iIndex))
-		{
-			set(value, iIndex);
-		}
-	}
+	unsigned int getNumUsedElements(T* pNormalArray = NULL) const;
 
-	bool hasContent(bool bRelease = true)
-	{
-		if (tArray == NULL)
-		{
-			return false;
-		}
-		for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
-		{
-			if (tArray[iIterator])
-			{
-				return true;
-			}
-		}
+	// floating point cache modifiers
+	T getFloat(int iIndex) const;
 
-		if (bRelease)
-		{
-			// array is allocated but has no content
-			SAFE_DELETE_ARRAY(tArray);
-		}
-		return false;
-	};
-	inline bool isEmpty(bool bRelease = true)
-	{
-		return !hasContent(bRelease);
-	}
+	// function used exclusively for generating the init CivEffect
+	// it assigns 0 to any index in pIarray, which has a positive value
+	void generateInitCivEffect(const InfoArray* pIarray);
 
-	void read(FDataStreamBase* pStream, bool bRead)
-	{
-		if (bRead)
-		{
-			if (tArray == NULL)
-			{
-				tArray = new T[m_iLength];
-			}
-			pStream->Read(m_iLength, tArray);
-		}
-	}
+	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
+	// pNormalArray can be used to make read/write take place in an array other than the JIT array, but it must be allocated to the same length as the JIT array
+	// this is normally not used, but it helps when making savegames resistant to xml changes while keeping vanilla code as untouched as possible
+	// TODO remove this when cleaning up savegame code 
+	void read (FDataStreamBase* pStream, bool bEnable);
+	void write(FDataStreamBase* pStream, bool bEnable);
+	void Read (FDataStreamBase* pStream);
+	void Write(FDataStreamBase* pStream);
 
-	void write(FDataStreamBase* pStream, bool bWrite)
-	{
-		if (bWrite)
-		{
-			if (tArray == NULL)
-			{
-				// requested writing an empty array.
-				for (int i = 0; i < m_iLength; i++)
-				{
-					pStream->Write(0);
-				}
-			} else {
-				pStream->Write(m_iLength, tArray);
-			}
-		}
-	}
+	void ReadWrite(bool bRead, FDataStreamBase* pStream);
 
-	void read(CvXMLLoadUtility* pXML, const char* sTag)
-	{
-		// read the data into a temp int array and then set the permanent array with those values.
-		// this is a workaround for template issues
-		FAssert(this->m_iLength > 0);
-		int *iArray = new int[this->m_iLength];
-		pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
-		for (int i = 0; i < this->m_iLength; i++)
-		{
-			this->set(iArray[i], i);
-		}
-		SAFE_DELETE_ARRAY(iArray);
-		this->hasContent(); // release array if possible
-	}
-};
+	void read(CvXMLLoadUtility* pXML, const char* sTag);
 
+private:
 
-template<class T>
-class YieldArray: public JustInTimeArray<T>
-{
+	void allocate();
 public:
 
-	YieldArray() : JustInTimeArray<T>(NUM_YIELD_TYPES){};
-	void init() {  JustInTimeArray<T>::init(NUM_YIELD_TYPES);}
+	// operator overload
+	JustInTimeArray& operator=(const JustInTimeArray &rhs);
+	JustInTimeArray& operator+=(const JustInTimeArray &rhs);
+	JustInTimeArray& operator-=(const JustInTimeArray &rhs);
+	bool operator==(const JustInTimeArray &rhs) const;
+	bool operator!=(const JustInTimeArray &rhs) const;
 };
 
-template<class T>
-class UnitArray: public JustInTimeArray<T>
+// 2D JIT array
+template<class T> class JustInTimeArray2D
 {
+private:
+	JustInTimeArray<T> *tArray;
+	const unsigned short m_iLength;
+	unsigned short m_iArraysInUse;
+	const unsigned char m_iType;
+	const unsigned char m_iSubType;
+	const T m_eDefault;
+
+	void allocate();
+	void maybeFreeArray();
+
 public:
-	UnitArray() : JustInTimeArray<T>(GC.getNumUnitInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumUnitInfos());}
+
+	JustInTimeArray2D(JITarrayTypes eType, JITarrayTypes eSubType, T eDefault = (T)0);
+	JustInTimeArray2D(int iLength, JITarrayTypes eSubType, T eDefault = (T)0);
+	~JustInTimeArray2D();
+
+	// reset all arrays
+	void reset();
+	T get(int iIndex, int iSubIndex) const;
+	void set(T eValue, int iIndex, int iSubIndex);
+	void add(T eValue, int iIndex, int iSubIndex);
+
+	// returns true if an allow change value (a number goes 0->1 or 1->0)
+	bool addCache(int iChange, const InfoArray* pIarray);
+
+	// tells if primary array is allocated
+	bool isAllocated() const;
+
+	// tell if a specific array has an array allocated
+	// returns false if the array itself isn't in the primary array
+	bool isAllocated(int iIndex) const;
+
+	JITarrayTypes getType() const
+	{
+		return static_cast<JITarrayTypes>(m_iType);
+	}
+
+	JITarrayTypes getSubType() const
+	{
+		return static_cast<JITarrayTypes>(m_iSubType);
+	}
+
+	void Read (FDataStreamBase* pStream);
+	void Write(FDataStreamBase* pStream);
+	void ReadWrite(bool bRead, FDataStreamBase* pStream);
 };
 
-template<class T>
-class ProfessionArray: public JustInTimeArray<T>
+template<class T> class CacheArray2D
 {
 public:
-	ProfessionArray() : JustInTimeArray<T>(GC.getNumProfessionInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumProfessionInfos());}
+	CacheArray2D(int iLength, int iSubLength);
+	CacheArray2D(int iLength, JITarrayTypes eSubType);
+	CacheArray2D(JITarrayTypes eType, int iSubLength);
+	CacheArray2D(JITarrayTypes eType, JITarrayTypes eSubType);
+	~CacheArray2D();
+
+	void reset();
+	T get(int iIndex, int iSubIndex) const;
+	T getAccumulative(int iIndex, int iSubIndex) const;
+
+	// returns true if an allow change value (a number goes 0->1 or 1->0)
+	bool addCache(int iChange, const InfoArray* pIarray);
+
+	// adds numbers to index and all higher indexes. Used for bonus like +1 if number is 3 or higher
+	void addCacheAccumulative(int iChange, const InfoArray* pIarray);
+
+	// set all variables to a specific value (reset frees the memory and is better than assigning 0)
+	void assign(T iNewValue, int iIndex = -1, int iSubIndex = -1);
+
+	int getLength() const {return m_iLength;};
+	int getSubLength() const {return m_iSubLength;};
+
+#ifdef FASSERT_ENABLE
+	JITarrayTypes getType() const
+	{
+		return static_cast<JITarrayTypes>(m_iType);
+	}
+
+	JITarrayTypes getSubType() const
+	{
+		return static_cast<JITarrayTypes>(m_iSubType);
+	}
+#endif
+
+protected:
+	void allocate();
+
+	const short m_iLength;
+	const short m_iSubLength;
+#ifdef FASSERT_ENABLE
+	const unsigned char m_iType;
+	const unsigned char m_iSubType;
+#endif
+	T* m_aArray;
 };
 
-template<class T>
-class PromotionArray: public JustInTimeArray<T>
-{
-public:
-	PromotionArray() : JustInTimeArray<T>(GC.getNumPromotionInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumPromotionInfos());}
-};
+class CvInfoBase;
 
-template<class T>
-class UnitCombatArray: public JustInTimeArray<T>
-{
-public:
-	UnitCombatArray() : JustInTimeArray<T>(GC.getNumUnitCombatInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumUnitCombatInfos());}
-};
+bool isConversionArray(JITarrayTypes eType);
+bool isHardcodedArray(JITarrayTypes eType);
+int getArrayLength(JITarrayTypes eType);
+const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex);
+const char* getArrayType(JITarrayTypes eType, int iIndex);
+CvWString getArrayTypeWide(JITarrayTypes eType, int iIndex);
+const char* getArrayName(JITarrayTypes eType);
+CvWString getArrayNameWide(JITarrayTypes eType);
+const char* getArrayPrefix(JITarrayTypes eType);
+int getIndexForType(JITarrayTypes eType, const char* pTypeString);
 
-template<class T>
-class BonusArray: public JustInTimeArray<T>
-{
-public:
-	BonusArray() : JustInTimeArray<T>(GC.getNumBonusInfos()){};
-	void init() { JustInTimeArray<T>::init(GC.getNumBonusInfos());}
-};
+
+
+#include "JustInTimeArrayTypes.h"
+
+#endif

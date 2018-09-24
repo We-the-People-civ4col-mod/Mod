@@ -7,6 +7,11 @@
 
 #include "CvDefines.h"
 
+// offset to make floats and doubles turn into the right int
+// the problem is both floats and doubles have rounding errors meaning
+// 1 can turn into 0.9999, which is 0 when read as an int
+const double FLOAT_OFFSET = 0.00001f;
+
 enum DllExport GameStateTypes
 {
 	GAMESTATE_ON,
@@ -723,9 +728,12 @@ enum DllExport YieldTypes
 	YIELD_HEALTH,
 	YIELD_EDUCATION,
 
-#ifdef _USRDLL
-	NUM_YIELD_TYPES
-#endif
+	NUM_YIELD_TYPES,
+
+	NUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,
+
+	FIRST_YIELD = 0,
+
 };
 
 enum DllExport EmphasizeTypes
@@ -1159,6 +1167,7 @@ enum DllExport BuildingClassTypes
 enum DllExport BuildingTypes
 {
 	NO_BUILDING = -1,
+	FIRST_BUILDING = 0,
 };
 
 enum DllExport SpecialBuildingTypes
@@ -1280,6 +1289,7 @@ enum DllExport UnitClassTypes
 enum DllExport UnitTypes
 {
 	NO_UNIT = -1,
+	FIRST_UNIT = 0,
 };
 
 enum DllExport ProfessionTypes
@@ -2824,5 +2834,109 @@ enum DllExport TradeMessageTypes
 	NUM_TRADE_MESSAGES,
 };
 // TAC - Trade Messages - koma13 - END
+
+enum JITarrayTypes
+{
+	NO_JIT_ARRAY_TYPE = -1,
+
+	JIT_ARRAY_ART_STYLE,
+	JIT_ARRAY_BONUS,
+	JIT_ARRAY_BUILD,
+	JIT_ARRAY_BUILDING,
+	JIT_ARRAY_BUILDING_CLASS,
+	JIT_ARRAY_BUILDING_SPECIAL,
+	JIT_ARRAY_CIVIC,
+	JIT_ARRAY_CIVIC_OPTION,
+	JIT_ARRAY_CIVILIZATION,
+	JIT_ARRAY_COLOR,
+	JIT_ARRAY_CULTURE,
+	JIT_ARRAY_DIPLO,
+	JIT_ARRAY_EMPHASIZE,
+	JIT_ARRAY_ERA,
+	JIT_ARRAY_EUROPE,
+	JIT_ARRAY_EVENT,
+	JIT_ARRAY_EVENT_TRIGGER,
+	JIT_ARRAY_FATHER,
+	JIT_ARRAY_FATHER_POINT,
+	JIT_ARRAY_FEATURE,
+	JIT_ARRAY_GAME_OPTION,
+	JIT_ARRAY_GOODY,
+	JIT_ARRAY_HANDICAP,
+	JIT_ARRAY_HURRY,
+	JIT_ARRAY_IMPROVEMENT,
+	JIT_ARRAY_LEADER_HEAD,
+	JIT_ARRAY_MEMORY,
+	JIT_ARRAY_PLAYER_COLOR,
+	JIT_ARRAY_PLAYER_OPTION,
+	JIT_ARRAY_PROFESSION,
+	JIT_ARRAY_PROMOTION,
+	JIT_ARRAY_ROUTE,
+	JIT_ARRAY_TERRAIN,
+	JIT_ARRAY_TRAIT,
+	JIT_ARRAY_UNIT,
+	JIT_ARRAY_UNIT_AI,
+	JIT_ARRAY_UNIT_CLASS,
+	JIT_ARRAY_UNIT_COMBAT,
+	JIT_ARRAY_UNIT_SPECIAL,
+	JIT_ARRAY_VICTORY,
+	JIT_ARRAY_YIELD,
+
+
+	NUM_JITarrayTypes,
+
+	// types below this line will not have conversion tables in savegames
+	// this mean order below this will not affect the ability to load savegames
+
+	// sub arrays using another (full) array for conversion on load
+	// value should be set to NUM_JITarrayTypes + name of which array to use when converting
+
+	JIT_ARRAY_CARGO_YIELD = JIT_ARRAY_YIELD + NUM_JITarrayTypes,
+
+
+	// arrays below this line will not be converted on load
+	// useful for arrays unrelated to XML values
+	JIT_ARRAY_NO_CONVERSION = NUM_JITarrayTypes * 2,
+	
+	JIT_ARRAY_CONTACT,
+	JIT_ARRAY_EMOTION,
+	JIT_ARRAY_FEAT,
+	JIT_ARRAY_MISSION_AI,
+	JIT_ARRAY_PLAYER,
+	JIT_ARRAY_STRATEGY,
+	
+	// types used by InfoArray
+	JIT_ARRAY_NO_TYPE,
+	JIT_ARRAY_MODIFIER,
+	JIT_ARRAY_MODIFIER_FLOAT,
+	JIT_ARRAY_ALLOW,
+	JIT_ARRAY_INT,
+	JIT_ARRAY_FLOAT,
+
+	// last a value, which solve purpose is to BOOST_STATIC_ASSERT if index overflows
+	MAX_JIT_ARRAY_VALUE,
+
+	FIRST_JIT_ARRAY = 0,
+};
+
+BOOST_STATIC_ASSERT(MAX_JIT_ARRAY_VALUE <= 0xFF);
+
+// overloaded ++ for enum types
+
+// prefix
+template <class T>
+static inline T& operator++(T& c)
+{
+	c = (T)(c + 1);
+	return c;
+}
+
+// postfix
+template <class T>
+static inline T operator++(T& c, int)
+{
+	T cache = c;
+	c = (T)(c + 1);
+	return cache;
+}
 
 #endif	// CVENUMS_h

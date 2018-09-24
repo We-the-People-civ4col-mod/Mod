@@ -35,6 +35,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\BoolArray.cpp" />
+    <ClCompile Include="DLLSources\InfoArray.cpp" />
+    <ClCompile Include="DLLSources\JustInTimeArray.cpp" />
+    <ClCompile Include="DLLSources\JustInTimeArrayGetType.h" />
+    <ClCompile Include="DLLSources\JustInTime_Features.cpp" />
     <ClCompile Include="DLLSources\CvArea.cpp" />
     <ClCompile Include="DLLSources\CvArtFileMgr.cpp" />
     <ClCompile Include="DLLSources\CvCity.cpp" />
@@ -148,6 +153,10 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DLLSources\BoolArray.h" />
+    <ClInclude Include="DLLSources\InfoArray.h" />
+    <ClInclude Include="DLLSources\InfoArrayGet.h" />
+    <ClInclude Include="DLLSources\JustInTimeArrayTypes.h" />
     <ClInclude Include="DLLSources\CvArea.h" />
     <ClInclude Include="DLLSources\CvArtFileMgr.h" />
     <ClInclude Include="DLLSources\CvCity.h" />
@@ -331,7 +340,7 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -347,7 +356,7 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -363,7 +372,7 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -379,7 +388,7 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-fast|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -397,7 +406,7 @@ bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -418,7 +427,7 @@ bin\jom build</NMakeReBuildCommandLine>
 set ONE_PLOT_CITY_RADIUS=1
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -437,7 +446,7 @@ nmake dll  /NOLOGO</NMakeReBuildCommandLine>
 set ONE_PLOT_CITY_RADIUS=1
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Assert-fast|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -455,7 +464,7 @@ bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>..\..\..\CvGameCoreDLL\Boost-1.32.0\include</NMakeIncludeSearchPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>

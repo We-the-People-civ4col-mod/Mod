@@ -108,7 +108,9 @@ CvPlayer::CvPlayer()
 	m_ppiImprovementYieldChange = NULL;
 	m_ppiBuildingYieldChange = NULL;
 
-	m_cache_YieldEquipmentAmount = NULL; // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	m_cache_YieldEquipmentAmount = new YieldArray<unsigned short>[GC.getNumProfessionInfos()];
+	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	reset(NO_PLAYER, true);
 }
 
@@ -18266,20 +18268,11 @@ void CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 
 void CvPlayer::Update_cache_YieldEquipmentAmount()
 {
-	if (m_eID <= NO_PLAYER || m_aiProfessionEquipmentModifier == NULL || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
+	///TKs Nightinggale fix
+	if (m_eID <= NO_PLAYER || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
 	{
 		// Some update calls gets triggered during player init. They can safely be ignored.
 		return;
-	}
-
-	if (m_cache_YieldEquipmentAmount == NULL)
-	{
-		// only init NULL pointers.
-		// don't do anything about already allocated arrays as data is overwritten anyway.
-		m_cache_YieldEquipmentAmount = new YieldArray<int>[GC.getNumProfessionInfos()];
-		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
-			m_cache_YieldEquipmentAmount[iProfession].init();
-		}
 	}
 
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
