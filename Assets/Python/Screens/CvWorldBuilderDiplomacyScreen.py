@@ -358,7 +358,7 @@ class CvWorldBuilderDiplomacyScreen:
 		gc.getPlayer(iActualPlayer).AI_setAttitudeExtra(self.m_iActivePlayer, iValue)
 
 		tab = self.getTabControl()
-		szSliderText = self.getSliderTextMiddle(-100, 100, gc.getPlayer(iPlayer).AI_getAttitudeExtra(self.m_iActivePlayer))
+		szSliderText = self.getSliderTextMiddle(-100, 100, gc.getPlayer(iActualPlayer).AI_getAttitudeExtra(self.m_iActivePlayer))
 		tab.setText(szTextName, szSliderText)
 		return
 
