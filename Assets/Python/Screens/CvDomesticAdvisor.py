@@ -749,7 +749,8 @@ class CvDomesticAdvisor:
 			return
 	
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
-		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		playerID = gc.getGame().getActivePlayer()
+		player = gc.getPlayer(playerID)
 		
 		szState = self.StatePages[self.NATIVE_STATE][0]
 		screen.addTableControlGFC( szState + "ListBackground", 7, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
@@ -773,11 +774,18 @@ class CvDomesticAdvisor:
 			
 			ePlayer = gc.getPlayer(pLoopCity.getOwner())
 			
-			#if (pLoopCity.isRevealed(gc.getGame().getActiveTeam(), false)):
-			if (pLoopCity.isScoutVisited(gc.getGame().getActiveTeam())):
-			#if (ePlayer.isAlive() and (gc.getTeam(ePlayer.getTeam()).isHasMet(player.getTeam()))):
-			#if (ePlayer.isAlive()):
+			# figure out if the city should be displayed
+			bIsVisited = pLoopCity.isScoutVisited(gc.getGame().getActiveTeam())
 			
+			# visited cities are always known. No need to test visited cities
+			bIsKnown = bIsVisited
+			
+			if not bIsKnown:
+				if (ePlayer.isAlive() and (gc.getTeam(ePlayer.getTeam()).isHasMet(player.getTeam()))):
+					bIsKnown = pLoopCity.isRevealed(player.getTeam(), False)
+			
+			# add a line for every single known native city
+			if bIsKnown:
 				screen.appendTableRow( szStateName )
 				screen.setTableRowHeight(szStateName, iter, self.ROW_HIGHT)
 				
@@ -785,25 +793,22 @@ class CvDomesticAdvisor:
 				screen.setTableText(szState + "ListBackground", 1, iter, "<font=2>" + gc.getPlayer(self.NativeCities[iNativeCity].getOwner()).getCivilizationShortDescription(0) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				screen.setTableInt(szState + "ListBackground", 2, iter, "<font=2>" + unicode(self.NativeCities[iNativeCity].getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
-				#screen.setTableInt(szState + "ListBackground", 3, iter, "<font=2>" + unichr(CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)+12+iNativeCity) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				iYield= self.NativeCities[iNativeCity].AI_getDesiredYield()
-				screen.setTableInt(szState + "ListBackground", 3, iter, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				# desired yield
+				if bIsVisited:
+					iYield= self.NativeCities[iNativeCity].AI_getDesiredYield()
+					screen.setTableInt(szState + "ListBackground", 3, iter, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
-				#if gc.getPlayer(pLoopCity.getMissionaryPlayer() != PlayerTypes.NO_PLAYER):
-				if pLoopCity.getMissionaryRate() > 0 and pLoopCity.getMissionaryPlayer() != -1: #and gc.getPlayer(pLoopCity.getMissionaryPlayer()) != PlayerTypes.NO_PLAYER:
-					iModifier = 100 + player.getMissionaryRateModifier()+ ePlayer.getMissionaryRateModifier()
-					#if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN) and pLoopCity.getMissionaryPlayer()==gc.getPlayer(gc.getGame().getActivePlayer()):
-					if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
-						#screen.setTableText(szState + "ListBackground", 4, iter, "<font=2>"  + localText.getText("TXT_KEY_GROWTH", (ePlayer.getMissionaryPoints(gc.getGame().getActivePlayer()),ePlayer.missionaryThreshold(gc.getGame().getActivePlayer()), pLoopCity.getMissionaryRate())) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )	
+				# mission icon
+				if pLoopCity.getMissionaryRate() > 0 and pLoopCity.getMissionaryPlayer() != PlayerTypes.NO_PLAYER:
+					if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN) and pLoopCity.getMissionaryPlayer() == playerID:
+						iModifier = 100 + player.getMissionaryRateModifier()+ ePlayer.getMissionaryRateModifier()
 						screen.setTableText(szState + "ListBackground", 4, iter, "<font=2>"  + localText.getText("TXT_KEY_GROWTH", (ePlayer.getMissionaryPoints(gc.getGame().getActivePlayer()),ePlayer.missionaryThreshold(gc.getGame().getActivePlayer()), pLoopCity.getMissionaryRate() * iModifier /100)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )	
 					else:
 						screen.setTableInt(szState + "ListBackground", 4, iter, "<font=2>" + "<font=2>" + unichr(gc.getCivilizationInfo(gc.getPlayer(pLoopCity.getMissionaryPlayer()).getCivilizationType()).getMissionaryChar()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-						#screen.setTableInt(szState + "ListBackground", 4, iter, "<font=2>" + unicode(pLoopCity.getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				elif pLoopCity.getMissionaryRate() > 0 and pLoopCity.getMissionaryPlayer() == -1 and gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
-					screen.setTableText(szState + "ListBackground", 4, iter, "<font=2>"  + localText.getText("TXT_KEY_GROWTH", (ePlayer.getMissionaryPoints(gc.getGame().getActivePlayer()),ePlayer.missionaryThreshold(gc.getGame().getActivePlayer()), 0)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )	
-				
+
 				# Native advisor update - start - Nightinggale
-				screen.setTableText(szState + "ListBackground", 5, iter, "<font=2>" + gc.getUnitInfo(self.NativeCities[iNativeCity].getTeachUnit()).getDescription() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				if bIsVisited:
+					screen.setTableText(szState + "ListBackground", 5, iter, "<font=2>" + gc.getUnitInfo(self.NativeCities[iNativeCity].getTeachUnit()).getDescription() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				# Native advisor update - end - Nightinggale
 				
 				iter+= 1
