@@ -794,9 +794,13 @@ class CvDomesticAdvisor:
 				screen.setTableInt(szState + "ListBackground", 2, iter, "<font=2>" + unicode(self.NativeCities[iNativeCity].getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
 				# desired yield
+				DesiredYieldChar = ""
+				# Note: skipping writing text will break sorting. Drawing an empty string will ensure column sorting works as expected.
 				if bIsVisited:
-					iYield= self.NativeCities[iNativeCity].AI_getDesiredYield()
-					screen.setTableInt(szState + "ListBackground", 3, iter, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					# the yield is known. Replace the empty string with the yield in question.
+					iYield = pLoopCity.AI_getDesiredYield()
+					DesiredYieldChar = u" %c" % gc.getYieldInfo(iYield).getChar()
+				screen.setTableText(szState + "ListBackground", 3, iter, "<font=2>" + DesiredYieldChar + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				
 				# mission icon
 				if pLoopCity.getMissionaryRate() > 0 and pLoopCity.getMissionaryPlayer() != PlayerTypes.NO_PLAYER:
