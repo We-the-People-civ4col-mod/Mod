@@ -5185,7 +5185,7 @@ int CvCity::getOverflowYieldSellPercent() const
 		BuildingTypes eBuilding = (BuildingTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(i);
 		if (eBuilding != NO_BUILDING && isHasBuilding(eBuilding))
 		{
-			iMaxPercent = std::max(GC.getBuildingInfo(eBuilding).getOverflowSellPercent(), iMaxPercent);
+			iMaxPercent = std::max(GC.getBuildingInfo(eBuilding).getStorageLossSellPercentage(), iMaxPercent);
 		}
 	}
 	

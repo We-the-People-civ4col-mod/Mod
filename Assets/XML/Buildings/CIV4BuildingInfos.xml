@@ -57,7 +57,7 @@
 			<iAsset>10</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -129,7 +129,7 @@
 			<iAsset>25</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -215,7 +215,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -305,7 +305,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -403,7 +403,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -497,7 +497,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -584,7 +584,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>900</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -661,7 +661,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>600</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -737,7 +737,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>1500</iYieldStorage>
-			<iOverflowSellPercent>50</iOverflowSellPercent>
+			<iStorageLossSellPercentage>50</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -822,7 +822,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>2100</iYieldStorage>
-			<iOverflowSellPercent>50</iOverflowSellPercent>
+			<iStorageLossSellPercentage>50</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -911,7 +911,7 @@
 			<iAsset>150</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>2900</iYieldStorage>
-			<iOverflowSellPercent>80</iOverflowSellPercent>
+			<iStorageLossSellPercentage>80</iStorageLossSellPercentage>
 			<bIgnoresBoycott>1</bIgnoresBoycott>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1014,7 +1014,7 @@
 			<iAsset>150</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>3300</iYieldStorage>
-			<iOverflowSellPercent>90</iOverflowSellPercent>
+			<iStorageLossSellPercentage>90</iStorageLossSellPercentage>
 			<bIgnoresBoycott>1</bIgnoresBoycott>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1106,7 +1106,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1187,7 +1187,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1276,7 +1276,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1366,7 +1366,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>100</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1452,7 +1452,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>200</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1546,7 +1546,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>300</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1632,7 +1632,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1713,7 +1713,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1799,7 +1799,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1889,7 +1889,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1979,7 +1979,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2070,7 +2070,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>500</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2147,7 +2147,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>500</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2224,7 +2224,7 @@
 			<iAsset>25</iAsset>
 			<iPower>25</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2301,7 +2301,7 @@
 			<iAsset>50</iAsset>
 			<iPower>50</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2390,7 +2390,7 @@
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2479,7 +2479,7 @@
 			<iAsset>150</iAsset>
 			<iPower>200</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2564,7 +2564,7 @@
 			<iAsset>150</iAsset>
 			<iPower>200</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2653,7 +2653,7 @@
 			<iAsset>150</iAsset>
 			<iPower>200</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2744,7 +2744,7 @@
 			<iAsset>150</iAsset>
 			<iPower>200</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -2816,7 +2816,7 @@
 			<iAsset>25</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges>
@@ -2893,7 +2893,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges>
@@ -2983,7 +2983,7 @@
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges>
@@ -3086,7 +3086,7 @@
 			<iAsset>150</iAsset>
 			<iPower>150</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges>
@@ -3189,7 +3189,7 @@
 			<iAsset>150</iAsset>
 			<iPower>150</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges>
@@ -3302,7 +3302,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3383,7 +3383,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3472,7 +3472,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3562,7 +3562,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3643,7 +3643,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3732,7 +3732,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3818,7 +3818,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3899,7 +3899,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -3988,7 +3988,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4078,7 +4078,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4159,7 +4159,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4248,7 +4248,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4334,7 +4334,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4415,7 +4415,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4504,7 +4504,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4590,7 +4590,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4671,7 +4671,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4760,7 +4760,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4846,7 +4846,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -4927,7 +4927,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5016,7 +5016,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5102,7 +5102,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5183,7 +5183,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5272,7 +5272,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5362,7 +5362,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5451,7 +5451,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5541,7 +5541,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5622,7 +5622,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5711,7 +5711,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5797,7 +5797,7 @@
 			<iAsset>50</iAsset>
 			<iPower>10</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5878,7 +5878,7 @@
 			<iAsset>100</iAsset>
 			<iPower>50</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -5967,7 +5967,7 @@
 			<iAsset>200</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6065,7 +6065,7 @@
 			<iAsset>200</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6163,7 +6163,7 @@
 			<iAsset>200</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6259,7 +6259,7 @@
 			<iAsset>100</iAsset>
 			<iPower>50</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6340,7 +6340,7 @@
 			<iAsset>150</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6429,7 +6429,7 @@
 			<iAsset>250</iAsset>
 			<iPower>200</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6527,7 +6527,7 @@
 			<iAsset>250</iAsset>
 			<iPower>200</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6622,7 +6622,7 @@
 			<iAsset>50</iAsset>
 			<iPower>50</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6707,7 +6707,7 @@
 			<iAsset>50</iAsset>
 			<iPower>50</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6801,7 +6801,7 @@
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6899,7 +6899,7 @@
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -6994,7 +6994,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7070,7 +7070,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7159,7 +7159,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7248,7 +7248,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7338,7 +7338,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7424,7 +7424,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7518,7 +7518,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7617,7 +7617,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7708,7 +7708,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7803,7 +7803,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7899,7 +7899,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -7976,7 +7976,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8070,7 +8070,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8168,7 +8168,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8271,7 +8271,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8366,7 +8366,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8456,7 +8456,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8550,7 +8550,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8644,7 +8644,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -8739,7 +8739,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges>
 				<LandPlotYieldChange>
@@ -8829,7 +8829,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges>
 				<LandPlotYieldChange>
@@ -8919,7 +8919,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9021,7 +9021,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9102,7 +9102,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9188,7 +9188,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9260,7 +9260,7 @@
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9341,7 +9341,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9430,7 +9430,7 @@
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9520,7 +9520,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9597,7 +9597,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9664,7 +9664,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9731,7 +9731,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9798,7 +9798,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9865,7 +9865,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9932,7 +9932,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -9999,7 +9999,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10066,7 +10066,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10133,7 +10133,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10200,7 +10200,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10267,7 +10267,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10334,7 +10334,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10401,7 +10401,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10468,7 +10468,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10535,7 +10535,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10602,7 +10602,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10669,7 +10669,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10736,7 +10736,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10803,7 +10803,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10870,7 +10870,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -10937,7 +10937,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11004,7 +11004,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11071,7 +11071,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11138,7 +11138,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11205,7 +11205,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11272,7 +11272,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11339,7 +11339,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11406,7 +11406,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11473,7 +11473,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11540,7 +11540,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11607,7 +11607,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11674,7 +11674,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11741,7 +11741,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11808,7 +11808,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11875,7 +11875,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -11942,7 +11942,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -12009,7 +12009,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -12076,7 +12076,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>0</iYieldStorage>
-			<iOverflowSellPercent>0</iOverflowSellPercent>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>

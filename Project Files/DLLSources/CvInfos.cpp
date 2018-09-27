@@ -4750,7 +4750,7 @@ m_iHealRateChange(0),
 m_iDefenseModifier(0),
 m_iBombardDefenseModifier(0),
 m_iMissionType(NO_MISSION),
-m_iOverflowSellPercent(0),
+m_iStorageLossSellPercentage(0),
 m_bIgnoresBoycott(false),
 m_iSpecialBuildingPriority(0),
 m_fVisibilityPriority(0.0f),
@@ -4920,10 +4920,6 @@ int CvBuildingInfo::getMissionType() const
 void CvBuildingInfo::setMissionType(int iNewType)
 {
 	m_iMissionType = iNewType;
-}
-int CvBuildingInfo::getOverflowSellPercent() const
-{
-	return m_iOverflowSellPercent;
 }
 int CvBuildingInfo::getSpecialBuildingPriority() const
 {
@@ -5166,7 +5162,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	// TAC - AI Buildings - koma13 - START
 	stream->Read(&m_iAICitySize);
 	// TAC - AI Buildings - koma13 - END
-	stream->Read(&m_iOverflowSellPercent);
+	stream->Read(&m_iStorageLossSellPercentage);
 	stream->Read(&m_iSpecialBuildingPriority);
 	stream->Read(&m_fVisibilityPriority);
 	stream->Read(&m_bWorksWater);
@@ -5260,7 +5256,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	// TAC - AI Buildings - koma13 - START
 	stream->Write(m_iAICitySize);
 	// TAC - AI Buildings - koma13 - END
-	stream->Write(m_iOverflowSellPercent);
+	stream->Write(m_iStorageLossSellPercentage);
 	stream->Write(m_iSpecialBuildingPriority);
 	stream->Write(m_fVisibilityPriority);
 	stream->Write(m_bWorksWater);
@@ -5350,7 +5346,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMilitaryProductionModifier, "iMilitaryProductionModifier");
 	pXML->GetChildXmlValByName(&m_iDefenseModifier, "iDefense");
 	pXML->GetChildXmlValByName(&m_iBombardDefenseModifier, "iBombardDefense");
-	pXML->GetChildXmlValByName(&m_iOverflowSellPercent, "iOverflowSellPercent");
+	pXML->GetChildXmlValByName(&m_iStorageLossSellPercentage, "iStorageLossSellPercentage");
 	pXML->GetChildXmlValByName(&m_bIgnoresBoycott, "bIgnoresBoycott");
 	pXML->GetChildXmlValByName(&m_iSpecialBuildingPriority, "iSpecialBuildingPriority");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");

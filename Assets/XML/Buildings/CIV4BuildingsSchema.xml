@@ -73,13 +73,8 @@
 	<ElementType name="iAsset" content="textOnly" dt:type="int"/>
 	<ElementType name="iPower" content="textOnly" dt:type="int"/>
 	<ElementType name="iYieldStorage" content="textOnly" dt:type="int"/>
-<<<<<<< HEAD
-	<ElementType name="iOverflowSellPercent" content="textOnly" dt:type="int"/>
-	<ElementType name="bIgnoresBoycott" content="textOnly" dt:type="boolean"/>
-=======
 	<ElementType name="iStorageLossSellPercentage" content="textOnly" dt:type="int"/><!-- The percentage of the price in europe, at which the loss of goods in a cities storage is sold. -->
 	<ElementType name="bIgnoresBoycott" content="textOnly" dt:type="boolean"/><!-- If this building allows a city to ignore european boycotts, when selling lost goods from the storage. -->
->>>>>>> 952d9af... Added xml flag regarding ignoring boycotts to BuildingInfos. Added xml comment regarding flag bIgnoresBoycott.
 	<ElementType name="iSpecialBuildingPriority" content="textOnly" dt:type="int"/>
 	<ElementType name="fVisibilityPriority" content="textOnly"/>
 	<ElementType name="FreePromotion" content="textOnly"/>
@@ -239,7 +234,7 @@
 		<element type="iAsset"/>
 		<element type="iPower"/>
 		<element type="iYieldStorage"/>
-		<element type="iOverflowSellPercent"/>
+		<element type="iStorageLossSellPercentage"/>
 		<element type="bIgnoresBoycott" minOccurs="0"/>
 		<element type="fVisibilityPriority"/>
 		<element type="LandPlotYieldChanges"/>
