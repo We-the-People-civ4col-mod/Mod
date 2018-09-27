@@ -654,6 +654,9 @@ public:
 	int getOrderedStudents(UnitTypes eUnit);
 	bool getOrderedStudentsRepeat(UnitTypes eUnit);
 	// Teacher List - end - Nightinggale
+
+
+	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
 	
 protected:
 	int m_iID;
@@ -833,6 +836,9 @@ protected:
 
 	virtual bool AI_addBestCitizen() = 0;
 	virtual bool AI_removeWorstCitizen() = 0;
+
+	YieldTypes m_ePreferredYieldAtCityPlot;
+	void setPreferredYieldAtCityPlot(YieldTypes eYield);
 };
 
 // NBMOD EDU cache - start - Nightinggale

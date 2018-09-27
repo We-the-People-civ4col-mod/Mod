@@ -77,6 +77,7 @@ protected:
 	void doMoveCargoToCity(const CvWidgetDataStruct& destinationWidgetData, const CvWidgetDataStruct& sourceWidgetData);
 	void doAssignTradeRoute(const CvWidgetDataStruct& widgetDataStruct);
 	void doGoToCity(const CvWidgetDataStruct& widgetDataStruct);
+	void doCityCenterPlotClicked(const CvWidgetDataStruct& widgetDataStruct);
 	void doMoveCargoToTransport(const CvWidgetDataStruct& destinationWidgetData, const CvWidgetDataStruct& sourceWidgetData);
 	void doCreateTradeRoute(const CvWidgetDataStruct& widgetDataStruct);
 	void doEditTradeRoute(const CvWidgetDataStruct& widgetDataStruct);
@@ -162,6 +163,8 @@ protected:
 	void parseProductionModHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
 	void parseLeaderheadHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
 	void parseLeaderLineHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
+
+	void parseHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer);
 
 	EmphasizeTypes getNextEmphasis(CvCity* pCity, YieldTypes eYield);
 	void doAssignCitizenToPlot(CvCity* pCity, int iPlotIndex, int iUnitId);

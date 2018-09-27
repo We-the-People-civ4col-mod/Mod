@@ -74,6 +74,8 @@ CvCity::CvCity()
 	m_aiYieldRank = new int[NUM_YIELD_TYPES];
 	m_abYieldRankValid = new bool[NUM_YIELD_TYPES];
 
+	m_ePreferredYieldAtCityPlot = NO_YIELD;
+
 	reset(0, NO_PLAYER, 0, 0, true);
 }
 
@@ -1095,6 +1097,10 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		setOrderedStudents((UnitTypes)iData1, iData2, bOption, bAlt, bShift);
 		break;
 	// Teacher List - end - Nightinggale
+
+	case TASK_CHOOSE_CITY_PLOT_YIELD:
+		setPreferredYieldAtCityPlot(static_cast<YieldTypes>(iData1));
+		break;
 
 	default:
 		FAssertMsg(false, "eTask failed to match a valid option");
@@ -7533,6 +7539,11 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
 	//Androrc End
 
+	if (uiFlag > 5)
+	{
+		pStream->Read(&m_ePreferredYieldAtCityPlot);
+	}
+
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.read(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
 	ma_aiCustomHouseNeverSell.read(    pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
@@ -7654,7 +7665,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=5;
+	uint uiFlag=6;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	// just-in-time yield arrays - start - Nightinggale
@@ -7733,6 +7744,8 @@ void CvCity::write(FDataStreamBase* pStream)
 	// R&R, Androrc, Domestic Market
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
 	//Androrc End
+
+	pStream->Write(m_ePreferredYieldAtCityPlot);
 
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.write(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
@@ -11487,6 +11500,39 @@ void CvCity::doEntertainmentBuildings()
 	}
 }
 // R&R, ray, Entertainment Buildings - END
+
+void CvCity::setPreferredYieldAtCityPlot(YieldTypes eYield)
+{
+	FAssert(eYield >= NO_YIELD);
+	if (eYield < NO_YIELD)
+	{
+		return;
+	}
+
+	if (eYield == m_ePreferredYieldAtCityPlot)
+	{
+		// don't dirty a lot of stuff for no change
+		return;
+	}
+
+	// the actual data change
+	m_ePreferredYieldAtCityPlot = eYield;
+
+
+	// update cache
+	plot()->updateYield(false);
+	setYieldRateDirty();
+
+	if ((getTeam() == GC.getGameINLINE().getActiveTeam()) || GC.getGameINLINE().isDebugMode())
+	{
+		plot()->updateSymbolDisplay();
+	}
+
+	if (isCitySelected())
+	{
+		gDLL->getInterfaceIFace()->setDirty(ResourceTable_DIRTY_BIT, true);
+	}
+}
 
 // building affected cache - start - Nightinggale
 void CvCity::UpdateBuildingAffectedCache()

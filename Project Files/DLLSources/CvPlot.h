@@ -329,6 +329,7 @@ public:
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	int calculatePotentialProfessionYieldsAmount(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit, bool bDisplay) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
+	int calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) const;
 	bool hasYield() const;
 	void updateYield(bool bUpdateCity);
 	int calculateMaxYield(YieldTypes eYield) const;

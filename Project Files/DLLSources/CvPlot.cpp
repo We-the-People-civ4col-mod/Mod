@@ -5923,16 +5923,22 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 				if (eYield != YIELD_FOOD && GC.getYieldInfo(eYield).isCargo())
 				{
 					//cities get food and one other yield
-					YieldTypes bestYield = NO_YIELD;
+					YieldTypes bestYield = pCity->getPreferredYieldAtCityPlot();
 					int bestOutput = 0;
-					for (int i = 0; i < NUM_YIELD_TYPES; i++)
+					
+					// in display mode, only use the preferred yield for the owner's team
+					// otherwise yield icons on the map will reveal the settings of the other players
+					if (!bDisplay || getTeam() == GC.getGameINLINE().getActiveTeam() || GC.getGameINLINE().isDebugMode())
 					{
-						//ignore food and lumber
-						// R&R, ray Livestock Breeding
-						// also ignore Livestock
-						if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE) && (i != YIELD_HEMP) && !GC.getYieldInfo((YieldTypes)i).isLivestock())
+						bestOutput = calculatePotentialCityYield(bestYield, pCity);
+					}
+
+					if (bestOutput == 0)
+					{
+						bestYield = NO_YIELD;
+						for (int i = 0; i < NUM_YIELD_TYPES; i++)
 						{
-							int natureYield = calculateNatureYield((YieldTypes) i, pCity->getTeam(), false);
+							int natureYield = calculatePotentialCityYield((YieldTypes)i, pCity);
 							if (natureYield > bestOutput)
 							{
 								bestYield = (YieldTypes) i;
@@ -6058,6 +6064,42 @@ int CvPlot::calculatePotentialProfessionYieldsAmount(YieldTypes eYield, Professi
 	return iYieldAmount;
 }
 // R&R, ray , MYCP partially based on code of Aymerick - END
+
+int CvPlot::calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) const
+{
+	// callers don't verify if eYield is valid
+	// NO_YIELD is frequently used
+	if (eYield < 0 || eYield >= NUM_YIELD_TYPES)
+	{
+		return 0;
+	}
+
+	if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE || eYield == YIELD_HEMP)
+	{
+		return 0;
+	}
+
+	CvYieldInfo &kYieldInfo = GC.getYieldInfo(eYield);
+
+	if (!kYieldInfo.isCargo() || kYieldInfo.isLivestock())
+	{
+		return 0;
+	}
+
+	int iYield = calculateNatureYield(eYield, pCity->getTeam(), false);
+
+	if (iYield == 0)
+	{
+		return 0;
+	}
+
+	iYield += kYieldInfo.getCityChange();
+	iYield += GET_PLAYER(pCity->getOwnerINLINE()).getCityExtraYield(eYield);
+
+	return iYield;
+}
+
+
 int CvPlot::calculateYield(YieldTypes eYield, bool bDisplay) const
 {
 	const CvUnit* pUnit = NULL;

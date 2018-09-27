@@ -4812,9 +4812,6 @@ bool CvUnitAI::AI_joinGreatAdmiral()
 {
 	CvUnit* pLoopUnit;
 	CvPlot* plot;
-	int iPathTurns;
-	int iValue;
-	int iBestValue;
 	int iLoop;
 
 	for (pLoopUnit = GET_PLAYER(getOwnerINLINE()).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER(getOwnerINLINE()).nextUnit(&iLoop))
