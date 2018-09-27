@@ -167,6 +167,8 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 			GC.getUnitClassInfo((UnitClassTypes)i).readPass3();
 		}
 	}
+	// Load CivEffects
+	PreLoadGlobalClassInfo(GC.getCivEffectInfo(), "CIV4CivEffectsInfos", "CivEffects", "Civ4CivEffectInfos/CivEffectInfo", NULL);
 	//Androrc UnitArtStyles
 	PreLoadGlobalClassInfo(GC.getUnitArtStyleTypeInfo(), "CIV4UnitArtStyleTypeInfos", "Civilizations", "Civ4UnitArtStyleTypeInfos/UnitArtStyleTypeInfos/UnitArtStyleTypeInfo", false);
 	//Androrc End

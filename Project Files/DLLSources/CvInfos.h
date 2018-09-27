@@ -4625,4 +4625,18 @@ protected:
 };
 // PatchMod: Achievements END
 
+class CivEffectInfo :
+	public CvInfoBase
+{
+public:
+	CivEffectInfo();
+	~CivEffectInfo();
+
+	bool read(CvXMLLoadUtility* pXML);
+
+protected:
+
+};
+
+
 #endif

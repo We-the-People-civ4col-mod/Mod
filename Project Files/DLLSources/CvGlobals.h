@@ -117,6 +117,8 @@ class CvMainMenuInfo;
 class CvAchieveInfo;
 // PatchMod: Achievements END
 
+class CivEffectInfo;
+
 
 class CvGlobals
 {
@@ -530,6 +532,12 @@ public:
 	DllExport int getNumEventInfos();
 	DllExport std::vector<CvEventInfo*>& getEventInfo();
 	DllExport CvEventInfo& getEventInfo(EventTypes eEvent);
+
+	// CivEffect
+	inline int getNumCivEffectInfos() const { return m_paCivEffectInfo.size(); }
+	std::vector<CivEffectInfo*>& getCivEffectInfo();
+	const CivEffectInfo* getCivEffectInfo(CivEffectTypes eCivEffect) const;
+	// CivEffect end
 
 	//Androrc UnitArtStyles
 	DllExport int getNumUnitArtStyleTypeInfos();
@@ -1060,6 +1068,7 @@ protected:
 	//Androrc UnitArtStyles
     std::vector<CvUnitArtStyleTypeInfo*> m_paUnitArtStyleTypeInfo;
 	//Androrc End
+	std::vector<CivEffectInfo*> m_paCivEffectInfo;
 
 	// Game Text
 	std::vector<CvGameText*> m_paGameTextXML;

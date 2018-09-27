@@ -2835,6 +2835,12 @@ enum DllExport TradeMessageTypes
 };
 // TAC - Trade Messages - koma13 - END
 
+enum CivEffectTypes
+{
+	NO_CIV_EFFECT = -1,
+	FIRST_CIV_EFFECT = 0,
+};
+
 enum JITarrayTypes
 {
 	NO_JIT_ARRAY_TYPE = -1,

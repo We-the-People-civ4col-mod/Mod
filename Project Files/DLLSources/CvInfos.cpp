@@ -15371,3 +15371,24 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 }
 // TAC - AI More Immigrants - koma13 - END
 
+///
+/// CivEffect
+///
+
+CivEffectInfo::CivEffectInfo()
+{
+}
+
+CivEffectInfo::~CivEffectInfo()
+{
+}
+
+bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
+{
+	if (!CvInfoBase::read(pXML))
+	{
+		return false;
+	}
+
+	return true;
+}

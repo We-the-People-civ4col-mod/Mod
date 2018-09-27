@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Achievement Infos -->
+<Civ4CivEffectInfos xmlns="x-schema:CIV4CivEffectsInfosSchema.xml">
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT</Type>
+	</CivEffectInfo>
+</Civ4CivEffectInfos>

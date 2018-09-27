@@ -1,0 +1,15 @@
+<!-- Sid Meier's Civilization 4 -->
+<!-- CivEffect Infos Schema -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+	<ElementType name="Type" content="textOnly"/>
+
+
+
+	<ElementType name="CivEffectInfo" content="eltOnly">
+		<element type="Type"/>
+	</ElementType>
+	<ElementType name="Civ4CivEffectInfos" content="eltOnly">
+		<element type="CivEffectInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+</Schema>
