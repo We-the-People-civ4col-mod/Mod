@@ -453,16 +453,28 @@ class CvDiplomacy:
 
 		#RWL Bargaining Start 
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_BARGAIN_BUY_SUCCESS")):
-			self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_BUY", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_ACCEPT", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
-						
+		
+			# Erik: This prevents the exploit where the player adds
+			# additional items to the table after the AI has accepted the bargain
+			if (self.diploScreen.isAIOffer()):
+				self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_BUY", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_ACCEPT", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
+			else:
+				self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
+									
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_BARGAIN_SELL_SUCCESS")):
-			self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_SELL", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_ACCEPT", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
+
+			if (self.diploScreen.isAIOffer()):
+				self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_SELL", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_BARGAIN_ACCEPT", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
+			else:
+				self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
+				self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
 				
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_BARGAIN_FAIL")):
 			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
