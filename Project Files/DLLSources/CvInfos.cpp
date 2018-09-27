@@ -4752,6 +4752,7 @@ m_iBombardDefenseModifier(0),
 m_iMissionType(NO_MISSION),
 m_iStorageLossSellPercentage(0),
 m_bIgnoresBoycott(false),
+m_bUnlocksStorageLossTradeSettings(false),
 m_iSpecialBuildingPriority(0),
 m_fVisibilityPriority(0.0f),
 m_bWorksWater(false),
@@ -5348,6 +5349,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iBombardDefenseModifier, "iBombardDefense");
 	pXML->GetChildXmlValByName(&m_iStorageLossSellPercentage, "iStorageLossSellPercentage");
 	pXML->GetChildXmlValByName(&m_bIgnoresBoycott, "bIgnoresBoycott");
+	pXML->GetChildXmlValByName(&m_bUnlocksStorageLossTradeSettings, "bUnlocksStorageLossTradeSettings");
 	pXML->GetChildXmlValByName(&m_iSpecialBuildingPriority, "iSpecialBuildingPriority");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");

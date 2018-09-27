@@ -913,6 +913,7 @@
 			<iYieldStorage>2900</iYieldStorage>
 			<iStorageLossSellPercentage>80</iStorageLossSellPercentage>
 			<bIgnoresBoycott>1</bIgnoresBoycott>
+			<bUnlocksStorageLossTradeSettings>1</bUnlocksStorageLossTradeSettings>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
@@ -1016,6 +1017,7 @@
 			<iYieldStorage>3300</iYieldStorage>
 			<iStorageLossSellPercentage>90</iStorageLossSellPercentage>
 			<bIgnoresBoycott>1</bIgnoresBoycott>
+			<bUnlocksStorageLossTradeSettings>1</bUnlocksStorageLossTradeSettings>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>

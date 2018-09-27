@@ -1247,6 +1247,7 @@ public:
 	DllExport void setMissionType(int iNewType);
 	inline int getStorageLossSellPercentage() const { return m_iStorageLossSellPercentage; }
 	inline bool getIgnoresBoycott() const { return m_bIgnoresBoycott; }
+	inline bool getUnlocksStorageLossTradeSettings() const { return m_bUnlocksStorageLossTradeSettings; }
 	DllExport int getSpecialBuildingPriority() const;
 	DllExport float getVisibilityPriority() const;
 	DllExport bool isWorksWater() const;
@@ -1335,6 +1336,7 @@ protected:
 	int m_iMissionType;
 	int m_iStorageLossSellPercentage;
 	bool m_bIgnoresBoycott;
+	bool m_bUnlocksStorageLossTradeSettings;
 	int m_iSpecialBuildingPriority;
 	float m_fVisibilityPriority;
 	bool m_bWorksWater;
