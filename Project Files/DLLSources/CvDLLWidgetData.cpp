@@ -388,6 +388,9 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_RECEIVE_MOVE_CARGO_TO_TRANSPORT:
 		parseReceiveMoveCargoToTransportHelp(widgetDataStruct, szBuffer);
 		break;
+	case WIDGET_HELP_TEXT:
+		parseHelp(widgetDataStruct, szBuffer);
+		break;
 
 	}
 }
@@ -656,6 +659,9 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 		break;
 	case WIDGET_GOTO_CITY:
 		doGoToCity(widgetDataStruct);
+		break;
+	case WIDGET_CITY_CENTER_PLOT:
+		doCityCenterPlotClicked(widgetDataStruct);
 		break;
 
 	}
@@ -4206,5 +4212,25 @@ void CvDLLWidgetData::doGoToCity(const CvWidgetDataStruct &widgetDataStruct)
 	if (pCity != NULL)
 	{
 		gDLL->getInterfaceIFace()->selectCity(pCity);
+	}
+}
+
+void CvDLLWidgetData::doCityCenterPlotClicked(const CvWidgetDataStruct &widgetDataStruct)
+{
+	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD);
+	if (NULL != pInfo)
+	{
+		gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
+	}
+}
+
+
+void CvDLLWidgetData::parseHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
+{
+	switch (widgetDataStruct.m_iData2)
+	{
+	case HELP_TEXT_BUTTON_POPUP_CITY_YIELD_PLOT:
+		szBuffer.assign(gDLL->getText("TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP"));
+		return;
 	}
 }

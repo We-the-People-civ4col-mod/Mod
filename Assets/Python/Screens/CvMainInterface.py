@@ -2131,7 +2131,8 @@ class CvMainInterface:
 			
 			if (pHeadSelectedCity and CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW):
 				for iPlotIndex in range(gc.getNUM_CITY_PLOTS()):
-					if iPlotIndex != gc.getCITY_HOME_PLOT():
+					# removed an if statement. Added a bogus one to avoid touching all lines due to indenting
+					if 1:
 						pUnit = pHeadSelectedCity.getUnitWorkingPlot(iPlotIndex)
 						pPlot = pHeadSelectedCity.getCityIndexPlot(iPlotIndex)
 						if not pPlot.isNone():
@@ -2146,7 +2147,18 @@ class CvMainInterface:
 
 							# PLOT DRAG ON PANELS
 ###=====City Radius 2 (NeverMind)===2/2=====###
-							screen.addDDSGFC("PlotDragOn" + str(iPlotIndex), "", int(screenPosition.x), int(screenPosition.y) - ButtonSize / (city_radius - 1), CITY_VIEW_BOX_HEIGHT_AND_WIDTH / city_radius, CITY_VIEW_BOX_HEIGHT_AND_WIDTH / city_radius, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_PLOT, iPlotIndex, -1) 
+
+							x = int(screenPosition.x)
+							y =	int(screenPosition.y) - ButtonSize / (city_radius - 1)
+							size_x = CITY_VIEW_BOX_HEIGHT_AND_WIDTH / city_radius
+							size_y = CITY_VIEW_BOX_HEIGHT_AND_WIDTH / city_radius
+							
+							if iPlotIndex == gc.getCITY_HOME_PLOT():
+								screen.setImageButton("PlotDragOn" + str(iPlotIndex), "", x, y, size_x, size_y, WidgetTypes.WIDGET_CITY_CENTER_PLOT, -1, -1)
+								CitizenHideList.append("PlotDragOn" + str(iPlotIndex))
+								continue
+								
+							screen.addDDSGFC("PlotDragOn" + str(iPlotIndex), "", x, y, size_x, size_y, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_PLOT, iPlotIndex, -1) 
 							CitizenHideList.append("PlotDragOn" + str(iPlotIndex))
 
 							if (not pUnit.isNone()):

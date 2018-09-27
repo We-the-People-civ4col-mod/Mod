@@ -501,10 +501,18 @@ enum DllExport WidgetTypes
 	WIDGET_TEACHER_LIST,
 	WIDGET_HELP_TEACHER_UNIT,
 	// Teacher List - end - Nightinggale
+	WIDGET_CITY_CENTER_PLOT,
+	WIDGET_HELP_TEXT,
 
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
 #endif
+};
+
+enum HelpTextTypes
+{
+	HELP_TEXT_BUTTON_POPUP_CITY_YIELD_PLOT,
+
 };
 
 enum DllExport ButtonPopupTypes
@@ -564,6 +572,7 @@ enum DllExport ButtonPopupTypes
 	BUTTONPOPUP_TEACHER_LIST,
 	// Teacher List - end - Nightinggale	
 	BUTTONPOPUP_SAVE_TRADEGROUP,//R&R mod, vetiarvind, trade groups
+	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
 	
 	
 
@@ -1105,6 +1114,7 @@ enum DllExport TaskTypes
 	// Teacher List - end - Nightinggale
 	TASK_YIELD_TRADEROUTE, // transport feeder - Nightinggale
 	TASK_AUTO_TRADEROUTE, // auto traderoute - Nightinggale
+	TASK_CHOOSE_CITY_PLOT_YIELD,
 
 #ifdef _USRDLL
 	NUM_TASK_TYPES

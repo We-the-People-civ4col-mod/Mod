@@ -96,6 +96,7 @@ void CvDLLButtonPopup::OnEscape(CvPopup& popup, CvPopupInfo &info)
 	case BUTTONPOPUP_CONFIRMCOMMAND:
 	case BUTTONPOPUP_ACHIEVEMENTS: //closing achievement window with escape
 	case BUTTONPOPUP_GOTO_MENU:		// TAC - Goto Menu - koma13
+	case BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD:
 		gDLL->getInterfaceIFace()->popupSetAsCancelled(&popup);
 		break;
 	default:
@@ -1085,6 +1086,20 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		break;
 	// TAC - Goto Menu - koma13 - END
 
+	case BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD:
+		{
+			int iYield = pPopupReturn->getButtonClicked();
+			if (iYield >= NO_YIELD) // cancel is -2
+			{
+				CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
+				if (pCity->getPreferredYieldAtCityPlot() != iYield)
+				{
+					gDLL->sendDoTask(info.getData1(), TASK_CHOOSE_CITY_PLOT_YIELD, iYield, -1, false, false, false, false);
+				}
+			}
+		}
+		break;
+
 	default:
 		FAssert(false);
 		break;
@@ -1342,6 +1357,9 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 		bLaunched = launchGotoMenuPopup(pPopup, info);
 		break;
 	// TAC - Goto Menu - koma13 - END
+	case BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD:
+		bLaunched = launchChooseCityPlotYieldPopup(pPopup, info);
+		break;
 
 	default:
 		FAssert(false);
@@ -3646,3 +3664,58 @@ bool CvDLLButtonPopup::isYieldSupportedInExportPanelForCity(CvCity* pCity, Yield
 }
 
 // R&R mod, vetiarvind, max yield import limit - end
+
+bool CvDLLButtonPopup::launchChooseCityPlotYieldPopup(CvPopup* pPopup, CvPopupInfo &info)
+{
+	CvCity *pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	CvPlot *pPlot = pCity->plot();
+
+	if (pPlot == NULL)
+	{
+		return false;
+	}
+	
+	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+
+	if (ePlayer == NO_PLAYER)
+	{
+		return false;
+	}
+
+	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
+	info.setData1(pCity->getID());
+
+
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE"));
+	gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_AUTO"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_AUTOMATE")->getPath(), -1, WIDGET_HELP_TEXT, -1, HELP_TEXT_BUTTON_POPUP_CITY_YIELD_PLOT);
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		int iAmount = pPlot->calculatePotentialCityYield(eYield, pCity);
+		if (iAmount > 0)
+		{
+			CvYieldInfo& kYieldInfo = GC.getYieldInfo(eYield);
+
+			CvWString text = CvWString::format(L"%d%c ", iAmount, kYieldInfo.getChar());
+			text += gDLL->getText(kYieldInfo.getTextKeyWide());
+
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, text, kYieldInfo.getButton(), eYield, WIDGET_HELP_YIELD, eYield, -1);
+		}
+	}
+
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NEVER_MIND"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(), -2, WIDGET_GENERAL);
+
+	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
+
+	return true;
+}

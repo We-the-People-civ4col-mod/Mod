@@ -308,6 +308,8 @@ void CyEnumsPythonInterface()
 		//Androrc End
 		.value("WIDGET_DOCK_AFRICA", WIDGET_DOCK_AFRICA) /*** TRIANGLETRADE 10/28/08 by DPII ***/
 		.value("WIDGET_DOCK_PORT_ROYAL", WIDGET_DOCK_PORT_ROYAL) // R&R, ray, Port Royal
+		.value("WIDGET_CITY_CENTER_PLOT", WIDGET_CITY_CENTER_PLOT)
+		.value("WIDGET_HELP_TEXT", WIDGET_HELP_TEXT)
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")
