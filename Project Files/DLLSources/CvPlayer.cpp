@@ -39,6 +39,8 @@
 // Public Functions...
 
 CvPlayer::CvPlayer()
+	: m_jit_AllowBuildings(1)
+	, m_jit_AllowUnits(1)
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
@@ -155,6 +157,9 @@ void CvPlayer::init(PlayerTypes eID)
 	//--------------------------------
 	// Init saved data
 	reset(eID);
+
+	// set the CivEffect cache
+	rebuildCivEffectCache();
 
     /** NBMOD TAX **/
     m_iMaxTaxRate = GC.getHandicapInfo(getHandicapType()).NBMOD_GetInitMaxTaxRate();
@@ -13021,6 +13026,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iMissionaryRateModifier);
 	pStream->Read(&m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
 
+	// The CivEffect cache isn't saved. Instead it's recalculated on load.
+	// This will make it adapt to changed xml settings.
+	// Set the CivEffect cache before any other caches as CivEffects doens't rely on other caches, but the opposite might be the case.
+	rebuildCivEffectCache();
+
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
@@ -22688,4 +22698,49 @@ namespace
 void CvPlayer::sortEuropeUnits()
 {
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
+}
+
+void CvPlayer::applyCivEffect(int iChange, const CivEffectInfo* pCivEffect)
+{
+
+}
+
+void CvPlayer::resetCivEffectCache()
+{
+	m_jit_AllowBuildings.reset();
+	m_jit_AllowUnits.reset();
+}
+
+void CvPlayer::rebuildCivEffectCache()
+{
+	resetCivEffectCache();
+
+	if (getCivilizationType() == NO_CIVILIZATION)
+	{
+		return;
+	}
+
+	applyCivEffect(1, GC.getCivEffectInfo(FIRST_CIV_EFFECT));
+
+
+
+	// Setup some default data based on xml values
+	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
+	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());
+
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < GC.getNumBuildingInfos(); ++eBuilding)
+	{
+		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))
+		{
+			m_jit_AllowBuildings.set(-50, eBuilding);
+		}
+	}
+
+	for (UnitTypes eUnit = FIRST_UNIT; eUnit < GC.getNumUnitInfos(); ++eUnit)
+	{
+		if (eUnit != kCivInfo.getCivilizationUnits(GC.getUnitInfo(eUnit).getUnitClassType()))
+		{
+			m_jit_AllowUnits.set(-50, eUnit);
+		}
+	}
 }

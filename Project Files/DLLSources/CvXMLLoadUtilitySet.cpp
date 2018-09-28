@@ -249,6 +249,12 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 
 
 	bFirstRead = false;
+
+	if (bFirst)
+	{
+		// TODO write some message, which also shows up even if asserts are disabled. The game will crash with an empty CivEffect file
+		FAssertMsg(GC.getNumCivEffectInfos() >= 1 && strcmp(GC.getCivEffectInfo(FIRST_CIV_EFFECT)->getType(), "CIV_EFFECT_DEFAULT") == 0, "First CivEffect needs to be called CIV_EFFECT_DEFAULT");
+	}
 }
 /// XML type preloading - end - Nightinggale
 

@@ -930,6 +930,7 @@ void CacheArray2D<T>::assign(T iNewValue, int iIndex = -1, int iSubIndex = -1)
 
 template class JustInTimeArray <int>;
 template class JustInTimeArray <unsigned short>;
+template class JustInTimeArray <char>;
 
 // compile 2D JIT arrays
 

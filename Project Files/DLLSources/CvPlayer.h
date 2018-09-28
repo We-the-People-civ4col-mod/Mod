@@ -1085,6 +1085,24 @@ public:
 	void updateTransportThreshold(YieldTypes eYield);
 	// transport feeder - end - Nightinggale
 	void sortEuropeUnits();
+
+
+	///
+	/// CivEffects
+	///
+
+public:
+	void applyCivEffect(int iChange, const CivEffectInfo* pCivEffect);
+	void resetCivEffectCache();
+	void rebuildCivEffectCache();
+
+	inline bool canUseBuilding(BuildingTypes eBuilding)            const { return m_jit_AllowBuildings.get(eBuilding) > 0; }
+	inline bool canUseUnit(UnitTypes eUnit)                        const { return m_jit_AllowUnits    .get(eUnit)     > 0; }
+
+
+private:
+	BuildingArray<char>     m_jit_AllowBuildings;
+	UnitArray<char>         m_jit_AllowUnits;
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
