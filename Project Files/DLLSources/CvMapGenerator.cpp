@@ -145,6 +145,14 @@ bool CvMapGenerator::canPlaceGoodyAt(ImprovementTypes eImprovement, int iX, int 
 		return false;
 	}
 
+	const FeatureTypes eFeature = pPlot->getFeatureType();
+
+	// Erik: Do not place goodies\shipwrecks on impassable features (e.g. ice)
+	if (eFeature != NO_FEATURE && GC.getFeatureInfo(eFeature).isImpassable())
+	{
+		return false;
+	}
+
 	long result = 0;
 	if (gDLL->getPythonIFace()->pythonCanPlaceGoodyAt(pPlot, &result) && !gDLL->getPythonIFace()->pythonUsingDefaultImpl()) // Python override
 	{
@@ -201,17 +209,20 @@ void CvMapGenerator::addGameElements()
 	addFeatures();
 	gDLL->logMemState("CvMapGen after add features");
 
-	addBonuses();
-	gDLL->logMemState("CvMapGen after add bonuses");
-
-	addGoodies();
-	gDLL->logMemState("CvMapGen after add goodies");
-
 	addEurope();
 	gDLL->logMemState("CvMapGen after add Europe");
 
 	// Call for Python to make map modifications after it's been generated
 	afterGeneration();
+
+	// Erik: The FaireWeather* map script(s) create(s) ice in afterGeneration
+	// so we have to place bonuses and goodies after it completes
+
+	addBonuses();
+	gDLL->logMemState("CvMapGen after add bonuses");
+
+	addGoodies();
+	gDLL->logMemState("CvMapGen after add goodies");
 }
 
 
