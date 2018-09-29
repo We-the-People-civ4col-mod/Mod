@@ -3469,6 +3469,11 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 		}
 		*/
 
+		if (plot()->isEurope())
+		{
+			return false;
+		}
+
 		if (!GET_PLAYER(getOwnerINLINE()).canTradeWithPortRoyal())
 		{
 			return false;
