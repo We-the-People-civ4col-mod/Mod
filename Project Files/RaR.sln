@@ -1,10 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C++ Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RaR", "RaR.vcxproj", "{3021AF0E-699D-4232-86F6-FC374A0C9957}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		1 plot assert|Win32 = 1 plot assert|Win32
 		1 plot debug|Win32 = 1 plot debug|Win32
 		1 plot|Win32 = 1 plot|Win32
 		Assert|Win32 = Assert|Win32
@@ -15,6 +18,8 @@ Global
 		Release-fast|Win32 = Release-fast|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot assert|Win32.ActiveCfg = 1 plot assert|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot assert|Win32.Build.0 = 1 plot assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot debug|Win32.ActiveCfg = 1 plot debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot debug|Win32.Build.0 = 1 plot debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.ActiveCfg = 1 plot debug|Win32
@@ -34,5 +39,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {886B8394-6690-4605-8600-4B0B2EE1B1CC}
 	EndGlobalSection
 EndGlobal
