@@ -534,7 +534,8 @@ public:
 	DllExport CvEventInfo& getEventInfo(EventTypes eEvent);
 
 	// CivEffect
-	inline int getNumCivEffectInfos() const { return m_paCivEffectInfo.size(); }
+	//inline int getNumCivEffectInfos() const { return m_paCivEffectInfo.size(); }
+	// use NUM_CIV_EFFECT_TYPES
 	std::vector<CivEffectInfo*>& getCivEffectInfo();
 	const CivEffectInfo* getCivEffectInfo(CivEffectTypes eCivEffect) const;
 	// CivEffect end
@@ -806,6 +807,11 @@ public:
 	int getMAX_CITY_HEALTH();
 	int getLOWEST_CITY_HEALTH();
 	// R&R, ray, Health - END
+
+	// softcoding enum values
+
+	// only to be called once, though multiple calls will not change anything
+	void setupEnums();
 
 	DllExport float getCAMERA_MIN_YAW();
 	DllExport float getCAMERA_MAX_YAW();

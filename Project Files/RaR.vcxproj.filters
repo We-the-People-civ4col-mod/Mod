@@ -387,6 +387,9 @@
     <ClCompile Include="DLLSources\JustInTimeArrayGetType.h">
       <Filter>Data\Header</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CyArea.h">

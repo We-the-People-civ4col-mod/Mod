@@ -2841,6 +2841,14 @@ enum CivEffectTypes
 	FIRST_CIV_EFFECT = 0,
 };
 
+extern CivEffectTypes CIV_EFFECT_DEFAULT_ALL;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_NATIVE;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_KING;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_AI;
+extern CivEffectTypes NUM_CIV_EFFECT_TYPES;
+
 enum JITarrayTypes
 {
 	NO_JIT_ARRAY_TYPE = -1,

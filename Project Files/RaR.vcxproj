@@ -35,6 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp" />
     <ClCompile Include="DLLSources\BoolArray.cpp" />
     <ClCompile Include="DLLSources\InfoArray.cpp" />
     <ClCompile Include="DLLSources\JustInTimeArray.cpp" />

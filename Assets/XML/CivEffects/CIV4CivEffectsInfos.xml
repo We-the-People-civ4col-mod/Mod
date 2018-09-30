@@ -2,6 +2,6 @@
 <!-- Achievement Infos -->
 <Civ4CivEffectInfos xmlns="x-schema:CIV4CivEffectsInfosSchema.xml">
 	<CivEffectInfo>
-		<Type>CIV_EFFECT_DEFAULT</Type>
+		<Type>CIV_EFFECT_DEFAULT_ALL</Type>
 	</CivEffectInfo>
 </Civ4CivEffectInfos>

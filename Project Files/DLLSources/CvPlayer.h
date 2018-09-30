@@ -1103,6 +1103,8 @@ public:
 private:
 	BuildingArray<char>     m_ja_iCacheAllowsBuildings;
 	UnitArray<char>         m_ja_iCacheAllowsUnits;
+
+	void addCivEffect(CivEffectTypes eCivEffect);
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

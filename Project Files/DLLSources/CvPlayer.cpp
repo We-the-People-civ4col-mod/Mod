@@ -22717,6 +22717,14 @@ void CvPlayer::resetCivEffectCache()
 	m_ja_iCacheAllowsUnits.reset();
 }
 
+void CvPlayer::addCivEffect(CivEffectTypes eCivEffect)
+{
+	if (eCivEffect != NO_CIV_EFFECT)
+	{
+		applyCivEffect(1, GC.getCivEffectInfo(eCivEffect));
+	}
+}
+
 void CvPlayer::rebuildCivEffectCache()
 {
 	resetCivEffectCache();
@@ -22726,9 +22734,10 @@ void CvPlayer::rebuildCivEffectCache()
 		return;
 	}
 
-	applyCivEffect(1, GC.getCivEffectInfo(FIRST_CIV_EFFECT));
-
-
+	// add the global CivEffects if they are in xml and applies to this player
+	addCivEffect(CIV_EFFECT_DEFAULT_ALL);
+	addCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN);
+	addCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI);
 
 	// Setup some default data based on xml values
 	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
