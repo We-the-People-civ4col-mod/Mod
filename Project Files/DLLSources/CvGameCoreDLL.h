@@ -32,6 +32,14 @@
 
 #define DllExport   __declspec( dllexport )
 
+// The makefile use version 1310 to compile
+// VC use never versions for IntelliSense 
+// Used to avoid IntelliSense spamming bogus errors
+#if _MSC_VER == 1310
+# define MakefileCompilation
+#endif
+
+
 //
 // GameBryo
 //
@@ -220,6 +228,7 @@ static inline T SetBits(T &x, const int iIndex, const int iNumBits, const T iVal
 //
 // Boost Python
 //
+#ifdef MakefileCompilation
 # include <boost/python/list.hpp>
 # include <boost/python/tuple.hpp>
 # include <boost/python/class.hpp>
@@ -229,6 +238,20 @@ static inline T SetBits(T &x, const int iIndex, const int iNumBits, const T iVal
 # include <boost/python/def.hpp>
 
 namespace python = boost::python;
+
+#else
+
+// write some garbage code to kill IntelliSense errors
+// the makefile compiler will never see this
+
+#define BOOST_STATIC_ASSERT(x)
+namespace python
+{
+	class tuple;
+}
+class PyObject;
+
+#endif // IntelliSense workaround
 
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"

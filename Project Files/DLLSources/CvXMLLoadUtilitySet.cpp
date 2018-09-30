@@ -2067,7 +2067,7 @@ void CvXMLLoadUtility::SetFeatureStruct(int** ppiFeatureTime, std::vector<std::v
 					sprintf( szMessage, "iNumSibs is greater than GC.getNumFeatureInfos in SetFeatureStruct function \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 					gDLL->MessageBox(szMessage, "XML Error");
 				}
-				for (i=0;i<iNumSibs;i++)
+				for (int i=0;i<iNumSibs;i++)
 				{
 					GetChildXmlValByName(szTextVal, "FeatureType");
 					iFeatureIndex = FindInInfoClass(szTextVal);
