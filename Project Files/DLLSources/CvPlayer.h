@@ -1096,13 +1096,13 @@ public:
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
 
-	inline bool canUseBuilding(BuildingTypes eBuilding)            const { return m_jit_AllowBuildings.get(eBuilding) > 0; }
-	inline bool canUseUnit(UnitTypes eUnit)                        const { return m_jit_AllowUnits    .get(eUnit)     > 0; }
+	inline bool canUseBuilding(BuildingTypes eBuilding)            const { return m_ja_iCacheAllowsBuildings.get(eBuilding) > 0; }
+	inline bool canUseUnit(UnitTypes eUnit)                        const { return m_ja_iCacheAllowsUnits.get(eUnit)     > 0; }
 
 
 private:
-	BuildingArray<char>     m_jit_AllowBuildings;
-	UnitArray<char>         m_jit_AllowUnits;
+	BuildingArray<char>     m_ja_iCacheAllowsBuildings;
+	UnitArray<char>         m_ja_iCacheAllowsUnits;
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

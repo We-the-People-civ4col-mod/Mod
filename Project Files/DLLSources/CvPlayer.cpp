@@ -39,8 +39,8 @@
 // Public Functions...
 
 CvPlayer::CvPlayer()
-	: m_jit_AllowBuildings(1)
-	, m_jit_AllowUnits(1)
+	: m_ja_iCacheAllowsBuildings(1)
+	, m_ja_iCacheAllowsUnits(1)
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
@@ -22702,13 +22702,19 @@ void CvPlayer::sortEuropeUnits()
 
 void CvPlayer::applyCivEffect(int iChange, const CivEffectInfo* pCivEffect)
 {
+	FAssert(getCivilizationType() != NO_CIVILIZATION);
+	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
 
+	m_ja_iCacheAllowsBuildings              .addCache(iChange, pCivEffect->getAllowedBuildingClasses(), pCivInfo);
+	m_ja_iCacheAllowsUnits                  .addCache(iChange, pCivEffect->getAllowedUnitClasses()    , pCivInfo);
+
+	
 }
 
 void CvPlayer::resetCivEffectCache()
 {
-	m_jit_AllowBuildings.reset();
-	m_jit_AllowUnits.reset();
+	m_ja_iCacheAllowsBuildings.reset();
+	m_ja_iCacheAllowsUnits.reset();
 }
 
 void CvPlayer::rebuildCivEffectCache()
@@ -22732,7 +22738,7 @@ void CvPlayer::rebuildCivEffectCache()
 	{
 		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))
 		{
-			m_jit_AllowBuildings.set(-50, eBuilding);
+			m_ja_iCacheAllowsBuildings.set(-50, eBuilding);
 		}
 	}
 
@@ -22740,7 +22746,7 @@ void CvPlayer::rebuildCivEffectCache()
 	{
 		if (eUnit != kCivInfo.getCivilizationUnits(GC.getUnitInfo(eUnit).getUnitClassType()))
 		{
-			m_jit_AllowUnits.set(-50, eUnit);
+			m_ja_iCacheAllowsUnits.set(-50, eUnit);
 		}
 	}
 }

@@ -69,7 +69,6 @@ class InfoArray
 	// this gives more coding freedom, but getType should be compared in asserts if done so to preserve the strict type checks
 	friend class InfoArrayMod;
 public:
-	InfoArray();
 	InfoArray(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3);
 	~InfoArray();
 

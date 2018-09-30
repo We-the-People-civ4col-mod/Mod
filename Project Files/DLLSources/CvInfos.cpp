@@ -15376,6 +15376,8 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 ///
 
 CivEffectInfo::CivEffectInfo()
+	: m_info_AllowBuildings    (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
+	, m_info_AllowUnits        (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
 {
 }
 
@@ -15388,6 +15390,14 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 	if (!CvInfoBase::read(pXML))
 	{
 		return false;
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupAllow"))
+	{
+		m_info_AllowBuildings    .read(pXML, getType(), "AllowBuildingClasses");
+		m_info_AllowUnits        .read(pXML, getType(), "AllowUnitClasses");
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
 	return true;

@@ -5,6 +5,7 @@
 #include "InfoArray.h"
 
 // bogus default constructor needed by python interface
+/*
 InfoArray::InfoArray()
 	: m_iLength(0)
 	, m_iNumDimentions(0)
@@ -19,6 +20,7 @@ InfoArray::InfoArray()
 		m_aiTypes |= eType & 0xFF;
 	}
 }
+*/
 
 InfoArray::InfoArray(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 	: m_iLength(0)

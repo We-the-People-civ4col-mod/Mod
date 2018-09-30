@@ -4632,10 +4632,14 @@ public:
 	CivEffectInfo();
 	~CivEffectInfo();
 
+	inline const InfoArray* getAllowedBuildingClasses()       const { return &m_info_AllowBuildings   ; }
+	inline const InfoArray* getAllowedUnitClasses()           const { return &m_info_AllowUnits       ; }
+
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
-
+	InfoArrayMod m_info_AllowBuildings;
+	InfoArrayMod m_info_AllowUnits;
 };
 
 

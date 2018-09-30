@@ -79,14 +79,8 @@ public:
 	// use iChange to tell if it should be added or substracted
 	// 1D array are read as all included indexes stores 1
 	// returns true if an allow change value (a number goes 0->1 or 1->0)
-	// CvPlayer and *fpConvert are used to alter index. If set, then fptr is called for pPlayer with the index as argument
-	// It is expected that fptr returns the index, which should be used. Index -1 mean the value will not enter the array.
-	// Useful for converting UnitClasses into Units
-	// fpUpdate is called for changed indexes
-	// arguments:
-	//     int:  index
-	//     bool: bChanged for this index (move from 0->1 or 1->0)
-	bool addCache(int iChange, const InfoArray* pIarray, CvPlayer* pPlayer = NULL, int (CvPlayer::*fpConvert)(int) const = NULL, void (CvPlayer::*fpUpdate)(int, bool) = NULL, JITarrayTypes eType = JIT_ARRAY_NO_TYPE);
+	// pCivInfo is needed when going from BuildingClass->Building or UnitClass to Unit
+	bool addCache(int iChange, const InfoArray* pIarray, const CvCivilizationInfo *pCivInfo = NULL);
 
 	// add a number to all indexes
 	void addAll(int iChange, int iValue);

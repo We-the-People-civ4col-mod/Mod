@@ -114,6 +114,7 @@ T JustInTimeArray<T>::getFloat(int iIndex) const
 	return (T)0;
 }
 
+/*
 template<>
 bool JustInTimeArray<double>::addCache(int iChange, const InfoArray* pIarray, CvPlayer* pPlayer, int (CvPlayer::*fpConvert)(int) const, void (CvPlayer::*fpUpdate)(int, bool), JITarrayTypes eType)
 {
@@ -159,9 +160,12 @@ bool JustInTimeArray<double>::addCache(int iChange, const InfoArray* pIarray, Cv
 	// however to comply with the addCache template function declaration, it has to return a bool
 	return false;
 }
+*/
 
+// Adding an InfoArray
+// this is used by CivEffects to store the combined values from multiple InfoArrays in a single JIT array
 template<class T>
-bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, CvPlayer* pPlayer, int (CvPlayer::*fpConvert)(int) const, void (CvPlayer::*fpUpdate)(int, bool), JITarrayTypes eType)
+bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, const CvCivilizationInfo *pCivInfo)
 {
 	bool bChanged = false;
 	bool b2D = pIarray->getDimentions() == 2;
@@ -169,18 +173,33 @@ bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, CvPlaye
 
 	FAssert(pIarray->getDimentions() <= 2);
 	FAssert(iChange == 1 || iChange == -1);
-	FAssert(!(pPlayer == NULL && fpConvert != NULL));
-	FAssert(!(pPlayer == NULL && fpUpdate  != NULL));
 
-	JITarrayTypes eAppliedType = eType == JIT_ARRAY_NO_TYPE ? getType() : eType;
+	JITarrayTypes eAppliedType = pIarray->getType(0);
+
+	/// make sure the types of arrays match
+	FAssertMsg(eAppliedType == getType()
+		|| (eAppliedType == JIT_ARRAY_BUILDING_CLASS && getType() == JIT_ARRAY_BUILDING)
+		|| (eAppliedType == JIT_ARRAY_UNIT_CLASS && getType() == JIT_ARRAY_UNIT)
+		, "JustInTimeArray<T>::addCache called with type mismatch");
+
+	FAssertMsg(eAppliedType == getType() || pCivInfo != NULL, "JustInTimeArray<T>::addCache called without pCivInfo argument when in index conversion mode");
 
 	for (int i = 0; i < iLength; i++)
 	{
 		int iIndex = pIarray->getWithType(eAppliedType, i, 0);
 		FAssert(iIndex >= 0);
-		if (fpConvert != NULL)
+
+		// convert index if class needs to be converted to something the player can use
+		if (eAppliedType != getType())
 		{
-			iIndex = (pPlayer->*fpConvert)(iIndex);
+			if (eAppliedType == JIT_ARRAY_BUILDING_CLASS)
+			{
+				iIndex = pCivInfo->getCivilizationBuildings(iIndex);
+			}
+			else if (eAppliedType == JIT_ARRAY_UNIT_CLASS)
+			{
+				iIndex = pCivInfo->getCivilizationUnits(iIndex);
+			}
 		}
 		int iValue = 1;
 		if (b2D)
@@ -194,10 +213,6 @@ bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, CvPlaye
 			T tValue = (T)(iValue * iChange);
 			bool bChangedThisIndex = this->addCache(tValue, iIndex);
 			bChanged |= bChangedThisIndex;
-			if (fpUpdate != NULL)
-			{
-				(pPlayer->*fpUpdate)(iIndex, bChangedThisIndex);
-			}
 		}
 	}
 
