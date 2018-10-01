@@ -103,4 +103,20 @@ public:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 };
+
+inline int  CvArea :: getID()                                   const { return m_iID; }
+inline int  CvArea :: getNumTiles()                             const { return m_iNumTiles; }
+inline bool CvArea :: isLake()                                  const { return ( isWater() && (getNumTiles()  <=  GC.getLAKE_MAX_AREA_SIZE() ) ); }
+inline int  CvArea :: getNumOwnedTiles()                        const { return m_iNumOwnedTiles; }
+inline int  CvArea :: getNumUnownedTiles()                      const { return ( getNumTiles() - getNumOwnedTiles() ); }
+inline int  CvArea :: getNumRiverEdges()                        const { return m_iNumRiverEdges; }
+inline int  CvArea :: getNumUnits()                             const { return m_iNumUnits; }
+inline int  CvArea :: getNumCities()                            const { return m_iNumCities; }
+inline int  CvArea :: getNumStartingPlots()                     const { return m_iNumStartingPlots; }
+inline bool CvArea :: isWater()                                 const { return m_bWater; }
+inline int  CvArea :: getNumUnrevealedTiles(TeamTypes eIndex)   const { return ( getNumTiles() - getNumRevealedTiles(eIndex) ); }
+
+
+
+
 #endif
