@@ -179,13 +179,6 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 	}
 }
 
-
-int CvArea::getID() const
-{
-	return m_iID;
-}
-
-
 void CvArea::setID(int iID)
 {
 	m_iID = iID;
@@ -255,18 +248,6 @@ int CvArea::countNumUniqueBonusTypes() const
 }
 
 
-int CvArea::getNumTiles() const
-{
-	return m_iNumTiles;
-}
-
-
-bool CvArea::isLake() const
-{
-	return (isWater() && (getNumTiles() <= GC.getLAKE_MAX_AREA_SIZE()));
-}
-
-
 void CvArea::changeNumTiles(int iChange)
 {
 	bool bOldLake;
@@ -286,29 +267,12 @@ void CvArea::changeNumTiles(int iChange)
 }
 
 
-int CvArea::getNumOwnedTiles() const
-{
-	return m_iNumOwnedTiles;
-}
-
-
-int CvArea::getNumUnownedTiles() const
-{
-	return (getNumTiles() - getNumOwnedTiles());
-}
-
 
 void CvArea::changeNumOwnedTiles(int iChange)
 {
 	m_iNumOwnedTiles = (m_iNumOwnedTiles + iChange);
 	FAssert(getNumOwnedTiles() >= 0);
 	FAssert(getNumUnownedTiles() >= 0);
-}
-
-
-int CvArea::getNumRiverEdges() const
-{
-	return m_iNumRiverEdges;
 }
 
 
@@ -319,23 +283,6 @@ void CvArea::changeNumRiverEdges(int iChange)
 }
 
 
-int CvArea::getNumUnits() const
-{
-	return m_iNumUnits;
-}
-
-
-int CvArea::getNumCities() const
-{
-	return m_iNumCities;
-}
-
-
-int CvArea::getNumStartingPlots() const
-{
-	return m_iNumStartingPlots;
-}
-
 
 void CvArea::changeNumStartingPlots(int iChange)
 {
@@ -343,11 +290,6 @@ void CvArea::changeNumStartingPlots(int iChange)
 	FAssert(getNumStartingPlots() >= 0);
 }
 
-
-bool CvArea::isWater() const
-{
-	return m_bWater;
-}
 
 bool CvArea::hasEurope() const
 {
@@ -463,11 +405,6 @@ int CvArea::getNumRevealedTiles(TeamTypes eIndex) const
 	return m_aiNumRevealedTiles[eIndex];
 }
 
-
-int CvArea::getNumUnrevealedTiles(TeamTypes eIndex) const
-{
-	return (getNumTiles() - getNumRevealedTiles(eIndex));
-}
 
 
 void CvArea::changeNumRevealedTiles(TeamTypes eIndex, int iChange)
