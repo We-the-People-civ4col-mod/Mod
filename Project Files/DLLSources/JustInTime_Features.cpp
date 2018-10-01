@@ -50,6 +50,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_BUILDING_CLASS:     return GC.getNumBuildingClassInfos();
 	case JIT_ARRAY_BUILDING_SPECIAL:   return GC.getNumSpecialBuildingInfos();
 	case JIT_ARRAY_CONTACT:            return NUM_CONTACT_TYPES;
+	case JIT_ARRAY_CIV_EFFECT:         return NUM_CIV_EFFECT_TYPES;
 	case JIT_ARRAY_CIVIC:              return GC.getNumCivicInfos();
 	case JIT_ARRAY_CIVIC_OPTION:       return GC.getNumCivicOptionInfos();
 	case JIT_ARRAY_CIVILIZATION:       return GC.getNumCivilizationInfos();
@@ -104,6 +105,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_BUILDING:           return &GC.getBuildingInfo((BuildingTypes)iIndex);
 	case JIT_ARRAY_BUILDING_CLASS:     return &GC.getBuildingClassInfo((BuildingClassTypes)iIndex);
 	case JIT_ARRAY_BUILDING_SPECIAL:   return &GC.getSpecialBuildingInfo((SpecialBuildingTypes)iIndex);
+	case JIT_ARRAY_CIV_EFFECT:         return GC.getCivEffectInfo(static_cast<CivEffectTypes>(iIndex));
 	case JIT_ARRAY_CIVIC:              return &GC.getCivicInfo((CivicTypes)iIndex);
 	case JIT_ARRAY_CIVIC_OPTION:       return &GC.getCivicOptionInfo((CivicOptionTypes)iIndex);
 	case JIT_ARRAY_CIVILIZATION:       return &GC.getCivilizationInfo((CivilizationTypes)iIndex);
@@ -187,6 +189,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_BUILDING:           return "Building";
 	case JIT_ARRAY_BUILDING_CLASS:     return "BuildingClass";
 	case JIT_ARRAY_BUILDING_SPECIAL:   return "SpecialBuilding";
+	case JIT_ARRAY_CIV_EFFECT:         return "CivEffect";
 	case JIT_ARRAY_CIVIC:              return "Civic";
 	case JIT_ARRAY_CIVIC_OPTION:       return "CivicOption";
 	case JIT_ARRAY_CIVILIZATION:       return "Civilization";

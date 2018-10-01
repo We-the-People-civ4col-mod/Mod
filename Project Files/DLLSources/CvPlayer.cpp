@@ -22739,6 +22739,14 @@ void CvPlayer::rebuildCivEffectCache()
 	addCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN);
 	addCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI);
 
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
+	{
+		if (this->hasTrait(eTrait))
+		{
+			addCivEffect(GC.getTraitInfo(eTrait).getCivEffect());
+		}
+	}
+
 	// Setup some default data based on xml values
 	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
 	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());

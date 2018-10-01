@@ -9,11 +9,13 @@ CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
 CivEffectTypes CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
 
 CivEffectTypes NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
+TraitTypes     NUM_TRAIT_TYPES             = FIRST_TRAIT;
 
 
 void CvGlobals::setupEnums()
 {
 	NUM_CIV_EFFECT_TYPES = static_cast<CivEffectTypes>(m_paCivEffectInfo.size());
+	NUM_TRAIT_TYPES      = static_cast<TraitTypes>    (m_paTraitInfo.size());
 
 	int iCounter = 0;
 

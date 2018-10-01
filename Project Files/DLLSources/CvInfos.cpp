@@ -10503,6 +10503,7 @@ bool CvEuropeInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvTraitInfo::CvTraitInfo() :
+	m_eCivEffect(NO_CIV_EFFECT),
 	m_iLevelExperienceModifier(0),
 	m_iGreatGeneralRateModifier(0),
 	m_iDomesticGreatGeneralRateModifier(0),
@@ -10982,6 +10983,8 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	}
 	pXML->GetChildXmlValByName(szTextVal, "ShortDescription");
 	setShortDescription(szTextVal);
+
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 
 	pXML->GetChildXmlValByName(&m_iLevelExperienceModifier, "iLevelExperienceModifier");
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");

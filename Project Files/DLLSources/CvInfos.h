@@ -3021,6 +3021,9 @@ class CvTraitInfo :
 public:
 	DllExport CvTraitInfo();
 	DllExport virtual ~CvTraitInfo();
+
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	DllExport int getLevelExperienceModifier() const;
 	DllExport int getGreatGeneralRateModifier() const;
 	DllExport int getDomesticGreatGeneralRateModifier() const;
@@ -3078,6 +3081,8 @@ public:
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	CivEffectTypes m_eCivEffect;
+
 	int m_iLevelExperienceModifier;
 	int m_iGreatGeneralRateModifier;
 	int m_iDomesticGreatGeneralRateModifier;

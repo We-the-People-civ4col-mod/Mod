@@ -1061,7 +1061,10 @@ enum DllExport PlayerTypes
 enum DllExport TraitTypes
 {
 	NO_TRAIT = -1,
+	FIRST_TRAIT = 0,
 };
+
+extern TraitTypes NUM_TRAIT_TYPES;
 
 enum DllExport OrderTypes
 {
@@ -2859,6 +2862,7 @@ enum JITarrayTypes
 	JIT_ARRAY_BUILDING,
 	JIT_ARRAY_BUILDING_CLASS,
 	JIT_ARRAY_BUILDING_SPECIAL,
+	JIT_ARRAY_CIV_EFFECT,
 	JIT_ARRAY_CIVIC,
 	JIT_ARRAY_CIVIC_OPTION,
 	JIT_ARRAY_CIVILIZATION,
