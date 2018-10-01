@@ -22751,6 +22751,8 @@ void CvPlayer::rebuildCivEffectCache()
 	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
 	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());
 
+	addCivEffect(kCivInfo.getCivEffect());
+
 	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < GC.getNumBuildingInfos(); ++eBuilding)
 	{
 		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))

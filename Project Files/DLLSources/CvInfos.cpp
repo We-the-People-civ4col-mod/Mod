@@ -5717,6 +5717,7 @@ m_bNorthAmericanNative(false),
 m_bSouthAmericanNative(false),
 m_bCentralAmericanNative(false),
 // R&R, ray, Correct Geographical Placement of Natives - END
+m_eCivEffect(NO_CIV_EFFECT),
 m_aiCivilizationBuildings(NULL),
 m_aiCivilizationUnits(NULL),
 m_aiCivilizationInitialCivics(NULL),
@@ -6275,6 +6276,9 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bSouthAmericanNative, "bSouthAmericanNative");
 	pXML->GetChildXmlValByName(&m_bCentralAmericanNative, "bCentralAmericanNative");
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
 	{
 		pXML->SetStringList(&m_paszCityNames, &m_iNumCityNames);

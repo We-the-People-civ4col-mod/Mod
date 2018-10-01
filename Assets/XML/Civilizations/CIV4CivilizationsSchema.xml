@@ -545,6 +545,7 @@
 		<element type="bNorthAmericanNative" minOccurs="0"/>
 		<element type="bSouthAmericanNative" minOccurs="0"/>
 		<element type="bCentralAmericanNative" minOccurs="0"/>
+		<element type="eCivEffect" minOccurs="0"/>
 		<element type="iAdvancedStartPoints"/>
 		<element type="iAreaMultiplier"/>
 		<element type="iDensityMultiplier"/>

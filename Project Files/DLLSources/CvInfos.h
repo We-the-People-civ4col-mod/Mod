@@ -1548,6 +1548,8 @@ public:
 	DllExport bool isCentralAmericanNative() const;
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	std::wstring pyGetShortDescription(uint uiForm) { return getShortDescription(uiForm); }
 	DllExport const wchar* getShortDescription(uint uiForm = 0);
 	DllExport const wchar* getShortDescriptionKey() const;
@@ -1650,6 +1652,8 @@ protected:
 	bool m_bSouthAmericanNative;
 	bool m_bCentralAmericanNative;
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	CivEffectTypes m_eCivEffect;
 
 	CvString m_szArtDefineTag;
 	CvWString m_szShortDescriptionKey;
