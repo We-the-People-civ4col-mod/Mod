@@ -39,8 +39,16 @@
 // Public Functions...
 
 CvPlayer::CvPlayer()
-	: m_ja_iCacheAllowsBuildings(1)
+	: m_ja_iCacheAllowsBonuses(1)
+	, m_ja_iCacheAllowsBuildings(1)
+	, m_ja_iCacheAllowsCivics(1)
+	, m_ja_iCacheAllowsImmigrants(1)
+	, m_ja_iCacheAllowsImprovements(1)
+	, m_ja_iCacheAllowsProfessions(1)
+	, m_ja_iCacheAllowsPromotions(1)
+	, m_ja_iCacheAllowsRoutes(1)
 	, m_ja_iCacheAllowsUnits(1)
+	, m_ja_iCacheAllowsYields(1)
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
@@ -22705,16 +22713,31 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange)
 	FAssert(getCivilizationType() != NO_CIVILIZATION);
 	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
 
-	m_ja_iCacheAllowsBuildings              .addCache(iChange, pCivEffect->getAllowedBuildingClasses(), pCivInfo);
-	m_ja_iCacheAllowsUnits                  .addCache(iChange, pCivEffect->getAllowedUnitClasses()    , pCivInfo);
+	m_ja_iCacheAllowsBonuses                .addCache(iChange, pCivEffect->getAllowedBonuses           (), pCivInfo);
+	m_ja_iCacheAllowsBuildings              .addCache(iChange, pCivEffect->getAllowedBuildingClasses   (), pCivInfo);
+	m_ja_iCacheAllowsCivics                 .addCache(iChange, pCivEffect->getAllowedCivics            (), pCivInfo);
+	m_ja_iCacheAllowsImmigrants             .addCache(iChange, pCivEffect->getAllowedImmigrants        (), pCivInfo);
+	m_ja_iCacheAllowsImprovements           .addCache(iChange, pCivEffect->getAllowedImprovements      (), pCivInfo);
+	m_ja_iCacheAllowsProfessions            .addCache(iChange, pCivEffect->getAllowedProfessions       (), pCivInfo);
+	m_ja_iCacheAllowsPromotions             .addCache(iChange, pCivEffect->getAllowedPromotions        (), pCivInfo);
+	m_ja_iCacheAllowsRoutes                 .addCache(iChange, pCivEffect->getAllowedRoutes            (), pCivInfo);
+	m_ja_iCacheAllowsUnits                  .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
+	m_ja_iCacheAllowsYields                 .addCache(iChange, pCivEffect->getAllowedYields            (), pCivInfo);
 
-	
 }
 
 void CvPlayer::resetCivEffectCache()
 {
-	m_ja_iCacheAllowsBuildings.reset();
-	m_ja_iCacheAllowsUnits.reset();
+	m_ja_iCacheAllowsBonuses        .reset();
+	m_ja_iCacheAllowsBuildings      .reset();
+	m_ja_iCacheAllowsCivics         .reset();
+	m_ja_iCacheAllowsImmigrants     .reset();
+	m_ja_iCacheAllowsImprovements   .reset();
+	m_ja_iCacheAllowsProfessions    .reset();
+	m_ja_iCacheAllowsPromotions     .reset();
+	m_ja_iCacheAllowsRoutes         .reset();
+	m_ja_iCacheAllowsUnits          .reset();
+	m_ja_iCacheAllowsYields         .reset();
 }
 
 void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange)

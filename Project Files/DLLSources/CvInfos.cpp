@@ -15383,8 +15383,16 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 ///
 
 CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
-	: m_info_AllowBuildings    (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
+	: m_info_AllowBonuses      (JIT_ARRAY_BONUS              , JIT_ARRAY_ALLOW)
+	, m_info_AllowBuildings    (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
+	, m_info_AllowCivics       (JIT_ARRAY_CIVIC              , JIT_ARRAY_ALLOW)
+	, m_info_AllowImmigrants   (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
+	, m_info_AllowImprovements (JIT_ARRAY_IMPROVEMENT        , JIT_ARRAY_ALLOW)
+	, m_info_AllowProfessions  (JIT_ARRAY_PROFESSION         , JIT_ARRAY_ALLOW)
+	, m_info_AllowPromotions   (JIT_ARRAY_PROMOTION          , JIT_ARRAY_ALLOW)
+	, m_info_AllowRoutes       (JIT_ARRAY_ROUTE              , JIT_ARRAY_ALLOW)
 	, m_info_AllowUnits        (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
+	, m_info_AllowYields       (JIT_ARRAY_YIELD              , JIT_ARRAY_ALLOW)
 {
 	if (bAutogenerateAllow)
 	{
@@ -15398,19 +15406,42 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
 		//   whenever there is a positive value in a CivEffect
 
+		BonusArray<int> ja_Bonuses;
 		BuildingClassArray<int> ja_Buildings;
+		CivicArray<int> ja_Civics;
+		UnitClassArray<int> ja_Immigrants;
+		ImprovementArray<int> ja_Improvements;
+		ProfessionArray<int> ja_Professions;
+		PromotionArray<int> ja_Promotions;
+		RouteArray<int> ja_Routes;
 		UnitClassArray<int> ja_Units;
+		YieldArray<int> ja_Yields;
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{
 			const CivEffectInfo *pInfo = GC.getCivEffectInfo(eCivEffect);
-			ja_Buildings.generateInitCivEffect(pInfo->getAllowedBuildingClasses());
-			ja_Units.generateInitCivEffect(pInfo->getAllowedUnitClasses());
+			ja_Bonuses         .generateInitCivEffect(pInfo->getAllowedBonuses());
+			ja_Buildings       .generateInitCivEffect(pInfo->getAllowedBuildingClasses());
+			ja_Civics          .generateInitCivEffect(pInfo->getAllowedCivics());
+			ja_Immigrants      .generateInitCivEffect(pInfo->getAllowedImmigrants());
+			ja_Improvements    .generateInitCivEffect(pInfo->getAllowedImprovements());
+			ja_Professions     .generateInitCivEffect(pInfo->getAllowedProfessions());
+			ja_Promotions      .generateInitCivEffect(pInfo->getAllowedPromotions());
+			ja_Routes          .generateInitCivEffect(pInfo->getAllowedRoutes());
+			ja_Units           .generateInitCivEffect(pInfo->getAllowedUnitClasses());
+			ja_Yields          .generateInitCivEffect(pInfo->getAllowedYields());
 		}
 
-		m_info_AllowBuildings.assign(&ja_Buildings);
-		m_info_AllowUnits.assign(&ja_Units);
-		
+		m_info_AllowBonuses         .assign(&ja_Bonuses);
+		m_info_AllowBuildings       .assign(&ja_Buildings);
+		m_info_AllowCivics          .assign(&ja_Civics);
+		m_info_AllowImmigrants      .assign(&ja_Immigrants);
+		m_info_AllowImprovements    .assign(&ja_Improvements);
+		m_info_AllowProfessions     .assign(&ja_Professions);
+		m_info_AllowPromotions      .assign(&ja_Promotions);
+		m_info_AllowRoutes          .assign(&ja_Routes);
+		m_info_AllowUnits           .assign(&ja_Units);
+		m_info_AllowYields          .assign(&ja_Yields);
 	}
 }
 
@@ -15427,8 +15458,16 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupAllow"))
 	{
-		m_info_AllowBuildings    .read(pXML, getType(), "AllowBuildingClasses");
-		m_info_AllowUnits        .read(pXML, getType(), "AllowUnitClasses");
+		m_info_AllowBonuses      .read(pXML, getType(), "AllowBonuses"           );
+		m_info_AllowBuildings    .read(pXML, getType(), "AllowBuildingClasses"   );
+		m_info_AllowCivics       .read(pXML, getType(), "AllowCivics"            );
+		m_info_AllowImmigrants   .read(pXML, getType(), "AllowImmigrants"        );
+		m_info_AllowImprovements .read(pXML, getType(), "AllowImprovementss"     );
+		m_info_AllowProfessions  .read(pXML, getType(), "AllowProfessions"       );
+		m_info_AllowPromotions   .read(pXML, getType(), "AllowPromotions"        );
+		m_info_AllowRoutes       .read(pXML, getType(), "AllowRoutes"            );
+		m_info_AllowUnits        .read(pXML, getType(), "AllowUnitClasses"       );
+		m_info_AllowYields       .read(pXML, getType(), "AllowYields"            );
 
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}

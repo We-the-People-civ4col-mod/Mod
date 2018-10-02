@@ -4641,14 +4641,30 @@ public:
 	CivEffectInfo(bool bAutogenerateAllow = false);
 	~CivEffectInfo();
 
-	inline const InfoArray* getAllowedBuildingClasses()       const { return &m_info_AllowBuildings   ; }
-	inline const InfoArray* getAllowedUnitClasses()           const { return &m_info_AllowUnits       ; }
+	inline const InfoArray* getAllowedBonuses              () const { return &m_info_AllowBonuses     ; }
+	inline const InfoArray* getAllowedBuildingClasses      () const { return &m_info_AllowBuildings   ; }
+	inline const InfoArray* getAllowedCivics               () const { return &m_info_AllowCivics      ; }
+	inline const InfoArray* getAllowedImmigrants           () const { return &m_info_AllowImmigrants  ; }
+	inline const InfoArray* getAllowedImprovements         () const { return &m_info_AllowImprovements; }
+	inline const InfoArray* getAllowedProfessions          () const { return &m_info_AllowProfessions ; }
+	inline const InfoArray* getAllowedPromotions           () const { return &m_info_AllowPromotions  ; }
+	inline const InfoArray* getAllowedRoutes               () const { return &m_info_AllowRoutes      ; }
+	inline const InfoArray* getAllowedUnitClasses          () const { return &m_info_AllowUnits       ; }
+	inline const InfoArray* getAllowedYields               () const { return &m_info_AllowYields      ; }
 
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
+	InfoArrayMod m_info_AllowBonuses;
 	InfoArrayMod m_info_AllowBuildings;
+	InfoArrayMod m_info_AllowCivics;
+	InfoArrayMod m_info_AllowImmigrants;
+	InfoArrayMod m_info_AllowImprovements;
+	InfoArrayMod m_info_AllowProfessions;
+	InfoArrayMod m_info_AllowPromotions;
+	InfoArrayMod m_info_AllowRoutes;
 	InfoArrayMod m_info_AllowUnits;
+	InfoArrayMod m_info_AllowYields;
 };
 
 

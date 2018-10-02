@@ -1097,13 +1097,30 @@ public:
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
 
-	inline bool canUseBuilding(BuildingTypes eBuilding)            const { return m_ja_iCacheAllowsBuildings.get(eBuilding) > 0; }
-	inline bool canUseUnit(UnitTypes eUnit)                        const { return m_ja_iCacheAllowsUnits.get(eUnit)     > 0; }
+	inline bool canUseBonus(BonusTypes eBonus)                     const { return m_ja_iCacheAllowsBonuses         .get(eBonus)          > 0; }
+	inline bool canUseBuilding(BuildingTypes eBuilding)            const { return m_ja_iCacheAllowsBuildings       .get(eBuilding)       > 0; }
+	inline bool canUseCivic(CivicTypes eCivic)                     const { return m_ja_iCacheAllowsCivics          .get(eCivic)          > 0; }
+	inline bool canUseImmigrant(UnitTypes eUnit)                   const { return m_ja_iCacheAllowsImmigrants      .get(eUnit)           > 0; }
+	inline bool canUseImprovement(ImprovementTypes eImprovement)   const { return m_ja_iCacheAllowsImprovements    .get(eImprovement)    > 0; }
+	inline bool canUseProfession(ProfessionTypes eProfession)      const { return m_ja_iCacheAllowsProfessions     .get(eProfession)     > 0; }
+	inline bool canUsePromotion(PromotionTypes ePromotion)         const { return m_ja_iCacheAllowsPromotions      .get(ePromotion)      > 0; }
+	inline bool canUseRoute(RouteTypes eRoute)                     const { return m_ja_iCacheAllowsRoutes          .get(eRoute)          > 0; }
+	inline bool canUseUnit(UnitTypes eUnit)                        const { return m_ja_iCacheAllowsUnits           .get(eUnit)           > 0; }
+	inline bool canUseYield(YieldTypes eYield)                     const { return m_ja_iCacheAllowsYields          .get(eYield)          > 0; }
 
 
 private:
-	BuildingArray<char>     m_ja_iCacheAllowsBuildings;
-	UnitArray<char>         m_ja_iCacheAllowsUnits;
+	BonusArray          <char> m_ja_iCacheAllowsBonuses;
+	BuildingArray       <char> m_ja_iCacheAllowsBuildings;
+	CivicArray          <char> m_ja_iCacheAllowsCivics;
+	UnitArray           <char> m_ja_iCacheAllowsImmigrants;
+	ImprovementArray    <char> m_ja_iCacheAllowsImprovements;
+	ProfessionArray     <char> m_ja_iCacheAllowsProfessions;
+	PromotionArray      <char> m_ja_iCacheAllowsPromotions;
+	RouteArray          <char> m_ja_iCacheAllowsRoutes;
+	UnitArray           <char> m_ja_iCacheAllowsUnits;
+	YieldArray          <char> m_ja_iCacheAllowsYields;
+	
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

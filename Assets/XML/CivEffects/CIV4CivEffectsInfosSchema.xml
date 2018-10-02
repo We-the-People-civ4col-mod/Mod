@@ -3,30 +3,104 @@
 <Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
 
 	<ElementType name="Type" content="textOnly"/>
-	<ElementType name="BuildingClass" content="textOnly"/>
-	<ElementType name="UnitClass" content="textOnly"/>
+	<ElementType name="eBonus" content="textOnly"/>
+	<ElementType name="eBuildingClass" content="textOnly"/>
+	<ElementType name="eCivic" content="textOnly"/>
+	<ElementType name="eImprovement" content="textOnly"/>
+	<ElementType name="eProfession" content="textOnly"/>
+	<ElementType name="ePromotion" content="textOnly"/>
+	<ElementType name="eRoute" content="textOnly"/>
+	<ElementType name="eUnitClass" content="textOnly"/>
+	<ElementType name="eYield" content="textOnly"/>
+	
 	<ElementType name="iAllow" content="textOnly" dt:type="int" />
+	
 
-	<ElementType name="AllowBuildingClass" content="eltOnly">
-		<element type="BuildingClass" />
+	<ElementType name="AllowBonus" content="eltOnly">
+		<element type="eBonus" />
 		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowBuildingClass" content="eltOnly">
+		<element type="eBuildingClass" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowCivic" content="eltOnly">
+		<element type="eCivic" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowImmigrant" content="eltOnly">
+		<element type="eUnitClass" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowImprovement" content="eltOnly">
+		<element type="eImprovement" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowProfession" content="eltOnly">
+		<element type="eProfession" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowPromotion" content="eltOnly">
+		<element type="ePromotion" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowRoute" content="eltOnly">
+		<element type="eRoute" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowUnitClass" content="eltOnly">
+		<element type="eUnitClass" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowYield" content="eltOnly">
+		<element type="eYield" />
+		<element type="iAllow" />
+	</ElementType>
+	
+	<ElementType name="AllowBonuses" content="eltOnly">
+		<element type="AllowBonus" minOccurs="0" maxOccurs="*" />
 	</ElementType>
 	<ElementType name="AllowBuildingClasses" content="eltOnly">
 		<element type="AllowBuildingClass" minOccurs="0" maxOccurs="*" />
 	</ElementType>
-	
-	<ElementType name="AllowUnitClass" content="eltOnly">
-		<element type="UnitClass" />
-		<element type="iAllow" />
+	<ElementType name="AllowCivics" content="eltOnly">
+		<element type="AllowCivic" minOccurs="0" maxOccurs="*" />
+	</ElementType>
+	<ElementType name="AllowImmigrants" content="eltOnly">
+		<element type="AllowImmigrant" minOccurs="0" maxOccurs="*" />
+	</ElementType>
+	<ElementType name="AllowImprovements" content="eltOnly">
+		<element type="AllowImprovement" minOccurs="0" maxOccurs="*" />
+	</ElementType>
+	<ElementType name="AllowProfessions" content="eltOnly">
+		<element type="AllowProfession" minOccurs="0" maxOccurs="*" />
+	</ElementType>
+	<ElementType name="AllowPromotions" content="eltOnly">
+		<element type="AllowPromotion" minOccurs="0" maxOccurs="*" />
+	</ElementType>
+	<ElementType name="AllowRoutes" content="eltOnly">
+		<element type="AllowRoute" minOccurs="0" maxOccurs="*" />
 	</ElementType>
 	<ElementType name="AllowUnitClasses" content="eltOnly">
 		<element type="AllowUnitClass" minOccurs="0" maxOccurs="*" />
 	</ElementType>
+	<ElementType name="AllowYields" content="eltOnly">
+		<element type="AllowYield" minOccurs="0" maxOccurs="*" />
+	</ElementType>
+	
 	
 	
 	<ElementType name="TagGroupAllow" content="eltOnly">
+		<element type="AllowBonuses" minOccurs="0" />
 		<element type="AllowBuildingClasses" minOccurs="0" />
+		<element type="AllowCivics" minOccurs="0" />
+		<element type="AllowImmigrants" minOccurs="0" />
+		<element type="AllowImprovements" minOccurs="0" />
+		<element type="AllowProfessions" minOccurs="0" />
+		<element type="AllowPromotions" minOccurs="0" />
+		<element type="AllowRoutes" minOccurs="0" />
 		<element type="AllowUnitClasses" minOccurs="0" />
+		<element type="AllowYields" minOccurs="0" />
 	</ElementType>
 
 
