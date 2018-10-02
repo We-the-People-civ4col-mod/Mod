@@ -315,11 +315,13 @@ template<>
 void JustInTimeArray<int>::generateInitCivEffect(const InfoArray* pIarray)
 {
 	FAssert(pIarray->getDimentions() == 2);
-	for (int i = 0; i < pIarray->getLength(); i++)
+	FAssert(this->m_iType == pIarray->getType(0));
+
+	for (int i = 0; i < pIarray->getLength(); ++i)
 	{
 		if (pIarray->getWithType(pIarray->getType(1), i, 1) > 0)
 		{
-			set(0, pIarray->getWithType(getType(), i, 0));
+			set(-1, pIarray->getWithType(getType(), i, 0));
 		}
 	}
 }

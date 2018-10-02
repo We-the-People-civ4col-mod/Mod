@@ -15382,10 +15382,36 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 /// CivEffect
 ///
 
-CivEffectInfo::CivEffectInfo()
+CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 	: m_info_AllowBuildings    (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
 	, m_info_AllowUnits        (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
 {
+	if (bAutogenerateAllow)
+	{
+		// Make a CivEffect, which is applied to all players at the start/load
+
+		// the goal is to set the allow array start values in CvPlayer as follows:
+		// If a CivEffect provides a positive number: 0
+		// If no CivEffect can unlock the item: 1
+
+		// This will make anything, which isn't unlockable appear at game start
+		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
+		//   whenever there is a positive value in a CivEffect
+
+		BuildingClassArray<int> ja_Buildings;
+		UnitClassArray<int> ja_Units;
+
+		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
+		{
+			const CivEffectInfo *pInfo = GC.getCivEffectInfo(eCivEffect);
+			ja_Buildings.generateInitCivEffect(pInfo->getAllowedBuildingClasses());
+			ja_Units.generateInitCivEffect(pInfo->getAllowedUnitClasses());
+		}
+
+		m_info_AllowBuildings.assign(&ja_Buildings);
+		m_info_AllowUnits.assign(&ja_Units);
+		
+	}
 }
 
 CivEffectInfo::~CivEffectInfo()

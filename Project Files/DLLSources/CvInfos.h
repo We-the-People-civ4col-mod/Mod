@@ -4638,7 +4638,7 @@ class CivEffectInfo :
 	public CvInfoBase
 {
 public:
-	CivEffectInfo();
+	CivEffectInfo(bool bAutogenerateAllow = false);
 	~CivEffectInfo();
 
 	inline const InfoArray* getAllowedBuildingClasses()       const { return &m_info_AllowBuildings   ; }

@@ -250,10 +250,7 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 
 	bFirstRead = false;
 
-	if (bFirst)
-	{
-		GC.setupEnums();
-	}
+	GC.postXMLLoad(bFirst);
 }
 /// XML type preloading - end - Nightinggale
 
