@@ -39,7 +39,8 @@
 # run "nmake.exe /P" in cmd.exe to see what it is on your system
 TOOLKIT=$(PROGRAMFILES)\Microsoft Visual C++ Toolkit 2003
 PSDK=$(PROGRAMFILES)\Microsoft SDKs\Windows\v7.0A
-## Uncomment to have newly compiled dlls copied to your mod's Assets directory
+## Uncomment to have newly compiled dlls copied to your mod's Assets directory 
+## and have changed or new files in Assets, PublicMaps and in their subdirectories copied to their counterparts in your mod's directory
 YOURMOD=..
 
 ## Civ install path
@@ -258,15 +259,20 @@ $(Target_BIN): $(Target_BIN_TEMP)
 build: $(Target_BIN)
 !IFDEF YOURMOD
 	-COPY "$(Target_BIN)" "$(YOURMOD)\Assets\."
-!ENDIF
-!ifdef ONE_PLOT_CITY_RADIUS
-	-COPY "$(Target_BIN)" "..\1 city plot\."
-!else
-	-COPY "$(Target_BIN)" "..\2 city plot\."
-!endif
 !IF "$(TARGET)" == "Debug" || "$(TARGET)" == "Profile"
 	-COPY "$(Target_PDB)" "$(YOURMOD)\Assets\."
 !ENDIF
+!IF "$(YOURMOD)" != ".."
+	-xcopy "..\Assets\*" "$(YOURMOD)\Assets\*" /e /y /f /d
+	-xcopy "..\PublicMaps\*" "$(YOURMOD)\PublicMaps\*" /e /y /f /d
+!ENDIF
+!ENDIF
+!IFDEF ONE_PLOT_CITY_RADIUS
+	-COPY "$(Target_BIN)" "..\1 city plot\."
+!ELSE
+	-COPY "$(Target_BIN)" "..\2 city plot\."
+!ENDIF
+
 
 precompile: Make_Dir Target_unfinished $(Target_PCH)
 
