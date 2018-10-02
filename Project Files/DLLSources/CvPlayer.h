@@ -1092,7 +1092,8 @@ public:
 	///
 
 public:
-	void applyCivEffect(int iChange, const CivEffectInfo* pCivEffect);
+	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange = 1);
+	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
 
@@ -1103,8 +1104,6 @@ public:
 private:
 	BuildingArray<char>     m_ja_iCacheAllowsBuildings;
 	UnitArray<char>         m_ja_iCacheAllowsUnits;
-
-	void addCivEffect(CivEffectTypes eCivEffect);
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
