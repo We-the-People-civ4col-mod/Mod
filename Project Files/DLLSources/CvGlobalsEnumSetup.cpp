@@ -1,16 +1,17 @@
 
 #include "CvGameCoreDLL.h"
 
-CivEffectTypes CIV_EFFECT_DEFAULT_ALL      = NO_CIV_EFFECT;
-CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN = NO_CIV_EFFECT;
-CivEffectTypes CIV_EFFECT_DEFAULT_NATIVE   = NO_CIV_EFFECT;
-CivEffectTypes CIV_EFFECT_DEFAULT_KING     = NO_CIV_EFFECT;
-CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
-CivEffectTypes CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_ALL      = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_EUROPEAN = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_NATIVE   = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_KING     = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
 
-BuildTypes     NUM_BUILD_TYPES             = FIRST_BUILD;
-CivEffectTypes NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
-TraitTypes     NUM_TRAIT_TYPES             = FIRST_TRAIT;
+BuildTypes       NUM_BUILD_TYPES             = FIRST_BUILD;
+CivEffectTypes   NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
+CivicOptionTypes NUM_CIVICOPTION_TYPES       = FIRST_CIVICOPTION;
+TraitTypes       NUM_TRAIT_TYPES             = FIRST_TRAIT;
 
 
 void CvGlobals::postXMLLoad(bool bFirst)
@@ -19,6 +20,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 	{
 		NUM_BUILD_TYPES          = static_cast<BuildTypes>         (m_paBuildInfo.size());
 		NUM_CIV_EFFECT_TYPES     = static_cast<CivEffectTypes>     (m_paCivEffectInfo.size());
+		NUM_CIVICOPTION_TYPES    = static_cast<CivicOptionTypes>   (m_paCivicOptionInfo.size());
 		NUM_TRAIT_TYPES          = static_cast<TraitTypes>         (m_paTraitInfo.size());
 
 		int iCounter = 0;

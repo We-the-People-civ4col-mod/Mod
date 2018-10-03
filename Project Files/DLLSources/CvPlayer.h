@@ -1092,10 +1092,9 @@ public:
 	///
 
 public:
-	void applyCivEffect(const CivEffectInfo* pCivEffect, bool bAdd = true) { applyCivEffect(pCivEffect, bAdd, false); }
-	void applyCivEffect(CivEffectTypes       eCivEffect, bool bAdd = true);
-	void resetCivEffectCache();
-	void rebuildCivEffectCache();
+	// pick the version with the pointer if you have the pointer
+	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange = 1);
+	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
 
 	inline bool canUseBonus(BonusTypes eBonus)                     const { return m_ja_iCacheAllowsBonuses         .get(eBonus)          > 0; }
 	inline bool canUseBuild(BuildTypes eBuild)                     const { return m_ba_CacheAllowBuild             .get(eBuild)             ; }
@@ -1125,8 +1124,23 @@ private:
 	
 	BoolArray                  m_ba_CacheAllowBuild;
 
-	void applyCivEffect(const CivEffectInfo* pCivEffect, bool bAdd, bool bForceUpdateCache);
+	void resetCivEffectCache();
+	void rebuildCivEffectCache();
+	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool bForceUpdateCache);
 };
+
+inline void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange)
+{
+	applyCivEffect(pCivEffect, iChange, false);
+}
+
+inline void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange)
+{
+	if (eCivEffect != NO_CIV_EFFECT)
+	{
+		applyCivEffect(GC.getCivEffectInfo(eCivEffect), iChange, false);
+	}
+}
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 inline int CvPlayer::getYieldEquipmentAmount(ProfessionTypes eProfession, YieldTypes eYield) const

@@ -4158,6 +4158,7 @@ bool CvSpecialUnitInfo::read(CvXMLLoadUtility* pXML)
 //------------------------------------------------------------------------------------------------------
 CvCivicInfo::CvCivicInfo() :
 m_iCivicOptionType(NO_CIVICOPTION),
+m_eCivEffect(NO_CIV_EFFECT),
 m_iAIWeight(0),
 m_iGreatGeneralRateModifier(0),
 m_iDomesticGreatGeneralRateModifier(0),
@@ -4417,6 +4418,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "CivicOptionType");
 	m_iCivicOptionType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iDomesticGreatGeneralRateModifier, "iDomesticGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iFreeExperience, "iFreeExperience");

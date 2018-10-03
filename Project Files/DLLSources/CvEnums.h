@@ -1622,7 +1622,10 @@ enum DllExport CultureLevelTypes
 enum DllExport CivicOptionTypes
 {
 	NO_CIVICOPTION = -1,
+	FIRST_CIVICOPTION = 0,
 };
+
+extern CivicOptionTypes NUM_CIVICOPTION_TYPES;
 
 enum DllExport CivicTypes
 {

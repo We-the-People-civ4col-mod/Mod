@@ -1068,6 +1068,7 @@ public:
 	DllExport virtual ~CvCivicInfo();
 	DllExport int getCivicOptionType() const;
 	DllExport int getAIWeight() const;
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
 	DllExport int getGreatGeneralRateModifier() const;
 	DllExport int getDomesticGreatGeneralRateModifier() const;
 	DllExport int getFreeExperience() const;
@@ -1100,6 +1101,7 @@ public:
 	DllExport bool read(CvXMLLoadUtility* pXML);
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	CivEffectTypes m_eCivEffect;
 	int m_iCivicOptionType;
 	int m_iAIWeight;
 	int m_iGreatGeneralRateModifier;

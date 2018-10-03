@@ -4,6 +4,7 @@
 <!-- -->
 <!-- Game Info Schema -->
 <Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="eCivEffect" content="textOnly"/>
 	<ElementType name="WorldSize" content="textOnly"/>
 	<ElementType name="iDefaultPlayers" content="textOnly" dt:type="int"/>
 	<ElementType name="iDefaultNativePlayers" content="textOnly" dt:type="int"/>
@@ -432,6 +433,7 @@
 		<element type="Help" minOccurs="0"/>
 		<element type="Button"/>
 		<element type="iAIWeight"/>
+		<element type="eCivEffect" minOccurs="0"/>
 		<element type="iGreatGeneralRateModifier"/>
 		<element type="iDomesticGreatGeneralRateModifier"/>
 		<element type="iFreeExperience"/>
