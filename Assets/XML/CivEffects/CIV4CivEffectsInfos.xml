@@ -4,6 +4,32 @@
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_AI</Type>
 		<TagGroupAllow>
+			<AllowBuilds>
+				<AllowBuild>
+					<eBuild>BUILD_DRAIN_MARSH</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_GRASS</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_PLAINS</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_MARSH</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_SAVANNAH</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+				<AllowBuild>
+					<eBuild>BUILD_REFORESTATION_TUNDRA</eBuild>
+					<iAllow>-50</iAllow>
+				</AllowBuild>
+			</AllowBuilds>
 			<AllowImprovements>
 				<AllowImprovement>
 					<eImprovement>IMPROVEMENT_MONASTERY</eImprovement>

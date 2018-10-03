@@ -4642,6 +4642,7 @@ public:
 	~CivEffectInfo();
 
 	inline const InfoArray* getAllowedBonuses              () const { return &m_info_AllowBonuses     ; }
+	inline const InfoArray* getAllowedBuilds               () const { return &m_info_AllowBuilds      ; }
 	inline const InfoArray* getAllowedBuildingClasses      () const { return &m_info_AllowBuildings   ; }
 	inline const InfoArray* getAllowedCivics               () const { return &m_info_AllowCivics      ; }
 	inline const InfoArray* getAllowedImmigrants           () const { return &m_info_AllowImmigrants  ; }
@@ -4656,6 +4657,7 @@ public:
 
 protected:
 	InfoArrayMod m_info_AllowBonuses;
+	InfoArrayMod m_info_AllowBuilds;
 	InfoArrayMod m_info_AllowBuildings;
 	InfoArrayMod m_info_AllowCivics;
 	InfoArrayMod m_info_AllowImmigrants;

@@ -40,6 +40,7 @@
 
 CvPlayer::CvPlayer()
 	: m_ja_iCacheAllowsBonuses(1)
+	, m_ja_iCacheAllowsBuilds(1)
 	, m_ja_iCacheAllowsBuildings(1)
 	, m_ja_iCacheAllowsCivics(1)
 	, m_ja_iCacheAllowsImmigrants(1)
@@ -49,6 +50,7 @@ CvPlayer::CvPlayer()
 	, m_ja_iCacheAllowsRoutes(1)
 	, m_ja_iCacheAllowsUnits(1)
 	, m_ja_iCacheAllowsYields(1)
+	, m_ba_CacheAllowBuild(JIT_ARRAY_BUILD, true)
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
@@ -6525,14 +6527,9 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 {
 	PROFILE_FUNC();
 
-	ImprovementTypes eImprovement = ((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement()));
-	if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
-	{
-		return false;
-	}
-
-	RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
-	if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
+	// CivEffect check
+	// Should be first because of lazy checking optimization. It's just a BoolArray lookup, hence very fast
+	if (!this->canUseBuild(eBuild))
 	{
 		return false;
 	}
@@ -6548,39 +6545,6 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 			return false;
 		}
 	}
-
-	// R&R, ray, Monasteries and Forts - START
-	// just for safety because AI would not use them wisely
-	if (!isHuman())
-	{
-		// Moving AI hardcoding to CIV_EFFECT_DEFAULT_AI
-		/*
-		// do not allow AI to build Railroads, because they are not useful enough to them
-		RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
-		if (eRoute != NO_ROUTE && GC.getRouteInfo(eRoute).getValue() == 3)
-		{
-			return false;
-		}
-
-		//R&R mod, vetiarvind, "Super forts" merge. Allow Forts for AI
-		// do not allow AI to build Forts and Monasteries, because they are not useful enough to them
-		ImprovementTypes eImprovement = ((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement()));
-		if (eImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eImprovement).isMonastery())
-		//if (eImprovement != NO_IMPROVEMENT && (GC.getImprovementInfo(eImprovement).isFort() ||  GC.getImprovementInfo(eImprovement).isMonastery())) -- original
-		{
-			return false;
-		}
-
-		*/
-
-		// R&R, ray, Terraforming Features - START
-		if (GC.getBuildInfo(eBuild).getPrereqTerrain() != NO_TERRAIN)
-		{
-			return false;
-		}
-		// R&R, ray, Terraforming Features - END
-	}
-	// R&R, ray, Monasteries and Forts - END
 
 	return true;
 }
@@ -22724,22 +22688,56 @@ void CvPlayer::sortEuropeUnits()
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
 }
 
-void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange)
+void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool bUpdateCache, bool bForceUpdateCache)
 {
 	FAssert(getCivilizationType() != NO_CIVILIZATION);
 	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
 
-	m_ja_iCacheAllowsBonuses                .addCache(iChange, pCivEffect->getAllowedBonuses           (), pCivInfo);
-	m_ja_iCacheAllowsBuildings              .addCache(iChange, pCivEffect->getAllowedBuildingClasses   (), pCivInfo);
-	m_ja_iCacheAllowsCivics                 .addCache(iChange, pCivEffect->getAllowedCivics            (), pCivInfo);
-	m_ja_iCacheAllowsImmigrants             .addCache(iChange, pCivEffect->getAllowedImmigrants        (), pCivInfo);
-	m_ja_iCacheAllowsImprovements           .addCache(iChange, pCivEffect->getAllowedImprovements      (), pCivInfo);
-	m_ja_iCacheAllowsProfessions            .addCache(iChange, pCivEffect->getAllowedProfessions       (), pCivInfo);
-	m_ja_iCacheAllowsPromotions             .addCache(iChange, pCivEffect->getAllowedPromotions        (), pCivInfo);
-	m_ja_iCacheAllowsRoutes                 .addCache(iChange, pCivEffect->getAllowedRoutes            (), pCivInfo);
-	m_ja_iCacheAllowsUnits                  .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
-	m_ja_iCacheAllowsYields                 .addCache(iChange, pCivEffect->getAllowedYields            (), pCivInfo);
+	bool bUpdateBuilds = bForceUpdateCache;
 
+	m_ja_iCacheAllowsBonuses                                 .addCache(iChange, pCivEffect->getAllowedBonuses           (), pCivInfo);
+	bUpdateBuilds |= m_ja_iCacheAllowsBuilds                 .addCache(iChange, pCivEffect->getAllowedBuilds            (), pCivInfo);
+	m_ja_iCacheAllowsBuildings                               .addCache(iChange, pCivEffect->getAllowedBuildingClasses   (), pCivInfo);
+	m_ja_iCacheAllowsCivics                                  .addCache(iChange, pCivEffect->getAllowedCivics            (), pCivInfo);
+	m_ja_iCacheAllowsImmigrants                              .addCache(iChange, pCivEffect->getAllowedImmigrants        (), pCivInfo);
+	bUpdateBuilds |= m_ja_iCacheAllowsImprovements           .addCache(iChange, pCivEffect->getAllowedImprovements      (), pCivInfo);
+	m_ja_iCacheAllowsProfessions                             .addCache(iChange, pCivEffect->getAllowedProfessions       (), pCivInfo);
+	m_ja_iCacheAllowsPromotions                              .addCache(iChange, pCivEffect->getAllowedPromotions        (), pCivInfo);
+	bUpdateBuilds |= m_ja_iCacheAllowsRoutes                 .addCache(iChange, pCivEffect->getAllowedRoutes            (), pCivInfo);
+	m_ja_iCacheAllowsUnits                                   .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
+	m_ja_iCacheAllowsYields                                  .addCache(iChange, pCivEffect->getAllowedYields            (), pCivInfo);
+
+	if (bUpdateCache)
+	{
+		if (bUpdateBuilds)
+		{
+			m_ba_CacheAllowBuild.reset();
+			for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
+			{
+				if (this->m_ja_iCacheAllowsBuilds.get(eBuild) <= 0)
+				{
+					m_ba_CacheAllowBuild.set(false, eBuild);
+					continue;
+				}
+
+				const CvBuildInfo *pBuild = &GC.getBuildInfo(eBuild);
+				
+				ImprovementTypes eImprovement = static_cast<ImprovementTypes>(pBuild->getImprovement());
+				if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
+				{
+					m_ba_CacheAllowBuild.set(false, eBuild);
+					continue;
+				}
+
+				RouteTypes eRoute = static_cast<RouteTypes>(pBuild->getRoute());
+				if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
+				{
+					m_ba_CacheAllowBuild.set(false, eBuild);
+					continue;
+				}
+			}
+		}
+	}
 }
 
 void CvPlayer::resetCivEffectCache()
@@ -22754,13 +22752,15 @@ void CvPlayer::resetCivEffectCache()
 	m_ja_iCacheAllowsRoutes         .reset();
 	m_ja_iCacheAllowsUnits          .reset();
 	m_ja_iCacheAllowsYields         .reset();
+
+	m_ba_CacheAllowBuild            .reset();
 }
 
-void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange)
+void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange, bool bUpdateCache, bool bForceUpdateCache)
 {
 	if (eCivEffect != NO_CIV_EFFECT)
 	{
-		applyCivEffect(GC.getCivEffectInfo(eCivEffect), iChange);
+		applyCivEffect(GC.getCivEffectInfo(eCivEffect), iChange, bUpdateCache, bForceUpdateCache);
 	}
 }
 
@@ -22773,18 +22773,16 @@ void CvPlayer::rebuildCivEffectCache()
 		return;
 	}
 
-	applyCivEffect(GC.getAutogeneratedCivEffect());
-
 	// add the global CivEffects if they are in xml and applies to this player
-	applyCivEffect(CIV_EFFECT_DEFAULT_ALL);
-	applyCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN);
-	applyCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI);
+	applyCivEffect(CIV_EFFECT_DEFAULT_ALL, 1, false);
+	applyCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN, 1, false);
+	applyCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI, 1, false);
 
 	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
 		if (this->hasTrait(eTrait))
 		{
-			applyCivEffect(GC.getTraitInfo(eTrait).getCivEffect());
+			applyCivEffect(GC.getTraitInfo(eTrait).getCivEffect(), 1, false);
 		}
 	}
 
@@ -22792,7 +22790,7 @@ void CvPlayer::rebuildCivEffectCache()
 	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
 	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());
 
-	applyCivEffect(kCivInfo.getCivEffect());
+	applyCivEffect(kCivInfo.getCivEffect(), 1, false);
 
 	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < GC.getNumBuildingInfos(); ++eBuilding)
 	{
@@ -22809,4 +22807,8 @@ void CvPlayer::rebuildCivEffectCache()
 			m_ja_iCacheAllowsUnits.set(-50, eUnit);
 		}
 	}
+
+	// last CivEffect to be applied
+	// use this to both apply the autogenerated CivEffect and force update secondary caches
+	applyCivEffect(GC.getAutogeneratedCivEffect(), 1, true, true);
 }

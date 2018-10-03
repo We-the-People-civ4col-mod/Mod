@@ -914,7 +914,10 @@ enum DllExport GoodyTypes
 enum DllExport BuildTypes
 {
 	NO_BUILD = -1,
+	FIRST_BUILD = 0,
 };
+
+extern BuildTypes NUM_BUILD_TYPES;
 
 enum DllExport FontSymbols
 {

@@ -4,6 +4,7 @@
 
 	<ElementType name="Type" content="textOnly"/>
 	<ElementType name="eBonus" content="textOnly"/>
+	<ElementType name="eBuild" content="textOnly"/>
 	<ElementType name="eBuildingClass" content="textOnly"/>
 	<ElementType name="eCivic" content="textOnly"/>
 	<ElementType name="eImprovement" content="textOnly"/>
@@ -18,6 +19,10 @@
 
 	<ElementType name="AllowBonus" content="eltOnly">
 		<element type="eBonus" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowBuild" content="eltOnly">
+		<element type="eBuild" />
 		<element type="iAllow" />
 	</ElementType>
 	<ElementType name="AllowBuildingClass" content="eltOnly">
@@ -60,6 +65,9 @@
 	<ElementType name="AllowBonuses" content="eltOnly">
 		<element type="AllowBonus" minOccurs="0" maxOccurs="*" />
 	</ElementType>
+	<ElementType name="AllowBuilds" content="eltOnly">
+		<element type="AllowBuild" minOccurs="0" maxOccurs="*" />
+	</ElementType>
 	<ElementType name="AllowBuildingClasses" content="eltOnly">
 		<element type="AllowBuildingClass" minOccurs="0" maxOccurs="*" />
 	</ElementType>
@@ -92,6 +100,7 @@
 	
 	<ElementType name="TagGroupAllow" content="eltOnly">
 		<element type="AllowBonuses" minOccurs="0" />
+		<element type="AllowBuilds" minOccurs="0" />
 		<element type="AllowBuildingClasses" minOccurs="0" />
 		<element type="AllowCivics" minOccurs="0" />
 		<element type="AllowImmigrants" minOccurs="0" />

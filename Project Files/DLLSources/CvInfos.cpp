@@ -15384,6 +15384,7 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 
 CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 	: m_info_AllowBonuses      (JIT_ARRAY_BONUS              , JIT_ARRAY_ALLOW)
+	, m_info_AllowBuilds       (JIT_ARRAY_BUILD              , JIT_ARRAY_ALLOW)
 	, m_info_AllowBuildings    (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
 	, m_info_AllowCivics       (JIT_ARRAY_CIVIC              , JIT_ARRAY_ALLOW)
 	, m_info_AllowImmigrants   (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
@@ -15407,6 +15408,7 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		//   whenever there is a positive value in a CivEffect
 
 		BonusArray<int> ja_Bonuses;
+		BuildArray<int> ja_Builds;
 		BuildingClassArray<int> ja_Buildings;
 		CivicArray<int> ja_Civics;
 		UnitClassArray<int> ja_Immigrants;
@@ -15421,6 +15423,7 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		{
 			const CivEffectInfo *pInfo = GC.getCivEffectInfo(eCivEffect);
 			ja_Bonuses         .generateInitCivEffect(pInfo->getAllowedBonuses());
+			ja_Builds          .generateInitCivEffect(pInfo->getAllowedBuilds());
 			ja_Buildings       .generateInitCivEffect(pInfo->getAllowedBuildingClasses());
 			ja_Civics          .generateInitCivEffect(pInfo->getAllowedCivics());
 			ja_Immigrants      .generateInitCivEffect(pInfo->getAllowedImmigrants());
@@ -15433,6 +15436,7 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		}
 
 		m_info_AllowBonuses         .assign(&ja_Bonuses);
+		m_info_AllowBuilds          .assign(&ja_Builds);
 		m_info_AllowBuildings       .assign(&ja_Buildings);
 		m_info_AllowCivics          .assign(&ja_Civics);
 		m_info_AllowImmigrants      .assign(&ja_Immigrants);
@@ -15459,6 +15463,7 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupAllow"))
 	{
 		m_info_AllowBonuses      .read(pXML, getType(), "AllowBonuses"           );
+		m_info_AllowBuilds       .read(pXML, getType(), "AllowBuilds"            );
 		m_info_AllowBuildings    .read(pXML, getType(), "AllowBuildingClasses"   );
 		m_info_AllowCivics       .read(pXML, getType(), "AllowCivics"            );
 		m_info_AllowImmigrants   .read(pXML, getType(), "AllowImmigrants"        );

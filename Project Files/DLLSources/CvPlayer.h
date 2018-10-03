@@ -1092,12 +1092,13 @@ public:
 	///
 
 public:
-	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange = 1);
-	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
+	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange = 1, bool bUpdateCache = true, bool bForceUpdateCache = false);
+	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1, bool bUpdateCache = true, bool bForceUpdateCache = false);
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
 
 	inline bool canUseBonus(BonusTypes eBonus)                     const { return m_ja_iCacheAllowsBonuses         .get(eBonus)          > 0; }
+	inline bool canUseBuild(BuildTypes eBuild)                     const { return m_ba_CacheAllowBuild             .get(eBuild)             ; }
 	inline bool canUseBuilding(BuildingTypes eBuilding)            const { return m_ja_iCacheAllowsBuildings       .get(eBuilding)       > 0; }
 	inline bool canUseCivic(CivicTypes eCivic)                     const { return m_ja_iCacheAllowsCivics          .get(eCivic)          > 0; }
 	inline bool canUseImmigrant(UnitTypes eUnit)                   const { return m_ja_iCacheAllowsImmigrants      .get(eUnit)           > 0; }
@@ -1111,6 +1112,7 @@ public:
 
 private:
 	BonusArray          <char> m_ja_iCacheAllowsBonuses;
+	BuildArray          <char> m_ja_iCacheAllowsBuilds;
 	BuildingArray       <char> m_ja_iCacheAllowsBuildings;
 	CivicArray          <char> m_ja_iCacheAllowsCivics;
 	UnitArray           <char> m_ja_iCacheAllowsImmigrants;
@@ -1121,6 +1123,7 @@ private:
 	UnitArray           <char> m_ja_iCacheAllowsUnits;
 	YieldArray          <char> m_ja_iCacheAllowsYields;
 	
+	BoolArray                  m_ba_CacheAllowBuild;
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

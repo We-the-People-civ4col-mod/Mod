@@ -8,6 +8,7 @@ CivEffectTypes CIV_EFFECT_DEFAULT_KING     = NO_CIV_EFFECT;
 CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
 CivEffectTypes CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
 
+BuildTypes     NUM_BUILD_TYPES             = FIRST_BUILD;
 CivEffectTypes NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
 TraitTypes     NUM_TRAIT_TYPES             = FIRST_TRAIT;
 
@@ -16,8 +17,9 @@ void CvGlobals::postXMLLoad(bool bFirst)
 {
 	if (bFirst)
 	{
-		NUM_CIV_EFFECT_TYPES = static_cast<CivEffectTypes>(m_paCivEffectInfo.size());
-		NUM_TRAIT_TYPES = static_cast<TraitTypes>    (m_paTraitInfo.size());
+		NUM_BUILD_TYPES          = static_cast<BuildTypes>         (m_paBuildInfo.size());
+		NUM_CIV_EFFECT_TYPES     = static_cast<CivEffectTypes>     (m_paCivEffectInfo.size());
+		NUM_TRAIT_TYPES          = static_cast<TraitTypes>         (m_paTraitInfo.size());
 
 		int iCounter = 0;
 
