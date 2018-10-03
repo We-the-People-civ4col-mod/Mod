@@ -6692,6 +6692,12 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 		return true;
 	}
 
+	// CivEffect check
+	if (!this->canUseCivic(eCivic))
+	{
+		return false;
+	}
+
 	if(GC.getUSE_CAN_DO_CIVIC_CALLBACK())
 	{
 		CyArgsList argsList;
@@ -18282,6 +18288,12 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 {
 	if (eProfession != NO_PROFESSION)
 	{
+		// CivEffect check
+		if (!this->canUseProfession(eProfession))
+		{
+			return false;
+		}
+
 		if (!GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eProfession))
 		{
 			return false;
