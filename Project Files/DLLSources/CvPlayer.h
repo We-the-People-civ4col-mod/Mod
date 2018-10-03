@@ -1092,8 +1092,8 @@ public:
 	///
 
 public:
-	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange = 1, bool bUpdateCache = true, bool bForceUpdateCache = false);
-	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1, bool bUpdateCache = true, bool bForceUpdateCache = false);
+	void applyCivEffect(const CivEffectInfo* pCivEffect, bool bAdd = true) { applyCivEffect(pCivEffect, bAdd, false); }
+	void applyCivEffect(CivEffectTypes       eCivEffect, bool bAdd = true);
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
 
@@ -1124,6 +1124,8 @@ private:
 	YieldArray          <char> m_ja_iCacheAllowsYields;
 	
 	BoolArray                  m_ba_CacheAllowBuild;
+
+	void applyCivEffect(const CivEffectInfo* pCivEffect, bool bAdd, bool bForceUpdateCache);
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

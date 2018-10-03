@@ -22700,10 +22700,12 @@ void CvPlayer::sortEuropeUnits()
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
 }
 
-void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool bUpdateCache, bool bForceUpdateCache)
+void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, bool bAdd, bool bForceUpdateCache)
 {
 	FAssert(getCivilizationType() != NO_CIVILIZATION);
 	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
+
+	int iChange = bAdd ? 1 : -1;
 
 	bool bUpdateBuilds = bForceUpdateCache;
 
@@ -22719,34 +22721,43 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool
 	m_ja_iCacheAllowsUnits                                   .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
 	m_ja_iCacheAllowsYields                                  .addCache(iChange, pCivEffect->getAllowedYields            (), pCivInfo);
 
-	if (bUpdateCache)
+
+	// The CivEffect has been applied. Now update secondary caches if needed
+
+	if (gDLL->isGameInitializing() && !bForceUpdateCache)
 	{
-		if (bUpdateBuilds)
+		// Don't waste time on secondary caches during initialization
+		// The last call from rebuildCivEffectCache() will have bForceUpdateCache to set everything
+		return;
+	}
+
+	if (bUpdateBuilds)
+	{
+		// Something changed, which might affect which builds are allowed
+		// reset and rebuild the BoolArray to make sure it's up to date
+		m_ba_CacheAllowBuild.reset();
+		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
 		{
-			m_ba_CacheAllowBuild.reset();
-			for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
+			if (this->m_ja_iCacheAllowsBuilds.get(eBuild) <= 0)
 			{
-				if (this->m_ja_iCacheAllowsBuilds.get(eBuild) <= 0)
-				{
-					m_ba_CacheAllowBuild.set(false, eBuild);
-					continue;
-				}
+				m_ba_CacheAllowBuild.set(false, eBuild);
+				continue;
+			}
 
-				const CvBuildInfo *pBuild = &GC.getBuildInfo(eBuild);
+			const CvBuildInfo *pBuild = &GC.getBuildInfo(eBuild);
 				
-				ImprovementTypes eImprovement = static_cast<ImprovementTypes>(pBuild->getImprovement());
-				if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
-				{
-					m_ba_CacheAllowBuild.set(false, eBuild);
-					continue;
-				}
+			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(pBuild->getImprovement());
+			if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
+			{
+				m_ba_CacheAllowBuild.set(false, eBuild);
+				continue;
+			}
 
-				RouteTypes eRoute = static_cast<RouteTypes>(pBuild->getRoute());
-				if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
-				{
-					m_ba_CacheAllowBuild.set(false, eBuild);
-					continue;
-				}
+			RouteTypes eRoute = static_cast<RouteTypes>(pBuild->getRoute());
+			if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
+			{
+				m_ba_CacheAllowBuild.set(false, eBuild);
+				continue;
 			}
 		}
 	}
@@ -22755,6 +22766,7 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool
 void CvPlayer::resetCivEffectCache()
 {
 	m_ja_iCacheAllowsBonuses        .reset();
+	m_ja_iCacheAllowsBuilds         .reset();
 	m_ja_iCacheAllowsBuildings      .reset();
 	m_ja_iCacheAllowsCivics         .reset();
 	m_ja_iCacheAllowsImmigrants     .reset();
@@ -22768,11 +22780,11 @@ void CvPlayer::resetCivEffectCache()
 	m_ba_CacheAllowBuild            .reset();
 }
 
-void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange, bool bUpdateCache, bool bForceUpdateCache)
+void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, bool bAdd)
 {
 	if (eCivEffect != NO_CIV_EFFECT)
 	{
-		applyCivEffect(GC.getCivEffectInfo(eCivEffect), iChange, bUpdateCache, bForceUpdateCache);
+		applyCivEffect(GC.getCivEffectInfo(eCivEffect), bAdd, false);
 	}
 }
 
@@ -22786,24 +22798,24 @@ void CvPlayer::rebuildCivEffectCache()
 	}
 
 	// add the global CivEffects if they are in xml and applies to this player
-	applyCivEffect(CIV_EFFECT_DEFAULT_ALL, 1, false);
-	applyCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN, 1, false);
-	applyCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI, 1, false);
+	applyCivEffect(CIV_EFFECT_DEFAULT_ALL);
+	applyCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN);
+	applyCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI);
 
 	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
 		if (this->hasTrait(eTrait))
 		{
-			applyCivEffect(GC.getTraitInfo(eTrait).getCivEffect(), 1, false);
+			applyCivEffect(GC.getTraitInfo(eTrait).getCivEffect());
 		}
 	}
 
-	// Setup some default data based on xml values
-	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
 	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());
 
-	applyCivEffect(kCivInfo.getCivEffect(), 1, false);
+	applyCivEffect(kCivInfo.getCivEffect());
 
+	// Setup some default data based on xml values
+	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
 	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < GC.getNumBuildingInfos(); ++eBuilding)
 	{
 		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))
@@ -22822,5 +22834,5 @@ void CvPlayer::rebuildCivEffectCache()
 
 	// last CivEffect to be applied
 	// use this to both apply the autogenerated CivEffect and force update secondary caches
-	applyCivEffect(GC.getAutogeneratedCivEffect(), 1, true, true);
+	applyCivEffect(GC.getAutogeneratedCivEffect(), true, true);
 }
