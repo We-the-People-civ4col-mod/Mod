@@ -6525,6 +6525,18 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 {
 	PROFILE_FUNC();
 
+	ImprovementTypes eImprovement = ((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement()));
+	if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
+	{
+		return false;
+	}
+
+	RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
+	if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
+	{
+		return false;
+	}
+
 	if (!(pPlot->canBuild(eBuild, getID(), bTestVisible)))
 	{
 		return false;
@@ -6541,6 +6553,8 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 	// just for safety because AI would not use them wisely
 	if (!isHuman())
 	{
+		// Moving AI hardcoding to CIV_EFFECT_DEFAULT_AI
+		/*
 		// do not allow AI to build Railroads, because they are not useful enough to them
 		RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
 		if (eRoute != NO_ROUTE && GC.getRouteInfo(eRoute).getValue() == 3)
@@ -6556,6 +6570,8 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 		{
 			return false;
 		}
+
+		*/
 
 		// R&R, ray, Terraforming Features - START
 		if (GC.getBuildInfo(eBuild).getPrereqTerrain() != NO_TERRAIN)

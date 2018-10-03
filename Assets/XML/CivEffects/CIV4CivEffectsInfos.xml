@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Achievement Infos -->
+
 <Civ4CivEffectInfos xmlns="x-schema:CIV4CivEffectsInfosSchema.xml">
 	<CivEffectInfo>
-		<Type>CIV_EFFECT_DEFAULT_ALL</Type>
+		<Type>CIV_EFFECT_DEFAULT_AI</Type>
+		<TagGroupAllow>
+			<AllowImprovements>
+				<AllowImprovement>
+					<eImprovement>IMPROVEMENT_MONASTERY</eImprovement>
+					<iAllow>-50</iAllow>
+				</AllowImprovement>
+				<AllowImprovement>
+					<eImprovement>IMPROVEMENT_LARGE_MONASTERY</eImprovement>
+					<iAllow>-50</iAllow>
+				</AllowImprovement>
+			</AllowImprovements>
+			<AllowRoutes>
+				<AllowRoute>
+					<eRoute>ROUTE_RAILROAD</eRoute>
+					<iAllow>-50</iAllow>
+				</AllowRoute>
+			</AllowRoutes>
+		</TagGroupAllow>
 	</CivEffectInfo>
 </Civ4CivEffectInfos>

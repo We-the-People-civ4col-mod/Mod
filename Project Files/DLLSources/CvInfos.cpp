@@ -15462,7 +15462,7 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 		m_info_AllowBuildings    .read(pXML, getType(), "AllowBuildingClasses"   );
 		m_info_AllowCivics       .read(pXML, getType(), "AllowCivics"            );
 		m_info_AllowImmigrants   .read(pXML, getType(), "AllowImmigrants"        );
-		m_info_AllowImprovements .read(pXML, getType(), "AllowImprovementss"     );
+		m_info_AllowImprovements .read(pXML, getType(), "AllowImprovements"      );
 		m_info_AllowProfessions  .read(pXML, getType(), "AllowProfessions"       );
 		m_info_AllowPromotions   .read(pXML, getType(), "AllowPromotions"        );
 		m_info_AllowRoutes       .read(pXML, getType(), "AllowRoutes"            );
