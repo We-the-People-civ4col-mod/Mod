@@ -981,7 +981,10 @@ enum DllExport TurnTimerTypes
 enum DllExport EraTypes
 {
 	NO_ERA = -1,
+	FIRST_ERA = 0,
 };
+
+extern EraTypes NUM_ERA_TYPES;
 
 enum DllExport CivilizationTypes
 {
@@ -2810,7 +2813,10 @@ enum DllExport FatherCategoryTypes
 enum DllExport FatherTypes
 {
 	NO_FATHER = -1,
+	FIRST_FATHER = 0,
 };
+
+extern FatherTypes NUM_FATHER_TYPES;
 
 enum DllExport FatherPointTypes
 {

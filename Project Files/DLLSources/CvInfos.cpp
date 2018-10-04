@@ -12332,6 +12332,7 @@ m_iGreatGeneralPercent(0),
 m_iEventChancePerTurn(0),
 m_iSoundtrackSpace(0),
 m_iNumSoundtracks(0),
+m_eCivEffect(NO_CIV_EFFECT),
 m_bRevolution(false),
 m_bNoGoodies(false),
 m_bFirstSoundtrackFirst(false),
@@ -12451,6 +12452,7 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_bRevolution, "bRevolution");
 	pXML->GetChildXmlValByName(&m_bNoGoodies, "bNoGoodies");
 	pXML->GetChildXmlValByName(&m_iGameTurn, "iGameTurn");
@@ -14667,6 +14669,7 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 CvFatherInfo::CvFatherInfo() :
 	m_iFatherCategory(NO_FATHERCATEGORY),
 	m_iTrait(NO_TRAIT),
+	m_eCivEffect(NO_CIV_EFFECT),
 	m_aiFreeUnits(NULL),
 	m_aiPointCost(NULL),
 	m_abRevealImprovement(NULL)
@@ -14786,6 +14789,8 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
 	pXML->GetChildXmlValByName(szTextVal, "Trait");
 	m_iTrait = GC.getInfoTypeForString(szTextVal);
+
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 
 	pXML->SetVariableListTagPair(&m_aiFreeUnits, "FreeUnits", GC.getNumUnitClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiPointCost, "FatherPointCosts", GC.getNumFatherPointInfos(), 0);

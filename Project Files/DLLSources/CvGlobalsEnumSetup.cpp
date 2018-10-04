@@ -11,6 +11,8 @@ CivEffectTypes   CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
 BuildTypes       NUM_BUILD_TYPES             = FIRST_BUILD;
 CivEffectTypes   NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
 CivicOptionTypes NUM_CIVICOPTION_TYPES       = FIRST_CIVICOPTION;
+EraTypes         NUM_ERA_TYPES               = FIRST_ERA;
+FatherTypes      NUM_FATHER_TYPES            = FIRST_FATHER;
 TraitTypes       NUM_TRAIT_TYPES             = FIRST_TRAIT;
 
 
@@ -21,6 +23,8 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		NUM_BUILD_TYPES          = static_cast<BuildTypes>         (m_paBuildInfo.size());
 		NUM_CIV_EFFECT_TYPES     = static_cast<CivEffectTypes>     (m_paCivEffectInfo.size());
 		NUM_CIVICOPTION_TYPES    = static_cast<CivicOptionTypes>   (m_paCivicOptionInfo.size());
+		NUM_ERA_TYPES            = static_cast<EraTypes>           (m_aEraInfo.size());
+		NUM_FATHER_TYPES         = static_cast<FatherTypes>        (m_paFatherInfo.size());
 		NUM_TRAIT_TYPES          = static_cast<TraitTypes>         (m_paTraitInfo.size());
 
 		int iCounter = 0;

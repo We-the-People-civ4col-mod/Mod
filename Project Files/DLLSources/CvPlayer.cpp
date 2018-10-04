@@ -6436,6 +6436,8 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 {
 	CvFatherInfo& kFatherInfo = GC.getFatherInfo(eFather);
 
+	applyCivEffect(kFatherInfo.getCivEffect());
+
 	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
 	{
 		UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
@@ -8194,6 +8196,25 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
 	{
 		EraTypes eOldEra = m_eCurrentEra;
 		m_eCurrentEra = eNewValue;
+
+		// apply CivEffects
+		for (EraTypes eEra = static_cast<EraTypes>(eOldEra + 1); eEra <= eNewValue; ++eEra)
+		{
+			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
+			{
+				applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
+			}
+		}
+
+		// remove era CivEffects in case the player goes back in eras
+		// likely not needed, but it's better to be safe than sorry
+		for (EraTypes eEra = static_cast<EraTypes>(eNewValue + 1); eEra <= eOldEra; ++eEra)
+		{
+			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
+			{
+				applyCivEffect(GC.getEraInfo(eEra).getCivEffect(), - 1);
+			}
+		}
 
 		if (GC.getGameINLINE().getActiveTeam() != NO_TEAM)
 		{
@@ -22811,6 +22832,20 @@ void CvPlayer::rebuildCivEffectCache()
 		{
 			applyCivEffect(GC.getCivicInfo(eCivic).getCivEffect());
 		}
+	}
+
+	TeamTypes eTeam = this->getTeam();
+	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
+	{
+		if (GC.getGameINLINE().getFatherTeam(eFather) == eTeam)
+		{
+			applyCivEffect(GC.getFatherInfo(eFather).getCivEffect());
+		}
+	}
+
+	for (EraTypes eEra = FIRST_ERA; eEra <= getCurrentEra() && eEra < NUM_ERA_TYPES; ++eEra)
+	{
+		applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
 	}
 
 	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());

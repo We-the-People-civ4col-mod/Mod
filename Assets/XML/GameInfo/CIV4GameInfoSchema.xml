@@ -610,6 +610,7 @@
 		<element type="Description"/>
 		<element type="Strategy"/>
 		<element type="bNoGoodies"/>
+		<element type="eCivEffect" minOccurs="0"/>
 		<element type="bRevolution"/>
 		<element type="iGameTurn"/>
 		<element type="iAdvancedStartPoints"/>
@@ -725,6 +726,7 @@
 		<element type="Civilopedia"/>
 		<element type="Strategy"/>
 		<element type="FatherCategory"/>
+		<element type="eCivEffect" minOccurs="0"/>
 		<element type="RevealImprovements"/>
 		<element type="FreeUnits"/>
 		<element type="FatherPointCosts"/>

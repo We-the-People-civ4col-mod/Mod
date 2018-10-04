@@ -3734,6 +3734,8 @@ public:
 	DllExport const char* getAudioUnitVictoryScript() const;
 	DllExport const char* getAudioUnitDefeatScript() const;
 
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	DllExport bool isRevolution() const;
 	DllExport bool isNoGoodies() const;
 	DllExport bool isFirstSoundtrackFirst() const;
@@ -3763,6 +3765,7 @@ protected:
 	int m_iNumSoundtracks;
 	CvString m_szAudioUnitVictoryScript;
 	CvString m_szAudioUnitDefeatScript;
+	CivEffectTypes m_eCivEffect;
 	bool m_bRevolution;
 	bool m_bNoGoodies;
 	bool m_bFirstSoundtrackFirst;
@@ -4439,6 +4442,8 @@ public:
 	DllExport bool isRevealImprovement(int iImprovement) const;
 	DllExport const char* getPortrait() const;
 
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	std::wstring pyGetQuoteKey() { return getQuoteKey(); }
 	DllExport const wchar* getQuoteKey();
 	DllExport const char* getSound() const;
@@ -4450,6 +4455,7 @@ public:
 protected:
 	int m_iFatherCategory;
 	int m_iTrait;
+	CivEffectTypes m_eCivEffect;
 	int* m_aiFreeUnits;
 	int* m_aiPointCost;
 	bool* m_abRevealImprovement;
