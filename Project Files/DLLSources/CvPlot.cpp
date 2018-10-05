@@ -337,14 +337,7 @@ void CvPlot::doTurn()
 	if (getImprovementType() != NO_IMPROVEMENT)
 	{
 		changeImprovementDuration(1);
-		// Super Forts begin *upgrade*
-				
-		if(!isBeingWorked())
-		{
-			doImprovementUpgrade();			
-		}
-		
-		// Super Forts end
+		doImprovementUpgrade();			
 	}
 
 	// Super Forts begin *bombard*
@@ -426,98 +419,65 @@ void CvPlot::doImprovement()
 			}
 		}
 	}
-
-	doImprovementUpgrade();
 }
 
 void CvPlot::doImprovementUpgrade()
 {
-	if (getImprovementType() != NO_IMPROVEMENT)
+	FAssert(getImprovementType() != NO_IMPROVEMENT);
+
+	const ImprovementTypes eImprovementUpgrade = (ImprovementTypes)GC.getImprovementInfo(getImprovementType()).getImprovementUpgrade();
+
+	if (eImprovementUpgrade != NO_IMPROVEMENT)
 	{
-		// R&R mod, vetiarvind, monasteries and forts upgrade bug fix - start
-		// super forts merge - start
-		
-		//if(isFort() || isMonastery())return; //- original		
-		// super forts merge - end
-		// R&R mod, vetiarvind, monasteries and forts upgrade bug fix - end		
-		
-		ImprovementTypes eImprovementUpdrade = (ImprovementTypes)GC.getImprovementInfo(getImprovementType()).getImprovementUpgrade();		
+		const CvImprovementInfo& info = GC.getImprovementInfo(eImprovementUpgrade);
 
-		if (eImprovementUpdrade != NO_IMPROVEMENT)		
-		{	
-			
-			// R&R, ray, Monasteries and Forts - START
-			// if (isBeingWorked() || GC.getImprovementInfo(eImprovementUpdrade).isOutsideBorders())
-			if (isBeingWorked())
+		const bool bIsOutsideBorder = info.isOutsideBorders();
+
+		const int iUpgradeRate = GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeRate();
+
+		// Erik: Improvements that are allowd outside borders require specific units to activate them with regards to growth.
+		if (bIsOutsideBorder)
+		{
+			// Erik: Note that this case also handles forts \ monasteries that are worked inside a city AND it activated
+			if (isFort() || isMonastery())
 			{
-				changeUpgradeProgress(GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeRate());
+				const bool bDefenderFound = (getFortDefender() != NULL);
+				const bool bMissionaryFound = (getMonasteryMissionary() != NULL);
 
-				if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
+				if (bDefenderFound || bMissionaryFound)
 				{
-					setImprovementType(eImprovementUpdrade);
-				}
-			}
-			//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start
-			// vetiarvind, Super Forts merge start			
-			else if(isFort() || isMonastery())
-			{
-				//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start
-				bool bDefenderFound = (getFortDefender() != NULL);
-				bool bMissionaryFound = (getMonasteryMissionary() != NULL);
-
-				//if(bDefenderFound) - original
-				if(bDefenderFound || bMissionaryFound)
-				{
-				
-					int upgradeRate = GC.getImprovementInfo(eImprovementUpdrade).isOutsideBorders() ? 1 : GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeRate();
-					changeUpgradeProgress(upgradeRate);
-					//changeUpgradeProgress(GET_PLAYER(getOwnerINLINE()).getImprovementUpgradeRate()); - original
-					//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - end				
+					changeUpgradeProgress(iUpgradeRate);
 
 					if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
 					{
-						setImprovementType(eImprovementUpdrade);
+						setImprovementType(eImprovementUpgrade);
 					}
 				}
 			}
-			
-			// Super Forts end
-			//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - end
-			else if (GC.getImprovementInfo(eImprovementUpdrade).isOutsideBorders())
+			else
 			{
-				changeUpgradeProgress(1);
+				// Erik: Currently unused by RaR, but a future improvement may support upgrades so we allow that unconditionally as long as its not a fort or monasteryy
+				changeUpgradeProgress(iUpgradeRate);
 
 				if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
 				{
-					setImprovementType(eImprovementUpdrade);
+					setImprovementType(eImprovementUpgrade);
 				}
 			}
-			// R&R, ray, Monasteries and Forts -END
-			
-			
+		}
+
+		// Erik: This is the standard case for farms etc.
+		if (isBeingWorked() && !bIsOutsideBorder)
+		{
+			changeUpgradeProgress(iUpgradeRate);
+
+			if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
+			{
+				setImprovementType(eImprovementUpgrade);
+			}
 		}
 	}
 }
-//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start
-/*
-// R&R mod, vetiarvind, monasteries and forts upgrade bug fix - start
-void CvPlot::doUpgradeNonWorkerImprovements()
-{
-	if (getImprovementType() != NO_IMPROVEMENT)
-	{
-		ImprovementTypes eImprovementUpdrade = (ImprovementTypes)GC.getImprovementInfo(getImprovementType()).getImprovementUpgrade();
-		if (eImprovementUpdrade != NO_IMPROVEMENT)
-		{
-			changeUpgradeProgress(1);
-			if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
-			{
-				setImprovementType(eImprovementUpdrade);
-			}
-		}
-	}    
-}
-*/
-// R&R mod, vetiarvind, monasteries and forts upgrade bug fix - end
 
 void CvPlot::updateCulture(bool bBumpUnits)
 {
@@ -9619,21 +9579,29 @@ CvUnit* CvPlot::getFortDefender()
 	while (pUnitNode != NULL)
 	{
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);		
-		if(pLoopUnit == NULL)
+		if (pLoopUnit == NULL)
 			continue;
 
-		bool isInfantryType = ((pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_LAND") || pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_CONTINENTAL_GUARD") 
-			|| (pLoopUnit->getProfession()!=NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).isCityDefender() && !GC.getProfessionInfo(pLoopUnit->getProfession()).isUnarmed())));
-		if (isInfantryType && pLoopUnit->getTeam() == getTeam()	&& pLoopUnit->getFortifyTurns() > 0 )		
-		{			
-			if(pDefenseUnit == NULL || pDefenseUnit->baseCombatStr() < pLoopUnit->baseCombatStr())// R&R mod, vetiarvind, monasteries and forts upgrade bug fix
+		const UnitCombatTypes eSiegeType = (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_SIEGE");
+		const UnitCombatTypes eGunType = (UnitCombatTypes)GC.getInfoTypeForString("UNITCOMBAT_GUN");
+
+		// Erik: Non-invisible units with firearms or defensive artillery may defend the fort.
+		if (!pLoopUnit->alwaysInvisible()) 
+		{	
+			if (pLoopUnit->getUnitCombatType() == eSiegeType && !pLoopUnit->noDefensiveBonus() || pLoopUnit->getUnitCombatType() == eGunType)
 			{
-				pDefenseUnit = pLoopUnit;						
-			}			
+				if (pLoopUnit->getTeam() == getTeam() && pLoopUnit->getFortifyTurns() > 0)
+				{
+					// Erik: Find the strongest valid defender
+					if (pDefenseUnit == NULL || pDefenseUnit->baseCombatStr() < pLoopUnit->baseCombatStr())
+					{
+						pDefenseUnit = pLoopUnit;
+					}
+				}
+			}
 		}
-		
-		
+	
+		pUnitNode = nextUnitNode(pUnitNode);
 	}
 	return pDefenseUnit;
 }
