@@ -1617,7 +1617,12 @@ enum DllExport PromotionTypes
 enum DllExport HurryTypes
 {
 	NO_HURRY = -1,
+	FIRST_HURRY = 0,
 };
+
+extern HurryTypes HURRY_GOLD;
+extern HurryTypes HURRY_IMMIGRANT;
+extern HurryTypes NUM_HURRY_TYPES;
 
 enum DllExport CultureLevelTypes
 {

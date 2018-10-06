@@ -8,6 +8,10 @@ CivEffectTypes   CIV_EFFECT_DEFAULT_KING     = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
 
+HurryTypes       HURRY_GOLD                  = NO_HURRY;
+HurryTypes       HURRY_IMMIGRANT             = NO_HURRY;
+HurryTypes       NUM_HURRY_TYPES             = FIRST_HURRY;
+
 BuildTypes       NUM_BUILD_TYPES             = FIRST_BUILD;
 CivEffectTypes   NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
 CivicOptionTypes NUM_CIVICOPTION_TYPES       = FIRST_CIVICOPTION;
@@ -26,8 +30,26 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		NUM_CIVICOPTION_TYPES    = static_cast<CivicOptionTypes>   (m_paCivicOptionInfo.size());
 		NUM_ERA_TYPES            = static_cast<EraTypes>           (m_aEraInfo.size());
 		NUM_FATHER_TYPES         = static_cast<FatherTypes>        (m_paFatherInfo.size());
+		NUM_HURRY_TYPES          = static_cast<HurryTypes>         (m_paHurryInfo.size());
 		NUM_TRAIT_TYPES          = static_cast<TraitTypes>         (m_paTraitInfo.size());
 		NUM_UNIT_TYPES           = static_cast<UnitTypes>          (m_paUnitInfo.size());
+
+		for (HurryTypes eHurry = FIRST_HURRY; eHurry < NUM_HURRY_TYPES; ++eHurry)
+		{
+			const char *type = GC.getHurryInfo(eHurry).getType();
+			if (strcmp(type, "HURRY_GOLD") == 0)
+			{
+				HURRY_GOLD = eHurry;
+			}
+			else if (strcmp(type, "HURRY_IMMIGRANT") == 0)
+			{
+				HURRY_IMMIGRANT = eHurry;
+			}
+		}
+
+		FAssertMsg(HURRY_GOLD != NO_HURRY, "Missing xml entry");
+		FAssertMsg(HURRY_IMMIGRANT != NO_HURRY, "Missing xml entry");
+
 
 		int iCounter = 0;
 

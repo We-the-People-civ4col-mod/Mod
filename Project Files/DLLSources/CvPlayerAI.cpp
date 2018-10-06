@@ -16124,9 +16124,9 @@ void CvPlayerAI::AI_hurryDocks()
 			CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
 			if (kUnitInfo.isNoBadGoodies())
 			{
-				if (canHurry((HurryTypes)1, iIndex))
+				if (canHurry(HURRY_IMMIGRANT, iIndex))
 				{
-					hurry((HurryTypes)1, iIndex);
+					hurry(HURRY_IMMIGRANT, iIndex);
 				}
 			}
 		}
