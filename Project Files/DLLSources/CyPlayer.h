@@ -382,6 +382,8 @@ public:
 	CyTradeRouteGroup* getTradeGroup(int iIndex);	
 	// R&R mod, vetiarvind, trade groups - end
 
+	unsigned int getNumUnitsOnDock() const;
+
 	std::string getScriptData() const;
 	void setScriptData(std::string szNewValue);
 	int AI_maxGoldTrade(int iPlayer);

@@ -16115,9 +16115,9 @@ void CvPlayerAI::AI_hurryDocks()
 		return;
 	}
 	
-	for (int iIndex = 0; iIndex < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++iIndex)
+	for (unsigned int iIndex = 0; iIndex < this->getNumUnitsOnDock(); ++iIndex)
 	{	
-		UnitTypes eLoopUnit = (UnitTypes)getDocksNextUnit(iIndex);
+		UnitTypes eLoopUnit = getDocksNextUnit(iIndex);
 			
 		if (eLoopUnit != NO_UNIT)
 		{

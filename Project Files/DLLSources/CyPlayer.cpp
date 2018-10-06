@@ -1287,7 +1287,15 @@ bool CyPlayer::isInRevolution() const
 }
 int CyPlayer::getDocksNextUnit(int iIndex) const
 {
-	return (int) m_pPlayer ? m_pPlayer->getDocksNextUnit(iIndex) : -1;
+	if (m_pPlayer)
+	{
+		if (iIndex >= 0 && iIndex < static_cast<int>(m_pPlayer->getNumUnitsOnDock()))
+		{
+			return m_pPlayer->getDocksNextUnit(iIndex);
+		}
+	}
+	return NO_UNIT;
+	
 }
 void CyPlayer::addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession)
 {
@@ -1479,3 +1487,12 @@ CyTradeRouteGroup* CyPlayer::getTradeGroup(int iIndex)
 }
 
 // R&R mod, vetiarvind, trade groups - end
+
+// CivEffect
+unsigned int CyPlayer::getNumUnitsOnDock() const
+{
+	return m_pPlayer ? m_pPlayer->getNumUnitsOnDock() : 0;
+}
+
+
+

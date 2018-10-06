@@ -919,11 +919,47 @@ void CvPlayer::initImmigration()
 {
 	FAssert(getParent() != NO_PLAYER);
 	m_aDocksNextUnits.clear();
-	for (int i = 0; i < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++i)
+	m_aDocksNextUnits.reserve(this->getNumUnitsOnDock());
+	verifyImmigration();
+}
+
+// Make sure the number of units on the dock matches what the player is supposed to have by add/remove units.
+// Also replace any unit, which is no longer able to be available on the dock.
+void CvPlayer::verifyImmigration()
+{
+	FAssert(!this->isEurope());
+	FAssert(!this->isNative());
+
+	// remove units, which should no longer be there.
+	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
 	{
-		m_aDocksNextUnits.push_back(pickBestImmigrant());
+		UnitTypes eUnit = m_aDocksNextUnits[i];
+		if (eUnit != NO_UNIT && (!this->canUseUnit(eUnit) || !this->canUseImmigrant(eUnit)))
+		{
+			if (eUnit != NO_UNIT && (!this->canUseUnit(eUnit) || !this->canUseImmigrant(eUnit)))
+			{
+				m_aDocksNextUnits.erase(m_aDocksNextUnits.begin() + i);
+				--i; // compensate for ++i as next iteration needs to use the same value for i
+			}
+		}
+	}
+
+	if (m_aDocksNextUnits.size() > this->getNumUnitsOnDock())
+	{
+		// Too many units on the dock.
+		// Remove from the right to match the number of units requested.
+		m_aDocksNextUnits.resize(this->getNumUnitsOnDock());
+	}
+	else
+	{
+		// Add units until the requested amount of units have appeared.
+		while (m_aDocksNextUnits.size() < this->getNumUnitsOnDock())
+		{
+			m_aDocksNextUnits.push_back(pickBestImmigrant());
+		}
 	}
 }
+
 
 void CvPlayer::addFreeUnitAI(UnitAITypes eUnitAI, int iCount)
 {
@@ -3684,7 +3720,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -3719,7 +3755,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -4400,7 +4436,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if (kPlayer.getGold() >= priceStealingImmigrant)
 			{
 				// get random Unit from other European, we steal from
-				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant");
+				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant");
 				UnitTypes eBestUnit = victimPlayer.getDocksNextUnit(randomUnitSelectOnDock);
 				if (NO_UNIT != eBestUnit)
 				{
@@ -5463,7 +5499,7 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	{
 		for (int gi = 0; gi < iGoodyImmigrants; gi++)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
@@ -11043,11 +11079,11 @@ void CvPlayer::doCrosses()
 		{
 			// TAC - short messages for immigration after fist - RAY
 			if (imCount == 0) {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), false);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), false);
 				imCount++;
 			}
 			else {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), true);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), true);
 			}
 		}
 	}
@@ -18614,16 +18650,16 @@ UnitTypes CvPlayer::getDocksNextUnit(int i) const
 
 UnitTypes CvPlayer::pickBestImmigrant()
 {
-	std::vector<int> aiWeights(GC.getNumUnitInfos(), 0);
-	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
+	std::vector<int> aiWeights(NUM_UNIT_TYPES, 0);
+	for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 	{
-		UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
-		if (NO_UNIT != eUnit)
+		if (this->canUseUnit(eUnit) && this->canUseImmigrant(eUnit))
 		{
-			int iWeight = GC.getUnitInfo(eUnit).getImmigrationWeight();
-			for (int i = 0; i < getUnitClassImmigrated((UnitClassTypes) iUnitClass); ++i)
+			CvUnitInfo *pInfo = &GC.getUnitInfo(eUnit);
+			int iWeight = pInfo->getImmigrationWeight();
+			for (int i = 0; i < getUnitClassImmigrated(static_cast<UnitClassTypes>(pInfo->getUnitClassType())); ++i)
 			{
-				iWeight *= std::max(0, 100 - GC.getUnitInfo(eUnit).getImmigrationWeightDecay());
+				iWeight *= std::max(0, 100 - pInfo->getImmigrationWeightDecay());
 				iWeight /= 100;
 			}
 
@@ -21224,7 +21260,7 @@ void CvPlayer::checkForStealingImmigrant()
 		// simply buy immigrant for cheaper price if AI has enough gold
 		if (getGold() > priceStealingImmigrant * 3)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
@@ -22731,19 +22767,23 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool
 	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
 
 	bool bUpdateBuilds = bForceUpdateCache;
+	bool bUpdateImmigrants = bForceUpdateCache;
+	bool bUpdateUnits = bForceUpdateCache;
 
 	m_ja_iCacheAllowsBonuses                                 .addCache(iChange, pCivEffect->getAllowedBonuses           (), pCivInfo);
 	bUpdateBuilds |= m_ja_iCacheAllowsBuilds                 .addCache(iChange, pCivEffect->getAllowedBuilds            (), pCivInfo);
 	m_ja_iCacheAllowsBuildings                               .addCache(iChange, pCivEffect->getAllowedBuildingClasses   (), pCivInfo);
 	m_ja_iCacheAllowsCivics                                  .addCache(iChange, pCivEffect->getAllowedCivics            (), pCivInfo);
-	m_ja_iCacheAllowsImmigrants                              .addCache(iChange, pCivEffect->getAllowedImmigrants        (), pCivInfo);
-	bUpdateBuilds |= m_ja_iCacheAllowsImprovements           .addCache(iChange, pCivEffect->getAllowedImprovements      (), pCivInfo);
+	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants         .addCache(iChange, pCivEffect->getAllowedImmigrants        (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements       .addCache(iChange, pCivEffect->getAllowedImprovements      (), pCivInfo);
 	m_ja_iCacheAllowsProfessions                             .addCache(iChange, pCivEffect->getAllowedProfessions       (), pCivInfo);
 	m_ja_iCacheAllowsPromotions                              .addCache(iChange, pCivEffect->getAllowedPromotions        (), pCivInfo);
-	bUpdateBuilds |= m_ja_iCacheAllowsRoutes                 .addCache(iChange, pCivEffect->getAllowedRoutes            (), pCivInfo);
-	m_ja_iCacheAllowsUnits                                   .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsRoutes             .addCache(iChange, pCivEffect->getAllowedRoutes            (), pCivInfo);
+	bUpdateUnits      |= m_ja_iCacheAllowsUnits              .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
 	m_ja_iCacheAllowsYields                                  .addCache(iChange, pCivEffect->getAllowedYields            (), pCivInfo);
 
+
+	m_iCacheNumUnitsOnDock += pCivEffect->getNumUnitsOnDockChange();
 
 	// The CivEffect has been applied. Now update secondary caches if needed
 
@@ -22784,6 +22824,18 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool
 			}
 		}
 	}
+
+	if (bUpdateUnits || bUpdateImmigrants || pCivEffect->getNumUnitsOnDockChange() != 0)
+	{
+		if (!this->isNative() && !this->isEurope())
+		{
+			verifyImmigration();
+			if (getID() == GC.getGameINLINE().getActivePlayer())
+			{
+				gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+			}
+		}
+	}
 }
 
 void CvPlayer::resetCivEffectCache()
@@ -22801,6 +22853,8 @@ void CvPlayer::resetCivEffectCache()
 	m_ja_iCacheAllowsYields         .reset();
 
 	m_ba_CacheAllowBuild            .reset();
+
+	m_iCacheNumUnitsOnDock = 0;
 }
 
 void CvPlayer::rebuildCivEffectCache()

@@ -4661,6 +4661,8 @@ public:
 	inline const InfoArray* getAllowedUnitClasses          () const { return &m_info_AllowUnits       ; }
 	inline const InfoArray* getAllowedYields               () const { return &m_info_AllowYields      ; }
 
+	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange; }
+
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
@@ -4675,6 +4677,8 @@ protected:
 	InfoArrayMod m_info_AllowRoutes;
 	InfoArrayMod m_info_AllowUnits;
 	InfoArrayMod m_info_AllowYields;
+
+	int m_iNumUnitsOnDockChange;
 };
 
 

@@ -14,6 +14,7 @@ CivicOptionTypes NUM_CIVICOPTION_TYPES       = FIRST_CIVICOPTION;
 EraTypes         NUM_ERA_TYPES               = FIRST_ERA;
 FatherTypes      NUM_FATHER_TYPES            = FIRST_FATHER;
 TraitTypes       NUM_TRAIT_TYPES             = FIRST_TRAIT;
+UnitTypes        NUM_UNIT_TYPES              = FIRST_UNIT;
 
 
 void CvGlobals::postXMLLoad(bool bFirst)
@@ -26,6 +27,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		NUM_ERA_TYPES            = static_cast<EraTypes>           (m_aEraInfo.size());
 		NUM_FATHER_TYPES         = static_cast<FatherTypes>        (m_paFatherInfo.size());
 		NUM_TRAIT_TYPES          = static_cast<TraitTypes>         (m_paTraitInfo.size());
+		NUM_UNIT_TYPES           = static_cast<UnitTypes>          (m_paUnitInfo.size());
 
 		int iCounter = 0;
 

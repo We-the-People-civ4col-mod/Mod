@@ -15401,6 +15401,8 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 	, m_info_AllowRoutes       (JIT_ARRAY_ROUTE              , JIT_ARRAY_ALLOW)
 	, m_info_AllowUnits        (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
 	, m_info_AllowYields       (JIT_ARRAY_YIELD              , JIT_ARRAY_ALLOW)
+
+	, m_iNumUnitsOnDockChange(0)
 {
 	if (bAutogenerateAllow)
 	{
@@ -15480,6 +15482,13 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 		m_info_AllowRoutes       .read(pXML, getType(), "AllowRoutes"            );
 		m_info_AllowUnits        .read(pXML, getType(), "AllowUnitClasses"       );
 		m_info_AllowYields       .read(pXML, getType(), "AllowYields"            );
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupGrowth"))
+	{
+		pXML->GetChildXmlValByName(&m_iNumUnitsOnDockChange, "iNumUnitsOnDockChange");
 
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}

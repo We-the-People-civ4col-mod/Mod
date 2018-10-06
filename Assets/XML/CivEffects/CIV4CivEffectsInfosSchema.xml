@@ -15,6 +15,7 @@
 	<ElementType name="eYield" content="textOnly"/>
 	
 	<ElementType name="iAllow" content="textOnly" dt:type="int" />
+	<ElementType name="iNumUnitsOnDockChange" content="textOnly" dt:type="int" />
 	
 
 	<ElementType name="AllowBonus" content="eltOnly">
@@ -113,9 +114,14 @@
 	</ElementType>
 
 
+	<ElementType name="TagGroupGrowth" content="eltOnly">
+		<element type="iNumUnitsOnDockChange" minOccurs="0" />
+	</ElementType>
+	
 	<ElementType name="CivEffectInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="TagGroupAllow" minOccurs="0"/>
+		<element type="TagGroupGrowth" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="Civ4CivEffectInfos" content="eltOnly">
 		<element type="CivEffectInfo" maxOccurs="*"/>

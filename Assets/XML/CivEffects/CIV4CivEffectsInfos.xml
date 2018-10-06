@@ -2,6 +2,12 @@
 
 <Civ4CivEffectInfos xmlns="x-schema:CIV4CivEffectsInfosSchema.xml">
 	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_EUROPEAN</Type>
+		<TagGroupGrowth>
+			<iNumUnitsOnDockChange>4</iNumUnitsOnDockChange>
+		</TagGroupGrowth>
+	</CivEffectInfo>
+	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_AI</Type>
 		<TagGroupAllow>
 			<AllowBuilds>

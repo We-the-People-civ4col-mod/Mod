@@ -165,6 +165,7 @@ public:
 	void initFreeState();
 	void initFreeUnits();
 	void initImmigration();
+	void verifyImmigration();
 	void addFreeUnitAI(UnitAITypes eUnitAI, int iCount);
 	CvUnit* addFreeUnit(UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI = NO_UNITAI);
 	int startingPlotRange() const;
@@ -1109,6 +1110,8 @@ public:
 	inline bool canUseYield(YieldTypes eYield)                     const { return m_ja_iCacheAllowsYields          .get(eYield)          > 0; }
 
 
+	inline unsigned int getNumUnitsOnDock()                        const { return m_iCacheNumUnitsOnDock > 0 ? m_iCacheNumUnitsOnDock : 1; } // return 0 or negative crash the game
+
 private:
 	BonusArray          <char> m_ja_iCacheAllowsBonuses;
 	BuildArray          <char> m_ja_iCacheAllowsBuilds;
@@ -1123,6 +1126,9 @@ private:
 	YieldArray          <char> m_ja_iCacheAllowsYields;
 	
 	BoolArray                  m_ba_CacheAllowBuild;
+
+
+	int    m_iCacheNumUnitsOnDock;
 
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();

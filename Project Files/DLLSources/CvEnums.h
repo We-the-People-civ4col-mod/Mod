@@ -1301,6 +1301,8 @@ enum DllExport UnitTypes
 	FIRST_UNIT = 0,
 };
 
+extern UnitTypes NUM_UNIT_TYPES;
+
 enum DllExport ProfessionTypes
 {
 	INVALID_PROFESSION = -2,

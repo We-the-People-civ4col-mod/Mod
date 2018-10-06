@@ -646,10 +646,6 @@
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 	<Define>
-		<DefineName>DOCKS_NEXT_UNITS</DefineName>
-		<iDefineIntVal>4</iDefineIntVal>
-	</Define>
-	<Define>
 		<DefineName>COLONIAL_FORCED_PEACE_TURNS</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
