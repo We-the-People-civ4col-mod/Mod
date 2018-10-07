@@ -106,6 +106,8 @@ class CvDomesticAdvisor:
 		
 		# Button generation
 		
+		self.GAME_FONT_STATE = -1
+		
 		self.GENERAL_STATE            = self.addButton("GeneralState",           "INTERFACE_CITY_MAP_BUTTON")
 		self.PRODUCTION_STATE         = self.addButton("ProductionState",        "INTERFACE_NET_YIELD_BUTTON")
 		self.WAREHOUSE_STATE          = self.addButton("WareHouseState",         "INTERFACE_STORES_BUTTON")
@@ -115,6 +117,10 @@ class CvDomesticAdvisor:
 		self.TOTAL_PRODUCTION_STATE   = self.addButton("TotalProductionState",   "INTERFACE_TOTAL_PRODUCTION_BUTTON")  # total production page - Nightinggale
 		self.TRADEROUTE_STATE         = self.addButton("TradeRouteState",        "INTERFACE_IMPORT_EXPORT_BUTTON")
 		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON")
+		
+		if (gc.isDebugBuild()):
+			self.GAME_FONT_STATE      = self.addButton("GameFontState",          "INTERFACE_CITY_MAP_BUTTON")
+			self.GameFontSet = False
 		
 		self.YieldPages = set([self.WAREHOUSE_STATE])
 		
@@ -137,7 +143,7 @@ class CvDomesticAdvisor:
 
 		#Initialize the Lists
 		for iState in range(len(self.StatePages)):
-			if iState != self.TRADEROUTE_STATE and iState != self.NATIVE_STATE:
+			if iState != self.TRADEROUTE_STATE and iState != self.NATIVE_STATE and iState != self.GAME_FONT_STATE:
 				self.initPage(iState, 0)
 
 		self.createSubpage(self.GENERAL_STATE, 2)
@@ -267,7 +273,7 @@ class CvDomesticAdvisor:
 		# total production page - end - Nightinggale
 		#Loop through the cities and update the table
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		elif (self.CurrentState != self.TRADEROUTE_STATE and self.CurrentState != self.NATIVE_STATE):
+		elif (self.CurrentState != self.TRADEROUTE_STATE and self.CurrentState != self.NATIVE_STATE and self.CurrentState != self.GAME_FONT_STATE):
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
 			for iCity in range(len(self.Cities)):
 				if (self.Cities[iCity].getName() in self.listSelectedCities):
@@ -291,6 +297,9 @@ class CvDomesticAdvisor:
 		elif self.CurrentState == self.NATIVE_STATE:
 			self.updateNativeTable()
 			## R&R, Robert Surcouf,  Domestic Advisor Screen END
+		elif self.CurrentState == self.GAME_FONT_STATE:
+			self.drawGameFont()
+			return
 		
 		self.drawButtons()
 		screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
@@ -928,6 +937,8 @@ class CvDomesticAdvisor:
 				unit = gc.getActivePlayer().getUnit(iData2)
 				if not unit.isNone():
 					return CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
+			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
+				return "DEBUG: GameFont"
 	
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 	def getGeneralStateColumnSize(self, iNum):
@@ -984,3 +995,63 @@ class CvDomesticAdvisor:
 				screen.appendTableRow(szStateName)
 				screen.setTableRowHeight(szStateName, iCity, self.ROW_HIGHT)
 	# auto-generated list creation - end - Nightinggale 
+	
+	def drawGameFont(self):
+		szStateName = self.StatePages[self.GAME_FONT_STATE][0] + "ListBackground"
+		
+		if self.GameFontSet == False:
+			screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
+			screen.addTableControlGFC(szStateName, 5, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
+			screen.setTableColumnHeader( szStateName, 0, "<font=2>ID</font>", 56)
+			screen.setTableColumnHeader( szStateName, 1, "<font=2>Small</font>", 56)
+			screen.setTableColumnHeader( szStateName, 2, "<font=2>Big</font>", 56)
+			screen.setTableColumnHeader( szStateName, 3, "<font=2>Button</font>", 56)
+			screen.setTableColumnHeader( szStateName, 4, "<font=2>Type</font>", 500)
+			
+			iMax = FontSymbols.MAX_NUM_SYMBOLS + CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) - 8483 + 10
+			for iLine in range(iMax):
+				iID = iLine + 8483
+				screen.appendTableRow(szStateName)
+				screen.setTableInt(szStateName, 0, iLine , "<font=2>" + unicode(iID) + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				screen.setTableInt(szStateName, 1, iLine , "<font=2>" + (u" %c" %  (iID)) + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				screen.setTableInt(szStateName, 2, iLine , "<font=4>" + (u" %c" %  (iID)) + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+
+				infoPointer = self.getInfoPointerFromGameFont(iID)
+				
+				if infoPointer != None:
+					if isinstance(infoPointer, FontSymbols):
+						screen.setTableInt(szStateName, 4, iLine , "<font=2>FontSymbols: " + str(infoPointer) + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					else:
+						szButton = infoPointer.getButton()
+						if szButton != "" and szButton != "Art/Interface/Buttons/Buildings/BombShelters.dds":
+							screen.setTableRowHeight(szStateName, iLine, self.ROW_HIGHT)
+							screen.setTableText(szStateName, 3, iLine, "", szButton, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY);
+						screen.setTableInt(szStateName, 4, iLine , "<font=2>" + infoPointer.getType() + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					
+				
+	def getInfoPointerFromGameFont(self, iIndex):
+		iYieldIndex = iIndex - gc.getYieldInfo(0).getChar();
+		if iYieldIndex >= 0 and iYieldIndex < gc.getNumYieldInfos():
+			return gc.getYieldInfo(iYieldIndex)
+		
+		iBuildingIndex = iIndex - gc.getSpecialBuildingInfo(0).getChar()
+		if iBuildingIndex >= 0 and iBuildingIndex < gc.getNumSpecialBuildingInfos():
+			return gc.getSpecialBuildingInfo(iBuildingIndex)
+			
+		iBonusIndex = iIndex - gc.getBonusInfo(0).getChar()
+		if iBonusIndex >= 0 and iBonusIndex < gc.getNumBonusInfos():
+			return gc.getBonusInfo(iBonusIndex)
+			
+		iFatherIndex = iIndex - gc.getFatherPointInfo(0).getChar()
+		if iFatherIndex >= 0 and iFatherIndex < gc.getNumFatherPointInfos():
+			return gc.getFatherPointInfo(iFatherIndex)
+		
+		iCivIndex = iIndex - gc.getCivilizationInfo(0).getMissionaryChar()
+		if iCivIndex >= 0 and iCivIndex < gc.getNumCivilizationInfos():
+			return gc.getCivilizationInfo(iCivIndex)
+			
+		if iIndex >= CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) and iIndex <= CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR):
+			return FontSymbols(iIndex - CyGame().getSymbolID(FontSymbols.HAPPY_CHAR))
+		
+		return None
+				
