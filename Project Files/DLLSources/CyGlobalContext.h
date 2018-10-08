@@ -275,5 +275,9 @@ public:
 	/// one/two city plot radius
 	int CyGlobalContext::getCityDiameter() const { return CITY_PLOTS_DIAMETER;}
 	// city radius end
+
+	void setGameFontDebug(int iChar);
+	int getDomesticAdvisorState() const;
+	void setDomesticAdvisorState(int iPage);
 };
 #endif	// CyGlobalContext_h

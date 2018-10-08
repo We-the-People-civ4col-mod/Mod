@@ -7645,6 +7645,10 @@ void CvGameTextMgr::parseGreatGeneralHelp(CvWStringBuffer &szBuffer, CvPlayer& k
 
 //------------------------------------------------------------------------------------------------
 
+// updated in CyGlobalContext.cpp (called from Domestic Advisor)
+// do not use for anything other than the billboard debug display. It will turn buggy in no time if used all over the place.
+int iGameFontDebugChar = -1;
+
 void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvCity* pCity)
 {
 	szBuffer.clear();
@@ -7702,6 +7706,21 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		if (pCity->getRebelPercent() > 0)
 		{
 			szBuffer.append(CvWString::format(L" %c:%d%%", gDLL->getSymbolID(POWER_CHAR), pCity->getRebelPercent()));
+		}
+	}
+
+	// GameFont debug display
+	if (iGameFontDebugChar > -1)
+	{
+		szBuffer.append(CvWString::format(L"\n\n\n"));
+		for (int i = 0; i <= 80; i += 10)
+		{
+			for (int j = 0; j < 10; ++j)
+			{
+				int iChar = iGameFontDebugChar + i + j;
+				szBuffer.append(CvWString::format(L"%d: %c ", iChar, iChar));
+			}
+			szBuffer.append(CvWString::format(L"\n"));
 		}
 	}
 }

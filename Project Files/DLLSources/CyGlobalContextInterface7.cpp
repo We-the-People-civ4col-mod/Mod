@@ -61,5 +61,8 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 		/// one/two city plot radius
 		.def("getCityDiameter", &CyGlobalContext::getCityDiameter, "int ()")
 		// city radius end
+		.def("setGameFontDebug", &CyGlobalContext::setGameFontDebug, "(int)")
+		.def("setDomesticAdvisorState", &CyGlobalContext::setDomesticAdvisorState, "(int)")
+		.def("getDomesticAdvisorState", &CyGlobalContext::getDomesticAdvisorState, "int ()")
 	;
 }

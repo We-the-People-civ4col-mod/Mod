@@ -467,3 +467,40 @@ CvAchieveInfo* CyGlobalContext::getAchieveInfo(int i) const
 	return ((i >= 0 && i < GC.getNumAchieveInfos()) ? &GC.getAchieveInfo((AchieveTypes)i) : NULL);
 }
 // PatchMod: Achievements END
+
+// variable exclusively for CvGameTextMgr::buildCityBillboardIconString
+// used to display a bunch of GameFont on billboards for debug purposes.
+extern int iGameFontDebugChar;
+
+void CyGlobalContext::setGameFontDebug(int iChar)
+{
+	if (iGameFontDebugChar != iChar)
+	{
+		iGameFontDebugChar = iChar;
+		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+		{
+			CvPlayer &kPlayer = GET_PLAYER(static_cast<PlayerTypes>(iPlayer));
+			CvCity* pLoopCity;
+			int iLoop;
+			for (pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+			{
+				pLoopCity->setBillboardDirty(true);
+			}
+		}
+	}
+}
+
+// not the nicest solution, but who cares?
+// All it does is allowing the DA to open on the last open state. It's not saved or anything.
+int iDomesticAdvisorState = 0;
+
+int CyGlobalContext::getDomesticAdvisorState() const
+{
+	return iDomesticAdvisorState;
+}
+
+void CyGlobalContext::setDomesticAdvisorState(int iPage)
+{
+	iDomesticAdvisorState = iPage;
+}
+

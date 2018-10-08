@@ -50,6 +50,9 @@ class CvDomesticAdvisor:
 		self.nScreenWidth = screen.getXResolution()
 		self.nScreenHeight = (screen.getYResolution() - (screen.getYResolution() * 31 / 100))
 		
+		# widget setup of widget types, which only applies to this file
+		self.WIDGET_MISSION = WidgetTypes(WidgetTypes.NUM_WIDGET_TYPES)
+		
 #VET NewCapacity - begin 1/4
 		self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
 #VET NewCapacity - end 1/4
@@ -229,7 +232,7 @@ class CvDomesticAdvisor:
 		screen.setTableColumnHeader( self.StatePages[self.CITIZEN_STATE][0] + "ListBackground", 2, "<font=2>" +  localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN", ()).upper() + "</font>", self.nTableWidth * 3 / 4 )
 			
 		#Default State on Screen opening
-		self.CurrentState = self.GENERAL_STATE
+		self.CurrentState = gc.getDomesticAdvisorState()
 		self.CurrentPage = 0
 		
 		# Draw the city list...
@@ -815,9 +818,9 @@ class CvDomesticAdvisor:
 				if pLoopCity.getMissionaryRate() > 0 and pLoopCity.getMissionaryPlayer() != PlayerTypes.NO_PLAYER:
 					if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN) and pLoopCity.getMissionaryPlayer() == playerID:
 						iModifier = 100 + player.getMissionaryRateModifier()+ ePlayer.getMissionaryRateModifier()
-						screen.setTableText(szState + "ListBackground", 4, iter, "<font=2>"  + localText.getText("TXT_KEY_GROWTH", (ePlayer.getMissionaryPoints(gc.getGame().getActivePlayer()),ePlayer.missionaryThreshold(gc.getGame().getActivePlayer()), pLoopCity.getMissionaryRate() * iModifier /100)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )	
+						screen.setTableText(szState + "ListBackground", 4, iter, "<font=2>"  + localText.getText("TXT_KEY_GROWTH", (ePlayer.getMissionaryPoints(gc.getGame().getActivePlayer()),ePlayer.missionaryThreshold(gc.getGame().getActivePlayer()), pLoopCity.getMissionaryRate() * iModifier /100)) + "</font>", "", self.WIDGET_MISSION, pLoopCity.getMissionaryPlayer(), -1, CvUtil.FONT_LEFT_JUSTIFY )	
 					else:
-						screen.setTableInt(szState + "ListBackground", 4, iter, "<font=2>" + "<font=2>" + unichr(gc.getCivilizationInfo(gc.getPlayer(pLoopCity.getMissionaryPlayer()).getCivilizationType()).getMissionaryChar()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+						screen.setTableInt(szState + "ListBackground", 4, iter, "<font=2>" + "<font=2>" + (u" %c" % (gc.getCivilizationInfo(gc.getPlayer(pLoopCity.getMissionaryPlayer()).getCivilizationType()).getMissionaryChar())) + "</font>", "", self.WIDGET_MISSION, pLoopCity.getMissionaryPlayer(), -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 				# Native advisor update - start - Nightinggale
 				if bIsVisited:
@@ -834,7 +837,9 @@ class CvDomesticAdvisor:
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 		if ( inputClass.getNotifyCode() == NotifyCode.NOTIFY_LISTBOX_ITEM_SELECTED ):
 			## R&R, Robert Surcouf,  Domestic Advisor Screen START
-			if self.CurrentState != self.TRADEROUTE_STATE and self.CurrentState != self.NATIVE_STATE:
+			if self.CurrentState == self.GAME_FONT_STATE:
+				gc.setGameFontDebug(inputClass.getData()+8483)
+			elif self.CurrentState != self.TRADEROUTE_STATE and self.CurrentState != self.NATIVE_STATE:
 			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 				if (inputClass.getMouseX() == 0):
 					screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
@@ -858,6 +863,9 @@ class CvDomesticAdvisor:
 						if self.CurrentState not in self.YieldPages or iData not in self.YieldPages:
 							self.CurrentPage = 0
 						self.CurrentState = iData
+						gc.setDomesticAdvisorState(iData)
+						if self.CurrentState != self.GAME_FONT_STATE:
+							gc.setGameFontDebug(-1)
 						self.drawContents()
 				# auto-generated list creation - start - Nightinggale
 				elif (iData == 100 or iData == 102):
@@ -939,7 +947,9 @@ class CvDomesticAdvisor:
 					return CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
 			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
 				return "DEBUG: GameFont"
-	
+		if eWidgetType == self.WIDGET_MISSION:
+			return gc.getPlayer(iData1).getCivilizationAdjective(0)
+			
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 	def getGeneralStateColumnSize(self, iNum):
 		return (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / iNum 
@@ -1019,8 +1029,8 @@ class CvDomesticAdvisor:
 				infoPointer = self.getInfoPointerFromGameFont(iID)
 				
 				if infoPointer != None:
-					if isinstance(infoPointer, FontSymbols):
-						screen.setTableInt(szStateName, 4, iLine , "<font=2>FontSymbols: " + str(infoPointer) + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+					if isinstance(infoPointer, str):
+						screen.setTableInt(szStateName, 4, iLine , "<font=2>" + infoPointer + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					else:
 						szButton = infoPointer.getButton()
 						if szButton != "" and szButton != "Art/Interface/Buttons/Buildings/BombShelters.dds":
@@ -1030,28 +1040,77 @@ class CvDomesticAdvisor:
 					
 				
 	def getInfoPointerFromGameFont(self, iIndex):
-		iYieldIndex = iIndex - gc.getYieldInfo(0).getChar();
-		if iYieldIndex >= 0 and iYieldIndex < gc.getNumYieldInfos():
-			return gc.getYieldInfo(iYieldIndex)
+		for iYieldIndex in range(gc.getNumYieldInfos()):
+			infoPointer = gc.getYieldInfo(iYieldIndex)
+			if infoPointer.getChar() == iIndex:
+				return infoPointer
 		
-		iBuildingIndex = iIndex - gc.getSpecialBuildingInfo(0).getChar()
-		if iBuildingIndex >= 0 and iBuildingIndex < gc.getNumSpecialBuildingInfos():
-			return gc.getSpecialBuildingInfo(iBuildingIndex)
-			
-		iBonusIndex = iIndex - gc.getBonusInfo(0).getChar()
-		if iBonusIndex >= 0 and iBonusIndex < gc.getNumBonusInfos():
-			return gc.getBonusInfo(iBonusIndex)
-			
-		iFatherIndex = iIndex - gc.getFatherPointInfo(0).getChar()
-		if iFatherIndex >= 0 and iFatherIndex < gc.getNumFatherPointInfos():
-			return gc.getFatherPointInfo(iFatherIndex)
+		for iBuildingIndex in range(gc.getNumSpecialBuildingInfos()):
+			infoPointer = gc.getSpecialBuildingInfo(iBuildingIndex)
+			if infoPointer.getChar() == iIndex:
+				return infoPointer
 		
-		iCivIndex = iIndex - gc.getCivilizationInfo(0).getMissionaryChar()
-		if iCivIndex >= 0 and iCivIndex < gc.getNumCivilizationInfos():
-			return gc.getCivilizationInfo(iCivIndex)
+		for iBonusIndex in range(gc.getNumBonusInfos()):
+			infoPointer = gc.getBonusInfo(iBonusIndex)
+			if infoPointer.getChar() == iIndex:
+				return infoPointer
 			
-		if iIndex >= CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) and iIndex <= CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR):
-			return FontSymbols(iIndex - CyGame().getSymbolID(FontSymbols.HAPPY_CHAR))
+		for iFatherIndex in range(gc.getNumFatherPointInfos()):
+			infoPointer = gc.getFatherPointInfo(iFatherIndex)
+			if infoPointer.getChar() == iIndex:
+				return infoPointer
+
+		for iCiv in range(gc.getNumCivilizationInfos()):
+			infoPointer = gc.getCivilizationInfo(iCiv)
+			if infoPointer.getMissionaryChar() == iIndex:
+				return infoPointer
+			
+
+		if iIndex >= CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) and iIndex <= (CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR) + 5):
+		
+				list = [ "HAPPY_CHAR",
+				"UNHAPPY_CHAR",
+				"HEALTHY_CHAR",
+				"UNHEALTHY_CHAR",
+				"BULLET_CHAR",
+				"STRENGTH_CHAR",
+				"MOVES_CHAR",
+				"RELIGION_CHAR",
+				"STAR_CHAR",
+				"SILVER_STAR_CHAR",
+				"TRADE_CHAR",
+				"DEFENSE_CHAR",
+				"GREAT_PEOPLE_CHAR",
+				"BAD_GOLD_CHAR",
+				"BAD_FOOD_CHAR",
+				"EATEN_FOOD_CHAR",
+				"GOLDEN_AGE_CHAR",
+				"ANGRY_POP_CHAR",
+				"OPEN_BORDERS_CHAR",
+				"DEFENSIVE_PACT_CHAR",
+				"MAP_CHAR",
+				"OCCUPATION_CHAR",
+				"REBEL_CHAR",
+				"GOLD_CHAR",
+				"POWER_CHAR",
+				"CHECKBOX_CHAR",
+				"CHECKBOX_SELECTED_CHAR",
+				"ANCHOR_CHAR",
+				"ANCHOR_EUROPE_CHAR",
+				"EXPORT_CHAR",
+				"IMPORT_CHAR",
+				"EXPORT_IMPORT_CHAR",
+				"NO_ANCHOR_CHAR",
+
+				"ATTITUDE_FURIOUS (big not used)",
+				"ATTITUDE_ANNOYED (big not used)",
+				"ATTITUDE_CAUTIOUS (big not used)",
+				"ATTITUDE_PLEASED (big not used)",
+				"ATTITUDE_FRIENDLY (big not used)",
+				]
+		
+				return list[iIndex - CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)]
+
 		
 		return None
 				
