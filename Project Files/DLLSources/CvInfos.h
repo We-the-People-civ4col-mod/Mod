@@ -1245,9 +1245,9 @@ public:
 	DllExport int getBombardDefenseModifier() const;
 	DllExport int getMissionType() const;
 	DllExport void setMissionType(int iNewType);
-	inline int getStorageLossSellPercentage() const { return m_iStorageLossSellPercentage; }
-	inline bool getIgnoresBoycott() const { return m_bIgnoresBoycott; }
-	inline bool getUnlocksStorageLossTradeSettings() const { return m_bUnlocksStorageLossTradeSettings; }
+	inline int getStorageLossSellPercentage() const							{ return m_iStorageLossSellPercentage; }
+	inline bool getIgnoresBoycott() const									{ return m_bIgnoresBoycott; }
+	inline bool getUnlocksStorageLossTradeSettings() const					{ return m_bUnlocksStorageLossTradeSettings; }
 	DllExport int getSpecialBuildingPriority() const;
 	DllExport float getVisibilityPriority() const;
 	DllExport bool isWorksWater() const;
