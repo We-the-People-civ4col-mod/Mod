@@ -2464,8 +2464,8 @@ void CvUnitMeshGroups::write(FDataStreamBase* stream)
 /*********************************************************************/
 /**                                                                 **/
 /** float CvUnitInfo::NBMOD_GetStrengthWeight() const               **/
-/** Gibt das Stärke-Gewicht dieser Einheit für die EMW/KMW Berech-  **/
-/** nun zurück.                                                     **/
+/** Gibt das StÃ¤rke-Gewicht dieser Einheit fÃ¼r die EMW/KMW Berech-  **/
+/** nun zurÃ¼ck.                                                     **/
 /**                                                                 **/
 /*********************************************************************/
 float CvUnitInfo::NBMOD_GetStrengthWeight() const
@@ -2480,7 +2480,7 @@ float CvUnitInfo::NBMOD_GetStrengthWeight() const
 /*********************************************************************/
 /**                                                                 **/
 /** int CvUnitInfo::NBMOD_GetTeachLevel() const                     **/
-/** Ermittelt die Bildungsstufe, welche diese Einheit benötigt.     **/
+/** Ermittelt die Bildungsstufe, welche diese Einheit benÃ¶tigt.     **/
 /**                                                                 **/
 /*********************************************************************/
 
@@ -4690,7 +4690,7 @@ bool CvUnitClassInfo::readPass3()
 /*********************************************************************/
 /**                                                                 **/
 /** int CvBuildingInfo::NBMOD_GetTeachLevel() const                 **/
-/** Ermittelt die Bildungsstufe, die das Gebäude bereit stellt.     **/
+/** Ermittelt die Bildungsstufe, die das GebÃ¤ude bereit stellt.     **/
 /**                                                                 **/
 /*********************************************************************/
 
@@ -5373,20 +5373,30 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 bool CvBuildingInfo::readPass2(CvXMLLoadUtility* pXML)
 {
+	// get index of the asked building & update the member `m_iNextSpecialBuilding`
 	m_iNextSpecialBuilding = GC.getInfoTypeForString(getType());
+	
+	// only continue if the asked building is a special building 
 	if(getSpecialBuildingType() != NO_SPECIALBUILDING)
 	{
+		// We need to match the asked special building with the buildings in list
+		// so, loop through buildings ( a circular list )
 		for(int i=0;i<GC.getNumBuildingInfos();i++)
 		{
+			// get buildingType ( integer ) of building at index i
 			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_iNextSpecialBuilding + i + 1) % GC.getNumBuildingInfos());
+			
+			// if building type of this index matches with the asked building type
 			if(GC.getBuildingInfo(eLoopBuilding).getSpecialBuildingType() == getSpecialBuildingType())
 			{
+				// update member 'm_iNextSpecialBuilding' with buildingType of this index & break
 				m_iNextSpecialBuilding = eLoopBuilding;
 				break;
 			}
 		}
 	}
 
+	// return true once everything is successful
 	return true;
 }
 //======================================================================================================
