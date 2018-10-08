@@ -1805,11 +1805,9 @@ public:
 	// TAC - AI More Immigrants - koma13 - START
 protected:
 	int m_iAIImmigration;
-	int m_iAIOverflowSell;
 	int m_iAIMaxTaxrate;
 public:
 	DllExport int getAIImmigration() const;
-	DllExport int getAIOverflowSell() const;
 	DllExport int getAIMaxTaxrate() const;
 	// TAC - AI More Immigrants - koma13 - END
 	
@@ -1932,6 +1930,13 @@ protected:
 
 	// Arrays
 	int* m_aiGoodies;
+
+	//Storage loss trading related values
+protected:
+	int m_iAIMinimumStorageLossSellPercentage;
+public:
+	inline int getAIMinimumStorageLossSellPercentage() const					{ return m_iAIMinimumStorageLossSellPercentage; }
+
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

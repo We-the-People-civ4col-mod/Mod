@@ -33,7 +33,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>0</iAIImmigration>
-			<iAIOverflowSell>0</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>0</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>70</iAIMaxTaxrate>
 			<iAIExtraTradePercent>0</iAIExtraTradePercent>
 			<iAIPerEraModifier>0</iAIPerEraModifier>
@@ -121,7 +121,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>0</iAIImmigration>
-			<iAIOverflowSell>50</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>50</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>60</iAIMaxTaxrate>
 			<iAIExtraTradePercent>5</iAIExtraTradePercent>
 			<iAIPerEraModifier>0</iAIPerEraModifier>
@@ -210,7 +210,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>10</iAIImmigration>
-			<iAIOverflowSell>50</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>50</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>50</iAIMaxTaxrate>
 			<iAIExtraTradePercent>10</iAIExtraTradePercent>
 			<iAIPerEraModifier>0</iAIPerEraModifier>
@@ -303,7 +303,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>10</iAIImmigration>
-			<iAIOverflowSell>75</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>75</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>40</iAIMaxTaxrate>
 			<iAIExtraTradePercent>15</iAIExtraTradePercent>
 			<iAIPerEraModifier>-1</iAIPerEraModifier>
@@ -394,7 +394,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>10</iAIImmigration>
-			<iAIOverflowSell>90</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>90</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>30</iAIMaxTaxrate>
 			<iAIExtraTradePercent>20</iAIExtraTradePercent>
 			<iAIPerEraModifier>-2</iAIPerEraModifier>
@@ -485,7 +485,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>10</iAIImmigration>
-			<iAIOverflowSell>100</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>100</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>20</iAIMaxTaxrate>
 			<iAIExtraTradePercent>25</iAIExtraTradePercent>
 			<iAIPerEraModifier>-3</iAIPerEraModifier>
@@ -578,7 +578,7 @@
 			<iAIUnitUpgradePercent>50</iAIUnitUpgradePercent>
 			<iAIHurryPercent>80</iAIHurryPercent>
 			<iAIImmigration>10</iAIImmigration>
-			<iAIOverflowSell>100</iAIOverflowSell>
+			<iAIMinimumStorageLossSellPercentage>100</iAIMinimumStorageLossSellPercentage>
 			<iAIMaxTaxrate>0</iAIMaxTaxrate>
 			<iAIExtraTradePercent>30</iAIExtraTradePercent>
 			<iAIPerEraModifier>-4</iAIPerEraModifier>

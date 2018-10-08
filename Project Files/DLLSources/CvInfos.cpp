@@ -6735,7 +6735,7 @@ m_iAIUnitUpgradePercent(0),
 m_iAIHurryPercent(0),
 // TAC - AI More Immigrants - koma13 - START
 m_iAIImmigration(0),
-m_iAIOverflowSell(0),
+m_iAIMinimumStorageLossSellPercentage(0),
 m_iAIMaxTaxrate(0),
 // TAC - AI More Immigrants - koma13 - END
 m_iAIExtraTradePercent(0),
@@ -7004,7 +7004,7 @@ void CvHandicapInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iAIHurryPercent);
 	// TAC - AI More Immigrants - koma13 - START
 	stream->Read(&m_iAIImmigration);
-	stream->Read(&m_iAIOverflowSell);
+	stream->Read(&m_iAIMinimumStorageLossSellPercentage);
 	stream->Read(&m_iAIMaxTaxrate);
 	// TAC - AI More Immigrants - koma13 - END
 	stream->Read(&m_iAIExtraTradePercent);
@@ -7074,7 +7074,7 @@ void CvHandicapInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iAIHurryPercent);
 	// TAC - AI More Immigrants - koma13 - START
 	stream->Write(m_iAIImmigration);
-	stream->Write(m_iAIOverflowSell);
+	stream->Write(m_iAIMinimumStorageLossSellPercentage);
 	stream->Write(m_iAIMaxTaxrate);
 	// TAC - AI More Immigrants - koma13 - END
 	stream->Write(m_iAIExtraTradePercent);
@@ -7156,7 +7156,7 @@ bool CvHandicapInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iAIHurryPercent, "iAIHurryPercent");
 	// TAC - AI More Immigrants - koma13 - START
 	pXML->GetChildXmlValByName(&m_iAIImmigration, "iAIImmigration");
-	pXML->GetChildXmlValByName(&m_iAIOverflowSell, "iAIOverflowSell");
+	pXML->GetChildXmlValByName(&m_iAIMinimumStorageLossSellPercentage, "iAIMinimumStorageLossSellPercentage");
 	pXML->GetChildXmlValByName(&m_iAIMaxTaxrate, "iAIMaxTaxrate");
 	// TAC - AI More Immigrants - koma13 - END
 	pXML->GetChildXmlValByName(&m_iAIExtraTradePercent, "iAIExtraTradePercent");
@@ -15358,11 +15358,6 @@ void CvVictoryInfo::setTotalProductionRate(int iValue)
 int CvHandicapInfo::getAIImmigration() const
 {
 	return m_iAIImmigration;
-}
-
-int CvHandicapInfo::getAIOverflowSell() const
-{
-	return m_iAIOverflowSell;
 }
 
 int CvHandicapInfo::getAIMaxTaxrate() const

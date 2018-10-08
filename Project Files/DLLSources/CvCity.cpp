@@ -5190,9 +5190,9 @@ int CvCity::getOverflowYieldSellPercent() const
 	}
 	
 	// TAC - AI Overflow Sell - koma13 - START
-	if (!isHuman() && iMaxPercent < GC.getHandicapInfo(getHandicapType()).getAIOverflowSell())
+	if (!isHuman() && iMaxPercent < GC.getHandicapInfo(getHandicapType()).getAIMinimumStorageLossSellPercentage())
 	{
-		iMaxPercent = GC.getHandicapInfo(getHandicapType()).getAIOverflowSell();
+		iMaxPercent = GC.getHandicapInfo(getHandicapType()).getAIMinimumStorageLossSellPercentage();
 	}
 	// TAC - AI Overflow Sell - koma13 - END
 
