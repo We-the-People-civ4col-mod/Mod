@@ -572,6 +572,10 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 		m_aBuildingYieldChange.clear();
 	}
 
+	//storage loss trading (aka customs house and related things)
+	initCacheStorageLossTradeValues();
+
+
 	if (!bConstructorCall)
 	{
 		AI_reset();
@@ -2740,6 +2744,8 @@ void CvCity::hurry(HurryTypes eHurry)
 
 void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 {
+	FAssertMsg(iChange == 1 || iChange == -1, "The value of iChange has to be either 1 or -1.")
+
 	//RWL Railroads and Trainstations
 	if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == 26) // easiest way to identify Trainstation
 	{
@@ -5206,6 +5212,119 @@ int CvCity::getOverflowYieldSellPercent() const
 	return iMaxPercent;
 }
 
+void CvCity::initCacheStorageLossTradeValues()
+{
+	m_iStorageLossSellPercentage = 0;
+	m_bIgnoresBoycott = false;
+	m_bHasUnlockedStorageLossTradeSettings = false;
+}
+
+/*
+	void CvCity::cache_storageLossTradeValues_usingCachedData(BuildingTypes eBuilding)
+	Complexity: O( 1 )
+	Purpose:
+		Cache new values for customs related variables, if the given building has better stats.
+*/
+void CvCity::cache_storageLossTradeValues_usingCachedData(BuildingTypes eBuilding)
+{
+	FAssert(eBuilding >= 0);
+	FAssert(eBuilding <= GC.getNumBuildingInfos());
+
+	//Caching storage loss trade values for natives makes no sense, as they never do storage loss selling. But the check if this is a native city has to be done outside of this function.
+
+	//get a reference to the building object
+	CvBuildingInfo &refBuildingInfo = GC.getBuildingInfo(eBuilding);
+
+	//Use values for sell percantage, boycott ignoring and unlocking the trade settings, if they are better than the current ones.
+
+	int i_building_StorageLossSellPercentage = refBuildingInfo.getStorageLossSellPercentage();
+	if (i_building_StorageLossSellPercentage > m_iStorageLossSellPercentage) { m_iStorageLossSellPercentage = i_building_StorageLossSellPercentage; }
+
+	m_bIgnoresBoycott = m_bIgnoresBoycott || refBuildingInfo.getIgnoresBoycott();
+	m_bHasUnlockedStorageLossTradeSettings = m_bHasUnlockedStorageLossTradeSettings || refBuildingInfo.getUnlocksStorageLossTradeSettings();
+}
+
+/*
+	void CvCity::cache_storageLossTradeValues_usingRawData()
+	Complexity: O( n^2 )
+	Complexity detailed: O( n*m )
+		n ... from function isHasBuilding
+		m ... number of BuildingClassInfos
+	Purpose:
+		Cache customs related values from the raw data.
+	Usage:
+		When there is no other way to determine the new values of the customs related variables from the cached values and the input.
+	Description:
+		Assumes higher tier buildings have better stats than their lower tier replacements.
+*/
+void CvCity::cache_storageLossTradeValues_usingRawData()
+{
+	//Caching storage loss trade values for natives makes no sense, as they never do storage loss selling. But the check if this is a native city has to be done outside of this function.
+
+	//Init cache
+	initCacheStorageLossTradeValues();
+
+	if (!isHuman())
+	{
+		//If it is an AI player, ...
+
+		//... apply the minimum values derived from the human players handicap level ...
+		m_iStorageLossSellPercentage = GC.getHandicapInfo(getHandicapType()).getAIMinimumStorageLossSellPercentage();
+
+		//... and cheat hardcoded:
+		//The AI players cities can always ignore boycotts by their king ...
+		m_bIgnoresBoycott = true;
+		//... and the storage loss trade settings (aka customs house settings) are always unlocked
+		m_bHasUnlockedStorageLossTradeSettings = true;
+	}
+
+	//For human and AI players alike:
+	//Iterate over all buildings buildable by this civilization, ...
+	int iNumBuildingClasses = GC.getNumBuildingClassInfos();
+	for (int i = 0; i < iNumBuildingClasses; i++)
+	{
+		BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(i);
+		//... check if the iterator building is present in the city and if it is highest tier building in its building slot ...
+		if (eBuilding != NO_BUILDING && isHasBuilding(eBuilding))
+		{
+			//... and apply the values from that building, if they are better than the current values.
+			cache_storageLossTradeValues_usingCachedData(eBuilding);
+		}
+	}
+}
+
+/*
+	void CvCity::updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool bWasAdded)
+	Complexity: O( n^2 )
+	Complexity detailed:
+		n^2			... from cache_storageLossTradeValues_usingRawData()
+	Paramaters:
+		eBuilding	...	Enumerator/index of the building.
+		bWasAdded	...	true if the function was called because a building was added. false if removed.
+	Purpose:
+		To update the cache of storage loss trade related values, after a building was added or removed to or from the city.
+*/
+void CvCity::updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool bWasAdded)
+{
+	//Only do this if it is a non native city, because natives never sell storage loss.
+	if (!isNative())
+	{
+		//Determine how we are going to update the cache.
+		if (bWasAdded)
+		{
+			//The building was added ...
+			// ... see if its values are better than the current ones.
+			cache_storageLossTradeValues_usingCachedData(eBuilding);
+		}
+		else
+		{
+			//The building was removed.
+			//As we only know the best values, but we don't know which building(s) gave us these best values, we have to rebuild the cache from scratch.
+			cache_storageLossTradeValues_usingRawData();
+		}
+	}
+}
+
 bool CvCity::isEverOwned(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
@@ -6103,6 +6222,7 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 
 		// update cache
 		UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+		updateCacheStorageLossTradingValues(eIndex, bNewValue);
 	}
 }
 
@@ -6147,6 +6267,7 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 			}
 		}
 		UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+		updateCacheStorageLossTradingValues(eIndex, bNewValue);
 	}
 }
 
@@ -7698,11 +7819,30 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
+
+	//storage loss trading (aka customs house and related things)
+	if (uiFlag > 6)
+	{
+		//data chunk from flag count 6 ...
+		pStream->Read(&m_iStorageLossSellPercentage);
+		pStream->Read(&m_bIgnoresBoycott);
+		pStream->Read(&m_bHasUnlockedStorageLossTradeSettings);
+	}
+	else
+	{
+		//... or alternative calculation:
+
+		//Omit this step for native cities, because they never sell storage loss.
+		if (!isNative())
+		{
+			cache_storageLossTradeValues_usingRawData();
+		}
+	}
 }
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=6;
+	uint uiFlag = 7;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	// just-in-time yield arrays - start - Nightinggale
@@ -7857,6 +7997,13 @@ void CvCity::write(FDataStreamBase* pStream)
 	{
 		(*it).write(pStream);
 	}
+
+	//data chunk for flag count 7
+	//storage loss trading (aka customs house and related things)
+	pStream->Write(m_iStorageLossSellPercentage);
+	pStream->Write(m_bIgnoresBoycott);
+	pStream->Write(m_bHasUnlockedStorageLossTradeSettings);
+
 }
 
 

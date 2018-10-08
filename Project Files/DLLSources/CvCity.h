@@ -839,6 +839,21 @@ protected:
 
 	YieldTypes m_ePreferredYieldAtCityPlot;
 	void setPreferredYieldAtCityPlot(YieldTypes eYield);
+
+	//storage loss trading (aka customs house and related things)
+protected:
+	int m_iStorageLossSellPercentage;
+	bool m_bIgnoresBoycott;
+	bool m_bHasUnlockedStorageLossTradeSettings;//If this city has unlocked trade settings for the storage loss (aka "Customs house popup").
+
+	void initCacheStorageLossTradeValues();
+	void cache_storageLossTradeValues_usingCachedData(BuildingTypes eBuilding);
+	void cache_storageLossTradeValues_usingRawData();
+	void updateCacheStorageLossTradingValues(BuildingTypes eBuilding, bool bWasAdded);
+public:
+	inline int getStorageLossSellPercentage()const					{ return m_iStorageLossSellPercentage; }
+	inline bool getIgnoresBoycott()const							{ return m_bIgnoresBoycott; }
+	inline bool getHasUnlockedStorageLossTradeSettings()const		{ return m_bHasUnlockedStorageLossTradeSettings; }
 };
 
 // NBMOD EDU cache - start - Nightinggale
