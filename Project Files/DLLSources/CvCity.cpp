@@ -6170,23 +6170,38 @@ void CvCity::setHasRealBuilding(BuildingTypes eIndex, bool bNewValue)
 	setHasRealBuildingTimed(eIndex, bNewValue, true, getOwnerINLINE(), GC.getGameINLINE().getGameTurnYear());
 }
 
-
+/*
+	void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool bFirst, PlayerTypes eOriginalOwner, int iOriginalTime)
+	Complexity: ???
+	Parameters:
+		eIndex ... Index that corresponds to the list of BuildingTypes
+		bNewValue ... true if the building is added, false if removed
+		bFirst ... true if this function was called, because the building was constructed just now. false if the function was called for other purposes, eg because the city was captured.
+		eOriginalOwner ... The variable, that indicates the original owner, will be set to this value.
+		iOriginalTime ... The variable, that holds the time of construction, will be set to this value.
+	Purpose:
+		To add or remove a building, which was constructed in the city, to or from the cities list of buildings.
+*/
 void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool bFirst, PlayerTypes eOriginalOwner, int iOriginalTime)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
 
+	//Only do something if the building is to be added and not present in the city. Or present and to be removed.
 	if (bNewValue != isHasRealBuilding(eIndex))
 	{
+		//Iterate over all the buildings in the game and build a temporary cache which indicates if a building exists in the city AND has the highest tier in its building slot.
 		std::deque<bool> abOldBuildings(GC.getNumBuildingInfos());
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 		{
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
+		//Update the cities array for "real" buildings.
 		m_pabHasRealBuilding[eIndex] = bNewValue;
 		setYieldRateDirty();
 
+		//Set values for player who built this building and game year depending on if it exists or not.
 		if (isHasRealBuilding(eIndex))
 		{
 			m_paiBuildingOriginalOwner[eIndex] = eOriginalOwner;
@@ -6198,24 +6213,35 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 			m_paiBuildingOriginalTime[eIndex] = MIN_INT;
 		}
 
+		//Iterate over all the buildings in the game ...
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 		{
 			BuildingTypes eBuilding = (BuildingTypes) i;
+
+			//... check if there is a difference between the array with the cached building state and the cities array for "real" buildings and if it is the highest tier in its building slot.
 			if (abOldBuildings[eBuilding] != isHasBuilding(eBuilding))
 			{
+				//... and process the iterator building regarding adding or removing
 				processBuilding(eBuilding, abOldBuildings[eBuilding] ? -1 : 1);
 			}
 		}
 
+		//Check if the capital was moved and set something regarding the python interface ???
 		if (bNewValue)
 		{
+			//If a building was added ...
+
+			//... check if it was constructed just now.
 			if (bFirst)
 			{
+				//Check if it is the building, that defines the capital ...
 				if (GC.getBuildingInfo(eIndex).isCapital())
 				{
+					//Set this city to be the capital.
 					GET_PLAYER(getOwnerINLINE()).setCapitalCity(this);
 				}
 
+				//The following is something unknown, but revealed to the python interface ???
 				GC.getGameINLINE().incrementBuildingClassCreatedCount((BuildingClassTypes)(GC.getBuildingInfo(eIndex).getBuildingClassType()));
 			}
 		}
@@ -6242,27 +6268,43 @@ bool CvCity::isHasFreeBuilding(BuildingTypes eIndex) const
 }
 
 
+/*
+	void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
+	Complexity: ???
+	Parameters:
+		eIndex ... Index that corresponds to the list of BuildingTypes
+		bNewValue ... true if the building is added, false if removed
+	Purpose:
+		To add or remove a building, which is given to the city as "free" building, to or from the cities list of "free" buildings.
+*/
 void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
 
+	//Only do something if the building is to be added and not present in the city. Or present and to be removed.
 	if (isHasFreeBuilding(eIndex) != bNewValue)
 	{
+		//Iterate over all the buildings in the game and build a temporary cache which indicates if a building exists in the city AND has the highest tier in its building slot.
 		std::deque<bool> abOldBuildings(GC.getNumBuildingInfos());
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 		{
 			abOldBuildings[i] = isHasBuilding((BuildingTypes) i);
 		}
 
+		//Update the cities array for "free" buildings.
 		m_pabHasFreeBuilding[eIndex] = bNewValue;
 		setYieldRateDirty();
 
+		//Iterate over all the buildings in the game ...
 		for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 		{
 			BuildingTypes eBuilding = (BuildingTypes) i;
+
+			//... check if there is a difference between the array with the cached building state and the cities array for "free" buildings and if it is the highest tier in its building slot.
 			if (abOldBuildings[eBuilding] != isHasBuilding(eBuilding))
 			{
+				//... and process the iterator building regarding adding or removing
 				processBuilding(eBuilding, abOldBuildings[eBuilding] ? -1 : 1);
 			}
 		}
