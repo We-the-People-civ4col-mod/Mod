@@ -5936,6 +5936,15 @@ void CvCivilizationInfo::setArtDefineTag(const char* szVal)
 	m_szArtDefineTag = szVal;
 }
 // Arrays
+
+/*
+	int CvCivilizationInfo::getCivilizationBuildings(int iBuilding) const
+	Complexity: O( 1 )
+	Purpose:
+		Check if a given building, is available in this civilization.
+	Parameters:
+		int iIndexBuildingClass ... index, that corresponds to the list of BuildingClasses
+*/
 int CvCivilizationInfo::getCivilizationBuildings(int i) const
 {
 	FAssertMsg(i < GC.getNumBuildingClassInfos(), "Index out of bounds");

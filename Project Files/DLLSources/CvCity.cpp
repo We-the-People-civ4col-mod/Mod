@@ -3081,6 +3081,13 @@ int CvCity::cultureDistance(int iDX, int iDY) const
 	return std::max(1, plotDistance(0, 0, iDX, iDY));
 }
 
+/*
+	bool CvCity::isHasBuilding(BuildingTypes eIndex) const
+	Complexity: O( n )
+		n ... number of possible buildings in a building slot
+	Purpose:
+		Check if a building is present in the city and if it is the "highest" built one in its building slot.
+*/
 bool CvCity::isHasBuilding(BuildingTypes eIndex) const
 {
 	PROFILE_FUNC();
@@ -6024,6 +6031,13 @@ int CvCity::getNextFreeUnitId() const
 }
 
 
+/*
+	bool CvCity::isHasRealBuilding(BuildingTypes eIndex)
+	complexity: O( 1 )
+	Purpose:
+		Check if a building (BuildingType) is present in the city, that had been built in the city
+		(in contrast to free buildings that were given to the city as result of an event).
+*/
 bool CvCity::isHasRealBuilding(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
@@ -6093,6 +6107,13 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 }
 
 
+/*
+	bool CvCity::isHasFreeBuilding(BuildingTypes eIndex)
+	Complexity: O( 1 )
+	Purpose:
+		Check if a building (BuildingType) that has been given by an event is present in the city.
+		Eg a free stockade in every city, when a particular founding father joined the congress.
+*/
 bool CvCity::isHasFreeBuilding(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
@@ -6129,15 +6150,31 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 	}
 }
 
+/*
+	bool CvCity::isHasConceptualBuilding(BuildingTypes eIndex) const
+	Complexity: O( 1 )
+	Purpose:
+		Check if a building (BuildingType) is present in the city.
+*/
 bool CvCity::isHasConceptualBuilding(BuildingTypes eIndex) const
 {
 	return (isHasRealBuilding(eIndex) || isHasFreeBuilding(eIndex));
 }
 
+/*
+	bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
+	Complexity: O( n )
+		n ... number of possible buildings in a building slot
+	Purpose:
+		Check if a building is the building of highest tier built in its building slot.
+*/
 bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
 {
 	FAssert((eIndex >= 0) && (eIndex < GC.getNumBuildingInfos()));
 	CvBuildingInfo& kBuilding = GC.getBuildingInfo(eIndex);
+	
+	//Walk through all the possible buildings in the building slot of the given building ...
+	//... and check if the given building is the building with the highest tier (SpecialBuildingPriority), built in that slot.
 	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getNextSpecialBuilding();
 	while (eNextBuilding != eIndex)
 	{
