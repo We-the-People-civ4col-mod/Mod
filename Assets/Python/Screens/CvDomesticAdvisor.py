@@ -302,7 +302,6 @@ class CvDomesticAdvisor:
 			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 		elif self.CurrentState == self.GAME_FONT_STATE:
 			self.drawGameFont()
-			return
 		
 		self.drawButtons()
 		screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
