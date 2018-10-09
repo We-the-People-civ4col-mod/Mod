@@ -31,7 +31,7 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_CITY_RANGE</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>FREE_CITY_ADJACENT_CULTURE</DefineName>
