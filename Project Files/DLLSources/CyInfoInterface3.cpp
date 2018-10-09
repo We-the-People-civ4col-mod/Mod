@@ -7,7 +7,7 @@
 void CyInfoPythonInterface3()
 {
 	OutputDebugString("Python Extension Module - CyInfoPythonInterface3\n");
-	python::class_<CvYieldInfo, python::bases<CvInfoBase> >("CvYieldInfo")
+	python::class_<CvYieldInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvYieldInfo")
 		.def("getChar", &CvYieldInfo::getChar, "int ()")
 		.def("getIcon", &CvYieldInfo::getIcon, "string ()")
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
@@ -49,7 +49,7 @@ void CyInfoPythonInterface3()
 		.def("getAssetValue", &CvYieldInfo::getAssetValue, "int ()")
 		.def("isCargo", &CvYieldInfo::isCargo, "bool ()")
 		;
-	python::class_<CvTerrainInfo, python::bases<CvInfoBase> >("CvTerrainInfo")
+	python::class_<CvTerrainInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvTerrainInfo")
 		.def("getMovementCost", &CvTerrainInfo::getMovementCost, "int ()")
 		.def("getSeeFromLevel", &CvTerrainInfo::getSeeFromLevel, "int ()")
 		.def("getSeeThroughLevel", &CvTerrainInfo::getSeeThroughLevel, "int ()")
@@ -64,7 +64,7 @@ void CyInfoPythonInterface3()
 		.def("getRiverYieldIncrease", &CvTerrainInfo::getRiverYieldIncrease, "int (int i)")
 		;
 	// CvInterfaceModeInfo
-	python::class_<CvInterfaceModeInfo, python::bases<CvInfoBase> >("CvInterfaceModeInfo")
+	python::class_<CvInterfaceModeInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvInterfaceModeInfo")
 		.def("getCursorIndex", &CvInterfaceModeInfo::getCursorIndex, "int ()")
 		.def("getMissionType", &CvInterfaceModeInfo::getMissionType, "int ()")
 		.def("getVisible", &CvInterfaceModeInfo::getVisible, "bool ()")
@@ -79,7 +79,7 @@ void CyInfoPythonInterface3()
 		.def("isShiftDownAlt", &CvInterfaceModeInfo::isShiftDownAlt, "bool ()")
 		.def("isCtrlDownAlt", &CvInterfaceModeInfo::isCtrlDownAlt, "bool ()")
 		;
-	python::class_<CvLeaderHeadInfo, python::bases<CvInfoBase> >("CvLeaderHeadInfo")
+	python::class_<CvLeaderHeadInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvLeaderHeadInfo")
 		.def("getBaseAttitude", &CvLeaderHeadInfo::getBaseAttitude, "int ()")
 		.def("getNativeAttitude", &CvLeaderHeadInfo::getNativeAttitude, "int ()")
 		.def("getRefuseToTalkWarThreshold", &CvLeaderHeadInfo::getRefuseToTalkWarThreshold, "int ()")
@@ -142,7 +142,7 @@ void CyInfoPythonInterface3()
 		.def("getLeaderHead", &CvLeaderHeadInfo::getLeaderHead, "string ()")
 		.def("getButton", &CvLeaderHeadInfo::getButton, "string ()")
 		;
-	python::class_<CvTraitInfo, python::bases<CvInfoBase> >("CvTraitInfo")
+	python::class_<CvTraitInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvTraitInfo")
 		.def("getLevelExperienceModifier", &CvTraitInfo::getLevelExperienceModifier, "int ()")
 		.def("getGreatGeneralRateModifier", &CvTraitInfo::getGreatGeneralRateModifier, "int ()")
 		.def("getDomesticGreatGeneralRateModifier", &CvTraitInfo::getDomesticGreatGeneralRateModifier, "int ()")
@@ -189,7 +189,7 @@ void CyInfoPythonInterface3()
 		.def("isFreeBuildingClass", &CvTraitInfo::isFreeBuildingClass, "bool (int)")
 		;
 	// CvWorldInfo
-	python::class_<CvWorldInfo, python::bases<CvInfoBase> >("CvWorldInfo")
+	python::class_<CvWorldInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvWorldInfo")
 		.def("getDefaultPlayers", &CvWorldInfo::getDefaultPlayers, "int ()")
 		.def("getDefaultNativePlayers", &CvWorldInfo::getDefaultNativePlayers, "int ()")
 		.def("getUnitNameModifier", &CvWorldInfo::getUnitNameModifier, "int ()")
@@ -201,7 +201,7 @@ void CyInfoPythonInterface3()
 		.def("getFeatureGrainChange", &CvWorldInfo::getFeatureGrainChange, "int ()")
 		.def("getFatherPercent", &CvWorldInfo::getFatherPercent, "int ()")
 		;
-	python::class_<CvClimateInfo, python::bases<CvInfoBase> >("CvClimateInfo")
+	python::class_<CvClimateInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvClimateInfo")
 		.def("getDesertPercentChange", &CvClimateInfo::getDesertPercentChange, "int ()")
 		.def("getJungleLatitude", &CvClimateInfo::getJungleLatitude, "int ()")
 		.def("getHillRange", &CvClimateInfo::getHillRange, "int ()")
@@ -213,73 +213,73 @@ void CyInfoPythonInterface3()
 		.def("getDesertTopLatitudeChange", &CvClimateInfo::getDesertTopLatitudeChange, "float ()")
 		.def("getRandIceLatitude", &CvClimateInfo::getRandIceLatitude, "float ()")
 		;
-	python::class_<CvSeaLevelInfo, python::bases<CvInfoBase> >("CvSeaLevelInfo")
+	python::class_<CvSeaLevelInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvSeaLevelInfo")
 		.def("getSeaLevelChange", &CvSeaLevelInfo::getSeaLevelChange, "int ()")
 		;
-	python::class_<CvEuropeInfo, python::bases<CvInfoBase> >("CvEuropeInfo")
+	python::class_<CvEuropeInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvEuropeInfo")
 		.def("isStart", &CvEuropeInfo::isStart, "bool ()")
 		.def("getCardinalDirection", &CvEuropeInfo::getCardinalDirection, "int ()")
 		.def("getTripLength", &CvEuropeInfo::getTripLength, "int ()")
 		.def("getMinLandDistance", &CvEuropeInfo::getMinLandDistance, "int ()")
 		.def("getWidthPercent", &CvEuropeInfo::getWidthPercent, "int ()")
 		;
-	python::class_<CvAssetInfoBase>("CvAssetInfoBase")
+	python::class_<CvAssetInfoBase, boost::noncopyable>("CvAssetInfoBase")
 		.def("setTag", &CvAssetInfoBase::setTag, "void (string)")
 		.def("getTag", &CvAssetInfoBase::getTag, "string ()")
 		.def("setPath", &CvAssetInfoBase::setPath, "void (string)")
 		.def("getPath", &CvAssetInfoBase::getPath, "string ()")
 		;
-	python::class_<CvArtInfoAsset, python::bases<CvAssetInfoBase> >("CvArtInfoAsset")
+	python::class_<CvArtInfoAsset, boost::noncopyable, python::bases<CvAssetInfoBase> >("CvArtInfoAsset")
 		.def("getButton", &CvArtInfoAsset::getButton, "string ()")
 		.def("setNIF", &CvArtInfoAsset::setNIF, "void (string)")
 		.def("getNIF", &CvArtInfoAsset::getNIF, "string ()")
 		.def("setKFM", &CvArtInfoAsset::setKFM, "void (string)")
 		.def("getKFM", &CvArtInfoAsset::getKFM, "string ()")
 		;
-	python::class_<CvArtInfoScalableAsset, python::bases<CvArtInfoAsset, CvScalableInfo> >("CvArtInfoScalableAsset")
+	python::class_<CvArtInfoScalableAsset, boost::noncopyable, python::bases<CvArtInfoAsset, CvScalableInfo> >("CvArtInfoScalableAsset")
 		;
-	python::class_<CvArtInfoInterface, python::bases<CvArtInfoAsset> >("CvArtInfoInterface")
+	python::class_<CvArtInfoInterface, boost::noncopyable, python::bases<CvArtInfoAsset> >("CvArtInfoInterface")
 		;
-	python::class_<CvArtInfoMovie, python::bases<CvArtInfoAsset> >("CvArtInfoMovie")
+	python::class_<CvArtInfoMovie, boost::noncopyable, python::bases<CvArtInfoAsset> >("CvArtInfoMovie")
 		;
-	python::class_<CvArtInfoMisc, python::bases<CvArtInfoAsset> >("CvArtInfoMisc")
+	python::class_<CvArtInfoMisc, boost::noncopyable, python::bases<CvArtInfoAsset> >("CvArtInfoMisc")
 		;
-	python::class_<CvArtInfoUnit, python::bases<CvArtInfoScalableAsset> >("CvArtInfoUnit")
+	python::class_<CvArtInfoUnit, boost::noncopyable, python::bases<CvArtInfoScalableAsset> >("CvArtInfoUnit")
 		.def("getInterfaceScale", &CvArtInfoUnit::getInterfaceScale, "float ()")
 		.def("getKFM", &CvArtInfoUnit::getKFM, "string ()")
 		.def("getFullLengthIcon", &CvArtInfoUnit::getFullLengthIcon, "string ()")
 		;
-	python::class_<CvArtInfoBuilding, python::bases<CvArtInfoScalableAsset> >("CvArtInfoBuilding")
+	python::class_<CvArtInfoBuilding, boost::noncopyable, python::bases<CvArtInfoScalableAsset> >("CvArtInfoBuilding")
 		.def("isAnimated", &CvArtInfoBuilding::isAnimated, "bool ()")
 		.def("getCityTexture", &CvArtInfoBuilding::getCityTexture, "string ()")
 		.def("getCitySelectedTexture", &CvArtInfoBuilding::getCitySelectedTexture, "string ()")
 		;
-	python::class_<CvArtInfoCivilization, python::bases<CvArtInfoAsset> >("CvArtInfoCivilization")
+	python::class_<CvArtInfoCivilization, boost::noncopyable, python::bases<CvArtInfoAsset> >("CvArtInfoCivilization")
 		.def("getFontButtonIndex", &CvArtInfoCivilization::getFontButtonIndex, "int ()")
 		.def("isWhiteFlag", &CvArtInfoCivilization::isWhiteFlag, "bool ()")
 		.def("isInvertFlag", &CvArtInfoCivilization::isInvertFlag, "bool ()")
 		;
-	python::class_<CvArtInfoLeaderhead, python::bases<CvArtInfoAsset> >("CvArtInfoLeaderhead")
+	python::class_<CvArtInfoLeaderhead, boost::noncopyable, python::bases<CvArtInfoAsset> >("CvArtInfoLeaderhead")
 		;
-	python::class_<CvArtInfoBonus, python::bases<CvArtInfoScalableAsset> >("CvArtInfoBonus")
+	python::class_<CvArtInfoBonus, boost::noncopyable, python::bases<CvArtInfoScalableAsset> >("CvArtInfoBonus")
 		;
-	python::class_<CvArtInfoImprovement, python::bases<CvArtInfoScalableAsset> >("CvArtInfoImprovement")
+	python::class_<CvArtInfoImprovement, boost::noncopyable, python::bases<CvArtInfoScalableAsset> >("CvArtInfoImprovement")
 		.def("isExtraAnimations", &CvArtInfoImprovement::isExtraAnimations, "bool ()")
 		;
-	python::class_<CvArtInfoTerrain, python::bases<CvArtInfoAsset> >("CvArtInfoTerrain")
+	python::class_<CvArtInfoTerrain, boost::noncopyable, python::bases<CvArtInfoAsset> >("CvArtInfoTerrain")
 		;
-	python::class_<CvArtInfoFeature, python::bases<CvArtInfoScalableAsset> >("CvArtInfoFeature")
+	python::class_<CvArtInfoFeature, boost::noncopyable, python::bases<CvArtInfoScalableAsset> >("CvArtInfoFeature")
 		.def("isAnimated", &CvArtInfoFeature::isAnimated, "bool ()")
 		;
-	python::class_<CvEmphasizeInfo, python::bases<CvInfoBase> >("CvEmphasizeInfo")
+	python::class_<CvEmphasizeInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvEmphasizeInfo")
 		.def("isAvoidGrowth", &CvEmphasizeInfo::isAvoidGrowth, "bool ()")
 		// Arrays
 		.def("getYieldChange", &CvEmphasizeInfo::getYieldChange, "int (int i)")
 		;
-	python::class_<CvCultureLevelInfo, python::bases<CvInfoBase> >("CvCultureLevelInfo")
+	python::class_<CvCultureLevelInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvCultureLevelInfo")
 		.def("getThreshold", &CvCultureLevelInfo::getThreshold, "int ()")
 		;
-	python::class_<CvEraInfo, python::bases<CvInfoBase> >("CvEraInfo")
+	python::class_<CvEraInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvEraInfo")
 		.def("getGameTurn", &CvEraInfo::getGameTurn, "int () -")
 		.def("getStartingUnitMultiplier", &CvEraInfo::getStartingUnitMultiplier, "int () -")
 		.def("getStartingDefenseUnits", &CvEraInfo::getStartingDefenseUnits, "int () -")
@@ -305,20 +305,20 @@ void CyInfoPythonInterface3()
 		.def("getSoundtracks", &CvEraInfo::getSoundtracks, "int (int i) -")
 		.def("getCitySoundscapeSciptId", &CvEraInfo::getCitySoundscapeSciptId, "int (int i) -")
 		;
-	python::class_<CvColorInfo, python::bases<CvInfoBase> >("CvColorInfo")
+	python::class_<CvColorInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvColorInfo")
 		.def("getColor", &CvColorInfo::getColor,  python::return_value_policy<python::reference_existing_object>())
 		;
-	python::class_<CvPlayerColorInfo, python::bases<CvInfoBase> >("CvPlayerColorInfo")
+	python::class_<CvPlayerColorInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvPlayerColorInfo")
 		.def("getColorTypePrimary", &CvPlayerColorInfo::getColorTypePrimary, "int ()")
 		.def("getColorTypeSecondary", &CvPlayerColorInfo::getColorTypeSecondary, "int ()")
 		.def("getTextColorType", &CvPlayerColorInfo::getTextColorType, "int ()")
 		;
-	python::class_<CvGameText, python::bases<CvInfoBase> >("CvGameText")
+	python::class_<CvGameText, boost::noncopyable, python::bases<CvInfoBase> >("CvGameText")
 		.def("getText", &CvGameText::pyGetText, "wstring ()")
 		.def("setText", &CvGameText::setText, "void (wstring)")
 		.def("getNumLanguages", &CvGameText::getNumLanguages, "int ()")
 		;
-	python::class_<CvDiplomacyTextInfo, python::bases<CvInfoBase> >("CvDiplomacyTextInfo")
+	python::class_<CvDiplomacyTextInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvDiplomacyTextInfo")
 		.def("getResponse", &CvDiplomacyTextInfo::getResponse,  python::return_value_policy<python::reference_existing_object>(), "Response (int iNum)")
 		.def("getNumResponses", &CvDiplomacyTextInfo::getNumResponses, "int ()")
 		.def("getCivilizationTypes", &CvDiplomacyTextInfo::getCivilizationTypes, "bool (int i, int j)")
@@ -328,7 +328,7 @@ void CyInfoPythonInterface3()
 		.def("getNumDiplomacyText", &CvDiplomacyTextInfo::getNumDiplomacyText, "int (int i)")
 		.def("getDiplomacyText", &CvDiplomacyTextInfo::getDiplomacyText, "string (int i, int j)")
 		;
-	python::class_<CvDiplomacyInfo, python::bases<CvInfoBase> >("CvDiplomacyInfo")
+	python::class_<CvDiplomacyInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvDiplomacyInfo")
 		.def("getResponse", &CvDiplomacyInfo::getResponse,  python::return_value_policy<python::reference_existing_object>(), "CvDiplomacyResponse (int iNum)")
 		.def("getNumResponses", &CvDiplomacyInfo::getNumResponses, "int ()")
 		.def("getCivilizationTypes", &CvDiplomacyInfo::getCivilizationTypes, "bool (int i, int j)")
@@ -338,34 +338,34 @@ void CyInfoPythonInterface3()
 		.def("getNumDiplomacyText", &CvDiplomacyInfo::getNumDiplomacyText, "int (int i)")
 		.def("getDiplomacyText", &CvDiplomacyInfo::getDiplomacyText, "string (int i, int j)")
 		;
-	python::class_<CvEffectInfo, python::bases<CvInfoBase, CvScalableInfo> >("CvEffectInfo")
+	python::class_<CvEffectInfo, boost::noncopyable, python::bases<CvInfoBase, CvScalableInfo> >("CvEffectInfo")
 		.def("getPath", &CvEffectInfo::getPath, "string ()")
 		.def("setPath", &CvEffectInfo::setPath, "void (string)")
 		;
-	python::class_<CvControlInfo, python::bases<CvInfoBase> >("CvControlInfo")
+	python::class_<CvControlInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvControlInfo")
 		.def("getActionInfoIndex", &CvControlInfo::getActionInfoIndex, "int ()")
 		;
-	python::class_<CvAutomateInfo, python::bases<CvInfoBase> >("CvAutomateInfo")
+	python::class_<CvAutomateInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvAutomateInfo")
 		;
-	python::class_<CvCommandInfo, python::bases<CvInfoBase> >("CvCommandInfo")
+	python::class_<CvCommandInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvCommandInfo")
 		;
-	python::class_<CvGameOptionInfo, python::bases<CvInfoBase> >("CvGameOptionInfo")
+	python::class_<CvGameOptionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvGameOptionInfo")
 		.def("getDefault", &CvGameOptionInfo::getDefault, "bool ()")
 		.def("getVisible", &CvGameOptionInfo::getVisible, "bool ()")
 		;
-	python::class_<CvMPOptionInfo, python::bases<CvInfoBase> >("CvMPOptionInfo")
+	python::class_<CvMPOptionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvMPOptionInfo")
 		.def("getDefault", &CvMPOptionInfo::getDefault, "bool ()")
 		;
-	python::class_<CvForceControlInfo, python::bases<CvInfoBase> >("CvForceControlInfo")
+	python::class_<CvForceControlInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvForceControlInfo")
 		.def("getDefault", &CvForceControlInfo::getDefault, "bool ()")
 		;
-	python::class_<CvPlayerOptionInfo, python::bases<CvInfoBase> >("CvPlayerOptionInfo")
+	python::class_<CvPlayerOptionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvPlayerOptionInfo")
 		.def("getDefault", &CvPlayerOptionInfo::getDefault, "bool ()")
 		;
-	python::class_<CvGraphicOptionInfo, python::bases<CvInfoBase> >("CvGraphicOptionInfo")
+	python::class_<CvGraphicOptionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvGraphicOptionInfo")
 		.def("getDefault", &CvGraphicOptionInfo::getDefault, "bool ()")
 		;
-	python::class_<CvEventTriggerInfo, python::bases<CvInfoBase> >("CvEventTriggerInfo")
+	python::class_<CvEventTriggerInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvEventTriggerInfo")
 		.def("getPercentGamesActive", &CvEventTriggerInfo::getPercentGamesActive, "int ()")
 		.def("getProbability", &CvEventTriggerInfo::getProbability, "int ()")
 		.def("getNumUnits", &CvEventTriggerInfo::getNumUnits, "int ()")
@@ -421,7 +421,7 @@ void CyInfoPythonInterface3()
 		.def("isPrereqEventCity", &CvEventTriggerInfo::isPrereqEventCity, "bool ()")
 		.def("isFrontPopup", &CvEventTriggerInfo::isFrontPopup, "bool ()")
 		;
-	python::class_<CvEventInfo, python::bases<CvInfoBase> >("CvEventInfo")
+	python::class_<CvEventInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvEventInfo")
 		.def("isQuest", &CvEventInfo::isQuest, "bool ()")
 		.def("isGlobal", &CvEventInfo::isGlobal, "bool ()")
 		.def("isTeam", &CvEventInfo::isTeam, "bool ()")
@@ -469,13 +469,13 @@ void CyInfoPythonInterface3()
 		.def("getBuildingYieldChange", &CvEventInfo::getBuildingYieldChange, "int (int /*BuildingClassTypes*/, int /*YieldTypes*/)")
 		.def("getNumBuildingYieldChanges", &CvEventInfo::getNumBuildingYieldChanges, "int ()")
 		;
-	python::class_<CvMainMenuInfo, python::bases<CvInfoBase> >("CvMainMenuInfo")
+	python::class_<CvMainMenuInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvMainMenuInfo")
 		.def("getScene", &CvMainMenuInfo::getScene, "string ()")
 		.def("getSoundtrack", &CvMainMenuInfo::getSoundtrack, "string ()")
 		.def("getLoading", &CvMainMenuInfo::getLoading, "string ()")
 		.def("getLoadingSlideshow", &CvMainMenuInfo::getLoadingSlideshow, "string ()")
 		;
-	python::class_<CvProfessionInfo, python::bases<CvInfoBase> >("CvProfessionInfo")
+	python::class_<CvProfessionInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvProfessionInfo")
 		.def("getUnitCombatType", &CvProfessionInfo::getUnitCombatType, "int ()")
 		// TAC - LbD - Ray - START
 		.def("LbD_isUsed", &CvProfessionInfo::LbD_isUsed, "bool ()")
@@ -509,7 +509,7 @@ void CyInfoPythonInterface3()
 		.def("getNumYieldsConsumed", &CvProfessionInfo::getNumYieldsConsumed, "int ()")
 		// R&R, ray , MYCP partially based on code of Aymerick - END
 		;
-	python::class_<CvFatherInfo, python::bases<CvInfoBase> >("CvFatherInfo")
+	python::class_<CvFatherInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvFatherInfo")
 		.def("getFatherCategory", &CvFatherInfo::getFatherCategory, "int ()")
 		.def("getTrait", &CvFatherInfo::getTrait, "int ()")
 		.def("getFreeUnits", &CvFatherInfo::getFreeUnits, "int (int)")
@@ -517,7 +517,7 @@ void CyInfoPythonInterface3()
 		.def("isRevealImprovement", &CvFatherInfo::isRevealImprovement, "bool (int)")
 		.def("getPortrait", &CvFatherInfo::getPortrait, "string ()")
 		;
-	python::class_<CvFatherPointInfo, python::bases<CvInfoBase> >("CvFatherInfo")
+	python::class_<CvFatherPointInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvFatherInfo")
 		.def("getChar", &CvFatherPointInfo::getChar, "int ()")
 		.def("getLandTilePoints", &CvFatherPointInfo::getLandTilePoints, "int ()")
 		.def("getWaterTilePoints", &CvFatherPointInfo::getWaterTilePoints, "int ()")
@@ -533,7 +533,7 @@ void CyInfoPythonInterface3()
 		.def("getBuildingPoints", &CvFatherPointInfo::getBuildingPoints, "int (int iBuildingClass)")
 		.def("getYieldPoints", &CvFatherPointInfo::getYieldPoints, "int (int iYield)")
 		;
-	python::class_<CvAlarmInfo, python::bases<CvInfoBase> >("CvAlarmInfo")
+	python::class_<CvAlarmInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvAlarmInfo")
 		.def("getRange", &CvAlarmInfo::getRange, "int ()")
 		.def("getColony", &CvAlarmInfo::getColony, "int ()")
 		.def("getNumColonies", &CvAlarmInfo::getNumColonies, "int ()")
@@ -543,7 +543,7 @@ void CyInfoPythonInterface3()
 		.def("getAttitudeDivisor", &CvAlarmInfo::getAttitudeDivisor, "int ()")
 		;
 	// PatchMod: Achievements START
-	python::class_<CvAchieveInfo, python::bases<CvInfoBase> >("CvAchieveInfo")
+	python::class_<CvAchieveInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvAchieveInfo")
 		.def("getPictureFileName", &CvAchieveInfo::getPictureFileName, "string ()")
 		;
 	// PatchMod: Achievements END

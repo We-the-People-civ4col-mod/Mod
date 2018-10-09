@@ -3460,7 +3460,7 @@ bool CvDLLButtonPopup::launchTalkNativesPopup(CvPopup* pPopup, CvPopupInfo& info
 bool CvDLLButtonPopup::launchAchievementPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
 	CvPlayer& kActivePlayer = GET_PLAYER((PlayerTypes)info.getData2());
-	CvAchieveInfo pAchievement = GC.getAchieveInfo((AchieveTypes)info.getData1());
+	CvAchieveInfo& pAchievement = GC.getAchieveInfo((AchieveTypes)info.getData1());
 
 	if (!pAchievement.isActive())
 	{
