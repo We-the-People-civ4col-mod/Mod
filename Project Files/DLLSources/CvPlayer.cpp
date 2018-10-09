@@ -5804,7 +5804,7 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 				for (iDY = -1; iDY <= 1 && bOwnsAll; iDY++)
 				{
 					pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
-					if (pLoopPlot->getOwnerINLINE() != getID())
+					if (pLoopPlot != NULL && pLoopPlot->getOwnerINLINE() != getID())
 					{
 						bOwnsAll = false;
 					}
