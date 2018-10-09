@@ -362,7 +362,6 @@ public:
 	int calculateNetYield(YieldTypes eYield) const;
 	int calculateActualYieldProduced(YieldTypes eYield) const;
 	int calculateActualYieldConsumed(YieldTypes eYield) const;
-	int getOverflowYieldSellPercent() const;
 
 	// R&R, Androrc, Domestic Market
 	int getYieldBuyPrice(YieldTypes eYield) const;

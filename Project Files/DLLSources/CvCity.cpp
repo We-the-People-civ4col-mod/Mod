@@ -5190,28 +5190,6 @@ int CvCity::calculateActualYieldConsumed(YieldTypes eYield) const
 	return aiYieldsConsumed[eYield];
 }
 
-int CvCity::getOverflowYieldSellPercent() const
-{
-	int iMaxPercent = 0;
-	for (int i = 0; i < GC.getNumBuildingClassInfos(); ++i)
-	{
-		BuildingTypes eBuilding = (BuildingTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(i);
-		if (eBuilding != NO_BUILDING && isHasBuilding(eBuilding))
-		{
-			iMaxPercent = std::max(GC.getBuildingInfo(eBuilding).getStorageLossSellPercentage(), iMaxPercent);
-		}
-	}
-	
-	// TAC - AI Overflow Sell - koma13 - START
-	if (!isHuman() && iMaxPercent < GC.getHandicapInfo(getHandicapType()).getAIMinimumStorageLossSellPercentage())
-	{
-		iMaxPercent = GC.getHandicapInfo(getHandicapType()).getAIMinimumStorageLossSellPercentage();
-	}
-	// TAC - AI Overflow Sell - koma13 - END
-
-	return iMaxPercent;
-}
-
 void CvCity::initCacheStorageLossTradeValues()
 {
 	m_iStorageLossSellPercentage = 0;
@@ -7126,6 +7104,10 @@ void CvCity::doYields()
 		default:
 			changeYieldStored(eYield, aiYields[eYield]);
 
+			int iOverflowYieldSellPercent = getStorageLossSellPercentage();
+			bool bIgnoresBoycott = getIgnoresBoycott();
+			bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
+
 			if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 			{
 				//VET NewCapacity - begin 6/9 -- ray fix
@@ -7133,7 +7115,7 @@ void CvCity::doYields()
 				if (GC.getNEW_CAPACITY())
 				{
 					// Here special sell behaviour for Custom House
-					if (getOverflowYieldSellPercent() > 79 && iTotalYields < iMaxCapacity)
+					if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
 					{
 						int sellThreshold = 0;
 						// R&R, ray, finishing Custom House Screen
@@ -7182,7 +7164,7 @@ void CvCity::doYields()
 					int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss);
 
 					// Yield is boycotted but you have Custom House
-					if (iComparableProfitInEurope == 0 && getOverflowYieldSellPercent() > 79)
+					if (iComparableProfitInEurope == 0 && bIgnoresBoycott)
 					{
 						if (GET_PLAYER(getOwnerINLINE()).getParent() == NO_PLAYER)
 						{
@@ -7199,14 +7181,14 @@ void CvCity::doYields()
 						}
 					}
 
-					int iProfit = getOverflowYieldSellPercent() * iComparableProfitInEurope / 100;
+					int iProfit = iOverflowYieldSellPercent * iComparableProfitInEurope / 100;
 					// R&R, ray , Changes to Custom House - END
 					if (iProfit > 0)
 					{
 						CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
 						GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 
-						int iDiscountedLoss = getOverflowYieldSellPercent() * iLoss / 100;
+						int iDiscountedLoss = iOverflowYieldSellPercent * iLoss / 100;
 						GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
 						kPlayerEurope.changeYieldTradedTotal(eYield, iDiscountedLoss);
 						GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
@@ -7214,7 +7196,7 @@ void CvCity::doYields()
 						// R&R, ray , Changes to Custom House - START
 						// Selling with Custom House will get Trade Founding Father Points
 						// check if Custom House
-						if (getOverflowYieldSellPercent() > 79) 
+						if (bHasUnlockedTradeSettings) 
 						{
 							for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 							{
