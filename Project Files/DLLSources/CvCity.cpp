@@ -7843,30 +7843,12 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
-
-	//storage loss trading (aka customs house and related things)
-	if (uiFlag > 6)
-	{
-		//data chunk from flag count 6 ...
-		pStream->Read(&m_iStorageLossSellPercentage);
-		pStream->Read(&m_bIgnoresBoycott);
-		pStream->Read(&m_bHasUnlockedStorageLossTradeSettings);
-	}
-	else
-	{
-		//... or alternative calculation:
-
-		//Omit this step for native cities, because they never sell storage loss.
-		if (!isNative())
-		{
-			cache_storageLossTradeValues_usingRawData();
-		}
-	}
+	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
 }
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag = 7;
+	uint uiFlag = 6;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	// just-in-time yield arrays - start - Nightinggale
@@ -8021,13 +8003,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	{
 		(*it).write(pStream);
 	}
-
-	//data chunk for flag count 7
-	//storage loss trading (aka customs house and related things)
-	pStream->Write(m_iStorageLossSellPercentage);
-	pStream->Write(m_bIgnoresBoycott);
-	pStream->Write(m_bHasUnlockedStorageLossTradeSettings);
-
 }
 
 
