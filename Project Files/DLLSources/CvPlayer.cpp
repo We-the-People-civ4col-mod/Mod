@@ -19888,7 +19888,7 @@ void CvPlayer::redistributeWood() {
 		for (pLoopCity = firstCity(&iLoop4); pLoopCity != NULL; pLoopCity = nextCity(&iLoop4))
 		{
 			int stonealreadydistributed = pLoopCity->getYieldStored(YIELD_STONE);
-			pLoopCity->setYieldStored(YIELD_LUMBER, totalstone + stonealreadydistributed);
+			pLoopCity->setYieldStored(YIELD_STONE, totalstone + stonealreadydistributed);
 			break;
 		}
 	}
