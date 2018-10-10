@@ -822,7 +822,7 @@
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
 			<iYieldStorage>2100</iYieldStorage>
-			<iStorageLossSellPercentage>50</iStorageLossSellPercentage>
+			<iStorageLossSellPercentage>60</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
