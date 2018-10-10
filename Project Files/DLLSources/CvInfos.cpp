@@ -4744,7 +4744,7 @@ m_iAssetValue(0),
 m_iPowerValue(0),
 m_iYieldStorage(0),
 m_iSpecialBuildingType(NO_SPECIALBUILDING),
-m_iNextSpecialBuilding(NO_BUILDING),
+m_iIndexOf_NextBuildingType_In_SpecialBuilding(NO_BUILDING),
 m_iConquestProbability(0),
 m_iHealRateChange(0),
 m_iDefenseModifier(0),
@@ -4893,10 +4893,6 @@ int CvBuildingInfo::getYieldStorage() const
 int CvBuildingInfo::getSpecialBuildingType() const
 {
 	return m_iSpecialBuildingType;
-}
-int CvBuildingInfo::getNextSpecialBuilding() const
-{
-	return m_iNextSpecialBuilding;
 }
 int CvBuildingInfo::getConquestProbability() const
 {
@@ -5151,7 +5147,7 @@ void CvBuildingInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iYieldStorage);
 	stream->Read(&m_iSpecialBuildingType);
-	stream->Read(&m_iNextSpecialBuilding);
+	stream->Read(&m_iIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Read(&m_iConquestProbability);
 	stream->Read(&m_iHealRateChange);
 	stream->Read(&m_iDefenseModifier);
@@ -5245,7 +5241,7 @@ void CvBuildingInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iYieldStorage);
 	stream->Write(m_iSpecialBuildingType);
-	stream->Write(m_iNextSpecialBuilding);
+	stream->Write(m_iIndexOf_NextBuildingType_In_SpecialBuilding);
 	stream->Write(m_iConquestProbability);
 	stream->Write(m_iHealRateChange);
 	stream->Write(m_iDefenseModifier);
@@ -5373,15 +5369,15 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 
 bool CvBuildingInfo::readPass2(CvXMLLoadUtility* pXML)
 {
-	m_iNextSpecialBuilding = GC.getInfoTypeForString(getType());
+	m_iIndexOf_NextBuildingType_In_SpecialBuilding = GC.getInfoTypeForString(getType());
 	if(getSpecialBuildingType() != NO_SPECIALBUILDING)
 	{
 		for(int i=0;i<GC.getNumBuildingInfos();i++)
 		{
-			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_iNextSpecialBuilding + i + 1) % GC.getNumBuildingInfos());
+			BuildingTypes eLoopBuilding = (BuildingTypes) ((m_iIndexOf_NextBuildingType_In_SpecialBuilding + i + 1) % GC.getNumBuildingInfos());
 			if(GC.getBuildingInfo(eLoopBuilding).getSpecialBuildingType() == getSpecialBuildingType())
 			{
-				m_iNextSpecialBuilding = eLoopBuilding;
+				m_iIndexOf_NextBuildingType_In_SpecialBuilding = eLoopBuilding;
 				break;
 			}
 		}

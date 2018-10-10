@@ -6316,7 +6316,7 @@ bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
 	
 	//Walk through all the possible buildings in the building slot of the given building ...
 	//... and check if the given building is the building with the highest tier (SpecialBuildingPriority), built in that slot.
-	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getNextSpecialBuilding();
+	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	while (eNextBuilding != eIndex)
 	{
 		CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
@@ -6328,7 +6328,7 @@ bool CvCity::isDominantSpecialBuilding(BuildingTypes eIndex) const
 			}
 		}
 
-		eNextBuilding = (BuildingTypes) kNextBuilding.getNextSpecialBuilding();
+		eNextBuilding = (BuildingTypes) kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	}
 
 	return true;

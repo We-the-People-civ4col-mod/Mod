@@ -1238,7 +1238,7 @@ public:
 	DllExport int getPowerValue() const;
 	DllExport int getYieldStorage() const;
 	DllExport int getSpecialBuildingType() const;
-	DllExport int getNextSpecialBuilding() const;
+	inline int getIndexOf_NextBuildingType_In_SpecialBuilding() const		{ return m_iIndexOf_NextBuildingType_In_SpecialBuilding; }
 	DllExport int getConquestProbability() const;
 	DllExport int getHealRateChange() const;
 	DllExport int getDefenseModifier() const;
@@ -1328,7 +1328,7 @@ protected:
 	int m_iPowerValue;
 	int m_iYieldStorage;
 	int m_iSpecialBuildingType;
-	int m_iNextSpecialBuilding;
+	int m_iIndexOf_NextBuildingType_In_SpecialBuilding;
 	int m_iConquestProbability;
 	int m_iHealRateChange;
 	int m_iDefenseModifier;
