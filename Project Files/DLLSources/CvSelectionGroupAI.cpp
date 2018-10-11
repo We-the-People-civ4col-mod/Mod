@@ -851,7 +851,7 @@ void CvSelectionGroupAI::AI_groupBombard()
 }
 
 // Erik: I've changed this function to return the total amount of yields stored 
-// rather than the amount of treasure since that wast used anyway
+// rather than the amount of treasure since that wasn't used anyway
 int CvSelectionGroupAI::AI_getYieldsLoaded(short* piYields) const
 {
 	FAssert(piYields != NULL);
@@ -1057,10 +1057,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	short aiYieldsLoaded[NUM_YIELD_TYPES];
 	
 	std::fill(aiYieldsLoaded, aiYieldsLoaded + NUM_YIELD_TYPES, 0);
-	bool bNoCargo = (AI_getYieldsLoaded(aiYieldsLoaded) == 0);
+	const bool bNoCargo = (AI_getYieldsLoaded(aiYieldsLoaded) == 0);
 
 	// R&R mod, vetiarvind, max yield import limit - start	
-	bool bIgnoreDanger = getIgnoreDangerStatus();
+	const bool bIgnoreDanger = getIgnoreDangerStatus();
 	// R&R mod, vetiarvind, max yield import limit - end
 
 	if (!bNoCargo)
@@ -1146,6 +1146,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				int iImportValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), iAmount);
 				int iRouteValue = (iExportValue + iImportValue + 2 * std::min(iExportValue, iImportValue)) / 4;
 
+
 				if (pSourceCity == pPlotCity)
 				{
 					cityValues[routes[i]->getDestinationCity()] += 2 * iRouteValue;
@@ -1181,10 +1182,45 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				FAssert(!atPlot(pCity->plot()));
 				// TAC - Trade Routes Advisor - koma13 - START
 				//if (generatePath(plot(), pCity->plot(), MOVE_NO_ENEMY_TERRITORY, true))
-				if (generatePath(plot(), pCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true))
+
+				CvPlot* pDestinationCityPlot = pCity->plot();
+
+				int iTurns;
+				if (generatePath(plot(), pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &iTurns))
 				// TAC - Trade Routes Advisor - koma13 - END
 				{
-					iValue /= 1 + kOwner.AI_plotTargetMissionAIs(pCity->plot(), MISSIONAI_TRANSPORT, this, 0);
+					iValue /= 1 + kOwner.AI_plotTargetMissionAIs(pDestinationCityPlot, MISSIONAI_TRANSPORT, this, 0);
+				
+					if (bCoastalTransport)
+					{
+						// Erik: Eventually these tuning factors should not be hard-coded!
+						const int CoastalTransportRangeThreshold = 4;
+						const int CoastalTransportDifferentAreaMultiplier = 2;
+
+						// Erik: If this is a coastal transport, avoid routes that are much longer than land routes unless there are no other wagons in this area
+					
+						// Erik: If the destination city is in a different area, then this is a more attractive route (wagons cannot cross coast!)
+						// Note: We don't have to check for the areas being coastally reachable, since that already checked
+						
+						const CvArea* pDestinationArea = pDestinationCityPlot->area();
+						const CvArea* pPlotArea = plot()->area();
+
+						if (pDestinationArea != pPlotArea)
+						{
+							// Erik: Double the value of the route. Even if we encourage transportion between areas we don't want to sail around the world!
+							// so we make that less attractive
+							iValue *= CoastalTransportDifferentAreaMultiplier;
+							iValue /=  std::max(1, iTurns - (CoastalTransportRangeThreshold * CoastalTransportDifferentAreaMultiplier));					
+						}
+						else
+						{
+							if (pPlotArea->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) > 0)
+							{
+								// Erik: Longer routes are less attractive for coastal transports
+								iValue /= std::max(1, iTurns - CoastalTransportRangeThreshold);
+							}
+						}
+					}
 				}
 				else
 				{
@@ -1218,6 +1254,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			//Now, for any trade routes which this group is assigned to, try to pick up cargo here.
 			for (uint i = 0; i < routes.size(); ++i)
 			{
+				// Erik: This is redundant. Instead of looping through all routes, just find the subset of routes to the best destination city
+
 				CvCity* pSourceCity = ::getCity(routes[i]->getSourceCity());
 				if ((pSourceCity != NULL && pSourceCity == pPlotCity) // R&R mod, vetiarvind, max yield import limit (move plot==srcCity check outside as optmztn)
 					&& (routes[i]->getDestinationCity() == kBestDestination))
