@@ -22,6 +22,7 @@
 class CvXMLLoadUtility;
 class InfoArray;
 class CvPlayer;
+class CvCivilizationInfo;
 
 #include "CvEnums.h"
 #include "JustInTimeArrayGetType.h"
@@ -90,6 +91,8 @@ public:
 
 	// replace value with argument if argument is lower than the already stored value
 	void keepMin(T value, int iIndex);
+
+	int getPositiveCount() const;
 
 	JITarrayTypes getType() const
 	{

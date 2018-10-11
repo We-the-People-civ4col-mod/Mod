@@ -119,6 +119,24 @@ int BoolArray::getNumUsedElements() const
 	return iMax;
 }
 
+int BoolArray::getNumTrueElements() const
+{
+	if (!isAllocated())
+	{
+		return m_bDefault ? m_iLength : 0;
+	}
+
+	int iCount = 0;
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (get(i))
+		{
+			++iCount;
+		}
+	}
+	return iCount;
+}
+
 bool BoolArray::add(const InfoArray* pIarray)
 {
 	bool bChanged = false;

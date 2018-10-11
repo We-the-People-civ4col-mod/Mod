@@ -119,6 +119,9 @@ class CvAchieveInfo;
 
 class CivEffectInfo;
 
+#include "InfoCacheArray.h"
+#include "EnumTypeCacheArray.h"
+
 
 class CvGlobals
 {
@@ -914,6 +917,8 @@ public:
 
 	void deleteInfoArrays();
 
+	const YieldTypeArray& getUnitYieldDemandTypes() const { return m_acUnitYieldDemandTypes; }
+
 protected:
 
 	bool m_bGraphicsInitialized;
@@ -1316,6 +1321,8 @@ protected:
 	int m_MAX_CITY_HEALTH;
 	int m_LOWEST_CITY_HEALTH;
 	// R&R, ray, Health - END
+
+	YieldTypeArray m_acUnitYieldDemandTypes;
 
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;

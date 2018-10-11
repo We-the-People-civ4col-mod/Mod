@@ -826,6 +826,7 @@ bool CvDiplomacyResponse::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvPromotionInfo::CvPromotionInfo() :
+m_eIndex(NO_PROMOTION),
 m_iPrereqPromotion(NO_PROMOTION),
 m_iPrereqOrPromotion1(NO_PROMOTION),
 m_iPrereqOrPromotion2(NO_PROMOTION),
@@ -1243,6 +1244,10 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+
+	m_eIndex = static_cast<PromotionTypes>(getIndexForType(JIT_ARRAY_PROMOTION, getType()));
+	FAssert(m_eIndex != NO_PROMOTION);
+
 	pXML->GetChildXmlValByName(szTextVal, "Sound");
 	setSound(szTextVal);
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
@@ -1308,6 +1313,7 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvProfessionInfo::CvProfessionInfo() :
+	m_eIndex(NO_PROFESSION),
 	m_iUnitCombatType(NO_UNITCOMBAT),
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	// m_iYieldProduced(NO_YIELD),
@@ -1620,6 +1626,10 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+
+	m_eIndex = static_cast<ProfessionTypes>(getIndexForType(JIT_ARRAY_PROFESSION, getType()));
+	FAssert(m_eIndex != NO_PROFESSION);
+
 	pXML->GetChildXmlValByName(szTextVal, "Combat");
 	m_iUnitCombatType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "DefaultUnitAI");
@@ -9046,6 +9056,7 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvYieldInfo::CvYieldInfo() :
+m_eIndex(NO_YIELD),
 m_iChar(0),
 m_iBuyPriceLow(0),
 m_iBuyPriceHigh(0),
@@ -9280,6 +9291,10 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+
+	m_eIndex = static_cast<YieldTypes>(getIndexForType(JIT_ARRAY_YIELD, getType()));
+	FAssert(m_eIndex != NO_YIELD);
+
 	pXML->GetChildXmlValByName(&m_iBuyPriceLow, "iBuyPriceLow");
 	pXML->GetChildXmlValByName(&m_iBuyPriceHigh, "iBuyPriceHigh");
 	// TAC - Price Limits - Ray - START

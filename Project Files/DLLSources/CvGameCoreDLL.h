@@ -266,11 +266,12 @@ class PyObject;
 #include "CvStructs.h"
 #include "CvDLLUtilityIFaceBase.h"
 
-#include "CvGlobals.h"
-
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
 #include "InfoArray.h"
+#include "InfoCacheArray.h"
+
+#include "CvGlobals.h"
 
 #include "CvPlayerAI.h"
 #include "CvGameCoreUtils.h"

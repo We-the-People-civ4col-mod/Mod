@@ -58,6 +58,8 @@ public:
 
 	int getNumUsedElements() const;
 
+	int getNumTrueElements() const;
+
 	// binary add a 1D InfoArray into the array
 	// returns true if something changed
 	bool add(const InfoArray* pIarray);

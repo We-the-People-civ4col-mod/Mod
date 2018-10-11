@@ -274,6 +274,25 @@ void JustInTimeArray<T>::keepMin(T value, int iIndex)
 }
 
 template<class T>
+int JustInTimeArray<T>::getPositiveCount() const
+{
+	if (!isAllocated())
+	{
+		return m_eDefault > 0 ? m_iLength : 0;
+	}
+	
+	int iCount = 0;
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (get(i) > 0)
+		{
+			++iCount;
+		}
+	}
+	return iCount;
+}
+
+template<class T>
 bool JustInTimeArray<T>::hasContent()
 {
 	if (m_tArray == NULL)

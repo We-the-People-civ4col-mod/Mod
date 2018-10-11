@@ -208,6 +208,7 @@ class CvPromotionInfo :	public CvHotkeyInfo
 public:
 	DllExport CvPromotionInfo();
 	DllExport virtual ~CvPromotionInfo();
+	PromotionTypes getIndex() const { return m_eIndex; }
 	DllExport int getPrereqPromotion() const;
 	DllExport void setPrereqPromotion(int i);
 	DllExport int getPrereqOrPromotion1() const;
@@ -269,6 +270,7 @@ public:
 
 protected:
 
+	PromotionTypes m_eIndex;
 	int m_iPrereqPromotion;
 	int m_iPrereqOrPromotion1;
 	int m_iPrereqOrPromotion2;
@@ -329,6 +331,7 @@ class CvProfessionInfo :	public CvInfoBase
 public:
 	DllExport CvProfessionInfo();
 	DllExport virtual ~CvProfessionInfo();
+	ProfessionTypes getIndex() const { return m_eIndex; }
 	DllExport int getUnitCombatType() const;
 	// TAC - LbD - Ray - START
 	DllExport bool LbD_isUsed() const;
@@ -376,6 +379,7 @@ public:
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	ProfessionTypes m_eIndex;
 	int m_iUnitCombatType;
 	int m_iDefaultUnitAIType;
 	// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -2527,6 +2531,7 @@ class CvYieldInfo :
 public:
 	DllExport CvYieldInfo();
 	DllExport virtual ~CvYieldInfo();
+	YieldTypes getIndex() const { return m_eIndex; }
 	DllExport int getChar() const;
 	DllExport void setChar(int i);
 	DllExport const char* getIcon() const;
@@ -2585,6 +2590,7 @@ public:
 	DllExport bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	YieldTypes m_eIndex;
 	int m_iChar;
 	CvString m_szIcon;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START

@@ -6839,10 +6839,11 @@ void CvCity::doYields()
 	//Performance optimization
 	if(!isNative() && hasMarket)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
+		for (int i = 0;; ++i)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
-			if (GC.getYieldInfo(eYield).isCargo())
+			YieldTypes eYield = kYieldArray.get(i);
+			if (eYield != NO_YIELD)
 			{
 				//if (hasMarket && getYieldDemand(eYield) > 0 && getYieldStored(eYield) > 0)
 				if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield)+aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
@@ -6859,6 +6860,10 @@ void CvCity::doYields()
 					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
 					//GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDemand);
 				}	
+			}
+			else
+			{
+				break;
 			}
 		}
 		if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
