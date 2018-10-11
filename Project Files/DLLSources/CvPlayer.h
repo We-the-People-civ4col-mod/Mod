@@ -1094,7 +1094,7 @@ public:
 
 public:
 	// pick the version with the pointer if you have the pointer
-	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange = 1);
+	void applyCivEffect(const CivEffectInfo& kCivEffect, int iChange = 1);
 	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
 
 	inline bool canUseBonus(BonusTypes eBonus)                     const { return m_ja_iCacheAllowsBonuses         .get(eBonus)          > 0; }
@@ -1132,12 +1132,12 @@ private:
 
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
-	void applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool bForceUpdateCache);
+	void applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool bForceUpdateCache);
 };
 
-inline void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange)
+inline void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange)
 {
-	applyCivEffect(pCivEffect, iChange, false);
+	applyCivEffect(kCivEffect, iChange, false);
 }
 
 inline void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange)

@@ -2188,11 +2188,11 @@ std::vector<CivEffectInfo*>& CvGlobals::getCivEffectInfo()
 	return m_paCivEffectInfo;
 }
 
-const CivEffectInfo* CvGlobals::getCivEffectInfo(CivEffectTypes eCivEffect) const
+const CivEffectInfo& CvGlobals::getCivEffectInfo(CivEffectTypes eCivEffect) const
 {
 	FAssert(eCivEffect >= FIRST_CIV_EFFECT);
 	FAssert(eCivEffect < NUM_CIV_EFFECT_TYPES);
-	return m_paCivEffectInfo[eCivEffect];
+	return *(m_paCivEffectInfo[eCivEffect]);
 }
 
 int& CvGlobals::getNumEntityEventTypes()

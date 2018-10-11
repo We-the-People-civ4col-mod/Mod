@@ -4655,17 +4655,17 @@ public:
 	CivEffectInfo(bool bAutogenerateAllow = false);
 	~CivEffectInfo();
 
-	inline const InfoArray* getAllowedBonuses              () const { return &m_info_AllowBonuses     ; }
-	inline const InfoArray* getAllowedBuilds               () const { return &m_info_AllowBuilds      ; }
-	inline const InfoArray* getAllowedBuildingClasses      () const { return &m_info_AllowBuildings   ; }
-	inline const InfoArray* getAllowedCivics               () const { return &m_info_AllowCivics      ; }
-	inline const InfoArray* getAllowedImmigrants           () const { return &m_info_AllowImmigrants  ; }
-	inline const InfoArray* getAllowedImprovements         () const { return &m_info_AllowImprovements; }
-	inline const InfoArray* getAllowedProfessions          () const { return &m_info_AllowProfessions ; }
-	inline const InfoArray* getAllowedPromotions           () const { return &m_info_AllowPromotions  ; }
-	inline const InfoArray* getAllowedRoutes               () const { return &m_info_AllowRoutes      ; }
-	inline const InfoArray* getAllowedUnitClasses          () const { return &m_info_AllowUnits       ; }
-	inline const InfoArray* getAllowedYields               () const { return &m_info_AllowYields      ; }
+	inline const InfoArray& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
+	inline const InfoArray& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
+	inline const InfoArray& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
+	inline const InfoArray& getAllowedCivics               () const { return m_info_AllowCivics       ; }
+	inline const InfoArray& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
+	inline const InfoArray& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
+	inline const InfoArray& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
+	inline const InfoArray& getAllowedPromotions           () const { return m_info_AllowPromotions   ; }
+	inline const InfoArray& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
+	inline const InfoArray& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
+	inline const InfoArray& getAllowedYields               () const { return m_info_AllowYields       ; }
 
 	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange; }
 

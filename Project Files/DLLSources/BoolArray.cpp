@@ -137,16 +137,16 @@ int BoolArray::getNumTrueElements() const
 	return iCount;
 }
 
-bool BoolArray::add(const InfoArray* pIarray)
+bool BoolArray::add(const InfoArray& kIarray)
 {
 	bool bChanged = false;
-	int iLength = pIarray->getLength();
+	int iLength = kIarray.getLength();
 
-	FAssert(pIarray->getDimentions() == 1);
+	FAssert(kIarray.getDimentions() == 1);
 
 	for (int i = 0; i < iLength; i++)
 	{
-		int iIndex = pIarray->getWithType(getType(), i, 0);
+		int iIndex = kIarray.getWithType(getType(), i, 0);
 		if (!get(iIndex))
 		{
 			set(true, iIndex);

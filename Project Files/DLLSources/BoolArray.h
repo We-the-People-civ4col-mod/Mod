@@ -62,7 +62,7 @@ public:
 
 	// binary add a 1D InfoArray into the array
 	// returns true if something changed
-	bool add(const InfoArray* pIarray);
+	bool add(const InfoArray& kIarray);
 
 	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
 	void read (FDataStreamBase* pStream, bool bEnable);

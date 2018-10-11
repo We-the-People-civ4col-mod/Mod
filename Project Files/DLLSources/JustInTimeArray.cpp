@@ -165,16 +165,16 @@ bool JustInTimeArray<double>::addCache(int iChange, const InfoArray* pIarray, Cv
 // Adding an InfoArray
 // this is used by CivEffects to store the combined values from multiple InfoArrays in a single JIT array
 template<class T>
-bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, const CvCivilizationInfo *pCivInfo)
+bool JustInTimeArray<T>::addCache(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo)
 {
 	bool bChanged = false;
-	bool b2D = pIarray->getDimentions() == 2;
-	int iLength = pIarray->getLength();
+	bool b2D = kIarray.getDimentions() == 2;
+	int iLength = kIarray.getLength();
 
-	FAssert(pIarray->getDimentions() <= 2);
+	FAssert(kIarray.getDimentions() <= 2);
 	FAssert(iChange == 1 || iChange == -1);
 
-	JITarrayTypes eAppliedType = pIarray->getType(0);
+	JITarrayTypes eAppliedType = kIarray.getType(0);
 
 	/// make sure the types of arrays match
 	FAssertMsg(eAppliedType == getType()
@@ -186,7 +186,7 @@ bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, const C
 
 	for (int i = 0; i < iLength; i++)
 	{
-		int iIndex = pIarray->getWithType(eAppliedType, i, 0);
+		int iIndex = kIarray.getWithType(eAppliedType, i, 0);
 		FAssert(iIndex >= 0);
 
 		// convert index if class needs to be converted to something the player can use
@@ -204,7 +204,7 @@ bool JustInTimeArray<T>::addCache(int iChange, const InfoArray* pIarray, const C
 		int iValue = 1;
 		if (b2D)
 		{
-			iValue = pIarray->getWithType(pIarray->getType(1), i, 1);
+			iValue = kIarray.getWithType(kIarray.getType(1), i, 1);
 		}
 		FAssert(iValue != 0);
 		FAssert(iIndex < this->m_iLength);
@@ -331,22 +331,22 @@ unsigned int JustInTimeArray<T>::getNumUsedElements(T* pNormalArray) const
 }
 
 template<>
-void JustInTimeArray<int>::generateInitCivEffect(const InfoArray* pIarray)
+void JustInTimeArray<int>::generateInitCivEffect(const InfoArray& kIarray)
 {
-	FAssert(pIarray->getDimentions() == 2);
-	FAssert(this->m_iType == pIarray->getType(0));
+	FAssert(kIarray.getDimentions() == 2);
+	FAssert(this->m_iType == kIarray.getType(0));
 
-	for (int i = 0; i < pIarray->getLength(); ++i)
+	for (int i = 0; i < kIarray.getLength(); ++i)
 	{
-		if (pIarray->getWithType(pIarray->getType(1), i, 1) > 0)
+		if (kIarray.getWithType(kIarray.getType(1), i, 1) > 0)
 		{
-			set(-1, pIarray->getWithType(getType(), i, 0));
+			set(-1, kIarray.getWithType(getType(), i, 0));
 		}
 	}
 }
 
 template<class T>
-void JustInTimeArray<T>::generateInitCivEffect(const InfoArray* pIarray)
+void JustInTimeArray<T>::generateInitCivEffect(const InfoArray& kIarray)
 {
 	// silly little function, which is needed because generateInitCivEffect can't handle floating points (compiler warning/error avoidance)
 	FAssertMsg(false, "available only to ints");

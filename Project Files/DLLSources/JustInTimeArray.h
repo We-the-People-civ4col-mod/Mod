@@ -81,7 +81,7 @@ public:
 	// 1D array are read as all included indexes stores 1
 	// returns true if an allow change value (a number goes 0->1 or 1->0)
 	// pCivInfo is needed when going from BuildingClass->Building or UnitClass to Unit
-	bool addCache(int iChange, const InfoArray* pIarray, const CvCivilizationInfo *pCivInfo = NULL);
+	bool addCache(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo = NULL);
 
 	// add a number to all indexes
 	void addAll(int iChange, int iValue);
@@ -112,7 +112,7 @@ public:
 
 	// function used exclusively for generating the init CivEffect
 	// it assigns 0 to any index in pIarray, which has a positive value
-	void generateInitCivEffect(const InfoArray* pIarray);
+	void generateInitCivEffect(const InfoArray& kIarray);
 
 	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
 	// pNormalArray can be used to make read/write take place in an array other than the JIT array, but it must be allocated to the same length as the JIT array

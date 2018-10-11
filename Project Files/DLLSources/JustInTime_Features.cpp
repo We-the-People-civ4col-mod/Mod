@@ -105,7 +105,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_BUILDING:           return &GC.getBuildingInfo((BuildingTypes)iIndex);
 	case JIT_ARRAY_BUILDING_CLASS:     return &GC.getBuildingClassInfo((BuildingClassTypes)iIndex);
 	case JIT_ARRAY_BUILDING_SPECIAL:   return &GC.getSpecialBuildingInfo((SpecialBuildingTypes)iIndex);
-	case JIT_ARRAY_CIV_EFFECT:         return GC.getCivEffectInfo(static_cast<CivEffectTypes>(iIndex));
+	case JIT_ARRAY_CIV_EFFECT:         return &GC.getCivEffectInfo(static_cast<CivEffectTypes>(iIndex));
 	case JIT_ARRAY_CIVIC:              return &GC.getCivicInfo((CivicTypes)iIndex);
 	case JIT_ARRAY_CIVIC_OPTION:       return &GC.getCivicOptionInfo((CivicOptionTypes)iIndex);
 	case JIT_ARRAY_CIVILIZATION:       return &GC.getCivilizationInfo((CivilizationTypes)iIndex);

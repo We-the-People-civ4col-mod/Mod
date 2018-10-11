@@ -55,7 +55,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{
-			const char *szType = this->getCivEffectInfo(eCivEffect)->getType();
+			const char *szType = this->getCivEffectInfo(eCivEffect).getType();
 
 			if (strcmp(szType, "CIV_EFFECT_DEFAULT_ALL") == 0)
 			{

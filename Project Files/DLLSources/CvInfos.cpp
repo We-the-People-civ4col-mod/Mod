@@ -15445,18 +15445,18 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{
-			const CivEffectInfo *pInfo = GC.getCivEffectInfo(eCivEffect);
-			ja_Bonuses         .generateInitCivEffect(pInfo->getAllowedBonuses());
-			ja_Builds          .generateInitCivEffect(pInfo->getAllowedBuilds());
-			ja_Buildings       .generateInitCivEffect(pInfo->getAllowedBuildingClasses());
-			ja_Civics          .generateInitCivEffect(pInfo->getAllowedCivics());
-			ja_Immigrants      .generateInitCivEffect(pInfo->getAllowedImmigrants());
-			ja_Improvements    .generateInitCivEffect(pInfo->getAllowedImprovements());
-			ja_Professions     .generateInitCivEffect(pInfo->getAllowedProfessions());
-			ja_Promotions      .generateInitCivEffect(pInfo->getAllowedPromotions());
-			ja_Routes          .generateInitCivEffect(pInfo->getAllowedRoutes());
-			ja_Units           .generateInitCivEffect(pInfo->getAllowedUnitClasses());
-			ja_Yields          .generateInitCivEffect(pInfo->getAllowedYields());
+			const CivEffectInfo& kInfo = GC.getCivEffectInfo(eCivEffect);
+			ja_Bonuses         .generateInitCivEffect(kInfo.getAllowedBonuses());
+			ja_Builds          .generateInitCivEffect(kInfo.getAllowedBuilds());
+			ja_Buildings       .generateInitCivEffect(kInfo.getAllowedBuildingClasses());
+			ja_Civics          .generateInitCivEffect(kInfo.getAllowedCivics());
+			ja_Immigrants      .generateInitCivEffect(kInfo.getAllowedImmigrants());
+			ja_Improvements    .generateInitCivEffect(kInfo.getAllowedImprovements());
+			ja_Professions     .generateInitCivEffect(kInfo.getAllowedProfessions());
+			ja_Promotions      .generateInitCivEffect(kInfo.getAllowedPromotions());
+			ja_Routes          .generateInitCivEffect(kInfo.getAllowedRoutes());
+			ja_Units           .generateInitCivEffect(kInfo.getAllowedUnitClasses());
+			ja_Yields          .generateInitCivEffect(kInfo.getAllowedYields());
 		}
 
 		m_info_AllowBonuses         .assign(&ja_Bonuses);

@@ -22759,10 +22759,9 @@ void CvPlayer::sortEuropeUnits()
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
 }
 
-void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool bForceUpdateCache)
+void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool bForceUpdateCache)
 {
 	FAssert(iChange == 1 || iChange == -1);
-	FAssert(pCivEffect != NULL);
 	FAssert(getCivilizationType() != NO_CIVILIZATION);
 	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
 
@@ -22770,20 +22769,20 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool
 	bool bUpdateImmigrants = bForceUpdateCache;
 	bool bUpdateUnits = bForceUpdateCache;
 
-	m_ja_iCacheAllowsBonuses                                 .addCache(iChange, pCivEffect->getAllowedBonuses           (), pCivInfo);
-	bUpdateBuilds |= m_ja_iCacheAllowsBuilds                 .addCache(iChange, pCivEffect->getAllowedBuilds            (), pCivInfo);
-	m_ja_iCacheAllowsBuildings                               .addCache(iChange, pCivEffect->getAllowedBuildingClasses   (), pCivInfo);
-	m_ja_iCacheAllowsCivics                                  .addCache(iChange, pCivEffect->getAllowedCivics            (), pCivInfo);
-	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants         .addCache(iChange, pCivEffect->getAllowedImmigrants        (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements       .addCache(iChange, pCivEffect->getAllowedImprovements      (), pCivInfo);
-	m_ja_iCacheAllowsProfessions                             .addCache(iChange, pCivEffect->getAllowedProfessions       (), pCivInfo);
-	m_ja_iCacheAllowsPromotions                              .addCache(iChange, pCivEffect->getAllowedPromotions        (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsRoutes             .addCache(iChange, pCivEffect->getAllowedRoutes            (), pCivInfo);
-	bUpdateUnits      |= m_ja_iCacheAllowsUnits              .addCache(iChange, pCivEffect->getAllowedUnitClasses       (), pCivInfo);
-	m_ja_iCacheAllowsYields                                  .addCache(iChange, pCivEffect->getAllowedYields            (), pCivInfo);
+	m_ja_iCacheAllowsBonuses                                 .addCache(iChange, kCivEffect.getAllowedBonuses           (), pCivInfo);
+	bUpdateBuilds |= m_ja_iCacheAllowsBuilds                 .addCache(iChange, kCivEffect.getAllowedBuilds            (), pCivInfo);
+	m_ja_iCacheAllowsBuildings                               .addCache(iChange, kCivEffect.getAllowedBuildingClasses   (), pCivInfo);
+	m_ja_iCacheAllowsCivics                                  .addCache(iChange, kCivEffect.getAllowedCivics            (), pCivInfo);
+	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants         .addCache(iChange, kCivEffect.getAllowedImmigrants        (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements       .addCache(iChange, kCivEffect.getAllowedImprovements      (), pCivInfo);
+	m_ja_iCacheAllowsProfessions                             .addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
+	m_ja_iCacheAllowsPromotions                              .addCache(iChange, kCivEffect.getAllowedPromotions        (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsRoutes             .addCache(iChange, kCivEffect.getAllowedRoutes            (), pCivInfo);
+	bUpdateUnits      |= m_ja_iCacheAllowsUnits              .addCache(iChange, kCivEffect.getAllowedUnitClasses       (), pCivInfo);
+	m_ja_iCacheAllowsYields                                  .addCache(iChange, kCivEffect.getAllowedYields            (), pCivInfo);
 
 
-	m_iCacheNumUnitsOnDock += pCivEffect->getNumUnitsOnDockChange();
+	m_iCacheNumUnitsOnDock += kCivEffect.getNumUnitsOnDockChange();
 
 	// The CivEffect has been applied. Now update secondary caches if needed
 
@@ -22825,7 +22824,7 @@ void CvPlayer::applyCivEffect(const CivEffectInfo* pCivEffect, int iChange, bool
 		}
 	}
 
-	if (bUpdateUnits || bUpdateImmigrants || pCivEffect->getNumUnitsOnDockChange() != 0)
+	if (bUpdateUnits || bUpdateImmigrants || kCivEffect.getNumUnitsOnDockChange() != 0)
 	{
 		if (!this->isNative() && !this->isEurope())
 		{
