@@ -1490,34 +1490,48 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
 	CvPlot* pNewPlot;
-	PlayerTypes ePlayer;
-
+	
 	if (parent == NULL)
 	{
-		return TRUE;
+		return true;
 	}
 
 	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
 
-	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
+	const PlayerTypes ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
 	// Erik: It's ok to check for a city here since cities they have to be separated by at least 1-non city plot
+	// Erik: TODO: check that it's our own city! When we implement trading with natives\Europeans, we can allow it
 	if (pNewPlot->isCity())
 	{
-		return TRUE;
+		return true;
 	}
 
 	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
 
-	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false))
+	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false) && !pNewPlot->isImpassable())
 	{	
+		const FeatureTypes featureType = pNewPlot->getFeatureType();
+
+		// Erik: If the plot has a feature it can't be impassable
+		if (featureType != NO_FEATURE)
+		{
+			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(featureType);
+		
+			// Erik: Just in case impassable terrain is added to the game (unused in WTP)
+			if (!kFeatureInfo.isImpassable())
+			{
+				return false;
+			}
+		}
+
 		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
 		{
-			return TRUE;
+			return true;
 		}
 	}
 
-	return FALSE;
+	return false;
 }
 
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
