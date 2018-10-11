@@ -334,7 +334,7 @@ void CvPlot::doTurn()
 		changeOwnershipDuration(1);
 	}
 
-	if (getImprovementType() != NO_IMPROVEMENT)
+	if (getImprovementType() != NO_IMPROVEMENT && getOwnerINLINE() != NO_PLAYER)
 	{
 		changeImprovementDuration(1);
 		doImprovementUpgrade();			
@@ -421,6 +421,17 @@ void CvPlot::doImprovement()
 	}
 }
 
+void CvPlot::upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate)
+{
+	changeUpgradeProgress(iUpgradeRate);
+
+	if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
+	{
+		setImprovementType(eImprovementUpgrade);
+	}
+
+}
+
 void CvPlot::doImprovementUpgrade()
 {
 	FAssert(getImprovementType() != NO_IMPROVEMENT);
@@ -438,7 +449,7 @@ void CvPlot::doImprovementUpgrade()
 		// Erik: Improvements that are allowd outside borders require specific units to activate them with regards to growth.
 		if (bIsOutsideBorder)
 		{
-			// Erik: Note that this case also handles forts \ monasteries that are worked inside a city AND it activated
+			// Erik: Note that this case also handles forts \ monasteries that are worked inside a city AND is activated
 			if (isFort() || isMonastery())
 			{
 				const bool bDefenderFound = (getFortDefender() != NULL);
@@ -446,35 +457,20 @@ void CvPlot::doImprovementUpgrade()
 
 				if (bDefenderFound || bMissionaryFound)
 				{
-					changeUpgradeProgress(iUpgradeRate);
-
-					if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
-					{
-						setImprovementType(eImprovementUpgrade);
-					}
+					upgradeImprovement(eImprovementUpgrade, iUpgradeRate);
 				}
 			}
 			else
 			{
 				// Erik: Currently unused by RaR, but a future improvement may support upgrades so we allow that unconditionally as long as its not a fort or monasteryy
-				changeUpgradeProgress(iUpgradeRate);
-
-				if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
-				{
-					setImprovementType(eImprovementUpgrade);
-				}
+				upgradeImprovement(eImprovementUpgrade, iUpgradeRate);
 			}
 		}
 
 		// Erik: This is the standard case for farms etc.
 		if (isBeingWorked() && !bIsOutsideBorder)
 		{
-			changeUpgradeProgress(iUpgradeRate);
-
-			if (getUpgradeProgress() >= GC.getGameINLINE().getImprovementUpgradeTime(getImprovementType()))
-			{
-				setImprovementType(eImprovementUpgrade);
-			}
+			upgradeImprovement(eImprovementUpgrade, iUpgradeRate);
 		}
 	}
 }

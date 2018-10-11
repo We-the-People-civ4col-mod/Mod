@@ -566,6 +566,7 @@ protected:
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
 	// CvPlot::hasYield cache - end - Nightinggale
+	void upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate);
 };
 
 #endif
