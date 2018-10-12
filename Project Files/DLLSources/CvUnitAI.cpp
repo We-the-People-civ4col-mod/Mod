@@ -8788,12 +8788,16 @@ bool CvUnitAI::AI_moveTowardsVictimCity()
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestMissionPlot = NULL;
 	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	// Erik: I've replaced the looping over all plots with a loop through all cities for efficiency
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		const CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
 		
-		CvCity* pCity = pLoopPlot->getPlotCity();
-		if (pCity != NULL)
+		if (!kLoopPlayer.isAlive())
+			continue;
+
+		int iLoop;
+		for (CvCity* pCity = kLoopPlayer.firstCity(&iLoop); pCity != NULL; pCity = kLoopPlayer.nextCity(&iLoop))
 		{
 			const CvPlot* const pCityPlot = pCity->plot();
 
@@ -8811,14 +8815,14 @@ bool CvUnitAI::AI_moveTowardsVictimCity()
 						int iCityValue = 1 + GC.getGameINLINE().getSorenRandNum(pCity->getPopulation() * 1000, "AI Piracy City Target");
 						for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
 						{
-							CvPlot* pDirectionPlot = plotDirection(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), (DirectionTypes)iDirection);
+							CvPlot* pDirectionPlot = plotDirection(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), (DirectionTypes)iDirection);
 							if ((pDirectionPlot != NULL) && pDirectionPlot->isWater())
 							{
 								int iPathTurns;
 								if (generatePath(pDirectionPlot, MOVE_THROUGH_ENEMY, true, &iPathTurns))
 								{
 									int iValue = iCityValue / (pDirectionPlot->getDistanceToOcean() + 1);
-									iValue += pLoopPlot->getCrumbs();
+									iValue += pCityPlot->getCrumbs();
 									iValue /= 2 + std::max(3, iPathTurns);
 									if (iPathTurns < 3)
 									{
