@@ -16139,7 +16139,6 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
 	int iYieldBuyPrice = kPlayerEurope.getYieldSellPrice(eYield);// R&R, vetiarvind, Price dependent tax rate change
 	int iPrice = iAmount * iYieldBuyPrice;
-	FAssert(iPrice <= getGold());
 	if (iPrice > getGold())
 	{
 		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getYieldInfo(eYield).getTextKeyWide(), iPrice));
@@ -16512,7 +16511,6 @@ CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit*
 	FAssert(getParent() != NO_PLAYER);
 	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
 	int iPrice = iAmount * kPlayerEurope.getYieldAfricaSellPrice(eYield);
-	FAssert(iPrice <= getGold());
 	if (iPrice > getGold())
 	{
 		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getYieldInfo(eYield).getTextKeyWide(), iPrice));
@@ -16975,7 +16973,6 @@ CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUn
 	FAssert(getParent() != NO_PLAYER);
 	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
 	int iPrice = iAmount * kPlayerEurope.getYieldPortRoyalSellPrice(eYield);
-	FAssert(iPrice <= getGold());
 	if (iPrice > getGold())
 	{
 		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getYieldInfo(eYield).getTextKeyWide(), iPrice));
