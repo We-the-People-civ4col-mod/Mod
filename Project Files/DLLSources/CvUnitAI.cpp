@@ -8795,7 +8795,14 @@ bool CvUnitAI::AI_moveTowardsVictimCity()
 		CvCity* pCity = pLoopPlot->getPlotCity();
 		if (pCity != NULL)
 		{
-			if (pCity->getTeam() == getTeam() || isEnemy(pCity->getTeam()))
+			const CvPlot* const pCityPlot = pCity->plot();
+
+			// Erik: Let's reduce the cheating a bit by only considering cities that we actually know about
+			if (!pCityPlot->isRevealed(getTeam(), false))
+				continue;
+
+			// Erik: The old code checked for the victim player being on OUR OWN team, which had to be a mistake!
+			if (pCity->getTeam() != getTeam() || isEnemy(pCity->getTeam()))
 			{
 				if (!pCity->isNative())
 				{
