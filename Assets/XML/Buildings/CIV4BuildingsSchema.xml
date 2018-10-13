@@ -81,6 +81,8 @@
 	<ElementType name="YieldType" content="textOnly"/>
 	<ElementType name="iModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iYieldChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iYieldDemand" content="textOnly" dt:type="int"/>
+	<ElementType name="iDomesticMarketModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iProfessionOutput" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxWorkers" content="textOnly" dt:type="int"/>
 	<ElementType name="LandPlotYieldChange" content="eltOnly">
@@ -124,6 +126,13 @@
 	</ElementType>
 	<ElementType name="YieldModifiers" content="eltOnly">
 		<element type="YieldModifier" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldDemand" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYieldDemand"/>
+	</ElementType>
+	<ElementType name="YieldDemands" content="eltOnly">
+		<element type="YieldDemand" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="ConstructSound" content="textOnly"/>
 	<ElementType name="iProductonModifier" content="textOnly" dt:type="int"/>
@@ -240,6 +249,8 @@
 		<element type="RiverPlotYieldChanges"/>
 		<element type="YieldChanges"/>
 		<element type="YieldModifiers" minOccurs="0"/>
+		<element type="iDomesticMarketModifier" minOccurs="0"/>
+		<element type="YieldDemands" minOccurs="0"/>
 		<element type="ConstructSound"/>
 		<element type="UnitCombatFreeExperiences"/>
 		<element type="DomainFreeExperiences"/>

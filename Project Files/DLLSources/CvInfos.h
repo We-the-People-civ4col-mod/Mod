@@ -782,7 +782,7 @@ public:
 	DllExport int getDomainModifier(int i) const;
 	DllExport int getYieldModifier(int i) const;
 	// R&R, Androrc, Domestic Market
-	DllExport int getYieldDemand(int i) const;
+	const InfoArray& getYieldDemands() const { return m_info_YieldDemands; }
 	//Androrc End
 	DllExport int getBonusYieldChange(int i) const;
 	DllExport int getYieldChange(int i) const;
@@ -948,7 +948,7 @@ protected:
 	int* m_aiDomainModifier;
 	int* m_aiYieldModifier;
 	// R&R, Androrc, Domestic Market
-	int* m_aiYieldDemand;
+	InfoArrayMod m_info_YieldDemands;
 	//Androrc End
 	int* m_aiBonusYieldChange;
 	int* m_aiYieldChange;
@@ -1261,7 +1261,8 @@ public:
 	DllExport bool isNationalWonder() const; // R&R, ray, National Wonders
 	DllExport bool isNeverCapture() const;
 	DllExport bool isCenterInCity() const;
-
+	int getDomesticMarketModifier() const { return m_iDomesticMarketModifier; }
+	const InfoArray& getYieldDemands() const { return m_info_YieldDemands; }
 	DllExport const char* getConstructSound() const;
 	DllExport void setConstructSound(const char* szVal);
 	DllExport const char* getArtDefineTag() const;
@@ -1348,6 +1349,8 @@ protected:
 	bool m_bNationalWonder; // R&R, ray, National Wonders
 	bool m_bNeverCapture;
 	bool m_bCenterInCity;
+	int m_iDomesticMarketModifier;
+	InfoArrayMod m_info_YieldDemands;
 	CvString m_szConstructSound;
 	CvString m_szArtDefineTag;
 	CvString m_szMovieDefineTag;
@@ -4655,6 +4658,7 @@ public:
 	CivEffectInfo(bool bAutogenerateAllow = false);
 	~CivEffectInfo();
 
+	// allow
 	inline const InfoArray& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
 	inline const InfoArray& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
 	inline const InfoArray& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
@@ -4667,11 +4671,17 @@ public:
 	inline const InfoArray& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
 	inline const InfoArray& getAllowedYields               () const { return m_info_AllowYields       ; }
 
+	// city
+	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket; }
+
+	// growth
 	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange; }
+
 
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
+	// allow
 	InfoArrayMod m_info_AllowBonuses;
 	InfoArrayMod m_info_AllowBuilds;
 	InfoArrayMod m_info_AllowBuildings;
@@ -4684,6 +4694,10 @@ protected:
 	InfoArrayMod m_info_AllowUnits;
 	InfoArrayMod m_info_AllowYields;
 
+	// city
+	int m_iCanUseDomesticMarket;
+
+	// growth
 	int m_iNumUnitsOnDockChange;
 };
 

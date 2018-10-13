@@ -3,6 +3,9 @@
 <Civ4CivEffectInfos xmlns="x-schema:CIV4CivEffectsInfosSchema.xml">
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_EUROPEAN</Type>
+		<TagGroupCity>
+			<iCanUseDomesticMarket>1</iCanUseDomesticMarket>
+		</TagGroupCity>
 		<TagGroupGrowth>
 			<iNumUnitsOnDockChange>4</iNumUnitsOnDockChange>
 		</TagGroupGrowth>

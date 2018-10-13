@@ -115,7 +115,9 @@ void EnumTypeCacheArray<T>::assign(const JustInTimeArray<U>& kArray)
 	// getJITarrayType() is an overloaded function, which returns the enum type belonging to T.
 	// This means the argument isn't used for anything other than picking which overloaded function to call.
 	// Here all it needs is a variable of type T and since there are none ready, typecasting an int will do.
-	FAssert(getJITarrayType((T)m_iLength) == kArray.getType());
+	FAssert(getJITarrayType((T)m_iLength) == kArray.getType() || (kArray.getType() - NUM_JITarrayTypes) == getJITarrayType((T)m_iLength));
+	// note: JIT array+NUM_JITarrayTypes is a subtype of the same type, like JIT_ARRAY_CARGO_YIELD is a subset of JIT_ARRAY_YIELD
+	// Here we don't care if it's a full set or a subset
 	SAFE_DELETE_ARRAY(m_pTypes);
 	m_iLength = kArray.getPositiveCount();
 	if (m_iLength == 0)
@@ -144,6 +146,7 @@ void EnumTypeCacheArray<T>::assign(const JustInTimeArray<U>& kArray)
 ///  This makes the code more readable, though it doesn't directly add more features
 ////
 
+class BuildingTypeArray          : public EnumTypeCacheArray<BuildingTypes> {};
 class ProfessionTypeArray        : public EnumTypeCacheArray<ProfessionTypes> {};
 class PromotionTypeArray         : public EnumTypeCacheArray<PromotionTypes> {};
 class YieldTypeArray             : public EnumTypeCacheArray<YieldTypes> {};

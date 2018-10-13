@@ -64,6 +64,8 @@ public:
 		return m_tArray ? m_tArray[iIndex] : m_eDefault;
 	}
 
+	void copy(const JustInTimeArray<T> &OtherArray);
+
 	// assign argument to storage
 	// returns -1 when freeing the array and 1 when allocating. 0 in all other cases
 	int set(T value, int iIndex);

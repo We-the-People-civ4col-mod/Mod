@@ -367,6 +367,7 @@ public:
 	int getYieldBuyPrice(YieldTypes eYield) const;
 	void setYieldBuyPrice(YieldTypes eYield, int iPrice);
 	int getYieldDemand(YieldTypes eYield) const;
+	void getYieldDemands(YieldCargoArray<int> &aYields) const;
 	//Androrc End
 
 	bool isEverOwned(PlayerTypes eIndex) const;
@@ -829,6 +830,14 @@ protected:
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
 	BoolArray ba_tradeAutoExport;
 	// auto traderoute - end - Nightinggale
+
+public:
+	int getMarketModifier() const { return m_iCacheMarketModifier; }
+	const YieldCargoArray<int>& getBuildingYieldDemands() const { return m_ja_iBuildingYieldDemands; }
+
+protected:
+	int m_iCacheMarketModifier;
+	YieldCargoArray<int> m_ja_iBuildingYieldDemands;
 
 	virtual bool AI_addBestCitizen() = 0;
 	virtual bool AI_removeWorstCitizen() = 0;

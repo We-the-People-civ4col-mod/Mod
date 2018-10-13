@@ -1109,10 +1109,14 @@ public:
 	inline bool canUseUnit(UnitTypes eUnit)                        const { return m_ja_iCacheAllowsUnits           .get(eUnit)           > 0; }
 	inline bool canUseYield(YieldTypes eYield)                     const { return m_ja_iCacheAllowsYields          .get(eYield)          > 0; }
 
+	inline const BuildingTypeArray& getAllowedBuildingInfos()      const { return m_at_AllowedBuildings; }
+
+	inline bool canUseDomesticMarket()                             const { return m_iCacheCanUseDomesticMarket > 0; }
 
 	inline unsigned int getNumUnitsOnDock()                        const { return m_iCacheNumUnitsOnDock > 0 ? m_iCacheNumUnitsOnDock : 1; } // return 0 or negative crash the game
 
 private:
+	// Allow
 	BonusArray          <char> m_ja_iCacheAllowsBonuses;
 	BuildArray          <char> m_ja_iCacheAllowsBuilds;
 	BuildingArray       <char> m_ja_iCacheAllowsBuildings;
@@ -1125,9 +1129,14 @@ private:
 	UnitArray           <char> m_ja_iCacheAllowsUnits;
 	YieldArray          <char> m_ja_iCacheAllowsYields;
 	
+	// caches of allow caches
 	BoolArray                  m_ba_CacheAllowBuild;
+	BuildingTypeArray          m_at_AllowedBuildings;
 
+	// City
+	int    m_iCacheCanUseDomesticMarket;
 
+	// Growth
 	int    m_iCacheNumUnitsOnDock;
 
 	void resetCivEffectCache();

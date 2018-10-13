@@ -512,6 +512,8 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_bPopulationRankValid = false;
 	m_iPopulationRank = -1;
 
+	m_iCacheMarketModifier = 0;
+
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
 		m_abBaseYieldRankValid[iI] = false;
@@ -6833,22 +6835,21 @@ void CvCity::doYields()
 	
 	// R&R, ray, adjustment Domestic Markets
 	int iTotalProfitFromDomesticMarket = 0;
-	//bool hasMarket = isHasBuilding((SpecialBuildingTypes)GC.getDefineINT("BUILDING_MARKET"));
-	bool hasMarket = isHasSpecialBuilding((SpecialBuildingTypes)GC.getDefineINT("SPECIALBUILDING_MARKET"));
-
-	//Performance optimization
-	if(!isNative() && hasMarket)
+	
+	if (getMarketModifier() > 0)
 	{
+		YieldCargoArray<int> aYields;
+		getYieldDemands(aYields);
 		const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
 		for (int i = 0;; ++i)
 		{
 			YieldTypes eYield = kYieldArray.get(i);
 			if (eYield != NO_YIELD)
 			{
-				//if (hasMarket && getYieldDemand(eYield) > 0 && getYieldStored(eYield) > 0)
-				if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield)+aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
+				FAssert(eYield < aYields.length());
+				int iAmount = aYields.get(eYield);
+				if (iAmount > 0 && (getYieldStored(eYield)+aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
 				{
-					int iAmount = getYieldDemand(eYield);
 					int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
 					if (iAmount > iAmountForSale)
 					{
@@ -6858,7 +6859,6 @@ void CvCity::doYields()
 					aiYields[eYield] -= iAmount;
 					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
 					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
-					//GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDemand);
 				}	
 			}
 			else
@@ -11309,44 +11309,82 @@ void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
 }
 
 // R&R, ray, adjustment Domestic Markets
-// No demand from buildings, because this feature would not be used and cost performance
+void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
+{
+	if (this->getMarketModifier() == 0)
+	{
+		// everything will be 0. No need to calculate
+		aYields.reset();
+		return;
+	}
+
+	// Add building demands
+	aYields.copy(getBuildingYieldDemands());
+
+	// add unit demands
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit* pLoopUnit = m_aPopulationUnits[i];
+		// reuse CivEffect cache code as it's essentially we same we need here: add a bunch of InfoArrays into one JIT array.
+		aYields.addCache(1, GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemands());
+	}
+
+	// apply market multiplier to each yield
+	int iMarketModifier = this->getMarketModifier();
+	// for performance reasions, use getUnitYieldDemandTypes as it skips all yields no units/buildings will ever demand
+	const YieldTypeArray& kYieldArray = GC.getUnitYieldDemandTypes();
+	for (int i = 0;; ++i)
+	{
+		YieldTypes eYield = kYieldArray.get(i);
+		if (eYield != NO_YIELD)
+		{
+			int iDemand = aYields.get(eYield);
+			if (iDemand != 0) // skip calculating on something we know ends up as 0
+			{
+				// What goes on here looks significantly different from Androrc's original version, though it provides the same results.
+				// original code:
+				/// int iBuildingDemand = (iDemand * (MarketLevel * 50)) / 100; // 50 percent more demand per level
+				/// return (iRawDemand + iBuildingDemand) / 100;
+
+				// The current code essentially does the same. MarketLevel was 0-3 based on special building priority
+				// while iMarketModifier is set in xml to be 100-250, in steps of 50
+				// By starting from 100 instead of 0, iRawDemand + iBuildingDemand is no longer needed
+				// The two divisions by 100 can then be combined into a single division of 100*100
+				// The result is the same output, but around half the calculation time
+				// Even better it puts the modifier in xml rather than some (for xml) hidden special building calculations
+
+				iDemand *= iMarketModifier;
+				iDemand /= 10000;
+				aYields.set(iDemand, eYield);
+			}
+		}
+		else
+		{
+			break;
+		}
+	}
+}
+
 int CvCity::getYieldDemand(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	int iDemand = 0;
-
-	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	if (eYield >= NUM_CARGO_YIELD_TYPES)
 	{
-		CvUnit* pLoopUnit = m_aPopulationUnits[i];
-		if (GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemand(eYield) != 0)
-		{
-			iDemand += GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemand(eYield);
-		}
+		// only cargo yields can have a demand
+		// return 0 instead of calculating what we know will end up as 0
+		return 0;
 	}
 
-	// R&R, ray, adjustment to new Market Buildings
-	int MarketLevel = 0;
-	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
-	{
-		BuildingTypes eBuilding = (BuildingTypes) i;
-		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
-		if (kBuilding.getSpecialBuildingType() == GC.getDefineINT("SPECIALBUILDING_MARKET") && isHasBuilding(eBuilding))
-		{
-			if (kBuilding.getSpecialBuildingPriority() > MarketLevel)
-			{
-				MarketLevel = kBuilding.getSpecialBuildingPriority();
-			}
-		}
-	}
-
-	int iRawDemand = iDemand;
-	int iBuildingDemand = (iDemand * (MarketLevel * 50)) / 100; // 50 percent more demand per level
-
-	return (iRawDemand + iBuildingDemand) / 100;
+	// Since the code can't calculate single yields anymore, generate the entire array.
+	// Calls to this should be limited for performance reasons as setting the entire array in one call is much faster.
+	// However this function avoid rewriting old code using the old system and reduce the focus to performance important code.
+	// It's mainly the GUI, which keeps using the old code and it doesn't matter as long as it doesn't visibly lag.
+	YieldCargoArray<int> aYields;
+	getYieldDemands(aYields);
+	return aYields.get(eYield);
 }
-
 // R&R, ray, adjustment Domestic Markets
 // needs to be checked for Special Cases like Luxury Goods
 void CvCity::doPrices()
@@ -11519,5 +11557,31 @@ void CvCity::UpdateBuildingAffectedCache()
 		}
 	}
 	// CvPlot::hasYield cache - end - Nightinggale
+
+	m_iCacheMarketModifier = 0;
+	const CvPlayer &kPlayer = GET_PLAYER(getOwnerINLINE());
+	if (kPlayer.canUseDomesticMarket())
+	{
+		m_ja_iBuildingYieldDemands.reset();
+		const BuildingTypeArray &kBuildingArray = kPlayer.getAllowedBuildingInfos();
+		for (int i = 0;; ++i)
+		{
+			BuildingTypes eBuilding = kBuildingArray.get(i);
+			if (eBuilding != NO_BUILDING)
+			{
+				if (isHasBuilding(eBuilding))
+				{
+					CvBuildingInfo &kInfo = GC.getBuildingInfo(eBuilding);
+					m_ja_iBuildingYieldDemands.addCache(1, kInfo.getYieldDemands());
+					m_iCacheMarketModifier += kInfo.getDomesticMarketModifier();
+				}
+			}
+			else
+			{
+				break;
+			}
+		}
+	}
+		
 }
 // building affected cache - end - Nightinggale

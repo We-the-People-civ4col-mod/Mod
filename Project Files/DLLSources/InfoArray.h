@@ -98,7 +98,7 @@ public:
 
 	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const
 	{
-		FAssert(eType == getType(iTokenIndex) || (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
+		FAssert(eType == getType(iTokenIndex) || eType + NUM_JITarrayTypes == getType(iTokenIndex) ||  (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
 		return getInternal(iIndex, iTokenIndex);
 	}
 

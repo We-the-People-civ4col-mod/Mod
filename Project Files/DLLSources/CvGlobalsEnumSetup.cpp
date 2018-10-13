@@ -13,6 +13,7 @@ HurryTypes       HURRY_IMMIGRANT             = NO_HURRY;
 HurryTypes       NUM_HURRY_TYPES             = FIRST_HURRY;
 
 BuildTypes       NUM_BUILD_TYPES             = FIRST_BUILD;
+BuildingTypes    NUM_BUILDING_TYPES          = FIRST_BUILDING;
 CivEffectTypes   NUM_CIV_EFFECT_TYPES        = FIRST_CIV_EFFECT;
 CivicOptionTypes NUM_CIVICOPTION_TYPES       = FIRST_CIVICOPTION;
 EraTypes         NUM_ERA_TYPES               = FIRST_ERA;
@@ -26,6 +27,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 	if (bFirst)
 	{
 		NUM_BUILD_TYPES          = static_cast<BuildTypes>         (m_paBuildInfo.size());
+		NUM_BUILDING_TYPES       = static_cast<BuildingTypes>      (m_paBuildingInfo.size());
 		NUM_CIV_EFFECT_TYPES     = static_cast<CivEffectTypes>     (m_paCivEffectInfo.size());
 		NUM_CIVICOPTION_TYPES    = static_cast<CivicOptionTypes>   (m_paCivicOptionInfo.size());
 		NUM_ERA_TYPES            = static_cast<EraTypes>           (m_aEraInfo.size());
@@ -100,19 +102,17 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		
 		// set up consumed yields for fast looping
 		{
-			BoolArray aYields(JIT_ARRAY_YIELD);
+			YieldCargoArray<int> aYields;
 
+			for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
+			{
+				CvBuildingInfo &kBuilding = GC.getBuildingInfo(eBuilding);
+				aYields.addCache(1, kBuilding.getYieldDemands());
+			}
 			for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 			{
 				CvUnitInfo &kUnit = GC.getUnitInfo(eUnit);
-
-				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-				{
-					if (kUnit.getYieldDemand(eYield) > 0)
-					{
-						aYields.set(true, eYield);
-					}
-				}
+				aYields.addCache(1, kUnit.getYieldDemands());
 			}
 			m_acUnitYieldDemandTypes.assign(aYields);
 		}

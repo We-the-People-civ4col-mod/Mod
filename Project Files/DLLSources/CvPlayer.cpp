@@ -12758,6 +12758,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 		pStream->Read(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
 	}
 
+	// The CivEffect cache isn't saved. Instead it's recalculated on load.
+	// This will make it adapt to changed xml settings.
+	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
+	rebuildCivEffectCache();
+
 	m_groupCycle.Read(pStream);
 	{
 		CvWString szBuffer;
@@ -13078,11 +13083,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iFatherPointMultiplier);
 	pStream->Read(&m_iMissionaryRateModifier);
 	pStream->Read(&m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
-
-	// The CivEffect cache isn't saved. Instead it's recalculated on load.
-	// This will make it adapt to changed xml settings.
-	// Set the CivEffect cache before any other caches as CivEffects doens't rely on other caches, but the opposite might be the case.
-	rebuildCivEffectCache();
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
@@ -22765,13 +22765,14 @@ void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool
 	FAssert(getCivilizationType() != NO_CIVILIZATION);
 	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
 
-	bool bUpdateBuilds = bForceUpdateCache;
-	bool bUpdateImmigrants = bForceUpdateCache;
-	bool bUpdateUnits = bForceUpdateCache;
+	bool bUpdateBuilds          = bForceUpdateCache;
+	bool bUpdateBuildings       = bForceUpdateCache;
+	bool bUpdateImmigrants      = bForceUpdateCache;
+	bool bUpdateUnits           = bForceUpdateCache;
 
 	m_ja_iCacheAllowsBonuses                                 .addCache(iChange, kCivEffect.getAllowedBonuses           (), pCivInfo);
-	bUpdateBuilds |= m_ja_iCacheAllowsBuilds                 .addCache(iChange, kCivEffect.getAllowedBuilds            (), pCivInfo);
-	m_ja_iCacheAllowsBuildings                               .addCache(iChange, kCivEffect.getAllowedBuildingClasses   (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsBuilds             .addCache(iChange, kCivEffect.getAllowedBuilds            (), pCivInfo);
+	bUpdateBuildings  |= m_ja_iCacheAllowsBuildings          .addCache(iChange, kCivEffect.getAllowedBuildingClasses   (), pCivInfo);
 	m_ja_iCacheAllowsCivics                                  .addCache(iChange, kCivEffect.getAllowedCivics            (), pCivInfo);
 	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants         .addCache(iChange, kCivEffect.getAllowedImmigrants        (), pCivInfo);
 	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements       .addCache(iChange, kCivEffect.getAllowedImprovements      (), pCivInfo);
@@ -22781,8 +22782,9 @@ void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool
 	bUpdateUnits      |= m_ja_iCacheAllowsUnits              .addCache(iChange, kCivEffect.getAllowedUnitClasses       (), pCivInfo);
 	m_ja_iCacheAllowsYields                                  .addCache(iChange, kCivEffect.getAllowedYields            (), pCivInfo);
 
+	m_iCacheCanUseDomesticMarket += iChange * kCivEffect.getCanUseDomesticMarket();
 
-	m_iCacheNumUnitsOnDock += kCivEffect.getNumUnitsOnDockChange();
+	m_iCacheNumUnitsOnDock += iChange * kCivEffect.getNumUnitsOnDockChange();
 
 	// The CivEffect has been applied. Now update secondary caches if needed
 
@@ -22824,6 +22826,11 @@ void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool
 		}
 	}
 
+	if (bUpdateBuildings)
+	{
+		m_at_AllowedBuildings.assign(m_ja_iCacheAllowsBuildings);
+	}
+
 	if (bUpdateUnits || bUpdateImmigrants || kCivEffect.getNumUnitsOnDockChange() != 0)
 	{
 		if (!this->isNative() && !this->isEurope())
@@ -22833,6 +22840,20 @@ void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool
 			{
 				gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 			}
+		}
+	}
+
+	if (gDLL->isGameInitializing())
+	{
+		return;
+	}
+
+	if (bUpdateBuildings || kCivEffect.getCanUseDomesticMarket() != 0)
+	{
+		int iLoop;
+		for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			pLoopCity->UpdateBuildingAffectedCache();
 		}
 	}
 }
@@ -22852,6 +22873,8 @@ void CvPlayer::resetCivEffectCache()
 	m_ja_iCacheAllowsYields         .reset();
 
 	m_ba_CacheAllowBuild            .reset();
+
+	m_iCacheCanUseDomesticMarket = 0;
 
 	m_iCacheNumUnitsOnDock = 0;
 }

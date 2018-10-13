@@ -837,7 +837,11 @@ int CyCity::getYieldBuyPrice(int /*YieldTypes*/ eYield) const
 }
 int CyCity::getYieldDemand(int /*YieldTypes*/ eYield) const
 {
-	return m_pCity ? m_pCity->getYieldDemand((YieldTypes)eYield) : -1;
+	if (eYield >= 0 && eYield < NUM_CARGO_YIELD_TYPES)
+	{
+		return m_pCity ? m_pCity->getYieldDemand((YieldTypes)eYield) : -1;
+	}
+	return -1;
 }
 //R&R, Robert Surcouf, Domestic Market display END
 	

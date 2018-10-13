@@ -33,6 +33,25 @@ void JustInTimeArray<T>::reset()
 }
 
 template<class T>
+void JustInTimeArray<T>::copy(const JustInTimeArray<T> &OtherArray)
+{
+	FAssert(this->getType() == OtherArray.getType());
+	FAssert(this->m_eDefault == OtherArray.m_eDefault);
+
+	if (!OtherArray.isAllocated())
+	{ 
+		reset();
+		return;
+	}
+
+	if (!this->isAllocated())
+	{
+		this->allocate();
+	}
+	memcpy(this->m_tArray, OtherArray.m_tArray, length() * sizeof(T));
+}
+
+template<class T>
 int JustInTimeArray<T>::set(T value, int iIndex)
 {
 	FAssert(iIndex >= 0);

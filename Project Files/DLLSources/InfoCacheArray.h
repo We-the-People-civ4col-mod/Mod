@@ -73,10 +73,28 @@ private:
 ///  Also assign is written in the header despite being a bit messy. The reason is to avoid template assignment mess.
 ///  
 
-class CvProfessionInfo;
-class CvPromotionInfo;
-class CvYieldInfo;
 
+class CvBuildingInfo;
+template<typename> class BuildingArray;
+class BuildingInfoArray : public InfoCacheArray
+{
+public:
+	BuildingInfoArray() {}
+
+	inline const CvBuildingInfo* get(int i) const
+	{
+		return (const CvBuildingInfo*)InfoCacheArray::get(i);
+	}
+
+	void assign(const BoolArray& kArray);
+	template<typename T>
+	void assign(const BuildingArray<T>& kArray)
+	{
+		InfoCacheArray::assign((const JustInTimeArray<T>&)kArray);
+	}
+};
+
+class CvProfessionInfo;
 template<typename> class ProfessionArray;
 class ProfessionInfoArray : public InfoCacheArray
 {
@@ -96,6 +114,7 @@ public:
 	}
 };
 
+class CvPromotionInfo;
 template<typename> class PromotionArray;
 class PromotionInfoArray : public InfoCacheArray
 {
@@ -115,6 +134,7 @@ public:
 	}
 };
 
+class CvYieldInfo;
 template<typename> class YieldArray;
 class YieldInfoArray : public InfoCacheArray
 {

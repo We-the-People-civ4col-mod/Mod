@@ -229,7 +229,7 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 
 			JITarrayTypes eType = getType(iIndex);
 
-			if (eType < NUM_JITarrayTypes || eType >= MAX_JIT_ARRAY_VALUE)
+			if (eType < (NUM_JITarrayTypes*2) || eType >= MAX_JIT_ARRAY_VALUE)
 			{
 				// read type and convert to int
 				iValue = getIndexForType(eType, szTextVal);
@@ -271,6 +271,7 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 				else
 				{
 					iValue = std::atoi(szTextVal.c_str());
+					FAssertMsg(eType != JIT_ARRAY_UNSIGNED_INT || iValue >= 0, CvString::format("%s tag %s: negative numbers not allowed", szType, sTagName).c_str());
 				}
 			}
 			aIndex[iIndex] = iValue;

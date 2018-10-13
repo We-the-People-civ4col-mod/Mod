@@ -1376,6 +1376,7 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<iDomesticMarketModifier>100</iDomesticMarketModifier>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -1462,6 +1463,7 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<iDomesticMarketModifier>150</iDomesticMarketModifier>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -1556,6 +1558,7 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<iDomesticMarketModifier>200</iDomesticMarketModifier>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -1637,6 +1640,7 @@
 			<RiverPlotYieldChanges/>
 			<YieldChanges/>
 			<YieldModifiers/>
+			<iDomesticMarketModifier>250</iDomesticMarketModifier>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>

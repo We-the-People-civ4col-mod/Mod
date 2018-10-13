@@ -1179,6 +1179,8 @@ enum DllExport BuildingTypes
 	FIRST_BUILDING = 0,
 };
 
+extern BuildingTypes NUM_BUILDING_TYPES;
+
 enum DllExport SpecialBuildingTypes
 {
 	NO_SPECIALBUILDING = -1,
@@ -2947,6 +2949,7 @@ enum JITarrayTypes
 	JIT_ARRAY_MODIFIER_FLOAT,
 	JIT_ARRAY_ALLOW,
 	JIT_ARRAY_INT,
+	JIT_ARRAY_UNSIGNED_INT,
 	JIT_ARRAY_FLOAT,
 
 	// last a value, which solve purpose is to BOOST_STATIC_ASSERT if index overflows

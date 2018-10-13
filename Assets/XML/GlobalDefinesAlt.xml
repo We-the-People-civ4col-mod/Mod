@@ -754,10 +754,6 @@
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
 	<Define>
-		<DefineName>SPECIALBUILDING_MARKET</DefineName>
-		<DefineTextVal>SPECIALBUILDING_TRADE</DefineTextVal>
-	</Define>
-	<Define>
 		<DefineName>PRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS</DefineName>
 		<iDefineIntVal>6</iDefineIntVal>
 	</Define>

@@ -390,6 +390,9 @@
     <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\InfoCacheArray.cpp">
+      <Filter>Data\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CyArea.h">
@@ -681,6 +684,12 @@
       <Filter>Data\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\BoolArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\InfoCacheArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EnumTypeCacheArray.h">
       <Filter>Data\Header</Filter>
     </ClInclude>
   </ItemGroup>

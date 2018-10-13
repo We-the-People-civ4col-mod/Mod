@@ -728,12 +728,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("BONUS_HIGH_SEA_FISH", idx);
 		// R&R, ray, High Sea Fishing - END
 
-		// R&R, ray, adjustment Domestic Markets - START
-		SetGlobalDefine("SPECIALBUILDING_MARKET", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("SPECIALBUILDING_MARKET", idx);
-		// R&R, ray, adjustment Domestic Markets - END
-
 		// R&R, ray, Entertainment Buildings - START
 		SetGlobalDefine("SPECIALBUILDING_TAVERN", szVal);
 		idx = FindInInfoClass(szVal);

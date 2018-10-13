@@ -2641,7 +2641,7 @@ m_aiUnitCombatModifier(NULL),
 m_aiDomainModifier(NULL),
 m_aiYieldModifier(NULL),
 // R&R, Androrc, Domestic Market
-m_aiYieldDemand(NULL),
+m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
 //Androrc End
 m_aiBonusYieldChange(NULL),
 m_aiYieldChange(NULL),
@@ -2686,9 +2686,6 @@ CvUnitInfo::~CvUnitInfo()
 	SAFE_DELETE_ARRAY(m_aiUnitCombatModifier);
 	SAFE_DELETE_ARRAY(m_aiDomainModifier);
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
-	// R&R, Androrc, Domestic Market
-	SAFE_DELETE_ARRAY(m_aiYieldDemand);
-	//Androrc End
 	SAFE_DELETE_ARRAY(m_aiBonusYieldChange);
 	SAFE_DELETE_ARRAY(m_aiYieldChange);
 	SAFE_DELETE_ARRAY(m_aiYieldCost);
@@ -3149,14 +3146,6 @@ int CvUnitInfo::getYieldModifier(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiYieldModifier ? m_aiYieldModifier[i] : -1;
 }
-// R&R, Androrc, Domestic Market
-int CvUnitInfo::getYieldDemand(int i) const
-{
-	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_aiYieldDemand ? m_aiYieldDemand[i] : -1;
-}
-//Androrc End
 int CvUnitInfo::getBonusYieldChange(int i) const
 {
 	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
@@ -3527,11 +3516,6 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
 	m_aiYieldModifier = new int[NUM_YIELD_TYPES];
 	stream->Read(NUM_YIELD_TYPES, m_aiYieldModifier);
-	// R&R, Androrc, Domestic Market
-	SAFE_DELETE_ARRAY(m_aiYieldDemand);
-	m_aiYieldDemand = new int[NUM_YIELD_TYPES];
-	stream->Read(NUM_YIELD_TYPES, m_aiYieldDemand);
-	//Androrc End
 	SAFE_DELETE_ARRAY(m_aiBonusYieldChange);
 	m_aiBonusYieldChange = new int[NUM_YIELD_TYPES];
 	stream->Read(NUM_YIELD_TYPES, m_aiBonusYieldChange);
@@ -3724,9 +3708,6 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumUnitCombatInfos(), m_aiUnitCombatModifier);
 	stream->Write(NUM_DOMAIN_TYPES, m_aiDomainModifier);
 	stream->Write(NUM_YIELD_TYPES, m_aiYieldModifier);
-	// R&R, Androrc, Domestic Market
-	stream->Write(NUM_YIELD_TYPES, m_aiYieldDemand);
-	//Androrc End
 	stream->Write(NUM_YIELD_TYPES, m_aiBonusYieldChange);
 	stream->Write(NUM_YIELD_TYPES, m_aiYieldChange);
 	stream->Write(NUM_YIELD_TYPES, m_aiYieldCost);
@@ -3908,7 +3889,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiDomainModifier, "DomainMods", NUM_DOMAIN_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldModifier, "YieldModifiers", NUM_YIELD_TYPES, 0);
 	// R&R, Androrc, Domestic Market
-	pXML->SetVariableListTagPair(&m_aiYieldDemand, "YieldDemands", NUM_YIELD_TYPES, 0);
+	m_info_YieldDemands.read(pXML, getType(), "YieldDemands");
 	//Androrc End
 	pXML->SetVariableListTagPair(&m_aiBonusYieldChange, "BonusYieldChanges", NUM_YIELD_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldChange, "YieldChanges", NUM_YIELD_TYPES, 0);
@@ -4772,6 +4753,8 @@ m_bCapital(false),
 m_bNationalWonder(false), // R&R, ray, National Wonders
 m_bNeverCapture(false),
 m_bCenterInCity(false),
+m_iDomesticMarketModifier(0),
+m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
 m_aiProductionTraits(NULL),
 m_aiLandPlotYieldChange(NULL), // R&R, ray, Landplot Yields
 m_aiSeaPlotYieldChange(NULL),
@@ -5335,6 +5318,8 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iDomesticMarketModifier, "iDomesticMarketModifier");
+	m_info_YieldDemands.read(pXML, getType(), "YieldDemands");
 	pXML->GetChildXmlValByName(&m_bWorksWater, "bWorksWater");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bRiver, "bRiver");
@@ -15405,6 +15390,7 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 ///
 
 CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
+// allow
 	: m_info_AllowBonuses      (JIT_ARRAY_BONUS              , JIT_ARRAY_ALLOW)
 	, m_info_AllowBuilds       (JIT_ARRAY_BUILD              , JIT_ARRAY_ALLOW)
 	, m_info_AllowBuildings    (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
@@ -15417,6 +15403,10 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 	, m_info_AllowUnits        (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
 	, m_info_AllowYields       (JIT_ARRAY_YIELD              , JIT_ARRAY_ALLOW)
 
+	// city
+	, m_iCanUseDomesticMarket(0)
+
+	// growth
 	, m_iNumUnitsOnDockChange(0)
 {
 	if (bAutogenerateAllow)
@@ -15497,6 +15487,13 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 		m_info_AllowRoutes       .read(pXML, getType(), "AllowRoutes"            );
 		m_info_AllowUnits        .read(pXML, getType(), "AllowUnitClasses"       );
 		m_info_AllowYields       .read(pXML, getType(), "AllowYields"            );
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupCity"))
+	{
+		pXML->GetChildXmlValByName(&m_iCanUseDomesticMarket, "iCanUseDomesticMarket");
 
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}

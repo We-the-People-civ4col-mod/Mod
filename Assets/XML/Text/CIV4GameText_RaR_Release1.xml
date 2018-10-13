@@ -4614,19 +4614,19 @@ Multiple repeating units is possible and an equal number will be trained of each
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>
-		<English>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</English>
-		<French>[ICON_BULLET]G&#233;n&#232;re [ICON_GOLD] en vendant des biens sur le march&#233; int&#233;rieur.</French>
+		<English>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market</English>
+		<French>[ICON_BULLET]G&#233;n&#232;re [ICON_GOLD] en vendant des biens sur le march&#233; int&#233;rieur</French>
 		<German>[ICON_BULLET]Erwirtschaftet [ICON_GOLD] durch Verkauf von Waren an die Einwohner der Stadt</German>
-		<Italian>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</Italian>
-		<Spanish>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market.</Spanish>
+		<Italian>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market</Italian>
+		<Spanish>[ICON_BULLET]Generates [ICON_GOLD] by selling goods on domestic market</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED</Tag>
-		<English>[ICON_BULLET]Increases demand for goods on domestic market.</English>
-		<French>[ICON_BULLET]Augmente la demande de bien sur le march&#233; int&#233;rieur.</French>
-		<German>[ICON_BULLET]Erh&#246;ht die Nachfrage nach Waren in der Stadt</German>
-		<Italian>[ICON_BULLET]Increases demand for goods on domestic market.</Italian>
-		<Spanish>[ICON_BULLET]Increases demand for goods on domestic market.</Spanish>
+		<English>[ICON_BULLET]Increases demand for goods on domestic market by %d1%</English>
+		<French>[ICON_BULLET]Augmente la demande de bien sur le march&#233; int&#233;rieur avec %d1%</French>
+		<German>[ICON_BULLET]Erh&#246;ht die Nachfrage nach Waren in der Stadt mit %d1%</German>
+		<Italian>[ICON_BULLET]Increases demand for goods on domestic market by %d1%</Italian>
+		<Spanish>[ICON_BULLET]Increases demand for goods on domestic market by %d1%</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BARBARIAN_PEDIA</Tag>
