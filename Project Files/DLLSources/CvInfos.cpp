@@ -14640,7 +14640,11 @@ std::string CvMainMenuInfo::getSoundtrack() const
 }
 std::string CvMainMenuInfo::getLoading() const
 {
-	return m_szLoading;
+	// here we need a random number to pick an image.
+	// Instead of messing with random seed, just use the number of milliseconds since windows started
+	int iRandom = GetTickCount();
+	iRandom = iRandom % m_a_szLoading.size();
+	return m_a_szLoading[iRandom];
 }
 std::string CvMainMenuInfo::getLoadingSlideshow() const
 {
@@ -14655,8 +14659,21 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 	}
 	pXML->GetChildXmlValByName(m_szScene, "Scene");
 	pXML->GetChildXmlValByName(m_szSoundtrack, "Soundtrack");
-	pXML->GetChildXmlValByName(m_szLoading, "Loading");
 	pXML->GetChildXmlValByName(m_szLoadingSlideshow, "LoadingSlideshow");
+	
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "LoadingScreens"))
+	{
+		CvString szBuffer;
+		do
+		{
+			pXML->GetChildXmlVal(szBuffer);
+			if (!szBuffer.empty())
+			{
+				m_a_szLoading.push_back(szBuffer);
+			}
+		} while (gDLL->getXMLIFace()->NextSibling(pXML->GetXML()));
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
 	return true;
 }
 

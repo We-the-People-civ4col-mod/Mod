@@ -4416,7 +4416,7 @@ public:
 protected:
 	std::string m_szScene;
 	std::string m_szSoundtrack;
-	std::string m_szLoading;
+	std::vector<std::string> m_a_szLoading;
 	std::string m_szLoadingSlideshow;
 };
 
