@@ -192,11 +192,11 @@
 		</InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>MAINMENU_LOAD_BTS</Type>
-			<Path>Art/Interface/Screens/Loading/LoadingScreenBGBeyondtheSword.dds</Path>
+			<Path>Art/Interface/Screens/Loading/FredericChurch_NewEnglandScenery.dds</Path>
 		</InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>MAINMENU_SLIDESHOW_LOAD_BTS</Type>
-			<Path>Art/Interface/Screens/Loading/LoadingScreenBGBeyondtheSword.dds</Path>
+			<Path>Art/Interface/Screens/Loading/FredericChurch_NewEnglandScenery.dds</Path>
 		</InterfaceArtInfo>
 		<InterfaceArtInfo>
 			<Type>INTRO_LOGOS</Type>
