@@ -5467,6 +5467,7 @@ void CvPlot::updateWorkingCity()
 		}
 
 		updateYield(true);
+		setYieldCache();
 
 		updateFog();
 		updateShowCitySymbols();
