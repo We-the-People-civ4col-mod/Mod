@@ -2,6 +2,17 @@
 
 <Civ4CivEffectInfos xmlns="x-schema:CIV4CivEffectsInfosSchema.xml">
 	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_ALL</Type>
+		<TagGroupAllow>
+			<AllowBuildingClasses>
+				<AllowBuildingClass>
+					<eBuildingClass>BUILDINGCLASS_BONUS</eBuildingClass>
+					<iAllow>-50</iAllow>
+				</AllowBuildingClass>
+			</AllowBuildingClasses>
+		</TagGroupAllow>
+	</CivEffectInfo>
+	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_EUROPEAN</Type>
 		<TagGroupCity>
 			<iCanUseDomesticMarket>1</iCanUseDomesticMarket>
