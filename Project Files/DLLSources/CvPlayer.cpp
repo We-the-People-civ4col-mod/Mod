@@ -7744,6 +7744,19 @@ void CvPlayer::verifyAlive()
 					// TAC - RESPAWN Option - Ray - Start
 					if(bRespawnDeactivated)
 					{
+						// When a player is killed, the game deletes all cities and units.
+						// If a unit is removed while being in combat, the combat can't finish and the game freezes.
+						int iLoop;
+						for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+						{
+							if (pLoopUnit->isCombat())
+							{
+								// A unit is in combat
+								// Delay killing the player until the combat animation is over
+								return;
+							}
+						}
+
 						//setAlive(false);
 						bKill = true;
 						CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_RESPAWN", getCivilizationShortDescriptionKey());
@@ -7843,6 +7856,18 @@ void CvPlayer::verifyAlive()
 
 		if (bKill)
 		{
+			// When a player is killed, the game deletes all cities and units.
+			// If a unit is removed while being in combat, the combat can't finish and the game freezes.
+			int iLoop;
+			for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+			{
+				if (pLoopUnit->isCombat())
+				{
+					// A unit is in combat
+					// Delay killing the player until the combat animation is over
+					return;
+				}
+			}
 			setAlive(false);
 		}
 	}
