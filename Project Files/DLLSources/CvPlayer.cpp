@@ -7883,12 +7883,12 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 
 		if (isTurnActive())
 		{
-			if (GC.getLogging())
+			if (GC.getLoggingPlayerTurn())
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
 					TCHAR szOut[1024];
-					sprintf(szOut, "Player %d Turn ON\n", getID());
+					sprintf(szOut, "Player %d Turn START\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
 			}
@@ -7965,12 +7965,12 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 		}
 		else
 		{
-			if (GC.getLogging())
+			if (GC.getLoggingPlayerTurn())
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
 					TCHAR szOut[1024];
-					sprintf(szOut, "Player %d Turn OFF\n", getID());
+					sprintf(szOut, "Player %d Turn END\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
 			}

@@ -40,6 +40,16 @@ CvGlobals gGlobals;
 CvGlobals::CvGlobals() :
 m_bGraphicsInitialized(false),
 m_bLogging(false),
+
+//special logging events start, toggle flags here 
+m_bLoggingCityStatus	(false),
+m_bLoggingCombat		(false),
+m_bLoggingMovement		(false),
+m_bLoggingPillage		(false),
+m_bLoggingPlayerTurn	(false),
+m_bLoggingProblem		(true),
+//special logging events end
+
 m_bRandLogging(false),
 m_bOverwriteLogs(false),
 m_bSynchLogging(false),
@@ -493,6 +503,16 @@ void CvGlobals::init()
 	COPY(m_aeTurnRightDirection, aeTurnRightDirection, DirectionTypes);
 	memcpy(m_aaiXYCityPlot, aaiXYCityPlot, sizeof(m_aaiXYCityPlot));
 	memcpy(m_aaeXYDirection, aaeXYDirection,sizeof(m_aaeXYDirection));
+
+	//special logging events start, toggle flags in CvGlobals constructor 
+	//initializing logging flags
+	m_bLoggingCityStatus	= m_bLoggingCityStatus	&& getLogging();
+	m_bLoggingCombat		= m_bLoggingCombat		&& getLogging();
+	m_bLoggingMovement		= m_bLoggingMovement	&& getLogging();
+	m_bLoggingPillage		= m_bLoggingPillage		&& getLogging();
+	m_bLoggingPlayerTurn	= m_bLoggingPlayerTurn	&& getLogging();
+	m_bLoggingProblem		= m_bLoggingProblem		&& getLogging();
+	//special logging events end
 }
 
 //

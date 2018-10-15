@@ -6160,12 +6160,56 @@ bool CvUnit::pillage()
 			}
 		}
 
-		pPlot->setImprovementType((ImprovementTypes)(GC.getImprovementInfo(pPlot->getImprovementType()).getImprovementPillage()));
+		ImprovementTypes eImprVarA = pPlot->getImprovementType();
+		CvImprovementInfo &rImpInfo = GC.getImprovementInfo(eImprVarA);
+		ImprovementTypes eImprovement = (ImprovementTypes) rImpInfo.getImprovementPillage();
+		
+		pPlot->setImprovementType(eImprovement);
+		
+		if (GC.getLoggingPillage())
+		{
+			if (gDLL->getChtLvl() > 0)
+			{
+				char szOut[1024];
+				sprintf(szOut, "Trn %d|Plr %d|Unit %d|%d/%S/%S|pillage|%S|%d:%d|\n",
+					GC.getGameINLINE().getGameTurn(),
+					getOwnerINLINE(),
+					getID(),
+					GC.getGameINLINE().getGameTurnYear(),
+					GET_PLAYER(getOwnerINLINE()).getNameKey(),
+					getName().GetCString(),
+					rImpInfo.getText(),
+					pPlot->getX_INLINE(),
+					pPlot->getY_INLINE()
+				);
+				gDLL->messageControlLog(szOut);
+			}
+		}
 	}
 	else if (pPlot->isRoute())
 	{
 		eTempRoute = pPlot->getRouteType();
 		pPlot->setRouteType(NO_ROUTE); // XXX downgrade rail???
+
+		if (GC.getLoggingPillage())
+		{
+			if (gDLL->getChtLvl() > 0)
+			{
+				char szOut[1024];
+				sprintf(szOut, "Trn %d|Plr %d|Unit %d|%d/%S/%S|pillage|RouteType set to NO_ROUTE|%d:%d|\n",
+					GC.getGameINLINE().getGameTurn(),
+					getOwnerINLINE(),
+					getID(),
+					GC.getGameINLINE().getGameTurnYear(),
+					GET_PLAYER(getOwnerINLINE()).getNameKey(),
+					getName().GetCString(),
+					pPlot->getX_INLINE(),
+					pPlot->getY_INLINE()
+				);
+				gDLL->messageControlLog(szOut);
+			}
+
+		}
 	}
 
 	changeMoves(GC.getMOVE_DENOMINATOR());
@@ -6186,6 +6230,9 @@ bool CvUnit::pillage()
 	{
 		gDLL->getEventReporterIFace()->unitPillage(this, eTempImprovement, eTempRoute, getOwnerINLINE());
 	}
+
+
+
 
 	return true;
 }
@@ -9353,7 +9400,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 	int iI;
 
 	// OOS!! Temporary for Out-of-Sync madness debugging...
-	if (GC.getLogging())
+	if (GC.getLoggingMovement())
 	{
 		if (gDLL->getChtLvl() > 0)
 		{
@@ -11352,13 +11399,13 @@ void CvUnit::setCombatUnit(CvUnit* pCombatUnit, bool bAttacking)
 	{
 		if (bAttacking)
 		{
-			if (GC.getLogging())
+			if (GC.getLoggingCombat())
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
 					// Log info about this combat...
 					char szOut[1024];
-					sprintf( szOut, "*** KOMBAT!\n     ATTACKER: Player %d Unit %d (%S's %S), CombatStrength=%d\n     DEFENDER: Player %d Unit %d (%S's %S), CombatStrength=%d\n",
+					sprintf( szOut, "*** COMBAT!\n     ATTACKER: Player %d Unit %d (%S's %S), CombatStrength=%d\n     DEFENDER: Player %d Unit %d (%S's %S), CombatStrength=%d\n",
 						getOwnerINLINE(), getID(), GET_PLAYER(getOwnerINLINE()).getName(), getName().GetCString(), currCombatStr(NULL, NULL),
 						pCombatUnit->getOwnerINLINE(), pCombatUnit->getID(), GET_PLAYER(pCombatUnit->getOwnerINLINE()).getName(), pCombatUnit->getName().GetCString(), pCombatUnit->currCombatStr(pCombatUnit->plot(), this));
 					gDLL->messageControlLog(szOut);

@@ -185,6 +185,14 @@ public:
 	DllExport NiPoint3& getPt3CameraDir();
 
 	DllExport bool& getLogging();
+	//special logging events start, toggle flags in CvGlobals constructor 
+	inline bool& CvGlobals::getLoggingCityStatus()		{ return m_bLoggingCityStatus; }
+	inline bool& CvGlobals::getLoggingCombat()			{ return m_bLoggingCombat; }
+	inline bool& CvGlobals::getLoggingMovement()		{ return m_bLoggingMovement; }
+	inline bool& CvGlobals::getLoggingPillage()			{ return m_bLoggingPillage; }
+	inline bool& CvGlobals::getLoggingPlayerTurn()		{ return m_bLoggingPlayerTurn; }
+	inline bool& CvGlobals::getLoggingProblem()			{ return m_bLoggingProblem; }
+	//special logging events end
 	DllExport bool& getRandLogging();
 	DllExport bool& getSynchLogging();
 	DllExport bool& overwriteLogs();
@@ -902,6 +910,16 @@ protected:
 
 	bool m_bGraphicsInitialized;
 	bool m_bLogging;
+
+	//special logging events start, toggle flags in CvGlobals constructor 
+	bool m_bLoggingCityStatus;
+	bool m_bLoggingCombat;
+	bool m_bLoggingMovement;
+	bool m_bLoggingPillage;
+	bool m_bLoggingPlayerTurn;
+	bool m_bLoggingProblem;
+	//special logging events end
+
 	bool m_bRandLogging;
 	bool m_bSynchLogging;
 	bool m_bOverwriteLogs;

@@ -130,7 +130,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 
 	//--------------------------------
 	// Log this event
-	if (GC.getLogging())
+	if (GC.getLoggingCityStatus())
 	{
 		if (gDLL->getChtLvl() > 0)
 		{
@@ -139,8 +139,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 			gDLL->messageControlLog(szOut);
 		}
 	}
-
 	//--------------------------------
+
 	// Init saved data
 	reset(iID, eOwner, pPlot->getX_INLINE(), pPlot->getY_INLINE());
 	// R&R, ray, adjustment Domestic Markets for Luxury Goods needed
