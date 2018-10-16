@@ -769,6 +769,7 @@ protected:
 	void doGrowth();
 	void doYields();
 	void sellToDomesticMarket(int (&aiYields)[58]);
+	void doYieldEducation();
 	void addTempHurryYieldsForProduction();
 	void doEntertainmentBuildings(); // R&R, ray, Entertainment Buildings
 	void doCulture();

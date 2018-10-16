@@ -7060,41 +7060,7 @@ void CvCity::doYields()
 			// handled in CvPlayer::doCrosses
 			break;
 		case YIELD_EDUCATION:
-			{
-				std::vector<CvUnit*> apStudents;
-				for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
-				{
-					CvUnit* pLoopUnit = m_aPopulationUnits[i];
-					ProfessionTypes eProfession = pLoopUnit->getProfession();
-					if (eProfession != NO_PROFESSION)
-					{
-						// R&R, ray , MYCP partially based on code of Aymerick - START
-						if (GC.getProfessionInfo(eProfession).getYieldsProduced(0) == eYield)
-						// R&R, ray , MYCP partially based on code of Aymerick - END
-						{
-							FAssert(!pLoopUnit->getUnitInfo().isTreasure());
-							int iStudentOutput = getProfessionOutput(eProfession, pLoopUnit, NULL) * getBaseYieldRateModifier(YIELD_EDUCATION) / 100;
-							FAssert(iStudentOutput > 0);
-							pLoopUnit->setYieldStored(pLoopUnit->getYieldStored() + std::max(iStudentOutput, 1));
-
-							// TAC - Messages - Ray - START
-							BuildingTypes eSchoolBuilding = getYieldBuilding(YIELD_EDUCATION);
-							int iEducationNeeded = educationThreshold() - pLoopUnit->getYieldStored();
-
-							int rStudentOutput = std::max(iStudentOutput, 1);
-							int iTurns = std::max(0, (iEducationNeeded + rStudentOutput - 1) / rStudentOutput);  // round up				
-					
-							if (iTurns == 2 || iTurns == 1) {
-								CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED", iTurns, getNameKey(), GC.getBuildingInfo(eSchoolBuilding).getTextKeyWide());
-								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-
-							}
-							// TAC - Messages - Ray - END
-
-						}
-					}
-				}
-			}
+			doYieldEducation();
 			break;
 		default:
 			changeYieldStored(eYield, aiYields[eYield]);
@@ -7300,6 +7266,43 @@ void CvCity::sellToDomesticMarket(int  (&aiYields)[58])
 	// R&R, ray, adjustment Domestic Markets, END
 }
 
+void CvCity::doYieldEducation()
+{
+	YieldTypes eYield = YIELD_EDUCATION;
+	std::vector<CvUnit*> apStudents;
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit* pLoopUnit = m_aPopulationUnits[i];
+		ProfessionTypes eProfession = pLoopUnit->getProfession();
+		if (eProfession != NO_PROFESSION)
+		{
+			// R&R, ray , MYCP partially based on code of Aymerick - START
+			if (GC.getProfessionInfo(eProfession).getYieldsProduced(0) == eYield)
+				// R&R, ray , MYCP partially based on code of Aymerick - END
+			{
+				FAssert(!pLoopUnit->getUnitInfo().isTreasure());
+				int iStudentOutput = getProfessionOutput(eProfession, pLoopUnit, NULL) * getBaseYieldRateModifier(YIELD_EDUCATION) / 100;
+				FAssert(iStudentOutput > 0);
+				pLoopUnit->setYieldStored(pLoopUnit->getYieldStored() + std::max(iStudentOutput, 1));
+
+				// TAC - Messages - Ray - START
+				BuildingTypes eSchoolBuilding = getYieldBuilding(YIELD_EDUCATION);
+				int iEducationNeeded = educationThreshold() - pLoopUnit->getYieldStored();
+
+				int rStudentOutput = std::max(iStudentOutput, 1);
+				int iTurns = std::max(0, (iEducationNeeded + rStudentOutput - 1) / rStudentOutput);  // round up				
+
+				if (iTurns == 2 || iTurns == 1) {
+					CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_STUDENT_ALMOST_GRADUATED", iTurns, getNameKey(), GC.getBuildingInfo(eSchoolBuilding).getTextKeyWide());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_EDUCATION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+
+				}
+				// TAC - Messages - Ray - END
+
+			}
+		}
+	}
+}
 
 /*
 void CvCity::addTempHurryYieldsForProduction()
