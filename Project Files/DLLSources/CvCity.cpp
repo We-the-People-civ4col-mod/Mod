@@ -7039,43 +7039,7 @@ void CvCity::doYields()
 	int iMaxCapacity = getMaxYieldCapacity();
 	
 	
-	// R&R, ray, adjustment Domestic Markets
-	int iTotalProfitFromDomesticMarket = 0;
-	//bool hasMarket = isHasBuilding((SpecialBuildingTypes)GC.getDefineINT("BUILDING_MARKET"));
-	bool hasMarket = isHasSpecialBuilding((SpecialBuildingTypes)GC.getDefineINT("SPECIALBUILDING_MARKET"));
-
-	//Performance optimization
-	if(!isNative() && hasMarket)
-	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-		{
-			YieldTypes eYield = (YieldTypes) iYield;
-			if (GC.getYieldInfo(eYield).isCargo())
-			{
-				//if (hasMarket && getYieldDemand(eYield) > 0 && getYieldStored(eYield) > 0)
-				if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield)+aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
-				{
-					int iAmount = getYieldDemand(eYield);
-					int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
-					if (iAmount > iAmountForSale)
-					{
-						iAmount = iAmountForSale;
-					}
-					int iProfit = iAmount * getYieldBuyPrice(eYield);
-					aiYields[eYield] -= iAmount;
-					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
-					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
-					//GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDemand);
-				}	
-			}
-		}
-		if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
-		{
-			CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-		}
-	}
-	// R&R, ray, adjustment Domestic Markets, END
+	sellToDomesticMarket(aiYields);
 	
 	// R&R, ray, adjustment for less Custom House messages
 	int iCustomHouseProfit = 0;
@@ -7294,6 +7258,48 @@ void CvCity::doYields()
 	}
 
 }
+
+void CvCity::sellToDomesticMarket(int  (&aiYields)[58])
+{
+	// R&R, ray, adjustment Domestic Markets
+	int iTotalProfitFromDomesticMarket = 0;
+	//bool hasMarket = isHasBuilding((SpecialBuildingTypes)GC.getDefineINT("BUILDING_MARKET"));
+	bool hasMarket = isHasSpecialBuilding((SpecialBuildingTypes)GC.getDefineINT("SPECIALBUILDING_MARKET"));
+
+	//Performance optimization
+	if (!isNative() && hasMarket)
+	{
+		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+			if (GC.getYieldInfo(eYield).isCargo())
+			{
+				//if (hasMarket && getYieldDemand(eYield) > 0 && getYieldStored(eYield) > 0)
+				if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield) + aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
+				{
+					int iAmount = getYieldDemand(eYield);
+					int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
+					if (iAmount > iAmountForSale)
+					{
+						iAmount = iAmountForSale;
+					}
+					int iProfit = iAmount * getYieldBuyPrice(eYield);
+					aiYields[eYield] -= iAmount;
+					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
+					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
+					//GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDemand);
+				}
+			}
+		}
+		if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
+		{
+			CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+	}
+	// R&R, ray, adjustment Domestic Markets, END
+}
+
 
 /*
 void CvCity::addTempHurryYieldsForProduction()
