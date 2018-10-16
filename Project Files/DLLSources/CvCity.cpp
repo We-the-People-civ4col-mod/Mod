@@ -4878,8 +4878,21 @@ void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 	FAssert(getYieldRushed(eYield) >= 0);
 }
 
-// R&R, ray , MYCP partially based on code of Aymerick - START
-// heavily adjusted
+/*
+void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYields, int* aiConsumedYields, bool bPrintWarning) const
+Complexity: O (n^2)
+Complexity detailed:
+	O ( NUM_YIELDS*2 + population*2 + population^2 )
+Parameters:
+	int*	aiYields			... Pointer to array for results
+	int*	aiProducedYield		... Pointer to array for produced yields
+	int*	aiConsumedYields	... Pointer to array for produced yields
+	bool	bPrintWarning		... Flag for notifying the player about units, which do not have enough raw input yields to produce their output
+Purpose:
+	Calculates produced, consumed (by production) and net yields of a city. Warns about input yields running low or which are out of stock.
+Usage:
+	Can be used at any time. Does not change stored yields or anything else in the city. Just returns arrays with results.
+*/
 void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYields, int* aiConsumedYields, bool bPrintWarning) const
 {
 	PROFILE_FUNC();
