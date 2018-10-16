@@ -7052,12 +7052,21 @@ void CvCity::doYields()
 		case YIELD_FOOD:
 			// handled in doGrowth
 			break;
+		case YIELD_BELLS:
+			//handled in CvPlayer::doBells() and CvCity::doRebelSentiment() and possibly other locations
+			break;
 		case YIELD_HAMMERS:
 			// temporary storage for hammers. Production handled in doProduction
 			setYieldStored(eYield, aiYields[eYield]);
 			break;
 		case YIELD_CROSSES:
 			// handled in CvPlayer::doCrosses
+			break;
+		case YIELD_CULTURE:
+			//handled in doCulture() and doPlotCulture(...),  called from doTurn()
+			break;
+		case YIELD_HEALTH:
+			//handled in doCityHealth
 			break;
 		case YIELD_EDUCATION:
 			doYieldEducation();
