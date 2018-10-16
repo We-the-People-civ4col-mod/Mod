@@ -6992,13 +6992,6 @@ void CvCity::doGrowth()
 
 void CvCity::doYields()
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		changeYieldStored(eYield, getYieldRushed(eYield));
-		changeYieldRushed(eYield, -getYieldRushed(eYield));
-	}
-
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, NULL, NULL, true);
 
@@ -7263,6 +7256,23 @@ void CvCity::doYields()
 	}
 
 }
+
+/*
+void CvCity::addTempHurryYieldsForProduction()
+Complexity: O ( n )
+Purpose:
+	Adds the yields required for hurrying production to the storage. Empties temporary storage of yields for hurrying.
+*/
+void CvCity::addTempHurryYieldsForProduction()
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		changeYieldStored(eYield, getYieldRushed(eYield));
+		changeYieldRushed(eYield, -getYieldRushed(eYield));
+	}
+}
+
 void CvCity::doCulture()
 {
 	if (GC.getUSE_DO_CULTURE_CALLBACK()) // K-Mod. block unused python callbacks
@@ -7471,6 +7481,9 @@ void CvCity::doCheat(bool bAlt, bool bShift, bool bCtrl)
 
 void CvCity::doProduction(bool bAllowNoProduction)
 {
+	//Move yields for hurry production from temp storage to city storage
+	addTempHurryYieldsForProduction();
+
 	if (GC.getUSE_DO_PRODUCTION_CALLBACK()) // K-Mod. block unused python callbacks
 	{
 		CyCity* pyCity = new CyCity(this);

@@ -768,6 +768,7 @@ protected:
 
 	void doGrowth();
 	void doYields();
+	void addTempHurryYieldsForProduction();
 	void doEntertainmentBuildings(); // R&R, ray, Entertainment Buildings
 	void doCulture();
 	void doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate);
