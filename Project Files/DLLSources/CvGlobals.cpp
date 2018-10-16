@@ -1755,10 +1755,6 @@ CvGoodyInfo& CvGlobals::getGoodyInfo(GoodyTypes eGoodyNum)
 	return *(m_paGoodyInfo[eGoodyNum]);
 }
 
-/*
-	int CvGlobals::getNumBuildingInfos()
-	Complexity: O( 1 )
-*/
 int CvGlobals::getNumBuildInfos()
 {
 	return (int)m_paBuildInfo.size();
@@ -1769,12 +1765,6 @@ std::vector<CvBuildInfo*>& CvGlobals::getBuildInfo()	// For Moose - XML Load Uti
 	return m_paBuildInfo;
 }
 
-/*
-	CvBuildingInfo& CvGlobals::getBuildingInfo(BuildingTypes eBuildingNum)
-	Complexity: O( 1 )
-	Purpose:
-		Get a buildings (CvBuildingInfo) data object.
-*/
 CvBuildInfo& CvGlobals::getBuildInfo(BuildTypes eBuildNum)
 {
 	FAssert(eBuildNum > -1);
@@ -1867,6 +1857,10 @@ CvBuildingClassInfo& CvGlobals::getBuildingClassInfo(BuildingClassTypes eBuildin
 	return *(m_paBuildingClassInfo[eBuildingClassNum]);
 }
 
+/*
+	int CvGlobals::getNumBuildingInfos()
+	Complexity: O( 1 )
+*/
 int CvGlobals::getNumBuildingInfos()
 {
 	return (int)m_paBuildingInfo.size();
@@ -1877,6 +1871,12 @@ std::vector<CvBuildingInfo*>& CvGlobals::getBuildingInfo()	// For Moose - XML Lo
 	return m_paBuildingInfo;
 }
 
+/*
+	CvBuildingInfo& CvGlobals::getBuildingInfo(BuildingTypes eBuildingNum)
+	Complexity: O( 1 )
+	Purpose:
+		Get a buildings (CvBuildingInfo) data object.
+*/
 CvBuildingInfo& CvGlobals::getBuildingInfo(BuildingTypes eBuildingNum)
 {
 	FAssert(eBuildingNum > -1);

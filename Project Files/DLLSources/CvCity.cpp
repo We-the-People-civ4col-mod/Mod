@@ -3121,6 +3121,13 @@ bool CvCity::isHasBuildingClass(BuildingClassTypes eIndex) const
 	return isHasBuilding(eBuilding);
 }
 
+/*
+int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit, BuildingTypes* peBuilding) const
+Complexity: O ( n^2 )
+Complexity detailed: O ( NUM_BUILDINGINFOS * num_buildings_in_specialbuilding )
+	NUM_BUILDINGINFOS					from here
+	num_buildings_in_specialbuilding	from isHasBuilding(...)
+*/
 int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit, BuildingTypes* peBuilding) const
 {
 	if (peBuilding != NULL)
@@ -3184,6 +3191,13 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
 	return iProfessionOutput;
 }
 
+/*
+int CvCity::getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit) const
+Complexity: O ( n^2 )
+Complexity detailed: O ( m + n^2 )
+	m		from	here, yields consumed by a profession
+	n^2		from	getProfessionOutput(...)
+*/
 int CvCity::getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit) const
 {
 	FAssert(NO_PROFESSION != eProfession);
@@ -3192,8 +3206,12 @@ int CvCity::getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit)
 		return 0;
 	}
 
+	/*
+		Check if this profession consumes no yield.
+		The problem here is, that the xml allows for multiple consumed yields, each of which could be NO_YIELD.
+		So we have to iterate them all.
+	*/
 	CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(eProfession);
-	// R&R, ray , MYCP partially based on code of Aymerick - START
 	for (int i = 0; i < kProfessionInfo.getNumYieldsConsumed(); i++)
 	{
 		if (kProfessionInfo.getYieldsConsumed(i) == NO_YIELD)
@@ -3201,10 +3219,10 @@ int CvCity::getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit)
 			return 0;
 		}
 	}
-	// R&R, ray , MYCP partially based on code of Aymerick - END
 
 	return getProfessionOutput(eProfession, pUnit);
 }
+
 // R&R, ray , MYCP partially based on code of Aymerick - START
 int CvCity::getProfessionInputs(ProfessionTypes eProfession, const CvUnit* pUnit) const
 {
@@ -4296,6 +4314,13 @@ int CvCity::getRawYieldProduced(YieldTypes eYieldType) const
 	// R&R, ray, safety check for negative Yield Modifiers from Health - END
 }
 
+/*
+int CvCity::getRawYieldConsumed(YieldTypes eYieldType) const
+Complexity: O ( n^3 )
+Complexity detailed: O ( population * n^2 )
+	population	from	here
+	n^2			from	getProfessionInput(...)
+*/
 int CvCity::getRawYieldConsumed(YieldTypes eYieldType) const
 {
 	PROFILE_FUNC();
