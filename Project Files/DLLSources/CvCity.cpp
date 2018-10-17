@@ -7040,12 +7040,15 @@ void CvCity::doYields()
 	
 	
 	sellToDomesticMarket(aiYields);
-	
-	// R&R, ray, adjustment for less Custom House messages
+
+	//The following vars are needed for the type of customs house message(s) displayed to the player
+	bool bCustomsHouseSingleMessage = true;
+	bool bPlaySoundCustomsHouseMessage = false;
 	int iCustomHouseProfit = 0;
-	
+	int aiCustomsHouseProfit[NUM_YIELD_TYPES];
+
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-	{
+{
 		YieldTypes eYield = (YieldTypes) iYield;
 		switch (eYield)
 		{
@@ -7177,10 +7180,8 @@ void CvCity::doYields()
 								GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iProfitForFatherPointsAtCustomHouse * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100 );
 							}
 
-							// R&R, ray, adjustment for less Custom House messages
-							iCustomHouseProfit = iCustomHouseProfit + iProfit; 
-							//CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
-							//gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_BUILD_BANK", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+							aiCustomsHouseProfit[iYield] = iProfit;
+							iCustomHouseProfit += iProfit;
 						}
 						else 
 						{
@@ -7225,13 +7226,28 @@ void CvCity::doYields()
 		doAutoExport(eYield); // auto traderoute - Nightinggale
 	}
 
-	// R&R, ray, adjustment for less Custom House messages
-	if (iCustomHouseProfit > 0)
+	//Tangible yields, step n-1: Display one or several customs house message(s) to the player
+	LPCTSTR psChmSoundType = bPlaySoundCustomsHouseMessage ? "AS2D_BUILD_BANK" : NULL;
+	if (bCustomsHouseSingleMessage)
 	{
-		CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE", getNameKey(), iCustomHouseProfit);
-		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		if (iCustomHouseProfit > 0)
+		{
+			CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE", getNameKey(), iCustomHouseProfit);
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		}
 	}
-
+	else
+	{
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			if (aiCustomsHouseProfit[iYield] > 0)
+			{
+				YieldTypes eYield = (YieldTypes)iYield;
+				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+		}
+	}
 }
 
 void CvCity::sellToDomesticMarket(int  (&aiYields)[58])
