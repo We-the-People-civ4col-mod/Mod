@@ -10868,8 +10868,6 @@ void CvPlayer::doBells()
 				setRevolutionEuropeUnitThresholdMultiplier((getRevolutionEuropeUnitThresholdMultiplier() * (100 + GC.getDefineINT("REVOLUTION_EUROPE_UNIT_THRESHOLD_INCREASE"))) / 100);
 				setKingNumUnitMultiplier(getKingNumUnitMultiplier() * GC.getHandicapInfo(getHandicapType()).getKingNumUnitMultiplier() / 100);
 
-				if (NO_PLAYER != getParent())
-				{
 					CvPlayer& kParent = GET_PLAYER(getParent());
 					FAssert(kParent.isEurope());
 
@@ -10909,7 +10907,6 @@ void CvPlayer::doBells()
 						CvWString szBuffer = gDLL->getText("TXT_KEY_NEW_EUROPE_ARMY_NEW", kParent.getCivilizationShortDescriptionKey(), getCivilizationShortDescriptionKey(), iNumUnits, kParent.getCivilizationAdjectiveKey());
 						gDLL->getInterfaceIFace()->addMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNIT_GREATPEOPLE", GC.getGameINLINE().isDebugMode() ? MESSAGE_TYPE_MAJOR_EVENT : MESSAGE_TYPE_INFO, GC.getLeaderHeadInfo(kParent.getLeaderType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_UNIT_TEXT"));
 					}
-				}
 			}
 		}
 		else
