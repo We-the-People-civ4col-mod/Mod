@@ -7036,6 +7036,7 @@ void CvCity::doYields()
 	sellToDomesticMarket(aiYieldsNetChanges);
 
 	//Now iterate the yield types ...
+	//General Information: Yield food and it's special mechanics are handled in CvCity::doGrowth().
 
 	//The following vars are needed for the type of customs house message(s) displayed to the player
 	bool bCustomsHouseSingleMessage = true;
@@ -7047,7 +7048,10 @@ void CvCity::doYields()
 	//VET NewCapacity - begin 4/9
 	int iTotalYields = getTotalYieldStored();
 	//VET NewCapacity - end 4/9
-	int iMaxCapacity = getMaxYieldCapacity();
+	int iMaxCapacity = getMaxYieldCapacity();//In case you are wondering, getMaxYieldCapacity() returns the proper max capacity, depending on the storage type mode (old/new).
+	//Is there overflow in the new storage type?
+	int iTotalOverflow = iTotalYields - iMaxCapacity;
+	bool bIsTotalOverflow = iTotalOverflow > 0;
 
 	//The following vars are related to the storage loss selling
 	int iOverflowYieldSellPercent = getStorageLossSellPercentage();
@@ -7060,10 +7064,166 @@ void CvCity::doYields()
 		changeYieldStored((YieldTypes)iYield, aiYieldsNetChanges[iYield]);
 	}
 
-	//Iterate the tangible yields
+
+	//Tangible yields, step 0: Calculate the "protected" yield amounts.
+	/*
+	If needed, with the following code block we calculate, how much of the stored yields are "protected",
+	by the "never sell" flags and by the sell thresholds in the storage loss trade settings (aka customs house screen), 
+	from being pushed into the overflow. We need the sum of these amounts in a second iteration, to correctly 
+	calculate the overflow for each yield.
+	*/
+	int iTotalOverflowProtectedYieldAmount = 0;
+	int aiOverFlowProtectedYieldAmount[NUM_YIELD_TYPES];//While we are at it, we also store yield specific values.
+	//We want to know this, if ...
+	if(
+		GC.getNEW_CAPACITY()			//... we are in new storage type mode ...
+		&& bIsTotalOverflow			//... and there is overflow ...
+		&& bHasUnlockedTradeSettings		//and only if the storage loss trade settings are unlocked
+	)
+	{
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+			int iYieldStored = getYieldStored(eYield);
+			if (isCustomHouseNeverSell(eYield))
+			{
+				//never sell this yield, all amount is protected
+				aiOverFlowProtectedYieldAmount[iYield] = iYieldStored;
+			}
+			else
+			{
+				//this yield is protected only up to its sell threshold
+				int sellThreshold = getCustomHouseSellThreshold(eYield);
+				if (iYieldStored > sellThreshold)
+				{
+					aiOverFlowProtectedYieldAmount[iYield] = sellThreshold;
+				}
+				else
+				{
+					aiOverFlowProtectedYieldAmount[iYield] = iYieldStored;
+				}
+			}
+
+			iTotalOverflowProtectedYieldAmount += aiOverFlowProtectedYieldAmount[iYield];
+		}
+	}
+
+
+	//Tangible yields, step 1: Calculate each yields overflow
+	int aiOverflow[NUM_YIELD_TYPES];
+	int iProtectedOverflowTotal = 0;//How much of the yield, protected from overflow, was pushed into the overflow due to limited storage capacity.
+	int aiProtectedOverflow[NUM_YIELD_TYPES];
+	bool bHasProtectedOverflow;
+	if (GC.getNEW_CAPACITY())
+	{
+		//We are in new storage type mode ...
+
+		if (bIsTotalOverflow)
+		{
+			//... and there is overflow ...
+
+			if (bHasUnlockedTradeSettings)
+			{
+				//... and the storage loss trade settings are unlocked.
+
+				//Calculate how much of this yield is overflow.
+				//There are two scenarios: The total yield amount, protected from overflow, ...
+				if (iTotalOverflowProtectedYieldAmount > iMaxCapacity)
+				{
+					//1. ... is larger than the storage capacity
+					//In this scenario, everything over the protected amount is overflow ...
+					//... plus a proportion of the protected amount (the player can not cheat and protect too much yield from overflow).
+
+					//Multiplier is the same for all yields
+					int iMultiplier = ((iTotalOverflowProtectedYieldAmount - iMaxCapacity) * 100) / iTotalOverflowProtectedYieldAmount;
+					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+					{
+						YieldTypes eYield = (YieldTypes)iYield;
+						int iYieldStored = getYieldStored(eYield);
+
+						//Everything over the protected amount
+						aiOverflow[iYield] = iYieldStored - aiOverFlowProtectedYieldAmount[iYield];
+						//A proportion of the protected amount
+						int iBase = aiOverFlowProtectedYieldAmount[iYield];
+						aiProtectedOverflow[iYield] = (iBase * iMultiplier) / 100;
+						aiOverflow[iYield] += aiProtectedOverflow[iYield];
+
+						iProtectedOverflowTotal += aiProtectedOverflow[iYield];
+					}
+				}
+				else
+				{
+					//2. ... is smaller or equal than the storage capacity
+					//In this scenario, a proportion of the amount over the protected amount is overflow.
+
+					//Multiplier is the same for all yields
+					int iMultiplier = ((iTotalYields - iMaxCapacity) * 100) / (iTotalYields - iTotalOverflowProtectedYieldAmount);
+					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+					{
+						YieldTypes eYield = (YieldTypes)iYield;
+						int iYieldStored = getYieldStored(eYield);
+
+						//Proportion of the amount over the protected amount
+						int iBase = iYieldStored - aiOverFlowProtectedYieldAmount[iYield];
+						aiOverflow[iYield] = (iBase * iMultiplier) / 100;
+					}
+				}
+			}
+			else
+			{
+				//... and the storage loss trade settings are locked.
+				//In this case, simply a proportion of the stored amount is overflow.
+
+				//Multiplier is the same for all yields
+				int iMultiplier = ((iTotalYields - iMaxCapacity) * 100) / iTotalYields;
+				//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+				for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+				{
+					YieldTypes eYield = (YieldTypes)iYield;
+					int iYieldStored = getYieldStored(eYield);
+
+					//Proportion of the stored amount
+					int iBase = iYieldStored;
+					aiOverflow[iYield] = (iBase * iMultiplier) / 100;
+				}
+			}
+		}
+		else
+		{
+			//no overflow
+
+			//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+			for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+			{
+				aiOverflow[iYield] = 0;
+			}
+		}
+	}
+	else
+	{
+		//We are in old storage type mode
+		//In this case, the overflow of each yield, does not depend on the stored amounts of the other yields.
+
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+			int iYieldStored = getYieldStored(eYield);
+
+			aiOverflow[iYield] = iYieldStored - iMaxCapacity;
+		}
+	}
+	bHasProtectedOverflow = iProtectedOverflowTotal > 0 ? true : false;
+
+
+	//Tangible yields, step2: Calculate the loss for each yield
+	int aiLoss[NUM_YIELD_TYPES];
 	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
+		YieldTypes eYield = (YieldTypes)iYield;
 		switch (eYield)
 		{
 		case (YIELD_FOOD):
@@ -7074,51 +7234,10 @@ void CvCity::doYields()
 		    // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 		    break;
 		default:
-			//VET NewCapacity - begin 6/9 -- ray fix
-			int iExcess = 0;
-			if (GC.getNEW_CAPACITY())
+			if (aiOverflow[iYield] > 0)
 			{
-				// Here special sell behaviour for Custom House
-				if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
-				{
-					if (isCustomHouseNeverSell(eYield))
-					{
-						iExcess = getYieldStored(eYield) - iMaxCapacity;
-					}
-					else 
-					{
-						iExcess = getYieldStored(eYield) - getCustomHouseSellThreshold(eYield);
-					}
-
-					//R&R, ray, fixing threshold displayed and internal differently for some gamespeeds e.g. Marathon
-					//sellThreshold = sellThreshold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
-				}
-
-				// normal overflow
-				else
-				{
-					// R&R, ray, reprogrammed Overflow for New City Storage
-					if (getYieldStored(eYield) > 0 && iTotalYields > iMaxCapacity)
-					{
-						iExcess = (iTotalYields - iMaxCapacity) * getYieldStored(eYield) / iTotalYields;
-						if (iExcess == 0)
-						{
-							iExcess = 1;
-						}
-					}
-				}
-			}
-			// no new Capacity
-			else
-			{
-//VET NewCapacity - end 6/9 -- ray fix
-				iExcess = getYieldStored(eYield) - iMaxCapacity;
-			}
-					
-			if (iExcess > 0)
-			{
-				int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
-				iLoss = std::min(iLoss, iExcess);
+				int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
+				iLoss = std::min(iLoss, aiOverflow[iYield]);
 				changeYieldStored(eYield, -iLoss);
 					
 				// R&R, ray , Changes to Custom House - START
@@ -7185,8 +7304,8 @@ void CvCity::doYields()
 				}
 			}
 			//VET NewCapacity -- ray fix for messages
-			//else if (aiYieldsNetChanges[eYield] > -iExcess)
-			else if (aiYieldsNetChanges[eYield] > -iExcess && !GC.getNEW_CAPACITY())
+			//else if (aiYieldsNetChanges[eYield] > -aiOverflow[iYield])
+			else if (aiYieldsNetChanges[eYield] > -aiOverflow[iYield] && !GC.getNEW_CAPACITY())
 			{
 				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
