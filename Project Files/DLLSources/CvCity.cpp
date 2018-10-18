@@ -7054,6 +7054,12 @@ void CvCity::doYields()
 	bool bIgnoresBoycott = getIgnoresBoycott();
 	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
+	//Apply the net changes to the tangible yields (except YIELD_FOOD, as it is handled in doGrowth)
+	for (int iYield = YIELD_LUMBER; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	{
+		changeYieldStored((YieldTypes)iYield, aiYieldsNetChanges[iYield]);
+	}
+
 	//Iterate the tangible yields
 	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7068,8 +7074,6 @@ void CvCity::doYields()
 		    // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 		    break;
 		default:
-			changeYieldStored(eYield, aiYieldsNetChanges[eYield]);
-
 			//VET NewCapacity - begin 6/9 -- ray fix
 			int iExcess = 0;
 			if (GC.getNEW_CAPACITY())
@@ -7077,20 +7081,17 @@ void CvCity::doYields()
 				// Here special sell behaviour for Custom House
 				if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
 				{
-					int sellThreshold = 0;
-					// R&R, ray, finishing Custom House Screen
 					if (isCustomHouseNeverSell(eYield))
 					{
-						sellThreshold = iMaxCapacity;
+						iExcess = getYieldStored(eYield) - iMaxCapacity;
 					}
 					else 
 					{
-						sellThreshold = getCustomHouseSellThreshold(eYield);
+						iExcess = getYieldStored(eYield) - getCustomHouseSellThreshold(eYield);
 					}
 
 					//R&R, ray, fixing threshold displayed and internal differently for some gamespeeds e.g. Marathon
 					//sellThreshold = sellThreshold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
-					iExcess = getYieldStored(eYield) - sellThreshold;
 				}
 
 				// normal overflow
