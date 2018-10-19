@@ -235,7 +235,7 @@ public:
 	CalendarTypes getCalendar() const;
 
 	GameSpeedTypes getGameSpeedType() const;
-	int getCultureLevelThreshold(CultureLevelTypes eCultureLevel) const;
+	int getCultureLevelThreshold(CultureLevelTypes eCultureLevel, PlayerTypes ePlayer) const;
 	int getCargoYieldCapacity() const;
 
 	PlayerTypes getRankPlayer(int iRank);
@@ -388,6 +388,8 @@ public:
 	DllExport bool isWBCentralAmericanNative() const;
 	DllExport void setWBCentralAmericanNative(bool bValue);
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	void writeDesyncLog();
 
 protected:
 

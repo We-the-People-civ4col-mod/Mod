@@ -313,7 +313,7 @@ public:
 	void setOriginalOwner(PlayerTypes eNewValue);
 	CultureLevelTypes getCultureLevel() const;
 	DllExport int getCultureThreshold() const;
-	static int getCultureThreshold(CultureLevelTypes eLevel);
+	int getCultureThreshold(CultureLevelTypes eLevel) const;
 	void setCultureLevel(CultureLevelTypes eNewValue);
 	void updateCultureLevel();
 	int getLandPlotYield(YieldTypes eIndex) const; // R&R, ray, Landplot Yields
@@ -657,6 +657,8 @@ public:
 
 	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
 	
+	void writeDesyncLog(FILE *f);
+
 protected:
 	int m_iID;
 	int m_iX;

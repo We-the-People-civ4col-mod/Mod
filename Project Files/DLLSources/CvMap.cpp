@@ -1252,5 +1252,14 @@ void CvMap::calculateAreas()
 	}
 }
 
+void CvMap::writeDesyncLog(FILE *f)
+{
+	for (int i = 0; i < numPlotsINLINE(); ++i)
+	{
+		fprintf(f, "Plot %d\n", i);
+		plotByIndexINLINE(i)->writeDesyncLog(f);
+	}
+}
+
 
 // Private Functions...

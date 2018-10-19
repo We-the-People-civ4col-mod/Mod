@@ -9990,3 +9990,20 @@ void CvPlot::doMonastery()
 	}
 }
 // R&R, ray, Monasteries and Forts - END
+
+void CvPlot::writeDesyncLog(FILE *f)
+{
+	fprintf(f, "\t(%d,%d)\n", this->getX_INLINE(), this->getY_INLINE());
+	fprintf(f, "\tOwner: %d\n", this->getOwnerINLINE());
+	for (int i = 0; i < MAX_PLAYERS; ++i)
+	{
+		if (GET_PLAYER((PlayerTypes)i).isAlive())
+		{
+			int iCulture = getCulture((PlayerTypes)i);
+			if (iCulture > 0)
+			{
+				fprintf(f, "\tCulture player %d: %d\n", i, iCulture);
+			}
+		}
+	}
+}

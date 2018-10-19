@@ -310,6 +310,7 @@ void CyEnumsPythonInterface()
 		.value("WIDGET_DOCK_PORT_ROYAL", WIDGET_DOCK_PORT_ROYAL) // R&R, ray, Port Royal
 		.value("WIDGET_CITY_CENTER_PLOT", WIDGET_CITY_CENTER_PLOT)
 		.value("WIDGET_HELP_TEXT", WIDGET_HELP_TEXT)
+		.value("WIDGET_NETWORK_DESYNC", WIDGET_NETWORK_DESYNC)
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")

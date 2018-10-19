@@ -663,7 +663,9 @@ bool CvDLLWidgetData::executeAction( CvWidgetDataStruct &widgetDataStruct )
 	case WIDGET_CITY_CENTER_PLOT:
 		doCityCenterPlotClicked(widgetDataStruct);
 		break;
-
+	case WIDGET_NETWORK_DESYNC:
+		gDLL->sendPlayerAction(static_cast<PlayerTypes>(0), PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE, -1, -1, -1);
+		break;
 	}
 
 	return bHandled;

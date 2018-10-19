@@ -4869,24 +4869,23 @@ GameSpeedTypes CvGame::getGameSpeedType() const
 	return GC.getInitCore().getGameSpeed();
 }
 
-int CvGame::getCultureLevelThreshold(CultureLevelTypes eCultureLevel) const
+int CvGame::getCultureLevelThreshold(CultureLevelTypes eCultureLevel, PlayerTypes ePlayer) const
 {
 	int iThreshold;
 	
 	iThreshold = GC.getCultureLevelInfo(eCultureLevel).getThreshold() * GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent() / 100;
 	
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	if (ePlayer != NO_PLAYER)
 	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (eTrait != NO_TRAIT)
+		CvPlayer &kPlayer = GET_PLAYER(ePlayer);
+		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 		{
-			if (NO_PLAYER != getActivePlayer())
+			TraitTypes eTrait = (TraitTypes)iTrait;
+
+			if (kPlayer.hasTrait(eTrait))
 			{
-				if (GET_PLAYER(getActivePlayer()).hasTrait(eTrait))
-				{
-					iThreshold *= std::max(0, (100 + GC.getTraitInfo(eTrait).getCultureLevelModifier()));
-					iThreshold /= 100;
-				}
+				iThreshold *= std::max(0, (100 + GC.getTraitInfo(eTrait).getCultureLevelModifier()));
+				iThreshold /= 100;
 			}
 		}
 	}
@@ -7710,3 +7709,42 @@ void CvGame::setWBCentralAmericanNative(bool bValue)
 	m_bWBCentralAmericanNative = bValue;
 }
 // R&R, ray, Correct Geographical Placement of Natives - END
+
+// function to write a log file containing various data useful to track down OOS issues.
+// Never call this directly, call it by clicking a WIDGET_NETWORK_DESYNC button in python.
+// This in turn will send PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE on the network to call this function in sync.
+//
+// The idea is that each player will generate a log and then a diff tool can tell which data went out of sync.
+// If a game is in sync, the files should be identical.
+void CvGame::writeDesyncLog()
+{
+	CvString filename = gDLL->getModName();
+	filename.append(CvString::format("Desync log for player %d", getActivePlayer()));
+	filename.append(".txt");
+
+	// Using C style file writing
+	// The reason is that C++ style apparently has a known bug in our compiler and it won't compile in some projects (like ours).
+	// The precise cause is unknown, but the recommendation is to use C style file writing.
+	FILE *f = fopen(filename.GetCString(), "w");
+	if (f != NULL)
+	{
+		fprintf(f, "Turn slice: %d\n", this->getTurnSlice());
+
+		CvString LogString;
+
+		calculateSyncChecksum(&LogString);
+		fprintf(f, "%s\n", LogString.c_str());
+
+		for (int i = 0; i < MAX_PLAYERS; ++i)
+		{
+			if (GET_PLAYER(static_cast<PlayerTypes>(i)).isAlive())
+			{
+				GET_PLAYER(static_cast<PlayerTypes>(i)).writeDesyncLog(f);
+			}
+		}
+
+		GC.getMapINLINE().writeDesyncLog(f);
+
+		fclose(f);
+	}
+}

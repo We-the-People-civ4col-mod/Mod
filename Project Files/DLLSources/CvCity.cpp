@@ -3966,7 +3966,7 @@ int CvCity::getCultureThreshold() const
 	return getCultureThreshold(getCultureLevel());
 }
 
-int CvCity::getCultureThreshold(CultureLevelTypes eLevel)
+int CvCity::getCultureThreshold(CultureLevelTypes eLevel) const
 {
 	if (eLevel == NO_CULTURELEVEL)
 	{
@@ -3974,7 +3974,7 @@ int CvCity::getCultureThreshold(CultureLevelTypes eLevel)
 	}
 
 	CultureLevelTypes eCultureLevel = (CultureLevelTypes) std::min(eLevel + 1, GC.getNumCultureLevelInfos() - 1);
-	return std::max(1, GC.getGameINLINE().getCultureLevelThreshold(eCultureLevel));
+	return std::max(1, GC.getGameINLINE().getCultureLevelThreshold(eCultureLevel, getOwnerINLINE()));
 }
 
 
@@ -4109,7 +4109,7 @@ void CvCity::updateCultureLevel()
 	{
 		for (int iI = (GC.getNumCultureLevelInfos() - 1); iI > 0; iI--)
 		{
-			if (getCulture(getOwnerINLINE()) >= GC.getGameINLINE().getCultureLevelThreshold((CultureLevelTypes) iI))
+			if (getCulture(getOwnerINLINE()) >= GC.getGameINLINE().getCultureLevelThreshold((CultureLevelTypes) iI, getOwnerINLINE()))
 			{
 				eCultureLevel = ((CultureLevelTypes)iI);
 				break;
@@ -7326,7 +7326,7 @@ void CvCity::doPlotCulture(bool bUpdate, PlayerTypes ePlayer, int iCultureRate)
 	{
 		for (int iI = (GC.getNumCultureLevelInfos() - 1); iI > 0; iI--)
 		{
-			if (getCulture(ePlayer) >= GC.getGameINLINE().getCultureLevelThreshold((CultureLevelTypes) iI))
+			if (getCulture(ePlayer) >= GC.getGameINLINE().getCultureLevelThreshold((CultureLevelTypes) iI, getOwnerINLINE()))
 			{
 				eCultureLevel = (CultureLevelTypes)iI;
 				break;
@@ -11751,3 +11751,20 @@ void CvCity::UpdateBuildingAffectedCache()
 	// CvPlot::hasYield cache - end - Nightinggale
 }
 // building affected cache - end - Nightinggale
+
+void CvCity::writeDesyncLog(FILE *f)
+{
+	fprintf(f, "\t\tCulture level: %d\n", getCultureLevel());
+	fprintf(f, "\t\tCulture rate: %d\n", getCultureRate());
+	fprintf(f, "\t\tCulture threshold: %d\n", getCultureThreshold());
+	fprintf(f, "\t\tCulture update timer: %d\n", getCultureUpdateTimer());
+
+	for (int i = 0; i < MAX_PLAYERS; ++i)
+	{
+		int iCulture = this->getCulture(static_cast<PlayerTypes>(i));
+		if (iCulture > 0)
+		{
+			fprintf(f, "\t\tCulture player %d: %d\n", i, iCulture);
+		}
+	}
+}

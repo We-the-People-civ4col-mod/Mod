@@ -11346,7 +11346,7 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, i
 				else
 				{
 					CultureLevelTypes eLevel = (CultureLevelTypes)std::max(0, pCity->getCultureLevel() - 1);
-					pCity->setCulture(getID(), CvCity::getCultureThreshold(eLevel), true);
+					pCity->setCulture(getID(), pCity->getCultureThreshold(eLevel), true);
 					changeAdvancedStartPoints(iCost);
 				}
 			}
@@ -11905,11 +11905,11 @@ int CvPlayer::getAdvancedStartCultureCost(bool bAdd, CvCity* pCity)
 		int iCulture;
 		if (bAdd)
 		{
-			iCulture = CvCity::getCultureThreshold((CultureLevelTypes)(pCity->getCultureLevel() + 1)) - pCity->getCulture(getID());
+			iCulture = pCity->getCultureThreshold((CultureLevelTypes)(pCity->getCultureLevel() + 1)) - pCity->getCulture(getID());
 		}
 		else
 		{
-			iCulture = pCity->getCulture(getID()) - CvCity::getCultureThreshold((CultureLevelTypes)(pCity->getCultureLevel() - 1));
+			iCulture = pCity->getCulture(getID()) - pCity->getCultureThreshold((CultureLevelTypes)(pCity->getCultureLevel() - 1));
 		}
 
 		iCost *= iCulture;
@@ -17853,6 +17853,9 @@ void CvPlayer::doAction(PlayerActionTypes eAction, int iData1, int iData2, int i
 		transferUnitInPortRoyal(getUnit(iData1), getUnit(iData2));
 		break;
 	// R&R, ray, Port Royal - END
+	case PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE:
+		GC.getGameINLINE().writeDesyncLog();
+		break;
 	default:
 		FAssertMsg(false, "Unknown action");
 		break;
@@ -22717,4 +22720,14 @@ namespace
 void CvPlayer::sortEuropeUnits()
 {
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
+}
+
+void CvPlayer::writeDesyncLog(FILE *f)
+{
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		fprintf(f, "\tCity %d:\n", iLoop);
+		pLoopCity->writeDesyncLog(f);
+	}
 }

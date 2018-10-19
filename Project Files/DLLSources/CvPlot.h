@@ -446,6 +446,8 @@ public:
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
 
+	void writeDesyncLog(FILE *f);
+
 protected:
 
 	void updateImpassable();

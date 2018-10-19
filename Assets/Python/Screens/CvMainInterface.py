@@ -834,7 +834,12 @@ class CvMainInterface:
 		screen.setHitMargins("GoldPile", 30, 30)
 		self.appendtoHideState(screen, "GoldPile", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
 	# Robert Surcouf, Religion and Revolution Gold Pile Icon End
-			
+		
+		# desync log writing button
+		# TODO figure out how to make it appear as needed instead of always or never
+		if (0):
+			screen.setImageButton("DesyncButton", "pink", 100, 100, 100, 100, WidgetTypes.WIDGET_NETWORK_DESYNC, -1, -1)
+		
 	# AUTOMATE PRODUCTION & CITIZEN BUTTON
 		screen.addCheckBoxGFC("AutomateProduction", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_PRODUCTION").getPath(), ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath(), CITIZEN_BAR_WIDTH + ((xResolution - CITIZEN_BAR_WIDTH) * 3 / 7) , yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT - (STACK_BAR_HEIGHT * 2) - (SMALL_BUTTON_SIZE * 3 / 2), SMALL_BUTTON_SIZE * 2, SMALL_BUTTON_SIZE * 2, WidgetTypes.WIDGET_AUTOMATE_PRODUCTION, -1, -1, ButtonStyles.BUTTON_STYLE_LABEL )
 		self.appendtoHideState(screen, "AutomateProduction", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)

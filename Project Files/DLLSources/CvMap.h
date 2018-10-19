@@ -261,6 +261,8 @@ public:
 	DllExport virtual void write(FDataStreamBase* pStream);
 	void rebuild(int iGridW, int iGridH, int iTopLatitude, int iBottomLatitude, bool bWrapX, bool bWrapY, WorldSizeTypes eWorldSize, ClimateTypes eClimate, SeaLevelTypes eSeaLevel, int iNumCustomMapOptions, CustomMapOptionTypes * eCustomMapOptions);
 
+	void writeDesyncLog(FILE *f);
+
 protected:
 
 	int m_iGridWidth;
