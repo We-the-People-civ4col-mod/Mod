@@ -7329,7 +7329,6 @@ void CvCity::doYields()
 				gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
 			}
 		}
-		doAutoExport(eYield); // auto traderoute - Nightinggale
 	}
 
 	//Tangible yields, step n-1: Display one or several customs house message(s) to the player
@@ -7355,6 +7354,13 @@ void CvCity::doYields()
 		}
 	}
 
+	//Tangible yields, step n: doAutoExport(...)
+	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		doAutoExport(eYield); // auto traderoute - Nightinggale
+	}
+	
 	//Iterate the intangible yields
 	for (int iYield = YIELD_HAMMERS; iYield <= YIELD_EDUCATION; ++iYield)
 	{
