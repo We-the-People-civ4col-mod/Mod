@@ -7219,20 +7219,62 @@ void CvCity::doYields()
 	bHasProtectedOverflow = iProtectedOverflowTotal > 0 ? true : false;
 
 
-	//Tangible yields, step2: Calculate the loss for each yield
+	//Tangible yields, step2: Calculate the loss for each yield and deduct it from the storage
 	int aiLoss[NUM_YIELD_TYPES];
+	int iLossTotal = 0;
+	bool bHasLoss = false;
+	int aiProtectedLoss[NUM_YIELD_TYPES];
+	int iProtectedLossTotal = 0;
+	bool hasProtectedLoss = false;
+	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+
+		if (aiOverflow[iYield] > 0)
+		{
+			//Loss derives either from a percentage of the overflow or from a fixed amount ...
+			aiLoss[iYield] = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
+			//... but it can not be larger than the overflow.
+			aiLoss[iYield] = std::min(aiLoss[iYield], aiOverflow[iYield]);
+		}
+		else
+		{
+			//Loss can only happen, if there is overflow
+			aiLoss[iYield] = 0;
+		}
+
+		//Additionally, we want to know if an amount of protected yield was lost ...
+		if (aiProtectedOverflow[iYield] > 0)
+		{
+			//Protected yield was pushed into the overflow
+
+			//The loss of protected yield is the difference between the protected amount and the total amount minus the loss ...
+			aiProtectedLoss[iYield] = aiOverFlowProtectedYieldAmount[iYield] - (getYieldStored(eYield) - aiLoss[iYield]);
+			//... but only if it is positive - no negative loss
+			aiProtectedLoss[iYield] = std::max(aiProtectedLoss[iYield], 0);
+
+			iProtectedLossTotal += aiProtectedLoss[iYield];
+		}
+
+		//Deduct the loss from the storage
+		changeYieldStored(eYield, -aiLoss[iYield]);
+
+		iLossTotal += aiLoss[iYield];
+	}
+	bHasLoss = iLossTotal > 0 ? true : false;
+	hasProtectedLoss = iProtectedLossTotal > 0 ? true : false;
+
+
+	//Tangible yields, step 3: deduct loss, calculate profits and display messages.
 	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
 		if (aiOverflow[iYield] > 0)
 		{
-			int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
-			iLoss = std::min(iLoss, aiOverflow[iYield]);
-			changeYieldStored(eYield, -iLoss);
-					
 			// R&R, ray , Changes to Custom House - START
-			int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss);
+			int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, aiLoss[iYield]);
 
 			// Yield is boycotted but you have Custom House
 			if (iComparableProfitInEurope == 0 && bIgnoresBoycott)
@@ -7246,7 +7288,7 @@ void CvCity::doYields()
 				{
 					int briberate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
 					int minPrice = GC.getYieldInfo(eYield).getMinimumBuyPrice();
-					int iAmount = iLoss;
+					int iAmount = aiLoss[iYield];
 					iComparableProfitInEurope = iAmount * minPrice;
 					iComparableProfitInEurope -= (iComparableProfitInEurope * briberate) / 100;
 				}
@@ -7259,7 +7301,7 @@ void CvCity::doYields()
 				CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
 				GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 
-				int iDiscountedLoss = iOverflowYieldSellPercent * iLoss / 100;
+				int iDiscountedLoss = iOverflowYieldSellPercent * aiLoss[iYield] / 100;
 				GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
 				kPlayerEurope.changeYieldTradedTotal(eYield, iDiscountedLoss);
 				GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
@@ -7283,14 +7325,14 @@ void CvCity::doYields()
 				}
 				else 
 				{
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 				// R&R, ray , Changes to Custom House - END
 			}
 			else
 			{
-				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey());
+				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey());
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 			}
 		}
