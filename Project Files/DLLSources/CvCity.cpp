@@ -7336,21 +7336,6 @@ void CvCity::doYields()
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 			}
 		}
-		//VET NewCapacity -- ray fix for messages
-		//else if (aiYieldsNetChanges[eYield] > -aiOverflow[iYield])
-		else if (aiYieldsNetChanges[eYield] > -aiOverflow[iYield] && !GC.getNEW_CAPACITY())
-		{
-			CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-		}
-		//VET NewCapacity -- ray fix for messages - START
-		else if (iYield == 5 && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
-		{
-			CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-		}
-		//VET NewCapacity -- ray fix for messages - END
-
 	}
 
 
@@ -7368,6 +7353,57 @@ void CvCity::doYields()
 			}
 
 			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
+		}
+	}
+
+
+	//Tangible yields, step ???: Display in game warning messages about storage space
+	if (GC.getNEW_CAPACITY())
+	{
+		//We are in new storage type mode
+
+		if (bIsTotalOverflow)
+		{
+			//There is overflow
+		}
+		else
+		{
+			//There is NO overflow
+
+			//Display a warning message if there is less than 1/10 th of total storage space left
+			int iSpaceLeft = iTotalYields - iMaxCapacity;
+			if (iSpaceLeft < (iMaxCapacity / 10))
+			{
+				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+		}
+	}
+	else
+	{
+		//We are in old storage type mode
+
+		//Display a warning message for each yield individually
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored amount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+			CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+			if (aiOverflow[iYield] > 0)
+			{
+				//There is overflow
+			}
+			else
+			{
+				//There is NO overflow
+
+				//Display message if the net change is larger than the storage space left
+				if (aiYieldsNetChanges[iYield] > -aiOverflow[iYield])//aiOverflow[iYield] was set to (getYieldStored(eYield) - iMaxCapacity) earlier
+				{
+					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE", rYieldInfo.getChar(), getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+			}
 		}
 	}
 
