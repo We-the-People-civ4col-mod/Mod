@@ -7054,7 +7054,7 @@ void CvCity::doYields()
 	bool bIsTotalOverflow = iTotalOverflow > 0;
 
 	//The following vars are related to the storage loss selling
-	int iOverflowYieldSellPercent = getStorageLossSellPercentage();
+	int iStorageLossSellPercent = getStorageLossSellPercentage();
 	bool bIgnoresBoycott = getIgnoresBoycott();
 	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
@@ -7294,14 +7294,14 @@ void CvCity::doYields()
 				}
 			}
 
-			int iProfit = iOverflowYieldSellPercent * iComparableProfitInEurope / 100;
+			int iProfit = iStorageLossSellPercent * iComparableProfitInEurope / 100;
 			// R&R, ray , Changes to Custom House - END
 			if (iProfit > 0)
 			{
 				CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
 				GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 
-				int iDiscountedLoss = iOverflowYieldSellPercent * aiLoss[iYield] / 100;
+				int iDiscountedLoss = iStorageLossSellPercent * aiLoss[iYield] / 100;
 				GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
 				kPlayerEurope.changeYieldTradedTotal(eYield, iDiscountedLoss);
 				GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
