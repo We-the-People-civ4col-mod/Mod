@@ -7351,17 +7351,26 @@ void CvCity::doYields()
 		}
 		//VET NewCapacity -- ray fix for messages - END
 
-		if (aiYieldsNetChanges[eYield] > 0)
+	}
+
+
+	//Tangible yields, step n-2: Reward father points for net yield amounts
+	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		if (aiYieldsNetChanges[iYield] > 0)
 		{
 			for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 			{
-				FatherPointTypes ePointType = (FatherPointTypes) i;
-				GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYieldsNetChanges[eYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(eYield));
+				FatherPointTypes ePointType = (FatherPointTypes)i;
+				GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYieldsNetChanges[iYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(iYield));
 			}
 
 			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
 		}
 	}
+
 
 	//Tangible yields, step n-1: Display one or several customs house message(s) to the player
 	LPCTSTR psChmSoundType = bPlaySoundCustomsHouseMessage ? "AS2D_BUILD_BANK" : NULL;
