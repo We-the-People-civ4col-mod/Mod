@@ -554,6 +554,54 @@
 		<Spanish>La capacidad de almacenamiento en %s1_city es casi en su l&#237;mite, Mylord.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GOODS_SOLD_SUMMARY</Tag>
+		<English>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and sold for %d3 [ICON_GOLD].</English>
+		<French>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and sold for %d3 [ICON_GOLD].</French>
+		<German>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and sold for %d3 [ICON_GOLD].</German>
+		<Italian>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and sold for %d3 [ICON_GOLD].</Italian>
+		<Spanish>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and sold for %d3 [ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODS_SOLD_DETAIL</Tag>
+		<English>%d1_number %F2_yield_icon were sold for %d3 [ICON_GOLD] in %s4_city.</English>
+		<French>%d1_number %F2_yield_icon were sold for %d3 [ICON_GOLD] in %s4_city.</French>
+		<German>%d1_number %F2_yield_icon were sold for %d3 [ICON_GOLD] in %s4_city.</German>
+		<Italian>%d1_number %F2_yield_icon were sold for %d3 [ICON_GOLD] in %s4_city.</Italian>
+		<Spanish>%d1_number %F2_yield_icon were sold for %d3 [ICON_GOLD] in %s4_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODS_LOST_SUMMARY</Tag>
+		<English>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and lost.</English>
+		<French>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and lost.</French>
+		<German>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and lost.</German>
+		<Italian>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and lost.</Italian>
+		<Spanish>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and lost.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GOODS_LOST_DETAIL</Tag>
+		<English>%d1_number %F2_yield_icon were lost in %s3_city.</English>
+		<French>%d1_number %F2_yield_icon were lost in %s3_city.</French>
+		<German>%d1_number %F2_yield_icon were lost in %s3_city.</German>
+		<Italian>%d1_number %F2_yield_icon were lost in %s3_city.</Italian>
+		<Spanish>%d1_number %F2_yield_icon were lost in %s3_city.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY</Tag>
+		<English>Mylord, because you deemed more goods important in %s1_city than warehouse capacity is available, %d2_number important goods were part of the removal from the warehouse.</English>
+		<French>Mylord, because you deemed more goods important in %s1_city than warehouse capacity is available, %d2_number important goods were part of the removal from the warehouse.</French>
+		<German>Mylord, because you deemed more goods important in %s1_city than warehouse capacity is available, %d2_number important goods were part of the removal from the warehouse.</German>
+		<Italian>Mylord, because you deemed more goods important in %s1_city than warehouse capacity is available, %d2_number important goods were part of the removal from the warehouse.</Italian>
+		<Spanish>Mylord, because you deemed more goods important in %s1_city than warehouse capacity is available, %d2_number important goods were part of the removal from the warehouse.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL</Tag>
+		<English>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</English>
+		<French>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</French>
+		<German>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</German>
+		<Italian>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</Italian>
+		<Spanish>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BONUS_HORSES</Tag>
 		<English>Horses</English>
 		<French>

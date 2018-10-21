@@ -7058,6 +7058,19 @@ void CvCity::doYields()
 	bool bIgnoresBoycott = getIgnoresBoycott();
 	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
+	//The following vars set what kind of messages are displayed to the player and how
+	bool bMsgLostShow = true;			//Show message if yield has overflowen from warehouse and was removed and lost.
+	bool bMsgLostSound = true;
+	bool bMsgLostDetails = true;
+
+	bool bMsgSoldShow = true;			//Show message if yield has overflowen from warehouse and was removed and sold.
+	bool bMsgSoldSound = true;
+	bool bMsgSoldDetails = true;
+
+	bool bMsgImportantRemovedShow = true;		//Show message if yield, protected from overflow, was part of the removal.
+	bool bMsgImportantRemovedSound = true;
+	bool bMsgImportantRemovedDetails = true;
+
 	//Apply the net changes to the tangible yields (except YIELD_FOOD, as it is handled in doGrowth)
 	for (int iYield = YIELD_LUMBER; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7353,8 +7366,8 @@ void CvCity::doYields()
 			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iPoints);
 		}
 	}
-	
-	
+
+
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
@@ -7371,18 +7384,7 @@ void CvCity::doYields()
 					aiCustomsHouseProfit[iYield] = iProfit;
 					iCustomHouseProfit += iProfit;
 				}
-				else 
-				{
-					//Shades - Not selling with customs house, but still selling, does not give father points?
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-				}
 				// R&R, ray , Changes to Custom House - END
-			}
-			else
-			{
-				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey());
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 			}
 		}
 	}
@@ -7402,57 +7404,6 @@ void CvCity::doYields()
 			}
 
 			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
-		}
-	}
-
-
-	//Tangible yields, step ???: Display in game warning messages about storage space
-	if (GC.getNEW_CAPACITY())
-	{
-		//We are in new storage type mode
-
-		if (bIsTotalOverflow)
-		{
-			//There is overflow
-		}
-		else
-		{
-			//There is NO overflow
-
-			//Display a warning message if there is less than 1/10 th of total storage space left
-			int iSpaceLeft = iTotalYields - iMaxCapacity;
-			if (iSpaceLeft < (iMaxCapacity / 10))
-			{
-				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-			}
-		}
-	}
-	else
-	{
-		//We are in old storage type mode
-
-		//Display a warning message for each yield individually
-		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored amount and are excempt from overflow
-		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
-		{
-			YieldTypes eYield = (YieldTypes)iYield;
-			CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
-			if (aiOverflow[iYield] > 0)
-			{
-				//There is overflow
-			}
-			else
-			{
-				//There is NO overflow
-
-				//Display message if the net change is larger than the storage space left
-				if (aiYieldsNetChanges[iYield] > -aiOverflow[iYield])//aiOverflow[iYield] was set to (getYieldStored(eYield) - iMaxCapacity) earlier
-				{
-					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE", rYieldInfo.getChar(), getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-				}
-			}
 		}
 	}
 
@@ -7479,6 +7430,185 @@ void CvCity::doYields()
 			}
 		}
 	}
+
+
+	//Tangible yields: Display messages
+	if (GC.getNEW_CAPACITY())
+	{
+		//We are in new storage type mode ...
+
+		if (bHasLoss)
+		{
+			//There is loss
+
+			const wchar* pCityName = getNameKey();
+			if (bHasProfitTotal)
+			{
+				//We made a profit, so the removal was sold
+
+				if (bMsgSoldShow)
+				{
+					LPCTSTR sSound = bMsgLostSound ? "AS2D_BUILD_BANK" : NULL;
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
+
+					//Display summarized message
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iLossTotal, iProfitTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+
+					//Display detailed messages
+					if (bMsgSoldDetails)
+					{
+						//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+						for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+						{
+							YieldTypes eYield = (YieldTypes)iYield;
+							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+							if (aiProfit[iYield] > 0)
+							{
+								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiLoss[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
+								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+							}
+						}
+					}
+				}
+
+			}
+			else
+			{
+				//We made no profit, so the removal was lost (I think there can be cases, where we sold the goods, but made no profit. -> neglected)
+
+				if (bMsgLostShow)
+				{
+					LPCTSTR sSound = bMsgLostSound ? "AS2D_DEAL_CANCELLED" : NULL;
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+
+					//Display summarized message
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iLossTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+
+					//Display detailed messages
+					if (bMsgLostDetails)
+					{
+						//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+						for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+						{
+							YieldTypes eYield = (YieldTypes)iYield;
+							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+							if (aiLoss[iYield] > 0)
+							{
+								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiLoss[iYield], rYieldInfo.getChar(), pCityName);
+								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+							}
+						}
+					}
+				}
+
+			}
+			
+			if (hasProtectedLoss)
+			{
+				//Protected yield was removed
+
+				if (bMsgImportantRemovedShow)
+				{
+					LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+
+					//Display summarized message
+					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedLossTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+
+					//Display detailed messages
+					if (bMsgImportantRemovedDetails)
+					{
+						//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+						for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+						{
+							YieldTypes eYield = (YieldTypes)iYield;
+							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+							if (aiProtectedLoss[iYield] > 0)
+							{
+								CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedLoss[iYield], rYieldInfo.getChar(), pCityName);
+								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+							}
+						}
+					}
+				}
+			}
+		}
+		else
+		{
+			//There is NO loss
+
+			int iSpaceLeft = iMaxCapacity - iTotalYields;
+			if (iSpaceLeft < (iMaxCapacity / 10))
+			{
+				//There is less than 1/10 th of total storage space left
+
+				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+			else
+			{
+				//There is more than 1/10 th of storage space left
+
+				//Do nothing
+			}
+		}
+	}
+	else
+	{
+		//We are in old storage type mode ...
+
+		//Iterate yields and display message for each yield
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+			CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+			if (aiLoss[iYield] > 0)
+			{
+				//Some of this yield was getting lost ...
+
+				if (aiProfit[iYield] > 0)
+				{
+					//... but could be sold
+
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiLoss[iYield], rYieldInfo.getChar(), getNameKey(), aiProfit[iYield]);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+				else
+				{
+					//... and could not be sold.
+
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiLoss[iYield], rYieldInfo.getChar(), getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+			}
+			else
+			{
+				//No loss happened
+
+				//Check if the net change is larger than the storage space left.
+				if (aiYieldsNetChanges[iYield] > -aiOverflow[iYield])//aiOverflow[iYield] was set to (getYieldStored(eYield) - iMaxCapacity) earlier
+				{
+					//The net change is larger than the storage space left ...
+					//...means, there will be overflow next turn
+
+					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE", rYieldInfo.getChar(), getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+				else
+				{
+					//enough storage space
+
+					//do nothing
+				}
+
+			}
+		}
+	}
+
 
 	//Tangible yields, step n: doAutoExport(...)
 	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
