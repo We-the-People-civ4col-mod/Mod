@@ -267,10 +267,12 @@ build: $(Target_BIN)
 	-xcopy "..\PublicMaps\*" "$(YOURMOD)\PublicMaps\*" /e /y /f /d
 !ENDIF
 !ENDIF
+!IFDEF RELEASE
 !IFDEF ONE_PLOT_CITY_RADIUS
 	-COPY "$(Target_BIN)" "..\1 city plot\."
 !ELSE
 	-COPY "$(Target_BIN)" "..\2 city plot\."
+!ENDIF
 !ENDIF
 
 
