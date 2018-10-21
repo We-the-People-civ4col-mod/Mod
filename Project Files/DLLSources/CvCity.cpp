@@ -7266,40 +7266,69 @@ void CvCity::doYields()
 	hasProtectedLoss = iProtectedLossTotal > 0 ? true : false;
 
 
-	//Tangible yields, step 3: deduct loss, calculate profits and display messages.
-	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+	//Tangible yields, step ???: Calculate and book profits
+	//Prequisites for making a profit from a trade, lets get references to all parties who are invloved ...
+	PlayerTypes ePlayer = getOwnerINLINE();
+	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
+	PlayerTypes eKing = rPlayer.getParent();
+	CvPlayerAI& rKing = GET_PLAYER(eKing);
+
+	int aiProfit[NUM_YIELD_TYPES];
+	int iProfitTotal = 0;
+	bool bHasProfitTotal = false;
+	if (
+		eKing != NO_PLAYER					//We need to have a king in europe to sell the loss to ...
+		&& rPlayer.canTradeWithEurope()				//... and we are not at war with him, or at least can sell to europe despite a war with him.
+	)
+	{
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+			if (rPlayer.isYieldBoycotted(eYield))	
+			{
+				if (bIgnoresBoycott)
+				{
+					//The yield is boycotted but the boycott can be ignored
+
+					aiProfit[iYield] = (aiLoss[iYield] * GC.getYieldInfo(eYield).getMinimumBuyPrice());
+				}
+				else
+				{
+					//The yield is boycotted and the boycott can not be ignored
+
+					aiProfit[iYield] = 0;
+				}
+			}
+			else 
+			{
+				//There is no boycott on this yield
+
+				aiProfit[iYield] = (aiLoss[iYield] * rKing.getYieldBuyPrice(eYield));
+			}
+
+			//Apply penalty for storage loss selling, instead of exporting via ship. Also deduct tax.
+			aiProfit[iYield] = aiProfit[iYield] * iStorageLossSellPercent * (100 - rPlayer.getTaxRate()) / 10000;
+
+			iProfitTotal += aiProfit[iYield];
+		}
+
+		bHasProfitTotal = iProfitTotal > 0 ? true : false;
+
+		//Book profits
+		rPlayer.changeGold(iProfitTotal * rPlayer.getExtraTradeMultiplier(eKing) / 100);
+	}
+
+
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
 		if (aiOverflow[iYield] > 0)
 		{
-			// R&R, ray , Changes to Custom House - START
-			int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, aiLoss[iYield]);
-
-			// Yield is boycotted but you have Custom House
-			if (iComparableProfitInEurope == 0 && bIgnoresBoycott)
-			{
-				if (GET_PLAYER(getOwnerINLINE()).getParent() == NO_PLAYER)
-				{
-					iComparableProfitInEurope = 0;
-				}
-
-				else
-				{
-					int briberate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
-					int minPrice = GC.getYieldInfo(eYield).getMinimumBuyPrice();
-					int iAmount = aiLoss[iYield];
-					iComparableProfitInEurope = iAmount * minPrice;
-					iComparableProfitInEurope -= (iComparableProfitInEurope * briberate) / 100;
-				}
-			}
-
-			int iProfit = iStorageLossSellPercent * iComparableProfitInEurope / 100;
-			// R&R, ray , Changes to Custom House - END
+			int iProfit = aiProfit[iYield];
 			if (iProfit > 0)
 			{
 				CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
-				GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
 
 				int iDiscountedLoss = iStorageLossSellPercent * aiLoss[iYield] / 100;
 				GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
@@ -7307,10 +7336,10 @@ void CvCity::doYields()
 				GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
 
 				// R&R, ray , Changes to Custom House - START
-				// Selling with Custom House will get Trade Founding Father Points
 				// check if Custom House
 				if (bHasUnlockedTradeSettings)
 				{
+					// Selling with Custom House will get Trade Founding Father Points
 					for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 					{
 						//Divide by 2 because Custom House gives only half as Europe does
@@ -7325,6 +7354,7 @@ void CvCity::doYields()
 				}
 				else 
 				{
+					//Shades - Not selling with customs house, but still selling, does not give father points?
 					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 				}
