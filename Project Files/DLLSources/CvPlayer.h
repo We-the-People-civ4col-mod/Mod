@@ -445,6 +445,7 @@ public:
 	int getExtraYieldThreshold(YieldTypes eIndex) const;
 	void updateExtraYieldThreshold(YieldTypes eIndex);
 	int getYieldRate(YieldTypes eIndex) const;
+	bool isYieldBoycotted(YieldTypes eYield) const;
 	bool isYieldEuropeTradable(YieldTypes eIndex) const;
 	void setYieldEuropeTradable(YieldTypes eIndex, bool bTradeable);
 	void setYieldEuropeTradableAll();

@@ -8556,6 +8556,17 @@ int CvPlayer::getYieldRate(YieldTypes eIndex) const
 	return iTotalRate;
 }
 
+/*
+bool CvPlayer::isYieldBoycotted(YieldTypes eYield)const
+Complexity: O( 1 )
+Purpose: Returns if a yield is boycotted in europe or not.
+*/
+bool CvPlayer::isYieldBoycotted(YieldTypes eYield)const 
+{
+	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	return !m_abYieldEuropeTradable[eYield];
+}
+
 bool CvPlayer::isYieldEuropeTradable(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
