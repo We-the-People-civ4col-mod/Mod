@@ -7339,6 +7339,20 @@ void CvCity::doYields()
 			}
 		}
 	}
+
+
+	//Tangible yields: Award father points for auto-selling to europe
+	int iMultiplierFatherPointsAutoSelling = 50;//0 ... award no father points, 100 ... award same amount of father points as for selling in europe by ship
+	if (bHasProfitTotal)
+	{
+		int iPoints;
+		for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+		{
+			FatherPointTypes ePointType = (FatherPointTypes)i;
+			iPoints = iProfitTotal * iMultiplierFatherPointsAutoSelling * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 10000;
+			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iPoints);
+		}
+	}
 	
 	
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
@@ -7354,16 +7368,6 @@ void CvCity::doYields()
 				// check if Custom House
 				if (bHasUnlockedTradeSettings)
 				{
-					// Selling with Custom House will get Trade Founding Father Points
-					for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
-					{
-						//Divide by 2 because Custom House gives only half as Europe does
-						int iProfitForFatherPointsAtCustomHouse = iProfit / 2;
-
-						FatherPointTypes ePointType = (FatherPointTypes)i;
-						GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iProfitForFatherPointsAtCustomHouse * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100);
-					}
-
 					aiCustomsHouseProfit[iYield] = iProfit;
 					iCustomHouseProfit += iProfit;
 				}
