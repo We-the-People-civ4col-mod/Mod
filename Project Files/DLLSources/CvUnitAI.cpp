@@ -5438,7 +5438,7 @@ void CvUnitAI::AI_escortSeaMove()
 				return;
 			}
 
-			if (AI_group(UNITAI_ASSAULT_SEA, -1, /*iMaxOwnUnitAI*/ 1, -1, /*bIgnoreFaster*/ true, false, false, /*iMaxPath*/ getMoves()))
+			if (AI_group(UNITAI_ASSAULT_SEA, -1, /*iMaxOwnUnitAI*/ 1, -1, /*bIgnoreFaster*/ true, false, false, /*iMaxPath*/ baseMoves()))
 			{
 				return;
 			}
@@ -7351,7 +7351,7 @@ CvPlot* CvUnitAI::AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* 
 					if (pTransport->generatePath(pLoopPlot, 0, true, &iPathTurns))
 					{
 						iValue *= 1000;
-						iValue /= pTransport->maxMoves() * 100 + pTransport->getPathCost();
+						iValue /= pTransport->baseMoves() * 100 + pTransport->getPathCost();
 						
 						iValue /= 3 + pLoopPlot->getDistanceToOcean();
 						
@@ -7671,7 +7671,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 	}
 	if (kPromotion.getMoveDiscountChange() > 0)
 	{
-		if (maxMoves() > 1)
+		if (baseMoves() > 1)
 		{
 			iValue += (eUnitAI == UNITAI_SCOUT) ? 25 : 10;
 		}
@@ -9145,7 +9145,7 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 					CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
 					if (pMissionPlot != NULL)
 					{
-						if ((stepDistance(pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE(), getX_INLINE(), getY_INLINE()) / std::max(1, maxMoves())) <= iMaxPathTurns)
+						if ((stepDistance(pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE(), getX_INLINE(), getY_INLINE()) / std::max(1, baseMoves())) <= iMaxPathTurns)
 						{
 
 							bool bValid = true;
@@ -15740,7 +15740,7 @@ bool CvUnitAI::AI_assaultSeaReinforce(bool bNative)
 	int iValue;
 
 	// Loop over nearby plots for groups in enemy territory to reinforce
-	int iRange = 2*maxMoves();
+	int iRange = 2* baseMoves();
 	int iDX, iDY;
 	for (iDX = -(iRange); iDX <= iRange; iDX++)
 	{
