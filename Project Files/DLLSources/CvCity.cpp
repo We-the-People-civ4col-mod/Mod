@@ -7030,10 +7030,10 @@ void CvCity::doGrowth()
 
 void CvCity::doYields()
 {
-	int aiYields[NUM_YIELD_TYPES];
-	calculateNetYields(aiYields, NULL, NULL, true);
+	int aiYieldsNetChanges[NUM_YIELD_TYPES];//will store the net changes in yields
+	calculateNetYields(aiYieldsNetChanges, NULL, NULL, true);
 
-	sellToDomesticMarket(aiYields);
+	sellToDomesticMarket(aiYieldsNetChanges);
 
 	//Now iterate the yield types ...
 
@@ -7059,7 +7059,7 @@ void CvCity::doYields()
 			//YIELD_FOOD is handled in doGrowth and is ommited here
 			break;
 		default:
-			changeYieldStored(eYield, aiYields[eYield]);
+			changeYieldStored(eYield, aiYieldsNetChanges[eYield]);
 
 			int iOverflowYieldSellPercent = getStorageLossSellPercentage();
 			bool bIgnoresBoycott = getIgnoresBoycott();
@@ -7181,8 +7181,8 @@ void CvCity::doYields()
 					}
 				}
 				//VET NewCapacity -- ray fix for messages
-				//else if (aiYields[eYield] > -iExcess)
-				else if (aiYields[eYield] > -iExcess && !GC.getNEW_CAPACITY())
+				//else if (aiYieldsNetChanges[eYield] > -iExcess)
+				else if (aiYieldsNetChanges[eYield] > -iExcess && !GC.getNEW_CAPACITY())
 				{
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
@@ -7195,12 +7195,12 @@ void CvCity::doYields()
 				}
 				//VET NewCapacity -- ray fix for messages - END
 
-				if (aiYields[eYield] > 0)
+				if (aiYieldsNetChanges[eYield] > 0)
 				{
 					for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 					{
 						FatherPointTypes ePointType = (FatherPointTypes) i;
-						GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYields[eYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(eYield));
+						GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYieldsNetChanges[eYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(eYield));
 					}
 
 					gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
@@ -7241,7 +7241,7 @@ void CvCity::doYields()
 		{
 		case YIELD_HAMMERS:
 			// temporary storage for hammers. Production handled in doProduction
-			setYieldStored(eYield, aiYields[eYield]);
+			setYieldStored(eYield, aiYieldsNetChanges[eYield]);
 			break;
 		case YIELD_BELLS:
 			//handled in CvPlayer::doBells() and CvCity::doRebelSentiment() and possibly other locations
