@@ -7049,6 +7049,11 @@ void CvCity::doYields()
 	//VET NewCapacity - end 4/9
 	int iMaxCapacity = getMaxYieldCapacity();
 
+	//The following vars are related to the storage loss selling
+	int iOverflowYieldSellPercent = getStorageLossSellPercentage();
+	bool bIgnoresBoycott = getIgnoresBoycott();
+	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
+
 	//Iterate the tangible yields
 	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7058,153 +7063,150 @@ void CvCity::doYields()
 		case (YIELD_FOOD):
 			//YIELD_FOOD is handled in doGrowth and is ommited here
 			break;
+		case(YIELD_LUMBER):
+		case(YIELD_STONE):
+		    // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
+		    break;
 		default:
 			changeYieldStored(eYield, aiYieldsNetChanges[eYield]);
 
-			int iOverflowYieldSellPercent = getStorageLossSellPercentage();
-			bool bIgnoresBoycott = getIgnoresBoycott();
-			bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
-
-			if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
+			//VET NewCapacity - begin 6/9 -- ray fix
+			int iExcess = 0;
+			if (GC.getNEW_CAPACITY())
 			{
-				//VET NewCapacity - begin 6/9 -- ray fix
-				int iExcess = 0;
-				if (GC.getNEW_CAPACITY())
+				// Here special sell behaviour for Custom House
+				if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
 				{
-					// Here special sell behaviour for Custom House
-					if (bHasUnlockedTradeSettings && iTotalYields < iMaxCapacity)
+					int sellThreshold = 0;
+					// R&R, ray, finishing Custom House Screen
+					if (isCustomHouseNeverSell(eYield))
 					{
-						int sellThreshold = 0;
-						// R&R, ray, finishing Custom House Screen
-						if (isCustomHouseNeverSell(eYield))
-						{
-							sellThreshold = iMaxCapacity;
-						}
-						else 
-						{
-							sellThreshold = getCustomHouseSellThreshold(eYield);
-						}
-
-						//R&R, ray, fixing threshold displayed and internal differently for some gamespeeds e.g. Marathon
-						//sellThreshold = sellThreshold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
-						iExcess = getYieldStored(eYield) - sellThreshold;
+						sellThreshold = iMaxCapacity;
+					}
+					else 
+					{
+						sellThreshold = getCustomHouseSellThreshold(eYield);
 					}
 
-					// normal overflow
-					else
-					{
-						// R&R, ray, reprogrammed Overflow for New City Storage
-						if (getYieldStored(eYield) > 0 && iTotalYields > iMaxCapacity)
-						{
-							iExcess = (iTotalYields - iMaxCapacity) * getYieldStored(eYield) / iTotalYields;
-							if (iExcess == 0)
-							{
-								iExcess = 1;
-							}
-						}
-					}
+					//R&R, ray, fixing threshold displayed and internal differently for some gamespeeds e.g. Marathon
+					//sellThreshold = sellThreshold * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+					iExcess = getYieldStored(eYield) - sellThreshold;
 				}
-				// no new Capacity
+
+				// normal overflow
 				else
 				{
-//VET NewCapacity - end 6/9 -- ray fix
-					iExcess = getYieldStored(eYield) - iMaxCapacity;
-				}
-					
-				if (iExcess > 0)
-				{
-					int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
-					iLoss = std::min(iLoss, iExcess);
-					changeYieldStored(eYield, -iLoss);
-					
-					// R&R, ray , Changes to Custom House - START
-					int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss);
-
-					// Yield is boycotted but you have Custom House
-					if (iComparableProfitInEurope == 0 && bIgnoresBoycott)
+					// R&R, ray, reprogrammed Overflow for New City Storage
+					if (getYieldStored(eYield) > 0 && iTotalYields > iMaxCapacity)
 					{
-						if (GET_PLAYER(getOwnerINLINE()).getParent() == NO_PLAYER)
+						iExcess = (iTotalYields - iMaxCapacity) * getYieldStored(eYield) / iTotalYields;
+						if (iExcess == 0)
 						{
-							iComparableProfitInEurope = 0;
-						}
-
-						else
-						{
-							int briberate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
-							int minPrice = GC.getYieldInfo(eYield).getMinimumBuyPrice();
-							int iAmount = iLoss;
-							iComparableProfitInEurope = iAmount * minPrice;
-							iComparableProfitInEurope -= (iComparableProfitInEurope * briberate) / 100;
+							iExcess = 1;
 						}
 					}
+				}
+			}
+			// no new Capacity
+			else
+			{
+//VET NewCapacity - end 6/9 -- ray fix
+				iExcess = getYieldStored(eYield) - iMaxCapacity;
+			}
+					
+			if (iExcess > 0)
+			{
+				int iLoss = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * iExcess / 100, GC.getMIN_CITY_YIELD_DECAY());
+				iLoss = std::min(iLoss, iExcess);
+				changeYieldStored(eYield, -iLoss);
+					
+				// R&R, ray , Changes to Custom House - START
+				int iComparableProfitInEurope = GET_PLAYER(getOwnerINLINE()).getSellToEuropeProfit(eYield, iLoss);
 
-					int iProfit = iOverflowYieldSellPercent * iComparableProfitInEurope / 100;
-					// R&R, ray , Changes to Custom House - END
-					if (iProfit > 0)
+				// Yield is boycotted but you have Custom House
+				if (iComparableProfitInEurope == 0 && bIgnoresBoycott)
+				{
+					if (GET_PLAYER(getOwnerINLINE()).getParent() == NO_PLAYER)
 					{
-						CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
-						GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
+						iComparableProfitInEurope = 0;
+					}
 
-						int iDiscountedLoss = iOverflowYieldSellPercent * iLoss / 100;
-						GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
-						kPlayerEurope.changeYieldTradedTotal(eYield, iDiscountedLoss);
-						GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
+					else
+					{
+						int briberate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
+						int minPrice = GC.getYieldInfo(eYield).getMinimumBuyPrice();
+						int iAmount = iLoss;
+						iComparableProfitInEurope = iAmount * minPrice;
+						iComparableProfitInEurope -= (iComparableProfitInEurope * briberate) / 100;
+					}
+				}
 
-						// R&R, ray , Changes to Custom House - START
-						// Selling with Custom House will get Trade Founding Father Points
-						// check if Custom House
-						if (bHasUnlockedTradeSettings) 
+				int iProfit = iOverflowYieldSellPercent * iComparableProfitInEurope / 100;
+				// R&R, ray , Changes to Custom House - END
+				if (iProfit > 0)
+				{
+					CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
+					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit * GET_PLAYER(getOwnerINLINE()).getExtraTradeMultiplier(kPlayerEurope.getID()) / 100);
+
+					int iDiscountedLoss = iOverflowYieldSellPercent * iLoss / 100;
+					GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
+					kPlayerEurope.changeYieldTradedTotal(eYield, iDiscountedLoss);
+					GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
+
+					// R&R, ray , Changes to Custom House - START
+					// Selling with Custom House will get Trade Founding Father Points
+					// check if Custom House
+					if (bHasUnlockedTradeSettings) 
+					{
+						for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 						{
-							for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
-							{
-								//Divide by 2 because Custom House gives only half as Europe does
-								int iProfitForFatherPointsAtCustomHouse = iProfit / 2;
+							//Divide by 2 because Custom House gives only half as Europe does
+							int iProfitForFatherPointsAtCustomHouse = iProfit / 2;
 							
-								FatherPointTypes ePointType = (FatherPointTypes) i;
-								GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iProfitForFatherPointsAtCustomHouse * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100 );
-							}
+							FatherPointTypes ePointType = (FatherPointTypes) i;
+							GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iProfitForFatherPointsAtCustomHouse * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 100 );
+						}
 
 							aiCustomsHouseProfit[iYield] = iProfit;
 							iCustomHouseProfit += iProfit;
-						}
-						else 
-						{
-							CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-						}
-						// R&R, ray , Changes to Custom House - END
 					}
-					else
+					else 
 					{
-						CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey());
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+						CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey(), iProfit);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 					}
+					// R&R, ray , Changes to Custom House - END
 				}
-				//VET NewCapacity -- ray fix for messages
-				//else if (aiYieldsNetChanges[eYield] > -iExcess)
-				else if (aiYieldsNetChanges[eYield] > -iExcess && !GC.getNEW_CAPACITY())
+				else
 				{
-					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", iLoss, GC.getYieldInfo(eYield).getChar(), getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
-				//VET NewCapacity -- ray fix for messages - START
-				else if (iYield == 5 && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
-				{
-					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
-				}
-				//VET NewCapacity -- ray fix for messages - END
+			}
+			//VET NewCapacity -- ray fix for messages
+			//else if (aiYieldsNetChanges[eYield] > -iExcess)
+			else if (aiYieldsNetChanges[eYield] > -iExcess && !GC.getNEW_CAPACITY())
+			{
+				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE",GC.getYieldInfo(eYield).getChar(), getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+			//VET NewCapacity -- ray fix for messages - START
+			else if (iYield == 5 && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
+			{
+				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+			//VET NewCapacity -- ray fix for messages - END
 
-				if (aiYieldsNetChanges[eYield] > 0)
+			if (aiYieldsNetChanges[eYield] > 0)
+			{
+				for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 				{
-					for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
-					{
-						FatherPointTypes ePointType = (FatherPointTypes) i;
-						GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYieldsNetChanges[eYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(eYield));
-					}
-
-					gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
+					FatherPointTypes ePointType = (FatherPointTypes) i;
+					GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYieldsNetChanges[eYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(eYield));
 				}
+
+				gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
 			}
 		}
 		doAutoExport(eYield); // auto traderoute - Nightinggale
