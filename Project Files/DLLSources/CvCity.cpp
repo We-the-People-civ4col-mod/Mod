@@ -7035,6 +7035,8 @@ void CvCity::doYields()
 
 	sellToDomesticMarket(aiYields);
 
+	//Now iterate the yield types ...
+
 	//The following vars are needed for the type of customs house message(s) displayed to the player
 	bool bCustomsHouseSingleMessage = true;
 	bool bPlaySoundCustomsHouseMessage = false;
