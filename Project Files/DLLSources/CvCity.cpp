@@ -7047,32 +7047,14 @@ void CvCity::doYields()
 	int iCustomHouseProfit = 0;
 	int aiCustomsHouseProfit[NUM_YIELD_TYPES];
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-{
+	//Iterate the tangible yields
+	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	{
 		YieldTypes eYield = (YieldTypes) iYield;
 		switch (eYield)
 		{
-		case YIELD_FOOD:
-			// handled in doGrowth
-			break;
-		case YIELD_BELLS:
-			//handled in CvPlayer::doBells() and CvCity::doRebelSentiment() and possibly other locations
-			break;
-		case YIELD_HAMMERS:
-			// temporary storage for hammers. Production handled in doProduction
-			setYieldStored(eYield, aiYields[eYield]);
-			break;
-		case YIELD_CROSSES:
-			// handled in CvPlayer::doCrosses
-			break;
-		case YIELD_CULTURE:
-			//handled in doCulture() and doPlotCulture(...),  called from doTurn()
-			break;
-		case YIELD_HEALTH:
-			//handled in doCityHealth
-			break;
-		case YIELD_EDUCATION:
-			doYieldEducation();
+		case (YIELD_FOOD):
+			//YIELD_FOOD is handled in doGrowth and is ommited here
 			break;
 		default:
 			changeYieldStored(eYield, aiYields[eYield]);
@@ -7246,6 +7228,34 @@ void CvCity::doYields()
 				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 			}
+		}
+	}
+
+	//Iterate the intangible yields
+	for (int iYield = YIELD_HAMMERS; iYield <= YIELD_EDUCATION; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		switch (eYield)
+		{
+		case YIELD_HAMMERS:
+			// temporary storage for hammers. Production handled in doProduction
+			setYieldStored(eYield, aiYields[eYield]);
+			break;
+		case YIELD_BELLS:
+			//handled in CvPlayer::doBells() and CvCity::doRebelSentiment() and possibly other locations
+			break;
+		case YIELD_CROSSES:
+			// handled in CvPlayer::doCrosses
+			break;
+		case YIELD_CULTURE:
+			//handled in doCulture() and doPlotCulture(...),  called from doTurn()
+			break;
+		case YIELD_HEALTH:
+			//handled in doCityHealth
+			break;
+		case YIELD_EDUCATION:
+			doYieldEducation();
+			break;
 		}
 	}
 }
