@@ -7033,12 +7033,6 @@ void CvCity::doYields()
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, NULL, NULL, true);
 
-//VET NewCapacity - begin 4/9
-	int iTotalYields = getTotalYieldStored();
-//VET NewCapacity - end 4/9
-	int iMaxCapacity = getMaxYieldCapacity();
-	
-	
 	sellToDomesticMarket(aiYields);
 
 	//The following vars are needed for the type of customs house message(s) displayed to the player
@@ -7046,6 +7040,12 @@ void CvCity::doYields()
 	bool bPlaySoundCustomsHouseMessage = false;
 	int iCustomHouseProfit = 0;
 	int aiCustomsHouseProfit[NUM_YIELD_TYPES];
+
+	//The following vars are needed for the parallel implementation of old and new storage type
+	//VET NewCapacity - begin 4/9
+	int iTotalYields = getTotalYieldStored();
+	//VET NewCapacity - end 4/9
+	int iMaxCapacity = getMaxYieldCapacity();
 
 	//Iterate the tangible yields
 	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
