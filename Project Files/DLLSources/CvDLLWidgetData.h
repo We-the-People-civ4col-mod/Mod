@@ -96,6 +96,7 @@ protected:
 	void doMenu();
 
 	void doDoubleClickCitizen(const CvWidgetDataStruct& widgetDataStruct);
+	void doDoubleClickGarrison(const CvWidgetDataStruct& widgetDataStruct);
 	void doDoubleClickDock(const CvWidgetDataStruct& widgetDataStruct);
 
 	//	Help parsing

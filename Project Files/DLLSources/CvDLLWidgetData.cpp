@@ -783,6 +783,10 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 		doDoubleClickCitizen(widgetDataStruct);
 		break;
 
+	case WIDGET_EJECT_CITIZEN:
+		doDoubleClickGarrison(widgetDataStruct);
+		break;
+
 	case WIDGET_DOCK:
 		doDoubleClickDock(widgetDataStruct);
 		break;
@@ -4038,6 +4042,23 @@ void CvDLLWidgetData::doDoubleClickCitizen(const CvWidgetDataStruct& widgetDataS
 	if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 	{
 		CvUnit* pUnit = pHeadSelectedCity->getPopulationUnitById(widgetDataStruct.m_iData1);
+		if (pUnit != NULL)
+		{
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_PROFESSION, pHeadSelectedCity->getID(), pUnit->getID());
+			gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
+		}
+	}
+}
+
+void CvDLLWidgetData::doDoubleClickGarrison(const CvWidgetDataStruct& widgetDataStruct)
+{
+	// Don't check if the unit is one of those, which can't have professions (like cannons)
+	// The popup window will take care of that when opening (or skip opening)
+	CvCity* pHeadSelectedCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+
+	if (pHeadSelectedCity != NULL && pHeadSelectedCity->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+	{
+		CvUnit* pUnit = GET_PLAYER(pHeadSelectedCity->getOwnerINLINE()).getUnit(widgetDataStruct.m_iData1);
 		if (pUnit != NULL)
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CHOOSE_PROFESSION, pHeadSelectedCity->getID(), pUnit->getID());
