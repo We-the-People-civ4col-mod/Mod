@@ -7320,6 +7320,27 @@ void CvCity::doYields()
 	}
 
 
+	//Tangible yields, step ???: Update yield trade volumes
+	if (bHasProfitTotal)
+	{
+		//Something was sold to europe
+
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored amount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			YieldTypes eYield = (YieldTypes)iYield;
+
+			if (aiProfit[iYield] > 0)
+			{
+				int iDiscountedLoss = iStorageLossSellPercent * aiLoss[iYield] / 100;
+				rPlayer.changeYieldTradedTotal(eYield, iDiscountedLoss);
+				rKing.changeYieldTradedTotal(eYield, iDiscountedLoss);
+				GC.getGameINLINE().changeYieldBoughtTotal(eKing, eYield, -iDiscountedLoss);
+			}
+		}
+	}
+	
+	
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
@@ -7328,12 +7349,6 @@ void CvCity::doYields()
 			int iProfit = aiProfit[iYield];
 			if (iProfit > 0)
 			{
-				CvPlayer& kPlayerEurope = GET_PLAYER(GET_PLAYER(getOwnerINLINE()).getParent());
-
-				int iDiscountedLoss = iStorageLossSellPercent * aiLoss[iYield] / 100;
-				GET_PLAYER(getOwnerINLINE()).changeYieldTradedTotal(eYield, iDiscountedLoss);
-				kPlayerEurope.changeYieldTradedTotal(eYield, iDiscountedLoss);
-				GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, -iDiscountedLoss);
 
 				// R&R, ray , Changes to Custom House - START
 				// check if Custom House
