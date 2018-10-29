@@ -7279,7 +7279,7 @@ void CvCity::doYields()
 	hasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
-	//Tangible yields, step ???: Calculate and book profits
+	//Tangible yields, step ???: Calculate and book profits, track sold and lost amounts
 	//Prequisites for making a profit from a trade, lets get references to all parties who are invloved ...
 	PlayerTypes ePlayer = getOwnerINLINE();
 	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
@@ -7289,6 +7289,14 @@ void CvCity::doYields()
 	int aiProfit[NUM_YIELD_TYPES];
 	int iProfitTotal = 0;
 	bool bHasProfitTotal = false;
+
+	int aiSales[NUM_YIELD_TYPES];
+	int iSalesTotal = 0;
+	bool bHasSales = false;
+
+	int aiLosses[NUM_YIELD_TYPES];
+	int iLossesTotal = 0;
+	bool bHasLosses = false;
 	if (
 		eKing != NO_PLAYER					//We need to have a king in europe to sell the removal to ...
 		&& rPlayer.canTradeWithEurope()				//... and we are not at war with him, or at least can sell to europe despite a war with him.
@@ -7304,11 +7312,17 @@ void CvCity::doYields()
 				{
 					//The yield is boycotted but the boycott can be ignored
 
+					aiSales[iYield] = aiRemoval[iYield];
+					aiLosses[iYield] = 0;
+
 					aiProfit[iYield] = (aiRemoval[iYield] * GC.getYieldInfo(eYield).getMinimumBuyPrice());
 				}
 				else
 				{
 					//The yield is boycotted and the boycott can not be ignored
+
+					aiSales[iYield] = 0;
+					aiLosses[iYield] = aiRemoval[iYield];
 
 					aiProfit[iYield] = 0;
 				}
@@ -7317,15 +7331,21 @@ void CvCity::doYields()
 			{
 				//There is no boycott on this yield
 
+				aiSales[iYield] = aiRemoval[iYield];
+				aiLosses[iYield] = 0;
+
 				aiProfit[iYield] = (aiRemoval[iYield] * rKing.getYieldBuyPrice(eYield));
 			}
 
 			//Apply penalty for storage removal selling, instead of exporting via ship. Also deduct tax.
 			aiProfit[iYield] = aiProfit[iYield] * iStorageRemovalSellPercentage * (100 - rPlayer.getTaxRate()) / 10000;
 
+			iSalesTotal += aiSales[iYield];
+			iLossesTotal += aiLosses[iYield];
 			iProfitTotal += aiProfit[iYield];
 		}
-
+		bHasSales = iSalesTotal > 0 ? true : false;
+		bHasLosses = iLossesTotal > 0 ? true : false;
 		bHasProfitTotal = iProfitTotal > 0 ? true : false;
 
 		//Book profits
