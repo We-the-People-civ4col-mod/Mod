@@ -7050,8 +7050,8 @@ void CvCity::doYields()
 	//VET NewCapacity - end 4/9
 	int iMaxCapacity = getMaxYieldCapacity();//In case you are wondering, getMaxYieldCapacity() returns the proper max capacity, depending on the storage type mode (old/new).
 	//Is there overflow in the new storage type?
-	int iTotalOverflow = iTotalYields - iMaxCapacity;
-	bool bIsTotalOverflow = iTotalOverflow > 0;
+	int iOverflowTotal = iTotalYields - iMaxCapacity;
+	bool bHasOverflowTotal = iOverflowTotal > 0;
 
 	//The following vars are related to the storage loss selling
 	int iStorageLossSellPercent = getStorageLossSellPercentage();
@@ -7090,7 +7090,7 @@ void CvCity::doYields()
 	//We want to know this, if ...
 	if(
 		GC.getNEW_CAPACITY()			//... we are in new storage type mode ...
-		&& bIsTotalOverflow			//... and there is overflow ...
+		&& bHasOverflowTotal			//... and there is overflow ...
 		&& bHasUnlockedTradeSettings		//and only if the storage loss trade settings are unlocked
 	)
 	{
@@ -7132,7 +7132,7 @@ void CvCity::doYields()
 	{
 		//We are in new storage type mode ...
 
-		if (bIsTotalOverflow)
+		if (bHasOverflowTotal)
 		{
 			//... and there is overflow ...
 
