@@ -7054,7 +7054,7 @@ void CvCity::doYields()
 	bool bHasOverflowTotal = iOverflowTotal > 0;
 
 	//The following vars are related to the storage loss selling
-	int iStorageLossSellPercent = getStorageLossSellPercentage();
+	int iStorageRemovalSellPercentage = getStorageLossSellPercentage();
 	bool bIgnoresBoycott = getIgnoresBoycott();
 	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
@@ -7232,13 +7232,13 @@ void CvCity::doYields()
 	bHasProtectedOverflow = iProtectedOverflowTotal > 0 ? true : false;
 
 
-	//Tangible yields, step2: Calculate the loss for each yield and deduct it from the storage
-	int aiLoss[NUM_YIELD_TYPES];
-	int iLossTotal = 0;
-	bool bHasLoss = false;
-	int aiProtectedLoss[NUM_YIELD_TYPES];
-	int iProtectedLossTotal = 0;
-	bool hasProtectedLoss = false;
+	//Tangible yields, step2: Calculate the removal for each yield and deduct it from the storage
+	int aiRemoval[NUM_YIELD_TYPES];
+	int iRemovalTotal = 0;
+	bool bHasRemoval = false;
+	int aiProtectedRemoval[NUM_YIELD_TYPES];
+	int iProtectedRemovalTotal = 0;
+	bool hasProtectedRemoval = false;
 	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7246,37 +7246,37 @@ void CvCity::doYields()
 
 		if (aiOverflow[iYield] > 0)
 		{
-			//Loss derives either from a percentage of the overflow or from a fixed amount ...
-			aiLoss[iYield] = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
+			//Removal derives either from a percentage of the overflow or from a fixed amount ...
+			aiRemoval[iYield] = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
 			//... but it can not be larger than the overflow.
-			aiLoss[iYield] = std::min(aiLoss[iYield], aiOverflow[iYield]);
+			aiRemoval[iYield] = std::min(aiRemoval[iYield], aiOverflow[iYield]);
 		}
 		else
 		{
-			//Loss can only happen, if there is overflow
-			aiLoss[iYield] = 0;
+			//Removal can only happen, if there is overflow
+			aiRemoval[iYield] = 0;
 		}
 
-		//Additionally, we want to know if an amount of protected yield was lost ...
+		//Additionally, we want to know if an amount of protected yield was removed ...
 		if (aiProtectedOverflow[iYield] > 0)
 		{
 			//Protected yield was pushed into the overflow
 
-			//The loss of protected yield is the difference between the protected amount and the total amount minus the loss ...
-			aiProtectedLoss[iYield] = aiOverFlowProtectedYieldAmount[iYield] - (getYieldStored(eYield) - aiLoss[iYield]);
-			//... but only if it is positive - no negative loss
-			aiProtectedLoss[iYield] = std::max(aiProtectedLoss[iYield], 0);
+			//The removal of protected yield is the difference between the protected amount and the total amount minus the removal ...
+			aiProtectedRemoval[iYield] = aiOverFlowProtectedYieldAmount[iYield] - (getYieldStored(eYield) - aiRemoval[iYield]);
+			//... but only if it is positive - no negative removal
+			aiProtectedRemoval[iYield] = std::max(aiProtectedRemoval[iYield], 0);
 
-			iProtectedLossTotal += aiProtectedLoss[iYield];
+			iProtectedRemovalTotal += aiProtectedRemoval[iYield];
 		}
 
-		//Deduct the loss from the storage
-		changeYieldStored(eYield, -aiLoss[iYield]);
+		//Deduct the removal from the storage
+		changeYieldStored(eYield, -aiRemoval[iYield]);
 
-		iLossTotal += aiLoss[iYield];
+		iRemovalTotal += aiRemoval[iYield];
 	}
-	bHasLoss = iLossTotal > 0 ? true : false;
-	hasProtectedLoss = iProtectedLossTotal > 0 ? true : false;
+	bHasRemoval = iRemovalTotal > 0 ? true : false;
+	hasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
 	//Tangible yields, step ???: Calculate and book profits
@@ -7290,7 +7290,7 @@ void CvCity::doYields()
 	int iProfitTotal = 0;
 	bool bHasProfitTotal = false;
 	if (
-		eKing != NO_PLAYER					//We need to have a king in europe to sell the loss to ...
+		eKing != NO_PLAYER					//We need to have a king in europe to sell the removal to ...
 		&& rPlayer.canTradeWithEurope()				//... and we are not at war with him, or at least can sell to europe despite a war with him.
 	)
 	{
@@ -7304,7 +7304,7 @@ void CvCity::doYields()
 				{
 					//The yield is boycotted but the boycott can be ignored
 
-					aiProfit[iYield] = (aiLoss[iYield] * GC.getYieldInfo(eYield).getMinimumBuyPrice());
+					aiProfit[iYield] = (aiRemoval[iYield] * GC.getYieldInfo(eYield).getMinimumBuyPrice());
 				}
 				else
 				{
@@ -7317,11 +7317,11 @@ void CvCity::doYields()
 			{
 				//There is no boycott on this yield
 
-				aiProfit[iYield] = (aiLoss[iYield] * rKing.getYieldBuyPrice(eYield));
+				aiProfit[iYield] = (aiRemoval[iYield] * rKing.getYieldBuyPrice(eYield));
 			}
 
-			//Apply penalty for storage loss selling, instead of exporting via ship. Also deduct tax.
-			aiProfit[iYield] = aiProfit[iYield] * iStorageLossSellPercent * (100 - rPlayer.getTaxRate()) / 10000;
+			//Apply penalty for storage removal selling, instead of exporting via ship. Also deduct tax.
+			aiProfit[iYield] = aiProfit[iYield] * iStorageRemovalSellPercentage * (100 - rPlayer.getTaxRate()) / 10000;
 
 			iProfitTotal += aiProfit[iYield];
 		}
@@ -7345,7 +7345,7 @@ void CvCity::doYields()
 
 			if (aiProfit[iYield] > 0)
 			{
-				int iDiscountedLoss = iStorageLossSellPercent * aiLoss[iYield] / 100;
+				int iDiscountedLoss = iStorageRemovalSellPercentage * aiRemoval[iYield] / 100;
 				rPlayer.changeYieldTradedTotal(eYield, iDiscountedLoss);
 				rKing.changeYieldTradedTotal(eYield, iDiscountedLoss);
 				GC.getGameINLINE().changeYieldBoughtTotal(eKing, eYield, -iDiscountedLoss);
@@ -7425,7 +7425,7 @@ void CvCity::doYields()
 			if (aiCustomsHouseProfit[iYield] > 0)
 			{
 				YieldTypes eYield = (YieldTypes)iYield;
-				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiLoss[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
+				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiRemoval[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 			}
 		}
@@ -7437,9 +7437,9 @@ void CvCity::doYields()
 	{
 		//We are in new storage type mode ...
 
-		if (bHasLoss)
+		if (bHasRemoval)
 		{
-			//There is loss
+			//There is removal
 
 			const wchar* pCityName = getNameKey();
 			if (bHasProfitTotal)
@@ -7452,7 +7452,7 @@ void CvCity::doYields()
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
 
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iLossTotal, iProfitTotal);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iRemovalTotal, iProfitTotal);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
 
 					//Display detailed messages
@@ -7465,7 +7465,7 @@ void CvCity::doYields()
 							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
 							if (aiProfit[iYield] > 0)
 							{
-								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiLoss[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
+								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiRemoval[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
 								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 							}
 						}
@@ -7483,7 +7483,7 @@ void CvCity::doYields()
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
 
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iLossTotal);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iRemovalTotal);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
 
 					//Display detailed messages
@@ -7494,9 +7494,9 @@ void CvCity::doYields()
 						{
 							YieldTypes eYield = (YieldTypes)iYield;
 							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
-							if (aiLoss[iYield] > 0)
+							if (aiRemoval[iYield] > 0)
 							{
-								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiLoss[iYield], rYieldInfo.getChar(), pCityName);
+								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiRemoval[iYield], rYieldInfo.getChar(), pCityName);
 								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 							}
 						}
@@ -7505,7 +7505,7 @@ void CvCity::doYields()
 
 			}
 			
-			if (hasProtectedLoss)
+			if (hasProtectedRemoval)
 			{
 				//Protected yield was removed
 
@@ -7515,7 +7515,7 @@ void CvCity::doYields()
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
 
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedLossTotal);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 
 					//Display detailed messages
@@ -7526,9 +7526,9 @@ void CvCity::doYields()
 						{
 							YieldTypes eYield = (YieldTypes)iYield;
 							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
-							if (aiProtectedLoss[iYield] > 0)
+							if (aiProtectedRemoval[iYield] > 0)
 							{
-								CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedLoss[iYield], rYieldInfo.getChar(), pCityName);
+								CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedRemoval[iYield], rYieldInfo.getChar(), pCityName);
 								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 							}
 						}
@@ -7538,7 +7538,7 @@ void CvCity::doYields()
 		}
 		else
 		{
-			//There is NO loss
+			//There is NO removal
 
 			int iSpaceLeft = iMaxCapacity - iTotalYields;
 			if (iSpaceLeft < (iMaxCapacity / 10))
@@ -7566,28 +7566,28 @@ void CvCity::doYields()
 		{
 			YieldTypes eYield = (YieldTypes)iYield;
 			CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
-			if (aiLoss[iYield] > 0)
+			if (aiRemoval[iYield] > 0)
 			{
-				//Some of this yield was getting lost ...
+				//Some of this yield was removed ...
 
 				if (aiProfit[iYield] > 0)
 				{
 					//... but could be sold
 
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiLoss[iYield], rYieldInfo.getChar(), getNameKey(), aiProfit[iYield]);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiRemoval[iYield], rYieldInfo.getChar(), getNameKey(), aiProfit[iYield]);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 				else
 				{
 					//... and could not be sold.
 
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiLoss[iYield], rYieldInfo.getChar(), getNameKey());
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiRemoval[iYield], rYieldInfo.getChar(), getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 			}
 			else
 			{
-				//No loss happened
+				//Nothing was removed
 
 				//Check if the net change is larger than the storage space left.
 				if (aiYieldsNetChanges[iYield] > -aiOverflow[iYield])//aiOverflow[iYield] was set to (getYieldStored(eYield) - iMaxCapacity) earlier
