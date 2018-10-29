@@ -7085,7 +7085,7 @@ void CvCity::doYields()
 	from being pushed into the overflow. We need the sum of these amounts in a second iteration, to correctly 
 	calculate the overflow for each yield.
 	*/
-	int iTotalOverflowProtectedYieldAmount = 0;
+	int iOverflowProtectedYieldAmountTotal = 0;
 	int aiOverFlowProtectedYieldAmount[NUM_YIELD_TYPES];//While we are at it, we also store yield specific values.
 	//We want to know this, if ...
 	if(
@@ -7118,7 +7118,7 @@ void CvCity::doYields()
 				}
 			}
 
-			iTotalOverflowProtectedYieldAmount += aiOverFlowProtectedYieldAmount[iYield];
+			iOverflowProtectedYieldAmountTotal += aiOverFlowProtectedYieldAmount[iYield];
 		}
 	}
 
@@ -7142,14 +7142,14 @@ void CvCity::doYields()
 
 				//Calculate how much of this yield is overflow.
 				//There are two scenarios: The total yield amount, protected from overflow, ...
-				if (iTotalOverflowProtectedYieldAmount > iMaxCapacity)
+				if (iOverflowProtectedYieldAmountTotal > iMaxCapacity)
 				{
 					//1. ... is larger than the storage capacity
 					//In this scenario, everything over the protected amount is overflow ...
 					//... plus a proportion of the protected amount (the player can not cheat and protect too much yield from overflow).
 
 					//Multiplier is the same for all yields
-					int iMultiplier = ((iTotalOverflowProtectedYieldAmount - iMaxCapacity) * 100) / iTotalOverflowProtectedYieldAmount;
+					int iMultiplier = ((iOverflowProtectedYieldAmountTotal - iMaxCapacity) * 100) / iOverflowProtectedYieldAmountTotal;
 					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 					{
@@ -7172,7 +7172,7 @@ void CvCity::doYields()
 					//In this scenario, a proportion of the amount over the protected amount is overflow.
 
 					//Multiplier is the same for all yields
-					int iMultiplier = ((iTotalYields - iMaxCapacity) * 100) / (iTotalYields - iTotalOverflowProtectedYieldAmount);
+					int iMultiplier = ((iTotalYields - iMaxCapacity) * 100) / (iTotalYields - iOverflowProtectedYieldAmountTotal);
 					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 					{
