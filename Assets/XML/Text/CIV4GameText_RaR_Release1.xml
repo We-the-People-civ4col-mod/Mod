@@ -2061,14 +2061,6 @@ Multiple repeating units is possible and an equal number will be trained of each
 		<Italian>Mai vendere</Italian>
 		<Spanish>Nunca Vender</Spanish>
 	</TEXT>
-		<TEXT>
-		<Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE</Tag>
-		<English>The custom house in %s3_city has sold %d1_number%F2_yield_icon for %d4[ICON_GOLD].</English>
-		<French>Le poste de douane de %s3_city a vendu %d1_number%F2_yield_icon pour %d4[ICON_GOLD].</French>
-		<German>Das Zollhaus in %s3_city hat %d1_number%F2_yield_icon f&#252;r %d4[ICON_GOLD] verkauft.</German>
-		<Italian>The custom house in %s3_city has sold %d1_number%F2_yield_icon for %d4[ICON_GOLD].</Italian>
-		<Spanish>The custom house in %s3_city has sold %d1_number%F2_yield_icon for %d4[ICON_GOLD].</Spanish>
-	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NATIVES_NOT_WILLING_TO_TALK</Tag>
 		<English>Sire, the Natives in %s1_city are not willing to talk with us. Only angry faces stare at our men. [NEWLINE] We should come back when our relations have improved.</English>
@@ -2980,14 +2972,6 @@ Multiple repeating units is possible and an equal number will be trained of each
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE</Tag>
-		<English>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</English>
-		<French>Le poste de douane de %s1_city a vendu des biens pour une valeur de %d2[ICON_GOLD].</French>
-		<German>Das Zollhaus von %s1_city hat Waren im Wert von %d2[ICON_GOLD] verkauft.</German>
-		<Italian>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</Italian>
-		<Spanish>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>

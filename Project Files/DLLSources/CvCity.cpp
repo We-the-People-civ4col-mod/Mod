@@ -7038,12 +7038,6 @@ void CvCity::doYields()
 	//Now iterate the yield types ...
 	//General Information: Yield food and it's special mechanics are handled in CvCity::doGrowth().
 
-	//The following vars are needed for the type of customs house message(s) displayed to the player
-	bool bCustomsHouseSingleMessage = true;
-	bool bPlaySoundCustomsHouseMessage = false;
-	int iCustomHouseProfit = 0;
-	int aiCustomsHouseProfit[NUM_YIELD_TYPES];
-
 	//The following vars are needed for the parallel implementation of old and new storage type
 	//VET NewCapacity - begin 4/9
 	int iTotalYields = getTotalYieldStored();
@@ -7408,28 +7402,6 @@ void CvCity::doYields()
 	}
 
 
-	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
-	{
-		YieldTypes eYield = (YieldTypes)iYield;
-		if (aiSales[iYield] > 0)
-		{
-			int iProfit = aiProfit[iYield];
-			if (iProfit > 0)
-			{
-
-				// R&R, ray , Changes to Custom House - START
-				// check if Custom House
-				if (bHasUnlockedTradeSettings)
-				{
-					aiCustomsHouseProfit[iYield] = iProfit;
-					iCustomHouseProfit += iProfit;
-				}
-				// R&R, ray , Changes to Custom House - END
-			}
-		}
-	}
-
-
 	//Tangible yields, step n-2: Reward father points for net yield amounts
 	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
@@ -7444,30 +7416,6 @@ void CvCity::doYields()
 			}
 
 			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
-		}
-	}
-
-
-	//Tangible yields, step n-1: Display one or several customs house message(s) to the player
-	LPCTSTR psChmSoundType = bPlaySoundCustomsHouseMessage ? "AS2D_BUILD_BANK" : NULL;
-	if (bCustomsHouseSingleMessage)
-	{
-		if (iCustomHouseProfit > 0)
-		{
-			CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE", getNameKey(), iCustomHouseProfit);
-			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-		}
-	}
-	else
-	{
-		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
-		{
-			if (aiCustomsHouseProfit[iYield] > 0)
-			{
-				YieldTypes eYield = (YieldTypes)iYield;
-				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiSales[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
-				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
-			}
 		}
 	}
 
