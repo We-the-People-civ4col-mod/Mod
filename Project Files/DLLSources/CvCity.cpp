@@ -7354,7 +7354,7 @@ void CvCity::doYields()
 
 
 	//Tangible yields, step ???: Update yield trade volumes
-	if (bHasProfitTotal)
+	if (bHasSales)
 	{
 		//Something was sold to europe
 
@@ -7363,9 +7363,9 @@ void CvCity::doYields()
 		{
 			YieldTypes eYield = (YieldTypes)iYield;
 
-			if (aiProfit[iYield] > 0)
+			if (aiSales[iYield] > 0)
 			{
-				int iDiscountedLoss = iStorageRemovalSellPercentage * aiRemoval[iYield] / 100;
+				int iDiscountedLoss = iStorageRemovalSellPercentage * aiSales[iYield] / 100;
 				rPlayer.changeYieldTradedTotal(eYield, iDiscountedLoss);
 				rKing.changeYieldTradedTotal(eYield, iDiscountedLoss);
 				GC.getGameINLINE().changeYieldBoughtTotal(eKing, eYield, -iDiscountedLoss);
@@ -7391,7 +7391,7 @@ void CvCity::doYields()
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
-		if (aiOverflow[iYield] > 0)
+		if (aiSales[iYield] > 0)
 		{
 			int iProfit = aiProfit[iYield];
 			if (iProfit > 0)
@@ -7445,7 +7445,7 @@ void CvCity::doYields()
 			if (aiCustomsHouseProfit[iYield] > 0)
 			{
 				YieldTypes eYield = (YieldTypes)iYield;
-				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiRemoval[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
+				CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE", aiSales[iYield], GC.getYieldInfo(eYield).getChar(), getNameKey(), aiCustomsHouseProfit[iYield]);
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, psChmSoundType, MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 			}
 		}
@@ -7462,9 +7462,9 @@ void CvCity::doYields()
 			//There is removal
 
 			const wchar* pCityName = getNameKey();
-			if (bHasProfitTotal)
+			if (bHasSales)
 			{
-				//We made a profit, so the removal was sold
+				//Something was sold
 
 				if (bMsgSoldShow)
 				{
@@ -7472,7 +7472,7 @@ void CvCity::doYields()
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
 
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iRemovalTotal, iProfitTotal);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
 
 					//Display detailed messages
@@ -7483,9 +7483,9 @@ void CvCity::doYields()
 						{
 							YieldTypes eYield = (YieldTypes)iYield;
 							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
-							if (aiProfit[iYield] > 0)
+							if (aiSales[iYield] > 0)
 							{
-								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiRemoval[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
+								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiSales[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
 								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 							}
 						}
@@ -7493,9 +7493,10 @@ void CvCity::doYields()
 				}
 
 			}
-			else
+
+			if(bHasLosses)
 			{
-				//We made no profit, so the removal was lost (I think there can be cases, where we sold the goods, but made no profit. -> neglected)
+				//Something was lost
 
 				if (bMsgLostShow)
 				{
@@ -7503,7 +7504,7 @@ void CvCity::doYields()
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
 
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iRemovalTotal);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iLossesTotal);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
 
 					//Display detailed messages
@@ -7514,9 +7515,9 @@ void CvCity::doYields()
 						{
 							YieldTypes eYield = (YieldTypes)iYield;
 							CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
-							if (aiRemoval[iYield] > 0)
+							if (aiLosses[iYield] > 0)
 							{
-								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiRemoval[iYield], rYieldInfo.getChar(), pCityName);
+								CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiLosses[iYield], rYieldInfo.getChar(), pCityName);
 								gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 							}
 						}
@@ -7590,18 +7591,19 @@ void CvCity::doYields()
 			{
 				//Some of this yield was removed ...
 
-				if (aiProfit[iYield] > 0)
+				if (aiSales[iYield] > 0)
 				{
 					//... but could be sold
 
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiRemoval[iYield], rYieldInfo.getChar(), getNameKey(), aiProfit[iYield]);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SOLD", aiSales[iYield], rYieldInfo.getChar(), getNameKey(), aiProfit[iYield]);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 				}
-				else
+				
+				if(aiLosses[iYield] > 0)
 				{
 					//... and could not be sold.
 
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiRemoval[iYield], rYieldInfo.getChar(), getNameKey());
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST", aiLosses[iYield], rYieldInfo.getChar(), getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 			}
