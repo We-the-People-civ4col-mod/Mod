@@ -7052,19 +7052,6 @@ void CvCity::doYields()
 	bool bIgnoresBoycott = getIgnoresBoycott();
 	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
-	//The following vars set what kind of messages are displayed to the player and how
-	bool bMsgLostShow = true;			//Show message if yield has overflowen from warehouse and was removed and lost.
-	bool bMsgLostSound = true;
-	bool bMsgLostDetails = true;
-
-	bool bMsgSoldShow = true;			//Show message if yield has overflowen from warehouse and was removed and sold.
-	bool bMsgSoldSound = true;
-	bool bMsgSoldDetails = true;
-
-	bool bMsgImportantRemovedShow = true;		//Show message if yield, protected from overflow, was part of the removal.
-	bool bMsgImportantRemovedSound = true;
-	bool bMsgImportantRemovedDetails = true;
-
 	//Apply the net changes to the tangible yields (except YIELD_FOOD, as it is handled in doGrowth)
 	for (int iYield = YIELD_LUMBER; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7421,6 +7408,19 @@ void CvCity::doYields()
 
 
 	//Tangible yields: Display messages
+
+	bool bMsgLostShow = true;			//Show message if yield has overflowen from warehouse and was removed and lost.
+	bool bMsgLostSound = true;
+	bool bMsgLostDetails = true;
+
+	bool bMsgSoldShow = true;			//Show message if yield has overflowen from warehouse and was removed and sold.
+	bool bMsgSoldSound = true;
+	bool bMsgSoldDetails = true;
+
+	bool bMsgImportantRemovedShow = true;		//Show message if yield, protected from overflow, was part of the removal.
+	bool bMsgImportantRemovedSound = true;
+	bool bMsgImportantRemovedDetails = true;
+
 	if (GC.getNEW_CAPACITY())
 	{
 		//We are in new storage type mode ...
