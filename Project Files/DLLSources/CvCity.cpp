@@ -7232,7 +7232,7 @@ void CvCity::doYields()
 	bool bHasRemoval = false;
 	int aiProtectedRemoval[NUM_YIELD_TYPES];
 	int iProtectedRemovalTotal = 0;
-	bool hasProtectedRemoval = false;
+	bool bHasProtectedRemoval = false;
 	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7270,7 +7270,7 @@ void CvCity::doYields()
 		iRemovalTotal += aiRemoval[iYield];
 	}
 	bHasRemoval = iRemovalTotal > 0 ? true : false;
-	hasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
+	bHasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
 	//Tangible yields, step ???: Calculate and book profits, track sold and lost amounts
@@ -7379,10 +7379,10 @@ void CvCity::doYields()
 
 			if (aiSales[iYield] > 0)
 			{
-				int iDiscountedLoss = iStorageRemovalSellPercentage * aiSales[iYield] / 100;
-				rPlayer.changeYieldTradedTotal(eYield, iDiscountedLoss);
-				rKing.changeYieldTradedTotal(eYield, iDiscountedLoss);
-				GC.getGameINLINE().changeYieldBoughtTotal(eKing, eYield, -iDiscountedLoss);
+				int iDiscountedSale = iStorageRemovalSellPercentage * aiSales[iYield] / 100;
+				rPlayer.changeYieldTradedTotal(eYield, iDiscountedSale);
+				rKing.changeYieldTradedTotal(eYield, iDiscountedSale);
+				GC.getGameINLINE().changeYieldBoughtTotal(eKing, eYield, -iDiscountedSale);
 			}
 		}
 	}
@@ -7494,7 +7494,7 @@ void CvCity::doYields()
 
 			}
 			
-			if (hasProtectedRemoval)
+			if (bHasProtectedRemoval)
 			{
 				//Protected yield was removed
 
@@ -7534,6 +7534,7 @@ void CvCity::doYields()
 			{
 				//There is less than 1/10 th of total storage space left
 
+				//Display a warning
 				CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
 			}
@@ -7585,6 +7586,7 @@ void CvCity::doYields()
 					//The net change is larger than the storage space left ...
 					//...means, there will be overflow next turn
 
+					//Display a warning
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE", rYieldInfo.getChar(), getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, rYieldInfo.getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW"), getX_INLINE(), getY_INLINE(), true, true);
 				}
