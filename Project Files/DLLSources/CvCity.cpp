@@ -7039,18 +7039,17 @@ void CvCity::doYields()
 	//General Information: Yield food and it's special mechanics are handled in CvCity::doGrowth().
 
 	//The following vars are needed for the parallel implementation of old and new storage type
-	//VET NewCapacity - begin 4/9
-	int iTotalYields = getTotalYieldStored();
-	//VET NewCapacity - end 4/9
+	int iYieldTotal = getTotalYieldStored();
 	int iMaxCapacity = getMaxYieldCapacity();//In case you are wondering, getMaxYieldCapacity() returns the proper max capacity, depending on the storage type mode (old/new).
+
 	//Is there overflow in the new storage type?
-	int iOverflowTotal = iTotalYields - iMaxCapacity;
+	int iOverflowTotal = iYieldTotal - iMaxCapacity;
 	bool bHasOverflowTotal = iOverflowTotal > 0;
 
 	//The following vars are related to the storage loss selling
 	int iStorageRemovalSellPercentage = getStorageLossSellPercentage();
 	bool bIgnoresBoycott = getIgnoresBoycott();
-	bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
+	bool bHasUnlockedProtectionSettings = getHasUnlockedStorageLossTradeSettings();
 
 	//Apply the net changes to the tangible yields (except YIELD_FOOD, as it is handled in doGrowth)
 	for (int iYield = YIELD_LUMBER; iYield <= YIELD_LUXURY_GOODS; ++iYield)
@@ -7059,7 +7058,7 @@ void CvCity::doYields()
 	}
 
 
-	//Tangible yields, step 0: Calculate the "protected" yield amounts.
+	//Tangible yields: Calculate the "protected" yield amounts.
 	/*
 	If needed, with the following code block we calculate, how much of the stored yields are "protected",
 	by the "never sell" flags and by the sell thresholds in the storage loss trade settings (aka customs house screen), 
@@ -7070,9 +7069,12 @@ void CvCity::doYields()
 	int aiOverFlowProtectedYieldAmount[NUM_YIELD_TYPES];//While we are at it, we also store yield specific values.
 	//We want to know this, if ...
 	if(
-		GC.getNEW_CAPACITY()			//... we are in new storage type mode ...
-		&& bHasOverflowTotal			//... and there is overflow ...
-		&& bHasUnlockedTradeSettings		//and only if the storage loss trade settings are unlocked
+		//... we are in new storage type mode ...
+		GC.getNEW_CAPACITY()
+		//... and there is overflow ...
+		&& bHasOverflowTotal
+		//and only if the storage loss trade settings are unlocked
+		&& bHasUnlockedProtectionSettings
 	)
 	{
 		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
@@ -7104,7 +7106,7 @@ void CvCity::doYields()
 	}
 
 
-	//Tangible yields, step 1: Calculate each yields overflow
+	//Tangible yields: Calculate each yields overflow
 	int aiOverflow[NUM_YIELD_TYPES];
 	int iProtectedOverflowTotal = 0;//How much of the yield, protected from overflow, was pushed into the overflow due to limited storage capacity.
 	int aiProtectedOverflow[NUM_YIELD_TYPES];
@@ -7117,7 +7119,7 @@ void CvCity::doYields()
 		{
 			//... and there is overflow ...
 
-			if (bHasUnlockedTradeSettings)
+			if (bHasUnlockedProtectionSettings)
 			{
 				//... and the storage loss trade settings are unlocked.
 
@@ -7153,7 +7155,7 @@ void CvCity::doYields()
 					//In this scenario, a proportion of the amount over the protected amount is overflow.
 
 					//Multiplier is the same for all yields
-					int iMultiplier = ((iTotalYields - iMaxCapacity) * 100) / (iTotalYields - iOverflowProtectedYieldAmountTotal);
+					int iMultiplier = ((iYieldTotal - iMaxCapacity) * 100) / (iYieldTotal - iOverflowProtectedYieldAmountTotal);
 					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 					{
@@ -7172,7 +7174,7 @@ void CvCity::doYields()
 				//In this case, simply a proportion of the stored amount is overflow.
 
 				//Multiplier is the same for all yields
-				int iMultiplier = ((iTotalYields - iMaxCapacity) * 100) / iTotalYields;
+				int iMultiplier = ((iYieldTotal - iMaxCapacity) * 100) / iYieldTotal;
 				//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 				for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 				{
@@ -7213,10 +7215,12 @@ void CvCity::doYields()
 	bHasProtectedOverflow = iProtectedOverflowTotal > 0 ? true : false;
 
 
-	//Tangible yields, step2: Calculate the removal for each yield and deduct it from the storage
+	//Tangible yields: Calculate the removal for each yield and deduct it from the storage
+	//Variables, tracking removed amounts
 	int aiRemoval[NUM_YIELD_TYPES];
 	int iRemovalTotal = 0;
 	bool bHasRemoval = false;
+	//Vars, tracking amounts removed from the protected amounts
 	int aiProtectedRemoval[NUM_YIELD_TYPES];
 	int iProtectedRemovalTotal = 0;
 	bool bHasProtectedRemoval = false;
@@ -7260,7 +7264,7 @@ void CvCity::doYields()
 	bHasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
-	//Tangible yields, step ???: Calculate and book profits, track sold and lost amounts
+	//Tangible yields: Calculate and book profits, track sold and lost amounts
 	//Prequisites for making a profit from a trade, lets get references to all parties who are invloved ...
 	PlayerTypes ePlayer = getOwnerINLINE();
 	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
@@ -7279,9 +7283,12 @@ void CvCity::doYields()
 	int iLossesTotal = 0;
 	bool bHasLosses = false;
 	if (
-		eKing != NO_PLAYER					//We need to have a king in europe to sell the removal to.
-		&& iStorageRemovalSellPercentage > 0			//This city is capable of auto-selling
-		&& rPlayer.canTradeWithEurope()				//We are not at war with our king, or at least can sell to europe despite a war with him.
+		//We need to have a king in europe to sell the removal to.
+		eKing != NO_PLAYER
+		//This city is capable of auto-selling
+		&& iStorageRemovalSellPercentage > 0
+		//We are not at war with our king, or at least can sell to europe despite a war with him.
+		&& rPlayer.canTradeWithEurope()
 	)
 	{
 		//This city can sell to europe
@@ -7354,7 +7361,7 @@ void CvCity::doYields()
 	bHasProfitTotal = iProfitTotal > 0 ? true : false;
 
 
-	//Tangible yields, step ???: Update yield trade volumes
+	//Tangible yields: Update yield trade volumes
 	if (bHasSales)
 	{
 		//Something was sold to europe
@@ -7389,7 +7396,7 @@ void CvCity::doYields()
 	}
 
 
-	//Tangible yields, step n-2: Reward father points for net yield amounts
+	//Tangible yields: Reward father points for net yield amounts
 	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
@@ -7408,16 +7415,16 @@ void CvCity::doYields()
 
 
 	//Tangible yields: Display messages
-
-	bool bMsgLostShow = true;			//Show message if yield has overflowen from warehouse and was removed and lost.
+	//Show message if yield has overflowen from warehouse and was removed and lost.
+	bool bMsgLostShow = true;
 	bool bMsgLostSound = true;
 	bool bMsgLostDetails = true;
-
-	bool bMsgSoldShow = true;			//Show message if yield has overflowen from warehouse and was removed and sold.
+	//Show message if yield has overflowen from warehouse and was removed and sold.
+	bool bMsgSoldShow = true;
 	bool bMsgSoldSound = true;
 	bool bMsgSoldDetails = true;
-
-	bool bMsgImportantRemovedShow = true;		//Show message if yield, protected from overflow, was part of the removal.
+	//Show message if yield, protected from overflow, was part of the removal.
+	bool bMsgImportantRemovedShow = true;
 	bool bMsgImportantRemovedSound = true;
 	bool bMsgImportantRemovedDetails = true;
 
@@ -7529,7 +7536,7 @@ void CvCity::doYields()
 		{
 			//There is NO removal
 
-			int iSpaceLeft = iMaxCapacity - iTotalYields;
+			int iSpaceLeft = iMaxCapacity - iYieldTotal;
 			if (iSpaceLeft < (iMaxCapacity / 10))
 			{
 				//There is less than 1/10 th of total storage space left
@@ -7602,14 +7609,14 @@ void CvCity::doYields()
 	}
 
 
-	//Tangible yields, step n: doAutoExport(...)
+	//Tangible yields: doAutoExport(...)
 	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
 		doAutoExport(eYield); // auto traderoute - Nightinggale
 	}
 	
-	//Iterate the intangible yields
+	//Intangible yields
 	for (int iYield = YIELD_HAMMERS; iYield <= YIELD_EDUCATION; ++iYield)
 	{
 		YieldTypes eYield = (YieldTypes)iYield;
