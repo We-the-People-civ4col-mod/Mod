@@ -7298,15 +7298,18 @@ void CvCity::doYields()
 	int iLossesTotal = 0;
 	bool bHasLosses = false;
 	if (
-		eKing != NO_PLAYER					//We need to have a king in europe to sell the removal to ...
-		&& rPlayer.canTradeWithEurope()				//... and we are not at war with him, or at least can sell to europe despite a war with him.
+		eKing != NO_PLAYER					//We need to have a king in europe to sell the removal to.
+		&& iStorageRemovalSellPercentage > 0			//This city is capable of auto-selling
+		&& rPlayer.canTradeWithEurope()				//We are not at war with our king, or at least can sell to europe despite a war with him.
 	)
 	{
+		//This city can sell to europe
+
 		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 		{
 			YieldTypes eYield = (YieldTypes)iYield;
-			if (rPlayer.isYieldBoycotted(eYield))	
+			if (rPlayer.isYieldBoycotted(eYield))
 			{
 				if (bIgnoresBoycott)
 				{
@@ -7327,7 +7330,7 @@ void CvCity::doYields()
 					aiProfit[iYield] = 0;
 				}
 			}
-			else 
+			else
 			{
 				//There is no boycott on this yield
 
@@ -7344,13 +7347,30 @@ void CvCity::doYields()
 			iLossesTotal += aiLosses[iYield];
 			iProfitTotal += aiProfit[iYield];
 		}
-		bHasSales = iSalesTotal > 0 ? true : false;
-		bHasLosses = iLossesTotal > 0 ? true : false;
-		bHasProfitTotal = iProfitTotal > 0 ? true : false;
 
 		//Book profits
 		rPlayer.changeGold(iProfitTotal * rPlayer.getExtraTradeMultiplier(eKing) / 100);
 	}
+	else
+	{
+		//We or this city are not able to sell to europe
+
+		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		{
+			aiSales[iYield] = 0;
+			aiLosses[iYield] = aiRemoval[iYield];
+
+			aiProfit[iYield] = 0;
+		}
+
+		iSalesTotal = 0;
+		iLossesTotal = iRemovalTotal;
+		iProfitTotal = 0;
+	}
+	bHasSales = iSalesTotal > 0 ? true : false;
+	bHasLosses = iLossesTotal > 0 ? true : false;
+	bHasProfitTotal = iProfitTotal > 0 ? true : false;
 
 
 	//Tangible yields, step ???: Update yield trade volumes
