@@ -26,6 +26,15 @@
 #include "FAStarNode.h"
 #include "CvTradeRoute.h"
 
+#pragma push_macro("free")  
+#pragma push_macro("new")  
+#undef free
+#undef new
+#include "tbb/task_group.h"
+#pragma pop_macro("new")  
+#pragma pop_macro("free")  
+
+
 #define DANGER_RANGE				(4)
 #define GREATER_FOUND_RANGE			(5)
 #define CIVIC_CHANGE_DELAY			(25)
@@ -1105,16 +1114,33 @@ void CvPlayerAI::AI_makeAssignWorkDirty()
 	}
 }
 
+struct ApplyAssignWorkingPlots 
+{
+	ApplyAssignWorkingPlots(CvCity& city_) : city(city_) {};
+
+	void operator()() const
+	{
+		city.AI_assignWorkingPlots();
+	}
+
+	CvCity& city;
+};
 
 void CvPlayerAI::AI_assignWorkingPlots()
 {
 	AI_manageEconomy();
 
+	tbb::task_group g;
+
 	int iLoop;
 	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		pLoopCity->AI_assignWorkingPlots();
+		// BUG: This is not thread safe, we need to protect removePop / updatePop
+		g.run(ApplyAssignWorkingPlots(*pLoopCity));
+		//pLoopCity->AI_assignWorkingPlots();
 	}
+
+	g.wait();
 }
 
 

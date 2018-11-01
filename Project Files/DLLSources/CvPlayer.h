@@ -1100,6 +1100,10 @@ public:
 	void updateTransportThreshold(YieldTypes eYield);
 	// transport feeder - end - Nightinggale
 	void sortEuropeUnits();
+
+	// Clean this up
+	// TODO: Use the proper type
+	std::vector<int> m_validCityJobProfessions;
 };
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
