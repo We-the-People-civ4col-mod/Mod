@@ -196,8 +196,11 @@ BOOST_LIB_PATH=$(CIV4_LIB_INSTALL_PATH)/
 !ENDIF
 !ENDIF
 
+#### tbb ####
+TBB_PATH = tbb
+
 PROJECT_INCS=/I"$(BOOST_LIB_PATH)Boost-1.32.0/include" /I"$(BOOST_LIB_PATH)Python24/include"
-PROJECT_LIBS=/LIBPATH:"$(BOOST_LIB_PATH)Python24/libs" /LIBPATH:"$(BOOST_LIB_PATH)boost-1.32.0/libs/" boost_python-vc71-mt-1_32.lib
+PROJECT_LIBS=/LIBPATH:"$(BOOST_LIB_PATH)Python24/libs" /LIBPATH:"$(BOOST_LIB_PATH)boost-1.32.0/libs/" boost_python-vc71-mt-1_32.lib /LIBPATH:"$(TBB_PATH)" 
 
 INCS = $(PROJECT_INCS) $(GLOBAL_INCS)
 
@@ -212,15 +215,17 @@ LIBS = $(PROJECT_LIBS) $(GLOBAL_LIBS)
 !ENDIF
 CFLAGS  = $(Debug_CFLAGS)
 LDFLAGS = $(Debug_LDFLAGS)
-LIBS    = $(LIBS) msvcprt.lib
+LIBS    = $(LIBS) msvcprt.lib tbb.lib tbbmalloc.lib
 !ENDIF
 !IF "$(TARGET)" == "Release"
 CFLAGS  = $(Release_CFLAGS)
 LDFLAGS = $(Release_LDFLAGS)
+LIBS    = $(LIBS) tbb.lib tbbmalloc.lib
 !ENDIF
 !IF "$(TARGET)" == "Assert"
 CFLAGS  = $(Release_CFLAGS) /DFASSERT_ENABLE
 LDFLAGS = $(Release_LDFLAGS)
+LIBS    = $(LIBS) tbb.lib tbbmalloc.lib
 !ENDIF
 !IF "$(TARGET)" == "Profile"
 !IFNDEF _NMAKE_VER
@@ -228,6 +233,7 @@ LDFLAGS = $(Release_LDFLAGS)
 !ENDIF
 CFLAGS  = $(Release_CFLAGS) /Zi
 LDFLAGS = $(Debug_LDFLAGS)
+LIBS    = $(LIBS) tbb.lib tbbmalloc.lib
 !ENDIF
 
 !IFNDEF CFLAGS
