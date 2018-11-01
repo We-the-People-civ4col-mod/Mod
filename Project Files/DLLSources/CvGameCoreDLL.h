@@ -19,9 +19,10 @@
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <MMSystem.h>
+#include <crtdbg.h>
 #if defined _DEBUG && !defined USE_MEMMANAGER
 //#define USE_MEMMANAGER
-#include <crtdbg.h>
+//#include <crtdbg.h>
 #endif
 #include <vector>
 #include <list>
