@@ -18,7 +18,6 @@ Fixes:
 - #40 Worldbuilder issue making very difficult to set diplomatic attitudes fixed.
 - #51 Fixed case where AI could turn stone into lumber (copy paste error)
 - #73 Shipwrecks no longer appear under ice.
-- #83 It is now possible to change the production at the city plot. Just click at the city center and you can now choose if that city over savannah should build tobacco or sugar...
 - #86 The Domestic Advisor: Native tab now allows sorting by the goods the indians want.
 - #87 Hurry production fails if there isn't warehouse space.
 - #96 The Domestic Advisor: native tab now shows natives that you have discovered, but not yet talked with.
