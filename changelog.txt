@@ -1,3 +1,93 @@
+We the People Changelog
+
+Version 2.7.1
+
+Improvements:
+- #83 Clicking on the colony plot in the colony screen allows changing which yield to produce.
+- #199 Double click a unit in garrison now brings up choose profession.
+
+AI improvements:
+- #17 automated coastal ships now pick routes as ships, like going between islands instead of competing against land transport.
+- #171 Fixed a mistake that would have the AI consider the cities on its own team as being possible victims. Removed a cheat so that the AI has to have revealed the target city.
+
+Fixes:
+- #2 Native haggling exploit fixed: natives will no longer automatically accept haggles with replaced / added items.
+- #23 typo: Priate Map fixed
+- #26 Forts are upgraded by UNITCOMBAT_GUN or UNITCOMBAT_SIEGE, not just Colonial Militia.
+- #26 Forts no longer upgrades from being worked on by a colony, only by placing military units on it.
+- #40 Worldbuilder issue making very difficult to set diplomatic attitudes fixed.
+- #51 Fixed case where AI could turn stone into lumber (copy paste error)
+- #73 Shipwrecks no longer appear under ice.
+- #83 It is now possible to change the production at the city plot. Just click at the city center and you can now choose if that city over savannah should build tobacco or sugar...
+- #86 The Domestic Advisor: Native tab now allows sorting by the goods the indians want.
+- #87 Hurry production fails if there isn't warehouse space.
+- #96 The Domestic Advisor: native tab now shows natives that you have discovered, but not yet talked with.
+- #156 1 plot colony radius allowed colonies to be placed too close, even next to each other in some cases.
+- #164 Out of sync GameFont ids resulted in wrong mission icons in Domestic Advisor.
+- #172 Remove meaningless assert checks. (Being short on money is completely legitimate and not an error :P)
+- #178 CvPlot::updateWorkingCity() now updates cache for CvPlot::hasYield() if the city change.
+- #190 Colonies used human player for culture spread threshold instead of colony owner. Spain has a discount.
+- #190 Fixed network desync related to culture spread if a human player is Spain.
+- Crash if a colonist is on land on the edge of the map (founding code didn't take map edge into account).
+- Combat (game) freezes when defeating the last unit of a (European only?) player.
+- Colony import all/auto export all buttons now works again (broke in RaR 2.6)
+
+Graphics:
+- #158 Reintroduced the pre 2.7 loading screen
+- #174 Pick a random loading screen each time a screen is displayed (currently the list has just one file)
+
+Changes affecting xml modders:
+- Domestic Advisor can display GameFont characters when using a debug DLL.
+- #92 Custom house overhaul, moving settings from DLL hardcoding to xml.
+
+DLL modding changes:
+- #54 xml missing & on a local reference to an xml info class will now cause a compile error. Crashes from this issue are time consuming to track down.
+- #190 Added network sync logging/debugging tool to track down causes of OOS.
+
+Bugfixes from RaR (after 2.7, not released in stable before, all made by WTP members)
+- BUG22: We only allow ships to sail to Port Royal if all units in the group are allowed to do so
+- BUG23: Pirates and other non-animal "barbarians"/wild-animals will no longer result in a warning about animals
+- BUG24: Citizens will no longer seem to disappear if re-assigned (by double clicking) to a plot with no apparent economic value. Removed testing/debug code.
+- BUG25: Disable the European peace DLL event if the game option always war is enabled
+- BUG26: Fixed the city import/export dialog issue (maintainLevel and importLimitLevel got swapped in the network code)
+- BUG27: Fixed the coastal ship teleport / chain capture bug (units were allowed to jump to enemy cities)
+- BUG28: Adapted from K-mod. Fixed an issue in getBestDefender that could make the AI think that a unit inside a transport was a valid defender. Additional optimizations (by refactoring some of the functionality into a separate and more effective hasDefender()
+- BUG29: Fixed issue that caused the foreign advisor screen to draw red lines even though the players were at peace
+- BUG30: The info screen demographics and graphs now only include the European players. The animals, church, kings and natives are excluded.
+- BUG31: Native players that are in a permanent alliance with Europeans will not be shown as the owner FFs
+- BUG32: The king will no longer offer civilians\colonists (e.g. doctors) when requesting military help
+- BUG33: Ships that enter the map after returning from a port will no longer risk being placed on impassable terrain (e.g. ice)
+- BUG34: Attempt to fix the issue where a wagon carrying sheep exceeded the import limit of the city, causing the excess to be taken to the  capital (which did not even import the yield in question)
+- BUG35: From K-mod: "Fixed a group pathfinding bug in the original bts code"
+- BUG35: We will no longer attempt to make peace with ourselves!
+- BUG36: Imported several fixes from K-mod: (list of 7 items not included here)
+- BUG37: Adapted from K-mod. Fixed the issue that causes the wrong odds (due to selecting the wrong defender) to be displayed if units from different players were on the same plot
+- BUG37: Fix strange divide by zero bug in CvPlayerAI::AI_transferYieldValue. It's weird that this happened so I am adding an assert to help detect issues caused by variables unexpectedly having negative values!
+- BUG38: Adapted from K-mod, alberts2, DarkLunaPhantom. Various fixes concerning "Typos, order of operations mistakes, memory leaks, missing initialisers, style changes."
+- BUG40: Adapted from K-mod. Whenever we check the attitude towards our own team, we're always friendly :P
+- BUG41: Adapted from K-mod \ Unofficial patch. CvUnit::healTurns and CvUnit::canHeal - Now handles damage and healing from plot features (thanks LunarMongoose)
+- EXP2: The cap on negative attitude from requesting military help from the king has been lowered to prevent players from permanently being able to buy discounted military units
+- EXP3: If war is declared on another European nation, the aggressor will receive a major diplomatic attitude penalty with its king as well
+- EXP4: To receive revolutionary support, we now require the player to be on good terms with the potential supporter's king as well
+- EXP5: AI players fighting the revolutionary war will no longer consider a bribe to sign peace with their king. Also they will no longer reply with the "we'd love to, but you would have to ask them" nonsense :P
+- GAME1: African slaves now have the same restrictions as native slaves with respect to allowed professions
+- OPT3: From K-mod: "Made some minor efficiency improvements to CvUnitAI::AI_promote"
+- OPT4: From K-mod: Disabled some obsolete BtS code.
+- OPT5: Adapted from K-mod. Blocked most python callbacks and recoded those who only had a python implementation in C++. The callbacks can be reenabled in XML.
+- OPT6: Optimized and refactored CvSelectionGroupAI::AI_tradeRoutes / CvSelectionGroupAI::AI_getYieldsLoaded. Added a helper CvSelectionGroupAI::processTradeRoute
+- NOCHEAT1: Slaves and prisoners may no longer found cities (XML must be updated to disallow)
+- ACO1: Implemented a modified version of PieceOfMind's Advanced Combat Odds modcomp for BTS that supports the limited combat rounds feature in RaR
+- AI14: Prevent the AI from purchasing smuggling ships when offered since it doesn't know how to put them to use
+- AI15: Tweak AI to produce less coastal transports and more wagons
+- AI16: Block AI from producing YIELD_CANNON
+- AI17: Restricting the UNITAIs considered by great generals / admirals
+- AI18: Adapted from K-mod. AI explorers will now try to make contact with mapped but unmet players. Added missing const.
+- AI19: By mistake I had broken CvPlayerAI::AI_needsProtection by omitting to return true when a transport needed protection.
+- AI20: Added isProfessionalMilitary() mainly to prevent the AI from having units with GGs attached join cities.
+- AI21: Prohibit the AI from ever exporting tools, blades, muskets and cannons to Europe. We can make the logic more refined in the future but for now the AI needs strict hand-holding
+- EVENTS3: The WHALING event is no longer recurrent since the event's logic cannot handle it correctly
+
+
 Religion and Revolution: Version 2.7 // Changelog
 
 PLEASE NOTE THAT Version 2.7 IS NOT SAVEGAME COMPATIBLE WITH PREVIOUS VERSIONS!
