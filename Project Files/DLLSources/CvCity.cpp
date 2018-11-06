@@ -7415,6 +7415,33 @@ void CvCity::doYields()
 
 
 	//Tangible yields: Display messages
+	//There were several iterations on how to display information to the player, which led to several different "versions" of messages.
+	enum MessagesVersion
+	{
+		/*
+			MV4
+			Per city SEPARATE messages regarding the following are displayed:
+				sales of yield, 
+				losses of yield,
+				overflow of protected yield
+			They are displayed independently of each other.
+		*/
+		MV4,
+		/*
+			MV5a
+			Per city SEPARATE messages regarding the following are displayed:
+				removal of yield,
+				sales of yield,
+				losses of yield,
+				overflow of protected yield
+			They are displayed in a sequence, where ...
+			... the messages for sales and losses refer to the message about removal.
+		*/
+		MV5a
+	};
+	MessagesVersion eMV = MV5a;
+	//Show message if yield has overflown from warehouse and was removed. (MV5a only)
+	bool bMsgRemovedShow = true;
 	//Show message if yield has overflowen from warehouse and was removed and lost.
 	bool bMsgLostShow = true;
 	bool bMsgLostSound = true;
@@ -7437,19 +7464,154 @@ void CvCity::doYields()
 			//There is removal
 
 			const wchar* pCityName = getNameKey();
-			if (bHasSales)
-			{
-				//Something was sold
 
-				if (bMsgSoldShow)
+			//Display messages depending on the configured messages version
+			switch (eMV)
+			{
+			case MV4:
+				if (bHasSales)
 				{
-					LPCTSTR sSound = bMsgLostSound ? "AS2D_BUILD_BANK" : NULL;
-					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
+					//Something was sold
+
+					if (bMsgSoldShow)
+					{
+						LPCTSTR sSound = bMsgLostSound ? "AS2D_BUILD_BANK" : NULL;
+						ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
+
+						//Display summarized message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+
+						//Display detailed messages
+						if (bMsgSoldDetails)
+						{
+							//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+							for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+							{
+								YieldTypes eYield = (YieldTypes)iYield;
+								CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+								if (aiSales[iYield] > 0)
+								{
+									CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiSales[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
+									gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+								}
+							}
+						}
+					}
+
+				}
+
+				if (bHasLosses)
+				{
+					//Something was lost
+
+					if (bMsgLostShow)
+					{
+						LPCTSTR sSound = bMsgLostSound ? "AS2D_DEAL_CANCELLED" : NULL;
+						ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+
+						//Display summarized message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iLossesTotal);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+
+						//Display detailed messages
+						if (bMsgLostDetails)
+						{
+							//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+							for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+							{
+								YieldTypes eYield = (YieldTypes)iYield;
+								CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+								if (aiLosses[iYield] > 0)
+								{
+									CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiLosses[iYield], rYieldInfo.getChar(), pCityName);
+									gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+								}
+							}
+						}
+					}
+
+				}
+
+				if (bHasProtectedRemoval)
+				{
+					//Protected yield was removed
+
+					if (bMsgImportantRemovedShow)
+					{
+						LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+						ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+
+						//Display summarized message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+
+						//Display detailed messages
+						if (bMsgImportantRemovedDetails)
+						{
+							//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+							for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+							{
+								YieldTypes eYield = (YieldTypes)iYield;
+								CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+								if (aiProtectedRemoval[iYield] > 0)
+								{
+									CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedRemoval[iYield], rYieldInfo.getChar(), pCityName);
+									gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+								}
+							}
+						}
+					}
+				}
+				break;
+			case MV5a:
+
+				if (bMsgRemovedShow)
+				{
+					LPCTSTR sSound = NULL;
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW");
 
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+					CvWString szBuffer = gDLL->getText("TXT_KEY_MV5A_GOODS_REMOVED_SUMMARY", pCityName, iRemovalTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
 
+				}
+				
+				if (bHasSales)
+				{
+					//Something was sold
+
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
+					//Display summarized message
+					if (bMsgSoldShow)
+					{
+						LPCTSTR sSound = bMsgLostSound ? "AS2D_BUILD_BANK" : NULL;
+
+						CvWString szBuffer = gDLL->getText("TXT_KEY_MV5A_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+					}
+				}
+
+				if (bHasLosses)
+				{
+					//Something was lost
+
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+					//Display summarized message
+					if (bMsgLostShow)
+					{
+						LPCTSTR sSound = bMsgLostSound ? "AS2D_DEAL_CANCELLED" : NULL;
+
+						CvWString szBuffer = gDLL->getText("TXT_KEY_MV5A_GOODS_LOST_SUMMARY", pCityName, iLossesTotal);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
+					}
+				}
+
+				if (bHasSales)
+				{
+					//Something was sold
+
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
 					//Display detailed messages
 					if (bMsgSoldDetails)
 					{
@@ -7467,21 +7629,11 @@ void CvCity::doYields()
 					}
 				}
 
-			}
-
-			if(bHasLosses)
-			{
-				//Something was lost
-
-				if (bMsgLostShow)
+				if (bHasLosses)
 				{
-					LPCTSTR sSound = bMsgLostSound ? "AS2D_DEAL_CANCELLED" : NULL;
+					//Something was lost
+
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
-
-					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iLossesTotal);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), true, true);
-
 					//Display detailed messages
 					if (bMsgLostDetails)
 					{
@@ -7499,21 +7651,26 @@ void CvCity::doYields()
 					}
 				}
 
-			}
-			
-			if (bHasProtectedRemoval)
-			{
-				//Protected yield was removed
-
-				if (bMsgImportantRemovedShow)
+				if (bHasProtectedRemoval)
 				{
-					LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+					//Protected yield was removed
+
 					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
-
 					//Display summarized message
-					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+					if (bMsgImportantRemovedShow)
+					{
+						LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
 
+						CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eColor, getX_INLINE(), getY_INLINE(), false, false);
+					}
+				}
+
+				if (bHasProtectedRemoval)
+				{
+					//Protected yield was removed
+
+					ColorTypes eColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
 					//Display detailed messages
 					if (bMsgImportantRemovedDetails)
 					{
@@ -7530,6 +7687,10 @@ void CvCity::doYields()
 						}
 					}
 				}
+				break;
+			default:
+				FAssertMsg(false, "Arrived in default case, which should not happen.");
+				break;
 			}
 		}
 		else

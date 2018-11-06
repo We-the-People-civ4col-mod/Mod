@@ -553,6 +553,43 @@
 		<Italian>La capacit&#224; di storage in %s1_city &#232; quasi al suo limite, Mylord.</Italian>
 		<Spanish>La capacidad de almacenamiento en %s1_city es casi en su l&#237;mite, Mylord.</Spanish>
 	</TEXT>
+
+
+
+
+	<TEXT>
+		<Tag>TXT_KEY_MV5A_GOODS_REMOVED_SUMMARY</Tag>
+		<English>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse.</English>
+		<French>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse.</French>
+		<German>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse.</German>
+		<Italian>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse.</Italian>
+		<Spanish>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MV5A_GOODS_SOLD_SUMMARY</Tag>
+		<English>%d2_number goods of the removal in %s1_city could be sold for %d3_number [ICON_GOLD].</English>
+		<French>%d2_number goods of the removal in %s1_city could be sold for %d3_number [ICON_GOLD].</French>
+		<German>%d2_number goods of the removal in %s1_city could be sold for %d3_number [ICON_GOLD].</German>
+		<Italian>%d2_number goods of the removal in %s1_city could be sold for %d3_number [ICON_GOLD].</Italian>
+		<Spanish>%d2_number goods of the removal in %s1_city could be sold for %d3_number [ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MV5A_GOODS_LOST_SUMMARY</Tag>
+		<English>%d2_number goods of the removal in %s1_city were lost.</English>
+		<French>%d2_number goods of the removal in %s1_city were lost.</French>
+		<German>%d2_number goods of the removal in %s1_city were lost.</German>
+		<Italian>%d2_number goods of the removal in %s1_city were lost.</Italian>
+		<Spanish>%d2_number goods of the removal in %s1_city were lost.</Spanish>
+	</TEXT>
+
+
+
+
+
+
+
+
+
 	<TEXT>
 		<Tag>TXT_KEY_GOODS_SOLD_SUMMARY</Tag>
 		<English>Mylord, due to warehouse overflow in %s1_city, %d2_number goods were removed and sold for %d3 [ICON_GOLD].</English>
@@ -585,6 +622,15 @@
 		<Italian>%d1_number %F2_yield_icon were lost in %s3_city.</Italian>
 		<Spanish>%d1_number %F2_yield_icon were lost in %s3_city.</Spanish>
 	</TEXT>
+
+
+
+
+
+
+
+
+
 	<TEXT>
 		<Tag>TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY</Tag>
 		<English>Mylord, because you deemed more goods important in %s1_city than warehouse capacity is available, %d2_number important goods were part of the removal from the warehouse.</English>
@@ -601,6 +647,15 @@
 		<Italian>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</Italian>
 		<Spanish>%d1_number %F2_yield_icon, deemed important, were removed in %s3_city.</Spanish>
 	</TEXT>
+
+
+
+
+
+
+
+
+
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HORSES</Tag>
 		<English>Horses</English>
