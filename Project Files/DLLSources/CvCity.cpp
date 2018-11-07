@@ -7437,7 +7437,15 @@ void CvCity::doYields()
 			They are displayed in a sequence, where ...
 			... the messages for sales and losses refer to the message about removal.
 		*/
-		MV5a
+		MV5a,
+		/*
+			MV5b
+			Per city a COMBINED message regarding the following is displayed:
+				removal, sales and losses of yield
+			Per city a SEPARATE message is shown regarding:
+				overflow of protected yield
+		*/
+		MV5b
 	};
 	MessagesVersion eMV = MV5a;
 	//Show message if yield has overflown from warehouse and was removed. (MV5a only)
@@ -7665,6 +7673,64 @@ void CvCity::doYields()
 						}
 					}
 				}
+				break;
+			case MV5b:
+				//The different cases for the combined messages are ...
+				if 
+				(
+					//We have sales and we want to display the message about sales ...
+					(bHasSales && bMsgSoldShow)
+					&& 
+					//... and either we don't have losses or we don't want to display a message about them.
+					(!bHasLosses || (bHasLosses && !bMsgLostShow))
+				)
+				{
+					//Use existing message from MV4
+				}
+				else if
+				(
+					//We have sales and losses and want to display messages about both of them
+					(bHasSales && bMsgSoldShow) && (bHasLosses && bMsgLostShow)
+				)
+				{
+					/*
+					Message draft:
+
+					Governor, due to warehouse overflow in <city name>, 
+					<iRemovalTotal> goods were removed from the warehouse, 
+					of which <iSalesTotal> could be sold for <iProfitTotal>. 
+					<iLossTotal> goods could not be sold and were lost.
+					*/
+				}
+				else if
+				(
+					//We have no sales or don't want to display a message about them ...
+					(!bHasSales || (bHasSales && !bMsgSoldShow))
+					&&
+					//... we have losses and want to display a message about them
+					(bHasLosses && bMsgLostShow)
+				)
+				{
+					//All of the removal was lost
+
+					//Use existing message from MV4
+				}
+				else
+				{
+					//4th case, both sales and losses, but set to display no messages
+
+					//Do nothing
+				}
+
+				//Display sales details
+				//Use existing code from MV5a
+
+				//Disaply losses details
+				//Use existing code from MV5a
+
+				//Display important removed summary and details
+				//Use existing messages from MV4
+
 				break;
 			default:
 				FAssertMsg(false, "Arrived in default case, which should not happen.");
