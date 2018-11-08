@@ -7490,7 +7490,7 @@ void CvCity::doYields()
 
 					if (bMsgSoldShow)
 					{
-						LPCTSTR sSound = bMsgLostSound ? "AS2D_BUILD_BANK" : NULL;
+						LPCTSTR sSound = bMsgSoldSound ? "AS2D_BUILD_BANK" : NULL;
 
 						//Display summarized message
 						CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
@@ -7592,7 +7592,7 @@ void CvCity::doYields()
 					//Something was sold
 
 					//Display summarized message
-					LPCTSTR sSound = bMsgLostSound ? "AS2D_BUILD_BANK" : NULL;
+					LPCTSTR sSound = bMsgSoldSound ? "AS2D_BUILD_BANK" : NULL;
 
 					CvWString szBuffer = gDLL->getText("TXT_KEY_MV5A_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgSoldColor, getX_INLINE(), getY_INLINE(), true, true);
