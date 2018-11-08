@@ -7447,8 +7447,12 @@ void CvCity::doYields()
 		*/
 		MV5b
 	};
-	MessagesVersion eMV = MV5a;
-	//Show message if yield has overflown from warehouse and was removed. (MV5a only)
+	MessagesVersion eMV = MV5b;
+	//(MV5b only) Color of combined messages about sales and losses
+	ColorTypes eMsgMv5bCombinedColor = (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW");
+	bool bMsgMv5bCombinedSound = true;
+	//(MV5a only) Show message if yield has overflown from warehouse and was removed.
+		//This message always has no sound.
 	bool bMsgRemovedShow = true;
 	ColorTypes eMsgRemovedColor = (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW");
 	//Show message if yield has overflowen from warehouse and was removed and lost.
@@ -7685,7 +7689,11 @@ void CvCity::doYields()
 					(!bHasLosses || (bHasLosses && !bMsgLostShow))
 				)
 				{
-					//Use existing message from MV4
+					//Display summarized message
+					LPCTSTR sSound = bMsgSoldSound ? "AS2D_BUILD_BANK" : NULL;
+
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_SUMMARY", pCityName, iSalesTotal, iProfitTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgSoldColor, getX_INLINE(), getY_INLINE(), true, true);
 				}
 				else if
 				(
@@ -7693,14 +7701,11 @@ void CvCity::doYields()
 					(bHasSales && bMsgSoldShow) && (bHasLosses && bMsgLostShow)
 				)
 				{
-					/*
-					Message draft:
+					//Display summarizing message
+					LPCTSTR sSound = bMsgMv5bCombinedSound ? "AS2D_DEAL_CANCELLED" : NULL;
 
-					Governor, due to warehouse overflow in <city name>, 
-					<iRemovalTotal> goods were removed from the warehouse, 
-					of which <iSalesTotal> could be sold for <iProfitTotal>. 
-					<iLossTotal> goods could not be sold and were lost.
-					*/
+					CvWString szBuffer = gDLL->getText("TXT_KEY_MV5B_COMBINED_SUMMARY", pCityName, iRemovalTotal, iSalesTotal, iProfitTotal, iLossesTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgMv5bCombinedColor, getX_INLINE(), getY_INLINE(), true, true);
 				}
 				else if
 				(
@@ -7711,9 +7716,11 @@ void CvCity::doYields()
 					(bHasLosses && bMsgLostShow)
 				)
 				{
-					//All of the removal was lost
+					//Display summarized message
+					LPCTSTR sSound = bMsgLostSound ? "AS2D_DEAL_CANCELLED" : NULL;
 
-					//Use existing message from MV4
+					CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_SUMMARY", pCityName, iLossesTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgLostColor, getX_INLINE(), getY_INLINE(), true, true);
 				}
 				else
 				{
@@ -7722,14 +7729,66 @@ void CvCity::doYields()
 					//Do nothing
 				}
 
-				//Display sales details
-				//Use existing code from MV5a
+				if (bHasSales && bMsgSoldDetails)
+				{
+					//Display sales details
+					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+					{
+						YieldTypes eYield = (YieldTypes)iYield;
+						CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+						if (aiSales[iYield] > 0)
+						{
+							CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_SOLD_DETAIL", aiSales[iYield], rYieldInfo.getChar(), aiProfit[iYield], pCityName);
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgSoldDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
+						}
+					}
+				}
 
-				//Disaply losses details
-				//Use existing code from MV5a
+				if (bHasLosses && bMsgLostDetails)
+				{
+					//Display losses details
+					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+					{
+						YieldTypes eYield = (YieldTypes)iYield;
+						CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+						if (aiLosses[iYield] > 0)
+						{
+							CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_LOST_DETAIL", aiLosses[iYield], rYieldInfo.getChar(), pCityName);
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgLostDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
+						}
+					}
+				}
 
-				//Display important removed summary and details
-				//Use existing messages from MV4
+				if (bHasProtectedRemoval && bMsgImportantRemovedShow)
+				{
+					//Protected yield was removed
+
+					//Display summarized message
+					LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+
+					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
+				}
+
+				if (bHasProtectedRemoval && bMsgImportantRemovedDetails)
+				{
+					//Protected yield was removed
+
+					//Display detailed messages
+					//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+					for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+					{
+						YieldTypes eYield = (YieldTypes)iYield;
+						CvYieldInfo& rYieldInfo = GC.getYieldInfo(eYield);
+						if (aiProtectedRemoval[iYield] > 0)
+						{
+							CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedRemoval[iYield], rYieldInfo.getChar(), pCityName);
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
+						}
+					}
+				}
 
 				break;
 			default:

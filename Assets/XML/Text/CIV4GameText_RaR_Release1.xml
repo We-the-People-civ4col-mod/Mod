@@ -581,6 +581,14 @@
 		<Italian>%d2_number goods of the removal in %s1_city were lost.</Italian>
 		<Spanish>%d2_number goods of the removal in %s1_city were lost.</Spanish>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MV5B_COMBINED_SUMMARY</Tag>
+		<English>Governor, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse, of which %d3_number could be sold for %d4_number [ICON_GOLD]. %d5_number goods could not be sold and were lost.</English>
+		<French>Governor, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse, of which %d3_number could be sold for %d4_number [ICON_GOLD]. %d5_number goods could not be sold and were lost.</French>
+		<German>Governor, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse, of which %d3_number could be sold for %d4_number [ICON_GOLD]. %d5_number goods could not be sold and were lost.</German>
+		<Italian>Governor, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse, of which %d3_number could be sold for %d4_number [ICON_GOLD]. %d5_number goods could not be sold and were lost.</Italian>
+		<Spanish>Governor, due to warehouse overflow in %s1_city, %d2_number goods were removed from the warehouse, of which %d3_number could be sold for %d4_number [ICON_GOLD]. %d5_number goods could not be sold and were lost.</Spanish>
+	</TEXT>
 
 
 
