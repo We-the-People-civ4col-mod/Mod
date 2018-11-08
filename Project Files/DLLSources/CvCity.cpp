@@ -7057,6 +7057,8 @@ void CvCity::doYields()
 		changeYieldStored((YieldTypes)iYield, aiYieldsNetChanges[iYield]);
 	}
 
+	//We set a flag that tells, if we are in old or in new storage type mode.
+	bool bIsNewStorageTypeMode = GC.getNEW_CAPACITY();
 
 	//Tangible yields: Calculate the "protected" yield amounts.
 	/*
@@ -7070,7 +7072,7 @@ void CvCity::doYields()
 	//We want to know this, if ...
 	if(
 		//... we are in new storage type mode ...
-		GC.getNEW_CAPACITY()
+		bIsNewStorageTypeMode
 		//... and there is overflow ...
 		&& bHasOverflowTotal
 		//and only if the storage loss trade settings are unlocked
@@ -7111,7 +7113,7 @@ void CvCity::doYields()
 	int iProtectedOverflowTotal = 0;//How much of the yield, protected from overflow, was pushed into the overflow due to limited storage capacity.
 	int aiProtectedOverflow[NUM_YIELD_TYPES];
 	bool bHasProtectedOverflow;
-	if (GC.getNEW_CAPACITY())
+	if (bIsNewStorageTypeMode)
 	{
 		//We are in new storage type mode ...
 
@@ -7233,7 +7235,7 @@ void CvCity::doYields()
 	bool bHasProtectedRemoval = false;
 	if (bHasOverflowTotal)
 	{
-		if (GC.getNEW_CAPACITY())
+		if (bIsNewStorageTypeMode)
 		{
 			//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 			for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
@@ -7518,7 +7520,7 @@ void CvCity::doYields()
 	bool bMsgProtectedRemovedDetails = true;
 	ColorTypes eMsgProtectedRemovedDetailsColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
 
-	if (GC.getNEW_CAPACITY())
+	if (bIsNewStorageTypeMode)
 	{
 		//We are in new storage type mode ...
 
