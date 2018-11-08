@@ -767,6 +767,7 @@ protected:
 	bool*	m_abYieldRankValid;
 
 	void doGrowth();
+	enum DoYieldsMessagesVersion { MV4, MV5a, MV5b };
 	void doYields();
 	void sellToDomesticMarket(int (&aiYields)[NUM_YIELD_TYPES]);
 	void doYieldEducation();

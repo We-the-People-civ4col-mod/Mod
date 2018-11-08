@@ -7473,19 +7473,14 @@ void CvCity::doYields()
 
 	//Tangible yields: Display messages
 	//There were several iterations on how to display information to the player, which led to several different "versions" of messages.
-	enum MessagesVersion
-	{
-		/*
-			MV4
+	/*
+		MV4
 			Per city SEPARATE messages regarding the following are displayed:
-				sales of yield, 
+				sales of yield,
 				losses of yield,
 				overflow of protected yield
 			They are displayed independently of each other.
-		*/
-		MV4,
-		/*
-			MV5a
+		MV5a
 			Per city SEPARATE messages regarding the following are displayed:
 				removal of yield,
 				sales of yield,
@@ -7493,18 +7488,14 @@ void CvCity::doYields()
 				overflow of protected yield
 			They are displayed in a sequence, where ...
 			... the messages for sales and losses refer to the message about removal.
-		*/
-		MV5a,
-		/*
-			MV5b
+
+		MV5b
 			Per city a COMBINED message regarding the following is displayed:
 				removal, sales and losses of yield
 			Per city a SEPARATE message is shown regarding:
 				overflow of protected yield
-		*/
-		MV5b
-	};
-	MessagesVersion eMV = MV5b;
+	*/
+	DoYieldsMessagesVersion eMV = MV5b;
 	//(MV5b only) Color of combined messages about sales and losses
 	ColorTypes eMsgMv5bCombinedColor = (ColorTypes)GC.getInfoTypeForString("COLOR_YELLOW");
 	bool bMsgMv5bCombinedSound = true;
