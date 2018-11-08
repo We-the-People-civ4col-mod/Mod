@@ -7468,11 +7468,11 @@ void CvCity::doYields()
 	bool bMsgSoldDetails = true;
 	ColorTypes eMsgSoldDetailsColor = (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE");
 	//Show message if yield, protected from overflow, was part of the removal.
-	bool bMsgImportantRemovedShow = true;
-	ColorTypes eMsgImportantRemovedColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
-	bool bMsgImportantRemovedSound = true;
-	bool bMsgImportantRemovedDetails = true;
-	ColorTypes eMsgImportantRemovedDetailsColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+	bool bMsgProtectedRemovedShow = true;
+	ColorTypes eMsgProtectedRemovedColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
+	bool bMsgProtectedRemovedSound = true;
+	bool bMsgProtectedRemovedDetails = true;
+	ColorTypes eMsgProtectedRemovedDetailsColor = (ColorTypes)GC.getInfoTypeForString("COLOR_RED");
 
 	if (GC.getNEW_CAPACITY())
 	{
@@ -7554,16 +7554,16 @@ void CvCity::doYields()
 				{
 					//Protected yield was removed
 
-					if (bMsgImportantRemovedShow)
+					if (bMsgProtectedRemovedShow)
 					{
-						LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+						LPCTSTR sSound = bMsgProtectedRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
 
 						//Display summarized message
 						CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgProtectedRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
 
 						//Display detailed messages
-						if (bMsgImportantRemovedDetails)
+						if (bMsgProtectedRemovedDetails)
 						{
 							//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 							for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
@@ -7573,7 +7573,7 @@ void CvCity::doYields()
 								if (aiProtectedRemoval[iYield] > 0)
 								{
 									CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedRemoval[iYield], rYieldInfo.getChar(), pCityName);
-									gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
+									gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgProtectedRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
 								}
 							}
 						}
@@ -7649,18 +7649,18 @@ void CvCity::doYields()
 					}
 				}
 
-				if (bHasProtectedRemoval && bMsgImportantRemovedShow)
+				if (bHasProtectedRemoval && bMsgProtectedRemovedShow)
 				{
 					//Protected yield was removed
 
 					//Display summarized message
-					LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+					LPCTSTR sSound = bMsgProtectedRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
 
 					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgProtectedRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
 				}
 
-				if (bHasProtectedRemoval && bMsgImportantRemovedDetails)
+				if (bHasProtectedRemoval && bMsgProtectedRemovedDetails)
 				{
 					//Protected yield was removed
 
@@ -7673,7 +7673,7 @@ void CvCity::doYields()
 						if (aiProtectedRemoval[iYield] > 0)
 						{
 							CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedRemoval[iYield], rYieldInfo.getChar(), pCityName);
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgProtectedRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
 						}
 					}
 				}
@@ -7761,18 +7761,18 @@ void CvCity::doYields()
 					}
 				}
 
-				if (bHasProtectedRemoval && bMsgImportantRemovedShow)
+				if (bHasProtectedRemoval && bMsgProtectedRemovedShow)
 				{
 					//Protected yield was removed
 
 					//Display summarized message
-					LPCTSTR sSound = bMsgImportantRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
+					LPCTSTR sSound = bMsgProtectedRemovedSound ? "AS2D_DEAL_CANCELLED" : NULL;
 
 					CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_SUMMARY", pCityName, iProtectedRemovalTotal);
-					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
+					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, sSound, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgProtectedRemovedColor, getX_INLINE(), getY_INLINE(), false, false);
 				}
 
-				if (bHasProtectedRemoval && bMsgImportantRemovedDetails)
+				if (bHasProtectedRemoval && bMsgProtectedRemovedDetails)
 				{
 					//Protected yield was removed
 
@@ -7785,7 +7785,7 @@ void CvCity::doYields()
 						if (aiProtectedRemoval[iYield] > 0)
 						{
 							CvWString szBuffer = gDLL->getText("TXT_KEY_IMPORTANT_GOODS_REMOVED_DETAIL", aiProtectedRemoval[iYield], rYieldInfo.getChar(), pCityName);
-							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgImportantRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
+							gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, eMsgProtectedRemovedDetailsColor, getX_INLINE(), getY_INLINE(), false, false);
 						}
 					}
 				}
