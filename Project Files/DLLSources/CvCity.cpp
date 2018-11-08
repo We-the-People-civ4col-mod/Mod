@@ -7909,7 +7909,7 @@ void CvCity::doYields()
 	}
 }
 
-void CvCity::sellToDomesticMarket(int  (&aiYields)[58])
+void CvCity::sellToDomesticMarket(int  (&aiYields)[NUM_YIELD_TYPES])
 {
 	// R&R, ray, adjustment Domestic Markets
 	int iTotalProfitFromDomesticMarket = 0;
