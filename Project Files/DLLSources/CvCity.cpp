@@ -7166,6 +7166,7 @@ void CvCity::doYields()
 						int iBase = iYieldStored - aiOverFlowProtectedYieldAmount[iYield];
 						aiOverflow[iYield] = (iBase * iMultiplier) / 100;
 					}
+					iProtectedOverflowTotal = 0;//in this case there is no protected overflow
 				}
 			}
 			else
@@ -7185,6 +7186,7 @@ void CvCity::doYields()
 					int iBase = iYieldStored;
 					aiOverflow[iYield] = (iBase * iMultiplier) / 100;
 				}
+				iProtectedOverflowTotal = 0;//in this case there is no protected overflow
 			}
 		}
 		else
@@ -7196,12 +7198,16 @@ void CvCity::doYields()
 			{
 				aiOverflow[iYield] = 0;
 			}
+			iProtectedOverflowTotal = 0;//in this case there is no protected overflow
 		}
+		bHasProtectedOverflow = iProtectedOverflowTotal > 0 ? true : false;
 	}
 	else
 	{
 		//We are in old storage type mode
 		//In this case, the overflow of each yield, does not depend on the stored amounts of the other yields.
+
+		iOverflowTotal = 0;//But let's keep track if there is overflow for any of the yields. Maybe we can skip iterating them later.
 
 		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
 		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
@@ -7210,9 +7216,10 @@ void CvCity::doYields()
 			int iYieldStored = getYieldStored(eYield);
 
 			aiOverflow[iYield] = iYieldStored - iMaxCapacity;
+			iOverflowTotal += aiOverflow[iYield];
 		}
+		bHasOverflowTotal = iOverflowTotal > 0 ? true : false;
 	}
-	bHasProtectedOverflow = iProtectedOverflowTotal > 0 ? true : false;
 
 
 	//Tangible yields: Calculate the removal for each yield and deduct it from the storage
@@ -7224,53 +7231,83 @@ void CvCity::doYields()
 	int aiProtectedRemoval[NUM_YIELD_TYPES];
 	int iProtectedRemovalTotal = 0;
 	bool bHasProtectedRemoval = false;
-	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
-	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	if (bHasOverflowTotal)
 	{
-		YieldTypes eYield = (YieldTypes)iYield;
-
-		if (aiOverflow[iYield] > 0)
+		if (GC.getNEW_CAPACITY())
 		{
-			//Removal derives either from a percentage of the overflow or from a fixed amount ...
-			aiRemoval[iYield] = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
-			//... but it can not be larger than the overflow.
-			aiRemoval[iYield] = std::min(aiRemoval[iYield], aiOverflow[iYield]);
+			//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+			for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+			{
+				YieldTypes eYield = (YieldTypes)iYield;
+
+				if (aiOverflow[iYield] > 0)
+				{
+					//Removal derives either from a percentage of the overflow or from a fixed amount ...
+					aiRemoval[iYield] = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
+					//... but it can not be larger than the overflow.
+					aiRemoval[iYield] = std::min(aiRemoval[iYield], aiOverflow[iYield]);
+				}
+				else
+				{
+					//Removal can only happen, if there is overflow
+					aiRemoval[iYield] = 0;
+				}
+
+				//Additionally, we want to know if an amount of protected yield was removed ...
+				if (aiProtectedOverflow[iYield] > 0)
+				{
+					//Protected yield was pushed into the overflow
+
+					//The removal of protected yield is the difference between the protected amount and the total amount minus the removal ...
+					aiProtectedRemoval[iYield] = aiOverFlowProtectedYieldAmount[iYield] - (getYieldStored(eYield) - aiRemoval[iYield]);
+					//... but only if it is positive - no negative removal
+					aiProtectedRemoval[iYield] = std::max(aiProtectedRemoval[iYield], 0);
+
+					iProtectedRemovalTotal += aiProtectedRemoval[iYield];
+				}
+
+				//Deduct the removal from the storage
+				changeYieldStored(eYield, -aiRemoval[iYield]);
+
+				iRemovalTotal += aiRemoval[iYield];
+			}
 		}
 		else
 		{
-			//Removal can only happen, if there is overflow
-			aiRemoval[iYield] = 0;
+			//We are in old storage type mode
+
+			//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+			for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+			{
+				YieldTypes eYield = (YieldTypes)iYield;
+
+				if (aiOverflow[iYield] > 0)
+				{
+					//Removal derives either from a percentage of the overflow or from a fixed amount ...
+					aiRemoval[iYield] = std::max(GC.getCITY_YIELD_DECAY_PERCENT() * aiOverflow[iYield] / 100, GC.getMIN_CITY_YIELD_DECAY());
+					//... but it can not be larger than the overflow.
+					aiRemoval[iYield] = std::min(aiRemoval[iYield], aiOverflow[iYield]);
+				}
+				else
+				{
+					//Removal can only happen, if there is overflow
+					aiRemoval[iYield] = 0;
+				}
+
+				//Deduct the removal from the storage
+				changeYieldStored(eYield, -aiRemoval[iYield]);
+			}
 		}
-
-		//Additionally, we want to know if an amount of protected yield was removed ...
-		if (aiProtectedOverflow[iYield] > 0)
-		{
-			//Protected yield was pushed into the overflow
-
-			//The removal of protected yield is the difference between the protected amount and the total amount minus the removal ...
-			aiProtectedRemoval[iYield] = aiOverFlowProtectedYieldAmount[iYield] - (getYieldStored(eYield) - aiRemoval[iYield]);
-			//... but only if it is positive - no negative removal
-			aiProtectedRemoval[iYield] = std::max(aiProtectedRemoval[iYield], 0);
-
-			iProtectedRemovalTotal += aiProtectedRemoval[iYield];
-		}
-
-		//Deduct the removal from the storage
-		changeYieldStored(eYield, -aiRemoval[iYield]);
-
-		iRemovalTotal += aiRemoval[iYield];
+	}
+	else
+	{
+		//no overflow = no removal
 	}
 	bHasRemoval = iRemovalTotal > 0 ? true : false;
 	bHasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
 	//Tangible yields: Calculate and book profits, track sold and lost amounts
-	//Prequisites for making a profit from a trade, lets get references to all parties who are invloved ...
-	PlayerTypes ePlayer = getOwnerINLINE();
-	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
-	PlayerTypes eKing = rPlayer.getParent();
-	CvPlayerAI& rKing = GET_PLAYER(eKing);
-
 	int aiProfit[NUM_YIELD_TYPES];
 	int iProfitTotal = 0;
 	bool bHasProfitTotal = false;
@@ -7282,79 +7319,94 @@ void CvCity::doYields()
 	int aiLosses[NUM_YIELD_TYPES];
 	int iLossesTotal = 0;
 	bool bHasLosses = false;
-	if (
-		//We need to have a king in europe to sell the removal to.
-		eKing != NO_PLAYER
-		//This city is capable of auto-selling
-		&& iStorageRemovalSellPercentage > 0
-		//We are not at war with our king, or at least can sell to europe despite a war with him.
-		&& rPlayer.canTradeWithEurope()
-	)
+	if (bHasRemoval)
 	{
-		//This city can sell to europe
+		//Here the code is the same for old and new storage type mode.
 
-		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
-		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+		//Prequisites for making a profit from a trade, lets get references to all parties who are invloved ...
+		PlayerTypes ePlayer = getOwnerINLINE();
+		CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
+		PlayerTypes eKing = rPlayer.getParent();
+		CvPlayerAI& rKing = GET_PLAYER(eKing);
+
+		if (
+			//We need to have a king in europe to sell the removal to.
+			eKing != NO_PLAYER
+			//This city is capable of auto-selling
+			&& iStorageRemovalSellPercentage > 0
+			//We are not at war with our king, or at least can sell to europe despite a war with him.
+			&& rPlayer.canTradeWithEurope()
+			)
 		{
-			YieldTypes eYield = (YieldTypes)iYield;
-			if (rPlayer.isYieldBoycotted(eYield))
+			//This city can sell to europe
+
+			//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+			for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 			{
-				if (bIgnoresBoycott)
+				YieldTypes eYield = (YieldTypes)iYield;
+				if (rPlayer.isYieldBoycotted(eYield))
 				{
-					//The yield is boycotted but the boycott can be ignored
+					if (bIgnoresBoycott)
+					{
+						//The yield is boycotted but the boycott can be ignored
+
+						aiSales[iYield] = aiRemoval[iYield];
+						aiLosses[iYield] = 0;
+
+						aiProfit[iYield] = (aiRemoval[iYield] * GC.getYieldInfo(eYield).getMinimumBuyPrice());
+					}
+					else
+					{
+						//The yield is boycotted and the boycott can not be ignored
+
+						aiSales[iYield] = 0;
+						aiLosses[iYield] = aiRemoval[iYield];
+
+						aiProfit[iYield] = 0;
+					}
+				}
+				else
+				{
+					//There is no boycott on this yield
 
 					aiSales[iYield] = aiRemoval[iYield];
 					aiLosses[iYield] = 0;
 
-					aiProfit[iYield] = (aiRemoval[iYield] * GC.getYieldInfo(eYield).getMinimumBuyPrice());
+					aiProfit[iYield] = (aiRemoval[iYield] * rKing.getYieldBuyPrice(eYield));
 				}
-				else
-				{
-					//The yield is boycotted and the boycott can not be ignored
 
-					aiSales[iYield] = 0;
-					aiLosses[iYield] = aiRemoval[iYield];
+				//Apply penalty for storage removal selling, instead of exporting via ship. Also deduct tax.
+				aiProfit[iYield] = aiProfit[iYield] * iStorageRemovalSellPercentage * (100 - rPlayer.getTaxRate()) / 10000;
 
-					aiProfit[iYield] = 0;
-				}
-			}
-			else
-			{
-				//There is no boycott on this yield
-
-				aiSales[iYield] = aiRemoval[iYield];
-				aiLosses[iYield] = 0;
-
-				aiProfit[iYield] = (aiRemoval[iYield] * rKing.getYieldBuyPrice(eYield));
+				iSalesTotal += aiSales[iYield];
+				iLossesTotal += aiLosses[iYield];
+				iProfitTotal += aiProfit[iYield];
 			}
 
-			//Apply penalty for storage removal selling, instead of exporting via ship. Also deduct tax.
-			aiProfit[iYield] = aiProfit[iYield] * iStorageRemovalSellPercentage * (100 - rPlayer.getTaxRate()) / 10000;
-
-			iSalesTotal += aiSales[iYield];
-			iLossesTotal += aiLosses[iYield];
-			iProfitTotal += aiProfit[iYield];
+			//Book profits
+			rPlayer.changeGold(iProfitTotal * rPlayer.getExtraTradeMultiplier(eKing) / 100);
 		}
+		else
+		{
+			//The player or this city are not able to sell to europe
 
-		//Book profits
-		rPlayer.changeGold(iProfitTotal * rPlayer.getExtraTradeMultiplier(eKing) / 100);
+			//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
+			for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+			{
+				aiSales[iYield] = 0;
+				aiLosses[iYield] = aiRemoval[iYield];
+
+				aiProfit[iYield] = 0;
+			}
+
+			iSalesTotal = 0;
+			iLossesTotal = iRemovalTotal;
+			iProfitTotal = 0;
+		}
 	}
 	else
 	{
-		//We or this city are not able to sell to europe
-
-		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
-		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
-		{
-			aiSales[iYield] = 0;
-			aiLosses[iYield] = aiRemoval[iYield];
-
-			aiProfit[iYield] = 0;
-		}
-
-		iSalesTotal = 0;
-		iLossesTotal = iRemovalTotal;
-		iProfitTotal = 0;
+		//no removal = no sales, no losses, no profits
 	}
 	bHasSales = iSalesTotal > 0 ? true : false;
 	bHasLosses = iLossesTotal > 0 ? true : false;
@@ -7365,6 +7417,11 @@ void CvCity::doYields()
 	if (bHasSales)
 	{
 		//Something was sold to europe
+
+		PlayerTypes ePlayer = getOwnerINLINE();
+		CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
+		PlayerTypes eKing = rPlayer.getParent();
+		CvPlayerAI& rKing = GET_PLAYER(eKing);
 
 		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored amount and are excempt from overflow
 		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
