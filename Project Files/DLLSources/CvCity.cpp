@@ -7307,6 +7307,13 @@ void CvCity::doYields()
 	bHasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
+	//From here downwards we need references to the player and its king.
+	PlayerTypes ePlayer = getOwnerINLINE();
+	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
+	PlayerTypes eKing = rPlayer.getParent();
+	CvPlayerAI& rKing = GET_PLAYER(eKing);
+
+
 	//Tangible yields: Calculate and book profits, track sold and lost amounts
 	int aiProfit[NUM_YIELD_TYPES];
 	int iProfitTotal = 0;
@@ -7322,12 +7329,6 @@ void CvCity::doYields()
 	if (bHasRemoval)
 	{
 		//Here the code is the same for old and new storage type mode.
-
-		//Prequisites for making a profit from a trade, lets get references to all parties who are invloved ...
-		PlayerTypes ePlayer = getOwnerINLINE();
-		CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
-		PlayerTypes eKing = rPlayer.getParent();
-		CvPlayerAI& rKing = GET_PLAYER(eKing);
 
 		if (
 			//We need to have a king in europe to sell the removal to.
@@ -7418,11 +7419,6 @@ void CvCity::doYields()
 	{
 		//Something was sold to europe
 
-		PlayerTypes ePlayer = getOwnerINLINE();
-		CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
-		PlayerTypes eKing = rPlayer.getParent();
-		CvPlayerAI& rKing = GET_PLAYER(eKing);
-
 		//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored amount and are excempt from overflow
 		for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
 		{
@@ -7448,7 +7444,7 @@ void CvCity::doYields()
 		{
 			FatherPointTypes ePointType = (FatherPointTypes)i;
 			iPoints = iProfitTotal * iMultiplierFatherPointsAutoSelling * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 10000;
-			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iPoints);
+			rPlayer.changeFatherPoints(ePointType, iPoints);
 		}
 	}
 
@@ -7463,7 +7459,7 @@ void CvCity::doYields()
 			for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
 			{
 				FatherPointTypes ePointType = (FatherPointTypes)i;
-				GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, aiYieldsNetChanges[iYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(iYield));
+				rPlayer.changeFatherPoints(ePointType, aiYieldsNetChanges[iYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(iYield));
 			}
 
 			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
