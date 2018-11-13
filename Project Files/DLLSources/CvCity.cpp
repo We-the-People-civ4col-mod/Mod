@@ -7033,6 +7033,29 @@ void CvCity::doYields()
 	int aiYieldsNetChanges[NUM_YIELD_TYPES];//will store the net changes in yields
 	calculateNetYields(aiYieldsNetChanges, NULL, NULL, true);
 
+
+	//From here downwards we need a reference to the player object.
+	PlayerTypes ePlayer = getOwnerINLINE();
+	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
+
+
+	//Tangible yields: Reward father points for net yield amounts
+	for (int iYield = YIELD_FOOD; iYield <= YIELD_LUXURY_GOODS; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		if (aiYieldsNetChanges[iYield] > 0)
+		{
+			for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+			{
+				FatherPointTypes ePointType = (FatherPointTypes)i;
+				rPlayer.changeFatherPoints(ePointType, aiYieldsNetChanges[iYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(iYield));
+			}
+
+			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
+		}
+	}
+
+
 	sellToDomesticMarket(aiYieldsNetChanges);
 
 	//Now iterate the yield types ...
@@ -7309,9 +7332,7 @@ void CvCity::doYields()
 	bHasProtectedRemoval = iProtectedRemovalTotal > 0 ? true : false;
 
 
-	//From here downwards we need references to the player and its king.
-	PlayerTypes ePlayer = getOwnerINLINE();
-	CvPlayerAI& rPlayer = GET_PLAYER(ePlayer);
+	//From here downwards we need a reference to the king object.
 	PlayerTypes eKing = rPlayer.getParent();
 	CvPlayerAI& rKing = GET_PLAYER(eKing);
 
@@ -7447,24 +7468,6 @@ void CvCity::doYields()
 			FatherPointTypes ePointType = (FatherPointTypes)i;
 			iPoints = iProfitTotal * iMultiplierFatherPointsAutoSelling * GC.getFatherPointInfo(ePointType).getEuropeTradeGoldPointPercent() / 10000;
 			rPlayer.changeFatherPoints(ePointType, iPoints);
-		}
-	}
-
-
-	//Tangible yields: Reward father points for net yield amounts
-	//Start with YIELD_HEMP, as food, lumber and stone do not add to the total stored ammount and are excempt from overflow
-	for (int iYield = YIELD_HEMP; iYield <= YIELD_LUXURY_GOODS; ++iYield)
-	{
-		YieldTypes eYield = (YieldTypes)iYield;
-		if (aiYieldsNetChanges[iYield] > 0)
-		{
-			for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
-			{
-				FatherPointTypes ePointType = (FatherPointTypes)i;
-				rPlayer.changeFatherPoints(ePointType, aiYieldsNetChanges[iYield] * GC.getFatherPointInfo(ePointType).getYieldPoints(iYield));
-			}
-
-			gDLL->getEventReporterIFace()->yieldProduced(getOwnerINLINE(), getID(), eYield);
 		}
 	}
 
