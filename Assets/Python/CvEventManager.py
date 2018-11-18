@@ -323,6 +323,13 @@ class CvEventManager:
 					if ( self.bShift ):
 						CvScreensInterface.replayScreen.showScreen(False)
 						return 1
+						
+				elif (theKey == int(InputTypes.KB_F2)):
+					if ( self.bShift ):
+						city = CyMap().plot(px, py).getPlotCity()
+						if (city != None):
+							CyInterface().selectCity(city, true)
+							return 1
 					# don't return 1 unless you want the input consumed
 
 
