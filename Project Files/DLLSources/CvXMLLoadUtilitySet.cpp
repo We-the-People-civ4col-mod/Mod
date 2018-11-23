@@ -946,6 +946,8 @@ bool CvXMLLoadUtility::SetGlobalArtDefines()
 //
 //  PURPOSE :   Handles all Global Text Infos
 //
+// Called at startup and whenever a new language is selected from the option menu
+//
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadGlobalText()
 {
@@ -2307,6 +2309,15 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	LoadGlobalClassInfo(GC.getPlayerOptionInfo(), "CIV4PlayerOptionInfos", "GameInfo", "Civ4PlayerOptionInfos/PlayerOptionInfos/PlayerOptionInfo", NULL);
 	FAssert(GC.getNumPlayerOptionInfos() == NUM_PLAYEROPTION_TYPES);
+
+	// Load the language menu IDs
+	// See CvGameText for full explanation.
+	bool bLoaded = LoadCivXml(m_pFXml, "xml\\Interface\\Languages.xml");
+	FAssertMsg(bLoaded, "Failed to load langauges\n");
+	if (bLoaded)
+	{
+		CvGameText::readLanguages(this);
+	}
 
 	DestroyFXml();
 	return true;

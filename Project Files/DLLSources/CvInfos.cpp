@@ -12681,15 +12681,222 @@ bool CvLandscapeInfo::read(CvXMLLoadUtility* pXML)
 // CvGameText
 //////////////////////////////////////////////////////////////////////////
 // static
-int CvGameText::NUM_LANGUAGES = 0;
+int CvGameText::STATIC_iNumLanguages = 0;
+int* CvGameText::STATIC_pLanguageArray = NULL;
+bool CvGameText::STATIC_bChangeLanguage = false;
+
+/*
+ * Vanilla has an issue with selecting language because it saves language as an int in CivilizationIV.ini.
+ * The core of the issue is that this ini file is shared by all mods, meaning you don't select English, you select language 0.
+ * Vanilla provides IDs for 5 languages and all mods use those, hiding the issue. As long as all mods only use languages
+ *   from vanilla, this won't be a problem. Selecting language 0 is English in all mods.
+ * However this is only true for languages 0-4. If two mods adds language 5, but disagree on which is 5, a huge mess will occur.
+ * 
+ * A really big problem is selecting language 5 and then switch to a mod with only 5 languagages as this will remove all text.
+ * Not just write errors, more like simply removing all text entirely like writing text delivers nothing.
+ * This is clear right away as the main menu is empty. No text means nothing to click on, not even change language.
+ *
+ * Another issue is that the xml file stores a number of languages of each entry. The vanilla read code reads the Xth entry.
+ * This means language 0 will read the first, even if that isn't English. It also means it requires a line for each language.
+ * Adding a text string is an issue if you have to add it for each language, particularly if the number of languages is increasing.
+ *
+ * This heavily modded part of CvGameText aims to allow adding languages much easier while avoiding issues when switching mods.
+ * 
+ * The core idea is splitting the language int into multiple ints:
+ *  - Language ID: the value written to CivilizationIV.ini
+ *  - Language menu ID: the index in the language selection menu in the game options
+ *  - Make string reading depend on tag name rather than index
+ *
+ * Language ID:
+ *  Since this setting is shared between all mods, the goal is to make sure all mods agree on which language each ID represents.
+ *  CvGameText::getLanguageName() converts an index into a language.
+ *
+ * Language menu ID:
+ *  New concept. It's set by the file xml\Interface\Languages.xml.
+ *  It sets which languages should appear in the menu and in which order.
+ *  This means we aren't forced to include all the langauges we have added a Language ID for and the menu can be mod specific.
+ *
+ * TXT_KEY loading:
+ *  This no longer depends on index. Instead the new requirements are:
+ *  Tag needs to go first. The language tag used is CvGameText::getLanguageName(current Language ID)
+ *  This means it's perfectly valid to only add English, English and German or whatever translations you actually have.
+ *  Vanilla requires a tag for each language, even if no translator is available.
+ *
+ *
+ * English is the default language
+ *  This means if a TXT_KEY doesn't have the requested language, the game will use English instead for the TXT_KEY in question.
+ *  This means partial translations will be a mix of English and that language rather than a crash when selecting the language.
+ *  It also mean if the player switch mod and the other mod doesn't have the language in question, English will be used.
+ *
+ * Adding more languages to the list
+ *  If a mod needs to add a language not present, just do so, but do make other mods aware of this.
+ *  The problem is if two mods adds two different languages at the same ID, which is why new IDs should be synced.
+ *  If one mod adds a language and another isn't updated for that language, it will use the defaults to English fallback.
+ *  Since out of bounds use English, this isn't an issue if one mod adds a language, only if two mods adds in parallel.
+ *  In other words if a mod use this system and it dies, it will still work with other mods using this system without being updated.
+ *  While we hope no mods die, it's an important aspect to code into the system from the start.
+ *
+ * If a player use language X in mod A, switches to mod B, which doesn't have X, then English is used.
+ *  However if the player doesn't change the language and switch back to mod A, language X is still remembered and will be used.
+ *  This is because the English fallback will not actually update the ini file.
+ *  As a result, people can select their language of choice, use it if available and use English if not. No mod specific setup.
+ */
+
+void CvGameText::setChangeLanguage()
+{
+	STATIC_bChangeLanguage = true;
+}
+
 int CvGameText::getNumLanguages() const
 {
-	return NUM_LANGUAGES;
+	// The exe will use this function for two purposes:
+	// 1: number of lines in the language menu
+	// 2: setting a new current Language ID will be ignored if the value is >= the return value here
+
+	// This is a problem for our modded system if one or more languages are skipped in Languages.xml.
+	// Say we have English and Tag. That's 0 and 25, but the number of languages is 2, meaning requests to change to Tag are ignored.
+
+	// The solution to this is when changing the language, the bool CHANGE_LANGUAGE is set.
+	// This means we know if the exe calls for the menu length or for verifying Language ID.
+	if (STATIC_bChangeLanguage)
+	{
+		// New language being tested.
+		// All languages will be lower than MAX_INT, meaning returning this value disables the unwanted test.
+		STATIC_bChangeLanguage = false;
+		return MAX_INT;
+	}
+
+	// The exe asks for the number of languages, which should be put in the menu (from Languages.xml)
+	return STATIC_iNumLanguages;
 }
+
+// Same as the non-static function, except this one doesn't need an instance to work.
+// Also being modded, we don't have to consider calls from the exe.
+int CvGameText::getNumLanguagesStatic()
+{
+	return STATIC_iNumLanguages;
+}
+
 void CvGameText::setNumLanguages(int iNum)
 {
-	NUM_LANGUAGES = iNum;
+	// Note: vanilla exe exposed function. It doesn't look like it's used at all.
+	STATIC_iNumLanguages = iNum;
 }
+
+// Convert Language Menu ID to Language ID
+int CvGameText::getLanguageAtIndex(int iIndex)
+{
+	if (iIndex >= 0 && iIndex < STATIC_iNumLanguages)
+	{
+		return STATIC_pLanguageArray[iIndex];
+	}
+	return 0;
+}
+
+const TCHAR* CvGameText::getLanguageName(int iLanguageID)
+{
+	// The game will store the chosen language as an int, not a string.
+	// This has a history of messing up switching between mods.
+	// Hardcoding indexes here should solve that problem if all mods use this function/DLL.
+	// 0-4 is hardcoded by vanilla.
+	// 0-10 are copied from Caveman2Cosmos
+	// 11-24 attempts to complete the list of languages using codepage 1252 (the translations not burdened by encoding issues)
+	// 25 Tag is displaying the Tag rather than text. Useful for figuring out which TXT_KEY to look up if you want to edit a string
+
+	// Not a performance critical function. Adding to the list will not really affect either memory or CPU usage.
+
+	// IDs serve no purpose other than identification. This means there is no functional difference between say language 1 and 20.
+	// All it requires is that English is 0 and the IDs goes from 0 to the end without skipping any numbers.
+
+	// Changing existing IDs is not a good idea because big problems will occur if two mods disagree on which language an ID refers to.
+	// Even if all mods update at the same time, there is still the risk that a player updates one mod and not the other.
+	// There is also the fact that even if the player updates everything, CivilizationIV.ini will still use the old value.
+	// Because of this, expand the list at the end and make sure all mods expand the same way.
+	// If one mod adds a language and another isn't updated, that mod will use English instead because default is English.
+	// This way if one mod updates the list, other mods will not have to update until they add to the list anyway.
+
+	switch (iLanguageID)
+	{
+	case 0: return "English";
+	case 1: return "French";
+	case 2: return "German";
+	case 3: return "Italian";
+	case 4: return "Spanish";
+	case 5:	return "Finnish";
+	case 6:	return "Hungarian";
+	case 7:	return "Polish";
+	case 8: return "Russian";
+	case 9: return "Chinese";
+	case 10: return "Japanese";
+
+	case 11: return "Afrikaans";
+	case 12: return "Albanian";
+	case 13: return "Basque";
+	case 14: return "Catalan";
+	case 15: return "Danish";
+	case 16: return "Dutch";
+	case 17: return "Faroese";
+	case 18: return "Galician";
+	case 19: return "Icelandic";
+	case 20: return "PortugueseBR";
+	case 21: return "PortuguesePT";
+	case 22: return "Norwegian";
+	case 23: return "Scottish";
+	case 24: return "Swedish";
+
+	case 25: return "Tag";
+
+
+	default:
+		FAssertMsg(false, CvString::format("Language out of bound: %i", iLanguageID));
+	}
+	return "English";
+}
+
+// Get the Language ID from a string
+// Used to read strings from xml.
+int CvGameText::getLanguageID(const char* szLanguageName)
+{
+	for (int i = 0;; ++i)
+	{
+		const char* szIndexLanguage = getLanguageName(i);
+		if (strcmp(szIndexLanguage, szLanguageName) == 0)
+		{
+			return i;
+		}
+		if (i > 0 && strcmp(szIndexLanguage, "English") == 0)
+		{
+			// Language index is higher than the table allows, meaning szLanguage isn't in the list
+			FAssertMsg(false, CvString::format("Unable to locate language: %s", szLanguageName))
+			return -1;
+		}
+	}
+
+	return -1;
+}
+
+// Read xml\Interface\Languages.xml
+bool CvGameText::readLanguages(CvXMLLoadUtility* pXML)
+{
+	CvString szBuffer;
+	if (!gDLL->getXMLIFace()->LocateNode(pXML->GetXML(), "Languages"))
+	{
+		return false;
+	}
+	STATIC_iNumLanguages = gDLL->getXMLIFace()->NumOfChildrenByTagName(pXML->GetXML(), "Language");
+	SAFE_DELETE_ARRAY(STATIC_pLanguageArray);
+	STATIC_pLanguageArray = new int[STATIC_iNumLanguages];
+	if (!gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Language"))
+	{
+		return false;
+	}
+	for (int i = 0; i < STATIC_iNumLanguages && pXML->GetXmlVal(szBuffer); ++i, gDLL->getXMLIFace()->LocateNextSiblingNodeByTagName(pXML->GetXML(), "Language"))
+	{
+		STATIC_pLanguageArray[i] = getLanguageID(szBuffer.c_str());
+	}
+	return STATIC_iNumLanguages > 0;
+}
+
 CvGameText::CvGameText() :
 	m_szGender("N"),
 	m_szPlural("false")
@@ -12714,49 +12921,46 @@ bool CvGameText::read(CvXMLLoadUtility* pXML)
 	gDLL->getXMLIFace()->SetToChild(pXML->GetXML()); // Move down to Child level
 	pXML->GetXmlVal(m_szType);		// TAG
 
-	static const int iMaxNumLanguages = GC.getDefineINT("MAX_NUM_LANGUAGES");
-	int iNumLanguages = NUM_LANGUAGES ? NUM_LANGUAGES : iMaxNumLanguages + 1;
-	int j=0;
-	for (j = 0; j < iNumLanguages; j++)
+	// move to the tag, which contains the language, which we will load.
+
+	// First try the user selected language
+	if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), getLanguageName(GAMETEXT.getCurrentLanguage())))
 	{
-		pXML->SkipToNextVal();	// skip comments
-		if (!gDLL->getXMLIFace()->NextSibling(pXML->GetXML()) || j == iMaxNumLanguages)
+		// language not found. Use English as fallback
+		if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "English"))
 		{
-			NUM_LANGUAGES = j;
-			break;
-		}
-		if (j == GAMETEXT.getCurrentLanguage()) // Only add appropriate language Text
-		{
-			// TEXT
-			if (pXML->GetChildXmlValByName(wszTextVal, "Text"))
-			{
-				setText(wszTextVal);
-			}
-			else
-			{
-				pXML->GetXmlVal(wszTextVal);
-				setText(wszTextVal);
-				if (NUM_LANGUAGES > 0)
-				{
-					break;
-				}
-			}
-			// GENDER
-			if (pXML->GetChildXmlValByName(wszTextVal, "Gender"))
-			{
-				setGender(wszTextVal);
-			}
-			// PLURAL
-			if (pXML->GetChildXmlValByName(wszTextVal, "Plural"))
-			{
-				setPlural(wszTextVal);
-			}
-			if (NUM_LANGUAGES > 0)
-			{
-				break;
-			}
+			// English missing!!!
+			// This should never happen!
+			// Use Tag because we have to find a child to work on.
+			FAssertMsg(false, CvString::format("Missing languages in string %s", m_szType).c_str());
+			gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "Tag");
 		}
 	}
+	
+	if (pXML->GetChildXmlValByName(wszTextVal, "Text"))
+	{
+		// There are child tags. Read all 3 of them.
+
+		// TEXT
+		setText(wszTextVal);
+		// GENDER
+		if (pXML->GetChildXmlValByName(wszTextVal, "Gender"))
+		{
+			setGender(wszTextVal);
+		}
+		// PLURAL
+		if (pXML->GetChildXmlValByName(wszTextVal, "Plural"))
+		{
+			setPlural(wszTextVal);
+		}
+	}
+	else
+	{
+		// No Text child meaning no gender or plural. Just read the text.
+		pXML->GetXmlVal(wszTextVal);
+		setText(wszTextVal);
+	}
+
 	gDLL->getXMLIFace()->SetToParent(pXML->GetXML()); // Move back up to Parent
 	return true;
 }

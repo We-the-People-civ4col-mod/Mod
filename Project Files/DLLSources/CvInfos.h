@@ -3881,11 +3881,21 @@ public:
 	DllExport void setNumLanguages(int iNum); // not static for Python access
 	bool read(CvXMLLoadUtility* pXML);
 
+	static int getNumLanguagesStatic();
+	static const TCHAR* CvGameText::getLanguageName(int iLanguageID);
+	static int getLanguageAtIndex(int iIndex);
+	static bool readLanguages(CvXMLLoadUtility* pXML);
+	static void setChangeLanguage();
+
 protected:
+	static int getLanguageID(const char* szLanguageName);
+
 	CvWString m_szText;
 	CvWString m_szGender;
 	CvWString m_szPlural;
-	static int NUM_LANGUAGES;
+	static int STATIC_iNumLanguages;
+	static int *STATIC_pLanguageArray;
+	static bool STATIC_bChangeLanguage;
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

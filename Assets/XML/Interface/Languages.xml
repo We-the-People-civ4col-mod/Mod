@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<!-- Sets the contents of the language dropdown menu in the options menu. -->
+
+<!-- When reading the individual TXT_KEYs, the game will read the tag mentioned here. -->
+<!-- If not present, then English will be read instead, making incomplete translations playable. -->
+<!-- Order doesn't matter. It's completely free which order the languages should appear in. -->
+
+<!-- The names of the languages printed in the menu will be TXT_KEY_LANGUAGE_ + index, like TXT_KEY_LANGUAGE_0 -->
+<!-- This means changing the order requires updating the TXT_KEY_LANGUAGE_ keys too. -->
+
+<!-- Colonization stores the chosen language as the language, not the index from this file. -->
+<!-- This means if you pick a language in one mod and loads another mod (using the same DLL), then
+     the game will figure out using the same language even if they appear in different order. -->
+<!-- If the language isn't present in the other mod, English will be used, though it won't update the settings. -->
+
+<!-- Example: You pick German in mod A. Next you load mod B, which doesn't have a German translation.
+     Mod B will appear in English. However if you don't change language in mod B, Mod A will still remember being in German. -->
+
+<!-- Valid languages are listed in CvGameText::getLanguageName() in CvInfos.cpp -->
+
+<!-- The "language" Tag can be used to display TXT_KEYs rather than text.
+     Intended usage is when you find a string ingame you want to mod, but you don't know which key it is. -->
+
+<Languages xmlns="x-schema:LanguageSchema.xml">
+	<Language>English</Language>
+	<Language>French</Language>
+	<Language>German</Language>
+</Languages>

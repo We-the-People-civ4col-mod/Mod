@@ -591,11 +591,29 @@ bool CyGame::isPitbossHost() const				// remove once CvApp is exposed
 }
 int CyGame::getCurrentLanguage() const				// remove once CvApp is exposed
 {
-	return gDLL->getCurrentLanguage();
+	// Used by the language dropdown menu in game option GUI (exe hardcoded)
+	// 
+
+	for (int i = 0; i < CvGameText::getNumLanguagesStatic(); ++i)
+	{
+		if (CvGameText::getLanguageAtIndex(i) == gDLL->getCurrentLanguage())
+		{
+			return i;
+		}
+	}
+	// We normally won't end up here, but switching to another mod or manual changing xml/ini might make it possible.
+	// Since we need to return something, just use the first language.
+	return 0;
 }
 void CyGame::setCurrentLanguage(int iNewLanguage)			// remove once CvApp is exposed
 {
-	gDLL->setCurrentLanguage(iNewLanguage);
+	// The user selected a new language form the options menu (which is inside the exe)
+	
+	// First tell CvGameText that a new language is selected.
+	// The reason is explained in CvGameText::getNumLanguages()
+	CvGameText::setChangeLanguage();
+	// Convert the menu index to the index used in the filesystem/ini file and store this value.
+	gDLL->setCurrentLanguage(CvGameText::getLanguageAtIndex(iNewLanguage));
 }
 int CyGame::getReplayMessageTurn(int i) const
 {

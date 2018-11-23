@@ -1,0 +1,9 @@
+
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Language" content="textOnly"/>
+
+	<ElementType name="Languages" content="eltOnly">
+		<element type="Language" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+
+</Schema>

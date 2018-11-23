@@ -103,6 +103,9 @@ public:
 	virtual bool GetLastLocatedNodeTagName(FXml* xml, TCHAR* pszTagName) = 0;
 	virtual bool IsAllowXMLCaching() = 0;
 	virtual void MapChildren(FXml*) = 0;
+
+	// overload for const correctness
+	inline bool LocateFirstSiblingNodeByTagName(FXml* xml, const TCHAR* pszTagName) { return LocateFirstSiblingNodeByTagName(xml, (TCHAR*)pszTagName); }
 };
 
 #endif
