@@ -961,6 +961,11 @@ bool CvXMLLoadUtility::LoadGlobalText()
 			return false;
 		}
 
+		// Set the locate to the one needed by the language in question
+		// Sadly this seems to be very much hit or miss on a per computer basis. Sometimes it works and sometimes it doesn't.
+		// If it doesn't work, the user has to change the windows locale manually. Guide: 
+		setlocale(LC_ALL, CvString::format(".%d", CvGameText::getCodePage()).c_str());
+
 		//
 		// load all files in the xml text directory
 		//
@@ -989,7 +994,12 @@ bool CvXMLLoadUtility::LoadGlobalText()
 				// if the xml is successfully validated
 				if (Validate())
 				{
-					SetGameText("Civ4GameText", "Civ4GameText/TEXT");
+					// First check if utf8 is in the filename.
+					// Vanilla has converted the path to lowercase at this point meaning it's not a case sensitive search.
+					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL;
+
+					// Now call the vanilla read code.
+					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8);
 				}
 			}
 		}
@@ -1611,7 +1621,7 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 //  PURPOSE :   Reads game text info from XML and adds it to the translation manager
 //
 //------------------------------------------------------------------------------------------------------
-void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName)
+void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8)
 {
 	PROFILE_FUNC();
 	logMsg("SetGameText %s\n", szTagName);
@@ -1628,7 +1638,7 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		for (i=0; i < iNumVals; i++)
 		{
 			CvGameText textInfo;
-			textInfo.read(this);
+			textInfo.read(this, bUTF8);
 
 			gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml) && i!=iNumVals-1)

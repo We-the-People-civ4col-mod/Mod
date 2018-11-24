@@ -644,6 +644,18 @@
     <ClInclude Include="DLLSources\resource.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\iconv\civ4iconv.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1250.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1251.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1252.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">

@@ -15,6 +15,7 @@
 #include "CvDLLXMLIFaceBase.h"
 #include "CvGameTextMgr.h"
 #include "CvGameCoreUtils.h"
+#include "iconv/civ4iconv.h"
 
 //------------------------------------------------------------------------------------------------------
 //
@@ -12853,6 +12854,21 @@ const TCHAR* CvGameText::getLanguageName(int iLanguageID)
 	return "English";
 }
 
+// Returns the codepage for the current language
+int CvGameText::getCodePage()
+{
+	switch (GAMETEXT.getCurrentLanguage())
+	{
+	case 6:
+	case 7:
+		return 1250;
+	case 8:
+		return 1251;
+	default:
+		return 1252;
+	}
+}
+
 // Get the Language ID from a string
 // Used to read strings from xml.
 int CvGameText::getLanguageID(const char* szLanguageName)
@@ -12910,7 +12926,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -12937,19 +12953,19 @@ bool CvGameText::read(CvXMLLoadUtility* pXML)
 		}
 	}
 	
-	if (pXML->GetChildXmlValByName(wszTextVal, "Text"))
+	if (readString(pXML, wszTextVal, "Text", bUTF8))
 	{
 		// There are child tags. Read all 3 of them.
 
 		// TEXT
 		setText(wszTextVal);
 		// GENDER
-		if (pXML->GetChildXmlValByName(wszTextVal, "Gender"))
+		if (readString(pXML, wszTextVal, "Gender", bUTF8))
 		{
 			setGender(wszTextVal);
 		}
 		// PLURAL
-		if (pXML->GetChildXmlValByName(wszTextVal, "Plural"))
+		if (readString(pXML, wszTextVal, "Plural", bUTF8))
 		{
 			setPlural(wszTextVal);
 		}
@@ -12957,13 +12973,91 @@ bool CvGameText::read(CvXMLLoadUtility* pXML)
 	else
 	{
 		// No Text child meaning no gender or plural. Just read the text.
-		pXML->GetXmlVal(wszTextVal);
+		readString(pXML, wszTextVal, NULL, bUTF8);
 		setText(wszTextVal);
 	}
 
 	gDLL->getXMLIFace()->SetToParent(pXML->GetXML()); // Move back up to Parent
 	return true;
 }
+
+// read a string from an xml tag. Key feature is to convert from UTF-8 to whatever codepage the current language is using.
+bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8)
+{
+	if (!bUTF8)
+	{
+		// vanilla reading code. Assuming the correct encoding from xml without verification.
+		if (szTagName == NULL)
+		{
+			return pXML->GetXmlVal(wszTextVal);
+		}
+		else
+		{
+			return pXML->GetChildXmlValByName(wszTextVal, szTagName);
+		}
+	}
+
+	// Convert UTF8 to whatever encoding the language in question requires.
+
+	bool bLoaded = false;
+	wszTextVal.clear();
+	CvString szBuffer;
+
+	if (szTagName == NULL)
+	{
+		bLoaded = pXML->GetXmlVal(szBuffer);
+	}
+	else
+	{
+		bLoaded = pXML->GetChildXmlValByName(szBuffer, szTagName);
+	}
+
+	if (!bLoaded)
+	{
+		return false;
+	}
+
+	for (unsigned int i = 0; i < szBuffer.size(); ++i)
+	{
+		unsigned int iBuffer = szBuffer.c_str()[i] & 0xFF; // GetBits doesn't work if it wants to read all the bits, like 8 bits from a byte
+
+		int iExtraBytes = 0;
+
+		if (HasBit(iBuffer, 7))
+		{
+			ClrBit(iBuffer, 7);
+
+			for (int j = 6; HasBit(iBuffer, j); --j)
+			{
+				++iExtraBytes;
+				ClrBit(iBuffer, j);
+			}
+		}
+
+		for (int iByte = 0; iByte < iExtraBytes; ++iByte)
+		{
+			++i;
+			FAssert(i < szBuffer.size());
+			const wchar_t cWChar = szBuffer.c_str()[i];
+			FAssert(HasBit(cWChar, 7) && !HasBit(cWChar, 6));
+			iBuffer <<= 6;
+			iBuffer |= GetBits(cWChar, 0, 6);
+		}
+
+		unsigned char iChar = '?';
+		switch (getCodePage())
+		{
+		case 1250: cp1250_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1251: cp1251_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1252: cp1252_wctomb(0, &iChar, iBuffer, 0); break;
+		default: FAssert(false);
+		}
+		wchar_t buffer = iChar;
+		wszTextVal.append(&buffer, 1);
+	}
+	return true;
+}
+
 //////////////////////////////////////////////////////////////////////////
 //
 //	CvDiplomacyTextInfo
