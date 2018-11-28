@@ -999,7 +999,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL;
 
 					// Now call the vanilla read code.
-					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8);
+					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str());
 				}
 			}
 		}
@@ -1621,7 +1621,7 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 //  PURPOSE :   Reads game text info from XML and adds it to the translation manager
 //
 //------------------------------------------------------------------------------------------------------
-void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8)
+void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName)
 {
 	PROFILE_FUNC();
 	logMsg("SetGameText %s\n", szTagName);
@@ -1638,7 +1638,7 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		for (i=0; i < iNumVals; i++)
 		{
 			CvGameText textInfo;
-			textInfo.read(this, bUTF8);
+			textInfo.read(this, bUTF8, szFileName);
 
 			gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml) && i!=iNumVals-1)

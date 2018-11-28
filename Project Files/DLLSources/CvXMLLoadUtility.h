@@ -249,7 +249,7 @@ private:
 	//
 	void SetGlobalActionInfo();
 	void SetGlobalAnimationPathInfo(CvAnimationPathInfo** ppAnimationPathInfo, char* szTagName, int* iNumVals);
-	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8);
+	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName);
 
 	// create a keyboard string from a KB code, Delete would be returned for KB_DELETE
 	CvWString CreateKeyStringFromKBCode(const TCHAR* pszHotKey);

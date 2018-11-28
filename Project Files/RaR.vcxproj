@@ -152,10 +152,15 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="DLLSources\iconv\civ4iconv.h" />
+    <ClInclude Include="DLLSources\iconv\converters.h" />
     <ClInclude Include="DLLSources\iconv\cp1250.h" />
     <ClInclude Include="DLLSources\iconv\cp1251.h" />
     <ClInclude Include="DLLSources\iconv\cp1252.h" />
+	<ClInclude Include="DLLSources\iconv\cp1253.h" />
+    <ClInclude Include="DLLSources\iconv\cp1254.h" />
+    <ClInclude Include="DLLSources\iconv\cp1255.h" />
+    <ClInclude Include="DLLSources\iconv\cp1256.h" />
+    <ClInclude Include="DLLSources\iconv\cp1257.h" />
     <ClInclude Include="DLLSources\CvArea.h" />
     <ClInclude Include="DLLSources\CvArtFileMgr.h" />
     <ClInclude Include="DLLSources\CvCity.h" />

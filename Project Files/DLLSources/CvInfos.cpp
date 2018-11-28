@@ -15,7 +15,7 @@
 #include "CvDLLXMLIFaceBase.h"
 #include "CvGameTextMgr.h"
 #include "CvGameCoreUtils.h"
-#include "iconv/civ4iconv.h"
+#include "iconv/converters.h"
 
 //------------------------------------------------------------------------------------------------------
 //
@@ -12847,6 +12847,13 @@ const TCHAR* CvGameText::getLanguageName(int iLanguageID)
 
 	case 25: return "Tag";
 
+	case 26: return "Greek";
+	case 27: return "Turkish";
+	case 28: return "Hebrew";
+	case 29: return "Arabic";
+	case 30: return "Estonian";
+	case 31: return "Latvian";
+	case 32: return "Lithuanian";
 
 	default:
 		FAssertMsg(false, CvString::format("Language out of bound: %i", iLanguageID));
@@ -12864,6 +12871,18 @@ int CvGameText::getCodePage()
 		return 1250;
 	case 8:
 		return 1251;
+	case 26:
+		return 1253;
+	case 27:
+		return 1254;
+	case 28:
+		return 1255;
+	case 29:
+		return 1256;
+	case 30:
+	case 31:
+	case 32:
+		return 1257;
 	default:
 		return 1252;
 	}
@@ -12926,7 +12945,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -12953,19 +12972,19 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8)
 		}
 	}
 	
-	if (readString(pXML, wszTextVal, "Text", bUTF8))
+	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName))
 	{
 		// There are child tags. Read all 3 of them.
 
 		// TEXT
 		setText(wszTextVal);
 		// GENDER
-		if (readString(pXML, wszTextVal, "Gender", bUTF8))
+		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName))
 		{
 			setGender(wszTextVal);
 		}
 		// PLURAL
-		if (readString(pXML, wszTextVal, "Plural", bUTF8))
+		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName))
 		{
 			setPlural(wszTextVal);
 		}
@@ -12973,7 +12992,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8)
 	else
 	{
 		// No Text child meaning no gender or plural. Just read the text.
-		readString(pXML, wszTextVal, NULL, bUTF8);
+		readString(pXML, wszTextVal, NULL, bUTF8, szFileName);
 		setText(wszTextVal);
 	}
 
@@ -12982,7 +13001,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8)
 }
 
 // read a string from an xml tag. Key feature is to convert from UTF-8 to whatever codepage the current language is using.
-bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8)
+bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName)
 {
 	if (!bUTF8)
 	{
@@ -13045,13 +13064,32 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 		}
 
 		unsigned char iChar = '?';
+
+		int iReturnVal = 0;
+
 		switch (getCodePage())
 		{
-		case 1250: cp1250_wctomb(0, &iChar, iBuffer, 0); break;
-		case 1251: cp1251_wctomb(0, &iChar, iBuffer, 0); break;
-		case 1252: cp1252_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1250: iReturnVal = cp1250_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1251: iReturnVal = cp1251_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1252: iReturnVal = cp1252_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1253: iReturnVal = cp1253_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1254: iReturnVal = cp1254_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1255: iReturnVal = cp1255_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1256: iReturnVal = cp1256_wctomb(0, &iChar, iBuffer, 0); break;
+		case 1257: iReturnVal = cp1257_wctomb(0, &iChar, iBuffer, 0); break;
 		default: FAssert(false);
 		}
+
+		if (iReturnVal != 1)
+		{
+			CvString szBuffer;
+			szBuffer.Convert(wszTextVal);
+
+			char	szMessage[1024];
+			sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, getType(), szBuffer.c_str(), getCodePage());
+			gDLL->MessageBox(szMessage, "Text encoding error");
+		}
+
 		wchar_t buffer = iChar;
 		wszTextVal.append(&buffer, 1);
 	}

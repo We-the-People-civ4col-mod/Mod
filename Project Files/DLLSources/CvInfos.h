@@ -3879,7 +3879,7 @@ public:
 	const wchar* getPlural() const { return m_szPlural; }
 	DllExport int getNumLanguages() const; // not static for Python access
 	DllExport void setNumLanguages(int iNum); // not static for Python access
-	bool read(CvXMLLoadUtility* pXML, bool bUTF8);
+	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName);
 
 	static int getNumLanguagesStatic();
 	static const TCHAR* CvGameText::getLanguageName(int iLanguageID);
@@ -3891,7 +3891,7 @@ public:
 
 protected:
 	static int getLanguageID(const char* szLanguageName);
-	bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8);
+	bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName);
 
 	CvWString m_szText;
 	CvWString m_szGender;

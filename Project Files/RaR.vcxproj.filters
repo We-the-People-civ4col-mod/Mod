@@ -644,9 +644,6 @@
     <ClInclude Include="DLLSources\resource.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\iconv\civ4iconv.h">
-      <Filter>Misc\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\iconv\cp1250.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
@@ -654,6 +651,24 @@
       <Filter>Misc\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\iconv\cp1252.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1253.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1254.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1255.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1256.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\cp1257.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\iconv\converters.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
   </ItemGroup>
