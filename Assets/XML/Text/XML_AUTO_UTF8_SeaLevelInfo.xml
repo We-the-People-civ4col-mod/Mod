@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_SEALEVEL_HIGH</Tag>
+        <English>High</English>
+        <French>Haut</French>
+        <German>Hoch</German>
+        <Italian>Alto</Italian>
+        <Spanish>Alto</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SEALEVEL_LOW</Tag>
+        <English>Low</English>
+        <French>Bas</French>
+        <German>Niedrig</German>
+        <Italian>Basso</Italian>
+        <Spanish>Bajo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_SEALEVEL_MEDIUM</Tag>
+        <English>Medium</English>
+        <French>Normal</French>
+        <German>Mittel</German>
+        <Italian>Medio</Italian>
+        <Spanish>Medio</Spanish>
+    </TEXT>
+</Civ4GameText>

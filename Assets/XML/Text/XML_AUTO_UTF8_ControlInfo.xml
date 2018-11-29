@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ACHIEVE_SCREEN</Tag>
+        <English>Chronicle</English>
+        <French>Chronique</French>
+        <German>Ereignischronik</German>
+        <Italian>Chronicle</Italian>
+        <Spanish>Chronicle</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ACHIEVE_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ADMIN_DETAILS</Tag>
+        <English>Game Details</English>
+        <French>Détails de la partie</French>
+        <German>Spieldetails</German>
+        <Italian>Dettagli partita</Italian>
+        <Spanish>Detalles de la partida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ADMIN_DETAILS_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_AFRICA_SCREEN</Tag>
+        <English>Africa</English>
+        <French>Afrique</French>
+        <German>Afrika</German>
+        <Italian>Africa</Italian>
+        <Spanish>Africa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_AFRICA_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_AUTOMOVES</Tag>
+        <English>Triggers All Automated Moves</English>
+        <French>Déclenche tous les mouvements automatisés</French>
+        <German>Alle automatisierten Züge auslösen</German>
+        <Italian>Attiva tutti i movimenti automatici</Italian>
+        <Spanish>Activa todos los movimientos automatizados</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_AUTOMOVES_HELP</Tag>
+        <English>TXT_KEY_ACTION_AUTOMOVES_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_BARE_MAP</Tag>
+        <English>Toggle Bare Map</English>
+        <French>Afficher/masquer la carte vierge</French>
+        <German>Leere Karte ein/aus</German>
+        <Italian>Abilita/disabilita la mappa semplificata</Italian>
+        <Spanish>Activar mapa limpio</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_BARE_MAP_HELP</Tag>
+        <English>Makes it easier to see the landscape</English>
+        <French>Facilite l'inspection du terrain</French>
+        <German>Erleichtert die Sicht auf die Landschaft</German>
+        <Italian>Agevola la visione del panorama.</Italian>
+        <Spanish>Hace que ver el paisaje sea más fácil</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CENTERONSELECTION</Tag>
+        <English>Center on Selection</English>
+        <French>Centrer sur la sélection</French>
+        <German>Auf Auswahl zentrieren</German>
+        <Italian>Centra sulla selezione</Italian>
+        <Spanish>Centrar en selección</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CENTERONSELECTION_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CHAT_ALL</Tag>
+        <English>Chat Log</English>
+        <French>Journal</French>
+        <German>Chat-Log</German>
+        <Italian>Registro chat</Italian>
+        <Spanish>Historial del chat</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CHAT_ALL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CHAT_TEAM</Tag>
+        <English>TXT_KEY_CHAT_LOG</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CHAT_TEAM_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CIVILOPEDIA</Tag>
+        <English>Colopedia</English>
+        <French>Colopédie</French>
+        <German>Colopädie</German>
+        <Italian>Colopedia</Italian>
+        <Spanish>Colopedia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CIVILOPEDIA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CONGRESS_SCREEN</Tag>
+        <English>Continental Congress</English>
+        <French>Congrès continental</French>
+        <German>Kontinentalkongress</German>
+        <Italian>Congresso continentale</Italian>
+        <Spanish>Congreso Continental</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CONGRESS_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CYCLEUNIT</Tag>
+        <English>Cycle Units</English>
+        <French>Faire défiler les unités</French>
+        <German>Durch Einheiten schalten</German>
+        <Italian>Scorri unità</Italian>
+        <Spanish>Alternar unidades</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CYCLEUNIT_ALT</Tag>
+        <English>Cycle Units (Alt)</English>
+        <French>Faire défiler les unités (Alt)</French>
+        <German>Durch Einheiten schalten (Alt)</German>
+        <Italian>Scorri unità (Alt)</Italian>
+        <Spanish>Alternar unidades (Alt)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CYCLEUNIT_ALT_HELP</Tag>
+        <English>TXT_KEY_ACTION_CYCLE_UNITS_ALT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CYCLEUNIT_HELP</Tag>
+        <English>TXT_KEY_ACTION_CYCLE_UNITS_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES</Tag>
+        <English>Cycle Camera Flying Modes</English>
+        <French>Faire défiler modes de caméra libre</French>
+        <German>Durch Kameraflugmodi schalten</German>
+        <Italian>Scorri le visuali dall'alto</Italian>
+        <Spanish>Alternar modos aéreos de cámara</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_DETAILS</Tag>
+        <English>Your Details</English>
+        <French>Vos coordonnées</French>
+        <German>Euer Steckbrief</German>
+        <Italian>I tuoi dettagli</Italian>
+        <Spanish>Detalles</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_DETAILS_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_DIPLOMACY</Tag>
+        <English>Start Diplomacy</English>
+        <French>Lancer diplomatie</French>
+        <German>Diplomatische Verhandlungen beginnen</German>
+        <Italian>Avvia diplomazia</Italian>
+        <Spanish>Iniciar diplomacia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_DIPLOMACY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_DOMESTIC_SCREEN</Tag>
+        <English>Domestic Advisor</English>
+        <French>Conseiller aux affaires intérieures</French>
+        <German>Stadtliste</German>
+        <Italian>Consigliere interno</Italian>
+        <Spanish>Consejero de Interior</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_DOMESTIC_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ENDTURN</Tag>
+        <English>End of Turn</English>
+        <French>Fin du tour</French>
+        <German>Rundenende</German>
+        <Italian>Fine del turno</Italian>
+        <Spanish>Fin del turno</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ENDTURN_ALT</Tag>
+        <English>End of Turn (Alt)</English>
+        <French>Fin du tour (Alt)</French>
+        <German>Rundenende (Alt)</German>
+        <Italian>Fine del turno (Alt)</Italian>
+        <Spanish>Fin del turno (Alt)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ENDTURN_ALT_HELP</Tag>
+        <English>TXT_KEY_ACTION_ENDTURN_ALT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ENDTURN_HELP</Tag>
+        <English>TXT_KEY_ACTION_ENDTURN_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_EUROPE_SCREEN</Tag>
+        <English>Europe</English>
+        <French>Europe</French>
+        <German>Europa</German>
+        <Italian>Europe</Italian>
+        <Spanish>Europe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_EUROPE_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FATHER_SCREEN</Tag>
+        <English>Founding Fathers</English>
+        <French>Pères fondateurs</French>
+        <German>Gründerväter</German>
+        <Italian>Padri Fondatori</Italian>
+        <Spanish>Padres fundadores</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FATHER_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FLYING_CAMERA</Tag>
+        <English>Toggle Flying Camera</English>
+        <French>Activer/désactiver la caméra libre</French>
+        <German>Kameraflug umschalten</German>
+        <Italian>Abilita/disabilita la visuale dall'alto</Italian>
+        <Spanish>Activar cámara aérea</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FLYING_CAMERA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FORCEENDTURN</Tag>
+        <English>Force End of Turn</English>
+        <French>Forcer la fin du tour</French>
+        <German>Rundenende erzwingen</German>
+        <Italian>Forza la fine del turno</Italian>
+        <Spanish>Forzar fin del turno </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FORCEENDTURN_HELP</Tag>
+        <English>TXT_KEY_ACTION_FORCE_ENDTURN_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FOREIGN_SCREEN</Tag>
+        <English>Foreign Advisor</English>
+        <French>Conseiller diplomatique</French>
+        <German>Diplomatie</German>
+        <Italian>Consigliere estero</Italian>
+        <Spanish>Consejero de Asuntos Exteriores</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FOREIGN_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FREE_COLONY</Tag>
+        <English>Select the colonies to which you wish to grant independence</English>
+        <French>Sélectionnez les colonies auxquelles vous souhaitez accorder l'indépendance</French>
+        <German>Wählt die Kolonien aus, denen Ihr Unabhängigkeit verleihen möchtet</German>
+        <Italian>Seleziona le colonie che vuoi rendere indipendenti</Italian>
+        <Spanish>Seleccionad las colonias que queráis declarar independientes</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_FREE_COLONY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_GLOBELAYER</Tag>
+        <English>Globe View</English>
+        <French>Vue du globe</French>
+        <German>Herauszoomen in Vogelperspektive ein/aus</German>
+        <Italian>Visuale del pianeta</Italian>
+        <Spanish>Vista global</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_GLOBELAYER_HELP</Tag>
+        <English>Brings up detailed information about your game's world.</English>
+        <French>Informations détaillées sur le monde du jeu.</French>
+        <German>Wechsel zwischen Nahansicht und Fernsicht aus der Vogelperspektive</German>
+        <Italian>Informazioni dettagliate sul mondo della partita.</Italian>
+        <Spanish>Hace que aparezca información detallada sobre el mundo de la partida.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_GLOBE_VIEW</Tag>
+        <English>TXT_KEY_GLOBE_VIEW</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_GLOBE_VIEW_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_GRID</Tag>
+        <English>Toggle Show Tiles</English>
+        <French>Afficher/masquer la grille</French>
+        <German>Geländefelder anzeigen ein/aus</German>
+        <Italian>Abilita/disabilita le caselle</Italian>
+        <Spanish>Activar casillas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_GRID_HELP</Tag>
+        <English>Toggle Gridlines On / Off</English>
+        <French>Afficher/masquer la grille</French>
+        <German>Rasterlinien ein-/ausblenden</German>
+        <Italian>Attiva/disattiva la griglia</Italian>
+        <Spanish>Activar cuadrícula</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_HALL_OF_FAME</Tag>
+        <English>View Hall of Fame</English>
+        <French>Voir le Panthéon</French>
+        <German>Annalen</German>
+        <Italian>Categoria Dei Migliori</Italian>
+        <Spanish>Ver Salón de la Fama</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_HALL_OF_FAME_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_INFO</Tag>
+        <English>Info Screen</English>
+        <French>Ecran d'informations</French>
+        <German>Statistik</German>
+        <Italian>Schermata delle informazioni</Italian>
+        <Spanish>Pantalla de información</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_INFO_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_LEFT</Tag>
+        <English>Turn Camera 45 Degrees Left</English>
+        <French>Faire pivoter la caméra de 45° à gauche</French>
+        <German>Kamera um 45 Grad nach links drehen</German>
+        <Italian>Sposta la visuale di 45° a sinistra</Italian>
+        <Spanish>Girar cámara 45 grados a la izquierda</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_LEFT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_RIGHT</Tag>
+        <English>Turn Camera 45 Degrees Right</English>
+        <French>Faire pivoter la caméra de 45° à droite</French>
+        <German>Kamera um 45 Grad nach rechts drehen</German>
+        <Italian>Sposta la visuale di 45° a destra</Italian>
+        <Spanish>Girar cámara 45 grados a la derecha</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_RIGHT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_LASTUNIT</Tag>
+        <English>Cycle Units (Backwards)</English>
+        <French>Faire défiler unités (en arrière)</French>
+        <German>Durch Einheiten schalten (rückwärts)</German>
+        <Italian>Scorri unità (indietro)</Italian>
+        <Spanish>Alternar unidades (atrás)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_LASTUNIT_HELP</Tag>
+        <English>TXT_KEY_ACTION_LASTUNIT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_LOAD_GAME</Tag>
+        <English>Load Game</English>
+        <French>Charger une partie</French>
+        <German>Spiel laden</German>
+        <Italian>Carica partita</Italian>
+        <Spanish>Cargar partida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_LOAD_GAME_HELP</Tag>
+        <English>TXT_KEY_ACTION_LOAD_GAME_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_MILITARY_SCREEN</Tag>
+        <English>Military Advisor</English>
+        <French>Conseiller militaire</French>
+        <German>Einheitenliste</German>
+        <Italian>Consigliere militare</Italian>
+        <Spanish>Consejero militar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_MILITARY_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_MOUSE_FLYING_CAMERA</Tag>
+        <English>Unlock Flying Camera Mouse</English>
+        <French>Débloquer caméra libre à la souris</French>
+        <German>Maus-Kameraflug aktivieren</German>
+        <Italian>Sblocca il movimento della visuale dall'alto con il mouse</Italian>
+        <Spanish>Desbloquear ratón de cámara aérea</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_MOUSE_FLYING_CAMERA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_NEXTCITY</Tag>
+        <English>Next Settlement</English>
+        <French>Colonie suivante</French>
+        <German>Nächste Siedlung</German>
+        <Italian>Insediamento successivo</Italian>
+        <Spanish>Asentamiento siguiente</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_NEXTCITY_HELP</Tag>
+        <English>TXT_KEY_ACTION_NEXT_CITY_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_NEXTUNIT</Tag>
+        <English>TXT_KEY_ACTION_PREVIOUS_PLOT_UNIT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_NEXTUNIT_HELP</Tag>
+        <English>TXT_KEY_ACTION_NEXT_UNIT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_OPTIONS_SCREEN</Tag>
+        <English>Options Screen</English>
+        <French>Ecran des options</French>
+        <German>Optionen</German>
+        <Italian>Schermata delle opzioni</Italian>
+        <Spanish>Pantalla de opciones</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_OPTIONS_SCREEN_HELP</Tag>
+        <English>TXT_KEY_ACTION_OPTIONS_SCREEN_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ORTHO_CAMERA</Tag>
+        <English>Orthographic Camera</English>
+        <French>Caméra orthographique</French>
+        <German>Fixierte Kamera</German>
+        <Italian>Visuale ortografica</Italian>
+        <Spanish>Cámara ortográfica</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_ORTHO_CAMERA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PING</Tag>
+        <English>Ping</English>
+        <French>Balise</French>
+        <German>Pingen</German>
+        <Italian>Segnala</Italian>
+        <Spanish>Señalar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PING_HELP</Tag>
+        <English>Ping a plot to bring it to the attention of your team mates</English>
+        <French>Désigner un terrain pour y attirer l'attention de vos coéquipiers</French>
+        <German>Pingen Sie ein Geländefeld an, um Ihre Mitstreiter darauf aufmerksam zu machen</German>
+        <Italian>Segnala un punto per richiamare l'attenzione dei tuoi compagni di squadra.</Italian>
+        <Spanish>Hacéis que destaque una casilla para llamar la atención sobre ella a vuestros compañeros de equipo.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN</Tag>
+        <English>Port Royal</English>
+        <French>Port Royal</French>
+        <German>Port Royal</German>
+        <Italian>Port Royal</Italian>
+        <Spanish>Port Royal</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PREVCITY</Tag>
+        <English>Previous Settlement</English>
+        <French>Colonie précédente</French>
+        <German>Vorherige Siedlung</German>
+        <Italian>Insediamento precedente</Italian>
+        <Spanish>Asentamiento anterior</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PREVCITY_HELP</Tag>
+        <English>TXT_KEY_ACTION_PREVIOUS_CITY_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PREVUNIT</Tag>
+        <English>TXT_KEY_ACTION_PREVIOUS_PLOT_UNIT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_PREVUNIT_HELP</Tag>
+        <English>TXT_KEY_ACTION_PREVIOUS_UNIT_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_QUICK_LOAD</Tag>
+        <English>Quick Load Game</English>
+        <French>Chargement rapide</French>
+        <German>Schnell laden</German>
+        <Italian>Caricamento rapido</Italian>
+        <Spanish>Carga rápida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_QUICK_LOAD_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_QUICK_SAVE</Tag>
+        <English>Quick Save Game</English>
+        <French>Sauvegarde rapide</French>
+        <German>Schnell speichern</German>
+        <Italian>Salvataggio rapido</Italian>
+        <Spanish>Guardado rápido</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_QUICK_SAVE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_RESOURCE_ALL</Tag>
+        <English>Toggle Show All Resource Display</English>
+        <French>Afficher/masquer les ressources</French>
+        <German>Bonusressourcensymbole ein/aus</German>
+        <Italian>Abilita/disabilita la finestra 'Mostra tutte le risorse'</Italian>
+        <Spanish>Activar visor de todos los recursos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_RESOURCE_ALL_HELP</Tag>
+        <English>Bonus Resources</English>
+        <French>Ressources bonus</French>
+        <German>Bonusressourcensymbole auf Karte ein-/ausblenden</German>
+        <Italian>Risorse bonus</Italian>
+        <Spanish>Recursos adicionales</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_RETIRE</Tag>
+        <English>Retire from the game</English>
+        <French>Abandonner la partie</French>
+        <German>Aus dem Spiel ausscheiden</German>
+        <Italian>Ritirati dalla partita</Italian>
+        <Spanish>Retirarte de la partida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_RETIRE_HELP</Tag>
+        <English>TXT_KEY_ACTION_RETIRE_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN</Tag>
+        <English>Revolution Advisor</English>
+        <French>Conseiller en révolution</French>
+        <German>Revolution</German>
+        <Italian>Consigliere per la rivoluzione</Italian>
+        <Spanish>Consejero de la Revolución</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SAVE_GROUP</Tag>
+        <English>Save Game (Group)</English>
+        <French>Sauvegarder (groupe)</French>
+        <German>Spiel speichern (Gruppe)</German>
+        <Italian>Salva partita (gruppo)</Italian>
+        <Spanish>Guardar partida (grupo)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SAVE_GROUP_HELP</Tag>
+        <English>TXT_KEY_ACTION_SAVE_GROUP_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SAVE_NORMAL</Tag>
+        <English>Save Game</English>
+        <French>Sauvegarder</French>
+        <German>Spiel speichern</German>
+        <Italian>Salva partita</Italian>
+        <Spanish>Guardar partida</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SAVE_NORMAL_HELP</Tag>
+        <English>TXT_KEY_ACTION_SAVE_GAME_HELP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SCORES</Tag>
+        <English>Toggle Scores Display</English>
+        <French>Afficher/masquer les scores</French>
+        <German>Punkteanzeige ein/aus</German>
+        <Italian>Abilita/disabilita la 'Finestra dei punteggi'</Italian>
+        <Spanish>Activar visor de puntuaciones</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SCORES_HELP</Tag>
+        <English>Toggle Score Visibility</English>
+        <French>Afficher/masquer les scores.</French>
+        <German>Punktestand ein-/ausblenden</German>
+        <Italian>Attiva/disattiva la visibilità del punteggio.</Italian>
+        <Spanish>Activa la visibilidad de la puntuación</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTCAPITAL</Tag>
+        <English>Select Capital</English>
+        <French>Sélectionner capitale</French>
+        <German>Hauptstadt wählen</German>
+        <Italian>Seleziona città</Italian>
+        <Spanish>Seleccionar capital</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTCAPITAL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTCITY</Tag>
+        <English>Select Settlement</English>
+        <French>Choisir une colonie</French>
+        <German>Siedlung wählen</German>
+        <Italian>Seleziona insediamento</Italian>
+        <Spanish>Seleccionar asentamiento</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTCITY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTYUNITALL</Tag>
+        <English>Select All Units</English>
+        <French>Sélectionner toutes les unités</French>
+        <German>Alle Einheiten wählen</German>
+        <Italian>Seleziona tutte le unità</Italian>
+        <Spanish>Seleccionar todas las unidades</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTYUNITALL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTYUNITTYPE</Tag>
+        <English>Select All Units (Same Type)</English>
+        <French>Sélectionner toutes les unités (même type)</French>
+        <German>Alle Einheiten wählen (Gleicher Typ)</German>
+        <Italian>Seleziona tutte le unità (dello stesso tipo)</Italian>
+        <Spanish>Seleccionar todas las unidades (del mismo tipo)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECTYUNITTYPE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECT_HEALTHY</Tag>
+        <English>TXT_KEY_MAIN_MENU_HALL_OF_FAME</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SELECT_HEALTHY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SIGN</Tag>
+        <English>Sign</English>
+        <French>Panneau</French>
+        <German>Zeichen</German>
+        <Italian>Segnale</Italian>
+        <Spanish>Letrero</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_SIGN_HELP</Tag>
+        <English>Adds a sign to a specific plot that you and your teammates can see.</English>
+        <French>Ajoutez un panneau à un endroit précis pour vous et vos coéquipiers.</French>
+        <German>Markieren Sie ein Geländefeld mit einem Zeichen, das nur Sie und Ihre Teammitglieder sehen können.</German>
+        <Italian>Aggiunge in una determinata casella un segnale visibile soltanto a te e ai tuoi alleati.</Italian>
+        <Spanish>Añade a una casilla concreta un letrero que podáis ver tus compañeros y tú.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_TOP_DOWN_CAMERA</Tag>
+        <English>Toggle Camera Top Down View</English>
+        <French>Activer/désactiver vue inversée</French>
+        <German>Kamera-Draufsicht umschalten</German>
+        <Italian>Abilita la visuale sottosopra</Italian>
+        <Spanish>Activar vista superior de la cámara</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_TOP_DOWN_CAMERA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_TURN_LOG</Tag>
+        <English>Event Log</English>
+        <French>Journal des événements</French>
+        <German>Ereignis-Log</German>
+        <Italian>Registro degli eventi</Italian>
+        <Spanish>Historial de sucesos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_TURN_LOG_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_UNIT_ICONS</Tag>
+        <English>Toggle Enemy Units Display</English>
+        <French>Afficher/masquer les unités ennemies</French>
+        <German>Einheitensymbole ein-/ausblenden</German>
+        <Italian>Abilita/Disabilita la visualizzazione delle unità nemiche</Italian>
+        <Spanish>Activar el visor de unidades enemigas</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_UNIT_ICONS_HELP</Tag>
+        <English>Toggles display of unit positions</English>
+        <French>Affiche ou masque la position des unités.</French>
+        <German>Einheitensymbole ein-/ausblenden</German>
+        <Italian>Attiva/Disattiva la visualizzazione della posizione delle unità</Italian>
+        <Spanish>Alterna el visor de posicionamiento de unidades</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_VICTORY_SCREEN</Tag>
+        <English>Victory Conditions</English>
+        <French>Conditions de victoire</French>
+        <German>Siegbedingungen</German>
+        <Italian>Condizioni di vittoria</Italian>
+        <Spanish>Condiciones para la victoria</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_VICTORY_SCREEN_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_WORLD_BUILDER</Tag>
+        <English>Toggles World Builder</English>
+        <French>Activer l'éditeur de mondes </French>
+        <German>Weltenbauer ein/aus</German>
+        <Italian>Attiva/disattiva l'editor</Italian>
+        <Spanish>Activa el Creador de mundos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_WORLD_BUILDER_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_YIELDS</Tag>
+        <English>Toggle Yield Display</English>
+        <French>Afficher/masquer la production</French>
+        <German>Ressourcensymbole ein/aus</German>
+        <Italian>Abilita/disabilita la visualizzazione della produzione</Italian>
+        <Spanish>Activar visor de rendimiento</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONTROL_YIELDS_HELP</Tag>
+        <English>Toggle on-map terrain yield icons</English>
+        <French>Afficher/masquer icônes de production du terrain</French>
+        <German>Ressourcensymbole auf Karte ein-/ausblenden</German>
+        <Italian>Attiva/disattiva la visualizzazione delle icone della produzione sulla mappa</Italian>
+        <Spanish>Alternar iconos de rendimiento del terreno en el mapa</Spanish>
+    </TEXT>
+</Civ4GameText>

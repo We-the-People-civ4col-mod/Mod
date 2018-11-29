@@ -199,8 +199,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_FOUND</Type>
-            <Description>TXT_KEY_MISSION_BUILD_CITY</Description>
-            <Help>TXT_KEY_MISSION_BUILD_CITY_HELP</Help>
+            <Description>TXT_KEY_MISSION_FOUND</Description>
+            <Help>TXT_KEY_MISSION_FOUND_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_FOUND</EntityEventType>
             <iTime>0</iTime>
@@ -245,8 +245,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_BUILD</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help/>
+            <Description>TXT_KEY_MISSION_BUILD</Description>
+            <Help>TXT_KEY_MISSION_BUILD_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <iTime>0</iTime>
             <bTarget>0</bTarget>
@@ -255,8 +255,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_LEAD</Type>
-            <Description>TXT_KEY_MISSION_LEAD_TROOPS</Description>
-            <Help/>
+            <Description>TXT_KEY_MISSION_LEAD</Description>
+            <Help>TXT_KEY_MISSION_LEAD_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_GREAT_EVENT</EntityEventType>
             <iTime>14</iTime>
@@ -279,8 +279,8 @@
         <!--The following missions are simply to link to entity events-->
         <MissionInfo>
             <Type>MISSION_BEGIN_COMBAT</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_BEGIN_COMBAT</Description>
+            <Help>TXT_KEY_MISSION_BEGIN_COMBAT_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_BEGIN_COMBAT</EntityEventType>
             <iTime>0</iTime>
@@ -290,8 +290,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_END_COMBAT</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_END_COMBAT</Description>
+            <Help>TXT_KEY_MISSION_END_COMBAT_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_END_COMBAT</EntityEventType>
             <iTime>0</iTime>
@@ -301,8 +301,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_SURRENDER</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_SURRENDER</Description>
+            <Help>TXT_KEY_MISSION_SURRENDER_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_SURRENDER</EntityEventType>
             <iTime>10</iTime>
@@ -312,8 +312,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_CAPTURED</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_CAPTURED</Description>
+            <Help>TXT_KEY_MISSION_CAPTURED_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_CAPTURED</EntityEventType>
             <iTime>8</iTime>
@@ -323,8 +323,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_IDLE</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_IDLE</Description>
+            <Help>TXT_KEY_MISSION_IDLE_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_IDLE</EntityEventType>
             <iTime>0</iTime>
@@ -334,8 +334,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_DIE</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_DIE</Description>
+            <Help>TXT_KEY_MISSION_DIE_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_DIE</EntityEventType>
             <iTime>0</iTime>
@@ -345,8 +345,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_DAMAGE</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_DAMAGE</Description>
+            <Help>TXT_KEY_MISSION_DAMAGE_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_DAMAGE</EntityEventType>
             <iTime>0</iTime>
@@ -356,8 +356,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_MULTI_SELECT</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_MULTI_SELECT</Description>
+            <Help>TXT_KEY_MISSION_MULTI_SELECT_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_MULTI_SELECT</EntityEventType>
             <iTime>0</iTime>
@@ -367,8 +367,8 @@
         </MissionInfo>
         <MissionInfo>
             <Type>MISSION_MULTI_DESELECT</Type>
-            <Description>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Description>
-            <Help>TXT_KEY_MISSION_BUILD_IMPROVEMENT</Help>
+            <Description>TXT_KEY_MISSION_MULTI_DESELECT</Description>
+            <Help>TXT_KEY_MISSION_MULTI_DESELECT_HELP</Help>
             <Waypoint>NONE</Waypoint>
             <EntityEventType>ENTITY_EVENT_MULTI_DESELECT</EntityEventType>
             <iTime>0</iTime>

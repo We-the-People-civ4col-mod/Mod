@@ -753,9 +753,9 @@
         <FatherInfo>
             <Type>FATHER_SAMUEL_NICOLAS_MONARDES</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Nicolas_Monardes.dds</Portrait>
-            <Description>TXT_KEY_FATHER_NICOLAS_MONARDES</Description>
-            <Civilopedia>TXT_KEY_FATHER_NICOLAS_MONARDES_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_FATHER_NICOLAS_MONARDES_STRATEGY</Strategy>
+            <Description>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES</Description>
+            <Civilopedia>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
             <RevealImprovements/>
             <FreeUnits>
@@ -1244,9 +1244,9 @@
         <FatherInfo>
             <Type>FATHER_JOHN_HARVARD</Type>
             <Portrait>Art/Interface/Screens/Founding_Fathers/Harvard.dds</Portrait>
-            <Description>TXT_KEY_FATHER_JOHN_HAVARD</Description>
+            <Description>TXT_KEY_FATHER_JOHN_HARVARD</Description>
             <Civilopedia>TXT_KEY_FATHER_JOHN_HARVARD_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_FATHER_JOHN_HAVARD_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_FATHER_JOHN_HARVARD_STRATEGY</Strategy>
             <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
             <RevealImprovements/>
             <FreeUnits/>

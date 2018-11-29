@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_BURIAL_GROUNDS</Tag>
+        <English>Burial Grounds</English>
+        <French>
+            <Text>Cimetière:Cimetières</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Grabstätten</German>
+        <Italian>
+            <Text>Cimiteri</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Túmulos funerarios</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
+        <English>Jesuit Missionary:Jesuit Missionaries</English>
+        <French>
+            <Text>Missionnaire jésuite:Missionnaires jésuites</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Jesuitenmissionar:Jesuitenmissionare</German>
+        <Italian>
+            <Text>Missionario gesuita:Missionari gesuiti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Misionero jesuita:Misioneros jesuit. </Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_COLONIST</Tag>
+        <English>Free Colonist:Free Colonists</English>
+        <French>
+            <Text>Colon libre:Colons libres</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Freier Kolonist:Freie Kolonisten</German>
+        <Italian>
+            <Text>Libero colono:Liberi coloni</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Colono libre:Colonos libres</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
+        <English>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Conquistador:Conquistadors</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
+        <English>Caravel:Caravels</English>
+        <French>
+            <Text>Caravelle:Caravelles</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Karavelle:Karavellen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Caravella:Caravelle</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Carabela:Carabelas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_EXPERIENCE</Tag>
+        <English>Experience</English>
+        <French>Expérience</French>
+        <German>Erfahrung</German>
+        <Italian>Esperienza</Italian>
+        <Spanish>Experiencia:</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_EXPERIENCE_SEA</Tag>
+        <English>INTERFACE_PANE_EXPERIENCE</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HEALING</Tag>
+        <English>Ancient Medicine</English>
+        <French>
+            <Text>Médecine traditionnelle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Traditionelle Medizin</German>
+        <Italian>
+            <Text>Antica medicina</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Medicina antigua</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HIGH_GOLD</Tag>
+        <English>TXT_KEY_TRADE_TITLE_GOLD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HOSTILE_STRONG</Tag>
+        <English>TXT_KEY_GOODY_HOSTILE_NATIVES</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
+        <English>Hostile Natives</English>
+        <French>
+            <Text>Indigène hostile:Indigènes hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Feindselige Ureinwohner</German>
+        <Italian>
+            <Text>Nativi ostili</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nativos hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_LOW_GOLD</Tag>
+        <English>Gold</English>
+        <French>
+            <Text>Or</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Gold</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Oro</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Oro</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_LOW_GOLD_SEA</Tag>
+        <English>TXT_KEY_TRADE_TITLE_GOLD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_MAP</Tag>
+        <English>Map</English>
+        <French>
+            <Text>Carte</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Karte</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Mappa</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mapa</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
+        <English>TXT_KEY_MAIN_MENU_MAP</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
+        <English>Native Mercenary:Native Mercenaries</English>
+        <French>Mercenaire indigène:Mercenaires indigènes</French>
+        <German>Indianischer Söldner:Indianische Söldner</German>
+        <Italian>Native Mercenary:Native Mercenaries</Italian>
+        <Spanish>Native Mercenary:Native Mercenaries</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
+        <English>
+            <Text>Native Slave:Native Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave indigène:Esclaves indigènes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Versklavter Ureinwohner:Versklavte Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Native Slave:Native Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo Nativo:Esclavos Nativos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_RUMORS_EL_DORADO</Tag>
+        <English>Rumors about El Dorado</English>
+        <French>Rumeurs à propos de l'El Dorado</French>
+        <German>Gerüchte über El Dorado</German>
+        <Italian>Rumors about El Dorado</Italian>
+        <Spanish>Rumors about El Dorado</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
+        <English>Rumors about the Fountain of Youth</English>
+        <French>Rumeurs à propos de la Fontaine de Jouvence</French>
+        <German>Gerüchte über den Jungbrunnen</German>
+        <Italian>Rumors about the Fountain of Youth</Italian>
+        <Spanish>Rumors about the Fountain of Youth</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_RUMORS_PIRATE_TREASURE</Tag>
+        <English>Rumors about a Pirate Treasure</English>
+        <French>Rumeurs à propos du trésor pirate</French>
+        <German>Gerüchte über über einen Piratenschatz</German>
+        <Italian>Rumors about a Pirate Treasure</Italian>
+        <Spanish>Rumors about a Pirate Treasure</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_SCOUT</Tag>
+        <English>Seasoned Scout:Seasoned Scouts</English>
+        <French>
+            <Text>Eclaireur aguerri:Eclaireurs aguerris</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Routinierter Späher:Routinierte Späher</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Scout esperto:Scout esperti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Batidor curtido:Batidores curtidos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
+        <English>Indentured Servant:Indentured Servants</English>
+        <French>
+            <Text>Engagé:Engagés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Schuldknecht:Schuldknechte</German>
+        <Italian>
+            <Text>Servo per contratto:Servi per contratto</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Siervo por deudas:Siervos por deudas</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_TREASURE</Tag>
+        <English>Treasure</English>
+        <French>
+            <Text>Trésor:Trésors</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Schatz</German>
+        <Italian>
+            <Text>Tesoro</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Tesoro:Tesoros</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_WAR</Tag>
+        <English>TXT_KEY_CONCEPT_WAR</English>
+    </TEXT>
+</Civ4GameText>

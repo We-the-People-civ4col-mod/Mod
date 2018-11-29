@@ -9,7 +9,7 @@
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_SELECTION</Type>
             <Description>TXT_KEY_INTERFACEMODE_SELECTION</Description>
-            <Help/>
+            <Help>TXT_KEY_INTERFACEMODE_SELECTION_HELP</Help>
             <CursorType>CURSOR_DEFAULT</CursorType>
             <Mission>NONE</Mission>
             <bVisible>0</bVisible>
@@ -21,7 +21,7 @@
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_PING</Type>
             <Description>TXT_KEY_INTERFACEMODE_PING</Description>
-            <Help/>
+            <Help>TXT_KEY_INTERFACEMODE_PING_HELP</Help>
             <CursorType>CURSOR_PING</CursorType>
             <Mission>NONE</Mission>
             <bVisible>0</bVisible>
@@ -33,7 +33,7 @@
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_SIGN</Type>
             <Description>TXT_KEY_INTERFACEMODE_SIGN</Description>
-            <Help/>
+            <Help>TXT_KEY_INTERFACEMODE_SIGN_HELP</Help>
             <CursorType>CURSOR_EDIT</CursorType>
             <Mission>NONE</Mission>
             <bVisible>0</bVisible>
@@ -45,7 +45,7 @@
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_GRIP</Type>
             <Description>TXT_KEY_INTERFACEMODE_GRIP</Description>
-            <Help/>
+            <Help>TXT_KEY_INTERFACEMODE_GRIP_HELP</Help>
             <CursorType>CURSOR_GRIP</CursorType>
             <Mission>NONE</Mission>
             <HotKey>KB_Z</HotKey>
@@ -67,7 +67,7 @@
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_GLOBELAYER_INPUT</Type>
             <Description>TXT_KEY_INTERFACEMODE_GLOBELAYER_INPUT</Description>
-            <Help/>
+            <Help>TXT_KEY_INTERFACEMODE_GLOBELAYER_INPUT_HELP</Help>
             <CursorType>CURSOR_DEFAULT</CursorType>
             <Mission>NONE</Mission>
             <bVisible>0</bVisible>
@@ -170,8 +170,8 @@
         </InterfaceModeInfo>
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_PYTHON_PICK_PLOT</Type>
-            <Description/>
-            <Help/>
+            <Description>TXT_KEY_INTERFACEMODE_PYTHON_PICK_PLOT</Description>
+            <Help>TXT_KEY_INTERFACEMODE_PYTHON_PICK_PLOT_HELP</Help>
             <CursorType>CURSOR_PING</CursorType>
             <Mission>NONE</Mission>
             <bVisible>0</bVisible>
@@ -182,8 +182,8 @@
         </InterfaceModeInfo>
         <InterfaceModeInfo>
             <Type>INTERFACEMODE_SAVE_PLOT_NIFS</Type>
-            <Description/>
-            <Help/>
+            <Description>TXT_KEY_INTERFACEMODE_SAVE_PLOT_NIFS</Description>
+            <Help>TXT_KEY_INTERFACEMODE_SAVE_PLOT_NIFS_HELP</Help>
             <CursorType>CURSOR_PING</CursorType>
             <Mission>NONE</Mission>
             <bVisible>0</bVisible>

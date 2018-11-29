@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_AMPHIBIOUS</Tag>
+        <English>Keen Swimmer</English>
+        <French>
+            <Text>Amphibie</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Wasserratte</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Anfibio</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Anfibia</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ARTILLERY</Tag>
+        <English>Artillery</English>
+        <French>
+            <Text>Artillery</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Artillerie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Artillery</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Artillery</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BAYONET</Tag>
+        <English>Bayonet</English>
+        <French>
+            <Text>Bayonette</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Bajonettkämpfer</German>
+        <Italian>Bayonet</Italian>
+        <Spanish>Bayonet</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BOMBI</Tag>
+        <English>Explosives I</English>
+        <French>
+            <Text>Bombe I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Explosivmunition I</German>
+        <Italian>
+            <Text>Bomba I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Bomba I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BOMBII</Tag>
+        <English>Explosives II</English>
+        <French>
+            <Text>Bombe II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Explosivmunition II</German>
+        <Italian>
+            <Text>Bomba II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Bomba II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BOMBIII</Tag>
+        <English>Explosives III</English>
+        <French>
+            <Text>Bombe III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Explosivmunition III</German>
+        <Italian>
+            <Text>Bomba III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Bomba III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BRAVE</Tag>
+        <English>Native</English>
+        <French>
+            <Text>Native</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Indianer</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Native</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Native</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_BROADSIDE</Tag>
+        <English>Broadside</English>
+        <French>
+            <Text>Flanc</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Breitseite</German>
+        <Italian>Broadside</Italian>
+        <Spanish>Broadside</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CANNISTER_SHOT</Tag>
+        <English>Canister Shot I</English>
+        <French>
+            <Text>Boulet I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Streumunition I</German>
+        <Italian>
+            <Text>Proiettile mitraglia I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Disparo de metralla I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTII</Tag>
+        <English>Canister Shot II</English>
+        <French>
+            <Text>Boulet II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Streumunition II</German>
+        <Italian>
+            <Text>Proiettile mitraglia II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Disparo de metralla II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTIII</Tag>
+        <English>Canister Shot III</English>
+        <French>
+            <Text>Boulet III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Streumunition III</German>
+        <Italian>
+            <Text>Proiettile mitraglia III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Disparo de metralla III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_CHARGE</Tag>
+        <English>Charge</English>
+        <French>
+            <Text>Charge</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Todesmut</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Carica</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Carga</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
+        <English>Great Discoverer</English>
+        <French>Great Discoverer</French>
+        <German>Großer Entdecker</German>
+        <Italian>Great Discoverer</Italian>
+        <Spanish>Great Discoverer</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DRAGOON</Tag>
+        <English>Dragoon</English>
+        <French>
+            <Text>Dragon</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Dragoner</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Dragoon</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Dragoon</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_DRILL_SERGEANT</Tag>
+        <English>Drill Sergeant</English>
+        <French>
+            <Text>Drill Sergeant</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Ausbildungsunteroffizier</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Drill Sergeant</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Drill Sergeant</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_EXPLORER1</Tag>
+        <English>Explorer I</English>
+        <French>
+            <Text>Explorateur I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Kundschafter I</German>
+        <Italian>
+            <Text>Esploratore I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Explorador I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_EXPLORER2</Tag>
+        <English>Explorer II</English>
+        <French>
+            <Text>Explorateur II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Kundschafter II</German>
+        <Italian>
+            <Text>Esploratore II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Explorador II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_EXPLORER3</Tag>
+        <English>Explorer III</English>
+        <French>
+            <Text>Explorateur III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Kundschafter III</German>
+        <Italian>
+            <Text>Esploratore III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Explorador III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FEINT</Tag>
+        <English>Feint I</English>
+        <French>
+            <Text>Feinte I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Finte I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Feint I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Feint I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
+        <English>Feint II</English>
+        <French>
+            <Text>Feinte II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Finte II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Feint II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Feint II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FORCED_MARCH1</Tag>
+        <English>Forced March I</English>
+        <French>
+            <Text>Forced March I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Gewaltmarsch I</German>
+        <Italian>
+            <Text>Forced March I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Forced March I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FORCED_MARCH2</Tag>
+        <English>Forced March II</English>
+        <French>
+            <Text>Forced March II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Gewaltmarsch II</German>
+        <Italian>
+            <Text>Forced March II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Forced March II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_FORMATION</Tag>
+        <English>Fearless</English>
+        <French>
+            <Text>Formation</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Disziplin</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Formazione</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Formación</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_GRENADIER1</Tag>
+        <English>Close Combat I</English>
+        <French>
+            <Text>Combat rapproché I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Nahkampf I</German>
+        <Italian>
+            <Text>Combattimento I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Combate Cercano I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_GRENADIER2</Tag>
+        <English>Close Combat II</English>
+        <French>
+            <Text>Combat rapproché II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Nahkampf II</German>
+        <Italian>
+            <Text>Combattimento II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Combate Cercano II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_GRENADIER3</Tag>
+        <English>Close Combat III</English>
+        <French>
+            <Text>Combat rapproché III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Nahkampf III</German>
+        <Italian>
+            <Text>Combattimento III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Combate Cercano III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_GUARD</Tag>
+        <English>Guard</English>
+        <French>
+            <Text>Garde</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Wache</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Guard</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Guard</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HEAVY_CAVALRY</Tag>
+        <English>TXT_KEY_PROMOTION_DRAGOON</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD1</Tag>
+        <English>Homeland Guard I</English>
+        <French>
+            <Text>Homeland Guard I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Heimatverteidigung I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Homeland Guard I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Homeland Guard I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD2</Tag>
+        <English>Homeland Guard II</English>
+        <French>
+            <Text>Homeland Guard II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Heimatverteidigung II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Homeland Guard II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Homeland Guard II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD3</Tag>
+        <English>Homeland Guard III</English>
+        <French>
+            <Text>Homeland Guard III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Heimatverteidigung III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Homeland Guard III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Homeland Guard III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HUNTER1</Tag>
+        <English>Wild Animal Hunter I</English>
+        <French>
+            <Text>Chasseur de fauves I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Wildtierjäger I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Wild Animal Hunter I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Wild Animal Hunter I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_HUNTER2</Tag>
+        <English>Wild Animal Hunter II</English>
+        <French>
+            <Text>Chasseur de fauves II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Wildtierjäger II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Wild Animal Hunter II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Wild Animal Hunter II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_INFANTRY</Tag>
+        <English>Infantry</English>
+        <French>
+            <Text>Infanterie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Infanterie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Infantry</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Infantry</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LEADER</Tag>
+        <English>Led by Great General</English>
+        <French>Mené par un Général illustre</French>
+        <German>Angeführt von Großem General</German>
+        <Italian>Condotto da un Grande Generale</Italian>
+        <Spanish>Al mando de un Gran general</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LEADER2</Tag>
+        <English>Led by Great Admiral</English>
+        <French>Mené par un Amiral illustre</French>
+        <German>Angeführt von Großem Admiral</German>
+        <Italian>Condotto da un Grande Admirale</Italian>
+        <Spanish>Al mando de un Gran Admiral</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LEADERSHIP</Tag>
+        <English>Leadership</English>
+        <French>Commandement</French>
+        <German>Führerschaft</German>
+        <Italian>Comando</Italian>
+        <Spanish>Liderazgo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LEADERSHIP2</Tag>
+        <English>Leadership II</English>
+        <French>Commandement II</French>
+        <German>Führerschaft II</German>
+        <Italian>Comando II</Italian>
+        <Spanish>Liderazgo II</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LIGHT_INFANTRY</Tag>
+        <English>Light Infantry</English>
+        <French>
+            <Text>Infanterie légère</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Leichte Infanterie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Light Infantry</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Light Infantry</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LOOTER</Tag>
+        <English>Looter</English>
+        <French>Pillard</French>
+        <German>Plünderer</German>
+        <Italian>Saccheggiatore</Italian>
+        <Spanish>Saqueo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MINUTEMAN1</Tag>
+        <English>Minuteman I</English>
+        <French>
+            <Text>Patriote I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Garnison I</German>
+        <Italian>
+            <Text>Volontario rapido I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Miliciana I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MINUTEMAN2</Tag>
+        <English>Minuteman II</English>
+        <French>
+            <Text>Patriote II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Garnison II</German>
+        <Italian>
+            <Text>Volontario rapido II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Miliciana II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MINUTEMAN3</Tag>
+        <English>Minuteman III</English>
+        <French>
+            <Text>Patriote III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Garnison III</German>
+        <Italian>
+            <Text>Volontario rapido III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Miliciana III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MOBILITY1</Tag>
+        <English>Mobility I</English>
+        <French>
+            <Text>Mobilité I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Mobilität I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Mobilità I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Movilidad I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MOBILITY2</Tag>
+        <English>Mobility II</English>
+        <French>
+            <Text>Mobilité II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Mobilität II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Mobilità II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Movilidad II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MOUNTAINEER1</Tag>
+        <English>Mountaineer I</English>
+        <French>
+            <Text>Alpiniste I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Gebirgsjäger I</German>
+        <Italian>
+            <Text>Alpino I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Montañera I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MOUNTAINEER2</Tag>
+        <English>Mountaineer II</English>
+        <French>
+            <Text>Alpiniste II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Gebirgsjäger II</German>
+        <Italian>
+            <Text>Alpino II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Montañera II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_MOUNTAINEER3</Tag>
+        <English>Mountaineer III</English>
+        <French>
+            <Text>Alpiniste III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Gebirgsjäger III</German>
+        <Italian>
+            <Text>Alpino III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Montañera III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NAVAL_TRADE1</Tag>
+        <English>Merchant Vessel I</English>
+        <French>Navire de commerce I</French>
+        <German>Handelsschiff I</German>
+        <Italian>Nave mercantile I</Italian>
+        <Spanish>Buque mercante I</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NAVAL_TRADE2</Tag>
+        <English>Merchant Vessel II</English>
+        <French>Navire de commerce II</French>
+        <German>Handelsschiff II</German>
+        <Italian>Nave mercantile II</Italian>
+        <Spanish>Buque mercante II</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NAVIGATION1</Tag>
+        <English>Navigation I</English>
+        <French>
+            <Text>Navigation I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Navigation I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Navigazione I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Navegación I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NAVIGATION2</Tag>
+        <English>Navigation II</English>
+        <French>
+            <Text>Navigation II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Navigation II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Navigazione II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Navegación II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_NAVIGATION3</Tag>
+        <English>Navigation III</English>
+        <French>
+            <Text>Navigation III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Navigation III</German>
+        <Italian>
+            <Text>Navigazione III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Navegación III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_PIRACY1</Tag>
+        <English>Piracy I</English>
+        <French>
+            <Text>Piracy I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Piraterie I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Piracy I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Piracy I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_PIRACY2</Tag>
+        <English>Piracy II</English>
+        <French>
+            <Text>Piracy II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Piraterie II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Piracy II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Piracy II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_PIRACY3</Tag>
+        <English>Piracy III</English>
+        <French>
+            <Text>Piracy III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Piraterie III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Piracy III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Piracy III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RANGER1</Tag>
+        <English>Ranger I</English>
+        <French>
+            <Text>Ranger I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Waldläufer I</German>
+        <Italian>
+            <Text>Ranger I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Montaraz I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RANGER2</Tag>
+        <English>Ranger II</English>
+        <French>
+            <Text>Ranger II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Waldläufer II</German>
+        <Italian>
+            <Text>Ranger II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Montaraz II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RANGER3</Tag>
+        <English>Ranger III</English>
+        <French>
+            <Text>Ranger III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Waldläufer III</German>
+        <Italian>
+            <Text>Ranger III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Montaraz III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
+        <English>Relief Battalion</English>
+        <French>Relief Battalion</French>
+        <German>Reservebataillon</German>
+        <Italian>Relief Battalion</Italian>
+        <Spanish>Relief Battalion</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SAILING1</Tag>
+        <English>Naval Warfare I</English>
+        <French>Guerre Navale I</French>
+        <German>Seekrieg I</German>
+        <Italian>Guerra Marittima I</Italian>
+        <Spanish>Guerra Naval I</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SAILING2</Tag>
+        <English>Naval Warfare II</English>
+        <French>Guerre Navale II</French>
+        <German>Seekrieg II</German>
+        <Italian>Guerra Marittima II</Italian>
+        <Spanish>Guerra Naval II</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SAILING3</Tag>
+        <English>Naval Warfare III</English>
+        <French>Guerre Navale III</French>
+        <German>Seekrieg III</German>
+        <Italian>Guerra Marittima III</Italian>
+        <Spanish>Guerra Naval III</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SAILING4</Tag>
+        <English>Naval Warfare IV</English>
+        <French>Guerre Navale IV</French>
+        <German>Seekrieg IV</German>
+        <Italian>Guerra Marittima IV</Italian>
+        <Spanish>Guerra Naval IV</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SAILING5</Tag>
+        <English>Naval Warfare V</English>
+        <French>Guerre Navale V</French>
+        <German>Seekrieg V</German>
+        <Italian>Guerra Marittima V</Italian>
+        <Spanish>Guerra Naval V</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SAILING6</Tag>
+        <English>Naval Warfare VI</English>
+        <French>Guerre Navale VI</French>
+        <German>Seekrieg VI</German>
+        <Italian>Guerra Marittima VI</Italian>
+        <Spanish>Guerra Naval VI</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SEA_EXPLORER</Tag>
+        <English>Sea Explorer</English>
+        <French>Explorateur des mers</French>
+        <German>Entdecker der Meere</German>
+        <Italian>Sea Explorer</Italian>
+        <Spanish>Sea Explorer</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SEEHUNTER1</Tag>
+        <English>High-Sea Fisherman I</English>
+        <French>
+            <Text>High-Sea Fisherman I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Hochseefischer I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>High-Sea Fisherman I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>High-Sea Fisherman I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SEEHUNTER2</Tag>
+        <English>High-Sea Fisherman II</English>
+        <French>
+            <Text>High-Sea Fisherman II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Hochseefischer II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>High-Sea Fisherman II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>High-Sea Fisherman II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER1</Tag>
+        <English>Ship Carpenter I</English>
+        <French>Charpentier naval I</French>
+        <German>Schiffszimmermann I</German>
+        <Italian>Ship Carpenter I</Italian>
+        <Spanish>Ship Carpenter I</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER2</Tag>
+        <English>Ship Carpenter II</English>
+        <French>Charpentier naval II</French>
+        <German>Schiffszimmermann II</German>
+        <Italian>Ship Carpenter II</Italian>
+        <Spanish>Ship Carpenter II</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SIEGE</Tag>
+        <English>Siege Guns</English>
+        <French>
+            <Text>Siege Guns</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Belagerungsartillerie</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Siege Guns</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Siege Guns</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SKIRMISHER1</Tag>
+        <English>Skirmisher I</English>
+        <French>
+            <Text>Tirailleur I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Plänkler I</German>
+        <Italian>
+            <Text>Avanguardia I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Hostigador I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SKIRMISHER2</Tag>
+        <English>Skirmisher II</English>
+        <French>
+            <Text>Tirailleur II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Plänkler II</German>
+        <Italian>
+            <Text>Avanguardia II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Hostigador II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SKIRMISHER3</Tag>
+        <English>Skirmisher III</English>
+        <French>
+            <Text>Tirailleur III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Plänkler III</German>
+        <Italian>
+            <Text>Avanguardia III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Hostigador III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOLID_SHOTI</Tag>
+        <English>Solid Shot I</English>
+        <French>
+            <Text>Projectile I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Wallbrecher I</German>
+        <Italian>
+            <Text>Palla piena I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Disparo seguido I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOLID_SHOTII</Tag>
+        <English>Solid Shot II</English>
+        <French>
+            <Text>Projectile II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Wallbrecher II</German>
+        <Italian>
+            <Text>Palla piena II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Disparo seguido II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SOLID_SHOTIII</Tag>
+        <English>Solid Shot III</English>
+        <French>
+            <Text>Projectile III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Wallbrecher III</German>
+        <Italian>
+            <Text>Palla piena III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Disparo seguido III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_STORM_ATTACK1</Tag>
+        <English>Storm Attack I</English>
+        <French>
+            <Text>Attaque foudroyante I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Sturm Angriff I</German>
+        <Italian>
+            <Text>Storm Attack I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Storm Attack I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_STORM_ATTACK2</Tag>
+        <English>Storm Attack II</English>
+        <French>
+            <Text>Attaque foudroyante II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Sturm Angriff II</German>
+        <Italian>
+            <Text>Storm Attack II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Storm Attack II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_STORM_ATTACK3</Tag>
+        <English>Storm Attack III</English>
+        <French>
+            <Text>Attaque foudroyante III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Sturm Angriff III</German>
+        <Italian>
+            <Text>Storm Attack III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Storm Attack III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SURGEON1</Tag>
+        <English>Surgeon I</English>
+        <French>
+            <Text>Chirurgien I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Wundarzt I</German>
+        <Italian>
+            <Text>Chirurgo I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Cirujana I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SURGEON2</Tag>
+        <English>Surgeon II</English>
+        <French>
+            <Text>Chirurgien II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Wundarzt II</German>
+        <Italian>
+            <Text>Chirurgo II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Cirujana II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SURGEON3</Tag>
+        <English>Surgeon III</English>
+        <French>
+            <Text>Chirurgien III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Wundarzt III</German>
+        <Italian>
+            <Text>Chirurgo III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Cirujana III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SWAMP_FOX1</Tag>
+        <English>Swamp Fox I</English>
+        <French>
+            <Text>Renard des marais I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Sumpfkämpfer I</German>
+        <Italian>
+            <Text>Volpe della palude I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Raposa de los pantanos I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SWAMP_FOX2</Tag>
+        <English>Swamp Fox II</English>
+        <French>
+            <Text>Renard des marais II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Sumpfkämpfer II</German>
+        <Italian>
+            <Text>Volpe della palude II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Raposa de los pantanos I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_SWAMP_FOX3</Tag>
+        <English>Swamp Fox III</English>
+        <French>
+            <Text>Renard des marais III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Sumpfkämpfer III</German>
+        <Italian>
+            <Text>Volpe della palude III</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Raposa de los pantanos I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VETERAN1</Tag>
+        <English>Veteran I</English>
+        <French>
+            <Text>Vétéran I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Veteran I</German>
+        <Italian>
+            <Text>Veterano I</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Veterana I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VETERAN2</Tag>
+        <English>Veteran II</English>
+        <French>
+            <Text>Vétéran II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Veteran II</German>
+        <Italian>
+            <Text>Veterano II</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Veterana II</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VETERAN3</Tag>
+        <English>Veteran III</English>
+        <French>
+            <Text>Vétéran III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Veteran III</German>
+        <Italian>
+            <Text>Veterano III</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Veterana I</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VETERAN4</Tag>
+        <English>Veteran IV</English>
+        <French>
+            <Text>Vétéran IV</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Veteran IV</German>
+        <Italian>
+            <Text>Veterano IV</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Veterana IV</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VETERAN5</Tag>
+        <English>Veteran V</English>
+        <French>
+            <Text>Vétéran V</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Veteran V</German>
+        <Italian>
+            <Text>Veterano V</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Veterana V</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_VETERAN6</Tag>
+        <English>Veteran VI</English>
+        <French>
+            <Text>Vétéran VI</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Veteran VI</German>
+        <Italian>
+            <Text>Veterano VI</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Veterana VI</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

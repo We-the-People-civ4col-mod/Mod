@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_SPECIALUNIT_YIELD_CARGO</Tag>
+        <English>Goods</English>
+        <French>
+            <Text>Biens</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>Güter</German>
+        <Italian>
+            <Text>Beni</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mercancía:Mercancías</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

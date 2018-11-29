@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_GUN</Tag>
+        <English>Gunpowder Units</English>
+        <French>
+            <Text>Unités équipées d'armes à feu</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Schießpulver-Einheiten</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Unità con armi da fuoco:Unità con armi da fuoco</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>U. armas de pólvora:U. armas de pólvora</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_MELEE</Tag>
+        <English>Melee Units</English>
+        <French>
+            <Text>Unités de combat rapproché</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Nahkampfeinheiten</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Unità da combattimento ravvicinato:Unità da combattimento ravvicinato</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>U. cuerpo a cuerpo:U. cuerpo a cuerpo</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_MOUNTED</Tag>
+        <English>Mounted Units</English>
+        <French>
+            <Text>Unités montées</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Berittene Einheiten</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Unità montata:Unità montate</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Unidad montada:Unidades montadas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_NAVAL_MILITARY</Tag>
+        <English>
+            <Text>War Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>War Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Kriegsschiffe</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>War Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>War Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_NAVAL_PIRACY</Tag>
+        <English>
+            <Text>Corsairs</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Corsairs</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Piratenschiffe</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Corsairs</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Corsairs</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_NAVAL_TRADE</Tag>
+        <English>
+            <Text>Merchant Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Merchant Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Handelsschiffe</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Merchant Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Merchant Ships</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCOMBAT_SIEGE</Tag>
+        <English>Siege Weapons</English>
+        <French>
+            <Text>Armes de siège</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Artillerie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Arma da assedio:Armi da assedio</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Arma de asedio:Armas de asedio</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

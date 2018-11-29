@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_EPIC</Tag>
+        <English>Epic</English>
+        <French>
+            <Text>Épique</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Episch</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Epica</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Épica</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_EPIC_HELP</Tag>
+        <English>The game is balanced to take a little longer.</English>
+        <French>Les données du jeu sont équilibrées pour rendre la partie plus longue.</French>
+        <German>Langsames Produktionstempo</German>
+        <Italian>The game is balanced to take a little longer.</Italian>
+        <Spanish>The game is balanced to take a little longer.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON</Tag>
+        <English>Marathon</English>
+        <French>
+            <Text>Marathon</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Marathon</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Maratona</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Maratn</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>
+        <English>Extremely long game speed</English>
+        <French>Vitesse de jeu très lente</French>
+        <German>Sehr langsames Produktionstempo</German>
+        <Italian>Velocità di gioco incredibilmente lunga</Italian>
+        <Spanish>Velocidad prolongada</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL</Tag>
+        <English>Normal</English>
+        <French>
+            <Text>Normale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Normal</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Normale</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Normal</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_NORMAL_HELP</Tag>
+        <English>Normal game speed</English>
+        <French>Vitesse de jeu normale</French>
+        <German>Standard-Produktionstempo (z.B. beim Gebäudebau und dem Sammeln von Gründerväterpunkten)</German>
+        <Italian>Normal game speed</Italian>
+        <Spanish>Normal game speed</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_QUICK</Tag>
+        <English>Quick</English>
+        <French>
+            <Text>Rapide</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Schnell</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Veloce</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Rpida</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMESPEED_TAC_QUICK_HELP</Tag>
+        <English>Choose this for a game where everything happens a bit quicker. The game will be faster but is balanced to still feel like a normal game.</English>
+        <French>Tout se déroulera plus vite à cette vitesse. Le jeu sera plus rapide, mais toujours équilibré pour conserver l'impression d'une partie normale.</French>
+        <German>Schnelles Produktionstempo</German>
+        <Italian>Scegli questa opzione per avviare una partita nella quale le cose avvengono più rapidamente. La partita sarà più veloce, ma bilanciata in modo da sembrare una partita normale.</Italian>
+        <Spanish>Escoged ésta si queréis una partida en la que todo suceda un poco más deprisa. La partida será más rápida pero estará equilibrada para seguir pareciendo normal.</Spanish>
+    </TEXT>
+</Civ4GameText>

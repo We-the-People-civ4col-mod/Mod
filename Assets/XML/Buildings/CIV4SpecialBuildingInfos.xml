@@ -278,7 +278,7 @@
         </SpecialBuildingInfo>
         <SpecialBuildingInfo>
             <Type>SPECIALBUILDING_DEFENSE</Type>
-            <Description>TXT_KEY_SPECIALBUILDING_WALLS</Description>
+            <Description>TXT_KEY_SPECIALBUILDING_DEFENSE</Description>
             <bValid>1</bValid>
             <FontButtonIndex>21</FontButtonIndex>
             <ProductionTraits/>

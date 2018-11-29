@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_POINT_EXPLORATION</Tag>
+        <English>Exploration Points</English>
+        <French>points d'exploration</French>
+        <German>Erkundungspunkte</German>
+        <Italian>
+            <Text>Punti esplorazione</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Puntos de exploración</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_POINT_MILITARY</Tag>
+        <English>Military Points</English>
+        <French>points militaires</French>
+        <German>Militärpunkte</German>
+        <Italian>
+            <Text>Punti esercito</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Puntos militares</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_POINT_POLITICAL</Tag>
+        <English>Political Points</English>
+        <French>points politiques</French>
+        <German>Politikpunkte</German>
+        <Italian>
+            <Text>Punti politica</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Puntos de política</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_POINT_RELIGION</Tag>
+        <English>Religion Points</English>
+        <French>points de religion</French>
+        <German>Religionspunkte</German>
+        <Italian>
+            <Text>Punti religione</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Puntos de religión</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_POINT_TRADE</Tag>
+        <English>Trade Points</English>
+        <French>points de commerce</French>
+        <German>Handelspunkte</German>
+        <Italian>
+            <Text>Punti commercio</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Puntos de intercambio</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

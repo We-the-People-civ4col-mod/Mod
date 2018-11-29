@@ -182,7 +182,7 @@
         </PromotionInfo>
         <PromotionInfo>
             <Type>PROMOTION_CANNISTER_SHOT</Type>
-            <Description>TXT_KEY_PROMOTION_CANNISTER_SHOTI</Description>
+            <Description>TXT_KEY_PROMOTION_CANNISTER_SHOT</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
             <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>
@@ -4542,7 +4542,7 @@
         </PromotionInfo>
         <PromotionInfo>
             <Type>PROMOTION_LEADER</Type>
-            <Description>TXT_KEY_PROMOTION_GREAT_GENERAL</Description>
+            <Description>TXT_KEY_PROMOTION_LEADER</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
             <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>
@@ -4633,7 +4633,7 @@
         </PromotionInfo>
         <PromotionInfo>
             <Type>PROMOTION_LEADER2</Type>
-            <Description>TXT_KEY_PROMOTION_GREAT_ADMIRAL</Description>
+            <Description>TXT_KEY_PROMOTION_LEADER2</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
             <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>
@@ -5898,7 +5898,7 @@
         </PromotionInfo>
         <PromotionInfo>
             <Type>PROMOTION_HEAVY_CAVALRY</Type>
-            <Description>TXT_KEY_PROMOTION_DRAGOON</Description>
+            <Description>TXT_KEY_PROMOTION_HEAVY_CAVALRY</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
             <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>

@@ -10,18 +10,18 @@
         <CommandInfo>
             <Type>COMMAND_PROMOTION</Type>
             <Description>TXT_KEY_COMMAND_PROMOTION</Description>
-            <Help/>
+            <Help>TXT_KEY_COMMAND_PROMOTION_HELP</Help>
         </CommandInfo>
         <CommandInfo>
             <Type>COMMAND_UPGRADE</Type>
             <Description>TXT_KEY_COMMAND_UPGRADE</Description>
-            <Help/>
+            <Help>TXT_KEY_COMMAND_UPGRADE_HELP</Help>
             <bAll>1</bAll>
         </CommandInfo>
         <CommandInfo>
             <Type>COMMAND_AUTOMATE</Type>
             <Description>TXT_KEY_COMMAND_AUTOMATE</Description>
-            <Help/>
+            <Help>TXT_KEY_COMMAND_AUTOMATE_HELP</Help>
             <Button>Art/Interface/Game Hud/Actions/Automate.dds</Button>
         </CommandInfo>
         <CommandInfo>
@@ -174,8 +174,8 @@
         </CommandInfo>
         <CommandInfo>
             <Type>COMMAND_LOAD_YIELD</Type>
-            <Description>TXT_KEY_COMMAND_LOAD_CARGO</Description>
-            <Help>TXT_KEY_COMMAND_LOAD_CARGO_HELP</Help>
+            <Description>TXT_KEY_COMMAND_LOAD_YIELD</Description>
+            <Help>TXT_KEY_COMMAND_LOAD_YIELD_HELP</Help>
         </CommandInfo>
         <CommandInfo>
             <Type>COMMAND_UNLOAD</Type>
@@ -332,8 +332,8 @@
         </CommandInfo>
         <CommandInfo>
             <Type>COMMAND_ASSIGN_TRADE_ROUTE</Type>
-            <Description>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES</Description>
-            <Help>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES_HELP</Help>
+            <Description>TXT_KEY_COMMAND_ASSIGN_TRADE_ROUTE</Description>
+            <Help>TXT_KEY_COMMAND_ASSIGN_TRADE_ROUTE_HELP</Help>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -349,8 +349,8 @@
         </CommandInfo>
         <CommandInfo>
             <Type>COMMAND_PROMOTE</Type>
-            <Description>TXT_KEY_COMMAND_PROMOTION</Description>
-            <Help>TXT_KEY_COMMAND_PROMOTION_HELP</Help>
+            <Description>TXT_KEY_COMMAND_PROMOTE</Description>
+            <Help>TXT_KEY_COMMAND_PROMOTE_HELP</Help>
             <HotKey>KB_P</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -441,7 +441,7 @@
         <CommandInfo>
             <Type>COMMAND_IGNORE_DANGER</Type>
             <Description>TXT_KEY_COMMAND_IGNORE_DANGER</Description>
-            <Help>TXT_KEY_COMMAND_COMMAND_IGNORE_DANGER_HELP</Help>
+            <Help>TXT_KEY_COMMAND_IGNORE_DANGER_HELP</Help>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>

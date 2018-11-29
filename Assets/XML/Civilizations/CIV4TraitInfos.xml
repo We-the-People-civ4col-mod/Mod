@@ -2081,7 +2081,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_DOM_PEDRO_I</Type>
-            <Description>TXT_KEY_FATHER_DOM_PEDRO_I</Description>
+            <Description>TXT_KEY_TRAIT_DOM_PEDRO_I</Description>
             <ShortDescription>TXT_KEY_FATHER_DOM_PEDRO_I</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>50</iGreatGeneralRateModifier>
@@ -2148,7 +2148,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_FRANCISCO_PIZARRO</Type>
-            <Description>TXT_KEY_FATHER_FRANCISCO_PIZARRO</Description>
+            <Description>TXT_KEY_TRAIT_FRANCISCO_PIZARRO</Description>
             <ShortDescription>TXT_KEY_FATHER_FRANCISCO_PIZARRO</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2211,7 +2211,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_HERNADO_DE_SOTO</Type>
-            <Description>TXT_KEY_FATHER_HERNADO_DE_SOTO</Description>
+            <Description>TXT_KEY_TRAIT_HERNADO_DE_SOTO</Description>
             <ShortDescription>TXT_KEY_FATHER_HERNADO_DE_SOTO</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2274,7 +2274,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ETHAN_ALLEN</Type>
-            <Description>TXT_KEY_FATHER_ETHAN_ALLEN</Description>
+            <Description>TXT_KEY_TRAIT_ETHAN_ALLEN</Description>
             <ShortDescription>TXT_KEY_FATHER_ETHAN_ALLEN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2337,7 +2337,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_CYRUS_MCCORMICK</Type>
-            <Description>TXT_KEY_FATHER_CYRUS_MCCORMICK</Description>
+            <Description>TXT_KEY_TRAIT_CYRUS_MCCORMICK</Description>
             <ShortDescription>TXT_KEY_FATHER_CYRUS_MCCORMICK</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2391,7 +2391,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_BARTOLOME_DE_LAS_CASAS</Type>
-            <Description>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS</Description>
+            <Description>TXT_KEY_TRAIT_BARTOLOME_DE_LAS_CASAS</Description>
             <ShortDescription>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2440,7 +2440,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ROGER_WILLIAMS</Type>
-            <Description>TXT_KEY_FATHER_ROGER_WILLIAMS</Description>
+            <Description>TXT_KEY_TRAIT_ROGER_WILLIAMS</Description>
             <ShortDescription>TXT_KEY_FATHER_ROGER_WILLIAMS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2526,7 +2526,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_ROLFE</Type>
-            <Description>TXT_KEY_FATHER_JOHN_ROLFE</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_ROLFE</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_ROLFE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2608,7 +2608,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_SAMUEL_BLOMMAERT</Type>
-            <Description>TXT_KEY_FATHER_SAMUEL_BLOMMAERT</Description>
+            <Description>TXT_KEY_TRAIT_SAMUEL_BLOMMAERT</Description>
             <ShortDescription>TXT_KEY_FATHER_SAMUEL_BLOMMAERT</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2690,7 +2690,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_LORD_BALTIMORE</Type>
-            <Description>TXT_KEY_FATHER_LORD_BALTIMORE</Description>
+            <Description>TXT_KEY_TRAIT_LORD_BALTIMORE</Description>
             <ShortDescription>TXT_KEY_FATHER_LORD_BALTIMORE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2794,7 +2794,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ELI_WHITNEY</Type>
-            <Description>TXT_KEY_FATHER_ELI_WHITNEY</Description>
+            <Description>TXT_KEY_TRAIT_ELI_WHITNEY</Description>
             <ShortDescription>TXT_KEY_FATHER_ELI_WHITNEY</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2876,7 +2876,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_JAY</Type>
-            <Description>TXT_KEY_FATHER_JOHN_JAY</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_JAY</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_JAY</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2930,7 +2930,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_FRANCISCO_DE_ORELLANA</Type>
-            <Description>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA</Description>
+            <Description>TXT_KEY_TRAIT_FRANCISCO_DE_ORELLANA</Description>
             <ShortDescription>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA</ShortDescription>
             <iLevelExperienceModifier>-10</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -2979,7 +2979,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_MAQUIS_DE_LA_FAYETTE</Type>
-            <Description>TXT_KEY_FATHER_MAQUIS_DE_LA_FAYETTE</Description>
+            <Description>TXT_KEY_TRAIT_MAQUIS_DE_LA_FAYETTE</Description>
             <ShortDescription>TXT_KEY_FATHER_MAQUIS_DE_LA_FAYETTE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3037,7 +3037,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_SAMUEL_ADAMS</Type>
-            <Description>TXT_KEY_FATHER_SAMUEL_ADAMS</Description>
+            <Description>TXT_KEY_TRAIT_SAMUEL_ADAMS</Description>
             <ShortDescription>TXT_KEY_FATHER_SAMUEL_ADAMS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3091,7 +3091,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_THOMAS_PAINE</Type>
-            <Description>TXT_KEY_FATHER_THOMAS_PAINE</Description>
+            <Description>TXT_KEY_TRAIT_THOMAS_PAINE</Description>
             <ShortDescription>TXT_KEY_FATHER_THOMAS_PAINE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3145,7 +3145,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_ADAMS</Type>
-            <Description>TXT_KEY_FATHER_JOHN_ADAMS</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_ADAMS</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_ADAMS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3218,7 +3218,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_SOR_JUANA</Type>
-            <Description>TXT_KEY_FATHER_SOR_JUANA</Description>
+            <Description>TXT_KEY_TRAIT_SOR_JUANA</Description>
             <ShortDescription>TXT_KEY_FATHER_SOR_JUANA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3277,7 +3277,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Type>
-            <Description>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA</Description>
+            <Description>TXT_KEY_TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Description>
             <ShortDescription>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3363,7 +3363,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JAN_DE_WITT</Type>
-            <Description>TXT_KEY_FATHER_JAN_DE_WITT</Description>
+            <Description>TXT_KEY_TRAIT_JAN_DE_WITT</Description>
             <ShortDescription>TXT_KEY_FATHER_JAN_DE_WITT</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3417,7 +3417,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ALEXANDER_HAMILTON</Type>
-            <Description>TXT_KEY_FATHER_ALEXANDER_HAMILTON</Description>
+            <Description>TXT_KEY_TRAIT_ALEXANDER_HAMILTON</Description>
             <ShortDescription>TXT_KEY_FATHER_ALEXANDER_HAMILTON</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3521,7 +3521,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_JACOB_ASTOR</Type>
-            <Description>TXT_KEY_FATHER_JOHN_JACOB_ASTOR</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_JACOB_ASTOR</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_JACOB_ASTOR</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3619,7 +3619,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_WINTHROP</Type>
-            <Description>TXT_KEY_FATHER_JOHN_WINTHROP</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_WINTHROP</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_WINTHROP</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3714,7 +3714,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_BEN_FRANKLIN</Type>
-            <Description>TXT_KEY_FATHER_BEN_FRANKLIN</Description>
+            <Description>TXT_KEY_TRAIT_BEN_FRANKLIN</Description>
             <ShortDescription>TXT_KEY_FATHER_BEN_FRANKLIN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3791,7 +3791,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PATRICK_HENRY</Type>
-            <Description>TXT_KEY_FATHER_PATRICK_HENRY</Description>
+            <Description>TXT_KEY_TRAIT_PATRICK_HENRY</Description>
             <ShortDescription>TXT_KEY_FATHER_PATRICK_HENRY</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3886,7 +3886,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JAMES_MADISON</Type>
-            <Description>TXT_KEY_FATHER_JAMES_MADISON</Description>
+            <Description>TXT_KEY_TRAIT_JAMES_MADISON</Description>
             <ShortDescription>TXT_KEY_FATHER_JAMES_MADISON</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -3988,7 +3988,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_BETSY_ROSS</Type>
-            <Description>TXT_KEY_FATHER_BETSY_ROSS</Description>
+            <Description>TXT_KEY_TRAIT_BETSY_ROSS</Description>
             <ShortDescription>TXT_KEY_FATHER_BETSY_ROSS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4070,7 +4070,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_WASHINGTON_IRVING</Type>
-            <Description>TXT_KEY_FATHER_WASHINGTON_IRVING</Description>
+            <Description>TXT_KEY_TRAIT_WASHINGTON_IRVING</Description>
             <ShortDescription>TXT_KEY_FATHER_WASHINGTON_IRVING</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4156,7 +4156,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ALEXIS_DE_TOCQUEVILLE</Type>
-            <Description>TXT_KEY_FATHER_ALEXIS_DE_TOCQUEVILLE</Description>
+            <Description>TXT_KEY_TRAIT_ALEXIS_DE_TOCQUEVILLE</Description>
             <ShortDescription>TXT_KEY_FATHER_ALEXIS_DE_TOCQUEVILLE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4222,7 +4222,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JUAN_DE_BERMUDEZ</Type>
-            <Description>TXT_KEY_FATHER_JUAN_DE_BERMUDEZ</Description>
+            <Description>TXT_KEY_TRAIT_JUAN_DE_BERMUDEZ</Description>
             <ShortDescription>TXT_KEY_FATHER_JUAN_DE_BERMUDEZ</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4304,7 +4304,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PAUL_CHOMEDEY_DE_MAISONNEUVE</Type>
-            <Description>TXT_KEY_FATHER_PAUL_CHOMEDEY_DE_MAISONNEUVE</Description>
+            <Description>TXT_KEY_TRAIT_PAUL_CHOMEDEY_DE_MAISONNEUVE</Description>
             <ShortDescription>TXT_KEY_FATHER_PAUL_CHOMEDEY_DE_MAISONNEUVE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4363,7 +4363,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JACQUES_MARQUETTE</Type>
-            <Description>TXT_KEY_FATHER_JACQUES_MARQUETTE</Description>
+            <Description>TXT_KEY_TRAIT_JACQUES_MARQUETTE</Description>
             <ShortDescription>TXT_KEY_FATHER_JACQUES_MARQUETTE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4422,7 +4422,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_FRANCISCO_DE_CORONADO</Type>
-            <Description>TXT_KEY_FATHER_FRANCISCO_DE_CORONADO</Description>
+            <Description>TXT_KEY_TRAIT_FRANCISCO_DE_CORONADO</Description>
             <ShortDescription>TXT_KEY_FATHER_FRANCISCO_DE_CORONADO</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4481,7 +4481,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ALEXANDER_VON_HUMBOLDT</Type>
-            <Description>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT</Description>
+            <Description>TXT_KEY_TRAIT_ALEXANDER_VON_HUMBOLDT</Description>
             <ShortDescription>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4535,7 +4535,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_GABRIEL_LALLEMANT</Type>
-            <Description>TXT_KEY_FATHER_GABRIEL_LALLEMANT</Description>
+            <Description>TXT_KEY_TRAIT_GABRIEL_LALLEMANT</Description>
             <ShortDescription>TXT_KEY_FATHER_GABRIEL_LALLEMANT</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4617,7 +4617,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ADAM_SMITH</Type>
-            <Description>TXT_KEY_FATHER_ADAM_SMITH</Description>
+            <Description>TXT_KEY_TRAIT_ADAM_SMITH</Description>
             <ShortDescription>TXT_KEY_FATHER_ADAM_SMITH</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4687,7 +4687,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_CHIEF_POWHATAN</Type>
-            <Description>TXT_KEY_FATHER_CHIEF_POWHATAN</Description>
+            <Description>TXT_KEY_TRAIT_CHIEF_POWHATAN</Description>
             <ShortDescription>TXT_KEY_FATHER_CHIEF_POWHATAN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4745,7 +4745,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_LEWIS_AND_CLARK</Type>
-            <Description>TXT_KEY_FATHER_LEWIS_AND_CLARK</Description>
+            <Description>TXT_KEY_TRAIT_LEWIS_AND_CLARK</Description>
             <ShortDescription>TXT_KEY_FATHER_LEWIS_AND_CLARK</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4816,7 +4816,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_VACO_NUNEZ_DE_BALBOA</Type>
-            <Description>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA</Description>
+            <Description>TXT_KEY_TRAIT_VACO_NUNEZ_DE_BALBOA</Description>
             <ShortDescription>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4865,7 +4865,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_HARVARD</Type>
-            <Description>TXT_KEY_FATHER_JOHN_HAVARD</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_HARVARD</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_HAVARD</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4924,7 +4924,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ROBERT_LA_SALLE</Type>
-            <Description>TXT_KEY_FATHER_ROBERT_LA_SALLE</Description>
+            <Description>TXT_KEY_TRAIT_ROBERT_LA_SALLE</Description>
             <ShortDescription>TXT_KEY_FATHER_ROBERT_LA_SALLE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -4978,7 +4978,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_SMITH</Type>
-            <Description>TXT_KEY_FATHER_JOHN_SMITH</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_SMITH</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_SMITH</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5027,7 +5027,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PETER_MINUIT</Type>
-            <Description>TXT_KEY_FATHER_PETER_MINUIT</Description>
+            <Description>TXT_KEY_TRAIT_PETER_MINUIT</Description>
             <ShortDescription>TXT_KEY_FATHER_PETER_MINUIT</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5076,7 +5076,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_WILLIAM_BREWSTER</Type>
-            <Description>TXT_KEY_FATHER_WILLIAM_BREWSTER</Description>
+            <Description>TXT_KEY_TRAIT_WILLIAM_BREWSTER</Description>
             <ShortDescription>TXT_KEY_FATHER_WILLIAM_BREWSTER</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5158,7 +5158,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PEDRO_ALVARES_CABRAL</Type>
-            <Description>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL</Description>
+            <Description>TXT_KEY_TRAIT_PEDRO_ALVARES_CABRAL</Description>
             <ShortDescription>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5207,7 +5207,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_POCAHONTAS</Type>
-            <Description>TXT_KEY_FATHER_POCAHONTAS</Description>
+            <Description>TXT_KEY_TRAIT_POCAHONTAS</Description>
             <ShortDescription>TXT_KEY_FATHER_POCAHONTAS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5256,7 +5256,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_FRANCIS_DRAKE</Type>
-            <Description>TXT_KEY_FATHER_FRANCIS_DRAKE</Description>
+            <Description>TXT_KEY_TRAIT_FRANCIS_DRAKE</Description>
             <ShortDescription>TXT_KEY_FATHER_FRANCIS_DRAKE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5314,7 +5314,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_DE_GRASSE</Type>
-            <Description>TXT_KEY_FATHER_DE_GRASSE</Description>
+            <Description>TXT_KEY_TRAIT_DE_GRASSE</Description>
             <ShortDescription>TXT_KEY_FATHER_DE_GRASSE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5376,7 +5376,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_HENRY_SHRAPNEL</Type>
-            <Description>TXT_KEY_FATHER_HENRY_SHRAPNEL</Description>
+            <Description>TXT_KEY_TRAIT_HENRY_SHRAPNEL</Description>
             <ShortDescription>TXT_KEY_FATHER_HENRY_SHRAPNEL</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5434,7 +5434,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_GABRIEL_DE_CLIEU</Type>
-            <Description>TXT_KEY_FATHER_GABRIEL_DE_CLIEU</Description>
+            <Description>TXT_KEY_TRAIT_GABRIEL_DE_CLIEU</Description>
             <ShortDescription>TXT_KEY_FATHER_GABRIEL_DE_CLIEU</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5534,7 +5534,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_GONZALO_JIMENEZ_DE_QUESADA</Type>
-            <Description>TXT_KEY_FATHER_GONZALO_JIMENEZ_DE_QUESADA</Description>
+            <Description>TXT_KEY_TRAIT_GONZALO_JIMENEZ_DE_QUESADA</Description>
             <ShortDescription>TXT_KEY_FATHER_GONZALO_JIMENEZ_DE_QUESADA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5583,7 +5583,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_WILLEM_BARENTS</Type>
-            <Description>TXT_KEY_FATHER_WILLEM_BARENTS</Description>
+            <Description>TXT_KEY_TRAIT_WILLEM_BARENTS</Description>
             <ShortDescription>TXT_KEY_FATHER_WILLEM_BARENTS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5642,7 +5642,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PAUL_REVERE</Type>
-            <Description>TXT_KEY_FATHER_PAUL_REVERE</Description>
+            <Description>TXT_KEY_TRAIT_PAUL_REVERE</Description>
             <ShortDescription>TXT_KEY_FATHER_PAUL_REVERE</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5696,7 +5696,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JACQUES_CARTIER</Type>
-            <Description>TXT_KEY_FATHER_JACQUES_CARTIER</Description>
+            <Description>TXT_KEY_TRAIT_JACQUES_CARTIER</Description>
             <ShortDescription>TXT_KEY_FATHER_JACQUES_CARTIER</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5767,7 +5767,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JAKOB_FUGGER</Type>
-            <Description>TXT_KEY_FATHER_JAKOB_FUGGER</Description>
+            <Description>TXT_KEY_TRAIT_JAKOB_FUGGER</Description>
             <ShortDescription>TXT_KEY_FATHER_JAKOB_FUGGER</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5865,7 +5865,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_CHARLES_CARROLL</Type>
-            <Description>TXT_KEY_FATHER_CHARLES_CARROLL</Description>
+            <Description>TXT_KEY_TRAIT_CHARLES_CARROLL</Description>
             <ShortDescription>TXT_KEY_FATHER_CHARLES_CARROLL</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5914,7 +5914,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PEDRO_DE_VALDIVIA</Type>
-            <Description>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA</Description>
+            <Description>TXT_KEY_TRAIT_PEDRO_DE_VALDIVIA</Description>
             <ShortDescription>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -5972,7 +5972,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JUNIPERO_SERRA</Type>
-            <Description>TXT_KEY_FATHER_JUNIPERO_SERRA</Description>
+            <Description>TXT_KEY_TRAIT_JUNIPERO_SERRA</Description>
             <ShortDescription>TXT_KEY_FATHER_JUNIPERO_SERRA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6054,7 +6054,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JAMES_WILSON</Type>
-            <Description>TXT_KEY_FATHER_JAMES_WILSON</Description>
+            <Description>TXT_KEY_TRAIT_JAMES_WILSON</Description>
             <ShortDescription>TXT_KEY_FATHER_JAMES_WILSON</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6129,7 +6129,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JUAN_DE_SEPULVEDA</Type>
-            <Description>TXT_KEY_FATHER_JUAN_DE_SEPULVEDA</Description>
+            <Description>TXT_KEY_TRAIT_JUAN_DE_SEPULVEDA</Description>
             <ShortDescription>TXT_KEY_FATHER_JUAN_DE_SEPULVEDA</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6229,7 +6229,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_ROBERT_MORRIS</Type>
-            <Description>TXT_KEY_FATHER_ROBERT_MORRIS</Description>
+            <Description>TXT_KEY_TRAIT_ROBERT_MORRIS</Description>
             <ShortDescription>TXT_KEY_FATHER_ROBERT_MORRIS</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6457,7 +6457,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_FRIEDRICH_WILHELM_VON_STEUBEN</Type>
-            <Description>TXT_KEY_FATHER_FRIEDRICH_WILHELM_VON_STEUBEN</Description>
+            <Description>TXT_KEY_TRAIT_FRIEDRICH_WILHELM_VON_STEUBEN</Description>
             <ShortDescription>TXT_KEY_FATHER_FRIEDRICH_WILHELM_VON_STEUBEN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6511,7 +6511,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_BENJAMIN_LINCOLN</Type>
-            <Description>TXT_KEY_FATHER_BENJAMIN_LINCOLN</Description>
+            <Description>TXT_KEY_TRAIT_BENJAMIN_LINCOLN</Description>
             <ShortDescription>TXT_KEY_FATHER_BENJAMIN_LINCOLN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6569,7 +6569,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_THOMAS_JEFFERSON</Type>
-            <Description>TXT_KEY_FATHER_THOMAS_JEFFERSON</Description>
+            <Description>TXT_KEY_TRAIT_THOMAS_JEFFERSON</Description>
             <ShortDescription>TXT_KEY_FATHER_THOMAS_JEFFERSON</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6623,7 +6623,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOHN_AUGUST_SUTTER</Type>
-            <Description>TXT_KEY_FATHER_JOHN_AUGUST_SUTTER</Description>
+            <Description>TXT_KEY_TRAIT_JOHN_AUGUST_SUTTER</Description>
             <ShortDescription>TXT_KEY_FATHER_JOHN_AUGUST_SUTTER</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6685,7 +6685,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_FERDINAND_MAGELLAN</Type>
-            <Description>TXT_KEY_FATHER_FERDINAND_MAGELLAN</Description>
+            <Description>TXT_KEY_TRAIT_FERDINAND_MAGELLAN</Description>
             <ShortDescription>TXT_KEY_FATHER_FERDINAND_MAGELLAN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6756,7 +6756,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JOSE_DE_SAN_MARTIN</Type>
-            <Description>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN</Description>
+            <Description>TXT_KEY_TRAIT_JOSE_DE_SAN_MARTIN</Description>
             <ShortDescription>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6819,7 +6819,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_BLACKBEARD</Type>
-            <Description>TXT_KEY_FATHER_BLACKBEARD</Description>
+            <Description>TXT_KEY_TRAIT_BLACKBEARD</Description>
             <ShortDescription>TXT_KEY_FATHER_BLACKBEARD</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -6887,7 +6887,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_GEORGE_FOX</Type>
-            <Description>TXT_KEY_FATHER_GEORGE_FOX</Description>
+            <Description>TXT_KEY_TRAIT_GEORGE_FOX</Description>
             <ShortDescription>TXT_KEY_FATHER_GEORGE_FOX</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7000,7 +7000,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_MIGUEL_HIDALGO</Type>
-            <Description>TXT_KEY_FATHER_MIGUEL_HIDALGO</Description>
+            <Description>TXT_KEY_TRAIT_MIGUEL_HIDALGO</Description>
             <ShortDescription>TXT_KEY_FATHER_MIGUEL_HIDALGO</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7095,7 +7095,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_NICOLAS_DE_VILLEGAGNON</Type>
-            <Description>TXT_KEY_FATHER_NICOLAS_DE_VILLEGAGNON</Description>
+            <Description>TXT_KEY_TRAIT_NICOLAS_DE_VILLEGAGNON</Description>
             <ShortDescription>TXT_KEY_FATHER_NICOLAS_DE_VILLEGAGNON</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7166,7 +7166,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_PEDRO_MENENDEZ_DE_AVILES</Type>
-            <Description>TXT_KEY_FATHER_PEDRO_MENENDEZ_DE_AVILES</Description>
+            <Description>TXT_KEY_TRAIT_PEDRO_MENENDEZ_DE_AVILES</Description>
             <ShortDescription>TXT_KEY_FATHER_PEDRO_MENENDEZ_DE_AVILES</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7248,7 +7248,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_JEAN_DE_BREBEUF</Type>
-            <Description>TXT_KEY_FATHER_JEAN_DE_BREBEUF</Description>
+            <Description>TXT_KEY_TRAIT_JEAN_DE_BREBEUF</Description>
             <ShortDescription>TXT_KEY_FATHER_JEAN_DE_BREBEUF</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7297,7 +7297,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_MICHIEL_DE_RUYTER</Type>
-            <Description>TXT_KEY_FATHER_MICHIEL_DE_RUYTER</Description>
+            <Description>TXT_KEY_TRAIT_MICHIEL_DE_RUYTER</Description>
             <ShortDescription>TXT_KEY_FATHER_MICHIEL_DE_RUYTER</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7363,7 +7363,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_BENJAMIN_RUSH</Type>
-            <Description>TXT_KEY_FATHER_BENJAMIN_RUSH</Description>
+            <Description>TXT_KEY_TRAIT_BENJAMIN_RUSH</Description>
             <ShortDescription>TXT_KEY_FATHER_BENJAMIN_RUSH</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7431,7 +7431,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_COMTE_DE_VERGENNES</Type>
-            <Description>TXT_KEY_FATHER_COMTE_DE_VERGENNES</Description>
+            <Description>TXT_KEY_TRAIT_COMTE_DE_VERGENNES</Description>
             <ShortDescription>TXT_KEY_FATHER_COMTE_DE_VERGENNES</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
@@ -7593,7 +7593,7 @@
         </TraitInfo>
         <TraitInfo>
             <Type>TRAIT_NICOLAS_MONARDES</Type>
-            <Description>TXT_KEY_FATHER_NICOLAS_MONARDES</Description>
+            <Description>TXT_KEY_TRAIT_NICOLAS_MONARDES</Description>
             <ShortDescription>TXT_KEY_FATHER_NICOLAS_MONARDES</ShortDescription>
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>

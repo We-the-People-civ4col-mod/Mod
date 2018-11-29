@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CIVICOPTION_ELECTION</Tag>
+        <English>Stance on Elections</English>
+        <French>
+            <Text>Position sur les élections</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Haltung zur Regierungsform</German>
+        <Italian>
+            <Text>Atteggiamento verso le elezioni</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Postura sobre las elecciones</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVICOPTION_NATIVES</Tag>
+        <English>Stance on Natives</English>
+        <French>
+            <Text>Position sur les indigènes</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Haltung zu Ureinwohnern</German>
+        <Italian>
+            <Text>Atteggiamento verso i nativi</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Postura sobre los nativos</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVICOPTION_RELIGION</Tag>
+        <English>Stance on Religion</English>
+        <French>
+            <Text>Position sur la religion</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Haltung zur Religion</German>
+        <Italian>
+            <Text>Atteggiamento verso la religione</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Postura sobre la religión</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVICOPTION_SECURITY</Tag>
+        <English>Stance on Land Security</English>
+        <French>
+            <Text>Position sur la sécurité du territoire</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Haltung zum Waffenbesitz</German>
+        <Italian>
+            <Text>Atteggiamento verso la sicurezza nazionale</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Postura sobre la seguridad terrestre</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIVICOPTION_SLAVERY</Tag>
+        <English>Stance on Slavery</English>
+        <French>
+            <Text>Position sur l'esclavage</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Haltung zur Sklaverei</German>
+        <Italian>
+            <Text>Atteggiamento verso lo schiavismo</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Postura sobre la esclavitud</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

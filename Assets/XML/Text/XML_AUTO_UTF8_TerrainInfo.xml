@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_COAST</Tag>
+        <English>Coast</English>
+        <French>
+            <Text>Côte</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Küste</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Costa:Coste</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Costa:Costas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_COAST_PEDIA</Tag>
+        <English>[TAB]The coastline is where the land meets the sea or ocean. A precise line that can be called a coastline cannot be determined due to the dynamic nature of tides. The term "coastal zone" can be used instead, which is a spatial zone where interaction of the sea and land processes occurs. Both the terms coast and coastal are often used to describe a geographic location or region; for example, New Zealand's West Coast, or the East and West Coasts of the United States.</English>
+        <French>[TAB]Le littoral est la bande de terre qui sépare la zone comprise entre une étendue maritime et le continent, ou l'arrière-pays. Selon les échelles retenues, le littoral peut s'étendre de quelques centaines de mètres à plusieurs kilomètres de part et d'autre de la limite terre-eau ou au sens strict, correspondre à l'estran.</French>
+        <German>[TAB]Als Küste bezeichnet man das Gebiet, wo Land auf Ozean trifft.</German>
+        <Italian>[TAB]The coastline is where the land meets the sea or ocean. A precise line that can be called a coastline cannot be determined due to the dynamic nature of tides. The term "coastal zone" can be used instead, which is a spatial zone where interaction of the sea and land processes occurs. Both the terms coast and coastal are often used to describe a geographic location or region; for example, New Zealand's West Coast, or the East and West Coasts of the United States.</Italian>
+        <Spanish>[TAB]The coastline is where the land meets the sea or ocean. A precise line that can be called a coastline cannot be determined due to the dynamic nature of tides. The term "coastal zone" can be used instead, which is a spatial zone where interaction of the sea and land processes occurs. Both the terms coast and coastal are often used to describe a geographic location or region; for example, New Zealand's West Coast, or the East and West Coasts of the United States.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_DESERT</Tag>
+        <English>Desert</English>
+        <French>
+            <Text>Désert</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Wüste</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Deserto:Deserti</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Desierto:Desiertos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
+        <English>[TAB]A desert is a landscape or region that receives an extremely low amount of precipitation, less than enough to support growth of most plants. Deserts are defined as areas with an average annual precipitation of less than 250 millimetres (10 in) per year, or as areas where more water is lost by evapotranspiration than falls as precipitation. In the K0ppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts would be classified as arid megathermal climates.</English>
+        <French>[TAB]Le mot désert désigne aujourd'hui une zone stérile ou peu propice à la vie, en raison du sol impropre, ou de la faiblesse des précipitations (moins de 250 mm par an). Un paysage désertique se reconnaît à son aspect dénudé sur de vastes surfaces, sans présence humaine réellement importante.</French>
+        <German>[TAB]Eine Wüste ist ein Landstrich oder eine Region mit wenig Niederschlägen, wodurch kaum Wachstum von Pflanzen möglich ist.</German>
+        <Italian>[TAB]A desert is a landscape or region that receives an extremely low amount of precipitation, less than enough to support growth of most plants. Deserts are defined as areas with an average annual precipitation of less than 250 millimetres (10 in) per year, or as areas where more water is lost by evapotranspiration than falls as precipitation. In the K0ppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts would be classified as arid megathermal climates.</Italian>
+        <Spanish>[TAB]A desert is a landscape or region that receives an extremely low amount of precipitation, less than enough to support growth of most plants. Deserts are defined as areas with an average annual precipitation of less than 250 millimetres (10 in) per year, or as areas where more water is lost by evapotranspiration than falls as precipitation. In the K0ppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts would be classified as arid megathermal climates.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_GRASS</Tag>
+        <English>Grassland</English>
+        <French>
+            <Text>Prairie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Grasland</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Prateria:Praterie</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Pradera:Praderas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_GRASS_PEDIA</Tag>
+        <English>[TAB]Grasslands are areas where the vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants (forbs). However, sedge (Cyperaceae) and rush (Juncaceae) families can also be found. Grasslands occur naturally on all continents except Antarctica. In temperate latitudes, such as northwest Europe and the Great Plains and California in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species form a greater component of the vegetation.</English>
+        <French>[TAB]Les prairies forment un biome terrestre qui regroupe les étendues herbacées au climat tempéré. Le paysage naturel est celui d'une immense étendue d'herbes dont les arbres sont le plus souvent complètement absents, sauf le long des cours d'eau.</French>
+        <German>[TAB]Als Grasland bezeichnet man Gebiete, in denen niedrige Vegetation vorherrscht, die von Gräsern dominert wird.</German>
+        <Italian>[TAB]Grasslands are areas where the vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants (forbs). However, sedge (Cyperaceae) and rush (Juncaceae) families can also be found. Grasslands occur naturally on all continents except Antarctica. In temperate latitudes, such as northwest Europe and the Great Plains and California in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species form a greater component of the vegetation.</Italian>
+        <Spanish>[TAB]Grasslands are areas where the vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants (forbs). However, sedge (Cyperaceae) and rush (Juncaceae) families can also be found. Grasslands occur naturally on all continents except Antarctica. In temperate latitudes, such as northwest Europe and the Great Plains and California in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species form a greater component of the vegetation.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_HILL</Tag>
+        <English>Hill</English>
+        <French>
+            <Text>Colline</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Hügel</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Collina:Colline</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Colina:Colinas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_HILL_PEDIA</Tag>
+        <English>[TAB]A hill is a landform that extends above the surrounding terrain. Hills often have a distinct summit, although in areas with scarp/dip topography a hill may refer to a particular section of flat terrain without a massive summit (e.g. Box Hill).</English>
+        <French>[TAB]Une colline est un relief généralement modéré et relativement peu étendu qui s'élève au-dessus d'une plaine ou d'un plateau et se distingue dans le paysage. Les collines peuvent être isolées ou se regrouper en champs de collines.</French>
+        <German>[TAB]Ein Hügel ist eine Landform, die sich über das umgebende Terrain erhebt, jedoch noch keinen massiven Gipfel, wie ein Berg vorweist.</German>
+        <Italian>[TAB]A hill is a landform that extends above the surrounding terrain. Hills often have a distinct summit, although in areas with scarp/dip topography a hill may refer to a particular section of flat terrain without a massive summit (e.g. Box Hill).</Italian>
+        <Spanish>[TAB]A hill is a landform that extends above the surrounding terrain. Hills often have a distinct summit, although in areas with scarp/dip topography a hill may refer to a particular section of flat terrain without a massive summit (e.g. Box Hill).</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_MARSH</Tag>
+        <English>Marsh</English>
+        <French>
+            <Text>Marais:Marais</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Sumpf</German>
+        <Italian>
+            <Text>Acquitrino</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Pantano:Pantanos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
+        <English>[TAB]A marsh is a type of wetland that is dominated by herbaceous rather than woody plant species. Marshes can often be found at the edges of lakes and streams, where they form a transition between the aquatic and terrestrial ecosystems. They are often dominated by grasses, rushes or reeds. If woody plants are present they tend to be low-growing shrubs. This form of vegetation is what differentiates marshes from other types of wetland such as swamps, which are dominated by trees, and bogs, which are wetlands that have accumulated deposits of acidic peat.</English>
+        <French>[TAB]En géographie, un marais est un type de formation paysagère au relief peu accidenté où le sol est recouvert, en permanence ou par intermittence, d'une couche d'eau stagnante, en général peu profonde, et couverte de végétations. On parle de zone humide.</French>
+        <German>[TAB]Als Marsche bezeichnet man Feuchtgebiete, die eher von niedrigen Blattpflanzen als von Bäumen dominiert werden. Sie entstehen oft an angrenzenden Flüssen oder Seen.</German>
+        <Italian>[TAB]A marsh is a type of wetland that is dominated by herbaceous rather than woody plant species. Marshes can often be found at the edges of lakes and streams, where they form a transition between the aquatic and terrestrial ecosystems. They are often dominated by grasses, rushes or reeds. If woody plants are present they tend to be low-growing shrubs. This form of vegetation is what differentiates marshes from other types of wetland such as swamps, which are dominated by trees, and bogs, which are wetlands that have accumulated deposits of acidic peat.</Italian>
+        <Spanish>[TAB]A marsh is a type of wetland that is dominated by herbaceous rather than woody plant species. Marshes can often be found at the edges of lakes and streams, where they form a transition between the aquatic and terrestrial ecosystems. They are often dominated by grasses, rushes or reeds. If woody plants are present they tend to be low-growing shrubs. This form of vegetation is what differentiates marshes from other types of wetland such as swamps, which are dominated by trees, and bogs, which are wetlands that have accumulated deposits of acidic peat.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
+        <English>Ocean</English>
+        <French>
+            <Text>Océan</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Ozean</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Oceano:Oceani</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Océano:Océanos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_OCEAN_PEDIA</Tag>
+        <English>[TAB]An ocean is a major body of saline water, and a principal component of the hydrosphere. Approximately 71% of the Earth's surface (3.6 x 10 8 km 2) is covered by ocean, a continuous body of water that is customarily divided into several principal oceans and smaller seas.</English>
+        <French>[TAB]Un océan est souvent défini, en géographie, comme une vaste étendue d'eau salée. En fait, il s'agit plutôt d'un volume, dont l'eau est en permanence renouvelée par des courants marins. Approximativement 70,7 % de la surface de la Terre est recouverte par l'océan mondial, communément divisé en cinq océans et en plusieurs dizaines de mers.</French>
+        <German>[TAB]Als Ozean bezeichnet man einen grosse Wasserfläche mit Salzwasser. Ungefähr 71% ist mit Ozeanen bedeckt.</German>
+        <Italian>[TAB]An ocean is a major body of saline water, and a principal component of the hydrosphere. Approximately 71% of the Earth's surface (3.6 x 10 8 km 2) is covered by ocean, a continuous body of water that is customarily divided into several principal oceans and smaller seas.</Italian>
+        <Spanish>[TAB]An ocean is a major body of saline water, and a principal component of the hydrosphere. Approximately 71% of the Earth's surface (3.6 x 10 8 km 2) is covered by ocean, a continuous body of water that is customarily divided into several principal oceans and smaller seas.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PEAK</Tag>
+        <English>Peak</English>
+        <French>
+            <Text>Pic</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Berg</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Montagna:Montagne</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Pico:Picos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PEAK_PEDIA</Tag>
+        <English>[TAB]Peak may refer to:A mountain peak, In topography, a summit is a point on a surface that is higher in elevation than all points immediately adjacent to it. Mathematically, a summit is a local maximum in elevation. The topographic terms "acme", "apex", "peak", and "zenith" are synonyms.</English>
+        <French>[TAB]Une montagne est une forme topographique de relief positif, à la surface de planètes telluriques (comme la Terre, Mars ou un satellite comme la Lune), et faisant partie d'un ensemble - une « chaîne de montagne » - ou formant un relief isolé.</French>
+        <German>[TAB]Als Gipfel oder Berg bezeichnet man einen geographischen Punkt, der höher als alle umgebenden Geländepunkte ist.</German>
+        <Italian>[TAB]Peak may refer to:A mountain peak, In topography, a summit is a point on a surface that is higher in elevation than all points immediately adjacent to it. Mathematically, a summit is a local maximum in elevation. The topographic terms "acme", "apex", "peak", and "zenith" are synonyms.</Italian>
+        <Spanish>[TAB]Peak may refer to:A mountain peak, In topography, a summit is a point on a surface that is higher in elevation than all points immediately adjacent to it. Mathematically, a summit is a local maximum in elevation. The topographic terms "acme", "apex", "peak", and "zenith" are synonyms.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
+        <English>Prairie</English>
+        <French>
+            <Text>Plaines</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Prärie</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Pianura:Pianure</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Llanura:Llanuras</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
+        <English>[TAB]Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands typically referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies occupy vast areas of Manitoba, Saskatchewan, and Alberta.</English>
+        <French>[TAB]La Prairie (anglais : Tallgrass Prairie) occupe les Grandes Plaines entre les Appalaches et les Montagnes Rocheuses. Cette écorégion à prairie de zone tempérée est constituée d'une flore herbeuse de graminées, de composées et de légumineuses. Son nom lui vient des explorateurs français et n'a pas été anglicisé. Elle est l'équivalent de la steppe en Eurasie et de la pampa en Amérique du Sud. Aux États-Unis et au Canada, on fait parfois la distinction entre la végétation de taille basse des Hautes Plaines à l'ouest du 104e méridien terrestre et la végétation de taille moyenne et haute de l'est (depuis le sud du Manitoba jusqu'au centre du Texas). Lorsque cette distinction est faite, il est habituel de limiter le mot "prairie" aux zones de végétation moyenne à haute. La plus grande partie de ce territoire a été convertie en zone cultivée au cours des deux cents dernières années.</French>
+        <German>[TAB]Als Prairie bezeichnet man ein Gebiet, dass von Gräsern und Sträuchen dominiert ist, aber durch relativ hohe Temperaturen und vergleichsweise niedrige Niederschläge keinen starken Pflanzenbewuchs, wie beispielsweise die Savanne aufweist.</German>
+        <Italian>[TAB]Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands typically referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies occupy vast areas of Manitoba, Saskatchewan, and Alberta.</Italian>
+        <Spanish>[TAB]Prairies are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia. Lands typically referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east. In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies occupy vast areas of Manitoba, Saskatchewan, and Alberta.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SAVANNAH</Tag>
+        <English>Savannah</English>
+        <French>
+            <Text>Savane</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Savanne</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Prateria:Praterie</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Pradera:Praderas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SAVANNAH_PEDIA</Tag>
+        <English>[TAB]A savanna, or savannah, is a grassland ecosystem characterized by the trees being sufficiently widely spaced so that the canopy does not close. The open canopy allows sufficient light to reach the ground to support an unbroken herbaceous layer consisting primarily of grasses. Some classification systems also recognize a grassland savanna from which trees are absent. This article deals only with savanna under the common definition of a grassy woodland with a significant woody plant component. It is often believed that savannas feature widely spaced, scattered trees. However, in many savannas, tree densities are higher and trees are more regularly spaced than in forest. Savannas are also characterized by seasonal water availability, with the majority of rainfall confined to one season. Savannas are associated with several types of biomes. Savannas are frequently in a transitional zone between forest and desert or grassland. Savanna covers approximately 20% of the Earth's land area.</English>
+        <French>[TAB]La savane est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées. Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces ligneuses, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.</French>
+        <German>[TAB]Als Savanne bezeichnet man ein Grasgebiet, mit ausgeprägtem Bewuchs aber noch wenig Baumbestand und vergleichsweise hohen, wenn auch manchmal sehr saisonalen, Niederschlägen.</German>
+        <Italian>[TAB]A savanna, or savannah, is a grassland ecosystem characterized by the trees being sufficiently widely spaced so that the canopy does not close. The open canopy allows sufficient light to reach the ground to support an unbroken herbaceous layer consisting primarily of grasses. Some classification systems also recognize a grassland savanna from which trees are absent. This article deals only with savanna under the common definition of a grassy woodland with a significant woody plant component. It is often believed that savannas feature widely spaced, scattered trees. However, in many savannas, tree densities are higher and trees are more regularly spaced than in forest. Savannas are also characterized by seasonal water availability, with the majority of rainfall confined to one season. Savannas are associated with several types of biomes. Savannas are frequently in a transitional zone between forest and desert or grassland. Savanna covers approximately 20% of the Earth's land area.</Italian>
+        <Spanish>[TAB]A savanna, or savannah, is a grassland ecosystem characterized by the trees being sufficiently widely spaced so that the canopy does not close. The open canopy allows sufficient light to reach the ground to support an unbroken herbaceous layer consisting primarily of grasses. Some classification systems also recognize a grassland savanna from which trees are absent. This article deals only with savanna under the common definition of a grassy woodland with a significant woody plant component. It is often believed that savannas feature widely spaced, scattered trees. However, in many savannas, tree densities are higher and trees are more regularly spaced than in forest. Savannas are also characterized by seasonal water availability, with the majority of rainfall confined to one season. Savannas are associated with several types of biomes. Savannas are frequently in a transitional zone between forest and desert or grassland. Savanna covers approximately 20% of the Earth's land area.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SNOW</Tag>
+        <English>Permafrost</English>
+        <French>Permafrost</French>
+        <German>
+            <Text>Permafrost</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>Permafrost</Italian>
+        <Spanish>Permafrost</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SNOW_PEDIA</Tag>
+        <English>[TAB]Ice is water frozen into the solid state. Usually ice is the phase known as ice Ih, which is the most abundant of the varying solid phases on the Earth's surface. It can appear transparent or opaque bluish-white color, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter the appearance.</English>
+        <French>[TAB]Le permafrost, ou pergélisol, désigne la partie d'un sol gelé en permanence, au moins pendant deux ans, et de ce fait imperméable. Ses formations, persistance ou disparition, et son épaisseur sont très étroitement liées aux changements climatiques. C'est pourquoi le permafrost est étudié en tant qu'indicateur du réchauffement climatique par un réseau mondial de chercheurs s'appuyant sur des sondages, des mesures de température et un suivi satellitaire.</French>
+        <German>[TAB]Als Eis bezeichnet man gefrorenes und somit festes Wasser. Ein beachtlicher Teil der Wasservorräte der Erde liegt in Eisform vor.</German>
+        <Italian>[TAB]Ice is water frozen into the solid state. Usually ice is the phase known as ice Ih, which is the most abundant of the varying solid phases on the Earth's surface. It can appear transparent or opaque bluish-white color, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter the appearance.</Italian>
+        <Spanish>[TAB]Ice is water frozen into the solid state. Usually ice is the phase known as ice Ih, which is the most abundant of the varying solid phases on the Earth's surface. It can appear transparent or opaque bluish-white color, depending on the presence of impurities or air inclusions. The addition of other materials such as soil may further alter the appearance.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_TUNDRA</Tag>
+        <English>Tundra</English>
+        <French>
+            <Text>Toundra</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Tundra</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Tundra:Tundre</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Tundra:Tundras</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
+        <English>[TAB]In physical geography, tundra is a biome where the tree growth is hindered by low temperatures and short growing seasons. The term tundra comes through Russian from the Kildin Sami word tundâr "uplands," "treeless mountain tract." There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. In tundra, the vegetation is composed of dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecotone (or ecological boundary region) between the tundra and the forest is known as the tree line or timberline.</English>
+        <French>[TAB]La toundra, terme emprunté au russe, lui-même emprunté au same désigne la formation végétale circumpolaire. Elle forme un cercle autour du pôle de plus de huit millions de km², soit 6 % des terres émergées. Du fait de la répartition des terres émergées sur la planète, la toundra n'existe pratiquement que dans l'hémisphère nord.</French>
+        <German>[TAB]Der Begriff 'Tundra' beschreibt eine Region in der ausgeprägtes Wachstum von Bäumen und Pflanzen durch niedrige Temperaturen und kurze Jahreszeiten mit klimatisch günstigen Bedingungen verhindert wird. Das Wort leitet sich aus dem Russischen ab, wo es soviel wie 'Nordland' bedeutet.</German>
+        <Italian>[TAB]In physical geography, tundra is a biome where the tree growth is hindered by low temperatures and short growing seasons. The term tundra comes through Russian from the Kildin Sami word tundâr "uplands," "treeless mountain tract." There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. In tundra, the vegetation is composed of dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecotone (or ecological boundary region) between the tundra and the forest is known as the tree line or timberline.</Italian>
+        <Spanish>[TAB]In physical geography, tundra is a biome where the tree growth is hindered by low temperatures and short growing seasons. The term tundra comes through Russian from the Kildin Sami word tundâr "uplands," "treeless mountain tract." There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. In tundra, the vegetation is composed of dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecotone (or ecological boundary region) between the tundra and the forest is known as the tree line or timberline.</Spanish>
+    </TEXT>
+</Civ4GameText>

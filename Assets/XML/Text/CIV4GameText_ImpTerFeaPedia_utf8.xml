@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sid Meier's Civilization 4 -->
+<!-- -->
+<!-- Game Text - ImprovementPedia -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][NEWLINE][NEWLINE][BOLD]Background[\BOLD][PARAGRAPH:1]Hut may refer to: Hut (dwelling), a small and crude shelter.</English>
+        <French>[TAB]Une hutte fait référence à un petit abri d'habitation précaire.</French>
+        <German>[TAB]Eine 'Hütte' kann ein kleiner behälfsmässiger Unterschlupf oder dessen Ruine sein.</German>
+        <Italian>[TAB]Hut may refer to: Hut (dwelling), a small and crude shelter.</Italian>
+        <Spanish>[TAB]Hut may refer to: Hut (dwelling), a small and crude shelter.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FISHING_BOATS_PEDIA</Tag>
+        <English>[TAB]A fishing vessel is a boat or ship used to catch fish in the sea, or on a lake or river. Many different kinds of vessels are used in commercial, artisanal and recreational fishing.</English>
+        <French>[TAB]Un bateau de pêche est un navire pratiquant la pêche. En général, le nom d'un type de bateaux est relation avec la pêche qu'il pratique, type de poissons ou technique utilisée.</French>
+        <German>[TAB]Ein Fischerboot ist ein kleines Seegefährt, dass entlang der Küste, in Flüssen oder in Seen zum Fischfang genutzt werden kann.</German>
+        <Italian>[TAB]A fishing vessel is a boat or ship used to catch fish in the sea, or on a lake or river. Many different kinds of vessels are used in commercial, artisanal and recreational fishing.</Italian>
+        <Spanish>[TAB]A fishing vessel is a boat or ship used to catch fish in the sea, or on a lake or river. Many different kinds of vessels are used in commercial, artisanal and recreational fishing.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_WINERY_PEDIA</Tag>
+        <English>A winery is a building or property that produces wine, or a business involved in the production of wine, such as a wine company. Some wine companies own many wineries. Besides wine making equipment, larger wineries may also feature warehouses, bottling lines, laboratories, and large expanses of tanks known as tank farms. The oldest winery in the world found to date is a 6,000 year old winery in the Areni region of Armenia, which is still a wine making region today.</English>
+        <French>[TAB]Les vignes sont des lianes de la famille des Vitaceae. Ce sont des plantes du genre Vitis largement cultivées pour leur fruit en grappes, le raisin, dont on tire un jus, le moût, qui devient du vin après fermentation. Ce sont des arbrisseaux grimpants qui s'attachent aux supports par des vrilles. Les tiges ligneuses, appelées sarments, taillées en culture, peuvent atteindre dans la nature de très grandes longueurs en grimpant dans les arbres. Les feuilles à nervure palmée comportent cinq lobes principaux plus ou moins découpés, et sont en forme de cour à la base. Elles connaissent une importante polymorphie selon les cépages et espèces.</French>
+        <German>[TAB]Ein Weinberg oder ein Weinanbaugebiet ist ein Areal das dem Weinanbau gewidmet ist. Meist wurden dazu sonnige Hanglagen genutzt. Die ältesten Weinanbaugebiete, die man je fand lagen in Armenien und sind fast 6000 Jahre alt.</German>
+        <Italian>[TAB]A winery is a building or property that produces wine, or a business involved in the production of wine, such as a wine company. Some wine companies own many wineries. Besides wine making equipment, larger wineries may also feature warehouses, bottling lines, laboratories, and large expanses of tanks known as tank farms. The oldest winery in the world found to date is a 6,000 year old winery in the Areni region of Armenia, which is still a wine making region today.</Italian>
+        <Spanish>[TAB]A winery is a building or property that produces wine, or a business involved in the production of wine, such as a wine company. Some wine companies own many wineries. Besides wine making equipment, larger wineries may also feature warehouses, bottling lines, laboratories, and large expanses of tanks known as tank farms. The oldest winery in the world found to date is a 6,000 year old winery in the Areni region of Armenia, which is still a wine making region today.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
+        <English>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</English>
+        <French>[TAB]Une plaine est une forme particulière de relief, c'est un espace géographique caractérisé par une surface topographique plane, avec des pentes relativement faibles.</French>
+        <German>[TAB]Der Begriff 'Ebene' bezieht sich auf ein grösseres, flaches Gebiet Land.</German>
+        <Italian>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</Italian>
+        <Spanish>[TAB]Plains is the plural of plain, a geographical feature. It is a big flat area of a land.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_SWAMP_PEDIA</Tag>
+        <English>[TAB]A swamp is a wetland that is forested. Many swamps occur along large rivers, where they are critically dependent upon natural water level fluctuations. Other swamps occur on the shores of large lakes. Some swamps have hammocks, or dry-land protrusions, covered by aquatic vegetation, or vegetation that tolerates periodical inundation. The two main types of swamp are "true" or swamp forests and "transitional" or shrub swamps. In the boreal regions of Canada, the word swamp is colloquially used for what is more correctly termed a bog or muskeg. The water of a swamp may be fresh water, brackish water or seawater. Some of the world's largest swamps are found along major rivers such as the Amazon, the Mississippi, and the Congo. Conservationists have worked hard to preserve swamps. For example, the swamps in Northwest Indiana have been preserved as part of the Indiana Dunes.</English>
+        <French>[TAB]Un marécage désigne une zone recouverte de marais.</French>
+        <German>[TAB]Unter einem Sumpf versteht man ein Feuchtgebiet mit Baumbewuschs. Sie entstehen oft an angrenzenden Flüssen oder Seen.</German>
+        <Italian>[TAB]A swamp is a wetland that is forested. Many swamps occur along large rivers, where they are critically dependent upon natural water level fluctuations. Other swamps occur on the shores of large lakes. Some swamps have hammocks, or dry-land protrusions, covered by aquatic vegetation, or vegetation that tolerates periodical inundation. The two main types of swamp are "true" or swamp forests and "transitional" or shrub swamps. In the boreal regions of Canada, the word swamp is colloquially used for what is more correctly termed a bog or muskeg. The water of a swamp may be fresh water, brackish water or seawater. Some of the world's largest swamps are found along major rivers such as the Amazon, the Mississippi, and the Congo. Conservationists have worked hard to preserve swamps. For example, the swamps in Northwest Indiana have been preserved as part of the Indiana Dunes.</Italian>
+        <Spanish>[TAB]A swamp is a wetland that is forested. Many swamps occur along large rivers, where they are critically dependent upon natural water level fluctuations. Other swamps occur on the shores of large lakes. Some swamps have hammocks, or dry-land protrusions, covered by aquatic vegetation, or vegetation that tolerates periodical inundation. The two main types of swamp are "true" or swamp forests and "transitional" or shrub swamps. In the boreal regions of Canada, the word swamp is colloquially used for what is more correctly termed a bog or muskeg. The water of a swamp may be fresh water, brackish water or seawater. Some of the world's largest swamps are found along major rivers such as the Amazon, the Mississippi, and the Congo. Conservationists have worked hard to preserve swamps. For example, the swamps in Northwest Indiana have been preserved as part of the Indiana Dunes.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_OASIS_PEDIA</Tag>
+        <English>[TAB]In geography, an oasis (plural: oases) or cienega (Southwestern United States) is an isolated area of vegetation in a desert, typically surrounding a spring or similar water source. Oases also provide habitat for animals and even humans if the area is big enough. The location of oases has been of critical importance for trade and transportation routes in desert areas. Caravans must travel via oases so that supplies of water and food can be replenished. Thus, political or military control of an oasis has in many cases meant control of trade on a particular route. For example, the oases of Awjila, Ghadames and Kufra, situated in modern-day Libya, have at various times been vital to both North-South and East-West trade in the Sahara. The word oasis came into English via Greek oasis, borrowed directly from Egyptian or Demotic. It was not borrowed from Coptic, as is sometimes suggested; the Greek word is attested several centuries before Coptic existed as a written language.</English>
+        <French>[TAB]Une oasis (du grec ancien óasis) désigne, en géographie, une zone de végétation isolée dans un désert. Cela se produit à proximité d'une source d'eau ou lorsqu'une nappe phréatique est suffisamment proche de la surface du sol ou parfois sur le lit de rivières venant se perdre dans le désert.</French>
+        <German>[TAB]Unter einer Oase versteht man eine isolierte Gegend mit Wasser und Vegetation, die von sehr trockenem Gebiet oder gar Wüste umschlossen ist. Sie stellen in diesen Gebieten Inseln des Lebens dar.</German>
+        <Italian>[TAB]In geography, an oasis (plural: oases) or cienega (Southwestern United States) is an isolated area of vegetation in a desert, typically surrounding a spring or similar water source. Oases also provide habitat for animals and even humans if the area is big enough. The location of oases has been of critical importance for trade and transportation routes in desert areas. Caravans must travel via oases so that supplies of water and food can be replenished. Thus, political or military control of an oasis has in many cases meant control of trade on a particular route. For example, the oases of Awjila, Ghadames and Kufra, situated in modern-day Libya, have at various times been vital to both North-South and East-West trade in the Sahara. The word oasis came into English via Greek oasis, borrowed directly from Egyptian or Demotic. It was not borrowed from Coptic, as is sometimes suggested; the Greek word is attested several centuries before Coptic existed as a written language.</Italian>
+        <Spanish>[TAB]In geography, an oasis (plural: oases) or cienega (Southwestern United States) is an isolated area of vegetation in a desert, typically surrounding a spring or similar water source. Oases also provide habitat for animals and even humans if the area is big enough. The location of oases has been of critical importance for trade and transportation routes in desert areas. Caravans must travel via oases so that supplies of water and food can be replenished. Thus, political or military control of an oasis has in many cases meant control of trade on a particular route. For example, the oases of Awjila, Ghadames and Kufra, situated in modern-day Libya, have at various times been vital to both North-South and East-West trade in the Sahara. The word oasis came into English via Greek oasis, borrowed directly from Egyptian or Demotic. It was not borrowed from Coptic, as is sometimes suggested; the Greek word is attested several centuries before Coptic existed as a written language.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_FLOOD_PLAINS_PEDIA</Tag>
+        <English>[TAB]A floodplain, or flood plain, is a flat or nearly flat land adjacent to a stream or river that stretches from the banks of its channel to the base of the enclosing valley walls and experiences flooding during periods of high discharge. It includes the floodway, which consists of the stream channel and adjacent areas that carry flood flows, and the flood fringe, which are areas covered by the flood, but which do not experience a strong current.</English>
+        <French>[TAB]Une plaine inondable désigne le chenal où l'eau s'écoule avant débordement. Il peut être occupé en permanence ou de manière saisonnière. Le lit majeur, appelé aussi « plaine d'inondation » ou « lit d'inondation », est la partie adjacente au chenal d'écoulement d'un cours d'eau, qui n'est inondée qu'en cas de crue. La limite du lit majeur correspond au niveau de la plus grande crue historique enregistrée.</French>
+        <German>[TAB]A floodplain, or flood plain, is a flat or nearly flat land adjacent to a stream or river that stretches from the banks of its channel to the base of the enclosing valley walls and experiences flooding during periods of high discharge. It includes the floodway, which consists of the stream channel and adjacent areas that carry flood flows, and the flood fringe, which are areas covered by the flood, but which do not experience a strong current.</German>
+        <Italian>[TAB]A floodplain, or flood plain, is a flat or nearly flat land adjacent to a stream or river that stretches from the banks of its channel to the base of the enclosing valley walls and experiences flooding during periods of high discharge. It includes the floodway, which consists of the stream channel and adjacent areas that carry flood flows, and the flood fringe, which are areas covered by the flood, but which do not experience a strong current.</Italian>
+        <Spanish>[TAB]A floodplain, or flood plain, is a flat or nearly flat land adjacent to a stream or river that stretches from the banks of its channel to the base of the enclosing valley walls and experiences flooding during periods of high discharge. It includes the floodway, which consists of the stream channel and adjacent areas that carry flood flows, and the flood fringe, which are areas covered by the flood, but which do not experience a strong current.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_QUOTE</Tag>
+        <English>Quote</English>
+        <French>Citation</French>
+        <German>Zitat</German>
+        <Italian>Citazione</Italian>
+        <Spanish>Cita</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_STRATEGY</Tag>
+        <English>Strategy</English>
+        <French>Stratégie</French>
+        <German>Strategie</German>
+        <Italian>Strategia</Italian>
+        <Spanish>Estrategia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_MIGRATES</Tag>
+        <English>[ICON_BULLET]Migrates from Europe</English>
+        <French>[ICON_BULLET]Migre depuis l'Europe</French>
+        <German>[ICON_BULLET]Migriert aus Europa</German>
+        <Italian>[ICON_BULLET]Migrates from Europe</Italian>
+        <Spanish>[ICON_BULLET]Migrates from Europe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BUYABLE_IN_EUROPE</Tag>
+        <English>[ICON_BULLET]Buyable in Europe</English>
+        <French>[ICON_BULLET]Achetable en Europe</French>
+        <German>[ICON_BULLET]Kaufbar in Europa</German>
+        <Italian>[ICON_BULLET]Buyable in Europe</Italian>
+        <Spanish>[ICON_BULLET]Buyable in Europe</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_TAUGHT_BY_NATIVES</Tag>
+        <English>[ICON_BULLET]Trained by Natives</English>
+        <French>[ICON_BULLET]Formé par les indigènes</French>
+        <German>[ICON_BULLET]Ausbildbar durch Ureinwohner</German>
+        <Italian>[ICON_BULLET]Trained by Natives</Italian>
+        <Spanish>[ICON_BULLET]Trained by Natives</Spanish>
+    </TEXT>
+</Civ4GameText>

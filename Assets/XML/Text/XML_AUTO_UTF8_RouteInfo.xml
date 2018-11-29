@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_ROUTE_PLASTERED_ROAD</Tag>
+        <English>Country Road</English>
+        <French>Route de gravier</French>
+        <German>Landstraße</German>
+        <Italian>Country Road</Italian>
+        <Spanish>Country Road</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ROUTE_RAILROAD</Tag>
+        <English>Plastered Country Road</English>
+        <French>Route pavée</French>
+        <German>gepflasterte Landstraße</German>
+        <Italian>Plastered Country Road</Italian>
+        <Spanish>Plastered Country Road</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ROUTE_ROAD</Tag>
+        <English>Road</English>
+        <French>
+            <Text>Route</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Straße</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Strada:Strade</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Carretera:Carreteras</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

@@ -1159,8 +1159,8 @@
         </FeatureInfo>
         <FeatureInfo>
             <Type>FEATURE_VENT_DEF</Type>
-            <Description>TXT_KEY_FEATURE_VD</Description>
-            <Civilopedia>TXT_KEY_FEATURE_VD_PEDIA</Civilopedia>
+            <Description>TXT_KEY_FEATURE_VENT_DEF</Description>
+            <Civilopedia>TXT_KEY_FEATURE_VENT_DEF_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_FEATURE_VD</ArtDefineTag>
             <YieldChanges/>
             <RiverYieldIncreases/>
@@ -1257,8 +1257,8 @@
         </FeatureInfo>
         <FeatureInfo>
             <Type>FEATURE_VENT_FAV</Type>
-            <Description>TXT_KEY_FEATURE_VF</Description>
-            <Civilopedia>TXT_KEY_FEATURE_VF_PEDIA</Civilopedia>
+            <Description>TXT_KEY_FEATURE_VENT_FAV</Description>
+            <Civilopedia>TXT_KEY_FEATURE_VENT_FAV_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_FEATURE_VF</ArtDefineTag>
             <YieldChanges/>
             <RiverYieldIncreases/>

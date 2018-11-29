@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_COCOA_PLANTATION</Tag>
+        <English>Build a [LINK=IMPROVEMENT_COCOA_PLANTATION]Cocoa Plantation[\LINK]</English>
+        <French>Construire une [LINK=IMPROVEMENT_COCOA_PLANTATION]plantation de cacao[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_COCOA_PLANTATION]Kakaoplantage[\LINK] bauen</German>
+        <Italian>Costruire una [LINK=IMPROVEMENT_COCOA_PLANTATION]Cocoa Plantation[\LINK]</Italian>
+        <Spanish>Construir una [LINK=IMPROVEMENT_COCOA_PLANTATION]Cocoa Plantation[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_COCOA_PLANTATION_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_COLLECTORS_POST</Tag>
+        <English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]Collectors Post[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]Poste de Collection[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_COLLECTORS_POST]Sammelstelle[\LINK] bauen</German>
+        <Italian>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]Collectors Post[\LINK]</Italian>
+        <Spanish>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]Collectors Post[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_COLLECTORS_POST2</Tag>
+        <English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]Coca Post[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]Poste de coca[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_COLLECTORS_POST]Coca Lager[\LINK] bauen</German>
+        <Italian>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]Coca Post[\LINK]</Italian>
+        <Spanish>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]Coca Post[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_COLLECTORS_POST2_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_COLLECTORS_POST_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_DRAIN_MARSH</Tag>
+        <English>Drain Marsh</English>
+        <French>Drainer les marais</French>
+        <German>Sumpf trockenlegen</German>
+        <Italian>Drain Marsh</Italian>
+        <Spanish>Drain Marsh</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_DRAIN_MARSH_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_FARM</Tag>
+        <English>Build a [LINK=IMPROVEMENT_FARM]Farm[\LINK]</English>
+        <French>construire une [LINK=IMPROVEMENT_FARM]ferme[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_FARM]Bauernhof[\LINK] bauen</German>
+        <Italian>Costruire una [LINK=IMPROVEMENT_FARM]fattoria[\LINK]</Italian>
+        <Spanish>Construir una [LINK=IMPROVEMENT_FARM]granja[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_FARM_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_FORT</Tag>
+        <English>Build a [LINK=IMPROVEMENT_FORT]Fort[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_FORT]fort[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_FORT]Fort[\LINK] bauen</German>
+        <Italian>Build a [LINK=IMPROVEMENT_FORT]Fort[\LINK]</Italian>
+        <Spanish>Build a [LINK=IMPROVEMENT_FORT]Fort[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_FORT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_LODGE</Tag>
+        <English>Build a [LINK=IMPROVEMENT_LODGE]Lodge[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_LODGE]Abri[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_LODGE]Holzfällerhütte[\LINK] bauen</German>
+        <Italian>Costruisci un [LINK=IMPROVEMENT_LODGE]capanno[\LINK]</Italian>
+        <Spanish>Construir un [LINK=IMPROVEMENT_LODGE]Pabellón[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_LODGE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_LUMBERMILL</Tag>
+        <English>Build a [LINK=IMPROVEMENT_LUMBERMILL]Lumbermill[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_LUMBERMILL]La Scierie[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_LUMBERMILL]Sägemühle[\LINK] bauen</German>
+        <Italian>Costruisci un [LINK=IMPROVEMENT_LUMBERMILL]Segheria[\LINK]</Italian>
+        <Spanish>Construir un [LINK=IMPROVEMENT_LUMBERMILL]Molino de Aserrar[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_LUMBERMILL_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_MINE</Tag>
+        <English>Build a [LINK=IMPROVEMENT_MINE]Mine[\LINK]</English>
+        <French>construire une [LINK=IMPROVEMENT_MINE]mine[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_MINE]Mine[\LINK] bauen</German>
+        <Italian>Costruire una [LINK=IMPROVEMENT_MINE]miniera[\LINK]</Italian>
+        <Spanish>Construir una [LINK=IMPROVEMENT_MINE]mina[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_MINE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_MONASTERY</Tag>
+        <English>Build a [LINK=IMPROVEMENT_MONASTERY]Monastery[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_MONASTERY]monastère[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_MONASTERY]Kloster[\LINK] bauen</German>
+        <Italian>Build a [LINK=IMPROVEMENT_MONASTERY]Monastery[\LINK]</Italian>
+        <Spanish>Build a [LINK=IMPROVEMENT_MONASTERY]Monastery[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_MONASTERY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PASTURE</Tag>
+        <English>Build a [LINK=IMPROVEMENT_PASTURE]Pasture[\LINK]</English>
+        <French>Construire un [LINK=IMPROVEMENT_PASTURE]pâturage[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_PASTURE]Ranch[\LINK] bauen</German>
+        <Italian>Build a [LINK=IMPROVEMENT_PASTURE]Pasture[\LINK]</Italian>
+        <Spanish>Build a [LINK=IMPROVEMENT_PASTURE]Pasture[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PASTURE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PLANTATION</Tag>
+        <English>Build a [LINK=IMPROVEMENT_PLANTATION]Plantation[\LINK]</English>
+        <French>construire une [LINK=IMPROVEMENT_PLANTATION]plantation[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_PLANTATION]Plantage[\LINK] bauen</German>
+        <Italian>Costruire una [LINK=IMPROVEMENT_PLANTATION]piantagione[\LINK]</Italian>
+        <Spanish>Construir una [LINK=IMPROVEMENT_PLANTATION]plantacion[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PLANTATION_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PLASTERED_ROAD</Tag>
+        <English>Build a Country Road</English>
+        <French>Construire une route de gravier</French>
+        <German>Landstraße bauen</German>
+        <Italian>Build a Country Road</Italian>
+        <Spanish>Build a Country Road</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_PLASTERED_ROAD_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_QUARRY</Tag>
+        <English>Build a [LINK=IMPROVEMENT_QUARRY]Quarry[\LINK]</English>
+        <French>Construire une [LINK=IMPROVEMENT_QUARRY]Carrière[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_QUARRY]Steinbruch[\LINK] bauen</German>
+        <Italian>Costruire una [LINK=IMPROVEMENT_QUARRY]pietraia[\LINK]</Italian>
+        <Spanish>Construir una [LINK=IMPROVEMENT_QUARRY]cantera[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_QUARRY_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_RAILROAD</Tag>
+        <English>Build Plastered Country Roads</English>
+        <French>Construire une route pavée</French>
+        <German>gepflasterte Landstraße bauen</German>
+        <Italian>Build Plastered Country Roads</Italian>
+        <Spanish>Build Plastered Country Roads</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_RAILROAD_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_GRASS</Tag>
+        <English>Plant Forest</English>
+        <French>Planter une forêt</French>
+        <German>Wald aufforsten</German>
+        <Italian>Plant Forest</Italian>
+        <Spanish>Plant Forest</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_GRASS_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_MARSH</Tag>
+        <English>Plant Jungle</English>
+        <French>Planter une jungle</French>
+        <German>Dschungel aufforsten</German>
+        <Italian>Plant Jungle</Italian>
+        <Spanish>Plant Jungle</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_MARSH_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS</Tag>
+        <English>TXT_KEY_PLANT_FOREST</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH</Tag>
+        <English>TXT_KEY_PLANT_JUNGLE</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA</Tag>
+        <English>Plant Taiga</English>
+        <French>Planter une taïga</French>
+        <German>Taiga aufforsten</German>
+        <Italian>Plant Taiga</Italian>
+        <Spanish>Plant Taiga</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_FOREST</Tag>
+        <English>Chop Down a [LINK=FEATURE_FOREST]Forest[\LINK]</English>
+        <French>défricher la [LINK=FEATURE_FOREST]forêt[\LINK]</French>
+        <German>[LINK=FEATURE_FOREST]Wald[\LINK] abholzen</German>
+        <Italian>Disboscare una [LINK=FEATURE_FOREST]foresta[\LINK]</Italian>
+        <Spanish>Talar un [LINK=FEATURE_FOREST]bosque[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_FOREST_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE</Tag>
+        <English>Remove [LINK=FEATURE_JUNGLE]Jungle[\LINK]</English>
+        <French>défricher la [LINK=FEATURE_JUNGLE]jungle[\LINK]</French>
+        <German>[LINK=FEATURE_JUNGLE]Dschungel[\LINK] entfernen</German>
+        <Italian>Rimuovere la [LINK=FEATURE_JUNGLE]giungla[\LINK]</Italian>
+        <Spanish>Quitar [LINK=FEATURE_JUNGLE]selva[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_JUNGLE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST</Tag>
+        <English>TXT_KEY_BUILD_REMOVE_FOREST</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_ROAD</Tag>
+        <English>Build a Road</English>
+        <French>construire une route</French>
+        <German>Straße bauen</German>
+        <Italian>Costruire una strada</Italian>
+        <Spanish>Construir una carretera</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_ROAD_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_TRAPPER_HUT</Tag>
+        <English>Build a [LINK=IMPROVEMENT_TRAPPER_HUT]Trapperhut[\LINK]</English>
+        <French>Construire une [LINK=IMPROVEMENT_TRAPPER_HUT]Hutte du trappeur[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütte[\LINK] bauen</German>
+        <Italian>Costruire una [LINK=IMPROVEMENT_TRAPPER_HUT]Trapperhut[\LINK]</Italian>
+        <Spanish>Construir una [LINK=IMPROVEMENT_TRAPPER_HUT]Trapperhut[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_TRAPPER_HUT_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_VINEYARD</Tag>
+        <English>Build a [LINK=IMPROVEMENT_VINEYARD]Vineyard[\LINK]</English>
+        <French>Construire une [LINK=IMPROVEMENT_VINEYARD]Vigne[\LINK]</French>
+        <German>[LINK=IMPROVEMENT_VINEYARD]Weinberg[\LINK] anbauen</German>
+        <Italian>Build a [LINK=IMPROVEMENT_VINEYARD]Vineyard[[\LINK]</Italian>
+        <Spanish>Build a [LINK=IMPROVEMENT_VINEYARD]Vineyard[[\LINK]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_VINEYARD_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+</Civ4GameText>

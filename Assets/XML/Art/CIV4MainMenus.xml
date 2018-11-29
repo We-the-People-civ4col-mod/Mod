@@ -8,7 +8,7 @@
     <MainMenus>
         <MainMenu>
             <Type>MAIN_MENU_COLONIZATION</Type>
-            <Description>Colonization</Description>
+            <Description>TXT_KEY_MAIN_MENU_COLONIZATION</Description>
             <Scene>MAINMENU_SCENE</Scene>
             <Soundtrack>AS2D_OPENING_MENU</Soundtrack>
             <LoadingScreens>

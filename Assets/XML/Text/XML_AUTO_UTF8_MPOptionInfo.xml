@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_ANONYMOUS</Tag>
+        <English>Anonymous</English>
+        <French>Anonymes</French>
+        <German>Anonym</German>
+        <Italian>Anonimo</Italian>
+        <Spanish>Anónimos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_ANONYMOUS_HELP</Tag>
+        <English>The true identity of all leaders is hidden</English>
+        <French>La véritable identité des différents chefs reste cachée.</French>
+        <German>Die wahre Identität aller Herrscher bleibt verborgen.</German>
+        <Italian>La vera identità dei leader è nascosta</Italian>
+        <Spanish>Se oculta la identidad de todos los líderes.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_SHUFFLE_TEAMS</Tag>
+        <English>Shuffle Teams</English>
+        <French>Mélanger les équipes</French>
+        <German>Zufällige Teams</German>
+        <Italian>Mescola le squadre</Italian>
+        <Spanish>Sortear equipos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_SHUFFLE_TEAMS_HELP</Tag>
+        <English>The human members of each team will be randomly reassigned upon game launch</English>
+        <French>Les joueurs humains de chaque équipe seront aléatoirement réassignés lors du lancement de la partie.</French>
+        <German>Bei jedem Spielstart erfolgt eine zufällige Teamzuweisung der menschlichen Spieler.</German>
+        <Italian>I membri umani delle squadre verranno riassegnati casualmente all'avvio della partita</Italian>
+        <Spanish>Al iniciar la partida se asignarán al azar los integrantes humanos de los equipos.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_SIMULTANEOUS_TURNS</Tag>
+        <English>Simultaneous Turns</English>
+        <French>Tours simultanés</French>
+        <German>Simultanrunden</German>
+        <Italian>Turni simultanei</Italian>
+        <Spanish>Turnos simultáneos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_SIMULTANEOUS_TURNS_HELP</Tag>
+        <English>All players conduct their turns at the same time</English>
+        <French>Tous les joueurs jouent leurs tours en même temps.</French>
+        <German>Alle Spieler führen ihre Runden gleichzeitig aus</German>
+        <Italian>Tutti i giocatori effettuano il proprio turno contemporaneamente</Italian>
+        <Spanish>Todos los jugadores llevan a cabo sus turnos a la vez.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_TAKEOVER_AI</Tag>
+        <English>Take over AI</English>
+        <French>Prendre contrôle IA</French>
+        <German>KI übernehmen</German>
+        <Italian>Prendi il controllo della IA</Italian>
+        <Spanish>IA de relevo</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_TAKEOVER_AI_HELP</Tag>
+        <English>Players can "hot-join" into an AI player's slot at any time</English>
+        <French>Les joueurs peuvent rejoindre une partie à la volée et prendre la place d'un joueur géré par l'IA.</French>
+        <German>Spieler können sich jederzeit im Schnellverfahren einem KI-Spieler anschließen</German>
+        <Italian>I giocatori possono "prendere il posto" di quelli gestiti dall'IA in qualsiasi momento</Italian>
+        <Spanish>Los jugadores pueden "tomar las riendas" de un jugador de la IA en cualquier momento.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_TURN_TIMER</Tag>
+        <English>Turn Timer</English>
+        <French>Chrono tour</French>
+        <German>Rundenzähler</German>
+        <Italian>Timer del turno</Italian>
+        <Spanish>Contador del turno</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MP_OPTION_TURN_TIMER_HELP</Tag>
+        <English>Turns are limited by a timer which scales based on the size of the largest colony</English>
+        <French>Le temps de chaque tour est limité et cette limite dépend de la taille du plus grand territoire.</French>
+        <German>Die Rundenzeit wird durch einen Timer bestimmt, der sich an der Ausdehnung der größten Kolonie orientiert</German>
+        <Italian>I turni sono limitati da un conto alla rovescia basato sulla dimensione della colonia più grossa</Italian>
+        <Spanish>Los turnos quedan limitados por un contador cuya escala se basa en el tamaño de la mayor colonia.</Spanish>
+    </TEXT>
+</Civ4GameText>

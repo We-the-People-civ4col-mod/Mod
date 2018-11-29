@@ -9,8 +9,8 @@
     <ControlInfos>
         <ControlInfo>
             <Type>CONTROL_CENTERONSELECTION</Type>
-            <Description>TXT_KEY_ACTION_CENTER_SELECTION</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_CENTERONSELECTION</Description>
+            <Help>TXT_KEY_CONTROL_CENTERONSELECTION_HELP</Help>
             <HotKey>KB_C</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -24,8 +24,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SELECTYUNITTYPE</Type>
-            <Description>TXT_KEY_ACTION_SELECT_UNIT_TYPE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_SELECTYUNITTYPE</Description>
+            <Help>TXT_KEY_CONTROL_SELECTYUNITTYPE_HELP</Help>
             <HotKey>KB_C</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -39,8 +39,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SELECTYUNITALL</Type>
-            <Description>TXT_KEY_ACTION_SELECT_UNIT_ALL</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_SELECTYUNITALL</Description>
+            <Help>TXT_KEY_CONTROL_SELECTYUNITALL_HELP</Help>
             <HotKey>KB_C</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -54,8 +54,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SELECTCITY</Type>
-            <Description>TXT_KEY_ACTION_SELECT_CITY</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_SELECTCITY</Description>
+            <Help>TXT_KEY_CONTROL_SELECTCITY_HELP</Help>
             <HotKey>KB_INSERT</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -69,8 +69,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SELECTCAPITAL</Type>
-            <Description>TXT_KEY_ACTION_SELECT_CAPITAL</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_SELECTCAPITAL</Description>
+            <Help>TXT_KEY_CONTROL_SELECTCAPITAL_HELP</Help>
             <HotKey>KB_F10</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -84,8 +84,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_NEXTCITY</Type>
-            <Description>TXT_KEY_ACTION_NEXT_CITY</Description>
-            <Help>TXT_KEY_ACTION_NEXT_CITY_HELP</Help>
+            <Description>TXT_KEY_CONTROL_NEXTCITY</Description>
+            <Help>TXT_KEY_CONTROL_NEXTCITY_HELP</Help>
             <HotKey>KB_HOME</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -99,8 +99,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_PREVCITY</Type>
-            <Description>TXT_KEY_ACTION_PREVIOUS_CITY</Description>
-            <Help>TXT_KEY_ACTION_PREVIOUS_CITY_HELP</Help>
+            <Description>TXT_KEY_CONTROL_PREVCITY</Description>
+            <Help>TXT_KEY_CONTROL_PREVCITY_HELP</Help>
             <HotKey>KB_END</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -114,8 +114,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_NEXTUNIT</Type>
-            <Description>TXT_KEY_ACTION_PREVIOUS_PLOT_UNIT_HELP</Description>
-            <Help>TXT_KEY_ACTION_NEXT_UNIT_HELP</Help>
+            <Description>TXT_KEY_CONTROL_NEXTUNIT</Description>
+            <Help>TXT_KEY_CONTROL_NEXTUNIT_HELP</Help>
             <HotKey>KB_PERIOD</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -129,8 +129,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_PREVUNIT</Type>
-            <Description>TXT_KEY_ACTION_PREVIOUS_PLOT_UNIT_HELP</Description>
-            <Help>TXT_KEY_ACTION_PREVIOUS_UNIT_HELP</Help>
+            <Description>TXT_KEY_CONTROL_PREVUNIT</Description>
+            <Help>TXT_KEY_CONTROL_PREVUNIT_HELP</Help>
             <HotKey>KB_COMMA</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -144,8 +144,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CYCLEUNIT</Type>
-            <Description>TXT_KEY_ACTION_CYCLE_UNITS</Description>
-            <Help>TXT_KEY_ACTION_CYCLE_UNITS_HELP</Help>
+            <Description>TXT_KEY_CONTROL_CYCLEUNIT</Description>
+            <Help>TXT_KEY_CONTROL_CYCLEUNIT_HELP</Help>
             <HotKey>KB_RETURN</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -159,8 +159,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CYCLEUNIT_ALT</Type>
-            <Description>TXT_KEY_ACTION_CYCLE_UNITS_ALT</Description>
-            <Help>TXT_KEY_ACTION_CYCLE_UNITS_ALT_HELP</Help>
+            <Description>TXT_KEY_CONTROL_CYCLEUNIT_ALT</Description>
+            <Help>TXT_KEY_CONTROL_CYCLEUNIT_ALT_HELP</Help>
             <HotKey>KB_W</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -174,8 +174,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_LASTUNIT</Type>
-            <Description>TXT_KEY_ACTION_LASTUNIT</Description>
-            <Help>TXT_KEY_ACTION_LASTUNIT_HELP</Help>
+            <Description>TXT_KEY_CONTROL_LASTUNIT</Description>
+            <Help>TXT_KEY_CONTROL_LASTUNIT_HELP</Help>
             <HotKey>KB_BACKSLASH</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -189,8 +189,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ENDTURN</Type>
-            <Description>TXT_KEY_ACTION_ENDTURN</Description>
-            <Help>TXT_KEY_ACTION_ENDTURN_HELP</Help>
+            <Description>TXT_KEY_CONTROL_ENDTURN</Description>
+            <Help>TXT_KEY_CONTROL_ENDTURN_HELP</Help>
             <HotKey>KB_RETURN</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -204,8 +204,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ENDTURN_ALT</Type>
-            <Description>TXT_KEY_ACTION_ENDTURN_ALT</Description>
-            <Help>TXT_KEY_ACTION_ENDTURN_ALT_HELP</Help>
+            <Description>TXT_KEY_CONTROL_ENDTURN_ALT</Description>
+            <Help>TXT_KEY_CONTROL_ENDTURN_ALT_HELP</Help>
             <HotKey>KB_SPACE</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -219,8 +219,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_FORCEENDTURN</Type>
-            <Description>TXT_KEY_ACTION_FORCE_ENDTURN</Description>
-            <Help>TXT_KEY_ACTION_FORCE_ENDTURN_HELP</Help>
+            <Description>TXT_KEY_CONTROL_FORCEENDTURN</Description>
+            <Help>TXT_KEY_CONTROL_FORCEENDTURN_HELP</Help>
             <HotKey>KB_RETURN</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -234,8 +234,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_AUTOMOVES</Type>
-            <Description>TXT_KEY_ACTION_AUTOMOVES</Description>
-            <Help>TXT_KEY_ACTION_AUTOMOVES_HELP</Help>
+            <Description>TXT_KEY_CONTROL_AUTOMOVES</Description>
+            <Help>TXT_KEY_CONTROL_AUTOMOVES_HELP</Help>
             <HotKey>KB_A</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -249,8 +249,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_PING</Type>
-            <Description>TXT_KEY_ACTION_PING</Description>
-            <Help>TXT_KEY_ACTION_PING_HELP</Help>
+            <Description>TXT_KEY_CONTROL_PING</Description>
+            <Help>TXT_KEY_CONTROL_PING_HELP</Help>
             <HotKey>KB_P</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -264,8 +264,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SIGN</Type>
-            <Description>TXT_KEY_ACTION_SIGN</Description>
-            <Help>TXT_KEY_ACTION_SIGN_HELP</Help>
+            <Description>TXT_KEY_CONTROL_SIGN</Description>
+            <Help>TXT_KEY_CONTROL_SIGN_HELP</Help>
             <HotKey>KB_S</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -279,8 +279,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_GRID</Type>
-            <Description>TXT_KEY_ACTION_GRID</Description>
-            <Help>TXT_KEY_ACTION_GRID_HELP</Help>
+            <Description>TXT_KEY_CONTROL_GRID</Description>
+            <Help>TXT_KEY_CONTROL_GRID_HELP</Help>
             <HotKey>KB_T</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -294,8 +294,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_BARE_MAP</Type>
-            <Description>TXT_KEY_ACTION_BARE_MAP</Description>
-            <Help>TXT_KEY_ACTION_BARE_MAP_HELP</Help>
+            <Description>TXT_KEY_CONTROL_BARE_MAP</Description>
+            <Help>TXT_KEY_CONTROL_BARE_MAP_HELP</Help>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -309,8 +309,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_YIELDS</Type>
-            <Description>TXT_KEY_ACTION_YIELDS</Description>
-            <Help>TXT_KEY_ACTION_YIELDS_HELP</Help>
+            <Description>TXT_KEY_CONTROL_YIELDS</Description>
+            <Help>TXT_KEY_CONTROL_YIELDS_HELP</Help>
             <HotKey>KB_Y</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -324,8 +324,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_RESOURCE_ALL</Type>
-            <Description>TXT_KEY_ACTION_RESOURCE_ALL</Description>
-            <Help>TXT_KEY_GLOBELAYER_RESOURCES</Help>
+            <Description>TXT_KEY_CONTROL_RESOURCE_ALL</Description>
+            <Help>TXT_KEY_CONTROL_RESOURCE_ALL_HELP</Help>
             <HotKey>KB_R</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -339,8 +339,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_UNIT_ICONS</Type>
-            <Description>TXT_KEY_ACTION_UNIT_ICONS</Description>
-            <Help>TXT_KEY_GLOBELAYER_UNITS</Help>
+            <Description>TXT_KEY_CONTROL_UNIT_ICONS</Description>
+            <Help>TXT_KEY_CONTROL_UNIT_ICONS_HELP</Help>
             <HotKey>KB_U</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -354,8 +354,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_GLOBELAYER</Type>
-            <Description>TXT_KEY_GLOBE_VIEW</Description>
-            <Help>TXT_KEY_GLOBEVIEW_TOGGLE</Help>
+            <Description>TXT_KEY_CONTROL_GLOBELAYER</Description>
+            <Help>TXT_KEY_CONTROL_GLOBELAYER_HELP</Help>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -369,8 +369,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SCORES</Type>
-            <Description>TXT_KEY_ACTION_SCORES</Description>
-            <Help>TXT_KEY_ACTION_SCORES_HELP</Help>
+            <Description>TXT_KEY_CONTROL_SCORES</Description>
+            <Help>TXT_KEY_CONTROL_SCORES_HELP</Help>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -384,8 +384,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_LOAD_GAME</Type>
-            <Description>TXT_KEY_ACTION_LOAD_GAME</Description>
-            <Help>TXT_KEY_ACTION_LOAD_GAME_HELP</Help>
+            <Description>TXT_KEY_CONTROL_LOAD_GAME</Description>
+            <Help>TXT_KEY_CONTROL_LOAD_GAME_HELP</Help>
             <HotKey>KB_L</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -399,8 +399,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_OPTIONS_SCREEN</Type>
-            <Description>TXT_KEY_ACTION_OPTIONS_SCREEN</Description>
-            <Help>TXT_KEY_ACTION_OPTIONS_SCREEN_HELP</Help>
+            <Description>TXT_KEY_CONTROL_OPTIONS_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_OPTIONS_SCREEN_HELP</Help>
             <HotKey>KB_O</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -414,8 +414,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_RETIRE</Type>
-            <Description>TXT_KEY_ACTION_RETIRE</Description>
-            <Help>TXT_KEY_ACTION_RETIRE_HELP</Help>
+            <Description>TXT_KEY_CONTROL_RETIRE</Description>
+            <Help>TXT_KEY_CONTROL_RETIRE_HELP</Help>
             <HotKey>KB_Q</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -429,8 +429,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SAVE_GROUP</Type>
-            <Description>TXT_KEY_ACTION_SAVE_GROUP</Description>
-            <Help>TXT_KEY_ACTION_SAVE_GROUP_HELP</Help>
+            <Description>TXT_KEY_CONTROL_SAVE_GROUP</Description>
+            <Help>TXT_KEY_CONTROL_SAVE_GROUP_HELP</Help>
             <HotKey>KB_S</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -444,8 +444,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SAVE_NORMAL</Type>
-            <Description>TXT_KEY_ACTION_SAVE_NORMAL</Description>
-            <Help>TXT_KEY_ACTION_SAVE_GAME_HELP</Help>
+            <Description>TXT_KEY_CONTROL_SAVE_NORMAL</Description>
+            <Help>TXT_KEY_CONTROL_SAVE_NORMAL_HELP</Help>
             <HotKey>KB_S</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -459,8 +459,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_QUICK_SAVE</Type>
-            <Description>TXT_KEY_ACTION_QUICK_SAVE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_QUICK_SAVE</Description>
+            <Help>TXT_KEY_CONTROL_QUICK_SAVE_HELP</Help>
             <HotKey>KB_F5</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -474,8 +474,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_QUICK_LOAD</Type>
-            <Description>TXT_KEY_ACTION_QUICK_LOAD</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_QUICK_LOAD</Description>
+            <Help>TXT_KEY_CONTROL_QUICK_LOAD_HELP</Help>
             <HotKey>KB_F8</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -489,8 +489,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ORTHO_CAMERA</Type>
-            <Description>TXT_KEY_ACTION_ORTHO_CAMERA</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_ORTHO_CAMERA</Description>
+            <Help>TXT_KEY_CONTROL_ORTHO_CAMERA_HELP</Help>
             <HotKey>KB_O</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -504,8 +504,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CYCLE_CAMERA_FLYING_MODES</Type>
-            <Description>TXT_KEY_ACTION_CYCLE_CAMERA_FLYING_MODES</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES</Description>
+            <Help>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES_HELP</Help>
             <HotKey>KB_BACKSLASH</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -519,8 +519,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ISOMETRIC_CAMERA_LEFT</Type>
-            <Description>TXT_KEY_ACTION_ISOMETRIC_CAMERA_LEFT</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_LEFT</Description>
+            <Help>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_LEFT_HELP</Help>
             <HotKey>KB_LEFT</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -534,8 +534,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ISOMETRIC_CAMERA_RIGHT</Type>
-            <Description>TXT_KEY_ACTION_ISOMETRIC_CAMERA_RIGHT</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_RIGHT</Description>
+            <Help>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_RIGHT_HELP</Help>
             <HotKey>KB_RIGHT</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -549,8 +549,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_FLYING_CAMERA</Type>
-            <Description>TXT_KEY_ACTION_FLYING_CAMERA</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_FLYING_CAMERA</Description>
+            <Help>TXT_KEY_CONTROL_FLYING_CAMERA_HELP</Help>
             <HotKey>KB_F</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -564,8 +564,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_MOUSE_FLYING_CAMERA</Type>
-            <Description>TXT_KEY_ACTION_MOUSE_FLYING_CAMERA</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_MOUSE_FLYING_CAMERA</Description>
+            <Help>TXT_KEY_CONTROL_MOUSE_FLYING_CAMERA_HELP</Help>
             <HotKey>KB_F</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -579,8 +579,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_TOP_DOWN_CAMERA</Type>
-            <Description>TXT_KEY_ACTION_TOP_DOWN_CAMERA</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_TOP_DOWN_CAMERA</Description>
+            <Help>TXT_KEY_CONTROL_TOP_DOWN_CAMERA_HELP</Help>
             <HotKey>KB_F</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -594,8 +594,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CIVILOPEDIA</Type>
-            <Description>TXT_KEY_WIDGET_HELP</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_CIVILOPEDIA</Description>
+            <Help>TXT_KEY_CONTROL_CIVILOPEDIA_HELP</Help>
             <HotKey>KB_F12</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -609,8 +609,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_FOREIGN_SCREEN</Type>
-            <Description>TXT_KEY_FOREIGN_ADVISOR_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_FOREIGN_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_FOREIGN_SCREEN_HELP</Help>
             <HotKey>KB_F4</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -624,8 +624,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CONGRESS_SCREEN</Type>
-            <Description>TXT_KEY_CONGRESS_ADVISOR_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_CONGRESS_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_CONGRESS_SCREEN_HELP</Help>
             <HotKey>KB_F7</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -639,8 +639,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_REVOLUTION_SCREEN</Type>
-            <Description>TXT_KEY_REVOLUTION_ADVISOR_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_REVOLUTION_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_REVOLUTION_SCREEN_HELP</Help>
             <HotKey>KB_F3</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -654,8 +654,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_EUROPE_SCREEN</Type>
-            <Description>TXT_KEY_EUROPE_SCREEN_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_EUROPE_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_EUROPE_SCREEN_HELP</Help>
             <HotKey>KB_F2</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -669,8 +669,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_MILITARY_SCREEN</Type>
-            <Description>TXT_KEY_MILITARY_ADVISOR_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_MILITARY_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_MILITARY_SCREEN_HELP</Help>
             <HotKey>KB_F5</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -684,8 +684,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_FATHER_SCREEN</Type>
-            <Description>TXT_KEY_FATHER_SCREEN_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_FATHER_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_FATHER_SCREEN_HELP</Help>
             <HotKey>KB_F6</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -699,8 +699,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_TURN_LOG</Type>
-            <Description>TXT_KEY_EVENT_LOG</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_TURN_LOG</Description>
+            <Help>TXT_KEY_CONTROL_TURN_LOG_HELP</Help>
             <HotKey>KB_TAB</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -714,8 +714,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CHAT_ALL</Type>
-            <Description>TXT_KEY_CHAT_LOG</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_CHAT_ALL</Description>
+            <Help>TXT_KEY_CONTROL_CHAT_ALL_HELP</Help>
             <HotKey>KB_TAB</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -729,8 +729,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_CHAT_TEAM</Type>
-            <Description>TXT_KEY_CHAT_LOG</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_CHAT_TEAM</Description>
+            <Help>TXT_KEY_CONTROL_CHAT_TEAM_HELP</Help>
             <HotKey>KB_TAB</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -744,8 +744,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_DOMESTIC_SCREEN</Type>
-            <Description>TXT_KEY_DOMESTIC_ADVISOR_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_DOMESTIC_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_DOMESTIC_SCREEN_HELP</Help>
             <HotKey>KB_F1</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -759,8 +759,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_VICTORY_SCREEN</Type>
-            <Description>TXT_KEY_VICTORY_SCREEN_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_VICTORY_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_VICTORY_SCREEN_HELP</Help>
             <HotKey>KB_F8</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -774,8 +774,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_INFO</Type>
-            <Description>TXT_KEY_INFO_SCREEN</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_INFO</Description>
+            <Help>TXT_KEY_CONTROL_INFO_HELP</Help>
             <HotKey>KB_F9</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -789,8 +789,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_GLOBE_VIEW</Type>
-            <Description>TXT_KEY_GLOBE_VIEW</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_GLOBE_VIEW</Description>
+            <Help>TXT_KEY_CONTROL_GLOBE_VIEW_HELP</Help>
             <HotKey>KB_F11</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -804,8 +804,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_DETAILS</Type>
-            <Description>TXT_KEY_POPUP_DETAILS_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_DETAILS</Description>
+            <Help>TXT_KEY_CONTROL_DETAILS_HELP</Help>
             <HotKey>KB_D</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -819,8 +819,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ADMIN_DETAILS</Type>
-            <Description>TXT_KEY_POPUP_GAME_DETAILS</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_ADMIN_DETAILS</Description>
+            <Help>TXT_KEY_CONTROL_ADMIN_DETAILS_HELP</Help>
             <HotKey>KB_D</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -834,8 +834,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_HALL_OF_FAME</Type>
-            <Description>TXT_KEY_MAIN_MENU_HALL_OF_FAME</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_HALL_OF_FAME</Description>
+            <Help>TXT_KEY_CONTROL_HALL_OF_FAME_HELP</Help>
             <HotKey>KB_H</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -849,8 +849,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_WORLD_BUILDER</Type>
-            <Description>TXT_KEY_WORLD_BUILDER</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_WORLD_BUILDER</Description>
+            <Help>TXT_KEY_CONTROL_WORLD_BUILDER_HELP</Help>
             <HotKey>KB_W</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -864,8 +864,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_DIPLOMACY</Type>
-            <Description>TXT_KEY_START_DIPLOMACY</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_DIPLOMACY</Description>
+            <Help>TXT_KEY_CONTROL_DIPLOMACY_HELP</Help>
             <HotKey>KB_D</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -879,8 +879,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_SELECT_HEALTHY</Type>
-            <Description>TXT_KEY_MAIN_MENU_HALL_OF_FAME</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_SELECT_HEALTHY</Description>
+            <Help>TXT_KEY_CONTROL_SELECT_HEALTHY_HELP</Help>
             <HotKey>KB_H</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -894,8 +894,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_FREE_COLONY</Type>
-            <Description>TXT_KEY_FREE_COLONY</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_FREE_COLONY</Description>
+            <Help>TXT_KEY_CONTROL_FREE_COLONY_HELP</Help>
             <HotKey>KB_F1</HotKey>
             <bAltDown>1</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -909,8 +909,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_AFRICA_SCREEN</Type>
-            <Description>TXT_KEY_AFRICA_SCREEN_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_AFRICA_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_AFRICA_SCREEN_HELP</Help>
             <HotKey>KB_F2</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>1</bShiftDown>
@@ -924,8 +924,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_PORT_ROYAL_SCREEN</Type>
-            <Description>TXT_KEY_PORT_ROYAL_SCREEN_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN_HELP</Help>
             <HotKey>KB_F2</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -939,8 +939,8 @@
         </ControlInfo>
         <ControlInfo>
             <Type>CONTROL_ACHIEVE_SCREEN</Type>
-            <Description>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Description>
-            <Help/>
+            <Description>TXT_KEY_CONTROL_ACHIEVE_SCREEN</Description>
+            <Help>TXT_KEY_CONTROL_ACHIEVE_SCREEN_HELP</Help>
             <HotKey>KB_F10</HotKey>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>

@@ -9,8 +9,8 @@
     <WorldInfos>
         <WorldInfo>
             <Type>WORLDSIZE_TINY</Type>
-            <Description>TXT_KEY_WORLD_TINY</Description>
-            <Help>TXT_KEY_WORLD_TINY_HELP</Help>
+            <Description>TXT_KEY_WORLDSIZE_TINY</Description>
+            <Help>TXT_KEY_WORLDSIZE_TINY_HELP</Help>
             <iDefaultPlayers>6</iDefaultPlayers>
             <iDefaultNativePlayers>3</iDefaultNativePlayers>
             <iUnitNameModifier>40</iUnitNameModifier>
@@ -26,8 +26,8 @@
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_SMALL</Type>
-            <Description>TXT_KEY_WORLD_SMALL</Description>
-            <Help>TXT_KEY_WORLD_SMALL_HELP</Help>
+            <Description>TXT_KEY_WORLDSIZE_SMALL</Description>
+            <Help>TXT_KEY_WORLDSIZE_SMALL_HELP</Help>
             <iDefaultPlayers>9</iDefaultPlayers>
             <iDefaultNativePlayers>4</iDefaultNativePlayers>
             <iUnitNameModifier>30</iUnitNameModifier>
@@ -43,8 +43,8 @@
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_STANDARD</Type>
-            <Description>TXT_KEY_WORLD_STANDARD</Description>
-            <Help>TXT_KEY_WORLD_STANDARD_HELP</Help>
+            <Description>TXT_KEY_WORLDSIZE_STANDARD</Description>
+            <Help>TXT_KEY_WORLDSIZE_STANDARD_HELP</Help>
             <iDefaultPlayers>12</iDefaultPlayers>
             <iDefaultNativePlayers>7</iDefaultNativePlayers>
             <iUnitNameModifier>20</iUnitNameModifier>
@@ -60,8 +60,8 @@
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_LARGE</Type>
-            <Description>TXT_KEY_WORLD_LARGE</Description>
-            <Help>TXT_KEY_WORLD_LARGE_HELP</Help>
+            <Description>TXT_KEY_WORLDSIZE_LARGE</Description>
+            <Help>TXT_KEY_WORLDSIZE_LARGE_HELP</Help>
             <iDefaultPlayers>14</iDefaultPlayers>
             <iDefaultNativePlayers>9</iDefaultNativePlayers>
             <iUnitNameModifier>10</iUnitNameModifier>
@@ -77,8 +77,8 @@
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_HUGE</Type>
-            <Description>TXT_KEY_WORLD_HUGE</Description>
-            <Help>TXT_KEY_WORLD_HUGE_HELP</Help>
+            <Description>TXT_KEY_WORLDSIZE_HUGE</Description>
+            <Help>TXT_KEY_WORLDSIZE_HUGE_HELP</Help>
             <iDefaultPlayers>18</iDefaultPlayers>
             <iDefaultNativePlayers>12</iDefaultNativePlayers>
             <iUnitNameModifier>0</iUnitNameModifier>
@@ -94,8 +94,8 @@
         </WorldInfo>
         <WorldInfo>
             <Type>WORLDSIZE_GIGANTIC</Type>
-            <Description>TXT_KEY_WORLD_GIGANTIC</Description>
-            <Help>TXT_KEY_WORLD_GIGANTIC_HELP</Help>
+            <Description>TXT_KEY_WORLDSIZE_GIGANTIC</Description>
+            <Help>TXT_KEY_WORLDSIZE_GIGANTIC_HELP</Help>
             <iDefaultPlayers>39</iDefaultPlayers>
             <iDefaultNativePlayers>31</iDefaultNativePlayers>
             <iUnitNameModifier>0</iUnitNameModifier>

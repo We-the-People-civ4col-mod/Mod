@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CLIMATE_ROCKY</Tag>
+        <English>Rocky</English>
+        <French>Rocheux</French>
+        <German>Felsig</German>
+        <Italian>Continentale</Italian>
+        <Spanish>Rocoso</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CLIMATE_TEMPERATE</Tag>
+        <English>Temperate</English>
+        <French>Tempéré</French>
+        <German>Gemäßigt</German>
+        <Italian>Temperato</Italian>
+        <Spanish>Templado</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CLIMATE_TROPICAL</Tag>
+        <English>Tropical</English>
+        <French>Tropical</French>
+        <German>Tropisch</German>
+        <Italian>Tropicale</Italian>
+        <Spanish>Tropical</Spanish>
+    </TEXT>
+</Civ4GameText>

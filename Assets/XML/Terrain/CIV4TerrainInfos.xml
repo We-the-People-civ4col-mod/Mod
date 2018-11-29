@@ -360,8 +360,8 @@
         </TerrainInfo>
         <TerrainInfo>
             <Type>TERRAIN_PLAINS</Type>
-            <Description>TXT_KEY_TERRAIN_PRAIRIE</Description>
-            <Civilopedia>TXT_KEY_TERRAIN_PRAIRIE_PEDIA</Civilopedia>
+            <Description>TXT_KEY_TERRAIN_PLAINS</Description>
+            <Civilopedia>TXT_KEY_TERRAIN_PLAINS_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_TERRAIN_PLAINS</ArtDefineTag>
             <Yields>
                 <YieldIntegerPair>
@@ -1013,7 +1013,7 @@
         <TerrainInfo>
             <Type>TERRAIN_SNOW</Type>
             <Description>TXT_KEY_TERRAIN_SNOW</Description>
-            <Civilopedia>TXT_KEY_TERRAIN_ICE_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_TERRAIN_SNOW_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_TERRAIN_SNOW</ArtDefineTag>
             <Yields>
                 <YieldIntegerPair>

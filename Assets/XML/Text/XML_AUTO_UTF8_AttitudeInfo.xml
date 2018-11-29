@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_ATTITUDE_ANNOYED</Tag>
+        <English>Annoyed</English>
+        <French>S'inquiète</French>
+        <German>Verärgert</German>
+        <Italian>Infastidito:Infastidita</Italian>
+        <Spanish>Molesta</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ATTITUDE_CAUTIOUS</Tag>
+        <English>Cautious</English>
+        <French>Se méfie</French>
+        <German>Vorsichtig</German>
+        <Italian>Cauto:Cauta</Italian>
+        <Spanish>Cauta</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ATTITUDE_FRIENDLY</Tag>
+        <English>Friendly</English>
+        <French>Enthousiaste</French>
+        <German>Liebevoll</German>
+        <Italian>Amichevole:Amichevole</Italian>
+        <Spanish>Amistosa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ATTITUDE_FURIOUS</Tag>
+        <English>Furious</English>
+        <French>En colère</French>
+        <German>Wütend</German>
+        <Italian>Furioso:Furiosa</Italian>
+        <Spanish>Furiosa</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ATTITUDE_PLEASED</Tag>
+        <English>Pleased</English>
+        <French>Favorable</French>
+        <German>Erfreut</German>
+        <Italian>Soddisfatto:Soddisfatta</Italian>
+        <Spanish>Amable</Spanish>
+    </TEXT>
+</Civ4GameText>

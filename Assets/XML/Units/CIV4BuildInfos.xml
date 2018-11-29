@@ -9,7 +9,7 @@
         <BuildInfo>
             <Type>BUILD_ROAD</Type>
             <Description>TXT_KEY_BUILD_ROAD</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_ROAD_HELP</Help>
             <iTime>400</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -30,7 +30,7 @@
         <BuildInfo>
             <Type>BUILD_PLASTERED_ROAD</Type>
             <Description>TXT_KEY_BUILD_PLASTERED_ROAD</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_PLASTERED_ROAD_HELP</Help>
             <iTime>400</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -51,7 +51,7 @@
         <BuildInfo>
             <Type>BUILD_RAILROAD</Type>
             <Description>TXT_KEY_BUILD_RAILROAD</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_RAILROAD_HELP</Help>
             <iTime>500</iTime>
             <iCost>40</iCost>
             <bKill>0</bKill>
@@ -72,7 +72,7 @@
         <BuildInfo>
             <Type>BUILD_FARM</Type>
             <Description>TXT_KEY_BUILD_FARM</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_FARM_HELP</Help>
             <iTime>1000</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -138,7 +138,7 @@
         <BuildInfo>
             <Type>BUILD_PLANTATION</Type>
             <Description>TXT_KEY_BUILD_PLANTATION</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_PLANTATION_HELP</Help>
             <iTime>1000</iTime>
             <iCost>40</iCost>
             <bKill>0</bKill>
@@ -204,7 +204,7 @@
         <BuildInfo>
             <Type>BUILD_LODGE</Type>
             <Description>TXT_KEY_BUILD_LODGE</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_LODGE_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -225,7 +225,7 @@
         <BuildInfo>
             <Type>BUILD_LUMBERMILL</Type>
             <Description>TXT_KEY_BUILD_LUMBERMILL</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_LUMBERMILL_HELP</Help>
             <iTime>1200</iTime>
             <iCost>500</iCost>
             <bKill>0</bKill>
@@ -246,7 +246,7 @@
         <BuildInfo>
             <Type>BUILD_TRAPPER_HUT</Type>
             <Description>TXT_KEY_BUILD_TRAPPER_HUT</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_TRAPPER_HUT_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -267,7 +267,7 @@
         <BuildInfo>
             <Type>BUILD_MINE</Type>
             <Description>TXT_KEY_BUILD_MINE</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_MINE_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -333,7 +333,7 @@
         <BuildInfo>
             <Type>BUILD_QUARRY</Type>
             <Description>TXT_KEY_BUILD_QUARRY</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_QUARRY_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -399,7 +399,7 @@
         <BuildInfo>
             <Type>BUILD_PASTURE</Type>
             <Description>TXT_KEY_BUILD_PASTURE</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_PASTURE_HELP</Help>
             <iTime>1000</iTime>
             <iCost>40</iCost>
             <bKill>0</bKill>
@@ -465,7 +465,7 @@
         <BuildInfo>
             <Type>BUILD_VINEYARD</Type>
             <Description>TXT_KEY_BUILD_VINEYARD</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_VINEYARD_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -531,7 +531,7 @@
         <BuildInfo>
             <Type>BUILD_COLLECTORS_POST</Type>
             <Description>TXT_KEY_BUILD_COLLECTORS_POST</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_COLLECTORS_POST_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -597,7 +597,7 @@
         <BuildInfo>
             <Type>BUILD_COLLECTORS_POST2</Type>
             <Description>TXT_KEY_BUILD_COLLECTORS_POST2</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_COLLECTORS_POST2_HELP</Help>
             <iTime>800</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -663,7 +663,7 @@
         <BuildInfo>
             <Type>BUILD_COCOA_PLANTATION</Type>
             <Description>TXT_KEY_BUILD_COCOA_PLANTATION</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_COCOA_PLANTATION_HELP</Help>
             <iTime>1000</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
@@ -684,7 +684,7 @@
         <BuildInfo>
             <Type>BUILD_REMOVE_JUNGLE</Type>
             <Description>TXT_KEY_BUILD_REMOVE_JUNGLE</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_REMOVE_JUNGLE_HELP</Help>
             <iTime>0</iTime>
             <iCost>0</iCost>
             <bKill>0</bKill>
@@ -717,7 +717,7 @@
         <BuildInfo>
             <Type>BUILD_REMOVE_FOREST</Type>
             <Description>TXT_KEY_BUILD_REMOVE_FOREST</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_REMOVE_FOREST_HELP</Help>
             <iTime>0</iTime>
             <iCost>0</iCost>
             <bKill>0</bKill>
@@ -760,8 +760,8 @@
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REMOVE_LIGHT_FOREST</Type>
-            <Description>TXT_KEY_BUILD_REMOVE_FOREST</Description>
-            <Help/>
+            <Description>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST</Description>
+            <Help>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST_HELP</Help>
             <iTime>0</iTime>
             <iCost>0</iCost>
             <bKill>0</bKill>
@@ -794,7 +794,7 @@
         <BuildInfo>
             <Type>BUILD_FORT</Type>
             <Description>TXT_KEY_BUILD_FORT</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_FORT_HELP</Help>
             <iTime>1000</iTime>
             <iCost>500</iCost>
             <bKill>0</bKill>
@@ -860,7 +860,7 @@
         <BuildInfo>
             <Type>BUILD_MONASTERY</Type>
             <Description>TXT_KEY_BUILD_MONASTERY</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_MONASTERY_HELP</Help>
             <iTime>1000</iTime>
             <iCost>100</iCost>
             <bKill>0</bKill>
@@ -926,7 +926,7 @@
         <BuildInfo>
             <Type>BUILD_DRAIN_MARSH</Type>
             <Description>TXT_KEY_BUILD_DRAIN_MARSH</Description>
-            <Help/>
+            <Help>TXT_KEY_BUILD_DRAIN_MARSH_HELP</Help>
             <iTime>2000</iTime>
             <iCost>200</iCost>
             <bKill>0</bKill>
@@ -969,8 +969,8 @@
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REFORESTATION_GRASS</Type>
-            <Description>TXT_KEY_PLANT_FOREST</Description>
-            <Help/>
+            <Description>TXT_KEY_BUILD_REFORESTATION_GRASS</Description>
+            <Help>TXT_KEY_BUILD_REFORESTATION_GRASS_HELP</Help>
             <iTime>1000</iTime>
             <iCost>100</iCost>
             <bKill>0</bKill>
@@ -990,8 +990,8 @@
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REFORESTATION_PLAINS</Type>
-            <Description>TXT_KEY_PLANT_FOREST</Description>
-            <Help/>
+            <Description>TXT_KEY_BUILD_REFORESTATION_PLAINS</Description>
+            <Help>TXT_KEY_BUILD_REFORESTATION_PLAINS_HELP</Help>
             <iTime>1000</iTime>
             <iCost>100</iCost>
             <bKill>0</bKill>
@@ -1011,8 +1011,8 @@
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REFORESTATION_MARSH</Type>
-            <Description>TXT_KEY_PLANT_JUNGLE</Description>
-            <Help/>
+            <Description>TXT_KEY_BUILD_REFORESTATION_MARSH</Description>
+            <Help>TXT_KEY_BUILD_REFORESTATION_MARSH_HELP</Help>
             <iTime>1000</iTime>
             <iCost>100</iCost>
             <bKill>0</bKill>
@@ -1032,8 +1032,8 @@
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REFORESTATION_SAVANNAH</Type>
-            <Description>TXT_KEY_PLANT_JUNGLE</Description>
-            <Help/>
+            <Description>TXT_KEY_BUILD_REFORESTATION_SAVANNAH</Description>
+            <Help>TXT_KEY_BUILD_REFORESTATION_SAVANNAH_HELP</Help>
             <iTime>1000</iTime>
             <iCost>100</iCost>
             <bKill>0</bKill>
@@ -1053,8 +1053,8 @@
         </BuildInfo>
         <BuildInfo>
             <Type>BUILD_REFORESTATION_TUNDRA</Type>
-            <Description>TXT_KEY_PLANT_TAIGA</Description>
-            <Help/>
+            <Description>TXT_KEY_BUILD_REFORESTATION_TUNDRA</Description>
+            <Help>TXT_KEY_BUILD_REFORESTATION_TUNDRA_HELP</Help>
             <iTime>1000</iTime>
             <iCost>100</iCost>
             <bKill>0</bKill>

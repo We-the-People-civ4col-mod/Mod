@@ -22484,7 +22484,7 @@
         <LeaderHeadInfo>
             <Type>LEADER_BARBARIAN</Type>
             <Description>TXT_KEY_LEADER_BARBARIAN</Description>
-            <Civilopedia>TXT_KEY_CIV_BARBARIAN_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_LEADER_BARBARIAN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_LEADER_BARBARIAN</ArtDefineTag>
             <AlarmType>NONE</AlarmType>
             <iBaseAttitude>0</iBaseAttitude>
@@ -22583,7 +22583,7 @@
         <LeaderHeadInfo>
             <Type>LEADER_CHURCH</Type>
             <Description>TXT_KEY_LEADER_CHURCH</Description>
-            <Civilopedia>TXT_KEY_CIV_CHURCH_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_LEADER_CHURCH_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_LEADER_CHURCH</ArtDefineTag>
             <AlarmType>NONE</AlarmType>
             <iBaseAttitude>0</iBaseAttitude>

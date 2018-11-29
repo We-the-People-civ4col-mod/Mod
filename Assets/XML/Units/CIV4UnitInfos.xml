@@ -17973,7 +17973,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</Description>
-            <Civilopedia>TXT_KEY_UNIT_CONQUISTADOR_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -18165,7 +18165,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_INFANTRY</Description>
-            <Civilopedia>TXT_KEY_UNIT_VETERAN_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_VETERAN_INFANTRY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_VETERAN_INFANTRY_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -18508,7 +18508,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Description>
-            <Civilopedia>TXT_KEY_UNIT_VETERAN_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -18678,7 +18678,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_DRAGOON</Description>
-            <Civilopedia>TXT_KEY_UNIT_VETERAN_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_VETERAN_DRAGOON_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_VETERAN_DRAGOON_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -19021,7 +19021,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VETERAN_CAVALRY</Description>
-            <Civilopedia>TXT_KEY_UNIT_VETERAN_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_VETERAN_CAVALRY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_VETERAN_CAVALRY_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -19363,9 +19363,9 @@
             <DefaultProfession>NONE</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
-            <Description>TXT_KEY_UNIT_LIGHT_ARTILLERY</Description>
-            <Civilopedia>TXT_KEY_UNIT_ARTILLERY_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_LIGHT_ARTILLERY_STRATEGY</Strategy>
+            <Description>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN</Description>
+            <Civilopedia>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>2.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -19526,9 +19526,9 @@
             <DefaultProfession>NONE</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
-            <Description>TXT_KEY_UNIT_HEAVY_ARTILLERY</Description>
-            <Civilopedia>TXT_KEY_UNIT_ARTILLERY_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_HEAVY_ARTILLERY_STRATEGY</Strategy>
+            <Description>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN</Description>
+            <Civilopedia>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>2.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -19690,7 +19690,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_ARTILLERY</Description>
-            <Civilopedia>TXT_KEY_UNIT_ARTILLERY_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_ROYAL_ARTILLERY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_ROYAL_ARTILLERY_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -20011,8 +20011,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY</Description>
-            <Civilopedia>TXT_KEY_UNIT_REGULAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ROYAL_INFANTRY_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_ROYAL_LIGHT_INFANTRY_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -20264,8 +20264,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_LINE_INFANTRY</Description>
-            <Civilopedia>TXT_KEY_UNIT_REGULAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ROYAL_INFANTRY_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_ROYAL_LINE_INFANTRY_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_ROYAL_LINE_INFANTRY_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -20521,8 +20521,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_DRAGOON</Description>
-            <Civilopedia>TXT_KEY_UNIT_REGULAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ROYAL_CAVALRY_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_ROYAL_DRAGOON_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_ROYAL_DRAGOON_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -20778,7 +20778,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ROYAL_CAVALRY</Description>
-            <Civilopedia>TXT_KEY_UNIT_REGULAR_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_ROYAL_CAVALRY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_ROYAL_CAVALRY_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -23148,7 +23148,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GOVERNOR</Description>
-            <Civilopedia>TXT_KEY_UNIT_STATESMAN_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_GOVERNOR_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_GOVERNOR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -23915,8 +23915,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Description>
-            <Civilopedia>TXT_KEY_UNIT_JESUIT_MISSIONARY_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_JESUIT_MISSIONARY_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -24259,8 +24259,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT</Description>
-            <Civilopedia>TXT_KEY_UNIT_EVANGELIST_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_EVANGELIST_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT_STRATEGY</Strategy>
             <iTeachLevel>3</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -26390,8 +26390,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SMALL_COASTAL_SHIP</Description>
-            <Civilopedia>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_SMALL_COASTAL_SHIP_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_SMALL_COASTAL_SHIP_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -26549,8 +26549,8 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BIG_COASTAL_SHIP</Description>
-            <Civilopedia>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_UNIT_BIG_COASTAL_SHIP_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_BIG_COASTAL_SHIP_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <bGraphicalOnly>0</bGraphicalOnly>
@@ -32678,7 +32678,7 @@
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_VALUABLE_WOOD</Description>
-            <Civilopedia>TXT_KEY_VALUABLE_WOOD_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_UNIT_VALUABLE_WOOD_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_VALUABLE_WOOD_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
@@ -36490,7 +36490,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_HUMPBACK_WHALE</Description>
             <Civilopedia>TXT_KEY_UNIT_HUMPBACK_WHALE_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_HUMPBACK_WHALE_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -36626,7 +36626,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_KRAKEN</Description>
             <Civilopedia>TXT_KEY_UNIT_KRAKEN_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_KRAKEN_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -36762,7 +36762,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ORCA</Description>
             <Civilopedia>TXT_KEY_UNIT_ORCA_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_ORCA_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -36898,7 +36898,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GREATWHITE</Description>
             <Civilopedia>TXT_KEY_UNIT_GREATWHITE_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_GREATWHITE_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37034,7 +37034,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_ALLIGATOR</Description>
             <Civilopedia>TXT_KEY_UNIT_ALLIGATOR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_ALLIGATOR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37170,7 +37170,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_JAGUAR</Description>
             <Civilopedia>TXT_KEY_UNIT_JAGUAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_JAGUAR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37306,7 +37306,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_LYNX</Description>
             <Civilopedia>TXT_KEY_UNIT_LYNX_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_LYNX_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37442,7 +37442,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_COUGAR</Description>
             <Civilopedia>TXT_KEY_UNIT_COUGAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_COUGAR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37578,7 +37578,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_WOLF</Description>
             <Civilopedia>TXT_KEY_UNIT_WOLF_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_WOLF_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37714,7 +37714,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_GRIZZLY</Description>
             <Civilopedia>TXT_KEY_UNIT_GRIZZLY_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_GRIZZLY_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37850,7 +37850,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BEAR_POLAR</Description>
             <Civilopedia>TXT_KEY_UNIT_BEAR_POLAR_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_BEAR_POLAR_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
@@ -37986,7 +37986,7 @@
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_BEAR_BLACK</Description>
             <Civilopedia>TXT_KEY_UNIT_BEAR_BLACK_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_UNIT_ANIMAL_STRATEGY</Strategy>
+            <Strategy>TXT_KEY_UNIT_BEAR_BLACK_STRATEGY</Strategy>
             <iTeachLevel>100</iTeachLevel>
             <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
             <iAnimalPatrolWeight>10000</iAnimalPatrolWeight>

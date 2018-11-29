@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_COLONIAL_AMERICA</Tag>
+        <English>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</English>
+        <French>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</French>
+        <German>Grosse Karte von Nord-Amerika. Die Startpositionen der Europäer und Ureinwohner sowie der Ressourcen sind zufällig gewählt.</German>
+        <Italian>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</Italian>
+        <Spanish>Huge map of North America with random locations of Natives, resources and starting locations for Europeans.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
+        <English>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</English>
+        <French>Représentation fidèle gigantesque des Amériques (136x256 cases), avec distribution historique des indigènes et des ressources.</French>
+        <German>Genaue gigantische Karte von Amerika (136x256 Plots) mit historischen Standorte der Eingeborenen und Ressourcen.</German>
+        <Italian>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</Italian>
+        <Spanish>Faithful gigantic map of the Americas (136x256 plots) with historical locations of Natives and resources.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
+        <English>Faithful gigantic map of the Americas (136x256 plots) with random locations of Natives, resources and starting locations for Europeans.</English>
+        <French>Représentation fidèle gigantesque des Amériques (136x256 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
+        <German>Genaue riesigen Karte von Amerika (136x256 Plots) mit zufälligen Orten der Eingeborenen, Ressourcen und Startplätze für die Europäer.</German>
+        <Italian>Faithful gigantic map of the Americas (136x256 plots) with random locations for Natives, resources and starting locations</Italian>
+        <Spanish>Faithful gigantic map of the Americas (136x256 plots) with random locations for Natives, resources and starting locations</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
+        <English>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</English>
+        <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution historique des indigènes et des ressources.</French>
+        <German>Genaue riesigen Karte von Amerika (68x128 Plots) mit historischen Standorte der Eingeborenen und Ressourcen.</German>
+        <Italian>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</Italian>
+        <Spanish>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
+        <English>Faithful huge map of the Americas (68x128 plots) with random locations of Natives, ressources and starting locations for Europeans.</English>
+        <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
+        <German>Genaue riesigen Karte von Amerika (68x128 Plots) mit zufälligen Orten der Eingeborenen, Ressourcen und Startplätze für die Europäer.</German>
+        <Italian>Faithful huge map of the Americas (68x128 plots) with random locations for Natives, ressources and starting locations</Italian>
+        <Spanish>Faithful huge map of the Americas (68x128 plots) with random locations for Natives, ressources and starting locations</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TOTAL_CITY_HEALTH</Tag>
+        <English>Health of the City: %d1 %F2_Icon</English>
+        <French>Santé de la ville : %d1 %F2_Icon</French>
+        <German>Gesundheit der Stadt: %d1 %F2_Icon</German>
+        <Italian>Health of the City: %d1 %F2_Icon</Italian>
+        <Spanish>Health of the City: %d1 %F2_Icon</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
+        <English>[ICON_BULLET]%D1%%%F2 from City Health</English>
+        <French>[ICON_BULLET]%D1%%%F2 par la santé de la ville</French>
+        <German>[ICON_BULLET]%D1%%%F2 durch Gesundheit der Stadt</German>
+        <Italian>[ICON_BULLET]%D1%%%F2 from City Health</Italian>
+        <Spanish>[ICON_BULLET]%D1%%%F2 from City Health</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HEALTH_POP_CHANGE</Tag>
+        <English>Population Change %s1 = %d2%F3</English>
+        <French>Changement de la %s1 sur la population = %d2%F3</French>
+        <German>Bevölkerung %s1 = %d2%F3</German>
+        <Italian>Population %s1 = %d2%F3</Italian>
+        <Spanish>Population %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HEALTH_TOTAL_CHANGE</Tag>
+        <English>Total Change %s1 = %d2%F3</English>
+        <French>Changement de la %s1 total = %d2%F3</French>
+        <German>Gesamtänderung %s1 = %d2%F3</German>
+        <Italian>Total Change %s1 = %d2%F3</Italian>
+        <Spanish>Total Change %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_HEALTH_TOTAL</Tag>
+        <English>City %s1 = %d2%F3</English>
+        <French>%s1 de la Ville = %d2%F3</French>
+        <German>Stadt %s1 = %d2%F3</German>
+        <Italian>City %s1 = %d2%F3</Italian>
+        <Spanish>City %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
+        <English>%s1: %D2%F3 (with Resource [LINK=literal]%s4[\LINK])</English>
+        <French>%s1 :  %D2%F3 (avec Resource [LINK=literal]%s4[\LINK])</French>
+        <German>%s1: %D2%F3 (mit Bonus Ressource [LINK=literal]%s4[\LINK])</German>
+        <Italian>%s1: %D2%F3 (con Resource [LINK=literal]%s4[\LINK])</Italian>
+        <Spanish>%s1: %D2 %F3 (con Resource [LINK=literal]%s4[\LINK])</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_HEALTH_CITY</Tag>
+        <English>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</English>
+        <French>[ICON_BULLET]%D1 [ICON_HEALTHY] à %s2_city</French>
+        <German>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</German>
+        <Italian>[ICON_BULLET]%D1 [ICON_HEALTHY] a %s2_city</Italian>
+        <Spanish>[ICON_BULLET]%D1 [ICON_HEALTHY] en %s2_city</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_HEALTH</Tag>
+        <English>[ICON_BULLET]%D1 [ICON_HEALTH] in all settlements</English>
+        <French>[ICON_BULLET]%D1 [ICON_HEALTH] dans toutes les colonies</French>
+        <German>[ICON_BULLET]%D1 [ICON_HEALTH] in allen Siedlungen</German>
+        <Italian>[ICON_BULLET]%D1 [ICON_HEALTH] in tutti gli insediamenti</Italian>
+        <Spanish>[ICON_BULLET]%D1 [ICON_HEALTH] en todos los asentamientos</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LBD_VETERAN_BY_MILITARY_SERVICE</Tag>
+        <English>[COLOR_POSITIVE_TEXT]A settler has gained enough experience through combat to become %s1_expert[COLOR_REVERT].</English>
+        <French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir %s1_expert[COLOR_REVERT]</French>
+        <German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist hat im Kampf genug Erfahrung gesammelt um als %s1_expert zu gelten.[COLOR_REVERT]</German>
+        <Italian>[COLOR_POSITIVE_TEXT]A settler has gained enough experience through combat to become %s1_expert[COLOR_REVERT].</Italian>
+        <Spanish>[COLOR_POSITIVE_TEXT]A settler has gained enough experience through combat to become %s1_expert[COLOR_REVERT].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LBD_FREE_BY_MILITARY_SERVICE</Tag>
+        <English>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</English>
+        <French>[COLOR_POSITIVE_TEXT]Un combattant a gagné le droit de devenir un colon libre par sa bravoure dans la bataille.[COLOR_REVERT]</French>
+        <German>[COLOR_POSITIVE_TEXT]Ein Unfreier hat sich durch Mut und Einsatz im Kampf seine Freiheit verdient.[COLOR_REVERT]</German>
+        <Italian>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
+        <English>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</English>
+        <French>Vous avez découvert un navire flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
+        <German>Ihr habt ein steuerlos treibendes Schiff im offenen Meer entdeckt! Die gesamte Besatzung ist to. Es scheint als sei sie verdurstet.</German>
+        <Italian>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Italian>
+        <Spanish>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
+        <English>Great Admiral: %d1_Curr/%d2_Need Experience</English>
+        <French>Amiral illustre : %d1_Curr/%d2_Need expérience</French>
+        <German>Großer Admiral: %d1_Curr/%d2_Need Erfahrung</German>
+        <Italian>Grande Admirale: %d1_Curr/%d2_Need esperienza</Italian>
+        <Spanish>Gran admiral: %d1_Curr/%d2_Need de experiencia</Spanish>
+    </TEXT>
+    <!--super forts-->
+    <TEXT>
+        <Tag>TXT_KEY_PLOT_FORTIFY_TO_UPGRADE</Tag>
+        <English>[SPACE](Must garrison to become %s1_ImpName)</English>
+        <French>[SPACE](Doit fortifier pour devenir 1 %s1_ImpName)</French>
+        <German>[SPACE](Muss befestigt sein, um zur Modernisierung %s1_ImpName zu werden)</German>
+        <Italian>[SPACE](Deve fortificare per diventare %s1_ImpName)</Italian>
+        <Spanish>[SPACE](Debe fortalecer para convertirse en [NUM1:un:una:unos:unas] %s1:1_ImpName)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PLOT_CULTURE</Tag>
+        <English>[ICON_BULLET]%D1_Change[ICON_CULTURE] for owner in plot</English>
+        <French>[ICON_BULLET]%D1_Change[ICON_CULTURE] pour le propriétaire dans la parcelle</French>
+        <German>[ICON_BULLET]%D1_Change[ICON_CULTURE] für Besitzer des Felds</German>
+        <Italian>[ICON_BULLET]%D1_Change[ICON_CULTURE] per il proprietario di complotto</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change[ICON_CULTURE] para el propietario de la parcela</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CULTURE_RANGE</Tag>
+        <English>[ICON_BULLET]Influences plots within a distance of %d1_Num</English>
+        <French>[ICON_BULLET]Influences des parcelles dans un rayon de %d1_Num</French>
+        <German>[ICON_BULLET]Beeinflusst Felder im Radius von %d1_Num</German>
+        <Italian>[ICON_BULLET]Trame influenze entro una distanza di %d1_Num</Italian>
+        <Spanish>[ICON_BULLET]Influye en las parcelas dentro de una distancia de %d1_Num</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_BOMBARD</Tag>
+        <English>[ICON_BULLET]Can be bombarded</English>
+        <French>[ICON_BULLET]Peut-etre bombardes</French>
+        <German>[ICON_BULLET]Kann bombardiert werden</German>
+        <Italian>[ICON_BULLET]Puo essere bombardati</Italian>
+        <Spanish>[ICON_BULLET]Puede ser bombardeado</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FORTIFY_TO_UPGRADE</Tag>
+        <English>[ICON_BULLET]A unit must guard it to upgrade</English>
+        <French>[ICON_BULLET]Une unite doit renforcer pour mettre a niveau</French>
+        <German>[ICON_BULLET]Eine Einheit muss befestigt sein zum Wachstum</German>
+        <Italian>[ICON_BULLET]Una unita deve fortificare l'aggiornamento</Italian>
+        <Spanish>[ICON_BULLET]Una unidad debe fortalecer para mejorar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_VISIBILITY_RANGE</Tag>
+        <English>[ICON_BULLET]%D1_Change Visibility Range</English>
+        <French>[ICON_BULLET]Champ de vision %D1_Change</French>
+        <German>[ICON_BULLET]%D1_Sichtweitenänderung</German>
+        <Italian>[ICON_BULLET]%D1_Change raggio di visibilità</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change al alcance de la visibilidad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SEE_FROM</Tag>
+        <English>[ICON_BULLET]%D1_Change Visibility Height</English>
+        <French>[ICON_BULLET]%D1_Change Hauteur Visibilite</French>
+        <German>[ICON_BULLET]%D1_Change Visibility Height</German>
+        <Italian>[ICON_BULLET]%D1_Change visibilita Altezza</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change visibilidad Altura</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_UNIQUE_RANGE</Tag>
+        <English>[ICON_BULLET]Cannot build another within a distance of %d1_Num</English>
+        <French>[ICON_BULLET]Impossible de construire un autre a une distance de %d1_Num</French>
+        <German>[ICON_BULLET]Mindestabstand zu anderen Geländeverbesserungen des selben Typs von %d1_Num</German>
+        <Italian>[ICON_BULLET]Non e possibile costruire un altro ad una distanza di %d1_Num</Italian>
+        <Spanish>[ICON_BULLET]No se puede construir otro a una distancia de %d1_Num</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_CITY_REVOLTED_JOINED</Tag>
+        <English>[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</English>
+        <French>[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</French>
+        <German>[ICON_BULLET]A %s1_ImpName hat rebelliert und trat %s2_CivDesc bei</German>
+        <Italian>[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</Italian>
+        <Spanish>[[ICON_BULLET]A %s1_ImpName has revolted and joined %s2_CivDesc</Spanish>
+    </TEXT>
+</Civ4GameText>

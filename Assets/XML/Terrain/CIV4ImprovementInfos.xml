@@ -120,8 +120,8 @@
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT</Type>
-            <Description>TXT_KEY_GOODY_BURIAL_GROUNDS</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_BURIAL_GROUNDS_PEDIA</Civilopedia>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_GOODY_HUT</ArtDefineTag>
             <PrereqNatureYields/>
             <YieldIncreases/>
@@ -182,8 +182,8 @@
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT2</Type>
-            <Description>TXT_KEY_GOODY_ANCIENT_RUINS</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_ANCIENT_RUINS_PEDIA</Civilopedia>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT2</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT2_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_GOODY_HUT2</ArtDefineTag>
             <PrereqNatureYields/>
             <YieldIncreases/>
@@ -232,8 +232,8 @@
         </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT3</Type>
-            <Description>TXT_KEY_GOODY_SHIPWRECKAGE</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_SHIPWRECKAGE_PEDIA</Civilopedia>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT3</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT3_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_SHIPWRECKAGE</ArtDefineTag>
             <PrereqNatureYields/>
             <YieldIncreases/>

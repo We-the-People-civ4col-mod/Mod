@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text - New -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
+        <English>Total Production</English>
+        <French>Total Production</French>
+        <German>Gesamtproduktion</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
+        <English>Total Production</English>
+        <French>
+            <Text>Production totale</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Gesamtproduktion</German>
+        <Italian>
+            <Text>Produzione totale</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Producción total</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+</Civ4GameText>

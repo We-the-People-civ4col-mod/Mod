@@ -2559,7 +2559,7 @@
         <BonusInfo>
             <Type>BONUS_PEARLS_2</Type>
             <Description>TXT_KEY_BONUS_PEARLS_2</Description>
-            <Civilopedia>TXT_KEY_BONUS_PEARLS_PEDIA_2</Civilopedia>
+            <Civilopedia>TXT_KEY_BONUS_PEARLS_2_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_BONUS_PEARLS_2</ArtDefineTag>
             <BuildingType>NONE</BuildingType>
             <YieldChanges>

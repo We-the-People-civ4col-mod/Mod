@@ -3,7 +3,7 @@
     <EventInfos>
         <EventInfo>
             <Type>EVENT_TUTORIAL_FOUND_COLONY</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_FOUND_COLONY_2</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_FOUND_COLONY</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -64,7 +64,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_END_TUTORIAL</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL_2</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -125,7 +125,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_JOIN_TO_CITY</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_JOIN_TO_CITY_2</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_JOIN_TO_CITY</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -191,7 +191,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_RATHER_EXPLORE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RATHER_EXPLORE_2</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_RATHER_EXPLORE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -257,7 +257,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_JOIN_UNIT_TO_CITY_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_JOIN_UNIT_TO_CITY_DONE_2</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_JOIN_UNIT_TO_CITY_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -323,7 +323,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_SETTLEMENT</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_SETTLEMENT</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -516,7 +516,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_IMMIGRANT_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_IMMIGRANT_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -577,7 +577,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_EUROPE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_EUROPE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -643,7 +643,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_MOTHERLAND_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_MOTHERLAND_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -704,7 +704,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_MOTHERLAND</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_MOTHERLAND</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -765,7 +765,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_PROFESSIONS_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_PROFESSIONS_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -826,7 +826,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_PROFESSIONS</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_PROFESSIONS</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1141,7 +1141,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_IMPROVE_LAND_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_IMPROVE_LAND_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1207,7 +1207,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_IMPROVE_LAND</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_IMPROVE_LAND</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1273,7 +1273,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_FOUNDING_FATHER_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_FOUNDING_FATHER_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1334,7 +1334,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_FOUNDING_FATHER</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_FOUNDING_FATHER</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1395,7 +1395,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_NATIVE_VILLAGES_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_NATIVE_VILLAGES_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1456,7 +1456,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_NATIVE_VILLAGES</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_NATIVE_VILLAGES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1517,7 +1517,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_REVOLUTION_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_REVOLUTION_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1578,7 +1578,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_REVOLUTION</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_REVOLUTION</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1639,7 +1639,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_TOOLS_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_TOOLS_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1700,7 +1700,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_TOOLS</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_TOOLS</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1761,7 +1761,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_BUILDING_REQUIRES_TOOLS_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_BUILDING_REQUIRES_TOOLS_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1822,7 +1822,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_AUTOMATED_TRADE_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_AUTOMATED_TRADE_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -1883,7 +1883,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_AUTOMATED_TRADE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_AUTOMATED_TRADE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -2066,7 +2066,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_SPEAK_WITH_CHIEF_COMPLETED</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_SPEAK_WITH_CHIEF_COMPLETED</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -2132,7 +2132,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_WAR_DONE</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_WAR_DONE</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -2193,7 +2193,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_CIVILOPEDIA_WAR</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_CIVILOPEDIA_WAR</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -2254,7 +2254,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_OVERSTOCK</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_OVERSTOCK</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -2315,7 +2315,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_TUTORIAL_TAXES</Type>
-            <Description>TXT_KEY_EVENT_TUTORIAL_RETURN_TO_GAME</Description>
+            <Description>TXT_KEY_EVENT_TUTORIAL_TAXES</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -3089,7 +3089,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_FOREST_FIRE_4</Type>
-            <Description>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_4</Description>
+            <Description>TXT_KEY_EVENT_FOREST_FIRE_4</Description>
             <LocalInfoText>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_4</LocalInfoText>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -4836,7 +4836,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_FUGITIVE_5</Type>
-            <Description/>
+            <Description>TXT_KEY_EVENT_FUGITIVE_5</Description>
             <LocalInfoText>TXT_KEY_EVENT_INFO_FUGITIVE_5</LocalInfoText>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -8236,7 +8236,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_FIVE_CATHEDRALS</Type>
-            <Description>TXT_KEY_EVENT_FIVE_CATHEDRALS_1</Description>
+            <Description>TXT_KEY_EVENT_FIVE_CATHEDRALS</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -8627,7 +8627,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_GREAT_TOOL_FACTORY</Type>
-            <Description>TXT_KEY_EVENT_GREAT_TOOL_FACTORY_1</Description>
+            <Description>TXT_KEY_EVENT_GREAT_TOOL_FACTORY</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -8952,7 +8952,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_GREAT_ARSENAL</Type>
-            <Description>TXT_KEY_EVENT_GREAT_ARSENAL_1</Description>
+            <Description>TXT_KEY_EVENT_GREAT_ARSENAL</Description>
             <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -9894,7 +9894,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_RUINS_DONE_5</Type>
-            <Description>TXT_KEY_EVENT_RUINS_DONE_4</Description>
+            <Description>TXT_KEY_EVENT_RUINS_DONE_5</Description>
             <LocalInfoText/>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENT_RUINS_DONE_4</Text>
@@ -9962,7 +9962,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_RUINS_DONE_6</Type>
-            <Description>TXT_KEY_EVENT_RUINS_DONE_4</Description>
+            <Description>TXT_KEY_EVENT_RUINS_DONE_6</Description>
             <LocalInfoText/>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENT_RUINS_DONE_4</Text>
@@ -22734,7 +22734,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_CONIFEROUS_FIRE_3</Type>
-            <Description>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_3</Description>
+            <Description>TXT_KEY_EVENT_CONIFEROUS_FIRE_3</Description>
             <LocalInfoText>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_3</LocalInfoText>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
@@ -22927,7 +22927,7 @@
         </EventInfo>
         <EventInfo>
             <Type>EVENT_JUNGLE_FIRE_3</Type>
-            <Description>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_3</Description>
+            <Description>TXT_KEY_EVENT_JUNGLE_FIRE_3</Description>
             <LocalInfoText>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_3</LocalInfoText>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>

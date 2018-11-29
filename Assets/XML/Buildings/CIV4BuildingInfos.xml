@@ -84,7 +84,7 @@
             <SpecialBuildingType>SPECIALBUILDING_BELLS</SpecialBuildingType>
             <iSpecialBuildingPriority>1</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_VILLAGEHALL</Description>
-            <Civilopedia>TXT_KEY_BUILDING_TOWNHALL_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_BUILDING_VILLAGEHALL_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_VILLAGEHALL_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_VILLAGEHALL</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
@@ -252,7 +252,7 @@
             <SpecialBuildingType>SPECIALBUILDING_BELLS</SpecialBuildingType>
             <iSpecialBuildingPriority>3</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_CITYHALL</Description>
-            <Civilopedia>TXT_KEY_BUILDING_TOWNHALL_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_BUILDING_CITYHALL_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_CITYHALL_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_CITYHALL</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
@@ -2701,8 +2701,8 @@
             <SpecialBuildingType>SPECIALBUILDING_DEFENSE</SpecialBuildingType>
             <iSpecialBuildingPriority>1</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_NATIVE_WALL</Description>
-            <Civilopedia>TXT_KEY_BUILDING_NATIVEWALL_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_NATIVEWALL_STRATEGY</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_NATIVE_WALL_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_NATIVE_WALL_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_NATIVEWALL</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -6579,8 +6579,8 @@
             <SpecialBuildingType>SPECIALBUILDING_HORSES</SpecialBuildingType>
             <iSpecialBuildingPriority>2</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_NATIVE_STABLE</Description>
-            <Civilopedia>TXT_KEY_BUILDING_STABLE_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_NATIVE_STABLE_STRATEGY_NEW</Strategy>
+            <Civilopedia>TXT_KEY_BUILDING_NATIVE_STABLE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_NATIVE_STABLE_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_NATIVE_STABLE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -6665,7 +6665,7 @@
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_STABLE</Description>
             <Civilopedia>TXT_KEY_BUILDING_STABLE_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_STABLE_STRATEGY_NEW</Strategy>
+            <Strategy>TXT_KEY_BUILDING_STABLE_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_STABLE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -6753,9 +6753,9 @@
             <BuildingClass>BUILDINGCLASS_RANCH</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_HORSES</SpecialBuildingType>
             <iSpecialBuildingPriority>1</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_LARGE_STABLE</Description>
+            <Description>TXT_KEY_BUILDING_RANCH</Description>
             <Civilopedia>TXT_KEY_BUILDING_RANCH_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_RANCH_STRATEGY_NEW</Strategy>
+            <Strategy>TXT_KEY_BUILDING_RANCH_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_RANCH</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -8018,9 +8018,9 @@
             <BuildingClass>BUILDINGCLASS_CATHEDRAL</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_CROSSES</SpecialBuildingType>
             <iSpecialBuildingPriority>2</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_ABBEY</Description>
-            <Civilopedia>TXT_KEY_BUILDING_ABBEY_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_ABBEY_STRATEGY</Strategy>
+            <Description>TXT_KEY_BUILDING_CATHEDRAL</Description>
+            <Civilopedia>TXT_KEY_BUILDING_CATHEDRAL_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_CATHEDRAL_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_DOME</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -8116,9 +8116,9 @@
             <BuildingClass>BUILDINGCLASS_GREAT_CATHEDRAL</BuildingClass>
             <SpecialBuildingType>SPECIALBUILDING_CROSSES</SpecialBuildingType>
             <iSpecialBuildingPriority>3</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_CATHEDRAL</Description>
-            <Civilopedia>TXT_KEY_BUILDING_CATHEDRAL_PEDIA</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_CATHEDRAL_STRATEGY</Strategy>
+            <Description>TXT_KEY_BUILDING_GREAT_CATHEDRAL</Description>
+            <Civilopedia>TXT_KEY_BUILDING_GREAT_CATHEDRAL_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_GREAT_CATHEDRAL_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_CATHEDRAL</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9055,7 +9055,7 @@
             <SpecialBuildingType>SPECIALBUILDING_CORN</SpecialBuildingType>
             <iSpecialBuildingPriority>1</iSpecialBuildingPriority>
             <Description>TXT_KEY_BUILDING_GRANARY</Description>
-            <Civilopedia>TXT_KEY_BUILDING_CORN_CHAMBER_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_BUILDING_GRANARY_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_BUILDING_GRANARY_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_GRANARY</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
@@ -9558,9 +9558,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_BANANA</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_BANANA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_BANANA_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_BANANA</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9625,9 +9625,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_DEER</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_DEER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_DEER_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_DEER</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9692,9 +9692,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_CORN</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_CORN_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_CORN_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_CORN</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9759,9 +9759,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_SILVER</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_SILVER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_SILVER_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_SILVER</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9826,9 +9826,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_GOLD</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_GOLD_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_GOLD_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_GOLD</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9893,9 +9893,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_GEMS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_GEMS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_GEMS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_GEMS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -9960,9 +9960,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_COCOA</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_COCOA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_COCOA_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_COCOA</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10027,9 +10027,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_COCA</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_COCA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_COCA_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_COCA</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10094,9 +10094,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_COFFEE</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_COFFEE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_COFFEE_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_COFFEE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10161,9 +10161,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_COTTON</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_COTTON_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_COTTON_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_COTTON</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10228,9 +10228,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_FUR</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_FUR_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_FUR_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_FUR</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10295,9 +10295,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_SUGAR</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_SUGAR_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_SUGAR_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_SUGAR</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10362,9 +10362,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_TOBACCO</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_TOBACCO_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_TOBACCO_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_TOBACCO</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10429,9 +10429,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_IRON</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_IRON_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_IRON_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_IRON</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10496,9 +10496,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_OASIS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_OASIS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_OASIS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_OASIS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10563,9 +10563,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_TIMBER</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_TIMBER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_TIMBER_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_TIMBER</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10630,9 +10630,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_MINERALS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_MINERALS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_MINERALS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_MINERALS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10697,9 +10697,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_BISON</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_BISON_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_BISON_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_BISON</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10764,9 +10764,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_SALT</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_SALT_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_SALT_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_SALT</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10831,9 +10831,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_POTATO</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_POTATO_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_POTATO_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_POTATO</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10898,9 +10898,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_HORSES</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_HORSES_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_HORSES_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_HORSES</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -10965,9 +10965,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_COCONUT</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_COCONUT_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_COCONUT_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_COCONUT</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11032,9 +11032,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_TURKEYS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_TURKEYS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_TURKEYS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_TURKEYS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11099,9 +11099,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_PUMPKIN</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_PUMPKIN_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_PUMPKIN_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_PUMPKIN</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11166,9 +11166,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_MELON</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_MELON_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_MELON_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_MELON</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11233,9 +11233,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_SEALS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_SEALS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_SEALS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_SEALS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11300,9 +11300,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_SEA_OTTERS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_SEA_OTTERS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_SEA_OTTERS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_SEA_OTTERS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11367,9 +11367,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_WALRUSS</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_WALRUSS_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_WALRUSS_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_WALRUSS</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11434,9 +11434,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_HEMP</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_HEMP_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_HEMP_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_HEMP</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11501,9 +11501,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_INDIGO</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_INDIGO_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_INDIGO_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_INDIGO</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11568,9 +11568,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_STONE</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_STONE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_STONE_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_STONE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11635,9 +11635,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_SHEEP</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_SHEEP_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_SHEEP_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_SHEEP</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11702,9 +11702,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_CATTLE</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_CATTLE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_CATTLE_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_CATTLE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11769,9 +11769,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_GRAPES</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_GRAPES_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_GRAPES_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_GRAPES</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11836,9 +11836,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_RED_PEPPER</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_RED_PEPPER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_RED_PEPPER_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_RED_PEPPER</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11903,9 +11903,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_BOREAL_FOREST</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_BOREAL_FOREST_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_BOREAL_FOREST_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_BOREAL_FOREST</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -11970,9 +11970,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_GIANT_TREE</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_GIANT_TREE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_GIANT_TREE_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_GIANT_TREE</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
@@ -12037,9 +12037,9 @@
             <BuildingClass>BUILDINGCLASS_BONUS</BuildingClass>
             <SpecialBuildingType>NONE</SpecialBuildingType>
             <iSpecialBuildingPriority>0</iSpecialBuildingPriority>
-            <Description>TXT_KEY_BUILDING_BONUS</Description>
-            <Civilopedia>TXT_KEY_BUILDING_BONUS</Civilopedia>
-            <Strategy>TXT_KEY_BUILDING_BONUS</Strategy>
+            <Description>TXT_KEY_BUILDING_BONUS_BARLEY</Description>
+            <Civilopedia>TXT_KEY_BUILDING_BONUS_BARLEY_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_BUILDING_BONUS_BARLEY_STRATEGY</Strategy>
             <ArtDefineTag>ART_DEF_BUILDING_BONUS_BARLEY</ArtDefineTag>
             <MovieDefineTag>NONE</MovieDefineTag>
             <VictoryPrereq>NONE</VictoryPrereq>
