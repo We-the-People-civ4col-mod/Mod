@@ -964,7 +964,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 		// Set the locate to the one needed by the language in question
 		// Sadly this seems to be very much hit or miss on a per computer basis. Sometimes it works and sometimes it doesn't.
 		// If it doesn't work, the user has to change the windows locale manually. Guide: 
-		setlocale(LC_ALL, CvString::format(".%d", CvGameText::getCodePage()).c_str());
+		setlocale(LC_CTYPE, CvString::format(".%d", CvGameText::getCodePage()).c_str());
 
 		//
 		// load all files in the xml text directory
