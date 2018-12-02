@@ -3891,7 +3891,7 @@ public:
 
 protected:
 	static int getLanguageID(const char* szLanguageName);
-	bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName);
+	bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound);
 
 	CvWString m_szText;
 	CvWString m_szGender;

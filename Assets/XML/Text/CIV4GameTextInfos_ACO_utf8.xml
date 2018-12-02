@@ -176,9 +176,6 @@
 	<TEXT>
 		<Tag>TXT_ACO_MULTIPLY</Tag>
 		<English>×</English>
-		<French>×</French>
-		<German>×</German>
-		<Italian>×</Italian>
-		<Spanish>×</Spanish>
+		<Default>*</Default>
 	</TEXT>
 </Civ4GameText>

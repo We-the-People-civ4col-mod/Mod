@@ -12958,33 +12958,40 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 
 	// move to the tag, which contains the language, which we will load.
 
+	bool bLanguageFound = true;
+
 	// First try the user selected language
 	if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), getLanguageName(GAMETEXT.getCurrentLanguage())))
 	{
-		// language not found. Use English as fallback
-		if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "English"))
+		bLanguageFound = false;
+		// language not found. Use Default
+		if (getCodePage() == 1252 || !gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "Default"))
 		{
-			// English missing!!!
-			// This should never happen!
-			// Use Tag because we have to find a child to work on.
-			FAssertMsg(false, CvString::format("Missing languages in string %s", m_szType).c_str());
-			gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "Tag");
+			// No Default found. Use English as fallback
+			if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "English"))
+			{
+				// English missing!!!
+				// This should never happen!
+				// Use Tag because we have to find a child to work on.
+				FAssertMsg(false, CvString::format("Missing languages in string %s", m_szType).c_str());
+				gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), "Tag");
+			}
 		}
 	}
 	
-	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName))
+	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName, bLanguageFound))
 	{
 		// There are child tags. Read all 3 of them.
 
 		// TEXT
 		setText(wszTextVal);
 		// GENDER
-		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName))
+		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName, bLanguageFound))
 		{
 			setGender(wszTextVal);
 		}
 		// PLURAL
-		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName))
+		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName, bLanguageFound))
 		{
 			setPlural(wszTextVal);
 		}
@@ -12992,7 +12999,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 	else
 	{
 		// No Text child meaning no gender or plural. Just read the text.
-		readString(pXML, wszTextVal, NULL, bUTF8, szFileName);
+		readString(pXML, wszTextVal, NULL, bUTF8, szFileName, bLanguageFound);
 		setText(wszTextVal);
 	}
 
@@ -13001,7 +13008,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 }
 
 // read a string from an xml tag. Key feature is to convert from UTF-8 to whatever codepage the current language is using.
-bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName)
+bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound)
 {
 	if (!bUTF8)
 	{
@@ -13082,12 +13089,117 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 
 		if (iReturnVal != 1)
 		{
-			CvString szBuffer;
-			szBuffer.Convert(wszTextVal);
+			if (!bLanguageFound && getCodePage() != 1252)
+			{
+				// Convert to ASCII if possible as 0x7F and below is the same for all code pages
+				if (iBuffer == 0xB4)
+				{
+					iChar = 0x60;
+				}
+				// uppercase
+				else if (iBuffer >= 0xC0 && iBuffer <= 0xC6)
+				{
+					iChar = 'A';
+				}
+				else if (iBuffer == 0xC7)
+				{
+					iChar = 'C';
+				}
+				else if (iBuffer >= 0xC8 && iBuffer <= 0xCB)
+				{
+					iChar = 'E';
+				}
+				else if (iBuffer >= 0xCC && iBuffer <= 0xCF)
+				{
+					iChar = 'I';
+				}
+				else if (iBuffer == 0xD0)
+				{
+					iChar = 'D';
+				}
+				else if (iBuffer == 0xD1)
+				{
+					iChar = 'N';
+				}
+				else if (iBuffer >= 0xD2 && iBuffer <= 0xD8 && iBuffer != 0xD7)
+				{
+					iChar = 'O';
+				}
+				else if (iBuffer >= 0xD9 && iBuffer <= 0xDC)
+				{
+					iChar = 'U';
+				}
+				else if (iBuffer == 0xDD)
+				{
+					iChar = 'Y';
+				}
+				else if (iBuffer == 0xDE)
+				{
+					wszTextVal.append(L"Th");
+					continue;
+				}
+				else if (iBuffer == 0xDF)
+				{
+					wszTextVal.append(L"Ss");
+					continue;
+				}
+				// lowercase
+				else if (iBuffer >= 0xE0 && iBuffer <= 0xE6)
+				{
+					iChar = 'a';
+				}
+				else if (iBuffer == 0xE7)
+				{
+					iChar = 'c';
+				}
+				else if (iBuffer >= 0xE8 && iBuffer <= 0xEB)
+				{
+					iChar = 'e';
+				}
+				else if (iBuffer >= 0xEC && iBuffer <= 0xEF)
+				{
+					iChar = 'i';
+				}
+				else if (iBuffer == 0xF0)
+				{
+					iChar = 'd';
+				}
+				else if (iBuffer == 0xF1)
+				{
+					iChar = 'n';
+				}
+				else if ((iBuffer >= 0xF2 && iBuffer <= 0xF6) || iBuffer == 0xF8)
+				{
+					iChar = 'o';
+				}
+				else if (iBuffer >= 0xF9 && iBuffer <= 0xFC)
+				{
+					iChar = 'u';
+				}
+				else if (iBuffer == 0xFD)
+				{
+					iChar = 'y';
+				}
+				else if (iBuffer == 0xFE)
+				{
+					wszTextVal.append(L"th");
+					continue;
+				}
+				else if (iBuffer == 0xFF)
+				{
+					wszTextVal.append(L"ss");
+					continue;
+				}
+			}
+			else
+			{
+				CvString szBuffer;
+				szBuffer.Convert(wszTextVal);
 
-			char	szMessage[1024];
-			sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, getType(), szBuffer.c_str(), getCodePage());
-			gDLL->MessageBox(szMessage, "Text encoding error");
+				char	szMessage[1024];
+				sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, getType(), szBuffer.c_str(), getCodePage());
+				gDLL->MessageBox(szMessage, "Text encoding error");
+			}
 		}
 
 		wchar_t buffer = iChar;
