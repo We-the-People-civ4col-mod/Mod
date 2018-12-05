@@ -6578,214 +6578,85 @@ bool CvUnitAI::AI_europeAssaultSea()
 	return true;
 }
 
-bool CvUnitAI::AI_sailToEurope(bool bMove)
+namespace
 {
-	if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE))
-	{
-		crossOcean(UNIT_TRAVEL_STATE_TO_EUROPE);
-		if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
-		{
-			AI_setUnitAIState(UNITAI_STATE_DEFAULT);
-		}
-
-		if (getGroup()->getAutomateType() == AUTOMATE_SAIL)
-		{
-			getGroup()->setAutomateType(NO_AUTOMATE);
-		}
-		return true;
-	}
-	
-	if (!bMove)
-	{
-		return false;
-	}
-	
-	int iBestValue = 0;
-	CvPlot* pBestPlot = NULL;
-	CvPlot* pBestMissionPlot = NULL;
-	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
-	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-		
-		if (AI_plotValid(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(this))
-		{
-			if (pLoopPlot->isRevealed(getTeam(), false))
-			{
-				if (canCrossOcean(pLoopPlot, UNIT_TRAVEL_STATE_TO_EUROPE))
-				{
-					int iPathTurns;
-					if (generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns))
-					{
-						int iValue = 10000;
-						iValue /= 100 + getPathCost();
-						
-						if (iValue > iBestValue)
-						{
-							iBestValue = iValue;
-							pBestPlot = getPathEndTurnPlot();
-							pBestMissionPlot = pLoopPlot;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	
-	if (pBestPlot != NULL)
-	{
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_BUST_FOG, false, false, MISSIONAI_SAIL_TO_EUROPE, pBestMissionPlot);
-		if (plot()->isEurope())
-		{
-			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE))
-			{
-				crossOcean(UNIT_TRAVEL_STATE_TO_EUROPE);
-				if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
-				{
-					AI_setUnitAIState(UNITAI_STATE_DEFAULT);
-				}
-				if (getGroup()->getAutomateType() == AUTOMATE_SAIL)
-				{
-					getGroup()->setAutomateType(NO_AUTOMATE);
-				}
-			}
-		}
-		return true;
-	}
-	return false;
+	const SailToHelper kSailToEurope(UNIT_TRAVEL_STATE_TO_EUROPE, AUTOMATE_SAIL, MISSIONAI_SAIL_TO_EUROPE);
+	const SailToHelper kSailToAfrica(UNIT_TRAVEL_STATE_TO_AFRICA, AUTOMATE_SAIL_TO_AFRICA, MISSIONAI_SAIL_TO_AFRICA);
+	const SailToHelper kSailToPortRoyal(UNIT_TRAVEL_STATE_TO_PORT_ROYAL, AUTOMATE_SAIL_TO_PORT_ROYAL, MISSIONAI_SAIL_TO_PORT_ROYAL);
 }
 
+bool CvUnitAI::AI_sailToEurope(bool bMove)
+{
+	return AI_sailTo(kSailToEurope, bMove);
+}
 
 /*** TRIANGLETRADE 10/28/08 by DPII ***/
 bool CvUnitAI::AI_sailToAfrica(bool bMove)
 {
-	if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_AFRICA))
-	{
-		crossOcean(UNIT_TRAVEL_STATE_TO_AFRICA);
-		if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
-		{
-			AI_setUnitAIState(UNITAI_STATE_DEFAULT);
-		}
-
-		if (getGroup()->getAutomateType() == AUTOMATE_SAIL_TO_AFRICA)
-		{
-			getGroup()->setAutomateType(NO_AUTOMATE);
-		}
-		return true;
-	}
-	
-	if (!bMove)
-	{
-		return false;
-	}
-	
-	int iBestValue = 0;
-	CvPlot* pBestPlot = NULL;
-	CvPlot* pBestMissionPlot = NULL;
-	
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
-	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-		
-		if (AI_plotValid(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(this))
-		{
-			if (pLoopPlot->isRevealed(getTeam(), false))
-			{
-				if (canCrossOcean(pLoopPlot, UNIT_TRAVEL_STATE_TO_AFRICA))
-				{
-					int iPathTurns;
-					if (generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns))
-					{
-						int iValue = 10000;
-						iValue /= 100 + getPathCost();
-						
-						if (iValue > iBestValue)
-						{
-							iBestValue = iValue;
-							pBestPlot = getPathEndTurnPlot();
-							pBestMissionPlot = pLoopPlot;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	
-	if (pBestPlot != NULL)
-	{
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_BUST_FOG, false, false, MISSIONAI_SAIL_TO_AFRICA, pBestMissionPlot);
-		if (plot()->isEurope())
-		{
-			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_AFRICA))
-			{
-				crossOcean(UNIT_TRAVEL_STATE_TO_AFRICA);
-				if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
-				{
-					AI_setUnitAIState(UNITAI_STATE_DEFAULT);
-				}
-				if (getGroup()->getAutomateType() == AUTOMATE_SAIL_TO_AFRICA)
-				{
-					getGroup()->setAutomateType(NO_AUTOMATE);
-				}
-			}
-		}
-		return true;
-	}
-	return false;
+	return AI_sailTo(kSailToAfrica, bMove);
 }
 /******************************************************/
 
 // R&R, ray, Port Royal
 bool CvUnitAI::AI_sailToPortRoyal(bool bMove)
 {
-	if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL))
+	return AI_sailTo(kSailToPortRoyal, bMove);
+}
+// R&R, ray, Port Royal - END
+
+/// <summary> Attempts to sail (off the map) to the specified port.
+/// <param name="sth">A helper struct that contains port travel constants required by the AI</param> 
+/// <param name="bMove">If true, allows the unit to attempt to generate a path to the closest Euro plot, If false only check the current plot.
+/// in both cases, the unit will sail off to the port if it has at least a single movement point left</param>
+/// <param name="bIgnoreDanger">Optional, defaults to true. Pass the bIgnoreDanger to the underlying pathfinder</param>
+bool CvUnitAI::AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger)
+{
+	if (canCrossOcean(plot(), sth.unitTravelState))
 	{
-		crossOcean(UNIT_TRAVEL_STATE_TO_PORT_ROYAL);
+		crossOcean(sth.unitTravelState);
 		if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 		{
 			AI_setUnitAIState(UNITAI_STATE_DEFAULT);
 		}
 
-		if (getGroup()->getAutomateType() == AUTOMATE_SAIL_TO_PORT_ROYAL)
+		if (getGroup()->getAutomateType() == sth.automateType)
 		{
 			getGroup()->setAutomateType(NO_AUTOMATE);
 		}
 		return true;
 	}
-	
+
 	if (!bMove)
 	{
 		return false;
 	}
-	
+
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestMissionPlot = NULL;
-	
+
 	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-		
+
+		if (!pLoopPlot->isRevealed(getTeam(), false))
+			continue;
+
 		if (AI_plotValid(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(this))
 		{
-			if (pLoopPlot->isRevealed(getTeam(), false))
+			if (canCrossOcean(pLoopPlot, sth.unitTravelState))
 			{
-				if (canCrossOcean(pLoopPlot, UNIT_TRAVEL_STATE_TO_PORT_ROYAL))
+				int iPathTurns;
+				if (generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns, bIgnoreDanger))
 				{
-					int iPathTurns;
-					if (generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns))
+					int iValue = 10000;
+					iValue /= 100 + getPathCost();
+
+					if (iValue > iBestValue)
 					{
-						int iValue = 10000;
-						iValue /= 100 + getPathCost();
-						
-						if (iValue > iBestValue)
-						{
-							iBestValue = iValue;
-							pBestPlot = getPathEndTurnPlot();
-							pBestMissionPlot = pLoopPlot;
-						}
+						iBestValue = iValue;
+						pBestPlot = getPathEndTurnPlot();
+						pBestMissionPlot = pLoopPlot;
 					}
 				}
 			}
@@ -6794,17 +6665,17 @@ bool CvUnitAI::AI_sailToPortRoyal(bool bMove)
 
 	if (pBestPlot != NULL)
 	{
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_BUST_FOG, false, false, MISSIONAI_SAIL_TO_PORT_ROYAL, pBestMissionPlot);
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_BUST_FOG, false, false, sth.missionAI, pBestMissionPlot);
 		if (plot()->isEurope())
 		{
-			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL))
+			if (canCrossOcean(plot(), sth.unitTravelState))
 			{
-				crossOcean(UNIT_TRAVEL_STATE_TO_PORT_ROYAL);
+				crossOcean(sth.unitTravelState);
 				if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 				{
 					AI_setUnitAIState(UNITAI_STATE_DEFAULT);
 				}
-				if (getGroup()->getAutomateType() == AUTOMATE_SAIL_TO_PORT_ROYAL)
+				if (getGroup()->getAutomateType() == sth.automateType)
 				{
 					getGroup()->setAutomateType(NO_AUTOMATE);
 				}

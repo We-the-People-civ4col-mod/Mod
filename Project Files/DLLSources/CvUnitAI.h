@@ -7,6 +7,19 @@
 
 #include "CvUnit.h"
 
+namespace
+{
+	struct SailToHelper
+	{
+		SailToHelper(UnitTravelStates unitTravelState_, AutomateTypes automateType_, MissionAITypes missionAI_) :
+			unitTravelState(unitTravelState_), automateType(automateType_), missionAI(missionAI_) {}
+
+		const UnitTravelStates unitTravelState;
+		const AutomateTypes automateType;
+		const MissionAITypes missionAI;
+	};
+}
+
 class CvCity;
 
 class CvUnitAI : public CvUnit
@@ -377,6 +390,8 @@ protected:
 	bool AI_isOnMission();
 	
 	bool AI_isObsoleteTradeShip();
+
+	bool AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger = true);
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
