@@ -564,11 +564,15 @@ protected:
 	// CvPlot::hasYield cache - start - Nightinggale
 public:
 	void setYieldCache();
+	// Cache the computation of the max visibility range
+	static void setMaxVisibilityRangeCache();
 protected:
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
 	// CvPlot::hasYield cache - end - Nightinggale
 	void upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate);
+
+	static int iMaxVisibilityRangeCache;
 };
 
 #endif

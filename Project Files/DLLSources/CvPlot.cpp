@@ -29,6 +29,7 @@
 
 #define STANDARD_MINIMAP_ALPHA		(0.6f)
 
+int CvPlot::iMaxVisibilityRangeCache;
 
 // Public Functions...
 
@@ -1482,23 +1483,26 @@ void CvPlot::updateSight(bool bIncrement)
 	}
 }
 
-
-void CvPlot::updateSeeFromSight(bool bIncrement)
+void CvPlot::setMaxVisibilityRangeCache()
 {
-	CvPlot* pLoopPlot;
-	int iDX, iDY;
-
 	int iRange = GC.getUNIT_VISIBILITY_RANGE() + 1;
 	for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); ++iPromotion)
 	{
 		iRange += GC.getPromotionInfo((PromotionTypes)iPromotion).getVisibilityChange();
 	}
 
-	for (iDX = -iRange; iDX <= iRange; iDX++)
+	iMaxVisibilityRangeCache = iRange;
+}
+
+void CvPlot::updateSeeFromSight(bool bIncrement)
+{
+	const int iRange = iMaxVisibilityRangeCache;
+
+	for (int iDX = -iRange; iDX <= iRange; iDX++)
 	{
-		for (iDY = -iRange; iDY <= iRange; iDY++)
+		for (int iDY = -iRange; iDY <= iRange; iDY++)
 		{
-			pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+			CvPlot* const pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 
 			if (pLoopPlot != NULL)
 			{
@@ -1507,7 +1511,6 @@ void CvPlot::updateSeeFromSight(bool bIncrement)
 		}
 	}
 }
-
 
 bool CvPlot::canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude) const
 {

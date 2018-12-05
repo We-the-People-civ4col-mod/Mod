@@ -81,6 +81,9 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 	// Init non-saved data
 	setup();
 
+	// Create and initialize the cache
+	CvPlot::setMaxVisibilityRangeCache();
+
 	//--------------------------------
 	// Init other game data
 	gDLL->logMemState("CvMap before init plots");
