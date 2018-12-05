@@ -6639,25 +6639,31 @@ bool CvUnitAI::AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
+		// Unrevealed plots need not be considered, also removes cheating!
 		if (!pLoopPlot->isRevealed(getTeam(), false))
 			continue;
+		
+		// Only a small subset of plots allow sailing to ports
+		if (!pLoopPlot->isEurope())
+			continue;
 
-		if (AI_plotValid(pLoopPlot) && !pLoopPlot->isVisibleEnemyDefender(this))
+		// Only consider safe target plots
+		if (pLoopPlot->isVisibleEnemyDefender(this))
+			continue;
+
+		if (canCrossOcean(pLoopPlot, sth.unitTravelState))
 		{
-			if (canCrossOcean(pLoopPlot, sth.unitTravelState))
+			int iPathTurns;
+			if (generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns, bIgnoreDanger))
 			{
-				int iPathTurns;
-				if (generatePath(pLoopPlot, MOVE_BUST_FOG, true, &iPathTurns, bIgnoreDanger))
-				{
-					int iValue = 10000;
-					iValue /= 100 + getPathCost();
+				int iValue = 10000;
+				iValue /= 100 + getPathCost();
 
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						pBestPlot = getPathEndTurnPlot();
-						pBestMissionPlot = pLoopPlot;
-					}
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					pBestPlot = getPathEndTurnPlot();
+					pBestMissionPlot = pLoopPlot;
 				}
 			}
 		}
