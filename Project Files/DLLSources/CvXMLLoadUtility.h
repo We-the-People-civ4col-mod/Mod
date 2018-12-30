@@ -65,6 +65,9 @@ public:
 	// loads globaldefines.xml and calls various other functions to load relevant global variables
 	DllExport bool SetPostGlobalsGlobalDefines();
 
+	// modded function to load the correct GameFont to match the language in question
+	void CvXMLLoadUtility::SetGameFont();
+
 	// calls various functions to release the memory associated with the global variables
 	DllExport void CleanUpGlobalVariables();
 
