@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<GameFonts xmlns="x-schema:LanguageSchema.xml">
+	<CodePage1250>res/Fonts/GameFont.tga</CodePage1250>
+	<CodePage1251>res/Fonts/GameFont.tga</CodePage1251>
+	<CodePage1252>res/Fonts/GameFont.tga</CodePage1252>
+	<CodePage1253>res/Fonts/GameFont.tga</CodePage1253>
+	<CodePage1254>res/Fonts/GameFont.tga</CodePage1254>
+	<CodePage1255>res/Fonts/GameFont.tga</CodePage1255>
+	<CodePage1256>res/Fonts/GameFont.tga</CodePage1256>
+	<CodePage1257>res/Fonts/GameFont.tga</CodePage1257>
+</GameFonts>

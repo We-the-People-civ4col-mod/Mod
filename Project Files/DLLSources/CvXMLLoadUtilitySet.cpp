@@ -37,7 +37,9 @@ static void verifyXMLsettings()
 #endif
 /// xml verification
 
-
+// Store which codepage is used when loading the GameFont
+// Critical as it is used to detect if the language is changed and the incorrect GameFont is loaded
+int iGameFontCodePage = 0;
 
 /// XML type preloading - start - Nightinggale
 
@@ -935,9 +937,49 @@ bool CvXMLLoadUtility::SetGlobalArtDefines()
 	LoadGlobalClassInfo(ARTFILEMGR.getTerrainArtInfo(), "CIV4ArtDefines_Terrain", "Art", "Civ4ArtDefines/TerrainArtInfos/TerrainArtInfo", NULL);
 	LoadGlobalClassInfo(ARTFILEMGR.getFeatureArtInfo(), "CIV4ArtDefines_Feature", "Art", "Civ4ArtDefines/FeatureArtInfos/FeatureArtInfo", NULL);
 
+	SetGameFont();
+
 	DestroyFXml();
 
 	return true;
+}
+
+void CvXMLLoadUtility::SetGameFont()
+{
+	FAssert(ARTFILEMGR.getInterfaceArtInfo().size() > 0);
+
+	bool bLoaded = LoadCivXml(m_pFXml, "xml\\Interface\\GameFonts.xml");
+	if (!bLoaded)
+	{
+		return;
+	}
+
+
+	CvString szBuffer;
+	if (!gDLL->getXMLIFace()->LocateNode(GetXML(), "GameFonts"))
+	{
+		return;
+	}
+	
+	iGameFontCodePage = CvGameText::getCodePage();
+
+	switch (iGameFontCodePage)
+	{
+	case 1250: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1250"); break;
+	case 1251: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1251"); break;
+	case 1252: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1252"); break;
+	case 1253: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1253"); break;
+	case 1254: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1254"); break;
+	case 1255: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1255"); break;
+	case 1256: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1256"); break;
+	case 1257: gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1257"); break;
+	default: FAssert(false);  gDLL->getXMLIFace()->SetToChildByTagName(GetXML(), "CodePage1252"); break;
+	}
+
+	CvString szPath;
+	GetXmlVal(szPath);
+
+	ARTFILEMGR.getInterfaceArtInfo(GC.getInfoTypeForString("FONTS_GAMEFONT", true)).setPath(szPath.c_str());
 }
 
 //------------------------------------------------------------------------------------------------------
@@ -963,7 +1005,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 
 		// Set the locate to the one needed by the language in question
 		// Sadly this seems to be very much hit or miss on a per computer basis. Sometimes it works and sometimes it doesn't.
-		// If it doesn't work, the user has to change the windows locale manually. Guide: 
+		// If it doesn't work, the user has to change the windows locale manually.
 		setlocale(LC_CTYPE, CvString::format(".%d", CvGameText::getCodePage()).c_str());
 
 		//
@@ -1022,6 +1064,13 @@ bool CvXMLLoadUtility::LoadGlobalText()
 	else
 	{
 		logMsg("Read GlobalText from cache");
+	}
+
+	if (iGameFontCodePage != 0 && iGameFontCodePage != CvGameText::getCodePage())
+	{
+		char	szMessage[1024];
+		sprintf(szMessage, CvString::format("%S", gDLL->getText("TXT_KEY_NEW_LANGUAGE_RESTART_REQUIRED").c_str()));
+		gDLL->MessageBox(szMessage, "Restart required");
 	}
 
 	gDLL->destroyCache(cache);

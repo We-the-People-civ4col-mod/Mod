@@ -1,7 +1,26 @@
 
 <Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="CodePage1250" content="textOnly"/>
+	<ElementType name="CodePage1251" content="textOnly"/>
+	<ElementType name="CodePage1252" content="textOnly"/>
+	<ElementType name="CodePage1253" content="textOnly"/>
+	<ElementType name="CodePage1254" content="textOnly"/>
+	<ElementType name="CodePage1255" content="textOnly"/>
+	<ElementType name="CodePage1256" content="textOnly"/>
+	<ElementType name="CodePage1257" content="textOnly"/>
 	<ElementType name="Language" content="textOnly"/>
 
+	<ElementType name="GameFonts" content="eltOnly">
+		<element type="CodePage1250"/>
+		<element type="CodePage1251"/>
+		<element type="CodePage1252"/>
+		<element type="CodePage1253"/>
+		<element type="CodePage1254"/>
+		<element type="CodePage1255"/>
+		<element type="CodePage1256"/>
+		<element type="CodePage1257"/>
+	</ElementType>
+	
 	<ElementType name="Languages" content="eltOnly">
 		<element type="Language" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
