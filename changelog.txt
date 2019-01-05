@@ -1,5 +1,13 @@
 We the People Changelog
 
+Version 2.7.1.1
+
+Fixes:
+
+- Bug in choose profession GUI, which could result in the popup window showing up each turn in multiplayer
+- AI players no longer have free custom houses
+- Natives now store production from more than one turn (related to the custom house issue)
+
 Version 2.7.1
 
 Improvements:
