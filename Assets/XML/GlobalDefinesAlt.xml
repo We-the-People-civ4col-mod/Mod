@@ -171,7 +171,7 @@
 	</Define>
 	<Define>
 		<DefineName>LBD_CHANCE_INCREASE_EXPERT</DefineName>
-		<iDefineIntVal>1</iDefineIntVal>
+		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>LBD_PRE_ROUNDS_EXPERT</DefineName>

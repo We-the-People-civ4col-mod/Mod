@@ -18,6 +18,14 @@ Fixes:
 - #40 Worldbuilder issue making very difficult to set diplomatic attitudes fixed.
 - #51 Fixed case where AI could turn stone into lumber (copy paste error)
 - #73 Shipwrecks no longer appear under ice.
+- #77 Learn by Doing system is upgraded:
+        - Now the chance of becoming an expert increases with time.
+        - learn by doing chance is correctly adjusted with game speed.
+        - The overall chance of a unit to become expert is significantly increased,
+          specially for leaders with bonuses to the "chance of becoming expert through hard work".
+        - Changing professions do not reset the Learn by doing count: if only makes the 
+          possibility of an unit to become expert at that turn to be zero.
+        - DOWNSIDE: units may become experts on professions they have recently changed into.
 - #86 The Domestic Advisor: Native tab now allows sorting by the goods the indians want.
 - #87 Hurry production fails if there isn't warehouse space.
 - #96 The Domestic Advisor: native tab now shows natives that you have discovered, but not yet talked with.
