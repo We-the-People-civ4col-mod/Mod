@@ -20003,24 +20003,7 @@ bool CvPlayer::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, i
 	if (currentProfession != lastProfession)
 	{
 		convUnit->setLastLbDProfession(currentProfession);
-		if(isHuman())
-		{
-			//workedRounds = 1;
-			convUnit->setLbDrounds(1);
-		}
-		// here little cheat for AI to cope with feature
-		// profession change does not reset worked rounds
-		else
-		{
-			//workedRounds++;
-			convUnit->setLbDrounds(workedRounds + 1);
-		}
-	}
-
-	else
-	{
-		//workedRounds++;
-		convUnit->setLbDrounds(workedRounds + 1);
+		return false;
 	}
 
 	if (workedRounds < pre_rounds)
@@ -20168,12 +20151,31 @@ void CvPlayer::doLbD()
 	//getting GameSpeedModifiert in percent
 	int train_percent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
-	//moddifying Expert values with GameSpeed
-	chance_increase_expert = chance_increase_expert / train_percent / 100;
+	//moddifying values with GameSpeed
+	chance_increase_expert = chance_increase_expert * 100 / train_percent;
 	pre_rounds_expert = pre_rounds_expert * train_percent / 100;
 
-	chance_increase_free = chance_increase_free / train_percent / 100;
+	chance_increase_free = chance_increase_free * 100 /  train_percent ;
+	if(chance_increase_free <= 0) {
+		chance_increase_free = 1;
+	}
+	if (chance_increase_expert <= 0) {
+		chance_increase_expert = 1;
+	}
 	pre_rounds_free = pre_rounds_free * train_percent / 100;
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		TraitTypes eTrait = (TraitTypes) iTrait;
+		if (eTrait != NO_TRAIT)
+		{
+			if (hasTrait(eTrait))
+			{
+				pre_rounds_expert *= 100;
+				pre_rounds_expert /= GC.getTraitInfo(eTrait).getLearningByDoingModifier() + 100;
+				
+			}
+		}
+	}
 
 	// loop through units
 	CvUnit* pLoopUnit;
@@ -20413,7 +20415,7 @@ void CvPlayer::checkForNativeSlaves()
 					discount = 50;
 				}
 				int totalslaveprice = baseslaveprice - discount;
-				
+
 				//Gamespeed
 				int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
@@ -21573,7 +21575,7 @@ void CvPlayer::checkForConquistadors()
 					m_iTimerConquistador = GC.getTIMER_CONQUISTADOR() * gamespeedMod /100 ;
 					//create the conquistador
 					UnitTypes ConquistadorType;
-					int conquistUnitRand = GC.getGameINLINE().getSorenRandNum(3, "Conquistadors Available");	
+					int conquistUnitRand = GC.getGameINLINE().getSorenRandNum(3, "Conquistadors Available");
 					if (conquistUnitRand == 1)
 					{
 						ConquistadorType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_MOUNTED_CONQUISTADOR"));
