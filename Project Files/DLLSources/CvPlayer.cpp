@@ -20415,7 +20415,7 @@ void CvPlayer::checkForNativeSlaves()
 					discount = 50;
 				}
 				int totalslaveprice = baseslaveprice - discount;
-
+				
 				//Gamespeed
 				int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
@@ -21575,7 +21575,7 @@ void CvPlayer::checkForConquistadors()
 					m_iTimerConquistador = GC.getTIMER_CONQUISTADOR() * gamespeedMod /100 ;
 					//create the conquistador
 					UnitTypes ConquistadorType;
-					int conquistUnitRand = GC.getGameINLINE().getSorenRandNum(3, "Conquistadors Available");
+					int conquistUnitRand = GC.getGameINLINE().getSorenRandNum(3, "Conquistadors Available");	
 					if (conquistUnitRand == 1)
 					{
 						ConquistadorType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_MOUNTED_CONQUISTADOR"));

@@ -125,7 +125,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	CvPlot* pAdjacentPlot;
 	CvPlot* pPlot;
 	BuildingTypes eLoopBuilding;
-
+	
 	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 
 	//--------------------------------
