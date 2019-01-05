@@ -2621,7 +2621,7 @@ bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo 
 	}
 
 	//Androrc Multiple Professions per Building
-	BuildingTypes eWorkingBuilding;
+	BuildingTypes eWorkingBuilding = NO_BUILDING;
 	if (pCity != NULL)
 	{
 		// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -2760,7 +2760,7 @@ bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo 
 //								++iNumButtons;
 //								szText = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEM", kProfession.getTextKeyWide(), iBestYieldAmount, iProfessionYieldChar);
 //								gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kProfession.getButton(), iProfession, WIDGET_GENERAL);
-								if(!bShowOnlyBuildingCitizens || kProfession.getSpecialBuilding() == GC.getBuildingInfo(eWorkingBuilding).getSpecialBuildingType())
+								if(!bShowOnlyBuildingCitizens || (eWorkingBuilding != NO_BUILDING && kProfession.getSpecialBuilding() == GC.getBuildingInfo(eWorkingBuilding).getSpecialBuildingType()))
 								{
 									++iNumButtons;
 									for (uint iI = 0; iI < eProfessionYields.size(); iI++)

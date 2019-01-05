@@ -5248,12 +5248,6 @@ void CvCity::cache_storageLossTradeValues_usingRawData()
 
 		//... apply the minimum values derived from the human players handicap level ...
 		m_iStorageLossSellPercentage = GC.getHandicapInfo(getHandicapType()).getAIMinimumStorageLossSellPercentage();
-
-		//... and cheat hardcoded:
-		//The AI players cities can always ignore boycotts by their king ...
-		m_bIgnoresBoycott = true;
-		//... and the storage loss trade settings (aka customs house settings) are always unlocked
-		m_bHasUnlockedStorageLossTradeSettings = true;
 	}
 
 	//For human and AI players alike:
