@@ -785,7 +785,9 @@ class CvEuropeScreen:
 					screen.setImageButtonAt("PreviewMode", "DialogMap", ArtFileMgr.getInterfaceArtInfo(szPreviewMode).getPath(), self.MAP_SIZE - 40, self.MAP_SIZE - 40, 40, 40, WidgetTypes.WIDGET_GENERAL, self.PREVIEW_MODE, -1)
 				
 				elif (inputClass.getData1() == self.BOYCOTT) :
-					self.liftBoycott(inputClass.getData2())
+					if not player.isInRevolution():
+						# WTP, Erik: Lifting a boycott is not allowed during the revolution
+						self.liftBoycott(inputClass.getData2())
 					
 				elif (inputClass.getData1() == self.BOYCOTT_EXEC) :	
 					iYield = inputClass.getData2()
@@ -907,7 +909,11 @@ class CvEuropeScreen:
 			elif iData1 == self.PREVIEW_MODE:
 				return localText.getText("TXT_KEY_EU_PREVIEW_MODE", ())
 			elif iData1 == self.BOYCOTT:
-				return localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iData2), gc.getYieldInfo(iData2).getDescription()))
+				# WTP, Erik: Prevent the hoovertext from suggesting that lifting a boycott is possible during the revolution				
+				if player.isInRevolution():
+					return u""
+				else:
+					return localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iData2), gc.getYieldInfo(iData2).getDescription()))
 			# R&R, Robert Surcouf, No More Variables Hidden game option START
 			elif iData1 == self.HELP_TAX_RATE:
 				if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
