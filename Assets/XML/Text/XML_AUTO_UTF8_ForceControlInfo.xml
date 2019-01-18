@@ -2,10 +2,6 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_FORCE_ADVANCED_START</Tag>
-        <English>????</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FORCE_ADVANCED_START</Tag>
         <English>Force Advanced Start</English>
         <French>Forcer le démarrage avancé</French>
         <German>Fortgeschrittenen Start erzwingen</German>
