@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ARMORY</Tag>
-        <English>????</English>
-    </TEXT>
+    	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ARMORY</Tag>
+		<English>Armory</English>
+		<French>
+			<Text>Armurerie:Armureries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Waffenkammer</German>
+		<Italian>
+			<Text>Armeria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Polvorín:Polvorines</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ARMORY_PEDIA</Tag>
         <English>An armory is a repository for firearms, cannon and other implements of destruction as well as a drill area for troops or militia. The creation of an armory was a near necessity for burgeoning colonies, as there was a constant need for firearms to defend against the attacks of wildlife or angered natives. And while invaluable to the survival of a nascent settlement, armories were usually sequestered away from the rest of a colony, in case a rough match or spark should drift in through their doors and cause the powder to catch, a lesson that more than a few young colonies were forced to learn the hard way.</English>
@@ -21,9 +37,25 @@
         <Spanish>El [COLOR_BUILDING_TEXT]Polvorín[COLOR_REVERT] es el taller básico donde trabaja el Armero. Con un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] asignado a trabajar en un [COLOR_BUILDING_TEXT]Polvorín[COLOR_REVERT], el asentamiento consumirá tres [COLOR_HIGHLIGHT_TEXT]Herramientas[COLOR_REVERT] por turno y generará tres [COLOR_HIGHLIGHT_TEXT]Armas[COLOR_REVERT]. Asignar a un [COLOR_UNIT_TEXT]Maestro armero[COLOR_REVERT] aquí o modernizarlo a un [COLOR_BUILDING_TEXT]Arsenal[COLOR_REVERT] aumentará la producción de [COLOR_HIGHLIGHT_TEXT]Armas[COLOR_REVERT] significativamente. Construir un [COLOR_BUILDING_TEXT]Polvorín[COLOR_REVERT] además os permitirá fabricar [COLOR_UNIT_TEXT]Cañones[COLOR_REVERT] en el asentamiento.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_ARSENAL</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_ARSENAL</Tag>
+		<English>Arsenal</English>
+		<French>
+			<Text>Arsenal:Arsenaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Arsenal</German>
+		<Italian>
+			<Text>Arsenale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de armas:Fábricas de armas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_ARSENAL_PEDIA</Tag>
         <English>Arsenals are enormous weapons factories, capable of producing arms at a rate sufficient enough to supply an entire colony! The United States, for example, had but one arsenal when it declared independence, only building a second in 1805.[PARAGRAPH:1]Arsenals, because of their strategic importance, were often among the first targets an enemy could be expected to attack. The arsenal in Springfield, Massachusetts, America's first arsenal, was marched on by Daniel Shay, a disgruntled Revolutionary War veteran, bent on halting the Constitutional Convention of 1786, before Shay's Rebellion was put down by federal troops. America's second Arsenal, built in Harper's Ferry, West Virginia, gained great renown when, in 1859, abolitionist John Brown attempted to seize its stockpile to strike a blow against slavery.</English>
@@ -65,9 +97,15 @@
         <Spanish>Los [COLOR_BUILDING_TEXT]Altares de sacrificios[COLOR_REVERT], los equivalentes aztecas de las [COLOR_BUILDING_TEXT]Delegaciones[COLOR_REVERT], reducen los costes de mantenimiento de las ciudades y la duración del descontento por sacrificar población. También ayudan a gestionar el coste que supone controlar un gran imperio. </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BASECAMP</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BASECAMP</Tag>
+		<English>Basecamp</English>
+		<French>
+			<Text>Camp de Base:Camps de Base</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Basislager</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BASECAMP_PEDIA</Tag>
         <English>The styles of government of the European colonies varied widely from one another, leading to the creation of a medley of different styles of town halls. The Dutch and English colonies, both founded by citizens of nations with long histories of government participation, often created meeting halls where citizens could gather and discuss current issues. By 1619, English colonists had organized the first elected white legislature in the New World. The French colonies too were ruled by council, although with significantly more oversight from the representatives of power of the mother land. The strong monarchy of Spain led her colonies towards a more autocratic style of rule. As a result, the government offices of New Spain were often the quarters of the colony's crown-appointed governors.</English>
@@ -85,9 +123,11 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Basecamp[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BEER_FACTORY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BEER_FACTORY</Tag>
+		<English>Beer Factory</English>
+		<French>Brasserie industrielle</French>
+		<German>Bierfabrik</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BEER_FACTORY_PEDIA</Tag>
         <English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
@@ -105,9 +145,25 @@
         <Spanish>The [COLOR_HIGHLIGHT_TEXT]Beer Factory[COLOR_REVERT] is the highest level of brewery buildings. Brewers brew [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BLACKSMITH_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BLACKSMITH_HOUSE</Tag>
+		<English>Blacksmith's House</English>
+		<French>
+			<Text>Atelier du forgeron:Ateliers de forgeron</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Dorfschmiede</German>
+		<Italian>
+			<Text>Casa del fabbro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del herrero:Casas del herrero</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BLACKSMITH_HOUSE_PEDIA</Tag>
         <English>Due to the lack of foundries which could quickly create new metal objects, iron was an exceptionally precious metal in the early colonies. This made the blacksmith an essential part of any successful colony, as broken iron instruments could only be repaired or ordered new from England at great cost. [PARAGRAPH:1]But the blacksmith's job was not easy. Even working at the bare minimum, a blacksmith required an impressive amount of tools - tongs, hammers, bellows, anvil, trough and forge. As well, they needed a roof over their head, so that they could see the metal they were working had reached an appropriate temperature. The Blacksmith's House represents this invaluable, if meager, set-up. A skilled blacksmith can make just about anything a young colony could require with a Blacksmith's House, so long as he's given plenty of time to do the job.</English>
@@ -125,9 +181,25 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Blacksmith's House[COLOR_REVERT] represents the most basic form of [COLOR_HIGHLIGHT_TEXT]Tools[COLOR_REVERT] production facility available. A [COLOR_UNIT_TEXT]Free Colonist[COLOR_REVERT] working here will create three tools per turn at a cost of three [COLOR_HIGHLIGHT_TEXT]Ore[COLOR_REVERT]. This number can be increased greatly by assigning a [COLOR_UNIT_TEXT]Master Blacksmith[COLOR_REVERT] to work here or by upgrading to a [COLOR_BUILDING_TEXT]Blacksmith's Shop[COLOR_REVERT], an [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT], a [COLOR_BUILDING_TEXT]Tool Factory[COLOR_REVERT] or even a [COLOR_BUILDING_TEXT]Great Tool Factory[COLOR_REVERT] (which you can only build at rivers). You can get Master Blacksmiths by education or by recruiting them at europe harbour.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BLACKSMITH_SHOP</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BLACKSMITH_SHOP</Tag>
+		<English>Blacksmith's Shop</English>
+		<French>
+			<Text>Forge:Forges</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stadtschmiede</German>
+		<Italian>
+			<Text>Bottega del fabbro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Herrería:Herrerías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BLACKSMITH_SHOP_PEDIA</Tag>
         <English>Only using an anvil to craft and shape tools is an exceedingly time-consuming system. For this reason, well-armed blacksmiths own all variety of molds to allow the speedy creation of specific tools. Swages and fullers are two of the most important such tools. Essentially hunks of hardened iron with a variety of bumps and divots carved into them, these tools could be used to rapidly make common shapes by simply hammering heated metal into the appropriate grooves. Horseshoes, spoons, hooks, and many other items that had to be produced on a regular basis had their own distinct swages and fullers so that a smith could create new effective tools with great haste. </English>
@@ -145,465 +217,11 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Blacksmith's House[COLOR_REVERT] represents the most basic form of [COLOR_HIGHLIGHT_TEXT]Tools[COLOR_REVERT] production facility available. A [COLOR_UNIT_TEXT]Free Colonist[COLOR_REVERT] working here will create three tools per turn at a cost of three [COLOR_HIGHLIGHT_TEXT]Ore[COLOR_REVERT]. This number can be increased greatly by assigning a [COLOR_UNIT_TEXT]Master Blacksmith[COLOR_REVERT] to work here or by upgrading to a [COLOR_BUILDING_TEXT]Blacksmith's Shop[COLOR_REVERT], an [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT], a [COLOR_BUILDING_TEXT]Tool Factory[COLOR_REVERT] or even a [COLOR_BUILDING_TEXT]Great Tool Factory[COLOR_REVERT] (which you can only build at rivers). You can get Master Blacksmiths by education or by recruiting them at europe harbour.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BANANA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BANANA_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BANANA_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BARLEY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BARLEY_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BARLEY_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BISON</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BISON_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BISON_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BOREAL_FOREST</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BOREAL_FOREST_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_BOREAL_FOREST_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_CATTLE</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_CATTLE_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_CATTLE_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCA_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCA_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCOA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCOA_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCOA_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCONUT</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCONUT_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COCONUT_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COFFEE</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COFFEE_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COFFEE_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_CORN</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_CORN_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_CORN_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COTTON</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COTTON_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_COTTON_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_DEER</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_DEER_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_DEER_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_FUR</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_FUR_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_FUR_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GEMS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GEMS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GEMS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GIANT_TREE</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GIANT_TREE_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GIANT_TREE_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GOLD</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GOLD_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GOLD_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GRAPES</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GRAPES_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_GRAPES_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_HEMP</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_HEMP_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_HEMP_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_HORSES</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_HORSES_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_HORSES_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_INDIGO</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_INDIGO_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_INDIGO_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_IRON</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_IRON_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_IRON_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_MELON</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_MELON_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_MELON_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_MINERALS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_MINERALS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_MINERALS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_OASIS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_OASIS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_OASIS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_POTATO</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_POTATO_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_POTATO_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_PUMPKIN</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_PUMPKIN_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_PUMPKIN_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_RED_PEPPER</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_RED_PEPPER_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_RED_PEPPER_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SALT</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SALT_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SALT_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SEALS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SEALS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SEALS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SEA_OTTERS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SEA_OTTERS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SEA_OTTERS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SHEEP</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SHEEP_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SHEEP_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SILVER</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SILVER_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SILVER_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_STONE</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_STONE_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_STONE_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SUGAR</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SUGAR_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_SUGAR_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TIMBER</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TIMBER_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TIMBER_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TOBACCO</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TOBACCO_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TOBACCO_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TURKEYS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TURKEYS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_TURKEYS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_WALRUSS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_WALRUSS_PEDIA</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BONUS_WALRUSS_STRATEGY</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BREWERS_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BREWERS_HOUSE_PEDIA</Tag>
+		<English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
+		<French>[TAB]La bière est une boisson alcoolisée obtenue par fermentation de matières glucidiques végétales et d'eau. C'est une boisson alcoolisée obtenue par transformation de matières amylacées par voies enzymatiques et microbiologiques. Plus spécifiquement de nos jours, elles est généralement fabriquée à partir d'eau, de malt (céréale germée, principalement de l'orge, parfois additionné d'autres céréales) et depuis le Moyen âge, de houblon. C'est l'une des boissons les plus populaires et consommées au monde.</French>
+		<German>[TAB]Bier ist ein alkohol- und kohlensäurehaltiges Getränk, das durch Gärung meist aus den Grundzutaten Wasser, Malz und Hopfen gewonnen wird. Malz wiederum ist getrocknetes und gekeimtes Getreide, meist Gerste. Bier ist schon seit tausenden Jahren bekannt.</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BREWERS_HOUSE_PEDIA</Tag>
         <English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
@@ -621,9 +239,11 @@
         <Spanish>The [COLOR_HIGHLIGHT_TEXT]Brewers House[COLOR_REVERT] is the lowest level of brewery buildings. Brewers brew [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BREWERY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BREWERY_PEDIA</Tag>
+		<English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
+		<French>[TAB]La bière est une boisson alcoolisée obtenue par fermentation de matières glucidiques végétales et d'eau. C'est une boisson alcoolisée obtenue par transformation de matières amylacées par voies enzymatiques et microbiologiques. Plus spécifiquement de nos jours, elles est généralement fabriquée à partir d'eau, de malt (céréale germée, principalement de l'orge, parfois additionné d'autres céréales) et depuis le Moyen âge, de houblon. C'est l'une des boissons les plus populaires et consommées au monde.</French>
+		<German>[TAB]Bier ist ein alkohol- und kohlensäurehaltiges Getränk, das durch Gärung meist aus den Grundzutaten Wasser, Malz und Hopfen gewonnen wird. Malz wiederum ist getrocknetes und gekeimtes Getreide, meist Gerste. Bier ist schon seit tausenden Jahren bekannt.</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BREWERY_PEDIA</Tag>
         <English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
@@ -641,9 +261,11 @@
         <Spanish>The [COLOR_HIGHLIGHT_TEXT]Brewery[COLOR_REVERT] is the intermediate level of brewery buildings. Brewers brew [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BUTCHERS_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BUTCHERS_HOUSE</Tag>
+		<English>Butchers House</English>
+		<French>Maison du Boucher</French>
+		<German>Metzgerhaus</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BUTCHERS_HOUSE_PEDIA</Tag>
         <English>[TAB]Butchery is a traditional work. Slaughterhouses use butchers to slaughter the animals, performing one or a few of the steps repeatedly as specialists on a organized and work divided disassembly line. The steps include stunning (rendering the animal incapacitated), exsanguination (severing the carotid or brachial arteries to facilitate blood removal), skinning (removing the hide or pelt) or scalding and dehairing (pork), evisceration (removing the viscera) and splitting (dividing the carcass in half longitudinally).</English>
@@ -661,9 +283,11 @@
         <Spanish>[TAB]The [COLOR_HIGHLIGHT_TEXT]Butchers House[COLOR_REVERT] is the lowest level of buildings for butchers. Colonists with profession Butcher produce [COLOR_HIGHLIGHT_TEXT]Food[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wool[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Hides[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Cattle[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Butchers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_BUTCHERY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_BUTCHERY</Tag>
+		<English>Butchery</English>
+		<French>Boucherie</French>
+		<German>Metzgerei</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BUTCHERY_PEDIA</Tag>
         <English>[TAB]Butchery is a traditional work. Slaughterhouses use butchers to slaughter the animals, performing one or a few of the steps repeatedly as specialists on a organized and work divided disassembly line. The steps include stunning (rendering the animal incapacitated), exsanguination (severing the carotid or brachial arteries to facilitate blood removal), skinning (removing the hide or pelt) or scalding and dehairing (pork), evisceration (removing the viscera) and splitting (dividing the carcass in half longitudinally).</English>
@@ -681,9 +305,25 @@
         <Spanish>[TAB]The [COLOR_HIGHLIGHT_TEXT]Butchery[COLOR_REVERT] is the intermediate level of buildings for butchers. Colonists with profession Butcher produce [COLOR_HIGHLIGHT_TEXT]Food[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Wool[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Hides[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Sheep[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Cattle[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Butchers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CARPENTER_SHOP</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CARPENTER_SHOP</Tag>
+		<English>Carpenter's Shop</English>
+		<French>
+			<Text>Atelier du menuisier:Ateliers de menuisier</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zimmerei</German>
+		<Italian>
+			<Text>Bottega del carpentiere</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ebanistería:Ebanisterías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CARPENTER_SHOP_PEDIA</Tag>
         <English>Due to the general lack of iron in the early colonies, the carpenter was the most important craftsman a town could have. Carpenters had the daunting task of fashioning from lumber many tools that would normally be made of iron, such as hinges, shovels and spades. But by the 18th century, the average carpenter had at hand a plethora of tools to perform the various tasks needed to aid in the construction of the growing colony. Saws and augers could be used in order to cut the wood and drill any holes needed to hold the pieces together. Squares, bevels and compasses were used to measure the level and angle of two pieces of wood. Finally, planes, chisels and drawknives could be used to whittle away the excess until the work was smooth and fit for human usage.</English>
@@ -737,9 +377,19 @@
         <Spanish>La [COLOR_BUILDING_TEXT]Abadía[COLOR_REVERT] es el edificio de tercer nivel de producción de Cruces. Poner a un Colono libre a trabajar aquí; generará seis [COLOR_HIGHLIGHT_TEXT]Cruces[COLOR_REVERT] por turno para el asentamiento. Esta cantidad puede aumentarse asignando a un [COLOR_UNIT_TEXT]Predicador exaltado[COLOR_REVERT] o un [COLOR_UNIT_TEXT]Devout Priest[COLOR_REVERT] a trabajar en la [COLOR_BUILDING_TEXT]Abadía[COLOR_REVERT] o construyendo una [COLOR_BUILDING_TEXT]Catedral[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CENTRAL_CITY_MARKET</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CENTRAL_CITY_MARKET</Tag>
+		<English>Regional Market</English>
+		<French>
+			<Text>Bourse coloniale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Überregionaler Kolonialmarkt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CENTRAL_CITY_MARKET_PEDIA</Tag>
         <English>[TAB]The colonists of the New World were not only producing and exporting goods to Europe but also consumers. Certain goods that the colonies could not produce themselves, especially luxury goods, were imported and sold for high prices in Markets and Trade-Centers in the colonies. Some of the Shopkeepers and Traders became extremely rich.</English>
@@ -757,9 +407,29 @@
         <Spanish>[COLOR_HIGHLIGHT_TEXT]Luxury Goods[COLOR_REVERT] and other goods are sold to the colonists. The amount strongly depends on the number of citizens of the City and their social status. They will directly pay in gold. A [COLOR_HIGHLIGHT_TEXT]Market[COLOR_REVERT] is needed to enable the domestic market within a city. The higher levels, [COLOR_UNIT_TEXT]City Market[COLOR_REVERT] and [COLOR_UNIT_TEXT]Central Regional Market[COLOR_REVERT] increase demand for goods in a city.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CHAPEL</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CHAPEL</Tag>
+		<English>Chapel</English>
+		<French>
+			<Text>Chapelle:Chapelles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kapelle:Kapellen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Cappella:Cappelle</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Capilla:Capillas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CHAPEL_PEDIA</Tag>
         <English>After basic shelter, the chapel, and later the church, was likely the most important building of any colony. Spanish and English colonists in particular carried with them significant religious fervor. Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university. In the English colonies, Puritans, Quakers, and Catholics alike started new lives in order to worship in peace, bringing with them all shapes of new religious buildings.</English>
@@ -805,9 +475,25 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Chickee[COLOR_REVERT] is the native equivalent of the [COLOR_BUILDING_TEXT]Warehouse[COLOR_REVERT]. Some native civilizations have chickees in their settlements. They increase the amount of each type of good the settlement can hold by 100.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CHURCH</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CHURCH</Tag>
+		<English>Church</English>
+		<French>
+			<Text>Eglise:Eglises</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Kirche</German>
+		<Italian>
+			<Text>Chiesa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Iglesia:Iglesias</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CHURCH_PEDIA</Tag>
         <English>After basic shelter, the chapel, and later the church, was likely the most important building of any colony. Spanish and English colonists in particular carried with them significant religious fervor. Catholic monks traveling abroad in the name of God and country helped create many of New Spain's most important institutions, including numerous monasteries, cathedrals and the New World's first university. In the English colonies, Puritans, Quakers, and Catholics alike started new lives in order to worship in peace, bringing with them all shapes of new religious buildings.</English>
@@ -825,9 +511,25 @@
         <Spanish>La [COLOR_BUILDING_TEXT]Iglesia[COLOR_REVERT] es el edificio de segundo nivel de producción de Cruces. Poner a un Colono libre a trabajar aquí; generará tres [COLOR_HIGHLIGHT_TEXT]Cruces[COLOR_REVERT] por turno para el asentamiento. Esta cantidad puede aumentarse asignando a un [COLOR_UNIT_TEXT]Predicador exaltado[COLOR_REVERT] o un [COLOR_UNIT_TEXT]Devout Priest[COLOR_REVERT] a trabajar en la [COLOR_BUILDING_TEXT]Iglesia[COLOR_REVERT] o construyendo una [COLOR_BUILDING_TEXT]Abadía[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CIGAR_FACTORY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CIGAR_FACTORY</Tag>
+		<English>Cigar Factory</English>
+		<French>
+			<Text>Usine de cigares:Usines de cigares</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zigarrenfabrik</German>
+		<Italian>
+			<Text>Fabbrica di sigari</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de puros:Fábricas de puros</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CIGAR_FACTORY_PEDIA</Tag>
         <English>While Virginia was known early on for the quality of its tobacco, and other locales soon developed similar renown for their own brands of smoked goods, nowhere contributed to the development of the cigar as much as Cuba. While stifled by the iron fist Spain asserted over their tobacco production, cigar factories eventually developed in Cuba, particularly on the island's western end, which became world renowned for the quality of its tobacco. Because of the manual dexterity required in expertly rolling a cigar, skilled laborers were often imported to ensure the quality of their product, which to this day remain some of the most sought-after cigars on the planet.</English>
@@ -845,9 +547,15 @@
         <Spanish>Las [COLOR_BUILDING_TEXT]Fábricas de puros[COLOR_REVERT] son los productores definitivos de ganancias derivadas del Tabaco. Si un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] trabaja en una [COLOR_BUILDING_TEXT]Fábrica de puros[COLOR_REVERT], producirá nueve [COLOR_HIGHLIGHT_TEXT]Puros[COLOR_REVERT] por turno, pero a un coste de solo seis unidades de [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT]. Esta cantidad se puede aumentar todavía más si ponéis a un [COLOR_UNIT_TEXT]Maestro tabaquero[COLOR_REVERT] a trabajar en la fábrica. Debéis construir un [COLOR_BUILDING_TEXT]Aserradero[COLOR_REVERT] para poder levantar este edificio.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CITADEL</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CITADEL</Tag>
+		<English>Citadel</English>
+		<French>
+			<Text>Citadelle:Citadelles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zitadelle</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITADEL_PEDIA</Tag>
         <English>Fortresses are massive defensive structures, capable of housing dozens of cannon, hundreds of men, as well as supplies, munitions and barracks. Fortresses were most often built in areas of high conflict between the various colonial powers. For this reason, no area has a higher concentration of fortresses in the New World than the Caribbean. To defend against the assaults of opposing colonies as well as the occasional pirate raid, many major colonial settlements of the Caribbean built enormous defense structures around their harbors in order to protect them against enemy naval incursions. Many of these fortresses were used for hundreds of years after their construction. The Castillo de San Pedro de la Roca in Cuba was used as recently as 1898 to defend Cuba from the assaults of the United States during the Spanish-American War.</English>
@@ -865,9 +573,15 @@
         <Spanish>Building structures for the defense of a city will provide units in that settlement with a combat bonus in percent, depending on the level of that building. But be aware, that all units on horseback and also Cannons will not benefit from it![NEWLINE][NEWLINE]The first structure are the [COLOR_BUILDING_TEXT]Chevaux De Frise[COLOR_REVERT] that offer a 30% bonus. It is followed by a [COLOR_BUILDING_TEXT]Stockade[COLOR_REVERT] (60%), a [COLOR_BUILDING_TEXT]Fort[COLOR_REVERT] (90%) and a [COLOR_BUILDING_TEXT]Fortress[COLOR_REVERT] (120%). If adding a [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT] the bonus will be finally 150%. The [COLOR_BUILDING_TEXT]Great Bastion[COLOR_REVERT] will raise the bonus up to 160%. Note also, that any kind of fortification will lower the risk of becoming looted by natives </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CITYHALL</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CITYHALL</Tag>
+		<English>City Hall</English>
+		<French>
+			<Text>Hôtel de ville:Hôtels de ville</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Rathaus</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITYHALL_PEDIA</Tag>
         <English>TXT_KEY_BUILDING_TOWNHALL_PEDIA</English>
@@ -881,9 +595,11 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Cityhall[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CITY_HOSPITAL</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_HOSPITAL</Tag>
+		<English>City Hospital</English>
+		<French>Hôpital</French>
+		<German>Bezirkskrankenhaus</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CITY_HOSPITAL_PEDIA</Tag>
         <English>Medical care improves healthiness of the citizens in the colonies. The higher the population of a city gets, the more it will suffer from diseases and problems resulting from hygenical situation through wastes or polution from factories. During the times of the colonization of the New World, medicine and saniation systems were still not very advanced. In the New World even less than in Europe. But with increasing wealth and size of the colonies and also of course scientific advances this situation improved over the decades. More and more doctors settled down in villages in especially the cities and hospitals, sewers and other sanitary systems were established. This again affected positivly productivity and growth of the colonies.</English>
@@ -901,9 +617,25 @@
         <Spanish>The bigger the populations of a city gets the higher the risk of diseases spreading and the more waste and polution. This will negative affect the health and productivity of the citizens. To counter that effect medical care needs to be provided. [COLOR_BUILDING_TEXT]City Hospitals[COLOR_REVERT] are the most advanced buildings for medical care and allows many citizens to work as [COLOR_BUILDING_TEXT]Healers[COLOR_REVERT]. [COLOR_BUILDING_TEXT]Renowned Medics[COLOR_REVERT] are most proficient in this profession.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_COLLEGE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_COLLEGE</Tag>
+		<English>College</English>
+		<French>
+			<Text>Académie:Académies</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Akademie</German>
+		<Italian>
+			<Text>College</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colegio universitario:Colegios universitarios</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_COLLEGE_PEDIA</Tag>
         <English>A college is an institution of higher learning, although the exact meaning of the word differs greatly based on the culture which is using it. In the English system of education, colleges are often specialized institutions that make up a university. Oxford University, England's most prestigious university, had 17 individual colleges by 1610. The English college system would be adopted by her colonies in the New World, and by 1636, North America had its first college, Harvard College, which, with time and investment, grew to become the world's most renowned university.</English>
@@ -921,9 +653,19 @@
         <Spanish>El [COLOR_BUILDING_TEXT]Colegio universitario[COLOR_REVERT] es la modernización de la [COLOR_BUILDING_TEXT]Escuela[COLOR_REVERT] y produce el doble de puntos de Educación. Si asignáis la profesión de estudiante a un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT], [COLOR_UNIT_TEXT]Siervo por deudas[COLOR_REVERT], [COLOR_UNIT_TEXT]Nativo converso[COLOR_REVERT] o [COLOR_UNIT_TEXT]Convicto[COLOR_REVERT], podrán adquirir la especialización de cualquiera de las unidades especialistas del asentamiento con más rapidez que en una mera Escuela.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_COLONIAL_CONGRESS</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_COLONIAL_CONGRESS</Tag>
+		<English>Colonial Congress</English>
+		<French>
+			<Text>Congrès des Colonies</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kolonialkongress</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_COLONIAL_CONGRESS_PEDIA</Tag>
         <English>The Congress was a convention of delegates called together from the Thirteen Colonies that became the governing body of the United States during the American Revolution. The Congress met from 1774 to 1789 in three incarnations. The first call for a convention was made over issues of the Intolerable Acts penalizing Massachusetts. Though at first divided on independence and a break from Crown rule, the new Congress in July 1776 gave a unanimous vote for independence, issued the Declaration of Independence as a new nation, the United States of America. It established a Continental Army, giving command to one of its members George Washington of Virginia. It waged war with Britain, made a military treaty with France, and funded the war effort with loans and paper money.</English>
@@ -941,9 +683,19 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Government Palace[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CORN_CHAMBER</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CORN_CHAMBER</Tag>
+		<English>Corn Chamber</English>
+		<French>
+			<Text>Grenier à maïs</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Getreidekammer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CORN_CHAMBER_PEDIA</Tag>
         <English>A granary is a storehouse or room in a barn for threshed grain or animal feed. Granaries are often built above the ground to keep the stored food away from mice and other animals. North America is the home of great granaries, known there as grain elevators. There are climatic difficulties in the way of storing grain on a large scale, but these difficulties have been largely overcome. To preserve grain in good condition it must be kept away as much as possible from moisture and heat. New grain when brought into a warehouse has a tendency to release moisture. Bacteria are more active in this condition and can heat the grain. If the heating is allowed to continue the quality of the grain suffers. An effectual remedy is to turn out the grain in layers, not too thick, on a floor, and to keep turning it over so as to aerate it thoroughly. Grain can thus be conditioned for storage in silos.</English>
@@ -961,9 +713,15 @@
         <Spanish>[COLOR_BUILDING_TEXT]Corn Chambers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Granaries[COLOR_REVERT] store some of the food after growth. Thus they help your cities to grow faster.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CUSTOM_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CUSTOM_HOUSE</Tag>
+		<English>Custom House</English>
+		<French>
+			<Text>Poste de douane:Postes de douane</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zollhaus</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CUSTOM_HOUSE_PEDIA</Tag>
         <English>The productive capabilities of the New World were a shock to many. By the tail end of the 1700s, colonies in the New World had become leaders in the production of cotton, rum, sugar, tobacco and gold. In response to the explosion of commerce, new infrastructure was continually being built in the New World's major port cities. Philadelphia, Havana, Boston, New Amsterdam all were littered with warehouses built to protect the new wealth of the colonies.</English>
@@ -981,9 +739,19 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Custom House[COLOR_REVERT] works as a storage facility, but allows you to sell surplus at 80% of their selling price in Europe, even for boycotted goods. As a roasting place, colonists working there can process [COLOR_HIGHLIGHT_TEXT]Cocoa pods[COLOR_REVERT] into [COLOR_HIGHLIGHT_TEXT]Cocoa[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Coffee berries[COLOR_REVERT] into [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT]. In one of your colony, you can build a [COLOR_BUILDING_TEXT]Central Customs Authority[COLOR_REVERT] as a national wonder in order to further increase your capacities.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_CUSTOM_OFFICE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_CUSTOM_OFFICE</Tag>
+		<English>Central Customs Authority</English>
+		<French>
+			<Text>Autorité centrale des Douanes</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Zentrales Zollamt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CUSTOM_OFFICE_PEDIA</Tag>
         <English>The productive capabilities of the New World were a shock to many. By the tail end of the 1700s, colonies in the New World had become leaders in the production of cotton, rum, sugar, tobacco and gold. In response to the explosion of commerce, new infrastructure was continually being built in the New World's major port cities. Philadelphia, Havana, Boston, New Amsterdam all were littered with warehouses built to protect the new wealth of the colonies.</English>
@@ -1001,9 +769,25 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Central Customs Authority[COLOR_REVERT] allows you to sell surplus at 90% of their selling price in Europe, even for boycotted goods. As a [COLOR_HIGHLIGHT_TEXT]National wonder[COLOR_REVERT], you can build only one in all of your colonies, once you've built enough Custom Houses. As a roasting place, colonists working there can process [COLOR_HIGHLIGHT_TEXT]Cocoa pods[COLOR_REVERT] into [COLOR_HIGHLIGHT_TEXT]Cocoa[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Coffee berries[COLOR_REVERT] into [COLOR_HIGHLIGHT_TEXT]Coffee[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE</Tag>
+		<English>Rum Distiller's House</English>
+		<French>
+			<Text>Atelier du distillateur:Ateliers de distillateur</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Rumbrennerei</German>
+		<Italian>
+			<Text>Casa del distillatore di rum</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del destilador de ron:Casas del destilador de ron</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERS_HOUSE_PEDIA</Tag>
         <English>Prior to the invention of rum in the mid-17th century, molasses, the sickly-sweet liquid used to produce the liquor, was considered waste and great quantities of it were simply discarded. When it was discovered that molasses, along with many other byproducts of sugar processing, could be combined in a great still, fermented and turned into a beverage enjoyable to the masses, many Caribbean sugar planters leapt at the chance to install stills in their plantations. While crude at first, the distillation of rum quickly became an artform, with numerous tricks to creating the perfect batch.</English>
@@ -1021,9 +805,25 @@
         <Spanish>La [COLOR_BUILDING_TEXT]Casa del destilador de ron[COLOR_REVERT] representa la forma más básica de instalación productora de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] que hay disponible. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje aquí producirá tres unidades de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] por turno al coste de tres de Azúcar. Esta cantidad puede aumentar significativamente si se asigna a un [COLOR_UNIT_TEXT]Maestro destilador[COLOR_REVERT] a trabajar aquí o se moderniza el edificio a una [COLOR_BUILDING_TEXT]Destilería de ron[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_DISTILLERY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_DISTILLERY</Tag>
+		<English>Rum Distillery</English>
+		<French>
+			<Text>Distillerie de rhum:Distilleries de rhum</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Rumbrennereibetrieb</German>
+		<Italian>
+			<Text>Distilleria di rum</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Destilería de ron:Destilerías de ron</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DISTILLERY_PEDIA</Tag>
         <English>While sugar cane was grown primarily in Brazil and the Caribbean and was first distilled there as well, New England soon became the heart of rum production in the New World. With the development of numerous distillery houses throughout New England in the mid-17th century, rum became the primary imbibe of the English colonies. The overwhelming success of rum in North America was in part because the spirit was thought to have medicinal properties, as when colonists switched from drinking water (which was often tainted with foreign bacteria) to drinking rum, they enjoyed noticeably longer lives.</English>
@@ -1041,9 +841,25 @@
         <Spanish>La [COLOR_BUILDING_TEXT]Destilería de ron[COLOR_REVERT] es el edificio intermedio de producción de Ron. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje aquí producirá tres unidades de [COLOR_HIGHLIGHT_TEXT]Ron[COLOR_REVERT] por turno al coste de seis de Azúcar. Esto se puede aumentar si se moderniza a una [COLOR_BUILDING_TEXT]Fábrica de ron[COLOR_REVERT] o se asigna a un [COLOR_UNIT_TEXT]Maestro destilador de ron[COLOR_REVERT] a trabajar aquí.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_DOCK</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_DOCK</Tag>
+		<English>Dock</English>
+		<French>
+			<Text>Docks</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Hafen</German>
+		<Italian>
+			<Text>Molo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Muelle:Muelles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DOCK_PEDIA</Tag>
         <English>Ships large enough to carry the 50 to 100 people needed to found a colony along with all the supplies and food necessary to keep those colonists alive could not make landfall just anywhere. Because of the significant depth of their keels, such ships had to either carry all their contents in smaller row boats or search for a natural harbor, a portion of coast where the water adjacent the land was deep. Building a dock, a long wooden walkway stretching into the sea, could allow ships to make landfall in areas that lacked a natural harbor. Soon the east coast of the Americas was littered with docks as more and more massive ships arrived carrying their colonial cargos.</English>
@@ -1061,9 +877,25 @@
         <Spanish>TAC: [COLOR_BUILDING_TEXT]Landingstage[COLOR_REVERT] is necessary for fishers. It is the first step to use the ocean to get fish.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_DRYDOCK</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_DRYDOCK</Tag>
+		<English>Drydock</English>
+		<French>
+			<Text>Cale sèche:Cales sèches</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Trockendock</German>
+		<Italian>
+			<Text>Bacino di carenaggio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Dique seco:Diques secos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DRYDOCK_PEDIA</Tag>
         <English>Drydocks are short canals that allow for easy repairs to a colony's navy. The most important feature of the drydock is that once a ship is properly positioned within the dock, the water can be drained, allowing craftsmen to easily access the hull of the ship without first having to learn how to breathe water. While there is debate as to when the idea for the first drydock arose, the world's earliest working drydock was built by King Henry VIII in 1495. And while advances in technology would continue to improve the drydock over the next several hundred years, the concept remains unchanged since its colonial-era inception.</English>
@@ -1080,10 +912,12 @@
         <Italian>Il [COLOR_BUILDING_TEXT]bacino di carenaggio[COLOR_REVERT], l'aggiornamento del [COLOR_BUILDING_TEXT]molo[COLOR_REVERT], permette di costruire [COLOR_UNIT_TEXT]caravelle[COLOR_REVERT], [COLOR_UNIT_TEXT]mercantili[COLOR_REVERT], [COLOR_UNIT_TEXT]navi corsare[COLOR_REVERT] e [COLOR_UNIT_TEXT]galeoni[COLOR_REVERT], oltre a tutti gli altri bonus forniti dal [COLOR_BUILDING_TEXT]molo[COLOR_REVERT].</Italian>
         <Spanish>El [COLOR_BUILDING_TEXT]Dique seco[COLOR_REVERT], la modernización del [COLOR_BUILDING_TEXT]Muelle[COLOR_REVERT], permite al asentamiento construir unidades de [COLOR_UNIT_TEXT]Carabela[COLOR_REVERT], [COLOR_UNIT_TEXT]Navío mercante[COLOR_REVERT], [COLOR_UNIT_TEXT]Corsario[COLOR_REVERT] y [COLOR_UNIT_TEXT]Galeón[COLOR_REVERT], aparte de las demás bonificaciones que da el [COLOR_BUILDING_TEXT]Muelle[COLOR_REVERT].</Spanish>
     </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_DYERS_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_DYERS_HOUSE</Tag>
+		<English>Dyers House</English>
+		<French>Maison du teinturier</French>
+		<German>Färberhaus</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DYERS_HOUSE_PEDIA</Tag>
         <English>[TAB]Dyeing is the process of applying colors to fabrics. A human practice for over three thousand years, it enabled the natural white color of silk, wool and cotton to be enhanced with a varied spectrum of color. Natural dyes are created from a myriad of sources, including shells, animals and plants, though these dyes were not always permanent and frequently expensive. Modern dyes are based on artificial or processed substances such as coal and other chemicals. One benefit for a nation with an extensive dye industry is that the processes involved in creating dye can be easily retooled to other purposes. Germany discovered this in World War I when it was determined that factories producing artificial dye could be easily modified to create explosives, poison gas and other tools of war.</English>
@@ -1101,9 +935,11 @@
         <Spanish>[TAB]The [COLOR_HIGHLIGHT_TEXT]Dyers House[COLOR_REVERT] is the lowest level of buildings for dyeing cloth. Colonists with profession Dyer produce [COLOR_HIGHLIGHT_TEXT]Coloured Cloth[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Cloth[COLOR_REVERT] by using [COLOR_HIGHLIGHT_TEXT]Indigo[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Dyers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_DYERY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_DYERY</Tag>
+		<English>Dyery</English>
+		<French>Teinturerie</French>
+		<German>Färberei</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_DYERY_PEDIA</Tag>
         <English>[TAB]Dyeing is the process of applying colors to fabrics. A human practice for over three thousand years, it enabled the natural white color of silk, wool and cotton to be enhanced with a varied spectrum of color. Natural dyes are created from a myriad of sources, including shells, animals and plants, though these dyes were not always permanent and frequently expensive. Modern dyes are based on artificial or processed substances such as coal and other chemicals. One benefit for a nation with an extensive dye industry is that the processes involved in creating dye can be easily retooled to other purposes. Germany discovered this in World War I when it was determined that factories producing artificial dye could be easily modified to create explosives, poison gas and other tools of war.</English>
@@ -1121,13 +957,45 @@
         <Spanish>[TAB]The [COLOR_HIGHLIGHT_TEXT]Dyery[COLOR_REVERT] is the intermediate level of buildings for dyeing cloth. Colonists with profession Dyer produce [COLOR_HIGHLIGHT_TEXT]Coloured Cloth[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Cloth[COLOR_REVERT] by using [COLOR_HIGHLIGHT_TEXT]Indigo[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Dyers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_FORT</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_FORT</Tag>
+		<English>Stockade</English>
+		<French>
+			<Text>Palissade:Palissades</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Palisade</German>
+		<Italian>
+			<Text>Palizzata</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Empalizada:Empalizadas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_FORTRESS</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_FORTRESS</Tag>
+		<English>Fort</English>
+		<French>
+			<Text>Fort:Forts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Fort</German>
+		<Italian>
+			<Text>Forte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fuerte:Fuertes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FORTRESS_PEDIA</Tag>
         <English>While the European cities of South and Central America were in large part built upon the ruins of native settlements, many cities of the North American frontier began their days as forts. More than simple stockades, forts were large enough to house the workings of entire cities within their protective borders. Often planted as outposts in frontier territories, many forts became centers of economy for the North American interior. Such was the case for Fort Pitt and Fort Quebec, both of which blossomed into major metropolises. Today Pittsburgh and Quebec City remain among the most influential metropolises in their respective regions.</English>
@@ -1161,9 +1029,11 @@
         <Spanish>Building structures for the defense of a city will provide units in that settlement with a combat bonus in percent, depending on the level of that building. But be aware, that all units on horseback and also Cannons will not benefit from it![NEWLINE][NEWLINE]The first structure are the [COLOR_BUILDING_TEXT]Chevaux De Frise[COLOR_REVERT] that offer a 30% bonus. It is followed by a [COLOR_BUILDING_TEXT]Stockade[COLOR_REVERT] (60%), a [COLOR_BUILDING_TEXT]Fort[COLOR_REVERT] (90%) and a [COLOR_BUILDING_TEXT]Fortress[COLOR_REVERT] (120%). If adding a [COLOR_BUILDING_TEXT]Citadel[COLOR_REVERT] the bonus will be finally 150%. The [COLOR_BUILDING_TEXT]Great Bastion[COLOR_REVERT] will raise the bonus up to 160%. Note also, that any kind of fortification will lower the risk of becoming looted by natives</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_FURNITURE_FACTORY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_FURNITURE_FACTORY</Tag>
+		<English>Furniture Factory</English>
+		<French>Usine de meubles</French>
+		<German>Möbelfabrik</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FURNITURE_FACTORY_PEDIA</Tag>
         <English>[TAB]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</English>
@@ -1229,9 +1099,25 @@
         <Spanish>[TAB]The [COLOR_HIGHLIGHT_TEXT]Furnitury[COLOR_REVERT] is the intermediate level of buildings for production of [COLOR_HIGHLIGHT_TEXT]Furniture[COLOR_REVERT]. Colonists with profession Furniture Maker produce Furniture from Valuable Wood. Use [COLOR_UNIT_TEXT]Master Furniture Makers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_FUR_FACTORY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_FUR_FACTORY</Tag>
+		<English>Coat Factory</English>
+		<French>
+			<Text>Usine de manteaux:Usines de manteaux</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Pelzwarenfabrik</German>
+		<Italian>
+			<Text>Fabbrica di mantelli</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de abrigos:Fábricas de abrigos</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FUR_FACTORY_PEDIA</Tag>
         <English>Every Coat Factory owner had one major ace up his sleeve - fashion. It was not just the citizens of chilly New England and Quebec that wanted well-tailored - if heavy - coats, but also those of the southern and Caribbean colonies as well. Thanks to the ever-pressing requirements of fashion, English colonists living in Barbados simply [BOLD]had[\BOLD] to have the fashions that were being worn so proudly (and more logically) in New England. Many were the confused European native who, arriving in the sweltering heat of the Caribbean, found their hosts in full gentlemen's (or gentlewoman's) garb. Yet the benefit for the producer of such fashions was endless.</English>
@@ -1249,9 +1135,25 @@
         <Spanish>Si los Abrigos son la mayor fuente de ingresos de vuestro asentamiento, deberíais pensar seriamente en invertir en una [COLOR_BUILDING_TEXT]Fábrica de abrigos[COLOR_REVERT]. Si ponéis a un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] a trabajar en una [COLOR_BUILDING_TEXT]Fábrica de abrigos[COLOR_REVERT], vuestro asentamiento creará nueve [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] por turno, pero a un coste de solo seis [COLOR_HIGHLIGHT_TEXT]Pieles[COLOR_REVERT]. Asignar a un [COLOR_UNIT_TEXT]Maestro peletero[COLOR_REVERT] a este lugar aumentará vuestras ganancias derivadas de la piel. Debéis construir un [COLOR_BUILDING_TEXT]Aserradero[COLOR_REVERT] para poder levantar este edificio.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_FUR_TRADERS_HOUSE</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_FUR_TRADERS_HOUSE</Tag>
+		<English>Fur Trader's House</English>
+		<French>
+			<Text>Atelier du fourreur:Ateliers de fourreur</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Pelzhändlerhütte</German>
+		<Italian>
+			<Text>Casa del pellicciaio</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del peletero:Casas del peletero</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FUR_TRADERS_HOUSE_PEDIA</Tag>
         <English>The skilled coat maker had to be part craftsman, part fashion designer, and had to be familiar with the tastes and attitudes their fellow settlers had towards the role of clothing. In many early English colonies, Puritanical ideas of fashion ruled. Furs were transformed into simple overcoats or cloaks with little adornment. Buttons were considered unacceptable flair to the Puritan mindset, so any coat maker hoping to sell his wares in a Puritan settlement had to be adept at adding hooks and latches to their wares that could hold out the American cold, but not appear "vain." </English>
@@ -1269,9 +1171,25 @@
         <Spanish>La [COLOR_BUILDING_TEXT]Casa del peletero[COLOR_REVERT] es el edificio de nivel más básico de producción de Abrigos. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] asignado a trabajar en una [COLOR_BUILDING_TEXT]Casa del peletero[COLOR_REVERT] convertirá tres [COLOR_HIGHLIGHT_TEXT]Pieles[COLOR_REVERT] en [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] cada turno. Si queréis aumentar la producción de Abrigos, pensad en construir una [COLOR_BUILDING_TEXT]Peletería[COLOR_REVERT] o asignar a un [COLOR_UNIT_TEXT]Maestro peletero[COLOR_REVERT] a trabajar aquí.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_FUR_TRADING_POST</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_FUR_TRADING_POST</Tag>
+		<English>Fur Trading Post</English>
+		<French>
+			<Text>Comptoir de fourrures:Comptoirs de fourrures</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Pelzhandelsposten</German>
+		<Italian>
+			<Text>Negozio di pellicce</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Peletería:Peleterías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_FUR_TRADING_POST_PEDIA</Tag>
         <English>Fur Trading Posts often sprouted along the edges of the frontier to act as shops and gathering places for trappers returning from the hunt. These posts, if well-located, often blossomed into centers of economy. Modern cities such as Quebec and Albany, New York, today provincial capitals, began their years as fur trading posts.</English>
@@ -1289,9 +1207,19 @@
         <Spanish>Las [COLOR_BUILDING_TEXT]Peleterías[COLOR_REVERT] son los edificios intermedios de producción de Abrigos. Un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT] que trabaje en una [COLOR_BUILDING_TEXT]Peletería[COLOR_REVERT] creará seis [COLOR_HIGHLIGHT_TEXT]Abrigos[COLOR_REVERT] por turno a un coste de seis Pieles. Esta producción puede aumentar si se asigna a un [COLOR_UNIT_TEXT]Maestro peletero[COLOR_REVERT] a trabajar aquí o se moderniza el edificio a una [COLOR_BUILDING_TEXT]Fábrica de abrigos[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_GRANARY</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_GRANARY</Tag>
+		<English>Granary</English>
+		<French>
+			<Text>Grenier</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Getreidespeicher</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GRANARY_PEDIA</Tag>
         <English>TXT_KEY_BUILDING_CORN_CHAMBER_PEDIA</English>
@@ -1305,9 +1233,15 @@
         <Spanish>[COLOR_BUILDING_TEXT]Corn Chambers[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Granaries[COLOR_REVERT] store some of the food after growth. Thus they help your cities to grow faster.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_GREAT_ARSENAL</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_GREAT_ARSENAL</Tag>
+		<English>Great Arsenal</English>
+		<French>
+			<Text>Grand arsenal:Grands arsenaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Großes Zeughaus</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_ARSENAL_PEDIA</Tag>
         <English>Arsenals are enormous weapons factories, capable of producing arms at a rate sufficient enough to supply an entire colony! The United States, for example, had but one arsenal when it declared independence, only building a second in 1805.[PARAGRAPH:1]Arsenals, because of their strategic importance, were often among the first targets an enemy could be expected to attack. The arsenal in Springfield, Massachusetts, America's first arsenal, was marched on by Daniel Shay, a disgruntled Revolutionary War veteran, bent on halting the Constitutional Convention of 1786, before Shay's Rebellion was put down by federal troops. America's second Arsenal, built in Harper's Ferry, West Virginia, gained great renown when, in 1859, abolitionist John Brown attempted to seize its stockpile to strike a blow against slavery.</English>
@@ -1325,9 +1259,19 @@
         <Spanish>The [COLOR_BUILDING_TEXT]Armory[COLOR_REVERT] represents the most basic form of [COLOR_HIGHLIGHT_TEXT]Weapon[COLOR_REVERT] production facility available. A [COLOR_UNIT_TEXT]Free Colonist[COLOR_REVERT] working here will create three weapons per turn at a cost of three [COLOR_HIGHLIGHT_TEXT]Tools[COLOR_REVERT]. This number can be increased greatly by assigning a [COLOR_UNIT_TEXT]Master Gunsmith[COLOR_REVERT] to work here or by upgrading to a [COLOR_BUILDING_TEXT]Magazine[COLOR_REVERT]a [COLOR_BUILDING_TEXT]Arsenal[COLOR_REVERT] or even a [COLOR_BUILDING_TEXT]Great Arsenal[COLOR_REVERT]. You can get these experts by education or by recruiting them at european harbour.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILDING_GREAT_BASTION</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_BUILDING_GREAT_BASTION</Tag>
+		<English>Great Bastion</English>
+		<French>
+			<Text>Grand bastion</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Große Bastion</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_BASTION_PEDIA</Tag>
         <English>A [COLOR_BUILDING_TEXT]Bastion[COLOR_REVERT] is a part of modern defensive fortifications. A bastion protrudes from a rampart so that the defenders could fire at the area in front of the rampart. This area normally is due to the construction of a fortification - not visible directly from the rampart. A bastion leads to a better defence of a stronghold against fire weapons. Strongholds were equipped with bastions approx. from the 16.-17. century. Depending on the dimension of a bastion it may be equipped with cannons.</English>
@@ -1346,7 +1290,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_CATHEDRAL</Tag>
-        <English>TXT_KEY_BUILDING_CATHEDRAL</English>
+        <English>Cathedral</English>
+		<French>
+			<Text>Cathédrale:Cathédrales</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kathedrale:Kathedralen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Cattedrale</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Catedral</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_CATHEDRAL_PEDIA</Tag>
@@ -1366,7 +1330,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_SHIPYARD</Tag>
-        <English>????</English>
+        <English>Naval Port</English>
+		<French>
+			<Text>Complexe portuaire:Complexes portuaires</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Marinehafen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_SHIPYARD_PEDIA</Tag>
@@ -1386,7 +1356,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_TOOL_FACTORY</Tag>
-        <English>????</English>
+        <English>Great Tool Factory</English>
+		<French>
+			<Text>Haut fourneau:Hauts fourneaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Große Eisenwarenfabrik</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_TOOL_FACTORY_PEDIA</Tag>
@@ -1407,7 +1383,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_UNIVERSITY</Tag>
-        <English>????</English>
+        <English>Great University</English>
+		<French>
+			<Text>Université de prestige:Universités de prestige</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Elitehochschule</German>
+		<Italian>
+			<Text>Università</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Universidad:Universidades</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_UNIVERSITY_PEDIA</Tag>
@@ -1427,7 +1419,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>????</English>
+        <English>Wheelwrights Workshop</English>
+		<French>
+			<Text>Scierie:Scieries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Wagnerei</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_WHEELWRIGHTS_WORKSHOP_PEDIA</Tag>
@@ -1447,7 +1445,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_HORSE_MARKET</Tag>
-        <English>????</English>
+        <English>Grand Horse and Cattle Market</English>
+		<French>
+			<Text>Grande Halle aux bestiaux</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Großer Viehmarkt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_HORSE_MARKET_PEDIA</Tag>
@@ -1467,7 +1475,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_IRONWORKS</Tag>
-        <English>????</English>
+        <English>Ironworks</English>
+		<French>
+			<Text>Ferronnerie:Ferronneries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schmiedemanufaktur</German>
+		<Italian>
+			<Text>Ferriera</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fundición:Fundiciones</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_IRONWORKS_PEDIA</Tag>
@@ -1487,7 +1511,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LANDING_STAGE</Tag>
-        <English>????</English>
+        <English>Pier</English>
+		<French>
+			<Text>Embarcadère:Embarcadères</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Bootssteg</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LANDING_STAGE_PEDIA</Tag>
@@ -1507,7 +1537,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LARGE_DYERY</Tag>
-        <English>????</English>
+        <English>Large Dyery</English>
+		<French>Teinturerie industrielle</French>
+		<German>Große Färberei</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LARGE_DYERY_PEDIA</Tag>
@@ -1527,7 +1559,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_FACTORY</Tag>
-        <English>????</English>
+        <English>Leather Factory</English>
+		<French>Tannerie industrielle</French>
+		<German>Lederfabrik</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LEATHER_FACTORY_PEDIA</Tag>
@@ -1547,7 +1581,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LUMBER_MILL</Tag>
-        <English>????</English>
+        <English>Lumber Mill</English>
+		<French>
+			<Text>Menuiserie:Menuiserie</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Sägewerk</German>
+		<Italian>
+			<Text>Segheria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Aserradero:Aserraderos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_LUMBER_MILL_PEDIA</Tag>
@@ -1567,7 +1617,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAGAZINE</Tag>
-        <English>????</English>
+        <English>Magazine</English>
+		<French>
+			<Text>Magasin:Magasins</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Magazin</German>
+		<Italian>
+			<Text>Santabarbara</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Arsenal:Arsenales</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAGAZINE_PEDIA</Tag>
@@ -1587,7 +1653,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MARKET</Tag>
-        <English>????</English>
+        <English>Village Market</English>
+		<French>
+			<Text>Marché:Marchés</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Dorfmarkt:Dofrmärkte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Village Market:Village Markets</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Mercado del pueblo:Mercados del pueblo</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MARKET_PEDIA</Tag>
@@ -1607,7 +1693,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MEDICAL_OFFICE</Tag>
-        <English>????</English>
+        <English>Medical Office</English>
+		<French>Cabinet médical</French>
+		<German>Arztpraxis</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MEDICAL_OFFICE_PEDIA</Tag>
@@ -1627,7 +1715,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MINSTER</Tag>
-        <English>????</English>
+        <English>Cathedral of the Archbishop</English>
+		<French>
+			<Text>Cathédrale de l'Archevêché</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kathedrale des Erzbishofs</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MINSTER_PEDIA</Tag>
@@ -1791,7 +1889,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NEWSPAPER</Tag>
-        <English>????</English>
+        <English>Newspaper</English>
+		<French>
+			<Text>Journal:Journaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zeitung</German>
+		<Italian>
+			<Text>Giornale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Periódico:Periódicos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NEWSPAPER_PEDIA</Tag>
@@ -1811,7 +1925,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OPERA</Tag>
-        <English>????</English>
+        <English>Grand Opera</English>
+		<French>
+			<Text>Grand Opéra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Koloniales Opernhaus</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_OPERA_PEDIA</Tag>
@@ -1831,7 +1955,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PALACE</Tag>
-        <English>????</English>
+        <English>Government Palace</English>
+		<French>
+			<Text>Hôtel colonial:Hôtels coloniaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Regierungspalast</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PALACE_PEDIA</Tag>
@@ -1851,7 +1981,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PRINTING_PRESS</Tag>
-        <English>????</English>
+        <English>Printing Press</English>
+		<French>
+			<Text>Imprimerie:Imprimeries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Druckerpresse</German>
+		<Italian>
+			<Text>Tipografia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Imprenta:Imprentas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PRINTING_PRESS_PEDIA</Tag>
@@ -1871,7 +2017,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PUBLISHING</Tag>
-        <English>????</English>
+        <English>Colonial Publisher</English>
+		<French>
+			<Text>Editions coloniales</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kolonialer Zeitungsverlag</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_PUBLISHING_PEDIA</Tag>
@@ -1931,7 +2087,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RUM_FACTORY</Tag>
-        <English>????</English>
+        <English>Rum Factory</English>
+		<French>
+			<Text>Usine de rhum:Usines de rhum</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Rumfabrik</German>
+		<Italian>
+			<Text>Fabbrica di rum</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de ron:Fábricas de ron</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RUM_FACTORY_PEDIA</Tag>
@@ -1951,7 +2123,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SALOON</Tag>
-        <English>????</English>
+        <English>Saloon</English>
+        <French>Saloon</French>
+        <German>Saloon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SALOON_PEDIA</Tag>
@@ -1971,7 +2145,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SCHOOLHOUSE</Tag>
-        <English>????</English>
+        <English>Schoolhouse</English>
+		<French>
+			<Text>Ecole:Ecoles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schule</German>
+		<Italian>
+			<Text>Scuola</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Escuela:Escuelas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SCHOOLHOUSE_PEDIA</Tag>
@@ -1991,7 +2181,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SHIPYARD</Tag>
-        <English>????</English>
+        <English>Shipyard</English>
+		<French>
+			<Text>Chantier naval:Chantiers navals</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schiffswerft</German>
+		<Italian>
+			<Text>Cantiere navale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Astillero:Astilleros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SHIPYARD_PEDIA</Tag>
@@ -2011,7 +2217,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SLAUGHTERHOUSE</Tag>
-        <English>????</English>
+        <English>Slaughterhouse</English>
+		<French>Abattoir</French>
+		<German>Schlachthaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SLAUGHTERHOUSE_PEDIA</Tag>
@@ -2031,7 +2239,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HALL</Tag>
-        <English>????</English>
+        <English>Spice Trader's Hall</English>
+		<French>Halle aux Épices</French>
+		<German>Gewürzhandelshalle</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HALL_PEDIA</Tag>
@@ -2051,7 +2261,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HOUSE</Tag>
-        <English>????</English>
+        <English>Spice Trader's House</English>
+		<French>Maison de l'épicier</French>
+		<German>Gewürzhändlerhaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HOUSE_PEDIA</Tag>
@@ -2071,7 +2283,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_POST</Tag>
-        <English>????</English>
+        <English>Spice Trading Post</English>
+		<French>Epicerie</French>
+		<German>Gewürzhandelsposten</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_SPICE_TRADERS_POST_PEDIA</Tag>
@@ -2091,12 +2305,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STABLE</Tag>
-        <English>????</English>
+        <English>Stable</English>
+		<French>
+			<Text>Etable:Etables</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stallungen</German>
+		<Italian>
+			<Text>Stalla</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Establo:Establos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STABLE_PEDIA</Tag>
-        <English>????</English>
-    </TEXT>
+        <English>Prior to the arrival of the Europeans, there were few stock animals in the New World. The largest domesticated animal in the Americas - the llama - weighed only about 300 pounds (136 kg) which greatly limited its ability to carry heavy loads. Horses and oxen, brought across the Atlantic as early as the beginning of the 16th century, would become invaluable tools in the transformation of the New World landscape. Oxen were employed in much of the heavy-lifting involved in clearing forests for fields and pastures, while horses served as speedy modes of transportation and weapons of war. </English>
+		<French>A l'arrivée des Européens, il y a peu de bétail dans le Nouveau Monde. Le plus grand animal domestique des Amériques, le lama, pèse rarement plus de 136 kg, ce qui limite considérablement sa capacité à porter de lourdes charges. Le cheval et le boeuf, importés dès le début du XVIe siècle, vont devenir des outils précieux pour transformer le paysage du Nouveau Monde. Le boeuf servira surtout à transporter les arbres abattus afin de créer champs et prés, alors que le cheval sera utilisé comme moyen de locomotion rapide ou comme arme de guerre.</French>
+		<German>Vor der Ankunft der Europäer gab es nur wenig Nutzvieh in der Neuen Welt. Das größte domestizierte Tier Amerikas - das Lama - wog nur etwa 140 kg, was seine Nutzung als Lastenträger einschränkte. Pferde und Ochsen, die bereits Anfang des 16. Jahrhunderts über den Atlantik gebracht wurden, waren unschätzbare Hilfen bei der Nutzbarmachung der Neuen Welt. Ochsen wurden vorrangig für die schweren Lasten eingesetzt, die beim Roden von Wäldern anfielen, wohingegen Pferde zum raschen Transport und als Kriegswaffen dienten.</German>
+		<Italian>Prima dell'arrivo degli europei, il bestiame era molto scarso nel Nuovo Mondo. Il più grande animale addomesticato delle Americhe, il lama, pesava solamente attorno ai 136 kg e aveva una capacità limitata nel trasportare carichi pesanti. Cavalli e buoi, trasportati oltre l'Atlantico già all'inizio del XVI secolo, sarebbero diventati strumenti indispensabili nella trasformazione del paesaggio del Nuovo Mondo. I buoi vennero impiegati in gran parte dei trasporti pesanti collegati all'abbattimento delle foreste per far posto a campi e pascoli, mentre i cavalli servirono da rapidi mezzi di trasporto e da guerra. </Italian>
+		<Spanish>Antes de la llegada de los europeos, en el Nuevo Mundo había poco ganado. El animal doméstico más grande de las Américas, la llama, pesaba solo unos 130 kg, lo cual limitaba mucho su capacidad de carga. Los Caballos y bueyes, traídos del otro lado del Atlántico ya desde inicios del s. XVI, se convertirían en herramientas indispensables para la transformación del paisaje del Nuevo Mundo. Los bueyes se utilizaron para las tareas pesadas relacionadas con el talado de bosques para crear campos y pastos, mientras que los Caballos se dedicaron al transporte rápido de armas de guerra. </Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STABLE_STRATEGY</Tag>
         <English>[COLOR_BUILDING_TEXT]Stables[COLOR_REVERT] increase the production of [LINK=YIELD_HORSES]Horses[\LINK], [LINK=YIELD_CATTLE]Cattle[\LINK] and [LINK=YIELD_SHEEP]Sheep[\LINK] in a settlement. Stables will give protection from harsh weathre during storms and cold winters for your livestock. In addition to that, your livestock can give birth in a secure environment. You can increase their production even further by upgrading to a [LINK=BUILDING_LARGE_STABLE]Large Stable[\LINK] or the National Wonder: the [LINK=BUILDING_HORSE_MARKET]Grand Horse and Cattle Market[\LINK], which can be built only once.[PARAGRAPH:1]For more information, see [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Breeding Horses, Cattle and Sheep[\LINK].</English>
@@ -2107,7 +2341,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STATUE_GOVERNOR</Tag>
-        <English>????</English>
+        <English>Statue of Governor</English>
+		<French>
+			<Text>Statue du Gouverneur:Statues de Gouverneur</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Statue des Gouverneurs</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STATUE_GOVERNOR_PEDIA</Tag>
@@ -2127,7 +2367,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STOCKADE</Tag>
-        <English>????</English>
+        <English>Chevaux de Frise</English>
+		<French>
+			<Text>Cheval de frise:Chevaux de Frise</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Friesische Reiter</German>
+		<Italian>Cavallo di Frisia</Italian>
+		<Spanish>Chevaux de Frise</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STOCKADE_PEDIA</Tag>
@@ -2147,7 +2395,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STRONGHOLD</Tag>
-        <English>????</English>
+        <English>Fortress</English>
+		<French>
+			<Text>Forteresse:Forteresses</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Festung</German>
+		<Italian>
+			<Text>Fortezza</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fortaleza:Fortalezas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_STRONGHOLD_PEDIA</Tag>
@@ -2167,7 +2431,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TANNERS_HOUSE</Tag>
-        <English>????</English>
+        <English>Tanners House</English>
+		<French>Maison du Tanneur</French>
+		<German>Gerberhaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TANNERS_HOUSE_PEDIA</Tag>
@@ -2187,7 +2453,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TANNERY</Tag>
-        <English>????</English>
+        <English>Tannery</English>
+		<French>Tannerie</French>
+		<German>Gerberei</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TANNERY_PEDIA</Tag>
@@ -2207,7 +2475,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAVERN</Tag>
-        <English>????</English>
+        <English>Tavern</English>
+		<French>Taverne</French>
+		<German>Taverne</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TAVERN_PEDIA</Tag>
@@ -2227,7 +2497,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TEXTILE_MILL</Tag>
-        <English>????</English>
+        <English>Textile Mill</English>
+		<French>
+			<Text>Usine textile:Usines textiles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Textilfabrik</German>
+		<Italian>
+			<Text>Fabbrica tessile</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Taller textil:Talleres textiles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TEXTILE_MILL_PEDIA</Tag>
@@ -2247,7 +2533,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_THEATRE</Tag>
-        <English>????</English>
+        <English>Theatre</English>
+		<French>
+			<Text>Théâtre</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Theater</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_THEATRE_PEDIA</Tag>
@@ -2267,7 +2563,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_HOUSE</Tag>
-        <English>????</English>
+        <English>Tobacconist's House</English>
+		<French>
+			<Text>Atelier du cigarier:Ateliers de cigarier</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Tabakhaus</German>
+		<Italian>
+			<Text>Casa del tabaccaio</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del tabaquero:Casas del tabaquero</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_HOUSE_PEDIA</Tag>
@@ -2287,7 +2599,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_SHOP</Tag>
-        <English>????</English>
+        <English>Tobacconist's Shop</English>
+		<French>
+			<Text>Boutique de tabac:Boutiques de tabac</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Tabakwarenbetrieb</German>
+		<Italian>
+			<Text>Negozio del tabaccaio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tabaquería:Tabaquerías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOBACCONIST_SHOP_PEDIA</Tag>
@@ -2307,7 +2635,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOOL_FACTORY</Tag>
-        <English>????</English>
+        <English>Tool Factory</English>
+		<French>
+			<Text>Usine sidérurgique:Usines sidérurgiques</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Eisenwarenfabrik</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOOL_FACTORY_PEDIA</Tag>
@@ -2327,12 +2661,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWNHALL</Tag>
-        <English>????</English>
+        <English>Town Hall</English>
+		<French>
+			<Text>Mairie:HôMairies</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stadthalle</German>
+		<Italian>
+			<Text>Municipio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ayuntamiento:Ayuntamientos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWNHALL_PEDIA</Tag>
-        <English>????</English>
-    </TEXT>
+        <English>The styles of government of the European colonies varied widely from one another, leading to the creation of a medley of different styles of town halls. The Dutch and English colonies, both founded by citizens of nations with long histories of government participation, often created meeting halls where citizens could gather and discuss current issues. By 1619, English colonists had organized the first elected white legislature in the New World. The French colonies too were ruled by council, although with significantly more oversight from the representatives of power of the mother land. The strong monarchy of Spain led her colonies towards a more autocratic style of rule. As a result, the government offices of New Spain were often the quarters of the colony's crown-appointed governors.</English>
+		<French>Les modes de gouvernement des colonies européennes étant extrêmement variés, différents styles d'Hôtels de ville voient le jour. Les colonies néerlandaises et anglaises, toutes deux fondées par des citoyens coutumiers de la participation gouvernementale, créent des bâtiments publics où les citoyens peuvent se rencontrer et discuter des problèmes actuels. En 1619, les colons anglais élisent la première assemblée législative du Nouveau monde. Les colonies françaises sont également gouvernées par un conseil, mais celui-ci chaperonné bien plus étroitement par les gouvernants de leur terre natale. La puissante monarchie d'Espagne mène quant à elle ses colonies de manière bien plus autoritaire. En conséquence, les bâtiments gouvernementaux de la Nouvelle-Espagne sont souvent les quartiers de gouverneurs nommés par la Couronne.</French>
+		<German>Die verschiedenen Regierungsstile der europäischen Kolonien unterschieden sich stark voneinander, was zu den unterschiedlichsten Arten von Rathäusern führte. Die holländischen und englischen Kolonien, die allesamt von Bürgern gegründet wurden, die eine lange Tradition von Volksbeteiligung an der Regierung hatten, bauten oft Hallen, in denen sich Bürger versammeln und aktuelle Themen diskutieren konnten. Bis 1619 hatten die Engländer die erste gewählte Legislative der Neuen Welt etabliert. Die französischen Kolonien wurden ebenfalls durch Räte regiert, doch herrschte hier ein wesentlich stärkerer Einfluss durch die Machthaber des Heimatlandes. Die starke Monarchie Spaniens führte ihre Kolonien zu einer eher autokratischen Regierungsform. Daraus ergab sich, dass die Regierungsgebäude Neuspaniens oft auch Domizil des von der Krone benannten Gouverneurs waren.</German>
+		<Italian>Le forme di governo delle colonie europee variavano grandemente dall'una all'altra, il che portò alla creazione di municipi con diversi stili. Le colonie olandesi e inglesi, entrambe fondate da cittadini di nazioni con una lunga storia di governi partecipativi, spesso creavano grandi sale in cui era possibile raccogliersi e discutere i problemi del momento. Nel 1619, i coloni inglesi avevano organizzato la prima legislatura eletta bianca del Nuovo Mondo. Anche le colonie francesi erano governate tramite un consiglio, anche se con un controllo notevolmente maggiore da parte dei rappresentanti del potere della madrepatria. La forte monarchia spagnola guidava le proprie colonie con uno stile più dispotico. Come risultato, gli edifici di governo della Nuova Spagna spesso erano le abitazioni dei governatori coloniali insediati dalla corona.</Italian>
+		<Spanish>Los modos de gobierno de las colonias europeas diferían mucho entre sí, lo que llevó a la mezcla de distintos estilos de Ayuntamientos. En las colonias inglesas y holandesas, fundadas por ciudadanos de naciones con una larga tradición de participación en el gobierno, era frecuente crear salas de asambleas donde los colonos pudieran reunirse y discutir los temas de actualidad. Para 1619, los colonos ingleses ya habían formado la primera legislatura elegida por blancos del Nuevo Mundo. Las colonias francesas también estaban gobernadas por un consejo, aunque con mucha más supervisión de los representantes del poder de la madre patria. La fuerte tradición monárquica española hizo que sus colonias adoptaran una forma de gobierno más autoritaria. Como resultado de ello, los despachos gubernamentales de Nueva España solían ser los cuarteles de los gobernadores nombrados por la corona.</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWNHALL_STRATEGY</Tag>
         <English>The [COLOR_BUILDING_TEXT]Town Hall[COLOR_REVERT] is the second level administration building that can employ colonists as [LINK=PROFESSION_STATESMAN]Statesmen[\LINK] to generate [LINK=YIELD_BELLS]Liberty Bells[\LINK]. The following upgrade levels are the [LINK=BUILDING_CITYHALL]City Hall[\LINK], the [LINK=BUILDING_PALACE]Government Palace[\LINK] and the National Wonder of the [LINK=BUILDING_COLONIAL_CONGRESS]Colonial Congress[\LINK]. By upgrading the administration buildings the number of assignable Statesmen and their production of Liberty Bells increases. These upgrades are also needed to enable the construction of other higher leveled [LINK=CONCEPT_BUILDINGS]Buildings[\LINK]. The most effective citizen assigned to produce Liberty Bells is the [LINK=UNIT_STATESMAN]Elder Statesmen[\LINK], though the rare [LINK=UNIT_NOBLE]Famous Nobleman[\LINK] gets an even greater bonus when producing Liberty Bells. The production of Liberty Bells will be raised by building a [LINK=BUILDING_PRINTING_PRESS]Printing Press[\LINK] and its upgrade, the [LINK=BUILDING_NEWSPAPER]Newspaper[\LINK].</English>
@@ -2343,7 +2697,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_HOSPITAL</Tag>
-        <English>????</English>
+        <English>Town Hospital</English>
+		<French>Clinique</French>
+		<German>Stadtkrankenhaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_HOSPITAL_PEDIA</Tag>
@@ -2363,7 +2719,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_MARKET</Tag>
-        <English>????</English>
+        <English>Town Market</English>
+		<French>
+			<Text>Marché couvert:Marchés couverts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Städtischer Markt:Städtische Märkte</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TOWN_MARKET_PEDIA</Tag>
@@ -2383,7 +2749,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TRAIN_STATION</Tag>
-        <English>????</English>
+        <English>Waystation</English>
+		<French>Relais de poste</French>
+		<German>Postreiter- und Pferdewechselstation</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TRAIN_STATION_PEDIA</Tag>
@@ -2403,7 +2771,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_UNIVERSITY</Tag>
-        <English>????</English>
+        <English>University</English>
+		<French>
+			<Text>Université:Universités</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Universität</German>
+		<Italian>
+			<Text>Università</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Universidad:Universidades</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_UNIVERSITY_PEDIA</Tag>
@@ -2423,7 +2807,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGEHALL</Tag>
-        <English>????</English>
+        <English>Village Hall</English>
+		<French>
+			<Text>Salle communale:Salles communales</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Gemeindehaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGEHALL_PEDIA</Tag>
@@ -2443,7 +2833,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_WELL</Tag>
-        <English>????</English>
+        <English>Village Well</English>
+		<French>Lavoir</French>
+		<German>Dorfbrunnen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VILLAGE_WELL_PEDIA</Tag>
@@ -2463,7 +2855,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VINTAGERS_HOUSE</Tag>
-        <English>????</English>
+        <English>Vintager's House</English>
+		<French>Maison du vigneron</French>
+		<German>Winzerhaus</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_VINTAGERS_HOUSE_PEDIA</Tag>
@@ -2483,15 +2877,53 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE</Tag>
-        <English>????</English>
+        <English>Storage House</English>
+		<French>
+			<Text>Remise:Remises</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Lagerhaus</German>
+		<Italian>
+			<Text>Magazzino</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Almacén:Almacenes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION</Tag>
-        <English>????</English>
+        <English>Warehouse</English>
+		<French>
+			<Text>Entrepôt:Entrepôts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Lagerhauserweiterung</German>
+		<Italian>
+			<Text>Espansione del magazzino</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Almacén ampliado:Almacenes ampliados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION_2</Tag>
-        <English>????</English>
+        <English>Warehouse Expansion</English>
+		<French>
+			<Text>Entrepôt étendu:Entrepôts étendus</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Große Lagerhauserweiterung</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WAREHOUSE_EXPANSION_2_PEDIA</Tag>
@@ -2543,7 +2975,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WATERMILL</Tag>
-        <English>????</English>
+        <English>
+			<Text>Watermill:Watermills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Moulin à eau:Moulins à eau</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Wassermühle:Wassermühlen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WATERMILL_PEDIA</Tag>
@@ -2563,7 +3009,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WEAVERS_HOUSE</Tag>
-        <English>????</English>
+        <English>Weaver's House</English>
+		<French>
+			<Text>Atelier du tisserand:Ateliers de tisserand</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Weberei</German>
+		<Italian>
+			<Text>Casa del tessitore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del tejedor:Casas del tejedor</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WEAVERS_HOUSE_PEDIA</Tag>
@@ -2583,7 +3045,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WEAVERS_SHOP</Tag>
-        <English>????</English>
+        <English>Weaver's Shop</English>
+		<French>
+			<Text>Boutique du tisserand:Boutiques de tisserand</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Webereibetrieb</German>
+		<Italian>
+			<Text>Negozio del tessitore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tejeduría:Tejedurías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WEAVERS_SHOP_PEDIA</Tag>
@@ -2623,7 +3101,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHALE_OIL_HOUSE</Tag>
-        <English>????</English>
+        <English>Train Oil Manufactory</English>
+		<French>
+			<Text>Pressoir à huile:Pressoirs à huile</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Trankocherei</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHALE_OIL_HOUSE_PEDIA</Tag>
@@ -2643,7 +3127,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>????</English>
+        <English>Wheelwrights Workshop</English>
+		<French>
+			<Text>Scierie:Scieries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Wagnerei</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHEELWRIGHTS_WORKSHOP_PEDIA</Tag>
@@ -2663,7 +3153,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINDMILL</Tag>
-        <English>????</English>
+        <English>
+			<Text>Windmill:Windmills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Moulin à vent:Moulins à vent</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Windmühle:Windmühlen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINDMILL_PEDIA</Tag>
@@ -2683,7 +3187,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINERY</Tag>
-        <English>????</English>
+        <English>Winery</English>
+		<French>Chai à vin</French>
+		<German>Winzerei</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINERY_PEDIA</Tag>
@@ -2703,7 +3209,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINE_FACTORY</Tag>
-        <English>????</English>
+        <English>Wine Factory</English>
+		<French>Domaine viticole</French>
+		<German>Weinfabrik</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WINE_FACTORY_PEDIA</Tag>

@@ -2,7 +2,31 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_UNIT_AFRICAN_SLAVE</Tag>
-        <English>????</English>
+        <English>
+			<Text>African Slave:African Slaves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Esclave africain:Esclaves africains</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Sklave:Sklaven</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>African Slave:African Slaves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Esclavo africano:Esclavos Africanos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_AFRICAN_SLAVE_PEDIA</Tag>
@@ -22,7 +46,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALLIGATOR</Tag>
-        <English>????</English>
+        <English>Alligator</English>
+		<French>
+			<Text>Alligator</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Alligator</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Alligator</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Alligator</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALLIGATOR_PEDIA</Tag>
@@ -38,7 +82,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BARLEY</Tag>
-        <English>????</English>
+        <English>Barley</English>
+		<French>
+			<Text>Orge</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gerste</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Barley</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Barley</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BARLEY_PEDIA</Tag>
@@ -58,7 +122,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEAR_BLACK</Tag>
-        <English>????</English>
+        <English>Black Bear</English>
+		<French>
+			<Text>Ours noir</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Schwarzbär</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEAR_BLACK_PEDIA</Tag>
@@ -74,7 +148,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEAR_POLAR</Tag>
-        <English>????</English>
+        <English>[TAB]The polar bear (Ursus maritimus) is a bear native largely within the Arctic Circle encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the world's largest land carnivore and also the largest bear, together with the omnivorous Kodiak bear, which is approximately the same size. An adult male weighs around 350-700 kg (770-1,500 lb), while an adult female is about half that size. Although it is closely related to the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice, and open water, and for hunting the seals which make up most of its diet. Although most polar bears are born on land, they spend most of their time at sea. Their scientific name means 'maritime bear', and derives from this fact. Polar bears can hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present.</English>
+		<French>[TAB]L'ours blanc (Ursus maritimus) ou ours polaire est un grand mammifère carnivore originaire des régions arctiques. C'est, avec l'ours kodiak, le plus grand des carnivores terrestres et il figure au sommet de sa pyramide alimentaire. Parfaitement adapté à son habitat, l'ours blanc possède une épaisse couche de graisse ainsi qu'une fourrure qui l'isolent du froid. La couleur blanche de son pelage lui assure un camouflage idéal sur la banquise et sa peau noire lui permet de mieux conserver sa chaleur corporelle. Pourvu d'une courte queue et de petites oreilles, il possède une tête relativement petite et fuselée ainsi qu'un corps allongé, caractéristiques de son adaptation à la natation. L'ours blanc est un mammifère marin semi-aquatique, dont la survie dépend essentiellement de la banquise et de la productivité marine. Il chasse aussi bien sur terre que dans l'eau. Son espérance de vie est de 20-25 ans.</French>
+		<German>[TAB]Der Eisbär (Ursus maritimus), auch Polarbär, ist eine Raubtierart aus der Familie der Bären (Ursidae). Er bewohnt die nördlichen Polarregionen und ist eng mit dem Braunbären verwandt. Er gilt neben dem Kamtschatkabären und dem Kodiakbären als das größte an Land lebende Raubtier der Erde. Erwachsene männliche Eisbären erreichen im Durchschnitt eine Kopf-Rumpf-Länge von 2,40 bis 2,60 Metern, in Einzelfällen sogar von bis zu 3,40 Metern; die Schulterhöhe beträgt bis zu 1,60 Meter. Das Gewicht variiert zwischen 300 und 800 (durchschnittlich 420 bis 500) Kilogramm. Bei Weibchen erreicht die Kopf-Rumpf-Länge im Durchschnitt 1,90 bis 2,10 Meter, doch wurden auch schon 2,50 Meter gemessen; das Körpergewicht liegt bei ihnen zwischen 150 und 300 Kilogramm. Das Gewicht hängt wesentlich vom Ernährungszustand der Tiere ab: im Sommer wiegen ausgehungerte Eisbären deutlich weniger als während der Zeit winterlicher Robbenjagd. Eine Rolle spielen auch regionale Größenunterschiede. Die kleinsten Tiere leben auf Spitzbergen und die größten in der Nähe der Beringstraße. Wie alle Bärenarten besitzen auch Eisbären nur einen Stummelschwanz von 7 bis 13 Zentimetern Länge. Eisbären sind ausschließlich in der Arktis verbreitet und zwar zirkumpolar, also in der Polarregion rund um den Nordpol. Die meisten hocharktischen Eisbären halten sich das ganze Jahr über an den Küsten oder auf dem Meereseis auf, um dort Robben zu jagen. Verglichen mit anderen Bären neigen Eisbären stärker dazu, Menschen als Beutetiere anzusehen. Wenn es auch wegen der dünnen Besiedlung der Arktis verhältnismäßig selten zur Konfrontation kommt, wird trotzdem von Zeit zu Zeit über für Menschen tödliche Begegnungen berichtet. Am häufigsten erfolgen Angriffe durch Halbwüchsige sowie Muttertiere mit Kindern. </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEAR_POLAR_PEDIA</Tag>
@@ -90,7 +166,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEER</Tag>
-        <English>????</English>
+        <English>Beer</English>
+		<French>
+			<Text>Bière</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Bier</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEER_PEDIA</Tag>
@@ -110,7 +196,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BIG_COASTAL_SHIP</Tag>
-        <English>????</English>
+        <English>
+			<Text>Big Coastal Ship:Big Coastal Ships</Text>
+			<Plural>0:1</Plural>
+		</English>
+		<German>
+			<Text>Großer Küstensegler:Große Küstensegler</Text>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BIG_COASTAL_SHIP_PEDIA</Tag>
@@ -122,7 +215,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BISHOP</Tag>
-        <English>????</English>
+        <English>
+			<Text>Bishop:Bishops</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Evêque:Evêques</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Bischof:Bischöfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BISHOP_PEDIA</Tag>
@@ -142,12 +249,36 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACKSMITH</Tag>
-        <English>????</English>
+        <English>Master Blacksmith:Master Blacksmiths</English>
+		<French>
+			<Text>Maître forgeron:Maitres forgerons</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Meisterschmied:Meisterschmiede</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Mastro fabbro:Mastri fabbri</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Maestro herrero:Maestros herreros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BLACKSMITH_PEDIA</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_UNIT_BLACKSMITH_PEDIA</Tag>
+		<English>The skilled Blacksmith is as much a musician as a craftsman. The heating, hammering, and cooling of the raw metal requires a learned rhythm that can only be attained through years of practice. Imagine trying to build a home without nails, hammers or saws, or clearing a field without an axe, and you begin to see why a skilled Blacksmith is critical to the success of a growing colony.</English>
+		<French>Le forgeron expérimenté est autant musicien qu'artisan. Chauffer, marteler et refroidir le métal brut se font selon un rythme qui ne peut être atteint qu'à travers des années de pratique. Imaginez-vous en train d'essayer de construire une maison sans clou, marteau ni scie, ou de défricher un champ sans hache, et vous comprendrez pourquoi les forgerons expérimentés sont essentiels au succès d'une colonie naissante.</French>
+		<German>Ein fähiger Schmied ist ebenso Musiker wie Handwerker. Das Erhitzen, Schlagen und Kühlen des rohen Metalls verlangt nach einem steten Rhythmus, der nur in den Jahren der Ausbildung erlernt werden kann. Wenn man sich vorstellt, wie ein Haus ohne Nägel, Hämmer und Sägen gebaut oder wie ein Wald ohne Axt gelichtet werden soll, begreift man schnell, warum ein Schmied für den Erfolg einer wachsenden Kolonie unerlässlich ist.</German>
+		<Italian>Un abile fabbro è tanto musicista quanto artigiano. Riscaldare, martellare e raffreddare il metallo grezzo richiede un ritmo che si può imparare solamente attraverso anni di pratica. Immagina di dover costruire una casa senza chiodi, martelli o seghe, o di dover abbattere un albero senza un'ascia, e comincerai a capire perché un abile fabbro è fondamentale per il successo di una colonia in crescita.</Italian>
+		<Spanish>El habilidoso Herrero tiene tanto de artesano como de músico. El calentamiento, martilleo y enfriamiento del metal necesita de un ritmo concreto que solo puede conseguirse con años de práctica. Solo hay que intentar imaginar cómo construir una casa sin clavos, martillos o sierras o cómo desbrozar un campo sin un hacha para empezar a darse cuenta de por qué un buen Herrero es indispensable para que una colonia prospere.</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACKSMITH_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master Blacksmiths[COLOR_REVERT] are tool- and blade-making machines. When employed as [LINK=PROFESSION_BLACKSMITH]Toolsmiths[\LINK] or [LINK=PROFESSION_BLADESMITH]Bladesmiths[\LINK] to respectively create [LINK=YIELD_TOOLS]Tools[\LINK] or [LINK=YIELD_BLADES]Blades[\LINK] from [LINK=YIELD_ORE]Ore[\LINK], they will create double the number of Tools or Blades a regular colonist would create in the same amount of time.[PARAGRAPH:1]Master Blacksmiths can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]College[\LINK] or one of its upgrades.</English>
@@ -158,7 +289,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLADES</Tag>
-        <English>????</English>
+        <English>Blades</English>
+		<French>
+			<Text>Sabres</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Klingenwaffen</Text>
+			<Gender>Neuter</Gender>
+			<Plural>1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLADES_PEDIA</Tag>
@@ -170,23 +311,51 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREWER</Tag>
-        <English>????</English>
+        <English>
+			<Text>Master Brewer:Master Brewers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Maître brasseur:Maîtres brasseurs</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Meister Bierbrauer:Meister Bierbrauer</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREWER_PEDIA</Tag>
-        <English>????</English>
+        <English>[TAB]Brewers typically produced beer for colonists. The Puritans on the Mayflower brought over with them more beer than water. Experience in Europe had taught them that drinking beer was safer than drinking water which could often be polluted with sewage or garbage. Alcohol was also an found to be an effective analgesic, which helped to not only provide the energy necessary for hard work, but also generally enhanced the quality of life.</English>
+		<French>[TAB]La bière est une boisson alcoolisée obtenue par fermentation de matières glucidiques végétales et d'eau. C'est une boisson alcoolisée obtenue par transformation de matières amylacées par voies enzymatiques et microbiologiques. Plus spécifiquement de nos jours, elles est généralement fabriquée à partir d'eau, de malt (céréale germée, principalement de l'orge, parfois additionné d'autres céréales) et depuis le Moyen âge, de houblon. C'est l'une des boissons les plus populaires et consommées au monde.</French>
+		<German>[TAB]Bier ist ein alkohol- und kohlensäurehaltiges Getränk, das durch Gärung meist aus den Grundzutaten Wasser, Malz und Hopfen gewonnen wird. Malz wiederum ist getrocknetes und gekeimtes Getreide, meist Gerste. Bier ist schon seit tausenden Jahren bekannt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BREWER_STRATEGY</Tag>
         <English>If you suddenly find yourself in need of large quantities of [LINK=YIELD_BEER]Beer[\LINK], as can happen sometimes, then the [COLOR_UNIT_TEXT]Master Brewer[COLOR_REVERT] can help you out. In the [LINK=PROFESSION_BREWER]Brewer[\LINK] profession, he is capable of creating double the normal amount of Beer as regular colonists would from [LINK=YIELD_BARLEY]Barley[\LINK].[PARAGRAPH:1]Master Brewers can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]College[\LINK] or one of its upgrades.</English>
         <French>Les [COLOR_UNIT_TEXT]maîtres brasseurs[COLOR_REVERT] produce deux fois plus de [COLOR_HIGHLIGHT_TEXT]bière[COLOR_REVERT] à partir d'[COLOR_HIGHLIGHT_TEXT]orge[COLOR_REVERT].</French>
         <German>[COLOR_UNIT_TEXT]Meister Bierbrauer[COLOR_REVERT] verarbeiten doppelt soviele Gerste in [COLOR_HIGHLIGHT_TEXT]Bier[COLOR_REVERT], wie andere Kolonisten.</German>
-        <Italian>[COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT].</Italian>
-        <Spanish>[COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRIGANTINE</Tag>
-        <English>????</English>
+        <English>
+			<Text>Brigantine:Brigantines</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Brigantin:Brigantins</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Brigantine:Brigantinen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BRIGANTINE_PEDIA</Tag>
@@ -206,12 +375,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUTCHER</Tag>
-        <English>????</English>
+        <English>
+			<Text>Master Butcher:Master Butchers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Maître boucher:Maîtres bouchers</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Schlachtermeister:Schlachtermeister</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_BUTCHER_PEDIA</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_UNIT_BUTCHER_PEDIA</Tag>
+		<English>[TAB]Butchers are an ancient trade group who profession is probably as old as the domestication of livestock. In England Butchers first formed guilds as early as 1272. Traditionally butchers used to perform the tasks of slaughtering animals and dressing their flesh as well as selling the meat. In modern times butchers may still be responsible for a combination of these tasks, though typically perform only the last.</English>
+		<French>[TAB]Une boucherie est un établissement commercial où l'on fait rassir et où l'on découpe et vend au détail de la viande d'animaux de boucherie. Son gérant est un artisan, le boucher. Les boucheries, lorsqu'elles ne sont pas constituées par un rayon dans une grande surface alimentaire, sont une forme de commerce de proximité.</French>
+		<German>[TAB]Der Fleischer, auch Metzger, Schlachter ist einer der älteren Handwerksberufe. Fleischer beschäftigen sich mit der Schlachtung und mit der Herstellung von Fleisch- und Wurstwaren, sie arbeiten in Schlachthöfen und in Fleischereien.</German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BUTCHER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master Butchers[COLOR_REVERT] are valuable cogs in your Food-production machinery. These specialists are capable of slaughtering double the number of [LINK=YIELD_SHEEP]Sheep[\LINK] and [LINK=YIELD_CATTLE]Cattle[\LINK] in the same amount of time as a [COLOR_UNIT_TEXT]Free Colonist[COLOR_REVERT] would, when assigned to either the [LINK=PROFESSION_BUTCHER_SHEEP]Butcher (Sheep)[\LINK] or [LINK=PROFESSION_BUTCHER_CATTLE]Butcher (Cattle)[\LINK] profession. So they produce twice as much [LINK=YIELD_WOOL]Wool[\LINK] and [LINK=YIELD_HIDES]Cowhides[\LINK] and in addition to this, Master Butchers produce an equal amount of [LINK=YIELD_FOOD] as well![PARAGRAPH:1]Master Butchers can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]College[\LINK] or one of its upgrades.</English>
@@ -222,31 +407,57 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONS</Tag>
-        <English>????</English>
+        <English>Cannons</English>
+		<French>Canon</French>
+		<German>
+			<Text>Kanonen</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONS_PEDIA</Tag>
         <English>[TAB]The first cannons evolved in the middle of the 15th century. A predecessor of the cannon was the bombarde. One of the first wars with large scale use of cannons was the "Italian War" of 1494. Cannons were made of bronze in the beginning, but usually made of steel later on. Depending on their targets they could fire different ammunition but usually it was heavy iron bullets. Mobility, fire power and rate of fire were much better than with bombards. In field battles, sieges and battles on sea, the cannon became on of the dominant types of weapons for centuries.</English>
         <French>[TAB]Les premières « bouches à feu » furent faites en fer forgé. Elles étaient composées de barres de fer soudées et assemblées en forme de douves et reliées par des cercles de même métal. En 1354, il y avait déjà des pièces en cuivre. En 1372, on coulait des pièces de bronze à Augsbourg. Vers la fin du XIVe siècle ces pièces étaient très nombreuses en Italie. On employa le fer forgé concurremment avec le bronze pendant environ deux siècles et demi. La fabrication des pièces de bronze ou de cuivre fait supposer la connaissance des fourneaux à réverbère. Le bronze outre l'étain et le cuivre contenait un peu de zinc, et même du plomb, mais on ne tarda guère à adopter une composition formée de cuivre et d'étain seulement.</French>
         <German>[TAB]Die ersten Kanonen entstanden im mittleren 15. Jahrhundert. Ein Vorgänger der Kanone war die Bombarde. Einer der erste Einsätze von Kanonen im großen Stil war im Jahr 1494, zur Zeit der Italienkriege. Die machmal aus Bronze, gegen später aber meist aus Stahl gegossenen Kanonen, verschossen je nach Einsatz verschiedenste Munition, meist waren es aber Eisenkugeln. In Bezug auf Mobilität, Feuerkraft und Schussrate waren sie Bombarden überlegen. In Feldschlachten, Belagerungsschlachten aber auch bei Schiffsgefechten wurden Kanonen bald für Jahrhunderte eine der dominanten Waffengattungen.</German>
-        <Italian>[TAB]The first cannons evolved in the middle of the 15th century. A predecessor of the cannon was the bombarde. One of the first wars with large scale use of cannons was the "Italian War" of 1494. Cannons were made of bronze in the beginning, but usually made of steel later on. Depending on their targets they could fire different ammunition but usually it was heavy iron bullets. Mobility, fire power and rate of fire were much better than with bombards. In field battles, sieges and battles on sea, the cannon became on of the dominant types of weapons for centuries.</Italian>
-        <Spanish>[TAB]The first cannons evolved in the middle of the 15th century. A predecessor of the cannon was the bombarde. One of the first wars with large scale use of cannons was the "Italian War" of 1494. Cannons were made of bronze in the beginning, but usually made of steel later on. Depending on their targets they could fire different ammunition but usually it was heavy iron bullets. Mobility, fire power and rate of fire were much better than with bombards. In field battles, sieges and battles on sea, the cannon became on of the dominant types of weapons for centuries.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONS_STRATEGY</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Cannons[COLOR_REVERT] are necessary to build ships and artillery units. They can either be produced in your colonies with the according production buildings or bought in Europe.</English>
         <French>Les [COLOR_HIGHLIGHT_TEXT]Canons[COLOR_REVERT] sont nécessaires pour construire des bateaux et des artilleries. Ils peuvent être produits dans vos colonies via les batiments dédiés ou achetés en Europe.</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Kanonen[COLOR_REVERT] werden zum Bau von Schiffen oder Artillery an Land benötigt. Mit den entsprechenden Gebäuden können Kanonen selbst produziert oder auch in Europa gekauft werden.</German>
-        <Italian>[COLOR_HIGHLIGHT_TEXT]Cannons[COLOR_REVERT] are necessary to build ships and artillery units. They can either be produced in your colonies with the according production buildings or bought in Europe.</Italian>
-        <Spanish>[COLOR_HIGHLIGHT_TEXT]Cannons[COLOR_REVERT] are necessary to build ships and artillery units. They can either be produced in your colonies with the according production buildings or bought in Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARAVEL</Tag>
-        <English>????</English>
+        <English>Caravel:Caravels</English>
+		<French>
+			<Text>Caravelle:Caravelles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Karavelle:Karavellen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Caravella:Caravelle</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Carabela:Carabelas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARAVELA_REDONDA</Tag>
-        <English>????</English>
+        <English>
+			<Text>Caravela Redonda:Caravelas Redondas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARAVELA_REDONDA_PEDIA</Tag>
@@ -282,12 +493,36 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER</Tag>
-        <English>????</English>
+        <English>Master Carpenter:Master Carpenters</English>
+		<French>
+			<Text>Maître menuisier:Maîtres menuisiers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Meisterzimmermann:Meisterzimmerleute</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Mastro carpentiere:Mastri carpentieri</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Maestro carpintero:Maestros carpinteros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_CARPENTER_PEDIA</Tag>
-        <English>????</English>
-    </TEXT>
+		<Tag>TXT_KEY_UNIT_CARPENTER_PEDIA</Tag>
+		<English>The Carpenter is able to craft lumber into a variety of practical and pleasing objects. And while any man can handle a saw or plane, it takes a skilled craftsman to quickly turn out the many items needed by a growing colony. The blacksmith needs a new rack to display his wares, the preacher benches for the faithful. Buckets for the wells; seats for the statehouse. Only a skilled Carpenter can fill every need while ensuring both speed and quality.</English>
+		<French>Le menuisier est capable de façonner le bois en divers objets pratiques ou décoratifs. Et même s'il est à portée de tout un chacun de manier une scie ou un rabot, seul un artisan expérimenté peut produire rapidement les nombreux objets requis par une colonie en pleine expansion. Le forgeron a besoin d'un nouveau porte-outils pour exhiber sa marchandise, le pasteur de bancs pour les fidèles. Il faut des seaux pour les puits, des sièges pour l'Assemblée... Seul un Menuisier expérimenté peut combler les besoins de chacun tout en garantissant rapidité et qualité.</French>
+		<German>Der Zimmermann ist in der Lage aus Holz eine Vielzahl praktischer und schöner Gegenstände zu erschaffen. Und auch wenn jeder Säge oder Hobel benutzen kann, braucht man schon einen fähigen Handwerker, um schnell die vielen Objekte zu bauen, die eine neue Kolonie benötigt. Der Schmied braucht ein neues Regal, um seine Ware auszustellen, der Prediger Bänke für die Gläubigen. Eimer für die Brunnen, Sitze für das Kapitol; nur ein fähiger Zimmermann kann jeden Bedarf decken und dabei schnell gute Qualität liefern.</German>
+		<Italian>Il carpentiere è in grado di realizzare oggetti pratici e piacevoli con il legname. Anche se chiunque è in grado di usare una sega o una pialla, ci vuole un abile artigiano per realizzare rapidamente i vari oggetti necessari a una colonia in crescita. Il fabbro ha bisogno di un nuovo scaffale per mettere in mostra la propria merce, al predicatore servono panche per i fedeli. Secchi per i pozzi; sedie per il municipio. Solo un abile carpentiere può soddisfare ogni richiesta assicurando contemporaneamente rapidità e qualità.</Italian>
+		<Spanish>El Carpintero es capaz de convertir la Madera en una gran variedad de objetos prácticos y agradables. Y, aunque todo el mundo es capaz de usar una sierra o un cepillo de carpintero, solo un artesano habilidoso puede producir rápidamente los diversos objetos que necesita una colonia. El Herrero necesita un nuevo estante en el que mostrar sus mercancías; y el Predicador, bancos para los fieles. Hay que hacer cubos para los pozos y sillas para el Ayuntamiento. Únicamente un Carpintero habilidoso puede satisfacer todas las necesidades con rapidez y calidad.</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARPENTER_STRATEGY</Tag>
         <English>[COLOR_UNIT_TEXT]Master Carpenters[COLOR_REVERT] can construct buildings and ships faster than any other colonist. Assigning them to the [LINK=PROFESSION_CARPENTER]Carpenter[\LINK] profession in your settlement will get all your construction jobs completed in half the usual time, as they generate twice as much [LINK=YIELD_HAMMERS]Production[\LINK] as other colonists, as long as enough [LINK=YIELD_LUMBER]Lumber[\LINK] is available.[PARAGRAPH:1]Master Carpenters can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]Schoolhouse[\LINK] or one of its upgrades.</English>
@@ -298,7 +533,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRACK</Tag>
-        <English>????</English>
+        <English>Carrack:Carracks</English>
+		<French>
+			<Text>Caraque:Caraques</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Karacke:Karacken</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>Caracca:Caracche</Italian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRACK_PEDIA</Tag>
@@ -318,7 +564,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIER</Tag>
-        <English>????</English>
+        <English>Conestoga:Conestogas</English>
+		<French>
+			<Text>Conestoga:Conestogas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Truppentransporter:Truppentransporter</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIER_PEDIA</Tag>
@@ -338,7 +594,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CATTLE</Tag>
-        <English>????</English>
+        <English>Cattle</English>
+		<French>Bétail</French>
+		<German>
+			<Text>Rinder</Text>
+			<Gender>Neuter</Gender>
+			<Plural>1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CATTLE_PEDIA</Tag>
@@ -354,7 +616,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Tag>
-        <English>????</English>
+        <English>Jesuit Missionary:Jesuit Missionaries</English>
+		<French>
+			<Text>Missionnaire jésuite:Missionnaires jésuites</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Jesuitenmissionar:Jesuitenmissionare</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Missionario gesuita:Missionari gesuiti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Misionero jesuita:Misioneros jesuit. </Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PEDIA</Tag>
@@ -410,7 +692,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS</Tag>
-        <English>????</English>
+        <English>Cigars</English>
+		<French>
+			<Text>Cigare:Cigares</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zigarren</German>
+		<Italian>
+			<Text>Sigari</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Puros</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS_PEDIA</Tag>
@@ -422,7 +720,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH</Tag>
-        <English>????</English>
+        <English>Cloth</English>
+		<French>
+			<Text>Tissu:Tissus</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stoff</German>
+		<Italian>
+			<Text>Tessuto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tejido</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CLOTH_PEDIA</Tag>
@@ -434,7 +748,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COATS</Tag>
-        <English>????</English>
+        <English>Coats</English>
+		<French>
+			<Text>Manteau:Manteaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Pelze</German>
+		<Italian>
+			<Text>Mantelli</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Abrigos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COATS_PEDIA</Tag>
