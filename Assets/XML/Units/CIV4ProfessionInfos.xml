@@ -559,7 +559,7 @@
 			</YieldsConsumed>
 			<Button>,Art/Colonization_Civilizations_Leaders.dds,6,8</Button>
 			<bUseLbD>1</bUseLbD>
-			<ExpertUnit>UNITCLASS_TRAPPER</ExpertUnit>
+			<ExpertUnit>UNITCLASS_SEALS_HUNTER</ExpertUnit>
 			<iLbDLearnLevel>2</iLbDLearnLevel>
 		</ProfessionInfo>
 		<ProfessionInfo>
@@ -1634,7 +1634,7 @@
 			<Button>,Art/colonization_atlas_professions_bonus.dds,4,6</Button>
 			<bUseLbD>1</bUseLbD>
 			<ExpertUnit>UNITCLASS_FURNITURE_MAKER</ExpertUnit>
-			<iLbDLearnLevel>3</iLbDLearnLevel>
+			<iLbDLearnLevel>2</iLbDLearnLevel>
 		</ProfessionInfo>
 		<ProfessionInfo>
 			<Type>PROFESSION_BLACKSMITH</Type>
