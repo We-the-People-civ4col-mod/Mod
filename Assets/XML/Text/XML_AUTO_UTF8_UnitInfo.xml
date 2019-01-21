@@ -17,11 +17,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</German>
-		<Italian>
-			<Text>African Slave:African Slaves</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
 		<Spanish>
 			<Text>Esclavo africano:Esclavos Africanos</Text>
 			<Gender>Male</Gender>
@@ -47,26 +42,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALLIGATOR</Tag>
         <English>Alligator</English>
-		<French>
-			<Text>Alligator</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Alligator</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Alligator</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Alligator</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALLIGATOR_PEDIA</Tag>
@@ -93,16 +68,6 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
-		<Italian>
-			<Text>Barley</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Barley</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BARLEY_PEDIA</Tag>
@@ -148,9 +113,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEAR_POLAR</Tag>
-        <English>[TAB]The polar bear (Ursus maritimus) is a bear native largely within the Arctic Circle encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the world's largest land carnivore and also the largest bear, together with the omnivorous Kodiak bear, which is approximately the same size. An adult male weighs around 350-700 kg (770-1,500 lb), while an adult female is about half that size. Although it is closely related to the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice, and open water, and for hunting the seals which make up most of its diet. Although most polar bears are born on land, they spend most of their time at sea. Their scientific name means 'maritime bear', and derives from this fact. Polar bears can hunt their preferred food of seals from the edge of sea ice, often living off fat reserves when no sea ice is present.</English>
-		<French>[TAB]L'ours blanc (Ursus maritimus) ou ours polaire est un grand mammifère carnivore originaire des régions arctiques. C'est, avec l'ours kodiak, le plus grand des carnivores terrestres et il figure au sommet de sa pyramide alimentaire. Parfaitement adapté à son habitat, l'ours blanc possède une épaisse couche de graisse ainsi qu'une fourrure qui l'isolent du froid. La couleur blanche de son pelage lui assure un camouflage idéal sur la banquise et sa peau noire lui permet de mieux conserver sa chaleur corporelle. Pourvu d'une courte queue et de petites oreilles, il possède une tête relativement petite et fuselée ainsi qu'un corps allongé, caractéristiques de son adaptation à la natation. L'ours blanc est un mammifère marin semi-aquatique, dont la survie dépend essentiellement de la banquise et de la productivité marine. Il chasse aussi bien sur terre que dans l'eau. Son espérance de vie est de 20-25 ans.</French>
-		<German>[TAB]Der Eisbär (Ursus maritimus), auch Polarbär, ist eine Raubtierart aus der Familie der Bären (Ursidae). Er bewohnt die nördlichen Polarregionen und ist eng mit dem Braunbären verwandt. Er gilt neben dem Kamtschatkabären und dem Kodiakbären als das größte an Land lebende Raubtier der Erde. Erwachsene männliche Eisbären erreichen im Durchschnitt eine Kopf-Rumpf-Länge von 2,40 bis 2,60 Metern, in Einzelfällen sogar von bis zu 3,40 Metern; die Schulterhöhe beträgt bis zu 1,60 Meter. Das Gewicht variiert zwischen 300 und 800 (durchschnittlich 420 bis 500) Kilogramm. Bei Weibchen erreicht die Kopf-Rumpf-Länge im Durchschnitt 1,90 bis 2,10 Meter, doch wurden auch schon 2,50 Meter gemessen; das Körpergewicht liegt bei ihnen zwischen 150 und 300 Kilogramm. Das Gewicht hängt wesentlich vom Ernährungszustand der Tiere ab: im Sommer wiegen ausgehungerte Eisbären deutlich weniger als während der Zeit winterlicher Robbenjagd. Eine Rolle spielen auch regionale Größenunterschiede. Die kleinsten Tiere leben auf Spitzbergen und die größten in der Nähe der Beringstraße. Wie alle Bärenarten besitzen auch Eisbären nur einen Stummelschwanz von 7 bis 13 Zentimetern Länge. Eisbären sind ausschließlich in der Arktis verbreitet und zwar zirkumpolar, also in der Polarregion rund um den Nordpol. Die meisten hocharktischen Eisbären halten sich das ganze Jahr über an den Küsten oder auf dem Meereseis auf, um dort Robben zu jagen. Verglichen mit anderen Bären neigen Eisbären stärker dazu, Menschen als Beutetiere anzusehen. Wenn es auch wegen der dünnen Besiedlung der Arktis verhältnismäßig selten zur Konfrontation kommt, wird trotzdem von Zeit zu Zeit über für Menschen tödliche Begegnungen berichtet. Am häufigsten erfolgen Angriffe durch Halbwüchsige sowie Muttertiere mit Kindern. </German>
+        <English>Polar Bear</English>
+		<French>
+			<Text>Ours blanc</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Eisbär</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BEAR_POLAR_PEDIA</Tag>
@@ -565,11 +538,6 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_CARRIER</Tag>
         <English>Conestoga:Conestogas</English>
-		<French>
-			<Text>Conestoga:Conestogas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
 		<German>
 			<Text>Truppentransporter:Truppentransporter</Text>
 			<Gender>Male</Gender>
@@ -1552,11 +1520,21 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FERMENTATOR</Tag>
-        <English>[COLOR_UNIT_TEXT]Master Driers[COLOR_REVERT] are proficient in drying [LINK=YIELD_COCOA_FRUITS]Cocoa Pods[\LINK] and [LINK=YIELD_COFFEE_BERRIES]Coffee Berries[\LINK] to make [LINK=YIELD_COCOA]Cocoa[\LINK] and [LINK=YIELD_COFFEE]Coffee[\LINK] out of them. When assigned to the [LINK=PROFESSION_COCOA_DRIER]Cocoa Drier[\LINK] or [LINK=PROFESSION_COFFEE_DRIER]Coffee Drier[\LINK] profession, they are capable of turning out double the amount of both resources in the same amount of time it would take a regular colonist to create it.[PARAGRAPH:1]Master Driers can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]College[\LINK] or one of its upgrades.</English>
-		<French>Les [COLOR_UNIT_TEXT]Maîtres torrefacteurs[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]café torréfié ou cacao[COLOR_REVERT] depuis les [COLOR_HIGHLIGHT_TEXT]grains de cafés ou fèves de cacao[COLOR_REVERT].</French>
-		<German>[COLOR_UNIT_TEXT]Meister Kako- u. Kaffeehändler:Kako- u. Kaffeehändler[COLOR_REVERT] verarbeiten doppelt soviele [COLOR_HIGHLIGHT_TEXT]Kaffeefrüchte[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Kakaorüchte[COLOR_REVERT] in getrockneten Kaffee bzw. Kakao, wie andere Kolonisten.</German>
-		<Italian>[COLOR_UNIT_TEXT]Master Fermentators[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]coffee or cocoa[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]coffee or cocoa beans[COLOR_REVERT].</Italian>
-		<Spanish>[COLOR_UNIT_TEXT]Master Fermentators[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]coffee or cocoa[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]coffee or cocoa beans[COLOR_REVERT].</Spanish>
+        <English>
+			<Text>Master Drier:Master Driers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Maître torréfacteur:Maître torréfacteurs</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Meister Fermentierer:Meister Fermentierer</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FERMENTATOR_PEDIA</Tag>
@@ -2120,11 +2098,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREATWHITE</Tag>
-        <English>[TAB]The great white shark, Carcharodon carcharias, also known as the great white, white pointer, white shark, or white death, is a species of large lamniform shark which can be found in the coastal surface waters of all the major oceans. The great white shark is mainly known for its size, with the largest individuals known to have approached or exceeded 6 m (20 ft) in length, and 2,500 kg (5,000 lb) in weight. This shark reaches its maturity around 15 years of age and can have a life span of over 30 years. The great white shark is arguably the world's largest known extant macropredatory fish, and is one of the primary predators of marine mammals. It is also known to prey upon a variety of other marine animals, including fish and seabirds. It is the only known surviving species of its genus Carcharodon, and is ranked first in having the most attacks on humans.</English>
-		<French>[TAB]Le grand requin blanc (Carcharodon carcharias) est une espèce de requin de la famille des lamnidés. Il est le seul représentant du genre Carcharodon. Avec une taille maximale dépassant les 6 mètres, c'est l'un des plus grands poissons prédateurs vivant actuellement dans les océans. Il est considéré comme un requin dangereux puisqu'il est responsable de nombreuses attaques contre les hommes. Néanmoins, contrairement à certaines idées reçues, il n'est pas un « mangeur d'hommes » et l'homme n'est pas une proie pour lui, la plupart des attaques sont dues à une erreur d'analyse visuelle du requin. Le grand requin blanc a une alimentation très variée : il se nourrit surtout de pinnipèdes, de poissons, de tortues de mer et occasionnellement de certains cétacés.</French>
-		<German>[TAB]Der Weiße Hai (Carcharodon carcharias), seltener auch als Weißhai oder Menschenhai bezeichnet, ist die einzige Art der Gattung Carcharodon aus der Familie der Makrelenhaie (Lamnidae). Der Trivialname bezieht sich auf die auffällig helle Bauchfärbung der Tiere. Die Art kommt fast weltweit vor und besiedelt bevorzugt gemäßigte Küstengewässer. Als die größte Haiart, die sich nicht von Plankton ernährt, ist der Weiße Hai der größte Raubfisch der Welt und kann auch Menschen gefährlich werden. Der Weiße Hai gehört mit einer durchschnittlichen Länge von etwa vier bis fünf Metern und einer geschätzten Höchstlänge von fast acht Metern zu den größten Haiarten. Die Weibchen werden deutlich größer als die Männchen, welche maximal etwa fünf Meter Länge erreichen. Das Gewicht kann bis zu dreieinhalb Tonnen betragen. Auf Grund seiner Größe, Kraft und Aggressivität gilt der Weiße Hai als für den Menschen gefährlich und ist nach mehreren Studien die am häufigsten für Angriffe auf Menschen verantwortliche Art. Manche Autoren gehen allerdings davon aus, dass hierbei häufig andere Arten wie der Bullenhai mit dem bekannteren Weißen Hai verwechselt werden. Weltweit kommt es pro Jahr im Durchschnitt zu etwa drei bis sieben nicht provozierten Angriffen, von denen etwa 20 Prozent tödlich enden.</German>
-		<Italian>[TAB]The great white shark, Carcharodon carcharias, also known as the great white, white pointer, white shark, or white death, is a species of large lamniform shark which can be found in the coastal surface waters of all the major oceans. The great white shark is mainly known for its size, with the largest individuals known to have approached or exceeded 6 m (20 ft) in length, and 2,500 kg (5,000 lb) in weight. This shark reaches its maturity around 15 years of age and can have a life span of over 30 years. The great white shark is arguably the world's largest known extant macropredatory fish, and is one of the primary predators of marine mammals. It is also known to prey upon a variety of other marine animals, including fish and seabirds. It is the only known surviving species of its genus Carcharodon, and is ranked first in having the most attacks on humans.</Italian>
-		<Spanish>[TAB]The great white shark, Carcharodon carcharias, also known as the great white, white pointer, white shark, or white death, is a species of large lamniform shark which can be found in the coastal surface waters of all the major oceans. The great white shark is mainly known for its size, with the largest individuals known to have approached or exceeded 6 m (20 ft) in length, and 2,500 kg (5,000 lb) in weight. This shark reaches its maturity around 15 years of age and can have a life span of over 30 years. The great white shark is arguably the world's largest known extant macropredatory fish, and is one of the primary predators of marine mammals. It is also known to prey upon a variety of other marine animals, including fish and seabirds. It is the only known surviving species of its genus Carcharodon, and is ranked first in having the most attacks on humans.</Spanish>
+        <English>Great White Shark</English>
+		<French>
+			<Text>Grand requin blanc</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Weißer Hai</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Grande squalo bianco</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GREATWHITE_PEDIA</Tag>
@@ -2334,13 +2323,65 @@
         <Italian>I [COLOR_UNIT_TEXT]mastri armaioli[COLOR_REVERT] sono fondamentali per l'indipendenza. Questi specialisti sono in grado di creare il doppio di [COLOR_HIGHLIGHT_TEXT]armi[COLOR_REVERT] rispetto a quelle create da un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo. Ciò significa che, grazie a un mastro armaiolo, potrai armare i tuoi cittadini più rapidamente.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Maestros armeros[COLOR_REVERT] son la llave de la independencia. Estos especialistas son capaces de crear el doble de [COLOR_HIGHLIGHT_TEXT]Armas[COLOR_REVERT] en la misma cantidad de tiempo que un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT]. Esto significa que, gracias al Maestro armero, vuestros ciudadanos pueden verse armados mucho más rápido.</Spanish>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY</Tag>
+		<English>Light Artillery:Light Artillery</English>
+		<French>Artillerie légère:Artilleries légères</French>
+		<German>Leichte Artillerie:Leichte Artillerien</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Tag>
+		<English>Cannons which were made in fairly light construction were used especially during the 17th century for the defense of light boats and ships. Those cannons were also heavily used by the British and the Colonists during the American Revolutionary War.</English>
+		<French>Des canons construits à partir de matériaux relativement légers ont été particulièrement utilisés au XVIIe siècle pour la défense des navires. Ces canons ont particulièrement été utilisés par les Britaniques et les colons pendant la guerre d'indépendance Américaine.</French>
+		<German>Leichte Geschütze können bei der Verteidigung von Siedlungen auf Häuserdächern oder Wällen stationiert werden und mit ihren kleinkalibrigen Geschossen den Angreifern gefährlich werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Light artilleries[COLOR_REVERT] can be produced in settlements with an [COLOR_HIGHLIGHT_TEXT]Armory[COLOR_REVERT], in which case they need some [LINK=YIELD_CANNONS]Cannons[\LINK] to be present in that colony, or they can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK]. In the open battlefield or as an assault unit Cannon Garrisons are rather weak. But when they are stationed in [LINK=CONCEPT_SETTLEMENTS]Settlements[\LINK] they are the only Siege units that do profit from the settlement's [COLOR_HIGHLIGHT_TEXT]Defensive Bonuses[COLOR_REVERT], and they get an additional defense bonus of 50%. For the protection of important cities it might be better to employ [LINK=PROFESSION_MUSKETMEN]Musketmen[\LINK], which are able to gain better defense bonuses via promotions.</English>
+		<French>Les [COLOR_UNIT_TEXT]artilleries légères[COLOR_REVERT] peuvent être produits dans les colonies disposant d'une [COLOR_HIGHLIGHT_TEXT]armurerie[COLOR_REVERT]. L'unité est faible en terrain ouvert ou pour un assaut, mais placé en garnison dans une colonie ou un fort, elle est la seule unité d'artillerie à profiter du bonus défensif procuré par les fortifications de vos colonies auquel s'ajoute un bonus supplémentaire de 50%. Pour les colonies de plus grandes tailles, il peut être avisé d'employer malgré tout des fantassins, qui peuvent bénéficier de meilleurs bonus défensifs via promotions. [NEWLINE][NEWLINE] Les canons de garnison peuvent également être acheté en Europe. Son prix augmente alors après chaque achat.</French>
+		<German>[COLOR_UNIT_TEXT]Leichte Artillerie[COLOR_REVERT] kann in Siedlungen mit einer [COLOR_HIGHLIGHT_TEXT]Waffenkammer[COLOR_REVERT] von Zimmermännern gebaut werden. Auf freiem Feld oder im Angriff sind sie kampfschwach. Stationiert man sie aber in Siedlungen, verfügen sie dort über einen ordentlichen Defensivbonus und können zudem als einzige Artillerieeinheit auch die Verteidigungsboni von Befestigungsanlagen nutzen. Allerdings sollte man zum Schutz wichtiger und gut ausgebauter Städte lieber auf Kolonialmilizen setzen, die - im Gegensatz zu Leichten Artillerien - durch Beförderungen Defensivboni erhalten können. Zudem wirken sich die prozentualen Verteidigungsboni, die durch Verschanztsein, durch Verteidigungsbauwerke oder durch Beförderungen gewährt werden, bei Kolonialmilizen stärker aus als bei Leichten Artillerien, weil die Berechnungsgrundlage dieser Boni - die Basis-Kampfstärke - bei den Infanteristen höher ist.[NEWLINE][NEWLINE]Leichte Artillerien können auch in Europa erworben werden. Beim Kauf kostet jede weitere Einheit mehr Gold als die vorherige.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY</Tag>
+		<English>
+			<Text>Heavy Artillery:Heavy Artilleries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Artillerie lourde:Artilleries lourdes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Schwere Artillerie:Schwere Artillerien</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Tag>
+		<English>Among the earliest inventions that made use of gunpowder, Cannons remained among the most important until the 19th century. By the late 1500s, cannon had become light but powerful weapons that could be easily moved and adjusted to take aim at whatever target the battle might present. Such cannons proved extremely useful against native foes, who had never experienced the devastating effects of such weapons and had no tactics to counter them.</English>
+		<French>Les Canons figurent parmi les armes à poudre les plus utilisées jusqu'au 19ème siècle. A la fin du 16ème siècle, le canon s'est allégé, mais est aussi devenu une arme puissante que l'on peut déplacer facilement pour cibler n'importe quel objectif. Les canons s'avèrent extrêmement utiles contre les ennemis indigènes, qui  n'ont jamais connu les effets dévastateurs de ce genre d'armes et n'ont aucune tactique pour les parer.</French>
+		<German>Die Kanone war eine der ersten Erfindungen, in denen Schießpulver zum Einsatz kam. Bis ins 19. Jahrhundert hinein zählten sie zu den wichtigsten Waffen. Gegen Ende des 16. Jahrhunderts war die Kanone zu einer leichten und mächtigen Waffe geworden, die schnell die Position wechseln konnten, um jedes Ziel ins Visier zu nehmen, das sich während der Schlacht bot. Solche Kanonen erwiesen sich als besonders effektiv gegen eingeborene Gegner, die noch nie mit den verheerenden Auswirkungen dieser Waffen in Berührung gekommen waren und keine taktische Kontermöglichkeit hatten.</German>
+		<Italian>I cannoni furono tra le prime invenzioni a utilizzare la polvere da sparo e rimasero tra le più importanti fino al XIX secolo. Nel tardo XVI secolo, i cannoni erano più leggeri ma potenti che potevano essere facilmente spostate e regolate per prendere di mira i bersagli offerti durante la battaglia. Tali cannoni si dimostrarono estremamente utili contro gli avversari nativi, che non avevano mai provato i devastanti effetti di questo tipo di armi e non avevano tattiche per contrastarle.</Italian>
+		<Spanish>Entre los primeros inventos que hicieron uso de la pólvora, los Cañones siguieron siendo los más importantes hasta el s. XIX. A finales del s. XVI, los Cañones se habían convertido en armas ligeras pero potentes que podían moverse fácilmente para apuntar a cualquier objetivo en la batalla. Estos Cañones demostraron ser extremadamente útiles contra los indígenas enemigos, que nunca habían experimentado los efectos devastadores de tales armas y carecían de tácticas para contrarrestarlas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_STRATEGY</Tag>
+		<English>[COLOR_UNIT_TEXT]Heavy artillery[COLOR_REVERT] is the key to any successful siege. When attacking an enemy [LINK=CONCEPT_SETTLEMENTS]Settlement[\LINK], it gains a 70% bonus to attack strength, making it a very strong Siege Unit. Cannons are the only land-based units in the Colonial Armies that are able to bombard enemy fortifications and lower the settlements' defenses.[PARAGRAPH:1] The Cannon Regiment's defensive capabilities are limited, since they don't receive Defensive Bonuses. In the open battlefield cannons have to be well protected by other troops, especially against enemy [LINK=PROFESSION_DRAGOON]Dragoons[\LINK], who get a vast attack bonus versus cannons.[PARAGRAPH:1]Cannons can be produced in settlements with a [LINK=BUILDING_MAGAZINE]Magazine[\LINK], though they need some [LINK=YIELD_CANNONS]Cannons[\LINK] to be present in that settlement, and they are also available for purchase in [LINK=CONCEPT_EUROPE]Europe[\LINK]. Among units that are accessible to Colonial Powers, only [LINK=UNIT_MORTAR]Mortars[\LINK] are more effective against enemy fortifications.</English>
+		<French>Les [COLOR_UNIT_TEXT]artilleries lourdes[COLOR_REVERT] sont des unités stratégiques pour la réussite d'un siège. Leur force d'attaque est doublée lorsqu'ils s'attaquent à un territoire ennemi, devenant ainsi l'unité la plus puissante du jeu. Ces unités reçoivent également un bonus lorsqu'elles défendent une colonie depuis l'intérieur et peuvent être utilisées pour diminuer le bonus défensif des colonies qu'elles attaquent !</French>
+		<German>Die [COLOR_UNIT_TEXT]Schwere Artillerie[COLOR_REVERT] hat einen Siedlungsangriffsbonus von 70% und ist eine starke Waffe zur Eroberung von Städten. Als einzige Truppe der Koloniemächte kann sie gegnerische Städte bombardieren und dadurch deren Siedlungsverteidigungsboni schwächen.[NEWLINE][NEWLINE]Die Schwere Artillerie hat nur begrenzte Defensivqualitäten. Sie kann grundsätzlich keine Verteidigungsboni nutzen. Im offenen Gelände muss sie von anderen Truppentypen vor Angriffen feindlicher Dragoner (und ihrem Angriffsbonus gegenüber der Schweren Artillerie) geschützt werden.[NEWLINE][NEWLINE]Schwere Artillerie kann in Siedlungen mit einem [COLOR_HIGHLIGHT_TEXT]Magazin[COLOR_REVERT] gebaut oder in Europa gekauft werden. Beim Kauf kostet jede weitere Einheit mehr Gold als die vorherige. [NEWLINE][NEWLINE] Eine noch wirkungsvollere Belagerungsartillerie ist der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT].</German>
+		<Italian>L'unità [COLOR_UNIT_TEXT]cannone[COLOR_REVERT] è la chiave di volta di qualsiasi assedio di successo. Quando attacca un insediamento nemico la sua potenza d'attacco è raddoppiata, rendendola la più forte unità disponibile. Inoltre queste unità hanno un bonus quando difendono da dentro un insediamento e possono essere utilizzate per abbassare il bonus difensivo degli insediamenti che attaccano!</Italian>
+		<Spanish>La unidad del [COLOR_UNIT_TEXT]Cañón[COLOR_REVERT] es la clave para conseguir la victoria en cualquier asedio. Cuando ataca un asentamiento enemigo, su potencia de ataque se dobla, lo cual lo convierte en la unidad más potente que hay disponible. Estas unidades además reciben una bonificación cuando defienden desde dentro de un asentamiento y se pueden emplear para bajar las bonificaciones defensivas de los asentamientos a los que estén atacando.</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN</Tag>
         <English>TXT_KEY_UNIT_HEAVY_ARTILLERY</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_PEDIA</Tag>
-        <English>TXT_KEY_UNIT_ARTILLERY_PEDIA</English>
+        <English>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_STRATEGY</Tag>
