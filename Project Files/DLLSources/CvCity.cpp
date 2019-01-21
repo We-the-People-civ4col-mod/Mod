@@ -10804,40 +10804,26 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 {	
 	// get data from Unit
 	int workedRounds = convUnit->getLbDrounds();
+	// this is a chance divisor if the unit changes professions.
 	ProfessionTypes lastProfession = convUnit->getLastLbDProfession();
 	ProfessionTypes currentProfession = convUnit->getProfession();
-	
-	//getting KI-Modifier
-	int ki_modifier = GC.getLBD_KI_MOD_EXPERT();
 
-	if (currentProfession != lastProfession)
+	//getting KI-Modifier
+	bool changedProfession = ( currentProfession != lastProfession );
+	
+	convUnit -> setLbDrounds(workedRounds + 1);
+	if (changedProfession)
 	{
 		convUnit->setLastLbDProfession(currentProfession);
-		if(isHuman())
-		{	
-			//workedRounds = 1;
-			convUnit->setLbDrounds(1);
-		}
-		// here little cheat for AI to cope with feature
-		// profession change does not reset worked rounds
-		else
-		{
-			//workedRounds++;
-			convUnit->setLbDrounds(workedRounds + 1);
-		}
-	}
-
-	else 
-	{
-		//workedRounds++;
-		convUnit->setLbDrounds(workedRounds + 1);
-	}
+		return false;		
+	} ;
+	
 
 	if (workedRounds < pre_rounds)
 	{
 		return false;
 	}
-	
+
 	// do not use feature if City Population = 1, because might destroy city
 	if (getPopulation() == 1)
 	{
@@ -10847,7 +10833,8 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	int calculatedChance = (base + (workedRounds - pre_rounds) * increase / l_level);
 	
 	if(!isHuman())
-	{	
+	{
+		int ki_modifier = GC.getLBD_KI_MOD_EXPERT();
 		calculatedChance = calculatedChance * ki_modifier / 100;
 	}
 	
@@ -11038,11 +11025,30 @@ void CvCity::doLbD()
 	int train_percent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
 	//moddifying values with GameSpeed
-	chance_increase_expert = chance_increase_expert / train_percent / 100;
+	chance_increase_expert = chance_increase_expert * 100 / train_percent;
 	pre_rounds_expert = pre_rounds_expert * train_percent / 100;
 
-	chance_increase_free = chance_increase_free / train_percent / 100;
+	chance_increase_free = chance_increase_free * 100 /  train_percent ;
+	if(chance_increase_free <= 0) {
+		chance_increase_free = 1;
+	}
+	if (chance_increase_expert <= 0) {
+		chance_increase_expert = 1;
+	}
 	pre_rounds_free = pre_rounds_free * train_percent / 100;
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		TraitTypes eTrait = (TraitTypes) iTrait;
+		if (eTrait != NO_TRAIT)
+		{
+			if (hasTrait(eTrait))
+			{
+				pre_rounds_expert *= 100;
+				pre_rounds_expert /= GC.getTraitInfo(eTrait).getLearningByDoingModifier() + 100;
+				
+			}
+		}
+	}
 
 	// loop through units
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
