@@ -10832,7 +10832,6 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 
 	int calculatedChance = (base + (workedRounds - pre_rounds) * increase / l_level);
 	
-
 	if(!isHuman())
 	{
 		int ki_modifier = GC.getLBD_KI_MOD_EXPERT();
