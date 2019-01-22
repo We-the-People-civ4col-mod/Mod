@@ -216,11 +216,11 @@
         <Italian>The [COLOR_BUILDING_TEXT]Blacksmith's House[COLOR_REVERT] represents the most basic form of [COLOR_HIGHLIGHT_TEXT]Tools[COLOR_REVERT] production facility available. A [COLOR_UNIT_TEXT]Free Colonist[COLOR_REVERT] working here will create three tools per turn at a cost of three [COLOR_HIGHLIGHT_TEXT]Ore[COLOR_REVERT]. This number can be increased greatly by assigning a [COLOR_UNIT_TEXT]Master Blacksmith[COLOR_REVERT] to work here or by upgrading to a [COLOR_BUILDING_TEXT]Blacksmith's Shop[COLOR_REVERT], an [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT], a [COLOR_BUILDING_TEXT]Tool Factory[COLOR_REVERT] or even a [COLOR_BUILDING_TEXT]Great Tool Factory[COLOR_REVERT] (which you can only build at rivers). You can get Master Blacksmiths by education or by recruiting them at europe harbour.</Italian>
         <Spanish>The [COLOR_BUILDING_TEXT]Blacksmith's House[COLOR_REVERT] represents the most basic form of [COLOR_HIGHLIGHT_TEXT]Tools[COLOR_REVERT] production facility available. A [COLOR_UNIT_TEXT]Free Colonist[COLOR_REVERT] working here will create three tools per turn at a cost of three [COLOR_HIGHLIGHT_TEXT]Ore[COLOR_REVERT]. This number can be increased greatly by assigning a [COLOR_UNIT_TEXT]Master Blacksmith[COLOR_REVERT] to work here or by upgrading to a [COLOR_BUILDING_TEXT]Blacksmith's Shop[COLOR_REVERT], an [COLOR_BUILDING_TEXT]Ironworks[COLOR_REVERT], a [COLOR_BUILDING_TEXT]Tool Factory[COLOR_REVERT] or even a [COLOR_BUILDING_TEXT]Great Tool Factory[COLOR_REVERT] (which you can only build at rivers). You can get Master Blacksmiths by education or by recruiting them at europe harbour.</Spanish>
     </TEXT>
-    <TEXT>
-		<Tag>TXT_KEY_BUILDING_BREWERS_HOUSE_PEDIA</Tag>
-		<English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
-		<French>[TAB]La bière est une boisson alcoolisée obtenue par fermentation de matières glucidiques végétales et d'eau. C'est une boisson alcoolisée obtenue par transformation de matières amylacées par voies enzymatiques et microbiologiques. Plus spécifiquement de nos jours, elles est généralement fabriquée à partir d'eau, de malt (céréale germée, principalement de l'orge, parfois additionné d'autres céréales) et depuis le Moyen âge, de houblon. C'est l'une des boissons les plus populaires et consommées au monde.</French>
-		<German>[TAB]Bier ist ein alkohol- und kohlensäurehaltiges Getränk, das durch Gärung meist aus den Grundzutaten Wasser, Malz und Hopfen gewonnen wird. Malz wiederum ist getrocknetes und gekeimtes Getreide, meist Gerste. Bier ist schon seit tausenden Jahren bekannt.</German>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BREWERS_HOUSE</Tag>
+		<English>Brewer's House</English>
+		<French>Maison du brasseur</French>
+		<German>Brauhaus</German>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BREWERS_HOUSE_PEDIA</Tag>
@@ -238,11 +238,11 @@
         <Italian>The [COLOR_HIGHLIGHT_TEXT]Brewers House[COLOR_REVERT] is the lowest level of brewery buildings. Brewers brew [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] to drastically increase the output.</Italian>
         <Spanish>The [COLOR_HIGHLIGHT_TEXT]Brewers House[COLOR_REVERT] is the lowest level of brewery buildings. Brewers brew [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT]. Use [COLOR_UNIT_TEXT]Master Brewers[COLOR_REVERT] to drastically increase the output.</Spanish>
     </TEXT>
-    <TEXT>
-		<Tag>TXT_KEY_BUILDING_BREWERY_PEDIA</Tag>
-		<English>[TAB]Beer is an alcoholic beverage produced by the saccharification of starch and fermentation of the resulting sugar. The starch and saccharification enzymes are often derived from malted cereal grains, most commonly malted barley and malted wheat. Most beer is also flavoured with hops, which add bitterness and act as a natural preservative, though other flavourings such as herbs or fruit may occasionally be included. The preparation of beer is called brewing. Beer is the world's most widely consumed alcoholic beverage. It is the third-most popular drink overall, after water and tea.</English>
-		<French>[TAB]La bière est une boisson alcoolisée obtenue par fermentation de matières glucidiques végétales et d'eau. C'est une boisson alcoolisée obtenue par transformation de matières amylacées par voies enzymatiques et microbiologiques. Plus spécifiquement de nos jours, elles est généralement fabriquée à partir d'eau, de malt (céréale germée, principalement de l'orge, parfois additionné d'autres céréales) et depuis le Moyen âge, de houblon. C'est l'une des boissons les plus populaires et consommées au monde.</French>
-		<German>[TAB]Bier ist ein alkohol- und kohlensäurehaltiges Getränk, das durch Gärung meist aus den Grundzutaten Wasser, Malz und Hopfen gewonnen wird. Malz wiederum ist getrocknetes und gekeimtes Getreide, meist Gerste. Bier ist schon seit tausenden Jahren bekannt.</German>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BREWERY</Tag>
+		<English>Brewery</English>
+		<French>Brasserie</French>
+		<German>Brauerei</German>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_BREWERY_PEDIA</Tag>
@@ -3081,7 +3081,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHALE_OIL_FACTORY</Tag>
-        <English>????</English>
+		<English>Train Oil Rendering Plant</English>
+		<French>
+			<Text>Manufacture oléicole</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Tranfabrik</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_WHALE_OIL_FACTORY_PEDIA</Tag>
