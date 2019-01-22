@@ -2323,26 +2323,8 @@
         <Italian>I [COLOR_UNIT_TEXT]mastri armaioli[COLOR_REVERT] sono fondamentali per l'indipendenza. Questi specialisti sono in grado di creare il doppio di [COLOR_HIGHLIGHT_TEXT]armi[COLOR_REVERT] rispetto a quelle create da un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo. Ciò significa che, grazie a un mastro armaiolo, potrai armare i tuoi cittadini più rapidamente.</Italian>
         <Spanish>Los [COLOR_UNIT_TEXT]Maestros armeros[COLOR_REVERT] son la llave de la independencia. Estos especialistas son capaces de crear el doble de [COLOR_HIGHLIGHT_TEXT]Armas[COLOR_REVERT] en la misma cantidad de tiempo que un [COLOR_UNIT_TEXT]Colono libre[COLOR_REVERT]. Esto significa que, gracias al Maestro armero, vuestros ciudadanos pueden verse armados mucho más rápido.</Spanish>
     </TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY</Tag>
-		<English>Light Artillery:Light Artillery</English>
-		<French>Artillerie légère:Artilleries légères</French>
-		<German>Leichte Artillerie:Leichte Artillerien</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Tag>
-		<English>Cannons which were made in fairly light construction were used especially during the 17th century for the defense of light boats and ships. Those cannons were also heavily used by the British and the Colonists during the American Revolutionary War.</English>
-		<French>Des canons construits à partir de matériaux relativement légers ont été particulièrement utilisés au XVIIe siècle pour la défense des navires. Ces canons ont particulièrement été utilisés par les Britaniques et les colons pendant la guerre d'indépendance Américaine.</French>
-		<German>Leichte Geschütze können bei der Verteidigung von Siedlungen auf Häuserdächern oder Wällen stationiert werden und mit ihren kleinkalibrigen Geschossen den Angreifern gefährlich werden.</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Light artilleries[COLOR_REVERT] can be produced in settlements with an [COLOR_HIGHLIGHT_TEXT]Armory[COLOR_REVERT], in which case they need some [LINK=YIELD_CANNONS]Cannons[\LINK] to be present in that colony, or they can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK]. In the open battlefield or as an assault unit Cannon Garrisons are rather weak. But when they are stationed in [LINK=CONCEPT_SETTLEMENTS]Settlements[\LINK] they are the only Siege units that do profit from the settlement's [COLOR_HIGHLIGHT_TEXT]Defensive Bonuses[COLOR_REVERT], and they get an additional defense bonus of 50%. For the protection of important cities it might be better to employ [LINK=PROFESSION_MUSKETMEN]Musketmen[\LINK], which are able to gain better defense bonuses via promotions.</English>
-		<French>Les [COLOR_UNIT_TEXT]artilleries légères[COLOR_REVERT] peuvent être produits dans les colonies disposant d'une [COLOR_HIGHLIGHT_TEXT]armurerie[COLOR_REVERT]. L'unité est faible en terrain ouvert ou pour un assaut, mais placé en garnison dans une colonie ou un fort, elle est la seule unité d'artillerie à profiter du bonus défensif procuré par les fortifications de vos colonies auquel s'ajoute un bonus supplémentaire de 50%. Pour les colonies de plus grandes tailles, il peut être avisé d'employer malgré tout des fantassins, qui peuvent bénéficier de meilleurs bonus défensifs via promotions. [NEWLINE][NEWLINE] Les canons de garnison peuvent également être acheté en Europe. Son prix augmente alors après chaque achat.</French>
-		<German>[COLOR_UNIT_TEXT]Leichte Artillerie[COLOR_REVERT] kann in Siedlungen mit einer [COLOR_HIGHLIGHT_TEXT]Waffenkammer[COLOR_REVERT] von Zimmermännern gebaut werden. Auf freiem Feld oder im Angriff sind sie kampfschwach. Stationiert man sie aber in Siedlungen, verfügen sie dort über einen ordentlichen Defensivbonus und können zudem als einzige Artillerieeinheit auch die Verteidigungsboni von Befestigungsanlagen nutzen. Allerdings sollte man zum Schutz wichtiger und gut ausgebauter Städte lieber auf Kolonialmilizen setzen, die - im Gegensatz zu Leichten Artillerien - durch Beförderungen Defensivboni erhalten können. Zudem wirken sich die prozentualen Verteidigungsboni, die durch Verschanztsein, durch Verteidigungsbauwerke oder durch Beförderungen gewährt werden, bei Kolonialmilizen stärker aus als bei Leichten Artillerien, weil die Berechnungsgrundlage dieser Boni - die Basis-Kampfstärke - bei den Infanteristen höher ist.[NEWLINE][NEWLINE]Leichte Artillerien können auch in Europa erworben werden. Beim Kauf kostet jede weitere Einheit mehr Gold als die vorherige.</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY</Tag>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN</Tag>
 		<English>
 			<Text>Heavy Artillery:Heavy Artilleries</Text>
 			<Gender>Male</Gender>
@@ -2358,30 +2340,14 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</German>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Tag>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_PEDIA</Tag>
 		<English>Among the earliest inventions that made use of gunpowder, Cannons remained among the most important until the 19th century. By the late 1500s, cannon had become light but powerful weapons that could be easily moved and adjusted to take aim at whatever target the battle might present. Such cannons proved extremely useful against native foes, who had never experienced the devastating effects of such weapons and had no tactics to counter them.</English>
 		<French>Les Canons figurent parmi les armes à poudre les plus utilisées jusqu'au 19ème siècle. A la fin du 16ème siècle, le canon s'est allégé, mais est aussi devenu une arme puissante que l'on peut déplacer facilement pour cibler n'importe quel objectif. Les canons s'avèrent extrêmement utiles contre les ennemis indigènes, qui  n'ont jamais connu les effets dévastateurs de ce genre d'armes et n'ont aucune tactique pour les parer.</French>
 		<German>Die Kanone war eine der ersten Erfindungen, in denen Schießpulver zum Einsatz kam. Bis ins 19. Jahrhundert hinein zählten sie zu den wichtigsten Waffen. Gegen Ende des 16. Jahrhunderts war die Kanone zu einer leichten und mächtigen Waffe geworden, die schnell die Position wechseln konnten, um jedes Ziel ins Visier zu nehmen, das sich während der Schlacht bot. Solche Kanonen erwiesen sich als besonders effektiv gegen eingeborene Gegner, die noch nie mit den verheerenden Auswirkungen dieser Waffen in Berührung gekommen waren und keine taktische Kontermöglichkeit hatten.</German>
 		<Italian>I cannoni furono tra le prime invenzioni a utilizzare la polvere da sparo e rimasero tra le più importanti fino al XIX secolo. Nel tardo XVI secolo, i cannoni erano più leggeri ma potenti che potevano essere facilmente spostate e regolate per prendere di mira i bersagli offerti durante la battaglia. Tali cannoni si dimostrarono estremamente utili contro gli avversari nativi, che non avevano mai provato i devastanti effetti di questo tipo di armi e non avevano tattiche per contrastarle.</Italian>
 		<Spanish>Entre los primeros inventos que hicieron uso de la pólvora, los Cañones siguieron siendo los más importantes hasta el s. XIX. A finales del s. XVI, los Cañones se habían convertido en armas ligeras pero potentes que podían moverse fácilmente para apuntar a cualquier objetivo en la batalla. Estos Cañones demostraron ser extremadamente útiles contra los indígenas enemigos, que nunca habían experimentado los efectos devastadores de tales armas y carecían de tácticas para contrarrestarlas.</Spanish>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Heavy artillery[COLOR_REVERT] is the key to any successful siege. When attacking an enemy [LINK=CONCEPT_SETTLEMENTS]Settlement[\LINK], it gains a 70% bonus to attack strength, making it a very strong Siege Unit. Cannons are the only land-based units in the Colonial Armies that are able to bombard enemy fortifications and lower the settlements' defenses.[PARAGRAPH:1] The Cannon Regiment's defensive capabilities are limited, since they don't receive Defensive Bonuses. In the open battlefield cannons have to be well protected by other troops, especially against enemy [LINK=PROFESSION_DRAGOON]Dragoons[\LINK], who get a vast attack bonus versus cannons.[PARAGRAPH:1]Cannons can be produced in settlements with a [LINK=BUILDING_MAGAZINE]Magazine[\LINK], though they need some [LINK=YIELD_CANNONS]Cannons[\LINK] to be present in that settlement, and they are also available for purchase in [LINK=CONCEPT_EUROPE]Europe[\LINK]. Among units that are accessible to Colonial Powers, only [LINK=UNIT_MORTAR]Mortars[\LINK] are more effective against enemy fortifications.</English>
-		<French>Les [COLOR_UNIT_TEXT]artilleries lourdes[COLOR_REVERT] sont des unités stratégiques pour la réussite d'un siège. Leur force d'attaque est doublée lorsqu'ils s'attaquent à un territoire ennemi, devenant ainsi l'unité la plus puissante du jeu. Ces unités reçoivent également un bonus lorsqu'elles défendent une colonie depuis l'intérieur et peuvent être utilisées pour diminuer le bonus défensif des colonies qu'elles attaquent !</French>
-		<German>Die [COLOR_UNIT_TEXT]Schwere Artillerie[COLOR_REVERT] hat einen Siedlungsangriffsbonus von 70% und ist eine starke Waffe zur Eroberung von Städten. Als einzige Truppe der Koloniemächte kann sie gegnerische Städte bombardieren und dadurch deren Siedlungsverteidigungsboni schwächen.[NEWLINE][NEWLINE]Die Schwere Artillerie hat nur begrenzte Defensivqualitäten. Sie kann grundsätzlich keine Verteidigungsboni nutzen. Im offenen Gelände muss sie von anderen Truppentypen vor Angriffen feindlicher Dragoner (und ihrem Angriffsbonus gegenüber der Schweren Artillerie) geschützt werden.[NEWLINE][NEWLINE]Schwere Artillerie kann in Siedlungen mit einem [COLOR_HIGHLIGHT_TEXT]Magazin[COLOR_REVERT] gebaut oder in Europa gekauft werden. Beim Kauf kostet jede weitere Einheit mehr Gold als die vorherige. [NEWLINE][NEWLINE] Eine noch wirkungsvollere Belagerungsartillerie ist der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT].</German>
-		<Italian>L'unità [COLOR_UNIT_TEXT]cannone[COLOR_REVERT] è la chiave di volta di qualsiasi assedio di successo. Quando attacca un insediamento nemico la sua potenza d'attacco è raddoppiata, rendendola la più forte unità disponibile. Inoltre queste unità hanno un bonus quando difendono da dentro un insediamento e possono essere utilizzate per abbassare il bonus difensivo degli insediamenti che attaccano!</Italian>
-		<Spanish>La unidad del [COLOR_UNIT_TEXT]Cañón[COLOR_REVERT] es la clave para conseguir la victoria en cualquier asedio. Cuando ataca un asentamiento enemigo, su potencia de ataque se dobla, lo cual lo convierte en la unidad más potente que hay disponible. Estas unidades además reciben una bonificación cuando defienden desde dentro de un asentamiento y se pueden emplear para bajar las bonificaciones defensivas de los asentamientos a los que estén atacando.</Spanish>
-	</TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN</Tag>
-        <English>TXT_KEY_UNIT_HEAVY_ARTILLERY</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_PEDIA</Tag>
-        <English>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_STRATEGY</Tag>
@@ -2829,7 +2795,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN</Tag>
-        <English>TXT_KEY_UNIT_LIGHT_ARTILLERY</English>
+		<English>Light Artillery:Light Artillery</English>
+		<French>Artillerie légère:Artilleries légères</French>
+		<German>Leichte Artillerie:Leichte Artillerien</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_VETERAN_PEDIA</Tag>
