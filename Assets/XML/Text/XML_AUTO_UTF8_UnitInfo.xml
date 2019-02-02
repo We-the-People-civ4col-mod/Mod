@@ -5054,11 +5054,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VALUABLE_WOOD</Tag>
-        <English>[TAB]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</English>
-		<French>[TAB]Les bois d'ébénisterie, souvent nommés bois précieux peuvent être des bois des régions tempérées ou des bois tropicaux. Ils sont utilisés en ébénisterie, lutherie, marqueterie, sculpture sous forme de bois massif, feuillets ou bois de placage. Le caractère précieux, variable suivant les époques, fait référence à leurs propriétés, leur rareté et leur prix. On les distingue généralement des bois plus courants tels que le frêne, le sapin, l'épicéa ou le peuplier (bois blancs), le pin, le cèdre rouge (bois rouges) et des bois rouges tropicaux dits exotiques, comme le sipo.</French>
-		<German>[TAB]Edelholz ist sehr hart, hat eine hohe dichte, feine Texturen und kann sehr glatt geschliffen werden. Dadurch ist es sehr begehrt um Verzierungen oder hochwertige Holzprodukte, wie zum Beispiel Möbel herzustellen.</German>
-		<Italian>[TAB]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</Italian>
-		<Spanish>[TAB]Valuable Wood is very hard, which combined with its very high density (it is one of the woods that sink in water), fine texture, and ability to polish very smoothly, has made it very valuable as an ornamental wood. The species is still fairly widespread and frequent in the wild, though threatened by over-harvesting for its valuable wood; it is also extensively planted within its native range for wood production.</Spanish>
+		<English>Valuable Wood</English>
+		<French>Bois précieux</French>
+		<German>
+			<Text>Edelholz</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_VALUABLE_WOOD_PEDIA</Tag>
@@ -5374,11 +5376,17 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WINE</Tag>
-        <English>[TAB]Wine, a beverage made from fermented grapes, was first produced as early as 6000 BC. Its use spread throughout the Middle East and Egypt, and it quickly became a popular beverage of the ancient world. The grapes used for the making of wine are grown in many different regions of the world. Most vineyards are located in hills and valleys of temperate regions. Wine making as an industry has been perfected over several centuries. Many regions such as the Rhine and Loire valleys of Europe are well known for their fine wines, and derive a significant portion of their economy from wine making.</English>
-		<French>[TAB]Le vin est une boisson obtenue par la fermentation du raisin. Sa production débute dès 6 000 ans av. J.-C. Sa consommation se répand à travers tout le Moyen-Orient et l'Egypte, et il devient rapidement une boisson très populaire dans le monde antique. Le raisin utilisé dans la fabrication du vin est cultivé dans de nombreuses régions du monde. Les vignes sont généralement situées sur les coteaux et dans les vallées des régions tempérées. Les procédés de fabrication du vin ont été perfectionnés au cours des siècles. De nombreuses régions, comme les vallées du Rhin et de la Loire, sont réputées pour leurs bons vins, et une grande partie de leur économie est liée à la fabrication du vin.</French>
-		<German>[TAB]Der aus fermentierten Trauben hergestellte Wein wurde erstmals um 6000 vor Christus produziert und war im Nahen Osten und in Ägypten weit verbreitet. Das Getränk entwickelte sich schnell zu einem der beliebtesten kulinarischen Genüsse der Antike. Die für die Weinherstellung benötigten Trauben werden in vielen verschiedenen Gebieten der Welt angebaut, die meisten Weinhänge befinden sich jedoch in den Hügeln und Tälern von Regionen mit gemäßigtem Klima. Im Laufe mehrerer Jahrhunderte wurde die industrielle Weinherstellung immer weiter perfektioniert. Viele Anbaugebiete wie die Rhein- und Loiretäler in Europa sind für ihre feinen Weine bekannt und beziehen einen Großteil ihrer wirtschaftlichen Erträge aus der Weinproduktion.</German>
-		<Italian>[TAB]Realizzato dalla fermentazione dell'uva, il primo vino risale circa al 6000 a. C. e si diffuse rapirdamente attraverso il Medio Oriente e l'Egitto, diventando una delle bevande più popolari del mondo antico. Le qualità d'uva usate per la realizzazione del vino crescono in differenti zone del mondo; la maggior parte delle vigne si possono trovare sulle colline e nelle vallate di regioni dal clima temperato. L'industria del vino è andata perfezionandosi nel corso dei secoli: molte regioni europee, come le vallate del Reno e della Loira, sono rinomate per la produzione di ottimi vini, principale forma di economia della zona.</Italian>
-		<Spanish>[TAB]El vino, una bebida preparada a partir de uvas fermentadas, se elaboró por vez primera ya en el 6000 a. C. Su consumo se extendió rápidamente por Oriente Medio y Egipto, y pronto se convirtió en una popular bebida en el mundo antiguo. Las uvas empleadas en la fabricación del vino crecen en muchas y muy distintas partes del mundo. La mayoría de las viñas están en colinas y valles de regiones templadas. La vinicultura se ha perfeccionado como industria a lo largo de varios siglos. Muchas regiones, como los valles del Rin y del Loira en Europa, son conocidas por sus grandes vinos y obtienen una parte significativa de sus ingresos de la vinicultura.</Spanish>
+		<English>Wine</English>
+		<French>
+			<Text>Vin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Wein</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WINE_MAKER</Tag>
