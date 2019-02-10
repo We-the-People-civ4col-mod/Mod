@@ -4932,19 +4932,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAIN_PEDIA</Tag>
-        <English>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy. </English>
+        <English>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy.</English>
         <French>Les convoyeurs reflètent le développement et le renforcement de votre réseau routier dans le nouveau monde. Les convoyeurs sont très utiles pour développer une économie riche et puissante.</French>
         <German>[TAB]Erst nach und nach entstand in der neuen Welt ein mehr oder weniger gut ausgebautes Straßennetz. Auf dem Land kam man meist über Feldwege, die als "Straßen" bezeichnet wurde nicht hinaus. Erst mit der beginnenden industriellen Entwicklung folgte auch der Ausbau der Infrastruktur und dies besonders in den größeren Ortschaften oder Städten.</German>
-        <Italian>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy.</Italian>
-        <Spanish>Carriages reflect the development and strengthening of a road system in the new world. Carriages are very useful for a strong and powerful economy.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAIN_STRATEGY</Tag>
-        <English>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Carriages[COLOR_REVERT] are the ultimate Land Transport Unit. They have six cargo slots which can carry both units and goods, and they are the only Land Transport Units capable of carrying [LINK=CONCEPT_CHANGES_TO_TREASURES]Treasures[\LINK]. However, they can only travel over [COLOR_HIGHLIGHT_TEXT]Plastered Country Roads[COLOR_REVERT], and they need a [LINK=BUILDING_TRAIN_STATION]Waystation[\LINK] to be present in a colony to be built. This makes Carriages very useful for the Transport of units and goods between your own settlements, but for fast unit transport through [COLOR_HIGHLIGHT_TEXT]wilder[COLOR_REVERT] places, you'll need Stagecoaches or Conestogas.</English>
         <French>Les convoyeurs nécessitent des routes pavées et coûtent assez cher. Ils sont cependant particulièrement plus rapides que les autres véhicules et peuvent charger davantage de marchandises. Ils se révèlent ainsi particuliè utiles sur les grandes cartes.</French>
         <German>Fuhrwerke sind zwar schwieriger und teurer zu bauen als Wagenzüge oder Trecks und benötigen dazu auch noch eine befestigte Landstraße um darauf zu fahren, aber sie sind viel schneller und können viel mehr transportieren.</German>
-        <Italian>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</Italian>
-        <Spanish>Carriages are more expensive and need a plastered country road. However they are a lot faster than other vehicles and able to load more goods. So they are useful on big and gigantic maps in particular.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAPPER</Tag>

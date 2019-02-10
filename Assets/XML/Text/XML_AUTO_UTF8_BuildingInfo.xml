@@ -1419,13 +1419,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>Wheelwrights Workshop</English>
+		<English>Great Wheelwrights Workshop</English>
 		<French>
-			<Text>Scierie:Scieries</Text>
+			<Text>Scierie industrielle:Scieries industrielles</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</French>
-		<German>Wagnerei</German>
+		<German>Holzmanufaktur</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_GREAT_WHEELWRIGHTS_WORKSHOP_PEDIA</Tag>
@@ -2755,19 +2755,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TRAIN_STATION_PEDIA</Tag>
-        <English>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</English>
-        <French>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</French>
+        <English>[TAB]Waystations are taverns or hotels near the main roads. Passengers, postal horsemen and drivers of carriages can rest and recover here, as well as exchange their tired horses for fresh ones.</English>
         <German>[TAB]Postreiter- und Pferdewechselstationen waren in der Regel an den Verkehrswegen gelegene Tavernen und Wirtschaften, bei denen nicht nur Reisende, sondern insbesondere Postreiter oder Postkutschen ihre Pferde wechseln konnten, um ohne Verzögerung weiterzureiten bzw. zu fahren.</German>
-        <Italian>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</Italian>
-        <Spanish>[TAB]Waystations are taverns or hotels near the main roads. Passender, postal horsemen and driver of carriages can rest and recover here and can change their horses.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_TRAIN_STATION_STRATEGY</Tag>
-        <English>Waystations are required for the construction of carriages. Furthermore they give a production bonus with regard to the constructon of building since building materials can be carried much better.</English>
+        <English>Waystations are required for the construction of carriages. They also give a bonus to production and construction since materials can be moved around more easily.</English>
         <French>Les relais de poste sont nécessaires à la construction de convoyeurs. Ils apportent par ailleurs un bonus de production puisque le matériel peut être bien plus facilement transporté</French>
         <German>Für den Bau von Fuhrwerken werden Postreiter- und Pferdewechselstationen benötigt. Des weiteren erwirken sie einen Produktionsbonus (Gebäudebau), da Baumaterialien von anderen Orten einfacher herantransportiert werden können.</German>
-        <Italian>Waystations are required for the construction of carriages. Furthermore they give a procudtion bonus with regard to the constructon of building since building materials can be carried much better.</Italian>
-        <Spanish>Waystations are required for the construction of carriages. Furthermore they give a procudtion bonus with regard to the constructon of building since building materials can be carried much better.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_UNIVERSITY</Tag>
