@@ -493,15 +493,15 @@
             <FavoredTerrain>NONE</FavoredTerrain>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
             <Cities>
-                <City>Québec</City>
-                <City>Montréal</City>
+                <City>Qu&#233;bec</City>
+                <City>Montr&#233;al</City>
                 <City>Tadoussac</City>
-                <City>Trois-Rivières</City>
+                <City>Trois-Rivi&#232;res</City>
                 <City>Port-au-Prince</City>
-                <City>Petit-Goâve</City>
+                <City>Petit-Go&#226;ve</City>
                 <City>Cayenne</City>
                 <City>Ville d'Etroit</City>
-                <City>La Nouvelle-Orléans</City>
+                <City>La Nouvelle-Orl&#233;ans</City>
                 <City>Fort Caroline</City>
                 <City>Baton Rouge</City>
                 <City>Fort de Rocher</City>
@@ -512,7 +512,7 @@
                 <City>Saint Ignace</City>
                 <City>Fort Frontenac</City>
                 <City>Duluth</City>
-                <City>Fort Crèvecoeur</City>
+                <City>Fort Cr&#232;vecoeur</City>
                 <City>Pesaquid</City>
                 <City>Fort Saint Joseph</City>
                 <City>La Mobile</City>
@@ -520,12 +520,12 @@
                 <City>Port-la-Joye</City>
                 <City>Fort des Miamis</City>
                 <City>Basse-Terre</City>
-                <City>Sainte Geneviève</City>
+                <City>Sainte Genevi&#232;ve</City>
                 <City>Saint Louis</City>
                 <City>Fort Maurepas</City>
                 <City>Castries</City>
                 <City>Fort Conti</City>
-                <City>Cap-Français</City>
+                <City>Cap-Fran&#231;ais</City>
                 <City>Martinique</City>
                 <City>Fort Coligny</City>
                 <City>Plaisance</City>
@@ -538,7 +538,7 @@
                 <City>Saint Philippe</City>
                 <City>Prairie du Rocher</City>
                 <City>Acadie</City>
-                <City>Fort Rouillé</City>
+                <City>Fort Rouill&#233;</City>
                 <City>Saint Martin</City>
                 <City>Kaskaskia</City>
                 <City>Fort Dauphin</City>
@@ -546,7 +546,7 @@
                 <City>Bonaire</City>
                 <City>Fort Rouge</City>
                 <City>Saint Alexis</City>
-                <City>Fort Orléans</City>
+                <City>Fort Orl&#233;ans</City>
                 <City>Saint Croix</City>
                 <City>Saint Vincent</City>
                 <City>Fort du Quesne</City>
@@ -554,12 +554,12 @@
                 <City>Montserrat</City>
                 <City>Fort Niagara</City>
                 <City>Miquelon</City>
-                <City>Fort Liberté</City>
-                <City>Carénage</City>
+                <City>Fort Libert&#233;</City>
+                <City>Car&#233;nage</City>
                 <City>Vieux Fort</City>
-                <City>Fort Détroit</City>
+                <City>Fort D&#233;troit</City>
                 <City>Port-de-Paix</City>
-                <City>Cap-Haïtien</City>
+                <City>Cap-Ha&#239;tien</City>
                 <City>Fort Saint-Michel</City>
                 <City>Marigot</City>
                 <City>Fort Prud'homme</City>
@@ -579,7 +579,7 @@
                 <City>Sainte Foy</City>
                 <City>Sorel</City>
                 <City>Fort Beauharnois</City>
-                <City>Château-Richer</City>
+                <City>Ch&#226;teau-Richer</City>
                 <City>La Prairie</City>
                 <City>Fort La Reine</City>
                 <City>Fort des Moines</City>
@@ -587,7 +587,7 @@
                 <City>Fort Sandouski</City>
                 <City>Cap de la Madeleine</City>
                 <City>Fort de Chartres</City>
-                <City>Sainte Anne de Beaupré</City>
+                <City>Sainte Anne de Beaupr&#233;</City>
                 <City>Cap-Saint-Ignace</City>
                 <City>Fort La Baye</City>
                 <City>Longueuil</City>
@@ -602,79 +602,79 @@
                 <City>Fort Canada</City>
                 <City>Varennes</City>
                 <City>Fort-de-France</City>
-                <City>Verchères</City>
+                <City>Verch&#232;res</City>
                 <City>L'Ancienne-Lorette</City>
                 <City>Pointe-aux-Trembles</City>
                 <City>Fort l'Aguille</City>
                 <City>Fort Saint-Antoine</City>
                 <City>Lachine</City>
                 <City>Lavaltrie</City>
-                <City>Fort François Xavier</City>
+                <City>Fort Fran&#231;ois Xavier</City>
                 <City>Contrecoeur</City>
                 <City>Loretteville</City>
-                <City>La Pocatière</City>
+                <City>La Pocati&#232;re</City>
                 <City>Montmagny</City>
-                <City>Lévis</City>
+                <City>L&#233;vis</City>
                 <City>L'Islet</City>
                 <City>Saint Augustin de Desmaures</City>
                 <City>Fort Saint-Joseph</City>
                 <City>Baie-Saint-Paul</City>
                 <City>Fort Chicago</City>
                 <City>Berthierville</City>
-                <City>Saint François</City>
+                <City>Saint Fran&#231;ois</City>
                 <City>Fort Conde</City>
                 <City>Lachenaie</City>
                 <City>Fort Pensacola</City>
-                <City>Rivière-du-Loup</City>
-                <City>Bécancour</City>
+                <City>Rivi&#232;re-du-Loup</City>
+                <City>B&#233;cancour</City>
             </Cities>
             <Generals>
                 <General>Chevalier de Mercy</General>
                 <General>Jean-Baptiste Le Moyne de Bienville</General>
                 <General>Comte de La Galissoniere</General>
-                <General>Pierre François de Rigaud</General>
+                <General>Pierre Fran&#231;ois de Rigaud</General>
                 <General>Louis-Joseph de Montcalm</General>
                 <General>Jean-Baptiste-Donatien de Rochambeau</General>
                 <General>Joseph Coulon de Jumonville</General>
                 <General>Francis de Gaston</General>
                 <General>Jean-Baptiste de Vimeur</General>
                 <General>Armand Louis de Gontaut</General>
-                <General>François-Jean de Chastellux</General>
+                <General>Fran&#231;ois-Jean de Chastellux</General>
                 <General>Antoine-Charles du Houx</General>
-                <General>Charles du Houx de Vioménil</General>
-                <General>François-Marie Le Marchand de Lignery</General>
+                <General>Charles du Houx de Viom&#233;nil</General>
+                <General>Fran&#231;ois-Marie Le Marchand de Lignery</General>
                 <General>Michel-Ange de Menneville</General>
                 <General>Daniel de Beaujeu</General>
                 <General>Charles Tuffin</General>
             </Generals>
             <Admirals>
-                <Admiral>François Thurot</Admiral>
+                <Admiral>Fran&#231;ois Thurot</Admiral>
                 <Admiral>Pierre Le Moyne d'Iberville</Admiral>
                 <Admiral>Louis-Philippe de Vaudreuil</Admiral>
                 <Admiral>Louis-Philippe de Rigaud</Admiral>
-                <Admiral>René Duguay-Trouin</Admiral>
+                <Admiral>Ren&#233; Duguay-Trouin</Admiral>
                 <Admiral>Louis Guillouet</Admiral>
                 <Admiral>Charles Hector d'Estaing</Admiral>
                 <Admiral>Jean Gaspard de Vence</Admiral>
                 <Admiral>Aymar Chaste</Admiral>
                 <Admiral>Jean-Baptiste du Casse</Admiral>
-                <Admiral>Jean-François du Cheyron</Admiral>
-                <Admiral>Charles René Dominique Sochet</Admiral>
+                <Admiral>Jean-Fran&#231;ois du Cheyron</Admiral>
+                <Admiral>Charles Ren&#233; Dominique Sochet</Admiral>
                 <Admiral>Jacques-Melchior Saint-Laurent</Admiral>
                 <Admiral>Luc Urbain de Bouëxic</Admiral>
             </Admirals>
             <Ships>
-                <Ship>Galathée</Ship>
+                <Ship>Galath&#233;e</Ship>
                 <Ship>Mutine</Ship>
                 <Ship>Emeraude</Ship>
-                <Ship>Sirène</Ship>
-                <Ship>Renomée</Ship>
+                <Ship>Sir&#232;ne</Ship>
+                <Ship>Renom&#233;e</Ship>
                 <Ship>Amphitrite</Ship>
                 <Ship>Megere</Ship>
                 <Ship>Topaze</Ship>
-                <Ship>Thétis</Ship>
+                <Ship>Th&#233;tis</Ship>
                 <Ship>Heroine</Ship>
-                <Ship>Comète</Ship>
+                <Ship>Com&#232;te</Ship>
                 <Ship>Fleur de Lys</Ship>
                 <Ship>Licorne</Ship>
                 <Ship>Sauvage</Ship>
@@ -686,90 +686,90 @@
                 <Ship>Brune</Ship>
                 <Ship>Aigrette</Ship>
                 <Ship>Vestale</Ship>
-                <Ship>Félicité</Ship>
-                <Ship>Alcmène</Ship>
+                <Ship>F&#233;licit&#233;</Ship>
+                <Ship>Alcm&#232;ne</Ship>
                 <Ship>Aimable</Ship>
-                <Ship>Infidèle</Ship>
-                <Ship>Légere</Ship>
-                <Ship>Sincère</Ship>
+                <Ship>Infid&#232;le</Ship>
+                <Ship>L&#233;gere</Ship>
+                <Ship>Sinc&#232;re</Ship>
                 <Ship>Inconstante</Ship>
                 <Ship>Blanche</Ship>
-                <Ship>Enjouée</Ship>
-                <Ship>Dédaigneuse</Ship>
+                <Ship>Enjou&#233;e</Ship>
+                <Ship>D&#233;daigneuse</Ship>
                 <Ship>Belle Poule</Ship>
                 <Ship>Tourterelle</Ship>
-                <Ship>Indiscrète</Ship>
+                <Ship>Indiscr&#232;te</Ship>
                 <Ship>Sensible</Ship>
                 <Ship>Pourvoyeuse</Ship>
                 <Ship>Consolante</Ship>
                 <Ship>Nymphe</Ship>
                 <Ship>Andromaque</Ship>
-                <Ship>Astrée</Ship>
+                <Ship>Astr&#233;e</Ship>
                 <Ship>Sibylle</Ship>
                 <Ship>Diane</Ship>
-                <Ship>Néréide</Ship>
+                <Ship>N&#233;r&#233;ide</Ship>
                 <Ship>Fine</Ship>
                 <Ship>Emeraude</Ship>
                 <Ship>Charmante</Ship>
                 <Ship>Junon</Ship>
                 <Ship>Gracieuse</Ship>
                 <Ship>Inconstante</Ship>
-                <Ship>Hélene</Ship>
+                <Ship>H&#233;lene</Ship>
                 <Ship>Concorde</Ship>
                 <Ship>Courageuse</Ship>
                 <Ship>Hermione</Ship>
-                <Ship>Iphigénie</Ship>
+                <Ship>Iphig&#233;nie</Ship>
                 <Ship>Surveillante</Ship>
-                <Ship>Résolue</Ship>
+                <Ship>R&#233;solue</Ship>
                 <Ship>Gentille</Ship>
                 <Ship>Amazone</Ship>
                 <Ship>Prudente</Ship>
                 <Ship>Gloire</Ship>
                 <Ship>Bellone</Ship>
-                <Ship>Médee</Ship>
+                <Ship>M&#233;dee</Ship>
                 <Ship>Magicienne</Ship>
-                <Ship>Précieuse</Ship>
+                <Ship>Pr&#233;cieuse</Ship>
                 <Ship>Vestale</Ship>
                 <Ship>Alceste</Ship>
                 <Ship>Iris</Ship>
-                <Ship>Réunion</Ship>
+                <Ship>R&#233;union</Ship>
                 <Ship>Modeste</Ship>
                 <Ship>Topaze</Ship>
-                <Ship>Cérès</Ship>
-                <Ship>Fée</Ship>
+                <Ship>C&#233;r&#232;s</Ship>
+                <Ship>F&#233;e</Ship>
                 <Ship>Railleuse</Ship>
                 <Ship>Claire</Ship>
                 <Ship>Capricieuse</Ship>
                 <Ship>Friponne</Ship>
                 <Ship>Prudente</Ship>
-                <Ship>Vénus</Ship>
+                <Ship>V&#233;nus</Ship>
                 <Ship>Calypso</Ship>
-                <Ship>Fidèle</Ship>
-                <Ship>Fortunée</Ship>
-                <Ship>Sémillante</Ship>
+                <Ship>Fid&#232;le</Ship>
+                <Ship>Fortun&#233;e</Ship>
+                <Ship>S&#233;millante</Ship>
                 <Ship>Insurgente</Ship>
-                <Ship>Décade Francaise</Ship>
+                <Ship>D&#233;cade Francaise</Ship>
                 <Ship>Bravoure</Ship>
                 <Ship>Patriote</Ship>
-                <Ship>Dédaigneuse</Ship>
-                <Ship>Téemis</Ship>
+                <Ship>D&#233;daigneuse</Ship>
+                <Ship>T&#233;emis</Ship>
                 <Ship>Heureuse</Ship>
                 <Ship>Chiffonne</Ship>
                 <Ship>Forte</Ship>
-                <Ship>Hébé</Ship>
+                <Ship>H&#233;b&#233;</Ship>
                 <Ship>Dryade</Ship>
                 <Ship>Proserpine</Ship>
                 <Ship>Sibylle</Ship>
                 <Ship>Carmagnole</Ship>
                 <Ship>Danae</Ship>
-                <Ship>Méduse</Ship>
+                <Ship>M&#233;duse</Ship>
                 <Ship>Didon</Ship>
                 <Ship>Nymphe</Ship>
-                <Ship>Cybèle</Ship>
+                <Ship>Cyb&#232;le</Ship>
                 <Ship>Concorde</Ship>
                 <Ship>Minerve</Ship>
                 <Ship>Junon</Ship>
-                <Ship>Impérieuse</Ship>
+                <Ship>Imp&#233;rieuse</Ship>
                 <Ship>Melpomene</Ship>
                 <Ship>Isis</Ship>
                 <Ship>Valeureuse</Ship>
@@ -777,7 +777,7 @@
                 <Ship>Carrere</Ship>
                 <Ship>Muiron</Ship>
                 <Ship>Seine</Ship>
-                <Ship>Révolutionnaire</Ship>
+                <Ship>R&#233;volutionnaire</Ship>
                 <Ship>Spartiate</Ship>
                 <Ship>Indienne</Ship>
                 <Ship>Furieuse</Ship>
@@ -785,7 +785,7 @@
                 <Ship>Courageuse</Ship>
                 <Ship>Harmonie</Ship>
                 <Ship>Volontaire</Ship>
-                <Ship>Cornélie</Ship>
+                <Ship>Corn&#233;lie</Ship>
                 <Ship>Didon</Ship>
                 <Ship>Rhin</Ship>
                 <Ship>Rhone</Ship>
@@ -794,22 +794,22 @@
                 <Ship>Preneuse</Ship>
                 <Ship>Africaine</Ship>
                 <Ship>Armide</Ship>
-                <Ship>Pénélope</Ship>
+                <Ship>P&#233;n&#233;lope</Ship>
                 <Ship>Flore</Ship>
                 <Ship>Amphitrite</Ship>
-                <Ship>Niémen</Ship>
+                <Ship>Ni&#233;men</Ship>
                 <Ship>Saale</Ship>
                 <Ship>Loire</Ship>
-                <Ship>Circé</Ship>
+                <Ship>Circ&#233;</Ship>
                 <Ship>Antigone</Ship>
-                <Ship>Cléopatre</Ship>
+                <Ship>Cl&#233;opatre</Ship>
                 <Ship>Magicienne</Ship>
                 <Ship>Charlemagne</Ship>
-                <Ship>Président</Ship>
+                <Ship>Pr&#233;sident</Ship>
                 <Ship>Topaze</Ship>
                 <Ship>Louis</Ship>
                 <Ship>Marat</Ship>
-                <Ship>Régénérée</Ship>
+                <Ship>R&#233;g&#233;n&#233;r&#233;e</Ship>
             </Ships>
             <Buildings>
                 <Building>
@@ -963,46 +963,46 @@
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
             <Cities>
                 <City>La Isabela</City>
-                <City>Concepción de la Vega</City>
+                <City>Concepci&#243;n de la Vega</City>
                 <City>Santo Domingo</City>
                 <City>La Habana</City>
                 <City>Vera Cruz</City>
-                <City>Ciudad de México</City>
-                <City>Potosí</City>
+                <City>Ciudad de M&#233;xico</City>
+                <City>Potos&#237;</City>
                 <City>Ciudad de los Reyes</City>
                 <City>Santiago</City>
                 <City>Buenos Aires</City>
-                <City>Asunción</City>
+                <City>Asunci&#243;n</City>
                 <City>Caparra</City>
-                <City>Santa María</City>
+                <City>Santa Mar&#237;a</City>
                 <City>Baracoa</City>
                 <City>Trinidad</City>
-                <City>Ciudad de Panamá</City>
+                <City>Ciudad de Panam&#225;</City>
                 <City>Guatemala</City>
                 <City>Santa Marta</City>
                 <City>San Salvador</City>
                 <City>Acapulco</City>
-                <City>Espíritu Santo</City>
+                <City>Esp&#237;ritu Santo</City>
                 <City>Cartagena</City>
                 <City>Quito</City>
                 <City>Comayagua</City>
                 <City>Ciudad de la Plata</City>
-                <City>Bogotá</City>
-                <City>Mérida</City>
-                <City>Valparaíso</City>
+                <City>Bogot&#225;</City>
+                <City>M&#233;rida</City>
+                <City>Valpara&#237;so</City>
                 <City>La Paz</City>
                 <City>Puerto de los Hispanioles</City>
                 <City>San Juan</City>
                 <City>Campeche</City>
-                <City>San Augustín</City>
+                <City>San August&#237;n</City>
                 <City>Caracas</City>
                 <City>Santa Fe</City>
                 <City>Villahermosa</City>
                 <City>Monterrey</City>
-                <City>Medellín</City>
+                <City>Medell&#237;n</City>
                 <City>El Paso</City>
                 <City>San Diego</City>
-                <City>San José</City>
+                <City>San Jos&#233;</City>
                 <City>Cartago</City>
                 <City>La Navidad</City>
                 <City>Lima</City>
@@ -1014,25 +1014,25 @@
                 <City>Tobago</City>
                 <City>San Francisco</City>
                 <City>San Angelo</City>
-                <City>Cancún</City>
+                <City>Canc&#250;n</City>
                 <City>La Plata</City>
                 <City>Nombre de Dios</City>
                 <City>Granada</City>
                 <City>Saltillo</City>
                 <City>Montevideo</City>
                 <City>Portobelo</City>
-                <City>León</City>
-                <City>Ciudad Juárez</City>
+                <City>Le&#243;n</City>
+                <City>Ciudad Ju&#225;rez</City>
                 <City>Loreto</City>
                 <City>Santa Barbara</City>
                 <City>Chihuahua</City>
                 <City>Albuquerque</City>
-                <City>Córdoba</City>
+                <City>C&#243;rdoba</City>
                 <City>Trujillo</City>
                 <City>Puerto Principe</City>
                 <City>Nuevo Segovia</City>
                 <City>Maracaibo</City>
-                <City>Ciudad Bolívar</City>
+                <City>Ciudad Bol&#237;var</City>
                 <City>San Fernando</City>
                 <City>Guayaquil</City>
                 <City>Cali</City>
@@ -1040,15 +1040,15 @@
                 <City>Arica</City>
                 <City>Santa Cruz</City>
                 <City>Valdivia</City>
-                <City>Acámbaro</City>
+                <City>Ac&#225;mbaro</City>
                 <City>San Miguel</City>
-                <City>Mazatlán</City>
-                <City>Culiacán</City>
+                <City>Mazatl&#225;n</City>
+                <City>Culiac&#225;n</City>
                 <City>Oaxaca</City>
                 <City>San Pedro Sula</City>
                 <City>Yuriria</City>
                 <City>Antigua</City>
-                <City>San Germán</City>
+                <City>San Germ&#225;n</City>
                 <City>Aguascalientes</City>
                 <City>Parras</City>
                 <City>Salamanca</City>
@@ -1058,80 +1058,80 @@
                 <City>San Blas</City>
                 <City>Orizaba</City>
                 <City>Azua de Compostela</City>
-                <City>Cotuí</City>
-                <City>Salvaleón</City>
+                <City>Cotu&#237;</City>
+                <City>Salvale&#243;n</City>
                 <City>Bonao</City>
                 <City>Hato Mayor</City>
-                <City>Cumaná</City>
-                <City>Tecpán</City>
-                <City>San Cristóbal</City>
+                <City>Cuman&#225;</City>
+                <City>Tecp&#225;n</City>
+                <City>San Crist&#243;bal</City>
                 <City>Puebla</City>
                 <City>Piura</City>
                 <City>Tepic</City>
                 <City>Otavalo</City>
                 <City>Bayaja</City>
                 <City>Paria</City>
-                <City>Popayán</City>
+                <City>Popay&#225;n</City>
                 <City>Tupiza</City>
                 <City>Sucre</City>
                 <City>Ayacucho</City>
-                <City>Huánuco</City>
+                <City>Hu&#225;nuco</City>
                 <City>Moquegua</City>
                 <City>Genaro Codina</City>
-                <City>Cobán</City>
+                <City>Cob&#225;n</City>
                 <City>Neyba</City>
-                <City>Tepezalá</City>
+                <City>Tepezal&#225;</City>
                 <City>Asientos</City>
                 <City>Sonsonate</City>
-                <City>Saín Alto</City>
+                <City>Sa&#237;n Alto</City>
                 <City>Cuenca</City>
-                <City>Susticacán</City>
-                <City>Tucumán</City>
+                <City>Susticac&#225;n</City>
+                <City>Tucum&#225;n</City>
                 <City>Mazapil</City>
                 <City>Jerez</City>
                 <City>Sombrerete</City>
                 <City>Huancavelica</City>
                 <City>Huaraz</City>
                 <City>Tarija</City>
-                <City>Juayúa</City>
+                <City>Juay&#250;a</City>
                 <City>Coamo</City>
                 <City>Salta</City>
                 <City>Corrientes</City>
                 <City>Juan Aldama</City>
             </Cities>
             <Generals>
-                <General>Sebastian de Miranda Rodríguez</General>
+                <General>Sebastian de Miranda Rodr&#237;guez</General>
                 <General>Carlos Soublette</General>
-                <General>José Francisco Bermúdez</General>
+                <General>Jos&#233; Francisco Berm&#250;dez</General>
                 <General>Rafael Urdaneta</General>
-                <General>Antonio Nariño</General>
+                <General>Antonio Nari&#241;o</General>
                 <General>Francisco de Paula Santander</General>
-                <General>José Antonio Páez </General>
-                <General>Bernardo de Gálvez</General>
-                <General>Matías de Gálvez</General>
-                <General>Esteban Rodríguez Miró</General>
+                <General>Jos&#233; Antonio P&#225;ez </General>
+                <General>Bernardo de G&#225;lvez</General>
+                <General>Mat&#237;as de G&#225;lvez</General>
+                <General>Esteban Rodr&#237;guez Mir&#243;</General>
                 <General>Luis de Unzaga</General>
                 <General>Francisco de Miranda</General>
             </Generals>
             <Admirals>
                 <Admiral>Lope de Aguirre</Admiral>
                 <Admiral>Diego de Almagro</Admiral>
-                <Admiral>Sebastián de Belalcázar</Admiral>
+                <Admiral>Sebasti&#225;n de Belalc&#225;zar</Admiral>
                 <Admiral>Salvador Fidalgo</Admiral>
-                <Admiral>Nicolás de Cardona</Admiral>
-                <Admiral>Sebastián de Ocampo</Admiral>
+                <Admiral>Nicol&#225;s de Cardona</Admiral>
+                <Admiral>Sebasti&#225;n de Ocampo</Admiral>
                 <Admiral>Juan de Cartagena</Admiral>
                 <Admiral>Juan Bautista de Anza</Admiral>
-                <Admiral>Juan de Lángara</Admiral>
+                <Admiral>Juan de L&#225;ngara</Admiral>
                 <Admiral>Blas de Lezo</Admiral>
                 <Admiral>Juan Manuel Cagiga</Admiral>
-                <Admiral>Luis de Córdova</Admiral>
-                <Admiral>José Solano y Bote</Admiral>
+                <Admiral>Luis de C&#243;rdova</Admiral>
+                <Admiral>Jos&#233; Solano y Bote</Admiral>
                 <Admiral>Lope de Hoces</Admiral>
-                <Admiral>Gonzalo Méndez de Canço</Admiral>
-                <Admiral>Andrés de Pez</Admiral>
+                <Admiral>Gonzalo M&#233;ndez de Can&#231;o</Admiral>
+                <Admiral>Andr&#233;s de Pez</Admiral>
                 <Admiral>Federico Carlos Gravina</Admiral>
-                <Admiral>Ramón Power y Giralt</Admiral>
+                <Admiral>Ram&#243;n Power y Giralt</Admiral>
             </Admirals>
             <Ships>
                 <Ship>Nina</Ship>
@@ -1789,108 +1789,108 @@
             <FavoredTerrain>NONE</FavoredTerrain>
             <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
             <Cities>
-                <City>São Salvador</City>
+                <City>S&#227;o Salvador</City>
                 <City>Rio de Janeiro</City>
-                <City>São Vicente</City>
-                <City>Vila do Espírito Santo</City>
+                <City>S&#227;o Vicente</City>
+                <City>Vila do Esp&#237;rito Santo</City>
                 <City>Igarassu</City>
                 <City>Olinda</City>
-                <City>Vitória</City>
+                <City>Vit&#243;ria</City>
                 <City>Santos</City>
-                <City>São Paulo</City>
-                <City>Fortim de São Tiago</City>
-                <City>Santo André</City>
-                <City>São Bernardo do Campo</City>
+                <City>S&#227;o Paulo</City>
+                <City>Fortim de S&#227;o Tiago</City>
+                <City>Santo Andr&#233;</City>
+                <City>S&#227;o Bernardo do Campo</City>
                 <City>Mogi das Cruzes</City>
                 <City>Santa Cruz</City>
-                <City>Santo Antônio de Sá</City>
-                <City>São Lourenço dos Índios</City>
-                <City>São Gonçalo</City>
-                <City>João Pessoa</City>
+                <City>Santo Ant&#244;nio de S&#225;</City>
+                <City>S&#227;o Louren&#231;o dos &#205;ndios</City>
+                <City>S&#227;o Gon&#231;alo</City>
+                <City>Jo&#227;o Pessoa</City>
                 <City>Natal</City>
-                <City>São Luís</City>
-                <City>Feliz Lusitânia</City>
-                <City>Paranaguá</City>
-                <City>Jacaraí</City>
-                <City>Jundiaí</City>
-                <City>Santarém</City>
-                <City>São José</City>
+                <City>S&#227;o Lu&#237;s</City>
+                <City>Feliz Lusit&#226;nia</City>
+                <City>Paranagu&#225;</City>
+                <City>Jacara&#237;</City>
+                <City>Jundia&#237;</City>
+                <City>Santar&#233;m</City>
+                <City>S&#227;o Jos&#233;</City>
                 <City>Laguna</City>
-                <City>Colónia do Sacramento</City>
-                <City>Curitíba</City>
+                <City>Col&#243;nia do Sacramento</City>
+                <City>Curit&#237;ba</City>
                 <City>Ouro Preto</City>
-                <City>Contagém</City>
-                <City>Cuiabá</City>
+                <City>Contag&#233;m</City>
+                <City>Cuiab&#225;</City>
                 <City>Desterro</City>
                 <City>Rio Grande</City>
-                <City>Viamão</City>
-                <City>Macapá</City>
-                <City>Gravataí</City>
+                <City>Viam&#227;o</City>
+                <City>Macap&#225;</City>
+                <City>Gravata&#237;</City>
                 <City>Porto Alegre</City>
                 <City>Campinas</City>
                 <City>Recife</City>
                 <City>Porto Seguro</City>
                 <City>Bahia</City>
-                <City>Ilhéus</City>
-                <City>Curação</City>
-                <City>São Tomé</City>
+                <City>Ilh&#233;us</City>
+                <City>Cura&#231;&#227;o</City>
+                <City>S&#227;o Tom&#233;</City>
                 <City>Santo Amaro</City>
                 <City>Santa Anna</City>
                 <City>Vila Velha</City>
                 <City>Goiana</City>
                 <City>Fortaleza</City>
-                <City>João Pessoa</City>
-                <City>Belém</City>
-                <City>São Miguel</City>
+                <City>Jo&#227;o Pessoa</City>
+                <City>Bel&#233;m</City>
+                <City>S&#227;o Miguel</City>
                 <City>Oliveira</City>
-                <City>Maranhão</City>
+                <City>Maranh&#227;o</City>
                 <City>Caxias</City>
-                <City>Alcântara</City>
+                <City>Alc&#226;ntara</City>
                 <City>Linhares</City>
                 <City>Juazeiro</City>
                 <City>Petropolis</City>
-                <City>São Felix</City>
-                <City>Cananéia</City>
+                <City>S&#227;o Felix</City>
+                <City>Canan&#233;ia</City>
                 <City>Iguape</City>
                 <City>Embu</City>
                 <City>Ipojuca</City>
-                <City>São Mateus</City>
-                <City>São Cristóvão</City>
+                <City>S&#227;o Mateus</City>
+                <City>S&#227;o Crist&#243;v&#227;o</City>
                 <City>Paudalho</City>
                 <City>Marechal Deodoro</City>
                 <City>Penedo</City>
-                <City>Sirinhaém</City>
+                <City>Sirinha&#233;m</City>
                 <City>Cabo Frio</City>
                 <City>Cabo de Santo Agostinho</City>
                 <City>Paraty</City>
-                <City>Boqueirão</City>
+                <City>Boqueir&#227;o</City>
                 <City>Cachoeira</City>
-                <City>São Borja</City>
+                <City>S&#227;o Borja</City>
                 <City>Escada</City>
-                <City>São Luiz Gonzaga</City>
-                <City>São Nicolau</City>
-                <City>São Lourenço das Missões</City>
+                <City>S&#227;o Luiz Gonzaga</City>
+                <City>S&#227;o Nicolau</City>
+                <City>S&#227;o Louren&#231;o das Miss&#245;es</City>
                 <City>Bom Jesus da Lapa</City>
-                <City>Assú</City>
+                <City>Ass&#250;</City>
                 <City>Barreiras</City>
-                <City>São João</City>
-                <City>Santo Ângelo</City>
+                <City>S&#227;o Jo&#227;o</City>
+                <City>Santo &#194;ngelo</City>
                 <City>Antonina</City>
                 <City>Serro</City>
                 <City>Brejo do Cruz</City>
                 <City>Rio de Contas</City>
                 <City>Tiradentes</City>
-                <City>Florianópolis</City>
-                <City>Goiás</City>
-                <City>Pirenópolis</City>
+                <City>Florian&#243;polis</City>
+                <City>Goi&#225;s</City>
+                <City>Piren&#243;polis</City>
                 <City>Inhambupe</City>
             </Cities>
             <Generals>
                 <General>Matias de Albuquerque</General>
                 <General>Fernandes Vieira</General>
-                <General>André Vidal de Negreiros</General>
+                <General>Andr&#233; Vidal de Negreiros</General>
                 <General>Henrique Dias</General>
-                <General>António Filipe Camarão</General>
+                <General>Ant&#243;nio Filipe Camar&#227;o</General>
                 <General>Afonso Sardinha</General>
                 <General>Antonio Dias Adorno</General>
                 <General>Antonio Dias de Oliveira</General>
@@ -1908,14 +1908,14 @@
             </Generals>
             <Admirals>
                 <Admiral>Vasco da Gama</Admiral>
-                <Admiral>João Fernandes Lavrador</Admiral>
-                <Admiral>Diogo Cão</Admiral>
+                <Admiral>Jo&#227;o Fernandes Lavrador</Admiral>
+                <Admiral>Diogo C&#227;o</Admiral>
                 <Admiral>Antonio de Abreu</Admiral>
-                <Admiral>Francisco Serrão</Admiral>
+                <Admiral>Francisco Serr&#227;o</Admiral>
                 <Admiral>Jorge de Meneses</Admiral>
                 <Admiral>Diogo Lopes de Sequeira</Admiral>
-                <Admiral>Fernão Pires de Andrade</Admiral>
-                <Admiral>Cristovão de Mendonca</Admiral>
+                <Admiral>Fern&#227;o Pires de Andrade</Admiral>
+                <Admiral>Cristov&#227;o de Mendonca</Admiral>
             </Admirals>
             <Ships>
                 <Ship>Nuno Tristao</Ship>
@@ -2159,13 +2159,13 @@
                 <City>Fort Christian</City>
                 <City>Tap Hus</City>
                 <City>Skytsborg</City>
-                <City>Godthåb</City>
+                <City>Godth&#229;b</City>
                 <City>Fort Frederiksborg</City>
                 <City>Fredriksted</City>
-                <City>Christianshåb</City>
+                <City>Christiansh&#229;b</City>
                 <City>Fort Christiansværn</City>
                 <City>Jakobshavn</City>
-                <City>Frederikshåb</City>
+                <City>Frederiksh&#229;b</City>
                 <City>Fort Fredensborg</City>
                 <City>Fort Kongensten</City>
                 <City>Achne</City>
@@ -2173,13 +2173,13 @@
                 <City>Sukkertoppen</City>
                 <City>Fort Frederik</City>
                 <City>Egedesminde</City>
-                <City>Håb</City>
+                <City>H&#229;b</City>
                 <City>Neu-Herrnhut</City>
                 <City>Claushavn</City>
                 <City>Ritenbenck</City>
                 <City>Holsteinsborg</City>
                 <City>Godhavn</City>
-                <City>Julianehåb</City>
+                <City>Julianeh&#229;b</City>
                 <City>Sankt Jan</City>
                 <City>Upernavik</City>
                 <City>Nennortalik</City>
@@ -2187,16 +2187,16 @@
                 <City>Sankt Croix</City>
                 <City>Amalienborg</City>
                 <City>Christiansted</City>
-                <City>Søndre Strømfjord</City>
+                <City>S&#248;ndre Str&#248;mfjord</City>
                 <City>Scoresbysund</City>
                 <City>Thule</City>
                 <City>Daneborg</City>
                 <City>Savissivik</City>
-                <City>Motzfeldt Sø</City>
+                <City>Motzfeldt S&#248;</City>
                 <City>Kulusuk</City>
                 <City>Danmark Havn</City>
                 <City>Onarfok</City>
-                <City>Røkerne</City>
+                <City>R&#248;kerne</City>
                 <City>Hvudserk</City>
             </Cities>
             <Generals>
@@ -2472,9 +2472,9 @@
             <Cities>
                 <City>Fort Christina</City>
                 <City>Nya Stockholm</City>
-                <City>Nya Göteborg</City>
+                <City>Nya G&#246;teborg</City>
                 <City>Fort Trefaldighet</City>
-                <City>Nya Älfsborg</City>
+                <City>Nya &#196;lfsborg</City>
                 <City>Sveaborg</City>
                 <City>Uppland</City>
                 <City>Minquas</City>
@@ -2497,7 +2497,7 @@
                 <City>Fort Witsen</City>
                 <City>Fort Apollonia</City>
                 <City>Strandviken</City>
-                <City>Timmerön</City>
+                <City>Timmer&#246;n</City>
                 <City>Carolusborg</City>
                 <City>Gemoree Faktori</City>
                 <City>Accara Faktori</City>
@@ -2506,12 +2506,12 @@
                 <City>Fort Frederiksborg</City>
                 <City>Tequirassy</City>
                 <City>Kingsessing</City>
-                <City>Mölndal</City>
-                <City>Översidolandet</City>
+                <City>M&#246;lndal</City>
+                <City>&#214;versidolandet</City>
                 <City>Gustavia</City>
                 <City>Lillefolls</City>
-                <City>Sköldpadde Kill</City>
-                <City>Druweeÿland</City>
+                <City>Sk&#246;ldpadde Kill</City>
+                <City>Druwee&#255;land</City>
                 <City>Aronaneck</City>
                 <City>Manaiping</City>
                 <City>Chamassungh</City>
@@ -2532,9 +2532,9 @@
                 <City>Mill Dorp</City>
                 <City>Swanwyck</City>
                 <City>Gripsholm</City>
-                <City>Götepori</City>
+                <City>G&#246;tepori</City>
                 <City>Prinzinhovi</City>
-                <City>Räsälä</City>
+                <City>R&#228;s&#228;l&#228;</City>
             </Cities>
             <Generals>
                 <General>Otto Louis of Salm</General>
@@ -2563,39 +2563,39 @@
             </Admirals>
             <Ships>
                 <Ship>Gotland</Ship>
-                <Ship>Örnen</Ship>
+                <Ship>&#214;rnen</Ship>
                 <Ship>Jacob Bagge</Ship>
                 <Ship>Claes Horn</Ship>
                 <Ship>Claes Uggla</Ship>
                 <Ship>Psilander</Ship>
                 <Ship>Tre Kronor</Ship>
-                <Ship>Göta Lejon</Ship>
+                <Ship>G&#246;ta Lejon</Ship>
                 <Ship>Halland</Ship>
                 <Ship>Smaland</Ship>
-                <Ship>Östergötland</Ship>
-                <Ship>Södermanland</Ship>
-                <Ship>Gästrikland</Ship>
-                <Ship>Hälsingland</Ship>
-                <Ship>Öland</Ship>
+                <Ship>&#214;sterg&#246;tland</Ship>
+                <Ship>S&#246;dermanland</Ship>
+                <Ship>G&#228;strikland</Ship>
+                <Ship>H&#228;lsingland</Ship>
+                <Ship>&#214;land</Ship>
                 <Ship>Uppland</Ship>
                 <Ship>Visby</Ship>
                 <Ship>Sundsvall</Ship>
-                <Ship>Hälsingborg</Ship>
+                <Ship>H&#228;lsingborg</Ship>
                 <Ship>Kalmar</Ship>
-                <Ship>Göteborg</Ship>
+                <Ship>G&#246;teborg</Ship>
                 <Ship>Stockholm</Ship>
-                <Ship>Malmö</Ship>
+                <Ship>Malm&#246;</Ship>
                 <Ship>Karlskrona</Ship>
-                <Ship>Gävle</Ship>
-                <Ship>Norrköping</Ship>
-                <Ship>Gävle</Ship>
-                <Ship>Göteborg</Ship>
+                <Ship>G&#228;vle</Ship>
+                <Ship>Norrk&#246;ping</Ship>
+                <Ship>G&#228;vle</Ship>
+                <Ship>G&#246;teborg</Ship>
                 <Ship>Helsingborg</Ship>
-                <Ship>Härnösand</Ship>
+                <Ship>H&#228;rn&#246;sand</Ship>
                 <Ship>Kalmar</Ship>
                 <Ship>Karlstad</Ship>
-                <Ship>Malmö</Ship>
-                <Ship>Nyköping</Ship>
+                <Ship>Malm&#246;</Ship>
+                <Ship>Nyk&#246;ping</Ship>
                 <Ship>Saga</Ship>
                 <Ship>Stockholm</Ship>
                 <Ship>Sundsvall</Ship>
@@ -2604,29 +2604,29 @@
                 <Ship>Hugin</Ship>
                 <Ship>Kaparen</Ship>
                 <Ship>Magne</Ship>
-                <Ship>Mjölner</Ship>
+                <Ship>Mj&#246;lner</Ship>
                 <Ship>Mode</Ship>
                 <Ship>Munin</Ship>
                 <Ship>Mysing</Ship>
                 <Ship>Snapphanen</Ship>
                 <Ship>Spejaren</Ship>
                 <Ship>Starkodder</Ship>
-                <Ship>Styrbjörn</Ship>
+                <Ship>Styrbj&#246;rn</Ship>
                 <Ship>Tirfing</Ship>
-                <Ship>Tordön</Ship>
+                <Ship>Tord&#246;n</Ship>
                 <Ship>Vale</Ship>
                 <Ship>Vidar</Ship>
-                <Ship>Väktaren</Ship>
+                <Ship>V&#228;ktaren</Ship>
                 <Ship>Gotland</Ship>
                 <Ship>Halland</Ship>
-                <Ship>Hälsingland</Ship>
+                <Ship>H&#228;lsingland</Ship>
                 <Ship>Najad II</Ship>
                 <Ship>Neptun II</Ship>
-                <Ship>Näcken II</Ship>
-                <Ship>Södermanland</Ship>
+                <Ship>N&#228;cken II</Ship>
+                <Ship>S&#246;dermanland</Ship>
                 <Ship>Ulven</Ship>
                 <Ship>Uppland</Ship>
-                <Ship>Västergötland</Ship>
+                <Ship>V&#228;sterg&#246;tland</Ship>
                 <Ship>Visborg</Ship>
                 <Ship>Carlskrona</Ship>
                 <Ship>Landsort</Ship>
@@ -2635,21 +2635,21 @@
                 <Ship>Kullen</Ship>
                 <Ship>Vinga</Ship>
                 <Ship>Ven</Ship>
-                <Ship>Ulvön</Ship>
-                <Ship>Styrsö</Ship>
-                <Ship>Sparö</Ship>
-                <Ship>Skaftö</Ship>
-                <Ship>Sturkö</Ship>
+                <Ship>Ulv&#246;n</Ship>
+                <Ship>Styrs&#246;</Ship>
+                <Ship>Spar&#246;</Ship>
+                <Ship>Skaft&#246;</Ship>
+                <Ship>Sturk&#246;</Ship>
                 <Ship>Gassten</Ship>
                 <Ship>Norrsten</Ship>
                 <Ship>Viksten</Ship>
                 <Ship>Hisingen</Ship>
                 <Ship>Blackan</Ship>
-                <Ship>Dämman</Ship>
+                <Ship>D&#228;mman</Ship>
                 <Ship>Galten</Ship>
                 <Ship>Ejdern</Ship>
                 <Ship>Krickan</Ship>
-                <Ship>Svärtan</Ship>
+                <Ship>Sv&#228;rtan</Ship>
                 <Ship>Viggen</Ship>
                 <Ship>Tjelvar</Ship>
                 <Ship>Ring</Ship>
@@ -2663,7 +2663,7 @@
                 <Ship>Falken</Ship>
                 <Ship>Belos</Ship>
                 <Ship>Kronan</Ship>
-                <Ship>Norrköping</Ship>
+                <Ship>Norrk&#246;ping</Ship>
                 <Ship>Orion</Ship>
                 <Ship>Pelikanen</Ship>
                 <Ship>Pingvinen</Ship>
@@ -3609,7 +3609,7 @@
                 <General>Armand-Louis de Gontaut</General>
                 <General>Louis II. de Bourbon</General>
                 <General>Louis de Bourbon-Cond</General>
-                <General>René Duguay-Trouin</General>
+                <General>Ren&#233; Duguay-Trouin</General>
                 <General>Jacques Dugommier</General>
                 <General>Victor-Marie d'Estres</General>
                 <General>Charles Fouquet</General>
@@ -3626,9 +3626,9 @@
                 <Admiral>Claude de Forbin</Admiral>
                 <Admiral>Justin-Bonaventure de Galles</Admiral>
                 <Admiral>Joseph de Richery</Admiral>
-                <Admiral>André Savary</Admiral>
+                <Admiral>Andr&#233; Savary</Admiral>
                 <Admiral>Pierre-Gustave Roze</Admiral>
-                <Admiral>Jean-Baptiste Perrée</Admiral>
+                <Admiral>Jean-Baptiste Perr&#233;e</Admiral>
                 <Admiral>Anne Antoine</Admiral>
                 <Admiral>Toussaint-Guillaume de la Motte</Admiral>
                 <Admiral>Charles-Henri-Louis d'Arsac</Admiral>
@@ -3851,34 +3851,34 @@
             <Generals>
                 <General>Juan Domingo de Monteverde</General>
                 <General>Miguel de la Torre</General>
-                <General>Francisco Tomás Morales</General>
+                <General>Francisco Tom&#225;s Morales</General>
                 <General>Ambrosio Spinola</General>
-                <General>Luis Méndez de Haro</General>
-                <General>Juan José de Austria</General>
-                <General>Martín Álvarez de Sotomayor</General>
+                <General>Luis M&#233;ndez de Haro</General>
+                <General>Juan Jos&#233; de Austria</General>
+                <General>Mart&#237;n &#193;lvarez de Sotomayor</General>
                 <General>Rafael Conti</General>
             </Generals>
             <Admirals>
-                <Admiral>Casto Méndez Núñez</Admiral>
+                <Admiral>Casto M&#233;ndez N&#250;&#241;ez</Admiral>
                 <Admiral>Gabriel de Castilla</Admiral>
-                <Admiral>José María Narváez</Admiral>
-                <Admiral>Dionisio Alcalá Galiano</Admiral>
-                <Admiral>José de Bustamante y Guerra</Admiral>
+                <Admiral>Jos&#233; Mar&#237;a Narv&#225;ez</Admiral>
+                <Admiral>Dionisio Alcal&#225; Galiano</Admiral>
+                <Admiral>Jos&#233; de Bustamante y Guerra</Admiral>
                 <Admiral>Jose de Mazarredo y Salazar</Admiral>
-                <Admiral>Álvaro de Bazán</Admiral>
-                <Admiral>Fadrique Álvarez de Toledo</Admiral>
-                <Admiral>Antonio Barceló</Admiral>
+                <Admiral>&#193;lvaro de Baz&#225;n</Admiral>
+                <Admiral>Fadrique &#193;lvarez de Toledo</Admiral>
+                <Admiral>Antonio Barcel&#243;</Admiral>
                 <Admiral>Bonaventura Moreno</Admiral>
-                <Admiral>Martín de Bertendona</Admiral>
-                <Admiral>Francisco Díaz Pimienta</Admiral>
-                <Admiral>José Antonio Castañeta</Admiral>
+                <Admiral>Mart&#237;n de Bertendona</Admiral>
+                <Admiral>Francisco D&#237;az Pimienta</Admiral>
+                <Admiral>Jos&#233; Antonio Casta&#241;eta</Admiral>
                 <Admiral>Miguel de Horna</Admiral>
                 <Admiral>Antonio de Oquendo</Admiral>
-                <Admiral>Juan Martínez de Recalde</Admiral>
+                <Admiral>Juan Mart&#237;nez de Recalde</Admiral>
                 <Admiral>Manuel de Velasco y Tejada</Admiral>
-                <Admiral>Ignacio María de Álava</Admiral>
-                <Admiral>Alonso Pérez de Guzmán</Admiral>
-                <Admiral>Juan José Navarro</Admiral>
+                <Admiral>Ignacio Mar&#237;a de &#193;lava</Admiral>
+                <Admiral>Alonso P&#233;rez de Guzm&#225;n</Admiral>
+                <Admiral>Juan Jos&#233; Navarro</Admiral>
             </Admirals>
             <Ships/>
             <Buildings/>
@@ -4345,16 +4345,16 @@
             </Cities>
             <Generals>
                 <General>Antonio Lus de Meneses</General>
-                <General>João de Castro</General>
+                <General>Jo&#227;o de Castro</General>
                 <General>Gomes Freire de Andrade</General>
                 <General>Antonio Lus de Sousa</General>
                 <General>Antonio de Saldanha</General>
                 <General>Antonio Correia</General>
                 <General>Martim Afonso de Castro</General>
-                <General>Johann Heinrich Böhm</General>
+                <General>Johann Heinrich B&#246;hm</General>
             </Generals>
             <Admirals>
-                <Admiral>Pêro da Covilhã</Admiral>
+                <Admiral>Pêro da Covilh&#227;</Admiral>
                 <Admiral>Francisco de Almeida</Admiral>
                 <Admiral>Afonso de Albuquerque</Admiral>
                 <Admiral>Pedro da Silva</Admiral>
@@ -6202,7 +6202,7 @@
             <Generals>
                 <General>Hatuey</General>
                 <General>Guarocuya</General>
-                <General>Urayoán</General>
+                <General>Urayo&#225;n</General>
                 <General>Guarionex</General>
                 <General>Jumacao</General>
             </Generals>
@@ -7110,8 +7110,8 @@
             <Generals>
                 <General>Ahuitzotl</General>
                 <General>Nezahualpilli</General>
-                <General>Cuitláhuac</General>
-                <General>Cuauhtémoc</General>
+                <General>Cuitl&#225;huac</General>
+                <General>Cuauht&#233;moc</General>
                 <General>Ixtlilxochitl</General>
                 <General>Tizoc</General>
             </Generals>
@@ -8021,9 +8021,9 @@
             </Cities>
             <Generals>
                 <General>Atahualpa</General>
-                <General>Rumiñahui</General>
+                <General>Rumi&#241;ahui</General>
                 <General>Chalcuchimac</General>
-                <General>Manco Cápac</General>
+                <General>Manco C&#225;pac</General>
                 <General>Tupac Amaru</General>
                 <General>Ninan Cuyochi</General>
             </Generals>
@@ -13460,7 +13460,7 @@
                 <General>Colo-Colo</General>
                 <General>Curinancu</General>
                 <General>Didiuhet</General>
-                <General>Illanguli�n</General>
+                <General>Illanguli&#233;n</General>
                 <General>Lemucaguin</General>
                 <General>Lientur</General>
                 <General>Llanganabal</General>
@@ -22478,17 +22478,17 @@
             <DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
             <Cities>
                 <City>Xaltepec</City>
-                <City>Ñuu Tnoo</City>
-                <City>Ñuu Ndecu</City>
+                <City>&#209;uu Tnoo</City>
+                <City>&#209;uu Ndecu</City>
                 <City>Sahayuca</City>
-                <City>Ñuu Dee</City>
+                <City>&#209;uu Dee</City>
                 <City>Ndijiinu</City>
                 <City>Yucu Dzaa</City>
-                <City>Yucuñudahui</City>
+                <City>Yucu&#241;udahui</City>
                 <City>Dzandaya</City>
                 <City>Yodzocoo</City>
                 <City>Chiyo Cahnu</City>
-                <City>Ñuu Ndaya</City>
+                <City>&#209;uu Ndaya</City>
                 <City>Yucunindaba</City>
                 <City>Yukuita</City>
                 <City>Juxtlahuaca</City>
