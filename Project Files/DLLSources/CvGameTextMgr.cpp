@@ -5558,22 +5558,26 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	}
 
 	BuildingTypes eNextBuilding = (BuildingTypes) kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
-	while (eNextBuilding != eBuilding)
-	{
-		CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
 
-		if (kBuilding.getSpecialBuildingPriority() > kNextBuilding.getSpecialBuildingPriority())
+	// Erik: Check that the building is valid
+	if (eNextBuilding != NO_BUILDING)
+	{ 
+		while (eNextBuilding != eBuilding)
 		{
-			szBuffer.append(NEWLINE);
-			// TAC - Messages - Ray - START
-			//szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
-			szBuffer.append(gDLL->getText("TXT_KEY_REPLACES_UNIT", kNextBuilding.getTextKeyWide()));
-			// TAC - Messages - Ray - END
+			CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
+
+			if (kBuilding.getSpecialBuildingPriority() > kNextBuilding.getSpecialBuildingPriority())
+			{
+				szBuffer.append(NEWLINE);
+				// TAC - Messages - Ray - START
+				//szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+				szBuffer.append(gDLL->getText("TXT_KEY_REPLACES_UNIT", kNextBuilding.getTextKeyWide()));
+				// TAC - Messages - Ray - END
+			}
+
+			eNextBuilding = (BuildingTypes) kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 		}
-
-		eNextBuilding = (BuildingTypes) kNextBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	}
-
 	if (kBuilding.getFreePromotion() != NO_PROMOTION)
 	{
 		szBuffer.append(NEWLINE);
