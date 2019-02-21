@@ -1,0 +1,145 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Basic Infos  -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="Civilopedia" content="textOnly"/>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="ConceptInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+	</ElementType>
+	<ElementType name="ConceptInfos" content="eltOnly">
+		<element type="ConceptInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="NewConceptInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Civilopedia"/>
+	</ElementType>
+	<ElementType name="NewConceptInfos" content="eltOnly">
+		<element type="NewConceptInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CityTabInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Button"/>
+	</ElementType>
+	<ElementType name="CityTabInfos" content="eltOnly">
+		<element type="CityTabInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CalendarInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="CalendarInfos" content="eltOnly">
+		<element type="CalendarInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="SeasonInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="SeasonInfos" content="eltOnly">
+		<element type="SeasonInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="MonthInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="MonthInfos" content="eltOnly">
+		<element type="MonthInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DenialInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="DenialInfos" content="eltOnly">
+		<element type="DenialInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="InvisibleInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="InvisibleInfos" content="eltOnly">
+		<element type="InvisibleInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitCombatInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="Button"/>
+	</ElementType>
+	<ElementType name="UnitCombatInfos" content="eltOnly">
+		<element type="UnitCombatInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="DomainInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="DomainInfos" content="eltOnly">
+		<element type="DomainInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="UnitAIInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="UnitAIInfos" content="eltOnly">
+		<element type="UnitAIInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AttitudeInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="AttitudeInfos" content="eltOnly">
+		<element type="AttitudeInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="MemoryInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+	</ElementType>
+	<ElementType name="MemoryInfos" content="eltOnly">
+		<element type="MemoryInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4BasicInfos" content="eltOnly">
+		<element type="ConceptInfos"/>
+	</ElementType>
+	<ElementType name="Civ4NewConceptInfos" content="eltOnly">
+		<element type="NewConceptInfos"/>
+	</ElementType>
+	<ElementType name="Civ4CityTabInfos" content="eltOnly">
+		<element type="CityTabInfos"/>
+	</ElementType>
+	<ElementType name="Civ4CalendarInfos" content="eltOnly">
+		<element type="CalendarInfos"/>
+	</ElementType>
+	<ElementType name="Civ4SeasonInfos" content="eltOnly">
+		<element type="SeasonInfos"/>
+	</ElementType>
+	<ElementType name="Civ4MonthInfos" content="eltOnly">
+		<element type="MonthInfos"/>
+	</ElementType>
+	<ElementType name="Civ4DenialInfos" content="eltOnly">
+		<element type="DenialInfos"/>
+	</ElementType>
+	<ElementType name="Civ4InvisibleInfos" content="eltOnly">
+		<element type="InvisibleInfos"/>
+	</ElementType>
+	<ElementType name="Civ4UnitCombatInfos" content="eltOnly">
+		<element type="UnitCombatInfos"/>
+	</ElementType>
+	<ElementType name="Civ4DomainInfos" content="eltOnly">
+		<element type="DomainInfos"/>
+	</ElementType>
+	<ElementType name="Civ4UnitAIInfos" content="eltOnly">
+		<element type="UnitAIInfos"/>
+	</ElementType>
+	<ElementType name="Civ4AttitudeInfos" content="eltOnly">
+		<element type="AttitudeInfos"/>
+	</ElementType>
+	<ElementType name="Civ4MemoryInfos" content="eltOnly">
+		<element type="MemoryInfos"/>
+	</ElementType>
+</Schema>

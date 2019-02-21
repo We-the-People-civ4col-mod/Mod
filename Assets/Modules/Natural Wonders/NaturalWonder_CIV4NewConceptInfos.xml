@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Civ4NewConceptInfos xmlns="x-schema:NaturalWonder_CIV4BasicInfoSchema.xml">
+	<NewConceptInfos>
+		<NewConceptInfo>
+			<Type>CONCEPT_NATURAL_WONDERS</Type>
+			<Description>TXT_KEY_NATURAL_WONDERS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_NATURAL_WONDERS_PEDIA</Civilopedia>
+		</NewConceptInfo>
+	</NewConceptInfos>
+</Civ4NewConceptInfos>

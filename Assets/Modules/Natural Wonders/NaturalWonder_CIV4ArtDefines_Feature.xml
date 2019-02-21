@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<Civ4ArtDefines xmlns="x-schema:NaturalWonder_CIV4ArtDefinesSchema.xml">
+	<FeatureArtInfos>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_AUYANTEPUI</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Auyantepui/Button_Auyantepui.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Auyantepui/tepui_autana.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Auyantepui/Button_Auyantepui.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_GREAT_BARRIER</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.2</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Great Barrier/Coral.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Great Barrier/wheat.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Great Barrier/Coral.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_DEAD_SEA</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Dead_Sea/Button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Dead_Sea/mrtvemore.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Dead_Sea/Button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_KILIMANJARO</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Kilimanjaro/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Kilimanjaro/Kilimanjaro.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Kilimanjaro/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_EVEREST</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>2.3</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Everest/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Everest/Everest04.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Everest/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_FUJI</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>6</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Fuji/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Fuji/Fuji.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Fuji/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_NGORONGORO_CRATER</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Ngorongoro/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Ngorongoro/ngorongoro.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Ngorongoro/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_AURORA</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>20</fScale>
+ 			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Aurora/Aurora.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Aurora/aurora.nif</ModelFile>
+						<Connections/>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Aurora/Aurora.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_BARRINGER_CRATER</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>2.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Barringer/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Barringer/BarringerCrater.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Barringer/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_SINAI</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>4</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Sinai/Sinai.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Sinai/pousthora.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Sinai/Sinai.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_ULURU</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>4</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/uluru/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Uluru/Uluru.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/uluru/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_PRAVCICKA_BRANA</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>4</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Pravcicka Brana/Pravcicka.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Pravcicka Brana/Brana.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Pravcicka Brana/Pravcicka.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_PAMUKKALE</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>3.4</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Pamukkale/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Pamukkale/pamukkale.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Pamukkale/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_SUGARLOAF</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>0.002</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Sugarloaf Mountain/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Sugarloaf Mountain/Sugarloaf.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Sugarloaf Mountain/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_VICTORIA_FALLS</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Victoria_Falls/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Victoria_Falls/falls03.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Victoria_Falls/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_SOPKA</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>4</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/sopka/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/sopka/sopka3new.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/sopka/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_DEVILS_TABLE</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>0.2</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Devil's Table/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Devil's Table/table.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Devil's Table/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_NUKUORO</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Nukuoro/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Nukuoro/atolus.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Nukuoro/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_BAIKAL</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Baikal/Baikal.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Baikal/Bajkal4.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Baikal/Baikal.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_BASALT_ORGAN</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>2</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Basalt/Basalt.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Basalt/varhany.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Basalt/Basalt.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_KRAKATOA</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Krakatoa/Krakatoa.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Krakatoa/sopka7.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Krakatoa/Krakatoa.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_SHARK_BAY</Type>
+			<bAnimated>1</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>2</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Natural Wonders/Shark Bay/button.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Natural Wonders/Shark Bay/shark_bay.nif</ModelFile>
+						<Connections></Connections>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+                <VarietyButton>Art/Natural Wonders/Shark Bay/button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+	</FeatureArtInfos>
+</Civ4ArtDefines>

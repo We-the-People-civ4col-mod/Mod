@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FIRST_BENEFITS</Tag>
+		<English>First Benefits</English>
+		<French>First Benefits</French>
+		<German>First Benefits</German>
+		<Italian>First Benefits</Italian>
+		<Spanish>First Benefits</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FLEXIBLE</Tag>
+		<English>%s1 Flexible</English>
+		<French>%s1 Flexible</French>
+		<German>%s1 Flexible</German>
+		<Italian>%s1 Flexible</Italian>
+		<Spanish>%s1 Flexible</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MAP_VISIBLE</Tag>
+		<English>Map Visible</English>
+		<French>Map Visible</French>
+		<German>Map Visible</German>
+		<Italian>Map Visible</Italian>
+		<Spanish>Map Visible</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_ADVISOR</Tag>
+		<English>Advisor</English>
+		<French>Advisor</French>
+		<German>Advisor</German>
+		<Italian>Advisor</Italian>
+		<Spanish>Advisor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CAPACITY</Tag>
+		<English>Capacity</English>
+		<French>Capacity</French>
+		<German>Capacity</German>
+		<Italian>Capacity</Italian>
+		<Spanish>Capacity</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_UNLIMITED</Tag>
+		<English>Unlimited</English>
+		<French>Unlimited</French>
+		<German>Unlimited</German>
+		<Italian>Unlimited</Italian>
+		<Spanish>Unlimited</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_REMOVES_ACCESS</Tag>
+		<English>Removes Access</English>
+		<French>Removes Access</French>
+		<German>Removes Access</German>
+		<Italian>Removes Access</Italian>
+		<Spanish>Removes Access</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_SPREAD</Tag>
+		<English>Spread</English>
+		<French>Spread</French>
+		<German>Spread</German>
+		<Italian>Spread</Italian>
+		<Spanish>Spread</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FASTER_PRODUCTION</Tag>
+		<English>Faster Production</English>
+		<French>Faster Production</French>
+		<German>Faster Production</German>
+		<Italian>Faster Production</Italian>
+		<Spanish>Faster Production</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_WORK_RATE</Tag>
+		<English>Work Rate</English>
+		<French>Work Rate</French>
+		<German>Work Rate</German>
+		<Italian>Work Rate</Italian>
+		<Spanish>Work Rate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_WORLD</Tag>
+		<English>World Size</English>
+		<French>World Size</French>
+		<German>World Size</German>
+		<Italian>World Size</Italian>
+		<Spanish>World Size</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_TERRAIN_GRAIN_CHANGE</Tag>
+		<English>Terrain Grain Change</English>
+		<French>Terrain Grain Change</French>
+		<German>Terrain Grain Change</German>
+		<Italian>Terrain Grain Change</Italian>
+		<Spanish>Terrain Grain Change</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FEATURE_GRAIN_CHANGE</Tag>
+		<English>Feature Grain Change</English>
+		<French>Feature Grain Change</French>
+		<German>Feature Grain Change</German>
+		<Italian>Feature Grain Change</Italian>
+		<Spanish>Feature Grain Change</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DEFAULT_PLAYERS</Tag>
+		<English>Default Players</English>
+		<French>Default Players</French>
+		<German>Default Players</German>
+		<Italian>Default Players</Italian>
+		<Spanish>Default Players</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FREE_BUILDING_BONUS</Tag>
+		<English>Free Building Bonuses</English>
+		<French>Free Building Bonuses</French>
+		<German>Free Building Bonuses</German>
+		<Italian>Free Building Bonuses</Italian>
+		<Spanish>Free Building Bonuses</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_BUILDING_CLASS_PREREQ</Tag>
+		<English>Building Class Prereq</English>
+		<French>Building Class Prereq</French>
+		<German>Building Class Prereq</German>
+		<Italian>Building Class Prereq</Italian>
+		<Spanish>Building Class Prereq</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_TARGET_NUM_CITIES</Tag>
+		<English>Target Number of Cities</English>
+		<French>Target Number of Cities</French>
+		<German>Target Number of Cities</German>
+		<Italian>Target Number of Cities</Italian>
+		<Spanish>Target Number of Cities</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MAX_CONSCRIPT</Tag>
+		<English>Max Conscript</English>
+		<French>Max Conscript</French>
+		<German>Max Conscript</German>
+		<Italian>Max Conscript</Italian>
+		<Spanish>Max Conscript</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_UNIT_NAME</Tag>
+		<English>Unit Name</English>
+		<French>Unit Name</French>
+		<German>Unit Name</German>
+		<Italian>Unit Name</Italian>
+		<Spanish>Unit Name</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_NUM_CITIES_ANARCHY</Tag>
+		<English>Number of Cities Anarchy</English>
+		<French>Number of Cities Anarchy</French>
+		<German>Number of Cities Anarchy</German>
+		<Italian>Number of Cities Anarchy</Italian>
+		<Spanish>Number of Cities Anarchy</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_GRID_WIDTH</Tag>
+		<English>Grid Width</English>
+		<French>Grid Width</French>
+		<German>Grid Width</German>
+		<Italian>Grid Width</Italian>
+		<Spanish>Grid Width</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_GRID_HEIGHT</Tag>
+		<English>Grid Height</English>
+		<French>Grid Height</French>
+		<German>Grid Height</German>
+		<Italian>Grid Height</Italian>
+		<Spanish>Grid Height</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HIDE_INACTIVE</Tag>
+		<English>Hide Inactive</English>
+		<French>Hide Inactive</French>
+		<German>Hide Inactive</German>
+		<Italian>Hide Inactive</Italian>
+		<Spanish>Hide Inactive</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_BCHART</Tag>
+		<English>Building Chart</English>
+		<French>Building Chart</French>
+		<German>Building Chart</German>
+		<Italian>Building Chart</Italian>
+		<Spanish>Building Chart</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_QUOTE</Tag>
+		<English>Quote</English>
+		<French>Quote</French>
+		<German>Quote</German>
+		<Italian>Quote</Italian>
+		<Spanish>Quote</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_STATS</Tag>
+		<English>Personality</English>
+		<French>Personality</French>
+		<German>Personality</German>
+		<Italian>Personality</Italian>
+		<Spanish>Personality</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_WONDER_CONSTRUCTION</Tag>
+		<English>Wonder Construction: %d1%%[NEWLINE]</English>
+		<French>Wonder Construction: %d1%%[NEWLINE]</French>
+		<German>Wonder Construction: %d1%%[NEWLINE]</German>
+		<Italian>Wonder Construction: %d1%%[NEWLINE]</Italian>
+		<Spanish>Wonder Construction: %d1%%[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_ATTITUDE</Tag>
+		<English>Base Attitude: %d1[NEWLINE]</English>
+		<French>Base Attitude: %d1[NEWLINE]</French>
+		<German>Base Attitude: %d1[NEWLINE]</German>
+		<Italian>Base Attitude: %d1[NEWLINE]</Italian>
+		<Spanish>Base Attitude: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_WARMONGER_RESPECT</Tag>
+		<English>Warmonger Respect: %d1[NEWLINE]</English>
+		<French>Warmonger Respect: %d1[NEWLINE]</French>
+		<German>Warmonger Respect: %d1[NEWLINE]</German>
+		<Italian>Warmonger Respect: %d1[NEWLINE]</Italian>
+		<Spanish>Warmonger Respect: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MAX_WAR</Tag>
+		<English>Max War: %d1[NEWLINE]</English>
+		<French>Max War: %d1[NEWLINE]</French>
+		<German>Max War: %d1[NEWLINE]</German>
+		<Italian>Max War: %d1[NEWLINE]</Italian>
+		<Spanish>Max War: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_NEARBY_POWER_RATIO</Tag>
+		<English>[ICON_BULLET]Nearby Power Ratio: %d1%%[NEWLINE]</English>
+		<French>[ICON_BULLET]Nearby Power Ratio: %d1%%[NEWLINE]</French>
+		<German>[ICON_BULLET]Nearby Power Ratio: %d1%%[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Nearby Power Ratio: %d1%%[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Nearby Power Ratio: %d1%%[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DISTANCE_POWER_RATIO</Tag>
+		<English>[ICON_BULLET]Distance Power Ratio: %d1%%[NEWLINE]</English>
+		<French>[ICON_BULLET]Distance Power Ratio: %d1%%[NEWLINE]</French>
+		<German>[ICON_BULLET]Distance Power Ratio: %d1%%[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Distance Power Ratio: %d1%%[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Distance Power Ratio: %d1%%[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MIN_ADJACENT_LAND</Tag>
+		<English>[ICON_BULLET]Min Adjacent Land: %d1%%[NEWLINE]</English>
+		<French>[ICON_BULLET]Min Adjacent Land: %d1%%[NEWLINE]</French>
+		<German>[ICON_BULLET]Min Adjacent Land: %d1%%[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Min Adjacent Land: %d1%%[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Min Adjacent Land: %d1%%[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_LIMITED_WAR</Tag>
+		<English>Limited War: %d1[NEWLINE]</English>
+		<French>Limited War: %d1[NEWLINE]</French>
+		<German>Limited War: %d1[NEWLINE]</German>
+		<Italian>Limited War: %d1[NEWLINE]</Italian>
+		<Spanish>Limited War: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_POWER_RATIO</Tag>
+		<English>[ICON_BULLET]Power Ratio: %d1%%[NEWLINE]</English>
+		<French>[ICON_BULLET]Power Ratio: %d1%%[NEWLINE]</French>
+		<German>[ICON_BULLET]Power Ratio: %d1%%[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Power Ratio: %d1%%[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Power Ratio: %d1%%[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DOGPILE</Tag>
+		<English>Dogpile War: %d1[NEWLINE]</English>
+		<French>Dogpile War: %d1[NEWLINE]</French>
+		<German>Dogpile War: %d1[NEWLINE]</German>
+		<Italian>Dogpile War: %d1[NEWLINE]</Italian>
+		<Spanish>Dogpile War: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_PEACE_WEIGHT</Tag>
+		<English>Peace Weight: %d1 + %d2 (Random)[NEWLINE]</English>
+		<French>Peace Weight: %d1 + %d2 (Random)[NEWLINE]</French>
+		<German>Peace Weight: %d1 + %d2 (Random)[NEWLINE]</German>
+		<Italian>Peace Weight: %d1 + %d2 (Random)[NEWLINE]</Italian>
+		<Spanish>Peace Weight: %d1 + %d2 (Random)[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MAKE_PEACE</Tag>
+		<English>Make Peace: %d1[NEWLINE]</English>
+		<French>Make Peace: %d1[NEWLINE]</French>
+		<German>Make Peace: %d1[NEWLINE]</German>
+		<Italian>Make Peace: %d1[NEWLINE]</Italian>
+		<Spanish>Make Peace: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_ESPIONAGE_WEIGHT</Tag>
+		<English>Espionage Weight: %d1</English>
+		<French>Espionage Weight: %d1</French>
+		<German>Espionage Weight: %d1</German>
+		<Italian>Espionage Weight: %d1</Italian>
+		<Spanish>Espionage Weight: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_INDEX</Tag>
+		<English>Index</English>
+		<French>Index</French>
+		<German>Index</German>
+		<Italian>Index</Italian>
+		<Spanish>Index</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_OBSOLETE</Tag>
+		<English>Obsoletes</English>
+		<French>Obsoletes</French>
+		<German>Obsoletes</German>
+		<Italian>Obsoletes</Italian>
+		<Spanish>Obsoletes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_UNIT_STATE_RELIGION</Tag>
+		<English>[NEWLINE][COLOR_WARNING_TEXT]Requires %s1 as State Religion[COLOR_REVERT]</English>
+		<French>[NEWLINE][COLOR_WARNING_TEXT]Requires %s1 as State Religion[COLOR_REVERT]</French>
+		<German>[NEWLINE][COLOR_WARNING_TEXT]Requires %s1 as State Religion[COLOR_REVERT]</German>
+		<Italian>[NEWLINE][COLOR_WARNING_TEXT]Requires %s1 as State Religion[COLOR_REVERT]</Italian>
+		<Spanish>[NEWLINE][COLOR_WARNING_TEXT]Requires %s1 as State Religion[COLOR_REVERT]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_MOVIES</Tag>
+		<English>Movies</English>
+		<French>Movies</French>
+		<German>Movies</German>
+		<Italian>Movies</Italian>
+		<Spanish>Movies</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_IMPROVEMENT_FRESHWATER_VALID</Tag>
+		<English>[ICON_BULLET]Valid with Fresh Water</English>
+		<French>[ICON_BULLET]Valid with Fresh Water</French>
+		<German>[ICON_BULLET]Valid with Fresh Water</German>
+		<Italian>[ICON_BULLET]Valid with Fresh Water</Italian>
+		<Spanish>[ICON_BULLET]Valid with Fresh Water</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_WITHDRAWAL</Tag>
+		<English>Withdrawal</English>
+		<French>Withdrawal</French>
+		<German>Withdrawal</German>
+		<Italian>Withdrawal</Italian>
+		<Spanish>Withdrawal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_AIR_RANGE</Tag>
+		<English>Range</English>
+		<French>Range</French>
+		<German>Range</German>
+		<Italian>Range</Italian>
+		<Spanish>Range</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DOMAIN</Tag>
+		<English>Domain</English>
+		<French>Domain</French>
+		<German>Domain</German>
+		<Italian>Domain</Italian>
+		<Spanish>Domain</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_TREE</Tag>
+		<English>Upgrade Tree</English>
+		<French>Upgrade Tree</French>
+		<German>Upgrade Tree</German>
+		<Italian>Upgrade Tree</Italian>
+		<Spanish>Upgrade Tree</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FAVOURITES</Tag>
+		<English>Favourites</English>
+		<French>Favourites</French>
+		<German>Favourites</German>
+		<Italian>Favourites</Italian>
+		<Spanish>Favourites</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_PEDIA_ERA</Tag>
+		<English>Era</English>
+		<French>&#232;re</French>
+		<German>Ära</German>
+		<Italian>%s1</Italian>
+		<Spanish>%s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_PEDIA_NON_COMBAT</Tag>
+		<English>Non-Combat Units</English>
+		<French>Unit&#233;s sans type de combat</French>
+		<German>Zivile Einheiten</German>
+		<Italian>Unit?non da combattimento</Italian>
+		<Spanish>Unidades sin tipo de combate</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_NATIONAL_UNIT</Tag>
+		<English>National Unit</English>
+		<French>National Unit</French>
+		<German>National Unit</German>
+		<Italian>National Unit</Italian>
+		<Spanish>National Unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_TEAM_UNIT</Tag>
+		<English>Team Unit</English>
+		<French>Team Unit</French>
+		<German>Team Unit</German>
+		<Italian>Team Unit</Italian>
+		<Spanish>Team Unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_WORLD_UNIT</Tag>
+		<English>World Unit</English>
+		<French>World Unit</French>
+		<German>World Unit</German>
+		<Italian>World Unit</Italian>
+		<Spanish>World Unit</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_PEDIA_LAND_STUFF</Tag>
+		<English>Land %s1</English>
+		<French>Land %s1</French>
+		<German>Land %s1</German>
+		<Italian>Land %s1</Italian>
+		<Spanish>Land %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_PEDIA_SEA_STUFF</Tag>
+		<English>Sea %s1</English>
+		<French>Sea %s1</French>
+		<German>Sea %s1</German>
+		<Italian>Sea %s1</Italian>
+		<Spanish>Sea %s1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_PROCESS</Tag>
+		<English>Processes</English>
+		<French>Processes</French>
+		<German>Processes</German>
+		<Italian>Processes</Italian>
+		<Spanish>Processes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_PROCESS_CONVERT</Tag>
+		<English>[ICON_BULLET]Converts %d1%% of [ICON_PRODUCTION] to </English>
+		<French>[ICON_BULLET]Converts %d1%% of [ICON_PRODUCTION] to </French>
+		<German>[ICON_BULLET]Converts %d1%% of [ICON_PRODUCTION] to </German>
+		<Italian>[ICON_BULLET]Converts %d1%% of [ICON_PRODUCTION] to </Italian>
+		<Spanish>[ICON_BULLET]Converts %d1%% of [ICON_PRODUCTION] to </Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_ROUTE</Tag>
+		<English>Routes</English>
+		<French>Routes</French>
+		<German>Routes</German>
+		<Italian>Routes</Italian>
+		<Spanish>Routes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_GAME_INFO</Tag>
+		<English>Game Info</English>
+		<French>Info jeu</French>
+		<German>Game Info</German>
+		<Italian>Game Info</Italian>
+		<Spanish>Game Info</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MOVE_COST</Tag>
+		<English>Move Cost</English>
+		<French>Move Cost</French>
+		<German>Move Cost</German>
+		<Italian>Move Cost</Italian>
+		<Spanish>Move Cost</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_FLAT_COST</Tag>
+		<English>Flat Cost</English>
+		<French>Flat Cost</French>
+		<German>Flat Cost</German>
+		<Italian>Flat Cost</Italian>
+		<Spanish>Flat Cost</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_CULTURE_LEVEL</Tag>
+		<English>Culture Level</English>
+		<French>Culture Level</French>
+		<German>Culture Level</German>
+		<Italian>Culture Level</Italian>
+		<Spanish>Culture Level</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_GAME_SPEED</Tag>
+		<English>Game Speed</English>
+		<French>Game Speed</French>
+		<German>Game Speed</German>
+		<Italian>Game Speed</Italian>
+		<Spanish>Game Speed</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_CATEGORY_UPKEEP</Tag>
+		<English>Upkeep</English>
+		<French>Upkeep</French>
+		<German>Upkeep</German>
+		<Italian>Upkeep</Italian>
+		<Spanish>Upkeep</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_START_ERA_FREE_BUILDINGS</Tag>
+		<English>[ICON_BULLET]Free Era Buildings[NEWLINE]</English>
+		<French>[ICON_BULLET]Free Era Buildings[NEWLINE]</French>
+		<German>[ICON_BULLET]Free Era Buildings[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Free Era Buildings[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Free Era Buildings[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_START_ERA_MAX_START_WONDERS</Tag>
+		<English>[ICON_BULLET]Max Start Wonders[NEWLINE]</English>
+		<French>[ICON_BULLET]Max Start Wonders[NEWLINE]</French>
+		<German>[ICON_BULLET]Max Start Wonders[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Max Start Wonders[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Max Start Wonders[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_START_ERA_NO_BARB_UNITS</Tag>
+		<English>[ICON_BULLET]No Barb Units[NEWLINE]</English>
+		<French>[ICON_BULLET]No Barb Units[NEWLINE]</French>
+		<German>[ICON_BULLET]No Barb Units[NEWLINE]</German>
+		<Italian>[ICON_BULLET]No Barb Units[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]No Barb Units[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_START_ERA_NO_BARB_CITY</Tag>
+		<English>[ICON_BULLET]No Barb Cities[NEWLINE]</English>
+		<French>[ICON_BULLET]No Barb Cities[NEWLINE]</French>
+		<German>[ICON_BULLET]No Barb Cities[NEWLINE]</German>
+		<Italian>[ICON_BULLET]No Barb Cities[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]No Barb Cities[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_MULTIPLIER</Tag>
+		<English>Multiplier</English>
+		<French>Multiplier</French>
+		<German>Multiplier</German>
+		<Italian>Multiplier</Italian>
+		<Spanish>Multiplier</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HANDICAP_FREE_UNITS</Tag>
+		<English>[ICON_BULLET]Free Units: %d1[NEWLINE]</English>
+		<French>[ICON_BULLET]Free Units: %d1[NEWLINE]</French>
+		<German>[ICON_BULLET]Free Units: %d1[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Free Units: %d1[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Free Units: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DISTANCE</Tag>
+		<English>Distance</English>
+		<French>Distance</French>
+		<German>Distance</German>
+		<Italian>Distance</Italian>
+		<Spanish>Distance</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_INFLATION_OFFSET</Tag>
+		<English>Inflation Offset</English>
+		<French>Inflation Offset</French>
+		<German>Inflation Offset</German>
+		<Italian>Inflation Offset</Italian>
+		<Spanish>Inflation Offset</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_DEFENSE</Tag>
+		<English>Defense</English>
+		<French>Defense</French>
+		<German>Defense</German>
+		<Italian>Defense</Italian>
+		<Spanish>Defense</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_UPGRADE</Tag>
+		<English>Upgrade</English>
+		<French>Upgrade</French>
+		<German>Upgrade</German>
+		<Italian>Upgrade</Italian>
+		<Spanish>Upgrade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_SUPPLY</Tag>
+		<English>Supply</English>
+		<French>Supply</French>
+		<German>Supply</German>
+		<Italian>Supply</Italian>
+		<Spanish>Supply</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HANDICAP_ATTITUDE</Tag>
+		<English>[ICON_BULLET]Attitude Change: %d1[NEWLINE]</English>
+		<French>[ICON_BULLET]Attitude Change: %d1[NEWLINE]</French>
+		<German>[ICON_BULLET]Attitude Change: %d1[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Attitude Change: %d1[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Attitude Change: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HANDICAP_BARB_FREE_WINS</Tag>
+		<English>[ICON_BULLET]Free Wins VS Barbs: %d1[NEWLINE]</English>
+		<French>[ICON_BULLET]Free Wins VS Barbs: %d1[NEWLINE]</French>
+		<German>[ICON_BULLET]Free Wins VS Barbs: %d1[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Free Wins VS Barbs: %d1[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Free Wins VS Barbs: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HANDICAP_BARB_INITIAL_UNITS</Tag>
+		<English>[ICON_BULLET]Barbarian Initial Units: %d1[NEWLINE]</English>
+		<French>[ICON_BULLET]Barbarian Initial Units: %d1[NEWLINE]</French>
+		<German>[ICON_BULLET]Barbarian Initial Units: %d1[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Barbarian Initial Units: %d1[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Barbarian Initial Units: %d1[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_HANDICAP_PER_ERA_AI</Tag>
+		<English>[ICON_BULLET]Era Modifier: %d1%%[NEWLINE]</English>
+		<French>[ICON_BULLET]Era Modifier: %d1%%[NEWLINE]</French>
+		<German>[ICON_BULLET]Era Modifier: %d1%%[NEWLINE]</German>
+		<Italian>[ICON_BULLET]Era Modifier: %d1%%[NEWLINE]</Italian>
+		<Spanish>[ICON_BULLET]Era Modifier: %d1%%[NEWLINE]</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PEDIA_VICTORY_DELAY</Tag>
+		<English>Victory Delay</English>
+		<French>Victory Delay</French>
+		<German>Victory Delay</German>
+		<Italian>Victory Delay</Italian>
+		<Spanish>Victory Delay</Spanish>
+	</TEXT>
+</Civ4GameText>

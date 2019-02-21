@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_NATURAL_WONDERS</Tag>
+		<English>Natural Wonders</English>
+		<French>Natural Wonders</French>
+		<German>Natural Wonders</German>
+		<Italian>Natural Wonders</Italian>
+		<Spanish>Natural Wonders</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_NATURAL_WONDERS_PEDIA</Tag>
+		<English>[H1]Natural Wonders[\H1][PARAGRAPH:1]Natural Wonders include marvels that truly display the grand beauty of the natural world. Natural Wonders permanently increase happiness when seen by a civilization and grants Gold for the first civilization. Cities get a free Natural Wonder building for each Natural Wonder nearby. Each Natural Wonder can only grant its building to one city.[PARAGRAPH:2]Press [CTRL+F] to locate revealed Natural Wonders.</English>
+		<French>[H1]Natural Wonders[\H1][PARAGRAPH:1]Natural Wonders include marvels that truly display the grand beauty of the natural world. Natural Wonders permanently increase happiness when seen by a civilization and grants Gold for the first civilization. Cities get a free Natural Wonder building for each Natural Wonder nearby. Each Natural Wonder can only grant its building to one city.[PARAGRAPH:2]Press [CTRL+F] to locate revealed Natural Wonders.</French>
+		<German>[H1]Natural Wonders[\H1][PARAGRAPH:1]Natural Wonders include marvels that truly display the grand beauty of the natural world. Natural Wonders permanently increase happiness when seen by a civilization and grants Gold for the first civilization. Cities get a free Natural Wonder building for each Natural Wonder nearby. Each Natural Wonder can only grant its building to one city.[PARAGRAPH:2]Press [CTRL+F] to locate revealed Natural Wonders.</German>
+		<Italian>[H1]Natural Wonders[\H1][PARAGRAPH:1]Natural Wonders include marvels that truly display the grand beauty of the natural world. Natural Wonders permanently increase happiness when seen by a civilization and grants Gold for the first civilization. Cities get a free Natural Wonder building for each Natural Wonder nearby. Each Natural Wonder can only grant its building to one city.[PARAGRAPH:2]Press [CTRL+F] to locate revealed Natural Wonders.</Italian>
+		<Spanish>[H1]Natural Wonders[\H1][PARAGRAPH:1]Natural Wonders include marvels that truly display the grand beauty of the natural world. Natural Wonders permanently increase happiness when seen by a civilization and grants Gold for the first civilization. Cities get a free Natural Wonder building for each Natural Wonder nearby. Each Natural Wonder can only grant its building to one city.[PARAGRAPH:2]Press [CTRL+F] to locate revealed Natural Wonders.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WONDERDISCOVERED_YOU</Tag>
+		<English>You have discovered %s1!</English>
+		<French>Tu as d&#233;couvert %s1!</French>
+		<German>Sie haben entdeckt %s1!</German>
+		<Italian>hai scoperto %s1!</Italian>
+		<Spanish>se han descubierto %s1!</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_MET_FIRST_WONDER</Tag>
+		<English>[COLOR_LIGHT_GREY]%s1 is the first to discover %s2![COLOR_REVERT]</English>
+		<French>[COLOR_LIGHT_GREY]%s1 is the first to discover %s2![COLOR_REVERT]</French>
+		<German>[COLOR_LIGHT_GREY]%s1 is the first to discover %s2![COLOR_REVERT]</German>
+		<Italian>[COLOR_LIGHT_GREY]%s1 is the first to discover %s2![COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_LIGHT_GREY]%s1 is the first to discover %s2![COLOR_REVERT]</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_NOT_MET_FIRST_WONDER</Tag>
+		<English>[COLOR_LIGHT_GREY]%s1 has been discovered in a far away land![COLOR_REVERT]</English>
+		<French>[COLOR_LIGHT_GREY]%s1 has been discovered in a far away land![COLOR_REVERT]</French>
+		<German>[COLOR_LIGHT_GREY]%s1 has been discovered in a far away land![COLOR_REVERT]</German>
+		<Italian>[COLOR_LIGHT_GREY]%s1 has been discovered in a far away land![COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_LIGHT_GREY]%s1 has been discovered in a far away land![COLOR_REVERT]</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_AUYANTEPUI</Tag>
+		<English>Auy&#225;ntepui</English>
+		<French>Auy&#225;ntepui</French>
+		<German>Auy&#225;ntepui</German>
+		<Italian>Auy&#225;ntepui</Italian>
+		<Spanish>Auy&#225;ntepui</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_AUYANTEPUI_PEDIA</Tag>
+		<English>[TAB]Auy&#225;n-tepui is a tepui in Bolivar state, Venezuela. It is the most visited and one of the largest tepuis in the Guiana Highlands. The uneven, heart-shaped summit plateau of Auy&#225;n-tepui is heavily inclined, rising from around 1,600 metres in the northwest to a maximum of 2,450 metres in the southeast. It is incised from the north by a vast valley, the Devil's Canyon. The larger western portion of the plateau is partially forested, whereas the eastern part comprises mostly bare rock with only patchy vegetation cover. The mountain hosts a number of extensive cave systems.</English>
+		<French>[TAB]Auy&#225;n-tepui is a tepui in Bolivar state, Venezuela. It is the most visited and one of the largest tepuis in the Guiana Highlands. The uneven, heart-shaped summit plateau of Auy&#225;n-tepui is heavily inclined, rising from around 1,600 metres in the northwest to a maximum of 2,450 metres in the southeast. It is incised from the north by a vast valley, the Devil's Canyon. The larger western portion of the plateau is partially forested, whereas the eastern part comprises mostly bare rock with only patchy vegetation cover. The mountain hosts a number of extensive cave systems.</French>
+		<German>[TAB]Auy&#225;n-tepui is a tepui in Bolivar state, Venezuela. It is the most visited and one of the largest tepuis in the Guiana Highlands. The uneven, heart-shaped summit plateau of Auy&#225;n-tepui is heavily inclined, rising from around 1,600 metres in the northwest to a maximum of 2,450 metres in the southeast. It is incised from the north by a vast valley, the Devil's Canyon. The larger western portion of the plateau is partially forested, whereas the eastern part comprises mostly bare rock with only patchy vegetation cover. The mountain hosts a number of extensive cave systems.</German>
+		<Italian>[TAB]Auy&#225;n-tepui is a tepui in Bolivar state, Venezuela. It is the most visited and one of the largest tepuis in the Guiana Highlands. The uneven, heart-shaped summit plateau of Auy&#225;n-tepui is heavily inclined, rising from around 1,600 metres in the northwest to a maximum of 2,450 metres in the southeast. It is incised from the north by a vast valley, the Devil's Canyon. The larger western portion of the plateau is partially forested, whereas the eastern part comprises mostly bare rock with only patchy vegetation cover. The mountain hosts a number of extensive cave systems.</Italian>
+		<Spanish>[TAB]Auy&#225;n-tepui is a tepui in Bolivar state, Venezuela. It is the most visited and one of the largest tepuis in the Guiana Highlands. The uneven, heart-shaped summit plateau of Auy&#225;n-tepui is heavily inclined, rising from around 1,600 metres in the northwest to a maximum of 2,450 metres in the southeast. It is incised from the north by a vast valley, the Devil's Canyon. The larger western portion of the plateau is partially forested, whereas the eastern part comprises mostly bare rock with only patchy vegetation cover. The mountain hosts a number of extensive cave systems.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_AURORA</Tag>
+		<English>Aurora</English>
+		<French>Aurora</French>
+		<German>Aurora</German>
+		<Italian>Aurora</Italian>
+		<Spanish>Aurora</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_AURORA_PEDIA</Tag>
+		<English>[TAB]An aurora is a natural light display in the sky particularly in the high latitude (Arctic and Antarctic) regions, caused by the collision of energetic charged particles with atoms in the high altitude atmosphere. The charged particles originate in the magnetosphere and solar wind and are directed by the Earth's magnetic field into the atmosphere. In northern latitudes, the effect is known as the aurora borealis. Its southern counterpart, the aurora australis, changes simultaneously with changes in the northern auroral zone and is visible from high southern latitudes in Antarctica, South America, New Zealand, and Australia.</English>
+		<French>[TAB]An aurora is a natural light display in the sky particularly in the high latitude (Arctic and Antarctic) regions, caused by the collision of energetic charged particles with atoms in the high altitude atmosphere. The charged particles originate in the magnetosphere and solar wind and are directed by the Earth's magnetic field into the atmosphere. In northern latitudes, the effect is known as the aurora borealis. Its southern counterpart, the aurora australis, changes simultaneously with changes in the northern auroral zone and is visible from high southern latitudes in Antarctica, South America, New Zealand, and Australia.</French>
+		<German>[TAB]An aurora is a natural light display in the sky particularly in the high latitude (Arctic and Antarctic) regions, caused by the collision of energetic charged particles with atoms in the high altitude atmosphere. The charged particles originate in the magnetosphere and solar wind and are directed by the Earth's magnetic field into the atmosphere. In northern latitudes, the effect is known as the aurora borealis. Its southern counterpart, the aurora australis, changes simultaneously with changes in the northern auroral zone and is visible from high southern latitudes in Antarctica, South America, New Zealand, and Australia.</German>
+		<Italian>[TAB]An aurora is a natural light display in the sky particularly in the high latitude (Arctic and Antarctic) regions, caused by the collision of energetic charged particles with atoms in the high altitude atmosphere. The charged particles originate in the magnetosphere and solar wind and are directed by the Earth's magnetic field into the atmosphere. In northern latitudes, the effect is known as the aurora borealis. Its southern counterpart, the aurora australis, changes simultaneously with changes in the northern auroral zone and is visible from high southern latitudes in Antarctica, South America, New Zealand, and Australia.</Italian>
+		<Spanish>[TAB]An aurora is a natural light display in the sky particularly in the high latitude (Arctic and Antarctic) regions, caused by the collision of energetic charged particles with atoms in the high altitude atmosphere. The charged particles originate in the magnetosphere and solar wind and are directed by the Earth's magnetic field into the atmosphere. In northern latitudes, the effect is known as the aurora borealis. Its southern counterpart, the aurora australis, changes simultaneously with changes in the northern auroral zone and is visible from high southern latitudes in Antarctica, South America, New Zealand, and Australia.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BARRINGER_CRATER</Tag>
+		<English>Barringer Crater</English>
+		<French>Barringer Crater</French>
+		<German>Barringer Crater</German>
+		<Italian>Barringer Crater</Italian>
+		<Spanish>Barringer Crater</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BARRINGER_CRATER_PEDIA</Tag>
+		<English>[TAB]The Barringer Crater is a huge meteorite crater located in Arizona, in the United States of America. The crater is four thousand feet in diameter, and scientists believe that it was created some 50,000 years ago when the site was hit by a large nickel-iron meteorite weighing, at time of impact, 160,000 tons and moving at perhaps 27,000 miles per hour.</English>
+		<French>[TAB]The Barringer Crater is a huge meteorite crater located in Arizona, in the United States of America. The crater is four thousand feet in diameter, and scientists believe that it was created some 50,000 years ago when the site was hit by a large nickel-iron meteorite weighing, at time of impact, 160,000 tons and moving at perhaps 27,000 miles per hour.</French>
+		<German>[TAB]The Barringer Crater is a huge meteorite crater located in Arizona, in the United States of America. The crater is four thousand feet in diameter, and scientists believe that it was created some 50,000 years ago when the site was hit by a large nickel-iron meteorite weighing, at time of impact, 160,000 tons and moving at perhaps 27,000 miles per hour.</German>
+		<Italian>[TAB]The Barringer Crater is a huge meteorite crater located in Arizona, in the United States of America. The crater is four thousand feet in diameter, and scientists believe that it was created some 50,000 years ago when the site was hit by a large nickel-iron meteorite weighing, at time of impact, 160,000 tons and moving at perhaps 27,000 miles per hour.</Italian>
+		<Spanish>[TAB]The Barringer Crater is a huge meteorite crater located in Arizona, in the United States of America. The crater is four thousand feet in diameter, and scientists believe that it was created some 50,000 years ago when the site was hit by a large nickel-iron meteorite weighing, at time of impact, 160,000 tons and moving at perhaps 27,000 miles per hour.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BASALT_ORGAN</Tag>
+		<English>Basalt Organ</English>
+		<French>Basalt Organ</French>
+		<German>Basalt Organ</German>
+		<Italian>Basalt Organ</Italian>
+		<Spanish>Basalt Organ</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BASALT_ORGAN_PEDIA</Tag>
+		<English>[TAB]Jackson Creek, which meets with Deep Creek to become the Maribyrnong River, has slowly worn a deep valley in the basaltic plain formation of hard, dark rock revealing the old volcanic geological formations such as the hexagonal basalt columns known as the "Organ Pipes"; the lava deposit in the bed of the creek is of the order of 70 metres. As the lava cooled over several years the interior molten lava got insulated and developed into undisturbed columns of basalt (with uniform composition) as the lava heat dissipated.</English>
+		<French>[TAB]Jackson Creek, which meets with Deep Creek to become the Maribyrnong River, has slowly worn a deep valley in the basaltic plain formation of hard, dark rock revealing the old volcanic geological formations such as the hexagonal basalt columns known as the "Organ Pipes"; the lava deposit in the bed of the creek is of the order of 70 metres. As the lava cooled over several years the interior molten lava got insulated and developed into undisturbed columns of basalt (with uniform composition) as the lava heat dissipated.</French>
+		<German>[TAB]Jackson Creek, which meets with Deep Creek to become the Maribyrnong River, has slowly worn a deep valley in the basaltic plain formation of hard, dark rock revealing the old volcanic geological formations such as the hexagonal basalt columns known as the "Organ Pipes"; the lava deposit in the bed of the creek is of the order of 70 metres. As the lava cooled over several years the interior molten lava got insulated and developed into undisturbed columns of basalt (with uniform composition) as the lava heat dissipated.</German>
+		<Italian>[TAB]Jackson Creek, which meets with Deep Creek to become the Maribyrnong River, has slowly worn a deep valley in the basaltic plain formation of hard, dark rock revealing the old volcanic geological formations such as the hexagonal basalt columns known as the "Organ Pipes"; the lava deposit in the bed of the creek is of the order of 70 metres. As the lava cooled over several years the interior molten lava got insulated and developed into undisturbed columns of basalt (with uniform composition) as the lava heat dissipated.</Italian>
+		<Spanish>[TAB]Jackson Creek, which meets with Deep Creek to become the Maribyrnong River, has slowly worn a deep valley in the basaltic plain formation of hard, dark rock revealing the old volcanic geological formations such as the hexagonal basalt columns known as the "Organ Pipes"; the lava deposit in the bed of the creek is of the order of 70 metres. As the lava cooled over several years the interior molten lava got insulated and developed into undisturbed columns of basalt (with uniform composition) as the lava heat dissipated.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DEAD_SEA</Tag>
+		<English>Dead Sea</English>
+		<French>Dead Sea</French>
+		<German>Dead Sea</German>
+		<Italian>Dead Sea</Italian>
+		<Spanish>Dead Sea</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DEAD_SEA_PEDIA</Tag>
+		<English>[TAB]The Dead Sea, also called the Salt Sea, is a salt lake bordering Jordan to the east and Israel and Palestine to the west. The Dead Sea is 377 m deep, the deepest hypersaline lake in the world. With 33.7% salinity, it is also one of the world's saltiest bodies of water. This salinity makes for a harsh environment in which animals cannot flourish, hence its name. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River.</English>
+		<French>[TAB]The Dead Sea, also called the Salt Sea, is a salt lake bordering Jordan to the east and Israel and Palestine to the west. The Dead Sea is 377 m deep, the deepest hypersaline lake in the world. With 33.7% salinity, it is also one of the world's saltiest bodies of water. This salinity makes for a harsh environment in which animals cannot flourish, hence its name. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River.</French>
+		<German>[TAB]The Dead Sea, also called the Salt Sea, is a salt lake bordering Jordan to the east and Israel and Palestine to the west. The Dead Sea is 377 m deep, the deepest hypersaline lake in the world. With 33.7% salinity, it is also one of the world's saltiest bodies of water. This salinity makes for a harsh environment in which animals cannot flourish, hence its name. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River.</German>
+		<Italian>[TAB]The Dead Sea, also called the Salt Sea, is a salt lake bordering Jordan to the east and Israel and Palestine to the west. The Dead Sea is 377 m deep, the deepest hypersaline lake in the world. With 33.7% salinity, it is also one of the world's saltiest bodies of water. This salinity makes for a harsh environment in which animals cannot flourish, hence its name. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River.</Italian>
+		<Spanish>[TAB]The Dead Sea, also called the Salt Sea, is a salt lake bordering Jordan to the east and Israel and Palestine to the west. The Dead Sea is 377 m deep, the deepest hypersaline lake in the world. With 33.7% salinity, it is also one of the world's saltiest bodies of water. This salinity makes for a harsh environment in which animals cannot flourish, hence its name. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DEVILS_TABLE</Tag>
+		<English>Devil's Table</English>
+		<French>Diable tableau</French>
+		<German>Teufelstisch</German>
+		<Italian>Table del Diavolo</Italian>
+		<Spanish>Tabla del Diablo</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DEVILS_TABLE_PEDIA</Tag>
+		<English>[TAB]The southern portion of the state of Rheinland Pfalz in South Western Germany has lot of rocky mountainous areas having rock towers/spires something akin to rocky areas of Arizona. Unlike dry desert landscape in Arizona, this area in Germany is lush green with vegetation. Most of the sandstones towers/spires in this area are connected to some hill or mountain in their back by a long ridge, however few pillars in Kaltenbach-Hinterweidenthal region are topped by flat balanced stones which seem to defy gravity. Local people call these as Devil's Table (Teufelstisch).</English>
+		<French>[TAB]The southern portion of the state of Rheinland Pfalz in South Western Germany has lot of rocky mountainous areas having rock towers/spires something akin to rocky areas of Arizona. Unlike dry desert landscape in Arizona, this area in Germany is lush green with vegetation. Most of the sandstones towers/spires in this area are connected to some hill or mountain in their back by a long ridge, however few pillars in Kaltenbach-Hinterweidenthal region are topped by flat balanced stones which seem to defy gravity. Local people call these as Devil's Table (Teufelstisch).</French>
+		<German>[TAB]The southern portion of the state of Rheinland Pfalz in South Western Germany has lot of rocky mountainous areas having rock towers/spires something akin to rocky areas of Arizona. Unlike dry desert landscape in Arizona, this area in Germany is lush green with vegetation. Most of the sandstones towers/spires in this area are connected to some hill or mountain in their back by a long ridge, however few pillars in Kaltenbach-Hinterweidenthal region are topped by flat balanced stones which seem to defy gravity. Local people call these as Devil's Table (Teufelstisch).</German>
+		<Italian>[TAB]The southern portion of the state of Rheinland Pfalz in South Western Germany has lot of rocky mountainous areas having rock towers/spires something akin to rocky areas of Arizona. Unlike dry desert landscape in Arizona, this area in Germany is lush green with vegetation. Most of the sandstones towers/spires in this area are connected to some hill or mountain in their back by a long ridge, however few pillars in Kaltenbach-Hinterweidenthal region are topped by flat balanced stones which seem to defy gravity. Local people call these as Devil's Table (Teufelstisch).</Italian>
+		<Spanish>[TAB]The southern portion of the state of Rheinland Pfalz in South Western Germany has lot of rocky mountainous areas having rock towers/spires something akin to rocky areas of Arizona. Unlike dry desert landscape in Arizona, this area in Germany is lush green with vegetation. Most of the sandstones towers/spires in this area are connected to some hill or mountain in their back by a long ridge, however few pillars in Kaltenbach-Hinterweidenthal region are topped by flat balanced stones which seem to defy gravity. Local people call these as Devil's Table (Teufelstisch).</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BAIKAL</Tag>
+		<English>Lake Baikal</English>
+		<French>Lake Baikal</French>
+		<German>Lake Baikal</German>
+		<Italian>Lake Baikal</Italian>
+		<Spanish>Lake Baikal</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BAIKAL_PEDIA</Tag>
+		<English>[TAB]Lake Baikal is a rift lake in the south of the Russian region of Siberia, between the Irkutsk Oblast to the northwest and the Buryat Republic to the southeast. Lake Baikal is the most voluminous freshwater lake in the world, containing roughly 20% of the world's unfrozen surface fresh water, and at 1,642 m, the deepest. It is also among the clearest of all lakes, and thought to be the world's oldest lake at 25 million years.</English>
+		<French>[TAB]Lake Baikal is a rift lake in the south of the Russian region of Siberia, between the Irkutsk Oblast to the northwest and the Buryat Republic to the southeast. Lake Baikal is the most voluminous freshwater lake in the world, containing roughly 20% of the world's unfrozen surface fresh water, and at 1,642 m, the deepest. It is also among the clearest of all lakes, and thought to be the world's oldest lake at 25 million years.</French>
+		<German>[TAB]Lake Baikal is a rift lake in the south of the Russian region of Siberia, between the Irkutsk Oblast to the northwest and the Buryat Republic to the southeast. Lake Baikal is the most voluminous freshwater lake in the world, containing roughly 20% of the world's unfrozen surface fresh water, and at 1,642 m, the deepest. It is also among the clearest of all lakes, and thought to be the world's oldest lake at 25 million years.</German>
+		<Italian>[TAB]Lake Baikal is a rift lake in the south of the Russian region of Siberia, between the Irkutsk Oblast to the northwest and the Buryat Republic to the southeast. Lake Baikal is the most voluminous freshwater lake in the world, containing roughly 20% of the world's unfrozen surface fresh water, and at 1,642 m, the deepest. It is also among the clearest of all lakes, and thought to be the world's oldest lake at 25 million years.</Italian>
+		<Spanish>[TAB]Lake Baikal is a rift lake in the south of the Russian region of Siberia, between the Irkutsk Oblast to the northwest and the Buryat Republic to the southeast. Lake Baikal is the most voluminous freshwater lake in the world, containing roughly 20% of the world's unfrozen surface fresh water, and at 1,642 m, the deepest. It is also among the clearest of all lakes, and thought to be the world's oldest lake at 25 million years.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_EVEREST</Tag>
+		<English>Mount Everest</English>
+		<French>Mount Everest</French>
+		<German>Mount Everest</German>
+		<Italian>Mount Everest</Italian>
+		<Spanish>Mount Everest</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_EVEREST_PEDIA</Tag>
+		<English>[TAB]Mount Everest is the Earth's highest mountain, with a peak at 8,848 metres above sea level and the 5th tallest mountain measured from the centre of the Earth. It is located in the Mahalangur section of the Himalayas.</English>
+		<French>[TAB]Mount Everest is the Earth's highest mountain, with a peak at 8,848 metres above sea level and the 5th tallest mountain measured from the centre of the Earth. It is located in the Mahalangur section of the Himalayas.</French>
+		<German>[TAB]Mount Everest is the Earth's highest mountain, with a peak at 8,848 metres above sea level and the 5th tallest mountain measured from the centre of the Earth. It is located in the Mahalangur section of the Himalayas.</German>
+		<Italian>[TAB]Mount Everest is the Earth's highest mountain, with a peak at 8,848 metres above sea level and the 5th tallest mountain measured from the centre of the Earth. It is located in the Mahalangur section of the Himalayas.</Italian>
+		<Spanish>[TAB]Mount Everest is the Earth's highest mountain, with a peak at 8,848 metres above sea level and the 5th tallest mountain measured from the centre of the Earth. It is located in the Mahalangur section of the Himalayas.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FUJI</Tag>
+		<English>Mount Fuji</English>
+		<French>Mount Fuji</French>
+		<German>Mount Fuji</German>
+		<Italian>Mount Fuji</Italian>
+		<Spanish>Mount Fuji</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FUJI_PEDIA</Tag>
+		<English>[TAB]An active volcano, Mount Fuji is the highest mountain in Japan. Standing some 12,000 feet high and often wreathed in clouds, its famous snow-capped silhouette can be seen from Tokyo. The stately mountain is the subject of uncounted works of art - poems, songs, photographs, sculptures and paintings. Mount Fuji is a symbol of pride and beauty for all of Japan.</English>
+		<French>[TAB]An active volcano, Mount Fuji is the highest mountain in Japan. Standing some 12,000 feet high and often wreathed in clouds, its famous snow-capped silhouette can be seen from Tokyo. The stately mountain is the subject of uncounted works of art - poems, songs, photographs, sculptures and paintings. Mount Fuji is a symbol of pride and beauty for all of Japan.</French>
+		<German>[TAB]An active volcano, Mount Fuji is the highest mountain in Japan. Standing some 12,000 feet high and often wreathed in clouds, its famous snow-capped silhouette can be seen from Tokyo. The stately mountain is the subject of uncounted works of art - poems, songs, photographs, sculptures and paintings. Mount Fuji is a symbol of pride and beauty for all of Japan.</German>
+		<Italian>[TAB]An active volcano, Mount Fuji is the highest mountain in Japan. Standing some 12,000 feet high and often wreathed in clouds, its famous snow-capped silhouette can be seen from Tokyo. The stately mountain is the subject of uncounted works of art - poems, songs, photographs, sculptures and paintings. Mount Fuji is a symbol of pride and beauty for all of Japan.</Italian>
+		<Spanish>[TAB]An active volcano, Mount Fuji is the highest mountain in Japan. Standing some 12,000 feet high and often wreathed in clouds, its famous snow-capped silhouette can be seen from Tokyo. The stately mountain is the subject of uncounted works of art - poems, songs, photographs, sculptures and paintings. Mount Fuji is a symbol of pride and beauty for all of Japan.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SINAI</Tag>
+		<English>Mount Sinai</English>
+		<French>Mount Sinai</French>
+		<German>Mount Sinai</German>
+		<Italian>Mount Sinai</Italian>
+		<Spanish>Mount Sinai</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SINAI_PEDIA</Tag>
+		<English>[TAB]Found on the Sinai Peninsula of Egypt, Mount Sinai is among the most revered holy sites recognized by the followers of Judaism, Christianity, and Islam. Mount Sinai is believed to be the location where Moses first received the Ten Commandments from God during the Israelites' exodus from Egypt, making the peak an important site for religious pilgrims from around the world.</English>
+		<French>[TAB]Found on the Sinai Peninsula of Egypt, Mount Sinai is among the most revered holy sites recognized by the followers of Judaism, Christianity, and Islam. Mount Sinai is believed to be the location where Moses first received the Ten Commandments from God during the Israelites' exodus from Egypt, making the peak an important site for religious pilgrims from around the world.</French>
+		<German>[TAB]Found on the Sinai Peninsula of Egypt, Mount Sinai is among the most revered holy sites recognized by the followers of Judaism, Christianity, and Islam. Mount Sinai is believed to be the location where Moses first received the Ten Commandments from God during the Israelites' exodus from Egypt, making the peak an important site for religious pilgrims from around the world.</German>
+		<Italian>[TAB]Found on the Sinai Peninsula of Egypt, Mount Sinai is among the most revered holy sites recognized by the followers of Judaism, Christianity, and Islam. Mount Sinai is believed to be the location where Moses first received the Ten Commandments from God during the Israelites' exodus from Egypt, making the peak an important site for religious pilgrims from around the world.</Italian>
+		<Spanish>[TAB]Found on the Sinai Peninsula of Egypt, Mount Sinai is among the most revered holy sites recognized by the followers of Judaism, Christianity, and Islam. Mount Sinai is believed to be the location where Moses first received the Ten Commandments from God during the Israelites' exodus from Egypt, making the peak an important site for religious pilgrims from around the world.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_GREAT_BARRIER</Tag>
+		<English>Great Barrier Reef</English>
+		<French>Great Barrier Reef</French>
+		<German>Great Barrier Reef</German>
+		<Italian>Great Barrier Reef</Italian>
+		<Spanish>Great Barrier Reef</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_GREAT_BARRIER_PEDIA</Tag>
+		<English>[TAB]The Great Barrier Reef is the world's largest reef. A chain of almost 3000 reefs and 1000 islands, it stretches almost 1600 miles along the coast of north-east Australia. Constructed over 500,000 years by billions of coral polyps, the Great Barrier Reef is the largest single structure made by living creatures. The Great Barrier Reef is home to a hugely diverse population of whales, dolphins, porpoises, dugongs, turtles, fish, octopi, and snakes, not to mention over 200 species of birds.</English>
+		<French>[TAB]The Great Barrier Reef is the world's largest reef. A chain of almost 3000 reefs and 1000 islands, it stretches almost 1600 miles along the coast of north-east Australia. Constructed over 500,000 years by billions of coral polyps, the Great Barrier Reef is the largest single structure made by living creatures. The Great Barrier Reef is home to a hugely diverse population of whales, dolphins, porpoises, dugongs, turtles, fish, octopi, and snakes, not to mention over 200 species of birds.</French>
+		<German>[TAB]The Great Barrier Reef is the world's largest reef. A chain of almost 3000 reefs and 1000 islands, it stretches almost 1600 miles along the coast of north-east Australia. Constructed over 500,000 years by billions of coral polyps, the Great Barrier Reef is the largest single structure made by living creatures. The Great Barrier Reef is home to a hugely diverse population of whales, dolphins, porpoises, dugongs, turtles, fish, octopi, and snakes, not to mention over 200 species of birds.</German>
+		<Italian>[TAB]The Great Barrier Reef is the world's largest reef. A chain of almost 3000 reefs and 1000 islands, it stretches almost 1600 miles along the coast of north-east Australia. Constructed over 500,000 years by billions of coral polyps, the Great Barrier Reef is the largest single structure made by living creatures. The Great Barrier Reef is home to a hugely diverse population of whales, dolphins, porpoises, dugongs, turtles, fish, octopi, and snakes, not to mention over 200 species of birds.</Italian>
+		<Spanish>[TAB]The Great Barrier Reef is the world's largest reef. A chain of almost 3000 reefs and 1000 islands, it stretches almost 1600 miles along the coast of north-east Australia. Constructed over 500,000 years by billions of coral polyps, the Great Barrier Reef is the largest single structure made by living creatures. The Great Barrier Reef is home to a hugely diverse population of whales, dolphins, porpoises, dugongs, turtles, fish, octopi, and snakes, not to mention over 200 species of birds.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_KILIMANJARO</Tag>
+		<English>Kilimanjaro</English>
+		<French>Kilimanjaro</French>
+		<German>Kilimanjaro</German>
+		<Italian>Kilimanjaro</Italian>
+		<Spanish>Kilimanjaro</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_KILIMANJARO_PEDIA</Tag>
+		<English>[TAB]Kilimanjaro, with its three volcanic cones, Kibo, Mawenzi, and Shira, is a dormant volcanic mountain in Kilimanjaro National Park, Kilimanjaro Region, Tanzania. It is the highest mountain in Tanzania, the highest mountain in Africa, and the highest free-standing mountain in the world at 5,895 metres or 19,341 feet above sea level (the Uhuru Peak/Kibo Peak).</English>
+		<French>[TAB]Kilimanjaro, with its three volcanic cones, Kibo, Mawenzi, and Shira, is a dormant volcanic mountain in Kilimanjaro National Park, Kilimanjaro Region, Tanzania. It is the highest mountain in Tanzania, the highest mountain in Africa, and the highest free-standing mountain in the world at 5,895 metres or 19,341 feet above sea level (the Uhuru Peak/Kibo Peak).</French>
+		<German>[TAB]Kilimanjaro, with its three volcanic cones, Kibo, Mawenzi, and Shira, is a dormant volcanic mountain in Kilimanjaro National Park, Kilimanjaro Region, Tanzania. It is the highest mountain in Tanzania, the highest mountain in Africa, and the highest free-standing mountain in the world at 5,895 metres or 19,341 feet above sea level (the Uhuru Peak/Kibo Peak).</German>
+		<Italian>[TAB]Kilimanjaro, with its three volcanic cones, Kibo, Mawenzi, and Shira, is a dormant volcanic mountain in Kilimanjaro National Park, Kilimanjaro Region, Tanzania. It is the highest mountain in Tanzania, the highest mountain in Africa, and the highest free-standing mountain in the world at 5,895 metres or 19,341 feet above sea level (the Uhuru Peak/Kibo Peak).</Italian>
+		<Spanish>[TAB]Kilimanjaro, with its three volcanic cones, Kibo, Mawenzi, and Shira, is a dormant volcanic mountain in Kilimanjaro National Park, Kilimanjaro Region, Tanzania. It is the highest mountain in Tanzania, the highest mountain in Africa, and the highest free-standing mountain in the world at 5,895 metres or 19,341 feet above sea level (the Uhuru Peak/Kibo Peak).</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SOPKA</Tag>
+		<English>Klyuchevskaya Sopka</English>
+		<French>Klioutchevsko</French>
+		<German>Kljutschewskaja Sopka</German>
+		<Italian>Kljucevskaja Sopka</Italian>
+		<Spanish>Kliuchevskoi</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SOPKA_PEDIA</Tag>
+		<English>[TAB]Klyuchevskaya Sopka is a stratovolcano which is the highest mountain on the Kamchatka Peninsula of Russia and the highest active volcano of Eurasia. Its steep, symmetrical cone towers about 100 kilometres from the Bering Sea. The volcano is part of the natural UNESCO World Heritage Site Volcanoes of Kamchatka.</English>
+		<French>[TAB]Le Klioutchevsko? aussi appel?Klioutchevskaïa Sopka est le plus haut sommet mais aussi le volcan le plus actif de la péninsule du Kamtchatka, en Russie. C'est un stratovolcan de 4 835 mètres d'altitude n?il y a environ 6 000 ans. Il fait partie de la Ceinture de feu du Pacifique. Au large du Kamtchatka, une fosse océanique de 10 500 mètres de profondeur et des séismes témoignent de la subduction, ?la vitesse de 10 cm/an, de la plaque pacifique sous la plaque eurasienne ; comme tous les volcans de la Péninsule du Kamtchatka, le Klioutchevsko?est donc un volcan de subduction. Il a ét?class? avec les autres volcans du Kamtchatka, au patrimoine mondial par l'UNESCO depuis 1996 (révis?en 2001).</French>
+		<German>[TAB]Die Kljutschewskaja Sopka, auch Kljutschewskoi Vulkan auf der Halbinsel Kamtschatka in Russland gilt als der größte Vulkan Eurasiens. Der etwa 8000 Jahre alte Vulkan ist der größte aktive Vulkan Asiens und zählt zum Pazifischen Feuerring. Er ist der höchste Vulkan der dicht beieinander stehenden zwölf Stratovulkane, welche die Klutschewskaja-Gruppe bilden. Zu ihr gehören z. B. auch der Kamen und der Ploski Tolbatschik.</German>
+		<Italian>[TAB]La Kljucevskaja Sopka ?uno stratovulcano della Russia estremo orientale, compreso nella Catena Orientale nella penisola della Kamcatka.</Italian>
+		<Spanish>[TAB]El volcán Kliuchevskói es un estratovolcán basáltico situado cerca de la costa este de la península de Kamchatka, en Siberia Oriental, Rusia. El Kliuchevskoy, simétrico y cubierto de nieve, es el más elevado y activo de una cadena de volcanes a lo largo de Kamchatka. Se form?hace unos 6000 años, y desde entonces ha producido frecuentes erupciones explosivas y efusivas, sin largos intervalos de inactividad. Más de 100 erupciones han producido, en los últimos 3000 años, numerosos conos y cráteres. Pero la mayoría de las erupciones se han originado en el cráter de la cima, de 700 metros de ancho, formado una y otra vez por las capas de materiales piroclásticos y las coladas de lava que expulsa.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_KRAKATOA</Tag>
+		<English>Krakatoa</English>
+		<French>Krakatoa</French>
+		<German>Krakatoa</German>
+		<Italian>Krakatoa</Italian>
+		<Spanish>Krakatoa</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_KRAKATOA_PEDIA</Tag>
+		<English>[TAB]Krakatoa is a volcanic island situated in the Sunda Strait between the islands of Java and Sumatra in Indonesia. The name is also used for the surrounding island group and the volcanoes as a whole. The Krakatoa volcanoes erupted and exploded in 1883, causing massive tsunamis and killing at least 36,417 people, while simultaneously destroying over two-thirds of Krakatoa island. The explosion is considered to be the loudest sound ever heard in modern history, with reports of it being heard up to 4,800 km from its point of origin. The shock waves from the explosion were recorded on barographs around the globe.</English>
+		<French>[TAB]Krakatoa is a volcanic island situated in the Sunda Strait between the islands of Java and Sumatra in Indonesia. The name is also used for the surrounding island group and the volcanoes as a whole. The Krakatoa volcanoes erupted and exploded in 1883, causing massive tsunamis and killing at least 36,417 people, while simultaneously destroying over two-thirds of Krakatoa island. The explosion is considered to be the loudest sound ever heard in modern history, with reports of it being heard up to 4,800 km from its point of origin. The shock waves from the explosion were recorded on barographs around the globe.</French>
+		<German>[TAB]Krakatoa is a volcanic island situated in the Sunda Strait between the islands of Java and Sumatra in Indonesia. The name is also used for the surrounding island group and the volcanoes as a whole. The Krakatoa volcanoes erupted and exploded in 1883, causing massive tsunamis and killing at least 36,417 people, while simultaneously destroying over two-thirds of Krakatoa island. The explosion is considered to be the loudest sound ever heard in modern history, with reports of it being heard up to 4,800 km from its point of origin. The shock waves from the explosion were recorded on barographs around the globe.</German>
+		<Italian>[TAB]Krakatoa is a volcanic island situated in the Sunda Strait between the islands of Java and Sumatra in Indonesia. The name is also used for the surrounding island group and the volcanoes as a whole. The Krakatoa volcanoes erupted and exploded in 1883, causing massive tsunamis and killing at least 36,417 people, while simultaneously destroying over two-thirds of Krakatoa island. The explosion is considered to be the loudest sound ever heard in modern history, with reports of it being heard up to 4,800 km from its point of origin. The shock waves from the explosion were recorded on barographs around the globe.</Italian>
+		<Spanish>[TAB]Krakatoa is a volcanic island situated in the Sunda Strait between the islands of Java and Sumatra in Indonesia. The name is also used for the surrounding island group and the volcanoes as a whole. The Krakatoa volcanoes erupted and exploded in 1883, causing massive tsunamis and killing at least 36,417 people, while simultaneously destroying over two-thirds of Krakatoa island. The explosion is considered to be the loudest sound ever heard in modern history, with reports of it being heard up to 4,800 km from its point of origin. The shock waves from the explosion were recorded on barographs around the globe.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_NGORONGORO_CRATER</Tag>
+		<English>Ngorongoro Crater</English>
+		<French>Ngorongoro Crater</French>
+		<German>Ngorongoro Crater</German>
+		<Italian>Ngorongoro Crater</Italian>
+		<Spanish>Ngorongoro Crater</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_NGORONGORO_CRATER_PEDIA</Tag>
+		<English>[TAB]Ngorongoro Crater is the world's largest unbroken caldera. Often referred to as "Africa's Garden of Eden," the crater is home to over 30,000 animals including elephants, lions, cheetahs, wildebeests, buffaloes, and the rare black rhinos.</English>
+		<French>[TAB]Ngorongoro Crater is the world's largest unbroken caldera. Often referred to as "Africa's Garden of Eden," the crater is home to over 30,000 animals including elephants, lions, cheetahs, wildebeests, buffaloes, and the rare black rhinos.</French>
+		<German>[TAB]Ngorongoro Crater is the world's largest unbroken caldera. Often referred to as "Africa's Garden of Eden," the crater is home to over 30,000 animals including elephants, lions, cheetahs, wildebeests, buffaloes, and the rare black rhinos.</German>
+		<Italian>[TAB]Ngorongoro Crater is the world's largest unbroken caldera. Often referred to as "Africa's Garden of Eden," the crater is home to over 30,000 animals including elephants, lions, cheetahs, wildebeests, buffaloes, and the rare black rhinos.</Italian>
+		<Spanish>[TAB]Ngorongoro Crater is the world's largest unbroken caldera. Often referred to as "Africa's Garden of Eden," the crater is home to over 30,000 animals including elephants, lions, cheetahs, wildebeests, buffaloes, and the rare black rhinos.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_NUKUORO</Tag>
+		<English>Nukuoro</English>
+		<French>Nukuoro</French>
+		<German>Nukuoro</German>
+		<Italian>Nukuoro</Italian>
+		<Spanish>Nukuoro</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_NUKUORO_PEDIA</Tag>
+		<English>[TAB]Nukuoro is an atoll in the Federated States of Micronesia. It is a municipality of the state of Pohnpei, Federated States of Micronesia. Except for Kapingamarangi, it is the southermost atoll of the country. Nukuoro has a population of 372 (as of 2007), though several hundred Nukuorans live on Pohnpei. The total area, including the lagoon, is 40 square km with a land area of only square 1.7 km which is divided among more than 40 islets that lie on the northern, eastern and southern sides of the lagoon. By far the largest islet is Nukuoro islet, which is the center of population and the capital of the municipality.</English>
+		<French>[TAB]Nukuoro est un atoll de Micronésie situ?dans le sud du pays, dans l'État de Pohnpei.</French>
+		<German>[TAB]Nukuoro ist ein Atoll in den Föderierten Staaten von Mikronesien. Es ist Teil des Bundesstaates Pohnpei.</German>
+		<Italian>[TAB]Nukuoro ?un atollo delle Isole Caroline. Amministrativamente ?una municipalit?del Distretto di Pohnpei Altre Isole, nello stato di Pohnpei, uno degli Stati micronesiani.</Italian>
+		<Spanish>[TAB]Nukuoro es un atolón perteneciente a los Estados Federados de Micronesia. Se trata de un municipio del estado de Pohnpei integrado en los Estados Federados de Micronesia. A excepción de Kapingamarangi, es el atolón más al sur del país. Nukuoro tenía en 2007 una población de 372 habitantes, aunque varios centenares de sus habitantes viven en Pohnpei. La superficie total, incluyendo la laguna, es de 40 km ? con una superficie emergida de sólo 1,7 km ? que se divide entre más de 40 islotes que se encuentran en los lados norte, este y sur de la laguna. Con mucho, el mayor islote es Nukuoro, que es el núcleo de población más importante y la capital del municipio.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SHARK_BAY</Tag>
+		<English>Shark Bay</English>
+		<French>Shark Bay</French>
+		<German>Shark Bay</German>
+		<Italian>Shark Bay</Italian>
+		<Spanish>Shark Bay</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SHARK_BAY_PEDIA</Tag>
+		<English>[TAB]Shark Bay is a World Heritage Site in the Gascoyne region of Western Australia. It is an area centred approximately 800 km north of Perth, on the westernmost point of Australia. An expedition led by Dirk Hartog happened upon the area in 1616, becoming the second group of Europeans known to have visited Australia. Shark Bay was named by William Dampier, in 1699. The area has a population of fewer than 1,000 people and a coastline of over 1,500 km. The half-dozen small communities making up this population occupy less than 1% of the total area.</English>
+		<French>[TAB]Shark Bay is a World Heritage Site in the Gascoyne region of Western Australia. It is an area centred approximately 800 km north of Perth, on the westernmost point of Australia. An expedition led by Dirk Hartog happened upon the area in 1616, becoming the second group of Europeans known to have visited Australia. Shark Bay was named by William Dampier, in 1699. The area has a population of fewer than 1,000 people and a coastline of over 1,500 km. The half-dozen small communities making up this population occupy less than 1% of the total area.</French>
+		<German>[TAB]Shark Bay is a World Heritage Site in the Gascoyne region of Western Australia. It is an area centred approximately 800 km north of Perth, on the westernmost point of Australia. An expedition led by Dirk Hartog happened upon the area in 1616, becoming the second group of Europeans known to have visited Australia. Shark Bay was named by William Dampier, in 1699. The area has a population of fewer than 1,000 people and a coastline of over 1,500 km. The half-dozen small communities making up this population occupy less than 1% of the total area.</German>
+		<Italian>[TAB]Shark Bay is a World Heritage Site in the Gascoyne region of Western Australia. It is an area centred approximately 800 km north of Perth, on the westernmost point of Australia. An expedition led by Dirk Hartog happened upon the area in 1616, becoming the second group of Europeans known to have visited Australia. Shark Bay was named by William Dampier, in 1699. The area has a population of fewer than 1,000 people and a coastline of over 1,500 km. The half-dozen small communities making up this population occupy less than 1% of the total area.</Italian>
+		<Spanish>[TAB]Shark Bay is a World Heritage Site in the Gascoyne region of Western Australia. It is an area centred approximately 800 km north of Perth, on the westernmost point of Australia. An expedition led by Dirk Hartog happened upon the area in 1616, becoming the second group of Europeans known to have visited Australia. Shark Bay was named by William Dampier, in 1699. The area has a population of fewer than 1,000 people and a coastline of over 1,500 km. The half-dozen small communities making up this population occupy less than 1% of the total area.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SUGARLOAF</Tag>
+		<English>Sugarloaf Mountain</English>
+		<French>Mont du Pain de Sucre</French>
+		<German>Zuckerhut</German>
+		<Italian>Pao de Acucar</Italian>
+		<Spanish>Pan de Azucar</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SUGARLOAF_PEDIA</Tag>
+		<English>[TAB]Sugarloaf Mountain, is a peak situated in Rio de Janeiro, Brazil, at the mouth of Guanabara Bay on a peninsula that sticks out into the Atlantic Ocean. Rising 396 m above the harbor, its name is said to refer to its resemblance to the traditional shape of concentrated refined loaf sugar.</English>
+		<French>[TAB]Le mont du Pain de Sucre ou simplement le Pain de Sucre (Pao de Acucar en portugais), est un pic situe dans la ville de Rio de Janeiro au Bresil, sur une peninsule a l'entree de la baie de Guanabara.-Wikipedia</French>
+		<German>[TAB]Der Zuckerhut ist ein 395 m hoher, steil aufragender Granitfelsen auf der Halbinsel Urca im Suden der Botafogo-Bucht, wo die Guanabara-Bucht auf den Atlantik trifft. Er gilt neben dem Corcovado mit seiner Christusstatue Cristo Redentor als das Wahrzeichen von Rio de Janeiro. Seinen Namen tragt er, da seine Form an einen Zuckerhut erinnert.</German>
+		<Italian>[TAB]Il Pan di Zucchero (in portoghese P&#227;o de A&#231;&#250;car) &#232; un colle situato presso Rio de Janeiro, in Brasile, su una penisola che si estende da un estremo della Baia Guanabara all'interno dell'Oceano Atlantico. Con la sua altezza di 396 m sul livello del mare, deve il suo nome secondo alcuni alla sua somiglianza con un dolce tradizionale. Secondo altre fonti il nome deriverebbe dal termine Pau-nh-acuqua che, nel linguaggio Tupi-Guarani parlato dagli indigeni Tamoios, significa "alta collina".</Italian>
+		<Spanish>[TAB]El Pan de Azucar es un morro situado en R&#237;o de Janeiro, Brasil, en la boca de la bahia de Guanabara sobre una pen&#237;nsula que sobresale en el oceano Atlantico. Tiene 396 metros de altura (1.299 pies)1 sobre el nivel del mar. Lo mas probable es que su nombre haga referencia a los "panes de azucar", forma tradicional en que se producia el azucar hasta finales del siglo XIX y que consisit&#237;a en largos conos de punta redondeada similares al morro, aunque algunos consideran que el nombre en realidad deriva de "Pau-nh-acuqua" que significa la alta colina en la lengua de Tupi-guarani, usada por los ind&#237;genas Tamoios.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PAMUKKALE</Tag>
+		<English>Pamukkale</English>
+		<French>Pamukkale</French>
+		<German>Pamukkale</German>
+		<Italian>Pamukkale</Italian>
+		<Spanish>Pamukkale</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PAMUKKALE_PEDIA</Tag>
+		<English>[TAB]Literally meaning 'cotton castle', these springs are the result of earthquakes. The waters are rich in minerals, particularly chalk, which has been deposited on the cliff over centuries, and now it looks like a white frozen waterfall, 2 700 m long and 160 m high. The hot springs are believed to have curative powers, healing arthritis and asthma. These properties were first noted by the Greeks and Romans who built the City of Hierapolis (Holy City) around the warm water springs below Pamukkale. The water is captured in a pool known since the days of the Romans as the "Sacred Pool."</English>
+		<French>[TAB]Littéralement "château de coton" sens, cette ressorts sont le résultat de tremblements de terre. Les eaux sont riches en minéraux, en particulier la craie, qui a ét?dépos?sur la falaise au fil des siècles, et maintenant il ressemble ?une cascade blanche congelée, 2 700 mètres de long et 160 mètres de haut. Le Hot Springs est cens?avoir des pouvoirs curatifs, la guérison d'arthrite et l'asthme. Ces propriétés ont ét?tout d'abord not?par les Grecs et les Romains qui ont construit la ville de Hiérapolis (ville sainte) autour des sources d'eau chaude ci-dessous Pamukkale. L'eau est captée dans une piscine connue depuis l'époque des Romains en tant que «bassin sacr?"</French>
+		<German>[TAB]Wörtlich als 'Cotton Castle', sind diese Federn das Ergebnis von Erdbeben. Die Gewässer sind reich an Mineralien, vor allem Kreide, die auf der Klippe über Jahrhunderte hinterlegt wurde, und jetzt sieht es aus wie ein weißer gefrorenen Wasserfall, 2 700 Meter lang und 160 Meter hoch. Die heißen Quellen wird geglaubt, um heilende Kräfte haben, die Heilung Arthritis und Asthma. Diese Eigenschaften wurden zuerst von den Griechen und Römern, die die Stadt von Hierapolis (Heilige Stadt) um die Thermalquellen unterhalb Pamukkale gebaut vermerkt. Das Wasser wird in einem Pool seit den Tagen der Römer bekannt als die eingefangen "Sacred Pool."</German>
+		<Italian>[TAB]Letteralmente 'castello di cotone' significato, questo molle sono il risultato di terremoti. Le acque sono ricche di minerali, in particolare gesso, che ?stata depositata sulla scogliera nel corso dei secoli, e ora sembra una cascata bianca congelata, 2 700 metri di lunghezza e 160 metri di altezza. La Hot Springs ?creduto di avere poteri curativi, guarire l'artrite e l'asma. Queste propriet?sono stati indicati dai Greci e dai Romani che costruirono la citt?di Hierapolis (Holy City) intorno alle sorgenti di acqua calda sotto Pamukkale. L'acqua viene catturato in una piscina nota fin dai tempi dei romani come il "Sacred Pool".</Italian>
+		<Spanish>[TAB]Literalmente, "castillo de algodón" que significa, esto resortes son el resultado de los terremotos. Las aguas son ricas en minerales, especialmente tiza, que ha sido depositado en el acantilado durante siglos, y ahora parece como una cascada blanca congelada, 2 700 metros de longitud y 160 metros. Las aguas termales se cree que tiene poderes curativos, sanando la artritis y el asma. Estas propiedades fueron observados primero por los griegos y los romanos que construyeron la ciudad de Hierápolis (ciudad santa) en torno a los manantiales de agua caliente por debajo de Pamukkale. El agua es captada en una piscina conocida desde los tiempos de los romanos como la "fuente sagrada."</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PRAVCICKA_BRANA</Tag>
+		<English>Pravcicka Brana</English>
+		<French>Pravcicka Brana</French>
+		<German>Pravcicka Brana</German>
+		<Italian>Pravcicka Brana</Italian>
+		<Spanish>Pravcicka Brana</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PRAVCICKA_BRANA_PEDIA</Tag>
+		<English>[TAB]The Pravcicka Brana is located in the Bohemian Switzerland in the Czech Republic. The narrow rock formation is the largest natural sandstone arch in Europe. With a span of 26.5 metres, an inside height of 16 metres, 8 metre maximum width and 3 metre arch it is one of the most striking natural monuments in the Elbe Sandstone Mountains.</English>
+		<French>[TAB]The Pravcicka Brana is located in the Bohemian Switzerland in the Czech Republic. The narrow rock formation is the largest natural sandstone arch in Europe. With a span of 26.5 metres, an inside height of 16 metres, 8 metre maximum width and 3 metre arch it is one of the most striking natural monuments in the Elbe Sandstone Mountains.</French>
+		<German>[TAB]The Pravcicka Brana is located in the Bohemian Switzerland in the Czech Republic. The narrow rock formation is the largest natural sandstone arch in Europe. With a span of 26.5 metres, an inside height of 16 metres, 8 metre maximum width and 3 metre arch it is one of the most striking natural monuments in the Elbe Sandstone Mountains.</German>
+		<Italian>[TAB]The Pravcicka Brana is located in the Bohemian Switzerland in the Czech Republic. The narrow rock formation is the largest natural sandstone arch in Europe. With a span of 26.5 metres, an inside height of 16 metres, 8 metre maximum width and 3 metre arch it is one of the most striking natural monuments in the Elbe Sandstone Mountains.</Italian>
+		<Spanish>[TAB]The Pravcicka Brana is located in the Bohemian Switzerland in the Czech Republic. The narrow rock formation is the largest natural sandstone arch in Europe. With a span of 26.5 metres, an inside height of 16 metres, 8 metre maximum width and 3 metre arch it is one of the most striking natural monuments in the Elbe Sandstone Mountains.</Spanish>
+		</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ULURU</Tag>
+		<English>Uluru</English>
+		<French>Uluru</French>
+		<German>Uluru</German>
+		<Italian>Uluru</Italian>
+		<Spanish>Uluru</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ULURU_PEDIA</Tag>
+		<English>[TAB]Uluru, also known as Ayers Rock, is a large sandstone rock formation in the southern part of the Northern Territory, central Australia. It lies 335 km (208 mi) south west of the nearest large town, Alice Springs; 450 km (280 mi) by road. Kata Tjuta and Uluru are the two major features of the Uluru-Kata Tjuta National Park. Uluru is sacred to the Anangu, the Aboriginal people of the area. The area around the formation is home to a plethora of springs, waterholes, rock caves and ancient paintings.</English>
+		<French>[TAB]Uluru, aussi connu sous le nom d'Ayers Rock, est un inselberg en gr&#232;s situ&#233;e dans le Territoire du Nord, au centre de l'&#238;le principale de l'Australie. Il s'&#233;l&#232;ve &#224; 348 m&#232;tres au-dessus de la plaine. C'est un lieu sacr&#233; pour les peuples aborig&#232;nes Pitjantjatjara et Yankunytjatjara, &#224; la base duquel ils pratiquent parfois des rituels et r&#233;alisent des peintures rupestres d'une grande importance culturelle.</French>
+		<German>[TAB]Der Uluru, auch Ayers Rock, ist ein an der Oberfl&#228;che befindlicher Teil einer gro&#223;en unterirdischen Gesteinsschicht in der zentralaustralischen W&#252;ste im Northern Territory. Er befindet sich in einem 170.000 km?gro&#223;en Sedimentbecken, dem Amadeus-Becken. Der Ulu?u wird von zahlreichen Touristen aufgesucht und um ihn ranken mythische Legenden der Aborigines, dass alle Traumzeitreisen dort enden bzw. dorthinf&#252;hren.</German>
+		<Italian>[TAB]Uluru (chiamato in inglese Ayers Rock) &#232; il pi&#249; imponente massiccio roccioso dell'outback australiano. Circondato dalla superficie completamente piana del bush, Uluru &#232; visibile da decine di chilometri di distanza ed &#232; celebre per la sua intensa colorazione rossa, che muta in maniera spettacolare (dall'ocra, all'oro, al bronzo, al viola) in funzione dell'ora del giorno e della stagione; caratteristiche che ne fanno una delle icone dell'Australia. La superficie, che da lontano appare quasi completamente liscia, rivela avvicinandosi molte sorgenti, pozze, caverne, peculiari fenomeni erosivi e antichi dipinti.</Italian>
+		<Spanish>[TAB]Uluru es una formaci&#243;n rocosa compuesta por arenisca que se encuentra en el centro de Australia, en el Territorio del Norte.-Wikipedia</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VICTORIA_FALLS</Tag>
+		<English>Victoria Falls</English>
+		<French>Chutes Victoria</French>
+		<German>Victoriafälle</German>
+		<Italian>Cascate Vittoria</Italian>
+		<Spanish>Cataratas Victoria</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VICTORIA_FALLS_PEDIA</Tag>
+		<English>[TAB]The Victoria Falls or Mosi-oa-Tunya is a waterfall located in southern Africa on the Zambezi River between the countries of Zambia and Zimbabwe. While it is neither the highest nor the widest waterfall in the world, it is claimed to be the largest. This claim is based on a width of 1,708 m and height of 108 m, forming the largest sheet of falling water in the world. The falls' maximum flow rate compares well with that of other major waterfalls.</English>
+		<French>[TAB]Les chutes Victoria sont l'une des plus spectaculaires chutes d'eau du monde. Elles sont situées sur le fleuve Zambèze, qui constitue ?cet endroit la frontière entre la Zambie, ?proximit?de la ville de Livingstone, et le Zimbabwe. Le fleuve se jette dans la cataracte sur environ 1 700 mètres de largeur, et une hauteur qui peut atteindre un maximum de 108 mètres. Elles donnent un spectacle particulièrement remarquable, par leur disposition particulière - elles se jettent dans une longue faille du plateau, pour s'échapper par un étroit canyon. Elles peuvent ainsi être vues de face ?une distance d'une centaine de mètres seulement.</French>
+		<German>[TAB]Die Victoriafälle sind ein Wasserfall des Sambesi an der Grenze zwischen Simbabwe und Sambia, zwischen den Grenzstädten Victoria Falls und Livingstone.</German>
+		<Italian>[TAB]Le Cascate Vittoria sono tra le cascate pi?spettacolari del mondo. Si trovano lungo il corso del fiume Zambesi (o Zambezi), che in questo punto demarca il confine geografico e politico tra lo Zambia e lo Zimbabwe. Il fronte delle cascate ?molto lungo, pi?di un chilometro e mezzo, mentre la loro altezza media ?di 128 metri.[NEWLINE][TAB]La loro spettacolarit??dovuta alla geografia particolare del luogo nel quale sorgono, una gola profonda e stretta, che permette quindi di ammirare tutto il fronte della cascata dall'altra sponda, esattamente davanti al salto.</Italian>
+		<Spanish>[TAB]Las cataratas Victoria, constituyen un salto de agua del río Zambeze situado en la frontera de Zambia y Zimbabue. Están ubicadas en el distrito de Livingstone, en la Provincia del Sur, de Zambia y en el distrito de Hwange, en la región de Mashonalandia Occidental, de Zimbabue. Sobre ellas se encuentra el puente de las Cataratas Victoria, un antiguo arco de acero terminado en 1905.</Spanish>
+	</TEXT>
+</Civ4GameText>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Civ4BuildingClassInfos xmlns="x-schema:NaturalWonder_CIV4BuildingsSchema.xml">
+	<BuildingClassInfos>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_AURORA</Type>
+			<Description>TXT_KEY_BUILDING_AURORA</Description>
+			<DefaultBuilding>BUILDING_AURORA</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+	</BuildingClassInfos>
+</Civ4BuildingClassInfos>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Civ4ArtDefines xmlns="x-schema:NaturalWonder_CIV4ArtDefinesSchema.xml">
+	<MovieArtInfos>
+		<MovieArtInfo>
+			<Type>ART_DEF_MOVIE_AURORA</Type>
+			<Path>Art/Aurora/Aurora.bik</Path>
+		</MovieArtInfo>
+	</MovieArtInfos>
+</Civ4ArtDefines>

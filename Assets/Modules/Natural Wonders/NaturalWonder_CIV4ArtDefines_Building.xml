@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Civ4ArtDefines xmlns="x-schema:NaturalWonder_CIV4ArtDefinesSchema.xml">
+	<BuildingArtInfos>
+		<BuildingArtInfo>
+            <Type>ART_DEF_BUILDING_AURORA</Type>
+            <LSystem>LSYSTEM_3x3</LSystem>
+            <bAnimated>0</bAnimated>
+            <CityTexture>,Art/Aurora/button.dds</CityTexture>
+            <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+            <fScale>0.5</fScale>
+            <fInterfaceScale>0.5</fInterfaceScale>
+            <NIF>Art/Aurora/aurora.NIF</NIF>
+            <KFM/>
+            <Button>,Art/Aurora/button.dds</Button>
+		</BuildingArtInfo>
+	</BuildingArtInfos>
+</Civ4ArtDefines>

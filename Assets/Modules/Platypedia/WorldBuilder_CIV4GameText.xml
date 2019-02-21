@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_WB_SHOW_HIDDEN</Tag>
+		<English>Show Hidden Options</English>
+		<French>Show Hidden Options</French>
+		<German>Show Hidden Options</German>
+		<Italian>Show Hidden Options</Italian>
+		<Spanish>Show Hidden Options</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_ANARCHY</Tag>
+		<English>Anarchy: %d1</English>
+		<French>Anarchie: %d1</French>
+		<German>Anarchie: %d1</German>
+		<Italian>Anarchia: %d1</Italian>
+		<Spanish>Anarquía: %d1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MAP_CENTERING</Tag>
+		<English>Map Centering</English>
+		<French>Centrer la carte</French>
+		<German>Weltkarte zentriert</German>
+		<Italian>Centra la mappa</Italian>
+		<Spanish>Centrado del mapa</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_GOLD_TRADING</Tag>
+		<English>Gold Trading</English>
+		<French>&#201;change d'or</French>
+		<German>Goldhandel</German>
+		<Italian>Commercio di oro</Italian>
+		<Spanish>Comercio con oro</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_TECH_TRADING</Tag>
+		<English>Tech Trading</English>
+		<French>Commerce de technologies</French>
+		<German>Techtausch</German>
+		<Italian>Commercio di tecnologie</Italian>
+		<Spanish>Comercio con tecnología</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_MAP_TRADING</Tag>
+		<English>Map Trading</English>
+		<French>&#201;change de cartes</French>
+		<German>Kartentausch</German>
+		<Italian>Commercio di mappe</Italian>
+		<Spanish>Comercio con mapas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_VASSAL_TRADING</Tag>
+		<English>Vassal Trading</English>
+		<French>Permet la vassalit&#233;</French>
+		<German>Vasallen</German>
+		<Italian>Abilita gli stati vassalli</Italian>
+		<Spanish>Estados vasallos</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_WATER_WORK</Tag>
+		<English>Water Work</English>
+		<French>Travailler les cases d'eau</French>
+		<German>Wasserfelder bewirtschaften</German>
+		<Italian>Raggio d'avvistamento sull'acqua aumentato</Italian>
+		<Spanish>Visibilidad adicional sobre el agua</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_EXTRA_WATER_SIGHT</Tag>
+		<English>Extra Water Sight</English>
+		<French>Vision suppl&#233;mentaire sur eau</French>
+		<German>Zusätzliche Sicht über Wasser</German>
+		<Italian>Extra Water Sight</Italian>
+		<Spanish>Extra Water Sight</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_BRIDGE_BUILDING</Tag>
+		<English>Bridge Building</English>
+		<French>Construction de ponts</French>
+		<German>Brückenbau</German>
+		<Italian>Costruzione di ponti</Italian>
+		<Spanish>Construcción de puentes</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WB_IGNORE_IRRIGATION</Tag>
+		<English>Ignore Irrigation</English>
+		<French>Plus besoin d'irrigation</French>
+		<German>Bauernhöfe ohne Bewässerung</German>
+		<Italian>Ignora l'irrigazione</Italian>
+		<Spanish>Ignora el riego</Spanish>
+	</TEXT>
+</Civ4GameText>
