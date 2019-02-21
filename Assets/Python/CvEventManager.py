@@ -16,6 +16,10 @@ import sys
 import CvWorldBuilderScreen
 import CvAdvisorUtils
 
+## Natural Wonders ##
+import NaturalWonders
+## Natural Wonders ##
+
 gc = CyGlobalContext()
 localText = CyTranslator()
 
@@ -329,10 +333,20 @@ class CvEventManager:
 						city = CyMap().plot(px, py).getPlotCity()
 						if (city != None):
 							CyInterface().selectCity(city, true)
+							# don't return 1 unless you want the input consumed
 							return 1
-					# don't return 1 unless you want the input consumed
-
-
+				
+				elif (theKey == int(InputTypes.KB_N)):
+					if ( self.bShift ):
+						NaturalWonders.NaturalWonders().showNaturalWonders(True)
+						return 1
+				
+## Show Natural Wonders with CTRL F ##
+			if theKey == int(InputTypes.KB_F) and self.bCtrl:
+				NaturalWonders.NaturalWonders().showNaturalWonders(False)
+				return 1
+## Show Natural Wonders with CTRL F ##
+											
 		return 0
 
 	def onModNetMessage(self, argsList):
@@ -417,7 +431,11 @@ class CvEventManager:
 	def onEndGameTurn(self, argsList):
 		'Called at the end of the end of each turn'
 		iGameTurn = argsList[0]
-
+## Natural Wonders Start ##
+		if CyGame().getElapsedGameTurns() == 0:
+			NaturalWonders.NaturalWonders().placeNaturalWonders()
+## Natural Wonders End ##
+		
 	def onBeginPlayerTurn(self, argsList):
 		'Called at the beginning of a players turn'
 		iGameTurn, iPlayer = argsList
@@ -526,6 +544,9 @@ class CvEventManager:
 		'Plot Revealed'
 		pPlot = argsList[0]
 		iTeam = argsList[1]
+## Natural Wonders Start ##
+		NaturalWonders.NaturalWonders().checkReveal(pPlot, iTeam)
+## Natural Wonders End ##
 
 	def onPlotFeatureRemoved(self, argsList):
 		'Plot Revealed'
@@ -725,12 +746,17 @@ class CvEventManager:
 			return
 # TAC - koma13 - END
 		CvUtil.pyPrint('City Built Event: %s' %(city.getName()))
-
+## Natural Wonders Start ##
+		NaturalWonders.NaturalWonders().placeWonderBuilding(city)
+## Natural Wonders End ##
+		
 	def onCityRazed(self, argsList):
 		'City Razed'
 		city, iPlayer = argsList
 		iOwner = city.findHighestCulture()
-
+## Natural Wonders Start ##
+		NaturalWonders.NaturalWonders().findNewCity(city)
+## Natural Wonders End ##
 		CvUtil.pyPrint("City Razed Event: %s" %(city.getName(),))
 
 	def onCityAcquired(self, argsList):
