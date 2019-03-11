@@ -11001,7 +11001,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 	{
 		if (iChange != 0)
 		{
-			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmountSecure(eProfession) && (pCity->getPopulation() > 0 || GC.getDefineINT("CONSUME_EQUIPMENT_ON_FOUND") != 0)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmountSecure(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
 				for (int i = 0; i < NUM_YIELD_TYPES; i++)
 				{

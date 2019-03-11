@@ -9005,13 +9005,6 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 		return;
 	}
 	
-	if ((getPopulation() == 0) && (GC.getDefineINT("CONSUME_EQUIPMENT_ON_FOUND") != 0))
-	{
-		// Pioneers consume tools when founding
-		// must do this before joining the city
-		pUnit->setProfession(eProfession); 
-	}
-
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
 	FAssert(pTransferUnit == pUnit);
 
