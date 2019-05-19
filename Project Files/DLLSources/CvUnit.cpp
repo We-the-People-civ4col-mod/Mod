@@ -923,7 +923,7 @@ void CvUnit::NotifyEntity(MissionTypes eMission)
 /**                                                                       **/
 /** float CvUnit::NBMOD_GetShipStrength() const                           **/
 /**                                                                       **/
-/** Ermittelt die Schiffst‰rke der Einheit.                               **/
+/** Ermittelt die Schiffst√§rke der Einheit.                               **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -11902,10 +11902,6 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 		{
 			return false;
 		}
-		if (kPromotion.getWithdrawalChange() != 0)
-		{
-			return false;
-		}
 		if (kPromotion.isBlitz())
 		{
 			return false;
@@ -11935,10 +11931,6 @@ bool CvUnit::isPromotionValid(PromotionTypes ePromotion) const
 			{
 				return false;
 			}
-		}
-		if (kPromotion.getWithdrawalChange() != 0)
-		{
-			return false;
 		}
 	}
 
