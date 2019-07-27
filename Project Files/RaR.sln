@@ -9,6 +9,7 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		1 plot assert|Win32 = 1 plot assert|Win32
 		1 plot debug|Win32 = 1 plot debug|Win32
+		1 plot release|Win32 = 1 plot release|Win32
 		1 plot|Win32 = 1 plot|Win32
 		Assert|Win32 = Assert|Win32
 		Assert-fast|Win32 = Assert-fast|Win32
@@ -22,6 +23,8 @@ Global
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot assert|Win32.Build.0 = 1 plot assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot debug|Win32.ActiveCfg = 1 plot debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot debug|Win32.Build.0 = 1 plot debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot release|Win32.ActiveCfg = 1 plot release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot release|Win32.Build.0 = 1 plot release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.ActiveCfg = 1 plot debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.1 plot|Win32.Build.0 = 1 plot debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Win32.ActiveCfg = Assert|Win32
