@@ -232,7 +232,7 @@ void BoolArray::read(CvXMLLoadUtility* pXML, const char* sTag)
 	pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
 	for (int i = 0; i < this->m_iLength; i++)
 	{
-		this->set(iArray[i], i);
+		this->set(static_cast<bool>(iArray[i]), i);
 	}
 	SAFE_DELETE_ARRAY(iArray);
 	this->hasContent(); // release array if possible

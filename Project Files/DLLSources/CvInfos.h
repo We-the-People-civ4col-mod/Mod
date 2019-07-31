@@ -4672,11 +4672,15 @@ public:
 	inline const InfoArray& getAllowedYields               () const { return m_info_AllowYields       ; }
 
 	// city
-	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket; }
+	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }
 
 	// growth
-	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange; }
+	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange  ; }
 
+	// unit
+	inline const InfoArray& getFreePromotions              () const { return m_info_FreePromotions    ; }
+	inline const InfoArray& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
+	inline const InfoArray& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
 
 	bool read(CvXMLLoadUtility* pXML);
 
@@ -4699,6 +4703,11 @@ protected:
 
 	// growth
 	int m_iNumUnitsOnDockChange;
+
+	// unit
+	InfoArrayMod m_info_FreePromotions;
+	InfoArrayMod m_info_FreePromotionsForProfessions;
+	InfoArrayMod m_info_FreePromotionsForUnitCombats;
 };
 
 

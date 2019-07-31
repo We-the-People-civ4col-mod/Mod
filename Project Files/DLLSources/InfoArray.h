@@ -102,6 +102,9 @@ public:
 		return getInternal(iIndex, iTokenIndex);
 	}
 
+	// adds UnitClass->Unit and BuildingClass->Building conversion. Otherwise the same as without the civinfo argument 
+	int getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const;
+
 #include "InfoArrayGet.h"
 
 	// needed by python interface. Do not use this in the DLL as it lacks type checking

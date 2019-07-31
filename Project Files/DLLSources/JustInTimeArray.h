@@ -207,10 +207,10 @@ public:
 	T getAccumulative(int iIndex, int iSubIndex) const;
 
 	// returns true if an allow change value (a number goes 0->1 or 1->0)
-	bool addCache(int iChange, const InfoArray* pIarray);
+	bool addCache(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo = NULL);
 
 	// adds numbers to index and all higher indexes. Used for bonus like +1 if number is 3 or higher
-	void addCacheAccumulative(int iChange, const InfoArray* pIarray);
+	void addCacheAccumulative(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo = NULL);
 
 	// set all variables to a specific value (reset frees the memory and is better than assigning 0)
 	void assign(T iNewValue, int iIndex = -1, int iSubIndex = -1);
@@ -227,6 +227,16 @@ public:
 	JITarrayTypes getSubType() const
 	{
 		return static_cast<JITarrayTypes>(m_iSubType);
+	}
+#else
+	JITarrayTypes getType() const
+	{
+		return NO_JIT_ARRAY_TYPE;
+	}
+
+	JITarrayTypes getSubType() const
+	{
+		return NO_JIT_ARRAY_TYPE;
 	}
 #endif
 

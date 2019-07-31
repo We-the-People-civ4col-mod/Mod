@@ -618,6 +618,9 @@ public:
 	void setHasRealPromotion(PromotionTypes eIndex, bool bValue);
 	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 	void setFreePromotionCount(PromotionTypes eIndex, int iValue);
+	void resetPromotions();
+	void setPromotions(PromotionTypes ePromotion = NO_PROMOTION);
+
 	int getFreePromotionCount(PromotionTypes eIndex) const;
 
 	int getSubUnitCount() const;
@@ -882,7 +885,13 @@ protected:
 // unit yield cache - end - Nightinggale
 	int getCargoValue(Port port) const;
 	int canCrossCoastOnly() const;
+
+	BoolArray m_ba_isPromotionApplied;
 };
 
+inline bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
+{
+	return m_ba_isPromotionApplied.get(eIndex);
+}
 
 #endif

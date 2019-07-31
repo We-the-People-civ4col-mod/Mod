@@ -70,5 +70,11 @@ public:
 	void Read (FDataStreamBase* pStream);
 	void Write(FDataStreamBase* pStream);
 	void read(CvXMLLoadUtility* pXML, const char* sTag);
+
+private:
+	// should never be called. Protects against silent bugs from swapping arguments
+	// marked private to throw the error at the caller rather than this header file (if possible)
+	// Functions intentionally lacks an implementation.
+	void set(int bValue, int iIndex);
 };
 #endif

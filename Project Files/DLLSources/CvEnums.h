@@ -1614,6 +1614,7 @@ enum DllExport ControlTypes
 enum DllExport PromotionTypes
 {
 	NO_PROMOTION = -1,
+	FIRST_PROMOTION = 0,
 };
 
 enum DllExport HurryTypes

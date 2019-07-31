@@ -1115,6 +1115,12 @@ public:
 
 	inline unsigned int getNumUnitsOnDock()                        const { return m_iCacheNumUnitsOnDock > 0 ? m_iCacheNumUnitsOnDock : 1; } // return 0 or negative crash the game
 
+
+	// unit
+	bool hasFreePromotion(PromotionTypes ePromotion) const;
+	bool hasFreePromotion(PromotionTypes ePromotion, ProfessionTypes eProfession) const;
+	bool hasFreePromotion(PromotionTypes ePromotion, UnitCombatTypes eUnitCombat) const;
+
 private:
 	// Allow
 	BonusArray          <char> m_ja_iCacheAllowsBonuses;
@@ -1139,6 +1145,11 @@ private:
 	// Growth
 	int    m_iCacheNumUnitsOnDock;
 
+	// Units
+	PromotionArray      <char> m_ja_iCacheFreePromotions;
+	CacheArray2D        <char> m_ja_iCacheFreePromotionsForProfessions;
+	CacheArray2D        <char> m_ja_iCacheFreePromotionsForUnitClasses;
+
 	void resetCivEffectCache();
 	void rebuildCivEffectCache();
 	void applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool bForceUpdateCache);
@@ -1155,6 +1166,21 @@ inline void CvPlayer::applyCivEffect(CivEffectTypes eCivEffect, int iChange)
 	{
 		applyCivEffect(GC.getCivEffectInfo(eCivEffect), iChange, false);
 	}
+}
+
+inline bool CvPlayer::hasFreePromotion(PromotionTypes ePromotion) const
+{
+	return m_ja_iCacheFreePromotions.get(ePromotion) > 0; 
+}
+
+inline bool CvPlayer::hasFreePromotion(PromotionTypes ePromotion, ProfessionTypes eProfession) const
+{
+	return m_ja_iCacheFreePromotionsForProfessions.get(eProfession, ePromotion) > 0;
+}
+
+inline bool CvPlayer::hasFreePromotion(PromotionTypes ePromotion, UnitCombatTypes eUnitCombat) const
+{
+	return m_ja_iCacheFreePromotionsForUnitClasses.get(eUnitCombat, ePromotion) > 0;
 }
 
 // cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

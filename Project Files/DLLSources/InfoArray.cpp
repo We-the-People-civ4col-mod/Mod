@@ -169,6 +169,34 @@ bool InfoArray::areIndexesValid(int iMax, int iDimention, int iMin) const
 	return true;
 }
 
+int InfoArray::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const
+{
+	if (eType == JIT_ARRAY_BUILDING && getType(iTokenIndex) == JIT_ARRAY_BUILDING_CLASS)
+	{
+		FAssertMsg(pCivInfo != NULL, "InfoArray::getWithType called without pCivInfo argument when in index conversion mode");
+		int iValue = getInternal(iIndex, iTokenIndex);
+		if (iValue >= 0 && iValue < GC.getNumBuildingClassInfos())
+		{
+			return pCivInfo->getCivilizationBuildings(iValue);
+		}
+	}
+	else if (eType == JIT_ARRAY_UNIT && getType(iTokenIndex) == JIT_ARRAY_UNIT_CLASS)
+	{
+		FAssertMsg(pCivInfo != NULL, "InfoArray::getWithType called without pCivInfo argument when in index conversion mode");
+		int iValue = getInternal(iIndex, iTokenIndex);
+		if (iValue >= 0 && iValue < GC.getNumUnitClassInfos())
+		{
+			return pCivInfo->getCivilizationUnits(iValue);
+		}
+	}
+	else
+	{
+		return getWithType(eType, iIndex, iTokenIndex);
+	}
+
+	return -1;
+}
+
 ///
 /// operator overload
 ///

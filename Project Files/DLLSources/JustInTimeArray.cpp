@@ -193,37 +193,15 @@ bool JustInTimeArray<T>::addCache(int iChange, const InfoArray& kIarray, const C
 	FAssert(kIarray.getDimentions() <= 2);
 	FAssert(iChange == 1 || iChange == -1);
 
-	JITarrayTypes eAppliedType = kIarray.getType(0);
-
-	/// make sure the types of arrays match
-	FAssertMsg(eAppliedType == getType()
-		|| (eAppliedType == JIT_ARRAY_BUILDING_CLASS && getType() == JIT_ARRAY_BUILDING)
-		|| (eAppliedType == JIT_ARRAY_UNIT_CLASS && getType() == JIT_ARRAY_UNIT)
-		, "JustInTimeArray<T>::addCache called with type mismatch");
-
-	FAssertMsg(eAppliedType == getType() || pCivInfo != NULL, "JustInTimeArray<T>::addCache called without pCivInfo argument when in index conversion mode");
-
 	for (int i = 0; i < iLength; i++)
 	{
-		int iIndex = kIarray.getWithType(eAppliedType, i, 0);
+		int iIndex = kIarray.getWithTypeWithConversion(getType(), i, 0, pCivInfo);
 		FAssert(iIndex >= 0);
 
-		// convert index if class needs to be converted to something the player can use
-		if (eAppliedType != getType())
-		{
-			if (eAppliedType == JIT_ARRAY_BUILDING_CLASS)
-			{
-				iIndex = pCivInfo->getCivilizationBuildings(iIndex);
-			}
-			else if (eAppliedType == JIT_ARRAY_UNIT_CLASS)
-			{
-				iIndex = pCivInfo->getCivilizationUnits(iIndex);
-			}
-		}
 		int iValue = 1;
 		if (b2D)
 		{
-			iValue = kIarray.getWithType(kIarray.getType(1), i, 1);
+			iValue = kIarray.getWithTypeWithConversion(kIarray.getType(1), i, 1, pCivInfo);
 		}
 		FAssert(iValue != 0);
 		FAssert(iIndex < this->m_iLength);
@@ -887,25 +865,25 @@ T CacheArray2D<T>::getAccumulative(int iIndex, int iSubIndex) const
 
 
 template<class T>
-bool CacheArray2D<T>::addCache(int iChange, const InfoArray* pIarray)
+bool CacheArray2D<T>::addCache(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo)
 {
 	FAssert(iChange == 1 || iChange == -1);
-	FAssert(pIarray->getDimentions() == 3 || (pIarray->getDimentions() == 2 && pIarray->isBool()));
+	FAssert(kIarray.getDimentions() == 3 || (kIarray.getDimentions() == 2 && kIarray.isBool()));
 
 	bool bChanged = false;
 
-	for (int i = 0; i < pIarray->getLength(); i++)
+	for (int i = 0; i < kIarray.getLength(); i++)
 	{
-		int iIndex = pIarray->getWithType(getType(), i, 0);
+		int iIndex = kIarray.getWithTypeWithConversion(getType(), i, 0, pCivInfo);
 		if (iIndex >= 0 && iIndex < m_iLength)
 		{
-			int iSubIndex = pIarray->getWithType(getSubType(), i, 1);
+			int iSubIndex = kIarray.getWithTypeWithConversion(getSubType(), i, 1, pCivInfo);
 			if (iSubIndex >= 0 && iIndex < m_iSubLength)
 			{
 				allocate();
 				int iArrayIndex = (iIndex * m_iLength) + iSubIndex;
 				bool bBefore = m_aArray[iArrayIndex] > 0;
-				T tModifier = (pIarray->getDimentions() == 3 ? pIarray->getWithType(pIarray->getType(2), i, 2) : 1) * iChange;
+				T tModifier = (kIarray.getDimentions() == 3 ? kIarray.getWithTypeWithConversion(kIarray.getType(2), i, 2, pCivInfo) : 1) * iChange;
 				m_aArray[iArrayIndex] += tModifier;
 				bool bAfter = m_aArray[iArrayIndex] > 0;
 				bChanged |= !bBefore != !bAfter;
@@ -917,17 +895,17 @@ bool CacheArray2D<T>::addCache(int iChange, const InfoArray* pIarray)
 }
 
 template<class T>
-void CacheArray2D<T>::addCacheAccumulative(int iChange, const InfoArray* pIarray)
+void CacheArray2D<T>::addCacheAccumulative(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo)
 {
 	FAssert(iChange == 1 || iChange == -1);
-	FAssert(pIarray->getDimentions() == 2);
+	FAssert(kIarray.getDimentions() == 2);
 
-	for (int i = 0; i < pIarray->getLength(); i++)
+	for (int i = 0; i < kIarray.getLength(); i++)
 	{
-		int iIndex = pIarray->getWithType(getType(), i, 0);
+		int iIndex = kIarray.getWithTypeWithConversion(getType(), i, 0, pCivInfo);
 		if (iIndex >= 0 && iIndex < m_iLength)
 		{
-			int iSubIndex = pIarray->getWithType(getSubType(), i, 1);
+			int iSubIndex = kIarray.getWithTypeWithConversion(getSubType(), i, 1, pCivInfo);
 			if (iSubIndex >= 0 && iIndex < m_iSubLength)
 			{
 				allocate();
@@ -990,4 +968,4 @@ template class JustInTimeArray <char>;
 // compile 2D JIT arrays
 
 // compile 2D cache arrays
-
+template class CacheArray2D <char>;

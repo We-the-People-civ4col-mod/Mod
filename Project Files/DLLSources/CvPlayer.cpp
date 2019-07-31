@@ -51,6 +51,8 @@ CvPlayer::CvPlayer()
 	, m_ja_iCacheAllowsUnits(1)
 	, m_ja_iCacheAllowsYields(1)
 	, m_ba_CacheAllowBuild(JIT_ARRAY_BUILD, true)
+	, m_ja_iCacheFreePromotionsForProfessions(JIT_ARRAY_PROFESSION, JIT_ARRAY_PROMOTION)
+	, m_ja_iCacheFreePromotionsForUnitClasses(JIT_ARRAY_UNIT_CLASS, JIT_ARRAY_PROMOTION)
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
@@ -22768,23 +22770,29 @@ void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool
 	bool bUpdateBuilds          = bForceUpdateCache;
 	bool bUpdateBuildings       = bForceUpdateCache;
 	bool bUpdateImmigrants      = bForceUpdateCache;
+	bool bUpdatePromotions      = bForceUpdateCache;
 	bool bUpdateUnits           = bForceUpdateCache;
 
-	m_ja_iCacheAllowsBonuses                                 .addCache(iChange, kCivEffect.getAllowedBonuses           (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsBuilds             .addCache(iChange, kCivEffect.getAllowedBuilds            (), pCivInfo);
-	bUpdateBuildings  |= m_ja_iCacheAllowsBuildings          .addCache(iChange, kCivEffect.getAllowedBuildingClasses   (), pCivInfo);
-	m_ja_iCacheAllowsCivics                                  .addCache(iChange, kCivEffect.getAllowedCivics            (), pCivInfo);
-	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants         .addCache(iChange, kCivEffect.getAllowedImmigrants        (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements       .addCache(iChange, kCivEffect.getAllowedImprovements      (), pCivInfo);
-	m_ja_iCacheAllowsProfessions                             .addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
-	m_ja_iCacheAllowsPromotions                              .addCache(iChange, kCivEffect.getAllowedPromotions        (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsRoutes             .addCache(iChange, kCivEffect.getAllowedRoutes            (), pCivInfo);
-	bUpdateUnits      |= m_ja_iCacheAllowsUnits              .addCache(iChange, kCivEffect.getAllowedUnitClasses       (), pCivInfo);
-	m_ja_iCacheAllowsYields                                  .addCache(iChange, kCivEffect.getAllowedYields            (), pCivInfo);
+	m_ja_iCacheAllowsBonuses                                    .addCache(iChange, kCivEffect.getAllowedBonuses           (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsBuilds                .addCache(iChange, kCivEffect.getAllowedBuilds            (), pCivInfo);
+	bUpdateBuildings  |= m_ja_iCacheAllowsBuildings             .addCache(iChange, kCivEffect.getAllowedBuildingClasses   (), pCivInfo);
+	m_ja_iCacheAllowsCivics                                     .addCache(iChange, kCivEffect.getAllowedCivics            (), pCivInfo);
+	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants            .addCache(iChange, kCivEffect.getAllowedImmigrants        (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements          .addCache(iChange, kCivEffect.getAllowedImprovements      (), pCivInfo);
+	bUpdatePromotions |= m_ja_iCacheAllowsProfessions           .addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
+	m_ja_iCacheAllowsPromotions                                 .addCache(iChange, kCivEffect.getAllowedPromotions        (), pCivInfo);
+	bUpdateBuilds     |= m_ja_iCacheAllowsRoutes                .addCache(iChange, kCivEffect.getAllowedRoutes            (), pCivInfo);
+	bUpdateUnits      |= m_ja_iCacheAllowsUnits                 .addCache(iChange, kCivEffect.getAllowedUnitClasses       (), pCivInfo);
+	m_ja_iCacheAllowsYields                                     .addCache(iChange, kCivEffect.getAllowedYields            (), pCivInfo);
 
 	m_iCacheCanUseDomesticMarket += iChange * kCivEffect.getCanUseDomesticMarket();
 
 	m_iCacheNumUnitsOnDock += iChange * kCivEffect.getNumUnitsOnDockChange();
+
+
+	bUpdatePromotions |= m_ja_iCacheFreePromotions              .addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
+	bUpdatePromotions |= m_ja_iCacheFreePromotionsForProfessions.addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
+	bUpdatePromotions |= m_ja_iCacheFreePromotionsForUnitClasses.addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
 
 	// The CivEffect has been applied. Now update secondary caches if needed
 
@@ -22877,6 +22885,10 @@ void CvPlayer::resetCivEffectCache()
 	m_iCacheCanUseDomesticMarket = 0;
 
 	m_iCacheNumUnitsOnDock = 0;
+
+	m_ja_iCacheFreePromotions.reset();
+	m_ja_iCacheFreePromotionsForProfessions.reset();
+	m_ja_iCacheFreePromotionsForUnitClasses.reset();
 }
 
 void CvPlayer::rebuildCivEffectCache()
