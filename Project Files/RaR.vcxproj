@@ -35,6 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
     <ClCompile Include="DLLSources\InfoCacheArray.cpp" />
     <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp" />
     <ClCompile Include="DLLSources\BoolArray.cpp" />
@@ -79,7 +80,6 @@
     <ClCompile Include="DLLSources\CvTalkingHeadMessage.cpp" />
     <ClCompile Include="DLLSources\CvTeam.cpp" />
     <ClCompile Include="DLLSources\CvTeamAI.cpp" />
-    <ClCompile Include="DLLSources\CvTextScreens.cpp" />
     <ClCompile Include="DLLSources\CvTradeRoute.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteGroup.cpp" />
     <ClCompile Include="DLLSources\CvUnit.cpp" />
@@ -155,6 +155,7 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DLLSources\CvPlayerCivEffect.h" />
     <ClInclude Include="DLLSources\EnumTypeCacheArray.h" />
     <ClInclude Include="DLLSources\InfoCacheArray.h" />
     <ClInclude Include="DLLSources\BoolArray.h" />

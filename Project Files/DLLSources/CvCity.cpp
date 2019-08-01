@@ -11559,7 +11559,7 @@ void CvCity::UpdateBuildingAffectedCache()
 	// CvPlot::hasYield cache - end - Nightinggale
 
 	m_iCacheMarketModifier = 0;
-	const CvPlayer &kPlayer = GET_PLAYER(getOwnerINLINE());
+	const CvPlayerAI &kPlayer = GET_PLAYER(getOwnerINLINE());
 	if (kPlayer.canUseDomesticMarket())
 	{
 		m_ja_iBuildingYieldDemands.reset();

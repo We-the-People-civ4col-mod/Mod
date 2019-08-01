@@ -12172,7 +12172,7 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 		return;
 	}
 
-	CvPlayer &kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlayerAI &kOwner = GET_PLAYER(getOwnerINLINE());
 
 	PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : FIRST_PROMOTION;
 	PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : static_cast<PromotionTypes>(GC.getNumPromotionInfos() - 1);

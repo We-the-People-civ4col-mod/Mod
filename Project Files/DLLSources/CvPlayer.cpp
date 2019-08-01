@@ -39,20 +39,6 @@
 // Public Functions...
 
 CvPlayer::CvPlayer()
-	: m_ja_iCacheAllowsBonuses(1)
-	, m_ja_iCacheAllowsBuilds(1)
-	, m_ja_iCacheAllowsBuildings(1)
-	, m_ja_iCacheAllowsCivics(1)
-	, m_ja_iCacheAllowsImmigrants(1)
-	, m_ja_iCacheAllowsImprovements(1)
-	, m_ja_iCacheAllowsProfessions(1)
-	, m_ja_iCacheAllowsPromotions(1)
-	, m_ja_iCacheAllowsRoutes(1)
-	, m_ja_iCacheAllowsUnits(1)
-	, m_ja_iCacheAllowsYields(1)
-	, m_ba_CacheAllowBuild(JIT_ARRAY_BUILD, true)
-	, m_ja_iCacheFreePromotionsForProfessions(JIT_ARRAY_PROFESSION, JIT_ARRAY_PROMOTION)
-	, m_ja_iCacheFreePromotionsForUnitClasses(JIT_ARRAY_UNIT_CLASS, JIT_ARRAY_PROMOTION)
 {
 	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
 	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
@@ -171,7 +157,7 @@ void CvPlayer::init(PlayerTypes eID)
 	reset(eID);
 
 	// set the CivEffect cache
-	rebuildCivEffectCache();
+	CivEffect()->rebuildCivEffectCache();
 
     /** NBMOD TAX **/
     m_iMaxTaxRate = GC.getHandicapInfo(getHandicapType()).NBMOD_GetInitMaxTaxRate();
@@ -921,7 +907,7 @@ void CvPlayer::initImmigration()
 {
 	FAssert(getParent() != NO_PLAYER);
 	m_aDocksNextUnits.clear();
-	m_aDocksNextUnits.reserve(this->getNumUnitsOnDock());
+	m_aDocksNextUnits.reserve(CivEffect()->getNumUnitsOnDock());
 	verifyImmigration();
 }
 
@@ -936,9 +922,9 @@ void CvPlayer::verifyImmigration()
 	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
 	{
 		UnitTypes eUnit = m_aDocksNextUnits[i];
-		if (eUnit != NO_UNIT && (!this->canUseUnit(eUnit) || !this->canUseImmigrant(eUnit)))
+		if (eUnit != NO_UNIT && (!CivEffect()->canUseUnit(eUnit) || !CivEffect()->canUseImmigrant(eUnit)))
 		{
-			if (eUnit != NO_UNIT && (!this->canUseUnit(eUnit) || !this->canUseImmigrant(eUnit)))
+			if (eUnit != NO_UNIT && (!CivEffect()->canUseUnit(eUnit) || !CivEffect()->canUseImmigrant(eUnit)))
 			{
 				m_aDocksNextUnits.erase(m_aDocksNextUnits.begin() + i);
 				--i; // compensate for ++i as next iteration needs to use the same value for i
@@ -946,16 +932,16 @@ void CvPlayer::verifyImmigration()
 		}
 	}
 
-	if (m_aDocksNextUnits.size() > this->getNumUnitsOnDock())
+	if (m_aDocksNextUnits.size() > CivEffect()->getNumUnitsOnDock())
 	{
 		// Too many units on the dock.
 		// Remove from the right to match the number of units requested.
-		m_aDocksNextUnits.resize(this->getNumUnitsOnDock());
+		m_aDocksNextUnits.resize(CivEffect()->getNumUnitsOnDock());
 	}
 	else
 	{
 		// Add units until the requested amount of units have appeared.
-		while (m_aDocksNextUnits.size() < this->getNumUnitsOnDock())
+		while (m_aDocksNextUnits.size() < CivEffect()->getNumUnitsOnDock())
 		{
 			m_aDocksNextUnits.push_back(pickBestImmigrant());
 		}
@@ -3722,7 +3708,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -3757,7 +3743,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -4438,7 +4424,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if (kPlayer.getGold() >= priceStealingImmigrant)
 			{
 				// get random Unit from other European, we steal from
-				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant");
+				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
 				UnitTypes eBestUnit = victimPlayer.getDocksNextUnit(randomUnitSelectOnDock);
 				if (NO_UNIT != eBestUnit)
 				{
@@ -5501,7 +5487,7 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	{
 		for (int gi = 0; gi < iGoodyImmigrants; gi++)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
@@ -6474,7 +6460,7 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 {
 	CvFatherInfo& kFatherInfo = GC.getFatherInfo(eFather);
 
-	applyCivEffect(kFatherInfo.getCivEffect());
+	CivEffect()->applyCivEffect(kFatherInfo.getCivEffect());
 
 	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
 	{
@@ -6569,7 +6555,7 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 
 	// CivEffect check
 	// Should be first because of lazy checking optimization. It's just a BoolArray lookup, hence very fast
-	if (!this->canUseBuild(eBuild))
+	if (!CivEffect()->canUseBuild(eBuild))
 	{
 		return false;
 	}
@@ -6733,7 +6719,7 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	}
 
 	// CivEffect check
-	if (!this->canUseCivic(eCivic))
+	if (!CivEffect()->canUseCivic(eCivic))
 	{
 		return false;
 	}
@@ -8240,7 +8226,7 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
 		{
 			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
 			{
-				applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
+				CivEffect()->applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
 			}
 		}
 
@@ -8250,7 +8236,7 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
 		{
 			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
 			{
-				applyCivEffect(GC.getEraInfo(eEra).getCivEffect(), - 1);
+				CivEffect()->applyCivEffect(GC.getEraInfo(eEra).getCivEffect(), - 1);
 			}
 		}
 
@@ -11081,11 +11067,11 @@ void CvPlayer::doCrosses()
 		{
 			// TAC - short messages for immigration after fist - RAY
 			if (imCount == 0) {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), false);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), false);
 				imCount++;
 			}
 			else {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant"), true);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
 			}
 		}
 	}
@@ -12406,7 +12392,7 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 {
 	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
 
-	applyCivEffect(kCivicInfo.getCivEffect(), iChange);
+	CivEffect()->applyCivEffect(kCivicInfo.getCivEffect(), iChange);
 
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
@@ -12763,7 +12749,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	// The CivEffect cache isn't saved. Instead it's recalculated on load.
 	// This will make it adapt to changed xml settings.
 	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
-	rebuildCivEffectCache();
+	CivEffect()->rebuildCivEffectCache();
 
 	m_groupCycle.Read(pStream);
 	{
@@ -18350,7 +18336,7 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 	if (eProfession != NO_PROFESSION)
 	{
 		// CivEffect check
-		if (!this->canUseProfession(eProfession))
+		if (!CivEffect()->canUseProfession(eProfession))
 		{
 			return false;
 		}
@@ -18655,7 +18641,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 	std::vector<int> aiWeights(NUM_UNIT_TYPES, 0);
 	for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 	{
-		if (this->canUseUnit(eUnit) && this->canUseImmigrant(eUnit))
+		if (CivEffect()->canUseUnit(eUnit) && CivEffect()->canUseImmigrant(eUnit))
 		{
 			CvUnitInfo *pInfo = &GC.getUnitInfo(eUnit);
 			int iWeight = pInfo->getImmigrationWeight();
@@ -21262,7 +21248,7 @@ void CvPlayer::checkForStealingImmigrant()
 		// simply buy immigrant for cheaper price if AI has enough gold
 		if (getGold() > priceStealingImmigrant * 3)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(this->getNumUnitsOnDock(), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
@@ -22759,206 +22745,4 @@ namespace
 void CvPlayer::sortEuropeUnits()
 {
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
-}
-
-void CvPlayer::applyCivEffect(const CivEffectInfo& kCivEffect, int iChange, bool bForceUpdateCache)
-{
-	FAssert(iChange == 1 || iChange == -1);
-	FAssert(getCivilizationType() != NO_CIVILIZATION);
-	CvCivilizationInfo *pCivInfo = &GC.getCivilizationInfo(getCivilizationType());
-
-	bool bUpdateBuilds          = bForceUpdateCache;
-	bool bUpdateBuildings       = bForceUpdateCache;
-	bool bUpdateImmigrants      = bForceUpdateCache;
-	bool bUpdatePromotions      = bForceUpdateCache;
-	bool bUpdateUnits           = bForceUpdateCache;
-
-	m_ja_iCacheAllowsBonuses                                    .addCache(iChange, kCivEffect.getAllowedBonuses           (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsBuilds                .addCache(iChange, kCivEffect.getAllowedBuilds            (), pCivInfo);
-	bUpdateBuildings  |= m_ja_iCacheAllowsBuildings             .addCache(iChange, kCivEffect.getAllowedBuildingClasses   (), pCivInfo);
-	m_ja_iCacheAllowsCivics                                     .addCache(iChange, kCivEffect.getAllowedCivics            (), pCivInfo);
-	bUpdateImmigrants |= m_ja_iCacheAllowsImmigrants            .addCache(iChange, kCivEffect.getAllowedImmigrants        (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsImprovements          .addCache(iChange, kCivEffect.getAllowedImprovements      (), pCivInfo);
-	bUpdatePromotions |= m_ja_iCacheAllowsProfessions           .addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
-	m_ja_iCacheAllowsPromotions                                 .addCache(iChange, kCivEffect.getAllowedPromotions        (), pCivInfo);
-	bUpdateBuilds     |= m_ja_iCacheAllowsRoutes                .addCache(iChange, kCivEffect.getAllowedRoutes            (), pCivInfo);
-	bUpdateUnits      |= m_ja_iCacheAllowsUnits                 .addCache(iChange, kCivEffect.getAllowedUnitClasses       (), pCivInfo);
-	m_ja_iCacheAllowsYields                                     .addCache(iChange, kCivEffect.getAllowedYields            (), pCivInfo);
-
-	m_iCacheCanUseDomesticMarket += iChange * kCivEffect.getCanUseDomesticMarket();
-
-	m_iCacheNumUnitsOnDock += iChange * kCivEffect.getNumUnitsOnDockChange();
-
-
-	bUpdatePromotions |= m_ja_iCacheFreePromotions              .addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
-	bUpdatePromotions |= m_ja_iCacheFreePromotionsForProfessions.addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
-	bUpdatePromotions |= m_ja_iCacheFreePromotionsForUnitClasses.addCache(iChange, kCivEffect.getAllowedProfessions       (), pCivInfo);
-
-	// The CivEffect has been applied. Now update secondary caches if needed
-
-	if (gDLL->isGameInitializing() && !bForceUpdateCache)
-	{
-		// Don't waste time on secondary caches during initialization
-		// The last call from rebuildCivEffectCache() will have bForceUpdateCache to set everything
-		return;
-	}
-
-	if (bUpdateBuilds)
-	{
-		// Something changed, which might affect which builds are allowed
-		// reset and rebuild the BoolArray to make sure it's up to date
-		m_ba_CacheAllowBuild.reset();
-		for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
-		{
-			if (this->m_ja_iCacheAllowsBuilds.get(eBuild) <= 0)
-			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
-				continue;
-			}
-
-			const CvBuildInfo *pBuild = &GC.getBuildInfo(eBuild);
-				
-			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(pBuild->getImprovement());
-			if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
-			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
-				continue;
-			}
-
-			RouteTypes eRoute = static_cast<RouteTypes>(pBuild->getRoute());
-			if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
-			{
-				m_ba_CacheAllowBuild.set(false, eBuild);
-				continue;
-			}
-		}
-	}
-
-	if (bUpdateBuildings)
-	{
-		m_at_AllowedBuildings.assign(m_ja_iCacheAllowsBuildings);
-	}
-
-	if (bUpdateUnits || bUpdateImmigrants || kCivEffect.getNumUnitsOnDockChange() != 0)
-	{
-		if (!this->isNative() && !this->isEurope())
-		{
-			verifyImmigration();
-			if (getID() == GC.getGameINLINE().getActivePlayer())
-			{
-				gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
-			}
-		}
-	}
-
-	if (gDLL->isGameInitializing())
-	{
-		return;
-	}
-
-	if (bUpdateBuildings || kCivEffect.getCanUseDomesticMarket() != 0)
-	{
-		int iLoop;
-		for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-		{
-			pLoopCity->UpdateBuildingAffectedCache();
-		}
-	}
-}
-
-void CvPlayer::resetCivEffectCache()
-{
-	m_ja_iCacheAllowsBonuses        .reset();
-	m_ja_iCacheAllowsBuilds         .reset();
-	m_ja_iCacheAllowsBuildings      .reset();
-	m_ja_iCacheAllowsCivics         .reset();
-	m_ja_iCacheAllowsImmigrants     .reset();
-	m_ja_iCacheAllowsImprovements   .reset();
-	m_ja_iCacheAllowsProfessions    .reset();
-	m_ja_iCacheAllowsPromotions     .reset();
-	m_ja_iCacheAllowsRoutes         .reset();
-	m_ja_iCacheAllowsUnits          .reset();
-	m_ja_iCacheAllowsYields         .reset();
-
-	m_ba_CacheAllowBuild            .reset();
-
-	m_iCacheCanUseDomesticMarket = 0;
-
-	m_iCacheNumUnitsOnDock = 0;
-
-	m_ja_iCacheFreePromotions.reset();
-	m_ja_iCacheFreePromotionsForProfessions.reset();
-	m_ja_iCacheFreePromotionsForUnitClasses.reset();
-}
-
-void CvPlayer::rebuildCivEffectCache()
-{
-	resetCivEffectCache();
-
-	if (getCivilizationType() == NO_CIVILIZATION)
-	{
-		return;
-	}
-
-	// add the global CivEffects if they are in xml and applies to this player
-	applyCivEffect(CIV_EFFECT_DEFAULT_ALL);
-	applyCivEffect(this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN);
-	applyCivEffect(this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI);
-
-	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
-	{
-		if (this->hasTrait(eTrait))
-		{
-			applyCivEffect(GC.getTraitInfo(eTrait).getCivEffect());
-		}
-	}
-
-	for (CivicOptionTypes eCivicOption = FIRST_CIVICOPTION; eCivicOption < NUM_CIVICOPTION_TYPES; ++eCivicOption)
-	{
-		CivicTypes eCivic = getCivic(eCivicOption);
-		if (eCivic != NO_CIVIC)
-		{
-			applyCivEffect(GC.getCivicInfo(eCivic).getCivEffect());
-		}
-	}
-
-	TeamTypes eTeam = this->getTeam();
-	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
-	{
-		if (GC.getGameINLINE().getFatherTeam(eFather) == eTeam)
-		{
-			applyCivEffect(GC.getFatherInfo(eFather).getCivEffect());
-		}
-	}
-
-	for (EraTypes eEra = FIRST_ERA; eEra <= getCurrentEra() && eEra < NUM_ERA_TYPES; ++eEra)
-	{
-		applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
-	}
-
-	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());
-
-	applyCivEffect(kCivInfo.getCivEffect());
-
-	// Setup some default data based on xml values
-	// While those aren't from the CivEffect file itself, they are still useful to include in the cache.
-	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < GC.getNumBuildingInfos(); ++eBuilding)
-	{
-		if (eBuilding != kCivInfo.getCivilizationBuildings(GC.getBuildingInfo(eBuilding).getBuildingClassType()))
-		{
-			m_ja_iCacheAllowsBuildings.set(-50, eBuilding);
-		}
-	}
-
-	for (UnitTypes eUnit = FIRST_UNIT; eUnit < GC.getNumUnitInfos(); ++eUnit)
-	{
-		if (eUnit != kCivInfo.getCivilizationUnits(GC.getUnitInfo(eUnit).getUnitClassType()))
-		{
-			m_ja_iCacheAllowsUnits.set(-50, eUnit);
-		}
-	}
-
-	// last CivEffect to be applied
-	// use this to both apply the autogenerated CivEffect and force update secondary caches
-	applyCivEffect(GC.getAutogeneratedCivEffect(), 1, true);
 }

@@ -1289,7 +1289,7 @@ int CyPlayer::getDocksNextUnit(int iIndex) const
 {
 	if (m_pPlayer)
 	{
-		if (iIndex >= 0 && iIndex < static_cast<int>(m_pPlayer->getNumUnitsOnDock()))
+		if (iIndex >= 0 && iIndex < static_cast<int>(m_pPlayer->CivEffect()->getNumUnitsOnDock()))
 		{
 			return m_pPlayer->getDocksNextUnit(iIndex);
 		}
@@ -1491,7 +1491,7 @@ CyTradeRouteGroup* CyPlayer::getTradeGroup(int iIndex)
 // CivEffect
 unsigned int CyPlayer::getNumUnitsOnDock() const
 {
-	return m_pPlayer ? m_pPlayer->getNumUnitsOnDock() : 0;
+	return m_pPlayer ? m_pPlayer->CivEffect()->getNumUnitsOnDock() : 0;
 }
 
 

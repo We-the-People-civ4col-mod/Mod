@@ -336,9 +336,6 @@
     <ClCompile Include="DLLSources\CvTeamAI.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CvTextScreens.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvTradeRoute.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
@@ -392,6 +389,9 @@
     </ClCompile>
     <ClCompile Include="DLLSources\InfoCacheArray.cpp">
       <Filter>Data\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp">
+      <Filter>CV\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -691,6 +691,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\EnumTypeCacheArray.h">
       <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayerCivEffect.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
