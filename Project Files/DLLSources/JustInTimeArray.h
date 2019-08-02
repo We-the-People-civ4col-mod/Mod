@@ -96,6 +96,10 @@ public:
 
 	int getPositiveCount() const;
 
+	// add bound checks. Ignore call if out of bound index
+	int safeSet(T value, int iIndex);
+	int safeAdd(T value, int iIndex);
+
 	JITarrayTypes getType() const
 	{
 		return static_cast<JITarrayTypes>(m_iType);

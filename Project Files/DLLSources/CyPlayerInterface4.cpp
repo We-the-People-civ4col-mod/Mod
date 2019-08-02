@@ -66,6 +66,7 @@ void CyPlayerPythonInterface4(python::class_<CyPlayer>& x)
 		.def("getNumTradeMessages", &CyPlayer::getNumTradeMessages, "int ()")
 		.def("getTradeMessage", &CyPlayer::getTradeMessage, "string (int)")
 
+		.def("getCivEffectCount", &CyPlayer::getCivEffectCount, "int (CivEffectTypes eCivEffect)")
 		.def("getNumUnitsOnDock", &CyPlayer::getNumUnitsOnDock, "unsigned int ()")
 		;
 }

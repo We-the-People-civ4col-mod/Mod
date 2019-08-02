@@ -11,7 +11,9 @@ public:
 	CvPlayerCivEffect();
 	virtual ~CvPlayerCivEffect();
 
-	// pick the version with the pointer if you have the pointer
+	int getCivEffectCount(CivEffectTypes eCivEffect) const;
+
+	// pick the version with the referece if you have the instance ready
 	void applyCivEffect(const CivEffectInfo& kCivEffect, int iChange = 1);
 	void applyCivEffect(CivEffectTypes       eCivEffect, int iChange = 1);
 
@@ -67,6 +69,13 @@ private:
 	PromotionArray      <char> m_ja_iCacheFreePromotions;
 	CacheArray2D        <char> m_ja_iCacheFreePromotionsForProfessions;
 	CacheArray2D        <char> m_ja_iCacheFreePromotionsForUnitClasses;
+
+	mutable CivEffectArray<short> m_ja_iHasCivEffectCache;
+
+	// warning: it does indeed update the cache, hence writing to m_ba_HasCivEffectCache
+	// It's const for everything else. This means const CvPlayerAI references can read the cache and update it if needed.
+	// They can't however change any other member data.
+	void updateHasCivEffectCache() const;
 
 public:
 	void resetCivEffectCache();

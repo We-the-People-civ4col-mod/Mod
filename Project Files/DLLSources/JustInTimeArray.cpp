@@ -290,6 +290,26 @@ int JustInTimeArray<T>::getPositiveCount() const
 }
 
 template<class T>
+int JustInTimeArray<T>::safeSet(T value, int iIndex)
+{
+	if (iIndex >= 0 && iIndex < this->length())
+	{
+		return this->set(value, iIndex);
+	}
+	return 0;
+}
+
+template<class T>
+int JustInTimeArray<T>::safeAdd(T value, int iIndex)
+{
+	if (iIndex >= 0 && iIndex < this->length())
+	{
+		return this->add(value, iIndex);
+	}
+	return 0;
+}
+
+template<class T>
 bool JustInTimeArray<T>::hasContent()
 {
 	if (m_tArray == NULL)
@@ -963,6 +983,7 @@ void CacheArray2D<T>::assign(T iNewValue, int iIndex = -1, int iSubIndex = -1)
 
 template class JustInTimeArray <int>;
 template class JustInTimeArray <unsigned short>;
+template class JustInTimeArray <short>;
 template class JustInTimeArray <char>;
 
 // compile 2D JIT arrays

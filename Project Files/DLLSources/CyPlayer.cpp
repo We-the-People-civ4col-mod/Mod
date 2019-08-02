@@ -1489,6 +1489,12 @@ CyTradeRouteGroup* CyPlayer::getTradeGroup(int iIndex)
 // R&R mod, vetiarvind, trade groups - end
 
 // CivEffect
+int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const
+{
+	return m_pPlayer ? m_pPlayer->CivEffect()->getCivEffectCount(eCivEffect) : 0;
+}
+
+
 unsigned int CyPlayer::getNumUnitsOnDock() const
 {
 	return m_pPlayer ? m_pPlayer->CivEffect()->getNumUnitsOnDock() : 0;

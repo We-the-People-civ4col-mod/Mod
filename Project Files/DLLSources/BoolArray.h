@@ -45,6 +45,11 @@ public:
 	// assign argument to storage
 	void set(bool bValue, int iIndex);
 
+	// set with bound checks. Does nothing if out of bound indexes are used
+	// Slower, use only if out of bound indexes can happen and if such arguments are ok to ignore
+	// Mostly used to avoid issues with index -1
+	void safeSet(bool bValue, int iIndex);
+
 	JITarrayTypes getType() const
 	{
 		return static_cast<JITarrayTypes>(m_iType);
@@ -71,10 +76,13 @@ public:
 	void Write(FDataStreamBase* pStream);
 	void read(CvXMLLoadUtility* pXML, const char* sTag);
 
+	BoolArray& operator=(const BoolArray &rhs);
+
 private:
 	// should never be called. Protects against silent bugs from swapping arguments
 	// marked private to throw the error at the caller rather than this header file (if possible)
 	// Functions intentionally lacks an implementation.
 	void set(int bValue, int iIndex);
+	void safeSet(int bValue, int iIndex);
 };
 #endif

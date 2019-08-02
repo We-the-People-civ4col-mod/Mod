@@ -57,7 +57,7 @@ template<class T>
 class CivEffectArray: public JustInTimeArray<T>
 {
 public:
-	CivEffectArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CIVEFFECT, eDefault){};
+	CivEffectArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CIV_EFFECT, eDefault){};
 };
 
 template<class T>

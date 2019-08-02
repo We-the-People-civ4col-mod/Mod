@@ -382,6 +382,8 @@ public:
 	CyTradeRouteGroup* getTradeGroup(int iIndex);	
 	// R&R mod, vetiarvind, trade groups - end
 
+	int getCivEffectCount(CivEffectTypes eCivEffect) const;
+
 	unsigned int getNumUnitsOnDock() const;
 
 	std::string getScriptData() const;

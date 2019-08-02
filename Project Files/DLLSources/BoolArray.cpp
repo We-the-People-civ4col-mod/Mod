@@ -73,6 +73,14 @@ void BoolArray::set(bool bValue, int iIndex)
 	}
 }
 
+void BoolArray::safeSet(bool bValue, int iIndex)
+{
+	if (iIndex >= 0 && iIndex < length())
+	{
+		set(bValue, iIndex);
+	}
+}
+
 bool BoolArray::hasContent(bool bRelease)
 {
 	if (m_iArray == NULL)
@@ -238,3 +246,19 @@ void BoolArray::read(CvXMLLoadUtility* pXML, const char* sTag)
 	this->hasContent(); // release array if possible
 }
 
+BoolArray& BoolArray::operator=(const BoolArray &rhs)
+{
+	FAssert(m_iLength == rhs.m_iLength);
+	FAssert(m_iType == rhs.m_iType);
+
+	// TODO use memcpy for faster execution
+	// Current code is faster to code because it relies on reusing already working code
+	for (int i = 0; i < m_iLength; i++)
+	{
+		this->set(rhs.get(i), i);
+	}
+
+	this->hasContent(); // clear array if possible
+
+	return *this;
+}
