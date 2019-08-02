@@ -5,7 +5,6 @@
 #include "CvDLLEntity.h"
 #include "LinkedList.h"
 
-#include "JustInTimeArray.h"
 class CvPlot;
 class CvArea;
 class CvGenericBuilding;
@@ -367,6 +366,7 @@ public:
 	int getYieldBuyPrice(YieldTypes eYield) const;
 	void setYieldBuyPrice(YieldTypes eYield, int iPrice);
 	int getYieldDemand(YieldTypes eYield) const;
+	void getYieldDemands(YieldCargoArray<int> &aYields) const;
 	//Androrc End
 
 	bool isEverOwned(PlayerTypes eIndex) const;
@@ -717,12 +717,12 @@ protected:
 	
 	// R&R, ray, finishing Custom House Screen
 	YieldArray<int> ma_aiCustomHouseSellThreshold;
-	YieldArray<bool> ma_aiCustomHouseNeverSell;
+	BoolArray       ba_aiCustomHouseNeverSell;
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
 	UnitArray<int> ma_OrderedStudents;
-	UnitArray<bool> ma_OrderedStudentsRepeat;
+	BoolArray      ba_OrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
 
 	int* m_aiDomainFreeExperience;
@@ -753,12 +753,12 @@ protected:
 	std::vector<CvUnit*> m_aPopulationUnits;
 
 	// traderoute just-in-time - start - Nightinggale
-	YieldArray<bool> ma_tradeImports;
-	YieldArray<bool> ma_tradeExports;
-	YieldArray<int> ma_tradeThreshold;
+	BoolArray ba_tradeImports;
+	BoolArray ba_tradeExports;
+	YieldArray<unsigned short> ma_tradeThreshold;
 	// traderoute just-in-time - end - Nightinggale
 	
-	YieldArray<int> ma_tradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
+	YieldArray<unsigned short> ma_tradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
 
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
@@ -817,8 +817,8 @@ public:
 	void setAutoThresholdCache();
 
 protected:
- 	YieldArray<bool> ma_tradeImportsMaintain;
-	YieldArray<bool> ma_tradeStopAutoImport;
+	BoolArray ba_tradeImportsMaintain;
+	BoolArray ba_tradeStopAutoImport;
 	YieldArray<int> ma_tradeAutoThreshold; // nosave - recalculate on load
 	YieldArray<int> ma_productionNeeded; // nosave - recalculate on load
 
@@ -828,13 +828,21 @@ protected:
 	
 	// auto traderoute - start - Nightinggale
 public:
-	bool isAutoExport(YieldTypes eYield) const {return ma_tradeAutoExport.get(eYield);};
+	bool isAutoExport(YieldTypes eYield) const {return ba_tradeAutoExport.get(eYield);};
 protected:
 	void setAutoExport(YieldTypes eYield, bool bExport);
 	void doAutoExport(YieldTypes eYield);
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
-	YieldArray<bool> ma_tradeAutoExport;
+	BoolArray ba_tradeAutoExport;
 	// auto traderoute - end - Nightinggale
+
+public:
+	int getMarketModifier() const { return m_iCacheMarketModifier; }
+	const YieldCargoArray<int>& getBuildingYieldDemands() const { return m_ja_iBuildingYieldDemands; }
+
+protected:
+	int m_iCacheMarketModifier;
+	YieldCargoArray<int> m_ja_iBuildingYieldDemands;
 
 	virtual bool AI_addBestCitizen() = 0;
 	virtual bool AI_removeWorstCitizen() = 0;
@@ -875,12 +883,12 @@ inline int CvCity::getMaxYieldCapacity() const
 // transport feeder - start - Nightinggale
 inline bool CvCity::getImportsMaintain(YieldTypes eYield) const
 {
-	return ma_tradeImportsMaintain.get(eYield);
+	return ba_tradeImportsMaintain.get(eYield);
 }
 
 inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const
 {
-	return ma_tradeStopAutoImport.get(eYield);
+	return ba_tradeStopAutoImport.get(eYield);
 }
 
 inline int CvCity::getAutoMaintainThreshold(YieldTypes eYield) const

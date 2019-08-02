@@ -28,6 +28,15 @@
     <Filter Include="Misc\Header">
       <UniqueIdentifier>{aa4136ad-52f9-4c41-964d-e3f92da6d137}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{ff535bcc-48e3-4d34-b414-577f75810e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\CPP">
+      <UniqueIdentifier>{c5f7a541-2f70-4400-9845-8d9ca3f13ad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Header">
+      <UniqueIdentifier>{6472e9fa-b899-49ae-8c9d-2b6e5b4ca857}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DLLSources\CyArea.cpp">
@@ -327,9 +336,6 @@
     <ClCompile Include="DLLSources\CvTeamAI.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CvTextScreens.cpp">
-      <Filter>CV\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\CvTradeRoute.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
@@ -362,6 +368,30 @@
     </ClCompile>
     <ClCompile Include="DLLSources\FDialogTemplate.cpp">
       <Filter>Misc\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\JustInTime_Features.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\JustInTimeArray.cpp">
+      <Filter>Data\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\InfoArray.cpp">
+      <Filter>Data\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\BoolArray.cpp">
+      <Filter>Data\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\JustInTimeArrayGetType.h">
+      <Filter>Data\Header</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\InfoCacheArray.cpp">
+      <Filter>Data\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp">
+      <Filter>CV\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -635,9 +665,6 @@
     <ClInclude Include="DLLSources\FVariableSystem.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\JustInTimeArray.h">
-      <Filter>Misc\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\LinkedList.h">
       <Filter>Misc\Header</Filter>
     </ClInclude>
@@ -670,6 +697,29 @@
     </ClInclude>
     <ClInclude Include="DLLSources\iconv\converters.h">
       <Filter>Misc\Header</Filter>
+    <ClInclude Include="DLLSources\JustInTimeArrayTypes.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\JustInTimeArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\InfoArrayGet.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\InfoArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\BoolArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\InfoCacheArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EnumTypeCacheArray.h">
+      <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlayerCivEffect.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -65,5 +65,8 @@ void CyPlayerPythonInterface4(python::class_<CyPlayer>& x)
 		.def("addRevolutionEuropeUnit", &CyPlayer::addRevolutionEuropeUnit, "void addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession)")
 		.def("getNumTradeMessages", &CyPlayer::getNumTradeMessages, "int ()")
 		.def("getTradeMessage", &CyPlayer::getTradeMessage, "string (int)")
+
+		.def("getCivEffectCount", &CyPlayer::getCivEffectCount, "int (CivEffectTypes eCivEffect)")
+		.def("getNumUnitsOnDock", &CyPlayer::getNumUnitsOnDock, "unsigned int ()")
 		;
 }

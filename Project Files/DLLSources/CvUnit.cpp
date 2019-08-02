@@ -81,6 +81,8 @@ CvUnit::CvUnit() :
 	m_eCachedYield(NO_YIELD),
 	// unit yield cache - end - Nightinggale
 
+	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION),
+
 	// R&R, ray, Natives Trading - START
 	m_AmountForNativeTrade(0),
 	m_YieldForNativeTrade(NO_YIELD)
@@ -7554,6 +7556,8 @@ int CvUnit::visibilityRange() const
 	{
 		iImprovementVisibilityChange = GC.getImprovementInfo(plot()->getImprovementType()).getVisibilityChange();
 	}
+	// TODO replace GC.getUNIT_VISIBILITY_RANGE() with hardcoded 1 as changing the xml value breaks savegames
+	// TODO figure out how to prevent CvImprovementInfo::getVisibilityChange from breaking savegames if changed
 	return (GC.getUNIT_VISIBILITY_RANGE() + getExtraVisibilityRange() + iImprovementVisibilityChange);
 	// Super Forts end
 	// Original --	return (GC.getUNIT_VISIBILITY_RANGE() + getExtraVisibilityRange()); */
@@ -10659,28 +10663,17 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 			}
 		}
 
+		// clean up from old profession
 		processProfession(getProfession(), -1, false);
-		if (getProfessionUnitCombatType(getProfession()) != getProfessionUnitCombatType(eProfession))
-		{
-			for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); ++iPromotion)
-			{
-				if (isHasPromotion((PromotionTypes) iPromotion))
-				{
-					processPromotion((PromotionTypes) iPromotion, -1);
-				}
-			}
-		}
 		ProfessionTypes eOldProfession = getProfession();
+
+		// actually change profession
 		m_eProfession = eProfession;
+
 		if (getProfessionUnitCombatType(eOldProfession) != getProfessionUnitCombatType(getProfession()))
 		{
-			for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); ++iPromotion)
-			{
-				if (isHasPromotion((PromotionTypes) iPromotion))
-				{
-					processPromotion((PromotionTypes) iPromotion, 1);
-				}
-			}
+			// set cached data from promotions
+			setPromotions();
 		}
 		processProfession(getProfession(), 1, true);
 
@@ -12011,32 +12004,6 @@ bool CvUnit::canAcquirePromotionAny() const
 	return false;
 }
 
-
-bool CvUnit::isHasPromotion(PromotionTypes eIndex) const
-{
-	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	CvPromotionInfo& kPromotion = GC.getPromotionInfo(eIndex);
-
-	UnitCombatTypes eUnitCombat = getUnitCombatType();
-	if (eUnitCombat == NO_UNITCOMBAT)
-	{
-		return false;
-	}
-
-	if (!kPromotion.getUnitCombat(eUnitCombat))
-	{
-		return false;
-	}
-
-	if (getFreePromotionCount(eIndex) <= 0 && !isHasRealPromotion(eIndex))
-	{
-		return false;
-	}
-
-	return true;
-}
-
 bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
@@ -12051,17 +12018,9 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		if (isHasPromotion(eIndex))
-		{
-			processPromotion(eIndex, -1);
-		}
-
 		m_pabHasRealPromotion[eIndex] = bValue;
 
-		if (isHasPromotion(eIndex))
-		{
-			processPromotion(eIndex, 1);
-		}
+		setPromotions(eIndex);
 
 		if (IsSelected())
 		{
@@ -12140,6 +12099,147 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
 	}
 }
 
+void CvUnit::resetPromotions()
+{
+	m_iBlitzCount = 0;
+	m_iAmphibCount = 0;
+	m_iRiverCount = 0;
+	m_iEnemyRouteCount = 0;
+	m_iAlwaysHealCount = 0;
+	m_iHillsDoubleMoveCount = 0;
+
+	changeExtraVisibilityRange(-this->getExtraVisibilityRange());
+	m_iExtraMoves = 0;
+	m_iExtraMoveDiscount = 0;
+	m_iExtraWithdrawal = 0;
+	m_iExtraBombardRate = 0;
+	m_iExtraEnemyHeal = 0;
+	m_iExtraNeutralHeal = 0;
+	m_iExtraFriendlyHeal = 0;
+	m_iSameTileHeal = 0;
+	m_iAdjacentTileHeal = 0;
+	m_iExtraCombatPercent = 0;
+	m_iExtraCityAttackPercent = 0;
+	m_iExtraCityDefensePercent = 0;
+	m_iExtraHillsAttackPercent = 0;
+	m_iExtraHillsDefensePercent = 0;
+	m_iExtraDomesticBonusPercent = 0;
+	m_iPillageChange = 0;
+	m_iUpgradeDiscount = 0;
+	m_iExperiencePercent = 0;
+	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
+
+	for (int iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
+	{
+		m_paiExtraTerrainAttackPercent[iI] = 0;
+		m_paiExtraTerrainDefensePercent[iI] = 0;
+		m_paiTerrainDoubleMoveCount[iI] = 0;
+	}
+
+	for (int iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
+	{
+		m_paiExtraFeatureAttackPercent[iI] = 0;
+		m_paiExtraFeatureDefensePercent[iI] = 0;
+		m_paiFeatureDoubleMoveCount[iI] = 0;
+	}
+
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); ++iI)
+	{
+		m_paiExtraUnitClassAttackModifier[iI] = 0;
+		m_paiExtraUnitClassDefenseModifier[iI] = 0;
+	}
+
+	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
+	{
+		m_paiExtraUnitCombatModifier[iI] = 0;
+	}
+
+	for (int iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
+	{
+		m_aiExtraDomainModifier[iI] = 0;
+	}
+
+	setPromotions();
+}
+
+void CvUnit::setPromotions(PromotionTypes ePromotion)
+{
+	FAssert(ePromotion < GC.getNumPromotionInfos());
+	FAssert(getOwnerINLINE() != NO_PLAYER);
+
+	UnitCombatTypes eUnitCombat = getUnitCombatType();
+
+	if (eUnitCombat == NO_UNITCOMBAT && !m_ba_isPromotionApplied.isAllocated())
+	{
+		// unit has no active promotions and the profession can't have promotions.
+		// Bail out without spending more time on this unit.
+		// This is the case when switching between two civilian professions, like farmer->jumberjack.
+		return;
+	}
+
+	CvPlayerAI &kOwner = GET_PLAYER(getOwnerINLINE());
+
+	PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : FIRST_PROMOTION;
+	PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : static_cast<PromotionTypes>(GC.getNumPromotionInfos() - 1);
+
+	ProfessionTypes eProfession = getProfession();
+
+	bool bFoundAnyPromotions = false;
+
+	for (; eLoopPromotion <= eLastPromotion; ++eLoopPromotion)
+	{
+		bool bHasPromotion = false;
+		if (eUnitCombat != NO_UNITCOMBAT && kOwner.canUsePromotion(eLoopPromotion) && GC.getPromotionInfo(eLoopPromotion).getUnitCombat(eUnitCombat))
+		{
+			// The unit/profession combo can use the promotion in question. Now check if it's present
+			if (isHasRealPromotion(eLoopPromotion))
+			{
+				bHasPromotion = true;
+			}
+			else if (getFreePromotionCount(eLoopPromotion) > 0)
+			{
+				bHasPromotion = true;
+			}
+			else if (kOwner.hasFreePromotion(eLoopPromotion))
+			{
+				bHasPromotion = true;
+			}
+			else if (eUnitCombat != NO_UNITCOMBAT && kOwner.hasFreePromotion(eLoopPromotion, eUnitCombat))
+			{
+				bHasPromotion = true;
+			}
+			else if (eProfession != NO_PROFESSION && kOwner.hasFreePromotion(eLoopPromotion, eProfession))
+			{
+				bHasPromotion = true;
+			}
+		}
+
+		if (bHasPromotion)
+		{
+			bFoundAnyPromotions = true;
+			if (!m_ba_isPromotionApplied.get(eLoopPromotion))
+			{
+				m_ba_isPromotionApplied.set(true, eLoopPromotion);
+				processPromotion(eLoopPromotion, 1);
+			}
+		}
+		else
+		{
+			if (m_ba_isPromotionApplied.get(eLoopPromotion))
+			{
+				m_ba_isPromotionApplied.set(false, eLoopPromotion);
+				processPromotion(eLoopPromotion, -1);
+			}
+		}
+	}
+
+	if (!bFoundAnyPromotions)
+	{
+		// try to release the array
+		// See top check with unit combat to see why it's good to release the array if possible. There is more to it than just memory usage.
+		m_ba_isPromotionApplied.isEmpty();
+	}
+}
 
 void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 {
@@ -12149,17 +12249,9 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 
 	if (getFreePromotionCount(eIndex) != iValue)
 	{
-		if (isHasPromotion(eIndex))
-		{
-			processPromotion(eIndex, -1);
-		}
-
 		m_paiFreePromotionCount[eIndex] = iValue;
 
-		if (isHasPromotion(eIndex))
-		{
-			processPromotion(eIndex, 1);
-		}
+		setPromotions(eIndex);
 
 		if (IsSelected())
 		{
@@ -12346,6 +12438,12 @@ void CvUnit::read(FDataStreamBase* pStream)
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
 	// unit yield cache - end - Nightinggale
+
+	// update promotion cache
+	// this will fix issues introduced if some xml data has been changed since the game was saved
+	resetPromotions();
+	// TODO: remove variables overwritten by resetPromotions from savegames
+	// Note: this is delayed until we break savegames anyway. Storing unused data won't break anything.
 }
 
 

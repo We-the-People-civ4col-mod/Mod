@@ -16115,18 +16115,18 @@ void CvPlayerAI::AI_hurryDocks()
 		return;
 	}
 	
-	for (int iIndex = 0; iIndex < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++iIndex)
+	for (unsigned int iIndex = 0; iIndex < this->getNumUnitsOnDock(); ++iIndex)
 	{	
-		UnitTypes eLoopUnit = (UnitTypes)getDocksNextUnit(iIndex);
+		UnitTypes eLoopUnit = getDocksNextUnit(iIndex);
 			
 		if (eLoopUnit != NO_UNIT)
 		{
 			CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
 			if (kUnitInfo.isNoBadGoodies())
 			{
-				if (canHurry((HurryTypes)1, iIndex))
+				if (canHurry(HURRY_IMMIGRANT, iIndex))
 				{
-					hurry((HurryTypes)1, iIndex);
+					hurry(HURRY_IMMIGRANT, iIndex);
 				}
 			}
 		}

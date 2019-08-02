@@ -543,7 +543,11 @@ class CvEuropeScreen:
 		
 		# Units to Recruit
 		iX = self.RECRUIT_X -20
-		for i in range (gc.getDefineINT("DOCKS_NEXT_UNITS")):
+		RecruitSpacing = self.RECRUIT_W
+		if (player.getNumUnitsOnDock() > 4):
+			# Calculate spacing based on number of units to ensure no unit will end up on the buy unit button
+			RecruitSpacing = (self.RECRUIT_W * 4) / (player.getNumUnitsOnDock() - 1)
+		for i in range (player.getNumUnitsOnDock()):
 			if player.getDocksNextUnit(i) != UnitTypes.NO_UNIT:
 				UnitInfo = gc.getUnitInfo(player.getDocksNextUnit(i))
 				## R&R, Robert Surcouf,  Multiple rows of Yields if necessary START
@@ -551,7 +555,7 @@ class CvEuropeScreen:
 				# Sometimes immigrants appear on water !!!!!
 				screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, false)
 				## R&R, Robert Surcouf,  Multiple rows of Yields if necessary END
-				iX += self.RECRUIT_W
+				iX += RecruitSpacing
 				
 		#Trade messages
 		iLastFailed = -1

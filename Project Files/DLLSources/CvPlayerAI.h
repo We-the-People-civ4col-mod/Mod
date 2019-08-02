@@ -6,11 +6,12 @@
 #define CIV4_PLAYER_AI_H
 
 #include "CvPlayer.h"
+#include "CvPlayerCivEffect.h"
 #include "CvTradeRouteGroup.h"
 
 class CvEventTriggerInfo;
 
-class CvPlayerAI : public CvPlayer
+class CvPlayerAI : public CvPlayerCivEffect
 {
 
 public:

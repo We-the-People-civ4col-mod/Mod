@@ -169,6 +169,8 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 			GC.getUnitClassInfo((UnitClassTypes)i).readPass3();
 		}
 	}
+	// Load CivEffects
+	PreLoadGlobalClassInfo(GC.getCivEffectInfo(), "CIV4CivEffectsInfos", "CivEffects", "Civ4CivEffectInfos/CivEffectInfo", NULL);
 	//Androrc UnitArtStyles
 	PreLoadGlobalClassInfo(GC.getUnitArtStyleTypeInfo(), "CIV4UnitArtStyleTypeInfos", "Civilizations", "Civ4UnitArtStyleTypeInfos/UnitArtStyleTypeInfos/UnitArtStyleTypeInfo", false);
 	//Androrc End
@@ -249,6 +251,8 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 
 
 	bFirstRead = false;
+
+	GC.postXMLLoad(bFirst);
 }
 /// XML type preloading - end - Nightinggale
 
@@ -725,12 +729,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("BONUS_HIGH_SEA_FISH", idx);
 		// R&R, ray, High Sea Fishing - END
-
-		// R&R, ray, adjustment Domestic Markets - START
-		SetGlobalDefine("SPECIALBUILDING_MARKET", szVal);
-		idx = FindInInfoClass(szVal);
-		GC.getDefinesVarSystem()->SetValue("SPECIALBUILDING_MARKET", idx);
-		// R&R, ray, adjustment Domestic Markets - END
 
 		// R&R, ray, Entertainment Buildings - START
 		SetGlobalDefine("SPECIALBUILDING_TAVERN", szVal);
@@ -2120,7 +2118,7 @@ void CvXMLLoadUtility::SetFeatureStruct(int** ppiFeatureTime, std::vector<std::v
 					sprintf( szMessage, "iNumSibs is greater than GC.getNumFeatureInfos in SetFeatureStruct function \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 					gDLL->MessageBox(szMessage, "XML Error");
 				}
-				for (i=0;i<iNumSibs;i++)
+				for (int i=0;i<iNumSibs;i++)
 				{
 					GetChildXmlValByName(szTextVal, "FeatureType");
 					iFeatureIndex = FindInInfoClass(szTextVal);

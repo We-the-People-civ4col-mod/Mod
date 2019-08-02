@@ -14,6 +14,8 @@
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 
 class CvDiploParameters;
+class CvPlayerAI;
+class CvPlayerCivEffect;
 class CvPopupInfo;
 class CvEventTriggerInfo;
 class CvTradeRoute;
@@ -30,6 +32,13 @@ typedef std::vector< std::pair<CivilizationTypes, LeaderHeadTypes> > CivLeaderAr
 class CvPlayer
 {
 public:
+	// add support for AI and CivEffect calls
+	__forceinline CvPlayerAI* AI() { return (CvPlayerAI*)this; }
+	__forceinline const CvPlayerAI* AI() const { return (CvPlayerAI*)this; }
+
+	__forceinline CvPlayerCivEffect* CivEffect() { return (CvPlayerCivEffect*)this; }
+	__forceinline const CvPlayerCivEffect* CivEffect() const { return (CvPlayerCivEffect*)this; }
+
 	CvPlayer();
 	virtual ~CvPlayer();
 
@@ -165,6 +174,7 @@ public:
 	void initFreeState();
 	void initFreeUnits();
 	void initImmigration();
+	void verifyImmigration();
 	void addFreeUnitAI(UnitAITypes eUnitAI, int iCount);
 	CvUnit* addFreeUnit(UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI = NO_UNITAI);
 	int startingPlotRange() const;
@@ -1015,7 +1025,7 @@ protected:
 	int* m_aiProfessionEquipmentModifier;
 	int* m_aiTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
-	YieldArray<int> *m_cache_YieldEquipmentAmount;
+	YieldArray<unsigned short> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
 	void Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession);
 	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;

@@ -208,6 +208,7 @@ class CvPromotionInfo :	public CvHotkeyInfo
 public:
 	DllExport CvPromotionInfo();
 	DllExport virtual ~CvPromotionInfo();
+	PromotionTypes getIndex() const { return m_eIndex; }
 	DllExport int getPrereqPromotion() const;
 	DllExport void setPrereqPromotion(int i);
 	DllExport int getPrereqOrPromotion1() const;
@@ -269,6 +270,7 @@ public:
 
 protected:
 
+	PromotionTypes m_eIndex;
 	int m_iPrereqPromotion;
 	int m_iPrereqOrPromotion1;
 	int m_iPrereqOrPromotion2;
@@ -329,6 +331,7 @@ class CvProfessionInfo :	public CvInfoBase
 public:
 	DllExport CvProfessionInfo();
 	DllExport virtual ~CvProfessionInfo();
+	ProfessionTypes getIndex() const { return m_eIndex; }
 	DllExport int getUnitCombatType() const;
 	// TAC - LbD - Ray - START
 	DllExport bool LbD_isUsed() const;
@@ -376,6 +379,7 @@ public:
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	ProfessionTypes m_eIndex;
 	int m_iUnitCombatType;
 	int m_iDefaultUnitAIType;
 	// R&R, ray , MYCP partially based on code of Aymerick - START
@@ -778,7 +782,7 @@ public:
 	DllExport int getDomainModifier(int i) const;
 	DllExport int getYieldModifier(int i) const;
 	// R&R, Androrc, Domestic Market
-	DllExport int getYieldDemand(int i) const;
+	const InfoArray& getYieldDemands() const { return m_info_YieldDemands; }
 	//Androrc End
 	DllExport int getBonusYieldChange(int i) const;
 	DllExport int getYieldChange(int i) const;
@@ -944,7 +948,7 @@ protected:
 	int* m_aiDomainModifier;
 	int* m_aiYieldModifier;
 	// R&R, Androrc, Domestic Market
-	int* m_aiYieldDemand;
+	InfoArrayMod m_info_YieldDemands;
 	//Androrc End
 	int* m_aiBonusYieldChange;
 	int* m_aiYieldChange;
@@ -1068,6 +1072,7 @@ public:
 	DllExport virtual ~CvCivicInfo();
 	DllExport int getCivicOptionType() const;
 	DllExport int getAIWeight() const;
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
 	DllExport int getGreatGeneralRateModifier() const;
 	DllExport int getDomesticGreatGeneralRateModifier() const;
 	DllExport int getFreeExperience() const;
@@ -1100,6 +1105,7 @@ public:
 	DllExport bool read(CvXMLLoadUtility* pXML);
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	CivEffectTypes m_eCivEffect;
 	int m_iCivicOptionType;
 	int m_iAIWeight;
 	int m_iGreatGeneralRateModifier;
@@ -1257,7 +1263,8 @@ public:
 	DllExport bool isNationalWonder() const; // R&R, ray, National Wonders
 	DllExport bool isNeverCapture() const;
 	DllExport bool isCenterInCity() const;
-
+	int getDomesticMarketModifier() const { return m_iDomesticMarketModifier; }
+	const InfoArray& getYieldDemands() const { return m_info_YieldDemands; }
 	DllExport const char* getConstructSound() const;
 	DllExport void setConstructSound(const char* szVal);
 	DllExport const char* getArtDefineTag() const;
@@ -1346,6 +1353,8 @@ protected:
 	bool m_bNationalWonder; // R&R, ray, National Wonders
 	bool m_bNeverCapture;
 	bool m_bCenterInCity;
+	int m_iDomesticMarketModifier;
+	InfoArrayMod m_info_YieldDemands;
 	CvString m_szConstructSound;
 	CvString m_szArtDefineTag;
 	CvString m_szMovieDefineTag;
@@ -1552,6 +1561,8 @@ public:
 	DllExport bool isCentralAmericanNative() const;
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	std::wstring pyGetShortDescription(uint uiForm) { return getShortDescription(uiForm); }
 	DllExport const wchar* getShortDescription(uint uiForm = 0);
 	DllExport const wchar* getShortDescriptionKey() const;
@@ -1654,6 +1665,8 @@ protected:
 	bool m_bSouthAmericanNative;
 	bool m_bCentralAmericanNative;
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	CivEffectTypes m_eCivEffect;
 
 	CvString m_szArtDefineTag;
 	CvWString m_szShortDescriptionKey;
@@ -2530,6 +2543,7 @@ class CvYieldInfo :
 public:
 	DllExport CvYieldInfo();
 	DllExport virtual ~CvYieldInfo();
+	YieldTypes getIndex() const { return m_eIndex; }
 	DllExport int getChar() const;
 	DllExport void setChar(int i);
 	DllExport const char* getIcon() const;
@@ -2588,6 +2602,7 @@ public:
 	DllExport bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	YieldTypes m_eIndex;
 	int m_iChar;
 	CvString m_szIcon;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
@@ -3030,6 +3045,9 @@ class CvTraitInfo :
 public:
 	DllExport CvTraitInfo();
 	DllExport virtual ~CvTraitInfo();
+
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	DllExport int getLevelExperienceModifier() const;
 	DllExport int getGreatGeneralRateModifier() const;
 	DllExport int getDomesticGreatGeneralRateModifier() const;
@@ -3087,6 +3105,8 @@ public:
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	CivEffectTypes m_eCivEffect;
+
 	int m_iLevelExperienceModifier;
 	int m_iGreatGeneralRateModifier;
 	int m_iDomesticGreatGeneralRateModifier;
@@ -3732,6 +3752,8 @@ public:
 	DllExport const char* getAudioUnitVictoryScript() const;
 	DllExport const char* getAudioUnitDefeatScript() const;
 
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	DllExport bool isRevolution() const;
 	DllExport bool isNoGoodies() const;
 	DllExport bool isFirstSoundtrackFirst() const;
@@ -3761,6 +3783,7 @@ protected:
 	int m_iNumSoundtracks;
 	CvString m_szAudioUnitVictoryScript;
 	CvString m_szAudioUnitDefeatScript;
+	CivEffectTypes m_eCivEffect;
 	bool m_bRevolution;
 	bool m_bNoGoodies;
 	bool m_bFirstSoundtrackFirst;
@@ -4450,6 +4473,8 @@ public:
 	DllExport bool isRevealImprovement(int iImprovement) const;
 	DllExport const char* getPortrait() const;
 
+	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
+
 	std::wstring pyGetQuoteKey() { return getQuoteKey(); }
 	DllExport const wchar* getQuoteKey();
 	DllExport const char* getSound() const;
@@ -4461,6 +4486,7 @@ public:
 protected:
 	int m_iFatherCategory;
 	int m_iTrait;
+	CivEffectTypes m_eCivEffect;
 	int* m_aiFreeUnits;
 	int* m_aiPointCost;
 	bool* m_abRevealImprovement;
@@ -4646,5 +4672,65 @@ protected:
 	CvString m_szPictureFileName;
 };
 // PatchMod: Achievements END
+
+class CivEffectInfo :
+	public CvInfoBase
+{
+public:
+	CivEffectInfo(bool bAutogenerateAllow = false);
+	~CivEffectInfo();
+
+	// allow
+	inline const InfoArray& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
+	inline const InfoArray& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
+	inline const InfoArray& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
+	inline const InfoArray& getAllowedCivics               () const { return m_info_AllowCivics       ; }
+	inline const InfoArray& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
+	inline const InfoArray& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
+	inline const InfoArray& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
+	inline const InfoArray& getAllowedPromotions           () const { return m_info_AllowPromotions   ; }
+	inline const InfoArray& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
+	inline const InfoArray& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
+	inline const InfoArray& getAllowedYields               () const { return m_info_AllowYields       ; }
+
+	// city
+	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }
+
+	// growth
+	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange  ; }
+
+	// unit
+	inline const InfoArray& getFreePromotions              () const { return m_info_FreePromotions    ; }
+	inline const InfoArray& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
+	inline const InfoArray& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
+
+	bool read(CvXMLLoadUtility* pXML);
+
+protected:
+	// allow
+	InfoArrayMod m_info_AllowBonuses;
+	InfoArrayMod m_info_AllowBuilds;
+	InfoArrayMod m_info_AllowBuildings;
+	InfoArrayMod m_info_AllowCivics;
+	InfoArrayMod m_info_AllowImmigrants;
+	InfoArrayMod m_info_AllowImprovements;
+	InfoArrayMod m_info_AllowProfessions;
+	InfoArrayMod m_info_AllowPromotions;
+	InfoArrayMod m_info_AllowRoutes;
+	InfoArrayMod m_info_AllowUnits;
+	InfoArrayMod m_info_AllowYields;
+
+	// city
+	int m_iCanUseDomesticMarket;
+
+	// growth
+	int m_iNumUnitsOnDockChange;
+
+	// unit
+	InfoArrayMod m_info_FreePromotions;
+	InfoArrayMod m_info_FreePromotionsForProfessions;
+	InfoArrayMod m_info_FreePromotionsForUnitCombats;
+};
+
 
 #endif

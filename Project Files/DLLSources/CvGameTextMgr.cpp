@@ -5229,12 +5229,10 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	// R&R, Androrc, Domestic Market
 	// R&R, ray, adjustment Domestic Markets, displaying as list
 	CvWString szYieldsDemandedList;
-	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	const InfoArray &infoYieldDemands = GC.getUnitInfo(eUnit).getYieldDemands();
+	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
 	{
-		if(GC.getUnitInfo(eUnit).getYieldDemand((YieldTypes) iI) != 0)
-		{
-			szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo((YieldTypes) iI).getChar());
-		}
+		szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo(infoYieldDemands.getYield(iI)).getChar());
 	}
 	if(!isEmpty(szYieldsDemandedList))
 	{
@@ -5395,7 +5393,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 	{
 		if(NO_UNIT != eDefaultUnit && eDefaultUnit == eUnit)
 		{
-			for(iI = 0; iI < GC.getNumUnitInfos(); ++iI)
+			for(int iI = 0; iI < GC.getNumUnitInfos(); ++iI)
 			{
 				if(((UnitTypes)iI) == eUnit)
 				{
@@ -5543,7 +5541,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 
 	if (NO_BUILDING != eDefaultBuilding && eDefaultBuilding != eBuilding)
 	{
-		for (iI  = 0; iI < GC.getNumCivilizationInfos(); ++iI)
+		for (int iI  = 0; iI < GC.getNumCivilizationInfos(); ++iI)
 		{
 			BuildingTypes eUniqueBuilding = (BuildingTypes)GC.getCivilizationInfo((CivilizationTypes)iI).getCivilizationBuildings((int)eBuildingClass);
 			if (eUniqueBuilding == eBuilding)
@@ -5603,15 +5601,25 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		}
 	}
 
-	if (kBuilding.getSpecialBuildingType() ==(SpecialBuildingTypes) GC.getDefineINT("SPECIALBUILDING_MARKET"))
+	CvWString szYieldsDemandedList;
+	const InfoArray &infoYieldDemands = kBuilding.getYieldDemands();
+	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
+	{
+		szYieldsDemandedList += CvWString::format(L"%c", GC.getYieldInfo(infoYieldDemands.getYield(iI)).getChar());
+	}
+	if (!isEmpty(szYieldsDemandedList))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getSymbolID(BULLET_CHAR));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
+	}
+
+	if (kBuilding.getDomesticMarketModifier() > 0)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET_BUILDING"));
-		if (kBuilding.getSpecialBuildingPriority() > 0)
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED"));
-		}
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED", kBuilding.getDomesticMarketModifier()));
 	}
 
 	int iYieldStorage = kBuilding.getYieldStorage();
@@ -5682,7 +5690,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 
 	iLast = 0;
 
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
+	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
 	{
 		if (kBuilding.getUnitCombatFreeExperience(iI) != 0)
 		{
@@ -5691,7 +5699,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		}
 	}
 
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
+	for (int iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
 	{
 		if (kBuilding.getDomainFreeExperience(iI) != 0)
 		{
@@ -5700,7 +5708,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		}
 	}
 
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
+	for (int iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
 	{
 		if (kBuilding.getDomainProductionModifier(iI) != 0)
 		{
@@ -5711,7 +5719,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 
 	bFirst = true;
 
-	for (iI = 0; iI < GC.getNumUnitInfos(); ++iI)
+	for (int iI = 0; iI < GC.getNumUnitInfos(); ++iI)
 	{
 		if (GC.getUnitInfo((UnitTypes)iI).getPrereqBuilding() == kBuilding.getBuildingClassType() || GC.getUnitInfo((UnitTypes)iI).isPrereqOrBuilding(kBuilding.getBuildingClassType()))
 		{
@@ -5724,7 +5732,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 
 	bFirst = true;
 
-	for (iI = 0; iI < GC.getNumBuildingClassInfos(); ++iI)
+	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); ++iI)
 	{
 		if (ePlayer != NO_PLAYER)
 		{

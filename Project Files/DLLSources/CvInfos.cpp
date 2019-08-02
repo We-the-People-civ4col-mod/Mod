@@ -827,6 +827,7 @@ bool CvDiplomacyResponse::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvPromotionInfo::CvPromotionInfo() :
+m_eIndex(NO_PROMOTION),
 m_iPrereqPromotion(NO_PROMOTION),
 m_iPrereqOrPromotion1(NO_PROMOTION),
 m_iPrereqOrPromotion2(NO_PROMOTION),
@@ -1244,6 +1245,10 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+
+	m_eIndex = static_cast<PromotionTypes>(getIndexForType(JIT_ARRAY_PROMOTION, getType()));
+	FAssert(m_eIndex != NO_PROMOTION);
+
 	pXML->GetChildXmlValByName(szTextVal, "Sound");
 	setSound(szTextVal);
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
@@ -1309,6 +1314,7 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvProfessionInfo::CvProfessionInfo() :
+	m_eIndex(NO_PROFESSION),
 	m_iUnitCombatType(NO_UNITCOMBAT),
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	// m_iYieldProduced(NO_YIELD),
@@ -1621,6 +1627,10 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+
+	m_eIndex = static_cast<ProfessionTypes>(getIndexForType(JIT_ARRAY_PROFESSION, getType()));
+	FAssert(m_eIndex != NO_PROFESSION);
+
 	pXML->GetChildXmlValByName(szTextVal, "Combat");
 	m_iUnitCombatType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "DefaultUnitAI");
@@ -2632,7 +2642,7 @@ m_aiUnitCombatModifier(NULL),
 m_aiDomainModifier(NULL),
 m_aiYieldModifier(NULL),
 // R&R, Androrc, Domestic Market
-m_aiYieldDemand(NULL),
+m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
 //Androrc End
 m_aiBonusYieldChange(NULL),
 m_aiYieldChange(NULL),
@@ -2677,9 +2687,6 @@ CvUnitInfo::~CvUnitInfo()
 	SAFE_DELETE_ARRAY(m_aiUnitCombatModifier);
 	SAFE_DELETE_ARRAY(m_aiDomainModifier);
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
-	// R&R, Androrc, Domestic Market
-	SAFE_DELETE_ARRAY(m_aiYieldDemand);
-	//Androrc End
 	SAFE_DELETE_ARRAY(m_aiBonusYieldChange);
 	SAFE_DELETE_ARRAY(m_aiYieldChange);
 	SAFE_DELETE_ARRAY(m_aiYieldCost);
@@ -3140,14 +3147,6 @@ int CvUnitInfo::getYieldModifier(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiYieldModifier ? m_aiYieldModifier[i] : -1;
 }
-// R&R, Androrc, Domestic Market
-int CvUnitInfo::getYieldDemand(int i) const
-{
-	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_aiYieldDemand ? m_aiYieldDemand[i] : -1;
-}
-//Androrc End
 int CvUnitInfo::getBonusYieldChange(int i) const
 {
 	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
@@ -3518,11 +3517,6 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_aiYieldModifier);
 	m_aiYieldModifier = new int[NUM_YIELD_TYPES];
 	stream->Read(NUM_YIELD_TYPES, m_aiYieldModifier);
-	// R&R, Androrc, Domestic Market
-	SAFE_DELETE_ARRAY(m_aiYieldDemand);
-	m_aiYieldDemand = new int[NUM_YIELD_TYPES];
-	stream->Read(NUM_YIELD_TYPES, m_aiYieldDemand);
-	//Androrc End
 	SAFE_DELETE_ARRAY(m_aiBonusYieldChange);
 	m_aiBonusYieldChange = new int[NUM_YIELD_TYPES];
 	stream->Read(NUM_YIELD_TYPES, m_aiBonusYieldChange);
@@ -3715,9 +3709,6 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumUnitCombatInfos(), m_aiUnitCombatModifier);
 	stream->Write(NUM_DOMAIN_TYPES, m_aiDomainModifier);
 	stream->Write(NUM_YIELD_TYPES, m_aiYieldModifier);
-	// R&R, Androrc, Domestic Market
-	stream->Write(NUM_YIELD_TYPES, m_aiYieldDemand);
-	//Androrc End
 	stream->Write(NUM_YIELD_TYPES, m_aiBonusYieldChange);
 	stream->Write(NUM_YIELD_TYPES, m_aiYieldChange);
 	stream->Write(NUM_YIELD_TYPES, m_aiYieldCost);
@@ -3899,7 +3890,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiDomainModifier, "DomainMods", NUM_DOMAIN_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldModifier, "YieldModifiers", NUM_YIELD_TYPES, 0);
 	// R&R, Androrc, Domestic Market
-	pXML->SetVariableListTagPair(&m_aiYieldDemand, "YieldDemands", NUM_YIELD_TYPES, 0);
+	m_info_YieldDemands.read(pXML, getType(), "YieldDemands");
 	//Androrc End
 	pXML->SetVariableListTagPair(&m_aiBonusYieldChange, "BonusYieldChanges", NUM_YIELD_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldChange, "YieldChanges", NUM_YIELD_TYPES, 0);
@@ -4159,6 +4150,7 @@ bool CvSpecialUnitInfo::read(CvXMLLoadUtility* pXML)
 //------------------------------------------------------------------------------------------------------
 CvCivicInfo::CvCivicInfo() :
 m_iCivicOptionType(NO_CIVICOPTION),
+m_eCivEffect(NO_CIV_EFFECT),
 m_iAIWeight(0),
 m_iGreatGeneralRateModifier(0),
 m_iDomesticGreatGeneralRateModifier(0),
@@ -4418,6 +4410,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "CivicOptionType");
 	m_iCivicOptionType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iDomesticGreatGeneralRateModifier, "iDomesticGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iFreeExperience, "iFreeExperience");
@@ -4763,6 +4756,8 @@ m_bCapital(false),
 m_bNationalWonder(false), // R&R, ray, National Wonders
 m_bNeverCapture(false),
 m_bCenterInCity(false),
+m_iDomesticMarketModifier(0),
+m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
 m_aiProductionTraits(NULL),
 m_aiLandPlotYieldChange(NULL), // R&R, ray, Landplot Yields
 m_aiSeaPlotYieldChange(NULL),
@@ -5318,6 +5313,8 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiProductionTraits, "ProductionTraits", GC.getNumTraitInfos(), 0);
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetChildXmlValByName(&m_iDomesticMarketModifier, "iDomesticMarketModifier");
+	m_info_YieldDemands.read(pXML, getType(), "YieldDemands");
 	pXML->GetChildXmlValByName(&m_bWorksWater, "bWorksWater");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bRiver, "bRiver");
@@ -5714,6 +5711,7 @@ m_bNorthAmericanNative(false),
 m_bSouthAmericanNative(false),
 m_bCentralAmericanNative(false),
 // R&R, ray, Correct Geographical Placement of Natives - END
+m_eCivEffect(NO_CIV_EFFECT),
 m_aiCivilizationBuildings(NULL),
 m_aiCivilizationUnits(NULL),
 m_aiCivilizationInitialCivics(NULL),
@@ -6281,6 +6279,9 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bSouthAmericanNative, "bSouthAmericanNative");
 	pXML->GetChildXmlValByName(&m_bCentralAmericanNative, "bCentralAmericanNative");
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
 	{
 		pXML->SetStringList(&m_paszCityNames, &m_iNumCityNames);
@@ -9046,6 +9047,7 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvYieldInfo::CvYieldInfo() :
+m_eIndex(NO_YIELD),
 m_iChar(0),
 m_iBuyPriceLow(0),
 m_iBuyPriceHigh(0),
@@ -9280,6 +9282,10 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+
+	m_eIndex = static_cast<YieldTypes>(getIndexForType(JIT_ARRAY_YIELD, getType()));
+	FAssert(m_eIndex != NO_YIELD);
+
 	pXML->GetChildXmlValByName(&m_iBuyPriceLow, "iBuyPriceLow");
 	pXML->GetChildXmlValByName(&m_iBuyPriceHigh, "iBuyPriceHigh");
 	// TAC - Price Limits - Ray - START
@@ -10509,6 +10515,7 @@ bool CvEuropeInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvTraitInfo::CvTraitInfo() :
+	m_eCivEffect(NO_CIV_EFFECT),
 	m_iLevelExperienceModifier(0),
 	m_iGreatGeneralRateModifier(0),
 	m_iDomesticGreatGeneralRateModifier(0),
@@ -10988,6 +10995,8 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	}
 	pXML->GetChildXmlValByName(szTextVal, "ShortDescription");
 	setShortDescription(szTextVal);
+
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 
 	pXML->GetChildXmlValByName(&m_iLevelExperienceModifier, "iLevelExperienceModifier");
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
@@ -12329,6 +12338,7 @@ m_iGreatGeneralPercent(0),
 m_iEventChancePerTurn(0),
 m_iSoundtrackSpace(0),
 m_iNumSoundtracks(0),
+m_eCivEffect(NO_CIV_EFFECT),
 m_bRevolution(false),
 m_bNoGoodies(false),
 m_bFirstSoundtrackFirst(false),
@@ -12448,6 +12458,7 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_bRevolution, "bRevolution");
 	pXML->GetChildXmlValByName(&m_bNoGoodies, "bNoGoodies");
 	pXML->GetChildXmlValByName(&m_iGameTurn, "iGameTurn");
@@ -15128,6 +15139,7 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 CvFatherInfo::CvFatherInfo() :
 	m_iFatherCategory(NO_FATHERCATEGORY),
 	m_iTrait(NO_TRAIT),
+	m_eCivEffect(NO_CIV_EFFECT),
 	m_aiFreeUnits(NULL),
 	m_aiPointCost(NULL),
 	m_abRevealImprovement(NULL)
@@ -15247,6 +15259,8 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
 	pXML->GetChildXmlValByName(szTextVal, "Trait");
 	m_iTrait = GC.getInfoTypeForString(szTextVal);
+
+	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 
 	pXML->SetVariableListTagPair(&m_aiFreeUnits, "FreeUnits", GC.getNumUnitClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiPointCost, "FatherPointCosts", GC.getNumFatherPointInfos(), 0);
@@ -15836,3 +15850,139 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 }
 // TAC - AI More Immigrants - koma13 - END
 
+///
+/// CivEffect
+///
+
+CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
+// allow
+	: m_info_AllowBonuses                  (JIT_ARRAY_BONUS              , JIT_ARRAY_ALLOW)
+	, m_info_AllowBuilds                   (JIT_ARRAY_BUILD              , JIT_ARRAY_ALLOW)
+	, m_info_AllowBuildings                (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
+	, m_info_AllowCivics                   (JIT_ARRAY_CIVIC              , JIT_ARRAY_ALLOW)
+	, m_info_AllowImmigrants               (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
+	, m_info_AllowImprovements             (JIT_ARRAY_IMPROVEMENT        , JIT_ARRAY_ALLOW)
+	, m_info_AllowProfessions              (JIT_ARRAY_PROFESSION         , JIT_ARRAY_ALLOW)
+	, m_info_AllowPromotions               (JIT_ARRAY_PROMOTION          , JIT_ARRAY_ALLOW)
+	, m_info_AllowRoutes                   (JIT_ARRAY_ROUTE              , JIT_ARRAY_ALLOW)
+	, m_info_AllowUnits                    (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
+	, m_info_AllowYields                   (JIT_ARRAY_YIELD              , JIT_ARRAY_ALLOW)
+
+	// city
+	, m_iCanUseDomesticMarket(0)
+
+	// growth
+	, m_iNumUnitsOnDockChange(0)
+
+	// unit
+	, m_info_FreePromotions                (JIT_ARRAY_PROMOTION          , JIT_ARRAY_ALLOW)
+	, m_info_FreePromotionsForProfessions  (JIT_ARRAY_PROFESSION         , JIT_ARRAY_PROMOTION,     JIT_ARRAY_ALLOW)
+	, m_info_FreePromotionsForUnitCombats  (JIT_ARRAY_UNIT_COMBAT        , JIT_ARRAY_PROMOTION,     JIT_ARRAY_ALLOW)
+{
+	if (bAutogenerateAllow)
+	{
+		// Make a CivEffect, which is applied to all players at the start/load
+
+		// the goal is to set the allow array start values in CvPlayer as follows:
+		// If a CivEffect provides a positive number: 0
+		// If no CivEffect can unlock the item: 1
+
+		// This will make anything, which isn't unlockable appear at game start
+		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
+		//   whenever there is a positive value in a CivEffect
+
+		BonusArray<int> ja_Bonuses;
+		BuildArray<int> ja_Builds;
+		BuildingClassArray<int> ja_Buildings;
+		CivicArray<int> ja_Civics;
+		UnitClassArray<int> ja_Immigrants;
+		ImprovementArray<int> ja_Improvements;
+		ProfessionArray<int> ja_Professions;
+		PromotionArray<int> ja_Promotions;
+		RouteArray<int> ja_Routes;
+		UnitClassArray<int> ja_Units;
+		YieldArray<int> ja_Yields;
+
+		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
+		{
+			const CivEffectInfo& kInfo = GC.getCivEffectInfo(eCivEffect);
+			ja_Bonuses         .generateInitCivEffect(kInfo.getAllowedBonuses());
+			ja_Builds          .generateInitCivEffect(kInfo.getAllowedBuilds());
+			ja_Buildings       .generateInitCivEffect(kInfo.getAllowedBuildingClasses());
+			ja_Civics          .generateInitCivEffect(kInfo.getAllowedCivics());
+			ja_Immigrants      .generateInitCivEffect(kInfo.getAllowedImmigrants());
+			ja_Improvements    .generateInitCivEffect(kInfo.getAllowedImprovements());
+			ja_Professions     .generateInitCivEffect(kInfo.getAllowedProfessions());
+			ja_Promotions      .generateInitCivEffect(kInfo.getAllowedPromotions());
+			ja_Routes          .generateInitCivEffect(kInfo.getAllowedRoutes());
+			ja_Units           .generateInitCivEffect(kInfo.getAllowedUnitClasses());
+			ja_Yields          .generateInitCivEffect(kInfo.getAllowedYields());
+		}
+
+		m_info_AllowBonuses         .assign(&ja_Bonuses);
+		m_info_AllowBuilds          .assign(&ja_Builds);
+		m_info_AllowBuildings       .assign(&ja_Buildings);
+		m_info_AllowCivics          .assign(&ja_Civics);
+		m_info_AllowImmigrants      .assign(&ja_Immigrants);
+		m_info_AllowImprovements    .assign(&ja_Improvements);
+		m_info_AllowProfessions     .assign(&ja_Professions);
+		m_info_AllowPromotions      .assign(&ja_Promotions);
+		m_info_AllowRoutes          .assign(&ja_Routes);
+		m_info_AllowUnits           .assign(&ja_Units);
+		m_info_AllowYields          .assign(&ja_Yields);
+	}
+}
+
+CivEffectInfo::~CivEffectInfo()
+{
+}
+
+bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
+{
+	if (!CvInfoBase::read(pXML))
+	{
+		return false;
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupAllow"))
+	{
+		m_info_AllowBonuses                .read(pXML, getType(), "AllowBonuses"                );
+		m_info_AllowBuilds                 .read(pXML, getType(), "AllowBuilds"                 );
+		m_info_AllowBuildings              .read(pXML, getType(), "AllowBuildingClasses"        );
+		m_info_AllowCivics                 .read(pXML, getType(), "AllowCivics"                 );
+		m_info_AllowImmigrants             .read(pXML, getType(), "AllowImmigrants"             );
+		m_info_AllowImprovements           .read(pXML, getType(), "AllowImprovements"           );
+		m_info_AllowProfessions            .read(pXML, getType(), "AllowProfessions"            );
+		m_info_AllowPromotions             .read(pXML, getType(), "AllowPromotions"             );
+		m_info_AllowRoutes                 .read(pXML, getType(), "AllowRoutes"                 );
+		m_info_AllowUnits                  .read(pXML, getType(), "AllowUnitClasses"            );
+		m_info_AllowYields                 .read(pXML, getType(), "AllowYields"                 );
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupCity"))
+	{
+		pXML->GetChildXmlValByName(&m_iCanUseDomesticMarket, "iCanUseDomesticMarket");
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupGrowth"))
+	{
+		pXML->GetChildXmlValByName(&m_iNumUnitsOnDockChange, "iNumUnitsOnDockChange");
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "TagGroupUnit"))
+	{
+		m_info_FreePromotions              .read(pXML, getType(), "FreePromotions"              );
+		m_info_FreePromotionsForProfessions.read(pXML, getType(), "FreePromotionsForProfessions");
+		m_info_FreePromotionsForUnitCombats.read(pXML, getType(), "FreePromotionsForUnitCombats");
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	return true;
+}

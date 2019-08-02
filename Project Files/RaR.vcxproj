@@ -43,6 +43,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
+    <ClCompile Include="DLLSources\InfoCacheArray.cpp" />
+    <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp" />
+    <ClCompile Include="DLLSources\BoolArray.cpp" />
+    <ClCompile Include="DLLSources\InfoArray.cpp" />
+    <ClCompile Include="DLLSources\JustInTimeArray.cpp" />
+    <ClCompile Include="DLLSources\JustInTimeArrayGetType.h" />
+    <ClCompile Include="DLLSources\JustInTime_Features.cpp" />
     <ClCompile Include="DLLSources\CvArea.cpp" />
     <ClCompile Include="DLLSources\CvArtFileMgr.cpp" />
     <ClCompile Include="DLLSources\CvCity.cpp" />
@@ -80,7 +88,6 @@
     <ClCompile Include="DLLSources\CvTalkingHeadMessage.cpp" />
     <ClCompile Include="DLLSources\CvTeam.cpp" />
     <ClCompile Include="DLLSources\CvTeamAI.cpp" />
-    <ClCompile Include="DLLSources\CvTextScreens.cpp" />
     <ClCompile Include="DLLSources\CvTradeRoute.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteGroup.cpp" />
     <ClCompile Include="DLLSources\CvUnit.cpp" />
@@ -165,6 +172,13 @@
     <ClInclude Include="DLLSources\iconv\cp1255.h" />
     <ClInclude Include="DLLSources\iconv\cp1256.h" />
     <ClInclude Include="DLLSources\iconv\cp1257.h" />
+    <ClInclude Include="DLLSources\CvPlayerCivEffect.h" />
+    <ClInclude Include="DLLSources\EnumTypeCacheArray.h" />
+    <ClInclude Include="DLLSources\InfoCacheArray.h" />
+    <ClInclude Include="DLLSources\BoolArray.h" />
+    <ClInclude Include="DLLSources\InfoArray.h" />
+    <ClInclude Include="DLLSources\InfoArrayGet.h" />
+    <ClInclude Include="DLLSources\JustInTimeArrayTypes.h" />
     <ClInclude Include="DLLSources\CvArea.h" />
     <ClInclude Include="DLLSources\CvArtFileMgr.h" />
     <ClInclude Include="DLLSources\CvCity.h" />
@@ -364,7 +378,8 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -380,7 +395,8 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -396,7 +412,8 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -412,7 +429,8 @@ nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release-fast|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -430,7 +448,8 @@ bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -472,7 +491,8 @@ bin\jom build</NMakeReBuildCommandLine>
 set ONE_PLOT_CITY_RADIUS=1
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -491,7 +511,8 @@ nmake dll  /NOLOGO</NMakeReBuildCommandLine>
 set ONE_PLOT_CITY_RADIUS=1
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
@@ -528,7 +549,8 @@ bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
-    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+    <NMakeIncludeSearchPath>
+    </NMakeIncludeSearchPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>

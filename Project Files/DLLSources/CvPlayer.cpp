@@ -108,7 +108,9 @@ CvPlayer::CvPlayer()
 	m_ppiImprovementYieldChange = NULL;
 	m_ppiBuildingYieldChange = NULL;
 
-	m_cache_YieldEquipmentAmount = NULL; // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
+	m_cache_YieldEquipmentAmount = new YieldArray<unsigned short>[GC.getNumProfessionInfos()];
+	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	reset(NO_PLAYER, true);
 }
 
@@ -153,6 +155,9 @@ void CvPlayer::init(PlayerTypes eID)
 	//--------------------------------
 	// Init saved data
 	reset(eID);
+
+	// set the CivEffect cache
+	CivEffect()->rebuildCivEffectCache();
 
     /** NBMOD TAX **/
     m_iMaxTaxRate = GC.getHandicapInfo(getHandicapType()).NBMOD_GetInitMaxTaxRate();
@@ -902,11 +907,47 @@ void CvPlayer::initImmigration()
 {
 	FAssert(getParent() != NO_PLAYER);
 	m_aDocksNextUnits.clear();
-	for (int i = 0; i < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++i)
+	m_aDocksNextUnits.reserve(CivEffect()->getNumUnitsOnDock());
+	verifyImmigration();
+}
+
+// Make sure the number of units on the dock matches what the player is supposed to have by add/remove units.
+// Also replace any unit, which is no longer able to be available on the dock.
+void CvPlayer::verifyImmigration()
+{
+	FAssert(!this->isEurope());
+	FAssert(!this->isNative());
+
+	// remove units, which should no longer be there.
+	for (unsigned int i = 0; i < m_aDocksNextUnits.size(); ++i)
 	{
-		m_aDocksNextUnits.push_back(pickBestImmigrant());
+		UnitTypes eUnit = m_aDocksNextUnits[i];
+		if (eUnit != NO_UNIT && (!CivEffect()->canUseUnit(eUnit) || !CivEffect()->canUseImmigrant(eUnit)))
+		{
+			if (eUnit != NO_UNIT && (!CivEffect()->canUseUnit(eUnit) || !CivEffect()->canUseImmigrant(eUnit)))
+			{
+				m_aDocksNextUnits.erase(m_aDocksNextUnits.begin() + i);
+				--i; // compensate for ++i as next iteration needs to use the same value for i
+			}
+		}
+	}
+
+	if (m_aDocksNextUnits.size() > CivEffect()->getNumUnitsOnDock())
+	{
+		// Too many units on the dock.
+		// Remove from the right to match the number of units requested.
+		m_aDocksNextUnits.resize(CivEffect()->getNumUnitsOnDock());
+	}
+	else
+	{
+		// Add units until the requested amount of units have appeared.
+		while (m_aDocksNextUnits.size() < CivEffect()->getNumUnitsOnDock())
+		{
+			m_aDocksNextUnits.push_back(pickBestImmigrant());
+		}
 	}
 }
+
 
 void CvPlayer::addFreeUnitAI(UnitAITypes eUnitAI, int iCount)
 {
@@ -3667,7 +3708,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -3702,7 +3743,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 								// To prevent broken hurry button, do immigration, if Threshold got lowered below current crosses
 								while (getCrossesStored() >= immigrationThreshold())
 								{
-									doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), true);
+									doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
 								}
 
 								break;
@@ -4383,7 +4424,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if (kPlayer.getGold() >= priceStealingImmigrant)
 			{
 				// get random Unit from other European, we steal from
-				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant");
+				int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
 				UnitTypes eBestUnit = victimPlayer.getDocksNextUnit(randomUnitSelectOnDock);
 				if (NO_UNIT != eBestUnit)
 				{
@@ -5446,7 +5487,7 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	{
 		for (int gi = 0; gi < iGoodyImmigrants; gi++)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
@@ -6419,6 +6460,8 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 {
 	CvFatherInfo& kFatherInfo = GC.getFatherInfo(eFather);
 
+	CivEffect()->applyCivEffect(kFatherInfo.getCivEffect());
+
 	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
 	{
 		UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
@@ -6510,6 +6553,13 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 {
 	PROFILE_FUNC();
 
+	// CivEffect check
+	// Should be first because of lazy checking optimization. It's just a BoolArray lookup, hence very fast
+	if (!CivEffect()->canUseBuild(eBuild))
+	{
+		return false;
+	}
+
 	if (!(pPlot->canBuild(eBuild, getID(), bTestVisible)))
 	{
 		return false;
@@ -6521,35 +6571,6 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 			return false;
 		}
 	}
-
-	// R&R, ray, Monasteries and Forts - START
-	// just for safety because AI would not use them wisely
-	if (!isHuman())
-	{
-		// do not allow AI to build Railroads, because they are not useful enough to them
-		RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
-		if (eRoute != NO_ROUTE && GC.getRouteInfo(eRoute).getValue() == 3)
-		{
-			return false;
-		}
-
-		//R&R mod, vetiarvind, "Super forts" merge. Allow Forts for AI
-		// do not allow AI to build Forts and Monasteries, because they are not useful enough to them
-		ImprovementTypes eImprovement = ((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement()));
-		if (eImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eImprovement).isMonastery())
-		//if (eImprovement != NO_IMPROVEMENT && (GC.getImprovementInfo(eImprovement).isFort() ||  GC.getImprovementInfo(eImprovement).isMonastery())) -- original
-		{
-			return false;
-		}
-
-		// R&R, ray, Terraforming Features - START
-		if (GC.getBuildInfo(eBuild).getPrereqTerrain() != NO_TERRAIN)
-		{
-			return false;
-		}
-		// R&R, ray, Terraforming Features - END
-	}
-	// R&R, ray, Monasteries and Forts - END
 
 	return true;
 }
@@ -6695,6 +6716,12 @@ bool CvPlayer::canDoCivics(CivicTypes eCivic) const
 	if (eCivic == NO_CIVIC)
 	{
 		return true;
+	}
+
+	// CivEffect check
+	if (!CivEffect()->canUseCivic(eCivic))
+	{
+		return false;
 	}
 
 	if(GC.getUSE_CAN_DO_CIVIC_CALLBACK())
@@ -8218,6 +8245,25 @@ void CvPlayer::setCurrentEra(EraTypes eNewValue)
 	{
 		EraTypes eOldEra = m_eCurrentEra;
 		m_eCurrentEra = eNewValue;
+
+		// apply CivEffects
+		for (EraTypes eEra = static_cast<EraTypes>(eOldEra + 1); eEra <= eNewValue; ++eEra)
+		{
+			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
+			{
+				CivEffect()->applyCivEffect(GC.getEraInfo(eEra).getCivEffect());
+			}
+		}
+
+		// remove era CivEffects in case the player goes back in eras
+		// likely not needed, but it's better to be safe than sorry
+		for (EraTypes eEra = static_cast<EraTypes>(eNewValue + 1); eEra <= eOldEra; ++eEra)
+		{
+			if (eEra >= FIRST_ERA && eEra < NUM_ERA_TYPES)
+			{
+				CivEffect()->applyCivEffect(GC.getEraInfo(eEra).getCivEffect(), - 1);
+			}
+		}
 
 		if (GC.getGameINLINE().getActiveTeam() != NO_TEAM)
 		{
@@ -11046,11 +11092,11 @@ void CvPlayer::doCrosses()
 		{
 			// TAC - short messages for immigration after fist - RAY
 			if (imCount == 0) {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), false);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), false);
 				imCount++;
 			}
 			else {
-				doImmigrant(GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant"), true);
+				doImmigrant(GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant"), true);
 			}
 		}
 	}
@@ -12371,6 +12417,8 @@ void CvPlayer::processCivics(CivicTypes eCivic, int iChange)
 {
 	CvCivicInfo& kCivicInfo = GC.getCivicInfo(eCivic);
 
+	CivEffect()->applyCivEffect(kCivicInfo.getCivEffect(), iChange);
+
 	changeGreatGeneralRateModifier(kCivicInfo.getGreatGeneralRateModifier() * iChange);
 	changeDomesticGreatGeneralRateModifier(kCivicInfo.getDomesticGreatGeneralRateModifier() * iChange);
 	changeFreeExperience(kCivicInfo.getFreeExperience() * iChange);
@@ -12722,6 +12770,11 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	{
 		pStream->Read(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
 	}
+
+	// The CivEffect cache isn't saved. Instead it's recalculated on load.
+	// This will make it adapt to changed xml settings.
+	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
+	CivEffect()->rebuildCivEffectCache();
 
 	m_groupCycle.Read(pStream);
 	{
@@ -18291,20 +18344,11 @@ void CvPlayer::Update_cache_YieldEquipmentAmount(ProfessionTypes eProfession)
 
 void CvPlayer::Update_cache_YieldEquipmentAmount()
 {
-	if (m_eID <= NO_PLAYER || m_aiProfessionEquipmentModifier == NULL || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
+	///TKs Nightinggale fix
+	if (m_eID <= NO_PLAYER || GC.getGameINLINE().getHandicapType() == NO_HANDICAP)
 	{
 		// Some update calls gets triggered during player init. They can safely be ignored.
 		return;
-	}
-
-	if (m_cache_YieldEquipmentAmount == NULL)
-	{
-		// only init NULL pointers.
-		// don't do anything about already allocated arrays as data is overwritten anyway.
-		m_cache_YieldEquipmentAmount = new YieldArray<int>[GC.getNumProfessionInfos()];
-		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
-			m_cache_YieldEquipmentAmount[iProfession].init();
-		}
 	}
 
 	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
@@ -18316,6 +18360,12 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 {
 	if (eProfession != NO_PROFESSION)
 	{
+		// CivEffect check
+		if (!CivEffect()->canUseProfession(eProfession))
+		{
+			return false;
+		}
+
 		if (!GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eProfession))
 		{
 			return false;
@@ -18613,16 +18663,16 @@ UnitTypes CvPlayer::getDocksNextUnit(int i) const
 
 UnitTypes CvPlayer::pickBestImmigrant()
 {
-	std::vector<int> aiWeights(GC.getNumUnitInfos(), 0);
-	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
+	std::vector<int> aiWeights(NUM_UNIT_TYPES, 0);
+	for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 	{
-		UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iUnitClass);
-		if (NO_UNIT != eUnit)
+		if (CivEffect()->canUseUnit(eUnit) && CivEffect()->canUseImmigrant(eUnit))
 		{
-			int iWeight = GC.getUnitInfo(eUnit).getImmigrationWeight();
-			for (int i = 0; i < getUnitClassImmigrated((UnitClassTypes) iUnitClass); ++i)
+			CvUnitInfo *pInfo = &GC.getUnitInfo(eUnit);
+			int iWeight = pInfo->getImmigrationWeight();
+			for (int i = 0; i < getUnitClassImmigrated(static_cast<UnitClassTypes>(pInfo->getUnitClassType())); ++i)
 			{
-				iWeight *= std::max(0, 100 - GC.getUnitInfo(eUnit).getImmigrationWeightDecay());
+				iWeight *= std::max(0, 100 - pInfo->getImmigrationWeightDecay());
 				iWeight /= 100;
 			}
 
@@ -21223,7 +21273,7 @@ void CvPlayer::checkForStealingImmigrant()
 		// simply buy immigrant for cheaper price if AI has enough gold
 		if (getGold() > priceStealingImmigrant * 3)
 		{
-			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("DOCKS_NEXT_UNITS"), "pick immigrant");
+			int randomUnitSelectOnDock = GC.getGameINLINE().getSorenRandNum(CivEffect()->getNumUnitsOnDock(), "pick immigrant");
 			UnitTypes eBestUnit = getDocksNextUnit(randomUnitSelectOnDock);
 			if (NO_UNIT != eBestUnit)
 			{
