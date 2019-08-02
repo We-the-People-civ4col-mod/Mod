@@ -9,6 +9,10 @@
       <Configuration>1 plot debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="1 plot release|Win32">
+      <Configuration>1 plot release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="1 plot|Win32">
       <Configuration>1 plot</Configuration>
       <Platform>Win32</Platform>
@@ -287,6 +291,11 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -323,6 +332,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release-fast|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='1 plot release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='1 plot|Win32'" Label="PropertySheets">
@@ -416,6 +428,27 @@ nmake fastdep /NOLOGO
 nmake precompile  /NOLOGO
 bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
+nmake clean /NOLOGO</NMakeCleanCommandLine>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='1 plot release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>set TARGET=Release
+set ONE_PLOT_CITY_RADIUS=1
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake precompile  /NOLOGO
+bin\jom build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set TARGET=Release
+set ONE_PLOT_CITY_RADIUS=1
+nmake clean /NOLOGO
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake precompile  /NOLOGO
+bin\jom build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set TARGET=Release
+set ONE_PLOT_CITY_RADIUS=1
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>..\sourceMOD</NMakeIncludeSearchPath>
