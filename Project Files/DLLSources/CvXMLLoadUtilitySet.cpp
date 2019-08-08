@@ -772,13 +772,6 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_GREAT_ADMIRAL", idx);
 		// R&R, ray, Great Admirals - END
 
-		/// one/two city plot radius
-#ifndef ONE_PLOT_CITY_RADIUS
-		GC.setDefineINT("MIN_CITY_RANGE", GC.getDefineINT("MIN_CITY_RANGE_TWO_PLOT"));
-		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
-#endif
-		// city radius end
-
 		SetGlobalDefine("WATER_UNIT_FACING_DIRECTION", szVal);
 		bool bFound = false;
 		for(int iDirection=0; iDirection < NUM_DIRECTION_TYPES; ++iDirection)

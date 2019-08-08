@@ -57,16 +57,9 @@
 #define DIRECTION_RADIUS											(1)
 #define DIRECTION_DIAMETER										((DIRECTION_RADIUS * 2) + 1)
 
-#ifdef ONE_PLOT_CITY_RADIUS
-#define NUM_CITY_PLOTS												(9)
-#define CITY_PLOTS_RADIUS											(1)
-#else
-#define NUM_CITY_PLOTS												(25)	// R&R, ray, 2 Plot Radius
-#define CITY_PLOTS_RADIUS											(2)		// R&R, ray, 2 Plot Radius
-#endif
+#define NUM_CITY_PLOTS_RADIUS_2                                    (25)
 #define NUM_CITY_PLOTS_RADIUS_1										(9)		// R&R, ray, 2 Plot Radius							
 #define CITY_HOME_PLOT												(0)
-#define CITY_PLOTS_DIAMETER										((CITY_PLOTS_RADIUS*2) + 1)
 
 #define GAME_NAME															("Game")
 

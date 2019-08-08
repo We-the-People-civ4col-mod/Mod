@@ -21,6 +21,12 @@
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
 
+#include <stdlib.h>
+
+int NUM_CITY_PLOTS;
+int CITY_PLOTS_DIAMETER;
+int CITY_PLOTS_RADIUS;
+
 #define COPY(dst, src, typeName) \
 	{ \
 		int iNum = sizeof(src)/sizeof(typeName); \
@@ -79,6 +85,9 @@ m_aiPlotCardinalDirectionY(NULL),
 m_aiCityPlotX(NULL),
 m_aiCityPlotY(NULL),
 m_aiCityPlotPriority(NULL),
+m_aaiXYCityPlot(NULL),
+m_aaiXYCityPlot_1_plot(NULL),
+m_aaiXYCityPlot_2_plot(NULL),
 m_aeTurnLeftDirection(NULL),
 m_aeTurnRightDirection(NULL),
 m_VarSystem(NULL),
@@ -383,45 +392,40 @@ void CvGlobals::init()
 		0,	// CARDINALDIRECTION_WEST
 	};
 
-	int aiCityPlotX[NUM_CITY_PLOTS] =
+	int aiCityPlotX[NUM_CITY_PLOTS_RADIUS_2] =
 	{
 		0,
 		0, 1, 1, 1, 0,-1,-1,-1,
-#ifndef ONE_PLOT_CITY_RADIUS
 		0, 1, 2, 2, 2, 1, 0,-1,-2,-2,-2,-1,	// R&R, ray, 2 Plot Radius
 		2, 2,-2,-2, // R&R, ray, 2 Plot Radius
-#endif
 	};
 
-	int aiCityPlotY[NUM_CITY_PLOTS] =
+	int aiCityPlotY[NUM_CITY_PLOTS_RADIUS_2] =
 	{
 		0,
 		1, 1, 0,-1,-1,-1, 0, 1,
-#ifndef ONE_PLOT_CITY_RADIUS
 		2, 2, 1, 0,-1,-2,-2,-2,-1, 0, 1, 2,	// R&R, ray, 2 Plot Radius
 		2,-2,-2, 2, // R&R, ray, 2 Plot Radius
-#endif
 	};
 
-	int aiCityPlotPriority[NUM_CITY_PLOTS] =
+	int aiCityPlotPriority[NUM_CITY_PLOTS_RADIUS_2] =
 	{
 		0,
 		1, 2, 1, 2, 1, 2, 1, 2,
-#ifndef ONE_PLOT_CITY_RADIUS
 		3, 4, 4, 3, 4, 4, 3, 4, 4, 3, 4, 4,	// R&R, ray, 2 Plot Radius
 		4, 4, 4, 4, // R&R, ray, 2 Plot Radius
-#endif
 	};
 
-	int aaiXYCityPlot[CITY_PLOTS_DIAMETER][CITY_PLOTS_DIAMETER] =
+	int aaiXYCityPlot_1_plot[3][3] =
 	{
-#ifdef ONE_PLOT_CITY_RADIUS
 		{6, 7, 8,},
 
 		{5, 0, 1,},
 
 		{4, 3, 2,},
-#else
+	};
+	int aaiXYCityPlot_2_plot[5][5] =
+	{
 		{23, 17, 18, 19, 24,},	// R&R, ray, 2 Plot Radius - START
 
 		{16, 6, 7, 8, 20,},
@@ -431,7 +435,6 @@ void CvGlobals::init()
 		{14, 4, 3, 2, 10,},
 
 		{22, 13, 12, 11, 21,}	// R&R, ray, 2 Plot Radius - END
-#endif
 	};
 
 	DirectionTypes aeTurnRightDirection[NUM_DIRECTION_TYPES] =
@@ -492,8 +495,39 @@ void CvGlobals::init()
 	COPY(m_aiCityPlotPriority, aiCityPlotPriority, int);
 	COPY(m_aeTurnLeftDirection, aeTurnLeftDirection, DirectionTypes);
 	COPY(m_aeTurnRightDirection, aeTurnRightDirection, DirectionTypes);
-	memcpy(m_aaiXYCityPlot, aaiXYCityPlot, sizeof(m_aaiXYCityPlot));
 	memcpy(m_aaeXYDirection, aaeXYDirection,sizeof(m_aaeXYDirection));
+
+	m_aaiXYCityPlot_1_plot = (int*)malloc(sizeof(aaiXYCityPlot_1_plot));
+	memcpy(m_aaiXYCityPlot_1_plot, aaiXYCityPlot_1_plot, sizeof(aaiXYCityPlot_1_plot));
+	m_aaiXYCityPlot_2_plot = (int*)malloc(sizeof(aaiXYCityPlot_2_plot));
+	memcpy(m_aaiXYCityPlot_2_plot, aaiXYCityPlot_2_plot, sizeof(aaiXYCityPlot_2_plot));
+
+	this->setCityCatchmentRadius(0);
+}
+
+void CvGlobals::setCityCatchmentRadius(int iRadius)
+{
+	++iRadius;
+	if (iRadius != CITY_PLOTS_RADIUS)
+	{
+		CITY_PLOTS_RADIUS = iRadius;
+		if (iRadius == 1)
+		{
+			m_aaiXYCityPlot = m_aaiXYCityPlot_1_plot;
+			NUM_CITY_PLOTS = 9;
+			CITY_PLOTS_DIAMETER = 3;
+			m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
+			GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT"));
+		}
+		else
+		{
+			m_aaiXYCityPlot = m_aaiXYCityPlot_2_plot;
+			NUM_CITY_PLOTS = 25;
+			CITY_PLOTS_DIAMETER = 5;
+			m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE_TWO_PLOT");
+			GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
+		}
+	}
 }
 
 //
@@ -768,7 +802,7 @@ int CvGlobals::getXYCityPlot(int i, int j)
 	FAssertMsg(i > -1, "Index out of bounds");
 	FAssertMsg(j < CITY_PLOTS_DIAMETER, "Index out of bounds");
 	FAssertMsg(j > -1, "Index out of bounds");
-	return m_aaiXYCityPlot[i][j];
+	return m_aaiXYCityPlot[i + (CITY_PLOTS_DIAMETER * j)];
 }
 
 DirectionTypes* CvGlobals::getTurnLeftDirection()
@@ -2432,7 +2466,6 @@ void CvGlobals::cacheGlobals()
 	m_iEVENT_MESSAGE_TIME = getDefineINT("EVENT_MESSAGE_TIME");
 	m_iROUTE_FEATURE_GROWTH_MODIFIER = getDefineINT("ROUTE_FEATURE_GROWTH_MODIFIER");
 	m_iFEATURE_GROWTH_MODIFIER = getDefineINT("FEATURE_GROWTH_MODIFIER");
-	m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
 	m_iCITY_MAX_NUM_BUILDINGS = getDefineINT("CITY_MAX_NUM_BUILDINGS");
 	m_iLAKE_MAX_AREA_SIZE = getDefineINT("LAKE_MAX_AREA_SIZE");
 	m_iMIN_WATER_SIZE_FOR_OCEAN = getDefineINT("MIN_WATER_SIZE_FOR_OCEAN");

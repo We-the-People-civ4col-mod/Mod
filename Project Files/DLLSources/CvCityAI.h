@@ -204,9 +204,9 @@ protected:
 	int* m_aiEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
-	int m_aiBestBuildValue[NUM_CITY_PLOTS];
+	int m_aiBestBuildValue[NUM_CITY_PLOTS_RADIUS_2];
 
-	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS];
+	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS_RADIUS_2];
 
 	bool* m_abEmphasize;
 

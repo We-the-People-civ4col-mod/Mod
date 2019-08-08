@@ -122,6 +122,9 @@ class CivEffectInfo;
 #include "InfoCacheArray.h"
 #include "EnumTypeCacheArray.h"
 
+extern int NUM_CITY_PLOTS;
+extern int CITY_PLOTS_DIAMETER;
+extern int CITY_PLOTS_RADIUS;
 
 class CvGlobals
 {
@@ -919,6 +922,8 @@ public:
 
 	const YieldTypeArray& getUnitYieldDemandTypes() const { return m_acUnitYieldDemandTypes; }
 
+	void setCityCatchmentRadius(int iSetting);
+
 protected:
 
 	bool m_bGraphicsInitialized;
@@ -977,7 +982,9 @@ protected:
 	int* m_aiCityPlotX;	// [NUM_CITY_PLOTS];
 	int* m_aiCityPlotY;	// [NUM_CITY_PLOTS];
 	int* m_aiCityPlotPriority;	// [NUM_CITY_PLOTS];
-	int m_aaiXYCityPlot[CITY_PLOTS_DIAMETER][CITY_PLOTS_DIAMETER];
+	int* m_aaiXYCityPlot;// [CITY_PLOTS_DIAMETER][CITY_PLOTS_DIAMETER];
+	int* m_aaiXYCityPlot_1_plot;
+	int* m_aaiXYCityPlot_2_plot;
 
 	DirectionTypes* m_aeTurnLeftDirection;	// [NUM_DIRECTION_TYPES];
 	DirectionTypes* m_aeTurnRightDirection;	// [NUM_DIRECTION_TYPES];

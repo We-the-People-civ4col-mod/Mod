@@ -1864,7 +1864,8 @@ enum DefineFlags
 int getDefineFlagsForDLL()
 {
 	int iDefineFlags = 0;
-#ifdef ONE_PLOT_CITY_RADIUS
+#if 0 // ONE_PLOT_CITY_RADIUS
+	// value no longer used
 	iDefineFlags += DEFINE_FLAG_ONE_PLOT_CITY_RADIUS;
 #endif
 	return iDefineFlags;

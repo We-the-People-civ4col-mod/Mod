@@ -605,6 +605,8 @@ enum DllExport EuropeTypes
 enum DllExport CustomMapOptionTypes
 {
 	NO_CUSTOM_MAPOPTION = -1,
+
+	CUSTOM_MAPOPTION_CITY_RADIUS,
 };
 
 enum DllExport WorldSizeTypes

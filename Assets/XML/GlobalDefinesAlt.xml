@@ -774,6 +774,10 @@
 		<DefineTextVal>YIELD_CULTURE</DefineTextVal>
 	</Define>
 	<Define>
+		<DefineName>CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT</DefineName>
+		<fDefineFloatVal>3500</fDefineFloatVal>
+	</Define>
+	<Define>
 		<DefineName>CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT</DefineName>
 		<fDefineFloatVal>5650</fDefineFloatVal>
 	</Define>

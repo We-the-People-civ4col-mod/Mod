@@ -5159,7 +5159,7 @@ bool CvCityAI::AI_foodAvailable(int iExtra) const
 	PROFILE_FUNC();
 
 	CvPlot* pLoopPlot;
-	bool abPlotAvailable[NUM_CITY_PLOTS];
+	bool abPlotAvailable[NUM_CITY_PLOTS_RADIUS_2];
 	int iFoodCount;
 	int iPopulation;
 	int iBestPlot;

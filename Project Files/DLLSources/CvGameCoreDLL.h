@@ -17,7 +17,7 @@
 #include <windows.h>
 #include <MMSystem.h>
 #if defined _DEBUG && !defined USE_MEMMANAGER
-#define USE_MEMMANAGER
+//#define USE_MEMMANAGER
 #include <crtdbg.h>
 #endif
 #include <vector>

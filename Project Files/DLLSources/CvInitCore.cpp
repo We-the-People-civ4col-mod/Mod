@@ -1010,6 +1010,7 @@ void CvInitCore::setCustomMapOptions(int iNumCustomMapOptions, const CustomMapOp
 		{
 			m_aeCustomMapOptions[i] = aeCustomMapOptions[i];
 		}
+		GC.setCityCatchmentRadius(m_aeCustomMapOptions[CUSTOM_MAPOPTION_CITY_RADIUS]);
 	}
 }
 
@@ -1032,6 +1033,10 @@ void CvInitCore::setCustomMapOption(int iOptionID, CustomMapOptionTypes eCustomM
 	if ( checkBounds(iOptionID, 0, m_iNumCustomMapOptions) )
 	{
 		m_aeCustomMapOptions[iOptionID] = eCustomMapOption;
+		if (eCustomMapOption == CUSTOM_MAPOPTION_CITY_RADIUS)
+		{
+			GC.setCityCatchmentRadius(iOptionID);
+		}
 	}
 }
 
@@ -1874,6 +1879,8 @@ void CvInitCore::read(FDataStreamBase* pStream)
 		m_aeCustomMapOptions = new CustomMapOptionTypes[m_iNumCustomMapOptions];
 		pStream->Read(m_iNumCustomMapOptions, (int*)m_aeCustomMapOptions);
 	}
+
+	GC.setCityCatchmentRadius(m_aeCustomMapOptions[CUSTOM_MAPOPTION_CITY_RADIUS]);
 
 	SAFE_DELETE_ARRAY(m_abVictories);
 	pStream->Read(&m_iNumVictories);
