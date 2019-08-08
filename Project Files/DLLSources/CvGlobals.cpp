@@ -23,10 +23,6 @@
 
 #include <stdlib.h>
 
-int NUM_CITY_PLOTS;
-int CITY_PLOTS_DIAMETER;
-int CITY_PLOTS_RADIUS;
-
 #define COPY(dst, src, typeName) \
 	{ \
 		int iNum = sizeof(src)/sizeof(typeName); \
@@ -392,7 +388,7 @@ void CvGlobals::init()
 		0,	// CARDINALDIRECTION_WEST
 	};
 
-	int aiCityPlotX[NUM_CITY_PLOTS_RADIUS_2] =
+	int aiCityPlotY[NUM_CITY_PLOTS_RADIUS_2] =
 	{
 		0,
 		0, 1, 1, 1, 0,-1,-1,-1,
@@ -400,7 +396,7 @@ void CvGlobals::init()
 		2, 2,-2,-2, // R&R, ray, 2 Plot Radius
 	};
 
-	int aiCityPlotY[NUM_CITY_PLOTS_RADIUS_2] =
+	int aiCityPlotX[NUM_CITY_PLOTS_RADIUS_2] =
 	{
 		0,
 		1, 1, 0,-1,-1,-1, 0, 1,
@@ -507,6 +503,7 @@ void CvGlobals::init()
 
 void CvGlobals::setCityCatchmentRadius(int iRadius)
 {
+#ifndef CHECK_GLOBAL_CONSTANTS
 	++iRadius;
 	if (iRadius != CITY_PLOTS_RADIUS)
 	{
@@ -528,6 +525,7 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 			GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
 		}
 	}
+#endif
 }
 
 //

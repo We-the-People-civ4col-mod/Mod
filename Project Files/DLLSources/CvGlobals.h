@@ -122,10 +122,6 @@ class CivEffectInfo;
 #include "InfoCacheArray.h"
 #include "EnumTypeCacheArray.h"
 
-extern int NUM_CITY_PLOTS;
-extern int CITY_PLOTS_DIAMETER;
-extern int CITY_PLOTS_RADIUS;
-
 class CvGlobals
 {
 //	friend class CvDLLUtilityIFace;

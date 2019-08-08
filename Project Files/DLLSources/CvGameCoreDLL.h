@@ -271,6 +271,8 @@ class PyObject;
 #include "InfoArray.h"
 #include "InfoCacheArray.h"
 
+#include "CvGlobalConstants.h"
+
 #include "CvGlobals.h"
 
 #include "CvPlayerAI.h"
