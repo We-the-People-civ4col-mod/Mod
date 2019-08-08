@@ -196,20 +196,21 @@ bool JustInTimeArray<T>::addCache(int iChange, const InfoArray& kIarray, const C
 	for (int i = 0; i < iLength; i++)
 	{
 		int iIndex = kIarray.getWithTypeWithConversion(getType(), i, 0, pCivInfo);
-		FAssert(iIndex >= 0);
-
-		int iValue = 1;
-		if (b2D)
+		if (iIndex >= 0)
 		{
-			iValue = kIarray.getWithTypeWithConversion(kIarray.getType(1), i, 1, pCivInfo);
-		}
-		FAssert(iValue != 0);
-		FAssert(iIndex < this->m_iLength);
-		if (iIndex >= 0 && iIndex < this->m_iLength)
-		{
-			T tValue = (T)(iValue * iChange);
-			bool bChangedThisIndex = this->addCache(tValue, iIndex);
-			bChanged |= bChangedThisIndex;
+			int iValue = 1;
+			if (b2D)
+			{
+				iValue = kIarray.getWithTypeWithConversion(kIarray.getType(1), i, 1, pCivInfo);
+			}
+			FAssert(iValue != 0);
+			FAssert(iIndex < this->m_iLength);
+			if (iIndex >= 0 && iIndex < this->m_iLength)
+			{
+				T tValue = (T)(iValue * iChange);
+				bool bChangedThisIndex = this->addCache(tValue, iIndex);
+				bChanged |= bChangedThisIndex;
+			}
 		}
 	}
 
