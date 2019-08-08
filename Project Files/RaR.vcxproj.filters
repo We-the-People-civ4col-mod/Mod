@@ -355,6 +355,9 @@
     <ClCompile Include="DLLSources\JustInTimeArrayGetType.h">
       <Filter>Data\Header</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvGlobalConstants.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -683,6 +686,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\InfoArray.h">
       <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvGlobalConstants.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

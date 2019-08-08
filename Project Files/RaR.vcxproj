@@ -43,6 +43,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvGlobalConstants.cpp" />
     <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
     <ClCompile Include="DLLSources\InfoCacheArray.cpp" />
     <ClCompile Include="DLLSources\CvGlobalsEnumSetup.cpp" />
@@ -163,11 +164,12 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DLLSources\CvGlobalConstants.h" />
     <ClInclude Include="DLLSources\iconv\converters.h" />
     <ClInclude Include="DLLSources\iconv\cp1250.h" />
     <ClInclude Include="DLLSources\iconv\cp1251.h" />
     <ClInclude Include="DLLSources\iconv\cp1252.h" />
-	<ClInclude Include="DLLSources\iconv\cp1253.h" />
+    <ClInclude Include="DLLSources\iconv\cp1253.h" />
     <ClInclude Include="DLLSources\iconv\cp1254.h" />
     <ClInclude Include="DLLSources\iconv\cp1255.h" />
     <ClInclude Include="DLLSources\iconv\cp1256.h" />
