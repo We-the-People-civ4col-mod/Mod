@@ -15426,17 +15426,17 @@ CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
 		// Since the array all have 1 as default, the task for this CivEffect is to provide -1
 		//   whenever there is a positive value in a CivEffect
 
-		BonusArray<int> ja_Bonuses;
-		BuildArray<int> ja_Builds;
-		BuildingClassArray<int> ja_Buildings;
-		CivicArray<int> ja_Civics;
-		UnitClassArray<int> ja_Immigrants;
-		ImprovementArray<int> ja_Improvements;
-		ProfessionArray<int> ja_Professions;
-		PromotionArray<int> ja_Promotions;
-		RouteArray<int> ja_Routes;
-		UnitClassArray<int> ja_Units;
-		YieldArray<int> ja_Yields;
+		BonusArray          <int> ja_Bonuses       (1);
+		BuildArray          <int> ja_Builds        (1);
+		BuildingClassArray  <int> ja_Buildings     (1);
+		CivicArray          <int> ja_Civics        (1);
+		UnitClassArray      <int> ja_Immigrants    (1);
+		ImprovementArray    <int> ja_Improvements  (1);
+		ProfessionArray     <int> ja_Professions   (1);
+		PromotionArray      <int> ja_Promotions    (1);
+		RouteArray          <int> ja_Routes        (1);
+		UnitClassArray      <int> ja_Units         (1);
+		YieldArray          <int> ja_Yields        (1);
 
 		for (CivEffectTypes eCivEffect = FIRST_CIV_EFFECT; eCivEffect < NUM_CIV_EFFECT_TYPES; ++eCivEffect)
 		{
