@@ -61,7 +61,7 @@ public:
 	int getBuildingClassMaking(BuildingClassTypes eBuildingClass) const;
 	int getBuildingClassCountPlusMaking(BuildingClassTypes eIndex) const;
 
-	int countTotalCulture();
+	int countTotalCulture() const;
 
 	int countNumUnitsByArea(CvArea* pArea) const;
 	int countNumCitiesByArea(CvArea* pArea) const;

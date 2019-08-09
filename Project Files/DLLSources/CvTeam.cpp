@@ -516,23 +516,23 @@ void CvTeam::shareCounters(TeamTypes eTeam)
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
 		changeUnitClassCount(((UnitClassTypes)iI), kOtherTeam.getUnitClassCount((UnitClassTypes)iI));
 	}
 
-	for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
 		changeBuildingClassCount((BuildingClassTypes)iI, kOtherTeam.getBuildingClassCount((BuildingClassTypes)iI));
 	}
 
-	for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
 	{
 		FatherPointTypes ePointType = (FatherPointTypes) iI;
 		changeFatherPoints(ePointType, kOtherTeam.getFatherPoints(ePointType));
 	}
 
-	for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumFatherInfos(); iI++)
 	{
 		FatherTypes eFather = (FatherTypes) iI;
 		setFatherIgnore(eFather, isFatherIgnore(eFather) && kOtherTeam.isFatherIgnore(eFather));
@@ -1508,7 +1508,7 @@ int CvTeam::getBuildingClassCountPlusMaking(BuildingClassTypes eIndex) const
 }
 
 
-int CvTeam::countTotalCulture()
+int CvTeam::countTotalCulture() const
 {
 	int iCount;
 	int iI;
