@@ -1088,11 +1088,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 	case BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD:
 		{
-			int iYield = pPopupReturn->getButtonClicked();
+			const int iYield = pPopupReturn->getButtonClicked();
 			if (iYield >= NO_YIELD) // cancel is -2
 			{
-				CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
-				if (pCity->getPreferredYieldAtCityPlot() != iYield)
+				const CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
+				if (pCity != NULL && pCity->getPreferredYieldAtCityPlot() != iYield)
 				{
 					gDLL->sendDoTask(info.getData1(), TASK_CHOOSE_CITY_PLOT_YIELD, iYield, -1, false, false, false, false);
 				}
