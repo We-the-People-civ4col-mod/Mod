@@ -547,7 +547,7 @@ public:
 	virtual BuildTypes AI_getBestBuild(int iIndex) const = 0;
 	virtual void AI_updateBestBuild() = 0;
 	virtual int AI_cityValue() const = 0;
-	virtual int AI_clearFeatureValue(int iIndex) = 0;
+	virtual int AI_clearFeatureValue(int iIndex) const = 0;
 	virtual int AI_calculateCulturePressure() const = 0;
 	virtual int AI_calculateWaterWorldPercent() const = 0;
 	virtual int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance = 7) const = 0;

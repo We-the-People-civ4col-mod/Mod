@@ -563,7 +563,7 @@ void CvCityAI::AI_chooseProduction()
 
 UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPickAny) const
 {
-	int aiUnitAIVal[NUM_UNITAI_TYPES];
+	int aiUnitAIVal[NUM_UNITAI_TYPES] = {};
 	UnitTypes eUnit = NO_UNIT;
 	UnitTypes eBestUnit = NO_UNIT;
 
@@ -929,7 +929,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 	return eBestBuilding;
 }
 
-BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int iMaxTurns)
+BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int iMaxTurns) const
 {
 	
 	int iBestValue = 0;
@@ -1169,7 +1169,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		if (GC.getNEW_CAPACITY())
 		{
 			int iExcess;
-			const iCoef = 100;
+			const int iCoef = 100;
 			iExcess = (iCityCapacity - getTotalYieldStored()) * iCoef;
 			if (iExcess < 1)
 				{iExcess = iCoef / 2;}
@@ -2098,7 +2098,7 @@ int CvCityAI::AI_totalBestBuildValue(CvArea* pArea) const
 	return iTotalValue;
 }
 
-int CvCityAI::AI_clearFeatureValue(int iIndex)
+int CvCityAI::AI_clearFeatureValue(int iIndex) const
 {
 	CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), iIndex);
 	FAssert(pPlot != NULL);
@@ -2602,6 +2602,7 @@ void CvCityAI::AI_doEmphasize()
 	}
 }
 
+// Erik: Split this into two functions, one that finds the best build and another that queues the build
 bool CvCityAI::AI_chooseBuild()
 {
 	//These are now directly comparable.
