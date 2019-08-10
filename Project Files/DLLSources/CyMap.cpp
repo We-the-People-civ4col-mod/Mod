@@ -328,6 +328,15 @@ void CyMap::calculateCanalAndChokePoints()
 }
 // Super Forts end
 
+int CyMap::getCityCatchmentRadius() const
+{
+	if (m_pMap)
+	{
+		m_pMap->getCityCatchmentRadius();
+	}
+	return 0;
+}
+
 void CyMap::setCityCatchmentRadius(int iSetting)
 {
 	if (m_pMap)

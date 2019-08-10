@@ -263,6 +263,7 @@ public:
 
 	void writeDesyncLog(FILE *f);
 
+	int getCityCatchmentRadius() const;
 	void setCityCatchmentRadius(int iSetting);
 
 protected:
