@@ -51,5 +51,7 @@ void CyMapPythonInterface2(python::class_<CyMap>& x)
 		.def("updateMinOriginalStartDist", &CyMap::updateMinOriginalStartDist, "void (CyArea* pArea)")		
 		.def("calculateCanalAndChokePoints", &CyMap::calculateCanalAndChokePoints, "void ()")// Super Forts  *canal* *choke*
 		
+		.def("setCityCatchmentRadius", &CyMap::setCityCatchmentRadius, "void (int)")
+
 		;
 }

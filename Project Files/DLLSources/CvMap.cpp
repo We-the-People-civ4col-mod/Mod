@@ -120,6 +120,9 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 {
 	int iI;
 
+	// reset city catchment radius. It should be 1 plot unless explicitly requested otherwise.
+	setCityCatchmentRadius(0);
+
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -1151,6 +1154,12 @@ void CvMap::read(FDataStreamBase* pStream)
 	pStream->Read(&m_bWrapX);
 	pStream->Read(&m_bWrapY);
 
+	if (uiFlag >= 1)
+	{
+		pStream->Read(&m_bUseTwoPlotCities);
+		setCityCatchmentRadius(m_bUseTwoPlotCities ? 1 : 0);
+	}
+
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
 	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonus);
 	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
@@ -1176,7 +1185,7 @@ void CvMap::read(FDataStreamBase* pStream)
 //
 void CvMap::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
+	uint uiFlag=1;
 	pStream->Write(uiFlag);		// flag for expansion
 
 	pStream->Write(m_iGridWidth);
@@ -1189,6 +1198,7 @@ void CvMap::write(FDataStreamBase* pStream)
 
 	pStream->Write(m_bWrapX);
 	pStream->Write(m_bWrapY);
+	pStream->Write(m_bUseTwoPlotCities);
 
 	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
 	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonus);
@@ -1264,5 +1274,10 @@ void CvMap::writeDesyncLog(FILE *f)
 	}
 }
 
+void CvMap::setCityCatchmentRadius(int iSetting)
+{
+	m_bUseTwoPlotCities = iSetting > 0;
+	GC.setCityCatchmentRadius(iSetting);
+}
 
 // Private Functions...

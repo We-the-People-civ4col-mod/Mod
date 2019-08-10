@@ -503,27 +503,27 @@ void CvGlobals::init()
 
 void CvGlobals::setCityCatchmentRadius(int iRadius)
 {
+	// Ideally this assert should trigger if altered after players are added, but it doesn't look like there are any way to check that.
+	// What really should be checked here is that the total count of cities in the game should be 0.
+	FAssert(!GC.getGameINLINE().isFinalInitialized());
 #ifndef CHECK_GLOBAL_CONSTANTS
 	++iRadius;
-	if (iRadius != CITY_PLOTS_RADIUS)
+	CITY_PLOTS_RADIUS = iRadius;
+	if (iRadius == 1)
 	{
-		CITY_PLOTS_RADIUS = iRadius;
-		if (iRadius == 1)
-		{
-			m_aaiXYCityPlot = m_aaiXYCityPlot_1_plot;
-			NUM_CITY_PLOTS = 9;
-			CITY_PLOTS_DIAMETER = 3;
-			m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
-			GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT"));
-		}
-		else
-		{
-			m_aaiXYCityPlot = m_aaiXYCityPlot_2_plot;
-			NUM_CITY_PLOTS = 25;
-			CITY_PLOTS_DIAMETER = 5;
-			m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE_TWO_PLOT");
-			GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
-		}
+		m_aaiXYCityPlot = m_aaiXYCityPlot_1_plot;
+		NUM_CITY_PLOTS = 9;
+		CITY_PLOTS_DIAMETER = 3;
+		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
+		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT"));
+	}
+	else
+	{
+		m_aaiXYCityPlot = m_aaiXYCityPlot_2_plot;
+		NUM_CITY_PLOTS = 25;
+		CITY_PLOTS_DIAMETER = 5;
+		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE_TWO_PLOT");
+		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
 	}
 #endif
 }

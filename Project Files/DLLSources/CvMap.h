@@ -263,6 +263,8 @@ public:
 
 	void writeDesyncLog(FILE *f);
 
+	void setCityCatchmentRadius(int iSetting);
+
 protected:
 
 	int m_iGridWidth;
@@ -275,6 +277,8 @@ protected:
 
 	bool m_bWrapX;
 	bool m_bWrapY;
+
+	bool m_bUseTwoPlotCities;
 
 	int* m_paiNumBonus;
 	int* m_paiNumBonusOnLand;

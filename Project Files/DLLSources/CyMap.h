@@ -89,6 +89,8 @@ public:
 	// PYTHON HELPER FUNCTIONS
 	//int getNumPlayerOwnedPlots(int /*PlayerTypes*/ iPlayer);
 
+	void setCityCatchmentRadius(int iSetting);
+
 protected:
 	CvMap* m_pMap;
 };

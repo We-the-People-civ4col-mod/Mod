@@ -335,6 +335,10 @@ class MapConstants :
     def initInGameOptions(self):
         gc = CyGlobalContext()
         mmap = gc.getMap()
+
+        # set city catchment radius
+        mmap.setCityCatchmentRadius(mmap.getCustomMapOption(mc.getMapOption("colony catchment radius")))
+
         #Distance to Europe
         selectionID = mmap.getCustomMapOption(self.getMapOption("distance"))
         if selectionID == 0:
