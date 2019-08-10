@@ -2975,7 +2975,7 @@ def getCustomMapOptionName(argsList):
         elif mc.mapOptionNames[optionID] == "regularity":
 			return "Regularity"
         elif mc.mapOptionNames[optionID] == "colony catchment radius":
-             return "Colony catchment radius"
+             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS", ())
         return u""
 	
 def getNumCustomMapOptionValues(argsList):
@@ -3095,9 +3095,9 @@ def getCustomMapOptionDescAt(argsList):
 
     elif mc.mapOptionNames[optionID] == "colony catchment radius":
         if selectionID == 0:
-            return "1 plot"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT", ())
         elif selectionID == 1:
-            return "2 plots"
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT", ())
 
     
     return u""

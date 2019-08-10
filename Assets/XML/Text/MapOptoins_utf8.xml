@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS</Tag>
+		<English>Colony land size</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT</Tag>
+		<English>1 plot radius</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT</Tag>
+		<English>2 plot radius</English>
+	</TEXT>
+</Civ4GameText>

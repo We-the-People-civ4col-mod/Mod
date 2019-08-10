@@ -47,7 +47,22 @@ localText = CyTranslator() #neu
 
 class MapConstants :
     def __init__(self):
+        self.mapOptionNames = []
+        self.mapOptionNames.append("colony catchment radius")
+        self.mapOptionNames.append("distance")
+        self.mapOptionNames.append("border north")
+        self.mapOptionNames.append("border south")
+        self.mapOptionNames.append("land allocation")
+        self.mapOptionNames.append("regularity")
         return
+
+    def getMapOption(self, name):
+        for i in range(len(self.mapOptionNames)):
+            if self.mapOptionNames[i] == name:
+                return i
+        return -1
+
+
     def initialize(self):
 ##############################################################################
 ## GLOBAL TUNING VARIABLES: Change these to customize the map results
@@ -321,7 +336,7 @@ class MapConstants :
         gc = CyGlobalContext()
         mmap = gc.getMap()
         #Distance to Europe
-        selectionID = mmap.getCustomMapOption(0)
+        selectionID = mmap.getCustomMapOption(self.getMapOption("distance"))
         if selectionID == 0:
             self.distanceToEurope = 3
         elif selectionID == 2:
@@ -331,7 +346,7 @@ class MapConstants :
         
         # TAC - Map scripts - koma13 - START
         #Lattitudes
-        selectionID = mmap.getCustomMapOption(1)
+        selectionID = mmap.getCustomMapOption(self.getMapOption("border north"))
         if selectionID == 1:
             self.topLattitude = 75
         elif selectionID == 2:
@@ -357,7 +372,7 @@ class MapConstants :
         elif selectionID == 12:
             self.topLattitude = -90
         
-        selectionID = mmap.getCustomMapOption(2)
+        selectionID = mmap.getCustomMapOption(self.getMapOption("border south"))
         if selectionID == 0:
             self.bottomLattitude = 90
         elif selectionID == 1:
@@ -385,7 +400,7 @@ class MapConstants :
         ## TAC - Map scripts - koma13 - END
 
         #Landforms
-        selectionID = mmap.getCustomMapOption(3)
+        selectionID = mmap.getCustomMapOption(self.getMapOption("land allocation"))
         if selectionID == 1:
             self.hmMaxGrain = 8
             self.hmNumberOfPlates = int(float(self.hmWidth * self.hmHeight) * 0.0030)
@@ -393,8 +408,14 @@ class MapConstants :
             self.landPercent = 0.28
             self.plateMapScale = 0.5
             self.hmNoiseLevel = 1.5
-        
-        
+        #Regularity
+        selectionID = mmap.getCustomMapOption(self.getMapOption("regularity"))
+        if selectionID == 0:
+            self.plateGrowthChanceY = 0.22
+        elif selectionID == 1:
+            self.plateGrowthChanceY = 0.33
+        elif selectionID == 2:
+            self.plateGrowthChanceY = 0.55
         return
     
 mc = MapConstants()
@@ -2932,7 +2953,7 @@ def getNumCustomMapOptions():
 	"""
 	# TAC - Map scripts - koma13 - START
 	#return 2
-	return 4
+	return len(mc.mapOptionNames)
 	# TAC - Map scripts - koma13 - END
 	
 def getCustomMapOptionName(argsList):
@@ -2942,16 +2963,20 @@ def getCustomMapOptionName(argsList):
         Return a Unicode string
         """
         optionID = argsList[0]
-        if optionID == 0:
+        if mc.mapOptionNames[optionID] == "distance":
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_DISTANCE", ())
         # TAC - Map scripts - koma13 - START
-        elif optionID == 1:
+        elif mc.mapOptionNames[optionID] == "border north":
 			return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_NORTHERN_BORDER", ())
-        elif optionID == 2:
+        elif mc.mapOptionNames[optionID] == "border south":
 			return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_SOUTHERN_BORDER", ())
         # TAC - Map scripts - koma13 - END
-        elif optionID == 3:
-			return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION", ())        
+        elif mc.mapOptionNames[optionID] == "land allocation":
+			return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_LAND_ALLOCATION", ())
+        elif mc.mapOptionNames[optionID] == "regularity":
+			return "Regularity"
+        elif mc.mapOptionNames[optionID] == "colony catchment radius":
+             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS", ())
         return u""
 	
 def getNumCustomMapOptionValues(argsList):
@@ -2961,15 +2986,19 @@ def getNumCustomMapOptionValues(argsList):
         Return an integer
         """
         optionID = argsList[0]
-        if optionID == 0:
+        if mc.mapOptionNames[optionID] == "distance":
             return 4
         # TAC - Map scripts - koma13 - START
-        elif optionID == 1:
+        elif mc.mapOptionNames[optionID] == "border north":
             return 13
-        elif optionID == 2:
+        elif mc.mapOptionNames[optionID] == "border south":
             return 13
         # TAC - Map scripts - koma13 - START
-        elif optionID == 3:
+        elif mc.mapOptionNames[optionID] == "land allocation":
+            return 2
+        elif mc.mapOptionNames[optionID] == "regularity":
+            return 3
+        elif mc.mapOptionNames[optionID] == "colony catchment radius":
             return 2
         
         return 0
@@ -2983,7 +3012,7 @@ def getCustomMapOptionDescAt(argsList):
     """
     optionID = argsList[0]
     selectionID = argsList[1]
-    if optionID == 0:
+    if mc.mapOptionNames[optionID] == "distance":
         if selectionID == 0:
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_3_FIELDS", ())
         elif selectionID == 1:
@@ -2994,7 +3023,7 @@ def getCustomMapOptionDescAt(argsList):
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_8_FIELDS", ())
     
     # TAC - Map scripts - koma13 - START
-    elif optionID == 1:
+    elif mc.mapOptionNames[optionID] == "border north":
         if selectionID == 0:
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_0", ())
         elif selectionID == 1:
@@ -3022,7 +3051,7 @@ def getCustomMapOptionDescAt(argsList):
         elif selectionID == 12:
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_SELECT_NORTHERN_BORDER_1", ())
     
-    elif optionID == 2:
+    elif mc.mapOptionNames[optionID] == "border south":
         if selectionID == 0:
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_0", ())
         elif selectionID == 1:
@@ -3051,11 +3080,25 @@ def getCustomMapOptionDescAt(argsList):
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_SELECT_SOUTHERN_BORDER_1", ())
     # TAC - Map scripts - koma13 - END
 
-    elif optionID == 3:
+    elif mc.mapOptionNames[optionID] == "land allocation":
         if selectionID == 0:
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_0", ())
         elif selectionID == 1:
             return localText.getText("TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_1", ())
+
+    elif mc.mapOptionNames[optionID] == "regularity":
+        if selectionID == 0:
+            return "Very Irregular"
+        elif selectionID == 1:
+            return "Quite Irregular (Default)"
+        elif selectionID == 2:
+            return "Regular"
+
+    elif mc.mapOptionNames[optionID] == "colony catchment radius":
+        if selectionID == 0:
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT", ())
+        elif selectionID == 1:
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT", ())
 
     
     return u""
@@ -3067,12 +3110,25 @@ def getCustomMapOptionDefault(argsList):
     Return an integer
     """
     optionID = argsList[0]
-    if optionID == 0:
+    if mc.mapOptionNames[optionID] == "distance":
         return 1
-    # TAC - Map scripts - koma13 - START
-    if optionID == 2:
+    elif mc.mapOptionNames[optionID] == "border north":
+        return 0
+
+    elif mc.mapOptionNames[optionID] == "border south":
         return 12
+
+    elif mc.mapOptionNames[optionID] == "land allocation":
+        return 0
+
+	
+    # TAC - Map scripts - koma13 - START
+    elif mc.mapOptionNames[optionID] == "regularity":
+        return 1
     # TAC - Map scripts - koma13 - END
+
+    elif mc.mapOptionNames[optionID] == "colony catchment radius":
+        return 0
     return 0
     
 def isRandomCustomMapOption(argsList):
@@ -3082,16 +3138,20 @@ def isRandomCustomMapOption(argsList):
     Return a bool
     """
     optionID = argsList[0]
-    if optionID == 0:
+    if mc.mapOptionNames[optionID] == "distance":
         return False
     # TAC - Map scripts - koma13 - START
-    elif optionID == 1:
+    elif mc.mapOptionNames[optionID] == "border north":
         return True
-    elif optionID == 2:
+    elif mc.mapOptionNames[optionID] == "border south":
         return True
     # TAC - Map scripts - koma13 - END
-    elif optionID == 3:
+    elif mc.mapOptionNames[optionID] == "land allocation":
         return True
+    elif mc.mapOptionNames[optionID] == "regularity":
+        return True
+    elif mc.mapOptionNames[optionID] == "colony catchment radius":
+        return False
     
     return False
     
