@@ -626,6 +626,7 @@
 		<element type="CommandInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="AutomateInfo" content="eltOnly">
+		<element type="Type"/>
 		<element type="Description"/>
 		<element type="Help"/>
 		<element type="HotKey" minOccurs="0"/>

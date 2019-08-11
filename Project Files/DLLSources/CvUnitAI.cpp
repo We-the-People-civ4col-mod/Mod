@@ -154,7 +154,7 @@ bool CvUnitAI::AI_update()
 				}
 				break;
 
-			case AUTOMATE_SAIL:
+			case AUTOMATE_SAIL_TO_EUROPE:
 				AI_sailToEurope();
 				break;
 			/*** TRIANGLETRADE 10/28/08 by DPII ***/
@@ -6580,7 +6580,7 @@ bool CvUnitAI::AI_europeAssaultSea()
 
 namespace
 {
-	const SailToHelper kSailToEurope(UNIT_TRAVEL_STATE_TO_EUROPE, AUTOMATE_SAIL, MISSIONAI_SAIL_TO_EUROPE);
+	const SailToHelper kSailToEurope(UNIT_TRAVEL_STATE_TO_EUROPE, AUTOMATE_SAIL_TO_EUROPE, MISSIONAI_SAIL_TO_EUROPE);
 	const SailToHelper kSailToAfrica(UNIT_TRAVEL_STATE_TO_AFRICA, AUTOMATE_SAIL_TO_AFRICA, MISSIONAI_SAIL_TO_AFRICA);
 	const SailToHelper kSailToPortRoyal(UNIT_TRAVEL_STATE_TO_PORT_ROYAL, AUTOMATE_SAIL_TO_PORT_ROYAL, MISSIONAI_SAIL_TO_PORT_ROYAL);
 }

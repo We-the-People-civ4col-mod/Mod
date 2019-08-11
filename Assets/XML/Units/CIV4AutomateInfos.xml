@@ -8,6 +8,7 @@
     <!--Changes must be reflected in CvEnums.h-->
     <AutomateInfos>
         <AutomateInfo>
+            <Type>AUTOMATE_BUILD</Type>
             <Description>TXT_KEY_ACTION_AUTOMATE_BUILD</Description>
             <Help>TXT_KEY_ACTION_AUTOMATE_BUILD_HELP</Help>
             <HotKey>KB_A</HotKey>
@@ -26,6 +27,7 @@
             <Button>Art/Interface/Game Hud/Actions/automate_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_CITY</Type>
             <Description>TXT_KEY_ACTION_AUTOMATE_CITY</Description>
             <Help>TXT_KEY_ACTION_AUTOMATE_CITY_HELP</Help>
             <HotKey>KB_C</HotKey>
@@ -44,6 +46,7 @@
             <Button>Art/Interface/Game Hud/Actions/automate_city_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_EXPLORE</Type>
             <Description>TXT_KEY_ACTION_AUTOMATE_EXPLORE</Description>
             <Help>TXT_KEY_ACTION_AUTOMATE_EXPLORE_HELP</Help>
             <HotKey>KB_E</HotKey>
@@ -62,6 +65,7 @@
             <Button>Art/Interface/Game Hud/Actions/explore_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_SAIL_TO_EUROPE</Type>
             <Description>TXT_KEY_COMMAND_SAIL_TO_EUROPE</Description>
             <Help>TXT_KEY_COMMAND_SAIL_TO_EUROPE_HELP</Help>
             <HotKey>KB_E</HotKey>
@@ -80,6 +84,7 @@
             <Button>Art/Interface/Game Hud/Actions/sail_to_mother_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_SAIL_TO_AFRICA</Type>
             <Description>TXT_KEY_COMMAND_SAIL_TO_AFRICA</Description>
             <Help>TXT_KEY_COMMAND_SAIL_TO_AFRICA_HELP</Help>
             <HotKey>KB_A</HotKey>
@@ -98,6 +103,7 @@
             <Button>Art/Interface/Game Hud/Actions/sail_to_africa_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_SAIL_TO_PORT_ROYAL</Type>
             <Description>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL</Description>
             <Help>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL_HELP</Help>
             <HotKey>KB_E</HotKey>
@@ -116,6 +122,7 @@
             <Button>Art/Interface/Game Hud/Actions/sail_to_portroyal_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_TRANSPORT_ROUTES</Type>
             <Description>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES</Description>
             <Help>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES_HELP</Help>
             <HotKey>KB_C</HotKey>
@@ -134,6 +141,7 @@
             <Button>Art/Interface/Game Hud/Actions/automate_city_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_TRANSPORT_FULL</Type>
             <Description>TXT_KEY_ACTION_AUTOMATE_TRANSPORT_FULL</Description>
             <Help>TXT_KEY_ACTION_AUTOMATE_TRANSPORT_FULL_HELP</Help>
             <HotKey>KB_C</HotKey>
@@ -152,6 +160,7 @@
             <Button>Art/Interface/Game Hud/Actions/automate_transport_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_WORKER_SEA</Type>
             <Description>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT</Description>
             <Help>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT_HELP</Help>
             <HotKey/>
@@ -170,6 +179,7 @@
             <Button>Art/Interface/Game Hud/Actions/automate_fishingboat_high_res.dds</Button>
         </AutomateInfo>
         <AutomateInfo>
+            <Type>AUTOMATE_FULL</Type>
             <Description>TXT_KEY_ACTION_AUTOMATE_FULL</Description>
             <Help>TXT_KEY_ACTION_AUTOMATE_FULL_HELP</Help>
             <HotKey>KB_A</HotKey>
