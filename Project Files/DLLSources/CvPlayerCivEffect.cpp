@@ -97,6 +97,11 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 		m_at_AllowedBuildings.assign(m_ja_iCacheAllowsBuildings);
 	}
 
+	if (gDLL->isGameInitializing())
+	{
+		return;
+	}
+
 	if (bUpdateUnits || bUpdateImmigrants || kCivEffect.getNumUnitsOnDockChange() != 0)
 	{
 		if (!this->isNative() && !this->isEurope())
@@ -107,11 +112,6 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 				gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 			}
 		}
-	}
-
-	if (gDLL->isGameInitializing())
-	{
-		return;
 	}
 
 	if (bUpdateBuildings || kCivEffect.getCanUseDomesticMarket() != 0)

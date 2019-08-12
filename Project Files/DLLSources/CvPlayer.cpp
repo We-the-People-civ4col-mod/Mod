@@ -13098,6 +13098,13 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
+	// The allowed units and number of units on the dock might have changed in xml
+	// verify that the units on the dock are as they are intended
+	if (this->isAlive() && !this->isEurope() && !this->isNative())
+	{
+		verifyImmigration();
+	}
 }
 
 //
@@ -18668,11 +18675,11 @@ UnitTypes CvPlayer::pickBestImmigrant()
 	{
 		if (CivEffect()->canUseUnit(eUnit) && CivEffect()->canUseImmigrant(eUnit))
 		{
-			CvUnitInfo *pInfo = &GC.getUnitInfo(eUnit);
-			int iWeight = pInfo->getImmigrationWeight();
-			for (int i = 0; i < getUnitClassImmigrated(static_cast<UnitClassTypes>(pInfo->getUnitClassType())); ++i)
+			const CvUnitInfo& kInfo = GC.getUnitInfo(eUnit);
+			int iWeight = kInfo.getImmigrationWeight();
+			for (int i = 0; i < getUnitClassImmigrated(static_cast<UnitClassTypes>(kInfo.getUnitClassType())); ++i)
 			{
-				iWeight *= std::max(0, 100 - pInfo->getImmigrationWeightDecay());
+				iWeight *= std::max(0, 100 - kInfo.getImmigrationWeightDecay());
 				iWeight /= 100;
 			}
 
