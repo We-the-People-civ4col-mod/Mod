@@ -583,21 +583,6 @@ enum DllExport ButtonPopupTypes
 #endif
 };
 
-enum DllExport ClimateTypes
-{
-	NO_CLIMATE = -1,
-};
-
-enum DllExport SeaLevelTypes
-{
-	NO_SEALEVEL = -1,
-};
-
-enum DllExport EuropeTypes
-{
-	NO_EUROPE = -1,
-};
-
 enum DllExport CustomMapOptionTypes
 {
 	NO_CUSTOM_MAPOPTION = -1,
@@ -802,10 +787,12 @@ enum DllExport ArtStyleTypes
 };
 
 //Androrc UnitArtStyles
+/*
 enum DllExport UnitArtStyleTypes
 {
 	NO_UNIT_ARTSTYLE = -1,
 };
+*/
 //Androrc End
 
 enum DllExport CitySizeTypes
@@ -1046,19 +1033,6 @@ enum DllExport DenialTypes
 
 #ifdef _USRDLL
 	NUM_DENIAL_TYPES
-#endif
-};
-
-enum DllExport DomainTypes
-{
-	NO_DOMAIN = -1,
-
-	DOMAIN_SEA,
-	DOMAIN_LAND,
-	DOMAIN_IMMOBILE,
-
-#ifdef _USRDLL
-	NUM_DOMAIN_TYPES
 #endif
 };
 
@@ -1393,23 +1367,10 @@ enum DllExport ControlTypes
 };
 */
 
-enum DllExport HurryTypes
-{
-	NO_HURRY = -1,
-	FIRST_HURRY = 0,
-};
-
+#ifndef HARDCODE_XML_VALUES
 extern HurryTypes HURRY_GOLD;
 extern HurryTypes HURRY_IMMIGRANT;
-extern HurryTypes NUM_HURRY_TYPES;
-
-enum DllExport CivicOptionTypes
-{
-	NO_CIVICOPTION = -1,
-	FIRST_CIVICOPTION = 0,
-};
-
-extern CivicOptionTypes NUM_CIVICOPTION_TYPES;
+#endif
 
 enum DllExport WarPlanTypes
 {
@@ -2571,16 +2532,6 @@ enum DllExport UnitAIStates
 	NUM_UNITAI_STATES,
 };
 
-enum DllExport FatherCategoryTypes
-{
-	NO_FATHERCATEGORY = -1,
-};
-
-enum DllExport AlarmTypes
-{
-	NO_ALARM = -1,
-};
-
 // TAC - Trade Messages - koma13 - START
 enum DllExport TradeMessageTypes
 {
@@ -2594,12 +2545,14 @@ enum DllExport TradeMessageTypes
 };
 // TAC - Trade Messages - koma13 - END
 
+#ifndef HARDCODE_XML_VALUES
 extern CivEffectTypes CIV_EFFECT_DEFAULT_ALL;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_NATIVE;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_KING;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_AI;
+#endif
 
 enum JITarrayTypes
 {

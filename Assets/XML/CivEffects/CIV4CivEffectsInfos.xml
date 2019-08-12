@@ -22,6 +22,15 @@
 		</TagGroupGrowth>
 	</CivEffectInfo>
 	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_NATIVE</Type>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_KING</Type>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_HUMAN</Type>
+	</CivEffectInfo>
+	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_AI</Type>
 		<TagGroupAllow>
 			<AllowBuilds>

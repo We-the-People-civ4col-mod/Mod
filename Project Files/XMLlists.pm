@@ -31,6 +31,7 @@ sub isAlwaysHardcodedEnum
 {
 	my $file = shift;
 	
+	return 1 if $file eq "BasicInfos/CIV4DomainInfos.xml";
 	return 1 if $file eq "BasicInfos/CIV4UnitAIInfos.xml";
 	return 1 if $file eq "BasicInfos/CIV4InvisibleInfos.xml";
 	return 1 if $file eq "GameInfo/CIV4GameOptionInfos.xml";
@@ -65,7 +66,7 @@ sub getFileWithPath
 		my $path = $prefix . $file;
 		return $path if -e $path;
 	}
-	die "Unable to locate $file\n";
+	return undef;
 }
 
 sub getXMLKeywords
@@ -103,6 +104,12 @@ sub getXMLKeywords
 		$TYPE = "CIV_EFFECT";
 	}
 	
+	if ($file eq "Civilizations/CIV4UnitArtStyleTypeInfos.xml")
+	{
+		$enum = "UnitArtStyleTypes";
+		$TYPE = "UNIT_ARTSTYLE";
+	}
+	
 	return ($basename, $enum, $TYPE);
 }
 
@@ -119,10 +126,11 @@ sub getNumFunction
 {
 	my $basename = shift;
 
-	return "GC.getNumWorldInfos()" if $basename eq "WorldSize";
-	return "m_paYieldInfo.size()" if $basename eq "Yield";
-	return "m_paUnitAIInfos.size()" if $basename eq "UnitAI";
-	return "m_paCivEffectInfo.size()" if $basename eq "CivEffect";
+	return "m_paCivEffectInfo.size()"   if $basename eq "CivEffect";
+	return "m_paDomainInfo.size()"      if $basename eq "Domain";
+	return "m_paUnitAIInfos.size()"     if $basename eq "UnitAI";
+	return "GC.getNumWorldInfos()"      if $basename eq "WorldSize";
+	return "m_paYieldInfo.size()"       if $basename eq "Yield";
 	
 	return "GC.getNum" . $basename . "Infos()";
 }
@@ -151,6 +159,8 @@ sub getEnumFiles
 	my @list = ();
 	
 	push(@list, "BasicInfos/CIV4BasicInfos.xml");
+	push(@list, "BasicInfos/CIV4DomainInfos.xml");
+	push(@list, "BasicInfos/CIV4FatherCategoryInfos.xml");
 	push(@list, "BasicInfos/CIV4InvisibleInfos.xml");
 	push(@list, "BasicInfos/CIV4UnitAIInfos.xml");
 	push(@list, "BasicInfos/CIV4UnitCombatInfos.xml");
@@ -161,6 +171,7 @@ sub getEnumFiles
 	
 	push(@list, "CivEffects/CIV4CivEffectsInfos.xml");
 	
+	push(@list, "Civilizations/CIV4AlarmInfos.xml");
 	push(@list, "Civilizations/CIV4CivilizationInfos.xml");
 	push(@list, "Civilizations/CIV4LeaderHeadInfos.xml");
 	push(@list, "Civilizations/CIV4TraitInfos.xml");
@@ -171,17 +182,22 @@ sub getEnumFiles
 	push(@list, "Events/CIV4EventTriggerInfos.xml");
 	
 	push(@list, "GameInfo/CIV4CivicInfos.xml");
+	push(@list, "GameInfo/CIV4CivicOptionInfos.xml");
+	push(@list, "GameInfo/CIV4ClimateInfo.xml");
 	push(@list, "GameInfo/CIV4CultureLevelInfo.xml");
 	push(@list, "GameInfo/CIV4DiplomacyInfos.xml");
 	push(@list, "GameInfo/CIV4EmphasizeInfo.xml");
 	push(@list, "GameInfo/CIV4EraInfos.xml");
+	push(@list, "GameInfo/CIV4EuropeInfo.xml");
 	push(@list, "GameInfo/CIV4FatherInfos.xml");
 	push(@list, "GameInfo/CIV4FatherPointInfos.xml");
 	push(@list, "GameInfo/CIV4GameOptionInfos.xml");
 	push(@list, "GameInfo/CIV4GameSpeedInfo.xml");
 	push(@list, "GameInfo/CIV4GoodyInfo.xml");
 	push(@list, "GameInfo/CIV4HandicapInfo.xml");
+	push(@list, "GameInfo/CIV4HurryInfo.xml");
 	push(@list, "GameInfo/CIV4PlayerOptionInfos.xml");
+	push(@list, "GameInfo/CIV4SeaLevelInfo.xml");
 	push(@list, "GameInfo/CIV4VictoryInfo.xml");
 	push(@list, "GameInfo/CIV4WorldInfo.xml");
 	
@@ -211,21 +227,27 @@ sub isDllExport
 {
 	my $type = shift;
 	
+	return 1 if $type eq "AlarmTypes";
 	return 1 if $type eq "AutomateTypes";
 	return 1 if $type eq "BonusTypes";
 	return 1 if $type eq "BuildingClassTypes";
 	return 1 if $type eq "BuildingTypes";
 	return 1 if $type eq "BuildTypes";
 	return 1 if $type eq "CivicTypes";
+	return 1 if $type eq "CivicOptionTypes";
 	return 1 if $type eq "CivilizationTypes";
+	return 1 if $type eq "ClimateTypes";
 	return 1 if $type eq "ConceptTypes";
 	return 1 if $type eq "ControlTypes";
 	return 1 if $type eq "CultureLevelTypes";
+	return 1 if $type eq "DomainTypes";
 	return 1 if $type eq "EffectTypes";
 	return 1 if $type eq "EmphasizeTypes";
 	return 1 if $type eq "EraTypes";
 	return 1 if $type eq "EventTriggerTypes";
 	return 1 if $type eq "EventTypes";
+	return 1 if $type eq "EuropeTypes";
+	return 1 if $type eq "FatherCategoryTypes";
 	return 1 if $type eq "FatherPointTypes";
 	return 1 if $type eq "FatherTypes";
 	return 1 if $type eq "FeatureTypes";
@@ -233,6 +255,7 @@ sub isDllExport
 	return 1 if $type eq "GameSpeedTypes";
 	return 1 if $type eq "GoodyTypes";
 	return 1 if $type eq "HandicapTypes";
+	return 1 if $type eq "HurryTypes";
 	return 1 if $type eq "ImprovementTypes";
 	return 1 if $type eq "InvisibleTypes";
 	return 1 if $type eq "LeaderHeadTypes";
@@ -241,6 +264,7 @@ sub isDllExport
 	return 1 if $type eq "ProfessionTypes";
 	return 1 if $type eq "PromotionTypes";
 	return 1 if $type eq "RouteTypes";
+	return 1 if $type eq "SeaLevelTypes";
 	return 1 if $type eq "SpecialBuildingTypes";
 	return 1 if $type eq "TerrainTypes";
 	return 1 if $type eq "TraitTypes";

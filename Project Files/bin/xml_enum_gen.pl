@@ -122,46 +122,68 @@ sub processFile
 	print $output $enum . "\n{\n";
 	print $output "\tINVALID_PROFESSION = -2,\n" if $basename eq "Profession";
 	print $output "\t" . getNoType($TYPE) . " = -1,\n\n";
-	print $output "#if defined(HARDCODE_XML_VALUES) || !defined(MakefileCompilation)\n\n" unless $isHardcoded;
+	print $output "#ifdef HARDCODE_XML_VALUES\n\n" unless $isHardcoded;
 	
-	# first make the test file conditional if needed.
-	print $output_test "#ifdef HARDCODE_XML_VALUES\n" unless $isHardcoded;
-	
-	my $dom = XML::LibXML->load_xml(location => getFileWithPath($filename));
-	
-	my $loopElement = getChild($dom, "");
-	$loopElement = getChild($loopElement, "");
-	$loopElement = getChild($loopElement, "") unless isTwoLevelFile($filename);
-
-	while (ref ($loopElement) ne "")
+	foreach my $type (getTypesInFile($filename))
 	{
-		my $child = getChild($loopElement, "Type");
-		#$child = getChild($loopElement, "Description") unless $child; # fallback in case of no type
-		die $filename . " failed to read elements" unless $child;
-		my $type = $child->textContent;
 		print $output "\t" . $type . ",\n";
-		print $output_test "FAssertMsg(strcmp(\"". $type . "\", GC." . getInfo($basename) . "($type).getType()) == 0, \"File $filename has mismatch between xml and DLL enum\");\n";
-		
-		$loopElement = nextSibling($loopElement);
+		print $output_test "FAssertMsg(strcmp(\"". $type . "\", " . getInfo($basename) . "($type).getType()) == 0, \"File $filename has mismatch between xml and DLL enum\");\n" if $isHardcoded;
 	}
 
-	print $output_test "#endif\n" unless $isHardcoded;
 	print $output_test "FAssertMsg(NUM_" . $TYPE . "_TYPES == " . getNumFunction($basename) . ", \"File $filename has mismatched length between xml and DLL enum\");\n";
 
-	print $output "\n#ifdef HARDCODE_XML_VALUES\n" unless $isHardcoded;
 	print $output "\n\tNUM_" . $TYPE . "_TYPES,\n";
-	print $output "\n#endif // HARDCODE_XML_VALUES\n" unless $isHardcoded;
-	print $output "#endif // MakefileCompilation\n" unless $isHardcoded;
-	print $output "\n\tFIRST_" . $TYPE . " = 0,\n";
 	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n" if $isYield;
+	print $output "\n#endif // HARDCODE_XML_VALUES\n" unless $isHardcoded;
+	print $output "\n\tFIRST_" . $TYPE . " = 0,\n";
 	print $output "};\n\n";
 	
 	unless ($isHardcoded)
 	{
 		print $output "#ifndef HARDCODE_XML_VALUES\n";
-		print $output "extern int NUM_" . $TYPE . "_TYPES;\n";
+		print $output "extern " . $enum . " NUM_" . $TYPE . "_TYPES;\n";
 		print $output "#endif\n\n";
-		print $output_declare "int NUM_" . $TYPE . "_TYPES;\n";
+		print $output_declare  $enum . " NUM_" . $TYPE . "_TYPES;\n";
 		print $output_init "NUM_" . $TYPE . "_TYPES = (" . $enum . ")" . getNumFunction($basename) . ";\n";
 	}
+}
+
+sub getTypesInFile
+{
+	my $filename = shift;
+	
+	my $fileWithPath = getFileWithPath($filename);
+	
+	if ($fileWithPath)
+	{
+		my $dom = XML::LibXML->load_xml(location => $fileWithPath);
+		
+		my $loopElement = getChild($dom, "");
+		$loopElement = getChild($loopElement, "");
+		$loopElement = getChild($loopElement, "") unless isTwoLevelFile($filename);
+		
+		my @types = ();
+		
+		while (ref ($loopElement) ne "")
+		{
+			my $child = getChild($loopElement, "Type");
+			die $filename . " failed to read elements" unless $child;
+			push(@types, $child->textContent);
+			$loopElement = nextSibling($loopElement);
+		}
+		return @types;
+	}
+	
+	# the file isn't present in the mod. Add the vanilla values
+	# no need to look up vanilla. That can cause issues and we know the values even without looking
+	return ("DOMAIN_SEA", "DOMAIN_LAND", "DOMAIN_IMMOBILE") if $filename eq "BasicInfos/CIV4DomainInfos.xml";
+	return ("FATHERCATEGORY_EXPLORATION", "FATHERCATEGORY_RELIGION", "FATHERCATEGORY_TRADE", "FATHERCATEGORY_MILITARY", "FATHERCATEGORY_POLITICS") if $filename eq "BasicInfos/CIV4FatherCategoryInfos.xml";
+	return ("ALARM_DEFAULT") if $filename eq "Civilizations/CIV4AlarmInfos.xml";
+	return ("CIVICOPTION_SLAVERY", "CIVICOPTION_ELECTION", "CIVICOPTION_NATIVES", "CIVICOPTION_RELIGION", "CIVICOPTION_SECURITY") if $filename eq "GameInfo/CIV4CivicOptionInfos.xml";
+	return ("CLIMATE_TEMPERATE", "CLIMATE_TROPICAL", "CLIMATE_ROCKY") if $filename eq "GameInfo/CIV4ClimateInfo.xml";
+	return ("EUROPE_EAST", "EUROPE_WEST", "EUROPE_NORTH", "EUROPE_SOUTH") if $filename eq "GameInfo/CIV4EuropeInfo.xml";
+	return ("HURRY_GOLD", "HURRY_IMMIGRANT") if $filename eq "GameInfo/CIV4HurryInfo.xml";
+	return ("SEALEVEL_LOW", "SEALEVEL_MEDIUM", "SEALEVEL_HIGH") if $filename eq "GameInfo/CIV4SeaLevelInfo.xml";
+	
+	die "getTypesInFile: " . $filename . " not supported\n";
 }
