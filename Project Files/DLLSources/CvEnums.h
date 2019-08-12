@@ -746,8 +746,6 @@ enum DllExport TerrainGroupTypes
 	NUM_TERRAIN_GROUP_TYPES
 };
 
-extern BuildTypes NUM_BUILD_TYPES;
-
 enum DllExport FontSymbols
 {
 	// 'OTHER' symbols
@@ -796,8 +794,6 @@ enum DllExport TurnTimerTypes
 {
 	NO_TURNTIMER = -1,
 };
-
-extern EraTypes NUM_ERA_TYPES;
 
 // Used for managing Art Differences based on nationality
 enum DllExport ArtStyleTypes
@@ -866,8 +862,6 @@ enum DllExport PlayerTypes
 	UNKNOWN_PLAYER = -2,
 	NO_PLAYER = -1,
 };
-
-extern TraitTypes NUM_TRAIT_TYPES;
 
 enum DllExport OrderTypes
 {
@@ -966,8 +960,6 @@ enum DllExport PlayerActionTypes
 	NUM_PLAYER_ACTION_TYPES
 #endif
 };
-
-extern BuildingTypes NUM_BUILDING_TYPES;
 
 enum DllExport AxisTypes
 {
@@ -1069,8 +1061,6 @@ enum DllExport DomainTypes
 	NUM_DOMAIN_TYPES
 #endif
 };
-
-extern UnitTypes NUM_UNIT_TYPES;
 
 enum DllExport SpecialUnitTypes
 {
@@ -2586,8 +2576,6 @@ enum DllExport FatherCategoryTypes
 	NO_FATHERCATEGORY = -1,
 };
 
-extern FatherTypes NUM_FATHER_TYPES;
-
 enum DllExport AlarmTypes
 {
 	NO_ALARM = -1,
@@ -2606,19 +2594,12 @@ enum DllExport TradeMessageTypes
 };
 // TAC - Trade Messages - koma13 - END
 
-enum CivEffectTypes
-{
-	NO_CIV_EFFECT = -1,
-	FIRST_CIV_EFFECT = 0,
-};
-
 extern CivEffectTypes CIV_EFFECT_DEFAULT_ALL;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_NATIVE;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_KING;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_AI;
-extern CivEffectTypes NUM_CIV_EFFECT_TYPES;
 
 enum JITarrayTypes
 {

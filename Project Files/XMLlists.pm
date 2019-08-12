@@ -96,6 +96,13 @@ sub getXMLKeywords
 		$TYPE = "CONCEPT";
 	}
 	
+	if ($file eq "CivEffects/CIV4CivEffectsInfos.xml")
+	{
+		$basename = "CivEffect";
+		$enum = "CivEffectTypes";
+		$TYPE = "CIV_EFFECT";
+	}
+	
 	return ($basename, $enum, $TYPE);
 }
 
@@ -115,6 +122,7 @@ sub getNumFunction
 	return "GC.getNumWorldInfos()" if $basename eq "WorldSize";
 	return "m_paYieldInfo.size()" if $basename eq "Yield";
 	return "m_paUnitAIInfos.size()" if $basename eq "UnitAI";
+	return "m_paCivEffectInfo.size()" if $basename eq "CivEffect";
 	
 	return "GC.getNum" . $basename . "Infos()";
 }
