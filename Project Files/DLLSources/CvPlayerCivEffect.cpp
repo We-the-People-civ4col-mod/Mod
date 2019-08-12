@@ -3,7 +3,7 @@
 
 
 CvPlayerCivEffect::CvPlayerCivEffect()
-	: m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD)
+	: m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
 	, m_ja_iCacheFreePromotionsForProfessions  (JIT_ARRAY_PROFESSION      , JIT_ARRAY_PROMOTION)
 	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNIT_CLASS      , JIT_ARRAY_PROMOTION)
 {
@@ -74,16 +74,16 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 				continue;
 			}
 
-			const CvBuildInfo *pBuild = &GC.getBuildInfo(eBuild);
+			const CvBuildInfo& kBuild = GC.getBuildInfo(eBuild);
 
-			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(pBuild->getImprovement());
+			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(kBuild.getImprovement());
 			if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
 			{
 				m_ba_CacheAllowBuild.set(false, eBuild);
 				continue;
 			}
 
-			RouteTypes eRoute = static_cast<RouteTypes>(pBuild->getRoute());
+			RouteTypes eRoute = static_cast<RouteTypes>(kBuild.getRoute());
 			if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
 			{
 				m_ba_CacheAllowBuild.set(false, eBuild);
@@ -172,7 +172,7 @@ void CvPlayerCivEffect::rebuildCivEffectCache()
 			// In most cases the loop will only execute once and it's not a high performance function anyway.
 			for (unsigned int i = 0; i < iCount; ++i)
 			{
-				applyCivEffect(eCivEffect, 1, false);
+				applyCivEffect(eCivEffect);
 			}
 		}
 	}

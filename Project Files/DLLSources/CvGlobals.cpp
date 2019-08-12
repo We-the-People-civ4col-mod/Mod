@@ -505,7 +505,7 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 {
 	// Ideally this assert should trigger if altered after players are added, but it doesn't look like there are any way to check that.
 	// What really should be checked here is that the total count of cities in the game should be 0.
-	FAssert(!GC.getGameINLINE().isFinalInitialized());
+//	FAssert(!GC.getGameINLINE().isFinalInitialized());
 #ifndef CHECK_GLOBAL_CONSTANTS
 	++iRadius;
 	CITY_PLOTS_RADIUS = iRadius;
