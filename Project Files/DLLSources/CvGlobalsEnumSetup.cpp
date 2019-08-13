@@ -16,6 +16,35 @@ HurryTypes       HURRY_IMMIGRANT             = NO_HURRY;
 #endif
 
 
+static void DisplayXMLmissingError(bool bSuccess, const char* szName)
+{
+	if (!bSuccess)
+	{
+		char szMessage[1024];
+
+		sprintf(szMessage, "XML is missing the mandatory entry: %s", szName);
+		gDLL->MessageBox(szMessage, "Missing XML entry Error");
+	}
+}
+
+static void DisplayXMLhardcodingError(bool bSuccess, const char* szName, bool bAlwaysHardcoded)
+{
+	if (!bSuccess)
+	{
+		char szMessage[1024];
+
+		sprintf(szMessage, "DLL hardcoding error: %s\n%s", szName,
+			bAlwaysHardcoded ? "This is always hardcoded and changing it in XML requires recompiling the DLL." : "Use a non-hardcoded DLL or recompile the DLL to match your new XML setting."
+			);
+		gDLL->MessageBox(szMessage, "XML mismatch hardcoded DLL Error");
+	}
+}
+
+static void DisplayXMLhardcodingError(const char* szName, const char* szAssumedName)
+{
+	DisplayXMLhardcodingError(strcmp(szName, szAssumedName) == 0, szName, false);
+}
+
 void CvGlobals::postXMLLoad(bool bFirst)
 {
 	if (bFirst)
@@ -78,15 +107,29 @@ void CvGlobals::postXMLLoad(bool bFirst)
 				break;
 			}
 		}
-		FAssertMsg(CIV_EFFECT_DEFAULT_ALL != NO_CIV_EFFECT, "Missing xml entry");
-		FAssertMsg(CIV_EFFECT_DEFAULT_EUROPEAN != NO_CIV_EFFECT, "Missing xml entry");
-		FAssertMsg(CIV_EFFECT_DEFAULT_NATIVE != NO_CIV_EFFECT, "Missing xml entry");
-		FAssertMsg(CIV_EFFECT_DEFAULT_KING != NO_CIV_EFFECT, "Missing xml entry");
-		FAssertMsg(CIV_EFFECT_DEFAULT_HUMAN != NO_CIV_EFFECT, "Missing xml entry");
-		FAssertMsg(CIV_EFFECT_DEFAULT_AI != NO_CIV_EFFECT, "Missing xml entry");
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_ALL        != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_ALL"       );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_EUROPEAN   != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_EUROPEAN"  );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_NATIVE     != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_NATIVE"    );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_KING       != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_KING"      );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_HUMAN      != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_HUMAN"     );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_AI         != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_AI"        );
+
+#else
+
+		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_ALL"       , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_ALL       ).getType());
+		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_EUROPEAN"  , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_EUROPEAN  ).getType());
+		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_NATIVE"    , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_NATIVE    ).getType());
+		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_KING"      , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_KING      ).getType());
+		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_HUMAN"     , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_HUMAN     ).getType());
+		DisplayXMLhardcodingError("CIV_EFFECT_DEFAULT_AI"        , this->getCivEffectInfo(CIV_EFFECT_DEFAULT_AI        ).getType());
+
+		DisplayXMLhardcodingError("HURRY_GOLD"                   , this->getHurryInfo(HURRY_GOLD                       ).getType());
+		DisplayXMLhardcodingError("HURRY_IMMIGRANT"              , this->getHurryInfo(HURRY_IMMIGRANT                  ).getType());
+
 #endif
-		FAssertMsg(HURRY_GOLD != NO_HURRY, "Missing xml entry");
-		FAssertMsg(HURRY_IMMIGRANT != NO_HURRY, "Missing xml entry");
+		DisplayXMLmissingError(HURRY_GOLD      != NO_HURRY, "HURRY_GOLD");
+		DisplayXMLmissingError(HURRY_IMMIGRANT != NO_HURRY, "HURRY_IMMIGRANT");
+
 	}
 	else // bFirst
 	{

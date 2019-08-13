@@ -32,9 +32,9 @@ print $output "// This file will hopefully solve the out of sync problem for goo
 print $output "// The makefile will update this file if needed each time the compiler is used.\n";
 print $output "// As a result, a compiled DLL will always match the xml files at the time of compilation.\n";
 print $output "// \n";
-print $output "// The debugger is aided by this file. Even if the compiler in the makefile doesn't hardcode, data, the debugger will.\n";
-print $output "// This means the debugger will use the names given in this file, like UNIT_WAGON_TRAIN(81) instead of just 81.\n";
-print $output "// Since it's debugger only, this won't have any effect on how the game is running.\n";
+print $output "// The debugger is aided by this file.\n";
+print $output "// The debugger will use the names given in this file, like UNIT_WAGON_TRAIN(81) instead of just 81.\n";
+print $output "// It would be nice to trick the debugger to assume hardcoded even if the DLL isn't, but for the time being the debugger prefers hardcoded DLL files.\n";
 print $output "// \n";
 print $output "// The file can optionally hardcode everything (it doesn't by default. It has to be enabled)\n";
 print $output "// Hardcoding can help the compiler optimization, but it shouldn't be used if somebody wants to edit xml files.\n";
@@ -115,6 +115,9 @@ sub processFile
 	
 	my $isHardcoded = isAlwaysHardcodedEnum($filename);
 	
+	my $hardcodedBool = "true";
+	$hardcodedBool = "false" unless $isHardcoded;
+	
 	my $isYield = $enum eq "YieldTypes";
 
 	print $output "enum ";
@@ -127,10 +130,10 @@ sub processFile
 	foreach my $type (getTypesInFile($filename))
 	{
 		print $output "\t" . $type . ",\n";
-		print $output_test "FAssertMsg(strcmp(\"". $type . "\", " . getInfo($basename) . "($type).getType()) == 0, \"File $filename has mismatch between xml and DLL enum\");\n" if $isHardcoded;
+		print $output_test "DisplayXMLhardcodingError(strcmp(\"". $type . "\", " . getInfo($basename) . "($type).getType()) == 0, \"$type\", true);\n" if $isHardcoded;
 	}
 
-	print $output_test "FAssertMsg(NUM_" . $TYPE . "_TYPES == " . getNumFunction($basename) . ", \"File $filename has mismatched length between xml and DLL enum\");\n";
+	print $output_test "DisplayXMLhardcodingError(NUM_" . $TYPE . "_TYPES == " . getNumFunction($basename) . ", \"NUM_" . $TYPE . "_TYPES\", " . $hardcodedBool . ");\n";
 
 	print $output "\n\tNUM_" . $TYPE . "_TYPES,\n";
 	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n" if $isYield;
