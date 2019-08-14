@@ -6,6 +6,27 @@
         <Type>YIELD_CATEGORY_FOOD</Type>
     </YieldCategoryInfo>
     <YieldCategoryInfo>
-        <Type>YIELD_CATEGORY_SELL_TO_NATIVE</Type>
+        <Type>YIELD_CATEGORY_CONSTRUCTION</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_TOOLS</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_HAMMERS</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_BELLS</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_CROSSES</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_CULTURE</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_HEALTH</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_EDUCATION</Type>
     </YieldCategoryInfo>
 </Civ4YieldCategoryInfos>

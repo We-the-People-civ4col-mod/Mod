@@ -9091,6 +9091,12 @@ m_iPowerValue(0),
 m_iAssetValue(0),
 m_bCargo(false),
 m_bIsExportYield(false), // auto traderoute - Nightinggale
+m_bAI_AlwaysSell(false),
+m_bAI_SellNotNeeded(false),
+m_bAI_FinalProduct(false),
+m_bAI_FinalProductIfNotNeeded(false),
+m_bAI_BuyFromEurope(false),
+m_bAI_UseBuyValue(false),
 // R&R, Androrc,  Livestock Breeding
 m_bLivestock(false)
 // R&R, Androrc,  Livestock Breeding, END
@@ -9289,6 +9295,35 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetEnum(getType(), &m_eCategory, "eYieldCategory", false);
 
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "YieldBoolSetup"))
+	{
+		pXML->GetChildXmlValByName(&m_bCargo, "bCargo");
+
+		pXML->GetChildXmlValByName(&m_bIsExportYield, "bIsExportYield"); // auto traderoute - Nightinggale
+		// R&R, Androrc, Livestock Breeding
+		pXML->GetChildXmlValByName(&m_bLivestock, "bLivestock", false);
+		// R&R, Androrc, Livestock Breeding, END
+
+		pXML->GetChildXmlValByName(&m_bAI_AlwaysSell, "bAI_AlwaysSell", false);
+		pXML->GetChildXmlValByName(&m_bAI_SellNotNeeded, "bAI_SellNotNeeded", false);
+
+		pXML->GetChildXmlValByName(&m_bAI_FinalProduct, "bAI_FinalProduct", false);
+		pXML->GetChildXmlValByName(&m_bAI_FinalProductIfNotNeeded, "bAI_FinalProductIfNotNeeded", false);
+
+		pXML->GetChildXmlValByName(&m_bAI_BuyFromEurope, "bAI_BuyFromEurope", false);
+		pXML->GetChildXmlValByName(&m_bAI_UseBuyValue, "bAI_UseBuyValue", false);
+		
+		FAssertMsg(isCargo() || !AI_isAlwaysSell(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+		FAssertMsg(isCargo() || !AI_isSellNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+		FAssertMsg(isCargo() || !AI_isFinalProduct(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+		FAssertMsg(isCargo() || !AI_isFinalProductIfNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+		FAssertMsg(isCargo() || !AI_isBuyFromEurope(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+		FAssertMsg(isCargo() || !bAI_isUseBuyValue(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+
 	pXML->GetChildXmlValByName(&m_iBuyPriceLow, "iBuyPriceLow");
 	pXML->GetChildXmlValByName(&m_iBuyPriceHigh, "iBuyPriceHigh");
 	// TAC - Price Limits - Ray - START
@@ -9330,12 +9365,6 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iWaterTextureIndex, "iWaterTextureIndex");
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
-	pXML->GetChildXmlValByName(&m_bCargo, "bCargo");
-
-	pXML->GetChildXmlValByName(&m_bIsExportYield, "bIsExportYield"); // auto traderoute - Nightinggale
-	// R&R, Androrc, Livestock Breeding
-	pXML->GetChildXmlValByName(&m_bLivestock, "bLivestock", false);
-	// R&R, Androrc, Livestock Breeding, END
 	pXML->GetChildXmlValByName(m_szIcon, "Icon");
 	// KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 	pXML->GetChildXmlValByName(m_szCombiIcon, "CombiIcon");	

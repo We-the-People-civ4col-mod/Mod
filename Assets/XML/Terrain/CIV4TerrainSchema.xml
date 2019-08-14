@@ -105,14 +105,33 @@
 	<ElementType name="Icon" content="textOnly"/>
 	<ElementType name="CombiIcon" content="textOnly"/>
 	<ElementType name="HighlightIcon" content="textOnly"/>
+	
+	<ElementType name="bAI_AlwaysSell" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAI_SellNotNeeded" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAI_FinalProduct" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAI_FinalProductIfNotNeeded" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAI_BuyFromEurope" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bAI_UseBuyValue" content="textOnly" dt:type="boolean"/>
+	
+	<ElementType name="YieldBoolSetup" content="eltOnly">
+		<element type="bCargo" minOccurs="0"/>
+		<element type="bIsExportYield" minOccurs="0"/>
+		<element type="bLivestock" minOccurs="0"/>
+		<element type="bAI_AlwaysSell" minOccurs="0"/>
+		<element type="bAI_SellNotNeeded" minOccurs="0"/>
+		<element type="bAI_FinalProduct" minOccurs="0"/>
+		<element type="bAI_FinalProductIfNotNeeded" minOccurs="0"/>
+		<element type="bAI_BuyFromEurope" minOccurs="0"/>
+		<element type="bAI_UseBuyValue" minOccurs="0"/>
+	</ElementType>
+	
+	
 	<ElementType name="YieldInfo" content="eltOnly">
 		<element type="Type"/>
 		<element type="Description"/>
 		<element type="Civilopedia"/>
 		<element type="eYieldCategory" minOccurs="0"/>
-		<element type="bCargo"/>
-		<element type="bIsExportYield" minOccurs="0"/>
-		<element type="bLivestock" minOccurs="0"/>
+		<element type="YieldBoolSetup" minOccurs="0"/>
 		<element type="iBuyPriceLow"/>
 		<element type="iBuyPriceHigh"/>
 		<element type="iBuyPriceMin"/>

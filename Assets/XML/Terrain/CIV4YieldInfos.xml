@@ -11,7 +11,9 @@
             <Description>TXT_KEY_YIELD_FOOD</Description>
             <Civilopedia>TXT_KEY_YIELD_FOOD_PEDIA</Civilopedia>
             <eYieldCategory>YIELD_CATEGORY_FOOD</eYieldCategory>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -51,7 +53,10 @@
             <Type>YIELD_LUMBER</Type>
             <Description>TXT_KEY_YIELD_LUMBER</Description>
             <Civilopedia>TXT_KEY_YIELD_LUMBER_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_CONSTRUCTION</eYieldCategory>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -91,7 +96,10 @@
             <Type>YIELD_STONE</Type>
             <Description>TXT_KEY_YIELD_STONE</Description>
             <Civilopedia>TXT_KEY_YIELD_STONE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_CONSTRUCTION</eYieldCategory>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -131,8 +139,13 @@
             <Type>YIELD_HEMP</Type>
             <Description>TXT_KEY_YIELD_HEMP</Description>
             <Civilopedia>TXT_KEY_YIELD_HEMP_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -172,8 +185,13 @@
             <Type>YIELD_ORE</Type>
             <Description>TXT_KEY_YIELD_ORE</Description>
             <Civilopedia>TXT_KEY_YIELD_ORE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>2</iBuyPriceLow>
             <iBuyPriceHigh>4</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -213,8 +231,13 @@
             <Type>YIELD_SHEEP</Type>
             <Description>TXT_KEY_YIELD_SHEEP</Description>
             <Civilopedia>TXT_KEY_YIELD_SHEEP_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bLivestock>1</bLivestock>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bLivestock>1</bLivestock>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -254,8 +277,13 @@
             <Type>YIELD_CATTLE</Type>
             <Description>TXT_KEY_YIELD_CATTLE</Description>
             <Civilopedia>TXT_KEY_YIELD_CATTLE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bLivestock>1</bLivestock>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bLivestock>1</bLivestock>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -295,8 +323,11 @@
             <Type>YIELD_HORSES</Type>
             <Description>TXT_KEY_YIELD_HORSES</Description>
             <Civilopedia>TXT_KEY_YIELD_HORSES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bLivestock>1</bLivestock>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bLivestock>1</bLivestock>
+                <bAI_SellNotNeeded>1</bAI_SellNotNeeded>
+            </YieldBoolSetup>
             <iBuyPriceLow>5</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -336,8 +367,13 @@
             <Type>YIELD_COCA_LEAVES</Type>
             <Description>TXT_KEY_YIELD_COCA_LEAVES</Description>
             <Civilopedia>TXT_KEY_YIELD_COCA_LEAVES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -377,8 +413,13 @@
             <Type>YIELD_COCOA_FRUITS</Type>
             <Description>TXT_KEY_YIELD_COCOA_FRUITS</Description>
             <Civilopedia>TXT_KEY_YIELD_COCOA_FRUITS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -418,8 +459,13 @@
             <Type>YIELD_COFFEE_BERRIES</Type>
             <Description>TXT_KEY_YIELD_COFFEE_BERRIES</Description>
             <Civilopedia>TXT_KEY_YIELD_COFFEE_BERRIES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -459,8 +505,13 @@
             <Type>YIELD_TOBACCO</Type>
             <Description>TXT_KEY_YIELD_TOBACCO</Description>
             <Civilopedia>TXT_KEY_YIELD_TOBACCO_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -500,8 +551,13 @@
             <Type>YIELD_WOOL</Type>
             <Description>TXT_KEY_YIELD_WOOL</Description>
             <Civilopedia>TXT_KEY_YIELD_WOOL_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>3</iBuyPriceLow>
             <iBuyPriceHigh>4</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -542,8 +598,13 @@
             <Type>YIELD_COTTON</Type>
             <Description>TXT_KEY_YIELD_COTTON</Description>
             <Civilopedia>TXT_KEY_YIELD_COTTON_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -583,8 +644,13 @@
             <Type>YIELD_INDIGO</Type>
             <Description>TXT_KEY_YIELD_INDIGO</Description>
             <Civilopedia>TXT_KEY_YIELD_INDIGO_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -624,8 +690,13 @@
             <Type>YIELD_HIDES</Type>
             <Description>TXT_KEY_YIELD_HIDES</Description>
             <Civilopedia>TXT_KEY_YIELD_HIDES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>3</iBuyPriceLow>
             <iBuyPriceHigh>4</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -666,8 +737,13 @@
             <Type>YIELD_FUR</Type>
             <Description>TXT_KEY_YIELD_FUR</Description>
             <Civilopedia>TXT_KEY_YIELD_FUR_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -707,8 +783,13 @@
             <Type>YIELD_PREMIUM_FUR</Type>
             <Description>TXT_KEY_YIELD_PREMIUM_FUR</Description>
             <Civilopedia>TXT_KEY_YIELD_PREMIUM_FUR_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>3</iBuyPriceMin>
@@ -748,8 +829,13 @@
             <Type>YIELD_RAW_SALT</Type>
             <Description>TXT_KEY_YIELD_RAW_SALT</Description>
             <Civilopedia>TXT_KEY_YIELD_RAW_SALT_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -789,8 +875,13 @@
             <Type>YIELD_RED_PEPPER</Type>
             <Description>TXT_KEY_YIELD_RED_PEPPER</Description>
             <Civilopedia>TXT_KEY_YIELD_RED_PEPPER_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -830,8 +921,13 @@
             <Type>YIELD_BARLEY</Type>
             <Description>TXT_KEY_YIELD_BARLEY</Description>
             <Civilopedia>TXT_KEY_YIELD_BARLEY_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>3</iBuyPriceLow>
             <iBuyPriceHigh>4</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -871,8 +967,13 @@
             <Type>YIELD_SUGAR</Type>
             <Description>TXT_KEY_YIELD_SUGAR</Description>
             <Civilopedia>TXT_KEY_YIELD_SUGAR_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -912,8 +1013,13 @@
             <Type>YIELD_GRAPES</Type>
             <Description>TXT_KEY_YIELD_GRAPES</Description>
             <Civilopedia>TXT_KEY_YIELD_GRAPES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>3</iBuyPriceLow>
             <iBuyPriceHigh>4</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -953,8 +1059,13 @@
             <Type>YIELD_WHALE_BLUBBER</Type>
             <Description>TXT_KEY_YIELD_WHALE_BLUBBER</Description>
             <Civilopedia>TXT_KEY_YIELD_WHALE_BLUBBER_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -994,8 +1105,13 @@
             <Type>YIELD_VALUABLE_WOOD</Type>
             <Description>TXT_KEY_YIELD_VALUABLE_WOOD</Description>
             <Civilopedia>TXT_KEY_YIELD_VALUABLE_WOOD_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>4</iBuyPriceLow>
             <iBuyPriceHigh>5</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -1035,7 +1151,10 @@
             <Type>YIELD_TRADE_GOODS</Type>
             <Description>TXT_KEY_YIELD_TRADE_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_TRADE_GOODS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+            </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -1075,7 +1194,9 @@
             <Type>YIELD_ROPE</Type>
             <Description>TXT_KEY_YIELD_ROPE</Description>
             <Civilopedia>TXT_KEY_YIELD_ROPE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1116,7 +1237,10 @@
             <Type>YIELD_SAILCLOTH</Type>
             <Description>TXT_KEY_YIELD_SAILCLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_SAILCLOTH_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bAI_SellNotNeeded>1</bAI_SellNotNeeded>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1157,7 +1281,11 @@
             <Type>YIELD_TOOLS</Type>
             <Description>TXT_KEY_YIELD_TOOLS</Description>
             <Civilopedia>TXT_KEY_YIELD_TOOLS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_TOOLS</eYieldCategory>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bAI_BuyFromEurope>1</bAI_BuyFromEurope>
+            </YieldBoolSetup>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -1198,7 +1326,9 @@
             <Type>YIELD_BLADES</Type>
             <Description>TXT_KEY_YIELD_BLADES</Description>
             <Civilopedia>TXT_KEY_YIELD_BLADES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
             <iBuyPriceMin>2</iBuyPriceMin>
@@ -1239,7 +1369,9 @@
             <Type>YIELD_MUSKETS</Type>
             <Description>TXT_KEY_YIELD_MUSKETS</Description>
             <Civilopedia>TXT_KEY_YIELD_MUSKETS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>10</iBuyPriceLow>
             <iBuyPriceHigh>12</iBuyPriceHigh>
             <iBuyPriceMin>6</iBuyPriceMin>
@@ -1280,7 +1412,9 @@
             <Type>YIELD_CANNONS</Type>
             <Description>TXT_KEY_YIELD_CANNONS</Description>
             <Civilopedia>TXT_KEY_YIELD_CANNONS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+            </YieldBoolSetup>
             <iBuyPriceLow>14</iBuyPriceLow>
             <iBuyPriceHigh>16</iBuyPriceHigh>
             <iBuyPriceMin>4</iBuyPriceMin>
@@ -1321,8 +1455,13 @@
             <Type>YIELD_SILVER</Type>
             <Description>TXT_KEY_YIELD_SILVER</Description>
             <Civilopedia>TXT_KEY_YIELD_SILVER_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>19</iBuyPriceLow>
             <iBuyPriceHigh>20</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1362,8 +1501,13 @@
             <Type>YIELD_GOLD</Type>
             <Description>TXT_KEY_YIELD_GOLD</Description>
             <Civilopedia>TXT_KEY_YIELD_GOLD_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>39</iBuyPriceLow>
             <iBuyPriceHigh>40</iBuyPriceHigh>
             <iBuyPriceMin>10</iBuyPriceMin>
@@ -1403,8 +1547,13 @@
             <Type>YIELD_GEMS</Type>
             <Description>TXT_KEY_YIELD_GEMS</Description>
             <Civilopedia>TXT_KEY_YIELD_GEMS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>23</iBuyPriceLow>
             <iBuyPriceHigh>24</iBuyPriceHigh>
             <iBuyPriceMin>6</iBuyPriceMin>
@@ -1444,8 +1593,13 @@
             <Type>YIELD_COCOA</Type>
             <Description>TXT_KEY_YIELD_COCOA</Description>
             <Civilopedia>TXT_KEY_YIELD_COCOA_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1486,8 +1640,13 @@
             <Type>YIELD_COFFEE</Type>
             <Description>TXT_KEY_YIELD_COFFEE</Description>
             <Civilopedia>TXT_KEY_YIELD_COFFEE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1528,8 +1687,13 @@
             <Type>YIELD_CIGARS</Type>
             <Description>TXT_KEY_YIELD_CIGARS</Description>
             <Civilopedia>TXT_KEY_YIELD_CIGARS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1569,8 +1733,13 @@
             <Type>YIELD_WOOL_CLOTH</Type>
             <Description>TXT_KEY_YIELD_WOOL_CLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_WOOL_CLOTH_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>8</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>4</iBuyPriceMin>
@@ -1611,8 +1780,13 @@
             <Type>YIELD_CLOTH</Type>
             <Description>TXT_KEY_YIELD_CLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_CLOTH_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1653,8 +1827,13 @@
             <Type>YIELD_COLOURED_CLOTH</Type>
             <Description>TXT_KEY_YIELD_COLOURED_CLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_COLOURED_CLOTH_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>19</iBuyPriceLow>
             <iBuyPriceHigh>20</iBuyPriceHigh>
             <iBuyPriceMin>8</iBuyPriceMin>
@@ -1694,8 +1873,12 @@
             <Type>YIELD_LEATHER</Type>
             <Description>TXT_KEY_YIELD_LEATHER</Description>
             <Civilopedia>TXT_KEY_YIELD_LEATHER_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>8</iBuyPriceLow>
             <iBuyPriceHigh>9</iBuyPriceHigh>
             <iBuyPriceMin>3</iBuyPriceMin>
@@ -1735,8 +1918,13 @@
             <Type>YIELD_COATS</Type>
             <Description>TXT_KEY_YIELD_COATS</Description>
             <Civilopedia>TXT_KEY_YIELD_COATS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1777,8 +1965,13 @@
             <Type>YIELD_PREMIUM_COATS</Type>
             <Description>TXT_KEY_YIELD_PREMIUM_COATS</Description>
             <Civilopedia>TXT_KEY_YIELD_PREMIUM_COATS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>13</iBuyPriceLow>
             <iBuyPriceHigh>14</iBuyPriceHigh>
             <iBuyPriceMin>6</iBuyPriceMin>
@@ -1819,8 +2012,13 @@
             <Type>YIELD_SALT</Type>
             <Description>TXT_KEY_YIELD_SALT</Description>
             <Civilopedia>TXT_KEY_YIELD_SALT_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1861,8 +2059,13 @@
             <Type>YIELD_SPICES</Type>
             <Description>TXT_KEY_YIELD_SPICES</Description>
             <Civilopedia>TXT_KEY_YIELD_SPICES_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>10</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1903,8 +2106,13 @@
             <Type>YIELD_BEER</Type>
             <Description>TXT_KEY_YIELD_BEER</Description>
             <Civilopedia>TXT_KEY_YIELD_BEER_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>8</iBuyPriceLow>
             <iBuyPriceHigh>9</iBuyPriceHigh>
             <iBuyPriceMin>3</iBuyPriceMin>
@@ -1944,8 +2152,13 @@
             <Type>YIELD_RUM</Type>
             <Description>TXT_KEY_YIELD_RUM</Description>
             <Civilopedia>TXT_KEY_YIELD_RUM_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -1985,8 +2198,13 @@
             <Type>YIELD_WINE</Type>
             <Description>TXT_KEY_YIELD_WINE</Description>
             <Civilopedia>TXT_KEY_YIELD_WINE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>10</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -2026,8 +2244,13 @@
             <Type>YIELD_WHALE_OIL</Type>
             <Description>TXT_KEY_YIELD_WHALE_OIL</Description>
             <Civilopedia>TXT_KEY_YIELD_WHALE_OIL_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>18</iBuyPriceLow>
             <iBuyPriceHigh>25</iBuyPriceHigh>
             <iBuyPriceMin>6</iBuyPriceMin>
@@ -2067,8 +2290,13 @@
             <Type>YIELD_FURNITURE</Type>
             <Description>TXT_KEY_YIELD_FURNITURE</Description>
             <Civilopedia>TXT_KEY_YIELD_FURNITURE_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
-            <bIsExportYield>1</bIsExportYield>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bIsExportYield>1</bIsExportYield>
+                <bAI_AlwaysSell>1</bAI_AlwaysSell>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_UseBuyValue>1</bAI_UseBuyValue>
+            </YieldBoolSetup>
             <iBuyPriceLow>9</iBuyPriceLow>
             <iBuyPriceHigh>11</iBuyPriceHigh>
             <iBuyPriceMin>5</iBuyPriceMin>
@@ -2108,7 +2336,10 @@
             <Type>YIELD_LUXURY_GOODS</Type>
             <Description>TXT_KEY_YIELD_LUXURY_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_LUXURY_GOODS_PEDIA</Civilopedia>
-            <bCargo>1</bCargo>
+            <YieldBoolSetup>
+                <bCargo>1</bCargo>
+                <bAI_FinalProduct>1</bAI_FinalProduct>
+            </YieldBoolSetup>
             <iBuyPriceLow>15</iBuyPriceLow>
             <iBuyPriceHigh>15</iBuyPriceHigh>
             <iBuyPriceMin>1</iBuyPriceMin>
@@ -2148,7 +2379,7 @@
             <Type>YIELD_HAMMERS</Type>
             <Description>TXT_KEY_YIELD_HAMMERS</Description>
             <Civilopedia>TXT_KEY_YIELD_HAMMERS_PEDIA</Civilopedia>
-            <bCargo>0</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_HAMMERS</eYieldCategory>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -2188,7 +2419,7 @@
             <Type>YIELD_BELLS</Type>
             <Description>TXT_KEY_YIELD_BELLS</Description>
             <Civilopedia>TXT_KEY_YIELD_BELLS_PEDIA</Civilopedia>
-            <bCargo>0</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_BELLS</eYieldCategory>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -2228,7 +2459,7 @@
             <Type>YIELD_CROSSES</Type>
             <Description>TXT_KEY_YIELD_CROSSES</Description>
             <Civilopedia>TXT_KEY_YIELD_CROSSES_PEDIA</Civilopedia>
-            <bCargo>0</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_CROSSES</eYieldCategory>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -2268,7 +2499,7 @@
             <Type>YIELD_CULTURE</Type>
             <Description>TXT_KEY_YIELD_CULTURE</Description>
             <Civilopedia>TXT_KEY_YIELD_CULTURE_PEDIA</Civilopedia>
-            <bCargo>0</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_CULTURE</eYieldCategory>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -2308,7 +2539,7 @@
             <Type>YIELD_HEALTH</Type>
             <Description>TXT_KEY_YIELD_HEALTH</Description>
             <Civilopedia>TXT_KEY_YIELD_HEALTH_PEDIA</Civilopedia>
-            <bCargo>0</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_HEALTH</eYieldCategory>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>
@@ -2348,7 +2579,7 @@
             <Type>YIELD_EDUCATION</Type>
             <Description>TXT_KEY_YIELD_EDUCATION</Description>
             <Civilopedia>TXT_KEY_YIELD_EDUCATION_PEDIA</Civilopedia>
-            <bCargo>0</bCargo>
+            <eYieldCategory>YIELD_CATEGORY_EDUCATION</eYieldCategory>
             <iBuyPriceLow>0</iBuyPriceLow>
             <iBuyPriceHigh>0</iBuyPriceHigh>
             <iBuyPriceMin>0</iBuyPriceMin>

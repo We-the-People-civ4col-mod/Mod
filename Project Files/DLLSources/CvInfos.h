@@ -2597,8 +2597,17 @@ public:
 	bool isExportYield() const {return m_bIsExportYield;} // auto traderoute - Nightinggale
 
 	// R&R, Androrc, Livestock Breeding
-	DllExport bool isLivestock() const;
+	bool isLivestock() const;
 	// R&R, Androrc, Livestock Breeding, END
+
+	bool AI_isAlwaysSell() const { return m_bAI_AlwaysSell; }
+	bool AI_isSellNotNeeded() const { return m_bAI_SellNotNeeded; }
+
+	bool AI_isFinalProduct() const { return m_bAI_FinalProduct; }
+	bool AI_isFinalProductIfNotNeeded() const { return m_bAI_FinalProductIfNotNeeded; }
+
+	bool AI_isBuyFromEurope() const { return m_bAI_BuyFromEurope; }
+	bool bAI_isUseBuyValue() const { return m_bAI_UseBuyValue; }
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
@@ -2651,12 +2660,22 @@ protected:
 	int m_iPowerValue;
 	int m_iAssetValue;
 
+	// TODO merge all the bools into a single uint32
+
 	bool m_bCargo;
 	bool m_bIsExportYield; // auto traderoute - Nightinggale
 
 	// R&R, Androrc, Livestock Breeding
 	bool m_bLivestock;
 	// R&R, Androrc, Livestock Breeding, END
+
+	bool m_bAI_AlwaysSell;
+	bool m_bAI_SellNotNeeded;
+	bool m_bAI_FinalProduct;
+	bool m_bAI_FinalProductIfNotNeeded;
+	bool m_bAI_BuyFromEurope;
+	bool m_bAI_UseBuyValue;
+
 };
 
 

@@ -294,11 +294,14 @@ public:
 	void AI_nativeTrade(CvUnit* pUnit); // R&R, ray, Natives Trading - START
 	
 	bool AI_isYieldForSale(YieldTypes eYield) const;
+	bool AI_isYieldForSale(const CvYieldInfo& kYield) const;
 	
 	bool AI_isYieldNeeded(YieldTypes eYield, int iCapacityPercent = -1, CvCity* pCity = NULL) const;	// TAC - AI Economy - koma13
 
 	bool AI_isYieldFinalProduct(YieldTypes eYield) const;
+	bool AI_isYieldFinalProduct(const CvYieldInfo& kYield) const;
 	bool AI_shouldBuyFromEurope(YieldTypes eYield) const;
+	bool AI_shouldBuyFromEurope(const CvYieldInfo& kYield) const;
 	
 	// TAC - AI More food - koma13 - START
 	//int AI_yieldValue(YieldTypes eYield, bool bProduce = true, int iAmount = 1);

@@ -4874,7 +4874,7 @@ bool CvCityAI::AI_shouldExportYield(YieldTypes eYield) const
 	}
 	// TAC - AI Economy - koma13 - END
 
-	if ((GET_PLAYER(getOwnerINLINE()).AI_shouldBuyFromEurope(eYield)) || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+	if ((GET_PLAYER(getOwnerINLINE()).AI_shouldBuyFromEurope(eYield)) || (eYield != NO_YIELD && GC.getYieldInfo(eYield).getCategory() == YIELD_CATEGORY_CONSTRUCTION))
 	{
 		return false;
 	}

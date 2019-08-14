@@ -7052,22 +7052,24 @@ void CvCity::doYields()
 	// R&R, ray, adjustment for less Custom House messages
 	int iCustomHouseProfit = 0;
 	
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		switch (eYield)
+		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		YieldCategoryTypes eYieldCategory = kYield.getCategory();
+
+		switch (eYieldCategory)
 		{
-		case YIELD_FOOD:
+		case YIELD_CATEGORY_FOOD:
 			// handled in doGrowth
 			break;
-		case YIELD_HAMMERS:
+		case YIELD_CATEGORY_HAMMERS:
 			// temporary storage for hammers. Production handled in doProduction
 			setYieldStored(eYield, aiYields[eYield]);
 			break;
-		case YIELD_CROSSES:
+		case YIELD_CATEGORY_CROSSES:
 			// handled in CvPlayer::doCrosses
 			break;
-		case YIELD_EDUCATION:
+		case YIELD_CATEGORY_EDUCATION:
 			{
 				std::vector<CvUnit*> apStudents;
 				for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -7111,7 +7113,8 @@ void CvCity::doYields()
 			bool bIgnoresBoycott = getIgnoresBoycott();
 			bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
-			if (GC.getYieldInfo(eYield).isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
+			// TODO xml setup of yields, which won't overflow or be sold in custom house
+			if (kYield.isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 			{
 				//VET NewCapacity - begin 6/9 -- ray fix
 				int iExcess = 0;
@@ -7236,8 +7239,9 @@ void CvCity::doYields()
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 				//VET NewCapacity -- ray fix for messages - START
-				else if (iYield == 5 && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
+				else if (eYield == 5 && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
 				{
+					// TODO figure out why 5 = YIELD_SHEEP is used here
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
@@ -10753,9 +10757,8 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 
 	if (bImportAll || bAutoExportAll)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if (GC.getYieldInfo(eYield).isExportYield())
 			{
 				bool bImport = bImportAll || isImport(eYield);
@@ -10768,7 +10771,8 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 				int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 				iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
 
-				doTask(TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+				// again do not create network traffic since this function is called in parallel.
+				doTask(TASK_YIELD_TRADEROUTE, eYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 			}
 		}
 	}

@@ -8597,94 +8597,19 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 
 bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 {
-	if (!GC.getYieldInfo(eYield).isCargo())
+	return AI_isYieldForSale(GC.getYieldInfo(eYield));
+}
+
+bool CvPlayerAI::AI_isYieldForSale(const CvYieldInfo& kYield) const
+{
+	if (kYield.AI_isAlwaysSell())
 	{
-		return false;
+		return true;
 	}
 
-	switch (eYield)
+	if (kYield.AI_isSellNotNeeded())
 	{
-		case YIELD_FOOD:
-		case YIELD_LUMBER:
-		case YIELD_STONE:
-			return false;
-			break;
-		case YIELD_HEMP:
-		case YIELD_ORE:
-		case YIELD_SHEEP:
-		case YIELD_CATTLE:
-			return true;
-			break;
-		case YIELD_HORSES:
-			return !AI_isYieldNeeded(eYield); // R&R, ray, AI improvement for horses - START
-			break;
-		case YIELD_COCOA_FRUITS:
-		case YIELD_COFFEE_BERRIES:
-		case YIELD_TOBACCO:
-		case YIELD_WOOL:
-		case YIELD_COTTON:
-		case YIELD_INDIGO:
-		case YIELD_HIDES:
-		case YIELD_FUR:
-		case YIELD_PREMIUM_FUR:
-		case YIELD_RAW_SALT:
-		case YIELD_RED_PEPPER:
-		case YIELD_BARLEY:
-		case YIELD_SUGAR:
-		case YIELD_GRAPES:
-		case YIELD_WHALE_BLUBBER:
-		case YIELD_VALUABLE_WOOD:
-			return true;
-			break;
-		case YIELD_TRADE_GOODS:
-			return false;
-			break;
-		case YIELD_ROPE:
-		case YIELD_SAILCLOTH:
-			return !AI_isYieldNeeded(eYield);
-			break;
-		// Erik: It does the AI little good to sell these yields
-		case YIELD_TOOLS:
-		case YIELD_BLADES:
-		case YIELD_MUSKETS:
-		case YIELD_CANNONS:
-			return false;
-			break;
-		case YIELD_COCA_LEAVES:
-		case YIELD_SILVER:
-		case YIELD_GOLD:
-		case YIELD_GEMS:
-		case YIELD_COCOA:
-		case YIELD_COFFEE:
-		case YIELD_CIGARS:
-		case YIELD_WOOL_CLOTH:
-		case YIELD_CLOTH:
-		case YIELD_COLOURED_CLOTH:
-		case YIELD_LEATHER:
-		case YIELD_COATS:
-		case YIELD_PREMIUM_COATS:
-		case YIELD_SALT:
-		case YIELD_SPICES:
-		case YIELD_BEER:
-		case YIELD_RUM:
-		case YIELD_WINE:
-		case YIELD_WHALE_OIL:
-		case YIELD_FURNITURE:
-			return true;
-			break;
-		case YIELD_LUXURY_GOODS:
-			return false;
-			break;
-		case YIELD_HAMMERS:
-		case YIELD_BELLS:
-		case YIELD_CROSSES:
-		case YIELD_CULTURE:
-		case YIELD_HEALTH:
-		case YIELD_EDUCATION:
-			FAssertMsg(false, "Selling intangibles?");
-			break;
-		default:
-			FAssert(false);
+		return !AI_isYieldNeeded(kYield.getIndex());
 	}
 
 	return false;
@@ -8776,217 +8701,45 @@ bool CvPlayerAI::AI_isYieldNeeded(YieldTypes eYield, int iCapacityPercent, CvCit
 
 bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 {
-	if (!GC.getYieldInfo(eYield).isCargo())
+	return AI_isYieldFinalProduct(GC.getYieldInfo(eYield));
+}
+
+bool CvPlayerAI::AI_isYieldFinalProduct(const CvYieldInfo& kYield) const
+{
+	if (kYield.AI_isFinalProductIfNotNeeded())
+	{
+		YieldTypes eYield = kYield.getIndex();
+		int iLoop;
+		CvCity* pLoopCity = NULL;
+		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+		{
+			if (pLoopCity->AI_getNeededYield(eYield) > 0)
+			{
+				return false;
+			}
+		}
+	}
+	else if (!kYield.AI_isFinalProduct())
 	{
 		return false;
 	}
 
-	bool bFinal = true;
-
-	switch (eYield)
-	{
-		case YIELD_FOOD:
-		case YIELD_LUMBER:
-		case YIELD_STONE:
-			bFinal = false;
-			break;
-		case YIELD_HEMP:
-		case YIELD_ORE:
-		case YIELD_SHEEP:
-		case YIELD_CATTLE:
-			{
-				int iLoop;
-				CvCity* pLoopCity = NULL;
-				for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-				{
-					if (pLoopCity->AI_getNeededYield(eYield) > 0)
-					{
-						bFinal = false;
-						break;
-					}
-				}
-			}
-			break;
-		case YIELD_HORSES:
-			bFinal = false;
-			break;
-		case YIELD_COCOA_FRUITS:
-		case YIELD_COFFEE_BERRIES:
-		case YIELD_TOBACCO:
-		case YIELD_WOOL:
-		case YIELD_COTTON:
-		case YIELD_INDIGO:
-		case YIELD_HIDES:
-		case YIELD_FUR:
-		case YIELD_PREMIUM_FUR:
-		case YIELD_RAW_SALT:
-		case YIELD_RED_PEPPER:
-		case YIELD_BARLEY:
-		case YIELD_SUGAR:
-		case YIELD_GRAPES:
-		case YIELD_WHALE_BLUBBER:
-		case YIELD_VALUABLE_WOOD:
-			{
-				int iLoop;
-				CvCity* pLoopCity = NULL;
-				for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-				{
-					if (pLoopCity->AI_getNeededYield(eYield) > 0)
-					{
-						bFinal = false;
-						break;
-					}
-				}
-			}
-			break;
-		case YIELD_TRADE_GOODS:
-			bFinal = true;
-			break;
-		case YIELD_ROPE:
-		case YIELD_SAILCLOTH:
-		case YIELD_TOOLS:
-		case YIELD_BLADES:
-		case YIELD_MUSKETS:
-		case YIELD_CANNONS:
-			bFinal = false;
-			break;
-		case YIELD_COCA_LEAVES:
-		case YIELD_SILVER:
-		case YIELD_GOLD:
-		case YIELD_GEMS:
-		case YIELD_COCOA:
-		case YIELD_COFFEE:
-		case YIELD_CIGARS:
-		case YIELD_WOOL_CLOTH:
-			bFinal = true;
-			break;
-		case YIELD_CLOTH:
-			{
-				int iLoop;
-				CvCity* pLoopCity = NULL;
-				for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
-				{
-					if (pLoopCity->AI_getNeededYield(eYield) > 0)
-					{
-						bFinal = false;
-						break;
-					}
-				}
-			}
-			break;
-		case YIELD_COLOURED_CLOTH:
-		case YIELD_LEATHER:
-		case YIELD_COATS:
-		case YIELD_PREMIUM_COATS:
-		case YIELD_SALT:
-		case YIELD_SPICES:
-		case YIELD_BEER:
-		case YIELD_RUM:
-		case YIELD_WINE:
-		case YIELD_WHALE_OIL:
-		case YIELD_FURNITURE:
-		case YIELD_LUXURY_GOODS:
-			bFinal = true;
-			break;
-		case YIELD_HAMMERS:
-		case YIELD_BELLS:
-		case YIELD_CROSSES:
-		case YIELD_CULTURE:
-		case YIELD_HEALTH:
-		case YIELD_EDUCATION:
-			bFinal = false;
-			FAssertMsg(false, "Selling intangibles?");
-			break;
-		default:
-			FAssert(false);
-	}
-
-	return bFinal;
+	return true;
 }
 
 bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 {
-	if (!GC.getYieldInfo(eYield).isCargo())
+	return AI_shouldBuyFromEurope(GC.getYieldInfo(eYield));
+}
+
+bool CvPlayerAI::AI_shouldBuyFromEurope(const CvYieldInfo& kYield) const
+{
+	if (kYield.AI_isBuyFromEurope())
 	{
-		return false;
+		AI_isYieldNeeded(kYield.getIndex());
 	}
 
-	bool bBuy = false;
-
-	switch (eYield)
-	{
-		case YIELD_FOOD:
-		case YIELD_LUMBER:
-		case YIELD_STONE:
-		case YIELD_HEMP:
-		case YIELD_ORE:
-		case YIELD_SHEEP:
-		case YIELD_CATTLE:
-		case YIELD_HORSES:
-		case YIELD_COCA_LEAVES:
-		case YIELD_COCOA_FRUITS:
-		case YIELD_COFFEE_BERRIES:
-		case YIELD_TOBACCO:
-		case YIELD_WOOL:
-		case YIELD_COTTON:
-		case YIELD_INDIGO:
-		case YIELD_HIDES:
-		case YIELD_FUR:
-		case YIELD_PREMIUM_FUR:
-		case YIELD_RAW_SALT:
-		case YIELD_RED_PEPPER:
-		case YIELD_BARLEY:
-		case YIELD_SUGAR:
-		case YIELD_GRAPES:
-		case YIELD_WHALE_BLUBBER:
-		case YIELD_VALUABLE_WOOD:
-		case YIELD_TRADE_GOODS:
-		case YIELD_ROPE:
-		case YIELD_SAILCLOTH:
-			bBuy = false;
-			break;
-		case YIELD_TOOLS:
-			bBuy = AI_isYieldNeeded(eYield);
-			break;
-		case YIELD_BLADES:
-		case YIELD_MUSKETS:
-		case YIELD_CANNONS:
-		case YIELD_SILVER:
-		case YIELD_GOLD:
-		case YIELD_GEMS:
-		case YIELD_COCOA:
-		case YIELD_COFFEE:
-		case YIELD_CIGARS:
-		case YIELD_WOOL_CLOTH:
-		case YIELD_CLOTH:
-		case YIELD_COLOURED_CLOTH:
-		case YIELD_LEATHER:
-		case YIELD_COATS:
-		case YIELD_PREMIUM_COATS:
-		case YIELD_SALT:
-		case YIELD_SPICES:
-		case YIELD_BEER:
-		case YIELD_RUM:
-		case YIELD_WINE:
-		case YIELD_WHALE_OIL:
-		case YIELD_FURNITURE:
-		case YIELD_LUXURY_GOODS:
-			bBuy = false;
-			break;
-		case YIELD_HAMMERS:
-		case YIELD_BELLS:
-		case YIELD_CROSSES:
-		case YIELD_CULTURE:
-		case YIELD_HEALTH:
-		case YIELD_EDUCATION:
-			bBuy = false;
-			FAssertMsg(false, "Selling intangibles?");
-			break;
-		default:
-			FAssert(false);
-	}
-
-	return bBuy;
+	return false;
 }
 
 // TAC - AI More food - koma13 - START
@@ -9211,95 +8964,31 @@ void CvPlayerAI::AI_updateYieldValues()
 	}
 
 	CvPlayer& kParent = GET_PLAYER(eParent);
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes)i;
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		YieldCategoryTypes eYieldCategory = kYield.getCategory();
 		int iValue = 0;
-		switch (eYield)
+		switch (eYieldCategory)
 		{
-			case YIELD_FOOD:
-				iValue += (kParent.getYieldSellPrice(eYield) + kParent.getYieldBuyPrice(eYield)) / 2;
+			case YIELD_CATEGORY_FOOD:
+				iValue = (kParent.getYieldSellPrice(eYield) + kParent.getYieldBuyPrice(eYield)) / 2;
 				break;
-			case YIELD_LUMBER:
-			case YIELD_STONE:
+			case YIELD_CATEGORY_CONSTRUCTION:
 				// TAC - AI Economy - koma13 - START
 				//iValue += (kParent.getYieldSellPrice(eYield) + kParent.getYieldBuyPrice(eYield)) / 2;
-				iValue += (AI_isYieldNeeded(eYield, 50)) ? (kParent.getYieldSellPrice(eYield) + kParent.getYieldBuyPrice(eYield)) / 2 : kParent.getYieldBuyPrice(eYield);
+				iValue = (AI_isYieldNeeded(eYield, 50)) ? (kParent.getYieldSellPrice(eYield) + kParent.getYieldBuyPrice(eYield)) / 2 : kParent.getYieldBuyPrice(eYield);
 				// TAC - AI Economy - koma13 - END
 				break;
-			case YIELD_HEMP:
-			case YIELD_ORE:
-			case YIELD_SHEEP:
-			case YIELD_CATTLE:
-				iValue += kParent.getYieldBuyPrice(eYield);
-				break;
-			case YIELD_HORSES:
-				iValue += kParent.getYieldSellPrice(eYield);
-				break;
-			case YIELD_COCOA_FRUITS:
-			case YIELD_COFFEE_BERRIES:
-			case YIELD_TOBACCO:
-			case YIELD_WOOL:
-			case YIELD_COTTON:
-			case YIELD_INDIGO:
-			case YIELD_HIDES:
-			case YIELD_FUR:
-			case YIELD_PREMIUM_FUR:
-			case YIELD_RAW_SALT:
-			case YIELD_RED_PEPPER:
-			case YIELD_BARLEY:
-			case YIELD_SUGAR:
-			case YIELD_GRAPES:
-			case YIELD_WHALE_BLUBBER:
-			case YIELD_VALUABLE_WOOD:
-				iValue += kParent.getYieldBuyPrice(eYield);
-				break;
-			case YIELD_TRADE_GOODS:
-			case YIELD_ROPE:
-			case YIELD_SAILCLOTH:
-			case YIELD_TOOLS:
-			case YIELD_BLADES:
-			case YIELD_MUSKETS:
-			case YIELD_CANNONS:
-				iValue += kParent.getYieldSellPrice(eYield);
-				break;
-			case YIELD_COCA_LEAVES:
-			case YIELD_SILVER:
-			case YIELD_GOLD:
-			case YIELD_GEMS:
-			case YIELD_COCOA:
-			case YIELD_COFFEE:
-			case YIELD_CIGARS:
-			case YIELD_WOOL_CLOTH:
-			case YIELD_CLOTH:
-			case YIELD_COLOURED_CLOTH:
-			case YIELD_LEATHER:
-			case YIELD_COATS:
-			case YIELD_PREMIUM_COATS:
-			case YIELD_SALT:
-			case YIELD_SPICES:
-			case YIELD_BEER:
-			case YIELD_RUM:
-			case YIELD_WINE:
-			case YIELD_WHALE_OIL:
-			case YIELD_FURNITURE:
-				iValue += kParent.getYieldBuyPrice(eYield);
-				break;
-			case YIELD_LUXURY_GOODS:
-				iValue += kParent.getYieldSellPrice(eYield);
-				break;
-			case YIELD_HAMMERS:
-			case YIELD_BELLS:
-			case YIELD_CROSSES:
-			case YIELD_CULTURE:
-			case YIELD_HEALTH:
-			case YIELD_EDUCATION:
-				break;
+
 			default:
-				FAssert(false);
+				if (kYield.isCargo())
+				{
+					iValue = kYield.bAI_isUseBuyValue() ? kParent.getYieldBuyPrice(eYield) : kParent.getYieldSellPrice(eYield);
+				}
 		}
 
-		m_aiYieldValuesTimes100[i] = 100 * iValue;
+		m_aiYieldValuesTimes100[eYield] = 100 * iValue;
 	}
 	int iCrossValue = m_aiYieldValuesTimes100[YIELD_FOOD] * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
 	iCrossValue /= 2;
