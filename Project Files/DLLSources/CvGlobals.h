@@ -419,6 +419,11 @@ public:
 	DllExport std::vector<CvGraphicOptionInfo*>& getGraphicOptionInfo();
 	DllExport	CvGraphicOptionInfo& getGraphicOptionInfo(GraphicOptionTypes eGraphicOptionNum);
 
+	int getNumYieldCategoryInfos() const;
+	std::vector<CvInfoBase*>& getYieldCategoryInfo();
+	const CvInfoBase& getYieldCategoryInfo(YieldCategoryTypes eYieldCategory);
+
+	int getNumYieldInfos() const;
 	DllExport std::vector<CvYieldInfo*>& getYieldInfo();
 	DllExport	CvYieldInfo& getYieldInfo(YieldTypes eYieldNum);
 
@@ -1009,6 +1014,7 @@ protected:
 	std::vector<CvClimateInfo*> m_paClimateInfo;
 	std::vector<CvSeaLevelInfo*> m_paSeaLevelInfo;
 	std::vector<CvEuropeInfo*> m_paEuropeInfo;
+	std::vector<CvInfoBase*> m_paYieldCategoryInfo;
 	std::vector<CvYieldInfo*> m_paYieldInfo;
 	std::vector<CvRouteInfo*> m_paRouteInfo;
 	std::vector<CvFeatureInfo*> m_paFeatureInfo;

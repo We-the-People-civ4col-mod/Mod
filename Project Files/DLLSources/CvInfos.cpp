@@ -9048,6 +9048,7 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 //------------------------------------------------------------------------------------------------------
 CvYieldInfo::CvYieldInfo() :
 m_eIndex(NO_YIELD),
+m_eCategory(NO_YIELD_CATEGORY),
 m_iChar(0),
 m_iBuyPriceLow(0),
 m_iBuyPriceHigh(0),
@@ -9285,6 +9286,8 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 
 	m_eIndex = static_cast<YieldTypes>(getIndexForType(JIT_ARRAY_YIELD, getType()));
 	FAssert(m_eIndex != NO_YIELD);
+
+	pXML->GetEnum(getType(), &m_eCategory, "eYieldCategory", false);
 
 	pXML->GetChildXmlValByName(&m_iBuyPriceLow, "iBuyPriceLow");
 	pXML->GetChildXmlValByName(&m_iBuyPriceHigh, "iBuyPriceHigh");

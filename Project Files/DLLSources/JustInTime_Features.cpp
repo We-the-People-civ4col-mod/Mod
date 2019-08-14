@@ -91,6 +91,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_VICTORY:            return GC.getNumVictoryInfos();
 	case JIT_ARRAY_YIELD:              return NUM_YIELD_TYPES;
 	case JIT_ARRAY_CARGO_YIELD:        return NUM_CARGO_YIELD_TYPES;
+	case JIT_ARRAY_YIELD_CATEGORY:     return NUM_YIELD_CATEGORY_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
@@ -143,6 +144,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_YIELD:
 	case JIT_ARRAY_CARGO_YIELD:
 		return &GC.getYieldInfo((YieldTypes)iIndex);
+	case JIT_ARRAY_YIELD_CATEGORY:     return  &GC.getYieldCategoryInfo((YieldCategoryTypes)iIndex);
 	}
 	FAssertMsg(false, "missing info case");
 	return NULL;
@@ -228,6 +230,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_YIELD:
 	case JIT_ARRAY_CARGO_YIELD:
 		return "Yield";
+	case JIT_ARRAY_YIELD_CATEGORY:     return "YieldCategory";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";
@@ -289,6 +292,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_YIELD:
 	case JIT_ARRAY_CARGO_YIELD:
 		return "YIELD_";
+	case JIT_ARRAY_YIELD_CATEGORY:     return "YIELD_CATEGORY_";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";

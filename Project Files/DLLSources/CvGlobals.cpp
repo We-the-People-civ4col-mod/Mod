@@ -1723,6 +1723,28 @@ CvGraphicOptionInfo& CvGlobals::getGraphicOptionInfo(GraphicOptionTypes eGraphic
 	return *(m_paGraphicOptionInfos[eGraphicOptionNum]);
 }
 
+int CvGlobals::getNumYieldCategoryInfos() const
+{
+	return m_paYieldCategoryInfo.size();
+}
+
+std::vector<CvInfoBase*>& CvGlobals::getYieldCategoryInfo()
+{
+	return m_paYieldCategoryInfo;
+}
+
+const CvInfoBase& CvGlobals::getYieldCategoryInfo(YieldCategoryTypes eYieldCategory)
+{
+	FAssert(eYieldCategory > -1);
+	FAssert(eYieldCategory < getNumYieldCategoryInfos());
+	return *(m_paYieldCategoryInfo[eYieldCategory]);
+}
+
+int CvGlobals::getNumYieldInfos() const
+{
+	return m_paYieldInfo.size();
+}
+
 
 std::vector<CvYieldInfo*>& CvGlobals::getYieldInfo()	// For Moose - XML Load Util
 {

@@ -10,6 +10,7 @@
             <Type>YIELD_FOOD</Type>
             <Description>TXT_KEY_YIELD_FOOD</Description>
             <Civilopedia>TXT_KEY_YIELD_FOOD_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_FOOD</eYieldCategory>
             <bCargo>1</bCargo>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>

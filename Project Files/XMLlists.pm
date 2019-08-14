@@ -38,6 +38,7 @@ sub isAlwaysHardcodedEnum
 	return 1 if $file eq "GameInfo/CIV4PlayerOptionInfos.xml";
 	return 1 if $file eq "GameInfo/CIV4WorldInfo.xml";
 	return 1 if $file eq "Terrain/CIV4TerrainInfos.xml";
+	return 1 if $file eq "Terrain/CIV4YieldCategoryInfos.xml";
 	return 1 if $file eq "Terrain/CIV4YieldInfos.xml";
 	return 1 if $file eq "Units/CIV4AutomateInfos.xml";
 	return 1 if $file eq "Units/CIV4CommandInfos.xml";
@@ -89,6 +90,7 @@ sub getXMLKeywords
 	$TYPE = "CIVIC_OPTION" if $file eq "CivEffects/CIV4CivicOptionInfos.xml";
 	$TYPE = "LEADER" if $file eq "Civilizations/CIV4LeaderHeadInfos.xml";
 	$TYPE = "FATHER_POINT" if $file eq "GameInfo/CIV4FatherPointInfos.xml";
+	$TYPE = "YIELD_CATEGORY" if $file eq "Terrain/CIV4YieldCategoryInfos.xml";
 	
 	if ($file eq "BasicInfos/CIV4BasicInfos.xml")
 	{
@@ -150,6 +152,7 @@ sub isTwoLevelFile
 	
 	return 1 if $file eq "CivEffects/CIV4CivEffectsInfos.xml";
 	return 1 if $file eq "Events/CIV4AchieveInfos.xml";
+	return 1 if $file eq "Terrain/CIV4YieldCategoryInfos.xml";
 	
 	return 0;
 }
@@ -208,6 +211,7 @@ sub getEnumFiles
 	push(@list, "Terrain/CIV4FeatureInfos.xml");
 	push(@list, "Terrain/CIV4ImprovementInfos.xml");
 	push(@list, "Terrain/CIV4TerrainInfos.xml");
+	push(@list, "Terrain/CIV4YieldCategoryInfos.xml");
 	push(@list, "Terrain/CIV4YieldInfos.xml");
 	
 	push(@list, "Units/CIV4AutomateInfos.xml");

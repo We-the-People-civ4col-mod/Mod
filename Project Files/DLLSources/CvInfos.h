@@ -2544,6 +2544,7 @@ public:
 	DllExport CvYieldInfo();
 	DllExport virtual ~CvYieldInfo();
 	YieldTypes getIndex() const { return m_eIndex; }
+	YieldCategoryTypes getCategory() const { return m_eCategory; }
 	DllExport int getChar() const;
 	DllExport void setChar(int i);
 	DllExport const char* getIcon() const;
@@ -2603,6 +2604,7 @@ public:
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	YieldTypes m_eIndex;
+	YieldCategoryTypes m_eCategory;
 	int m_iChar;
 	CvString m_szIcon;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START

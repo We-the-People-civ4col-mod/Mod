@@ -2623,6 +2623,7 @@ enum JITarrayTypes
 	JIT_ARRAY_MISSION_AI,
 	JIT_ARRAY_PLAYER,
 	JIT_ARRAY_STRATEGY,
+	JIT_ARRAY_YIELD_CATEGORY, // never saved, hence no need for conversion
 	
 	// types used by InfoArray
 	JIT_ARRAY_NO_TYPE,

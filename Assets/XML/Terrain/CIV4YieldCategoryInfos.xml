@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Civ4YieldCategoryInfos xmlns="x-schema:CIV4TerrainSchema.xml">
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_FOOD</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_SELL_TO_NATIVE</Type>
+    </YieldCategoryInfo>
+</Civ4YieldCategoryInfos>

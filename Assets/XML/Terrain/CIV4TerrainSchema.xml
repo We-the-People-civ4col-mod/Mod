@@ -109,6 +109,7 @@
 		<element type="Type"/>
 		<element type="Description"/>
 		<element type="Civilopedia"/>
+		<element type="eYieldCategory" minOccurs="0"/>
 		<element type="bCargo"/>
 		<element type="bIsExportYield" minOccurs="0"/>
 		<element type="bLivestock" minOccurs="0"/>
@@ -487,5 +488,13 @@
 	</ElementType>
 	<ElementType name="Civ4ImprovementInfos" content="eltOnly">
 		<element type="ImprovementInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	
+	<ElementType name="eYieldCategory" content="textOnly"/>
+	<ElementType name="Civ4YieldCategoryInfos" content="eltOnly">
+		<element type="YieldCategoryInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="YieldCategoryInfo" content="eltOnly">
+		<element type="Type"/>
 	</ElementType>
 </Schema>

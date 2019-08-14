@@ -169,3 +169,8 @@ static inline JITarrayTypes getJITarrayType(YieldTypes var)
 {
 	return JIT_ARRAY_YIELD;
 }
+
+static inline JITarrayTypes getJITarrayType(YieldCategoryTypes var)
+{
+	return JIT_ARRAY_YIELD_CATEGORY;
+}
