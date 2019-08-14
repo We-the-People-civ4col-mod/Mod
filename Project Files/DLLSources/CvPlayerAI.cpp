@@ -1688,8 +1688,8 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 	}
 
 
-	int aiBestWorkedYield[NUM_YIELD_TYPES];
-	int aiBestUnworkedYield[NUM_YIELD_TYPES];
+	YieldArray<int> aiBestWorkedYield;
+	YieldArray<int> aiBestUnworkedYield;
 
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
@@ -1744,13 +1744,10 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 				int iBestBonusAmount = 0;
 				YieldTypes eBestBonusYield = NO_YIELD;
 
-				int aiYield[NUM_YIELD_TYPES];
+				YieldArray<int> aiYield;
 
-				for (int iYieldType = 0; iYieldType < NUM_YIELD_TYPES; ++iYieldType)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-
-
-					YieldTypes eYield = (YieldTypes)iYieldType;
 					int iYield = pLoopPlot->calculateBestNatureYield(eYield, getTeam());
 
 
@@ -6477,7 +6474,7 @@ void CvPlayerAI::AI_doTradeRoutes()
 	//Setup export trade routes.
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		int aiYields[NUM_YIELD_TYPES];
+		YieldArray<int> aiYields;
 		pLoopCity->calculateNetYields(aiYields);
 
 		int iCapacity = pLoopCity->getMaxYieldCapacity();
@@ -9716,8 +9713,8 @@ void CvPlayerAI::AI_manageEconomy()
 	//Calculate Comparative Advantage in producing various yields.
 
 	//For averages.
-	int aiBestYield[NUM_YIELD_TYPES];
-	int aiWorstYield[NUM_YIELD_TYPES];
+	YieldArray<int> aiBestYield;
+	YieldArray<int> aiWorstYield;
 
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 	{
@@ -9872,15 +9869,14 @@ void CvPlayerAI::AI_createNatives()
 	{
 		//Now provide some starting yield stockpiles.
 		AI_manageEconomy();
-		int aiYields[NUM_YIELD_TYPES];
+		YieldArray<int> aiYields;
 		for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 		{
 			pLoopCity->AI_assignWorkingPlots();
 			pLoopCity->calculateNetYields(aiYields);
 
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) iYield;
 				if (GC.getYieldInfo(eYield).isCargo())
 				{
 					pLoopCity->changeYieldStored(eYield, (aiYields[eYield] * (50 + GC.getGameINLINE().getSorenRandNum(50, "AI starting yields"))) / 10);
@@ -11898,12 +11894,7 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 	CvPlot* pPlot = GC.getMapINLINE().plot(kTriggeredData.m_iPlotX, kTriggeredData.m_iPlotY);
 	CvUnit* pUnit = getUnit(kTriggeredData.m_iUnitId);
 
-	int aiYields[NUM_YIELD_TYPES];
-
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		aiYields[iI] = 0;
-	}
+	YieldArray<int> aiYields;
 
 	if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 	{
@@ -15766,8 +15757,8 @@ void CvPlayerAI::AI_invalidateDistanceMap()
 
 void CvPlayerAI::AI_updateBestYieldPlots()
 {
-	int aiBestWorkedYield[NUM_YIELD_TYPES];
-	int aiBestUnworkedYield[NUM_YIELD_TYPES];
+	YieldArray<int> aiBestWorkedYield;
+	YieldArray<int> aiBestUnworkedYield;
 
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{

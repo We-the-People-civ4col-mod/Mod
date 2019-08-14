@@ -852,10 +852,8 @@ void CvSelectionGroupAI::AI_groupBombard()
 
 // Erik: I've changed this function to return the total amount of yields stored 
 // rather than the amount of treasure since that wasn't used anyway
-int CvSelectionGroupAI::AI_getYieldsLoaded(short* piYields) const
+int CvSelectionGroupAI::AI_getYieldsLoaded(YieldArray<short>& piYields) const
 {
-	FAssert(piYields != NULL);
-
 	int iAmount = 0;
 
 	CLinkList<IDInfo> unitList;
@@ -1054,9 +1052,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		}
 	}
 
-	short aiYieldsLoaded[NUM_YIELD_TYPES];
+	YieldArray<short> aiYieldsLoaded;
 	
-	std::fill(aiYieldsLoaded, aiYieldsLoaded + NUM_YIELD_TYPES, 0);
 	const bool bNoCargo = (AI_getYieldsLoaded(aiYieldsLoaded) == 0);
 
 	// R&R mod, vetiarvind, max yield import limit - start	

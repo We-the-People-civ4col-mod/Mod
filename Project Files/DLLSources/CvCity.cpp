@@ -4862,29 +4862,33 @@ void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 	FAssert(getYieldRushed(eYield) >= 0);
 }
 
-// R&R, ray , MYCP partially based on code of Aymerick - START
-// heavily adjusted
-void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYields, int* aiConsumedYields, bool bPrintWarning) const
+// 
+void CvCity::calculateNetYields(YieldArray<int>& aiYields, YieldArray<int>* aiProducedYields, YieldArray<int>* aiConsumedYields, bool bPrintWarning) const
 {
-	PROFILE_FUNC();
-	
-	int aiConsumed[NUM_YIELD_TYPES];
-	int aiProduced[NUM_YIELD_TYPES];
+	YieldArray<int> aiConsumed;
+	YieldArray<int> aiProduced;
 	if (aiProducedYields == NULL)
 	{
-		aiProducedYields = aiProduced;
+		aiProducedYields = &aiProduced;
 	}
 	if (aiConsumedYields == NULL)
 	{
-		aiConsumedYields = aiConsumed;
+		aiConsumedYields = &aiConsumed;
 	}
+	calculateNetYields(aiYields, *aiProducedYields, *aiConsumedYields, bPrintWarning);
+}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+// R&R, ray , MYCP partially based on code of Aymerick - START
+// heavily adjusted
+void CvCity::calculateNetYields(YieldArray<int>& aiYields, YieldArray<int>& aiProducedYields, YieldArray<int>& aiConsumedYields, bool bPrintWarning) const
+{
+	PROFILE_FUNC();
+	
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		aiConsumedYields[iYield] = getRawYieldConsumed(eYield);
-		aiProducedYields[iYield] = getBaseRawYieldProduced(eYield);
-		aiYields[iYield] = getYieldStored(eYield) - aiConsumedYields[iYield] + aiProducedYields[iYield] * getBaseYieldRateModifier(eYield) / 100;
+		aiConsumedYields[eYield] = getRawYieldConsumed(eYield);
+		aiProducedYields[eYield] = getBaseRawYieldProduced(eYield);
+		aiYields[eYield] = getYieldStored(eYield) - aiConsumedYields[eYield] + aiProducedYields[eYield] * getBaseYieldRateModifier(eYield) / 100;
 	}
 
 	std::set<ProfessionTypes> setUnsatisfiedProfessions;
@@ -5082,10 +5086,10 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		}
 	}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		FAssert((iYield == YIELD_FOOD) || (aiYields[iYield] >= 0));
-		aiYields[iYield] -= getYieldStored((YieldTypes) iYield);
+		FAssert((eYield == YIELD_FOOD) || (aiYields[eYield] >= 0));
+		aiYields[eYield] -= getYieldStored(eYield);
 	}
 
 	// Immigration
@@ -5175,7 +5179,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 int CvCity::calculateNetYield(YieldTypes eYield) const
 {
 	FAssert(eYield < NUM_YIELD_TYPES && eYield >= 0);
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	calculateNetYields(aiYields);
 	return aiYields[eYield];
 }
@@ -5183,18 +5187,18 @@ int CvCity::calculateNetYield(YieldTypes eYield) const
 int CvCity::calculateActualYieldProduced(YieldTypes eYield) const
 {
 	FAssert(eYield < NUM_YIELD_TYPES && eYield >= 0);
-	int aiYields[NUM_YIELD_TYPES];
-	int aiYieldsProduced[NUM_YIELD_TYPES];
-	calculateNetYields(aiYields, aiYieldsProduced);
+	YieldArray<int> aiYields;
+	YieldArray<int> aiYieldsProduced;
+	calculateNetYields(aiYields, &aiYieldsProduced);
 	return aiYieldsProduced[eYield];
 }
 
 int CvCity::calculateActualYieldConsumed(YieldTypes eYield) const
 {
 	FAssert(eYield < NUM_YIELD_TYPES && eYield >= 0);
-	int aiYields[NUM_YIELD_TYPES];
-	int aiYieldsProduced[NUM_YIELD_TYPES];
-	int aiYieldsConsumed[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
+	YieldArray<int> aiYieldsProduced;
+	YieldArray<int> aiYieldsConsumed;
 	calculateNetYields(aiYields, aiYieldsProduced, aiYieldsConsumed);
 	return aiYieldsConsumed[eYield];
 }
@@ -6995,7 +6999,7 @@ void CvCity::doGrowth()
 
 void CvCity::doYields()
 {
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	calculateNetYields(aiYields, NULL, NULL, true);
 
 //VET NewCapacity - begin 4/9

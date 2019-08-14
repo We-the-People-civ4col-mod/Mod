@@ -563,6 +563,19 @@ bool JustInTimeArray<T>::operator!=(const JustInTimeArray<T> &rhs) const
 }
 
 template<class T>
+T& JustInTimeArray<T>::operator[] (int iIndex)
+{
+	FAssert(iIndex >= 0);
+	FAssert(iIndex < this->length());
+
+	if (!this->isAllocated())
+	{
+		this->allocate();
+	}
+	return this->m_tArray[iIndex];
+}
+
+template<class T>
 JustInTimeArray2D<T>::JustInTimeArray2D<T>(JITarrayTypes eType, JITarrayTypes eSubType, T eDefault)
 	: tArray(NULL)
 	, m_iType(eType)

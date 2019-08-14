@@ -281,7 +281,7 @@ public:
 	RouteTypes getBestRoute(CvPlot* pPlot = NULL) const;
 	int getImprovementUpgradeRate() const;
 	int calculateTotalYield(YieldTypes eYield) const;
-	void calculateTotalYields(int aiYields[]) const;
+	void calculateTotalYields(YieldArray<int>& aiYields) const;
 	bool isCivic(CivicTypes eCivic) const;
 	bool canDoCivics(CivicTypes eCivic) const;
 	DllExport int greatGeneralThreshold() const;

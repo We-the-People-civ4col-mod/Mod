@@ -2845,11 +2845,11 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 
 	bFirst = true;
 	szTempBuffer.clear();
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	pCity->calculateNetYields(aiYields);
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		if (aiYields[iYield] > 0 && (YieldTypes) iYield != YIELD_CULTURE  && (YieldTypes) iYield != YIELD_HEALTH) 
+		if (aiYields.get(eYield) > 0 && eYield != YIELD_CULTURE  && eYield != YIELD_HEALTH) 
 		{
 			if (bFirst)
 			{
@@ -2859,7 +2859,7 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 			{
 				szTempBuffer.append(L", ");
 			}
-			szTempBuffer.append(CvWString::format(L"%d%c", aiYields[iYield], GC.getYieldInfo((YieldTypes) iYield).getChar()));
+			szTempBuffer.append(CvWString::format(L"%d%c", aiYields.get(eYield), GC.getYieldInfo(eYield).getChar()));
 		}
 	}
 
@@ -5516,19 +5516,19 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			}
 		}
 		// R&R, ray , MYCP partially based on code of Aymerick - END
-		int aiYields[NUM_YIELD_TYPES];
-		for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+		YieldArray<int> aiYields;
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			aiYields[iI] = kBuilding.getYieldChange(iI);
+			aiYields[eYield] = kBuilding.getYieldChange(eYield);
 
 			if (NULL != pCity)
 			{
-				aiYields[iI] += pCity->getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
+				aiYields[eYield] += pCity->getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), eYield);
 			}
 
 			if (ePlayer != NO_PLAYER)
 			{
-				aiYields[iI] += GET_PLAYER(ePlayer).getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
+				aiYields[eYield] += GET_PLAYER(ePlayer).getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), eYield);
 			}
 		}
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", aiYields, false, false);
@@ -6079,6 +6079,17 @@ void CvGameTextMgr::setFatherPointHelp(CvWStringBuffer &szBuffer, FatherPointTyp
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_FATHER_POINT_FATHERS", szTemp.getCString()));
 	}
+}
+
+void CvGameTextMgr::setYieldChangeHelp(CvWStringBuffer &szBuffer, const CvWString& szStart, const CvWString& szSpace, const CvWString& szEnd, const YieldArray<int>& piYieldChange, bool bPercent, bool bNewLine)
+{
+	int* piTempArray = new int[NUM_YIELD_TYPES];
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		piTempArray[eYield] = piYieldChange.get(eYield);
+	}
+	setYieldChangeHelp(szBuffer, szStart, szSpace, szEnd, piTempArray, bPercent, bNewLine);
+	free(piTempArray);
 }
 
 void CvGameTextMgr::setYieldChangeHelp(CvWStringBuffer &szBuffer, const CvWString& szStart, const CvWString& szSpace, const CvWString& szEnd, const int* piYieldChange, bool bPercent, bool bNewLine)
@@ -6766,7 +6777,7 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 	}
 	CvFeatureInfo& feature = GC.getFeatureInfo(eFeature);
 
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	if (!bCivilopediaText)
 	{
 		szBuffer.append(feature.getDescription());
@@ -6818,7 +6829,7 @@ void CvGameTextMgr::setTerrainHelp(CvWStringBuffer &szBuffer, TerrainTypes eTerr
 	}
 	CvTerrainInfo& terrain = GC.getTerrainInfo(eTerrain);
 
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	if (!bCivilopediaText)
 	{
 		szBuffer.append(terrain.getDescription());
@@ -7300,9 +7311,9 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 
 	FAssert(iBaseProduction == city.getBaseRawYieldProduced(eYieldType));
 
-	int aiYields[NUM_YIELD_TYPES];
-	int aiRawProducedYields[NUM_YIELD_TYPES];
-	int aiRawConsumedYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
+	YieldArray<int> aiRawProducedYields;
+	YieldArray<int> aiRawConsumedYields;
 	city.calculateNetYields(aiYields, aiRawProducedYields, aiRawConsumedYields);
 	int iUnproduced = city.getBaseRawYieldProduced(eYieldType) - aiRawProducedYields[eYieldType];
 	if (iUnproduced > 0)
@@ -8228,7 +8239,7 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 				BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(eCiv).getCivilizationBuildings(iBuildingClass);
 				if (eBuilding != NO_BUILDING)
 				{
-					int aiYields[NUM_YIELD_TYPES];
+					YieldArray<int> aiYields;
 					for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 					{
 						aiYields[iYield] = kEvent.getBuildingYieldChange(iBuildingClass, iYield);
@@ -8297,7 +8308,7 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 		}
 	}
 
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
 	{
 		aiYields[i] = kEvent.getPlotExtraYield(i);

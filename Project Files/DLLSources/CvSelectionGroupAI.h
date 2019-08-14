@@ -57,7 +57,7 @@ public:
 	bool AI_launchAssault(CvPlot* pTargetCityPlot = NULL);
 	void AI_groupBombard();
 
-	int AI_getYieldsLoaded(short* piYields) const;
+	int AI_getYieldsLoaded(YieldArray<short>& piYields) const;
 
 	bool AI_tradeRoutes();
 

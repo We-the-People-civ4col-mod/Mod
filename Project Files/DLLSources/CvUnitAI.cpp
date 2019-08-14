@@ -6086,7 +6086,7 @@ bool CvUnitAI::AI_europeBuyYields()
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	CvPlayer& kPlayerEurope = GET_PLAYER(kOwner.getParent());
 	
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 	{
 		aiYields[iYield] = 0;
@@ -6095,7 +6095,7 @@ bool CvUnitAI::AI_europeBuyYields()
 	int iCargoYields;
 //VET NewCapacity - end 1/4
 	
-	int aiTotalYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiTotalYields;
 	kOwner.calculateTotalYields(aiTotalYields);
 	
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)

@@ -144,6 +144,12 @@ public:
 	JustInTimeArray& operator-=(const JustInTimeArray &rhs);
 	bool operator==(const JustInTimeArray &rhs) const;
 	bool operator!=(const JustInTimeArray &rhs) const;
+
+	// allows using JIT arrays like normal arrays with [] indexing
+	// WARNING: will always allocate the array if unallocated and it has extra overhead
+	// Use get if possible
+	// Const version not technically possible
+	T &operator[] (int);
 };
 
 // 2D JIT array

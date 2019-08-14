@@ -6503,11 +6503,11 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 
 			case 1:
 				{
-					int aiYields[NUM_YIELD_TYPES];
+					YieldArray<int> aiYields;
 					kPlayer.calculateTotalYields(aiYields);
-					for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 					{
-						iMultiplier += aiYields[iJ] * 432754;
+						iMultiplier += aiYields.get(eYield) * 432754;
 					}
 				}
 				break;
@@ -6585,11 +6585,11 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 				*pLogString += CvString::format("NumCities = %d\n", kPlayer.getNumCities());
 				*pLogString += CvString::format("NumUnits = %d\n", kPlayer.getNumUnits());
 				*pLogString += CvString::format("NumSelectionGroups = %d\n", kPlayer.getNumSelectionGroups());
-				int aiYields[NUM_YIELD_TYPES];
+				YieldArray<int> aiYields;
 				kPlayer.calculateTotalYields(aiYields);
-				for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					*pLogString += CvString::format("%s = %d\n", CvString(GC.getYieldInfo((YieldTypes) iJ).getDescription()).GetCString(), aiYields[iJ]);
+					*pLogString += CvString::format("%s = %d\n", CvString(GC.getYieldInfo(eYield).getDescription()).GetCString(), aiYields.get(eYield));
 				}
 				for (iJ = 0; iJ < GC.getNumImprovementInfos(); iJ++)
 				{

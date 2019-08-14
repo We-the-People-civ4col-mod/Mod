@@ -255,16 +255,18 @@ protected:
 	void AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB);
 
 	bool AI_potentialPlot(short* piYields) const;
+	bool AI_potentialPlot(int iYield) const;
 	bool AI_foodAvailable(int iExtra = 0) const;
-	int AI_yieldValue(short* piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false, bool bWorkerOptimization = false) const;
+	int AI_yieldValue(YieldArray<short>& piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false, bool bWorkerOptimization = false) const;
 	int AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false) const;
 
 	int AI_experienceWeight() const;
 
-	int AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const;
+	int AI_plotYieldValue(const CvPlot* pPlot, YieldArray<int>& piYields) const;
 	void AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildTypes* peBestBuild) const;
 
 	int AI_getYieldMagicValue(const int* piYieldsTimes100) const;
+	int AI_getYieldMagicValue(int iYieldsTimes100) const;
 	int AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization = false) const;
 	int AI_countGoodTiles(bool bUnworkedOnly, int iThreshold = 50, bool bWorkerOptimization = false) const;
 	int AI_calculateTargetCulturePerTurn();

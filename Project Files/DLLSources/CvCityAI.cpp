@@ -4988,11 +4988,16 @@ void CvCityAI::AI_setPort(bool iNewValue)
 
 bool CvCityAI::AI_potentialPlot(short* piYields) const
 {
-	int iNetFood = piYields[YIELD_FOOD] - GC.getFOOD_CONSUMPTION_PER_POPULATION();
+	return AI_potentialPlot(piYields[YIELD_FOOD]);
+}
+
+bool CvCityAI::AI_potentialPlot(int iYield) const
+{
+	int iNetFood = iYield - GC.getFOOD_CONSUMPTION_PER_POPULATION();
 
 	if (iNetFood < 0)
 	{
- 		if (piYields[YIELD_FOOD] == 0)
+ 		if (iYield == 0)
 		{
 			return false;
 		}
@@ -5031,11 +5036,8 @@ int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield)
 
 void CvCityAI::AI_updateRequiredYieldLevels()
 {
-	int aiLevels[NUM_YIELD_TYPES];
-	for (int iI = 0; iI < NUM_YIELD_TYPES; ++iI)
-	{
-		aiLevels[iI] = 0;
-	}
+	YieldArray<int> aiLevels;
+
 	CvPlayerAI& kPlayer = GET_PLAYER(getOwner());
 
 	// TAC - AI Economy - koma13 - START
@@ -5234,15 +5236,15 @@ bool CvCityAI::AI_foodAvailable(int iExtra) const
 }
 
 
-int CvCityAI::AI_yieldValue(short* piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood, bool bIgnoreGrowth, bool bIgnoreStarvation, bool bWorkerOptimization) const
+int CvCityAI::AI_yieldValue(YieldArray<short>& piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood, bool bIgnoreGrowth, bool bIgnoreStarvation, bool bWorkerOptimization) const
 {
 	int iValue = 0;
 
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		if (piYields[iI] != 0)
+		if (piYields[eYield] != 0)
 		{
-			iValue +=  AI_estimateYieldValue((YieldTypes)iI, piYields[iI]);
+			iValue +=  AI_estimateYieldValue(eYield, piYields[eYield]);
 		}
 	}
 			
@@ -5254,7 +5256,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 {
 	PROFILE_FUNC();
 
-	short aiYields[NUM_YIELD_TYPES];
+	YieldArray<short> aiYields;
 	ImprovementTypes eCurrentImprovement;
 	ImprovementTypes eFinalImprovement;
 	int iYieldDiff;
@@ -5301,7 +5303,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 	if (AI_getEmphasizeYieldCount(YIELD_FOOD) <= 0)
 	{
 		// if this plot is super bad (less than 2 food and less than combined 2 prod
-		if (!AI_potentialPlot(aiYields))
+		if (!AI_potentialPlot(aiYields[YIELD_FOOD]))
 		{
 			// undervalue it even more!
 			iYieldValue /= 16;
@@ -5346,9 +5348,8 @@ int CvCityAI::AI_experienceWeight() const
 }
 
 
-int CvCityAI::AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const
+int CvCityAI::AI_plotYieldValue(const CvPlot* pPlot, YieldArray<int>& piYields) const
 {
-	FAssert(piYields != NULL);
 	int iValue = 0;
 	
 	int iBestValue = 0;
@@ -5431,21 +5432,20 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 		}
 	}
 	
-	int aiCurrentYields[NUM_YIELD_TYPES];
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	YieldArray<int> aiCurrentYields;
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes)iI;
-		aiCurrentYields[iI] = pPlot->calculateNatureYield(eYield, getTeam(), false);
+		aiCurrentYields[eYield] = pPlot->calculateNatureYield(eYield, getTeam(), false);
 		if (pPlot->getImprovementType() != NO_IMPROVEMENT)
 		{
-			aiCurrentYields[iI] += (pPlot->calculateImprovementYieldChange(pPlot->getImprovementType(), eYield, getOwnerINLINE(), false));
+			aiCurrentYields[eYield] += (pPlot->calculateImprovementYieldChange(pPlot->getImprovementType(), eYield, getOwnerINLINE(), false));
 		}
 		
 		if (pPlot->getRouteType() != NO_ROUTE)
 		{
-			if (aiCurrentYields[iI] > 0)
+			if (aiCurrentYields[eYield] > 0)
 			{
-				aiCurrentYields[iI] += GC.getRouteInfo(pPlot->getRouteType()).getYieldChange(eYield);
+				aiCurrentYields[eYield] += GC.getRouteInfo(pPlot->getRouteType()).getYieldChange(eYield);
 			}
 		}
 		//Zero out particulary bad yields.
@@ -5473,7 +5473,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 	int iBestValue = 0;
 	BuildTypes eBestBuild = NO_BUILD;
 	
-	int aiFinalYields[NUM_YIELD_TYPES];	
+	YieldArray<int> aiFinalYields;	
 	FeatureTypes eFeature = (FeatureTypes)pPlot->getFeatureType();
 	ImprovementTypes eImprovement = pPlot->getImprovementType();	
 	
@@ -5885,11 +5885,15 @@ int CvCityAI::AI_calculateWaterWorldPercent() const
 int CvCityAI::AI_getYieldMagicValue(const int* piYieldsTimes100) const
 {
 	FAssert(piYieldsTimes100 != NULL);
+	return AI_getYieldMagicValue(piYieldsTimes100[YIELD_FOOD]);
+}
 
+int CvCityAI::AI_getYieldMagicValue(int iYieldsTimes100) const
+{
 	int iPopEats = GC.getFOOD_CONSUMPTION_PER_POPULATION();
 	iPopEats *= 100;
 
-	int iValue = (piYieldsTimes100[YIELD_FOOD] * 100 - iPopEats * 102);
+	int iValue = (iYieldsTimes100 * 100 - iPopEats * 102);
 	iValue /= 100;
 	return iValue;
 }
@@ -5903,23 +5907,22 @@ int CvCityAI::AI_getYieldMagicValue(const int* piYieldsTimes100) const
 //This function deliberately doesn't use emphasize settings.
 int CvCityAI::AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization) const
 {
-	int aiYields[NUM_YIELD_TYPES];
+	YieldArray<int> aiYields;
 	ImprovementTypes eCurrentImprovement;
 	ImprovementTypes eFinalImprovement;
-	int iI;
 	int iYieldDiff;
 
 	FAssert(pPlot != NULL);
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		if ((bWorkerOptimization) && (pPlot->getWorkingCity() == this) && (AI_getBestBuild(getCityPlotIndex(pPlot)) != NO_BUILD))
 		{
-			aiYields[iI] = pPlot->getYieldWithBuild(AI_getBestBuild(getCityPlotIndex(pPlot)), (YieldTypes)iI, true);
+			aiYields[eYield] = pPlot->getYieldWithBuild(AI_getBestBuild(getCityPlotIndex(pPlot)), eYield, true);
 		}
 		else
 		{
-			aiYields[iI] = pPlot->calculatePotentialYield((YieldTypes)iI, NULL, false) * 100;
+			aiYields[eYield] = pPlot->calculatePotentialYield(eYield, NULL, false) * 100;
 		}
 	}
 
@@ -5931,16 +5934,16 @@ int CvCityAI::AI_getPlotMagicValue(const CvPlot* pPlot, bool bWorkerOptimization
 
 		if ((eFinalImprovement != NO_IMPROVEMENT) && (eFinalImprovement != eCurrentImprovement))
 		{
-			for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				iYieldDiff = 100 * pPlot->calculateImprovementYieldChange(eFinalImprovement, ((YieldTypes)iI), getOwnerINLINE());
-				iYieldDiff -= 100 * pPlot->calculateImprovementYieldChange(eCurrentImprovement, ((YieldTypes)iI), getOwnerINLINE());
-				aiYields[iI] += iYieldDiff / 2;
+				iYieldDiff = 100 * pPlot->calculateImprovementYieldChange(eFinalImprovement, eYield, getOwnerINLINE());
+				iYieldDiff -= 100 * pPlot->calculateImprovementYieldChange(eCurrentImprovement, eYield, getOwnerINLINE());
+				aiYields[eYield] += iYieldDiff / 2;
 			}
 		}
 	}
 
-	return AI_getYieldMagicValue(aiYields);
+	return AI_getYieldMagicValue(aiYields.get(YIELD_FOOD));
 }
 
 //useful for deciding whether or not to grow... or whether the city needs terrain

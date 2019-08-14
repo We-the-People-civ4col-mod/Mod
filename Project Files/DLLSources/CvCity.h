@@ -357,7 +357,8 @@ public:
 	void changeYieldStored(YieldTypes eYield, int iChange);
 	int getYieldRushed(YieldTypes eYield) const;
 	void changeYieldRushed(YieldTypes eYield, int iChange);
-	void calculateNetYields(int aiYields[], int* aiProducedYields = NULL, int* aiConsumedYields = NULL, bool bPrintWarning = false) const;
+	void calculateNetYields(YieldArray<int>& aiYields, YieldArray<int>* aiProducedYields = NULL, YieldArray<int>* aiConsumedYields = NULL, bool bPrintWarning = false) const;
+	void calculateNetYields(YieldArray<int>& aiYields, YieldArray<int>& aiProducedYields, YieldArray<int>& aiConsumedYields, bool bPrintWarning = false) const;
 	int calculateNetYield(YieldTypes eYield) const;
 	int calculateActualYieldProduced(YieldTypes eYield) const;
 	int calculateActualYieldConsumed(YieldTypes eYield) const;

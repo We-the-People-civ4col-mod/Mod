@@ -1544,10 +1544,10 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		}
 	}
 
-	int aiYieldsStored[NUM_YIELD_TYPES];
-	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	YieldArray<int> aiYieldsStored;
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		aiYieldsStored[iI] = pOldCity->getYieldStored((YieldTypes) iI);
+		aiYieldsStored[eYield] = pOldCity->getYieldStored(eYield);
 	}
 
 
@@ -6674,25 +6674,19 @@ int CvPlayer::calculateTotalYield(YieldTypes eYield) const
 	return iTotal;
 }
 
-void CvPlayer::calculateTotalYields(int aiYields[]) const
+void CvPlayer::calculateTotalYields(YieldArray<int>& aiYields) const
 {
 	CvCity* pLoopCity;
 	int iTotal = 0;
 	int iLoop = 0;
 
-	for(int i=0;i<NUM_YIELD_TYPES;i++)
-	{
-		aiYields[i] = 0;
-	}
+	aiYields.reset();
 
+	YieldArray<int> aiTempYields;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		int aiTempYields[NUM_YIELD_TYPES];
 		pLoopCity->calculateNetYields(aiTempYields);
-		for(int i=0;i<NUM_YIELD_TYPES;i++)
-		{
-			aiYields[i] += aiTempYields[i];
-		}
+		aiYields += aiTempYields;
 	}
 }
 
