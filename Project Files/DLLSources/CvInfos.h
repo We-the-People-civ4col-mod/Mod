@@ -361,11 +361,15 @@ public:
 	DllExport int getYieldEquipmentAmount(int iYield) const;
 	DllExport bool isFreePromotion(int i) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - START
-	DllExport int getYieldsProduced(int i) const;
-	DllExport int getNumYieldsProduced() const;
-	DllExport int getYieldsConsumed(int i) const;
-	DllExport int getNumYieldsConsumed() const;
+	YieldTypes getYieldsProduced(int i) const;
+	int getNumYieldsProduced() const;
+	YieldTypes getYieldsConsumed(int i) const;
+	int getNumYieldsConsumed() const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
+
+	const InfoArray& getYieldsEquipmentArray() const { return m_Info_YieldsEquipments; }
+	const InfoArray& getYieldsConsumedArray () const { return m_Info_YieldsConsumed; }
+	const InfoArray& getYieldsProducedArray () const { return m_Info_YieldsProduced; }
 
 	/// Move Into Peak - start - Nightinggale
 	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}
@@ -418,12 +422,11 @@ protected:
 		int iYieldAmount;
 	};
 
-	std::vector<YieldEquipment> m_aYieldEquipments;
+	InfoArrayMod m_Info_YieldsEquipments;
+	InfoArrayMod m_Info_YieldsConsumed;
+	InfoArrayMod m_Info_YieldsProduced;
+
 	bool* m_abFreePromotions;
-	// R&R, ray , MYCP partially based on code of Aymerick - START
-	std::vector<int> m_aiYieldsProduced;
-	std::vector<int> m_aiYieldsConsumed;
-	// R&R, ray , MYCP partially based on code of Aymerick - END
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -787,6 +790,8 @@ public:
 	DllExport int getBonusYieldChange(int i) const;
 	DllExport int getYieldChange(int i) const;
 	DllExport int getYieldCost(int i) const;
+	const InfoArray& getYieldCosts() const { return m_Info_YieldCosts; }
+
 	DllExport int getUnitGroupRequired(int i, int iProfession) const;
 
 	DllExport bool getUpgradeUnitClass(int i) const;
@@ -976,6 +981,8 @@ protected:
 	CvString m_szArtDefineButton;
 	std::vector<CvUnitMeshGroups> m_aProfessionGroups;
 	std::vector<int> m_aiSeeInvisibleTypes;
+
+	InfoArrayMod m_Info_YieldCosts;
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -1288,6 +1295,7 @@ public:
 	DllExport int getProductionTraits(int i) const;
 	DllExport int getPrereqNumOfBuildingClass(int i) const;
 	DllExport int getYieldCost(int i) const;
+	const InfoArray& getYieldCosts() const { return m_Info_YieldCosts; }
 
 	DllExport bool isBuildingClassNeededInCity(int i) const;
 
@@ -1370,6 +1378,7 @@ protected:
 	int* m_aiDomainProductionModifier;
 	int* m_aiPrereqNumOfBuildingClass;
 	int* m_aiYieldCost;
+	InfoArrayMod m_Info_YieldCosts;
 	bool* m_abBuildingClassNeededInCity;
 };
 
@@ -2600,21 +2609,49 @@ public:
 	bool isLivestock() const;
 	// R&R, Androrc, Livestock Breeding, END
 
-	bool AI_isAlwaysSell() const { return m_bAI_AlwaysSell; }
-	bool AI_isSellNotNeeded() const { return m_bAI_SellNotNeeded; }
+	bool AI_isAlwaysSell                () const { return m_bAI_AlwaysSell               ; }
+	bool AI_isSellNotNeeded             () const { return m_bAI_SellNotNeeded            ; }
 
-	bool AI_isFinalProduct() const { return m_bAI_FinalProduct; }
-	bool AI_isFinalProductIfNotNeeded() const { return m_bAI_FinalProductIfNotNeeded; }
+	bool AI_isFinalProduct              () const { return m_bAI_FinalProduct             ; }
+	bool AI_isFinalProductIfNotNeeded   () const { return m_bAI_FinalProductIfNotNeeded  ; }
 
-	bool AI_isBuyFromEurope() const { return m_bAI_BuyFromEurope; }
-	bool bAI_isUseBuyValue() const { return m_bAI_UseBuyValue; }
+	bool AI_isBuyFromEurope             () const { return m_bAI_BuyFromEurope            ; }
+	bool bAI_isUseBuyValue              () const { return m_bAI_UseBuyValue              ; }
+
+	bool isDomesticConsumed             () const { return m_bAI_UseBuyValue              ; }
+	bool isMilitary                     () const { return m_bMilitary                    ; }
+	bool isEquipment                    () const { return m_bEquipment                   ; }
+	bool isRaw                          () const { return m_bRaw                         ; }
+	bool isProduced                     () const { return m_bProduced                    ; }
+	bool isStrategic                    () const { return m_bStrategic                   ; }
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
+
+	void postReadSetup();
+
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
-	YieldTypes m_eIndex;
-	YieldCategoryTypes m_eCategory;
-	int m_iChar;
+	YieldTypes m_eIndex : 8;
+	YieldCategoryTypes m_eCategory : 8;
+
+	short m_iChar;
+
+	bool m_bCargo : 1;
+	bool m_bIsExportYield : 1; // auto traderoute - Nightinggale
+	bool m_bLivestock : 1;
+	bool m_bAI_AlwaysSell : 1;
+	bool m_bAI_SellNotNeeded : 1;
+	bool m_bAI_FinalProduct : 1;
+	bool m_bAI_FinalProductIfNotNeeded : 1;
+	bool m_bAI_BuyFromEurope : 1;
+	bool m_bAI_UseBuyValue : 1;
+	bool m_bDomesticConsumed : 1;
+	bool m_bMilitary : 1;
+	bool m_bEquipment : 1;
+	bool m_bRaw : 1;
+	bool m_bProduced : 1;
+	bool m_bStrategic : 1;
+
 	CvString m_szIcon;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 	CvString m_szCombiIcon;
@@ -2659,23 +2696,6 @@ protected:
 	int m_iWaterTextureIndex;
 	int m_iPowerValue;
 	int m_iAssetValue;
-
-	// TODO merge all the bools into a single uint32
-
-	bool m_bCargo;
-	bool m_bIsExportYield; // auto traderoute - Nightinggale
-
-	// R&R, Androrc, Livestock Breeding
-	bool m_bLivestock;
-	// R&R, Androrc, Livestock Breeding, END
-
-	bool m_bAI_AlwaysSell;
-	bool m_bAI_SellNotNeeded;
-	bool m_bAI_FinalProduct;
-	bool m_bAI_FinalProductIfNotNeeded;
-	bool m_bAI_BuyFromEurope;
-	bool m_bAI_UseBuyValue;
-
 };
 
 

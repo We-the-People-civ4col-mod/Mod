@@ -1345,6 +1345,9 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_bUnarmed(false),
 	m_bNoDefensiveBonus(false),
 	m_abFreePromotions(NULL),
+	m_Info_YieldsEquipments(JIT_ARRAY_YIELD, JIT_ARRAY_INT),
+	m_Info_YieldsConsumed(JIT_ARRAY_YIELD),
+	m_Info_YieldsProduced(JIT_ARRAY_YIELD),
 	m_iDefaultUnitAIType(NO_UNITAI)
 {
 }
@@ -1455,15 +1458,7 @@ bool CvProfessionInfo::isNoDefensiveBonus() const
 }
 int CvProfessionInfo::getYieldEquipmentAmount(int iYield) const
 {
-	for (uint i = 0; i < m_aYieldEquipments.size(); ++i)
-	{
-		const YieldEquipment& kYieldEquipment = m_aYieldEquipments[i];
-		if (kYieldEquipment.iYieldType == iYield)
-		{
-			return kYieldEquipment.iYieldAmount;
-		}
-	}
-	return 0;
+	return m_Info_YieldsEquipments.getIndex(iYield);
 }
 
 bool CvProfessionInfo::isFreePromotion(int i) const
@@ -1473,23 +1468,23 @@ bool CvProfessionInfo::isFreePromotion(int i) const
 	return m_abFreePromotions ? m_abFreePromotions[i] : false;
 }
 // R&R, ray , MYCP partially based on code of Aymerick - START
-int CvProfessionInfo::getYieldsProduced(int i) const
+YieldTypes CvProfessionInfo::getYieldsProduced(int i) const
 {
-	return m_aiYieldsProduced[i];
+	return m_Info_YieldsProduced.getYield(i);
 }
 
 int CvProfessionInfo::getNumYieldsProduced() const
 {
-	return (int)m_aiYieldsProduced.size();
+	return m_Info_YieldsProduced.getLength();
 }
-int CvProfessionInfo::getYieldsConsumed(int i) const
+YieldTypes CvProfessionInfo::getYieldsConsumed(int i) const
 {
-	return m_aiYieldsConsumed[i];
+	return m_Info_YieldsConsumed.getYield(i);
 }
 
 int CvProfessionInfo::getNumYieldsConsumed() const
 {
-	return (int)m_aiYieldsConsumed.size();
+	return m_Info_YieldsConsumed.getLength();
 }
 // R&R, ray , MYCP partially based on code of Aymerick - END
 int CvProfessionInfo::getDefaultUnitAIType() const
@@ -1499,10 +1494,6 @@ int CvProfessionInfo::getDefaultUnitAIType() const
 
 void CvProfessionInfo::read(FDataStreamBase* stream)
 {
-	// R&R, ray , MYCP partially based on code of Aymerick - START
-	int iNumElements;
-	int iElement;
-	// R&R, ray , MYCP partially based on code of Aymerick - END
 	CvInfoBase::read(stream);
 	uint uiFlag=0;
 	stream->Read(&uiFlag);		// flag for expansion
@@ -1534,6 +1525,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 
 	stream->Read(&m_bUnarmed);
 	stream->Read(&m_bNoDefensiveBonus);
+	/*
 	m_aYieldEquipments.clear();
 	int iYieldEquipmentSize = 0;
 	stream->Read(&iYieldEquipmentSize);
@@ -1544,11 +1536,13 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 		stream->Read(&kEquipment.iYieldAmount);
 		m_aYieldEquipments.push_back(kEquipment);
 	}
+	*/
 
 	SAFE_DELETE_ARRAY(m_abFreePromotions);
 	m_abFreePromotions = new bool[GC.getNumPromotionInfos()];
 	stream->Read(GC.getNumPromotionInfos(), m_abFreePromotions);
 	// R&R, ray , MYCP partially based on code of Aymerick - START
+	/*
 	stream->Read(&iNumElements);
 	m_aiYieldsProduced.clear();
 	for (int i = 0; i < iNumElements; ++i)
@@ -1563,6 +1557,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 		stream->Read(&iElement);
 		m_aiYieldsConsumed.push_back(iElement);
 	}
+	*/
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 }
 void CvProfessionInfo::write(FDataStreamBase* stream)
@@ -1598,15 +1593,18 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 
 	stream->Write(m_bUnarmed);
 	stream->Write(m_bNoDefensiveBonus);
+	/*
 	stream->Write((int)m_aYieldEquipments.size());
 	for(int i=0;i<(int)m_aYieldEquipments.size();i++)
 	{
 		stream->Write(m_aYieldEquipments[i].iYieldType);
 		stream->Write(m_aYieldEquipments[i].iYieldAmount);
 	}
+	*/
 	stream->Write(GC.getNumPromotionInfos(), m_abFreePromotions);
 	
 	// R&R, ray , MYCP partially based on code of Aymerick - START
+	/*
 	stream->Write(m_aiYieldsProduced.size());
 	for (std::vector<int>::iterator it = m_aiYieldsProduced.begin(); it != m_aiYieldsProduced.end(); ++it)
 	{
@@ -1618,6 +1616,7 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	{
 		stream->Write(*it);
 	}
+	*/
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 }
 bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
@@ -1670,72 +1669,14 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bUnarmed, "bUnarmed");
 	pXML->GetChildXmlValByName(&m_bNoDefensiveBonus, "bNoDefensiveBonus");
 
-	m_aYieldEquipments.clear();
-	int *aiYieldAmounts;
-	pXML->SetVariableListTagPair(&aiYieldAmounts, "YieldEquipedNums", NUM_YIELD_TYPES, 0);
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		if (aiYieldAmounts[i] != 0)
-		{
-			YieldEquipment kYieldEquipment;
-			kYieldEquipment.iYieldType = i;
-			kYieldEquipment.iYieldAmount = aiYieldAmounts[i];
-			m_aYieldEquipments.push_back(kYieldEquipment);
-		}
-	}
-	SAFE_DELETE_ARRAY(aiYieldAmounts);
-	pXML->SetVariableListTagPair(&m_abFreePromotions, "FreePromotions", GC.getNumPromotionInfos(), false);
-	// R&R, ray , MYCP partially based on code of Aymerick - START
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldsProduced"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiYieldsProduced.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiYieldsProduced.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
+	m_Info_YieldsEquipments.read(pXML, getType(), "YieldEquipedNums");
+	m_Info_YieldsConsumed  .read(pXML, getType(), "YieldsConsumed");
+	m_Info_YieldsProduced  .read(pXML, getType(), "YieldsProduced");
 
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"YieldsConsumed"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiYieldsConsumed.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiYieldsConsumed.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	// R&R, ray , MYCP partially based on code of Aymerick - END
+	FAssertMsg(m_Info_YieldsConsumed.getLength() <= MAX_YIELDS_CONSUMED, CvString::format("%s: only %d consumed yields are allowed, but %d was found", getType(), MAX_YIELDS_CONSUMED, m_Info_YieldsConsumed.getLength()));
+
+	pXML->SetVariableListTagPair(&m_abFreePromotions, "FreePromotions", GC.getNumPromotionInfos(), false);
+
 	return true;
 }
 
@@ -2647,6 +2588,7 @@ m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
 m_aiBonusYieldChange(NULL),
 m_aiYieldChange(NULL),
 m_aiYieldCost(NULL),
+m_Info_YieldCosts(JIT_ARRAY_YIELD, JIT_ARRAY_INT),
 m_abFreePromotions(NULL),
 ///TK Viscos Mod
 m_abProfessionsNotAllowed(NULL),
@@ -3895,6 +3837,10 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiBonusYieldChange, "BonusYieldChanges", NUM_YIELD_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldChange, "YieldChanges", NUM_YIELD_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
+
+	// TODO get rid of old style YieldCosts array
+	m_Info_YieldCosts.read(pXML, getType(), "YieldCosts");
+
 	pXML->GetChildXmlValByName(&m_iBombardRate, "iBombardRate");
 	pXML->GetChildXmlValByName(szTextVal, "SpecialCargo");
 	m_iSpecialCargo = pXML->FindInInfoClass(szTextVal);
@@ -4769,6 +4715,7 @@ m_aiDomainFreeExperience(NULL),
 m_aiDomainProductionModifier(NULL),
 m_aiPrereqNumOfBuildingClass(NULL),
 m_aiYieldCost(NULL),
+m_Info_YieldCosts(JIT_ARRAY_YIELD, JIT_ARRAY_INT),
 m_abBuildingClassNeededInCity(NULL)
 {
 }
@@ -5362,6 +5309,10 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiPrereqNumOfBuildingClass, "PrereqBuildingClasses", GC.getNumBuildingClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_abBuildingClassNeededInCity, "BuildingClassNeededs", GC.getNumBuildingClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
+
+	// TODO get rid of old style YieldCosts array
+	m_Info_YieldCosts.read(pXML, getType(), "YieldCosts");
+
 	return true;
 }
 
@@ -9293,32 +9244,23 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	m_eIndex = static_cast<YieldTypes>(getIndexForType(JIT_ARRAY_YIELD, getType()));
 	FAssert(m_eIndex != NO_YIELD);
 
-	pXML->GetEnum(getType(), &m_eCategory, "eYieldCategory", false);
+	m_eCategory = pXML->GetEnumShort(getType(), m_eCategory, "eYieldCategory", false);
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "YieldBoolSetup"))
 	{
-		pXML->GetChildXmlValByName(&m_bCargo, "bCargo");
-
-		pXML->GetChildXmlValByName(&m_bIsExportYield, "bIsExportYield"); // auto traderoute - Nightinggale
+		m_bIsExportYield = pXML->readShort(m_bIsExportYield, "bIsExportYield"); // auto traderoute - Nightinggale
 		// R&R, Androrc, Livestock Breeding
-		pXML->GetChildXmlValByName(&m_bLivestock, "bLivestock", false);
+		m_bLivestock = pXML->readShort(m_bLivestock, "bLivestock", false);
 		// R&R, Androrc, Livestock Breeding, END
 
-		pXML->GetChildXmlValByName(&m_bAI_AlwaysSell, "bAI_AlwaysSell", false);
-		pXML->GetChildXmlValByName(&m_bAI_SellNotNeeded, "bAI_SellNotNeeded", false);
+		m_bAI_AlwaysSell = pXML->readShort(m_bAI_AlwaysSell, "bAI_AlwaysSell", false);
+		m_bAI_SellNotNeeded = pXML->readShort(m_bAI_SellNotNeeded, "bAI_SellNotNeeded", false);
 
-		pXML->GetChildXmlValByName(&m_bAI_FinalProduct, "bAI_FinalProduct", false);
-		pXML->GetChildXmlValByName(&m_bAI_FinalProductIfNotNeeded, "bAI_FinalProductIfNotNeeded", false);
+		m_bAI_FinalProduct = pXML->readShort(m_bAI_FinalProduct, "bAI_FinalProduct", false);
+		m_bAI_FinalProductIfNotNeeded = pXML->readShort(m_bAI_FinalProductIfNotNeeded, "bAI_FinalProductIfNotNeeded", false);
 
-		pXML->GetChildXmlValByName(&m_bAI_BuyFromEurope, "bAI_BuyFromEurope", false);
-		pXML->GetChildXmlValByName(&m_bAI_UseBuyValue, "bAI_UseBuyValue", false);
-		
-		FAssertMsg(isCargo() || !AI_isAlwaysSell(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
-		FAssertMsg(isCargo() || !AI_isSellNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
-		FAssertMsg(isCargo() || !AI_isFinalProduct(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
-		FAssertMsg(isCargo() || !AI_isFinalProductIfNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
-		FAssertMsg(isCargo() || !AI_isBuyFromEurope(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
-		FAssertMsg(isCargo() || !bAI_isUseBuyValue(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+		m_bAI_BuyFromEurope = pXML->readShort(m_bAI_BuyFromEurope, "bAI_BuyFromEurope", false);
+		m_bAI_UseBuyValue = pXML->readShort(m_bAI_UseBuyValue, "bAI_UseBuyValue", false);
 
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
@@ -9373,6 +9315,39 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 
 	return true;
 }
+
+void CvYieldInfo::postReadSetup()
+{
+	switch (m_eCategory)
+	{
+	case YIELD_CATEGORY_HAMMERS:
+	case YIELD_CATEGORY_BELLS:
+	case YIELD_CATEGORY_CROSSES:
+	case YIELD_CATEGORY_CULTURE:
+	case YIELD_CATEGORY_HEALTH:
+	case YIELD_CATEGORY_EDUCATION:
+		m_bCargo = false;
+	default:
+		m_bCargo = true;
+	}
+
+	m_bDomesticConsumed = GC.getUnitYieldDemandTypes().contains(m_eIndex);
+	m_bMilitary = GC.getMilitaryYieldTypes().contains(m_eIndex);
+	m_bEquipment = GC.getUnitEquipmentTypes().contains(m_eIndex);
+	m_bRaw = GC.getRawYieldTypes().contains(m_eIndex);
+	m_bProduced = GC.getProducedYieldTypes().contains(m_eIndex);
+	m_bStrategic = GC.getStrategicYieldTypes().contains(m_eIndex);
+			 
+
+	FAssertMsg(isCargo() || !AI_isAlwaysSell(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+	FAssertMsg(isCargo() || !AI_isSellNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+	FAssertMsg(isCargo() || !AI_isFinalProduct(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+	FAssertMsg(isCargo() || !AI_isFinalProductIfNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+	FAssertMsg(isCargo() || !AI_isBuyFromEurope(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+	FAssertMsg(isCargo() || !bAI_isUseBuyValue(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+}
+
+
 //======================================================================================================
 //					CvTerrainInfo
 //======================================================================================================

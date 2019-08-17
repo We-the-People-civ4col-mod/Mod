@@ -159,6 +159,14 @@ public:
 	// value of that name
 	DllExport bool GetChildXmlValByName(bool* pbVal, const TCHAR* szName, bool bDefault = false);
 
+	template<typename T>
+	T readShort(T Type, const TCHAR* szName, T Default = 0)
+	{
+		T Variable;
+		GetChildXmlValByName(&Variable, szName, Default);
+		return Variable;
+	}
+
 	// allocate and set the feature struct variables for the CvBuildInfo class
 	void SetFeatureStruct(int** ppiFeatureTime, std::vector<std::vector<int> >& aaiFeatureYield, bool** ppbFeatureRemove);
 	// loads the improvement bonuses from the xml file
@@ -232,6 +240,14 @@ public:
 		}
 		*eEnum = static_cast<T>(-1);
 		FAssertMsg(!bMandatory, CvString::format("%s: Tag %s has to be present and contain something other than NONE", szType, szTagName).c_str());
+	}
+
+	template <class T>
+	T GetEnumShort(const char* szType, T eEnum, const char* szTagName, bool bMandatory = true)
+	{
+		T Variable;
+		GetEnum(szType, &Variable, szTagName, bMandatory);
+		return Variable;
 	}
 
 	//---------------------------------------PRIVATE MEMBER VARIABLES---------------------------------

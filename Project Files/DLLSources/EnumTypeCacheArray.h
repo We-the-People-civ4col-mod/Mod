@@ -40,6 +40,8 @@ public:
 	int getLength() const { return m_iLength; }
 	T get(int i) const;
 
+	bool contains(T eValue) const;
+
 	void assign(const BoolArray& pArray);
 
 	template<typename U>
@@ -80,6 +82,18 @@ inline T EnumTypeCacheArray<T>::get(int i) const
 		return m_pTypes[i];
 	}
 	return static_cast<T>(-1);
+}
+
+template<typename T>
+inline bool EnumTypeCacheArray<T>::contains(T eValue) const
+{
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		T eEntry = get(i);
+		if (eEntry == eValue) return true;
+		if (eEntry >  eValue) return false;
+	}
+	return false;
 }
 
 template<typename T>

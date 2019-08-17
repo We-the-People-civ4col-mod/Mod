@@ -922,6 +922,11 @@ public:
 	void deleteInfoArrays();
 
 	const YieldTypeArray& getUnitYieldDemandTypes() const { return m_acUnitYieldDemandTypes; }
+	const YieldTypeArray& getMilitaryYieldTypes  () const { return m_acYieldMilitary       ; }
+	const YieldTypeArray& getUnitEquipmentTypes  () const { return m_acYieldUnitEquipment  ; }
+	const YieldTypeArray& getRawYieldTypes       () const { return m_acYieldRaw            ; }
+	const YieldTypeArray& getProducedYieldTypes  () const { return m_acYieldProduced       ; }
+	const YieldTypeArray& getStrategicYieldTypes () const { return m_acYieldStrategic      ; }
 
 	void setCityCatchmentRadius(int iSetting);
 
@@ -1332,6 +1337,11 @@ protected:
 	// R&R, ray, Health - END
 
 	YieldTypeArray m_acUnitYieldDemandTypes;
+	YieldTypeArray m_acYieldMilitary;
+	YieldTypeArray m_acYieldUnitEquipment;
+	YieldTypeArray m_acYieldRaw;
+	YieldTypeArray m_acYieldProduced;
+	YieldTypeArray m_acYieldStrategic;
 
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;

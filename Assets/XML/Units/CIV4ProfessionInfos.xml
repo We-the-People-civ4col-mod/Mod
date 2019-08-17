@@ -34,9 +34,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_FOOD</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,3,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_FARMER</ExpertUnit>
@@ -71,9 +69,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_FOOD</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,3,9</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_FISHERMAN</ExpertUnit>
@@ -108,9 +104,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_LUMBER</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,4,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_LUMBERJACK</ExpertUnit>
@@ -145,9 +139,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_VALUABLE_WOOD</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,1,3</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_LUMBERJACK</ExpertUnit>
@@ -182,9 +174,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_STONE</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,6,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_STONECUTTER</ExpertUnit>
@@ -219,9 +209,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_SILVER</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,8,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_PROSPECTOR</ExpertUnit>
@@ -256,9 +244,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_GOLD</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,1,2</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_PROSPECTOR</ExpertUnit>
@@ -293,9 +279,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_GEMS</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,2</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_PROSPECTOR</ExpertUnit>
@@ -330,9 +314,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_GEMS</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,6,2</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_PEARLS_HUNTER</ExpertUnit>
@@ -367,9 +349,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_COTTON</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,4,9</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_COTTON_PLANTER</ExpertUnit>
@@ -404,9 +384,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_INDIGO</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_INDIGO_PLANTER</ExpertUnit>
@@ -442,9 +420,7 @@
                 <YieldType>YIELD_FUR</YieldType>
                 <YieldType>YIELD_FOOD</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,2</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_HUNTER</ExpertUnit>
@@ -480,9 +456,7 @@
                 <YieldType>YIELD_FUR</YieldType>
                 <YieldType>YIELD_FOOD</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,7,2</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_SEALS_HUNTER</ExpertUnit>
@@ -517,9 +491,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_PREMIUM_FUR</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,6,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_TRAPPER</ExpertUnit>
@@ -554,9 +526,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_PREMIUM_FUR</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,6,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_TRAPPER</ExpertUnit>
@@ -591,9 +561,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_BARLEY</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,2</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_FARMER</ExpertUnit>
@@ -628,9 +596,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_SUGAR</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,6,9</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_SUGAR_PLANTER</ExpertUnit>
@@ -665,9 +631,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_GRAPES</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,7,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_GRAPES_PICKER</ExpertUnit>
@@ -702,9 +666,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_TOBACCO</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,5,9</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_TOBACCO_PLANTER</ExpertUnit>
@@ -739,9 +701,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_HEMP</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_HEMP_PLANTER</ExpertUnit>
@@ -776,9 +736,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_COCA_LEAVES</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,4</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_COCA_COLLECTOR</ExpertUnit>
@@ -813,9 +771,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_COCOA_FRUITS</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,1,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_COCOA_PLANTER</ExpertUnit>
@@ -850,9 +806,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_COFFEE_BERRIES</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_COFFEE_PLANTER</ExpertUnit>
@@ -887,9 +841,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_RED_PEPPER</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_RED_PEPPER_PLANTER</ExpertUnit>
@@ -924,9 +876,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_ORE</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,7,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_MINER</ExpertUnit>
@@ -961,9 +911,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_RAW_SALT</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,1</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_MINER</ExpertUnit>
@@ -1813,9 +1761,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_SHEEP</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,3</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_RANCHER</ExpertUnit>
@@ -1850,9 +1796,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_CATTLE</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,3</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_RANCHER</ExpertUnit>
@@ -1887,9 +1831,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_HORSES</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,7,3</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_RANCHER</ExpertUnit>
@@ -2037,9 +1979,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_BELLS</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,2,9</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_STATESMAN</ExpertUnit>
@@ -2074,9 +2014,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_HEALTH</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,8,6</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_DOCTOR</ExpertUnit>
@@ -2111,9 +2049,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_CROSSES</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,7,6</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_PREACHER</ExpertUnit>
@@ -2148,9 +2084,7 @@
             <YieldsProduced>
                 <YieldType>YIELD_EDUCATION</YieldType>
             </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,8,6</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2182,12 +2116,8 @@
             <iAsset>0</iAsset>
             <YieldEquipedNums/>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,7,9</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2219,12 +2149,8 @@
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,6,6</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2261,12 +2187,8 @@
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,4</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_PIONEER</ExpertUnit>
@@ -2303,12 +2225,8 @@
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,7,5</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_SCOUT</ExpertUnit>
@@ -2345,12 +2263,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,5,7</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2392,12 +2306,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,8,5</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2439,12 +2349,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,8,8</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2490,12 +2396,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,7,8</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2532,12 +2434,8 @@
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,1,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_VETERAN</ExpertUnit>
@@ -2587,12 +2485,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_VETERAN</ExpertUnit>
@@ -2629,12 +2523,8 @@
                 </YieldEquipedNum>
             </YieldEquipedNums>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_ROYAL_LIGHT_INFANTRY</ExpertUnit>
@@ -2684,12 +2574,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_ROYAL_LINE_INFANTRY</ExpertUnit>
@@ -2735,12 +2621,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_VETERAN_DRAGOON</ExpertUnit>
@@ -2786,12 +2668,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_ROYAL_DRAGOON</ExpertUnit>
@@ -2837,12 +2715,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,7</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_VETERAN_CAVALRY</ExpertUnit>
@@ -2888,12 +2762,8 @@
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,8</Button>
             <bUseLbD>1</bUseLbD>
             <ExpertUnit>UNITCLASS_ROYAL_CAVALRY</ExpertUnit>
@@ -2925,12 +2795,8 @@
             <iAsset>100</iAsset>
             <YieldEquipedNums/>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_units,4,10</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
@@ -2962,12 +2828,8 @@
             <iAsset>50</iAsset>
             <YieldEquipedNums/>
             <FreePromotions/>
-            <YieldsProduced>
-                <YieldType>NONE</YieldType>
-            </YieldsProduced>
-            <YieldsConsumed>
-                <YieldType>NONE</YieldType>
-            </YieldsConsumed>
+            <YieldsProduced/>
+            <YieldsConsumed/>
             <Button>,Art/colonization_atlas_units,3,11</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>

@@ -804,10 +804,10 @@
 		<element type="iMissionaryRate"/>
 		<element type="iPower"/>
 		<element type="iAsset"/>
-		<element type="YieldEquipedNums"/>
+		<element type="YieldEquipedNums" maxOccurs="*"/>
 		<element type="FreePromotions"/>
-		<element type="YieldsProduced"/>
-		<element type="YieldsConsumed"/>
+		<element type="YieldsProduced" maxOccurs="*"/>
+		<element type="YieldsConsumed" maxOccurs="*"/>
 		<element type="Button" maxOccurs="*"/>
 		<element type="bUseLbD"/>
 		<element type="ExpertUnit"/>

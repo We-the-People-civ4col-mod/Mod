@@ -62,6 +62,9 @@
             <Type>UnitClassInfo</Type>
             <Class>Type</Class>
         </Class>
+        <YieldCost>
+            <ButtonChild>YieldType</ButtonChild>
+        </YieldCost>
     </UnitInfo>
 </FileSpecific>
 
@@ -111,6 +114,22 @@
     <UnitMeshGroups>
         <ButtonChild>UnitMeshGroup</ButtonChild>
     </UnitMeshGroups>
+    <YieldCost>
+        <ButtonChild>YieldType</ButtonChild>
+    </YieldCost>
+    <YieldEquipedNum>
+        <ButtonChild>YieldType</ButtonChild>
+    </YieldEquipedNum>
+    <YieldType>
+        <Type>YieldInfo</Type>
+        <Class>Type</Class>
+    </YieldType>
+    <YieldsConsumed>
+        <ButtonChild>YieldType</ButtonChild>
+    </YieldsConsumed>
+    <YieldsProduced>
+        <ButtonChild>YieldType</ButtonChild>
+    </YieldsProduced>
     <bAI_AlwaysSell>
         <Help>The AI will always sell yields of this type</Help>
     </bAI_AlwaysSell>

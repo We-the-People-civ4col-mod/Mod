@@ -6401,13 +6401,13 @@ void CvPlayerAI::AI_doTradeRoutes()
 	//Best Yield Destinations
 	std::vector<CvCity*> yield_dests(NUM_YIELD_TYPES, NULL);
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eLoopYield = FIRST_YIELD; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)
 	{
-		YieldTypes eLoopYield = (YieldTypes)iYield;
+		const CvYieldInfo& kYield = GC.getYieldInfo(eLoopYield);
 
-		if (GC.getYieldInfo(eLoopYield).isCargo() && (eLoopYield != YIELD_FOOD))
+		if (kYield.isCargo() && (eLoopYield != YIELD_FOOD))
 		{
-			if (AI_isYieldFinalProduct(eLoopYield))
+			if (AI_isYieldFinalProduct(kYield))
 			{
 				yield_dests[eLoopYield] = NULL;
 			}

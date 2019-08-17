@@ -3437,8 +3437,6 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 }
 
-const int MAX_INPUT_YIELDS = 2;
-
 // Erik: In case of multiple input yields, we store
 // the contribution of each input
 struct ProfessionValue
@@ -3571,13 +3569,17 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 	}
 	// Currently, the only yield to require multiple inputs is YIELD_COLOURED_CLOTH (inputs: YIELD_INDIGO and YIELD_CLOTH)
 	// so we do not support anything beyond that at the moment. We should consider asserting much earlier though
-	FAssertMsg(kProfessionInfo.getNumYieldsConsumed() <= MAX_INPUT_YIELDS, "More than 2 input yields are not supported");
+	FAssertMsg(kProfessionInfo.getNumYieldsConsumed() <= MAX_YIELDS_CONSUMED, "More than 2 input yields are not supported");
 
-	ProfessionValue professionValue[MAX_INPUT_YIELDS];
+	ProfessionValue professionValue[MAX_YIELDS_CONSUMED];
 	
 	// Erik: If more than one yield is consumed, we have to separately evaluate
 	// their contribution to the output
-	for (int i = 0; i < kProfessionInfo.getNumYieldsConsumed(); i++)
+
+	// Nightinggale: the code assumes this to execute at least once
+	// If no yields are consumed, it will run with NO_YIELD
+	int iNumYieldsConsumed = std::max(1, kProfessionInfo.getNumYieldsConsumed());
+	for (int i = 0; i < iNumYieldsConsumed; i++)
 	{
 		ProfessionValue &pv = professionValue[i];
 		
