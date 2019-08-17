@@ -251,6 +251,11 @@ namespace python
 }
 class PyObject;
 
+namespace boost
+{
+	class noncopyable {};
+}
+
 #endif // IntelliSense workaround
 
 #include "FAssert.h"
