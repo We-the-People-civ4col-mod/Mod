@@ -2037,7 +2037,7 @@ bool CvUnit::isActionRecommended(int iAction)
 		break;
 	}
 
-	if (GC.getActionInfo(iAction).getAutomateType() == AUTOMATE_SAIL || GC.getActionInfo(iAction).getCommandType() == COMMAND_SAIL_TO_EUROPE)
+	if (GC.getActionInfo(iAction).getCommandType() == COMMAND_SAIL_TO_EUROPE)
 	{
 		CLinkList<IDInfo> listCargo;
 		getGroup()->buildCargoUnitList(listCargo);
@@ -3446,7 +3446,7 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 		}
 		break;
 
-	case AUTOMATE_SAIL:
+	case AUTOMATE_SAIL_TO_EUROPE:
 		if (!canCrossOcean || !canAutoCrossOcean(plot()))
 		{
 			return false;

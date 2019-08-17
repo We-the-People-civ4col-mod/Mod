@@ -1046,7 +1046,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				}
 				else
 				{
-					gDLL->sendDoCommand(info.getData1(), COMMAND_AUTOMATE, AUTOMATE_SAIL, -1, false);
+					gDLL->sendDoCommand(info.getData1(), COMMAND_AUTOMATE, AUTOMATE_SAIL_TO_EUROPE, -1, false);
 				}
 			}
 		}
