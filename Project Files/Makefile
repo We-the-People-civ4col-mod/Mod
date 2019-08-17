@@ -121,10 +121,8 @@ SUBDIRPATH15 = ../
 
 SUBDIRS = . $(SUBDIR1) $(SUBDIR2) $(SUBDIR3) $(SUBDIR4) $(SUBDIR5) $(SUBDIR6) $(SUBDIR7) $(SUBDIR8) $(SUBDIR9) $(SUBDIR10) $(SUBDIR11) $(SUBDIR12) $(SUBDIR13) $(SUBDIR14) $(SUBDIR15)
 
-TEMP_TARGET_FILES = $(TEMP_FILE_DIR)\$(TARGET)
-!ifdef ONE_PLOT_CITY_RADIUS
-TEMP_TARGET_FILES = $(TEMP_TARGET_FILES)_ONE_PLOT_CITY_RADIUS
-!endif
+# TEMP_DIR_POSTFIX allows different settings for the same target, like Release with and without certain cflag (likely a define)
+TEMP_TARGET_FILES = $(TEMP_FILE_DIR)\$(TARGET)$(TEMP_DIR_POSTFIX)
 
 ## Environmental path overwrite
 !IFDEF CIV4_LIB_INSTALL_PATH
@@ -162,12 +160,8 @@ FILE_DEPENDS = $(TEMP_TARGET_FILES)\depends
 
 #### CFLAGS ####
 GLOBAL_CFLAGS=/GR /Gy /W3 /EHsc /Gd /Gm- /Fd"$(Target_PDB)" $(CUSTOM_CFLAGS) $(PROJECT_CFLAGS)
-Debug_CFLAGS=/MD /Zi /Od /RTC1 $(Debug_DEFINES) $(GLOBAL_CFLAGS)
+Debug_CFLAGS=/MD /Z7 /Od /RTC1 $(Debug_DEFINES) $(GLOBAL_CFLAGS)
 Release_CFLAGS= /MD /O2 /Oy /Oi /G7 $(Release_DEFINES) $(GLOBAL_CFLAGS)
-
-!ifdef ONE_PLOT_CITY_RADIUS
-GLOBAL_CFLAGS = $(GLOBAL_CFLAGS) -DONE_PLOT_CITY_RADIUS
-!endif
 
 PRECOMPILE_CFLAGS1 = /Yu"
 PRECOMPILE_CFLAGS2 = CvGameCoreDLL.h" /Fp"$(Target_PCH)"
@@ -207,9 +201,6 @@ LIBS = $(PROJECT_LIBS) $(GLOBAL_LIBS)
 
 
 !IF "$(TARGET)" == "Debug"
-!IFNDEF _NMAKE_VER
-!ERROR Jom can't be used on Debug builds
-!ENDIF
 CFLAGS  = $(Debug_CFLAGS)
 LDFLAGS = $(Debug_LDFLAGS)
 LIBS    = $(LIBS) msvcprt.lib
@@ -223,10 +214,7 @@ CFLAGS  = $(Release_CFLAGS) /DFASSERT_ENABLE
 LDFLAGS = $(Release_LDFLAGS)
 !ENDIF
 !IF "$(TARGET)" == "Profile"
-!IFNDEF _NMAKE_VER
-!ERROR Jom can't be used on profile builds
-!ENDIF
-CFLAGS  = $(Release_CFLAGS) /Zi
+CFLAGS  = $(Release_CFLAGS) /Z7
 LDFLAGS = $(Debug_LDFLAGS)
 !ENDIF
 
@@ -237,6 +225,9 @@ LDFLAGS = $(Debug_LDFLAGS)
 !IF EXIST ($(FILE_DEPENDS))
 !INCLUDE $(FILE_DEPENDS)
 !ENDIF
+
+CFLAGS  = $(CFLAGS) $(CONFIG_CFLAGS)
+LDFLAGS = $(LDFLAGS) $(CONFIG_DLFLAGS)
 
 #### Targets ####
 #################
@@ -265,13 +256,6 @@ build: $(Target_BIN)
 !IF "$(YOURMOD)" != ".."
 	-xcopy "..\Assets\*" "$(YOURMOD)\Assets\*" /e /y /f /d
 	-xcopy "..\PublicMaps\*" "$(YOURMOD)\PublicMaps\*" /e /y /f /d
-!ENDIF
-!ENDIF
-!IFDEF RELEASE
-!IFDEF ONE_PLOT_CITY_RADIUS
-	-COPY "$(Target_BIN)" "..\1 city plot\."
-!ELSE
-	-COPY "$(Target_BIN)" "..\2 city plot\."
 !ENDIF
 !ENDIF
 
