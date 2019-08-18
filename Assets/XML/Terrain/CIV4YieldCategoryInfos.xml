@@ -9,7 +9,16 @@
         <Type>YIELD_CATEGORY_CONSTRUCTION</Type>
     </YieldCategoryInfo>
     <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_MILITARY</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_MILITARY_REQUIREMENT</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
         <Type>YIELD_CATEGORY_TOOLS</Type>
+    </YieldCategoryInfo>
+    <YieldCategoryInfo>
+        <Type>YIELD_CATEGORY_NEW_WORLD_CONSUMED</Type>
     </YieldCategoryInfo>
     <YieldCategoryInfo>
         <Type>YIELD_CATEGORY_HAMMERS</Type>

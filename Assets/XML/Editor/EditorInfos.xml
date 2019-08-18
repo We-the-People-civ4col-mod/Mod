@@ -133,6 +133,12 @@
     <bAI_AlwaysSell>
         <Help>The AI will always sell yields of this type</Help>
     </bAI_AlwaysSell>
+    <bAI_CantUse>
+        <Help>Workaround for AI limitations. If the yield is used for something the AI can't figure out, then disable the yield here to avoid the AI producing yields it can't use anyway</Help>
+    </bAI_CantUse>
+    <bAI_PreciousMetal>
+        <Help>The AI values this yield higher when producing something for profit</Help>
+    </bAI_PreciousMetal>
     <bAI_SellUnneeded>
         <Help>The AI will sell this yield if it has more than it needs</Help>
     </bAI_SellUnneeded>

@@ -323,6 +323,7 @@
             <Type>YIELD_HORSES</Type>
             <Description>TXT_KEY_YIELD_HORSES</Description>
             <Civilopedia>TXT_KEY_YIELD_HORSES_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
                 <bLivestock>1</bLivestock>
@@ -1151,6 +1152,7 @@
             <Type>YIELD_TRADE_GOODS</Type>
             <Description>TXT_KEY_YIELD_TRADE_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_TRADE_GOODS_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_NEW_WORLD_CONSUMED</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
                 <bAI_FinalProduct>1</bAI_FinalProduct>
@@ -1194,6 +1196,7 @@
             <Type>YIELD_ROPE</Type>
             <Description>TXT_KEY_YIELD_ROPE</Description>
             <Civilopedia>TXT_KEY_YIELD_ROPE_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_MILITARY_REQUIREMENT</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
             </YieldBoolSetup>
@@ -1237,6 +1240,7 @@
             <Type>YIELD_SAILCLOTH</Type>
             <Description>TXT_KEY_YIELD_SAILCLOTH</Description>
             <Civilopedia>TXT_KEY_YIELD_SAILCLOTH_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_MILITARY_REQUIREMENT</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
                 <bAI_SellNotNeeded>1</bAI_SellNotNeeded>
@@ -1326,6 +1330,7 @@
             <Type>YIELD_BLADES</Type>
             <Description>TXT_KEY_YIELD_BLADES</Description>
             <Civilopedia>TXT_KEY_YIELD_BLADES_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
             </YieldBoolSetup>
@@ -1369,6 +1374,7 @@
             <Type>YIELD_MUSKETS</Type>
             <Description>TXT_KEY_YIELD_MUSKETS</Description>
             <Civilopedia>TXT_KEY_YIELD_MUSKETS_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
             </YieldBoolSetup>
@@ -1412,8 +1418,10 @@
             <Type>YIELD_CANNONS</Type>
             <Description>TXT_KEY_YIELD_CANNONS</Description>
             <Civilopedia>TXT_KEY_YIELD_CANNONS_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bAI_CantUse>1</bAI_CantUse>
             </YieldBoolSetup>
             <iBuyPriceLow>14</iBuyPriceLow>
             <iBuyPriceHigh>16</iBuyPriceHigh>
@@ -1461,6 +1469,7 @@
                 <bAI_AlwaysSell>1</bAI_AlwaysSell>
                 <bAI_FinalProduct>1</bAI_FinalProduct>
                 <bAI_UseBuyValue>1</bAI_UseBuyValue>
+                <bAI_PreciousMetal>1</bAI_PreciousMetal>
             </YieldBoolSetup>
             <iBuyPriceLow>19</iBuyPriceLow>
             <iBuyPriceHigh>20</iBuyPriceHigh>
@@ -1507,6 +1516,7 @@
                 <bAI_AlwaysSell>1</bAI_AlwaysSell>
                 <bAI_FinalProduct>1</bAI_FinalProduct>
                 <bAI_UseBuyValue>1</bAI_UseBuyValue>
+                <bAI_PreciousMetal>1</bAI_PreciousMetal>
             </YieldBoolSetup>
             <iBuyPriceLow>39</iBuyPriceLow>
             <iBuyPriceHigh>40</iBuyPriceHigh>
@@ -1553,6 +1563,7 @@
                 <bAI_AlwaysSell>1</bAI_AlwaysSell>
                 <bAI_FinalProduct>1</bAI_FinalProduct>
                 <bAI_UseBuyValue>1</bAI_UseBuyValue>
+                <bAI_PreciousMetal>1</bAI_PreciousMetal>
             </YieldBoolSetup>
             <iBuyPriceLow>23</iBuyPriceLow>
             <iBuyPriceHigh>24</iBuyPriceHigh>
@@ -2336,9 +2347,11 @@
             <Type>YIELD_LUXURY_GOODS</Type>
             <Description>TXT_KEY_YIELD_LUXURY_GOODS</Description>
             <Civilopedia>TXT_KEY_YIELD_LUXURY_GOODS_PEDIA</Civilopedia>
+            <eYieldCategory>YIELD_CATEGORY_NEW_WORLD_CONSUMED</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
                 <bAI_FinalProduct>1</bAI_FinalProduct>
+                <bAI_PreciousMetal>1</bAI_PreciousMetal>
             </YieldBoolSetup>
             <iBuyPriceLow>15</iBuyPriceLow>
             <iBuyPriceHigh>15</iBuyPriceHigh>

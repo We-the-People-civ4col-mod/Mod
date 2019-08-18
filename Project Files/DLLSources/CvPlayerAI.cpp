@@ -8747,25 +8747,22 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(const CvYieldInfo& kYield) const
 int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, bool bFood)
 // TAC - AI More food - koma13 - END
 {
+	const CvYieldInfo& kYieldInfo = GC.getYieldInfo(eYield);
+
 	int iValue = 0;
 	if (bProduce)
 	{
-		iValue += 100 * (isNative() ? GC.getYieldInfo(eYield).getNativeBaseValue() : GC.getYieldInfo(eYield).getAIBaseValue());
+		iValue += 100 * (isNative() ? kYieldInfo.getNativeBaseValue() : kYieldInfo.getAIBaseValue());
 	}
-	if (eYield == YIELD_FOOD)
+	if (bFood && kYieldInfo.getCategory() == YIELD_CATEGORY_FOOD)
 	{
 		// TAC - AI More food - koma13 - START
-
-		if (bFood)
-		{
-			iValue += 75 * (isNative() ? GC.getYieldInfo(eYield).getNativeBaseValue() : GC.getYieldInfo(eYield).getAIBaseValue());
-		}
+		iValue += 75 * (isNative() ? kYieldInfo.getNativeBaseValue() : kYieldInfo.getAIBaseValue());
 		// TAC - AI More food - koma13 - END
 	}
 
 	else if (isNative())
 	{
-		CvYieldInfo& kYieldInfo = GC.getYieldInfo(eYield);
 		int iPrice = 0;
 		int iValidPrices = 0;
 		if (kYieldInfo.getNativeBuyPrice() > 0)
@@ -8821,86 +8818,24 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 			iWeaponsMultiplier += 50;
 		}
 
-		switch (eYield)
+		switch (kYieldInfo.getCategory())
 		{
-			case YIELD_FOOD:
+			case YIELD_CATEGORY_FOOD:
+			case YIELD_CATEGORY_TOOLS:
+			case YIELD_CATEGORY_NEW_WORLD_CONSUMED:
 				break;
-			case YIELD_LUMBER:
-			case YIELD_STONE:
+			case YIELD_CATEGORY_CONSTRUCTION:
 				iValue *= 100;
 				iValue /= iGoodsMultiplier;
 				break;
-			case YIELD_HEMP:
-			case YIELD_ORE:
-			case YIELD_SHEEP:
-			case YIELD_CATTLE:
-				iValue *= iGoodsMultiplier;
-				iValue /= 100;
-				break;
-			case YIELD_HORSES:
+
+			case YIELD_CATEGORY_MILITARY:
+			case YIELD_CATEGORY_MILITARY_REQUIREMENT:
 				iValue *= iWeaponsMultiplier;
 				iValue /= 100;
 				break;
-			case YIELD_COCOA_FRUITS:
-			case YIELD_COFFEE_BERRIES:
-			case YIELD_TOBACCO:
-			case YIELD_WOOL:
-			case YIELD_COTTON:
-			case YIELD_INDIGO:
-			case YIELD_HIDES:
-			case YIELD_FUR:
-			case YIELD_PREMIUM_FUR:
-			case YIELD_RAW_SALT:
-			case YIELD_RED_PEPPER:
-			case YIELD_BARLEY:
-			case YIELD_SUGAR:
-			case YIELD_GRAPES:
-			case YIELD_WHALE_BLUBBER:
-			case YIELD_VALUABLE_WOOD:
-				iValue *= iGoodsMultiplier;
-				iValue /= 100;
-				break;
-			case YIELD_TRADE_GOODS:
-				break;
-			case YIELD_ROPE:
-			case YIELD_SAILCLOTH:
-				iValue *= iWeaponsMultiplier;
-				iValue /= 100;
-				break;
-			case YIELD_TOOLS:
-				break;
-			case YIELD_BLADES:
-			case YIELD_MUSKETS:
-			case YIELD_CANNONS:
-				iValue *= iWeaponsMultiplier;
-				iValue /= 100;
-				break;
-			case YIELD_COCA_LEAVES:
-			case YIELD_SILVER:
-			case YIELD_GOLD:
-			case YIELD_GEMS:
-			case YIELD_COCOA:
-			case YIELD_COFFEE:
-			case YIELD_CIGARS:
-			case YIELD_WOOL_CLOTH:
-			case YIELD_CLOTH:
-			case YIELD_COLOURED_CLOTH:
-			case YIELD_LEATHER:
-			case YIELD_COATS:
-			case YIELD_PREMIUM_COATS:
-			case YIELD_SALT:
-			case YIELD_SPICES:
-			case YIELD_BEER:
-			case YIELD_RUM:
-			case YIELD_WINE:
-			case YIELD_WHALE_OIL:
-			case YIELD_FURNITURE:
-				iValue *= iGoodsMultiplier;
-				iValue /= 100;
-				break;
-			case YIELD_LUXURY_GOODS:
-				break;
-			case YIELD_HAMMERS:
+			
+			case YIELD_CATEGORY_HAMMERS:
 				if (AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
 				{
 					iValue *= 125;
@@ -8919,7 +8854,8 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 				}
 				// R&R, ray, AI builds stronger - END
 				break;
-			case YIELD_BELLS:
+
+			case YIELD_CATEGORY_BELLS:
 				if (AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
 				{
 					iValue *= 150;
@@ -8931,15 +8867,19 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 					}
 				}
 				break;
-			case YIELD_CROSSES:
-			case YIELD_CULTURE:
-			case YIELD_HEALTH:
-			case YIELD_EDUCATION:
+
+			case YIELD_CATEGORY_CROSSES:
+			case YIELD_CATEGORY_CULTURE:
+			case YIELD_CATEGORY_HEALTH:
+			case YIELD_CATEGORY_EDUCATION:
 				iValue *= 100;
 				iValue /= iWeaponsMultiplier;
 				break;
+
 			default:
-			break;
+				iValue *= iGoodsMultiplier;
+				iValue /= 100;
+				break;
 		}
 	}
 
@@ -8984,7 +8924,7 @@ void CvPlayerAI::AI_updateYieldValues()
 			default:
 				if (kYield.isCargo())
 				{
-					iValue = kYield.bAI_isUseBuyValue() ? kParent.getYieldBuyPrice(eYield) : kParent.getYieldSellPrice(eYield);
+					iValue = kYield.AI_isUseBuyValue() ? kParent.getYieldBuyPrice(eYield) : kParent.getYieldSellPrice(eYield);
 				}
 		}
 

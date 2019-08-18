@@ -4498,144 +4498,85 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
 	
-	switch (eYield)
+	const CvYieldInfo& kYieldInfo = GC.getYieldInfo(eYield);
+
+	if (kYieldInfo.AI_isCantUse())
 	{
+		// case YIELD_CANNONS:
+		//	Erik: Since the AI cannot use this yield for military purposes, I've decided to
+		//	block it so that production is not diverted to it. (cannons are usually just sold in Europe
+		//	without this fix) 
+		return 0;
+	}
 
-		case YIELD_FOOD:
-		// Strategic resource, no reduction
-		case YIELD_HORSES:
-		case YIELD_COCOA:
-		case YIELD_COFFEE:
-		case YIELD_CIGARS:
-		case YIELD_WOOL_CLOTH:
-		case YIELD_CLOTH:
-		case YIELD_COLOURED_CLOTH:
-		case YIELD_LEATHER:
-		case YIELD_COATS:
-		case YIELD_PREMIUM_COATS:
-		case YIELD_SALT:
-		case YIELD_SPICES:
-		case YIELD_BEER:
-		case YIELD_RUM:
-		case YIELD_WINE:
-		case YIELD_WHALE_OIL:
-		case YIELD_FURNITURE:
-			break;
-		// We punish overproduction of input yields 
-		case YIELD_LUMBER:
-		case YIELD_STONE:
-		case YIELD_HEMP:
-		case YIELD_ORE:
-		case YIELD_SHEEP:
-		case YIELD_CATTLE:
-		case YIELD_COCA_LEAVES:
-		case YIELD_COCOA_FRUITS:
-		case YIELD_COFFEE_BERRIES:
-		case YIELD_TOBACCO:
-		case YIELD_WOOL:
-		case YIELD_COTTON:
-		case YIELD_INDIGO:
-		case YIELD_HIDES:
-		case YIELD_FUR:
-		case YIELD_PREMIUM_FUR:
-		case YIELD_RAW_SALT:
-		case YIELD_RED_PEPPER:
-		case YIELD_BARLEY:
-		case YIELD_SUGAR:
-		case YIELD_GRAPES:
-		case YIELD_WHALE_BLUBBER:
-		case YIELD_VALUABLE_WOOD:
+	if (kYieldInfo.isRaw() && !kYieldInfo.AI_isPreciousMetal())
+	{
+		PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
+
+		if (eParent != NO_PLAYER)
 		{
-			PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
+			CvPlayer& kParent = GET_PLAYER(eParent);
 
-			if (eParent != NO_PLAYER)
+			// We value the yield by what we would have had to pay for it in
+			// a port as long as we only have a small amount of it
+			const int iBaselineAmount = 50;
+
+			// We want to encourage the production of a least a small
+			// amount of any given yield since that makes it more
+			// likely that it can be used as input
+			if (getYieldStored(eYield) <= iBaselineAmount)
 			{
-				CvPlayer& kParent = GET_PLAYER(eParent);
-
-				// We value the yield by what we would have had to pay for it in
-				// a port as long as we only have a small amount of it
-				const int iBaselineAmount = 50;
-
-				// We want to encourage the production of a least a small
-				// amount of any given yield since that makes it more
-				// likely that it can be used as input
-				if (getYieldStored(eYield) <= iBaselineAmount)
-				{
-					const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
-					iValue = iAmount * iBestBuyPrice;
-				}
-				else
-				{ 
-					// Erik: For every 100 units in excess of the maintain level + baseline,
-					// decrement the estimated value by 1 to "punish" overproduction
-					// Note: This should only be applied to input yields and 
-					// not final products like muskets etc.
-					const int iExcessSurplus = std::max(0, getYieldStored(eYield) - getMaintainLevel(eYield)) - iBaselineAmount;
-					const int iReductionFactor = iExcessSurplus / 100;
-					// TODO: Consider domestic prices as well
-					const int iBestSellPrice = std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
-					iValue = iAmount * std::max(1, iBestSellPrice - iReductionFactor);
-				}
+				const int iBestBuyPrice = std::min(kParent.getYieldSellPrice(eYield), kParent.getYieldAfricaSellPrice(eYield));
+				iValue = iAmount * iBestBuyPrice;
+			}
+			else
+			{
+				// Erik: For every 100 units in excess of the maintain level + baseline,
+				// decrement the estimated value by 1 to "punish" overproduction
+				// Note: This should only be applied to input yields and 
+				// not final products like muskets etc.
+				const int iExcessSurplus = std::max(0, getYieldStored(eYield) - getMaintainLevel(eYield)) - iBaselineAmount;
+				const int iReductionFactor = iExcessSurplus / 100;
+				// TODO: Consider domestic prices as well
+				const int iBestSellPrice = std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+				iValue = iAmount * std::max(1, iBestSellPrice - iReductionFactor);
 			}
 		}
-		break;
-		case YIELD_TRADE_GOODS:
-		// These are strategic yields and their price is never reduced
-		case YIELD_ROPE:
-		case YIELD_SAILCLOTH:
-			break;
-		case YIELD_TOOLS:
+	}
+	else
+	{
+		switch (kYieldInfo.getCategory())
 		{
-			const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
-			iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
+		case YIELD_CATEGORY_MILITARY_REQUIREMENT:
+		case YIELD_CATEGORY_TOOLS:
+			{
+				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+				iValue = static_cast<int>(iAmount * YIELD_TOOLS_BASE_VALUE + populationMultiplier);
+			}
+			break;
+		case YIELD_CATEGORY_HAMMERS:
+			{
+				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+				iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
+			}
+			break;
+		case YIELD_CATEGORY_BELLS:
+			{
+				// Erik: Estimate the value of bells based on this formula: 
+				// If rebel sentiment is <50%: 
+				//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%) 
+				// Else
+				//  Liberty bell value = (10 + pop/5)
+
+				// Note that the doubles are necessary for the calculation to round correctly
+				const int rebelPercent = getRebelPercent();
+				const double rebelFactor = (125 - getRebelPercent()) / (double)100;
+				const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
+
+				iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
+			}
+			break;
 		}
-		break;
-		case YIELD_BLADES:
-		case YIELD_MUSKETS:
-		// Previous metals are never reduced in value
-		case YIELD_SILVER:
-		case YIELD_GOLD:
-		case YIELD_GEMS:
-		case YIELD_LUXURY_GOODS:
-		break;
-		case YIELD_HAMMERS:
-		{
-			const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
-			iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
-		}
-		break;
-		case YIELD_BELLS:
-		{
-			// Erik: Estimate the value of bells based on this formula: 
-			// If rebel sentiment is <50%: 
-			//   Liberty bell value = (10 + pop/5 ) * (150% - rebel sentiment%) 
-			// Else
-			//  Liberty bell value = (10 + pop/5)
-				
-			// Note that the doubles are necessary for the calculation to round correctly
-			const int rebelPercent = getRebelPercent();
-			const double rebelFactor = (125 - getRebelPercent()) / (double)100;
-			const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
-				
-			iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
-		}
-		break;
-		case YIELD_CROSSES:
-			break;
-		case YIELD_CULTURE:
-			break;
-		case YIELD_HEALTH:
-			break;
-		case YIELD_EDUCATION:
-			break;
-		case YIELD_CANNONS:
-			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
-			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
-			// without this fix) 
-			iValue = 0;
-			break;
-		default:
-			FAssert(false);
 	}
 
 	return iValue;

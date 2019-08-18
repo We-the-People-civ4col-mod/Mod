@@ -2616,7 +2616,9 @@ public:
 	bool AI_isFinalProductIfNotNeeded   () const { return m_bAI_FinalProductIfNotNeeded  ; }
 
 	bool AI_isBuyFromEurope             () const { return m_bAI_BuyFromEurope            ; }
-	bool bAI_isUseBuyValue              () const { return m_bAI_UseBuyValue              ; }
+	bool AI_isUseBuyValue               () const { return m_bAI_UseBuyValue              ; }
+	bool AI_isCantUse                   () const { return m_bAI_CantUse                  ; }
+	bool AI_isPreciousMetal             () const { return m_bAI_PreciousMetal            ; }
 
 	bool isDomesticConsumed             () const { return m_bAI_UseBuyValue              ; }
 	bool isMilitary                     () const { return m_bMilitary                    ; }
@@ -2645,6 +2647,8 @@ protected:
 	bool m_bAI_FinalProductIfNotNeeded : 1;
 	bool m_bAI_BuyFromEurope : 1;
 	bool m_bAI_UseBuyValue : 1;
+	bool m_bAI_CantUse : 1;
+	bool m_bAI_PreciousMetal : 1;
 	bool m_bDomesticConsumed : 1;
 	bool m_bMilitary : 1;
 	bool m_bEquipment : 1;

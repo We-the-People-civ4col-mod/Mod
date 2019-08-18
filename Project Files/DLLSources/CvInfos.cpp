@@ -9262,6 +9262,9 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 		m_bAI_BuyFromEurope = pXML->readShort(m_bAI_BuyFromEurope, "bAI_BuyFromEurope", false);
 		m_bAI_UseBuyValue = pXML->readShort(m_bAI_UseBuyValue, "bAI_UseBuyValue", false);
 
+		m_bAI_CantUse = pXML->readShort(m_bAI_CantUse, "bAI_CantUse", false);
+		m_bAI_PreciousMetal = pXML->readShort(m_bAI_PreciousMetal, "bAI_PreciousMetal", false);
+
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
@@ -9344,7 +9347,7 @@ void CvYieldInfo::postReadSetup()
 	FAssertMsg(isCargo() || !AI_isFinalProduct(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
 	FAssertMsg(isCargo() || !AI_isFinalProductIfNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
 	FAssertMsg(isCargo() || !AI_isBuyFromEurope(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
-	FAssertMsg(isCargo() || !bAI_isUseBuyValue(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+	FAssertMsg(isCargo() || !AI_isUseBuyValue(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
 }
 
 
