@@ -327,6 +327,7 @@
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
                 <bLivestock>1</bLivestock>
+                <bNativeEquip>0</bNativeEquip>
                 <bAI_SellNotNeeded>1</bAI_SellNotNeeded>
             </YieldBoolSetup>
             <iBuyPriceLow>5</iBuyPriceLow>
@@ -1333,6 +1334,7 @@
             <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bWeapon>1</bWeapon>
             </YieldBoolSetup>
             <iBuyPriceLow>6</iBuyPriceLow>
             <iBuyPriceHigh>7</iBuyPriceHigh>
@@ -1377,6 +1379,8 @@
             <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bNativeEquip>1</bNativeEquip>
+                <bWeapon>1</bWeapon>
             </YieldBoolSetup>
             <iBuyPriceLow>10</iBuyPriceLow>
             <iBuyPriceHigh>12</iBuyPriceHigh>
@@ -1421,6 +1425,7 @@
             <eYieldCategory>YIELD_CATEGORY_MILITARY</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bWeapon>1</bWeapon>
                 <bAI_CantUse>1</bAI_CantUse>
             </YieldBoolSetup>
             <iBuyPriceLow>14</iBuyPriceLow>

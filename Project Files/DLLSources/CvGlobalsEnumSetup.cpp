@@ -175,6 +175,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		BoolArray baRaw(JIT_ARRAY_YIELD);
 		BoolArray baProduced(JIT_ARRAY_YIELD);
 		BoolArray baStrategic(JIT_ARRAY_YIELD);
+		BoolArray baWeapon(JIT_ARRAY_YIELD);
 
 		BoolArray baProductionProfessions(JIT_ARRAY_PROFESSION);
 
@@ -266,6 +267,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 
 			YieldCategoryTypes eYieldCategory = kInfo.getCategory();
 
+			baWeapon.set(kInfo.isWeapon(), eYield);
 
 			switch (eYieldCategory)
 			{
@@ -298,6 +300,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		m_acYieldRaw.assign(baRaw);
 		m_acYieldProduced.assign(baProduced);
 		m_acYieldStrategic.assign(baStrategic);
+		m_acYieldWeapon.assign(baWeapon);
 
 		// update cached settings in CvYieldInfo
 		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)

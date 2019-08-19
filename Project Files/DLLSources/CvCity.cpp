@@ -154,14 +154,13 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	// R&R, Androrc, Domestic Market
 	if(!isNative())
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 			FAssert(kYield.getBuyPriceHigh() >= kYield.getBuyPriceLow());
 
 			// Luxury Goods should also give a little profit
-			if (eYield == YIELD_LUXURY_GOODS)
+			if (kYield.isSellToNatives())
 			{
 				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
 				setYieldBuyPrice(eYield, iBuyPrice);
@@ -179,43 +178,45 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	// initializing default data
 	if(!isNative())
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 			int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100; // R&R, ray adjusting defaults of Custom House Screen to Gamespeed
 			if (kYield.isCargo())
 			{
-				// strategic raw
-				if (eYield == YIELD_ORE || eYield == YIELD_HEMP)
+				if (kYield.isStrategic())
 				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					// strategic raw
+					if (kYield.isRaw())
+					{
+						ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					}
+					// strategic produced
+					else 
+					{
+						ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					}
 				}
-				// strategic produced
-				else if ( eYield == YIELD_TOOLS || eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_SHEEP || eYield == YIELD_CATTLE || eYield == YIELD_HORSES || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_LUXURY_GOODS)
-				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
-				}
-
-				// raw
-				else if ( eYield == YIELD_HIDES || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_GRAPES || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_WOOL || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_TOBACCO || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
-				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
-				}
-
 				// produced
-				else if (eYield == YIELD_COCA_LEAVES || eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_SALT ||  eYield == YIELD_SPICES || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_WINE || eYield == YIELD_CIGARS || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE)
+				else if (kYield.isProduced() || kYield.AI_isPreciousMetal())
 				{
 					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
 				}
 
+				// raw
+				else if (kYield.isRaw())
+				{
+					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+				}
+
+				
 				// default for safety
 				else
 				{
 					ma_aiCustomHouseSellThreshold.set(getYieldStored(eYield) * iGameSpeedModifier / 2, eYield);
 				}
 
-				if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+				if (kYield.isStoredInWarehouse())
 				{
 					ba_aiCustomHouseNeverSell.set(true, eYield);
 				}
@@ -4516,14 +4517,15 @@ int CvCity::getPotentialProductionOutput(ProfessionTypes eProfession) const
 					YieldTypes eBestYield = NO_YIELD;
 					int iBestOutput = 0;
 					
-					for (int iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
+					for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 					{
-						if ((iJ != YIELD_FOOD) && (iJ != YIELD_LUMBER))
+						const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+						if (kYield.getCategory() != YIELD_CATEGORY_CONSTRUCTION)
 						{
-							int iYield = pLoopPlot->calculateBestNatureYield((YieldTypes) iJ, getTeam());
+							int iYield = pLoopPlot->calculateBestNatureYield(eYield, getTeam());
 							if (iYield > iBestOutput)
 							{
-								eBestYield = (YieldTypes) iJ;
+								eBestYield = eYield;
 								iBestOutput = iYield;
 							}
 						}
@@ -4784,11 +4786,13 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
 	FAssert(iValue >= 0 || eYield == YIELD_FOOD);
 
+	const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+
 	int iChange = iValue - getYieldStored(eYield);
 	if (iChange != 0)
 	{
 //VET NewCapacity - begin 3/9
-		if ((eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE) && GC.getYieldInfo(eYield).isCargo())
+		if (kYield.isStoredInWarehouse())
 			{changeTotalYieldStored(iChange);}
 //VET NewCapacity - end 3/9
 		m_aiYieldStored[eYield] = iValue;
@@ -4815,7 +4819,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 		}
 		// R&R, Androrc, Livestock Breeding
 		//if (GC.getYieldInfo(eYield).isLivestock())
-		if (GC.getYieldInfo(eYield).isLivestock() && (isHuman() || isNative())) // R&R, ray, Livestock Breeding, for AI
+		if (kYield.isLivestock() && (isHuman() || isNative())) // R&R, ray, Livestock Breeding, for AI
 		{
 			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 			{
@@ -7114,7 +7118,7 @@ void CvCity::doYields()
 			bool bHasUnlockedTradeSettings = getHasUnlockedStorageLossTradeSettings();
 
 			// TODO xml setup of yields, which won't overflow or be sold in custom house
-			if (kYield.isCargo() && eYield != YIELD_LUMBER && eYield != YIELD_STONE) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
+			if (kYield.isStoredInWarehouse()) // we do not sell YIELD_LUMBER and Stone to Overflow or Custom House
 			{
 				//VET NewCapacity - begin 6/9 -- ray fix
 				int iExcess = 0;
@@ -11593,15 +11597,15 @@ int CvCity::getYieldDemand(YieldTypes eYield) const
 // needs to be checked for Special Cases like Luxury Goods
 void CvCity::doPrices()
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 
-		if (kYield.isCargo())
+		FAssert(kYield.isCargo());
+		//if (kYield.isCargo())
 		{
 			// Luxury Goods should always give a little profit
-			if (eYield == YIELD_LUXURY_GOODS)
+			if (kYield.isSellToNatives())
 			{
 				int iBuyPrice = GET_PLAYER(getOwnerINLINE()).getYieldSellPrice(eYield) + GC.getPRICE_DIFF_EUROPE_DOMESTIC_LUXURY_GOODS();
 				setYieldBuyPrice(eYield, iBuyPrice);

@@ -114,11 +114,15 @@
 	<ElementType name="bAI_UseBuyValue" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAI_CantUse" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bAI_PreciousMetal" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bNativeEquip" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bWeapon" content="textOnly" dt:type="boolean"/>
 	
 	<ElementType name="YieldBoolSetup" content="eltOnly">
 		<element type="bCargo" minOccurs="0"/>
 		<element type="bIsExportYield" minOccurs="0"/>
 		<element type="bLivestock" minOccurs="0"/>
+		<element type="bNativeEquip" minOccurs="0"/>
+		<element type="bWeapon" minOccurs="0"/>
 		<element type="bAI_AlwaysSell" minOccurs="0"/>
 		<element type="bAI_SellNotNeeded" minOccurs="0"/>
 		<element type="bAI_FinalProduct" minOccurs="0"/>

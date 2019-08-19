@@ -145,6 +145,12 @@
     <bIsExportYield>
         <Help>Import/Export All will apply to yields with this bool applied</Help>
     </bIsExportYield>
+    <bNativeEquip>
+        <Help>Natives can use this yield to equip soldier professions[NEWLINE]TODO: figure out a way to autogenerate this based on profession xml</Help>
+    </bNativeEquip>
+    <bWeapon>
+        <Help>Stored yields of this type counts towards military value</Help>
+    </bWeapon>
     <eYieldCategory>
         <Type>YieldCategoryInfo</Type>
         <Class>Type</Class>

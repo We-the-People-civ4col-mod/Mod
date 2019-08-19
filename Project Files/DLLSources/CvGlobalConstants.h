@@ -27,4 +27,26 @@ enum
 
 #endif
 
+// enum xml types, which can be switched to ints, hence allowing dll files with less xml hardcoding
+// if hardcoding is being used, then the values will be set in AutoXmlEnum.h
+// As a result only the runtime version should be present here
+
+#ifndef HARDCODE_XML_VALUES
+extern YieldTypes YIELD_FOOD;
+extern YieldTypes YIELD_LUMBER;
+extern YieldTypes YIELD_HORSES;
+extern YieldTypes YIELD_MUSKETS;
+extern YieldTypes YIELD_TOOLS;
+extern YieldTypes YIELD_FUR;
+
+extern YieldTypes YIELD_HAMMERS;
+extern YieldTypes YIELD_BELLS;
+extern YieldTypes YIELD_CROSSES;
+extern YieldTypes YIELD_CULTURE;
+extern YieldTypes YIELD_HEALTH;
+extern YieldTypes YIELD_EDUCATION;
+
+extern YieldTypes NUM_CARGO_YIELD_TYPES;
+#endif
+
 #endif

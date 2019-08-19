@@ -1179,18 +1179,16 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		else
 		{
 //VET NewCapacity - end 1/7
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eLoopYield = (YieldTypes)i;
-
-				if ((eLoopYield != YIELD_FOOD) && (eLoopYield != YIELD_LUMBER) && (eLoopYield != YIELD_STONE) && GC.getYieldInfo(eLoopYield).isCargo())
+				if (GC.getYieldInfo(eYield).isStoredInWarehouse())
 				{
-					int iExcess = getYieldStored(eLoopYield) - iCityCapacity;
+					int iExcess = getYieldStored(eYield) - iCityCapacity;
 					if (iExcess > 0)
 					{
 						iTotalExcess += iExcess;
 					}
-					iHighestPercentFull = std::max(iHighestPercentFull, 100 * getYieldStored(eLoopYield) / iCityCapacity);
+					iHighestPercentFull = std::max(iHighestPercentFull, 100 * getYieldStored(eYield) / iCityCapacity);
 				}
 			}
 //VET NewCapacity - begin 2/7
@@ -1353,15 +1351,24 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 										iTempValue /= 100;
 									}
 								}
-								if ((eYieldProduced == YIELD_HORSES))
+
+								if (eYieldProduced != NO_YIELD)
 								{
-									if (kOwner.isNative())
+									const CvYieldInfo& kYieldProduced = GC.getYieldInfo(eYieldProduced);
+
+									bIsMilitary |= kYieldProduced.isMilitary();
+
+									// natives likes to produce livestock for military use (YIELD_HORSES)
+									if (kYieldProduced.isLivestock() && kYieldProduced.isMilitary())
 									{
-										iTempValue *= 10;
-									}
-									else
-									{
-										iTempValue /= 10;
+										if (kOwner.isNative())
+										{
+											iTempValue *= 10;
+										}
+										else
+										{
+											iTempValue /= 10;
+										}
 									}
 								}
 								
@@ -1379,11 +1386,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 									iTempValue *= iMultiplier;
 									iTempValue /= 100;
 								}
-								
-								if (eYieldProduced == YIELD_HORSES || eYieldProduced == YIELD_BLADES || eYieldProduced == YIELD_MUSKETS || eYieldProduced == YIELD_CANNONS || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD)
-								{
-									bIsMilitary = true;
-								}
+
 								iValue += iTempValue;
 								bIsGoodProfession = true;
 							}
@@ -1413,9 +1416,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	// TAC - AI Buildings - koma13 - END
 	{
 		//XXX - underlying gameplay may be changed...
-		for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+		for (YieldTypes eLoopYield = FIRST_YIELD; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)
 		{
-			YieldTypes eLoopYield = (YieldTypes)i;
+			const CvYieldInfo& kYield = GC.getYieldInfo(eLoopYield);
 			
 			int iAdded = 0;
 			
@@ -1424,7 +1427,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			//iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
 			//iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
 				
-			if (!GC.getYieldInfo(eLoopYield).isCargo())
+			if (!kYield.isCargo())
 			{
 				iAdded += kBuildingInfo.getYieldChange(eLoopYield);
 				iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
@@ -1444,16 +1447,16 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			
 			if (iAdded != 0)
 			{
-				if (eLoopYield == YIELD_HORSES || eLoopYield == YIELD_BLADES || eLoopYield == YIELD_MUSKETS || eLoopYield == YIELD_CANNONS || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD)
+				if (kYield.isMilitary())
 				{
 					bIsMilitary = true;
 				}
 				iValue += AI_estimateYieldValue(eLoopYield, iAdded);
 			}
 			
-			if (kBuildingInfo.getSeaPlotYieldChange(i) != 0)
+			if (kBuildingInfo.getSeaPlotYieldChange(eLoopYield) != 0)
 			{
-				int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i);
+				int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(eLoopYield);
 				int iTempValue = 0;
 				
 				int iFood = 0;
@@ -1500,9 +1503,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 
 			// R&R, ray, Landplot Yields - START
-			if (kBuildingInfo.getLandPlotYieldChange(i) != 0)
+			if (kBuildingInfo.getLandPlotYieldChange(eLoopYield) != 0)
 			{
-				int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i);
+				int iYieldChange = kBuildingInfo.getLandPlotYieldChange(eLoopYield);
 				int iTempValue = 0;
 				
 				int iFood = 0;
@@ -2350,13 +2353,13 @@ void CvCityAI::AI_doNativeTrade()
 	YieldTypes eBestYield = NO_YIELD;
 
 	
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes)iI;
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 		
 		// TAC - AI Native Hammer Bugfix - START
-		//if (GC.getYieldInfo(eYield).getNativeSellPrice() == -1)
-		if ((GC.getYieldInfo(eYield).getNativeSellPrice() == -1) && (eYield != YIELD_HAMMERS))
+		if (kYield.getNativeSellPrice() == -1)
+		//if ((C.getYieldInfo(eYield).getNativeSellPrice() == -1) && (eYield != YIELD_HAMMERS))
 		// TAC - AI Native Hammer Bugfix - END
 		{
 			int iValue = getYieldStored(eYield);
@@ -2369,7 +2372,7 @@ void CvCityAI::AI_doNativeTrade()
 					{
 						iValue /= 5;
 					}
-					else if ((eYield == YIELD_HORSES) || (eYield == YIELD_MUSKETS))
+					else if (kYield.isNativeEquip())
 					{
 						iValue *= 2;
 					}
@@ -2475,14 +2478,14 @@ void CvCityAI::AI_doNative()
 	
 	FAssert(isNative());
 	CvPlayer& kPlayer = GET_PLAYER(getOwner());
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes)iI;
-		if ((eYield != YIELD_FOOD) && (eYield != YIELD_HORSES) && (eYield != YIELD_MUSKETS))
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		if ((eYield != YIELD_FOOD) && !kYield.isNativeEquip())
 		{
 			int iTotalStored = kPlayer.countTotalYieldStored(eYield);
 			int iMaxStored = kPlayer.getNumCities() * GC.getGameINLINE().getCargoYieldCapacity();
-			iMaxStored *= GC.getYieldInfo(eYield).getNativeConsumptionPercent();
+			iMaxStored *= kYield.getNativeConsumptionPercent();
 			
 			int iDestructionModifier = 50 + ((50 * iTotalStored) / iMaxStored);
 
@@ -2503,7 +2506,7 @@ void CvCityAI::AI_doNative()
 			if (iAmountLost > 0)
 			{
 				changeYieldStored(eYield, -iAmountLost);
-				int iSellPrice = GC.getYieldInfo(eYield).getNativeSellPrice();
+				int iSellPrice = kYield.getNativeSellPrice();
 				if (iSellPrice > 0)
 				{
 					kPlayer.changeGold(((iAmountLost * iSellPrice) * 4) / 100);
@@ -5400,6 +5403,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 			// R&R, ray, AI builds Improvements wiser - START
 			//else if (eYield != YIELD_FOOD)
+			// TODO figure out why the AI is hardcoded to not produce lumber or fur
 			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR)
 			// R&R, ray, AI builds Improvements wiser - END
 			{

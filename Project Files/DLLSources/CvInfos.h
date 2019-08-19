@@ -2609,6 +2609,8 @@ public:
 	bool isLivestock() const;
 	// R&R, Androrc, Livestock Breeding, END
 
+	bool isSellToNatives                () const { return m_bSellToNatives               ; }
+
 	bool AI_isAlwaysSell                () const { return m_bAI_AlwaysSell               ; }
 	bool AI_isSellNotNeeded             () const { return m_bAI_SellNotNeeded            ; }
 
@@ -2626,6 +2628,10 @@ public:
 	bool isRaw                          () const { return m_bRaw                         ; }
 	bool isProduced                     () const { return m_bProduced                    ; }
 	bool isStrategic                    () const { return m_bStrategic                   ; }
+	bool isStoredInWarehouse            () const { return m_bStoredInWarehouse           ; }
+	bool isNativeEquip                  () const { return m_bNativeEquip                 ; }
+	bool isWeapon                       () const { return m_bWeapon                      ; }
+
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
 
@@ -2641,6 +2647,7 @@ protected:
 	bool m_bCargo : 1;
 	bool m_bIsExportYield : 1; // auto traderoute - Nightinggale
 	bool m_bLivestock : 1;
+	bool m_bSellToNatives : 1;
 	bool m_bAI_AlwaysSell : 1;
 	bool m_bAI_SellNotNeeded : 1;
 	bool m_bAI_FinalProduct : 1;
@@ -2655,6 +2662,9 @@ protected:
 	bool m_bRaw : 1;
 	bool m_bProduced : 1;
 	bool m_bStrategic : 1;
+	bool m_bStoredInWarehouse : 1;
+	bool m_bNativeEquip : 1;
+	bool m_bWeapon : 1;
 
 	CvString m_szIcon;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START

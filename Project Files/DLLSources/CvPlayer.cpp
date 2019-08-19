@@ -10501,10 +10501,10 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 	// Die Einheitenstärke: Soldaten/Kanonen/Dragoner
 	for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
-        if (GC.getNBMOD_REF_REAL_WEAPONS() == 1)
+        if (GC.getNBMOD_REF_REAL_WEAPONS() == 1 && pLoopUnit->getYield() != NO_YIELD)
         {
             // Falls die Einheit Waffen/Pferde transportiert
-            if (pLoopUnit->getYield() == YIELD_BLADES || pLoopUnit->getYield() == YIELD_MUSKETS || pLoopUnit->getYield() == YIELD_CANNONS)
+            if (GC.getYieldInfo(pLoopUnit->getYield()).isWeapon())
             {
                 iStoredWeapons += pLoopUnit->getYieldStored();
             }
@@ -10530,13 +10530,16 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
       // Das Rundengewicht beachten (jede Runde wiegt X Punkte)
     fKMW += fStrength * GC.getNBMOD_REF_TURN_WEIGHT();
 
+	const YieldTypeArray& weaponArray = GC.getWeaponYieldTypes();
+
     // Die Anzahl der gelagerten Waffen
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 	    iCities++;
-		iStoredWeapons += pLoopCity->getYieldStored(YIELD_BLADES);
-		iStoredWeapons += pLoopCity->getYieldStored(YIELD_MUSKETS);
-		iStoredWeapons += pLoopCity->getYieldStored(YIELD_CANNONS);
+		for (int i = 0; i < weaponArray.getLength(); ++i)
+		{
+			iStoredWeapons += pLoopCity->getYieldStored(weaponArray.get(i));
+		}
 		iStoredHorses += pLoopCity->getYieldStored(YIELD_HORSES);
 	}
 

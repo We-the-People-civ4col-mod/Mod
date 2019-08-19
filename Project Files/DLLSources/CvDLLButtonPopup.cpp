@@ -933,17 +933,17 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			CvCity* pCity = kPlayer.getCity(info.getData1());
 			if (pCity != NULL)
 			{
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
-					if (GC.getYieldInfo((YieldTypes) iYield).isCargo() && (eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE))
+					const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+					if (kYield.isStoredInWarehouse())
 					{
-						bool bNeverSell = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						int iLevel = pPopupReturn->getSpinnerWidgetValue(iYield);
+						bool bNeverSell = (pPopupReturn->getCheckboxBitfield(eYield) & 0x01);
+						int iLevel = pPopupReturn->getSpinnerWidgetValue(eYield);
 						
 						if (bNeverSell != pCity->isCustomHouseNeverSell(eYield) || iLevel != pCity->getCustomHouseSellThreshold(eYield))
 						{
-							gDLL->sendDoTask(info.getData1(), TASK_CHANGE_CUSTOM_HOUSE_SETTINGS, iYield, iLevel, bNeverSell, false, false, false);
+							gDLL->sendDoTask(info.getData1(), TASK_CHANGE_CUSTOM_HOUSE_SETTINGS, eYield, iLevel, bNeverSell, false, false, false);
 						}
 					}
 				}
@@ -3192,7 +3192,8 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		// R&R, ray, finishing Custom House Screen
 		if (kYield.isCargo())
 		{
-			if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+			// TODO figure out if none-stored yields can be skipped entirely
+			if (!kYield.isStoredInWarehouse())
 			{
 				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);

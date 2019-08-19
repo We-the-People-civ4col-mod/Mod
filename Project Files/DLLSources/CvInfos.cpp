@@ -9253,6 +9253,9 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 		m_bLivestock = pXML->readShort(m_bLivestock, "bLivestock", false);
 		// R&R, Androrc, Livestock Breeding, END
 
+		m_bNativeEquip = pXML->readShort(m_bNativeEquip, "bNativeEquip", false);
+		m_bWeapon = pXML->readShort(m_bWeapon, "bWeapon", false);
+
 		m_bAI_AlwaysSell = pXML->readShort(m_bAI_AlwaysSell, "bAI_AlwaysSell", false);
 		m_bAI_SellNotNeeded = pXML->readShort(m_bAI_SellNotNeeded, "bAI_SellNotNeeded", false);
 
@@ -9330,8 +9333,10 @@ void CvYieldInfo::postReadSetup()
 	case YIELD_CATEGORY_HEALTH:
 	case YIELD_CATEGORY_EDUCATION:
 		m_bCargo = false;
+		break;
 	default:
 		m_bCargo = true;
+		break;
 	}
 
 	m_bDomesticConsumed = GC.getUnitYieldDemandTypes().contains(m_eIndex);
@@ -9340,6 +9345,8 @@ void CvYieldInfo::postReadSetup()
 	m_bRaw = GC.getRawYieldTypes().contains(m_eIndex);
 	m_bProduced = GC.getProducedYieldTypes().contains(m_eIndex);
 	m_bStrategic = GC.getStrategicYieldTypes().contains(m_eIndex);
+
+	m_bStoredInWarehouse = m_bCargo && m_eCategory != YIELD_CATEGORY_FOOD && m_eCategory != YIELD_CATEGORY_CONSTRUCTION;
 			 
 
 	FAssertMsg(isCargo() || !AI_isAlwaysSell(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
