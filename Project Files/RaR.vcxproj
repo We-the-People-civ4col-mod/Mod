@@ -51,6 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvUnitSavegame.cpp" />
     <ClCompile Include="DLLSources\CvGlobalConstants.cpp" />
     <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
     <ClCompile Include="DLLSources\InfoCacheArray.cpp" />

@@ -112,6 +112,34 @@ public:
 
 	// non vanilla below this
 
+	// read the enum value to tell which variable is saved next
+	unsigned short ReadSwitch()
+	{
+		unsigned short iTemp;
+		Read(&iTemp);
+		return iTemp;
+	}
+
+	// Write a variable to the file
+	// This includes the enum prefix to tell what is saved.
+	// If the variable and the default are the same, nothing happens and nothing is saved.
+	template<class T>
+	void WriteSwitch(unsigned short iEnum, T eValue, T eDefault)
+	{
+		if (eValue != eDefault)
+		{
+			Write(iEnum);
+			Write(eValue);
+		}
+	}
+
+	// Write end of class marker
+	void WriteSwitchEnd(unsigned short iEnum)
+	{
+		Write(iEnum);
+	}
+
+
 	// Allow enum types to be read without typecasting in the class read functions.
 	// Typecasting in the class read functions is a hassle, results in less readable code and is prone to bugs
 	

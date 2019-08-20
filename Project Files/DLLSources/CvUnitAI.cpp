@@ -18769,6 +18769,7 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 
 void CvUnitAI::read(FDataStreamBase* pStream)
 {
+	CvUnit::readNew(pStream);
 	CvUnit::read(pStream);
 
 	uint uiFlag=0;
@@ -18790,6 +18791,7 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
+	CvUnit::writeNew(pStream);
 	CvUnit::write(pStream);
 
 	uint uiFlag=1;

@@ -376,6 +376,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	// Uninit class
 	uninit();
 
+	resetNew();
+
 	m_iID = iID;
 	// TAC - LbD - Ray - START
 	m_LbDrounds = 0 ;
@@ -433,7 +435,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_iPillageChange = 0;
 	m_iUpgradeDiscount = 0;
 	m_iExperiencePercent = 0;
-	m_eFacingDirection = DIRECTION_SOUTH;
+	//m_eFacingDirection = DIRECTION_SOUTH;
 	m_iImmobileTimer = 0;
 	m_iYieldStored = 0;
 	m_iExtraWorkRate = 0;
@@ -12317,8 +12319,7 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 
 void CvUnit::read(FDataStreamBase* pStream)
 {
-	// Init data before load
-	reset();
+	
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
@@ -12367,7 +12368,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iUpgradeDiscount);
 	pStream->Read(&m_iExperiencePercent);
 	pStream->Read(&m_iBaseCombat);
-	pStream->Read((int*)&m_eFacingDirection);
+	//pStream->Read((int*)&m_eFacingDirection);
 	pStream->Read(&m_iImmobileTimer);
 	pStream->Read(&m_iYieldStored);
 	pStream->Read(&m_iExtraWorkRate);
@@ -12408,9 +12409,9 @@ void CvUnit::read(FDataStreamBase* pStream)
 	// < JAnimals Mod End >
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_eCapturingPlayer);
-	pStream->Read((int*)&m_eUnitType);
-	FAssert(NO_UNIT != m_eUnitType);
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
+	//pStream->Read((int*)&m_eUnitType);
+	//FAssert(NO_UNIT != m_eUnitType);
+	//m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	pStream->Read((int*)&m_eLeaderUnitType);
 
 	m_combatUnit.read(pStream);
@@ -12496,7 +12497,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_iUpgradeDiscount);
 	pStream->Write(m_iExperiencePercent);
 	pStream->Write(m_iBaseCombat);
-	pStream->Write(m_eFacingDirection);
+	//pStream->Write(m_eFacingDirection);
 	pStream->Write(m_iImmobileTimer);
 	pStream->Write(m_iYieldStored);
 	pStream->Write(m_iExtraWorkRate);
@@ -12537,7 +12538,7 @@ void CvUnit::write(FDataStreamBase* pStream)
 	// < JAnimals Mod End >
 	pStream->Write(m_eOwner);
 	pStream->Write(m_eCapturingPlayer);
-	pStream->Write(m_eUnitType);
+	//pStream->Write(m_eUnitType);
 	pStream->Write(m_eLeaderUnitType);
 
 	m_combatUnit.write(pStream);

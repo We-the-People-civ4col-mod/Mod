@@ -701,6 +701,10 @@ public:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 
+	void resetNew();
+	void readNew(FDataStreamBase* pStream);
+	void writeNew(FDataStreamBase* pStream);
+
 	virtual void AI_init() = 0;
 	virtual void AI_uninit() = 0;
 	virtual void AI_reset() = 0;
