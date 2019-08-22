@@ -18,6 +18,9 @@ class CvSelectionGroup;
 class FAStarNode;
 class CvArtInfoUnit;
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 struct CombatDetails
 {
 	int iExtraCombatPercent;
@@ -702,8 +705,8 @@ public:
 	virtual void write(FDataStreamBase* pStream);
 
 	void resetNew();
-	void readNew(FDataStreamBase* pStream);
-	void writeNew(FDataStreamBase* pStream);
+	void read(CvSavegameReader* pStream);
+	void write(CvSavegameWriter* pStream);
 
 	virtual void AI_init() = 0;
 	virtual void AI_uninit() = 0;

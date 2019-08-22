@@ -22,6 +22,8 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
 
+#include "CvSavegame.h"
+
 #define FOUND_RANGE				(7)
 
 #define MOVE_PRIORITY_MAX 			2000
@@ -18769,7 +18771,9 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 
 void CvUnitAI::read(FDataStreamBase* pStream)
 {
-	CvUnit::readNew(pStream);
+	CvSavegameReader reader(pStream);
+
+	CvUnit::read(&reader);
 	CvUnit::read(pStream);
 
 	uint uiFlag=0;
@@ -18791,7 +18795,10 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
-	CvUnit::writeNew(pStream);
+	CvSavegameWriter writer(pStream);
+	CvUnit::write(&writer);
+	writer.WriteFile();
+
 	CvUnit::write(pStream);
 
 	uint uiFlag=1;

@@ -112,6 +112,7 @@ public:
 
 	// non vanilla below this
 
+	/*
 	// read the enum value to tell which variable is saved next
 	unsigned short ReadSwitch()
 	{
@@ -138,6 +139,7 @@ public:
 	{
 		Write(iEnum);
 	}
+	*/
 
 
 	// Allow enum types to be read without typecasting in the class read functions.
