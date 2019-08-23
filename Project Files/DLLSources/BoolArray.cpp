@@ -8,6 +8,7 @@
 #include "CvDLLXMLIFaceBase.h"
 #include "CvGameAI.h"
 #include "CvInitCore.h"
+#include "CvSavegame.h"
 
 #define BOOL_BLOCK ( iIndex >> 5 )
 #define BOOL_INDEX ( iIndex & 0x1F )
@@ -228,6 +229,46 @@ void BoolArray::Write(FDataStreamBase* pStream)
 	{
 		int iNumBlocks = (iNumElements + 0x1F) >> 5;
 		pStream->Write(iNumBlocks, m_iArray);
+	}
+}
+
+void BoolArray::Read(CvSavegameReader* reader)
+{
+	reset();
+
+	unsigned short iNumElements = 0;
+	reader->Read(iNumElements);
+
+	if (iNumElements > 0)
+	{
+		// first write a non-default value to the first element in the array
+		// this will ensure the array is allocated
+		set(!m_bDefault, 0);
+
+		int iNumBlocks = (iNumElements + 0x1F) >> 5;
+		for (int i = 0; i < iNumBlocks; ++i)
+		{
+			reader->Read(m_iArray[i]);
+		}
+	}
+}
+void BoolArray::Write(CvSavegameWriter* writer)
+{
+	unsigned short iNumElements = getNumUsedElements();
+
+	writer->Write(iNumElements);
+
+	if (iNumElements == 0)
+	{
+		reset();
+	}
+	else
+	{
+		int iNumBlocks = (iNumElements + 0x1F) >> 5;
+		for (int i = 0; i < iNumBlocks; ++i)
+		{
+			writer->Write(m_iArray[i]);
+		}
 	}
 }
 

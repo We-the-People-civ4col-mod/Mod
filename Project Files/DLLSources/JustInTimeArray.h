@@ -24,6 +24,9 @@ class InfoArray;
 class CvPlayer;
 class CvCivilizationInfo;
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 #include "CvEnums.h"
 #include "JustInTimeArrayGetType.h"
 
@@ -36,6 +39,9 @@ private:
 	const T m_eDefault;
 
 public:
+	// used by getFirstNoneDefault when used on an empty array
+	static const int NO_NONEDEFAULT_ARRAY = 0xffff;
+
 	JustInTimeArray(JITarrayTypes eType, T eDefault = (T)0);
 
 	~JustInTimeArray();
@@ -106,6 +112,7 @@ public:
 	}
 
 	bool hasContent();
+	int getFirstNoneDefault();
 	inline bool isEmpty()
 	{
 		return !hasContent();
@@ -126,8 +133,11 @@ public:
 	// TODO remove this when cleaning up savegame code 
 	void read (FDataStreamBase* pStream, bool bEnable);
 	void write(FDataStreamBase* pStream, bool bEnable);
-	void Read (FDataStreamBase* pStream);
+	void Read(FDataStreamBase* pStream);
 	void Write(FDataStreamBase* pStream);
+
+	void Read(CvSavegameReader* reader);
+	void Write(CvSavegameWriter* writer);
 
 	void ReadWrite(bool bRead, FDataStreamBase* pStream);
 

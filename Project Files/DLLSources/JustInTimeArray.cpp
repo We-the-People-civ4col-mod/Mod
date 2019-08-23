@@ -9,6 +9,8 @@
 
 #include "InfoArray.h"
 
+#include "CvSavegame.h"
+
 template<class T>
 JustInTimeArray<T>::JustInTimeArray(JITarrayTypes eType, T eDefault)
 : m_tArray(NULL)
@@ -330,6 +332,25 @@ bool JustInTimeArray<T>::hasContent()
 }
 
 template<class T>
+int JustInTimeArray<T>::getFirstNoneDefault()
+{
+	if (m_tArray == NULL)
+	{
+		return NO_NONEDEFAULT_ARRAY;
+	}
+	for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
+	{
+		if (m_tArray[iIterator] != m_eDefault)
+		{
+			return iIterator;
+		}
+	}
+
+	reset();
+	return NO_NONEDEFAULT_ARRAY;
+}
+
+template<class T>
 unsigned int JustInTimeArray<T>::getNumUsedElements(T* pNormalArray) const
 {
 	T* pPointer = pNormalArray != NULL ? pNormalArray : m_tArray;
@@ -444,6 +465,52 @@ void JustInTimeArray<T>::Write(FDataStreamBase* pStream)
 		pStream->Write(iLength, m_tArray);
 	}
 }
+
+template<class T>
+void JustInTimeArray<T>::Read(CvSavegameReader* reader)
+{
+	reset();
+
+	unsigned short iStart = NO_NONEDEFAULT_ARRAY;
+	reader->Read(iStart);
+
+	if (iStart == NO_NONEDEFAULT_ARRAY)
+	{
+		return;
+	}
+
+	unsigned short iLength = 0;
+	reader->Read(iLength);
+
+	for (int i = iStart; i < iLength; ++i)
+	{
+		T eBuffer;
+		reader->Read(eBuffer);
+		set(eBuffer, i);
+	}
+}
+
+
+template<class T>
+void JustInTimeArray<T>::Write(CvSavegameWriter* writer)
+{
+	unsigned short iStart = this->getFirstNoneDefault();
+	unsigned short iLength = this->getNumUsedElements();
+
+	writer->Write(iStart);
+
+	if (iStart == NO_NONEDEFAULT_ARRAY)
+	{
+		return;
+	}
+
+	writer->Write(iLength);
+	for (int i = iStart; i < iLength; ++i)
+	{
+		writer->Write(get(i));
+	}
+}
+
 
 template<class T>
 void JustInTimeArray<T>::allocate()
