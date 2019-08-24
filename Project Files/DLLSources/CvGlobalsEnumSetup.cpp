@@ -305,7 +305,11 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		// update cached settings in CvYieldInfo
 		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			this->getYieldInfo(eYield).postReadSetup();
+			this->getYieldInfo(eYield).postReadSetup(professionArray);
+		}
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+		{
+			this->getYieldInfo(eYield).postReadSetup2();
 		}
 
 		// Generate the default CivEffect.

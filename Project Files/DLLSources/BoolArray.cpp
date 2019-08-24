@@ -165,6 +165,14 @@ bool BoolArray::add(const InfoArray& kIarray)
 	return bChanged;
 }
 
+void BoolArray::assign(const InfoArray& kIarray)
+{
+	FAssert(m_bDefault == 0);
+	// reset and then add results in the same as assign. No need to write multiple functions to do the same
+	reset();
+	add(kIarray);
+}
+
 void BoolArray::read(FDataStreamBase* pStream, bool bEnable)
 {
 	// always reset the array even if load is disabled
@@ -231,19 +239,18 @@ void BoolArray::Write(FDataStreamBase* pStream)
 	}
 }
 
-void BoolArray::read(CvXMLLoadUtility* pXML, const char* sTag)
+void BoolArray::read(CvXMLLoadUtility* pXML, const char* sType, const char* sTag)
 {
-	// read the data into a temp int array and then set the permanent array with those values.
-	// this is a workaround for template issues
-	FAssert(this->m_iLength > 0);
-	int *iArray = new int[m_iLength];
-	pXML->SetVariableListTagPair(&iArray, sTag, this->m_iLength, 0);
-	for (int i = 0; i < this->m_iLength; i++)
-	{
-		this->set(static_cast<bool>(iArray[i]), i);
-	}
-	SAFE_DELETE_ARRAY(iArray);
-	this->hasContent(); // release array if possible
+	// BoolArray doesn't have any xml reading code
+	// Instead make a temp InfoArray and rely on the error checking code in that one
+
+	// first get the type, which the InfoArray is supposed to use
+	JITarrayTypes eType = (JITarrayTypes)m_iType;
+	InfoArrayMod array(eType);
+	array.read(pXML, sType, sTag);
+
+	// Transfer the InfoArray into the BoolArray
+	assign(array);
 }
 
 BoolArray& BoolArray::operator=(const BoolArray &rhs)

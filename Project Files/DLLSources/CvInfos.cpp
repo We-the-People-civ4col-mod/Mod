@@ -9000,6 +9000,8 @@ bool CvFeatureInfo::read(CvXMLLoadUtility* pXML)
 CvYieldInfo::CvYieldInfo() :
 m_eIndex(NO_YIELD),
 m_eCategory(NO_YIELD_CATEGORY),
+m_info_YieldsLowerPrice(JIT_ARRAY_YIELD),
+m_info_YieldsHigherPrice(JIT_ARRAY_YIELD),
 m_iChar(0),
 m_iBuyPriceLow(0),
 m_iBuyPriceHigh(0),
@@ -9271,6 +9273,12 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "Price"))
+	{
+		m_info_YieldsLowerPrice.read(pXML, getType(), "CheaperYields");
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
 
 	pXML->GetChildXmlValByName(&m_iBuyPriceLow, "iBuyPriceLow");
 	pXML->GetChildXmlValByName(&m_iBuyPriceHigh, "iBuyPriceHigh");
@@ -9322,7 +9330,7 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 	return true;
 }
 
-void CvYieldInfo::postReadSetup()
+void CvYieldInfo::postReadSetup(const ProfessionInfoArray& professionArray)
 {
 	switch (m_eCategory)
 	{
@@ -9347,6 +9355,40 @@ void CvYieldInfo::postReadSetup()
 	m_bStrategic = GC.getStrategicYieldTypes().contains(m_eIndex);
 
 	m_bStoredInWarehouse = m_bCargo && m_eCategory != YIELD_CATEGORY_FOOD && m_eCategory != YIELD_CATEGORY_CONSTRUCTION;
+
+	// set up which yields have to have a lower value than the current yield
+	if (isCargo())
+	{
+		BoolArray array(JIT_ARRAY_YIELD);
+
+		// First keep what was in xml
+		array.assign(m_info_YieldsLowerPrice);
+
+		// loop all professions. If a profession has this yield as output, assume all input yields to have lower value
+		for (int iProfession = 0; iProfession < professionArray.getLength(); ++iProfession)
+		{
+			const CvProfessionInfo* pProfession = professionArray.get(iProfession);
+			const InfoArray& produce = pProfession->getYieldsProducedArray();
+			if (produce.contains(m_eIndex))
+			{
+				const InfoArray& consumed = pProfession->getYieldsConsumedArray();
+				for (int iYield = 0; iYield < consumed.getLength(); ++iYield)
+				{
+					YieldTypes eLoopYield = consumed.getYield(iYield);
+					FAssert(m_eIndex != eLoopYield);
+					array.set(true, eLoopYield);
+				}
+			}
+		}
+
+		// be sure not to assign non-cargo yields
+		for (YieldTypes eYield = NUM_CARGO_YIELD_TYPES; eYield < NUM_YIELD_TYPES; ++eYield)
+		{
+			array.set(false, eYield);
+		}
+
+		m_info_YieldsLowerPrice.assign(array);
+	}
 			 
 
 	FAssertMsg(isCargo() || !AI_isAlwaysSell(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
@@ -9355,6 +9397,40 @@ void CvYieldInfo::postReadSetup()
 	FAssertMsg(isCargo() || !AI_isFinalProductIfNotNeeded(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
 	FAssertMsg(isCargo() || !AI_isBuyFromEurope(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
 	FAssertMsg(isCargo() || !AI_isUseBuyValue(), CvString::format("Error loading %s\nAI can't trade non-cargo yields", getType()));
+}
+
+void CvYieldInfo::postReadSetup2()
+{
+	if (isCargo())
+	{
+		// setup which yields have to have a higher price
+		// the idea here is that it's all the yields mentioning this one as a lower price
+		// effectively this becomes a cache because there is no way to set this directly
+
+		BoolArray array(JIT_ARRAY_YIELD);
+
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
+		{
+			if (eYield != m_eIndex)
+			{
+				const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+				const InfoArray& infoArray = kYield.getYieldsLowerPrice();
+				if (infoArray.contains(m_eIndex))
+				{
+					array.set(true, eYield);
+				}
+			}
+		}
+
+		// be sure not to assign non-cargo yields
+		for (YieldTypes eYield = NUM_CARGO_YIELD_TYPES; eYield < NUM_YIELD_TYPES; ++eYield)
+		{
+			FAssert(!array.get(eYield));
+			array.set(false, eYield);
+		}
+
+		m_info_YieldsHigherPrice.assign(array);
+	}
 }
 
 

@@ -15843,165 +15843,135 @@ int CvPlayer::getYieldBuyPrice(YieldTypes eYield) const
 	return m_aiYieldBuyPrice[eYield];
 }
 
-void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
+bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, int iAttempts)
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
+
+	if (iAttempts > 10)
+	{
+		// something went wrong. Seems like the yields calls each other in a circle
+		// do nothing rather than freezing
+		FAssertMsg(false, "CvPlayer::setYieldBuyPrice got stuck in a loop. Bailing out");
+		return true;
+	}
+
 
 	// TAC - Price Limits - Ray - START
 //	iPrice = std::max(iPrice, 1);
 
 	// NEW PRICING MECHANISM to keep difference between manufactured goods and raw goods
-	int price_diff = GC.getPRICE_DIFF_MAN_TO_RAW();
 	int iOldPrice = getYieldBuyPrice(eYield);
-	if (iPrice < iOldPrice)
+
+	if (iPrice == iOldPrice)
 	{
-		switch (eYield)
-							{
-							case YIELD_ROPE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_SAILCLOTH:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_GOLD:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_SILVER) <= price_diff)
-								{
-									eYield = YIELD_SILVER;
-									iPrice = getYieldBuyPrice(YIELD_SILVER) - 1;
-								}
-								break;
-							case YIELD_COCOA:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
-								{
-									eYield = YIELD_COCOA_FRUITS;
-									iPrice = getYieldBuyPrice(YIELD_COCOA_FRUITS) - 1;
-								}
-								break;
-							case YIELD_COFFEE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
-								{
-									eYield = YIELD_COFFEE_BERRIES;
-									iPrice = getYieldBuyPrice(YIELD_COFFEE_BERRIES) - 1;
-								}
-								break;
-							case YIELD_CIGARS:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_TOBACCO) <= price_diff)
-								{
-									eYield = YIELD_TOBACCO;
-									iPrice = getYieldBuyPrice(YIELD_TOBACCO) - 1;
-								}
-								break;
-							case YIELD_WOOL_CLOTH:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WOOL) <= price_diff)
-								{
-									eYield = YIELD_WOOL;
-									iPrice = getYieldBuyPrice(YIELD_WOOL) - 1;
-								}
-								break;
-							case YIELD_CLOTH:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_COTTON) <= price_diff)
-								{
-									eYield = YIELD_COTTON;
-									iPrice = getYieldBuyPrice(YIELD_COTTON) - 1;
-								}
-								break;
-							case YIELD_COLOURED_CLOTH:
-								if (getYieldBuyPrice(eYield) - (getYieldBuyPrice(YIELD_INDIGO) + getYieldBuyPrice(YIELD_CLOTH)) <= price_diff)
-								{
-									if (getYieldBuyPrice(YIELD_CLOTH) - getYieldBuyPrice(YIELD_INDIGO) <= price_diff)
-									{
-										eYield = YIELD_INDIGO;
-										iPrice = getYieldBuyPrice(YIELD_INDIGO) - 1;
-									}
-									else
-									{
-										eYield = YIELD_CLOTH;
-										iPrice = getYieldBuyPrice(YIELD_CLOTH) - 1;
-									}
-								}
-								break;
-							case YIELD_LEATHER:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_HIDES) <= price_diff)
-								{
-									eYield = YIELD_HIDES;
-									iPrice = getYieldBuyPrice(YIELD_HIDES) - 1;
-								}
-								break;
-							case YIELD_COATS:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_FUR) <= price_diff)
-								{
-									eYield = YIELD_FUR;
-									iPrice = getYieldBuyPrice(YIELD_FUR) - 1;
-								}
-								break;
-							case YIELD_PREMIUM_COATS:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
-								{
-									eYield = YIELD_PREMIUM_FUR;
-									iPrice = getYieldBuyPrice(YIELD_PREMIUM_FUR) - 1;
-								}
-								break;
-							case YIELD_SALT:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RAW_SALT) <= price_diff)
-								{
-									eYield = YIELD_RAW_SALT;
-									iPrice = getYieldBuyPrice(YIELD_RAW_SALT) - 1;
-								}
-								break;
-							case YIELD_SPICES:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_RED_PEPPER) <= price_diff)
-								{
-									eYield = YIELD_RED_PEPPER;
-									iPrice = getYieldBuyPrice(YIELD_RED_PEPPER) - 1;
-								}
-								break;	
-							case YIELD_BEER:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_BARLEY) <= price_diff)
-								{
-									eYield = YIELD_BARLEY;
-									iPrice = getYieldBuyPrice(YIELD_BARLEY) - 1;
-								}
-								break;
-							case YIELD_RUM:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_SUGAR) <= price_diff)
-								{
-									eYield = YIELD_SUGAR;
-									iPrice = getYieldBuyPrice(YIELD_SUGAR) - 1;
-								}
-								break;
-							case YIELD_WINE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_GRAPES) <= price_diff)
-								{
-									eYield = YIELD_GRAPES;
-									iPrice = getYieldBuyPrice(YIELD_GRAPES) - 1;
-								}
-								break;
-							case YIELD_WHALE_OIL:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
-								{
-									eYield = YIELD_WHALE_BLUBBER;
-									iPrice = getYieldBuyPrice(YIELD_WHALE_BLUBBER) - 1;
-								}
-								break;
-							case YIELD_FURNITURE:
-								if (getYieldBuyPrice(eYield) - getYieldBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
-								{
-									eYield = YIELD_VALUABLE_WOOD;
-									iPrice = getYieldBuyPrice(YIELD_VALUABLE_WOOD) - 1;
-								}
-								break;
-							default:
-								break;
-							}
+		// there is no need to work on a price, which doesn't change anyway
+		return false;
+	}
+
+	// Game init will call with the old price of 0.
+	// Make sure a non-zero value is assigned by skipping the threshold between yields.
+	// Also checking the price of other yields makes no sense until all yields have been assigned a price.
+	if (iOldPrice > 0)
+	{
+		int price_diff = GC.getPRICE_DIFF_MAN_TO_RAW();
+
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+
+		// The yield is getting a new price. Check that it doesn't come too close to another yield, which requires a minimum price difference.
+		// If the price is getting too close to another yield, try to change the price of the other yield by 1 away from this one (up or down).
+
+		if (iPrice < iOldPrice)
+		{
+			const InfoArray& consumed = kYield.getYieldsLowerPrice();
+
+			int iPriceDiff = iPrice - price_diff;
+
+			YieldTypes eHighest = NO_YIELD;
+			int iHighest = 0;
+
+			for (int i = 0; i < consumed.getLength(); ++i)
+			{
+				YieldTypes eLoopYield = consumed.getYield(i);
+				int iThisPrice = getYieldBuyPrice(eLoopYield);
+				iPriceDiff -= iThisPrice;
+				if (iThisPrice > iHighest)
+				{
+					iHighest = iThisPrice;
+					YieldTypes eLoopYield = consumed.getYield(i);
+					eHighest = eLoopYield;
+				}
+			}
+			if (iPriceDiff < 0 && eHighest != NO_YIELD)
+			{
+				// the price will be too low relative to the consumed yields. Lower a consumed yield instead
+
+				// first try with the yield with the highest price
+				bool bSuccess = setYieldBuyPrice(eHighest, iHighest - 1, bMessage, iAttempts + 1);
+
+				// next loop all yields until there is one yield, which is lowered
+				for (int i = 0; !bSuccess && i < consumed.getLength(); ++i)
+				{
+					YieldTypes eLoopYield = consumed.getYield(i);
+
+					// no need to test the one, which already failed
+					if (eLoopYield != eHighest)
+					{
+						bSuccess = setYieldBuyPrice(eLoopYield, getYieldBuyPrice(eLoopYield) - 1, bMessage, iAttempts + 1);
+					}
+				}
+
+				// report back if it managed to decrease the price of anything
+				return bSuccess;
+			}
+		}
+		else
+		{
+			// increase the price. 
+
+			std::vector<YieldTypes> yields;
+			const InfoArray& produced = kYield.getYieldsHigherPrice();
+			int iMin = iPrice + price_diff;
+
+			// make a list of yields, which are priced too low to allow this yield to increase in price
+			for (int i = 0; i < produced.getLength(); ++i)
+			{
+				YieldTypes eLoopYield = produced.getYield(i);
+				if (iMin > getYieldBuyPrice(eLoopYield))
+				{
+					yields.push_back(eLoopYield);
+				}
+			}
+
+			if (yields.size() > 0)
+			{
+				do
+				{
+					int iNumYields = yields.size();
+					if (iNumYields == 1)
+					{
+						// with only one yield, just try to increase the price and we are done here
+						YieldTypes eLoopYield = yields[0];
+						return setYieldBuyPrice(eLoopYield, getYieldBuyPrice(eLoopYield) + 1, bMessage, iAttempts + 1);
+					}
+
+					{
+						// with multiple yields, we need to loop all of them in random order
+						int iIndex = GC.getGameINLINE().getSorenRandNum(iNumYields, "new prices");
+						YieldTypes eLoopYield = yields[iIndex];
+						bool bSuccess = setYieldBuyPrice(eLoopYield, getYieldBuyPrice(eLoopYield) + 1, bMessage, iAttempts + 1);
+						if (bSuccess)
+						{
+							return true;
+						}
+						// didn't manage to increase the price. Try something else
+						yields.erase(yields.begin() + iIndex);
+					}
+
+					// no need to have an end condition. When iNumYields drops to 1, the if statement will ensure a return statement is enountered.
+				} while (true);
+			}
+		}
 	}
 
 	//Never let price fall below Minimum
@@ -16043,7 +16013,13 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 				}
 			}
 		}
+
+		// report back that the price was updated
+		return true;
 	}
+
+	// failed to change the price
+	return false;
 }
 
 void CvPlayer::sellYieldUnitToEurope(CvUnit* pUnit, int iAmount, int iCommission)

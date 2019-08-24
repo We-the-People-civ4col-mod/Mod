@@ -196,6 +196,18 @@ int InfoArray::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iT
 
 	return -1;
 }
+bool InfoArray::contains(int iValue, int iSubIndex) const
+{
+	FAssert(iSubIndex >= 0 && iSubIndex < getDimentions());
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (iValue == getInternal(i, iSubIndex))
+		{
+			return true;
+		}
+	}
+	return false;
+}
 
 ///
 /// operator overload
@@ -355,14 +367,15 @@ void InfoArrayMod::read(CvXMLLoadUtility* pXML, const char* szType, const char *
 	}
 }
 
-void InfoArrayMod::assign(const BoolArray* pBArray)
+void InfoArrayMod::assign(const BoolArray& baArray)
 {
 	FAssert(m_iNumDimentions == 1);
+	FAssert(baArray.getType() == getType(0));
 	SAFE_DELETE_ARRAY(m_pArray);
 	m_iLength = 0;
-	for (int i = 0; i < pBArray->length(); i++)
+	for (int i = 0; i < baArray.length(); i++)
 	{
-		if (pBArray->get(i))
+		if (baArray.get(i))
 		{
 			m_iLength++;
 		}
@@ -378,9 +391,9 @@ void InfoArrayMod::assign(const BoolArray* pBArray)
 
 	int iCounter = 0;
 
-	for (int i = 0; i < pBArray->length(); i++)
+	for (int i = 0; i < baArray.length(); i++)
 	{
-		if (pBArray->get(i))
+		if (baArray.get(i))
 		{
 			m_pArray[iCounter] = i;
 			iCounter++;

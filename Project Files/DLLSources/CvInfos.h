@@ -2632,10 +2632,13 @@ public:
 	bool isNativeEquip                  () const { return m_bNativeEquip                 ; }
 	bool isWeapon                       () const { return m_bWeapon                      ; }
 
+	const InfoArray& getYieldsLowerPrice () const { return m_info_YieldsLowerPrice ; }
+	const InfoArray& getYieldsHigherPrice() const { return m_info_YieldsHigherPrice; }
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
 
-	void postReadSetup();
+	void postReadSetup(const ProfessionInfoArray& professionArray);
+	void postReadSetup2();
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
@@ -2665,6 +2668,9 @@ protected:
 	bool m_bStoredInWarehouse : 1;
 	bool m_bNativeEquip : 1;
 	bool m_bWeapon : 1;
+
+	InfoArrayMod m_info_YieldsLowerPrice;
+	InfoArrayMod m_info_YieldsHigherPrice;
 
 	CvString m_szIcon;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START

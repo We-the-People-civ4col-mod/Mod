@@ -1523,6 +1523,11 @@
                 <bAI_UseBuyValue>1</bAI_UseBuyValue>
                 <bAI_PreciousMetal>1</bAI_PreciousMetal>
             </YieldBoolSetup>
+            <Price>
+                <CheaperYields>
+                    <YieldType>YIELD_SILVER</YieldType>
+                </CheaperYields>
+            </Price>
             <iBuyPriceLow>39</iBuyPriceLow>
             <iBuyPriceHigh>40</iBuyPriceHigh>
             <iBuyPriceMin>10</iBuyPriceMin>

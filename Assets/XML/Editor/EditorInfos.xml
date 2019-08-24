@@ -78,6 +78,10 @@
     <Button>
         <Class>Button</Class>
     </Button>
+    <CheaperYields>
+        <Help>List yields, which will always be cheaper than this one[NEWLINE]The game will automatically add yields here if they are consumed by a profession, which produces this yield.[NEWLINE][NEWLINE]Example: fur will always be cheaper than coats because there is a profession, which converts fur into coats. If you want say cotton to be more expensive than fur, then you need to specify it here because there is no profession linking fur and cotton.</Help>
+        <ButtonChild>YieldType</ButtonChild>
+    </CheaperYields>
     <CivilizationInfo>
         <ButtonChild>ArtDefineTag</ButtonChild>
     </CivilizationInfo>

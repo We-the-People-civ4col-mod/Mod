@@ -69,12 +69,14 @@ public:
 	// returns true if something changed
 	bool add(const InfoArray& kIarray);
 
+	void assign(const InfoArray& kIarray);
+
 	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
 	void read (FDataStreamBase* pStream, bool bEnable);
 	void write(FDataStreamBase* pStream, bool bEnable);
 	void Read (FDataStreamBase* pStream);
 	void Write(FDataStreamBase* pStream);
-	void read(CvXMLLoadUtility* pXML, const char* sTag);
+	void read(CvXMLLoadUtility* pXML, const char* sType, const char* sTag);
 
 	BoolArray& operator=(const BoolArray &rhs);
 

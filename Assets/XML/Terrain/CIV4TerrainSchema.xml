@@ -133,6 +133,14 @@
 		<element type="bAI_PreciousMetal" minOccurs="0"/>
 	</ElementType>
 	
+	<ElementType name="CheaperYields" content="eltOnly">
+		<element type="YieldType" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	
+	<ElementType name="Price" content="eltOnly">
+		<element type="CheaperYields" minOccurs="0"/>
+	</ElementType>
+	
 	
 	<ElementType name="YieldInfo" content="eltOnly">
 		<element type="Type"/>
@@ -140,6 +148,7 @@
 		<element type="Civilopedia"/>
 		<element type="eYieldCategory" minOccurs="0"/>
 		<element type="YieldBoolSetup" minOccurs="0"/>
+		<element type="Price" minOccurs="0"/>
 		<element type="iBuyPriceLow"/>
 		<element type="iBuyPriceHigh"/>
 		<element type="iBuyPriceMin"/>
