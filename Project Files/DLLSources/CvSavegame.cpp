@@ -67,6 +67,34 @@ void CvSavegameReader::Read(byte& variable)
 	Read((byte*)&variable, sizeof(byte));
 }
 
+void CvSavegameReader::Read(CvString& szString)
+{
+	int iSize;
+	Read(iSize);
+	szString.clear();
+
+	for (int i = 0; i < iSize; ++i)
+	{
+		char iBuffer;
+		Read(iBuffer);
+		szString += iBuffer;
+	}
+}
+
+void CvSavegameReader::Read(CvWString& szString)
+{
+	int iSize;
+	Read(iSize);
+	szString.clear();
+
+	for (int i = 0; i < iSize; ++i)
+	{
+		wchar iBuffer;
+		Read(iBuffer);
+		szString += iBuffer;
+	}
+}
+
 void CvSavegameReader::Read(BoolArray& baArray)
 {
 	baArray.Read(this);
@@ -134,10 +162,53 @@ void CvSavegameWriter::Write(byte variable)
 	Write((byte*)&variable, sizeof(byte));
 }
 
+void CvSavegameWriter::Write(CvString& szString)
+{
+	int iLength = szString.length();
+	Write(iLength);
+
+	const char* pStr = szString.c_str();
+
+	for (int i = 0; i < iLength; ++i)
+	{
+		Write(pStr[i]);
+	}
+}
+
+void CvSavegameWriter::Write(CvWString& szString)
+{
+	int iLength = szString.length();
+	Write(iLength);
+
+	const wchar* pStr = szString.c_str();
+
+	for (int i = 0; i < iLength; ++i)
+	{
+		Write(pStr[i]);
+	}
+}
 
 void CvSavegameWriter::Write(BoolArray& baArray)
 {
 	baArray.Write(this);
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvString& szString)
+{
+	if (szString.length() > 0)
+	{
+		Write(eType);
+		Write(szString);
+	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvWString& szString)
+{
+	if (szString.length() > 0)
+	{
+		Write(eType);
+		Write(szString);
+	}
 }
 
 void CvSavegameWriter::Write(SavegameVariableTypes eType, BoolArray& baArray)

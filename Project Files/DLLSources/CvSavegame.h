@@ -22,6 +22,9 @@ public:
 	void Read(unsigned short& variable);
 	void Read(byte& variable);
 	
+	void Read(CvString& szString);
+	void Read(CvWString& szString);
+	
 	template<class T>
 	void Read(JustInTimeArray<T>& jitArray);
 
@@ -35,6 +38,13 @@ public:
 	// Add all enums used in savegames
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(UnitTypes             & variable) { ReadEnum(variable); }
+
+#ifndef MakefileCompilation
+	// remove IntelliSense errors, which causes bogus red lines in the code
+	// This isn't compiled and won't effect the game at runtime
+
+	void Read(wchar& variable); // the makefile will use short instead, but IntelliSense fail to detect this
+#endif
 
 private:
 
@@ -61,13 +71,17 @@ public:
 	void Write(unsigned short iVar);
 	void Write(byte iVar);
 
+	void Write(CvString& szString);
+	void Write(CvWString& szString);
+
 	void Write(BoolArray& baArray);
 	
 	template<class T>
 	void Write(JustInTimeArray<T>& jitArray);
 
 	void Write(SavegameVariableTypes eType);
-
+	void Write(SavegameVariableTypes eType, CvString& szString);
+	void Write(SavegameVariableTypes eType, CvWString& szString);
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
 
 	template<class T>
