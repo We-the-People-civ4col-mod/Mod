@@ -36,8 +36,52 @@ public:
 	SavegameVariableTypes ReadSwitch();
 
 	// Add all enums used in savegames
-	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
+	void Read(DirectionTypes        & variable) { Read((int&)variable); }
+
+	// everything linked ot JITarrayTypes
+	// TODO comment out all unused
+	void Read(ArtStyleTypes         & variable) { ReadEnum(variable); }
+	void Read(BonusTypes            & variable) { ReadEnum(variable); }
+	void Read(BuildTypes            & variable) { ReadEnum(variable); }
+	void Read(BuildingTypes         & variable) { ReadEnum(variable); }
+	void Read(BuildingClassTypes    & variable) { ReadEnum(variable); }
+	void Read(SpecialBuildingTypes  & variable) { ReadEnum(variable); }
+	void Read(CivEffectTypes        & variable) { ReadEnum(variable); }
+	void Read(CivicTypes            & variable) { ReadEnum(variable); }
+	void Read(CivicOptionTypes      & variable) { ReadEnum(variable); }
+	void Read(CivilizationTypes     & variable) { ReadEnum(variable); }
+	void Read(ColorTypes            & variable) { ReadEnum(variable); }
+	void Read(CultureLevelTypes     & variable) { ReadEnum(variable); }
+	void Read(DiplomacyTypes        & variable) { ReadEnum(variable); }
+	void Read(EmphasizeTypes        & variable) { ReadEnum(variable); }
+	void Read(EraTypes              & variable) { ReadEnum(variable); }
+	void Read(EuropeTypes           & variable) { ReadEnum(variable); }
+	void Read(EventTypes            & variable) { ReadEnum(variable); }
+	void Read(EventTriggerTypes     & variable) { ReadEnum(variable); }
+	void Read(FatherTypes           & variable) { ReadEnum(variable); }
+	void Read(FatherPointTypes      & variable) { ReadEnum(variable); }
+	void Read(FeatureTypes          & variable) { ReadEnum(variable); }
+	void Read(GameOptionTypes       & variable) { ReadEnum(variable); }
+	void Read(GoodyTypes            & variable) { ReadEnum(variable); }
+	void Read(HandicapTypes         & variable) { ReadEnum(variable); }
+	void Read(HurryTypes            & variable) { ReadEnum(variable); }
+	void Read(ImprovementTypes      & variable) { ReadEnum(variable); }
+	void Read(LeaderHeadTypes       & variable) { ReadEnum(variable); }
+	void Read(MemoryTypes           & variable) { ReadEnum(variable); }
+	void Read(PlayerColorTypes      & variable) { ReadEnum(variable); }
+	void Read(PlayerOptionTypes     & variable) { ReadEnum(variable); }
+	void Read(ProfessionTypes       & variable) { ReadEnum(variable); }
+	void Read(PromotionTypes        & variable) { ReadEnum(variable); }
+	void Read(RouteTypes            & variable) { ReadEnum(variable); }
+	void Read(TerrainTypes          & variable) { ReadEnum(variable); }
+	void Read(TraitTypes            & variable) { ReadEnum(variable); }
 	void Read(UnitTypes             & variable) { ReadEnum(variable); }
+	void Read(UnitAITypes           & variable) { ReadEnum(variable); }
+	void Read(UnitClassTypes        & variable) { ReadEnum(variable); }
+	void Read(UnitCombatTypes       & variable) { ReadEnum(variable); }
+	void Read(SpecialUnitTypes      & variable) { ReadEnum(variable); }
+	void Read(VictoryTypes          & variable) { ReadEnum(variable); }
+	void Read(YieldTypes            & variable) { ReadEnum(variable); }
 
 #ifndef MakefileCompilation
 	// remove IntelliSense errors, which causes bogus red lines in the code
