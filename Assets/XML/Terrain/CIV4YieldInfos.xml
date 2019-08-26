@@ -56,6 +56,7 @@
             <eYieldCategory>YIELD_CATEGORY_CONSTRUCTION</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bBanFromCityPlot>1</bBanFromCityPlot>
             </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
@@ -99,6 +100,7 @@
             <eYieldCategory>YIELD_CATEGORY_CONSTRUCTION</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bBanFromCityPlot>1</bBanFromCityPlot>
             </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>
             <iBuyPriceHigh>2</iBuyPriceHigh>
@@ -142,6 +144,7 @@
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
                 <bIsExportYield>1</bIsExportYield>
+                <bBanFromCityPlot>1</bBanFromCityPlot>
                 <bAI_AlwaysSell>1</bAI_AlwaysSell>
                 <bAI_FinalProductIfNotNeeded>1</bAI_FinalProductIfNotNeeded>
                 <bAI_UseBuyValue>1</bAI_UseBuyValue>
@@ -1156,6 +1159,7 @@
             <eYieldCategory>YIELD_CATEGORY_NEW_WORLD_CONSUMED</eYieldCategory>
             <YieldBoolSetup>
                 <bCargo>1</bCargo>
+                <bSellToNatives>1</bSellToNatives>
                 <bAI_FinalProduct>1</bAI_FinalProduct>
             </YieldBoolSetup>
             <iBuyPriceLow>1</iBuyPriceLow>

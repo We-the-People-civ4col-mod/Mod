@@ -806,6 +806,7 @@ public:
 	DllExport bool isEvasionBuilding(int i) const;
 	//TAC Whaling, ray
 	DllExport int getNumYieldsGatherable() const;
+	const InfoArray& getGatherableYields() const { return m_Info_YieldGatherable; }
 	DllExport bool canGatherYield(int index) const;
 	//End TAC Whaling, ray
 	DllExport bool getFreePromotions(int i) const;
@@ -968,9 +969,6 @@ protected:
 	bool* m_abTerrainNative;
 	// < JAnimals Mod End >
 	bool* m_abEvasionBuilding;
-	//TAC Whaling, ray
-	bool* m_abYieldGatherable;
-	//End TAC Whaling, ray
 	bool* m_abFreePromotions;
 	///TK Viscos Mod
 	bool* m_abProfessionsNotAllowed;
@@ -983,6 +981,7 @@ protected:
 	std::vector<int> m_aiSeeInvisibleTypes;
 
 	InfoArrayMod m_Info_YieldCosts;
+	InfoArrayMod m_Info_YieldGatherable;
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -2610,6 +2609,7 @@ public:
 	// R&R, Androrc, Livestock Breeding, END
 
 	bool isSellToNatives                () const { return m_bSellToNatives               ; }
+	bool isBannedFromCityPlot           () const { return m_bBanFromCityPlot             ; }
 
 	bool AI_isAlwaysSell                () const { return m_bAI_AlwaysSell               ; }
 	bool AI_isSellNotNeeded             () const { return m_bAI_SellNotNeeded            ; }
@@ -2651,6 +2651,7 @@ protected:
 	bool m_bIsExportYield : 1; // auto traderoute - Nightinggale
 	bool m_bLivestock : 1;
 	bool m_bSellToNatives : 1;
+	bool m_bBanFromCityPlot : 1;
 	bool m_bAI_AlwaysSell : 1;
 	bool m_bAI_SellNotNeeded : 1;
 	bool m_bAI_FinalProduct : 1;

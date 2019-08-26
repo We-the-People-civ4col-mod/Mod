@@ -146,6 +146,9 @@
     <bAI_SellUnneeded>
         <Help>The AI will sell this yield if it has more than it needs</Help>
     </bAI_SellUnneeded>
+    <bBanFromCityPlot>
+        <Help>Mark a yield to NOT be able to be produced on a city plot.[NEWLINE]Automatically assigned to food and non-cargo yields.</Help>
+    </bBanFromCityPlot>
     <bIsExportYield>
         <Help>Import/Export All will apply to yields with this bool applied</Help>
     </bIsExportYield>

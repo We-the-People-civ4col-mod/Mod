@@ -683,10 +683,14 @@ public:
 
     int AI_getAttitudeValue(PlayerTypes ePlayer); // R&R, Robert Surcouf, No More Variables Hidden game option START
 	void createEnemyPirates(); // R&R, ray, Pirates - START
+	
+	int getYieldBuyPrice(YieldTypes eYield, TradeScreenTypes eTradeScreen) const;
+	bool setYieldBuyPrice(TradeScreenTypes eTradeScreen, YieldTypes eYield, int iPrice, bool bMessage, int iAttempts);
+	
 	int getSellToEuropeProfit(YieldTypes eYield, int iAmount) const;
 	int getYieldSellPrice(YieldTypes eYield) const;
 	int getYieldBuyPrice(YieldTypes eYield) const;
-	bool setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, int iAttempts = 0);
+	void setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage);
 	/*** TRIANGLETRADE 10/24/08 by DPII ***/
 	void sellYieldUnitToAfrica(CvUnit* pUnit, int iAmount, int iCommission);
 	int getAfricaUnitBuyPrice(UnitTypes eUnit) const;

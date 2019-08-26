@@ -2569,9 +2569,6 @@ m_abFeatureImpassable(NULL),
 m_abTerrainNative(NULL),
 // < JAnimals Mod End >
 m_abEvasionBuilding(NULL),
-//TAC Whaling, ray
-m_abYieldGatherable(NULL),
-//End TAC Whaling, ray
 m_aiProductionTraits(NULL),
 m_aiTerrainAttackModifier(NULL),
 m_aiTerrainDefenseModifier(NULL),
@@ -2589,6 +2586,7 @@ m_aiBonusYieldChange(NULL),
 m_aiYieldChange(NULL),
 m_aiYieldCost(NULL),
 m_Info_YieldCosts(JIT_ARRAY_YIELD, JIT_ARRAY_INT),
+m_Info_YieldGatherable(JIT_ARRAY_YIELD),
 m_abFreePromotions(NULL),
 ///TK Viscos Mod
 m_abProfessionsNotAllowed(NULL),
@@ -2616,9 +2614,6 @@ CvUnitInfo::~CvUnitInfo()
 	SAFE_DELETE_ARRAY(m_abTerrainNative);
 	// < JAnimals Mod End >
 	SAFE_DELETE_ARRAY(m_abEvasionBuilding);
-	//TAC Whaling, ray
-	SAFE_DELETE_ARRAY(m_abYieldGatherable);
-	//End TAC Whaling, ray
 	SAFE_DELETE_ARRAY(m_aiProductionTraits);
 	SAFE_DELETE_ARRAY(m_aiTerrainAttackModifier);
 	SAFE_DELETE_ARRAY(m_aiTerrainDefenseModifier);
@@ -3165,22 +3160,13 @@ bool CvUnitInfo::isEvasionBuilding(int i) const
 //TAC Whaling, ray
 int CvUnitInfo::getNumYieldsGatherable() const
 {
-	int iNumYields = 0;
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
-	{
-		if (m_abYieldGatherable[i])
-		{
-			iNumYields++;
-		}
-	}
-
-	return iNumYields;
+	return m_Info_YieldGatherable.getLength();
 }
 bool CvUnitInfo::canGatherYield(int i) const
 {
 	FAssert(i < NUM_YIELD_TYPES);
 	FAssert(i > -1);
-	return m_abYieldGatherable ? m_abYieldGatherable[i] : false;
+	return m_Info_YieldGatherable.contains(i);
 }
 //End TAC Whaling, ray
 bool CvUnitInfo::getFreePromotions(int i) const
@@ -3494,11 +3480,6 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abEvasionBuilding);
 	m_abEvasionBuilding = new bool[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_abEvasionBuilding);
-	//TAC Whaling, ray
-	SAFE_DELETE_ARRAY(m_abYieldGatherable);
-	m_abYieldGatherable = new bool[NUM_YIELD_TYPES];
-	stream->Read(NUM_YIELD_TYPES, m_abYieldGatherable);
-	//End TAC Whaling, ray
 	SAFE_DELETE_ARRAY(m_abFreePromotions);
 	m_abFreePromotions = new bool[GC.getNumPromotionInfos()];
 	stream->Read(GC.getNumPromotionInfos(), m_abFreePromotions);
@@ -3664,9 +3645,6 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumTerrainInfos(), m_abTerrainNative);
 	// < JAnimals Mod End >
 	stream->Write(GC.getNumBuildingClassInfos(), m_abEvasionBuilding);
-	//TAC Whaling, ray
-	stream->Write(NUM_YIELD_TYPES, m_abYieldGatherable);
-	//End TAC Whaling, ray
 	stream->Write(GC.getNumPromotionInfos(), m_abFreePromotions);
 	///TK Viscos Mod
 	stream->Write(GC.getNumProfessionInfos(), m_abProfessionsNotAllowed);
@@ -3811,7 +3789,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	// < JAnimals Mod End >
 	pXML->SetVariableListTagPair(&m_abEvasionBuilding, "EvasionBuildings", GC.getNumBuildingClassInfos(), false);
 	//TAC Whaling, ray
-	pXML->SetVariableListTagPair(&m_abYieldGatherable, "YieldsGatherable", NUM_YIELD_TYPES, false);
+	m_Info_YieldGatherable.read(pXML, getType(), "YieldsGatherable");
 	//End TAC Whaling, ray
 	pXML->GetChildXmlValByName(&m_iCombat, "iCombat");
 	pXML->GetChildXmlValByName(&m_iXPValueAttack, "iXPValueAttack");
@@ -9254,6 +9232,9 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 		// R&R, Androrc, Livestock Breeding
 		m_bLivestock = pXML->readShort(m_bLivestock, "bLivestock", false);
 		// R&R, Androrc, Livestock Breeding, END
+
+		m_bSellToNatives = pXML->readShort(m_bSellToNatives, "bSellToNatives", false);
+		m_bBanFromCityPlot = pXML->readShort(m_bBanFromCityPlot, "bBanFromCityPlot", false);
 
 		m_bNativeEquip = pXML->readShort(m_bNativeEquip, "bNativeEquip", false);
 		m_bWeapon = pXML->readShort(m_bWeapon, "bWeapon", false);

@@ -6034,14 +6034,14 @@ int CvPlot::calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) 
 		return 0;
 	}
 
-	if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE || eYield == YIELD_HEMP)
+	if (eYield == YIELD_FOOD)
 	{
 		return 0;
 	}
 
 	CvYieldInfo &kYieldInfo = GC.getYieldInfo(eYield);
 
-	if (!kYieldInfo.isCargo() || kYieldInfo.isLivestock())
+	if (kYieldInfo.isBannedFromCityPlot() || !kYieldInfo.isCargo() || kYieldInfo.isLivestock())
 	{
 		return 0;
 	}

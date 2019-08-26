@@ -928,6 +928,7 @@ public:
 	const YieldTypeArray& getProducedYieldTypes  () const { return m_acYieldProduced       ; }
 	const YieldTypeArray& getStrategicYieldTypes () const { return m_acYieldStrategic      ; }
 	const YieldTypeArray& getWeaponYieldTypes    () const { return m_acYieldWeapon         ; }
+	const YieldTypeArray& getConstructionYieldTypes() const { return m_acYieldConstruction ; }
 
 	void setCityCatchmentRadius(int iSetting);
 
@@ -1344,6 +1345,7 @@ protected:
 	YieldTypeArray m_acYieldProduced;
 	YieldTypeArray m_acYieldStrategic;
 	YieldTypeArray m_acYieldWeapon;
+	YieldTypeArray m_acYieldConstruction;
 
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;

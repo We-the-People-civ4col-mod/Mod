@@ -116,11 +116,15 @@
 	<ElementType name="bAI_PreciousMetal" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNativeEquip" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWeapon" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSellToNatives" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bBanFromCityPlot" content="textOnly" dt:type="boolean"/>
 	
 	<ElementType name="YieldBoolSetup" content="eltOnly">
 		<element type="bCargo" minOccurs="0"/>
 		<element type="bIsExportYield" minOccurs="0"/>
 		<element type="bLivestock" minOccurs="0"/>
+		<element type="bSellToNatives" minOccurs="0"/>
+		<element type="bBanFromCityPlot" minOccurs="0"/>
 		<element type="bNativeEquip" minOccurs="0"/>
 		<element type="bWeapon" minOccurs="0"/>
 		<element type="bAI_AlwaysSell" minOccurs="0"/>

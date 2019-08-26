@@ -34,9 +34,13 @@ enum
 #ifndef HARDCODE_XML_VALUES
 extern YieldTypes YIELD_FOOD;
 extern YieldTypes YIELD_LUMBER;
+extern YieldTypes YIELD_STONE;
+extern YieldTypes YIELD_ORE;
 extern YieldTypes YIELD_HORSES;
 extern YieldTypes YIELD_MUSKETS;
 extern YieldTypes YIELD_TOOLS;
+extern YieldTypes YIELD_BLADES;
+extern YieldTypes YIELD_CANNONS;
 extern YieldTypes YIELD_FUR;
 
 extern YieldTypes YIELD_HAMMERS;

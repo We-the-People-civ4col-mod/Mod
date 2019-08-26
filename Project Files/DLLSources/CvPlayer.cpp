@@ -15828,6 +15828,18 @@ CvCity* CvPlayer::getPopulationUnitCity(int iUnitId) const
 	return NULL;
 }
 
+int CvPlayer::getYieldBuyPrice(YieldTypes eYield, TradeScreenTypes eTradeScreen) const
+{
+	switch (eTradeScreen)
+	{
+	case TRADE_SCREEN_EUROPE: return getYieldBuyPrice(eYield);
+	case TRADE_SCREEN_AFRICA: return getYieldAfricaBuyPrice(eYield);
+	case TRADE_SCREEN_PORT_ROYAL: return getYieldPortRoyalBuyPrice(eYield);
+	default: FAssert(false);
+	}
+	return 0;
+}
+
 int CvPlayer::getYieldSellPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
@@ -15843,7 +15855,12 @@ int CvPlayer::getYieldBuyPrice(YieldTypes eYield) const
 	return m_aiYieldBuyPrice[eYield];
 }
 
-bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, int iAttempts)
+void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
+{
+	setYieldBuyPrice(TRADE_SCREEN_EUROPE, eYield, iPrice, bMessage, 0);
+}
+
+bool CvPlayer::setYieldBuyPrice(TradeScreenTypes eTradeScreen, YieldTypes eYield, int iPrice, bool bMessage, int iAttempts)
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
@@ -15861,7 +15878,7 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 //	iPrice = std::max(iPrice, 1);
 
 	// NEW PRICING MECHANISM to keep difference between manufactured goods and raw goods
-	int iOldPrice = getYieldBuyPrice(eYield);
+	int iOldPrice = getYieldBuyPrice(eYield, eTradeScreen);
 
 	if (iPrice == iOldPrice)
 	{
@@ -15893,7 +15910,7 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 			for (int i = 0; i < consumed.getLength(); ++i)
 			{
 				YieldTypes eLoopYield = consumed.getYield(i);
-				int iThisPrice = getYieldBuyPrice(eLoopYield);
+				int iThisPrice = getYieldBuyPrice(eLoopYield, eTradeScreen);
 				iPriceDiff -= iThisPrice;
 				if (iThisPrice > iHighest)
 				{
@@ -15907,7 +15924,7 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 				// the price will be too low relative to the consumed yields. Lower a consumed yield instead
 
 				// first try with the yield with the highest price
-				bool bSuccess = setYieldBuyPrice(eHighest, iHighest - 1, bMessage, iAttempts + 1);
+				bool bSuccess = setYieldBuyPrice(eTradeScreen, eHighest, iHighest - 1, bMessage, iAttempts + 1);
 
 				// next loop all yields until there is one yield, which is lowered
 				for (int i = 0; !bSuccess && i < consumed.getLength(); ++i)
@@ -15917,7 +15934,7 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 					// no need to test the one, which already failed
 					if (eLoopYield != eHighest)
 					{
-						bSuccess = setYieldBuyPrice(eLoopYield, getYieldBuyPrice(eLoopYield) - 1, bMessage, iAttempts + 1);
+						bSuccess = setYieldBuyPrice(eTradeScreen, eLoopYield, getYieldBuyPrice(eLoopYield) - 1, bMessage, iAttempts + 1);
 					}
 				}
 
@@ -15937,7 +15954,7 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 			for (int i = 0; i < produced.getLength(); ++i)
 			{
 				YieldTypes eLoopYield = produced.getYield(i);
-				if (iMin > getYieldBuyPrice(eLoopYield))
+				if (iMin > getYieldBuyPrice(eLoopYield, eTradeScreen))
 				{
 					yields.push_back(eLoopYield);
 				}
@@ -15952,14 +15969,14 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 					{
 						// with only one yield, just try to increase the price and we are done here
 						YieldTypes eLoopYield = yields[0];
-						return setYieldBuyPrice(eLoopYield, getYieldBuyPrice(eLoopYield) + 1, bMessage, iAttempts + 1);
+						return setYieldBuyPrice(eTradeScreen, eLoopYield, getYieldBuyPrice(eLoopYield) + 1, bMessage, iAttempts + 1);
 					}
 
 					{
 						// with multiple yields, we need to loop all of them in random order
 						int iIndex = GC.getGameINLINE().getSorenRandNum(iNumYields, "new prices");
 						YieldTypes eLoopYield = yields[iIndex];
-						bool bSuccess = setYieldBuyPrice(eLoopYield, getYieldBuyPrice(eLoopYield) + 1, bMessage, iAttempts + 1);
+						bool bSuccess = setYieldBuyPrice(eTradeScreen, eLoopYield, getYieldBuyPrice(eLoopYield) + 1, bMessage, iAttempts + 1);
 						if (bSuccess)
 						{
 							return true;
@@ -15979,15 +15996,28 @@ bool CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage, in
 
 	// TAC - Price Limits - Ray - END
 
-	if (iPrice != getYieldBuyPrice(eYield))
+	if (iPrice != getYieldBuyPrice(eYield, eTradeScreen))
 	{
 		// TAC - Price Limits - Ray - START
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldBuyPrice[eYield] = iPrice;
-
-		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+		switch (eTradeScreen)
+		{
+		case TRADE_SCREEN_EUROPE:
+			m_aiYieldBuyPrice[eYield] = iPrice;
+			gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+			break;
+		case TRADE_SCREEN_AFRICA:
+			m_aiYieldAfricaBuyPrice[eYield] = iPrice;
+			gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
+			break;
+		case TRADE_SCREEN_PORT_ROYAL:
+			m_aiYieldPortRoyalBuyPrice[eYield] = iPrice;
+			gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
+			break;
+		default: FAssert(false);
+		}
 
 		if (bMessage)
 		{
@@ -16342,206 +16372,7 @@ int CvPlayer::getYieldAfricaBuyPrice(YieldTypes eYield) const
 
 void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
-
-	// TAC - Price Limits - Ray - START
-	//	iPrice = std::max(iPrice, 1);
-
-	// NEW PRICING MECHANISM to keep difference between manufactured goods and raw goods
-	int price_diff = GC.getPRICE_DIFF_MAN_TO_RAW();
-	int iOldPrice = getYieldAfricaBuyPrice(eYield);
-	if (iPrice < iOldPrice)
-	{
-		switch (eYield)
-							{
-							case YIELD_ROPE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldAfricaBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_SAILCLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldAfricaBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_GOLD:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SILVER) <= price_diff)
-								{
-									eYield = YIELD_SILVER;
-									iPrice = getYieldAfricaBuyPrice(YIELD_SILVER) - 1;
-								}
-								break;
-							case YIELD_COCOA:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
-								{
-									eYield = YIELD_COCOA_FRUITS;
-									iPrice = getYieldAfricaBuyPrice(YIELD_COCOA_FRUITS) - 1;
-								}
-								break;
-							case YIELD_COFFEE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
-								{
-									eYield = YIELD_COFFEE_BERRIES;
-									iPrice = getYieldAfricaBuyPrice(YIELD_COFFEE_BERRIES) - 1;
-								}
-								break;
-							case YIELD_CIGARS:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_TOBACCO) <= price_diff)
-								{
-									eYield = YIELD_TOBACCO;
-									iPrice = getYieldAfricaBuyPrice(YIELD_TOBACCO) - 1;
-								}
-								break;
-							case YIELD_WOOL_CLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WOOL) <= price_diff)
-								{
-									eYield = YIELD_WOOL;
-									iPrice = getYieldAfricaBuyPrice(YIELD_WOOL) - 1;
-								}
-								break;
-							case YIELD_CLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_COTTON) <= price_diff)
-								{
-									eYield = YIELD_COTTON;
-									iPrice = getYieldAfricaBuyPrice(YIELD_COTTON) - 1;
-								}
-								break;
-							case YIELD_COLOURED_CLOTH:
-								if (getYieldAfricaBuyPrice(eYield) - (getYieldAfricaBuyPrice(YIELD_INDIGO) + getYieldAfricaBuyPrice(YIELD_CLOTH)) <= price_diff)
-								{
-									if (getYieldAfricaBuyPrice(YIELD_CLOTH) - getYieldAfricaBuyPrice(YIELD_INDIGO) <= price_diff)
-									{
-										eYield = YIELD_INDIGO;
-										iPrice = getYieldAfricaBuyPrice(YIELD_INDIGO) - 1;
-									}
-									else
-									{
-										eYield = YIELD_CLOTH;
-										iPrice = getYieldAfricaBuyPrice(YIELD_CLOTH) - 1;
-									}
-								}
-								break;
-							case YIELD_LEATHER:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_HIDES) <= price_diff)
-								{
-									eYield = YIELD_HIDES;
-									iPrice = getYieldAfricaBuyPrice(YIELD_HIDES) - 1;
-								}
-								break;
-							case YIELD_COATS:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_FUR) <= price_diff)
-								{
-									eYield = YIELD_FUR;
-									iPrice = getYieldAfricaBuyPrice(YIELD_FUR) - 1;
-								}
-								break;
-							case YIELD_PREMIUM_COATS:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
-								{
-									eYield = YIELD_PREMIUM_FUR;
-									iPrice = getYieldAfricaBuyPrice(YIELD_PREMIUM_FUR) - 1;
-								}
-								break;
-							case YIELD_SALT:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RAW_SALT) <= price_diff)
-								{
-									eYield = YIELD_RAW_SALT;
-									iPrice = getYieldAfricaBuyPrice(YIELD_RAW_SALT) - 1;
-								}
-								break;
-							case YIELD_SPICES:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_RED_PEPPER) <= price_diff)
-								{
-									eYield = YIELD_RED_PEPPER;
-									iPrice = getYieldAfricaBuyPrice(YIELD_RED_PEPPER) - 1;
-								}
-								break;	
-							case YIELD_BEER:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_BARLEY) <= price_diff)
-								{
-									eYield = YIELD_BARLEY;
-									iPrice = getYieldAfricaBuyPrice(YIELD_BARLEY) - 1;
-								}
-								break;
-							case YIELD_RUM:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_SUGAR) <= price_diff)
-								{
-									eYield = YIELD_SUGAR;
-									iPrice = getYieldAfricaBuyPrice(YIELD_SUGAR) - 1;
-								}
-								break;
-							case YIELD_WINE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_GRAPES) <= price_diff)
-								{
-									eYield = YIELD_GRAPES;
-									iPrice = getYieldAfricaBuyPrice(YIELD_GRAPES) - 1;
-								}
-								break;
-							case YIELD_WHALE_OIL:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
-								{
-									eYield = YIELD_WHALE_BLUBBER;
-									iPrice = getYieldAfricaBuyPrice(YIELD_WHALE_BLUBBER) - 1;
-								}
-								break;
-							case YIELD_FURNITURE:
-								if (getYieldAfricaBuyPrice(eYield) - getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
-								{
-									eYield = YIELD_VALUABLE_WOOD;
-									iPrice = getYieldAfricaBuyPrice(YIELD_VALUABLE_WOOD) - 1;
-								}
-								break;
-							default:
-								break;
-							}
-	}
-
-	//Never let price fall below Minimum
-	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());
-
-	// TAC - Price Limits - Ray - END
-
-	if (iPrice != getYieldAfricaBuyPrice(eYield))
-	{
-		// TAC - Price Limits - Ray - START
-		//int iOldPrice = getYieldBuyPrice(eYield);
-		// TAC - Price Limits - Ray - END
-
-		m_aiYieldAfricaBuyPrice[eYield] = iPrice;
-
-		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
-
-		// no message because it would get too much
-		/*if (bMessage)
-		{
-			CvWString szMessage;
-			if (iPrice > iOldPrice)
-			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
-			}
-			else
-			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
-			}
-
-			// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-			{
-				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-				// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
-				// if (kLoopPlayer.isAlive() && GET_TEAM(getTeam()).isHasMet(kLoopPlayer.getTeam()))
-				if (kLoopPlayer.isAlive() && kLoopPlayer.getParent() == getID())
-				{
-					gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_ADVISOR_SUGGEST", MESSAGE_TYPE_INFO, NULL);
-				}
-			}
-		}*/
-	}
+	setYieldBuyPrice(TRADE_SCREEN_AFRICA, eYield, iPrice, false, 0);
 }
 
 CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit* pTransport)
@@ -16804,206 +16635,7 @@ int CvPlayer::getYieldPortRoyalBuyPrice(YieldTypes eYield) const
 
 void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
-
-	// TAC - Price Limits - Ray - START
-	//	iPrice = std::max(iPrice, 1);
-
-	// NEW PRICING MECHANISM to keep difference between manufactured goods and raw goods
-	int price_diff = GC.getPRICE_DIFF_MAN_TO_RAW();
-	int iOldPrice = getYieldPortRoyalBuyPrice(eYield);
-	if (iPrice < iOldPrice)
-	{
-		switch (eYield)
-							{
-							case YIELD_ROPE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_SAILCLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HEMP) <= price_diff)
-								{
-									eYield = YIELD_HEMP;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_HEMP) - 1;
-								}
-								break;
-							case YIELD_GOLD:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SILVER) <= price_diff)
-								{
-									eYield = YIELD_SILVER;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_SILVER) - 1;
-								}
-								break;
-							case YIELD_COCOA:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) <= price_diff)
-								{
-									eYield = YIELD_COCOA_FRUITS;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_COCOA_FRUITS) - 1;
-								}
-								break;
-							case YIELD_COFFEE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) <= price_diff)
-								{
-									eYield = YIELD_COFFEE_BERRIES;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_COFFEE_BERRIES) - 1;
-								}
-								break;
-							case YIELD_CIGARS:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_TOBACCO) <= price_diff)
-								{
-									eYield = YIELD_TOBACCO;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_TOBACCO) - 1;
-								}
-								break;
-							case YIELD_WOOL_CLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WOOL) <= price_diff)
-								{
-									eYield = YIELD_WOOL;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_WOOL) - 1;
-								}
-								break;
-							case YIELD_CLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_COTTON) <= price_diff)
-								{
-									eYield = YIELD_COTTON;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_COTTON) - 1;
-								}
-								break;
-							case YIELD_COLOURED_CLOTH:
-								if (getYieldPortRoyalBuyPrice(eYield) - (getYieldPortRoyalBuyPrice(YIELD_INDIGO) + getYieldPortRoyalBuyPrice(YIELD_CLOTH)) <= price_diff)
-								{
-									if (getYieldPortRoyalBuyPrice(YIELD_CLOTH) - getYieldPortRoyalBuyPrice(YIELD_INDIGO) <= price_diff)
-									{
-										eYield = YIELD_INDIGO;
-										iPrice = getYieldPortRoyalBuyPrice(YIELD_INDIGO) - 1;
-									}
-									else
-									{
-										eYield = YIELD_CLOTH;
-										iPrice = getYieldPortRoyalBuyPrice(YIELD_CLOTH) - 1;
-									}
-								}
-								break;
-							case YIELD_LEATHER:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_HIDES) <= price_diff)
-								{
-									eYield = YIELD_HIDES;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_HIDES) - 1;
-								}
-								break;
-							case YIELD_COATS:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_FUR) <= price_diff)
-								{
-									eYield = YIELD_FUR;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_FUR) - 1;
-								}
-								break;
-							case YIELD_PREMIUM_COATS:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) <= price_diff)
-								{
-									eYield = YIELD_PREMIUM_FUR;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_PREMIUM_FUR) - 1;
-								}
-								break;
-							case YIELD_SALT:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) <= price_diff)
-								{
-									eYield = YIELD_RAW_SALT;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_RAW_SALT) - 1;
-								}
-								break;
-							case YIELD_SPICES:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) <= price_diff)
-								{
-									eYield = YIELD_RED_PEPPER;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_RED_PEPPER) - 1;
-								}
-								break;
-							case YIELD_BEER:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_BARLEY) <= price_diff)
-								{
-									eYield = YIELD_BARLEY;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_BARLEY) - 1;
-								}
-								break;
-							case YIELD_RUM:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_SUGAR) <= price_diff)
-								{
-									eYield = YIELD_SUGAR;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_SUGAR) - 1;
-								}
-								break;
-							case YIELD_WINE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_GRAPES) <= price_diff)
-								{
-									eYield = YIELD_GRAPES;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_GRAPES) - 1;
-								}
-								break;
-							case YIELD_WHALE_OIL:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) <= price_diff)
-								{
-									eYield = YIELD_WHALE_BLUBBER;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_WHALE_BLUBBER) - 1;
-								}
-								break;
-							case YIELD_FURNITURE:
-								if (getYieldPortRoyalBuyPrice(eYield) - getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) <= price_diff)
-								{
-									eYield = YIELD_VALUABLE_WOOD;
-									iPrice = getYieldPortRoyalBuyPrice(YIELD_VALUABLE_WOOD) - 1;
-								}
-								break;
-							default:
-								break;
-							}
-	}
-
-	//Never let price fall below Minimum
-	iPrice = std::max(iPrice, GC.getYieldInfo(eYield).getMinimumBuyPrice());
-
-	// TAC - Price Limits - Ray - END
-
-	if (iPrice != getYieldPortRoyalBuyPrice(eYield))
-	{
-		// TAC - Price Limits - Ray - START
-		//int iOldPrice = getYieldBuyPrice(eYield);
-		// TAC - Price Limits - Ray - END
-
-		m_aiYieldPortRoyalBuyPrice[eYield] = iPrice;
-
-		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
-
-		// no message because it would get too much
-		/*if (bMessage)
-		{
-			CvWString szMessage;
-			if (iPrice > iOldPrice)
-			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
-			}
-			else
-			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
-			}
-
-			// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
-			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-			{
-				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-				// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
-				// if (kLoopPlayer.isAlive() && GET_TEAM(getTeam()).isHasMet(kLoopPlayer.getTeam()))
-				if (kLoopPlayer.isAlive() && kLoopPlayer.getParent() == getID())
-				{
-					gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_ADVISOR_SUGGEST", MESSAGE_TYPE_INFO, NULL);
-				}
-			}
-		}*/
-	}
+	setYieldBuyPrice(TRADE_SCREEN_PORT_ROYAL, eYield, iPrice, false, 0);
 }
 
 CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUnit* pTransport)
@@ -19870,8 +19502,11 @@ void CvPlayer::doAIImmigrant(int iIndex)
 
 // TAC - AI Economy - Ray - START
 // R&R, ray improvement redistribution
-void CvPlayer::redistributeWood() {
 
+// The goal here is to spread out the AI's distribution of lumber and stone
+// This is an AI cheat intended to get around lack of ability to use transport units to spread construction materials
+void CvPlayer::redistributeWood()
+{
 	// do nothing if Player has no cities
 	if (getNumCities() <1) {
 		return;
@@ -19886,9 +19521,11 @@ void CvPlayer::redistributeWood() {
 	int citycount = getNumCities();
 
 	//calculate total wood and stone of all cities
-	int totalwood = 0;
-	int totalstone = 0;
+	YieldArray<int> jaStored;
+	YieldArray<int> jaStoredPerCitizen;
 	int iTotalPopulation = 0;
+
+	const YieldTypeArray& constructionYields = GC.getConstructionYieldTypes();
 
 	CvCity* pLoopCity;
 
@@ -19897,57 +19534,52 @@ void CvPlayer::redistributeWood() {
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		//add wood and stone
-		totalwood += pLoopCity->getYieldStored(YIELD_LUMBER);
-		totalstone += pLoopCity->getYieldStored(YIELD_STONE);
+		for (int i = 0; i < constructionYields.getLength(); ++i)
+		{
+			YieldTypes eYield = constructionYields.get(i);
+			jaStored.add(pLoopCity->getYieldStored(eYield), eYield);
+		}
 		//add population
 		iTotalPopulation += pLoopCity->getPopulation();
-		//reset Lumber and Stone to 0 because already added to storage variables
-		pLoopCity->setYieldStored(YIELD_LUMBER, 0);
-		pLoopCity->setYieldStored(YIELD_STONE, 0);
 	}
 
-	int woodToDisbributePerCitizen = totalwood / iTotalPopulation;
-	int stoneToDisbributePerCitizen = totalstone / iTotalPopulation;
+	// calculate the amount given to each citizen
+	for (int i = 0; i < constructionYields.getLength(); ++i)
+	{
+		YieldTypes eYield = constructionYields.get(i);
+		int iStoredPerCitizen = jaStored.get(eYield) / iTotalPopulation;
+		jaStoredPerCitizen.set(iStoredPerCitizen, eYield);
+	}
 
-	// Loop through cities second time to distribute all wood
+	// Loop through cities second time to distribute all construction material
 	int iLoop2;
 	for (pLoopCity = firstCity(&iLoop2); pLoopCity != NULL; pLoopCity = nextCity(&iLoop2))
 	{
 		// bigger cities get more
 		int iPopulationOfThisCity = pLoopCity->getPopulation();
-		// R&R, ray, small fix
-		int woodtodistribute = woodToDisbributePerCitizen * iPopulationOfThisCity;
-		int stonetodistribute = stoneToDisbributePerCitizen * iPopulationOfThisCity;
-		pLoopCity->setYieldStored(YIELD_LUMBER, woodtodistribute);
-		pLoopCity->setYieldStored(YIELD_STONE, stonetodistribute);
-		// substract the wood and stone distributed from the total amounts
-		totalwood -= woodtodistribute;
-		totalstone -= stonetodistribute;
+
+		for (int i = 0; i < constructionYields.getLength(); ++i)
+		{
+			YieldTypes eYield = constructionYields.get(i);
+			int iStored = jaStoredPerCitizen.get(eYield) * iPopulationOfThisCity;
+			pLoopCity->setYieldStored(eYield, iStored);
+			jaStored.add(-iStored, eYield);
+		}
 	}
 
-	// for safety, if there is some wood left, give it to the first city
-	if (totalwood > 0)
+	// for safety, if there is some left, give it to the first city
 	{
 		int iLoop3;
-		for (pLoopCity = firstCity(&iLoop3); pLoopCity != NULL; pLoopCity = nextCity(&iLoop3))
+		pLoopCity = firstCity(&iLoop3);
+		for (int i = 0; i < constructionYields.getLength(); ++i)
 		{
-			int woodalreadydistributed = pLoopCity->getYieldStored(YIELD_LUMBER);
-			pLoopCity->setYieldStored(YIELD_LUMBER, totalwood + woodalreadydistributed);
-			break;
-		}
-	}
-	// for safety, if there is some stone left, give it to the first city
-	if (totalstone > 0)
-	{
-		int iLoop4;
-		for (pLoopCity = firstCity(&iLoop4); pLoopCity != NULL; pLoopCity = nextCity(&iLoop4))
-		{
-			int stonealreadydistributed = pLoopCity->getYieldStored(YIELD_STONE);
-			pLoopCity->setYieldStored(YIELD_STONE, totalstone + stonealreadydistributed);
-			break;
-		}
-	}
+			YieldTypes eYield = constructionYields.get(i);
+			int iStored = pLoopCity->getYieldStored(eYield);
+			iStored += jaStored.get(eYield);
+			pLoopCity->setYieldStored(eYield, iStored);
 
+		}
+	}
 }
 // TAC - AI Economy - Ray - END
 

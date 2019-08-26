@@ -176,6 +176,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		BoolArray baProduced(JIT_ARRAY_YIELD);
 		BoolArray baStrategic(JIT_ARRAY_YIELD);
 		BoolArray baWeapon(JIT_ARRAY_YIELD);
+		BoolArray baConstruction(JIT_ARRAY_YIELD);
 
 		BoolArray baProductionProfessions(JIT_ARRAY_PROFESSION);
 
@@ -287,7 +288,10 @@ void CvGlobals::postXMLLoad(bool bFirst)
 					baMilitary.set(true, eYield);
 					/// FALLTHROUGH ///
 				case YIELD_CATEGORY_CONSTRUCTION:
+					baConstruction.set(eYieldCategory == YIELD_CATEGORY_CONSTRUCTION, eYield);
+					/// FALLTHROUGH ///
 				case YIELD_CATEGORY_TOOLS:
+				case YIELD_CATEGORY_NEW_WORLD_CONSUMED:
 					AddStrategicYield(eYield, baStrategic, professionArray);
 				default:
 					break;
@@ -301,6 +305,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		m_acYieldProduced.assign(baProduced);
 		m_acYieldStrategic.assign(baStrategic);
 		m_acYieldWeapon.assign(baWeapon);
+		m_acYieldConstruction.assign(baConstruction);
 
 		// update cached settings in CvYieldInfo
 		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)

@@ -1389,15 +1389,15 @@ int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 		//cities get food and one other yield
 		YieldTypes bestYield = NO_YIELD;
 		int bestOutput = 0;
-		for (int i = 0; i < NUM_YIELD_TYPES; i++)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 		{
 			//ignore food and lumber and stone
-			if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE))
+			if (!GC.getYieldInfo(eYield).isBannedFromCityPlot())
 			{
-				int natureYield = pPlot->calculateNatureYield((YieldTypes) i, getTeam(), false);
+				int natureYield = pPlot->calculateNatureYield(eYield, getTeam(), false);
 				if (natureYield > bestOutput)
 				{
-					bestYield = (YieldTypes) i;
+					bestYield = eYield;
 					bestOutput = natureYield;
 				}
 			}
@@ -1440,7 +1440,7 @@ int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 							{
 								int iValue = 0;
 								int yield = pPlot->calculatePotentialProfessionYieldAmount(loopProfession, pColonist, false);
-								if (eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+								if (GC.getYieldInfo(eYield).getCategory() == YIELD_CATEGORY_CONSTRUCTION)
 								{
 									iValue += (yield * kPlayerEurope.getYieldSellPrice(eYield)) / 2;
 								}
@@ -1772,15 +1772,16 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 					YieldTypes bestYield = NO_YIELD;
 					int bestOutput = 0;
-					for (int i = 0; i < NUM_YIELD_TYPES; i++)
+					for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
 					{
+						const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 						//ignore food and lumber and stone
-						if ((i != YIELD_FOOD) && (i != YIELD_LUMBER) && (i != YIELD_STONE))
+						if (!kYield.isBannedFromCityPlot())
 						{
-							int natureYield = pPlot->calculateNatureYield((YieldTypes) i, getTeam(), false);
+							int natureYield = pPlot->calculateNatureYield(eYield, getTeam(), false);
 							if (natureYield > bestOutput)
 							{
-								bestYield = (YieldTypes) i;
+								bestYield = eYield;
 								bestOutput = natureYield;
 							}
 						}

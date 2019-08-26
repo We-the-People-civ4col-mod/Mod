@@ -18829,8 +18829,11 @@ bool CvUnitAI::AI_transportReturnToPort(bool bUnload, CvCity* pCity)
 			
 		if (isWhalingBoat())
 		{
-			YieldTypes eYield = YIELD_WHALE_OIL;
-				
+			// use the first gatherable yield for the time being
+			FAssert(m_pUnitInfo->getGatherableYields().getLength() == 1);
+			YieldTypes eYield = m_pUnitInfo->getGatherableYields().getYield(0);
+			FAssert(eYield != NO_YIELD);
+
 			int iBestValue = MAX_INT;
 			int iValue;
 			int iLoop;

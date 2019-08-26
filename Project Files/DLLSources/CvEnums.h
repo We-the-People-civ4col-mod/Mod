@@ -2549,6 +2549,13 @@ enum DllExport TradeMessageTypes
 };
 // TAC - Trade Messages - koma13 - END
 
+enum TradeScreenTypes
+{
+	TRADE_SCREEN_EUROPE,
+	TRADE_SCREEN_AFRICA,
+	TRADE_SCREEN_PORT_ROYAL,
+};
+
 #ifndef HARDCODE_XML_VALUES
 extern CivEffectTypes CIV_EFFECT_DEFAULT_ALL;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN;
