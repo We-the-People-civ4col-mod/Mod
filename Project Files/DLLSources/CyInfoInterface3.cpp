@@ -48,6 +48,7 @@ void CyInfoPythonInterface3()
 		.def("getPowerValue", &CvYieldInfo::getPowerValue, "int ()")
 		.def("getAssetValue", &CvYieldInfo::getAssetValue, "int ()")
 		.def("isCargo", &CvYieldInfo::isCargo, "bool ()")
+		.def("isStoredInWarehouse", &CvYieldInfo::isStoredInWarehouse, "bool ()")
 		;
 	python::class_<CvTerrainInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvTerrainInfo")
 		.def("getMovementCost", &CvTerrainInfo::getMovementCost, "int ()")

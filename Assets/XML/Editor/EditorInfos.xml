@@ -32,6 +32,17 @@
             <Class>Type</Class>
         </ArtDefineTag>
     </FeatureInfo>
+    <GlobalConstants>
+        <AlwaysHardcode>
+            <Help>Values, which have to be hardcoded in the DLL at compile time for technical reasons.[NEWLINE]Changing anything here will require a new DLL file.</Help>
+        </AlwaysHardcode>
+        <AlwaysReadFromXML>
+            <Help>Game constants, which are always read from xml at game start.[NEWLINE]Changes here will always apply without recompiling the DLL.</Help>
+        </AlwaysReadFromXML>
+        <CanHardcode>
+            <Help>Values, which can be hardcoded for performance reasons, but there are no technical reason to make hardcoding mandatory.[NEWLINE]Non-hardcoded DLL files will allow changes to take effect without compiling the DLL again.</Help>
+        </CanHardcode>
+    </GlobalConstants>
     <ImprovementInfo>
         <ArtDefineTag>
             <Type>ImprovementArtInfo</Type>
@@ -66,6 +77,11 @@
             <ButtonChild>YieldType</ButtonChild>
         </YieldCost>
     </UnitInfo>
+    <YieldInfo>
+        <SpecificYields>
+            <Help>The DLL has hardcoded yields[NEWLINE]Assign which yield goes with which hardcoded enum in the C++ code</Help>
+        </SpecificYields>
+    </YieldInfo>
 </FileSpecific>
 
 <Tags>
@@ -97,6 +113,10 @@
     <FeatureInfo>
         <ButtonChild>ArtDefineTag</ButtonChild>
     </FeatureInfo>
+    <GLOBAL_GENERIC_CARGO_CHAR>
+        <Help>GameFont char for generic cargo[NEWLINE](not specific yield)</Help>
+        <Class>GameFont</Class>
+    </GLOBAL_GENERIC_CARGO_CHAR>
     <ImprovementInfo>
         <ButtonChild>ArtDefineTag</ButtonChild>
     </ImprovementInfo>

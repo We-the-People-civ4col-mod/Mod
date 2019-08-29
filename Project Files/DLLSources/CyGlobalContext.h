@@ -279,5 +279,7 @@ public:
 	void setGameFontDebug(int iChar);
 	int getDomesticAdvisorState() const;
 	void setDomesticAdvisorState(int iPage);
+
+	int getGenericCargoChar() const;
 };
 #endif	// CyGlobalContext_h

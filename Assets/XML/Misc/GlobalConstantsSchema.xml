@@ -1,0 +1,25 @@
+
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+
+	<ElementType name="GLOBAL_GENERIC_CARGO_CHAR" content="textOnly" dt:type="int"/>
+	
+	<ElementType name="AlwaysReadFromXML" content="eltOnly">
+		<element type="GLOBAL_GENERIC_CARGO_CHAR"/>
+	</ElementType>
+	
+	<ElementType name="AlwaysHardcode" content="eltOnly">
+	</ElementType>
+	
+	<ElementType name="CanHardcode" content="eltOnly">
+	</ElementType>
+	
+	<ElementType name="GlobalConstants" content="eltOnly">
+		<element type="AlwaysReadFromXML"/>
+		<element type="AlwaysHardcode"/>
+		<element type="CanHardcode"/>
+	</ElementType>
+	
+	<ElementType name="Civ4GlobalConstants" content="eltOnly">
+		<element type="GlobalConstants"/>
+	</ElementType>
+</Schema>

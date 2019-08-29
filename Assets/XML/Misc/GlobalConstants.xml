@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<Civ4GlobalConstants xmlns="x-schema:GlobalConstantsSchema.xml">
+    <GlobalConstants>
+        <AlwaysReadFromXML>
+            <GLOBAL_GENERIC_CARGO_CHAR>8508</GLOBAL_GENERIC_CARGO_CHAR>
+        </AlwaysReadFromXML>
+        <AlwaysHardcode/>
+        <CanHardcode/>
+    </GlobalConstants>
+</Civ4GlobalConstants>

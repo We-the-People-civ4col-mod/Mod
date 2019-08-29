@@ -316,6 +316,8 @@ private:
 	void PreUpdateProgressCB(const char* szMessage);
 	void readXMLfiles(bool bFirst);
 	/// XML type preloading - end - Nightinggale
+
+	bool LoadGlobalConstants();
 };
 
 //

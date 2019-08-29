@@ -504,3 +504,7 @@ void CyGlobalContext::setDomesticAdvisorState(int iPage)
 	iDomesticAdvisorState = iPage;
 }
 
+int CyGlobalContext::getGenericCargoChar() const
+{
+	return GLOBAL_GENERIC_CARGO_CHAR;
+}

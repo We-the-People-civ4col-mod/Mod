@@ -64,5 +64,7 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 		.def("setGameFontDebug", &CyGlobalContext::setGameFontDebug, "(int)")
 		.def("setDomesticAdvisorState", &CyGlobalContext::setDomesticAdvisorState, "(int)")
 		.def("getDomesticAdvisorState", &CyGlobalContext::getDomesticAdvisorState, "int ()")
+
+		.def("getGenericCargoChar", &CyGlobalContext::getGenericCargoChar, "int ()")
 	;
 }

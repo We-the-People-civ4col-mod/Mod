@@ -479,6 +479,12 @@
         <Tag>WaterPlaneInfo</Tag>
         <Root>Civ4WaterPlaneInfos</Root>
     </File>
+	<File>
+        <Dir>Misc</Dir>
+        <Name>GlobalConstants</Name>
+        <Tag>GlobalConstants</Tag>
+        <Root>Civ4GlobalConstants</Root>
+    </File>
     <File>
         <Dir>Terrain</Dir>
         <Name>CIV4BonusInfos</Name>

@@ -920,7 +920,7 @@ class CvPortRoyalScreen:
 			elif iData1 == self.HELP_TAX_RATE:
 				if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
 					# R&R, vetiarvind, Price dependent tax increase - START
-					return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsScore(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
+					return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsScore(), self.getTaxTreshold(), gc.getGenericCargoChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
 					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
 					# R&R, vetiarvind, Price dependent tax increase - END
 				else:

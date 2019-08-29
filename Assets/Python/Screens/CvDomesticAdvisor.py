@@ -71,7 +71,7 @@ class CvDomesticAdvisor:
 		self.Y_LOWER_ROW = self.nScreenHeight - 75
 		#self.CITY_NAME_COLUMN_WIDTH = 250
 		self.CITY_NAME_COLUMN_WIDTH = 190
-		#self.PRODUCTION_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / len(range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS + 1))
+		#self.PRODUCTION_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / len(range(YieldTypes.YIELD_FOOD, YieldTypes.NUM_CARGO_YIELD_TYPES))
 #VET NewCapacity - begin 2/4
 		#self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - 60) / len(range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS+ 1))
 		if self.bNewCapacity:
@@ -81,7 +81,7 @@ class CvDomesticAdvisor:
 		else:
 			## VET self.iWareHouseW = 60
 			self.iWareHouseW = 40
-		#self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - self.iWareHouseW) / len(range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS + 1))
+		#self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - self.iWareHouseW) / len(range(YieldTypes.YIELD_FOOD, YieldTypes.NUM_CARGO_YIELD_TYPES))
 #VET NewCapacity - end 2/4
 		#self.BUILDING_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / (gc.getNumSpecialBuildingInfos() -1)
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
@@ -185,7 +185,7 @@ class CvDomesticAdvisor:
 		## R&R, Robert Surcouf, Domestic Market display START
 		szListName = self.StatePages[self.GENERAL_STATE][2] + "ListBackground"
 		iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
-		for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
+		for iYield in range(iStartYield, YieldTypes.NUM_CARGO_YIELD_TYPES):
 			#screen.setTableColumnHeader(szListName, iYield-iStartYield + 2, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.WAREHOUSE_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
 			screen.setTableColumnHeader(szListName, iYield-iStartYield + 2, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 17 + 1)
 		## R&R, Robert Surcouf, Domestic Market display End
@@ -198,7 +198,7 @@ class CvDomesticAdvisor:
 		####screen.setTableColumnHeader( "WareHouseStateListBackground", 2, "<font=3>" + "MAX" + "</font>", self.iWareHouseW )
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
 #VET NewCapacity - begin 3/4
-		for iYield in range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS + 1):
+		for iYield in range(YieldTypes.NUM_CARGO_YIELD_TYPES):
 			iYieldOnPage = iYield % self.MAX_YIELDS_IN_A_PAGE
 			iPage = iYield // self.MAX_YIELDS_IN_A_PAGE
 			self.createSubpage(self.WAREHOUSE_STATE, iPage)
@@ -210,7 +210,7 @@ class CvDomesticAdvisor:
 		# Headers for pages showing yields
 		for iState in [self.PRODUCTION_STATE, self.IMPORTEXPORT_STATE, self.TOTAL_PRODUCTION_STATE]: # total production page - Nightinggale
 			self.YieldPages.add(iState)
-			for iYield in range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS + 1):
+			for iYield in range(YieldTypes.NUM_CARGO_YIELD_TYPES):
 				iYieldOnPage = iYield % self.MAX_YIELDS_IN_A_PAGE
 				iPage = iYield // self.MAX_YIELDS_IN_A_PAGE
 				self.createSubpage(iState, iPage)
@@ -223,10 +223,7 @@ class CvDomesticAdvisor:
 				iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
 				self.createSubpage(self.BUILDING_STATE, iPage)
 				
-				if (iSpecial == gc.getInfoTypeForString("SPECIALBUILDING_WHALE_OIL")):
-					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )				
-				else:
-					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar())         + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
+				screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
 	
 		# Citizen Headers
 		screen.setTableColumnHeader( self.StatePages[self.CITIZEN_STATE][0] + "ListBackground", 2, "<font=2>" +  localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN", ()).upper() + "</font>", self.nTableWidth * 3 / 4 )
@@ -365,7 +362,7 @@ class CvDomesticAdvisor:
 #VET NewCapacity - begin 4/4
 			#screen.setTableInt("WareHouseStateListBackground", 2, i, u"<font=3><color=255,255,255>" + str(pLoopCity.getMaxYieldCapacity()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
-			#for iYield in range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS + 1):
+			#for iYield in range(YieldTypes.YIELD_FOOD, YieldTypes.NUM_CARGO_YIELD_TYPES):
 			#	iNetYield = pLoopCity.getYieldStored(iYield)
 			#	szText = unicode(iNetYield)
 			#	if iNetYield == 0:
@@ -392,13 +389,12 @@ class CvDomesticAdvisor:
 					iProducedYield = pLoopCity.calculateNetYield(iYield)
 					aiProducedYields[iYield] += iProducedYield
 
-					if iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE or not gc.getYieldInfo(iYield).isCargo(): # R&R, ray, small fix for Display
-						continue
-					iNetYield += pLoopCity.getYieldStored(iYield)
+					if gc.getYieldInfo(iYield).isStoredInWarehouse(): # R&R, ray, small fix for Display
+						iNetYield += pLoopCity.getYieldStored(iYield)
 
 				iProdusedYield = 0
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-					if iYield != YieldTypes.YIELD_FOOD and iYield != YieldTypes.YIELD_LUMBER and iYield != YieldTypes.YIELD_STONE and gc.getYieldInfo(iYield).isCargo(): # R&R, ray, small fix for Display
+					if gc.getYieldInfo(iYield).isStoredInWarehouse(): # R&R, ray, small fix for Display
 						iProdusedYield += aiProducedYields[iYield]
 
 				#szText = u"<font=3><color=" 
@@ -433,14 +429,14 @@ class CvDomesticAdvisor:
 						szText = ""
 					## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 					if (iYield < self.MAX_YIELDS_IN_A_PAGE ):
-						if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
+						if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or (gc.getYieldInfo(iYield).isCargo() and not gc.getYieldInfo(iYield).isStoredInWarehouse())):  # R&R, ray, small fix for Display
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=0,255,255>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):			
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=255,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						else:
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=255,0,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					else:
-						if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
+						if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or (gc.getYieldInfo(iYield).isCargo() and not gc.getYieldInfo(iYield).isStoredInWarehouse())):  # R&R, ray, small fix for Display
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=0,255,255>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):			
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=255,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -497,7 +493,7 @@ class CvDomesticAdvisor:
 		## R&R, Robert Surcouf, Domestic Market display START
 		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2): 
 			iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
-			for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
+			for iYield in range(iStartYield, YieldTypes.NUM_CARGO_YIELD_TYPES):
 				#screen.setTableInt("GeneralStatePage3ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				# CBM 0.8.020 display of quantity available in city - start 
 				if (pLoopCity.getYieldStored(iYield)<pLoopCity.getYieldDemand(iYield)):
@@ -959,8 +955,8 @@ class CvDomesticAdvisor:
 		return self.MAX_YIELDS_IN_A_PAGE * self.CurrentPage
 		
 	def YieldEnd(self):
-		#return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)) - 1, YieldTypes.YIELD_LUXURY_GOODS + 1)
-		return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)), YieldTypes.YIELD_LUXURY_GOODS + 1)
+		#return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)) - 1, YieldTypes.NUM_CARGO_YIELD_TYPES)
+		return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)), YieldTypes.NUM_CARGO_YIELD_TYPES)
 	
 	# auto-generated list creation - start - Nightinggale
 	def addButton(self, state_type, state_button):

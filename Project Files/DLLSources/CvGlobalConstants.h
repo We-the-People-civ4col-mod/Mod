@@ -15,6 +15,10 @@ extern int NUM_CITY_PLOTS;
 extern int CITY_PLOTS_DIAMETER;
 extern int CITY_PLOTS_RADIUS;
 
+// XML GlobalConstants
+
+extern int GLOBAL_GENERIC_CARGO_CHAR;
+
 #else
 
 // Add all values to the enum. If the game can compile with CHECK_GLOBAL_CONSTANTS set, then the variables won't be altered somewhere by mistake.
@@ -23,6 +27,9 @@ enum
 	NUM_CITY_PLOTS,
 	CITY_PLOTS_DIAMETER,
 	CITY_PLOTS_RADIUS,
+
+	// XML GlobalConstants
+	GLOBAL_iGenericCargoChar,
 };
 
 #endif

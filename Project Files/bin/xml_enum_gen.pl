@@ -13,6 +13,8 @@ my $FILE_TEST = getAutoDir() . "/AutoXmlTest.h.tmp";
 my $FILE_DECLARE = getAutoDir() . "/AutoXmlDeclare.h.tmp";
 my $FILE_INIT = getAutoDir() . "/AutoXmlInit.h.tmp";
 
+my %hardcoded_yields = ();
+
 my $files = [];
 
 open (my $output, "> " . $FILE) or die "Can't open file " . $FILE . "\n" . $!;
@@ -136,7 +138,9 @@ sub processFile
 	print $output_test "DisplayXMLhardcodingError(NUM_" . $TYPE . "_TYPES == " . getNumFunction($basename) . ", \"NUM_" . $TYPE . "_TYPES\", " . $hardcodedBool . ");\n";
 
 	print $output "\n\tNUM_" . $TYPE . "_TYPES,\n";
-	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n" if $isYield;
+	
+	printYields($output) if ($isYield);
+	
 	print $output "\n#endif // HARDCODE_XML_VALUES\n" unless $isHardcoded;
 	print $output "\n\tFIRST_" . $TYPE . " = 0,\n";
 	print $output "};\n\n";
@@ -155,6 +159,8 @@ sub getTypesInFile
 {
 	my $filename = shift;
 	
+	my $yields = $filename eq "Terrain/CIV4YieldInfos.xml";
+	
 	my $fileWithPath = getFileWithPath($filename);
 	
 	if ($fileWithPath)
@@ -171,7 +177,10 @@ sub getTypesInFile
 		{
 			my $child = getChild($loopElement, "Type");
 			die $filename . " failed to read elements" unless $child;
-			push(@types, $child->textContent);
+			my $type = $child->textContent;
+			push(@types, $type);
+			handleYield($type, $loopElement) if $yields;
+			
 			$loopElement = nextSibling($loopElement);
 		}
 		return @types;
@@ -189,4 +198,49 @@ sub getTypesInFile
 	return ("SEALEVEL_LOW", "SEALEVEL_MEDIUM", "SEALEVEL_HIGH") if $filename eq "GameInfo/CIV4SeaLevelInfo.xml";
 	
 	die "getTypesInFile: " . $filename . " not supported\n";
+}
+
+# print the YieldTypes, which are non-standard
+sub printYields
+{
+	my $output = shift;
+	
+	my $hasYieldConversion = 0;
+	
+	print $output "\n";
+	
+	# some yields have hardcoded enum names in the C++ code
+	# add conversion in case they are named something different in xml
+	foreach my $key (sort keys %hardcoded_yields)
+	{
+		if ($key ne $hardcoded_yields{$key})
+		{
+			$hasYieldConversion = 1;
+			print $output "\t" . $key . " = " . $hardcoded_yields{$key} .  ",\n";
+		}
+	}
+	
+	print $output "\n" if $hasYieldConversion;
+	
+	# declare the number of cargo yields
+	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n";;
+}
+
+# store the settings in SpecificYields, meaning remembering which yield is called what in the must have yields
+sub handleYield
+{
+	my $type = shift;
+	my $loopElement = shift;
+	
+	$loopElement = getChild($loopElement, "SpecificYields");
+	
+	if (ref ($loopElement) ne "")
+	{
+		my $loopElement = getChild($loopElement, "");
+		while (ref ($loopElement) ne "")
+		{
+			$hardcoded_yields{$loopElement->nodeName} = $type if $loopElement->textContent eq "1";
+			$loopElement = nextSibling($loopElement);
+		}
+	}
 }

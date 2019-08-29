@@ -137,6 +137,44 @@
 		<element type="bAI_PreciousMetal" minOccurs="0"/>
 	</ElementType>
 	
+	<ElementType name="YIELD_FOOD" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_LUMBER" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_STONE" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_ORE" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_HORSES" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_MUSKETS" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_TOOLS" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_BLADES" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_CANNONS" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_FUR" content="textOnly" dt:type="boolean"/>
+	
+	<ElementType name="YIELD_HAMMERS" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_BELLS" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_CROSSES" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_CULTURE" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_HEALTH" content="textOnly" dt:type="boolean"/>
+	<ElementType name="YIELD_EDUCATION" content="textOnly" dt:type="boolean"/>
+	
+	<ElementType name="SpecificYields" content="eltOnly">
+		<element type="YIELD_FOOD" minOccurs="0"/>
+		<element type="YIELD_LUMBER" minOccurs="0"/>
+		<element type="YIELD_STONE" minOccurs="0"/>
+		<element type="YIELD_ORE" minOccurs="0"/>
+		<element type="YIELD_HORSES" minOccurs="0"/>
+		<element type="YIELD_MUSKETS" minOccurs="0"/>
+		<element type="YIELD_TOOLS" minOccurs="0"/>
+		<element type="YIELD_BLADES" minOccurs="0"/>
+		<element type="YIELD_CANNONS" minOccurs="0"/>
+		<element type="YIELD_FUR" minOccurs="0"/>
+		
+		<element type="YIELD_HAMMERS" minOccurs="0"/>
+		<element type="YIELD_BELLS" minOccurs="0"/>
+		<element type="YIELD_CROSSES" minOccurs="0"/>
+		<element type="YIELD_CULTURE" minOccurs="0"/>
+		<element type="YIELD_HEALTH" minOccurs="0"/>
+		<element type="YIELD_EDUCATION" minOccurs="0"/>
+	</ElementType>
+	
 	<ElementType name="CheaperYields" content="eltOnly">
 		<element type="YieldType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -152,6 +190,7 @@
 		<element type="Civilopedia"/>
 		<element type="eYieldCategory" minOccurs="0"/>
 		<element type="YieldBoolSetup" minOccurs="0"/>
+		<element type="SpecificYields" minOccurs="0"/>
 		<element type="Price" minOccurs="0"/>
 		<element type="iBuyPriceLow"/>
 		<element type="iBuyPriceHigh"/>

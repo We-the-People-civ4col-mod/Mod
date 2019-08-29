@@ -1732,7 +1732,7 @@ void CvXMLLoadUtility::SetGlobalClassInfo(std::vector<T*>& aInfos, const char* s
 			bool bSuccess = false;
 			if (bFirstRead)
 			{
-				bSuccess = pClassInfo->CvInfoBase::read(this);
+				bSuccess = pClassInfo->ReadFirstPass(this);
 			}
 			else
 			{
@@ -2354,6 +2354,8 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	if (!CreateFXml())
 		return false;
 
+	LoadGlobalConstants();
+
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(true);
 	/// XML type preloading - end - Nightinggale
@@ -2387,4 +2389,26 @@ DllExport bool CvXMLLoadUtility::LoadGraphicOptions()
 	return true;
 }
 
+bool CvXMLLoadUtility::LoadGlobalConstants()
+{
+	bool bLoaded = LoadCivXml(m_pFXml, "xml\\Misc/GlobalConstants.xml");
 
+	if (!bLoaded || !Validate()) return false;
+	
+	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, "Civ4GlobalConstants"))
+	{
+		if (gDLL->getXMLIFace()->SetToChildByTagName(m_pFXml, "GlobalConstants"))
+		{
+			if (gDLL->getXMLIFace()->SetToChildByTagName(this->GetXML(), "AlwaysReadFromXML"))
+			{
+#ifndef CHECK_GLOBAL_CONSTANTS
+				this->GetChildXmlValByName(&GLOBAL_GENERIC_CARGO_CHAR, "GLOBAL_GENERIC_CARGO_CHAR");
+#endif
+
+				gDLL->getXMLIFace()->SetToParent(this->GetXML());
+			}
+		}
+	}
+
+	return true;
+}

@@ -60,6 +60,8 @@ public:
 	DllExport virtual bool readPass2(CvXMLLoadUtility* pXML) { return false; }
 	DllExport virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
+	bool ReadFirstPass(CvXMLLoadUtility* pXML);
+
 protected:
 	bool doneReadingXML(CvXMLLoadUtility* pXML);
 	bool m_bGraphicalOnly;
@@ -2637,11 +2639,19 @@ public:
 
 	DllExport bool read(CvXMLLoadUtility* pXML);
 
+	bool ReadFirstPass(CvXMLLoadUtility* pXML);
+
 	void postReadSetup(const ProfessionInfoArray& professionArray);
 	void postReadSetup2();
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+#ifdef HARDCODE_XML_VALUES
+	void ReadEnum(CvXMLLoadUtility* pXML, YieldTypes eYield, const char* szTag);
+#else
+	void ReadEnum(CvXMLLoadUtility* pXML, YieldTypes& eYield, const char* szTag);
+#endif
+
 	YieldTypes m_eIndex : 8;
 	YieldCategoryTypes m_eCategory : 8;
 

@@ -39,7 +39,6 @@ sub isAlwaysHardcodedEnum
 	return 1 if $file eq "GameInfo/CIV4WorldInfo.xml";
 	return 1 if $file eq "Terrain/CIV4TerrainInfos.xml";
 	return 1 if $file eq "Terrain/CIV4YieldCategoryInfos.xml";
-	return 1 if $file eq "Terrain/CIV4YieldInfos.xml";
 	return 1 if $file eq "Units/CIV4AutomateInfos.xml";
 	return 1 if $file eq "Units/CIV4CommandInfos.xml";
 	return 1 if $file eq "Units/CIV4ControlInfos.xml";

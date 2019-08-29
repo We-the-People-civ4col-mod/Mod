@@ -229,6 +229,21 @@ bool CvInfoBase::read(CvXMLLoadUtility* pXML)
 	return true;
 }
 
+bool CvInfoBase::ReadFirstPass(CvXMLLoadUtility* pXML)
+{
+	// Skip any comments and stop at the next value we might want
+	if (!pXML->SkipToNextVal())
+	{
+		return false;
+	}
+
+	pXML->MapChildren();	// try to hash children for fast lookup by name
+
+	pXML->GetChildXmlValByName(m_szType, "Type");
+
+	return true;
+}
+
 //======================================================================================================
 //					CvScalableInfo
 //======================================================================================================
@@ -9310,6 +9325,64 @@ bool CvYieldInfo::read(CvXMLLoadUtility* pXML)
 
 	return true;
 }
+
+bool CvYieldInfo::ReadFirstPass(CvXMLLoadUtility* pXML)
+{
+	bool bSuccess = CvInfoBase::ReadFirstPass(pXML);
+	if (!bSuccess)
+	{
+		return false;
+	}
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "SpecificYields"))
+	{
+		ReadEnum(pXML, YIELD_FOOD       , "YIELD_FOOD"       );
+		ReadEnum(pXML, YIELD_LUMBER     , "YIELD_LUMBER"     );
+		ReadEnum(pXML, YIELD_STONE      , "YIELD_STONE"      );
+		ReadEnum(pXML, YIELD_ORE        , "YIELD_ORE"        );
+		ReadEnum(pXML, YIELD_HORSES     , "YIELD_HORSES"     );
+		ReadEnum(pXML, YIELD_MUSKETS    , "YIELD_MUSKETS"    );
+		ReadEnum(pXML, YIELD_TOOLS      , "YIELD_TOOLS"      );
+		ReadEnum(pXML, YIELD_BLADES     , "YIELD_BLADES"     );
+		ReadEnum(pXML, YIELD_CANNONS    , "YIELD_CANNONS"    );
+		ReadEnum(pXML, YIELD_FUR        , "YIELD_FUR"        );
+
+		ReadEnum(pXML, YIELD_HAMMERS    , "YIELD_HAMMERS"    );
+		ReadEnum(pXML, YIELD_BELLS      , "YIELD_BELLS"      );
+		ReadEnum(pXML, YIELD_CROSSES    , "YIELD_CROSSES"    );
+		ReadEnum(pXML, YIELD_CULTURE    , "YIELD_CULTURE"    );
+		ReadEnum(pXML, YIELD_HEALTH     , "YIELD_HEALTH"     );
+		ReadEnum(pXML, YIELD_EDUCATION  , "YIELD_EDUCATION"  );
+
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+	return true;
+}
+
+
+#ifdef HARDCODE_XML_VALUES
+void CvYieldInfo::ReadEnum(CvXMLLoadUtility* pXML, YieldTypes eYield, const char* szTag)
+{
+	bool bBuffer;
+	pXML->GetChildXmlValByName(&bBuffer, szTag);
+	if (bBuffer)
+	{
+		FAssertMsg(eYield == GC.getNumYieldInfos(), CvString::format("%s is hardcoded to a different yield index than assumed in xml", szTag).c_str());
+	}
+}
+#else
+void CvYieldInfo::ReadEnum(CvXMLLoadUtility* pXML, YieldTypes& eYield, const char* szTag)
+{
+	bool bBuffer;
+	pXML->GetChildXmlValByName(&bBuffer, szTag);
+	if (bBuffer)
+	{
+		FAssertMsg(eYield == NO_YIELD, CvString::format("%s is assigned to multiple yields", szTag).c_str());
+
+		eYield = static_cast<YieldTypes>(GC.getNumYieldInfos());
+	}
+}
+#endif
 
 void CvYieldInfo::postReadSetup(const ProfessionInfoArray& professionArray)
 {
