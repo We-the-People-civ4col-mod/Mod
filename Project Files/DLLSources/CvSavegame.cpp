@@ -196,9 +196,11 @@ int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 
 void CvSavegameReader::VerifyReadComplete() const
 {
-	if (m_Memory == (m_MemoryAllocation + m_iSize))
+	int iBytesLeft = m_MemoryAllocation + m_iSize - m_Memory;
+
+	if (iBytesLeft != 0)
 	{
-		FAssertMsg(false, "Savegame read error (unread bytes)");
+		FAssertMsg(false, CvString::format("Savegame read error (%d unread bytes)", iBytesLeft).c_str());
 		char szMessage[1024];
 
 		sprintf(szMessage, "There are unread leftover bytes in the savegame");
