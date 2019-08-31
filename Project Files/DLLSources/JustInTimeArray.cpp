@@ -486,7 +486,11 @@ void JustInTimeArray<T>::Read(CvSavegameReader* reader)
 	{
 		T eBuffer;
 		reader->Read(eBuffer);
-		set(eBuffer, i);
+		int iNewIndex = reader->ConvertIndex(getType(), i);
+		if (iNewIndex >= 0 && iNewIndex < m_iLength)
+		{
+			set(eBuffer, iNewIndex);
+		}
 	}
 }
 

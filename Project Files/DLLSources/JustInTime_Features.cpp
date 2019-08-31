@@ -1,6 +1,9 @@
 #include "CvGameCoreDLL.h"
-#include "CvInfos.h"
 
+
+// controls if the entries are added to savegames for conversion if xml changes
+// Ideally everything should be incuded, but that takes up space.
+// Use this function to disable xml files, which aren't stored in the savegame anyway
 bool isConversionArray(JITarrayTypes eType)
 {
 	switch (eType)
@@ -26,6 +29,18 @@ bool isConversionArray(JITarrayTypes eType)
 	}
 }
 
+// if an array is a subset of another array, get the full array
+JITarrayTypes GetBaseType(JITarrayTypes eType)
+{
+	switch (eType)
+	{
+	case JIT_ARRAY_CARGO_YIELD:        return JIT_ARRAY_YIELD;
+	default:
+		return eType;
+	}
+}
+
+// TODO: why would the C++ code need to know which xml files are hardcoded?
 bool isHardcodedArray(JITarrayTypes eType)
 {
 	switch (eType)
@@ -253,21 +268,22 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_BUILDING_CLASS:     return "BUILDINGCLASS_";
 	case JIT_ARRAY_BUILDING_SPECIAL:   return "SPECIALBUILDING_";
 	case JIT_ARRAY_CIVIC:              return "CIVIC_";
-	case JIT_ARRAY_CIVIC_OPTION:       return "CIVIC_OPTION_";
+	case JIT_ARRAY_CIVIC_OPTION:       return "CIVICOPTION_";
 	case JIT_ARRAY_CIVILIZATION:       return "CIVILIZATION_";
+	case JIT_ARRAY_CIV_EFFECT:         return "CIV_EFFECT_";
 	case JIT_ARRAY_COLOR:              return "COLOR_";
 	case JIT_ARRAY_CULTURE:            return "CULTURELEVEL_";
 	case JIT_ARRAY_DIPLO:              return ""; // intentionally left blank. Types starts with USER_ or AI_ prefixes
 	case JIT_ARRAY_ERA:                return "ERA_";
 	case JIT_ARRAY_EMPHASIZE:          return "EMPHASIZE_";
-	case JIT_ARRAY_EUROPE:             return "TRADE_SCREEN_";
+	case JIT_ARRAY_EUROPE:             return "EUROPE_";
 	case JIT_ARRAY_EVENT:              return "EVENT_";
 	case JIT_ARRAY_EVENT_TRIGGER:      return "EVENTTRIGGER_";
-	case JIT_ARRAY_FATHER:             return ""; //FATHER_
+	case JIT_ARRAY_FATHER:             return "FATHER_";
 	case JIT_ARRAY_FATHER_POINT:       return "FATHER_POINT_";
 	case JIT_ARRAY_FEATURE:            return "FEATURE_";
 	case JIT_ARRAY_GAME_OPTION:        return "GAMEOPTION_";
-	case JIT_ARRAY_GOODY:              return ""; // GOODY_
+	case JIT_ARRAY_GOODY:              return "GOODY_";
 	case JIT_ARRAY_HANDICAP:           return "HANDICAP_";
 	case JIT_ARRAY_HURRY:              return "HURRY_";
 	case JIT_ARRAY_IMPROVEMENT:        return "IMPROVEMENT_";
@@ -279,11 +295,11 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_PROMOTION:          return "PROMOTION_";
 	case JIT_ARRAY_ROUTE:              return "ROUTE_";
 	case JIT_ARRAY_TERRAIN:            return "TERRAIN_";
-	case JIT_ARRAY_TRAIT:              return ""; // TRAIT_
+	case JIT_ARRAY_TRAIT:              return "TRAIT_";
 	case JIT_ARRAY_UNIT:               return "UNIT_";
 	case JIT_ARRAY_UNIT_AI:            return "UNITAI_";
 	case JIT_ARRAY_UNIT_CLASS:         return "UNITCLASS_";
-	case JIT_ARRAY_UNIT_COMBAT:        return ""; // UNITCOMBAT_
+	case JIT_ARRAY_UNIT_COMBAT:        return "UNITCOMBAT_";
 	case JIT_ARRAY_UNIT_SPECIAL:       return "SPECIALUNIT_";
 	case JIT_ARRAY_VICTORY:            return "VICTORY_";
 	case JIT_ARRAY_YIELD:
@@ -332,4 +348,16 @@ const char* getArrayTypeWithoutPrefix(JITarrayTypes eType, int iIndex)
 	const char* szPrefix = getArrayPrefix(eType);
 	int iLength = strlen(szPrefix);
 	return szType + iLength;
+}
+
+JITarrayTypes getJITArrayTypeFromString(const char* szType)
+{
+	for (JITarrayTypes eType = FIRST_JIT_ARRAY; eType < NUM_JITarrayTypes; ++eType)
+	{
+		if (strcmp(szType, getArrayName(eType)) == 0)
+		{
+			return eType;
+		}
+	}
+	return NO_JIT_ARRAY_TYPE;
 }

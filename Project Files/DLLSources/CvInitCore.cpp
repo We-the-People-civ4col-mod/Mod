@@ -11,6 +11,8 @@
 #include "CvGameAI.h"
 #include "CvGameCoreUtils.h"
 
+#include "CvSavegame.h"
+
 // Public Functions...
 
 CvInitCore::CvInitCore()
@@ -1846,6 +1848,9 @@ int CvInitCore::getMaxEuropePlayers() const
 
 void CvInitCore::read(FDataStreamBase* pStream)
 {
+	CvSavegameReader reader(pStream);
+	reader.ReadConversionTable();
+
 	uint uiSaveFlag=0;
 	pStream->Read(&uiSaveFlag);		// flags for expansion (see SaveBits)
 
@@ -1941,6 +1946,10 @@ void CvInitCore::read(FDataStreamBase* pStream)
 
 void CvInitCore::write(FDataStreamBase* pStream)
 {
+	CvSavegameWriter writer(pStream);
+	writer.WriteTranslationTable();
+	writer.WriteFile();
+
 	uint uiSaveFlag=0;
 	pStream->Write(uiSaveFlag);		// flag for expansion, see SaveBits)
 

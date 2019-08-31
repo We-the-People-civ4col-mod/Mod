@@ -269,6 +269,7 @@ protected:
 class CvInfoBase;
 
 bool isConversionArray(JITarrayTypes eType);
+JITarrayTypes GetBaseType(JITarrayTypes eType);
 bool isHardcodedArray(JITarrayTypes eType);
 int getArrayLength(JITarrayTypes eType);
 const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex);
@@ -278,6 +279,8 @@ const char* getArrayName(JITarrayTypes eType);
 CvWString getArrayNameWide(JITarrayTypes eType);
 const char* getArrayPrefix(JITarrayTypes eType);
 int getIndexForType(JITarrayTypes eType, const char* pTypeString);
+int getIndexForTypeAddingPrefix(JITarrayTypes eType, const char* pTypeString);
+JITarrayTypes getJITArrayTypeFromString(const char* szType);
 
 
 

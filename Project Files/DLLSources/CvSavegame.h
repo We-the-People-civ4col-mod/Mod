@@ -83,6 +83,14 @@ public:
 	void Read(VictoryTypes          & variable) { ReadEnum(variable); }
 	void Read(YieldTypes            & variable) { ReadEnum(variable); }
 
+	void ReadConversionTable();
+
+	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
+
+	// call when the reader is done.
+	// throws an error if read byte count differs from saved byte count.
+	void VerifyReadComplete() const;
+
 #ifndef MakefileCompilation
 	// remove IntelliSense errors, which causes bogus red lines in the code
 	// This isn't compiled and won't effect the game at runtime
@@ -136,6 +144,10 @@ public:
 	
 	void WriteFile();
 
+	// enum conversion
+	void GenerateTranslationTable();
+	void WriteTranslationTable();
+
 private:
 
 	void Write(byte*var, unsigned int iSize);
@@ -156,6 +168,7 @@ template<typename T>
 void CvSavegameReader::ReadEnum(T& variable)
 {
 	Read((byte*)&variable, sizeof(T));
+	variable = (T)ConvertIndex(getJITarrayType(variable), variable);
 }
 
 template<class T>

@@ -239,19 +239,31 @@ void BoolArray::Read(CvSavegameReader* reader)
 	unsigned short iNumElements = 0;
 	reader->Read(iNumElements);
 
-	if (iNumElements > 0)
-	{
-		// first write a non-default value to the first element in the array
-		// this will ensure the array is allocated
-		set(!m_bDefault, 0);
+	// -32 will make the loop start by loading a new block
+	int iOffset = -32;
+	unsigned int iBlock = 0;
+		
 
-		int iNumBlocks = (iNumElements + 0x1F) >> 5;
-		for (int i = 0; i < iNumBlocks; ++i)
+	for (int i = 0; i < iNumElements; ++i)
+	{
+		if ((i - iOffset) == 32)
 		{
-			reader->Read(m_iArray[i]);
+			// the block is used up. Load the next one
+			iOffset += 32;
+			reader->Read(iBlock);
 		}
+		// read the bool value for the next entry
+		bool bNewSetting = HasBit(iBlock, i - iOffset);
+
+		// read the new index. Will be the same as the old unless xml has changed
+		int iNewIndex = reader->ConvertIndex(getType(), i);
+
+		// store the new bool
+		// the safeSet checks index and ignores invalid indexes like -1.
+		safeSet(bNewSetting, iNewIndex);
 	}
 }
+
 void BoolArray::Write(CvSavegameWriter* writer)
 {
 	unsigned short iNumElements = getNumUsedElements();
