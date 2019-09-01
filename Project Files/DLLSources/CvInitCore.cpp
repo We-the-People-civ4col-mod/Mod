@@ -1846,92 +1846,94 @@ int CvInitCore::getMaxEuropePlayers() const
 	return iNumEuropes;
 }
 
+// There is no reason to add a reading loop and enum because we can't really change the data in CvInitCore
 void CvInitCore::read(FDataStreamBase* pStream)
 {
 	CvSavegameReader reader(pStream);
 	reader.ReadConversionTable();
 
 	uint uiSaveFlag=0;
-	pStream->Read(&uiSaveFlag);		// flags for expansion (see SaveBits)
+	reader.Read(uiSaveFlag);		// flags for expansion (see SaveBits)
 
 	// GAME DATA
-	pStream->Read((int*)&m_eType);
-	pStream->ReadString(m_szGameName);
-	pStream->ReadString(m_szGamePassword);
-	pStream->ReadString(m_szAdminPassword);
-	pStream->ReadString(m_szMapScriptName);
+	reader.Read(m_eType);
+	reader.Read(m_szGameName);
+	reader.Read(m_szGamePassword);
+	reader.Read(m_szAdminPassword);
+	reader.Read(m_szMapScriptName);
 
-	pStream->Read(&m_bWBMapNoPlayers);
+	reader.Read(m_bWBMapNoPlayers);
 
-	pStream->Read((int*)&m_eWorldSize);
-	pStream->Read((int*)&m_eClimate);
-	pStream->Read((int*)&m_eSeaLevel);
-	pStream->Read((int*)&m_eEra);
-	pStream->Read((int*)&m_eGameSpeed);
-	pStream->Read((int*)&m_eTurnTimer);
-	pStream->Read((int*)&m_eCalendar);
+	reader.Read(m_eWorldSize);
+	reader.Read(m_eClimate);
+	reader.Read(m_eSeaLevel);
+	reader.Read(m_eEra);
+	reader.Read(m_eGameSpeed);
+	reader.Read(m_eTurnTimer);
+	reader.Read(m_eCalendar);
 
 	SAFE_DELETE_ARRAY(m_aeCustomMapOptions);
-	pStream->Read(&m_iNumCustomMapOptions);
-	pStream->Read(&m_iNumHiddenCustomMapOptions);
+	reader.Read(m_iNumCustomMapOptions);
+	reader.Read(m_iNumHiddenCustomMapOptions);
 	if (m_iNumCustomMapOptions > 0)
 	{
 		m_aeCustomMapOptions = new CustomMapOptionTypes[m_iNumCustomMapOptions];
-		pStream->Read(m_iNumCustomMapOptions, (int*)m_aeCustomMapOptions);
+		for (int i = 0; i < m_iNumCustomMapOptions; ++i)
+		{
+			reader.Read(m_aeCustomMapOptions[i]);
+		}
 	}
 
-	SAFE_DELETE_ARRAY(m_abVictories);
-	pStream->Read(&m_iNumVictories);
-	if (m_iNumVictories > 0)
+	m_iNumVictories = this->read(reader, JIT_ARRAY_VICTORY, m_abVictories, true);
+	this->read(reader, JIT_ARRAY_GAME_OPTION, m_abOptions, false);
+
+	for (int i = 0; i < NUM_MPOPTION_TYPES; ++i)
 	{
-		m_abVictories = new bool[m_iNumVictories];
-		pStream->Read(m_iNumVictories, m_abVictories);
+		reader.Read(m_abMPOptions[i]);
 	}
 
-	pStream->Read(NUM_GAMEOPTION_TYPES, m_abOptions);
-	pStream->Read(NUM_MPOPTION_TYPES, m_abMPOptions);
+	reader.Read(m_bStatReporting);
 
-	pStream->Read(&m_bStatReporting);
+	reader.Read(m_iGameTurn);
+	reader.Read(m_iMaxTurns);
+	reader.Read(m_iPitbossTurnTime);
+	reader.Read(m_iTargetScore);
 
-	pStream->Read(&m_iGameTurn);
-	pStream->Read(&m_iMaxTurns);
-	pStream->Read(&m_iPitbossTurnTime);
-	pStream->Read(&m_iTargetScore);
-
-	pStream->Read(&m_iMaxCityElimination);
-	pStream->Read(&m_iNumAdvancedStartPoints);
+	reader.Read(m_iMaxCityElimination);
+	reader.Read(m_iNumAdvancedStartPoints);
 
 	// PLAYER DATA
-	pStream->ReadString(MAX_PLAYERS, m_aszLeaderName);
-	pStream->ReadString(MAX_PLAYERS, m_aszCivDescription);
-	pStream->ReadString(MAX_PLAYERS, m_aszCivShortDesc);
-	pStream->ReadString(MAX_PLAYERS, m_aszCivAdjective);
-	pStream->ReadString(MAX_PLAYERS, m_aszCivPassword);
-	pStream->ReadString(MAX_PLAYERS, m_aszEmail);
-	pStream->ReadString(MAX_PLAYERS, m_aszSmtpHost);
 
-	pStream->Read(MAX_PLAYERS, (int*)m_aeCiv);
-	pStream->Read(MAX_PLAYERS, (int*)m_aeLeader);
-	pStream->Read(MAX_PLAYERS, (int*)m_aeTeam);
-
-
-	pStream->Read(MAX_PLAYERS, (int*)m_aeHandicap);
-	pStream->Read(MAX_PLAYERS, (int*)m_aeColor);
-	pStream->Read(MAX_PLAYERS, (int*)m_aeArtStyle);
-
-	pStream->Read(MAX_PLAYERS, (int*)m_aeSlotStatus);
-	pStream->Read(MAX_PLAYERS, (int*)m_aeSlotClaim);
-
-	for (int i=0;i<MAX_PLAYERS;i++)
+	for (int i = 0; i < MAX_PLAYERS; ++i)
 	{
+		reader.Read(m_aszLeaderName[i]);
+		reader.Read(m_aszCivDescription[i]);
+		reader.Read(m_aszCivShortDesc[i]);
+		reader.Read(m_aszCivAdjective[i]);
+		reader.Read(m_aszCivPassword[i]);
+		reader.Read(m_aszEmail[i]);
+		reader.Read(m_aszSmtpHost[i]);
+
+		reader.Read(m_aeCiv[i]);
+		reader.Read(m_aeLeader[i]);
+		reader.Read(m_aeTeam[i]);
+
+
+		reader.Read(m_aeHandicap[i]);
+		reader.Read(m_aeColor[i]);
+		reader.Read(m_aeArtStyle[i]);
+
+		reader.Read(m_aeSlotStatus[i]);
+		reader.Read(m_aeSlotClaim[i]);
+
 		if (m_aeSlotClaim[i] == SLOTCLAIM_ASSIGNED)
 		{
 			m_aeSlotClaim[i] = SLOTCLAIM_RESERVED;
 		}
-	}
 
-	pStream->Read(MAX_PLAYERS, m_abPlayableCiv);
-	pStream->Read(MAX_PLAYERS, m_abMinorNationCiv);
+		reader.Read(m_abPlayableCiv[i]);
+		reader.Read(m_abMinorNationCiv[i]);
+	}
 
 	if(CvPlayerAI::areStaticsInitialized())
 	{
@@ -1941,6 +1943,8 @@ void CvInitCore::read(FDataStreamBase* pStream)
 			GET_PLAYER((PlayerTypes) i).updateTeamType();
 		}
 	}
+
+	reader.VerifyReadComplete();
 }
 
 
@@ -1948,71 +1952,118 @@ void CvInitCore::write(FDataStreamBase* pStream)
 {
 	CvSavegameWriter writer(pStream);
 	writer.WriteTranslationTable();
-	writer.WriteFile();
 
 	uint uiSaveFlag=0;
-	pStream->Write(uiSaveFlag);		// flag for expansion, see SaveBits)
+	writer.Write(uiSaveFlag);		// flag for expansion, see SaveBits)
 
 	// GAME DATA
-	pStream->Write(m_eType);
-	pStream->WriteString(m_szGameName);
-	pStream->WriteString(m_szGamePassword);
-	pStream->WriteString(m_szAdminPassword);
-	pStream->WriteString(m_szMapScriptName);
+	writer.Write(m_eType);
+	writer.Write(m_szGameName);
+	writer.Write(m_szGamePassword);
+	writer.Write(m_szAdminPassword);
+	writer.Write(m_szMapScriptName);
 
-	pStream->Write(m_bWBMapNoPlayers);
+	writer.Write(m_bWBMapNoPlayers);
 
-	pStream->Write(m_eWorldSize);
-	pStream->Write(m_eClimate);
-	pStream->Write(m_eSeaLevel);
-	pStream->Write(m_eEra);
-	pStream->Write(m_eGameSpeed);
-	pStream->Write(m_eTurnTimer);
-	pStream->Write(m_eCalendar);
+	writer.Write(m_eWorldSize);
+	writer.Write(m_eClimate);
+	writer.Write(m_eSeaLevel);
+	writer.Write(m_eEra);
+	writer.Write(m_eGameSpeed);
+	writer.Write(m_eTurnTimer);
+	writer.Write(m_eCalendar);
 
-	pStream->Write(m_iNumCustomMapOptions);
-	pStream->Write(m_iNumHiddenCustomMapOptions);
-	pStream->Write(m_iNumCustomMapOptions, (int*)m_aeCustomMapOptions);
+	writer.Write(m_iNumCustomMapOptions);
+	writer.Write(m_iNumHiddenCustomMapOptions);
+	for (int i = 0; i < m_iNumCustomMapOptions; ++i)
+	{
+		writer.Write(m_aeCustomMapOptions[i]);
+	}
 
-	pStream->Write(m_iNumVictories);
-	pStream->Write(m_iNumVictories, m_abVictories);
+	this->write(writer, JIT_ARRAY_VICTORY, m_abVictories, m_iNumVictories);
+	this->write(writer, JIT_ARRAY_GAME_OPTION, m_abOptions, NUM_GAMEOPTION_TYPES);
 
-	pStream->Write(NUM_GAMEOPTION_TYPES, m_abOptions);
-	pStream->Write(NUM_MPOPTION_TYPES, m_abMPOptions);
+	for (int i = 0; i < NUM_MPOPTION_TYPES; ++i)
+	{
+		writer.Write(m_abMPOptions[i]);
+	}
 
-	pStream->Write(m_bStatReporting);
+	writer.Write(m_bStatReporting);
 
-	pStream->Write(m_iGameTurn);
-	pStream->Write(m_iMaxTurns);
-	pStream->Write(m_iPitbossTurnTime);
-	pStream->Write(m_iTargetScore);
+	writer.Write(m_iGameTurn);
+	writer.Write(m_iMaxTurns);
+	writer.Write(m_iPitbossTurnTime);
+	writer.Write(m_iTargetScore);
 
-	pStream->Write(m_iMaxCityElimination);
-	pStream->Write(m_iNumAdvancedStartPoints);
+	writer.Write(m_iMaxCityElimination);
+	writer.Write(m_iNumAdvancedStartPoints);
 
 	// PLAYER DATA
-	pStream->WriteString(MAX_PLAYERS, m_aszLeaderName);
-	pStream->WriteString(MAX_PLAYERS, m_aszCivDescription);
-	pStream->WriteString(MAX_PLAYERS, m_aszCivShortDesc);
-	pStream->WriteString(MAX_PLAYERS, m_aszCivAdjective);
-	pStream->WriteString(MAX_PLAYERS, m_aszCivPassword);
-	pStream->WriteString(MAX_PLAYERS, m_aszEmail);
-	pStream->WriteString(MAX_PLAYERS, m_aszSmtpHost);
-
-	pStream->Write(MAX_PLAYERS, (int*)m_aeCiv);
-	pStream->Write(MAX_PLAYERS, (int*)m_aeLeader);
-	pStream->Write(MAX_PLAYERS, (int*)m_aeTeam);
-	pStream->Write(MAX_PLAYERS, (int*)m_aeHandicap);
-	pStream->Write(MAX_PLAYERS, (int*)m_aeColor);
-	pStream->Write(MAX_PLAYERS, (int*)m_aeArtStyle);
-
 	//don't save autoplay active player as AI
 	SlotStatus eOldStatus = m_aeSlotStatus[getActivePlayer()];
 	m_aeSlotStatus[getActivePlayer()] = SS_TAKEN;
-	pStream->Write(MAX_PLAYERS, (int*)m_aeSlotStatus);
-	pStream->Write(MAX_PLAYERS, (int*)m_aeSlotClaim);
+
+	for (int i = 0; i < MAX_PLAYERS; ++i)
+	{
+
+		writer.Write(m_aszLeaderName[i]);
+		writer.Write(m_aszCivDescription[i]);
+		writer.Write(m_aszCivShortDesc[i]);
+		writer.Write(m_aszCivAdjective[i]);
+		writer.Write(m_aszCivPassword[i]);
+		writer.Write(m_aszEmail[i]);
+		writer.Write(m_aszSmtpHost[i]);
+
+		writer.Write(m_aeCiv[i]);
+		writer.Write(m_aeLeader[i]);
+		writer.Write(m_aeTeam[i]);
+		writer.Write(m_aeHandicap[i]);
+		writer.Write(m_aeColor[i]);
+		writer.Write(m_aeArtStyle[i]);
+
+
+		writer.Write(m_aeSlotStatus[i]);
+		writer.Write(m_aeSlotClaim[i]);
+
+
+		writer.Write(m_abPlayableCiv[i]);
+		writer.Write(m_abMinorNationCiv[i]);
+	}
+
 	m_aeSlotStatus[getActivePlayer()] = eOldStatus;
 
-	pStream->Write(MAX_PLAYERS, m_abPlayableCiv);
-	pStream->Write(MAX_PLAYERS, m_abMinorNationCiv);
+	writer.WriteFile();
 }
+
+int CvInitCore::read(CvSavegameReader& reader, JITarrayTypes eType, bool*& pArray, bool bAllocate)
+{
+	BoolArray baTemp(eType);
+	reader.Read(baTemp);
+
+	int iLength = baTemp.length();
+
+	if (bAllocate)
+	{
+		SAFE_DELETE_ARRAY(pArray);
+		pArray = new bool[iLength];
+	}
+
+	for (int i = 0; i < iLength; ++i)
+	{
+		pArray[i] = baTemp.get(i);
+	}
+	return iLength;
+}
+
+void CvInitCore::write(CvSavegameWriter& writer, JITarrayTypes eType, bool* pArray, int iLength)
+{
+	BoolArray baTemp(eType);
+
+	for (int i = 0; i < iLength; ++i)
+	{
+		baTemp.safeSet(pArray[i], i);
+	}
+
+	writer.Write(baTemp);
+}
+

@@ -74,6 +74,14 @@ void CvSavegameReader::Read(byte& variable)
 	Read((byte*)&variable, sizeof(byte));
 }
 
+void CvSavegameReader::Read(bool& variable)
+{
+	// the 0/1 value is saved in 1 byte instead of 4
+	char iBuffer;
+	Read(iBuffer);
+	variable = iBuffer;
+}
+
 void CvSavegameReader::Read(CvString& szString)
 {
 	szString.clear();
@@ -249,6 +257,13 @@ void CvSavegameWriter::Write(unsigned short variable)
 void CvSavegameWriter::Write(byte variable)
 {
 	Write((byte*)&variable, sizeof(byte));
+}
+
+void CvSavegameWriter::Write(bool variable)
+{
+	// save the 0/1 value in 1 byte instead of 4
+	char iBuffer = variable ? 1 : 0;
+	Write(iBuffer);
 }
 
 void CvSavegameWriter::Write(CvString& szString)

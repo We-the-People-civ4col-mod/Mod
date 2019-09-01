@@ -10,19 +10,27 @@ bool isConversionArray(JITarrayTypes eType)
 	{
 	case JIT_ARRAY_ART_STYLE:
 	case JIT_ARRAY_CIVILIZATION:
+	case JIT_ARRAY_CLIMATE:
+	case JIT_ARRAY_ERA:
+	case JIT_ARRAY_GAME_OPTION:
+	case JIT_ARRAY_GAME_SPEED:
+	case JIT_ARRAY_HANDICAP:
+	case JIT_ARRAY_LEADER_HEAD:
+	case JIT_ARRAY_PLAYER_COLOR:
+	case JIT_ARRAY_SEA_LEVEL:
+	case JIT_ARRAY_VICTORY:
+	case JIT_ARRAY_WORLD_SIZE:
+		return true;
+
 	case JIT_ARRAY_COLOR:
 	case JIT_ARRAY_DIPLO:
 	case JIT_ARRAY_EVENT:
 	case JIT_ARRAY_EVENT_TRIGGER:
 	case JIT_ARRAY_FEATURE:
 	case JIT_ARRAY_GOODY:
-	case JIT_ARRAY_HANDICAP:
 	case JIT_ARRAY_HURRY:
-	case JIT_ARRAY_LEADER_HEAD:
-	case JIT_ARRAY_PLAYER_COLOR:
 	case JIT_ARRAY_ROUTE:
 	case JIT_ARRAY_TERRAIN:
-	case JIT_ARRAY_VICTORY:
 		return false;
 	default:
 		return true;
@@ -69,6 +77,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_CIVIC:              return GC.getNumCivicInfos();
 	case JIT_ARRAY_CIVIC_OPTION:       return GC.getNumCivicOptionInfos();
 	case JIT_ARRAY_CIVILIZATION:       return GC.getNumCivilizationInfos();
+	case JIT_ARRAY_CLIMATE:            return NUM_CLIMATE_TYPES;
 	case JIT_ARRAY_COLOR:              return GC.getNumColorInfos();
 	case JIT_ARRAY_CULTURE:            return GC.getNumCultureLevelInfos();
 	case JIT_ARRAY_DIPLO:              return GC.getNumDiplomacyInfos();
@@ -83,6 +92,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_FEAT:               return NUM_FEAT_TYPES;
 	case JIT_ARRAY_FEATURE:            return GC.getNumFeatureInfos();
 	case JIT_ARRAY_GAME_OPTION:        return NUM_GAMEOPTION_TYPES;
+	case JIT_ARRAY_GAME_SPEED:         return NUM_GAMESPEED_TYPES;
 	case JIT_ARRAY_GOODY:              return GC.getNumGoodyInfos();
 	case JIT_ARRAY_HANDICAP:           return GC.getNumHandicapInfos();
 	case JIT_ARRAY_HURRY:              return GC.getNumHurryInfos();
@@ -95,6 +105,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_PROFESSION:         return GC.getNumProfessionInfos();
 	case JIT_ARRAY_PROMOTION:          return GC.getNumPromotionInfos();
 	case JIT_ARRAY_ROUTE:              return GC.getNumRouteInfos();
+	case JIT_ARRAY_SEA_LEVEL:          return NUM_SEALEVEL_TYPES;
 	case JIT_ARRAY_STRATEGY:           return NUM_STRATEGY_TYPES;
 	case JIT_ARRAY_TERRAIN:            return GC.getNumTerrainInfos();
 	case JIT_ARRAY_TRAIT:              return GC.getNumTraitInfos();
@@ -104,6 +115,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_UNIT_COMBAT:        return GC.getNumUnitCombatInfos();
 	case JIT_ARRAY_UNIT_SPECIAL:       return GC.getNumSpecialUnitInfos();
 	case JIT_ARRAY_VICTORY:            return GC.getNumVictoryInfos();
+	case JIT_ARRAY_WORLD_SIZE:         return NUM_WORLDSIZE_TYPES;
 	case JIT_ARRAY_YIELD:              return NUM_YIELD_TYPES;
 	case JIT_ARRAY_CARGO_YIELD:        return NUM_CARGO_YIELD_TYPES;
 	}
@@ -113,7 +125,9 @@ int getArrayLength(JITarrayTypes eType)
 
 const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 {
-	switch (eType)
+	JITarrayTypes eBaseType = GetBaseType(eType);
+
+	switch (eBaseType)
 	{
 	case JIT_ARRAY_BONUS:              return &GC.getBonusInfo((BonusTypes)iIndex);
 	case JIT_ARRAY_BUILD:              return &GC.getBuildInfo((BuildTypes)iIndex);
@@ -124,6 +138,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_CIVIC:              return &GC.getCivicInfo((CivicTypes)iIndex);
 	case JIT_ARRAY_CIVIC_OPTION:       return &GC.getCivicOptionInfo((CivicOptionTypes)iIndex);
 	case JIT_ARRAY_CIVILIZATION:       return &GC.getCivilizationInfo((CivilizationTypes)iIndex);
+	case JIT_ARRAY_CLIMATE:            return &GC.getClimateInfo((ClimateTypes)iIndex);
 	case JIT_ARRAY_COLOR:              return &GC.getColorInfo((ColorTypes)iIndex);
 	case JIT_ARRAY_CULTURE:            return &GC.getCultureLevelInfo((CultureLevelTypes)iIndex);
 	case JIT_ARRAY_DIPLO:              return &GC.getDiplomacyInfo(iIndex);
@@ -136,6 +151,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_FATHER_POINT:       return &GC.getFatherPointInfo((FatherPointTypes)iIndex);
 	case JIT_ARRAY_FEATURE:            return &GC.getFeatureInfo((FeatureTypes)iIndex);
 	case JIT_ARRAY_GAME_OPTION:        return &GC.getGameOptionInfo((GameOptionTypes)iIndex);
+	case JIT_ARRAY_GAME_SPEED:         return &GC.getGameSpeedInfo((GameSpeedTypes)iIndex);
 	case JIT_ARRAY_GOODY:              return &GC.getGoodyInfo((GoodyTypes)iIndex);
 	case JIT_ARRAY_HANDICAP:           return &GC.getHandicapInfo((HandicapTypes)iIndex);
 	case JIT_ARRAY_HURRY:              return &GC.getHurryInfo((HurryTypes)iIndex);
@@ -147,6 +163,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_PROFESSION:         return &GC.getProfessionInfo((ProfessionTypes)iIndex);
 	case JIT_ARRAY_PROMOTION:          return &GC.getPromotionInfo((PromotionTypes)iIndex);
 	case JIT_ARRAY_ROUTE:              return &GC.getRouteInfo((RouteTypes)iIndex);
+	case JIT_ARRAY_SEA_LEVEL:          return &GC.getSeaLevelInfo((SeaLevelTypes)iIndex);
 	case JIT_ARRAY_TERRAIN:            return &GC.getTerrainInfo((TerrainTypes)iIndex);
 	case JIT_ARRAY_TRAIT:              return &GC.getTraitInfo((TraitTypes)iIndex);
 	case JIT_ARRAY_UNIT:               return &GC.getUnitInfo((UnitTypes)iIndex);
@@ -155,9 +172,8 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_UNIT_COMBAT:        return &GC.getUnitCombatInfo((UnitCombatTypes)iIndex);
 	case JIT_ARRAY_UNIT_SPECIAL:       return &GC.getSpecialUnitInfo((SpecialUnitTypes)iIndex);
 	case JIT_ARRAY_VICTORY:            return &GC.getVictoryInfo((VictoryTypes)iIndex);
-	case JIT_ARRAY_YIELD:
-	case JIT_ARRAY_CARGO_YIELD:
-		return &GC.getYieldInfo((YieldTypes)iIndex);
+	case JIT_ARRAY_WORLD_SIZE:         return &GC.getWorldInfo((WorldSizeTypes)iIndex);
+	case JIT_ARRAY_YIELD:              return &GC.getYieldInfo((YieldTypes)iIndex);
 	}
 	FAssertMsg(false, "missing info case");
 	return NULL;
@@ -194,9 +210,9 @@ const char* getArrayName(JITarrayTypes eType)
 	// this is used to identify if order has changed when loading a savegame
 	// both read and write use this function meaning it will be compared to itself (no need to sync with anything else)
 
-	const char* szType = "";
+	JITarrayTypes eBaseType = GetBaseType(eType);
 	
-	switch (eType)
+	switch (eBaseType)
 	{
 	case JIT_ARRAY_ART_STYLE:          return "ArtStyle";
 	case JIT_ARRAY_BONUS:              return "Bonus";
@@ -208,6 +224,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_CIVIC:              return "Civic";
 	case JIT_ARRAY_CIVIC_OPTION:       return "CivicOption";
 	case JIT_ARRAY_CIVILIZATION:       return "Civilization";
+	case JIT_ARRAY_CLIMATE:            return "Cllimate";
 	case JIT_ARRAY_COLOR:              return "Color";
 	case JIT_ARRAY_CULTURE:            return "Culture";
 	case JIT_ARRAY_DIPLO:              return "Diplo";
@@ -220,6 +237,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_FATHER_POINT:       return "FatherPoint";
 	case JIT_ARRAY_FEATURE:            return "Feature";
 	case JIT_ARRAY_GAME_OPTION:        return "GameOption";
+	case JIT_ARRAY_GAME_SPEED:         return "GameSpeed";
 	case JIT_ARRAY_GOODY:              return "Goody";
 	case JIT_ARRAY_HANDICAP:           return "Handicap";
 	case JIT_ARRAY_HURRY:              return "Hurry";
@@ -232,6 +250,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_PROFESSION:         return "Profession";
 	case JIT_ARRAY_PROMOTION:          return "Promotion";
 	case JIT_ARRAY_ROUTE:              return "Route";
+	case JIT_ARRAY_SEA_LEVEL:          return "SeaLevel";
 	case JIT_ARRAY_TERRAIN:            return "Terrain";
 	case JIT_ARRAY_TRAIT:              return "Trait";
 	case JIT_ARRAY_UNIT:               return "Unit";
@@ -240,9 +259,8 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_UNIT_COMBAT:        return "UnitCombat";
 	case JIT_ARRAY_UNIT_SPECIAL:       return "SpecialUnit";
 	case JIT_ARRAY_VICTORY:            return "Victory";
-	case JIT_ARRAY_YIELD:
-	case JIT_ARRAY_CARGO_YIELD:
-		return "Yield";
+	case JIT_ARRAY_WORLD_SIZE:         return "WorldSize";
+	case JIT_ARRAY_YIELD:              return "Yield";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";
@@ -259,7 +277,9 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	// returns the prefix for each array type
 	// each type of that array has to start with the prefix
 	
-	switch (eType)
+	JITarrayTypes eBaseType = GetBaseType(eType);
+
+	switch (eBaseType)
 	{
 	case JIT_ARRAY_ART_STYLE:          return "ARTSTYLE_";
 	case JIT_ARRAY_BONUS:              return "BONUS_";
@@ -271,6 +291,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_CIVIC_OPTION:       return "CIVICOPTION_";
 	case JIT_ARRAY_CIVILIZATION:       return "CIVILIZATION_";
 	case JIT_ARRAY_CIV_EFFECT:         return "CIV_EFFECT_";
+	case JIT_ARRAY_CLIMATE:            return "CLIMATE_";
 	case JIT_ARRAY_COLOR:              return "COLOR_";
 	case JIT_ARRAY_CULTURE:            return "CULTURELEVEL_";
 	case JIT_ARRAY_DIPLO:              return ""; // intentionally left blank. Types starts with USER_ or AI_ prefixes
@@ -283,6 +304,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_FATHER_POINT:       return "FATHER_POINT_";
 	case JIT_ARRAY_FEATURE:            return "FEATURE_";
 	case JIT_ARRAY_GAME_OPTION:        return "GAMEOPTION_";
+	case JIT_ARRAY_GAME_SPEED:         return "GAMESPEED_";
 	case JIT_ARRAY_GOODY:              return "GOODY_";
 	case JIT_ARRAY_HANDICAP:           return "HANDICAP_";
 	case JIT_ARRAY_HURRY:              return "HURRY_";
@@ -294,6 +316,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_PROFESSION:         return "PROFESSION_";
 	case JIT_ARRAY_PROMOTION:          return "PROMOTION_";
 	case JIT_ARRAY_ROUTE:              return "ROUTE_";
+	case JIT_ARRAY_SEA_LEVEL:          return "SEALEVEL_";
 	case JIT_ARRAY_TERRAIN:            return "TERRAIN_";
 	case JIT_ARRAY_TRAIT:              return "TRAIT_";
 	case JIT_ARRAY_UNIT:               return "UNIT_";
@@ -302,9 +325,8 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_UNIT_COMBAT:        return "UNITCOMBAT_";
 	case JIT_ARRAY_UNIT_SPECIAL:       return "SPECIALUNIT_";
 	case JIT_ARRAY_VICTORY:            return "VICTORY_";
-	case JIT_ARRAY_YIELD:
-	case JIT_ARRAY_CARGO_YIELD:
-		return "YIELD_";
+	case JIT_ARRAY_WORLD_SIZE:         return "WORLDSIZE_";
+	case JIT_ARRAY_YIELD:              return "YIELD_";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";

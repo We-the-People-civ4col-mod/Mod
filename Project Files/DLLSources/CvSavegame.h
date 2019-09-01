@@ -21,6 +21,8 @@ public:
 	void Read(unsigned int& variable);
 	void Read(unsigned short& variable);
 	void Read(byte& variable);
+
+	void Read(bool& variable);
 	
 	void Read(CvString& szString);
 	void Read(CvWString& szString);
@@ -36,10 +38,17 @@ public:
 	SavegameVariableTypes ReadSwitch();
 
 	// Add all enums used in savegames
+	void Read(CalendarTypes         & variable) { Read((int&)variable); }
+	void Read(CustomMapOptionTypes  & variable) { Read((int&)variable); }
 	void Read(DirectionTypes        & variable) { Read((int&)variable); }
-
-	// everything linked ot JITarrayTypes
-	// TODO comment out all unused
+	void Read(GameType              & variable) { Read((int&)variable); }
+	void Read(PlayerTypes           & variable) { Read((int&)variable); }
+	void Read(SlotClaim             & variable) { Read((int&)variable); }
+	void Read(SlotStatus            & variable) { Read((int&)variable); }
+	void Read(TeamTypes             & variable) { Read((int&)variable); }
+	void Read(TurnTimerTypes        & variable) { Read((int&)variable); }
+	
+	// everything linked to xml file enums
 	void Read(ArtStyleTypes         & variable) { ReadEnum(variable); }
 	void Read(BonusTypes            & variable) { ReadEnum(variable); }
 	void Read(BuildTypes            & variable) { ReadEnum(variable); }
@@ -50,6 +59,7 @@ public:
 	void Read(CivicTypes            & variable) { ReadEnum(variable); }
 	void Read(CivicOptionTypes      & variable) { ReadEnum(variable); }
 	void Read(CivilizationTypes     & variable) { ReadEnum(variable); }
+	void Read(ClimateTypes          & variable) { ReadEnum(variable); }
 	void Read(ColorTypes            & variable) { ReadEnum(variable); }
 	void Read(CultureLevelTypes     & variable) { ReadEnum(variable); }
 	void Read(DiplomacyTypes        & variable) { ReadEnum(variable); }
@@ -62,6 +72,7 @@ public:
 	void Read(FatherPointTypes      & variable) { ReadEnum(variable); }
 	void Read(FeatureTypes          & variable) { ReadEnum(variable); }
 	void Read(GameOptionTypes       & variable) { ReadEnum(variable); }
+	void Read(GameSpeedTypes        & variable) { ReadEnum(variable); }
 	void Read(GoodyTypes            & variable) { ReadEnum(variable); }
 	void Read(HandicapTypes         & variable) { ReadEnum(variable); }
 	void Read(HurryTypes            & variable) { ReadEnum(variable); }
@@ -73,6 +84,7 @@ public:
 	void Read(ProfessionTypes       & variable) { ReadEnum(variable); }
 	void Read(PromotionTypes        & variable) { ReadEnum(variable); }
 	void Read(RouteTypes            & variable) { ReadEnum(variable); }
+	void Read(SeaLevelTypes         & variable) { ReadEnum(variable); }
 	void Read(TerrainTypes          & variable) { ReadEnum(variable); }
 	void Read(TraitTypes            & variable) { ReadEnum(variable); }
 	void Read(UnitTypes             & variable) { ReadEnum(variable); }
@@ -82,6 +94,7 @@ public:
 	void Read(SpecialUnitTypes      & variable) { ReadEnum(variable); }
 	void Read(VictoryTypes          & variable) { ReadEnum(variable); }
 	void Read(YieldTypes            & variable) { ReadEnum(variable); }
+	void Read(WorldSizeTypes        & variable) { ReadEnum(variable); }
 
 	void ReadConversionTable();
 
@@ -122,6 +135,8 @@ public:
 	void Write(unsigned int iVar);
 	void Write(unsigned short iVar);
 	void Write(byte iVar);
+
+	void Write(bool bVar);
 
 	void Write(CvString& szString);
 	void Write(CvWString& szString);

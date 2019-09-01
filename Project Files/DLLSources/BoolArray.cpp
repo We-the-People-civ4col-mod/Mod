@@ -18,7 +18,9 @@ BoolArray::BoolArray(JITarrayTypes eType, bool bDefault)
 , m_iType(eType)
 , m_iLength(getArrayLength(eType))
 , m_bDefault(bDefault)
-{}
+{
+	FAssert(m_iLength > 0);
+}
 
 BoolArray::~BoolArray()
 {

@@ -55,6 +55,11 @@ static inline JITarrayTypes getJITarrayType(CivilizationTypes var)
 	return JIT_ARRAY_CIVILIZATION;
 }
 
+static inline JITarrayTypes getJITarrayType(ClimateTypes var)
+{
+	return JIT_ARRAY_CLIMATE;
+}
+
 static inline JITarrayTypes getJITarrayType(ColorTypes var)
 {
 	return JIT_ARRAY_COLOR;
@@ -115,6 +120,11 @@ static inline JITarrayTypes getJITarrayType(GameOptionTypes var)
 	return JIT_ARRAY_GAME_OPTION;
 }
 
+static inline JITarrayTypes getJITarrayType(GameSpeedTypes var)
+{
+	return JIT_ARRAY_GAME_SPEED;
+}
+
 static inline JITarrayTypes getJITarrayType(GoodyTypes var)
 {
 	return JIT_ARRAY_GOODY;
@@ -170,6 +180,11 @@ static inline JITarrayTypes getJITarrayType(RouteTypes var)
 	return JIT_ARRAY_ROUTE;
 }
 
+static inline JITarrayTypes getJITarrayType(SeaLevelTypes var)
+{
+	return JIT_ARRAY_SEA_LEVEL;
+}
+
 static inline JITarrayTypes getJITarrayType(TerrainTypes var)
 {
 	return JIT_ARRAY_TERRAIN;
@@ -208,6 +223,11 @@ static inline JITarrayTypes getJITarrayType(SpecialUnitTypes var)
 static inline JITarrayTypes getJITarrayType(VictoryTypes var)
 {
 	return JIT_ARRAY_VICTORY;
+}
+
+static inline JITarrayTypes getJITarrayType(WorldSizeTypes var)
+{
+	return JIT_ARRAY_WORLD_SIZE;
 }
 
 static inline JITarrayTypes getJITarrayType(YieldTypes var)
