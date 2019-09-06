@@ -364,6 +364,18 @@
     <ClCompile Include="DLLSources\CvSavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvMapSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvPlotSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvUnitAISavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvAreaSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">

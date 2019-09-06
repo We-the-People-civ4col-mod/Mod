@@ -113,6 +113,8 @@ void CvArea::reset(int iID, bool bWater, bool bConstructorCall)
 	// Uninit class
 	uninit();
 
+	resetSavedData();
+
 	m_iID = iID;
 	m_iNumTiles = 0;
 	m_iNumOwnedTiles = 0;

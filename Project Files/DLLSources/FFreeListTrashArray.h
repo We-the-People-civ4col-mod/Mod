@@ -22,6 +22,9 @@
 #include	"FFreeListArrayBase.h"
 #include	"FDataStreamBase.h"
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 #define FLTA_ID_SHIFT				(13)
 #define FLTA_MAX_BUCKETS		(1 << FLTA_ID_SHIFT)
 #define FLTA_INDEX_MASK			(FLTA_MAX_BUCKETS - 1)
@@ -517,6 +520,40 @@ inline void ReadStreamableFFreeListTrashArray( FFreeListTrashArray< T >& flist, 
 }
 
 template < class T >
+inline void ReadStreamableFFreeListTrashArray(FFreeListTrashArray< T >& flist, CvSavegameReader& reader)
+{
+	int iTemp;
+	reader.Read(iTemp);
+	flist.init(iTemp);
+	reader.Read(iTemp);
+	flist.setLastIndex(iTemp);
+	reader.Read(iTemp);
+	flist.setFreeListHead(iTemp);
+	reader.Read(iTemp);
+	flist.setFreeListCount(iTemp);
+	reader.Read(iTemp);
+	flist.setCurrentID(iTemp);
+
+	int i;
+
+	for (i = 0; i < flist.getNumSlots(); ++i)
+	{
+		reader.Read(iTemp);
+		flist.setNextFreeIndex(i, iTemp);
+	}
+
+	int iCount;
+	reader.Read(iCount);
+
+	for (i = 0; i < iCount; ++i)
+	{
+		T* pData = new T;
+		pData->read(reader);
+		flist.load(pData);
+	}
+}
+
+template < class T >
 inline void WriteStreamableFFreeListTrashArray( FFreeListTrashArray< T >& flist, FDataStreamBase* pStream )
 {
 	pStream->Write( flist.getNumSlots() );
@@ -539,6 +576,33 @@ inline void WriteStreamableFFreeListTrashArray( FFreeListTrashArray< T >& flist,
 		if ( flist[ i ] )
 		{
 			flist[ i ]->write( pStream );
+		}
+	}
+}
+
+template < class T >
+inline void WriteStreamableFFreeListTrashArray(FFreeListTrashArray< T >& flist, CvSavegameWriter& writer)
+{
+	writer.Write(flist.getNumSlots());
+	writer.Write(flist.getLastIndex());
+	writer.Write(flist.getFreeListHead());
+	writer.Write(flist.getFreeListCount());
+	writer.Write(flist.getCurrentID());
+
+	int i;
+
+	for (i = 0; i < flist.getNumSlots(); i++)
+	{
+		writer.Write(flist.getNextFreeIndex(i));
+	}
+
+	writer.Write(flist.getCount());
+
+	for (i = 0; i < flist.getIndexAfterLast(); i++)
+	{
+		if (flist[i])
+		{
+			flist[i]->write(writer);
 		}
 	}
 }

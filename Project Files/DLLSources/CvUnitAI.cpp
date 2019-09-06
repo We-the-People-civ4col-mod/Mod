@@ -18773,7 +18773,7 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 {
 	CvSavegameReader reader(pStream);
 
-	CvUnit::read(&reader);
+	read(reader);
 	CvUnit::read(pStream);
 
 	uint uiFlag=0;
@@ -18796,7 +18796,7 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
 	CvSavegameWriter writer(pStream);
-	CvUnit::write(&writer);
+	write(writer);
 	writer.WriteFile();
 
 	CvUnit::write(pStream);

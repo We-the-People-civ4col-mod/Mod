@@ -145,6 +145,9 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 {
 	uninit();
 
+	// apply default values for variables in savegame
+	resetSavedData();
+
 	m_iX = iX;
 	m_iY = iY;
 	m_iArea = FFreeList::INVALID_INDEX;
@@ -8210,9 +8213,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 	bool bVal;
 	char cCount;
 	int iCount;
-
-	// Init saved data
-	reset();
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion

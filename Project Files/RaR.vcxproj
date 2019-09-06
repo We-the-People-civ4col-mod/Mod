@@ -51,6 +51,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvAreaSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvMapSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvPlotSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvUnitAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvSavegame.cpp" />
     <ClCompile Include="DLLSources\CvUnitSavegame.cpp" />
     <ClCompile Include="DLLSources\CvGlobalConstants.cpp" />

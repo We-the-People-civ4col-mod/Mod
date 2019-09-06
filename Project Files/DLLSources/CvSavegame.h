@@ -221,9 +221,9 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, T eVariable, T 
 }
 
 template<class T>
-inline void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray)
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray)
 {
-	if (jitArray->hasContent())
+	if (jitArray.hasContent())
 	{
 		Write(eType);
 		Write(jitArray);

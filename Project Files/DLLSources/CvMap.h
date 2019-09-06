@@ -268,6 +268,10 @@ public:
 
 protected:
 
+	void resetSavedData();
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer);
+
 	int m_iGridWidth;
 	int m_iGridHeight;
 	int m_iLandPlots;
@@ -281,8 +285,8 @@ protected:
 
 	bool m_bUseTwoPlotCities;
 
-	int* m_paiNumBonus;
-	int* m_paiNumBonusOnLand;
+	BonusArray<int> m_ja_NumBonuses;
+	BonusArray<int> m_ja_NumBonusesOnLand;
 
 	CvPlot* m_pMapPlots;
 

@@ -376,7 +376,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	// Uninit class
 	uninit();
 
-	resetNew();
+	resetSavedData();
 
 	m_iID = iID;
 	// TAC - LbD - Ray - START

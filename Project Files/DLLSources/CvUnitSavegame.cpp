@@ -15,7 +15,7 @@ enum SavegameVariableTypes
 };
 
 // assign everything to default values
-void CvUnit::resetNew()
+void CvUnit::resetSavedData()
 {
 	m_eFacingDirection = defaultFacingDirection;
 	m_eUnitType = defaultUnitType;
