@@ -35,6 +35,10 @@ public:
 	template<typename T>
 	void ReadEnum(T& variable);
 
+	// workaround because we can't use references on bitfields
+	template<typename T>
+	T ReadBitfield(T variable);
+
 	SavegameVariableTypes ReadSwitch();
 
 	// Add all enums used in savegames
@@ -180,10 +184,17 @@ private:
 //
 
 template<typename T>
-void CvSavegameReader::ReadEnum(T& variable)
+inline void CvSavegameReader::ReadEnum(T& variable)
 {
 	Read((byte*)&variable, sizeof(T));
 	variable = (T)ConvertIndex(getJITarrayType(variable), variable);
+}
+
+template<typename T>
+inline T CvSavegameReader::ReadBitfield(T variable)
+{
+	Read(variable);
+	return variable;
 }
 
 template<class T>

@@ -150,28 +150,11 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 
 	m_iX = iX;
 	m_iY = iY;
-	m_iArea = FFreeList::INVALID_INDEX;
 	m_pPlotArea = NULL;
-	m_iFeatureVariety = 0;
-	m_iOwnershipDuration = 0;
-	m_iImprovementDuration = 0;
-	m_iUpgradeProgress = 0;
-	m_iForceUnownedTimer = 0;
-	m_iCityRadiusCount = 0;
-	m_iRiverID = -1;
-	m_iMinOriginalStartDist = -1;
-	m_iRiverCrossingCount = 0;
+	
+	// set the actual default. The default in resetSavedData is chosen to be the value used by all water plots, hence reduced savegame size 
 	m_iDistanceToOcean = MAX_SHORT;
-	m_iCrumbs = 0;
 
-	// Super Forts begin *canal* *choke*
-	m_iCanalValue = 0;
-	m_iChokeValue = 0;
-	// Super Forts end
-	// Super Forts begin *bombard*
-	m_iDefenseDamage = 0;
-	m_bBombarded = false;
-	// Super Forts end
 
 	m_bStartingPlot = false;
 	m_bHills = false;
@@ -8210,48 +8193,16 @@ ColorTypes CvPlot::plotMinimapColor()
 void CvPlot::read(FDataStreamBase* pStream)
 {
 	int iI;
-	bool bVal;
+	//bool bVal;
 	char cCount;
 	int iCount;
 
+	
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iArea);
 	// m_pPlotArea not saved
-	pStream->Read(&m_iFeatureVariety);
-	pStream->Read(&m_iOwnershipDuration);
-	pStream->Read(&m_iImprovementDuration);
-	pStream->Read(&m_iUpgradeProgress);
-	pStream->Read(&m_iForceUnownedTimer);
-	pStream->Read(&m_iCityRadiusCount);
-	pStream->Read(&m_iRiverID);
-	pStream->Read(&m_iMinOriginalStartDist);
-	pStream->Read(&m_iRiverCrossingCount);
-	pStream->Read(&m_iDistanceToOcean);
-	pStream->Read(&m_iCrumbs);
 
-	// Super Forts begin *canal* *choke*
-	pStream->Read(&m_iCanalValue);
-	pStream->Read(&m_iChokeValue);
-	// Super Forts end
-	// Super Forts begin *bombard*
-	pStream->Read(&m_iDefenseDamage);
-	pStream->Read(&m_bBombarded);
-	// Super Forts end
-
-	pStream->Read(&bVal);
-	m_bStartingPlot = bVal;
-	pStream->Read(&bVal);
-	m_bHills = bVal;
-	pStream->Read(&bVal);
-	m_bNOfRiver = bVal;
-	pStream->Read(&bVal);
-	m_bWOfRiver = bVal;
-	pStream->Read(&bVal);
-	m_bPotentialCityWork = bVal;
 	// m_bShowCitySymbols not saved
 	// m_bFlagDirty not saved
 	// m_bPlotLayoutDirty not saved
@@ -8438,36 +8389,8 @@ void CvPlot::write(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iArea);
 	// m_pPlotArea not saved
-	pStream->Write(m_iFeatureVariety);
-	pStream->Write(m_iOwnershipDuration);
-	pStream->Write(m_iImprovementDuration);
-	pStream->Write(m_iUpgradeProgress);
-	pStream->Write(m_iForceUnownedTimer);
-	pStream->Write(m_iCityRadiusCount);
-	pStream->Write(m_iRiverID);
-	pStream->Write(m_iMinOriginalStartDist);
-	pStream->Write(m_iRiverCrossingCount);
-	pStream->Write(m_iDistanceToOcean);
-	pStream->Write(m_iCrumbs);
 
-	// Super Forts begin *canal* *choke*
-	pStream->Write(m_iCanalValue);
-	pStream->Write(m_iChokeValue);
-	// Super Forts end
-	// Super Forts begin *bombard*
-	pStream->Write(m_iDefenseDamage);
-	pStream->Write(m_bBombarded);
-	// Super Forts end
-
-	pStream->Write(m_bStartingPlot);
-	pStream->Write(m_bHills);
-	pStream->Write(m_bNOfRiver);
-	pStream->Write(m_bWOfRiver);
-	pStream->Write(m_bPotentialCityWork);
 	// m_bShowCitySymbols not saved
 	// m_bFlagDirty not saved
 	// m_bPlotLayoutDirty not saved
