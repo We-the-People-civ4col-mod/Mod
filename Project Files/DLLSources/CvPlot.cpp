@@ -155,32 +155,11 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	// set the actual default. The default in resetSavedData is chosen to be the value used by all water plots, hence reduced savegame size 
 	m_iDistanceToOcean = MAX_SHORT;
 
-
-	m_bStartingPlot = false;
-	m_bHills = false;
-	m_bNOfRiver = false;
-	m_bWOfRiver = false;
-	m_bPotentialCityWork = false;
 	m_bShowCitySymbols = false;
 	m_bFlagDirty = false;
 	m_bPlotLayoutDirty = false;
 	m_bLayoutStateWorked = false;
 	m_bImpassable = false;
-
-	m_eOwner = NO_PLAYER;
-	m_ePlotType = PLOT_OCEAN;
-	m_eTerrainType = NO_TERRAIN;
-	m_eFeatureType = NO_FEATURE;
-	m_eBonusType = NO_BONUS;
-	m_eImprovementType = NO_IMPROVEMENT;
-	m_eRouteType = NO_ROUTE;
-	m_eRiverNSDirection = NO_CARDINALDIRECTION;
-	m_eRiverWEDirection = NO_CARDINALDIRECTION;
-	m_eEurope = NO_EUROPE;
-
-	m_plotCity.reset();
-	m_workingCity.reset();
-	m_workingCityOverride.reset();
 
 	for (int iI = 0; iI < NUM_YIELD_TYPES; ++iI)
 	{
@@ -4276,7 +4255,7 @@ EuropeTypes CvPlot::getEurope() const
 
 void CvPlot::setEurope(EuropeTypes eEurope)
 {
-	m_eEurope = (char)eEurope;
+	m_eEurope = eEurope;
 	gDLL->getInterfaceIFace()->setDirty(ColoredPlots_DIRTY_BIT, true);
 }
 
@@ -8209,24 +8188,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
-	pStream->Read(&m_eOwner);
-	pStream->Read(&m_ePlotType);
-	pStream->Read(&m_eTerrainType);
-	pStream->Read(&m_eFeatureType);
-	pStream->Read(&m_eBonusType);
-	pStream->Read(&m_eImprovementType);
-	pStream->Read(&m_eRouteType);
-	pStream->Read(&m_eRiverNSDirection);
-	pStream->Read(&m_eRiverWEDirection);
-	pStream->Read(&m_eEurope);
-	updateImpassable();
-
-	m_plotCity.read(pStream);
-	m_workingCity.read(pStream);
-	m_workingCityOverride.read(pStream);
-
-	pStream->Read(NUM_YIELD_TYPES, m_aiYield);
-
 	pStream->Read(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
 
 	SAFE_DELETE_ARRAY(m_aiCulture);
@@ -8396,23 +8357,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	// m_bPlotLayoutDirty not saved
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
-
-	pStream->Write(m_eOwner);
-	pStream->Write(m_ePlotType);
-	pStream->Write(m_eTerrainType);
-	pStream->Write(m_eFeatureType);
-	pStream->Write(m_eBonusType);
-	pStream->Write(m_eImprovementType);
-	pStream->Write(m_eRouteType);
-	pStream->Write(m_eRiverNSDirection);
-	pStream->Write(m_eRiverWEDirection);
-	pStream->Write(m_eEurope);
-
-	m_plotCity.write(pStream);
-	m_workingCity.write(pStream);
-	m_workingCityOverride.write(pStream);
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiYield);
 
 	pStream->Write(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
 

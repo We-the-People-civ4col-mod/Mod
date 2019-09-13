@@ -113,6 +113,11 @@ void CvSavegameReader::Read(BoolArray& baArray)
 	baArray.Read(this);
 }
 
+void CvSavegameReader::Read(IDInfo& idInfo)
+{
+	idInfo.read(*this);
+}
+
 void CvSavegameReader::Read(byte* var, unsigned int iSize)
 {
 	for (unsigned int i = 0; i < iSize; ++i)
@@ -326,6 +331,19 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, BoolArray& baArray)
 	}
 }
 
+void CvSavegameWriter::Write(SavegameVariableTypes eType, IDInfo& idInfo)
+{
+	// get hold of the default values
+	IDInfo temp;
+	temp.reset();
+
+	// save if one or more values differs from the default
+	if (temp.eOwner != idInfo.eOwner || temp.iID != idInfo.iID)
+	{
+		Write(eType);
+		idInfo.write(*this);
+	}
+}
 
 void CvSavegameWriter::WriteFile()
 {

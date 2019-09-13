@@ -32,6 +32,8 @@ public:
 
 	void Read(BoolArray& baArray);
 
+	void Read(IDInfo& idInfo);
+
 	template<typename T>
 	void ReadEnum(T& variable);
 
@@ -42,11 +44,13 @@ public:
 	SavegameVariableTypes ReadSwitch();
 
 	// Add all enums used in savegames
+	void Read(CardinalDirectionTypes& variable) { Read((int&)variable); }
 	void Read(CalendarTypes         & variable) { Read((int&)variable); }
 	void Read(CustomMapOptionTypes  & variable) { Read((int&)variable); }
 	void Read(DirectionTypes        & variable) { Read((int&)variable); }
 	void Read(GameType              & variable) { Read((int&)variable); }
 	void Read(PlayerTypes           & variable) { Read((int&)variable); }
+	void Read(PlotTypes             & variable) { Read((int&)variable); }
 	void Read(SlotClaim             & variable) { Read((int&)variable); }
 	void Read(SlotStatus            & variable) { Read((int&)variable); }
 	void Read(TeamTypes             & variable) { Read((int&)variable); }
@@ -154,6 +158,7 @@ public:
 	void Write(SavegameVariableTypes eType, CvString& szString);
 	void Write(SavegameVariableTypes eType, CvWString& szString);
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
+	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, T eVariable, T eDefault);

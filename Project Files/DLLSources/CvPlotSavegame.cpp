@@ -30,6 +30,18 @@ const bool defaultNOfRiver = false;
 const bool defaultWOfRiver = false;
 const bool defaultPotentialCityWork = false;
 
+const PlotTypes defaultePlotType = PLOT_OCEAN;
+const TerrainTypes defaulteTerrainType = NO_TERRAIN;
+const FeatureTypes defaulteFeatureType = NO_FEATURE;
+const BonusTypes defaulteBonusType = NO_BONUS;
+const ImprovementTypes defaulteImprovementType = NO_IMPROVEMENT;
+const RouteTypes defaulteRouteType = NO_ROUTE;
+const PlayerTypes defaulteOwner = NO_PLAYER;
+const CardinalDirectionTypes defaulteRiverNSDirection = NO_CARDINALDIRECTION;
+const CardinalDirectionTypes defaulteRiverWEDirection = NO_CARDINALDIRECTION;
+const EuropeTypes defaulteEurope = NO_EUROPE;
+
+
 enum SavegameVariableTypes
 {
 	Save_END,
@@ -59,6 +71,23 @@ enum SavegameVariableTypes
 	Save_NOfRiver,
 	Save_WOfRiver,
 	Save_PotentialCityWork,
+
+	Save_ePlotType,
+	Save_eTerrainType,
+	Save_eFeatureType,
+	Save_eBonusType,
+	Save_eImprovementType,
+	Save_eRouteType,
+	Save_eOwner,
+	Save_eRiverNSDirection,
+	Save_eRiverWEDirection,
+	Save_eEurope,
+
+	Save_plotCity,
+	Save_workingCity,
+	Save_workingCityOverride,
+
+	Save_aiYield,
 };
 
 // assign everything to default values
@@ -94,6 +123,21 @@ void CvPlot::resetSavedData()
 	m_bNOfRiver = defaultNOfRiver;
 	m_bWOfRiver = defaultWOfRiver;
 	m_bPotentialCityWork = defaultPotentialCityWork;
+
+	m_ePlotType = defaultePlotType;
+	m_eTerrainType = defaulteTerrainType;
+	m_eFeatureType = defaulteFeatureType;
+	m_eBonusType = defaulteBonusType;
+	m_eImprovementType = defaulteImprovementType;
+	m_eRouteType = defaulteRouteType;
+	m_eOwner = defaulteOwner;
+	m_eRiverNSDirection = defaulteRiverNSDirection;
+	m_eRiverWEDirection = defaulteRiverWEDirection;
+	m_eEurope = defaulteEurope;
+
+	m_plotCity.reset();
+	m_workingCity.reset();
+	m_workingCityOverride.reset();
 }
 
 void CvPlot::read(CvSavegameReader& reader)
@@ -135,7 +179,7 @@ void CvPlot::read(CvSavegameReader& reader)
 		case Save_CanalValue:              reader.Read(m_iCanalValue                ); break;
 		case Save_ChokeValue:              reader.Read(m_iChokeValue                ); break;
 		case Save_DefenseDamage:           reader.Read(m_iDefenseDamage             ); break;
-		case Save_Bombarded:               reader.Read(m_bBombarded                 ); break;
+		case Save_Bombarded:               m_bBombarded            = reader.ReadBitfield(m_bBombarded               ); break;
 
 		case Save_StartingPlot:            m_bStartingPlot         = reader.ReadBitfield(m_bStartingPlot            ); break;
 		case Save_Hills:                   m_bHills                = reader.ReadBitfield(m_bHills                   ); break;
@@ -143,11 +187,38 @@ void CvPlot::read(CvSavegameReader& reader)
 		case Save_WOfRiver:                m_bWOfRiver             = reader.ReadBitfield(m_bWOfRiver                ); break;
 		case Save_PotentialCityWork:       m_bPotentialCityWork    = reader.ReadBitfield(m_bPotentialCityWork       ); break;
 
+		case Save_ePlotType:               m_ePlotType             = reader.ReadBitfield(m_ePlotType                ); break;
+		case Save_eTerrainType:            m_eTerrainType          = reader.ReadBitfield(m_eTerrainType             ); break;
+		case Save_eFeatureType:            m_eFeatureType          = reader.ReadBitfield(m_eFeatureType             ); break;
+		case Save_eBonusType:              m_eBonusType            = reader.ReadBitfield(m_eBonusType               ); break;
+		case Save_eImprovementType:        m_eImprovementType      = reader.ReadBitfield(m_eImprovementType         ); break;
+		case Save_eRouteType:              m_eRouteType            = reader.ReadBitfield(m_eRouteType               ); break;
+		case Save_eOwner:                  m_eOwner                = reader.ReadBitfield(m_eOwner                   ); break;
+		case Save_eRiverNSDirection:       m_eRiverNSDirection     = reader.ReadBitfield(m_eRiverNSDirection        ); break;
+		case Save_eRiverWEDirection:       m_eRiverWEDirection     = reader.ReadBitfield(m_eRiverWEDirection        ); break;
+		case Save_eEurope:                 m_eEurope               = reader.ReadBitfield(m_eEurope                  ); break;
+		
+		case Save_plotCity:                reader.Read(m_plotCity                   ); break;
+		case Save_workingCity:             reader.Read(m_workingCity                ); break;
+		case Save_workingCityOverride:     reader.Read(m_workingCityOverride        ); break;
+
+
+		case Save_aiYield:
+		{
+			// copy YieldArray into a short array
+			// this way 
+			YieldArray<short> temp_yield;
+			reader.Read(temp_yield);
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+			{
+				m_aiYield[eYield] = temp_yield.get(eYield);
+			}
+		}
 		}
 	}
 	
 	// Loading done. Set up the cache (if any).
-
+	updateImpassable();
 }
 
 void CvPlot::write(CvSavegameWriter& writer)
@@ -188,7 +259,29 @@ void CvPlot::write(CvSavegameWriter& writer)
 	writer.Write(Save_NOfRiver, m_bNOfRiver, defaultNOfRiver);
 	writer.Write(Save_WOfRiver, m_bWOfRiver, defaultWOfRiver);
 	writer.Write(Save_PotentialCityWork, m_bPotentialCityWork, defaultPotentialCityWork);
+	
+	writer.Write(Save_ePlotType, m_ePlotType, defaultePlotType);
+	writer.Write(Save_eTerrainType, m_eTerrainType, defaulteTerrainType);
+	writer.Write(Save_eFeatureType, m_eFeatureType, defaulteFeatureType);
+	writer.Write(Save_eBonusType, m_eBonusType, defaulteBonusType);
+	writer.Write(Save_eImprovementType, m_eImprovementType, defaulteImprovementType);
+	writer.Write(Save_eRouteType, m_eRouteType, defaulteRouteType);
+	writer.Write(Save_eOwner, m_eOwner, defaulteOwner);
+	writer.Write(Save_eRiverNSDirection, m_eRiverNSDirection, defaulteRiverNSDirection);
+	writer.Write(Save_eRiverWEDirection, m_eRiverWEDirection, defaulteRiverWEDirection);
+	writer.Write(Save_eEurope, m_eEurope, defaulteEurope);
+	
+	writer.Write(Save_plotCity, m_plotCity);
+	writer.Write(Save_workingCity, m_workingCity);
+	writer.Write(Save_workingCityOverride, m_workingCityOverride);
 
+	// save a YieldArray instead of a short array, which happens to be of length NUM_YIELD_TYPES
+	YieldArray<short> temp_yield;
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		temp_yield.set(m_aiYield[eYield], eYield);
+	}
+	writer.Write(Save_aiYield, temp_yield);
 
 	writer.Write(Save_END);
 }

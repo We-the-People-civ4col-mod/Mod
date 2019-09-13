@@ -271,7 +271,7 @@ public:
 #ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
-		return (PlayerTypes)m_eOwner;
+		return m_eOwner;
 	}
 #endif
 	void setOwner(PlayerTypes eNewValue, bool bCheckUnits);
@@ -479,7 +479,7 @@ protected:
 	// Super Forts end
 	// Super Forts begin *bombard*
 	int m_iDefenseDamage;
-	bool m_bBombarded;
+	bool m_bBombarded:1;
 	// Super Forts end
 
 	bool m_bStartingPlot:1;
@@ -493,21 +493,24 @@ protected:
 	bool m_bLayoutStateWorked:1;
 	bool m_bImpassable:1;
 
-	char /*PlayerTypes*/ m_eOwner;
-	short /*PlotTypes*/ m_ePlotType;
-	short /*TerrainTypes*/ m_eTerrainType;
-	short /*FeatureTypes*/ m_eFeatureType;
-	short /*BonusTypes*/ m_eBonusType;
-	short /*ImprovementTypes*/ m_eImprovementType;
-	short /*RouteTypes*/ m_eRouteType;
-	char /*CardinalDirectionTypes*/ m_eRiverNSDirection;
-	char /*CardinalDirectionTypes*/ m_eRiverWEDirection;
-	char /*EuropeTypes*/ m_eEurope;
+	PlotTypes m_ePlotType : 16;
+	TerrainTypes m_eTerrainType : 16;
+	FeatureTypes m_eFeatureType : 16;
+	BonusTypes m_eBonusType : 16;
+	ImprovementTypes m_eImprovementType : 16;
+	RouteTypes m_eRouteType : 16;
+
+	PlayerTypes m_eOwner : 8;
+	CardinalDirectionTypes m_eRiverNSDirection : 8;
+	CardinalDirectionTypes m_eRiverWEDirection : 8;
+	EuropeTypes m_eEurope : 8;
 
 	IDInfo m_plotCity;
 	IDInfo m_workingCity;
 	IDInfo m_workingCityOverride;
 
+	// TODO: convert to YieldArray
+	// already converted in YieldCategory branch
 	short* m_aiYield;
 	
 	short* m_aiDangerMap;	// TAC - AI Improved Naval AI - koma13

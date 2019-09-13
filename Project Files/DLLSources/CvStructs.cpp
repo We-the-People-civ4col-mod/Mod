@@ -15,6 +15,8 @@
 #include "CvUnit.h"
 //#include "CvStructs.h"
 
+#include "CvSavegame.h"
+
 void IDInfo::read(FDataStreamBase* pStream)
 {
 	pStream->Read((int*)&eOwner);
@@ -25,6 +27,18 @@ void IDInfo::write(FDataStreamBase* pStream) const
 {
 	pStream->Write(eOwner);
 	pStream->Write(iID);
+}
+
+void IDInfo::read(CvSavegameReader& reader)
+{
+	reader.Read(eOwner);
+	reader.Read(iID);
+}
+
+void IDInfo::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eOwner);
+	writer.Write(iID);
 }
 
 void TradeData::read(FDataStreamBase* pStream)
