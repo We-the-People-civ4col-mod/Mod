@@ -113,6 +113,11 @@ void CvSavegameReader::Read(BoolArray& baArray)
 	baArray.Read(this);
 }
 
+void CvSavegameReader::Read(PlayerBoolArray& array)
+{
+	array.Read(*this);
+}
+
 void CvSavegameReader::Read(IDInfo& idInfo)
 {
 	idInfo.read(*this);
@@ -328,6 +333,15 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, BoolArray& baArray)
 	{
 		Write(eType);
 		Write(baArray);
+	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerBoolArray& array)
+{
+	if (array.hasContent())
+	{
+		Write(eType);
+		array.Write(*this);
 	}
 }
 

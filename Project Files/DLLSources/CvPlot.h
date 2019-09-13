@@ -525,7 +525,7 @@ protected:
 	char* m_aiRevealedOwner;
 
 	bool* m_abRiverCrossing;	// bit vector
-	bool* m_abRevealed;
+	PlayerBoolArray m_pab_Revealed;
 
 	short* /*ImprovementTypes*/ m_aeRevealedImprovementType;
 	short* /*RouteTypes*/ m_aeRevealedRouteType;

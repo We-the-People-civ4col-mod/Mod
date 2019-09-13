@@ -376,6 +376,9 @@
     <ClCompile Include="DLLSources\CvAreaSavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\PlayerBoolArray.cpp">
+      <Filter>Data\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -722,6 +725,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\CvSavegame.h">
       <Filter>CV\Savegames</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\PlayerBoolArray.h">
+      <Filter>Data\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -273,6 +273,7 @@ namespace boost
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
+#include "PlayerBoolArray.h"
 #include "InfoArray.h"
 #include "InfoCacheArray.h"
 

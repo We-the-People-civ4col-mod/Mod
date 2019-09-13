@@ -46,7 +46,6 @@ CvPlot::CvPlot()
 	m_aiVisibilityCount = NULL;
 	m_aiRevealedOwner = NULL;
 	m_abRiverCrossing = NULL;
-	m_abRevealed = NULL;
 	m_aeRevealedImprovementType = NULL;
 	m_aeRevealedRouteType = NULL;
 	m_paiBuildProgress = NULL;
@@ -111,7 +110,6 @@ void CvPlot::uninit()
 	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
 
 	SAFE_DELETE_ARRAY(m_abRiverCrossing);
-	SAFE_DELETE_ARRAY(m_abRevealed);
 
 	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
 	SAFE_DELETE_ARRAY(m_aeRevealedRouteType);
@@ -6883,12 +6881,7 @@ bool CvPlot::isRevealed(TeamTypes eTeam, bool bDebug) const
 		return true;
 	}
 
-	if (NULL == m_abRevealed)
-	{
-		return false;
-	}
-
-	return m_abRevealed[eTeam];
+	return m_pab_Revealed.get(eTeam);
 }
 
 
@@ -6903,16 +6896,7 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 	if (isRevealed(eTeam, false) != bNewValue)
 	{
-		if (NULL == m_abRevealed)
-		{
-			m_abRevealed = new bool[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_abRevealed[iI] = false;
-			}
-		}
-
-		m_abRevealed[eTeam] = bNewValue;
+		m_pab_Revealed.set(eTeam, bNewValue);
 
 		if (area())
 		{
@@ -8248,14 +8232,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 		pStream->Read(cCount, m_abRiverCrossing);
 	}
 
-	SAFE_DELETE_ARRAY(m_abRevealed);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_abRevealed = new bool[cCount];
-		pStream->Read(cCount, m_abRevealed);
-	}
-
 	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
 	pStream->Read(&cCount);
 	if (cCount > 0)
@@ -8430,16 +8406,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	{
 		pStream->Write((char)NUM_DIRECTION_TYPES);
 		pStream->Write(NUM_DIRECTION_TYPES, m_abRiverCrossing);
-	}
-
-	if (NULL == m_abRevealed)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_abRevealed);
 	}
 
 	if (NULL == m_aeRevealedImprovementType)

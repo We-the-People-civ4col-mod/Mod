@@ -88,6 +88,7 @@ enum SavegameVariableTypes
 	Save_workingCityOverride,
 
 	Save_aiYield,
+	Save_Revealed,
 };
 
 // assign everything to default values
@@ -138,6 +139,8 @@ void CvPlot::resetSavedData()
 	m_plotCity.reset();
 	m_workingCity.reset();
 	m_workingCityOverride.reset();
+
+	m_pab_Revealed.reset();
 }
 
 void CvPlot::read(CvSavegameReader& reader)
@@ -202,6 +205,7 @@ void CvPlot::read(CvSavegameReader& reader)
 		case Save_workingCity:             reader.Read(m_workingCity                ); break;
 		case Save_workingCityOverride:     reader.Read(m_workingCityOverride        ); break;
 
+		case Save_Revealed:                reader.Read(m_pab_Revealed               ); break;
 
 		case Save_aiYield:
 		{
@@ -282,6 +286,8 @@ void CvPlot::write(CvSavegameWriter& writer)
 		temp_yield.set(m_aiYield[eYield], eYield);
 	}
 	writer.Write(Save_aiYield, temp_yield);
+
+	writer.Write(Save_Revealed, m_pab_Revealed);
 
 	writer.Write(Save_END);
 }

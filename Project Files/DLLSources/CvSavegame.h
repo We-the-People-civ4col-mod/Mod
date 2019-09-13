@@ -31,7 +31,7 @@ public:
 	void Read(JustInTimeArray<T>& jitArray);
 
 	void Read(BoolArray& baArray);
-
+	void Read(PlayerBoolArray& array); 
 	void Read(IDInfo& idInfo);
 
 	template<typename T>
@@ -158,6 +158,7 @@ public:
 	void Write(SavegameVariableTypes eType, CvString& szString);
 	void Write(SavegameVariableTypes eType, CvWString& szString);
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
+	void Write(SavegameVariableTypes eType, PlayerBoolArray& array);
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
 
 	template<class T>
