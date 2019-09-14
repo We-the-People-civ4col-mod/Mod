@@ -103,8 +103,8 @@ public:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 
-	void read(CvSavegameReader& reader);
-	void write(CvSavegameWriter& writer);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 protected:
 

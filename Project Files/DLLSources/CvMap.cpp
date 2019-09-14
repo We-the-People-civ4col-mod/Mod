@@ -1123,9 +1123,9 @@ void CvMap::read(FDataStreamBase* pStream)
 	// Init data before load
 	reset(&defaultMapData);
 
-	CvSavegameReader reader(pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 	read(reader);
-	reader.VerifyReadComplete();
 
 	if (numPlotsINLINE() > 0)
 	{
@@ -1147,9 +1147,10 @@ void CvMap::read(FDataStreamBase* pStream)
 //
 void CvMap::write(FDataStreamBase* pStream)
 {
-	CvSavegameWriter writer(pStream);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
 	write(writer);
-	writer.WriteFile();
+	writerbase.WriteFile();
 
 	int iI;
 	for (iI = 0; iI < numPlotsINLINE(); iI++)

@@ -14,7 +14,7 @@ void CvArea::resetSavedData()
 	
 }
 
-void CvArea::read(CvSavegameReader& reader)
+void CvArea::read(CvSavegameReader reader)
 {
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
@@ -41,7 +41,7 @@ void CvArea::read(CvSavegameReader& reader)
 
 }
 
-void CvArea::write(CvSavegameWriter& writer)
+void CvArea::write(CvSavegameWriter writer)
 {
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.

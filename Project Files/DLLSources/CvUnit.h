@@ -705,8 +705,8 @@ public:
 	virtual void write(FDataStreamBase* pStream);
 
 	void resetSavedData();
-	void read(CvSavegameReader* pStream);
-	void write(CvSavegameWriter* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	virtual void AI_init() = 0;
 	virtual void AI_uninit() = 0;

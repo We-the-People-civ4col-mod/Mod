@@ -57,7 +57,7 @@ void CvMap::resetSavedData()
 	m_ja_NumBonusesOnLand.reset();
 }
 
-void CvMap::read(CvSavegameReader& reader)
+void CvMap::read(CvSavegameReader reader)
 {
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
@@ -121,7 +121,7 @@ void CvMap::read(CvSavegameReader& reader)
 
 }
 
-void CvMap::write(CvSavegameWriter& writer)
+void CvMap::write(CvSavegameWriter writer)
 {
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.

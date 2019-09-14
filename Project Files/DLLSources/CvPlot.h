@@ -446,8 +446,8 @@ public:
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
 
-	void read(CvSavegameReader& reader);
-	void write(CvSavegameWriter& writer);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	void writeDesyncLog(FILE *f);
 

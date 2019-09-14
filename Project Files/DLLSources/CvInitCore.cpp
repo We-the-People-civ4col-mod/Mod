@@ -1849,7 +1849,8 @@ int CvInitCore::getMaxEuropePlayers() const
 // There is no reason to add a reading loop and enum because we can't really change the data in CvInitCore
 void CvInitCore::read(FDataStreamBase* pStream)
 {
-	CvSavegameReader reader(pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 	reader.ReadConversionTable();
 
 	uint uiSaveFlag=0;
@@ -1943,14 +1944,13 @@ void CvInitCore::read(FDataStreamBase* pStream)
 			GET_PLAYER((PlayerTypes) i).updateTeamType();
 		}
 	}
-
-	reader.VerifyReadComplete();
 }
 
 
 void CvInitCore::write(FDataStreamBase* pStream)
 {
-	CvSavegameWriter writer(pStream);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
 	writer.WriteTranslationTable();
 
 	uint uiSaveFlag=0;
@@ -2032,7 +2032,7 @@ void CvInitCore::write(FDataStreamBase* pStream)
 
 	m_aeSlotStatus[getActivePlayer()] = eOldStatus;
 
-	writer.WriteFile();
+	writerbase.WriteFile();
 }
 
 int CvInitCore::read(CvSavegameReader& reader, JITarrayTypes eType, bool*& pArray, bool bAllocate)

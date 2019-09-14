@@ -7,12 +7,14 @@ enum SavegameVariableTypes;
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
 
+class CvSavegameReaderBase;
+class CvSavegameWriterBase;
+
 class CvSavegameReader
 {
 public:
-	CvSavegameReader(FDataStreamBase* pStream);
-
-	~CvSavegameReader();
+	CvSavegameReader(CvSavegameReaderBase& readerBase);
+	CvSavegameReader(const CvSavegameReader& reader);
 
 	void Read(int& variable);
 	void Read(short& variable);
@@ -108,10 +110,6 @@ public:
 
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
 
-	// call when the reader is done.
-	// throws an error if read byte count differs from saved byte count.
-	void VerifyReadComplete() const;
-
 #ifndef MakefileCompilation
 	// remove IntelliSense errors, which causes bogus red lines in the code
 	// This isn't compiled and won't effect the game at runtime
@@ -123,16 +121,14 @@ private:
 
 	void Read(byte* var, unsigned int iSize);
 
-	FDataStreamBase* m_pStream;
-	byte* m_Memory;
-	byte* m_MemoryAllocation;
-	unsigned int m_iSize;
+	CvSavegameReaderBase& m_ReaderBase;
 };
 
 class CvSavegameWriter
 {
 public:
-	CvSavegameWriter(FDataStreamBase* pStream);
+	CvSavegameWriter(CvSavegameWriterBase& writerbase);
+	CvSavegameWriter(const CvSavegameWriter& writer);
 
 	template<enum T>
 	void Write(T variable);
@@ -167,8 +163,6 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 	
-	void WriteFile();
-
 	// enum conversion
 	void GenerateTranslationTable();
 	void WriteTranslationTable();
@@ -177,8 +171,7 @@ private:
 
 	void Write(byte*var, unsigned int iSize);
 
-	FDataStreamBase* m_pStream;
-	std::vector<byte> m_vector;
+	std::vector<byte>& m_vector;
 };
 
 //
@@ -247,5 +240,51 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	}
 }
 
+
+///
+/// base classes
+/// do not work with these directly. Make once instance when called from the exe and that's it.
+/// Instantly make an instance of the reader/writer with a reference to the base class and then use the reader/writer instead.
+///
+/// The idea is that the reader/writer will make a new instance for each function call.
+/// Since they don't actually contain data, but rather references to the data in the base class, it works like it's just one instance.
+/// However since it's one instance for each function call, it will be possible to add variables, which are local to the function in question.
+///
+/// This allows the reader/writer to be aware of which class it's working on without losing this info by calling some other classes.
+/// For instance CvMap knows it's CvMap. It calls CvPlot multiple times, which then knows it's CvPlot, but when it returns, it's back to CvMap without any extra code.
+///
+
+class CvSavegameReaderBase
+{
+	friend class CvSavegameReader;
+public:
+	CvSavegameReaderBase(FDataStreamBase* pStream);
+
+	~CvSavegameReaderBase();
+
+private:
+
+	void Read(byte* var, unsigned int iSize);
+
+	FDataStreamBase* m_pStream;
+	byte* m_Memory;
+	byte* m_MemoryAllocation;
+	byte *m_MemoryEnd;
+	unsigned int m_iSize;
+};
+
+class CvSavegameWriterBase
+{
+	friend class CvSavegameWriter;
+public:
+	CvSavegameWriterBase(FDataStreamBase* pStream);
+
+	void WriteFile();
+
+private:
+
+	FDataStreamBase* m_pStream;
+	std::vector<byte> m_vector;
+};
 
 #endif

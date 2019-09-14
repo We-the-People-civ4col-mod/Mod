@@ -14,14 +14,14 @@ void CvUnitAI::resetSavedData()
 	
 }
 
-void CvUnitAI::read(CvSavegameReader& reader)
+void CvUnitAI::read(CvSavegameReader reader)
 {
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	resetSavedData();
 
 	// read base class. It's always placed first
-	CvUnit::read(&reader);
+	CvUnit::read(reader);
 
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
@@ -44,7 +44,7 @@ void CvUnitAI::read(CvSavegameReader& reader)
 
 }
 
-void CvUnitAI::write(CvSavegameWriter& writer)
+void CvUnitAI::write(CvSavegameWriter writer)
 {
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
@@ -53,7 +53,7 @@ void CvUnitAI::write(CvSavegameWriter& writer)
 	// Less data saved/loaded means smaller savegames.
 
 	// write base class first
-	CvUnit::write(&writer);
+	CvUnit::write(writer);
 
 	writer.Write(Save_END);
 }

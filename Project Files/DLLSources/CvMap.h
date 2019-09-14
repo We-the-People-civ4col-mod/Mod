@@ -269,8 +269,8 @@ public:
 protected:
 
 	void resetSavedData();
-	void read(CvSavegameReader& reader);
-	void write(CvSavegameWriter& writer);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	int m_iGridWidth;
 	int m_iGridHeight;

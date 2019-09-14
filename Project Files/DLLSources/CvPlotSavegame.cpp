@@ -143,7 +143,7 @@ void CvPlot::resetSavedData()
 	m_pab_Revealed.reset();
 }
 
-void CvPlot::read(CvSavegameReader& reader)
+void CvPlot::read(CvSavegameReader reader)
 {
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
@@ -225,7 +225,7 @@ void CvPlot::read(CvSavegameReader& reader)
 	updateImpassable();
 }
 
-void CvPlot::write(CvSavegameWriter& writer)
+void CvPlot::write(CvSavegameWriter writer)
 {
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.

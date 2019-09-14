@@ -2411,7 +2411,8 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	}
 
 	// generate the savegame tag conversion table
-	CvSavegameWriter writer(NULL);
+	CvSavegameWriterBase writerbase(NULL);
+	CvSavegameWriter writer(writerbase);
 	writer.GenerateTranslationTable();
 
 	DestroyFXml();

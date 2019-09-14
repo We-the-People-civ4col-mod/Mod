@@ -23,23 +23,16 @@ enum SavegameVariableTypes
 };
 
 
-
-CvSavegameReader::CvSavegameReader(FDataStreamBase* pStream)
-	: m_pStream(pStream)
+// constructor
+CvSavegameReader::CvSavegameReader(CvSavegameReaderBase& readerBase)
+	: m_ReaderBase(readerBase)
 {
-	pStream->Read(&m_iSize);
-	m_MemoryAllocation = NULL;
-	if (m_iSize > 0)
-	{
-		m_MemoryAllocation = new byte[m_iSize];
-		pStream->Read(m_iSize, m_MemoryAllocation);
-	}
-	m_Memory = m_MemoryAllocation;
 }
 
-CvSavegameReader::~CvSavegameReader()
+// copy constructor
+CvSavegameReader::CvSavegameReader(const CvSavegameReader& reader)
+	: m_ReaderBase(reader.m_ReaderBase)
 {
-	SAFE_DELETE_ARRAY(m_MemoryAllocation);
 }
 
 
@@ -125,21 +118,7 @@ void CvSavegameReader::Read(IDInfo& idInfo)
 
 void CvSavegameReader::Read(byte* var, unsigned int iSize)
 {
-	for (unsigned int i = 0; i < iSize; ++i)
-	{
-		if (m_Memory == (m_MemoryAllocation + m_iSize))
-		{
-			FAssertMsg(false, "Savegame read error (not enough bytes)");
-			char szMessage[1024];
-
-			sprintf(szMessage, "Tried to read more bytes than there are saved in the savegame");
-			gDLL->MessageBox(szMessage, "Savegame read Error");
-
-			return;
-		}
-		var[i] = *m_Memory;
-		++m_Memory;
-	}
+	m_ReaderBase.Read(var, iSize);
 }
 
 SavegameVariableTypes CvSavegameReader::ReadSwitch()
@@ -212,19 +191,6 @@ int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 	return iIndex;
 }
 
-void CvSavegameReader::VerifyReadComplete() const
-{
-	int iBytesLeft = m_MemoryAllocation + m_iSize - m_Memory;
-
-	if (iBytesLeft != 0)
-	{
-		FAssertMsg(false, CvString::format("Savegame read error (%d unread bytes)", iBytesLeft).c_str());
-		char szMessage[1024];
-
-		sprintf(szMessage, "There are unread leftover bytes in the savegame");
-		gDLL->MessageBox(szMessage, "Savegame read Error");
-	}
-}
 
 ///
 ///
@@ -232,12 +198,17 @@ void CvSavegameReader::VerifyReadComplete() const
 ///
 ///
 
-
-CvSavegameWriter::CvSavegameWriter(FDataStreamBase* pStream)
-	: m_pStream(pStream)
+// constructor
+CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
+	: m_vector(writerbase.m_vector)
 {
 }
 
+// copy constructor
+CvSavegameWriter::CvSavegameWriter(const CvSavegameWriter& writer)
+	: m_vector(writer.m_vector)
+{
+}
 
 void CvSavegameWriter::Write(int variable)
 {
@@ -359,18 +330,6 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, IDInfo& idInfo)
 	}
 }
 
-void CvSavegameWriter::WriteFile()
-{
-	unsigned int iSize = m_vector.size();
-	m_pStream->Write(iSize);
-
-	byte* array = &m_vector.front();
-	if (iSize > 0)
-	{
-		m_pStream->Write(iSize, array);
-	}
-}
-
 void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 {
 	for (unsigned int i = 0; i < iSize; ++i)
@@ -388,7 +347,6 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType)
 
 void CvSavegameWriter::GenerateTranslationTable()
 {
-	FAssertMsg(m_pStream == NULL, "CvSavegameWriter::GenerateTranslationTable() is for init only");
 	FAssertMsg(save_conversion_table.size() == 0, "Conversion table only needs to be set once");
 
 	CvString szString;
@@ -431,4 +389,81 @@ void CvSavegameWriter::GenerateTranslationTable()
 void CvSavegameWriter::WriteTranslationTable()
 {
 	this->m_vector = save_conversion_table;
+}
+
+///
+///
+///  base classes
+///
+///
+
+CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
+	: m_pStream(pStream)
+{
+	pStream->Read(&m_iSize);
+	m_MemoryAllocation = NULL;
+	if (m_iSize > 0)
+	{
+		m_MemoryAllocation = new byte[m_iSize];
+		pStream->Read(m_iSize, m_MemoryAllocation);
+	}
+	m_Memory = m_MemoryAllocation;
+	m_MemoryEnd = m_Memory + m_iSize;
+}
+
+CvSavegameReaderBase::~CvSavegameReaderBase()
+{
+	// first check if the entire savegame have been read
+	int iBytesLeft = m_MemoryAllocation + m_iSize - m_Memory;
+
+	if (iBytesLeft != 0)
+	{
+		// there are leftover bytes. Display an error message because the savegame code is broken and should be fixed ASAP.
+
+		FAssertMsg(false, CvString::format("Savegame read error (%d unread bytes)", iBytesLeft).c_str());
+		char szMessage[1024];
+
+		sprintf(szMessage, "There are unread leftover bytes in the savegame");
+		gDLL->MessageBox(szMessage, "Savegame read Error");
+	}
+
+	SAFE_DELETE_ARRAY(m_MemoryAllocation);
+}
+
+void CvSavegameReaderBase::Read(byte* var, unsigned int iSize)
+{
+	for (unsigned int i = 0; i < iSize; ++i)
+	{
+		if (m_Memory == m_MemoryEnd)
+		{
+			FAssertMsg(false, "Savegame read error (not enough bytes)");
+			char szMessage[1024];
+
+			sprintf(szMessage, "Tried to read more bytes than there are saved in the savegame");
+			gDLL->MessageBox(szMessage, "Savegame read Error");
+
+			return;
+		}
+		var[i] = *m_Memory;
+		++m_Memory;
+	}
+}
+
+
+
+CvSavegameWriterBase::CvSavegameWriterBase(FDataStreamBase* pStream)
+	: m_pStream(pStream)
+{
+}
+
+void CvSavegameWriterBase::WriteFile()
+{
+	unsigned int iSize = m_vector.size();
+	m_pStream->Write(iSize);
+
+	byte* array = &m_vector.front();
+	if (iSize > 0)
+	{
+		m_pStream->Write(iSize, array);
+	}
 }

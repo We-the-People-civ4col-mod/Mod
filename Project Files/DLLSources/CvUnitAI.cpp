@@ -18771,7 +18771,8 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 
 void CvUnitAI::read(FDataStreamBase* pStream)
 {
-	CvSavegameReader reader(pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 
 	read(reader);
 	CvUnit::read(pStream);
@@ -18795,9 +18796,10 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 void CvUnitAI::write(FDataStreamBase* pStream)
 {
-	CvSavegameWriter writer(pStream);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
 	write(writer);
-	writer.WriteFile();
+	writerbase.WriteFile();
 
 	CvUnit::write(pStream);
 

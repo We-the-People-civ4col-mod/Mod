@@ -84,8 +84,8 @@ public:
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
 
-	void read(CvSavegameReader& reader);
-	void write(CvSavegameWriter& writer);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	//TAC Whaling, ray
 	bool AI_transportReturnToPort(bool bUnload, CvCity* pCity);
