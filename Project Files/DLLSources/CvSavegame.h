@@ -56,9 +56,6 @@ public:
 	void Read(PlayerBoolArray& array); 
 	void Read(IDInfo& idInfo);
 
-	template<typename T>
-	void ReadEnum(T& variable);
-
 	// workaround because we can't use references on bitfields
 	template<typename T>
 	T ReadBitfield(T variable);
@@ -77,52 +74,52 @@ public:
 	void Read(TurnTimerTypes        & variable) { Read((int&)variable); }
 	
 	// everything linked to xml file enums
-	void Read(ArtStyleTypes         & variable) { ReadEnum(variable); }
-	void Read(BonusTypes            & variable) { ReadEnum(variable); }
-	void Read(BuildTypes            & variable) { ReadEnum(variable); }
-	void Read(BuildingTypes         & variable) { ReadEnum(variable); }
-	void Read(BuildingClassTypes    & variable) { ReadEnum(variable); }
-	void Read(SpecialBuildingTypes  & variable) { ReadEnum(variable); }
-	void Read(CivEffectTypes        & variable) { ReadEnum(variable); }
-	void Read(CivicTypes            & variable) { ReadEnum(variable); }
-	void Read(CivicOptionTypes      & variable) { ReadEnum(variable); }
-	void Read(CivilizationTypes     & variable) { ReadEnum(variable); }
-	void Read(ClimateTypes          & variable) { ReadEnum(variable); }
-	void Read(ColorTypes            & variable) { ReadEnum(variable); }
-	void Read(CultureLevelTypes     & variable) { ReadEnum(variable); }
-	void Read(DiplomacyTypes        & variable) { ReadEnum(variable); }
-	void Read(EmphasizeTypes        & variable) { ReadEnum(variable); }
-	void Read(EraTypes              & variable) { ReadEnum(variable); }
-	void Read(EuropeTypes           & variable) { ReadEnum(variable); }
-	void Read(EventTypes            & variable) { ReadEnum(variable); }
-	void Read(EventTriggerTypes     & variable) { ReadEnum(variable); }
-	void Read(FatherTypes           & variable) { ReadEnum(variable); }
-	void Read(FatherPointTypes      & variable) { ReadEnum(variable); }
-	void Read(FeatureTypes          & variable) { ReadEnum(variable); }
-	void Read(GameOptionTypes       & variable) { ReadEnum(variable); }
-	void Read(GameSpeedTypes        & variable) { ReadEnum(variable); }
-	void Read(GoodyTypes            & variable) { ReadEnum(variable); }
-	void Read(HandicapTypes         & variable) { ReadEnum(variable); }
-	void Read(HurryTypes            & variable) { ReadEnum(variable); }
-	void Read(ImprovementTypes      & variable) { ReadEnum(variable); }
-	void Read(LeaderHeadTypes       & variable) { ReadEnum(variable); }
-	void Read(MemoryTypes           & variable) { ReadEnum(variable); }
-	void Read(PlayerColorTypes      & variable) { ReadEnum(variable); }
-	void Read(PlayerOptionTypes     & variable) { ReadEnum(variable); }
-	void Read(ProfessionTypes       & variable) { ReadEnum(variable); }
-	void Read(PromotionTypes        & variable) { ReadEnum(variable); }
-	void Read(RouteTypes            & variable) { ReadEnum(variable); }
-	void Read(SeaLevelTypes         & variable) { ReadEnum(variable); }
-	void Read(TerrainTypes          & variable) { ReadEnum(variable); }
-	void Read(TraitTypes            & variable) { ReadEnum(variable); }
-	void Read(UnitTypes             & variable) { ReadEnum(variable); }
-	void Read(UnitAITypes           & variable) { ReadEnum(variable); }
-	void Read(UnitClassTypes        & variable) { ReadEnum(variable); }
-	void Read(UnitCombatTypes       & variable) { ReadEnum(variable); }
-	void Read(SpecialUnitTypes      & variable) { ReadEnum(variable); }
-	void Read(VictoryTypes          & variable) { ReadEnum(variable); }
-	void Read(YieldTypes            & variable) { ReadEnum(variable); }
-	void Read(WorldSizeTypes        & variable) { ReadEnum(variable); }
+	void Read(ArtStyleTypes         & variable) { ReadXmlEnum(variable); }
+	void Read(BonusTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(BuildTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(BuildingTypes         & variable) { ReadXmlEnum(variable); }
+	void Read(BuildingClassTypes    & variable) { ReadXmlEnum(variable); }
+	void Read(SpecialBuildingTypes  & variable) { ReadXmlEnum(variable); }
+	void Read(CivEffectTypes        & variable) { ReadXmlEnum(variable); }
+	void Read(CivicTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(CivicOptionTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(CivilizationTypes     & variable) { ReadXmlEnum(variable); }
+	void Read(ClimateTypes          & variable) { ReadXmlEnum(variable); }
+	void Read(ColorTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(CultureLevelTypes     & variable) { ReadXmlEnum(variable); }
+	void Read(DiplomacyTypes        & variable) { ReadXmlEnum(variable); }
+	void Read(EmphasizeTypes        & variable) { ReadXmlEnum(variable); }
+	void Read(EraTypes              & variable) { ReadXmlEnum(variable); }
+	void Read(EuropeTypes           & variable) { ReadXmlEnum(variable); }
+	void Read(EventTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(EventTriggerTypes     & variable) { ReadXmlEnum(variable); }
+	void Read(FatherTypes           & variable) { ReadXmlEnum(variable); }
+	void Read(FatherPointTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(FeatureTypes          & variable) { ReadXmlEnum(variable); }
+	void Read(GameOptionTypes       & variable) { ReadXmlEnum(variable); }
+	void Read(GameSpeedTypes        & variable) { ReadXmlEnum(variable); }
+	void Read(GoodyTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(HandicapTypes         & variable) { ReadXmlEnum(variable); }
+	void Read(HurryTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(ImprovementTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(LeaderHeadTypes       & variable) { ReadXmlEnum(variable); }
+	void Read(MemoryTypes           & variable) { ReadXmlEnum(variable); }
+	void Read(PlayerColorTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(PlayerOptionTypes     & variable) { ReadXmlEnum(variable); }
+	void Read(ProfessionTypes       & variable) { ReadXmlEnum(variable); }
+	void Read(PromotionTypes        & variable) { ReadXmlEnum(variable); }
+	void Read(RouteTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(SeaLevelTypes         & variable) { ReadXmlEnum(variable); }
+	void Read(TerrainTypes          & variable) { ReadXmlEnum(variable); }
+	void Read(TraitTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(UnitTypes             & variable) { ReadXmlEnum(variable); }
+	void Read(UnitAITypes           & variable) { ReadXmlEnum(variable); }
+	void Read(UnitClassTypes        & variable) { ReadXmlEnum(variable); }
+	void Read(UnitCombatTypes       & variable) { ReadXmlEnum(variable); }
+	void Read(SpecialUnitTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(VictoryTypes          & variable) { ReadXmlEnum(variable); }
+	void Read(YieldTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(WorldSizeTypes        & variable) { ReadXmlEnum(variable); }
 
 	void ReadConversionTable();
 
@@ -136,6 +133,10 @@ public:
 #endif
 
 private:
+
+	template<typename T>
+	void ReadXmlEnum(T& variable);
+	void ReadXmlEnum(int& iVariable, JITarrayTypes eType);
 
 	void Read(byte* var, unsigned int iSize);
 	int ReadBytes(int iNumBytes);
@@ -191,8 +192,59 @@ public:
 	void GenerateTranslationTable();
 	void WriteTranslationTable();
 
+	// everything linked to xml file enums
+	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
+	void Write(BonusTypes            variable) { WriteXmlEnum(variable); }
+	void Write(BuildTypes            variable) { WriteXmlEnum(variable); }
+	void Write(BuildingTypes         variable) { WriteXmlEnum(variable); }
+	void Write(BuildingClassTypes    variable) { WriteXmlEnum(variable); }
+	void Write(SpecialBuildingTypes  variable) { WriteXmlEnum(variable); }
+	void Write(CivEffectTypes        variable) { WriteXmlEnum(variable); }
+	void Write(CivicTypes            variable) { WriteXmlEnum(variable); }
+	void Write(CivicOptionTypes      variable) { WriteXmlEnum(variable); }
+	void Write(CivilizationTypes     variable) { WriteXmlEnum(variable); }
+	void Write(ClimateTypes          variable) { WriteXmlEnum(variable); }
+	void Write(ColorTypes            variable) { WriteXmlEnum(variable); }
+	void Write(CultureLevelTypes     variable) { WriteXmlEnum(variable); }
+	void Write(DiplomacyTypes        variable) { WriteXmlEnum(variable); }
+	void Write(EmphasizeTypes        variable) { WriteXmlEnum(variable); }
+	void Write(EraTypes              variable) { WriteXmlEnum(variable); }
+	void Write(EuropeTypes           variable) { WriteXmlEnum(variable); }
+	void Write(EventTypes            variable) { WriteXmlEnum(variable); }
+	void Write(EventTriggerTypes     variable) { WriteXmlEnum(variable); }
+	void Write(FatherTypes           variable) { WriteXmlEnum(variable); }
+	void Write(FatherPointTypes      variable) { WriteXmlEnum(variable); }
+	void Write(FeatureTypes          variable) { WriteXmlEnum(variable); }
+	void Write(GameOptionTypes       variable) { WriteXmlEnum(variable); }
+	void Write(GameSpeedTypes        variable) { WriteXmlEnum(variable); }
+	void Write(GoodyTypes            variable) { WriteXmlEnum(variable); }
+	void Write(HandicapTypes         variable) { WriteXmlEnum(variable); }
+	void Write(HurryTypes            variable) { WriteXmlEnum(variable); }
+	void Write(ImprovementTypes      variable) { WriteXmlEnum(variable); }
+	void Write(LeaderHeadTypes       variable) { WriteXmlEnum(variable); }
+	void Write(MemoryTypes           variable) { WriteXmlEnum(variable); }
+	void Write(PlayerColorTypes      variable) { WriteXmlEnum(variable); }
+	void Write(PlayerOptionTypes     variable) { WriteXmlEnum(variable); }
+	void Write(ProfessionTypes       variable) { WriteXmlEnum(variable); }
+	void Write(PromotionTypes        variable) { WriteXmlEnum(variable); }
+	void Write(RouteTypes            variable) { WriteXmlEnum(variable); }
+	void Write(SeaLevelTypes         variable) { WriteXmlEnum(variable); }
+	void Write(TerrainTypes          variable) { WriteXmlEnum(variable); }
+	void Write(TraitTypes            variable) { WriteXmlEnum(variable); }
+	void Write(UnitTypes             variable) { WriteXmlEnum(variable); }
+	void Write(UnitAITypes           variable) { WriteXmlEnum(variable); }
+	void Write(UnitClassTypes        variable) { WriteXmlEnum(variable); }
+	void Write(UnitCombatTypes       variable) { WriteXmlEnum(variable); }
+	void Write(SpecialUnitTypes      variable) { WriteXmlEnum(variable); }
+	void Write(VictoryTypes          variable) { WriteXmlEnum(variable); }
+	void Write(YieldTypes            variable) { WriteXmlEnum(variable); }
+	void Write(WorldSizeTypes        variable) { WriteXmlEnum(variable); }
+
 private:
 
+	template<typename T>
+	void WriteXmlEnum(T variable);
+	void WriteXmlEnum(int iVariable, JITarrayTypes eType);
 	void Write(byte*var, unsigned int iSize);
 
 	SavegameClassTypes m_eClassType;
@@ -209,10 +261,11 @@ private:
 //
 
 template<typename T>
-inline void CvSavegameReader::ReadEnum(T& variable)
+inline void CvSavegameReader::ReadXmlEnum(T& variable)
 {
-	Read((byte*)&variable, sizeof(T));
-	variable = (T)ConvertIndex(getJITarrayType(variable), variable);
+	int iBuffer;
+	ReadXmlEnum(iBuffer, getJITarrayType(variable));
+	variable = static_cast<T>(iBuffer);
 }
 
 template<typename T>
@@ -266,6 +319,11 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	}
 }
 
+template<typename T>
+inline void CvSavegameWriter::WriteXmlEnum(T variable)
+{
+	WriteXmlEnum(variable, getJITarrayType(variable));
+}
 
 ///
 /// base classes

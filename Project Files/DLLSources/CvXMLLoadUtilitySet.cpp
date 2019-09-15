@@ -1115,6 +1115,11 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	readXMLfiles(false);
 	/// XML type preloading - end - Nightinggale
 
+	// generate the savegame tag conversion table
+	CvSavegameWriterBase writerbase(NULL);
+	CvSavegameWriter writer(writerbase);
+	writer.GenerateTranslationTable();
+
 	/// xml verification
 #ifdef FASSERT_ENABLE
 	verifyXMLsettings();
@@ -2409,11 +2414,6 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 			}
 		}
 	}
-
-	// generate the savegame tag conversion table
-	CvSavegameWriterBase writerbase(NULL);
-	CvSavegameWriter writer(writerbase);
-	writer.GenerateTranslationTable();
 
 	DestroyFXml();
 	return true;

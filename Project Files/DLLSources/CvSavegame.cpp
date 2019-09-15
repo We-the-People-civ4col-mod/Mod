@@ -29,6 +29,21 @@ std::vector< std::vector<short> > conversion_table;
 // It's easy to use since it auto configures to the enums. When a programmer adds "too many" enum values, the setting automatically change to match.
 char enumByteSize[NUM_SAVEGAME_CLASS_TYPES];
 
+// same as enumByteSize, but for xml entries.
+// it's however set once at startup and then used as ROM.
+// It's only used for saving as loading will rely on data from conversion_table instead.
+char xmlEnumByteSize[NUM_JITarrayTypes];
+
+// we need the ability to save both positive and negative xml entries because negative are used for no, invalid etc
+// however saving a signed byte limits the max length to 128 entries before switching to 2 byte saving
+// in order to use 1 byte as much as possible, adding an offset and then saving unsigned will allow saving those -1 etc.
+// the constant here sets how many negative values we reserve room for. Make it higher than 2 in order to reserve for future expansion.
+// this can be changed later, but with backward compatibility it's better to reserve a few extra early on.
+const int XML_ENUM_OFFSET = 6;
+
+// name says it all. It's a shortcut for cleaner code rather than calculating with the offset each time the number is needed.
+const int XML_ENUM_MAX_LENGTH_ONE_BYTE = 0x100 - XML_ENUM_OFFSET;
+
 // constructor
 CvSavegameReader::CvSavegameReader(CvSavegameReaderBase& readerBase)
 	: m_ReaderBase(readerBase)
@@ -138,6 +153,24 @@ void CvSavegameReader::Read(PlayerBoolArray& array)
 void CvSavegameReader::Read(IDInfo& idInfo)
 {
 	idInfo.read(*this);
+}
+
+void CvSavegameReader::ReadXmlEnum(int& iVariable, JITarrayTypes eType)
+{
+	FAssert(eType >= 0 && eType < NUM_JITarrayTypes);
+
+	unsigned int iLength = conversion_table[eType].size();
+
+	if (iLength == 0 || iLength > XML_ENUM_MAX_LENGTH_ONE_BYTE)
+	{
+		iVariable = ReadBytes(2);
+	}
+	else
+	{
+		iVariable = ReadUnsignedBytes(1);
+		iVariable -= XML_ENUM_OFFSET;
+	}
+	iVariable = ConvertIndex(eType, iVariable);
 }
 
 void CvSavegameReader::Read(byte* var, unsigned int iSize)
@@ -447,6 +480,34 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType)
 	Write((byte*)&eType, iSize);
 }
 
+void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
+{
+	FAssert(eType >= 0 && eType < NUM_JITarrayTypes);
+
+	int iByteSize = xmlEnumByteSize[eType];
+	FAssertMsg(iByteSize != 0, CvString::format("%s needs to be enabled in isConversionArray()", getArrayName(eType)).c_str());
+
+	switch (iByteSize)
+	{
+	default:
+		FAssert(false); // what happened???
+		// fallthrough
+	case 0:
+	case 2:
+	{
+		short iBuffer = iVariable;
+		Write(iBuffer);
+	}
+	case 1:
+	{
+		int iTemp = iVariable + XML_ENUM_OFFSET;
+		FAssert(iTemp >= 0 && iTemp < 0x100);
+		byte iBuffer = iTemp;
+		Write(iBuffer);
+	}
+	}
+}
+
 void CvSavegameWriter::GenerateTranslationTable()
 {
 	FAssertMsg(save_conversion_table.size() == 0, "Conversion table only needs to be set once");
@@ -455,6 +516,9 @@ void CvSavegameWriter::GenerateTranslationTable()
 
 	for (JITarrayTypes eType = FIRST_JIT_ARRAY; eType < NUM_JITarrayTypes; ++eType)
 	{
+		// set default unused byte size
+		xmlEnumByteSize[eType] = 0;
+
 		if (isConversionArray(eType))
 		{
 			short iLength = getArrayLength(eType);
@@ -467,6 +531,9 @@ void CvSavegameWriter::GenerateTranslationTable()
 			szString = getArrayName(eType);
 			Write(szString);
 			Write(iLength);
+
+			// set the byte size for saving this xml type
+			xmlEnumByteSize[eType] = iLength <= XML_ENUM_MAX_LENGTH_ONE_BYTE ? 1 : 2;
 
 			const char* szPrefix = getArrayPrefix(eType);
 			int iLengthPrefix = strlen(szPrefix);

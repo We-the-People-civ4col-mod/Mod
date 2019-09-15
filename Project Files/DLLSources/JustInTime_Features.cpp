@@ -9,15 +9,22 @@ bool isConversionArray(JITarrayTypes eType)
 	switch (eType)
 	{
 	case JIT_ARRAY_ART_STYLE:
+	case JIT_ARRAY_BONUS:
 	case JIT_ARRAY_CIVILIZATION:
 	case JIT_ARRAY_CLIMATE:
 	case JIT_ARRAY_ERA:
+	case JIT_ARRAY_EUROPE:
+	case JIT_ARRAY_FEATURE:
 	case JIT_ARRAY_GAME_OPTION:
 	case JIT_ARRAY_GAME_SPEED:
 	case JIT_ARRAY_HANDICAP:
+	case JIT_ARRAY_IMPROVEMENT:
 	case JIT_ARRAY_LEADER_HEAD:
 	case JIT_ARRAY_PLAYER_COLOR:
+	case JIT_ARRAY_ROUTE:
 	case JIT_ARRAY_SEA_LEVEL:
+	case JIT_ARRAY_TERRAIN:
+	case JIT_ARRAY_UNIT:
 	case JIT_ARRAY_VICTORY:
 	case JIT_ARRAY_WORLD_SIZE:
 		return true;
@@ -26,14 +33,13 @@ bool isConversionArray(JITarrayTypes eType)
 	case JIT_ARRAY_DIPLO:
 	case JIT_ARRAY_EVENT:
 	case JIT_ARRAY_EVENT_TRIGGER:
-	case JIT_ARRAY_FEATURE:
+	
 	case JIT_ARRAY_GOODY:
 	case JIT_ARRAY_HURRY:
-	case JIT_ARRAY_ROUTE:
-	case JIT_ARRAY_TERRAIN:
+	
 		return false;
 	default:
-		return true;
+		return false;
 	}
 }
 
