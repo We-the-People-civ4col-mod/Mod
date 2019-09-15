@@ -12,7 +12,14 @@ enum SavegameVariableTypes
 	UnitSave_END,
 	UnitSave_Direction,
 	UnitSave_UnitType,
+
+	NUM_SAVE_ENUM_VALUES,
 };
+
+int getNumSavedEnumValuesUnit()
+{
+	return NUM_SAVE_ENUM_VALUES;
+}
 
 // assign everything to default values
 void CvUnit::resetSavedData()
@@ -23,6 +30,8 @@ void CvUnit::resetSavedData()
 
 void CvUnit::read(CvSavegameReader reader)
 {
+	reader.AssignClassType(SAVEGAME_CLASS_UNIT);
+
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
@@ -33,7 +42,8 @@ void CvUnit::read(CvSavegameReader reader)
 	bool bContinue = true;
 	while (bContinue)
 	{
-		SavegameVariableTypes eType = reader.ReadSwitch();
+		SavegameVariableTypes eType;
+		reader.Read(eType);
 
 		switch (eType)
 		{
@@ -59,6 +69,8 @@ void CvUnit::read(CvSavegameReader reader)
 
 void CvUnit::write(CvSavegameWriter writer)
 {
+	writer.AssignClassType(SAVEGAME_CLASS_UNIT);
+
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
 	// Also it will not save anything if the variable and the default values are identical.

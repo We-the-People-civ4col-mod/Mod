@@ -15,26 +15,50 @@
 std::vector<byte> save_conversion_table;
 
 // conversion table
+// generated on load. look up is [xml file][index]
+// index is the value from the savegame while the returned data is the index of the same Type string with the current xml files
+// This allows savegames to still work even if the order in xml is changed, including adding new stuff in the middle.
+// Do note that -1 will be used if something is removed from xml
 std::vector< std::vector<short> > conversion_table;
 
-enum SavegameVariableTypes
-{
-	Save_END,
-};
-
+// stores the byte size of SavegameClassTypes for each class
+// assigned automatically when saving. It's 1 byte if there are less than 257 variables (fits in unsigned byte)
+// it automatically becomes two bytes if there are more variables.
+// this is saved and on load the saved values are used instead of the current ones. This allows savegames to survive changing the byte size.
+// This will in most cases save one byte for each variable saved, something which quickly adds up.
+// It's easy to use since it auto configures to the enums. When a programmer adds "too many" enum values, the setting automatically change to match.
+char enumByteSize[NUM_SAVEGAME_CLASS_TYPES];
 
 // constructor
 CvSavegameReader::CvSavegameReader(CvSavegameReaderBase& readerBase)
 	: m_ReaderBase(readerBase)
 {
+	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
 
 // copy constructor
 CvSavegameReader::CvSavegameReader(const CvSavegameReader& reader)
 	: m_ReaderBase(reader.m_ReaderBase)
 {
+	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
 
+void CvSavegameReader::AssignClassType(SavegameClassTypes eType)
+{
+	m_eClassType = eType;
+}
+
+void CvSavegameReader::Read(SavegameVariableTypes& variable)
+{
+	FAssert(m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
+	int iSize = 2;
+
+	if (m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
+	{
+		iSize = enumByteSize[m_eClassType];
+	}
+	variable = (SavegameVariableTypes)ReadUnsignedBytes(iSize);
+}
 
 void CvSavegameReader::Read(int& variable)
 {
@@ -121,11 +145,58 @@ void CvSavegameReader::Read(byte* var, unsigned int iSize)
 	m_ReaderBase.Read(var, iSize);
 }
 
-SavegameVariableTypes CvSavegameReader::ReadSwitch()
+int CvSavegameReader::ReadBytes(int iNumBytes)
 {
-	short iTemp;
-	Read(iTemp);
-	return static_cast<SavegameVariableTypes>(iTemp);
+	switch (iNumBytes)
+	{
+	case 1:
+	{
+		char iBuffer;
+		Read(iBuffer);
+		return iBuffer;
+	}
+	case 2:
+	{
+		short iBuffer;
+		Read(iBuffer);
+		return iBuffer;
+	}
+	case 4:
+	{
+		int iBuffer;
+		Read(iBuffer);
+		return iBuffer;
+	}
+	}
+	FAssert(false);
+	return 0;
+}
+
+unsigned int CvSavegameReader::ReadUnsignedBytes(int iNumBytes)
+{
+	switch (iNumBytes)
+	{
+	case 1:
+	{
+		unsigned char iBuffer;
+		Read(iBuffer);
+		return iBuffer;
+	}
+	case 2:
+	{
+		unsigned short iBuffer;
+		Read(iBuffer);
+		return iBuffer;
+	}
+	case 4:
+	{
+		unsigned int iBuffer;
+		Read(iBuffer);
+		return iBuffer;
+	}
+	}
+	FAssert(false);
+	return 0;
 }
 
 void CvSavegameReader::ReadConversionTable()
@@ -147,7 +218,7 @@ void CvSavegameReader::ReadConversionTable()
 		if (szString.length() == 0)
 		{
 			// done
-			return;
+			break;
 		}
 
 		JITarrayTypes eType = getJITArrayTypeFromString(szString.c_str());
@@ -173,6 +244,21 @@ void CvSavegameReader::ReadConversionTable()
 				conversion_table[eType].push_back(iNewIndex);
 			}
 		}
+	}
+
+	// setup enum byte size
+
+	// first default everything to 2
+	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < NUM_SAVEGAME_CLASS_TYPES; ++eClassType)
+	{
+		enumByteSize[eClassType] = 2;
+	}
+
+	byte iLength;
+	Read(iLength);
+	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < iLength; ++eClassType)
+	{
+		Read(enumByteSize[eClassType]);
 	}
 }
 
@@ -202,12 +288,19 @@ int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
 	: m_vector(writerbase.m_vector)
 {
+	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
 
 // copy constructor
 CvSavegameWriter::CvSavegameWriter(const CvSavegameWriter& writer)
 	: m_vector(writer.m_vector)
 {
+	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
+}
+
+void CvSavegameWriter::AssignClassType(SavegameClassTypes eType)
+{
+	m_eClassType = eType;
 }
 
 void CvSavegameWriter::Write(int variable)
@@ -341,8 +434,17 @@ void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 
 void CvSavegameWriter::Write(SavegameVariableTypes eType)
 {
-	short iBuffer = eType;
-	Write(iBuffer);
+	FAssert(m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
+	int iSize = 2;
+
+	if (m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
+	{
+		iSize = enumByteSize[m_eClassType];
+	}
+
+	// Just writing the bytes works because it's little endian and the variable in question is 4 bytes.
+	// The idea is that it skips writing 1 or 3 bytes, but only in cases where we know they will always be 0.
+	Write((byte*)&eType, iSize);
 }
 
 void CvSavegameWriter::GenerateTranslationTable()
@@ -386,9 +488,42 @@ void CvSavegameWriter::GenerateTranslationTable()
 	save_conversion_table = m_vector;
 }
 
+int getNumSavedEnumValuesArea();
+int getNumSavedEnumValuesMap();
+int getNumSavedEnumValuesPlot();
+int getNumSavedEnumValuesUnit();
+int getNumSavedEnumValuesUnitAI();
+
 void CvSavegameWriter::WriteTranslationTable()
 {
 	this->m_vector = save_conversion_table;
+
+	// save the byte size of SavegameVariableTypes for each class
+
+	byte iLength = NUM_SAVEGAME_CLASS_TYPES;
+	Write(iLength);
+
+	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < NUM_SAVEGAME_CLASS_TYPES; ++eClassType)
+	{
+		int iCount = 2000; // default to 2 bytes. Should be overwritten unless there is a missing switch-case
+
+		// use switch case to ensure all cases are covered
+		// it catches the case where a new class is added, but this function isn't updated
+		// we want an assert asap if that happens, like every time a game is saved, even auto save when starting a new game
+		switch (eClassType)
+		{
+		case SAVEGAME_CLASS_AREA:        iCount = getNumSavedEnumValuesArea       (); break;
+		case SAVEGAME_CLASS_MAP:         iCount = getNumSavedEnumValuesMap        (); break;
+		case SAVEGAME_CLASS_PLOT:        iCount = getNumSavedEnumValuesPlot       (); break;
+		case SAVEGAME_CLASS_UNIT:        iCount = getNumSavedEnumValuesUnit       (); break;
+		case SAVEGAME_CLASS_UNIT_AI:     iCount = getNumSavedEnumValuesUnitAI     (); break;
+		default:
+			FAssertMsg(false, "missing case");
+		}
+
+		enumByteSize[eClassType] = iCount <= 0x100 ? 1 : 2;
+		Write(enumByteSize[eClassType]);
+	}
 }
 
 ///

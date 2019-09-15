@@ -7,6 +7,22 @@ enum SavegameVariableTypes;
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
 
+// enum values for each class used in the savegame.
+// ideally each class using SavegameVariableTypes should have an index here.
+// Extending to the end is savegame safe. Altering the existing layout isn't.
+enum SavegameClassTypes
+{
+	SAVEGAME_CLASS_AREA,
+	SAVEGAME_CLASS_MAP,
+	SAVEGAME_CLASS_PLOT,
+	SAVEGAME_CLASS_UNIT,
+	SAVEGAME_CLASS_UNIT_AI,
+
+	NUM_SAVEGAME_CLASS_TYPES,
+
+	FIRST_SAVEGAME_CLASS_TYPES = 0,
+};
+
 class CvSavegameReaderBase;
 class CvSavegameWriterBase;
 
@@ -15,6 +31,10 @@ class CvSavegameReader
 public:
 	CvSavegameReader(CvSavegameReaderBase& readerBase);
 	CvSavegameReader(const CvSavegameReader& reader);
+
+	void AssignClassType(SavegameClassTypes eType);
+
+	void Read(SavegameVariableTypes& variable);
 
 	void Read(int& variable);
 	void Read(short& variable);
@@ -42,8 +62,6 @@ public:
 	// workaround because we can't use references on bitfields
 	template<typename T>
 	T ReadBitfield(T variable);
-
-	SavegameVariableTypes ReadSwitch();
 
 	// Add all enums used in savegames
 	void Read(CardinalDirectionTypes& variable) { Read((int&)variable); }
@@ -120,6 +138,10 @@ public:
 private:
 
 	void Read(byte* var, unsigned int iSize);
+	int ReadBytes(int iNumBytes);
+	unsigned int ReadUnsignedBytes(int iNumBytes);
+
+	SavegameClassTypes m_eClassType;
 
 	CvSavegameReaderBase& m_ReaderBase;
 };
@@ -129,6 +151,8 @@ class CvSavegameWriter
 public:
 	CvSavegameWriter(CvSavegameWriterBase& writerbase);
 	CvSavegameWriter(const CvSavegameWriter& writer);
+
+	void AssignClassType(SavegameClassTypes eType);
 
 	template<enum T>
 	void Write(T variable);
@@ -170,6 +194,8 @@ public:
 private:
 
 	void Write(byte*var, unsigned int iSize);
+
+	SavegameClassTypes m_eClassType;
 
 	std::vector<byte>& m_vector;
 };

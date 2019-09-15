@@ -89,7 +89,14 @@ enum SavegameVariableTypes
 
 	Save_aiYield,
 	Save_Revealed,
+
+	NUM_SAVE_ENUM_VALUES,
 };
+
+int getNumSavedEnumValuesPlot()
+{
+	return NUM_SAVE_ENUM_VALUES;
+}
 
 // assign everything to default values
 void CvPlot::resetSavedData()
@@ -145,6 +152,8 @@ void CvPlot::resetSavedData()
 
 void CvPlot::read(CvSavegameReader reader)
 {
+	reader.AssignClassType(SAVEGAME_CLASS_PLOT);
+
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
@@ -155,7 +164,8 @@ void CvPlot::read(CvSavegameReader reader)
 	bool bContinue = true;
 	while (bContinue)
 	{
-		SavegameVariableTypes eType = reader.ReadSwitch();
+		SavegameVariableTypes eType;
+		reader.Read(eType);
 
 		switch (eType)
 		{
@@ -227,6 +237,8 @@ void CvPlot::read(CvSavegameReader reader)
 
 void CvPlot::write(CvSavegameWriter writer)
 {
+	writer.AssignClassType(SAVEGAME_CLASS_PLOT);
+
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
 	// Also it will not save anything if the variable and the default values are identical.

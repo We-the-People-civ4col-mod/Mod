@@ -36,7 +36,14 @@ enum SavegameVariableTypes
 	Save_Areas,
 
 	Save_Plots,
+
+	NUM_SAVE_ENUM_VALUES,
 };
+
+int getNumSavedEnumValuesMap()
+{
+	return NUM_SAVE_ENUM_VALUES;
+}
 
 // assign everything to default values
 void CvMap::resetSavedData()
@@ -59,6 +66,8 @@ void CvMap::resetSavedData()
 
 void CvMap::read(CvSavegameReader reader)
 {
+	reader.AssignClassType(SAVEGAME_CLASS_MAP);
+
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	//reset();
@@ -69,7 +78,8 @@ void CvMap::read(CvSavegameReader reader)
 	bool bContinue = true;
 	while (bContinue)
 	{
-		SavegameVariableTypes eType = reader.ReadSwitch();
+		SavegameVariableTypes eType;
+		reader.Read(eType);
 
 		switch (eType)
 		{
@@ -123,6 +133,8 @@ void CvMap::read(CvSavegameReader reader)
 
 void CvMap::write(CvSavegameWriter writer)
 {
+	writer.AssignClassType(SAVEGAME_CLASS_MAP);
+
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
 	// Also it will not save anything if the variable and the default values are identical.
