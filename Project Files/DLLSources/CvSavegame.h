@@ -121,8 +121,6 @@ public:
 	void Read(YieldTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(WorldSizeTypes        & variable) { ReadXmlEnum(variable); }
 
-	void ReadConversionTable();
-
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
 
 #ifndef MakefileCompilation
@@ -187,10 +185,6 @@ public:
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
-	
-	// enum conversion
-	void GenerateTranslationTable();
-	void WriteTranslationTable();
 
 	// everything linked to xml file enums
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
@@ -240,6 +234,10 @@ public:
 	void Write(YieldTypes            variable) { WriteXmlEnum(variable); }
 	void Write(WorldSizeTypes        variable) { WriteXmlEnum(variable); }
 
+	// get the amount of bytes needed to save the variable in question
+	// also tells the savegame that a conversion table is needed
+	int GetXmlByteSize(JITarrayTypes eType);
+
 private:
 
 	template<typename T>
@@ -249,6 +247,7 @@ private:
 
 	SavegameClassTypes m_eClassType;
 
+	CvSavegameWriterBase& m_writerbase;
 	std::vector<byte>& m_vector;
 };
 
@@ -278,7 +277,7 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 template<class T>
 inline void CvSavegameReader::Read(JustInTimeArray<T>& jitArray)
 {
-	jitArray.Read(this);
+	jitArray.Read(*this);
 }
 
 
@@ -296,7 +295,7 @@ inline void CvSavegameWriter::Write(T variable)
 template<class T>
 inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 {
-	jitArray.Write(this);
+	jitArray.Write(*this);
 }
 
 template<class T>
@@ -364,11 +363,16 @@ public:
 	CvSavegameWriterBase(FDataStreamBase* pStream);
 
 	void WriteFile();
+	void InitSavegame();
+	int GetXmlByteSize(JITarrayTypes eType);
 
 private:
 
+	void WriteTableString(const char *szString);
+
 	FDataStreamBase* m_pStream;
 	std::vector<byte> m_vector;
+	std::vector<byte> m_table;
 };
 
 #endif

@@ -9,17 +9,12 @@
 // The benefit of using a single array is that it allows compression.
 //
 
-// conversion table to include in savegames.
-// generated at game startup and then reused each time a game is saved.
-// this prevents the need to loop through all xml files when saving, hence faster saving.
-std::vector<byte> save_conversion_table;
-
 // conversion table
 // generated on load. look up is [xml file][index]
 // index is the value from the savegame while the returned data is the index of the same Type string with the current xml files
 // This allows savegames to still work even if the order in xml is changed, including adding new stuff in the middle.
 // Do note that -1 will be used if something is removed from xml
-std::vector< std::vector<short> > conversion_table;
+std::vector< short > conversion_table[NUM_JITarrayTypes];
 
 // stores the byte size of SavegameClassTypes for each class
 // assigned automatically when saving. It's 1 byte if there are less than 257 variables (fits in unsigned byte)
@@ -28,6 +23,9 @@ std::vector< std::vector<short> > conversion_table;
 // This will in most cases save one byte for each variable saved, something which quickly adds up.
 // It's easy to use since it auto configures to the enums. When a programmer adds "too many" enum values, the setting automatically change to match.
 char enumByteSize[NUM_SAVEGAME_CLASS_TYPES];
+
+// savegame string indicator for the bytesize array
+const char* szEnumByteSize = "enumByteSize";
 
 // same as enumByteSize, but for xml entries.
 // it's however set once at startup and then used as ROM.
@@ -44,11 +42,82 @@ const int XML_ENUM_OFFSET = 6;
 // name says it all. It's a shortcut for cleaner code rather than calculating with the offset each time the number is needed.
 const int XML_ENUM_MAX_LENGTH_ONE_BYTE = 0x100 - XML_ENUM_OFFSET;
 
+int getByteSizeForXML(JITarrayTypes eType)
+{
+	if (eType >= 0 && eType < NUM_JITarrayTypes)
+	{
+		unsigned int iLength = conversion_table[eType].size();
+		return iLength <= XML_ENUM_MAX_LENGTH_ONE_BYTE ? 1 : 2;
+	}
+	// TODO figure out how to set the size of fixed sized variables like JIT_ARRAY_PLAYER
+	FAssert(false);
+	return 2;
+}
+
 // constructor
 CvSavegameReader::CvSavegameReader(CvSavegameReaderBase& readerBase)
 	: m_ReaderBase(readerBase)
 {
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
+
+	// read the conversion table
+
+	CvString szString;
+
+	while (true)
+	{
+		Read(szString);
+
+		if (szString.length() == 0)
+		{
+			// end of table
+			return;
+		}
+		if (szString == szEnumByteSize)
+		{
+			// start of savegame. Init data.
+			for (JITarrayTypes eArray = FIRST_JIT_ARRAY; eArray < NUM_JITarrayTypes; ++eArray)
+			{
+				conversion_table[eArray].clear();
+			}
+
+			// read the class enum sizes
+			byte iSize;
+			Read(iSize);
+			for (int i = 0; i < iSize; ++i)
+			{
+				Read(enumByteSize[i]);
+			}
+		}
+		else
+		{
+			JITarrayTypes eType = getJITArrayTypeFromString(szString.c_str());
+
+			short iLength;
+			Read(iLength);
+
+			bool bIsValid = eType >= 0 && eType < NUM_JITarrayTypes;
+
+			if (bIsValid)
+			{
+				// not strictly needed, but it improves performance to allocate in one go.
+				// also by allocating "just enough" we can make sure it doesn't allocate more than needed.
+				conversion_table[eType].reserve(iLength);
+
+				FAssert(conversion_table[eType].size() == 0);
+			}
+
+			for (int i = 0; i < iLength; ++i)
+			{
+				Read(szString);
+				if (bIsValid)
+				{
+					short iNewIndex = getIndexForTypeAddingPrefix(eType, szString.c_str());
+					conversion_table[eType].push_back(iNewIndex);
+				}
+			}
+		}
+	}
 }
 
 // copy constructor
@@ -142,7 +211,7 @@ void CvSavegameReader::Read(CvWString& szString)
 
 void CvSavegameReader::Read(BoolArray& baArray)
 {
-	baArray.Read(this);
+	baArray.Read(*this);
 }
 
 void CvSavegameReader::Read(PlayerBoolArray& array)
@@ -161,7 +230,7 @@ void CvSavegameReader::ReadXmlEnum(int& iVariable, JITarrayTypes eType)
 
 	unsigned int iLength = conversion_table[eType].size();
 
-	if (iLength == 0 || iLength > XML_ENUM_MAX_LENGTH_ONE_BYTE)
+	if (getByteSizeForXML(eType) == 2)
 	{
 		iVariable = ReadBytes(2);
 	}
@@ -232,74 +301,11 @@ unsigned int CvSavegameReader::ReadUnsignedBytes(int iNumBytes)
 	return 0;
 }
 
-void CvSavegameReader::ReadConversionTable()
-{
-	// prepare an empty table
-	conversion_table.resize(NUM_JITarrayTypes);
-	for (unsigned int i = 0; i < conversion_table.size(); ++i)
-	{
-		conversion_table[i].clear();
-	}
-
-	CvString szString;
-
-	// read the table contents
-	// reach iteration is one xml file
-	while (true)
-	{
-		Read(szString);
-		if (szString.length() == 0)
-		{
-			// done
-			break;
-		}
-
-		JITarrayTypes eType = getJITArrayTypeFromString(szString.c_str());
-
-		short iLength;
-		Read(iLength);
-
-		bool bIsValid = eType >= 0 && eType < (int)conversion_table.size();
-
-		if (bIsValid)
-		{
-			// not strictly needed, but it improves performance to allocate in one go.
-			// also by allocating "just enough" we can make sure it doesn't allocate more than needed.
-			conversion_table[eType].reserve(iLength);
-		}
-
-		for (int i = 0; i < iLength; ++i)
-		{
-			Read(szString);
-			if (bIsValid)
-			{
-				short iNewIndex = getIndexForTypeAddingPrefix(eType, szString.c_str());
-				conversion_table[eType].push_back(iNewIndex);
-			}
-		}
-	}
-
-	// setup enum byte size
-
-	// first default everything to 2
-	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < NUM_SAVEGAME_CLASS_TYPES; ++eClassType)
-	{
-		enumByteSize[eClassType] = 2;
-	}
-
-	byte iLength;
-	Read(iLength);
-	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < iLength; ++eClassType)
-	{
-		Read(enumByteSize[eClassType]);
-	}
-}
-
 int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 {
 	JITarrayTypes eBaseType = GetBaseType(eType);
 
-	if (iIndex >= 0 && eBaseType >= 0 && eBaseType < (int)conversion_table.size())
+	if (iIndex >= 0 && eBaseType >= 0 && eBaseType < NUM_JITarrayTypes)
 	{
 		if ((int)conversion_table[eBaseType].size() > iIndex)
 		{
@@ -320,6 +326,7 @@ int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 // constructor
 CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
 	: m_vector(writerbase.m_vector)
+	, m_writerbase(writerbase)
 {
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
@@ -327,6 +334,7 @@ CvSavegameWriter::CvSavegameWriter(CvSavegameWriterBase& writerbase)
 // copy constructor
 CvSavegameWriter::CvSavegameWriter(const CvSavegameWriter& writer)
 	: m_vector(writer.m_vector)
+	, m_writerbase(writer.m_writerbase)
 {
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
@@ -403,7 +411,7 @@ void CvSavegameWriter::Write(CvWString& szString)
 
 void CvSavegameWriter::Write(BoolArray& baArray)
 {
-	baArray.Write(this);
+	baArray.Write(*this);
 }
 
 void CvSavegameWriter::Write(SavegameVariableTypes eType, CvString& szString)
@@ -480,19 +488,22 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType)
 	Write((byte*)&eType, iSize);
 }
 
+int CvSavegameWriter::GetXmlByteSize(JITarrayTypes eType)
+{
+	return m_writerbase.GetXmlByteSize(eType);
+}
+
 void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 {
 	FAssert(eType >= 0 && eType < NUM_JITarrayTypes);
 
-	int iByteSize = xmlEnumByteSize[eType];
-	FAssertMsg(iByteSize != 0, CvString::format("%s needs to be enabled in isConversionArray()", getArrayName(eType)).c_str());
+	int iByteSize = GetXmlByteSize(eType);
 
 	switch (iByteSize)
 	{
 	default:
 		FAssert(false); // what happened???
 		// fallthrough
-	case 0:
 	case 2:
 	{
 		short iBuffer = iVariable;
@@ -508,90 +519,6 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 	}
 }
 
-void CvSavegameWriter::GenerateTranslationTable()
-{
-	FAssertMsg(save_conversion_table.size() == 0, "Conversion table only needs to be set once");
-
-	CvString szString;
-
-	for (JITarrayTypes eType = FIRST_JIT_ARRAY; eType < NUM_JITarrayTypes; ++eType)
-	{
-		// set default unused byte size
-		xmlEnumByteSize[eType] = 0;
-
-		if (isConversionArray(eType))
-		{
-			short iLength = getArrayLength(eType);
-			if (iLength == 0)
-			{
-				// no need to save empty arrays
-				continue;
-			}
-
-			szString = getArrayName(eType);
-			Write(szString);
-			Write(iLength);
-
-			// set the byte size for saving this xml type
-			xmlEnumByteSize[eType] = iLength <= XML_ENUM_MAX_LENGTH_ONE_BYTE ? 1 : 2;
-
-			const char* szPrefix = getArrayPrefix(eType);
-			int iLengthPrefix = strlen(szPrefix);
-
-			for (int i = 0; i < iLength; ++i)
-			{
-				const char* szType = getArrayType(eType, i);
-				szString = szType + iLengthPrefix;
-				Write(szString);
-			}
-		}
-	}
-
-	// end of table. Marked with an empty string.
-	szString.clear();
-	Write(szString);
-
-	// copy the temp saved vector into the permanent vector for the conversion table
-	save_conversion_table = m_vector;
-}
-
-int getNumSavedEnumValuesArea();
-int getNumSavedEnumValuesMap();
-int getNumSavedEnumValuesPlot();
-int getNumSavedEnumValuesUnit();
-int getNumSavedEnumValuesUnitAI();
-
-void CvSavegameWriter::WriteTranslationTable()
-{
-	this->m_vector = save_conversion_table;
-
-	// save the byte size of SavegameVariableTypes for each class
-
-	byte iLength = NUM_SAVEGAME_CLASS_TYPES;
-	Write(iLength);
-
-	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < NUM_SAVEGAME_CLASS_TYPES; ++eClassType)
-	{
-		int iCount = 2000; // default to 2 bytes. Should be overwritten unless there is a missing switch-case
-
-		// use switch case to ensure all cases are covered
-		// it catches the case where a new class is added, but this function isn't updated
-		// we want an assert asap if that happens, like every time a game is saved, even auto save when starting a new game
-		switch (eClassType)
-		{
-		case SAVEGAME_CLASS_AREA:        iCount = getNumSavedEnumValuesArea       (); break;
-		case SAVEGAME_CLASS_MAP:         iCount = getNumSavedEnumValuesMap        (); break;
-		case SAVEGAME_CLASS_PLOT:        iCount = getNumSavedEnumValuesPlot       (); break;
-		case SAVEGAME_CLASS_UNIT:        iCount = getNumSavedEnumValuesUnit       (); break;
-		case SAVEGAME_CLASS_UNIT_AI:     iCount = getNumSavedEnumValuesUnitAI     (); break;
-		default:
-			FAssertMsg(false, "missing case");
-		}
-
-		enumByteSize[eClassType] = iCount <= 0x100 ? 1 : 2;
-		Write(enumByteSize[eClassType]);
-	}
-}
 
 ///
 ///
@@ -656,16 +583,113 @@ void CvSavegameReaderBase::Read(byte* var, unsigned int iSize)
 CvSavegameWriterBase::CvSavegameWriterBase(FDataStreamBase* pStream)
 	: m_pStream(pStream)
 {
+	// m_table needs to end with an empty string, which is effectively just a 0 byte.
+	// Add this as the first byte in m_vector here in the constructor because then it's easily done.
+	// Once both vectors are completed, they are merged meaning it doesn't matter which one the termination byte is added to.
+	m_vector.push_back(0);
 }
 
 void CvSavegameWriterBase::WriteFile()
 {
 	unsigned int iSize = m_vector.size();
+	iSize += m_table.size();
 	m_pStream->Write(iSize);
 
-	byte* array = &m_vector.front();
-	if (iSize > 0)
+	if (m_table.size() > 0)
 	{
-		m_pStream->Write(iSize, array);
+		m_pStream->Write(m_table.size(), &m_table.front());
 	}
+
+	if (m_vector.size() > 0)
+	{
+		m_pStream->Write(m_vector.size(), &m_vector.front());
+	}
+}
+
+int getNumSavedEnumValuesArea();
+int getNumSavedEnumValuesMap();
+int getNumSavedEnumValuesPlot();
+int getNumSavedEnumValuesUnit();
+int getNumSavedEnumValuesUnitAI();
+
+void CvSavegameWriterBase::InitSavegame()
+{
+	for (JITarrayTypes eArray = FIRST_JIT_ARRAY; eArray < NUM_JITarrayTypes; ++eArray)
+	{
+		conversion_table[eArray].clear();
+	}
+
+	WriteTableString(szEnumByteSize);
+	byte iSize = NUM_SAVEGAME_CLASS_TYPES;
+	m_table.push_back(iSize);
+
+	for (SavegameClassTypes eClassType = FIRST_SAVEGAME_CLASS_TYPES; eClassType < NUM_SAVEGAME_CLASS_TYPES; ++eClassType)
+	{
+		int iCount = 2000; // default to 2 bytes. Should be overwritten unless there is a missing switch-case
+
+		// use switch case to ensure all cases are covered
+		// it catches the case where a new class is added, but this function isn't updated
+		// we want an assert asap if that happens, like every time a game is saved, even auto save when starting a new game
+		switch (eClassType)
+		{
+		case SAVEGAME_CLASS_AREA:        iCount = getNumSavedEnumValuesArea();      break;
+		case SAVEGAME_CLASS_MAP:         iCount = getNumSavedEnumValuesMap();       break;
+		case SAVEGAME_CLASS_PLOT:        iCount = getNumSavedEnumValuesPlot();      break;
+		case SAVEGAME_CLASS_UNIT:        iCount = getNumSavedEnumValuesUnit();      break;
+		case SAVEGAME_CLASS_UNIT_AI:     iCount = getNumSavedEnumValuesUnitAI();    break;
+		default:
+			FAssertMsg(false, "missing case");
+		}
+
+		enumByteSize[eClassType] = iCount <= 0x100 ? 1 : 2;
+		m_table.push_back(enumByteSize[eClassType]);
+	}
+}
+
+int CvSavegameWriterBase::GetXmlByteSize(JITarrayTypes eType)
+{
+	if (eType >= 0 && eType < NUM_JITarrayTypes)
+	{
+		int iLength = conversion_table[eType].size();
+
+		if (iLength == 0)
+		{
+			iLength = getArrayLength(eType);
+			if (iLength > 0)
+			{
+				// first set the vector size
+				// this is used as the size() is the count used to set byte size
+				// yes it cost memory, but that memory is used on load anyway
+				// allocating it on save doesn't matter because it's just kept forever once allocated
+				conversion_table[eType].reserve(iLength);
+				conversion_table[eType].resize(iLength);
+
+				// write the xml file name
+				WriteTableString(getArrayName(eType));
+
+				// write the length. It's a little dirty since the Write(short) function isn't available in the base class
+				const byte* pChar = (byte*)&iLength;
+				m_table.push_back(pChar[0]);
+				m_table.push_back(pChar[1]);
+
+				// write all the types in the file in question
+				for (int i = 0; i < iLength; ++i)
+				{
+					WriteTableString(getArrayTypeWithoutPrefix(eType, i));
+				}
+			}
+		}
+	}
+	return getByteSizeForXML(eType);
+}
+
+void CvSavegameWriterBase::WriteTableString(const char *szString)
+{
+	while (*szString != 0)
+	{
+		m_table.push_back(*szString);
+		++szString;
+	}
+	// null termination
+	m_table.push_back(0);
 }

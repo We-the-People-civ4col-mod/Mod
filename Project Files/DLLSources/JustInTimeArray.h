@@ -136,8 +136,8 @@ public:
 	void Read(FDataStreamBase* pStream);
 	void Write(FDataStreamBase* pStream);
 
-	void Read(CvSavegameReader* reader);
-	void Write(CvSavegameWriter* writer);
+	void Read(CvSavegameReader& reader);
+	void Write(CvSavegameWriter& writer);
 
 	void ReadWrite(bool bRead, FDataStreamBase* pStream);
 
@@ -268,7 +268,6 @@ protected:
 
 class CvInfoBase;
 
-bool isConversionArray(JITarrayTypes eType);
 JITarrayTypes GetBaseType(JITarrayTypes eType);
 bool isHardcodedArray(JITarrayTypes eType);
 int getArrayLength(JITarrayTypes eType);
@@ -280,6 +279,7 @@ CvWString getArrayNameWide(JITarrayTypes eType);
 const char* getArrayPrefix(JITarrayTypes eType);
 int getIndexForType(JITarrayTypes eType, const char* pTypeString);
 int getIndexForTypeAddingPrefix(JITarrayTypes eType, const char* pTypeString);
+const char* getArrayTypeWithoutPrefix(JITarrayTypes eType, int iIndex);
 JITarrayTypes getJITArrayTypeFromString(const char* szType);
 
 

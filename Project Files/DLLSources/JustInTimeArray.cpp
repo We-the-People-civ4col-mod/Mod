@@ -467,12 +467,12 @@ void JustInTimeArray<T>::Write(FDataStreamBase* pStream)
 }
 
 template<class T>
-void JustInTimeArray<T>::Read(CvSavegameReader* reader)
+void JustInTimeArray<T>::Read(CvSavegameReader& reader)
 {
 	reset();
 
 	unsigned short iStart = NO_NONEDEFAULT_ARRAY;
-	reader->Read(iStart);
+	reader.Read(iStart);
 
 	if (iStart == NO_NONEDEFAULT_ARRAY)
 	{
@@ -480,13 +480,13 @@ void JustInTimeArray<T>::Read(CvSavegameReader* reader)
 	}
 
 	unsigned short iLength = 0;
-	reader->Read(iLength);
+	reader.Read(iLength);
 
 	for (int i = iStart; i < iLength; ++i)
 	{
 		T eBuffer;
-		reader->Read(eBuffer);
-		int iNewIndex = reader->ConvertIndex(getType(), i);
+		reader.Read(eBuffer);
+		int iNewIndex = reader.ConvertIndex(getType(), i);
 		if (iNewIndex >= 0 && iNewIndex < m_iLength)
 		{
 			set(eBuffer, iNewIndex);
@@ -496,22 +496,26 @@ void JustInTimeArray<T>::Read(CvSavegameReader* reader)
 
 
 template<class T>
-void JustInTimeArray<T>::Write(CvSavegameWriter* writer)
+void JustInTimeArray<T>::Write(CvSavegameWriter& writer)
 {
 	unsigned short iStart = this->getFirstNoneDefault();
 	unsigned short iLength = this->getNumUsedElements();
 
-	writer->Write(iStart);
+	writer.Write(iStart);
 
 	if (iStart == NO_NONEDEFAULT_ARRAY)
 	{
 		return;
 	}
 
-	writer->Write(iLength);
+	// the conversion table will be needed on load
+	// add one if it's not already added
+	writer.GetXmlByteSize(this->getType());
+
+	writer.Write(iLength);
 	for (int i = iStart; i < iLength; ++i)
 	{
-		writer->Write(get(i));
+		writer.Write(get(i));
 	}
 }
 

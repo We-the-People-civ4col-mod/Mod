@@ -1851,7 +1851,6 @@ void CvInitCore::read(FDataStreamBase* pStream)
 {
 	CvSavegameReaderBase readerbase(pStream);
 	CvSavegameReader reader(readerbase);
-	reader.ReadConversionTable();
 
 	uint uiSaveFlag=0;
 	reader.Read(uiSaveFlag);		// flags for expansion (see SaveBits)
@@ -1950,8 +1949,8 @@ void CvInitCore::read(FDataStreamBase* pStream)
 void CvInitCore::write(FDataStreamBase* pStream)
 {
 	CvSavegameWriterBase writerbase(pStream);
+	writerbase.InitSavegame();
 	CvSavegameWriter writer(writerbase);
-	writer.WriteTranslationTable();
 
 	uint uiSaveFlag=0;
 	writer.Write(uiSaveFlag);		// flag for expansion, see SaveBits)

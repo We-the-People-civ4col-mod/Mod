@@ -76,8 +76,8 @@ public:
 	void write(FDataStreamBase* pStream, bool bEnable);
 	void Read (FDataStreamBase* pStream);
 	void Write(FDataStreamBase* pStream);
-	void Read(CvSavegameReader* reader);
-	void Write(CvSavegameWriter* writer);
+	void Read(CvSavegameReader& reader);
+	void Write(CvSavegameWriter& writer);
 	void read(CvXMLLoadUtility* pXML, const char* sTag);
 
 	BoolArray& operator=(const BoolArray &rhs);

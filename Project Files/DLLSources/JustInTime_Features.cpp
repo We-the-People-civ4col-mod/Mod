@@ -1,48 +1,6 @@
 #include "CvGameCoreDLL.h"
 
 
-// controls if the entries are added to savegames for conversion if xml changes
-// Ideally everything should be incuded, but that takes up space.
-// Use this function to disable xml files, which aren't stored in the savegame anyway
-bool isConversionArray(JITarrayTypes eType)
-{
-	switch (eType)
-	{
-	case JIT_ARRAY_ART_STYLE:
-	case JIT_ARRAY_BONUS:
-	case JIT_ARRAY_CIVILIZATION:
-	case JIT_ARRAY_CLIMATE:
-	case JIT_ARRAY_ERA:
-	case JIT_ARRAY_EUROPE:
-	case JIT_ARRAY_FEATURE:
-	case JIT_ARRAY_GAME_OPTION:
-	case JIT_ARRAY_GAME_SPEED:
-	case JIT_ARRAY_HANDICAP:
-	case JIT_ARRAY_IMPROVEMENT:
-	case JIT_ARRAY_LEADER_HEAD:
-	case JIT_ARRAY_PLAYER_COLOR:
-	case JIT_ARRAY_ROUTE:
-	case JIT_ARRAY_SEA_LEVEL:
-	case JIT_ARRAY_TERRAIN:
-	case JIT_ARRAY_UNIT:
-	case JIT_ARRAY_VICTORY:
-	case JIT_ARRAY_WORLD_SIZE:
-		return true;
-
-	case JIT_ARRAY_COLOR:
-	case JIT_ARRAY_DIPLO:
-	case JIT_ARRAY_EVENT:
-	case JIT_ARRAY_EVENT_TRIGGER:
-	
-	case JIT_ARRAY_GOODY:
-	case JIT_ARRAY_HURRY:
-	
-		return false;
-	default:
-		return false;
-	}
-}
-
 // if an array is a subset of another array, get the full array
 JITarrayTypes GetBaseType(JITarrayTypes eType)
 {

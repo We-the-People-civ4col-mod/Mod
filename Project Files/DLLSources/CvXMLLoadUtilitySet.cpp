@@ -1115,11 +1115,6 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	readXMLfiles(false);
 	/// XML type preloading - end - Nightinggale
 
-	// generate the savegame tag conversion table
-	CvSavegameWriterBase writerbase(NULL);
-	CvSavegameWriter writer(writerbase);
-	writer.GenerateTranslationTable();
-
 	/// xml verification
 #ifdef FASSERT_ENABLE
 	verifyXMLsettings();
@@ -2383,7 +2378,6 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 		CvString szName;
 		for (JITarrayTypes eType = FIRST_JIT_ARRAY; eType < NUM_JITarrayTypes; ++eType)
 		{
-			if (isConversionArray(eType))
 			{
 				const char* szPrefix = getArrayPrefix(eType);
 				int iLengthPrefix = strlen(szPrefix);

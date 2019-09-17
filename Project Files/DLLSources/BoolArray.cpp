@@ -234,12 +234,12 @@ void BoolArray::Write(FDataStreamBase* pStream)
 	}
 }
 
-void BoolArray::Read(CvSavegameReader* reader)
+void BoolArray::Read(CvSavegameReader& reader)
 {
 	reset();
 
 	unsigned short iNumElements = 0;
-	reader->Read(iNumElements);
+	reader.Read(iNumElements);
 
 	// -32 will make the loop start by loading a new block
 	int iOffset = -32;
@@ -252,13 +252,13 @@ void BoolArray::Read(CvSavegameReader* reader)
 		{
 			// the block is used up. Load the next one
 			iOffset += 32;
-			reader->Read(iBlock);
+			reader.Read(iBlock);
 		}
 		// read the bool value for the next entry
 		bool bNewSetting = HasBit(iBlock, i - iOffset);
 
 		// read the new index. Will be the same as the old unless xml has changed
-		int iNewIndex = reader->ConvertIndex(getType(), i);
+		int iNewIndex = reader.ConvertIndex(getType(), i);
 
 		// store the new bool
 		// the safeSet checks index and ignores invalid indexes like -1.
@@ -266,11 +266,11 @@ void BoolArray::Read(CvSavegameReader* reader)
 	}
 }
 
-void BoolArray::Write(CvSavegameWriter* writer)
+void BoolArray::Write(CvSavegameWriter& writer)
 {
 	unsigned short iNumElements = getNumUsedElements();
 
-	writer->Write(iNumElements);
+	writer.Write(iNumElements);
 
 	if (iNumElements == 0)
 	{
@@ -278,10 +278,15 @@ void BoolArray::Write(CvSavegameWriter* writer)
 	}
 	else
 	{
+		// the conversion table will be needed on load
+		// add one if it's not already added
+		writer.GetXmlByteSize(this->getType());
+
+		// save the actual data
 		int iNumBlocks = (iNumElements + 0x1F) >> 5;
 		for (int i = 0; i < iNumBlocks; ++i)
 		{
-			writer->Write(m_iArray[i]);
+			writer.Write(m_iArray[i]);
 		}
 	}
 }
