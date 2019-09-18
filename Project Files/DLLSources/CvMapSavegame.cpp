@@ -45,6 +45,32 @@ int getNumSavedEnumValuesMap()
 	return NUM_SAVE_ENUM_VALUES;
 }
 
+const char* getSavedEnumNameMap(SavegameVariableTypes eType)
+{
+	switch (eType)
+	{
+	case Save_END: return "Save_END";
+	case Save_GridWidth: return "Save_GridWidth";
+	case Save_GridHeight: return "Save_GridHeight";
+	case Save_LandPlots: return "Save_LandPlots";
+	case Save_OwnedPlots: return "Save_OwnedPlots";
+	case Save_TopLatitude: return "Save_TopLatitude";
+	case Save_BottomLatitude: return "Save_BottomLatitude";
+	case Save_NextRiverID: return "Save_NextRiverID";
+
+	case Save_WrapX: return "Save_WrapX";
+	case Save_WrapY: return "Save_WrapY";
+	case Save_UseTwoPlotCities: return "Save_UseTwoPlotCities";
+
+
+	case Save_NumBonuses: return "Save_NumBonuses";
+	case Save_NumBonusesOnLand: return "Save_NumBonusesOnLand";
+	case Save_Areas: return "Save_Areas";
+	case Save_Plots: return "Save_Plots";
+	}
+	return "";
+}
+
 // assign everything to default values
 void CvMap::resetSavedData()
 {
@@ -71,6 +97,12 @@ void CvMap::read(CvSavegameReader reader)
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	//reset();
+
+	CvString szClassName;
+	if (reader.isDebug())
+	{
+		reader.Read(szClassName);
+	}
 
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
@@ -134,6 +166,11 @@ void CvMap::read(CvSavegameReader reader)
 void CvMap::write(CvSavegameWriter writer)
 {
 	writer.AssignClassType(SAVEGAME_CLASS_MAP);
+
+	if (writer.isDebug())
+	{
+		writer.Write("CvMap");
+	}
 
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.

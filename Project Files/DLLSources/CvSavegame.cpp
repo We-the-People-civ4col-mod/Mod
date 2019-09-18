@@ -42,6 +42,20 @@ const int XML_ENUM_OFFSET = 6;
 // name says it all. It's a shortcut for cleaner code rather than calculating with the offset each time the number is needed.
 const int XML_ENUM_MAX_LENGTH_ONE_BYTE = 0x100 - XML_ENUM_OFFSET;
 
+const char* getSavedEnumNameMap(SavegameVariableTypes eType);
+const char* getSavedEnumNamePlot(SavegameVariableTypes eType);
+
+const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
+{
+	switch (eClass)
+	{
+	case SAVEGAME_CLASS_MAP: return getSavedEnumNameMap(eType);
+	case SAVEGAME_CLASS_PLOT: return getSavedEnumNamePlot(eType);
+	}
+
+	return "";
+}
+
 int getByteSizeForXML(JITarrayTypes eType)
 {
 	if (eType >= 0 && eType < NUM_JITarrayTypes)
@@ -127,6 +141,11 @@ CvSavegameReader::CvSavegameReader(const CvSavegameReader& reader)
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
 
+bool CvSavegameReader::isDebug() const
+{
+	return m_ReaderBase.isDebug();
+}
+
 void CvSavegameReader::AssignClassType(SavegameClassTypes eType)
 {
 	m_eClassType = eType;
@@ -137,11 +156,30 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 	FAssert(m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
 	int iSize = 2;
 
+	unsigned int padding_prefix = 0;
+
+	if (isDebug())
+	{
+		Read(padding_prefix);
+	}
+
 	if (m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
 	{
 		iSize = enumByteSize[m_eClassType];
 	}
 	variable = (SavegameVariableTypes)ReadUnsignedBytes(iSize);
+
+	if (isDebug())
+	{
+		unsigned int padding_postfix;
+		Read(padding_postfix);
+		m_szPreviousType = m_szType;
+		Read(m_szType);
+
+		FAssert(m_szType == getSavedEnumName(m_eClassType, variable));
+		FAssert(padding_prefix == MAX_UNSIGNED_INT);
+		FAssert(padding_postfix == MAX_UNSIGNED_INT);
+	}
 }
 
 void CvSavegameReader::Read(int& variable)
@@ -339,6 +377,11 @@ CvSavegameWriter::CvSavegameWriter(const CvSavegameWriter& writer)
 	m_eClassType = NUM_SAVEGAME_CLASS_TYPES;
 }
 
+bool CvSavegameWriter::isDebug() const
+{
+	return m_writerbase.isDebug();
+}
+
 void CvSavegameWriter::AssignClassType(SavegameClassTypes eType)
 {
 	m_eClassType = eType;
@@ -383,30 +426,30 @@ void CvSavegameWriter::Write(bool variable)
 
 void CvSavegameWriter::Write(CvString& szString)
 {
-	int iLength = szString.length();
-
-	const char* pStr = szString.c_str();
-
-	for (int i = 0; i < iLength; ++i)
-	{
-		Write(pStr[i]);
-	}
-	char iBuffer = 0;
-	Write(iBuffer);
+	Write(szString.c_str());
 }
 
 void CvSavegameWriter::Write(CvWString& szString)
 {
-	int iLength = szString.length();
+	Write(szString.c_str());
+}
 
-	const wchar* pStr = szString.c_str();
-
-	for (int i = 0; i < iLength; ++i)
+void CvSavegameWriter::Write(const char* szString)
+{
+	int iLength = strlen(szString);
+	for (int i = 0; i <= iLength; ++i)
 	{
-		Write(pStr[i]);
+		Write(szString[i]);
 	}
-	wchar iBuffer = 0;
-	Write(iBuffer);
+}
+
+void CvSavegameWriter::Write(const wchar* szString)
+{
+	int iLength = wcslen(szString);
+	for (int i = 0; i <= iLength; ++i)
+	{
+		Write(szString[i]);
+	}
 }
 
 void CvSavegameWriter::Write(BoolArray& baArray)
@@ -483,9 +526,26 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType)
 		iSize = enumByteSize[m_eClassType];
 	}
 
+	if (isDebug())
+	{
+		// first add FF padding to catch off by one or a few bytes
+		unsigned int iBuffer = MAX_UNSIGNED_INT;
+		Write(iBuffer);
+	}
+
 	// Just writing the bytes works because it's little endian and the variable in question is 4 bytes.
 	// The idea is that it skips writing 1 or 3 bytes, but only in cases where we know they will always be 0.
 	Write((byte*)&eType, iSize);
+
+	if (isDebug())
+	{
+		// more padding
+		unsigned int iBuffer = MAX_UNSIGNED_INT;
+		Write(iBuffer);
+
+		// add the name of the variable
+		Write(getSavedEnumName(m_eClassType, eType));
+	}
 }
 
 int CvSavegameWriter::GetXmlByteSize(JITarrayTypes eType)
@@ -526,9 +586,26 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 ///
 ///
 
+enum Savegame_baseclass_flags
+{
+	Savegame_baseclass_flags_debug,
+};
+
+CvSavegameBase::CvSavegameBase()
+{
+	this->m_iFlag = 0;
+}
+
+bool CvSavegameBase::isDebug() const
+{
+	return HasBit(m_iFlag, Savegame_baseclass_flags_debug);
+}
+
 CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 	: m_pStream(pStream)
 {
+	m_pStream->Read(&m_iFlag);
+
 	pStream->Read(&m_iSize);
 	m_MemoryAllocation = NULL;
 	if (m_iSize > 0)
@@ -583,6 +660,10 @@ void CvSavegameReaderBase::Read(byte* var, unsigned int iSize)
 CvSavegameWriterBase::CvSavegameWriterBase(FDataStreamBase* pStream)
 	: m_pStream(pStream)
 {
+	// set the debug flag
+	// TODO: don't hardcode all savegames to include debug info
+	SetBit(m_iFlag, Savegame_baseclass_flags_debug);
+
 	// m_table needs to end with an empty string, which is effectively just a 0 byte.
 	// Add this as the first byte in m_vector here in the constructor because then it's easily done.
 	// Once both vectors are completed, they are merged meaning it doesn't matter which one the termination byte is added to.
@@ -591,6 +672,8 @@ CvSavegameWriterBase::CvSavegameWriterBase(FDataStreamBase* pStream)
 
 void CvSavegameWriterBase::WriteFile()
 {
+	m_pStream->Write(m_iFlag);
+
 	unsigned int iSize = m_vector.size();
 	iSize += m_table.size();
 	m_pStream->Write(iSize);

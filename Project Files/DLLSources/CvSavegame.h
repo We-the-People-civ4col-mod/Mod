@@ -32,6 +32,8 @@ public:
 	CvSavegameReader(CvSavegameReaderBase& readerBase);
 	CvSavegameReader(const CvSavegameReader& reader);
 
+	bool isDebug() const;
+
 	void AssignClassType(SavegameClassTypes eType);
 
 	void Read(SavegameVariableTypes& variable);
@@ -60,18 +62,18 @@ public:
 	template<typename T>
 	T ReadBitfield(T variable);
 
-	// Add all enums used in savegames
-	void Read(CardinalDirectionTypes& variable) { Read((int&)variable); }
-	void Read(CalendarTypes         & variable) { Read((int&)variable); }
-	void Read(CustomMapOptionTypes  & variable) { Read((int&)variable); }
-	void Read(DirectionTypes        & variable) { Read((int&)variable); }
-	void Read(GameType              & variable) { Read((int&)variable); }
-	void Read(PlayerTypes           & variable) { Read((int&)variable); }
-	void Read(PlotTypes             & variable) { Read((int&)variable); }
-	void Read(SlotClaim             & variable) { Read((int&)variable); }
-	void Read(SlotStatus            & variable) { Read((int&)variable); }
-	void Read(TeamTypes             & variable) { Read((int&)variable); }
-	void Read(TurnTimerTypes        & variable) { Read((int&)variable); }
+	// Add all enums used in savegames (single byte)
+	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
+	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
+	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
+	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
+	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
+	void Read(PlotTypes             & variable) { ReadEnum(variable); }
+	void Read(SlotClaim             & variable) { ReadEnum(variable); }
+	void Read(SlotStatus            & variable) { ReadEnum(variable); }
+	void Read(TeamTypes             & variable) { ReadEnum(variable); }
+	void Read(TurnTimerTypes        & variable) { ReadEnum(variable); }
 	
 	// everything linked to xml file enums
 	void Read(ArtStyleTypes         & variable) { ReadXmlEnum(variable); }
@@ -133,6 +135,9 @@ public:
 private:
 
 	template<typename T>
+	void ReadEnum(T& variable);
+
+	template<typename T>
 	void ReadXmlEnum(T& variable);
 	void ReadXmlEnum(int& iVariable, JITarrayTypes eType);
 
@@ -143,6 +148,10 @@ private:
 	SavegameClassTypes m_eClassType;
 
 	CvSavegameReaderBase& m_ReaderBase;
+
+	// debug strings
+	CvString m_szPreviousType;
+	CvString m_szType;
 };
 
 class CvSavegameWriter
@@ -150,6 +159,8 @@ class CvSavegameWriter
 public:
 	CvSavegameWriter(CvSavegameWriterBase& writerbase);
 	CvSavegameWriter(const CvSavegameWriter& writer);
+
+	bool isDebug() const;
 
 	void AssignClassType(SavegameClassTypes eType);
 
@@ -168,6 +179,9 @@ public:
 	void Write(CvString& szString);
 	void Write(CvWString& szString);
 
+	void Write(const char* szString);
+	void Write(const wchar* szString);
+
 	void Write(BoolArray& baArray);
 	
 	template<class T>
@@ -185,6 +199,19 @@ public:
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
+
+	// Add all enums used in savegames (single byte)
+	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
+	void Write(CalendarTypes          variable) { WriteEnum(variable); }
+	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
+	void Write(DirectionTypes         variable) { WriteEnum(variable); }
+	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(PlayerTypes            variable) { WriteEnum(variable); }
+	void Write(PlotTypes              variable) { WriteEnum(variable); }
+	void Write(SlotClaim              variable) { WriteEnum(variable); }
+	void Write(SlotStatus             variable) { WriteEnum(variable); }
+	void Write(TeamTypes              variable) { WriteEnum(variable); }
+	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
@@ -241,6 +268,9 @@ public:
 private:
 
 	template<typename T>
+	void WriteEnum(T variable);
+
+	template<typename T>
 	void WriteXmlEnum(T variable);
 	void WriteXmlEnum(int iVariable, JITarrayTypes eType);
 	void Write(byte*var, unsigned int iSize);
@@ -258,6 +288,14 @@ private:
 //
 // Reader
 //
+
+template<typename T>
+inline void CvSavegameReader::ReadEnum(T& variable)
+{
+	char iBuffer;
+	Read(iBuffer);
+	variable = (T)iBuffer;
+}
 
 template<typename T>
 inline void CvSavegameReader::ReadXmlEnum(T& variable)
@@ -319,6 +357,14 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 }
 
 template<typename T>
+inline void CvSavegameWriter::WriteEnum(T variable)
+{
+	FAssert(variable >= (char)MIN_CHAR && variable <= MAX_CHAR);
+	char iBuffer = variable;
+	Write(iBuffer);
+}
+
+template<typename T>
 inline void CvSavegameWriter::WriteXmlEnum(T variable)
 {
 	WriteXmlEnum(variable, getJITarrayType(variable));
@@ -337,7 +383,19 @@ inline void CvSavegameWriter::WriteXmlEnum(T variable)
 /// For instance CvMap knows it's CvMap. It calls CvPlot multiple times, which then knows it's CvPlot, but when it returns, it's back to CvMap without any extra code.
 ///
 
+class CvSavegameBase
+{
+public:
+	CvSavegameBase();
+
+	bool isDebug() const;
+
+protected:
+	unsigned int m_iFlag;
+};
+
 class CvSavegameReaderBase
+	: CvSavegameBase
 {
 	friend class CvSavegameReader;
 public:
@@ -357,6 +415,7 @@ private:
 };
 
 class CvSavegameWriterBase
+	: CvSavegameBase
 {
 	friend class CvSavegameWriter;
 public:

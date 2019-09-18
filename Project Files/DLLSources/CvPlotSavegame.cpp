@@ -98,6 +98,59 @@ int getNumSavedEnumValuesPlot()
 	return NUM_SAVE_ENUM_VALUES;
 }
 
+const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
+{
+	switch (eType)
+	{
+	case Save_END: return "Save_END";
+	case Save_X: return "Save_X";
+	case Save_Y: return "Save_Y";
+	case Save_Area: return "Save_Area";
+	case Save_FeatureVarity: return "Save_FeatureVarity";
+
+	case Save_OwnershipDuration: return "Save_OwnershipDuration";
+	case Save_ImprovementDuration: return "Save_ImprovementDuration";
+	case Save_UpgradeProgress: return "Save_UpgradeProgress";
+	case Save_ForceUnownedTimer: return "Save_ForceUnownedTimer";
+	case Save_CityRadiusCount: return "Save_CityRadiusCount";
+	case Save_RiverID: return "Save_RiverID";
+	case Save_MinOriginalStartDist: return "Save_MinOriginalStartDist";
+	case Save_RiverCrossingCount: return "Save_RiverCrossingCount";
+	case Save_DistanceToOcean: return "Save_DistanceToOcean";
+	case Save_Crumbs: return "Save_Crumbs";
+	
+	case Save_CanalValue: return "Save_CanalValue";
+	case Save_ChokeValue: return "Save_ChokeValue";
+	case Save_DefenseDamage: return "Save_DefenseDamage";
+	case Save_Bombarded: return "Save_Bombarded";
+
+	case Save_StartingPlot: return "Save_StartingPlot";
+	case Save_Hills: return "Save_Hills";
+	case Save_NOfRiver: return "Save_NOfRiver";
+	case Save_WOfRiver: return "Save_WOfRiver";
+	case Save_PotentialCityWork: return "Save_PotentialCityWork";
+
+	case Save_ePlotType: return "Save_ePlotType";
+	case Save_eTerrainType: return "Save_eTerrainType";
+	case Save_eFeatureType: return "Save_eFeatureType";
+	case Save_eBonusType: return "Save_eBonusType";
+	case Save_eImprovementType: return "Save_eImprovementType";
+	case Save_eRouteType: return "Save_eRouteType";
+	case Save_eOwner: return "Save_eOwner";
+	case Save_eRiverNSDirection: return "Save_eRiverNSDirection";
+	case Save_eRiverWEDirection: return "Save_eRiverWEDirection";
+	case Save_eEurope: return "Save_eEurope";
+
+	case Save_plotCity: return "Save_plotCity";
+	case Save_workingCity: return "Save_workingCity";
+	case Save_workingCityOverride: return "Save_workingCityOverride";
+
+	case Save_aiYield: return "Save_aiYield";
+	case Save_Revealed: return "Save_Revealed";
+	}
+	return "";
+}
+
 // assign everything to default values
 void CvPlot::resetSavedData()
 {
@@ -157,6 +210,12 @@ void CvPlot::read(CvSavegameReader reader)
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
+
+	CvString szClassName;
+	if (reader.isDebug())
+	{
+		reader.Read(szClassName);
+	}
 
 	// loop read all the variables
 	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
@@ -227,7 +286,11 @@ void CvPlot::read(CvSavegameReader reader)
 			{
 				m_aiYield[eYield] = temp_yield.get(eYield);
 			}
+			break;
 		}
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			break;
 		}
 	}
 	
@@ -238,6 +301,11 @@ void CvPlot::read(CvSavegameReader reader)
 void CvPlot::write(CvSavegameWriter writer)
 {
 	writer.AssignClassType(SAVEGAME_CLASS_PLOT);
+
+	if (writer.isDebug())
+	{
+		writer.Write("CvPlot");
+	}
 
 	// Write the data.
 	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
