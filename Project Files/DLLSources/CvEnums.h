@@ -842,12 +842,16 @@ enum DllExport TeamTypes
 {
 	UNKNOWN_TEAM = -2,
 	NO_TEAM = -1,
+	FIRST_TEAM = 0,
+	NUM_TEAM_TYPES = MAX_TEAMS,
 };
 
 enum DllExport PlayerTypes
 {
 	UNKNOWN_PLAYER = -2,
 	NO_PLAYER = -1,
+	FIRST_PLAYER = 0,
+	NUM_PLAYER_TYPES = MAX_PLAYERS,
 };
 
 enum DllExport OrderTypes

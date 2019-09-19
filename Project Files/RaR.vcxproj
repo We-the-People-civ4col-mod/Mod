@@ -51,6 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
     <ClCompile Include="DLLSources\PlayerBoolArray.cpp" />
     <ClCompile Include="DLLSources\CvAreaSavegame.cpp" />
     <ClCompile Include="DLLSources\CvMapSavegame.cpp" />
@@ -179,6 +180,7 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DLLSources\CvPlotFunctions.h" />
     <ClInclude Include="DLLSources\PlayerBoolArray.h" />
     <ClInclude Include="DLLSources\CvSavegame.h" />
     <ClInclude Include="DLLSources\CvGlobalConstants.h" />

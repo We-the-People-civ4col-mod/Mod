@@ -379,6 +379,9 @@
     <ClCompile Include="DLLSources\PlayerBoolArray.cpp">
       <Filter>Data\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvPlotFunctions.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -728,6 +731,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\PlayerBoolArray.h">
       <Filter>Data\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvPlotFunctions.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,8 @@
 #include "LinkedList.h"
 #include <bitset>
 
+#include "CvPlotFunctions.h"
+
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 
 class CvArea;
@@ -526,9 +528,7 @@ protected:
 
 	bool* m_abRiverCrossing;	// bit vector
 	PlayerBoolArray m_pab_Revealed;
-
-	short* /*ImprovementTypes*/ m_aeRevealedImprovementType;
-	short* /*RouteTypes*/ m_aeRevealedRouteType;
+	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;
 
 	char* m_szScriptData;
 

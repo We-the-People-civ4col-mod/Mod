@@ -46,8 +46,6 @@ CvPlot::CvPlot()
 	m_aiVisibilityCount = NULL;
 	m_aiRevealedOwner = NULL;
 	m_abRiverCrossing = NULL;
-	m_aeRevealedImprovementType = NULL;
-	m_aeRevealedRouteType = NULL;
 	m_paiBuildProgress = NULL;
 	m_apaiCultureRangeCities = NULL;
 	m_apaiInvisibleVisibilityCount = NULL;
@@ -110,9 +108,6 @@ void CvPlot::uninit()
 	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
 
 	SAFE_DELETE_ARRAY(m_abRiverCrossing);
-
-	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
-	SAFE_DELETE_ARRAY(m_aeRevealedRouteType);
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
 
@@ -7044,15 +7039,7 @@ ImprovementTypes CvPlot::getRevealedImprovementType(TeamTypes eTeam, bool bDebug
 	}
 	else
 	{
-		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
-		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-
-		if (NULL == m_aeRevealedImprovementType)
-		{
-			return NO_IMPROVEMENT;
-		}
-
-		return (ImprovementTypes)m_aeRevealedImprovementType[eTeam];
+		return m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
 	}
 }
 
@@ -7062,18 +7049,9 @@ void CvPlot::setRevealedImprovementType(TeamTypes eTeam, ImprovementTypes eNewVa
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	if (getRevealedImprovementType(eTeam, false) != eNewValue)
+	if (m_aeRevealedImprovementRouteTypes.getImprovement(eTeam) != eNewValue)
 	{
-		if (NULL == m_aeRevealedImprovementType)
-		{
-			m_aeRevealedImprovementType = new short[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aeRevealedImprovementType[iI] = NO_IMPROVEMENT;
-			}
-		}
-
-		m_aeRevealedImprovementType[eTeam] = eNewValue;
+		m_aeRevealedImprovementRouteTypes.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{
@@ -7093,15 +7071,7 @@ RouteTypes CvPlot::getRevealedRouteType(TeamTypes eTeam, bool bDebug) const
 	}
 	else
 	{
-		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
-		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-
-		if (NULL == m_aeRevealedRouteType)
-		{
-			return NO_ROUTE;
-		}
-
-		return (RouteTypes)m_aeRevealedRouteType[eTeam];
+		return m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
 	}
 }
 
@@ -7111,18 +7081,9 @@ void CvPlot::setRevealedRouteType(TeamTypes eTeam, RouteTypes eNewValue)
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	if (getRevealedRouteType(eTeam, false) != eNewValue)
+	if (m_aeRevealedImprovementRouteTypes.getRoute(eTeam) != eNewValue)
 	{
-		if (NULL == m_aeRevealedRouteType)
-		{
-			m_aeRevealedRouteType = new short[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aeRevealedRouteType[iI] = NO_ROUTE;
-			}
-		}
-
-		m_aeRevealedRouteType[eTeam] = eNewValue;
+		m_aeRevealedImprovementRouteTypes.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{
@@ -8232,22 +8193,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 		pStream->Read(cCount, m_abRiverCrossing);
 	}
 
-	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aeRevealedImprovementType = new short[cCount];
-		pStream->Read(cCount, m_aeRevealedImprovementType);
-	}
-
-	SAFE_DELETE_ARRAY(m_aeRevealedRouteType);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aeRevealedRouteType = new short[cCount];
-		pStream->Read(cCount, m_aeRevealedRouteType);
-	}
-
 	m_szScriptData = pStream->ReadString();
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
@@ -8406,26 +8351,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	{
 		pStream->Write((char)NUM_DIRECTION_TYPES);
 		pStream->Write(NUM_DIRECTION_TYPES, m_abRiverCrossing);
-	}
-
-	if (NULL == m_aeRevealedImprovementType)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aeRevealedImprovementType);
-	}
-
-	if (NULL == m_aeRevealedRouteType)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aeRevealedRouteType);
 	}
 
 	pStream->WriteString(m_szScriptData);

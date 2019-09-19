@@ -89,6 +89,8 @@ enum SavegameVariableTypes
 
 	Save_aiYield,
 	Save_Revealed,
+	Save_RevealedImprovementRouteSingle,
+	Save_RevealedImprovementRouteArray,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -147,6 +149,8 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 
 	case Save_aiYield: return "Save_aiYield";
 	case Save_Revealed: return "Save_Revealed";
+	case Save_RevealedImprovementRouteSingle: return "Save_RevealedImprovementRouteSingle";
+	case Save_RevealedImprovementRouteArray: return "Save_RevealedImprovementRouteArray";
 	}
 	return "";
 }
@@ -201,6 +205,7 @@ void CvPlot::resetSavedData()
 	m_workingCityOverride.reset();
 
 	m_pab_Revealed.reset();
+	m_aeRevealedImprovementRouteTypes.reset();
 }
 
 void CvPlot::read(CvSavegameReader reader)
@@ -276,10 +281,42 @@ void CvPlot::read(CvSavegameReader reader)
 
 		case Save_Revealed:                reader.Read(m_pab_Revealed               ); break;
 
+		case Save_RevealedImprovementRouteSingle:
+		{
+			// saving out of date data for a team
+			TeamTypes eTeam;
+			ImprovementTypes eImprovement;
+			RouteTypes eRoute;
+			reader.Read(eTeam);
+			reader.Read(eImprovement);
+			reader.Read(eRoute);
+			m_aeRevealedImprovementRouteTypes.set(eTeam, eImprovement, eRoute);
+		} break;
+
+
+		case Save_RevealedImprovementRouteArray:
+		{
+			// what follows now is a PlayerBoolArray with all the teams, which have their knowledge up to date
+			// loop this array and assign the already loaded improvement and route
+			// note that not being in the array shouldn't alter the memory at all
+			// it's either out of date (set in Save_RevealedImprovementRouteSingle) or no info (default value)
+			// writing something means overwriting what is stored using Save_RevealedImprovementRouteSingle.
+			PlayerBoolArray eTeamArray;
+			ImprovementTypes eImprovement = getImprovementType();
+			RouteTypes eRoute = getRouteType();
+			reader.Read(eTeamArray);
+			for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+			{
+				if (eTeamArray.get(eTeam))
+				{
+					m_aeRevealedImprovementRouteTypes.set(eTeam, eImprovement, eRoute);
+				}
+			}
+		} break;
+
 		case Save_aiYield:
 		{
 			// copy YieldArray into a short array
-			// this way 
 			YieldArray<short> temp_yield;
 			reader.Read(temp_yield);
 			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
@@ -368,6 +405,42 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_aiYield, temp_yield);
 
 	writer.Write(Save_Revealed, m_pab_Revealed);
+
+	if (m_aeRevealedImprovementRouteTypes.isAllocated())
+	{
+		PlayerBoolArray eTeamArray;
+		ImprovementTypes ePlotImprovement = getImprovementType();
+		RouteTypes ePlotRoute = getRouteType();
+
+		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+		{
+			ImprovementTypes eImprovement = m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
+			RouteTypes eRoute = m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
+
+			if (eImprovement != NO_IMPROVEMENT || eRoute != NO_ROUTE)
+			{
+				// team believes there is something on the plot. It needs to be saved what they believe the plot to contain
+				// not saving anything makes the team believe there is nothing (including not explored)
+				if (eImprovement == ePlotImprovement && eRoute == ePlotRoute)
+				{
+					// the team's knowledge is up to date
+					// save a single bit, which states this
+					eTeamArray.set(eTeam, true);
+				}
+				else
+				{
+					// team believes there is something on the plot, but it's not up to date
+					// the only way to save this is to save what the team believes explicitly
+					writer.Write(Save_RevealedImprovementRouteSingle);
+					writer.Write(eTeam);
+					writer.Write(eImprovement);
+					writer.Write(eRoute);
+				}
+			}
+		}
+		// save which teams have knowledge, which is up to date
+		writer.Write(Save_RevealedImprovementRouteArray, eTeamArray);
+	}
 
 	writer.Write(Save_END);
 }
