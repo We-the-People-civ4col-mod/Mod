@@ -252,7 +252,7 @@ void CvSavegameReader::Read(BoolArray& baArray)
 	baArray.Read(*this);
 }
 
-void CvSavegameReader::Read(PlayerBoolArray& array)
+void CvSavegameReader::Read(PlayerBoolArrayBase& array)
 {
 	array.Read(*this);
 }
@@ -484,7 +484,7 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, BoolArray& baArray)
 	}
 }
 
-void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerBoolArray& array)
+void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array)
 {
 	if (array.hasContent())
 	{

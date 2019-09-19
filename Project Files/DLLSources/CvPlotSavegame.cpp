@@ -301,7 +301,7 @@ void CvPlot::read(CvSavegameReader reader)
 			// note that not being in the array shouldn't alter the memory at all
 			// it's either out of date (set in Save_RevealedImprovementRouteSingle) or no info (default value)
 			// writing something means overwriting what is stored using Save_RevealedImprovementRouteSingle.
-			PlayerBoolArray eTeamArray;
+			TeamBoolArray eTeamArray;
 			ImprovementTypes eImprovement = getImprovementType();
 			RouteTypes eRoute = getRouteType();
 			reader.Read(eTeamArray);
@@ -408,7 +408,7 @@ void CvPlot::write(CvSavegameWriter writer)
 
 	if (m_aeRevealedImprovementRouteTypes.isAllocated())
 	{
-		PlayerBoolArray eTeamArray;
+		TeamBoolArray eTeamArray;
 		ImprovementTypes ePlotImprovement = getImprovementType();
 		RouteTypes ePlotRoute = getRouteType();
 
