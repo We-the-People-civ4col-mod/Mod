@@ -165,7 +165,7 @@ __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 // variableless versions assuming the argument to be 0
 // useful for enums
 #define SETBIT( x ) (1 << x)
-#define SETBITS( x, y ) (((1 << x) - 1 ) << y)
+#define SETBITS( numBits, firstBit ) (((1 << numBits) - 1 ) << firstBit)
 
 #define GETBIT ( x, y ) ((x >> y) & 1)
 #define GETBITS( x, y, z ) ((x >> y) & ((1 << z) - 1 ))
@@ -273,6 +273,7 @@ namespace boost
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
+#include "PlayerArray.h"
 #include "PlayerBoolArray.h"
 #include "InfoArray.h"
 #include "InfoCacheArray.h"

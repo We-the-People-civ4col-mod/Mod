@@ -52,6 +52,9 @@ public:
 	void Read(CvWString& szString);
 	
 	template<class T>
+	void Read(PlayerArrayBase<T>& array);
+
+	template<class T>
 	void Read(JustInTimeArray<T>& jitArray);
 
 	void Read(BoolArray& baArray);
@@ -183,6 +186,9 @@ public:
 	void Write(const wchar* szString);
 
 	void Write(BoolArray& baArray);
+
+	template<class T>
+	void Write(PlayerArrayBase<T>& array);
 	
 	template<class T>
 	void Write(JustInTimeArray<T>& jitArray);
@@ -193,6 +199,9 @@ public:
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
 	void Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, T eVariable, T eDefault);
@@ -313,6 +322,12 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 }
 
 template<class T>
+inline void CvSavegameReader::Read(PlayerArrayBase<T>& array)
+{
+	array.Read(*this);
+}
+
+template<class T>
 inline void CvSavegameReader::Read(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Read(*this);
@@ -331,9 +346,25 @@ inline void CvSavegameWriter::Write(T variable)
 }
 
 template<class T>
+inline void CvSavegameWriter::Write(PlayerArrayBase<T>& array)
+{
+	array.Write(*this);
+}
+
+template<class T>
 inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Write(*this);
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array)
+{
+	if (array.hasContent())
+	{
+		Write(eType);
+		Write(array);
+	}
 }
 
 template<class T>

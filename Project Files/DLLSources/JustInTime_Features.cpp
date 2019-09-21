@@ -63,7 +63,6 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_IMPROVEMENT:        return GC.getNumImprovementInfos();
 	case JIT_ARRAY_LEADER_HEAD:        return GC.getNumLeaderHeadInfos();
 	case JIT_ARRAY_MEMORY:             return NUM_MEMORY_TYPES;
-	case JIT_ARRAY_PLAYER:             return MAX_PLAYERS;
 	case JIT_ARRAY_PLAYER_COLOR:       return GC.getNumPlayerColorInfos();
 	case JIT_ARRAY_PLAYER_OPTION:      return NUM_PLAYEROPTION_TYPES;
 	case JIT_ARRAY_PROFESSION:         return GC.getNumProfessionInfos();
@@ -151,7 +150,6 @@ const char* getArrayType(JITarrayTypes eType, int iIndex)
 	switch (eType)
 	{
 	case JIT_ARRAY_ART_STYLE:          return GC.getArtStyleTypes((ArtStyleTypes)iIndex); // use the actual art style string for type
-	case JIT_ARRAY_PLAYER:             return "";
 	}
 	const CvInfoBase *pInfo = getBaseInfo(eType, iIndex);
 	if (pInfo == NULL)
@@ -208,7 +206,6 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_IMPROVEMENT:        return "Improvement";
 	case JIT_ARRAY_LEADER_HEAD:        return "LeaderHead";
 	case JIT_ARRAY_MEMORY:             return "Memory";
-	case JIT_ARRAY_PLAYER:             return "Player";
 	case JIT_ARRAY_PLAYER_COLOR:       return "PlayerColor";
 	case JIT_ARRAY_PLAYER_OPTION:      return "PlayerOption";
 	case JIT_ARRAY_PROFESSION:         return "Profession";

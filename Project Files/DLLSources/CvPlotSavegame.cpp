@@ -92,6 +92,11 @@ enum SavegameVariableTypes
 	Save_RevealedImprovementRouteSingle,
 	Save_RevealedImprovementRouteArray,
 
+	Save_DangerMap,
+	Save_Culture,
+	Save_CultureRangeForts,
+	Save_FoundValue,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -151,6 +156,10 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_Revealed: return "Save_Revealed";
 	case Save_RevealedImprovementRouteSingle: return "Save_RevealedImprovementRouteSingle";
 	case Save_RevealedImprovementRouteArray: return "Save_RevealedImprovementRouteArray";
+
+	case Save_DangerMap: return "Save_DangerMap";
+	case Save_Culture: return "Save_Culture";
+	case Save_CultureRangeForts: return "Save_CultureRangeForts";
 	}
 	return "";
 }
@@ -325,6 +334,14 @@ void CvPlot::read(CvSavegameReader reader)
 			}
 			break;
 		}
+
+		// PlayerArrays
+		case Save_Culture                : m_aiCulture                         .Read(reader); break;
+		case Save_CultureRangeForts      : m_aiCultureRangeForts               .Read(reader); break;
+		case Save_DangerMap              : m_aiDangerMap                       .Read(reader); break;
+		case Save_FoundValue             : m_aiFoundValue                      .Read(reader); break;
+			
+
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
 			break;
@@ -442,5 +459,10 @@ void CvPlot::write(CvSavegameWriter writer)
 		writer.Write(Save_RevealedImprovementRouteArray, eTeamArray);
 	}
 
+	writer.Write(Save_DangerMap, m_aiDangerMap);
+	writer.Write(Save_Culture, m_aiCulture);
+	writer.Write(Save_CultureRangeForts, m_aiCultureRangeForts);
+	writer.Write(Save_FoundValue, m_aiFoundValue);
+		
 	writer.Write(Save_END);
 }

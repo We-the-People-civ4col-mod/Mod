@@ -138,13 +138,6 @@ public:
 };
 
 template<class T>
-class PlayerArray: public JustInTimeArray<T>
-{
-public:
-	PlayerArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_PLAYER, eDefault){};
-};
-
-template<class T>
 class ProfessionArray: public JustInTimeArray<T>
 {
 public:

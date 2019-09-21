@@ -37,11 +37,6 @@ CvPlot::CvPlot()
 {
 	m_aiYield = new short[NUM_YIELD_TYPES];
 
-	m_aiDangerMap = new short[MAX_PLAYERS];	// TAC - AI Improved Naval AI - koma13
-
-	m_aiCulture = NULL;
-	m_aiCultureRangeForts = NULL; // Super Forts *culture*
-	m_aiFoundValue = NULL;
 	m_aiPlayerCityRadiusCount = NULL;
 	m_aiVisibilityCount = NULL;
 	m_aiRevealedOwner = NULL;
@@ -69,8 +64,6 @@ CvPlot::~CvPlot()
 	uninit();
 
 	SAFE_DELETE_ARRAY(m_aiYield);
-	
-	SAFE_DELETE_ARRAY(m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
 }
 
 void CvPlot::init(int iX, int iY)
@@ -99,9 +92,6 @@ void CvPlot::uninit()
 	gDLL->getFlagEntityIFace()->destroy(m_pFlagSymbolOffset);
 	m_pCenterUnit = NULL;
 
-	SAFE_DELETE_ARRAY(m_aiCulture);
-	SAFE_DELETE_ARRAY(m_aiCultureRangeForts); // Super Forts *culture*
-	SAFE_DELETE_ARRAY(m_aiFoundValue);
 	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
 
 	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
@@ -158,13 +148,6 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	{
 		m_aiYield[iI] = 0;
 	}
-
-	// TAC - AI Improved Naval AI - koma13 - START
-	for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-	{
-		m_aiDangerMap[iI] = 0;
-	}
-	// TAC - AI Improved Naval AI - koma13 - END
 	
 	updateImpassable();
 }
@@ -2386,30 +2369,16 @@ void CvPlot::changeDefenseDamage(int iChange)
 // Super Forts begin *culture*
 int CvPlot::getCultureRangeForts(PlayerTypes ePlayer) const
 {
-	if (NULL == m_aiCultureRangeForts)
-	{
-		return 0;
-	}
-
-	return m_aiCultureRangeForts[ePlayer];
+	return m_aiCultureRangeForts.get(ePlayer);
 }
 
 void CvPlot::setCultureRangeForts(PlayerTypes ePlayer, int iNewValue)
 {
 	if (getCultureRangeForts(ePlayer) != iNewValue)
 	{
-		if(NULL == m_aiCultureRangeForts)
-		{
-			m_aiCultureRangeForts = new short[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_aiCultureRangeForts[iI] = 0;
-			}
-		}
-
-		m_aiCultureRangeForts[ePlayer] = iNewValue;
+		m_aiCultureRangeForts.set(ePlayer, iNewValue);
 		
-		if(getCulture(ePlayer) == 0)
+		if (getCulture(ePlayer) == 0)
 		{
 			changeCulture(ePlayer, 1, false);
 		}
@@ -5516,7 +5485,7 @@ int CvPlot::getDangerMap(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiDangerMap[eIndex];
+	return m_aiDangerMap.get(eIndex);
 }
 
 void CvPlot::setDangerMap(PlayerTypes eIndex, int iNewValue)
@@ -5524,12 +5493,8 @@ void CvPlot::setDangerMap(PlayerTypes eIndex, int iNewValue)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (m_aiDangerMap[eIndex] != iNewValue)
-	{
-		m_aiDangerMap[eIndex] = iNewValue;
-	}
-
-	FAssert(m_aiDangerMap[eIndex] >= 0);
+	m_aiDangerMap.set(eIndex, iNewValue);
+	FAssert(m_aiDangerMap.get(eIndex) >= 0);
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
@@ -6156,15 +6121,7 @@ void CvPlot::updateYield(bool bUpdateCity)
 
 int CvPlot::getCulture(PlayerTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < MAX_PLAYERS, "iIndex is expected to be within maximum bounds (invalid Index)");
-
-	if (NULL == m_aiCulture)
-	{
-		return 0;
-	}
-
-	return m_aiCulture[eIndex];
+	return m_aiCulture.get(eIndex);
 }
 
 
@@ -6271,16 +6228,7 @@ void CvPlot::setCulture(PlayerTypes eIndex, int iNewValue, bool bUpdate)
 
 	if (getCulture(eIndex) != iNewValue)
 	{
-		if(NULL == m_aiCulture)
-		{
-			m_aiCulture = new int[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_aiCulture[iI] = 0;
-			}
-		}
-
-		m_aiCulture[eIndex] = iNewValue;
+		m_aiCulture.set(eIndex, iNewValue);
 		FAssert(getCulture(eIndex) >= 0);
 
 		if (bUpdate)
@@ -6362,12 +6310,7 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_aiFoundValue)
-	{
-		return 0;
-	}
-
-	if (m_aiFoundValue[eIndex] == -1)
+	if (m_aiFoundValue.get(eIndex) == -1)
 	{
 		long lResult=-1;
 		if(GC.getUSE_GET_CITY_FOUND_VALUE_CALLBACK())
@@ -6381,16 +6324,16 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 
 		if (lResult == -1)
 		{
-			m_aiFoundValue[eIndex] = GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE(), -1, true);
+			m_aiFoundValue.set(eIndex, GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE(), -1, true));
 		}
 
-		if (m_aiFoundValue[eIndex] > area()->getBestFoundValue(eIndex))
+		if (m_aiFoundValue.get(eIndex) > area()->getBestFoundValue(eIndex))
 		{
-			area()->setBestFoundValue(eIndex, m_aiFoundValue[eIndex]);
+			area()->setBestFoundValue(eIndex, m_aiFoundValue.get(eIndex));
 		}
 	}
 
-	return m_aiFoundValue[eIndex];
+	return m_aiFoundValue.get(eIndex);
 }
 
 
@@ -6430,19 +6373,7 @@ void CvPlot::setFoundValue(PlayerTypes eIndex, int iNewValue)
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 	FAssert(iNewValue >= -1);
 
-	if (NULL == m_aiFoundValue && 0 != iNewValue)
-	{
-		m_aiFoundValue = new int[MAX_PLAYERS];
-		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-		{
-			m_aiFoundValue[iI] = 0;
-		}
-	}
-
-	if (NULL != m_aiFoundValue)
-	{
-		m_aiFoundValue[eIndex] = iNewValue;
-	}
+	m_aiFoundValue.set(eIndex, iNewValue);
 }
 
 
@@ -8133,34 +8064,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
-	pStream->Read(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
-
-	SAFE_DELETE_ARRAY(m_aiCulture);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiCulture = new int[cCount];
-		pStream->Read(cCount, m_aiCulture);
-	}
-
-	// Super Forts begin *culture*
-	SAFE_DELETE_ARRAY(m_aiCultureRangeForts);
-	pStream->Read(&cCount);
-	if(cCount > 0)
-	{
-		m_aiCultureRangeForts = new short[cCount];
-		pStream->Read(cCount, m_aiCultureRangeForts);
-	}
-	// Super Forts end
-
-	SAFE_DELETE_ARRAY(m_aiFoundValue);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiFoundValue = new int[cCount];
-		pStream->Read(cCount, m_aiFoundValue);
-	}
-
 	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
 	pStream->Read(&cCount);
 	if (cCount > 0)
@@ -8278,40 +8181,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	// m_bPlotLayoutDirty not saved
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
-
-	pStream->Write(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
-
-	if (NULL == m_aiCulture)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiCulture);
-	}
-
-	// Super Forts begin *culture*
-	if (NULL == m_aiCultureRangeForts)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiCultureRangeForts);
-	}
-	// Super Forts end
-
-	if (NULL == m_aiFoundValue)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiFoundValue);
-	}
 
 	if (NULL == m_aiPlayerCityRadiusCount)
 	{

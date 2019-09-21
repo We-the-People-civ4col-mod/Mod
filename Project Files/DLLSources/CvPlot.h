@@ -515,13 +515,10 @@ protected:
 	// already converted in YieldCategory branch
 	short* m_aiYield;
 	
-	short* m_aiDangerMap;	// TAC - AI Improved Naval AI - koma13
-	
-	int* m_aiCulture;
-	
-	short* m_aiCultureRangeForts; // Super Forts *culture*
-	
-	int* m_aiFoundValue;
+	PlayerArray<short> m_aiDangerMap;	// TAC - AI Improved Naval AI - koma13
+	PlayerArray<int> m_aiCulture;
+	PlayerArray<short> m_aiCultureRangeForts; // Super Forts *culture*
+	PlayerArray<int> m_aiFoundValue;
 	char* m_aiPlayerCityRadiusCount;
 	short* m_aiVisibilityCount;
 	char* m_aiRevealedOwner;
