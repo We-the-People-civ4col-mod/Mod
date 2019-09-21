@@ -507,6 +507,8 @@ protected:
 	CardinalDirectionTypes m_eRiverWEDirection : 8;
 	EuropeTypes m_eEurope : 8;
 
+	byte m_bmRiverCrossing;
+
 	IDInfo m_plotCity;
 	IDInfo m_workingCity;
 	IDInfo m_workingCityOverride;
@@ -523,7 +525,6 @@ protected:
 	short* m_aiVisibilityCount;
 	char* m_aiRevealedOwner;
 
-	bool* m_abRiverCrossing;	// bit vector
 	TeamBoolArray m_pab_Revealed;
 	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;
 

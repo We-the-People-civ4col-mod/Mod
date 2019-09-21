@@ -40,7 +40,6 @@ CvPlot::CvPlot()
 	m_aiPlayerCityRadiusCount = NULL;
 	m_aiVisibilityCount = NULL;
 	m_aiRevealedOwner = NULL;
-	m_abRiverCrossing = NULL;
 	m_paiBuildProgress = NULL;
 	m_apaiCultureRangeCities = NULL;
 	m_apaiInvisibleVisibilityCount = NULL;
@@ -96,8 +95,6 @@ void CvPlot::uninit()
 
 	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
 	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
-
-	SAFE_DELETE_ARRAY(m_abRiverCrossing);
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
 
@@ -6633,12 +6630,12 @@ bool CvPlot::isRiverCrossing(DirectionTypes eIndex) const
 		return false;
 	}
 
-	if (NULL == m_abRiverCrossing)
-	{
-		return false;
-	}
+	// check bounds
+	// the code assumes 8 values, which can then fit in the 8 bits in a byte
+	BOOST_STATIC_ASSERT(NUM_DIRECTION_TYPES == 8);
+	FAssert(eIndex >= 0);
 
-	return m_abRiverCrossing[eIndex];
+	return HasBit(m_bmRiverCrossing, eIndex);
 }
 
 
@@ -6770,16 +6767,7 @@ void CvPlot::updateRiverCrossing(DirectionTypes eIndex)
 
 	if (isRiverCrossing(eIndex) != bValid)
 	{
-		if (NULL == m_abRiverCrossing)
-		{
-			m_abRiverCrossing = new bool[NUM_DIRECTION_TYPES];
-			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
-			{
-				m_abRiverCrossing[iI] = false;
-			}
-		}
-
-		m_abRiverCrossing[eIndex] = bValid;
+		SetBit(m_bmRiverCrossing, eIndex, bValid);
 
 		changeRiverCrossingCount((isRiverCrossing(eIndex)) ? 1 : -1);
 	}
@@ -8088,14 +8076,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 		pStream->Read(cCount, m_aiRevealedOwner);
 	}
 
-	SAFE_DELETE_ARRAY(m_abRiverCrossing);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_abRiverCrossing = new bool[cCount];
-		pStream->Read(cCount, m_abRiverCrossing);
-	}
-
 	m_szScriptData = pStream->ReadString();
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
@@ -8210,16 +8190,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	{
 		pStream->Write((char)MAX_TEAMS);
 		pStream->Write(MAX_TEAMS, m_aiRevealedOwner);
-	}
-
-	if (NULL == m_abRiverCrossing)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)NUM_DIRECTION_TYPES);
-		pStream->Write(NUM_DIRECTION_TYPES, m_abRiverCrossing);
 	}
 
 	pStream->WriteString(m_szScriptData);

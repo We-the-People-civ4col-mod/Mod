@@ -41,6 +41,8 @@ const CardinalDirectionTypes defaulteRiverNSDirection = NO_CARDINALDIRECTION;
 const CardinalDirectionTypes defaulteRiverWEDirection = NO_CARDINALDIRECTION;
 const EuropeTypes defaulteEurope = NO_EUROPE;
 
+const byte defaulteRiverCrossing = 0;
+
 
 enum SavegameVariableTypes
 {
@@ -82,6 +84,8 @@ enum SavegameVariableTypes
 	Save_eRiverNSDirection,
 	Save_eRiverWEDirection,
 	Save_eEurope,
+
+	Save_bmRiverCrossing,
 
 	Save_plotCity,
 	Save_workingCity,
@@ -209,6 +213,8 @@ void CvPlot::resetSavedData()
 	m_eRiverWEDirection = defaulteRiverWEDirection;
 	m_eEurope = defaulteEurope;
 
+	m_bmRiverCrossing = defaulteRiverCrossing;
+
 	m_plotCity.reset();
 	m_workingCity.reset();
 	m_workingCityOverride.reset();
@@ -265,6 +271,7 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_CanalValue:              reader.Read(m_iCanalValue                ); break;
 		case Save_ChokeValue:              reader.Read(m_iChokeValue                ); break;
 		case Save_DefenseDamage:           reader.Read(m_iDefenseDamage             ); break;
+		case Save_bmRiverCrossing:         reader.Read(m_bmRiverCrossing            ); break;
 		case Save_Bombarded:               m_bBombarded            = reader.ReadBitfield(m_bBombarded               ); break;
 
 		case Save_StartingPlot:            m_bStartingPlot         = reader.ReadBitfield(m_bStartingPlot            ); break;
@@ -408,6 +415,9 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_eRiverNSDirection, m_eRiverNSDirection, defaulteRiverNSDirection);
 	writer.Write(Save_eRiverWEDirection, m_eRiverWEDirection, defaulteRiverWEDirection);
 	writer.Write(Save_eEurope, m_eEurope, defaulteEurope);
+
+	writer.Write(Save_bmRiverCrossing, m_bmRiverCrossing, defaulteRiverCrossing);
+	
 	
 	writer.Write(Save_plotCity, m_plotCity);
 	writer.Write(Save_workingCity, m_workingCity);
