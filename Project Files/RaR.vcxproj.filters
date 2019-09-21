@@ -385,6 +385,12 @@
     <ClCompile Include="DLLSources\PlayerArray.cpp">
       <Filter>Data\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvCityAISavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvCitySavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">

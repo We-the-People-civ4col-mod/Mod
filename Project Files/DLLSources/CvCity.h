@@ -511,8 +511,13 @@ public:
 
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	virtual void read(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream);
+
+	void resetSavedData();
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
 	virtual void AI_doTurn() = 0;

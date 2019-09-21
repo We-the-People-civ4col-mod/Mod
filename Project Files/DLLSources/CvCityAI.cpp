@@ -18,6 +18,9 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
 
+#include "CvSavegame.h"
+
+
 #define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
 #define BUILDINGFOCUS_BUILD_ANYTHING		(1 << 30)
 #define BUILDINGFOCUS_MILITARY				(1 << 29)	// TAC - AI Buildings - koma13
@@ -6449,6 +6452,10 @@ bool CvCityAI::AI_isMajorCity() const
 //
 void CvCityAI::read(FDataStreamBase* pStream)
 {
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
 	CvCity::read(pStream);
 
 	uint uiFlag=0;
@@ -6492,6 +6499,11 @@ void CvCityAI::read(FDataStreamBase* pStream)
 //
 void CvCityAI::write(FDataStreamBase* pStream)
 {
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
+
 	CvCity::write(pStream);
 
 	uint uiFlag=0;

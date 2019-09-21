@@ -694,6 +694,8 @@ int getNumSavedEnumValuesMap();
 int getNumSavedEnumValuesPlot();
 int getNumSavedEnumValuesUnit();
 int getNumSavedEnumValuesUnitAI();
+int getNumSavedEnumValuesCity();
+int getNumSavedEnumValuesCityAI();
 
 void CvSavegameWriterBase::InitSavegame()
 {
@@ -720,6 +722,8 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_PLOT:        iCount = getNumSavedEnumValuesPlot();      break;
 		case SAVEGAME_CLASS_UNIT:        iCount = getNumSavedEnumValuesUnit();      break;
 		case SAVEGAME_CLASS_UNIT_AI:     iCount = getNumSavedEnumValuesUnitAI();    break;
+		case SAVEGAME_CLASS_CITY:        iCount = getNumSavedEnumValuesCity();      break;
+		case SAVEGAME_CLASS_CITY_AI:     iCount = getNumSavedEnumValuesCityAI();    break;
 		default:
 			FAssertMsg(false, "missing case");
 		}

@@ -58,8 +58,10 @@
     <ClCompile Include="DLLSources\CvMapSavegame.cpp" />
     <ClCompile Include="DLLSources\CvPlotSavegame.cpp" />
     <ClCompile Include="DLLSources\CvUnitAISavegame.cpp" />
+    <ClCompile Include="DLLSources\CvCityAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvSavegame.cpp" />
     <ClCompile Include="DLLSources\CvUnitSavegame.cpp" />
+        <ClCompile Include="DLLSources\CvCitySavegame.cpp" />
     <ClCompile Include="DLLSources\CvGlobalConstants.cpp" />
     <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
     <ClCompile Include="DLLSources\InfoCacheArray.cpp" />

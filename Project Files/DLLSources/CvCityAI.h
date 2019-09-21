@@ -176,7 +176,12 @@ public:
 	DllExport void read(FDataStreamBase* pStream);
 	DllExport void write(FDataStreamBase* pStream);
 
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 protected:
+
+	void resetSavedData();
 
 	int m_iGiftTimer;
 	int m_iTradeTimer; // R&R, ray, Natives Trading - START
