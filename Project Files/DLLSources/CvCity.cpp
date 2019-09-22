@@ -7654,7 +7654,7 @@ void CvCity::read(FDataStreamBase* pStream)
 		}
 	}
 	// just-in-time yield arrays - start - Nightinggale
-	pStream->Read(&m_iID);
+	//pStream->Read(&m_iID);
 	pStream->Read(&m_iX);
 	pStream->Read(&m_iY);
 	pStream->Read(&m_iRallyX);
@@ -7891,7 +7891,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 	
-	pStream->Write(m_iID);
+	//pStream->Write(m_iID);
 	pStream->Write(m_iX);
 	pStream->Write(m_iY);
 	pStream->Write(m_iRallyX);
@@ -10099,7 +10099,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 /*********************************************************************/
 /**                                                                 **/
 /** int CvCity::NBMOD_GetCityTeachLevel() const                     **/
-/** Ermittelt die höchste Bildungsstufe, welche ein Gebäude der     **/
+/** Ermittelt die hï¿½chste Bildungsstufe, welche ein Gebï¿½ude der     **/
 /** Stadt anbietet.                                                 **/
 /**                                                                 **/
 /*********************************************************************/
@@ -10108,10 +10108,10 @@ void CvCity::NBMOD_SetCityTeachLevelCache() // NBMOD EDU cache - Nightinggale
 {
 	int iMaxTeachLevel = 0;
 
-	// alle möglichen Gebäude durchgehen
+	// alle mï¿½glichen Gebï¿½ude durchgehen
 	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
-		// abfragen ob dieses gebäude in der Stadt vorkommt
+		// abfragen ob dieses gebï¿½ude in der Stadt vorkommt
 		if (isHasBuilding((BuildingTypes)iI))
 		{
 			if (GC.getBuildingInfo((BuildingTypes)iI).NBMOD_GetTeachLevel() > iMaxTeachLevel)
@@ -10133,7 +10133,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 	}
 
 	/** NBMOD EDU **/
-	// Liegt das Bildungsniveau der Stadt unter dem für diese Einheit nötigen Niveau?
+	// Liegt das Bildungsniveau der Stadt unter dem fï¿½r diese Einheit nï¿½tigen Niveau?
 	if (NBMOD_GetCityTeachLevel() <  GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel())
 	{
         return -1;
@@ -10185,7 +10185,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 		double fPrice = double(iPrice);
 		double fMulti = 0.0;
 
-		// Ausbildungsstufen-Multiplikator entsprechend benötigter Ausbildungsstufe aus der Definitionsdatei holen
+		// Ausbildungsstufen-Multiplikator entsprechend benï¿½tigter Ausbildungsstufe aus der Definitionsdatei holen
 		if (GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == 1)	// 1. (niedrigste) Ausblidungsstufe (Schule)
 		{
 			fMulti = GC.getTAC_EDUCATION_RANK1();
@@ -10194,7 +10194,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 		{
 			fMulti = GC.getTAC_EDUCATION_RANK2();
 		}
-		else if (GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == 3)	// 3. (höchste) Ausbildungsstufe (Universität)
+		else if (GC.getUnitInfo(eUnit).NBMOD_GetTeachLevel() == 3)	// 3. (hï¿½chste) Ausbildungsstufe (Universitï¿½t)
 		{
 			fMulti = GC.getTAC_EDUCATION_RANK3();
 		}
