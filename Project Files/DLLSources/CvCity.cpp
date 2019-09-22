@@ -7637,7 +7637,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	int iNumElts;
 
 	// Init data before load
-	reset();
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
@@ -7654,41 +7653,8 @@ void CvCity::read(FDataStreamBase* pStream)
 		}
 	}
 	// just-in-time yield arrays - start - Nightinggale
-	//pStream->Read(&m_iID);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iRallyX);
-	pStream->Read(&m_iRallyY);
-	pStream->Read(&m_iGameTurnFounded);
-	pStream->Read(&m_iGameTurnAcquired);
-	pStream->Read(&m_iHighestPopulation);
-	pStream->Read(&m_iWorkingPopulation);
-	pStream->Read(&m_iNumBuildings);
-	pStream->Read(&m_iHealRate);
-	pStream->Read(&m_iFoodKept);
-	pStream->Read(&m_iMaxFoodKeptPercent);
-	pStream->Read(&m_iOverflowProduction);
-	pStream->Read(&m_iMilitaryProductionModifier);
-	pStream->Read(&m_iBuildingDefense);
-	pStream->Read(&m_iBuildingBombardDefense);
-	pStream->Read(&m_iFreeExperience);
-	pStream->Read(&m_iDefenseDamage);
-	pStream->Read(&m_iLastDefenseDamage);
-	pStream->Read(&m_iOccupationTimer);
-	pStream->Read(&m_iCultureUpdateTimer);
-	pStream->Read(&m_iCitySizeBoost);
-	pStream->Read(&m_iHammers);
-	pStream->Read(&m_iMissionaryRate);
+	
 	pStream->Read(&m_bStirredUp); // R&R, ray , Stirring Up Natives
-	pStream->Read(&m_iWorksWaterCount);
-	pStream->Read(&m_iRebelSentiment);
-	pStream->Read(&m_iCityHealth); // R&R, ray, Health
-	pStream->Read(&m_iTeachUnitMultiplier);
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iEducationThresholdMultiplier);
-	}
-
 	pStream->Read(&m_bNeverLost);
 	pStream->Read(&m_bBombarded);
 	pStream->Read(&m_bProductionAutomated);
@@ -7891,38 +7857,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 	
-	//pStream->Write(m_iID);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iRallyX);
-	pStream->Write(m_iRallyY);
-	pStream->Write(m_iGameTurnFounded);
-	pStream->Write(m_iGameTurnAcquired);
-	pStream->Write(m_iHighestPopulation);
-	pStream->Write(m_iWorkingPopulation);
-	pStream->Write(m_iNumBuildings);
-	pStream->Write(m_iHealRate);
-	pStream->Write(m_iFoodKept);
-	pStream->Write(m_iMaxFoodKeptPercent);
-	pStream->Write(m_iOverflowProduction);
-	pStream->Write(m_iMilitaryProductionModifier);
-	pStream->Write(m_iBuildingDefense);
-	pStream->Write(m_iBuildingBombardDefense);
-	pStream->Write(m_iFreeExperience);
-	pStream->Write(m_iDefenseDamage);
-	pStream->Write(m_iLastDefenseDamage);
-	pStream->Write(m_iOccupationTimer);
-	pStream->Write(m_iCultureUpdateTimer);
-	pStream->Write(m_iCitySizeBoost);
-	pStream->Write(m_iHammers);
-	pStream->Write(m_iMissionaryRate);
 	pStream->Write(m_bStirredUp); // R&R, ray , Stirring Up Natives
-	pStream->Write(m_iWorksWaterCount);
-	pStream->Write(m_iRebelSentiment);
-	pStream->Write(m_iCityHealth); // R&R, ray, Health
-	pStream->Write(m_iTeachUnitMultiplier);
-	pStream->Write(m_iEducationThresholdMultiplier);
-
 	pStream->Write(m_bNeverLost);
 	pStream->Write(m_bBombarded);
 	pStream->Write(m_bProductionAutomated);

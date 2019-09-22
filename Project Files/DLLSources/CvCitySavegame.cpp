@@ -6,8 +6,8 @@
 	const int defaultID = 0 ;
 	const int defaultX = 0 ;
 	const int defaultY = 0 ;
-	const int defaultRallyX = 0 ;
-	const int defaultRallyY = 0 ;
+	const int defaultRallyX = INVALID_PLOT_COORD;
+	const int defaultRallyY = INVALID_PLOT_COORD;
 	const int defaultGameTurnFounded = 0 ;
 	const int defaultGameTurnAcquired = 0 ;
 	const int defaultHighestPopulation = 0 ;
@@ -31,8 +31,8 @@
 	const int defaultWorksWaterCount = 0 ;
 	const int defaultRebelSentiment = 0 ;
 	const int defaultCityHealth = 0 ; // R&R, ray, Health
-	const int defaultTeachUnitMultiplier = 0 ;
-	const int defaultEducationThresholdMultiplier = 0 ;
+	const int defaultTeachUnitMultiplier = 100 ;
+	const int defaultEducationThresholdMultiplier = 100 ;
 
 
 // 
