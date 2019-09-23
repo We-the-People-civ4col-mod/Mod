@@ -7654,11 +7654,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
 	// just-in-time yield arrays - start - Nightinggale
 	
-	pStream->Read((int*)&m_eOwner);
-	pStream->Read((int*)&m_ePreviousOwner);
-	pStream->Read((int*)&m_eOriginalOwner);
-	pStream->Read((int*)&m_eCultureLevel);
-	pStream->Read((int*)&m_eTeachUnitClass);
 	if (uiFlag == 0)
 	{
 		m_eMissionaryPlayer = NO_PLAYER;
@@ -7849,12 +7844,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 	
-
-	pStream->Write(m_eOwner);
-	pStream->Write(m_ePreviousOwner);
-	pStream->Write(m_eOriginalOwner);
-	pStream->Write(m_eCultureLevel);
-	pStream->Write(m_eTeachUnitClass);
 	pStream->Write(m_eMissionaryPlayer);
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields

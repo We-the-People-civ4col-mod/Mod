@@ -40,6 +40,11 @@
 	const bool defaultProductionAutomated = false;
 	const bool defaultWallOverride = false;
 
+	const PlayerTypes defaultOwner = PlayerTypes();
+	const PlayerTypes defaultPreviousOwner = NO_PLAYER;
+	const PlayerTypes defaultOriginalOwner = PlayerTypes();
+	const CultureLevelTypes defaultCultureLevel = NO_CULTURELEVEL;
+	const UnitClassTypes defaultTeachUnitClass = NO_UNITCLASS;
 
 // 
 enum SavegameVariableTypes
@@ -81,6 +86,12 @@ enum SavegameVariableTypes
 	CitySave_Bombarded,
 	CitySave_ProductionAutomated,
 	CitySave_WallOverride,
+
+	CitySave_Owner,
+	CitySave_PreviousOwner,
+	CitySave_OriginalOwner,
+	CitySave_CultureLevel,
+	CitySave_TeachUnitClass,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -129,6 +140,12 @@ void CvCity::resetSavedData()
 	m_bBombarded = defaultBombarded;
 	m_bProductionAutomated = defaultProductionAutomated;
 	m_bWallOverride = defaultWallOverride;
+
+	m_eOwner = defaultOwner;
+	m_ePreviousOwner = defaultPreviousOwner;
+	m_eOriginalOwner = defaultOriginalOwner;
+	m_eCultureLevel = defaultCultureLevel;
+	m_eTeachUnitClass = defaultTeachUnitClass;
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -189,6 +206,12 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_Bombarded: reader.Read(m_bBombarded); break;
 		case CitySave_ProductionAutomated: reader.Read(m_bProductionAutomated); break;
 		case CitySave_WallOverride: reader.Read(m_bWallOverride); break;
+
+		case CitySave_Owner: reader.Read(m_eOwner); break;
+		case CitySave_PreviousOwner: reader.Read(m_ePreviousOwner); break;
+		case CitySave_OriginalOwner: reader.Read(m_eOriginalOwner); break;
+		case CitySave_CultureLevel: reader.Read(m_eCultureLevel); break;
+		case CitySave_TeachUnitClass: reader.Read(m_eTeachUnitClass); break;
 		}
 	}
 	
@@ -239,6 +262,12 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_Bombarded, m_bBombarded, defaultBombarded);
 	writer.Write(CitySave_ProductionAutomated, m_bProductionAutomated, defaultProductionAutomated);
 	writer.Write(CitySave_WallOverride, m_bWallOverride, defaultWallOverride);
+
+	writer.Write(CitySave_Owner, m_eOwner, defaultOwner);
+	writer.Write(CitySave_PreviousOwner, m_ePreviousOwner, defaultPreviousOwner); 
+	writer.Write(CitySave_OriginalOwner, m_eOriginalOwner, defaultOriginalOwner); 
+	writer.Write(CitySave_CultureLevel, m_eCultureLevel, defaultCultureLevel);
+	writer.Write(CitySave_TeachUnitClass, m_eTeachUnitClass, defaultTeachUnitClass);
 
 	writer.Write(CitySave_END);
 }
