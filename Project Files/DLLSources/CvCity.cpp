@@ -7654,14 +7654,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
 	// just-in-time yield arrays - start - Nightinggale
 	
-	pStream->Read(&m_bStirredUp); // R&R, ray , Stirring Up Natives
-	pStream->Read(&m_bNeverLost);
-	pStream->Read(&m_bBombarded);
-	pStream->Read(&m_bProductionAutomated);
-	pStream->Read(&m_bWallOverride);
-	// m_bInfoDirty not saved...
-	// m_bLayoutDirty not saved...
-
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_ePreviousOwner);
 	pStream->Read((int*)&m_eOriginalOwner);
@@ -7857,13 +7849,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(arrayBitmap);
 	// just-in-time yield arrays - end - Nightinggale
 	
-	pStream->Write(m_bStirredUp); // R&R, ray , Stirring Up Natives
-	pStream->Write(m_bNeverLost);
-	pStream->Write(m_bBombarded);
-	pStream->Write(m_bProductionAutomated);
-	pStream->Write(m_bWallOverride);
-	// m_bInfoDirty not saved...
-	// m_bLayoutDirty not saved...
 
 	pStream->Write(m_eOwner);
 	pStream->Write(m_ePreviousOwner);

@@ -34,6 +34,12 @@
 	const int defaultTeachUnitMultiplier = 100 ;
 	const int defaultEducationThresholdMultiplier = 100 ;
 
+	const bool defaultStirredUp = false; // R&R, ray , Stirring Up Natives
+	const bool defaultNeverLost = true;
+	const bool defaultBombarded = false;
+	const bool defaultProductionAutomated = false;
+	const bool defaultWallOverride = false;
+
 
 // 
 enum SavegameVariableTypes
@@ -69,6 +75,13 @@ enum SavegameVariableTypes
 	CitySave_CityHealth, // R&R, ray, Health
 	CitySave_TeachUnitMultiplier,
 	CitySave_EducationThresholdMultiplier,
+
+	CitySave_StirredUp, // R&R, ray , Stirring Up Natives
+	CitySave_NeverLost,
+	CitySave_Bombarded,
+	CitySave_ProductionAutomated,
+	CitySave_WallOverride,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -110,6 +123,12 @@ void CvCity::resetSavedData()
 	m_iCityHealth = defaultCityHealth; // R&R, ray, Health
 	m_iTeachUnitMultiplier = defaultTeachUnitMultiplier;
 	m_iEducationThresholdMultiplier = defaultEducationThresholdMultiplier;
+
+	m_bStirredUp = defaultStirredUp; // R&R, ray , Stirring Up Natives
+	m_bNeverLost = defaultNeverLost;
+	m_bBombarded = defaultBombarded;
+	m_bProductionAutomated = defaultProductionAutomated;
+	m_bWallOverride = defaultWallOverride;
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -165,7 +184,11 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_TeachUnitMultiplier: reader.Read(m_iTeachUnitMultiplier); break;
 		case CitySave_EducationThresholdMultiplier: reader.Read(m_iEducationThresholdMultiplier); break;
 
-
+		case CitySave_StirredUp: reader.Read(m_bStirredUp); break; // R&R, ray , Stirring Up Natives
+		case CitySave_NeverLost: reader.Read(m_bNeverLost); break;
+		case CitySave_Bombarded: reader.Read(m_bBombarded); break;
+		case CitySave_ProductionAutomated: reader.Read(m_bProductionAutomated); break;
+		case CitySave_WallOverride: reader.Read(m_bWallOverride); break;
 		}
 	}
 	
@@ -210,6 +233,12 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_CityHealth, m_iCityHealth, defaultCityHealth); // R&R, ray, Health
 	writer.Write(CitySave_TeachUnitMultiplier, m_iTeachUnitMultiplier, defaultTeachUnitMultiplier);
 	writer.Write(CitySave_EducationThresholdMultiplier, m_iEducationThresholdMultiplier, defaultEducationThresholdMultiplier);
+
+	writer.Write(CitySave_StirredUp, m_bStirredUp, defaultStirredUp); // R&R, ray , Stirring Up Natives
+	writer.Write(CitySave_NeverLost, m_bNeverLost, defaultNeverLost);
+	writer.Write(CitySave_Bombarded, m_bBombarded, defaultBombarded);
+	writer.Write(CitySave_ProductionAutomated, m_bProductionAutomated, defaultProductionAutomated);
+	writer.Write(CitySave_WallOverride, m_bWallOverride, defaultWallOverride);
 
 	writer.Write(CitySave_END);
 }
