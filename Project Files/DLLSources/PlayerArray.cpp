@@ -6,14 +6,14 @@ BOOST_STATIC_ASSERT(MAX_PLAYERS == MAX_TEAMS);
 
 template<class T>
 PlayerArrayBase<T>::PlayerArrayBase()
-	: m_array(NULL)
+	: m_Array(NULL)
 {
 }
 
 template<class T>
 void PlayerArrayBase<T>::reset()
 {
-	SAFE_DELETE_ARRAY(m_array);
+	SAFE_DELETE_ARRAY(m_Array);
 }
 
 template<class T>
@@ -22,7 +22,7 @@ bool PlayerArrayBase<T>::hasContent()
 	const PlayerArrayBase<T>* pConstThis = this;
 	bool bContents = pConstThis->hasContent();
 
-	if (!bContents && m_array != NULL)
+	if (!bContents && m_Array != NULL)
 	{
 		reset();
 	}
@@ -33,11 +33,11 @@ bool PlayerArrayBase<T>::hasContent()
 template<class T>
 bool PlayerArrayBase<T>::hasContent() const
 {
-	if (m_array != NULL)
+	if (m_Array != NULL)
 	{
 		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 		{
-			if (m_array[eTeam] != 0)
+			if (get(eTeam) != getDefault())
 			{
 				return true;
 			}
@@ -94,13 +94,18 @@ void PlayerArrayBase<T>::Read(CvSavegameReader& reader)
 			reader.Read(iLast);
 			for (int i = iFirst; i <= iLast; ++i)
 			{
-				reader.Read(m_array[i]);
+				// use a buffer because then it doesn't matter if T, array size and save size differs.
+				T iBuffer;
+				reader.Read(iBuffer);
+				set(i, iBuffer);
 			}
 		}
 		else
 		{
 			// single variable token
-			reader.Read(m_array[iFirst]);
+			T iBuffer;
+			reader.Read(iBuffer);
+			set(iFirst, iBuffer);
 		}
 
 		if (bLast)
@@ -144,7 +149,7 @@ void PlayerArrayBase<T>::Write(CvSavegameWriter& writer) const
 	// this means it both acts as a pointer to where to store iLast, but also storing the state
 	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (m_array[eTeam] != 0)
+		if (get(eTeam) != getDefault())
 		{
 			if (pInterval == NULL)
 			{
@@ -179,7 +184,7 @@ void PlayerArrayBase<T>::Write(CvSavegameWriter& writer) const
 		if (iFirst == iLast)
 		{
 			writer.Write(iBuffer);
-			writer.Write(m_array[iFirst]);
+			writer.Write(get(iFirst));
 		}
 		else
 		{
@@ -188,12 +193,17 @@ void PlayerArrayBase<T>::Write(CvSavegameWriter& writer) const
 			writer.Write(iLast);
 			for (int i = iFirst; i <= iLast; ++i)
 			{
-				writer.Write(m_array[i]);
+				writer.Write(get(i));
 			}
 		}
 	}
 }
 
+// All types used with PlayerArray should be declared here.
+// Failure to do so will result in a linking error.
+
 template class PlayerArrayBase <int>;
 template class PlayerArrayBase <short>;
 template class PlayerArrayBase <char>;
+
+template class PlayerArrayBase <PlayerTypes>;

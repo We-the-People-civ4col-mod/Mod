@@ -521,9 +521,9 @@ protected:
 	PlayerArray<int> m_aiCulture;
 	PlayerArray<short> m_aiCultureRangeForts; // Super Forts *culture*
 	PlayerArray<int> m_aiFoundValue;
-	char* m_aiPlayerCityRadiusCount;
-	short* m_aiVisibilityCount;
-	char* m_aiRevealedOwner;
+	PlayerArray<char> m_aiPlayerCityRadiusCount;
+	TeamArray<short> m_aiVisibilityCount;
+	TeamArray<PlayerTypes> m_aiRevealedOwner;
 
 	TeamBoolArray m_pab_Revealed;
 	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;

@@ -37,9 +37,6 @@ CvPlot::CvPlot()
 {
 	m_aiYield = new short[NUM_YIELD_TYPES];
 
-	m_aiPlayerCityRadiusCount = NULL;
-	m_aiVisibilityCount = NULL;
-	m_aiRevealedOwner = NULL;
 	m_paiBuildProgress = NULL;
 	m_apaiCultureRangeCities = NULL;
 	m_apaiInvisibleVisibilityCount = NULL;
@@ -90,11 +87,6 @@ void CvPlot::uninit()
 	gDLL->getFlagEntityIFace()->destroy(m_pFlagSymbol);
 	gDLL->getFlagEntityIFace()->destroy(m_pFlagSymbolOffset);
 	m_pCenterUnit = NULL;
-
-	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
-
-	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
-	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
 
@@ -6379,12 +6371,7 @@ int CvPlot::getPlayerCityRadiusCount(PlayerTypes eIndex) const
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_aiPlayerCityRadiusCount)
-	{
-		return 0;
-	}
-
-	return m_aiPlayerCityRadiusCount[eIndex];
+	return m_aiPlayerCityRadiusCount.get(eIndex);
 }
 
 
@@ -6401,19 +6388,11 @@ void CvPlot::changePlayerCityRadiusCount(PlayerTypes eIndex, int iChange)
 
 	if (0 != iChange)
 	{
-		if (NULL == m_aiPlayerCityRadiusCount)
-		{
-			m_aiPlayerCityRadiusCount = new char[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_aiPlayerCityRadiusCount[iI] = 0;
-			}
-		}
-		
-		m_aiPlayerCityRadiusCount[eIndex] += iChange;
+		m_aiPlayerCityRadiusCount.add(eIndex, iChange);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - start
-		if(m_aiPlayerCityRadiusCount[eIndex] < 0) 		
-			m_aiPlayerCityRadiusCount[eIndex] = 0;		
+		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
+		if(m_aiPlayerCityRadiusCount.get(eIndex) < 0) 		
+			m_aiPlayerCityRadiusCount.set(eIndex, 0);		
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - end
 		FAssert(getPlayerCityRadiusCount(eIndex) >= 0);
 	}
@@ -6425,12 +6404,7 @@ int CvPlot::getVisibilityCount(TeamTypes eTeam) const
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_aiVisibilityCount)
-	{
-		return 0;
-	}
-
-	return m_aiVisibilityCount[eTeam];
+	return m_aiVisibilityCount.get(eTeam);
 }
 
 
@@ -6439,28 +6413,19 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 	CvCity* pCity;
 	CvPlot* pAdjacentPlot;
 	bool bOldVisible;
-	int iI;
 
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
 	if (iChange != 0)
 	{
-		if (NULL == m_aiVisibilityCount)
-		{
-			m_aiVisibilityCount = new short[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aiVisibilityCount[iI] = 0;
-			}
-		}
-
 		bOldVisible = isVisible(eTeam, false);
 
-		m_aiVisibilityCount[eTeam] += iChange;
+		m_aiVisibilityCount.add(eTeam, iChange);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - start
-		if(m_aiVisibilityCount[eTeam] < 0)
-			m_aiVisibilityCount[eTeam] = 0;
+		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
+		if(m_aiVisibilityCount.get(eTeam) < 0)
+			m_aiVisibilityCount.set(eTeam, 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - end
 		FAssert(getVisibilityCount(eTeam) >= 0);
 
@@ -6475,9 +6440,9 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 			{
 				setRevealed(eTeam, true, false, NO_TEAM);
 
-				for (iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+				for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; ++eDirection)
 				{
-					pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+					pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), eDirection);
 
 					if (pAdjacentPlot != NULL)
 					{
@@ -6515,12 +6480,7 @@ PlayerTypes CvPlot::getRevealedOwner(TeamTypes eTeam, bool bDebug) const
 		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-		if (NULL == m_aiRevealedOwner)
-		{
-			return NO_PLAYER;
-		}
-
-		return (PlayerTypes)m_aiRevealedOwner[eTeam];
+		return m_aiRevealedOwner.get(eTeam);
 	}
 }
 
@@ -6550,16 +6510,7 @@ void CvPlot::setRevealedOwner(TeamTypes eTeam, PlayerTypes eNewValue)
 
 	if (getRevealedOwner(eTeam, false) != eNewValue)
 	{
-		if (NULL == m_aiRevealedOwner)
-		{
-			m_aiRevealedOwner = new char[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aiRevealedOwner[iI] = -1;
-			}
-		}
-
-		m_aiRevealedOwner[eTeam] = eNewValue;
+		m_aiRevealedOwner.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{
@@ -6573,8 +6524,6 @@ void CvPlot::setRevealedOwner(TeamTypes eTeam, PlayerTypes eNewValue)
 			}
 		}
 	}
-
-	FAssert((NULL == m_aiRevealedOwner) || (m_aiRevealedOwner[eTeam] == eNewValue));
 }
 
 
@@ -8052,30 +8001,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
 
-	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiPlayerCityRadiusCount = new char[cCount];
-		pStream->Read(cCount, m_aiPlayerCityRadiusCount);
-	}
-
-	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiVisibilityCount = new short[cCount];
-		pStream->Read(cCount, m_aiVisibilityCount);
-	}
-
-	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiRevealedOwner = new char[cCount];
-		pStream->Read(cCount, m_aiRevealedOwner);
-	}
-
 	m_szScriptData = pStream->ReadString();
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
@@ -8161,36 +8086,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	// m_bPlotLayoutDirty not saved
 	// m_bLayoutStateWorked not saved
 	// m_bImpassable not saved
-
-	if (NULL == m_aiPlayerCityRadiusCount)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiPlayerCityRadiusCount);
-	}
-
-	if (NULL == m_aiVisibilityCount)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aiVisibilityCount);
-	}
-
-	if (NULL == m_aiRevealedOwner)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aiRevealedOwner);
-	}
 
 	pStream->WriteString(m_szScriptData);
 

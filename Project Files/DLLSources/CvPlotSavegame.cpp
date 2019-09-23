@@ -100,6 +100,9 @@ enum SavegameVariableTypes
 	Save_Culture,
 	Save_CultureRangeForts,
 	Save_FoundValue,
+	Save_PlayerCityRadiusCount,
+	Save_VisibilityCount,
+	Save_RevealedOwner,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -347,7 +350,9 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_CultureRangeForts      : m_aiCultureRangeForts               .Read(reader); break;
 		case Save_DangerMap              : m_aiDangerMap                       .Read(reader); break;
 		case Save_FoundValue             : m_aiFoundValue                      .Read(reader); break;
-			
+		case Save_PlayerCityRadiusCount  : m_aiPlayerCityRadiusCount           .Read(reader); break;
+		case Save_VisibilityCount        : m_aiVisibilityCount                 .Read(reader); break;
+		case Save_RevealedOwner          : m_aiRevealedOwner                   .Read(reader); break;
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
@@ -473,6 +478,10 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_Culture, m_aiCulture);
 	writer.Write(Save_CultureRangeForts, m_aiCultureRangeForts);
 	writer.Write(Save_FoundValue, m_aiFoundValue);
+	writer.Write(Save_PlayerCityRadiusCount, m_aiPlayerCityRadiusCount);
+	writer.Write(Save_VisibilityCount, m_aiVisibilityCount);
+	writer.Write(Save_RevealedOwner, m_aiRevealedOwner);
+	
 		
 	writer.Write(Save_END);
 }
