@@ -33,12 +33,14 @@
 	const int defaultCityHealth = 0 ; // R&R, ray, Health
 	const int defaultTeachUnitMultiplier = 100 ;
 	const int defaultEducationThresholdMultiplier = 100 ;
+	const int defaultPopulationRank = -1;
 
 	const bool defaultStirredUp = false; // R&R, ray , Stirring Up Natives
 	const bool defaultNeverLost = true;
 	const bool defaultBombarded = false;
 	const bool defaultProductionAutomated = false;
 	const bool defaultWallOverride = false;
+	const bool defaultPopulationRankValid = false;
 
 	const PlayerTypes defaultOwner = PlayerTypes();
 	const PlayerTypes defaultPreviousOwner = NO_PLAYER;
@@ -80,12 +82,14 @@ enum SavegameVariableTypes
 	CitySave_CityHealth, // R&R, ray, Health
 	CitySave_TeachUnitMultiplier,
 	CitySave_EducationThresholdMultiplier,
+	CitySave_PopulationRank,
 
 	CitySave_StirredUp, // R&R, ray , Stirring Up Natives
 	CitySave_NeverLost,
 	CitySave_Bombarded,
 	CitySave_ProductionAutomated,
 	CitySave_WallOverride,
+	CitySave_PopulationRankValid,
 
 	CitySave_Owner,
 	CitySave_PreviousOwner,
@@ -134,12 +138,14 @@ void CvCity::resetSavedData()
 	m_iCityHealth = defaultCityHealth; // R&R, ray, Health
 	m_iTeachUnitMultiplier = defaultTeachUnitMultiplier;
 	m_iEducationThresholdMultiplier = defaultEducationThresholdMultiplier;
+	m_iPopulationRank = defaultPopulationRank;
 
 	m_bStirredUp = defaultStirredUp; // R&R, ray , Stirring Up Natives
 	m_bNeverLost = defaultNeverLost;
 	m_bBombarded = defaultBombarded;
 	m_bProductionAutomated = defaultProductionAutomated;
 	m_bWallOverride = defaultWallOverride;
+	m_bPopulationRankValid = defaultPopulationRankValid;
 
 	m_eOwner = defaultOwner;
 	m_ePreviousOwner = defaultPreviousOwner;
@@ -200,12 +206,14 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_CityHealth: reader.Read(m_iCityHealth); break; // R&R, ray, Health
 		case CitySave_TeachUnitMultiplier: reader.Read(m_iTeachUnitMultiplier); break;
 		case CitySave_EducationThresholdMultiplier: reader.Read(m_iEducationThresholdMultiplier); break;
+		case CitySave_PopulationRank: reader.Read(m_iPopulationRank); break;
 
 		case CitySave_StirredUp: reader.Read(m_bStirredUp); break; // R&R, ray , Stirring Up Natives
 		case CitySave_NeverLost: reader.Read(m_bNeverLost); break;
 		case CitySave_Bombarded: reader.Read(m_bBombarded); break;
 		case CitySave_ProductionAutomated: reader.Read(m_bProductionAutomated); break;
 		case CitySave_WallOverride: reader.Read(m_bWallOverride); break;
+		case CitySave_PopulationRankValid: reader.Read(m_bPopulationRankValid); break;
 
 		case CitySave_Owner: reader.Read(m_eOwner); break;
 		case CitySave_PreviousOwner: reader.Read(m_ePreviousOwner); break;
@@ -256,12 +264,14 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_CityHealth, m_iCityHealth, defaultCityHealth); // R&R, ray, Health
 	writer.Write(CitySave_TeachUnitMultiplier, m_iTeachUnitMultiplier, defaultTeachUnitMultiplier);
 	writer.Write(CitySave_EducationThresholdMultiplier, m_iEducationThresholdMultiplier, defaultEducationThresholdMultiplier);
+	writer.Write(CitySave_PopulationRank, m_iPopulationRank, defaultPopulationRank);
 
 	writer.Write(CitySave_StirredUp, m_bStirredUp, defaultStirredUp); // R&R, ray , Stirring Up Natives
 	writer.Write(CitySave_NeverLost, m_bNeverLost, defaultNeverLost);
 	writer.Write(CitySave_Bombarded, m_bBombarded, defaultBombarded);
 	writer.Write(CitySave_ProductionAutomated, m_bProductionAutomated, defaultProductionAutomated);
 	writer.Write(CitySave_WallOverride, m_bWallOverride, defaultWallOverride);
+	writer.Write(CitySave_PopulationRankValid, m_bPopulationRankValid, defaultPopulationRankValid);
 
 	writer.Write(CitySave_Owner, m_eOwner, defaultOwner);
 	writer.Write(CitySave_PreviousOwner, m_ePreviousOwner, defaultPreviousOwner); 

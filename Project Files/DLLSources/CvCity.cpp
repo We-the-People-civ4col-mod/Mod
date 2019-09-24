@@ -7788,8 +7788,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	
 	m_orderQueue.Read(pStream);
 
-	pStream->Read(&m_iPopulationRank);
-	pStream->Read(&m_bPopulationRankValid);
 	pStream->Read(NUM_YIELD_TYPES, m_aiBaseYieldRank);
 	pStream->Read(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRank);
@@ -7913,8 +7911,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	// R&R mod, vetiarvind, max yield import limit - end
 	m_orderQueue.Write(pStream);
 
-	pStream->Write(m_iPopulationRank);
-	pStream->Write(m_bPopulationRankValid);
 	pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);
 	pStream->Write(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRank);
