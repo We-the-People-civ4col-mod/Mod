@@ -7611,68 +7611,9 @@ void CvCity::doMissionaries()
 
 // Private Functions...
 
-// just-in-time yield arrays - start - Nightinggale
-// bitmap to tell which arrays are saved
-enum
-{
-	SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD = 1,
-	SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL     = 1 << 1,
-	SAVE_BIT_ORDERED_STUDENTS            = 1 << 2,
-	SAVE_BIT_ORDERED_STUDENTS_REPEAT     = 1 << 3,
-	// traderoute just-in-time - start - Nightinggale
-	SAVE_BIT_TRADE_IMPORTS               = 1 << 4,
-	SAVE_BIT_TRADE_EXPORTS               = 1 << 5,
-	SAVE_BIT_TRADE_THRESHOLD             = 1 << 6,
-	// traderoute just-in-time - end - Nightinggale
-	// transport feeder - start - Nightinggale
-	SAVE_BIT_IMPORT_FEEDER               = 1 << 7,
-	SAVE_BIT_IMPORT_STOP                 = 1 << 8,
-	// transport feeder - end - Nightinggale
-	SAVE_BIT_TRADE_MAX_THRESHOLD = 1 << 9// R&R mod, vetiarvind, max yield import limit
-};
-// just-in-time yield arrays - end - Nightinggale
-
 void CvCity::read(FDataStreamBase* pStream)
 {
 	int iNumElts;
-
-	// Init data before load
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-	if (uiFlag > 3)
-	{
-		pStream->Read(&arrayBitmap);
-	} else {
-		arrayBitmap  = SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD | SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL;
-		if (uiFlag == 3)
-		{
-			arrayBitmap |= SAVE_BIT_ORDERED_STUDENTS | SAVE_BIT_ORDERED_STUDENTS_REPEAT;
-		}
-	}
-	// just-in-time yield arrays - start - Nightinggale
-	
-	if (uiFlag == 0)
-	{
-		m_eMissionaryPlayer = NO_PLAYER;
-		CivilizationTypes eMissionaryCivilization;
-		pStream->Read((int*)&eMissionaryCivilization);
-		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
-		{
-			CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-			if (kPlayer.isAlive() && kPlayer.getCivilizationType() == eMissionaryCivilization)
-			{
-				m_eMissionaryPlayer = (PlayerTypes) iPlayer;
-				break;
-			}
-		}
-	}
-	else
-	{
-		pStream->Read((int*)&m_eMissionaryPlayer);
-	}
 
 	pStream->Read(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields
 	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
@@ -7692,22 +7633,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	// R&R, Androrc, Domestic Market
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
 	//Androrc End
-
-	if (uiFlag > 5)
-	{
-		pStream->Read(&m_ePreferredYieldAtCityPlot);
-	}
-
-	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.read(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
-	ba_aiCustomHouseNeverSell.read(    pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
-	// R&R, ray, finishing Custom House Screen END
-
-	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.read(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
-	ba_OrderedStudentsRepeat.read(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
-	// Teacher List - end - Nightinggale
-
+	
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Read(MAX_PLAYERS, m_aiCulture);
@@ -7745,46 +7671,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	}
 
 	// traderoute just-in-time - start - Nightinggale
-	if (uiFlag > 4)
-	{
-		ba_tradeImports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
-		ba_tradeExports.read(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
-		ma_tradeThreshold.read(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
-		// transport feeder - start - Nightinggale
-		ba_tradeImportsMaintain.read(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
-		ba_tradeStopAutoImport.read(pStream, arrayBitmap & SAVE_BIT_IMPORT_STOP);
-		// transport feeder - end - Nightinggale
-		// R&R mod, vetiarvind, max yield import limit - start
-		ma_tradeMaxThreshold.read(pStream, arrayBitmap & SAVE_BIT_TRADE_MAX_THRESHOLD); 
-		// R&R mod, vetiarvind, max yield import limit - end
-	} else {
-		int iNumYields;
-		std::vector<YieldTypes> aYields;
-		pStream->Read(&iNumYields);
-		for (int iI = 0; iI < iNumYields; iI++)
-		{
-			int iIndex;
-			pStream->Read(&iIndex);
-			ba_tradeImports.set(true, iIndex);
-		}
-		pStream->Read(&iNumYields);
-		for (int iI = 0; iI < iNumYields; iI++)
-		{
-			int iIndex;
-			pStream->Read(&iIndex);
-			ba_tradeExports.set(true, iIndex);
-		}
-		pStream->Read(&iNumYields);
-		for (int i = 0; i < iNumYields; ++i)
-		{
-			YieldTypes eYield;
-			int iLevel;
-			pStream->Read((int*)&eYield);
-			pStream->Read(&iLevel);
-			ma_tradeThreshold.set(iLevel, eYield);
-		}
-	}
-	// traderoute just-in-time - end - Nightinggale
 	
 	m_orderQueue.Read(pStream);
 
@@ -7818,31 +7704,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	uint uiFlag = 6;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	// just-in-time yield arrays - start - Nightinggale
-	uint arrayBitmap = 0;
-	arrayBitmap |= ma_aiCustomHouseSellThreshold.hasContent() ? SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD : 0;
-	arrayBitmap |= ba_aiCustomHouseNeverSell.hasContent()     ? SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL : 0;
-	arrayBitmap |= ma_OrderedStudents.hasContent()            ? SAVE_BIT_ORDERED_STUDENTS : 0;
-	arrayBitmap |= ba_OrderedStudentsRepeat.hasContent()      ? SAVE_BIT_ORDERED_STUDENTS_REPEAT : 0;
-	// traderoute just-in-time - start - Nightinggale
-	arrayBitmap |= ba_tradeImports.hasContent()               ? SAVE_BIT_TRADE_IMPORTS : 0;
-	arrayBitmap |= ba_tradeExports.hasContent()               ? SAVE_BIT_TRADE_EXPORTS : 0;
-	arrayBitmap |= ma_tradeThreshold.hasContent()             ? SAVE_BIT_TRADE_THRESHOLD : 0;
-	// traderoute just-in-time - end - Nightinggale
-	// transport feeder - start - Nightinggale
-	arrayBitmap |= ba_tradeImportsMaintain.hasContent()       ? SAVE_BIT_IMPORT_FEEDER : 0;
-	arrayBitmap |= ba_tradeStopAutoImport.hasContent()        ? SAVE_BIT_IMPORT_STOP : 0;
-	// transport feeder - end - Nightinggale
-	// R&R mod, vetiarvind, max yield import limit - Start
-	arrayBitmap |= ma_tradeMaxThreshold.hasContent()					? SAVE_BIT_TRADE_MAX_THRESHOLD : 0;
-	// R&R mod, vetiarvind, max yield import limit - End
-	pStream->Write(arrayBitmap);
-	// just-in-time yield arrays - end - Nightinggale
-	
-	pStream->Write(m_eMissionaryPlayer);
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
@@ -7854,17 +7715,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
 	//Androrc End
 
-	pStream->Write(m_ePreferredYieldAtCityPlot);
 
-	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.write(pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_SELL_THRESHOLD);
-	ba_aiCustomHouseNeverSell.write    (pStream, arrayBitmap & SAVE_BIT_CUSTOM_HOUSE_NEVER_SELL);
-	// R&R, ray, finishing Custom House Screen END
-
-	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.write(      pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS);
-	ba_OrderedStudentsRepeat.write(pStream, arrayBitmap & SAVE_BIT_ORDERED_STUDENTS_REPEAT);
-	// Teacher List - end - Nightinggale
 
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
@@ -7897,18 +7748,6 @@ void CvCity::write(FDataStreamBase* pStream)
 		m_aPopulationUnits[i]->write(pStream);
 	}
 
-	// traderoute just-in-time - start - Nightinggale
-	ba_tradeImports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_IMPORTS);
-	ba_tradeExports.write(pStream, arrayBitmap & SAVE_BIT_TRADE_EXPORTS);
-	ma_tradeThreshold.write(pStream, arrayBitmap & SAVE_BIT_TRADE_THRESHOLD);
-	// traderoute just-in-time - end - Nightinggale
-	// transport feeder - start - Nightinggale
- 	ba_tradeImportsMaintain.write(pStream, arrayBitmap & SAVE_BIT_IMPORT_FEEDER);
-	ba_tradeStopAutoImport.write(pStream, arrayBitmap & SAVE_BIT_IMPORT_STOP);
- 	// transport feeder - end - Nightinggale
-	// R&R mod, vetiarvind, max yield import limit - start
-	ma_tradeMaxThreshold.write(pStream, arrayBitmap & SAVE_BIT_TRADE_MAX_THRESHOLD);
-	// R&R mod, vetiarvind, max yield import limit - end
 	m_orderQueue.Write(pStream);
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);

@@ -48,6 +48,9 @@
 	const CultureLevelTypes defaultCultureLevel = NO_CULTURELEVEL;
 	const UnitClassTypes defaultTeachUnitClass = NO_UNITCLASS;
 
+	const PlayerTypes defaultMissionaryPlayer = NO_PLAYER;
+	const YieldTypes defaultPreferredYieldAtCityPlot = NO_YIELD;
+
 // 
 enum SavegameVariableTypes
 {
@@ -96,6 +99,20 @@ enum SavegameVariableTypes
 	CitySave_OriginalOwner,
 	CitySave_CultureLevel,
 	CitySave_TeachUnitClass,
+
+	CitySave_CustomHouseSellThreshold,
+	CitySave_CustomHouseNeverSell,
+	CitySave_OrderedStudents,
+	CitySave_OrderedStudentsRepeat,
+	CitySave_tradeImports,
+	CitySave_tradeExports,
+	CitySave_tradeThreshold,
+	CitySave_tradeImportsMaintain,
+	CitySave_tradeStopAutoImport,
+	CitySave_tradeMaxThreshold,
+
+	CitySave_MissionaryPlayer,
+	CitySave_PreferredYieldAtCityPlot,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -152,6 +169,20 @@ void CvCity::resetSavedData()
 	m_eOriginalOwner = defaultOriginalOwner;
 	m_eCultureLevel = defaultCultureLevel;
 	m_eTeachUnitClass = defaultTeachUnitClass;
+
+	ma_aiCustomHouseSellThreshold.reset();
+	ba_aiCustomHouseNeverSell.reset();
+	ma_OrderedStudents.reset();
+	ba_OrderedStudentsRepeat.reset();
+	ba_tradeImports.reset();
+	ba_tradeExports.reset();
+	ma_tradeThreshold.reset();
+ 	ba_tradeImportsMaintain.reset();
+	ba_tradeStopAutoImport.reset();
+	ma_tradeMaxThreshold.reset();
+
+	m_eMissionaryPlayer = defaultMissionaryPlayer;
+	m_ePreferredYieldAtCityPlot = defaultPreferredYieldAtCityPlot;
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -220,6 +251,21 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_OriginalOwner: reader.Read(m_eOriginalOwner); break;
 		case CitySave_CultureLevel: reader.Read(m_eCultureLevel); break;
 		case CitySave_TeachUnitClass: reader.Read(m_eTeachUnitClass); break;
+
+
+		case CitySave_CustomHouseSellThreshold: reader.Read(ma_aiCustomHouseSellThreshold); break;
+		case CitySave_CustomHouseNeverSell: reader.Read(ba_aiCustomHouseNeverSell); break;
+		case CitySave_OrderedStudents: reader.Read(ma_OrderedStudents); break;
+		case CitySave_OrderedStudentsRepeat: reader.Read(ba_OrderedStudentsRepeat); break;
+		case CitySave_tradeImports: reader.Read(ba_tradeImports); break;
+		case CitySave_tradeExports: reader.Read(ba_tradeExports); break;
+		case CitySave_tradeThreshold: reader.Read(ma_tradeThreshold); break;
+		case CitySave_tradeImportsMaintain: reader.Read(ba_tradeImportsMaintain); break;
+		case CitySave_tradeStopAutoImport: reader.Read(ba_tradeStopAutoImport); break;
+		case CitySave_tradeMaxThreshold: reader.Read(ma_tradeMaxThreshold); break;
+
+		case CitySave_MissionaryPlayer: reader.Read(m_eMissionaryPlayer); break;
+		case CitySave_PreferredYieldAtCityPlot: reader.Read(m_ePreferredYieldAtCityPlot); break;
 		}
 	}
 	
@@ -278,6 +324,22 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_OriginalOwner, m_eOriginalOwner, defaultOriginalOwner); 
 	writer.Write(CitySave_CultureLevel, m_eCultureLevel, defaultCultureLevel);
 	writer.Write(CitySave_TeachUnitClass, m_eTeachUnitClass, defaultTeachUnitClass);
+
+	writer.Write(CitySave_CustomHouseSellThreshold,ma_aiCustomHouseSellThreshold);
+	writer.Write(CitySave_CustomHouseNeverSell,ba_aiCustomHouseNeverSell);
+	writer.Write(CitySave_OrderedStudents,ma_OrderedStudents);
+	writer.Write(CitySave_OrderedStudentsRepeat,ba_OrderedStudentsRepeat);
+	writer.Write(CitySave_tradeImports, ba_tradeImports);
+	writer.Write(CitySave_tradeExports, ba_tradeExports);
+	writer.Write(CitySave_tradeThreshold, ma_tradeThreshold);
+ 	writer.Write(CitySave_tradeImportsMaintain, ba_tradeImportsMaintain);
+	writer.Write(CitySave_tradeStopAutoImport, ba_tradeStopAutoImport);
+	writer.Write(CitySave_tradeMaxThreshold, ma_tradeMaxThreshold);
+
+	writer.Write(CitySave_MissionaryPlayer,m_eMissionaryPlayer,defaultMissionaryPlayer);
+	writer.Write(CitySave_PreferredYieldAtCityPlot,m_ePreferredYieldAtCityPlot,defaultPreferredYieldAtCityPlot);
+		
+
 
 	writer.Write(CitySave_END);
 }
