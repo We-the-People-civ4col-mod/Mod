@@ -127,7 +127,17 @@ enum SavegameVariableTypes
 	CitySave_YieldRank,
 	CitySave_YieldRankValid,
 
-
+	CitySave_BuildingProduction,
+	CitySave_BuildingProductionTime,
+	CitySave_BuildingOriginalOwner,
+	CitySave_BuildingOriginalTime,
+	CitySave_UnitProduction,
+	CitySave_UnitProductionTime,
+	CitySave_SpecialistWeights,
+	CitySave_UnitCombatFreeExperience,
+	CitySave_FreePromotionCount,
+	CitySave_HasRealBuilding,
+	CitySave_HasFreeBuilding,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -212,6 +222,18 @@ void CvCity::resetSavedData()
 	m_abBaseYieldRankValid.reset();
 	m_aiYieldRank.reset();
 	m_abYieldRankValid.reset();
+
+	m_paiBuildingProduction.reset();
+	m_paiBuildingProductionTime.reset();
+	m_paiBuildingOriginalOwner.reset();
+	m_paiBuildingOriginalTime.reset();
+	m_paiUnitProduction.reset();
+	m_paiUnitProductionTime.reset();
+	m_aiSpecialistWeights.reset();
+	m_paiUnitCombatFreeExperience.reset();
+	m_paiFreePromotionCount.reset();
+	m_pabHasRealBuilding.reset();
+	m_pabHasFreeBuilding.reset();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -313,6 +335,18 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_BaseYieldRankValid: reader.Read(m_abBaseYieldRankValid); break;
 		case CitySave_YieldRank: reader.Read(m_aiYieldRank); break;
 		case CitySave_YieldRankValid: reader.Read(m_abYieldRankValid); break;
+
+		case CitySave_BuildingProduction: reader.Read(m_paiBuildingProduction); break;
+		case CitySave_BuildingProductionTime: reader.Read(m_paiBuildingProductionTime); break;
+		case CitySave_BuildingOriginalOwner: reader.Read(m_paiBuildingOriginalOwner); break;
+		case CitySave_BuildingOriginalTime: reader.Read(m_paiBuildingOriginalTime); break;
+		case CitySave_UnitProduction: reader.Read(m_paiUnitProduction); break;
+		case CitySave_UnitProductionTime: reader.Read(m_paiUnitProductionTime); break;
+		case CitySave_SpecialistWeights: reader.Read(m_aiSpecialistWeights); break;
+		case CitySave_UnitCombatFreeExperience: reader.Read(m_paiUnitCombatFreeExperience); break;
+		case CitySave_FreePromotionCount: reader.Read(m_paiFreePromotionCount); break;
+		case CitySave_HasRealBuilding: reader.Read(m_pabHasRealBuilding); break;
+		case CitySave_HasFreeBuilding: reader.Read(m_pabHasFreeBuilding); break;
 		}
 	}
 	
@@ -398,6 +432,19 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_BaseYieldRankValid, m_abBaseYieldRankValid);
 	writer.Write(CitySave_YieldRank, m_aiYieldRank);
 	writer.Write(CitySave_YieldRankValid, m_abYieldRankValid);
+
+	
+	writer.Write(CitySave_BuildingProduction, m_paiBuildingProduction);
+	writer.Write(CitySave_BuildingProductionTime, m_paiBuildingProductionTime);
+	writer.Write(CitySave_BuildingOriginalOwner, m_paiBuildingOriginalOwner);
+	writer.Write(CitySave_BuildingOriginalTime, m_paiBuildingOriginalTime);
+	writer.Write(CitySave_UnitProduction, m_paiUnitProduction);
+	writer.Write(CitySave_UnitProductionTime, m_paiUnitProductionTime);
+	writer.Write(CitySave_SpecialistWeights, m_aiSpecialistWeights);
+	writer.Write(CitySave_UnitCombatFreeExperience, m_paiUnitCombatFreeExperience);
+	writer.Write(CitySave_FreePromotionCount, m_paiFreePromotionCount);
+	writer.Write(CitySave_HasRealBuilding, m_pabHasRealBuilding);
+	writer.Write(CitySave_HasFreeBuilding, m_pabHasFreeBuilding);
 
 	writer.Write(CitySave_END);
 }
