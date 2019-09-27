@@ -138,7 +138,9 @@ enum SavegameVariableTypes
 	CitySave_FreePromotionCount,
 	CitySave_HasRealBuilding,
 	CitySave_HasFreeBuilding,
-
+	CitySave_Name,
+	CitySave_ScriptData,
+	
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -234,6 +236,9 @@ void CvCity::resetSavedData()
 	m_paiFreePromotionCount.reset();
 	m_pabHasRealBuilding.reset();
 	m_pabHasFreeBuilding.reset();
+
+	m_szName.clear();
+	m_szScriptData.clear();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -347,6 +352,9 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_FreePromotionCount: reader.Read(m_paiFreePromotionCount); break;
 		case CitySave_HasRealBuilding: reader.Read(m_pabHasRealBuilding); break;
 		case CitySave_HasFreeBuilding: reader.Read(m_pabHasFreeBuilding); break;
+
+		case CitySave_Name: reader.Read(m_szName); break;
+	 	case CitySave_ScriptData: reader.Read(m_szScriptData); break;
 		}
 	}
 	
@@ -445,6 +453,9 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_FreePromotionCount, m_paiFreePromotionCount);
 	writer.Write(CitySave_HasRealBuilding, m_pabHasRealBuilding);
 	writer.Write(CitySave_HasFreeBuilding, m_pabHasFreeBuilding);
+
+	writer.Write(CitySave_Name, m_szName);
+	writer.Write(CitySave_ScriptData, m_szScriptData);
 
 	writer.Write(CitySave_END);
 }

@@ -7549,8 +7549,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(MAX_TEAMS, m_abRevealed);
 	pStream->Read(MAX_TEAMS, m_abScoutVisited);
 
-	pStream->ReadString(m_szName);
-	pStream->ReadString(m_szScriptData);
 
 	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
@@ -7601,9 +7599,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(MAX_PLAYERS, m_abEverOwned);
 	pStream->Write(MAX_TEAMS, m_abRevealed);
 	pStream->Write(MAX_TEAMS, m_abScoutVisited);
-
-	pStream->WriteString(m_szName);
-	pStream->WriteString(m_szScriptData);
 
 	pStream->Write(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
