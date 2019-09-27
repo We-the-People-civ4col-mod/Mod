@@ -39,13 +39,17 @@ CvCity::CvCity() :
 	ba_tradeExports(JIT_ARRAY_YIELD),
 	ba_aiCustomHouseNeverSell(JIT_ARRAY_YIELD),
 	ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT),
-	m_aiLandPlotYield(JIT_ARRAY_YIELD),
-	m_aiSeaPlotYield(JIT_ARRAY_YIELD),
-	m_aiRiverPlotYield(JIT_ARRAY_YIELD),
-	m_aiYieldRateModifier(JIT_ARRAY_YIELD),
-	m_aiYieldStored(JIT_ARRAY_YIELD),
-	m_aiYieldRushed(JIT_ARRAY_YIELD),
-	m_aiYieldBuyPrice(JIT_ARRAY_YIELD)
+	m_aiLandPlotYield(0),
+	m_aiSeaPlotYield(0),
+	m_aiRiverPlotYield(0),
+	m_aiYieldRateModifier(0),
+	m_aiYieldStored(0),
+	m_aiYieldRushed(0),
+	m_aiYieldBuyPrice(0),
+	m_aiBaseYieldRank(-1),
+	m_abBaseYieldRankValid(JIT_ARRAY_YIELD),
+	m_aiYieldRank(-1),
+	m_abYieldRankValid(JIT_ARRAY_YIELD)
 {
 
 	m_aiDomainFreeExperience = new int[NUM_DOMAIN_TYPES];
@@ -74,10 +78,7 @@ CvCity::CvCity() :
 
 	CvDLLEntity::createCityEntity(this);		// create and attach entity to city
 
-	m_aiBaseYieldRank = new int[NUM_YIELD_TYPES];
-	m_abBaseYieldRankValid = new bool[NUM_YIELD_TYPES];
-	m_aiYieldRank = new int[NUM_YIELD_TYPES];
-	m_abYieldRankValid = new bool[NUM_YIELD_TYPES];
+
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
@@ -90,11 +91,6 @@ CvCity::~CvCity()
 	CvDLLEntity::destroyEntity();			// delete CvCityEntity and detach from us
 
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiBaseYieldRank);
-	SAFE_DELETE_ARRAY(m_abBaseYieldRankValid);
-	SAFE_DELETE_ARRAY(m_aiYieldRank);
-	SAFE_DELETE_ARRAY(m_abYieldRankValid);
 
 	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
@@ -465,6 +461,11 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_aiYieldStored.reset();
 	m_aiYieldRushed.reset();
 	m_aiYieldBuyPrice.reset();
+
+	m_abBaseYieldRankValid.reset();
+	m_abYieldRankValid.reset();
+	m_aiBaseYieldRank.reset();
+	m_aiYieldRank.reset();
 	
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.reset();
@@ -501,13 +502,6 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 
 	m_iCacheMarketModifier = 0;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_abBaseYieldRankValid[iI] = false;
-		m_abYieldRankValid[iI] = false;
-		m_aiBaseYieldRank[iI] = -1;
-		m_aiYieldRank[iI] = -1;
-	}
 
 	if (!bConstructorCall)
 	{
@@ -1503,9 +1497,9 @@ int CvCity::findPopulationRank() const
 }
 
 
-int CvCity::findBaseYieldRateRank(YieldTypes eYield) const
+int CvCity::findBaseYieldRateRank(YieldTypes eYield) const //note this function is not const
 {
-	if (!m_abBaseYieldRankValid[eYield])
+	if (!m_abBaseYieldRankValid.get(eYield))
 	{
 		int iRate = getYieldRate(eYield);
 
@@ -1522,17 +1516,17 @@ int CvCity::findBaseYieldRateRank(YieldTypes eYield) const
 			}
 		}
 
-		m_abBaseYieldRankValid[eYield] = true;
-		m_aiBaseYieldRank[eYield] = iRank;
+		(const_cast <CvCity*> (this))->m_abBaseYieldRankValid.set(true, eYield);
+		(const_cast <CvCity*> (this))->m_aiBaseYieldRank.set(iRank,eYield);
 	}
 
-	return m_aiBaseYieldRank[eYield];
+	return m_aiBaseYieldRank.get(eYield);
 }
 
 
-int CvCity::findYieldRateRank(YieldTypes eYield) const
+int CvCity::findYieldRateRank(YieldTypes eYield) const  //note this function is not const
 {
-	if (!m_abYieldRankValid[eYield])
+	if (!m_abYieldRankValid.get(eYield))
 	{
 		int iRate = getYieldRate(eYield);
 
@@ -1549,11 +1543,11 @@ int CvCity::findYieldRateRank(YieldTypes eYield) const
 			}
 		}
 
-		m_abYieldRankValid[eYield] = true;
-		m_aiYieldRank[eYield] = iRank;
+		(const_cast <CvCity*> (this))->m_abYieldRankValid.set(true,eYield);
+		(const_cast <CvCity*> (this))->m_aiYieldRank.set(iRank,eYield);
 	}
 
-	return m_aiYieldRank[eYield];
+	return m_aiYieldRank.get(eYield);
 }
 
 
@@ -7640,11 +7634,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	
 	m_orderQueue.Read(pStream);
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	pStream->Read(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRank);
-	pStream->Read(NUM_YIELD_TYPES, m_abYieldRankValid);
-
 	pStream->Read(&iNumElts);
 	m_aEventsOccured.clear();
 	for (int i = 0; i < iNumElts; ++i)
@@ -7702,11 +7691,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	}
 
 	m_orderQueue.Write(pStream);
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiBaseYieldRank);
-	pStream->Write(NUM_YIELD_TYPES, m_abBaseYieldRankValid);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRank);
-	pStream->Write(NUM_YIELD_TYPES, m_abYieldRankValid);
 
 	pStream->Write(m_aEventsOccured.size());
 	for (std::vector<EventTypes>::iterator it = m_aEventsOccured.begin(); it != m_aEventsOccured.end(); ++it)
@@ -8386,14 +8370,14 @@ void CvCity::invalidateYieldRankCache(YieldTypes eYield)
 	{
 		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
-			m_abBaseYieldRankValid[iI] = false;
-			m_abYieldRankValid[iI] = false;
+			m_abBaseYieldRankValid.set(false,iI);
+			m_abYieldRankValid.set(false,iI);
 		}
 	}
 	else
 	{
-		m_abBaseYieldRankValid[eYield] = false;
-		m_abYieldRankValid[eYield] = false;
+		m_abBaseYieldRankValid.set(false,eYield);
+		m_abYieldRankValid.set(false,eYield);
 	}
 }
 

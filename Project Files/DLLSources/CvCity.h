@@ -768,10 +768,10 @@ protected:
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
-	int*	m_aiBaseYieldRank;
-	bool*	m_abBaseYieldRankValid;
-	int*	m_aiYieldRank;
-	bool*	m_abYieldRankValid;
+	YieldArray<int>	m_aiBaseYieldRank;
+	BoolArray	m_abBaseYieldRankValid;
+	YieldArray<int>	m_aiYieldRank;
+	BoolArray	m_abYieldRankValid;
 
 	void doGrowth();
 	void doYields();
