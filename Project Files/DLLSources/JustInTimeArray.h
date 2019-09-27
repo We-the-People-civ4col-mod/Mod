@@ -102,6 +102,8 @@ public:
 
 	int getPositiveCount() const;
 
+	T getMax() const;
+
 	// add bound checks. Ignore call if out of bound index
 	int safeSet(T value, int iIndex);
 	int safeAdd(T value, int iIndex);
