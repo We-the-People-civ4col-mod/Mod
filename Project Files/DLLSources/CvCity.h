@@ -710,14 +710,14 @@ protected:
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
 	PlayerTypes m_eMissionaryPlayer;
-	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields
-	int* m_aiSeaPlotYield;
-	int* m_aiRiverPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiYieldStored;
-	int* m_aiYieldRushed;
+	YieldArray<int> m_aiLandPlotYield; // R&R, ray, Landplot Yields
+	YieldArray<int> m_aiSeaPlotYield;
+	YieldArray<int> m_aiRiverPlotYield;
+	YieldArray<int> m_aiYieldRateModifier;
+	YieldArray<int> m_aiYieldStored;
+	YieldArray<int> m_aiYieldRushed;
 	// R&R, Androrc, Domestic Market
-	int* m_aiYieldBuyPrice;
+	YieldArray<int> m_aiYieldBuyPrice;
 	//Androrc End
 	
 	// R&R, ray, finishing Custom House Screen

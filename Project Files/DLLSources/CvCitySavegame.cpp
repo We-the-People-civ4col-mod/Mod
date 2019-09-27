@@ -114,6 +114,14 @@ enum SavegameVariableTypes
 	CitySave_MissionaryPlayer,
 	CitySave_PreferredYieldAtCityPlot,
 
+	CitySave_LandPlotYield,
+	CitySave_SeaPlotYield,
+	CitySave_RiverPlotYield,
+	CitySave_YieldRateModifier,
+	CitySave_YieldStored,
+	CitySave_YieldRushed,
+	CitySave_YieldBuyPrice,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -183,6 +191,15 @@ void CvCity::resetSavedData()
 
 	m_eMissionaryPlayer = defaultMissionaryPlayer;
 	m_ePreferredYieldAtCityPlot = defaultPreferredYieldAtCityPlot;
+
+	m_aiLandPlotYield.reset();
+	m_aiSeaPlotYield.reset();
+	m_aiRiverPlotYield.reset();
+	m_aiYieldRateModifier.reset();
+	m_aiYieldStored.reset();
+	m_iTotalYieldStored = 0; //not stored
+	m_aiYieldRushed.reset();
+	m_aiYieldBuyPrice.reset();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -266,6 +283,19 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_MissionaryPlayer: reader.Read(m_eMissionaryPlayer); break;
 		case CitySave_PreferredYieldAtCityPlot: reader.Read(m_ePreferredYieldAtCityPlot); break;
+
+		case CitySave_LandPlotYield: reader.Read(m_aiLandPlotYield); break;
+		case CitySave_SeaPlotYield: reader.Read(m_aiSeaPlotYield); break;
+		case CitySave_RiverPlotYield: reader.Read(m_aiRiverPlotYield); break;
+		case CitySave_YieldRateModifier: reader.Read(m_aiYieldRateModifier); break;
+		case CitySave_YieldStored: reader.Read(m_aiYieldStored);
+			for(int i=3;i<NUM_YIELD_TYPES;i++)//without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+			{
+				if (GC.getYieldInfo((YieldTypes)i).isCargo())
+					{m_iTotalYieldStored += m_aiYieldStored.get(i);}
+			} break;
+		case CitySave_YieldRushed: reader.Read(m_aiYieldRushed); break;
+		case CitySave_YieldBuyPrice: reader.Read(m_aiYieldBuyPrice); break;
 		}
 	}
 	
@@ -339,7 +369,13 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_MissionaryPlayer,m_eMissionaryPlayer,defaultMissionaryPlayer);
 	writer.Write(CitySave_PreferredYieldAtCityPlot,m_ePreferredYieldAtCityPlot,defaultPreferredYieldAtCityPlot);
 		
-
+	writer.Write(CitySave_LandPlotYield,m_aiLandPlotYield);
+	writer.Write(CitySave_SeaPlotYield,m_aiSeaPlotYield);
+	writer.Write(CitySave_RiverPlotYield,m_aiRiverPlotYield);
+	writer.Write(CitySave_YieldRateModifier,m_aiYieldRateModifier);
+	writer.Write(CitySave_YieldStored,m_aiYieldStored);
+	writer.Write(CitySave_YieldRushed,m_aiYieldRushed);
+	writer.Write(CitySave_YieldBuyPrice,m_aiYieldBuyPrice);
 
 	writer.Write(CitySave_END);
 }

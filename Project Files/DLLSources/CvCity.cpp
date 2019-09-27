@@ -38,17 +38,15 @@ CvCity::CvCity() :
 	ba_tradeImports(JIT_ARRAY_YIELD),
 	ba_tradeExports(JIT_ARRAY_YIELD),
 	ba_aiCustomHouseNeverSell(JIT_ARRAY_YIELD),
-	ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT)
+	ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT),
+	m_aiLandPlotYield(JIT_ARRAY_YIELD),
+	m_aiSeaPlotYield(JIT_ARRAY_YIELD),
+	m_aiRiverPlotYield(JIT_ARRAY_YIELD),
+	m_aiYieldRateModifier(JIT_ARRAY_YIELD),
+	m_aiYieldStored(JIT_ARRAY_YIELD),
+	m_aiYieldRushed(JIT_ARRAY_YIELD),
+	m_aiYieldBuyPrice(JIT_ARRAY_YIELD)
 {
-	m_aiLandPlotYield = new int[NUM_YIELD_TYPES]; // R&R, ray, Landplot Yields
-	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiRiverPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiYieldStored = new int[NUM_YIELD_TYPES];
-	m_aiYieldRushed = new int[NUM_YIELD_TYPES];
-	// R&R, Androrc, Domestic Market
-	m_aiYieldBuyPrice = new int[NUM_YIELD_TYPES];
-	//Androrc End
 
 	m_aiDomainFreeExperience = new int[NUM_DOMAIN_TYPES];
 	m_aiDomainProductionModifier = new int[NUM_DOMAIN_TYPES];
@@ -98,15 +96,6 @@ CvCity::~CvCity()
 	SAFE_DELETE_ARRAY(m_aiYieldRank);
 	SAFE_DELETE_ARRAY(m_abYieldRankValid);
 
-	SAFE_DELETE_ARRAY(m_aiLandPlotYield); // R&R, ray, Landplot Yields
-	SAFE_DELETE_ARRAY(m_aiSeaPlotYield);
-	SAFE_DELETE_ARRAY(m_aiRiverPlotYield);
-	SAFE_DELETE_ARRAY(m_aiYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiYieldStored);
-	SAFE_DELETE_ARRAY(m_aiYieldRushed);
-	// R&R, Androrc, Domestic Market
-	SAFE_DELETE_ARRAY(m_aiYieldBuyPrice);
-	//Androrc End
 	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
 	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
 	SAFE_DELETE_ARRAY(m_aiCulture);
@@ -469,18 +458,14 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_eTeachUnitClass = NO_UNITCLASS;
 	m_eMissionaryPlayer = NO_PLAYER;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiLandPlotYield[iI] = 0; // R&R, ray, Landplot Yields
-		m_aiSeaPlotYield[iI] = 0;
-		m_aiRiverPlotYield[iI] = 0;
-		m_aiYieldRateModifier[iI] = 0;
-		m_aiYieldStored[iI] = 0;
-		m_aiYieldRushed[iI] = 0;
-		// R&R, Androrc, Domestic Market
-		m_aiYieldBuyPrice[iI] = 0;
-		//Androrc End
-	}
+	m_aiLandPlotYield.reset(); // R&R, ray, Landplot Yields
+	m_aiSeaPlotYield.reset();
+	m_aiRiverPlotYield.reset();
+	m_aiYieldRateModifier.reset();
+	m_aiYieldStored.reset();
+	m_aiYieldRushed.reset();
+	m_aiYieldBuyPrice.reset();
+	
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.reset();
 	ba_aiCustomHouseNeverSell.reset();
@@ -4134,7 +4119,7 @@ int CvCity::getLandPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiLandPlotYield[eIndex];
+	return m_aiLandPlotYield.get(eIndex);
 }
 
 
@@ -4145,8 +4130,8 @@ void CvCity::changeLandPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiLandPlotYield[eIndex] += iChange;
-		m_aiLandPlotYield[eIndex] = std::max(m_aiLandPlotYield[eIndex], 0);
+		m_aiLandPlotYield.add(iChange,eIndex);
+		m_aiLandPlotYield.set(std::max(m_aiLandPlotYield.get(eIndex), 0),eIndex);
 		updateYield();
 	}
 }
@@ -4156,7 +4141,7 @@ int CvCity::getSeaPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiSeaPlotYield[eIndex];
+	return m_aiSeaPlotYield.get(eIndex);
 }
 
 
@@ -4167,8 +4152,8 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield[eIndex] += iChange;
-		m_aiSeaPlotYield[eIndex] = std::max(m_aiSeaPlotYield[eIndex], 0);
+		m_aiSeaPlotYield.add(iChange,eIndex);
+		m_aiSeaPlotYield.set(std::max(m_aiSeaPlotYield.get(eIndex), 0), eIndex);
 		updateYield();
 	}
 }
@@ -4178,7 +4163,7 @@ int CvCity::getRiverPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiRiverPlotYield[eIndex];
+	return m_aiRiverPlotYield.get(eIndex);
 }
 
 
@@ -4189,8 +4174,8 @@ void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiRiverPlotYield[eIndex] += iChange;
-		m_aiRiverPlotYield[eIndex] = std::max(m_aiRiverPlotYield[eIndex], 0);
+		m_aiRiverPlotYield.add(iChange,eIndex);
+		m_aiRiverPlotYield.set(std::max(m_aiRiverPlotYield.get(eIndex), 0),eIndex);
 		updateYield();
 	}
 }
@@ -4431,7 +4416,7 @@ int CvCity::getYieldRateModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldRateModifier[eIndex];
+	return m_aiYieldRateModifier.get(eIndex);
 }
 
 
@@ -4442,7 +4427,7 @@ void CvCity::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiYieldRateModifier[eIndex] += iChange;
+		m_aiYieldRateModifier.add(iChange,eIndex);
 		FAssert(getYieldRateModifier(eIndex) >= 0);
 
 		GET_PLAYER(getOwnerINLINE()).invalidateYieldRankCache(eIndex);
@@ -4775,7 +4760,7 @@ int CvCity::getYieldStored(YieldTypes eYield) const
 {
 	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
 	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldStored[eYield];
+	return m_aiYieldStored.get(eYield);
 }
 
 void CvCity::setYieldStored(YieldTypes eYield, int iValue)
@@ -4791,7 +4776,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 		if ((eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE) && GC.getYieldInfo(eYield).isCargo())
 			{changeTotalYieldStored(iChange);}
 //VET NewCapacity - end 3/9
-		m_aiYieldStored[eYield] = iValue;
+		m_aiYieldStored.set(iValue,eYield);
 
 		if (!AI_isWorkforceHack())
 		{
@@ -4852,13 +4837,13 @@ void CvCity::changeYieldStored(YieldTypes eYield, int iChange)
 int CvCity::getYieldRushed(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	return m_aiYieldRushed[eYield];
+	return m_aiYieldRushed.get(eYield);
 }
 
 void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	m_aiYieldRushed[eYield] += iChange;
+	m_aiYieldRushed.add(iChange,eYield);
 	FAssert(getYieldRushed(eYield) >= 0);
 }
 
@@ -7615,25 +7600,6 @@ void CvCity::read(FDataStreamBase* pStream)
 {
 	int iNumElts;
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields
-	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiRiverPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldStored);
-//VET NewCapacity - begin 9/9
-	m_iTotalYieldStored = 0;
-	for(int i=3;i<NUM_YIELD_TYPES;i++)//without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
-	{
-		if (GC.getYieldInfo((YieldTypes)i).isCargo())
-			{m_iTotalYieldStored += m_aiYieldStored[i];}
-	}
-	
-//VET NewCapacity - begin 9/9
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRushed);
-	// R&R, Androrc, Domestic Market
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
-	//Androrc End
-	
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Read(MAX_PLAYERS, m_aiCulture);
@@ -7704,19 +7670,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields
-	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiRiverPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldStored);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRushed);
-	// R&R, Androrc, Domestic Market
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
-	//Androrc End
-
-
-
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
 	pStream->Write(MAX_PLAYERS, m_aiCulture);
@@ -11231,7 +11184,7 @@ int CvCity::getYieldBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldBuyPrice[eYield];
+	return m_aiYieldBuyPrice.get(eYield);
 }
 
 // R&R, ray, adjustment Domestic Markets
@@ -11244,7 +11197,7 @@ void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
 	iPrice = std::max(iPrice, 1);
 	if (iPrice != getYieldBuyPrice(eYield))
 	{
-		m_aiYieldBuyPrice[eYield] = iPrice;
+		m_aiYieldBuyPrice.set(iPrice,eYield);
 	}
 }
 
