@@ -59,6 +59,24 @@ void TradeData::write(FDataStreamBase* pStream) const
 	pStream->Write(m_bHidden);
 }
 
+void TradeData::read(CvSavegameReader& reader)
+{
+	reader.Read(m_eItemType);
+	reader.Read(m_iData1);
+	m_kTransport.read(reader);
+	reader.Read(m_bOffering);
+	reader.Read(m_bHidden);
+}
+
+void TradeData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(m_eItemType);
+	writer.Write(m_iData1);
+	m_kTransport.write(writer);
+	writer.Write(m_bOffering);
+	writer.Write(m_bHidden);
+}
+
 int EventTriggeredData::getID() const
 {
 	return m_iId;
@@ -103,6 +121,40 @@ void EventTriggeredData::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szGlobalText);
 }
 
+void EventTriggeredData::read(CvSavegameReader& reader)
+{
+	reader.Read(m_iId);
+	reader.Read(m_eTrigger);
+	reader.Read(m_iTurn);
+	reader.Read(m_ePlayer);
+	reader.Read(m_iCityId);
+	reader.Read(m_iPlotX);
+	reader.Read(m_iPlotY);
+	reader.Read(m_iUnitId);
+	reader.Read(m_eOtherPlayer);
+	reader.Read(m_iOtherPlayerCityId);
+	reader.Read(m_eBuilding);
+	reader.Read(m_szText);
+	reader.Read(m_szGlobalText);
+}
+
+void EventTriggeredData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(m_iId);
+	writer.Write(m_eTrigger);
+	writer.Write(m_iTurn);
+	writer.Write(m_ePlayer);
+	writer.Write(m_iCityId);
+	writer.Write(m_iPlotX);
+	writer.Write(m_iPlotY);
+	writer.Write(m_iUnitId);
+	writer.Write(m_eOtherPlayer);
+	writer.Write(m_iOtherPlayerCityId);
+	writer.Write(m_eBuilding);
+	writer.Write(m_szText);
+	writer.Write(m_szGlobalText);
+}
+
 void PlotExtraYield::read(FDataStreamBase* pStream)
 {
 	pStream->Read(&m_iX);
@@ -126,6 +178,29 @@ void PlotExtraYield::write(FDataStreamBase* pStream)
 	}
 }
 
+void PlotExtraYield::read(CvSavegameReader& reader)
+{
+	reader.Read(m_iX);
+	reader.Read(m_iY);
+	m_aeExtraYield.clear();
+	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	{
+		int iYield;
+		reader.Read(iYield);
+		m_aeExtraYield.push_back(iYield);
+	}
+}
+
+void PlotExtraYield::write(CvSavegameWriter& writer) const 
+{
+	writer.Write(m_iX);
+	writer.Write(m_iY);
+	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	{
+		writer.Write(m_aeExtraYield[i]);
+	}
+}
+
 void BuildingYieldChange::read(FDataStreamBase* pStream)
 {
 	pStream->Read((int*)&eBuildingClass);
@@ -138,6 +213,20 @@ void BuildingYieldChange::write(FDataStreamBase* pStream)
 	pStream->Write(eBuildingClass);
 	pStream->Write(eYield);
 	pStream->Write(iChange);
+}
+
+void BuildingYieldChange::read(CvSavegameReader& reader)
+{
+	reader.Read(eBuildingClass);
+	reader.Read(eYield);
+	reader.Read(iChange);
+}
+
+void BuildingYieldChange::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eBuildingClass);
+	writer.Write(eYield);
+	writer.Write(iChange);
 }
 
 void checkBattleUnitType(BattleUnitTypes unitType)

@@ -78,7 +78,8 @@ public:
 	void Read(SlotStatus            & variable) { ReadEnum(variable); }
 	void Read(TeamTypes             & variable) { ReadEnum(variable); }
 	void Read(TurnTimerTypes        & variable) { ReadEnum(variable); }
-	
+	void Read(TradeableItems        & variable) { ReadEnum(variable); }
+
 	// everything linked to xml file enums
 	void Read(ArtStyleTypes         & variable) { ReadXmlEnum(variable); }
 	void Read(BonusTypes            & variable) { ReadXmlEnum(variable); }
