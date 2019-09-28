@@ -730,12 +730,12 @@ protected:
 	BoolArray      ba_OrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
 
-	int* m_aiDomainFreeExperience;
-	int* m_aiDomainProductionModifier;
-	int* m_aiCulture;
-	bool* m_abEverOwned;
-	bool* m_abRevealed;
-	bool* m_abScoutVisited;
+	DomainTypesArray<int> m_aiDomainFreeExperience;
+	DomainTypesArray<int> m_aiDomainProductionModifier;
+	PlayerArray<int> m_aiCulture;
+	PlayerBoolArray m_abEverOwned;
+	TeamBoolArray m_abRevealed;
+	TeamBoolArray m_abScoutVisited;
 	CvWString m_szName;
 	CvString m_szScriptData;
 	BuildingArray<int> m_paiBuildingProduction;

@@ -228,5 +228,12 @@ public:
 	YieldCargoArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
 };
 
+template<class T>
+class DomainTypesArray: public JustInTimeArray<T>
+{
+public:
+	DomainTypesArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_DOMAIN_TYPES, eDefault){};
+};
+
 
 #endif

@@ -145,6 +145,14 @@ enum SavegameVariableTypes
 	CitySave_EventsOccured,
 	CitySave_BuildingYieldChange,
 
+	CitySave_Culture,
+	CitySave_EverOwned,
+	CitySave_Revealed,
+	CitySave_ScoutVisited,
+
+	CitySave_DomainFreeExperience,
+	CitySave_DomainProductionModifier,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -247,6 +255,14 @@ void CvCity::resetSavedData()
 	m_aPopulationUnits.clear();
 	m_aEventsOccured.clear();
 	m_aBuildingYieldChange.clear();
+
+	m_aiCulture.reset();
+	m_abEverOwned.reset();
+	m_abRevealed.reset();
+	m_abScoutVisited.reset();
+
+	m_aiDomainFreeExperience.reset();
+	m_aiDomainProductionModifier.reset();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -402,7 +418,15 @@ void CvCity::read(CvSavegameReader reader)
 				m_aBuildingYieldChange.push_back(kChange);
 			} break;
 			}
+		case CitySave_Culture: reader.Read(m_aiCulture); break;
+		case CitySave_EverOwned: reader.Read(m_abEverOwned); break;
+		case CitySave_Revealed: reader.Read(m_abRevealed); break;
+		case CitySave_ScoutVisited: reader.Read(m_abScoutVisited); break;
+		
+		case CitySave_DomainFreeExperience: reader.Read(m_aiDomainFreeExperience); break;
+		case CitySave_DomainProductionModifier: reader.Read(m_aiDomainProductionModifier); break;
 		}
+		
 	}
 	
 }
@@ -529,6 +553,14 @@ void CvCity::write(CvSavegameWriter writer)
 			it->write(writer);
 		}
 	}
+
+	writer.Write(CitySave_Culture, m_aiCulture);
+	writer.Write(CitySave_EverOwned, m_abEverOwned);
+	writer.Write(CitySave_Revealed, m_abRevealed);
+	writer.Write(CitySave_ScoutVisited, m_abScoutVisited);
+
+	writer.Write(CitySave_DomainFreeExperience, m_aiDomainFreeExperience);
+	writer.Write(CitySave_DomainProductionModifier, m_aiDomainProductionModifier);
 
 	writer.Write(CitySave_END);
 }

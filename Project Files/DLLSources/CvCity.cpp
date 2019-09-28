@@ -60,18 +60,14 @@ CvCity::CvCity() :
 	m_paiUnitCombatFreeExperience(0),
 	m_paiFreePromotionCount(0),
 	m_pabHasRealBuilding(JIT_ARRAY_BUILDING),
-	m_pabHasFreeBuilding(JIT_ARRAY_BUILDING)
+	m_pabHasFreeBuilding(JIT_ARRAY_BUILDING),
+	m_aiCulture(),
+	m_abEverOwned(),
+	m_abRevealed(),
+	m_abScoutVisited(),
+	m_aiDomainFreeExperience(0),
+	m_aiDomainProductionModifier(0)
 {
-
-	m_aiDomainFreeExperience = new int[NUM_DOMAIN_TYPES];
-	m_aiDomainProductionModifier = new int[NUM_DOMAIN_TYPES];
-
-	m_aiCulture = new int[MAX_PLAYERS];
-	m_abEverOwned = new bool[MAX_PLAYERS];
-	m_abRevealed = new bool[MAX_TEAMS];
-	m_abScoutVisited = new bool[MAX_TEAMS];
-
-
 
 	m_paiWorkingPlot = NULL;
 
@@ -93,12 +89,6 @@ CvCity::~CvCity()
 
 	uninit();
 
-	SAFE_DELETE_ARRAY(m_aiDomainFreeExperience);
-	SAFE_DELETE_ARRAY(m_aiDomainProductionModifier);
-	SAFE_DELETE_ARRAY(m_aiCulture);
-	SAFE_DELETE_ARRAY(m_abEverOwned);
-	SAFE_DELETE_ARRAY(m_abRevealed);
-	SAFE_DELETE_ARRAY(m_abScoutVisited);
 }
 
 
@@ -456,33 +446,18 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_abYieldRankValid.reset();
 	m_aiBaseYieldRank.reset();
 	m_aiYieldRank.reset();
-	
+
+	m_aiCulture.reset();
+	m_abEverOwned.reset();
+	m_abRevealed.reset();
+	m_abScoutVisited.reset();
+	m_aiDomainFreeExperience.reset();
+	m_aiDomainProductionModifier.reset();
 	// R&R, ray, finishing Custom House Screen
 	ma_aiCustomHouseSellThreshold.reset();
 	ba_aiCustomHouseNeverSell.reset();
 	// R&R, ray, finishing Custom House Screen END
 
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
-	{
-		m_aiDomainFreeExperience[iI] = 0;
-		m_aiDomainProductionModifier[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiCulture[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_abEverOwned[iI] = false;
-	}
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_abRevealed[iI] = false;
-		m_abScoutVisited[iI] = false;
-	}
 
 	clear(m_szName);
 	m_szScriptData = "";
@@ -4541,7 +4516,7 @@ int CvCity::getDomainFreeExperience(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	return m_aiDomainFreeExperience[eIndex];
+	return m_aiDomainFreeExperience.get(eIndex);
 }
 
 
@@ -4549,7 +4524,7 @@ void CvCity::changeDomainFreeExperience(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	m_aiDomainFreeExperience[eIndex] = (m_aiDomainFreeExperience[eIndex] + iChange);
+	m_aiDomainFreeExperience.set((m_aiDomainFreeExperience.get(eIndex) + iChange), eIndex);
 	FAssert(getDomainFreeExperience(eIndex) >= 0);
 }
 
@@ -4558,7 +4533,7 @@ int CvCity::getDomainProductionModifier(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	return m_aiDomainProductionModifier[eIndex];
+	return m_aiDomainProductionModifier.get(eIndex);
 }
 
 
@@ -4566,7 +4541,7 @@ void CvCity::changeDomainProductionModifier(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	m_aiDomainProductionModifier[eIndex] = (m_aiDomainProductionModifier[eIndex] + iChange);
+	m_aiDomainProductionModifier.set(m_aiDomainProductionModifier.get(eIndex) + iChange, eIndex);
 }
 
 
@@ -4574,7 +4549,7 @@ int CvCity::getCulture(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex expected to be < MAX_PLAYERS");
-	return m_aiCulture[eIndex];
+	return m_aiCulture.get(eIndex);
 }
 
 int CvCity::countTotalCulture() const
@@ -4668,7 +4643,7 @@ void CvCity::setCulture(PlayerTypes eIndex, int iNewValue, bool bPlots)
 
 	if (getCulture(eIndex) != iNewValue)
 	{
-		m_aiCulture[eIndex] = iNewValue;
+		m_aiCulture.set(eIndex, iNewValue);
 		FAssert(getCulture(eIndex) >= 0);
 
 		updateCultureLevel();
@@ -5236,7 +5211,7 @@ bool CvCity::isEverOwned(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex expected to be < MAX_PLAYERS");
-	return m_abEverOwned[eIndex];
+	return m_abEverOwned.get(eIndex);
 }
 
 
@@ -5244,7 +5219,7 @@ void CvCity::setEverOwned(PlayerTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex expected to be < MAX_PLAYERS");
-	m_abEverOwned[eIndex] = bNewValue;
+	m_abEverOwned.set(eIndex, bNewValue);
 }
 
 
@@ -5259,7 +5234,7 @@ bool CvCity::isRevealed(TeamTypes eIndex, bool bDebug) const
 		FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 		FAssertMsg(eIndex < MAX_TEAMS, "eIndex expected to be < MAX_TEAMS");
 
-		return m_abRevealed[eIndex];
+		return m_abRevealed.get(eIndex);
 	}
 }
 
@@ -5274,7 +5249,7 @@ void CvCity::setRevealed(TeamTypes eIndex, bool bNewValue)
 
 	if (isRevealed(eIndex, false) != bNewValue)
 	{
-		m_abRevealed[eIndex] = bNewValue;
+		m_abRevealed.set(eIndex, bNewValue);
 
 		updateVisibility();
 
@@ -7539,15 +7514,7 @@ void CvCity::doMissionaries()
 
 void CvCity::read(FDataStreamBase* pStream)
 {
-	int iNumElts;
 
-	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
-	pStream->Read(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
-	pStream->Read(MAX_PLAYERS, m_aiCulture);
-
-	pStream->Read(MAX_PLAYERS, m_abEverOwned);
-	pStream->Read(MAX_TEAMS, m_abRevealed);
-	pStream->Read(MAX_TEAMS, m_abScoutVisited);
 
 
 	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
@@ -7567,7 +7534,7 @@ void CvCity::read(FDataStreamBase* pStream)
 	
 	m_orderQueue.Read(pStream);
 
-
+	
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
 	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
@@ -7575,14 +7542,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainFreeExperience);
-	pStream->Write(NUM_DOMAIN_TYPES, m_aiDomainProductionModifier);
-	pStream->Write(MAX_PLAYERS, m_aiCulture);
-
-	pStream->Write(MAX_PLAYERS, m_abEverOwned);
-	pStream->Write(MAX_TEAMS, m_abRevealed);
-	pStream->Write(MAX_TEAMS, m_abScoutVisited);
-
 	pStream->Write(NUM_CITY_PLOTS, m_paiWorkingPlot);
 
 	pStream->Write((int)m_aPopulationUnits.size());
@@ -8999,7 +8958,7 @@ void CvCity::setScoutVisited(TeamTypes eTeam, bool bVisited)
 
 	if(bVisited != isScoutVisited(eTeam))
 	{
-		m_abScoutVisited[eTeam] = bVisited;
+		m_abScoutVisited.set(eTeam, bVisited);
 		setBillboardDirty(true);
 	}
 }
@@ -9012,7 +8971,7 @@ bool CvCity::isScoutVisited(TeamTypes eTeam) const
 	{
 		return true;
 	}
-	return m_abScoutVisited[eTeam];
+	return m_abScoutVisited.get(eTeam);
 }
 
 
