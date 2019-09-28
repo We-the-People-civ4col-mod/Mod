@@ -7551,7 +7551,7 @@ void CvCity::read(FDataStreamBase* pStream)
 
 
 	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
-
+	
 	FAssert(m_aPopulationUnits.size() == 0);
 	m_aPopulationUnits.clear();
 	int iNumPopulation;
@@ -7567,23 +7567,6 @@ void CvCity::read(FDataStreamBase* pStream)
 	
 	m_orderQueue.Read(pStream);
 
-	pStream->Read(&iNumElts);
-	m_aEventsOccured.clear();
-	for (int i = 0; i < iNumElts; ++i)
-	{
-		EventTypes eEvent;
-		pStream->Read((int*)&eEvent);
-		m_aEventsOccured.push_back(eEvent);
-	}
-
-	pStream->Read(&iNumElts);
-	m_aBuildingYieldChange.clear();
-	for (int i = 0; i < iNumElts; ++i)
-	{
-		BuildingYieldChange kChange;
-		kChange.read(pStream);
-		m_aBuildingYieldChange.push_back(kChange);
-	}
 
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
@@ -7610,17 +7593,6 @@ void CvCity::write(FDataStreamBase* pStream)
 
 	m_orderQueue.Write(pStream);
 
-	pStream->Write(m_aEventsOccured.size());
-	for (std::vector<EventTypes>::iterator it = m_aEventsOccured.begin(); it != m_aEventsOccured.end(); ++it)
-	{
-		pStream->Write(*it);
-	}
-
-	pStream->Write(m_aBuildingYieldChange.size());
-	for (std::vector<BuildingYieldChange>::iterator it = m_aBuildingYieldChange.begin(); it != m_aBuildingYieldChange.end(); ++it)
-	{
-		(*it).write(pStream);
-	}
 }
 
 

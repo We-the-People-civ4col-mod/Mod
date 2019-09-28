@@ -140,7 +140,11 @@ enum SavegameVariableTypes
 	CitySave_HasFreeBuilding,
 	CitySave_Name,
 	CitySave_ScriptData,
-	
+
+	CitySave_PopulationUnits,
+	CitySave_EventsOccured,
+	CitySave_BuildingYieldChange,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -239,6 +243,10 @@ void CvCity::resetSavedData()
 
 	m_szName.clear();
 	m_szScriptData.clear();
+
+	m_aPopulationUnits.clear();
+	m_aEventsOccured.clear();
+	m_aBuildingYieldChange.clear();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -355,6 +363,45 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_Name: reader.Read(m_szName); break;
 	 	case CitySave_ScriptData: reader.Read(m_szScriptData); break;
+
+		//maybe make this code better?
+		// add a read fucntion for std::vector?
+		/*//this code need debugging start
+			case CitySave_PopulationUnits:
+			{
+			int iNumPopulation;
+			reader.Read(iNumPopulation);
+			m_aPopulationUnits.reserve(iNumPopulation);
+			for(int i=0;i<iNumPopulation;++i){
+				CvUnitAI* pUnit = new CvUnitAI ();
+				pUnit->read(reader);
+				m_aPopulationUnits.push_back(pUnit);
+			} break;
+			}
+			//this code need debugging end
+			*/
+		case CitySave_EventsOccured:
+			{
+			int iNumElts;
+			reader.Read(iNumElts);
+			m_aEventsOccured.reserve(iNumElts);
+			for(int i=0;i<iNumElts;++i){
+				EventTypes eEvent;
+				reader.Read(eEvent);
+				m_aEventsOccured.push_back(eEvent);
+			} break;
+			}
+		case CitySave_BuildingYieldChange:
+			{
+			int iNumElts;
+			reader.Read(iNumElts);
+			m_aBuildingYieldChange.reserve(iNumElts);
+			for(int i=0;i<iNumElts;++i){
+				BuildingYieldChange kChange;
+				kChange.read(reader);
+				m_aBuildingYieldChange.push_back(kChange);
+			} break;
+			}
 		}
 	}
 	
@@ -456,6 +503,32 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_Name, m_szName);
 	writer.Write(CitySave_ScriptData, m_szScriptData);
+
+	/*
+	//this code need debugging start
+	if(m_aPopulationUnits.size()>0){
+		writer.Write(CitySave_PopulationUnits);
+		writer.Write((int)m_aPopulationUnits.size());
+		for(int i=0;i<(int)m_aPopulationUnits.size();++i){
+			m_aPopulationUnits[i]->write(writer);
+		}
+	}
+	//this code need debugging end
+	*/
+	if(m_aEventsOccured.size()>0){
+		writer.Write(CitySave_EventsOccured);
+		writer.Write((int)m_aEventsOccured.size());
+		for (std::vector<EventTypes>::iterator it = m_aEventsOccured.begin(); it != m_aEventsOccured.end(); ++it){
+			writer.Write(*it);
+		}
+	}
+	if(m_aBuildingYieldChange.size()>0){
+		writer.Write(CitySave_BuildingYieldChange);
+		writer.Write((int)m_aBuildingYieldChange.size());
+		for (std::vector<BuildingYieldChange>::iterator it = m_aBuildingYieldChange.begin(); it != m_aBuildingYieldChange.end(); ++it){
+			it->write(writer);
+		}
+	}
 
 	writer.Write(CitySave_END);
 }
