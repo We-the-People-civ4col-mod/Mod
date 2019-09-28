@@ -77,6 +77,9 @@ struct DllExport OrderData
 	int iData1;
 	int iData2;
 	bool bSave;
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport MissionData

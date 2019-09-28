@@ -7532,9 +7532,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 	// traderoute just-in-time - start - Nightinggale
 	
-	m_orderQueue.Read(pStream);
-
-	
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
 	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
@@ -7549,9 +7546,6 @@ void CvCity::write(FDataStreamBase* pStream)
 	{
 		m_aPopulationUnits[i]->write(pStream);
 	}
-
-	m_orderQueue.Write(pStream);
-
 }
 
 

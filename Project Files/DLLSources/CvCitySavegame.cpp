@@ -152,6 +152,9 @@ enum SavegameVariableTypes
 
 	CitySave_DomainFreeExperience,
 	CitySave_DomainProductionModifier,
+	
+	CitySave_orderQueue,
+
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -263,6 +266,9 @@ void CvCity::resetSavedData()
 
 	m_aiDomainFreeExperience.reset();
 	m_aiDomainProductionModifier.reset();
+
+	m_orderQueue.clear();
+
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -425,6 +431,9 @@ void CvCity::read(CvSavegameReader reader)
 		
 		case CitySave_DomainFreeExperience: reader.Read(m_aiDomainFreeExperience); break;
 		case CitySave_DomainProductionModifier: reader.Read(m_aiDomainProductionModifier); break;
+
+		case CitySave_orderQueue: reader.Read(m_orderQueue); break;
+
 		}
 		
 	}
@@ -561,6 +570,9 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_DomainFreeExperience, m_aiDomainFreeExperience);
 	writer.Write(CitySave_DomainProductionModifier, m_aiDomainProductionModifier);
+
+	writer.Write(CitySave_orderQueue, m_orderQueue);
+
 
 	writer.Write(CitySave_END);
 }

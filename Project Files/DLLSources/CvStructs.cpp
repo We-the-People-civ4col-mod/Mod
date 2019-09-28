@@ -41,6 +41,22 @@ void IDInfo::write(CvSavegameWriter& writer) const
 	writer.Write(iID);
 }
 
+void OrderData::read(CvSavegameReader& reader)
+{
+	reader.Read(eOrderType);
+	reader.Read(iData1);
+	reader.Read(iData2);
+	reader.Read(bSave);
+}
+
+void OrderData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eOrderType);
+	writer.Write(iData1);
+	writer.Write(iData2);
+	writer.Write(bSave);
+}
+
 void TradeData::read(FDataStreamBase* pStream)
 {
 	pStream->Read((int*)&m_eItemType);
