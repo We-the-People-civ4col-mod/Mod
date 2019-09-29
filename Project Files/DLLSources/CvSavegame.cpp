@@ -568,7 +568,7 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 	{
 		short iBuffer = iVariable;
 		Write(iBuffer);
-	}
+	} break; //so we dont write 3 bytes 
 	case 1:
 	{
 		int iTemp = iVariable + XML_ENUM_OFFSET;
