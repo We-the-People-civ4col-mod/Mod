@@ -76,6 +76,7 @@ public:
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
 	void Read(SlotClaim             & variable) { ReadEnum(variable); }
@@ -83,7 +84,6 @@ public:
 	void Read(TeamTypes             & variable) { ReadEnum(variable); }
 	void Read(TurnTimerTypes        & variable) { ReadEnum(variable); }
 	void Read(TradeableItems        & variable) { ReadEnum(variable); }
-	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 
 
 	// everything linked to xml file enums
