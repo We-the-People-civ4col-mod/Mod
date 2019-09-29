@@ -44,6 +44,7 @@ const int XML_ENUM_MAX_LENGTH_ONE_BYTE = 0x100 - XML_ENUM_OFFSET;
 
 const char* getSavedEnumNameMap(SavegameVariableTypes eType);
 const char* getSavedEnumNamePlot(SavegameVariableTypes eType);
+const char* getSavedEnumNameCity(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -51,6 +52,8 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	{
 	case SAVEGAME_CLASS_MAP: return getSavedEnumNameMap(eType);
 	case SAVEGAME_CLASS_PLOT: return getSavedEnumNamePlot(eType);
+	case SAVEGAME_CLASS_CITY: return getSavedEnumNameCity(eType);
+
 	}
 
 	return "";

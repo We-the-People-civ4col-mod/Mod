@@ -157,12 +157,122 @@ enum SavegameVariableTypes
 
 	CitySave_WorkingPlot,
 
-	NUM_SAVE_ENUM_VALUES,
+	NUM_CITYSAVE_ENUM_VALUES,
 };
+
+const char* getSavedEnumNameCity(SavegameVariableTypes eType)
+{
+	switch (eType)
+	{
+		case CitySave_END: return "CitySave_END";
+		case CitySave_ID: return "CitySave_ID";
+		case CitySave_X: return "CitySave_X";
+		case CitySave_Y: return "CitySave_Y";
+		case CitySave_RallyX: return "CitySave_RallyX";
+		case CitySave_RallyY: return "CitySave_RallyY";
+		case CitySave_GameTurnFounded: return "CitySave_GameTurnFounded";
+		case CitySave_GameTurnAcquired: return "CitySave_GameTurnAcquired";
+		case CitySave_HighestPopulation: return "CitySave_HighestPopulation";
+		case CitySave_WorkingPopulation: return "CitySave_WorkingPopulation";
+		case CitySave_NumBuildings: return "CitySave_NumBuildings";
+		case CitySave_HealRate: return "CitySave_HealRate";
+		case CitySave_FoodKept: return "CitySave_FoodKept";
+		case CitySave_MaxFoodKeptPercent: return "CitySave_MaxFoodKeptPercent";
+		case CitySave_OverflowProduction: return "CitySave_OverflowProduction";
+		case CitySave_MilitaryProductionModifier: return "CitySave_MilitaryProductionModifier";
+		case CitySave_BuildingDefense: return "CitySave_BuildingDefense";
+		case CitySave_BuildingBombardDefense: return "CitySave_BuildingBombardDefense";
+		case CitySave_FreeExperience: return "CitySave_FreeExperience";
+		case CitySave_DefenseDamage: return "CitySave_DefenseDamage";
+		case CitySave_LastDefenseDamage: return "CitySave_LastDefenseDamage";
+		case CitySave_OccupationTimer: return "CitySave_OccupationTimer";
+		case CitySave_CultureUpdateTimer: return "CitySave_CultureUpdateTimer";
+		case CitySave_CitySizeBoost: return "CitySave_CitySizeBoost";
+		case CitySave_Hammers: return "CitySave_Hammers";
+		case CitySave_MissionaryRate: return "CitySave_MissionaryRate";
+		case CitySave_WorksWaterCount: return "CitySave_WorksWaterCount";
+		case CitySave_RebelSentiment: return "CitySave_RebelSentiment";
+		case CitySave_CityHealth: return "CitySave_CityHealth";
+		case CitySave_TeachUnitMultiplier: return "CitySave_TeachUnitMultiplier";
+		case CitySave_EducationThresholdMultiplier: return "CitySave_EducationThresholdMultiplier";
+		case CitySave_PopulationRank: return "CitySave_PopulationRank";
+
+		case CitySave_StirredUp: return "CitySave_StirredUp";
+		case CitySave_NeverLost: return "CitySave_NeverLost";
+		case CitySave_Bombarded: return "CitySave_Bombarded";
+		case CitySave_ProductionAutomated: return "CitySave_ProductionAutomated";
+		case CitySave_WallOverride: return "CitySave_WallOverride";
+		case CitySave_PopulationRankValid: return "CitySave_PopulationRankValid";
+
+		case CitySave_Owner: return "CitySave_Owner";
+		case CitySave_PreviousOwner: return "CitySave_PreviousOwner";
+		case CitySave_OriginalOwner: return "CitySave_OriginalOwner";
+		case CitySave_CultureLevel: return "CitySave_CultureLevel";
+		case CitySave_TeachUnitClass: return "CitySave_TeachUnitClass";
+
+		case CitySave_CustomHouseSellThreshold: return "CitySave_CustomHouseSellThreshold";
+		case CitySave_CustomHouseNeverSell: return "CitySave_CustomHouseNeverSell";
+		case CitySave_OrderedStudents: return "CitySave_OrderedStudents";
+		case CitySave_OrderedStudentsRepeat: return "CitySave_OrderedStudentsRepeat";
+		case CitySave_tradeImports: return "CitySave_tradeImports";
+		case CitySave_tradeExports: return "CitySave_tradeExports";
+		case CitySave_tradeThreshold: return "CitySave_tradeThreshold";
+		case CitySave_tradeImportsMaintain: return "CitySave_tradeImportsMaintain";
+		case CitySave_tradeStopAutoImport: return "CitySave_tradeStopAutoImport";
+		case CitySave_tradeMaxThreshold: return "CitySave_tradeMaxThreshold";
+
+		case CitySave_MissionaryPlayer: return "CitySave_MissionaryPlayer";
+		case CitySave_PreferredYieldAtCityPlot: return "CitySave_PreferredYieldAtCityPlot";
+
+		case CitySave_LandPlotYield: return "CitySave_LandPlotYield";
+		case CitySave_SeaPlotYield: return "CitySave_SeaPlotYield";
+		case CitySave_RiverPlotYield: return "CitySave_RiverPlotYield";
+		case CitySave_YieldRateModifier: return "CitySave_YieldRateModifier";
+		case CitySave_YieldStored: return "CitySave_YieldStored";
+		case CitySave_YieldRushed: return "CitySave_YieldRushed";
+		case CitySave_YieldBuyPrice: return "CitySave_YieldBuyPrice";
+
+		case CitySave_BaseYieldRank: return "CitySave_BaseYieldRank";
+		case CitySave_BaseYieldRankValid: return "CitySave_BaseYieldRankValid";
+		case CitySave_YieldRank: return "CitySave_YieldRank";
+		case CitySave_YieldRankValid: return "CitySave_YieldRankValid";
+
+		case CitySave_BuildingProduction: return "CitySave_BuildingProduction";
+		case CitySave_BuildingProductionTime: return "CitySave_BuildingProductionTime";
+		case CitySave_BuildingOriginalOwner: return "CitySave_BuildingOriginalOwner";
+		case CitySave_BuildingOriginalTime: return "CitySave_BuildingOriginalTime";
+		case CitySave_UnitProduction: return "CitySave_UnitProduction";
+		case CitySave_UnitProductionTime: return "CitySave_UnitProductionTime";
+		case CitySave_SpecialistWeights: return "CitySave_SpecialistWeights";
+		case CitySave_UnitCombatFreeExperience: return "CitySave_UnitCombatFreeExperience";
+		case CitySave_FreePromotionCount: return "CitySave_FreePromotionCount";
+		case CitySave_HasRealBuilding: return "CitySave_HasRealBuilding";
+		case CitySave_HasFreeBuilding: return "CitySave_HasFreeBuilding";
+		case CitySave_Name: return "CitySave_Name";
+		case CitySave_ScriptData: return "CitySave_ScriptData";
+
+		case CitySave_PopulationUnits: return "CitySave_PopulationUnits";
+		case CitySave_EventsOccured: return "CitySave_EventsOccured";
+		case CitySave_BuildingYieldChange: return "CitySave_BuildingYieldChange";
+
+		case CitySave_Culture: return "CitySave_Culture";
+		case CitySave_EverOwned: return "CitySave_EverOwned";
+		case CitySave_Revealed: return "CitySave_Revealed";
+		case CitySave_ScoutVisited: return "CitySave_ScoutVisited";
+
+		case CitySave_DomainFreeExperience: return "CitySave_DomainFreeExperience";
+		case CitySave_DomainProductionModifier: return "CitySave_DomainProductionModifier";
+
+		case CitySave_orderQueue: return "CitySave_orderQueue";
+
+		case CitySave_WorkingPlot: return "CitySave_WorkingPlot";
+	}
+	return "";
+}
 
 int getNumSavedEnumValuesCity()
 {
-	return NUM_SAVE_ENUM_VALUES;
+	return NUM_CITYSAVE_ENUM_VALUES;
 }
 
 // assign everything to default values
