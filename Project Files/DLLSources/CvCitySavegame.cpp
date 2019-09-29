@@ -42,9 +42,9 @@
 	const bool defaultWallOverride = false;
 	const bool defaultPopulationRankValid = false;
 
-	const PlayerTypes defaultOwner = PlayerTypes();
+	const PlayerTypes defaultOwner = NO_PLAYER;
 	const PlayerTypes defaultPreviousOwner = NO_PLAYER;
-	const PlayerTypes defaultOriginalOwner = PlayerTypes();
+	const PlayerTypes defaultOriginalOwner = NO_PLAYER;
 	const CultureLevelTypes defaultCultureLevel = NO_CULTURELEVEL;
 	const UnitClassTypes defaultTeachUnitClass = NO_UNITCLASS;
 
