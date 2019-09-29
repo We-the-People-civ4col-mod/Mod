@@ -155,6 +155,7 @@ enum SavegameVariableTypes
 	
 	CitySave_orderQueue,
 
+	CitySave_WorkingPlot,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -268,6 +269,13 @@ void CvCity::resetSavedData()
 	m_aiDomainProductionModifier.reset();
 
 	m_orderQueue.clear();
+
+
+	FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	{
+		m_paiWorkingPlot[iI] = -1;
+	}
 
 }
 
@@ -388,6 +396,7 @@ void CvCity::read(CvSavegameReader reader)
 
 		//maybe make this code better?
 		// add a read fucntion for std::vector?
+		//implement CvUnit with the new savegame format first
 		/*//this code need debugging start
 			case CitySave_PopulationUnits:
 			{
@@ -433,6 +442,13 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_DomainProductionModifier: reader.Read(m_aiDomainProductionModifier); break;
 
 		case CitySave_orderQueue: reader.Read(m_orderQueue); break;
+
+		case CitySave_WorkingPlot:
+			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			{
+				reader.Read(m_paiWorkingPlot[iI]);
+			}
+			break;
 
 		}
 		
@@ -573,6 +589,11 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_orderQueue, m_orderQueue);
 
+	writer.Write(CitySave_WorkingPlot);
+			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+			{
+				writer.Write(m_paiWorkingPlot[iI]);
+			}
 
 	writer.Write(CitySave_END);
 }

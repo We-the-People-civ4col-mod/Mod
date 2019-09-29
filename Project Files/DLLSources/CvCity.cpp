@@ -7513,12 +7513,7 @@ void CvCity::doMissionaries()
 // Private Functions...
 
 void CvCity::read(FDataStreamBase* pStream)
-{
-
-
-
-	pStream->Read(NUM_CITY_PLOTS, m_paiWorkingPlot);
-	
+{	
 	FAssert(m_aPopulationUnits.size() == 0);
 	m_aPopulationUnits.clear();
 	int iNumPopulation;
@@ -7539,8 +7534,6 @@ void CvCity::read(FDataStreamBase* pStream)
 
 void CvCity::write(FDataStreamBase* pStream)
 {
-	pStream->Write(NUM_CITY_PLOTS, m_paiWorkingPlot);
-
 	pStream->Write((int)m_aPopulationUnits.size());
 	for(int i=0;i<(int)m_aPopulationUnits.size();i++)
 	{
