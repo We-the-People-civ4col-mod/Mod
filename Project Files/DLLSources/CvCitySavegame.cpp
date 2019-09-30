@@ -276,11 +276,11 @@ int getNumSavedEnumValuesCity()
 }
 
 // assign everything to default values
-void CvCity::resetSavedData()
+void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
 {
-	m_iID = defaultID;
-	m_iX = defaultX;
-	m_iY = defaultY;
+	m_iID = iID,
+	m_iX = iX;
+	m_iY = iY;
 	m_iRallyX = defaultRallyX;
 	m_iRallyY = defaultRallyY;
 	m_iGameTurnFounded = defaultGameTurnFounded;
@@ -317,7 +317,7 @@ void CvCity::resetSavedData()
 	m_bWallOverride = defaultWallOverride;
 	m_bPopulationRankValid = defaultPopulationRankValid;
 
-	m_eOwner = defaultOwner;
+	m_eOwner = eOwner;
 	m_ePreviousOwner = defaultPreviousOwner;
 	m_eOriginalOwner = defaultOriginalOwner;
 	m_eCultureLevel = defaultCultureLevel;
@@ -367,8 +367,6 @@ void CvCity::resetSavedData()
 	m_szScriptData.clear();
 
 	m_aPopulationUnits.clear();
-	m_aEventsOccured.clear();
-	m_aBuildingYieldChange.clear();
 
 	m_aiCulture.reset();
 	m_abEverOwned.reset();
@@ -380,11 +378,15 @@ void CvCity::resetSavedData()
 
 	m_orderQueue.clear();
 
-
-	FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
-	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	if (!bConstructorCall)
 	{
-		m_paiWorkingPlot[iI] = -1;
+		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			m_paiWorkingPlot[iI] = -1;
+		}
+		m_aEventsOccured.clear();
+		m_aBuildingYieldChange.clear();
 	}
 
 }
@@ -396,7 +398,6 @@ void CvCity::read(CvSavegameReader reader)
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
 	reset();
-	resetSavedData();
 	// loop read all the variables
 	// As long as each variable has a CitySavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.

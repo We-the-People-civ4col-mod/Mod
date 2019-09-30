@@ -39,43 +39,20 @@ CvCity::CvCity() :
 	ba_tradeExports(JIT_ARRAY_YIELD),
 	ba_aiCustomHouseNeverSell(JIT_ARRAY_YIELD),
 	ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT),
-	m_aiLandPlotYield(0),
-	m_aiSeaPlotYield(0),
-	m_aiRiverPlotYield(0),
-	m_aiYieldRateModifier(0),
-	m_aiYieldStored(0),
-	m_aiYieldRushed(0),
-	m_aiYieldBuyPrice(0),
 	m_aiBaseYieldRank(-1),
 	m_abBaseYieldRankValid(JIT_ARRAY_YIELD),
 	m_aiYieldRank(-1),
 	m_abYieldRankValid(JIT_ARRAY_YIELD),
-	m_paiBuildingProduction(0),
-	m_paiBuildingProductionTime(0),
 	m_paiBuildingOriginalOwner(-1),
 	m_paiBuildingOriginalTime(MIN_INT),
-	m_paiUnitProduction(0),
-	m_paiUnitProductionTime(0),
-	m_aiSpecialistWeights(0),
-	m_paiUnitCombatFreeExperience(0),
-	m_paiFreePromotionCount(0),
 	m_pabHasRealBuilding(JIT_ARRAY_BUILDING),
-	m_pabHasFreeBuilding(JIT_ARRAY_BUILDING),
-	m_aiCulture(),
-	m_abEverOwned(),
-	m_abRevealed(),
-	m_abScoutVisited(),
-	m_aiDomainFreeExperience(0),
-	m_aiDomainProductionModifier(0)
+	m_pabHasFreeBuilding(JIT_ARRAY_BUILDING)
 {
 
 	m_paiWorkingPlot = NULL;
-
 	m_paTradeCities = NULL;
 
 	CvDLLEntity::createCityEntity(this);		// create and attach entity to city
-
-
 
 	m_ePreferredYieldAtCityPlot = NO_YIELD;
 
@@ -379,112 +356,24 @@ void CvCity::uninit()
 // Initializes data members that are serialized.
 void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
-
-	m_iID = iID;
-	m_iX = iX;
-	m_iY = iY;
-	m_iRallyX = INVALID_PLOT_COORD;
-	m_iRallyY = INVALID_PLOT_COORD;
-	m_iGameTurnFounded = 0;
-	m_iGameTurnAcquired = 0;
-	m_iHighestPopulation = 0;
-	m_iWorkingPopulation = 0;
-	m_iNumBuildings = 0;
-	m_iHealRate = 0;
-	m_iFoodKept = 0;
-	m_iMaxFoodKeptPercent = 0;
-	m_iOverflowProduction = 0;
-	m_iMilitaryProductionModifier = 0;
-	m_iBuildingDefense = 0;
-	m_iBuildingBombardDefense = 0;
-	m_iFreeExperience = 0;
-	m_iDefenseDamage = 0;
-	m_iLastDefenseDamage = 0;
-	m_iOccupationTimer = 0;
-	m_iCultureUpdateTimer = 0;
-	m_iCitySizeBoost = 0;
-	m_iHammers = 0;
-	m_iMissionaryRate = 0;
-
-	m_bStirredUp = false; // R&R, ray , Stirring Up Natives - START
-
-	m_iWorksWaterCount = 0;
-	m_iRebelSentiment = 0;
-	m_iCityHealth = 0; // R&R, ray, Health
-	m_iTeachUnitMultiplier = 100;
-	m_iEducationThresholdMultiplier = 100;
-	m_iTotalYieldStored = 0; //VET NewCapacity - 1/9
-
-	m_bNeverLost = true;
-	m_bBombarded = false;
-	m_bProductionAutomated = false;
-	m_bWallOverride = false;
+	
 	m_bInfoDirty = true;
 	m_bLayoutDirty = false;
 
-	m_eOwner = eOwner;
-	m_ePreviousOwner = NO_PLAYER;
-	m_eOriginalOwner = eOwner;
-	m_eCultureLevel = NO_CULTURELEVEL;
-	m_eTeachUnitClass = NO_UNITCLASS;
-	m_eMissionaryPlayer = NO_PLAYER;
-
-	m_aiLandPlotYield.reset(); // R&R, ray, Landplot Yields
-	m_aiSeaPlotYield.reset();
-	m_aiRiverPlotYield.reset();
-	m_aiYieldRateModifier.reset();
-	m_aiYieldStored.reset();
-	m_aiYieldRushed.reset();
-	m_aiYieldBuyPrice.reset();
-
-	m_abBaseYieldRankValid.reset();
-	m_abYieldRankValid.reset();
-	m_aiBaseYieldRank.reset();
-	m_aiYieldRank.reset();
-
-	m_aiCulture.reset();
-	m_abEverOwned.reset();
-	m_abRevealed.reset();
-	m_abScoutVisited.reset();
-	m_aiDomainFreeExperience.reset();
-	m_aiDomainProductionModifier.reset();
-	// R&R, ray, finishing Custom House Screen
-	ma_aiCustomHouseSellThreshold.reset();
-	ba_aiCustomHouseNeverSell.reset();
-	// R&R, ray, finishing Custom House Screen END
-
-
-	clear(m_szName);
-	m_szScriptData = "";
-
-	m_bPopulationRankValid = false;
-	m_iPopulationRank = -1;
-
 	m_iCacheMarketModifier = 0;
-
 
 	if (!bConstructorCall)
 	{
-
 		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
 		m_paiWorkingPlot = new int[NUM_CITY_PLOTS];
-		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			m_paiWorkingPlot[iI] = -1;
-		}
-
-		m_aEventsOccured.clear();
-		m_aBuildingYieldChange.clear();
 	}
+	resetSavedData(iID, eOwner, iX, iY, bConstructorCall);
 
 	//storage loss trading (aka customs house and related things)
 	initCacheStorageLossTradeValues();
-
 
 	if (!bConstructorCall)
 	{

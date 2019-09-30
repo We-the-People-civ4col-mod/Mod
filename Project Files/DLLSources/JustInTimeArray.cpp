@@ -295,7 +295,7 @@ int JustInTimeArray<T>::getPositiveCount() const
 template<class T>
 T JustInTimeArray<T>::getMax() const
 {
-	if (isAllocated())
+	if (!isAllocated())
 	{
 		return m_eDefault ;
 	}
