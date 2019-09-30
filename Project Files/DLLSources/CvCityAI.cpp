@@ -78,7 +78,6 @@ void CvCityAI::AI_reset()
 
 	AI_uninit();
 	resetSavedData();
-	m_bForceEmphasizeCulture = false;
 	
 	m_iWorkforceHack = 0;
 
@@ -99,14 +98,6 @@ void CvCityAI::AI_reset()
 	{
 		m_aiPlayerCloseness[iI] = 0;
 	}
-	m_iCachePlayerClosenessTurn = -1;
-	m_iCachePlayerClosenessDistance = -1;
-	
-	m_iNeededFloatingDefenders = -1;
-	m_iNeededFloatingDefendersCacheTurn = -1;
-
-	m_iWorkersNeeded = 0;
-	m_iWorkersHave = 0;
 
 	FAssertMsg(m_abEmphasize == NULL, "m_abEmphasize not NULL!!!");
 	FAssertMsg(GC.getNumEmphasizeInfos() > 0,  "GC.getNumEmphasizeInfos() is not greater than zero but an array is being allocated in CvCityAI::AI_reset");
@@ -6421,17 +6412,10 @@ void CvCityAI::read(FDataStreamBase* pStream)
 
 	m_routeToCity.read(pStream);
 	
-	pStream->Read(&m_bForceEmphasizeCulture);
 	pStream->Read(NUM_CITY_PLOTS, m_aiBestBuildValue);
 	pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
 	pStream->Read(GC.getNumEmphasizeInfos(), m_abEmphasize);
-	pStream->Read(&m_iCachePlayerClosenessTurn);
-	pStream->Read(&m_iCachePlayerClosenessDistance);
 	pStream->Read(MAX_PLAYERS, m_aiPlayerCloseness);
-	pStream->Read(&m_iNeededFloatingDefenders);
-	pStream->Read(&m_iNeededFloatingDefendersCacheTurn);
-	pStream->Read(&m_iWorkersNeeded);
-	pStream->Read(&m_iWorkersHave);
 }
 
 //
@@ -6448,15 +6432,8 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	
 	m_routeToCity.write(pStream);
 
-	pStream->Write(m_bForceEmphasizeCulture);
 	pStream->Write(NUM_CITY_PLOTS, m_aiBestBuildValue);
 	pStream->Write(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
 	pStream->Write(GC.getNumEmphasizeInfos(), m_abEmphasize);
-	pStream->Write(m_iCachePlayerClosenessTurn);
-	pStream->Write(m_iCachePlayerClosenessDistance);
 	pStream->Write(MAX_PLAYERS, m_aiPlayerCloseness);
-	pStream->Write(m_iNeededFloatingDefenders);
-	pStream->Write(m_iNeededFloatingDefendersCacheTurn);
-	pStream->Write(m_iWorkersNeeded);
-	pStream->Write(m_iWorkersHave);
 }

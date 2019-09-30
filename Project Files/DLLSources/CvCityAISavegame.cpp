@@ -14,6 +14,14 @@ const bool defaultPort = false;
 const bool defaultAssignWorkDirty = false;
 const bool defaultChooseProductionDirty = false;
 
+const bool defaultForceEmphasizeCulture = false;
+const int defaultCachePlayerClosenessTurn = -1;
+const int defaultCachePlayerClosenessDistance = -1;
+const int defaultNeededFloatingDefenders = -1;
+const int defaultNeededFloatingDefendersCacheTurn = -1;
+const int defaultWorkersNeeded = 0;
+const int defaultWorkersHave = 0;
+
 enum SavegameVariableTypes
 {
 	Save_END,
@@ -33,6 +41,14 @@ enum SavegameVariableTypes
 	CitySaveAi_TradeBalance,
 	CitySaveAi_YieldAdvantage,
 	CitySaveAi_EmphasizeYieldCount,
+
+	CitySaveAi_ForceEmphasizeCulture,
+	CitySaveAi_CachePlayerClosenessTurn,
+	CitySaveAi_CachePlayerClosenessDistance,
+	CitySaveAi_NeededFloatingDefenders,
+	CitySaveAi_NeededFloatingDefendersCacheTurn,
+	CitySaveAi_WorkersNeeded,
+	CitySaveAi_WorkersHave,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -56,6 +72,14 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 	case CitySaveAi_TradeBalance: return "CitySaveAi_TradeBalance";
 	case CitySaveAi_YieldAdvantage: return "CitySaveAi_YieldAdvantage";
 	case CitySaveAi_EmphasizeYieldCount: return "CitySaveAi_EmphasizeYieldCount";
+
+	case CitySaveAi_ForceEmphasizeCulture: return "CitySaveAi_ForceEmphasizeCulture";
+	case CitySaveAi_CachePlayerClosenessTurn: return "CitySaveAi_CachePlayerClosenessTurn";
+	case CitySaveAi_CachePlayerClosenessDistance: return "CitySaveAi_CachePlayerClosenessDistance";
+	case CitySaveAi_NeededFloatingDefenders: return "CitySaveAi_NeededFloatingDefenders";
+	case CitySaveAi_NeededFloatingDefendersCacheTurn: return "CitySaveAi_NeededFloatingDefendersCacheTurn";
+	case CitySaveAi_WorkersNeeded: return "CitySaveAi_WorkersNeeded";
+	case CitySaveAi_WorkersHave: return "CitySaveAi_WorkersHave";
 	}
 	return "";
 }
@@ -84,6 +108,14 @@ m_ja_iNeededYield.reset();
 m_ja_iTradeBalance.reset();
 m_ja_iYieldAdvantage.reset();
 m_ja_iEmphasizeYieldCount.reset();
+
+m_bForceEmphasizeCulture = defaultForceEmphasizeCulture;
+m_iCachePlayerClosenessTurn = defaultCachePlayerClosenessTurn;
+m_iCachePlayerClosenessDistance = defaultCachePlayerClosenessDistance;
+m_iNeededFloatingDefenders = defaultNeededFloatingDefenders;
+m_iNeededFloatingDefendersCacheTurn = defaultNeededFloatingDefendersCacheTurn;
+m_iWorkersNeeded = defaultWorkersNeeded;
+m_iWorkersHave = defaultWorkersHave;
 }
 
 void CvCityAI::read(CvSavegameReader reader)
@@ -128,6 +160,14 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_YieldAdvantage: reader.Read(m_ja_iYieldAdvantage); break;
 			case CitySaveAi_EmphasizeYieldCount: reader.Read(m_ja_iEmphasizeYieldCount); break;
 
+			case CitySaveAi_ForceEmphasizeCulture: reader.Read(m_bForceEmphasizeCulture); break;
+			case CitySaveAi_CachePlayerClosenessTurn: reader.Read(m_iCachePlayerClosenessTurn); break;
+			case CitySaveAi_CachePlayerClosenessDistance: reader.Read(m_iCachePlayerClosenessDistance); break;
+			case CitySaveAi_NeededFloatingDefenders: reader.Read(m_iNeededFloatingDefenders); break;
+			case CitySaveAi_NeededFloatingDefendersCacheTurn: reader.Read(m_iNeededFloatingDefendersCacheTurn); break;
+			case CitySaveAi_WorkersNeeded: reader.Read(m_iWorkersNeeded); break;
+			case CitySaveAi_WorkersHave: reader.Read(m_iWorkersHave); break;
+
 		}
 	}
 	
@@ -163,5 +203,13 @@ void CvCityAI::write(CvSavegameWriter writer)
 	writer.Write(CitySaveAi_TradeBalance, m_ja_iTradeBalance);
 	writer.Write(CitySaveAi_YieldAdvantage, m_ja_iYieldAdvantage);
 	writer.Write(CitySaveAi_EmphasizeYieldCount, m_ja_iEmphasizeYieldCount);
+
+	writer.Write(CitySaveAi_ForceEmphasizeCulture, m_bForceEmphasizeCulture, defaultForceEmphasizeCulture);
+	writer.Write(CitySaveAi_CachePlayerClosenessTurn, m_iCachePlayerClosenessTurn, defaultCachePlayerClosenessTurn);
+	writer.Write(CitySaveAi_CachePlayerClosenessDistance, m_iCachePlayerClosenessDistance, defaultCachePlayerClosenessDistance);
+	writer.Write(CitySaveAi_NeededFloatingDefenders, m_iNeededFloatingDefenders, defaultNeededFloatingDefenders);
+	writer.Write(CitySaveAi_NeededFloatingDefendersCacheTurn, m_iNeededFloatingDefendersCacheTurn, defaultNeededFloatingDefendersCacheTurn);
+	writer.Write(CitySaveAi_WorkersNeeded, m_iWorkersNeeded, defaultWorkersNeeded);
+	writer.Write(CitySaveAi_WorkersHave, m_iWorkersHave, defaultWorkersHave);
 	writer.Write(Save_END);
 }
