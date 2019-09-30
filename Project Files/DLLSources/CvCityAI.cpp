@@ -88,20 +88,8 @@ void CvCityAI::AI_reset()
 	int iI;
 
 	AI_uninit();
-	
-	m_iGiftTimer = 0;
-	m_iTradeTimer = 0; // R&R, ray, Natives Trading - START
-	m_eDesiredYield = NO_YIELD;
-	
-	m_iTargetSize = 0;
-	m_iFoundValue = 0;
-
-	m_iEmphasizeAvoidGrowthCount = 0;
+	resetSavedData();
 	m_bForceEmphasizeCulture = false;
-
-	m_bPort = false;
-	m_bAssignWorkDirty = false;
-	m_bChooseProductionDirty = false;
 	
 	m_iWorkforceHack = 0;
 
@@ -6457,26 +6445,11 @@ void CvCityAI::read(FDataStreamBase* pStream)
 
 	read(reader);
 	CvCity::read(pStream);
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iGiftTimer);
-	pStream->Read(&m_iTradeTimer); // R&R, ray, Natives Trading - START
-	pStream->Read((int*)&m_eDesiredYield);
-	pStream->Read(&m_iTargetSize);
-	pStream->Read(&m_iFoundValue);
 	
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldOutputWeight);
 	pStream->Read(NUM_YIELD_TYPES, m_aiNeededYield);
 	pStream->Read(NUM_YIELD_TYPES, m_aiTradeBalance);
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldAdvantage);
-
-	pStream->Read(&m_iEmphasizeAvoidGrowthCount);
-	
-	pStream->Read(&m_bPort);
-	pStream->Read(&m_bAssignWorkDirty);
-	pStream->Read(&m_bChooseProductionDirty);
 
 	m_routeToCity.read(pStream);
 	
@@ -6505,26 +6478,12 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	writerbase.WriteFile();
 
 	CvCity::write(pStream);
-
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iGiftTimer);
-	pStream->Write(m_iTradeTimer); // R&R, ray, Natives Trading - START
-	pStream->Write(m_eDesiredYield);
-	pStream->Write(m_iTargetSize);
-	pStream->Write(m_iFoundValue);
 	
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldOutputWeight);
 	pStream->Write(NUM_YIELD_TYPES, m_aiNeededYield);
 	pStream->Write(NUM_YIELD_TYPES, m_aiTradeBalance);
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldAdvantage);
 
-	pStream->Write(m_iEmphasizeAvoidGrowthCount);
-	
-	pStream->Write(m_bPort);
-	pStream->Write(m_bAssignWorkDirty);
-	pStream->Write(m_bChooseProductionDirty);
 
 	m_routeToCity.write(pStream);
 
