@@ -226,13 +226,13 @@ public:
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
 	void Write(SlotClaim              variable) { WriteEnum(variable); }
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
 	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
-	void Write(OrderTypes             variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }

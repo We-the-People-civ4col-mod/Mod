@@ -81,7 +81,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_WORLD_SIZE:         return NUM_WORLDSIZE_TYPES;
 	case JIT_ARRAY_YIELD:              return NUM_YIELD_TYPES;
 	case JIT_ARRAY_CARGO_YIELD:        return NUM_CARGO_YIELD_TYPES;
-	case JIT_ARRAY_DOMAIN_TYPES:        return NUM_DOMAIN_TYPES;
+	case JIT_ARRAY_DOMAIN:             return NUM_DOMAIN_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
@@ -138,7 +138,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_VICTORY:            return &GC.getVictoryInfo((VictoryTypes)iIndex);
 	case JIT_ARRAY_WORLD_SIZE:         return &GC.getWorldInfo((WorldSizeTypes)iIndex);
 	case JIT_ARRAY_YIELD:              return &GC.getYieldInfo((YieldTypes)iIndex);
-	case JIT_ARRAY_DOMAIN_TYPES:       return &GC.getDomainInfo((DomainTypes)iIndex);
+	case JIT_ARRAY_DOMAIN:             return &GC.getDomainInfo((DomainTypes)iIndex);
 	}
 	FAssertMsg(false, "missing info case");
 	return NULL;
@@ -224,7 +224,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_VICTORY:            return "Victory";
 	case JIT_ARRAY_WORLD_SIZE:         return "WorldSize";
 	case JIT_ARRAY_YIELD:              return "Yield";
-	case JIT_ARRAY_DOMAIN_TYPES:       return "DomainTypes";
+	case JIT_ARRAY_DOMAIN:             return "Domain";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";
@@ -291,7 +291,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_VICTORY:            return "VICTORY_";
 	case JIT_ARRAY_WORLD_SIZE:         return "WORLDSIZE_";
 	case JIT_ARRAY_YIELD:              return "YIELD_";
-	case JIT_ARRAY_DOMAIN_TYPES:       return "DOMAIN_";
+	case JIT_ARRAY_DOMAIN:             return "DOMAIN_";
 
 	}
 	FAssertMsg(false, "missing info case");

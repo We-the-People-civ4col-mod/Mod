@@ -730,8 +730,8 @@ protected:
 	BoolArray      ba_OrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
 
-	DomainTypesArray<int> m_aiDomainFreeExperience;
-	DomainTypesArray<int> m_aiDomainProductionModifier;
+	DomainArray<int> m_aiDomainFreeExperience;
+	DomainArray<int> m_aiDomainProductionModifier;
 	PlayerArray<int> m_aiCulture;
 	PlayerBoolArray m_abEverOwned;
 	TeamBoolArray m_abRevealed;

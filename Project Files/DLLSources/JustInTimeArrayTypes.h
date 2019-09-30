@@ -75,6 +75,13 @@ public:
 };
 
 template<class T>
+class DomainArray: public JustInTimeArray<T>
+{
+public:
+	DomainArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_DOMAIN, eDefault){};
+};
+
+template<class T>
 class EuropeArray: public JustInTimeArray<T>
 {
 public:
@@ -227,13 +234,5 @@ class YieldCargoArray: public JustInTimeArray<T>
 public:
 	YieldCargoArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CARGO_YIELD, eDefault){};
 };
-
-template<class T>
-class DomainTypesArray: public JustInTimeArray<T>
-{
-public:
-	DomainTypesArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_DOMAIN_TYPES, eDefault){};
-};
-
 
 #endif
