@@ -32,21 +32,21 @@
 // Public Functions...
 
 CvCity::CvCity() :
-	ba_tradeImportsMaintain(JIT_ARRAY_YIELD),
-	ba_tradeStopAutoImport(JIT_ARRAY_YIELD),
+	m_ba_tradeImportsMaintain(JIT_ARRAY_YIELD),
+	m_ba_tradeStopAutoImport(JIT_ARRAY_YIELD),
 	ba_tradeAutoExport(JIT_ARRAY_YIELD),
-	ba_tradeImports(JIT_ARRAY_YIELD),
-	ba_tradeExports(JIT_ARRAY_YIELD),
-	ba_aiCustomHouseNeverSell(JIT_ARRAY_YIELD),
-	ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT),
-	m_aiBaseYieldRank(-1),
-	m_abBaseYieldRankValid(JIT_ARRAY_YIELD),
-	m_aiYieldRank(-1),
-	m_abYieldRankValid(JIT_ARRAY_YIELD),
-	m_paiBuildingOriginalOwner(-1),
-	m_paiBuildingOriginalTime(MIN_INT),
-	m_pabHasRealBuilding(JIT_ARRAY_BUILDING),
-	m_pabHasFreeBuilding(JIT_ARRAY_BUILDING)
+	m_ba_tradeImports(JIT_ARRAY_YIELD),
+	m_ba_tradeExports(JIT_ARRAY_YIELD),
+	m_ba_CustomHouseNeverSell(JIT_ARRAY_YIELD),
+	m_ba_OrderedStudentsRepeat(JIT_ARRAY_UNIT),
+	m_ja_iBaseYieldRank(-1),
+	m_ba_BaseYieldRankValid(JIT_ARRAY_YIELD),
+	m_ja_iYieldRank(-1),
+	m_ba_YieldRankValid(JIT_ARRAY_YIELD),
+	m_ja_iBuildingOriginalOwner(-1),
+	m_ja_iBuildingOriginalTime(MIN_INT),
+	m_ba_HasRealBuilding(JIT_ARRAY_BUILDING),
+	m_ba_HasFreeBuilding(JIT_ARRAY_BUILDING)
 {
 
 	m_paiWorkingPlot = NULL;
@@ -142,39 +142,39 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 				// strategic raw
 				if (eYield == YIELD_ORE || eYield == YIELD_HEMP)
 				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					m_ja_iCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
 				}
 				// strategic produced
 				else if ( eYield == YIELD_TOOLS || eYield == YIELD_BLADES || eYield == YIELD_MUSKETS || eYield == YIELD_CANNONS || eYield == YIELD_SHEEP || eYield == YIELD_CATTLE || eYield == YIELD_HORSES || eYield == YIELD_ROPE || eYield == YIELD_SAILCLOTH || eYield == YIELD_TRADE_GOODS || eYield == YIELD_LUXURY_GOODS)
 				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					m_ja_iCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_STRATEGIC_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
 				}
 
 				// raw
 				else if ( eYield == YIELD_HIDES || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR || eYield == YIELD_BARLEY || eYield == YIELD_SUGAR || eYield == YIELD_GRAPES || eYield == YIELD_COCOA_FRUITS || eYield == YIELD_COFFEE_BERRIES || eYield == YIELD_RAW_SALT || eYield == YIELD_RED_PEPPER || eYield == YIELD_WOOL || eYield == YIELD_COTTON || eYield == YIELD_INDIGO || eYield == YIELD_TOBACCO || eYield == YIELD_WHALE_BLUBBER || eYield == YIELD_VALUABLE_WOOD)
 				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					m_ja_iCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_RAW_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
 				}
 
 				// produced
 				else if (eYield == YIELD_COCA_LEAVES || eYield == YIELD_SILVER || eYield == YIELD_GOLD || eYield == YIELD_GEMS || eYield == YIELD_COCOA || eYield == YIELD_COFFEE || eYield == YIELD_SALT ||  eYield == YIELD_SPICES || eYield == YIELD_WOOL_CLOTH || eYield == YIELD_CLOTH || eYield == YIELD_COLOURED_CLOTH || eYield == YIELD_LEATHER || eYield == YIELD_COATS || eYield == YIELD_PREMIUM_COATS || eYield == YIELD_BEER || eYield == YIELD_RUM || eYield == YIELD_WINE || eYield == YIELD_CIGARS || eYield == YIELD_WHALE_OIL || eYield == YIELD_FURNITURE)
 				{
-					ma_aiCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
+					m_ja_iCustomHouseSellThreshold.set(GC.getCUSTOMHOUSE_PRODUCED_SELL_THRESHOLD() * iGameSpeedModifier, eYield);
 				}
 
 				// default for safety
 				else
 				{
-					ma_aiCustomHouseSellThreshold.set(getYieldStored(eYield) * iGameSpeedModifier / 2, eYield);
+					m_ja_iCustomHouseSellThreshold.set(getYieldStored(eYield) * iGameSpeedModifier / 2, eYield);
 				}
 
 				if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
 				{
-					ba_aiCustomHouseNeverSell.set(true, eYield);
+					m_ba_CustomHouseNeverSell.set(true, eYield);
 				}
 				else
 				{
-					ba_aiCustomHouseNeverSell.set(false, eYield);
+					m_ba_CustomHouseNeverSell.set(false, eYield);
 				}
 			}
 		}
@@ -324,8 +324,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 void CvCity::uninit()
 {
 	// Teacher List - start - Nightinggale
-	ma_OrderedStudents.reset();
-	ba_OrderedStudentsRepeat.reset();
+	m_ja_iOrderedStudents.reset();
+	m_ba_OrderedStudentsRepeat.reset();
 	// Teacher List - end - Nightinggale
 
 	SAFE_DELETE_ARRAY(m_paiWorkingPlot);
@@ -342,13 +342,13 @@ void CvCity::uninit()
 	m_aPopulationUnits.clear();
 
 	// traderoute just-in-time - start - Nightinggale
-	ba_tradeImports.reset();
-	ba_tradeExports.reset();
+	m_ba_tradeImports.reset();
+	m_ba_tradeExports.reset();
 	ma_tradeThreshold.reset();
 	// traderoute just-in-time - end - Nightinggale
 	ma_tradeMaxThreshold.reset(); // R&R mod, vetiarvind, max yield import limit
 	// transport feeder - start - Nightinggale
-	ba_tradeImportsMaintain.reset();
+	m_ba_tradeImportsMaintain.reset();
 	// transport feeder - end - Nightinggale
 }
 
@@ -1310,7 +1310,7 @@ int CvCity::findPopulationRank() const
 
 int CvCity::findBaseYieldRateRank(YieldTypes eYield) const //note this function is not const
 {
-	if (!m_abBaseYieldRankValid.get(eYield))
+	if (!m_ba_BaseYieldRankValid.get(eYield))
 	{
 		int iRate = getYieldRate(eYield);
 
@@ -1327,17 +1327,17 @@ int CvCity::findBaseYieldRateRank(YieldTypes eYield) const //note this function 
 			}
 		}
 
-		(const_cast <CvCity*> (this))->m_abBaseYieldRankValid.set(true, eYield);
-		(const_cast <CvCity*> (this))->m_aiBaseYieldRank.set(iRank,eYield);
+		(const_cast <CvCity*> (this))->m_ba_BaseYieldRankValid.set(true, eYield);
+		(const_cast <CvCity*> (this))->m_ja_iBaseYieldRank.set(iRank,eYield);
 	}
 
-	return m_aiBaseYieldRank.get(eYield);
+	return m_ja_iBaseYieldRank.get(eYield);
 }
 
 
 int CvCity::findYieldRateRank(YieldTypes eYield) const  //note this function is not const
 {
-	if (!m_abYieldRankValid.get(eYield))
+	if (!m_ba_YieldRankValid.get(eYield))
 	{
 		int iRate = getYieldRate(eYield);
 
@@ -1354,11 +1354,11 @@ int CvCity::findYieldRateRank(YieldTypes eYield) const  //note this function is 
 			}
 		}
 
-		(const_cast <CvCity*> (this))->m_abYieldRankValid.set(true,eYield);
-		(const_cast <CvCity*> (this))->m_aiYieldRank.set(iRank,eYield);
+		(const_cast <CvCity*> (this))->m_ba_YieldRankValid.set(true,eYield);
+		(const_cast <CvCity*> (this))->m_ja_iYieldRank.set(iRank,eYield);
 	}
 
-	return m_aiYieldRank.get(eYield);
+	return m_ja_iYieldRank.get(eYield);
 }
 
 
@@ -3924,7 +3924,7 @@ int CvCity::getLandPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiLandPlotYield.get(eIndex);
+	return m_ja_iLandPlotYield.get(eIndex);
 }
 
 
@@ -3935,8 +3935,8 @@ void CvCity::changeLandPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiLandPlotYield.add(iChange,eIndex);
-		m_aiLandPlotYield.set(std::max(m_aiLandPlotYield.get(eIndex), 0),eIndex);
+		m_ja_iLandPlotYield.add(iChange,eIndex);
+		m_ja_iLandPlotYield.set(std::max(m_ja_iLandPlotYield.get(eIndex), 0),eIndex);
 		updateYield();
 	}
 }
@@ -3946,7 +3946,7 @@ int CvCity::getSeaPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiSeaPlotYield.get(eIndex);
+	return m_ja_iSeaPlotYield.get(eIndex);
 }
 
 
@@ -3957,8 +3957,8 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield.add(iChange,eIndex);
-		m_aiSeaPlotYield.set(std::max(m_aiSeaPlotYield.get(eIndex), 0), eIndex);
+		m_ja_iSeaPlotYield.add(iChange,eIndex);
+		m_ja_iSeaPlotYield.set(std::max(m_ja_iSeaPlotYield.get(eIndex), 0), eIndex);
 		updateYield();
 	}
 }
@@ -3968,7 +3968,7 @@ int CvCity::getRiverPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiRiverPlotYield.get(eIndex);
+	return m_ja_iRiverPlotYield.get(eIndex);
 }
 
 
@@ -3979,8 +3979,8 @@ void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiRiverPlotYield.add(iChange,eIndex);
-		m_aiRiverPlotYield.set(std::max(m_aiRiverPlotYield.get(eIndex), 0),eIndex);
+		m_ja_iRiverPlotYield.add(iChange,eIndex);
+		m_ja_iRiverPlotYield.set(std::max(m_ja_iRiverPlotYield.get(eIndex), 0),eIndex);
 		updateYield();
 	}
 }
@@ -4221,7 +4221,7 @@ int CvCity::getYieldRateModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldRateModifier.get(eIndex);
+	return m_ja_iYieldRateModifier.get(eIndex);
 }
 
 
@@ -4232,7 +4232,7 @@ void CvCity::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiYieldRateModifier.add(iChange,eIndex);
+		m_ja_iYieldRateModifier.add(iChange,eIndex);
 		FAssert(getYieldRateModifier(eIndex) >= 0);
 
 		GET_PLAYER(getOwnerINLINE()).invalidateYieldRankCache(eIndex);
@@ -4405,7 +4405,7 @@ int CvCity::getDomainFreeExperience(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	return m_aiDomainFreeExperience.get(eIndex);
+	return m_ja_iDomainFreeExperience.get(eIndex);
 }
 
 
@@ -4413,7 +4413,7 @@ void CvCity::changeDomainFreeExperience(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	m_aiDomainFreeExperience.set((m_aiDomainFreeExperience.get(eIndex) + iChange), eIndex);
+	m_ja_iDomainFreeExperience.set((m_ja_iDomainFreeExperience.get(eIndex) + iChange), eIndex);
 	FAssert(getDomainFreeExperience(eIndex) >= 0);
 }
 
@@ -4422,7 +4422,7 @@ int CvCity::getDomainProductionModifier(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	return m_aiDomainProductionModifier.get(eIndex);
+	return m_ja_iDomainProductionModifier.get(eIndex);
 }
 
 
@@ -4430,7 +4430,7 @@ void CvCity::changeDomainProductionModifier(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex expected to be < NUM_DOMAIN_TYPES");
-	m_aiDomainProductionModifier.set(m_aiDomainProductionModifier.get(eIndex) + iChange, eIndex);
+	m_ja_iDomainProductionModifier.set(m_ja_iDomainProductionModifier.get(eIndex) + iChange, eIndex);
 }
 
 
@@ -4565,7 +4565,7 @@ int CvCity::getYieldStored(YieldTypes eYield) const
 {
 	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
 	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
-	return m_aiYieldStored.get(eYield);
+	return m_ja_iYieldStored.get(eYield);
 }
 
 void CvCity::setYieldStored(YieldTypes eYield, int iValue)
@@ -4581,7 +4581,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 		if ((eYield != YIELD_FOOD) && (eYield != YIELD_LUMBER) && (eYield != YIELD_STONE) && GC.getYieldInfo(eYield).isCargo())
 			{changeTotalYieldStored(iChange);}
 //VET NewCapacity - end 3/9
-		m_aiYieldStored.set(iValue,eYield);
+		m_ja_iYieldStored.set(iValue,eYield);
 
 		if (!AI_isWorkforceHack())
 		{
@@ -4642,13 +4642,13 @@ void CvCity::changeYieldStored(YieldTypes eYield, int iChange)
 int CvCity::getYieldRushed(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	return m_aiYieldRushed.get(eYield);
+	return m_ja_iYieldRushed.get(eYield);
 }
 
 void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	m_aiYieldRushed.add(iChange,eYield);
+	m_ja_iYieldRushed.add(iChange,eYield);
 	FAssert(getYieldRushed(eYield) >= 0);
 }
 
@@ -5224,7 +5224,7 @@ int CvCity::getBuildingProduction(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingProduction.get(eIndex);
+	return m_ja_iBuildingProduction.get(eIndex);
 }
 
 
@@ -5235,7 +5235,7 @@ void CvCity::setBuildingProduction(BuildingTypes eIndex, int iNewValue)
 
 	if (getBuildingProduction(eIndex) != iNewValue)
 	{
-		m_paiBuildingProduction.set(iNewValue,eIndex);
+		m_ja_iBuildingProduction.set(iNewValue,eIndex);
 		FAssert(getBuildingProduction(eIndex) >= 0);
 
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -5262,7 +5262,7 @@ int CvCity::getBuildingProductionTime(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingProductionTime.get(eIndex);
+	return m_ja_iBuildingProductionTime.get(eIndex);
 }
 
 
@@ -5270,7 +5270,7 @@ void CvCity::setBuildingProductionTime(BuildingTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	m_paiBuildingProductionTime.set(iNewValue,eIndex);
+	m_ja_iBuildingProductionTime.set(iNewValue,eIndex);
 	FAssert(getBuildingProductionTime(eIndex) >= 0);
 }
 
@@ -5285,7 +5285,7 @@ int CvCity::getBuildingOriginalOwner(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingOriginalOwner.get(eIndex);
+	return m_ja_iBuildingOriginalOwner.get(eIndex);
 }
 
 
@@ -5293,7 +5293,7 @@ int CvCity::getBuildingOriginalTime(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_paiBuildingOriginalTime.get(eIndex);
+	return m_ja_iBuildingOriginalTime.get(eIndex);
 }
 
 
@@ -5301,7 +5301,7 @@ int CvCity::getUnitProduction(UnitTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	return m_paiUnitProduction.get(eIndex);
+	return m_ja_iUnitProduction.get(eIndex);
 }
 
 
@@ -5312,7 +5312,7 @@ void CvCity::setUnitProduction(UnitTypes eIndex, int iNewValue)
 
 	if (getUnitProduction(eIndex) != iNewValue)
 	{
-		m_paiUnitProduction.set(iNewValue,eIndex);
+		m_ja_iUnitProduction.set(iNewValue,eIndex);
 		FAssert(getUnitProduction(eIndex) >= 0);
 
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
@@ -5339,7 +5339,7 @@ int CvCity::getUnitProductionTime(UnitTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	return m_paiUnitProductionTime.get(eIndex);
+	return m_ja_iUnitProductionTime.get(eIndex);
 }
 
 
@@ -5347,7 +5347,7 @@ void CvCity::setUnitProductionTime(UnitTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex expected to be < GC.getNumUnitInfos()");
-	m_paiUnitProductionTime.set(iNewValue,eIndex);
+	m_ja_iUnitProductionTime.set(iNewValue,eIndex);
 	FAssert(getUnitProductionTime(eIndex) >= 0);
 }
 
@@ -5362,7 +5362,7 @@ int CvCity::getUnitCombatFreeExperience(UnitCombatTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex expected to be < GC.getNumUnitCombatInfos()");
-	return m_paiUnitCombatFreeExperience.get(eIndex);
+	return m_ja_iUnitCombatFreeExperience.get(eIndex);
 }
 
 
@@ -5370,7 +5370,7 @@ void CvCity::changeUnitCombatFreeExperience(UnitCombatTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex expected to be < GC.getNumUnitCombatInfos()");
-	m_paiUnitCombatFreeExperience.set((m_paiUnitCombatFreeExperience.get(eIndex) + iChange),eIndex);
+	m_ja_iUnitCombatFreeExperience.set((m_ja_iUnitCombatFreeExperience.get(eIndex) + iChange),eIndex);
 	FAssert(getUnitCombatFreeExperience(eIndex) >= 0);
 }
 
@@ -5379,7 +5379,7 @@ int CvCity::getFreePromotionCount(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex expected to be < GC.getNumPromotionInfos()");
-	return m_paiFreePromotionCount.get(eIndex);
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 
@@ -5393,7 +5393,7 @@ void CvCity::changeFreePromotionCount(PromotionTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex expected to be < GC.getNumPromotionInfos()");
-	m_paiFreePromotionCount.set((m_paiFreePromotionCount.get(eIndex) + iChange),eIndex);
+	m_ja_iFreePromotionCount.set((m_ja_iFreePromotionCount.get(eIndex) + iChange),eIndex);
 	FAssert(getFreePromotionCount(eIndex) >= 0);
 }
 
@@ -5932,7 +5932,7 @@ bool CvCity::isHasRealBuilding(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_pabHasRealBuilding.get(eIndex);
+	return m_ba_HasRealBuilding.get(eIndex);
 }
 
 
@@ -5969,19 +5969,19 @@ void CvCity::setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool 
 		}
 
 		//Update the cities array for "real" buildings.
-		m_pabHasRealBuilding.set(bNewValue,eIndex);
+		m_ba_HasRealBuilding.set(bNewValue,eIndex);
 		setYieldRateDirty();
 
 		//Set values for player who built this building and game year depending on if it exists or not.
 		if (isHasRealBuilding(eIndex))
 		{
-			m_paiBuildingOriginalOwner.set(eOriginalOwner,eIndex);
-			m_paiBuildingOriginalTime.set(iOriginalTime,eIndex);
+			m_ja_iBuildingOriginalOwner.set(eOriginalOwner,eIndex);
+			m_ja_iBuildingOriginalTime.set(iOriginalTime,eIndex);
 		}
 		else
 		{
-			m_paiBuildingOriginalOwner.set(NO_PLAYER,eIndex);
-			m_paiBuildingOriginalTime.set(MIN_INT,eIndex);
+			m_ja_iBuildingOriginalOwner.set(NO_PLAYER,eIndex);
+			m_ja_iBuildingOriginalTime.set(MIN_INT,eIndex);
 		}
 
 		//Iterate over all the buildings in the game ...
@@ -6035,7 +6035,7 @@ bool CvCity::isHasFreeBuilding(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex expected to be < GC.getNumBuildingInfos()");
-	return m_pabHasFreeBuilding.get(eIndex);
+	return m_ba_HasFreeBuilding.get(eIndex);
 }
 
 
@@ -6064,7 +6064,7 @@ void CvCity::setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue)
 		}
 
 		//Update the cities array for "free" buildings.
-		m_pabHasFreeBuilding.set(bNewValue,eIndex);
+		m_ba_HasFreeBuilding.set(bNewValue,eIndex);
 		setYieldRateDirty();
 
 		//Iterate over all the buildings in the game ...
@@ -7169,7 +7169,7 @@ void CvCity::doSpecialists()
 			UnitTypes eUnit =  m_aPopulationUnits[i]->getUnitType();
 			if (setExisting.find(eUnit) == setExisting.end())
 			{
-				m_aiSpecialistWeights.add(GC.getUnitInfo(eUnit).getTeacherWeight(),eUnit);
+				m_ja_iSpecialistWeights.add(GC.getUnitInfo(eUnit).getTeacherWeight(),eUnit);
 				setExisting.insert(eUnit);
 			}
 		}
@@ -8095,14 +8095,14 @@ void CvCity::invalidateYieldRankCache(YieldTypes eYield)
 	{
 		for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
 		{
-			m_abBaseYieldRankValid.set(false,iI);
-			m_abYieldRankValid.set(false,iI);
+			m_ba_BaseYieldRankValid.set(false,iI);
+			m_ba_YieldRankValid.set(false,iI);
 		}
 	}
 	else
 	{
-		m_abBaseYieldRankValid.set(false,eYield);
-		m_abYieldRankValid.set(false,eYield);
+		m_ba_BaseYieldRankValid.set(false,eYield);
+		m_ba_YieldRankValid.set(false,eYield);
 	}
 }
 
@@ -8630,8 +8630,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 {
 	if (bClearAll)
 	{
-		ma_OrderedStudents.reset();
-		ba_OrderedStudentsRepeat.reset();
+		m_ja_iOrderedStudents.reset();
+		m_ba_OrderedStudentsRepeat.reset();
 	} else {
 		if (!(eUnit >= 0 && eUnit < GC.getNumUnitInfos() && iCount >= 0))
 		{
@@ -8641,8 +8641,8 @@ void CvCity::setOrderedStudents(UnitTypes eUnit, int iCount, bool bRepeat, bool 
 			return;
 		}
 	
-		ma_OrderedStudents.set(iCount, eUnit);
-		ba_OrderedStudentsRepeat.set(bRepeat, eUnit);
+		m_ja_iOrderedStudents.set(iCount, eUnit);
+		m_ba_OrderedStudentsRepeat.set(bRepeat, eUnit);
 		if (bUpdateRepeat && iCount == 0)
 		{
 			checkOrderedStudentsForRepeats(eUnit);
@@ -8659,13 +8659,13 @@ void CvCity::checkOrderedStudentsForRepeats(UnitTypes eUnit)
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
 
-	if (ba_OrderedStudentsRepeat.isAllocated() && ma_OrderedStudents.isEmpty())
+	if (m_ba_OrderedStudentsRepeat.isAllocated() && m_ja_iOrderedStudents.isEmpty())
 	{
-		for (int iUnit = 0; iUnit < ba_OrderedStudentsRepeat.length(); iUnit++)
+		for (int iUnit = 0; iUnit < m_ba_OrderedStudentsRepeat.length(); iUnit++)
 		{
-			if (ba_OrderedStudentsRepeat.get(iUnit))
+			if (m_ba_OrderedStudentsRepeat.get(iUnit))
 			{
-				ma_OrderedStudents.set(1, iUnit);
+				m_ja_iOrderedStudents.set(1, iUnit);
 			}
 		}
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
@@ -8679,14 +8679,14 @@ int CvCity::getOrderedStudents(UnitTypes eUnit)
 {
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return ma_OrderedStudents.get(eUnit);
+	return m_ja_iOrderedStudents.get(eUnit);
 }
 
 bool CvCity::getOrderedStudentsRepeat(UnitTypes eUnit)
 {
 	FAssert(eUnit >= 0);
 	FAssert(eUnit < GC.getNumUnitInfos());
-	return ba_OrderedStudentsRepeat.get(eUnit);
+	return m_ba_OrderedStudentsRepeat.get(eUnit);
 }
 
 // Teacher List - end - Nightinggale
@@ -9472,7 +9472,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 	// reduce accumulated weights, but round up
 	for (int i = 0; i < GC.getNumUnitInfos(); ++i)
 	{
-		m_aiSpecialistWeights[i] = (m_aiSpecialistWeights[i] + 1) / 2;
+		m_ja_iSpecialistWeights[i] = (m_ja_iSpecialistWeights[i] + 1) / 2;
 	}
 	*/
 	// TAC - EDUCATION COST SYSTEM - koma13, KingMB, Netbandit - 23.11.09 - END
@@ -9533,7 +9533,7 @@ void CvCity::NBMOD_SetCityTeachLevelCache() // NBMOD EDU cache - Nightinggale
 
 int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 {
-	if (m_aiSpecialistWeights.get(eUnit) <= 0)
+	if (m_ja_iSpecialistWeights.get(eUnit) <= 0)
 	{
 		return -1;
 	}
@@ -9546,7 +9546,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 	}
 	/** NBMOD EDU **/
 	
-	int iBestWeight = m_aiSpecialistWeights.getMax();
+	int iBestWeight = m_ja_iSpecialistWeights.getMax();
 	if (iBestWeight <= 0)
 	{
 		return -1;
@@ -9565,7 +9565,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 		iPrice /= 100;
 	}
 
-	iPrice *= iBestWeight - m_aiSpecialistWeights[eUnit];
+	iPrice *= iBestWeight - m_ja_iSpecialistWeights[eUnit];
 	iPrice /= iBestWeight;
 	*/
 
@@ -9582,7 +9582,7 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 			iPrice /= 100;
 		}
 	
-		iPrice *= iBestWeight - m_aiSpecialistWeights.get(eUnit);
+		iPrice *= iBestWeight - m_ja_iSpecialistWeights.get(eUnit);
 		iPrice /= iBestWeight;
 	} 
 	else
@@ -9644,19 +9644,19 @@ int CvCity::getSpecialistTuition(UnitTypes eUnit) const
 bool CvCity::isExport(YieldTypes eYield) const
 {
 	// traderoute just-in-time - start - Nightinggale
-	return ba_tradeExports.get(eYield);
+	return m_ba_tradeExports.get(eYield);
 	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (ba_tradeExports.get(eYield))
+	if (m_ba_tradeExports.get(eYield))
 	{
 		return;
 	}
 
-	ba_tradeExports.set(true, eYield);
+	m_ba_tradeExports.set(true, eYield);
 	// traderoute just-in-time - end - Nightinggale
 	if (bUpdateRoutes)
 	{
@@ -9706,12 +9706,12 @@ void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 void CvCity::removeExport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (!ba_tradeExports.get(eYield))
+	if (!m_ba_tradeExports.get(eYield))
 	{
 		return;
 	}
 
-	ba_tradeExports.set(false, eYield);
+	m_ba_tradeExports.set(false, eYield);
 	// traderoute just-in-time - end - Nightinggale
 	if (bUpdateRoutes)
 	{
@@ -9789,19 +9789,19 @@ void CvCity::updateExports()
 bool CvCity::isImport(YieldTypes eYield) const
 {
 	// traderoute just-in-time - start - Nightinggale
-	return ba_tradeImports.get(eYield);
+	return m_ba_tradeImports.get(eYield);
 	// traderoute just-in-time - end - Nightinggale
 }
 
 void CvCity::addImport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (ba_tradeImports.get(eYield))
+	if (m_ba_tradeImports.get(eYield))
 	{
 		return;
 	}
 
-	ba_tradeImports.set(true, eYield);
+	m_ba_tradeImports.set(true, eYield);
 	// traderoute just-in-time - end - Nightinggale
 	if (bUpdateRoutes)
 	{
@@ -9840,12 +9840,12 @@ void CvCity::addImport(YieldTypes eYield, bool bUpdateRoutes)
 void CvCity::removeImport(YieldTypes eYield, bool bUpdateRoutes)
 {
 	// traderoute just-in-time - start - Nightinggale
-	if (!ba_tradeImports.get(eYield) || getImportsMaintain(eYield))
+	if (!m_ba_tradeImports.get(eYield) || getImportsMaintain(eYield))
 	{
 		return;
 	}
 
-	ba_tradeImports.set(false, eYield);
+	m_ba_tradeImports.set(false, eYield);
 	// traderoute just-in-time - end - Nightinggale
 	if (bUpdateRoutes)
 	{
@@ -9955,7 +9955,7 @@ void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
 		{
 			// threshold is increased.
 			// increase cache without checking normal cache check as we know at this point that a full check will result in the same as using iMaintainLevel
-			ma_tradeAutoThreshold.set(iMaintainLevel, eYield);
+			m_ja_iTradeAutoThreshold.set(iMaintainLevel, eYield);
 			checkImportsMaintain(eYield);
 		} else if (iOld == getAutoMaintainThreshold(eYield))
 		{
@@ -10004,12 +10004,12 @@ int CvCity::getImportsLimit(YieldTypes eYield) const
 
 void CvCity::setImportsMaintain(YieldTypes eYield, bool bSetting)
 {
-	ba_tradeImportsMaintain.set(bSetting, eYield);
+	m_ba_tradeImportsMaintain.set(bSetting, eYield);
 
 	bool bImportStopped = isAutoImportStopped(eYield);
 	if (bImportStopped)
 	{
-		ba_tradeStopAutoImport.set(false, eYield);
+		m_ba_tradeStopAutoImport.set(false, eYield);
 	}
 	checkImportsMaintain(eYield, bImportStopped);
 
@@ -10027,7 +10027,7 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	if (!ba_tradeImportsMaintain.get(eYield))
+	if (!m_ba_tradeImportsMaintain.get(eYield))
 	{
 		FAssert(!isAutoImportStopped(eYield));
 		return;
@@ -10041,9 +10041,9 @@ void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
 
 	if (!isAutoImportStopped(eYield) && iStoredLevel >= iMaintainLevel)
 	{
-		ba_tradeStopAutoImport.set(true, eYield);
+		m_ba_tradeStopAutoImport.set(true, eYield);
 	} else if (isAutoImportStopped(eYield) && (iNeededLevel > iStoredLevel || (iStoredLevel <= (iMaintainLevel*3)/4))) {
-		ba_tradeStopAutoImport.set(false, eYield);
+		m_ba_tradeStopAutoImport.set(false, eYield);
 	} else if (!bUpdateScreen) {
 		// nothing changed. Do not continue to screen update code.
 		return;
@@ -10060,14 +10060,14 @@ void CvCity::setAutoThresholdCache(YieldTypes eYield)
 {
 	int iProductionNeeded = getProductionNeededUncached(eYield);
 
-	ma_productionNeeded.set(iProductionNeeded, eYield);
+	m_ja_iProductionNeeded.set(iProductionNeeded, eYield);
 
 	if (iProductionNeeded == MAX_INT)
 	{
 		// the city isn't producing anything. Set threshold to 0 instead of infinity.
-		ma_tradeAutoThreshold.set(0, eYield);
+		m_ja_iTradeAutoThreshold.set(0, eYield);
 	} else {
-		ma_tradeAutoThreshold.set(iProductionNeeded, eYield);
+		m_ja_iTradeAutoThreshold.set(iProductionNeeded, eYield);
 	}
 
 #if 0
@@ -10081,11 +10081,11 @@ void CvCity::setAutoThresholdCache(YieldTypes eYield)
 		switch (pOrderNode->m_data.eOrderType)
 		{
 		case ORDER_TRAIN:
-			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((UnitTypes)pOrderNode->m_data.iData1, eYield), eYield);
+			m_ja_iTradeAutoThreshold.keepMax(getYieldProductionNeeded((UnitTypes)pOrderNode->m_data.iData1, eYield), eYield);
 			break;
 
 		case ORDER_CONSTRUCT:
-			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((BuildingTypes)pOrderNode->m_data.iData1, eYield), eYield);
+			m_ja_iTradeAutoThreshold.keepMax(getYieldProductionNeeded((BuildingTypes)pOrderNode->m_data.iData1, eYield), eYield);
 			break;
 		}
 	}
@@ -10100,17 +10100,17 @@ void CvCity::setAutoThresholdCache(YieldTypes eYield)
 		switch (aOrders[i].first)
 		{
 		case ORDER_TRAIN:
-			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((UnitTypes)aOrders[i].second, eYield), eYield);
+			m_ja_iTradeAutoThreshold.keepMax(getYieldProductionNeeded((UnitTypes)aOrders[i].second, eYield), eYield);
 			break;
 
 		case ORDER_CONSTRUCT:
-			ma_tradeAutoThreshold.keepMax(getYieldProductionNeeded((BuildingTypes)aOrders[i].second, eYield), eYield);
+			m_ja_iTradeAutoThreshold.keepMax(getYieldProductionNeeded((BuildingTypes)aOrders[i].second, eYield), eYield);
 			break;
 		}
 	}
 
 	// increase threshold to manually set threshold, if needed
-	ma_tradeAutoThreshold.keepMax(ma_tradeThreshold.get(eYield), eYield);
+	m_ja_iTradeAutoThreshold.keepMax(ma_tradeThreshold.get(eYield), eYield);
 
 	checkImportsMaintain(eYield);
 }
@@ -10892,7 +10892,7 @@ int CvCity::getYieldBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldBuyPrice.get(eYield);
+	return m_ja_iYieldBuyPrice.get(eYield);
 }
 
 // R&R, ray, adjustment Domestic Markets
@@ -10905,7 +10905,7 @@ void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
 	iPrice = std::max(iPrice, 1);
 	if (iPrice != getYieldBuyPrice(eYield))
 	{
-		m_aiYieldBuyPrice.set(iPrice,eYield);
+		m_ja_iYieldBuyPrice.set(iPrice,eYield);
 	}
 }
 
@@ -11029,7 +11029,7 @@ void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSell
 
 	if (iCustomHouseSellThreshold != getCustomHouseSellThreshold(eYield))
 	{
-		ma_aiCustomHouseSellThreshold.set(iCustomHouseSellThreshold, eYield);
+		m_ja_iCustomHouseSellThreshold.set(iCustomHouseSellThreshold, eYield);
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
@@ -11039,14 +11039,14 @@ void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSell
 
 int CvCity::getCustomHouseSellThreshold(YieldTypes eYield) const
 {
-	return ma_aiCustomHouseSellThreshold.get(eYield);
+	return m_ja_iCustomHouseSellThreshold.get(eYield);
 }
 
 void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
 {
 	if (isCustomHouseNeverSell(eYield) != bNeverSell)
 	{
-		ba_aiCustomHouseNeverSell.set(bNeverSell, eYield);
+		m_ba_CustomHouseNeverSell.set(bNeverSell, eYield);
 
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -11057,7 +11057,7 @@ void CvCity::setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell)
 
 bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 {
-	return ba_aiCustomHouseNeverSell.get(eYield);
+	return m_ba_CustomHouseNeverSell.get(eYield);
 }
 // R&R, ray, finishing Custom House Screen END
 

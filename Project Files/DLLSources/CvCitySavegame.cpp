@@ -323,45 +323,45 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_eCultureLevel = defaultCultureLevel;
 	m_eTeachUnitClass = defaultTeachUnitClass;
 
-	ma_aiCustomHouseSellThreshold.reset();
-	ba_aiCustomHouseNeverSell.reset();
-	ma_OrderedStudents.reset();
-	ba_OrderedStudentsRepeat.reset();
-	ba_tradeImports.reset();
-	ba_tradeExports.reset();
+	m_ja_iCustomHouseSellThreshold.reset();
+	m_ba_CustomHouseNeverSell.reset();
+	m_ja_iOrderedStudents.reset();
+	m_ba_OrderedStudentsRepeat.reset();
+	m_ba_tradeImports.reset();
+	m_ba_tradeExports.reset();
 	ma_tradeThreshold.reset();
- 	ba_tradeImportsMaintain.reset();
-	ba_tradeStopAutoImport.reset();
+ 	m_ba_tradeImportsMaintain.reset();
+	m_ba_tradeStopAutoImport.reset();
 	ma_tradeMaxThreshold.reset();
 
 	m_eMissionaryPlayer = defaultMissionaryPlayer;
 	m_ePreferredYieldAtCityPlot = defaultPreferredYieldAtCityPlot;
 
-	m_aiLandPlotYield.reset();
-	m_aiSeaPlotYield.reset();
-	m_aiRiverPlotYield.reset();
-	m_aiYieldRateModifier.reset();
-	m_aiYieldStored.reset();
+	m_ja_iLandPlotYield.reset();
+	m_ja_iSeaPlotYield.reset();
+	m_ja_iRiverPlotYield.reset();
+	m_ja_iYieldRateModifier.reset();
+	m_ja_iYieldStored.reset();
 	m_iTotalYieldStored = 0; //not stored
-	m_aiYieldRushed.reset();
-	m_aiYieldBuyPrice.reset();
+	m_ja_iYieldRushed.reset();
+	m_ja_iYieldBuyPrice.reset();
 
-	m_aiBaseYieldRank.reset();
-	m_abBaseYieldRankValid.reset();
-	m_aiYieldRank.reset();
-	m_abYieldRankValid.reset();
+	m_ja_iBaseYieldRank.reset();
+	m_ba_BaseYieldRankValid.reset();
+	m_ja_iYieldRank.reset();
+	m_ba_YieldRankValid.reset();
 
-	m_paiBuildingProduction.reset();
-	m_paiBuildingProductionTime.reset();
-	m_paiBuildingOriginalOwner.reset();
-	m_paiBuildingOriginalTime.reset();
-	m_paiUnitProduction.reset();
-	m_paiUnitProductionTime.reset();
-	m_aiSpecialistWeights.reset();
-	m_paiUnitCombatFreeExperience.reset();
-	m_paiFreePromotionCount.reset();
-	m_pabHasRealBuilding.reset();
-	m_pabHasFreeBuilding.reset();
+	m_ja_iBuildingProduction.reset();
+	m_ja_iBuildingProductionTime.reset();
+	m_ja_iBuildingOriginalOwner.reset();
+	m_ja_iBuildingOriginalTime.reset();
+	m_ja_iUnitProduction.reset();
+	m_ja_iUnitProductionTime.reset();
+	m_ja_iSpecialistWeights.reset();
+	m_ja_iUnitCombatFreeExperience.reset();
+	m_ja_iFreePromotionCount.reset();
+	m_ba_HasRealBuilding.reset();
+	m_ba_HasFreeBuilding.reset();
 
 	m_szName.clear();
 	m_szScriptData.clear();
@@ -373,8 +373,8 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_abRevealed.reset();
 	m_abScoutVisited.reset();
 
-	m_aiDomainFreeExperience.reset();
-	m_aiDomainProductionModifier.reset();
+	m_ja_iDomainFreeExperience.reset();
+	m_ja_iDomainProductionModifier.reset();
 
 	m_orderQueue.clear();
 
@@ -458,49 +458,49 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_TeachUnitClass: reader.Read(m_eTeachUnitClass); break;
 
 
-		case CitySave_CustomHouseSellThreshold: reader.Read(ma_aiCustomHouseSellThreshold); break;
-		case CitySave_CustomHouseNeverSell: reader.Read(ba_aiCustomHouseNeverSell); break;
-		case CitySave_OrderedStudents: reader.Read(ma_OrderedStudents); break;
-		case CitySave_OrderedStudentsRepeat: reader.Read(ba_OrderedStudentsRepeat); break;
-		case CitySave_tradeImports: reader.Read(ba_tradeImports); break;
-		case CitySave_tradeExports: reader.Read(ba_tradeExports); break;
+		case CitySave_CustomHouseSellThreshold: reader.Read(m_ja_iCustomHouseSellThreshold); break;
+		case CitySave_CustomHouseNeverSell: reader.Read(m_ba_CustomHouseNeverSell); break;
+		case CitySave_OrderedStudents: reader.Read(m_ja_iOrderedStudents); break;
+		case CitySave_OrderedStudentsRepeat: reader.Read(m_ba_OrderedStudentsRepeat); break;
+		case CitySave_tradeImports: reader.Read(m_ba_tradeImports); break;
+		case CitySave_tradeExports: reader.Read(m_ba_tradeExports); break;
 		case CitySave_tradeThreshold: reader.Read(ma_tradeThreshold); break;
-		case CitySave_tradeImportsMaintain: reader.Read(ba_tradeImportsMaintain); break;
-		case CitySave_tradeStopAutoImport: reader.Read(ba_tradeStopAutoImport); break;
+		case CitySave_tradeImportsMaintain: reader.Read(m_ba_tradeImportsMaintain); break;
+		case CitySave_tradeStopAutoImport: reader.Read(m_ba_tradeStopAutoImport); break;
 		case CitySave_tradeMaxThreshold: reader.Read(ma_tradeMaxThreshold); break;
 
 		case CitySave_MissionaryPlayer: reader.Read(m_eMissionaryPlayer); break;
 		case CitySave_PreferredYieldAtCityPlot: reader.Read(m_ePreferredYieldAtCityPlot); break;
 
-		case CitySave_LandPlotYield: reader.Read(m_aiLandPlotYield); break;
-		case CitySave_SeaPlotYield: reader.Read(m_aiSeaPlotYield); break;
-		case CitySave_RiverPlotYield: reader.Read(m_aiRiverPlotYield); break;
-		case CitySave_YieldRateModifier: reader.Read(m_aiYieldRateModifier); break;
-		case CitySave_YieldStored: reader.Read(m_aiYieldStored);
+		case CitySave_LandPlotYield: reader.Read(m_ja_iLandPlotYield); break;
+		case CitySave_SeaPlotYield: reader.Read(m_ja_iSeaPlotYield); break;
+		case CitySave_RiverPlotYield: reader.Read(m_ja_iRiverPlotYield); break;
+		case CitySave_YieldRateModifier: reader.Read(m_ja_iYieldRateModifier); break;
+		case CitySave_YieldStored: reader.Read(m_ja_iYieldStored);
 			for(int i=3;i<NUM_YIELD_TYPES;i++)//without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
 			{
 				if (GC.getYieldInfo((YieldTypes)i).isCargo())
-					{m_iTotalYieldStored += m_aiYieldStored.get(i);}
+					{m_iTotalYieldStored += m_ja_iYieldStored.get(i);}
 			} break;
-		case CitySave_YieldRushed: reader.Read(m_aiYieldRushed); break;
-		case CitySave_YieldBuyPrice: reader.Read(m_aiYieldBuyPrice); break;
+		case CitySave_YieldRushed: reader.Read(m_ja_iYieldRushed); break;
+		case CitySave_YieldBuyPrice: reader.Read(m_ja_iYieldBuyPrice); break;
 
-		case CitySave_BaseYieldRank: reader.Read(m_aiBaseYieldRank); break;
-		case CitySave_BaseYieldRankValid: reader.Read(m_abBaseYieldRankValid); break;
-		case CitySave_YieldRank: reader.Read(m_aiYieldRank); break;
-		case CitySave_YieldRankValid: reader.Read(m_abYieldRankValid); break;
+		case CitySave_BaseYieldRank: reader.Read(m_ja_iBaseYieldRank); break;
+		case CitySave_BaseYieldRankValid: reader.Read(m_ba_BaseYieldRankValid); break;
+		case CitySave_YieldRank: reader.Read(m_ja_iYieldRank); break;
+		case CitySave_YieldRankValid: reader.Read(m_ba_YieldRankValid); break;
 
-		case CitySave_BuildingProduction: reader.Read(m_paiBuildingProduction); break;
-		case CitySave_BuildingProductionTime: reader.Read(m_paiBuildingProductionTime); break;
-		case CitySave_BuildingOriginalOwner: reader.Read(m_paiBuildingOriginalOwner); break;
-		case CitySave_BuildingOriginalTime: reader.Read(m_paiBuildingOriginalTime); break;
-		case CitySave_UnitProduction: reader.Read(m_paiUnitProduction); break;
-		case CitySave_UnitProductionTime: reader.Read(m_paiUnitProductionTime); break;
-		case CitySave_SpecialistWeights: reader.Read(m_aiSpecialistWeights); break;
-		case CitySave_UnitCombatFreeExperience: reader.Read(m_paiUnitCombatFreeExperience); break;
-		case CitySave_FreePromotionCount: reader.Read(m_paiFreePromotionCount); break;
-		case CitySave_HasRealBuilding: reader.Read(m_pabHasRealBuilding); break;
-		case CitySave_HasFreeBuilding: reader.Read(m_pabHasFreeBuilding); break;
+		case CitySave_BuildingProduction: reader.Read(m_ja_iBuildingProduction); break;
+		case CitySave_BuildingProductionTime: reader.Read(m_ja_iBuildingProductionTime); break;
+		case CitySave_BuildingOriginalOwner: reader.Read(m_ja_iBuildingOriginalOwner); break;
+		case CitySave_BuildingOriginalTime: reader.Read(m_ja_iBuildingOriginalTime); break;
+		case CitySave_UnitProduction: reader.Read(m_ja_iUnitProduction); break;
+		case CitySave_UnitProductionTime: reader.Read(m_ja_iUnitProductionTime); break;
+		case CitySave_SpecialistWeights: reader.Read(m_ja_iSpecialistWeights); break;
+		case CitySave_UnitCombatFreeExperience: reader.Read(m_ja_iUnitCombatFreeExperience); break;
+		case CitySave_FreePromotionCount: reader.Read(m_ja_iFreePromotionCount); break;
+		case CitySave_HasRealBuilding: reader.Read(m_ba_HasRealBuilding); break;
+		case CitySave_HasFreeBuilding: reader.Read(m_ba_HasFreeBuilding); break;
 
 		case CitySave_Name: reader.Read(m_szName); break;
 	 	case CitySave_ScriptData: reader.Read(m_szScriptData); break;
@@ -549,8 +549,8 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_Revealed: reader.Read(m_abRevealed); break;
 		case CitySave_ScoutVisited: reader.Read(m_abScoutVisited); break;
 		
-		case CitySave_DomainFreeExperience: reader.Read(m_aiDomainFreeExperience); break;
-		case CitySave_DomainProductionModifier: reader.Read(m_aiDomainProductionModifier); break;
+		case CitySave_DomainFreeExperience: reader.Read(m_ja_iDomainFreeExperience); break;
+		case CitySave_DomainProductionModifier: reader.Read(m_ja_iDomainProductionModifier); break;
 
 		case CitySave_orderQueue: reader.Read(m_orderQueue); break;
 
@@ -621,45 +621,45 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_CultureLevel, m_eCultureLevel, defaultCultureLevel);
 	writer.Write(CitySave_TeachUnitClass, m_eTeachUnitClass, defaultTeachUnitClass);
 
-	writer.Write(CitySave_CustomHouseSellThreshold,ma_aiCustomHouseSellThreshold);
-	writer.Write(CitySave_CustomHouseNeverSell,ba_aiCustomHouseNeverSell);
-	writer.Write(CitySave_OrderedStudents,ma_OrderedStudents);
-	writer.Write(CitySave_OrderedStudentsRepeat,ba_OrderedStudentsRepeat);
-	writer.Write(CitySave_tradeImports, ba_tradeImports);
-	writer.Write(CitySave_tradeExports, ba_tradeExports);
+	writer.Write(CitySave_CustomHouseSellThreshold,m_ja_iCustomHouseSellThreshold);
+	writer.Write(CitySave_CustomHouseNeverSell,m_ba_CustomHouseNeverSell);
+	writer.Write(CitySave_OrderedStudents,m_ja_iOrderedStudents);
+	writer.Write(CitySave_OrderedStudentsRepeat,m_ba_OrderedStudentsRepeat);
+	writer.Write(CitySave_tradeImports, m_ba_tradeImports);
+	writer.Write(CitySave_tradeExports, m_ba_tradeExports);
 	writer.Write(CitySave_tradeThreshold, ma_tradeThreshold);
- 	writer.Write(CitySave_tradeImportsMaintain, ba_tradeImportsMaintain);
-	writer.Write(CitySave_tradeStopAutoImport, ba_tradeStopAutoImport);
+ 	writer.Write(CitySave_tradeImportsMaintain, m_ba_tradeImportsMaintain);
+	writer.Write(CitySave_tradeStopAutoImport, m_ba_tradeStopAutoImport);
 	writer.Write(CitySave_tradeMaxThreshold, ma_tradeMaxThreshold);
 
 	writer.Write(CitySave_MissionaryPlayer, m_eMissionaryPlayer, defaultMissionaryPlayer);
 	writer.Write(CitySave_PreferredYieldAtCityPlot, m_ePreferredYieldAtCityPlot, defaultPreferredYieldAtCityPlot);
 		
-	writer.Write(CitySave_LandPlotYield, m_aiLandPlotYield);
-	writer.Write(CitySave_SeaPlotYield, m_aiSeaPlotYield);
-	writer.Write(CitySave_RiverPlotYield, m_aiRiverPlotYield);
-	writer.Write(CitySave_YieldRateModifier, m_aiYieldRateModifier);
-	writer.Write(CitySave_YieldStored, m_aiYieldStored);
-	writer.Write(CitySave_YieldRushed, m_aiYieldRushed);
-	writer.Write(CitySave_YieldBuyPrice, m_aiYieldBuyPrice);
+	writer.Write(CitySave_LandPlotYield, m_ja_iLandPlotYield);
+	writer.Write(CitySave_SeaPlotYield, m_ja_iSeaPlotYield);
+	writer.Write(CitySave_RiverPlotYield, m_ja_iRiverPlotYield);
+	writer.Write(CitySave_YieldRateModifier, m_ja_iYieldRateModifier);
+	writer.Write(CitySave_YieldStored, m_ja_iYieldStored);
+	writer.Write(CitySave_YieldRushed, m_ja_iYieldRushed);
+	writer.Write(CitySave_YieldBuyPrice, m_ja_iYieldBuyPrice);
 
-	writer.Write(CitySave_BaseYieldRank, m_aiBaseYieldRank);
-	writer.Write(CitySave_BaseYieldRankValid, m_abBaseYieldRankValid);
-	writer.Write(CitySave_YieldRank, m_aiYieldRank);
-	writer.Write(CitySave_YieldRankValid, m_abYieldRankValid);
+	writer.Write(CitySave_BaseYieldRank, m_ja_iBaseYieldRank);
+	writer.Write(CitySave_BaseYieldRankValid, m_ba_BaseYieldRankValid);
+	writer.Write(CitySave_YieldRank, m_ja_iYieldRank);
+	writer.Write(CitySave_YieldRankValid, m_ba_YieldRankValid);
 
 	
-	writer.Write(CitySave_BuildingProduction, m_paiBuildingProduction);
-	writer.Write(CitySave_BuildingProductionTime, m_paiBuildingProductionTime);
-	writer.Write(CitySave_BuildingOriginalOwner, m_paiBuildingOriginalOwner);
-	writer.Write(CitySave_BuildingOriginalTime, m_paiBuildingOriginalTime);
-	writer.Write(CitySave_UnitProduction, m_paiUnitProduction);
-	writer.Write(CitySave_UnitProductionTime, m_paiUnitProductionTime);
-	writer.Write(CitySave_SpecialistWeights, m_aiSpecialistWeights);
-	writer.Write(CitySave_UnitCombatFreeExperience, m_paiUnitCombatFreeExperience);
-	writer.Write(CitySave_FreePromotionCount, m_paiFreePromotionCount);
-	writer.Write(CitySave_HasRealBuilding, m_pabHasRealBuilding);
-	writer.Write(CitySave_HasFreeBuilding, m_pabHasFreeBuilding);
+	writer.Write(CitySave_BuildingProduction, m_ja_iBuildingProduction);
+	writer.Write(CitySave_BuildingProductionTime, m_ja_iBuildingProductionTime);
+	writer.Write(CitySave_BuildingOriginalOwner, m_ja_iBuildingOriginalOwner);
+	writer.Write(CitySave_BuildingOriginalTime, m_ja_iBuildingOriginalTime);
+	writer.Write(CitySave_UnitProduction, m_ja_iUnitProduction);
+	writer.Write(CitySave_UnitProductionTime, m_ja_iUnitProductionTime);
+	writer.Write(CitySave_SpecialistWeights, m_ja_iSpecialistWeights);
+	writer.Write(CitySave_UnitCombatFreeExperience, m_ja_iUnitCombatFreeExperience);
+	writer.Write(CitySave_FreePromotionCount, m_ja_iFreePromotionCount);
+	writer.Write(CitySave_HasRealBuilding, m_ba_HasRealBuilding);
+	writer.Write(CitySave_HasFreeBuilding, m_ba_HasFreeBuilding);
 
 	writer.Write(CitySave_Name, m_szName);
 	writer.Write(CitySave_ScriptData, m_szScriptData);
@@ -695,8 +695,8 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_Revealed, m_abRevealed);
 	writer.Write(CitySave_ScoutVisited, m_abScoutVisited);
 
-	writer.Write(CitySave_DomainFreeExperience, m_aiDomainFreeExperience);
-	writer.Write(CitySave_DomainProductionModifier, m_aiDomainProductionModifier);
+	writer.Write(CitySave_DomainFreeExperience, m_ja_iDomainFreeExperience);
+	writer.Write(CitySave_DomainProductionModifier, m_ja_iDomainProductionModifier);
 
 	writer.Write(CitySave_orderQueue, m_orderQueue);
 
