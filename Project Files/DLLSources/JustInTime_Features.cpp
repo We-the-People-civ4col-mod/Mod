@@ -45,6 +45,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_COLOR:              return GC.getNumColorInfos();
 	case JIT_ARRAY_CULTURE:            return GC.getNumCultureLevelInfos();
 	case JIT_ARRAY_DIPLO:              return GC.getNumDiplomacyInfos();
+	case JIT_ARRAY_DOMAIN:             return NUM_DOMAIN_TYPES;
 	case JIT_ARRAY_ERA:                return GC.getNumEraInfos();
 	case JIT_ARRAY_EMOTION:            return NUM_EMOTION_TYPES;
 	case JIT_ARRAY_EMPHASIZE:          return GC.getNumEmphasizeInfos();
@@ -81,7 +82,6 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_WORLD_SIZE:         return NUM_WORLDSIZE_TYPES;
 	case JIT_ARRAY_YIELD:              return NUM_YIELD_TYPES;
 	case JIT_ARRAY_CARGO_YIELD:        return NUM_CARGO_YIELD_TYPES;
-	case JIT_ARRAY_DOMAIN:             return NUM_DOMAIN_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
