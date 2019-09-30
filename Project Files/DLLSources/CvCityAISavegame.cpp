@@ -27,6 +27,12 @@ enum SavegameVariableTypes
 	CitySaveAi_Port,
 	CitySaveAi_AssignWorkDirty,
 	CitySaveAi_ChooseProductionDirty,
+
+	CitySaveAi_YieldOutputWeight,
+	CitySaveAi_NeededYield,
+	CitySaveAi_TradeBalance,
+	CitySaveAi_YieldAdvantage,
+	CitySaveAi_EmphasizeYieldCount,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -44,6 +50,12 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 	case CitySaveAi_Port: return "CitySaveAi_Port";
 	case CitySaveAi_AssignWorkDirty: return "CitySaveAi_AssignWorkDirty";
 	case CitySaveAi_ChooseProductionDirty: return "CitySaveAi_ChooseProductionDirty";
+
+	case CitySaveAi_YieldOutputWeight: return "CitySaveAi_YieldOutputWeight";
+	case CitySaveAi_NeededYield: return "CitySaveAi_NeededYield";
+	case CitySaveAi_TradeBalance: return "CitySaveAi_TradeBalance";
+	case CitySaveAi_YieldAdvantage: return "CitySaveAi_YieldAdvantage";
+	case CitySaveAi_EmphasizeYieldCount: return "CitySaveAi_EmphasizeYieldCount";
 	}
 	return "";
 }
@@ -66,6 +78,12 @@ m_iEmphasizeAvoidGrowthCount = defaultEmphasizeAvoidGrowthCount;
 m_bPort = defaultPort;
 m_bAssignWorkDirty = defaultAssignWorkDirty;
 m_bChooseProductionDirty = defaultChooseProductionDirty;
+
+m_ja_iYieldOutputWeight.reset();
+m_ja_iNeededYield.reset();
+m_ja_iTradeBalance.reset();
+m_ja_iYieldAdvantage.reset();
+m_ja_iEmphasizeYieldCount.reset();
 }
 
 void CvCityAI::read(CvSavegameReader reader)
@@ -104,6 +122,12 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_AssignWorkDirty: reader.Read(m_bAssignWorkDirty); break;
 			case CitySaveAi_ChooseProductionDirty: reader.Read(m_bChooseProductionDirty); break;
 
+			case CitySaveAi_YieldOutputWeight: reader.Read(m_ja_iYieldOutputWeight); break;
+			case CitySaveAi_NeededYield: reader.Read(m_ja_iNeededYield); break;
+			case CitySaveAi_TradeBalance: reader.Read(m_ja_iTradeBalance); break;
+			case CitySaveAi_YieldAdvantage: reader.Read(m_ja_iYieldAdvantage); break;
+			case CitySaveAi_EmphasizeYieldCount: reader.Read(m_ja_iEmphasizeYieldCount); break;
+
 		}
 	}
 	
@@ -134,5 +158,10 @@ void CvCityAI::write(CvSavegameWriter writer)
 	writer.Write(CitySaveAi_AssignWorkDirty, m_bAssignWorkDirty, defaultAssignWorkDirty);
 	writer.Write(CitySaveAi_ChooseProductionDirty, m_bChooseProductionDirty, defaultChooseProductionDirty);
 
+	writer.Write(CitySaveAi_YieldOutputWeight, m_ja_iYieldOutputWeight);
+	writer.Write(CitySaveAi_NeededYield, m_ja_iNeededYield);
+	writer.Write(CitySaveAi_TradeBalance, m_ja_iTradeBalance);
+	writer.Write(CitySaveAi_YieldAdvantage, m_ja_iYieldAdvantage);
+	writer.Write(CitySaveAi_EmphasizeYieldCount, m_ja_iEmphasizeYieldCount);
 	writer.Write(Save_END);
 }
