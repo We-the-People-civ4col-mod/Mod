@@ -56,6 +56,9 @@ const int defaultUnitTravelTimer = 0;
 const int defaultBadCityDefenderCount = 0;
 const int defaultUnarmedCount = 0;
 const int defaultPostCombatPlotIndex = -1;
+const int defaultLbDrounds = 0;
+const int defaultAmountForNativeTrade = 0;
+const int defaultMoneyToBuyLand = 0;
 
 const bool defaultMadeAttack = false;
 const bool defaultPromotionReady = false;
@@ -123,6 +126,10 @@ enum SavegameVariableTypes
 	UnitSave_BadCityDefenderCount,
 	UnitSave_UnarmedCount,
 	UnitSave_PostCombatPlotIndex,
+	UnitSave_LbDrounds,
+	UnitSave_AmountForNativeTrade,
+	UnitSave_MoneyToBuyLand,
+
 	UnitSave_MadeAttack,
 	UnitSave_PromotionReady,
 	UnitSave_DeathDelay,
@@ -192,6 +199,9 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_BadCityDefenderCount: return "UnitSave_BadCityDefenderCount";
 	case UnitSave_UnarmedCount: return "UnitSave_UnarmedCount";
 	case UnitSave_PostCombatPlotIndex: return "UnitSave_PostCombatPlotIndex";
+	case UnitSave_LbDrounds: return "UnitSave_LbDrounds";
+	case UnitSave_AmountForNativeTrade: return "UnitSave_AmountForNativeTrade";
+	case UnitSave_MoneyToBuyLand: return "UnitSave_MoneyToBuyLand";
 
 	case UnitSave_MadeAttack: return "UnitSave_MadeAttack";
 	case UnitSave_PromotionReady: return "UnitSave_PromotionReady";
@@ -265,6 +275,9 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iBadCityDefenderCount = defaultBadCityDefenderCount;
 	m_iUnarmedCount = defaultUnarmedCount;
 	m_iPostCombatPlotIndex = defaultPostCombatPlotIndex;
+	m_iLbDrounds = defaultLbDrounds;
+	m_iAmountForNativeTrade = defaultAmountForNativeTrade;
+	m_iMoneyToBuyLand = defaultMoneyToBuyLand;
 
 	m_bMadeAttack = defaultMadeAttack;	
 	m_bPromotionReady = defaultPromotionReady;	
@@ -351,6 +364,9 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_BadCityDefenderCount: reader.Read(m_iBadCityDefenderCount); break;
 		case UnitSave_UnarmedCount: reader.Read(m_iUnarmedCount); break;
 		case UnitSave_PostCombatPlotIndex: reader.Read(m_iPostCombatPlotIndex); break;
+		case UnitSave_LbDrounds: reader.Read(m_iLbDrounds); break;
+		case UnitSave_AmountForNativeTrade: reader.Read(m_iAmountForNativeTrade); break;
+		case UnitSave_MoneyToBuyLand: reader.Read(m_iMoneyToBuyLand); break;
 
 		case UnitSave_MadeAttack: reader.Read(m_bMadeAttack); break;
 		case UnitSave_PromotionReady: reader.Read(m_bPromotionReady); break;
@@ -360,6 +376,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_GatheringResource: reader.Read(m_bGatheringResource); break;
 		case UnitSave_IgnoreDanger: reader.Read(m_bIgnoreDanger); break;
 		case UnitSave_Barbarian: reader.Read(m_bBarbarian); break;
+
 		}
 	}
 	
@@ -432,6 +449,10 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_BadCityDefenderCount, m_iBadCityDefenderCount, defaultBadCityDefenderCount);
 	writer.Write(UnitSave_UnarmedCount, m_iUnarmedCount, defaultUnarmedCount);
 	writer.Write(UnitSave_PostCombatPlotIndex, m_iPostCombatPlotIndex, defaultPostCombatPlotIndex);
+
+	writer.Write(UnitSave_LbDrounds, m_iLbDrounds, defaultLbDrounds);
+	writer.Write(UnitSave_AmountForNativeTrade, m_iAmountForNativeTrade, defaultAmountForNativeTrade);
+	writer.Write(UnitSave_MoneyToBuyLand, m_iMoneyToBuyLand, defaultMoneyToBuyLand);
 
 	writer.Write(UnitSave_MadeAttack, m_bMadeAttack, defaultMadeAttack);
 	writer.Write(UnitSave_PromotionReady, m_bPromotionReady, defaultPromotionReady);

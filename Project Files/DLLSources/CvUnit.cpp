@@ -68,12 +68,10 @@ CvUnit::CvUnit() :
 	m_iID(-1),
 
 	// TAC - LbD - Ray - START
-	m_LbDrounds(0),
 	m_lastProfession(NO_PROFESSION),
 	// TAC - LbD - Ray - END
 
 	//ray18
-	moneyToBuyLand(0),
 	playerToBuyLand(NO_PLAYER),
 	//ray18 End
 
@@ -84,7 +82,6 @@ CvUnit::CvUnit() :
 	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION),
 
 	// R&R, ray, Natives Trading - START
-	m_AmountForNativeTrade(0),
 	m_YieldForNativeTrade(NO_YIELD)
 	// R&R, ray, Natives Trading - END
 
@@ -379,17 +376,14 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
 
 	// TAC - LbD - Ray - START
-	m_LbDrounds = 0 ;
 	m_lastProfession = NO_PROFESSION;
 	// TAC - LbD - Ray - END
 
 	//ray18
-	moneyToBuyLand = 0;
 	playerToBuyLand = NO_PLAYER;
 	//Ende ray18
 
 	// R&R, ray, Natives Trading - START
-	m_AmountForNativeTrade = 0;
 	m_YieldForNativeTrade = NO_YIELD;
 	// R&R, ray, Natives Trading - END
 
@@ -6313,7 +6307,7 @@ bool CvUnit::doAcquireCheckNatives()
 
 		if (eNativeOwner != NO_PLAYER)
 		{
-			moneyToBuyLand = iCost;
+			m_iMoneyToBuyLand = iCost;
 			playerToBuyLand = eNativeOwner;
 			GET_TEAM(getTeam()).meet(GET_PLAYER(eNativeOwner).getTeam(), false);
 		}
@@ -6354,9 +6348,9 @@ void CvUnit::buyLandAfterAcquire()
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitDefeatScript(), MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), NULL, NULL);
 		}
 
-		GET_PLAYER(playerToBuyLand).changeGold((moneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
-		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(playerToBuyLand, moneyToBuyLand);
-		GET_PLAYER(getOwnerINLINE()).changeGold(moneyToBuyLand * -1);		
+		GET_PLAYER(playerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
+		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(playerToBuyLand, m_iMoneyToBuyLand);
+		GET_PLAYER(getOwnerINLINE()).changeGold(m_iMoneyToBuyLand * -1);		
 	}
 }
 //Ende ray18
@@ -9020,12 +9014,12 @@ int CvUnit::getID() const
 // TAC - LbD - Ray - START
 int CvUnit::getLbDrounds() const
 {
-	return m_LbDrounds;
+	return m_iLbDrounds;
 }
 
 void CvUnit::setLbDrounds(int newRounds)
 {
-	m_LbDrounds = newRounds;
+	m_iLbDrounds = newRounds;
 }
 
 ProfessionTypes CvUnit::getLastLbDProfession() const
@@ -12259,24 +12253,17 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 
 void CvUnit::read(FDataStreamBase* pStream)
 {
-	
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
 	pStream->Read((int*)&m_eProfession);
 
 	// TAC - LbD - Ray - START
-	pStream->Read(&m_LbDrounds);
 	pStream->Read((int*)&m_lastProfession);
 	// TAC - LbD - Ray - END
 
 	//ray18
-	pStream->Read(&moneyToBuyLand);
 	pStream->Read((int*)&playerToBuyLand);	
 	//Ende ray18
 
 	// R&R, ray, Natives Trading - START
-	pStream->Read(&m_AmountForNativeTrade);
 	pStream->Read((int*)&m_YieldForNativeTrade);
 	// R&R, ray, Natives Trading - END
 
@@ -12323,23 +12310,17 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
 	pStream->Write(m_eProfession);
 
 	// TAC - LbD - Ray - START
-	pStream->Write(m_LbDrounds);
 	pStream->Write(m_lastProfession);
 	// TAC - LbD - Ray - END
 
 	//ray18
-	pStream->Write(moneyToBuyLand);
 	pStream->Write(playerToBuyLand);
 	//Ende ray18
 
 	// R&R, ray, Natives Trading - START
-	pStream->Write(m_AmountForNativeTrade);
 	pStream->Write(m_YieldForNativeTrade);
 	// R&R, ray, Natives Trading -END
 
@@ -14612,7 +14593,7 @@ void CvUnit::setYieldForNativeTrade(YieldTypes nativeTradeYield)
 
 void CvUnit::setAmountForNativeTrade(int nativeTradeAmount)
 {
-	m_AmountForNativeTrade = nativeTradeAmount;
+	m_iAmountForNativeTrade = nativeTradeAmount;
 }
 
 YieldTypes CvUnit::getYieldForNativeTrade() const
@@ -14622,7 +14603,7 @@ YieldTypes CvUnit::getYieldForNativeTrade() const
 
 int CvUnit::getAmountForNativeTrade() const
 {
-	return m_AmountForNativeTrade;
+	return m_iAmountForNativeTrade;
 }
 // R&R, ray, Natives Trading - END
 
