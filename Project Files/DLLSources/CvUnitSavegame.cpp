@@ -157,6 +157,10 @@ enum SavegameVariableTypes
 	UnitSave_CapturingPlayer,
 	UnitSave_LeaderUnitType,
 
+	UnitSave_combatUnit,
+	UnitSave_transportUnit,
+	UnitSave_homeCity,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -239,6 +243,10 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_Owner: return "UnitSave_Owner";
 	case UnitSave_CapturingPlayer: return "UnitSave_CapturingPlayer";
 	case UnitSave_LeaderUnitType: return "UnitSave_LeaderUnitType";
+
+	case UnitSave_combatUnit: return "UnitSave_combatUnit";
+	case UnitSave_transportUnit: return "UnitSave_transportUnit";
+	case UnitSave_homeCity: return "UnitSave_homeCity";
 }
 	return "";
 }
@@ -324,6 +332,10 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_eOwner = eOwner;
 	m_eCapturingPlayer = defaultCapturingPlayer;
 	m_eLeaderUnitType = defaultLeaderUnitType;
+
+	m_combatUnit.reset();
+	m_transportUnit.reset();
+	m_homeCity.reset();
 }
 
 void CvUnit::read(CvSavegameReader reader)
@@ -422,6 +434,10 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_Owner: reader.Read(m_eOwner); break;
 		case UnitSave_CapturingPlayer: reader.Read(m_eCapturingPlayer); break;
 		case UnitSave_LeaderUnitType: reader.Read(m_eLeaderUnitType); break;
+
+		case UnitSave_combatUnit: reader.Read(m_combatUnit); break;
+		case UnitSave_transportUnit: reader.Read(m_transportUnit); break;
+		case UnitSave_homeCity: reader.Read(m_homeCity); break;
 		}
 	}
 	
@@ -516,6 +532,10 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_Owner, m_eOwner, defaultOwner);
 	writer.Write(UnitSave_CapturingPlayer, m_eCapturingPlayer, defaultCapturingPlayer);
 	writer.Write(UnitSave_LeaderUnitType, m_eLeaderUnitType, defaultLeaderUnitType);
+
+	writer.Write(UnitSave_combatUnit, m_combatUnit);
+	writer.Write(UnitSave_transportUnit, m_transportUnit);
+	writer.Write(UnitSave_homeCity, m_homeCity);
 
 	writer.Write(UnitSave_END);
 }

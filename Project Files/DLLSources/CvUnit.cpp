@@ -12225,10 +12225,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 
 void CvUnit::read(FDataStreamBase* pStream)
 {
-	m_combatUnit.read(pStream);
-	m_transportUnit.read(pStream);
-	m_homeCity.read(pStream);
-
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
 
 	pStream->ReadString(m_szName);
@@ -12260,11 +12256,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-
-	m_combatUnit.write(pStream);
-	m_transportUnit.write(pStream);
-	m_homeCity.write(pStream);
-
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
 
 	pStream->WriteString(m_szName);
