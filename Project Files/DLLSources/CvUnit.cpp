@@ -376,9 +376,8 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	// Uninit class
 	uninit();
 
-	resetSavedData();
+	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
 
-	m_iID = iID;
 	// TAC - LbD - Ray - START
 	m_LbDrounds = 0 ;
 	m_lastProfession = NO_PROFESSION;
@@ -393,55 +392,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_AmountForNativeTrade = 0;
 	m_YieldForNativeTrade = NO_YIELD;
 	// R&R, ray, Natives Trading - END
-
-	m_iGroupID = FFreeList::INVALID_INDEX;
-	m_iHotKeyNumber = -1;
-	m_iX = INVALID_PLOT_COORD;
-	m_iY = INVALID_PLOT_COORD;
-	m_iLastMoveTurn = 0;
-	m_iGameTurnCreated = 0;
-	m_iDamage = 0;
-	m_iMoves = 0;
-	m_iExperience = 0;
-	m_iLevel = 1;
-	m_iCargo = 0;
-	m_iAttackPlotX = INVALID_PLOT_COORD;
-	m_iAttackPlotY = INVALID_PLOT_COORD;
-	m_iCombatTimer = 0;
-	m_iCombatDamage = 0;
-	m_iFortifyTurns = 0;
-	m_iBlitzCount = 0;
-	m_iAmphibCount = 0;
-	m_iRiverCount = 0;
-	m_iEnemyRouteCount = 0;
-	m_iAlwaysHealCount = 0;
-	m_iHillsDoubleMoveCount = 0;
-	m_iExtraVisibilityRange = 0;
-	m_iExtraMoves = 0;
-	m_iExtraMoveDiscount = 0;
-	m_iExtraWithdrawal = 0;
-	m_iExtraBombardRate = 0;
-	m_iExtraEnemyHeal = 0;
-	m_iExtraNeutralHeal = 0;
-	m_iExtraFriendlyHeal = 0;
-	m_iSameTileHeal = 0;
-	m_iAdjacentTileHeal = 0;
-	m_iExtraCombatPercent = 0;
-	m_iExtraCityAttackPercent = 0;
-	m_iExtraCityDefensePercent = 0;
-	m_iExtraHillsAttackPercent = 0;
-	m_iExtraHillsDefensePercent = 0;
-	m_iExtraDomesticBonusPercent = 0;			
-	m_iPillageChange = 0;
-	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;
-	//m_eFacingDirection = DIRECTION_SOUTH;
-	m_iImmobileTimer = 0;
-	m_iYieldStored = 0;
-	m_iExtraWorkRate = 0;
-	m_iUnitTravelTimer = 0;
-	m_iBadCityDefenderCount = 0;
-	m_iUnarmedCount = 0;
 
 	m_bMadeAttack = false;
 	m_bPromotionReady = false;
@@ -466,7 +416,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_combatUnit.reset();
 	m_transportUnit.reset();
 	m_homeCity.reset();
-	m_iPostCombatPlotIndex = -1;
 
 	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
 	{
@@ -927,7 +876,7 @@ void CvUnit::NotifyEntity(MissionTypes eMission)
 /**                                                                       **/
 /** float CvUnit::NBMOD_GetShipStrength() const                           **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Einheit.                               **/
+/** Ermittelt die Schiffstï¿½rke der Einheit.                               **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -12323,55 +12272,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iGroupID);
-	pStream->Read(&m_iHotKeyNumber);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iLastMoveTurn);
-	pStream->Read(&m_iGameTurnCreated);
-	pStream->Read(&m_iDamage);
-	pStream->Read(&m_iMoves);
-	pStream->Read(&m_iExperience);
-	pStream->Read(&m_iLevel);
-	pStream->Read(&m_iCargo);
-	pStream->Read(&m_iCargoCapacity);
-	pStream->Read(&m_iAttackPlotX);
-	pStream->Read(&m_iAttackPlotY);
-	pStream->Read(&m_iCombatTimer);
-	pStream->Read(&m_iCombatDamage);
-	pStream->Read(&m_iFortifyTurns);
-	pStream->Read(&m_iBlitzCount);
-	pStream->Read(&m_iAmphibCount);
-	pStream->Read(&m_iRiverCount);
-	pStream->Read(&m_iEnemyRouteCount);
-	pStream->Read(&m_iAlwaysHealCount);
-	pStream->Read(&m_iHillsDoubleMoveCount);
-	pStream->Read(&m_iExtraVisibilityRange);
-	pStream->Read(&m_iExtraMoves);
-	pStream->Read(&m_iExtraMoveDiscount);
-	pStream->Read(&m_iExtraWithdrawal);
-	pStream->Read(&m_iExtraBombardRate);
-	pStream->Read(&m_iExtraEnemyHeal);
-	pStream->Read(&m_iExtraNeutralHeal);
-	pStream->Read(&m_iExtraFriendlyHeal);
-	pStream->Read(&m_iSameTileHeal);
-	pStream->Read(&m_iAdjacentTileHeal);
-	pStream->Read(&m_iExtraCombatPercent);
-	pStream->Read(&m_iExtraCityAttackPercent);
-	pStream->Read(&m_iExtraCityDefensePercent);
-	pStream->Read(&m_iExtraHillsAttackPercent);
-	pStream->Read(&m_iExtraHillsDefensePercent);
-	pStream->Read(&m_iExtraDomesticBonusPercent);	
-	pStream->Read(&m_iPillageChange);
-	pStream->Read(&m_iUpgradeDiscount);
-	pStream->Read(&m_iExperiencePercent);
-	pStream->Read(&m_iBaseCombat);
-	//pStream->Read((int*)&m_eFacingDirection);
-	pStream->Read(&m_iImmobileTimer);
-	pStream->Read(&m_iYieldStored);
-	pStream->Read(&m_iExtraWorkRate);
 	pStream->Read((int*)&m_eProfession);
 
 	// TAC - LbD - Ray - START
@@ -12389,9 +12289,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_YieldForNativeTrade);
 	// R&R, ray, Natives Trading - END
 
-	pStream->Read(&m_iUnitTravelTimer);
-	pStream->Read(&m_iBadCityDefenderCount);
-	pStream->Read(&m_iUnarmedCount);
 	pStream->Read((int*)&m_eUnitTravelState);
 
 	pStream->Read(&m_bMadeAttack);
@@ -12415,7 +12312,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 	pStream->Read((int*)&m_eLeaderUnitType);
 
 	m_combatUnit.read(pStream);
-	pStream->Read(&m_iPostCombatPlotIndex);
 	m_transportUnit.read(pStream);
 	m_homeCity.read(pStream);
 
@@ -12453,54 +12349,6 @@ void CvUnit::write(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
-	pStream->Write(m_iID);
-	pStream->Write(m_iGroupID);
-	pStream->Write(m_iHotKeyNumber);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iLastMoveTurn);
-	pStream->Write(m_iGameTurnCreated);
-	pStream->Write(m_iDamage);
-	pStream->Write(m_iMoves);
-	pStream->Write(m_iExperience);
-	pStream->Write(m_iLevel);
-	pStream->Write(m_iCargo);
-	pStream->Write(m_iCargoCapacity);
-	pStream->Write(m_iAttackPlotX);
-	pStream->Write(m_iAttackPlotY);
-	pStream->Write(m_iCombatTimer);
-	pStream->Write(m_iCombatDamage);
-	pStream->Write(m_iFortifyTurns);
-	pStream->Write(m_iBlitzCount);
-	pStream->Write(m_iAmphibCount);
-	pStream->Write(m_iRiverCount);
-	pStream->Write(m_iEnemyRouteCount);
-	pStream->Write(m_iAlwaysHealCount);
-	pStream->Write(m_iHillsDoubleMoveCount);
-	pStream->Write(m_iExtraVisibilityRange);
-	pStream->Write(m_iExtraMoves);
-	pStream->Write(m_iExtraMoveDiscount);
-	pStream->Write(m_iExtraWithdrawal);
-	pStream->Write(m_iExtraBombardRate);
-	pStream->Write(m_iExtraEnemyHeal);
-	pStream->Write(m_iExtraNeutralHeal);
-	pStream->Write(m_iExtraFriendlyHeal);
-	pStream->Write(m_iSameTileHeal);
-	pStream->Write(m_iAdjacentTileHeal);
-	pStream->Write(m_iExtraCombatPercent);
-	pStream->Write(m_iExtraCityAttackPercent);
-	pStream->Write(m_iExtraCityDefensePercent);
-	pStream->Write(m_iExtraHillsAttackPercent);
-	pStream->Write(m_iExtraHillsDefensePercent);
-	pStream->Write(m_iExtraDomesticBonusPercent);	
-	pStream->Write(m_iPillageChange);
-	pStream->Write(m_iUpgradeDiscount);
-	pStream->Write(m_iExperiencePercent);
-	pStream->Write(m_iBaseCombat);
-	//pStream->Write(m_eFacingDirection);
-	pStream->Write(m_iImmobileTimer);
-	pStream->Write(m_iYieldStored);
-	pStream->Write(m_iExtraWorkRate);
 	pStream->Write(m_eProfession);
 
 	// TAC - LbD - Ray - START
@@ -12518,9 +12366,6 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_YieldForNativeTrade);
 	// R&R, ray, Natives Trading -END
 
-	pStream->Write(m_iUnitTravelTimer);
-	pStream->Write(m_iBadCityDefenderCount);
-	pStream->Write(m_iUnarmedCount);
 	pStream->Write(m_eUnitTravelState);
 
 	pStream->Write(m_bMadeAttack);
@@ -12542,7 +12387,6 @@ void CvUnit::write(FDataStreamBase* pStream)
 	pStream->Write(m_eLeaderUnitType);
 
 	m_combatUnit.write(pStream);
-	pStream->Write(m_iPostCombatPlotIndex);
 	m_transportUnit.write(pStream);
 	m_homeCity.write(pStream);
 

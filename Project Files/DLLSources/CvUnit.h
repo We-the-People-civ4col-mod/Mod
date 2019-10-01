@@ -704,7 +704,7 @@ public:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 
-	void resetSavedData();
+	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
