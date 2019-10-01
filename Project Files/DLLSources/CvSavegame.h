@@ -234,6 +234,7 @@ public:
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
 	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
+	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
