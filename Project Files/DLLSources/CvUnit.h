@@ -846,22 +846,22 @@ protected:
 	IDInfo m_homeCity;
 	int m_iPostCombatPlotIndex;
 
-	int* m_aiExtraDomainModifier;
+	DomainArray<int> m_ja_iExtraDomainModifier;
 
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	bool* m_pabHasRealPromotion;
-	int* m_paiFreePromotionCount;
-	int* m_paiTerrainDoubleMoveCount;
-	int* m_paiFeatureDoubleMoveCount;
-	int* m_paiExtraTerrainAttackPercent;
-	int* m_paiExtraTerrainDefensePercent;
-	int* m_paiExtraFeatureAttackPercent;
-	int* m_paiExtraFeatureDefensePercent;
-	int* m_paiExtraUnitClassAttackModifier;
-	int* m_paiExtraUnitClassDefenseModifier;
-	int* m_paiExtraUnitCombatModifier;
+	BoolArray m_ba_HasRealPromotion;
+	PromotionArray<int> m_ja_iFreePromotionCount;
+	TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
+	FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
+	TerrainArray<int> m_ja_iExtraTerrainAttackPercent;
+	TerrainArray<int> m_ja_iExtraTerrainDefensePercent;
+	FeatureArray<int> m_ja_iExtraFeatureAttackPercent;
+	FeatureArray<int> m_ja_iExtraFeatureDefensePercent;
+	UnitClassArray<int> m_ja_iExtraUnitClassAttackModifier;
+	UnitClassArray<int> m_ja_iExtraUnitClassDefenseModifier;
+	UnitCombatArray<int> m_ja_iExtraUnitCombatModifier;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 

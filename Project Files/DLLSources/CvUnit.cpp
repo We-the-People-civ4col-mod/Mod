@@ -53,17 +53,7 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
-	m_pabHasRealPromotion(NULL),
-	m_paiFreePromotionCount(NULL),
-	m_paiTerrainDoubleMoveCount(NULL),
-	m_paiFeatureDoubleMoveCount(NULL),
-	m_paiExtraTerrainAttackPercent(NULL),
-	m_paiExtraTerrainDefensePercent(NULL),
-	m_paiExtraFeatureAttackPercent(NULL),
-	m_paiExtraFeatureDefensePercent(NULL),
-	m_paiExtraUnitCombatModifier(NULL),
-	m_paiExtraUnitClassAttackModifier(NULL),
-	m_paiExtraUnitClassDefenseModifier(NULL),
+	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
 
@@ -74,9 +64,6 @@ CvUnit::CvUnit() :
 	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION)
 
 {
-	m_aiExtraDomainModifier = new int[NUM_DOMAIN_TYPES];
-
-
 	CvDLLEntity::createUnitEntity(this);		// create and attach entity to unit
 
 	reset(0, NO_UNIT, NO_PLAYER, true);
@@ -94,8 +81,6 @@ CvUnit::~CvUnit()
 	CvDLLEntity::destroyEntity();			// delete CvUnitEntity and detach from us
 
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiExtraDomainModifier);
 }
 
 void CvUnit::reloadEntity()
@@ -337,17 +322,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 void CvUnit::uninit()
 {
-	SAFE_DELETE_ARRAY(m_pabHasRealPromotion);
-	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
-	SAFE_DELETE_ARRAY(m_paiTerrainDoubleMoveCount);
-	SAFE_DELETE_ARRAY(m_paiFeatureDoubleMoveCount);
-	SAFE_DELETE_ARRAY(m_paiExtraTerrainAttackPercent);
-	SAFE_DELETE_ARRAY(m_paiExtraTerrainDefensePercent);
-	SAFE_DELETE_ARRAY(m_paiExtraFeatureAttackPercent);
-	SAFE_DELETE_ARRAY(m_paiExtraFeatureDefensePercent);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitClassAttackModifier);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitClassDefenseModifier);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitCombatModifier);
 }
 
 
@@ -355,8 +329,6 @@ void CvUnit::uninit()
 // Initializes data members that are serialized.
 void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -374,11 +346,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_transportUnit.reset();
 	m_homeCity.reset();
 
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
-	{
-		m_aiExtraDomainModifier[iI] = 0;
-	}
-
 	clear(m_szName);
 	m_szScriptData ="";
 
@@ -388,58 +355,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg((0 < GC.getNumPromotionInfos()), "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiFreePromotionCount = new int[GC.getNumPromotionInfos()];
-		m_pabHasRealPromotion = new bool[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-		{
-			m_pabHasRealPromotion[iI] = false;
-			m_paiFreePromotionCount[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumTerrainInfos()), "GC.getNumTerrainInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
-		m_paiTerrainDoubleMoveCount = new int[GC.getNumTerrainInfos()];
-		m_paiExtraTerrainAttackPercent = new int[GC.getNumTerrainInfos()];
-		m_paiExtraTerrainDefensePercent = new int[GC.getNumTerrainInfos()];
-		for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
-		{
-			m_paiTerrainDoubleMoveCount[iI] = 0;
-			m_paiExtraTerrainAttackPercent[iI] = 0;
-			m_paiExtraTerrainDefensePercent[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumFeatureInfos()), "GC.getNumFeatureInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
-		m_paiFeatureDoubleMoveCount = new int[GC.getNumFeatureInfos()];
-		m_paiExtraFeatureDefensePercent = new int[GC.getNumFeatureInfos()];
-		m_paiExtraFeatureAttackPercent = new int[GC.getNumFeatureInfos()];
-		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
-		{
-			m_paiFeatureDoubleMoveCount[iI] = 0;
-			m_paiExtraFeatureAttackPercent[iI] = 0;
-			m_paiExtraFeatureDefensePercent[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitCombatInfos()), "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitCombatModifier = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-		{
-			m_paiExtraUnitCombatModifier[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitClassInfos()), "GC.getNumUnitClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitClassAttackModifier = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiExtraUnitClassAttackModifier[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitClassInfos()), "GC.getNumUnitClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitClassDefenseModifier = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiExtraUnitClassDefenseModifier[iI] = 0;
-		}
-
 		AI_reset();
 	}
 }
@@ -11472,7 +11387,7 @@ int CvUnit::getExtraDomainModifier(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiExtraDomainModifier[eIndex];
+	return m_ja_iExtraDomainModifier.get(eIndex);
 }
 
 
@@ -11480,7 +11395,7 @@ void CvUnit::changeExtraDomainModifier(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiExtraDomainModifier[eIndex] = (m_aiExtraDomainModifier[eIndex] + iChange);
+	m_ja_iExtraDomainModifier.add(iChange, eIndex);
 }
 
 
@@ -11580,7 +11495,7 @@ int CvUnit::getTerrainDoubleMoveCount(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiTerrainDoubleMoveCount[eIndex];
+	return m_ja_iTerrainDoubleMoveCount.get(eIndex);
 }
 
 
@@ -11596,7 +11511,7 @@ void CvUnit::changeTerrainDoubleMoveCount(TerrainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiTerrainDoubleMoveCount[eIndex] = (m_paiTerrainDoubleMoveCount[eIndex] + iChange);
+	m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getTerrainDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -11605,7 +11520,7 @@ int CvUnit::getFeatureDoubleMoveCount(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFeatureDoubleMoveCount[eIndex];
+	return m_ja_iFeatureDoubleMoveCount.get(eIndex);
 }
 
 
@@ -11621,7 +11536,7 @@ void CvUnit::changeFeatureDoubleMoveCount(FeatureTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiFeatureDoubleMoveCount[eIndex] = (m_paiFeatureDoubleMoveCount[eIndex] + iChange);
+	m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getFeatureDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -11630,7 +11545,7 @@ int CvUnit::getExtraTerrainAttackPercent(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraTerrainAttackPercent[eIndex];
+	return m_ja_iExtraTerrainAttackPercent.get(eIndex);
 }
 
 
@@ -11641,7 +11556,7 @@ void CvUnit::changeExtraTerrainAttackPercent(TerrainTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraTerrainAttackPercent[eIndex] += iChange;
+		m_ja_iExtraTerrainAttackPercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11651,7 +11566,7 @@ int CvUnit::getExtraTerrainDefensePercent(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraTerrainDefensePercent[eIndex];
+	return m_ja_iExtraTerrainDefensePercent.get(eIndex);
 }
 
 
@@ -11662,7 +11577,7 @@ void CvUnit::changeExtraTerrainDefensePercent(TerrainTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraTerrainDefensePercent[eIndex] += iChange;
+		m_ja_iExtraTerrainDefensePercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11672,7 +11587,7 @@ int CvUnit::getExtraFeatureAttackPercent(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraFeatureAttackPercent[eIndex];
+	return m_ja_iExtraFeatureAttackPercent.get(eIndex);
 }
 
 
@@ -11683,7 +11598,7 @@ void CvUnit::changeExtraFeatureAttackPercent(FeatureTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraFeatureAttackPercent[eIndex] += iChange;
+		m_ja_iExtraFeatureAttackPercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11693,7 +11608,7 @@ int CvUnit::getExtraFeatureDefensePercent(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraFeatureDefensePercent[eIndex];
+	return m_ja_iExtraFeatureDefensePercent.get(eIndex);
 }
 
 
@@ -11704,7 +11619,7 @@ void CvUnit::changeExtraFeatureDefensePercent(FeatureTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraFeatureDefensePercent[eIndex] += iChange;
+		m_ja_iExtraFeatureDefensePercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11714,42 +11629,42 @@ int CvUnit::getExtraUnitClassAttackModifier(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitClassAttackModifier[eIndex];
+	return m_ja_iExtraUnitClassAttackModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitClassAttackModifier(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitClassAttackModifier[eIndex] += iChange;
+	m_ja_iExtraUnitClassAttackModifier.add(iChange, eIndex);
 }
 
 int CvUnit::getExtraUnitClassDefenseModifier(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitClassDefenseModifier[eIndex];
+	return m_ja_iExtraUnitClassDefenseModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitClassDefenseModifier(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitClassDefenseModifier[eIndex] += iChange;
+	m_ja_iExtraUnitClassDefenseModifier.add(iChange, eIndex);
 }
 
 int CvUnit::getExtraUnitCombatModifier(UnitCombatTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitCombatModifier[eIndex];
+	return m_ja_iExtraUnitCombatModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitCombatModifier(UnitCombatTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitCombatModifier[eIndex] += iChange;
+	m_ja_iExtraUnitCombatModifier.add(iChange,eIndex);
 }
 
 bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
@@ -11916,7 +11831,7 @@ bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabHasRealPromotion[eIndex];
+	return m_ba_HasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -11926,7 +11841,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		m_pabHasRealPromotion[eIndex] = bValue;
+		m_ba_HasRealPromotion.set(bValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -12037,35 +11952,20 @@ void CvUnit::resetPromotions()
 	m_iExperiencePercent = 0;
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
 
-	for (int iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
-	{
-		m_paiExtraTerrainAttackPercent[iI] = 0;
-		m_paiExtraTerrainDefensePercent[iI] = 0;
-		m_paiTerrainDoubleMoveCount[iI] = 0;
-	}
+	m_ja_iExtraTerrainAttackPercent.reset();
+	m_ja_iExtraTerrainDefensePercent.reset();
+	m_ja_iTerrainDoubleMoveCount.reset();
+	
+	m_ja_iExtraFeatureAttackPercent.reset();
+	m_ja_iExtraFeatureDefensePercent.reset();
+	m_ja_iFeatureDoubleMoveCount.reset();
 
-	for (int iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
-	{
-		m_paiExtraFeatureAttackPercent[iI] = 0;
-		m_paiExtraFeatureDefensePercent[iI] = 0;
-		m_paiFeatureDoubleMoveCount[iI] = 0;
-	}
+	m_ja_iExtraUnitClassAttackModifier.reset();
+	m_ja_iExtraUnitClassDefenseModifier.reset();
 
-	for (int iI = 0; iI < GC.getNumUnitClassInfos(); ++iI)
-	{
-		m_paiExtraUnitClassAttackModifier[iI] = 0;
-		m_paiExtraUnitClassDefenseModifier[iI] = 0;
-	}
+	m_ja_iExtraUnitCombatModifier.reset();
+	m_ja_iExtraDomainModifier.reset();
 
-	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
-	{
-		m_paiExtraUnitCombatModifier[iI] = 0;
-	}
-
-	for (int iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
-	{
-		m_aiExtraDomainModifier[iI] = 0;
-	}
 
 	setPromotions();
 }
@@ -12157,7 +12057,7 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 
 	if (getFreePromotionCount(eIndex) != iValue)
 	{
-		m_paiFreePromotionCount[eIndex] = iValue;
+		m_ja_iFreePromotionCount.set(iValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -12173,7 +12073,7 @@ int CvUnit::getFreePromotionCount(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFreePromotionCount[eIndex];
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 int CvUnit::getSubUnitCount() const
@@ -12225,20 +12125,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 
 void CvUnit::read(FDataStreamBase* pStream)
 {
-	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->Read(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
-
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
 	// unit yield cache - end - Nightinggale
@@ -12253,19 +12139,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	pStream->Write(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->Write(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
 }
 
 // Protected Functions...

@@ -166,6 +166,19 @@ enum SavegameVariableTypes
 	UnitSave_Name,
 	UnitSave_ScriptData,
 
+	UnitSave_HasRealPromotion,
+	UnitSave_ExtraDomainModifier,
+	UnitSave_FreePromotionCount,
+	UnitSave_TerrainDoubleMoveCount,
+	UnitSave_FeatureDoubleMoveCount,
+	UnitSave_ExtraTerrainAttackPercent,
+	UnitSave_ExtraTerrainDefensePercent,
+	UnitSave_ExtraFeatureAttackPercent,
+	UnitSave_ExtraFeatureDefensePercent,
+	UnitSave_ExtraUnitClassAttackModifier,
+	UnitSave_ExtraUnitClassDefenseModifier,
+	UnitSave_ExtraUnitCombatModifier,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -255,6 +268,19 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 
 	case UnitSave_Name: return "UnitSave_Name";
 	case UnitSave_ScriptData: return "UnitSave_ScriptData";
+
+	case UnitSave_HasRealPromotion: return "UnitSave_HasRealPromotion";
+	case UnitSave_ExtraDomainModifier: return "UnitSave_ExtraDomainModifier";
+	case UnitSave_FreePromotionCount: return "UnitSave_FreePromotionCount";
+	case UnitSave_TerrainDoubleMoveCount: return "UnitSave_TerrainDoubleMoveCount";
+	case UnitSave_FeatureDoubleMoveCount: return "UnitSave_FeatureDoubleMoveCount";
+	case UnitSave_ExtraTerrainAttackPercent: return "UnitSave_ExtraTerrainAttackPercent";
+	case UnitSave_ExtraTerrainDefensePercent: return "UnitSave_ExtraTerrainDefensePercent";
+	case UnitSave_ExtraFeatureAttackPercent: return "UnitSave_ExtraFeatureAttackPercent";
+	case UnitSave_ExtraFeatureDefensePercent: return "UnitSave_ExtraFeatureDefensePercent";
+	case UnitSave_ExtraUnitClassAttackModifier: return "UnitSave_ExtraUnitClassAttackModifier";
+	case UnitSave_ExtraUnitClassDefenseModifier: return "UnitSave_ExtraUnitClassDefenseModifier";
+	case UnitSave_ExtraUnitCombatModifier: return "UnitSave_ExtraUnitCombatModifier";
 }
 	return "";
 }
@@ -347,6 +373,19 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 
 	m_szName.clear();
 	m_szScriptData.clear();
+
+	m_ba_HasRealPromotion;
+	m_ja_iExtraDomainModifier;
+	m_ja_iFreePromotionCount;
+	m_ja_iTerrainDoubleMoveCount;
+	m_ja_iFeatureDoubleMoveCount;
+	m_ja_iExtraTerrainAttackPercent;
+	m_ja_iExtraTerrainDefensePercent;
+	m_ja_iExtraFeatureAttackPercent;
+	m_ja_iExtraFeatureDefensePercent;
+	m_ja_iExtraUnitClassAttackModifier;
+	m_ja_iExtraUnitClassDefenseModifier;
+	m_ja_iExtraUnitCombatModifier;
 }
 
 void CvUnit::read(CvSavegameReader reader)
@@ -452,6 +491,19 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_Name: reader.Read(m_szName); break;
 		case UnitSave_ScriptData: reader.Read(m_szScriptData); break;
+
+		case UnitSave_HasRealPromotion: reader.Read(m_ba_HasRealPromotion); break;
+		case UnitSave_ExtraDomainModifier: reader.Read(m_ja_iExtraDomainModifier); break;
+		case UnitSave_FreePromotionCount: reader.Read(m_ja_iFreePromotionCount); break;
+		case UnitSave_TerrainDoubleMoveCount: reader.Read(m_ja_iTerrainDoubleMoveCount); break;
+		case UnitSave_FeatureDoubleMoveCount: reader.Read(m_ja_iFeatureDoubleMoveCount); break;
+		case UnitSave_ExtraTerrainAttackPercent: reader.Read(m_ja_iExtraTerrainAttackPercent); break;
+		case UnitSave_ExtraTerrainDefensePercent: reader.Read(m_ja_iExtraTerrainDefensePercent); break;
+		case UnitSave_ExtraFeatureAttackPercent: reader.Read(m_ja_iExtraFeatureAttackPercent); break;
+		case UnitSave_ExtraFeatureDefensePercent: reader.Read(m_ja_iExtraFeatureDefensePercent); break;
+		case UnitSave_ExtraUnitClassAttackModifier: reader.Read(m_ja_iExtraUnitClassAttackModifier); break;
+		case UnitSave_ExtraUnitClassDefenseModifier: reader.Read(m_ja_iExtraUnitClassDefenseModifier); break;
+		case UnitSave_ExtraUnitCombatModifier: reader.Read(m_ja_iExtraUnitCombatModifier); break;
 		}
 	}
 	
@@ -553,6 +605,19 @@ void CvUnit::write(CvSavegameWriter writer)
 
 	writer.Write(UnitSave_Name, m_szName);
 	writer.Write(UnitSave_ScriptData, m_szScriptData);
+
+	writer.Write(UnitSave_HasRealPromotion, m_ba_HasRealPromotion);
+	writer.Write(UnitSave_ExtraDomainModifier, m_ja_iExtraDomainModifier);
+	writer.Write(UnitSave_FreePromotionCount, m_ja_iFreePromotionCount);
+	writer.Write(UnitSave_TerrainDoubleMoveCount, m_ja_iTerrainDoubleMoveCount);
+	writer.Write(UnitSave_FeatureDoubleMoveCount, m_ja_iFeatureDoubleMoveCount);
+	writer.Write(UnitSave_ExtraTerrainAttackPercent, m_ja_iExtraTerrainAttackPercent);
+	writer.Write(UnitSave_ExtraTerrainDefensePercent, m_ja_iExtraTerrainDefensePercent);
+	writer.Write(UnitSave_ExtraFeatureAttackPercent, m_ja_iExtraFeatureAttackPercent);
+	writer.Write(UnitSave_ExtraFeatureDefensePercent, m_ja_iExtraFeatureDefensePercent);
+	writer.Write(UnitSave_ExtraUnitClassAttackModifier, m_ja_iExtraUnitClassAttackModifier);
+	writer.Write(UnitSave_ExtraUnitClassDefenseModifier, m_ja_iExtraUnitClassDefenseModifier);
+	writer.Write(UnitSave_ExtraUnitCombatModifier, m_ja_iExtraUnitCombatModifier);
 
 	writer.Write(UnitSave_END);
 }
