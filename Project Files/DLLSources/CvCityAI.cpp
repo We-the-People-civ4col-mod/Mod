@@ -2503,8 +2503,8 @@ void CvCityAI::AI_doTradedYields()
 		
 		if (GC.getYieldInfo(eLoopYield).isCargo())
 		{
-			m_ja_iTradeBalance.set(m_ja_iTradeBalance.get(eLoopYield) * iDiscountPercent, eLoopYield);
-			m_ja_iTradeBalance.set(m_ja_iTradeBalance.get(eLoopYield)/100, eLoopYield);
+			const int eTmp = (m_ja_iTradeBalance.get(eLoopYield) * iDiscountPercent);
+			m_ja_iTradeBalance.set(eTmp/100, eLoopYield);
 		}
 	}
 }
