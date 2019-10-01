@@ -49,6 +49,8 @@ enum SavegameVariableTypes
 	CitySaveAi_NeededFloatingDefendersCacheTurn,
 	CitySaveAi_WorkersNeeded,
 	CitySaveAi_WorkersHave,
+	CitySaveAi_Emphasize,
+	CitySaveAi_PlayerCloseness,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -80,6 +82,8 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 	case CitySaveAi_NeededFloatingDefendersCacheTurn: return "CitySaveAi_NeededFloatingDefendersCacheTurn";
 	case CitySaveAi_WorkersNeeded: return "CitySaveAi_WorkersNeeded";
 	case CitySaveAi_WorkersHave: return "CitySaveAi_WorkersHave";
+	case CitySaveAi_Emphasize: return "CitySaveAi_Emphasize";
+	case CitySaveAi_PlayerCloseness: return "CitySaveAi_PlayerCloseness";
 	}
 	return "";
 }
@@ -116,6 +120,8 @@ m_iNeededFloatingDefenders = defaultNeededFloatingDefenders;
 m_iNeededFloatingDefendersCacheTurn = defaultNeededFloatingDefendersCacheTurn;
 m_iWorkersNeeded = defaultWorkersNeeded;
 m_iWorkersHave = defaultWorkersHave;
+m_ba_Emphasize.reset();
+m_aiPlayerCloseness.reset();
 }
 
 void CvCityAI::read(CvSavegameReader reader)
@@ -167,6 +173,8 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_NeededFloatingDefendersCacheTurn: reader.Read(m_iNeededFloatingDefendersCacheTurn); break;
 			case CitySaveAi_WorkersNeeded: reader.Read(m_iWorkersNeeded); break;
 			case CitySaveAi_WorkersHave: reader.Read(m_iWorkersHave); break;
+			case CitySaveAi_Emphasize: reader.Read(m_ba_Emphasize); break;
+			case CitySaveAi_PlayerCloseness: reader.Read(m_aiPlayerCloseness); break;
 
 		}
 	}
@@ -211,5 +219,9 @@ void CvCityAI::write(CvSavegameWriter writer)
 	writer.Write(CitySaveAi_NeededFloatingDefendersCacheTurn, m_iNeededFloatingDefendersCacheTurn, defaultNeededFloatingDefendersCacheTurn);
 	writer.Write(CitySaveAi_WorkersNeeded, m_iWorkersNeeded, defaultWorkersNeeded);
 	writer.Write(CitySaveAi_WorkersHave, m_iWorkersHave, defaultWorkersHave);
+
+	writer.Write(CitySaveAi_Emphasize, m_ba_Emphasize);
+	writer.Write(CitySaveAi_PlayerCloseness, m_aiPlayerCloseness);
+
 	writer.Write(Save_END);
 }

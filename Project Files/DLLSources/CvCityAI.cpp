@@ -29,13 +29,10 @@
 
 // Public Functions...
 
-CvCityAI::CvCityAI()
+CvCityAI::CvCityAI() :
+m_ba_Emphasize(JIT_ARRAY_EMPHASIZE)
 {	
 	m_bForceEmphasizeCulture = false;
-	m_aiPlayerCloseness = new int[MAX_PLAYERS];
-
-	m_abEmphasize = NULL;
-
 	AI_reset();
 }
 
@@ -43,8 +40,6 @@ CvCityAI::CvCityAI()
 CvCityAI::~CvCityAI()
 {
 	AI_uninit();
-
-	SAFE_DELETE_ARRAY(m_aiPlayerCloseness);
 }
 
 
@@ -66,7 +61,6 @@ void CvCityAI::AI_init()
 
 void CvCityAI::AI_uninit()
 {
-	SAFE_DELETE_ARRAY(m_abEmphasize);
 }
 
 
@@ -92,19 +86,6 @@ void CvCityAI::AI_reset()
 	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		m_aeBestBuild[iI] = NO_BUILD;
-	}
-	
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiPlayerCloseness[iI] = 0;
-	}
-
-	FAssertMsg(m_abEmphasize == NULL, "m_abEmphasize not NULL!!!");
-	FAssertMsg(GC.getNumEmphasizeInfos() > 0,  "GC.getNumEmphasizeInfos() is not greater than zero but an array is being allocated in CvCityAI::AI_reset");
-	m_abEmphasize = new bool[GC.getNumEmphasizeInfos()];
-	for (iI = 0; iI < GC.getNumEmphasizeInfos(); iI++)
-	{
-		m_abEmphasize[iI] = false;
 	}
 }
 
@@ -1968,8 +1949,7 @@ bool CvCityAI::AI_isEmphasize(EmphasizeTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumEmphasizeInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	FAssertMsg(m_abEmphasize != NULL, "m_abEmphasize is not expected to be equal with NULL");
-	return m_abEmphasize[eIndex];
+	return m_ba_Emphasize.get(eIndex);
 }
 
 
@@ -1980,7 +1960,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 
 	if (AI_isEmphasize(eIndex) != bNewValue)
 	{
-		m_abEmphasize[eIndex] = bNewValue;
+		m_ba_Emphasize.set(bNewValue, eIndex);
 
 		if (GC.getEmphasizeInfo(eIndex).isAvoidGrowth())
 		{
@@ -6039,7 +6019,7 @@ int CvCityAI::AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const
 		AI_cachePlayerCloseness(iMaxDistance);
 	}
 	
-	return m_aiPlayerCloseness[eIndex];
+	return m_aiPlayerCloseness.get(eIndex);
 }
 
 void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
@@ -6106,7 +6086,7 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 					}
 				}
 			}
-			m_aiPlayerCloseness[iI] = (iBestValue + iValue / 4);
+			(const_cast <CvCityAI*> (this))->m_aiPlayerCloseness.set((PlayerTypes)iI,(iBestValue + iValue / 4));
 		}
 	}
 	
@@ -6414,8 +6394,6 @@ void CvCityAI::read(FDataStreamBase* pStream)
 	
 	pStream->Read(NUM_CITY_PLOTS, m_aiBestBuildValue);
 	pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
-	pStream->Read(GC.getNumEmphasizeInfos(), m_abEmphasize);
-	pStream->Read(MAX_PLAYERS, m_aiPlayerCloseness);
 }
 
 //
@@ -6434,6 +6412,4 @@ void CvCityAI::write(FDataStreamBase* pStream)
 
 	pStream->Write(NUM_CITY_PLOTS, m_aiBestBuildValue);
 	pStream->Write(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
-	pStream->Write(GC.getNumEmphasizeInfos(), m_abEmphasize);
-	pStream->Write(MAX_PLAYERS, m_aiPlayerCloseness);
 }

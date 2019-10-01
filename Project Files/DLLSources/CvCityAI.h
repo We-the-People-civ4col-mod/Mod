@@ -213,11 +213,11 @@ protected:
 
 	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS_RADIUS_2];
 
-	bool* m_abEmphasize;
+	BoolArray m_ba_Emphasize;
 
 	mutable int m_iCachePlayerClosenessTurn;
 	mutable int m_iCachePlayerClosenessDistance;
-	int* m_aiPlayerCloseness;
+	PlayerArray<int> m_aiPlayerCloseness;
 
 	int m_iNeededFloatingDefenders;
 	int m_iNeededFloatingDefendersCacheTurn;
