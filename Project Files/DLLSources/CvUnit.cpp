@@ -12227,9 +12227,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 {
 	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
 
-	pStream->ReadString(m_szName);
-	pStream->ReadString(m_szScriptData);
-
 	pStream->Read(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
 	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
 	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
@@ -12257,9 +12254,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 void CvUnit::write(FDataStreamBase* pStream)
 {
 	pStream->Write(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->WriteString(m_szName);
-	pStream->WriteString(m_szScriptData);
 
 	pStream->Write(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
 	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
