@@ -393,16 +393,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	m_YieldForNativeTrade = NO_YIELD;
 	// R&R, ray, Natives Trading - END
 
-	m_bMadeAttack = false;
-	m_bPromotionReady = false;
-	m_bDeathDelay = false;
-	m_bCombatFocus = false;
 	m_bInfoBarDirty = false;
-	m_bColonistLocked = false;
-	m_bGatheringResource = false; //TAC Whaling, ray
-	m_bBarbarian = false; // < JAnimals Mod Start >
-	m_bIgnoreDanger = false; // TAC - Trade Routes Advisor - koma13 - START
-
 	m_eOwner = eOwner;
 	m_eCapturingPlayer = NO_PLAYER;
 	m_eUnitType = eUnit;
@@ -12290,20 +12281,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 	// R&R, ray, Natives Trading - END
 
 	pStream->Read((int*)&m_eUnitTravelState);
-
-	pStream->Read(&m_bMadeAttack);
-	pStream->Read(&m_bPromotionReady);
-	pStream->Read(&m_bDeathDelay);
-	pStream->Read(&m_bCombatFocus);
-	// m_bInfoBarDirty not saved...
-	pStream->Read(&m_bColonistLocked);
-
-	pStream->Read(&m_bGatheringResource); //TAC Whaling, ray
-	
-	pStream->Read(&m_bIgnoreDanger); // TAC - Trade Routes Advisor - koma13 - START
-	// < JAnimals Mod Start >
-	pStream->Read(&m_bBarbarian);
-	// < JAnimals Mod End >
 	pStream->Read((int*)&m_eOwner);
 	pStream->Read((int*)&m_eCapturingPlayer);
 	//pStream->Read((int*)&m_eUnitType);
@@ -12368,19 +12345,6 @@ void CvUnit::write(FDataStreamBase* pStream)
 
 	pStream->Write(m_eUnitTravelState);
 
-	pStream->Write(m_bMadeAttack);
-	pStream->Write(m_bPromotionReady);
-	pStream->Write(m_bDeathDelay);
-	pStream->Write(m_bCombatFocus);
-	// m_bInfoBarDirty not saved...
-	pStream->Write(m_bColonistLocked);
-
-	pStream->Write(m_bGatheringResource); //TAC Whaling, ray
-
-	pStream->Write(m_bIgnoreDanger); // TAC - Trade Routes Advisor - koma13 - START
-	// < JAnimals Mod Start >
-	pStream->Write(m_bBarbarian);
-	// < JAnimals Mod End >
 	pStream->Write(m_eOwner);
 	pStream->Write(m_eCapturingPlayer);
 	//pStream->Write(m_eUnitType);

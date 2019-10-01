@@ -56,6 +56,16 @@ const int defaultUnitTravelTimer = 0;
 const int defaultBadCityDefenderCount = 0;
 const int defaultUnarmedCount = 0;
 const int defaultPostCombatPlotIndex = -1;
+
+const bool defaultMadeAttack = false;
+const bool defaultPromotionReady = false;
+const bool defaultDeathDelay = false;
+const bool defaultCombatFocus = false;
+const bool defaultColonistLocked = false;
+const bool defaultGatheringResource = false;
+const bool defaultIgnoreDanger = false;
+const bool defaultBarbarian = false;
+
 // 
 enum SavegameVariableTypes
 {
@@ -113,6 +123,14 @@ enum SavegameVariableTypes
 	UnitSave_BadCityDefenderCount,
 	UnitSave_UnarmedCount,
 	UnitSave_PostCombatPlotIndex,
+	UnitSave_MadeAttack,
+	UnitSave_PromotionReady,
+	UnitSave_DeathDelay,
+	UnitSave_CombatFocus,
+	UnitSave_ColonistLocked,
+	UnitSave_GatheringResource,
+	UnitSave_IgnoreDanger,
+	UnitSave_Barbarian,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -174,6 +192,15 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_BadCityDefenderCount: return "UnitSave_BadCityDefenderCount";
 	case UnitSave_UnarmedCount: return "UnitSave_UnarmedCount";
 	case UnitSave_PostCombatPlotIndex: return "UnitSave_PostCombatPlotIndex";
+
+	case UnitSave_MadeAttack: return "UnitSave_MadeAttack";
+	case UnitSave_PromotionReady: return "UnitSave_PromotionReady";
+	case UnitSave_DeathDelay: return "UnitSave_DeathDelay";
+	case UnitSave_CombatFocus: return "UnitSave_CombatFocus";
+	case UnitSave_ColonistLocked: return "UnitSave_ColonistLocked";
+	case UnitSave_GatheringResource: return "UnitSave_GatheringResource";
+	case UnitSave_IgnoreDanger: return "UnitSave_IgnoreDanger";
+	case UnitSave_Barbarian: return "UnitSave_Barbarian";
 }
 	return "";
 }
@@ -239,6 +266,14 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iUnarmedCount = defaultUnarmedCount;
 	m_iPostCombatPlotIndex = defaultPostCombatPlotIndex;
 
+	m_bMadeAttack = defaultMadeAttack;	
+	m_bPromotionReady = defaultPromotionReady;	
+	m_bDeathDelay = defaultDeathDelay;	
+	m_bCombatFocus = defaultCombatFocus;
+	m_bColonistLocked = defaultColonistLocked;
+	m_bGatheringResource = defaultGatheringResource;
+	m_bIgnoreDanger = defaultIgnoreDanger;
+	m_bBarbarian = defaultBarbarian;
 }
 
 void CvUnit::read(CvSavegameReader reader)
@@ -264,7 +299,7 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_Direction: reader.Read(m_eFacingDirection); break;
 		case UnitSave_UnitType: reader.Read(m_eUnitType); break;
-		
+
 		case UnitSave_ID: reader.Read(m_iID); break;
 		case UnitSave_GroupID: reader.Read(m_iGroupID); break;
 		case UnitSave_HotKeyNumber: reader.Read(m_iHotKeyNumber); break;
@@ -316,6 +351,15 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_BadCityDefenderCount: reader.Read(m_iBadCityDefenderCount); break;
 		case UnitSave_UnarmedCount: reader.Read(m_iUnarmedCount); break;
 		case UnitSave_PostCombatPlotIndex: reader.Read(m_iPostCombatPlotIndex); break;
+
+		case UnitSave_MadeAttack: reader.Read(m_bMadeAttack); break;
+		case UnitSave_PromotionReady: reader.Read(m_bPromotionReady); break;
+		case UnitSave_DeathDelay: reader.Read(m_bDeathDelay); break;
+		case UnitSave_CombatFocus: reader.Read(m_bCombatFocus); break;
+		case UnitSave_ColonistLocked: reader.Read(m_bColonistLocked); break;
+		case UnitSave_GatheringResource: reader.Read(m_bGatheringResource); break;
+		case UnitSave_IgnoreDanger: reader.Read(m_bIgnoreDanger); break;
+		case UnitSave_Barbarian: reader.Read(m_bBarbarian); break;
 		}
 	}
 	
@@ -388,6 +432,15 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_BadCityDefenderCount, m_iBadCityDefenderCount, defaultBadCityDefenderCount);
 	writer.Write(UnitSave_UnarmedCount, m_iUnarmedCount, defaultUnarmedCount);
 	writer.Write(UnitSave_PostCombatPlotIndex, m_iPostCombatPlotIndex, defaultPostCombatPlotIndex);
+
+	writer.Write(UnitSave_MadeAttack, m_bMadeAttack, defaultMadeAttack);
+	writer.Write(UnitSave_PromotionReady, m_bPromotionReady, defaultPromotionReady);
+	writer.Write(UnitSave_DeathDelay, m_bDeathDelay, defaultDeathDelay);
+	writer.Write(UnitSave_CombatFocus, m_bCombatFocus, defaultCombatFocus);
+	writer.Write(UnitSave_ColonistLocked, m_bColonistLocked, defaultColonistLocked);
+	writer.Write(UnitSave_GatheringResource, m_bGatheringResource, defaultGatheringResource);
+	writer.Write(UnitSave_IgnoreDanger, m_bIgnoreDanger, defaultIgnoreDanger);
+	writer.Write(UnitSave_Barbarian, m_bBarbarian, defaultBarbarian);
 
 	writer.Write(UnitSave_END);
 }
