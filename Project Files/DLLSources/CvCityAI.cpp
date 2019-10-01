@@ -68,22 +68,10 @@ void CvCityAI::AI_uninit()
 // Initializes data members that are serialized.
 void CvCityAI::AI_reset()
 {
-	int iI;
-
 	AI_uninit();
 	resetSavedData();
 	
 	m_iWorkforceHack = 0;	
-
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	{
-		m_aiBestBuildValue[iI] = NO_BUILD;
-	}
-
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	{
-		m_aeBestBuild[iI] = NO_BUILD;
-	}
 }
 
 
@@ -6385,9 +6373,6 @@ void CvCityAI::read(FDataStreamBase* pStream)
 
 	read(reader);
 	CvCity::read(pStream);
-		
-	pStream->Read(NUM_CITY_PLOTS, m_aiBestBuildValue);
-	pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
 }
 
 //
@@ -6399,9 +6384,6 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
-
 	CvCity::write(pStream);
-	
-	pStream->Write(NUM_CITY_PLOTS, m_aiBestBuildValue);
-	pStream->Write(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
+
 }

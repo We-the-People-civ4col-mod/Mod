@@ -52,6 +52,8 @@ enum SavegameVariableTypes
 	CitySaveAi_Emphasize,
 	CitySaveAi_PlayerCloseness,
 	CitySaveAi_routeToCity,
+	CitySaveAi_BestBuildValue,
+	CitySaveAi_BestBuild,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -86,6 +88,9 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 	case CitySaveAi_Emphasize: return "CitySaveAi_Emphasize";
 	case CitySaveAi_PlayerCloseness: return "CitySaveAi_PlayerCloseness";
 	case CitySaveAi_routeToCity: return "CitySaveAi_routeToCity";
+
+	case CitySaveAi_BestBuildValue: return "CitySaveAi_BestBuildValue";
+	case CitySaveAi_BestBuild: return "CitySaveAi_BestBuild";
 	}
 	return "";
 }
@@ -125,6 +130,17 @@ m_iWorkersHave = defaultWorkersHave;
 m_ba_Emphasize.reset();
 m_aiPlayerCloseness.reset();
 m_routeToCity.reset();
+
+for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+{
+	m_aiBestBuildValue[iI] = NO_BUILD;
+}
+
+for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+{
+	m_aeBestBuild[iI] = NO_BUILD;
+}
+
 }
 
 void CvCityAI::read(CvSavegameReader reader)
@@ -179,7 +195,18 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_Emphasize: reader.Read(m_ba_Emphasize); break;
 			case CitySaveAi_PlayerCloseness: reader.Read(m_aiPlayerCloseness); break;
 			case CitySaveAi_routeToCity: reader.Read(m_routeToCity); break;
-
+			case CitySaveAi_BestBuildValue:
+				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+				{
+					reader.Read(m_aiBestBuildValue[iI]);
+				}
+				break;
+			case CitySaveAi_BestBuild: 
+				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+					{
+						reader.Read(m_aeBestBuild[iI]);
+					}
+				break;
 		}
 	}
 	
@@ -228,6 +255,17 @@ void CvCityAI::write(CvSavegameWriter writer)
 	writer.Write(CitySaveAi_PlayerCloseness, m_aiPlayerCloseness);
 
 	writer.Write(CitySaveAi_routeToCity, m_routeToCity);
+
+	writer.Write(CitySaveAi_BestBuildValue);
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			writer.Write(m_aiBestBuildValue[iI]);
+		}
+	writer.Write(CitySaveAi_BestBuild);
+		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
+		{
+			writer.Write(m_aeBestBuild[iI]);
+		}
 
 	writer.Write(Save_END);
 }
