@@ -51,6 +51,7 @@ enum SavegameVariableTypes
 	CitySaveAi_WorkersHave,
 	CitySaveAi_Emphasize,
 	CitySaveAi_PlayerCloseness,
+	CitySaveAi_routeToCity,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -84,6 +85,7 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 	case CitySaveAi_WorkersHave: return "CitySaveAi_WorkersHave";
 	case CitySaveAi_Emphasize: return "CitySaveAi_Emphasize";
 	case CitySaveAi_PlayerCloseness: return "CitySaveAi_PlayerCloseness";
+	case CitySaveAi_routeToCity: return "CitySaveAi_routeToCity";
 	}
 	return "";
 }
@@ -122,6 +124,7 @@ m_iWorkersNeeded = defaultWorkersNeeded;
 m_iWorkersHave = defaultWorkersHave;
 m_ba_Emphasize.reset();
 m_aiPlayerCloseness.reset();
+m_routeToCity.reset();
 }
 
 void CvCityAI::read(CvSavegameReader reader)
@@ -175,6 +178,7 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_WorkersHave: reader.Read(m_iWorkersHave); break;
 			case CitySaveAi_Emphasize: reader.Read(m_ba_Emphasize); break;
 			case CitySaveAi_PlayerCloseness: reader.Read(m_aiPlayerCloseness); break;
+			case CitySaveAi_routeToCity: reader.Read(m_routeToCity); break;
 
 		}
 	}
@@ -222,6 +226,8 @@ void CvCityAI::write(CvSavegameWriter writer)
 
 	writer.Write(CitySaveAi_Emphasize, m_ba_Emphasize);
 	writer.Write(CitySaveAi_PlayerCloseness, m_aiPlayerCloseness);
+
+	writer.Write(CitySaveAi_routeToCity, m_routeToCity);
 
 	writer.Write(Save_END);
 }
