@@ -69,6 +69,15 @@ const bool defaultGatheringResource = false;
 const bool defaultIgnoreDanger = false;
 const bool defaultBarbarian = false;
 
+const ProfessionTypes defaultProfession = NO_PROFESSION;
+const ProfessionTypes defaultLastProfession = NO_PROFESSION;
+const PlayerTypes defaultPlayerToBuyLand = NO_PLAYER;
+const YieldTypes defaultYieldForNativeTrade = NO_YIELD;
+const UnitTravelStates defaultUnitTravelState = NO_UNIT_TRAVEL_STATE;
+const PlayerTypes defaultOwner = NO_PLAYER;
+const PlayerTypes defaultCapturingPlayer = NO_PLAYER;
+const UnitTypes defaultLeaderUnitType =  NO_UNIT;
+
 // 
 enum SavegameVariableTypes
 {
@@ -138,6 +147,16 @@ enum SavegameVariableTypes
 	UnitSave_GatheringResource,
 	UnitSave_IgnoreDanger,
 	UnitSave_Barbarian,
+
+	UnitSave_Profession,
+	UnitSave_LastProfession,
+	UnitSave_PlayerToBuyLand,
+	UnitSave_YieldForNativeTrade,
+	UnitSave_UnitTravelState,
+	UnitSave_Owner,
+	UnitSave_CapturingPlayer,
+	UnitSave_LeaderUnitType,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -211,6 +230,15 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_GatheringResource: return "UnitSave_GatheringResource";
 	case UnitSave_IgnoreDanger: return "UnitSave_IgnoreDanger";
 	case UnitSave_Barbarian: return "UnitSave_Barbarian";
+
+	case UnitSave_Profession: return "UnitSave_Profession";
+	case UnitSave_LastProfession: return "UnitSave_LastProfession";
+	case UnitSave_PlayerToBuyLand: return "UnitSave_PlayerToBuyLand";
+	case UnitSave_YieldForNativeTrade: return "UnitSave_YieldForNativeTrade";
+	case UnitSave_UnitTravelState: return "UnitSave_UnitTravelState";
+	case UnitSave_Owner: return "UnitSave_Owner";
+	case UnitSave_CapturingPlayer: return "UnitSave_CapturingPlayer";
+	case UnitSave_LeaderUnitType: return "UnitSave_LeaderUnitType";
 }
 	return "";
 }
@@ -287,6 +315,15 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_bGatheringResource = defaultGatheringResource;
 	m_bIgnoreDanger = defaultIgnoreDanger;
 	m_bBarbarian = defaultBarbarian;
+
+	m_eProfession = defaultProfession;
+	m_eLastProfession = defaultLastProfession;
+	m_ePlayerToBuyLand = defaultPlayerToBuyLand;
+	m_eYieldForNativeTrade = defaultYieldForNativeTrade;
+	m_eUnitTravelState = defaultUnitTravelState;
+	m_eOwner = eOwner;
+	m_eCapturingPlayer = defaultCapturingPlayer;
+	m_eLeaderUnitType = defaultLeaderUnitType;
 }
 
 void CvUnit::read(CvSavegameReader reader)
@@ -377,6 +414,14 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_IgnoreDanger: reader.Read(m_bIgnoreDanger); break;
 		case UnitSave_Barbarian: reader.Read(m_bBarbarian); break;
 
+		case UnitSave_Profession: reader.Read(m_eProfession); break;
+		case UnitSave_LastProfession: reader.Read(m_eLastProfession); break;
+		case UnitSave_PlayerToBuyLand: reader.Read(m_ePlayerToBuyLand); break;
+		case UnitSave_YieldForNativeTrade: reader.Read(m_eYieldForNativeTrade); break;
+		case UnitSave_UnitTravelState: reader.Read(m_eUnitTravelState); break;
+		case UnitSave_Owner: reader.Read(m_eOwner); break;
+		case UnitSave_CapturingPlayer: reader.Read(m_eCapturingPlayer); break;
+		case UnitSave_LeaderUnitType: reader.Read(m_eLeaderUnitType); break;
 		}
 	}
 	
@@ -462,6 +507,15 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_GatheringResource, m_bGatheringResource, defaultGatheringResource);
 	writer.Write(UnitSave_IgnoreDanger, m_bIgnoreDanger, defaultIgnoreDanger);
 	writer.Write(UnitSave_Barbarian, m_bBarbarian, defaultBarbarian);
+
+	writer.Write(UnitSave_Profession, m_eProfession, defaultProfession);
+	writer.Write(UnitSave_LastProfession, m_eLastProfession, defaultLastProfession);
+	writer.Write(UnitSave_PlayerToBuyLand, m_ePlayerToBuyLand, defaultPlayerToBuyLand);
+	writer.Write(UnitSave_YieldForNativeTrade, m_eYieldForNativeTrade, defaultYieldForNativeTrade);
+	writer.Write(UnitSave_UnitTravelState, m_eUnitTravelState, defaultUnitTravelState);
+	writer.Write(UnitSave_Owner, m_eOwner, defaultOwner);
+	writer.Write(UnitSave_CapturingPlayer, m_eCapturingPlayer, defaultCapturingPlayer);
+	writer.Write(UnitSave_LeaderUnitType, m_eLeaderUnitType, defaultLeaderUnitType);
 
 	writer.Write(UnitSave_END);
 }

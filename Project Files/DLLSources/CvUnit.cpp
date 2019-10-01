@@ -67,23 +67,11 @@ CvUnit::CvUnit() :
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
 
-	// TAC - LbD - Ray - START
-	m_lastProfession(NO_PROFESSION),
-	// TAC - LbD - Ray - END
-
-	//ray18
-	playerToBuyLand(NO_PLAYER),
-	//ray18 End
-
 	// unit yield cache - start - Nightinggale
 	m_eCachedYield(NO_YIELD),
 	// unit yield cache - end - Nightinggale
 
-	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION),
-
-	// R&R, ray, Natives Trading - START
-	m_YieldForNativeTrade(NO_YIELD)
-	// R&R, ray, Natives Trading - END
+	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION)
 
 {
 	m_aiExtraDomainModifier = new int[NUM_DOMAIN_TYPES];
@@ -375,28 +363,12 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 
 	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
 
-	// TAC - LbD - Ray - START
-	m_lastProfession = NO_PROFESSION;
-	// TAC - LbD - Ray - END
-
-	//ray18
-	playerToBuyLand = NO_PLAYER;
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	m_YieldForNativeTrade = NO_YIELD;
-	// R&R, ray, Natives Trading - END
-
 	m_bInfoBarDirty = false;
 	m_eOwner = eOwner;
-	m_eCapturingPlayer = NO_PLAYER;
 	m_eUnitType = eUnit;
 	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
-	m_eLeaderUnitType = NO_UNIT;
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
-	m_eProfession = NO_PROFESSION;
-	m_eUnitTravelState = NO_UNIT_TRAVEL_STATE;
 
 	m_combatUnit.reset();
 	m_transportUnit.reset();
@@ -6308,7 +6280,7 @@ bool CvUnit::doAcquireCheckNatives()
 		if (eNativeOwner != NO_PLAYER)
 		{
 			m_iMoneyToBuyLand = iCost;
-			playerToBuyLand = eNativeOwner;
+			m_ePlayerToBuyLand = eNativeOwner;
 			GET_TEAM(getTeam()).meet(GET_PLAYER(eNativeOwner).getTeam(), false);
 		}
 
@@ -6338,18 +6310,18 @@ bool CvUnit::doAcquireCheckNatives()
 
 void CvUnit::buyLandAfterAcquire()
 {
-	if (playerToBuyLand != NO_PLAYER)
+	if (m_ePlayerToBuyLand != NO_PLAYER)
 	{
 		//resetting to Peace if Acquiring City has caused war
-		if (GET_TEAM(GET_PLAYER(playerToBuyLand).getTeam()).isAtWar(getTeam()))
+		if (GET_TEAM(GET_PLAYER(m_ePlayerToBuyLand).getTeam()).isAtWar(getTeam()))
 		{
-			GET_TEAM(GET_PLAYER(playerToBuyLand).getTeam()).makePeace(getTeam());
-			CvWString szBuffer = gDLL->getText("TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY", GET_PLAYER(playerToBuyLand).getNameKey());
+			GET_TEAM(GET_PLAYER(m_ePlayerToBuyLand).getTeam()).makePeace(getTeam());
+			CvWString szBuffer = gDLL->getText("TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY", GET_PLAYER(m_ePlayerToBuyLand).getNameKey());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitDefeatScript(), MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), NULL, NULL);
 		}
 
-		GET_PLAYER(playerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
-		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(playerToBuyLand, m_iMoneyToBuyLand);
+		GET_PLAYER(m_ePlayerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
+		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(m_ePlayerToBuyLand, m_iMoneyToBuyLand);
 		GET_PLAYER(getOwnerINLINE()).changeGold(m_iMoneyToBuyLand * -1);		
 	}
 }
@@ -9024,12 +8996,12 @@ void CvUnit::setLbDrounds(int newRounds)
 
 ProfessionTypes CvUnit::getLastLbDProfession() const
 {
-	return m_lastProfession;
+	return m_eLastProfession;
 }
 
 void CvUnit::setLastLbDProfession(ProfessionTypes eProfession)
 {
-	m_lastProfession = eProfession;
+	m_eLastProfession = eProfession;
 }
 // TAC - LbD - Ray - END
 
@@ -12253,28 +12225,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 
 void CvUnit::read(FDataStreamBase* pStream)
 {
-	pStream->Read((int*)&m_eProfession);
-
-	// TAC - LbD - Ray - START
-	pStream->Read((int*)&m_lastProfession);
-	// TAC - LbD - Ray - END
-
-	//ray18
-	pStream->Read((int*)&playerToBuyLand);	
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	pStream->Read((int*)&m_YieldForNativeTrade);
-	// R&R, ray, Natives Trading - END
-
-	pStream->Read((int*)&m_eUnitTravelState);
-	pStream->Read((int*)&m_eOwner);
-	pStream->Read((int*)&m_eCapturingPlayer);
-	//pStream->Read((int*)&m_eUnitType);
-	//FAssert(NO_UNIT != m_eUnitType);
-	//m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	pStream->Read((int*)&m_eLeaderUnitType);
-
 	m_combatUnit.read(pStream);
 	m_transportUnit.read(pStream);
 	m_homeCity.read(pStream);
@@ -12310,26 +12260,6 @@ void CvUnit::read(FDataStreamBase* pStream)
 
 void CvUnit::write(FDataStreamBase* pStream)
 {
-	pStream->Write(m_eProfession);
-
-	// TAC - LbD - Ray - START
-	pStream->Write(m_lastProfession);
-	// TAC - LbD - Ray - END
-
-	//ray18
-	pStream->Write(playerToBuyLand);
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	pStream->Write(m_YieldForNativeTrade);
-	// R&R, ray, Natives Trading -END
-
-	pStream->Write(m_eUnitTravelState);
-
-	pStream->Write(m_eOwner);
-	pStream->Write(m_eCapturingPlayer);
-	//pStream->Write(m_eUnitType);
-	pStream->Write(m_eLeaderUnitType);
 
 	m_combatUnit.write(pStream);
 	m_transportUnit.write(pStream);
@@ -14588,7 +14518,7 @@ bool CvUnit::isFishingBoat() const
 // R&R, ray, Natives Trading - START
 void CvUnit::setYieldForNativeTrade(YieldTypes nativeTradeYield)
 {
-	m_YieldForNativeTrade = nativeTradeYield;
+	m_eYieldForNativeTrade = nativeTradeYield;
 }
 
 void CvUnit::setAmountForNativeTrade(int nativeTradeAmount)
@@ -14598,7 +14528,7 @@ void CvUnit::setAmountForNativeTrade(int nativeTradeAmount)
 
 YieldTypes CvUnit::getYieldForNativeTrade() const
 {
-	return m_YieldForNativeTrade;
+	return m_eYieldForNativeTrade;
 }
 
 int CvUnit::getAmountForNativeTrade() const

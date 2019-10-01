@@ -826,17 +826,17 @@ protected:
 
 	// TAC - LbD - Ray - START
 	int m_iLbDrounds;
-	ProfessionTypes m_lastProfession;
+	ProfessionTypes m_eLastProfession;
 	// TAC - LbD - Ray - END
 
 	//ray18
 	int m_iMoneyToBuyLand;
-	PlayerTypes playerToBuyLand;
+	PlayerTypes m_ePlayerToBuyLand;
 	//ray18 End
 
 	// R&R, ray, Natives Trading - START
 	int m_iAmountForNativeTrade;
-	YieldTypes m_YieldForNativeTrade;
+	YieldTypes m_eYieldForNativeTrade;
 	// R&R, ray, Natives Trading - END
 
 	UnitTravelStates m_eUnitTravelState;
