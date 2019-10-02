@@ -293,6 +293,16 @@ int JustInTimeArray<T>::getPositiveCount() const
 }
 
 template<class T>
+T JustInTimeArray<T>::getMax() const
+{
+	if (!isAllocated())
+	{
+		return m_eDefault ;
+	}
+	return *std::max_element(m_tArray, m_tArray + m_iLength);
+}
+
+template<class T>
 int JustInTimeArray<T>::safeSet(T value, int iIndex)
 {
 	if (iIndex >= 0 && iIndex < this->length())

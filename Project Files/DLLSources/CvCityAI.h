@@ -176,7 +176,12 @@ public:
 	DllExport void read(FDataStreamBase* pStream);
 	DllExport void write(FDataStreamBase* pStream);
 
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 protected:
+
+	void AI_resetSavedData();
 
 	int m_iGiftTimer;
 	int m_iTradeTimer; // R&R, ray, Natives Trading - START
@@ -186,10 +191,10 @@ protected:
 	int m_iFoundValue;
 	int m_iTargetSize;
 
-	int* m_aiYieldOutputWeight;
-	int* m_aiNeededYield;
-	int* m_aiTradeBalance;
-	int* m_aiYieldAdvantage;
+	YieldArray <int> m_ja_iYieldOutputWeight;
+	YieldArray <int> m_ja_iNeededYield;
+	YieldArray <int> m_ja_iTradeBalance;
+	YieldArray <int> m_ja_iYieldAdvantage;
 
 	int m_iEmphasizeAvoidGrowthCount;
 
@@ -201,18 +206,18 @@ protected:
 
 	IDInfo m_routeToCity;
 
-	int* m_aiEmphasizeYieldCount;
+	YieldArray <int> m_ja_iEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
 	int m_aiBestBuildValue[NUM_CITY_PLOTS_RADIUS_2];
 
 	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS_RADIUS_2];
 
-	bool* m_abEmphasize;
+	BoolArray m_ba_Emphasize;
 
 	mutable int m_iCachePlayerClosenessTurn;
 	mutable int m_iCachePlayerClosenessDistance;
-	int* m_aiPlayerCloseness;
+	PlayerArray<int> m_aiPlayerCloseness;
 
 	int m_iNeededFloatingDefenders;
 	int m_iNeededFloatingDefendersCacheTurn;

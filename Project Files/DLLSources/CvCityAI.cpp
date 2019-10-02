@@ -18,6 +18,9 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
 
+#include "CvSavegame.h"
+
+
 #define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
 #define BUILDINGFOCUS_BUILD_ANYTHING		(1 << 30)
 #define BUILDINGFOCUS_MILITARY				(1 << 29)	// TAC - AI Buildings - koma13
@@ -26,19 +29,10 @@
 
 // Public Functions...
 
-CvCityAI::CvCityAI()
-{
-	m_aiYieldOutputWeight = new int[NUM_YIELD_TYPES];
-	m_aiNeededYield = new int[NUM_YIELD_TYPES];
-	m_aiTradeBalance = new int[NUM_YIELD_TYPES];
-	m_aiYieldAdvantage = new int[NUM_YIELD_TYPES];
-	
-	m_aiEmphasizeYieldCount = new int[NUM_YIELD_TYPES];
+CvCityAI::CvCityAI() :
+m_ba_Emphasize(JIT_ARRAY_EMPHASIZE)
+{	
 	m_bForceEmphasizeCulture = false;
-	m_aiPlayerCloseness = new int[MAX_PLAYERS];
-
-	m_abEmphasize = NULL;
-
 	AI_reset();
 }
 
@@ -46,13 +40,6 @@ CvCityAI::CvCityAI()
 CvCityAI::~CvCityAI()
 {
 	AI_uninit();
-
-	SAFE_DELETE_ARRAY(m_aiYieldOutputWeight);
-	SAFE_DELETE_ARRAY(m_aiNeededYield);
-	SAFE_DELETE_ARRAY(m_aiTradeBalance);
-	SAFE_DELETE_ARRAY(m_aiYieldAdvantage);
-	SAFE_DELETE_ARRAY(m_aiEmphasizeYieldCount);
-	SAFE_DELETE_ARRAY(m_aiPlayerCloseness);
 }
 
 
@@ -74,7 +61,6 @@ void CvCityAI::AI_init()
 
 void CvCityAI::AI_uninit()
 {
-	SAFE_DELETE_ARRAY(m_abEmphasize);
 }
 
 
@@ -82,71 +68,10 @@ void CvCityAI::AI_uninit()
 // Initializes data members that are serialized.
 void CvCityAI::AI_reset()
 {
-	int iI;
-
 	AI_uninit();
+	AI_resetSavedData();
 	
-	m_iGiftTimer = 0;
-	m_iTradeTimer = 0; // R&R, ray, Natives Trading - START
-	m_eDesiredYield = NO_YIELD;
-	
-	m_iTargetSize = 0;
-	m_iFoundValue = 0;
-
-	m_iEmphasizeAvoidGrowthCount = 0;
-	m_bForceEmphasizeCulture = false;
-
-	m_bPort = false;
-	m_bAssignWorkDirty = false;
-	m_bChooseProductionDirty = false;
-	
-	m_iWorkforceHack = 0;
-
-	m_routeToCity.reset();
-	
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiYieldOutputWeight[iI] = 0;
-		m_aiNeededYield[iI] = 0;
-		m_aiTradeBalance[iI] = 0;
-		m_aiYieldAdvantage[iI] = 0;
-	}	
-
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiEmphasizeYieldCount[iI] = 0;
-	}
-
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	{
-		m_aiBestBuildValue[iI] = NO_BUILD;
-	}
-
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	{
-		m_aeBestBuild[iI] = NO_BUILD;
-	}
-	
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiPlayerCloseness[iI] = 0;
-	}
-	m_iCachePlayerClosenessTurn = -1;
-	m_iCachePlayerClosenessDistance = -1;
-	
-	m_iNeededFloatingDefenders = -1;
-	m_iNeededFloatingDefendersCacheTurn = -1;
-
-	m_iWorkersNeeded = 0;
-	m_iWorkersHave = 0;
-
-	FAssertMsg(m_abEmphasize == NULL, "m_abEmphasize not NULL!!!");
-	FAssertMsg(GC.getNumEmphasizeInfos() > 0,  "GC.getNumEmphasizeInfos() is not greater than zero but an array is being allocated in CvCityAI::AI_reset");
-	m_abEmphasize = new bool[GC.getNumEmphasizeInfos()];
-	for (iI = 0; iI < GC.getNumEmphasizeInfos(); iI++)
-	{
-		m_abEmphasize[iI] = false;
-	}
+	m_iWorkforceHack = 0;	
 }
 
 
@@ -2002,15 +1927,14 @@ int CvCityAI::AI_getEmphasizeYieldCount(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiEmphasizeYieldCount[eIndex];
+	return m_ja_iEmphasizeYieldCount.get(eIndex);
 }
 
 bool CvCityAI::AI_isEmphasize(EmphasizeTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumEmphasizeInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	FAssertMsg(m_abEmphasize != NULL, "m_abEmphasize is not expected to be equal with NULL");
-	return m_abEmphasize[eIndex];
+	return m_ba_Emphasize.get(eIndex);
 }
 
 
@@ -2021,7 +1945,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 
 	if (AI_isEmphasize(eIndex) != bNewValue)
 	{
-		m_abEmphasize[eIndex] = bNewValue;
+		m_ba_Emphasize.set(bNewValue, eIndex);
 
 		if (GC.getEmphasizeInfo(eIndex).isAvoidGrowth())
 		{
@@ -2034,7 +1958,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 			int iYieldChange = GC.getEmphasizeInfo(eIndex).getYieldChange(iI);
 			if (iYieldChange != 0)
 			{
-				m_aiEmphasizeYieldCount[iI] += ((AI_isEmphasize(eIndex)) ? iYieldChange : -iYieldChange);
+				m_ja_iEmphasizeYieldCount.add(((AI_isEmphasize(eIndex)) ? iYieldChange : -iYieldChange), iI);
 			}
 		}
 
@@ -2054,8 +1978,8 @@ void CvCityAI::AI_forceEmphasizeCulture(bool bNewValue)
 	{
 		m_bForceEmphasizeCulture = bNewValue;
 
-		m_aiEmphasizeYieldCount[YIELD_CROSSES] += (bNewValue ? 1 : -1);
-		FAssert(m_aiEmphasizeYieldCount[YIELD_CROSSES] >= 0);
+		m_ja_iEmphasizeYieldCount.add((bNewValue ? 1 : -1), YIELD_CROSSES);
+		FAssert(m_ja_iEmphasizeYieldCount.get(YIELD_CROSSES) >= 0);
 	}
 }
 
@@ -2563,11 +2487,7 @@ void CvCityAI::AI_doNative()
 
 void CvCityAI::AI_resetTradedYields()
 {
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
-	{
-		YieldTypes eLoopYield = (YieldTypes)i;
-		m_aiTradeBalance[eLoopYield] = 0;
-	}
+	m_ja_iTradeBalance.reset();
 }
 
 //This should only be called once per turn.
@@ -2583,8 +2503,8 @@ void CvCityAI::AI_doTradedYields()
 		
 		if (GC.getYieldInfo(eLoopYield).isCargo())
 		{
-			m_aiTradeBalance[eLoopYield] *= iDiscountPercent;
-			m_aiTradeBalance[eLoopYield] /= 100;
+			const int eTmp = (m_ja_iTradeBalance.get(eLoopYield) * iDiscountPercent);
+			m_ja_iTradeBalance.set(eTmp/100, eLoopYield);
 		}
 	}
 }
@@ -4656,7 +4576,7 @@ int CvCityAI::AI_getYieldOutputWeight(YieldTypes eYield) const
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	
-	return m_aiYieldOutputWeight[eYield];
+	return m_ja_iYieldOutputWeight.get(eYield);
 }
 
 void CvCityAI::AI_setYieldOutputWeight(YieldTypes eYield, int iNewValue)
@@ -4665,7 +4585,7 @@ void CvCityAI::AI_setYieldOutputWeight(YieldTypes eYield, int iNewValue)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(iNewValue >= 0, "Weight should be positive");
 	
-	m_aiYieldOutputWeight[eYield] = iNewValue;	
+	m_ja_iYieldOutputWeight.set(iNewValue, eYield);
 }
 	
 int CvCityAI::AI_getNeededYield(YieldTypes eYield) const
@@ -4673,7 +4593,7 @@ int CvCityAI::AI_getNeededYield(YieldTypes eYield) const
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	
-	return m_aiNeededYield[eYield];
+	return m_ja_iNeededYield.get(eYield);
 	
 }
 
@@ -4683,7 +4603,7 @@ void CvCityAI::AI_setNeededYield(YieldTypes eYield, int iNewValue)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(iNewValue > 0, "Negative needed yield makes no sense");
 	
-	m_aiNeededYield[eYield] = iNewValue;
+	m_ja_iNeededYield.set(iNewValue, eYield);
 }
 
 
@@ -4694,7 +4614,7 @@ int CvCityAI::AI_getTradeBalance(YieldTypes eYield) const
 	
 	int iAdjustment = 100 + 300 / (2 + YIELD_DISCOUNT_TURNS);
 	
-	return (m_aiTradeBalance[eYield] * iAdjustment) / (YIELD_DISCOUNT_TURNS * 100);
+	return (m_ja_iTradeBalance.get(eYield)* iAdjustment) / (YIELD_DISCOUNT_TURNS * 100);
 }
 	
 void CvCityAI::AI_changeTradeBalance(YieldTypes eYield, int iAmount)
@@ -4702,21 +4622,21 @@ void CvCityAI::AI_changeTradeBalance(YieldTypes eYield, int iAmount)
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	
-	m_aiTradeBalance[eYield] += iAmount;
+	m_ja_iTradeBalance.add(iAmount, eYield);
 }
 
 int CvCityAI::AI_getYieldAdvantage(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	return m_aiYieldAdvantage[eYield];
+	return m_ja_iYieldAdvantage.get(eYield);
 }
 
 void CvCityAI::AI_setYieldAdvantage(YieldTypes eYield, int iNewValue)
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	m_aiYieldAdvantage[eYield] = iNewValue;
+	m_ja_iYieldAdvantage.set(iNewValue, eYield);
 }
 
 void CvCityAI::AI_assignDesiredYield()
@@ -4777,10 +4697,9 @@ YieldTypes CvCityAI::AI_getDesiredYield() const
 void CvCityAI::AI_updateNeededYields()
 {
 	//This function has been updated to be invariant of the current workforce allocation.
-	for (int i = 0; i < NUM_YIELD_TYPES; i++)
-	{
-		m_aiNeededYield[i] = 0;
-	}
+
+	m_ja_iNeededYield.reset();
+	
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
@@ -4796,7 +4715,7 @@ void CvCityAI::AI_updateNeededYields()
 					// R&R, ray , MYCP partially based on code of Aymerick - END
 					if (eConsumedYield != NO_YIELD)
 					{
-						m_aiNeededYield[eConsumedYield] += getProfessionInput(pLoopUnit->getProfession(), pLoopUnit);					
+						m_ja_iNeededYield.add(getProfessionInput(pLoopUnit->getProfession(), pLoopUnit), eConsumedYield);
 					}
 				}
 			}
@@ -4809,7 +4728,7 @@ void CvCityAI::AI_updateNeededYields()
 					// R&R, ray , MYCP partially based on code of Aymerick - START
 					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(eIdealProfession).getYieldsConsumed(0);
 					// R&R, ray , MYCP partially based on code of Aymerick - END
-					m_aiNeededYield[eConsumedYield] += getProfessionInput(eIdealProfession, pLoopUnit);					
+					m_ja_iNeededYield.add(getProfessionInput(eIdealProfession, pLoopUnit), eConsumedYield);
 				}
 			}
 		}
@@ -4834,7 +4753,7 @@ void CvCityAI::AI_updateNeededYields()
 					{
 						if (AI_getYieldAdvantage(eYieldProduced) == 100)
 						{
-							m_aiNeededYield[eYieldProduced] = std::max(m_aiNeededYield[eYieldProduced], getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL));
+							m_ja_iNeededYield.set(std::max(m_ja_iNeededYield.get(eYieldProduced), getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL)), eYieldProduced);
 						}
 					}
 				}
@@ -6085,7 +6004,7 @@ int CvCityAI::AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const
 		AI_cachePlayerCloseness(iMaxDistance);
 	}
 	
-	return m_aiPlayerCloseness[eIndex];
+	return m_aiPlayerCloseness.get(eIndex);
 }
 
 void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
@@ -6152,7 +6071,7 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 					}
 				}
 			}
-			m_aiPlayerCloseness[iI] = (iBestValue + iValue / 4);
+			(const_cast <CvCityAI*> (this))->m_aiPlayerCloseness.set((PlayerTypes)iI,(iBestValue + iValue / 4));
 		}
 	}
 	
@@ -6449,42 +6368,10 @@ bool CvCityAI::AI_isMajorCity() const
 //
 void CvCityAI::read(FDataStreamBase* pStream)
 {
-	CvCity::read(pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iGiftTimer);
-	pStream->Read(&m_iTradeTimer); // R&R, ray, Natives Trading - START
-	pStream->Read((int*)&m_eDesiredYield);
-	pStream->Read(&m_iTargetSize);
-	pStream->Read(&m_iFoundValue);
-	
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldOutputWeight);
-	pStream->Read(NUM_YIELD_TYPES, m_aiNeededYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiTradeBalance);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldAdvantage);
-
-	pStream->Read(&m_iEmphasizeAvoidGrowthCount);
-	
-	pStream->Read(&m_bPort);
-	pStream->Read(&m_bAssignWorkDirty);
-	pStream->Read(&m_bChooseProductionDirty);
-
-	m_routeToCity.read(pStream);
-	
-	pStream->Read(NUM_YIELD_TYPES, m_aiEmphasizeYieldCount);
-	pStream->Read(&m_bForceEmphasizeCulture);
-	pStream->Read(NUM_CITY_PLOTS, m_aiBestBuildValue);
-	pStream->Read(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
-	pStream->Read(GC.getNumEmphasizeInfos(), m_abEmphasize);
-	pStream->Read(&m_iCachePlayerClosenessTurn);
-	pStream->Read(&m_iCachePlayerClosenessDistance);
-	pStream->Read(MAX_PLAYERS, m_aiPlayerCloseness);
-	pStream->Read(&m_iNeededFloatingDefenders);
-	pStream->Read(&m_iNeededFloatingDefendersCacheTurn);
-	pStream->Read(&m_iWorkersNeeded);
-	pStream->Read(&m_iWorkersHave);
+	read(reader);
 }
 
 //
@@ -6492,40 +6379,8 @@ void CvCityAI::read(FDataStreamBase* pStream)
 //
 void CvCityAI::write(FDataStreamBase* pStream)
 {
-	CvCity::write(pStream);
-
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iGiftTimer);
-	pStream->Write(m_iTradeTimer); // R&R, ray, Natives Trading - START
-	pStream->Write(m_eDesiredYield);
-	pStream->Write(m_iTargetSize);
-	pStream->Write(m_iFoundValue);
-	
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldOutputWeight);
-	pStream->Write(NUM_YIELD_TYPES, m_aiNeededYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiTradeBalance);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldAdvantage);
-
-	pStream->Write(m_iEmphasizeAvoidGrowthCount);
-	
-	pStream->Write(m_bPort);
-	pStream->Write(m_bAssignWorkDirty);
-	pStream->Write(m_bChooseProductionDirty);
-
-	m_routeToCity.write(pStream);
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiEmphasizeYieldCount);
-	pStream->Write(m_bForceEmphasizeCulture);
-	pStream->Write(NUM_CITY_PLOTS, m_aiBestBuildValue);
-	pStream->Write(NUM_CITY_PLOTS, (int*)m_aeBestBuild);
-	pStream->Write(GC.getNumEmphasizeInfos(), m_abEmphasize);
-	pStream->Write(m_iCachePlayerClosenessTurn);
-	pStream->Write(m_iCachePlayerClosenessDistance);
-	pStream->Write(MAX_PLAYERS, m_aiPlayerCloseness);
-	pStream->Write(m_iNeededFloatingDefenders);
-	pStream->Write(m_iNeededFloatingDefendersCacheTurn);
-	pStream->Write(m_iWorkersNeeded);
-	pStream->Write(m_iWorkersHave);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

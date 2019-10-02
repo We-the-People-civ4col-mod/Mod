@@ -6,6 +6,7 @@ enum SavegameVariableTypes;
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
+#include "LinkedList.h"
 
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.
@@ -17,7 +18,8 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_PLOT,
 	SAVEGAME_CLASS_UNIT,
 	SAVEGAME_CLASS_UNIT_AI,
-
+	SAVEGAME_CLASS_CITY,
+	SAVEGAME_CLASS_CITY_AI,
 	NUM_SAVEGAME_CLASS_TYPES,
 
 	FIRST_SAVEGAME_CLASS_TYPES = 0,
@@ -57,6 +59,9 @@ public:
 	template<class T>
 	void Read(JustInTimeArray<T>& jitArray);
 
+	template<class T>
+	void Read(CLinkList<T>& lList);
+
 	void Read(BoolArray& baArray);
 	void Read(PlayerBoolArrayBase& array);
 	void Read(IDInfo& idInfo);
@@ -71,13 +76,18 @@ public:
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
 	void Read(SlotClaim             & variable) { ReadEnum(variable); }
 	void Read(SlotStatus            & variable) { ReadEnum(variable); }
 	void Read(TeamTypes             & variable) { ReadEnum(variable); }
 	void Read(TurnTimerTypes        & variable) { ReadEnum(variable); }
-	
+	void Read(TradeableItems        & variable) { ReadEnum(variable); }
+	void Read(UnitAIStates          & variable) { ReadEnum(variable); }
+	void Read(UnitTravelStates      & variable) { ReadEnum(variable); }
+
+
 	// everything linked to xml file enums
 	void Read(ArtStyleTypes         & variable) { ReadXmlEnum(variable); }
 	void Read(BonusTypes            & variable) { ReadXmlEnum(variable); }
@@ -209,18 +219,24 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 
+	template<class T>
+	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
+
 	// Add all enums used in savegames (single byte)
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
 	void Write(SlotClaim              variable) { WriteEnum(variable); }
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
 	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
+	void Write(UnitAIStates           variable) { WriteEnum(variable); }
+	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
@@ -333,6 +349,11 @@ inline void CvSavegameReader::Read(JustInTimeArray<T>& jitArray)
 	jitArray.Read(*this);
 }
 
+template<class T>
+inline void CvSavegameReader::Read(CLinkList<T>& lList)
+{
+	lList.Read(*this);
+}
 
 
 //
@@ -384,6 +405,16 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	{
 		Write(eType);
 		Write(jitArray);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, CLinkList<T>& lList)
+{
+	if (lList.getLength()>0)
+	{
+		Write(eType);
+		lList.Write(*this);
 	}
 }
 

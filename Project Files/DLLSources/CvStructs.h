@@ -77,6 +77,9 @@ struct DllExport OrderData
 	int iData1;
 	int iData2;
 	bool bSave;
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport MissionData
@@ -98,6 +101,9 @@ struct DllExport TradeData
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream) const;
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct EventTriggeredData
@@ -120,6 +126,9 @@ struct EventTriggeredData
 	void setID(int iID);
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct EventMessage
@@ -141,6 +150,9 @@ struct PlotExtraYield
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 typedef std::vector< std::pair<BuildingClassTypes, int> > BuildingChangeArray;
@@ -153,6 +165,9 @@ struct BuildingYieldChange
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport FOWVis

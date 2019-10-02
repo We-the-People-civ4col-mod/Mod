@@ -511,8 +511,10 @@ public:
 
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
 	virtual void AI_doTurn() = 0;
@@ -705,45 +707,45 @@ protected:
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
 	PlayerTypes m_eMissionaryPlayer;
-	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields
-	int* m_aiSeaPlotYield;
-	int* m_aiRiverPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiYieldStored;
-	int* m_aiYieldRushed;
+	YieldArray<int> m_ja_iLandPlotYield; // R&R, ray, Landplot Yields
+	YieldArray<int> m_ja_iSeaPlotYield;
+	YieldArray<int> m_ja_iRiverPlotYield;
+	YieldArray<int> m_ja_iYieldRateModifier;
+	YieldArray<int> m_ja_iYieldStored;
+	YieldArray<int> m_ja_iYieldRushed;
 	// R&R, Androrc, Domestic Market
-	int* m_aiYieldBuyPrice;
+	YieldArray<int> m_ja_iYieldBuyPrice;
 	//Androrc End
 	
 	// R&R, ray, finishing Custom House Screen
-	YieldArray<int> ma_aiCustomHouseSellThreshold;
-	BoolArray       ba_aiCustomHouseNeverSell;
+	YieldArray<int> m_ja_iCustomHouseSellThreshold;
+	BoolArray       m_ba_CustomHouseNeverSell;
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	UnitArray<int> ma_OrderedStudents;
-	BoolArray      ba_OrderedStudentsRepeat;
+	UnitArray<int> m_ja_iOrderedStudents;
+	BoolArray      m_ba_OrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
 
-	int* m_aiDomainFreeExperience;
-	int* m_aiDomainProductionModifier;
-	int* m_aiCulture;
-	bool* m_abEverOwned;
-	bool* m_abRevealed;
-	bool* m_abScoutVisited;
+	DomainArray<int> m_ja_iDomainFreeExperience;
+	DomainArray<int> m_ja_iDomainProductionModifier;
+	PlayerArray<int> m_aiCulture;
+	PlayerBoolArray m_abEverOwned;
+	TeamBoolArray m_abRevealed;
+	TeamBoolArray m_abScoutVisited;
 	CvWString m_szName;
 	CvString m_szScriptData;
-	int* m_paiBuildingProduction;
-	int* m_paiBuildingProductionTime;
-	int* m_paiBuildingOriginalOwner;
-	int* m_paiBuildingOriginalTime;
-	int* m_paiUnitProduction;
-	int* m_paiUnitProductionTime;
-	int* m_aiSpecialistWeights;
-	int* m_paiUnitCombatFreeExperience;
-	int* m_paiFreePromotionCount;
-	bool* m_pabHasRealBuilding;
-	bool* m_pabHasFreeBuilding;
+	BuildingArray<int> m_ja_iBuildingProduction;
+	BuildingArray<int> m_ja_iBuildingProductionTime;
+	BuildingArray<int> m_ja_iBuildingOriginalOwner;
+	BuildingArray<int> m_ja_iBuildingOriginalTime;
+	UnitArray<int> m_ja_iUnitProduction;
+	UnitArray<int> m_ja_iUnitProductionTime;
+	UnitArray<int> m_ja_iSpecialistWeights;
+	UnitCombatArray<int> m_ja_iUnitCombatFreeExperience;
+	PromotionArray<int> m_ja_iFreePromotionCount;
+	BoolArray m_ba_HasRealBuilding;
+	BoolArray m_ba_HasFreeBuilding;
 	int* m_paiWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;
@@ -753,8 +755,8 @@ protected:
 	std::vector<CvUnit*> m_aPopulationUnits;
 
 	// traderoute just-in-time - start - Nightinggale
-	BoolArray ba_tradeImports;
-	BoolArray ba_tradeExports;
+	BoolArray m_ba_tradeImports;
+	BoolArray m_ba_tradeExports;
 	YieldArray<unsigned short> ma_tradeThreshold;
 	// traderoute just-in-time - end - Nightinggale
 	
@@ -763,10 +765,10 @@ protected:
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
-	int*	m_aiBaseYieldRank;
-	bool*	m_abBaseYieldRankValid;
-	int*	m_aiYieldRank;
-	bool*	m_abYieldRankValid;
+	YieldArray<int>	m_ja_iBaseYieldRank;
+	BoolArray	m_ba_BaseYieldRankValid;
+	YieldArray<int>	m_ja_iYieldRank;
+	BoolArray	m_ba_YieldRankValid;
 
 	void doGrowth();
 	void doYields();
@@ -817,10 +819,10 @@ public:
 	void setAutoThresholdCache();
 
 protected:
-	BoolArray ba_tradeImportsMaintain;
-	BoolArray ba_tradeStopAutoImport;
-	YieldArray<int> ma_tradeAutoThreshold; // nosave - recalculate on load
-	YieldArray<int> ma_productionNeeded; // nosave - recalculate on load
+	BoolArray m_ba_tradeImportsMaintain;
+	BoolArray m_ba_tradeStopAutoImport;
+	YieldArray<int> m_ja_iTradeAutoThreshold; // nosave - recalculate on load
+	YieldArray<int> m_ja_iProductionNeeded; // nosave - recalculate on load
 
 	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
@@ -883,22 +885,22 @@ inline int CvCity::getMaxYieldCapacity() const
 // transport feeder - start - Nightinggale
 inline bool CvCity::getImportsMaintain(YieldTypes eYield) const
 {
-	return ba_tradeImportsMaintain.get(eYield);
+	return m_ba_tradeImportsMaintain.get(eYield);
 }
 
 inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const
 {
-	return ba_tradeStopAutoImport.get(eYield);
+	return m_ba_tradeStopAutoImport.get(eYield);
 }
 
 inline int CvCity::getAutoMaintainThreshold(YieldTypes eYield) const
 {
-	return ma_tradeAutoThreshold.get(eYield);
+	return m_ja_iTradeAutoThreshold.get(eYield);
 }
 
 inline int CvCity::getProductionNeeded(YieldTypes eYield) const
 {
-	return ma_productionNeeded.get(eYield);
+	return m_ja_iProductionNeeded.get(eYield);
 }
 // transport feeder - end - Nightinggale
 #endif
