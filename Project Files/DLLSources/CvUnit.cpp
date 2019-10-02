@@ -334,20 +334,11 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	uninit();
 
 	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
-
+	if(eOwner!=NO_PLAYER){
+		setPromotions();
+	}
 	m_bInfoBarDirty = false;
-	m_eOwner = eOwner;
-	m_eUnitType = eUnit;
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
 	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
-	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
-
-	m_combatUnit.reset();
-	m_transportUnit.reset();
-	m_homeCity.reset();
-
-	clear(m_szName);
-	m_szScriptData ="";
 
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
@@ -11949,7 +11940,7 @@ void CvUnit::resetPromotions()
 	m_iExtraDomesticBonusPercent = 0;
 	m_iPillageChange = 0;
 	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;
+	m_iExperiencePercent = 0;	
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
 
 	m_ja_iExtraTerrainAttackPercent.reset();
@@ -11966,8 +11957,6 @@ void CvUnit::resetPromotions()
 	m_ja_iExtraUnitCombatModifier.reset();
 	m_ja_iExtraDomainModifier.reset();
 
-
-	setPromotions();
 }
 
 void CvUnit::setPromotions(PromotionTypes ePromotion)
@@ -12125,15 +12114,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 
 void CvUnit::read(FDataStreamBase* pStream)
 {
-	// unit yield cache - start - Nightinggale
-	updateYieldCache();
-	// unit yield cache - end - Nightinggale
-
-	// update promotion cache
-	// this will fix issues introduced if some xml data has been changed since the game was saved
-	resetPromotions();
-	// TODO: remove variables overwritten by resetPromotions from savegames
-	// Note: this is delayed until we break savegames anyway. Storing unused data won't break anything.
 }
 
 
