@@ -84,6 +84,7 @@ public:
 	void Read(TeamTypes             & variable) { ReadEnum(variable); }
 	void Read(TurnTimerTypes        & variable) { ReadEnum(variable); }
 	void Read(TradeableItems        & variable) { ReadEnum(variable); }
+	void Read(UnitAIStates          & variable) { ReadEnum(variable); }
 	void Read(UnitTravelStates      & variable) { ReadEnum(variable); }
 
 
@@ -234,6 +235,7 @@ public:
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
 	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
+	void Write(UnitAIStates           variable) { WriteEnum(variable); }
 	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums

@@ -66,16 +66,8 @@ void CvUnitAI::AI_reset()
 {
 	AI_uninit();
 
-	m_iBirthmark = 0;
-	m_iMovePriority = 0;
-	m_iLastAIChangeTurn = GC.getGameINLINE().getGameTurn();
-	
-	m_eUnitAIType = NO_UNITAI;
-	m_eUnitAIState = UNITAI_STATE_DEFAULT;
-	m_eOldProfession = NO_PROFESSION;
-	m_eIdealProfessionCache = INVALID_PROFESSION;
-	
-	m_iAutomatedAbortTurn = -1;
+	AI_resetSavedData();
+	m_iLastAIChangeTurn= GC.getGameINLINE().getGameTurn();
 	
 }
 
@@ -18776,21 +18768,6 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 
 	read(reader);
 	CvUnit::read(pStream);
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iBirthmark);
-	pStream->Read(&m_iMovePriority);
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_iLastAIChangeTurn);
-	}
-	pStream->Read((int*)&m_eUnitAIType);
-	pStream->Read((int*)&m_eUnitAIState);
-	pStream->Read((int*)&m_eOldProfession);
-	pStream->Read((int*)&m_eIdealProfessionCache);
-	pStream->Read(&m_iAutomatedAbortTurn);
 }
 
 
@@ -18802,19 +18779,6 @@ void CvUnitAI::write(FDataStreamBase* pStream)
 	writerbase.WriteFile();
 
 	CvUnit::write(pStream);
-
-	uint uiFlag=1;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iBirthmark);
-	pStream->Write(m_iMovePriority);
-	pStream->Write(m_iLastAIChangeTurn);
-	pStream->Write(m_eUnitAIType);
-	pStream->Write(m_eUnitAIState);
-	pStream->Write(m_eOldProfession);
-	pStream->Write(m_eIdealProfessionCache);
-	pStream->Write(m_iAutomatedAbortTurn);
-	
 }
 
 // Private Functions...

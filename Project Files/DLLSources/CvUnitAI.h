@@ -95,7 +95,7 @@ public:
 
 protected:
 
-	void resetSavedData();
+	void AI_resetSavedData();
 
 	int m_iBirthmark;
 	int m_iMovePriority;
