@@ -137,6 +137,7 @@ public:
 	void Read(WorldSizeTypes        & variable) { ReadXmlEnum(variable); }
 
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
+	int GetXmlSize(JITarrayTypes eType) const;
 
 #ifndef MakefileCompilation
 	// remove IntelliSense errors, which causes bogus red lines in the code
@@ -289,6 +290,7 @@ public:
 	// get the amount of bytes needed to save the variable in question
 	// also tells the savegame that a conversion table is needed
 	int GetXmlByteSize(JITarrayTypes eType);
+	int GetXmlSize(JITarrayTypes eType);
 
 private:
 

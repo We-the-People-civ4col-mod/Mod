@@ -2670,4 +2670,23 @@ static inline T operator++(T& c, int)
 	return cache;
 }
 
+// overloaded -- for enum types
+
+// prefix
+template <class T>
+static inline T& operator--(T& c)
+{
+	c = (T)(c - 1);
+	return c;
+}
+
+// postfix
+template <class T>
+static inline T operator--(T& c, int)
+{
+	T cache = c;
+	c = (T)(c - 1);
+	return cache;
+}
+
 #endif	// CVENUMS_h

@@ -363,6 +363,17 @@ int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 	return iIndex;
 }
 
+int CvSavegameReader::GetXmlSize(JITarrayTypes eType) const
+{
+	JITarrayTypes eBaseType = GetBaseType(eType);
+
+	if (eBaseType >= 0 && eBaseType < NUM_JITarrayTypes)
+	{
+		return conversion_table[eBaseType].size();
+	}
+	return -1;
+}
+
 
 ///
 ///
@@ -560,6 +571,24 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType)
 int CvSavegameWriter::GetXmlByteSize(JITarrayTypes eType)
 {
 	return m_writerbase.GetXmlByteSize(eType);
+}
+
+int CvSavegameWriter::GetXmlSize(JITarrayTypes eType)
+{
+	JITarrayTypes eBaseType = GetBaseType(eType);
+
+	if (eBaseType >= 0 && eBaseType < NUM_JITarrayTypes)
+	{
+		int iLength = conversion_table[eBaseType].size();
+		if (iLength == 0)
+		{
+			// add to conversion table
+			GetXmlByteSize(eType);
+			iLength = conversion_table[eBaseType].size();
+		}
+		return iLength;
+	}
+	return -1;
 }
 
 void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
