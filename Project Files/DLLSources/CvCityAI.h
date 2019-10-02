@@ -181,7 +181,7 @@ public:
 
 protected:
 
-	void resetSavedData();
+	void AI_resetSavedData();
 
 	int m_iGiftTimer;
 	int m_iTradeTimer; // R&R, ray, Natives Trading - START

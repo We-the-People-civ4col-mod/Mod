@@ -69,7 +69,7 @@ void CvCityAI::AI_uninit()
 void CvCityAI::AI_reset()
 {
 	AI_uninit();
-	resetSavedData();
+	AI_resetSavedData();
 	
 	m_iWorkforceHack = 0;	
 }
@@ -6372,7 +6372,6 @@ void CvCityAI::read(FDataStreamBase* pStream)
 	CvSavegameReader reader(readerbase);
 
 	read(reader);
-	CvCity::read(pStream);
 }
 
 //
@@ -6384,6 +6383,4 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
-	CvCity::write(pStream);
-
 }

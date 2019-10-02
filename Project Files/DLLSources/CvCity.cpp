@@ -7401,36 +7401,6 @@ void CvCity::doMissionaries()
 
 // Private Functions...
 
-void CvCity::read(FDataStreamBase* pStream)
-{	
-	FAssert(m_aPopulationUnits.size() == 0);
-	m_aPopulationUnits.clear();
-	int iNumPopulation;
-	pStream->Read(&iNumPopulation);
-	for(int i=0;i<iNumPopulation;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aPopulationUnits.push_back(pUnit);
-	}
-
-	// traderoute just-in-time - start - Nightinggale
-	
-	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
-	this->setAutoThresholdCache(); // transport feeder - Nightinggale
-	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
-}
-
-void CvCity::write(FDataStreamBase* pStream)
-{
-	pStream->Write((int)m_aPopulationUnits.size());
-	for(int i=0;i<(int)m_aPopulationUnits.size();i++)
-	{
-		m_aPopulationUnits[i]->write(pStream);
-	}
-}
-
-
 //------------------------------------------------------------------------------------------------
 class VisibleBuildingComparator
 {

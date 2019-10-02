@@ -18767,7 +18767,6 @@ void CvUnitAI::read(FDataStreamBase* pStream)
 	CvSavegameReader reader(readerbase);
 
 	read(reader);
-	CvUnit::read(pStream);
 }
 
 
@@ -18777,8 +18776,6 @@ void CvUnitAI::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
-
-	CvUnit::write(pStream);
 }
 
 // Private Functions...

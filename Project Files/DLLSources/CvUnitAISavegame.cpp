@@ -27,7 +27,7 @@ enum SavegameVariableTypes
 	NUM_SAVE_ENUM_VALUES,
 };
 
-const char* getSavedEnumNameUnitAI(SavegameVariableTypes eType)
+const char* getSavedEnumNameUnitAi(SavegameVariableTypes eType)
 {
 	switch (eType)
 	{

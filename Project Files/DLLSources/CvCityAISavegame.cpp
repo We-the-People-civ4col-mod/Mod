@@ -101,7 +101,7 @@ int getNumSavedEnumValuesCityAI()
 }
 
 // assign everything to default values
-void CvCityAI::resetSavedData()
+void CvCityAI::AI_resetSavedData()
 {
 m_iGiftTimer =  defaultGiftTimer;
 m_iTradeTimer =  defaultTradeTimer;
@@ -149,7 +149,7 @@ void CvCityAI::read(CvSavegameReader reader)
 
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
-	resetSavedData();
+	AI_resetSavedData();
 
 	// read base class. It's always placed first
 	CvCity::read(reader);

@@ -511,9 +511,6 @@ public:
 
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
-
 	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);

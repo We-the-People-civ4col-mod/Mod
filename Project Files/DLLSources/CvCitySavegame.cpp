@@ -507,21 +507,17 @@ void CvCity::read(CvSavegameReader reader)
 
 		//maybe make this code better?
 		// add a read fucntion for std::vector?
-		//implement CvUnit with the new savegame format first
-		/*//this code need debugging start
 			case CitySave_PopulationUnits:
 			{
 			int iNumPopulation;
 			reader.Read(iNumPopulation);
 			m_aPopulationUnits.reserve(iNumPopulation);
 			for(int i=0;i<iNumPopulation;++i){
-				CvUnitAI* pUnit = new CvUnitAI ();
+				CvUnit* pUnit = new CvUnitAI;
 				pUnit->read(reader);
 				m_aPopulationUnits.push_back(pUnit);
 			} break;
-			}
-			//this code need debugging end
-			*/
+			}			
 		case CitySave_EventsOccured:
 			{
 			int iNumElts;
@@ -564,6 +560,9 @@ void CvCity::read(CvSavegameReader reader)
 		}
 		
 	}
+	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
+	this->setAutoThresholdCache(); // transport feeder - Nightinggale
+	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values
 	
 }
 
@@ -664,8 +663,6 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_Name, m_szName);
 	writer.Write(CitySave_ScriptData, m_szScriptData);
 
-	/*
-	//this code need debugging start
 	if(m_aPopulationUnits.size()>0){
 		writer.Write(CitySave_PopulationUnits);
 		writer.Write((int)m_aPopulationUnits.size());
@@ -673,8 +670,6 @@ void CvCity::write(CvSavegameWriter writer)
 			m_aPopulationUnits[i]->write(writer);
 		}
 	}
-	//this code need debugging end
-	*/
 	if(m_aEventsOccured.size()>0){
 		writer.Write(CitySave_EventsOccured);
 		writer.Write((int)m_aEventsOccured.size());
