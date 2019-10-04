@@ -259,9 +259,9 @@ protected:
 
 	void AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB);
 
-	bool AI_potentialPlot(short* piYields) const;
+	bool AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) const;
 	bool AI_foodAvailable(int iExtra = 0) const;
-	int AI_yieldValue(short* piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false, bool bWorkerOptimization = false) const;
+	int AI_yieldValue(const EnumMap<YieldTypes, short>& em_iYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false, bool bWorkerOptimization = false) const;
 	int AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false) const;
 
 	int AI_experienceWeight() const;

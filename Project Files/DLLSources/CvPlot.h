@@ -312,7 +312,7 @@ public:
 	void setMinOriginalStartDist(int iNewValue);
 	int getRiverCrossingCount() const;
 	void changeRiverCrossingCount(int iChange);
-	short* getYield();
+	const EnumMap<YieldTypes, short> getYield() const;
 	DllExport int getYield(YieldTypes eIndex) const;
 	
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -513,10 +513,7 @@ protected:
 	IDInfo m_workingCity;
 	IDInfo m_workingCityOverride;
 
-	// TODO: convert to YieldArray
-	// already converted in YieldCategory branch
-	short* m_aiYield;
-	
+	EnumMap<YieldTypes , short> m_em_iYield;
 	EnumMap<PlayerTypes, short> m_em_iDangerMap;	// TAC - AI Improved Naval AI - koma13
 	EnumMap<PlayerTypes,   int> m_em_iCulture;
 	EnumMap<PlayerTypes, short> m_em_iCultureRangeForts; // Super Forts *culture*

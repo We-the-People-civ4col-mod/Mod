@@ -35,8 +35,6 @@ int CvPlot::iMaxVisibilityRangeCache;
 
 CvPlot::CvPlot()
 {
-	m_aiYield = new short[NUM_YIELD_TYPES];
-
 	m_paiBuildProgress = NULL;
 	m_apaiCultureRangeCities = NULL;
 	m_apaiInvisibleVisibilityCount = NULL;
@@ -58,8 +56,6 @@ CvPlot::CvPlot()
 CvPlot::~CvPlot()
 {
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiYield);
 }
 
 void CvPlot::init(int iX, int iY)
@@ -132,11 +128,6 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	m_bPlotLayoutDirty = false;
 	m_bLayoutStateWorked = false;
 	m_bImpassable = false;
-
-	for (int iI = 0; iI < NUM_YIELD_TYPES; ++iI)
-	{
-		m_aiYield[iI] = 0;
-	}
 	
 	updateImpassable();
 }
@@ -5456,9 +5447,9 @@ void CvPlot::changeRiverCrossingCount(int iChange)
 }
 
 
-short* CvPlot::getYield()
+const EnumMap<YieldTypes, short> CvPlot::getYield() const
 {
-	return m_aiYield;
+	return m_em_iYield;
 }
 
 
@@ -5466,7 +5457,7 @@ int CvPlot::getYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiYield[eIndex];
+	return m_em_iYield.get(eIndex);
 }
 
 // TAC - AI Improved Naval AI - koma13 - START
@@ -6062,7 +6053,6 @@ void CvPlot::updateYield(bool bUpdateCity)
 	bool bChange;
 	int iNewYield;
 	int iOldYield;
-	int iI;
 
 	if (area() == NULL)
 	{
@@ -6071,16 +6061,18 @@ void CvPlot::updateYield(bool bUpdateCity)
 
 	bChange = false;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	// TODO: skip all yields, which can never be produced on a plot
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		iNewYield = calculateYield((YieldTypes)iI, false);
+		iNewYield = calculateYield(eYield, false);
 
-		if (getYield((YieldTypes)iI) != iNewYield)
+		if (getYield(eYield) != iNewYield)
 		{
-			iOldYield = getYield((YieldTypes)iI);
+			iOldYield = getYield(eYield);
 
-			m_aiYield[iI] = iNewYield;
-			FAssert(getYield((YieldTypes)iI) >= 0);
+			m_em_iYield.set(eYield, iNewYield);
+			FAssert(getYield(eYield) >= 0);
 
 			if (bUpdateCity)
 			{

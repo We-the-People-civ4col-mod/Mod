@@ -44,12 +44,12 @@
 // Same result, but since they now share the same parameters, the compiler will only make one set, which they will both call.
 // It's not a major issue to make multiple, partly because most calls are inline anyway, but it should be mentioned.
 
-template<class LengthType, class T, int DEFAULT = EnumMapGetDefault<T>::value , class T_SUBSET = LengthType >
-class EnumMap
+template<class LengthType, class T, int DEFAULT, class T_SUBSET>
+class EnumMapBase
 {
 public:
-	EnumMap();
-	~EnumMap();
+	EnumMapBase();
+	~EnumMapBase();
 
 	// const values (per class)
 	T getDefault() const;
@@ -94,18 +94,18 @@ public:
 	void Write(CvSavegameWriter& writer) const;
 
 	// operator overload
-	EnumMap& operator=(const EnumMap &rhs);
+	EnumMapBase& operator=(const EnumMapBase &rhs);
 	
 	template<class T2, int DEFAULT2>
-	EnumMap<LengthType, T, DEFAULT, T_SUBSET>& operator  = (const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs);
+	EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& operator  = (const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs);
 	template<class T2, int DEFAULT2>
-	EnumMap<LengthType, T, DEFAULT, T_SUBSET>& operator += (const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs);
+	EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& operator += (const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs);
 	template<class T2, int DEFAULT2>
-	EnumMap<LengthType, T, DEFAULT, T_SUBSET>& operator -= (const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs);
+	EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& operator -= (const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs);
 	template<class T2, int DEFAULT2>
-	bool operator == (const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const;
+	bool operator == (const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const;
 	template<class T2, int DEFAULT2>
-	bool operator != (const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const;
+	bool operator != (const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const;
 	
 
 private:
@@ -153,7 +153,7 @@ private:
 
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>::EnumMap()
+inline EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::EnumMapBase()
 	: m_pArray(NULL)
 {
 	FAssertMsg(sizeof(*this) == 4, "EnumMap is supposed to only contain a pointer");
@@ -162,31 +162,31 @@ inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>::EnumMap()
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>::~EnumMap()
+inline EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::~EnumMapBase()
 {
 	reset();
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-__forceinline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::getDefault() const
+__forceinline T EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::getDefault() const
 {
 	return (T)DEFAULT;
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-__forceinline LengthType EnumMap<LengthType, T, DEFAULT, T_SUBSET>::First() const
+__forceinline LengthType EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::First() const
 {
 	return ArrayStart((T_SUBSET)0);
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-__forceinline LengthType EnumMap<LengthType, T, DEFAULT, T_SUBSET>::getLength() const
+__forceinline LengthType EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::getLength() const
 {
 	return ArrayLength((T_SUBSET)0);
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-__forceinline LengthType EnumMap<LengthType, T, DEFAULT, T_SUBSET>::numElements() const
+__forceinline LengthType EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::numElements() const
 {
 	// apparently subtracting two LengthTypes results in int, not LengthType
 	return (LengthType)(getLength() - First());
@@ -194,14 +194,14 @@ __forceinline LengthType EnumMap<LengthType, T, DEFAULT, T_SUBSET>::numElements(
 
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::get(LengthType eIndex) const
+inline T EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::get(LengthType eIndex) const
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	return (T)(m_pArray ? m_pArray[eIndex - First()] : DEFAULT);
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::set(LengthType eIndex, T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::set(LengthType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (m_pArray == NULL)
@@ -216,7 +216,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::set(LengthType eIndex, T 
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::add(LengthType eIndex, T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::add(LengthType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (eValue != 0)
@@ -226,7 +226,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::add(LengthType eIndex, T 
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::safeSet(LengthType eIndex, T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::safeSet(LengthType eIndex, T eValue)
 {
 	if (eIndex >= First() && eIndex < getLength())
 	{
@@ -235,7 +235,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::safeSet(LengthType eIndex
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::safeAdd(LengthType eIndex, T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::safeAdd(LengthType eIndex, T eValue)
 {
 	if (eIndex >= First() && eIndex < getLength())
 	{
@@ -244,7 +244,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::safeAdd(LengthType eIndex
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::addAll(T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::addAll(T eValue)
 {
 	if (eValue != 0)
 	{
@@ -257,13 +257,13 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::addAll(T eValue)
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline bool EnumMap<LengthType, T, DEFAULT, T_SUBSET>::isAllocated() const
+inline bool EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::isAllocated() const
 {
 	return m_pArray != NULL;
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline bool EnumMap<LengthType, T, DEFAULT, T_SUBSET>::hasContent() const
+inline bool EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::hasContent() const
 {
 	if (m_pArray != NULL)
 	{
@@ -277,13 +277,13 @@ inline bool EnumMap<LengthType, T, DEFAULT, T_SUBSET>::hasContent() const
 		// now we cheat and alter data despite being const.
 		// We just detected all data to be of the default value, meaning the array is not used.
 		// Release the data to save memory. It won't change how the outside world view the EnumMap.
-		(const_cast <EnumMap*> (this))->reset();
+		(const_cast <EnumMapBase*> (this))->reset();
 	}
 	return false;
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::getMin() const
+inline T EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::getMin() const
 {
 	if (m_pArray == NULL)
 	{
@@ -293,7 +293,7 @@ inline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::getMin() const
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::getMax() const
+inline T EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::getMax() const
 {
 	if (m_pArray == NULL)
 	{
@@ -303,7 +303,7 @@ inline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::getMax() const
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::keepMin(LengthType eIndex, T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::keepMin(LengthType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (get(eIndex) > eValue)
@@ -313,7 +313,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::keepMin(LengthType eIndex
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::keepMax(LengthType eIndex, T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::keepMax(LengthType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (get(eIndex) < eValue)
@@ -323,13 +323,13 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::keepMax(LengthType eIndex
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::reset()
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::reset()
 {
 	SAFE_DELETE_ARRAY(m_pArray);
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::setAll(T eValue)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::setAll(T eValue)
 {
 	if (m_pArray == NULL)
 	{
@@ -344,7 +344,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::setAll(T eValue)
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::allocate()
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::allocate()
 {
 	FAssert(m_pArray == NULL);
 	m_pArray = new T[numElements()];
@@ -367,7 +367,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::allocate()
 //
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::Read(CvSavegameReader& reader)
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::Read(CvSavegameReader& reader)
 {
 	// savegame format is as follows:
 	// first index
@@ -462,7 +462,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::Read(CvSavegameReader& re
 
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::Write(CvSavegameWriter& writer) const
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::Write(CvSavegameWriter& writer) const
 {
 	const int iLength = ArrayType((LengthType)0) == NUM_JITarrayTypes ? ArrayLength((LengthType)0) : writer.GetXmlSize(ArrayType((LengthType)0));
 	const bool bUseTwoByteStart = iLength > 64;
@@ -561,7 +561,7 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::Write(CvSavegameWriter& w
 //
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
-inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator=(const EnumMap &rhs)
+inline EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::operator=(const EnumMapBase &rhs)
 {
 	if (rhs.isAllocated())
 	{
@@ -577,7 +577,7 @@ inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET> template<class T2, int DEFAULT2>
-inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator=(const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs)
+inline EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::operator=(const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs)
 {
 	if (rhs.isAllocated())
 	{
@@ -595,7 +595,7 @@ inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET> template<class T2, int DEFAULT2>
-inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator+=(const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs)
+inline EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::operator+=(const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs)
 {
 	if (rhs.isAllocated())
 	{
@@ -613,7 +613,7 @@ inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET> template<class T2, int DEFAULT2>
-inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator-=(const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs)
+inline EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>& EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::operator-=(const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs)
 {
 	if (rhs.isAllocated())
 	{
@@ -631,7 +631,7 @@ inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET> template<class T2, int DEFAULT2>
-inline bool EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator==(const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const
+inline bool EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::operator==(const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const
 {
 	if (!rhs.isAllocated() && !isAllocated())
 	{
@@ -654,7 +654,7 @@ inline bool EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator==(const EnumMap<
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET> template<class T2, int DEFAULT2>
-inline bool EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator!=(const EnumMap<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const
+inline bool EnumMapBase<LengthType, T, DEFAULT, T_SUBSET>::operator!=(const EnumMapBase<LengthType, T2, DEFAULT2, T_SUBSET> &rhs) const
 {
 	if (!rhs.isAllocated() && !isAllocated())
 	{
@@ -758,5 +758,14 @@ SET_ARRAY_XML_ENUM(YieldTypes          , NUM_YIELD_TYPES          , JIT_ARRAY_YI
 SET_ARRAY_XML_ENUM(PlayerTypes, NUM_PLAYER_TYPES, NO_JIT_ARRAY_TYPE);
 SET_ARRAY_XML_ENUM(TeamTypes, NUM_TEAM_TYPES, NO_JIT_ARRAY_TYPE);
 
+
+//
+// List of various types of EnumMaps
+// In most cases it's not nice code to include all parameters from EnumMapBase.
+// Adding other classes, which always sets the default makes it easier to add EnumMaps as arguments to functions etc.
+//
+
+template<class LengthType, class T>
+class EnumMap : public EnumMapBase <LengthType, T, EnumMapGetDefault<T>::value, LengthType > {};
 
 #endif

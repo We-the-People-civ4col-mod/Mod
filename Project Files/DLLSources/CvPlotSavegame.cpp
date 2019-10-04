@@ -333,17 +333,7 @@ void CvPlot::read(CvSavegameReader reader)
 			}
 		} break;
 
-		case Save_aiYield:
-		{
-			// copy YieldArray into a short array
-			YieldArray<short> temp_yield;
-			reader.Read(temp_yield);
-			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-			{
-				m_aiYield[eYield] = temp_yield.get(eYield);
-			}
-			break;
-		}
+		case Save_aiYield: m_em_iYield.Read(reader); break;
 
 		// PlayerArrays
 		case Save_Culture                : m_em_iCulture                       .Read(reader); break;
@@ -428,13 +418,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_workingCity, m_workingCity);
 	writer.Write(Save_workingCityOverride, m_workingCityOverride);
 
-	// save a YieldArray instead of a short array, which happens to be of length NUM_YIELD_TYPES
-	YieldArray<short> temp_yield;
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-	{
-		temp_yield.set(m_aiYield[eYield], eYield);
-	}
-	writer.Write(Save_aiYield, temp_yield);
+	writer.Write(Save_aiYield, m_em_iYield);
 
 	writer.Write(Save_Revealed, m_pab_Revealed);
 
