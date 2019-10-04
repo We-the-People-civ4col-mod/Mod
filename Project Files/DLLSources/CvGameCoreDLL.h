@@ -280,6 +280,8 @@ namespace boost
 
 #include "CvGlobalConstants.h"
 
+#include "EnumMap.h"
+
 #include "CvGlobals.h"
 
 #include "CvPlayerAI.h"

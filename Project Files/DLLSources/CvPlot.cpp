@@ -2358,14 +2358,14 @@ void CvPlot::changeDefenseDamage(int iChange)
 // Super Forts begin *culture*
 int CvPlot::getCultureRangeForts(PlayerTypes ePlayer) const
 {
-	return m_aiCultureRangeForts.get(ePlayer);
+	return m_em_iCultureRangeForts.get(ePlayer);
 }
 
 void CvPlot::setCultureRangeForts(PlayerTypes ePlayer, int iNewValue)
 {
 	if (getCultureRangeForts(ePlayer) != iNewValue)
 	{
-		m_aiCultureRangeForts.set(ePlayer, iNewValue);
+		m_em_iCultureRangeForts.set(ePlayer, iNewValue);
 		
 		if (getCulture(ePlayer) == 0)
 		{
@@ -5474,7 +5474,7 @@ int CvPlot::getDangerMap(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiDangerMap.get(eIndex);
+	return m_em_iDangerMap.get(eIndex);
 }
 
 void CvPlot::setDangerMap(PlayerTypes eIndex, int iNewValue)
@@ -5482,8 +5482,8 @@ void CvPlot::setDangerMap(PlayerTypes eIndex, int iNewValue)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	m_aiDangerMap.set(eIndex, iNewValue);
-	FAssert(m_aiDangerMap.get(eIndex) >= 0);
+	m_em_iDangerMap.set(eIndex, iNewValue);
+	FAssert(m_em_iDangerMap.get(eIndex) >= 0);
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
@@ -6110,7 +6110,7 @@ void CvPlot::updateYield(bool bUpdateCity)
 
 int CvPlot::getCulture(PlayerTypes eIndex) const
 {
-	return m_aiCulture.get(eIndex);
+	return m_em_iCulture.get(eIndex);
 }
 
 
@@ -6217,7 +6217,7 @@ void CvPlot::setCulture(PlayerTypes eIndex, int iNewValue, bool bUpdate)
 
 	if (getCulture(eIndex) != iNewValue)
 	{
-		m_aiCulture.set(eIndex, iNewValue);
+		m_em_iCulture.set(eIndex, iNewValue);
 		FAssert(getCulture(eIndex) >= 0);
 
 		if (bUpdate)
@@ -6299,7 +6299,7 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (m_aiFoundValue.get(eIndex) == -1)
+	if (m_em_iFoundValue.get(eIndex) == -1)
 	{
 		long lResult=-1;
 		if(GC.getUSE_GET_CITY_FOUND_VALUE_CALLBACK())
@@ -6313,16 +6313,16 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 
 		if (lResult == -1)
 		{
-			m_aiFoundValue.set(eIndex, GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE(), -1, true));
+			m_em_iFoundValue.set(eIndex, GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE(), -1, true));
 		}
 
-		if (m_aiFoundValue.get(eIndex) > area()->getBestFoundValue(eIndex))
+		if (m_em_iFoundValue.get(eIndex) > area()->getBestFoundValue(eIndex))
 		{
-			area()->setBestFoundValue(eIndex, m_aiFoundValue.get(eIndex));
+			area()->setBestFoundValue(eIndex, m_em_iFoundValue.get(eIndex));
 		}
 	}
 
-	return m_aiFoundValue.get(eIndex);
+	return m_em_iFoundValue.get(eIndex);
 }
 
 
@@ -6362,7 +6362,7 @@ void CvPlot::setFoundValue(PlayerTypes eIndex, int iNewValue)
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 	FAssert(iNewValue >= -1);
 
-	m_aiFoundValue.set(eIndex, iNewValue);
+	m_em_iFoundValue.set(eIndex, iNewValue);
 }
 
 
@@ -6371,7 +6371,7 @@ int CvPlot::getPlayerCityRadiusCount(PlayerTypes eIndex) const
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	return m_aiPlayerCityRadiusCount.get(eIndex);
+	return m_em_iPlayerCityRadiusCount.get(eIndex);
 }
 
 
@@ -6388,11 +6388,11 @@ void CvPlot::changePlayerCityRadiusCount(PlayerTypes eIndex, int iChange)
 
 	if (0 != iChange)
 	{
-		m_aiPlayerCityRadiusCount.add(eIndex, iChange);
+		m_em_iPlayerCityRadiusCount.add(eIndex, iChange);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - start
 		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
-		if(m_aiPlayerCityRadiusCount.get(eIndex) < 0) 		
-			m_aiPlayerCityRadiusCount.set(eIndex, 0);		
+		if(m_em_iPlayerCityRadiusCount.get(eIndex) < 0)
+			m_em_iPlayerCityRadiusCount.set(eIndex, 0);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - end
 		FAssert(getPlayerCityRadiusCount(eIndex) >= 0);
 	}
@@ -6404,7 +6404,7 @@ int CvPlot::getVisibilityCount(TeamTypes eTeam) const
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	return m_aiVisibilityCount.get(eTeam);
+	return m_em_iVisibilityCount.get(eTeam);
 }
 
 
@@ -6421,11 +6421,11 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 	{
 		bOldVisible = isVisible(eTeam, false);
 
-		m_aiVisibilityCount.add(eTeam, iChange);
+		m_em_iVisibilityCount.add(eTeam, iChange);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - start
 		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
-		if(m_aiVisibilityCount.get(eTeam) < 0)
-			m_aiVisibilityCount.set(eTeam, 0);
+		if(m_em_iVisibilityCount.get(eTeam) < 0)
+			m_em_iVisibilityCount.set(eTeam, 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - end
 		FAssert(getVisibilityCount(eTeam) >= 0);
 
@@ -6480,7 +6480,7 @@ PlayerTypes CvPlot::getRevealedOwner(TeamTypes eTeam, bool bDebug) const
 		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-		return m_aiRevealedOwner.get(eTeam);
+		return m_em_eRevealedOwner.get(eTeam);
 	}
 }
 
@@ -6510,7 +6510,7 @@ void CvPlot::setRevealedOwner(TeamTypes eTeam, PlayerTypes eNewValue)
 
 	if (getRevealedOwner(eTeam, false) != eNewValue)
 	{
-		m_aiRevealedOwner.set(eTeam, eNewValue);
+		m_em_eRevealedOwner.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{

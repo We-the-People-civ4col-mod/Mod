@@ -15,6 +15,11 @@ extern int NUM_CITY_PLOTS;
 extern int CITY_PLOTS_DIAMETER;
 extern int CITY_PLOTS_RADIUS;
 
+extern ArtStyleTypes NUM_ARTSTYLE_TYPES;
+extern ColorTypes NUM_COLOR_TYPES;
+extern PlayerColorTypes NUM_PLAYERCOLOR_TYPES;
+extern SpecialUnitTypes NUM_SPECIALUNIT_TYPES;
+
 #else
 
 // Add all values to the enum. If the game can compile with CHECK_GLOBAL_CONSTANTS set, then the variables won't be altered somewhere by mistake.

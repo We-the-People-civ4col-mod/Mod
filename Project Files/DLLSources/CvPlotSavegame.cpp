@@ -346,13 +346,13 @@ void CvPlot::read(CvSavegameReader reader)
 		}
 
 		// PlayerArrays
-		case Save_Culture                : m_aiCulture                         .Read(reader); break;
-		case Save_CultureRangeForts      : m_aiCultureRangeForts               .Read(reader); break;
-		case Save_DangerMap              : m_aiDangerMap                       .Read(reader); break;
-		case Save_FoundValue             : m_aiFoundValue                      .Read(reader); break;
-		case Save_PlayerCityRadiusCount  : m_aiPlayerCityRadiusCount           .Read(reader); break;
-		case Save_VisibilityCount        : m_aiVisibilityCount                 .Read(reader); break;
-		case Save_RevealedOwner          : m_aiRevealedOwner                   .Read(reader); break;
+		case Save_Culture                : m_em_iCulture                       .Read(reader); break;
+		case Save_CultureRangeForts      : m_em_iCultureRangeForts             .Read(reader); break;
+		case Save_DangerMap              : m_em_iDangerMap                     .Read(reader); break;
+		case Save_FoundValue             : m_em_iFoundValue                    .Read(reader); break;
+		case Save_PlayerCityRadiusCount  : m_em_iPlayerCityRadiusCount         .Read(reader); break;
+		case Save_VisibilityCount        : m_em_iVisibilityCount               .Read(reader); break;
+		case Save_RevealedOwner          : m_em_eRevealedOwner                 .Read(reader); break;
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
@@ -474,14 +474,13 @@ void CvPlot::write(CvSavegameWriter writer)
 		writer.Write(Save_RevealedImprovementRouteArray, eTeamArray);
 	}
 
-	writer.Write(Save_DangerMap, m_aiDangerMap);
-	writer.Write(Save_Culture, m_aiCulture);
-	writer.Write(Save_CultureRangeForts, m_aiCultureRangeForts);
-	writer.Write(Save_FoundValue, m_aiFoundValue);
-	writer.Write(Save_PlayerCityRadiusCount, m_aiPlayerCityRadiusCount);
-	writer.Write(Save_VisibilityCount, m_aiVisibilityCount);
-	writer.Write(Save_RevealedOwner, m_aiRevealedOwner);
-	
+	writer.Write(Save_DangerMap, m_em_iDangerMap);
+	writer.Write(Save_Culture, m_em_iCulture);
+	writer.Write(Save_CultureRangeForts, m_em_iCultureRangeForts);
+	writer.Write(Save_FoundValue, m_em_iFoundValue);
+	writer.Write(Save_PlayerCityRadiusCount, m_em_iPlayerCityRadiusCount);
+	writer.Write(Save_VisibilityCount, m_em_iVisibilityCount);
+	writer.Write(Save_RevealedOwner, m_em_eRevealedOwner);
 		
 	writer.Write(Save_END);
 }

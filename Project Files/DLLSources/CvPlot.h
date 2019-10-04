@@ -517,13 +517,13 @@ protected:
 	// already converted in YieldCategory branch
 	short* m_aiYield;
 	
-	PlayerArray<short> m_aiDangerMap;	// TAC - AI Improved Naval AI - koma13
-	PlayerArray<int> m_aiCulture;
-	PlayerArray<short> m_aiCultureRangeForts; // Super Forts *culture*
-	PlayerArray<int> m_aiFoundValue;
-	PlayerArray<char> m_aiPlayerCityRadiusCount;
-	TeamArray<short> m_aiVisibilityCount;
-	TeamArray<PlayerTypes> m_aiRevealedOwner;
+	EnumMap<PlayerTypes, short> m_em_iDangerMap;	// TAC - AI Improved Naval AI - koma13
+	EnumMap<PlayerTypes,   int> m_em_iCulture;
+	EnumMap<PlayerTypes, short> m_em_iCultureRangeForts; // Super Forts *culture*
+	EnumMap<PlayerTypes,   int> m_em_iFoundValue;
+	EnumMap<PlayerTypes,  char> m_em_iPlayerCityRadiusCount;
+	EnumMap<TeamTypes  , short> m_em_iVisibilityCount;
+	EnumMap<TeamTypes  , PlayerTypes> m_em_eRevealedOwner;
 
 	TeamBoolArray m_pab_Revealed;
 	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;

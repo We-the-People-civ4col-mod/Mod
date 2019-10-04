@@ -197,7 +197,7 @@ template<class LengthType, class T, int DEFAULT, class T_SUBSET>
 inline T EnumMap<LengthType, T, DEFAULT, T_SUBSET>::get(LengthType eIndex) const
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
-	return m_pArray ? m_pArray[eIndex - First()] : DEFAULT;
+	return (T)(m_pArray ? m_pArray[eIndex - First()] : DEFAULT);
 }
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
@@ -206,7 +206,10 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::set(LengthType eIndex, T 
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (m_pArray == NULL)
 	{
-		if (eValue != DEFAULT)
+		if (eValue == DEFAULT) 
+		{
+			return;
+		}
 		allocate();
 	}
 	m_pArray[eIndex - First()] = eValue;
@@ -355,11 +358,13 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::allocate()
 	}
 	else
 	{
-		std::fill_n(m_pArray, numElements(), DEFAULT);
+		std::fill_n(m_pArray, numElements(), (T)DEFAULT);
 	}
 }
 
-
+//
+// Savegame code
+//
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
 inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::Read(CvSavegameReader& reader)
@@ -551,7 +556,9 @@ inline void EnumMap<LengthType, T, DEFAULT, T_SUBSET>::Write(CvSavegameWriter& w
 	}
 }
 
-
+//
+// operator overloads
+//
 
 template<class LengthType, class T, int DEFAULT, class T_SUBSET>
 inline EnumMap<LengthType, T, DEFAULT, T_SUBSET>& EnumMap<LengthType, T, DEFAULT, T_SUBSET>::operator=(const EnumMap &rhs)
@@ -699,7 +706,7 @@ __forceinline VAR ArrayLength(VAR var) { return NUM_TYPES; } \
 __forceinline JITarrayTypes ArrayType(VAR var) { return JIT_TYPE; }
 
 
-SET_ARRAY_XML_ENUM(ArtStyleTypes       , (ArtStyleTypes)GC.getNumArtStyleTypes(), JIT_ARRAY_ART_STYLE);
+SET_ARRAY_XML_ENUM(ArtStyleTypes       , NUM_ARTSTYLE_TYPES       , JIT_ARRAY_ART_STYLE       );
 SET_ARRAY_XML_ENUM(BonusTypes          , NUM_BONUS_TYPES          , JIT_ARRAY_BONUS           );
 SET_ARRAY_XML_ENUM(BuildTypes          , NUM_BUILD_TYPES          , JIT_ARRAY_BUILD           );
 SET_ARRAY_XML_ENUM(BuildingTypes       , NUM_BUILDING_TYPES       , JIT_ARRAY_BUILDING        );
@@ -710,7 +717,7 @@ SET_ARRAY_XML_ENUM(CivicTypes          , NUM_CIVIC_TYPES          , JIT_ARRAY_CI
 SET_ARRAY_XML_ENUM(CivicOptionTypes    , NUM_CIVICOPTION_TYPES    , JIT_ARRAY_CIVIC_OPTION    );
 SET_ARRAY_XML_ENUM(CivilizationTypes   , NUM_CIVILIZATION_TYPES   , JIT_ARRAY_CIVILIZATION    );
 SET_ARRAY_XML_ENUM(ClimateTypes        , NUM_CLIMATE_TYPES        , JIT_ARRAY_CLIMATE         );
-SET_ARRAY_XML_ENUM(ColorTypes          , (ColorTypes)GC.getNumColorInfos(), JIT_ARRAY_COLOR   );
+SET_ARRAY_XML_ENUM(ColorTypes          , NUM_COLOR_TYPES          , JIT_ARRAY_COLOR           );
 SET_ARRAY_XML_ENUM(CultureLevelTypes   , NUM_CULTURELEVEL_TYPES   , JIT_ARRAY_CULTURE         );
 SET_ARRAY_XML_ENUM(DiplomacyTypes      , NUM_DIPLOMACY_TYPES      , JIT_ARRAY_DIPLO           );
 SET_ARRAY_XML_ENUM(EraTypes            , NUM_ERA_TYPES            , JIT_ARRAY_ERA             );
@@ -729,7 +736,7 @@ SET_ARRAY_XML_ENUM(HurryTypes          , NUM_HURRY_TYPES          , JIT_ARRAY_HU
 SET_ARRAY_XML_ENUM(ImprovementTypes    , NUM_IMPROVEMENT_TYPES    , JIT_ARRAY_IMPROVEMENT     );
 SET_ARRAY_XML_ENUM(LeaderHeadTypes     , NUM_LEADER_TYPES         , JIT_ARRAY_LEADER_HEAD     );
 SET_ARRAY_XML_ENUM(MemoryTypes         , NUM_MEMORY_TYPES         , JIT_ARRAY_MEMORY          );
-SET_ARRAY_XML_ENUM(PlayerColorTypes    , (PlayerColorTypes)GC.getNumPlayerColorInfos(), JIT_ARRAY_PLAYER_COLOR);
+SET_ARRAY_XML_ENUM(PlayerColorTypes    , NUM_PLAYERCOLOR_TYPES    , JIT_ARRAY_PLAYER_COLOR    );
 SET_ARRAY_XML_ENUM(PlayerOptionTypes   , NUM_PLAYEROPTION_TYPES   , JIT_ARRAY_PLAYER_OPTION   );
 SET_ARRAY_XML_ENUM(ProfessionTypes     , NUM_PROFESSION_TYPES     , JIT_ARRAY_PROFESSION      );
 SET_ARRAY_XML_ENUM(PromotionTypes      , NUM_PROMOTION_TYPES      , JIT_ARRAY_PROMOTION       );
@@ -741,7 +748,7 @@ SET_ARRAY_XML_ENUM(UnitTypes           , NUM_UNIT_TYPES           , JIT_ARRAY_UN
 SET_ARRAY_XML_ENUM(UnitAITypes         , NUM_UNITAI_TYPES         , JIT_ARRAY_UNIT_AI         );
 SET_ARRAY_XML_ENUM(UnitClassTypes      , NUM_UNITCLASS_TYPES      , JIT_ARRAY_UNIT_CLASS      );
 SET_ARRAY_XML_ENUM(UnitCombatTypes     , NUM_UNITCOMBAT_TYPES     , JIT_ARRAY_UNIT_COMBAT     );
-SET_ARRAY_XML_ENUM(SpecialUnitTypes    , (SpecialUnitTypes)GC.getNumSpecialUnitInfos(), JIT_ARRAY_UNIT_SPECIAL);
+SET_ARRAY_XML_ENUM(SpecialUnitTypes    , NUM_SPECIALUNIT_TYPES    , JIT_ARRAY_UNIT_SPECIAL    );
 SET_ARRAY_XML_ENUM(VictoryTypes        , NUM_VICTORY_TYPES        , JIT_ARRAY_VICTORY         );
 SET_ARRAY_XML_ENUM(WorldSizeTypes      , NUM_WORLDSIZE_TYPES      , JIT_ARRAY_WORLD_SIZE      );
 SET_ARRAY_XML_ENUM(YieldTypes          , NUM_YIELD_TYPES          , JIT_ARRAY_YIELD           );

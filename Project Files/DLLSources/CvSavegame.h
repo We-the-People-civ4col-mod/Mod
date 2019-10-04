@@ -220,6 +220,12 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 
+	template<class T1, class T2, int T3, class T4>
+	void Write(EnumMap<T1, T2, T3, T4>& em);
+
+	template<class T1, class T2, int T3, class T4>
+	void Write(SavegameVariableTypes eType, EnumMap<T1, T2, T3, T4>& em);
+
 	template<class T>
 	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
 
@@ -407,6 +413,22 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	{
 		Write(eType);
 		Write(jitArray);
+	}
+}
+
+template<class T1, class T2, int T3, class T4>
+inline void CvSavegameWriter::Write(EnumMap<T1, T2, T3, T4>& em)
+{
+	em.Write(*this);
+}
+
+template<class T1, class T2, int T3, class T4>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMap<T1, T2, T3, T4>& em)
+{
+	if (em.hasContent())
+	{
+		Write(eType);
+		Write(em);
 	}
 }
 

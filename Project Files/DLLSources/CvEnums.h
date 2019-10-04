@@ -178,11 +178,17 @@ enum DllExport WrapDirection
 enum DllExport ColorTypes
 {
 	NO_COLOR = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_COLOR_TYPES,
+#endif
 };
 
 enum DllExport PlayerColorTypes
 {
 	NO_PLAYERCOLOR = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_PLAYERCOLOR_TYPES,
+#endif
 };
 
 //Warning: these values correspond to locations in the plot texture [JW]
@@ -786,6 +792,9 @@ enum DllExport TurnTimerTypes
 enum DllExport ArtStyleTypes
 {
 	NO_ARTSTYLE = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_ARTSTYLE_TYPES,
+#endif
 };
 
 //Androrc UnitArtStyles
@@ -1045,6 +1054,9 @@ enum DllExport DenialTypes
 enum DllExport SpecialUnitTypes
 {
 	NO_SPECIALUNIT = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_SPECIALUNIT_TYPES,
+#endif
 };
 
 /*
