@@ -181,6 +181,7 @@ enum DllExport ColorTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_COLOR_TYPES,
 #endif
+	BYTESIZE_COLOR_TYPES = 2,
 };
 
 enum DllExport PlayerColorTypes
@@ -189,6 +190,7 @@ enum DllExport PlayerColorTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_PLAYERCOLOR_TYPES,
 #endif
+	BYTESIZE_PLAYERCOLOR_TYPES = 2,
 };
 
 //Warning: these values correspond to locations in the plot texture [JW]
@@ -795,6 +797,7 @@ enum DllExport ArtStyleTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_ARTSTYLE_TYPES,
 #endif
+	BYTESIZE_ARTSTYLE_TYPES = 2,
 };
 
 //Androrc UnitArtStyles
@@ -855,6 +858,7 @@ enum DllExport TeamTypes
 	NO_TEAM = -1,
 	FIRST_TEAM = 0,
 	NUM_TEAM_TYPES = MAX_TEAMS,
+	BYTESIZE_TEAM_TYPES = NUM_TEAM_TYPES > 128 ? 2 : 1,
 };
 
 enum DllExport PlayerTypes
@@ -863,6 +867,7 @@ enum DllExport PlayerTypes
 	NO_PLAYER = -1,
 	FIRST_PLAYER = 0,
 	NUM_PLAYER_TYPES = MAX_PLAYERS,
+	BYTESIZE_PLAYER_TYPES = NUM_PLAYER_TYPES > 128 ? 2 : 1,
 };
 
 enum DllExport OrderTypes
@@ -1057,6 +1062,7 @@ enum DllExport SpecialUnitTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_SPECIALUNIT_TYPES,
 #endif
+	BYTESIZE_SPECIALUNIT_TYPES = 2,
 };
 
 /*
@@ -1780,8 +1786,10 @@ enum DllExport MemoryTypes
 	MEMORY_MISSIONARY_FAIL,
 
 #ifdef _USRDLL
-	NUM_MEMORY_TYPES
+	NUM_MEMORY_TYPES,
 #endif
+
+	BYTESIZE_MEMORY_TYPES = NUM_MEMORY_TYPES > 128 ? 2 : 1,
 };
 
 enum DllExport AttitudeTypes

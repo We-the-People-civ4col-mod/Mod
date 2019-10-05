@@ -137,7 +137,15 @@ sub processFile
 
 	print $output "\n\tNUM_" . $TYPE . "_TYPES,\n";
 	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n" if $isYield;
-	print $output "\n#endif // HARDCODE_XML_VALUES\n" unless $isHardcoded;
+	print $output "\n\tBYTESIZE_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES > 128 ? 2 : 1,\n";
+	
+	unless ($isHardcoded)
+	{
+		print $output "\n#else // HARDCODE_XML_VALUES\n";
+		print $output "\n\tBYTESIZE_" . $TYPE . "_TYPES = 2,\n";
+		print $output "\n#endif // HARDCODE_XML_VALUES\n";
+	}
+	
 	print $output "\n\tFIRST_" . $TYPE . " = 0,\n";
 	print $output "};\n\n";
 	
