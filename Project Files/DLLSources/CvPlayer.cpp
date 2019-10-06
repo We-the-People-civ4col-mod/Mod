@@ -370,11 +370,11 @@ void CvPlayer::uninit()
 // Initializes data members that are serialized.
 void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 {
-	resetSavedData(eID,bConstructorCall);
 	int iI, iJ;
 	//--------------------------------
 	// Uninit class
 	uninit();
+	resetSavedData(eID,bConstructorCall);
 
     /** NBMOD TAX **/
     m_iMaxTaxRate = 50;
@@ -402,22 +402,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iMissionaryRateModifier = 0;
 	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
 	m_uiStartTime = 0;
-
-	m_eID = eID;
-	updateTeamType();
-	updateHuman();
-
-	if (m_eID != NO_PLAYER)
-	{
-		m_ePersonalityType = GC.getInitCore().getLeader(m_eID); //??? Is this repeated data???
-	}
-	else
-	{
-		m_ePersonalityType = NO_LEADER;
-	}
-	m_eCurrentEra = ((EraTypes)0);  //??? Is this repeated data???
-	m_eParent = NO_PLAYER;
-	m_eImmigrationConversion = YIELD_CROSSES;
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
@@ -12533,15 +12517,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 
 
 
-
-	pStream->Read((int*)&m_eID);
-	pStream->Read((int*)&m_ePersonalityType);
-	pStream->Read((int*)&m_eCurrentEra);
-	pStream->Read((int*)&m_eParent);
-	updateTeamType(); //m_eTeamType not saved
-	updateHuman();
-	pStream->Read((int*)&m_eImmigrationConversion);
-
 	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
 	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRateModifier);
 	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalYieldRateModifier);
@@ -12951,13 +12926,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 
 	uint uiFlag = 3;
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_eID);
-	pStream->Write(m_ePersonalityType);
-	pStream->Write(m_eCurrentEra);
-	pStream->Write(m_eParent);
-	//m_eTeamType not saved
-	pStream->Write(m_eImmigrationConversion);
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
 	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);

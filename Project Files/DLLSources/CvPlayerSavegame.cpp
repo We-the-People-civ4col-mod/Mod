@@ -1,4 +1,5 @@
 #include "CvGameCoreDLL.h"
+#include "CvInitCore.h"
 
 #include "CvSavegame.h"
 
@@ -75,6 +76,11 @@ const bool defaultExtendedGame = false;
 const bool defaultFoundedFirstCity = false;
 const bool defaultStrike = false;
 
+const PlayerTypes defaultID = NO_PLAYER;
+const LeaderHeadTypes defaultPersonalityType = NO_LEADER;
+const EraTypes defaultCurrentEra = ((EraTypes)0);
+const PlayerTypes defaultParent = NO_PLAYER;
+const YieldTypes defaultImmigrationConversion = YIELD_CROSSES;
 
 
 // 
@@ -150,6 +156,12 @@ enum SavegameVariableTypes
 	PlayerSave_ExtendedGame,
 	PlayerSave_FoundedFirstCity,
 	PlayerSave_Strike,
+
+	PlayerSave_ID,
+	PlayerSave_PersonalityType,
+	PlayerSave_CurrentEra,
+	PlayerSave_Parent,
+	PlayerSave_ImmigrationConversion,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -228,6 +240,12 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_ExtendedGame: return "PlayerSave_ExtendedGame";
 	case PlayerSave_FoundedFirstCity: return "PlayerSave_FoundedFirstCity";
 	case PlayerSave_Strike: return "PlayerSave_Strike";
+
+	case PlayerSave_ID: return "PlayerSave_ID";
+	case PlayerSave_PersonalityType: return "PlayerSave_PersonalityType";
+	case PlayerSave_CurrentEra: return "PlayerSave_CurrentEra";
+	case PlayerSave_Parent: return "PlayerSave_Parent";
+	case PlayerSave_ImmigrationConversion: return "PlayerSave_ImmigrationConversion";
 	}
 	return "";
 }
@@ -310,6 +328,21 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_bExtendedGame = defaultExtendedGame;
 	m_bFoundedFirstCity = defaultFoundedFirstCity;
 	m_bStrike = defaultStrike;
+
+	m_eID = eID;
+	updateTeamType();
+	updateHuman();
+	if (m_eID != NO_PLAYER)
+	{
+		m_ePersonalityType = GC.getInitCore().getLeader(m_eID); //??? Is this repeated data???
+	}
+	else
+	{
+		m_ePersonalityType = NO_LEADER;
+	}
+	m_eCurrentEra= defaultCurrentEra;
+	m_eParent= defaultParent;
+	m_eImmigrationConversion= defaultImmigrationConversion;
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -402,11 +435,18 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_ExtendedGame: reader.Read(m_bExtendedGame); break;
 		case PlayerSave_FoundedFirstCity: reader.Read(m_bFoundedFirstCity); break;
 		case PlayerSave_Strike: reader.Read(m_bStrike); break;
+
+		case PlayerSave_ID: reader.Read(m_eID); break;
+		case PlayerSave_PersonalityType: reader.Read(m_ePersonalityType); break;
+		case PlayerSave_CurrentEra: reader.Read(m_eCurrentEra); break;
+		case PlayerSave_Parent: reader.Read(m_eParent); break;
+		case PlayerSave_ImmigrationConversion: reader.Read(m_eImmigrationConversion); break;
 		}
 	}
 	
 	// The player is loaded. Now set up the cache according to the read data.
-
+	updateTeamType(); //m_eTeamType not saved
+	updateHuman();
 }
 
 void CvPlayer::write(CvSavegameWriter writer)
@@ -488,6 +528,12 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_ExtendedGame, m_bExtendedGame, defaultExtendedGame);
 	writer.Write(PlayerSave_FoundedFirstCity, m_bFoundedFirstCity, defaultFoundedFirstCity);
 	writer.Write(PlayerSave_Strike, m_bStrike, defaultStrike);
+
+	writer.Write(PlayerSave_ID, m_eID, defaultID);
+	writer.Write(PlayerSave_PersonalityType, m_ePersonalityType, defaultPersonalityType);
+	writer.Write(PlayerSave_CurrentEra, m_eCurrentEra, defaultCurrentEra);
+	writer.Write(PlayerSave_Parent, m_eParent, defaultParent);
+	writer.Write(PlayerSave_ImmigrationConversion, m_eImmigrationConversion, defaultImmigrationConversion);
 
 	writer.Write(PlayerSave_END);
 }
