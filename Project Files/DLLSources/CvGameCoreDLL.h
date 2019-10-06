@@ -281,6 +281,7 @@ namespace boost
 #include "CvGlobalConstants.h"
 
 #include "EnumMap.h"
+#include "EnumMap2D.h"
 
 #include "CvGlobals.h"
 

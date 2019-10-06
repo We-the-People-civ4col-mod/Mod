@@ -2881,9 +2881,9 @@ int CvCity::hurryYield(HurryTypes eHurry, YieldTypes eYield) const
 	return getHurryYieldNeeded(eHurry, eYield) - getHurryYieldDeficit(eHurry, eYield);
 }
 
-int CvCity::cultureDistance(int iDX, int iDY) const
+CultureLevelTypes CvCity::cultureDistance(int iDX, int iDY) const
 {
-	return std::max(1, plotDistance(0, 0, iDX, iDY));
+	return static_cast<CultureLevelTypes>(std::max(1, plotDistance(0, 0, iDX, iDY)));
 }
 
 /*
@@ -3782,7 +3782,6 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 	CvPlot* pLoopPlot;
 	CvWString szBuffer;
 	CultureLevelTypes eOldValue;
-	int iCultureRange;
 	int iDX, iDY;
 	int iI;
 
@@ -3798,19 +3797,19 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 			{
 				for (iDY = -eOldValue; iDY <= eOldValue; iDY++)
 				{
-					iCultureRange = cultureDistance(iDX, iDY);
+					CultureLevelTypes eCultureRange = cultureDistance(iDX, iDY);
 
-					if (iCultureRange > getCultureLevel())
+					if (eCultureRange > getCultureLevel())
 					{
-						if (iCultureRange <= eOldValue)
+						if (eCultureRange <= eOldValue)
 						{
-							FAssert(iCultureRange <= GC.getNumCultureLevelInfos());
+							FAssert(eCultureRange <= GC.getNumCultureLevelInfos());
 
 							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 
 							if (pLoopPlot != NULL)
 							{
-								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, -1);
+								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), eCultureRange, -1);
 							}
 						}
 					}
@@ -3824,19 +3823,19 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 			{
 				for (iDY = -getCultureLevel(); iDY <= getCultureLevel(); iDY++)
 				{
-					iCultureRange = cultureDistance(iDX, iDY);
+					CultureLevelTypes eCultureRange = cultureDistance(iDX, iDY);
 
-					if (iCultureRange > eOldValue)
+					if (eCultureRange > eOldValue)
 					{
-						if (iCultureRange <= getCultureLevel())
+						if (eCultureRange <= getCultureLevel())
 						{
-							FAssert(iCultureRange <= GC.getNumCultureLevelInfos());
+							FAssert(eCultureRange <= GC.getNumCultureLevelInfos());
 
 							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 
 							if (pLoopPlot != NULL)
 							{
-								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, 1);
+								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), eCultureRange, 1);
 							}
 						}
 					}

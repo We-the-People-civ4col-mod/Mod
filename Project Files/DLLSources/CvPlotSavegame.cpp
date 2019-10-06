@@ -104,6 +104,9 @@ enum SavegameVariableTypes
 	Save_VisibilityCount,
 	Save_RevealedOwner,
 
+	Save_CultureRangeCities,
+	Save_InvisibleVisibilityCount,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -336,13 +339,16 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_aiYield: m_em_iYield.Read(reader); break;
 
 		// PlayerArrays
-		case Save_Culture                : m_em_iCulture                       .Read(reader); break;
-		case Save_CultureRangeForts      : m_em_iCultureRangeForts             .Read(reader); break;
-		case Save_DangerMap              : m_em_iDangerMap                     .Read(reader); break;
-		case Save_FoundValue             : m_em_iFoundValue                    .Read(reader); break;
-		case Save_PlayerCityRadiusCount  : m_em_iPlayerCityRadiusCount         .Read(reader); break;
-		case Save_VisibilityCount        : m_em_iVisibilityCount               .Read(reader); break;
-		case Save_RevealedOwner          : m_em_eRevealedOwner                 .Read(reader); break;
+		case Save_Culture                  : m_em_iCulture                       .Read(reader); break;
+		case Save_CultureRangeForts        : m_em_iCultureRangeForts             .Read(reader); break;
+		case Save_DangerMap                : m_em_iDangerMap                     .Read(reader); break;
+		case Save_FoundValue               : m_em_iFoundValue                    .Read(reader); break;
+		case Save_PlayerCityRadiusCount    : m_em_iPlayerCityRadiusCount         .Read(reader); break;
+		case Save_VisibilityCount          : m_em_iVisibilityCount               .Read(reader); break;
+		case Save_RevealedOwner            : m_em_eRevealedOwner                 .Read(reader); break;
+
+		case Save_CultureRangeCities       : m_em2_iCultureRangeCities           .Read(reader); break;
+		case Save_InvisibleVisibilityCount : m_em2_iInvisibleVisibilityCount     .Read(reader); break;
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
@@ -465,6 +471,9 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_PlayerCityRadiusCount, m_em_iPlayerCityRadiusCount);
 	writer.Write(Save_VisibilityCount, m_em_iVisibilityCount);
 	writer.Write(Save_RevealedOwner, m_em_eRevealedOwner);
+
+	writer.Write(Save_CultureRangeCities, m_em2_iCultureRangeCities);
+	writer.Write(Save_InvisibleVisibilityCount, m_em2_iInvisibleVisibilityCount);
 		
 	writer.Write(Save_END);
 }

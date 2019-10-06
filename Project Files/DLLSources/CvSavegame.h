@@ -226,6 +226,12 @@ public:
 	template<class T1, class T2, int T3, class T4, int T5, int T6>
 	void Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5, T6>& em);
 
+	template<class T1, class T2, class T3, int T4>
+	void Write(EnumMap2DDefault<T1, T2, T3, T4>& em);
+
+	template<class T1, class T2, class T3, int T4>
+	void Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em);
+
 	template<class T>
 	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
 
@@ -424,6 +430,22 @@ inline void CvSavegameWriter::Write(EnumMapBase<T1, T2, T3, T4, T5, T6>& em)
 
 template<class T1, class T2, int T3, class T4, int T5, int T6>
 inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5, T6>& em)
+{
+	if (em.hasContent())
+	{
+		Write(eType);
+		Write(em);
+	}
+}
+
+template<class T1, class T2, class T3, int T4>
+inline void CvSavegameWriter::Write(EnumMap2DDefault<T1, T2, T3, T4>& em)
+{
+	em.Write(*this);
+}
+
+template<class T1, class T2, class T3, int T4>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em)
 {
 	if (em.hasContent())
 	{

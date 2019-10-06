@@ -62,6 +62,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_HANDICAP:           return GC.getNumHandicapInfos();
 	case JIT_ARRAY_HURRY:              return GC.getNumHurryInfos();
 	case JIT_ARRAY_IMPROVEMENT:        return GC.getNumImprovementInfos();
+	case JIT_ARRAY_INVISIBLE:          return NUM_INVISIBLE_TYPES;
 	case JIT_ARRAY_LEADER_HEAD:        return GC.getNumLeaderHeadInfos();
 	case JIT_ARRAY_MEMORY:             return NUM_MEMORY_TYPES;
 	case JIT_ARRAY_PLAYER_COLOR:       return GC.getNumPlayerColorInfos();
@@ -120,6 +121,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_HANDICAP:           return &GC.getHandicapInfo((HandicapTypes)iIndex);
 	case JIT_ARRAY_HURRY:              return &GC.getHurryInfo((HurryTypes)iIndex);
 	case JIT_ARRAY_IMPROVEMENT:        return &GC.getImprovementInfo((ImprovementTypes)iIndex);
+	case JIT_ARRAY_INVISIBLE:          return &GC.getInvisibleInfo((InvisibleTypes)iIndex);
 	case JIT_ARRAY_LEADER_HEAD:        return &GC.getLeaderHeadInfo((LeaderHeadTypes)iIndex);
 	case JIT_ARRAY_MEMORY:             return &GC.getMemoryInfo((MemoryTypes)iIndex);
 	case JIT_ARRAY_PLAYER_COLOR:       return &GC.getPlayerColorInfo((PlayerColorTypes)iIndex);
@@ -206,6 +208,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_HANDICAP:           return "Handicap";
 	case JIT_ARRAY_HURRY:              return "Hurry";
 	case JIT_ARRAY_IMPROVEMENT:        return "Improvement";
+	case JIT_ARRAY_INVISIBLE:          return "Invisible";
 	case JIT_ARRAY_LEADER_HEAD:        return "LeaderHead";
 	case JIT_ARRAY_MEMORY:             return "Memory";
 	case JIT_ARRAY_PLAYER_COLOR:       return "PlayerColor";
@@ -273,6 +276,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_HANDICAP:           return "HANDICAP_";
 	case JIT_ARRAY_HURRY:              return "HURRY_";
 	case JIT_ARRAY_IMPROVEMENT:        return "IMPROVEMENT_";
+	case JIT_ARRAY_INVISIBLE:          return "INVISIBLE_";
 	case JIT_ARRAY_LEADER_HEAD:        return "LEADER_";
 	case JIT_ARRAY_MEMORY:             return "MEMORY_";
 	case JIT_ARRAY_PLAYER_COLOR:       return "PLAYERCOLOR_";

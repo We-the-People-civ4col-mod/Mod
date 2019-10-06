@@ -177,7 +177,7 @@ public:
 	int maxHurryPopulation() const;
 	int hurryYield(HurryTypes eHurry, YieldTypes eYield) const;
 
-	int cultureDistance(int iDX, int iDY) const;
+	CultureLevelTypes cultureDistance(int iDX, int iDY) const;
 
 	// Custom_House_Mod Start
 	bool isBestPortCity() const;

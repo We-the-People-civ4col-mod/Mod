@@ -796,6 +796,7 @@ SET_ARRAY_XML_ENUM(GoodyTypes          , NUM_GOODY_TYPES          , JIT_ARRAY_GO
 SET_ARRAY_XML_ENUM(HandicapTypes       , NUM_HANDICAP_TYPES       , JIT_ARRAY_HANDICAP        , BYTESIZE_HANDICAP_TYPES       );
 SET_ARRAY_XML_ENUM(HurryTypes          , NUM_HURRY_TYPES          , JIT_ARRAY_HURRY           , BYTESIZE_HURRY_TYPES          );
 SET_ARRAY_XML_ENUM(ImprovementTypes    , NUM_IMPROVEMENT_TYPES    , JIT_ARRAY_IMPROVEMENT     , BYTESIZE_IMPROVEMENT_TYPES    );
+SET_ARRAY_XML_ENUM(InvisibleTypes      , NUM_INVISIBLE_TYPES      , JIT_ARRAY_INVISIBLE       , BYTESIZE_INVISIBLE_TYPES      );
 SET_ARRAY_XML_ENUM(LeaderHeadTypes     , NUM_LEADER_TYPES         , JIT_ARRAY_LEADER_HEAD     , BYTESIZE_LEADER_TYPES         );
 SET_ARRAY_XML_ENUM(MemoryTypes         , NUM_MEMORY_TYPES         , JIT_ARRAY_MEMORY          , BYTESIZE_MEMORY_TYPES         );
 SET_ARRAY_XML_ENUM(PlayerColorTypes    , NUM_PLAYERCOLOR_TYPES    , JIT_ARRAY_PLAYER_COLOR    , BYTESIZE_PLAYERCOLOR_TYPES    );
@@ -825,6 +826,9 @@ SET_ARRAY_XML_ENUM(TeamTypes           , NUM_TEAM_TYPES           , NO_JIT_ARRAY
 // In most cases it's not nice code to include all parameters from EnumMapBase.
 // Adding other classes, which always sets the default makes it easier to add EnumMaps as arguments to functions etc.
 //
+
+template<class LengthType, class T, int DEFAULT>
+class EnumMapDefault : public EnumMapBase <LengthType, T, DEFAULT, LengthType, EnumMapGetDefault<T>::SIZE, EnumMapGetDefault<T>::SIZE_OF_T > {};
 
 template<class LengthType, class T>
 class EnumMap : public EnumMapBase <LengthType, T, EnumMapGetDefault<T>::value, LengthType, EnumMapGetDefault<T>::SIZE, EnumMapGetDefault<T>::SIZE_OF_T > {};

@@ -36,8 +36,6 @@ int CvPlot::iMaxVisibilityRangeCache;
 CvPlot::CvPlot()
 {
 	m_paiBuildProgress = NULL;
-	m_apaiCultureRangeCities = NULL;
-	m_apaiInvisibleVisibilityCount = NULL;
 
 	m_pFeatureSymbol = NULL;
 	m_pPlotBuilder = NULL;
@@ -85,24 +83,6 @@ void CvPlot::uninit()
 	m_pCenterUnit = NULL;
 
 	SAFE_DELETE_ARRAY(m_paiBuildProgress);
-
-	if (NULL != m_apaiCultureRangeCities)
-	{
-		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiCultureRangeCities[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiCultureRangeCities);
-	}
-
-	if (NULL != m_apaiInvisibleVisibilityCount)
-	{
-		for (int iI = 0; iI < MAX_TEAMS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount);
-	}
 
 	m_units.clear();
 }
@@ -3001,7 +2981,7 @@ bool CvPlot::isWithinCultureRange(PlayerTypes ePlayer) const
 {
 	//allow culture two plots from cities culture
 	int iExtraCultureRange = GC.getDefineINT("BUY_PLOT_CULTURE_RANGE");
-	for (int iCultureLevel = 0; iCultureLevel < GC.getNumCultureLevelInfos(); ++iCultureLevel)
+	for (CultureLevelTypes eCultureLevel = FIRST_CULTURELEVEL; eCultureLevel < NUM_CULTURELEVEL_TYPES; ++eCultureLevel)
 	{
 		for (int iDX = -iExtraCultureRange; iDX <= iExtraCultureRange; iDX++)
 		{
@@ -3010,7 +2990,7 @@ bool CvPlot::isWithinCultureRange(PlayerTypes ePlayer) const
 				CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 				if(pLoopPlot != NULL)
 				{
-					if (pLoopPlot->isCultureRangeCity(ePlayer, iCultureLevel))
+					if (pLoopPlot->isCultureRangeCity(ePlayer, eCultureLevel))
 					{
 						return true;
 					}
@@ -3034,13 +3014,12 @@ bool CvPlot::isWithinCultureRange(PlayerTypes ePlayer) const
 int CvPlot::getNumCultureRangeCities(PlayerTypes ePlayer) const
 {
 	int iCount;
-	int iI;
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getNumCultureLevelInfos(); ++iI)
+	for (CultureLevelTypes eCultureLevel = FIRST_CULTURELEVEL; eCultureLevel < NUM_CULTURELEVEL_TYPES; ++eCultureLevel)
 	{
-		iCount += getCultureRangeCities(ePlayer, iI);
+		iCount += getCultureRangeCities(ePlayer, eCultureLevel);
 	}
 
 	return iCount;
@@ -7404,66 +7383,39 @@ void CvPlot::setCenterUnit(CvUnit* pNewValue)
 }
 
 
-int CvPlot::getCultureRangeCities(PlayerTypes eOwnerIndex, int iRangeIndex) const
+int CvPlot::getCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex) const
 {
 	FAssert(eOwnerIndex >= 0);
 	FAssert(eOwnerIndex < MAX_PLAYERS);
-	FAssert(iRangeIndex >= 0);
-	FAssert(iRangeIndex < GC.getNumCultureLevelInfos());
+	FAssert(eRangeIndex >= 0);
+	FAssert(eRangeIndex < GC.getNumCultureLevelInfos());
 
-	if (NULL == m_apaiCultureRangeCities)
-	{
-		return 0;
-	}
-	else if (NULL == m_apaiCultureRangeCities[eOwnerIndex])
-	{
-		return 0;
-	}
-
-	return m_apaiCultureRangeCities[eOwnerIndex][iRangeIndex];
+	return m_em2_iCultureRangeCities.get(eOwnerIndex, eRangeIndex);
 }
 
 
-bool CvPlot::isCultureRangeCity(PlayerTypes eOwnerIndex, int iRangeIndex) const
+bool CvPlot::isCultureRangeCity(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex) const
 {
-	return (getCultureRangeCities(eOwnerIndex, iRangeIndex) > 0);
+	return (getCultureRangeCities(eOwnerIndex, eRangeIndex) > 0);
 }
 
 
-void CvPlot::changeCultureRangeCities(PlayerTypes eOwnerIndex, int iRangeIndex, int iChange)
+void CvPlot::changeCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex, int iChange)
 {
 	bool bOldCultureRangeCities;
 
 	FAssert(eOwnerIndex >= 0);
 	FAssert(eOwnerIndex < MAX_PLAYERS);
-	FAssert(iRangeIndex >= 0);
-	FAssert(iRangeIndex < GC.getNumCultureLevelInfos());
+	FAssert(eRangeIndex >= 0);
+	FAssert(eRangeIndex < GC.getNumCultureLevelInfos());
 
 	if (0 != iChange)
 	{
-		bOldCultureRangeCities = isCultureRangeCity(eOwnerIndex, iRangeIndex);
+		bOldCultureRangeCities = isCultureRangeCity(eOwnerIndex, eRangeIndex);
 
-		if (NULL == m_apaiCultureRangeCities)
-		{
-			m_apaiCultureRangeCities = new char*[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_apaiCultureRangeCities[iI] = NULL;
-			}
-		}
+		m_em2_iCultureRangeCities.add(eOwnerIndex, eRangeIndex, iChange);
 
-		if (NULL == m_apaiCultureRangeCities[eOwnerIndex])
-		{
-			m_apaiCultureRangeCities[eOwnerIndex] = new char[GC.getNumCultureLevelInfos()];
-			for (int iI = 0; iI < GC.getNumCultureLevelInfos(); ++iI)
-			{
-				m_apaiCultureRangeCities[eOwnerIndex][iI] = 0;
-			}
-		}
-
-		m_apaiCultureRangeCities[eOwnerIndex][iRangeIndex] += iChange;
-
-		if (bOldCultureRangeCities != isCultureRangeCity(eOwnerIndex, iRangeIndex))
+		if (bOldCultureRangeCities != isCultureRangeCity(eOwnerIndex, eRangeIndex))
 		{
 			updateCulture(true);
 		}
@@ -7478,16 +7430,7 @@ int CvPlot::getInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInvisib
 	FAssertMsg(eInvisible >= 0, "eInvisible is expected to be non-negative (invalid Index)");
 	FAssertMsg(eInvisible < GC.getNumInvisibleInfos(), "eInvisible is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_apaiInvisibleVisibilityCount)
-	{
-		return 0;
-	}
-	else if (NULL == m_apaiInvisibleVisibilityCount[eTeam])
-	{
-		return 0;
-	}
-
-	return m_apaiInvisibleVisibilityCount[eTeam][eInvisible];
+	return m_em2_iInvisibleVisibilityCount.get(eTeam, eInvisible);
 }
 
 
@@ -7510,25 +7453,7 @@ void CvPlot::changeInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInv
 	{
 		bOldInvisibleVisible = isInvisibleVisible(eTeam, eInvisible);
 
-		if (NULL == m_apaiInvisibleVisibilityCount)
-		{
-			m_apaiInvisibleVisibilityCount = new short*[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_apaiInvisibleVisibilityCount[iI] = NULL;
-			}
-		}
-
-		if (NULL == m_apaiInvisibleVisibilityCount[eTeam])
-		{
-			m_apaiInvisibleVisibilityCount[eTeam] = new short[GC.getNumInvisibleInfos()];
-			for (int iI = 0; iI < GC.getNumInvisibleInfos(); ++iI)
-			{
-				m_apaiInvisibleVisibilityCount[eTeam][iI] = 0;
-			}
-		}
-
-		m_apaiInvisibleVisibilityCount[eTeam][eInvisible] += iChange;
+		m_em2_iInvisibleVisibilityCount.add(eTeam, eInvisible, iChange);
 
 		if (bOldInvisibleVisible != isInvisibleVisible(eTeam, eInvisible))
 		{
@@ -7976,9 +7901,6 @@ ColorTypes CvPlot::plotMinimapColor()
 //
 void CvPlot::read(FDataStreamBase* pStream)
 {
-	int iI;
-	//bool bVal;
-	char cCount;
 	int iCount;
 
 	
@@ -8003,60 +7925,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 		pStream->Read(iCount, m_paiBuildProgress);
 	}
 
-	if (NULL != m_apaiCultureRangeCities)
-	{
-		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiCultureRangeCities[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiCultureRangeCities);
-	}
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_apaiCultureRangeCities = new char*[cCount];
-		for (iI = 0; iI < cCount; ++iI)
-		{
-			pStream->Read(&iCount);
-			if (iCount > 0)
-			{
-				m_apaiCultureRangeCities[iI] = new char[iCount];
-				pStream->Read(iCount, m_apaiCultureRangeCities[iI]);
-			}
-			else
-			{
-				m_apaiCultureRangeCities[iI] = NULL;
-			}
-		}
-	}
-
-	if (NULL != m_apaiInvisibleVisibilityCount)
-	{
-		for (int iI = 0; iI < MAX_TEAMS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount);
-	}
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_apaiInvisibleVisibilityCount = new short*[cCount];
-		for (iI = 0; iI < cCount; ++iI)
-		{
-			pStream->Read(&iCount);
-			if (iCount > 0)
-			{
-				m_apaiInvisibleVisibilityCount[iI] = new short[iCount];
-				pStream->Read(iCount, m_apaiInvisibleVisibilityCount[iI]);
-			}
-			else
-			{
-				m_apaiInvisibleVisibilityCount[iI] = NULL;
-			}
-		}
-	}
-
 	m_units.Read(pStream);
 }
 
@@ -8066,8 +7934,6 @@ void CvPlot::read(FDataStreamBase* pStream)
 //
 void CvPlot::write(FDataStreamBase* pStream)
 {
-	uint iI;
-
 	uint uiFlag=0;
 	pStream->Write(uiFlag);		// flag for expansion
 
@@ -8089,48 +7955,6 @@ void CvPlot::write(FDataStreamBase* pStream)
 	{
 		pStream->Write((int)GC.getNumBuildInfos());
 		pStream->Write(GC.getNumBuildInfos(), m_paiBuildProgress);
-	}
-
-	if (NULL == m_apaiCultureRangeCities)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		for (iI=0; iI < MAX_PLAYERS; ++iI)
-		{
-			if (NULL == m_apaiCultureRangeCities[iI])
-			{
-				pStream->Write((int)0);
-			}
-			else
-			{
-				pStream->Write((int)GC.getNumCultureLevelInfos());
-				pStream->Write(GC.getNumCultureLevelInfos(), m_apaiCultureRangeCities[iI]);
-			}
-		}
-	}
-
-	if (NULL == m_apaiInvisibleVisibilityCount)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		for (iI=0; iI < MAX_TEAMS; ++iI)
-		{
-			if (NULL == m_apaiInvisibleVisibilityCount[iI])
-			{
-				pStream->Write((int)0);
-			}
-			else
-			{
-				pStream->Write((int)GC.getNumInvisibleInfos());
-				pStream->Write(GC.getNumInvisibleInfos(), m_apaiInvisibleVisibilityCount[iI]);
-			}
-		}
 	}
 
 	m_units.Write(pStream);

@@ -145,6 +145,11 @@ static inline JITarrayTypes getJITarrayType(ImprovementTypes var)
 	return JIT_ARRAY_IMPROVEMENT;
 }
 
+static inline JITarrayTypes getJITarrayType(InvisibleTypes var)
+{
+	return JIT_ARRAY_INVISIBLE;
+}
+
 static inline JITarrayTypes getJITarrayType(LeaderHeadTypes var)
 {
 	return JIT_ARRAY_LEADER_HEAD;
