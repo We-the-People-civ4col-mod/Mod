@@ -64,6 +64,16 @@ const int defaultKingNumUnitMultiplier = 100;
 const int defaultMissionarySuccessPercent = 100;
 const int defaultTimeNoTrade = 0;
 
+const bool defaultAlive = false;
+const bool defaultWillingToBargain = false;
+const bool defaultEverAlive = false;
+const bool defaultTurnActive = false;
+const bool defaultAutoMoves = false;
+const bool defaultEndTurn = false;
+const bool defaultPbemNewTurn = false;
+const bool defaultExtendedGame = false;
+const bool defaultFoundedFirstCity = false;
+const bool defaultStrike = false;
 
 
 
@@ -129,6 +139,17 @@ enum SavegameVariableTypes
 	PlayerSave_KingNumUnitMultiplier,
 	PlayerSave_MissionarySuccessPercent,
 	PlayerSave_TimeNoTrade,
+
+	PlayerSave_Alive,
+	PlayerSave_WillingToBargain,
+	PlayerSave_EverAlive,
+	PlayerSave_TurnActive,
+	PlayerSave_AutoMoves,
+	PlayerSave_EndTurn,
+	PlayerSave_PbemNewTurn,
+	PlayerSave_ExtendedGame,
+	PlayerSave_FoundedFirstCity,
+	PlayerSave_Strike,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -196,6 +217,17 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_KingNumUnitMultiplier: return "PlayerSave_KingNumUnitMultiplier";
 	case PlayerSave_MissionarySuccessPercent: return "PlayerSave_MissionarySuccessPercent";
 	case PlayerSave_TimeNoTrade: return "PlayerSave_TimeNoTrade";
+
+	case PlayerSave_Alive: return "PlayerSave_Alive";
+	case PlayerSave_WillingToBargain: return "PlayerSave_WillingToBargain";
+	case PlayerSave_EverAlive: return "PlayerSave_EverAlive";
+	case PlayerSave_TurnActive: return "PlayerSave_TurnActive";
+	case PlayerSave_AutoMoves: return "PlayerSave_AutoMoves";
+	case PlayerSave_EndTurn: return "PlayerSave_EndTurn";
+	case PlayerSave_PbemNewTurn: return "PlayerSave_PbemNewTurn";
+	case PlayerSave_ExtendedGame: return "PlayerSave_ExtendedGame";
+	case PlayerSave_FoundedFirstCity: return "PlayerSave_FoundedFirstCity";
+	case PlayerSave_Strike: return "PlayerSave_Strike";
 	}
 	return "";
 }
@@ -267,6 +299,17 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iKingNumUnitMultiplier = defaultKingNumUnitMultiplier;
 	m_iMissionarySuccessPercent = defaultMissionarySuccessPercent;
 	m_iTimeNoTrade = defaultTimeNoTrade;
+
+	m_bAlive = defaultAlive;
+	m_bWillingToBargain = defaultWillingToBargain;
+	m_bEverAlive = defaultEverAlive;
+	m_bTurnActive = defaultTurnActive;
+	m_bAutoMoves = defaultAutoMoves;
+	m_bEndTurn = defaultEndTurn;
+	m_bPbemNewTurn = defaultPbemNewTurn;
+	m_bExtendedGame = defaultExtendedGame;
+	m_bFoundedFirstCity = defaultFoundedFirstCity;
+	m_bStrike = defaultStrike;
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -348,6 +391,17 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_KingNumUnitMultiplier: reader.Read(m_iKingNumUnitMultiplier); break;
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
 		case PlayerSave_TimeNoTrade: reader.Read(m_iTimeNoTrade); break;
+
+		case PlayerSave_Alive: reader.Read(m_bAlive); break;
+		case PlayerSave_WillingToBargain: reader.Read(m_bWillingToBargain); break;
+		case PlayerSave_EverAlive: reader.Read(m_bEverAlive); break;
+		case PlayerSave_TurnActive: reader.Read(m_bTurnActive); break;
+		case PlayerSave_AutoMoves: reader.Read(m_bAutoMoves); break;
+		case PlayerSave_EndTurn: reader.Read(m_bEndTurn); break;
+		case PlayerSave_PbemNewTurn: reader.Read(m_bPbemNewTurn); break;
+		case PlayerSave_ExtendedGame: reader.Read(m_bExtendedGame); break;
+		case PlayerSave_FoundedFirstCity: reader.Read(m_bFoundedFirstCity); break;
+		case PlayerSave_Strike: reader.Read(m_bStrike); break;
 		}
 	}
 	
@@ -423,6 +477,17 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_KingNumUnitMultiplier, m_iKingNumUnitMultiplier, defaultKingNumUnitMultiplier);
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);
 	writer.Write(PlayerSave_TimeNoTrade, m_iTimeNoTrade, defaultTimeNoTrade);
+
+	writer.Write(PlayerSave_Alive, m_bAlive, defaultAlive);
+	writer.Write(PlayerSave_WillingToBargain, m_bWillingToBargain, defaultWillingToBargain);
+	writer.Write(PlayerSave_EverAlive, m_bEverAlive, defaultEverAlive);
+	writer.Write(PlayerSave_TurnActive, m_bTurnActive, defaultTurnActive);
+	writer.Write(PlayerSave_AutoMoves, m_bAutoMoves, defaultAutoMoves);
+	writer.Write(PlayerSave_EndTurn, m_bEndTurn, defaultEndTurn);
+	writer.Write(PlayerSave_PbemNewTurn, m_bPbemNewTurn && GC.getGameINLINE().isPbem(), defaultPbemNewTurn); 
+	writer.Write(PlayerSave_ExtendedGame, m_bExtendedGame, defaultExtendedGame);
+	writer.Write(PlayerSave_FoundedFirstCity, m_bFoundedFirstCity, defaultFoundedFirstCity);
+	writer.Write(PlayerSave_Strike, m_bStrike, defaultStrike);
 
 	writer.Write(PlayerSave_END);
 }

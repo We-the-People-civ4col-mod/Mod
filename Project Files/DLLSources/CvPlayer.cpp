@@ -403,19 +403,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
 	m_uiStartTime = 0;
 
-	m_bAlive = false;
-	m_bEverAlive = false;
-	m_bTurnActive = false;
-	m_bAutoMoves = false;
-	m_bEndTurn = false;
-	m_bPbemNewTurn = false;
-	m_bExtendedGame = false;
-	m_bFoundedFirstCity = false;
-	m_bStrike = false;
-	// R&R, ray, Bargaining - START
-	m_bWillingToBargain = false;
-	// R&R, ray, Bargaining - END
-
 	m_eID = eID;
 	updateTeamType();
 	updateHuman();
@@ -12545,20 +12532,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	pStream->Read(&uiFlag);	// flags for expansion
 
 
-	pStream->Read(&m_bAlive);
-	// R&R, ray, Bargaining - Start
-	pStream->Read(&m_bWillingToBargain);
-	// R&R, ray, Bargaining - End
 
-
-	pStream->Read(&m_bEverAlive);
-	pStream->Read(&m_bTurnActive);
-	pStream->Read(&m_bAutoMoves);
-	pStream->Read(&m_bEndTurn);
-	pStream->Read(&m_bPbemNewTurn);
-	pStream->Read(&m_bExtendedGame);
-	pStream->Read(&m_bFoundedFirstCity);
-	pStream->Read(&m_bStrike);
 
 	pStream->Read((int*)&m_eID);
 	pStream->Read((int*)&m_ePersonalityType);
@@ -12977,20 +12951,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 
 	uint uiFlag = 3;
 	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_bAlive);
-	// R&R, ray, Bargaining - Start
-	pStream->Write(m_bWillingToBargain);
-	// R&R, ray, Bargaining - End
-
-	pStream->Write(m_bEverAlive);
-	pStream->Write(m_bTurnActive);
-	pStream->Write(m_bAutoMoves);
-	pStream->Write(m_bEndTurn);
-	pStream->Write(m_bPbemNewTurn && GC.getGameINLINE().isPbem());
-	pStream->Write(m_bExtendedGame);
-	pStream->Write(m_bFoundedFirstCity);
-	pStream->Write(m_bStrike);
 
 	pStream->Write(m_eID);
 	pStream->Write(m_ePersonalityType);
