@@ -390,27 +390,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	// Dale - AoD: AI Autoplay START
 	m_bDisableHuman = false;
 	// Dale - AoD: AI Autoplay END
-
-	m_iKingNumUnitMultiplier = 100;
-	m_iNativeAngerModifier = 0;
-	m_iFreeExperience = 0;
-	m_iWorkerSpeedModifier = 0;
-	m_iImprovementUpgradeRateModifier = 0;
-	m_iMilitaryProductionModifier = 0;
-	m_iCityDefenseModifier = 0;
-	m_iHighestUnitLevel = 1;
-	m_iFatherOverflowBells = 0;
-	m_iExpInBorderModifier = 0;
-	m_iLevelExperienceModifier = 0;
-	m_iCapitalCityID = FFreeList::INVALID_INDEX;
-	m_iCitiesLost = 0;
-	m_iAssets = 0;
-	m_iPower = 0;
-	m_iPopulationScore = 0;
-	m_iLandScore = 0;
-	m_iFatherScore = 0;
-	m_iCombatExperience = 0;
-	m_iSeaCombatExperience = 0; // R&R, ray, Great Admirals
+	
 	m_iPopRushHurryCount = 0;
 	m_iCrossesStored = 0;
 	m_iBellsStored = 0;
@@ -421,7 +401,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iFatherPointMultiplier = 100;
 	m_iMissionaryRateModifier = 0;
 	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
-	m_iMissionarySuccessPercent = 100;
 	m_uiStartTime = 0;
 
 	m_bAlive = false;
@@ -435,30 +414,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_bStrike = false;
 	// R&R, ray, Bargaining - START
 	m_bWillingToBargain = false;
-	m_iTimeNoTrade = 0;
 	// R&R, ray, Bargaining - END
-
-	// R&R, ray, Timers Diplo Events - START
-	m_iTimerNativeMerc = 0;
-	m_iTimerEuropeanWars = 0;
-	m_iTimerEuropeanPeace = 0;
-	m_iTimerPrisonsCrowded = 0;
-	m_iTimerRevolutionaryNoble = 0;
-	m_iTimerBishop = 0;
-	m_iTimerChurchDemand = 0;
-	m_iTimerChurchWar = 0;
-	m_iTimerSmugglingShip = 0;
-	m_iTimerRanger = 0;
-	m_iTimerConquistador = 0;
-	m_iTimerPirates = 0;
-	m_iTimerContinentalGuard = 0;
-	m_iTimerMortar = 0;
-	m_iTimerNativeSlave = 0;
-	m_iTimerAfricanSlaves = 0;
-	m_iTimerStealingImmigrant = 0;
-	// R&R, ray, Timers Diplo Events - END
-
-	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
 	m_eID = eID;
 	updateTeamType();
@@ -12588,66 +12544,12 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iKingNumUnitMultiplier);
-	}
-	if (uiFlag <= 2)
-	{
-		int iEducationThresholdMultiplier;
-		pStream->Read(&iEducationThresholdMultiplier);
-	}
-	pStream->Read(&m_iNativeAngerModifier);
-	pStream->Read(&m_iFreeExperience);
-	pStream->Read(&m_iWorkerSpeedModifier);
-	pStream->Read(&m_iImprovementUpgradeRateModifier);
-	pStream->Read(&m_iMilitaryProductionModifier);
-	pStream->Read(&m_iCityDefenseModifier);
-	pStream->Read(&m_iHighestUnitLevel);
-	pStream->Read(&m_iFatherOverflowBells);
-	pStream->Read(&m_iExpInBorderModifier);
-	pStream->Read(&m_iLevelExperienceModifier);
-	pStream->Read(&m_iCapitalCityID);
-	pStream->Read(&m_iCitiesLost);
-	pStream->Read(&m_iAssets);
-	pStream->Read(&m_iPower);
-	pStream->Read(&m_iPopulationScore);
-	pStream->Read(&m_iLandScore);
-	pStream->Read(&m_iFatherScore);
-	pStream->Read(&m_iCombatExperience);
-	pStream->Read(&m_iSeaCombatExperience); // R&R, ray, Great Admirals
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iMissionarySuccessPercent);
-	}
 
 	pStream->Read(&m_bAlive);
 	// R&R, ray, Bargaining - Start
 	pStream->Read(&m_bWillingToBargain);
-	pStream->Read(&m_iTimeNoTrade);
 	// R&R, ray, Bargaining - End
 
-	// R&R, ray, Timers Diplo Events - START
-	pStream->Read(&m_iTimerNativeMerc);
-	pStream->Read(&m_iTimerEuropeanWars);
-	pStream->Read(&m_iTimerEuropeanPeace);
-	pStream->Read(&m_iTimerPrisonsCrowded);
-	pStream->Read(&m_iTimerRevolutionaryNoble);
-	pStream->Read(&m_iTimerBishop);
-	pStream->Read(&m_iTimerChurchDemand);
-	pStream->Read(&m_iTimerChurchWar);
-	pStream->Read(&m_iTimerSmugglingShip);
-	pStream->Read(&m_iTimerRanger);
-	pStream->Read(&m_iTimerConquistador);
-	pStream->Read(&m_iTimerPirates);
-	pStream->Read(&m_iTimerContinentalGuard);
-	pStream->Read(&m_iTimerMortar);
-	pStream->Read(&m_iTimerNativeSlave);
-	pStream->Read(&m_iTimerAfricanSlaves);
-	pStream->Read(&m_iTimerStealingImmigrant);
-	// R&R, ray, Timers Diplo Events - END
-
-	pStream->Read(&m_iChurchFavoursReceived); // R&R, ray, Church Favours
 
 	pStream->Read(&m_bEverAlive);
 	pStream->Read(&m_bTurnActive);
@@ -13076,55 +12978,10 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	uint uiFlag = 3;
 	pStream->Write(uiFlag);		// flag for expansion
 
-	pStream->Write(m_iKingNumUnitMultiplier);
-	pStream->Write(m_iNativeAngerModifier);
-	pStream->Write(m_iFreeExperience);
-	pStream->Write(m_iWorkerSpeedModifier);
-	pStream->Write(m_iImprovementUpgradeRateModifier);
-	pStream->Write(m_iMilitaryProductionModifier);
-	pStream->Write(m_iCityDefenseModifier);
-	pStream->Write(m_iHighestUnitLevel);
-	pStream->Write(m_iFatherOverflowBells);
-	pStream->Write(m_iExpInBorderModifier);
-	pStream->Write(m_iLevelExperienceModifier);
-	pStream->Write(m_iCapitalCityID);
-	pStream->Write(m_iCitiesLost);
-	pStream->Write(m_iAssets);
-	pStream->Write(m_iPower);
-	pStream->Write(m_iPopulationScore);
-	pStream->Write(m_iLandScore);
-	pStream->Write(m_iFatherScore);
-	pStream->Write(m_iCombatExperience);
-	pStream->Write(m_iSeaCombatExperience); // R&R, ray, Great Admirals
-	pStream->Write(m_iMissionarySuccessPercent);
-
 	pStream->Write(m_bAlive);
 	// R&R, ray, Bargaining - Start
 	pStream->Write(m_bWillingToBargain);
-	pStream->Write(m_iTimeNoTrade);
 	// R&R, ray, Bargaining - End
-
-	// R&R, ray, Timers Diplo Events - START
-	pStream->Write(m_iTimerNativeMerc);
-	pStream->Write(m_iTimerEuropeanWars);
-	pStream->Write(m_iTimerEuropeanPeace);
-	pStream->Write(m_iTimerPrisonsCrowded);
-	pStream->Write(m_iTimerRevolutionaryNoble);
-	pStream->Write(m_iTimerBishop);
-	pStream->Write(m_iTimerChurchDemand);
-	pStream->Write(m_iTimerChurchWar);
-	pStream->Write(m_iTimerSmugglingShip);
-	pStream->Write(m_iTimerRanger);
-	pStream->Write(m_iTimerConquistador);
-	pStream->Write(m_iTimerPirates);
-	pStream->Write(m_iTimerContinentalGuard);
-	pStream->Write(m_iTimerMortar);
-	pStream->Write(m_iTimerNativeSlave);
-	pStream->Write(m_iTimerAfricanSlaves);
-	pStream->Write(m_iTimerStealingImmigrant);
-	// R&R, ray, Timers Diplo Events - END
-
-	pStream->Write(m_iChurchFavoursReceived); // R&R, ray, Church Favours
 
 	pStream->Write(m_bEverAlive);
 	pStream->Write(m_bTurnActive);
