@@ -1089,6 +1089,12 @@ protected:
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData(PlayerTypes eID = NO_PLAYER, bool bConstructorCall = false);
+
 	void doUpdateCacheOnTurn();
 
 	// transport feeder - start - Nightinggale

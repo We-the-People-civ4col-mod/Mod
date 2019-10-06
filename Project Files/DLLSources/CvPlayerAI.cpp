@@ -26,6 +26,8 @@
 #include "FAStarNode.h"
 #include "CvTradeRoute.h"
 
+#include "CvSavegame.h"
+
 #define DANGER_RANGE				(4)
 #define GREATER_FOUND_RANGE			(5)
 #define CIVIC_CHANGE_DELAY			(25)
@@ -4357,7 +4359,7 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 			CvCity* pCity = pTransport->plot()->getPlotCity();
 			if (pCity != NULL)
 			{
-				/// Ist die Stadt vom Verkäufer?
+				/// Ist die Stadt vom Verkï¿½ufer?
 				if (ePlayer == pCity->getOwnerINLINE())
 				{
 					/// Wird das angefragt Handelsgut (von der KI) zur Weiterverarbeitung gebraucht?
@@ -4367,14 +4369,14 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 					}
 					else
 					{
-						/// Das Gut wird zur Weiterverarbeitung gebraucht, daher überlegt sich die
+						/// Das Gut wird zur Weiterverarbeitung gebraucht, daher ï¿½berlegt sich die
 						/// KI einen angemessenen Preis
 						iValue += kTradePlayer.AI_yieldValue(eYield, true, iAmount);
 					}
 				}
 				else
 				{
-					/// Verkäufer ist nicht Besitzer der Stadt (Ich verkaufe der KI)
+					/// Verkï¿½ufer ist nicht Besitzer der Stadt (Ich verkaufe der KI)
 					iValue += kTradePlayer.AI_yieldValue(eYield, false, iAmount);
 
 					if ( AI_isYieldFinalProduct(eYield) )
@@ -4383,7 +4385,7 @@ int CvPlayerAI::AI_yieldTradeVal(YieldTypes eYield, const IDInfo& kTransport, Pl
 					}
 					else
 					{
-						/// Wenn ein kein Endprodukt ist bezahlt der Käufer höchsten 90% von dem für den Preis er es selbst verkaufen würde
+						/// Wenn ein kein Endprodukt ist bezahlt der Kï¿½ufer hï¿½chsten 90% von dem fï¿½r den Preis er es selbst verkaufen wï¿½rde
 						iValue = std::min(iValue, AI_yieldValue(eYield, true, iAmount) * 90 / 100);
 					}
 				}
@@ -7486,7 +7488,7 @@ bool CvPlayerAI::AI_doDiploDemandTribute(PlayerTypes ePlayer)
 /**                                                                       **/
 /** int CvPlayerAI::NBMOD_GetGoldAsk(int iWantedGold)                     **/
 /**                                                                       **/
-/** Diese Methode überwacht die Gold-Höchstgrenze.                        **/
+/** Diese Methode ï¿½berwacht die Gold-Hï¿½chstgrenze.                        **/
 /**                                                                       **/
 /** Parameter:                                                            **/
 /**  - ePlayer     = der Spieler                                          **/
@@ -11669,6 +11671,11 @@ int CvPlayerAI::AI_setUnitAIStatesRange(CvPlot* pPlot, int iRange, UnitAIStates 
 //
 void CvPlayerAI::read(FDataStreamBase* pStream)
 {
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+
 	CvPlayer::read(pStream);	// read base class data first
 
 	uint uiFlag=0;
@@ -11793,6 +11800,11 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 //
 void CvPlayerAI::write(FDataStreamBase* pStream)
 {
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
+
 	CvPlayer::write(pStream);	// write base class data first
 
 	uint uiFlag=2;

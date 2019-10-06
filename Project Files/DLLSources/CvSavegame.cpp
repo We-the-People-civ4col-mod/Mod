@@ -48,6 +48,8 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType);
 const char* getSavedEnumNameUnitAi(SavegameVariableTypes eType);
 const char* getSavedEnumNameCity(SavegameVariableTypes eType);
 const char* getSavedEnumNameCityAi(SavegameVariableTypes eType);
+const char* getSavedEnumNamePlayer(SavegameVariableTypes eType);
+const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -59,6 +61,8 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	case SAVEGAME_CLASS_UNIT_AI: return getSavedEnumNameUnitAi(eType);
 	case SAVEGAME_CLASS_CITY: return getSavedEnumNameCity(eType);
 	case SAVEGAME_CLASS_CITY_AI: return getSavedEnumNameCityAi(eType);
+	case SAVEGAME_CLASS_PLAYER: return getSavedEnumNameCity(eType);
+	case SAVEGAME_CLASS_PLAYER_AI: return getSavedEnumNameCityAi(eType);
 
 	}
 
@@ -733,6 +737,8 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_UNIT_AI:     iCount = getNumSavedEnumValuesUnitAI();    break;
 		case SAVEGAME_CLASS_CITY:        iCount = getNumSavedEnumValuesCity();      break;
 		case SAVEGAME_CLASS_CITY_AI:     iCount = getNumSavedEnumValuesCityAI();    break;
+		case SAVEGAME_CLASS_PLAYER:        iCount = getNumSavedEnumValuesCity();      break;
+		case SAVEGAME_CLASS_PLAYER_AI:     iCount = getNumSavedEnumValuesCityAI();    break;
 		default:
 			FAssertMsg(false, "missing case");
 		}

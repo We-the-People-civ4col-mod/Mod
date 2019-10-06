@@ -455,10 +455,16 @@ public:
   virtual void read(FDataStreamBase* pStream);
   virtual void write(FDataStreamBase* pStream);
 
+  	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void AI_resetSavedData(PlayerTypes eID = NO_PLAYER, bool bConstructorCall = false);
+
+
 protected:
 
     /** NBMOD TAX **/
-    int CvPlayerAI::NBMOD_GetGoldAsk(PlayerTypes ePlayer) const; // Beachtet die Gold-Höchstgrenze
+    int CvPlayerAI::NBMOD_GetGoldAsk(PlayerTypes ePlayer) const; // Beachtet die Gold-Hï¿½chstgrenze
     /** NBMOD TAX **/
 
 	static CvPlayerAI* m_aPlayers;
