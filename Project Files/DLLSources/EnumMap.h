@@ -90,6 +90,12 @@ private:
 
 public:
 
+	// used to allow structs.cpp to save using EnumMap savegame code.
+	// We can't change the memory layout defined in Structs.h, hence we are struck with vectors.
+	// This workaround allows gaining the savegame benefits of xml index conversion and reduced filesize.
+	void copyToVector(std::vector<T>& thisVector) const;
+	void copyFromVector(const std::vector<T>& thisVector);
+
 	void Read(CvSavegameReader& reader);
 	void Write(CvSavegameWriter& writer) const;
 
@@ -391,6 +397,51 @@ inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET, SIZE, SIZE_OF_T>::allo
 	else
 	{
 		std::fill_n(m_pArrayFull, numElements(), (T)DEFAULT);
+	}
+}
+
+template<class LengthType, class T, int DEFAULT, class T_SUBSET, int SIZE, int SIZE_OF_T>
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET, SIZE, SIZE_OF_T>::copyToVector(std::vector<T>& thisVector) const
+{
+	thisVector.reserve(getLength());
+	thisVector.resize(getLength(), (T)DEFAULT);
+
+	if (isAllocated())
+	{
+		if (SIZE == 0)
+		{
+			memcpy(&thisVector[0], m_pArrayFull, getLength() * sizeof(T));
+		}
+		else
+		{
+			for (LengthType eIndex = First(); eIndex < getLength(); ++eIndex)
+			{
+				thisVector[eIndex] = get(eIndex);
+			}
+		}
+	}
+}
+
+template<class LengthType, class T, int DEFAULT, class T_SUBSET, int SIZE, int SIZE_OF_T>
+inline void EnumMapBase<LengthType, T, DEFAULT, T_SUBSET, SIZE, SIZE_OF_T>::copyFromVector(const std::vector<T>& thisVector)
+{
+	FAssert((unsigned int)getLength() == thisVector.size());
+
+	if (!isAllocated())
+	{
+		allocate();
+	}
+
+	if (SIZE == 0)
+	{
+		memcpy(m_pArrayFull, &thisVector[0], getLength() * sizeof(T));
+	}
+	else
+	{
+		for (LengthType eIndex = First(); eIndex < getLength(); ++eIndex)
+		{
+			set(eIndex, thisVector[eIndex]);
+		}
 	}
 }
 
