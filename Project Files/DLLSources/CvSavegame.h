@@ -52,6 +52,11 @@ public:
 	
 	void Read(CvString& szString);
 	void Read(CvWString& szString);
+
+	// allocates memory
+	void Read(char* szString);
+	// allocates memory
+	void Read(wchar* szString);
 	
 	template<class T>
 	void Read(PlayerArrayBase<T>& array);
@@ -190,11 +195,10 @@ public:
 
 	void Write(bool bVar);
 
-	void Write(CvString& szString);
-	void Write(CvWString& szString);
-
-	void Write(const char* szString);
-	void Write(const wchar* szString);
+	void Write(const CvString  & szString);
+	void Write(const CvWString & szString);
+	void Write(const char      * szString);
+	void Write(const wchar     * szString);
 
 	void Write(BoolArray& baArray);
 
@@ -205,8 +209,10 @@ public:
 	void Write(JustInTimeArray<T>& jitArray);
 
 	void Write(SavegameVariableTypes eType);
-	void Write(SavegameVariableTypes eType, CvString& szString);
-	void Write(SavegameVariableTypes eType, CvWString& szString);
+	void Write(SavegameVariableTypes eType, const CvString  & szString);
+	void Write(SavegameVariableTypes eType, const CvWString & szString);
+	void Write(SavegameVariableTypes eType, const char      * szString);
+	void Write(SavegameVariableTypes eType, const wchar     * szString);
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
 	void Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);

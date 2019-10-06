@@ -1127,15 +1127,6 @@ void CvMap::read(FDataStreamBase* pStream)
 	CvSavegameReader reader(readerbase);
 	read(reader);
 
-	if (numPlotsINLINE() > 0)
-	{
-		int iI;
-		for (iI = 0; iI < numPlotsINLINE(); iI++)
-		{
-			m_pMapPlots[iI].read(pStream);
-		}
-	}
-
 	// call the read of the free list CvArea class allocations
 	ReadStreamableFFreeListTrashArray(m_areas, pStream);
 
@@ -1151,12 +1142,6 @@ void CvMap::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
-
-	int iI;
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
-	{
-		m_pMapPlots[iI].write(pStream);
-	}
 
 	// call the read of the free list CvArea class allocations
 	WriteStreamableFFreeListTrashArray(m_areas, pStream);

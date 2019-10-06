@@ -256,6 +256,31 @@ void CvSavegameReader::Read(CvWString& szString)
 	}
 }
 
+void CvSavegameReader::Read(char* szString)
+{
+	CvString szBuffer;
+	Read(szBuffer);
+	SAFE_DELETE_ARRAY(szString);
+	szString = new char[szBuffer.length() + 1];
+	strcpy(szString, szBuffer.c_str());
+	szString[szBuffer.length()] = 0;
+}
+
+void CvSavegameReader::Read(wchar* szString)
+{
+	CvWString szBuffer;
+	Read(szBuffer);
+	SAFE_DELETE_ARRAY(szString);
+	szString = new wchar[szBuffer.length() + 1];
+	int iLength = szBuffer.length();
+	szString[iLength] = 0;
+	const wchar* szFrom = szBuffer.c_str();
+	for (int i = 0; i < iLength; ++i)
+	{
+		szString[i] = szFrom[i];
+	}
+}
+
 void CvSavegameReader::Read(BoolArray& baArray)
 {
 	baArray.Read(*this);
@@ -444,12 +469,12 @@ void CvSavegameWriter::Write(bool variable)
 	Write(iBuffer);
 }
 
-void CvSavegameWriter::Write(CvString& szString)
+void CvSavegameWriter::Write(const CvString& szString)
 {
 	Write(szString.c_str());
 }
 
-void CvSavegameWriter::Write(CvWString& szString)
+void CvSavegameWriter::Write(const CvWString& szString)
 {
 	Write(szString.c_str());
 }
@@ -477,7 +502,7 @@ void CvSavegameWriter::Write(BoolArray& baArray)
 	baArray.Write(*this);
 }
 
-void CvSavegameWriter::Write(SavegameVariableTypes eType, CvString& szString)
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const CvString& szString)
 {
 	if (szString.length() > 0)
 	{
@@ -486,9 +511,27 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, CvString& szString)
 	}
 }
 
-void CvSavegameWriter::Write(SavegameVariableTypes eType, CvWString& szString)
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const CvWString& szString)
 {
 	if (szString.length() > 0)
+	{
+		Write(eType);
+		Write(szString);
+	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const char* szString)
+{
+	if (szString != NULL)
+	{
+		Write(eType);
+		Write(szString);
+	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const wchar* szString)
+{
+	if (szString != NULL)
 	{
 		Write(eType);
 		Write(szString);

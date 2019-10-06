@@ -107,6 +107,12 @@ enum SavegameVariableTypes
 	Save_CultureRangeCities,
 	Save_InvisibleVisibilityCount,
 
+	Save_ScriptData,
+
+	Save_BuildProgress,
+
+	Save_Units,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -350,6 +356,12 @@ void CvPlot::read(CvSavegameReader reader)
 		case Save_CultureRangeCities       : m_em2_iCultureRangeCities           .Read(reader); break;
 		case Save_InvisibleVisibilityCount : m_em2_iInvisibleVisibilityCount     .Read(reader); break;
 
+		case Save_ScriptData               : reader.Read(m_szScriptData); break;
+
+		case Save_BuildProgress            : m_em_iBuildProgress                 .Read(reader); break;
+			
+		case Save_Units                    : reader.Read(m_units); break;
+
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
 			break;
@@ -374,6 +386,14 @@ void CvPlot::write(CvSavegameWriter writer)
 	// Also it will not save anything if the variable and the default values are identical.
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
+
+	// m_pPlotArea not saved
+
+	// m_bShowCitySymbols not saved
+	// m_bFlagDirty not saved
+	// m_bPlotLayoutDirty not saved
+	// m_bLayoutStateWorked not saved
+	// m_bImpassable not saved
 
 	writer.Write(Save_X, m_iX, defaultX);
 	writer.Write(Save_Y, m_iY, defaultY);
@@ -475,5 +495,11 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_CultureRangeCities, m_em2_iCultureRangeCities);
 	writer.Write(Save_InvisibleVisibilityCount, m_em2_iInvisibleVisibilityCount);
 		
+	writer.Write(Save_ScriptData, m_szScriptData);
+	
+	writer.Write(Save_BuildProgress, m_em_iBuildProgress);
+
+	writer.Write(Save_Units, m_units);
+
 	writer.Write(Save_END);
 }

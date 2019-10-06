@@ -35,8 +35,6 @@ int CvPlot::iMaxVisibilityRangeCache;
 
 CvPlot::CvPlot()
 {
-	m_paiBuildProgress = NULL;
-
 	m_pFeatureSymbol = NULL;
 	m_pPlotBuilder = NULL;
 	m_pRouteSymbol = NULL;
@@ -81,8 +79,6 @@ void CvPlot::uninit()
 	gDLL->getFlagEntityIFace()->destroy(m_pFlagSymbol);
 	gDLL->getFlagEntityIFace()->destroy(m_pFlagSymbolOffset);
 	m_pCenterUnit = NULL;
-
-	SAFE_DELETE_ARRAY(m_paiBuildProgress);
 
 	m_units.clear();
 }
@@ -6935,12 +6931,7 @@ void CvPlot::setRevealedRouteType(TeamTypes eTeam, RouteTypes eNewValue)
 
 int CvPlot::getBuildProgress(BuildTypes eBuild) const
 {
-	if (NULL == m_paiBuildProgress)
-	{
-		return 0;
-	}
-
-	return m_paiBuildProgress[eBuild];
+	return m_em_iBuildProgress.get(eBuild);
 }
 
 
@@ -6952,21 +6943,13 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 
 	if (iChange != 0)
 	{
-		if (NULL == m_paiBuildProgress)
-		{
-			m_paiBuildProgress = new short[GC.getNumBuildInfos()];
-			for (int iI = 0; iI < GC.getNumBuildInfos(); ++iI)
-			{
-				m_paiBuildProgress[iI] = 0;
-			}
-		}
+		m_em_iBuildProgress.add(eBuild, iChange);
 
-		m_paiBuildProgress[eBuild] += iChange;
 		FAssert(getBuildProgress(eBuild) >= 0);
 
 		if (getBuildProgress(eBuild) >= getBuildTime(eBuild))
 		{
-			m_paiBuildProgress[eBuild] = 0;
+			m_em_iBuildProgress.set(eBuild, 0);
 
 			if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
 			{
@@ -7893,71 +7876,6 @@ ColorTypes CvPlot::plotMinimapColor()
 	}
 
 	return (ColorTypes)GC.getInfoTypeForString("COLOR_CLEAR");
-}
-
-//
-// read object from a stream
-// used during load
-//
-void CvPlot::read(FDataStreamBase* pStream)
-{
-	int iCount;
-
-	
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	// m_pPlotArea not saved
-
-	// m_bShowCitySymbols not saved
-	// m_bFlagDirty not saved
-	// m_bPlotLayoutDirty not saved
-	// m_bLayoutStateWorked not saved
-	// m_bImpassable not saved
-
-	m_szScriptData = pStream->ReadString();
-
-	SAFE_DELETE_ARRAY(m_paiBuildProgress);
-	pStream->Read(&iCount);
-	if (iCount > 0)
-	{
-		m_paiBuildProgress = new short[iCount];
-		pStream->Read(iCount, m_paiBuildProgress);
-	}
-
-	m_units.Read(pStream);
-}
-
-//
-// write object to a stream
-// used during save
-//
-void CvPlot::write(FDataStreamBase* pStream)
-{
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	// m_pPlotArea not saved
-
-	// m_bShowCitySymbols not saved
-	// m_bFlagDirty not saved
-	// m_bPlotLayoutDirty not saved
-	// m_bLayoutStateWorked not saved
-	// m_bImpassable not saved
-
-	pStream->WriteString(m_szScriptData);
-
-	if (NULL == m_paiBuildProgress)
-	{
-		pStream->Write((int)0);
-	}
-	else
-	{
-		pStream->Write((int)GC.getNumBuildInfos());
-		pStream->Write(GC.getNumBuildInfos(), m_paiBuildProgress);
-	}
-
-	m_units.Write(pStream);
 }
 
 void CvPlot::setLayoutDirty(bool bDirty)

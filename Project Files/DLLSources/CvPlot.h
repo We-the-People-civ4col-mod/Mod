@@ -445,9 +445,6 @@ public:
 	DllExport const char* getResourceLayerIcon(ResourceLayerOptions eOption, CvWStringBuffer& szHelp, PlotIndicatorVisibilityFlags& eVisibilityFlag, ColorTypes& eColor) const;
 	DllExport CvUnit* getUnitLayerUnit(UnitLayerOptionTypes eOption, CvWStringBuffer& szHelp, PlotIndicatorVisibilityFlags& eVisibilityFlag, ColorTypes& eColor, bool& bTestEnemyVisibility) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
-
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
@@ -527,7 +524,7 @@ protected:
 
 	char* m_szScriptData;
 
-	short* m_paiBuildProgress;
+	EnumMap<BuildTypes, short> m_em_iBuildProgress;
 
 	CvFeature* m_pFeatureSymbol;
 	CvRoute* m_pRouteSymbol;
