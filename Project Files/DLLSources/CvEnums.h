@@ -1427,8 +1427,9 @@ enum DllExport AreaAITypes
 	AREAAI_NEUTRAL,
 
 #ifdef _USRDLL
-	NUM_AREAAI_TYPES
+	NUM_AREAAI_TYPES,
 #endif
+	BYTESIZE_AREAAI_TYPES = NUM_AREAAI_TYPES > 128 ? 2 : 1,
 };
 
 enum DllExport EmotionTypes

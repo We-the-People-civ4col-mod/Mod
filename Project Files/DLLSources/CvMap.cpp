@@ -1127,9 +1127,6 @@ void CvMap::read(FDataStreamBase* pStream)
 	CvSavegameReader reader(readerbase);
 	read(reader);
 
-	// call the read of the free list CvArea class allocations
-	ReadStreamableFFreeListTrashArray(m_areas, pStream);
-
 	setup();
 }
 
@@ -1142,9 +1139,6 @@ void CvMap::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
-
-	// call the read of the free list CvArea class allocations
-	WriteStreamableFFreeListTrashArray(m_areas, pStream);
 }
 
 

@@ -58,6 +58,12 @@ public:
 	// allocates memory
 	void Read(wchar* szString);
 	
+	template<class T1, class T2, int T3, class T4, int T5, int T6>
+	void Read(EnumMapBase<T1, T2, T3, T4, T5, T6>& em);
+
+	template<class T1, class T2, class T3, int T4>
+	void Read(EnumMap2DDefault<T1, T2, T3, T4>& em);
+
 	template<class T>
 	void Read(PlayerArrayBase<T>& array);
 
@@ -76,6 +82,7 @@ public:
 	T ReadBitfield(T variable);
 
 	// Add all enums used in savegames (single byte)
+	void Read(AreaAITypes           & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
@@ -242,6 +249,7 @@ public:
 	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
 
 	// Add all enums used in savegames (single byte)
+	void Write(AreaAITypes            variable) { WriteEnum(variable); }
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
@@ -355,6 +363,18 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 {
 	Read(variable);
 	return variable;
+}
+
+template<class T1, class T2, int T3, class T4, int T5, int T6>
+inline void CvSavegameReader::Read(EnumMapBase<T1, T2, T3, T4, T5, T6>& em)
+{
+	em.Read(*this);
+}
+
+template<class T1, class T2, class T3, int T4>
+inline void CvSavegameReader::Read(EnumMap2DDefault<T1, T2, T3, T4>& em)
+{
+	em.Read(*this);
 }
 
 template<class T>
