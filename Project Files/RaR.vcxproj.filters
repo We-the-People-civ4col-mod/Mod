@@ -753,6 +753,9 @@
     <ClInclude Include="DLLSources\EnumMap2D.h">
       <Filter>Data\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\CvMacros.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">

@@ -378,17 +378,9 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 
 	m_orderQueue.clear();
 
-	if (!bConstructorCall)
-	{
-		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			m_paiWorkingPlot[iI] = -1;
-		}
-		m_aEventsOccured.clear();
-		m_aBuildingYieldChange.clear();
-	}
-
+	m_em_iWorkingPlot.reset();
+	m_aEventsOccured.clear();
+	m_aBuildingYieldChange.clear();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -550,12 +542,7 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_orderQueue: reader.Read(m_orderQueue); break;
 
-		case CitySave_WorkingPlot:
-			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-			{
-				reader.Read(m_paiWorkingPlot[iI]);
-			}
-			break;
+		case CitySave_WorkingPlot: reader.Read(m_em_iWorkingPlot); break;
 
 		}
 		
@@ -695,11 +682,7 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_orderQueue, m_orderQueue);
 
-	writer.Write(CitySave_WorkingPlot);
-			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-			{
-				writer.Write(m_paiWorkingPlot[iI]);
-			}
+	writer.Write(CitySave_WorkingPlot, m_em_iWorkingPlot);
 
 	writer.Write(CitySave_END);
 }

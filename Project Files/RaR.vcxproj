@@ -183,6 +183,7 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DLLSources\CvMacros.h" />
     <ClInclude Include="DLLSources\EnumMap2D.h" />
     <ClInclude Include="DLLSources\EnumMap.h" />
     <ClInclude Include="DLLSources\PlayerArray.h" />

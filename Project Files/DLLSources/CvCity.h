@@ -746,7 +746,7 @@ protected:
 	PromotionArray<int> m_ja_iFreePromotionCount;
 	BoolArray m_ba_HasRealBuilding;
 	BoolArray m_ba_HasFreeBuilding;
-	int* m_paiWorkingPlot;
+	EnumMapInt<CityPlotTypes, int, -1> m_em_iWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;
 	std::vector< std::pair < float, float> > m_kWallOverridePoints;

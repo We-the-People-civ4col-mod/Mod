@@ -154,6 +154,20 @@ enum DllExport RotationTypes
 	ROTATE_270CW_MASK	= 1 << ROTATE_270CW,
 };
 
+enum CityPlotTypes
+{
+	NO_CITY_PLOT = -1,
+	FIRST_CITY_PLOT = 0,
+
+#ifdef CHECK_GLOBAL_CONSTANTS
+	CITY_PLOTS_RADIUS,
+	NUM_CITY_PLOTS,
+	CITY_PLOTS_DIAMETER,
+#endif
+};
+
+#define NUM_CityPlot_TYPES NUM_CITY_PLOTS
+
 // camera wrap helper
 enum DllExport WrapDirection
 {

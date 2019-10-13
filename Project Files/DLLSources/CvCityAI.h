@@ -209,9 +209,8 @@ protected:
 	YieldArray <int> m_ja_iEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
-	int m_aiBestBuildValue[NUM_CITY_PLOTS_RADIUS_2];
-
-	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS_RADIUS_2];
+	EnumMapInt<CityPlotTypes, int> m_em_iBestBuildValue;
+	EnumMapInt<CityPlotTypes,BuildTypes> m_em_eBestBuild;
 
 	BoolArray m_ba_Emphasize;
 

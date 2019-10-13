@@ -2,9 +2,9 @@
 
 #ifndef CHECK_GLOBAL_CONSTANTS
 
-int NUM_CITY_PLOTS      = 0;
-int CITY_PLOTS_DIAMETER = 0;
-int CITY_PLOTS_RADIUS   = 0;
+CityPlotTypes NUM_CITY_PLOTS      = FIRST_CITY_PLOT;
+CityPlotTypes CITY_PLOTS_DIAMETER = FIRST_CITY_PLOT;
+CityPlotTypes CITY_PLOTS_RADIUS   = FIRST_CITY_PLOT;
 
 ArtStyleTypes    NUM_ARTSTYLE_TYPES    = static_cast<ArtStyleTypes   >(0);
 ColorTypes       NUM_COLOR_TYPES       = static_cast<ColorTypes      >(0);

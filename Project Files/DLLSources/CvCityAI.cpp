@@ -1988,7 +1988,7 @@ int CvCityAI::AI_getBestBuildValue(int iIndex) const
 {
 	FAssertMsg(iIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(iIndex < NUM_CITY_PLOTS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiBestBuildValue[iIndex];
+	return m_em_iBestBuildValue.get(iIndex);
 }
 
 
@@ -2072,7 +2072,7 @@ BuildTypes CvCityAI::AI_getBestBuild(int iIndex) const
 {
 	FAssertMsg(iIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(iIndex < NUM_CITY_PLOTS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aeBestBuild[iIndex];
+	return m_em_eBestBuild.get(iIndex);
 }
 
 
@@ -2111,31 +2111,44 @@ int CvCityAI::AI_countBestBuilds(CvArea* pArea) const
 void CvCityAI::AI_updateBestBuild()
 {
 	PROFILE_FUNC();
-	
-	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	{
-		m_aiBestBuildValue[iI] = 0;
-		m_aeBestBuild[iI] = NO_BUILD;
 
-		if (iI != CITY_HOME_PLOT)
+	// reset all data, but do not release the memory if allocated
+	m_em_iBestBuildValue.setAll(m_em_iBestBuildValue.getDefault());
+	m_em_eBestBuild     .setAll(m_em_eBestBuild     .getDefault());
+	
+	FOREACH(CityPlot)
+	{
+		if (eLoopCityPlot != CITY_HOME_PLOT)
 		{
-			CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+			CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), eLoopCityPlot);
 
 			if (NULL != pLoopPlot && pLoopPlot->getWorkingCity() == this)
 			{
-				AI_bestPlotBuild(pLoopPlot, &(m_aiBestBuildValue[iI]), &(m_aeBestBuild[iI]));
+				// Due to lazy memory allocation, it's not possible to get a reference to data in an EnumMap
+				// To get around this limitation, use a buffer.
+				int iBestBuildValue = m_em_iBestBuildValue.get(eLoopCityPlot);
+				BuildTypes eBestBuildType = m_em_eBestBuild.get(eLoopCityPlot);
+
+				AI_bestPlotBuild(pLoopPlot, &iBestBuildValue, &eBestBuildType);
+
+				// write the buffer back into the EnumMap
+				m_em_iBestBuildValue.set(eLoopCityPlot, iBestBuildValue);
+				m_em_eBestBuild.set(eLoopCityPlot, eBestBuildType);
 				
-				if (m_aiBestBuildValue[iI] > 0)
+				if (iBestBuildValue > 0)
 				{
-					FAssert(m_aeBestBuild[iI] != NO_BUILD);
+					FAssert(eBestBuildType != NO_BUILD);
 				}
-				if (m_aeBestBuild[iI] != NO_BUILD)
+				if (eBestBuildType != NO_BUILD)
 				{
-					FAssert(m_aiBestBuildValue[iI] > 0);
+					FAssert(iBestBuildValue > 0);
 				}
 			}
 		}
 	}
+	// release unused memory
+	m_em_iBestBuildValue.hasContent();
+	m_em_eBestBuild.hasContent();
 }
 
 // Protected Functions...

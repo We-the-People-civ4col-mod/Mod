@@ -58,8 +58,8 @@ public:
 	// allocates memory
 	void Read(wchar* szString);
 	
-	template<class T1, class T2, int T3, class T4, int T5, int T6>
-	void Read(EnumMapBase<T1, T2, T3, T4, T5, T6>& em);
+	template<class T1, class T2, int T3, class T4, class T5, int T6, int T7>
+	void Read(EnumMapBase<T1, T2, T3, T4, T5, T6, T7>& em);
 
 	template<class T1, class T2, class T3, int T4>
 	void Read(EnumMap2DDefault<T1, T2, T3, T4>& em);
@@ -233,11 +233,11 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 
-	template<class T1, class T2, int T3, class T4, int T5, int T6>
-	void Write(EnumMapBase<T1, T2, T3, T4, T5, T6>& em);
+	template<class T1, class T2, int T3, class T4, class T5, int T6, int T7>
+	void Write(EnumMapBase<T1, T2, T3, T4, T5, T6, T7>& em);
 
-	template<class T1, class T2, int T3, class T4, int T5, int T6>
-	void Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5, T6>& em);
+	template<class T1, class T2, int T3, class T4, class T5, int T6, int T7>
+	void Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5, T6, T7>& em);
 
 	template<class T1, class T2, class T3, int T4>
 	void Write(EnumMap2DDefault<T1, T2, T3, T4>& em);
@@ -365,8 +365,8 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 	return variable;
 }
 
-template<class T1, class T2, int T3, class T4, int T5, int T6>
-inline void CvSavegameReader::Read(EnumMapBase<T1, T2, T3, T4, T5, T6>& em)
+template<class T1, class T2, int T3, class T4, class T5, int T6, int T7>
+inline void CvSavegameReader::Read(EnumMapBase<T1, T2, T3, T4, T5, T6, T7>& em)
 {
 	em.Read(*this);
 }
@@ -448,14 +448,14 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	}
 }
 
-template<class T1, class T2, int T3, class T4, int T5, int T6>
-inline void CvSavegameWriter::Write(EnumMapBase<T1, T2, T3, T4, T5, T6>& em)
+template<class T1, class T2, int T3, class T4, class T5, int T6, int T7>
+inline void CvSavegameWriter::Write(EnumMapBase<T1, T2, T3, T4, T5, T6, T7>& em)
 {
 	em.Write(*this);
 }
 
-template<class T1, class T2, int T3, class T4, int T5, int T6>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5, T6>& em)
+template<class T1, class T2, int T3, class T4, class T5, int T6, int T7>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5, T6, T7>& em)
 {
 	if (em.hasContent())
 	{

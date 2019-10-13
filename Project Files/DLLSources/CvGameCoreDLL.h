@@ -258,6 +258,7 @@ namespace boost
 
 #endif // IntelliSense workaround
 
+#include "CvMacros.h"
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"
 #include "FDataStreamBase.h"

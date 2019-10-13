@@ -157,6 +157,7 @@ sub processFile
 		print $output_declare  $enum . " NUM_" . $TYPE . "_TYPES;\n";
 		print $output_init "NUM_" . $TYPE . "_TYPES = (" . $enum . ")" . getNumFunction($basename) . ";\n";
 	}
+	print $output "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n"
 }
 
 sub getTypesInFile
