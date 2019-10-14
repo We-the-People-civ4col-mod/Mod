@@ -85,6 +85,7 @@ public:
 	void Read(AreaAITypes           & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
+	void Read(CityPlotTypes         & variable) { ReadEnum(variable); }
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
@@ -128,6 +129,7 @@ public:
 	void Read(GoodyTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(HandicapTypes         & variable) { ReadXmlEnum(variable); }
 	void Read(HurryTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(InvisibleTypes        & variable) { ReadXmlEnum(variable); }
 	void Read(ImprovementTypes      & variable) { ReadXmlEnum(variable); }
 	void Read(LeaderHeadTypes       & variable) { ReadXmlEnum(variable); }
 	void Read(MemoryTypes           & variable) { ReadXmlEnum(variable); }

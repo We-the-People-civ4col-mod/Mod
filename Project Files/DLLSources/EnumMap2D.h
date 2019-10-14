@@ -379,6 +379,6 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Write(
 
 
 template<class outerArrayType, class InnerArrayType, class T>
-class EnumMap2D : public EnumMap2DDefault < outerArrayType, InnerArrayType, T, EnumMapGetDefault<T>::value > {};
+class EnumMap2D : public EnumMap2DDefault < outerArrayType, InnerArrayType, T, EnumMapGetDefault<T>::DEFAULT_VALUE > {};
 
 #endif

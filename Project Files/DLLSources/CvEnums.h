@@ -159,6 +159,9 @@ enum CityPlotTypes
 	NO_CITY_PLOT = -1,
 	FIRST_CITY_PLOT = 0,
 
+	NUM_CITY_PLOTS_1_PLOT = 9,
+	NUM_CITY_PLOTS_2_PLOTS = 25,
+
 #ifdef CHECK_GLOBAL_CONSTANTS
 	CITY_PLOTS_RADIUS,
 	NUM_CITY_PLOTS,
@@ -195,7 +198,7 @@ enum DllExport ColorTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_COLOR_TYPES,
 #endif
-	BYTESIZE_COLOR_TYPES = 2,
+	COMPILE_TIME_NUM_COLOR_TYPES = MAX_SHORT,
 };
 
 enum DllExport PlayerColorTypes
@@ -204,7 +207,7 @@ enum DllExport PlayerColorTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_PLAYERCOLOR_TYPES,
 #endif
-	BYTESIZE_PLAYERCOLOR_TYPES = 2,
+	COMPILE_TIME_NUM_PLAYERCOLOR_TYPES = MAX_SHORT,
 };
 
 //Warning: these values correspond to locations in the plot texture [JW]
@@ -811,7 +814,7 @@ enum DllExport ArtStyleTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_ARTSTYLE_TYPES,
 #endif
-	BYTESIZE_ARTSTYLE_TYPES = 2,
+	COMPILE_TIME_NUM_ARTSTYLE_TYPES = MAX_SHORT,
 };
 
 //Androrc UnitArtStyles
@@ -872,7 +875,7 @@ enum DllExport TeamTypes
 	NO_TEAM = -1,
 	FIRST_TEAM = 0,
 	NUM_TEAM_TYPES = MAX_TEAMS,
-	BYTESIZE_TEAM_TYPES = NUM_TEAM_TYPES > 128 ? 2 : 1,
+	COMPILE_TIME_NUM_TEAM_TYPES = NUM_TEAM_TYPES,
 };
 
 enum DllExport PlayerTypes
@@ -881,7 +884,7 @@ enum DllExport PlayerTypes
 	NO_PLAYER = -1,
 	FIRST_PLAYER = 0,
 	NUM_PLAYER_TYPES = MAX_PLAYERS,
-	BYTESIZE_PLAYER_TYPES = NUM_PLAYER_TYPES > 128 ? 2 : 1,
+	COMPILE_TIME_NUM_PLAYER_TYPES = NUM_PLAYER_TYPES,
 };
 
 enum DllExport OrderTypes
@@ -1076,7 +1079,7 @@ enum DllExport SpecialUnitTypes
 #ifdef CHECK_GLOBAL_CONSTANTS
 	NUM_SPECIALUNIT_TYPES,
 #endif
-	BYTESIZE_SPECIALUNIT_TYPES = 2,
+	COMPILE_TIME_NUM_SPECIALUNIT_TYPES = MAX_SHORT,
 };
 
 /*
@@ -1443,7 +1446,7 @@ enum DllExport AreaAITypes
 #ifdef _USRDLL
 	NUM_AREAAI_TYPES,
 #endif
-	BYTESIZE_AREAAI_TYPES = NUM_AREAAI_TYPES > 128 ? 2 : 1,
+	COMPILE_TIME_NUM_AREAAI_TYPES = NUM_AREAAI_TYPES,
 };
 
 enum DllExport EmotionTypes
@@ -1804,7 +1807,7 @@ enum DllExport MemoryTypes
 	NUM_MEMORY_TYPES,
 #endif
 
-	BYTESIZE_MEMORY_TYPES = NUM_MEMORY_TYPES > 128 ? 2 : 1,
+	COMPILE_TIME_NUM_MEMORY_TYPES = NUM_MEMORY_TYPES,
 };
 
 enum DllExport AttitudeTypes

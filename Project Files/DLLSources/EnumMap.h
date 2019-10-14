@@ -44,10 +44,35 @@
 // Same result, but since they now share the same parameters, the compiler will only make one set, which they will both call.
 // It's not a major issue to make multiple, partly because most calls are inline anyway, but it should be mentioned.
 
-template<class IndexType, class T, int DEFAULT, class T_SUBSET = IndexType, class LengthType = IndexType, int SIZE = EnumMapGetDefault<T>::SIZE, int SIZE_OF_T = EnumMapGetDefault<T>::SIZE_OF_T>
+enum
+{
+	ENUMMAP_SIZE_DEFAULT,
+	ENUMMAP_SIZE_1_BYTE,
+	ENUMMAP_SIZE_2_BYTES,
+	ENUMMAP_SIZE_BOOL,
+
+	// set how many bits can be inlined in the class itself
+	// if a bool array has <= this number of bits, then instead of allocating memory elsewhere
+	// the data will be placed in the class itself
+	ENUMMAP_MAX_INLINE_BOOL = 64,
+
+	// bitmasks to get the bits, which gives the indexes to store 8 or 32 bit.
+	// modulo is slow at runtime, binary AND is fast. They give the same result in this case.
+	// Maybe the compiler will optimize to a binary and, but explicitly writing it means we are certain it will optimize.
+	// In fact this way it's "optimized" even in debug builds.
+	ENUMMAP_BITMASK_8_BIT = 7,
+	ENUMMAP_BITMASK_32_BIT = 0x1F,
+};
+
+template<class IndexType, class T, int DEFAULT, class T_SUBSET = IndexType, class LengthType = IndexType, int SIZE = EnumMapGetDefault<T>::SIZE, int SIZE_OF_T = EnumMapGetDefault<T>::SIZE_OF_T >
 class EnumMapBase
 {
 public:
+	static const int LENGTH = EnumMapGetDefault<LengthType>::LENGTH;
+	static const bool bINLINE_BOOL = SIZE == ENUMMAP_SIZE_BOOL && LENGTH < ENUMMAP_MAX_INLINE_BOOL;
+	static const int NUM_BOOL_BLOCKS = bINLINE_BOOL ? (LENGTH + 31) / 32 : 1;
+	static const unsigned int BOOL_BLOCK_DEFAULT = DEFAULT ? MAX_UNSIGNED_INT : 0;
+
 	EnumMapBase();
 	~EnumMapBase();
 
@@ -121,6 +146,8 @@ private:
 		T     * m_pArrayFull;
 		short * m_pArrayShort;
 		char  * m_pArrayChar;
+		unsigned int * m_pArrayBool;
+		unsigned int m_InlineBoolArray[NUM_BOOL_BLOCKS];
 	};
 
 	enum
@@ -144,6 +171,44 @@ private:
 			last = (IndexType)0;
 		}
 	};
+
+	// bool helpers
+	int getBoolArrayBlock(int iIndex) const
+	{
+		if (bINLINE_BOOL && NUM_BOOL_BLOCKS == 1)
+		{
+			// hardcode only using first block in arrays hardcoded to only use one block
+			// with a bit of luck the compiler can optimize the array code away completely
+			FAssert(iIndex < 32)
+			return 0;
+		}
+		else
+		{
+			iIndex -= First();
+			return iIndex / 32;
+		}
+	}
+
+	int getBoolArrayIndexInBlock(int iIndex) const
+	{
+		iIndex -= First();
+		return iIndex & ENUMMAP_BITMASK_32_BIT;
+	}
+
+	int getBoolArrayNumBlocks() const
+	{
+		if (bINLINE_BOOL && NUM_BOOL_BLOCKS == 1)
+		{
+			// set block count to compile time hardcoded when we know there is just one
+			// this will help the compiler optimization
+			return 1;
+		}
+		else
+		{
+			// we want to divide by 32, but the result should be rounded up, not down
+			return (numElements() + 31) / 32;
+		}
+	}
 };
 
 //
@@ -167,9 +232,20 @@ template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::EnumMapBase()
 	: m_pArrayFull(NULL)
 {
-	FAssertMsg(sizeof(*this) == 4, "EnumMap is supposed to only contain a pointer");
+	// bools can only default to 0 or 1
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL || DEFAULT == 0 || DEFAULT == 1);
+
+	FAssertMsg(bINLINE_BOOL || sizeof(*this) == 4, "EnumMap is supposed to only contain a pointer");
 	FAssertMsg(getLength() >= 0 && getLength() <= ArrayLength((LengthType)0), "Custom length out of range");
 	FAssertMsg(First() >= 0 && First() <= getLength(), "Custom length out of range");
+
+	if (bINLINE_BOOL)
+	{
+		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
+		{
+			m_InlineBoolArray[i] = BOOL_BLOCK_DEFAULT;
+		}
+	}
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
@@ -211,9 +287,21 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_
 
 	switch (SIZE)
 	{
-	case 1:  return (T)(m_pArrayChar  ? m_pArrayChar [eIndex - First()] : DEFAULT);
-	case 2:  return (T)(m_pArrayShort ? m_pArrayShort[eIndex - First()] : DEFAULT);
-	default: return (T)(m_pArrayFull  ? m_pArrayFull [eIndex - First()] : DEFAULT);
+	case ENUMMAP_SIZE_DEFAULT: return (T)(m_pArrayFull  ? m_pArrayFull [eIndex - First()] : DEFAULT);
+	case ENUMMAP_SIZE_1_BYTE : return (T)(m_pArrayChar  ? m_pArrayChar [eIndex - First()] : DEFAULT);
+	case ENUMMAP_SIZE_2_BYTES: return (T)(m_pArrayShort ? m_pArrayShort[eIndex - First()] : DEFAULT);
+	case ENUMMAP_SIZE_BOOL:
+		if (bINLINE_BOOL)
+		{
+			return (T)(HasBit(m_InlineBoolArray[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex)));
+		}
+		else
+		{
+			return (T)(m_pArrayBool ? HasBit(m_pArrayBool[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex)) : DEFAULT);
+		}
+	default:
+		FAssertMsg(false, "unhandled case");
+		return (T)DEFAULT;
 	}
 }
 
@@ -221,7 +309,7 @@ template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::set(IndexType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
-	if (m_pArrayFull == NULL)
+	if (!bINLINE_BOOL && m_pArrayFull == NULL)
 	{
 		if (eValue == DEFAULT) 
 		{
@@ -232,15 +320,24 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 
 	switch (SIZE)
 	{
-	case 1:  m_pArrayChar [eIndex - First()] = (char )eValue; break;
-	case 2:  m_pArrayShort[eIndex - First()] = (short)eValue; break;
-	default: m_pArrayFull [eIndex - First()] =        eValue; break;
+	case ENUMMAP_SIZE_DEFAULT: m_pArrayFull [eIndex - First()] =        eValue; break;
+	case ENUMMAP_SIZE_1_BYTE : m_pArrayChar [eIndex - First()] = (char )eValue; break;
+	case ENUMMAP_SIZE_2_BYTES: m_pArrayShort[eIndex - First()] = (short)eValue; break;
+	case ENUMMAP_SIZE_BOOL:	
+		if (bINLINE_BOOL)
+			SetBit(m_InlineBoolArray[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex));
+		else
+			SetBit(m_pArrayBool[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex));
+		break;
+	
+	default: FAssertMsg(false, "unhandled case");
 	}
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::add(IndexType eIndex, T eValue)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (eValue != 0)
 	{
@@ -260,6 +357,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::safeAdd(IndexType eIndex, T eValue)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (eIndex >= First() && eIndex < getLength())
 	{
 		add(eIndex, eValue);
@@ -269,6 +367,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::addAll(T eValue)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (eValue != 0)
 	{
 		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
@@ -287,13 +386,39 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::hasContent() const
 {
-	if (m_pArrayFull != NULL)
+	if (bINLINE_BOOL)
 	{
-		for (IndexType eIndex = (IndexType)0; eIndex < numElements(); ++eIndex)
+		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
 		{
-			if (get(eIndex) != DEFAULT)
+			if (m_pArrayBool[i] != BOOL_BLOCK_DEFAULT)
 			{
 				return true;
+			}
+		}
+		return false;
+	}
+
+	if (m_pArrayFull != NULL)
+	{
+		if (SIZE == ENUMMAP_SIZE_BOOL)
+		{
+			const int iNumBlocks = getBoolArrayNumBlocks();
+			for (int i = 0; i < iNumBlocks; ++i)
+			{
+				if (m_pArrayBool[i] != BOOL_BLOCK_DEFAULT)
+				{
+					return true;
+				}
+			}
+		}
+		else
+		{
+			for (IndexType eIndex = (IndexType)0; eIndex < numElements(); ++eIndex)
+			{
+				if (get(eIndex) != DEFAULT)
+				{
+					return true;
+				}
 			}
 		}
 		// now we cheat and alter data despite being const.
@@ -307,6 +432,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::getMin() const
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (m_pArray == NULL)
 	{
 		return DEFAULT;
@@ -317,6 +443,7 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::getMax() const
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (m_pArray == NULL)
 	{
 		return DEFAULT;
@@ -327,6 +454,7 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::keepMin(IndexType eIndex, T eValue)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (get(eIndex) > eValue)
 	{
@@ -337,6 +465,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::keepMax(IndexType eIndex, T eValue)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert(eIndex >= First() && eIndex < getLength());
 	if (get(eIndex) < eValue)
 	{
@@ -347,13 +476,44 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::reset()
 {
-	// doesn't matter which one we free. They all point to the same memory address, which is what matters here.
-	SAFE_DELETE_ARRAY(m_pArrayFull);
+	if (bINLINE_BOOL)
+	{
+		// can't free inlined memory. Set it all to default instead
+		setAll((T)DEFAULT);
+	}
+	else
+	{
+		// doesn't matter which one we free. They all point to the same memory address, which is what matters here.
+		SAFE_DELETE_ARRAY(m_pArrayFull);
+	}
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::setAll(T eValue)
 {
+	if (bINLINE_BOOL)
+	{
+		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
+		{
+			m_InlineBoolArray[i] = eValue ? MAX_UNSIGNED_INT : 0;
+		}
+		return;
+	}
+
+	if (SIZE == ENUMMAP_SIZE_BOOL)
+	{
+		if (m_pArrayBool == NULL)
+		{
+			if (eValue == DEFAULT)
+			{
+				return;
+			}
+			m_pArrayBool = new unsigned int[numElements()];
+		}
+		memset(m_pArrayBool, eValue ? 0xFF : 0, numElements());
+		return;
+	}
+
 	if (m_pArrayChar == NULL)
 	{
 		if (eValue == DEFAULT)
@@ -380,7 +540,22 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::allocate()
 {
+	if (bINLINE_BOOL)
+	{
+		FAssert(false);
+		return;
+	}
 	FAssert(m_pArrayChar == NULL);
+
+	if (SIZE == ENUMMAP_SIZE_BOOL)
+	{
+		int iNumElements = (numElements() + 31) / 32;
+
+		m_pArrayBool = new unsigned int[iNumElements];
+
+		memset(m_pArrayBool, DEFAULT ? 0xFF : 0, iNumElements * 4);
+		return;
+	}
 
 	m_pArrayChar = new char[numElements() * SIZE_OF_T];
 
@@ -403,6 +578,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::copyToVector(std::vector<T>& thisVector) const
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	thisVector.reserve(getLength());
 	thisVector.resize(getLength(), (T)DEFAULT);
 
@@ -425,6 +601,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::copyFromVector(const std::vector<T>& thisVector)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert((unsigned int)getLength() == thisVector.size());
 
 	if (!isAllocated())
@@ -452,6 +629,29 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::Read(CvSavegameReader& reader)
 {
+	if (SIZE == ENUMMAP_SIZE_BOOL)
+	{
+		LengthType eStart;
+		LengthType eEnd;
+
+		reader.Read(eStart);
+		reader.Read(eEnd);
+		
+		byte iBuffer;
+
+		for (LengthType eLoop = eStart; eLoop <= eEnd; eLoop = (LengthType)(eLoop + 1))
+		{
+			const int iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
+			if (iBlockIndex == 0)
+			{
+				// read next block
+				reader.Read(iBuffer);
+			}
+			set((LengthType)reader.ConvertIndex(ArrayType(eStart), eLoop), (T)HasBit(iBuffer, iBlockIndex));
+		}
+		return;
+	}
+
 	// savegame format is as follows:
 	// first index
 	// last index
@@ -559,6 +759,59 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::Write(CvSavegameWriter& writer) const
 {
+	if (SIZE == ENUMMAP_SIZE_BOOL)
+	{
+		LengthType eStart = (LengthType)MAX_INT;
+		LengthType eEnd = (LengthType)MIN_INT;
+
+		for (LengthType eLoop = (LengthType)First(); eLoop < getLength(); ++eLoop)
+		{
+			if (get(eLoop))
+			{
+				if (eStart > eLoop)
+				{
+					eStart = eLoop;
+				}
+				if (eEnd < eLoop)
+				{
+					eEnd = eLoop;
+				}
+			}
+		}
+
+		// write empty array if needed
+
+		if (eStart == MAX_INT)
+		{
+			// saving 1 to 0 will cause the reader to not read any data, hence no need to save blocks
+			FAssert(eEnd == MIN_INT);
+			eStart = (LengthType)1;
+			eEnd = (LengthType)0;
+			writer.Write(eStart);
+			writer.Write(eEnd);
+			return;
+		}
+
+		writer.Write(eStart);
+		writer.Write(eEnd);
+
+		byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+
+		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
+		{
+			const int iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
+			if (iBlockIndex == 0)
+			{
+				// read next block
+				writer.Write(iBuffer);
+				iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+			}
+			SetBit(iBuffer, get(eLoop));
+		}
+		writer.Write(iBuffer);
+		return;
+	}
+
 	const int iLength = ArrayType((LengthType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((LengthType)0) : writer.GetXmlSize(ArrayType((LengthType)0));
 	const bool bUseTwoByteStart = iLength > 64;
 
@@ -666,6 +919,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::operator=(const EnumMapBase &rhs)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
 		if (m_pArrayFull == NULL) allocate();
@@ -682,6 +936,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T> template<class T2, int DEFAULT2, int SIZE2, int SIZE_OF_T2>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::operator=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType, SIZE2, SIZE_OF_T2> &rhs)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
 		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
@@ -700,6 +955,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T> template<class T2, int DEFAULT2, int SIZE2, int SIZE_OF_T2>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::operator+=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType, SIZE2, SIZE_OF_T2> &rhs)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
 		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
@@ -718,6 +974,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T> template<class T2, int DEFAULT2, int SIZE2, int SIZE_OF_T2>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::operator-=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType, SIZE2, SIZE_OF_T2> &rhs)
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
 		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
@@ -736,6 +993,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T> template<class T2, int DEFAULT2, int SIZE2, int SIZE_OF_T2>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::operator==(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType, SIZE2, SIZE_OF_T2> &rhs) const
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (!rhs.isAllocated() && !isAllocated())
 	{
 		return DEFAULT == DEFAULT2;
@@ -759,6 +1017,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T> template<class T2, int DEFAULT2, int SIZE2, int SIZE_OF_T2>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::operator!=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType, SIZE2, SIZE_OF_T2> &rhs) const
 {
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (!rhs.isAllocated() && !isAllocated())
 	{
 		return DEFAULT != DEFAULT2;
@@ -791,11 +1050,17 @@ struct EnumMapGetDefault
 {
 };
 
+__forceinline bool ArrayDefault(bool var) { return 0; } \
+template <> struct EnumMapGetDefault<bool> \
+{ \
+enum { DEFAULT_VALUE = 0, SIZE = ENUMMAP_SIZE_BOOL, SIZE_OF_T = sizeof(char) }; \
+};
+
 #define SET_ARRAY_DEFAULT( X ) \
 __forceinline X ArrayDefault( X var) { return 0; } \
 template <> struct EnumMapGetDefault<X> \
 { \
-	enum { value = 0, SIZE = 0, SIZE_OF_T = sizeof(X) }; \
+	enum { DEFAULT_VALUE = 0, SIZE = ENUMMAP_SIZE_DEFAULT, SIZE_OF_T = sizeof(X) }; \
 };
 
 SET_ARRAY_DEFAULT(int);
@@ -805,80 +1070,91 @@ SET_ARRAY_DEFAULT(unsigned int);
 SET_ARRAY_DEFAULT(unsigned short);
 SET_ARRAY_DEFAULT(byte);
 
-#define SET_ARRAY_XML_ENUM( VAR, NUM_TYPES, JIT_TYPE, VAR_SIZE ) \
+#define SET_ARRAY_XML_ENUM( VAR, NUM_TYPES, JIT_TYPE, COMPILE_NUM_TYPES ) \
 __forceinline VAR ArrayStart(VAR var) { return (VAR)0; } \
 __forceinline VAR ArrayLength(VAR var) { return NUM_TYPES; } \
 __forceinline JITarrayTypes ArrayType(VAR var) { return JIT_TYPE; } \
 template <> struct EnumMapGetDefault<VAR> \
 { \
-	enum { value = -1, SIZE = VAR_SIZE, SIZE_OF_T = SIZE }; \
+	enum { \
+		DEFAULT_VALUE = -1, \
+		SIZE = COMPILE_NUM_TYPES > 128 ? ENUMMAP_SIZE_2_BYTES : ENUMMAP_SIZE_1_BYTE, \
+		SIZE_OF_T = SIZE, \
+		LENGTH = COMPILE_NUM_TYPES, \
+	}; \
 };
 
 // Byte size is set in enums
-// If the length isn't known at compile time, 2 is assumed.
-// Setting the byte size means say PlayerTypes will use 1 byte instead of 4. Works because MAX_PLAYERS <= 0x7F
+// If the length isn't known at compile time, MAX_SHORT is assumed.
+// Setting the byte size means say PlayerTypes will use 1 byte instead of 4. Works because MAX_PLAYERS <= 128
 
-//                 type                , length                   , JIT_ARRAY type            , byte size
-SET_ARRAY_XML_ENUM(ArtStyleTypes       , NUM_ARTSTYLE_TYPES       , JIT_ARRAY_ART_STYLE       , BYTESIZE_ARTSTYLE_TYPES       );
-SET_ARRAY_XML_ENUM(BonusTypes          , NUM_BONUS_TYPES          , JIT_ARRAY_BONUS           , BYTESIZE_BONUS_TYPES          );
-SET_ARRAY_XML_ENUM(BuildTypes          , NUM_BUILD_TYPES          , JIT_ARRAY_BUILD           , BYTESIZE_BUILD_TYPES          );
-SET_ARRAY_XML_ENUM(BuildingTypes       , NUM_BUILDING_TYPES       , JIT_ARRAY_BUILDING        , BYTESIZE_BUILDING_TYPES       );
-SET_ARRAY_XML_ENUM(BuildingClassTypes  , NUM_BUILDINGCLASS_TYPES  , JIT_ARRAY_BUILDING_CLASS  , BYTESIZE_BUILDINGCLASS_TYPES  );
-SET_ARRAY_XML_ENUM(SpecialBuildingTypes, NUM_SPECIALBUILDING_TYPES, JIT_ARRAY_BUILDING_SPECIAL, BYTESIZE_SPECIALBUILDING_TYPES);
-SET_ARRAY_XML_ENUM(CivEffectTypes      , NUM_CIV_EFFECT_TYPES     , JIT_ARRAY_CIV_EFFECT      , BYTESIZE_CIV_EFFECT_TYPES     );
-SET_ARRAY_XML_ENUM(CivicTypes          , NUM_CIVIC_TYPES          , JIT_ARRAY_CIVIC           , BYTESIZE_CIVIC_TYPES          );
-SET_ARRAY_XML_ENUM(CivicOptionTypes    , NUM_CIVICOPTION_TYPES    , JIT_ARRAY_CIVIC_OPTION    , BYTESIZE_CIVICOPTION_TYPES    );
-SET_ARRAY_XML_ENUM(CivilizationTypes   , NUM_CIVILIZATION_TYPES   , JIT_ARRAY_CIVILIZATION    , BYTESIZE_CIVILIZATION_TYPES   );
-SET_ARRAY_XML_ENUM(ClimateTypes        , NUM_CLIMATE_TYPES        , JIT_ARRAY_CLIMATE         , BYTESIZE_CLIMATE_TYPES        );
-SET_ARRAY_XML_ENUM(ColorTypes          , NUM_COLOR_TYPES          , JIT_ARRAY_COLOR           , BYTESIZE_COLOR_TYPES          );
-SET_ARRAY_XML_ENUM(CultureLevelTypes   , NUM_CULTURELEVEL_TYPES   , JIT_ARRAY_CULTURE         , BYTESIZE_CULTURELEVEL_TYPES   );
-SET_ARRAY_XML_ENUM(DiplomacyTypes      , NUM_DIPLOMACY_TYPES      , JIT_ARRAY_DIPLO           , BYTESIZE_DIPLOMACY_TYPES      );
-SET_ARRAY_XML_ENUM(EraTypes            , NUM_ERA_TYPES            , JIT_ARRAY_ERA             , BYTESIZE_ERA_TYPES            );
-SET_ARRAY_XML_ENUM(EmphasizeTypes      , NUM_EMPHASIZE_TYPES      , JIT_ARRAY_EMPHASIZE       , BYTESIZE_EMPHASIZE_TYPES      );
-SET_ARRAY_XML_ENUM(EuropeTypes         , NUM_EUROPE_TYPES         , JIT_ARRAY_EUROPE          , BYTESIZE_EUROPE_TYPES         );
-SET_ARRAY_XML_ENUM(EventTypes          , NUM_EVENT_TYPES          , JIT_ARRAY_EVENT           , BYTESIZE_EVENT_TYPES          );
-SET_ARRAY_XML_ENUM(EventTriggerTypes   , NUM_EVENTTRIGGER_TYPES   , JIT_ARRAY_EVENT_TRIGGER   , BYTESIZE_EVENTTRIGGER_TYPES   );
-SET_ARRAY_XML_ENUM(FatherTypes         , NUM_FATHER_TYPES         , JIT_ARRAY_FATHER          , BYTESIZE_FATHER_TYPES         );
-SET_ARRAY_XML_ENUM(FatherPointTypes    , NUM_FATHER_POINT_TYPES   , JIT_ARRAY_FATHER_POINT    , BYTESIZE_FATHER_POINT_TYPES   );
-SET_ARRAY_XML_ENUM(FeatureTypes        , NUM_FEATURE_TYPES        , JIT_ARRAY_FEATURE         , BYTESIZE_FEATURE_TYPES        );
-SET_ARRAY_XML_ENUM(GameOptionTypes     , NUM_GAMEOPTION_TYPES     , JIT_ARRAY_GAME_OPTION     , BYTESIZE_GAMEOPTION_TYPES     );
-SET_ARRAY_XML_ENUM(GameSpeedTypes      , NUM_GAMESPEED_TYPES      , JIT_ARRAY_GAME_SPEED      , BYTESIZE_GAMESPEED_TYPES      );
-SET_ARRAY_XML_ENUM(GoodyTypes          , NUM_GOODY_TYPES          , JIT_ARRAY_GOODY           , BYTESIZE_GOODY_TYPES          );
-SET_ARRAY_XML_ENUM(HandicapTypes       , NUM_HANDICAP_TYPES       , JIT_ARRAY_HANDICAP        , BYTESIZE_HANDICAP_TYPES       );
-SET_ARRAY_XML_ENUM(HurryTypes          , NUM_HURRY_TYPES          , JIT_ARRAY_HURRY           , BYTESIZE_HURRY_TYPES          );
-SET_ARRAY_XML_ENUM(ImprovementTypes    , NUM_IMPROVEMENT_TYPES    , JIT_ARRAY_IMPROVEMENT     , BYTESIZE_IMPROVEMENT_TYPES    );
-SET_ARRAY_XML_ENUM(InvisibleTypes      , NUM_INVISIBLE_TYPES      , JIT_ARRAY_INVISIBLE       , BYTESIZE_INVISIBLE_TYPES      );
-SET_ARRAY_XML_ENUM(LeaderHeadTypes     , NUM_LEADER_TYPES         , JIT_ARRAY_LEADER_HEAD     , BYTESIZE_LEADER_TYPES         );
-SET_ARRAY_XML_ENUM(MemoryTypes         , NUM_MEMORY_TYPES         , JIT_ARRAY_MEMORY          , BYTESIZE_MEMORY_TYPES         );
-SET_ARRAY_XML_ENUM(PlayerColorTypes    , NUM_PLAYERCOLOR_TYPES    , JIT_ARRAY_PLAYER_COLOR    , BYTESIZE_PLAYERCOLOR_TYPES    );
-SET_ARRAY_XML_ENUM(PlayerOptionTypes   , NUM_PLAYEROPTION_TYPES   , JIT_ARRAY_PLAYER_OPTION   , BYTESIZE_PLAYEROPTION_TYPES   );
-SET_ARRAY_XML_ENUM(ProfessionTypes     , NUM_PROFESSION_TYPES     , JIT_ARRAY_PROFESSION      , BYTESIZE_PROFESSION_TYPES     );
-SET_ARRAY_XML_ENUM(PromotionTypes      , NUM_PROMOTION_TYPES      , JIT_ARRAY_PROMOTION       , BYTESIZE_PROMOTION_TYPES      );
-SET_ARRAY_XML_ENUM(RouteTypes          , NUM_ROUTE_TYPES          , JIT_ARRAY_ROUTE           , BYTESIZE_ROUTE_TYPES          );
-SET_ARRAY_XML_ENUM(SeaLevelTypes       , NUM_SEALEVEL_TYPES       , JIT_ARRAY_SEA_LEVEL       , BYTESIZE_SEALEVEL_TYPES       );
-SET_ARRAY_XML_ENUM(TerrainTypes        , NUM_TERRAIN_TYPES        , JIT_ARRAY_TERRAIN         , BYTESIZE_TERRAIN_TYPES        );
-SET_ARRAY_XML_ENUM(TraitTypes          , NUM_TRAIT_TYPES          , JIT_ARRAY_TRAIT           , BYTESIZE_TRAIT_TYPES          );
-SET_ARRAY_XML_ENUM(UnitTypes           , NUM_UNIT_TYPES           , JIT_ARRAY_UNIT            , BYTESIZE_UNIT_TYPES           );
-SET_ARRAY_XML_ENUM(UnitAITypes         , NUM_UNITAI_TYPES         , JIT_ARRAY_UNIT_AI         , BYTESIZE_UNITAI_TYPES         );
-SET_ARRAY_XML_ENUM(UnitClassTypes      , NUM_UNITCLASS_TYPES      , JIT_ARRAY_UNIT_CLASS      , BYTESIZE_UNITCLASS_TYPES      );
-SET_ARRAY_XML_ENUM(UnitCombatTypes     , NUM_UNITCOMBAT_TYPES     , JIT_ARRAY_UNIT_COMBAT     , BYTESIZE_UNITCOMBAT_TYPES     );
-SET_ARRAY_XML_ENUM(SpecialUnitTypes    , NUM_SPECIALUNIT_TYPES    , JIT_ARRAY_UNIT_SPECIAL    , BYTESIZE_SPECIALUNIT_TYPES    );
-SET_ARRAY_XML_ENUM(VictoryTypes        , NUM_VICTORY_TYPES        , JIT_ARRAY_VICTORY         , BYTESIZE_VICTORY_TYPES        );
-SET_ARRAY_XML_ENUM(WorldSizeTypes      , NUM_WORLDSIZE_TYPES      , JIT_ARRAY_WORLD_SIZE      , BYTESIZE_WORLDSIZE_TYPES      );
-SET_ARRAY_XML_ENUM(YieldTypes          , NUM_YIELD_TYPES          , JIT_ARRAY_YIELD           , BYTESIZE_YIELD_TYPES          );
-
-
-SET_ARRAY_XML_ENUM(AreaAITypes         , NUM_AREAAI_TYPES         , NO_JIT_ARRAY_TYPE         , BYTESIZE_AREAAI_TYPES         );
-SET_ARRAY_XML_ENUM(PlayerTypes         , NUM_PLAYER_TYPES         , NO_JIT_ARRAY_TYPE         , BYTESIZE_PLAYER_TYPES         );
-SET_ARRAY_XML_ENUM(TeamTypes           , NUM_TEAM_TYPES           , NO_JIT_ARRAY_TYPE         , BYTESIZE_TEAM_TYPES           );
+//                 type                , length                   , JIT_ARRAY type            , length at compile time (MAX_SHORT if unknown)
+SET_ARRAY_XML_ENUM(ArtStyleTypes       , NUM_ARTSTYLE_TYPES       , JIT_ARRAY_ART_STYLE       , COMPILE_TIME_NUM_ARTSTYLE_TYPES       );
+SET_ARRAY_XML_ENUM(BonusTypes          , NUM_BONUS_TYPES          , JIT_ARRAY_BONUS           , COMPILE_TIME_NUM_BONUS_TYPES          );
+SET_ARRAY_XML_ENUM(BuildTypes          , NUM_BUILD_TYPES          , JIT_ARRAY_BUILD           , COMPILE_TIME_NUM_BUILD_TYPES          );
+SET_ARRAY_XML_ENUM(BuildingTypes       , NUM_BUILDING_TYPES       , JIT_ARRAY_BUILDING        , COMPILE_TIME_NUM_BUILDING_TYPES       );
+SET_ARRAY_XML_ENUM(BuildingClassTypes  , NUM_BUILDINGCLASS_TYPES  , JIT_ARRAY_BUILDING_CLASS  , COMPILE_TIME_NUM_BUILDINGCLASS_TYPES  );
+SET_ARRAY_XML_ENUM(SpecialBuildingTypes, NUM_SPECIALBUILDING_TYPES, JIT_ARRAY_BUILDING_SPECIAL, COMPILE_TIME_NUM_SPECIALBUILDING_TYPES);
+SET_ARRAY_XML_ENUM(CivEffectTypes      , NUM_CIV_EFFECT_TYPES     , JIT_ARRAY_CIV_EFFECT      , COMPILE_TIME_NUM_CIV_EFFECT_TYPES     );
+SET_ARRAY_XML_ENUM(CivicTypes          , NUM_CIVIC_TYPES          , JIT_ARRAY_CIVIC           , COMPILE_TIME_NUM_CIVIC_TYPES          );
+SET_ARRAY_XML_ENUM(CivicOptionTypes    , NUM_CIVICOPTION_TYPES    , JIT_ARRAY_CIVIC_OPTION    , COMPILE_TIME_NUM_CIVICOPTION_TYPES    );
+SET_ARRAY_XML_ENUM(CivilizationTypes   , NUM_CIVILIZATION_TYPES   , JIT_ARRAY_CIVILIZATION    , COMPILE_TIME_NUM_CIVILIZATION_TYPES   );
+SET_ARRAY_XML_ENUM(ClimateTypes        , NUM_CLIMATE_TYPES        , JIT_ARRAY_CLIMATE         , COMPILE_TIME_NUM_CLIMATE_TYPES        );
+SET_ARRAY_XML_ENUM(ColorTypes          , NUM_COLOR_TYPES          , JIT_ARRAY_COLOR           , COMPILE_TIME_NUM_COLOR_TYPES          );
+SET_ARRAY_XML_ENUM(CultureLevelTypes   , NUM_CULTURELEVEL_TYPES   , JIT_ARRAY_CULTURE         , COMPILE_TIME_NUM_CULTURELEVEL_TYPES   );
+SET_ARRAY_XML_ENUM(DiplomacyTypes      , NUM_DIPLOMACY_TYPES      , JIT_ARRAY_DIPLO           , COMPILE_TIME_NUM_DIPLOMACY_TYPES      );
+SET_ARRAY_XML_ENUM(EraTypes            , NUM_ERA_TYPES            , JIT_ARRAY_ERA             , COMPILE_TIME_NUM_ERA_TYPES            );
+SET_ARRAY_XML_ENUM(EmphasizeTypes      , NUM_EMPHASIZE_TYPES      , JIT_ARRAY_EMPHASIZE       , COMPILE_TIME_NUM_EMPHASIZE_TYPES      );
+SET_ARRAY_XML_ENUM(EuropeTypes         , NUM_EUROPE_TYPES         , JIT_ARRAY_EUROPE          , COMPILE_TIME_NUM_EUROPE_TYPES         );
+SET_ARRAY_XML_ENUM(EventTypes          , NUM_EVENT_TYPES          , JIT_ARRAY_EVENT           , COMPILE_TIME_NUM_EVENT_TYPES          );
+SET_ARRAY_XML_ENUM(EventTriggerTypes   , NUM_EVENTTRIGGER_TYPES   , JIT_ARRAY_EVENT_TRIGGER   , COMPILE_TIME_NUM_EVENTTRIGGER_TYPES   );
+SET_ARRAY_XML_ENUM(FatherTypes         , NUM_FATHER_TYPES         , JIT_ARRAY_FATHER          , COMPILE_TIME_NUM_FATHER_TYPES         );
+SET_ARRAY_XML_ENUM(FatherPointTypes    , NUM_FATHER_POINT_TYPES   , JIT_ARRAY_FATHER_POINT    , COMPILE_TIME_NUM_FATHER_POINT_TYPES   );
+SET_ARRAY_XML_ENUM(FeatureTypes        , NUM_FEATURE_TYPES        , JIT_ARRAY_FEATURE         , COMPILE_TIME_NUM_FEATURE_TYPES        );
+SET_ARRAY_XML_ENUM(GameOptionTypes     , NUM_GAMEOPTION_TYPES     , JIT_ARRAY_GAME_OPTION     , COMPILE_TIME_NUM_GAMEOPTION_TYPES     );
+SET_ARRAY_XML_ENUM(GameSpeedTypes      , NUM_GAMESPEED_TYPES      , JIT_ARRAY_GAME_SPEED      , COMPILE_TIME_NUM_GAMESPEED_TYPES      );
+SET_ARRAY_XML_ENUM(GoodyTypes          , NUM_GOODY_TYPES          , JIT_ARRAY_GOODY           , COMPILE_TIME_NUM_GOODY_TYPES          );
+SET_ARRAY_XML_ENUM(HandicapTypes       , NUM_HANDICAP_TYPES       , JIT_ARRAY_HANDICAP        , COMPILE_TIME_NUM_HANDICAP_TYPES       );
+SET_ARRAY_XML_ENUM(HurryTypes          , NUM_HURRY_TYPES          , JIT_ARRAY_HURRY           , COMPILE_TIME_NUM_HURRY_TYPES          );
+SET_ARRAY_XML_ENUM(ImprovementTypes    , NUM_IMPROVEMENT_TYPES    , JIT_ARRAY_IMPROVEMENT     , COMPILE_TIME_NUM_IMPROVEMENT_TYPES    );
+SET_ARRAY_XML_ENUM(InvisibleTypes      , NUM_INVISIBLE_TYPES      , JIT_ARRAY_INVISIBLE       , COMPILE_TIME_NUM_INVISIBLE_TYPES      );
+SET_ARRAY_XML_ENUM(LeaderHeadTypes     , NUM_LEADER_TYPES         , JIT_ARRAY_LEADER_HEAD     , COMPILE_TIME_NUM_LEADER_TYPES         );
+SET_ARRAY_XML_ENUM(MemoryTypes         , NUM_MEMORY_TYPES         , JIT_ARRAY_MEMORY          , COMPILE_TIME_NUM_MEMORY_TYPES         );
+SET_ARRAY_XML_ENUM(PlayerColorTypes    , NUM_PLAYERCOLOR_TYPES    , JIT_ARRAY_PLAYER_COLOR    , COMPILE_TIME_NUM_PLAYERCOLOR_TYPES    );
+SET_ARRAY_XML_ENUM(PlayerOptionTypes   , NUM_PLAYEROPTION_TYPES   , JIT_ARRAY_PLAYER_OPTION   , COMPILE_TIME_NUM_PLAYEROPTION_TYPES   );
+SET_ARRAY_XML_ENUM(ProfessionTypes     , NUM_PROFESSION_TYPES     , JIT_ARRAY_PROFESSION      , COMPILE_TIME_NUM_PROFESSION_TYPES     );
+SET_ARRAY_XML_ENUM(PromotionTypes      , NUM_PROMOTION_TYPES      , JIT_ARRAY_PROMOTION       , COMPILE_TIME_NUM_PROMOTION_TYPES      );
+SET_ARRAY_XML_ENUM(RouteTypes          , NUM_ROUTE_TYPES          , JIT_ARRAY_ROUTE           , COMPILE_TIME_NUM_ROUTE_TYPES          );
+SET_ARRAY_XML_ENUM(SeaLevelTypes       , NUM_SEALEVEL_TYPES       , JIT_ARRAY_SEA_LEVEL       , COMPILE_TIME_NUM_SEALEVEL_TYPES       );
+SET_ARRAY_XML_ENUM(TerrainTypes        , NUM_TERRAIN_TYPES        , JIT_ARRAY_TERRAIN         , COMPILE_TIME_NUM_TERRAIN_TYPES        );
+SET_ARRAY_XML_ENUM(TraitTypes          , NUM_TRAIT_TYPES          , JIT_ARRAY_TRAIT           , COMPILE_TIME_NUM_TRAIT_TYPES          );
+SET_ARRAY_XML_ENUM(UnitTypes           , NUM_UNIT_TYPES           , JIT_ARRAY_UNIT            , COMPILE_TIME_NUM_UNIT_TYPES           );
+SET_ARRAY_XML_ENUM(UnitAITypes         , NUM_UNITAI_TYPES         , JIT_ARRAY_UNIT_AI         , COMPILE_TIME_NUM_UNITAI_TYPES         );
+SET_ARRAY_XML_ENUM(UnitClassTypes      , NUM_UNITCLASS_TYPES      , JIT_ARRAY_UNIT_CLASS      , COMPILE_TIME_NUM_UNITCLASS_TYPES      );
+SET_ARRAY_XML_ENUM(UnitCombatTypes     , NUM_UNITCOMBAT_TYPES     , JIT_ARRAY_UNIT_COMBAT     , COMPILE_TIME_NUM_UNITCOMBAT_TYPES     );
+SET_ARRAY_XML_ENUM(SpecialUnitTypes    , NUM_SPECIALUNIT_TYPES    , JIT_ARRAY_UNIT_SPECIAL    , COMPILE_TIME_NUM_SPECIALUNIT_TYPES    );
+SET_ARRAY_XML_ENUM(VictoryTypes        , NUM_VICTORY_TYPES        , JIT_ARRAY_VICTORY         , COMPILE_TIME_NUM_VICTORY_TYPES        );
+SET_ARRAY_XML_ENUM(WorldSizeTypes      , NUM_WORLDSIZE_TYPES      , JIT_ARRAY_WORLD_SIZE      , COMPILE_TIME_NUM_WORLDSIZE_TYPES      );
+SET_ARRAY_XML_ENUM(YieldTypes          , NUM_YIELD_TYPES          , JIT_ARRAY_YIELD           , COMPILE_TIME_NUM_YIELD_TYPES          );
 
 
-#define SET_ARRAY_XML_ENUM_LENGTH_ONLY( VAR, FIRST, NUM_TYPES, JIT_TYPE ) \
+SET_ARRAY_XML_ENUM(AreaAITypes         , NUM_AREAAI_TYPES         , NO_JIT_ARRAY_TYPE         , COMPILE_TIME_NUM_AREAAI_TYPES         );
+SET_ARRAY_XML_ENUM(PlayerTypes         , NUM_PLAYER_TYPES         , NO_JIT_ARRAY_TYPE         , COMPILE_TIME_NUM_PLAYER_TYPES         );
+SET_ARRAY_XML_ENUM(TeamTypes           , NUM_TEAM_TYPES           , NO_JIT_ARRAY_TYPE         , COMPILE_TIME_NUM_TEAM_TYPES           );
+
+
+#define SET_ARRAY_XML_ENUM_LENGTH_ONLY( VAR, FIRST, NUM_TYPES, JIT_TYPE, COMPILE_LENGTH ) \
 __forceinline VAR ArrayStart(VAR var) { return FIRST; } \
 __forceinline VAR ArrayLength(VAR var) { return NUM_TYPES; } \
-__forceinline JITarrayTypes ArrayType(VAR var) { return JIT_TYPE; }
+__forceinline JITarrayTypes ArrayType(VAR var) { return JIT_TYPE; } \
+template <> struct EnumMapGetDefault<VAR> \
+{ \
+	enum { \
+		LENGTH = COMPILE_LENGTH, \
+	}; \
+};
 
-SET_ARRAY_XML_ENUM_LENGTH_ONLY(CityPlotTypes      , FIRST_CITY_PLOT          , NUM_CITY_PLOTS           , NO_JIT_ARRAY_TYPE   );
+SET_ARRAY_XML_ENUM_LENGTH_ONLY(CityPlotTypes      , FIRST_CITY_PLOT          , NUM_CITY_PLOTS           , NO_JIT_ARRAY_TYPE, NUM_CITY_PLOTS_2_PLOTS);
 
 //
 // List of various types of EnumMaps
@@ -903,7 +1179,7 @@ template<class IndexType, class T, int DEFAULT>
 class EnumMapDefault : public EnumMapBase <IndexType, T, DEFAULT> {};
 
 template<class IndexType, class T>
-class EnumMap : public EnumMapBase <IndexType, T, EnumMapGetDefault<T>::value> {};
+class EnumMap : public EnumMapBase <IndexType, T, EnumMapGetDefault<T>::DEFAULT_VALUE> {};
 
 template<class IndexType, class T, int DEFAULT = 0>
 class EnumMapInt : public EnumMapBase <int, T, DEFAULT, IndexType, IndexType> {};
