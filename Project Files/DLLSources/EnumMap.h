@@ -46,7 +46,7 @@
 
 enum
 {
-	ENUMMAP_SIZE_DEFAULT,
+	ENUMMAP_SIZE_NATIVE,
 	ENUMMAP_SIZE_1_BYTE,
 	ENUMMAP_SIZE_2_BYTES,
 	ENUMMAP_SIZE_BOOL,
@@ -110,8 +110,6 @@ public:
 	// memory allocation and freeing
 	void reset();
 	void setAll(T eValue);
-private:
-	void allocate();
 
 public:
 
@@ -209,6 +207,134 @@ private:
 			return (numElements() + 31) / 32;
 		}
 	}
+	
+	////
+	////
+	//// Specialized functions
+	////
+	//// The idea is that the "outside world" calls a non-template function,
+	//// which then calls a template function for the same purpose.
+	//// This allows the outside world to stay simple (get/set etc) while at the same time
+	//// allow specialized functions for each.
+	//// This makes it easier for the compiler to optimize and allows more code.
+	//// The key difference is that before the compiler would compile for all cases and then hopefully
+	//// discard unused cases. Now it only compiles the specialized case matching the class templates in question.
+	//// This allows code, which calls overloaded functions, which doesn't support all cases of all template classes.
+	////
+	//// Written inside the class declaration due to a C++ limitation.
+	//// According to the standard, partial specialized functions aren't allowed and
+	//// specialized functions can't be used for unspecialized template classes.
+	//// However written inside the class declaration, the compiler treats the class as specialized,
+	//// hence allowing specialized functions
+	////
+	////
+
+	// declarations
+	// to avoid being mixed with what the outside world calls, all of them are private and have a _ prefix
+
+	template <bool bInline, int iSize>
+	T _get(int iIndex) const;
+
+	template <bool bInline, int iSize>
+	void _set(int iIndex, T eValue);
+
+	template <bool bInline, int iSize>
+	void _allocate();
+
+	//
+	// The actual specialized impletation of the functions
+	//
+
+	// get
+	template<>
+	__forceinline T _get<false, ENUMMAP_SIZE_NATIVE>(int iIndex) const
+	{
+		return (T)(m_pArrayFull ? m_pArrayFull[iIndex] : DEFAULT);
+	}
+	template<>
+	__forceinline T _get<false, ENUMMAP_SIZE_1_BYTE>(int iIndex) const
+	{
+		return (T)(m_pArrayChar ? m_pArrayChar[iIndex] : DEFAULT);
+	}
+	template<>
+	__forceinline T _get<false, ENUMMAP_SIZE_2_BYTES>(int iIndex) const
+	{
+		return (T)(m_pArrayShort ? m_pArrayShort[iIndex] : DEFAULT);
+	}
+	template<>
+	__forceinline T _get<false, ENUMMAP_SIZE_BOOL>(int iIndex) const
+	{
+		return m_pArrayBool ? HasBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex)) : DEFAULT;
+	}
+	template<>
+	__forceinline T _get<true, ENUMMAP_SIZE_BOOL>(int iIndex) const
+	{
+		return HasBit(m_InlineBoolArray[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex));
+	}
+
+	// set
+	template<>
+	__forceinline void _set<false, ENUMMAP_SIZE_NATIVE>(int iIndex, T eValue)
+	{
+		m_pArrayFull[iIndex] = eValue;
+	}
+	template<>
+	__forceinline void _set<false, ENUMMAP_SIZE_1_BYTE>(int iIndex, T eValue)
+	{
+		m_pArrayChar[iIndex] = eValue;
+	}
+	template<>
+	__forceinline void _set<false, ENUMMAP_SIZE_2_BYTES>(int iIndex, T eValue)
+	{
+		m_pArrayShort[iIndex] = eValue;
+	}
+	template<>
+	__forceinline void _set<false, ENUMMAP_SIZE_BOOL>(int iIndex, T eValue)
+	{
+		SetBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0));
+	}
+	template<>
+	__forceinline void _set<true, ENUMMAP_SIZE_BOOL>(int iIndex, T eValue)
+	{
+		SetBit(m_InlineBoolArray[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0);
+	}
+
+	// allocate
+	template<>
+	void _allocate<false, ENUMMAP_SIZE_NATIVE>()
+	{
+		FAssert(m_pArrayFull == NULL);
+		m_pArrayFull = new T[numElements()];
+		setAll((T)DEFAULT);
+	}
+	template<>
+	void _allocate<false, ENUMMAP_SIZE_1_BYTE>()
+	{
+		FAssert(m_pArrayChar == NULL);
+		m_pArrayChar = new char[numElements()];
+		setAll((T)DEFAULT);
+	}
+	template<>
+	void _allocate<false, ENUMMAP_SIZE_2_BYTES>()
+	{
+		FAssert(m_pArrayShort == NULL);
+		m_pArrayShort = new short[numElements()];
+		setAll((T)DEFAULT);
+	}
+	template<>
+	void _allocate<false, ENUMMAP_SIZE_BOOL>()
+	{
+		FAssert(m_pArrayBool == NULL);
+		m_pArrayBool = new unsigned int[getBoolArrayNumBlocks()];
+		setAll((T)DEFAULT);
+	}
+	template<>
+	void _allocate<true, ENUMMAP_SIZE_BOOL>()
+	{
+		// inlined memory should never need to be allocated
+		// included anyway because the linker wants to link to it, detect it's not used and then remove (hopefully)
+		FAssert(false);
+	}
 };
 
 //
@@ -279,30 +405,11 @@ __forceinline IndexType EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType,
 	return (IndexType)(getLength() - First());
 }
 
-
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
-inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::get(IndexType eIndex) const
+__forceinline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::get(IndexType eIndex) const
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
-
-	switch (SIZE)
-	{
-	case ENUMMAP_SIZE_DEFAULT: return (T)(m_pArrayFull  ? m_pArrayFull [eIndex - First()] : DEFAULT);
-	case ENUMMAP_SIZE_1_BYTE : return (T)(m_pArrayChar  ? m_pArrayChar [eIndex - First()] : DEFAULT);
-	case ENUMMAP_SIZE_2_BYTES: return (T)(m_pArrayShort ? m_pArrayShort[eIndex - First()] : DEFAULT);
-	case ENUMMAP_SIZE_BOOL:
-		if (bINLINE_BOOL)
-		{
-			return (T)(HasBit(m_InlineBoolArray[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex)));
-		}
-		else
-		{
-			return (T)(m_pArrayBool ? HasBit(m_pArrayBool[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex)) : DEFAULT);
-		}
-	default:
-		FAssertMsg(false, "unhandled case");
-		return (T)DEFAULT;
-	}
+	return _get<bINLINE_BOOL, SIZE>(eIndex - First());
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
@@ -315,23 +422,9 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 		{
 			return;
 		}
-		allocate();
+		_allocate<bINLINE_BOOL, SIZE>();
 	}
-
-	switch (SIZE)
-	{
-	case ENUMMAP_SIZE_DEFAULT: m_pArrayFull [eIndex - First()] =        eValue; break;
-	case ENUMMAP_SIZE_1_BYTE : m_pArrayChar [eIndex - First()] = (char )eValue; break;
-	case ENUMMAP_SIZE_2_BYTES: m_pArrayShort[eIndex - First()] = (short)eValue; break;
-	case ENUMMAP_SIZE_BOOL:	
-		if (bINLINE_BOOL)
-			SetBit(m_InlineBoolArray[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex));
-		else
-			SetBit(m_pArrayBool[getBoolArrayBlock(eIndex)], getBoolArrayIndexInBlock(eIndex));
-		break;
-	
-	default: FAssertMsg(false, "unhandled case");
-	}
+	_set<bINLINE_BOOL, SIZE>(eIndex - First(), eValue);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
@@ -380,7 +473,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::isAllocated() const
 {
-	return m_pArrayFull != NULL;
+	return bINLINE_BOOL || m_pArrayFull != NULL;
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
@@ -538,44 +631,6 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::allocate()
-{
-	if (bINLINE_BOOL)
-	{
-		FAssert(false);
-		return;
-	}
-	FAssert(m_pArrayChar == NULL);
-
-	if (SIZE == ENUMMAP_SIZE_BOOL)
-	{
-		int iNumElements = (numElements() + 31) / 32;
-
-		m_pArrayBool = new unsigned int[iNumElements];
-
-		memset(m_pArrayBool, DEFAULT ? 0xFF : 0, iNumElements * 4);
-		return;
-	}
-
-	m_pArrayChar = new char[numElements() * SIZE_OF_T];
-
-	// memset is a whole lot faster. However it only works on bytes.
-	// Optimize for the default case where default is 0.
-	if (SIZE_OF_T == 1 || DEFAULT == 0)
-	{
-		memset(m_pArrayFull, DEFAULT, numElements() * SIZE_OF_T);
-	}
-	else if (SIZE == 2)
-	{
-		std::fill_n(m_pArrayShort, numElements(), (T)DEFAULT);
-	}
-	else
-	{
-		std::fill_n(m_pArrayFull, numElements(), (T)DEFAULT);
-	}
-}
-
-template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType, int SIZE, int SIZE_OF_T>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_OF_T>::copyToVector(std::vector<T>& thisVector) const
 {
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
@@ -606,10 +661,10 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType, SIZE, SIZE_
 
 	if (!isAllocated())
 	{
-		allocate();
+		_allocate<bINLINE_BOOL, SIZE>();
 	}
 
-	if (SIZE == 0)
+	if (SIZE == ENUMMAP_SIZE_NATIVE)
 	{
 		memcpy(m_pArrayFull, &thisVector[0], getLength() * sizeof(T));
 	}
@@ -1060,7 +1115,7 @@ enum { DEFAULT_VALUE = 0, SIZE = ENUMMAP_SIZE_BOOL, SIZE_OF_T = sizeof(char) }; 
 __forceinline X ArrayDefault( X var) { return 0; } \
 template <> struct EnumMapGetDefault<X> \
 { \
-	enum { DEFAULT_VALUE = 0, SIZE = ENUMMAP_SIZE_DEFAULT, SIZE_OF_T = sizeof(X) }; \
+	enum { DEFAULT_VALUE = 0, SIZE = ENUMMAP_SIZE_NATIVE, SIZE_OF_T = sizeof(X) }; \
 };
 
 SET_ARRAY_DEFAULT(int);
