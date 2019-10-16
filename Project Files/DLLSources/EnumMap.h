@@ -8,41 +8,23 @@
 // https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/util/EnumMap.html
 //
 // Put in civ4 terms, it's an array with a fixed length and automated memory management.
-// The length is either the length of an xml file (like UnitTypes) or a fixed value (like MAX_PLAYERS)
+// Memory is allocated using a lazy approach and occationally freed as well if it doesn't matter outside the class.
+// This means like say std::vector, it can be used without considering memory allocations at all and it can't leak.
 //
 // The array is set up with template parameters as this allows "arguments" to the default constructor.
 // Often an array of arrays can only use the default constructor for the inner array, making flexible default
 // constructors important.
 //
-// In most cases only the first two parameters need to be set. The last two only benefit from non-default values
-// in very special cases.
+// Strict with types in arguments and assert checks (both compile and runtime) in order to catch bugs.
+// Highly optimized for performance (particularly with hardcoded xml lengths) and low memory usage.
 //
-// Template parameters:
-//    IndexType: the type, which is used for index and array size.
-//       For instance PlayerTypes means get will require a PlayerTypes argument and the array size is MAX_PLAYERS.
+// Example usage:
+// EnumMap<YieldTypes, bool>
+// EnumMap<BuildingTypes, int>
+// EnumMap<TeamTypes, PlayerTypes>
 //
-//    T: the data stored in the array. This is usually of the int family, but it can also be enums.
-//
-//    DEFAULT: (optional) sets the value the array will init to
-//      If not mentioned, the value will be set by which type T is. 0 for int family and -1 (NO_) for enums
-//      Note: using default and calling setAll() is preferred. See below.
-//
-//    T_SUBSET: (optional) Sets the range of the array if a subset is needed.
-//      If you have an IndexType with a length of 100, but you only need 70-75, setting a nondefault here,
-//      can make the array contain 6 items, which is then accessed with indexes 70-75
-//      Default value will use IndexType, meaning it goes from 0 to 
-//
-//
-// Try to keep the different types of parameters to a minimum. Each time a new set is used, a new set is compiled.
-// Example:
-//   EnumMap<PlayerTypes, int> A;
-//   EnumMap<PlayerTypes, int, 1> B;
-// This will create two different functions, compile and include both into the DLL file.
-//   EnumMap<PlayerTypes, int> A;
-//   EnumMap<PlayerTypes, int> B;
-//   B.setAll(1);
-// Same result, but since they now share the same parameters, the compiler will only make one set, which they will both call.
-// It's not a major issue to make multiple, partly because most calls are inline anyway, but it should be mentioned.
+// See the end of the file for (often unneeded) additionaly features, like disabling type checks and altering default values.
+// Default is 0, except if the second parameter is an enum, in which case the default is -1 (like NO_PLAYER)
 
 enum
 {
@@ -184,30 +166,13 @@ private:
 		}
 		else
 		{
-			iIndex -= First();
 			return iIndex / 32;
 		}
 	}
 
 	int getBoolArrayIndexInBlock(int iIndex) const
 	{
-		iIndex -= First();
 		return iIndex & ENUMMAP_BITMASK_32_BIT;
-	}
-
-	int getBoolArrayNumBlocks() const
-	{
-		if (bINLINE_BOOL && NUM_BOOL_BLOCKS == 1)
-		{
-			// set block count to compile time hardcoded when we know there is just one
-			// this will help the compiler optimization
-			return 1;
-		}
-		else
-		{
-			// we want to divide by 32, but the result should be rounded up, not down
-			return (numElements() + 31) / 32;
-		}
 	}
 	
 	////
@@ -242,6 +207,15 @@ private:
 
 	template <bool bInline, int iSize>
 	void _allocate();
+
+	template <bool bInline>
+	int _getNumBoolBlocks() const;
+
+	template <int iSize>
+	void _Read(CvSavegameReader& reader);
+
+	template <int iSize>
+	void _Write(CvSavegameWriter& writer) const;
 
 	//
 	// The actual specialized impletation of the functions
@@ -336,6 +310,129 @@ private:
 		// inlined memory should never need to be allocated
 		// included anyway because the linker wants to link to it, detect it's not used and then remove (hopefully)
 		FAssert(false);
+	}
+
+	////
+	//// bool specialization
+	////
+
+	template <>
+	__forceinline int _getNumBoolBlocks<false>() const
+	{
+		return (numElements() + 31) / 32;
+	}
+
+	template <>
+	__forceinline int _getNumBoolBlocks<true>() const
+	{
+		return NUM_BOOL_BLOCKS;
+	}
+
+	template<>
+	void _Read<ENUMMAP_SIZE_BOOL>(CvSavegameReader& reader)
+	{
+		const int iLength = ArrayType((LengthType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((LengthType)0) : reader.GetXmlSize(ArrayType((LengthType)0));
+
+		LengthType eStart;
+		LengthType eEnd;
+
+		if (iLength <= 0x100)
+		{
+			byte iBuffer;
+			reader.Read(iBuffer);
+			eStart = (LengthType)iBuffer;
+			reader.Read(iBuffer);
+			eEmd = (LengthType)iBuffer;
+		}
+		else
+		{
+			unsigned short iBuffer;
+			reader.Read(iBuffer);
+			eStart = (LengthType)iBuffer;
+			reader.Read(iBuffer);
+			eEmd = (LengthType)iBuffer;
+		}
+
+		byte iBuffer;
+
+		for (LengthType eLoop = eStart; eLoop <= eEnd; eLoop = (LengthType)(eLoop + 1))
+		{
+			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
+			if (iBlockIndex == 0)
+			{
+				// read next block
+				reader.Read(iBuffer);
+			}
+			set((LengthType)reader.ConvertIndex(ArrayType(eStart), eLoop), HasBit(iBuffer, iBlockIndex));
+		}
+	}
+
+	template<>
+	void _Write<ENUMMAP_SIZE_BOOL>(CvSavegameWriter& writer) const
+	{
+		const int iLength = ArrayType((LengthType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((LengthType)0) : writer.GetXmlSize(ArrayType((LengthType)0));
+
+
+		LengthType eStart = (LengthType)MAX_INT;
+		LengthType eEnd = (LengthType)MIN_INT;
+
+		for (LengthType eLoop = (LengthType)First(); eLoop < getLength(); ++eLoop)
+		{
+			if (get(eLoop))
+			{
+				if (eStart > eLoop)
+				{
+					eStart = eLoop;
+				}
+				if (eEnd < eLoop)
+				{
+					eEnd = eLoop;
+				}
+			}
+		}
+
+		// write empty array if needed
+
+		if (eStart == MAX_INT)
+		{
+			// saving 1 to 0 will cause the reader to not read any data, hence no need to save blocks
+			FAssert(eEnd == MIN_INT);
+			eStart = (LengthType)1;
+			eEnd = (LengthType)0;
+		}
+
+		writer.Write(eStart);
+		writer.Write(eEnd);
+
+		if (iLength <= 0x100)
+		{
+			byte iBuffer = eStart;
+			writer.Write(iBuffer);
+			iBuffer = eEnd;
+			writer.Write(iBuffer);
+		}
+		else
+		{
+			unsigned short iBuffer = eStart;
+			writer.Write(iBuffer);
+			iBuffer = eEnd;
+			writer.Write(iBuffer);
+		}
+
+		const byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+
+		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
+		{
+			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
+			if (iBlockIndex == 0)
+			{
+				// read next block
+				writer.Write(iBuffer);
+				iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+			}
+			SetBit(iBuffer, get(eLoop));
+		}
+		writer.Write(iBuffer);
 	}
 };
 
@@ -497,7 +594,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 	{
 		if (SIZE == ENUMMAP_SIZE_BOOL)
 		{
-			const int iNumBlocks = getBoolArrayNumBlocks();
+			const int iNumBlocks = _getNumBoolBlocks<bINLINE_BOOL>();
 			for (int i = 0; i < iNumBlocks; ++i)
 			{
 				if (m_pArrayBool[i] != BOOL_BLOCK_DEFAULT)
@@ -684,30 +781,17 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyFromVe
 //
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Read(CvSavegameReader& reader)
+__forceinline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Read(CvSavegameReader& reader)
 {
-	if (SIZE == ENUMMAP_SIZE_BOOL)
-	{
-		LengthType eStart;
-		LengthType eEnd;
+	_Read<SIZE>(reader);
+}
 
-		reader.Read(eStart);
-		reader.Read(eEnd);
-		
-		byte iBuffer;
-
-		for (LengthType eLoop = eStart; eLoop <= eEnd; eLoop = (LengthType)(eLoop + 1))
-		{
-			const int iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
-			if (iBlockIndex == 0)
-			{
-				// read next block
-				reader.Read(iBuffer);
-			}
-			set((LengthType)reader.ConvertIndex(ArrayType(eStart), eLoop), (T)HasBit(iBuffer, iBlockIndex));
-		}
-		return;
-	}
+template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
+template<int SIZE2>
+inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSavegameReader& reader)
+{
+	BOOST_STATIC_ASSERT(SIZE == SIZE2);
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 
 	// savegame format is as follows:
 	// first index
@@ -814,60 +898,17 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Read(CvSav
 
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Write(CvSavegameWriter& writer) const
+__forceinline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::Write(CvSavegameWriter& writer) const
 {
-	if (SIZE == ENUMMAP_SIZE_BOOL)
-	{
-		LengthType eStart = (LengthType)MAX_INT;
-		LengthType eEnd = (LengthType)MIN_INT;
+	_Write<SIZE>(writer);
+}
 
-		for (LengthType eLoop = (LengthType)First(); eLoop < getLength(); ++eLoop)
-		{
-			if (get(eLoop))
-			{
-				if (eStart > eLoop)
-				{
-					eStart = eLoop;
-				}
-				if (eEnd < eLoop)
-				{
-					eEnd = eLoop;
-				}
-			}
-		}
-
-		// write empty array if needed
-
-		if (eStart == MAX_INT)
-		{
-			// saving 1 to 0 will cause the reader to not read any data, hence no need to save blocks
-			FAssert(eEnd == MIN_INT);
-			eStart = (LengthType)1;
-			eEnd = (LengthType)0;
-			writer.Write(eStart);
-			writer.Write(eEnd);
-			return;
-		}
-
-		writer.Write(eStart);
-		writer.Write(eEnd);
-
-		byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
-
-		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
-		{
-			const int iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
-			if (iBlockIndex == 0)
-			{
-				// read next block
-				writer.Write(iBuffer);
-				iBuffer = (byte)BOOL_BLOCK_DEFAULT;
-			}
-			SetBit(iBuffer, get(eLoop));
-		}
-		writer.Write(iBuffer);
-		return;
-	}
+template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
+template<int SIZE2>
+inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Write(CvSavegameWriter& writer) const
+{
+	BOOST_STATIC_ASSERT(SIZE == SIZE2);
+	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 
 	const int iLength = ArrayType((LengthType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((LengthType)0) : writer.GetXmlSize(ArrayType((LengthType)0));
 	const bool bUseTwoByteStart = iLength > 64;
