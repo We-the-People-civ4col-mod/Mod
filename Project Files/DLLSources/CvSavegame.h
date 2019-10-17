@@ -71,6 +71,12 @@ public:
 	void Read(JustInTimeArray<T>& jitArray);
 
 	template<class T>
+	void Read(std::vector<T>& vec);
+
+	template<class T>
+	void Read(std::vector<T*>& vec);
+
+	template<class T>
 	void Read(CLinkList<T>& lList);
 
 	void Read(BoolArray& baArray);
@@ -150,6 +156,11 @@ public:
 	void Read(YieldTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(WorldSizeTypes        & variable) { ReadXmlEnum(variable); }
 
+	// class wrappers
+	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(CvUnit                & variable) { variable.read(*this); }
+	void Read(CvUnitAI              & variable) { variable.read(*this); }
+
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
 	int GetXmlSize(JITarrayTypes eType) const;
 
@@ -216,6 +227,18 @@ public:
 	
 	template<class T>
 	void Write(JustInTimeArray<T>& jitArray);
+
+	template<class T>
+	void Write(std::vector<T>& vec);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, std::vector<T>& vec);
+
+	template<class T>
+	void Write(std::vector<T*>& vec);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, std::vector<T*>& vec);
 
 	void Write(SavegameVariableTypes eType);
 	void Write(SavegameVariableTypes eType, const CvString  & szString);
@@ -315,6 +338,11 @@ public:
 	void Write(YieldTypes            variable) { WriteXmlEnum(variable); }
 	void Write(WorldSizeTypes        variable) { WriteXmlEnum(variable); }
 
+	// class wrappers
+	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(CvUnit               &variable) { variable.write(*this); }
+	void Write(CvUnitAI             &variable) { variable.write(*this); }
+
 	// get the amount of bytes needed to save the variable in question
 	// also tells the savegame that a conversion table is needed
 	int GetXmlByteSize(JITarrayTypes eType);
@@ -392,6 +420,47 @@ inline void CvSavegameReader::Read(JustInTimeArray<T>& jitArray)
 }
 
 template<class T>
+inline void CvSavegameReader::Read(std::vector<T>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::vector<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Read(*it);
+	}
+}
+
+template<>
+inline void CvSavegameReader::Read(std::vector<CvUnit*>& vec)
+{
+	// specialized function because CvCity::m_aPopulationUnits is a vector of CvUnit.
+	// however CvUnit is an abstract class and needs to be allocated with CvUnitAI.
+
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::vector<CvUnit*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		*it = new CvUnitAI;
+		Read(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameReader::Read(std::vector<T*>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		*it = new T;
+		Read(**it);
+	}
+}
+
+template<class T>
 inline void CvSavegameReader::Read(CLinkList<T>& lList)
 {
 	lList.Read(*this);
@@ -418,6 +487,48 @@ template<class T>
 inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Write(*this);
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::vector<T>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::vector<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(*it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		Write(vec);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::vector<T*>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T*>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		Write(vec);
+	}
 }
 
 template<class T>
