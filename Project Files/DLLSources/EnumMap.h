@@ -33,6 +33,14 @@ enum
 	ENUMMAP_SIZE_2_BYTES,
 	ENUMMAP_SIZE_BOOL,
 
+	// max bytes used by class instance
+	// used for determining if an array should be inside the class instance instead of a pointer.
+	// this saves memory I/O, but with the tradeoff of making the instance bigger, which is not always wanted.
+	// This is particularly useful if the array is no bigger than a pointer, like a char array of length 3-4.
+	//
+	// Note: the compiler will use 4 byte alignment, meaning this works best if set to a multiple of 4
+	ENUMMAP_MAX_BYTES = 4,
+
 	// set how many bits can be inlined in the class itself
 	// if a bool array has <= this number of bits, then instead of allocating memory elsewhere
 	// the data will be placed in the class itself
@@ -50,13 +58,6 @@ template<class IndexType, class T, int DEFAULT, class T_SUBSET = IndexType, clas
 class EnumMapBase
 {
 public:
-	static const int SIZE = EnumMapGetDefault<T>::SIZE;
-	static const int SIZE_OF_T = EnumMapGetDefault<T>::SIZE_OF_T;
-	static const int LENGTH = EnumMapGetDefault<LengthType>::LENGTH;
-	static const bool bINLINE_BOOL = SIZE == ENUMMAP_SIZE_BOOL && LENGTH < ENUMMAP_MAX_INLINE_BOOL;
-	static const int NUM_BOOL_BLOCKS = bINLINE_BOOL ? (LENGTH + 31) / 32 : 1;
-	static const unsigned int BOOL_BLOCK_DEFAULT = DEFAULT ? MAX_UNSIGNED_INT : 0;
-
 	EnumMapBase();
 	~EnumMapBase();
 
@@ -95,7 +96,6 @@ public:
 	void reset();
 	void setAll(T eValue);
 
-public:
 
 	// used to allow structs.cpp to save using EnumMap savegame code.
 	// We can't change the memory layout defined in Structs.h, hence we are struck with vectors.
@@ -105,6 +105,33 @@ public:
 
 	void Read(CvSavegameReader& reader);
 	void Write(CvSavegameWriter& writer) const;
+
+
+	////
+	//// End of functions
+	//// There is no need to keep reading this class declaration unless you are interested in the internal implementation
+	////
+
+	// compile time constants
+	static const int SIZE = EnumMapGetDefault<T>::SIZE;
+	static const int SIZE_OF_T = EnumMapGetDefault<T>::SIZE_OF_T;
+	static const int LENGTH = EnumMapGetDefault<LengthType>::LENGTH;
+
+	static const bool bINLINE_NATIVE = SIZE == ENUMMAP_SIZE_NATIVE && (LENGTH * SIZE_OF_T) <= ENUMMAP_MAX_BYTES;
+	static const int NUM_NATIVE_BLOCKS = bINLINE_NATIVE ? LENGTH : 1;
+
+	static const bool bINLINE_1_BYTE = SIZE == ENUMMAP_SIZE_1_BYTE && (LENGTH * SIZE_OF_T) <= ENUMMAP_MAX_BYTES;
+	static const int NUM_1_BYTE_BLOCKS = bINLINE_1_BYTE ? LENGTH : 1;
+
+	static const bool bINLINE_2_BYTES = SIZE == ENUMMAP_SIZE_2_BYTES && (LENGTH * SIZE_OF_T) <= ENUMMAP_MAX_BYTES;
+	static const int NUM_2_BYTE_BLOCKS = bINLINE_2_BYTES ? LENGTH : 1;
+
+	static const bool bINLINE_BOOL = SIZE == ENUMMAP_SIZE_BOOL && LENGTH <= ENUMMAP_MAX_INLINE_BOOL;
+	static const int NUM_BOOL_BLOCKS = bINLINE_BOOL ? (LENGTH + 31) / 32 : 1;
+	static const unsigned int BOOL_BLOCK_DEFAULT = DEFAULT ? MAX_UNSIGNED_INT : 0;
+
+
+	static const bool bINLINE = bINLINE_NATIVE || bINLINE_1_BYTE || bINLINE_2_BYTES || bINLINE_BOOL;
 
 	// operator overload
 	EnumMapBase& operator=(const EnumMapBase &rhs);
@@ -123,14 +150,25 @@ public:
 
 private:
 
+	// the actual memory in this class
+	// since it's a union, the goal is to keep all of them to 4 bytes
+	// the exception is when bINLINE is set and is allowed to use more than 4 bytes
+	// an example of this is <PlayerTypes, bool> has a bool for each player, hence 8 bytes
 	union
 	{
 		T     * m_pArrayFull;
 		short * m_pArrayShort;
 		char  * m_pArrayChar;
 		unsigned int * m_pArrayBool;
+		
+		T m_InlineNative[NUM_NATIVE_BLOCKS];
+		char m_Inline_1_byte[NUM_1_BYTE_BLOCKS];
+		short m_Inline_2_bytes[NUM_2_BYTE_BLOCKS];
 		unsigned int m_InlineBoolArray[NUM_BOOL_BLOCKS];
 	};
+
+	// the code will technically still work if this fails, but it will waste memory
+	BOOST_STATIC_ASSERT(sizeof(T) <= 4 || bINLINE_NATIVE);
 
 	enum
 	{
@@ -206,7 +244,10 @@ private:
 	void _set(int iIndex, T eValue);
 
 	template <bool bInline, int iSize>
-	void _allocate();
+	void _allocate(T eValue = (T)DEFAULT);
+
+	template <bool bInline, int iSize>
+	void _setAll(T val);
 
 	template <bool bInline>
 	int _getNumBoolBlocks() const;
@@ -243,6 +284,21 @@ private:
 		return m_pArrayBool ? HasBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex)) : DEFAULT;
 	}
 	template<>
+	__forceinline T _get<true, ENUMMAP_SIZE_NATIVE>(int iIndex) const
+	{
+		return m_InlineNative[iIndex];
+	}
+	template<>
+	__forceinline T _get<true, ENUMMAP_SIZE_1_BYTE>(int iIndex) const
+	{
+		return (T)m_Inline_1_byte[iIndex];
+	}
+	template<>
+	__forceinline T _get<true, ENUMMAP_SIZE_2_BYTES>(int iIndex) const
+	{
+		return (T)m_Inline_2_bytes[iIndex];
+	}
+	template<>
 	__forceinline T _get<true, ENUMMAP_SIZE_BOOL>(int iIndex) const
 	{
 		return HasBit(m_InlineBoolArray[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex));
@@ -270,46 +326,116 @@ private:
 		SetBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0));
 	}
 	template<>
+	__forceinline void _set<true, ENUMMAP_SIZE_NATIVE>(int iIndex, T eValue)
+	{
+		m_InlineNative[iIndex] = eValue;
+	}
+	template<>
+	__forceinline void _set<true, ENUMMAP_SIZE_1_BYTE>(int iIndex, T eValue)
+	{
+		m_Inline_1_byte[iIndex] = eValue;
+	}
+	template<>
+	__forceinline void _set<true, ENUMMAP_SIZE_2_BYTES>(int iIndex, T eValue)
+	{
+		m_Inline_2_bytes[iIndex] = eValue;
+	}
+	template<>
 	__forceinline void _set<true, ENUMMAP_SIZE_BOOL>(int iIndex, T eValue)
 	{
 		SetBit(m_InlineBoolArray[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0);
 	}
 
+	// setAll
+	template<>
+	__forceinline void _setAll<false, ENUMMAP_SIZE_NATIVE>(T eValue)
+	{
+		std::fill_n(m_pArrayFull, numElements(), eValue);
+	}
+	template<>
+	__forceinline void _setAll<false, ENUMMAP_SIZE_1_BYTE>(T eValue)
+	{
+		std::fill_n(m_pArrayChar, numElements(), eValue);
+	}
+	template<>
+	__forceinline void _setAll<false, ENUMMAP_SIZE_2_BYTES>(T eValue)
+	{
+		std::fill_n(m_pArrayShort, numElements(), eValue);
+	}
+	template<>
+	__forceinline void _setAll<false, ENUMMAP_SIZE_BOOL>(T eValue)
+	{
+		std::fill_n(m_pArrayBool, _getNumBoolBlocks(), eValue ? MAX_UNSIGNED_INT : 0);
+	}
+	template<>
+	__forceinline void _setAll<true, ENUMMAP_SIZE_NATIVE>(T eValue)
+	{
+		std::fill_n(&m_InlineNative[0], numElements(), eValue);
+	}
+	template<>
+	__forceinline void _setAll<true, ENUMMAP_SIZE_1_BYTE>(T eValue)
+	{
+		std::fill_n(&m_Inline_1_byte[0], numElements(), eValue);
+	}
+	template<>
+	__forceinline void _setAll<true, ENUMMAP_SIZE_2_BYTES>(T eValue)
+	{
+		std::fill_n(&m_Inline_2_bytes[0], numElements(), eValue);
+	}
+	template<>
+	__forceinline void _setAll<true, ENUMMAP_SIZE_BOOL>(T eValue)
+	{
+		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks(), eValue ? MAX_UNSIGNED_INT : 0);
+	}
+
 	// allocate
 	template<>
-	void _allocate<false, ENUMMAP_SIZE_NATIVE>()
+	void _allocate<false, ENUMMAP_SIZE_NATIVE>(T eValue)
 	{
 		FAssert(m_pArrayFull == NULL);
 		m_pArrayFull = new T[numElements()];
-		setAll((T)DEFAULT);
+		_setAll<bINLINE, SIZE>(eValue);
 	}
 	template<>
-	void _allocate<false, ENUMMAP_SIZE_1_BYTE>()
+	void _allocate<false, ENUMMAP_SIZE_1_BYTE>(T eValue)
 	{
 		FAssert(m_pArrayChar == NULL);
 		m_pArrayChar = new char[numElements()];
-		setAll((T)DEFAULT);
+		_setAll<bINLINE, SIZE>(eValue);
 	}
 	template<>
-	void _allocate<false, ENUMMAP_SIZE_2_BYTES>()
+	void _allocate<false, ENUMMAP_SIZE_2_BYTES>(T eValue)
 	{
 		FAssert(m_pArrayShort == NULL);
 		m_pArrayShort = new short[numElements()];
-		setAll((T)DEFAULT);
+		_setAll<bINLINE, SIZE>(eValue);
 	}
 	template<>
-	void _allocate<false, ENUMMAP_SIZE_BOOL>()
+	void _allocate<false, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
 		FAssert(m_pArrayBool == NULL);
 		m_pArrayBool = new unsigned int[getBoolArrayNumBlocks()];
-		setAll((T)DEFAULT);
+		_setAll<bINLINE, SIZE>(eValue);
 	}
 	template<>
-	void _allocate<true, ENUMMAP_SIZE_BOOL>()
+	void _allocate<true, ENUMMAP_SIZE_NATIVE>(T eValue)
 	{
-		// inlined memory should never need to be allocated
-		// included anyway because the linker wants to link to it, detect it's not used and then remove (hopefully)
-		FAssert(false);
+		FAssertMsg(false, "EnumMap::_allocate shouldn't be called for classes with inline memory");
+	}
+	template<>
+	void _allocate<true, ENUMMAP_SIZE_1_BYTE>(T eValue)
+	{
+		FAssertMsg(false, "EnumMap::_allocate shouldn't be called for classes with inline memory");
+	}
+	template<>
+	void _allocate<true, ENUMMAP_SIZE_2_BYTES>(T eValue)
+	{
+		FAssertMsg(false, "EnumMap::_allocate shouldn't be called for classes with inline memory");
+	}
+	template<>
+	void _allocate<true, ENUMMAP_SIZE_BOOL>(T eValue)
+	{
+		FAssertMsg(false, "EnumMap::_allocate shouldn't be called for classes with inline memory");
 	}
 
 	////
@@ -460,16 +586,13 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::EnumMapBase()
 	// bools can only default to 0 or 1
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL || DEFAULT == 0 || DEFAULT == 1);
 
-	FAssertMsg(bINLINE_BOOL || sizeof(*this) == 4, "EnumMap is supposed to only contain a pointer");
+	FAssertMsg(bINLINE || sizeof(*this) == 4, "EnumMap is supposed to only contain a pointer");
 	FAssertMsg(getLength() >= 0 && getLength() <= ArrayLength((LengthType)0), "Custom length out of range");
 	FAssertMsg(First() >= 0 && First() <= getLength(), "Custom length out of range");
 
-	if (bINLINE_BOOL)
+	if (bINLINE)
 	{
-		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
-		{
-			m_InlineBoolArray[i] = BOOL_BLOCK_DEFAULT;
-		}
+		this->setAll((T)DEFAULT);
 	}
 }
 
@@ -508,22 +631,22 @@ template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType
 __forceinline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::get(IndexType eIndex) const
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
-	return _get<bINLINE_BOOL, SIZE>(eIndex - First());
+	return _get<bINLINE, SIZE>(eIndex - First());
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::set(IndexType eIndex, T eValue)
 {
 	FAssert(eIndex >= First() && eIndex < getLength());
-	if (!bINLINE_BOOL && m_pArrayFull == NULL)
+	if (!bINLINE && m_pArrayFull == NULL)
 	{
 		if (eValue == DEFAULT) 
 		{
 			return;
 		}
-		_allocate<bINLINE_BOOL, SIZE>();
+		_allocate<bINLINE, SIZE>();
 	}
-	_set<bINLINE_BOOL, SIZE>(eIndex - First(), eValue);
+	_set<bINLINE, SIZE>(eIndex - First(), eValue);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
@@ -572,7 +695,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::addAll(T e
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::isAllocated() const
 {
-	return bINLINE_BOOL || m_pArrayFull != NULL;
+	return bINLINE || m_pArrayFull != NULL;
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
@@ -590,7 +713,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 		return false;
 	}
 
-	if (m_pArrayFull != NULL)
+	if (bINLINE || m_pArrayFull != NULL)
 	{
 		if (SIZE == ENUMMAP_SIZE_BOOL)
 		{
@@ -616,7 +739,10 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 		// now we cheat and alter data despite being const.
 		// We just detected all data to be of the default value, meaning the array is not used.
 		// Release the data to save memory. It won't change how the outside world view the EnumMap.
-		(const_cast <EnumMapBase*> (this))->reset();
+		if (!bINLINE)
+		{
+			(const_cast <EnumMapBase*> (this))->reset();
+		}
 	}
 	return false;
 }
@@ -624,6 +750,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() const
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (m_pArray == NULL)
 	{
@@ -635,6 +762,7 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() cons
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() const
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (m_pArray == NULL)
 	{
@@ -668,7 +796,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::keepMax(In
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::reset()
 {
-	if (bINLINE_BOOL)
+	if (bINLINE)
 	{
 		// can't free inlined memory. Set it all to default instead
 		setAll((T)DEFAULT);
@@ -683,49 +811,17 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::reset()
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::setAll(T eValue)
 {
-	if (bINLINE_BOOL)
-	{
-		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
-		{
-			m_InlineBoolArray[i] = eValue ? MAX_UNSIGNED_INT : 0;
-		}
-		return;
-	}
-
-	if (SIZE == ENUMMAP_SIZE_BOOL)
-	{
-		if (m_pArrayBool == NULL)
-		{
-			if (eValue == DEFAULT)
-			{
-				return;
-			}
-			m_pArrayBool = new unsigned int[numElements()];
-		}
-		memset(m_pArrayBool, eValue ? 0xFF : 0, numElements());
-		return;
-	}
-
-	if (m_pArrayChar == NULL)
+	if (!bINLINE && m_pArrayChar == NULL)
 	{
 		if (eValue == DEFAULT)
 		{
 			return;
 		}
-		m_pArrayChar = new char[numElements() * SIZE_OF_T];
-	}
-
-	if (SIZE_OF_T == 1 || eValue == 0)
-	{
-		memset(m_pArrayFull, eValue, numElements() * SIZE_OF_T);
-	}
-	else if (SIZE == 2)
-	{
-		std::fill_n(m_pArrayShort, numElements(), eValue);
+		_allocate<bINLINE, SIZE>(eValue);
 	}
 	else
 	{
-		std::fill_n(m_pArrayFull, numElements(), eValue);
+		_setAll<bINLINE, SIZE>(eValue);
 	}
 }
 
@@ -738,16 +834,9 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyToVect
 
 	if (isAllocated())
 	{
-		if (SIZE == 0)
+		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
 		{
-			memcpy(&thisVector[0], m_pArrayFull, getLength() * sizeof(T));
-		}
-		else
-		{
-			for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
-			{
-				thisVector[eIndex] = get(eIndex);
-			}
+			thisVector[eIndex] = get(eIndex);
 		}
 	}
 }
@@ -758,21 +847,9 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::copyFromVe
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	FAssert((unsigned int)getLength() == thisVector.size());
 
-	if (!isAllocated())
+	for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
 	{
-		_allocate<bINLINE_BOOL, SIZE>();
-	}
-
-	if (SIZE == ENUMMAP_SIZE_NATIVE)
-	{
-		memcpy(m_pArrayFull, &thisVector[0], getLength() * sizeof(T));
-	}
-	else
-	{
-		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
-		{
-			set(eIndex, thisVector[eIndex]);
-		}
+		set(eIndex, thisVector[eIndex]);
 	}
 }
 
@@ -1017,6 +1094,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Write(CvS
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator=(const EnumMapBase &rhs)
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
@@ -1034,6 +1112,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
@@ -1053,6 +1132,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator+=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
@@ -1072,6 +1152,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
 inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator-=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs)
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (rhs.isAllocated())
 	{
@@ -1091,6 +1172,7 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>& EnumMapBase<Ind
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator==(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (!rhs.isAllocated() && !isAllocated())
 	{
@@ -1115,6 +1197,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator==
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType> template<class T2, int DEFAULT2>
 inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::operator!=(const EnumMapBase<IndexType, T2, DEFAULT2, T_SUBSET, LengthType> &rhs) const
 {
+	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
 	if (!rhs.isAllocated() && !isAllocated())
 	{
