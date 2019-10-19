@@ -199,6 +199,12 @@ enum SavegameVariableTypes
 	PlayerSave_MissionaryThresholdMultiplier,
 	PlayerSave_ProfessionEquipmentModifier,
 	PlayerSave_TraitCount,
+	PlayerSave_ScriptData,
+
+	PlayerSave_Civics,
+
+	PlayerSave_ImprovementYieldChange,
+	PlayerSave_BuildingYieldChange,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -320,6 +326,13 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_MissionaryThresholdMultiplier: return "PlayerSave_MissionaryThresholdMultiplier";
 	case PlayerSave_ProfessionEquipmentModifier: return "PlayerSave_ProfessionEquipmentModifier";
 	case PlayerSave_TraitCount: return "PlayerSave_TraitCount";
+	
+	case PlayerSave_ScriptData: return "PlayerSave_ScriptData";
+
+	case PlayerSave_Civics: return "PlayerSave_Civics";
+
+	case PlayerSave_ImprovementYieldChange: return "PlayerSave_ImprovementYieldChange";
+	case PlayerSave_BuildingYieldChange: return "PlayerSave_BuildingYieldChange";
 	}
 	return "";
 }
@@ -454,6 +467,13 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_em_iMissionaryThresholdMultiplier.reset();
 	m_em_iProfessionEquipmentModifier.reset();
 	m_em_iTraitCount.reset();
+
+	m_szScriptData.clear();
+
+	m_em_eCivics.reset();
+
+	m_em_iImprovementYieldChange.reset();
+	m_em_iBuildingYieldChange.reset();
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -589,6 +609,13 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_MissionaryThresholdMultiplier: reader.Read(m_em_iMissionaryThresholdMultiplier); break;
 		case PlayerSave_ProfessionEquipmentModifier: reader.Read(m_em_iProfessionEquipmentModifier); break;
 		case PlayerSave_TraitCount: reader.Read(m_em_iTraitCount); break;
+
+		case PlayerSave_ScriptData: reader.Read(m_szScriptData); break;
+
+		case PlayerSave_Civics: reader.Read(m_em_eCivics); break;
+
+		case PlayerSave_ImprovementYieldChange: reader.Read(m_em_iImprovementYieldChange); break;
+		case PlayerSave_BuildingYieldChange: reader.Read(m_em_iBuildingYieldChange); break;
 		}
 	}
 	
@@ -719,6 +746,14 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_MissionaryThresholdMultiplier, m_em_iMissionaryThresholdMultiplier);
 	writer.Write(PlayerSave_ProfessionEquipmentModifier, m_em_iProfessionEquipmentModifier);
 	writer.Write(PlayerSave_TraitCount, m_em_iTraitCount);
+
+	writer.Write(PlayerSave_ScriptData, m_szScriptData);
+
+	writer.Write(PlayerSave_Civics, m_em_eCivics);
+
+	writer.Write(PlayerSave_ImprovementYieldChange, m_em_iImprovementYieldChange);
+	writer.Write(PlayerSave_BuildingYieldChange, m_em_iBuildingYieldChange);
+
 
 	writer.Write(PlayerSave_END);
 }

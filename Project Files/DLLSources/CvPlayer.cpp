@@ -67,11 +67,6 @@ CvPlayer::CvPlayer()
 
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
-	m_paeCivics = NULL;
-
-	m_ppiImprovementYieldChange = NULL;
-	m_ppiBuildingYieldChange = NULL;
-
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	m_cache_YieldEquipmentAmount = new YieldArray<unsigned short>[GC.getNumProfessionInfos()];
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
@@ -242,32 +237,12 @@ void CvPlayer::init(PlayerTypes eID)
 
 void CvPlayer::uninit()
 {
-	int iI;
-
-	SAFE_DELETE_ARRAY(m_paeCivics);
-
 	m_triggersFired.clear();
 
 	// PatchMod: Achievements START
 	m_achievesGained.clear();
 	m_achievesTurn.clear();
 	// PatchMod: Achievements END
-	if (m_ppiImprovementYieldChange != NULL)
-	{
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			SAFE_DELETE_ARRAY(m_ppiImprovementYieldChange[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_ppiImprovementYieldChange);
-	}
-	if (m_ppiBuildingYieldChange != NULL)
-	{
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			SAFE_DELETE_ARRAY(m_ppiBuildingYieldChange[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_ppiBuildingYieldChange);
-	}
 
 	m_groupCycle.clear();
 	m_aszCityNames.clear();
@@ -298,7 +273,6 @@ void CvPlayer::uninit()
 // Initializes data members that are serialized.
 void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 {
-	int iI, iJ;
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -331,41 +305,9 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
 	m_uiStartTime = 0;
 
-	
-
-	m_szScriptData = "";
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg(m_paeCivics==NULL, "about to leak memory, CvPlayer::m_paeCivics");
-		m_paeCivics = new CivicTypes [GC.getNumCivicOptionInfos()];
-		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-		{
-			m_paeCivics[iI] = NO_CIVIC;
-		}
-
-		FAssertMsg(m_ppiImprovementYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiImprovementYieldChange");
-		m_ppiImprovementYieldChange = new int*[GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			m_ppiImprovementYieldChange[iI] = new int[NUM_YIELD_TYPES];
-			for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
-			{
-				m_ppiImprovementYieldChange[iI][iJ] = 0;
-			}
-		}
-
-		FAssertMsg(m_ppiBuildingYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiBuildingYieldChange");
-		m_ppiBuildingYieldChange = new int*[GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_ppiBuildingYieldChange[iI] = new int[NUM_YIELD_TYPES];
-			for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
-			{
-				m_ppiBuildingYieldChange[iI][iJ] = 0;
-			}
-		}
-
 		m_mapEventsOccured.clear();
 		m_mapEventCountdown.clear();
 		m_aFreeUnitCombatPromotions.clear();
@@ -8812,7 +8754,7 @@ CivicTypes CvPlayer::getCivic(CivicOptionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumCivicOptionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paeCivics[eIndex];
+	return m_em_eCivics.get(eIndex);
 }
 
 void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
@@ -8821,7 +8763,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
 
 	if (eOldCivic != eNewValue)
 	{
-		m_paeCivics[eIndex] = eNewValue;
+		m_em_eCivics.set(eIndex, eNewValue);
 
 		if (eOldCivic != NO_CIVIC)
 		{
@@ -8873,7 +8815,7 @@ int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIn
 	FAssertMsg(eIndex1 < GC.getNumImprovementInfos(), "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_ppiImprovementYieldChange[eIndex1][eIndex2];
+	return m_em_iImprovementYieldChange.get(eIndex1, eIndex2);
 }
 
 
@@ -8886,7 +8828,7 @@ void CvPlayer::changeImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes
 
 	if (iChange != 0)
 	{
-		m_ppiImprovementYieldChange[eIndex1][eIndex2] += iChange;
+		m_em_iImprovementYieldChange.add(eIndex1, eIndex2, iChange);
 		FAssert(getImprovementYieldChange(eIndex1, eIndex2) >= 0);
 
 		updateYield();
@@ -8899,7 +8841,7 @@ int CvPlayer::getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTyp
 	FAssert(eBuildingClass < GC.getNumBuildingClassInfos());
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_ppiBuildingYieldChange[eBuildingClass][eYield];
+	return m_em_iBuildingYieldChange.get(eBuildingClass, eYield);
 }
 
 void CvPlayer::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange)
@@ -8911,7 +8853,7 @@ void CvPlayer::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, Yiel
 
 	if (iChange != 0)
 	{
-		m_ppiBuildingYieldChange[eBuildingClass][eYield] += iChange;
+		m_em_iBuildingYieldChange.add(eBuildingClass, eYield, iChange);
 		FAssert(getBuildingYieldChange(eBuildingClass, eYield) >= 0);
 
 		updateYield();
@@ -12323,26 +12265,7 @@ void CvPlayer::setPbemNewTurn(bool bNew)
 //
 void CvPlayer::read(FDataStreamBase* pStream)
 {
-	int iI;
-
 	// Init data before load
-
-	pStream->ReadString(m_szScriptData);
-
-	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Read((int*)&m_paeCivics[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppiImprovementYieldChange[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
-	}
 
 	// The CivEffect cache isn't saved. Instead it's recalculated on load.
 	// This will make it adapt to changed xml settings.
@@ -12686,24 +12609,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {
-	int iI;
-
-	pStream->WriteString(m_szScriptData);
-
-	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Write(m_paeCivics[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Write(NUM_YIELD_TYPES, m_ppiImprovementYieldChange[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
-	{
-		pStream->Write(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
-	}
 
 	m_groupCycle.Write(pStream);
 	{
