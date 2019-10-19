@@ -1001,29 +1001,29 @@ protected:
 	EnumMap<YieldTypes, int> m_em_iTaxYieldModifierCount;
 	EnumMap<YieldTypes, int> m_em_iYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
 
-	bool* m_abYieldEuropeTradable;
-	bool* m_abFeatAccomplished;
-	bool* m_abOptions;
+	EnumMap<YieldTypes, bool> m_em_bYieldEuropeTradable;
+	EnumMap<FeatTypes, bool> m_em_bFeatAccomplished;
+	EnumMap<PlayerOptionTypes, bool> m_em_bOptions;
 
 	CvString m_szScriptData;
 
-	int* m_paiImprovementCount;
-	int* m_paiFreeBuildingCount;
-	int* m_paiUnitClassCount;
-	int* m_paiUnitClassMaking;
-	int* m_paiUnitClassImmigrated;
-	int* m_paiUnitMoveChange;
-	int* m_paiUnitStrengthModifier;
-	int* m_paiProfessionCombatChange;
-	int* m_paiProfessionMoveChange;
-	int* m_paiBuildingClassCount;
-	int* m_paiBuildingClassMaking;
-	int* m_paiHurryCount;
-	int* m_paiSpecialBuildingNotRequiredCount;
-	int* m_aiMissionaryPoints;
-	int* m_aiMissionaryThresholdMultiplier;
-	int* m_aiProfessionEquipmentModifier;
-	int* m_aiTraitCount;
+	EnumMap<ImprovementTypes, int> m_em_iImprovementCount;
+	EnumMap<BuildingTypes, int> m_em_iFreeBuildingCount;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassCount;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassMaking;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassImmigrated;
+	EnumMap<UnitClassTypes, int> m_em_iUnitMoveChange;
+	EnumMap<UnitClassTypes, int> m_em_iUnitStrengthModifier;
+	EnumMap<ProfessionTypes, int> m_em_iProfessionCombatChange;
+	EnumMap<ProfessionTypes, int> m_em_iProfessionMoveChange;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassCount;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassMaking;
+	EnumMap<HurryTypes, int> m_em_iHurryCount;
+	EnumMap<SpecialBuildingTypes, int> m_em_iSpecialBuildingNotRequiredCount;
+	EnumMap<PlayerTypes, int> m_em_iMissionaryPoints;
+	EnumMap<PlayerTypes, int> m_em_iMissionaryThresholdMultiplier;
+	EnumMap<ProfessionTypes, int> m_em_iProfessionEquipmentModifier;
+	EnumMap<TraitTypes, int> m_em_iTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<unsigned short> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();

@@ -178,6 +178,28 @@ enum SavegameVariableTypes
 	PlayerSave_TaxYieldModifierCount,
 	PlayerSave_YieldScoreTotal,
 
+	PlayerSave_YieldEuropeTradable,
+	PlayerSave_FeatAccomplished,
+	PlayerSave_Options,
+
+	PlayerSave_ImprovementCount,
+	PlayerSave_FreeBuildingCount,
+	PlayerSave_UnitClassCount,
+	PlayerSave_UnitClassMaking,
+	PlayerSave_UnitClassImmigrated,
+	PlayerSave_UnitMoveChange,
+	PlayerSave_UnitStrengthModifier,
+	PlayerSave_ProfessionCombatChange,
+	PlayerSave_ProfessionMoveChange,
+	PlayerSave_BuildingClassCount,
+	PlayerSave_BuildingClassMaking,
+	PlayerSave_HurryCount,
+	PlayerSave_SpecialBuildingNotRequiredCount,
+	PlayerSave_MissionaryPoints,
+	PlayerSave_MissionaryThresholdMultiplier,
+	PlayerSave_ProfessionEquipmentModifier,
+	PlayerSave_TraitCount,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -276,6 +298,28 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_YieldBoughtTotal: return "PlayerSave_YieldBoughtTotal";
 	case PlayerSave_TaxYieldModifierCount: return "PlayerSave_TaxYieldModifierCount";
 	case PlayerSave_YieldScoreTotal: return "PlayerSave_YieldScoreTotal";
+
+	case PlayerSave_YieldEuropeTradable: return "PlayerSave_YieldEuropeTradable";
+	case PlayerSave_FeatAccomplished: return "PlayerSave_FeatAccomplished";
+	case PlayerSave_Options: return "PlayerSave_Options";
+
+	case PlayerSave_ImprovementCount: return "PlayerSave_ImprovementCount";
+	case PlayerSave_FreeBuildingCount: return "PlayerSave_FreeBuildingCount";
+	case PlayerSave_UnitClassCount: return "PlayerSave_UnitClassCount";
+	case PlayerSave_UnitClassMaking: return "PlayerSave_UnitClassMaking";
+	case PlayerSave_UnitClassImmigrated: return "PlayerSave_UnitClassImmigrated";
+	case PlayerSave_UnitMoveChange: return "PlayerSave_UnitMoveChange";
+	case PlayerSave_UnitStrengthModifier: return "PlayerSave_UnitStrengthModifier";
+	case PlayerSave_ProfessionCombatChange: return "PlayerSave_ProfessionCombatChange";
+	case PlayerSave_ProfessionMoveChange: return "PlayerSave_ProfessionMoveChange";
+	case PlayerSave_BuildingClassCount: return "PlayerSave_BuildingClassCount";
+	case PlayerSave_BuildingClassMaking: return "PlayerSave_BuildingClassMaking";
+	case PlayerSave_HurryCount: return "PlayerSave_HurryCount";
+	case PlayerSave_SpecialBuildingNotRequiredCount: return "PlayerSave_SpecialBuildingNotRequiredCount";
+	case PlayerSave_MissionaryPoints: return "PlayerSave_MissionaryPoints";
+	case PlayerSave_MissionaryThresholdMultiplier: return "PlayerSave_MissionaryThresholdMultiplier";
+	case PlayerSave_ProfessionEquipmentModifier: return "PlayerSave_ProfessionEquipmentModifier";
+	case PlayerSave_TraitCount: return "PlayerSave_TraitCount";
 	}
 	return "";
 }
@@ -388,6 +432,28 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_em_iYieldBoughtTotal.reset();
 	m_em_iTaxYieldModifierCount.reset();
 	m_em_iYieldScoreTotal.reset();
+
+	m_em_bYieldEuropeTradable.reset();
+	m_em_bFeatAccomplished.reset();
+	m_em_bOptions.reset();
+
+	m_em_iImprovementCount.reset();
+	m_em_iFreeBuildingCount.reset();
+	m_em_iUnitClassCount.reset();
+	m_em_iUnitClassMaking.reset();
+	m_em_iUnitClassImmigrated.reset();
+	m_em_iUnitMoveChange.reset();
+	m_em_iUnitStrengthModifier.reset();
+	m_em_iProfessionCombatChange.reset();
+	m_em_iProfessionMoveChange.reset();
+	m_em_iBuildingClassCount.reset();
+	m_em_iBuildingClassMaking.reset();
+	m_em_iHurryCount.reset();
+	m_em_iSpecialBuildingNotRequiredCount.reset();
+	m_em_iMissionaryPoints.reset();
+	m_em_iMissionaryThresholdMultiplier.reset();
+	m_em_iProfessionEquipmentModifier.reset();
+	m_em_iTraitCount.reset();
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -501,6 +567,28 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_YieldBoughtTotal: reader.Read(m_em_iYieldBoughtTotal); break;
 		case PlayerSave_TaxYieldModifierCount: reader.Read(m_em_iTaxYieldModifierCount); break;
 		case PlayerSave_YieldScoreTotal: reader.Read(m_em_iYieldScoreTotal); break;
+
+		case PlayerSave_YieldEuropeTradable: reader.Read(m_em_bYieldEuropeTradable); break;
+		case PlayerSave_FeatAccomplished: reader.Read(m_em_bFeatAccomplished); break;
+		case PlayerSave_Options: reader.Read(m_em_bOptions); break;
+
+		case PlayerSave_ImprovementCount: reader.Read(m_em_iImprovementCount); break;
+		case PlayerSave_FreeBuildingCount: reader.Read(m_em_iFreeBuildingCount); break;
+		case PlayerSave_UnitClassCount: reader.Read(m_em_iUnitClassCount); break;
+		case PlayerSave_UnitClassMaking: reader.Read(m_em_iUnitClassMaking); break;
+		case PlayerSave_UnitClassImmigrated: reader.Read(m_em_iUnitClassImmigrated); break;
+		case PlayerSave_UnitMoveChange: reader.Read(m_em_iUnitMoveChange); break;
+		case PlayerSave_UnitStrengthModifier: reader.Read(m_em_iUnitStrengthModifier); break;
+		case PlayerSave_ProfessionCombatChange: reader.Read(m_em_iProfessionCombatChange); break;
+		case PlayerSave_ProfessionMoveChange: reader.Read(m_em_iProfessionMoveChange); break;
+		case PlayerSave_BuildingClassCount: reader.Read(m_em_iBuildingClassCount); break;
+		case PlayerSave_BuildingClassMaking: reader.Read(m_em_iBuildingClassMaking); break;
+		case PlayerSave_HurryCount: reader.Read(m_em_iHurryCount); break;
+		case PlayerSave_SpecialBuildingNotRequiredCount: reader.Read(m_em_iSpecialBuildingNotRequiredCount); break;
+		case PlayerSave_MissionaryPoints: reader.Read(m_em_iMissionaryPoints); break;
+		case PlayerSave_MissionaryThresholdMultiplier: reader.Read(m_em_iMissionaryThresholdMultiplier); break;
+		case PlayerSave_ProfessionEquipmentModifier: reader.Read(m_em_iProfessionEquipmentModifier); break;
+		case PlayerSave_TraitCount: reader.Read(m_em_iTraitCount); break;
 		}
 	}
 	
@@ -609,6 +697,28 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_YieldBoughtTotal, m_em_iYieldBoughtTotal);
 	writer.Write(PlayerSave_TaxYieldModifierCount, m_em_iTaxYieldModifierCount);
 	writer.Write(PlayerSave_YieldScoreTotal, m_em_iYieldScoreTotal);
+
+	writer.Write(PlayerSave_YieldEuropeTradable, m_em_bYieldEuropeTradable);
+	writer.Write(PlayerSave_FeatAccomplished, m_em_bFeatAccomplished);
+	writer.Write(PlayerSave_Options, m_em_bOptions);
+
+	writer.Write(PlayerSave_ImprovementCount, m_em_iImprovementCount);
+	writer.Write(PlayerSave_FreeBuildingCount, m_em_iFreeBuildingCount);
+	writer.Write(PlayerSave_UnitClassCount, m_em_iUnitClassCount);
+	writer.Write(PlayerSave_UnitClassMaking, m_em_iUnitClassMaking);
+	writer.Write(PlayerSave_UnitClassImmigrated, m_em_iUnitClassImmigrated);
+	writer.Write(PlayerSave_UnitMoveChange, m_em_iUnitMoveChange);
+	writer.Write(PlayerSave_UnitStrengthModifier, m_em_iUnitStrengthModifier);
+	writer.Write(PlayerSave_ProfessionCombatChange, m_em_iProfessionCombatChange);
+	writer.Write(PlayerSave_ProfessionMoveChange, m_em_iProfessionMoveChange);
+	writer.Write(PlayerSave_BuildingClassCount, m_em_iBuildingClassCount);
+	writer.Write(PlayerSave_BuildingClassMaking, m_em_iBuildingClassMaking);
+	writer.Write(PlayerSave_HurryCount, m_em_iHurryCount);
+	writer.Write(PlayerSave_SpecialBuildingNotRequiredCount, m_em_iSpecialBuildingNotRequiredCount);
+	writer.Write(PlayerSave_MissionaryPoints, m_em_iMissionaryPoints);
+	writer.Write(PlayerSave_MissionaryThresholdMultiplier, m_em_iMissionaryThresholdMultiplier);
+	writer.Write(PlayerSave_ProfessionEquipmentModifier, m_em_iProfessionEquipmentModifier);
+	writer.Write(PlayerSave_TraitCount, m_em_iTraitCount);
 
 	writer.Write(PlayerSave_END);
 }

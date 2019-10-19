@@ -40,29 +40,6 @@
 
 CvPlayer::CvPlayer()
 {
-	m_aiMissionaryPoints = new int[MAX_PLAYERS];
-	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
-
-	m_abYieldEuropeTradable = new bool[NUM_YIELD_TYPES];
-	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
-	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
-
-	m_paiImprovementCount = NULL;
-	m_paiFreeBuildingCount = NULL;
-	m_paiUnitClassCount = NULL;
-	m_paiUnitClassMaking = NULL;
-	m_paiUnitClassImmigrated = NULL;
-	m_paiUnitMoveChange = NULL;
-	m_paiUnitStrengthModifier = NULL;
-	m_paiProfessionCombatChange = NULL;
-	m_paiProfessionMoveChange = NULL;
-	m_paiBuildingClassCount = NULL;
-	m_paiBuildingClassMaking = NULL;
-	m_paiHurryCount = NULL;
-	m_paiSpecialBuildingNotRequiredCount = NULL;
-	m_aiProfessionEquipmentModifier = NULL;
-	m_aiTraitCount = NULL;
-
 	// R&R, ray, Bargaining - START
 	m_bWillingToBargain = false;
 	m_iTimeNoTrade = 0;
@@ -105,13 +82,6 @@ CvPlayer::CvPlayer()
 CvPlayer::~CvPlayer()
 {
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiMissionaryPoints);
-	SAFE_DELETE_ARRAY(m_aiMissionaryThresholdMultiplier);
-	SAFE_DELETE_ARRAY(m_abYieldEuropeTradable);
-	SAFE_DELETE_ARRAY(m_abFeatAccomplished);
-	SAFE_DELETE_ARRAY(m_abOptions);
-
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	if (m_cache_YieldEquipmentAmount != NULL)
 	{
@@ -274,22 +244,6 @@ void CvPlayer::uninit()
 {
 	int iI;
 
-	SAFE_DELETE_ARRAY(m_paiImprovementCount);
-	SAFE_DELETE_ARRAY(m_paiFreeBuildingCount);
-	SAFE_DELETE_ARRAY(m_paiUnitClassCount);
-	SAFE_DELETE_ARRAY(m_paiUnitClassMaking);
-	SAFE_DELETE_ARRAY(m_paiUnitClassImmigrated);
-	SAFE_DELETE_ARRAY(m_paiUnitMoveChange);
-	SAFE_DELETE_ARRAY(m_paiUnitStrengthModifier);
-	SAFE_DELETE_ARRAY(m_paiProfessionCombatChange);
-	SAFE_DELETE_ARRAY(m_paiProfessionMoveChange);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassCount);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassMaking);
-	SAFE_DELETE_ARRAY(m_paiHurryCount);
-	SAFE_DELETE_ARRAY(m_paiSpecialBuildingNotRequiredCount);
-	SAFE_DELETE_ARRAY(m_aiProfessionEquipmentModifier);
-	SAFE_DELETE_ARRAY(m_aiTraitCount);
-
 	SAFE_DELETE_ARRAY(m_paeCivics);
 
 	m_triggersFired.clear();
@@ -377,118 +331,17 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
 	m_uiStartTime = 0;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_abYieldEuropeTradable[iI] = true;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; ++iI)
-	{
-		m_aiMissionaryPoints[iI] = 0;
-		m_aiMissionaryThresholdMultiplier[iI] = 100;
-	}
-
-	for (iI = 0; iI < NUM_FEAT_TYPES; iI++)
-	{
-		m_abFeatAccomplished[iI] = false;
-	}
-
-	for (iI = 0; iI < NUM_PLAYEROPTION_TYPES; iI++)
-	{
-		m_abOptions[iI] = false;
-	}
+	
 
 	m_szScriptData = "";
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg(0 < GC.getNumImprovementInfos(), "GC.getNumImprovementInfos() is not greater than zero but it is used to allocate memory in CvPlayer::reset");
-		FAssertMsg(m_paiImprovementCount==NULL, "about to leak memory, CvPlayer::m_paiImprovementCount");
-		m_paiImprovementCount = new int [GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			m_paiImprovementCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiFreeBuildingCount==NULL, "about to leak memory, CvPlayer::m_paiFreeBuildingCount");
-		m_paiFreeBuildingCount = new int [GC.getNumBuildingInfos()];
-		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
-		{
-			m_paiFreeBuildingCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiUnitClassCount==NULL, "about to leak memory, CvPlayer::m_paiUnitClassCount");
-		m_paiUnitClassCount = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitClassMaking==NULL, "about to leak memory, CvPlayer::m_paiUnitClassMaking");
-		m_paiUnitClassMaking = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitClassImmigrated==NULL, "about to leak memory, CvPlayer::m_paiUnitClassImmigrated");
-		m_paiUnitClassImmigrated = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitMoveChange==NULL, "about to leak memory, CvPlayer::m_paiUnitMoveChange");
-		m_paiUnitMoveChange = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitStrengthModifier==NULL, "about to leak memory, CvPlayer::m_paiUnitStrengthModifier");
-		m_paiUnitStrengthModifier = new int [GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiUnitClassCount[iI] = 0;
-			m_paiUnitClassMaking[iI] = 0;
-			m_paiUnitClassImmigrated[iI] = 0;
-			m_paiUnitMoveChange[iI] = 0;
-			m_paiUnitStrengthModifier[iI] = 0;
-		}
-
-		FAssertMsg(m_paiProfessionCombatChange==NULL, "about to leak memory, CvPlayer::m_paiProfessionMoveChange");
-		m_paiProfessionCombatChange = new int [GC.getNumProfessionInfos()];
-		FAssertMsg(m_paiProfessionMoveChange==NULL, "about to leak memory, CvPlayer::m_paiProfessionMoveChange");
-		m_paiProfessionMoveChange = new int [GC.getNumProfessionInfos()];
-		for (iI = 0; iI < GC.getNumProfessionInfos(); iI++)
-		{
-			m_paiProfessionCombatChange[iI] = 0;
-			m_paiProfessionMoveChange[iI] = 0;
-		}
-
-		FAssertMsg(m_paiBuildingClassCount==NULL, "about to leak memory, CvPlayer::m_paiBuildingClassCount");
-		m_paiBuildingClassCount = new int [GC.getNumBuildingClassInfos()];
-		FAssertMsg(m_paiBuildingClassMaking==NULL, "about to leak memory, CvPlayer::m_paiBuildingClassMaking");
-		m_paiBuildingClassMaking = new int [GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_paiBuildingClassCount[iI] = 0;
-			m_paiBuildingClassMaking[iI] = 0;
-		}
-
-		FAssertMsg(m_paiHurryCount==NULL, "about to leak memory, CvPlayer::m_paiHurryCount");
-		m_paiHurryCount = new int [GC.getNumHurryInfos()];
-		for (iI = 0; iI < GC.getNumHurryInfos(); iI++)
-		{
-			m_paiHurryCount[iI] = GC.getHurryInfo((HurryTypes) iI).isStarting() ? 1 : 0;
-		}
-
-		FAssertMsg(m_paiSpecialBuildingNotRequiredCount==NULL, "about to leak memory, CvPlayer::m_paiSpecialBuildingNotRequiredCount");
-		m_paiSpecialBuildingNotRequiredCount = new int [GC.getNumSpecialBuildingInfos()];
-		for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-		{
-			m_paiSpecialBuildingNotRequiredCount[iI] = 0;
-		}
-
 		FAssertMsg(m_paeCivics==NULL, "about to leak memory, CvPlayer::m_paeCivics");
 		m_paeCivics = new CivicTypes [GC.getNumCivicOptionInfos()];
 		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
 		{
 			m_paeCivics[iI] = NO_CIVIC;
-		}
-
-		FAssertMsg(m_aiProfessionEquipmentModifier==NULL, "about to leak memory, CvPlayer::m_aiProfessionEquipmentModifier");
-		m_aiProfessionEquipmentModifier = new int[GC.getNumProfessionInfos()];
-		for (iI = 0; iI < GC.getNumProfessionInfos(); iI++)
-		{
-			m_aiProfessionEquipmentModifier[iI] = 0;
-		}
-
-		FAssertMsg(m_aiTraitCount==NULL, "about to leak memory, CvPlayer::m_aiTraitCount");
-		m_aiTraitCount = new int[GC.getNumTraitInfos()];
-		for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
-		{
-			m_aiTraitCount[iI] = 0;
 		}
 
 		FAssertMsg(m_ppiImprovementYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiImprovementYieldChange");
@@ -1993,13 +1846,13 @@ bool CvPlayer::hasTrait(TraitTypes eTrait) const
 int CvPlayer::getTraitCount(TraitTypes eTrait) const
 {
 	FAssert(eTrait >= 0 && eTrait < GC.getNumTraitInfos());
-	return m_aiTraitCount[eTrait];
+	return m_em_iTraitCount.get(eTrait);
 }
 
 void CvPlayer::changeTraitCount(TraitTypes eTrait, int iChange)
 {
 	FAssert(eTrait >= 0 && eTrait < GC.getNumTraitInfos());
-	m_aiTraitCount[eTrait] += iChange;
+	m_em_iTraitCount.add(eTrait, iChange);
 	FAssert(getTraitCount(eTrait) >= 0);
 }
 
@@ -8495,7 +8348,7 @@ bool CvPlayer::isYieldEuropeTradable(YieldTypes eYield) const
 		return false;
 	}
 
-	return m_abYieldEuropeTradable[eYield];
+	return m_em_bYieldEuropeTradable.get(eYield);
 }
 
 void CvPlayer::setYieldEuropeTradable(YieldTypes eYield, bool bTradeable)
@@ -8504,7 +8357,7 @@ void CvPlayer::setYieldEuropeTradable(YieldTypes eYield, bool bTradeable)
 
 	bool bOldTradeable = isYieldEuropeTradable(eYield);
 
-	m_abYieldEuropeTradable[eYield] = bTradeable;
+	m_em_bYieldEuropeTradable.set(eYield, bTradeable);
 
 	if (bOldTradeable != isYieldEuropeTradable(eYield))
 	{
@@ -8524,7 +8377,7 @@ bool CvPlayer::isFeatAccomplished(FeatTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_FEAT_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abFeatAccomplished[eIndex];
+	return m_em_bFeatAccomplished.get(eIndex);
 }
 
 
@@ -8532,7 +8385,7 @@ void CvPlayer::setFeatAccomplished(FeatTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_FEAT_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abFeatAccomplished[eIndex] = bNewValue;
+	m_em_bFeatAccomplished.set(eIndex, bNewValue);
 }
 
 bool CvPlayer::shouldDisplayFeatPopup(FeatTypes eIndex) const
@@ -8569,7 +8422,7 @@ bool CvPlayer::isOption(PlayerOptionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_PLAYEROPTION_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abOptions[eIndex];
+	return m_em_bOptions.get(eIndex);
 }
 
 
@@ -8577,7 +8430,7 @@ void CvPlayer::setOption(PlayerOptionTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_PLAYEROPTION_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abOptions[eIndex] = bNewValue;
+	m_em_bOptions.set(eIndex, bNewValue);
 }
 
 bool CvPlayer::isPlayable() const
@@ -8594,7 +8447,7 @@ int CvPlayer::getImprovementCount(ImprovementTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumImprovementInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiImprovementCount[eIndex];
+	return m_em_iImprovementCount.get(eIndex);
 }
 
 
@@ -8602,7 +8455,7 @@ void CvPlayer::changeImprovementCount(ImprovementTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumImprovementInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiImprovementCount[eIndex] = (m_paiImprovementCount[eIndex] + iChange);
+	m_em_iImprovementCount.add(eIndex, iChange);
 	FAssert(getImprovementCount(eIndex) >= 0);
 }
 
@@ -8611,7 +8464,7 @@ int CvPlayer::getFreeBuildingCount(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFreeBuildingCount[eIndex];
+	return m_em_iFreeBuildingCount.get(eIndex);
 }
 
 
@@ -8634,7 +8487,7 @@ void CvPlayer::changeFreeBuildingCount(BuildingTypes eIndex, int iChange)
 	{
 		iOldFreeBuildingCount = getFreeBuildingCount(eIndex);
 
-		m_paiFreeBuildingCount[eIndex] = (m_paiFreeBuildingCount[eIndex] + iChange);
+		m_em_iFreeBuildingCount.add(eIndex, iChange);
 		FAssert(getFreeBuildingCount(eIndex) >= 0);
 
 		if (iOldFreeBuildingCount == 0)
@@ -8661,20 +8514,20 @@ void CvPlayer::changeFreeBuildingCount(BuildingTypes eIndex, int iChange)
 int CvPlayer::getUnitClassCount(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitClassCount[eIndex];
+	return m_em_iUnitClassCount.get(eIndex);
 }
 
 void CvPlayer::changeUnitClassCount(UnitClassTypes eIndex, int iChange)
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	m_paiUnitClassCount[eIndex] += iChange;
+	m_em_iUnitClassCount.add(eIndex, iChange);
 	FAssert(getUnitClassCount(eIndex) >= 0);
 }
 
 int CvPlayer::getUnitClassMaking(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitClassMaking[eIndex];
+	return m_em_iUnitClassMaking.get(eIndex);
 }
 
 
@@ -8684,7 +8537,7 @@ void CvPlayer::changeUnitClassMaking(UnitClassTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiUnitClassMaking[eIndex] += iChange;
+		m_em_iUnitClassMaking.add(eIndex, iChange);
 		FAssert(getUnitClassMaking(eIndex) >= 0);
 
 		if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -8697,7 +8550,7 @@ void CvPlayer::changeUnitClassMaking(UnitClassTypes eIndex, int iChange)
 int CvPlayer::getUnitClassImmigrated(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitClassImmigrated[eIndex];
+	return m_em_iUnitClassImmigrated.get(eIndex);
 }
 
 void CvPlayer::changeUnitClassImmigrated(UnitClassTypes eIndex, int iChange)
@@ -8706,7 +8559,7 @@ void CvPlayer::changeUnitClassImmigrated(UnitClassTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiUnitClassImmigrated[eIndex] += iChange;
+		m_em_iUnitClassImmigrated.add(eIndex, iChange);
 		FAssert(getUnitClassImmigrated(eIndex) >= 0);
 	}
 }
@@ -8719,7 +8572,7 @@ int CvPlayer::getUnitClassCountPlusMaking(UnitClassTypes eIndex) const
 int CvPlayer::getUnitMoveChange(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitMoveChange[eIndex];
+	return m_em_iUnitMoveChange.get(eIndex);
 }
 
 void CvPlayer::changeUnitMoveChange(UnitClassTypes eIndex, int iChange)
@@ -8727,14 +8580,14 @@ void CvPlayer::changeUnitMoveChange(UnitClassTypes eIndex, int iChange)
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
 	if(iChange != 0)
 	{
-		m_paiUnitMoveChange[eIndex] += iChange;
+		m_em_iUnitMoveChange.add(eIndex, iChange);
 	}
 }
 
 int CvPlayer::getUnitStrengthModifier(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitStrengthModifier[eIndex];
+	return m_em_iUnitStrengthModifier.get(eIndex);
 }
 
 void CvPlayer::changeUnitStrengthModifier(UnitClassTypes eIndex, int iChange)
@@ -8742,14 +8595,14 @@ void CvPlayer::changeUnitStrengthModifier(UnitClassTypes eIndex, int iChange)
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
 	if(iChange != 0)
 	{
-		m_paiUnitStrengthModifier[eIndex] += iChange;
+		m_em_iUnitStrengthModifier.add(eIndex, iChange);
 	}
 }
 
 int CvPlayer::getProfessionMoveChange(ProfessionTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	return m_paiProfessionMoveChange[eIndex];
+	return m_em_iProfessionMoveChange.get(eIndex);
 }
 
 void CvPlayer::changeProfessionMoveChange(ProfessionTypes eIndex, int iChange)
@@ -8757,14 +8610,14 @@ void CvPlayer::changeProfessionMoveChange(ProfessionTypes eIndex, int iChange)
 	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
 	if(iChange != 0)
 	{
-		m_paiProfessionMoveChange[eIndex] += iChange;
+		m_em_iProfessionMoveChange.add(eIndex, iChange);
 	}
 }
 
 int CvPlayer::getProfessionCombatChange(ProfessionTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	return m_paiProfessionCombatChange[eIndex];
+	return m_em_iProfessionCombatChange.get(eIndex);
 }
 
 void CvPlayer::changeProfessionCombatChange(ProfessionTypes eIndex, int iChange)
@@ -8801,7 +8654,7 @@ void CvPlayer::changeProfessionCombatChange(ProfessionTypes eIndex, int iChange)
 			}
 		}
 
-		m_paiProfessionCombatChange[eIndex] += iChange;
+		m_em_iProfessionCombatChange.add(eIndex, iChange);
 
 		for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 		{
@@ -8836,14 +8689,14 @@ int CvPlayer::getBuildingClassCount(BuildingClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassCount[eIndex];
+	return m_em_iBuildingClassCount.get(eIndex);
 }
 
 void CvPlayer::changeBuildingClassCount(BuildingClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiBuildingClassCount[eIndex] = (m_paiBuildingClassCount[eIndex] + iChange);
+	m_em_iBuildingClassCount.add(eIndex, iChange);
 	FAssert(getBuildingClassCount(eIndex) >= 0);
 }
 
@@ -8852,7 +8705,7 @@ int CvPlayer::getBuildingClassMaking(BuildingClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassMaking[eIndex];
+	return m_em_iBuildingClassMaking.get(eIndex);
 }
 
 
@@ -8863,7 +8716,7 @@ void CvPlayer::changeBuildingClassMaking(BuildingClassTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiBuildingClassMaking[eIndex] = (m_paiBuildingClassMaking[eIndex] + iChange);
+		m_em_iBuildingClassMaking.add(eIndex, iChange);
 		FAssert(getBuildingClassMaking(eIndex) >= 0);
 
 		if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -8904,7 +8757,7 @@ int CvPlayer::getHurryCount(HurryTypes eIndex) const
 {
 	FAssert(eIndex >= 0);
 	FAssert(eIndex < GC.getNumHurryInfos());
-	return m_paiHurryCount[eIndex];
+	return m_em_iHurryCount.get(eIndex);
 }
 
 
@@ -8918,12 +8771,12 @@ void CvPlayer::changeHurryCount(HurryTypes eIndex, int iChange)
 	FAssert(eIndex >= 0);
 	FAssert(eIndex < GC.getNumHurryInfos());
 
-	int oldHurryCount = m_paiHurryCount[eIndex];
-	m_paiHurryCount[eIndex] += iChange;
+	int oldHurryCount = m_em_iHurryCount.get(eIndex);
+	m_em_iHurryCount.add(eIndex, iChange);
 	FAssert(getHurryCount(eIndex) >= 0);
 
 	// if we just went from 0 to 1 (or the reverse)
-	if ((oldHurryCount > 0) != (m_paiHurryCount[eIndex] > 0))
+	if ((oldHurryCount > 0) != (m_em_iHurryCount.get(eIndex) > 0))
 	{
 		// does this hurry reduce population?
 		if (GC.getHurryInfo(eIndex).getProductionPerPopulation() > 0)
@@ -8937,7 +8790,7 @@ int CvPlayer::getSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex) co
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiSpecialBuildingNotRequiredCount[eIndex];
+	return m_em_iSpecialBuildingNotRequiredCount.get(eIndex);
 }
 
 
@@ -8950,7 +8803,7 @@ void CvPlayer::changeSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiSpecialBuildingNotRequiredCount[eIndex] = (m_paiSpecialBuildingNotRequiredCount[eIndex] + iChange);
+	m_em_iSpecialBuildingNotRequiredCount.add(eIndex, iChange);
 	FAssert(getSpecialBuildingNotRequiredCount(eIndex) >= 0);
 }
 
@@ -12473,43 +12326,8 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	int iI;
 
 	// Init data before load
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	if (uiFlag > 1)
-	{
-		pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
-		pStream->Read(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
-	}
-
-	pStream->Read(NUM_YIELD_TYPES, m_abYieldEuropeTradable);
-	pStream->Read(NUM_FEAT_TYPES, m_abFeatAccomplished);
-	pStream->Read(NUM_PLAYEROPTION_TYPES, m_abOptions);
 
 	pStream->ReadString(m_szScriptData);
-
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but it is expected to be in CvPlayer::read");
-	pStream->Read(GC.getNumImprovementInfos(), m_paiImprovementCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiFreeBuildingCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassMaking);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassImmigrated);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitMoveChange);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitStrengthModifier);
-	pStream->Read(GC.getNumProfessionInfos(), m_paiProfessionCombatChange);
-	pStream->Read(GC.getNumProfessionInfos(), m_paiProfessionMoveChange);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
-	pStream->Read(GC.getNumHurryInfos(), m_paiHurryCount);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	if (uiFlag <= 1)
-	{
-		std::vector<int> aiMissionaryPoints(GC.getNumCivilizationInfos());
-		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
-		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
-	}
-	pStream->Read(GC.getNumProfessionInfos(), m_aiProfessionEquipmentModifier);
-	pStream->Read(GC.getNumTraitInfos(), m_aiTraitCount);
 
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
@@ -12870,34 +12688,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 {
 	int iI;
 
-	uint uiFlag = 3;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
-	pStream->Write(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
-
-	pStream->Write(NUM_YIELD_TYPES, m_abYieldEuropeTradable);
-	pStream->Write(NUM_FEAT_TYPES, m_abFeatAccomplished);
-	pStream->Write(NUM_PLAYEROPTION_TYPES, m_abOptions);
-
 	pStream->WriteString(m_szScriptData);
-
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlayer::write");
-	pStream->Write(GC.getNumImprovementInfos(), m_paiImprovementCount);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiFreeBuildingCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassMaking);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassImmigrated);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitMoveChange);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitStrengthModifier);
-	pStream->Write(GC.getNumProfessionInfos(), m_paiProfessionCombatChange);
-	pStream->Write(GC.getNumProfessionInfos(), m_paiProfessionMoveChange);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
-	pStream->Write(GC.getNumHurryInfos(), m_paiHurryCount);
-	pStream->Write(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	pStream->Write(GC.getNumProfessionInfos(), m_aiProfessionEquipmentModifier);
-	pStream->Write(GC.getNumTraitInfos(), m_aiTraitCount);
 
 	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
 	{
@@ -17758,7 +17549,7 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 int CvPlayer::getMissionaryPoints(PlayerTypes ePlayer) const
 {
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
-	return m_aiMissionaryPoints[ePlayer];
+	return m_em_iMissionaryPoints.get(ePlayer);
 }
 
 void CvPlayer::changeMissionaryPoints(PlayerTypes ePlayer, int iChange)
@@ -17766,21 +17557,21 @@ void CvPlayer::changeMissionaryPoints(PlayerTypes ePlayer, int iChange)
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
 	if(iChange != 0)
 	{
-		m_aiMissionaryPoints[ePlayer] += iChange;
-		FAssert(m_aiMissionaryPoints[ePlayer] >= 0);
+		m_em_iMissionaryPoints.add(ePlayer, iChange);
+		FAssert(m_em_iMissionaryPoints.get(ePlayer) >= 0);
 	}
 }
 
 int CvPlayer::getMissionaryThresholdMultiplier(PlayerTypes ePlayer) const
 {
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
-	return m_aiMissionaryThresholdMultiplier[ePlayer];
+	return m_em_iMissionaryThresholdMultiplier.get(ePlayer);
 }
 
 void CvPlayer::setMissionaryThresholdMultiplier(PlayerTypes ePlayer, int iValue)
 {
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
-	m_aiMissionaryThresholdMultiplier[ePlayer] = iValue;
+	m_em_iMissionaryThresholdMultiplier.set(ePlayer, iValue);
 	FAssert(getMissionaryThresholdMultiplier(ePlayer) > 0);
 }
 
@@ -17901,7 +17692,7 @@ int CvPlayer::getRebelCombatPercent() const
 int CvPlayer::getProfessionEquipmentModifier(ProfessionTypes eProfession) const
 {
 	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
-	return m_aiProfessionEquipmentModifier[eProfession];
+	return m_em_iProfessionEquipmentModifier.get(eProfession);
 }
 
 void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int iValue)
@@ -17952,7 +17743,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			}
 		}
 
-		m_aiProfessionEquipmentModifier[eProfession] = iValue;
+		m_em_iProfessionEquipmentModifier.set(eProfession, iValue);
 
 		for (uint i = 0; i < aProfessionUnits.size(); ++i)
 		{
@@ -22255,7 +22046,7 @@ bool CvPlayer::isYieldAfricaTradable(YieldTypes eYield) const
 		return false;
 	}
 
-	return m_abYieldEuropeTradable[eYield];
+	return m_em_bYieldEuropeTradable.get(eYield);
 }
 /******************************************************/
 
@@ -22311,7 +22102,7 @@ bool CvPlayer::isYieldPortRoyalTradable(YieldTypes eYield) const
 	}
 	
 	return true; // Port Royal is not under the rule of your king
-	//return m_abYieldEuropeTradable[eYield];
+	//return m_em_bYieldEuropeTradable[eYield];
 }
 // R&R, ray, Port Royal - END
 
