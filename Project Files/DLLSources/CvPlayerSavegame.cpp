@@ -346,7 +346,7 @@ int getNumSavedEnumValuesPlayer()
 void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 {
 	m_iNumCombatsWon = defaultNumCombatsWon;
-	m_iNumSeaCombatsWon = m_iNumSeaCombatsWon; 
+	m_iNumSeaCombatsWon = defaultNumSeaCombatsWon; 
 	m_iStartingX = defaultStartingX;
 	m_iStartingY = defaultStartingY;
 	m_iTotalPopulation = defaultTotalPopulation;
