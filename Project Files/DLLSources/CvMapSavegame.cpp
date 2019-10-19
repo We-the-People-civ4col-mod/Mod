@@ -30,9 +30,6 @@ enum SavegameVariableTypes
 	Save_WrapY,
 	Save_UseTwoPlotCities,
 
-	Save_NumBonuses,
-	Save_NumBonusesOnLand,
-
 	Save_Areas,
 
 	Save_Plots,
@@ -62,9 +59,6 @@ const char* getSavedEnumNameMap(SavegameVariableTypes eType)
 	case Save_WrapY: return "Save_WrapY";
 	case Save_UseTwoPlotCities: return "Save_UseTwoPlotCities";
 
-
-	case Save_NumBonuses: return "Save_NumBonuses";
-	case Save_NumBonusesOnLand: return "Save_NumBonusesOnLand";
 	case Save_Areas: return "Save_Areas";
 	case Save_Plots: return "Save_Plots";
 	}
@@ -129,9 +123,6 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_WrapX:               reader.Read(m_bWrapX);              break;
 		case Save_WrapY:               reader.Read(m_bWrapY);              break;
 		
-		case Save_NumBonuses:          reader.Read(m_ja_NumBonuses);       break;
-		case Save_NumBonusesOnLand:    reader.Read(m_ja_NumBonusesOnLand); break;
-
 		case Save_UseTwoPlotCities:
 			reader.Read(m_bUseTwoPlotCities);
 			setCityCatchmentRadius(m_bUseTwoPlotCities ? 1 : 0);
@@ -140,7 +131,7 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_Plots:
 		{
 			FAssertMsg(m_pMapPlots == NULL, "Memory leak");
-			int iNumPlots = numPlotsINLINE();
+			const int iNumPlots = numPlotsINLINE();
 			m_pMapPlots = new CvPlot[iNumPlots];
 			for (int iI = 0; iI < iNumPlots; ++iI)
 			{
@@ -161,6 +152,35 @@ void CvMap::read(CvSavegameReader reader)
 	
 	// Loading done. Set up the cache (if any).
 
+	{
+		// Assign cache for bonuses and improvements in areas and map
+		// Those data are saved in CvPlot, not all 3 classes
+		const int iNumPlots = numPlotsINLINE();
+		for (int iI = 0; iI < iNumPlots; ++iI)
+		{
+			const CvPlot& kPlot = m_pMapPlots[iI];
+			const BonusTypes eBonus = kPlot.getBonusType();
+			const ImprovementTypes eImprovement = kPlot.getImprovementType();
+
+			if (eBonus != NO_BONUS || eImprovement != NO_IMPROVEMENT)
+			{
+				CvArea* pArea = getArea(kPlot.getArea());
+				if (eBonus != NO_BONUS)
+				{
+					pArea->changeNumBonuses(eBonus, 1);
+					changeNumBonuses(eBonus, 1);
+					if (!kPlot.isWater())
+					{
+						changeNumBonusesOnLand(eBonus, 1);
+					}
+				}
+				if (eImprovement != NO_IMPROVEMENT)
+				{
+					pArea->changeNumImprovements(eImprovement, 1);
+				}
+			}
+		}
+	}
 }
 
 void CvMap::write(CvSavegameWriter writer)
@@ -190,9 +210,6 @@ void CvMap::write(CvSavegameWriter writer)
 	writer.Write(Save_WrapY, m_bWrapY, defaultWrapY);
 	writer.Write(Save_UseTwoPlotCities, m_bUseTwoPlotCities, defaultUseTwoPlotCities);
 
-	writer.Write(Save_NumBonuses, m_ja_NumBonuses);
-	writer.Write(Save_NumBonusesOnLand, m_ja_NumBonusesOnLand);
-
 	if (numPlotsINLINE() > 0)
 	{
 		writer.Write(Save_Plots);
@@ -203,11 +220,8 @@ void CvMap::write(CvSavegameWriter writer)
 		}
 	}
 
-#if 0
-	// enable once CvPlot and CvArea are saved using CvSavegame
 	writer.Write(Save_Areas);
 	WriteStreamableFFreeListTrashArray(m_areas, writer);
-#endif
 
 	writer.Write(Save_END);
 }

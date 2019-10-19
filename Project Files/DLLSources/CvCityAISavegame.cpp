@@ -131,15 +131,8 @@ m_ba_Emphasize.reset();
 m_aiPlayerCloseness.reset();
 m_routeToCity.reset();
 
-for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-{
-	m_aiBestBuildValue[iI] = NO_BUILD;
-}
-
-for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-{
-	m_aeBestBuild[iI] = NO_BUILD;
-}
+m_em_iBestBuildValue.reset();
+m_em_eBestBuild.reset();
 
 }
 
@@ -195,18 +188,10 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_Emphasize: reader.Read(m_ba_Emphasize); break;
 			case CitySaveAi_PlayerCloseness: reader.Read(m_aiPlayerCloseness); break;
 			case CitySaveAi_routeToCity: reader.Read(m_routeToCity); break;
-			case CitySaveAi_BestBuildValue:
-				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-				{
-					reader.Read(m_aiBestBuildValue[iI]);
-				}
-				break;
-			case CitySaveAi_BestBuild: 
-				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-					{
-						reader.Read(m_aeBestBuild[iI]);
-					}
-				break;
+			case CitySaveAi_BestBuildValue: reader.Read(m_em_iBestBuildValue); break;
+			case CitySaveAi_BestBuild: reader.Read(m_em_eBestBuild); break; 
+
+			default: FAssert(false);
 		}
 	}
 	
@@ -256,16 +241,8 @@ void CvCityAI::write(CvSavegameWriter writer)
 
 	writer.Write(CitySaveAi_routeToCity, m_routeToCity);
 
-	writer.Write(CitySaveAi_BestBuildValue);
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			writer.Write(m_aiBestBuildValue[iI]);
-		}
-	writer.Write(CitySaveAi_BestBuild);
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			writer.Write(m_aeBestBuild[iI]);
-		}
+	writer.Write(CitySaveAi_BestBuildValue, m_em_iBestBuildValue);
+	writer.Write(CitySaveAi_BestBuild, m_em_eBestBuild);
 
 	writer.Write(Save_END);
 }

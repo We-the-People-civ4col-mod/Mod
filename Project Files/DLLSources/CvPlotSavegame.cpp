@@ -100,6 +100,18 @@ enum SavegameVariableTypes
 	Save_Culture,
 	Save_CultureRangeForts,
 	Save_FoundValue,
+	Save_PlayerCityRadiusCount,
+	Save_VisibilityCount,
+	Save_RevealedOwner,
+
+	Save_CultureRangeCities,
+	Save_InvisibleVisibilityCount,
+
+	Save_ScriptData,
+
+	Save_BuildProgress,
+
+	Save_Units,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -330,24 +342,25 @@ void CvPlot::read(CvSavegameReader reader)
 			}
 		} break;
 
-		case Save_aiYield:
-		{
-			// copy YieldArray into a short array
-			YieldArray<short> temp_yield;
-			reader.Read(temp_yield);
-			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-			{
-				m_aiYield[eYield] = temp_yield.get(eYield);
-			}
-			break;
-		}
+		case Save_aiYield: m_em_iYield.Read(reader); break;
 
 		// PlayerArrays
-		case Save_Culture                : m_aiCulture                         .Read(reader); break;
-		case Save_CultureRangeForts      : m_aiCultureRangeForts               .Read(reader); break;
-		case Save_DangerMap              : m_aiDangerMap                       .Read(reader); break;
-		case Save_FoundValue             : m_aiFoundValue                      .Read(reader); break;
+		case Save_Culture                  : m_em_iCulture                       .Read(reader); break;
+		case Save_CultureRangeForts        : m_em_iCultureRangeForts             .Read(reader); break;
+		case Save_DangerMap                : m_em_iDangerMap                     .Read(reader); break;
+		case Save_FoundValue               : m_em_iFoundValue                    .Read(reader); break;
+		case Save_PlayerCityRadiusCount    : m_em_iPlayerCityRadiusCount         .Read(reader); break;
+		case Save_VisibilityCount          : m_em_iVisibilityCount               .Read(reader); break;
+		case Save_RevealedOwner            : m_em_eRevealedOwner                 .Read(reader); break;
+
+		case Save_CultureRangeCities       : m_em2_iCultureRangeCities           .Read(reader); break;
+		case Save_InvisibleVisibilityCount : m_em2_iInvisibleVisibilityCount     .Read(reader); break;
+
+		case Save_ScriptData               : reader.Read(m_szScriptData); break;
+
+		case Save_BuildProgress            : m_em_iBuildProgress                 .Read(reader); break;
 			
+		case Save_Units                    : reader.Read(m_units); break;
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
@@ -373,6 +386,14 @@ void CvPlot::write(CvSavegameWriter writer)
 	// Also it will not save anything if the variable and the default values are identical.
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
+
+	// m_pPlotArea not saved
+
+	// m_bShowCitySymbols not saved
+	// m_bFlagDirty not saved
+	// m_bPlotLayoutDirty not saved
+	// m_bLayoutStateWorked not saved
+	// m_bImpassable not saved
 
 	writer.Write(Save_X, m_iX, defaultX);
 	writer.Write(Save_Y, m_iY, defaultY);
@@ -423,13 +444,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_workingCity, m_workingCity);
 	writer.Write(Save_workingCityOverride, m_workingCityOverride);
 
-	// save a YieldArray instead of a short array, which happens to be of length NUM_YIELD_TYPES
-	YieldArray<short> temp_yield;
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-	{
-		temp_yield.set(m_aiYield[eYield], eYield);
-	}
-	writer.Write(Save_aiYield, temp_yield);
+	writer.Write(Save_aiYield, m_em_iYield);
 
 	writer.Write(Save_Revealed, m_pab_Revealed);
 
@@ -469,10 +484,22 @@ void CvPlot::write(CvSavegameWriter writer)
 		writer.Write(Save_RevealedImprovementRouteArray, eTeamArray);
 	}
 
-	writer.Write(Save_DangerMap, m_aiDangerMap);
-	writer.Write(Save_Culture, m_aiCulture);
-	writer.Write(Save_CultureRangeForts, m_aiCultureRangeForts);
-	writer.Write(Save_FoundValue, m_aiFoundValue);
+	writer.Write(Save_DangerMap, m_em_iDangerMap);
+	writer.Write(Save_Culture, m_em_iCulture);
+	writer.Write(Save_CultureRangeForts, m_em_iCultureRangeForts);
+	writer.Write(Save_FoundValue, m_em_iFoundValue);
+	writer.Write(Save_PlayerCityRadiusCount, m_em_iPlayerCityRadiusCount);
+	writer.Write(Save_VisibilityCount, m_em_iVisibilityCount);
+	writer.Write(Save_RevealedOwner, m_em_eRevealedOwner);
+
+	writer.Write(Save_CultureRangeCities, m_em2_iCultureRangeCities);
+	writer.Write(Save_InvisibleVisibilityCount, m_em2_iInvisibleVisibilityCount);
 		
+	writer.Write(Save_ScriptData, m_szScriptData);
+	
+	writer.Write(Save_BuildProgress, m_em_iBuildProgress);
+
+	writer.Write(Save_Units, m_units);
+
 	writer.Write(Save_END);
 }

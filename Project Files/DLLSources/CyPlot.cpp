@@ -681,11 +681,11 @@ bool CyPlot::changeBuildProgress(int /*BuildTypes*/ eBuild, int iChange, int /*T
 }
 int CyPlot::getCultureRangeCities(int /*PlayerTypes*/ eOwnerIndex, int iRangeIndex)
 {
-	return m_pPlot ? m_pPlot->getCultureRangeCities((PlayerTypes) eOwnerIndex, iRangeIndex) : -1;
+	return m_pPlot ? m_pPlot->getCultureRangeCities((PlayerTypes) eOwnerIndex, (CultureLevelTypes)iRangeIndex) : -1;
 }
 bool CyPlot::isCultureRangeCity(int /*PlayerTypes*/ eOwnerIndex, int iRangeIndex)
 {
-	return m_pPlot ? m_pPlot->isCultureRangeCity((PlayerTypes) eOwnerIndex, iRangeIndex) : false;
+	return m_pPlot ? m_pPlot->isCultureRangeCity((PlayerTypes) eOwnerIndex, (CultureLevelTypes)iRangeIndex) : false;
 }
 int CyPlot::getInvisibleVisibilityCount(int /*TeamTypes*/ eTeam, int /*InvisibleTypes*/ eInvisible)
 {

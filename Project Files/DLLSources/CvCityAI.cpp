@@ -1988,7 +1988,7 @@ int CvCityAI::AI_getBestBuildValue(int iIndex) const
 {
 	FAssertMsg(iIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(iIndex < NUM_CITY_PLOTS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiBestBuildValue[iIndex];
+	return m_em_iBestBuildValue.get(iIndex);
 }
 
 
@@ -2072,7 +2072,7 @@ BuildTypes CvCityAI::AI_getBestBuild(int iIndex) const
 {
 	FAssertMsg(iIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(iIndex < NUM_CITY_PLOTS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aeBestBuild[iIndex];
+	return m_em_eBestBuild.get(iIndex);
 }
 
 
@@ -2111,31 +2111,44 @@ int CvCityAI::AI_countBestBuilds(CvArea* pArea) const
 void CvCityAI::AI_updateBestBuild()
 {
 	PROFILE_FUNC();
-	
-	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-	{
-		m_aiBestBuildValue[iI] = 0;
-		m_aeBestBuild[iI] = NO_BUILD;
 
-		if (iI != CITY_HOME_PLOT)
+	// reset all data, but do not release the memory if allocated
+	m_em_iBestBuildValue.setAll(m_em_iBestBuildValue.getDefault());
+	m_em_eBestBuild     .setAll(m_em_eBestBuild     .getDefault());
+	
+	FOREACH(CityPlot)
+	{
+		if (eLoopCityPlot != CITY_HOME_PLOT)
 		{
-			CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+			CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), eLoopCityPlot);
 
 			if (NULL != pLoopPlot && pLoopPlot->getWorkingCity() == this)
 			{
-				AI_bestPlotBuild(pLoopPlot, &(m_aiBestBuildValue[iI]), &(m_aeBestBuild[iI]));
+				// Due to lazy memory allocation, it's not possible to get a reference to data in an EnumMap
+				// To get around this limitation, use a buffer.
+				int iBestBuildValue = m_em_iBestBuildValue.get(eLoopCityPlot);
+				BuildTypes eBestBuildType = m_em_eBestBuild.get(eLoopCityPlot);
+
+				AI_bestPlotBuild(pLoopPlot, &iBestBuildValue, &eBestBuildType);
+
+				// write the buffer back into the EnumMap
+				m_em_iBestBuildValue.set(eLoopCityPlot, iBestBuildValue);
+				m_em_eBestBuild.set(eLoopCityPlot, eBestBuildType);
 				
-				if (m_aiBestBuildValue[iI] > 0)
+				if (iBestBuildValue > 0)
 				{
-					FAssert(m_aeBestBuild[iI] != NO_BUILD);
+					FAssert(eBestBuildType != NO_BUILD);
 				}
-				if (m_aeBestBuild[iI] != NO_BUILD)
+				if (eBestBuildType != NO_BUILD)
 				{
-					FAssert(m_aiBestBuildValue[iI] > 0);
+					FAssert(iBestBuildValue > 0);
 				}
 			}
 		}
 	}
+	// release unused memory
+	m_em_iBestBuildValue.hasContent();
+	m_em_eBestBuild.hasContent();
 }
 
 // Protected Functions...
@@ -4905,13 +4918,13 @@ void CvCityAI::AI_setPort(bool iNewValue)
 	m_bPort = iNewValue;
 }
 
-bool CvCityAI::AI_potentialPlot(short* piYields) const
+bool CvCityAI::AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) const
 {
-	int iNetFood = piYields[YIELD_FOOD] - GC.getFOOD_CONSUMPTION_PER_POPULATION();
+	int iNetFood = em_iYields.get(YIELD_FOOD) - GC.getFOOD_CONSUMPTION_PER_POPULATION();
 
 	if (iNetFood < 0)
 	{
- 		if (piYields[YIELD_FOOD] == 0)
+ 		if (em_iYields.get(YIELD_FOOD) == 0)
 		{
 			return false;
 		}
@@ -5153,15 +5166,16 @@ bool CvCityAI::AI_foodAvailable(int iExtra) const
 }
 
 
-int CvCityAI::AI_yieldValue(short* piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood, bool bIgnoreGrowth, bool bIgnoreStarvation, bool bWorkerOptimization) const
+int CvCityAI::AI_yieldValue(const EnumMap<YieldTypes, short>& em_iYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood, bool bIgnoreGrowth, bool bIgnoreStarvation, bool bWorkerOptimization) const
 {
 	int iValue = 0;
 
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		if (piYields[iI] != 0)
+		int iAmount = em_iYields.get(eYield);
+		if (iAmount != 0)
 		{
-			iValue +=  AI_estimateYieldValue((YieldTypes)iI, piYields[iI]);
+			iValue +=  AI_estimateYieldValue(eYield, iAmount);
 		}
 	}
 			
@@ -5173,7 +5187,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 {
 	PROFILE_FUNC();
 
-	short aiYields[NUM_YIELD_TYPES];
+	EnumMap<YieldTypes, short> em_iYields;
 	ImprovementTypes eCurrentImprovement;
 	ImprovementTypes eFinalImprovement;
 	int iYieldDiff;
@@ -5184,9 +5198,9 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 	iValue = 0;
 	iTotalDiff = 0;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		aiYields[iI] = pPlot->calculatePotentialYield((YieldTypes)iI, NULL, false);
+		em_iYields.set(eYield, pPlot->calculatePotentialYield(eYield, NULL, false));
 	}
 
 	eCurrentImprovement = pPlot->getImprovementType();
@@ -5197,15 +5211,15 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 		eFinalImprovement = finalImprovementUpgrade(eCurrentImprovement);
 	}
 	
-	int iYieldValue = (AI_yieldValue(aiYields, bAvoidGrowth, bRemove, bIgnoreFood, bIgnoreGrowth, bIgnoreStarvation) * 100);
+	int iYieldValue = (AI_yieldValue(em_iYields, bAvoidGrowth, bRemove, bIgnoreFood, bIgnoreGrowth, bIgnoreStarvation) * 100);
 	if (eFinalImprovement != NO_IMPROVEMENT)
 	{
-		for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			iYieldDiff = (pPlot->calculateImprovementYieldChange(eFinalImprovement, ((YieldTypes)iI), getOwnerINLINE()) - pPlot->calculateImprovementYieldChange(eCurrentImprovement, ((YieldTypes)iI), getOwnerINLINE()));
-			aiYields[iI] += iYieldDiff;
+			iYieldDiff = (pPlot->calculateImprovementYieldChange(eFinalImprovement, eYield, getOwnerINLINE()) - pPlot->calculateImprovementYieldChange(eCurrentImprovement, eYield, getOwnerINLINE()));
+			em_iYields.add(eYield, iYieldDiff);
 		}
-		int iFinalYieldValue = (AI_yieldValue(aiYields, bAvoidGrowth, bRemove, bIgnoreFood, bIgnoreGrowth, bIgnoreStarvation) * 100);
+		int iFinalYieldValue = (AI_yieldValue(em_iYields, bAvoidGrowth, bRemove, bIgnoreFood, bIgnoreGrowth, bIgnoreStarvation) * 100);
 		
 		if (iFinalYieldValue > iYieldValue)
 		{
@@ -5220,7 +5234,7 @@ int CvCityAI::AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove,
 	if (AI_getEmphasizeYieldCount(YIELD_FOOD) <= 0)
 	{
 		// if this plot is super bad (less than 2 food and less than combined 2 prod
-		if (!AI_potentialPlot(aiYields))
+		if (!AI_potentialPlot(em_iYields))
 		{
 			// undervalue it even more!
 			iYieldValue /= 16;

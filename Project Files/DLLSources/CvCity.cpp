@@ -49,7 +49,6 @@ CvCity::CvCity() :
 	m_ba_HasFreeBuilding(JIT_ARRAY_BUILDING)
 {
 
-	m_paiWorkingPlot = NULL;
 	m_paTradeCities = NULL;
 
 	CvDLLEntity::createCityEntity(this);		// create and attach entity to city
@@ -328,8 +327,6 @@ void CvCity::uninit()
 	m_ba_OrderedStudentsRepeat.reset();
 	// Teacher List - end - Nightinggale
 
-	SAFE_DELETE_ARRAY(m_paiWorkingPlot);
-
 	SAFE_DELETE_ARRAY(m_paTradeCities);
 
 	m_orderQueue.clear();
@@ -365,11 +362,6 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 
 	m_iCacheMarketModifier = 0;
 
-	if (!bConstructorCall)
-	{
-		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
-		m_paiWorkingPlot = new int[NUM_CITY_PLOTS];
-	}
 	resetSavedData(iID, eOwner, iX, iY, bConstructorCall);
 
 	//storage loss trading (aka customs house and related things)
@@ -2881,9 +2873,9 @@ int CvCity::hurryYield(HurryTypes eHurry, YieldTypes eYield) const
 	return getHurryYieldNeeded(eHurry, eYield) - getHurryYieldDeficit(eHurry, eYield);
 }
 
-int CvCity::cultureDistance(int iDX, int iDY) const
+CultureLevelTypes CvCity::cultureDistance(int iDX, int iDY) const
 {
-	return std::max(1, plotDistance(0, 0, iDX, iDY));
+	return static_cast<CultureLevelTypes>(std::max(1, plotDistance(0, 0, iDX, iDY)));
 }
 
 /*
@@ -3782,7 +3774,6 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 	CvPlot* pLoopPlot;
 	CvWString szBuffer;
 	CultureLevelTypes eOldValue;
-	int iCultureRange;
 	int iDX, iDY;
 	int iI;
 
@@ -3798,19 +3789,19 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 			{
 				for (iDY = -eOldValue; iDY <= eOldValue; iDY++)
 				{
-					iCultureRange = cultureDistance(iDX, iDY);
+					CultureLevelTypes eCultureRange = cultureDistance(iDX, iDY);
 
-					if (iCultureRange > getCultureLevel())
+					if (eCultureRange > getCultureLevel())
 					{
-						if (iCultureRange <= eOldValue)
+						if (eCultureRange <= eOldValue)
 						{
-							FAssert(iCultureRange <= GC.getNumCultureLevelInfos());
+							FAssert(eCultureRange <= GC.getNumCultureLevelInfos());
 
 							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 
 							if (pLoopPlot != NULL)
 							{
-								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, -1);
+								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), eCultureRange, -1);
 							}
 						}
 					}
@@ -3824,19 +3815,19 @@ void CvCity::setCultureLevel(CultureLevelTypes eNewValue)
 			{
 				for (iDY = -getCultureLevel(); iDY <= getCultureLevel(); iDY++)
 				{
-					iCultureRange = cultureDistance(iDX, iDY);
+					CultureLevelTypes eCultureRange = cultureDistance(iDX, iDY);
 
-					if (iCultureRange > eOldValue)
+					if (eCultureRange > eOldValue)
 					{
-						if (iCultureRange <= getCultureLevel())
+						if (eCultureRange <= getCultureLevel())
 						{
-							FAssert(iCultureRange <= GC.getNumCultureLevelInfos());
+							FAssert(eCultureRange <= GC.getNumCultureLevelInfos());
 
 							pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 
 							if (pLoopPlot != NULL)
 							{
-								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), iCultureRange, 1);
+								pLoopPlot->changeCultureRangeCities(getOwnerINLINE(), eCultureRange, 1);
 							}
 						}
 					}
@@ -5403,7 +5394,7 @@ CvUnit* CvCity::getUnitWorkingPlot(int iPlotIndex) const
 	FAssertMsg(iPlotIndex >= 0, "iPlotIndex expected to be >= 0");
 	FAssertMsg(iPlotIndex < NUM_CITY_PLOTS, "iPlotIndex expected to be < NUM_CITY_PLOTS");
 
-	int iUnitId = m_paiWorkingPlot[iPlotIndex];
+	int iUnitId = m_em_iWorkingPlot.get(iPlotIndex);
 	if (-1 != iUnitId)
 	{
 		return getPopulationUnitById(iUnitId);
@@ -5423,7 +5414,7 @@ bool CvCity::isUnitWorkingPlot(int iPlotIndex) const
 		return true;
 	}
 
-	if (-1 != m_paiWorkingPlot[iPlotIndex])
+	if (-1 != m_em_iWorkingPlot.get(iPlotIndex))
 	{
 		return true;
 	}
@@ -5446,9 +5437,9 @@ bool CvCity::isUnitWorkingPlot(const CvPlot* pPlot) const
 
 bool CvCity::isUnitWorkingAnyPlot(const CvUnit* pUnit) const
 {
-	for(int i=0;i<NUM_CITY_PLOTS;i++)
+	FOREACH(CityPlot)
 	{
-		int iUnitId = m_paiWorkingPlot[i];
+		int iUnitId = m_em_iWorkingPlot.get(eLoopCityPlot);
 		if(iUnitId != -1)
 		{
 			if(getPopulationUnitById(iUnitId) == pUnit)
@@ -5541,7 +5532,7 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 			}
 		}
 		
-		m_paiWorkingPlot[iPlotIndex] = iUnitId;
+		m_em_iWorkingPlot.set(iPlotIndex, iUnitId);
 
 		FAssertMsg(pPlot->getWorkingCity() == this, "WorkingCity is expected to be this");
 
@@ -5580,7 +5571,7 @@ void CvCity::clearUnitWorkingPlot(int iPlotIndex)
 	CvPlot* pPlot = getCityIndexPlot(iPlotIndex);
 	if (pPlot != NULL)
 	{
-		m_paiWorkingPlot[iPlotIndex] = -1;
+		m_em_iWorkingPlot.set(iPlotIndex, -1);
 		
 		FAssertMsg(pPlot->getWorkingCity() == this, "WorkingCity is expected to be this");
 
@@ -8557,12 +8548,12 @@ int CvCity::getPopulationUnitIndex(CvUnit *pUnit) const
 
 CvPlot* CvCity::getPlotWorkedByUnit(const CvUnit* pUnit) const
 {
-	for (int i = 0; i < NUM_CITY_PLOTS; ++i)
+	FOREACH(CityPlot)
 	{
-		int iUnitId = m_paiWorkingPlot[i];
+		int iUnitId = m_em_iWorkingPlot.get(eLoopCityPlot);
 		if (iUnitId == pUnit->getID())
 		{
-			return getCityIndexPlot(i);
+			return getCityIndexPlot(eLoopCityPlot);
 		}
 	}
 

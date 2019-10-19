@@ -54,12 +54,29 @@ public:
 	
 	void Read(CvString& szString);
 	void Read(CvWString& szString);
+
+	// allocates memory
+	void Read(char* szString);
+	// allocates memory
+	void Read(wchar* szString);
 	
+	template<class T1, class T2, int T3, class T4, class T5>
+	void Read(EnumMapBase<T1, T2, T3, T4, T5>& em);
+
+	template<class T1, class T2, class T3, int T4>
+	void Read(EnumMap2DDefault<T1, T2, T3, T4>& em);
+
 	template<class T>
 	void Read(PlayerArrayBase<T>& array);
 
 	template<class T>
 	void Read(JustInTimeArray<T>& jitArray);
+
+	template<class T>
+	void Read(std::vector<T>& vec);
+
+	template<class T>
+	void Read(std::vector<T*>& vec);
 
 	template<class T>
 	void Read(CLinkList<T>& lList);
@@ -73,8 +90,10 @@ public:
 	T ReadBitfield(T variable);
 
 	// Add all enums used in savegames (single byte)
+	void Read(AreaAITypes           & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
+	void Read(CityPlotTypes         & variable) { ReadEnum(variable); }
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
@@ -118,6 +137,7 @@ public:
 	void Read(GoodyTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(HandicapTypes         & variable) { ReadXmlEnum(variable); }
 	void Read(HurryTypes            & variable) { ReadXmlEnum(variable); }
+	void Read(InvisibleTypes        & variable) { ReadXmlEnum(variable); }
 	void Read(ImprovementTypes      & variable) { ReadXmlEnum(variable); }
 	void Read(LeaderHeadTypes       & variable) { ReadXmlEnum(variable); }
 	void Read(MemoryTypes           & variable) { ReadXmlEnum(variable); }
@@ -138,7 +158,13 @@ public:
 	void Read(YieldTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(WorldSizeTypes        & variable) { ReadXmlEnum(variable); }
 
+	// class wrappers
+	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(CvUnit                & variable) { variable.read(*this); }
+	void Read(CvUnitAI              & variable) { variable.read(*this); }
+
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
+	int GetXmlSize(JITarrayTypes eType) const;
 
 #ifndef MakefileCompilation
 	// remove IntelliSense errors, which causes bogus red lines in the code
@@ -191,11 +217,10 @@ public:
 
 	void Write(bool bVar);
 
-	void Write(CvString& szString);
-	void Write(CvWString& szString);
-
-	void Write(const char* szString);
-	void Write(const wchar* szString);
+	void Write(const CvString  & szString);
+	void Write(const CvWString & szString);
+	void Write(const char      * szString);
+	void Write(const wchar     * szString);
 
 	void Write(BoolArray& baArray);
 
@@ -205,9 +230,23 @@ public:
 	template<class T>
 	void Write(JustInTimeArray<T>& jitArray);
 
+	template<class T>
+	void Write(std::vector<T>& vec);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, std::vector<T>& vec);
+
+	template<class T>
+	void Write(std::vector<T*>& vec);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, std::vector<T*>& vec);
+
 	void Write(SavegameVariableTypes eType);
-	void Write(SavegameVariableTypes eType, CvString& szString);
-	void Write(SavegameVariableTypes eType, CvWString& szString);
+	void Write(SavegameVariableTypes eType, const CvString  & szString);
+	void Write(SavegameVariableTypes eType, const CvWString & szString);
+	void Write(SavegameVariableTypes eType, const char      * szString);
+	void Write(SavegameVariableTypes eType, const wchar     * szString);
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
 	void Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
@@ -221,10 +260,23 @@ public:
 	template<class T>
 	void Write(SavegameVariableTypes eType, JustInTimeArray<T>& jitArray);
 
+	template<class T1, class T2, int T3, class T4, class T5>
+	void Write(EnumMapBase<T1, T2, T3, T4, T5>& em);
+
+	template<class T1, class T2, int T3, class T4, class T5>
+	void Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5>& em);
+
+	template<class T1, class T2, class T3, int T4>
+	void Write(EnumMap2DDefault<T1, T2, T3, T4>& em);
+
+	template<class T1, class T2, class T3, int T4>
+	void Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em);
+
 	template<class T>
 	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
 
 	// Add all enums used in savegames (single byte)
+	void Write(AreaAITypes            variable) { WriteEnum(variable); }
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
@@ -288,9 +340,15 @@ public:
 	void Write(YieldTypes            variable) { WriteXmlEnum(variable); }
 	void Write(WorldSizeTypes        variable) { WriteXmlEnum(variable); }
 
+	// class wrappers
+	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(CvUnit               &variable) { variable.write(*this); }
+	void Write(CvUnitAI             &variable) { variable.write(*this); }
+
 	// get the amount of bytes needed to save the variable in question
 	// also tells the savegame that a conversion table is needed
 	int GetXmlByteSize(JITarrayTypes eType);
+	int GetXmlSize(JITarrayTypes eType);
 
 private:
 
@@ -339,6 +397,18 @@ inline T CvSavegameReader::ReadBitfield(T variable)
 	return variable;
 }
 
+template<class T1, class T2, int T3, class T4, class T5>
+inline void CvSavegameReader::Read(EnumMapBase<T1, T2, T3, T4, T5>& em)
+{
+	em.Read(*this);
+}
+
+template<class T1, class T2, class T3, int T4>
+inline void CvSavegameReader::Read(EnumMap2DDefault<T1, T2, T3, T4>& em)
+{
+	em.Read(*this);
+}
+
 template<class T>
 inline void CvSavegameReader::Read(PlayerArrayBase<T>& array)
 {
@@ -349,6 +419,47 @@ template<class T>
 inline void CvSavegameReader::Read(JustInTimeArray<T>& jitArray)
 {
 	jitArray.Read(*this);
+}
+
+template<class T>
+inline void CvSavegameReader::Read(std::vector<T>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::vector<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Read(*it);
+	}
+}
+
+template<>
+inline void CvSavegameReader::Read(std::vector<CvUnit*>& vec)
+{
+	// specialized function because CvCity::m_aPopulationUnits is a vector of CvUnit.
+	// however CvUnit is an abstract class and needs to be allocated with CvUnitAI.
+
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::vector<CvUnit*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		*it = new CvUnitAI;
+		Read(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameReader::Read(std::vector<T*>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		*it = new T;
+		Read(**it);
+	}
 }
 
 template<class T>
@@ -381,6 +492,48 @@ inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 }
 
 template<class T>
+inline void CvSavegameWriter::Write(std::vector<T>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::vector<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(*it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		Write(vec);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::vector<T*>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T*>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		Write(vec);
+	}
+}
+
+template<class T>
 inline void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array)
 {
 	if (array.hasContent())
@@ -407,6 +560,38 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, JustInTimeArray
 	{
 		Write(eType);
 		Write(jitArray);
+	}
+}
+
+template<class T1, class T2, int T3, class T4, class T5>
+inline void CvSavegameWriter::Write(EnumMapBase<T1, T2, T3, T4, T5>& em)
+{
+	em.Write(*this);
+}
+
+template<class T1, class T2, int T3, class T4, class T5>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMapBase<T1, T2, T3, T4, T5>& em)
+{
+	if (em.hasContent())
+	{
+		Write(eType);
+		Write(em);
+	}
+}
+
+template<class T1, class T2, class T3, int T4>
+inline void CvSavegameWriter::Write(EnumMap2DDefault<T1, T2, T3, T4>& em)
+{
+	em.Write(*this);
+}
+
+template<class T1, class T2, class T3, int T4>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em)
+{
+	if (em.hasContent())
+	{
+		Write(eType);
+		Write(em);
 	}
 }
 

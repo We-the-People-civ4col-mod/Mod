@@ -378,17 +378,9 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 
 	m_orderQueue.clear();
 
-	if (!bConstructorCall)
-	{
-		FAssertMsg((0 < NUM_CITY_PLOTS),  "NUM_CITY_PLOTS is not greater than zero but an array is being allocated in CvCity::reset");
-		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-		{
-			m_paiWorkingPlot[iI] = -1;
-		}
-		m_aEventsOccured.clear();
-		m_aBuildingYieldChange.clear();
-	}
-
+	m_em_iWorkingPlot.reset();
+	m_aEventsOccured.clear();
+	m_aBuildingYieldChange.clear();
 }
 
 void CvCity::read(CvSavegameReader reader)
@@ -504,42 +496,9 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_Name: reader.Read(m_szName); break;
 	 	case CitySave_ScriptData: reader.Read(m_szScriptData); break;
-
-		//maybe make this code better?
-		// add a read fucntion for std::vector?
-			case CitySave_PopulationUnits:
-			{
-			int iNumPopulation;
-			reader.Read(iNumPopulation);
-			m_aPopulationUnits.reserve(iNumPopulation);
-			for(int i=0;i<iNumPopulation;++i){
-				CvUnit* pUnit = new CvUnitAI;
-				pUnit->read(reader);
-				m_aPopulationUnits.push_back(pUnit);
-			} break;
-			}			
-		case CitySave_EventsOccured:
-			{
-			int iNumElts;
-			reader.Read(iNumElts);
-			m_aEventsOccured.reserve(iNumElts);
-			for(int i=0;i<iNumElts;++i){
-				EventTypes eEvent;
-				reader.Read(eEvent);
-				m_aEventsOccured.push_back(eEvent);
-			} break;
-			}
-		case CitySave_BuildingYieldChange:
-			{
-			int iNumElts;
-			reader.Read(iNumElts);
-			m_aBuildingYieldChange.reserve(iNumElts);
-			for(int i=0;i<iNumElts;++i){
-				BuildingYieldChange kChange;
-				kChange.read(reader);
-				m_aBuildingYieldChange.push_back(kChange);
-			} break;
-			}
+		case CitySave_PopulationUnits: reader.Read(m_aPopulationUnits); break;
+		case CitySave_EventsOccured: reader.Read(m_aEventsOccured); break;
+		case CitySave_BuildingYieldChange: reader.Read(m_aBuildingYieldChange); break;
 		case CitySave_Culture: reader.Read(m_aiCulture); break;
 		case CitySave_EverOwned: reader.Read(m_abEverOwned); break;
 		case CitySave_Revealed: reader.Read(m_abRevealed); break;
@@ -550,12 +509,7 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_orderQueue: reader.Read(m_orderQueue); break;
 
-		case CitySave_WorkingPlot:
-			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-			{
-				reader.Read(m_paiWorkingPlot[iI]);
-			}
-			break;
+		case CitySave_WorkingPlot: reader.Read(m_em_iWorkingPlot); break;
 
 		}
 		
@@ -662,29 +616,9 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_Name, m_szName);
 	writer.Write(CitySave_ScriptData, m_szScriptData);
-
-	if(m_aPopulationUnits.size()>0){
-		writer.Write(CitySave_PopulationUnits);
-		writer.Write((int)m_aPopulationUnits.size());
-		for(int i=0;i<(int)m_aPopulationUnits.size();++i){
-			m_aPopulationUnits[i]->write(writer);
-		}
-	}
-	if(m_aEventsOccured.size()>0){
-		writer.Write(CitySave_EventsOccured);
-		writer.Write((int)m_aEventsOccured.size());
-		for (std::vector<EventTypes>::iterator it = m_aEventsOccured.begin(); it != m_aEventsOccured.end(); ++it){
-			writer.Write(*it);
-		}
-	}
-	if(m_aBuildingYieldChange.size()>0){
-		writer.Write(CitySave_BuildingYieldChange);
-		writer.Write((int)m_aBuildingYieldChange.size());
-		for (std::vector<BuildingYieldChange>::iterator it = m_aBuildingYieldChange.begin(); it != m_aBuildingYieldChange.end(); ++it){
-			it->write(writer);
-		}
-	}
-
+	writer.Write(CitySave_PopulationUnits, m_aPopulationUnits);
+	writer.Write(CitySave_EventsOccured, m_aEventsOccured);
+	writer.Write(CitySave_BuildingYieldChange, m_aBuildingYieldChange);
 	writer.Write(CitySave_Culture, m_aiCulture);
 	writer.Write(CitySave_EverOwned, m_abEverOwned);
 	writer.Write(CitySave_Revealed, m_abRevealed);
@@ -695,11 +629,7 @@ void CvCity::write(CvSavegameWriter writer)
 
 	writer.Write(CitySave_orderQueue, m_orderQueue);
 
-	writer.Write(CitySave_WorkingPlot);
-			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-			{
-				writer.Write(m_paiWorkingPlot[iI]);
-			}
+	writer.Write(CitySave_WorkingPlot, m_em_iWorkingPlot);
 
 	writer.Write(CitySave_END);
 }

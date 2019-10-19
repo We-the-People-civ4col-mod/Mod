@@ -198,23 +198,22 @@ void PlotExtraYield::read(CvSavegameReader& reader)
 {
 	reader.Read(m_iX);
 	reader.Read(m_iY);
-	m_aeExtraYield.clear();
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		int iYield;
-		reader.Read(iYield);
-		m_aeExtraYield.push_back(iYield);
-	}
+
+	// use savegame code in EnumMap to allow for xml changes in yield xml
+	EnumMap<YieldTypes, int> tempArray;
+	tempArray.Read(reader);
+	tempArray.copyToVector(m_aeExtraYield);
 }
 
 void PlotExtraYield::write(CvSavegameWriter& writer) const 
 {
 	writer.Write(m_iX);
 	writer.Write(m_iY);
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		writer.Write(m_aeExtraYield[i]);
-	}
+
+	// use savegame code in EnumMap to allow for xml changes in yield xml
+	EnumMap<YieldTypes, int> tempArray;
+	tempArray.copyFromVector(m_aeExtraYield);
+	tempArray.Write(writer);
 }
 
 void BuildingYieldChange::read(FDataStreamBase* pStream)
