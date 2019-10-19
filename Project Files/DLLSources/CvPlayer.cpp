@@ -40,19 +40,6 @@
 
 CvPlayer::CvPlayer()
 {
-	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiCapitalYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiBuildingRequiredYieldModifier = new int[NUM_YIELD_TYPES];
-	m_aiCityExtraYield = new int[NUM_YIELD_TYPES];
-	m_aiExtraYieldThreshold = new int[NUM_YIELD_TYPES];
-	m_aiYieldBuyPrice = new int[NUM_YIELD_TYPES];
-	m_aiYieldAfricaBuyPrice = new int[NUM_YIELD_TYPES]; // R&R, ray, Africa
-	m_aiYieldPortRoyalBuyPrice = new int[NUM_YIELD_TYPES]; // R&R, ray, Port Royal
-	m_aiYieldTradedTotal = new int[NUM_YIELD_TYPES];
-	m_aiYieldBoughtTotal = new int[NUM_YIELD_TYPES];
-	m_aiTaxYieldModifierCount = new int[NUM_YIELD_TYPES];
-	m_aiYieldScoreTotal = new int[NUM_YIELD_TYPES]; // R&R, vetiarvind, Price dependent tax rate change
 	m_aiMissionaryPoints = new int[MAX_PLAYERS];
 	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
 
@@ -119,19 +106,6 @@ CvPlayer::~CvPlayer()
 {
 	uninit();
 
-	SAFE_DELETE_ARRAY(m_aiSeaPlotYield);
-	SAFE_DELETE_ARRAY(m_aiYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiCapitalYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiBuildingRequiredYieldModifier);
-	SAFE_DELETE_ARRAY(m_aiCityExtraYield);
-	SAFE_DELETE_ARRAY(m_aiExtraYieldThreshold);
-	SAFE_DELETE_ARRAY(m_aiYieldBuyPrice);
-	SAFE_DELETE_ARRAY(m_aiYieldAfricaBuyPrice); // R&R, ray, Africa
-	SAFE_DELETE_ARRAY(m_aiYieldPortRoyalBuyPrice); // R&R, ray, Port Royal
-	SAFE_DELETE_ARRAY(m_aiYieldTradedTotal);
-	SAFE_DELETE_ARRAY(m_aiYieldScoreTotal); // R&R, vetiarvind, Price dependent tax rate change
-	SAFE_DELETE_ARRAY(m_aiYieldBoughtTotal);
-	SAFE_DELETE_ARRAY(m_aiTaxYieldModifierCount);
 	SAFE_DELETE_ARRAY(m_aiMissionaryPoints);
 	SAFE_DELETE_ARRAY(m_aiMissionaryThresholdMultiplier);
 	SAFE_DELETE_ARRAY(m_abYieldEuropeTradable);
@@ -405,20 +379,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
-		m_aiSeaPlotYield[iI] = 0;
-		m_aiYieldRateModifier[iI] = 0;
-		m_aiCapitalYieldRateModifier[iI] = 0;
-		m_aiBuildingRequiredYieldModifier[iI] = 0;
-		m_aiCityExtraYield[iI] = 0;
-		m_aiExtraYieldThreshold[iI] = 0;
-		m_aiYieldBuyPrice[iI] = 0;
-		m_aiYieldAfricaBuyPrice[iI] = 0; // R&R, ray, Africa
-		m_aiYieldPortRoyalBuyPrice[iI] = 0; // R&R, ray, Port Royal
-		m_aiYieldTradedTotal[iI] = 0;
-		m_aiYieldBoughtTotal[iI] = 0;
-		m_aiYieldScoreTotal[iI] = 0; // R&R, vetiarvind, Price dependent tax rate change
 		m_abYieldEuropeTradable[iI] = true;
-		m_aiTaxYieldModifierCount[iI] = 0;
 	}
 
 	for (iI = 0; iI < MAX_PLAYERS; ++iI)
@@ -8310,7 +8271,7 @@ int CvPlayer::getSeaPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiSeaPlotYield[eIndex];
+	return m_em_iSeaPlotYield.get(eIndex);
 }
 
 void CvPlayer::changeSeaPlotYield(YieldTypes eIndex, int iChange)
@@ -8320,7 +8281,7 @@ void CvPlayer::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield[eIndex] = (m_aiSeaPlotYield[eIndex] + iChange);
+		m_em_iSeaPlotYield.add(eIndex, iChange);
 
 		updateYield();
 	}
@@ -8330,7 +8291,7 @@ int CvPlayer::getYieldRateModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiYieldRateModifier[eIndex];
+	return m_em_iYieldRateModifier.get(eIndex);
 }
 
 int CvPlayer::getTaxYieldRateModifier(YieldTypes eIndex) const
@@ -8353,7 +8314,7 @@ void CvPlayer::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiYieldRateModifier[eIndex] += iChange;
+		m_em_iYieldRateModifier.add(eIndex, iChange);
 
 		invalidateYieldRankCache(eIndex);
 
@@ -8371,7 +8332,7 @@ int CvPlayer::getCapitalYieldRateModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiCapitalYieldRateModifier[eIndex];
+	return m_em_iCapitalYieldRateModifier.get(eIndex);
 }
 
 
@@ -8382,7 +8343,7 @@ void CvPlayer::changeCapitalYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiCapitalYieldRateModifier[eIndex] += iChange;
+		m_em_iCapitalYieldRateModifier.add(eIndex, iChange);
 
 		invalidateYieldRankCache(eIndex);
 
@@ -8402,7 +8363,7 @@ int CvPlayer::getBuildingRequiredYieldModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiBuildingRequiredYieldModifier[eIndex];
+	return m_em_iBuildingRequiredYieldModifier.get(eIndex);
 }
 
 
@@ -8413,7 +8374,7 @@ void CvPlayer::changeBuildingRequiredYieldModifier(YieldTypes eIndex, int iChang
 
 	if (iChange != 0)
 	{
-		m_aiBuildingRequiredYieldModifier[eIndex] += iChange;
+		m_em_iBuildingRequiredYieldModifier.add(eIndex, iChange);
 		// transport feeder - start - Nightinggale
 		this->updateTransportThreshold(eIndex);
 		// transport feeder - end - Nightinggale
@@ -8424,7 +8385,7 @@ int CvPlayer::getCityExtraYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiCityExtraYield[eIndex];
+	return m_em_iCityExtraYield.get(eIndex);
 }
 
 void CvPlayer::updateCityExtraYield(YieldTypes eIndex)
@@ -8443,7 +8404,7 @@ void CvPlayer::updateCityExtraYield(YieldTypes eIndex)
 
 	if (getCityExtraYield(eIndex) != iBestValue)
 	{
-		m_aiCityExtraYield[eIndex] = iBestValue;
+		m_em_iCityExtraYield.set(eIndex, iBestValue);
 		FAssert(getCityExtraYield(eIndex) >= 0);
 
 		updateYield();
@@ -8455,7 +8416,7 @@ int CvPlayer::getExtraYieldThreshold(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiExtraYieldThreshold[eIndex];
+	return m_em_iExtraYieldThreshold.get(eIndex);
 }
 
 
@@ -8482,7 +8443,7 @@ void CvPlayer::updateExtraYieldThreshold(YieldTypes eIndex)
 
 	if (getExtraYieldThreshold(eIndex) != iBestValue)
 	{
-		m_aiExtraYieldThreshold[eIndex] = iBestValue;
+		m_em_iExtraYieldThreshold.set(eIndex, iBestValue);
 		FAssert(getExtraYieldThreshold(eIndex) >= 0);
 
 		updateYield();
@@ -9108,14 +9069,14 @@ int CvPlayer::getTaxYieldModifierCount(YieldTypes eYield) const
 {
 	FAssert(eYield > -1);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiTaxYieldModifierCount[eYield];
+	return m_em_iTaxYieldModifierCount.get(eYield);
 }
 
-void CvPlayer::changeTaxYieldModifierCount(YieldTypes eYield, int iChange) const
+void CvPlayer::changeTaxYieldModifierCount(YieldTypes eYield, int iChange)
 {
 	FAssert(eYield > -1);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	m_aiTaxYieldModifierCount[eYield] += iChange;
+	m_em_iTaxYieldModifierCount.add(eYield, iChange);
 }
 
 
@@ -12515,21 +12476,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-
-
-	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBuildingRequiredYieldModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiCityExtraYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiExtraYieldThreshold);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldAfricaBuyPrice); // R&R, ray, Africa
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldPortRoyalBuyPrice); // R&R, ray, Port Royal
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldScoreTotal); // R&R, vetiarvind, Price dependent tax rate change
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldTradedTotal);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBoughtTotal);
-	pStream->Read(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
 	if (uiFlag > 1)
 	{
 		pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
@@ -12927,19 +12873,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	uint uiFlag = 3;
 	pStream->Write(uiFlag);		// flag for expansion
 
-	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBuildingRequiredYieldModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiCityExtraYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiExtraYieldThreshold);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldAfricaBuyPrice); // R&R, ray, Africa
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldPortRoyalBuyPrice); // R&R, ray, Port Royal
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldScoreTotal); // R&R, vetiarvind, Price dependent tax rate change
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldTradedTotal);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBoughtTotal);
-	pStream->Write(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
 	pStream->Write(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
 
@@ -15565,7 +15498,7 @@ int CvPlayer::getYieldBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldBuyPrice[eYield];
+	return m_em_iYieldBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -15740,7 +15673,7 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldBuyPrice[eYield] = iPrice;
+		m_em_iYieldBuyPrice.set(eYield, iPrice);
 
 		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 
@@ -16086,7 +16019,7 @@ int CvPlayer::getYieldAfricaBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldAfricaBuyPrice[eYield];
+	return m_em_iYieldAfricaBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -16261,7 +16194,7 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldAfricaBuyPrice[eYield] = iPrice;
+		m_em_iYieldAfricaBuyPrice.set(eYield, iPrice);
 
 		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
 
@@ -16548,7 +16481,7 @@ int CvPlayer::getYieldPortRoyalBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldPortRoyalBuyPrice[eYield];
+	return m_em_iYieldPortRoyalBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -16723,7 +16656,7 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldPortRoyalBuyPrice[eYield] = iPrice;
+		m_em_iYieldPortRoyalBuyPrice.set(eYield, iPrice);
 
 		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
 
@@ -17281,7 +17214,7 @@ int CvPlayer::getYieldTradedTotal(YieldTypes eYield) const
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	return m_aiYieldTradedTotal[eYield];
+	return m_em_iYieldTradedTotal.get(eYield);
 }
 
 void CvPlayer::setYieldTradedTotal(YieldTypes eYield, int iValue)
@@ -17291,7 +17224,7 @@ void CvPlayer::setYieldTradedTotal(YieldTypes eYield, int iValue)
 
 	if(iValue != getYieldTradedTotal(eYield))
 	{
-		m_aiYieldTradedTotal[eYield] = iValue;
+		m_em_iYieldTradedTotal.set(eYield, iValue);
 	}
 }
 
@@ -17301,7 +17234,7 @@ int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	return m_aiYieldScoreTotal[eYield];
+	return m_em_iYieldScoreTotal.get(eYield);
 }
 
 void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue)
@@ -17309,7 +17242,7 @@ void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue)
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);	
 
-	m_aiYieldScoreTotal[eYield] = iValue;
+	m_em_iYieldScoreTotal.set(eYield, iValue);
 	
 }
 
@@ -17386,13 +17319,13 @@ int CvPlayer::getHighestStoredYieldCityId(YieldTypes eYield) const
 int CvPlayer::getYieldBoughtTotal(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	return m_aiYieldBoughtTotal[eYield];
+	return m_em_iYieldBoughtTotal.get(eYield);
 }
 
 void CvPlayer::setYieldBoughtTotal(YieldTypes eYield, int iValue)
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	m_aiYieldBoughtTotal[eYield] = iValue;
+	m_em_iYieldBoughtTotal.set(eYield, iValue);
 }
 
 int CvPlayer::getCrossesStored() const

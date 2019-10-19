@@ -504,7 +504,7 @@ public:
 	DllExport int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
 	void changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
 	int getTaxYieldModifierCount(YieldTypes eYield) const;
-	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange) const;
+	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange);
 
 	void updateGroupCycle(CvUnit* pUnit);
 	void removeGroupCycle(int iID);
@@ -986,20 +986,20 @@ protected:
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
 
-	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields - START
-	int* m_aiSeaPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiCapitalYieldRateModifier;
-	int* m_aiBuildingRequiredYieldModifier;
-	int* m_aiCityExtraYield;
-	int* m_aiExtraYieldThreshold;
-	int* m_aiYieldBuyPrice;
-	int* m_aiYieldAfricaBuyPrice; // R&R, ray, Africa
-	int* m_aiYieldPortRoyalBuyPrice; // R&R, ray, Port Royal
-	int* m_aiYieldTradedTotal;
-	int* m_aiYieldBoughtTotal;
-	int* m_aiTaxYieldModifierCount;
-	int *m_aiYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
+	EnumMap<YieldTypes, int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields - START
+	EnumMap<YieldTypes, int> m_em_iSeaPlotYield;
+	EnumMap<YieldTypes, int> m_em_iYieldRateModifier;
+	EnumMap<YieldTypes, int> m_em_iCapitalYieldRateModifier;
+	EnumMap<YieldTypes, int> m_em_iBuildingRequiredYieldModifier;
+	EnumMap<YieldTypes, int> m_em_iCityExtraYield;
+	EnumMap<YieldTypes, int> m_em_iExtraYieldThreshold;
+	EnumMap<YieldTypes, int> m_em_iYieldBuyPrice;
+	EnumMap<YieldTypes, int> m_em_iYieldAfricaBuyPrice; // R&R, ray, Africa
+	EnumMap<YieldTypes, int> m_em_iYieldPortRoyalBuyPrice; // R&R, ray, Port Royal
+	EnumMap<YieldTypes, int> m_em_iYieldTradedTotal;
+	EnumMap<YieldTypes, int> m_em_iYieldBoughtTotal;
+	EnumMap<YieldTypes, int> m_em_iTaxYieldModifierCount;
+	EnumMap<YieldTypes, int> m_em_iYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
 
 	bool* m_abYieldEuropeTradable;
 	bool* m_abFeatAccomplished;

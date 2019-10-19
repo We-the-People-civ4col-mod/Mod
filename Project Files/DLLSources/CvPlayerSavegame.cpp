@@ -163,6 +163,21 @@ enum SavegameVariableTypes
 	PlayerSave_Parent,
 	PlayerSave_ImmigrationConversion,
 
+	PlayerSave_LandPlotYield,
+	PlayerSave_SeaPlotYield,
+	PlayerSave_YieldRateModifier,
+	PlayerSave_CapitalYieldRateModifier,
+	PlayerSave_BuildingRequiredYieldModifier,
+	PlayerSave_CityExtraYield,
+	PlayerSave_ExtraYieldThreshold,
+	PlayerSave_YieldBuyPrice,
+	PlayerSave_YieldAfricaBuyPrice,
+	PlayerSave_YieldPortRoyalBuyPrice,
+	PlayerSave_YieldTradedTotal,
+	PlayerSave_YieldBoughtTotal,
+	PlayerSave_TaxYieldModifierCount,
+	PlayerSave_YieldScoreTotal,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -246,6 +261,21 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_CurrentEra: return "PlayerSave_CurrentEra";
 	case PlayerSave_Parent: return "PlayerSave_Parent";
 	case PlayerSave_ImmigrationConversion: return "PlayerSave_ImmigrationConversion";
+	
+	case PlayerSave_LandPlotYield: return "PlayerSave_LandPlotYield";
+	case PlayerSave_SeaPlotYield: return "PlayerSave_SeaPlotYield";
+	case PlayerSave_YieldRateModifier: return "PlayerSave_YieldRateModifier";
+	case PlayerSave_CapitalYieldRateModifier: return "PlayerSave_CapitalYieldRateModifier";
+	case PlayerSave_BuildingRequiredYieldModifier: return "PlayerSave_BuildingRequiredYieldModifier";
+	case PlayerSave_CityExtraYield: return "PlayerSave_CityExtraYield";
+	case PlayerSave_ExtraYieldThreshold: return "PlayerSave_ExtraYieldThreshold";
+	case PlayerSave_YieldBuyPrice: return "PlayerSave_YieldBuyPrice";
+	case PlayerSave_YieldAfricaBuyPrice: return "PlayerSave_YieldAfricaBuyPrice";
+	case PlayerSave_YieldPortRoyalBuyPrice: return "PlayerSave_YieldPortRoyalBuyPrice";
+	case PlayerSave_YieldTradedTotal: return "PlayerSave_YieldTradedTotal";
+	case PlayerSave_YieldBoughtTotal: return "PlayerSave_YieldBoughtTotal";
+	case PlayerSave_TaxYieldModifierCount: return "PlayerSave_TaxYieldModifierCount";
+	case PlayerSave_YieldScoreTotal: return "PlayerSave_YieldScoreTotal";
 	}
 	return "";
 }
@@ -343,6 +373,21 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_eCurrentEra= defaultCurrentEra;
 	m_eParent= defaultParent;
 	m_eImmigrationConversion= defaultImmigrationConversion;
+
+	m_em_iLandPlotYield.reset();
+	m_em_iSeaPlotYield.reset();
+	m_em_iYieldRateModifier.reset();
+	m_em_iCapitalYieldRateModifier.reset();
+	m_em_iBuildingRequiredYieldModifier.reset();
+	m_em_iCityExtraYield.reset();
+	m_em_iExtraYieldThreshold.reset();
+	m_em_iYieldBuyPrice.reset();
+	m_em_iYieldAfricaBuyPrice.reset();
+	m_em_iYieldPortRoyalBuyPrice.reset();
+	m_em_iYieldTradedTotal.reset();
+	m_em_iYieldBoughtTotal.reset();
+	m_em_iTaxYieldModifierCount.reset();
+	m_em_iYieldScoreTotal.reset();
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -441,6 +486,21 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_CurrentEra: reader.Read(m_eCurrentEra); break;
 		case PlayerSave_Parent: reader.Read(m_eParent); break;
 		case PlayerSave_ImmigrationConversion: reader.Read(m_eImmigrationConversion); break;
+
+		case PlayerSave_LandPlotYield: reader.Read(m_em_iLandPlotYield); break;
+		case PlayerSave_SeaPlotYield: reader.Read(m_em_iSeaPlotYield); break;
+		case PlayerSave_YieldRateModifier: reader.Read(m_em_iYieldRateModifier); break;
+		case PlayerSave_CapitalYieldRateModifier: reader.Read(m_em_iCapitalYieldRateModifier); break;
+		case PlayerSave_BuildingRequiredYieldModifier: reader.Read(m_em_iBuildingRequiredYieldModifier); break;
+		case PlayerSave_CityExtraYield: reader.Read(m_em_iCityExtraYield); break;
+		case PlayerSave_ExtraYieldThreshold: reader.Read(m_em_iExtraYieldThreshold); break;
+		case PlayerSave_YieldBuyPrice: reader.Read(m_em_iYieldBuyPrice); break;
+		case PlayerSave_YieldAfricaBuyPrice: reader.Read(m_em_iYieldAfricaBuyPrice); break;
+		case PlayerSave_YieldPortRoyalBuyPrice: reader.Read(m_em_iYieldPortRoyalBuyPrice); break;
+		case PlayerSave_YieldTradedTotal: reader.Read(m_em_iYieldTradedTotal); break;
+		case PlayerSave_YieldBoughtTotal: reader.Read(m_em_iYieldBoughtTotal); break;
+		case PlayerSave_TaxYieldModifierCount: reader.Read(m_em_iTaxYieldModifierCount); break;
+		case PlayerSave_YieldScoreTotal: reader.Read(m_em_iYieldScoreTotal); break;
 		}
 	}
 	
@@ -534,6 +594,21 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_CurrentEra, m_eCurrentEra, defaultCurrentEra);
 	writer.Write(PlayerSave_Parent, m_eParent, defaultParent);
 	writer.Write(PlayerSave_ImmigrationConversion, m_eImmigrationConversion, defaultImmigrationConversion);
+
+	writer.Write(PlayerSave_LandPlotYield, m_em_iLandPlotYield);
+	writer.Write(PlayerSave_SeaPlotYield, m_em_iSeaPlotYield);
+	writer.Write(PlayerSave_YieldRateModifier, m_em_iYieldRateModifier);
+	writer.Write(PlayerSave_CapitalYieldRateModifier, m_em_iCapitalYieldRateModifier);
+	writer.Write(PlayerSave_BuildingRequiredYieldModifier, m_em_iBuildingRequiredYieldModifier);
+	writer.Write(PlayerSave_CityExtraYield, m_em_iCityExtraYield);
+	writer.Write(PlayerSave_ExtraYieldThreshold, m_em_iExtraYieldThreshold);
+	writer.Write(PlayerSave_YieldBuyPrice, m_em_iYieldBuyPrice);
+	writer.Write(PlayerSave_YieldAfricaBuyPrice, m_em_iYieldAfricaBuyPrice);
+	writer.Write(PlayerSave_YieldPortRoyalBuyPrice, m_em_iYieldPortRoyalBuyPrice);
+	writer.Write(PlayerSave_YieldTradedTotal, m_em_iYieldTradedTotal);
+	writer.Write(PlayerSave_YieldBoughtTotal, m_em_iYieldBoughtTotal);
+	writer.Write(PlayerSave_TaxYieldModifierCount, m_em_iTaxYieldModifierCount);
+	writer.Write(PlayerSave_YieldScoreTotal, m_em_iYieldScoreTotal);
 
 	writer.Write(PlayerSave_END);
 }
