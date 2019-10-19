@@ -17,6 +17,8 @@
 #define		FVARIABLESYSTEM_H
 #pragma		once
 
+#include"CvSavegame.h"
+
 //! Represents the different types of data an FVariable can represent.
 enum eVariableType
 {
@@ -59,7 +61,10 @@ class FVariable
 		const FVariable& operator=( const FVariable& varSrc ) { CopyFrom(varSrc); return *this; }
 		void CopyFrom(const FVariable& varSrc);
 		void Read(FDataStreamBase *);
-		void Write(FDataStreamBase *) const;
+		void Write(FDataStreamBase *);
+		
+		void read(CvSavegameReader);
+		void write(CvSavegameWriter);
 
 		union
 		{

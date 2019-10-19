@@ -3,6 +3,8 @@
 
 class FDataStreamBase;
 enum SavegameVariableTypes;
+class FVariable;
+enum eVariableType;
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
@@ -23,6 +25,7 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_PLAYER,
 	SAVEGAME_CLASS_PLAYER_AI,
 	SAVEGAME_CLASS_POPUPINFO,
+	SAVEGAME_CLASS_DIPLOPARAMETERS,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -44,6 +47,7 @@ public:
 
 	void Read(SavegameVariableTypes& variable);
 
+	void Read(double& variable);
 	void Read(int& variable);
 	void Read(short& variable);
 	void Read(char& variable);
@@ -98,7 +102,9 @@ public:
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
 	void Read(CityPlotTypes         & variable) { ReadEnum(variable); }
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
+	void Read(DiploCommentTypes     & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
+	void Read(eVariableType         & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
@@ -164,6 +170,7 @@ public:
 
 	// class wrappers
 	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(FVariable             & variable);
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
 
@@ -212,6 +219,7 @@ public:
 	template<enum T>
 	void Write(T variable);
 
+	void Write(double dVar);
 	void Write(int iVar);
 	void Write(short iVar);
 	void Write(char iVar);
@@ -285,7 +293,9 @@ public:
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
+	void Write(DiploCommentTypes      variable) { WriteEnum(variable); }
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
+	void Write(eVariableType          variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
@@ -348,6 +358,7 @@ public:
 
 	// class wrappers
 	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(FVariable            &variable);
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
 

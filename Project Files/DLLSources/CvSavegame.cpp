@@ -1,6 +1,7 @@
 #include "CvGameCoreDLL.h"
 
 #include "CvSavegame.h"
+#include"FVariableSystem.h"
 
 //
 // Classes to handle savegames
@@ -51,6 +52,7 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType);
 const char* getSavedEnumNamePlayer(SavegameVariableTypes eType);
 const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType);
 const char* getSavedEnumNamePopupInfo(SavegameVariableTypes eType);
+const char* getSavedEnumNameDiploParameters(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -65,6 +67,7 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	case SAVEGAME_CLASS_PLAYER: return getSavedEnumNamePlayer(eType);
 	case SAVEGAME_CLASS_PLAYER_AI: return getSavedEnumNamePlayerAi(eType);
 	case SAVEGAME_CLASS_POPUPINFO: return getSavedEnumNamePopupInfo(eType);
+	case SAVEGAME_CLASS_DIPLOPARAMETERS: return getSavedEnumNameDiploParameters(eType);
 
 	}
 
@@ -195,6 +198,11 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 		FAssert(padding_prefix == MAX_UNSIGNED_INT);
 		FAssert(padding_postfix == MAX_UNSIGNED_INT);
 	}
+}
+
+void CvSavegameReader::Read(double& variable)
+{
+	Read((byte*)& variable, sizeof(double));
 }
 
 void CvSavegameReader::Read(int& variable)
@@ -405,6 +413,7 @@ int CvSavegameReader::GetXmlSize(JITarrayTypes eType) const
 	return -1;
 }
 
+void CvSavegameReader::Read(FVariable             & variable) { variable.read(*this); }
 
 ///
 ///
@@ -438,9 +447,14 @@ void CvSavegameWriter::AssignClassType(SavegameClassTypes eType)
 	m_eClassType = eType;
 }
 
+void CvSavegameWriter::Write(double variable)
+{
+	Write((byte*)& variable, sizeof(double));
+}
+
 void CvSavegameWriter::Write(int variable)
 {
-	Write((byte*)&variable, sizeof(int));
+	Write((byte*)& variable, sizeof(int));
 }
 
 void CvSavegameWriter::Write(short variable)
@@ -666,6 +680,8 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 	}
 }
 
+void CvSavegameWriter::Write(FVariable            &variable) { variable.write(*this); }
+
 
 ///
 ///
@@ -786,6 +802,7 @@ int getNumSavedEnumValuesCityAI();
 int getNumSavedEnumValuesPlayer();
 int getNumSavedEnumValuesPlayerAI();
 int getNumSavedEnumValuesPopupInfo();
+int getNumSavedEnumValuesDiploParameters();
 
 void CvSavegameWriterBase::InitSavegame()
 {
@@ -817,6 +834,7 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_PLAYER:      iCount = getNumSavedEnumValuesPlayer();    break;
 		case SAVEGAME_CLASS_PLAYER_AI:   iCount = getNumSavedEnumValuesPlayerAI();  break;
 		case SAVEGAME_CLASS_POPUPINFO:   iCount = getNumSavedEnumValuesPopupInfo(); break;
+		case SAVEGAME_CLASS_DIPLOPARAMETERS:   iCount = getNumSavedEnumValuesDiploParameters(); break;
 
 		default:
 			FAssertMsg(false, "missing case");
