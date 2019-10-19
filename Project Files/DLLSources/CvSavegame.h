@@ -5,6 +5,7 @@ class FDataStreamBase;
 enum SavegameVariableTypes;
 class FVariable;
 enum eVariableType;
+struct CvPopupButtonPython;
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
@@ -170,6 +171,7 @@ public:
 
 	// class wrappers
 	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(CvPopupButtonPython   & variable);
 	void Read(FVariable             & variable);
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
@@ -358,6 +360,7 @@ public:
 
 	// class wrappers
 	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(CvPopupButtonPython  &variable);
 	void Write(FVariable            &variable);
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }

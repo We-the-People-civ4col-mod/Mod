@@ -1,7 +1,8 @@
 #include "CvGameCoreDLL.h"
 
 #include "CvSavegame.h"
-#include"FVariableSystem.h"
+#include "FVariableSystem.h"
+#include "CvPopupInfo.h"
 
 //
 // Classes to handle savegames
@@ -414,6 +415,7 @@ int CvSavegameReader::GetXmlSize(JITarrayTypes eType) const
 }
 
 void CvSavegameReader::Read(FVariable             & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvPopupButtonPython   & variable) { variable.read(*this); }
 
 ///
 ///
@@ -681,6 +683,7 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 }
 
 void CvSavegameWriter::Write(FVariable            &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvPopupButtonPython  &variable) { variable.write(*this); }
 
 
 ///

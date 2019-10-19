@@ -115,23 +115,14 @@ void CvPopupInfo::read(CvSavegameReader reader)
 		case PopupInfoSave_OnFocusPythonCallback: reader.Read(m_szOnFocusPythonCallback); break;
 		case PopupInfoSave_OnClickedPythonCallback: reader.Read(m_szOnClickedPythonCallback); break;
 		case PopupInfoSave_PythonModule: reader.Read(m_szPythonModule); break;
-		case PopupInfoSave_PythonButtons: 
-			uint iSize;
-			reader.Read(iSize);
-			m_aPythonButtons.resize(iSize);
-			for (uint i = 0; i < iSize; i++)
-			{
-				reader.Read(m_aPythonButtons[i].szText);
-				reader.Read(m_aPythonButtons[i].szArt);
-			}
-			break;
+		case PopupInfoSave_PythonButtons: reader.Read(m_aPythonButtons); break;
 		
 		}
 	}
 	
 }
 
-void CvPopupInfo::write(CvSavegameWriter writer) const
+void CvPopupInfo::write(CvSavegameWriter writer)
 {
 	writer.AssignClassType(SAVEGAME_CLASS_POPUPINFO);
 
@@ -154,18 +145,18 @@ void CvPopupInfo::write(CvSavegameWriter writer) const
 	writer.Write(PopupInfoSave_OnClickedPythonCallback, m_szOnClickedPythonCallback);
 
 	writer.Write(PopupInfoSave_PythonModule, m_szPythonModule);
-	uint iSize = m_aPythonButtons.size();
-	if(iSize>0)
-	{
-		writer.Write(PopupInfoSave_PythonButtons);
-		writer.Write(iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			writer.Write(m_aPythonButtons[i].szText);
-			writer.Write(m_aPythonButtons[i].szArt);
-		}
-
-	}
+	writer.Write(PopupInfoSave_PythonButtons, m_aPythonButtons);
 	
 	writer.Write(PopupInfoSave_END);
 }
+
+	void CvPopupButtonPython::read(CvSavegameReader reader)
+	{
+		reader.Read(szText);
+		reader.Read(szArt);
+	}
+	void CvPopupButtonPython::write(CvSavegameWriter writer)
+	{
+		writer.Write(szText);
+		writer.Write(szArt);
+	}
