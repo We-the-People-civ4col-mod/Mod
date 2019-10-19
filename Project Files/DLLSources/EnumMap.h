@@ -385,7 +385,7 @@ private:
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks<bINLINE_BOOL>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 
 	// allocate
@@ -468,7 +468,7 @@ private:
 			reader.Read(iBuffer);
 			eStart = (LengthType)iBuffer;
 			reader.Read(iBuffer);
-			eEmd = (LengthType)iBuffer;
+			eEnd = (LengthType)iBuffer;
 		}
 		else
 		{
@@ -476,12 +476,12 @@ private:
 			reader.Read(iBuffer);
 			eStart = (LengthType)iBuffer;
 			reader.Read(iBuffer);
-			eEmd = (LengthType)iBuffer;
+			eEnd = (LengthType)iBuffer;
 		}
 
 		byte iBuffer;
 
-		for (LengthType eLoop = eStart; eLoop <= eEnd; eLoop = (LengthType)(eLoop + 1))
+		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
 		{
 			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
 			if (iBlockIndex == 0)
@@ -527,9 +527,6 @@ private:
 			eEnd = (LengthType)0;
 		}
 
-		writer.Write(eStart);
-		writer.Write(eEnd);
-
 		if (iLength <= 0x100)
 		{
 			byte iBuffer = eStart;
@@ -545,20 +542,19 @@ private:
 			writer.Write(iBuffer);
 		}
 
-		const byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+		byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
 
 		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
 		{
 			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
 			if (iBlockIndex == 0)
 			{
-				// read next block
+				// write next block
 				writer.Write(iBuffer);
 				iBuffer = (byte)BOOL_BLOCK_DEFAULT;
 			}
 			SetBit(iBuffer, get(eLoop));
 		}
-		writer.Write(iBuffer);
 	}
 };
 
@@ -705,7 +701,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 	{
 		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
 		{
-			if (m_pArrayBool[i] != BOOL_BLOCK_DEFAULT)
+			if (m_InlineBoolArray[i] != BOOL_BLOCK_DEFAULT)
 			{
 				return true;
 			}
@@ -1291,6 +1287,7 @@ SET_ARRAY_XML_ENUM(EventTypes          , NUM_EVENT_TYPES          , JIT_ARRAY_EV
 SET_ARRAY_XML_ENUM(EventTriggerTypes   , NUM_EVENTTRIGGER_TYPES   , JIT_ARRAY_EVENT_TRIGGER   , COMPILE_TIME_NUM_EVENTTRIGGER_TYPES   );
 SET_ARRAY_XML_ENUM(FatherTypes         , NUM_FATHER_TYPES         , JIT_ARRAY_FATHER          , COMPILE_TIME_NUM_FATHER_TYPES         );
 SET_ARRAY_XML_ENUM(FatherPointTypes    , NUM_FATHER_POINT_TYPES   , JIT_ARRAY_FATHER_POINT    , COMPILE_TIME_NUM_FATHER_POINT_TYPES   );
+SET_ARRAY_XML_ENUM(FeatTypes           , NUM_FEAT_TYPES           , JIT_ARRAY_FEAT            , COMPILE_TIME_NUM_FEAT_TYPES           );
 SET_ARRAY_XML_ENUM(FeatureTypes        , NUM_FEATURE_TYPES        , JIT_ARRAY_FEATURE         , COMPILE_TIME_NUM_FEATURE_TYPES        );
 SET_ARRAY_XML_ENUM(GameOptionTypes     , NUM_GAMEOPTION_TYPES     , JIT_ARRAY_GAME_OPTION     , COMPILE_TIME_NUM_GAMEOPTION_TYPES     );
 SET_ARRAY_XML_ENUM(GameSpeedTypes      , NUM_GAMESPEED_TYPES      , JIT_ARRAY_GAME_SPEED      , COMPILE_TIME_NUM_GAMESPEED_TYPES      );

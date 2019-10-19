@@ -1874,8 +1874,11 @@ enum DllExport FeatTypes
 	FEAT_PAD,
 
 #ifdef _USRDLL
-	NUM_FEAT_TYPES
+	NUM_FEAT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_FEAT_TYPES = NUM_FEAT_TYPES
+
 };
 
 enum DllExport SaveGameTypes

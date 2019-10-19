@@ -110,6 +110,11 @@ static inline JITarrayTypes getJITarrayType(FatherPointTypes var)
 	return JIT_ARRAY_FATHER_POINT;
 }
 
+static inline JITarrayTypes getJITarrayType(FeatTypes var)
+{
+	return JIT_ARRAY_FEAT;
+}
+
 static inline JITarrayTypes getJITarrayType(FeatureTypes var)
 {
 	return JIT_ARRAY_FEATURE;

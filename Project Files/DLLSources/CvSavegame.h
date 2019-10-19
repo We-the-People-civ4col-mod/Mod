@@ -131,6 +131,7 @@ public:
 	void Read(EventTriggerTypes     & variable) { ReadXmlEnum(variable); }
 	void Read(FatherTypes           & variable) { ReadXmlEnum(variable); }
 	void Read(FatherPointTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(FeatTypes             & variable) { ReadXmlEnum(variable); }
 	void Read(FeatureTypes          & variable) { ReadXmlEnum(variable); }
 	void Read(GameOptionTypes       & variable) { ReadXmlEnum(variable); }
 	void Read(GameSpeedTypes        & variable) { ReadXmlEnum(variable); }
@@ -314,6 +315,7 @@ public:
 	void Write(EventTriggerTypes     variable) { WriteXmlEnum(variable); }
 	void Write(FatherTypes           variable) { WriteXmlEnum(variable); }
 	void Write(FatherPointTypes      variable) { WriteXmlEnum(variable); }
+	void Write(FeatTypes             variable) { WriteXmlEnum(variable); }
 	void Write(FeatureTypes          variable) { WriteXmlEnum(variable); }
 	void Write(GameOptionTypes       variable) { WriteXmlEnum(variable); }
 	void Write(GameSpeedTypes        variable) { WriteXmlEnum(variable); }
