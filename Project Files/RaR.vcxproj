@@ -51,6 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp" />
     <ClCompile Include="DLLSources\PlayerArray.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
     <ClCompile Include="DLLSources\PlayerBoolArray.cpp" />

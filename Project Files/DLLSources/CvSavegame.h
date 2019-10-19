@@ -22,6 +22,8 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_CITY_AI,
 	SAVEGAME_CLASS_PLAYER,
 	SAVEGAME_CLASS_PLAYER_AI,
+	SAVEGAME_CLASS_POPUPINFO,
+
 	NUM_SAVEGAME_CLASS_TYPES,
 
 	FIRST_SAVEGAME_CLASS_TYPES = 0,
@@ -91,6 +93,7 @@ public:
 
 	// Add all enums used in savegames (single byte)
 	void Read(AreaAITypes           & variable) { ReadEnum(variable); }
+	void Read(ButtonPopupTypes      & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
 	void Read(CityPlotTypes         & variable) { ReadEnum(variable); }
@@ -278,6 +281,7 @@ public:
 
 	// Add all enums used in savegames (single byte)
 	void Write(AreaAITypes            variable) { WriteEnum(variable); }
+	void Write(ButtonPopupTypes       variable) { WriteEnum(variable); }
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
