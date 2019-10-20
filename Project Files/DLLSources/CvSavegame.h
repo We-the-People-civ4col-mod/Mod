@@ -29,7 +29,8 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_DIPLOPARAMETERS,
 	SAVEGAME_CLASS_TALKINGHEADMESSAGE,
 	SAVEGAME_CLASS_TRADEROUTE,
-	
+	SAVEGAME_CLASS_TRADEROUTEGROUP,
+
 	NUM_SAVEGAME_CLASS_TYPES,
 
 	FIRST_SAVEGAME_CLASS_TYPES = 0,
@@ -177,6 +178,7 @@ public:
 	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
 	void Read(CvPopupButtonPython   & variable);
 	void Read(FVariable             & variable);
+	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
 
@@ -369,6 +371,7 @@ public:
 	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
 	void Write(CvPopupButtonPython  &variable);
 	void Write(FVariable            &variable);
+	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
 

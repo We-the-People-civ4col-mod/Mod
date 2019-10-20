@@ -56,6 +56,7 @@ const char* getSavedEnumNamePopupInfo(SavegameVariableTypes eType);
 const char* getSavedEnumNameDiploParameters(SavegameVariableTypes eType);
 const char* getSavedEnumNameTalkingHeadMessage(SavegameVariableTypes eType);
 const char* getSavedEnumNameTradeRoute(SavegameVariableTypes eType);
+const char* getSavedEnumNameTradeRouteGroup(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -73,6 +74,7 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	case SAVEGAME_CLASS_DIPLOPARAMETERS: return getSavedEnumNameDiploParameters(eType);
 	case SAVEGAME_CLASS_TALKINGHEADMESSAGE: return getSavedEnumNameTalkingHeadMessage(eType);
 	case SAVEGAME_CLASS_TRADEROUTE: return getSavedEnumNameTradeRoute(eType);
+	case SAVEGAME_CLASS_TRADEROUTEGROUP: return getSavedEnumNameTradeRouteGroup(eType);
 
 	}
 
@@ -812,6 +814,7 @@ int getNumSavedEnumValuesPopupInfo();
 int getNumSavedEnumValuesDiploParameters();
 int getNumSavedEnumValuesTalkingHeadMessage();
 int getNumSavedEnumValuesTradeRoute();
+int getNumSavedEnumValuesTradeRouteGroup();
 
 void CvSavegameWriterBase::InitSavegame()
 {
@@ -846,6 +849,7 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_DIPLOPARAMETERS:   iCount = getNumSavedEnumValuesDiploParameters(); break;
 		case SAVEGAME_CLASS_TALKINGHEADMESSAGE:   iCount = getNumSavedEnumValuesTalkingHeadMessage(); break;
 		case SAVEGAME_CLASS_TRADEROUTE:  iCount = getNumSavedEnumValuesTradeRoute(); break;
+		case SAVEGAME_CLASS_TRADEROUTEGROUP:  iCount = getNumSavedEnumValuesTradeRouteGroup(); break;
 
 		default:
 			FAssertMsg(false, "missing case");

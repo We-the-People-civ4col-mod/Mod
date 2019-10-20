@@ -24,6 +24,11 @@ public:
 	
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData();
 	
 	static const int EUROPE_CITY_ID = -1;
 	static const int ANYWHERE_CITY_ID = -2;
@@ -31,7 +36,7 @@ public:
 protected:	
 	int m_iId;	
 	CvWString m_sName;	
-	std::vector<CvTradeRoute> m_routes; 
+	std::vector<CvTradeRoute> m_Routes; 
 	
 };
 
