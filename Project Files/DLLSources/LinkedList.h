@@ -407,7 +407,7 @@ inline void CLinkList< T >::Read( CvSavegameReader& reader )
 	for ( int i = 0; i < iLength; i++ )
 	{
 		T Data;
-		Data.read(reader);
+		reader.Read(Data);
 		insertAtEnd(Data);
 	}
 }
@@ -420,7 +420,7 @@ inline void CLinkList< T >::Write( CvSavegameWriter& writer ) const
 	CLLNode< T >* pNode = head();
 	while ( pNode )
 	{
-		pNode->m_data.write(writer);
+		writer.Write(pNode->m_data);
 		pNode = next( pNode );
 	}
 }

@@ -91,11 +91,16 @@ public:
 	void Read(std::vector<T*>& vec);
 
 	template<class T>
+	void Read(FFreeListTrashArray<T>& array);
+
+	template<class T>
+	void Read(CvIdVector<T>& vec);
+
+	template<class T>
 	void Read(CLinkList<T>& lList);
 
 	void Read(BoolArray& baArray);
 	void Read(PlayerBoolArrayBase& array);
-	void Read(IDInfo& idInfo);
 
 	// workaround because we can't use references on bitfields
 	template<typename T>
@@ -186,6 +191,10 @@ public:
 	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
+	void Read(IDInfo                & variable) { variable.read(*this); }
+	void Read(MissionData           & variable) { variable.read(*this); }
+	void Read(OrderData             & variable) { variable.read(*this); }
+	void Read(TradeData             & variable) { variable.read(*this); }
 
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
 	int GetXmlSize(JITarrayTypes eType) const;
@@ -263,6 +272,12 @@ public:
 
 	template<class T>
 	void Write(std::vector<T*>& vec);
+	
+	template<class T>
+	void Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array);
+	
+	template<class T>
+	void Write(SavegameVariableTypes eType, CvIdVector<T>& vec);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, std::vector<T*>& vec);
@@ -382,6 +397,10 @@ public:
 	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
+	void Write(IDInfo               &variable) { variable.write(*this); }
+	void Write(MissionData          &variable) { variable.write(*this); }
+	void Write(OrderData            &variable) { variable.write(*this); }
+	void Write(TradeData            &variable) { variable.write(*this); }
 
 	// get the amount of bytes needed to save the variable in question
 	// also tells the savegame that a conversion table is needed
@@ -501,6 +520,18 @@ inline void CvSavegameReader::Read(std::vector<T*>& vec)
 }
 
 template<class T>
+inline void CvSavegameReader::Read(FFreeListTrashArray<T>& array)
+{
+	ReadStreamableFFreeListTrashArray(array, *this);
+}
+
+template<class T>
+inline void CvSavegameReader::Read(CvIdVector<T>& vec)
+{
+	vec.Read(this);
+}
+
+template<class T>
 inline void CvSavegameReader::Read(CLinkList<T>& lList)
 {
 	lList.Read(*this);
@@ -558,6 +589,26 @@ inline void CvSavegameWriter::Write(std::vector<T*>& vec)
 	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		Write(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array)
+{
+	if (array.getCount() > 0)
+	{
+		Write(eType);
+		WriteStreamableFFreeListTrashArray(array, *this);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, CvIdVector<T>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		vec.Write(this);
 	}
 }
 

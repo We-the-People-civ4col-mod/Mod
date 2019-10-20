@@ -316,11 +316,6 @@ void CvSavegameReader::Read(PlayerBoolArrayBase& array)
 	array.Read(*this);
 }
 
-void CvSavegameReader::Read(IDInfo& idInfo)
-{
-	idInfo.read(*this);
-}
-
 void CvSavegameReader::ReadXmlEnum(int& iVariable, JITarrayTypes eType)
 {
 	FAssert(eType >= 0 && eType < NUM_JITarrayTypes);

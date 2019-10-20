@@ -206,6 +206,12 @@ enum SavegameVariableTypes
 	PlayerSave_ImprovementYieldChange,
 	PlayerSave_BuildingYieldChange,
 
+	PlayerSave_groupCycle,
+	PlayerSave_CityNames,
+	PlayerSave_cities,
+	PlayerSave_tradeRoutes,
+	PlayerSave_units,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -333,6 +339,11 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 
 	case PlayerSave_ImprovementYieldChange: return "PlayerSave_ImprovementYieldChange";
 	case PlayerSave_BuildingYieldChange: return "PlayerSave_BuildingYieldChange";
+	case PlayerSave_groupCycle: return "PlayerSave_groupCycle";
+	case PlayerSave_CityNames: return "PlayerSave_CityNames";
+	case PlayerSave_cities: return "PlayerSave_cities";
+	case PlayerSave_tradeRoutes: return "PlayerSave_tradeRoutes";
+	case PlayerSave_units: return "PlayerSave_units";
 	}
 	return "";
 }
@@ -474,6 +485,12 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 
 	m_em_iImprovementYieldChange.reset();
 	m_em_iBuildingYieldChange.reset();
+
+	m_groupCycle.clear();
+	m_aszCityNames.clear();
+	m_cities.init();
+	m_tradeRoutes.clear();
+	m_units.reset();
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -567,7 +584,9 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_FoundedFirstCity: reader.Read(m_bFoundedFirstCity); break;
 		case PlayerSave_Strike: reader.Read(m_bStrike); break;
 
-		case PlayerSave_ID: reader.Read(m_eID); break;
+		case PlayerSave_ID: reader.Read(m_eID);
+			updateTeamType(); //m_eTeamType not saved
+			break;
 		case PlayerSave_PersonalityType: reader.Read(m_ePersonalityType); break;
 		case PlayerSave_CurrentEra: reader.Read(m_eCurrentEra); break;
 		case PlayerSave_Parent: reader.Read(m_eParent); break;
@@ -616,11 +635,16 @@ void CvPlayer::read(CvSavegameReader reader)
 
 		case PlayerSave_ImprovementYieldChange: reader.Read(m_em_iImprovementYieldChange); break;
 		case PlayerSave_BuildingYieldChange: reader.Read(m_em_iBuildingYieldChange); break;
+		
+		case PlayerSave_groupCycle: reader.Read(m_groupCycle); break;
+		case PlayerSave_CityNames: reader.Read(m_aszCityNames); break;
+		case PlayerSave_cities: reader.Read(m_cities); break;
+		case PlayerSave_tradeRoutes: reader.Read(m_tradeRoutes); break;
+		case PlayerSave_units: reader.Read(m_units); break;
 		}
 	}
 	
 	// The player is loaded. Now set up the cache according to the read data.
-	updateTeamType(); //m_eTeamType not saved
 	updateHuman();
 }
 
@@ -754,6 +778,11 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_ImprovementYieldChange, m_em_iImprovementYieldChange);
 	writer.Write(PlayerSave_BuildingYieldChange, m_em_iBuildingYieldChange);
 
+	writer.Write(PlayerSave_groupCycle, m_groupCycle);
+	writer.Write(PlayerSave_CityNames, m_aszCityNames);
+	writer.Write(PlayerSave_cities, m_cities);
+	writer.Write(PlayerSave_tradeRoutes, m_tradeRoutes);
+	writer.Write(PlayerSave_units, m_units);
 
 	writer.Write(PlayerSave_END);
 }

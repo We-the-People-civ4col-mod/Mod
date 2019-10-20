@@ -12266,29 +12266,10 @@ void CvPlayer::setPbemNewTurn(bool bNew)
 void CvPlayer::read(FDataStreamBase* pStream)
 {
 	// Init data before load
-
-	// The CivEffect cache isn't saved. Instead it's recalculated on load.
+// The CivEffect cache isn't saved. Instead it's recalculated on load.
 	// This will make it adapt to changed xml settings.
 	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
 	CivEffect()->rebuildCivEffectCache();
-
-	m_groupCycle.Read(pStream);
-	{
-		CvWString szBuffer;
-		uint iSize;
-		pStream->Read(&iSize);
-		m_aszCityNames.resize(iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			pStream->ReadString(szBuffer);
-			m_aszCityNames[i] = szBuffer;
-		}
-	}
-
-	ReadStreamableFFreeListTrashArray(m_cities, pStream);
-	m_tradeRoutes.Read(pStream);
-	m_units.Read(pStream);
-
 	freeEuropeUnits();
 	int iNumEuropeUnits;
 	pStream->Read(&iNumEuropeUnits);
@@ -12609,20 +12590,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {
-
-	m_groupCycle.Write(pStream);
-	{
-		uint iSize = m_aszCityNames.size();
-		pStream->Write(iSize);
-		for (uint i = 0; i < iSize; ++i)
-		{
-			pStream->WriteString(m_aszCityNames[i]);
-		}
-	}
-
-	WriteStreamableFFreeListTrashArray(m_cities, pStream);
-	m_tradeRoutes.Write(pStream);
-	m_units.Write(pStream);
 
 	pStream->Write((int)m_aEuropeUnits.size());
 	for(int i=0;i<(int)m_aEuropeUnits.size();i++)
