@@ -27,6 +27,7 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_PLAYER_AI,
 	SAVEGAME_CLASS_POPUPINFO,
 	SAVEGAME_CLASS_DIPLOPARAMETERS,
+	SAVEGAME_CLASS_TALKINGHEADMESSAGE,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -101,12 +102,14 @@ public:
 	void Read(ButtonPopupTypes      & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
+	void Read(ChatTargetTypes       & variable) { ReadEnum(variable); }
 	void Read(CityPlotTypes         & variable) { ReadEnum(variable); }
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
 	void Read(DiploCommentTypes     & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(eVariableType         & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(InterfaceMessageTypes & variable) { ReadEnum(variable); }
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
@@ -294,11 +297,14 @@ public:
 	void Write(ButtonPopupTypes       variable) { WriteEnum(variable); }
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
+	void Write(ChatTargetTypes        variable) { WriteEnum(variable); }
+	void Write(CityPlotTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
 	void Write(DiploCommentTypes      variable) { WriteEnum(variable); }
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
 	void Write(eVariableType          variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(InterfaceMessageTypes  variable) { WriteEnum(variable); }
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }

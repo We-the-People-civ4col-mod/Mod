@@ -2,6 +2,8 @@
 
 #ifndef TALKINGHEADMESSAGE_H
 #define TALKINGHEADMESSAGE_H
+class CvSavegameReader;
+class CvSavegameWriter;
 
 class CvTalkingHeadMessage
 {
@@ -10,7 +12,12 @@ public:
 	DllExport virtual ~CvTalkingHeadMessage(void);
 
 	void read(FDataStreamBase& stream);
-	void write(FDataStreamBase& stream) const;
+	void write(FDataStreamBase& stream);
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData();
 
 	// Accessors
 	DllExport const wchar* getDescription() const;
