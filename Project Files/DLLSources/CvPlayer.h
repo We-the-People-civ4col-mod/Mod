@@ -1001,7 +1001,7 @@ protected:
 	EnumMap<YieldTypes, int> m_em_iTaxYieldModifierCount;
 	EnumMap<YieldTypes, int> m_em_iYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
 
-	EnumMap<YieldTypes, bool> m_em_bYieldEuropeTradable;
+	EnumMapDefault<YieldTypes, bool, true> m_em_bYieldEuropeTradable;
 	EnumMap<FeatTypes, bool> m_em_bFeatAccomplished;
 	EnumMap<PlayerOptionTypes, bool> m_em_bOptions;
 
