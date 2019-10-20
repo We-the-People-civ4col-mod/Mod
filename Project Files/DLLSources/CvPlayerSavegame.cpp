@@ -212,6 +212,10 @@ enum SavegameVariableTypes
 	PlayerSave_tradeRoutes,
 	PlayerSave_units,
 
+	PlayerSave_EuropeUnits,
+	PlayerSave_AfricaUnits,
+	PlayerSave_PortRoyalUnits,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -344,6 +348,10 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_cities: return "PlayerSave_cities";
 	case PlayerSave_tradeRoutes: return "PlayerSave_tradeRoutes";
 	case PlayerSave_units: return "PlayerSave_units";
+
+	case PlayerSave_EuropeUnits: return "PlayerSave_EuropeUnits";
+	case PlayerSave_AfricaUnits: return "PlayerSave_AfricaUnits";
+	case PlayerSave_PortRoyalUnits: return "PlayerSave_PortRoyalUnits";
 	}
 	return "";
 }
@@ -491,6 +499,11 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_cities.init();
 	m_tradeRoutes.clear();
 	m_units.reset();
+
+	freeEuropeUnits();
+	freeAfricaUnits();
+	freePortRoyalUnits();
+
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -641,9 +654,13 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_cities: reader.Read(m_cities); break;
 		case PlayerSave_tradeRoutes: reader.Read(m_tradeRoutes); break;
 		case PlayerSave_units: reader.Read(m_units); break;
+
+		case PlayerSave_EuropeUnits: reader.Read(m_aEuropeUnits); break;
+		case PlayerSave_AfricaUnits: reader.Read(m_aAfricaUnits); break;
+		case PlayerSave_PortRoyalUnits: reader.Read(m_aPortRoyalUnits); break;
 		}
 	}
-	
+
 	// The player is loaded. Now set up the cache according to the read data.
 	updateHuman();
 }
@@ -783,6 +800,10 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_cities, m_cities);
 	writer.Write(PlayerSave_tradeRoutes, m_tradeRoutes);
 	writer.Write(PlayerSave_units, m_units);
+
+	writer.Write(PlayerSave_EuropeUnits, m_aEuropeUnits);
+	writer.Write(PlayerSave_AfricaUnits, m_aAfricaUnits);
+	writer.Write(PlayerSave_PortRoyalUnits, m_aPortRoyalUnits);
 
 	writer.Write(PlayerSave_END);
 }

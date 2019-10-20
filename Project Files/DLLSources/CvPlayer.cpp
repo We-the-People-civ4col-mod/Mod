@@ -12270,39 +12270,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	// This will make it adapt to changed xml settings.
 	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
 	CivEffect()->rebuildCivEffectCache();
-	freeEuropeUnits();
-	int iNumEuropeUnits;
-	pStream->Read(&iNumEuropeUnits);
-	for(int i=0;i<iNumEuropeUnits;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aEuropeUnits.push_back(pUnit);
-	}
-
-	/*** TRIANGLETRADE 10/23/08 by DPII ***/
-	freeAfricaUnits();
-	int iNumAfricaUnits;
-	pStream->Read(&iNumAfricaUnits);
-	for(int i=0;i<iNumAfricaUnits;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aAfricaUnits.push_back(pUnit);
-	}
-	/**************************************/
-	// R&R, ray, Port Royal
-	freePortRoyalUnits();
-	int iNumPortRoyalUnits;
-	pStream->Read(&iNumPortRoyalUnits);
-	for(int i=0;i<iNumPortRoyalUnits;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aPortRoyalUnits.push_back(pUnit);
-	}
-	// R&R, ray, Port Royal - END
-
 	
 	m_aTradeGroups.Read(pStream); //R&R mod, vetiarvind, trade groups	
 	
@@ -12589,29 +12556,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 // used during save
 //
 void CvPlayer::write(FDataStreamBase* pStream)
-{
-
-	pStream->Write((int)m_aEuropeUnits.size());
-	for(int i=0;i<(int)m_aEuropeUnits.size();i++)
-	{
-		m_aEuropeUnits[i]->write(pStream);
-	}
-
-	/*** TRIANGLETRADE 10/23/08 by DPII ***/
-	pStream->Write((int)m_aAfricaUnits.size());
-	for(int i=0;i<(int)m_aAfricaUnits.size();i++)
-	{
-		m_aAfricaUnits[i]->write(pStream);
-	}
-	/**************************************/
-	// R&R, ray, Port Royal
-	pStream->Write((int)m_aPortRoyalUnits.size());
-	for(int i=0;i<(int)m_aPortRoyalUnits.size();i++)
-	{
-		m_aPortRoyalUnits[i]->write(pStream);
-	}
-	// R&R, ray, Port Royal
-		
+{		
 	m_aTradeGroups.Write(pStream); //R&R mod, vetiarvind, trade groups	
 
 	WriteStreamableFFreeListTrashArray(m_selectionGroups, pStream);
