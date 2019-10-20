@@ -89,6 +89,9 @@ struct DllExport MissionData
 	int iData2;
 	int iFlags;
 	int iPushTurn;
+	
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport TradeData

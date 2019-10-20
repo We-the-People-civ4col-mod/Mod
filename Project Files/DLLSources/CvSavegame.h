@@ -30,6 +30,7 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_TALKINGHEADMESSAGE,
 	SAVEGAME_CLASS_TRADEROUTE,
 	SAVEGAME_CLASS_TRADEROUTEGROUP,
+	SAVEGAME_CLASS_SELECTIONGROUP,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -100,7 +101,9 @@ public:
 	T ReadBitfield(T variable);
 
 	// Add all enums used in savegames (single byte)
+	void Read(ActivityTypes         & variable) { ReadEnum(variable); }
 	void Read(AreaAITypes           & variable) { ReadEnum(variable); }
+	void Read(AutomateTypes         & variable) { ReadEnum(variable); }
 	void Read(ButtonPopupTypes      & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
@@ -296,7 +299,9 @@ public:
 	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
 
 	// Add all enums used in savegames (single byte)
+	void Write(ActivityTypes          variable) { WriteEnum(variable); }
 	void Write(AreaAITypes            variable) { WriteEnum(variable); }
+	void Write(AutomateTypes          variable) { WriteEnum(variable); }
 	void Write(ButtonPopupTypes       variable) { WriteEnum(variable); }
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
