@@ -31,6 +31,7 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_TRADEROUTE,
 	SAVEGAME_CLASS_TRADEROUTEGROUP,
 	SAVEGAME_CLASS_SELECTIONGROUP,
+	SAVEGAME_CLASS_SELECTIONGROUP_AI,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -115,6 +116,7 @@ public:
 	void Read(eVariableType         & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
 	void Read(InterfaceMessageTypes & variable) { ReadEnum(variable); }
+	void Read(MissionAITypes        & variable) { ReadEnum(variable); }
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
@@ -313,6 +315,7 @@ public:
 	void Write(eVariableType          variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
 	void Write(InterfaceMessageTypes  variable) { WriteEnum(variable); }
+	void Write(MissionAITypes         variable) { WriteEnum(variable); }
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
