@@ -1021,7 +1021,7 @@ protected:
 	EnumMap<HurryTypes, int> m_em_iHurryCount;
 	EnumMap<SpecialBuildingTypes, int> m_em_iSpecialBuildingNotRequiredCount;
 	EnumMap<PlayerTypes, int> m_em_iMissionaryPoints;
-	EnumMap<PlayerTypes, int> m_em_iMissionaryThresholdMultiplier;
+	EnumMapDefault<PlayerTypes, int, 100> m_em_iMissionaryThresholdMultiplier;
 	EnumMap<ProfessionTypes, int> m_em_iProfessionEquipmentModifier;
 	EnumMap<TraitTypes, int> m_em_iTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

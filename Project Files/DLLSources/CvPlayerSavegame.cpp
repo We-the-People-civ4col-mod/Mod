@@ -481,6 +481,8 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_em_iBuildingClassCount.reset();
 	m_em_iBuildingClassMaking.reset();
 	m_em_iHurryCount.reset();
+	for(HurryTypes eI=FIRST_HURRY;eI<NUM_HURRY_TYPES;eI++)
+		m_em_iHurryCount.set(eI,GC.getHurryInfo(eI).isStarting() ? 1 : 0);
 	m_em_iSpecialBuildingNotRequiredCount.reset();
 	m_em_iMissionaryPoints.reset();
 	m_em_iMissionaryThresholdMultiplier.reset();
