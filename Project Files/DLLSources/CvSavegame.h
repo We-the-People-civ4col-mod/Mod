@@ -122,6 +122,7 @@ public:
 	void Read(GameType              & variable) { ReadEnum(variable); }
 	void Read(InterfaceMessageTypes & variable) { ReadEnum(variable); }
 	void Read(MissionAITypes        & variable) { ReadEnum(variable); }
+	void Read(MissionTypes          & variable) { ReadEnum(variable); }
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
@@ -331,6 +332,7 @@ public:
 	void Write(GameType               variable) { WriteEnum(variable); }
 	void Write(InterfaceMessageTypes  variable) { WriteEnum(variable); }
 	void Write(MissionAITypes         variable) { WriteEnum(variable); }
+	void Write(MissionTypes           variable) { WriteEnum(variable); }
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
@@ -338,6 +340,7 @@ public:
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
 	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
+	void Write(TradeableItems         variable) { WriteEnum(variable); }
 	void Write(UnitAIStates           variable) { WriteEnum(variable); }
 	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
 

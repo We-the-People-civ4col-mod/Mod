@@ -403,6 +403,21 @@
     <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvSelectionGroupAISavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvSelectionGroupSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTalkingHeadMessageSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTradeRouteGroupSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">

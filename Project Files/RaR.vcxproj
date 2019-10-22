@@ -53,6 +53,11 @@
   <ItemGroup>
     <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp" />
     <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvSelectionGroupAISavegame.cpp" />
+    <ClCompile Include="DLLSources\CvSelectionGroupSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTalkingHeadMessageSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTradeRouteGroupSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp" />
     <ClCompile Include="DLLSources\PlayerArray.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
     <ClCompile Include="DLLSources\PlayerBoolArray.cpp" />

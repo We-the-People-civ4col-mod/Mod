@@ -59,6 +59,7 @@ void OrderData::write(CvSavegameWriter& writer) const
 
 void MissionData::read(CvSavegameReader& reader)
 {
+	reader.Read(eMissionType);
 	reader.Read(iData1);
 	reader.Read(iData2);
 	reader.Read(iFlags);
@@ -67,6 +68,7 @@ void MissionData::read(CvSavegameReader& reader)
 
 void MissionData::write(CvSavegameWriter& writer) const
 {
+	writer.Write(eMissionType);
 	writer.Write(iData1);
 	writer.Write(iData2);
 	writer.Write(iFlags);
