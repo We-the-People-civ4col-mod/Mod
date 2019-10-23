@@ -82,6 +82,19 @@ const EraTypes defaultCurrentEra = ((EraTypes)0);
 const PlayerTypes defaultParent = NO_PLAYER;
 const YieldTypes defaultImmigrationConversion = YIELD_CROSSES;
 
+const int defaultPopRushHurryCount = 0;
+const int defaultCrossesStored = 0;
+const int defaultBellsStored = 0;
+const int defaultTaxRate = 0;
+const int defaultMaxTaxRate = 50;
+const int defaultNBMOD_REF_StartValue = 0;
+const int defaultNativeCombatModifier = 0;
+const int defaultDominateNativeBordersCount = 0;
+const int defaultRevolutionEuropeTradeCount = 0;
+const int defaultFatherPointMultiplier = 100;
+const int defaultMissionaryRateModifier = 0;
+const int defaultNativeTradeModifier = 0;
+
 
 // 
 enum SavegameVariableTypes
@@ -215,6 +228,19 @@ enum SavegameVariableTypes
 	PlayerSave_EuropeUnits,
 	PlayerSave_AfricaUnits,
 	PlayerSave_PortRoyalUnits,
+
+	PlayerSave_PopRushHurryCount,
+	PlayerSave_CrossesStored,
+	PlayerSave_BellsStored,
+	PlayerSave_TaxRate,
+	PlayerSave_MaxTaxRate,
+	PlayerSave_NBMOD_REF_StartValue,
+	PlayerSave_NativeCombatModifier,
+	PlayerSave_DominateNativeBordersCount,
+	PlayerSave_RevolutionEuropeTradeCount,
+	PlayerSave_FatherPointMultiplier,
+	PlayerSave_MissionaryRateModifier,
+	PlayerSave_NativeTradeModifier,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -352,6 +378,19 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_EuropeUnits: return "PlayerSave_EuropeUnits";
 	case PlayerSave_AfricaUnits: return "PlayerSave_AfricaUnits";
 	case PlayerSave_PortRoyalUnits: return "PlayerSave_PortRoyalUnits";
+
+	case PlayerSave_PopRushHurryCount: return "PlayerSave_PopRushHurryCount";
+	case PlayerSave_CrossesStored: return "PlayerSave_CrossesStored";
+	case PlayerSave_BellsStored: return "PlayerSave_BellsStored";
+	case PlayerSave_TaxRate: return "PlayerSave_TaxRate";
+	case PlayerSave_MaxTaxRate: return "PlayerSave_MaxTaxRate";
+	case PlayerSave_NBMOD_REF_StartValue: return "PlayerSave_NBMOD_REF_StartValue";
+	case PlayerSave_NativeCombatModifier: return "PlayerSave_NativeCombatModifier";
+	case PlayerSave_DominateNativeBordersCount: return "PlayerSave_DominateNativeBordersCount";
+	case PlayerSave_RevolutionEuropeTradeCount: return "PlayerSave_RevolutionEuropeTradeCount";
+	case PlayerSave_FatherPointMultiplier: return "PlayerSave_FatherPointMultiplier";
+	case PlayerSave_MissionaryRateModifier: return "PlayerSave_MissionaryRateModifier";
+	case PlayerSave_NativeTradeModifier: return "PlayerSave_NativeTradeModifier";
 	}
 	return "";
 }
@@ -498,13 +537,26 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 
 	m_groupCycle.clear();
 	m_aszCityNames.clear();
-	m_cities.init();
-	m_tradeRoutes.clear();
+	m_cities.removeAll();
+	m_tradeRoutes.reset();
 	m_units.reset();
 
 	freeEuropeUnits();
 	freeAfricaUnits();
 	freePortRoyalUnits();
+
+	m_iPopRushHurryCount = defaultPopRushHurryCount;
+	m_iCrossesStored = defaultCrossesStored;
+	m_iBellsStored = defaultBellsStored;
+	m_iTaxRate = defaultTaxRate;
+	m_iMaxTaxRate = defaultMaxTaxRate;
+	m_iNBMOD_REF_StartValue = defaultNBMOD_REF_StartValue;
+	m_iNativeCombatModifier = defaultNativeCombatModifier;
+	m_iDominateNativeBordersCount = defaultDominateNativeBordersCount;
+	m_iRevolutionEuropeTradeCount = defaultRevolutionEuropeTradeCount;
+	m_iFatherPointMultiplier = defaultFatherPointMultiplier;
+	m_iMissionaryRateModifier = defaultMissionaryRateModifier;
+	m_iNativeTradeModifier = defaultNativeTradeModifier;
 
 }
 
@@ -660,6 +712,19 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_EuropeUnits: reader.Read(m_aEuropeUnits); break;
 		case PlayerSave_AfricaUnits: reader.Read(m_aAfricaUnits); break;
 		case PlayerSave_PortRoyalUnits: reader.Read(m_aPortRoyalUnits); break;
+
+		case PlayerSave_PopRushHurryCount: reader.Read(m_iPopRushHurryCount); break;
+		case PlayerSave_CrossesStored: reader.Read(m_iCrossesStored); break;
+		case PlayerSave_BellsStored: reader.Read(m_iBellsStored); break;
+		case PlayerSave_TaxRate: reader.Read(m_iTaxRate); break;
+		case PlayerSave_MaxTaxRate: reader.Read(m_iMaxTaxRate); break;
+		case PlayerSave_NBMOD_REF_StartValue: reader.Read(m_iNBMOD_REF_StartValue); break;
+		case PlayerSave_NativeCombatModifier: reader.Read(m_iNativeCombatModifier); break;
+		case PlayerSave_DominateNativeBordersCount: reader.Read(m_iDominateNativeBordersCount); break;
+		case PlayerSave_RevolutionEuropeTradeCount: reader.Read(m_iRevolutionEuropeTradeCount); break;
+		case PlayerSave_FatherPointMultiplier: reader.Read(m_iFatherPointMultiplier); break;
+		case PlayerSave_MissionaryRateModifier: reader.Read(m_iMissionaryRateModifier); break;
+		case PlayerSave_NativeTradeModifier: reader.Read(m_iNativeTradeModifier); break;
 		}
 	}
 
@@ -806,6 +871,19 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_EuropeUnits, m_aEuropeUnits);
 	writer.Write(PlayerSave_AfricaUnits, m_aAfricaUnits);
 	writer.Write(PlayerSave_PortRoyalUnits, m_aPortRoyalUnits);
+
+	writer.Write(PlayerSave_PopRushHurryCount, m_iPopRushHurryCount, defaultPopRushHurryCount);
+	writer.Write(PlayerSave_CrossesStored, m_iCrossesStored, defaultCrossesStored);
+	writer.Write(PlayerSave_BellsStored, m_iBellsStored, defaultBellsStored);
+	writer.Write(PlayerSave_TaxRate, m_iTaxRate, defaultTaxRate);
+	writer.Write(PlayerSave_MaxTaxRate, m_iMaxTaxRate, defaultMaxTaxRate);
+	writer.Write(PlayerSave_NBMOD_REF_StartValue, m_iNBMOD_REF_StartValue, defaultNBMOD_REF_StartValue);
+	writer.Write(PlayerSave_NativeCombatModifier, m_iNativeCombatModifier, defaultNativeCombatModifier);
+	writer.Write(PlayerSave_DominateNativeBordersCount, m_iDominateNativeBordersCount, defaultDominateNativeBordersCount);
+	writer.Write(PlayerSave_RevolutionEuropeTradeCount, m_iRevolutionEuropeTradeCount, defaultRevolutionEuropeTradeCount);
+	writer.Write(PlayerSave_FatherPointMultiplier, m_iFatherPointMultiplier, defaultFatherPointMultiplier);
+	writer.Write(PlayerSave_MissionaryRateModifier, m_iMissionaryRateModifier, defaultMissionaryRateModifier);
+	writer.Write(PlayerSave_NativeTradeModifier, m_iNativeTradeModifier, defaultNativeTradeModifier);
 
 	writer.Write(PlayerSave_END);
 }

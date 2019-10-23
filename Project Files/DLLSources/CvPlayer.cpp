@@ -278,31 +278,16 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	uninit();
 	resetSavedData(eID,bConstructorCall);
 
-    /** NBMOD TAX **/
-    m_iMaxTaxRate = 50;
-    /** NBMOD TAX **/
 
     /** NBMOD REF **/
-    m_iNBMOD_REF_StartValue = 0;
     m_bNBMOD_REF_Display = true;
     m_iNBMOD_REF_DisplayTurn = 0;
-
     /** NBMOD REF **/
 
 	// Dale - AoD: AI Autoplay START
 	m_bDisableHuman = false;
 	// Dale - AoD: AI Autoplay END
 	
-	m_iPopRushHurryCount = 0;
-	m_iCrossesStored = 0;
-	m_iBellsStored = 0;
-	m_iTaxRate = 0;
-	m_iNativeCombatModifier = 0;
-	m_iDominateNativeBordersCount = 0;
-	m_iRevolutionEuropeTradeCount = 0;
-	m_iFatherPointMultiplier = 100;
-	m_iMissionaryRateModifier = 0;
-	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
 	m_uiStartTime = 0;
 
 
@@ -321,15 +306,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		// PatchMod: Achievements END
 	}
 
-	m_cities.removeAll();
 
-	m_tradeRoutes.reset();
 	m_aTradeGroups.reset(); //R&R mod, vetiarvind, trade groups
-	m_units.reset();
-
-	freeEuropeUnits();
-	freeAfricaUnits(); /*** TRIANGLETRADE 10/23/08 by DPII ***/
-	freePortRoyalUnits(); // R&R, ray, Port Royal
 
 	m_selectionGroups.removeAll();
 
@@ -12521,25 +12499,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	// Get the NetID from the initialization structure
 	setNetID(gDLL->getAssignedNetworkID(getID()));
 
-	pStream->Read(&m_iPopRushHurryCount);
-	pStream->Read(&m_iCrossesStored);
-	pStream->Read(&m_iBellsStored);
-	pStream->Read(&m_iTaxRate);
-
-	/** NBMOD TAX **/
-	pStream->Read(&m_iMaxTaxRate);
-	/** NBMOD TAX **/
-
-    /** NBMOD REF **/
-	pStream->Read(&m_iNBMOD_REF_StartValue);
-    /** NBMOD REF **/
-
-	pStream->Read(&m_iNativeCombatModifier);
-	pStream->Read(&m_iDominateNativeBordersCount);
-	pStream->Read(&m_iRevolutionEuropeTradeCount);
-	pStream->Read(&m_iFatherPointMultiplier);
-	pStream->Read(&m_iMissionaryRateModifier);
-	pStream->Read(&m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
+	
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 
@@ -12780,23 +12740,6 @@ void CvPlayer::write(FDataStreamBase* pStream)
 			pStream->Write((*it));
 		}
 	}
-
-	pStream->Write(m_iPopRushHurryCount);
-	pStream->Write(m_iCrossesStored);
-	pStream->Write(m_iBellsStored);
-	pStream->Write(m_iTaxRate);
-	/** NBMOD TAX **/
-	pStream->Write(m_iMaxTaxRate);
-	/** NBMOD TAX **/
-    /** NBMOD REF **/
-	pStream->Write(m_iNBMOD_REF_StartValue);
-    /** NBMOD REF **/
-	pStream->Write(m_iNativeCombatModifier);
-	pStream->Write(m_iDominateNativeBordersCount);
-	pStream->Write(m_iRevolutionEuropeTradeCount);
-	pStream->Write(m_iFatherPointMultiplier);
-	pStream->Write(m_iMissionaryRateModifier);
-	pStream->Write(m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
 }
 
 void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY)
