@@ -3,6 +3,7 @@
 #include "CvSavegame.h"
 #include "FVariableSystem.h"
 #include "CvPopupInfo.h"
+#include "CvDiploParameters.h"
 
 //
 // Classes to handle savegames
@@ -420,7 +421,12 @@ int CvSavegameReader::GetXmlSize(JITarrayTypes eType) const
 }
 
 void CvSavegameReader::Read(FVariable             & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvDiploParameters     & variable) { variable.read(*this); }
 void CvSavegameReader::Read(CvPopupButtonPython   & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvPopupInfo           & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvTalkingHeadMessage  & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvTradeRouteGroup     & variable) { variable.read(*this); }
+
 
 ///
 ///
@@ -688,7 +694,11 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 }
 
 void CvSavegameWriter::Write(FVariable            &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvDiploParameters    &variable) { variable.write(*this); }
 void CvSavegameWriter::Write(CvPopupButtonPython  &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvPopupInfo          &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvTalkingHeadMessage &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvTradeRouteGroup    &variable) { variable.write(*this); }
 
 
 ///
@@ -909,4 +919,29 @@ void CvSavegameWriterBase::WriteTableString(const char *szString)
 	}
 	// null termination
 	m_table.push_back(0);
+}
+
+
+inline void FVariable::read(CvSavegameReader reader)
+{
+	reader.Read(m_eType);
+	if (m_eType==FVARTYPE_STRING)
+		reader.Read(m_szValue);
+	else
+	if (m_eType==FVARTYPE_WSTRING)
+		reader.Read(m_wszValue);
+	else
+		reader.Read(m_dValue);		// read the maximum size of the union
+}
+
+inline void FVariable::write(CvSavegameWriter writer)
+{
+	writer.Write(m_eType);
+	if (m_eType==FVARTYPE_STRING)
+		writer.Write(m_szValue);
+	else
+	if (m_eType==FVARTYPE_WSTRING)
+		writer.Write(m_wszValue);
+	else
+		writer.Write(m_dValue);
 }

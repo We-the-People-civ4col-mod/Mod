@@ -88,30 +88,6 @@ inline void FVariable::Write(FDataStreamBase *pStream)
 		pStream->Write(8, (byte*)&m_dValue);		// write the maximum size of the union
 }
 
-inline void FVariable::read(CvSavegameReader reader)
-{
-	reader.Read(m_eType);
-	if (m_eType==FVARTYPE_STRING)
-		reader.Read(m_szValue);
-	else
-	if (m_eType==FVARTYPE_WSTRING)
-		reader.Read(m_wszValue);
-	else
-		reader.Read(m_dValue);		// read the maximum size of the union
-}
-
-inline void FVariable::write(CvSavegameWriter writer)
-{
-	writer.Write(m_eType);
-	if (m_eType==FVARTYPE_STRING)
-		writer.Write(m_szValue);
-	else
-	if (m_eType==FVARTYPE_WSTRING)
-		writer.Write(m_wszValue);
-	else
-		writer.Write(m_dValue);
-}
-
 //////////////////////////////////////////////////////////////////////////
 
 inline FVariableSystem::FVariableSystem( )

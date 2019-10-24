@@ -1,5 +1,3 @@
-#pragma once
-
 //	$Revision: #4 $		$Author: mbreitkreutz $ 	$DateTime: 2005/06/13 13:35:55 $
 //------------------------------------------------------------------------------------------------
 //
@@ -12,12 +10,12 @@
 //------------------------------------------------------------------------------------------------
 //  Copyright (c) 2002-2004 Firaxis Games, Inc. All rights reserved.
 //------------------------------------------------------------------------------------------------
-
+#pragma		once
 #ifndef		FVARIABLESYSTEM_H
 #define		FVARIABLESYSTEM_H
-#pragma		once
 
-#include"CvSavegame.h"
+class CvSavegameReader;
+class CvSavegameWriter;
 
 //! Represents the different types of data an FVariable can represent.
 enum eVariableType

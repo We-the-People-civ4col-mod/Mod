@@ -9,7 +9,7 @@
 class CvDiploParameters
 {
 public:
-	DllExport CvDiploParameters(PlayerTypes ePlayer);
+	DllExport CvDiploParameters(PlayerTypes ePlayer = NO_PLAYER);
 	DllExport virtual ~CvDiploParameters();
 
 	DllExport void setWhoTalkingTo(PlayerTypes eWhoTalkingTo);

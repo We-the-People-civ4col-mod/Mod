@@ -306,12 +306,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 		// PatchMod: Achievements END
 	}
 
-
-	m_aTradeGroups.reset(); //R&R mod, vetiarvind, trade groups
-
-	m_selectionGroups.removeAll();
-
-	m_eventsTriggered.removeAll();
 	m_aszTradeMessages.clear();
 
 	// TAC - Trade Messages - koma13 - START
@@ -12249,53 +12243,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
 	CivEffect()->rebuildCivEffectCache();
 	
-	m_aTradeGroups.Read(pStream); //R&R mod, vetiarvind, trade groups	
-	
-
-	ReadStreamableFFreeListTrashArray(m_selectionGroups, pStream);
-	ReadStreamableFFreeListTrashArray(m_eventsTriggered, pStream);
-
-	{
-		CvMessageQueue::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (CvMessageQueue::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvTalkingHeadMessage message;
-			message.read(*pStream);
-			m_listGameMessages.push_back(message);
-		}
-	}
-
-	{
-		clearPopups();
-		CvPopupQueue::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (CvPopupQueue::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvPopupInfo* pInfo = new CvPopupInfo();
-			if (NULL != pInfo)
-			{
-				pInfo->read(*pStream);
-				m_listPopups.push_back(pInfo);
-			}
-		}
-	}
-
-	{
-		clearDiplomacy();
-		CvDiploQueue::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (CvDiploQueue::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvDiploParameters* pDiplo = new CvDiploParameters(NO_PLAYER);
-			if (NULL != pDiplo)
-			{
-				pDiplo->read(*pStream);
-				m_listDiplomacy.push_back(pDiplo);
-			}
-		}
-	}
-
 	{
 		uint iSize;
 		pStream->Read(&iSize);
@@ -12517,68 +12464,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {		
-	m_aTradeGroups.Write(pStream); //R&R mod, vetiarvind, trade groups	
-
-	WriteStreamableFFreeListTrashArray(m_selectionGroups, pStream);
-	WriteStreamableFFreeListTrashArray(m_eventsTriggered, pStream);
-
-	{
-		CvMessageQueue::_Alloc::size_type iSize = m_listGameMessages.size();
-		pStream->Write(iSize);
-		CvMessageQueue::iterator it;
-		for (it = m_listGameMessages.begin(); it != m_listGameMessages.end(); ++it)
-		{
-			CvTalkingHeadMessage& message = *it;
-			message.write(*pStream);
-		}
-	}
-
-	{
-		CvPopupQueue currentPopups;
-		if (GC.getGameINLINE().isNetworkMultiPlayer())
-		{
-			// don't save open popups in MP to avoid having different state on different machines
-			currentPopups.clear();
-		}
-		else
-		{
-			gDLL->getInterfaceIFace()->getDisplayedButtonPopups(currentPopups);
-		}
-		CvPopupQueue::_Alloc::size_type iSize = m_listPopups.size() + currentPopups.size();
-		pStream->Write(iSize);
-		CvPopupQueue::iterator it;
-		for (it = currentPopups.begin(); it != currentPopups.end(); ++it)
-		{
-			CvPopupInfo* pInfo = *it;
-			if (NULL != pInfo)
-			{
-				pInfo->write(*pStream);
-			}
-		}
-		for (it = m_listPopups.begin(); it != m_listPopups.end(); ++it)
-		{
-			CvPopupInfo* pInfo = *it;
-			if (NULL != pInfo)
-			{
-				pInfo->write(*pStream);
-			}
-		}
-	}
-
-	{
-		CvDiploQueue::_Alloc::size_type iSize = m_listDiplomacy.size();
-		pStream->Write(iSize);
-		CvDiploQueue::iterator it;
-		for (it = m_listDiplomacy.begin(); it != m_listDiplomacy.end(); ++it)
-		{
-			CvDiploParameters* pDiplo = *it;
-			if (NULL != pDiplo)
-			{
-				pDiplo->write(*pStream);
-			}
-		}
-	}
-
 	{
 		uint iSize = m_mapScoreHistory.size();
 		pStream->Write(iSize);

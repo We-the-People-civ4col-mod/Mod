@@ -11,6 +11,9 @@ struct CvPopupButtonPython;
 #include "BoolArray.h"
 #include "LinkedList.h"
 
+#include "CvDiploParameters.h"
+#include "CvPopupInfo.h"
+
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.
 // Extending to the end is savegame safe. Altering the existing layout isn't.
@@ -89,6 +92,12 @@ public:
 
 	template<class T>
 	void Read(std::vector<T*>& vec);
+
+	template<class T>
+	void Read(std::list<T>& vec);
+
+	template<class T>
+	void Read(std::list<T*>& vec);
 
 	template<class T>
 	void Read(FFreeListTrashArray<T>& array);
@@ -187,7 +196,11 @@ public:
 
 	// class wrappers
 	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(CvDiploParameters     & variable);
 	void Read(CvPopupButtonPython   & variable);
+	void Read(CvPopupInfo           & variable);
+	void Read(CvTalkingHeadMessage  & variable);
+	void Read(CvTradeRouteGroup     & variable);
 	void Read(FVariable             & variable);
 	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
@@ -273,6 +286,15 @@ public:
 
 	template<class T>
 	void Write(std::vector<T*>& vec);
+
+	template<class T>
+	void Write(std::list<T>& vec);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, std::list<T>& vec);
+
+	template<class T>
+	void Write(std::list<T*>& vec);
 	
 	template<class T>
 	void Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array);
@@ -395,7 +417,11 @@ public:
 
 	// class wrappers
 	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(CvDiploParameters    &variable);
 	void Write(CvPopupButtonPython  &variable);
+	void Write(CvPopupInfo          &variable);
+	void Write(CvTalkingHeadMessage &variable);
+	void Write(CvTradeRouteGroup    &variable);
 	void Write(FVariable            &variable);
 	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
@@ -523,6 +549,31 @@ inline void CvSavegameReader::Read(std::vector<T*>& vec)
 }
 
 template<class T>
+inline void CvSavegameReader::Read(std::list<T>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::list<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Read(*it);
+	}
+}
+
+template<class T>
+inline void CvSavegameReader::Read(std::list<T*>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::list<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		*it = new T;
+		Read(**it);
+	}
+}
+
+template<class T>
 inline void CvSavegameReader::Read(FFreeListTrashArray<T>& array)
 {
 	ReadStreamableFFreeListTrashArray(array, *this);
@@ -590,6 +641,38 @@ inline void CvSavegameWriter::Write(std::vector<T*>& vec)
 	unsigned short iLength = vec.size();
 	Write(iLength);
 	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::list<T>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::list<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(*it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::list<T>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		Write(vec);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::list<T*>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::list<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		Write(**it);
 	}

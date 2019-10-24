@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CvInitCore.h"
+#include "CvDLLInterfaceIFaceBase.h"
 
 #include "CvSavegame.h"
 
@@ -242,6 +243,13 @@ enum SavegameVariableTypes
 	PlayerSave_MissionaryRateModifier,
 	PlayerSave_NativeTradeModifier,
 
+	PlayerSave_TradeGroups,
+	PlayerSave_selectionGroups,
+	PlayerSave_eventsTriggered,
+	PlayerSave_listGameMessages,
+	PlayerSave_listPopups,
+	PlayerSave_listDiplomacy,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -391,6 +399,14 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_FatherPointMultiplier: return "PlayerSave_FatherPointMultiplier";
 	case PlayerSave_MissionaryRateModifier: return "PlayerSave_MissionaryRateModifier";
 	case PlayerSave_NativeTradeModifier: return "PlayerSave_NativeTradeModifier";
+
+	case PlayerSave_TradeGroups: return "PlayerSave_TradeGroups";
+	case PlayerSave_selectionGroups: return "PlayerSave_selectionGroups";
+	case PlayerSave_eventsTriggered: return "PlayerSave_eventsTriggered";
+	case PlayerSave_listGameMessages: return "PlayerSave_listGameMessages";
+	case PlayerSave_listPopups: return "PlayerSave_listPopups";
+	case PlayerSave_listDiplomacy: return "PlayerSave_listDiplomacy";
+
 	}
 	return "";
 }
@@ -557,6 +573,13 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iFatherPointMultiplier = defaultFatherPointMultiplier;
 	m_iMissionaryRateModifier = defaultMissionaryRateModifier;
 	m_iNativeTradeModifier = defaultNativeTradeModifier;
+
+	m_aTradeGroups.reset();
+	m_selectionGroups.removeAll();
+	m_eventsTriggered.removeAll();
+	clearMessages();
+	clearPopups();
+	clearDiplomacy();
 
 }
 
@@ -725,6 +748,13 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_FatherPointMultiplier: reader.Read(m_iFatherPointMultiplier); break;
 		case PlayerSave_MissionaryRateModifier: reader.Read(m_iMissionaryRateModifier); break;
 		case PlayerSave_NativeTradeModifier: reader.Read(m_iNativeTradeModifier); break;
+
+		case PlayerSave_TradeGroups: reader.Read(m_aTradeGroups); break;
+		case PlayerSave_selectionGroups: reader.Read(m_selectionGroups); break;
+		case PlayerSave_eventsTriggered: reader.Read(m_eventsTriggered); break;
+		case PlayerSave_listGameMessages: reader.Read(m_listGameMessages); break;
+		case PlayerSave_listPopups: reader.Read(m_listPopups); break;
+		case PlayerSave_listDiplomacy: reader.Read(m_listDiplomacy); break;
 		}
 	}
 
@@ -884,6 +914,46 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_FatherPointMultiplier, m_iFatherPointMultiplier, defaultFatherPointMultiplier);
 	writer.Write(PlayerSave_MissionaryRateModifier, m_iMissionaryRateModifier, defaultMissionaryRateModifier);
 	writer.Write(PlayerSave_NativeTradeModifier, m_iNativeTradeModifier, defaultNativeTradeModifier);
+
+	writer.Write(PlayerSave_TradeGroups, m_aTradeGroups);
+	writer.Write(PlayerSave_selectionGroups, m_selectionGroups);
+	writer.Write(PlayerSave_eventsTriggered, m_eventsTriggered);
+	writer.Write(PlayerSave_listGameMessages, m_listGameMessages);
+	{
+		CvPopupQueue currentPopups;
+		if (GC.getGameINLINE().isNetworkMultiPlayer())
+		{
+			// don't save open popups in MP to avoid having different state on different machines
+			currentPopups.clear();
+		}
+		else
+		{
+			gDLL->getInterfaceIFace()->getDisplayedButtonPopups(currentPopups);
+		}
+		unsigned short iSize = m_listPopups.size() + currentPopups.size();
+		if(iSize>0){
+			writer.Write(PlayerSave_listPopups);
+			writer.Write(iSize);
+			CvPopupQueue::iterator it;
+			for (it = currentPopups.begin(); it != currentPopups.end(); ++it)
+			{
+				CvPopupInfo* pInfo = *it;
+				if (NULL != pInfo)
+				{
+					writer.Write(*pInfo);
+				}
+			}
+			for (it = m_listPopups.begin(); it != m_listPopups.end(); ++it)
+			{
+				CvPopupInfo* pInfo = *it;
+				if (NULL != pInfo)
+				{
+					writer.Write(*pInfo);
+				}
+			}
+		}
+	}
+	writer.Write(PlayerSave_listDiplomacy, m_listDiplomacy);
 
 	writer.Write(PlayerSave_END);
 }
