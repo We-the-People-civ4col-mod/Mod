@@ -51,6 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\PlayerArray.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
     <ClCompile Include="DLLSources\PlayerBoolArray.cpp" />
@@ -538,7 +539,7 @@ nmake precompile  /NOLOGO
 bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Debug|Win32'">
@@ -562,7 +563,7 @@ bin\jom build</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Profile|Win32'">

@@ -250,7 +250,7 @@ private:
 	void _setAll(T val);
 
 	template <bool bInline>
-	int _getNumBoolBlocks() const;
+	unsigned int _getNumBoolBlocks() const;
 
 	template <int iSize>
 	void _Read(CvSavegameReader& reader);
@@ -323,7 +323,7 @@ private:
 	template<>
 	__forceinline void _set<false, ENUMMAP_SIZE_BOOL>(int iIndex, T eValue)
 	{
-		SetBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0));
+		SetBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0);
 	}
 	template<>
 	__forceinline void _set<true, ENUMMAP_SIZE_NATIVE>(int iIndex, T eValue)
@@ -365,7 +365,7 @@ private:
 	template<>
 	__forceinline void _setAll<false, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(m_pArrayBool, _getNumBoolBlocks(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(m_pArrayBool, _getNumBoolBlocks<false>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_NATIVE>(T eValue)
@@ -385,7 +385,7 @@ private:
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks<true>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 
 	// allocate
@@ -414,7 +414,7 @@ private:
 	void _allocate<false, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
 		FAssert(m_pArrayBool == NULL);
-		m_pArrayBool = new unsigned int[getBoolArrayNumBlocks()];
+		m_pArrayBool = new unsigned int[_getNumBoolBlocks<false>()];
 		_setAll<bINLINE, SIZE>(eValue);
 	}
 	template<>
@@ -443,13 +443,13 @@ private:
 	////
 
 	template <>
-	__forceinline int _getNumBoolBlocks<false>() const
+	__forceinline unsigned int _getNumBoolBlocks<false>() const
 	{
 		return (numElements() + 31) / 32;
 	}
 
 	template <>
-	__forceinline int _getNumBoolBlocks<true>() const
+	__forceinline unsigned int _getNumBoolBlocks<true>() const
 	{
 		return NUM_BOOL_BLOCKS;
 	}
@@ -705,7 +705,7 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 	{
 		for (int i = 0; i < NUM_BOOL_BLOCKS; ++i)
 		{
-			if (m_pArrayBool[i] != BOOL_BLOCK_DEFAULT)
+			if (m_InlineBoolArray[i] != BOOL_BLOCK_DEFAULT)
 			{
 				return true;
 			}
