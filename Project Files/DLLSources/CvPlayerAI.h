@@ -458,7 +458,7 @@ public:
   	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
-	void AI_resetSavedData(PlayerTypes eID = NO_PLAYER, bool bConstructorCall = false);
+	void AI_resetSavedData();
 
 
 protected:

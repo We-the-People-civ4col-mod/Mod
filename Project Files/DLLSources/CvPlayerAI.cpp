@@ -175,25 +175,8 @@ void CvPlayerAI::AI_reset()
 	int iI;
 
 	AI_uninit();
+	AI_resetSavedData();
 
-	m_iAttackOddsChange = 0;
-	m_iExtraGoldTarget = 0;
-
-	m_eNextBuyUnit = NO_UNIT;
-	m_eNextBuyUnitAI = NO_UNITAI;
-	m_iNextBuyUnitValue = 0;
-
-	m_eNextBuyProfession = NO_PROFESSION;
-	m_eNextBuyProfessionUnit = NO_UNIT;
-	m_eNextBuyProfessionAI = NO_UNITAI;
-	m_iNextBuyProfessionValue = 0;
-
-	m_iTotalIncome = 0;
-	m_iHurrySpending = 0;
-	// TAC - AI More Immigrants - koma13 - START
-	m_iImmigrantSpending = 0;
-	// TAC - AI More Immigrants - koma13 - END
-	m_iEuropeYieldSpending = 0;	// TAC - AI Economy - koma13
 	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
 	{
 		m_aiNumTrainAIUnits[iI] = 0;
@@ -238,7 +221,6 @@ void CvPlayerAI::AI_reset()
 		m_aiBestUnworkedYieldPlots[iI] = -1;
 		m_aiYieldValuesTimes100[iI] = 0;
 	}
-	m_iAveragesCacheTurn = -1;
 
 	m_iTurnLastProductionDirty = -1;
 	m_iTurnLastManagedPop = -1;
@@ -286,8 +268,6 @@ void CvPlayerAI::AI_reset()
 		m_aiStrategyData[iI] = -1;
 	}
 
-	m_iDistanceMapDistance = -1;
-	m_distanceMap.clear();
 	m_unitPriorityHeap.clear();
 }
 
@@ -11678,42 +11658,6 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	CvPlayer::read(pStream);	// read base class data first
 
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	if (uiFlag > 0)
-	{
-		uint iSize;
-		pStream->Read(&iSize);
-		if (iSize > 0)
-		{
-			m_distanceMap.resize(iSize);
-			pStream->Read(iSize, &m_distanceMap[0]);
-		}
-
-		pStream->Read(&m_iDistanceMapDistance);
-	}
-
-	pStream->Read(&m_iAttackOddsChange);
-	pStream->Read(&m_iExtraGoldTarget);
-
-	pStream->Read(&m_iAveragesCacheTurn);
-
-	pStream->Read((int*)&m_eNextBuyUnit);
-	pStream->Read((int*)&m_eNextBuyUnitAI);
-	pStream->Read(&m_iNextBuyUnitValue);
-	pStream->Read((int*)&m_eNextBuyProfession);
-	pStream->Read((int*)&m_eNextBuyProfessionUnit);
-	pStream->Read((int*)&m_eNextBuyProfessionAI);
-	pStream->Read(&m_iNextBuyProfessionValue);
-
-	pStream->Read(&m_iTotalIncome);
-	pStream->Read(&m_iHurrySpending);
-	// TAC - AI More Immigrants - koma13 - START
-	pStream->Read(&m_iImmigrantSpending);
-	// TAC - AI More Immigrants - koma13 - END
-	pStream->Read(&m_iEuropeYieldSpending);	// TAC - AI Economy - koma13
-
 	pStream->Read(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
 	pStream->Read(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
 	pStream->Read(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
@@ -11740,7 +11684,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 	}
 	for (int i = 0; i < MAX_PLAYERS; i++)
 	{
-		pStream->Read(uiFlag > 1 ? NUM_MEMORY_TYPES : NUM_MEMORY_TYPES - 1, m_aaiMemoryCount[i]);
+		pStream->Read(NUM_MEMORY_TYPES, m_aaiMemoryCount[i]);
 	}
 
 	pStream->Read(&m_iTurnLastProductionDirty);
@@ -11764,15 +11708,12 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 		}
 	}
 
-	if (uiFlag > 0)
+	uint iSize;
+	pStream->Read(&iSize);
+	if (iSize > 0)
 	{
-		uint iSize;
-		pStream->Read(&iSize);
-		if (iSize > 0)
-		{
-			m_unitPriorityHeap.resize(iSize);
-			pStream->Read(iSize, &m_unitPriorityHeap[0]);
-		}
+		m_unitPriorityHeap.resize(iSize);
+		pStream->Read(iSize, &m_unitPriorityHeap[0]);
 	}
 
 	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
@@ -11807,35 +11748,6 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 
 	CvPlayer::write(pStream);	// write base class data first
 
-	uint uiFlag=2;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_distanceMap.size());
-	if (!m_distanceMap.empty())
-	{
-		pStream->Write(m_distanceMap.size(), &m_distanceMap[0]);
-	}
-	pStream->Write(m_iDistanceMapDistance);
-
-	pStream->Write(m_iAttackOddsChange);
-	pStream->Write(m_iExtraGoldTarget);
-
-	pStream->Write(m_iAveragesCacheTurn);
-
-	pStream->Write(m_eNextBuyUnit);
-	pStream->Write(m_eNextBuyUnitAI);
-	pStream->Write(m_iNextBuyUnitValue);
-	pStream->Write(m_eNextBuyProfession);
-	pStream->Write(m_eNextBuyProfessionUnit);
-	pStream->Write(m_eNextBuyProfessionAI);
-	pStream->Write(m_iNextBuyProfessionValue);
-
-	pStream->Write(m_iTotalIncome);
-	pStream->Write(m_iHurrySpending);
-	// TAC - AI More Immigrants - koma13 - START
-	pStream->Write(m_iImmigrantSpending);
-	// TAC - AI More Immigrants - koma13 - END
-	pStream->Write(m_iEuropeYieldSpending);	// TAC - AI Economy - koma13
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
 	pStream->Write(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
