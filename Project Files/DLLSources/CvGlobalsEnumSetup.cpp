@@ -171,6 +171,9 @@ void CvGlobals::postXMLLoad(bool bFirst)
 	}
 
 #ifdef _DEBUG
-	TestEnumMap();
+	if (bFirst)
+	{
+		TestEnumMap();
+	}
 #endif
 }
