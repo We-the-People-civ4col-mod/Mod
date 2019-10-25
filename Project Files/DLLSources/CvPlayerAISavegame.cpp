@@ -21,6 +21,15 @@ const int defaultHurrySpending = 0;
 const int defaultImmigrantSpending = 0;
 const int defaultEuropeYieldSpending = 0;
 
+const int defaultUpgradeUnitsCacheTurn = -1;
+const int defaultUpgradeUnitsCachedExpThreshold = 0;
+const int defaultUpgradeUnitsCachedGold = 0;
+const int defaultTurnLastProductionDirty = -1;
+const int defaultTurnLastManagedPop = -1;
+const int defaultMoveQueuePasses = 0;
+const int defaultLastWave = -1;
+const int defaultWaveIndex = -1;
+
 
 enum SavegameVariableTypes
 {
@@ -58,6 +67,15 @@ enum SavegameVariableTypes
 	PlayerSaveAI_ContactTimer,
 	PlayerSaveAI_MemoryCount,
 
+	PlayerSaveAI_UpgradeUnitsCacheTurn,
+	PlayerSaveAI_UpgradeUnitsCachedExpThreshold,
+	PlayerSaveAI_UpgradeUnitsCachedGold,
+	PlayerSaveAI_TurnLastProductionDirty,
+	PlayerSaveAI_TurnLastManagedPop,
+	PlayerSaveAI_MoveQueuePasses,
+	PlayerSaveAI_LastWave,
+	PlayerSaveAI_WaveIndex,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -84,21 +102,30 @@ const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType)
 	case PlayerSaveAI_ImmigrantSpending: return "PlayerSaveAI_ImmigrantSpending";
 	case PlayerSaveAI_EuropeYieldSpending: return "PlayerSaveAI_EuropeYieldSpending";
 
-		case PlayerSaveAI_AverageYieldMultiplier: return "PlayerSaveAI_AverageYieldMultiplier";
-		case PlayerSaveAI_BestWorkedYieldPlots: return "PlayerSaveAI_BestWorkedYieldPlots";
-		case PlayerSaveAI_BestUnworkedYieldPlots: return "PlayerSaveAI_BestUnworkedYieldPlots";
-		case PlayerSaveAI_YieldValuesTimes100: return "PlayerSaveAI_YieldValuesTimes100";
-		case PlayerSaveAI_NumTrainAIUnits: return "PlayerSaveAI_NumTrainAIUnits";
-		case PlayerSaveAI_NumAIUnits: return "PlayerSaveAI_NumAIUnits";
-		case PlayerSaveAI_NumRetiredAIUnits: return "PlayerSaveAI_NumRetiredAIUnits";
-		case PlayerSaveAI_UnitAIStrategyWeights: return "PlayerSaveAI_UnitAIStrategyWeights";
-		case PlayerSaveAI_PeacetimeTradeValue: return "PlayerSaveAI_PeacetimeTradeValue";
-		case PlayerSaveAI_PeacetimeGrantValue: return "PlayerSaveAI_PeacetimeGrantValue";
-		case PlayerSaveAI_GoldTradedTo: return "PlayerSaveAI_GoldTradedTo";
-		case PlayerSaveAI_AttitudeExtra: return "PlayerSaveAI_AttitudeExtra";
-		case PlayerSaveAI_FirstContact: return "PlayerSaveAI_FirstContact";
-		case PlayerSaveAI_ContactTimer: return "PlayerSaveAI_ContactTimer";
-		case PlayerSaveAI_MemoryCount: return "PlayerSaveAI_MemoryCount";
+	case PlayerSaveAI_AverageYieldMultiplier: return "PlayerSaveAI_AverageYieldMultiplier";
+	case PlayerSaveAI_BestWorkedYieldPlots: return "PlayerSaveAI_BestWorkedYieldPlots";
+	case PlayerSaveAI_BestUnworkedYieldPlots: return "PlayerSaveAI_BestUnworkedYieldPlots";
+	case PlayerSaveAI_YieldValuesTimes100: return "PlayerSaveAI_YieldValuesTimes100";
+	case PlayerSaveAI_NumTrainAIUnits: return "PlayerSaveAI_NumTrainAIUnits";
+	case PlayerSaveAI_NumAIUnits: return "PlayerSaveAI_NumAIUnits";
+	case PlayerSaveAI_NumRetiredAIUnits: return "PlayerSaveAI_NumRetiredAIUnits";
+	case PlayerSaveAI_UnitAIStrategyWeights: return "PlayerSaveAI_UnitAIStrategyWeights";
+	case PlayerSaveAI_PeacetimeTradeValue: return "PlayerSaveAI_PeacetimeTradeValue";
+	case PlayerSaveAI_PeacetimeGrantValue: return "PlayerSaveAI_PeacetimeGrantValue";
+	case PlayerSaveAI_GoldTradedTo: return "PlayerSaveAI_GoldTradedTo";
+	case PlayerSaveAI_AttitudeExtra: return "PlayerSaveAI_AttitudeExtra";
+	case PlayerSaveAI_FirstContact: return "PlayerSaveAI_FirstContact";
+	case PlayerSaveAI_ContactTimer: return "PlayerSaveAI_ContactTimer";
+	case PlayerSaveAI_MemoryCount: return "PlayerSaveAI_MemoryCount";
+
+	case PlayerSaveAI_UpgradeUnitsCacheTurn: return "PlayerSaveAI_UpgradeUnitsCacheTurn";
+	case PlayerSaveAI_UpgradeUnitsCachedExpThreshold: return "PlayerSaveAI_UpgradeUnitsCachedExpThreshold";
+	case PlayerSaveAI_UpgradeUnitsCachedGold: return "PlayerSaveAI_UpgradeUnitsCachedGold";
+	case PlayerSaveAI_TurnLastProductionDirty: return "PlayerSaveAI_TurnLastProductionDirty";
+	case PlayerSaveAI_TurnLastManagedPop: return "PlayerSaveAI_TurnLastManagedPop";
+	case PlayerSaveAI_MoveQueuePasses: return "PlayerSaveAI_MoveQueuePasses";
+	case PlayerSaveAI_LastWave: return "PlayerSaveAI_LastWave";
+	case PlayerSaveAI_WaveIndex: return "PlayerSaveAI_WaveIndex";
 
 }	return "";
 }
@@ -143,6 +170,15 @@ void CvPlayerAI::AI_resetSavedData()
 	m_em_bFirstContact.reset();
 	m_em_iContactTimer.reset();
 	m_em_iMemoryCount.reset();
+
+	m_iUpgradeUnitsCacheTurn = defaultUpgradeUnitsCacheTurn;
+	m_iUpgradeUnitsCachedExpThreshold = defaultUpgradeUnitsCachedExpThreshold;
+	m_iUpgradeUnitsCachedGold = defaultUpgradeUnitsCachedGold;
+	m_iTurnLastProductionDirty = defaultTurnLastProductionDirty;
+	m_iTurnLastManagedPop = defaultTurnLastManagedPop;
+	m_iMoveQueuePasses = defaultMoveQueuePasses;
+	m_iLastWave = defaultLastWave;
+	m_iWaveIndex = defaultWaveIndex;
 
 }
 
@@ -202,6 +238,15 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_ContactTimer: reader.Read(m_em_iContactTimer); break;
 		case PlayerSaveAI_MemoryCount: reader.Read(m_em_iMemoryCount); break;
 
+		case PlayerSaveAI_UpgradeUnitsCacheTurn: reader.Read(m_iUpgradeUnitsCacheTurn); break;
+		case PlayerSaveAI_UpgradeUnitsCachedExpThreshold: reader.Read(m_iUpgradeUnitsCachedExpThreshold); break;
+		case PlayerSaveAI_UpgradeUnitsCachedGold: reader.Read(m_iUpgradeUnitsCachedGold); break;
+		case PlayerSaveAI_TurnLastProductionDirty: reader.Read(m_iTurnLastProductionDirty); break;
+		case PlayerSaveAI_TurnLastManagedPop: reader.Read(m_iTurnLastManagedPop); break;
+		case PlayerSaveAI_MoveQueuePasses: reader.Read(m_iMoveQueuePasses); break;
+		case PlayerSaveAI_LastWave: reader.Read(m_iLastWave); break;
+		case PlayerSaveAI_WaveIndex: reader.Read(m_iWaveIndex); break;
+
 		}
 	}
 	
@@ -254,6 +299,15 @@ void CvPlayerAI::write(CvSavegameWriter writer)
 	writer.Write(PlayerSaveAI_FirstContact, m_em_bFirstContact);
 	writer.Write(PlayerSaveAI_ContactTimer, m_em_iContactTimer);
 	writer.Write(PlayerSaveAI_MemoryCount, m_em_iMemoryCount);
+
+	writer.Write(PlayerSaveAI_UpgradeUnitsCacheTurn, m_iUpgradeUnitsCacheTurn, defaultUpgradeUnitsCacheTurn);
+	writer.Write(PlayerSaveAI_UpgradeUnitsCachedExpThreshold, m_iUpgradeUnitsCachedExpThreshold, defaultUpgradeUnitsCachedExpThreshold);
+	writer.Write(PlayerSaveAI_UpgradeUnitsCachedGold, m_iUpgradeUnitsCachedGold, defaultUpgradeUnitsCachedGold);
+	writer.Write(PlayerSaveAI_TurnLastProductionDirty, m_iTurnLastProductionDirty, defaultTurnLastProductionDirty);
+	writer.Write(PlayerSaveAI_TurnLastManagedPop, m_iTurnLastManagedPop, defaultTurnLastManagedPop);
+	writer.Write(PlayerSaveAI_MoveQueuePasses, m_iMoveQueuePasses, defaultMoveQueuePasses);
+	writer.Write(PlayerSaveAI_LastWave, m_iLastWave, defaultLastWave);
+	writer.Write(PlayerSaveAI_WaveIndex, m_iWaveIndex, defaultWaveIndex);
 	
 
 	writer.Write(PlayerSaveAI_END);

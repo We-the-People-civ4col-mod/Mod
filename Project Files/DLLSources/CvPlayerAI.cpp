@@ -121,19 +121,6 @@ void CvPlayerAI::AI_reset()
 	AI_uninit();
 	AI_resetSavedData();
 
-	m_iTurnLastProductionDirty = -1;
-	m_iTurnLastManagedPop = -1;
-	m_iMoveQueuePasses = 0;
-
-	m_iUpgradeUnitsCacheTurn = -1;
-	m_iUpgradeUnitsCachedExpThreshold = 0;
-	m_iUpgradeUnitsCachedGold = 0;
-
-	// TAC - AI Revolution - koma13 - START
-	m_iLastWave = -1;
-	m_iWaveIndex = -1;
-	// TAC - AI Revolution - koma13 - END
-
 	m_aiAICitySites.clear();
 
 	FAssert(m_aiUnitClassWeights == NULL);
@@ -11557,19 +11544,6 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	CvPlayer::read(pStream);	// read base class data first
 
-	pStream->Read(&m_iUpgradeUnitsCacheTurn);
-	pStream->Read(&m_iUpgradeUnitsCachedExpThreshold);
-	pStream->Read(&m_iUpgradeUnitsCachedGold);
-
-	pStream->Read(&m_iTurnLastProductionDirty);
-	pStream->Read(&m_iTurnLastManagedPop);
-	pStream->Read(&m_iMoveQueuePasses);
-
-	// TAC - AI Revolution - koma13 - START
-	pStream->Read(&m_iLastWave);
-	pStream->Read(&m_iWaveIndex);
-	// TAC - AI Revolution - koma13 - END
-
 	{
 		m_aiAICitySites.clear();
 		uint iSize;
@@ -11621,19 +11595,6 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	writerbase.WriteFile();
 
 	CvPlayer::write(pStream);	// write base class data first
-
-	pStream->Write(m_iUpgradeUnitsCacheTurn);
-	pStream->Write(m_iUpgradeUnitsCachedExpThreshold);
-	pStream->Write(m_iUpgradeUnitsCachedGold);
-
-	pStream->Write(m_iTurnLastProductionDirty);
-	pStream->Write(m_iTurnLastManagedPop);
-	pStream->Write(m_iMoveQueuePasses);
-
-	// TAC - AI Revolution - koma13 - START
-	pStream->Write(m_iLastWave);
-	pStream->Write(m_iWaveIndex);
-	// TAC - AI Revolution - koma13 - END
 
 	{
 		uint iSize = m_aiAICitySites.size();
