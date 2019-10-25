@@ -828,6 +828,23 @@ void CvPlayer::read(CvSavegameReader reader)
 
 	// The player is loaded. Now set up the cache according to the read data.
 	updateHuman();
+	// The CivEffect cache isn't saved. Instead it's recalculated on load.
+	// This will make it adapt to changed xml settings.
+	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
+	CivEffect()->rebuildCivEffectCache();
+	// Get the NetID from the initialization structure
+	setNetID(gDLL->getAssignedNetworkID(getID()));
+
+	
+
+	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
+	// The allowed units and number of units on the dock might have changed in xml
+	// verify that the units on the dock are as they are intended
+	if (this->isAlive() && !this->isEurope() && !this->isNative())
+	{
+		verifyImmigration();
+	}
 }
 
 void CvPlayer::write(CvSavegameWriter writer)
