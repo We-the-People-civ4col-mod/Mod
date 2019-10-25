@@ -366,7 +366,13 @@ void CvUnit::read(CvSavegameReader reader)
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
 	// unit yield cache - end - Nightinggale
+
+	// clear garbage from the savegame
+	// due to the visibility range chache in CvPlot, this can't be done by simply not saving the data 
 	resetPromotions();
+
+	// update profession/promotion cache
+	processProfession(getProfession(), 1, false);
 	setPromotions();
 
 
