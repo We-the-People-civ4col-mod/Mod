@@ -12214,23 +12214,6 @@ void CvPlayer::setPbemNewTurn(bool bNew)
 	m_bPbemNewTurn = bNew;
 }
 
-
-//
-// read object from a stream
-// used during load
-//
-void CvPlayer::read(FDataStreamBase* pStream)
-{
-}
-
-//
-// save object to a stream
-// used during save
-//
-void CvPlayer::write(FDataStreamBase* pStream)
-{		
-}
-
 void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY)
 {
 	CvUnit* pGreatUnit = initUnit(eGreatGeneralUnit, (ProfessionTypes) GC.getUnitInfo(eGreatGeneralUnit).getDefaultProfession(), iX, iY);

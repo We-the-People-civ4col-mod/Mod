@@ -11489,8 +11489,6 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	read(reader);
 
-	CvPlayer::read(pStream);
-
 	/// post load function - start - Nightinggale
 	if (m_eID == (MAX_PLAYERS - 1))
 	{
@@ -11512,8 +11510,6 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase);
 	write(writer);
 	writerbase.WriteFile();
-
-	CvPlayer::write(pStream);
 }
 
 
