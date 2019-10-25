@@ -338,7 +338,7 @@ void CvSavegameReader::Read(CvEventMap& Map)
 		EventTypes eEvent;
 		EventTriggeredData kData;
 		Read(eEvent);
-		Read(kData);
+		Read(kData); 
 		Map[eEvent]=kData;
 	}
 }

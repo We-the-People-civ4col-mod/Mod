@@ -290,20 +290,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	
 	m_uiStartTime = 0;
 
-
-	if (!bConstructorCall)
-	{
-		m_aFreeUnitCombatPromotions.clear();
-		m_aFreeUnitClassPromotions.clear();
-		m_aEuropeRevolutionUnits.clear();
-		m_triggersFired.clear();
-		m_aDocksNextUnits.clear();
-		// PatchMod: Achievements START
-		m_achievesGained.clear();
-		m_achievesTurn.clear();
-		// PatchMod: Achievements END
-	}
-
 	m_aszTradeMessages.clear();
 
 	// TAC - Trade Messages - koma13 - START
@@ -12240,96 +12226,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	// This will make it adapt to changed xml settings.
 	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
 	CivEffect()->rebuildCivEffectCache();
-
-	{
-		m_aFreeUnitCombatPromotions.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iUnitCombat;
-			int iPromotion;
-			pStream->Read(&iUnitCombat);
-			pStream->Read(&iPromotion);
-			m_aFreeUnitCombatPromotions.push_back(std::make_pair((UnitCombatTypes)iUnitCombat, (PromotionTypes)iPromotion));
-		}
-	}
-
-	{
-		m_aFreeUnitClassPromotions.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iUnitClass;
-			int iPromotion;
-			pStream->Read(&iUnitClass);
-			pStream->Read(&iPromotion);
-			m_aFreeUnitClassPromotions.push_back(std::make_pair((UnitClassTypes)iUnitClass, (PromotionTypes)iPromotion));
-		}
-	}
-
-	{
-		m_aEuropeRevolutionUnits.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			ProfessionTypes eProfession;
-			UnitTypes eUnit;
-			pStream->Read((int*)&eUnit);
-			pStream->Read((int*)&eProfession);
-			m_aEuropeRevolutionUnits.push_back(std::make_pair(eUnit, eProfession));
-		}
-	}
-
-	{
-		m_aDocksNextUnits.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			UnitTypes eUnit;
-			pStream->Read((int*)&eUnit);
-			m_aDocksNextUnits.push_back(eUnit);
-		}
-	}
-
-	// PatchMod: Achievements START
-	{
-		m_achievesGained.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			AchieveTypes eAchieve;
-			pStream->Read((int*)&eAchieve);
-			m_achievesGained.push_back(eAchieve);
-		}
-	}
-	{
-		m_achievesTurn.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			pStream->Read(&iTurn);
-			m_achievesTurn.push_back(iTurn);
-		}
-	}
-	// PatchMod: Achievements END
-
-	m_triggersFired.clear();
-	uint iSize;
-	pStream->Read(&iSize);
-	for (uint i = 0; i < iSize; i++)
-	{
-		int iTrigger;
-		pStream->Read(&iTrigger);
-		m_triggersFired.push_back((EventTriggerTypes)iTrigger);
-	}
-
 	// Get the NetID from the initialization structure
 	setNetID(gDLL->getAssignedNetworkID(getID()));
 
@@ -12351,79 +12247,6 @@ void CvPlayer::read(FDataStreamBase* pStream)
 //
 void CvPlayer::write(FDataStreamBase* pStream)
 {		
-	{
-		uint iSize = m_aFreeUnitCombatPromotions.size();
-		pStream->Write(iSize);
-		UnitCombatPromotionArray::iterator it;
-		for (it = m_aFreeUnitCombatPromotions.begin(); it != m_aFreeUnitCombatPromotions.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_aFreeUnitClassPromotions.size();
-		pStream->Write(iSize);
-		UnitClassPromotionArray::iterator it;
-		for (it = m_aFreeUnitClassPromotions.begin(); it != m_aFreeUnitClassPromotions.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_aEuropeRevolutionUnits.size();
-		pStream->Write(iSize);
-		std::vector< std::pair<UnitTypes, ProfessionTypes> >::iterator it;
-		for (it = m_aEuropeRevolutionUnits.begin(); it != m_aEuropeRevolutionUnits.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_aDocksNextUnits.size();
-		pStream->Write(iSize);
-		std::vector<UnitTypes>::iterator it;
-		for (it = m_aDocksNextUnits.begin(); it != m_aDocksNextUnits.end(); ++it)
-		{
-			pStream->Write(*it);
-		}
-	}
-
-	// PatchMod: Achievements START
-	{
-		uint iSize = m_achievesGained.size();
-		pStream->Write(iSize);
-		std::vector<AchieveTypes>::iterator it;
-		for (it = m_achievesGained.begin(); it != m_achievesGained.end(); ++it)
-		{
-			pStream->Write(*it);
-		}
-	}
-	{
-		uint iSize = m_achievesTurn.size();
-		pStream->Write(iSize);
-		std::vector<int>::iterator it;
-		for (it = m_achievesTurn.begin(); it != m_achievesTurn.end(); ++it)
-		{
-			pStream->Write(*it);
-		}
-	}
-	// PatchMod: Achievements END
-
-	{
-		uint iSize = m_triggersFired.size();
-		pStream->Write(iSize);
-		std::vector<EventTriggerTypes>::iterator it;
-		for (it = m_triggersFired.begin(); it != m_triggersFired.end(); ++it)
-		{
-			pStream->Write((*it));
-		}
-	}
 }
 
 void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY)

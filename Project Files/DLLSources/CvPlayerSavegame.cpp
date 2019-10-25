@@ -259,6 +259,14 @@ enum SavegameVariableTypes
 	PlayerSave_mapEventsOccured,
 	PlayerSave_mapEventCountdown,
 
+	PlayerSave_FreeUnitCombatPromotions,
+	PlayerSave_FreeUnitClassPromotions,
+	PlayerSave_EuropeRevolutionUnits,
+	PlayerSave_DocksNextUnits,
+	PlayerSave_chievesGained,
+	PlayerSave_chievesTurn,
+	PlayerSave_triggersFired,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -424,7 +432,15 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_mapCultureHistory: return "PlayerSave_mapCultureHistory";
 	case PlayerSave_mapEventsOccured: return "PlayerSave_mapEventsOccured";
 	case PlayerSave_mapEventCountdown: return "PlayerSave_mapEventCountdown";
-	
+
+	case PlayerSave_FreeUnitCombatPromotions: return "PlayerSave_FreeUnitCombatPromotions";
+	case PlayerSave_FreeUnitClassPromotions: return "PlayerSave_FreeUnitClassPromotions";
+	case PlayerSave_EuropeRevolutionUnits: return "PlayerSave_EuropeRevolutionUnits";
+	case PlayerSave_DocksNextUnits: return "PlayerSave_DocksNextUnits";
+	case PlayerSave_chievesGained: return "PlayerSave_chievesGained";
+	case PlayerSave_chievesTurn: return "PlayerSave_chievesTurn";
+	case PlayerSave_triggersFired: return "PlayerSave_triggersFired";
+
 	}
 	return "";
 }
@@ -607,6 +623,14 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_mapCultureHistory.clear();
 	m_mapEventsOccured.clear();
 	m_mapEventCountdown.clear();
+
+	m_aFreeUnitCombatPromotions.clear();
+	m_aFreeUnitClassPromotions.clear();
+	m_aEuropeRevolutionUnits.clear();
+	m_aDocksNextUnits.clear();
+	m_achievesGained.clear();
+	m_achievesTurn.clear();
+	m_triggersFired.clear();
 
 }
 
@@ -791,6 +815,14 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_mapCultureHistory: reader.Read(m_mapCultureHistory); break;
 		case PlayerSave_mapEventsOccured: reader.Read(m_mapEventsOccured); break;
 		case PlayerSave_mapEventCountdown: reader.Read(m_mapEventCountdown); break;
+
+		case PlayerSave_FreeUnitCombatPromotions: reader.Read(m_aFreeUnitCombatPromotions); break;
+		case PlayerSave_FreeUnitClassPromotions: reader.Read(m_aFreeUnitClassPromotions); break;
+		case PlayerSave_EuropeRevolutionUnits: reader.Read(m_aEuropeRevolutionUnits); break;
+		case PlayerSave_DocksNextUnits: reader.Read(m_aDocksNextUnits); break;
+		case PlayerSave_chievesGained: reader.Read(m_achievesGained); break;
+		case PlayerSave_chievesTurn: reader.Read(m_achievesTurn); break;
+		case PlayerSave_triggersFired: reader.Read(m_triggersFired); break;
 		}
 	}
 
@@ -999,6 +1031,14 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_mapCultureHistory, m_mapCultureHistory);
 	writer.Write(PlayerSave_mapEventsOccured, m_mapEventsOccured);
 	writer.Write(PlayerSave_mapEventCountdown, m_mapEventCountdown);
+
+	writer.Write(PlayerSave_FreeUnitCombatPromotions, m_aFreeUnitCombatPromotions);
+	writer.Write(PlayerSave_FreeUnitClassPromotions, m_aFreeUnitClassPromotions);
+	writer.Write(PlayerSave_EuropeRevolutionUnits, m_aEuropeRevolutionUnits);
+	writer.Write(PlayerSave_DocksNextUnits, m_aDocksNextUnits);
+	writer.Write(PlayerSave_chievesGained, m_achievesGained);
+	writer.Write(PlayerSave_chievesTurn, m_achievesTurn);
+	writer.Write(PlayerSave_triggersFired, m_triggersFired);
 
 	writer.Write(PlayerSave_END);
 }

@@ -99,6 +99,9 @@ public:
 	template<class T>
 	void Read(std::list<T*>& vec);
 
+	template<class T1, class T2>
+	void Read(std::pair<T1,T2>& pair);
+
 	template<class T>
 	void Read(FFreeListTrashArray<T>& array);
 
@@ -147,6 +150,7 @@ public:
 
 
 	// everything linked to xml file enums
+	void Read(AchieveTypes          & variable) { ReadXmlEnum(variable); }
 	void Read(ArtStyleTypes         & variable) { ReadXmlEnum(variable); }
 	void Read(BonusTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(BuildTypes            & variable) { ReadXmlEnum(variable); }
@@ -298,6 +302,9 @@ public:
 
 	template<class T>
 	void Write(std::list<T*>& vec);
+
+	template<class T1,class T2>
+	void Write(std::pair<T1,T2>& pair);
 	
 	template<class T>
 	void Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array);
@@ -372,6 +379,7 @@ public:
 	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
+	void Write(AchieveTypes          variable) { WriteXmlEnum(variable); }
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
 	void Write(BonusTypes            variable) { WriteXmlEnum(variable); }
 	void Write(BuildTypes            variable) { WriteXmlEnum(variable); }
@@ -579,6 +587,13 @@ inline void CvSavegameReader::Read(std::list<T*>& vec)
 	}
 }
 
+template<class T1, class T2>
+void CvSavegameReader::Read(std::pair<T1,T2>& pair)
+{
+	Read(pair.first);
+	Read(pair.second);
+}
+
 template<class T>
 inline void CvSavegameReader::Read(FFreeListTrashArray<T>& array)
 {
@@ -683,6 +698,13 @@ inline void CvSavegameWriter::Write(std::list<T*>& vec)
 		Write(**it);
 	}
 }
+
+template<class T1,class T2>
+	void CvSavegameWriter::Write(std::pair<T1,T2>& pair)
+	{
+		Write(pair.first);
+		Write(pair.second);
+	}
 
 template<class T>
 inline void CvSavegameWriter::Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array)
