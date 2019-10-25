@@ -110,6 +110,8 @@ public:
 
 	void Read(BoolArray& baArray);
 	void Read(PlayerBoolArrayBase& array);
+	void Read(CvTurnScoreMap& vec);
+	void Read(CvEventMap& vec);
 
 	// workaround because we can't use references on bitfields
 	template<typename T>
@@ -205,6 +207,7 @@ public:
 	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
+	void Read(EventTriggeredData    & variable) { variable.read(*this); }
 	void Read(IDInfo                & variable) { variable.read(*this); }
 	void Read(MissionData           & variable) { variable.read(*this); }
 	void Read(OrderData             & variable) { variable.read(*this); }
@@ -313,6 +316,8 @@ public:
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
 	void Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
+	void Write(SavegameVariableTypes eType, CvTurnScoreMap& idInfo);
+	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array);
@@ -426,6 +431,7 @@ public:
 	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
+	void Write(EventTriggeredData   &variable) { variable.write(*this); }
 	void Write(IDInfo               &variable) { variable.write(*this); }
 	void Write(MissionData          &variable) { variable.write(*this); }
 	void Write(OrderData            &variable) { variable.write(*this); }

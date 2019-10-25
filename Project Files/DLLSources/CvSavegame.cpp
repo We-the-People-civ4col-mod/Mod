@@ -317,6 +317,32 @@ void CvSavegameReader::Read(PlayerBoolArrayBase& array)
 	array.Read(*this);
 }
 
+void CvSavegameReader::Read(CvTurnScoreMap& Map)
+{
+	int iSize;
+	Read(iSize);
+	for (int iI = 0; iI < iSize; iI++){
+		int iTurn;
+		int iValue;
+		Read(iTurn);
+		Read(iValue);
+		Map[iTurn]=iValue;
+	}
+}
+
+void CvSavegameReader::Read(CvEventMap& Map)
+{
+	int iSize;
+	Read(iSize);
+	for (int iI = 0; iI < iSize; iI++){
+		EventTypes eEvent;
+		EventTriggeredData kData;
+		Read(eEvent);
+		Read(kData);
+		Map[eEvent]=kData;
+	}
+}
+
 void CvSavegameReader::ReadXmlEnum(int& iVariable, JITarrayTypes eType)
 {
 	FAssert(eType >= 0 && eType < NUM_JITarrayTypes);
@@ -600,6 +626,33 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, IDInfo& idInfo)
 	{
 		Write(eType);
 		idInfo.write(*this);
+	}
+}
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvTurnScoreMap& Map)
+{
+	int iSize=Map.size();
+	if(iSize>0){
+		Write(eType);
+		Write(iSize);
+		for (CvTurnScoreMap::iterator it = Map.begin(); it != Map.end(); ++it)
+		{
+			Write(it->first);
+			Write(it->second);
+		}
+	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvEventMap& Map)
+{
+	int iSize=Map.size();
+	if(iSize>0){
+		Write(eType);
+		Write(iSize);
+		for (CvEventMap::iterator it = Map.begin(); it != Map.end(); ++it)
+		{
+			Write(it->first);
+			Write(it->second);
+		}
 	}
 }
 

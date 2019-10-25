@@ -250,6 +250,15 @@ enum SavegameVariableTypes
 	PlayerSave_listPopups,
 	PlayerSave_listDiplomacy,
 
+	PlayerSave_mapScoreHistory,
+	PlayerSave_mapEconomyHistory,
+	PlayerSave_mapIndustryHistory,
+	PlayerSave_mapAgricultureHistory,
+	PlayerSave_mapPowerHistory,
+	PlayerSave_mapCultureHistory,
+	PlayerSave_mapEventsOccured,
+	PlayerSave_mapEventCountdown,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -406,7 +415,16 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_listGameMessages: return "PlayerSave_listGameMessages";
 	case PlayerSave_listPopups: return "PlayerSave_listPopups";
 	case PlayerSave_listDiplomacy: return "PlayerSave_listDiplomacy";
-
+	
+	case PlayerSave_mapScoreHistory: return "PlayerSave_mapScoreHistory";
+	case PlayerSave_mapEconomyHistory: return "PlayerSave_mapEconomyHistory";
+	case PlayerSave_mapIndustryHistory: return "PlayerSave_mapIndustryHistory";
+	case PlayerSave_mapAgricultureHistory: return "PlayerSave_mapAgricultureHistory";
+	case PlayerSave_mapPowerHistory: return "PlayerSave_mapPowerHistory";
+	case PlayerSave_mapCultureHistory: return "PlayerSave_mapCultureHistory";
+	case PlayerSave_mapEventsOccured: return "PlayerSave_mapEventsOccured";
+	case PlayerSave_mapEventCountdown: return "PlayerSave_mapEventCountdown";
+	
 	}
 	return "";
 }
@@ -580,6 +598,15 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	clearMessages();
 	clearPopups();
 	clearDiplomacy();
+
+	m_mapScoreHistory.clear();
+	m_mapEconomyHistory.clear();
+	m_mapIndustryHistory.clear();
+	m_mapAgricultureHistory.clear();
+	m_mapPowerHistory.clear();
+	m_mapCultureHistory.clear();
+	m_mapEventsOccured.clear();
+	m_mapEventCountdown.clear();
 
 }
 
@@ -755,6 +782,15 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_listGameMessages: reader.Read(m_listGameMessages); break;
 		case PlayerSave_listPopups: reader.Read(m_listPopups); break;
 		case PlayerSave_listDiplomacy: reader.Read(m_listDiplomacy); break;
+
+		case PlayerSave_mapScoreHistory: reader.Read(m_mapScoreHistory); break;
+		case PlayerSave_mapEconomyHistory: reader.Read(m_mapEconomyHistory); break;
+		case PlayerSave_mapIndustryHistory: reader.Read(m_mapIndustryHistory); break;
+		case PlayerSave_mapAgricultureHistory: reader.Read(m_mapAgricultureHistory); break;
+		case PlayerSave_mapPowerHistory: reader.Read(m_mapPowerHistory); break;
+		case PlayerSave_mapCultureHistory: reader.Read(m_mapCultureHistory); break;
+		case PlayerSave_mapEventsOccured: reader.Read(m_mapEventsOccured); break;
+		case PlayerSave_mapEventCountdown: reader.Read(m_mapEventCountdown); break;
 		}
 	}
 
@@ -954,6 +990,15 @@ void CvPlayer::write(CvSavegameWriter writer)
 		}
 	}
 	writer.Write(PlayerSave_listDiplomacy, m_listDiplomacy);
+
+	writer.Write(PlayerSave_mapScoreHistory, m_mapScoreHistory);
+	writer.Write(PlayerSave_mapEconomyHistory, m_mapEconomyHistory);
+	writer.Write(PlayerSave_mapIndustryHistory, m_mapIndustryHistory);
+	writer.Write(PlayerSave_mapAgricultureHistory, m_mapAgricultureHistory);
+	writer.Write(PlayerSave_mapPowerHistory, m_mapPowerHistory);
+	writer.Write(PlayerSave_mapCultureHistory, m_mapCultureHistory);
+	writer.Write(PlayerSave_mapEventsOccured, m_mapEventsOccured);
+	writer.Write(PlayerSave_mapEventCountdown, m_mapEventCountdown);
 
 	writer.Write(PlayerSave_END);
 }
