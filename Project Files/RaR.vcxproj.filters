@@ -417,6 +417,8 @@
     </ClCompile>
     <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp">
       <Filter>CV\Savegames</Filter>
+    <ClCompile Include="DLLSources\TestEnumMap.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -834,6 +836,9 @@
     </Filter>
     <Filter Include="CV\Savegames">
       <UniqueIdentifier>{14ec300e-6af3-4de1-80b2-9e2c68314bb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{ad6616d9-6e93-45cb-8cc5-db0c523db5c8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

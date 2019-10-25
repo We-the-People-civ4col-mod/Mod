@@ -79,6 +79,9 @@ public:
 	// add a number to all indexes
 	void addAll(T eValue);
 	
+	// get the sum of all elements
+	int getTotal() const;
+
 	// Check if there is non-default contents.
 	// isAllocated() test for a null pointer while hasContent() will loop the array to test each index for default value.
 	// Useful to avoid looping all 0 arrays and when creating savegames.
@@ -250,7 +253,10 @@ private:
 	void _setAll(T val);
 
 	template <bool bInline>
-	int _getNumBoolBlocks() const;
+	unsigned int _getNumBoolBlocks() const;
+
+	template <int iIndex>
+	int _getTotal() const;
 
 	template <int iSize>
 	void _Read(CvSavegameReader& reader);
@@ -323,7 +329,7 @@ private:
 	template<>
 	__forceinline void _set<false, ENUMMAP_SIZE_BOOL>(int iIndex, T eValue)
 	{
-		SetBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0));
+		SetBit(m_pArrayBool[getBoolArrayBlock(iIndex)], getBoolArrayIndexInBlock(iIndex), eValue ? 1 : 0);
 	}
 	template<>
 	__forceinline void _set<true, ENUMMAP_SIZE_NATIVE>(int iIndex, T eValue)
@@ -365,7 +371,7 @@ private:
 	template<>
 	__forceinline void _setAll<false, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(m_pArrayBool, _getNumBoolBlocks(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(m_pArrayBool, _getNumBoolBlocks<false>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_NATIVE>(T eValue)
@@ -385,7 +391,7 @@ private:
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks<bINLINE_BOOL>(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks<bINLINE>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 
 	// allocate
@@ -414,7 +420,7 @@ private:
 	void _allocate<false, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
 		FAssert(m_pArrayBool == NULL);
-		m_pArrayBool = new unsigned int[getBoolArrayNumBlocks()];
+		m_pArrayBool = new unsigned int[_getNumBoolBlocks<bINLINE>()];
 		_setAll<bINLINE, SIZE>(eValue);
 	}
 	template<>
@@ -443,15 +449,34 @@ private:
 	////
 
 	template <>
-	__forceinline int _getNumBoolBlocks<false>() const
+	__forceinline unsigned int _getNumBoolBlocks<false>() const
 	{
 		return (numElements() + 31) / 32;
 	}
 
 	template <>
-	__forceinline int _getNumBoolBlocks<true>() const
+	__forceinline unsigned int _getNumBoolBlocks<true>() const
 	{
 		return NUM_BOOL_BLOCKS;
+	}
+
+	template <>
+	__forceinline int _getTotal<0>() const
+	{
+		// last template in the unrolled loop
+		return get((LengthType)0);
+	}
+
+	template <>
+	int _getTotal<MAX_SHORT-1>() const
+	{
+		// length is unknown at compile time. Use runtime looping
+		int iReturnVal = 0;
+		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
+		{
+			iReturnVal += get(eIndex);
+		}
+		return iReturnVal;
 	}
 
 	template<>
@@ -686,6 +711,29 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::addAll(T e
 			add(eIndex, (T)eValue);
 		}
 	}
+}
+
+template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
+inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getTotal() const
+{
+	if (!bINLINE && !isAllocated())
+	{
+		// no need to loop through unallocated memory
+		// We already know the answer, particularly if DEFAULT is 0
+		return DEFAULT * getLength();
+	}
+	else
+	{
+		return _getTotal<LENGTH - 1>();
+	}
+}
+
+template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
+template<int iIndex>
+__forceinline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_getTotal() const
+{
+	// unroll the loop using templates
+	return _getTotal<iIndex - 1>() + get((LengthType)iIndex);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
