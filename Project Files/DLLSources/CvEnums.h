@@ -1772,8 +1772,11 @@ enum DllExport ContactTypes
 	// R&R, ray, Natives raiding party - END
 
 #ifdef _USRDLL
-	NUM_CONTACT_TYPES
+	NUM_CONTACT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_CONTACT_TYPES = NUM_CONTACT_TYPES,
+
 };
 
 enum DllExport MemoryTypes

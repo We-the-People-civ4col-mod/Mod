@@ -42,6 +42,22 @@ enum SavegameVariableTypes
 	PlayerSaveAI_ImmigrantSpending,
 	PlayerSaveAI_EuropeYieldSpending,
 
+	PlayerSaveAI_AverageYieldMultiplier,
+	PlayerSaveAI_BestWorkedYieldPlots,
+	PlayerSaveAI_BestUnworkedYieldPlots,
+	PlayerSaveAI_YieldValuesTimes100,
+	PlayerSaveAI_NumTrainAIUnits,
+	PlayerSaveAI_NumAIUnits,
+	PlayerSaveAI_NumRetiredAIUnits,
+	PlayerSaveAI_UnitAIStrategyWeights,
+	PlayerSaveAI_PeacetimeTradeValue,
+	PlayerSaveAI_PeacetimeGrantValue,
+	PlayerSaveAI_GoldTradedTo,
+	PlayerSaveAI_AttitudeExtra,
+	PlayerSaveAI_FirstContact,
+	PlayerSaveAI_ContactTimer,
+	PlayerSaveAI_MemoryCount,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -67,6 +83,22 @@ const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType)
 	case PlayerSaveAI_HurrySpending: return "PlayerSaveAI_HurrySpending";
 	case PlayerSaveAI_ImmigrantSpending: return "PlayerSaveAI_ImmigrantSpending";
 	case PlayerSaveAI_EuropeYieldSpending: return "PlayerSaveAI_EuropeYieldSpending";
+
+		case PlayerSaveAI_AverageYieldMultiplier: return "PlayerSaveAI_AverageYieldMultiplier";
+		case PlayerSaveAI_BestWorkedYieldPlots: return "PlayerSaveAI_BestWorkedYieldPlots";
+		case PlayerSaveAI_BestUnworkedYieldPlots: return "PlayerSaveAI_BestUnworkedYieldPlots";
+		case PlayerSaveAI_YieldValuesTimes100: return "PlayerSaveAI_YieldValuesTimes100";
+		case PlayerSaveAI_NumTrainAIUnits: return "PlayerSaveAI_NumTrainAIUnits";
+		case PlayerSaveAI_NumAIUnits: return "PlayerSaveAI_NumAIUnits";
+		case PlayerSaveAI_NumRetiredAIUnits: return "PlayerSaveAI_NumRetiredAIUnits";
+		case PlayerSaveAI_UnitAIStrategyWeights: return "PlayerSaveAI_UnitAIStrategyWeights";
+		case PlayerSaveAI_PeacetimeTradeValue: return "PlayerSaveAI_PeacetimeTradeValue";
+		case PlayerSaveAI_PeacetimeGrantValue: return "PlayerSaveAI_PeacetimeGrantValue";
+		case PlayerSaveAI_GoldTradedTo: return "PlayerSaveAI_GoldTradedTo";
+		case PlayerSaveAI_AttitudeExtra: return "PlayerSaveAI_AttitudeExtra";
+		case PlayerSaveAI_FirstContact: return "PlayerSaveAI_FirstContact";
+		case PlayerSaveAI_ContactTimer: return "PlayerSaveAI_ContactTimer";
+		case PlayerSaveAI_MemoryCount: return "PlayerSaveAI_MemoryCount";
 
 }	return "";
 }
@@ -95,6 +127,23 @@ void CvPlayerAI::AI_resetSavedData()
 	m_iHurrySpending = defaultHurrySpending;
 	m_iImmigrantSpending = defaultImmigrantSpending;
 	m_iEuropeYieldSpending = defaultEuropeYieldSpending;
+
+	m_em_iAverageYieldMultiplier.reset();
+	m_em_iBestWorkedYieldPlots.reset();
+	m_em_iBestUnworkedYieldPlots.reset();
+	m_em_iYieldValuesTimes100.reset();
+	m_em_iNumTrainAIUnits.reset();
+	m_em_iNumAIUnits.reset();
+	m_em_iNumRetiredAIUnits.reset();
+	m_em_iUnitAIStrategyWeights.reset();
+	m_em_iPeacetimeTradeValue.reset();
+	m_em_iPeacetimeGrantValue.reset();
+	m_em_iGoldTradedTo.reset();
+	m_em_iAttitudeExtra.reset();
+	m_em_bFirstContact.reset();
+	m_em_iContactTimer.reset();
+	m_em_iMemoryCount.reset();
+
 }
 
 void CvPlayerAI::read(CvSavegameReader reader)
@@ -136,6 +185,22 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_HurrySpending: reader.Read(m_iHurrySpending); break;
 		case PlayerSaveAI_ImmigrantSpending: reader.Read(m_iImmigrantSpending); break;
 		case PlayerSaveAI_EuropeYieldSpending: reader.Read(m_iEuropeYieldSpending); break;
+		
+		case PlayerSaveAI_AverageYieldMultiplier: reader.Read(m_em_iAverageYieldMultiplier); break;
+		case PlayerSaveAI_BestWorkedYieldPlots: reader.Read(m_em_iBestWorkedYieldPlots); break;
+		case PlayerSaveAI_BestUnworkedYieldPlots: reader.Read(m_em_iBestUnworkedYieldPlots); break;
+		case PlayerSaveAI_YieldValuesTimes100: reader.Read(m_em_iYieldValuesTimes100); break;
+		case PlayerSaveAI_NumTrainAIUnits: reader.Read(m_em_iNumTrainAIUnits); break;
+		case PlayerSaveAI_NumAIUnits: reader.Read(m_em_iNumAIUnits); break;
+		case PlayerSaveAI_NumRetiredAIUnits: reader.Read(m_em_iNumRetiredAIUnits); break;
+		case PlayerSaveAI_UnitAIStrategyWeights: reader.Read(m_em_iUnitAIStrategyWeights); break;
+		case PlayerSaveAI_PeacetimeTradeValue: reader.Read(m_em_iPeacetimeTradeValue); break;
+		case PlayerSaveAI_PeacetimeGrantValue: reader.Read(m_em_iPeacetimeGrantValue); break;
+		case PlayerSaveAI_GoldTradedTo: reader.Read(m_em_iGoldTradedTo); break;
+		case PlayerSaveAI_AttitudeExtra: reader.Read(m_em_iAttitudeExtra); break;
+		case PlayerSaveAI_FirstContact: reader.Read(m_em_bFirstContact); break;
+		case PlayerSaveAI_ContactTimer: reader.Read(m_em_iContactTimer); break;
+		case PlayerSaveAI_MemoryCount: reader.Read(m_em_iMemoryCount); break;
 
 		}
 	}
@@ -173,6 +238,23 @@ void CvPlayerAI::write(CvSavegameWriter writer)
 	writer.Write(PlayerSaveAI_HurrySpending, m_iHurrySpending, defaultHurrySpending);
 	writer.Write(PlayerSaveAI_ImmigrantSpending, m_iImmigrantSpending, defaultImmigrantSpending);
 	writer.Write(PlayerSaveAI_EuropeYieldSpending, m_iEuropeYieldSpending, defaultEuropeYieldSpending);
+
+	writer.Write(PlayerSaveAI_AverageYieldMultiplier, m_em_iAverageYieldMultiplier);
+	writer.Write(PlayerSaveAI_BestWorkedYieldPlots, m_em_iBestWorkedYieldPlots);
+	writer.Write(PlayerSaveAI_BestUnworkedYieldPlots, m_em_iBestUnworkedYieldPlots);
+	writer.Write(PlayerSaveAI_YieldValuesTimes100, m_em_iYieldValuesTimes100);
+	writer.Write(PlayerSaveAI_NumTrainAIUnits, m_em_iNumTrainAIUnits);
+	writer.Write(PlayerSaveAI_NumAIUnits, m_em_iNumAIUnits);
+	writer.Write(PlayerSaveAI_NumRetiredAIUnits, m_em_iNumRetiredAIUnits);
+	writer.Write(PlayerSaveAI_UnitAIStrategyWeights, m_em_iUnitAIStrategyWeights);
+	writer.Write(PlayerSaveAI_PeacetimeTradeValue, m_em_iPeacetimeTradeValue);
+	writer.Write(PlayerSaveAI_PeacetimeGrantValue, m_em_iPeacetimeGrantValue);
+	writer.Write(PlayerSaveAI_GoldTradedTo, m_em_iGoldTradedTo);
+	writer.Write(PlayerSaveAI_AttitudeExtra, m_em_iAttitudeExtra);
+	writer.Write(PlayerSaveAI_FirstContact, m_em_bFirstContact);
+	writer.Write(PlayerSaveAI_ContactTimer, m_em_iContactTimer);
+	writer.Write(PlayerSaveAI_MemoryCount, m_em_iMemoryCount);
+	
 
 	writer.Write(PlayerSaveAI_END);
 }

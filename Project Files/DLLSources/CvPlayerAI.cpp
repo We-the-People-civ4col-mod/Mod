@@ -69,40 +69,11 @@ DllExport CvPlayerAI& CvPlayerAI::getPlayerNonInl(PlayerTypes ePlayer)
 
 CvPlayerAI::CvPlayerAI()
 {
-	m_aiNumTrainAIUnits = new int[NUM_UNITAI_TYPES];
-	m_aiNumAIUnits = new int[NUM_UNITAI_TYPES];
-	m_aiNumRetiredAIUnits = new int[NUM_UNITAI_TYPES];
-	m_aiUnitAIStrategyWeights = new int[NUM_UNITAI_TYPES];
-	m_aiPeacetimeTradeValue = new int[MAX_PLAYERS];
-	m_aiPeacetimeGrantValue = new int[MAX_PLAYERS];
-	m_aiGoldTradedTo = new int[MAX_PLAYERS];
-	m_aiAttitudeExtra = new int[MAX_PLAYERS];
-
-	m_abFirstContact = new bool[MAX_PLAYERS];
-
-	m_aaiContactTimer = new int*[MAX_PLAYERS];
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		m_aaiContactTimer[i] = new int[NUM_CONTACT_TYPES];
-	}
-
-	m_aaiMemoryCount = new int*[MAX_PLAYERS];
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		m_aaiMemoryCount[i] = new int[NUM_MEMORY_TYPES];
-	}
-
-	m_aiAverageYieldMultiplier = new int[NUM_YIELD_TYPES];
-
 	m_aiUnitClassWeights = NULL;
 	m_aiUnitCombatWeights = NULL;
 	m_aiEmotions = new int[NUM_EMOTION_TYPES];
 	m_aiStrategyStartedTurn = new int[NUM_STRATEGY_TYPES];
 	m_aiStrategyData = new int[NUM_STRATEGY_TYPES];
-
-	m_aiBestWorkedYieldPlots = new int[NUM_YIELD_TYPES];
-	m_aiBestUnworkedYieldPlots = new int[NUM_YIELD_TYPES];
-	m_aiYieldValuesTimes100 = new int[NUM_YIELD_TYPES];
 
 	m_aiCloseBordersAttitudeCache = new int[MAX_PLAYERS];
 	m_aiStolenPlotsAttitudeCache = new int[MAX_PLAYERS];
@@ -114,38 +85,11 @@ CvPlayerAI::CvPlayerAI()
 CvPlayerAI::~CvPlayerAI()
 {
 	AI_uninit();
-
-	SAFE_DELETE_ARRAY(m_aiNumTrainAIUnits);
-	SAFE_DELETE_ARRAY(m_aiNumAIUnits);
-	SAFE_DELETE_ARRAY(m_aiNumRetiredAIUnits);
-	SAFE_DELETE_ARRAY(m_aiUnitAIStrategyWeights);
-	SAFE_DELETE_ARRAY(m_aiPeacetimeTradeValue);
-	SAFE_DELETE_ARRAY(m_aiPeacetimeGrantValue);
-	SAFE_DELETE_ARRAY(m_aiGoldTradedTo);
-	SAFE_DELETE_ARRAY(m_aiAttitudeExtra);
-	SAFE_DELETE_ARRAY(m_abFirstContact);
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		SAFE_DELETE_ARRAY(m_aaiContactTimer[i]);
-	}
-	SAFE_DELETE_ARRAY(m_aaiContactTimer);
-
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		SAFE_DELETE_ARRAY(m_aaiMemoryCount[i]);
-	}
-	SAFE_DELETE_ARRAY(m_aaiMemoryCount);
-
-	SAFE_DELETE_ARRAY(m_aiAverageYieldMultiplier);
 	SAFE_DELETE_ARRAY(m_aiCloseBordersAttitudeCache);
 	SAFE_DELETE_ARRAY(m_aiStolenPlotsAttitudeCache);
 	SAFE_DELETE_ARRAY(m_aiEmotions);
 	SAFE_DELETE_ARRAY(m_aiStrategyStartedTurn);
 	SAFE_DELETE_ARRAY(m_aiStrategyData);
-
-	SAFE_DELETE_ARRAY(m_aiBestWorkedYieldPlots);
-	SAFE_DELETE_ARRAY(m_aiBestUnworkedYieldPlots);
-	SAFE_DELETE_ARRAY(m_aiYieldValuesTimes100);
 	m_aTradeGroups.clear();
 }
 
@@ -176,51 +120,6 @@ void CvPlayerAI::AI_reset()
 
 	AI_uninit();
 	AI_resetSavedData();
-
-	for (iI = 0; iI < NUM_UNITAI_TYPES; iI++)
-	{
-		m_aiNumTrainAIUnits[iI] = 0;
-		m_aiNumAIUnits[iI] = 0;
-		m_aiNumRetiredAIUnits[iI] = 0;
-		m_aiUnitAIStrategyWeights[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiPeacetimeTradeValue[iI] = 0;
-		m_aiPeacetimeGrantValue[iI] = 0;
-		m_aiGoldTradedTo[iI] = 0;
-		m_aiAttitudeExtra[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_abFirstContact[iI] = false;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		for (int iJ = 0; iJ < NUM_CONTACT_TYPES; iJ++)
-		{
-			m_aaiContactTimer[iI][iJ] = 0;
-		}
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		for (int iJ = 0; iJ < NUM_MEMORY_TYPES; iJ++)
-		{
-			m_aaiMemoryCount[iI][iJ] = 0;
-		}
-	}
-
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiAverageYieldMultiplier[iI] = 0;
-		m_aiBestWorkedYieldPlots[iI] = -1;
-		m_aiBestUnworkedYieldPlots[iI] = -1;
-		m_aiYieldValuesTimes100[iI] = 0;
-	}
 
 	m_iTurnLastProductionDirty = -1;
 	m_iTurnLastManagedPop = -1;
@@ -6100,7 +5999,7 @@ int CvPlayerAI::AI_getNumTrainAIUnits(UnitAITypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiNumTrainAIUnits[eIndex];
+	return m_em_iNumTrainAIUnits.get(eIndex);
 }
 
 
@@ -6108,7 +6007,7 @@ void CvPlayerAI::AI_changeNumTrainAIUnits(UnitAITypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiNumTrainAIUnits[eIndex] += iChange;
+	m_em_iNumTrainAIUnits.add(eIndex, iChange);
 	FAssert(AI_getNumTrainAIUnits(eIndex) >= 0);
 }
 
@@ -6117,7 +6016,7 @@ int CvPlayerAI::AI_getNumAIUnits(UnitAITypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiNumAIUnits[eIndex];
+	return m_em_iNumAIUnits.get(eIndex);
 }
 
 
@@ -6125,7 +6024,7 @@ void CvPlayerAI::AI_changeNumAIUnits(UnitAITypes eIndex, int iChange)
 {
 	if (eIndex != NO_UNITAI)
 	{
-		m_aiNumAIUnits[eIndex] += iChange;
+		m_em_iNumAIUnits.add(eIndex, iChange);
 		FAssert(AI_getNumAIUnits(eIndex) >= 0);
 
 #ifdef _DEBUG
@@ -6175,7 +6074,7 @@ int CvPlayerAI::AI_getNumRetiredAIUnits(UnitAITypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiNumRetiredAIUnits[eIndex];
+	return m_em_iNumRetiredAIUnits.get(eIndex);
 }
 
 
@@ -6183,7 +6082,7 @@ void CvPlayerAI::AI_changeNumRetiredAIUnits(UnitAITypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiNumRetiredAIUnits[eIndex] += iChange;
+	m_em_iNumRetiredAIUnits.add(eIndex, iChange);
 	FAssert(AI_getNumRetiredAIUnits(eIndex) >= 0);
 }
 
@@ -6191,7 +6090,7 @@ int CvPlayerAI::AI_getPeacetimeTradeValue(PlayerTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiPeacetimeTradeValue[eIndex];
+	return m_em_iPeacetimeTradeValue.get(eIndex);
 }
 
 
@@ -6206,7 +6105,7 @@ void CvPlayerAI::AI_changePeacetimeTradeValue(PlayerTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiPeacetimeTradeValue[eIndex] = (m_aiPeacetimeTradeValue[eIndex] + iChange);
+		m_em_iPeacetimeTradeValue.add(eIndex, iChange);
 		FAssert(AI_getPeacetimeTradeValue(eIndex) >= 0);
 
 		FAssert(iChange > 0);
@@ -6235,7 +6134,7 @@ int CvPlayerAI::AI_getPeacetimeGrantValue(PlayerTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiPeacetimeGrantValue[eIndex];
+	return m_em_iPeacetimeGrantValue.get(eIndex);
 }
 
 
@@ -6250,7 +6149,7 @@ void CvPlayerAI::AI_changePeacetimeGrantValue(PlayerTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiPeacetimeGrantValue[eIndex] = (m_aiPeacetimeGrantValue[eIndex] + iChange);
+		m_em_iPeacetimeGrantValue.add(eIndex, iChange);
 		FAssert(AI_getPeacetimeGrantValue(eIndex) >= 0);
 
 		FAssert(iChange > 0);
@@ -6279,7 +6178,7 @@ int CvPlayerAI::AI_getGoldTradedTo(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiGoldTradedTo[eIndex];
+	return m_em_iGoldTradedTo.get(eIndex);
 }
 
 
@@ -6287,7 +6186,7 @@ void CvPlayerAI::AI_changeGoldTradedTo(PlayerTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiGoldTradedTo[eIndex] = (m_aiGoldTradedTo[eIndex] + iChange);
+	m_em_iGoldTradedTo.add(eIndex, iChange);
 	FAssert(AI_getGoldTradedTo(eIndex) >= 0);
 }
 
@@ -6296,7 +6195,7 @@ int CvPlayerAI::AI_getAttitudeExtra(PlayerTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiAttitudeExtra[eIndex];
+	return m_em_iAttitudeExtra.get(eIndex);
 }
 
 
@@ -6304,7 +6203,7 @@ void CvPlayerAI::AI_setAttitudeExtra(PlayerTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiAttitudeExtra[eIndex] = iNewValue;
+	m_em_iAttitudeExtra.set(eIndex, iNewValue);
 }
 
 
@@ -6318,7 +6217,7 @@ bool CvPlayerAI::AI_isFirstContact(PlayerTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abFirstContact[eIndex];
+	return m_em_bFirstContact.get(eIndex);
 }
 
 
@@ -6326,7 +6225,7 @@ void CvPlayerAI::AI_setFirstContact(PlayerTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abFirstContact[eIndex] = bNewValue;
+	m_em_bFirstContact.set(eIndex, bNewValue);
 }
 
 
@@ -6336,7 +6235,7 @@ int CvPlayerAI::AI_getContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2)
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_CONTACT_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_aaiContactTimer[eIndex1][eIndex2];
+	return m_em_iContactTimer.get(eIndex1, eIndex2);
 }
 
 
@@ -6346,7 +6245,7 @@ void CvPlayerAI::AI_changeContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_CONTACT_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	m_aaiContactTimer[eIndex1][eIndex2] = (AI_getContactTimer(eIndex1, eIndex2) + iChange);
+	m_em_iContactTimer.add(eIndex1, eIndex2, iChange);
 	FAssert(AI_getContactTimer(eIndex1, eIndex2) >= 0);
 }
 
@@ -6357,7 +6256,7 @@ int CvPlayerAI::AI_getMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2)
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_MEMORY_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_aaiMemoryCount[eIndex1][eIndex2];
+	return m_em_iMemoryCount.get(eIndex1, eIndex2);
 }
 
 
@@ -6367,7 +6266,7 @@ void CvPlayerAI::AI_changeMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2, 
 	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_MEMORY_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	m_aaiMemoryCount[eIndex1][eIndex2] += iChange;
+	m_em_iMemoryCount.add(eIndex1, eIndex2, iChange);
 	FAssert(AI_getMemoryCount(eIndex1, eIndex2) >= 0);
 }
 
@@ -9022,7 +8921,7 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 	}
 	else
 	{
-		iValue += m_aiYieldValuesTimes100[eYield];
+		iValue += m_em_iYieldValuesTimes100.get(eYield);
 	}
 
 	iValue *= AI_yieldWeight(eYield);
@@ -9284,13 +9183,13 @@ void CvPlayerAI::AI_updateYieldValues()
 				FAssert(false);
 		}
 
-		m_aiYieldValuesTimes100[i] = 100 * iValue;
+		m_em_iYieldValuesTimes100.set(eYield, 100 * iValue);
 	}
-	int iCrossValue = m_aiYieldValuesTimes100[YIELD_FOOD] * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
+	int iCrossValue = m_em_iYieldValuesTimes100.get(YIELD_FOOD) * getGrowthThreshold(1) / (50 + immigrationThreshold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100);
 	iCrossValue /= 2;
 
 	//Crosses
-	m_aiYieldValuesTimes100[YIELD_CROSSES] = std::max(m_aiYieldValuesTimes100[YIELD_CROSSES], iCrossValue);
+	m_em_iYieldValuesTimes100.set(YIELD_CROSSES, std::max(m_em_iYieldValuesTimes100.get(YIELD_CROSSES), iCrossValue));
 
 	//The function is quite simple. Iterate over every citizen which has input yield.
 	//Calculate the value of their output yield, and assign half of that to the input.
@@ -9316,7 +9215,7 @@ void CvPlayerAI::AI_updateYieldValues()
 						int iInput = pLoopCity->getProfessionInput(eProfession, pLoopUnit);
 						int iOutput = pLoopCity->getProfessionOutput(eProfession, pLoopUnit);
 
-						int iProfit = (m_aiYieldValuesTimes100[kProfession.getYieldsProduced(0)] * iOutput);
+						int iProfit = (m_em_iYieldValuesTimes100.get((YieldTypes)kProfession.getYieldsProduced(0)) * iOutput);
 						// R&R, ray , MYCP partially based on code of Aymerick - END
 						// R&R, ray, fix on Zero Division
 						if (iInput == 0)
@@ -9324,7 +9223,7 @@ void CvPlayerAI::AI_updateYieldValues()
 							iInput = 1;
 						}
 						int iInputValue = iProfit / (2 * iInput); //Assign 50% of the yield value to the input.
-						m_aiYieldValuesTimes100[kProfession.getYieldsConsumed(0)] = std::max(iInputValue, m_aiYieldValuesTimes100[kProfession.getYieldsConsumed(0)]);
+						m_em_iYieldValuesTimes100.set((YieldTypes)kProfession.getYieldsConsumed(0), std::max(iInputValue, m_em_iYieldValuesTimes100.get((YieldTypes)kProfession.getYieldsConsumed(0))));
 					}
 				}
 
@@ -9373,8 +9272,8 @@ void CvPlayerAI::AI_updateYieldValues()
 						YieldTypes eYieldProduced = (YieldTypes)kIdealPro.getYieldsProduced(0);
 						FAssert(kIdealPro.getYieldsProduced(0) != NO_YIELD);
 						// R&R, ray , MYCP partially based on code of Aymerick - END
-						int iInputValue = m_aiYieldValuesTimes100[eYieldProduced] / 2;
-						m_aiYieldValuesTimes100[eYieldConsumed] = std::max(iInputValue, m_aiYieldValuesTimes100[eYieldConsumed]);
+						int iInputValue = m_em_iYieldValuesTimes100.get(eYieldProduced) / 2;
+						m_em_iYieldValuesTimes100.set(eYieldConsumed, std::max(iInputValue, m_em_iYieldValuesTimes100.get(eYieldConsumed)));
 					}
 
 					if (eSecondIdealProfession != NO_PROFESSION && eSecondIdealProfession != eProfession)
@@ -9388,8 +9287,8 @@ void CvPlayerAI::AI_updateYieldValues()
 							YieldTypes eYieldProduced2 = (YieldTypes)kIdealPro2.getYieldsProduced(0);
 							FAssert(kIdealPro2.getYieldsProduced(0) != NO_YIELD);
 							// R&R, ray , MYCP partially based on code of Aymerick - END
-							int iInputValue = m_aiYieldValuesTimes100[eYieldProduced2] / 2;
-							m_aiYieldValuesTimes100[eYieldConsumed2] = std::max(iInputValue, m_aiYieldValuesTimes100[eYieldConsumed2]);
+							int iInputValue = m_em_iYieldValuesTimes100.get(eYieldProduced2) / 2;
+							m_em_iYieldValuesTimes100.set(eYieldConsumed2, std::max(iInputValue, m_em_iYieldValuesTimes100.get(eYieldConsumed2)));
 						}
 					}
 				}
@@ -11081,7 +10980,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 			break;
 	}
 
-	iValue *= 100 + m_aiUnitAIStrategyWeights[eUnitAI];
+	iValue *= 100 + m_em_iUnitAIStrategyWeights.get(eUnitAI);
 	iValue /= 100;
 
 	return iValue;
@@ -11658,34 +11557,9 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	CvPlayer::read(pStream);	// read base class data first
 
-	pStream->Read(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldValuesTimes100);
-
 	pStream->Read(&m_iUpgradeUnitsCacheTurn);
 	pStream->Read(&m_iUpgradeUnitsCachedExpThreshold);
 	pStream->Read(&m_iUpgradeUnitsCachedGold);
-
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumTrainAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiNumRetiredAIUnits);
-	pStream->Read(NUM_UNITAI_TYPES, m_aiUnitAIStrategyWeights);
-	pStream->Read(MAX_PLAYERS, m_aiPeacetimeTradeValue);
-	pStream->Read(MAX_PLAYERS, m_aiPeacetimeGrantValue);
-	pStream->Read(MAX_PLAYERS, m_aiGoldTradedTo);
-	pStream->Read(MAX_PLAYERS, m_aiAttitudeExtra);
-
-	pStream->Read(MAX_PLAYERS, m_abFirstContact);
-
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		pStream->Read(NUM_CONTACT_TYPES, m_aaiContactTimer[i]);
-	}
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		pStream->Read(NUM_MEMORY_TYPES, m_aaiMemoryCount[i]);
-	}
 
 	pStream->Read(&m_iTurnLastProductionDirty);
 	pStream->Read(&m_iTurnLastManagedPop);
@@ -11748,35 +11622,9 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 
 	CvPlayer::write(pStream);	// write base class data first
 
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiAverageYieldMultiplier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBestWorkedYieldPlots);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBestUnworkedYieldPlots);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldValuesTimes100);
-
 	pStream->Write(m_iUpgradeUnitsCacheTurn);
 	pStream->Write(m_iUpgradeUnitsCachedExpThreshold);
 	pStream->Write(m_iUpgradeUnitsCachedGold);
-
-	pStream->Write(NUM_UNITAI_TYPES, m_aiNumTrainAIUnits);
-	pStream->Write(NUM_UNITAI_TYPES, m_aiNumAIUnits);
-	pStream->Write(NUM_UNITAI_TYPES, m_aiNumRetiredAIUnits);
-	pStream->Write(NUM_UNITAI_TYPES, m_aiUnitAIStrategyWeights);
-	pStream->Write(MAX_PLAYERS, m_aiPeacetimeTradeValue);
-	pStream->Write(MAX_PLAYERS, m_aiPeacetimeGrantValue);
-	pStream->Write(MAX_PLAYERS, m_aiGoldTradedTo);
-	pStream->Write(MAX_PLAYERS, m_aiAttitudeExtra);
-
-	pStream->Write(MAX_PLAYERS, m_abFirstContact);
-
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		pStream->Write(NUM_CONTACT_TYPES, m_aaiContactTimer[i]);
-	}
-	for (int i = 0; i < MAX_PLAYERS; i++)
-	{
-		pStream->Write(NUM_MEMORY_TYPES, m_aaiMemoryCount[i]);
-	}
 
 	pStream->Write(m_iTurnLastProductionDirty);
 	pStream->Write(m_iTurnLastManagedPop);
@@ -12827,7 +12675,7 @@ void CvPlayerAI::AI_doUnitAIWeights()
 	{
 		int iWeight = 90 + GC.getGameINLINE().getSorenRandNum(20, "AI Unit AI Weights");
 
-		m_aiUnitAIStrategyWeights[i] = iWeight;
+		m_em_iUnitAIStrategyWeights.set((UnitAITypes)i, iWeight);
 	}
 }
 
@@ -15690,17 +15538,12 @@ void CvPlayerAI::AI_invalidateDistanceMap()
 
 void CvPlayerAI::AI_updateBestYieldPlots()
 {
-	int aiBestWorkedYield[NUM_YIELD_TYPES];
-	int aiBestUnworkedYield[NUM_YIELD_TYPES];
+	EnumMap<YieldTypes, int> m_em_iBestWorkedYield;
+	EnumMap<YieldTypes, int> m_em_iBestUnworkedYield;
 
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		m_aiBestWorkedYieldPlots[i] = -1;
-		m_aiBestUnworkedYieldPlots[i] = -1;
+	m_em_iBestWorkedYieldPlots.reset();
+	m_em_iBestUnworkedYieldPlots.reset();
 
-		aiBestWorkedYield[i] = 0;
-		aiBestUnworkedYield[i] = 0;
-	}
 	CvMap& kMap = GC.getMapINLINE();
 	for (int i = 0; i < kMap.numPlotsINLINE(); ++i)
 	{
@@ -15715,18 +15558,18 @@ void CvPlayerAI::AI_updateBestYieldPlots()
 				{
 					if (pLoopPlot->isBeingWorked() && pLoopPlot->getYield((YieldTypes)iYield) > 0)
 					{
-						if (iPlotYield > aiBestWorkedYield[iYield])
+						if (iPlotYield > m_em_iBestWorkedYield.get((YieldTypes)iYield))
 						{
-							aiBestWorkedYield[iYield] = iPlotYield;
-							m_aiBestWorkedYieldPlots[iYield] = i;
+							m_em_iBestWorkedYield.set((YieldTypes)iYield, iPlotYield);
+							m_em_iBestWorkedYieldPlots.set((YieldTypes)iYield, i);
 						}
 					}
 					else
 					{
-						if (iPlotYield > aiBestUnworkedYield[iYield])
+						if (iPlotYield > m_em_iBestUnworkedYield.get((YieldTypes)iYield))
 						{
-							aiBestUnworkedYield[iYield] = iPlotYield;
-							m_aiBestUnworkedYieldPlots[iYield] = i;
+							m_em_iBestUnworkedYield.set((YieldTypes)iYield, iPlotYield);
+							m_em_iBestUnworkedYieldPlots.set((YieldTypes)iYield, i);
 						}
 					}
 				}
@@ -15741,7 +15584,7 @@ CvPlot* CvPlayerAI::AI_getBestWorkedYieldPlot(YieldTypes eYield)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_aiBestWorkedYieldPlots[eYield]);
+	return GC.getMapINLINE().plotByIndexINLINE(m_em_iBestWorkedYieldPlots.get(eYield));
 }
 
 CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
@@ -15750,7 +15593,7 @@ CvPlot* CvPlayerAI::AI_getBestUnworkedYieldPlot(YieldTypes eYield)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 
 	//Automatically returns NULL, if -1.
-	return GC.getMapINLINE().plotByIndexINLINE(m_aiBestUnworkedYieldPlots[eYield]);
+	return GC.getMapINLINE().plotByIndexINLINE(m_em_iBestUnworkedYieldPlots.get(eYield));
 }
 
 int CvPlayerAI::AI_getBestPlotYield(YieldTypes eYield)

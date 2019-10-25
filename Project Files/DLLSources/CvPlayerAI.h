@@ -493,24 +493,24 @@ protected:
 	
 	int m_iAveragesCacheTurn;
 	
-	int *m_aiAverageYieldMultiplier;
-	int* m_aiYieldValuesTimes100;
-	int* m_aiBestWorkedYieldPlots;
-	int* m_aiBestUnworkedYieldPlots;
+	EnumMap<YieldTypes, int> m_em_iAverageYieldMultiplier;
+	EnumMap<YieldTypes, int> m_em_iYieldValuesTimes100;
+	EnumMapDefault<YieldTypes, int, -1> m_em_iBestWorkedYieldPlots;
+	EnumMapDefault<YieldTypes, int, -1> m_em_iBestUnworkedYieldPlots;
 	
 	int m_iUpgradeUnitsCacheTurn;
 	int m_iUpgradeUnitsCachedExpThreshold;
 	int m_iUpgradeUnitsCachedGold;
 	
 	
-	int* m_aiNumTrainAIUnits;
-	int* m_aiNumAIUnits;
-	int* m_aiNumRetiredAIUnits;
-	int* m_aiUnitAIStrategyWeights;
-	int* m_aiPeacetimeTradeValue;
-	int* m_aiPeacetimeGrantValue;
-	int* m_aiGoldTradedTo;
-	int* m_aiAttitudeExtra;
+	EnumMap<UnitAITypes, int> m_em_iNumTrainAIUnits;
+	EnumMap<UnitAITypes, int> m_em_iNumAIUnits;
+	EnumMap<UnitAITypes, int> m_em_iNumRetiredAIUnits;
+	EnumMap<UnitAITypes, int> m_em_iUnitAIStrategyWeights;
+	EnumMap<PlayerTypes, int> m_em_iPeacetimeTradeValue;
+	EnumMap<PlayerTypes, int> m_em_iPeacetimeGrantValue;
+	EnumMap<PlayerTypes, int> m_em_iGoldTradedTo;
+	EnumMap<PlayerTypes, int> m_em_iAttitudeExtra;
 	int* m_aiUnitClassWeights;
 	int* m_aiUnitCombatWeights;
 	int* m_aiEmotions;
@@ -521,10 +521,10 @@ protected:
 	mutable int* m_aiStolenPlotsAttitudeCache;
 
 
-	bool* m_abFirstContact;
+	EnumMap<PlayerTypes, bool> m_em_bFirstContact;
 
-	int** m_aaiContactTimer;
-	int** m_aaiMemoryCount;
+	EnumMap2D<PlayerTypes, ContactTypes, int> m_em_iContactTimer;
+	EnumMap2D<PlayerTypes, MemoryTypes, int> m_em_iMemoryCount;
 	
 	std::vector<int> m_aiAICitySites;
 	
