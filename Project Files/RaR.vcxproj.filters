@@ -417,6 +417,7 @@
     </ClCompile>
     <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp">
       <Filter>CV\Savegames</Filter>
+    </ClCompile>
     <ClCompile Include="DLLSources\TestEnumMap.cpp">
       <Filter>Test</Filter>
     </ClCompile>
