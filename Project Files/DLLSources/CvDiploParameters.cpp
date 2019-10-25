@@ -207,19 +207,3 @@ void CvDiploParameters::setCity(const IDInfo& kCity)
 {
 	m_kCity = kCity;
 }
-
-void CvDiploParameters::read(FDataStreamBase& stream)
-{
-	CvSavegameReaderBase readerbase(&stream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-void CvDiploParameters::write(FDataStreamBase& stream)
-{
-	CvSavegameWriterBase writerbase(&stream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}

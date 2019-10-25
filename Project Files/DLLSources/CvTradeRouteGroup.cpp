@@ -120,21 +120,3 @@ void CvTradeRouteGroup::setName(const wchar* szNewValue)
 	if (!isEmpty(szName))
 		m_sName = szName;
 }
-
-
-void CvTradeRouteGroup::read(FDataStreamBase* pStream)
-{
-	CvSavegameReaderBase readerbase(pStream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-	
-}
-
-void CvTradeRouteGroup::write(FDataStreamBase* pStream)
-{	
-	CvSavegameWriterBase writerbase(pStream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}

@@ -189,23 +189,6 @@ bool CvTradeRoute::checkValid(PlayerTypes ePlayer) const
 	return true;
 }
 
-
-void CvTradeRoute::read(FDataStreamBase* pStream)
-{
-	CvSavegameReaderBase readerbase(pStream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-void CvTradeRoute::write(FDataStreamBase* pStream)
-{
-	CvSavegameWriterBase writerbase(pStream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}
-
 void CvTradeRoute::setActiveDirty()
 {
 	if (getDestinationCity().eOwner == GC.getGameINLINE().getActivePlayer())

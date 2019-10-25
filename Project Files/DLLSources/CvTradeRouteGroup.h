@@ -22,9 +22,6 @@ public:
 	const CvWString getName(uint uiForm) const;
 	void setName(const wchar* name);
 	
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
-
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 

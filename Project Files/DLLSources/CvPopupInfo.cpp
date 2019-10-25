@@ -188,20 +188,3 @@ int CvPopupInfo::getNumPythonButtons() const
 {
 	return (int)m_aPythonButtons.size();
 }
-
-
-void CvPopupInfo::read(FDataStreamBase& stream)
-{
-	CvSavegameReaderBase readerbase(&stream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-void CvPopupInfo::write(FDataStreamBase& stream)
-{
-	CvSavegameWriterBase writerbase(&stream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}

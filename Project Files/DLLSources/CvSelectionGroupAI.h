@@ -61,9 +61,6 @@ public:
 
 	bool AI_tradeRoutes();
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
-
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 

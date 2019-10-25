@@ -4161,26 +4161,6 @@ int CvSelectionGroup::getMissionData2(int iNode) const
 	return -1;
 }
 
-
-void CvSelectionGroup::read(FDataStreamBase* pStream)
-{
-	// Init saved data
-	reset();
-	CvSavegameReaderBase readerbase(pStream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-
-void CvSelectionGroup::write(FDataStreamBase* pStream)
-{
-	CvSavegameWriterBase writerbase(pStream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}
-
 // Protected Functions...
 
 void CvSelectionGroup::activateHeadMission()

@@ -1445,23 +1445,6 @@ CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 
 // Protected Functions...
 
-void CvSelectionGroupAI::read(FDataStreamBase* pStream)
-{
-	CvSavegameReaderBase readerbase(pStream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-
-void CvSelectionGroupAI::write(FDataStreamBase* pStream)
-{
-	CvSavegameWriterBase writerbase(pStream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}
-
 // R&R mod, vetiarvind, max yield import limit - start
 
 bool CvSelectionGroupAI::getIgnoreDangerStatus() 

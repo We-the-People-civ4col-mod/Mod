@@ -26,23 +26,6 @@ CvTalkingHeadMessage::~CvTalkingHeadMessage(void)
 {
 }
 
-
-void CvTalkingHeadMessage::read(FDataStreamBase& stream)
-{
-	CvSavegameReaderBase readerbase(&stream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-void CvTalkingHeadMessage::write(FDataStreamBase& stream)
-{
-	CvSavegameWriterBase writerbase(&stream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}
-
 const wchar* CvTalkingHeadMessage::getDescription() const
 {
 	return (m_szDescription);
