@@ -493,7 +493,7 @@ private:
 			reader.Read(iBuffer);
 			eStart = (LengthType)iBuffer;
 			reader.Read(iBuffer);
-			eEmd = (LengthType)iBuffer;
+			eEnd = (LengthType)iBuffer;
 		}
 		else
 		{
@@ -501,12 +501,12 @@ private:
 			reader.Read(iBuffer);
 			eStart = (LengthType)iBuffer;
 			reader.Read(iBuffer);
-			eEmd = (LengthType)iBuffer;
+			eEnd = (LengthType)iBuffer;
 		}
 
 		byte iBuffer;
 
-		for (LengthType eLoop = eStart; eLoop <= eEnd; eLoop = (LengthType)(eLoop + 1))
+		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
 		{
 			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
 			if (iBlockIndex == 0)
@@ -552,9 +552,6 @@ private:
 			eEnd = (LengthType)0;
 		}
 
-		writer.Write(eStart);
-		writer.Write(eEnd);
-
 		if (iLength <= 0x100)
 		{
 			byte iBuffer = eStart;
@@ -570,20 +567,19 @@ private:
 			writer.Write(iBuffer);
 		}
 
-		const byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+		byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
 
 		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
 		{
 			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
 			if (iBlockIndex == 0)
 			{
-				// read next block
+				// write next block
 				writer.Write(iBuffer);
 				iBuffer = (byte)BOOL_BLOCK_DEFAULT;
 			}
 			SetBit(iBuffer, get(eLoop));
 		}
-		writer.Write(iBuffer);
 	}
 };
 
@@ -1330,15 +1326,18 @@ SET_ARRAY_XML_ENUM(CivicOptionTypes    , NUM_CIVICOPTION_TYPES    , JIT_ARRAY_CI
 SET_ARRAY_XML_ENUM(CivilizationTypes   , NUM_CIVILIZATION_TYPES   , JIT_ARRAY_CIVILIZATION    , COMPILE_TIME_NUM_CIVILIZATION_TYPES   );
 SET_ARRAY_XML_ENUM(ClimateTypes        , NUM_CLIMATE_TYPES        , JIT_ARRAY_CLIMATE         , COMPILE_TIME_NUM_CLIMATE_TYPES        );
 SET_ARRAY_XML_ENUM(ColorTypes          , NUM_COLOR_TYPES          , JIT_ARRAY_COLOR           , COMPILE_TIME_NUM_COLOR_TYPES          );
+SET_ARRAY_XML_ENUM(ContactTypes        , NUM_CONTACT_TYPES        , JIT_ARRAY_CONTACT         , COMPILE_TIME_NUM_CONTACT_TYPES        );
 SET_ARRAY_XML_ENUM(CultureLevelTypes   , NUM_CULTURELEVEL_TYPES   , JIT_ARRAY_CULTURE         , COMPILE_TIME_NUM_CULTURELEVEL_TYPES   );
 SET_ARRAY_XML_ENUM(DiplomacyTypes      , NUM_DIPLOMACY_TYPES      , JIT_ARRAY_DIPLO           , COMPILE_TIME_NUM_DIPLOMACY_TYPES      );
 SET_ARRAY_XML_ENUM(EraTypes            , NUM_ERA_TYPES            , JIT_ARRAY_ERA             , COMPILE_TIME_NUM_ERA_TYPES            );
+SET_ARRAY_XML_ENUM(EmotionTypes        , NUM_EMOTION_TYPES        , JIT_ARRAY_EMOTION         , COMPILE_TIME_NUM_EMOTION_TYPES        );
 SET_ARRAY_XML_ENUM(EmphasizeTypes      , NUM_EMPHASIZE_TYPES      , JIT_ARRAY_EMPHASIZE       , COMPILE_TIME_NUM_EMPHASIZE_TYPES      );
 SET_ARRAY_XML_ENUM(EuropeTypes         , NUM_EUROPE_TYPES         , JIT_ARRAY_EUROPE          , COMPILE_TIME_NUM_EUROPE_TYPES         );
 SET_ARRAY_XML_ENUM(EventTypes          , NUM_EVENT_TYPES          , JIT_ARRAY_EVENT           , COMPILE_TIME_NUM_EVENT_TYPES          );
 SET_ARRAY_XML_ENUM(EventTriggerTypes   , NUM_EVENTTRIGGER_TYPES   , JIT_ARRAY_EVENT_TRIGGER   , COMPILE_TIME_NUM_EVENTTRIGGER_TYPES   );
 SET_ARRAY_XML_ENUM(FatherTypes         , NUM_FATHER_TYPES         , JIT_ARRAY_FATHER          , COMPILE_TIME_NUM_FATHER_TYPES         );
 SET_ARRAY_XML_ENUM(FatherPointTypes    , NUM_FATHER_POINT_TYPES   , JIT_ARRAY_FATHER_POINT    , COMPILE_TIME_NUM_FATHER_POINT_TYPES   );
+SET_ARRAY_XML_ENUM(FeatTypes           , NUM_FEAT_TYPES           , JIT_ARRAY_FEAT            , COMPILE_TIME_NUM_FEAT_TYPES           );
 SET_ARRAY_XML_ENUM(FeatureTypes        , NUM_FEATURE_TYPES        , JIT_ARRAY_FEATURE         , COMPILE_TIME_NUM_FEATURE_TYPES        );
 SET_ARRAY_XML_ENUM(GameOptionTypes     , NUM_GAMEOPTION_TYPES     , JIT_ARRAY_GAME_OPTION     , COMPILE_TIME_NUM_GAMEOPTION_TYPES     );
 SET_ARRAY_XML_ENUM(GameSpeedTypes      , NUM_GAMESPEED_TYPES      , JIT_ARRAY_GAME_SPEED      , COMPILE_TIME_NUM_GAMESPEED_TYPES      );
@@ -1355,6 +1354,7 @@ SET_ARRAY_XML_ENUM(ProfessionTypes     , NUM_PROFESSION_TYPES     , JIT_ARRAY_PR
 SET_ARRAY_XML_ENUM(PromotionTypes      , NUM_PROMOTION_TYPES      , JIT_ARRAY_PROMOTION       , COMPILE_TIME_NUM_PROMOTION_TYPES      );
 SET_ARRAY_XML_ENUM(RouteTypes          , NUM_ROUTE_TYPES          , JIT_ARRAY_ROUTE           , COMPILE_TIME_NUM_ROUTE_TYPES          );
 SET_ARRAY_XML_ENUM(SeaLevelTypes       , NUM_SEALEVEL_TYPES       , JIT_ARRAY_SEA_LEVEL       , COMPILE_TIME_NUM_SEALEVEL_TYPES       );
+SET_ARRAY_XML_ENUM(StrategyTypes       , NUM_STRATEGY_TYPES       , JIT_ARRAY_STRATEGY        , COMPILE_TIME_NUM_STRATEGY_TYPES       );
 SET_ARRAY_XML_ENUM(TerrainTypes        , NUM_TERRAIN_TYPES        , JIT_ARRAY_TERRAIN         , COMPILE_TIME_NUM_TERRAIN_TYPES        );
 SET_ARRAY_XML_ENUM(TraitTypes          , NUM_TRAIT_TYPES          , JIT_ARRAY_TRAIT           , COMPILE_TIME_NUM_TRAIT_TYPES          );
 SET_ARRAY_XML_ENUM(UnitTypes           , NUM_UNIT_TYPES           , JIT_ARRAY_UNIT            , COMPILE_TIME_NUM_UNIT_TYPES           );

@@ -504,7 +504,7 @@ public:
 	DllExport int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
 	void changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
 	int getTaxYieldModifierCount(YieldTypes eYield) const;
-	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange) const;
+	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange);
 
 	void updateGroupCycle(CvUnit* pUnit);
 	void removeGroupCycle(int iID);
@@ -986,44 +986,44 @@ protected:
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
 
-	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields - START
-	int* m_aiSeaPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiCapitalYieldRateModifier;
-	int* m_aiBuildingRequiredYieldModifier;
-	int* m_aiCityExtraYield;
-	int* m_aiExtraYieldThreshold;
-	int* m_aiYieldBuyPrice;
-	int* m_aiYieldAfricaBuyPrice; // R&R, ray, Africa
-	int* m_aiYieldPortRoyalBuyPrice; // R&R, ray, Port Royal
-	int* m_aiYieldTradedTotal;
-	int* m_aiYieldBoughtTotal;
-	int* m_aiTaxYieldModifierCount;
-	int *m_aiYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
+	EnumMap<YieldTypes, int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields - START
+	EnumMap<YieldTypes, int> m_em_iSeaPlotYield;
+	EnumMap<YieldTypes, int> m_em_iYieldRateModifier;
+	EnumMap<YieldTypes, int> m_em_iCapitalYieldRateModifier;
+	EnumMap<YieldTypes, int> m_em_iBuildingRequiredYieldModifier;
+	EnumMap<YieldTypes, int> m_em_iCityExtraYield;
+	EnumMap<YieldTypes, int> m_em_iExtraYieldThreshold;
+	EnumMap<YieldTypes, int> m_em_iYieldBuyPrice;
+	EnumMap<YieldTypes, int> m_em_iYieldAfricaBuyPrice; // R&R, ray, Africa
+	EnumMap<YieldTypes, int> m_em_iYieldPortRoyalBuyPrice; // R&R, ray, Port Royal
+	EnumMap<YieldTypes, int> m_em_iYieldTradedTotal;
+	EnumMap<YieldTypes, int> m_em_iYieldBoughtTotal;
+	EnumMap<YieldTypes, int> m_em_iTaxYieldModifierCount;
+	EnumMap<YieldTypes, int> m_em_iYieldScoreTotal; // R&R, vetiarvind, Price dependent tax rate change
 
-	bool* m_abYieldEuropeTradable;
-	bool* m_abFeatAccomplished;
-	bool* m_abOptions;
+	EnumMapDefault<YieldTypes, bool, true> m_em_bYieldEuropeTradable;
+	EnumMap<FeatTypes, bool> m_em_bFeatAccomplished;
+	EnumMap<PlayerOptionTypes, bool> m_em_bOptions;
 
 	CvString m_szScriptData;
 
-	int* m_paiImprovementCount;
-	int* m_paiFreeBuildingCount;
-	int* m_paiUnitClassCount;
-	int* m_paiUnitClassMaking;
-	int* m_paiUnitClassImmigrated;
-	int* m_paiUnitMoveChange;
-	int* m_paiUnitStrengthModifier;
-	int* m_paiProfessionCombatChange;
-	int* m_paiProfessionMoveChange;
-	int* m_paiBuildingClassCount;
-	int* m_paiBuildingClassMaking;
-	int* m_paiHurryCount;
-	int* m_paiSpecialBuildingNotRequiredCount;
-	int* m_aiMissionaryPoints;
-	int* m_aiMissionaryThresholdMultiplier;
-	int* m_aiProfessionEquipmentModifier;
-	int* m_aiTraitCount;
+	EnumMap<ImprovementTypes, int> m_em_iImprovementCount;
+	EnumMap<BuildingTypes, int> m_em_iFreeBuildingCount;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassCount;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassMaking;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassImmigrated;
+	EnumMap<UnitClassTypes, int> m_em_iUnitMoveChange;
+	EnumMap<UnitClassTypes, int> m_em_iUnitStrengthModifier;
+	EnumMap<ProfessionTypes, int> m_em_iProfessionCombatChange;
+	EnumMap<ProfessionTypes, int> m_em_iProfessionMoveChange;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassCount;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassMaking;
+	EnumMap<HurryTypes, int> m_em_iHurryCount;
+	EnumMap<SpecialBuildingTypes, int> m_em_iSpecialBuildingNotRequiredCount;
+	EnumMap<PlayerTypes, int> m_em_iMissionaryPoints;
+	EnumMapDefault<PlayerTypes, int, 100> m_em_iMissionaryThresholdMultiplier;
+	EnumMap<ProfessionTypes, int> m_em_iProfessionEquipmentModifier;
+	EnumMap<TraitTypes, int> m_em_iTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	YieldArray<unsigned short> *m_cache_YieldEquipmentAmount;
 	void Update_cache_YieldEquipmentAmount();
@@ -1031,9 +1031,9 @@ protected:
 	int getYieldEquipmentAmountUncached(ProfessionTypes eProfession, YieldTypes eYield) const;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	std::vector<EventTriggerTypes> m_triggersFired;
-	CivicTypes* m_paeCivics;
-	int** m_ppiImprovementYieldChange;
-	int** m_ppiBuildingYieldChange;
+	EnumMap<CivicOptionTypes, CivicTypes> m_em_eCivics;
+	EnumMap2D<ImprovementTypes, YieldTypes, int> m_em_iImprovementYieldChange;
+	EnumMap2D<BuildingClassTypes, YieldTypes, int> m_em_iBuildingYieldChange;
 	CLinkList<int> m_groupCycle;
 	std::vector<CvWString> m_aszCityNames;
 	FFreeListTrashArray<CvCityAI> m_cities;
@@ -1087,8 +1087,11 @@ protected:
 	void processCivics(CivicTypes eCivic, int iChange);
 
 	// for serialization
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData(PlayerTypes eID = NO_PLAYER, bool bConstructorCall = false);
+
 	void doUpdateCacheOnTurn();
 
 	// transport feeder - start - Nightinggale

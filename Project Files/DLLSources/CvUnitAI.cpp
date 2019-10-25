@@ -18760,24 +18760,6 @@ bool CvUnitAI::AI_allowedToJoin(const CvCity* pCity) const
 
 	return true;
 }
-
-void CvUnitAI::read(FDataStreamBase* pStream)
-{
-	CvSavegameReaderBase readerbase(pStream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-
-void CvUnitAI::write(FDataStreamBase* pStream)
-{
-	CvSavegameWriterBase writerbase(pStream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}
-
 // Private Functions...
 
 //TAC Whaling, ray

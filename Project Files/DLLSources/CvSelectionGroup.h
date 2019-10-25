@@ -190,8 +190,10 @@ public:
 	void speakWithChief();
 
 	// for serialization
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData(int iID, PlayerTypes eOwner);
 
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;

@@ -3,10 +3,16 @@
 
 class FDataStreamBase;
 enum SavegameVariableTypes;
+class FVariable;
+enum eVariableType;
+struct CvPopupButtonPython;
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
 #include "LinkedList.h"
+
+#include "CvDiploParameters.h"
+#include "CvPopupInfo.h"
 
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.
@@ -20,6 +26,16 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_UNIT_AI,
 	SAVEGAME_CLASS_CITY,
 	SAVEGAME_CLASS_CITY_AI,
+	SAVEGAME_CLASS_PLAYER,
+	SAVEGAME_CLASS_PLAYER_AI,
+	SAVEGAME_CLASS_POPUPINFO,
+	SAVEGAME_CLASS_DIPLOPARAMETERS,
+	SAVEGAME_CLASS_TALKINGHEADMESSAGE,
+	SAVEGAME_CLASS_TRADEROUTE,
+	SAVEGAME_CLASS_TRADEROUTEGROUP,
+	SAVEGAME_CLASS_SELECTIONGROUP,
+	SAVEGAME_CLASS_SELECTIONGROUP_AI,
+
 	NUM_SAVEGAME_CLASS_TYPES,
 
 	FIRST_SAVEGAME_CLASS_TYPES = 0,
@@ -40,6 +56,7 @@ public:
 
 	void Read(SavegameVariableTypes& variable);
 
+	void Read(double& variable);
 	void Read(int& variable);
 	void Read(short& variable);
 	void Read(char& variable);
@@ -77,24 +94,49 @@ public:
 	void Read(std::vector<T*>& vec);
 
 	template<class T>
+	void Read(std::list<T>& vec);
+
+	template<class T>
+	void Read(std::list<T*>& vec);
+
+	template<class T1, class T2>
+	void Read(std::pair<T1,T2>& pair);
+
+	template<class T>
+	void Read(FFreeListTrashArray<T>& array);
+
+	template<class T>
+	void Read(CvIdVector<T>& vec);
+
+	template<class T>
 	void Read(CLinkList<T>& lList);
 
 	void Read(BoolArray& baArray);
 	void Read(PlayerBoolArrayBase& array);
-	void Read(IDInfo& idInfo);
+	void Read(CvTurnScoreMap& vec);
+	void Read(CvEventMap& vec);
 
 	// workaround because we can't use references on bitfields
 	template<typename T>
 	T ReadBitfield(T variable);
 
 	// Add all enums used in savegames (single byte)
+	void Read(ActivityTypes         & variable) { ReadEnum(variable); }
 	void Read(AreaAITypes           & variable) { ReadEnum(variable); }
+	void Read(AutomateTypes         & variable) { ReadEnum(variable); }
+	void Read(ButtonPopupTypes      & variable) { ReadEnum(variable); }
 	void Read(CardinalDirectionTypes& variable) { ReadEnum(variable); }
 	void Read(CalendarTypes         & variable) { ReadEnum(variable); }
+	void Read(ChatTargetTypes       & variable) { ReadEnum(variable); }
 	void Read(CityPlotTypes         & variable) { ReadEnum(variable); }
 	void Read(CustomMapOptionTypes  & variable) { ReadEnum(variable); }
+	void Read(DiploCommentTypes     & variable) { ReadEnum(variable); }
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
+	void Read(eVariableType         & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(InterfaceMessageTypes & variable) { ReadEnum(variable); }
+	void Read(MissionAITypes        & variable) { ReadEnum(variable); }
+	void Read(MissionTypes          & variable) { ReadEnum(variable); }
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
@@ -108,6 +150,7 @@ public:
 
 
 	// everything linked to xml file enums
+	void Read(AchieveTypes          & variable) { ReadXmlEnum(variable); }
 	void Read(ArtStyleTypes         & variable) { ReadXmlEnum(variable); }
 	void Read(BonusTypes            & variable) { ReadXmlEnum(variable); }
 	void Read(BuildTypes            & variable) { ReadXmlEnum(variable); }
@@ -129,6 +172,7 @@ public:
 	void Read(EventTriggerTypes     & variable) { ReadXmlEnum(variable); }
 	void Read(FatherTypes           & variable) { ReadXmlEnum(variable); }
 	void Read(FatherPointTypes      & variable) { ReadXmlEnum(variable); }
+	void Read(FeatTypes             & variable) { ReadXmlEnum(variable); }
 	void Read(FeatureTypes          & variable) { ReadXmlEnum(variable); }
 	void Read(GameOptionTypes       & variable) { ReadXmlEnum(variable); }
 	void Read(GameSpeedTypes        & variable) { ReadXmlEnum(variable); }
@@ -158,8 +202,20 @@ public:
 
 	// class wrappers
 	void Read(BuildingYieldChange   & variable) { variable.read(*this); }
+	void Read(CvDiploParameters     & variable);
+	void Read(CvPopupButtonPython   & variable);
+	void Read(CvPopupInfo           & variable);
+	void Read(CvTalkingHeadMessage  & variable);
+	void Read(CvTradeRouteGroup     & variable);
+	void Read(FVariable             & variable);
+	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
+	void Read(EventTriggeredData    & variable) { variable.read(*this); }
+	void Read(IDInfo                & variable) { variable.read(*this); }
+	void Read(MissionData           & variable) { variable.read(*this); }
+	void Read(OrderData             & variable) { variable.read(*this); }
+	void Read(TradeData             & variable) { variable.read(*this); }
 
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
 	int GetXmlSize(JITarrayTypes eType) const;
@@ -206,6 +262,7 @@ public:
 	template<enum T>
 	void Write(T variable);
 
+	void Write(double dVar);
 	void Write(int iVar);
 	void Write(short iVar);
 	void Write(char iVar);
@@ -238,6 +295,24 @@ public:
 	void Write(std::vector<T*>& vec);
 
 	template<class T>
+	void Write(std::list<T>& vec);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, std::list<T>& vec);
+
+	template<class T>
+	void Write(std::list<T*>& vec);
+
+	template<class T1,class T2>
+	void Write(std::pair<T1,T2>& pair);
+	
+	template<class T>
+	void Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array);
+	
+	template<class T>
+	void Write(SavegameVariableTypes eType, CvIdVector<T>& vec);
+
+	template<class T>
 	void Write(SavegameVariableTypes eType, std::vector<T*>& vec);
 
 	void Write(SavegameVariableTypes eType);
@@ -248,6 +323,8 @@ public:
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
 	void Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array);
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
+	void Write(SavegameVariableTypes eType, CvTurnScoreMap& idInfo);
+	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array);
@@ -274,12 +351,22 @@ public:
 	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
 
 	// Add all enums used in savegames (single byte)
+	void Write(ActivityTypes          variable) { WriteEnum(variable); }
 	void Write(AreaAITypes            variable) { WriteEnum(variable); }
+	void Write(AutomateTypes          variable) { WriteEnum(variable); }
+	void Write(ButtonPopupTypes       variable) { WriteEnum(variable); }
 	void Write(CardinalDirectionTypes variable) { WriteEnum(variable); }
 	void Write(CalendarTypes          variable) { WriteEnum(variable); }
+	void Write(ChatTargetTypes        variable) { WriteEnum(variable); }
+	void Write(CityPlotTypes          variable) { WriteEnum(variable); }
 	void Write(CustomMapOptionTypes   variable) { WriteEnum(variable); }
+	void Write(DiploCommentTypes      variable) { WriteEnum(variable); }
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
+	void Write(eVariableType          variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(InterfaceMessageTypes  variable) { WriteEnum(variable); }
+	void Write(MissionAITypes         variable) { WriteEnum(variable); }
+	void Write(MissionTypes           variable) { WriteEnum(variable); }
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
@@ -287,10 +374,12 @@ public:
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
 	void Write(TurnTimerTypes         variable) { WriteEnum(variable); }
+	void Write(TradeableItems         variable) { WriteEnum(variable); }
 	void Write(UnitAIStates           variable) { WriteEnum(variable); }
 	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
+	void Write(AchieveTypes          variable) { WriteXmlEnum(variable); }
 	void Write(ArtStyleTypes         variable) { WriteXmlEnum(variable); }
 	void Write(BonusTypes            variable) { WriteXmlEnum(variable); }
 	void Write(BuildTypes            variable) { WriteXmlEnum(variable); }
@@ -312,6 +401,7 @@ public:
 	void Write(EventTriggerTypes     variable) { WriteXmlEnum(variable); }
 	void Write(FatherTypes           variable) { WriteXmlEnum(variable); }
 	void Write(FatherPointTypes      variable) { WriteXmlEnum(variable); }
+	void Write(FeatTypes             variable) { WriteXmlEnum(variable); }
 	void Write(FeatureTypes          variable) { WriteXmlEnum(variable); }
 	void Write(GameOptionTypes       variable) { WriteXmlEnum(variable); }
 	void Write(GameSpeedTypes        variable) { WriteXmlEnum(variable); }
@@ -340,8 +430,20 @@ public:
 
 	// class wrappers
 	void Write(BuildingYieldChange  &variable) { variable.write(*this); }
+	void Write(CvDiploParameters    &variable);
+	void Write(CvPopupButtonPython  &variable);
+	void Write(CvPopupInfo          &variable);
+	void Write(CvTalkingHeadMessage &variable);
+	void Write(CvTradeRouteGroup    &variable);
+	void Write(FVariable            &variable);
+	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
+	void Write(EventTriggeredData   &variable) { variable.write(*this); }
+	void Write(IDInfo               &variable) { variable.write(*this); }
+	void Write(MissionData          &variable) { variable.write(*this); }
+	void Write(OrderData            &variable) { variable.write(*this); }
+	void Write(TradeData            &variable) { variable.write(*this); }
 
 	// get the amount of bytes needed to save the variable in question
 	// also tells the savegame that a conversion table is needed
@@ -461,6 +563,50 @@ inline void CvSavegameReader::Read(std::vector<T*>& vec)
 }
 
 template<class T>
+inline void CvSavegameReader::Read(std::list<T>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::list<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Read(*it);
+	}
+}
+
+template<class T>
+inline void CvSavegameReader::Read(std::list<T*>& vec)
+{
+	unsigned short iLength;
+	Read(iLength);
+	vec.resize(iLength);
+	for (std::list<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		*it = new T;
+		Read(**it);
+	}
+}
+
+template<class T1, class T2>
+void CvSavegameReader::Read(std::pair<T1,T2>& pair)
+{
+	Read(pair.first);
+	Read(pair.second);
+}
+
+template<class T>
+inline void CvSavegameReader::Read(FFreeListTrashArray<T>& array)
+{
+	ReadStreamableFFreeListTrashArray(array, *this);
+}
+
+template<class T>
+inline void CvSavegameReader::Read(CvIdVector<T>& vec)
+{
+	vec.Read(this);
+}
+
+template<class T>
 inline void CvSavegameReader::Read(CLinkList<T>& lList)
 {
 	lList.Read(*this);
@@ -518,6 +664,65 @@ inline void CvSavegameWriter::Write(std::vector<T*>& vec)
 	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		Write(**it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::list<T>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::list<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(*it);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::list<T>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		Write(vec);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(std::list<T*>& vec)
+{
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::list<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		Write(**it);
+	}
+}
+
+template<class T1,class T2>
+	void CvSavegameWriter::Write(std::pair<T1,T2>& pair)
+	{
+		Write(pair.first);
+		Write(pair.second);
+	}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array)
+{
+	if (array.getCount() > 0)
+	{
+		Write(eType);
+		WriteStreamableFFreeListTrashArray(array, *this);
+	}
+}
+
+template<class T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, CvIdVector<T>& vec)
+{
+	if (vec.size() > 0)
+	{
+		Write(eType);
+		vec.Write(this);
 	}
 }
 

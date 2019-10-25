@@ -12112,15 +12112,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 	return false;
 }
 
-void CvUnit::read(FDataStreamBase* pStream)
-{
-}
-
-
-void CvUnit::write(FDataStreamBase* pStream)
-{
-}
-
 // Protected Functions...
 
 bool CvUnit::canAdvance(const CvPlot* pPlot, int iThreshold) const

@@ -51,6 +51,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp" />
+    <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvSelectionGroupAISavegame.cpp" />
+    <ClCompile Include="DLLSources\CvSelectionGroupSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTalkingHeadMessageSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTradeRouteGroupSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\PlayerArray.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
@@ -60,9 +67,11 @@
     <ClCompile Include="DLLSources\CvPlotSavegame.cpp" />
     <ClCompile Include="DLLSources\CvUnitAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvCityAISavegame.cpp" />
+    <ClCompile Include="DLLSources\CvPlayerAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvSavegame.cpp" />
     <ClCompile Include="DLLSources\CvUnitSavegame.cpp" />
     <ClCompile Include="DLLSources\CvCitySavegame.cpp" />
+    <ClCompile Include="DLLSources\CvPlayerSavegame.cpp" />
     <ClCompile Include="DLLSources\CvGlobalConstants.cpp" />
     <ClCompile Include="DLLSources\CvPlayerCivEffect.cpp" />
     <ClCompile Include="DLLSources\InfoCacheArray.cpp" />

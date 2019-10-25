@@ -133,16 +133,16 @@ void CvIdVector<T>::Read(CvSavegameReader* pStream)
 {
 	reset();
 
-	pStream->Read(&m_iNextId);
+	pStream->Read(m_iNextId);
 
 	int iCount;
-	pStream->Read(&iCount);
+	pStream->Read(iCount);
 
 	for (int i = 0; i < iCount; ++i)
 	{
 		T* pData = new T;
 
-		pData->read(pStream);
+		pStream->Read(*pData);
 
 		(*this)[pData->getID()] = pData;
 	}
@@ -157,7 +157,7 @@ void CvIdVector<T>::Write(CvSavegameWriter* pStream) const
 	CvIdVector<T>::const_iterator it;
 	for (it = begin(); it != end(); ++it)
 	{
-		it->second->write(pStream);
+		pStream->Write(*(it->second));
 	}
 }
 

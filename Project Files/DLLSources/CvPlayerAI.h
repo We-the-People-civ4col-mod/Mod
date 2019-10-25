@@ -455,10 +455,16 @@ public:
   virtual void read(FDataStreamBase* pStream);
   virtual void write(FDataStreamBase* pStream);
 
+  	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void AI_resetSavedData();
+
+
 protected:
 
     /** NBMOD TAX **/
-    int CvPlayerAI::NBMOD_GetGoldAsk(PlayerTypes ePlayer) const; // Beachtet die Gold-Höchstgrenze
+    int CvPlayerAI::NBMOD_GetGoldAsk(PlayerTypes ePlayer) const; // Beachtet die Gold-Hï¿½chstgrenze
     /** NBMOD TAX **/
 
 	static CvPlayerAI* m_aPlayers;
@@ -487,38 +493,38 @@ protected:
 	
 	int m_iAveragesCacheTurn;
 	
-	int *m_aiAverageYieldMultiplier;
-	int* m_aiYieldValuesTimes100;
-	int* m_aiBestWorkedYieldPlots;
-	int* m_aiBestUnworkedYieldPlots;
+	EnumMap<YieldTypes, int> m_em_iAverageYieldMultiplier;
+	EnumMap<YieldTypes, int> m_em_iYieldValuesTimes100;
+	EnumMapDefault<YieldTypes, int, -1> m_em_iBestWorkedYieldPlots;
+	EnumMapDefault<YieldTypes, int, -1> m_em_iBestUnworkedYieldPlots;
 	
 	int m_iUpgradeUnitsCacheTurn;
 	int m_iUpgradeUnitsCachedExpThreshold;
 	int m_iUpgradeUnitsCachedGold;
 	
 	
-	int* m_aiNumTrainAIUnits;
-	int* m_aiNumAIUnits;
-	int* m_aiNumRetiredAIUnits;
-	int* m_aiUnitAIStrategyWeights;
-	int* m_aiPeacetimeTradeValue;
-	int* m_aiPeacetimeGrantValue;
-	int* m_aiGoldTradedTo;
-	int* m_aiAttitudeExtra;
-	int* m_aiUnitClassWeights;
-	int* m_aiUnitCombatWeights;
-	int* m_aiEmotions;
-	int* m_aiStrategyStartedTurn;
-	int* m_aiStrategyData;
+	EnumMap<UnitAITypes, int> m_em_iNumTrainAIUnits;
+	EnumMap<UnitAITypes, int> m_em_iNumAIUnits;
+	EnumMap<UnitAITypes, int> m_em_iNumRetiredAIUnits;
+	EnumMap<UnitAITypes, int> m_em_iUnitAIStrategyWeights;
+	EnumMap<PlayerTypes, int> m_em_iPeacetimeTradeValue;
+	EnumMap<PlayerTypes, int> m_em_iPeacetimeGrantValue;
+	EnumMap<PlayerTypes, int> m_em_iGoldTradedTo;
+	EnumMap<PlayerTypes, int> m_em_iAttitudeExtra;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassWeights;
+	EnumMap<UnitCombatTypes, int> m_em_iUnitCombatWeights;
+	EnumMap<EmotionTypes, int> m_em_iEmotions;
+	EnumMapDefault<StrategyTypes, int, -1> m_em_iStrategyStartedTurn;
+	EnumMapDefault<StrategyTypes, int, -1> m_em_iStrategyData;
 
-	mutable int* m_aiCloseBordersAttitudeCache;
-	mutable int* m_aiStolenPlotsAttitudeCache;
+	mutable EnumMap<PlayerTypes, int> m_em_iCloseBordersAttitudeCache;
+	mutable EnumMap<PlayerTypes, int> m_em_iStolenPlotsAttitudeCache;
 
 
-	bool* m_abFirstContact;
+	EnumMap<PlayerTypes, bool> m_em_bFirstContact;
 
-	int** m_aaiContactTimer;
-	int** m_aaiMemoryCount;
+	EnumMap2D<PlayerTypes, ContactTypes, int> m_em_iContactTimer;
+	EnumMap2D<PlayerTypes, MemoryTypes, int> m_em_iMemoryCount;
 	
 	std::vector<int> m_aiAICitySites;
 	

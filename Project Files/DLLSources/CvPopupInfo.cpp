@@ -1,6 +1,8 @@
 #include "CvGameCoreDLL.h"
 #include ".\cvpopupinfo.h"
 
+#include "CvSavegame.h"
+
 CvPopupInfo::CvPopupInfo(ButtonPopupTypes eButtonPopupType, int iData1, int iData2, int iData3, int iFlags, bool bOption1, bool bOption2) :
 	m_iData1(iData1),
 	m_iData2(iData2),
@@ -185,57 +187,4 @@ void CvPopupInfo::addPythonButton(const wchar* szText, const char* szArt)
 int CvPopupInfo::getNumPythonButtons() const
 {
 	return (int)m_aPythonButtons.size();
-}
-
-
-void CvPopupInfo::read(FDataStreamBase& stream)
-{
-	stream.Read(&m_iData1);
-	stream.Read(&m_iData2);
-	stream.Read(&m_iData3);
-	stream.Read(&m_iFlags);
-	stream.Read(&m_bOption1);
-	stream.Read(&m_bOption2);
-
-	int iType;
-	stream.Read(&iType);
-	m_eButtonPopupType = (ButtonPopupTypes)iType;
-	stream.ReadString(m_szText);
-
-	stream.ReadString(m_szOnFocusPythonCallback);
-	stream.ReadString(m_szOnClickedPythonCallback);
-	stream.ReadString(m_szPythonModule);
-	uint iSize;
-	stream.Read(&iSize);
-	for (uint i = 0; i < iSize; i++)
-	{
-		CvPopupButtonPython button;
-		stream.ReadString(button.szText);
-		stream.ReadString(button.szArt);
-		m_aPythonButtons.push_back(button);
-	}
-}
-
-void CvPopupInfo::write(FDataStreamBase& stream) const
-{
-	stream.Write(m_iData1);
-	stream.Write(m_iData2);
-	stream.Write(m_iData3);
-	stream.Write(m_iFlags);
-	stream.Write(m_bOption1);
-	stream.Write(m_bOption2);
-
-	stream.Write(m_eButtonPopupType);
-	stream.WriteString(m_szText);
-
-	stream.WriteString(m_szOnFocusPythonCallback);
-	stream.WriteString(m_szOnClickedPythonCallback);
-	stream.WriteString(m_szPythonModule);
-	uint iSize = m_aPythonButtons.size();
-	stream.Write(iSize);
-	for (uint i = 0; i < iSize; i++)
-	{
-		stream.WriteString(m_aPythonButtons[i].szText);
-		stream.WriteString(m_aPythonButtons[i].szArt);
-	}
 }

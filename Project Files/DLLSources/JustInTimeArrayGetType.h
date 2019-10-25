@@ -5,6 +5,10 @@
 // Intended usage: functions, which needs the JITarrayTypes for a template argument
 
 
+static inline JITarrayTypes getJITarrayType(AchieveTypes var) {
+	return JIT_ARRAY_ACHIEVE;
+}
+
 static inline JITarrayTypes getJITarrayType(ArtStyleTypes var)
 {
 	return JIT_ARRAY_ART_STYLE;
@@ -108,6 +112,11 @@ static inline JITarrayTypes getJITarrayType(FatherTypes var)
 static inline JITarrayTypes getJITarrayType(FatherPointTypes var)
 {
 	return JIT_ARRAY_FATHER_POINT;
+}
+
+static inline JITarrayTypes getJITarrayType(FeatTypes var)
+{
+	return JIT_ARRAY_FEAT;
 }
 
 static inline JITarrayTypes getJITarrayType(FeatureTypes var)

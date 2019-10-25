@@ -1460,8 +1460,9 @@ enum DllExport EmotionTypes
 	EMOTION_SUBMISSION,
 
 #ifdef _USRDLL
-	NUM_EMOTION_TYPES
+	NUM_EMOTION_TYPES,
 #endif
+	COMPILE_TIME_NUM_EMOTION_TYPES = NUM_EMOTION_TYPES,
 };
 
 enum DllExport StrategyTypes
@@ -1484,8 +1485,9 @@ enum DllExport StrategyTypes
 	STRATEGY_REVOLUTION_DECLARING,
 	STRATEGY_REVOLUTION,
 #ifdef _USRDLL
-	NUM_STRATEGY_TYPES
+	NUM_STRATEGY_TYPES,
 #endif
+	COMPILE_TIME_NUM_STRATEGY_TYPES = NUM_STRATEGY_TYPES,
 
 };
 
@@ -1772,8 +1774,11 @@ enum DllExport ContactTypes
 	// R&R, ray, Natives raiding party - END
 
 #ifdef _USRDLL
-	NUM_CONTACT_TYPES
+	NUM_CONTACT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_CONTACT_TYPES = NUM_CONTACT_TYPES,
+
 };
 
 enum DllExport MemoryTypes
@@ -1874,8 +1879,11 @@ enum DllExport FeatTypes
 	FEAT_PAD,
 
 #ifdef _USRDLL
-	NUM_FEAT_TYPES
+	NUM_FEAT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_FEAT_TYPES = NUM_FEAT_TYPES
+
 };
 
 enum DllExport SaveGameTypes
@@ -2602,6 +2610,7 @@ enum JITarrayTypes
 {
 	NO_JIT_ARRAY_TYPE = -1,
 
+	JIT_ARRAY_ACHIEVE,
 	JIT_ARRAY_ART_STYLE,
 	JIT_ARRAY_BONUS,
 	JIT_ARRAY_BUILD,

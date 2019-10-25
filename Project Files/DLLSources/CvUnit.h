@@ -701,9 +701,6 @@ public:
 	bool raidCity(CvCity* pCity);
 	// R&R, ray, Natives raiding party - END
 
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
-
 	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);

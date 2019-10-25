@@ -1,6 +1,9 @@
 #include "CvGameCoreDLL.h"
 
 #include "CvSavegame.h"
+#include "FVariableSystem.h"
+#include "CvPopupInfo.h"
+#include "CvDiploParameters.h"
 
 //
 // Classes to handle savegames
@@ -48,6 +51,15 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType);
 const char* getSavedEnumNameUnitAi(SavegameVariableTypes eType);
 const char* getSavedEnumNameCity(SavegameVariableTypes eType);
 const char* getSavedEnumNameCityAi(SavegameVariableTypes eType);
+const char* getSavedEnumNamePlayer(SavegameVariableTypes eType);
+const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType);
+const char* getSavedEnumNamePopupInfo(SavegameVariableTypes eType);
+const char* getSavedEnumNameDiploParameters(SavegameVariableTypes eType);
+const char* getSavedEnumNameTalkingHeadMessage(SavegameVariableTypes eType);
+const char* getSavedEnumNameTradeRoute(SavegameVariableTypes eType);
+const char* getSavedEnumNameTradeRouteGroup(SavegameVariableTypes eType);
+const char* getSavedEnumNameSelectionGroup(SavegameVariableTypes eType);
+const char* getSavedEnumNameSelectionGroupAi(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -59,6 +71,15 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	case SAVEGAME_CLASS_UNIT_AI: return getSavedEnumNameUnitAi(eType);
 	case SAVEGAME_CLASS_CITY: return getSavedEnumNameCity(eType);
 	case SAVEGAME_CLASS_CITY_AI: return getSavedEnumNameCityAi(eType);
+	case SAVEGAME_CLASS_PLAYER: return getSavedEnumNamePlayer(eType);
+	case SAVEGAME_CLASS_PLAYER_AI: return getSavedEnumNamePlayerAi(eType);
+	case SAVEGAME_CLASS_POPUPINFO: return getSavedEnumNamePopupInfo(eType);
+	case SAVEGAME_CLASS_DIPLOPARAMETERS: return getSavedEnumNameDiploParameters(eType);
+	case SAVEGAME_CLASS_TALKINGHEADMESSAGE: return getSavedEnumNameTalkingHeadMessage(eType);
+	case SAVEGAME_CLASS_TRADEROUTE: return getSavedEnumNameTradeRoute(eType);
+	case SAVEGAME_CLASS_TRADEROUTEGROUP: return getSavedEnumNameTradeRouteGroup(eType);
+	case SAVEGAME_CLASS_SELECTIONGROUP: return getSavedEnumNameSelectionGroup(eType);
+	case SAVEGAME_CLASS_SELECTIONGROUP_AI: return getSavedEnumNameSelectionGroupAi(eType);
 
 	}
 
@@ -191,6 +212,11 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 	}
 }
 
+void CvSavegameReader::Read(double& variable)
+{
+	Read((byte*)& variable, sizeof(double));
+}
+
 void CvSavegameReader::Read(int& variable)
 {
 	Read((byte*)&variable, sizeof(int));
@@ -291,9 +317,30 @@ void CvSavegameReader::Read(PlayerBoolArrayBase& array)
 	array.Read(*this);
 }
 
-void CvSavegameReader::Read(IDInfo& idInfo)
+void CvSavegameReader::Read(CvTurnScoreMap& Map)
 {
-	idInfo.read(*this);
+	int iSize;
+	Read(iSize);
+	for (int iI = 0; iI < iSize; iI++){
+		int iTurn;
+		int iValue;
+		Read(iTurn);
+		Read(iValue);
+		Map[iTurn]=iValue;
+	}
+}
+
+void CvSavegameReader::Read(CvEventMap& Map)
+{
+	int iSize;
+	Read(iSize);
+	for (int iI = 0; iI < iSize; iI++){
+		EventTypes eEvent;
+		EventTriggeredData kData;
+		Read(eEvent);
+		Read(kData); 
+		Map[eEvent]=kData;
+	}
 }
 
 void CvSavegameReader::ReadXmlEnum(int& iVariable, JITarrayTypes eType)
@@ -399,6 +446,13 @@ int CvSavegameReader::GetXmlSize(JITarrayTypes eType) const
 	return -1;
 }
 
+void CvSavegameReader::Read(FVariable             & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvDiploParameters     & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvPopupButtonPython   & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvPopupInfo           & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvTalkingHeadMessage  & variable) { variable.read(*this); }
+void CvSavegameReader::Read(CvTradeRouteGroup     & variable) { variable.read(*this); }
+
 
 ///
 ///
@@ -432,9 +486,14 @@ void CvSavegameWriter::AssignClassType(SavegameClassTypes eType)
 	m_eClassType = eType;
 }
 
+void CvSavegameWriter::Write(double variable)
+{
+	Write((byte*)& variable, sizeof(double));
+}
+
 void CvSavegameWriter::Write(int variable)
 {
-	Write((byte*)&variable, sizeof(int));
+	Write((byte*)& variable, sizeof(int));
 }
 
 void CvSavegameWriter::Write(short variable)
@@ -569,6 +628,33 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, IDInfo& idInfo)
 		idInfo.write(*this);
 	}
 }
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvTurnScoreMap& Map)
+{
+	int iSize=Map.size();
+	if(iSize>0){
+		Write(eType);
+		Write(iSize);
+		for (CvTurnScoreMap::iterator it = Map.begin(); it != Map.end(); ++it)
+		{
+			Write(it->first);
+			Write(it->second);
+		}
+	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvEventMap& Map)
+{
+	int iSize=Map.size();
+	if(iSize>0){
+		Write(eType);
+		Write(iSize);
+		for (CvEventMap::iterator it = Map.begin(); it != Map.end(); ++it)
+		{
+			Write(it->first);
+			Write(it->second);
+		}
+	}
+}
 
 void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 {
@@ -659,6 +745,13 @@ void CvSavegameWriter::WriteXmlEnum(int iVariable, JITarrayTypes eType)
 	}
 	}
 }
+
+void CvSavegameWriter::Write(FVariable            &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvDiploParameters    &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvPopupButtonPython  &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvPopupInfo          &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvTalkingHeadMessage &variable) { variable.write(*this); }
+void CvSavegameWriter::Write(CvTradeRouteGroup    &variable) { variable.write(*this); }
 
 
 ///
@@ -777,6 +870,15 @@ int getNumSavedEnumValuesUnit();
 int getNumSavedEnumValuesUnitAI();
 int getNumSavedEnumValuesCity();
 int getNumSavedEnumValuesCityAI();
+int getNumSavedEnumValuesPlayer();
+int getNumSavedEnumValuesPlayerAI();
+int getNumSavedEnumValuesPopupInfo();
+int getNumSavedEnumValuesDiploParameters();
+int getNumSavedEnumValuesTalkingHeadMessage();
+int getNumSavedEnumValuesTradeRoute();
+int getNumSavedEnumValuesTradeRouteGroup();
+int getNumSavedEnumValuesSelectionGroup();
+int getNumSavedEnumValuesSelectionGroupAi();
 
 void CvSavegameWriterBase::InitSavegame()
 {
@@ -805,6 +907,16 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_UNIT_AI:     iCount = getNumSavedEnumValuesUnitAI();    break;
 		case SAVEGAME_CLASS_CITY:        iCount = getNumSavedEnumValuesCity();      break;
 		case SAVEGAME_CLASS_CITY_AI:     iCount = getNumSavedEnumValuesCityAI();    break;
+		case SAVEGAME_CLASS_PLAYER:      iCount = getNumSavedEnumValuesPlayer();    break;
+		case SAVEGAME_CLASS_PLAYER_AI:   iCount = getNumSavedEnumValuesPlayerAI();  break;
+		case SAVEGAME_CLASS_POPUPINFO:   iCount = getNumSavedEnumValuesPopupInfo(); break;
+		case SAVEGAME_CLASS_DIPLOPARAMETERS:   iCount = getNumSavedEnumValuesDiploParameters(); break;
+		case SAVEGAME_CLASS_TALKINGHEADMESSAGE:   iCount = getNumSavedEnumValuesTalkingHeadMessage(); break;
+		case SAVEGAME_CLASS_TRADEROUTE:  iCount = getNumSavedEnumValuesTradeRoute(); break;
+		case SAVEGAME_CLASS_TRADEROUTEGROUP:  iCount = getNumSavedEnumValuesTradeRouteGroup(); break;
+		case SAVEGAME_CLASS_SELECTIONGROUP:  iCount = getNumSavedEnumValuesSelectionGroup(); break;
+		case SAVEGAME_CLASS_SELECTIONGROUP_AI:  iCount = getNumSavedEnumValuesSelectionGroupAi(); break;
+
 		default:
 			FAssertMsg(false, "missing case");
 		}
@@ -860,4 +972,29 @@ void CvSavegameWriterBase::WriteTableString(const char *szString)
 	}
 	// null termination
 	m_table.push_back(0);
+}
+
+
+inline void FVariable::read(CvSavegameReader reader)
+{
+	reader.Read(m_eType);
+	if (m_eType==FVARTYPE_STRING)
+		reader.Read(m_szValue);
+	else
+	if (m_eType==FVARTYPE_WSTRING)
+		reader.Read(m_wszValue);
+	else
+		reader.Read(m_dValue);		// read the maximum size of the union
+}
+
+inline void FVariable::write(CvSavegameWriter writer)
+{
+	writer.Write(m_eType);
+	if (m_eType==FVARTYPE_STRING)
+		writer.Write(m_szValue);
+	else
+	if (m_eType==FVARTYPE_WSTRING)
+		writer.Write(m_wszValue);
+	else
+		writer.Write(m_dValue);
 }

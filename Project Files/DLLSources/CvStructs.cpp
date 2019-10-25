@@ -57,6 +57,24 @@ void OrderData::write(CvSavegameWriter& writer) const
 	writer.Write(bSave);
 }
 
+void MissionData::read(CvSavegameReader& reader)
+{
+	reader.Read(eMissionType);
+	reader.Read(iData1);
+	reader.Read(iData2);
+	reader.Read(iFlags);
+	reader.Read(iPushTurn);
+}
+
+void MissionData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eMissionType);
+	writer.Write(iData1);
+	writer.Write(iData2);
+	writer.Write(iFlags);
+	writer.Write(iPushTurn);
+}
+
 void TradeData::read(FDataStreamBase* pStream)
 {
 	pStream->Read((int*)&m_eItemType);
