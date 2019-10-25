@@ -69,15 +69,6 @@ DllExport CvPlayerAI& CvPlayerAI::getPlayerNonInl(PlayerTypes ePlayer)
 
 CvPlayerAI::CvPlayerAI()
 {
-	m_aiUnitClassWeights = NULL;
-	m_aiUnitCombatWeights = NULL;
-	m_aiEmotions = new int[NUM_EMOTION_TYPES];
-	m_aiStrategyStartedTurn = new int[NUM_STRATEGY_TYPES];
-	m_aiStrategyData = new int[NUM_STRATEGY_TYPES];
-
-	m_aiCloseBordersAttitudeCache = new int[MAX_PLAYERS];
-	m_aiStolenPlotsAttitudeCache = new int[MAX_PLAYERS];
-
 	AI_reset();
 }
 
@@ -85,11 +76,6 @@ CvPlayerAI::CvPlayerAI()
 CvPlayerAI::~CvPlayerAI()
 {
 	AI_uninit();
-	SAFE_DELETE_ARRAY(m_aiCloseBordersAttitudeCache);
-	SAFE_DELETE_ARRAY(m_aiStolenPlotsAttitudeCache);
-	SAFE_DELETE_ARRAY(m_aiEmotions);
-	SAFE_DELETE_ARRAY(m_aiStrategyStartedTurn);
-	SAFE_DELETE_ARRAY(m_aiStrategyData);
 	m_aTradeGroups.clear();
 }
 
@@ -109,52 +95,13 @@ void CvPlayerAI::AI_init()
 
 void CvPlayerAI::AI_uninit()
 {
-	SAFE_DELETE_ARRAY(m_aiUnitClassWeights);
-	SAFE_DELETE_ARRAY(m_aiUnitCombatWeights);
 }
 
 
 void CvPlayerAI::AI_reset()
 {
-	int iI;
-
 	AI_uninit();
 	AI_resetSavedData();
-
-	m_aiAICitySites.clear();
-
-	FAssert(m_aiUnitClassWeights == NULL);
-	m_aiUnitClassWeights = new int[GC.getNumUnitClassInfos()];
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-	{
-		m_aiUnitClassWeights[iI] = 0;
-	}
-
-	FAssert(m_aiUnitCombatWeights == NULL);
-	m_aiUnitCombatWeights = new int[GC.getNumUnitCombatInfos()];
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-	{
-		m_aiUnitCombatWeights[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiCloseBordersAttitudeCache[iI] = 0;
-		m_aiStolenPlotsAttitudeCache[iI] = 0;
-	}
-
-	for (iI = 0; iI < NUM_EMOTION_TYPES; iI++)
-	{
-		m_aiEmotions[iI] = 0;
-	}
-
-	for (iI = 0; iI < NUM_STRATEGY_TYPES; iI++)
-	{
-		m_aiStrategyStartedTurn[iI] = -1;
-		m_aiStrategyData[iI] = -1;
-	}
-
-	m_unitPriorityHeap.clear();
 }
 
 void CvPlayerAI::AI_doTurnPre()
@@ -3040,7 +2987,7 @@ int CvPlayerAI::AI_calculateStolenCityRadiusPlots(PlayerTypes ePlayer)
 
 int CvPlayerAI::AI_getCloseBordersAttitude(PlayerTypes ePlayer)
 {
-	if (m_aiCloseBordersAttitudeCache[ePlayer] == MAX_INT)
+	if (m_em_iCloseBordersAttitudeCache.get(ePlayer) == MAX_INT)
 	{
 		if (isNative())
 		{
@@ -3059,16 +3006,16 @@ int CvPlayerAI::AI_getCloseBordersAttitude(PlayerTypes ePlayer)
 			iPercent += 40;
 		}
 
-		m_aiCloseBordersAttitudeCache[ePlayer] = ((GC.getLeaderHeadInfo(getPersonalityType()).getCloseBordersAttitudeChange() * iPercent) / 100);
+		m_em_iCloseBordersAttitudeCache.set(ePlayer, ((GC.getLeaderHeadInfo(getPersonalityType()).getCloseBordersAttitudeChange() * iPercent) / 100));
 	}
 
-	return m_aiCloseBordersAttitudeCache[ePlayer];
+	return m_em_iCloseBordersAttitudeCache.get(ePlayer);
 }
 
 
 int CvPlayerAI::AI_getStolenPlotsAttitude(PlayerTypes ePlayer)
 {
-	if (m_aiStolenPlotsAttitudeCache[ePlayer] == MAX_INT)
+	if (m_em_iStolenPlotsAttitudeCache.get(ePlayer) == MAX_INT)
 	{
 		if (getTeam() == GET_PLAYER(ePlayer).getTeam())
 		{
@@ -3091,10 +3038,10 @@ int CvPlayerAI::AI_getStolenPlotsAttitude(PlayerTypes ePlayer)
 		}
 
 		// change attitude by stolen plots per city
-		m_aiStolenPlotsAttitudeCache[ePlayer] = GC.getLeaderHeadInfo(getPersonalityType()).getCloseBordersAttitudeChange() * iStolenPlots / std::max(getNumCities(), 1);
+		m_em_iStolenPlotsAttitudeCache.set(ePlayer, GC.getLeaderHeadInfo(getPersonalityType()).getCloseBordersAttitudeChange() * iStolenPlots / std::max(getNumCities(), 1));
 	}
 
-	return m_aiStolenPlotsAttitudeCache[ePlayer];
+	return m_em_iStolenPlotsAttitudeCache.get(ePlayer);
 }
 
 
@@ -11542,35 +11489,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 
 	read(reader);
 
-	CvPlayer::read(pStream);	// read base class data first
-
-	{
-		m_aiAICitySites.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iCitySite;
-			pStream->Read(&iCitySite);
-			m_aiAICitySites.push_back(iCitySite);
-		}
-	}
-
-	uint iSize;
-	pStream->Read(&iSize);
-	if (iSize > 0)
-	{
-		m_unitPriorityHeap.resize(iSize);
-		pStream->Read(iSize, &m_unitPriorityHeap[0]);
-	}
-
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
-	pStream->Read(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
-	pStream->Read(MAX_PLAYERS, m_aiStolenPlotsAttitudeCache);
-	pStream->Read(NUM_EMOTION_TYPES, m_aiEmotions);
-	pStream->Read(NUM_STRATEGY_TYPES, m_aiStrategyStartedTurn);
-	pStream->Read(NUM_STRATEGY_TYPES, m_aiStrategyData);
+	CvPlayer::read(pStream);
 
 	/// post load function - start - Nightinggale
 	if (m_eID == (MAX_PLAYERS - 1))
@@ -11594,30 +11513,7 @@ void CvPlayerAI::write(FDataStreamBase* pStream)
 	write(writer);
 	writerbase.WriteFile();
 
-	CvPlayer::write(pStream);	// write base class data first
-
-	{
-		uint iSize = m_aiAICitySites.size();
-		pStream->Write(iSize);
-		for (std::vector<int>::iterator it = m_aiAICitySites.begin(); it != m_aiAICitySites.end(); ++it)
-		{
-			pStream->Write((*it));
-		}
-	}
-
-	pStream->Write(m_unitPriorityHeap.size());
-	if (!m_unitPriorityHeap.empty())
-	{
-		pStream->Write(m_unitPriorityHeap.size(), &m_unitPriorityHeap[0]);
-	}
-
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiUnitClassWeights);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_aiUnitCombatWeights);
-	pStream->Write(MAX_PLAYERS, m_aiCloseBordersAttitudeCache);
-	pStream->Write(MAX_PLAYERS, m_aiStolenPlotsAttitudeCache);
-	pStream->Write(NUM_EMOTION_TYPES, m_aiEmotions);
-	pStream->Write(NUM_STRATEGY_TYPES, m_aiStrategyStartedTurn);
-	pStream->Write(NUM_STRATEGY_TYPES, m_aiStrategyData);
+	CvPlayer::write(pStream);
 }
 
 
@@ -14506,12 +14402,12 @@ int CvPlayerAI::AI_calculateTotalBombard(DomainTypes eDomain)
 
 int CvPlayerAI::AI_getUnitClassWeight(UnitClassTypes eUnitClass)
 {
-	return m_aiUnitClassWeights[eUnitClass] / 100;
+	return m_em_iUnitClassWeights.get(eUnitClass) / 100;
 }
 
 int CvPlayerAI::AI_getUnitCombatWeight(UnitCombatTypes eUnitCombat)
 {
-	return m_aiUnitCombatWeights[eUnitCombat] / 100;
+	return m_em_iUnitCombatWeights.get(eUnitCombat) / 100;
 }
 
 void CvPlayerAI::AI_doEnemyUnitData()
@@ -14574,7 +14470,7 @@ void CvPlayerAI::AI_doEnemyUnitData()
 						}
 					}
 
-					if (m_aiUnitClassWeights[pLoopUnit->getUnitClassType()] == 0)
+					if (m_em_iUnitClassWeights.get(pLoopUnit->getUnitClassType()) == 0)
 					{
 						iUnitValue *= 4;
 					}
@@ -14597,10 +14493,9 @@ void CvPlayerAI::AI_doEnemyUnitData()
 	//Decay
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		m_aiUnitClassWeights[iI] -= 100;
-		m_aiUnitClassWeights[iI] *= 3;
-		m_aiUnitClassWeights[iI] /= 4;
-		m_aiUnitClassWeights[iI] = std::max(0, m_aiUnitClassWeights[iI]);
+		m_em_iUnitClassWeights.add((UnitClassTypes)iI, -100);
+		m_em_iUnitClassWeights.set((UnitClassTypes)iI, (m_em_iUnitClassWeights.get((UnitClassTypes)iI)*3)/4);
+		m_em_iUnitClassWeights.set((UnitClassTypes)iI, std::max(0, m_em_iUnitClassWeights.get((UnitClassTypes)iI)));
 	}
 
 	for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
@@ -14610,34 +14505,33 @@ void CvPlayerAI::AI_doEnemyUnitData()
 			UnitTypes eLoopUnit = (UnitTypes)iI;
 			aiUnitCounts[iI] = 0;
 			FAssert(aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()] > 0);
-			m_aiUnitClassWeights[GC.getUnitInfo(eLoopUnit).getUnitClassType()] += (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]);
+			m_em_iUnitClassWeights.add((UnitClassTypes)GC.getUnitInfo(eLoopUnit).getUnitClassType(), (5000 * aiUnitCounts[iI]) / std::max(1, aiDomainSums[GC.getUnitInfo(eLoopUnit).getDomainType()]));
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
-	{
-		m_aiUnitCombatWeights[iI] = 0;
-	}
+
+	m_em_iUnitCombatWeights.reset();
+
 
 	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
-		if (m_aiUnitClassWeights[iI] > 0)
+		if (m_em_iUnitClassWeights.get((UnitClassTypes)iI) > 0)
 		{
 			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)iI).getDefaultUnitIndex();
-			m_aiUnitCombatWeights[GC.getUnitInfo(eUnit).getUnitCombatType()] += m_aiUnitClassWeights[iI];
+			m_em_iUnitCombatWeights.add((UnitCombatTypes)GC.getUnitInfo(eUnit).getUnitCombatType(), m_em_iUnitClassWeights.get((UnitClassTypes)iI));
 
 		}
 	}
 
 	for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
 	{
-		if (m_aiUnitCombatWeights[iI] > 25)
+		if (m_em_iUnitCombatWeights.get((UnitCombatTypes)iI) > 25)
 		{
-			m_aiUnitCombatWeights[iI] += 2500;
+			m_em_iUnitCombatWeights.add((UnitCombatTypes)iI, 2500);
 		}
-		else if (m_aiUnitCombatWeights[iI] > 0)
+		else if (m_em_iUnitCombatWeights.get((UnitCombatTypes)iI) > 0)
 		{
-			m_aiUnitCombatWeights[iI] += 1000;
+			m_em_iUnitCombatWeights.add((UnitCombatTypes)iI, 1000);
 		}
 	}
 }
@@ -14653,7 +14547,7 @@ int CvPlayerAI::AI_calculateUnitAIViability(UnitAITypes eUnitAI, DomainTypes eDo
 		CvUnitInfo& kUnitInfo = GC.getUnitInfo((UnitTypes)iI);
 		if (kUnitInfo.getDomainType() == eDomain)
 		{
-			if (m_aiUnitClassWeights[iI] > 0)
+			if (m_em_iUnitClassWeights.get((UnitClassTypes)iI) > 0)
 			{
 				if (kUnitInfo.getUnitAIType(eUnitAI))
 				{
@@ -15249,11 +15143,8 @@ void CvPlayerAI::AI_updateNextBuyProfession()
 
 void CvPlayerAI::AI_invalidateCloseBordersAttitudeCache()
 {
-	for (int i = 0; i < MAX_PLAYERS; ++i)
-	{
-		m_aiCloseBordersAttitudeCache[i] = MAX_INT;
-		m_aiStolenPlotsAttitudeCache[i] = MAX_INT;
-	}
+	m_em_iCloseBordersAttitudeCache.setAll(MAX_INT);
+	m_em_iStolenPlotsAttitudeCache.setAll(MAX_INT);
 }
 
 
@@ -15264,9 +15155,9 @@ EmotionTypes CvPlayerAI::AI_strongestEmotion()
 
 	for (int i = 0; i < NUM_EMOTION_TYPES; ++i)
 	{
-		if (m_aiEmotions[i] > iBestValue)
+		if (m_em_iEmotions.get((EmotionTypes)i) > iBestValue)
 		{
-			iBestValue = m_aiEmotions[i];
+			iBestValue = m_em_iEmotions.get((EmotionTypes)i);
 			eBestEmotion = (EmotionTypes)i;
 		}
 	}
@@ -15281,28 +15172,28 @@ int CvPlayerAI::AI_emotionWeight(EmotionTypes eEmotion)
 	{
 		return 0;
 	}
-	return (100 * m_aiEmotions[eEmotion]) / (m_aiEmotions[eBestEmotion]);
+	return (100 * m_em_iEmotions.get(eEmotion)) / (m_em_iEmotions.get(eBestEmotion));
 }
 
 int CvPlayerAI::AI_getEmotion(EmotionTypes eEmotion)
 {
 	FAssert(eEmotion > NO_EMOTION);
 	FAssert(eEmotion < NUM_EMOTION_TYPES);
-	return m_aiEmotions[eEmotion];
+	return m_em_iEmotions.get(eEmotion);
 }
 
 void CvPlayerAI::AI_setEmotion(EmotionTypes eEmotion, int iNewValue)
 {
 	FAssert(eEmotion > NO_EMOTION);
 	FAssert(eEmotion < NUM_EMOTION_TYPES);
-	m_aiEmotions[eEmotion] = iNewValue;
+	m_em_iEmotions.set(eEmotion, iNewValue);
 }
 
 void CvPlayerAI::AI_changeEmotion(EmotionTypes eEmotion, int iChange)
 {
 	FAssert(eEmotion > NO_EMOTION);
 	FAssert(eEmotion < NUM_EMOTION_TYPES);
-	m_aiEmotions[eEmotion] += iChange;
+	m_em_iEmotions.add(eEmotion, iChange);
 }
 
 bool CvPlayerAI::AI_isAnyStrategy() const
@@ -15322,7 +15213,7 @@ bool CvPlayerAI::AI_isStrategy(StrategyTypes eStrategy) const
 {
 	FAssert(eStrategy > NO_STRATEGY);
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
-	return (m_aiStrategyStartedTurn[eStrategy] != -1);
+	return (m_em_iStrategyStartedTurn.get(eStrategy) != -1);
 }
 
 int CvPlayerAI::AI_getStrategyDuration(StrategyTypes eStrategy) const
@@ -15334,30 +15225,30 @@ int CvPlayerAI::AI_getStrategyDuration(StrategyTypes eStrategy) const
 		return -1;
 	}
 
-	return (GC.getGameINLINE().getGameTurn() - m_aiStrategyStartedTurn[eStrategy]);
+	return (GC.getGameINLINE().getGameTurn() - m_em_iStrategyStartedTurn.get(eStrategy));
 }
 
 int CvPlayerAI::AI_getStrategyData(StrategyTypes eStrategy)
 {
 	FAssert(eStrategy > NO_STRATEGY);
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
-	return m_aiStrategyData[eStrategy];
+	return m_em_iStrategyData.get(eStrategy);
 }
 
 void CvPlayerAI::AI_setStrategy(StrategyTypes eStrategy, int iData)
 {
 	FAssert(eStrategy > NO_STRATEGY);
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
-	m_aiStrategyStartedTurn[eStrategy] = GC.getGameINLINE().getGameTurn();
-	m_aiStrategyData[eStrategy] = iData;
+	m_em_iStrategyStartedTurn.set(eStrategy, GC.getGameINLINE().getGameTurn());
+	m_em_iStrategyData.set(eStrategy, iData);
 }
 
 void CvPlayerAI::AI_clearStrategy(StrategyTypes eStrategy)
 {
 	FAssert(eStrategy > NO_STRATEGY);
 	FAssert(eStrategy < NUM_STRATEGY_TYPES);
-	m_aiStrategyStartedTurn[eStrategy] = -1;
-	m_aiStrategyData[eStrategy] = -1;
+	m_em_iStrategyStartedTurn.set(eStrategy, -1);
+	m_em_iStrategyData.set(eStrategy, -1);
 }
 // TAC - AI Military Buildup - koma13 - START
 UnitAITypes CvPlayerAI::AI_bestBuildupUnitAI()

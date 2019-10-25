@@ -511,14 +511,14 @@ protected:
 	EnumMap<PlayerTypes, int> m_em_iPeacetimeGrantValue;
 	EnumMap<PlayerTypes, int> m_em_iGoldTradedTo;
 	EnumMap<PlayerTypes, int> m_em_iAttitudeExtra;
-	int* m_aiUnitClassWeights;
-	int* m_aiUnitCombatWeights;
-	int* m_aiEmotions;
-	int* m_aiStrategyStartedTurn;
-	int* m_aiStrategyData;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassWeights;
+	EnumMap<UnitCombatTypes, int> m_em_iUnitCombatWeights;
+	EnumMap<EmotionTypes, int> m_em_iEmotions;
+	EnumMapDefault<StrategyTypes, int, -1> m_em_iStrategyStartedTurn;
+	EnumMapDefault<StrategyTypes, int, -1> m_em_iStrategyData;
 
-	mutable int* m_aiCloseBordersAttitudeCache;
-	mutable int* m_aiStolenPlotsAttitudeCache;
+	mutable EnumMap<PlayerTypes, int> m_em_iCloseBordersAttitudeCache;
+	mutable EnumMap<PlayerTypes, int> m_em_iStolenPlotsAttitudeCache;
 
 
 	EnumMap<PlayerTypes, bool> m_em_bFirstContact;

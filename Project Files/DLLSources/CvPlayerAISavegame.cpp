@@ -76,6 +76,16 @@ enum SavegameVariableTypes
 	PlayerSaveAI_LastWave,
 	PlayerSaveAI_WaveIndex,
 
+	PlayerSaveAI_AICitySites,
+	PlayerSaveAI_unitPriorityHeap,
+	PlayerSaveAI_UnitClassWeights,
+	PlayerSaveAI_UnitCombatWeights,
+	PlayerSaveAI_CloseBordersAttitudeCache,
+	PlayerSaveAI_StolenPlotsAttitudeCache,
+	PlayerSaveAI_Emotions,
+	PlayerSaveAI_StrategyStartedTurn,
+	PlayerSaveAI_StrategyData,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -127,7 +137,17 @@ const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType)
 	case PlayerSaveAI_LastWave: return "PlayerSaveAI_LastWave";
 	case PlayerSaveAI_WaveIndex: return "PlayerSaveAI_WaveIndex";
 
-}	return "";
+		case PlayerSaveAI_AICitySites: return "PlayerSaveAI_AICitySites";
+		case PlayerSaveAI_unitPriorityHeap: return "PlayerSaveAI_unitPriorityHeap";
+		case PlayerSaveAI_UnitClassWeights: return "PlayerSaveAI_UnitClassWeights";
+		case PlayerSaveAI_UnitCombatWeights: return "PlayerSaveAI_UnitCombatWeights";
+		case PlayerSaveAI_CloseBordersAttitudeCache: return "PlayerSaveAI_CloseBordersAttitudeCache";
+		case PlayerSaveAI_StolenPlotsAttitudeCache: return "PlayerSaveAI_StolenPlotsAttitudeCache";
+		case PlayerSaveAI_Emotions: return "PlayerSaveAI_Emotions";
+		case PlayerSaveAI_StrategyStartedTurn: return "PlayerSaveAI_StrategyStartedTurn";
+		case PlayerSaveAI_StrategyData: return "PlayerSaveAI_StrategyData";
+
+	}	return "";
 }
 
 int getNumSavedEnumValuesPlayerAI()
@@ -179,6 +199,16 @@ void CvPlayerAI::AI_resetSavedData()
 	m_iMoveQueuePasses = defaultMoveQueuePasses;
 	m_iLastWave = defaultLastWave;
 	m_iWaveIndex = defaultWaveIndex;
+
+	m_aiAICitySites.clear();
+	m_unitPriorityHeap.clear();
+	m_em_iUnitClassWeights.reset();
+	m_em_iUnitCombatWeights.reset();
+	m_em_iCloseBordersAttitudeCache.reset();
+	m_em_iStolenPlotsAttitudeCache.reset();
+	m_em_iEmotions.reset();
+	m_em_iStrategyStartedTurn.reset();
+	m_em_iStrategyData.reset();
 
 }
 
@@ -247,6 +277,15 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_LastWave: reader.Read(m_iLastWave); break;
 		case PlayerSaveAI_WaveIndex: reader.Read(m_iWaveIndex); break;
 
+		case PlayerSaveAI_AICitySites: reader.Read(m_aiAICitySites); break;
+		case PlayerSaveAI_unitPriorityHeap: reader.Read(m_unitPriorityHeap); break;
+		case PlayerSaveAI_UnitClassWeights: reader.Read(m_em_iUnitClassWeights); break;
+		case PlayerSaveAI_UnitCombatWeights: reader.Read(m_em_iUnitCombatWeights); break;
+		case PlayerSaveAI_CloseBordersAttitudeCache: reader.Read(m_em_iCloseBordersAttitudeCache); break;
+		case PlayerSaveAI_StolenPlotsAttitudeCache: reader.Read(m_em_iStolenPlotsAttitudeCache); break;
+		case PlayerSaveAI_Emotions: reader.Read(m_em_iEmotions); break;
+		case PlayerSaveAI_StrategyStartedTurn: reader.Read(m_em_iStrategyStartedTurn); break;
+		case PlayerSaveAI_StrategyData: reader.Read(m_em_iStrategyData); break;
 		}
 	}
 	
@@ -308,6 +347,16 @@ void CvPlayerAI::write(CvSavegameWriter writer)
 	writer.Write(PlayerSaveAI_MoveQueuePasses, m_iMoveQueuePasses, defaultMoveQueuePasses);
 	writer.Write(PlayerSaveAI_LastWave, m_iLastWave, defaultLastWave);
 	writer.Write(PlayerSaveAI_WaveIndex, m_iWaveIndex, defaultWaveIndex);
+
+	writer.Write(PlayerSaveAI_AICitySites, m_aiAICitySites);
+	writer.Write(PlayerSaveAI_unitPriorityHeap, m_unitPriorityHeap);
+	writer.Write(PlayerSaveAI_UnitClassWeights, m_em_iUnitClassWeights);
+	writer.Write(PlayerSaveAI_UnitCombatWeights, m_em_iUnitCombatWeights);
+	writer.Write(PlayerSaveAI_CloseBordersAttitudeCache, m_em_iCloseBordersAttitudeCache);
+	writer.Write(PlayerSaveAI_StolenPlotsAttitudeCache, m_em_iStolenPlotsAttitudeCache);
+	writer.Write(PlayerSaveAI_Emotions, m_em_iEmotions);
+	writer.Write(PlayerSaveAI_StrategyStartedTurn, m_em_iStrategyStartedTurn);
+	writer.Write(PlayerSaveAI_StrategyData, m_em_iStrategyData);
 	
 
 	writer.Write(PlayerSaveAI_END);
