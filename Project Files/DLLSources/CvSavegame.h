@@ -59,6 +59,7 @@ public:
 
 	void Read(SavegameVariableTypes& variable);
 
+	void Read(unsigned long& variable);
 	void Read(double& variable);
 	void Read(int& variable);
 	void Read(short& variable);
@@ -265,6 +266,7 @@ public:
 	template<enum T>
 	void Write(T variable);
 
+	void Write(unsigned long dVar);
 	void Write(double dVar);
 	void Write(int iVar);
 	void Write(short iVar);

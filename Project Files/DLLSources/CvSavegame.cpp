@@ -218,6 +218,11 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 	}
 }
 
+void CvSavegameReader::Read(unsigned long& variable)
+{
+	Read((byte*)& variable, sizeof(unsigned long));
+}
+
 void CvSavegameReader::Read(double& variable)
 {
 	Read((byte*)& variable, sizeof(double));
@@ -490,6 +495,11 @@ bool CvSavegameWriter::isDebug() const
 void CvSavegameWriter::AssignClassType(SavegameClassTypes eType)
 {
 	m_eClassType = eType;
+}
+
+void CvSavegameWriter::Write(unsigned long variable)
+{
+	Write((byte*)& variable, sizeof(unsigned long));
 }
 
 void CvSavegameWriter::Write(double variable)
