@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include ".\cvreplaymessage.h"
+#include "CvSavegame.h"
 
 CvReplayMessage::CvReplayMessage(int iTurn, ReplayMessageTypes eType, PlayerTypes ePlayer) :
 	m_iTurn(iTurn),
@@ -124,4 +125,3 @@ void CvReplayMessage::write(FDataStreamBase& stream) const
 	stream.WriteString(m_szText);
 	stream.Write(m_eColor);
 }
-

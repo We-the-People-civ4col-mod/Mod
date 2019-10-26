@@ -38,6 +38,7 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_GAME,
 	SAVEGAME_CLASS_GAME_AI,
 	SAVEGAME_CLASS_DEAL,
+	SAVEGAME_CLASS_REPLAYMESSAGE,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -144,6 +145,7 @@ public:
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
+	void Read(ReplayMessageTypes    & variable) { ReadEnum(variable); }
 	void Read(SlotClaim             & variable) { ReadEnum(variable); }
 	void Read(SlotStatus            & variable) { ReadEnum(variable); }
 	void Read(TeamTypes             & variable) { ReadEnum(variable); }
@@ -375,6 +377,7 @@ public:
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
+	void Write(ReplayMessageTypes     variable) { WriteEnum(variable); }
 	void Write(SlotClaim              variable) { WriteEnum(variable); }
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }

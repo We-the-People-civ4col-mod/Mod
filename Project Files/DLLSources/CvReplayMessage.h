@@ -28,6 +28,11 @@ public:
 	void read(FDataStreamBase& stream);
 	void write(FDataStreamBase& stream) const;
 
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer) const;
+
+	void resetSavedData();
+
 private:
 	int m_iTurn;
 	ReplayMessageTypes m_eType;
