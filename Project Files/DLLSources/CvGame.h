@@ -28,7 +28,7 @@ public:
 	int iVictoriesSet;
 	// PatchMod: Victorys END
 	DllExport void init(HandicapTypes eHandicap);
-	DllExport void reset(HandicapTypes eHandicap, bool bConstructorCall = false);
+	DllExport void reset(HandicapTypes eHandicap = NO_HANDICAP, bool bConstructorCall = false);
 
 protected:
 
@@ -328,6 +328,10 @@ public:
 	DllExport virtual void read(FDataStreamBase* pStream);
 	DllExport virtual void write(FDataStreamBase* pStream);
 	DllExport virtual void writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer);
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+	void resetSavedData(HandicapTypes eHandicap, bool bConstructorCall);
 
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;

@@ -6784,8 +6784,6 @@ void CvGame::read(FDataStreamBase* pStream)
 {
 	int iI;
 
-	reset(NO_HANDICAP);
-
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 

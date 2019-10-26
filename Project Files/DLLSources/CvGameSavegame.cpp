@@ -1,0 +1,77 @@
+#include "CvGameCoreDLL.h"
+#include "CvInitCore.h"
+#include "CvDLLInterfaceIFaceBase.h"
+
+#include "CvSavegame.h"
+
+// set the default values
+
+
+// 
+enum SavegameVariableTypes
+{
+	GameSave_END,
+	
+	NUM_SAVE_ENUM_VALUES,
+};
+
+const char* getSavedEnumNameGame(SavegameVariableTypes eType)
+{
+	switch (eType)
+	{
+	case GameSave_END: return "GameSave_END";
+	
+
+	}
+	return "";
+}
+
+int getNumSavedEnumValuesGame()
+{
+	return NUM_SAVE_ENUM_VALUES;
+}
+
+// assign everything to default values
+void CvGame::resetSavedData(HandicapTypes eHandicap, bool bConstructorCall)
+{
+
+}
+
+void CvGame::read(CvSavegameReader reader)
+{
+	reader.AssignClassType(SAVEGAME_CLASS_GAME);
+
+	// Init data before load
+	// This will ensure that all variables not included in the savegame will have default values
+	reset();
+
+	// loop read all the variables
+	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
+	// Variables can be read in any order and any number of variables can be skipped.
+	bool bContinue = true;
+	while (bContinue)
+	{
+		SavegameVariableTypes eType;
+		reader.Read(eType);
+
+		switch (eType)
+		{
+		case GameSave_END: bContinue = false; break;
+		
+		}
+	}
+}
+
+void CvGame::write(CvSavegameWriter writer)
+{
+	writer.AssignClassType(SAVEGAME_CLASS_GAME);
+
+	// Write the data.
+	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
+	// Also it will not save anything if the variable and the default values are identical.
+	// If nothing is saved, the loading code will use the default values.
+	// Less data saved/loaded means smaller savegames.
+
+
+	writer.Write(GameSave_END);
+}
