@@ -372,7 +372,7 @@ void CvUnit::read(CvSavegameReader reader)
 	resetPromotions();
 
 	// update profession/promotion cache
-	processProfession(getProfession(), 1, false);
+	processProfessionStats(getProfession(), 1);
 	setPromotions();
 
 
