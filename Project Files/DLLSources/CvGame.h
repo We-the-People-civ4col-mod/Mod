@@ -14,7 +14,7 @@ class CvCity;
 class CvReplayMessage;
 class CvReplayInfo;
 
-typedef std::vector<const CvReplayMessage*> ReplayMessageList;
+typedef std::vector<CvReplayMessage*> ReplayMessageList;
 
 class CvGame
 {

@@ -37,6 +37,10 @@ const TeamTypes defaultWinner = NO_TEAM;
 const VictoryTypes defaultVictory = NO_VICTORY;
 const GameStateTypes defaultGameState = GAMESTATE_ON;
 
+const int defaultNumSessions = 1;
+const int defaultNumCultureVictoryCities = 0;
+const int defaultCultureVictoryCultureLevel = NO_CULTURELEVEL;
+
 // 
 enum SavegameVariableTypes
 {
@@ -88,6 +92,20 @@ enum SavegameVariableTypes
 	GameSave_SpecialUnitValid,
 	GameSave_SpecialBuildingValid,
 	GameSave_UniqueGoodyValid,
+
+	GameSave_DestroyedCities,
+	GameSave_GreatGeneralBorn,
+	GameSave_GreatAdmiralBorn,
+	GameSave_ShipNamed,
+	GameSave_deals,
+	GameSave_mapRand,
+	GameSave_sorenRand,
+	GameSave_listReplayMessages,
+	GameSave_NumSessions,
+	GameSave_PlotExtraYields,
+	GameSave_InactiveTriggers,
+	GameSave_NumCultureVictoryCities,
+	GameSave_CultureVictoryCultureLevel,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -143,6 +161,20 @@ const char* getSavedEnumNameGame(SavegameVariableTypes eType)
 	case GameSave_SpecialUnitValid: return "GameSave_SpecialUnitValid";
 	case GameSave_SpecialBuildingValid: return "GameSave_SpecialBuildingValid";
 	case GameSave_UniqueGoodyValid: return "GameSave_UniqueGoodyValid";
+
+	case GameSave_DestroyedCities: return "GameSave_DestroyedCities";
+	case GameSave_GreatGeneralBorn: return "GameSave_GreatGeneralBorn";
+	case GameSave_GreatAdmiralBorn: return "GameSave_GreatAdmiralBorn";
+	case GameSave_ShipNamed: return "GameSave_ShipNamed";
+	case GameSave_deals: return "GameSave_deals";
+	case GameSave_mapRand: return "GameSave_mapRand";
+	case GameSave_sorenRand: return "GameSave_sorenRand";
+	case GameSave_listReplayMessages: return "GameSave_listReplayMessages";
+	case GameSave_NumSessions: return "GameSave_NumSessions";
+	case GameSave_PlotExtraYields: return "GameSave_PlotExtraYields";
+	case GameSave_InactiveTriggers: return "GameSave_InactiveTriggers";
+	case GameSave_NumCultureVictoryCities: return "GameSave_NumCultureVictoryCities";
+	case GameSave_CultureVictoryCultureLevel: return "GameSave_CultureVictoryCultureLevel";
 
 	}
 	return "";
@@ -202,6 +234,20 @@ void CvGame::resetSavedData(HandicapTypes eHandicap, bool bConstructorCall)
 	m_em_bSpecialUnitValid.reset();
 	m_em_bSpecialBuildingValid.reset();
 	m_em_bUniqueGoodyValid.reset();
+
+	m_aszDestroyedCities.clear();
+	m_aszGreatGeneralBorn.clear();
+	m_aszGreatAdmiralBorn.clear();
+	m_aszShipNamed.clear();
+	m_deals.removeAll();
+	m_mapRand.reset();
+	m_sorenRand.reset();
+	clearReplayMessageMap();
+	m_iNumSessions = defaultNumSessions;
+	m_aPlotExtraYields.clear();
+	m_aeInactiveTriggers.clear();
+	m_iNumCultureVictoryCities = defaultNumCultureVictoryCities;
+	m_eCultureVictoryCultureLevel = defaultCultureVictoryCultureLevel;
 }
 
 void CvGame::read(CvSavegameReader reader)
@@ -271,6 +317,46 @@ void CvGame::read(CvSavegameReader reader)
 		case GameSave_SpecialBuildingValid: reader.Read(m_em_bSpecialBuildingValid); break;
 		case GameSave_UniqueGoodyValid: reader.Read(m_em_bUniqueGoodyValid); break;
 
+		case GameSave_DestroyedCities: reader.Read(m_aszDestroyedCities); break;
+		case GameSave_GreatGeneralBorn: reader.Read(m_aszGreatGeneralBorn); break;
+		case GameSave_GreatAdmiralBorn: reader.Read(m_aszGreatAdmiralBorn); break;
+		case GameSave_ShipNamed: reader.Read(m_aszShipNamed); break;
+		case GameSave_deals: reader.Read(m_deals); break;
+		case GameSave_mapRand: reader.Read(m_mapRand); break;
+		case GameSave_sorenRand: reader.Read(m_sorenRand); break;
+		case GameSave_listReplayMessages: reader.Read(m_listReplayMessages); break;
+		case GameSave_NumSessions: reader.Read(m_iNumSessions);
+			if (!isNetworkMultiPlayer())
+			{
+				++m_iNumSessions;
+			} 
+			break;
+		case GameSave_PlotExtraYields: reader.Read(m_aPlotExtraYields); break;
+		case GameSave_InactiveTriggers: reader.Read(m_aeInactiveTriggers); break;
+		case GameSave_NumCultureVictoryCities: reader.Read(m_iNumCultureVictoryCities); break;
+		case GameSave_CultureVictoryCultureLevel: reader.Read(m_eCultureVictoryCultureLevel); break;
+		}
+		
+	}
+	// Get the active player information from the initialization structure
+	if (!isGameMultiPlayer())
+	{
+		int iI;
+		for (iI = 0; iI < MAX_PLAYERS; iI++)
+		{
+			if (GET_PLAYER((PlayerTypes)iI).isHuman())
+			{
+				setActivePlayer((PlayerTypes)iI);
+				break;
+			}
+		}
+		addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getActivePlayer(), gDLL->getText("TXT_KEY_MISC_RELOAD", m_iNumSessions));
+	}
+		if (isOption(GAMEOPTION_NEW_RANDOM_SEED))
+	{
+		if (!isNetworkMultiPlayer())
+		{
+			m_sorenRand.reseed(timeGetTime());
 		}
 	}
 }
@@ -331,6 +417,20 @@ void CvGame::write(CvSavegameWriter writer)
 	writer.Write(GameSave_SpecialUnitValid, m_em_bSpecialUnitValid);
 	writer.Write(GameSave_SpecialBuildingValid, m_em_bSpecialBuildingValid);
 	writer.Write(GameSave_UniqueGoodyValid, m_em_bUniqueGoodyValid);
+
+	writer.Write(GameSave_DestroyedCities, m_aszDestroyedCities);
+	writer.Write(GameSave_GreatGeneralBorn, m_aszGreatGeneralBorn);
+	writer.Write(GameSave_GreatAdmiralBorn, m_aszGreatAdmiralBorn);
+	writer.Write(GameSave_ShipNamed, m_aszShipNamed);
+	writer.Write(GameSave_deals, m_deals);
+	writer.Write(GameSave_mapRand, m_mapRand);
+	writer.Write(GameSave_sorenRand, m_sorenRand);
+	writer.Write(GameSave_listReplayMessages, m_listReplayMessages);
+	writer.Write(GameSave_NumSessions, m_iNumSessions, defaultNumSessions);
+	writer.Write(GameSave_PlotExtraYields, m_aPlotExtraYields);
+	writer.Write(GameSave_InactiveTriggers, m_aeInactiveTriggers);
+	writer.Write(GameSave_NumCultureVictoryCities, m_iNumCultureVictoryCities, defaultNumCultureVictoryCities);
+	writer.Write(GameSave_CultureVictoryCultureLevel, m_eCultureVictoryCultureLevel, defaultCultureVictoryCultureLevel);
 
 	writer.Write(GameSave_END);
 }

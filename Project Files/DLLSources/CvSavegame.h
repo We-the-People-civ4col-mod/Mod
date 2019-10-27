@@ -13,6 +13,7 @@ struct CvPopupButtonPython;
 
 #include "CvDiploParameters.h"
 #include "CvPopupInfo.h"
+#include "CvReplayMessage.h"
 
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.
@@ -215,6 +216,8 @@ public:
 	void Read(CvTalkingHeadMessage  & variable);
 	void Read(CvTradeRouteGroup     & variable);
 	void Read(FVariable             & variable);
+	void Read(CvRandom              & variable) { variable.read(*this); }
+	void Read(CvReplayMessage       & variable) { variable.read(*this); }
 	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
@@ -222,6 +225,7 @@ public:
 	void Read(IDInfo                & variable) { variable.read(*this); }
 	void Read(MissionData           & variable) { variable.read(*this); }
 	void Read(OrderData             & variable) { variable.read(*this); }
+	void Read(PlotExtraYield        & variable) { variable.read(*this); }
 	void Read(TradeData             & variable) { variable.read(*this); }
 
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
@@ -333,6 +337,7 @@ public:
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
 	void Write(SavegameVariableTypes eType, CvTurnScoreMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
+	void Write(SavegameVariableTypes eType, CvRandom& rand);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array);
@@ -446,6 +451,8 @@ public:
 	void Write(CvTalkingHeadMessage &variable);
 	void Write(CvTradeRouteGroup    &variable);
 	void Write(FVariable            &variable);
+	void Write(CvRandom             &variable) { variable.write(*this); }
+	void Write(CvReplayMessage      &variable) { variable.write(*this); }
 	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
@@ -453,6 +460,7 @@ public:
 	void Write(IDInfo               &variable) { variable.write(*this); }
 	void Write(MissionData          &variable) { variable.write(*this); }
 	void Write(OrderData            &variable) { variable.write(*this); }
+	void Write(PlotExtraYield       &variable) { variable.write(*this); }
 	void Write(TradeData            &variable) { variable.write(*this); }
 
 	// get the amount of bytes needed to save the variable in question

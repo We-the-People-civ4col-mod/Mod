@@ -674,6 +674,12 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, CvEventMap& Map)
 	}
 }
 
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvRandom& rand)
+{
+	Write(eType);
+	Write(rand);
+}
+
 void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 {
 	for (unsigned int i = 0; i < iSize; ++i)
