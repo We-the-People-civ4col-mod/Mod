@@ -139,6 +139,7 @@ public:
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(eVariableType         & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(GameStateTypes        & variable) { ReadEnum(variable); }
 	void Read(InterfaceMessageTypes & variable) { ReadEnum(variable); }
 	void Read(MissionAITypes        & variable) { ReadEnum(variable); }
 	void Read(MissionTypes          & variable) { ReadEnum(variable); }
@@ -371,6 +372,7 @@ public:
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
 	void Write(eVariableType          variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(GameStateTypes         variable) { WriteEnum(variable); }
 	void Write(InterfaceMessageTypes  variable) { WriteEnum(variable); }
 	void Write(MissionAITypes         variable) { WriteEnum(variable); }
 	void Write(MissionTypes           variable) { WriteEnum(variable); }

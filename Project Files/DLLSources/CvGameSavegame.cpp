@@ -5,13 +5,76 @@
 #include "CvSavegame.h"
 
 // set the default values
-
+const int defaultEndTurnMessagesSent = 0;
+const int defaultElapsedGameTurns = 0;
+const int defaultStartTurn = 0;
+const int defaultStartYear = 0;
+const int defaultEstimateEndTurn = 0;
+const int defaultTurnSlice = 0;
+const int defaultCutoffSlice = 0;
+const int defaultNumGameTurnActive = 0;
+const int defaultNumCities = 0;
+const int defaultMaxPopulation = 0;
+const int defaultMaxLand = 0;
+const int defaultMaxFather = 0;
+const int defaultInitPopulation = 0;
+const int defaultInitLand = 0;
+const int defaultInitFather = 0;
+const int defaultAIAutoPlay = 0;
+const int defaultBestLandUnitCombat = 1;
+const bool defaultScoreDirty = false;
+const bool defaultFinalInitialized = false;
+const bool defaultHotPbemBetweenTurns = false;
+const bool defaultMaxTurnsExtended = false;
+const bool defaultWBNorthAmericanNative = true;
+const bool defaultWBSouthAmericanNative = true;
+const bool defaultWBCentralAmericanNative = true;
+const HandicapTypes defaultHandicap = NO_HANDICAP;
+const PlayerTypes defaultPausePlayer = NO_PLAYER;
+const PlayerTypes defaultBarbarianPlayer = NO_PLAYER;
+const PlayerTypes defaultChurchPlayer = NO_PLAYER;
+const TeamTypes defaultWinner = NO_TEAM;
+const VictoryTypes defaultVictory = NO_VICTORY;
+const GameStateTypes defaultGameState = GAMESTATE_ON;
 
 // 
 enum SavegameVariableTypes
 {
 	GameSave_END,
-	
+
+	GameSave_EndTurnMessagesSent,
+	GameSave_ElapsedGameTurns,
+	GameSave_StartTurn,
+	GameSave_StartYear,
+	GameSave_EstimateEndTurn,
+	GameSave_TurnSlice,
+	GameSave_CutoffSlice,
+	GameSave_NumGameTurnActive,
+	GameSave_NumCities,
+	GameSave_MaxPopulation,
+	GameSave_MaxLand,
+	GameSave_MaxFather,
+	GameSave_InitPopulation,
+	GameSave_InitLand,
+	GameSave_InitFather,
+	GameSave_AIAutoPlay,
+	GameSave_BestLandUnitCombat,
+	GameSave_ScoreDirty,
+	GameSave_FinalInitialized,
+	GameSave_HotPbemBetweenTurns,
+	GameSave_MaxTurnsExtended,
+	GameSave_WBNorthAmericanNative,
+	GameSave_WBSouthAmericanNative,
+	GameSave_WBCentralAmericanNative,
+	GameSave_Handicap,
+	GameSave_PausePlayer,
+	GameSave_BarbarianPlayer,
+	GameSave_ChurchPlayer,
+	GameSave_Winner,
+	GameSave_Victory,
+	GameSave_GameState,
+	GameSave_ScriptData,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -20,7 +83,38 @@ const char* getSavedEnumNameGame(SavegameVariableTypes eType)
 	switch (eType)
 	{
 	case GameSave_END: return "GameSave_END";
-	
+	case GameSave_EndTurnMessagesSent: return "GameSave_EndTurnMessagesSent";
+	case GameSave_ElapsedGameTurns: return "GameSave_ElapsedGameTurns";
+	case GameSave_StartTurn: return "GameSave_StartTurn";
+	case GameSave_StartYear: return "GameSave_StartYear";
+	case GameSave_EstimateEndTurn: return "GameSave_EstimateEndTurn";
+	case GameSave_TurnSlice: return "GameSave_TurnSlice";
+	case GameSave_CutoffSlice: return "GameSave_CutoffSlice";
+	case GameSave_NumGameTurnActive: return "GameSave_NumGameTurnActive";
+	case GameSave_NumCities: return "GameSave_NumCities";
+	case GameSave_MaxPopulation: return "GameSave_MaxPopulation";
+	case GameSave_MaxLand: return "GameSave_MaxLand";
+	case GameSave_MaxFather: return "GameSave_MaxFather";
+	case GameSave_InitPopulation: return "GameSave_InitPopulation";
+	case GameSave_InitLand: return "GameSave_InitLand";
+	case GameSave_InitFather: return "GameSave_InitFather";
+	case GameSave_AIAutoPlay: return "GameSave_AIAutoPlay";
+	case GameSave_BestLandUnitCombat: return "GameSave_BestLandUnitCombat";
+	case GameSave_ScoreDirty: return "GameSave_ScoreDirty";
+	case GameSave_FinalInitialized: return "GameSave_FinalInitialized";
+	case GameSave_HotPbemBetweenTurns: return "GameSave_HotPbemBetweenTurns";
+	case GameSave_MaxTurnsExtended: return "GameSave_MaxTurnsExtended";
+	case GameSave_WBNorthAmericanNative: return "GameSave_WBNorthAmericanNative";
+	case GameSave_WBSouthAmericanNative: return "GameSave_WBSouthAmericanNative";
+	case GameSave_WBCentralAmericanNative: return "GameSave_WBCentralAmericanNative";
+	case GameSave_Handicap: return "GameSave_Handicap";
+	case GameSave_PausePlayer: return "GameSave_PausePlayer";
+	case GameSave_BarbarianPlayer: return "GameSave_BarbarianPlayer";
+	case GameSave_ChurchPlayer: return "GameSave_ChurchPlayer";
+	case GameSave_Winner: return "GameSave_Winner";
+	case GameSave_Victory: return "GameSave_Victory";
+	case GameSave_GameState: return "GameSave_GameState";
+	case GameSave_ScriptData: return "GameSave_ScriptData";
 
 	}
 	return "";
@@ -34,7 +128,38 @@ int getNumSavedEnumValuesGame()
 // assign everything to default values
 void CvGame::resetSavedData(HandicapTypes eHandicap, bool bConstructorCall)
 {
-
+	m_iEndTurnMessagesSent = defaultEndTurnMessagesSent;
+	m_iElapsedGameTurns = defaultElapsedGameTurns;
+	m_iStartTurn = defaultStartTurn;
+	m_iStartYear = defaultStartYear;
+	m_iEstimateEndTurn = defaultEstimateEndTurn;
+	m_iTurnSlice = defaultTurnSlice;
+	m_iCutoffSlice = defaultCutoffSlice;
+	m_iNumGameTurnActive = defaultNumGameTurnActive;
+	m_iNumCities = defaultNumCities;
+	m_iMaxPopulation = defaultMaxPopulation;
+	m_iMaxLand = defaultMaxLand;
+	m_iMaxFather = defaultMaxFather;
+	m_iInitPopulation = defaultInitPopulation;
+	m_iInitLand = defaultInitLand;
+	m_iInitFather = defaultInitFather;
+	m_iAIAutoPlay = defaultAIAutoPlay;
+	m_iBestLandUnitCombat = defaultBestLandUnitCombat;
+	m_bScoreDirty = defaultScoreDirty;
+	m_bFinalInitialized = defaultFinalInitialized;
+	m_bHotPbemBetweenTurns = defaultHotPbemBetweenTurns;
+	m_bMaxTurnsExtended = defaultMaxTurnsExtended;
+	m_bWBNorthAmericanNative = defaultWBNorthAmericanNative;
+	m_bWBSouthAmericanNative = defaultWBSouthAmericanNative;
+	m_bWBCentralAmericanNative = defaultWBCentralAmericanNative;
+	m_eHandicap = eHandicap;
+	m_ePausePlayer = defaultPausePlayer;
+	m_eBarbarianPlayer = defaultBarbarianPlayer;
+	m_eChurchPlayer = defaultChurchPlayer;
+	m_eWinner = defaultWinner;
+	m_eVictory = defaultVictory;
+	m_eGameState = defaultGameState;
+	m_szScriptData.clear();
 }
 
 void CvGame::read(CvSavegameReader reader)
@@ -57,7 +182,39 @@ void CvGame::read(CvSavegameReader reader)
 		switch (eType)
 		{
 		case GameSave_END: bContinue = false; break;
-		
+		case GameSave_EndTurnMessagesSent: reader.Read(m_iEndTurnMessagesSent); break;
+		case GameSave_ElapsedGameTurns: reader.Read(m_iElapsedGameTurns); break;
+		case GameSave_StartTurn: reader.Read(m_iStartTurn); break;
+		case GameSave_StartYear: reader.Read(m_iStartYear); break;
+		case GameSave_EstimateEndTurn: reader.Read(m_iEstimateEndTurn); break;
+		case GameSave_TurnSlice: reader.Read(m_iTurnSlice); break;
+		case GameSave_CutoffSlice: reader.Read(m_iCutoffSlice); break;
+		case GameSave_NumGameTurnActive: reader.Read(m_iNumGameTurnActive); break;
+		case GameSave_NumCities: reader.Read(m_iNumCities); break;
+		case GameSave_MaxPopulation: reader.Read(m_iMaxPopulation); break;
+		case GameSave_MaxLand: reader.Read(m_iMaxLand); break;
+		case GameSave_MaxFather: reader.Read(m_iMaxFather); break;
+		case GameSave_InitPopulation: reader.Read(m_iInitPopulation); break;
+		case GameSave_InitLand: reader.Read(m_iInitLand); break;
+		case GameSave_InitFather: reader.Read(m_iInitFather); break;
+		case GameSave_AIAutoPlay: reader.Read(m_iAIAutoPlay); break;
+		case GameSave_BestLandUnitCombat: reader.Read(m_iBestLandUnitCombat); break;
+		case GameSave_ScoreDirty: reader.Read(m_bScoreDirty); break;
+		case GameSave_FinalInitialized: reader.Read(m_bFinalInitialized); break;
+		case GameSave_HotPbemBetweenTurns: reader.Read(m_bHotPbemBetweenTurns); break;
+		case GameSave_MaxTurnsExtended: reader.Read(m_bMaxTurnsExtended); break;
+		case GameSave_WBNorthAmericanNative: reader.Read(m_bWBNorthAmericanNative); break;
+		case GameSave_WBSouthAmericanNative: reader.Read(m_bWBSouthAmericanNative); break;
+		case GameSave_WBCentralAmericanNative: reader.Read(m_bWBCentralAmericanNative); break;
+		case GameSave_Handicap: reader.Read(m_eHandicap); break;
+		case GameSave_PausePlayer: reader.Read(m_ePausePlayer); break;
+		case GameSave_BarbarianPlayer: reader.Read(m_eBarbarianPlayer); break;
+		case GameSave_ChurchPlayer: reader.Read(m_eChurchPlayer); break;
+		case GameSave_Winner: reader.Read(m_eWinner); break;
+		case GameSave_Victory: reader.Read(m_eVictory); break;
+		case GameSave_GameState: reader.Read(m_eGameState); break;
+		case GameSave_ScriptData: reader.Read(m_szScriptData); break;
+
 		}
 	}
 }
@@ -72,6 +229,38 @@ void CvGame::write(CvSavegameWriter writer)
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
 
+	writer.Write(GameSave_EndTurnMessagesSent, m_iEndTurnMessagesSent, defaultEndTurnMessagesSent);
+	writer.Write(GameSave_ElapsedGameTurns, m_iElapsedGameTurns, defaultElapsedGameTurns);
+	writer.Write(GameSave_StartTurn, m_iStartTurn, defaultStartTurn);
+	writer.Write(GameSave_StartYear, m_iStartYear, defaultStartYear);
+	writer.Write(GameSave_EstimateEndTurn, m_iEstimateEndTurn, defaultEstimateEndTurn);
+	writer.Write(GameSave_TurnSlice, m_iTurnSlice, defaultTurnSlice);
+	writer.Write(GameSave_CutoffSlice, m_iCutoffSlice, defaultCutoffSlice);
+	writer.Write(GameSave_NumGameTurnActive, m_iNumGameTurnActive, defaultNumGameTurnActive);
+	writer.Write(GameSave_NumCities, m_iNumCities, m_iNumCities);
+	writer.Write(GameSave_MaxPopulation, m_iMaxPopulation, defaultMaxPopulation);
+	writer.Write(GameSave_MaxLand, m_iMaxLand, defaultMaxLand);
+	writer.Write(GameSave_MaxFather, m_iMaxFather, defaultMaxFather);
+	writer.Write(GameSave_InitPopulation, m_iInitPopulation, defaultInitPopulation);
+	writer.Write(GameSave_InitLand, m_iInitLand, defaultInitLand);
+	writer.Write(GameSave_InitFather, m_iInitFather, defaultInitFather);
+	writer.Write(GameSave_AIAutoPlay, m_iAIAutoPlay, defaultAIAutoPlay);
+	writer.Write(GameSave_BestLandUnitCombat, m_iBestLandUnitCombat, defaultBestLandUnitCombat);
+	writer.Write(GameSave_ScoreDirty, m_bScoreDirty, defaultScoreDirty);
+	writer.Write(GameSave_FinalInitialized, m_bFinalInitialized, defaultFinalInitialized);
+	writer.Write(GameSave_HotPbemBetweenTurns, m_bHotPbemBetweenTurns, defaultHotPbemBetweenTurns);
+	writer.Write(GameSave_MaxTurnsExtended, m_bMaxTurnsExtended, defaultMaxTurnsExtended);
+	writer.Write(GameSave_WBNorthAmericanNative, m_bWBNorthAmericanNative, defaultWBNorthAmericanNative);
+	writer.Write(GameSave_WBSouthAmericanNative, m_bWBSouthAmericanNative, defaultWBSouthAmericanNative);
+	writer.Write(GameSave_WBCentralAmericanNative, m_bWBCentralAmericanNative, defaultWBCentralAmericanNative);
+	writer.Write(GameSave_Handicap, m_eHandicap, defaultHandicap);
+	writer.Write(GameSave_PausePlayer, m_ePausePlayer, defaultPausePlayer);
+	writer.Write(GameSave_BarbarianPlayer, m_eBarbarianPlayer, defaultBarbarianPlayer);
+	writer.Write(GameSave_ChurchPlayer, m_eChurchPlayer, defaultChurchPlayer);
+	writer.Write(GameSave_Winner, m_eWinner, defaultWinner);
+	writer.Write(GameSave_Victory, m_eVictory, defaultVictory);
+	writer.Write(GameSave_GameState, m_eGameState, defaultGameState);
+	writer.Write(GameSave_ScriptData, m_szScriptData);
 
 	writer.Write(GameSave_END);
 }

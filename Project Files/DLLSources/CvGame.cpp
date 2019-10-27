@@ -509,52 +509,14 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	// Uninit class
 	uninit();
 
-	m_iEndTurnMessagesSent = 0;
-	m_iElapsedGameTurns = 0;
-	m_iStartTurn = 0;
-	m_iStartYear = 0;
-	m_iEstimateEndTurn = 0;
-	m_iTurnSlice = 0;
-	m_iCutoffSlice = 0;
-	m_iNumGameTurnActive = 0;
-	m_iNumCities = 0;
-	m_iMaxPopulation = 0;
-	m_iMaxLand = 0;
-	m_iMaxFather = 0;
-	m_iInitPopulation = 0;
-	m_iInitLand = 0;
-	m_iInitFather = 0;
-	m_iAIAutoPlay = 0;
+	resetSavedData(eHandicap,bConstructorCall);
 
 	m_uiInitialTime = 0;
 
-	m_bScoreDirty = false;
 	m_bDebugMode = false;
 	m_bDebugModeCache = false;
-	m_bFinalInitialized = false;
 	m_bPbemTurnSent = false;
-	m_bHotPbemBetweenTurns = false;
 	m_bPlayerOptionsSent = false;
-	m_bMaxTurnsExtended = false;
-
-	// R&R, ray, Correct Geographical Placement of Natives - START
-	m_bWBNorthAmericanNative = true;
-	m_bWBSouthAmericanNative = true;
-	m_bWBCentralAmericanNative = true;
-	// R&R, ray, Correct Geographical Placement of Natives - END
-
-	m_eHandicap = eHandicap;
-	m_ePausePlayer = NO_PLAYER;
-
-	m_eBarbarianPlayer = NO_PLAYER; // < JAnimals Mod Start >
-	m_eChurchPlayer = NO_PLAYER; // R&R, ray, the Church - START
-	
-	m_iBestLandUnitCombat = 1;
-	m_eWinner = NO_TEAM;
-	m_eVictory = NO_VICTORY;
-	m_eGameState = GAMESTATE_ON;
-
-	m_szScriptData = "";
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
@@ -6783,71 +6745,6 @@ uint CvGame::getNumReplayMessages() const
 void CvGame::read(FDataStreamBase* pStream)
 {
 	int iI;
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	/// one/two city plot radius
-	int iDefineFlags = 0;
-	if (uiFlag > 1)
-	{
-		pStream->Read(&iDefineFlags);
-	}
-	if (iDefineFlags != getDefineFlagsForDLL())
-	{
-		MessageBox(0, getCompileFlags(iDefineFlags).c_str(), "ERROR", 0);
-	}
-	// city radius end
-
-	pStream->Read(&m_iEndTurnMessagesSent);
-	pStream->Read(&m_iElapsedGameTurns);
-	pStream->Read(&m_iStartTurn);
-	pStream->Read(&m_iStartYear);
-	pStream->Read(&m_iEstimateEndTurn);
-	pStream->Read(&m_iTurnSlice);
-	pStream->Read(&m_iCutoffSlice);
-	pStream->Read(&m_iNumGameTurnActive);
-	pStream->Read(&m_iNumCities);
-	pStream->Read(&m_iMaxPopulation);
-	pStream->Read(&m_iMaxLand);
-	pStream->Read(&m_iMaxFather);
-	pStream->Read(&m_iInitPopulation);
-	pStream->Read(&m_iInitLand);
-	pStream->Read(&m_iInitFather);
-	pStream->Read(&m_iAIAutoPlay);
-	pStream->Read(&m_iBestLandUnitCombat);
-
-	// m_uiInitialTime not saved
-
-	pStream->Read(&m_bScoreDirty);
-	// m_bDebugMode not saved
-	pStream->Read(&m_bFinalInitialized);
-	// m_bPbemTurnSent not saved
-	pStream->Read(&m_bHotPbemBetweenTurns);
-	// m_bPlayerOptionsSent not saved
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_bMaxTurnsExtended);
-	}
-
-	// R&R, ray, Correct Geographical Placement of Natives - START
-	pStream->Read(&m_bWBNorthAmericanNative);
-	pStream->Read(&m_bWBSouthAmericanNative);
-	pStream->Read(&m_bWBCentralAmericanNative);
-	// R&R, ray, Correct Geographical Placement of Natives - END
-
-	pStream->Read((int*)&m_eHandicap);
-	pStream->Read((int*)&m_ePausePlayer);
-
-	pStream->Read((int*)&m_eBarbarianPlayer); // < JAnimals Mod Start >
-	pStream->Read((int*)&m_eChurchPlayer); // R&R, ray, the Church - START
-	
-	pStream->Read((int*)&m_eWinner);
-	pStream->Read((int*)&m_eVictory);
-	pStream->Read((int*)&m_eGameState);
-
-	pStream->ReadString(m_szScriptData);
-
 	pStream->Read(MAX_PLAYERS, m_aiRankPlayer);
 	pStream->Read(MAX_PLAYERS, m_aiPlayerScore);
 	pStream->Read(MAX_TEAMS, m_aiRankTeam);
@@ -6986,59 +6883,6 @@ void CvGame::read(FDataStreamBase* pStream)
 
 void CvGame::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=2;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	/// one/two city plot radiu
-	pStream->Write(getDefineFlagsForDLL());
-	// city radius end
-
-	pStream->Write(m_iEndTurnMessagesSent);
-	pStream->Write(m_iElapsedGameTurns);
-	pStream->Write(m_iStartTurn);
-	pStream->Write(m_iStartYear);
-	pStream->Write(m_iEstimateEndTurn);
-	pStream->Write(m_iTurnSlice);
-	pStream->Write(m_iCutoffSlice);
-	pStream->Write(m_iNumGameTurnActive);
-	pStream->Write(m_iNumCities);
-	pStream->Write(m_iMaxPopulation);
-	pStream->Write(m_iMaxLand);
-	pStream->Write(m_iMaxFather);
-	pStream->Write(m_iInitPopulation);
-	pStream->Write(m_iInitLand);
-	pStream->Write(m_iInitFather);
-	pStream->Write(m_iAIAutoPlay);
-	pStream->Write(m_iBestLandUnitCombat);
-
-	// m_uiInitialTime not saved
-
-	pStream->Write(m_bScoreDirty);
-	// m_bDebugMode not saved
-	pStream->Write(m_bFinalInitialized);
-	// m_bPbemTurnSent not saved
-	pStream->Write(m_bHotPbemBetweenTurns);
-	// m_bPlayerOptionsSent not saved
-	pStream->Write(m_bMaxTurnsExtended);
-
-	// R&R, ray, Correct Geographical Placement of Natives - START
-	pStream->Write(m_bWBNorthAmericanNative);
-	pStream->Write(m_bWBSouthAmericanNative);
-	pStream->Write(m_bWBCentralAmericanNative);
-	// R&R, ray, Correct Geographical Placement of Natives - End
-
-	pStream->Write(m_eHandicap);
-	pStream->Write(m_ePausePlayer);
-	
-	pStream->Write(m_eBarbarianPlayer); // < JAnimals Mod Start >
-	pStream->Write(m_eChurchPlayer); // R&R, ray, the Church - START
-
-	pStream->Write(m_eWinner);
-	pStream->Write(m_eVictory);
-	pStream->Write(m_eGameState);
-
-	pStream->WriteString(m_szScriptData);
-
 	pStream->Write(MAX_PLAYERS, m_aiRankPlayer);
 	pStream->Write(MAX_PLAYERS, m_aiPlayerScore);
 	pStream->Write(MAX_TEAMS, m_aiRankTeam);
