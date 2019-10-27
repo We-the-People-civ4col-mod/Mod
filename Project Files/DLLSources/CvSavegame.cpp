@@ -60,6 +60,10 @@ const char* getSavedEnumNameTradeRoute(SavegameVariableTypes eType);
 const char* getSavedEnumNameTradeRouteGroup(SavegameVariableTypes eType);
 const char* getSavedEnumNameSelectionGroup(SavegameVariableTypes eType);
 const char* getSavedEnumNameSelectionGroupAi(SavegameVariableTypes eType);
+const char* getSavedEnumNameGame(SavegameVariableTypes eType);
+const char* getSavedEnumNameGameAi(SavegameVariableTypes eType);
+const char* getSavedEnumNameDeal(SavegameVariableTypes eType);
+const char* getSavedEnumNameReplayMessage(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -80,6 +84,10 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	case SAVEGAME_CLASS_TRADEROUTEGROUP: return getSavedEnumNameTradeRouteGroup(eType);
 	case SAVEGAME_CLASS_SELECTIONGROUP: return getSavedEnumNameSelectionGroup(eType);
 	case SAVEGAME_CLASS_SELECTIONGROUP_AI: return getSavedEnumNameSelectionGroupAi(eType);
+	case SAVEGAME_CLASS_GAME: return getSavedEnumNameGame(eType);
+	case SAVEGAME_CLASS_GAME_AI: return getSavedEnumNameGameAi(eType);
+	case SAVEGAME_CLASS_DEAL: return getSavedEnumNameDeal(eType);
+	case SAVEGAME_CLASS_REPLAYMESSAGE: return getSavedEnumNameReplayMessage(eType);
 
 	}
 
@@ -210,6 +218,11 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 		FAssert(padding_prefix == MAX_UNSIGNED_INT);
 		FAssert(padding_postfix == MAX_UNSIGNED_INT);
 	}
+}
+
+void CvSavegameReader::Read(unsigned long& variable)
+{
+	Read((byte*)& variable, sizeof(unsigned long));
 }
 
 void CvSavegameReader::Read(double& variable)
@@ -486,6 +499,11 @@ void CvSavegameWriter::AssignClassType(SavegameClassTypes eType)
 	m_eClassType = eType;
 }
 
+void CvSavegameWriter::Write(unsigned long variable)
+{
+	Write((byte*)& variable, sizeof(unsigned long));
+}
+
 void CvSavegameWriter::Write(double variable)
 {
 	Write((byte*)& variable, sizeof(double));
@@ -654,6 +672,12 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, CvEventMap& Map)
 			Write(it->second);
 		}
 	}
+}
+
+void CvSavegameWriter::Write(SavegameVariableTypes eType, CvRandom& rand)
+{
+	Write(eType);
+	Write(rand);
 }
 
 void CvSavegameWriter::Write(byte* var, unsigned int iSize)
@@ -879,6 +903,10 @@ int getNumSavedEnumValuesTradeRoute();
 int getNumSavedEnumValuesTradeRouteGroup();
 int getNumSavedEnumValuesSelectionGroup();
 int getNumSavedEnumValuesSelectionGroupAi();
+int getNumSavedEnumValuesGame();
+int getNumSavedEnumValuesGameAI();
+int getNumSavedEnumValuesDeal();
+int getNumSavedEnumValuesReplayMessage();
 
 void CvSavegameWriterBase::InitSavegame()
 {
@@ -916,6 +944,10 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_TRADEROUTEGROUP:  iCount = getNumSavedEnumValuesTradeRouteGroup(); break;
 		case SAVEGAME_CLASS_SELECTIONGROUP:  iCount = getNumSavedEnumValuesSelectionGroup(); break;
 		case SAVEGAME_CLASS_SELECTIONGROUP_AI:  iCount = getNumSavedEnumValuesSelectionGroupAi(); break;
+		case SAVEGAME_CLASS_GAME:  iCount = getNumSavedEnumValuesGame(); break;
+		case SAVEGAME_CLASS_GAME_AI:  iCount = getNumSavedEnumValuesGameAI(); break;
+		case SAVEGAME_CLASS_DEAL:  iCount = getNumSavedEnumValuesDeal(); break;
+		case SAVEGAME_CLASS_REPLAYMESSAGE:  iCount = getNumSavedEnumValuesReplayMessage(); break;
 
 		default:
 			FAssertMsg(false, "missing case");

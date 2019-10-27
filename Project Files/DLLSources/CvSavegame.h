@@ -13,6 +13,7 @@ struct CvPopupButtonPython;
 
 #include "CvDiploParameters.h"
 #include "CvPopupInfo.h"
+#include "CvReplayMessage.h"
 
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.
@@ -35,6 +36,10 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_TRADEROUTEGROUP,
 	SAVEGAME_CLASS_SELECTIONGROUP,
 	SAVEGAME_CLASS_SELECTIONGROUP_AI,
+	SAVEGAME_CLASS_GAME,
+	SAVEGAME_CLASS_GAME_AI,
+	SAVEGAME_CLASS_DEAL,
+	SAVEGAME_CLASS_REPLAYMESSAGE,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -56,6 +61,7 @@ public:
 
 	void Read(SavegameVariableTypes& variable);
 
+	void Read(unsigned long& variable);
 	void Read(double& variable);
 	void Read(int& variable);
 	void Read(short& variable);
@@ -134,12 +140,14 @@ public:
 	void Read(DirectionTypes        & variable) { ReadEnum(variable); }
 	void Read(eVariableType         & variable) { ReadEnum(variable); }
 	void Read(GameType              & variable) { ReadEnum(variable); }
+	void Read(GameStateTypes        & variable) { ReadEnum(variable); }
 	void Read(InterfaceMessageTypes & variable) { ReadEnum(variable); }
 	void Read(MissionAITypes        & variable) { ReadEnum(variable); }
 	void Read(MissionTypes          & variable) { ReadEnum(variable); }
 	void Read(OrderTypes            & variable) { ReadEnum(variable); }
 	void Read(PlayerTypes           & variable) { ReadEnum(variable); }
 	void Read(PlotTypes             & variable) { ReadEnum(variable); }
+	void Read(ReplayMessageTypes    & variable) { ReadEnum(variable); }
 	void Read(SlotClaim             & variable) { ReadEnum(variable); }
 	void Read(SlotStatus            & variable) { ReadEnum(variable); }
 	void Read(TeamTypes             & variable) { ReadEnum(variable); }
@@ -208,6 +216,8 @@ public:
 	void Read(CvTalkingHeadMessage  & variable);
 	void Read(CvTradeRouteGroup     & variable);
 	void Read(FVariable             & variable);
+	void Read(CvRandom              & variable) { variable.read(*this); }
+	void Read(CvReplayMessage       & variable) { variable.read(*this); }
 	void Read(CvTradeRoute          & variable) { variable.read(*this); }
 	void Read(CvUnit                & variable) { variable.read(*this); }
 	void Read(CvUnitAI              & variable) { variable.read(*this); }
@@ -215,6 +225,7 @@ public:
 	void Read(IDInfo                & variable) { variable.read(*this); }
 	void Read(MissionData           & variable) { variable.read(*this); }
 	void Read(OrderData             & variable) { variable.read(*this); }
+	void Read(PlotExtraYield        & variable) { variable.read(*this); }
 	void Read(TradeData             & variable) { variable.read(*this); }
 
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
@@ -262,6 +273,7 @@ public:
 	template<enum T>
 	void Write(T variable);
 
+	void Write(unsigned long dVar);
 	void Write(double dVar);
 	void Write(int iVar);
 	void Write(short iVar);
@@ -325,6 +337,7 @@ public:
 	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
 	void Write(SavegameVariableTypes eType, CvTurnScoreMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
+	void Write(SavegameVariableTypes eType, CvRandom& rand);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array);
@@ -364,12 +377,14 @@ public:
 	void Write(DirectionTypes         variable) { WriteEnum(variable); }
 	void Write(eVariableType          variable) { WriteEnum(variable); }
 	void Write(GameType               variable) { WriteEnum(variable); }
+	void Write(GameStateTypes         variable) { WriteEnum(variable); }
 	void Write(InterfaceMessageTypes  variable) { WriteEnum(variable); }
 	void Write(MissionAITypes         variable) { WriteEnum(variable); }
 	void Write(MissionTypes           variable) { WriteEnum(variable); }
 	void Write(OrderTypes             variable) { WriteEnum(variable); }
 	void Write(PlayerTypes            variable) { WriteEnum(variable); }
 	void Write(PlotTypes              variable) { WriteEnum(variable); }
+	void Write(ReplayMessageTypes     variable) { WriteEnum(variable); }
 	void Write(SlotClaim              variable) { WriteEnum(variable); }
 	void Write(SlotStatus             variable) { WriteEnum(variable); }
 	void Write(TeamTypes              variable) { WriteEnum(variable); }
@@ -436,6 +451,8 @@ public:
 	void Write(CvTalkingHeadMessage &variable);
 	void Write(CvTradeRouteGroup    &variable);
 	void Write(FVariable            &variable);
+	void Write(CvRandom             &variable) { variable.write(*this); }
+	void Write(CvReplayMessage      &variable) { variable.write(*this); }
 	void Write(CvTradeRoute         &variable) { variable.write(*this); }
 	void Write(CvUnit               &variable) { variable.write(*this); }
 	void Write(CvUnitAI             &variable) { variable.write(*this); }
@@ -443,6 +460,7 @@ public:
 	void Write(IDInfo               &variable) { variable.write(*this); }
 	void Write(MissionData          &variable) { variable.write(*this); }
 	void Write(OrderData            &variable) { variable.write(*this); }
+	void Write(PlotExtraYield       &variable) { variable.write(*this); }
 	void Write(TradeData            &variable) { variable.write(*this); }
 
 	// get the amount of bytes needed to save the variable in question

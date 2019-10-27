@@ -14,7 +14,7 @@ class CvCity;
 class CvReplayMessage;
 class CvReplayInfo;
 
-typedef std::vector<const CvReplayMessage*> ReplayMessageList;
+typedef std::vector<CvReplayMessage*> ReplayMessageList;
 
 class CvGame
 {
@@ -28,7 +28,7 @@ public:
 	int iVictoriesSet;
 	// PatchMod: Victorys END
 	DllExport void init(HandicapTypes eHandicap);
-	DllExport void reset(HandicapTypes eHandicap, bool bConstructorCall = false);
+	DllExport void reset(HandicapTypes eHandicap = NO_HANDICAP, bool bConstructorCall = false);
 
 protected:
 
@@ -329,6 +329,10 @@ public:
 	DllExport virtual void write(FDataStreamBase* pStream);
 	DllExport virtual void writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer);
 
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+	void resetSavedData(HandicapTypes eHandicap, bool bConstructorCall);
+
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
 	virtual void AI_makeAssignWorkDirty() = 0;
@@ -439,23 +443,23 @@ protected:
 
 	CvString m_szScriptData;
 
-	int* m_aiRankPlayer;        // Ordered by rank...
-	int* m_aiPlayerScore;       // Ordered by player ID...
-	int* m_aiRankTeam;						// Ordered by rank...
-	int* m_aiTeamRank;						// Ordered by team ID...
-	int* m_aiTeamScore;						// Ordered by team ID...
+	EnumMap<PlayerTypes, int> m_em_iRankPlayer;        // Ordered by rank...
+	EnumMap<PlayerTypes, int> m_em_iPlayerScore;       // Ordered by player ID...
+	EnumMap<TeamTypes, int> m_em_iRankTeam;						// Ordered by rank...
+	EnumMap<TeamTypes, int> m_em_iTeamRank;						// Ordered by team ID...
+	EnumMap<TeamTypes, int> m_em_iTeamScore;						// Ordered by team ID...
 
-	int* m_paiUnitCreatedCount;
-	int* m_paiUnitClassCreatedCount;
-	int* m_paiBuildingClassCreatedCount;
+	EnumMap<UnitTypes, int> m_em_iUnitCreatedCount;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassCreatedCount;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassCreatedCount;
 
-	TeamTypes* m_aeFatherTeam;
-	int* m_aiFatherGameTurn;
+	EnumMapDefault<FatherTypes, TeamTypes, NO_TEAM> m_em_eFatherTeam;
+	EnumMapDefault<FatherTypes, int, -1> m_em_iFatherGameTurn;
 
-	bool* m_pabSpecialUnitValid;
-	bool* m_pabSpecialBuildingValid;
+	EnumMap<SpecialUnitTypes, bool> m_em_bSpecialUnitValid;
+	EnumMap<SpecialBuildingTypes, bool> m_em_bSpecialBuildingValid;
 
-	bool* m_pabUniqueGoodyValid; // R&R, ray, Goody Enhancement
+	EnumMap<GoodyTypes, bool> m_em_bUniqueGoodyValid; // R&R, ray, Goody Enhancement
 
 	std::vector<CvWString> m_aszDestroyedCities;
 	std::vector<CvWString> m_aszGreatGeneralBorn;

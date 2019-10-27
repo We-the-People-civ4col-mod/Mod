@@ -12,6 +12,8 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
 
+#include "CvSavegame.h"
+
 // Public Functions...
 
 CvDeal::CvDeal()
@@ -55,12 +57,7 @@ void CvDeal::reset(int iID, PlayerTypes eFirstPlayer, PlayerTypes eSecondPlayer)
 	//--------------------------------
 	// Uninit class
 	uninit();
-
-	m_iID = iID;
-	m_iInitialGameTurn = 0;
-
-	m_eFirstPlayer = eFirstPlayer;
-	m_eSecondPlayer = eSecondPlayer;
+	resetSavedData(iID, eFirstPlayer, eSecondPlayer);
 }
 
 
@@ -447,32 +444,18 @@ const CLinkList<TradeData>* CvDeal::getSecondTrades() const
 
 void CvDeal::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-	pStream->Write(m_iInitialGameTurn);
-
-	pStream->Write(m_eFirstPlayer);
-	pStream->Write(m_eSecondPlayer);
-
-	m_firstTrades.Write(pStream);
-	m_secondTrades.Write(pStream);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase); 
+	write(writer); 
+	writerbase.WriteFile(); 
 }
 
 void CvDeal::read(FDataStreamBase* pStream)
 {
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iInitialGameTurn);
-
-	pStream->Read((int*)&m_eFirstPlayer);
-	pStream->Read((int*)&m_eSecondPlayer);
-
-	m_firstTrades.Read(pStream);
-	m_secondTrades.Read(pStream);
+	read(reader);
 }
 
 // Protected Functions...

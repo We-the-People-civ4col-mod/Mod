@@ -5,7 +5,7 @@
 class CvReplayMessage
 {
 public:
-	CvReplayMessage(int iTurn, ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER);
+	CvReplayMessage(int iTurn = 0, ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER);
 	virtual ~CvReplayMessage();
 
 	const CvReplayMessage& operator=(const CvReplayMessage& other);
@@ -27,6 +27,11 @@ public:
 
 	void read(FDataStreamBase& stream);
 	void write(FDataStreamBase& stream) const;
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer) const;
+
+	void resetSavedData();
 
 private:
 	int m_iTurn;

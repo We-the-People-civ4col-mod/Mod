@@ -34,23 +34,6 @@
 
 CvGame::CvGame()
 {
-	m_aiRankPlayer = new int[MAX_PLAYERS];        // Ordered by rank...
-	m_aiPlayerScore = new int[MAX_PLAYERS];       // Ordered by player ID...
-	m_aiRankTeam = new int[MAX_TEAMS];						// Ordered by rank...
-	m_aiTeamRank = new int[MAX_TEAMS];						// Ordered by team ID...
-	m_aiTeamScore = new int[MAX_TEAMS];						// Ordered by team ID...
-
-	m_paiUnitCreatedCount = NULL;
-	m_paiUnitClassCreatedCount = NULL;
-	m_paiBuildingClassCreatedCount = NULL;
-	m_aeFatherTeam = NULL;
-	m_aiFatherGameTurn = NULL;
-
-	m_pabSpecialUnitValid = NULL;
-	m_pabSpecialBuildingValid = NULL;
-
-	m_pabUniqueGoodyValid = NULL; // R&R, ray, Goody Enhancement
-
 	m_pReplayInfo = NULL;
 
 	// PatchMod: Victorys START
@@ -63,12 +46,6 @@ CvGame::CvGame()
 CvGame::~CvGame()
 {
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiRankPlayer);
-	SAFE_DELETE_ARRAY(m_aiPlayerScore);
-	SAFE_DELETE_ARRAY(m_aiRankTeam);
-	SAFE_DELETE_ARRAY(m_aiTeamRank);
-	SAFE_DELETE_ARRAY(m_aiTeamScore);
 }
 
 void CvGame::init(HandicapTypes eHandicap)
@@ -470,17 +447,6 @@ void CvGame::regenerateMap()
 
 void CvGame::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiUnitCreatedCount);
-	SAFE_DELETE_ARRAY(m_paiUnitClassCreatedCount);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassCreatedCount);
-	SAFE_DELETE_ARRAY(m_aeFatherTeam);
-	SAFE_DELETE_ARRAY(m_aiFatherGameTurn);
-
-	SAFE_DELETE_ARRAY(m_pabSpecialUnitValid);
-	SAFE_DELETE_ARRAY(m_pabSpecialBuildingValid);
-
-	SAFE_DELETE_ARRAY(m_pabUniqueGoodyValid); // R&R, ray, Goody Enhancement
-
 	m_aszDestroyedCities.clear();
 	m_aszGreatGeneralBorn.clear();
 	m_aszGreatAdmiralBorn.clear(); // R&R, ray, Great Admirals - START
@@ -503,139 +469,18 @@ void CvGame::uninit()
 // Initializes data members that are serialized.
 void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
 
-	m_iEndTurnMessagesSent = 0;
-	m_iElapsedGameTurns = 0;
-	m_iStartTurn = 0;
-	m_iStartYear = 0;
-	m_iEstimateEndTurn = 0;
-	m_iTurnSlice = 0;
-	m_iCutoffSlice = 0;
-	m_iNumGameTurnActive = 0;
-	m_iNumCities = 0;
-	m_iMaxPopulation = 0;
-	m_iMaxLand = 0;
-	m_iMaxFather = 0;
-	m_iInitPopulation = 0;
-	m_iInitLand = 0;
-	m_iInitFather = 0;
-	m_iAIAutoPlay = 0;
+	resetSavedData(eHandicap,bConstructorCall);
 
 	m_uiInitialTime = 0;
 
-	m_bScoreDirty = false;
 	m_bDebugMode = false;
 	m_bDebugModeCache = false;
-	m_bFinalInitialized = false;
 	m_bPbemTurnSent = false;
-	m_bHotPbemBetweenTurns = false;
 	m_bPlayerOptionsSent = false;
-	m_bMaxTurnsExtended = false;
-
-	// R&R, ray, Correct Geographical Placement of Natives - START
-	m_bWBNorthAmericanNative = true;
-	m_bWBSouthAmericanNative = true;
-	m_bWBCentralAmericanNative = true;
-	// R&R, ray, Correct Geographical Placement of Natives - END
-
-	m_eHandicap = eHandicap;
-	m_ePausePlayer = NO_PLAYER;
-
-	m_eBarbarianPlayer = NO_PLAYER; // < JAnimals Mod Start >
-	m_eChurchPlayer = NO_PLAYER; // R&R, ray, the Church - START
-	
-	m_iBestLandUnitCombat = 1;
-	m_eWinner = NO_TEAM;
-	m_eVictory = NO_VICTORY;
-	m_eGameState = GAMESTATE_ON;
-
-	m_szScriptData = "";
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiRankPlayer[iI] = 0;
-		m_aiPlayerScore[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_aiRankTeam[iI] = 0;
-		m_aiTeamRank[iI] = 0;
-		m_aiTeamScore[iI] = 0;
-	}
-
-	if (!bConstructorCall)
-	{
-		FAssertMsg(m_paiUnitCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitCreatedCount");
-		m_paiUnitCreatedCount = new int[GC.getNumUnitInfos()];
-		for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
-		{
-			m_paiUnitCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiUnitClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitClassCreatedCount");
-		m_paiUnitClassCreatedCount = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiUnitClassCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiBuildingClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiBuildingClassCreatedCount");
-		m_paiBuildingClassCreatedCount = new int[GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_paiBuildingClassCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(0 < GC.getNumFatherInfos(), "GC.getNumFatherInfos() is not greater than zero in CvGame::reset");
-		FAssertMsg(m_aeFatherTeam==NULL, "about to leak memory, CvGame::m_aeFatherTeam");
-		FAssertMsg(m_aiFatherGameTurn==NULL, "about to leak memory, CvGame::m_aiFatherGameTurn");
-		m_aeFatherTeam = new TeamTypes[GC.getNumFatherInfos()];
-		m_aiFatherGameTurn = new int[GC.getNumFatherInfos()];
-		for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
-		{
-			m_aeFatherTeam[iI] = NO_TEAM;
-			m_aiFatherGameTurn[iI] = -1;
-		}
-
-		FAssertMsg(m_pabSpecialUnitValid==NULL, "about to leak memory, CvGame::m_pabSpecialUnitValid");
-		m_pabSpecialUnitValid = new bool[GC.getNumSpecialUnitInfos()];
-		for (iI = 0; iI < GC.getNumSpecialUnitInfos(); iI++)
-		{
-			m_pabSpecialUnitValid[iI] = false;
-		}
-
-		FAssertMsg(m_pabSpecialBuildingValid==NULL, "about to leak memory, CvGame::m_pabSpecialBuildingValid");
-		m_pabSpecialBuildingValid = new bool[GC.getNumSpecialBuildingInfos()];
-		for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-		{
-			m_pabSpecialBuildingValid[iI] = false;
-		}
-
-		// R&R, ray, Goody Enhancement - START
-		FAssertMsg(m_pabUniqueGoodyValid==NULL, "about to leak memory, CvGame::m_pabUniqueGoodyValid");
-		m_pabUniqueGoodyValid = new bool[GC.getNumGoodyInfos()];
-		for (iI = 0; iI < GC.getNumGoodyInfos(); iI++)
-		{
-			m_pabUniqueGoodyValid[iI] = false;
-		}
-		// R&R, ray, Goody Enhancement - END
-	}
-
-	m_deals.removeAll();
-
-	m_mapRand.reset();
-	m_sorenRand.reset();
-
-	m_iNumSessions = 1;
-
-	m_iNumCultureVictoryCities = 0;
-	m_eCultureVictoryCultureLevel = NO_CULTURELEVEL;
 
 	if (!bConstructorCall)
 	{
@@ -4915,7 +4760,7 @@ PlayerTypes CvGame::getRankPlayer(int iRank)
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_PLAYERS, "iRank is expected to be within maximum bounds (invalid Rank)");
-	return (PlayerTypes)m_aiRankPlayer[iRank];
+	return (PlayerTypes)m_em_iRankPlayer.get((PlayerTypes)iRank);
 }
 
 
@@ -4926,7 +4771,7 @@ void CvGame::setRankPlayer(int iRank, PlayerTypes ePlayer)
 
 	if (getRankPlayer(iRank) != ePlayer)
 	{
-		m_aiRankPlayer[iRank] = ePlayer;
+		m_em_iRankPlayer.set((PlayerTypes)iRank, ePlayer);
 
 		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
 	}
@@ -4936,7 +4781,7 @@ int CvGame::getPlayerScore(PlayerTypes ePlayer)
 {
 	FAssertMsg(ePlayer >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(ePlayer < MAX_PLAYERS, "ePlayer is expected to be within maximum bounds (invalid Index)");
-	return m_aiPlayerScore[ePlayer];
+	return m_em_iPlayerScore.get(ePlayer);
 }
 
 
@@ -4947,7 +4792,7 @@ void CvGame::setPlayerScore(PlayerTypes ePlayer, int iScore)
 
 	if (getPlayerScore(ePlayer) != iScore)
 	{
-		m_aiPlayerScore[ePlayer] = iScore;
+		m_em_iPlayerScore.set(ePlayer, iScore);
 		FAssert(getPlayerScore(ePlayer) >= 0);
 
 		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
@@ -4959,7 +4804,7 @@ TeamTypes CvGame::getRankTeam(int iRank)
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_TEAMS, "iRank is expected to be within maximum bounds (invalid Index)");
-	return (TeamTypes)m_aiRankTeam[iRank];
+	return (TeamTypes)m_em_iRankTeam.get((TeamTypes)iRank);
 }
 
 
@@ -4970,7 +4815,7 @@ void CvGame::setRankTeam(int iRank, TeamTypes eTeam)
 
 	if (getRankTeam(iRank) != eTeam)
 	{
-		m_aiRankTeam[iRank] = eTeam;
+		m_em_iRankTeam.set((TeamTypes)iRank, eTeam);
 
 		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
 	}
@@ -4981,7 +4826,7 @@ int CvGame::getTeamRank(TeamTypes eTeam)
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	return m_aiTeamRank[eTeam];
+	return m_em_iTeamRank.get(eTeam);
 }
 
 
@@ -4989,7 +4834,7 @@ void CvGame::setTeamRank(TeamTypes eTeam, int iRank)
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	m_aiTeamRank[eTeam] = iRank;
+	m_em_iTeamRank.set(eTeam, iRank);
 	FAssert(getTeamRank(eTeam) >= 0);
 }
 
@@ -4998,7 +4843,7 @@ int CvGame::getTeamScore(TeamTypes eTeam) const
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	return m_aiTeamScore[eTeam];
+	return m_em_iTeamScore.get(eTeam);
 }
 
 
@@ -5006,7 +4851,7 @@ void CvGame::setTeamScore(TeamTypes eTeam, int iScore)
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	m_aiTeamScore[eTeam] = iScore;
+	m_em_iTeamScore.set(eTeam, iScore);
 	FAssert(getTeamScore(eTeam) >= 0);
 }
 
@@ -5051,7 +4896,7 @@ int CvGame::getUnitCreatedCount(UnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiUnitCreatedCount[eIndex];
+	return m_em_iUnitCreatedCount.get(eIndex);
 }
 
 
@@ -5059,7 +4904,7 @@ void CvGame::incrementUnitCreatedCount(UnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiUnitCreatedCount[eIndex]++;
+	m_em_iUnitCreatedCount.add(eIndex, 1);
 }
 
 
@@ -5067,28 +4912,28 @@ int CvGame::getUnitClassCreatedCount(UnitClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiUnitClassCreatedCount[eIndex];
+	return m_em_iUnitClassCreatedCount.get(eIndex);
 }
 
 void CvGame::incrementUnitClassCreatedCount(UnitClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiUnitClassCreatedCount[eIndex]++;
+	m_em_iUnitClassCreatedCount.add(eIndex, 1);
 }
 
 int CvGame::getBuildingClassCreatedCount(BuildingClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassCreatedCount[eIndex];
+	return m_em_iBuildingClassCreatedCount.get(eIndex);
 }
 
 void CvGame::incrementBuildingClassCreatedCount(BuildingClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiBuildingClassCreatedCount[eIndex]++;
+	m_em_iBuildingClassCreatedCount.add(eIndex, 1);
 }
 
 bool CvGame::isVictoryValid(VictoryTypes eIndex) const
@@ -5102,7 +4947,7 @@ bool CvGame::isSpecialUnitValid(SpecialUnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabSpecialUnitValid[eIndex];
+	return m_em_bSpecialUnitValid.get(eIndex);
 }
 
 
@@ -5110,7 +4955,7 @@ void CvGame::makeSpecialUnitValid(SpecialUnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_pabSpecialUnitValid[eIndex] = true;
+	m_em_bSpecialUnitValid.set(eIndex, true);
 }
 
 
@@ -5118,7 +4963,7 @@ bool CvGame::isSpecialBuildingValid(SpecialBuildingTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabSpecialBuildingValid[eIndex];
+	return m_em_bSpecialBuildingValid.get(eIndex);
 }
 
 
@@ -5127,9 +4972,9 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (!m_pabSpecialBuildingValid[eIndex])
+	if (!m_em_bSpecialBuildingValid.get(eIndex))
 	{
-		m_pabSpecialBuildingValid[eIndex] = true;
+		m_em_bSpecialBuildingValid.set(eIndex, true);
 
 
 		if (bAnnounce)
@@ -5153,7 +4998,7 @@ bool CvGame::isUniqueGoodyValid(GoodyTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumGoodyInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabUniqueGoodyValid[eIndex];
+	return m_em_bUniqueGoodyValid.get(eIndex);
 }
 
 
@@ -5161,7 +5006,7 @@ void CvGame::setUniqueGoodyValid(GoodyTypes eIndex, bool bValid)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumGoodyInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_pabUniqueGoodyValid[eIndex] = bValid;
+	m_em_bUniqueGoodyValid.set(eIndex, bValid);
 }
 // R&R, ray, Goody Enhancement - END
 
@@ -6782,348 +6627,11 @@ uint CvGame::getNumReplayMessages() const
 
 void CvGame::read(FDataStreamBase* pStream)
 {
-	int iI;
-
-	reset(NO_HANDICAP);
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	/// one/two city plot radius
-	int iDefineFlags = 0;
-	if (uiFlag > 1)
-	{
-		pStream->Read(&iDefineFlags);
-	}
-	if (iDefineFlags != getDefineFlagsForDLL())
-	{
-		MessageBox(0, getCompileFlags(iDefineFlags).c_str(), "ERROR", 0);
-	}
-	// city radius end
-
-	pStream->Read(&m_iEndTurnMessagesSent);
-	pStream->Read(&m_iElapsedGameTurns);
-	pStream->Read(&m_iStartTurn);
-	pStream->Read(&m_iStartYear);
-	pStream->Read(&m_iEstimateEndTurn);
-	pStream->Read(&m_iTurnSlice);
-	pStream->Read(&m_iCutoffSlice);
-	pStream->Read(&m_iNumGameTurnActive);
-	pStream->Read(&m_iNumCities);
-	pStream->Read(&m_iMaxPopulation);
-	pStream->Read(&m_iMaxLand);
-	pStream->Read(&m_iMaxFather);
-	pStream->Read(&m_iInitPopulation);
-	pStream->Read(&m_iInitLand);
-	pStream->Read(&m_iInitFather);
-	pStream->Read(&m_iAIAutoPlay);
-	pStream->Read(&m_iBestLandUnitCombat);
-
-	// m_uiInitialTime not saved
-
-	pStream->Read(&m_bScoreDirty);
-	// m_bDebugMode not saved
-	pStream->Read(&m_bFinalInitialized);
-	// m_bPbemTurnSent not saved
-	pStream->Read(&m_bHotPbemBetweenTurns);
-	// m_bPlayerOptionsSent not saved
-	if (uiFlag > 0)
-	{
-		pStream->Read(&m_bMaxTurnsExtended);
-	}
-
-	// R&R, ray, Correct Geographical Placement of Natives - START
-	pStream->Read(&m_bWBNorthAmericanNative);
-	pStream->Read(&m_bWBSouthAmericanNative);
-	pStream->Read(&m_bWBCentralAmericanNative);
-	// R&R, ray, Correct Geographical Placement of Natives - END
-
-	pStream->Read((int*)&m_eHandicap);
-	pStream->Read((int*)&m_ePausePlayer);
-
-	pStream->Read((int*)&m_eBarbarianPlayer); // < JAnimals Mod Start >
-	pStream->Read((int*)&m_eChurchPlayer); // R&R, ray, the Church - START
-	
-	pStream->Read((int*)&m_eWinner);
-	pStream->Read((int*)&m_eVictory);
-	pStream->Read((int*)&m_eGameState);
-
-	pStream->ReadString(m_szScriptData);
-
-	pStream->Read(MAX_PLAYERS, m_aiRankPlayer);
-	pStream->Read(MAX_PLAYERS, m_aiPlayerScore);
-	pStream->Read(MAX_TEAMS, m_aiRankTeam);
-	pStream->Read(MAX_TEAMS, m_aiTeamRank);
-	pStream->Read(MAX_TEAMS, m_aiTeamScore);
-
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Read(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
-	pStream->Read(GC.getNumFatherInfos(), m_aiFatherGameTurn);
-
-	pStream->Read(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
-
-	pStream->Read(GC.getNumGoodyInfos(), m_pabUniqueGoodyValid); // R&R, ray, Goody Enhancement
-
-	{
-		CvWString szBuffer;
-		uint iSize;
-
-		m_aszDestroyedCities.clear();
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			pStream->ReadString(szBuffer);
-			m_aszDestroyedCities.push_back(szBuffer);
-		}
-
-		m_aszGreatGeneralBorn.clear();
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			pStream->ReadString(szBuffer);
-			m_aszGreatGeneralBorn.push_back(szBuffer);
-		}
-
-		// R&R, ray, Great Admirals - START
-		m_aszGreatAdmiralBorn.clear();
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			pStream->ReadString(szBuffer);
-			m_aszGreatAdmiralBorn.push_back(szBuffer);
-		}
-		// R&R, ray, Great Admirals - END
-
-		// TAC - Ship Names - Ray - Start
-		m_aszShipNamed.clear();
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			pStream->ReadString(szBuffer);
-			m_aszShipNamed.push_back(szBuffer);
-		}
-		// TAC - Ship Names - Ray - END
-	}
-
-	ReadStreamableFFreeListTrashArray(m_deals, pStream);
-
-	m_mapRand.read(pStream);
-	m_sorenRand.read(pStream);
-
-	{
-		clearReplayMessageMap();
-		ReplayMessageList::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (ReplayMessageList::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvReplayMessage* pMessage = new CvReplayMessage(0);
-			if (NULL != pMessage)
-			{
-				pMessage->read(*pStream);
-			}
-			m_listReplayMessages.push_back(pMessage);
-		}
-	}
-	// m_pReplayInfo not saved
-
-	pStream->Read(&m_iNumSessions);
-	if (!isNetworkMultiPlayer())
-	{
-		++m_iNumSessions;
-	}
-
-	{
-		int iSize;
-		m_aPlotExtraYields.clear();
-		pStream->Read(&iSize);
-		for (int i = 0; i < iSize; ++i)
-		{
-			PlotExtraYield kPlotYield;
-			kPlotYield.read(pStream);
-			m_aPlotExtraYields.push_back(kPlotYield);
-		}
-	}
-
-	{
-		int iSize;
-		m_aeInactiveTriggers.clear();
-		pStream->Read(&iSize);
-		for (int i = 0; i < iSize; ++i)
-		{
-			int iTrigger;
-			pStream->Read(&iTrigger);
-			m_aeInactiveTriggers.push_back((EventTriggerTypes)iTrigger);
-		}
-	}
-
-	// Get the active player information from the initialization structure
-	if (!isGameMultiPlayer())
-	{
-		for (iI = 0; iI < MAX_PLAYERS; iI++)
-		{
-			if (GET_PLAYER((PlayerTypes)iI).isHuman())
-			{
-				setActivePlayer((PlayerTypes)iI);
-				break;
-			}
-		}
-		addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getActivePlayer(), gDLL->getText("TXT_KEY_MISC_RELOAD", m_iNumSessions));
-	}
-
-	if (isOption(GAMEOPTION_NEW_RANDOM_SEED))
-	{
-		if (!isNetworkMultiPlayer())
-		{
-			m_sorenRand.reseed(timeGetTime());
-		}
-	}
-
-	pStream->Read(&m_iNumCultureVictoryCities);
-	pStream->Read(&m_eCultureVictoryCultureLevel);
 }
 
 
 void CvGame::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=2;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	/// one/two city plot radiu
-	pStream->Write(getDefineFlagsForDLL());
-	// city radius end
-
-	pStream->Write(m_iEndTurnMessagesSent);
-	pStream->Write(m_iElapsedGameTurns);
-	pStream->Write(m_iStartTurn);
-	pStream->Write(m_iStartYear);
-	pStream->Write(m_iEstimateEndTurn);
-	pStream->Write(m_iTurnSlice);
-	pStream->Write(m_iCutoffSlice);
-	pStream->Write(m_iNumGameTurnActive);
-	pStream->Write(m_iNumCities);
-	pStream->Write(m_iMaxPopulation);
-	pStream->Write(m_iMaxLand);
-	pStream->Write(m_iMaxFather);
-	pStream->Write(m_iInitPopulation);
-	pStream->Write(m_iInitLand);
-	pStream->Write(m_iInitFather);
-	pStream->Write(m_iAIAutoPlay);
-	pStream->Write(m_iBestLandUnitCombat);
-
-	// m_uiInitialTime not saved
-
-	pStream->Write(m_bScoreDirty);
-	// m_bDebugMode not saved
-	pStream->Write(m_bFinalInitialized);
-	// m_bPbemTurnSent not saved
-	pStream->Write(m_bHotPbemBetweenTurns);
-	// m_bPlayerOptionsSent not saved
-	pStream->Write(m_bMaxTurnsExtended);
-
-	// R&R, ray, Correct Geographical Placement of Natives - START
-	pStream->Write(m_bWBNorthAmericanNative);
-	pStream->Write(m_bWBSouthAmericanNative);
-	pStream->Write(m_bWBCentralAmericanNative);
-	// R&R, ray, Correct Geographical Placement of Natives - End
-
-	pStream->Write(m_eHandicap);
-	pStream->Write(m_ePausePlayer);
-	
-	pStream->Write(m_eBarbarianPlayer); // < JAnimals Mod Start >
-	pStream->Write(m_eChurchPlayer); // R&R, ray, the Church - START
-
-	pStream->Write(m_eWinner);
-	pStream->Write(m_eVictory);
-	pStream->Write(m_eGameState);
-
-	pStream->WriteString(m_szScriptData);
-
-	pStream->Write(MAX_PLAYERS, m_aiRankPlayer);
-	pStream->Write(MAX_PLAYERS, m_aiPlayerScore);
-	pStream->Write(MAX_TEAMS, m_aiRankTeam);
-	pStream->Write(MAX_TEAMS, m_aiTeamRank);
-	pStream->Write(MAX_TEAMS, m_aiTeamScore);
-
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Write(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
-	pStream->Write(GC.getNumFatherInfos(), m_aiFatherGameTurn);
-
-	pStream->Write(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Write(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
-
-	pStream->Write(GC.getNumGoodyInfos(), m_pabUniqueGoodyValid); // R&R, ray, Goody Enhancement
-
-	{
-		std::vector<CvWString>::iterator it;
-
-		pStream->Write(m_aszDestroyedCities.size());
-		for (it = m_aszDestroyedCities.begin(); it != m_aszDestroyedCities.end(); ++it)
-		{
-			pStream->WriteString(*it);
-		}
-
-		pStream->Write(m_aszGreatGeneralBorn.size());
-		for (it = m_aszGreatGeneralBorn.begin(); it != m_aszGreatGeneralBorn.end(); ++it)
-		{
-			pStream->WriteString(*it);
-		}
-
-		// R&R, ray, Great Admirals - START
-		pStream->Write(m_aszGreatAdmiralBorn.size());
-		for (it = m_aszGreatAdmiralBorn.begin(); it != m_aszGreatAdmiralBorn.end(); ++it)
-		{
-			pStream->WriteString(*it);
-		}
-		// R&R, ray, Great Admirals - END
-
-		// TAC - Ship Names - Ray - Start
-		pStream->Write(m_aszShipNamed.size());
-		for (it = m_aszShipNamed.begin(); it != m_aszShipNamed.end(); ++it)
-		{
-			pStream->WriteString(*it);
-		}
-		// TAC - Ship Names - Ray - END
-	}
-
-	WriteStreamableFFreeListTrashArray(m_deals, pStream);
-
-	m_mapRand.write(pStream);
-	m_sorenRand.write(pStream);
-
-	ReplayMessageList::_Alloc::size_type iSize = m_listReplayMessages.size();
-	pStream->Write(iSize);
-	ReplayMessageList::const_iterator it;
-	for (it = m_listReplayMessages.begin(); it != m_listReplayMessages.end(); ++it)
-	{
-		const CvReplayMessage* pMessage = *it;
-		if (NULL != pMessage)
-		{
-			pMessage->write(*pStream);
-		}
-	}
-	// m_pReplayInfo not saved
-
-	pStream->Write(m_iNumSessions);
-
-	pStream->Write(m_aPlotExtraYields.size());
-	for (std::vector<PlotExtraYield>::iterator it = m_aPlotExtraYields.begin(); it != m_aPlotExtraYields.end(); ++it)
-	{
-		(*it).write(pStream);
-	}
-
-	pStream->Write(m_aeInactiveTriggers.size());
-	for (std::vector<EventTriggerTypes>::iterator it = m_aeInactiveTriggers.begin(); it != m_aeInactiveTriggers.end(); ++it)
-	{
-		pStream->Write(*it);
-	}
-
-	pStream->Write(m_iNumCultureVictoryCities);
-	pStream->Write(m_eCultureVictoryCultureLevel);
 }
 
 void CvGame::writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer)
@@ -7468,13 +6976,13 @@ bool CvGame::isBuildingEverActive(BuildingTypes eBuilding) const
 TeamTypes CvGame::getFatherTeam(FatherTypes eFather) const
 {
 	FAssert(eFather >= 0 && eFather < GC.getNumFatherInfos());
-	return m_aeFatherTeam[eFather];
+	return m_em_eFatherTeam.get(eFather);
 }
 
 int CvGame::getFatherGameTurn(FatherTypes eFather) const
 {
 	FAssert(eFather >= 0 && eFather < GC.getNumFatherInfos());
-	return m_aiFatherGameTurn[eFather];
+	return m_em_iFatherGameTurn.get(eFather);
 }
 
 void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
@@ -7493,7 +7001,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 			bFirstTime = false;
 		}
 
-		m_aeFatherTeam[eFather] = eTeam;
+		m_em_eFatherTeam.set(eFather, eTeam);
 
 		if (getFatherTeam(eFather) != NO_TEAM)
 		{
@@ -7501,7 +7009,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 
 			if (bFirstTime)
 			{
-				m_aiFatherGameTurn[eFather] = getGameTurn();
+				m_em_iFatherGameTurn.set(eFather, getGameTurn());
 
 				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 				{
