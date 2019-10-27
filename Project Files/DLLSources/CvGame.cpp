@@ -482,12 +482,6 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	m_bPbemTurnSent = false;
 	m_bPlayerOptionsSent = false;
 
-	m_deals.removeAll();
-
-	m_mapRand.reset();
-	m_sorenRand.reset();
-
-
 	if (!bConstructorCall)
 	{
 		AI_reset();
