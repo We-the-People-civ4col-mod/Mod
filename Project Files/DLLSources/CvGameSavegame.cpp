@@ -325,12 +325,7 @@ void CvGame::read(CvSavegameReader reader)
 		case GameSave_mapRand: reader.Read(m_mapRand); break;
 		case GameSave_sorenRand: reader.Read(m_sorenRand); break;
 		case GameSave_listReplayMessages: reader.Read(m_listReplayMessages); break;
-		case GameSave_NumSessions: reader.Read(m_iNumSessions);
-			if (!isNetworkMultiPlayer())
-			{
-				++m_iNumSessions;
-			} 
-			break;
+		case GameSave_NumSessions: reader.Read(m_iNumSessions); break;
 		case GameSave_PlotExtraYields: reader.Read(m_aPlotExtraYields); break;
 		case GameSave_InactiveTriggers: reader.Read(m_aeInactiveTriggers); break;
 		case GameSave_NumCultureVictoryCities: reader.Read(m_iNumCultureVictoryCities); break;
@@ -338,6 +333,11 @@ void CvGame::read(CvSavegameReader reader)
 		}
 		
 	}
+
+	if (!isNetworkMultiPlayer())
+	{
+		++m_iNumSessions;
+	} 
 	// Get the active player information from the initialization structure
 	if (!isGameMultiPlayer())
 	{
