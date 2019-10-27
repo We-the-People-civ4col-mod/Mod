@@ -51,8 +51,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DLLSources\CvDealSavegame.cpp" />
     <ClCompile Include="DLLSources\CvDiploParametersSavegames.cpp" />
+    <ClCompile Include="DLLSources\CvGameAISavegame.cpp" />
+    <ClCompile Include="DLLSources\CvGameSavegame.cpp" />
     <ClCompile Include="DLLSources\CvPopupInfoSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvReplayMessageSavegame.cpp" />
     <ClCompile Include="DLLSources\CvSelectionGroupAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvSelectionGroupSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTalkingHeadMessageSavegame.cpp" />
