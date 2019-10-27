@@ -3984,7 +3984,7 @@ void CvUnit::tradeYield()
 	else if(GET_PLAYER(getOwnerINLINE()).isHuman()) //we're human contacting them
 	{
 		CvDiploParameters* pDiplo = new CvDiploParameters(eOtherPlayer);
-		pDiplo->setDiploComment((DiploCommentTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_TRADING"));
+		pDiplo->setDiploComment((DiplomacyTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_TRADING"));
 		pDiplo->setTransport(getIDInfo());
 		pDiplo->setCity(plot()->getPlotCity()->getIDInfo());
 		// R&R, ray, Bargaining - Start
@@ -4004,7 +4004,7 @@ void CvUnit::tradeYield()
 	else if(GET_PLAYER(eOtherPlayer).isHuman()) //they're human contacting us
 	{
 		CvDiploParameters* pDiplo = new CvDiploParameters(getOwnerINLINE());
-		pDiplo->setDiploComment((DiploCommentTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_TRADING"));
+		pDiplo->setDiploComment((DiplomacyTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_TRADING"));
 		pDiplo->setTransport(getIDInfo());
 		gDLL->beginDiplomacy(pDiplo, getOwnerINLINE());
 	}
@@ -4717,7 +4717,7 @@ void CvUnit::learn()
 		FAssert(eUnitType != NO_UNIT);
 
 		CvDiploParameters* pDiplo = new CvDiploParameters(eNativePlayer);
-		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_LIVE_AMONG_NATIVES"));
+		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_LIVE_AMONG_NATIVES"));
 		pDiplo->addDiploCommentVariable(pCity->getNameKey());
 		pDiplo->addDiploCommentVariable(GC.getUnitInfo(eUnitType).getTextKeyWide());
 		pDiplo->setData(getID());
@@ -4923,7 +4923,7 @@ void CvUnit::kingTransport(bool bSkipPopup)
 	if (isHuman() && !bSkipPopup)
 	{
 		CvDiploParameters* pDiplo = new CvDiploParameters(GET_PLAYER(getOwnerINLINE()).getParent());
-		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_TREASURE_TRANSPORT"));
+		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_TREASURE_TRANSPORT"));
 		pDiplo->setData(getID());
 		int iCommission = GC.getDefineINT("KING_TRANSPORT_TREASURE_COMISSION");
 		pDiplo->addDiploCommentVariable(iCommission);
@@ -5418,7 +5418,7 @@ void CvUnit::speakWithChief()
 		}
 
 		CvDiploParameters* pDiplo = new CvDiploParameters(pCity->getOwnerINLINE());
-		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CHIEF_GOODY"));
+		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CHIEF_GOODY"));
 		pDiplo->addDiploCommentVariable(pCity->getNameKey());
 		pDiplo->addDiploCommentVariable(szExpertText);
 		pDiplo->addDiploCommentVariable(szYieldText);
@@ -6066,15 +6066,15 @@ bool CvUnit::found()
 		int iFoodDifference = plot()->calculateNatureYield(YIELD_FOOD, getTeam(), true) - GC.getFOOD_CONSUMPTION_PER_POPULATION();
 		bool bInland = !plot()->isCoastalLand(GC.getDefineINT("MIN_WATER_SIZE_FOR_OCEAN"));
 
-		DiploCommentTypes eDiploComment = NO_DIPLOCOMMENT;
+		DiplomacyTypes eDiploComment = NO_DIPLOMACY;
 		if (iFoodDifference < 0 && kPlayer.shouldDisplayFeatPopup(FEAT_CITY_NO_FOOD))
 		{
-			eDiploComment = (DiploCommentTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY_NO_FOOD");
+			eDiploComment = (DiplomacyTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY_NO_FOOD");
 			kPlayer.setFeatAccomplished(FEAT_CITY_NO_FOOD, true);
 		}
 		else if (bInland && kPlayer.shouldDisplayFeatPopup(FEAT_CITY_INLAND))
 		{
-			eDiploComment = (DiploCommentTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY_INLAND");
+			eDiploComment = (DiplomacyTypes) GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY_INLAND");
 			kPlayer.setFeatAccomplished(FEAT_CITY_INLAND, true);
 		}
 
@@ -6129,16 +6129,16 @@ bool CvUnit::doFoundCheckNatives()
 			CvDiploParameters* pDiplo = new CvDiploParameters(eNativeOwner);
 			if (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
 			{
-				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_FIRST_CITY"));
+				pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_FIRST_CITY"));
 			}
 			else if(iCost > GET_PLAYER(getOwnerINLINE()).getGold())
 			{
-				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY_CANT_AFFORD"));
+				pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY_CANT_AFFORD"));
 				pDiplo->addDiploCommentVariable(iCost);
 			}
 			else
 			{
-				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY"));
+				pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FOUND_CITY"));
 				pDiplo->addDiploCommentVariable(iCost);
 			}
 			pDiplo->setData(getID());
@@ -6196,12 +6196,12 @@ bool CvUnit::doAcquireCheckNatives()
 			
 			if(iCost > GET_PLAYER(getOwnerINLINE()).getGold())
 			{
-				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_CITY_CANT_AFFORD"));
+				pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_CITY_CANT_AFFORD"));
 				pDiplo->addDiploCommentVariable(iCost);
 			}
 			else
 			{
-				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_CITY"));
+				pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_CITY"));
 				pDiplo->addDiploCommentVariable(iCost);
 			}
 		
