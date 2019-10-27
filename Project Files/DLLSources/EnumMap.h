@@ -567,18 +567,26 @@ private:
 			writer.Write(iBuffer);
 		}
 
-		byte iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+		byte iBuffer = 0;
 
 		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
 		{
 			const byte iBlockIndex = (eLoop - eStart) & ENUMMAP_BITMASK_8_BIT;
-			if (iBlockIndex == 0)
-			{
-				// write next block
-				writer.Write(iBuffer);
-				iBuffer = (byte)BOOL_BLOCK_DEFAULT;
+			if(get(eLoop)){
+				SetBit(iBuffer,iBlockIndex);
 			}
-			SetBit(iBuffer, get(eLoop));
+			if (iBlockIndex == ENUMMAP_BITMASK_8_BIT)
+			{
+				 //now 8 bits are set, -> write to file
+				writer.Write(iBuffer);
+				iBuffer = 0;
+			}
+		}
+		// there might be an unfinished byte, -> write to file
+		const byte iBlockIndex = (eEnd - eStart) & ENUMMAP_BITMASK_8_BIT;
+		if(iBlockIndex != ENUMMAP_BITMASK_8_BIT)
+		{
+			writer.Write(iBuffer);
 		}
 	}
 };
