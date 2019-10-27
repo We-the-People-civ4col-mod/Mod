@@ -75,6 +75,20 @@ enum SavegameVariableTypes
 	GameSave_GameState,
 	GameSave_ScriptData,
 
+	GameSave_RankPlayer,
+	GameSave_PlayerScore,
+	GameSave_RankTeam,
+	GameSave_TeamRank,
+	GameSave_TeamScore,
+	GameSave_UnitCreatedCount,
+	GameSave_UnitClassCreatedCount,
+	GameSave_BuildingClassCreatedCount,
+	GameSave_FatherTeam,
+	GameSave_FatherGameTurn,
+	GameSave_SpecialUnitValid,
+	GameSave_SpecialBuildingValid,
+	GameSave_UniqueGoodyValid,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -115,6 +129,20 @@ const char* getSavedEnumNameGame(SavegameVariableTypes eType)
 	case GameSave_Victory: return "GameSave_Victory";
 	case GameSave_GameState: return "GameSave_GameState";
 	case GameSave_ScriptData: return "GameSave_ScriptData";
+
+	case GameSave_RankPlayer: return "GameSave_RankPlayer";
+	case GameSave_PlayerScore: return "GameSave_PlayerScore";
+	case GameSave_RankTeam: return "GameSave_RankTeam";
+	case GameSave_TeamRank: return "GameSave_TeamRank";
+	case GameSave_TeamScore: return "GameSave_TeamScore";
+	case GameSave_UnitCreatedCount: return "GameSave_UnitCreatedCount";
+	case GameSave_UnitClassCreatedCount: return "GameSave_UnitClassCreatedCount";
+	case GameSave_BuildingClassCreatedCount: return "GameSave_BuildingClassCreatedCount";
+	case GameSave_FatherTeam: return "GameSave_FatherTeam";
+	case GameSave_FatherGameTurn: return "GameSave_FatherGameTurn";
+	case GameSave_SpecialUnitValid: return "GameSave_SpecialUnitValid";
+	case GameSave_SpecialBuildingValid: return "GameSave_SpecialBuildingValid";
+	case GameSave_UniqueGoodyValid: return "GameSave_UniqueGoodyValid";
 
 	}
 	return "";
@@ -160,6 +188,20 @@ void CvGame::resetSavedData(HandicapTypes eHandicap, bool bConstructorCall)
 	m_eVictory = defaultVictory;
 	m_eGameState = defaultGameState;
 	m_szScriptData.clear();
+
+	m_em_iRankPlayer.reset();
+	m_em_iPlayerScore.reset();
+	m_em_iRankTeam.reset();
+	m_em_iTeamRank.reset();
+	m_em_iTeamScore.reset();
+	m_em_iUnitCreatedCount.reset();
+	m_em_iUnitClassCreatedCount.reset();
+	m_em_iBuildingClassCreatedCount.reset();
+	m_em_eFatherTeam.reset();
+	m_em_iFatherGameTurn.reset();
+	m_em_bSpecialUnitValid.reset();
+	m_em_bSpecialBuildingValid.reset();
+	m_em_bUniqueGoodyValid.reset();
 }
 
 void CvGame::read(CvSavegameReader reader)
@@ -215,6 +257,20 @@ void CvGame::read(CvSavegameReader reader)
 		case GameSave_GameState: reader.Read(m_eGameState); break;
 		case GameSave_ScriptData: reader.Read(m_szScriptData); break;
 
+		case GameSave_RankPlayer: reader.Read(m_em_iRankPlayer); break;
+		case GameSave_PlayerScore: reader.Read(m_em_iPlayerScore); break;
+		case GameSave_RankTeam: reader.Read(m_em_iRankTeam); break;
+		case GameSave_TeamRank: reader.Read(m_em_iTeamRank); break;
+		case GameSave_TeamScore: reader.Read(m_em_iTeamScore); break;
+		case GameSave_UnitCreatedCount: reader.Read(m_em_iUnitCreatedCount); break;
+		case GameSave_UnitClassCreatedCount: reader.Read(m_em_iUnitClassCreatedCount); break;
+		case GameSave_BuildingClassCreatedCount: reader.Read(m_em_iBuildingClassCreatedCount); break;
+		case GameSave_FatherTeam: reader.Read(m_em_eFatherTeam); break;
+		case GameSave_FatherGameTurn: reader.Read(m_em_iFatherGameTurn); break;
+		case GameSave_SpecialUnitValid: reader.Read(m_em_bSpecialUnitValid); break;
+		case GameSave_SpecialBuildingValid: reader.Read(m_em_bSpecialBuildingValid); break;
+		case GameSave_UniqueGoodyValid: reader.Read(m_em_bUniqueGoodyValid); break;
+
 		}
 	}
 }
@@ -261,6 +317,20 @@ void CvGame::write(CvSavegameWriter writer)
 	writer.Write(GameSave_Victory, m_eVictory, defaultVictory);
 	writer.Write(GameSave_GameState, m_eGameState, defaultGameState);
 	writer.Write(GameSave_ScriptData, m_szScriptData);
+
+	writer.Write(GameSave_RankPlayer, m_em_iRankPlayer);
+	writer.Write(GameSave_PlayerScore, m_em_iPlayerScore);
+	writer.Write(GameSave_RankTeam, m_em_iRankTeam);
+	writer.Write(GameSave_TeamRank, m_em_iTeamRank);
+	writer.Write(GameSave_TeamScore, m_em_iTeamScore);
+	writer.Write(GameSave_UnitCreatedCount, m_em_iUnitCreatedCount);
+	writer.Write(GameSave_UnitClassCreatedCount, m_em_iUnitClassCreatedCount);
+	writer.Write(GameSave_BuildingClassCreatedCount, m_em_iBuildingClassCreatedCount);
+	writer.Write(GameSave_FatherTeam, m_em_eFatherTeam);
+	writer.Write(GameSave_FatherGameTurn, m_em_iFatherGameTurn);
+	writer.Write(GameSave_SpecialUnitValid, m_em_bSpecialUnitValid);
+	writer.Write(GameSave_SpecialBuildingValid, m_em_bSpecialBuildingValid);
+	writer.Write(GameSave_UniqueGoodyValid, m_em_bUniqueGoodyValid);
 
 	writer.Write(GameSave_END);
 }

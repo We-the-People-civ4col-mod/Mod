@@ -34,23 +34,6 @@
 
 CvGame::CvGame()
 {
-	m_aiRankPlayer = new int[MAX_PLAYERS];        // Ordered by rank...
-	m_aiPlayerScore = new int[MAX_PLAYERS];       // Ordered by player ID...
-	m_aiRankTeam = new int[MAX_TEAMS];						// Ordered by rank...
-	m_aiTeamRank = new int[MAX_TEAMS];						// Ordered by team ID...
-	m_aiTeamScore = new int[MAX_TEAMS];						// Ordered by team ID...
-
-	m_paiUnitCreatedCount = NULL;
-	m_paiUnitClassCreatedCount = NULL;
-	m_paiBuildingClassCreatedCount = NULL;
-	m_aeFatherTeam = NULL;
-	m_aiFatherGameTurn = NULL;
-
-	m_pabSpecialUnitValid = NULL;
-	m_pabSpecialBuildingValid = NULL;
-
-	m_pabUniqueGoodyValid = NULL; // R&R, ray, Goody Enhancement
-
 	m_pReplayInfo = NULL;
 
 	// PatchMod: Victorys START
@@ -63,12 +46,6 @@ CvGame::CvGame()
 CvGame::~CvGame()
 {
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiRankPlayer);
-	SAFE_DELETE_ARRAY(m_aiPlayerScore);
-	SAFE_DELETE_ARRAY(m_aiRankTeam);
-	SAFE_DELETE_ARRAY(m_aiTeamRank);
-	SAFE_DELETE_ARRAY(m_aiTeamScore);
 }
 
 void CvGame::init(HandicapTypes eHandicap)
@@ -470,17 +447,6 @@ void CvGame::regenerateMap()
 
 void CvGame::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiUnitCreatedCount);
-	SAFE_DELETE_ARRAY(m_paiUnitClassCreatedCount);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassCreatedCount);
-	SAFE_DELETE_ARRAY(m_aeFatherTeam);
-	SAFE_DELETE_ARRAY(m_aiFatherGameTurn);
-
-	SAFE_DELETE_ARRAY(m_pabSpecialUnitValid);
-	SAFE_DELETE_ARRAY(m_pabSpecialBuildingValid);
-
-	SAFE_DELETE_ARRAY(m_pabUniqueGoodyValid); // R&R, ray, Goody Enhancement
-
 	m_aszDestroyedCities.clear();
 	m_aszGreatGeneralBorn.clear();
 	m_aszGreatAdmiralBorn.clear(); // R&R, ray, Great Admirals - START
@@ -503,8 +469,6 @@ void CvGame::uninit()
 // Initializes data members that are serialized.
 void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
@@ -517,77 +481,6 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	m_bDebugModeCache = false;
 	m_bPbemTurnSent = false;
 	m_bPlayerOptionsSent = false;
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		m_aiRankPlayer[iI] = 0;
-		m_aiPlayerScore[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_aiRankTeam[iI] = 0;
-		m_aiTeamRank[iI] = 0;
-		m_aiTeamScore[iI] = 0;
-	}
-
-	if (!bConstructorCall)
-	{
-		FAssertMsg(m_paiUnitCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitCreatedCount");
-		m_paiUnitCreatedCount = new int[GC.getNumUnitInfos()];
-		for (iI = 0; iI < GC.getNumUnitInfos(); iI++)
-		{
-			m_paiUnitCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiUnitClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiUnitClassCreatedCount");
-		m_paiUnitClassCreatedCount = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiUnitClassCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiBuildingClassCreatedCount==NULL, "about to leak memory, CvGame::m_paiBuildingClassCreatedCount");
-		m_paiBuildingClassCreatedCount = new int[GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_paiBuildingClassCreatedCount[iI] = 0;
-		}
-
-		FAssertMsg(0 < GC.getNumFatherInfos(), "GC.getNumFatherInfos() is not greater than zero in CvGame::reset");
-		FAssertMsg(m_aeFatherTeam==NULL, "about to leak memory, CvGame::m_aeFatherTeam");
-		FAssertMsg(m_aiFatherGameTurn==NULL, "about to leak memory, CvGame::m_aiFatherGameTurn");
-		m_aeFatherTeam = new TeamTypes[GC.getNumFatherInfos()];
-		m_aiFatherGameTurn = new int[GC.getNumFatherInfos()];
-		for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
-		{
-			m_aeFatherTeam[iI] = NO_TEAM;
-			m_aiFatherGameTurn[iI] = -1;
-		}
-
-		FAssertMsg(m_pabSpecialUnitValid==NULL, "about to leak memory, CvGame::m_pabSpecialUnitValid");
-		m_pabSpecialUnitValid = new bool[GC.getNumSpecialUnitInfos()];
-		for (iI = 0; iI < GC.getNumSpecialUnitInfos(); iI++)
-		{
-			m_pabSpecialUnitValid[iI] = false;
-		}
-
-		FAssertMsg(m_pabSpecialBuildingValid==NULL, "about to leak memory, CvGame::m_pabSpecialBuildingValid");
-		m_pabSpecialBuildingValid = new bool[GC.getNumSpecialBuildingInfos()];
-		for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-		{
-			m_pabSpecialBuildingValid[iI] = false;
-		}
-
-		// R&R, ray, Goody Enhancement - START
-		FAssertMsg(m_pabUniqueGoodyValid==NULL, "about to leak memory, CvGame::m_pabUniqueGoodyValid");
-		m_pabUniqueGoodyValid = new bool[GC.getNumGoodyInfos()];
-		for (iI = 0; iI < GC.getNumGoodyInfos(); iI++)
-		{
-			m_pabUniqueGoodyValid[iI] = false;
-		}
-		// R&R, ray, Goody Enhancement - END
-	}
 
 	m_deals.removeAll();
 
@@ -4877,7 +4770,7 @@ PlayerTypes CvGame::getRankPlayer(int iRank)
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_PLAYERS, "iRank is expected to be within maximum bounds (invalid Rank)");
-	return (PlayerTypes)m_aiRankPlayer[iRank];
+	return (PlayerTypes)m_em_iRankPlayer.get((PlayerTypes)iRank);
 }
 
 
@@ -4888,7 +4781,7 @@ void CvGame::setRankPlayer(int iRank, PlayerTypes ePlayer)
 
 	if (getRankPlayer(iRank) != ePlayer)
 	{
-		m_aiRankPlayer[iRank] = ePlayer;
+		m_em_iRankPlayer.set((PlayerTypes)iRank, ePlayer);
 
 		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
 	}
@@ -4898,7 +4791,7 @@ int CvGame::getPlayerScore(PlayerTypes ePlayer)
 {
 	FAssertMsg(ePlayer >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(ePlayer < MAX_PLAYERS, "ePlayer is expected to be within maximum bounds (invalid Index)");
-	return m_aiPlayerScore[ePlayer];
+	return m_em_iPlayerScore.get(ePlayer);
 }
 
 
@@ -4909,7 +4802,7 @@ void CvGame::setPlayerScore(PlayerTypes ePlayer, int iScore)
 
 	if (getPlayerScore(ePlayer) != iScore)
 	{
-		m_aiPlayerScore[ePlayer] = iScore;
+		m_em_iPlayerScore.set(ePlayer, iScore);
 		FAssert(getPlayerScore(ePlayer) >= 0);
 
 		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
@@ -4921,7 +4814,7 @@ TeamTypes CvGame::getRankTeam(int iRank)
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_TEAMS, "iRank is expected to be within maximum bounds (invalid Index)");
-	return (TeamTypes)m_aiRankTeam[iRank];
+	return (TeamTypes)m_em_iRankTeam.get((TeamTypes)iRank);
 }
 
 
@@ -4932,7 +4825,7 @@ void CvGame::setRankTeam(int iRank, TeamTypes eTeam)
 
 	if (getRankTeam(iRank) != eTeam)
 	{
-		m_aiRankTeam[iRank] = eTeam;
+		m_em_iRankTeam.set((TeamTypes)iRank, eTeam);
 
 		gDLL->getInterfaceIFace()->setDirty(Score_DIRTY_BIT, true);
 	}
@@ -4943,7 +4836,7 @@ int CvGame::getTeamRank(TeamTypes eTeam)
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	return m_aiTeamRank[eTeam];
+	return m_em_iTeamRank.get(eTeam);
 }
 
 
@@ -4951,7 +4844,7 @@ void CvGame::setTeamRank(TeamTypes eTeam, int iRank)
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	m_aiTeamRank[eTeam] = iRank;
+	m_em_iTeamRank.set(eTeam, iRank);
 	FAssert(getTeamRank(eTeam) >= 0);
 }
 
@@ -4960,7 +4853,7 @@ int CvGame::getTeamScore(TeamTypes eTeam) const
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	return m_aiTeamScore[eTeam];
+	return m_em_iTeamScore.get(eTeam);
 }
 
 
@@ -4968,7 +4861,7 @@ void CvGame::setTeamScore(TeamTypes eTeam, int iScore)
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-	m_aiTeamScore[eTeam] = iScore;
+	m_em_iTeamScore.set(eTeam, iScore);
 	FAssert(getTeamScore(eTeam) >= 0);
 }
 
@@ -5013,7 +4906,7 @@ int CvGame::getUnitCreatedCount(UnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiUnitCreatedCount[eIndex];
+	return m_em_iUnitCreatedCount.get(eIndex);
 }
 
 
@@ -5021,7 +4914,7 @@ void CvGame::incrementUnitCreatedCount(UnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiUnitCreatedCount[eIndex]++;
+	m_em_iUnitCreatedCount.add(eIndex, 1);
 }
 
 
@@ -5029,28 +4922,28 @@ int CvGame::getUnitClassCreatedCount(UnitClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiUnitClassCreatedCount[eIndex];
+	return m_em_iUnitClassCreatedCount.get(eIndex);
 }
 
 void CvGame::incrementUnitClassCreatedCount(UnitClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiUnitClassCreatedCount[eIndex]++;
+	m_em_iUnitClassCreatedCount.add(eIndex, 1);
 }
 
 int CvGame::getBuildingClassCreatedCount(BuildingClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassCreatedCount[eIndex];
+	return m_em_iBuildingClassCreatedCount.get(eIndex);
 }
 
 void CvGame::incrementBuildingClassCreatedCount(BuildingClassTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiBuildingClassCreatedCount[eIndex]++;
+	m_em_iBuildingClassCreatedCount.add(eIndex, 1);
 }
 
 bool CvGame::isVictoryValid(VictoryTypes eIndex) const
@@ -5064,7 +4957,7 @@ bool CvGame::isSpecialUnitValid(SpecialUnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabSpecialUnitValid[eIndex];
+	return m_em_bSpecialUnitValid.get(eIndex);
 }
 
 
@@ -5072,7 +4965,7 @@ void CvGame::makeSpecialUnitValid(SpecialUnitTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_pabSpecialUnitValid[eIndex] = true;
+	m_em_bSpecialUnitValid.set(eIndex, true);
 }
 
 
@@ -5080,7 +4973,7 @@ bool CvGame::isSpecialBuildingValid(SpecialBuildingTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabSpecialBuildingValid[eIndex];
+	return m_em_bSpecialBuildingValid.get(eIndex);
 }
 
 
@@ -5089,9 +4982,9 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (!m_pabSpecialBuildingValid[eIndex])
+	if (!m_em_bSpecialBuildingValid.get(eIndex))
 	{
-		m_pabSpecialBuildingValid[eIndex] = true;
+		m_em_bSpecialBuildingValid.set(eIndex, true);
 
 
 		if (bAnnounce)
@@ -5115,7 +5008,7 @@ bool CvGame::isUniqueGoodyValid(GoodyTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumGoodyInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabUniqueGoodyValid[eIndex];
+	return m_em_bUniqueGoodyValid.get(eIndex);
 }
 
 
@@ -5123,7 +5016,7 @@ void CvGame::setUniqueGoodyValid(GoodyTypes eIndex, bool bValid)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumGoodyInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_pabUniqueGoodyValid[eIndex] = bValid;
+	m_em_bUniqueGoodyValid.set(eIndex, bValid);
 }
 // R&R, ray, Goody Enhancement - END
 
@@ -6745,23 +6638,6 @@ uint CvGame::getNumReplayMessages() const
 void CvGame::read(FDataStreamBase* pStream)
 {
 	int iI;
-	pStream->Read(MAX_PLAYERS, m_aiRankPlayer);
-	pStream->Read(MAX_PLAYERS, m_aiPlayerScore);
-	pStream->Read(MAX_TEAMS, m_aiRankTeam);
-	pStream->Read(MAX_TEAMS, m_aiTeamRank);
-	pStream->Read(MAX_TEAMS, m_aiTeamScore);
-
-	pStream->Read(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Read(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
-	pStream->Read(GC.getNumFatherInfos(), m_aiFatherGameTurn);
-
-	pStream->Read(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
-
-	pStream->Read(GC.getNumGoodyInfos(), m_pabUniqueGoodyValid); // R&R, ray, Goody Enhancement
-
 	{
 		CvWString szBuffer;
 		uint iSize;
@@ -6883,23 +6759,6 @@ void CvGame::read(FDataStreamBase* pStream)
 
 void CvGame::write(FDataStreamBase* pStream)
 {
-	pStream->Write(MAX_PLAYERS, m_aiRankPlayer);
-	pStream->Write(MAX_PLAYERS, m_aiPlayerScore);
-	pStream->Write(MAX_TEAMS, m_aiRankTeam);
-	pStream->Write(MAX_TEAMS, m_aiTeamRank);
-	pStream->Write(MAX_TEAMS, m_aiTeamScore);
-
-	pStream->Write(GC.getNumUnitInfos(), m_paiUnitCreatedCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassCreatedCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCreatedCount);
-	pStream->Write(GC.getNumFatherInfos(), (int*)m_aeFatherTeam);
-	pStream->Write(GC.getNumFatherInfos(), m_aiFatherGameTurn);
-
-	pStream->Write(GC.getNumSpecialUnitInfos(), m_pabSpecialUnitValid);
-	pStream->Write(GC.getNumSpecialBuildingInfos(), m_pabSpecialBuildingValid);
-
-	pStream->Write(GC.getNumGoodyInfos(), m_pabUniqueGoodyValid); // R&R, ray, Goody Enhancement
-
 	{
 		std::vector<CvWString>::iterator it;
 
@@ -7310,13 +7169,13 @@ bool CvGame::isBuildingEverActive(BuildingTypes eBuilding) const
 TeamTypes CvGame::getFatherTeam(FatherTypes eFather) const
 {
 	FAssert(eFather >= 0 && eFather < GC.getNumFatherInfos());
-	return m_aeFatherTeam[eFather];
+	return m_em_eFatherTeam.get(eFather);
 }
 
 int CvGame::getFatherGameTurn(FatherTypes eFather) const
 {
 	FAssert(eFather >= 0 && eFather < GC.getNumFatherInfos());
-	return m_aiFatherGameTurn[eFather];
+	return m_em_iFatherGameTurn.get(eFather);
 }
 
 void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
@@ -7335,7 +7194,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 			bFirstTime = false;
 		}
 
-		m_aeFatherTeam[eFather] = eTeam;
+		m_em_eFatherTeam.set(eFather, eTeam);
 
 		if (getFatherTeam(eFather) != NO_TEAM)
 		{
@@ -7343,7 +7202,7 @@ void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
 
 			if (bFirstTime)
 			{
-				m_aiFatherGameTurn[eFather] = getGameTurn();
+				m_em_iFatherGameTurn.set(eFather, getGameTurn());
 
 				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 				{
