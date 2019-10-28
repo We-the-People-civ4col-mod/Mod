@@ -1740,7 +1740,14 @@ enum DllExport DiploEventTypes
 
 enum DllExport DiploCommentTypes
 {
-	NO_DIPLOCOMMENT = -1
+	NO_DIPLOCOMMENT = -1,
+	//DiploCommentTypes is used as DiplomacyTypes, but cant be changed because of the exe.
+	//For the Savegame to write the right size the variables force the enum to have the right width
+	#ifdef _USRDLL
+	NUM_DIPLOCOMMENT_TYPES = COMPILE_TIME_NUM_DIPLOMACY_TYPES,
+	#endif
+
+	COMPILE_TIME_NUM_DIPLOCOMMENT_TYPES = NUM_DIPLOCOMMENT_TYPES
 };
 
 enum DllExport NetContactTypes

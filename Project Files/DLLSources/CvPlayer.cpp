@@ -2399,7 +2399,7 @@ void CvPlayer::doTurnUnits()
 					if (isHuman())
 					{
 						CvDiploParameters* pDiplo = new CvDiploParameters(kEurope.getID());
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_GIFT_SHIP"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_GIFT_SHIP"));
 						pDiplo->addDiploCommentVariable(iNewTaxRate);
 						pDiplo->setAIContact(true);
 						gDLL->beginDiplomacy(pDiplo, getID());
@@ -2886,7 +2886,7 @@ void CvPlayer::contact(PlayerTypes ePlayer)
 		FAssert(pDiplo != NULL);
 		if (gDLL->ctrlKey() && getParent() != ePlayer)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_TRADING"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_TRADING"));
 		}
 		gDLL->beginDiplomacy(pDiplo, getID());
 	}
@@ -7474,7 +7474,7 @@ void CvPlayer::verifyAlive()
 						if (isHuman())
 						{
 							CvDiploParameters* pDiplo = new CvDiploParameters(kEurope.getID());
-							pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_REVIVE"));
+							pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_REVIVE"));
 							pDiplo->addDiploCommentVariable(iNewTaxRate);
 							pDiplo->setAIContact(true);
 							gDLL->beginDiplomacy(pDiplo, getID());
@@ -17202,7 +17202,7 @@ void CvPlayer::doPrices()
 						if (isHuman())
 						{
 							CvDiploParameters* pDiplo = new CvDiploParameters(eParent);
-							pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
+							pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
 							pDiplo->addDiploCommentVariable(iOldTaxRate);
 							pDiplo->addDiploCommentVariable(iNewTaxRate);
 							pDiplo->setData(iChange);
@@ -17223,7 +17223,7 @@ void CvPlayer::doPrices()
 							if (isHuman())
 							{
 								CvDiploParameters* pDiplo = new CvDiploParameters(eParent);
-								pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
+								pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KISS_PINKY"));
 								pDiplo->addDiploCommentVariable(iOldTaxRate);
 								pDiplo->addDiploCommentVariable(iNewTaxRate);
 								pDiplo->setData(iChange);
@@ -19077,19 +19077,19 @@ void CvPlayer::checkForNativeMercs()
 					//Player can afford normal price
 					if(getGold() >= totalmercprice)
 					{
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_MERC"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_MERC"));
 						pDiplo->addDiploCommentVariable(totalmercprice);
 					}
 					//Player can afford only cheap price
 					else if(getGold() >= cheapmercprice)
 					{
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_MERC_ONLY_CHEAP"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_MERC_ONLY_CHEAP"));
 						pDiplo->addDiploCommentVariable(totalmercprice);
 					}
 					//Player cannot afford
 					else
 					{
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_MERC_CANT_AFFORD"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_MERC_CANT_AFFORD"));
 						pDiplo->addDiploCommentVariable(totalmercprice);
 					}
 					pDiplo->setData(totalmercprice);
@@ -19198,13 +19198,13 @@ void CvPlayer::checkForNativeSlaves()
 					//Player can afford price
 					if(getGold() >= totalslaveprice)
 					{
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_NATIVE_SLAVE"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_NATIVE_SLAVE"));
 						pDiplo->addDiploCommentVariable(totalslaveprice);
 					}
 					//Player cannot afford
 					else
 					{
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_NATIVE_SLAVE_CANT_AFFORD"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_NATIVE_SLAVE_CANT_AFFORD"));
 						pDiplo->addDiploCommentVariable(totalslaveprice);
 					}
 					pDiplo->setData(totalslaveprice);
@@ -19316,12 +19316,12 @@ void CvPlayer::checkForAfricanSlaves()
 		//Player can afford price
 		if(getGold() >= totalslavesprice)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_AFRICAN_SLAVES"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_AFRICAN_SLAVES"));
 		}
 		//Player cannot afford
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_AFRICAN_SLAVES_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ACQUIRE_AFRICAN_SLAVES_CANT_AFFORD"));
 		}
 		pDiplo->addDiploCommentVariable(totalslavesprice);
 		pDiplo->setData(numSlavesOffered);
@@ -19424,12 +19424,12 @@ void CvPlayer::checkForPrisonsCrowded()
 		//Player can afford price
 		if(getGold() >= totalprisonersprice)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PRISONS_CROWDED"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PRISONS_CROWDED"));
 		}
 		//Player cannot afford
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PRISONS_CROWDED_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PRISONS_CROWDED_CANT_AFFORD"));
 		}
 		pDiplo->addDiploCommentVariable(totalprisonersprice);
 		pDiplo->setData(numPrisonersOffered);
@@ -19529,12 +19529,12 @@ void CvPlayer::checkForRevolutionaryNoble()
 		//Player can afford price
 		if(getGold() >= pricetopay)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_REVOLUTIONARY_NOBLE"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_REVOLUTIONARY_NOBLE"));
 		}
 		//Player cannot afford
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_REVOLUTIONARY_NOBLE_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_REVOLUTIONARY_NOBLE_CANT_AFFORD"));
 		}
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
@@ -19646,12 +19646,12 @@ void CvPlayer::checkForBishop()
 		//Player can afford price
 		if(getGold() >= pricetopay)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_BISHOP"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_BISHOP"));
 		}
 		//Player cannot afford
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_BISHOP_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_BISHOP_CANT_AFFORD"));
 		}
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
@@ -19786,7 +19786,7 @@ void CvPlayer::checkForRevolutionSupport()
 					{
 						// handle this by DiploEvent
 						CvDiploParameters* pDiplo = new CvDiploParameters(potentialRevSupporter.getID());
-						pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GET_REV_SUPPORT"));
+						pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GET_REV_SUPPORT"));
 
 						//getting Parent for Text
 						pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(potentialRevSupporter.getParent()).getLeaderType()).getDescription());
@@ -19898,7 +19898,7 @@ void CvPlayer::checkForEuropeanWars()
 		m_iTimerEuropeanWars = GC.getTIMER_EUROPEAN_WARS()*gamespeedMod/100;
 		// handle this by DiploEvent with own king
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_EUROPE_WAR"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_EUROPE_WAR"));
 
 		//getting Parent of Enemy for Text
 		pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(potentialEnemy.getParent()).getLeaderType()).getDescription());
@@ -20004,13 +20004,13 @@ void CvPlayer::checkForStealingImmigrant()
 		// enough gold
 		if(getGold() >= priceStealingImmigrant)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_STEALING_IMMIGRANT"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_STEALING_IMMIGRANT"));
 		}
 
 		// not enough gold
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_STEALING_IMMIGRANT_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_STEALING_IMMIGRANT_CANT_AFFORD"));
 		}
 	
 		pDiplo->addDiploCommentVariable(GC.getCivilizationInfo(GET_PLAYER(potentialVictim.getParent()).getCivilizationType()).getShortDescriptionKey()); //getting Parent of Enemy for text
@@ -20119,7 +20119,7 @@ void CvPlayer::checkForSmugglers()
 	{
 		m_iTimerSmugglingShip = GC.getTIMER_SMUGGLING_SHIP() * gamespeedMod/100;
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_SMUGGLERS"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_SMUGGLERS"));
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
 		pDiplo->setAIContact(true);
@@ -20209,11 +20209,11 @@ void CvPlayer::checkForRangers()
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
 		if (getGold() >= pricetopay)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_RANGERS"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_RANGERS"));
 		}
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_RANGERS_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_RANGERS_CANT_AFFORD"));
 
 		}
 		pDiplo->addDiploCommentVariable(pricetopay);
@@ -20333,11 +20333,11 @@ void CvPlayer::checkForConquistadors()
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
 		if (getGold() >= pricetopay)
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CONQUISTADORS"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CONQUISTADORS"));
 		}
 		else
 		{
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CONQUISTADORS_CANT_AFFORD"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CONQUISTADORS_CANT_AFFORD"));
 		}
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
@@ -20450,7 +20450,7 @@ void CvPlayer::checkForPirates()
 	{
 		m_iTimerPirates = GC.getTIMER_PIRATES() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent() / 100;
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PIRATES"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_PIRATES"));
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
 		pDiplo->setAIContact(true);
@@ -20516,7 +20516,7 @@ void CvPlayer::checkForEuropeanPeace()
 		m_iTimerEuropeanPeace = GC.getTIMER_EUROPEAN_PEACE() * gamespeedMod /100;
 		// handle this by DiploEvent with own king
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_EUROPE_PEACE"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_EUROPE_PEACE"));
 
 		//getting Parent of Enemy for Text
 		pDiplo->addDiploCommentVariable(GC.getLeaderHeadInfo(GET_PLAYER(potentialEnemyToMakePeace.getParent()).getLeaderType()).getDescription());
@@ -20779,7 +20779,7 @@ void CvPlayer::checkForContinentalGuard()
 	{
 		// handle this by DiploEvent
 		CvDiploParameters* pDiplo = new CvDiploParameters(continentalGuardDonator);
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DONATE_CONTINENTAL_GUARD"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DONATE_CONTINENTAL_GUARD"));
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
 		pDiplo->setAIContact(true);
@@ -20896,7 +20896,7 @@ void CvPlayer::checkForMortar()
 	{
 		// handle this by DiploEvent
 		CvDiploParameters* pDiplo = new CvDiploParameters(mortarDonator);
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DONATE_MORTAR"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DONATE_MORTAR"));
 		pDiplo->addDiploCommentVariable(pricetopay);
 		pDiplo->setData(pricetopay);
 		pDiplo->setAIContact(true);
@@ -21075,7 +21075,7 @@ void CvPlayer::checkForChurchContact()
 
 			// handle this by DiploEvent with Church Player
 			CvDiploParameters* pDiplo = new CvDiploParameters(eChurchPlayer);
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CHURCH_DEMAND"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CHURCH_DEMAND"));
 			pDiplo->addDiploCommentVariable(pricetopay);
 			pDiplo->setData(pricetopay);
 			pDiplo->setAIContact(true);
@@ -21213,7 +21213,7 @@ void CvPlayer::checkForChurchWar()
 		m_iTimerChurchWar = GC.getTIMER_CHURCH_WAR()*gamespeedMod/100;
 
 		CvDiploParameters* pDiplo = new CvDiploParameters(eChurchPlayer);
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CHURCH_WAR"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CHURCH_WAR"));
 
 		//getting Parent of Enemy for Text
 		pDiplo->addDiploCommentVariable(potentialNativeEnemy.getCivilizationDescription());

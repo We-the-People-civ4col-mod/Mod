@@ -14,12 +14,12 @@ public:
 
 	DllExport void setWhoTalkingTo(PlayerTypes eWhoTalkingTo);
 	DllExport PlayerTypes getWhoTalkingTo() const;
-	DllExport void setDiploComment(DiplomacyTypes eCommentType);
+	DllExport void setDiploComment(DiploCommentTypes eCommentType);
 	DllExport void addDiploCommentVariable(const wchar *szArg);
 	DllExport void addDiploCommentVariable(int iArg);
 	DllExport void addDiploCommentVariable(const FVariable& var);
 
-	DllExport DiplomacyTypes getDiploComment() const;
+	DllExport DiploCommentTypes getDiploComment() const;
 	DllExport void setOurOfferList(const CLinkList<TradeData>& ourOffer);
 	DllExport const CLinkList<TradeData>& getOurOfferList() const;
 	DllExport void setTheirOfferList(const CLinkList<TradeData>& theirOffer);
@@ -53,7 +53,7 @@ public:
 
 private:
 	PlayerTypes m_eWhoTalkingTo;
-	DiplomacyTypes m_eCommentType;
+	DiploCommentTypes m_eCommentType;
 	CLinkList<TradeData> m_OurOffer;
 	CLinkList<TradeData> m_TheirOffer;
 	bool m_bRenegotiate;

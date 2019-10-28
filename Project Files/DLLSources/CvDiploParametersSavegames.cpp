@@ -6,7 +6,7 @@
 
 // set the default values
 const PlayerTypes defaultWhoTalkingTo = NO_PLAYER;
-const DiplomacyTypes defaultCommentType= NO_DIPLOMACY;
+const DiploCommentTypes defaultCommentType= NO_DIPLOCOMMENT;
 const bool defaultRenegotiate = false;
 const bool defaultAIContact = false;
 const int defaultData = -1;
