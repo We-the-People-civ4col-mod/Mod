@@ -95,7 +95,7 @@ public:
 	// TAC - AI Improved Naval AI - koma13 - END
 
 	int AI_goldTarget();
-	DllExport DiplomacyTypes AI_getGreeting(PlayerTypes ePlayer);
+	DllExport DiploCommentTypes AI_getGreeting(PlayerTypes ePlayer);
 	bool AI_isWillingToTalk(PlayerTypes ePlayer);
 	bool AI_demandRebukedSneak(PlayerTypes ePlayer);
 	bool AI_demandRebukedWar(PlayerTypes ePlayer);

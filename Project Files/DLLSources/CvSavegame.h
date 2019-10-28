@@ -563,7 +563,7 @@ inline void CvSavegameReader::Read(std::vector<CvUnit*>& vec)
 	for (std::vector<CvUnit*>::iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		*it = new CvUnitAI;
-		Read(**it);
+		Read(static_cast<CvUnitAI&>(**it));
 	}
 }
 
@@ -682,6 +682,15 @@ inline void CvSavegameWriter::Write(std::vector<T*>& vec)
 	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		Write(**it);
+	}
+}
+
+template<>
+inline void CvSavegameWriter::Write(std::vector<CvUnit*>& vec) {
+	unsigned short iLength = vec.size();
+	Write(iLength);
+	for (std::vector<CvUnit*>::iterator it = vec.begin(); it != vec.end(); ++it) {
+		Write(static_cast <CvUnitAI&>(**it));
 	}
 }
 

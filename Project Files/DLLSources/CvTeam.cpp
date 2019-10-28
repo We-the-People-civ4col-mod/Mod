@@ -867,7 +867,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 									{
 										pDiplo = new CvDiploParameters(getLeaderID());
 										FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
-										pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DECLARE_WAR"));
+										pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DECLARE_WAR"));
 										pDiplo->setAIContact(true);
 										gDLL->beginDiplomacy(pDiplo, ((PlayerTypes)iI));
 									}
@@ -2273,7 +2273,7 @@ void CvTeam::makeHasMet(TeamTypes eIndex, bool bNewDiplo)
 											{
 												pDiplo = new CvDiploParameters(getLeaderID());
 												FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
-												pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FIRST_CONTACT"));
+												pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_FIRST_CONTACT"));
 												pDiplo->setAIContact(true);
 												gDLL->beginDiplomacy(pDiplo, ((PlayerTypes)iI));
 											}

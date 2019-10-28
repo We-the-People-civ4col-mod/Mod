@@ -6,7 +6,7 @@
 
 // set the default values
 const PlayerTypes defaultWhoTalkingTo = NO_PLAYER;
-const DiplomacyTypes defaultCommentType= NO_DIPLOMACY;
+const DiploCommentTypes defaultCommentType= NO_DIPLOCOMMENT;
 const bool defaultRenegotiate = false;
 const bool defaultAIContact = false;
 const int defaultData = -1;
@@ -103,7 +103,9 @@ void CvDiploParameters::read(CvSavegameReader reader)
 		{
 		case DiploParametersSave_END: bContinue = false; break;
 		case DiploParametersSave_WhoTalkingTo: reader.Read(m_eWhoTalkingTo); break;
-		case DiploParametersSave_CommentType: reader.Read(m_eCommentType); break;
+		case DiploParametersSave_CommentType: 
+			DiplomacyTypes eTmp; // it is saved as DiplomacyTypes
+			reader.Read(eTmp); m_eCommentType = (DiploCommentTypes)eTmp; break;
 		case DiploParametersSave_OurOffer: reader.Read(m_OurOffer); break;
 		case DiploParametersSave_TheirOffer: reader.Read(m_TheirOffer); break;
 		case DiploParametersSave_Renegotiate: reader.Read(m_bRenegotiate); break;
@@ -132,7 +134,7 @@ void CvDiploParameters::write(CvSavegameWriter writer)
 	// If nothing is saved, the loading code will use the default values.
 	// Less data saved/loaded means smaller savegames.
 	writer.Write(DiploParametersSave_WhoTalkingTo, m_eWhoTalkingTo, defaultWhoTalkingTo);
-	writer.Write(DiploParametersSave_CommentType, m_eCommentType, defaultCommentType);
+	writer.Write(DiploParametersSave_CommentType, (DiplomacyTypes)m_eCommentType, (DiplomacyTypes)defaultCommentType);
 	writer.Write(DiploParametersSave_OurOffer, m_OurOffer);
 	writer.Write(DiploParametersSave_TheirOffer, m_TheirOffer);
 	writer.Write(DiploParametersSave_Renegotiate, m_bRenegotiate, defaultRenegotiate);

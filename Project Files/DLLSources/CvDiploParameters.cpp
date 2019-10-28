@@ -5,7 +5,7 @@
 
 CvDiploParameters::CvDiploParameters(PlayerTypes ePlayer) :
 	m_eWhoTalkingTo(ePlayer),
-	m_eCommentType(NO_DIPLOMACY),
+	m_eCommentType(NO_DIPLOCOMMENT),
 	m_bRenegotiate(false),
 	m_bAIContact(false),
 	m_bPendingDelete(false),
@@ -34,7 +34,7 @@ PlayerTypes CvDiploParameters::getWhoTalkingTo() const
 	return m_eWhoTalkingTo;
 }
 
-void CvDiploParameters::setDiploComment(DiplomacyTypes eCommentType)
+void CvDiploParameters::setDiploComment(DiploCommentTypes eCommentType)
 {
 	m_eCommentType = eCommentType;
 }
@@ -67,7 +67,7 @@ void CvDiploParameters::addDiploCommentVariable(const FVariable& var)
 	m_DiploCommentArgs.push_back(var);
 }
 
-DiplomacyTypes CvDiploParameters::getDiploComment() const
+DiploCommentTypes CvDiploParameters::getDiploComment() const
 {
 	return m_eCommentType;
 }

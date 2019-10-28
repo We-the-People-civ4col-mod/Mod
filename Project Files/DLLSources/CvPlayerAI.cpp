@@ -407,7 +407,7 @@ void CvPlayerAI::AI_doPeace()
 																AI_changeContactTimer(((PlayerTypes)iI), CONTACT_PEACE_TREATY, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_PEACE_TREATY));
 																pDiplo = new CvDiploParameters(getID());
 																FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
-																pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_PEACE"));
+																pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_PEACE"));
 																pDiplo->setAIContact(true);
 																pDiplo->setOurOfferList(theirList);
 																pDiplo->setTheirOfferList(ourList);
@@ -2696,7 +2696,7 @@ int CvPlayerAI::AI_goldTarget()
 	return iGold + AI_getExtraGoldTarget();
 }
 
-DiplomacyTypes CvPlayerAI::AI_getGreeting(PlayerTypes ePlayer)
+DiploCommentTypes CvPlayerAI::AI_getGreeting(PlayerTypes ePlayer)
 {
 	TeamTypes eWorstEnemy;
 
@@ -2707,16 +2707,16 @@ DiplomacyTypes CvPlayerAI::AI_getGreeting(PlayerTypes ePlayer)
 		{
 			if (GET_PLAYER(ePlayer).AI_hasTradedWithTeam(eWorstEnemy) && !atWar(GET_PLAYER(ePlayer).getTeam(), eWorstEnemy))
 			{
-				return (DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_WORST_ENEMY_TRADING");
+				return (DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_WORST_ENEMY_TRADING");
 			}
 			else
 			{
-				return (DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_WORST_ENEMY");
+				return (DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_WORST_ENEMY");
 			}
 		}
 	}
 
-	return (DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GREETINGS");
+	return (DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GREETINGS");
 }
 
 
@@ -6822,7 +6822,7 @@ bool CvPlayerAI::AI_doDiploCancelDeals(PlayerTypes ePlayer)
 							}
 
 							CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-							pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CANCEL_DEAL"));
+							pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_CANCEL_DEAL"));
 							pDiplo->setAIContact(true);
 							pDiplo->setOurOfferList(theirList);
 							pDiplo->setTheirOfferList(ourList);
@@ -6890,7 +6890,7 @@ bool CvPlayerAI::AI_doDiploOfferCity(PlayerTypes ePlayer)
 						if (kPlayer.isHuman())
 						{
 							CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-							pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_CITY"));
+							pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_CITY"));
 							pDiplo->setAIContact(true);
 							pDiplo->setTheirOfferList(ourList);
 							gDLL->beginDiplomacy(pDiplo, ePlayer);
@@ -6952,7 +6952,7 @@ bool CvPlayerAI::AI_doDiploOfferAlliance(PlayerTypes ePlayer)
 			AI_changeContactTimer(ePlayer, CONTACT_PERMANENT_ALLIANCE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_PERMANENT_ALLIANCE));
 			CvDiploParameters* pDiplo = new CvDiploParameters(getID());
 			FAssertMsg(pDiplo != NULL, "pDiplo must be valid");
-			pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+			pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
 			pDiplo->setAIContact(true);
 			pDiplo->setOurOfferList(theirList);
 			pDiplo->setTheirOfferList(ourList);
@@ -7031,7 +7031,7 @@ bool CvPlayerAI::AI_doDiploAskJoinWar(PlayerTypes ePlayer)
 
 	AI_changeContactTimer(ePlayer, CONTACT_JOIN_WAR, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_JOIN_WAR));
 	CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-	pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_JOIN_WAR"));
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_JOIN_WAR"));
 	pDiplo->addDiploCommentVariable(GET_PLAYER(GET_TEAM(eBestTeam).getLeaderID()).getCivilizationAdjectiveKey());
 	pDiplo->setAIContact(true);
 	pDiplo->setData(eBestTeam);
@@ -7090,7 +7090,7 @@ bool CvPlayerAI::AI_doDiploAskStopTrading(PlayerTypes ePlayer)
 
 	AI_changeContactTimer(ePlayer, CONTACT_STOP_TRADING, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_STOP_TRADING));
 	CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-	pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_STOP_TRADING"));
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_STOP_TRADING"));
 	pDiplo->addDiploCommentVariable(GET_PLAYER(GET_TEAM(eBestTeam).getLeaderID()).getCivilizationAdjectiveKey());
 	pDiplo->setAIContact(true);
 	pDiplo->setData(eBestTeam);
@@ -7156,7 +7156,7 @@ bool CvPlayerAI::AI_doDiploGiveHelp(PlayerTypes ePlayer)
 
 	AI_changeContactTimer((ePlayer), CONTACT_GIVE_HELP, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_GIVE_HELP));
 	CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-	pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GIVE_HELP"));
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_GIVE_HELP"));
 	pDiplo->setTheirOfferList(ourList);
 	pDiplo->setAIContact(true);
 	gDLL->beginDiplomacy(pDiplo, ePlayer);
@@ -7212,7 +7212,7 @@ bool CvPlayerAI::AI_doDiploAskForHelp(PlayerTypes ePlayer)
 
 	AI_changeContactTimer((ePlayer), CONTACT_GIVE_HELP, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_GIVE_HELP));
 	CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-	pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ASK_FOR_HELP"));
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_ASK_FOR_HELP"));
 	pDiplo->setOurOfferList(theirList);
 	pDiplo->setAIContact(true);
 	gDLL->beginDiplomacy(pDiplo, ePlayer);
@@ -7287,7 +7287,7 @@ bool CvPlayerAI::AI_doDiploDemandTribute(PlayerTypes ePlayer)
 
 	AI_changeContactTimer((ePlayer), CONTACT_DEMAND_TRIBUTE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEMAND_TRIBUTE));
 	CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-	pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DEMAND_TRIBUTE"));
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_DEMAND_TRIBUTE"));
 	pDiplo->setAIContact(true);
 	pDiplo->setOurOfferList(theirList);
 	gDLL->beginDiplomacy(pDiplo, ePlayer);
@@ -7381,7 +7381,7 @@ bool CvPlayerAI::AI_doDiploKissPinky(PlayerTypes ePlayer)
 	AI_changeContactTimer((ePlayer), CONTACT_DEMAND_TRIBUTE, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEMAND_TRIBUTE));
 
 	CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-	pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_ASK_FOR_GOLD"));
+	pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_KING_ASK_FOR_GOLD"));
 	pDiplo->addDiploCommentVariable(iReceiveGold);
 	pDiplo->setData(iReceiveGold);
 	pDiplo->setAIContact(true);
@@ -7436,7 +7436,7 @@ bool CvPlayerAI::AI_doDiploOpenBorders(PlayerTypes ePlayer)
 	{
 		AI_changeContactTimer(ePlayer, CONTACT_OPEN_BORDERS, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_OPEN_BORDERS));
 		CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
 		pDiplo->setAIContact(true);
 		pDiplo->setOurOfferList(theirList);
 		pDiplo->setTheirOfferList(ourList);
@@ -7496,7 +7496,7 @@ bool CvPlayerAI::AI_doDiploDefensivePact(PlayerTypes ePlayer)
 	{
 		AI_changeContactTimer(ePlayer, CONTACT_DEFENSIVE_PACT, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_DEFENSIVE_PACT));
 		CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
 		pDiplo->setAIContact(true);
 		pDiplo->setOurOfferList(theirList);
 		pDiplo->setTheirOfferList(ourList);
@@ -7551,7 +7551,7 @@ bool CvPlayerAI::AI_doDiploTradeMap(PlayerTypes ePlayer)
 	{
 		AI_changeContactTimer((ePlayer), CONTACT_TRADE_MAP, GC.getLeaderHeadInfo(getPersonalityType()).getContactDelay(CONTACT_TRADE_MAP));
 		CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-		pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
+		pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_OFFER_DEAL"));
 		pDiplo->setAIContact(true);
 		pDiplo->setOurOfferList(theirList);
 		pDiplo->setTheirOfferList(ourList);
@@ -8296,7 +8296,7 @@ void CvPlayerAI::AI_nativeYieldGift(CvUnit* pUnit)
 			if(kOtherPlayer.isHuman())
 			{
 				CvDiploParameters* pDiplo = new CvDiploParameters(getID());
-				pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NATIVES_YIELD_GIFT"));
+				pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NATIVES_YIELD_GIFT"));
 				pDiplo->addDiploCommentVariable(iYieldAmount);
 				pDiplo->addDiploCommentVariable(GC.getYieldInfo(eBestYield).getChar());
 				pDiplo->addDiploCommentVariable(pOtherCity->getNameKey());
@@ -8390,11 +8390,11 @@ void CvPlayerAI::AI_nativeTrade(CvUnit* pUnit)
 				CvDiploParameters* pDiplo = new CvDiploParameters(getID());
 				if (kOtherPlayer.getGold() >= priceToPay)
 				{
-					pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NATIVE_TRADE"));
+					pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NATIVE_TRADE"));
 				}
 				else 
 				{
-					pDiplo->setDiploComment((DiplomacyTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NATIVE_TRADE_CANNOT_AFFORD"));
+					pDiplo->setDiploComment((DiploCommentTypes)GC.getInfoTypeForString("AI_DIPLOCOMMENT_NATIVE_TRADE_CANNOT_AFFORD"));
 				}
 				pDiplo->addDiploCommentVariable(iYieldAmount);
 				pDiplo->addDiploCommentVariable(GC.getYieldInfo(eBestYield).getChar());
