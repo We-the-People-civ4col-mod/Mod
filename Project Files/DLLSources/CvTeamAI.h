@@ -162,6 +162,10 @@ public:
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 
+	void AI_resetSavedData();
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 protected:
 
 	static CvTeamAI* m_aTeams;
@@ -171,19 +175,19 @@ protected:
 	std::vector<short> m_aiEnemyCityDistance;
 	std::vector<short> m_aiEnemyUnitDistance;
 
-	int* m_aiWarPlanStateCounter;
-	int* m_aiAtWarCounter;
-	int* m_aiAtPeaceCounter;
-	int* m_aiHasMetCounter;
-	int* m_aiOpenBordersCounter;
-	int* m_aiDefensivePactCounter;
-	int* m_aiShareWarCounter;
-	int* m_aiWarSuccess;
-	int* m_aiEnemyPeacetimeTradeValue;
-	int* m_aiEnemyPeacetimeGrantValue;
-	int* m_aiDamages;
+	EnumMap<TeamTypes, int> m_em_iWarPlanStateCounter;
+	EnumMap<TeamTypes, int> m_em_iAtWarCounter;
+	EnumMap<TeamTypes, int> m_em_iAtPeaceCounter;
+	EnumMap<TeamTypes, int> m_em_iHasMetCounter;
+	EnumMap<TeamTypes, int> m_em_iOpenBordersCounter;
+	EnumMap<TeamTypes, int> m_em_iDefensivePactCounter;
+	EnumMap<TeamTypes, int> m_em_iShareWarCounter;
+	EnumMap<TeamTypes, int> m_em_iWarSuccess;
+	EnumMap<TeamTypes, int> m_em_iEnemyPeacetimeTradeValue;
+	EnumMap<TeamTypes, int> m_em_iEnemyPeacetimeGrantValue;
+	EnumMap<TeamTypes, int> m_em_iDamages;
 
-	WarPlanTypes* m_aeWarPlan;
+	EnumMapDefault<TeamTypes, WarPlanTypes, NO_WARPLAN> m_em_eWarPlan;
 	int AI_maxWarRand() const;
 	int AI_maxWarNearbyPowerRatio() const;
 	int AI_maxWarDistantPowerRatio() const;

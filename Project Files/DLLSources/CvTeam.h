@@ -221,25 +221,27 @@ protected:
 
 	TeamTypes m_eID;
 
-	bool* m_abAtWar;
-	bool* m_abHasMet;
-	bool* m_abPermanentWarPeace;
-	bool* m_abOpenBorders;
-	bool* m_abDefensivePact;
-	bool* m_abForcePeace;
+	EnumMap<TeamTypes, bool> m_em_bAtWar;
+	EnumMap<TeamTypes, bool> m_em_bHasMet;
+	EnumMap<TeamTypes, bool> m_em_bPermanentWarPeace;
+	EnumMap<TeamTypes, bool> m_em_bOpenBorders;
+	EnumMap<TeamTypes, bool> m_em_bDefensivePact;
+	EnumMap<TeamTypes, bool> m_em_bForcePeace;
 
-	bool* m_abFatherIgnore;
-	int* m_aiFatherPoints;
-	int* m_aiUnitClassCount;
-	int* m_aiBuildingClassCount;
-	int* m_aiEuropeUnitsPurchased;
+	EnumMap<FatherTypes, bool> m_em_bFatherIgnore;
+	EnumMap<FatherPointTypes, int> m_em_iFatherPoints;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassCount;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassCount;
+	EnumMap<UnitClassTypes, int> m_em_iEuropeUnitsPurchased;
 
 	std::vector<BonusTypes> m_aeRevealedBonuses;
 	void testFoundingFather();
 	void cancelDefensivePacts(TeamTypes eEndingTeam);
 	void declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, bool bPlaySound);
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+
+	void resetSavedData(TeamTypes eID);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 };
 
 #endif
