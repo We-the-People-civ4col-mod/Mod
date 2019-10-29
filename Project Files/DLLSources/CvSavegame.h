@@ -40,6 +40,8 @@ enum SavegameClassTypes
 	SAVEGAME_CLASS_GAME_AI,
 	SAVEGAME_CLASS_DEAL,
 	SAVEGAME_CLASS_REPLAYMESSAGE,
+	SAVEGAME_CLASS_TEAM,
+	SAVEGAME_CLASS_TEAM_AI,
 
 	NUM_SAVEGAME_CLASS_TYPES,
 
@@ -155,6 +157,7 @@ public:
 	void Read(TradeableItems        & variable) { ReadEnum(variable); }
 	void Read(UnitAIStates          & variable) { ReadEnum(variable); }
 	void Read(UnitTravelStates      & variable) { ReadEnum(variable); }
+	void Read(WarPlanTypes          & variable) { ReadEnum(variable); }
 
 
 	// everything linked to xml file enums
@@ -392,6 +395,7 @@ public:
 	void Write(TradeableItems         variable) { WriteEnum(variable); }
 	void Write(UnitAIStates           variable) { WriteEnum(variable); }
 	void Write(UnitTravelStates       variable) { WriteEnum(variable); }
+	void Write(WarPlanTypes           variable) { WriteEnum(variable); }
 
 	// everything linked to xml file enums
 	void Write(AchieveTypes          variable) { WriteXmlEnum(variable); }

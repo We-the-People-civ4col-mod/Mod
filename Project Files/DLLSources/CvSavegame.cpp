@@ -64,6 +64,8 @@ const char* getSavedEnumNameGame(SavegameVariableTypes eType);
 const char* getSavedEnumNameGameAi(SavegameVariableTypes eType);
 const char* getSavedEnumNameDeal(SavegameVariableTypes eType);
 const char* getSavedEnumNameReplayMessage(SavegameVariableTypes eType);
+const char* getSavedEnumNameTeam(SavegameVariableTypes eType);
+const char* getSavedEnumNameTeamAI(SavegameVariableTypes eType);
 
 const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eType)
 {
@@ -88,6 +90,8 @@ const char* getSavedEnumName(SavegameClassTypes eClass, SavegameVariableTypes eT
 	case SAVEGAME_CLASS_GAME_AI: return getSavedEnumNameGameAi(eType);
 	case SAVEGAME_CLASS_DEAL: return getSavedEnumNameDeal(eType);
 	case SAVEGAME_CLASS_REPLAYMESSAGE: return getSavedEnumNameReplayMessage(eType);
+	case SAVEGAME_CLASS_TEAM: return getSavedEnumNameTeam(eType);
+	case SAVEGAME_CLASS_TEAM_AI: return getSavedEnumNameTeamAI(eType);
 
 	}
 
@@ -907,6 +911,8 @@ int getNumSavedEnumValuesGame();
 int getNumSavedEnumValuesGameAI();
 int getNumSavedEnumValuesDeal();
 int getNumSavedEnumValuesReplayMessage();
+int getNumSavedEnumValuesTeam();
+int getNumSavedEnumValuesTeamAI();
 
 void CvSavegameWriterBase::InitSavegame()
 {
@@ -948,6 +954,8 @@ void CvSavegameWriterBase::InitSavegame()
 		case SAVEGAME_CLASS_GAME_AI:  iCount = getNumSavedEnumValuesGameAI(); break;
 		case SAVEGAME_CLASS_DEAL:  iCount = getNumSavedEnumValuesDeal(); break;
 		case SAVEGAME_CLASS_REPLAYMESSAGE:  iCount = getNumSavedEnumValuesReplayMessage(); break;
+		case SAVEGAME_CLASS_TEAM:  iCount = getNumSavedEnumValuesTeam(); break;
+		case SAVEGAME_CLASS_TEAM_AI:  iCount = getNumSavedEnumValuesTeamAI(); break;
 
 		default:
 			FAssertMsg(false, "missing case");
