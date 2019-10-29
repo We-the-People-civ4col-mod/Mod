@@ -60,6 +60,8 @@
     <ClCompile Include="DLLSources\CvSelectionGroupAISavegame.cpp" />
     <ClCompile Include="DLLSources\CvSelectionGroupSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTalkingHeadMessageSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTeamAISavegame.cpp" />
+    <ClCompile Include="DLLSources\CvTeamSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteGroupSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />

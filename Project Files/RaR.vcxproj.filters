@@ -433,6 +433,12 @@
     <ClCompile Include="DLLSources\CvReplayMessageSavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvTeamAISavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvTeamSavegame.cpp">
+      <Filter>CV\Savegames</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
