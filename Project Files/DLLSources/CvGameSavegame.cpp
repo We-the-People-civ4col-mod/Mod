@@ -379,7 +379,7 @@ void CvGame::write(CvSavegameWriter writer)
 	writer.Write(GameSave_TurnSlice, m_iTurnSlice, defaultTurnSlice);
 	writer.Write(GameSave_CutoffSlice, m_iCutoffSlice, defaultCutoffSlice);
 	writer.Write(GameSave_NumGameTurnActive, m_iNumGameTurnActive, defaultNumGameTurnActive);
-	writer.Write(GameSave_NumCities, m_iNumCities, m_iNumCities);
+	writer.Write(GameSave_NumCities, m_iNumCities, defaultNumCities);
 	writer.Write(GameSave_MaxPopulation, m_iMaxPopulation, defaultMaxPopulation);
 	writer.Write(GameSave_MaxLand, m_iMaxLand, defaultMaxLand);
 	writer.Write(GameSave_MaxFather, m_iMaxFather, defaultMaxFather);
