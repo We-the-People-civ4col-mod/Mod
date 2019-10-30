@@ -25,7 +25,6 @@ const int defaultFortifyTurns = 0;
 
 const int defaultExtraVisibilityRange = 0;
 
-const int defaultBaseCombat = 0;
 const int defaultImmobileTimer = 0;
 const int defaultYieldStored = 0;
 const int defaultExtraWorkRate = 0;
@@ -83,7 +82,6 @@ enum SavegameVariableTypes
 	
 	UnitSave_ExtraVisibilityRange,
 	
-	UnitSave_BaseCombat,
 	UnitSave_ImmobileTimer,
 	UnitSave_YieldStored,
 	UnitSave_ExtraWorkRate,
@@ -153,7 +151,6 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 
 	case UnitSave_ExtraVisibilityRange: return "UnitSave_ExtraVisibilityRange";
 	
-	case UnitSave_BaseCombat: return "UnitSave_BaseCombat";
 	case UnitSave_ImmobileTimer: return "UnitSave_ImmobileTimer";
 	case UnitSave_YieldStored: return "UnitSave_YieldStored";
 	case UnitSave_ExtraWorkRate: return "UnitSave_ExtraWorkRate";
@@ -228,7 +225,6 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	
 	m_iExtraVisibilityRange = defaultExtraVisibilityRange;
 	
-	m_iBaseCombat = defaultBaseCombat;
 	m_iImmobileTimer = defaultImmobileTimer;
 	m_iYieldStored = defaultYieldStored;
 	m_iExtraWorkRate = defaultExtraWorkRate;
@@ -316,7 +312,6 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_ExtraVisibilityRange: reader.Read(m_iExtraVisibilityRange); break;
 
-		case UnitSave_BaseCombat: reader.Read(m_iBaseCombat); break;
 		case UnitSave_ImmobileTimer: reader.Read(m_iImmobileTimer); break;
 		case UnitSave_YieldStored: reader.Read(m_iYieldStored); break;
 		case UnitSave_ExtraWorkRate: reader.Read(m_iExtraWorkRate); break;
@@ -361,7 +356,8 @@ void CvUnit::read(CvSavegameReader reader)
 	// The unit is loaded. Now set up the cache according to the read data.
 
 	FAssert(NO_UNIT != m_eUnitType);
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
+	m_pUnitInfo = &GC.getUnitInfo(m_eUnitType);
+	m_iBaseCombat = m_pUnitInfo->getCombat();
 
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
@@ -410,7 +406,6 @@ void CvUnit::write(CvSavegameWriter writer)
 
 	writer.Write(UnitSave_ExtraVisibilityRange, m_iExtraVisibilityRange, defaultExtraVisibilityRange);
 
-	writer.Write(UnitSave_BaseCombat, m_iBaseCombat, defaultBaseCombat);
 	writer.Write(UnitSave_ImmobileTimer, m_iImmobileTimer, defaultImmobileTimer);
 	writer.Write(UnitSave_YieldStored, m_iYieldStored, defaultYieldStored);
 	writer.Write(UnitSave_ExtraWorkRate, m_iExtraWorkRate, defaultExtraWorkRate);
