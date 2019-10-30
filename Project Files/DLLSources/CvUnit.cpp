@@ -339,6 +339,7 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 	}
 	m_bInfoBarDirty = false;
 	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
+	m_iUnarmedCount = 0;
 
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();

@@ -69,9 +69,7 @@ void CvUnitAI::read(CvSavegameReader reader)
 
 	// Init data before load
 	// This will ensure that all variables not included in the savegame will have default values
-	AI_resetSavedData();
-
-	// read base class. It's always placed first
+	// read base class. It's always placed first because it also resets all the data
 	CvUnit::read(reader);
 
 	// loop read all the variables
