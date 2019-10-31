@@ -40,11 +40,7 @@ void CvGameAI::AI_resetSavedData()
 void CvGameAI::read(CvSavegameReader reader)
 {
 	reader.AssignClassType(SAVEGAME_CLASS_GAME_AI);
-
 	// Init data before load
-	// This will ensure that all variables not included in the savegame will have default values
-	AI_reset();
-
 	// read base class. It's always placed first
 	CvGame::read(reader);
 

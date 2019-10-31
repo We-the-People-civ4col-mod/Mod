@@ -29,6 +29,8 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
 
+#include "CvSavegame.h"
+
 // Public Functions...
 
 CvCity::CvCity() :
@@ -11196,4 +11198,20 @@ void CvCity::writeDesyncLog(FILE *f)
 			fprintf(f, "\t\tCulture player %d: %d\n", i, iCulture);
 		}
 	}
+}
+
+void CvCity::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvCity::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

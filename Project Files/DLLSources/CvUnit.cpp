@@ -29,6 +29,7 @@
 #include "CvDiploParameters.h"
 #include "CvTradeRoute.h"
 
+#include "CvSavegame.h"
 // Public Functions...
 
 CvUnitTemporaryStrengthModifier::CvUnitTemporaryStrengthModifier(CvUnit* pUnit, ProfessionTypes eProfession) :
@@ -14448,4 +14449,20 @@ bool CvUnit::isProfessionalMilitary() const
 	}
 
 	return false;
+}
+
+void CvUnit::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvUnit::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

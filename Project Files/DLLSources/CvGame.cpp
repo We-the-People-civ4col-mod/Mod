@@ -30,6 +30,8 @@
 #include "CvDLLEventReporterIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 
+#include "CvSavegame.h"
+
 // Public Functions...
 
 CvGame::CvGame()
@@ -6627,11 +6629,18 @@ uint CvGame::getNumReplayMessages() const
 
 void CvGame::read(FDataStreamBase* pStream)
 {
-}
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 
+	read(reader);
+}
 
 void CvGame::write(FDataStreamBase* pStream)
 {
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }
 
 void CvGame::writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer)

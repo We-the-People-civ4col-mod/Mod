@@ -239,6 +239,8 @@ protected:
 	void cancelDefensivePacts(TeamTypes eEndingTeam);
 	void declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, bool bPlaySound);
 
+	virtual void read(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream);
 	void resetSavedData(TeamTypes eID);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);

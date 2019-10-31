@@ -35,6 +35,8 @@
 #include "CvDLLEventReporterIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 
+#include "CvSavegame.h"
+
 
 // Public Functions...
 
@@ -21465,4 +21467,20 @@ void CvPlayer::writeDesyncLog(FILE *f)
 		fprintf(f, "\tCity %d:\n", iLoop);
 		pLoopCity->writeDesyncLog(f);
 	}
+}
+
+void CvPlayer::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvPlayer::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }
