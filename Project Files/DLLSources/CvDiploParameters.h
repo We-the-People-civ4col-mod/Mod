@@ -46,6 +46,9 @@ public:
 	DllExport const IDInfo& getCity() const;
 	DllExport void setCity(const IDInfo& kCity);
 
+	DllExport void read(FDataStreamBase& stream);
+	DllExport void write(FDataStreamBase& stream);
+
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
