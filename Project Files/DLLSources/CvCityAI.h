@@ -171,6 +171,9 @@ public:
 	
 	bool AI_isMajorCity() const;
 
+	DllExport void read(FDataStreamBase* pStream); 
+	DllExport void write(FDataStreamBase* pStream); 
+
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 

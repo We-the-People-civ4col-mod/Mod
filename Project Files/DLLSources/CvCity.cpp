@@ -11199,19 +11199,3 @@ void CvCity::writeDesyncLog(FILE *f)
 		}
 	}
 }
-
-void CvCity::read(FDataStreamBase* pStream)
-{
-	CvSavegameReaderBase readerbase(pStream);
-	CvSavegameReader reader(readerbase);
-
-	read(reader);
-}
-
-void CvCity::write(FDataStreamBase* pStream)
-{
-	CvSavegameWriterBase writerbase(pStream);
-	CvSavegameWriter writer(writerbase);
-	write(writer);
-	writerbase.WriteFile();
-}
