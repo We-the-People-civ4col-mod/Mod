@@ -3838,7 +3838,8 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 				}
 				*/
 
-				if (eYieldProducedType == YIELD_BELLS)
+				// Note that currently there are no professions that produce culture
+				if (eYieldProducedType == YIELD_CULTURE)
 				{
 					int iCulturePressure = AI_calculateCulturePressure();
 
@@ -3852,6 +3853,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 							iOutputValue /= 100;
 						}
 					}
+					/*
 					else if (kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) || getCultureLevel() < 2)
 					{
 						if ((iProfessionCount == 0) && (getPopulation() > 3))
@@ -3859,6 +3861,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 							iOutputValue *= (getCultureLevel() < 2 ? 9 : 3);
 						}
 					}
+					*/
 				}
 				// TAC - AI Economy - koma13 - END
 			}
