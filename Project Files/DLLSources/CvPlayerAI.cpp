@@ -1625,7 +1625,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 	std::vector<int> aiFood(NUM_CITY_PLOTS, 0);
 
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		CvPlot* pLoopPlot = plotCity(iX, iY, iI);
 
@@ -1635,7 +1635,11 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 			{
 				if (pLoopPlot->isImpassable())
 				{
-					iBadTile += 2;
+					if (pLoopPlot->getBonusType() == NO_BONUS)
+					{
+						// Only count impassable plots that do not have any bonus resource as bad
+						iBadTile += 2;
+					}
 				}
 				else if (!pLoopPlot->isOwned() || GET_PLAYER(pLoopPlot->getOwnerINLINE()).isNative())
 				{
