@@ -15,6 +15,8 @@ struct CvPopupButtonPython;
 #include "CvPopupInfo.h"
 #include "CvReplayMessage.h"
 
+#define CHUNK_SIZE (50000)
+
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.
 // Extending to the end is savegame safe. Altering the existing layout isn't.
@@ -872,6 +874,7 @@ public:
 	CvSavegameBase();
 
 	bool isDebug() const;
+	bool isCompressed() const;
 
 protected:
 	unsigned int m_iFlag;
@@ -883,18 +886,21 @@ class CvSavegameReaderBase
 	friend class CvSavegameReader;
 public:
 	CvSavegameReaderBase(FDataStreamBase* pStream);
-
+	
 	~CvSavegameReaderBase();
 
 private:
 
 	void Read(byte* var, unsigned int iSize);
+	int ReadChunk();
 
 	FDataStreamBase* m_pStream;
 	byte* m_Memory;
 	byte* m_MemoryAllocation;
 	byte *m_MemoryEnd;
 	unsigned int m_iSize;
+	unsigned int m_iRead;
+
 };
 
 class CvSavegameWriterBase

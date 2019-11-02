@@ -791,6 +791,7 @@ void CvSavegameWriter::Write(CvTradeRouteGroup    &variable) { variable.write(*t
 enum Savegame_baseclass_flags
 {
 	Savegame_baseclass_flags_debug,
+	Savegame_baseclass_flags_compressed
 };
 
 CvSavegameBase::CvSavegameBase()
@@ -802,27 +803,48 @@ bool CvSavegameBase::isDebug() const
 {
 	return HasBit(m_iFlag, Savegame_baseclass_flags_debug);
 }
+bool CvSavegameBase::isCompressed() const
+{
+	return HasBit(m_iFlag, Savegame_baseclass_flags_compressed);
+}
 
 CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
-	: m_pStream(pStream)
+	: m_pStream(pStream),
+	m_MemoryAllocation(NULL),
+	m_iRead(0)
 {
 	m_pStream->Read(&m_iFlag);
-
-	pStream->Read(&m_iSize);
-	m_MemoryAllocation = NULL;
+	m_pStream->Read(&m_iSize);
 	if (m_iSize > 0)
 	{
-		m_MemoryAllocation = new byte[m_iSize];
-		pStream->Read(m_iSize, m_MemoryAllocation);
+		m_MemoryAllocation = new byte[CHUNK_SIZE];
+		FAssert(m_MemoryAllocation);
+		FAssert(ReadChunk());
 	}
-	m_Memory = m_MemoryAllocation;
-	m_MemoryEnd = m_Memory + m_iSize;
+}
+
+int CvSavegameReaderBase::ReadChunk()
+{
+	if(!isCompressed()){
+		int iCurrRead;
+		if (m_iSize-m_iRead > CHUNK_SIZE)
+		{
+			iCurrRead = CHUNK_SIZE;
+		}else{
+			iCurrRead = m_iSize - m_iRead;
+		}
+		m_pStream->Read(iCurrRead, m_MemoryAllocation);
+		m_iRead+=iCurrRead;
+		m_Memory = m_MemoryAllocation;
+		m_MemoryEnd = m_MemoryAllocation+iCurrRead;
+		return iCurrRead;
+	}
 }
 
 CvSavegameReaderBase::~CvSavegameReaderBase()
 {
 	// first check if the entire savegame have been read
-	int iBytesLeft = m_MemoryAllocation + m_iSize - m_Memory;
+	int iBytesLeft = (m_iSize - m_iRead) + (m_MemoryEnd - m_Memory);
 
 	if (iBytesLeft != 0)
 	{
@@ -844,6 +866,7 @@ void CvSavegameReaderBase::Read(byte* var, unsigned int iSize)
 	{
 		if (m_Memory == m_MemoryEnd)
 		{
+			if(ReadChunk()==0){
 			FAssertMsg(false, "Savegame read error (not enough bytes)");
 			char szMessage[1024];
 
@@ -851,6 +874,7 @@ void CvSavegameReaderBase::Read(byte* var, unsigned int iSize)
 			gDLL->MessageBox(szMessage, "Savegame read Error");
 
 			return;
+			}
 		}
 		var[i] = *m_Memory;
 		++m_Memory;
@@ -879,15 +903,16 @@ void CvSavegameWriterBase::WriteFile()
 	unsigned int iSize = m_vector.size();
 	iSize += m_table.size();
 	m_pStream->Write(iSize);
+	if(!isCompressed()){
+		if (m_table.size() > 0)
+		{
+			m_pStream->Write(m_table.size(), &m_table.front());
+		}
 
-	if (m_table.size() > 0)
-	{
-		m_pStream->Write(m_table.size(), &m_table.front());
-	}
-
-	if (m_vector.size() > 0)
-	{
-		m_pStream->Write(m_vector.size(), &m_vector.front());
+		if (m_vector.size() > 0)
+		{
+			m_pStream->Write(m_vector.size(), &m_vector.front());
+		}
 	}
 }
 
