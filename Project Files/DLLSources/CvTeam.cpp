@@ -21,6 +21,7 @@
 #include "CyArgsList.h"
 #include "FProfiler.h"
 
+#include "CvSavegame.h"
 // Public Functions...
 
 CvTeam::CvTeam()
@@ -2838,3 +2839,19 @@ int CvTeam::getTotalProductionRate() const
 	return iProductionRate;
 }
 // PatchMod: Victorys END
+
+void CvTeam::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvTeam::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
+}

@@ -29,6 +29,8 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
 
+#include "CvSavegame.h"
+
 // Public Functions...
 
 CvCity::CvCity() :

@@ -121,9 +121,6 @@ void CvGameAI::read(FDataStreamBase* pStream)
 	CvSavegameReader reader(readerbase);
 
 	read(reader);
-
-	CvGame::read(pStream);
-
 }
 
 
@@ -133,10 +130,6 @@ void CvGameAI::write(FDataStreamBase* pStream)
 	CvSavegameWriter writer(writerbase); 
 	write(writer); 
 	writerbase.WriteFile(); 
-
-	CvGame::write(pStream);
-
-
 }
 
 // Protected Functions...
