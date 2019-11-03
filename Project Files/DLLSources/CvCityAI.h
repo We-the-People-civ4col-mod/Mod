@@ -189,10 +189,10 @@ protected:
 	int m_iFoundValue;
 	int m_iTargetSize;
 
-	YieldArray <int> m_ja_iYieldOutputWeight;
-	YieldArray <int> m_ja_iNeededYield;
-	YieldArray <int> m_ja_iTradeBalance;
-	YieldArray <int> m_ja_iYieldAdvantage;
+	EnumMap<YieldTypes,int> m_em_iYieldOutputWeight;
+	EnumMap<YieldTypes,int> m_em_iNeededYield;
+	EnumMap<YieldTypes,int> m_em_iTradeBalance;
+	EnumMap<YieldTypes,int> m_em_iYieldAdvantage;
 
 	int m_iEmphasizeAvoidGrowthCount;
 
@@ -204,17 +204,17 @@ protected:
 
 	IDInfo m_routeToCity;
 
-	YieldArray <int> m_ja_iEmphasizeYieldCount;
+	EnumMap<YieldTypes,int> m_em_iEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
 	EnumMapInt<CityPlotTypes, int> m_em_iBestBuildValue;
 	EnumMapInt<CityPlotTypes,BuildTypes> m_em_eBestBuild;
 
-	BoolArray m_ba_Emphasize;
+	EnumMap<EmphasizeTypes,bool> m_em_bEmphasize;
 
 	mutable int m_iCachePlayerClosenessTurn;
 	mutable int m_iCachePlayerClosenessDistance;
-	PlayerArray<int> m_aiPlayerCloseness;
+	EnumMap<PlayerTypes,int> m_em_iPlayerCloseness;
 
 	int m_iNeededFloatingDefenders;
 	int m_iNeededFloatingDefendersCacheTurn;

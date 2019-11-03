@@ -114,11 +114,11 @@ m_bPort = defaultPort;
 m_bAssignWorkDirty = defaultAssignWorkDirty;
 m_bChooseProductionDirty = defaultChooseProductionDirty;
 
-m_ja_iYieldOutputWeight.reset();
-m_ja_iNeededYield.reset();
-m_ja_iTradeBalance.reset();
-m_ja_iYieldAdvantage.reset();
-m_ja_iEmphasizeYieldCount.reset();
+m_em_iYieldOutputWeight.reset();
+m_em_iNeededYield.reset();
+m_em_iTradeBalance.reset();
+m_em_iYieldAdvantage.reset();
+m_em_iEmphasizeYieldCount.reset();
 
 m_bForceEmphasizeCulture = defaultForceEmphasizeCulture;
 m_iCachePlayerClosenessTurn = defaultCachePlayerClosenessTurn;
@@ -127,8 +127,8 @@ m_iNeededFloatingDefenders = defaultNeededFloatingDefenders;
 m_iNeededFloatingDefendersCacheTurn = defaultNeededFloatingDefendersCacheTurn;
 m_iWorkersNeeded = defaultWorkersNeeded;
 m_iWorkersHave = defaultWorkersHave;
-m_ba_Emphasize.reset();
-m_aiPlayerCloseness.reset();
+m_em_bEmphasize.reset();
+m_em_iPlayerCloseness.reset();
 m_routeToCity.reset();
 
 m_em_iBestBuildValue.reset();
@@ -172,11 +172,11 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_AssignWorkDirty: reader.Read(m_bAssignWorkDirty); break;
 			case CitySaveAi_ChooseProductionDirty: reader.Read(m_bChooseProductionDirty); break;
 
-			case CitySaveAi_YieldOutputWeight: reader.Read(m_ja_iYieldOutputWeight); break;
-			case CitySaveAi_NeededYield: reader.Read(m_ja_iNeededYield); break;
-			case CitySaveAi_TradeBalance: reader.Read(m_ja_iTradeBalance); break;
-			case CitySaveAi_YieldAdvantage: reader.Read(m_ja_iYieldAdvantage); break;
-			case CitySaveAi_EmphasizeYieldCount: reader.Read(m_ja_iEmphasizeYieldCount); break;
+			case CitySaveAi_YieldOutputWeight: reader.Read(m_em_iYieldOutputWeight); break;
+			case CitySaveAi_NeededYield: reader.Read(m_em_iNeededYield); break;
+			case CitySaveAi_TradeBalance: reader.Read(m_em_iTradeBalance); break;
+			case CitySaveAi_YieldAdvantage: reader.Read(m_em_iYieldAdvantage); break;
+			case CitySaveAi_EmphasizeYieldCount: reader.Read(m_em_iEmphasizeYieldCount); break;
 
 			case CitySaveAi_ForceEmphasizeCulture: reader.Read(m_bForceEmphasizeCulture); break;
 			case CitySaveAi_CachePlayerClosenessTurn: reader.Read(m_iCachePlayerClosenessTurn); break;
@@ -185,8 +185,8 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_NeededFloatingDefendersCacheTurn: reader.Read(m_iNeededFloatingDefendersCacheTurn); break;
 			case CitySaveAi_WorkersNeeded: reader.Read(m_iWorkersNeeded); break;
 			case CitySaveAi_WorkersHave: reader.Read(m_iWorkersHave); break;
-			case CitySaveAi_Emphasize: reader.Read(m_ba_Emphasize); break;
-			case CitySaveAi_PlayerCloseness: reader.Read(m_aiPlayerCloseness); break;
+			case CitySaveAi_Emphasize: reader.Read(m_em_bEmphasize); break;
+			case CitySaveAi_PlayerCloseness: reader.Read(m_em_iPlayerCloseness); break;
 			case CitySaveAi_routeToCity: reader.Read(m_routeToCity); break;
 			case CitySaveAi_BestBuildValue: reader.Read(m_em_iBestBuildValue); break;
 			case CitySaveAi_BestBuild: reader.Read(m_em_eBestBuild); break; 
@@ -222,11 +222,11 @@ void CvCityAI::write(CvSavegameWriter writer)
 	writer.Write(CitySaveAi_AssignWorkDirty, m_bAssignWorkDirty, defaultAssignWorkDirty);
 	writer.Write(CitySaveAi_ChooseProductionDirty, m_bChooseProductionDirty, defaultChooseProductionDirty);
 
-	writer.Write(CitySaveAi_YieldOutputWeight, m_ja_iYieldOutputWeight);
-	writer.Write(CitySaveAi_NeededYield, m_ja_iNeededYield);
-	writer.Write(CitySaveAi_TradeBalance, m_ja_iTradeBalance);
-	writer.Write(CitySaveAi_YieldAdvantage, m_ja_iYieldAdvantage);
-	writer.Write(CitySaveAi_EmphasizeYieldCount, m_ja_iEmphasizeYieldCount);
+	writer.Write(CitySaveAi_YieldOutputWeight, m_em_iYieldOutputWeight);
+	writer.Write(CitySaveAi_NeededYield, m_em_iNeededYield);
+	writer.Write(CitySaveAi_TradeBalance, m_em_iTradeBalance);
+	writer.Write(CitySaveAi_YieldAdvantage, m_em_iYieldAdvantage);
+	writer.Write(CitySaveAi_EmphasizeYieldCount, m_em_iEmphasizeYieldCount);
 
 	writer.Write(CitySaveAi_ForceEmphasizeCulture, m_bForceEmphasizeCulture, defaultForceEmphasizeCulture);
 	writer.Write(CitySaveAi_CachePlayerClosenessTurn, m_iCachePlayerClosenessTurn, defaultCachePlayerClosenessTurn);
@@ -236,8 +236,8 @@ void CvCityAI::write(CvSavegameWriter writer)
 	writer.Write(CitySaveAi_WorkersNeeded, m_iWorkersNeeded, defaultWorkersNeeded);
 	writer.Write(CitySaveAi_WorkersHave, m_iWorkersHave, defaultWorkersHave);
 
-	writer.Write(CitySaveAi_Emphasize, m_ba_Emphasize);
-	writer.Write(CitySaveAi_PlayerCloseness, m_aiPlayerCloseness);
+	writer.Write(CitySaveAi_Emphasize, m_em_bEmphasize);
+	writer.Write(CitySaveAi_PlayerCloseness, m_em_iPlayerCloseness);
 
 	writer.Write(CitySaveAi_routeToCity, m_routeToCity);
 

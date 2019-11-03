@@ -29,8 +29,7 @@
 
 // Public Functions...
 
-CvCityAI::CvCityAI() :
-m_ba_Emphasize(JIT_ARRAY_EMPHASIZE)
+CvCityAI::CvCityAI()
 {	
 	m_bForceEmphasizeCulture = false;
 	AI_reset();
@@ -1927,14 +1926,14 @@ int CvCityAI::AI_getEmphasizeYieldCount(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ja_iEmphasizeYieldCount.get(eIndex);
+	return m_em_iEmphasizeYieldCount.get(eIndex);
 }
 
 bool CvCityAI::AI_isEmphasize(EmphasizeTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumEmphasizeInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ba_Emphasize.get(eIndex);
+	return m_em_bEmphasize.get(eIndex);
 }
 
 
@@ -1945,7 +1944,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 
 	if (AI_isEmphasize(eIndex) != bNewValue)
 	{
-		m_ba_Emphasize.set(bNewValue, eIndex);
+		m_em_bEmphasize.set(eIndex, bNewValue);
 
 		if (GC.getEmphasizeInfo(eIndex).isAvoidGrowth())
 		{
@@ -1958,7 +1957,7 @@ void CvCityAI::AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue)
 			int iYieldChange = GC.getEmphasizeInfo(eIndex).getYieldChange(iI);
 			if (iYieldChange != 0)
 			{
-				m_ja_iEmphasizeYieldCount.add(((AI_isEmphasize(eIndex)) ? iYieldChange : -iYieldChange), iI);
+				m_em_iEmphasizeYieldCount.add((YieldTypes)iI,((AI_isEmphasize(eIndex)) ? iYieldChange : -iYieldChange));
 			}
 		}
 
@@ -1978,8 +1977,8 @@ void CvCityAI::AI_forceEmphasizeCulture(bool bNewValue)
 	{
 		m_bForceEmphasizeCulture = bNewValue;
 
-		m_ja_iEmphasizeYieldCount.add((bNewValue ? 1 : -1), YIELD_CROSSES);
-		FAssert(m_ja_iEmphasizeYieldCount.get(YIELD_CROSSES) >= 0);
+		m_em_iEmphasizeYieldCount.add(YIELD_CROSSES, (bNewValue ? 1 : -1));
+		FAssert(m_em_iEmphasizeYieldCount.get(YIELD_CROSSES) >= 0);
 	}
 }
 
@@ -2500,7 +2499,7 @@ void CvCityAI::AI_doNative()
 
 void CvCityAI::AI_resetTradedYields()
 {
-	m_ja_iTradeBalance.reset();
+	m_em_iTradeBalance.reset();
 }
 
 //This should only be called once per turn.
@@ -2516,8 +2515,8 @@ void CvCityAI::AI_doTradedYields()
 		
 		if (GC.getYieldInfo(eLoopYield).isCargo())
 		{
-			const int eTmp = (m_ja_iTradeBalance.get(eLoopYield) * iDiscountPercent);
-			m_ja_iTradeBalance.set(eTmp/100, eLoopYield);
+			const int eTmp = (m_em_iTradeBalance.get(eLoopYield) * iDiscountPercent);
+			m_em_iTradeBalance.set(eLoopYield, eTmp / 100);
 		}
 	}
 }
@@ -4589,7 +4588,7 @@ int CvCityAI::AI_getYieldOutputWeight(YieldTypes eYield) const
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	
-	return m_ja_iYieldOutputWeight.get(eYield);
+	return m_em_iYieldOutputWeight.get(eYield);
 }
 
 void CvCityAI::AI_setYieldOutputWeight(YieldTypes eYield, int iNewValue)
@@ -4598,7 +4597,7 @@ void CvCityAI::AI_setYieldOutputWeight(YieldTypes eYield, int iNewValue)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(iNewValue >= 0, "Weight should be positive");
 	
-	m_ja_iYieldOutputWeight.set(iNewValue, eYield);
+	m_em_iYieldOutputWeight.set(eYield, iNewValue);
 }
 	
 int CvCityAI::AI_getNeededYield(YieldTypes eYield) const
@@ -4606,7 +4605,7 @@ int CvCityAI::AI_getNeededYield(YieldTypes eYield) const
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	
-	return m_ja_iNeededYield.get(eYield);
+	return m_em_iNeededYield.get(eYield);
 	
 }
 
@@ -4616,7 +4615,7 @@ void CvCityAI::AI_setNeededYield(YieldTypes eYield, int iNewValue)
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	FAssertMsg(iNewValue > 0, "Negative needed yield makes no sense");
 	
-	m_ja_iNeededYield.set(iNewValue, eYield);
+	m_em_iNeededYield.set(eYield, iNewValue);
 }
 
 
@@ -4627,7 +4626,7 @@ int CvCityAI::AI_getTradeBalance(YieldTypes eYield) const
 	
 	int iAdjustment = 100 + 300 / (2 + YIELD_DISCOUNT_TURNS);
 	
-	return (m_ja_iTradeBalance.get(eYield)* iAdjustment) / (YIELD_DISCOUNT_TURNS * 100);
+	return (m_em_iTradeBalance.get(eYield)* iAdjustment) / (YIELD_DISCOUNT_TURNS * 100);
 }
 	
 void CvCityAI::AI_changeTradeBalance(YieldTypes eYield, int iAmount)
@@ -4635,21 +4634,21 @@ void CvCityAI::AI_changeTradeBalance(YieldTypes eYield, int iAmount)
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 	
-	m_ja_iTradeBalance.add(iAmount, eYield);
+	m_em_iTradeBalance.add(eYield, iAmount);
 }
 
 int CvCityAI::AI_getYieldAdvantage(YieldTypes eYield) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	return m_ja_iYieldAdvantage.get(eYield);
+	return m_em_iYieldAdvantage.get(eYield);
 }
 
 void CvCityAI::AI_setYieldAdvantage(YieldTypes eYield, int iNewValue)
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
-	m_ja_iYieldAdvantage.set(iNewValue, eYield);
+	m_em_iYieldAdvantage.set(eYield, iNewValue);
 }
 
 void CvCityAI::AI_assignDesiredYield()
@@ -4711,7 +4710,7 @@ void CvCityAI::AI_updateNeededYields()
 {
 	//This function has been updated to be invariant of the current workforce allocation.
 
-	m_ja_iNeededYield.reset();
+	m_em_iNeededYield.reset();
 	
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -4728,7 +4727,7 @@ void CvCityAI::AI_updateNeededYields()
 					// R&R, ray , MYCP partially based on code of Aymerick - END
 					if (eConsumedYield != NO_YIELD)
 					{
-						m_ja_iNeededYield.add(getProfessionInput(pLoopUnit->getProfession(), pLoopUnit), eConsumedYield);
+						m_em_iNeededYield.add(eConsumedYield, getProfessionInput(pLoopUnit->getProfession(), pLoopUnit));
 					}
 				}
 			}
@@ -4741,7 +4740,7 @@ void CvCityAI::AI_updateNeededYields()
 					// R&R, ray , MYCP partially based on code of Aymerick - START
 					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(eIdealProfession).getYieldsConsumed(0);
 					// R&R, ray , MYCP partially based on code of Aymerick - END
-					m_ja_iNeededYield.add(getProfessionInput(eIdealProfession, pLoopUnit), eConsumedYield);
+					m_em_iNeededYield.add(eConsumedYield, getProfessionInput(eIdealProfession, pLoopUnit));
 				}
 			}
 		}
@@ -4766,7 +4765,7 @@ void CvCityAI::AI_updateNeededYields()
 					{
 						if (AI_getYieldAdvantage(eYieldProduced) == 100)
 						{
-							m_ja_iNeededYield.set(std::max(m_ja_iNeededYield.get(eYieldProduced), getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL)), eYieldProduced);
+							m_em_iNeededYield.set(eYieldProduced, std::max(m_em_iNeededYield.get(eYieldProduced), getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL)));
 						}
 					}
 				}
@@ -6018,7 +6017,7 @@ int CvCityAI::AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const
 		AI_cachePlayerCloseness(iMaxDistance);
 	}
 	
-	return m_aiPlayerCloseness.get(eIndex);
+	return m_em_iPlayerCloseness.get(eIndex);
 }
 
 void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
@@ -6085,7 +6084,7 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 					}
 				}
 			}
-			(const_cast <CvCityAI*> (this))->m_aiPlayerCloseness.set((PlayerTypes)iI,(iBestValue + iValue / 4));
+			(const_cast <CvCityAI*> (this))->m_em_iPlayerCloseness.set((PlayerTypes)iI,(iBestValue + iValue / 4));
 		}
 	}
 	

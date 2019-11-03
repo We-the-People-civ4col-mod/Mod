@@ -809,8 +809,8 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() cons
 	if (bINLINE_1_BYTE) {
 		return (T)(*std::min_element(&m_Inline_1_byte[0], &m_Inline_1_byte[0] + numElements()));
 	}
-	if (bINLINE_2_BYTE) {
-		return (T)(*std::min_element(&m_Inline_2_byte[0], &m_Inline_2_byte[0] + numElements()));
+	if (bINLINE_2_BYTES) {
+		return (T)(*std::min_element(&m_Inline_2_bytes[0], &m_Inline_2_bytes[0] + numElements()));
 	}
 	if (m_pArrayFull == NULL)
 	{
@@ -830,8 +830,8 @@ inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() cons
 	if (bINLINE_1_BYTE) {
 		return (T)(*std::min_element(&m_Inline_1_byte[0], &m_Inline_1_byte[0] + numElements()));
 	}
-	if (bINLINE_2_BYTE) {
-		return (T)(*std::min_element(&m_Inline_2_byte[0], &m_Inline_2_byte[0] + numElements()));
+	if (bINLINE_2_BYTES) {
+		return (T)(*std::min_element(&m_Inline_2_bytes[0], &m_Inline_2_bytes[0] + numElements()));
 	}
 	if (m_pArrayFull == NULL)
 	{
