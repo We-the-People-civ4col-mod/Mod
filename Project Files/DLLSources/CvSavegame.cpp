@@ -827,9 +827,12 @@ CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 int CvSavegameReaderBase::ReadChunk()
 {
 	int iCurrRead = std::min((unsigned int)CHUNK_SIZE, m_iSize - m_iRead);
-	if (!isCompressed()) {
+	if (!isCompressed())
+	{
 		m_pStream->Read(iCurrRead, m_MemoryAllocation);
-	}else{
+	}
+	else
+	{
 		mz_ulong iNumUncompressed = iCurrRead;
 		unsigned short iI;
 		m_pStream->Read(&iI);
@@ -839,7 +842,9 @@ int CvSavegameReaderBase::ReadChunk()
 		{
 			//too small data is not compressed
 			m_pStream->Read(iCurrRead, m_MemoryAllocation);
-		} else {
+		}
+		else
+		{
 			byte* pMemoryCompressed = new byte[iNumCompressed];
 			FAssert(pMemoryCompressed);
 			m_pStream->Read(iNumCompressed, pMemoryCompressed);
@@ -919,7 +924,8 @@ void CvSavegameWriterBase::WriteFile()
 	unsigned int iSize = m_vector.size();
 	iSize += m_table.size();
 	m_pStream->Write(iSize);
-	if(!isCompressed()){
+	if(!isCompressed())
+	{
 		if (m_table.size() > 0)
 		{
 			m_pStream->Write(m_table.size(), &m_table.front());
@@ -929,17 +935,23 @@ void CvSavegameWriterBase::WriteFile()
 		{
 			m_pStream->Write(m_vector.size(), &m_vector.front());
 		}
-	} else {
+	}
+	else
+	{
 		m_table.insert(m_table.end(), m_vector.begin(), m_vector.end());
 		int iWritten = 0;
-		while (iSize - iWritten > 0) {
+		while (iSize - iWritten > 0)
+		{
 			int iCurrWrite = std::min((unsigned int)CHUNK_SIZE, iSize - iWritten);
-			if (iCurrWrite < COMPRESS_THRESHOLD) {
+			if (iCurrWrite < COMPRESS_THRESHOLD)
+			{
 				// dont compress small data
 				mz_ulong iNumCompressed = 0;
 				m_pStream->Write((unsigned short)iNumCompressed);
 				m_pStream->Write(iCurrWrite, &m_table[iWritten]);
-			} else {
+			}
+			else
+			{
 				mz_ulong iNumCompressed = iCurrWrite;
 				mz_ulong iNumUncompressed = iCurrWrite;
 				byte* pMemoryCompressed = new byte[iCurrWrite];
