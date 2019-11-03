@@ -439,6 +439,9 @@
     <ClCompile Include="DLLSources\CvTeamSavegame.cpp">
       <Filter>CV\Savegames</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\Profile.cpp">
+      <Filter>Maintenance\Profile</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -804,6 +807,9 @@
     <ClInclude Include="DLLSources\CvMacros.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\Profile.h">
+      <Filter>Maintenance\Profile</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -858,6 +864,12 @@
     </Filter>
     <Filter Include="Test">
       <UniqueIdentifier>{ad6616d9-6e93-45cb-8cc5-db0c523db5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maintenance">
+      <UniqueIdentifier>{10d77ecb-fe2d-49f1-94da-d4e890cbfc2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maintenance\Profile">
+      <UniqueIdentifier>{ef820b83-1024-4fd9-aa96-673edf03180c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

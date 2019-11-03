@@ -533,6 +533,10 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 //
 void CvGlobals::uninit()
 {
+	// The game is ending. Assume profiling to be done and write the resulting file
+	// the call is ignored if profiling isn't enabled at compile time
+	getProfiler().writeFile();
+
 	//
 	// See also CvXMLLoadUtilityInit.cpp::CleanUpGlobalVariables()
 	//

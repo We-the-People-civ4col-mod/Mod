@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Multi core-Final Release|Win32">
+      <Configuration>Multi core-Final Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Multi core-Assert|Win32">
       <Configuration>Multi core-Assert</Configuration>
       <Platform>Win32</Platform>
@@ -21,6 +25,10 @@
       <Configuration>Single core-Debug</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
+    <ProjectConfiguration Include="Single core-Final Release|Win32">
+      <Configuration>Single core-Final Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Single core-Profile|Win32">
       <Configuration>Single core-Profile</Configuration>
       <Platform>Win32</Platform>
@@ -39,6 +47,10 @@
     </ProjectConfiguration>
     <ProjectConfiguration Include="XML hardcoding-Debug|Win32">
       <Configuration>XML hardcoding-Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="XML hardcoding-Final Release|Win32">
+      <Configuration>XML hardcoding-Final Release</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="XML hardcoding-Profile|Win32">
@@ -64,6 +76,7 @@
     <ClCompile Include="DLLSources\CvTeamSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteGroupSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp" />
+    <ClCompile Include="DLLSources\Profile.cpp" />
     <ClCompile Include="DLLSources\TestEnumMap.cpp" />
     <ClCompile Include="DLLSources\PlayerArray.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
@@ -199,6 +212,7 @@
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DLLSources\Profile.h" />
     <ClInclude Include="DLLSources\CvMacros.h" />
     <ClInclude Include="DLLSources\EnumMap2D.h" />
     <ClInclude Include="DLLSources\EnumMap.h" />
@@ -343,6 +357,11 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -354,6 +373,16 @@
     <CLRSupport>true</CLRSupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
@@ -400,6 +429,9 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Single core-Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -407,6 +439,12 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'" Label="PropertySheets">
@@ -479,6 +517,22 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>set TARGET=FinalRelease
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake dll /NOLOGO</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set TARGET=FinalRelease
+nmake clean /NOLOGO
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake dll /NOLOGO</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set TARGET=FinalRelease
+nmake clean /NOLOGO</NMakeCleanCommandLine>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <NMakeIncludeSearchPath />
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Assert
@@ -535,6 +589,54 @@ bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
+nmake clean /NOLOGO</NMakeCleanCommandLine>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <NMakeIncludeSearchPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
+set TEMP_DIR_POSTFIX=_HARDCODED
+set TARGET=FinalRelease
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake precompile  /NOLOGO
+bin\jom build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
+set TEMP_DIR_POSTFIX=_HARDCODED
+set TARGET=FinalRelease
+nmake clean /NOLOGO
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake precompile  /NOLOGO
+bin\jom build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
+set TEMP_DIR_POSTFIX=_HARDCODED
+set TARGET=FinalRelease
+nmake clean /NOLOGO</NMakeCleanCommandLine>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <NMakeIncludeSearchPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
+set TEMP_DIR_POSTFIX=_HARDCODED
+set TARGET=FinalRelease
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake precompile  /NOLOGO
+bin\jom build</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
+set TEMP_DIR_POSTFIX=_HARDCODED
+set TARGET=FinalRelease
+nmake clean /NOLOGO
+nmake source_list /NOLOGO
+nmake fastdep /NOLOGO
+nmake precompile  /NOLOGO
+bin\jom build</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
+set TEMP_DIR_POSTFIX=_HARDCODED
+set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
@@ -596,7 +698,7 @@ nmake precompile  /NOLOGO
 bin\jom build</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Profile|Win32'">
@@ -620,7 +722,7 @@ bin\jom build</NMakeReBuildCommandLine>
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Assert|Win32'">

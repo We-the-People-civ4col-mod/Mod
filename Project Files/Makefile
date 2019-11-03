@@ -159,17 +159,22 @@ CUSTOM_LDFLAGS =
 FILE_DEPENDS = $(TEMP_TARGET_FILES)\depends
 
 #### CFLAGS ####
-GLOBAL_CFLAGS=/GR /Gy /W3 /EHsc /Gd /Gm- /Fd"$(Target_PDB)" $(CUSTOM_CFLAGS) $(PROJECT_CFLAGS)
-Debug_CFLAGS=/MD /Z7 /Od /RTC1 $(Debug_DEFINES) $(GLOBAL_CFLAGS)
+GLOBAL_CFLAGS=/GR /Z7 /Gy /W3 /EHsc /Gd /Gm- /Fd"$(Target_PDB)" $(CUSTOM_CFLAGS) $(PROJECT_CFLAGS)
+Debug_CFLAGS=/MD /Od /RTC1 $(Debug_DEFINES) $(GLOBAL_CFLAGS)
 Release_CFLAGS= /MD /O2 /Oy /Oi /G7 $(Release_DEFINES) $(GLOBAL_CFLAGS)
 
 PRECOMPILE_CFLAGS1 = /Yu"
 PRECOMPILE_CFLAGS2 = CvGameCoreDLL.h" /Fp"$(Target_PCH)"
 
 #### LDFLAGS ####
-GLOBAL_LDFLAGS=/DLL /NOLOGO /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /PDB:"$(Target_PDB)" $(CUSTOM_LDFLAGS) $(PROJECT_LDFLAGS) /IGNORE:4089
-Debug_LDFLAGS=/INCREMENTAL /DEBUG /IMPLIB:"$(Target_STATICLIB)" $(GLOBAL_LDFLAGS)
+
+# /DEBUG makes the linker make a pdb file (symbols), something we need for both debugging and profiling
+GLOBAL_LDFLAGS=/DLL /NOLOGO /DEBUG /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /PDB:"$(Target_PDB)" $(CUSTOM_LDFLAGS) $(PROJECT_LDFLAGS) /IGNORE:4089
+Debug_LDFLAGS=/INCREMENTAL /IMPLIB:"$(Target_STATICLIB)" $(GLOBAL_LDFLAGS)
 Release_LDFLAGS=/INCREMENTAL:NO /OPT:REF /OPT:ICF $(GLOBAL_LDFLAGS)
+
+FAST_CFLAGS  = /GL
+FAST_LDFLAGS = /LTCG
 
 #### INCLUDES ####
 GLOBAL_INCS=/I"$(TOOLKIT)/include" /I"$(PSDK)/Include" /I"$(PSDK)/Include/mfc"
@@ -209,17 +214,21 @@ LIBS    = $(LIBS) msvcprt.lib
 CFLAGS  = $(Release_CFLAGS)
 LDFLAGS = $(Release_LDFLAGS)
 !ENDIF
+!IF "$(TARGET)" == "FinalRelease"
+CFLAGS  = $(Release_CFLAGS) $(FAST_CFLAGS)
+LDFLAGS = $(Release_LDFLAGS) $(FAST_LDFLAGS)
+!ENDIF
 !IF "$(TARGET)" == "Assert"
 CFLAGS  = $(Release_CFLAGS) /DFASSERT_ENABLE
 LDFLAGS = $(Release_LDFLAGS)
 !ENDIF
 !IF "$(TARGET)" == "Profile"
-CFLAGS  = $(Release_CFLAGS) /Z7
-LDFLAGS = $(Debug_LDFLAGS)
+CFLAGS  = $(Release_CFLAGS) $(FAST_CFLAGS) /DPROFILING_ENABLED
+LDFLAGS = $(Release_LDFLAGS) $(FAST_LDFLAGS)
 !ENDIF
 
 !IFNDEF CFLAGS
-!ERROR Target "$(TARGET)" not supported. Supported targets: Debug Release Assert Profile
+!ERROR Target "$(TARGET)" not supported. Supported targets: Debug Release FinalRelease Assert Profile
 !ENDIF
 
 !IF EXIST ($(FILE_DEPENDS))
@@ -250,9 +259,7 @@ $(Target_BIN): $(Target_BIN_TEMP)
 build: $(Target_BIN)
 !IFDEF YOURMOD
 	-COPY "$(Target_BIN)" "$(YOURMOD)\Assets\."
-!IF "$(TARGET)" == "Debug" || "$(TARGET)" == "Profile"
 	-COPY "$(Target_PDB)" "$(YOURMOD)\Assets\."
-!ENDIF
 !IF "$(YOURMOD)" != ".."
 	-xcopy "..\Assets\*" "$(YOURMOD)\Assets\*" /e /y /f /d
 	-xcopy "..\PublicMaps\*" "$(YOURMOD)\PublicMaps\*" /e /y /f /d
