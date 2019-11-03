@@ -4740,7 +4740,10 @@ void CvCityAI::AI_updateNeededYields()
 					// R&R, ray , MYCP partially based on code of Aymerick - START
 					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(eIdealProfession).getYieldsConsumed(0);
 					// R&R, ray , MYCP partially based on code of Aymerick - END
-					m_em_iNeededYield.add(eConsumedYield, getProfessionInput(eIdealProfession, pLoopUnit));
+					if (eConsumedYield != NO_YIELD)
+					{
+						m_em_iNeededYield.add(eConsumedYield, getProfessionInput(eIdealProfession, pLoopUnit));
+					}
 				}
 			}
 		}
