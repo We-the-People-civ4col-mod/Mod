@@ -255,9 +255,6 @@ private:
 	template <bool bInline>
 	unsigned int _getNumBoolBlocks() const;
 
-	template <int iIndex>
-	int _getTotal() const;
-
 	template <int iSize>
 	void _Read(CvSavegameReader& reader);
 
@@ -458,25 +455,6 @@ private:
 	__forceinline unsigned int _getNumBoolBlocks<true>() const
 	{
 		return NUM_BOOL_BLOCKS;
-	}
-
-	template <>
-	__forceinline int _getTotal<0>() const
-	{
-		// last template in the unrolled loop
-		return get((LengthType)0);
-	}
-
-	template <>
-	int _getTotal<MAX_SHORT-1>() const
-	{
-		// length is unknown at compile time. Use runtime looping
-		int iReturnVal = 0;
-		for (IndexType eIndex = First(); eIndex < getLength(); ++eIndex)
-		{
-			iReturnVal += get(eIndex);
-		}
-		return iReturnVal;
 	}
 
 	template<>
@@ -724,24 +702,23 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::addAll(T e
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getTotal() const
 {
+	// bINLINE is set at compile time and if true, isAllocated will always be true
+	// used here to tell the compiler that the true statement (not allocated) can be declared unreachable at compile time
 	if (!bINLINE && !isAllocated())
 	{
 		// no need to loop through unallocated memory
-		// We already know the answer, particularly if DEFAULT is 0
 		return DEFAULT * getLength();
 	}
 	else
 	{
-		return _getTotal<LENGTH - 1>();
+		int iReturnVal = 0;
+		const int iLength = getLength();
+		for (IndexType eIndex = First(); eIndex < iLength; ++eIndex)
+		{
+			iReturnVal += get(eIndex);
+		}
+		return iReturnVal;
 	}
-}
-
-template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
-template<int iIndex>
-__forceinline int EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_getTotal() const
-{
-	// unroll the loop using templates
-	return _getTotal<iIndex - 1>() + get((LengthType)iIndex);
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
