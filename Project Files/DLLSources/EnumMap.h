@@ -802,25 +802,42 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() const
 {
-	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
-	if (m_pArray == NULL)
+	if (bINLINE_NATIVE) {
+		return (T)(*std::min_element(&m_InlineNative[0], &m_InlineNative[0] + numElements()));
+	}
+	if (bINLINE_1_BYTE) {
+		return (T)(*std::min_element(&m_Inline_1_byte[0], &m_Inline_1_byte[0] + numElements()));
+	}
+	if (bINLINE_2_BYTE) {
+		return (T)(*std::min_element(&m_Inline_2_byte[0], &m_Inline_2_byte[0] + numElements()));
+	}
+	if (m_pArrayFull == NULL)
 	{
 		return DEFAULT;
 	}
-	return (T)(*std::min_element(m_pArray, m_pArray + numElements()));
+	return (T)(*std::min_element(m_pArrayFull, m_pArrayFull + numElements()));
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() const
 {
-	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
-	if (m_pArray == NULL)
+	if(bINLINE_NATIVE)
+	{
+		return (T)(*std::max_element(&m_InlineNative[0], &m_InlineNative[0] + numElements()));
+	}
+	if (bINLINE_1_BYTE) {
+		return (T)(*std::min_element(&m_Inline_1_byte[0], &m_Inline_1_byte[0] + numElements()));
+	}
+	if (bINLINE_2_BYTE) {
+		return (T)(*std::min_element(&m_Inline_2_byte[0], &m_Inline_2_byte[0] + numElements()));
+	}
+	if (m_pArrayFull == NULL)
 	{
 		return DEFAULT;
 	}
-	return (T)(*std::max_element(m_pArray, m_pArray + numElements()));
+	return (T)(*std::max_element(m_pArrayFull, m_pArrayFull + numElements()));
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
