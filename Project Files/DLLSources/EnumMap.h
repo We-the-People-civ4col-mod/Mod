@@ -802,25 +802,42 @@ inline bool EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::hasContent
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMin() const
 {
-	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
-	if (m_pArray == NULL)
+	if (bINLINE_NATIVE) {
+		return (T)(*std::min_element(&m_InlineNative[0], &m_InlineNative[0] + numElements()));
+	}
+	if (bINLINE_1_BYTE) {
+		return (T)(*std::min_element(&m_Inline_1_byte[0], &m_Inline_1_byte[0] + numElements()));
+	}
+	if (bINLINE_2_BYTES) {
+		return (T)(*std::min_element(&m_Inline_2_bytes[0], &m_Inline_2_bytes[0] + numElements()));
+	}
+	if (m_pArrayFull == NULL)
 	{
 		return DEFAULT;
 	}
-	return (T)(*std::min_element(m_pArray, m_pArray + numElements()));
+	return (T)(*std::min_element(m_pArrayFull, m_pArrayFull + numElements()));
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
 inline T EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::getMax() const
 {
-	BOOST_STATIC_ASSERT(false); // implementation isn't generic yet
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL);
-	if (m_pArray == NULL)
+	if(bINLINE_NATIVE)
+	{
+		return (T)(*std::max_element(&m_InlineNative[0], &m_InlineNative[0] + numElements()));
+	}
+	if (bINLINE_1_BYTE) {
+		return (T)(*std::min_element(&m_Inline_1_byte[0], &m_Inline_1_byte[0] + numElements()));
+	}
+	if (bINLINE_2_BYTES) {
+		return (T)(*std::min_element(&m_Inline_2_bytes[0], &m_Inline_2_bytes[0] + numElements()));
+	}
+	if (m_pArrayFull == NULL)
 	{
 		return DEFAULT;
 	}
-	return (T)(*std::max_element(m_pArray, m_pArray + numElements()));
+	return (T)(*std::max_element(m_pArrayFull, m_pArrayFull + numElements()));
 }
 
 template<class IndexType, class T, int DEFAULT, class T_SUBSET, class LengthType>
@@ -1337,6 +1354,7 @@ SET_ARRAY_XML_ENUM(ColorTypes          , NUM_COLOR_TYPES          , JIT_ARRAY_CO
 SET_ARRAY_XML_ENUM(ContactTypes        , NUM_CONTACT_TYPES        , JIT_ARRAY_CONTACT         , COMPILE_TIME_NUM_CONTACT_TYPES        );
 SET_ARRAY_XML_ENUM(CultureLevelTypes   , NUM_CULTURELEVEL_TYPES   , JIT_ARRAY_CULTURE         , COMPILE_TIME_NUM_CULTURELEVEL_TYPES   );
 SET_ARRAY_XML_ENUM(DiplomacyTypes      , NUM_DIPLOMACY_TYPES      , JIT_ARRAY_DIPLO           , COMPILE_TIME_NUM_DIPLOMACY_TYPES      );
+SET_ARRAY_XML_ENUM(DomainTypes         , NUM_DOMAIN_TYPES         , JIT_ARRAY_DOMAIN          , COMPILE_TIME_NUM_DOMAIN_TYPES         );
 SET_ARRAY_XML_ENUM(EraTypes            , NUM_ERA_TYPES            , JIT_ARRAY_ERA             , COMPILE_TIME_NUM_ERA_TYPES            );
 SET_ARRAY_XML_ENUM(EmotionTypes        , NUM_EMOTION_TYPES        , JIT_ARRAY_EMOTION         , COMPILE_TIME_NUM_EMOTION_TYPES        );
 SET_ARRAY_XML_ENUM(EmphasizeTypes      , NUM_EMPHASIZE_TYPES      , JIT_ARRAY_EMPHASIZE       , COMPILE_TIME_NUM_EMPHASIZE_TYPES      );

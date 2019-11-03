@@ -266,9 +266,11 @@ source_list: Make_Dir
 	@ECHO Building source list
 	@ECHO SOURCES= \> $(FILE_DEPENDS)
 	@FOR %j in ($(SUBDIRS)) DO @(FOR %i IN ($(SOURCE_DIR)\%j\*.cpp) DO @ECHO %i \>> $(FILE_DEPENDS))
+	@FOR %j in ($(SUBDIRS)) DO @(FOR %i IN ($(SOURCE_DIR)\%j\*.c) DO @ECHO %i \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
 	@ECHO OBJS= \>> $(FILE_DEPENDS)
     @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.cpp') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
+    @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.c') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
 	@perl bin\xml_enum_gen.pl
 
@@ -295,6 +297,11 @@ $(Target_BIN_TEMP): $(OBJS) $(Target_RESOURCE)
 {$(SOURCE_DIR)\.}.cpp{$(TEMP_TARGET_FILES)\.}.obj:
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
+	@DEL "$*.obj.@"
+
+{$(SOURCE_DIR)\.}.c{$(TEMP_TARGET_FILES)\.}.obj:
+	@ECHO.>"$*.obj.@"
+    @$(CPP) /nologo $(CFLAGS) $(INCS) /Fo$*.obj /c $<
 	@DEL "$*.obj.@"
 	
 {$(SOURCE_DIR)\$(SUBDIR1)}.cpp{$(TEMP_TARGET_FILES)\$(SUBDIR1)}.obj:

@@ -15,7 +15,8 @@ struct CvPopupButtonPython;
 #include "CvPopupInfo.h"
 #include "CvReplayMessage.h"
 
-#define CHUNK_SIZE (50000)
+#define CHUNK_SIZE (MAX_UNSIGNED_SHORT)
+#define COMPRESS_THRESHOLD (MAX_UNSIGNED_CHAR)
 
 // enum values for each class used in the savegame.
 // ideally each class using SavegameVariableTypes should have an index here.

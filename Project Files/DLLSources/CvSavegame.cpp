@@ -4,6 +4,7 @@
 #include "FVariableSystem.h"
 #include "CvPopupInfo.h"
 #include "CvDiploParameters.h"
+#include "miniz.h"
 
 //
 // Classes to handle savegames
@@ -791,7 +792,7 @@ void CvSavegameWriter::Write(CvTradeRouteGroup    &variable) { variable.write(*t
 enum Savegame_baseclass_flags
 {
 	Savegame_baseclass_flags_debug,
-	Savegame_baseclass_flags_compressed
+	Savegame_baseclass_flags_compressed //uses minz.h to compress the data
 };
 
 CvSavegameBase::CvSavegameBase()
@@ -817,7 +818,7 @@ CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 	m_pStream->Read(&m_iSize);
 	if (m_iSize > 0)
 	{
-		m_MemoryAllocation = new byte[CHUNK_SIZE];
+		m_MemoryAllocation = new byte[std::min((unsigned int)CHUNK_SIZE,m_iSize)];
 		FAssert(m_MemoryAllocation);
 		FAssert(ReadChunk());
 	}
@@ -825,20 +826,33 @@ CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 
 int CvSavegameReaderBase::ReadChunk()
 {
-	if(!isCompressed()){
-		int iCurrRead;
-		if (m_iSize-m_iRead > CHUNK_SIZE)
-		{
-			iCurrRead = CHUNK_SIZE;
-		}else{
-			iCurrRead = m_iSize - m_iRead;
-		}
+	int iCurrRead = std::min((unsigned int)CHUNK_SIZE, m_iSize - m_iRead);
+	if (!isCompressed()) {
 		m_pStream->Read(iCurrRead, m_MemoryAllocation);
-		m_iRead+=iCurrRead;
-		m_Memory = m_MemoryAllocation;
-		m_MemoryEnd = m_MemoryAllocation+iCurrRead;
-		return iCurrRead;
+	}else{
+		mz_ulong iNumUncompressed = iCurrRead;
+		unsigned short iI;
+		m_pStream->Read(&iI);
+		mz_ulong iNumCompressed = iI;
+		FAssert(iNumCompressed < CHUNK_SIZE);
+		if (iNumCompressed == 0)
+		{
+			//too small data is not compressed
+			m_pStream->Read(iCurrRead, m_MemoryAllocation);
+		} else {
+			byte* pMemoryCompressed = new byte[iNumCompressed];
+			FAssert(pMemoryCompressed);
+			m_pStream->Read(iNumCompressed, pMemoryCompressed);
+			int iStatus = uncompress(m_MemoryAllocation, &iNumUncompressed, pMemoryCompressed, iNumCompressed);
+			FAssertMsg(iStatus == Z_OK, "Decompression Failed");
+			FAssert(iNumUncompressed == iCurrRead);
+			SAFE_DELETE_ARRAY(pMemoryCompressed);
+		}
 	}
+	m_iRead+=iCurrRead;
+	m_Memory = m_MemoryAllocation;
+	m_MemoryEnd = m_MemoryAllocation+iCurrRead;
+	return iCurrRead;
 }
 
 CvSavegameReaderBase::~CvSavegameReaderBase()
@@ -889,6 +903,8 @@ CvSavegameWriterBase::CvSavegameWriterBase(FDataStreamBase* pStream)
 	// set the debug flag
 	// TODO: don't hardcode all savegames to include debug info
 	SetBit(m_iFlag, Savegame_baseclass_flags_debug);
+	// TODO: don't hardcode all savegames to compress data
+	SetBit(m_iFlag, Savegame_baseclass_flags_compressed);
 
 	// m_table needs to end with an empty string, which is effectively just a 0 byte.
 	// Add this as the first byte in m_vector here in the constructor because then it's easily done.
@@ -912,6 +928,38 @@ void CvSavegameWriterBase::WriteFile()
 		if (m_vector.size() > 0)
 		{
 			m_pStream->Write(m_vector.size(), &m_vector.front());
+		}
+	} else {
+		m_table.insert(m_table.end(), m_vector.begin(), m_vector.end());
+		int iWritten = 0;
+		while (iSize - iWritten > 0) {
+			int iCurrWrite = std::min((unsigned int)CHUNK_SIZE, iSize - iWritten);
+			if (iCurrWrite < COMPRESS_THRESHOLD) {
+				// dont compress small data
+				mz_ulong iNumCompressed = 0;
+				m_pStream->Write((unsigned short)iNumCompressed);
+				m_pStream->Write(iCurrWrite, &m_table[iWritten]);
+			} else {
+				mz_ulong iNumCompressed = iCurrWrite;
+				mz_ulong iNumUncompressed = iCurrWrite;
+				byte* pMemoryCompressed = new byte[iCurrWrite];
+				FAssert(pMemoryCompressed);
+				int iStatus = compress(pMemoryCompressed, &iNumCompressed, &m_table[iWritten], iNumUncompressed);
+				FAssertMsg(iStatus == Z_OK, "Compression Failed");
+				FAssert(iNumCompressed < CHUNK_SIZE);
+#ifdef DEBUG // test if the data can be uncompressed again
+				byte* test = new byte[iCurrWrite];
+				mz_ulong unc = iCurrWrite;
+				int iStatus2 = uncompress(test, &unc, pMemoryCompressed, iNumCompressed);
+				for (unsigned int iI = 0; iI < unc; iI++)
+					FAssertMsg(test[iI] == m_table[iWritten + iI], "Compression Failed");
+				FAssertMsg(iStatus2 == Z_OK, "Compression Failed");
+#endif
+				m_pStream->Write((unsigned short)iNumCompressed);
+				m_pStream->Write(iNumCompressed, pMemoryCompressed);
+				SAFE_DELETE_ARRAY(pMemoryCompressed);
+			}
+			iWritten += iCurrWrite;
 		}
 	}
 }

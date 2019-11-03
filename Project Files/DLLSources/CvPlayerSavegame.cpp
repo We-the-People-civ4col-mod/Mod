@@ -727,6 +727,7 @@ void CvPlayer::read(CvSavegameReader reader)
 
 		case PlayerSave_ID: reader.Read(m_eID);
 			updateTeamType(); //m_eTeamType not saved
+			updateHuman();
 			break;
 		case PlayerSave_PersonalityType: reader.Read(m_ePersonalityType); break;
 		case PlayerSave_CurrentEra: reader.Read(m_eCurrentEra); break;
@@ -826,8 +827,7 @@ void CvPlayer::read(CvSavegameReader reader)
 		}
 	}
 
-	// The player is loaded. Now set up the cache according to the read data.
-	updateHuman();
+
 	// The CivEffect cache isn't saved. Instead it's recalculated on load.
 	// This will make it adapt to changed xml settings.
 	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
