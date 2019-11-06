@@ -156,6 +156,11 @@ const wchar*  CvInfoBase::getHelp() const
 		m_szCachedHelp = gDLL->getText(m_szHelpKey);
 	}
 
+	if (m_szCachedHelp == L"????")
+	{
+		return L"";
+	}
+
 	return m_szCachedHelp;
 }
 
@@ -164,6 +169,11 @@ const wchar* CvInfoBase::getStrategy() const
 	if (m_szCachedStrategy.empty())
 	{
 		m_szCachedStrategy = gDLL->getText(m_szStrategyKey);
+	}
+
+	if (m_szCachedStrategy == L"????")
+	{
+		return L"";
 	}
 
 	return m_szCachedStrategy;
