@@ -206,7 +206,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS</Tag>
-        <English>TXT_KEY_PLANT_FOREST</English>
+        <English>TXT_KEY_BUILD_REFORESTATION_GRASS</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_HELP</Tag>
@@ -214,7 +214,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH</Tag>
-        <English>TXT_KEY_PLANT_JUNGLE</English>
+        <English>TXT_KEY_BUILD_REFORESTATION_MARSH</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH_HELP</Tag>

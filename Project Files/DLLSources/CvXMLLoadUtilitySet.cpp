@@ -1662,6 +1662,13 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 	}
 }
 
+struct GameTextContainer
+{
+	CvString m_Type;
+	CvWString m_Text;
+	CvWString m_Gender;
+	CvWString m_Plural;
+};
 
 //------------------------------------------------------------------------------------------------------
 //
@@ -1683,11 +1690,46 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		gDLL->getXMLIFace()->SetToParent(m_pFXml);
 		gDLL->getXMLIFace()->SetToChild(m_pFXml);
 
+		std::vector<GameTextContainer> pastStrings;
+
 		// loop through each tag
 		for (i=0; i < iNumVals; i++)
 		{
 			CvGameText textInfo;
 			textInfo.read(this, bUTF8, szFileName);
+
+			// if the string is a TXT_KEY, try to look up the string it points to
+			while (wcsncmp(textInfo.getText(), L"TXT_KEY", 7) == 0)
+			{
+				bool bFound = false;
+
+				CvWString szExistingText = textInfo.getText();
+				for	(std::vector<GameTextContainer>::iterator it = pastStrings.begin(); it != pastStrings.end(); ++it)
+				{
+					CvWString loopString(it->m_Type);
+					if (loopString == szExistingText)
+					{
+						textInfo.setText(it->m_Text);
+						textInfo.setGender(it->m_Gender);
+						textInfo.setPlural(it->m_Plural);
+						bFound = true;
+						break;
+					}
+				}
+
+				if (!bFound)
+				{
+					break;
+				}
+			}
+
+			GameTextContainer newContainer;
+			newContainer.m_Type = textInfo.getType();
+			newContainer.m_Text = textInfo.getText();
+			newContainer.m_Gender = textInfo.getGender();
+			newContainer.m_Plural = textInfo.getPlural();
+
+			pastStrings.push_back(newContainer);
 
 			gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml) && i!=iNumVals-1)
