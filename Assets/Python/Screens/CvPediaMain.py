@@ -104,7 +104,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 # TAC Start
 # Credits Bildschirm Start
 # alt:		self.CREDITS_TEXT = u"<font=4>" + localText.getText("TXT_KEY_CREDITS_HEAD", ()).upper() + "</font>"
-		self.CREDITS_TEXT = u"<font=4>" + localText.getText("[COLOR_FONT_GOLD]", ()) + localText.getText("TXT_KEY_CREDITS_HEAD", ()).upper() + "</font>"
+		self.CREDITS_TEXT = u"<font=4>" + localText.getText("[COLOR_FONT_GOLD]", ()) + localText.getText("TXT_KEY_CREDITS_BUTTON", ()).upper() + "</font>"
 # Credits Bildschirm Ende
 # Readme Bildschirm Start
 # alt:		self.README_TEXT = u"<font=4>" + localText.getText("TXT_KEY_README_BUTTON", ()).upper() + "</font>"
@@ -913,8 +913,131 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					screen.addDDSGFC("TextBackgroundShadow", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SHADOW_BOX").getPath(), 0, 0, self.W_SCREEN, self.H_SCREEN, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					
 					szTextTitle = u"<font=4b>" + localText.getText("TXT_KEY_CREDITS_HEAD", ()).upper() + u"</font>"
-					szTextData = TextFontSize + localText.getText("[COLOR_FONT_GOLD]", ()) + localText.getText("TXT_KEY_CREDITS_TEXT", ()) + u"</font>"
-										
+					szTextData = TextFontSize + localText.getText("[COLOR_FONT_GOLD]", ())
+					
+					#WTP
+					list = []
+					list.append("Nightinggale")
+					list.append("Devolution")
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_WTP", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					for szName in (list):
+						szTextData += localText.getText("[ICON_BULLET] ", ())
+						szTextData += localText.getText(szName, ())
+						szTextData += localText.getText("[NEWLINE]", ())
+					
+					# RAR
+					list = []
+					list.append("raystuttgart")
+					list.append("Robert Surcouf")
+					list.append("colonialfan")
+					list.append("KJ Jansson")
+					list.append("Androrc")
+					list.append("Schmiddie (Robert E. Lee)")
+					list.append("orlanth")
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_RAR", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					for szName in list:
+						szTextData += localText.getText("[ICON_BULLET] " + szName + "[NEWLINE]", ())
+					
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					# TAC
+					list = []
+					list.append("Akropolis")
+					list.append("Elwood")
+					list.append("Fankman")
+					list.append("koma13")
+					list.append("TXT_KEY_CREDITS_MELCHER_KURZER")
+					list.append("Ronnar")
+					list.append("TXT_KEY_CREDITS_STOPSEL")
+					list.append("Writing Bull")
+					list.append("xXstrikerXx")
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_TAC", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					for szName in (list):
+						szTextData += localText.getText("[ICON_BULLET] ", ())
+						szTextData += localText.getText(szName, ())
+						szTextData += localText.getText("[NEWLINE]", ())
+					
+					list = []
+					list.append("raystuttgart")
+					list.append("Pfeffersack")
+					list.append("Willi Tell")
+					list.append("King MB")
+					list.append("Robert E. Lee")
+					
+					for szName in (list):
+						szTextData += localText.getText("[ICON_BULLET] ", ())
+						szTextData += localText.getText(szName, ())
+						szTextData += u" "
+						szTextData += localText.getText("TXT_KEY_CREDITS_FORMER_MEMBER", ())
+						szTextData += localText.getText("[NEWLINE]", ())
+					
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_MUSIC", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_OTHER_PROJECTS", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					# other, RAR
+					list = []
+					list.append("Isabelxxx")
+					list.append("Willi Tell")
+					list.append("Writing Bull")
+					list.append("Dale")
+					list.append("Kailric")
+					list.append("Aymerick")
+					list.append("Jeckel")
+					list.append("TC01")
+					list.append("Dom Pedro II")
+					list.append("Trachmyr")
+					list.append("NeseryozniyVET")
+					list.append("Dazio")
+					list.append("M07")
+					list.append("bernie14")
+					list.append("ekmek")
+					list.append("SaibotLieh")
+					list.append("Sanotra")
+					list.append("Aeterna")
+					list.append("Roamty")
+					list.append("Kathy")
+					list.append("agnat86")
+					list.append("Nightinggale")
+					list.append("Marla_Singer")
+					list.append("Bakuel")
+					list.append("Tre59")
+					list.append("Commander Bello")
+					list.append("vetiarvind")
+					list.append("TXT_KEY_CREDITS_OTHER_NAME_1")
+					list.append("TXT_KEY_CREDITS_OTHER_NAME_2")
+					list.append("TXT_KEY_CREDITS_OTHER_NAME_3")
+					list.append("TXT_KEY_CREDITS_OTHER_NAME_4")
+					
+					for szName in (list):
+						szTextData += localText.getText("[ICON_BULLET] ", ())
+						szTextData += localText.getText(szName, ())
+						szTextData += localText.getText("[NEWLINE]", ())
+					
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_OTHER_PROJECTS_TAC", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					szTextData += localText.getText("[NEWLINE]", ())
+					
+					szTextData += localText.getText("TXT_KEY_CREDITS_END", ())
+					
+					szTextData += u"</font>"
+					
 					screen.setLabel("TextTitle", "TextTopPanel", szTextTitle, CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2, self.Y_TITLE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, -1, -1)
 					screen.attachMultilineTextAt("TextBackgroundShadow", "TextData", szTextData, self.W_SCREEN / 16, self.H_SCREEN / 8, self.W_SCREEN - self.W_SCREEN / 8, self.H_SCREEN - self.H_SCREEN / 4, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 					screen.setText("TextExitButton", "Background", self.EXIT_TEXT, CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2, self.Y_EXIT, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, TextExit_ID, -1)

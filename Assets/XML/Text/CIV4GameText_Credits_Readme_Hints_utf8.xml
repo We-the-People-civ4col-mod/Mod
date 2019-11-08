@@ -6,463 +6,135 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY_</Tag>
-		<English></English>
-		<French></French>
-		<German></German>
-		<Italian></Italian>
-		<Spanish></Spanish>
+		<Tag>TXT_KEY_CREDITS_BUTTON</Tag>
+		<English>WTP - Credits</English>
+		<French>WTP - Crédits</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_HEAD</Tag>
-		<English>RaR - Credits</English>
-		<French>RaR - Crédits</French>
-		<German>RaR - Credits</German>
-		<Italian>RaR - Credits</Italian>
-		<Spanish>RaR - Credits</Spanish>
+		<English>We The People - Credits</English>
+		<French>We The People - Crédits</French>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CREDITS_TEXT</Tag>
-		<English>
-[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.
-Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455 [NEWLINE]
-* raystuttgart
-* Robert Surcouf
-* colonialfan
-* KJ Jansson
-* Androrc
-* Schmiddie (Robert E. Lee)
-* orlanth[NEWLINE]
-[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1][NEWLINE]
-* Akropolis
-* Elwood
-* Fankman
-* koma13
-* melcher kürzer
-* Ronnar
-* Stöpsel
-* Writing Bull
-* xXstrikerXx
-* raystuttgart (former member)
-* Pfeffersack (former member)
-* Willi Tell (former member)
-* King MB (former member)
-* Robert E. Lee (former member)[NEWLINE]
-[H1]Special Credits for our Soundtrack to Rene Osmanczyk who allowed us to use his fantastic work.[\H1][NEWLINE]
-[H1]Credits to artists, modders and projects for work included:[\H1][NEWLINE]
-* Isabelxxx
-* Willi Tell
-* Writing Bull
-* Dale
-* Kailric
-* Aymerick
-* Jeckel
-* TC01
-* Dom Pedro II
-* Trachmyr
-* NeseryozniyVET
-* Dazio
-* M07
-* bernie14
-* ekmek
-* SaibotLieh
-* Sanotra
-* Aeterna
-* Roamty
-* Kathy
-* agnat86
-* Nightingale
-* Marla_Singer
-* Bakuel
-* Tre59
-* Commander Bello
-* vetiarvind
-* Victor Meirelles (Painting: Primeira missa no Brasil)
-* John Trumbull (Painting: The Death of General Warren at the Battle of Bunker Hill)
-* George Walter Vincent Smith (Painting: New England Scenery)
-* Clint Mansell (Main Theme)[NEWLINE]
-[H1]Further Credits go other artists, modders and projects for work included through TAC:[\H1][NEWLINE]
-* Netbandit (Netbandit's balance MOD)
-* Dale (Age of Discovery II; Achievements v1.00)
-* cgtextures.com (textures)
-* the_suebian (background images)
-* cephalo (script Faire Weather)
-* ledat (script Hemispherical)
-* Ekmek (leaderheads)
-* Mangammal (leaderhead model)
-* Aymerick (artwork plantation, parts of whaling, parts of route planning)
-* Deliverator &amp; BLU-Mod-Team (units)
-* oleg153 (artwork units)
-* charle88 (artwork units)
-* Kailric (artwork units, parts of whaling feature)
-* jdog5000 (code attacks of AI)
-* hrochland (artwork tornado)
-* Fierabras (events "tornado" and "volcano")
-* Kissa (artwork mountain)
-* Team of Fall for Heaven (artwork desert)
-* Marry Harrsch (foto)
-* Aeterna (French Translation)
-[NEWLINE]
-And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We could use quite much material from these games.[NEWLINE]
+		<Tag>TXT_KEY_CREDITS_WTP</Tag>
+		<English>[H1]"We The People" (WTP)[\H1]</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_RAR</Tag>
+		<English>[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.[NEWLINE]Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455</English>
+		<French>[H1]"Religion and Revolution" (RaR)[\H1]a été développé par une équipe internationale de moddeurs sur le site de CivFanatics. Venez nous rendre visite ici: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE]</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_TAC</Tag>
+		<English>[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1]</English>
+		<French>[H1]Nous tenons à remercier tout particulièrementles membres de l'équipe de développement du mod TAC ("The Authentic Colonization") y compris les anciens membres[\H1]</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_MUSIC</Tag>
+		<English>[H1]Special Credits for our Soundtrack to Rene Osmanczyk who allowed us to use his fantastic work.[\H1]</English>
+		<French>[H1]Nous remercions chaleureusement Rene Osmanczyk pour a bande-son extraordinaire.[\H1]</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_OTHER_PROJECTS</Tag>
+		<English>[H1]Credits to artists, modders and projects for work included:[\H1]</English>
+		<French>[H1]Nous remercions aussi les artistes, moddeurs ou projets dont les travaux ont été inclus:[\H1]</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_OTHER_PROJECTS_TAC</Tag>
+		<English>[H1]Further Credits go other artists, modders and projects for work included through TAC:[\H1]
+[ICON_BULLET] Netbandit (Netbandit's balance MOD)
+[ICON_BULLET] Dale (Age of Discovery II; Achievements v1.00)
+[ICON_BULLET] cgtextures.com (textures)
+[ICON_BULLET] the_suebian (background images)
+[ICON_BULLET] cephalo (script Faire Weather)
+[ICON_BULLET] ledat (script Hemispherical)
+[ICON_BULLET] Ekmek (leaderheads)
+[ICON_BULLET] Mangammal (leaderhead model)
+[ICON_BULLET] Aymerick (artwork plantation, parts of whaling, parts of route planning)
+[ICON_BULLET] Deliverator &amp; BLU-Mod-Team (units)
+[ICON_BULLET] oleg153 (artwork units)
+[ICON_BULLET] charle88 (artwork units)
+[ICON_BULLET] Kailric (artwork units, parts of whaling feature)
+[ICON_BULLET] jdog5000 (code attacks of AI)
+[ICON_BULLET] hrochland (artwork tornado)
+[ICON_BULLET] Fierabras (events "tornado" and "volcano")
+[ICON_BULLET] Kissa (artwork mountain)
+[ICON_BULLET] Team of Fall for Heaven (artwork desert)
+[ICON_BULLET] Marry Harrsch (foto)
+[ICON_BULLET] Aeterna (French Translation)</English>
+		<French>[H1]Nous remercions également d'autres contributeurs dont le travail avait été repris par TAC:[\H1][NEWLINE]
+[ICON_BULLET] Netbandit (Netbandit's balance MOD)
+[ICON_BULLET] Dale (Age of Discovery II; Achievements v1.00)
+[ICON_BULLET] cgtextures.com (textures)
+[ICON_BULLET] the_suebian (images de fond)
+[ICON_BULLET] cephalo (script Faire Weather)
+[ICON_BULLET] ledat (script Hemispherical)
+[ICON_BULLET] Ekmek (leaderheads)
+[ICON_BULLET] Mangammal (modèle de leaderhead)
+[ICON_BULLET] Aymerick (graphisme des plantations, composants pour pêche à la baleine et planification de routes commerciales)
+[ICON_BULLET] Deliverator &amp; BLU-Mod-Team (unités)
+[ICON_BULLET] oleg153 (graphismes d'unités)
+[ICON_BULLET] charle88 (graphismes d'unités)
+[ICON_BULLET] Kailric (graphismes d'unités, composants pour pêche à la baleine)
+[ICON_BULLET] jdog5000 (code pour attaque IA)
+[ICON_BULLET] hrochland (graphismes du cyclone)
+[ICON_BULLET] Fierabras (événements "cyclone" and "volcan")
+[ICON_BULLET] Kissa (graphismes des montagnes)
+[ICON_BULLET] L'équipe de Fall for Heaven (graphismes du désert)
+[ICON_BULLET] Marry Harrsch (photo)
+[ICON_BULLET] Aeterna (Traduction française)</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_END</Tag>
+		<English>And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We could use quite much material from these games.[NEWLINE]
 The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us whether we can use their material or not. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
 The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
 Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
 RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
 As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it is a non-commercial project too. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more informations about the creators so that you could mention them in the credits of your own modification.[NEWLINE]
 You can contact TAC via civforum http://www.civforum.de/showthread.php?t=56991 or via email to writing.bull@gmx.de.[NEWLINE]
-You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]
-		</English>
-		<French>
-[H1]"Religion and Revolution" (RaR)[\H1]a été développé par une équipe internationale de moddeurs sur le site de CivFanatics. Venez nous rendre visite ici: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE]
-* raystuttgart
-* Robert Surcouf
-* colonialfan
-* KJ Jansson
-* Androrc
-* Schmiddie (Robert E. Lee)
-* orlanth[NEWLINE]
-[H1]Nous tenons à remercier tout particulièrementles membres de l'équipe de développement du mod TAC ("The Authentic Colonization") y compris les anciens membres[\H1][NEWLINE]
-* Akropolis
-* Elwood
-* Fankman
-* koma13
-* melcher kürzer
-* Ronnar
-* Stöpsel
-* Writing Bull
-* xXstrikerXx
-* raystuttgart (ex-membre)
-* Pfeffersack (ex-membre)
-* Willi Tell (ex-membre)
-* King MB (ex-membre)
-* Robert E. Lee (ex-membre)[NEWLINE]
-[H1]Nous remercions chaleureusement Rene Osmanczyk pour a bande-son extraordinaire.[\H1][NEWLINE]
-[H1]Nous remercions aussi les artistes, moddeurs ou projets dont les travaux ont été inclus:[\H1][NEWLINE]
-* Isabelxxx
-* Willi Tell
-* Writing Bull
-* Dale
-* Kailric
-* Aymerick
-* Jeckel
-* TC01
-* Dom Pedro II
-* Trachmyr
-* NeseryozniyVET
-* Dazio
-* M07
-* bernie14
-* ekmek
-* SaibotLieh
-* Sanotra
-* Aeterna
-* Roamty
-* Kathy
-* agnat86
-* Nightingale
-* Marla_Singer
-* Bakuel
-* Tre59
-* Commander Bello
-* vetiarvind
-* Victor Meirelles (Peinture : Primeira missa no Brasil)
-* John Trumbull (Peinture : The Death of General Warren at the Battle of Bunker Hill)
-* George Walter Vincent Smith (Peinture : New England Scenery)
-* Clint Mansell (Thème principal)[NEWLINE]
-[H1]Nous remercions également d'autres contributeurs dont le travail avait été repris par TAC:[\H1][NEWLINE]
-* Netbandit (Netbandit's balance MOD)
-* Dale (Age of Discovery II; Achievements v1.00)
-* cgtextures.com (textures)
-* the_suebian (images de fond)
-* cephalo (script Faire Weather)
-* ledat (script Hemispherical)
-* Ekmek (leaderheads)
-* Mangammal (modèle de leaderhead)
-* Aymerick (graphisme des plantations, composants pour pêche à la baleine et planification de routes commerciales)
-* Deliverator &amp; BLU-Mod-Team (unités)
-* oleg153 (graphismes d'unités)
-* charle88 (graphismes d'unités)
-* Kailric (graphismes d'unités, composants pour pêche à la baleine)
-* jdog5000 (code pour attaque IA)
-* hrochland (graphismes du cyclone)
-* Fierabras (événements "cyclone" and "volcan")
-* Kissa (graphismes des montagnes)
-* L'équipe de Fall for Heaven (graphismes du désert)
-* Marry Harrsch (photo)
-* Aeterna (Traduction française)[NEWLINE]
-Et nous n'oublions pas de remercier Firaxis et 2Kgames pour leur chef d'oeuvre Civ4/BtS. De nombreux éléments ont été repris de ces jeux.[NEWLINE]
+You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]</English>
+		<French>Et nous n'oublions pas de remercier Firaxis et 2Kgames pour leur chef d'oeuvre Civ4/BtS. De nombreux éléments ont été repris de ces jeux.[NEWLINE]
 Les droits de reproduction de ces éléments appartiennent à leurs propriétaires respectifs. Dans la plupart des cas nous avons eu l'autorisation de les utiliser, sauf exception. Nous remercions les propriétaires de nous contacter pour nous donner ou non cette autorisation. Les droits liés à l'utilisation de TAC appartiennent à l'équipe de TAC. Les droits liés à l'utilisation de RAR appartiennent à l'équipe de RAR.[NEWLINE]
 Les droits de reproduction de "Sid Meier's Civilisation IV: Colonization" appartiennent à Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software sont des marques déposées de Take-Two Interactive Software, Inc. Developé par Firaxis Games.[NEWLINE]
 Quelques textures de nos modèles 3D ont été créées avec des images de CGTextures.com. Ces images ne sont pas redistribuées par défaut. Merci de visiter www.cgtextures.com pour plus d'information.[NEWLINE]
 RaR est un projet à but non commercial. Si vous utilisez ou distribuez RaR, merci de faire attention à ces droits de reproduction. Nous autorisons l'utilisation et la distribution qu'à la condition que RaR reste à usage non-commercial.[NEWLINE]
 Il est par ailleurs permis d'utiliser RAR pour d'autres projets de mods à la condition que les droits de reproduction soient respectés, et s'il s'agit également de projets non-commerciaux. Si vous utilisez RaR pour un projet personnel, vous devez spécifier qu'il s'agit d'une version modifiée des projets TAC et RaR. Si vous souhaitez utiliser des graphismes, nous pouvons vous donner plus d'informations sur leurs créateurs de façon à les mentionner dans vos crédits.[NEWLINE]
 Vous pouvez contacter TAC via le site "civforum" : http://www.civforum.de/showthread.php?t=56991 ; ou par e-mail : writing.bull@gmx.de.[NEWLINE]
-Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]
-		</French>
-		<German>
-[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.
-Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455 [NEWLINE]
-* raystuttgart
-* Robert Surcouf
-* colonialfan
-* KJ Jansson
-* Androrc
-* Schmiddie (Robert E. Lee)
-* orlanth[NEWLINE]
-[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1][NEWLINE]
-* Akropolis
-* Elwood
-* Fankman
-* koma13
-* melcher kürzer
-* Ronnar
-* Stöpsel
-* Writing Bull
-* xXstrikerXx
-* raystuttgart (former member)
-* Pfeffersack (former member)
-* Willi Tell (former member)
-* King MB (former member)
-* Robert E. Lee (former member)[NEWLINE]
-[H1]Special Credits for our Soundtrack to Rene Osmanczyk who allowed us to use his fantastic work.[\H1][NEWLINE]
-[H1]Credits to artists, modders and projects for work included:[\H1][NEWLINE]
-* Isabelxxx
-* Willi Tell
-* Writing Bull
-* Dale
-* Kailric
-* Aymerick
-* Jeckel
-* TC01
-* Dom Pedro II
-* Trachmyr
-* NeseryozniyVET
-* Dazio
-* M07
-* bernie14
-* ekmek
-* SaibotLieh
-* Sanotra
-* Aeterna
-* Roamty
-* Kathy
-* agnat86
-* Nightingale
-* Marla_Singer
-* Bakuel
-* Tre59
-* Commander Bello
-* vetiarvind
-* Victor Meirelles (Painting: Primeira missa no Brasil)
-* John Trumbull (Painting: The Death of General Warren at the Battle of Bunker Hill)
-* George Walter Vincent Smith (Painting: New England Scenery)
-* Clint Mansell (Main Theme)[NEWLINE]
-[H1]Further Credits go other artists, modders and projects for work included through TAC:[\H1][NEWLINE]
-* Netbandit (Netbandit's balance MOD)
-* Dale (Age of Discovery II; Achievements v1.00)
-* cgtextures.com (textures)
-* the_suebian (background images)
-* cephalo (script Faire Weather)
-* ledat (script Hemispherical)
-* Ekmek (leaderheads)
-* Mangammal (leaderhead model)
-* Aymerick (artwork plantation, parts of whaling, parts of route planning)
-* Deliverator &amp; BLU-Mod-Team (units)
-* oleg153 (artwork units)
-* charle88 (artwork units)
-* Kailric (artwork units, parts of whaling feature)
-* jdog5000 (code attacks of AI)
-* hrochland (artwork tornado)
-* Fierabras (events "tornado" and "volcano")
-* Kissa (artwork mountain)
-* Team of Fall for Heaven (artwork desert)
-* Marry Harrsch (foto)
-* Aeterna (French Translation)[NEWLINE]
-And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We could use quite much material from these games.[NEWLINE]
-The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us whether we can use their material or not. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
-The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
-Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
-RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
-As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it is a non-commercial project too. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more informations about the creators so that you could mention them in the credits of your own modification.[NEWLINE]
-You can contact TAC via civforum http://www.civforum.de/showthread.php?t=56991 or via email to writing.bull@gmx.de.[NEWLINE]
-You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]
-		</German>
-		<Italian>
-[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.
-Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455 [NEWLINE]
-* raystuttgart
-* Robert Surcouf
-* colonialfan
-* KJ Jansson
-* Androrc
-* Schmiddie (Robert E. Lee)
-* orlanth[NEWLINE]
-[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1][NEWLINE]
-* Akropolis
-* Elwood
-* Fankman
-* koma13
-* melcher kürzer
-* Ronnar
-* Stöpsel
-* Writing Bull
-* xXstrikerXx
-* raystuttgart (former member)
-* Pfeffersack (former member)
-* Willi Tell (former member)
-* King MB (former member)
-* Robert E. Lee (former member)[NEWLINE]
-[H1]Special Credits for our Soundtrack to Rene Osmanczyk who allowed us to use his fantastic work.[\H1][NEWLINE]
-[H1]Credits to artists, modders and projects for work included:[\H1][NEWLINE]
-* Isabelxxx
-* Willi Tell
-* Writing Bull
-* Dale
-* Kailric
-* Aymerick
-* Jeckel
-* TC01
-* Dom Pedro II
-* Trachmyr
-* NeseryozniyVET
-* Dazio
-* M07
-* bernie14
-* ekmek
-* SaibotLieh
-* Sanotra
-* Aeterna
-* Roamty
-* Kathy
-* agnat86
-* Nightingale
-* Marla_Singer
-* Bakuel
-* Tre59
-* Commander Bello
-* vetiarvind
-* Victor Meirelles (Painting: Primeira missa no Brasil)
-* John Trumbull (Painting: The Death of General Warren at the Battle of Bunker Hill)
-* George Walter Vincent Smith (Painting: New England Scenery)
-* Clint Mansell (Main Theme)[NEWLINE]
-[H1]Further Credits go other artists, modders and projects for work included through TAC:[\H1][NEWLINE]
-* Netbandit (Netbandit's balance MOD)
-* Dale (Age of Discovery II; Achievements v1.00)
-* cgtextures.com (textures)
-* the_suebian (background images)
-* cephalo (script Faire Weather)
-* ledat (script Hemispherical)
-* Ekmek (leaderheads)
-* Mangammal (leaderhead model)
-* Aymerick (artwork plantation, parts of whaling, parts of route planning)
-* Deliverator &amp; BLU-Mod-Team (units)
-* oleg153 (artwork units)
-* charle88 (artwork units)
-* Kailric (artwork units, parts of whaling feature)
-* jdog5000 (code attacks of AI)
-* hrochland (artwork tornado)
-* Fierabras (events "tornado" and "volcano")
-* Kissa (artwork mountain)
-* Team of Fall for Heaven (artwork desert)
-* Marry Harrsch (foto)
-* Aeterna (French Translation)[NEWLINE]
-And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We could use quite much material from these games.[NEWLINE]
-The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us whether we can use their material or not. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
-The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
-Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
-RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
-As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it is a non-commercial project too. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more informations about the creators so that you could mention them in the credits of your own modification.[NEWLINE]
-You can contact TAC via civforum http://www.civforum.de/showthread.php?t=56991 or via email to writing.bull@gmx.de.[NEWLINE]
-You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]
-		</Italian>
-		<Spanish>
-[H1]"Religion and Revolution" (RaR)[\H1] has been developed by an international mod-team at CivFanatics.
-Visit us here: http://forums.civfanatics.com/forumdisplay.php?f=455 [NEWLINE]
-* raystuttgart
-* Robert Surcouf
-* colonialfan
-* KJ Jansson
-* Androrc
-* Schmiddie (Robert E. Lee)
-* orlanth[NEWLINE]
-[H1]Special Credits to "The Authentic Colonization" (TAC), including former members:[\H1][NEWLINE]
-* Akropolis
-* Elwood
-* Fankman
-* koma13
-* melcher kürzer
-* Ronnar
-* Stöpsel
-* Writing Bull
-* xXstrikerXx
-* raystuttgart (former member)
-* Pfeffersack (former member)
-* Willi Tell (former member)
-* King MB (former member)
-* Robert E. Lee (former member)[NEWLINE]
-[H1]Special Credits for our Soundtrack to Rene Osmanczyk who allowed us to use his fantastic work.[\H1][NEWLINE]
-[H1]Credits to artists, modders and projects for work included:[\H1][NEWLINE]
-* Isabelxxx
-* Willi Tell
-* Writing Bull
-* Dale
-* Kailric
-* Aymerick
-* Jeckel
-* TC01
-* Dom Pedro II
-* Trachmyr
-* NeseryozniyVET
-* Dazio
-* M07
-* bernie14
-* ekmek
-* SaibotLieh
-* Sanotra
-* Aeterna
-* Roamty
-* Kathy
-* agnat86
-* Nightingale
-* Marla_Singer
-* Bakuel
-* Tre59
-* Commander Bello
-* vetiarvind
-* Victor Meirelles (Painting: Primeira missa no Brasil)
-* John Trumbull (Painting: The Death of General Warren at the Battle of Bunker Hill)
-* George Walter Vincent Smith (Painting: New England Scenery)
-* Clint Mansell (Main Theme)[NEWLINE]
-[H1]Further Credits go other artists, modders and projects for work included through TAC:[\H1][NEWLINE]
-* Netbandit (Netbandit's balance MOD)
-* Dale (Age of Discovery II; Achievements v1.00)
-* cgtextures.com (textures)
-* the_suebian (background images)
-* cephalo (script Faire Weather)
-* ledat (script Hemispherical)
-* Ekmek (leaderheads)
-* Mangammal (leaderhead model)
-* Aymerick (artwork plantation, parts of whaling, parts of route planning)
-* Deliverator &amp; BLU-Mod-Team (units)
-* oleg153 (artwork units)
-* charle88 (artwork units)
-* Kailric (artwork units, parts of whaling feature)
-* jdog5000 (code attacks of AI)
-* hrochland (artwork tornado)
-* Fierabras (events "tornado" and "volcano")
-* Kissa (artwork mountain)
-* Team of Fall for Heaven (artwork desert)
-* Marry Harrsch (foto)
-* Aeterna (French Translation)[NEWLINE]
-And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We could use quite much material from these games.[NEWLINE]
-The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us whether we can use their material or not. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
-The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
-Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
-RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
-As a matter of course it is permitted to use RaR in an own mod project as long as the copyrights are not harmed, and it is a non-commercial project too. If you use RaR in an own mod project you have to make clear that you have done changes to the original TAC and to RaR. If you wish to use artwork, we could give you more informations about the creators so that you could mention them in the credits of your own modification.[NEWLINE]
-You can contact TAC via civforum http://www.civforum.de/showthread.php?t=56991 or via email to writing.bull@gmx.de.[NEWLINE]
-You can contact RaR at CivFanatics: http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]
-		</Spanish>
+Vous pouvez contacter RaR via le site "CivFanatics" : http://forums.civfanatics.com/forumdisplay.php?f=455[NEWLINE][NEWLINE]</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_FORMER_MEMBER</Tag>
+		<English>(former member)</English>
+		<French>(ex-membre)</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_MELCHER_KURZER</Tag>
+		<English>melcher kürzer</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_STOPSEL</Tag>
+		<English>Stöpsel</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_OTHER_NAME_1</Tag>
+		<English>Victor Meirelles (Painting: Primeira missa no Brasil)</English>
+		<French>Victor Meirelles (Peinture : Primeira missa no Brasil)</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_OTHER_NAME_2</Tag>
+		<English>John Trumbull (Painting: The Death of General Warren at the Battle of Bunker Hill)</English>
+		<French>John Trumbull (Peinture : The Death of General Warren at the Battle of Bunker Hill)</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_OTHER_NAME_3</Tag>
+		<English>George Walter Vincent Smith (Painting: New England Scenery)</English>
+		<French>George Walter Vincent Smith (Peinture : New England Scenery)</French>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CREDITS_OTHER_NAME_4</Tag>
+		<English>Clint Mansell (Main Theme)</English>
+		<French>Clint Mansell (Thème principal)</French>
 	</TEXT>
 	<!-- Readme -->
 	<TEXT>
