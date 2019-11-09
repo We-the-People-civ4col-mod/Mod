@@ -3655,7 +3655,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					//effects of choice
 					AI_changeAttitudeExtra(ePlayer, 1);
 
-					int effectRand = GC.getGameINLINE().getSorenRandNum(5, "ChurchEffectRand");	
+					int effectRand = GC.getGameINLINE().getSorenRandNum(6, "ChurchEffectRand");	
 					switch (effectRand)
 					{
 						case 0:
@@ -3751,7 +3751,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				//effects of choice
 				AI_changeAttitudeExtra(ePlayer, -1); // attitude of church
 
-				int effectRand = GC.getGameINLINE().getSorenRandNum(4, "ChurchEffectRand");	
+				int effectRand = GC.getGameINLINE().getSorenRandNum(5, "ChurchEffectRand");	
 				switch (effectRand)
 				{
 					case 0:
