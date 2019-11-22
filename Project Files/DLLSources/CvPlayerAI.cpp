@@ -4662,7 +4662,7 @@ int CvPlayerAI::AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvC
 		if (pCity != NULL)
 		{
 			const int iCoastalCityCount = countNumCoastalCities();
-			const int iTransportCount = AI_totalAreaUnitAIs(pCity->area(), UNITAI_TRANSPORT_COAST);
+			const int iTransportCount = AI_totalWaterAreaUnitAIs(pCity->waterArea(), UNITAI_TRANSPORT_COAST);
 
 			int iNeededTransports = iCoastalCityCount / 2;
 			if (iNeededTransports < iTransportCount)

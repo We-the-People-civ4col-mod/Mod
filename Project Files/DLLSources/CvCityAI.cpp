@@ -489,7 +489,7 @@ void CvCityAI::AI_chooseProduction()
 			// Erik: Only consider building a coastal transport if at least one other city is coastally reachable and the water area is valid
 			if (pWaterArea != NULL && AI_hasCoastalRoute())
 			{
-				if ((pWaterArea->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) + pWaterArea->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST)) < kPlayer.countNumCoastalCities() / 2)
+				if ((GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST)) < kPlayer.countNumCoastalCities() / 2)
 				{
 					if (AI_chooseUnit(UNITAI_TRANSPORT_COAST))
 					{
@@ -626,7 +626,7 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 			case UNITAI_TRANSPORT_COAST:
 				{
 					const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
-					if (((area()->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) + area()->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST)) > iAreaCities/2))
+					if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(waterArea(), UNITAI_TRANSPORT_COAST) > iAreaCities / 2)
 					{
 						aiUnitAIVal[iI] = 0;
 					}			
@@ -2259,7 +2259,7 @@ void CvCityAI::AI_doHurry(bool bForce)
 		}
 		if (getProductionUnitAI() == UNITAI_TRANSPORT_COAST)
 		{
-			if (waterArea()->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) == 0)
+			if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(waterArea(), UNITAI_TRANSPORT_COAST) == 0)
 			{
 				iHurryValue += 100;
 			}
