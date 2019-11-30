@@ -4659,15 +4659,21 @@ int CvPlayerAI::AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvC
 	if (kUnitInfo.getUnitAIType(UNITAI_TRANSPORT_COAST))
 	{
 		int iValue = 0;
+		
 		if (pCity != NULL)
 		{
-			const int iCoastalCityCount = countNumCoastalCities();
-			const int iTransportCount = AI_totalWaterAreaUnitAIs(pCity->waterArea(), UNITAI_TRANSPORT_COAST);
-
-			int iNeededTransports = iCoastalCityCount / 2;
-			if (iNeededTransports < iTransportCount)
+			CvArea* const pWaterArea = pCity->waterArea();
+			
+			if (pWaterArea != NULL)
 			{
-				iValue += 50 * kUnitInfo.getCargoSpace();
+				const int iCoastalCityCount = countNumCoastalCities();
+				const int iTransportCount = AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST);
+
+				int iNeededTransports = iCoastalCityCount / 2;
+				if (iNeededTransports < iTransportCount)
+				{
+					iValue += 50 * kUnitInfo.getCargoSpace();
+				}
 			}
 		}
 

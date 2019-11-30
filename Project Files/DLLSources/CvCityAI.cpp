@@ -625,15 +625,19 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 		
 			case UNITAI_TRANSPORT_COAST:
 				{
-					const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
-					if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(waterArea(), UNITAI_TRANSPORT_COAST) > iAreaCities / 2)
+					CvArea* const pWaterArea = waterArea();
+					
+					int iValue = 0;
+					
+					if (pWaterArea != NULL && AI_hasCoastalRoute())
 					{
-						aiUnitAIVal[iI] = 0;
-					}			
-					else
-					{
-						aiUnitAIVal[iI] = GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
+						const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
+						if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST) <= iAreaCities / 2)
+						{
+							iValue = GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
+						}
 					}
+					aiUnitAIVal[iI] = iValue;
 				}
 				break;
 
@@ -2259,9 +2263,14 @@ void CvCityAI::AI_doHurry(bool bForce)
 		}
 		if (getProductionUnitAI() == UNITAI_TRANSPORT_COAST)
 		{
-			if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(waterArea(), UNITAI_TRANSPORT_COAST) == 0)
-			{
-				iHurryValue += 100;
+			CvArea* const pWaterArea = waterArea();
+			
+			if (pWaterArea != NULL)
+			{ 
+				if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST) == 0)
+				{
+					iHurryValue += 100;
+				}
 			}
 		}
 
