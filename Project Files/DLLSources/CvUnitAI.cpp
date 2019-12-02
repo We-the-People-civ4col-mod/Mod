@@ -2171,7 +2171,7 @@ void CvUnitAI::AI_generalMove()
 	aeUnitAITypes.push_back(UNITAI_ASSAULT_SEA);
 	aeUnitAITypes.push_back(UNITAI_COMBAT_SEA);
 	// Erik: Let's avoid great pirates :P
-	aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
+	//aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
 
 	if (AI_lead(aeUnitAITypes))
 	{
