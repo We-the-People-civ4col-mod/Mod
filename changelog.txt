@@ -1,5 +1,29 @@
 We the People Changelog
 
+Version 2.7.2 Beta 1
+
+Translation Improvements:
+- Translators can now use UTF-8 instead of html escapes for non-ASCII characters (doesn't actually unlock all of unicode though)
+- Strings missing in a translation will now use the English string instead of crashing the game
+- Ingame mod credits now mentions WTP and is much easier to translate and maintain
+
+AI Improvements:
+- #171 AI great admirals now ignore privateers
+- #123 AI will now value maps higher in diplomacy if they contain unvisited villages
+- #171 Fix overproduction of coastal transports
+- #171 AI now no longer ignores bonuses on impassable plots when planning colony placement
+- #171 AI now evaluates culture correctly
+
+Fixes:
+- #83 Fixed a crash when changing which yield to produce on a colony plot (debug mode only)
+- #267 Fixed AI freezing the game (infinite loop) in some cases when splitting up a group of units
+- #258 Abandoning a colony will no longer allow setting professions without paying the yield cost
+- #234 Colored circles that mark goodies will now only appear if the scout(expert only) or ship can actually move into the target plot. Changed the color of the circle to green to indicate that these units may only receive benefits.
+- #240 Fix bug that suggested that a boycott could be lifted during the revolution
+- #171 Boosts performance by caching the visual range of the best unit instead of calculating each time
+- #147 Boosts performance when trying to find a path to Europe (only look at actual Europe access plots)
+- Fixed makefile bug, which caused 1 plot dll files to run in debug mode (way too slow)
+
 Version 2.7.1.1
 
 Fixes:
