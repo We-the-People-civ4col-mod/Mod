@@ -3366,4 +3366,468 @@ bool CvTeamAI::AI_isKing() const
 	return hasEuropePlayer();
 }
 
+int CvTeamAI::AI_fatherValue(FatherTypes eFather, const CvPlayer& kPlayer) const
+{
+	const CvFatherInfo& f = GC.getFatherInfo(eFather);
+
+	int iEconomicBaseValue = 0;
+	int iMilitaryBaseValue = 0;
+	//int iNavalBaseValue = 0;
+	int iDefensiveBaseValue = 0;
+
+	for (int i = 0; i < GC.getNumUnitClassInfos(); i++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(i)));
+
+		if (eLoopUnit != NO_UNIT)
+		{
+			const int iPrice = kPlayer.getEuropeUnitBuyPrice(eLoopUnit);
+			const int iFreeUnits = f.getFreeUnits(i);
+
+			iEconomicBaseValue += (iPrice * iFreeUnits);
+
+			/*
+			// Determine the unit's contribution to the economic and\or military value
+
+			const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+
+			if (kUnitInfo.getDefaultProfession() != NO_PROFESSION)
+			{
+			//
+
+			}
+			else
+			{
+			if (kUnitInfo.getDomainType() == DOMAIN_SEA)
+			{
+
+			}
+			}
+
+			|| kUnitInfo.getDefaultUnitAIType() == UNITAI_DEFENSIVE || kUnitInfo.getDefaultUnitAIType() == UNITAI_COUNTER)
+			*/
+		}
+	}
+
+
+	// RevealImprovements
+	for (int i = 0; i < GC.getNumImprovementInfos(); i++)
+	{
+		if (f.isRevealImprovement(i))
+		{
+			const ImprovementTypes eImprovement = (ImprovementTypes)i;
+			const CvImprovementInfo& info = GC.getImprovementInfo(eImprovement);
+
+			if (info.isGoody())
+			{
+				// TODO: Estimate the number of goodies that may be left on the map
+				iEconomicBaseValue += 500;
+			}
+		}
+	}
+
+	const TraitTypes eTrait = (TraitTypes)f.getTrait();
+
+	if (eTrait != NO_TRAIT)
+	{
+		const CvTraitInfo& t = GC.getTraitInfo(eTrait);
+
+		// Player traits (not used for FF for the time being)
+
+		const int iLevelExperienceModifier = t.getLevelExperienceModifier();
+		if (iLevelExperienceModifier != 0)
+		{
+			iMilitaryBaseValue += -iLevelExperienceModifier * 500;
+		}
+
+		const int iGreatGeneralRateModifier = t.getGreatGeneralRateModifier();
+		if (iGreatGeneralRateModifier != 0)
+		{
+			iMilitaryBaseValue += iGreatGeneralRateModifier * 250;
+		}
+
+		const int iDomesticGreatGeneralRateModifier = t.getDomesticGreatGeneralRateModifier();
+		if (iDomesticGreatGeneralRateModifier != 0)
+		{
+			iMilitaryBaseValue += iDomesticGreatGeneralRateModifier * 200;
+		}
+
+		const int iNativeAngerModifier = t.getNativeAngerModifier();
+		if (iNativeAngerModifier != 0)
+		{
+			iDefensiveBaseValue += -iNativeAngerModifier * 100;
+		}
+
+		const int iLearnTimeModifier = t.getLearnTimeModifier();
+		if (iLearnTimeModifier != 0)
+		{
+			iEconomicBaseValue += -iLearnTimeModifier * 100;
+		}
+
+		const int iNativeCombatModifier = t.getNativeCombatModifier();
+		if (iNativeCombatModifier)
+		{
+			iMilitaryBaseValue += iNativeCombatModifier * 100;
+		}
+
+		const int iMissionaryModifier = t.getMissionaryModifier();
+		if (iMissionaryModifier != 0)
+		{
+			iEconomicBaseValue += iMissionaryModifier * 100;
+		}
+
+		const int iNativeTradeModifier = t.getNativeTradeModifier();
+		if (iNativeTradeModifier != 0)
+		{
+			// AI currently cannot trade with natives
+			iEconomicBaseValue += iNativeTradeModifier * 0;
+		}
+
+		const int iRebelCombatModifier = t.getRebelCombatModifier();
+		if (iRebelCombatModifier != 0)
+		{
+			iEconomicBaseValue += iRebelCombatModifier * 250;
+		}
+
+		const int iMaxTaxRateThresholdModifier = t.getTaxRateThresholdModifier();
+		if (iMaxTaxRateThresholdModifier != 0)
+		{
+			// AI pays little taxes so this is not worth much
+			iEconomicBaseValue += iMaxTaxRateThresholdModifier * 10;
+		}
+
+		const int iMaxTaxRateThresholdDecrease = t.getMaxTaxRateThresholdDecrease();
+		if (iMaxTaxRateThresholdDecrease != 0)
+		{
+			// AI pays little taxes so this is not worth much
+			iEconomicBaseValue += iMaxTaxRateThresholdDecrease * 10;
+		}
+
+		const int iMercantileFactor = t.getMercantileFactor();
+		if (iMercantileFactor != 0)
+		{
+			iEconomicBaseValue += -iMercantileFactor * 100;
+		}
+
+		const int iTreasureModifier = t.getTreasureModifier();
+		if (iTreasureModifier != 0)
+		{
+			iEconomicBaseValue += iTreasureModifier * 100;
+		}
+
+		const int iChiefGoldModifier = t.getChiefGoldModifier();
+		if (iChiefGoldModifier != 0)
+		{
+			iEconomicBaseValue += iChiefGoldModifier * 200;
+		}
+
+		// Founding Father traits evaluation
+
+
+		const int iLandPriceDiscount = t.getLandPriceDiscount();
+
+		// Worthless for the AI which never buys land currently
+		if (iLandPriceDiscount != 0)
+		{
+			iEconomicBaseValue += 0;
+		}
+
+		const int iNativeAttitudeChange = t.getNativeAttitudeChange();
+		if (iNativeAttitudeChange != 0)
+		{
+			// Note: A positive change will also cause auto-peace with any natives 
+			// that we're at war with which may not be wanted if we initiated the war
+
+			iEconomicBaseValue += iNativeAttitudeChange * 250;
+		}
+
+		const int iEuropeanAttitudeChange = t.getEuropeanAttitudeChange();
+		if (iEuropeanAttitudeChange != 0)
+		{
+			iEconomicBaseValue += iEuropeanAttitudeChange * 250;
+		}
+
+		const int iKingAttitudeChange = t.getKingAttitudeChange();
+		if (iKingAttitudeChange != 0)
+		{
+			iEconomicBaseValue += iKingAttitudeChange * 250;
+		}
+
+		const int iCityDefense = t.getCityDefense();
+		if (iCityDefense != 0)
+		{
+			iMilitaryBaseValue += iCityDefense * 100;
+		}
+
+		const int iRecruitPriceDiscount = t.getRecruitPriceDiscount();
+		if (iRecruitPriceDiscount != 0)
+		{
+			// TODO: Estimate future europe spending per turn times the number of expected turns left
+			iEconomicBaseValue += -iRecruitPriceDiscount * 300;
+		}
+
+		// TODO: Depends critically on game speed due to rounding, may not result in any benefit
+		const int iEuropeTravelTimeModifier = t.getEuropeTravelTimeModifier();
+		if (iEuropeTravelTimeModifier != 0)
+		{
+			iEconomicBaseValue += -iEuropeTravelTimeModifier * 50;
+		}
+
+		const int iImmigrationThresholdModifier = t.getImmigrationThresholdModifier();
+		if (iImmigrationThresholdModifier != 0)
+		{
+			iEconomicBaseValue += -iImmigrationThresholdModifier * 200;
+		}
+
+		const int iPopGrowthThresholdModifier = t.getPopGrowthThresholdModifier();
+		if (iPopGrowthThresholdModifier != 0)
+		{
+			iEconomicBaseValue += -iPopGrowthThresholdModifier * 250;
+		}
+
+
+		const int iCultureLevelModifier = t.getCultureLevelModifier();
+		if (iCultureLevelModifier != 0)
+		{
+			iEconomicBaseValue += -iCultureLevelModifier * 100;
+		}
+
+		const int iPioneerSpeedModifier = t.getPioneerSpeedModifier();
+		if (iPioneerSpeedModifier != 0)
+		{
+			iEconomicBaseValue += -iPioneerSpeedModifier * 100;
+		}
+
+		const int iImprovementPriceModifier = t.getImprovementPriceModifier();
+		if (iImprovementPriceModifier != 0)
+		{
+			iEconomicBaseValue += -iImprovementPriceModifier * 50;
+		}
+
+		const int iLearningByDoingModifier = t.getLearningByDoingModifier();
+		if (iLearningByDoingModifier != 0)
+		{
+			// BUG?  Why is this modifier positive ?
+			iEconomicBaseValue += iLearningByDoingModifier * 500;
+		}
+
+		const int iSpecialistPriceModifier = t.getSpecialistPriceModifier();
+		if (iSpecialistPriceModifier)
+		{
+			iEconomicBaseValue += -iSpecialistPriceModifier * 500;
+		}
+
+		const int iStorageCapacityModifier = t.getStorageCapacityModifier();
+		if (iStorageCapacityModifier != 0)
+		{
+			iEconomicBaseValue += iStorageCapacityModifier * 500;
+		}
+
+		for (int i = 0; i < GC.getNUM_YIELD_TYPES(); i++)
+		{
+			const int iYieldModifier = t.getYieldModifier(i);
+
+			//YieldInfo
+		}
+
+		for (int i = 0; i < GC.getNumGoodyInfos(); i++)
+		{
+			const int iGoodyFactor = t.getGoodyFactor(i);
+
+			if (iGoodyFactor != 0)
+			{
+				iEconomicBaseValue += iGoodyFactor * 500;
+			}
+		}
+
+		for (int i = 0; i < GC.getNumProfessionInfos(); i++)
+		{
+			const ProfessionTypes eLoopProfession = (ProfessionTypes)i;
+			if (GC.getCivilizationInfo(kPlayer.getCivilizationType()).isValidProfession(eLoopProfession))
+			{
+				const CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
+
+				const int iProfessionMoveChange = t.getProfessionMoveChange(i);
+			}
+
+		}
+
+		for (int i = 0; i < GC.getNUM_YIELD_TYPES(); i++)
+		{
+			const bool bTaxYieldModifier = t.isTaxYieldModifier(i);
+
+			if (bTaxYieldModifier)
+			{
+				const YieldTypes eLoopYield = (YieldTypes)i;
+
+				// Sum up the production of this particular yield type in our cities
+				int iYieldRate = 0;
+
+				int iLoop;
+				for (const CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+				{
+					iYieldRate += pLoopCity->getYieldRate(eLoopYield);
+				}
+
+				// Bonus multiplier is equal to the current tax rate
+
+				//iEconomicBaseValue += iYieldRate * taxrate
+
+			}
+		}
+
+		for (int i = 0; i < GC.getNumBuildingClassInfos(); i++)
+		{
+			const BuildingTypes eLoopBuilding = ((BuildingTypes)(GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationBuildings(i)));
+
+			if (eLoopBuilding != NO_BUILDING)
+			{
+				const int iFreeBuildingClass = t.isFreeBuildingClass(i);
+				if (iFreeBuildingClass != 0)
+				{
+					// TODO: Subtract the number of cities that already have this building and estimate the number
+					// of future cities that would get it
+					//iEconomicBaseValue += iFreeBuildingClass * buildingCost * 10;
+				}
+
+				const int iBuildingProductionModifier = t.getBuildingProductionModifier(i);
+				if (iBuildingProductionModifier != 0)
+				{
+					// TODO: Determine the importance of these buildings
+					iEconomicBaseValue += iBuildingProductionModifier * 10;
+				}
+
+				for (int j = 0; j < GC.getNUM_YIELD_TYPES(); j++)
+				{
+					const int iBuildingYieldChange = t.getBuildingYieldChange(i, j);
+
+					if (iBuildingYieldChange != 0)
+					{
+						int iLoop;
+						for (const CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+						{
+							if (pLoopCity->isHasBuilding(eLoopBuilding))
+							{
+								//iEconomicBaseValue += (pLoopCity->getYieldRate(j) * exportPrice);
+							}
+						}
+					}
+				}
+			}
+		}
+
+		for (int i = 0; i < GC.getNUM_YIELD_TYPES(); i++)
+		{
+
+			const int iBuildingRequireYieldModifier = t.getBuildingRequiredYieldModifier(i);
+			if (iBuildingRequireYieldModifier != 0)
+			{
+				//iEconomicBaseValue += -iBuildingRequireYieldModifier * numCities * numBuildingsRequireingthisyield * 100;
+			}
+
+
+			// TODO: Have to check all worked plots to evaluate these accurately 
+			const int iCityExtraYield = t.getCityExtraYield(i);
+
+			if (iCityExtraYield != 0)
+			{
+				iEconomicBaseValue += iCityExtraYield * 500;
+			}
+
+			const int iExtraYieldThreshold = t.getExtraYieldThreshold(i);
+
+			if (iExtraYieldThreshold != 0)
+			{
+				iEconomicBaseValue += iExtraYieldThreshold * 500;
+			}
+		}
+
+		for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
+		{
+			const int iProfessionEquipmentModifier = t.getProfessionEquipmentModifier(iProfession);
+
+			if (iProfessionEquipmentModifier != 0)
+			{
+				iEconomicBaseValue += -iProfessionEquipmentModifier * 50;
+			}
+		}
+
+		for (int i = 0; i < GC.getNumUnitClassInfos(); i++)
+		{
+			const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(i)));
+
+			if (eLoopUnit != NO_UNIT)
+			{
+
+				CvUnit* pLoopUnit;
+				int iLoop;
+				for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
+				{
+					const CvUnitInfo& kUnitInfo = pLoopUnit->getUnitInfo();
+					const UnitClassTypes unitClass = (UnitClassTypes)kUnitInfo.getUnitClassType();
+
+					if (unitClass == i)
+					{
+						// Movement bonus is quite rare and valuable
+						iMilitaryBaseValue += t.getUnitMoveChange(i) * 250;
+						iMilitaryBaseValue += t.getUnitStrengthModifier(i) * 50;
+					}
+				}
+
+				// Count how many units we have of this class
+
+
+			}
+		}
+
+
+		// Free unit class promotions
+
+		// This gets all of our units in the new world on those waiting in the port
+		int iLoop;
+		std::vector<CvUnit*> apUnits;
+		for (CvUnit* pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
+		{
+			apUnits.push_back(pLoopUnit);
+		}
+		/*
+		for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
+		{
+			apUnits.push_back(m_aEuropeUnits[i]);
+		}
+		for (uint i = 0; i < m_aAfricaUnits.size(); ++i)
+		{
+			apUnits.push_back(m_aAfricaUnits[i]);
+		}
+		for (uint i = 0; i < m_aPortRoyalUnits.size(); ++i)
+		{
+			apUnits.push_back(m_aPortRoyalUnits[i]);
+		}
+		*/
+		for (uint i = 0; i < apUnits.size(); ++i)
+		{
+			CvUnit* pLoopUnit = apUnits[i];
+			for (int j = 0; j < GC.getNumPromotionInfos(); j++)
+			{
+				if (t.isFreePromotion(j))
+				{
+					if ((pLoopUnit->getUnitCombatType() != NO_UNITCOMBAT) && t.isFreePromotionUnitCombat(pLoopUnit->getUnitCombatType()))
+					{
+						if (!pLoopUnit->isHasPromotion((PromotionTypes)j))
+						{
+							iMilitaryBaseValue += 100;
+						}
+					}
+				}
+			}
+		}
+
+		// Apply situation modifiers
+
+
+		// Apply trait\personality preferences
+
+	}
+}
+
 // Private Functions...

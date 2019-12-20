@@ -198,6 +198,7 @@ protected:
 	void AI_doWar();
     void AI_doTactics();
 
+	int AI_fatherValue(FatherTypes eFather, const CvPlayer& kPlayer) const;
 
 
 	// added so under cheat mode we can call protected functions for testing
