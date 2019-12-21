@@ -3828,6 +3828,9 @@ int CvTeamAI::AI_fatherValue(FatherTypes eFather, const CvPlayer& kPlayer) const
 		// Apply trait\personality preferences
 
 	}
+
+
+	return iEconomicBaseValue;
 }
 
 // Private Functions...

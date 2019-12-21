@@ -8626,6 +8626,16 @@ void CvGameTextMgr::setFatherHelp(CvWStringBuffer &szBuffer, FatherTypes eFather
 
 		parseTraits(szBuffer, (TraitTypes) kFatherInfo.getTrait(), eCivilization, false, false);
 	}
+
+	if (GC.getGameINLINE().isDebugMode())
+	{
+		const CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+		const CvTeamAI& kTeam = GET_TEAM(kPlayer.getTeam());
+		const int iValue = kTeam.AI_fatherValue(eFather, kPlayer);
+
+		szTempBuffer.Format(L"\n Value: %d", iValue);
+		szBuffer.append(szTempBuffer);
+	}
 }
 
 void CvGameTextMgr::getTradeScreenTitleIcon(CvString& szButton, CvWidgetDataStruct& widgetData, PlayerTypes ePlayer)
