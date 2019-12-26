@@ -491,6 +491,23 @@ bool CvUnitAI::AI_europeUpdate()
 			}				
 			break;
 		case UNITAI_PIRATE_SEA:
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				if (hasCargo())
+				{
+					AI_sellYieldUnits(EUROPE);
+				}
+				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+			}
+			else if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+			{
+				if (hasCargo())
+				{
+					AI_sellYieldUnits(AFRICA);
+				}
+				crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+			}
+			break;
 		case UNITAI_ESCORT_SEA:		// TAC - AI Escort Sea - koma13
 			crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 		    break;
