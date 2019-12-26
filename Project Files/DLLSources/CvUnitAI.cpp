@@ -402,11 +402,7 @@ bool CvUnitAI::AI_europeUpdate()
 		}
 	}
 
-	if (getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL))
-	{
-
-	}
-	else
+	if (!(getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL)))
 	{
 		if (isHurt() && (healRate(plot()) > 0))
 		{
@@ -6272,13 +6268,6 @@ bool CvUnitAI::AI_africa()
 	if (kOwner.getParent() == NO_PLAYER)
 		return false;
 
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	
-	const CvPlot* pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
 	AI_sellYieldUnits(AFRICA);
 
 	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
@@ -6375,18 +6364,6 @@ bool CvUnitAI::AI_africa()
 
 bool CvUnitAI::AI_europe()
 {
-	
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pPlot;
-	int iCount;
-
-	iCount = 0;
-
-	pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	
 	AI_sellYieldUnits(EUROPE);
@@ -6539,18 +6516,6 @@ bool CvUnitAI::AI_europe()
 
 bool CvUnitAI::AI_europeAssaultSea()
 {
-	
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pPlot;
-	int iCount;
-
-	iCount = 0;
-
-	pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	
 	AI_sellYieldUnits(EUROPE);
@@ -19109,6 +19074,40 @@ void CvUnitAI::AI_sellYieldUnits(Port port)
 		else if (port == AFRICA)
 		{
 			kOwner.sellYieldUnitToAfrica(apUnits[i], apUnits[i]->getYieldStored(), 0);
+		}
+	}
+}
+
+void CvUnitAI::AI_unloadUnits(Port port)
+{
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlot* pPlot = plot();
+	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+	std::vector<CvUnit*> apUnits;
+
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getTransportUnit() == this)
+		{
+			if (!pLoopUnit->isGoods())
+			{
+				apUnits.push_back(pLoopUnit);
+			}
+		}
+	}
+
+	for (uint i = 0; i < apUnits.size(); ++i)
+	{
+		if (port == EUROPE)
+		{
+			kOwner.unloadUnitToEurope(apUnits[i]);
+		}
+		else if (port == AFRICA)
+		{
+			kOwner.unloadUnitToAfrica(apUnits[i]);
 		}
 	}
 }
