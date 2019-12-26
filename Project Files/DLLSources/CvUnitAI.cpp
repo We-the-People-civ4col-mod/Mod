@@ -1543,60 +1543,7 @@ void CvUnitAI::AI_settlerMove()
 			return;
 		}
 	}
-	
-	CvCity* pCity;
-	bool bCanRoute;
-
-	bCanRoute = canBuildRoute();
-
-	pCity = NULL;
-
-	if (plot()->getOwnerINLINE() == getOwnerINLINE())
-	{
-		pCity = plot()->getPlotCity();
-		if (pCity == NULL)
-		{
-			pCity = plot()->getWorkingCity();
-		}
-	}
-	
-	if (pCity != NULL)
-	{
-		if ((pCity->AI_getWorkersNeeded() > 0) && (plot()->isCity() || (pCity->AI_getWorkersNeeded() < ((1 + pCity->AI_getWorkersHave() * 2) / 3))))
-		{
-			if (AI_improveCity(pCity))
-			{
-				return;
-			}
-		}
-	}
-	
-	if (AI_improveLocalPlot(2, pCity))
-	{
-		return;
-	}
-
-
-
-	if (pCity != NULL)
-	{
-		if (AI_improveCity(pCity))
-		{
-			return;
-		}
-	}
-
-
-	if (AI_nextCityToImprove(pCity))
-	{
-		return;
-	}
 		
-	if (AI_improveLocalPlot(3, NULL))
-	{
-		return;
-	}
-	
 	if (canJoinCity(plot()))
 	{
 		joinCity();
