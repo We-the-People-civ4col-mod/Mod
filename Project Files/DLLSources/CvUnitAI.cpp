@@ -406,6 +406,13 @@ bool CvUnitAI::AI_europeUpdate()
 	{
 		if (isHurt() && (healRate(plot()) > 0))
 		{
+			if (hasCargo() && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				// If we're carrying any units we may as well unload them
+				// so that other ships can transport them while we heal
+				AI_unloadUnits(EUROPE);
+			}
+
 			return false;
 		}
 		switch (AI_getUnitAIType())
