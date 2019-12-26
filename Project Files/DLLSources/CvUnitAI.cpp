@@ -6878,16 +6878,17 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 	PROFILE_FUNC();
 	//Later on I'll make it so it can completely full yield units, for now though not.
 	FAssert(!isFull());
-	
+	FAssert(iMinPercent > 0);
+	FAssert(iMaxPath > 0);
+
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestMissionPlot = NULL;	// TAC - AI Improved Naval AI - koma13
-	
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
-	CvCity* pLoopCity;
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
 	int iLoop;
-	for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
+	for (CvCity* pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
 	{
 		if (!atPlot(pLoopCity->plot()) && AI_plotValid(pLoopCity->plot()))
 		{
@@ -6898,39 +6899,38 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 				if (pLoopCity->isBestPortCity() || (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopCity->plot(), MISSIONAI_TRANSPORT_SEA, getGroup(), 1) == 0))
 				// TAC - AI Improved Naval AI - koma13 - END
 				{
-					
+
 					int iPathTurns;
-					if (generatePath(pLoopCity->plot(), 0, true, &iPathTurns))
+					if (generatePath(pLoopCity->plot(), MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3, true, &iPathTurns))
 					{
 						if (iPathTurns <= iMaxPath)
 						{
-							
 							int iBestYieldValue = 0;
 							//Nothing too fancy, just find the best yield and best quantity.
 							for (int i = 0; i < NUM_YIELD_TYPES; i++)
 							{
-								YieldTypes eYield = (YieldTypes)i;
+								const YieldTypes eYield = (YieldTypes)i;
 								if (kOwner.isYieldEuropeTradable(eYield))
 								{
 									if (kOwner.AI_isYieldForSale(eYield))
 									{
-										int iStored = pLoopCity->getYieldStored(eYield);
-										if (iStored >= ((GC.getGameINLINE().getCargoYieldCapacity() * iMinPercent) / 100 ))
+										const int iAvailable = std::max(0, pLoopCity->getYieldStored(eYield) - pLoopCity->getMaintainLevel(eYield));
+										if (iAvailable >= ((GC.getGameINLINE().getCargoYieldCapacity() * iMinPercent) / 100))
 										{
-											int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eYield);
+											const int iYieldValue = iAvailable * kEuropePlayer.getYieldBuyPrice(eYield);
 											iBestYieldValue = std::max(iYieldValue, iBestYieldValue);
 										}
 									}
 								}
 							}
-						
+
 							if (iBestYieldValue > 0)
 							{
 								int iValue = (100000 * iBestYieldValue);
-								
+
 								iValue /= 100 + getPathCost();
 								iValue /= 3 + pLoopCity->plot()->getDistanceToOcean();
-								
+
 								if (iValue > iBestValue)
 								{
 									iBestValue = iValue;
@@ -6956,7 +6956,7 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 
 	return false;
 }
-	
+
 bool CvUnitAI::AI_collectGoods()
 {
 	bool bLoaded = false;
