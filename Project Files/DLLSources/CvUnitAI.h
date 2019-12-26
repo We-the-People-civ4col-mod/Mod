@@ -396,6 +396,8 @@ protected:
 
 	bool AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger = true);
 
+	void AI_sellYieldUnits(Port port);
+
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
 

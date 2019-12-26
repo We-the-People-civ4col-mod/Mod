@@ -6279,30 +6279,7 @@ bool CvUnitAI::AI_africa()
 
 	pUnitNode = pPlot->headUnitNode();
 
-	//Sell to Africa
-	std::vector<CvUnit*> apUnits;
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
-
-		if (pLoopUnit->getTransportUnit() == this)
-		{
-			YieldTypes eYield = pLoopUnit->getYield();
-			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
-			{
-				if ((NO_YIELD == eYield) || kOwner.isYieldAfricaTradable(eYield))
-				{
-					apUnits.push_back(pLoopUnit);
-				}
-			}
-		}
-	}
-
-	for (uint i = 0; i < apUnits.size(); ++i)
-	{
-		kOwner.sellYieldUnitToAfrica(apUnits[i], apUnits[i]->getYieldStored(), 0);
-	}
+	AI_sellYieldUnits(AFRICA);
 
 	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
@@ -6412,31 +6389,8 @@ bool CvUnitAI::AI_europe()
 
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	
-	//Sell to Europe
-	std::vector<CvUnit*> apUnits;
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+	AI_sellYieldUnits(EUROPE);
 
-		if (pLoopUnit->getTransportUnit() == this)
-		{
-			YieldTypes eYield = pLoopUnit->getYield();
-			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
-			{
-				if ((NO_YIELD == eYield) || kOwner.isYieldEuropeTradable(eYield))
-				{
-					apUnits.push_back(pLoopUnit);
-				}
-			}
-		}
-	}
-
-	for (uint i = 0; i < apUnits.size(); ++i)
-	{
-		kOwner.sellYieldUnitToEurope(apUnits[i], apUnits[i]->getYieldStored(), 0);
-	}
-	
 	// TAC - AI King no Europe trading bugfix - koma13 - START
 	//kOwner.AI_doEurope();
 	if (kOwner.getParent() != NO_PLAYER)
@@ -6599,31 +6553,8 @@ bool CvUnitAI::AI_europeAssaultSea()
 
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	
-	//Sell to Europe
-	std::vector<CvUnit*> apUnits;
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+	AI_sellYieldUnits(EUROPE);
 
-		if (pLoopUnit->getTransportUnit() == this)
-		{
-			YieldTypes eYield = pLoopUnit->getYield();
-			if (NO_YIELD != eYield)
-			{
-				if (kOwner.isYieldEuropeTradable(eYield))
-				{
-					apUnits.push_back(pLoopUnit);
-				}
-			}
-		}
-	}
-
-	for (uint i = 0; i < apUnits.size(); ++i)
-	{
-		kOwner.sellYieldUnitToEurope(apUnits[i], apUnits[i]->getYieldStored(), 0);
-	}
-	
 	//Pick up units from Europe (FIFO)
 	while (kOwner.getNumEuropeUnits() > 0)
 	{
@@ -19142,3 +19073,42 @@ bool CvUnitAI::AI_moveToCity(bool bUnload, CvCity* pLoopCity)
 	return true;
 }
 //End TAC Whaling, ray
+
+void CvUnitAI::AI_sellYieldUnits(Port port)
+{
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlot* pPlot = plot();
+	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+	std::vector<CvUnit*> apUnits;
+
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getTransportUnit() == this)
+		{			
+			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
+			{
+				const YieldTypes eYield = pLoopUnit->getYield();
+
+				if ((NO_YIELD == eYield) || kOwner.isYieldEuropeTradable(eYield))
+				{
+					apUnits.push_back(pLoopUnit);
+				}
+			}
+		}
+	}
+
+	for (uint i = 0; i < apUnits.size(); ++i)
+	{
+		if (port == EUROPE)
+		{ 
+			kOwner.sellYieldUnitToEurope(apUnits[i], apUnits[i]->getYieldStored(), 0);
+		}
+		else if (port == AFRICA)
+		{
+			kOwner.sellYieldUnitToAfrica(apUnits[i], apUnits[i]->getYieldStored(), 0);
+		}
+	}
+}
