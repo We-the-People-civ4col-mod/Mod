@@ -13288,10 +13288,15 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 
 		if (getGroup() != NULL)
 		{
-			// Erik: Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
-			getGroup()->AI_separate();
-
-			//getGroup()->splitGroup(1, this);
+			if (!isHuman())
+			{
+				// Erik: Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
+				getGroup()->AI_separate();
+			}
+			else
+			{
+				getGroup()->splitGroup(1, this);
+			}
 		}
 
 		if (!isOnMap())
