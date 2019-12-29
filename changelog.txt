@@ -1,5 +1,9 @@
 We the People Changelog
 
+Version 2.7.2 Beta 2
+
+- Fixed corrupted string TXT_KEY_UNIT_WHALING_BOAT in German translation (introduced in beta 1)
+
 Version 2.7.2 Beta 1
 
 Translation Improvements:
