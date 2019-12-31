@@ -16345,3 +16345,26 @@ bool CvPlayerAI::AI_isLandLocked(bool bIgnoreCultureLock) const
 	return true;
 }
 // TAC - AI City Sites - koma13 - END
+
+// Returns the best price that we can get for the yield considering the export markets available to us
+// TODO: Consider natives, fellow Europeans, internal market, Port Royal
+int CvPlayerAI::AI_getYieldBestExportPrice(YieldTypes eYield) const
+{
+	FAssert(!isNative());
+	FAssert(GC.getYieldInfo(eYield).isCargo());
+
+	PlayerTypes eParent = getParent();
+
+	// This will allow the king to consider his own market for export
+	if (getParent() == NO_PLAYER)
+	{
+		eParent = getID();
+	}
+
+	const CvPlayer& kParent = GET_PLAYER(eParent);
+
+	// Return the max price we would get by selling in the currently AI accessibly ports
+	return std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+}
+
+

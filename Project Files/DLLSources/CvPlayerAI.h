@@ -454,6 +454,8 @@ public:
   virtual void read(FDataStreamBase* pStream);
   virtual void write(FDataStreamBase* pStream);
 
+  int AI_getYieldBestExportPrice(YieldTypes eYield) const;
+
 protected:
 
     /** NBMOD TAX **/
