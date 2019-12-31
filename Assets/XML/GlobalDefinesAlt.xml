@@ -1045,4 +1045,8 @@
 		<iDefineIntVal>0</iDefineIntVal>
 	</Define>
 	<!-- XP cap end -->
+	<Define>
+		<DefineName>PERMANENT_ALLIANCE_REQUIRES_REVOLUTION</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
 </Civ4Defines>

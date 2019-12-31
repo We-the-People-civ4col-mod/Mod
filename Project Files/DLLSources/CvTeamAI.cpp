@@ -1164,7 +1164,7 @@ DenialTypes CvTeamAI::AI_makePeaceTrade(TeamTypes ePeaceTeam, TeamTypes eTeam) c
 
 
 	// Erik: If the AI is fighting the revolutionary war it will not consider
-	// making peave before its kings has lost
+	// making peace before its kings has lost
 	
 	if (isInRevolution() && GET_TEAM(ePeaceTeam).hasEuropePlayer())
 	{
@@ -1555,7 +1555,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 	return NO_DENIAL;
 }
 
-
+// eTeam is the team that we're considering to ally with
 DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 {
 	PROFILE_FUNC();
@@ -1606,6 +1606,11 @@ DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 				}
 			}
 		}
+	}
+
+	if (!GET_TEAM(eTeam).isInRevolution() && GC.getDefineINT("PERMANENT_ALLIANCE_REQUIRES_REVOLUTION"))
+	{
+		return DENIAL_NO_GAIN;
 	}
 
 	return NO_DENIAL;
