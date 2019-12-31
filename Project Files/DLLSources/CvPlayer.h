@@ -245,7 +245,7 @@ public:
 	void findNewCapital();
 	DllExport bool canRaze(CvCity* pCity) const;
 	void raze(CvCity* pCity);
-	void disband(CvCity* pCity);
+	void disband(CvCity* pCity, bool bAbandon = false);
 	bool canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* pUnit) const;
 	int receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);

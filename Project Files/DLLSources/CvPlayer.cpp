@@ -2425,7 +2425,7 @@ void CvPlayer::doTurn()
 		{
 			CvWString szBuffer = gDLL->getText("CITY_ABANDONED", pLoopCity->getNameKey());
 			gDLL->getInterfaceIFace()->addMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), true, true);
-			disband(pLoopCity);
+			disband(pLoopCity, true);
 		}
 		else
 		{
@@ -5226,17 +5226,61 @@ void CvPlayer::raze(CvCity* pCity)
 	disband(pCity);
 }
 
-
-void CvPlayer::disband(CvCity* pCity)
+void CvPlayer::disband(CvCity* pCity, bool bAbandon)
 {
 	if (getNumCities() == 1)
 	{
 		setFoundedFirstCity(false);
 	}
 
-	GC.getGameINLINE().addDestroyedCityName(pCity->getNameKey());
 
 	pCity->kill();
+
+
+	// Early exit in case the city was razed
+	if (!bAbandon)
+	{
+		GC.getGameINLINE().addDestroyedCityName(pCity->getNameKey());
+		return;
+	}
+
+	CvPlot* const pCityPlot = pCity->plot();
+	
+	// No ruins for a city that was voluntarily abandoned
+	pCityPlot->setImprovementType(NO_IMPROVEMENT);
+
+	// Loop through all the plots of the city and subtract the free culture that the city itself added.
+	// Culture added by buildings will be kept
+
+	const PlayerTypes eCityOwner = pCity->getOwnerINLINE();
+
+	// TODO: What about civs that get free culture producing buildings?
+	if (pCityPlot->getCulture(eCityOwner) >= GC.getDefineINT("FREE_CITY_CULTURE"))
+	{
+		// Subtract the free culture from the plot. If the city every produced its own culture, that will remain
+		pCityPlot->changeCulture(eCityOwner, -GC.getDefineINT("FREE_CITY_CULTURE"), /*bUpdateCulture*/true);
+	}
+
+	// It's sufficient to only consider the immediate plots to the city square
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		CvPlot* const pAdjacentPlot = plotDirection(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pAdjacentPlot != NULL)
+		{
+			if (pAdjacentPlot->getCulture(eCityOwner) >= GC.getDefineINT("FREE_CITY_ADJACENT_CULTURE"))
+			{
+				pAdjacentPlot->changeCulture(eCityOwner, -GC.getDefineINT("FREE_CITY_ADJACENT_CULTURE"), /*bUpdateCulture*/true);
+			}
+		}
+	}
+
+
+	if (pCityPlot->getOwner() == NO_PLAYER)
+	{
+		// Remove road if we don't own the plot
+		pCityPlot->setRouteType(NO_ROUTE);
+	}
 }
 
 
