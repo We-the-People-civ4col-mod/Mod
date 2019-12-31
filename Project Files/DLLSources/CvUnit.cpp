@@ -3030,16 +3030,25 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		}
 	}
 
+	const FeatureTypes eFeature = pPlot->getFeatureType();
+
+	// Prevent the AI from moving through storms and sustaining damage
+	// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
+	if (getGroup()->AI_isControlled() && (eFeature != NO_FEATURE) &&  GC.getFeatureInfo(eFeature).getTurnDamage() > 0)
+	{
+		return false;
+	}
+
 	CvArea *pPlotArea = pPlot->area();
 	TeamTypes ePlotTeam = pPlot->getTeam();
 	bool bCanEnterArea = canEnterArea(pPlot->getOwnerINLINE(), pPlotArea);
 	if (bCanEnterArea)
-	{
-		if (pPlot->getFeatureType() != NO_FEATURE)
+	{	
+		if (eFeature != NO_FEATURE)
 		{
-			if (m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()))
+			if (m_pUnitInfo->getFeatureImpassable(eFeature))
 			{
-				if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+				if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
 				{
 					return false;
 				}
@@ -3050,10 +3059,10 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				}
 			}
 		}
-		
+
 		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 		{
-			if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
 			{
 				if (bIgnoreLoad || !canLoad(pPlot, true))
 				{
