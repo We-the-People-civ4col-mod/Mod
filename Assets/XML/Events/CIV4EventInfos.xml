@@ -5015,8 +5015,8 @@
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>1000</iAIValue>
             <iGenericParameter1>4</iGenericParameter1>
-            <iGenericParameter2>300</iGenericParameter2>
-            <iGenericParameter3>50</iGenericParameter3>
+            <iGenericParameter2>200</iGenericParameter2>
+            <iGenericParameter3>10</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
