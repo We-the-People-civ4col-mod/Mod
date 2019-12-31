@@ -8559,9 +8559,11 @@ int CvUnit::defenseXPValue() const
 
 int CvUnit::maxXPValue() const
 {
-	int iMaxValue;
-
-	iMaxValue = MAX_INT;
+	int iMaxValue = MAX_INT;
+	if (getUnitInfo().isAnimal())
+		iMaxValue = std::min(iMaxValue, GC.getDefineINT("ANIMAL_MAX_XP_VALUE"));
+	if (getUnitInfo().LbD_canEscape())
+		iMaxValue = std::min(iMaxValue, GC.getDefineINT("ESCAPE_MAX_XP_VALUE"));
 
 	return iMaxValue;
 }

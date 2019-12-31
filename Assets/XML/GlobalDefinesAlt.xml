@@ -1034,5 +1034,15 @@
 		<DefineName>CITY_DEFENSE_DAMAGE_HEAL_RATE</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
-<!-- Super Forts end -->
+	<!-- Super Forts end -->
+	<!-- XP cap begin -->
+	<Define>
+		<DefineName>ANIMAL_MAX_XP_VALUE</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ESCAPE_MAX_XP_VALUE</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<!-- XP cap end -->
 </Civ4Defines>
