@@ -1191,7 +1191,7 @@ class CvMapDesc:
 		f.write("\tnum plots written=%d\n" %(iNumPlots,))
 		f.write("\tnum signs written=%d\n" %(iNumSigns,))
 		f.write("\tRandomize Resources=false\n")
-		f.write("\tCity Catchment Radius=%d\n", %(map.getCityCatchmentRadius() + 1,)) # use 1-2 for scenario editors instead of 0-1 for map options
+		f.write("\tCity Catchment Radius=%d\n" %(map.getCityCatchmentRadius() + 1,)) # use 1-2 for scenario editors instead of 0-1 for map options
 		f.write("EndMap\n")
 
 	def read(self, f):
