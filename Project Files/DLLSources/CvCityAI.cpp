@@ -232,6 +232,8 @@ void CvCityAI::AI_assignWorkingPlots()
 		return;
 	}
 	
+	AI_assignCityPlot();
+
 	GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
 	AI_updateNeededYields();
 
@@ -6458,6 +6460,44 @@ bool CvCityAI::AI_isMajorCity() const
 	}
 	
 	return false;
+}
+
+
+// Choose the yield with the highest export value for the city plot 
+// TODO: Extend this by considering deficit input yields for slotworkers
+void CvCityAI::AI_assignCityPlot()
+{
+	// Natives are not supported yet
+	if (isNative())
+		return;
+
+	int iBestValue = 0;
+	YieldTypes eBestYield = NO_YIELD;
+
+	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	for (uint i = 0; i < NUM_YIELD_TYPES; i++)
+	{
+		const YieldTypes eYield = (YieldTypes)i;
+		const int iYield = plot()->calculatePotentialCityYield(eYield, this);
+
+		if (iYield > 0)
+		{
+			const int iValue = kPlayer.AI_getYieldBestExportPrice(eYield) * iYield;
+
+			if (iValue > iBestValue)
+			{
+				iBestValue = iValue;
+				eBestYield = eYield;
+			}
+
+		}
+	}
+
+	if (eBestYield != NO_YIELD)
+	{
+		setPreferredYieldAtCityPlot(eBestYield);
+	}
 }
 
 

@@ -171,8 +171,6 @@ public:
 	
 	bool AI_isMajorCity() const;
 
-
-
 	DllExport void read(FDataStreamBase* pStream);
 	DllExport void write(FDataStreamBase* pStream);
 
@@ -275,6 +273,8 @@ protected:
 	void AI_updateWorkersNeededHere();
 
 	bool AI_hasCoastalRoute() const;
+
+	void AI_assignCityPlot();
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
