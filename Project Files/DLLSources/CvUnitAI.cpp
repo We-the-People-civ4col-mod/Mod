@@ -4442,6 +4442,8 @@ void CvUnitAI::AI_transportSeaMove()
 	}
 	// TAC - AI Improved Naval AI - koma13 - END
 
+	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+
 	if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 	{
 		if (AI_respondToPickup(20, UNITAI_TREASURE))
@@ -5388,6 +5390,8 @@ void CvUnitAI::AI_escortSeaMove()
 {
 	PROFILE_FUNC();
 
+	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+
 	if (plot()->isCity(true)) //prioritize getting outta there
 	{
 		int iOurDefense = GET_TEAM(getTeam()).AI_getOurPlotStrength(plot(),0,true,false,true);
@@ -5498,6 +5502,8 @@ void CvUnitAI::AI_escortSeaMove()
 
 void CvUnitAI::AI_combatSeaMove()
 {
+	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+
 	// Erik: Check if there's an admiral waiting
 	if (AI_joinGreatAdmiral())
 		return;
@@ -5549,6 +5555,8 @@ void CvUnitAI::AI_combatSeaMove()
 
 void CvUnitAI::AI_pirateMove()
 {
+	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+
 	if (AI_anyAttack(2, 49))
 	{
 		return;
@@ -6416,6 +6424,8 @@ bool CvUnitAI::AI_europe()
 
 bool CvUnitAI::AI_europeAssaultSea()
 {
+	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	
 	AI_sellYieldUnits(EUROPE);
@@ -11176,7 +11186,7 @@ bool CvUnitAI::AI_hide()
 
 
 // Returns true if a mission was pushed...
-bool CvUnitAI::AI_goody()
+bool CvUnitAI::AI_goody(bool bIgnoreCity)
 {
 	PROFILE_FUNC();
 
@@ -11199,7 +11209,7 @@ bool CvUnitAI::AI_goody()
 				iValue += 10000;
 			}
 			
-			if (pLoopPlot->isCity())
+			if (!bIgnoreCity && pLoopPlot->isCity())
 			{
 				if (!pLoopPlot->getPlotCity()->isScoutVisited(getTeam()))
 				{
@@ -11247,7 +11257,7 @@ bool CvUnitAI::AI_goody()
 
 }
 
-bool CvUnitAI::AI_goodyRange(int iRange)
+bool CvUnitAI::AI_goodyRange(int iRange, bool bIgnoreCity)
 {
 	PROFILE_FUNC();
 
@@ -11270,7 +11280,7 @@ bool CvUnitAI::AI_goodyRange(int iRange)
 					iValue += 10000;
 				}
 				
-				if (pLoopPlot->isCity())
+				if (!bIgnoreCity && pLoopPlot->isCity()) 
 				{
 					if (!pLoopPlot->getPlotCity()->isScoutVisited(getTeam()))
 					{
@@ -15168,6 +15178,8 @@ bool CvUnitAI::AI_tradeWithCity()
 bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 {
 	PROFILE_FUNC();
+
+	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
 
 	bool bIsAttackCity = (getUnitAICargo(UNITAI_OFFENSIVE) > 0);
 	
