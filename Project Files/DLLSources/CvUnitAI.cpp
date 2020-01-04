@@ -6568,11 +6568,6 @@ bool CvUnitAI::AI_europe()
 
 bool CvUnitAI::AI_europeAssaultSea()
 {
-	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
-	{
-		return;
-	}
-
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	
 	AI_sellYieldUnits(EUROPE);
@@ -14879,26 +14874,27 @@ bool CvUnitAI::AI_joinCityBrave()
 	}
 	return false;
 }
-						
+			
+// Determine if we should join any city in this area where we can be employed
 bool CvUnitAI::AI_joinCity(int iMaxPath)
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
+
 	CvUnit* pTransportUnit = getTransportUnit();
-	
+
 	bool bForceTransport = false;
 	if (plot()->isCity() && (plot()->getOwnerINLINE() != getOwnerINLINE()))
 	{
 		bForceTransport = true;
 	}
-	
+
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestJoinPlot = NULL;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
-	
-	ProfessionTypes eOptimalProfession = kOwner.AI_idealProfessionForUnit(getUnitType());
-	
+
+	const ProfessionTypes eOptimalProfession = kOwner.AI_idealProfessionForUnit(getUnitType());
+
 	int iLoop;
 	bool bTransportPath = false;
 	for (CvCity* pCity = kOwner.firstCity(&iLoop); pCity != NULL; pCity = kOwner.nextCity(&iLoop))
@@ -14909,14 +14905,14 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 		{
 			int iPathTurns = 0;
 			bool bTransport = pTransportUnit != NULL;
-			
+
 			if (!bForceTransport && canUnload() && (pLoopPlot->area() == area()))
 			{
 				bTransport = false;
 			}
 
 			bool bValid = atPlot(pLoopPlot);
-				
+
 			if (!bValid)
 			{
 				if (bTransport)
@@ -14932,55 +14928,53 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 				}
 				bTransportPath = bTransport;
 			}
-				
-			if (bValid && iPathTurns < iMaxPath)
-				{
-					ProfessionTypes eProfession;
-					int iValue = pCity->AI_unitJoinCityValue(this, &eProfession);
-					
-					iValue *= 100;
-					iValue /= 100;
-					
-					int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup());
-					// TAC - AI Economy- koma13 - START
-					//int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming, 0);
-					int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming);
-					// TAC - AI Economy- koma13 - END
-					if (iSizeGap > 0)
-					{
-						int iModifier = iSizeGap * (eOptimalProfession == NO_PROFESSION) ? 20 : 5;
-						iModifier += (pCity->getPopulation() + iIncoming == 1) ? 100 : 25;
-						iValue *= 100 + iModifier;
-						iValue /= 100;
-					}
-					// TAC - AI Economy- koma13 - START
-					else if (iSizeGap < 0)
-					{
-						iValue = 0;
-					}
-					// TAC - AI Economy- koma13 - END
-					
-					iValue *= 100;
-					iValue /= 100 + 10 * iPathTurns;
 
-					if (atPlot(pLoopPlot))
-					{
-						iValue *= 100 + std::max(0, (15 - pCity->getPopulation()) * 2) + ((eOptimalProfession == NO_PROFESSION) ? 25 : 10);
-						iValue /= 100;
-					}
-					
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : pLoopPlot;
-						pBestJoinPlot = pLoopPlot;
-						eBestProfession = eProfession;
-					}
+			if (bValid && iPathTurns < iMaxPath)
+			{
+				ProfessionTypes eProfession;
+				int iValue = pCity->AI_unitJoinCityValue(this, &eProfession);
+
+				const int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup());
+				// TAC - AI Economy- koma13 - START
+				//int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming, 0);
+				const int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming);
+				// TAC - AI Economy- koma13 - END
+				if (iSizeGap > 0)
+				{
+					int iModifier = iSizeGap * (eOptimalProfession == NO_PROFESSION) ? 20 : 5;
+					iModifier += (pCity->getPopulation() + iIncoming == 1) ? 100 : 25;
+					iValue *= 100 + iModifier;
+					iValue /= 100;
+				}
+				// TAC - AI Economy- koma13 - START
+				else if (iSizeGap < 0)
+				{
+					// Even though this city is undesireable it's still better than having idle colonists
+					iValue /= 2;
+				}
+				// TAC - AI Economy- koma13 - END
+
+				iValue *= 100;
+				iValue /= 100 + 10 * iPathTurns;
+
+				if (atPlot(pLoopPlot))
+				{
+					iValue *= 100 + std::max(0, (15 - pCity->getPopulation()) * 2) + ((eOptimalProfession == NO_PROFESSION) ? 25 : 10);
+					iValue /= 100;
+				}
+
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : pLoopPlot;
+					pBestJoinPlot = pLoopPlot;
+					eBestProfession = eProfession;
 				}
 			}
 		}
+	}
 
-	
+
 	if (pBestJoinPlot == NULL)
 	{
 		CvCity* pPlotCity = plot()->getPlotCity();
@@ -15007,7 +15001,7 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 				getGroup()->pushMission(MISSION_SKIP);
 				return true;
 			}
-			
+
 			AI_setMovePriority(0);
 			plot()->getPlotCity()->addPopulationUnit(this, eBestProfession);
 			return true;
@@ -15026,7 +15020,8 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 	}
 	return false;
 }
-	
+
+
 bool CvUnitAI::AI_joinOptimalCity()
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -15438,11 +15433,6 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 {
 	PROFILE_FUNC();
 
-	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
-	{
-		return;
-	}
-
 	bool bIsAttackCity = (getUnitAICargo(UNITAI_OFFENSIVE) > 0);
 	
 	FAssert(getGroup()->hasCargo());
@@ -15452,7 +15442,7 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 	{
 		return false;
 	}
-
+	z
 	std::vector<CvUnit*> aGroupCargo;
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
