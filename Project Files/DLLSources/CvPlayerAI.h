@@ -455,6 +455,7 @@ public:
   virtual void write(FDataStreamBase* pStream);
 
   int AI_getYieldBestExportPrice(YieldTypes eYield) const;
+  void AI_hurryBestDockUnits(int iHurryCount);
 
 protected:
 
@@ -567,7 +568,10 @@ protected:
 	int m_iWaveIndex;
 	// TAC - AI Revolution - koma13 - END
 	
-	
+	bool AI_shouldHurryUnit() const;
+	int AI_getBestDockUnit() const;
+	bool AI_canHurryDockUnit() const;
+
 	friend class CvGameTextMgr;
 };
 

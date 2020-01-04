@@ -4566,7 +4566,11 @@ void CvUnitAI::AI_transportSeaMove()
 	}
 	// TAC - AI Improved Naval AI - koma13 - END
 
-	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
+
 
 	if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 	{
@@ -5514,7 +5518,10 @@ void CvUnitAI::AI_escortSeaMove()
 {
 	PROFILE_FUNC();
 
-	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
 
 	if (plot()->isCity(true)) //prioritize getting outta there
 	{
@@ -5626,7 +5633,10 @@ void CvUnitAI::AI_escortSeaMove()
 
 void CvUnitAI::AI_combatSeaMove()
 {
-	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
 
 	// Erik: Check if there's an admiral waiting
 	if (AI_joinGreatAdmiral())
@@ -5679,7 +5689,10 @@ void CvUnitAI::AI_combatSeaMove()
 
 void CvUnitAI::AI_pirateMove()
 {
-	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
 
 	if (AI_anyAttack(2, 49))
 	{
@@ -6446,6 +6459,13 @@ bool CvUnitAI::AI_europe()
 	}
 	// TAC - AI purchases military units - koma13 - END
 
+	const int iPotentialColonistsToHurry = std::max(0, cargoSpace() - getCargo() - kOwner.getNumEuropeUnits());
+	
+	if (iPotentialColonistsToHurry > 0)
+	{ 
+		kOwner.AI_hurryBestDockUnits(std::min(GC.getDefineINT("DOCKS_NEXT_UNITS"), iPotentialColonistsToHurry));
+	}
+
 	// Erik: Pick up the most valuable units first (e.g. statesmen)
 	// and leave the less valuable units (e.g. servants) for last
 	kOwner.sortEuropeUnits();
@@ -6548,7 +6568,10 @@ bool CvUnitAI::AI_europe()
 
 bool CvUnitAI::AI_europeAssaultSea()
 {
-	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
 
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	
@@ -15415,7 +15438,10 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 {
 	PROFILE_FUNC();
 
-	AI_goodyRange(baseMoves(), /*bIgnoreCity*/true);
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
 
 	bool bIsAttackCity = (getUnitAICargo(UNITAI_OFFENSIVE) > 0);
 	

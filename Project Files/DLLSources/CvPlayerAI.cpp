@@ -16367,4 +16367,130 @@ int CvPlayerAI::AI_getYieldBestExportPrice(YieldTypes eYield) const
 	return std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
 }
 
+// TAC - AI City Sites - koma13 - END
+// TAC - AI City Sites - koma13 - END
 
+// Returns true if we should prefer to to hurry a unit rather than buying an equivalent unit
+bool CvPlayerAI::AI_shouldHurryUnit() const
+{
+	// Note: Hurrying is generally better in the early game since the AI economy is not yet sophisticated
+	// enough to be able to properly employ specialists.
+	// Hurrying is also preferable until the cost of hurrying approaches the cost of a free colonist
+	int iEuropeMinBuyCost = INT_MAX;
+	
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+		if (eLoopUnit != NO_UNIT)
+		{
+			const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+		
+			// Find the cheapest European unit suitable for any profession that is for sale which cannot escape
+			if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getEuropeCost() > 0 && !kUnitInfo.LbD_canEscape())
+			{
+				if (getEuropeUnitBuyPrice(eLoopUnit) < iEuropeMinBuyCost)
+				{
+					iEuropeMinBuyCost = getEuropeUnitBuyPrice(eLoopUnit);
+				}
+			}
+		}
+	}
+	
+	// If we didn't find a single candidate then something is really wrong!
+	FAssert(iEuropeMinBuyCost != INT_MAX);
+
+	int iEuropeMinHurryCost = INT_MAX;
+	
+	// Find the cost of hurrying the cheapest unit suitable for any profession that cannot escape
+	for (int iIndex = 0; iIndex < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++iIndex)
+	{
+		const int iHurryCost = getHurryGold((HurryTypes)1, iIndex);
+		if (iHurryCost < iEuropeMinHurryCost)
+		{
+			iEuropeMinHurryCost = iHurryCost;
+		}
+	}
+	
+	FAssert(iEuropeMinHurryCost != INT_MAX);
+	return (iEuropeMinHurryCost < iEuropeMinBuyCost);
+}
+
+// Returns the index of the best unit (as in purchase price of an equivalent unit) to hurry 
+int CvPlayerAI::AI_getBestDockUnit() const
+{
+	int iBestIndex = 0;
+	int iBestAdvantage = 0;
+	const int iDockCount = GC.getDefineINT("DOCKS_NEXT_UNITS");
+	
+	// TODO: This needs to be a while loop since the indices are not stable
+	for (int iIndex = 0; iIndex < iDockCount; ++iIndex)
+	{
+		const UnitTypes eLoopUnit = (UnitTypes)getDocksNextUnit(iIndex);
+		
+		// At this point there should always be a unit available
+		FAssert(eLoopUnit != NO_UNIT);
+		
+		const int iHurryCost = getHurryGold((HurryTypes)1, iIndex);
+		
+		const int iUnitCost = getEuropeUnitBuyPrice(eLoopUnit);
+		
+		// Note: unit cost may be negative for units that are available for purchasing though
+		// the absolute value will still indicate the value of the unit
+		const int iHurryCostAdvantage = std::abs(iUnitCost) - iHurryCost;
+		
+		if (iHurryCostAdvantage > iBestAdvantage)
+		{
+			iBestAdvantage = iHurryCostAdvantage;
+			iBestIndex = iIndex;
+		}
+	}
+	
+	return iBestIndex;
+}
+
+// Determine the units on the docks that have the largest cost\value difference and hurry them
+void CvPlayerAI::AI_hurryBestDockUnits(int iHurryCount)
+{
+	if (AI_canHurryDockUnit() && iHurryCount > 0)
+	{
+		// Attempt to fill the rest of our cargo holds with hurried colonists
+		for (int iIndex = 0; iIndex < iHurryCount; iIndex++)
+		{
+			const int index = AI_getBestDockUnit();
+			
+			// Note: Will be false if we can't afford it
+			const bool bCanHurry = canHurry((HurryTypes)1, iIndex);
+			
+			if (bCanHurry)
+			{
+				hurry((HurryTypes)1, iIndex);
+			}
+			else
+			{
+				return;
+			}
+		}
+	}
+}
+
+bool CvPlayerAI::AI_canHurryDockUnit() const
+{
+	FAssert(!isHuman());
+	
+	if (GC.getAI_HURRY_IMMIGRANTS() <= 0)
+	{
+		return false;
+	}
+	
+	if (getParent() == NO_PLAYER)
+	{
+		return false;
+	}
+	
+	if (!canTradeWithEurope())
+	{
+		return false;
+	}
+	
+	return true;
+}
