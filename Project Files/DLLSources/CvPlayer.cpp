@@ -6435,6 +6435,19 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 				}
 			}
 
+			//WTP, ray fix for issue Free Water Units - START
+			CvPlot* pPortPlot = NULL;
+			int iLoopWater; 
+			for (CvCity* pPortCity = firstCity(&iLoopWater); pPortCity != NULL && pPortPlot == NULL; pPortCity = nextCity(&iLoopWater))
+			{
+				CvPlot* pPortCityPlot = pPortCity->plot();
+				if (pPortCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pPortCityPlot->isEuropeAccessable())
+				{
+					pPortPlot = pPortCityPlot;
+				}
+			}
+			//WTP, ray fix for issue Free Water Units - END
+
 			for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL && pPlot == NULL; pLoopUnit = nextUnit(&iLoop))
 			{
 				CvPlot* pUnitPlot = pLoopUnit->plot();
@@ -6446,10 +6459,19 @@ void CvPlayer::processFatherOnce(FatherTypes eFather)
 
 			for (int i = 0; i < kFatherInfo.getFreeUnits(iUnitClass); ++i)
 			{
-				if (pPlot != NULL)
+				//WTP, ray fix for issue Free Water Units - START
+				if (pPlot != NULL && GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_LAND)
+				// if (pPlot != NULL)
+				//WTP, ray fix for issue Free Water Units - END
 				{
 					initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 				}
+				//WTP, ray fix for issue Free Water Units - START
+				else if (pPortPlot != NULL && GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA)
+				{
+					initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pPortPlot->getX_INLINE(), pPortPlot->getY_INLINE());
+				}
+				//WTP, ray fix for issue Free Water Units - END
 				else if (canTradeWithEurope())
 				{
 					CvPlot* pStartingPlot = getStartingPlot();
