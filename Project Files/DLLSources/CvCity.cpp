@@ -778,6 +778,13 @@ void CvCity::doTurn()
 	if (getOccupationTimer() > 0)
 	{
 		changeOccupationTimer(-1);
+		// WTP, ray, Change for Request "Occupation has ended" - START
+		// WTP, ray, if Occupation has ended now, we will send a message that Occupation is over
+		if (isOccupation() == FALSE)
+		{
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_OCCUPATION_ENDED", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+		// WTP, ray, Change for Request "Occupation has ended" - START
 	}
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)

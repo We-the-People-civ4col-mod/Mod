@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
+        <English>The unrest in %s1_city has ended now. All business it back to normal.</English>
+        <French>The unrest in %s1_city has ended now. All business it back to normal.</French>
+        <German>Die Unruhen in %s1_city sind vorrüber. Das Tagesgeschäft in der Stadt nimmt wieder seinen normalen Lauf.</German>
+        <Italian>The unrest in %s1_city has ended now. All business it back to normal.</Italian>
+        <Spanish>The unrest in %s1_city has ended now. All business it back to normal.</Spanish>
+    </TEXT>
+</Civ4GameText>
