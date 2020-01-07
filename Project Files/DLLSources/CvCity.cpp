@@ -11585,17 +11585,16 @@ void CvCity::doAutoExport(YieldTypes eYield)
 // auto traderoute - end - Nightinggale
 
 // PatchMod: Achievements START
-bool CvCity::isHasSpecialBuilding(int iValue)
+bool CvCity::isHasSpecialBuilding(int iValue) const
 {
-	bool check = false;
 	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
 		if (GC.getBuildingInfo((BuildingTypes)iI).getSpecialBuildingType() == iValue && isHasBuilding((BuildingTypes)iI))
 		{
-			check = true;
+			return true;
 		}
 	}
-	return check;
+	return false;
 }
 // PatchMod: Achievements END
 

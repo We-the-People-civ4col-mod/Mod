@@ -45,7 +45,7 @@ public:
 	DllExport void kill();
 
 	// PatchMod: Achievements START
-	bool isHasSpecialBuilding(int iValue);
+	bool isHasSpecialBuilding(int iValue) const;
 	// PatchMod: Achievements END
 
 	// TAC - LbD - Ray - START

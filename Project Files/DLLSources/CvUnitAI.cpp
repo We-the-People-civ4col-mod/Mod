@@ -15442,7 +15442,7 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 	{
 		return false;
 	}
-	z
+	
 	std::vector<CvUnit*> aGroupCargo;
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
