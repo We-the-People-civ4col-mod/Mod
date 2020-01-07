@@ -820,7 +820,8 @@ CvSavegameReaderBase::CvSavegameReaderBase(FDataStreamBase* pStream)
 	{
 		m_MemoryAllocation = new byte[std::min((unsigned int)CHUNK_SIZE,m_iSize)];
 		FAssert(m_MemoryAllocation);
-		FAssert(ReadChunk());
+		int iReturnVal = ReadChunk();
+		FAssert(iReturnVal);
 	}
 }
 
