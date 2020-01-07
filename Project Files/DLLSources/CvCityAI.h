@@ -89,6 +89,7 @@ public:
     int AI_countNumBonuses(BonusTypes eBonus, bool bIncludeOurs, bool bIncludeNeutral, int iOtherCultureThreshold, bool bLand = true, bool bWater = true) const;
 
 	int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const;
+	int AI_highestTeamCloseness(TeamTypes eTeam) const; // K-Mod
 	int AI_cityThreat(bool bDangerPercent = false) const;
 
 	int AI_getWorkersHave() const;

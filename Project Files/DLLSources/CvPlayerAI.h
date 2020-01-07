@@ -78,7 +78,7 @@ public:
 	
 	bool AI_isAreaAlone(CvArea* pArea);
 	bool AI_isCapitalAreaAlone();
-	bool AI_isPrimaryArea(CvArea* pArea);
+	bool AI_isPrimaryArea(CvArea* pArea) const;
 
 	int AI_militaryWeight(CvArea* pArea);
 

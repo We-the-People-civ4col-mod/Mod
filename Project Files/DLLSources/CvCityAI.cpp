@@ -502,7 +502,8 @@ void CvCityAI::AI_chooseProduction()
 		}
 	}
 
-	if (AI_chooseBuilding(0, MAX_INT, 8))
+	//if (AI_chooseBuilding(0, MAX_INT, 8))
+	if (AI_chooseBuilding(BUILDINGFOCUS_NO_RECURSION, MAX_INT, 50))
 	{
 		return;
 	}
@@ -529,10 +530,11 @@ void CvCityAI::AI_chooseProduction()
 	}
 	*/
 
-	if (isNative() || isBestPortCity())
+	//if (isNative() || isBestPortCity())
 	{
-		if (AI_chooseBuilding(BUILDINGFOCUS_BUILD_ANYTHING, MAX_INT, 8))
-		{	
+		//if (AI_chooseBuilding(BUILDINGFOCUS_BUILD_ANYTHING, MAX_INT, 8))
+		if (AI_chooseBuilding(BUILDINGFOCUS_NO_RECURSION, MAX_INT, 50)) 
+		{
 			return;
 		}
 	}
@@ -1275,7 +1277,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				eYieldProduced = (YieldTypes) kLoopProfession.getYieldsProduced(0);
 				// R&R, ray , MYCP partially based on code of Aymerick - END
 
-				if (eYieldProduced == YIELD_CROSSES || eYieldProduced == YIELD_EDUCATION)
+				//if (eYieldProduced == YIELD_CROSSES || eYieldProduced == YIELD_EDUCATION)
+				if (eYieldProduced == YIELD_EDUCATION)
 				{
 					int iSpecialBuilding = kBuildingInfo.getSpecialBuildingType();
 					CvCity * pCity = kOwner.getCity(getID());
@@ -1430,7 +1433,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			//iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
 			//iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
 				
-			if (!GC.getYieldInfo(eLoopYield).isCargo())
+			//if (!GC.getYieldInfo(eLoopYield).isCargo())
 			{
 				iAdded += kBuildingInfo.getYieldChange(eLoopYield);
 				iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
@@ -1552,7 +1555,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		}
 	}
 	
-	if ((bIsMajorCity) || (iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
+	//if ((bIsMajorCity) || (iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
+	if (iFocusFlags & BUILDINGFOCUS_MILITARY)	// TAC - AI Buildings - koma13
 	{
 		int iUnitsTrainedCount = 0;
 		
@@ -1659,6 +1663,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	}
 	
 	//increase building value if only needs hammers
+	/*
 	if (!isHasConceptualBuilding(eBuilding) && (iFocusFlags & BUILDINGFOCUS_BUILD_ANYTHING))
 	{
 		iValue += 10;
@@ -1678,7 +1683,8 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			iValue += 10;
 		}
 	}
-	
+	*/
+
 	// TAC - AI Buildings - koma13 - START
 	if (!isHasConceptualBuilding(eBuilding))
 	{
@@ -6102,6 +6108,22 @@ int CvCityAI::AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance) const
 	
 	return m_aiPlayerCloseness[eIndex];
 }
+
+// K-Mod
+int CvCityAI::AI_highestTeamCloseness(TeamTypes eTeam) const
+{
+	int iCloseness = -1;
+	for (PlayerTypes i = (PlayerTypes)0; i < MAX_PLAYERS; i = (PlayerTypes)(i + 1))
+	{
+		if (GET_PLAYER(i).getTeam() == eTeam)
+		{
+			iCloseness = std::max(iCloseness, AI_playerCloseness(i, DEFAULT_PLAYER_CLOSENESS));
+		}
+	}
+
+	return iCloseness;
+}
+// K-Mod end
 
 void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 {

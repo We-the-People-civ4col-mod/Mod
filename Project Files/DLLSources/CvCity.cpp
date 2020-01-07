@@ -11755,3 +11755,33 @@ void CvCity::writeDesyncLog(FILE *f)
 		}
 	}
 }
+
+// Returns true if the city can consume a given input yield
+// Note that we only check for the potential, this function will not indicate that
+// yields are actually being refined
+bool CvCity::canConsumeYield(YieldTypes eYield) const
+{
+	const CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+	for (int i = 0; i < GC.getNumProfessionInfos(); i++)
+	{
+		const ProfessionTypes eLoopProfession = (ProfessionTypes)i;
+		const CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
+
+		if (!GC.getCivilizationInfo(kPlayer.getCivilizationType()).isValidProfession(eLoopProfession))
+			continue;
+
+		for (int j = 0; j < kLoopProfession.getNumYieldsConsumed(); j++)
+		{
+			if (kLoopProfession.getYieldsConsumed(j) == eYield)
+			{
+				if (getNumProfessionBuildingSlots(eLoopProfession) > 0)
+				{
+					return true;
+				}
+			}
+		}
+	}
+
+	return false;
+}
+

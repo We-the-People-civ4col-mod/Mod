@@ -1675,6 +1675,14 @@ enum DllExport EmotionTypes
 #endif
 };
 
+/********************************************************************************/
+/* 	BETTER_BTS_AI_MOD					03/08/10				jdog5000	    */
+/* 																			    */
+/* 																			    */
+/********************************************************************************/
+// Could increase this value now that player closness is fixed
+#define DEFAULT_PLAYER_CLOSENESS 7
+
 enum DllExport StrategyTypes
 {
 	NO_STRATEGY = -1,

@@ -2449,7 +2449,7 @@ bool CvPlayerAI::AI_isCapitalAreaAlone()
 }
 
 
-bool CvPlayerAI::AI_isPrimaryArea(CvArea* pArea)
+bool CvPlayerAI::AI_isPrimaryArea(CvArea* pArea) const
 {
 	CvCity* pCapitalCity;
 

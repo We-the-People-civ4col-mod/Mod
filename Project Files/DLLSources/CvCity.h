@@ -815,6 +815,7 @@ public:
 	// WARNING: setAutoThresholdCache will cause desyncs if not called by all computers in MP in sync
 	void setAutoThresholdCache(YieldTypes eYield);
 	void setAutoThresholdCache();
+	bool canConsumeYield(YieldTypes eYield) const;
 
 protected:
  	YieldArray<bool> ma_tradeImportsMaintain;

@@ -6728,36 +6728,39 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 	return false;
 }
 
+// This funcions only support export of yields to Europe \ Africa at the moment.
+// To transfer yields between our own cities, use the trade route AI functions
 bool CvUnitAI::AI_collectGoods()
 {
 	bool bLoaded = false;
-	CvCity* pCity = plot()->getPlotCity();
+	const CvCity* pCity = plot()->getPlotCity();
 
 	FAssert(pCity != NULL);
 	FAssert(pCity->getOwner() == getOwner()); // team?
 	
-	CvPlayerAI& kOwner = GET_PLAYER(getOwner());
-	CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwner());
 	
 	//First try and load any additional cargo.
 	for (int i = 0; i < NUM_YIELD_TYPES; i++)
 	{
-		YieldTypes eYield = (YieldTypes)i;
-		if (kOwner.isYieldEuropeTradable(eYield))
-		{
-			if (kOwner.AI_isYieldForSale(eYield))
-			{
-				YieldTypes eYield = (YieldTypes)i;
-				int iYieldStored = getLoadedYieldAmount(eYield) % GC.getGameINLINE().getCargoYieldCapacity();
+		const YieldTypes eYield = (YieldTypes)i;
+		
+		if (!kOwner.isYieldEuropeTradable(eYield))
+			continue;
+
+		if (!kOwner.AI_isYieldForSale(eYield))
+			continue;
+		
+		int iYieldStored = getLoadedYieldAmount(eYield) % GC.getGameINLINE().getCargoYieldCapacity();
 				
-				if (iYieldStored > 0)
-				{
-					if (pCity->getYieldStored(eYield) > 0)
-					{
-						loadYield(eYield, false);
-						bLoaded = true;
-					}
-				}
+		if (iYieldStored > 0)
+		{
+			const int iAvailable = std::max(0, pCity->getYieldStored(eYield) - pCity->getMaintainLevel(eYield));
+
+			if (iAvailable > 0)
+			{
+				loadYield(eYield, false);
+				bLoaded = true;
 			}
 		}
 	}
@@ -6770,23 +6773,25 @@ bool CvUnitAI::AI_collectGoods()
 
 		for (int i = 0; i < NUM_YIELD_TYPES; i++)
 		{
-			YieldTypes eYield = (YieldTypes)i;
-			if (kOwner.isYieldEuropeTradable(eYield))
+			const YieldTypes eYield = (YieldTypes)i;
+
+			if (!kOwner.isYieldEuropeTradable(eYield))
+				continue;
+
+			if (!kOwner.AI_isYieldForSale(eYield))
+				continue;
+
+			const int iAvailable = getMaxLoadYieldAmount(eYield);
+			if (iAvailable > (GC.getGameINLINE().getCargoYieldCapacity() / 100))
 			{
-				if (kOwner.AI_isYieldForSale(eYield))
+				int iYieldValue = iAvailable * kOwner.AI_getYieldBestExportPrice(eYield);
+				if (iYieldValue > iBestYieldValue)
 				{
-					int iStored = getMaxLoadYieldAmount(eYield);
-					if (iStored > (GC.getGameINLINE().getCargoYieldCapacity() / 10))
-					{
-						int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eYield);
-						if (iYieldValue > iBestYieldValue)
-						{
-							iBestYieldValue =iYieldValue;
-						eBestYield = eYield;
-					}
+					iBestYieldValue = iYieldValue;
+					eBestYield	    = eYield;
+
 				}
 			}
-		}
 		}
 		
 		if (eBestYield == NO_YIELD)
@@ -15206,7 +15211,7 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 	{
 		return false;
 	}
-	z
+
 	std::vector<CvUnit*> aGroupCargo;
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)

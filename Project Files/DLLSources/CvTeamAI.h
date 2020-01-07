@@ -48,6 +48,7 @@ public:
 	bool AI_isAnyCapitalAreaAlone() const;
 	bool AI_isPrimaryArea(CvArea* pArea) const;
 	bool AI_hasCitiesInPrimaryArea(TeamTypes eTeam) const;
+	bool AI_hasSharedPrimaryArea(TeamTypes eTeam) const; // K-Mod
 	AreaAITypes AI_calculateAreaAIType(CvArea* pArea, bool bPreparingTotal = false) const;
 
 	int AI_calculateAdjacentLandPlots(TeamTypes eTeam) const;
@@ -62,7 +63,14 @@ public:
 	int AI_getAttitudeVal(TeamTypes eTeam, bool bForced = true) const;
 	int AI_getMemoryCount(TeamTypes eTeam, MemoryTypes eMemory) const;
 
-	int AI_startWarVal(TeamTypes eTeam) const;
+	// K-Mod
+	int AI_warSpoilsValue(TeamTypes eTarget, WarPlanTypes eWarPlan) const;
+	int AI_warCommitmentCost(TeamTypes eTarget, WarPlanTypes eWarPlan) const;
+	int AI_warDiplomacyCost(TeamTypes eTarget) const;
+	// K-Mod end
+
+	//int AI_startWarVal(TeamTypes eTeam) const;
+	int AI_startWarVal(TeamTypes eTarget, WarPlanTypes eWarPlan) const; // K-Mod
 	int AI_endWarVal(TeamTypes eTeam) const;
 	int AI_mapTradeVal(TeamTypes eTeam) const;
 	DenialTypes AI_mapTrade(TeamTypes eTeam) const;
@@ -134,6 +142,7 @@ public:
 	bool AI_isChosenWar(TeamTypes eIndex) const;
 	bool AI_isSneakAttackPreparing(TeamTypes eIndex) const;
 	bool AI_isSneakAttackReady(TeamTypes eIndex) const;
+	bool AI_isSneakAttackReady() const; // K-Mod (any team)
 	void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true);
 
 	int AI_teamCloseness(TeamTypes eIndex, int iMaxDistance = -1) const;
@@ -141,7 +150,7 @@ public:
 
 	bool AI_performNoWarRolls(TeamTypes eTeam);
 
-	int AI_getAttitudeWeight(TeamTypes eTeam);
+	int AI_getAttitudeWeight(TeamTypes eTeam) const;
 
 	bool AI_isWaterAreaRelevant(CvArea* pArea);
 
@@ -161,6 +170,8 @@ public:
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
+
+	int AI_getWarSuccessRating() const; // K-Mod
 
 protected:
 

@@ -4044,36 +4044,16 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 	iMaxAmount = std::min(iMaxAmount, getLoadYieldAmount(eYield));
 	CvCity* pCity = plot()->getPlotCity();
 	if (pCity != NULL)
-	{
-		int iMaxAvailable = pCity->getYieldStored(eYield);
-		if (!isHuman() || isAutomated())
+	{	
+		int iMaxAvailable;
+		
+		if (getGroup()->AI_isControlled())
 		{
-//VET NewCapacity - begin 1/1
-			//iMaxAvailable -= pCity->getMaintainLevel(eYield);
-
-			// R&R, ray, improvement
-			//if (GC.getNEW_CAPACITY())
-			if (GC.getNEW_CAPACITY() && !isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
-			//if (GC.getNEW_CAPACITY() && !isHuman())
-			{
-				int iCargoYields = 0;
-				for (int iYield = 3; iYield < NUM_YIELD_TYPES; iYield++)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
-				{
-					if ((pCity->getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
-						{iCargoYields++;}
-				}
-				
-				if(iCargoYields > 0)//R&R mod, vetiarvind, max yield import limit
-					iMaxAvailable -= (pCity->getMaintainLevel(eYield) / iCargoYields);
-			}
-			else
-				{
-					//iMaxAvailable -= pCity->getMaintainLevel(eYield);
-					// transport feeder - start - Nightinggale
-					iMaxAvailable -= pCity->getAutoMaintainThreshold(eYield);
-					// transport feeder - end - Nightinggale
-				}
-//VET NewCapacity - end 1/1
+			iMaxAvailable = std::max(0, pCity->getYieldStored(eYield) - pCity->getMaintainLevel(eYield));
+		}
+		else
+		{
+			iMaxAvailable = pCity->getYieldStored(eYield);
 		}
 		iMaxAmount = std::min(iMaxAmount, iMaxAvailable);
 	}

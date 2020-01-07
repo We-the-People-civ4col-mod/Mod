@@ -1444,6 +1444,82 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	return TRUE;
 }
 
+/********************************************************************************/
+/* 	BETTER_BTS_AI_MOD					02/02/09				jdog5000	*/
+/* 																			*/
+/* 																			*/
+/********************************************************************************/
+// Find paths that a team's units could follow without declaring war
+int teamStepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
+{
+	CvPlot* pNewPlot;
+
+	if (parent == NULL)
+	{
+		return TRUE;
+	}
+
+	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+
+	if (pNewPlot->isImpassable())
+	{
+		return FALSE;
+	}
+
+	CvPlot* pFromPlot = GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY);
+	if (pFromPlot->area() != pNewPlot->area())
+	{
+		return FALSE;
+	}
+
+	// Don't count diagonal hops across land isthmus
+	if (pFromPlot->isWater() && pNewPlot->isWater())
+	{
+		if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
+		{
+			return FALSE;
+		}
+	}
+
+	TeamTypes ePlotTeam = pNewPlot->getTeam();
+	std::vector<TeamTypes> teamVec = *((std::vector<TeamTypes> *)pointer);
+	TeamTypes eTeam = teamVec[0];
+	TeamTypes eTargetTeam = teamVec[1];
+	CvTeamAI& kTeam = GET_TEAM(eTeam);
+
+	if (ePlotTeam == NO_TEAM)
+	{
+		return TRUE;
+	}
+
+	if (ePlotTeam == eTargetTeam)
+	{
+		return TRUE;
+	}
+
+	if (kTeam.isFriendlyTerritory(ePlotTeam))
+	{
+		return TRUE;
+	}
+
+	if (kTeam.AI_getWarPlan(ePlotTeam) != NO_WARPLAN)
+	{
+		return TRUE;
+	}
+
+	if (kTeam.isOpenBorders(ePlotTeam))
+	{
+		return TRUE;
+	}
+
+
+
+	return FALSE;
+}
+/********************************************************************************/
+/* 	BETTER_BTS_AI_MOD						END								*/
+/********************************************************************************/
+
 
 int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
