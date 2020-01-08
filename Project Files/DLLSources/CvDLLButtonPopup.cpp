@@ -3194,6 +3194,14 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		{
 			if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
 			{
+				// Write never sell
+				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
+				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_NEVER_SELL"));
+				gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+
+				// disabled the full line. TODO figure out how we want to display this for a permanent solution.
+				/*
 				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 				gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
@@ -3202,6 +3210,7 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 				gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, true, iYield);
 				gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getCustomHouseSellThreshold(eYield), 10, 999, 0);
 				gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+				*/
 			}
 			else 
 			{
