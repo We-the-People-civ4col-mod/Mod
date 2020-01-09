@@ -830,17 +830,35 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		}
 
 		CvCity* pEvasionCity = pUnit->getEvasionCity();
-		if (pEvasionCity != NULL && pEvasionCity->isRevealed(pUnit->getTeam(), true))
+		if (pEvasionCity != NULL)
 		{
-			if (bShort)
+			// hide the colony name if the unit is foreign and has hidden nationality.
+			// If a ship can escape to Jamestown, we know it's English even if it has hidden nationality, hence leaking hidden information.
+			bool bSameTeam = pUnit->getTeam() == GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getTeam();
+			bool bHidden = !bSameTeam && pUnit->getUnitInfo().isHiddenNationality();
+			bool bKnownCity = pEvasionCity->isRevealed(pUnit->getTeam(), true);
+			bool bNoVariablesHidden = GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN);
+
+			bool bReveal = bSameTeam || (!bHidden && bKnownCity && bNoVariablesHidden);
+
+			if (bReveal)
 			{
-				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_UNIT_EVASION_SHORT", pEvasionCity->getNameKey()));
+				if (bShort)
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_UNIT_EVASION_WITH_CITY_SHORT", pEvasionCity->getNameKey()));
+				}
+				else
+				{
+					szString.append(NEWLINE);
+					szString.append(gDLL->getText("TXT_KEY_UNIT_EVASION_WITH_CITY", pEvasionCity->getNameKey()));
+				}
 			}
-			else
+			else if (bNoVariablesHidden)
 			{
+				// skip revealing the destination
 				szString.append(NEWLINE);
-				szString.append(gDLL->getText("TXT_KEY_UNIT_EVASION", pEvasionCity->getNameKey()));
+				szString.append(gDLL->getText("TXT_KEY_UNIT_EVASION_SHORT"));
 			}
 		}
 

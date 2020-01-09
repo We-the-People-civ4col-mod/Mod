@@ -2598,7 +2598,7 @@
         <Spanish>Automatizar todas las acciones del [COLOR_UNIT_TEXT]Pionero[COLOR_REVERT]. La unidad seguirá trabajando hasta que canceléis la automatización.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_EVASION_SHORT</Tag>
+        <Tag>TXT_KEY_UNIT_EVASION_WITH_CITY_SHORT</Tag>
         <English>[ICON_BULLET]Chance to survive defeat (%s1_city)</English>
         <French>[ICON_BULLET]Chances de survivre à une défaite (%s1_city)</French>
         <German>[ICON_BULLET]Überlebenschance bei Niederlage (%s1_city)</German>
@@ -2606,12 +2606,20 @@
         <Spanish>[ICON_BULLET]Probabilidad de sobrevivir a derrota (%s1_city)</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_EVASION</Tag>
+        <Tag>TXT_KEY_UNIT_EVASION_WITH_CITY</Tag>
         <English>[ICON_BULLET]Chance to escape to %s1_city after losing a battle</English>
         <French>[ICON_BULLET]Chances de fuir et de rejoindre %s1_city après avoir perdu une bataille.</French>
         <German>[ICON_BULLET]Fluchtchance nach Niederlage zur Siedlung %s1_city</German>
         <Italian>[ICON_BULLET]Probabilità di fuggire a %s1_city dopo aver perso una battaglia</Italian>
         <Spanish>[ICON_BULLET]Probabilidad de escapar de %s1_city tras perder una batalla</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EVASION_SHORT</Tag>
+        <English>[ICON_BULLET]Chance to survive defeat</English>
+        <French>[ICON_BULLET]Chances de survivre à une défaite</French>
+        <German>[ICON_BULLET]Überlebenschance bei Niederlage</German>
+        <Italian>[ICON_BULLET]Probabilità di sopravvivere alla sconfitta</Italian>
+        <Spanish>[ICON_BULLET]Probabilidad de sobrevivir a derrota</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVASION_BUILDINGS</Tag>
