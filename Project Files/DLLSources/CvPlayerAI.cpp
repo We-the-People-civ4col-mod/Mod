@@ -2789,6 +2789,8 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 
 // TAC - AI Improved Navel AI - koma13 - START
 //int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves)
+// Returns a count of hostile units (animals will be ignored since they do not represent a real threat) within iRange of the plot
+// if bDangerMap is true the count will include a (decaying) history of hostiles that we've seen.
 int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bDangerMap, bool bVisibleOnly) const
 // TAC - AI Improved Navel AI - koma13 - END
 {
@@ -2798,7 +2800,6 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 	CvUnit* pLoopUnit;
 	CvPlot* pLoopPlot;
 	int iCount;
-	int iDX, iDY;
 
 	iCount = 0;
 
@@ -2807,11 +2808,11 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 		iRange = DANGER_RANGE;
 	}
 
-	CvArea* pWaterArea = pPlot->waterArea();
+	//CvArea* pWaterArea = pPlot->waterArea();
 
-	for (iDX = -(iRange); iDX <= iRange; iDX++)
+	for (int iDX = -(iRange); iDX <= iRange; iDX++)
 	{
-		for (iDY = -(iRange); iDY <= iRange; iDY++)
+		for (int iDY = -(iRange); iDY <= iRange; iDY++)
 		{
 			pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
 			if (pLoopPlot != NULL)
@@ -2828,16 +2829,20 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 								pLoopUnit = ::getUnit(pUnitNode->m_data);
 								pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 	
-								if (pLoopUnit->isEnemy(getTeam()))
-								{
-									if (pLoopUnit->canAttack())
-									{
-										if (!(pLoopUnit->isInvisible(getTeam(), false)))
-										{
-											iCount++;
-										}
-									}
-								}
+								if (!pLoopUnit->isEnemy(getTeam()))
+									continue;
+
+								if (!pLoopUnit->canAttack())
+									continue;
+
+								if ((pLoopUnit->isInvisible(getTeam(), false)))
+									continue;
+
+								// Ignore animals
+								if (pLoopUnit->getUnitInfo().isAnimal())
+									continue;
+
+								iCount++;
 							}
 						}
 
