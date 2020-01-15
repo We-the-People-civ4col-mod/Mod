@@ -1285,28 +1285,84 @@ void CvUnit::updateCombat(bool bQuick)
 
 		if (!pDefender->canDefend())
 		{
-			if (!bVisible)
+			// WTP, ray, fix for destroying ships instead of ejecting - START
+			bool bShipCityEscape = false;
+			bool bPlotCityOrFort = pDefender->plot()->isCity() || pDefender->plot()->isFort();
+
+			// Ships in Harbour Cities should be ejected damaged when City Captured
+			if (pDefender != NULL && bPlotCityOrFort && getDomainType()!= DOMAIN_SEA && pDefender->getDomainType() == DOMAIN_SEA)
 			{
-				bFinish = true;
+				CvPlot* DefenderPlot = pDefender->plot();
+				CvPlot* ejectPlot = NULL;
+				CvPlot* pAdjacentPlot = NULL;
+				CvCity* CityForMessage = pDefender->plot()->getPlotCity();
+				
+				// Try to find a suitable water plot to eject
+				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+				{
+					pAdjacentPlot = plotDirection(DefenderPlot->getX_INLINE(), DefenderPlot->getY_INLINE(), ((DirectionTypes)iI));
+					// must be water without enemies
+					if (pAdjacentPlot != NULL && pAdjacentPlot->isWater() && pAdjacentPlot->getNumVisibleEnemyDefenders(pDefender) == 0)
+					{
+						ejectPlot = pAdjacentPlot;
+						break;
+					}
+				}
+
+				// if suitable eject Plot found, give some random damage and move to eject Plot
+				if (ejectPlot != NULL)
+				{
+					int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
+					pDefender->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
+
+					// clean up to avoid Asserts when changing positon
+					setCombatUnit(NULL);
+					pDefender->setCombatUnit(NULL);
+
+					// changing position
+					pDefender->setXY(ejectPlot->getX_INLINE(), ejectPlot->getY_INLINE());
+					
+					if (CityForMessage != NULL)
+					{
+						// Send Messages
+						szBuffer = gDLL->getText("TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), CityForMessage->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_THEIR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ejectPlot->getX_INLINE(), ejectPlot->getY_INLINE());
+
+						szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), CityForMessage->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_OUR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), ejectPlot->getX_INLINE(), ejectPlot->getY_INLINE());
+					}
+
+					// set to true to avoid killing the Defender Unit in next if below
+					bShipCityEscape = true;
+				}
 			}
-			else
+			// WTP, ray, fix for destroying ships instead of ejecting - END
+			
+			if (bShipCityEscape == false) // WTP, ray, fix for destroying ships instead of ejecting
 			{
-				CvMissionDefinition kMission;
-				kMission.setMissionTime(getCombatTimer() * gDLL->getSecsPerTurn());
-				kMission.setMissionType(MISSION_SURRENDER);
-				kMission.setUnit(BATTLE_UNIT_ATTACKER, this);
-				kMission.setUnit(BATTLE_UNIT_DEFENDER, pDefender);
-				kMission.setPlot(pPlot);
-				gDLL->getEntityIFace()->AddMission(&kMission);
+				if (!bVisible)
+				{
+					bFinish = true;
+				}
+			
+				else
+				{
+					CvMissionDefinition kMission;
+					kMission.setMissionTime(getCombatTimer() * gDLL->getSecsPerTurn());
+					kMission.setMissionType(MISSION_SURRENDER);
+					kMission.setUnit(BATTLE_UNIT_ATTACKER, this);
+					kMission.setUnit(BATTLE_UNIT_DEFENDER, pDefender);
+					kMission.setPlot(pPlot);
+					gDLL->getEntityIFace()->AddMission(&kMission);
 
-				// Surrender mission
-				setCombatTimer(GC.getMissionInfo(MISSION_SURRENDER).getTime());
+					// Surrender mission
+					setCombatTimer(GC.getMissionInfo(MISSION_SURRENDER).getTime());
 
-				GC.getGameINLINE().incrementTurnTimer(getCombatTimer());
+					GC.getGameINLINE().incrementTurnTimer(getCombatTimer());
+				}
+				// Kill them!
+				pDefender->setDamage(GC.getMAX_HIT_POINTS());
 			}
-
-			// Kill them!
-			pDefender->setDamage(GC.getMAX_HIT_POINTS());
 		}
 		else
 		{
