@@ -614,6 +614,9 @@ void CyGame::setCurrentLanguage(int iNewLanguage)			// remove once CvApp is expo
 	CvGameText::setChangeLanguage();
 	// Convert the menu index to the index used in the filesystem/ini file and store this value.
 	gDLL->setCurrentLanguage(CvGameText::getLanguageAtIndex(iNewLanguage));
+
+	// clean up unused strings
+	GC.cleanInfoStrings();
 }
 int CyGame::getReplayMessageTurn(int i) const
 {

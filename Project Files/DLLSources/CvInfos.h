@@ -60,7 +60,11 @@ public:
 	DllExport virtual bool readPass2(CvXMLLoadUtility* pXML) { return false; }
 	DllExport virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
+	void cleanStrings();
+
 protected:
+	void checkStringContents(CvWString& szStr, const wchar* szExtension);
+
 	bool doneReadingXML(CvXMLLoadUtility* pXML);
 	bool m_bGraphicalOnly;
 	CvString m_szType;
@@ -3888,9 +3892,9 @@ public:
 	static void setChangeLanguage();
 
 	static int getCodePage();
+	static int getLanguageID(const char* szLanguageName);
 
 protected:
-	static int getLanguageID(const char* szLanguageName);
 	bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound);
 
 	CvWString m_szText;

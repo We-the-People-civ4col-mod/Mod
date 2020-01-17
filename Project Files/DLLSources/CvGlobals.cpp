@@ -2761,6 +2761,14 @@ void CvGlobals::infoTypeFromStringReset()
 void CvGlobals::addToInfosVectors(void *infoVector)
 {
 	std::vector<CvInfoBase *> *infoBaseVector = (std::vector<CvInfoBase *> *) infoVector;
+	for (unsigned int i = 0; i < m_aInfoVectors.size(); ++i)
+	{
+		if (m_aInfoVectors[i] == infoBaseVector)
+		{
+			// don't add the same twice
+			return;
+		}
+	}
 	m_aInfoVectors.push_back(infoBaseVector);
 }
 
@@ -2845,3 +2853,37 @@ CvAchieveInfo& CvGlobals::getAchieveInfo(AchieveTypes eAchieve)
 	return *(m_paAchieveInfo[eAchieve]);
 }
 // PatchMod: Achievements END
+
+// string cleanup
+// Some xml files have references to strategy, pedia and so on for strings, which doesn't exist
+// This call will remove them from memory.
+void CvGlobals::cleanInfoStrings()
+{
+	if (GAMETEXT.getCurrentLanguage() == CvGameText::getLanguageID("Tag"))
+	{
+		// The Tag language reveals the TXT_KEYS
+		// Removing unused strings would be detected as all strings
+		return;
+	}
+
+	for (unsigned int i = 0; i < m_aInfoVectors.size(); ++i)
+	{
+		if (m_aInfoVectors[i]->size() > 0)
+		{
+			if (dynamic_cast<CvActionInfo*>((*m_aInfoVectors[i])[0]))
+			{
+				// action infos not supported for string cleanup.
+				// Won't fix because they don't need cleaning in the first place.
+				continue;
+			}
+
+			for (unsigned int j = 0; j < m_aInfoVectors[i]->size(); ++j)
+			{
+				(*m_aInfoVectors[i])[j]->cleanStrings();
+			}
+		}
+	}
+}
+
+
+

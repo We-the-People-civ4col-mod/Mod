@@ -898,6 +898,8 @@ public:
 
 	void deleteInfoArrays();
 
+	void cleanInfoStrings();
+
 protected:
 
 	bool m_bGraphicsInitialized;

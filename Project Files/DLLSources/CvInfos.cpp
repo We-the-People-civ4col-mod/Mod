@@ -239,6 +239,30 @@ bool CvInfoBase::read(CvXMLLoadUtility* pXML)
 	return true;
 }
 
+void CvInfoBase::cleanStrings()
+{
+	checkStringContents(m_szTextKey       , L"_DESCRIPTION");
+	checkStringContents(m_szCivilopediaKey, L"_PEDIA"      );
+	checkStringContents(m_szHelpKey       , L"_HELP"       );
+	checkStringContents(m_szStrategyKey   , L"_STRATEGY"   );
+}
+
+void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
+{
+	if (szStr.length() == 0)
+	{
+		return;
+	}
+
+	CvWString szText = gDLL->getText(szStr);
+
+	if (szText == L"????" || (szText.length() > 7 && wcsncmp(szText, L"TXT_KEY", 7) == 0))
+	{
+		szStr.clear();
+		return;
+	}
+}
+
 //======================================================================================================
 //					CvScalableInfo
 //======================================================================================================
@@ -15090,6 +15114,7 @@ CvMainMenuInfo::~CvMainMenuInfo()
 }
 std::string CvMainMenuInfo::getScene() const
 {
+	GC.cleanInfoStrings();
 	return m_szScene;
 }
 std::string CvMainMenuInfo::getSoundtrack() const
