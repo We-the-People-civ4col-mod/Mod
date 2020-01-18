@@ -5989,6 +5989,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -6889,6 +6897,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -7798,6 +7814,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -8712,6 +8736,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -9623,6 +9655,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -10525,6 +10565,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -11424,6 +11472,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -12321,6 +12377,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -13243,6 +13307,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -14155,6 +14227,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -15054,6 +15134,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -15978,6 +16066,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -16879,6 +16975,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -17784,6 +17888,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -18692,6 +18804,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -19595,6 +19715,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -20496,6 +20624,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -21410,6 +21546,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -22291,6 +22435,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -23205,6 +23357,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -24103,6 +24263,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -24995,6 +25163,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -25894,6 +26070,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -26780,6 +26964,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -27684,6 +27876,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -28582,6 +28782,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -29475,6 +29683,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -30371,6 +30587,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -31265,6 +31489,14 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -32151,6 +32383,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -33147,6 +33387,14 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
