@@ -2466,13 +2466,14 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	case COMMAND_GOTO_MENU:
 		if (getTransportUnit() == NULL || plot()->isValidDomainForAction(getUnitType()))
 		{
+			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
 			// Erik: Disable the goto menu for coastal transports for now until we figure
 			// out how to filter the unreachable cities
-			if (canCrossCoastOnly())
-			{
-				return false;
-			}			
-
+			// if (canCrossCoastOnly())
+			// {
+			//	 return false;
+			// }			
+			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -END
 			return true;
 			/*
 			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || canAutoCrossOcean(plot()))

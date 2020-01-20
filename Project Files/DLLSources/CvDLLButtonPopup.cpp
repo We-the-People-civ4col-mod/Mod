@@ -3505,26 +3505,32 @@ bool CvDLLButtonPopup::launchGotoMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 	int iLoop;
 
 	gDLL->getInterfaceIFace()->popupSetHeaderString(pPopup, gDLL->getText("TXT_KEY_COMMAND_GOTO_MENU_TITLE"));
-	if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || pUnit->canAutoCrossOcean(pUnit->plot()))
+
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
+	if (pUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) == false)
 	{
-		CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_EUROPE"), szArtFilename, -2, WIDGET_GENERAL);
-		bValid = true;
+		if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || pUnit->canAutoCrossOcean(pUnit->plot()))
+		{
+			CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_EUROPE"), szArtFilename, -2, WIDGET_GENERAL);
+			bValid = true;
+		}
+		// R&R, vetiarvind, Goto other screens - START	
+		if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_AFRICA) || pUnit->canAutoCrossOcean(pUnit->plot()))
+		{		
+			CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_AFRICA"), szArtFilename, -3, WIDGET_GENERAL, pUnit->getID(), -1);
+			bValid = true;
+		}
+		// WTP, ray, added a bracket around or before caSailToPortRoyal check to fix changed order a bit - fix for issue 252
+		if (pUnit->canSailToPortRoyal(NULL) && (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL) || (pUnit->canAutoCrossOcean(pUnit->plot())))) //R&R, vetiarvind fix for hidden-nationality units to sail to PR
+		{		
+			const char* portRoyalImage = ARTFILEMGR.getInterfaceArtInfo("INTERFACE_PORT_ROYAL")->getPath();		
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL"), portRoyalImage, -4, WIDGET_GENERAL, pUnit->getID(), -1);
+			bValid = true;
+		}
 	}
-	// R&R, vetiarvind, Goto other screens - START	
-	if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_AFRICA) || pUnit->canAutoCrossOcean(pUnit->plot()))
-	{		
-		CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_AFRICA"), szArtFilename, -3, WIDGET_GENERAL, pUnit->getID(), -1);
-		bValid = true;
-	}
-	// WTP, ray, added a bracket around or before caSailToPortRoyal check to fix changed order a bit - fix for issue 252
-	if (pUnit->canSailToPortRoyal(NULL) && (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL) || (pUnit->canAutoCrossOcean(pUnit->plot())))) //R&R, vetiarvind fix for hidden-nationality units to sail to PR
-	{		
-		const char* portRoyalImage = ARTFILEMGR.getInterfaceArtInfo("INTERFACE_PORT_ROYAL")->getPath();		
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL"), portRoyalImage, -4, WIDGET_GENERAL, pUnit->getID(), -1);
-		bValid = true;
-	}
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -END
 	// R&R, vetiarvind, Goto other screens - END
 	for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
 	{
