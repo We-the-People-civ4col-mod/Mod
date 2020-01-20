@@ -3507,7 +3507,7 @@ bool CvDLLButtonPopup::launchGotoMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 	gDLL->getInterfaceIFace()->popupSetHeaderString(pPopup, gDLL->getText("TXT_KEY_COMMAND_GOTO_MENU_TITLE"));
 
 	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
-	if (pUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) == false)
+	if (pUnit->canCrossCoastOnly() == false)
 	{
 		if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || pUnit->canAutoCrossOcean(pUnit->plot()))
 		{
