@@ -13,7 +13,7 @@
         <Italian>The unrest in %s1_city has ended now. All business it back to normal.</Italian>
         <Spanish>The unrest in %s1_city has ended now. All business it back to normal.</Spanish>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_ESCAPED</Tag>
         <English>The ship called %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</English>
         <French>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</French>
@@ -28,5 +28,13 @@
         <German>Das feindliche Schiff %s1_UnitName konnte vor der Einnahme von %s2_CityName durch eure Truppen noch fliehen.</German>
         <Italian>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</Italian>
         <Spanish>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
+        <English>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</English>
+        <French>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</French>
+        <German>[COLOR_NEGATIVE_TEXT]Verärgert (%d1_turns Runden)[COLOR_REVERT]</German>
+        <Italian>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</Spanish>
     </TEXT>
 </Civ4GameText>

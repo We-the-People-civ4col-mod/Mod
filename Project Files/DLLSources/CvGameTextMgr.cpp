@@ -7675,6 +7675,17 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	{
 		szBuffer.append(CvWString::format(L" %c", GC.getCivilizationInfo(GET_PLAYER(pCity->getMissionaryPlayer()).getCivilizationType()).getMissionaryChar()));
 	}
+	// WTP, ray, improvement Native Trade Indicator, issue #85 - START
+	CvPlayer& cityOwnerPlayer =	GET_PLAYER(pCity->getOwnerINLINE());
+	if (cityOwnerPlayer.isNative())
+	{
+		int timeNoTrade= cityOwnerPlayer.getTimeNoTrade();
+		if (timeNoTrade > 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_CITY_TIME_NO_TRADE", timeNoTrade));
+		}
+	}
+	// WTP, ray, improvement Native Trade Indicator, issue #85 - END
 
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())
