@@ -14616,11 +14616,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_UNLOAD_MOD</Tag>
-        <English>Unload RaR</English>
-        <French>Décharger RaR</French>
-        <German>RaR deaktivieren</German>
-        <Italian>Annulla RaR</Italian>
-        <Spanish>Descargar RaR</Spanish>
+        <English>Unload WTP</English>
+        <French>Décharger WTP</French>
+        <German>WTP deaktivieren</German>
+        <Italian>Annulla WTP</Italian>
+        <Spanish>Descargar WTP</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DIPLOMACY_BUSY</Tag>
