@@ -14,7 +14,7 @@
         <Spanish>The unrest in %s1_city has ended now. All business it back to normal.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISC_YOU_UNIT_ESCAPED</Tag>
+        <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
         <English>The ship called %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</English>
         <French>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</French>
         <German>Das Schiff %s1_UnitName konnte vor der Einnahme von %s2_CityName durch den Feind noch fliehen.</German>
