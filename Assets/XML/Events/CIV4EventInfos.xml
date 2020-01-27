@@ -7640,7 +7640,7 @@
             <iGold>0</iGold>
             <bGoldToPlayer>0</bGoldToPlayer>
             <iRandomGold>0</iRandomGold>
-            <iCulture>19</iCulture>
+            <iCulture>50</iCulture>
             <iHealth>0</iHealth>
             <UnitClass>NONE</UnitClass>
             <iNumFreeUnits>0</iNumFreeUnits>
@@ -13389,7 +13389,7 @@
             <iGold>0</iGold>
             <bGoldToPlayer>0</bGoldToPlayer>
             <iRandomGold>0</iRandomGold>
-            <iCulture>25</iCulture>
+            <iCulture>50</iCulture>
             <iHealth>0</iHealth>
             <UnitClass>NONE</UnitClass>
             <iNumFreeUnits>0</iNumFreeUnits>
@@ -19394,7 +19394,7 @@
             <iGold>-200</iGold>
             <bGoldToPlayer>0</bGoldToPlayer>
             <iRandomGold>0</iRandomGold>
-            <iCulture>0</iCulture>
+            <iCulture>20</iCulture>
             <iHealth>0</iHealth>
             <UnitClass>NONE</UnitClass>
             <iNumFreeUnits>0</iNumFreeUnits>
