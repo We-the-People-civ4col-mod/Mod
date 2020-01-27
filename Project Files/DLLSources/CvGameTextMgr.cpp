@@ -8171,7 +8171,10 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 	if (kEvent.getCulture() != 0)
 	{
-		int iCulture = kEvent.getRevoltTurns();
+		// WTP, ray, fixed Bug, in Event Texts for Cuture - START
+		// int iCulture = kEvent.getRevoltTurns();
+		int iCulture = kEvent.getCulture();
+		// WTP, ray, fixed Bug, in Event Texts for Cuture - END
 		iCulture *= iGrowthPercent;
 		iCulture /=100;
 		if (kEvent.isCityEffect() || kEvent.isOtherPlayerCityEffect())
