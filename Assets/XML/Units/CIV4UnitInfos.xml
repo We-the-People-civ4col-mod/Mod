@@ -7979,6 +7979,10 @@
                     <YieldType>YIELD_FUR</YieldType>
                     <iChange>1</iChange>
                 </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
             </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>0</bWaterYieldChanges>
@@ -8311,7 +8315,7 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
             </YieldChanges>
             <BonusYieldChanges>
@@ -8625,16 +8629,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_FUR</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -8664,10 +8659,19 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>3</iChange>
                 </YieldChange>
             </YieldChanges>
-            <BonusYieldChanges/>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
