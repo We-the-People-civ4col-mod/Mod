@@ -1742,14 +1742,6 @@
         <Spanish>[ICON_BULLET]%D1%% al tiempo entre subidas de impuestos</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
-        <English>[ICON_BULLET]%D1%% effect of [ICON_BELLS] on Rebel [ICON_STRENGTH]</English>
-        <French>[ICON_BULLET]Effet des [ICON_BELLS] sur la [ICON_STRENGTH] rebelle %D1%%</French>
-        <German>[ICON_BULLET]%D1%% Auswirkung von [ICON_BELLS] auf [ICON_STRENGTH] der Rebellen</German>
-        <Italian>[ICON_BULLET]%D1%% effetto delle [ICON_BELLS] sulla [ICON_STRENGTH] dei ribelli</Italian>
-        <Spanish>[ICON_BULLET]%D1%% al efecto de [ICON_BELLS] en [ICON_STRENGTH] rebelde</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_EVENT_THE_CITY</Tag>
         <English>the settlement</English>
         <French>la colonie</French>
