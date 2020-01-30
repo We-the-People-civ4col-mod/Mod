@@ -2351,19 +2351,19 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_SHEEP</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CATTLE</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_HORSES</YieldType>
-                    <iChange>2</iChange>
+                    <iChange>1</iChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_WOOL_CLOTH</YieldType>
