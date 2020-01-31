@@ -8623,6 +8623,8 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 			return false;
 			break;
 		case YIELD_HEMP:
+			return true;
+			break;
 		case YIELD_ORE:
 		case YIELD_SHEEP:
 		case YIELD_CATTLE:

@@ -6034,7 +6034,10 @@ int CvPlot::calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) 
 		return 0;
 	}
 
-	if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE || eYield == YIELD_HEMP)
+	// WTP, ray, YIELD_HEMP not displayed in Center City Plot, issue #138 -START
+	// if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE || eYield == YIELD_HEMP)
+	if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
+	// WTP, ray, YIELD_HEMP not displayed in Center City Plot, issue #138 -END
 	{
 		return 0;
 	}
