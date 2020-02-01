@@ -3931,7 +3931,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				GET_PLAYER(kPlayer.getParent()).AI_changeAttitudeExtra(ePlayer, -1); // Parent Attitude worsened
 
 				//sending message
-				CvWString szBuffer = gDLL->getText("TXT_KEY_CHURCH_WAR_REFUSED", kNativePlayer.getNameKey());
+				CvWString szBuffer = gDLL->getText("TXT_KEY_CHURCH_WAR_REFUSED", kNativePlayer.getNameKey(), kNativePlayer.getNameKey());
 				gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), NULL, NULL, false, false);
 			}
 		}
@@ -4339,6 +4339,44 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS");
 					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementUnit->getX(), ReinforcementUnit->getY(), true, true);
 				}
+
+				// WTP, ray, giving reinforcement to other Player as well - START
+				CvUnit* ReinforcementOtherPlayerUnit;
+				CvPlayer& otherPlayer = GET_PLAYER(enemyID);
+				//get City
+				CvCity* pLoopOtherPlayerCity = NULL;
+				CvCity* locationOtherPlayerToAppear = NULL;
+				int iLoopOther;
+				for (pLoopOtherPlayerCity = otherPlayer.firstCity(&iLoopOther); pLoopOtherPlayerCity != NULL; pLoopOtherPlayerCity = otherPlayer.nextCity(&iLoopOther))
+				{
+					if (pLoopOtherPlayerCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+					{
+						locationOtherPlayerToAppear = pLoopOtherPlayerCity;
+						break;
+					}
+				}
+				if (locationOtherPlayerToAppear != NULL)
+				{
+					for (int i=0;i<reinforcementAmountLand;i++)
+					{
+						ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeLand, (ProfessionTypes) GC.getUnitInfo(KingReinforcementTypeLand).getDefaultProfession(), locationOtherPlayerToAppear->getX_INLINE(), locationOtherPlayerToAppear->getY_INLINE(), NO_UNITAI);
+					}
+
+					for (int i=0;i<reinforcementAmountArtil;i++)
+					{
+						ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeArtil, (ProfessionTypes) GC.getUnitInfo(KingReinforcementTypeArtil).getDefaultProfession(), locationOtherPlayerToAppear->getX_INLINE(), locationOtherPlayerToAppear->getY_INLINE(), NO_UNITAI);
+					}
+
+					for (int i=0;i<reinforcementAmountSea;i++)
+					{
+						ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeSea, (ProfessionTypes) GC.getUnitInfo(KingReinforcementTypeSea).getDefaultProfession(), locationOtherPlayerToAppear->getX_INLINE(), locationOtherPlayerToAppear->getY_INLINE(), NO_UNITAI);
+					}
+
+					//sending message
+					CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
+					gDLL->getInterfaceIFace()->addMessage(enemyID, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementOtherPlayerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementOtherPlayerUnit->getX(), ReinforcementOtherPlayerUnit->getY(), true, true);
+				}
+				// WTP, ray, giving reinforcement to other Player as well - END
 			}
 
 			// we have chosen to disobey

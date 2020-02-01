@@ -279,7 +279,7 @@
 	</Define>
 	<Define>
 		<DefineName>REV_SUPPORT_LAND</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>REV_SUPPORT_SEA</DefineName>
@@ -295,11 +295,11 @@
 	</Define>
 	<Define>
 		<DefineName>POS_TAX_EUROPE_WARS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NEG_TAX_EUROPE_WARS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_LAND</DefineName>
@@ -307,7 +307,7 @@
 	</Define>
 	<Define>
 		<DefineName>KING_REINFORCEMENT_LAND</DefineName>
-		<iDefineIntVal>4</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_ARTIL</DefineName>
@@ -315,7 +315,7 @@
 	</Define>
 	<Define>
 		<DefineName>KING_REINFORCEMENT_ARTIL</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
+		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_SEA</DefineName>

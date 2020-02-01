@@ -1319,11 +1319,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
-        <English>The reinforcement troops of our king have arrived.</English>
-        <French>Les renforts de notre roi sont arrivés.</French>
-        <German>Die Unterstützungstruppen unseres Königs sind eingetroffen.</German>
-        <Italian>The reinforcement troops of our king have arrived.</Italian>
-        <Spanish>The reinforcement troops of our king have arrived.</Spanish>
+        <English>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</English>
+        <French>Les renforts de notre roi sont arrivés. Les renforts du otre roi sont arrivés aussi.</French>
+        <German>Die Unterstützungstruppen unseres Königs sind eingetroffen. Wir haben Gerüche gehört, dass der König eures Gegners auch Unterstützungstruppen entsand hat.</German>
+        <Italian>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</Italian>
+        <Spanish>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>

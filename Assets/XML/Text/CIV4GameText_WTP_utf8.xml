@@ -37,4 +37,12 @@
         <Italian>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
+        <English>Reinforcement troops of our king have arrived because we were declared War on by the order of another King.</English>
+        <French>Reinforcement troops of our king have arrived because we were declared War on by the order of another King.</French>
+        <German>Unterstützungstruppen unseres Königs sind eingetroffen, da man us auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
+        <Italian>Reinforcement troops of our king have arrived because we were declared War on by the order of another King.</Italian>
+        <Spanish>Reinforcement troops of our king have arrived because we were declared War on by the order of another King.</Spanish>
+    </TEXT>
 </Civ4GameText>
