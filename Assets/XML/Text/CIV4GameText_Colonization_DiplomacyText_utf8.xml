@@ -2929,7 +2929,7 @@
 		<Tag>TXT_KEY_CHURCH_WAR_REFUSED</Tag>
 		<English>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations to %s1 have improved.</English>
 		<French>Vous avez refusé l'ordre de l'église de déclarer la guerre. Votre église et votre Roi sont outragés mais vos relations avec les %s1 se sont améliorés.</French>
-		<German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber eure Beziehung zu %s2 hat sich verbessert.</German>
+		<German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber eure Beziehung zu %s1 hat sich verbessert.</German>
 		<Italian>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations to %s1 have improved.</Italian>
 		<Spanish>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations to %s1 have improved.</Spanish>
 	</TEXT>
