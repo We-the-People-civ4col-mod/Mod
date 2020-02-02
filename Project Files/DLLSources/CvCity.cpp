@@ -8041,68 +8041,87 @@ public:
 
 void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& iChosenNumGenerics) const
 {
-	int iNumBuildings;
-	BuildingTypes eCurType;
+	const int iNumBuildings = GC.getNumBuildingInfos();
+
 	std::vector<BuildingTypes> kVisible;
 
-	iNumBuildings = GC.getNumBuildingInfos();
-	for(int i = 0; i < iNumBuildings; i++)
+	for (int i = 0; i < iNumBuildings; i++)
 	{
-		eCurType = (BuildingTypes) i;
-		if(isHasBuilding(eCurType))
+		const BuildingTypes eCurType = (BuildingTypes)i;
+
+		if (!isHasBuilding(eCurType))
+			continue;
+
+		const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eCurType);
+		const bool bNationalWonder = kBuilding.isNationalWonder();
+		const bool bDefense = kBuilding.getDefenseModifier() > 0;
+
+		if (bNationalWonder || bDefense)
 		{
+			// Defensive structures and national wonders are always visible
+			kChosenVisible.push_back(eCurType);
+		}
+		else
+		{
+			// All other buildings are candidates for being non-visible
 			kVisible.push_back(eCurType);
 		}
 	}
 
+	// Unused feature, disabled until we determine if it's useful
+	/*
 	BonusTypes eBonus = plot()->getBonusType();
 	if (eBonus != NO_BONUS)
 	{
-		BuildingTypes eBonusBuilding = (BuildingTypes) GC.getBonusInfo(eBonus).getBuilding();
-		if(eBonusBuilding != NO_BUILDING)
+		BuildingTypes eBonusBuilding = (BuildingTypes)GC.getBonusInfo(eBonus).getBuilding();
+		if (eBonusBuilding != NO_BUILDING)
 		{
 			kVisible.push_back(eBonusBuilding);
 		}
 	}
+	*/
 
 	// sort the visible ones by decreasing priority
-	VisibleBuildingComparator kComp;
+	const VisibleBuildingComparator kComp;
 	std::sort(kVisible.begin(), kVisible.end(), kComp);
 
 	// how big is this city, in terms of buildings?
 	// general rule: no more than fPercentUnique percent of a city can be uniques
 	int iTotalVisibleBuildings;
-	if(stricmp(GC.getDefineSTRING("GAME_CITY_SIZE_METHOD"), "METHOD_EXPONENTIAL") == 0)
+	const static bool bIsExp = !stricmp(GC.getDefineSTRING("GAME_CITY_SIZE_METHOD"), "METHOD_EXPONENTIAL");
+
+	if (bIsExp)
 	{
-		int iCityScaleMod =  ((int)(pow((float)getPopulation(), GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER")))) * 2;
+		const static float fCitySizeExpMod = GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER");
+		int iCityScaleMod = ((int)(pow((float)getPopulation(), fCitySizeExpMod))) * 2;
 		iTotalVisibleBuildings = (10 + iCityScaleMod);
-	} 
-	else 
+	}
+	else
 	{
-		float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
-		float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
-		float fCurSize = (float)getPopulation();
+		const static float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
+		const static float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
+		const float fCurSize = (float)getPopulation();
 		iTotalVisibleBuildings = int(((fHi - fLo) / 50.0f) * fCurSize + fLo);
 	}
-	float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
-	int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
+
+	const static float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
+	const int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
 
 	// compute how many buildings are generics vs. unique Civ buildings?
-	int iNumGenerics;
 	int iNumUniques;
-	if((int)kVisible.size() > iMaxNumUniques)
+	if ((int)kVisible.size() > iMaxNumUniques)
 	{
 		iNumUniques = iMaxNumUniques;
 	}
-	else 
+	else
 	{
 		iNumUniques = kVisible.size();
 	}
-	iNumGenerics = iTotalVisibleBuildings - iNumUniques + getCitySizeBoost();
-	
+	const int iNumGenerics = iTotalVisibleBuildings - iNumUniques + getCitySizeBoost();
+
 	// return
 	iChosenNumGenerics = iNumGenerics;
-	for(int i = 0; i < iNumUniques; i++)
+	for (int i = 0; i < iNumUniques; i++)
 	{
 		kChosenVisible.push_back(kVisible[i]);
 	}
