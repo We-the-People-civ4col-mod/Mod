@@ -17439,7 +17439,7 @@
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
             <Invisible>NONE</Invisible>
-            <SeeInvisible>INVISIBLE_RANGER</SeeInvisible>
+            <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NATIVE_MERC</Description>
             <Civilopedia>TXT_KEY_UNIT_NATIVE_MERC_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_NATIVE_MERC_STRATEGY</Strategy>
@@ -17607,8 +17607,8 @@
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
-            <Invisible>INVISIBLE_RANGER</Invisible>
-            <SeeInvisible>INVISIBLE_RANGER</SeeInvisible>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_RANGER</Description>
             <Civilopedia>TXT_KEY_UNIT_RANGER_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_RANGER_STRATEGY</Strategy>
@@ -17784,7 +17784,16 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_VETERAN1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_FORCED_MARCH1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -21384,7 +21393,7 @@
             <DefaultUnitAI>UNITAI_SCOUT</DefaultUnitAI>
             <DefaultProfession>PROFESSION_SCOUT</DefaultProfession>
             <Invisible>NONE</Invisible>
-            <SeeInvisible>INVISIBLE_RANGER</SeeInvisible>
+            <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_SCOUT</Description>
             <Civilopedia>TXT_KEY_UNIT_SCOUT_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_SCOUT_STRATEGY</Strategy>
@@ -25342,7 +25351,7 @@
             <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
             <DefaultProfession>PROFESSION_BRAVE</DefaultProfession>
             <Invisible>NONE</Invisible>
-            <SeeInvisible>INVISIBLE_RANGER</SeeInvisible>
+            <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_NATIVE</Description>
             <Civilopedia>TXT_KEY_UNIT_NATIVE_PEDIA</Civilopedia>
             <Strategy>TXT_KEY_UNIT_NATIVE_STRATEGY</Strategy>
