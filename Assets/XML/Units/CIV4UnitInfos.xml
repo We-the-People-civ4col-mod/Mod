@@ -17681,7 +17681,7 @@
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>10</iWithdrawalProb>
             <iCityAttack>0</iCityAttack>
-            <iCityDefense>0</iCityDefense>
+            <iCityDefense>10</iCityDefense>
             <iHillsAttack>0</iHillsAttack>
             <iHillsDefense>0</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
