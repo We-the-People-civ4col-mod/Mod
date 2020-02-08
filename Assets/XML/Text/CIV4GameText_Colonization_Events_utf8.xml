@@ -2684,11 +2684,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GOVERNOR</Tag>
-        <English>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. The population parties with the natives instead of paying homage to the king. This is unacceptable. Therefore His Majesty has decided to delegate a vicegerent into your colonies in order to regain control. </English>
-        <French>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. The population parties with the natives instead of paying homage to the king. This is unacceptable. Therefore His Majesty has decided to delegate a vicegerent into your colonies in order to regain control. </French>
-        <German>Mylord, die Anzahl der von Euch verwalteten Kolonien in der Neuen Welt wächst stetig und die Verwaltungsstrukturen lassen doch noch arg zu wünschen übrig. Wir hörten, dass die Bevölkerung lieber mit den Wilden feiert als dem König zu huldigen. Wir haben daher entschieden, den Cousin Dritten Grades meiner Frau als Statthalter in die Neue Welt zu entsenden, um die Verwaltung der Kolonien neu zu ordnen.</German>
-        <Italian>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. The population parties with the natives instead of paying homage to the king. This is unacceptable. Therefore His Majesty has decided to delegate a vicegerent into your colonies in order to regain control. </Italian>
-        <Spanish>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. The population parties with the natives instead of paying homage to the king. This is unacceptable. Therefore His Majesty has decided to delegate a vicegerent into your colonies in order to regain control. </Spanish>
+        <English>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </English>
+        <French>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </French>
+        <German>Mylord, die Anzahl der von Euch verwalteten Kolonien in der Neuen Welt wächst stetig und die Verwaltungsstrukturen lassen noch arg zu wünschen übrig. Wir haben daher entschieden, unseren Cousin Dritten Grades als Statthalter zu entsenden, um die Verwaltung der Kolonien neu zu ordnen.</German>
+        <Italian>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </Italian>
+        <Spanish>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_POLITICAL_REFUGEE</Tag>
