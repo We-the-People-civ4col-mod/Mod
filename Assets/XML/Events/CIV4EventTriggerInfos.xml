@@ -9487,7 +9487,7 @@
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
             <iMinTreasury>5000</iMinTreasury>
-            <iMinPopulation>5</iMinPopulation>
+            <iMinPopulation>15</iMinPopulation>
             <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
