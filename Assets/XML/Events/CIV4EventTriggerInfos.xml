@@ -9290,7 +9290,7 @@
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>-1</iUnitDistanceWeight>
             <iUnitExperienceWeight>0</iUnitExperienceWeight>
-            <bUnitsOnPlot>1</bUnitsOnPlot>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
             <BuildingsRequired>
                 <BuildingClass>BUILDINGCLASS_CHURCH</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_CATHEDRAL</BuildingClass>
@@ -9575,7 +9575,7 @@
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
             <iUnitExperienceWeight>0</iUnitExperienceWeight>
-            <bUnitsOnPlot>1</bUnitsOnPlot>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
             <BuildingsRequired>
                 <BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>

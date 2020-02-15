@@ -14048,10 +14048,29 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 		pUnit = pickTriggerUnit(eEventTrigger, pPlot, bPickPlot);
 	}
 
-	if (NULL == pUnit && kTrigger.getNumUnits() > 0)
+	// WTP, ray, fix for allowing some nice events - START
+	// fixed to trigger some nice City events with still using NumUnits
+	// if (NULL == pUnit && kTrigger.getNumUnits() > 0)
+	// {
+	// 	return NULL;
+	// }
+	if (kTrigger.getNumUnits() > 0)
 	{
-		return NULL;
+		int iNumUnits = 0;	
+		
+		for (int i = 0; i < kTrigger.getNumUnitsRequired(); ++i)
+		{
+			int iNumUnitsFound = getUnitClassCount((UnitClassTypes)kTrigger.getUnitRequired(i));
+			iNumUnits = iNumUnits + iNumUnitsFound;					
+		}
+				
+		if (iNumUnits < kTrigger.getNumUnits())
+		{
+			return NULL;
+		}
 	}
+	// WTP, ray, fix for allowing some nice events - END
+
 
 	if (NULL == pPlot && NULL != pUnit)
 	{
