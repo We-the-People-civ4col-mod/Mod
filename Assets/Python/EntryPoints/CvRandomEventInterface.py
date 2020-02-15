@@ -2227,11 +2227,18 @@ def getHelpKingPleased(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	eking = player.getParent()
 	king = gc.getPlayer(eking)
-	szHelp = localText.getText("TXT_KEY_EVENT_KING_PLEASED_HELP", ())
-	if event.getGenericParameter(4) <> 0 :
+	if event.getGenericParameter(3) > 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_KING_PLEASED_HELP", ())
+	if event.getGenericParameter(3) < 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_KING_ANGRY_HELP", ())
+	if event.getGenericParameter(4) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
-	if event.getGenericParameter(3) <> 0 :
+	if event.getGenericParameter(4) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	if event.getGenericParameter(3) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	return szHelp
 
 def applyKingAngry(argsList):

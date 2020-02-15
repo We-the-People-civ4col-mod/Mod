@@ -2684,11 +2684,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GOVERNOR</Tag>
-        <English>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </English>
-        <French>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </French>
+        <English>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</English>
+        <French>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</French>
         <German>Mylord, die Anzahl der von Euch verwalteten Kolonien in der Neuen Welt wächst stetig und die Verwaltungsstrukturen lassen noch arg zu wünschen übrig. Wir haben daher entschieden, unseren Cousin Dritten Grades als Statthalter zu entsenden, um die Verwaltung der Kolonien neu zu ordnen.</German>
-        <Italian>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </Italian>
-        <Spanish>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control. </Spanish>
+        <Italian>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</Italian>
+        <Spanish>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_GOVERNOR_LOVER</Tag>
+        <English>The Governor of the Colonies has a secret lover in the Old World.</English>
+        <French>The Governor of the Colonies has a secret lover in the Old World.</French>
+        <German>Gerüchte machen den Lauf, dass der Gouverneur eine Geliebte in der Alten Welt hat.</German>
+        <Italian>The Governor of the Colonies has a secret lover in the Old World.</Italian>
+        <Spanish>The Governor of the Colonies has a secret lover in the Old World..</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_GOVERNOR_LOVER</Tag>
+        <English>Mylord, letters were found in the room of the Governor by the cleaning personal. They proof that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</English>
+        <French>Mylord, letters were found in the room of the Governor by the cleaning personal. They proof that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</French>
+        <German>Mylord, es wurden vom Reinigungspersonal Briefe im Raum des Gouverneurs gefunden, die beweisen dass er eine geheime Geliebte unter den Palastbediensteten seiner Majestät in der alten Welt hatte. Sie wurde aus dem Palast geworfen und lebt nun in den Armenvierteln.</German>
+        <Italian>Mylord, letters were found in the room of the Governor by the cleaning personal. They proof that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</Italian>
+        <Spanish>Mylord, letters were found in the room of the Governor by the cleaning personal. They proof that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_POLITICAL_REFUGEE</Tag>
