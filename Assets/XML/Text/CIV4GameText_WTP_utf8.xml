@@ -6,6 +6,10 @@
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
+        <Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
+        <English>????</English>
+    </TEXT>
+	<TEXT>
         <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
         <English>The unrest in %s1_city has ended now. All business it back to normal.</English>
         <French>The unrest in %s1_city has ended now. All business it back to normal.</French>

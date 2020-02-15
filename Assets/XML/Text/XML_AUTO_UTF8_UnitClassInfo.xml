@@ -673,15 +673,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONQUISTADOR</Tag>
-        <English>TXT_KEY_CONQUISTADOR</English>
+        <English>TXT_KEY_UNIT_CONQUISTADOR</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONTINENTAL_GUARD</Tag>
         <English>Continental Guard:Continental Guards</English>
         <French>Garde continentale:Gardes continentales</French>
         <German>Kontinentalgarde:Kontinentalgarde</German>
-        <Italian>Continental Guard:Continental Guards</Italian>
-        <Spanish>Continental Guard:Continental Guards</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
@@ -1829,7 +1827,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILITIA</Tag>
-        <English>TXT_KEY_MILITIA</English>
+        <English>TXT_KEY_UNIT_MILITIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MINER</Tag>
@@ -1881,7 +1879,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MOUNTED_CONQUISTADOR</Tag>
-        <English>TXT_KEY_MOUNTED_CONQUISTADOR</English>
+        <English>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MUSKETS</Tag>
@@ -2217,7 +2215,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RANGER</Tag>
-        <English>TXT_KEY_RANGER</English>
+        <English>TXT_KEY_UNIT_RANGER</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAW_SALT</Tag>

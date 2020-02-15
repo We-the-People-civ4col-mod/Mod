@@ -94,7 +94,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_BARBARIAN_PEDIA</Tag>
-        <English>TXT_KEY_CIV_BARBARIAN_PEDIA</English>
+        <English>TXT_KEY_CIVILIZATION_BARBARIAN_PEDIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_BOLIVAR</Tag>
@@ -226,7 +226,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_CHURCH_PEDIA</Tag>
-        <English>TXT_KEY_CIV_CHURCH_PEDIA</English>
+        <English>TXT_KEY_CIVILIZATION_CHURCH_PEDIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_COCIJOEZA</Tag>

@@ -37,6 +37,53 @@ static void verifyXMLsettings()
 #endif
 /// xml verification
 
+CvXMLLoadUtility::GameTextContainer* CvXMLLoadUtility::GameTextList::get(std::string szType)
+{
+	FGameTextMap::iterator iIterator;
+	iIterator = m_map.find(szType);
+	if (iIterator == m_map.end())
+	{
+		return NULL;
+	}
+	return &iIterator->second;
+}
+
+void CvXMLLoadUtility::GameTextList::add(std::string szType, const CvXMLLoadUtility::GameTextContainer& kData)
+{
+	m_map[szType] = kData;
+}
+
+void CvXMLLoadUtility::GameTextList::setAllStrings()
+{
+	for (FGameTextMap::iterator iIterator = m_map.begin(); iIterator != m_map.end(); ++iIterator)
+	{
+		GameTextContainer* pContainer = &iIterator->second;
+		GameTextContainer* pOriginal = pContainer;
+
+		while (pContainer != NULL && pContainer->m_Text.length() > 7 && wcsncmp(pContainer->m_Text.GetCString(), L"TXT_KEY", 7) == 0)
+		{
+			CvString szBuffer(pContainer->m_Text);
+			pContainer = get(szBuffer);
+		}
+
+		if (pContainer == NULL)
+		{
+			CvString szBuffer(iIterator->second.m_Text);
+			FAssertMsg(false, CvString::format("%s: failed to be looked up the string %s", iIterator->first.c_str(), szBuffer.GetCString()).GetCString());
+			//continue;
+			pContainer = pOriginal;
+		}
+
+		if (pContainer->m_Text == L"????")
+		{
+			continue;
+		}
+
+		gDLL->addText(iIterator->first.c_str() /*id*/, pContainer->m_Text.c_str(), pContainer->m_Gender.c_str(), pContainer->m_Plural.c_str());
+	}
+}
+
+
 // Store which codepage is used when loading the GameFont
 // Critical as it is used to detect if the language is changed and the incorrect GameFont is loaded
 int iGameFontCodePage = 0;
@@ -1022,6 +1069,8 @@ bool CvXMLLoadUtility::LoadGlobalText()
 			aszFiles.insert(aszFiles.end(), aszModfiles.begin(), aszModfiles.end());
 		}
 
+		GameTextList FStringList;
+
 		for(std::vector<CvString>::iterator it = aszFiles.begin(); it != aszFiles.end(); ++it)
 		{
 			bLoaded = LoadCivXml(m_pFXml, *it); // Load the XML
@@ -1041,10 +1090,12 @@ bool CvXMLLoadUtility::LoadGlobalText()
 					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL;
 
 					// Now call the vanilla read code.
-					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str());
+					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str(), FStringList);
 				}
 			}
 		}
+
+		FStringList.setAllStrings();
 
 		DestroyFXml();
 
@@ -1662,14 +1713,6 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 	}
 }
 
-struct GameTextContainer
-{
-	CvString m_Type;
-	CvWString m_Text;
-	CvWString m_Gender;
-	CvWString m_Plural;
-};
-
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   SetGameText()
@@ -1677,7 +1720,7 @@ struct GameTextContainer
 //  PURPOSE :   Reads game text info from XML and adds it to the translation manager
 //
 //------------------------------------------------------------------------------------------------------
-void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName)
+void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringList)
 {
 	PROFILE_FUNC();
 	logMsg("SetGameText %s\n", szTagName);
@@ -1690,48 +1733,21 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		gDLL->getXMLIFace()->SetToParent(m_pFXml);
 		gDLL->getXMLIFace()->SetToChild(m_pFXml);
 
-		std::vector<GameTextContainer> pastStrings;
-
 		// loop through each tag
 		for (i=0; i < iNumVals; i++)
 		{
 			CvGameText textInfo;
 			textInfo.read(this, bUTF8, szFileName);
 
-			// if the string is a TXT_KEY, try to look up the string it points to
-			while (wcsncmp(textInfo.getText(), L"TXT_KEY", 7) == 0)
-			{
-				bool bFound = false;
-
-				CvWString szExistingText = textInfo.getText();
-				for	(std::vector<GameTextContainer>::iterator it = pastStrings.begin(); it != pastStrings.end(); ++it)
-				{
-					CvWString loopString(it->m_Type);
-					if (loopString == szExistingText)
-					{
-						textInfo.setText(it->m_Text);
-						textInfo.setGender(it->m_Gender);
-						textInfo.setPlural(it->m_Plural);
-						bFound = true;
-						break;
-					}
-				}
-
-				if (!bFound)
-				{
-					break;
-				}
-			}
 
 			GameTextContainer newContainer;
-			newContainer.m_Type = textInfo.getType();
 			newContainer.m_Text = textInfo.getText();
 			newContainer.m_Gender = textInfo.getGender();
 			newContainer.m_Plural = textInfo.getPlural();
+			newContainer.m_Filename = GC.getCurrentXMLFile().GetCString();
 
-			pastStrings.push_back(newContainer);
+			FStringList.add(textInfo.getType(), newContainer);
 
-			gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml) && i!=iNumVals-1)
 			{
 				char	szMessage[1024];

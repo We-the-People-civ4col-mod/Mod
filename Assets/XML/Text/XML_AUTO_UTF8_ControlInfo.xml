@@ -46,7 +46,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_AUTOMOVES_HELP</Tag>
-        <English>TXT_KEY_ACTION_AUTOMOVES_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_BARE_MAP</Tag>
@@ -138,11 +138,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CYCLEUNIT_ALT_HELP</Tag>
-        <English>TXT_KEY_ACTION_CYCLE_UNITS_ALT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CYCLEUNIT_HELP</Tag>
-        <English>TXT_KEY_ACTION_CYCLE_UNITS_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES</Tag>
@@ -210,11 +210,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_ENDTURN_ALT_HELP</Tag>
-        <English>TXT_KEY_ACTION_ENDTURN_ALT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_ENDTURN_HELP</Tag>
-        <English>TXT_KEY_ACTION_ENDTURN_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_EUROPE_SCREEN</Tag>
@@ -262,7 +262,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_FORCEENDTURN_HELP</Tag>
-        <English>TXT_KEY_ACTION_FORCE_ENDTURN_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_FOREIGN_SCREEN</Tag>
@@ -386,7 +386,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_LASTUNIT_HELP</Tag>
-        <English>TXT_KEY_ACTION_LASTUNIT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_LOAD_GAME</Tag>
@@ -398,7 +398,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_LOAD_GAME_HELP</Tag>
-        <English>TXT_KEY_ACTION_LOAD_GAME_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_MILITARY_SCREEN</Tag>
@@ -434,15 +434,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_NEXTCITY_HELP</Tag>
-        <English>TXT_KEY_ACTION_NEXT_CITY_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_NEXTUNIT</Tag>
-        <English>TXT_KEY_ACTION_PREVIOUS_PLOT_UNIT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_NEXTUNIT_HELP</Tag>
-        <English>TXT_KEY_ACTION_NEXT_UNIT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_OPTIONS_SCREEN</Tag>
@@ -454,7 +454,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_OPTIONS_SCREEN_HELP</Tag>
-        <English>TXT_KEY_ACTION_OPTIONS_SCREEN_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_ORTHO_CAMERA</Tag>
@@ -506,15 +506,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_PREVCITY_HELP</Tag>
-        <English>TXT_KEY_ACTION_PREVIOUS_CITY_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_PREVUNIT</Tag>
-        <English>TXT_KEY_ACTION_PREVIOUS_PLOT_UNIT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_PREVUNIT_HELP</Tag>
-        <English>TXT_KEY_ACTION_PREVIOUS_UNIT_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_QUICK_LOAD</Tag>
@@ -566,7 +566,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_RETIRE_HELP</Tag>
-        <English>TXT_KEY_ACTION_RETIRE_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN</Tag>
@@ -590,7 +590,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SAVE_GROUP_HELP</Tag>
-        <English>TXT_KEY_ACTION_SAVE_GROUP_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SAVE_NORMAL</Tag>
@@ -602,7 +602,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SAVE_NORMAL_HELP</Tag>
-        <English>TXT_KEY_ACTION_SAVE_GAME_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONTROL_SCORES</Tag>

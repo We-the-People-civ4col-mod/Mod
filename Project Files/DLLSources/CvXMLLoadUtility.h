@@ -33,6 +33,28 @@ class CvCacheObject;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class CvXMLLoadUtility
 {
+	struct GameTextContainer
+	{
+		CvWString m_Text;
+		CvWString m_Gender;
+		CvWString m_Plural;
+		CvString  m_Filename;
+	};
+
+	class GameTextList
+	{
+	public:
+		GameTextContainer* get(std::string);
+
+		void add(std::string, const GameTextContainer& data);
+		void setAllStrings();
+
+	private:
+		typedef stdext::hash_map< std::string, GameTextContainer > FGameTextMap;
+		FGameTextMap m_map;
+	};
+
+
 //---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
 	// default constructor
@@ -252,7 +274,7 @@ private:
 	//
 	void SetGlobalActionInfo();
 	void SetGlobalAnimationPathInfo(CvAnimationPathInfo** ppAnimationPathInfo, char* szTagName, int* iNumVals);
-	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName);
+	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringList);
 
 	// create a keyboard string from a KB code, Delete would be returned for KB_DELETE
 	CvWString CreateKeyStringFromKBCode(const TCHAR* pszHotKey);
