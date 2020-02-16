@@ -1029,6 +1029,34 @@ void CvXMLLoadUtility::SetGameFont()
 	ARTFILEMGR.getInterfaceArtInfo(GC.getInfoTypeForString("FONTS_GAMEFONT", true)).setPath(szPath.c_str());
 }
 
+// generates a list of xml files in a certain location
+// used by text reading as we can't control the order when using vanilla code
+// appends files to aszFiles, allowing adding to existing lists rather than overwriting
+static void loadTextFiles(std::vector<CvString>& aszFiles, const std::string szLocation, const std::string szPrefix)
+{
+	CvString szFileName;
+
+	// the files are located at:
+	// szLocation /Assets/ szPrefix
+
+	std::string szPath = szLocation;
+
+	szPath.append("\\Assets\\");
+	szPath.append(szPrefix);
+	szPath.append("*.xml");
+	WIN32_FIND_DATA data;
+	HANDLE hFind;
+	if ((hFind = FindFirstFile(szPath.c_str(), &data)) != INVALID_HANDLE_VALUE) {
+		do
+		{
+			szFileName = szPrefix;
+			szFileName.append(data.cFileName);
+			aszFiles.push_back(szFileName);
+		} while (FindNextFile(hFind, &data) != 0);
+		FindClose(hFind);
+	}
+}
+
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   SetGlobalText()
@@ -1061,7 +1089,10 @@ bool CvXMLLoadUtility::LoadGlobalText()
 		std::vector<CvString> aszFiles;
 		std::vector<CvString> aszModfiles;
 
-		gDLL->enumerateFiles(aszFiles, "xml\\text\\*.xml");
+		// read vanilla, then mod
+		// gDLL->enumerateFiles mixes those two together. Removed because it unlocked vanilla overwriting mod strings.
+		loadTextFiles(aszFiles, "."                   , "xml\\text\\");
+		loadTextFiles(aszFiles, gDLL->getModName(true), "xml\\text\\");
 
 		if (gDLL->isModularXMLLoading())
 		{
