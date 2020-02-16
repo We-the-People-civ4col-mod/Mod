@@ -254,7 +254,8 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 		return;
 	}
 
-	CvWString szText = gDLL->getText(szStr);
+	// plenty of arguments to get around stuff like %2_city crashing the exe during this test
+	CvWString szText = gDLL->getText(szStr, L"", L"", L"", L"", L"", L"", L"", L"", L"", L"", L"");
 
 	if (szText == L"????" || (szText.length() > 7 && wcsncmp(szText, L"TXT_KEY", 7) == 0))
 	{
