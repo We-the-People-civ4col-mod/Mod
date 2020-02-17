@@ -13185,7 +13185,7 @@
             <PythonHelp>getHelpCattlethief_1</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>600</iAIValue>
-            <iGenericParameter1>-100</iGenericParameter1>
+            <iGenericParameter1>-40</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
