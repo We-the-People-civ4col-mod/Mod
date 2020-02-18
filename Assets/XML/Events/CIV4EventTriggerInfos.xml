@@ -10967,6 +10967,8 @@
             <bUnitsOnPlot>0</bUnitsOnPlot>
             <BuildingsRequired>
                 <BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_TOWN_MARKET</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClass>
             </BuildingsRequired>
             <iNumBuildings>1</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
