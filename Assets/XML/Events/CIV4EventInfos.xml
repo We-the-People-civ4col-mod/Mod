@@ -23365,7 +23365,7 @@
             <bPickCity>0</bPickCity>
             <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
             <bDeclareWar>0</bDeclareWar>
-            <iGold>2000</iGold>
+            <iGold>1200</iGold>
             <bGoldToPlayer>0</bGoldToPlayer>
             <iRandomGold>0</iRandomGold>
             <iCulture>0</iCulture>
@@ -23437,7 +23437,7 @@
             <iCulture>0</iCulture>
             <iHealth>0</iHealth>
             <UnitClass>UNITCLASS_PIONEER</UnitClass>
-            <iNumFreeUnits>2</iNumFreeUnits>
+            <iNumFreeUnits>1</iNumFreeUnits>
             <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
             <iUnitImmobileTurns>0</iUnitImmobileTurns>
