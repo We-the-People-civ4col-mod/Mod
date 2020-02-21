@@ -3012,11 +3012,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_1</Tag>
-        <English>The traders shall compensate our efforts by paying some of their earned income using our wagon traings to us.</English>
-        <French>The traders shall compensate our efforts by paying some of their earned income using our wagon traings to us</French>
+        <English>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us.</English>
+        <French>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us</French>
         <German>Die Händer sollen einen Teil unserer Aufwände durch ihr Einkommen kompensieren, dass sie mit unseren Wagenzügen erworben haben.</German>
-        <Italian>The traders shall compensate our efforts by paying some of their earned income using our wagon traings to us</Italian>
-        <Spanish>The traders shall compensate our efforts by paying some of their earned income using our wagon traings to us</Spanish>
+        <Italian>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us</Italian>
+        <Spanish>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_2</Tag>
@@ -3028,11 +3028,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST</Tag>
-        <English>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty offers a reward.</English>
-        <French>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty offers a reward.</French>
+        <English>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offer a reward.</English>
+        <French>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offer a reward.</French>
         <German>Wir haben einen grundlegenden aber florierenden Pelzhandel etabliert. Seine Majestät befiehlt aber den Prozess zu beschleunigen und weiter in den Pelzandel zu expanidieren, indem wir mindestens fünf Pelzhändler anwerben. Wenn wir dies als erste Nation schaffen, verspricht Ihre Majestät eine Belohnung.</German>
-        <Italian>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty offers a reward.</Italian>
-        <Spanish>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty offers a reward.</Spanish>
+        <Italian>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offer a reward.</Italian>
+        <Spanish>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offera reward.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST</Tag>
@@ -3084,19 +3084,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST</Tag>
-        <English>We have acuqired our first slaves. The planation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</English>
-        <French>We have acuqired our first slaves. The planation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</French>
+        <English>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</English>
+        <French>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</French>
         <German>Ihr habt eure ersten Sklaven erworben. Die Plantagenbesitzer der Kolonien fordern jedoch noch mehr. Wenn ihr als erste Nation mindestens sechs Wagenladungen Ureinwohnersklaven oder Sklaven aus Afrika erwerbt, versprechen Sie einen Belohnung.</German>
-        <Italian>We have acuqired our first slaves. The planation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</Italian>
-        <Spanish>We have acuqired our first slaves. The planation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</Spanish>
+        <Italian>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</Italian>
+        <Spanish>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST</Tag>
-        <English>We will do as the planation owners ask. Our plantations will get all the work force they need.</English>
-        <French>We will do as the planation owners ask. Our plantations will get all the work force they need.</French>
+        <English>We will do as the plantation owners ask. Our plantations will get all the work force they need.</English>
+        <French>We will do as the plantation owners ask. Our plantations will get all the work force they need.</French>
         <German>Wir werden den Wünschen der Plantagenbesitzern entsprechend. Unsere Plantagen werden die Arbeitskräfte bekommen, die sie brauchen.</German>
-        <Italian>We will do as the planation owners ask. Our plantations will get all the work force they need.</Italian>
-        <Spanish>We will do as the planation owners ask. Our plantations will get all the work force they need.</Spanish>
+        <Italian>We will do as the plantation owners ask. Our plantations will get all the work force they need.</Italian>
+        <Spanish>We will do as the plantation owners ask. Our plantations will get all the work force they need.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_MANY_SLAVES_QUEST</Tag>
@@ -3116,19 +3116,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE</Tag>
-        <English>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the planations of the New World. The Lord's blessing will be upon you. The planation owners are in generous mood.</English>
-        <French>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the planations of the New World. The Lord's blessing will be upon you. The planation owners are in generous mood.</French>
+        <English>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</English>
+        <French>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</French>
         <German>Glückwunsch! Ihr seid der erste Gouverneur, der es geschafft hat sechs Schiffsladungen von Sklaven in der Neuen Welt zu erwerben. Der Segen Gottes liegt auf euch und die Planatagenbesitzer sind in großzügiger Stimmung.</German>
-        <Italian>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the planations of the New World. The Lord's blessing will be upon you. The planation owners are in generous mood.</Italian>
-        <Spanish>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the planations of the New World. The Lord's blessing will be upon you. The planation owners are in generous mood.</Spanish>
+        <Italian>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</Italian>
+        <Spanish>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST_DONE_1</Tag>
-        <English>The planation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered them.</English>
-        <French>The planation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered them.</French>
+        <English>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</English>
+        <French>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</French>
         <German>Die Plantagenbesitzer sollen einen Teil unserer Aufwände durch ihr Einkommen kompensieren, dass sie mit der von uns gelieferten zusätzlichen Arbeitskraft erworben haben.</German>
-        <Italian>The planation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered them.</Italian>
-        <Spanish>The planation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered them.</Spanish>
+        <Italian>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</Italian>
+        <Spanish>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST_DONE_2</Tag>
