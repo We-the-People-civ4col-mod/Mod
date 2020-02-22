@@ -2321,7 +2321,7 @@
         <Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
         <English>Portuguese Colonies</English>
         <French>Colonies portugaises</French>
-        <German>Col&#243;nias Portuguesas</German>
+        <German>Colónias Portuguesas</German>
         <Italian>Colonie portoghesi</Italian>
         <Spanish>Portuguese Colonies</Spanish>
     </TEXT>
@@ -2329,7 +2329,7 @@
         <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
         <English>Portuguese Empire</English>
         <French>Empire portugais</French>
-        <German>K&#246;nigreich Portugal</German>
+        <German>Königreich Portugal</German>
         <Italian>Impero Portoghese</Italian>
         <Spanish>Portuguese Empire</Spanish>
     </TEXT>
@@ -2337,7 +2337,7 @@
         <Tag>TXT_KEY_CIV_DENMARK_DESC</Tag>
         <English>Danish Colonies</English>
         <French>Colonies danoises</French>
-        <German>D&#228;nische Kolonien</German>
+        <German>Dänische Kolonien</German>
         <Italian>Danish Colonies</Italian>
         <Spanish>Danish Colonies</Spanish>
     </TEXT>
@@ -2345,14 +2345,14 @@
         <Tag>TXT_KEY_CIV_DENMARK_EUROPE_DESC</Tag>
         <English>Kingdom of Denmark</English>
         <French>Empire danois</French>
-        <German>K&#246;nigreich von D&#228;nemark</German>
+        <German>Königreich von Dänemark</German>
         <Italian>Kingdom of Denmark</Italian>
         <Spanish>Kingdom of Denmark</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
         <English>Swedish Colonies</English>
-        <French>Colonies su&#233;doises</French>
+        <French>Colonies suédoises</French>
         <German>Schwedische Kolonien</German>
         <Italian>Swedish Colonies</Italian>
         <Spanish>Swedish Colonies</Spanish>
@@ -2360,8 +2360,8 @@
     <TEXT>
         <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
         <English>Kingdom of Sweden</English>
-        <French>Empire Su&#233;dois</French>
-        <German>K&#246;nigreich von Schwden</German>
+        <French>Empire Suédois</French>
+        <German>Königreich von Schwden</German>
         <Italian>Kingdom of Sweden</Italian>
         <Spanish>Kingdom of Sweden</Spanish>
     </TEXT>
