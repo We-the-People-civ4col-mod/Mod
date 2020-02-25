@@ -1200,7 +1200,7 @@
             <iMissionaryModifier>0</iMissionaryModifier>
             <iNativeTradeModifier>0</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
-            <iTaxRateThresholdModifier>-20</iTaxRateThresholdModifier>
+            <iTaxRateThresholdModifier>20</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
