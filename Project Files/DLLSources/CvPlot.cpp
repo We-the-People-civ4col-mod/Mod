@@ -9861,47 +9861,18 @@ void CvPlot::doMonastery()
 	bool hasExpertMissionary = missionaryUnit->getUnitInfo().getMissionaryRateModifier() > 0;
 	PlayerTypes MonasteryOwner = missionaryUnit->getOwner();
 	
-	/* -- original
-	if (!isMonastery())
+	//WTP, ray, fix for Monasteries not Growing by giving them Culture - START
+	if(getOwner() == NO_PLAYER)
 	{
-		return;
-	}
-
-	bool hasMonasteryMissionary = false;
-	bool hasExpertMissionary = false;
-	PlayerTypes MonasteryOwner = NO_PLAYER;
-	CvUnit* missionaryUnit = NULL;
-
-	CLLNode<IDInfo>* pUnitNode = headUnitNode();
-	while (pUnitNode != NULL)
-	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
-
-		if (pLoopUnit != NULL && pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).getMissionaryRate() > 0 && pLoopUnit->getFortifyTurns() > 0 )
+		if (getCulture(MonasteryOwner) < GC.getDefineINT("FREE_CITY_CULTURE"))
 		{
-			hasMonasteryMissionary = true;
-			MonasteryOwner = pLoopUnit->getOwner();
-			missionaryUnit = pLoopUnit;
-			if (pLoopUnit->getUnitInfo().getMissionaryRateModifier() > 0)
-			{
-				hasExpertMissionary = true;
-			}
-			break;
+			setCulture(MonasteryOwner, GC.getDefineINT("FREE_CITY_CULTURE"), false);
 		}
+		// updateCulture(false);
+		setOwner(MonasteryOwner, true);
 	}
-	
-	if (!hasMonasteryMissionary)
-	{
-		return;
-	}
-	
-	doUpgradeNonWorkerImprovements(); // R&R mod, vetiarvind, monasteries and forts upgrade bug fix
-	*/
-	
-	
-	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - end
-	
+	//WTP, ray, fix for Monasteries not Growing by giving them Culture - END
+
 	bool alreadyDoneMonastery = false;
 
 
