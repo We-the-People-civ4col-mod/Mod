@@ -9616,9 +9616,6 @@ CvUnit* CvPlot::getMonasteryMissionary()
 		return NULL;
 	}
 
-	bool hasMonasteryMissionary = false;
-	bool hasExpertMissionary = false;
-	PlayerTypes MonasteryOwner = NO_PLAYER;
 	CvUnit* missionaryUnit = NULL;
 
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
@@ -9650,51 +9647,6 @@ void CvPlot::doFort()
 	if(pDefenseUnit == NULL)
 		return;	
 	PlayerTypes FortOwner = pDefenseUnit->getOwner();
-	/* -- original
-	if (!isFort())
-	{
-		return;
-	}
-
-	bool hasFortDefender = false;
-	PlayerTypes FortOwner = NO_PLAYER;
-	CLLNode<IDInfo>* pUnitNode = headUnitNode();
-	CvUnit* pDefenseUnit = NULL;
-	while (pUnitNode != NULL)
-	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
-		// R&R mod, vetiarvind, monasteries and forts upgrade bug fix - start		
-		//if (pLoopUnit != NULL && (pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_LAND") || pLoopUnit->getUnitClassType() == GC.getDefineINT("UNITCLASS_CONTINENTAL_GUARD") || (pLoopUnit->getProfession()!=NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).isCityDefender() && !GC.getProfessionInfo(pLoopUnit->getProfession()).isUnarmed())) && pLoopUnit->getFortifyTurns() > 0 )
-		//has fortified and not a pioneer as we don't want working pioneers to be considered fortified
-		if (pLoopUnit != NULL && pLoopUnit->getFortifyTurns() > 0 && !(pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).getWorkRate() != 0))		
-		{
-			hasFortDefender = true;
-			//FortOwner = pLoopUnit->getOwner();
-			
-			if(pDefenseUnit == NULL || (FortOwner == pLoopUnit->getOwner() && pDefenseUnit->baseCombatStr() < pLoopUnit->baseCombatStr()))// R&R mod, vetiarvind, monasteries and forts upgrade bug fix
-			{
-				pDefenseUnit = pLoopUnit;		
-				FortOwner = pLoopUnit->getOwner();
-			}
-			//pDefenseUnit = pLoopUnit;			
-			//break; 
-		}
-		// R&R mod, vetiarvind, monasteries and forts upgrade bug fix - end
-		
-	}
-		
-	
-	if (!hasFortDefender)
-	{
-		return;
-	}
-	
-	doUpgradeNonWorkerImprovements(); 		// R&R mod, vetiarvind, monasteries and forts upgrade bug fix		
-	*/
-	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - end
-	
-	//doImprovementUpgrade();  // R&R mod, vetiarvind, monasteries and forts upgrade bug fix
 	
 	bool alreadyFired = false;
 
