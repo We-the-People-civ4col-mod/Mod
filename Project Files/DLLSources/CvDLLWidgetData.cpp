@@ -2441,7 +2441,8 @@ void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, 
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_ALT_DECLARE_WAR"));
 			}
-			else if (!GET_TEAM(otherPlayer.getTeam()).isParentOf(GC.getGameINLINE().getActiveTeam()))
+			//else if (!GET_TEAM(otherPlayer.getTeam()).isParentOf(GC.getGameINLINE().getActiveTeam()))
+			else if (!GET_TEAM(otherPlayer.getTeam()).isParentOf(GC.getGameINLINE().getActiveTeam()) && !GET_TEAM(GC.getGameINLINE().getActiveTeam()).canDeclareWar(otherPlayer.getTeam()) && GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN))
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_CANNOT_DECLARE_WAR"));
