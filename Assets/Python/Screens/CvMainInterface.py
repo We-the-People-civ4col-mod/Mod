@@ -829,7 +829,8 @@ class CvMainInterface:
 			screen.hide( szButtonID )
 			
 	# GOLD PILE  # Robert Surcouf, Religion and Revolution Gold Pile Icon Start
-		screen.addDDSGFC("GoldPile", ArtFileMgr.getInterfaceArtInfo("SCREEN_GOLD_PILE").getPath(), 50, 17, 50, 50, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		#screen.addDDSGFC("GoldPile", ArtFileMgr.getInterfaceArtInfo("SCREEN_GOLD_PILE").getPath(), 50, 17, 50, 50, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC("GoldPile", ArtFileMgr.getInterfaceArtInfo("SCREEN_GOLD_PILE").getPath(), 60, 8, 50, 50, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setImageShape("GoldPile", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("GoldPile", 30, 30)
 		self.appendtoHideState(screen, "GoldPile", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
