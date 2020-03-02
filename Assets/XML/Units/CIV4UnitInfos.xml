@@ -16038,20 +16038,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_SHEEP</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_CATTLE</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_HORSES</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_LUXURY_GOODS</YieldType>
@@ -16098,8 +16085,34 @@
                     <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
