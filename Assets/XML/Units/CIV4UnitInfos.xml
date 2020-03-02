@@ -4225,20 +4225,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -4261,8 +4248,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -4564,20 +4577,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -4600,8 +4600,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -4903,20 +4929,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_COTTON</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_INDIGO</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -4939,8 +4952,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -5242,20 +5281,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_INDIGO</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COTTON</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -5278,8 +5304,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -5581,24 +5633,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -5621,8 +5656,42 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -5924,24 +5993,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -5964,8 +6016,42 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -6267,24 +6353,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -6307,8 +6376,42 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -6610,24 +6713,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -6650,8 +6736,42 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -6953,20 +7073,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_INDIGO</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_COTTON</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -6989,8 +7096,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -7672,20 +7805,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_GRAPES</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -7708,8 +7828,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
