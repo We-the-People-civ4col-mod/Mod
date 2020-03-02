@@ -2785,28 +2785,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_GOLD</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_SILVER</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_GEMS</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -2829,8 +2808,50 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -3132,24 +3153,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_SILVER</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_GOLD</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_ORE</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_RAW_SALT</YieldType>
-                    <iYieldMod>50</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -3174,11 +3178,48 @@
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_GEMS</YieldType>
                     <iChange>3</iChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
             </YieldChanges>
-            <BonusYieldChanges/>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_ORE</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>0</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -3480,16 +3521,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_LUMBER</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-                <YieldModifier>
-                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -3512,8 +3544,34 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
-            <YieldChanges/>
-            <BonusYieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -3815,12 +3873,7 @@
             <UnitClassDefenseMods/>
             <UnitCombatMods/>
             <DomainMods/>
-            <YieldModifiers>
-                <YieldModifier>
-                    <YieldType>YIELD_STONE</YieldType>
-                    <iYieldMod>100</iYieldMod>
-                </YieldModifier>
-            </YieldModifiers>
+            <YieldModifiers/>
             <YieldDemands>
                 <YieldDemand>
                     <YieldType>YIELD_COFFEE</YieldType>
@@ -3852,8 +3905,25 @@
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
                     <iChange>1</iChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>3</iChange>
+                </YieldChange>
             </YieldChanges>
-            <BonusYieldChanges/>
+            <BonusYieldChanges>
+                <BonusYieldChange>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>1</iChange>
+                </BonusYieldChange>
+                <BonusYieldChange>
+                    <YieldType>YIELD_STONE</YieldType>
+                    <iChange>2</iChange>
+                </BonusYieldChange>
+            </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
             <bWaterYieldChanges>1</bWaterYieldChanges>
             <iBombardRate>0</iBombardRate>
@@ -7977,7 +8047,7 @@
             <BonusYieldChanges>
                 <BonusYieldChange>
                     <YieldType>YIELD_FUR</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
@@ -8321,7 +8391,7 @@
             <BonusYieldChanges>
                 <BonusYieldChange>
                     <YieldType>YIELD_FUR</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </BonusYieldChange>
                 <BonusYieldChange>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
@@ -8669,7 +8739,7 @@
                 </BonusYieldChange>
                 <BonusYieldChange>
                     <YieldType>YIELD_PREMIUM_FUR</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </BonusYieldChange>
             </BonusYieldChanges>
             <bLandYieldChanges>1</bLandYieldChanges>
@@ -9005,7 +9075,7 @@
             <BonusYieldChanges>
                 <BonusYieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iChange>1</iChange>
+                    <iChange>2</iChange>
                 </BonusYieldChange>
             </BonusYieldChanges>
             <bLandYieldChanges>0</bLandYieldChanges>
@@ -23243,6 +23313,10 @@
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
+                <YieldDemand>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iYieldDemand>5</iYieldDemand>
+                </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
                     <iYieldDemand>30</iYieldDemand>
