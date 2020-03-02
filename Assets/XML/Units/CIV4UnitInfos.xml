@@ -23314,10 +23314,6 @@
             </YieldModifiers>
             <YieldDemands>
                 <YieldDemand>
-                    <YieldType>YIELD_FOOD</YieldType>
-                    <iYieldDemand>5</iYieldDemand>
-                </YieldDemand>
-                <YieldDemand>
                     <YieldType>YIELD_COCA_LEAVES</YieldType>
                     <iYieldDemand>30</iYieldDemand>
                 </YieldDemand>
