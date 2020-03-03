@@ -21,6 +21,7 @@
 #include "CvGameCoreUtils.h"
 #include "CvMap.h"
 #include "CvMapGenerator.h"
+#include "KmodPathFinder.h"
 #include "FAStarNode.h"
 #include "CvInitCore.h"
 #include "CvInfos.h"
@@ -220,7 +221,7 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 		gDLL->callUpdater();
 		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
-			plotSorenINLINE(iX, iY)->init(iX, iY);
+			plotSoren(iX, iY)->init(iX, iY);
 		}
 	}
 	calculateAreas();
@@ -321,19 +322,22 @@ void CvMap::setup()
 {
 	PROFILE_FUNC();
 
-	gDLL->getFAStarIFace()->Initialize(&GC.getPathFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), pathDestValid, pathHeuristic, pathCost, pathValid, pathAdd, NULL, NULL);
-	gDLL->getFAStarIFace()->Initialize(&GC.getInterfacePathFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), pathDestValid, pathHeuristic, pathCost, pathValid, pathAdd, NULL, NULL);
-	gDLL->getFAStarIFace()->Initialize(&GC.getStepFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), stepDestValid, stepHeuristic, stepCost, stepValid, stepAdd, NULL, NULL);
-	gDLL->getFAStarIFace()->Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
-	gDLL->getFAStarIFace()->Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
-	gDLL->getFAStarIFace()->Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
+	KmodPathFinder::InitHeuristicWeights(); // K-Mod
+	CvDLLFAStarIFaceBase& kAStar = *gDLL->getFAStarIFace(); // advc
+
+	kAStar.Initialize(&GC.getPathFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), pathDestValid, pathHeuristic, pathCost, pathValid, pathAdd, NULL, NULL);
+	kAStar.Initialize(&GC.getInterfacePathFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), pathDestValid, pathHeuristic, pathCost, pathValid, pathAdd, NULL, NULL);
+	kAStar.Initialize(&GC.getStepFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), stepDestValid, stepHeuristic, stepCost, stepValid, stepAdd, NULL, NULL);
+	kAStar.Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
+	kAStar.Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
+	kAStar.Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
 	
 	// Erik: We have to create and initialize the coastal route pathfinder since
 	// the exe cannot do this for us
 	FAStar* coastalRouteFinder = gDLL->getFAStarIFace()->create();
 	FAssert(coastalRouteFinder);
 	GC.setCoastalRouteFinder(coastalRouteFinder);
-	gDLL->getFAStarIFace()->Initialize(&GC.getCoastalRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, stepHeuristic, stepCost, coastalRouteValid, NULL, NULL, NULL);
+	kAStar.Initialize(&GC.getCoastalRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, stepHeuristic, stepCost, coastalRouteValid, NULL, NULL, NULL);
 }
 
 
@@ -589,7 +593,7 @@ CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTi
 
 	while (iCount < iTimeout)
 	{
-		CvPlot* pTestPlot = plotSorenINLINE(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
+		CvPlot* pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
 
 		FAssertMsg(pTestPlot != NULL, "TestPlot is not assigned a valid value");
 

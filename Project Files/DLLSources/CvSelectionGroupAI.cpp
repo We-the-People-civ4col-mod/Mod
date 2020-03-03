@@ -628,7 +628,7 @@ bool CvSelectionGroupAI::AI_isDeclareWar(const CvPlot* pPlot)
 
 CvPlot* CvSelectionGroupAI::AI_getMissionAIPlot()
 {
-	return GC.getMapINLINE().plotSorenINLINE(m_iMissionAIX, m_iMissionAIY);
+	return GC.getMapINLINE().plotSoren(m_iMissionAIX, m_iMissionAIY);
 }
 
 

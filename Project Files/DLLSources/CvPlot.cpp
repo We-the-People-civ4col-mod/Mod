@@ -5198,7 +5198,7 @@ CvPlot* CvPlot::getInlandCorner() const
 		switch (aiShuffle[iI])
 		{
 		case 0:
-			pRiverPlot = GC.getMapINLINE().plotSorenINLINE(getX_INLINE(), getY_INLINE()); break;
+			pRiverPlot = GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE()); break;
 		case 1:
 			pRiverPlot = plotDirection(getX_INLINE(), getY_INLINE(), DIRECTION_NORTH); break;
 		case 2:

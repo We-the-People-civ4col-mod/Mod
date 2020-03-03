@@ -859,21 +859,122 @@ bool PUF_isUnitAITypeGroupie(const CvUnit* pUnit, int iData1, int iData2)
 
 int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 {
+
+	PROFILE_FUNC();
+
+	CvPlot const& kToPlot = GC.getMap().getPlot(iToX, iToY);
+
+	//pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
+
+	if (pSelectionGroup->atPlot(&kToPlot))
+		return TRUE;
+
+	if (pSelectionGroup->getDomainType() == DOMAIN_IMMOBILE)
+		return FALSE;
+
+	bool const bAIControl = pSelectionGroup->AI_isControlled();
+
+	if (bAIControl)
+	{	/*  BETTER_BTS_AI_MOD, Efficiency, 11/04/09, jdog5000: START
+		switch order as AI_getAnyPlotDanger is more expensive */
+		if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
+		{
+			CvArea const& kGroupArea = *pSelectionGroup->area();
+			if (!kToPlot.isArea(kGroupArea) /*&&
+				
+				!pSelectionGroup->canMoveAllTerrain() &&
+				!kToPlot.isAdjacentToArea(kGroupArea)*/)
+			{
+				return FALSE;
+			}
+		}
+		if (!(iFlags & MOVE_IGNORE_DANGER))
+		{
+			if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible())
+			{
+				//if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kToPlot))
+				{
+					// WTP: fixme
+					return true;
+					//return FALSE;
+				}
+			}
+		}
+		// BETTER_BTS_AI_MOD: END
+	}
+
+	if (bAIControl || kToPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
+	{
+		if (pSelectionGroup->isAmphibPlot(&kToPlot))
+		{
+			for (CLLNode<IDInfo> const* pUnitNode1 = pSelectionGroup->headUnitNode();
+				pUnitNode1 != NULL; pUnitNode1 = pSelectionGroup->nextUnitNode(pUnitNode1))
+			{
+				CvUnit const* pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
+				if (pLoopUnit1->getCargo() > 0 && pLoopUnit1->domainCargo() == DOMAIN_LAND)
+				{
+					bool bValid = false;
+					for (CLLNode<IDInfo>* pUnitNode2 = pLoopUnit1->plot()->headUnitNode();
+						pUnitNode2 != NULL; pUnitNode2 = pLoopUnit1->plot()->nextUnitNode(pUnitNode2))
+					{
+						CvUnit const* pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
+						if (pLoopUnit2->getTransportUnit() == pLoopUnit1)
+						{
+							if (pLoopUnit2->isGroupHead())
+							{
+								//if (pLoopUnit2->getGroup()->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(kToPlot) || (iFlags & MOVE_DECLARE_WAR))))
+								if (pLoopUnit2->getGroup()->canMoveOrAttackInto(kToPlot, iFlags & MOVE_DECLARE_WAR, false, bAIControl)) // K-Mod. The new AI must be explicit about declaring war.
+								{
+									bValid = true;
+									break;
+								}
+							}
+						}
+					}
+					if (bValid)
+						return TRUE;
+				}
+			}
+
+			return FALSE;
+		}
+		else
+		{
+			if (!pSelectionGroup->canMoveOrAttackInto(kToPlot,
+				//pSelectionGroup->AI_isDeclareWar(pToPlot) || (iFlags & MOVE_DECLARE_WAR))
+				// K-Mod. The new AI must be explicit about declaring war.
+				iFlags & MOVE_DECLARE_WAR, false, bAIControl))
+			{
+				return FALSE;
+			}
+		}
+	}
+
+	return TRUE;
+
+#if 0
 	PROFILE_FUNC();
 
 	CLLNode<IDInfo>* pUnitNode1;
 	CLLNode<IDInfo>* pUnitNode2;
-	CvSelectionGroup* pSelectionGroup;
 	CvUnit* pLoopUnit1;
 	CvUnit* pLoopUnit2;
 	CvPlot* pToPlot;
 	bool bAIControl;
 	bool bValid;
 
-	pToPlot = GC.getMapINLINE().plotSorenINLINE(iToX, iToY);
+	pToPlot = GC.getMapINLINE().plotSoren(iToX, iToY);
 	FAssert(pToPlot != NULL);
 
-	pSelectionGroup = ((CvSelectionGroup *)pointer);
+	//pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	const int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
 
 	if (pSelectionGroup->atPlot(pToPlot))
 	{
@@ -889,7 +990,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 
 	if (bAIControl)
 	{
-		if (!(gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_IGNORE_DANGER))
+		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
 			if (!(pSelectionGroup->canFight()) && !(pSelectionGroup->alwaysInvisible()))
 			{
@@ -942,7 +1043,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 						{
 							if (pLoopUnit2->isGroupHead())
 							{
-								if (pLoopUnit2->getGroup()->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(pToPlot) || (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_DECLARE_WAR))))
+								if (pLoopUnit2->getGroup()->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(pToPlot) || (iFlags & MOVE_DECLARE_WAR))))
 								{
 									bValid = true;
 									break;
@@ -962,7 +1063,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 		}
 		else
 		{
-			if (!(pSelectionGroup->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(pToPlot) || (gDLL->getFAStarIFace()->GetInfo(finder) & MOVE_DECLARE_WAR)))))
+			if (!(pSelectionGroup->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(pToPlot) || (iFlags & MOVE_DECLARE_WAR)))))
 			{
 				return FALSE;
 			}
@@ -970,6 +1071,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 	}
 
 	return TRUE;
+#endif
 }
 
 
@@ -982,7 +1084,6 @@ int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY)
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
 	CLLNode<IDInfo>* pUnitNode;
-	CvSelectionGroup* pSelectionGroup;
 	CvUnit* pLoopUnit;
 	CvPlot* pFromPlot;
 	CvPlot* pToPlot;
@@ -993,19 +1094,21 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	int iWorstMax;
 	int iMax;
 
-	pFromPlot = GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY);
+	pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
 	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+	pToPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 	FAssert(pToPlot != NULL);
 
-	pSelectionGroup = ((CvSelectionGroup *)pointer);
+	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	const int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
 
 	//iWorstCost = MAX_INT;
 	iWorstCost = 0;
 	iWorstMovesLeft = MAX_INT;
 	iWorstMax = MAX_INT;
-
-	const int iFlags = gDLL->getFAStarIFace()->GetInfo(finder);
 
 	pUnitNode = pSelectionGroup->headUnitNode();
 
@@ -1127,6 +1230,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 					{
 						if (pLoopUnit->canAttack())
 						{
+							/*
 							if (gDLL->getFAStarIFace()->IsPathDest(finder, pToPlot->getX_INLINE(), pToPlot->getY_INLINE()))
 							{
 								if (pToPlot->isVisibleEnemyDefender(pLoopUnit))
@@ -1148,6 +1252,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 									}
 								}
 							}
+							*/
 						}
 					}
 				}
@@ -1195,10 +1300,159 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	return iWorstCost;
 }
 
+int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSelectionGroup, int iFlags)  // advc: style changes
+{
+	CvMap const& kMap = GC.getMap();
+	CvPlot const& kFromPlot = kMap.getPlot(parent->m_iX, parent->m_iY);
+	CvPlot const& kToPlot = kMap.getPlot(node->m_iX, node->m_iY);
+	// Ship can't cross isthmus 
+	if (pSelectionGroup->getDomainType() == DOMAIN_SEA &&
+		kFromPlot.isWater() && kToPlot.isWater() &&
+		!kMap.getPlot(kFromPlot.getX(), kToPlot.getY()).isWater() &&
+		!kMap.getPlot(kToPlot.getX(), kFromPlot.getY()).isWater() /*&&
+		!pSelectionGroup->canMoveAllTerrain()*/) // WTP: Not supported
+		return FALSE;
+	return TRUE;
+}
+
+int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int iFlags)  // advc: some style changes
+{
+	//PROFILE_FUNC(); // advc.003o
+	CvPlot const& kFromPlot = GC.getMap().getPlot(parent->m_iX, parent->m_iY);
+	//CvPlot* pToPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
+
+	if (pSelectionGroup->atPlot(&kFromPlot))
+		return TRUE;
+
+	if (iFlags & MOVE_SAFE_TERRITORY)
+	{
+		if (kFromPlot.isOwned() && kFromPlot.getTeam() != pSelectionGroup->getHeadTeam())
+			return FALSE;
+
+		if (!kFromPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
+			return FALSE;
+	}
+	// <advc.049> No new AI routes in human territory (but upgrade to railroad OK)
+	if (iFlags & MOVE_ROUTE_TO)
+	{
+		if (kFromPlot.getRevealedRouteType(pSelectionGroup->getHeadTeam(), false) == NO_ROUTE &&
+			!pSelectionGroup->isHuman())
+		{
+			PlayerTypes eOwner = kFromPlot.getOwner();
+			if (eOwner != NO_PLAYER && GET_PLAYER(eOwner).isHuman())
+				return FALSE;
+		}
+	} // </advc.049>
+	
+	if (iFlags & MOVE_NO_ENEMY_TERRITORY && kFromPlot.isOwned() &&
+		atWar(kFromPlot.getTeam(), pSelectionGroup->getHeadTeam()))
+		return FALSE;
+
+	bool const bAIControl = pSelectionGroup->AI_isControlled();
+	if (bAIControl)
+	{
+		if (parent->m_iData2 > 1 || parent->m_iData1 == 0)
+		{
+			if (!(iFlags & MOVE_IGNORE_DANGER))
+			{
+				if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible())
+				{
+					// TODO: Use AI_getPlotDanger ?
+					//if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kFromPlot))
+					{
+						//return FALSE;
+						// WTP: Fix this!
+						return TRUE;
+					}
+				}
+			}
+		}
+	}
+
+	if (bAIControl || kFromPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
+	{
+		if (iFlags & (MOVE_THROUGH_ENEMY /* K-Mod: */ | MOVE_ATTACK_STACK))
+		{
+			if (!pSelectionGroup->canMoveOrAttackInto(kFromPlot,
+				// K-Mod:
+				iFlags & MOVE_DECLARE_WAR && !pSelectionGroup->isHuman()))
+				return FALSE;
+		}
+		else
+		{
+			if (!pSelectionGroup->canMoveThrough(kFromPlot,
+				// K-Mod
+				iFlags & MOVE_DECLARE_WAR && !pSelectionGroup->isHuman(),
+				iFlags & MOVE_ASSUME_VISIBLE || !pSelectionGroup->isHuman()))
+				// K-Mod end
+				return FALSE;
+		}
+	}
+	// K-Mod. Note: it's currently difficult to extract the vision-cheating part of this AI,
+	// because the AI needs to cheat inside canMoveOrAttackInto for its other cheating parts to work...
+	//  .. anyway, here is the beginnings of what the code might look like without the cheats. (it's unfinished)
+#if 0
+	if (kFromPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
+	{
+		PROFILE("pathValid move through");
+		CvTeamAI& kTeam = GET_TEAM(pSelectionGroup->getHeadTeam());
+
+		int iEnemyDefence;
+		if (kFromPlot.isVisible(pSelectionGroup->getHeadTeam(), false))
+		{
+			iEnemyDefence = GET_PLAYER(pSelectionGroup->getOwner()).AI_localDefenceStrength(pToPlot, NO_TEAM, pSelectionGroup->getDomainType(), 0, true, false, pSelectionGroup->isHuman());
+		}
+		else
+		{
+			iEnemyDefence = kTeam.AI_getStrengthMemory(&kFromPlot);
+		}
+
+		if (kTeam.AI_getStrengthMemory(&kFromPlot) > 0 && iFlags & (MOVE_THROUGH_ENEMY | MOVE_ATTACK_STACK))
+		{
+			if (!pSelectionGroup->canMoveOrAttackInto(kFromPlot) ||
+				(iFlags & MOVE_ATTACK_STACK && pSelectionGroup->AI_sumStrength(&kFromPlot) < iEnemyDefence))
+			{
+				return FALSE;
+			}
+		}
+		else
+		{
+			if (!pSelectionGroup->canMoveThrough(kFromPlot))
+			{
+				return FALSE;
+			}
+		}
+	}
+#endif
+	// K-Mod end
+
+	return TRUE;
+}
 
 int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
-	CvSelectionGroup* pSelectionGroup;
+	PROFILE_FUNC();
+
+	if (parent == NULL)
+		return TRUE;
+	// advc: Was unused (apart from an assertion)
+	/*CvPlot* pFromPlot = ...;
+	CvPlot* pToPlot = ...; */
+	//pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer :
+		((CvPathSettings*)pointer)->pGroup;
+	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) :
+		((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
+
+	if (!pathValid_join(parent, node, pSelectionGroup, iFlags))
+		return FALSE;
+
+	//bResult = pathValidInternal(parent, node, data, pPathSettings, finder);
+	return pathValid_source(parent, pSelectionGroup, iFlags);
+
+	/*
 	CvPlot* pFromPlot;
 	CvPlot* pToPlot;
 	bool bAIControl;
@@ -1208,12 +1462,17 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	pFromPlot = GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY);
+	pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
 	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+	pToPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 	FAssert(pToPlot != NULL);
 
-	pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer :
+		((CvPathSettings*)pointer)->pGroup;
+	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) :
+		((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
 
 	// XXX might want to take this out...
 	if (pSelectionGroup->getDomainType() == DOMAIN_SEA)
@@ -1232,9 +1491,8 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	const int info = gDLL->getFAStarIFace()->GetInfo(finder);
 
-	if (info & MOVE_SAFE_TERRITORY)
+	if (iFlags & MOVE_SAFE_TERRITORY)
 	{
 		if (!(pFromPlot->isRevealed(pSelectionGroup->getHeadTeam(), false)))
 		{
@@ -1250,7 +1508,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		}
 	}
 
-	if (info & MOVE_NO_ENEMY_TERRITORY)
+	if (iFlags & MOVE_NO_ENEMY_TERRITORY)
 	{
 		if (pFromPlot->isOwned())
 		{
@@ -1267,7 +1525,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	{
 		if ((parent->m_iData2 > 1) || (parent->m_iData1 == 0))
 		{
-			if (!(info & MOVE_IGNORE_DANGER))
+			if (!(iFlags & MOVE_IGNORE_DANGER))
 			{
 				if (!(pSelectionGroup->canFight()) && !(pSelectionGroup->alwaysInvisible()))
 				{
@@ -1282,7 +1540,7 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 
 	if (bAIControl || pFromPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
 	{
-		if (info & MOVE_THROUGH_ENEMY)
+		if (iFlags & MOVE_THROUGH_ENEMY)
 		{
 			if (!(pSelectionGroup->canMoveOrAttackInto(pFromPlot)))
 			{
@@ -1299,15 +1557,128 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 	}
 
 	return TRUE;
+	*/
 }
 
 
 int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
+
+	//PROFILE_FUNC(); // advc.003o
+	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
+	FAssert(pSelectionGroup->getNumUnits() > 0);
+
+	int iTurns = 1;
+	int iMoves = MAX_INT;
+
+	if (data == ASNC_INITIALADD)
+	{
+		bool bMaxMoves = (iFlags & MOVE_MAX_MOVES);
+		// K-Mod. I've moved the code from here into separate functions.
+		iMoves = bMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
+		// K-Mod end
+	}
+	else
+	{	// advc: use plot references
+		CvPlot const& kFromPlot = GC.getMap().getPlot(parent->m_iX, parent->m_iY);
+		CvPlot const& kToPlot = GC.getMap().getPlot(node->m_iX, node->m_iY);
+
+		int iStartMoves = parent->m_iData1;
+		iTurns = parent->m_iData2;
+		/*if (iStartMoves == 0)
+		iTurns++;
+		for (CLLNode<IDInfo>* pUnitNode = pSelectionGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode)) {
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		int iUnitMoves = (iStartMoves == 0 ? pLoopUnit->maxMoves() : iStartMoves);
+		iUnitMoves -= pToPlot->movementCost(pLoopUnit, &kFromPlot);
+		iUnitMoves = std::max(iUnitMoves, 0);
+		iMoves = std::min(iMoves, iUnitMoves);
+		}*/ // BtS
+		// K-Mod. The original code would give incorrect results for groups where one unit had more moves but also had higher move cost.
+		// (eg. the most obvious example is when a group with 1-move units and 2-move units is moving on a railroad. - In this situation,
+		//  the original code would consistently underestimate the remaining moves at every step.)
+		bool bNewTurn = iStartMoves == 0;
+
+		if (bNewTurn)
+		{
+			iTurns++;
+			iStartMoves = pSelectionGroup->maxMoves();
+		}
+		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
+		int iMoveCost = kToPlot.movementCost(::getUnit(pUnitNode->m_data), &kFromPlot/*,
+			false*/); // advc.001i
+		bool bUniformCost = true;
+
+		for (pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
+			bUniformCost && pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
+		{
+			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			int iLoopCost = kToPlot.movementCost(pLoopUnit, &kFromPlot/*,
+				false*/); // advc.001i
+			if (iLoopCost != iMoveCost)
+				bUniformCost = false;
+		}
+
+		if (bUniformCost)
+		{
+			// the simple, normal case
+			iMoves = std::max(0, iStartMoves - iMoveCost);
+		}
+		else
+		{
+			PROFILE("pathAdd - non-uniform cost");
+			// Move costs are uneven for units in this group.
+			// To be sure of the true movement cost for the group, we need to calculate the movement cost for each unit for every step in this turn.
+			std::vector<const CvPlot*> plot_list; // will be traversed in reverse order
+			plot_list.push_back(&kToPlot);
+			plot_list.push_back(&kFromPlot);
+			FAStarNode* pStartNode = parent;
+			while (pStartNode->m_iData2 == iTurns && pStartNode->m_pParent)
+			{
+				pStartNode = pStartNode->m_pParent;
+				plot_list.push_back(GC.getMap().plotSoren(pStartNode->m_iX, pStartNode->m_iY));
+			}
+			iMoves = MAX_INT;
+			bool bMaxMoves = pStartNode->m_iData1 == 0 || iFlags & MOVE_MAX_MOVES;
+
+			for (pUnitNode = pSelectionGroup->headUnitNode(); pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
+			{
+				CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+				int iUnitMoves = bMaxMoves ? pLoopUnit->maxMoves() : pLoopUnit->movesLeft();
+				for (size_t i = plot_list.size() - 1; i > 0; i--)
+				{
+					iUnitMoves -= plot_list[i - 1]->movementCost(pLoopUnit, plot_list[i]/*,
+						false*/); // advc.001i
+					FAssert(iUnitMoves > 0 || i == 1);
+				}
+
+				iUnitMoves = std::max(iUnitMoves, 0);
+				iMoves = std::min(iMoves, iUnitMoves);
+			}
+		}
+		// K-Mod end
+	}
+
+	FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
+
+	node->m_iData1 = iMoves;
+	node->m_iData2 = iTurns;
+
+	return 1;
+
+#if 0
 	PROFILE_FUNC();
 
 	CLLNode<IDInfo>* pUnitNode;
-	CvSelectionGroup* pSelectionGroup;
+	//CvSelectionGroup* pSelectionGroup;
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
 	CvUnit* pLoopUnit;
 	CvPlot* pFromPlot;
 	CvPlot* pToPlot;
@@ -1334,9 +1705,9 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	}
 	else
 	{
-		pFromPlot = GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY);
+		pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
 		FAssertMsg(pFromPlot != NULL, "FromPlot is not assigned a valid value");
-		pToPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+		pToPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 		FAssertMsg(pToPlot != NULL, "ToPlot is not assigned a valid value");
 
 		iStartMoves = parent->m_iData1;
@@ -1366,6 +1737,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	node->m_iData2 = iTurns;
 
 	return 1;
+#endif
 }
 
 
@@ -1376,9 +1748,9 @@ int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 	CvPlot* pFromPlot;
 	CvPlot* pToPlot;
 
-	pFromPlot = GC.getMapINLINE().plotSorenINLINE(gDLL->getFAStarIFace()->GetStartX(finder), gDLL->getFAStarIFace()->GetStartY(finder));
+	pFromPlot = GC.getMapINLINE().plotSoren(gDLL->getFAStarIFace()->GetStartX(finder), gDLL->getFAStarIFace()->GetStartY(finder));
 	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMapINLINE().plotSorenINLINE(iToX, iToY);
+	pToPlot = GC.getMapINLINE().plotSoren(iToX, iToY);
 	FAssert(pToPlot != NULL);
 
 	if (pFromPlot->area() != pToPlot->area())
@@ -1411,7 +1783,7 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 
 	if (pNewPlot->isImpassable())
 	{
@@ -1440,7 +1812,7 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return FALSE;
 	}
 */
-	CvPlot* pFromPlot = GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY);
+	CvPlot* pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
 	if (pFromPlot->area() != pNewPlot->area())
 	{
 		return FALSE;
@@ -1489,7 +1861,7 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 		return TRUE;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 
 	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
@@ -1513,7 +1885,7 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 		return true;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 
 	const PlayerTypes ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
@@ -1571,7 +1943,7 @@ int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* poin
 		return TRUE;
 	}
 
-	pNewPlot = GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY);
+	pNewPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
 
 	ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
 
@@ -1591,14 +1963,14 @@ int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 		return TRUE;
 	}
 
-	return ((GC.getMapINLINE().plotSorenINLINE(parent->m_iX, parent->m_iY)->isWater() == GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY)->isWater()) ? TRUE : FALSE);
+	return ((GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY)->isWater() == GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY)->isWater()) ? TRUE : FALSE);
 }
 
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
 	if (data == ASNL_ADDCLOSED)
 	{
-		GC.getMapINLINE().plotSorenINLINE(node->m_iX, node->m_iY)->setArea(gDLL->getFAStarIFace()->GetInfo(finder));
+		GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY)->setArea(gDLL->getFAStarIFace()->GetInfo(finder));
 	}
 
 	return 1;

@@ -133,7 +133,7 @@ public:
 	WarPlanTypes AI_getWarPlan(TeamTypes eIndex) const;
 	bool AI_isChosenWar(TeamTypes eIndex) const;
 	bool AI_isSneakAttackPreparing(TeamTypes eIndex) const;
-	bool AI_isSneakAttackReady(TeamTypes eIndex) const;
+	bool AI_isSneakAttackReady(TeamTypes eIndex /* K-Mod (any team): */ = NO_TEAM) const;
 	void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true);
 
 	int AI_teamCloseness(TeamTypes eIndex, int iMaxDistance = -1) const;

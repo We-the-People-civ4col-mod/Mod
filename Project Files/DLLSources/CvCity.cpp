@@ -3192,7 +3192,7 @@ bool CvCity::at(CvPlot* pPlot) const
 
 CvPlot* CvCity::plot() const
 {
-	return GC.getMapINLINE().plotSorenINLINE(getX_INLINE(), getY_INLINE());
+	return GC.getMapINLINE().plotSoren(getX_INLINE(), getY_INLINE());
 }
 
 int CvCity::getArea() const
@@ -3214,7 +3214,7 @@ CvArea* CvCity::waterArea() const
 
 CvPlot* CvCity::getRallyPlot() const
 {
-	return GC.getMapINLINE().plotSorenINLINE(m_iRallyX, m_iRallyY);
+	return GC.getMapINLINE().plotSoren(m_iRallyX, m_iRallyY);
 }
 
 

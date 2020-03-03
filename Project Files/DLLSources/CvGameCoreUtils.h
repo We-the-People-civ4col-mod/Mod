@@ -308,26 +308,29 @@ void postLoadGameFixes();
 void sendGameStats(wchar* pURL);
 
 // FAStarFunc...
-int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
-int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY);
-int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
-int stepHeuristic(int iFromX, int iFromY, int iToX, int iToY);
-int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int stepCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+// TODO: Remove DllExport since AdvCiv did so
+DllExport int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
+DllExport int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY);
+DllExport int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSelectionGroup, int iFlags); // K-Mod
+int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int iFlags); // K-Mod
+DllExport int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
+DllExport int stepHeuristic(int iFromX, int iFromY, int iToX, int iToY);
+DllExport int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int stepCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+DllExport int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 
-bool isPickableName(const TCHAR* szName);
+DllExport bool isPickableName(const TCHAR* szName);
 
-int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
-int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
+DllExport int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
+DllExport int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
 
 DllExport void boolsToString(const bool* pBools, int iNumBools, CvString* szOut);
 DllExport void stringToBools(const char* szString, int* iNumBools, bool** ppBools);
