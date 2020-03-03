@@ -261,14 +261,18 @@ public:
 		int iMapY = coordRange(iY, getGridHeightINLINE(), isWrapYINLINE());
 		return ((isPlotINLINE(iMapX, iMapY)) ? &(m_pMapPlots[plotNumINLINE(iMapX, iMapY)]) : NULL);
 	}
-	__forceinline CvPlot* plotSorenINLINE(int iX, int iY) const
+	__forceinline CvPlot* plotSoren(int iX, int iY) const // advc.inl: Renamed from plotSorenINLINE
 	{
-		if ((iX == INVALID_PLOT_COORD) || (iY == INVALID_PLOT_COORD))
-		{
+		if (iX == INVALID_PLOT_COORD || iY == INVALID_PLOT_COORD)
 			return NULL;
-		}
-		return &(m_pMapPlots[plotNumINLINE(iX, iY)]);
-	}
+		FAssert(isPlot(iX, iY)); // advc: Assertion added
+		return &(m_pMapPlots[plotNum(iX, iY)]);
+	} // <advc.inl> Even faster and less confusingly named; replacing the above in most places.
+	__forceinline CvPlot& getPlot(int x, int y) const
+	{
+		FAssert(isPlot(x, y));
+		return m_pMapPlots[plotNum(x, y)];
+	} // </advc.inl>
 #endif
 	DllExport CvPlot* pointToPlot(float fX, float fY);
 	int getIndexAfterLastArea();

@@ -17,6 +17,8 @@ class CvUnitInfo;
 class CvSelectionGroup;
 class FAStarNode;
 class CvArtInfoUnit;
+class KmodPathFinder;
+
 
 class CvSavegameReader;
 class CvSavegameWriter;
@@ -113,13 +115,19 @@ public:
 	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bTestBusy = true);
 	DllExport void doCommand(CommandTypes eCommand, int iData1, int iData2);
 
-	FAStarNode* getPathLastNode() const;
+	//FAStarNode* getPathLastNode() const; // disabled by K-Mod
 	CvPlot* getPathEndTurnPlot() const;
 	int getPathCost() const;
 	// TAC - AI Improved Naval AI - koma13 - START
 	//bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL) const;
-	bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true) const;
+	//bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true) const;
 	// TAC - AI Improved Naval AI - koma13 - END
+	bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false,							// Exposed to Python
+		int* piPathTurns = NULL,
+		int iMaxPath = -1, // K-Mod
+		bool bUseTempFinder = false) const; // advc.128
+	KmodPathFinder& getPathFinder() const; // K-Mod
+
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
 	TeamTypes getDeclareWarUnitMove(const CvPlot* pPlot) const;

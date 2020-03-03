@@ -56,6 +56,11 @@ public:
 
 	CLLNode<tVARTYPE>* next(CLLNode<tVARTYPE>* pNode) const;
 	CLLNode<tVARTYPE>* prev(CLLNode<tVARTYPE>* pNode) const;
+	// <advc>
+	CLLNode<tVARTYPE> const* next(CLLNode<tVARTYPE> const* pNode) const;
+	CLLNode<tVARTYPE> const* prev(CLLNode<tVARTYPE> const* pNode) const;
+	static CLLNode<tVARTYPE> const* static_next(CLLNode<tVARTYPE> const* pNode);
+	static CLLNode<tVARTYPE>* static_next(CLLNode<tVARTYPE>* pNode); // </advc>
 
 	CLLNode<tVARTYPE>* nodeNum(int iNum) const;
 
@@ -338,6 +343,36 @@ inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::prev(CLLNode<tVARTYPE>* pNode) co
 
 	return pNode->m_pPrev;
 }
+
+// <advc.003s>
+// Safer in 'for' loops (those mustn't remove nodes)
+template <class tVARTYPE>
+inline CLLNode<tVARTYPE> const* CLinkList<tVARTYPE>::next(CLLNode<tVARTYPE> const* pNode) const
+{
+	return pNode->m_pNext;
+}
+
+template <class tVARTYPE>
+inline CLLNode<tVARTYPE> const* CLinkList<tVARTYPE>::prev(CLLNode<tVARTYPE> const* pNode) const
+{
+	return pNode->m_pPrev;
+}
+
+/*  Since the next node doesn't depend on the list at all, let's allow
+traversal without a list object. */
+template <class tVARTYPE>
+inline CLLNode<tVARTYPE>* CLinkList<tVARTYPE>::static_next(CLLNode<tVARTYPE>* pNode)
+{
+	//assert(pNode != NULL);
+	return pNode->m_pNext;
+}
+
+template <class tVARTYPE>
+inline CLLNode<tVARTYPE> const* CLinkList<tVARTYPE>::static_next(CLLNode<tVARTYPE> const* pNode)
+{
+	return pNode->m_pNext;
+}
+// </advc.003s>
 
 
 template <class tVARTYPE>

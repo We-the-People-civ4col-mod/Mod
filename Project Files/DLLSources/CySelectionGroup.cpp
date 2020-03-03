@@ -122,12 +122,12 @@ bool CySelectionGroup::canMoveInto(CyPlot* pPlot, bool bAttack)
 
 bool CySelectionGroup::canMoveOrAttackInto(CyPlot* pPlot, bool bDeclareWar)
 {
-	return m_pSelectionGroup ? m_pSelectionGroup->canMoveOrAttackInto(pPlot->getPlot(), bDeclareWar) : false;
+	return m_pSelectionGroup ? m_pSelectionGroup->canMoveOrAttackInto(*pPlot->getPlot(), bDeclareWar) : false;
 }
 
 bool CySelectionGroup::canMoveThrough(CyPlot* pPlot)
 {
-	return m_pSelectionGroup ? m_pSelectionGroup->canMoveThrough(pPlot->getPlot()) : false;
+	return m_pSelectionGroup ? m_pSelectionGroup->canMoveThrough(*pPlot->getPlot()) : false;
 }
 
 bool CySelectionGroup::canFight()
@@ -268,7 +268,9 @@ bool CySelectionGroup::generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFla
 void CySelectionGroup::resetPath()
 {
 	if (m_pSelectionGroup)
-		m_pSelectionGroup->resetPath();
+		//m_pSelectionGroup->resetPath();
+		CvSelectionGroup::path_finder.Reset();
+
 }
 
 bool CySelectionGroup::isAssignedTradeRoute(int iRouteID) const
