@@ -884,26 +884,27 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 		if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
 		{
 			CvArea const& kGroupArea = *pSelectionGroup->area();
-			if (!kToPlot.isArea(kGroupArea) /*&&
-				
-				!pSelectionGroup->canMoveAllTerrain() &&
-				!kToPlot.isAdjacentToArea(kGroupArea)*/)
+			if (!kToPlot.isArea(kGroupArea) &&
+				/*!pSelectionGroup->canMoveAllTerrain() &&*/
+				!kToPlot.isAdjacentToArea(kGroupArea.getID()))
 			{
 				return FALSE;
 			}
 		}
+		/*
 		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
 			if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible())
 			{
-				//if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kToPlot))
+				if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kToPlot))
 				{
 					// WTP: fixme
-					return true;
-					//return FALSE;
+					//return true;
+					return FALSE;
 				}
 			}
 		}
+		*/
 		// BETTER_BTS_AI_MOD: END
 	}
 
@@ -955,123 +956,6 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 	}
 
 	return TRUE;
-
-#if 0
-	PROFILE_FUNC();
-
-	CLLNode<IDInfo>* pUnitNode1;
-	CLLNode<IDInfo>* pUnitNode2;
-	CvUnit* pLoopUnit1;
-	CvUnit* pLoopUnit2;
-	CvPlot* pToPlot;
-	bool bAIControl;
-	bool bValid;
-
-	pToPlot = GC.getMapINLINE().plotSoren(iToX, iToY);
-	FAssert(pToPlot != NULL);
-
-	//pSelectionGroup = ((CvSelectionGroup *)pointer);
-	// K-Mod
-	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
-	const int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
-	// K-Mod end
-
-	if (pSelectionGroup->atPlot(pToPlot))
-	{
-		return TRUE;
-	}
-
-	if (pSelectionGroup->getDomainType() == DOMAIN_IMMOBILE)
-	{
-		return FALSE;
-	}
-
-	bAIControl = pSelectionGroup->AI_isControlled();
-
-	if (bAIControl)
-	{
-		if (!(iFlags & MOVE_IGNORE_DANGER))
-		{
-			if (!(pSelectionGroup->canFight()) && !(pSelectionGroup->alwaysInvisible()))
-			{
-				if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getPlotDanger(pToPlot) > 0)
-				{
-					return FALSE;
-				}
-			}
-		}
-
-		// Bug? This may prevent AI units from considering land areas connected by river fords etc.
-		/*
-		if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
-		{
-			int iGroupAreaID = pSelectionGroup->getArea();
-			if (pToPlot->getArea() != iGroupAreaID)
-			{
-				if (!(pToPlot->isAdjacentToArea(iGroupAreaID)))
-				{
-					return FALSE;
-				}
-			}
-		}
-		*/
-	}
-
-	if (bAIControl || pToPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
-	{
-		if (pSelectionGroup->isAmphibPlot(pToPlot))
-		{
-			pUnitNode1 = pSelectionGroup->headUnitNode();
-
-			while (pUnitNode1 != NULL)
-			{
-				pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
-				pUnitNode1 = pSelectionGroup->nextUnitNode(pUnitNode1);
-
-				if ((pLoopUnit1->getCargo() > 0) && (pLoopUnit1->domainCargo() == DOMAIN_LAND))
-				{
-					bValid = false;
-
-					pUnitNode2 = pLoopUnit1->plot()->headUnitNode();
-
-					while (pUnitNode2 != NULL)
-					{
-						pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-						pUnitNode2 = pLoopUnit1->plot()->nextUnitNode(pUnitNode2);
-
-						if (pLoopUnit2->getTransportUnit() == pLoopUnit1)
-						{
-							if (pLoopUnit2->isGroupHead())
-							{
-								if (pLoopUnit2->getGroup()->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(pToPlot) || (iFlags & MOVE_DECLARE_WAR))))
-								{
-									bValid = true;
-									break;
-								}
-							}
-						}
-					}
-
-					if (bValid)
-					{
-						return TRUE;
-					}
-				}
-			}
-
-			return FALSE;
-		}
-		else
-		{
-			if (!(pSelectionGroup->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(pToPlot) || (iFlags & MOVE_DECLARE_WAR)))))
-			{
-				return FALSE;
-			}
-		}
-	}
-
-	return TRUE;
-#endif
 }
 
 
@@ -1349,6 +1233,7 @@ int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int 
 		return FALSE;
 
 	bool const bAIControl = pSelectionGroup->AI_isControlled();
+	/*
 	if (bAIControl)
 	{
 		if (parent->m_iData2 > 1 || parent->m_iData1 == 0)
@@ -1358,17 +1243,17 @@ int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int 
 				if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible())
 				{
 					// TODO: Use AI_getPlotDanger ?
-					//if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kFromPlot))
+					if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kFromPlot))
 					{
-						//return FALSE;
+						return FALSE;
 						// WTP: Fix this!
-						return TRUE;
+						//return TRUE;
 					}
 				}
 			}
 		}
 	}
-
+	*/
 	if (bAIControl || kFromPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
 	{
 		if (iFlags & (MOVE_THROUGH_ENEMY /* K-Mod: */ | MOVE_ATTACK_STACK))
@@ -1451,113 +1336,6 @@ int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 
 	//bResult = pathValidInternal(parent, node, data, pPathSettings, finder);
 	return pathValid_source(parent, pSelectionGroup, iFlags);
-
-	/*
-	CvPlot* pFromPlot;
-	CvPlot* pToPlot;
-	bool bAIControl;
-
-	if (parent == NULL)
-	{
-		return TRUE;
-	}
-
-	pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
-	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
-	FAssert(pToPlot != NULL);
-
-	// K-Mod
-	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer :
-		((CvPathSettings*)pointer)->pGroup;
-	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) :
-		((CvPathSettings*)pointer)->iFlags;
-	// K-Mod end
-
-	// XXX might want to take this out...
-	if (pSelectionGroup->getDomainType() == DOMAIN_SEA)
-	{
-		if (pFromPlot->isWater() && pToPlot->isWater())
-		{
-			if (!(GC.getMapINLINE().plotINLINE(parent->m_iX, node->m_iY)->isWater()) && !(GC.getMapINLINE().plotINLINE(node->m_iX, parent->m_iY)->isWater()))
-			{
-				return FALSE;
-			}
-		}
-	}
-
-	if (pSelectionGroup->atPlot(pFromPlot))
-	{
-		return TRUE;
-	}
-
-
-	if (iFlags & MOVE_SAFE_TERRITORY)
-	{
-		if (!(pFromPlot->isRevealed(pSelectionGroup->getHeadTeam(), false)))
-		{
-			return FALSE;
-		}
-
-		if (pFromPlot->isOwned())
-		{
-			if (pFromPlot->getTeam() != pSelectionGroup->getHeadTeam())
-			{
-				return FALSE;
-			}
-		}
-	}
-
-	if (iFlags & MOVE_NO_ENEMY_TERRITORY)
-	{
-		if (pFromPlot->isOwned())
-		{
-			if (atWar(pFromPlot->getTeam(), pSelectionGroup->getHeadTeam()))
-			{
-				return FALSE;
-			}
-		}
-	}
-
-	bAIControl = pSelectionGroup->AI_isControlled();
-
-	if (bAIControl)
-	{
-		if ((parent->m_iData2 > 1) || (parent->m_iData1 == 0))
-		{
-			if (!(iFlags & MOVE_IGNORE_DANGER))
-			{
-				if (!(pSelectionGroup->canFight()) && !(pSelectionGroup->alwaysInvisible()))
-				{
-					if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getPlotDanger(pFromPlot) > 0)
-					{
-						return FALSE;
-					}
-				}
-			}
-		}
-	}
-
-	if (bAIControl || pFromPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
-	{
-		if (iFlags & MOVE_THROUGH_ENEMY)
-		{
-			if (!(pSelectionGroup->canMoveOrAttackInto(pFromPlot)))
-			{
-				return FALSE;
-			}
-		}
-		else
-		{
-			if (!(pSelectionGroup->canMoveThrough(pFromPlot)))
-			{
-				return FALSE;
-			}
-		}
-	}
-
-	return TRUE;
-	*/
 }
 
 
@@ -1669,75 +1447,6 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 	node->m_iData2 = iTurns;
 
 	return 1;
-
-#if 0
-	PROFILE_FUNC();
-
-	CLLNode<IDInfo>* pUnitNode;
-	//CvSelectionGroup* pSelectionGroup;
-	// K-Mod
-	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
-	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
-	// K-Mod end
-	CvUnit* pLoopUnit;
-	CvPlot* pFromPlot;
-	CvPlot* pToPlot;
-	int iStartMoves;
-	int iMoves;
-	int iTurns;
-
-	pSelectionGroup = ((CvSelectionGroup *)pointer);
-
-	if (data == ASNC_INITIALADD)
-	{
-		iMoves = MAX_INT;
-		iTurns = 1;
-
-		pUnitNode = pSelectionGroup->headUnitNode();
-
-		while (pUnitNode != NULL)
-		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
-
-			iMoves = std::min(iMoves, pLoopUnit->movesLeft());
-		}
-	}
-	else
-	{
-		pFromPlot = GC.getMapINLINE().plotSoren(parent->m_iX, parent->m_iY);
-		FAssertMsg(pFromPlot != NULL, "FromPlot is not assigned a valid value");
-		pToPlot = GC.getMapINLINE().plotSoren(node->m_iX, node->m_iY);
-		FAssertMsg(pToPlot != NULL, "ToPlot is not assigned a valid value");
-
-		iStartMoves = parent->m_iData1;
-		iTurns = parent->m_iData2;
-
-		if (iStartMoves == 0)
-		{
-			iTurns++;
-		}
-
-		iMoves = MAX_INT;
-
-		pUnitNode = pSelectionGroup->headUnitNode();
-
-		while (pUnitNode != NULL)
-		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
-
-			iMoves = std::min(iMoves, std::max(0, ((iStartMoves > 0) ? iStartMoves : pLoopUnit->maxMoves()) - pToPlot->movementCost(pLoopUnit, pFromPlot)));
-		}
-	}
-
-	FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
-
-	node->m_iData1 = iMoves;
-	node->m_iData2 = iTurns;
-
-	return 1;
-#endif
 }
 
 

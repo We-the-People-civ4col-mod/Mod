@@ -2913,7 +2913,7 @@ TeamTypes CvUnit::getDeclareWarUnitMove(const CvPlot* pPlot) const
 	}
 
 	//check unit
-	if (canMoveInto(pPlot, true, true))
+	if (canMoveInto(*pPlot, true, true))
 	{
 		CvUnit* pUnit = pPlot->plotCheck(PUF_canDeclareWar, getOwnerINLINE(), isAlwaysHostile(pPlot), NO_PLAYER, NO_TEAM, PUF_isVisible, getOwnerINLINE());
 		if (pUnit != NULL)
@@ -2928,16 +2928,18 @@ TeamTypes CvUnit::getDeclareWarUnitMove(const CvPlot* pPlot) const
 	return NO_TEAM;
 }
 
-bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad) const
+/*  K-Mod. I've rearranged a few things to make the function slightly faster,
+and added "bAssumeVisible" which signals that we should check for units on
+the plot regardless of whether we can actually see. */
+bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad, bool bAssumeVisible, // advc: 1st param was a pointer
+	bool bDangerCheck) const // advc.001k
 {
-	FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
-
-	if (atPlot(pPlot))
+	if (atPlot(&kPlot))
 	{
 		return false;
 	}
 
-	if (pPlot->isImpassable())
+	if (kPlot.isImpassable())
 	{
 		if (!canMoveImpassable())
 		{
@@ -2964,26 +2966,27 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	CvArea *pPlotArea = pPlot->area();
 	TeamTypes ePlotTeam = pPlot->getTeam();
-	bool bCanEnterArea = canEnterArea(pPlot->getOwnerINLINE(), pPlotArea);
+	const bool bCanEnterArea = canEnterArea(pPlot->getOwnerINLINE(), pPlotArea);
+
 	if (bCanEnterArea)
-	{	
-		if (eFeature != NO_FEATURE)
+	{
+		if (kPlot.getFeatureType() != NO_FEATURE)
 		{
-			if (m_pUnitInfo->getFeatureImpassable(eFeature))
+			if (m_pUnitInfo->getFeatureImpassable(kPlot.getFeatureType()))
 			{
-				if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
+				if (DOMAIN_SEA != getDomainType() || kPlot.getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
 				{
 					return false;
 				}
 				// Erik: The AI may attempt to pathfind into unrevealed ocean plots so have have to check for the plot being revealed
-				if (DOMAIN_SEA == getDomainType() && !pPlot->isRevealed(getTeam(), false))
+				if (DOMAIN_SEA == getDomainType() && !kPlot.isRevealed(getTeam(), false))
 				{
 					return false;
 				}
 			}
 		}
-
-		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
+		
+		if (m_pUnitInfo->getTerrainImpassable(kPlot.getTerrainType()))
 		{
 			//WTP, ray, Large Rivers - START
 			// allow all Land Units to enter Large Rivers with Improvement
@@ -3201,16 +3204,16 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	switch (getDomainType())
 	{
 	case DOMAIN_SEA:
-		if (!pPlot->isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
+		if (!kPlot.isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
 		{
-			if (!pPlot->isFriendlyCity(*this, true) || !pPlot->isCoastalLand())
+			if (!kPlot.isFriendlyCity(*this, true) || !kPlot.isCoastalLand())
 			{
 				return false;
 			}
 		}
 
 		// PatchMod: Stop MoW's entering native settlements START
-		if (pPlot->isCity() && GET_PLAYER(pPlot->getOwnerINLINE()).isNative())
+		if (kPlot.isCity() && GET_PLAYER(kPlot.getOwnerINLINE()).isNative())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isEurope())
 			{
@@ -3219,7 +3222,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		}
 		// PatchMod: Stop MoW's entering native settlements END
 		// TAC - Pirates can't enter foreign settlements - START
-		if (pPlot->isCity() && !GET_PLAYER(pPlot->getOwnerINLINE()).isNative() && pPlot->getOwnerINLINE() != getOwnerINLINE())
+		if (kPlot.isCity() && !GET_PLAYER(kPlot.getOwnerINLINE()).isNative() && kPlot.getOwnerINLINE() != getOwnerINLINE())
 		{
 			if (AI_getUnitAIType() == UNITAI_PIRATE_SEA)
 			{
@@ -3233,7 +3236,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	case DOMAIN_LAND:
 
 		// R&R, ray, Start Logik for Peaks
-		if (pPlot->isPeak() && pPlot->getRouteType() == NO_ROUTE)
+		if (kPlot.isPeak() && kPlot.getRouteType() == NO_ROUTE)
 		{
 			// Anything else than Natives, Animals, Pioneers, Scouts, Native Mercenaries and Ranges cannot pass Peaks without Roads
 			/*
@@ -3251,7 +3254,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		// R&R, ray, End Logik for Peaks
 
 		// R&R, ray, Changes for Treasures, START
-		if (m_pUnitInfo->isTreasure() && pPlot->isGoody())
+		if (m_pUnitInfo->isTreasure() && kPlot.isGoody())
 		{
 			return false;
 		}
@@ -3278,16 +3281,16 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (getUnitInfo().getCargoSpace() == 6) // easisest way to identify train
 		{ 
 			//Check if the Plot has railroad
-			if (pPlot->getRouteType() != 2)
+			if (kPlot.getRouteType() != 2)
 			{
 				return false;
 			}
 		}
 		// R&R, ray, End Logic for Trains
 
-		if (pPlot->isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
+		if (kPlot.isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
 		{
-			if (bIgnoreLoad || plot()->isWater() || !canLoad(pPlot, false))
+			if (bIgnoreLoad || plot()->isWater() || !canLoad(&kPlot, false))
 			{
 				//WTP, ray, Large Rivers - START
 				// allowing all Land Units to enter Large Rivers
@@ -3313,7 +3316,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (!bAttack)
 	{
-		if (isNoCityCapture() && pPlot->isEnemyCity(*this))
+		if (isNoCityCapture() && kPlot.isEnemyCity(*this))
 		{
 			return false;
 		}
@@ -3331,12 +3334,12 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		if (bAttack || !canCoexistWithEnemyUnit(NO_TEAM))
 		{
-			if (!isHuman() || (pPlot->isVisible(getTeam(), false)))
+			if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
 			{
-				if (pPlot->isVisibleEnemyUnit(this) != bAttack)
+				if (kPlot.isVisibleEnemyUnit(this) != bAttack)
 				{
 					//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
-					if (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && pPlot->getPlotCity() && !isNoCityCapture())))
+					if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
 					{
 						return false;
 					}
@@ -3353,14 +3356,14 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 		if (!canCoexistWithEnemyUnit(NO_TEAM))
 		{
-			if (!isHuman() || pPlot->isVisible(getTeam(), false))
+			if (!isHuman() || kPlot.isVisible(getTeam(), false))
 			{
-				if (pPlot->isEnemyCity(*this))
+				if (kPlot.isEnemyCity(*this))
 				{
 					return false;
 				}
 
-				if (pPlot->isVisibleEnemyUnit(this))
+				if (kPlot.isVisibleEnemyUnit(this))
 				{
 					return false;
 				}
@@ -3370,8 +3373,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 	if (isHuman())
 	{
-		ePlotTeam = pPlot->getRevealedTeam(getTeam(), false);
-		bCanEnterArea = canEnterArea(pPlot->getRevealedOwner(getTeam(), false), pPlotArea);
+		ePlotTeam = kPlot.getRevealedTeam(getTeam(), false);
+		bCanEnterArea = canEnterArea(kPlot.getRevealedOwner(getTeam(), false), pPlotArea);
 	}
 
 	if (!bCanEnterArea)
@@ -3394,7 +3397,7 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (GET_TEAM(getTeam()).AI_isSneakAttackReady(ePlotTeam))
 			{
-				if (!(getGroup()->AI_isDeclareWar(pPlot)))
+				if (!(getGroup()->AI_isDeclareWar(&kPlot)))
 				{
 					return false;
 				}
@@ -3412,8 +3415,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		CyArgsList argsList;
 		argsList.add(getOwnerINLINE());	// Player ID
 		argsList.add(getID());	// Unit ID
-		argsList.add(pPlot->getX());	// Plot X
-		argsList.add(pPlot->getY());	// Plot Y
+		argsList.add(kPlot.getX());	// Plot X
+		argsList.add(kPlot.getY());	// Plot Y
 		long lResult=0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "unitCannotMoveInto", argsList.makeFunctionArgs(), &lResult);
 
@@ -3429,19 +3432,19 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 bool CvUnit::canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar) const
 {
-	return (canMoveInto(pPlot, false, bDeclareWar) || canMoveInto(pPlot, true, bDeclareWar));
+	return (canMoveInto(*pPlot, false, bDeclareWar) || canMoveInto(*pPlot, true, bDeclareWar));
 }
 
 
 bool CvUnit::canMoveThrough(const CvPlot* pPlot) const
 {
-	return canMoveInto(pPlot, false, false, true);
+	return canMoveInto(*pPlot, false, false, true);
 }
 
 
 void CvUnit::attack(CvPlot* pPlot, bool bQuick)
 {
-	FAssert(canMoveInto(pPlot, true));
+	FAssert(canMoveInto(*pPlot, true));
 	FAssert(getCombatTimer() == 0);
 
 	setAttackPlot(pPlot);
@@ -3540,7 +3543,7 @@ bool CvUnit::jumpToNearestValidPlot()
 
 		if (isValidPlot(pLoopPlot))
 		{
-			if (canMoveInto(pLoopPlot))
+			if (canMoveInto(*pLoopPlot))
 			{
 				FAssertMsg(!atPlot(pLoopPlot), "atPlot(pLoopPlot) did not return false as expected");
 
