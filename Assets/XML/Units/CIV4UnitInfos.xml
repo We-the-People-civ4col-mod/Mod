@@ -7457,42 +7457,6 @@
                     <YieldType>YIELD_FOOD</YieldType>
                     <iChange>3</iChange>
                 </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COCA_LEAVES</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_RED_PEPPER</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_COTTON</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_INDIGO</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_SUGAR</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_TOBACCO</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
-                <YieldChange>
-                    <YieldType>YIELD_HEMP</YieldType>
-                    <iChange>1</iChange>
-                </YieldChange>
             </YieldChanges>
             <BonusYieldChanges>
                 <BonusYieldChange>
@@ -22137,7 +22101,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iYieldMod>200</iYieldMod>
+                    <iYieldMod>100</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
@@ -22506,7 +22470,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iYieldMod>200</iYieldMod>
+                    <iYieldMod>100</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
@@ -23468,7 +23432,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_BELLS</YieldType>
-                    <iYieldMod>300</iYieldMod>
+                    <iYieldMod>200</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
@@ -25388,7 +25352,7 @@
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iYieldMod>300</iYieldMod>
+                    <iYieldMod>200</iYieldMod>
                 </YieldModifier>
             </YieldModifiers>
             <YieldDemands>
