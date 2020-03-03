@@ -131,7 +131,10 @@ public:
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
 	TeamTypes getDeclareWarUnitMove(const CvPlot* pPlot) const;
-	bool canMoveInto(const CvPlot* pPlot, bool bAttack = false, bool bDeclareWar = false, bool bIgnoreLoad = false) const;
+	bool canMoveInto(CvPlot const& kPlot, bool bAttack = false, bool bDeclareWar = false,					// Exposed to Python
+		bool bIgnoreLoad = false,
+		bool bAssumeVisible = true, // K-Mod
+		bool bDangerCheck = false) const; // advc.001k
 	bool canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar = false) const;
 	bool canMoveThrough(const CvPlot* pPlot) const;
 	void attack(CvPlot* pPlot, bool bQuick);

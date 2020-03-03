@@ -1934,12 +1934,38 @@ bool CvTeamAI::AI_isSneakAttackPreparing(TeamTypes eIndex) const
 	return ((AI_getWarPlan(eIndex) == WARPLAN_PREPARING_LIMITED) || (AI_getWarPlan(eIndex) == WARPLAN_PREPARING_TOTAL));
 }
 
-
+/*
 bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
 {
 	return (AI_isChosenWar(eIndex) && !(AI_isSneakAttackPreparing(eIndex)));
 }
+*/
 
+bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
+{
+	//return (AI_isChosenWar(eIndex) && !(AI_isSneakAttackPreparing(eIndex))); // BtS
+	// K-Mod (advc: originally in an overloaded function)
+	if (eIndex != NO_TEAM)
+		return !isAtWar(eIndex) && AI_isChosenWar(eIndex) && !AI_isSneakAttackPreparing(eIndex); // K-Mod
+	/*
+	for (TeamIter<MAJOR_CIV> it; it.hasNext(); ++it)
+	{
+		if (AI_isSneakAttackReady(it->getID()))
+			return true;
+	}
+	*/
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (AI_isSneakAttackReady((TeamTypes)iI))
+		{
+			return true;
+		}
+	}
+
+	return false;
+	// K-Mod end
+}
 
 void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar)
 {
@@ -1947,7 +1973,7 @@ void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar
 
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-
+		
 	if (AI_getWarPlan(eIndex) != eNewValue)
 	{
 		if (bWar || !isAtWar(eIndex))

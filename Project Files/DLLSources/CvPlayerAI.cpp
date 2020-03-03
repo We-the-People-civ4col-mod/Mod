@@ -11588,7 +11588,7 @@ int CvPlayerAI::AI_sumAttackerStrength(CvPlot* pPlot, CvPlot* pAttackedPlot, int
 							if (!bCheckCanAttack || bCanAttack)
 							{
 								if (!bCheckCanMove || pLoopUnit->canMove())
-									if (!bCheckCanMove || pAttackedPlot == NULL || pLoopUnit->canMoveInto(pAttackedPlot, /*bAttack*/ true, /*bDeclareWar*/ true))
+									if (!bCheckCanMove || pAttackedPlot == NULL || pLoopUnit->canMoveInto(*pAttackedPlot, /*bAttack*/ true, /*bDeclareWar*/ true))
 										if (eDomainType == NO_DOMAIN || pLoopUnit->getDomainType() == eDomainType)
 											strSum += pLoopUnit->currEffectiveStr(pAttackedPlot, pLoopUnit);
 							}
@@ -13156,7 +13156,7 @@ int CvPlayerAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensive
 							{
 								if (!(pLoopUnit->isInvisible(getTeam(), false)))
 								{
-									if (pLoopUnit->atPlot(pPlot) || pLoopUnit->canMoveInto(pPlot) || pLoopUnit->canMoveInto(pPlot, /*bAttack*/ true))
+									if (pLoopUnit->atPlot(pPlot) || pLoopUnit->canMoveInto(*pPlot) || pLoopUnit->canMoveInto(*pPlot, /*bAttack*/ true))
 									{
 										if (!bTestMoves)
 										{

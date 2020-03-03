@@ -1649,7 +1649,7 @@ void CvGame::updateColoredPlots()
 										// Erik: Ships implicitly have "nobadgoodies". TODO: Evaluate that this holds true for alls ships
 										if (pHeadSelectedUnit->isNoBadGoodies() || pHeadSelectedUnit->getDomainType() == DOMAIN_SEA)
 										{
-											if (pLoopPlot->isRevealedGoody(pHeadSelectedUnit->getTeam()) && (pHeadSelectedUnit->canMoveInto(pLoopPlot)))
+											if (pLoopPlot->isRevealedGoody(pHeadSelectedUnit->getTeam()) && (pHeadSelectedUnit->canMoveInto(*pLoopPlot)))
 											{
 												gDLL->getEngineIFace()->addColoredPlot(pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE(), GC.getColorInfo((ColorTypes)GC.getInfoTypeForString("COLOR_GREEN")).getColor(), PLOT_STYLE_CIRCLE, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
 											}
