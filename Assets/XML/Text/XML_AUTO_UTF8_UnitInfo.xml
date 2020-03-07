@@ -784,7 +784,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCA_LEAVES</Tag>
-        <English>Coca leaves</English>
+        <English>Coca Leaves</English>
+        <French>
+            <Text>Feuilles de coca</Text>
+            <Gender>Female</Gender>
+           <Plural>1</Plural>
+        </French>
+        <German>
+            <Text>Cocablätter</Text>
+            <Gender>Neuter</Gender>
+            <Plural>1</Plural>
+        </German>
+        <Italian>
+            <Text>Coca Leaves</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Coca Leaves</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCA_LEAVES_PEDIA</Tag>
@@ -805,10 +825,23 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCOA</Tag>
         <English>Cocoa</English>
+        <French>Cacao torréfié</French>
+        <German>
+            <Text>Kakao</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>Cocoa</Italian>
+        <Spanish>Cocoa</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCOA_FRUITS</Tag>
         <English>Cocoa pods</English>
+        <German>
+            <Text>Kakaofrüchte</Text>
+            <Gender>Female</Gender>
+            <Plural>1</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COCOA_FRUITS_PEDIA</Tag>
@@ -1177,6 +1210,11 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_COTTON</Tag>
         <English>Cotton</English>
+        <German>
+            <Text>Baumwolle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_COTTON_PEDIA</Tag>
