@@ -1379,10 +1379,14 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOCTOR</Tag>
         <English>Renowned Medic</English>
-		<French>Médecin réputé</French>
-		<German>Ausgebildeter Arzt</German>
-		<Italian>Renowned Medic</Italian>
-		<Spanish>Renowned Medic</Spanish>
+        <French>Médecin réputé</French>
+        <German>
+            <Text>Ausgebildeter Arzt:Ausgebildete Ärzte</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>Renowned Medic</Italian>
+        <Spanish>Renowned Medic</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOCTOR_PEDIA</Tag>
@@ -4139,7 +4143,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
-		<German>Königlicher Linieninfanterist</German>
+		<German>
+			<Text>Königlicher Linieninfanterist:Königliche Linieninfanteristen</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ROYAL_LINE_INFANTRY_PEDIA</Tag>
@@ -4434,6 +4442,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		<German>
+			<Text>Schaluppe:Schaluppen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_SLOOP_PEDIA</Tag>
@@ -5032,7 +5045,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
-		<German>Schatz</German>
+		<German>
+			<Text>Schatz:Schätze</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
 		<Italian>
 			<Text>Tesoro</Text>
 			<Gender>Male</Gender>
