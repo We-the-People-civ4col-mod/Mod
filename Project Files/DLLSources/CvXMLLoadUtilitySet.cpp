@@ -1226,7 +1226,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 				{
 					// First check if utf8 is in the filename.
 					// Vanilla has converted the path to lowercase at this point meaning it's not a case sensitive search.
-					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL;
+					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL || strstr(it->c_str(), "UTF8") != NULL;
 
 					// Now call the vanilla read code.
 					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str(), FStringListEnglish, FStringListCurrentLang, StringList);
