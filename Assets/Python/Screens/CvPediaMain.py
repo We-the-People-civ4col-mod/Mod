@@ -919,6 +919,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					list = []
 					list.append("Nightinggale")
 					list.append("Devolution")
+					list.append("raystuttgart")
 					
 					szTextData += localText.getText("TXT_KEY_CREDITS_WTP", ())
 					szTextData += localText.getText("[NEWLINE]", ())
