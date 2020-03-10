@@ -1,10 +1,50 @@
 We the People Changelog
 
-Version 2.7.2 Beta 2
+Version 2.7.3
 
-- Fixed corrupted string TXT_KEY_UNIT_WHALING_BOAT in German translation (introduced in beta 1)
+Improvements:
+- #309 Added message when uprest ends in a colony
+- added 4 more quests
 
-Version 2.7.2 Beta 1
+Balance:
+- #124 you can no longer just take whatever cargo you want from natives even if you have a permanent alliance
+- #138 hemp can now be produced on colony plot
+- #253 rebalanced rangers to make them more useful
+- #336 lost tribe random event is now less likely to trigger and not as rewarding
+- #354 trapper vs hunter balance redone
+- #356 cattle thieves random event will now steal less cattle
+- Kings sends less troops for declaring war and the enemy will also get reinforcements if you do
+- Rebalanced when a governor is offered and price
+- Rebalanced some profession bonuses for balance and consistency
+- Greatly reduced some overpowered expert bonuses. It's no longer possible to get +300% from an expert
+- Hurry cost now use 150% of cargo cost in Europe (was 125% from vanilla)
+- The 5 dock quest now gives a frigate instead of a ship-of-the-line
+
+Fixes:
+- #42 help text is no longer able to reveal the owner of units with hidden nationality
+- #44 #45 Custom house popup now clearly tells which yields will never be sold
+- #68 Political refugess can now become experts though learning by doing
+- #85 native settlement billboards (nametags) now display if the natives are too angry to trade
+- #120 greatly reduced usefulness of the found and abandon exploit
+- #160 natives will no longer build ships
+- #226 Defensive buildings (like stockade) would not always be displayed on the 3D map
+- #235 incorrect wording in event help text (like increased by -1)
+- #244 random event: selling a man to the natives should give you money, not cost you money
+- #252 Goto Port Royal button is now hidden if the ship can't go there
+- #257 ships will flee if possible instead of getting destroyed if they are in a colony when it's captured
+- #279 wrong revolution icon when displaying effects of leader traits
+- #289 incorrect display of culture in events (display bug only)
+- #336 animals and escapees can no longer be used to farm massive amounts of XP
+- #340 free ships (founding father bonus) can no longer spawn in the middle of the map
+- #348 added goto button for coastal ships. Still no goto Europe for obvious reasons
+- #358 Monasteries can now grow large even if they are outside your cultural borders
+- #361 Gold icon (top left) could be drawn on top of text about current turn and turn limit
+- Governor units no longer have a domestic need for 0.05 food/turn because it's always rounded to 0 anyway
+- Sophisticated trait no longer has inverted tax rate threshold modifier
+- Removed "Cannot declare war" text in help popup in some cases where it shouldn't have been included
+- Fixed many small issues with text display
+
+Version 2.7.2
 
 Translation Improvements:
 - Translators can now use UTF-8 instead of html escapes for non-ASCII characters (doesn't actually unlock all of unicode though)
