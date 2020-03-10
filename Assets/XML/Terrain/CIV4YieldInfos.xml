@@ -179,7 +179,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>-7</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>4</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>3</iAfricaSellPriceDifference>
