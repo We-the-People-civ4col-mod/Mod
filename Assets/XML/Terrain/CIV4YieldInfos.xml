@@ -220,7 +220,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>600</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>5</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>6</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>7</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -261,7 +261,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>600</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>5</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>6</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>7</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -302,7 +302,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>600</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>10</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>11</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -507,7 +507,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
@@ -631,7 +631,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -837,7 +837,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -919,7 +919,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
