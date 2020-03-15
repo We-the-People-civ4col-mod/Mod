@@ -8135,6 +8135,8 @@ static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
 
 void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<const TCHAR*>& kEffectNames) const
 {
+	kEffectNames.push_back("EFFECT_CITY_DISEASED");
+
 	if (isOccupation() && isVisible(getTeam(), false))
 	{
 		if (eCurZoom  == ZOOM_DETAIL)

@@ -456,5 +456,13 @@
             <fSpeed>500.0</fSpeed>
             <fArcValue>0.0</fArcValue>
         </EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CITY_DISEASED</Type>
+			<Description>Fumes for diseased citees</Description>
+			<fScale>4.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/cities_sickly_fumes/fx_cities_sickly_fumes.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
     </EffectInfos>
 </Civ4EffectInfos>

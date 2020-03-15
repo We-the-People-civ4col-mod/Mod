@@ -7671,6 +7671,12 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 {
 	szBuffer.clear();
 
+	// first-city / "government center icon"
+	if (GET_PLAYER(pCity->getOwner()).getPrimaryCity() == pCity)
+	{
+		szBuffer.append(CvWString::format(L"%c", gDLL->getSymbolID(STAR_CHAR)));
+	}
+
 	if (pCity->getMissionaryPlayer() != NO_PLAYER)
 	{
 		szBuffer.append(CvWString::format(L" %c", GC.getCivilizationInfo(GET_PLAYER(pCity->getMissionaryPlayer()).getCivilizationType()).getMissionaryChar()));
@@ -7695,6 +7701,11 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 
 	if (pCity->isVisible(GC.getGameINLINE().getActiveTeam(), true))
 	{
+		//if (pCity->getCityHealth() < 0)
+		{
+			szBuffer.append(CvWString::format(L"%c", gDLL->getSymbolID(UNHEALTHY_CHAR)));
+		}
+
 		//stored arms
 		CvWStringBuffer szTemp;
 		std::vector<int> aYieldShown(NUM_YIELD_TYPES, 0);
