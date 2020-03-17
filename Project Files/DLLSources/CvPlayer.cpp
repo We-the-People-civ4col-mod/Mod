@@ -284,10 +284,6 @@ void CvPlayer::init(PlayerTypes eID)
 	AI_init();
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
-
-
-	gDLL->getInterfaceIFace()->addTutorialMessage(getID(), CvWString("2.7.1"));
-
 }
 
 
