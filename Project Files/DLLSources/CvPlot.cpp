@@ -9814,7 +9814,8 @@ void CvPlot::doMonastery()
 	PlayerTypes MonasteryOwner = missionaryUnit->getOwner();
 	
 	//WTP, ray, fix for Monasteries not Growing by giving them Culture - START
-	if(getOwner() == NO_PLAYER)
+	//if(getOwner() == NO_PLAYER)
+	if(getOwner() != MonasteryOwner)
 	{
 		if (getCulture(MonasteryOwner) < GC.getDefineINT("FREE_CITY_CULTURE"))
 		{
