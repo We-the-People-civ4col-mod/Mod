@@ -85,18 +85,6 @@
         <English>????</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_BUILD_LUMBERMILL</Tag>
-        <English>Build a [LINK=IMPROVEMENT_LUMBERMILL]Lumbermill[\LINK]</English>
-        <French>Construire un [LINK=IMPROVEMENT_LUMBERMILL]La Scierie[\LINK]</French>
-        <German>[LINK=IMPROVEMENT_LUMBERMILL]Sägemühle[\LINK] bauen</German>
-        <Italian>Costruisci un [LINK=IMPROVEMENT_LUMBERMILL]Segheria[\LINK]</Italian>
-        <Spanish>Construir un [LINK=IMPROVEMENT_LUMBERMILL]Molino de Aserrar[\LINK]</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILD_LUMBERMILL_HELP</Tag>
-        <English>????</English>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_BUILD_MINE</Tag>
         <English>Build a [LINK=IMPROVEMENT_MINE]Mine[\LINK]</English>
         <French>construire une [LINK=IMPROVEMENT_MINE]mine[\LINK]</French>
