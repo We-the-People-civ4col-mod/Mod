@@ -1720,4 +1720,12 @@
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_TOWN_GUARD</Tag>
+        <English>Town Defense</English>
+        <French>Defense de ville</French>
+        <German>Stadtverteidigung</German>
+        <Italian>Town Defense</Italian>
+        <Spanish>Town Defense</Spanish>
+    </TEXT>
 </Civ4GameText>

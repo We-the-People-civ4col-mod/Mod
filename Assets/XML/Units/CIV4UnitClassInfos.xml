@@ -312,6 +312,11 @@
             <DefaultUnit>UNIT_TRAIN</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_VETERAN_TOWN_GUARD</Type>
+            <Description>TXT_KEY_UNIT_VETERAN_TOWN_GUARD</Description>
+            <DefaultUnit>UNIT_VETERAN_TOWN_GUARD</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_VETERAN</Type>
             <Description>TXT_KEY_UNITCLASS_VETERAN</Description>
             <DefaultUnit>UNIT_VETERAN_INFANTRY</DefaultUnit>
@@ -390,6 +395,11 @@
             <Type>UNITCLASS_MOUNTED_CONQUISTADOR</Type>
             <Description>TXT_KEY_UNITCLASS_MOUNTED_CONQUISTADOR</Description>
             <DefaultUnit>UNIT_MOUNTED_CONQUISTADOR</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_ROYAL_HALBERDIER</Type>
+            <Description>TXT_KEY_UNIT_ROYAL_HALBERDIER</Description>
+            <DefaultUnit>UNIT_ROYAL_HALBERDIER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ROYAL_LIGHT_INFANTRY</Type>

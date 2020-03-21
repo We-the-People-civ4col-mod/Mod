@@ -10090,6 +10090,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_VETERAN_TOWN_GUARD</Type>
+            <Button>,Art/colonization_atlas_military.dds,3,9</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_specialist.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.nif</NIF>
+            <KFM>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_ROYAL_LIGHT_INFANTRY</Type>
             <Button>,Art/colonization_atlas_military.dds,2,11</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
@@ -10114,6 +10131,23 @@
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Units/Imperial_Soldier/Imperial_Soldier.nif</NIF>
             <KFM>Art/Units/Imperial_Soldier/Imperial_Soldier.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_ROYAL_HALBERDIER</Type>
+            <Button>,Art/colonization_atlas_military.dds,3,11</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/infantry_line_specialist.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/Specialists/Town_Guard_Royal/Hardy_Pioneer_NT.nif</NIF>
+            <KFM>Art/Units/Special_Military/Specialists/Town_Guard/Hardy_Pioneer_NT.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
@@ -10192,6 +10226,60 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <!-- RaR Units Infantry -->
+        <!-- RaR Units Infantry Town Guard-->
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</Type>
+            <Button>,Art/colonization_atlas_military.dds,1,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_ordinary.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.00</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/town_guard/town_guard_ordinary/pikeman.nif</NIF>
+            <KFM>Art/Units/Special_Military/town_guard/town_guard_ordinary/pikeman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <!-- RaR Units Infantry Veteran Town Guard-->
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_TOWN_GUARD_VETERAN</Type>
+            <Button>,Art/colonization_atlas_military.dds,2,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_veteran.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.00</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/town_guard/town_guard_veteran/pikeman.nif</NIF>
+            <KFM>Art/Units/Special_Military/town_guard/town_guard_veteran/pikeman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <!-- RaR Units Infantry Royal Halberdier-->
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_TOWN_GUARD_ROYAL</Type>
+            <Button>,Art/colonization_atlas_military.dds,3,3</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_veteran.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.00</fInterfaceScale>
+            <NIF>Art/Units/Special_Military/town_guard/town_guard_royal/pikeman.nif</NIF>
+            <KFM>Art/Units/Special_Military/town_guard/town_guard_royal/pikeman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
         <!-- RaR Units Infantry Colonial Militia-->
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</Type>

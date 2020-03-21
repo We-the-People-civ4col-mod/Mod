@@ -400,6 +400,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -869,6 +873,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -1306,6 +1314,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -1696,6 +1708,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -2060,6 +2076,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -2374,6 +2394,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -2725,6 +2749,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -3242,6 +3270,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -3402,6 +3434,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -3654,6 +3690,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3897,6 +3937,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -4149,6 +4193,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4379,6 +4427,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -4613,6 +4665,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -4851,6 +4907,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -5086,6 +5146,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_VETERAN</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -5886,6 +5950,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6012,6 +6084,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -6041,6 +6117,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -6796,6 +6876,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6922,6 +7010,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -6951,6 +7043,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -7713,6 +7809,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -7839,6 +7943,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -7868,6 +7976,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8633,6 +8745,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -8759,6 +8879,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -8788,6 +8912,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -9552,6 +9680,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -9678,6 +9814,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -9707,6 +9847,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -10462,6 +10606,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10588,6 +10740,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -10617,6 +10773,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -11369,6 +11529,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -11495,6 +11663,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -11524,6 +11696,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -12276,6 +12452,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -12402,6 +12586,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -12431,6 +12619,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13204,6 +13396,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -13330,6 +13530,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -13359,6 +13563,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -14124,6 +14332,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14250,6 +14466,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -14279,6 +14499,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15033,6 +15257,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15159,6 +15391,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -15188,6 +15424,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15963,6 +16203,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -16089,6 +16337,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -16118,6 +16370,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16874,6 +17130,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17000,6 +17264,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -17029,6 +17297,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -17787,6 +18059,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17913,6 +18193,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -17942,6 +18226,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -18701,6 +18989,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -18827,6 +19123,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -18856,6 +19156,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -19612,6 +19916,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -19738,6 +20050,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -19767,6 +20083,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -20523,6 +20843,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -20649,6 +20977,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -20678,6 +21010,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -21443,6 +21779,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -21569,6 +21913,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -21598,6 +21946,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22334,6 +22686,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -22460,6 +22820,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -22489,6 +22853,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -23254,6 +23622,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -23380,6 +23756,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -23409,6 +23789,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -24160,6 +24544,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24286,6 +24678,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -24315,6 +24711,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25062,6 +25462,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -25188,6 +25596,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -25217,6 +25629,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25967,6 +26383,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26093,6 +26517,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -26122,6 +26550,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -26863,6 +27295,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26989,6 +27429,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -27018,6 +27462,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -27773,6 +28221,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -27899,6 +28355,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -27928,6 +28388,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -28679,6 +29143,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28805,6 +29277,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -28834,6 +29310,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -29582,6 +30062,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -29708,6 +30196,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -29737,6 +30229,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -30484,6 +30980,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -30610,6 +31114,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -30639,6 +31147,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31386,6 +31898,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -31512,6 +32032,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -31541,6 +32065,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -32282,6 +32810,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -32408,6 +32944,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -32437,6 +32977,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -33286,6 +33830,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33412,6 +33964,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -33441,6 +33997,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
