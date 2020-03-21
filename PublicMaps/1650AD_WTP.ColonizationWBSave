@@ -1,18 +1,5 @@
 Version=11
 BeginGame
-	Era=ERA_DISCOVERY
-	Calendar=CALENDAR_DEFAULT
-	Option=GAMEOPTION_LEAD_ANY_CIV
-	Option=GAMEOPTION_NEW_RANDOM_SEED
-	Option=GAMEOPTION_NO_MORE_VARIABLES_HIDDEN
-	Victory=VICTORY_REVOLUTION
-	Victory=VICTORY_DOMINATION
-	GameTurn=0
-	MaxTurns=0
-	MaxCityElimination=0
-	NumAdvancedStartPoints=720
-	TargetScore=0
-	StartYear=1650
 	Description=TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC
 	ModPath=
 	WBNorthAmericanNative=1
