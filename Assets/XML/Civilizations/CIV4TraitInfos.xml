@@ -635,6 +635,10 @@
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <iModifier>-20</iModifier>
                 </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>
             </ProfessionEquipmentModifiers>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
