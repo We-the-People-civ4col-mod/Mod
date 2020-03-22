@@ -19965,6 +19965,12 @@
             </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_VETERAN_DRAGOON</Type>
