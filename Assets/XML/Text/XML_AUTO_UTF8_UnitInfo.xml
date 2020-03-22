@@ -659,24 +659,64 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Misioneros jesuitas[COLOR_REVERT] son los candidatos perfectos si pretendéis convertir a los nativos a vuestro bando. Cualquier misión creada por un Misionero jesuita producirá [COLOR_UNIT_TEXT]Nativos conversos[COLOR_REVERT] mucho más rápido que la creada por un misionero normal.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_RUSSIAN_MISSIONARY</Tag>
+        <English>Orthodox Missionary:Orthodox Missionaries</English>
+        <French>
+            <Text>Missionnaire orthodox:Missionnaires jésuites orthodox</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Orthodoxer Missionar:Orthodoxe Missionare</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Missionario orthodox:Missionari orthodoxes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Misionero orthodox:Misioneros orthodoxes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RUSSIAN_MISSIONARY_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Orthodox Missionaries[COLOR_REVERT] are the perfect candidates if you are looking to create [LINK=CONCEPT_MISSIONARIES]Missions[\LINK] to convert [LINK=CONCEPT_NATIVES]Natives[\LINK] to your side. Any mission created by such a unit will produce [LINK=UNIT_CONVERTED_NATIVE]Converted Natives[\LINK] significantly faster than a mission created by a normal colonist, when assigned to the [LINK=PROFESSION_MISSIONARY]Missionary[\LINK] profession. They also perform better when working a [LINK=IMPROVEMENT_MONASTERY]Monastery[\LINK].[PARAGRAPH:1]Orthodox Missionaries are only available to the [LINK=CIVILIZATION_RUSSIA]Russian Nation[\LINK]. [PARAGRAPH:1]Orthodox Missionaries cannot be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], but they occasionally appear in the European docks as [LINK=CONCEPT_IMMIGRATION]Immigrants[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_UNIVERSITY]University[\LINK] or one of its upgrades.</English>
+        <French>Les [COLOR_UNIT_TEXT]missionnaires jésuites[COLOR_REVERT], les [COLOR_UNIT_TEXT]missionnaires orthodox[COLOR_REVERT] et les [COLOR_UNIT_TEXT]évangélistes[COLOR_REVERT] sont les candidats parfaits si vous cherchez à créer des missions pour rallier les indigènes à vos positions. Les missions qu'ils créent produisent des [COLOR_UNIT_TEXT]indigènes convertis[COLOR_REVERT] à un rythme bien plus élevé que celui d'un missionnaire normal.</French>
+        <German>Die katholischen [COLOR_UNIT_TEXT]Jesuitenmissionare[COLOR_REVERT], die [COLOR_UNIT_TEXT]ORthodoxen Missionare[COLOR_REVERT] und die protestantischen [COLOR_UNIT_TEXT]Evangelisten[COLOR_REVERT] sind die Experteneinheiten für den Beruf des Missionars. Schickt man sie als Missionare in ein Ureinwohnerdorf, können sie dort eine Mission errichten, die doppelt so schnell Konvertierte Ureinwohner hervorbringt als herkömmliche Missionen. Außerdem erhöht ihr Einsatz die Wahrscheinlichkeit, dass die Errichtung einer Mission gelingt, um 50%.[NEWLINE][NEWLINE][COLOR_UNIT_TEXT]Missionare[COLOR_REVERT] können in Ureinwohnerdörfern christliche Missionen errichten, die dort automatisch [COLOR_UNIT_TEXT]Konvertierte Ureinwohner[COLOR_REVERT] entstehen lassen, über die man frei verfügen kann. Jede neue Missionierung dauert in dem jeweiligen Ureinwohnerdorf etwas länger als die vorangegangene.[NEWLINE][NEWLINE]Die Errichtung der ersten Mission erfolgt stets problemlos. Später sinkt mit jeder neuen Mission, die man bei einer beliebigen Ureinwohnernation errichtet, die Wahrscheinlichkeit, dass die Errichtung der nächsten Mission gelingt. Scheitert die Errichtung einer Mission, belastet dies die diplomatischen Beziehungen zu dieser Ureinwohnernation.[NEWLINE][NEWLINE]Einen Missionar erhält man, indem man einem beliebigen Bürger den Beruf des Missionars zuweist. Dies ist im europäischen Heimathafen möglich oder in einer der eigenen Siedlungen.[NEWLINE][NEWLINE]Existiert in einem Indianerdorf bereits eine Mission einer anderen europäischen Partei, kann man sie mit einem eigenen Missionar verdrängen und sie in eine eigene Mission umwandeln. Die Konkurrenz kann das natürlich auch.[NEWLINE][NEWLINE]Missionare können nicht kämpfen. Werden sie von einer feindlichen Einheit angegriffen, geraten sie in Gefangenschaft und stehen fortan dem Gegner zur Verfügung.</German>
+        <Italian>I [COLOR_UNIT_TEXT]missionari orthodox[COLOR_REVERT] sono i candidati perfetti, se stai cercando qualcuno che crei missioni per convertire i nativi e portarli dalla tua parte. Le missioni create dai missionari gesuiti produrranno [COLOR_UNIT_TEXT]nativi convertiti[COLOR_REVERT] molto più rapidamente di quelle create da un missionario normale.</Italian>
+        <Spanish>Los [COLOR_UNIT_TEXT]Misioneros orthodox[COLOR_REVERT] son los candidatos perfectos si pretendéis convertir a los nativos a vuestro bando. Cualquier misión creada por un Misionero jesuita producirá [COLOR_UNIT_TEXT]Nativos conversos[COLOR_REVERT] mucho más rápido que la creada por un misionero normal.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RUSSIAN_MISSIONARY_PEDIA</Tag>
+        <English>While many of the intrepid souls that stepped into the American wilderness were soldiers and warriors, nearly as many were men of god, marching into the unknown to spread their faith. Part diplomat, part explorer, the Missionary in many cases became the representative for his fellow Europeans, developing contacts, forming alliances, and all the while actively spreading Christianity to draw the traditions of the New World a little closer to those of the Old.</English>
+        <French>Parmi les âmes intrépides qui s'aventurent dans les régions sauvages américaines, il y a certes des soldats et des guerriers, mais aussi des hommes de Dieu, plongeant vers l'inconnu pour propager leur foi. Moitié diplomate, moitié explorateur, le Missionnaire sert souvent d'émissaire pour le compte des Européens, nouant des contacts et formant des alliances tout en propageant activement le christianisme pour rapprocher encore davantage les traditions du Nouveau monde de celles de l'Ancien.</French>
+        <German>Auch wenn viele der unerschrockenen Seelen, die in die amerikanische Wildnis zogen, Soldaten und Krieger waren, gab es fast ebenso viele Männer Gottes, die in das große Unbekannte schritten, um ihren Glauben zu verbreiten. Der Missionar, teils Diplomat, teils Entdecker, wurde oft der Repräsentant der übrigen Europäer, stellte Kontakte her, formte Allianzen und verbreitete gleichzeitig noch das Christentum, um die Traditionen der Neuen Welt denen der Alten anzunähern.</German>
+        <Italian>Mentre molti degli intrepidi uomini che si fecero avanti sui selvaggi territori americani erano soldati e guerrieri, quasi altrettanti erano uomini di Dio, che marciavano verso l'ignoto per diffondere la propria fede. Parte diplomatici, parte esploratori, i missionari divennero in molti casi i rappresentanti degli europei sviluppando contatti, formando alleanze e contemporaneamente diffondendo il cristianesimo per avvicinare le tradizioni del Nuovo Mondo a quelle del vecchio.</Italian>
+        <Spanish>Aunque muchos de los intrépidos espíritus que hollaron las tierras vírgenes americanas eran soldados y guerreros, casi hubo la misma cantidad de hombres de Dios que se adentraron en lo desconocido para extender su fe. Parte diplomático y parte explorador, el Misionero en muchos casos se convirtió en el representante de sus coetáneos europeos y establecía contactos y formaba alianzas, todo mientras propagaba activamente el Cristianismo para acercar las tradiciones del Nuevo Mundo un poco más a las del Antiguo.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS</Tag>
         <English>Cigars</English>
-		<French>
-			<Text>Cigare:Cigares</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>Zigarren</German>
-		<Italian>
-			<Text>Sigari</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Puros</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Spanish>
+        <French>
+            <Text>Cigare:Cigares</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Zigarren</German>
+        <Italian>
+            <Text>Sigari</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Puros</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS_PEDIA</Tag>
@@ -3714,28 +3754,68 @@
         <Spanish>Los [COLOR_UNIT_TEXT]Predicadores exaltados[COLOR_REVERT] son la mejor fuente de [COLOR_HIGHLIGHT_TEXT]Cruces[COLOR_REVERT] que puede querer una colonia. Asignar a uno de ellos a la profesión de Predicador en una [COLOR_BUILDING_TEXT]Iglesia[COLOR_REVERT] o [COLOR_BUILDING_TEXT]Catedral[COLOR_REVERT] doblará el número de [COLOR_HIGHLIGHT_TEXT]Cruces[COLOR_REVERT] que produzca ese edificio.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_RUSSIAN_PRIEST</Tag>
+        <English>Orthodox Priest:Orthodox Priests</English>
+        <French>
+            <Text>Prêtre orthodox:Prêtres orthodox</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Orthodoxer Priester:Orthodoxe Priester</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Devout Priest:Devout Priests</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Devout Priest:Devout Priests</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RUSSIAN_PRIEST_PEDIA</Tag>
+        <English>It is the charge and duty of a colony's Preachers to lead the faithful, convert the heathen and ensure that none stray from the path of righteousness. Relying on equal parts raw, charged emotion and learned scholarly argument, Preachers are a powerful draw for the faithful, even if they must cross an ocean to listen to them speak. Bringing such a Preacher into a colony is a certain way to greatly increase its immigration.</English>
+        <French>Les Prédicateurs ont la charge et le devoir de mener les fidèles, de convertir les païens et de s'assurer qu'aucun d'eux ne s'éloigne de la voie de la vertu. S'appuyant tantôt sur un discours chargé d'émotion, tantôt sur une argumentation érudite, les prédicateurs ont une grande capacité à attirer les fidèles, qui n'hésiteront pas à traverser des océans pour les écouter parler. En incorporant un pasteur dans votre colonie, vous êtes certain d'augmenter considérablement son immigration.</French>
+        <German>Es ist die Aufgabe und die Verantwortung des Predigers einer Kolonie, die Gläubigen zu führen, die Heiden zu bekehren und sicherzustellen, dass niemand vom Pfad der Gerechten abkommt. Prediger, die sich zum Teil auf raue, aufgeladene Emotion und zum Teil auf gelehrte Argumente stützen, ziehen Gläubige an, selbst wenn die einen Ozean überqueren müssen, um ihnen zuhören zu können. Einen solchen Prediger in eine Kolonie zu bringen ist eine sichere Methode die Immigration wesentlich zu erhöhen.</German>
+        <Italian>È compito e dovere del predicatore di una colonia guidare i fedeli, convertire i pagani e assicurare che nessuno si allontani dal sentiero della virtù. I predicatori, che si affidano in parti uguali alle nude e potenti emozioni e alle discussioni istruite, sono un potente richiamo per i fedeli, anche se devono attraversare un oceano per sentirli parlare. Portare un tale predicatore in una colonia è un modo sicuro per stimolarne notevolmente l'immigrazione.</Italian>
+        <Spanish>Es el deber y la obligación de los Predicadores de una colonia guiar a los fieles, convertir a los infieles y procurar que nadie se aparte del buen camino. Recurriendo casi a partes iguales en las puras cargas de emoción y en los argumentos eruditos, los Predicadores son una atracción muy poderosa para los fieles, aunque tengan que cruzar todo un océano para oírlos hablar. Traer a un Predicador así a una colonia es una manera segura de conseguir que aumente la emigración a ésta.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_RUSSIAN_PRIEST_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Orthodox Priests[COLOR_REVERT] are one of the best sources of [LINK=YIELD_CROSSES]Crosses[\LINK] a colony could ask for. Assigning one of these to the [LINK=PROFESSION_PREACHER]Preacher[\LINK] profession in a [LINK=BUILDING_CHAPEL]Chapel[\LINK] or one of ite upgrades will double the number of Crosses that building produces.[PARAGRAPH:1]Orthodox Priests are only available to the [LINK=CIVILIZATION_RUSSIA]Russian Nations[\LINK]. [PARAGRAPH:1]Orthodox Priests can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_UNIVERSITY]University[\LINK] or one of its upgrades.</English>
+        <French>[COLOR_UNIT_TEXT]Orthodox Priests[COLOR_REVERT] are one of the best sources of [LINK=YIELD_CROSSES]Crosses[\LINK] a colony could ask for. Assigning one of these to the [LINK=PROFESSION_PREACHER]Preacher[\LINK] profession in a [LINK=BUILDING_CHAPEL]Chapel[\LINK] or one of ite upgrades will double the number of Crosses that building produces.[PARAGRAPH:1]Orthodox Priests are only available to the [LINK=CIVILIZATION_RUSSIA]Russian Nations[\LINK]. [PARAGRAPH:1]Orthodox Priests can be recruited in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]Trained[\LINK] in a colony with a [LINK=BUILDING_UNIVERSITY]University[\LINK] or one of its upgrades.</French>
+        <German>Viele Europäer sind in die Neue Welt ausgewandert, weil sie hofften, dort ungehindert ihre religiöse Überzeugung entfalten zu können. Dieses historische Motiv wird durch das Spielfeature der Kreuze nachgebildet.[NEWLINE][NEWLINE]Jeweils ein Kreuz entsteht pro Spielrunde automatisch in jeder Siedlung. Baut man eine [COLOR_BUILDING_TEXT]Kirche[COLOR_REVERT] und teilt ihr ein bis zwei Bürger im Beruf des [COLOR_UNIT_TEXT]Predigers[COLOR_REVERT] zu, entstehen zusätzliche Kreuze. Baut man anschließend eine [COLOR_BUILDING_TEXT]Kathedrale[COLOR_REVERT], entstehen doppelt so viele Kreuze pro predigendem Bürger. Setzt man statt eines einfachen Bürgers einen [COLOR_UNIT_TEXT]Mitreißenden Prediger[COLOR_REVERT] oder [COLOR_UNIT_TEXT]Katholischen Priester[COLOR_REVERT] oder [COLOR_UNIT_TEXT]Orthodoxen Priester[COLOR_REVERT] ein, verdoppelt dies ebenfalls die Zahl der entstehenden Kreuze. Schuldknechte, Konvertierte Ureinwohner und Kleinkriminelle erzeugen dagegen weniger Kreuze.[NEWLINE][NEWLINE]Im Europabildschirm kann man ablesen, wieviele Kreuze bislang zusammengekommen sind. Dabei werden die Kreuze aller Siedlungen addiert. Ist eine bestimmte Zahl von Kreuzen erreicht, hat man einen Europäer davon überzeugt, sein Heil in der Neuen Welt zu suchen. Er steht dann in Europa zur Überfahrt bereit. Mit jedem neuen Emigranten steigt die Zahl der Kreuze, die man gespart haben muss, um einen weiteren Auswanderer zu gewinnen.[NEWLINE][NEWLINE]Im Europabildschirm sind immer drei potentielle Emigranten zu sehen. Wird ein neuer Auswanderer freigeschaltet, wird er zufällig aus ihrem Kreis bestimmt. Durch Zahlung einer Geldprämie kann man die Freischaltung beschleunigen und dabei auch gezielt eine der drei Einheiten auswählen. Die Höhe dieser Geldprämie hängt davon ab, wieviele Kreuze noch fehlen.</German>
+        <Italian>I [COLOR_UNIT_TEXT]predicatori fanatici[COLOR_REVERT] sono la migliore fonte di [COLOR_HIGHLIGHT_TEXT]croci[COLOR_REVERT] che una colonia potrebbe volere. Assegnandone uno alla professione di predicatore in una [COLOR_BUILDING_TEXT]chiesa[COLOR_REVERT] o [COLOR_BUILDING_TEXT]cattedrale[COLOR_REVERT] si raddoppia il numero di [COLOR_HIGHLIGHT_TEXT]croci[COLOR_REVERT] prodotte da quell'edificio!</Italian>
+        <Spanish>Los [COLOR_UNIT_TEXT]Predicadores exaltados[COLOR_REVERT] son la mejor fuente de [COLOR_HIGHLIGHT_TEXT]Cruces[COLOR_REVERT] que puede querer una colonia. Asignar a uno de ellos a la profesión de Predicador en una [COLOR_BUILDING_TEXT]Iglesia[COLOR_REVERT] o [COLOR_BUILDING_TEXT]Catedral[COLOR_REVERT] doblará el número de [COLOR_HIGHLIGHT_TEXT]Cruces[COLOR_REVERT] que produzca ese edificio.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_PRIVATEER</Tag>
         <English>Privateer:Privateers</English>
-		<French>
-			<Text>Corsaire:Corsaires</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Kaperfahrer:Kaperfahrer</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</German>
-		<Italian>
-			<Text>Nave corsara:Navi corsare</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Corsario:Corsarios</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
+        <French>
+            <Text>Corsaire:Corsaires</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Kaperfahrer:Kaperfahrer</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Nave corsara:Navi corsare</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Corsario:Corsarios</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PRIVATEER_PEDIA</Tag>

@@ -996,6 +996,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_RUSSIAN_MISSIONARY</Type>
+            <Button>,Art/colonization_atlas_units.dds,6,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_russion_missionary.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Units/Settler/Russian_Orthodox_missionary/missionary.nif</NIF>
+            <KFM>Art/Units/Settler/Russian_Orthodox_missionary/missionary.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_MISSIONARY</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Missionary_Jesuit.dds</FullLengthIcon>
@@ -1037,6 +1054,23 @@
             <fInterfaceScale>0.9</fInterfaceScale>
             <NIF>Art/Units/Settler/catholic_priest/christianmissionary.nif</NIF>
             <KFM>Art/Units/Settler/catholic_priest/christianmissionary.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_RUSSIAN_PRIEST</Type>
+            <Button>,Art/colonization_atlas_units.dds,7,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_Russian_bishop.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Units/Settler/Russian_Orthodox_Bishop/christianmissionary.nif</NIF>
+            <KFM>Art/Units/Settler/Russian_Orthodox_Bishop/christianmissionary.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>

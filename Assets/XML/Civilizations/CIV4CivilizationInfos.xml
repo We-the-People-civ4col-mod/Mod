@@ -3221,7 +3221,7 @@
             <Units>
                 <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-                    <UnitType>UNIT_PRIEST</UnitType>
+                    <UnitType>UNIT_RUSSIAN_PRIEST</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
@@ -3246,6 +3246,10 @@
                 <Unit>
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
+                    <UnitType>UNIT_RUSSIAN_MISSIONARY</UnitType>
                 </Unit>
             </Units>
             <Professions>
