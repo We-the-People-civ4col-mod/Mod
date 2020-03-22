@@ -19624,10 +19624,10 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>NONE</Capture>
-            <Combat>UNITCOMBAT_GUN</Combat>
+            <Combat>NONE</Combat>
             <Domain>DOMAIN_LAND</Domain>
             <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
-            <DefaultProfession>NONE</DefaultProfession>
+            <DefaultProfession>PROFESSION_LINE_INFANTRY</DefaultProfession>
             <Invisible>NONE</Invisible>
             <SeeInvisible>NONE</SeeInvisible>
             <Description>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Description>
@@ -19642,7 +19642,7 @@
             <bQuickCombat>0</bQuickCombat>
             <bRivalTerritory>0</bRivalTerritory>
             <bMilitaryProduction>0</bMilitaryProduction>
-            <bFound>0</bFound>
+            <bFound>1</bFound>
             <bInvisible>0</bInvisible>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <bCanMoveImpassable>0</bCanMoveImpassable>
@@ -19666,7 +19666,108 @@
                 </UnitAI>
             </UnitAIs>
             <NotUnitAIs/>
-            <Builds/>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLASTERED_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FARM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MINE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_VINEYARD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST2</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_LODGE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COCOA_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_TRAPPER_HUT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FORT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MONASTERY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_DRAIN_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_GRASS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SAVANNAH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
             <ProductionTraits/>
@@ -19689,14 +19790,14 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>10</iCombat>
+            <iCombat>1</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>0</iWithdrawalProb>
-            <iCityAttack>0</iCityAttack>
+            <iCityAttack>30</iCityAttack>
             <iCityDefense>0</iCityDefense>
             <iHillsAttack>0</iHillsAttack>
-            <iHillsDefense>0</iHillsDefense>
+            <iHillsDefense>10</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <TerrainAttacks/>
             <TerrainDefenses/>
@@ -19717,7 +19818,7 @@
                     <iYieldDemand>30</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
-                    <YieldType>YIELD_CIGARS</YieldType>
+                    <YieldType>YIELD_LEATHER</YieldType>
                     <iYieldDemand>30</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
@@ -19753,7 +19854,84 @@
                     <iRangedWaveSize>0</iRangedWaveSize>
                     <UnitMeshGroup>
                         <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_VETERAN_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_VETERAN_COLONIAL_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_VETERAN_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>

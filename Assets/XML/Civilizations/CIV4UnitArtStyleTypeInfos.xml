@@ -70,7 +70,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DANISH_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -370,7 +370,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_DUTCH_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -670,7 +670,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_ENGLAND_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -970,7 +970,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_FRANCE_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -1270,7 +1270,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_PORTUGAL_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -1570,7 +1570,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_RUSSIA_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -1870,7 +1870,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SPAIN_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>
@@ -2170,7 +2170,7 @@
                 </StyleUnit>
                 <StyleUnit>
                     <UnitType>UNIT_EUROPEAN_LINE_INFANTRY</UnitType>
-                    <ProfessionType>NONE</ProfessionType>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <UnitMeshGroup>
                         <ArtDefineTag>ART_DEF_UNIT_SWEDISH_VETERAN_LINE_INFANTRY</ArtDefineTag>
                     </UnitMeshGroup>

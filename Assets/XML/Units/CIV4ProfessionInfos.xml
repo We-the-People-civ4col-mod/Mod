@@ -2689,7 +2689,7 @@
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,7</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_VETERAN</ExpertUnit>
+            <ExpertUnit>UNITCLASS_EUROPEAN_LINE_INFANTRY</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
