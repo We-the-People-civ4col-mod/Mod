@@ -1030,6 +1030,40 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_EXPERT_TRADER</Type>
+            <Button>,Art/colonization_atlas_units.dds,5,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/expert_trader.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.85</fInterfaceScale>
+            <NIF>Art/Units/Settler/Expert_Trader/master_distiller.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_PROFESSION_TRADER</Type>
+            <Button>,Art/colonization_atlas_units.dds,4,5</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/prof_trader.dds</FullLengthIcon>
+            <fScale>0.50</fScale>
+            <fInterfaceScale>0.85</fInterfaceScale>
+            <NIF>Art/Units/Settler/profession_trader/master_distiller.nif</NIF>
+            <KFM>Art/Units/Settler/profession_trader/master_distiller.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PREACHER</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/FirebrandPreacher.dds</FullLengthIcon>
