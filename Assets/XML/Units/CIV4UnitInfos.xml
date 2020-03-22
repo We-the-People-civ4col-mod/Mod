@@ -13638,7 +13638,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>0</iCombat>
+            <iCombat>1</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>0</iWithdrawalProb>
@@ -16994,7 +16994,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>1000</iEuropeCost>
+            <iEuropeCost>600</iEuropeCost>
             <iEuropeCostIncrease>100</iEuropeCostIncrease>
             <iImmigrationWeight>10</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -17008,7 +17008,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>0</iCombat>
+            <iCombat>1</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>0</iWithdrawalProb>
@@ -17271,7 +17271,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>0</iCombat>
+            <iCombat>1</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>0</iWithdrawalProb>
@@ -19676,7 +19676,7 @@
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iEuropeCost>1200</iEuropeCost>
-            <iEuropeCostIncrease>50</iEuropeCostIncrease>
+            <iEuropeCostIncrease>100</iEuropeCostIncrease>
             <iImmigrationWeight>0</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
             <iMinAreaSize>-1</iMinAreaSize>

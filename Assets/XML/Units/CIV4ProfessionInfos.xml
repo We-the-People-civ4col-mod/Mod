@@ -2565,7 +2565,7 @@
             <bCanFound>1</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
-            <iCombatChange>2</iCombatChange>
+            <iCombatChange>3</iCombatChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
@@ -2654,7 +2654,7 @@
             <bCanFound>1</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
-            <iCombatChange>8</iCombatChange>
+            <iCombatChange>9</iCombatChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
