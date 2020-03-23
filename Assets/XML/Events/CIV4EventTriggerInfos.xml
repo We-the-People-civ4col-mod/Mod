@@ -2198,7 +2198,7 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>200</iWeight>
