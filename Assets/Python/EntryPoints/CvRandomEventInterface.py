@@ -814,7 +814,7 @@ def canTriggerPeasantWarPrep(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
-	iStartYear = 1495
+	#iStartYear = 1495
 	if not player.isPlayable() or not player2.isPlayable() :
 		return false
 	if not player.isHuman():
@@ -822,14 +822,15 @@ def canTriggerPeasantWarPrep(argsList):
 	king = gc.getPlayer(player.getParent())
 	if not king.isEurope():
 		return false
-	iCurrentYear = CyGame().getGameTurnYear()
-	if iCurrentYear < iStartYear :
-		return false
-	iChance = gc.getGame().getSorenRandNum(100, "(c) TAC 2010 Events")
-	iChance = iChance + 10 * (iCurrentYear-iStartYear)+5
-	if iChance > 100 :
-		return true
-	return false
+	#iCurrentYear = CyGame().getGameTurnYear()
+	#if iCurrentYear < iStartYear :
+	#	return false
+	#iChance = gc.getGame().getSorenRandNum(100, "(c) TAC 2010 Events")
+	#iChance = iChance + 10 * (iCurrentYear-iStartYear)+5
+	#if iChance > 100 :
+	#	return true
+	#return false
+	return true
 
 def applyPeasantWarPrep(argsList):
 	kTriggeredData = argsList[1]
@@ -2871,7 +2872,19 @@ def isNativeVillage(argsList):
 	if not gc.getPlayer(plot.getOwner()).isNative():
 		return false
 	return true
-	
+
+def isNativeVillageAndHuman(argsList):
+	pTriggeredData = argsList[0]
+	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
+	player = gc.getPlayer(pTriggeredData.ePlayer)
+	if not player.isHuman():
+		return false
+	if not plot.isCity():
+		return false
+	if not gc.getPlayer(plot.getOwner()).isNative():
+		return false
+	return true
+
 ######## Coca Events ###########
 def canTriggerCocaEvent(argsList):
 	ePlayer = argsList[1]

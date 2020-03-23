@@ -284,6 +284,10 @@ void CvPlayer::init(PlayerTypes eID)
 	AI_init();
 
 	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+
+
+	gDLL->getInterfaceIFace()->addTutorialMessage(getID(), CvWString("2.7.1"));
+
 }
 
 
@@ -14091,10 +14095,12 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	// WTP, ray, fix for allowing some nice events - START
 	// fixed to trigger some nice City events with still using NumUnits
 	// if (NULL == pUnit && kTrigger.getNumUnits() > 0)
-	// {
-	// 	return NULL;
-	// }
-	if (kTrigger.getNumUnits() > 0)
+	if (NULL == pUnit && kTrigger.getNumUnits() > 0 && kTrigger.isUnitsOnPlot())
+	{
+		return NULL;
+	}
+
+	else if (kTrigger.getNumUnits() > 0)
 	{
 		int iNumUnits = 0;	
 		

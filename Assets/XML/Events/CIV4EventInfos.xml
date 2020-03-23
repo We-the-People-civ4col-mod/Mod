@@ -3995,13 +3995,13 @@
             <AdditionalEvents>
                 <EventChance>
                     <Event>EVENT_END_WINTER</Event>
-                    <iEventChance>80</iEventChance>
+                    <iEventChance>100</iEventChance>
                 </EventChance>
             </AdditionalEvents>
             <EventTimes>
                 <EventTime>
                     <Event>EVENT_END_WINTER</Event>
-                    <iEventTime>10</iEventTime>
+                    <iEventTime>20</iEventTime>
                 </EventTime>
             </EventTimes>
             <ClearEvents/>

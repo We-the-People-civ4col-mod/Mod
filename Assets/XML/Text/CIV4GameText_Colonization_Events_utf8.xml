@@ -442,11 +442,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINTER</Tag>
-        <English>A cold winter in our European homeland.</English>
-        <French>Notre patrie en Europe subit un hiver particulièrement froid.</French>
-        <German>Ein bitterkalter Winter in unserer europäischen Heimat lässt die Menschen frieren.</German>
-        <Italian>A cold winter in our European homeland.</Italian>
-        <Spanish>A cold winter in our European homeland.</Spanish>
+        <English>Several years of cold winters in our European homeland.</English>
+        <French>Notre patrie en Europe subit du ans de hiver particulièrement froid.</French>
+        <German>Mehrere Jahre in Folge mit bitterkalten Wintern in unserer europäischen Heimat lassen die Menschen frieren.</German>
+        <Italian>Several years of cold winters in our European homeland</Italian>
+        <Spanish>Several years of cold winters in our European homeland</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WINTER_HELP</Tag>
