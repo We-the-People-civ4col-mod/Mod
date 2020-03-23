@@ -21206,7 +21206,7 @@
             <iHealth>0</iHealth>
             <UnitClass>UNITCLASS_BISHOP</UnitClass>
             <iNumFreeUnits>1</iNumFreeUnits>
-            <bDisbandUnit>1</bDisbandUnit>
+            <bDisbandUnit>0</bDisbandUnit>
             <iUnitExperience>0</iUnitExperience>
             <iUnitImmobileTurns>0</iUnitImmobileTurns>
             <UnitPromotion/>
