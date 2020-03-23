@@ -1522,6 +1522,7 @@ enum DllExport CommandTypes
 	COMMAND_IGNORE_DANGER,	// TAC - Trade Routes Advisor - koma13
 	COMMAND_SAIL_TO_AFRICA, /*** TRIANGLETRADE 10/15/08 by DPII ***/
 	COMMAND_SAIL_TO_PORT_ROYAL, // R&R, ray, Port Royal
+	COMMAND_MERGE_TREASURES, // WTP, merge treasures, of Raubwuerger
 
 #ifdef _USRDLL
 	NUM_COMMAND_TYPES

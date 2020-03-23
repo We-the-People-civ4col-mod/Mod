@@ -983,6 +983,7 @@ void CyEnumsPythonInterface()
 		.value("COMMAND_IGNORE_DANGER", COMMAND_IGNORE_DANGER)	// TAC - Trade Routes Advisor - koma13
 		.value("COMMAND_SAIL_TO_AFRICA", COMMAND_SAIL_TO_AFRICA) /*** TRIANGLETRADE 10/15/08 by DPII ***/
 		.value("COMMAND_SAIL_TO_PORT_ROYAL", COMMAND_SAIL_TO_PORT_ROYAL) // R&R, ray, Port Royal
+		.value("COMMAND_MERGE_TREASURES", COMMAND_MERGE_TREASURES) // WTP, merge Treasures, of Raubwuerger
 		.value("NUM_COMMAND_TYPES", NUM_COMMAND_TYPES)
 		;
 	python::enum_<ControlTypes>("ControlTypes")

@@ -188,6 +188,15 @@ public:
 	int getStirUpSuccessPercent() const;
 	// R&R, ray , Stirring Up Natives - END
 
+	// WTP, merge Treasures, of Raubwuerger - START
+	bool canMergeTreasures() const;
+	int findTreasuresCount() const;
+	int findTreasuresAmount() const;
+	void killTreasures();
+	void mergeTreasures();
+	void createTreasures( int overallAmount, int overallCount );
+	// WTP, merge Treasures, of Raubwuerger - END
+
 	bool canSpeakWithChief(CvPlot* pPlot) const;
 	void speakWithChief();
 	bool canHold(const CvPlot* pPlot) const;

@@ -1049,4 +1049,8 @@
 		<DefineName>PERMANENT_ALLIANCE_REQUIRES_REVOLUTION</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>MAX_TREASURE_AMOUNT</DefineName>
+		<iDefineIntVal>4000</iDefineIntVal>
+	</Define>
 </Civ4Defines>

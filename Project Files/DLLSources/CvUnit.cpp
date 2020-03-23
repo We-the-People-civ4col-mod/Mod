@@ -2505,6 +2505,15 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		}
 		break;
 	// TAC - Trade Routes Advisor - koma13 - END
+	
+	// WTP, merge Treasures, of Raubwuerger - START
+	case COMMAND_MERGE_TREASURES:
+		if (canMergeTreasures())
+		{
+			return true;
+		}
+		break;
+	// R&R, ray , Stirring Up Natives - - END
 
 	default:
 		FAssert(false);
@@ -2791,6 +2800,16 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			break;
 		// TAC - Trade Routes Advisor - koma13 - END
 
+		// WTP, merge Treasures, of Raubwuerger - START
+		// ray, small improvement
+		case COMMAND_MERGE_TREASURES:
+			if(isGroupHead())
+			{
+				mergeTreasures();
+			}
+			break;
+		// R&R, ray , Stirring Up Natives - - END
+		
 		default:
 			FAssert(false);
 			break;
@@ -14825,6 +14844,141 @@ int CvUnit::getCargoValue(Port port) const
 
 	return sellValue;
 }
+
+// WTP, merge Treasures, of Raubwuerger - START
+bool CvUnit::canMergeTreasures() const
+{
+	// WTP, ray, small improvements
+	// Button only available for treasures
+	if (getUnitInfo().isTreasure() == false)
+	{
+		return false;
+	}
+
+	if (plot()->isCity() == false)
+	{
+		return false;
+	}
+	const int AT_LEAST_TWO_TREASURES = 2;
+
+	return findTreasuresCount() >= AT_LEAST_TWO_TREASURES;
+}
+
+int CvUnit::findTreasuresCount() const
+{
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	CvUnit* pLoopUnit;
+	int currentTreasuresCounter = 0;
+
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// WTP, ray, small improvements
+		// we only count our own treasuers
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner())
+		{
+			currentTreasuresCounter++;
+		}
+	}
+	return currentTreasuresCounter;
+}
+
+int CvUnit::findTreasuresAmount() const
+{
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	CvUnit* pLoopUnit;
+	int amount = 0;
+
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// WTP, ray, small improvements
+		// we only count gold of our own treasuers
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner())
+		{
+			amount += pLoopUnit->getYieldStored();
+		}
+	}
+	return amount;
+}
+
+void CvUnit::killTreasures()
+{
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	CvUnit* pLoopUnit;
+
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// WTP, ray, small improvements
+		// we only kill our own treasuers
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner())
+		{
+			pLoopUnit->kill(true);
+		}
+	}
+	return;
+}
+
+void CvUnit::mergeTreasures()
+{
+	if (canMergeTreasures() == false)
+	{
+		return;
+	}
+
+	int overallAmount = findTreasuresAmount();
+	int overallCount = findTreasuresCount();
+	killTreasures();
+	createTreasures(overallAmount, overallCount);
+
+	return;
+}
+
+void CvUnit::createTreasures(int overallAmount, int overallCount)
+{
+	int maxAmount = GC.getMAX_TREASURE_AMOUNT();
+
+	//ray, small improvement:
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+	maxAmount = maxAmount * iGameSpeedModifier;
+
+	FAssert(overallAmount > 0);
+	FAssert(maxAmount > 0);
+	int treasureCount_MaxAmount = overallAmount / maxAmount;
+	
+	int restAmount = overallAmount - (treasureCount_MaxAmount * maxAmount);
+
+	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getDefineINT("TREASURE_UNITCLASS");
+	if (eUnitClass == NO_UNITCLASS)
+	{
+		return; //Something went wrong
+	}
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
+
+	if (eUnit == NO_UNIT)
+	{
+		FAssert(GC.getUnitInfo(eUnit).isTreasure());
+		return;
+	}
+
+	for (int treasures = 0; treasures < treasureCount_MaxAmount; treasures++)
+	{
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxAmount);
+	}
+	if (restAmount >= 0)
+	{
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
+	}
+}
+// WTP, merge Treasures, of Raubwuerger - END
+
 
 // Erik: We should come up with a XML tag (e.g. bJoin vs. bFound) so that we don't need to hard-code this
 bool CvUnit::isPrisonerOrSlave() const

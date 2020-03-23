@@ -278,6 +278,8 @@ m_MAX_CITY_HEALTH(0),
 m_LOWEST_CITY_HEALTH(0),
 // R&R, ray, Health - END
 
+m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
+
 m_fCAMERA_MIN_YAW(0),
 m_fCAMERA_MAX_YAW(0),
 m_fCAMERA_FAR_CLIP_Z_HEIGHT(0),
@@ -2626,6 +2628,8 @@ void CvGlobals::cacheGlobals()
 	m_MAX_CITY_HEALTH = getDefineINT("MAX_CITY_HEALTH");
 	m_LOWEST_CITY_HEALTH = getDefineINT("LOWEST_CITY_HEALTH");
 	// R&R, ray, caching globals from Global Defines Alt - END
+
+	m_MAX_TREASURE_AMOUNT = getDefineINT("MAX_TREASURE_AMOUNT"); // WTP, merge Treasures, of Raubwuerger
 
 	// K-Mod \ RaR
 	m_bUSE_AI_UNIT_UPDATE_CALLBACK = getDefineINT("USE_AI_UNIT_UPDATE_CALLBACK") != 0;

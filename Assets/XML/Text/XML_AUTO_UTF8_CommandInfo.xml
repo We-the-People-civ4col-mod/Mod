@@ -472,4 +472,20 @@
         <Italian>Usa il tuo trasporto per commerciare con i locali.</Italian>
         <Spanish>Usad vuestro transporte para comerciar con los lugareños.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_MERGE_TREASURES</Tag>
+        <English>Merge Treasures</English>
+        <French>Merge Treasures</French>
+        <German>Schätze vereinen</German>
+        <Italian>Merge Treasures</Italian>
+        <Spanish>Merge Treasures</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_MERGE_TREASURES_HELP</Tag>
+        <English>Merge the Treasures on Plot to one Unit.</English>
+        <French>Merge the Treasures on Plot to one Unit.</French>
+        <German>Vereine die Schätze auf dem Plot zu einer Einheit</German>
+        <Italian>Merge the Treasures on Plot to one Unit.</Italian>
+        <Spanish>Merge the Treasures on Plot to one Unit.</Spanish>
+    </TEXT>
 </Civ4GameText>

@@ -799,6 +799,9 @@ public:
 	int getLOWEST_CITY_HEALTH();
 	// R&R, ray, Health - END
 
+	// WTP, merge Treasures, of Raubwuerger - START
+    int getMAX_TREASURE_AMOUNT();
+
 	DllExport float getCAMERA_MIN_YAW();
 	DllExport float getCAMERA_MAX_YAW();
 	DllExport float getCAMERA_FAR_CLIP_Z_HEIGHT();
@@ -1301,6 +1304,8 @@ protected:
 	int m_LOWEST_CITY_HEALTH;
 	// R&R, ray, Health - END
 
+	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger
+
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;
 	float m_fCAMERA_FAR_CLIP_Z_HEIGHT;
@@ -1620,7 +1625,6 @@ inline int CvGlobals::getAI_LOST_TRANSPORT_MEMORY_COUNT()
 	return m_iAI_LOST_TRANSPORT_MEMORY_COUNT;
 }
 // TAC - AI Improved Navel AI - koma13 - END
-
 
 // R&R, ray, caching globals from Global Defines Alt - START
 // Caching Vanilla variables
@@ -2195,6 +2199,13 @@ inline int CvGlobals::getLOWEST_CITY_HEALTH()
 }
 // R&R, ray, Health - END
 
+// WTP, merge Treasures, of Raubwuerger - START
+inline int CvGlobals::getMAX_TREASURE_AMOUNT()
+{
+	return m_MAX_TREASURE_AMOUNT;
+}
+// WTP, merge Treasures, of Raubwuerger - END
+
 inline float CvGlobals::getCAMERA_MIN_YAW()
 {
 	return m_fCAMERA_MIN_YAW;
@@ -2362,7 +2373,6 @@ inline int CvGlobals::getUSE_ON_UNIT_LOST_CALLBACK()
 {
 	return m_iUSE_ON_UNIT_LOST_CALLBACK;
 }
-
 inline int CvGlobals::getMAX_CIV_PLAYERS()
 {
 	return MAX_PLAYERS;
