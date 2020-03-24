@@ -14849,111 +14849,94 @@ int CvUnit::getCargoValue(Port port) const
 bool CvUnit::canMergeTreasures() const
 {
 	// WTP, ray, small improvements
-	// Button only available for treasures
+	// merge only available for treasures
 	if (getUnitInfo().isTreasure() == false)
 	{
 		return false;
 	}
 
+	// only in Cities or Native Villages
 	if (plot()->isCity() == false)
 	{
 		return false;
 	}
-	const int AT_LEAST_TWO_TREASURES = 2;
 
-	return findTreasuresCount() >= AT_LEAST_TWO_TREASURES;
-}
+	// we can only merge if we are still smaller than max gold amount
+	int maxTreasureGold = GC.getMAX_TREASURE_AMOUNT();
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+	maxTreasureGold = maxTreasureGold * iGameSpeedModifier;
 
-int CvUnit::findTreasuresCount() const
-{
+	if(getYieldStored() >= maxTreasureGold)
+	{
+		return false;
+	}
+
+	// we need to check if we have at least 2 valid treasures
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	CvUnit* pLoopUnit;
-	int currentTreasuresCounter = 0;
+	int validTreasuresCounter = 0;
 
 	while (pUnitNode != NULL)
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = plot()->nextUnitNode(pUnitNode);
 
-		// WTP, ray, small improvements
-		// we only count our own treasuers
-		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner())
+		// we only count our own treasuers and only the ones that are smaller than max gold amount
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
 		{
-			currentTreasuresCounter++;
+			validTreasuresCounter++;
 		}
 	}
-	return currentTreasuresCounter;
-}
 
-int CvUnit::findTreasuresAmount() const
-{
-	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
-	CvUnit* pLoopUnit;
-	int amount = 0;
-
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
-
-		// WTP, ray, small improvements
-		// we only count gold of our own treasuers
-		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner())
-		{
-			amount += pLoopUnit->getYieldStored();
-		}
-	}
-	return amount;
-}
-
-void CvUnit::killTreasures()
-{
-	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
-	CvUnit* pLoopUnit;
-
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
-
-		// WTP, ray, small improvements
-		// we only kill our own treasuers
-		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner())
-		{
-			pLoopUnit->kill(true);
-		}
-	}
-	return;
+	return validTreasuresCounter >= 2;
 }
 
 void CvUnit::mergeTreasures()
 {
+	// probably not needed because merge is only called after caMerge - but for safety, let us keep it
 	if (canMergeTreasures() == false)
 	{
 		return;
 	}
 
-	int overallAmount = findTreasuresAmount();
-	int overallCount = findTreasuresCount();
-	killTreasures();
-	createTreasures(overallAmount, overallCount);
+	// this stores the total gold we find in valid treasures to merge
+	int overallAmount = 0;
+
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	CvUnit* pLoopUnit;
+	int maxTreasureGold = GC.getMAX_TREASURE_AMOUNT();
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+	maxTreasureGold = maxTreasureGold * iGameSpeedModifier;
+
+	// first we count the gold of these treasures
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// WTP, ray, small improvements
+		// we only count gold of our own treasuers and those that are not yet at max
+		// after that we can directly kill them, so no extra loop is needed
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		{
+			overallAmount += pLoopUnit->getYieldStored();
+			pLoopUnit->kill(true);
+		}
+	}
+	
+	createTreasures(overallAmount, maxTreasureGold);
 
 	return;
 }
 
-void CvUnit::createTreasures(int overallAmount, int overallCount)
+void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 {
-	int maxAmount = GC.getMAX_TREASURE_AMOUNT();
-
-	//ray, small improvement:
-	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
-	maxAmount = maxAmount * iGameSpeedModifier;
 
 	FAssert(overallAmount > 0);
-	FAssert(maxAmount > 0);
-	int treasureCount_MaxAmount = overallAmount / maxAmount;
+	FAssert(maxTreasureGold > 0);
+	int treasureCount_MaxAmount = overallAmount / maxTreasureGold;
 	
-	int restAmount = overallAmount - (treasureCount_MaxAmount * maxAmount);
+	int restAmount = overallAmount - (treasureCount_MaxAmount * maxTreasureGold);
 
 	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getDefineINT("TREASURE_UNITCLASS");
 	if (eUnitClass == NO_UNITCLASS)
@@ -14970,11 +14953,15 @@ void CvUnit::createTreasures(int overallAmount, int overallCount)
 
 	for (int treasures = 0; treasures < treasureCount_MaxAmount; treasures++)
 	{
-		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxAmount);
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxTreasureGold);
+		// set Movement Points to 0, to prevent cheating
+		pTreasure->setMoves(maxMoves());
 	}
 	if (restAmount >= 0)
 	{
 		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
+		// set Movement Points to 0, to prevent cheating
+		pTreasure->setMoves(maxMoves());
 	}
 }
 // WTP, merge Treasures, of Raubwuerger - END

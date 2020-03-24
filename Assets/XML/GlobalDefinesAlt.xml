@@ -1051,6 +1051,6 @@
 	</Define>
 	<Define>
 		<DefineName>MAX_TREASURE_AMOUNT</DefineName>
-		<iDefineIntVal>4000</iDefineIntVal>
+		<iDefineIntVal>3000</iDefineIntVal>
 	</Define>
 </Civ4Defines>

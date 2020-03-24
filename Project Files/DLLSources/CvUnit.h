@@ -190,11 +190,8 @@ public:
 
 	// WTP, merge Treasures, of Raubwuerger - START
 	bool canMergeTreasures() const;
-	int findTreasuresCount() const;
-	int findTreasuresAmount() const;
-	void killTreasures();
 	void mergeTreasures();
-	void createTreasures( int overallAmount, int overallCount );
+	void createTreasures(int overallAmount, int maxTreasureGold);
 	// WTP, merge Treasures, of Raubwuerger - END
 
 	bool canSpeakWithChief(CvPlot* pPlot) const;
