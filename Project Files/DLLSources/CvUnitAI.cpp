@@ -2055,6 +2055,16 @@ void CvUnitAI::AI_treasureMove()
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
+
+	// WTP, merge Treasures, of Raubwuerger - START
+	// implementation of ray, AI logic for Merge Treasures
+	// will trigger anyways only in save Cities or Native Villages
+	if (canMergeTreasures())
+	{
+		mergeTreasures();
+		return;
+	}
+	// WTP, merge Treasures, of Raubwuerger - END
 	
 	if (AI_loadAdjacent(plot(), false))
 	{
