@@ -35,11 +35,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
-        <English>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</English>
-        <French>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</French>
-        <German>[COLOR_NEGATIVE_TEXT]Verärgert (%d1_turns Runden)[COLOR_REVERT]</German>
-        <Italian>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_NEGATIVE_TEXT]Angry (%d1_turns Turns)[COLOR_REVERT]</Spanish>
+        <English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</English>
+        <French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</French>
+        <German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Runden)[COLOR_REVERT]</German>
+        <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
