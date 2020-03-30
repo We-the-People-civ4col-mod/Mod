@@ -175,7 +175,10 @@ class CvPediaUnit:
 		if gc.getUnitInfo(self.iUnit).LbD_canEscape():
 			szSpecialText += "\n" + localText.getText("TXT_KEY_UNIT_ESCAPE", ())
 		# TAC/Ronnar End
-		
+		# WTP, ray, LbD Slaves Revolt and Free - START
+		if gc.getUnitInfo(self.iUnit).LbD_canRevolt():
+			szSpecialText += "\n" + localText.getText("TXT_KEY_UNIT_REVOLT", ())
+		# WTP, ray, LbD Slaves Revolt and END - START
 		
 ## Pedia - Unit source - Start Nightinggale
 		if gc.getUnitInfo(self.iUnit).getImmigrationWeight():

@@ -27,6 +27,11 @@
             <DefaultUnit>UNIT_CONVERTED_NATIVE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_FREED_SLAVE</Type>
+            <Description>TXT_KEY_UNITCLASS_FREED_SLAVE</Description>
+            <DefaultUnit>UNIT_FREED_SLAVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_NATIVE_SLAVE</Type>
             <Description>TXT_KEY_UNITCLASS_NATIVE_SLAVE</Description>
             <DefaultUnit>UNIT_NATIVE_SLAVE</DefaultUnit>
@@ -380,6 +385,21 @@
             <Type>UNITCLASS_NATIVE_MERC</Type>
             <Description>TXT_KEY_UNITCLASS_NATIVE_MERC</Description>
             <DefaultUnit>UNIT_NATIVE_MERC</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_SLAVE</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Description>
+            <DefaultUnit>UNIT_REVOLTING_SLAVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_NATIVE_SLAVE</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_NATIVE_SLAVE</Description>
+            <DefaultUnit>UNIT_REVOLTING_NATIVE_SLAVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_CRIMINAL</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Description>
+            <DefaultUnit>UNIT_REVOLTING_CRIMINAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_RANGER</Type>

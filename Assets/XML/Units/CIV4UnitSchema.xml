@@ -133,6 +133,7 @@
 	<ElementType name="bLbDCanBecomeExpert" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bLbDCanGetFree" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bLbDCanEscape" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bLbDCanRevolt" content="textOnly" dt:type="boolean"/>
 	<ElementType name="UnitClassUpgradeType" content="textOnly"/>
 	<ElementType name="bUnitClassUpgrade" content="textOnly" dt:type="boolean"/>
 	<ElementType name="UnitClassUpgrade" content="eltOnly">
@@ -462,6 +463,7 @@
 		<element type="bLbDCanBecomeExpert"/>
 		<element type="bLbDCanGetFree"/>
 		<element type="bLbDCanEscape"/>
+		<element type="bLbDCanRevolt"/>
 		<element type="UnitClassUpgrades"/>
 		<element type="UnitAIs"/>
 		<element type="NotUnitAIs"/>

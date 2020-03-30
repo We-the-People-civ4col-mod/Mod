@@ -44,6 +44,7 @@
             <bLbDCanBecomeExpert>1</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -386,6 +387,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>1</bLbDCanGetFree>
             <bLbDCanEscape>1</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -837,6 +839,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>1</bLbDCanGetFree>
             <bLbDCanEscape>1</bLbDCanEscape>
+            <bLbDCanRevolt>1</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -1239,10 +1242,6 @@
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
-                    <VoidProfessionType>PROFESSION_PIONEER</VoidProfessionType>
-                    <bIsNotAllowed>1</bIsNotAllowed>
-                </ProfessionNotAllowed>
-                <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_DRAGOON</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
@@ -1300,6 +1299,7 @@
             <bLbDCanBecomeExpert>1</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -1782,6 +1782,428 @@
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
         <UnitInfo>
+            <Type>UNIT_FREED_SLAVE</Type>
+            <Class>UNITCLASS_FREED_SLAVE</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>NONE</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
+            <DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_FREED_SLAVE</Description>
+            <Civilopedia>TXT_KEY_UNIT_FREED_SLAVE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_FREED_SLAVE_STRATEGY</Strategy>
+            <iTeachLevel>100</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>1</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>1</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>0</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>1</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COLONIST</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLASTERED_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FARM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MINE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_VINEYARD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST2</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_LODGE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COCOA_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_TRAPPER_HUT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FORT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MONASTERY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_DRAIN_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_GRASS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SAVANNAH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <TerrainImpassables/>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>1</iCombat>
+            <iXPValueAttack>4</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>0</iWithdrawalProb>
+            <iCityAttack>0</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>0</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses/>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers/>
+            <YieldDemands>
+                <YieldDemand>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_COFFEE</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WOOL_CLOTH</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_LEATHER</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_SALT</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+            </YieldDemands>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_VALUABLE_WOOD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COFFEE_BERRIES</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RED_PEPPER</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COTTON</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_INDIGO</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BARLEY</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SUGAR</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GRAPES</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_TOBACCO</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEMP</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_RAW_SALT</YieldType>
+                    <iChange>2</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_BELLS</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_CROSSES</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_EDUCATION</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>-1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>50</iAsset>
+            <iPower>0</iPower>
+            <iNativeLearnTime>6</iNativeLearnTime>
+            <iStudentWeight>100</iStudentWeight>
+            <iTeacherWeight>0</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_FREE_SLAVE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CONVERT_SCOUT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CONVERT_MUSKETMAN</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CONVERT_DRAGOON</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+        </UnitInfo>
+        <UnitInfo>
             <Type>UNIT_NATIVE_SLAVE</Type>
             <Class>UNITCLASS_NATIVE_SLAVE</Class>
             <UniqueNames/>
@@ -1819,8 +2241,9 @@
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanGetFree>1</bLbDCanGetFree>
             <bLbDCanEscape>1</bLbDCanEscape>
+            <bLbDCanRevolt>1</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -2173,8 +2596,9 @@
             <bAlwaysHostile>0</bAlwaysHostile>
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanGetFree>1</bLbDCanGetFree>
             <bLbDCanEscape>1</bLbDCanEscape>
+            <bLbDCanRevolt>1</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -2640,6 +3064,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -3015,6 +3440,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -3390,6 +3816,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -3749,6 +4176,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -4108,6 +4536,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -4467,6 +4896,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -4826,6 +5256,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -5185,6 +5616,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -5544,6 +5976,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -5911,6 +6344,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -6278,6 +6712,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -6645,6 +7080,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -7012,6 +7448,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -7371,6 +7808,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -7722,6 +8160,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -8081,6 +8520,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -8432,6 +8872,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -8783,6 +9224,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -9134,6 +9576,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -9477,6 +9920,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -9826,6 +10270,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -10201,6 +10646,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -10576,6 +11022,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -10947,6 +11394,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -11318,6 +11766,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -11685,6 +12134,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -12052,6 +12502,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -12423,6 +12874,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -12794,6 +13246,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -13165,6 +13618,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -13540,6 +13994,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -13915,6 +14370,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -14290,6 +14746,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -14665,6 +15122,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -15032,6 +15490,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -15399,6 +15858,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -15774,6 +16234,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -16149,6 +16610,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -16532,6 +16994,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -16906,6 +17369,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -17266,6 +17730,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -17562,6 +18027,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -17756,6 +18222,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -17908,6 +18375,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -18077,6 +18545,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -18256,6 +18725,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -18405,6 +18875,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -18605,6 +19076,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -18735,6 +19207,448 @@
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
         <UnitInfo>
+            <Type>UNIT_REVOLTING_SLAVE</Type>
+            <Class>UNITCLASS_REVOLTING_SLAVE</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>UNITCOMBAT_GUN</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+            <DefaultProfession>NONE</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_REVOLTING_SLAVE</Description>
+            <Civilopedia>TXT_KEY_UNIT_REVOLTING_SLAVE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_REVOLTING_SLAVE_STRATEGY</Strategy>
+            <iTeachLevel>100</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>0</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>0</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>1</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>1</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COUNTER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds/>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <TerrainImpassables/>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>3</iCombat>
+            <iXPValueAttack>2</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>5</iWithdrawalProb>
+            <iCityAttack>0</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>0</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+            </FeatureDefenses>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers/>
+            <YieldChanges/>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>300</iAsset>
+            <iPower>250</iPower>
+            <iNativeLearnTime>-1</iNativeLearnTime>
+            <iStudentWeight>0</iStudentWeight>
+            <iTeacherWeight>0</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.25</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>1</iMeleeWaveSize>
+                    <iRangedWaveSize>1</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_REVOLTING_SLAVE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+        </UnitInfo>
+        <UnitInfo>
+            <Type>UNIT_REVOLTING_NATIVE_SLAVE</Type>
+            <Class>UNITCLASS_REVOLTING_NATIVE_SLAVE</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>UNITCOMBAT_GUN</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+            <DefaultProfession>NONE</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE</Description>
+            <Civilopedia>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE_STRATEGY</Strategy>
+            <iTeachLevel>100</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>0</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>0</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>1</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>1</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COUNTER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds/>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <TerrainImpassables/>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>3</iCombat>
+            <iXPValueAttack>2</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>5</iWithdrawalProb>
+            <iCityAttack>0</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>0</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+            </FeatureDefenses>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers/>
+            <YieldChanges/>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>300</iAsset>
+            <iPower>250</iPower>
+            <iNativeLearnTime>-1</iNativeLearnTime>
+            <iStudentWeight>0</iStudentWeight>
+            <iTeacherWeight>0</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.25</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>1</iMeleeWaveSize>
+                    <iRangedWaveSize>1</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_NATIVE_MERC</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+        </UnitInfo>
+        <UnitInfo>
+            <Type>UNIT_REVOLTING_CRIMINAL</Type>
+            <Class>UNITCLASS_REVOLTING_CRIMINAL</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>UNITCOMBAT_GUN</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+            <DefaultProfession>NONE</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_REVOLTING_CRIMINAL</Description>
+            <Civilopedia>TXT_KEY_UNIT_REVOLTING_CRIMINAL_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_REVOLTING_CRIMINAL_STRATEGY</Strategy>
+            <iTeachLevel>100</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>0</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>0</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>1</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>1</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COUNTER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds/>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <TerrainImpassables/>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>3</iCombat>
+            <iXPValueAttack>2</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>5</iWithdrawalProb>
+            <iCityAttack>10</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>10</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses/>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers/>
+            <YieldChanges/>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>300</iAsset>
+            <iPower>250</iPower>
+            <iNativeLearnTime>-1</iNativeLearnTime>
+            <iStudentWeight>0</iStudentWeight>
+            <iTeacherWeight>0</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.25</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>1</iMeleeWaveSize>
+                    <iRangedWaveSize>1</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_REVOLTING_CRIMINAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+        </UnitInfo>
+        <UnitInfo>
             <Type>UNIT_RANGER</Type>
             <Class>UNITCLASS_RANGER</Class>
             <UniqueNames/>
@@ -18774,6 +19688,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -18974,6 +19889,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -19150,6 +20066,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -19342,6 +20259,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -19692,6 +20610,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -20046,6 +20965,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -20396,6 +21316,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -20746,6 +21667,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -20909,6 +21831,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -21072,6 +21995,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -21235,6 +22159,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -21393,6 +22318,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -21657,6 +22583,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -21925,6 +22852,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -22193,6 +23121,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -22461,6 +23390,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -22815,6 +23745,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -23152,6 +24083,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -23528,6 +24460,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -23904,6 +24837,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -24280,6 +25214,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -24651,6 +25586,7 @@
             <bLbDCanBecomeExpert>1</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -24989,6 +25925,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -25370,6 +26307,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -25759,6 +26697,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -26110,6 +27049,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -26461,6 +27401,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -26812,6 +27753,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -27183,6 +28125,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -27563,6 +28506,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -27769,6 +28713,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -27909,6 +28854,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28053,6 +28999,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28197,6 +29144,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28337,6 +29285,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28481,6 +29430,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28625,6 +29575,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28784,6 +29735,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -28943,6 +29895,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -29113,6 +30066,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -29283,6 +30237,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -29453,6 +30408,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -29623,6 +30579,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -29793,6 +30750,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -29972,6 +30930,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -30129,6 +31088,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -30286,6 +31246,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -30535,6 +31496,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -30719,6 +31681,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -30858,6 +31821,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31009,6 +31973,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31174,6 +32139,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31330,6 +32296,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31486,6 +32453,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31638,6 +32606,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31813,6 +32782,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -31992,6 +32962,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32119,6 +33090,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32246,6 +33218,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32373,6 +33346,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32500,6 +33474,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32627,6 +33602,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32754,6 +33730,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -32881,6 +33858,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33008,6 +33986,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33135,6 +34114,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33262,6 +34242,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33389,6 +34370,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33516,6 +34498,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33643,6 +34626,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33770,6 +34754,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -33897,6 +34882,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34024,6 +35010,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34151,6 +35138,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34278,6 +35266,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34405,6 +35394,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34532,6 +35522,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34659,6 +35650,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34786,6 +35778,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -34913,6 +35906,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35040,6 +36034,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35167,6 +36162,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35294,6 +36290,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35421,6 +36418,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35548,6 +36546,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35675,6 +36674,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35802,6 +36802,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -35929,6 +36930,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36056,6 +37058,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36183,6 +37186,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36310,6 +37314,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36437,6 +37442,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36564,6 +37570,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36691,6 +37698,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36818,6 +37826,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -36945,6 +37954,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37072,6 +38082,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37199,6 +38210,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37326,6 +38338,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37453,6 +38466,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37580,6 +38594,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37707,6 +38722,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37834,6 +38850,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -37961,6 +38978,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38088,6 +39106,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38215,6 +39234,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38342,6 +39362,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38469,6 +39490,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38597,6 +39619,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38727,6 +39750,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38863,6 +39887,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -38999,6 +40024,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39135,6 +40161,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39271,6 +40298,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39407,6 +40435,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39543,6 +40572,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39679,6 +40709,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39815,6 +40846,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -39951,6 +40983,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -40087,6 +41120,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>
@@ -40223,6 +41257,7 @@
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>0</bLbDCanGetFree>
             <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
                 <UnitAI>

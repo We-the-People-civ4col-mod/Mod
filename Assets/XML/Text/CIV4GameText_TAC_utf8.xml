@@ -1142,6 +1142,14 @@
         <Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_LBD_REVOLT</Tag>
+        <English>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Un captif s'est revolté et enfui de %s1_city.[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Ein Unfreier in %s1_city hat revoltiert. Man vermutet, dass er in die Wildnis geflohen ist.[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
         <English>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</English>
         <French>[ICON_BULLET]Peut accueillir %d1_Num [NUM1:employé:employés]</French>
@@ -1204,6 +1212,14 @@
         <German>[ICON_BULLET]Kann fliehen, um sich seinem Schicksal zu entziehen</German>
         <Italian>[ICON_BULLET]Can flee</Italian>
         <Spanish>[ICON_BULLET]Can flee</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLT</Tag>
+        <English>[ICON_BULLET]Can revolt</English>
+        <French>[ICON_BULLET]Peut revolter</French>
+        <German>[ICON_BULLET]Kann revoltieren und zur Bedrohung werden</German>
+        <Italian>[ICON_BULLET]Can revolt</Italian>
+        <Spanish>[ICON_BULLET]Can revolt</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD1</Tag>
@@ -2361,7 +2377,7 @@
         <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
         <English>Kingdom of Sweden</English>
         <French>Empire Suédois</French>
-        <German>Königreich von Schweden</German>
+        <German>Königreich von Schwden</German>
         <Italian>Kingdom of Sweden</Italian>
         <Spanish>Kingdom of Sweden</Spanish>
     </TEXT>

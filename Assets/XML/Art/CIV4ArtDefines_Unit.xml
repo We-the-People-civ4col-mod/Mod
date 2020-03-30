@@ -13138,5 +13138,56 @@
                 <AudioRunTypeEnd>ENDSTEP_WHEELS</AudioRunTypeEnd>
             </AudioRunSounds>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_REVOLTING_CRIMINAL</Type>
+            <Button>,Art/colonization_atlas_units.dds,2,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Convict.dds</FullLengthIcon>
+            <fScale>0.54</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/Special_military/revolting_criminal/Indentured_Servant.nif</NIF>
+            <KFM>Art/Units/Special_military/revolting_criminal/Indentured_Servant.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FREE_SLAVE</Type>
+            <Button>,Art/colonization_atlas_units.dds,3,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_free_slave.dds</FullLengthIcon>
+            <fScale>0.54</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/settler/free_slave/Expert_Cotton_Planter.nif</NIF>
+            <KFM>Art/Units/settler/free_slave/Expert_Cotton_Planter.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_REVOLTING_SLAVE</Type>
+            <Button>,Art/colonization_atlas_units.dds,1,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_revolting_slave.dds</FullLengthIcon>
+            <fScale>0.55</fScale>
+            <fInterfaceScale>0.8</fInterfaceScale>
+            <NIF>Art/Units/special_military/revolting_Slave/infantry.nif</NIF>
+            <KFM>Art/Units/special_military/revolting_slave/infantry.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>

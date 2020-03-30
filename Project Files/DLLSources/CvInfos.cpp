@@ -2627,6 +2627,9 @@ m_canBecomeExpert(false),
 m_canGetFree(false),
 m_canEscape(false),
 // TAC - LbD - Ray - END
+// WTP, ray, LbD Slaves Revolt and Free - START
+m_canRevolt(false),
+// WTP, ray, LbD Slaves Revolt and Free - END
 m_bCapturesCargo(false),
 // TAC Capturing Ships - ray
 m_bCapturesShips(false),
@@ -3061,18 +3064,23 @@ bool CvUnitInfo::LbD_canEscape() const
 }
 // TAC - LbD - Ray - END
 
+// WTP, ray, LbD Slaves Revolt and Free - START
+bool CvUnitInfo::LbD_canRevolt() const
+{
+	return m_canRevolt;
+}
+// WTP, ray, LbD Slaves Revolt and Free - END
+
 bool CvUnitInfo::isCapturesCargo() const
 {
 	return m_bCapturesCargo;
 }
 
 // TAC Capturing Ships - ray
-
 bool CvUnitInfo::isCapturesShips() const
 {
 	return m_bCapturesShips;
 }
-
 // TAC Capturing Ships - ray - END
 
 bool CvUnitInfo::isLandYieldChanges() const
@@ -3500,6 +3508,10 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_canEscape);
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	stream->Read(&m_canRevolt);
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	stream->Read(&m_bCapturesCargo);
 	// TAC Capturing Ships - ray
 	stream->Read(&m_bCapturesShips);
@@ -3721,6 +3733,10 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_canEscape);
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	stream->Write(m_canRevolt);
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	stream->Write(m_bCapturesCargo);
 	// TAC Capturing Ships - ray
 	stream->Write(m_bCapturesShips);
@@ -3861,6 +3877,10 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_canGetFree,"bLbDCanGetFree",false);
 	pXML->GetChildXmlValByName(&m_canEscape,"bLbDCanEscape",false);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	pXML->GetChildXmlValByName(&m_canRevolt,"bLbDCanRevolt",false);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	pXML->GetChildXmlValByName(&m_bCapturesCargo,"bCapturesCargo",false);
 	// TAC Capturing Ships - ray

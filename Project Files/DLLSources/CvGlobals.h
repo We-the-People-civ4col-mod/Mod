@@ -704,6 +704,10 @@ public:
 	int getLBD_CHANCE_ESCAPE();
 	int getLBD_CHANCE_MOD_ESCAPE_CRIMINAL();
 	int getLBD_CHANCE_MOD_ESCAPE_SERVANT();
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	int getLBD_CHANCE_REVOLT();
+	int getLBD_CHANCE_MOD_REVOLT_SLAVE();
+	int getLBD_CHANCE_MOD_REVOLT_CRIMINAL();
 	// R&R, ray, getting Veterans or Free through Combat Experience
 	int getLBD_EXPERIENCE_VETERAN();
 	int getLBD_EXPERIENCE_FREE();
@@ -1212,6 +1216,10 @@ protected:
 	int m_LBD_CHANCE_ESCAPE;
 	int m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL;
 	int m_LBD_CHANCE_MOD_ESCAPE_SERVANT;
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	int m_LBD_CHANCE_REVOLT;
+	int m_LBD_CHANCE_MOD_REVOLT_SLAVE;
+	int m_LBD_CHANCE_MOD_REVOLT_CRIMINAL;
 	// R&R, ray, getting Veterans or Free through Combat Experience
 	int m_LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT;
 	int m_LBD_MIN_EXPERIENCE_FREE_BY_COMBAT;
@@ -1874,6 +1882,19 @@ inline int CvGlobals::getLBD_CHANCE_MOD_ESCAPE_CRIMINAL()
 inline int CvGlobals::getLBD_CHANCE_MOD_ESCAPE_SERVANT()
 {
 	return m_LBD_CHANCE_MOD_ESCAPE_SERVANT;
+}
+// WTP, ray, LbD Slaves Revolt and Free - START
+inline int CvGlobals::getLBD_CHANCE_REVOLT()
+{
+	return m_LBD_CHANCE_REVOLT;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_REVOLT_SLAVE()
+{
+	return m_LBD_CHANCE_MOD_REVOLT_SLAVE;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_REVOLT_CRIMINAL()
+{
+	return m_LBD_CHANCE_MOD_REVOLT_CRIMINAL;
 }
 // R&R, ray, getting Veterans or Free through Combat Experience
 inline int CvGlobals::getLBD_EXPERIENCE_VETERAN()

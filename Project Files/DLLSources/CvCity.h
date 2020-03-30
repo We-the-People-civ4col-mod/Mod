@@ -55,6 +55,10 @@ public:
 	bool LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv);
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	bool LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave);
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	// R&R, ray, Extra City Defense Attacks - START
 	void doExtraCityDefenseAttacks();
 	// R&R, ray, Extra City Defense Attacks - END
@@ -647,7 +651,7 @@ public:
 	int getCustomHouseSellThreshold(YieldTypes eYield) const;
 	void setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell);
 	bool isCustomHouseNeverSell(YieldTypes eYield) const;
-	void createFleeingUnit(UnitTypes eUnit);
+	void createFleeingUnit(UnitTypes eUnit, bool bDefautAI); // WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
 	// R&R, ray, finishing Custom House Screen END
 	// Teacher List - start - Nightinggale
 	int getOrderedStudents(UnitTypes eUnit);

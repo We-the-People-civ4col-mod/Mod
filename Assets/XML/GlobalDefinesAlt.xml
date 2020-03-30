@@ -214,6 +214,38 @@
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>LBD_CHANCE_REVOLT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LBD_CHANCE_MOD_REVOLT_CRIMINAL</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LBD_CHANCE_MOD_REVOLT_SLAVE</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_FREED_SLAVE</DefineName>
+		<DefineTextVal>UNITCLASS_FREED_SLAVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_CONVERTED_NATIVE</DefineName>
+		<DefineTextVal>UNITCLASS_CONVERTED_NATIVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_REVOLTING_SLAVE</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_SLAVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_REVOLTING_NATIVE_SLAVE</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_NATIVE_SLAVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_REVOLTING_CRIMINAL</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_CRIMINAL</DefineTextVal>
+	</Define>
+	<Define>
 		<DefineName>LBD_MIN_EXPERIENCE_FREE_BY_COMBAT</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>

@@ -3400,4 +3400,84 @@
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FREED_SLAVE</Tag>
+        <English>
+            <Text>Freed Slave:Freed Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave exempté:Esclaves exemptés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Befreiter Sklave:Berfreite Sklaven</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Freed Slave:Freed Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo liberado:Esclavos liberados</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Tag>
+        <English>
+            <Text>Revolting Slave:Revolting Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave revolté:Esclaves revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Sklave:Revoltierende Sklaven</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Revolting Slave:Revolting Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo repugnante:Esclavos repugnantes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Tag>
+        <English>Revolting Criminal:Revolting Criminals</English>
+        <French>
+            <Text>Bagnard revolté:Bagnards revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Kleinkrimineller:Revoltierende Kleinkriminelle</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Piccolo revolte:Piccoli revolti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Convicto repugnante:Convictos repugnantes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
 </Civ4GameText>

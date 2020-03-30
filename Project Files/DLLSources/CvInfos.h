@@ -750,6 +750,10 @@ public:
 	DllExport bool LbD_canEscape() const;
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	DllExport bool LbD_canRevolt() const;
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	DllExport bool isCapturesCargo() const;
 	// TAC Capturing Ships - ray
 	DllExport bool isCapturesShips() const;
@@ -917,7 +921,9 @@ protected:
 	bool m_canGetFree;
 	bool m_canEscape;
 	// TAC - LbD - Ray - END
-
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	bool m_canRevolt;
+	// WTP, ray, LbD Slaves Revolt and Free - END
 	bool m_bCapturesCargo;
 	// TAC Capturing Ships - ray
 	bool m_bCapturesShips;

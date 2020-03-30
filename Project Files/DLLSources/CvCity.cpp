@@ -10942,14 +10942,44 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	//cases criminal or servant
 	int modcase = convUnit->getUnitInfo().getUnitClassType();
 
-	//default case is servant
-	int mod = mod_serv;
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	// modified code to have specific Units for African Slaves and Native Slaves
+
+	// store the UnitClass and modifier
+	UnitTypes GeneratedUnitType;
+	int mod;
 	
-	// if criminal
-	if (modcase == 2)
+	// convert Unit to Free Unit (Colonist, Freed Slave or Converted Native
+
+	// if CRIMIAL general Default Pop-Unit
+	if (modcase == GC.getDefineINT("UNITCLASS_PRISONER"))
 	{
-		mod = mod_crim;
+		mod = mod_crim; // Criminals are supposed to have a lower chance
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 	}
+
+	// If African Slave generate a Freed Slave
+	else if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	{
+		mod = mod_crim; // we just use the same lower chance as for Criminals
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FREED_SLAVE"));
+	}
+
+	// If Native Slave generate a Converted Native
+	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
+	{
+		mod = mod_crim; // we just use the same lower chance as for Criminals
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CONVERTED_NATIVE"));
+	}
+
+	//default case is servant (and potential others to be configured)
+	else
+	{
+		int mod = mod_serv; // Servants are supposed to have a higher chance
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+	}
+
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	int calculatedChance = (base + (workedRounds - pre_rounds) * increase * l_level * mod);
 	
@@ -10963,19 +10993,16 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 		return false;
 	}
 	
-	// convert Unit to Free Settler
-	UnitTypes DefaultUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
-	FAssert(DefaultUnitType != NO_UNIT);
+	// spawn the Unit
 	//ray16
-	CvUnit* DefaultUnit = GET_PLAYER(getOwnerINLINE()).initUnit(DefaultUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
-	FAssert(DefaultUnit != NULL);
+	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
+	FAssert(GeneratedUnit != NULL);
 	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
-	DefaultUnit->convert(convUnit, true);
-	//addPopulationUnit(DefaultUnit, NO_PROFESSION);
+	GeneratedUnit->convert(convUnit, true);
 	// AddMessage
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
 	//Ende ray16
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, DefaultUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GeneratedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 
 	return true;
 }
@@ -11020,8 +11047,8 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	const TCHAR* buttonStringForMessage = convUnit->getButton();
 
-	// R&R, ray, Fleeing Units
-	createFleeingUnit(convUnit->getUnitType());
+	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
+	createFleeingUnit(convUnit->getUnitType(), false);
 
 	//Unit is then simply destroyed
 	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
@@ -11035,6 +11062,79 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	return true;
 }
+
+// WTP, ray, LbD Slaves Revolt and Free - START
+bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave) 
+{	
+	//Feature deactivated for KI
+	if (!isHuman()) {
+		return false;
+	}
+
+	// do not use feature if City Population = 1, because might destroy city
+	if (getPopulation() == 1)
+	{
+		return false;
+	}
+
+	//cases criminal or slave
+	int modcase = convUnit->getUnitInfo().getUnitClassType();
+
+	//default case is Criminal - also if we ever have something else
+	int mod;
+	UnitTypes GeneratedUnitType;
+	
+	// if African Slave
+	if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	{
+		mod = mod_slave;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_SLAVE"));
+	}
+	// if Native Slave
+	//default case is Criminal - also if we ever have something else
+	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
+	{
+		mod = mod_slave;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_NATIVE_SLAVE"));
+	}
+	//default case is Criminal - also if we ever have something else
+	else
+	{
+		mod = mod_crim;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_CRIMINAL"));
+	}
+
+	// get chance and random value
+	int calculatedChance = (base * mod);
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Revolt Slave");
+	
+	// no Success if randomValue larger calculatedChance
+	if (randomValue > calculatedChance)
+	{
+		return false;
+	}
+
+	// get Button of the Unit from UnitType for message
+	// Test um Bug zu finden
+	// CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).getUnit(GeneratedUnitType);
+	// const TCHAR* buttonStringForMessage = GeneratedUnit->getButton();
+	const TCHAR* buttonStringForMessage = convUnit->getButton();
+
+	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
+	// Test um Bug zu finden
+	createFleeingUnit(GeneratedUnitType, true);
+
+	//Unit is then simply destroyed
+	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	convUnit->kill(false);
+	
+	// AddMessage
+	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_REVOLT", getNameKey());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, buttonStringForMessage, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+
+	return true;
+}
+// WTP, ray, LbD Slaves Revolt and Free - END
 
 void CvCity::doLbD()
 {	
@@ -11052,6 +11152,12 @@ void CvCity::doLbD()
 	int base_chance_escape = GC.getLBD_CHANCE_ESCAPE();
 	int mod_escape_criminal = GC.getLBD_CHANCE_MOD_ESCAPE_CRIMINAL();
 	int mod_escape_servant = GC.getLBD_CHANCE_MOD_ESCAPE_SERVANT();
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	int base_chance_revolt = GC.getLBD_CHANCE_REVOLT();
+	int mod_revolt_slave = GC.getLBD_CHANCE_MOD_REVOLT_SLAVE();
+	int mod_revolt_criminal = GC.getLBD_CHANCE_MOD_REVOLT_CRIMINAL();
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	//getting GameSpeedModifiert in percent
 	int train_percent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
@@ -11071,6 +11177,7 @@ void CvCity::doLbD()
 		bool lbd_expert_successful = false;
 		bool lbd_free_successful = false;
 		bool lbd_escape_successful = false;
+		bool lbd_revolt_successful = false; // WTP, ray, LbD Slaves Revolt and Free - START
 		
 
 		// only do something for this unit if the profession does use LbD
@@ -11102,6 +11209,14 @@ void CvCity::doLbD()
 			{
 				lbd_escape_successful = LbD_try_escape(pLoopUnit, base_chance_escape, mod_escape_criminal, mod_escape_servant);
 			}
+
+			// WTP, ray, LbD Slaves Revolt and Free - START
+			// try to revolt if escape revolt possible and free unsuccessful and escape unsuccessufl
+			if(pLoopUnit->getUnitInfo().LbD_canRevolt() && !lbd_escape_successful && !lbd_free_successful && !lbd_expert_successful)
+			{
+				lbd_revolt_successful = LbD_try_revolt(pLoopUnit, base_chance_revolt, mod_revolt_criminal, mod_revolt_slave);
+			}
+			// WTP, ray, LbD Slaves Revolt and Free - END
 
 		}
 		
@@ -11633,7 +11748,8 @@ bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 // R&R, ray, finishing Custom House Screen END
 
 // R&R, ray, Fleeing Units - START
-void CvCity::createFleeingUnit(UnitTypes eUnit)
+// WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
+void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 {
 
 	if (GC.getGameINLINE().getBarbarianPlayer() == NO_PLAYER)
@@ -11666,10 +11782,19 @@ void CvCity::createFleeingUnit(UnitTypes eUnit)
 		}
 	}
 
-	// init fleeing Unit
+	// init fleeing or revolting Unit
 	if (pBestPlot != NULL)
 	{
-		CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), UNITAI_FLEEING);
+		// Fleeing AI
+		if (bDefautAI == false)
+		{
+			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), UNITAI_FLEEING);
+		}
+		//Default AI
+		else
+		{
+			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), NO_UNITAI);
+		}
 	}
 }
 // R&R, ray, Fleeing Units - END

@@ -752,6 +752,28 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_PRISONER", idx);
 		// R&R, ray, Prisons Crowded - END
 
+		// WTP, ray, LbD Slaves Revolt and Free - START
+		SetGlobalDefine("UNITCLASS_FREED_SLAVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_FREED_SLAVE", idx);
+
+		SetGlobalDefine("UNITCLASS_CONVERTED_NATIVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_CONVERTED_NATIVE", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_SLAVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_SLAVE", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_NATIVE_SLAVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_NATIVE_SLAVE", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_CRIMINAL", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_CRIMINAL", idx);
+		// WTP, ray, LbD Slaves Revolt and Free - END
+
 		// R&R, ray, Revolutionary Noble - START
 		SetGlobalDefine("UNITCLASS_NOBLE", szVal);
 		idx = FindInInfoClass(szVal);

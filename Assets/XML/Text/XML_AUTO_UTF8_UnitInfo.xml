@@ -18,7 +18,7 @@
             <Plural>0:1</Plural>
         </German>
         <Spanish>
-            <Text>Esclavo africano:Esclavos Africanos</Text>
+            <Text>Esclavo africano:Esclavos africanos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -5711,5 +5711,160 @@
         <German>Die Landtruppen des Königs verfügen mit den [COLOR_UNIT_TEXT]Königlichen Hellebardenträgern[COLOR_REVERT] (entspricht der Stadtwache) über einen ähnlichen Militärberuf wie die Kolonienationen. Allerdings sind die Einheiten, die diese Berufe ausüben, stärker: Die [COLOR_UNIT_TEXT]Königlichen Hellebardenträger[COLOR_REVERT] verfügt automatisch über die Beförderungen Veteran I, Veteran II und Stadtwache (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und einen Kampfbonus von 25% gegen Berittene). Aufgrund ihrer Stärke gegen berittene Einheiten bekämpft man sie am besten mit Infanterie wie der Kolonialmiliz und der Linieninfanterie.</German>
         <Italian>[COLOR_UNIT_TEXT]The Royal Halberdiers [COLOR_REVERT], specialists of the profession [LINK=PROFESSION_ROYAL_HALBERDIER]Royal halberdiers[\LINK],  are the weakest part of the elite ground forces of the Royal Expeditionary Force. However, the Royal Halberdiers get a bonus of 25% when attacking cavalry units (dragoons and heavy cavalry). The Royal Halberdiers are the Royal counterpart of the colonial "Town Guard" and get the free promotions "Veteran I" and "Veteran II" so that they are very effective and strong defensive units. You better attack them with infantry units but not with cavalry units.</Italian>
         <Spanish>[COLOR_UNIT_TEXT]The Royal Halberdiers [COLOR_REVERT], specialists of the profession [LINK=PROFESSION_ROYAL_HALBERDIER]Royal halberdiers[\LINK],  are the weakest part of the elite ground forces of the Royal Expeditionary Force. However, the Royal Halberdiers get a bonus of 25% when attacking cavalry units (dragoons and heavy cavalry). The Royal Halberdiers are the Royal counterpart of the colonial "Town Guard" and get the free promotions "Veteran I" and "Veteran II" so that they are very effective and strong defensive units. You better attack them with infantry units but not with cavalry units.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FREED_SLAVE</Tag>
+        <English>
+            <Text>Freed Slave:Freed Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave exempté:Esclaves exemptés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Befreiter Sklave:Berfreite Sklaven</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Freed Slave:Freed Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo liberado:Esclavos liberados</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FREED_SLAVE_STRATEGY</Tag>
+        <English>You can acquire [COLOR_UNIT_TEXT]Freed Slaves[COLOR_REVERT] only if [COLOR_UNIT_TEXT]African Slaves[COLOR_REVERT] work long enough in a City and get granted their freedom for their loyal service. They function similar to [LINK=UNIT_CONVERTED_NATIVES]Converted Natives[\LINK]. They will not attempt to flee anymore. They are especially productive when set to work on the fields, but will accomplish less when put to work in a high education profession.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Berfreite Sklaven[COLOR_REVERT] werden nur dadurch erlangt, dass [COLOR_UNIT_TEXT]Afrikanische Slaven[COLOR_REVERT] lange Zeit loyal in Ihrem Beruf arbeiten und dafür dann ihre Freiheit erhalten. Sie sind exzellente Feldarbeiter, ähnlich wie [LINK=UNIT_CONVERTED_NATIVES]Konvertierte Ureinwohner[\LINK] und werden nicht mehr davonlaufen. [PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Diener, Kriminelle und Sklaven[\LINK].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FREED_SLAVE_PEDIA</Tag>
+        <English>[TAB]An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships. Approximately 6 million black Africans were killed by others in tribal wars. Only a few of them were granted freedom by their owners for loyal service until Slavery was abolished by the Northern American States under the government of Abraham Lincoln.</English>
+        <French>[TAB]On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
+        <German>[TAB]Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die USA entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der USA stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten der USA unter der Führung von Abraham Lincoln die Sklaverei abschafften.</German>
+        <Italian>[TAB]An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships. Approximately 6 million black Africans were killed by others in tribal wars.</Italian>
+        <Spanish>[TAB]An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships. Approximately 6 million black Africans were killed by others in tribal wars.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE</Tag>
+        <English>
+            <Text>Revolting African Slave:Revolting African Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave revolté africain:Esclaves revoltés africains</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Afrikanischer Sklave:Revoltierende  Afrikanische Sklaven</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Revolting African Slave:Revolting African Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo repugnante africano:Esclavos repugnantes africanos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Revolting African Slaves[COLOR_REVERT] cannot be acquired. They are only generated by [COLOR_HIGHLIGHT_TEXT]Slave Revolts[COLOR_REVERT], will attack the Player and fight until death. [PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Revoltierende Afrikanische Sklaven[COLOR_REVERT] können nicht erlangt werden. Sie werden lediglich durch [COLOR_HIGHLIGHT_TEXT]Sklavenrevolten[COLOR_REVERT] erzeugt, greifen den Spieler and und kämpfen bis zum Tod. [PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Diener, Kriminelle und Sklaven[\LINK].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_SLAVE_PEDIA</Tag>
+        <English>[TAB]An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships. Approximately 6 million black Africans were killed by others in tribal wars. Only a few of them were granted freedom by their owners for loyal service until Slavery was abolished by the Northern American States under the government of Abraham Lincoln.</English>
+        <French>[TAB]On estime à 12 millions le nombre d'africains arrivés aux Amériques entre le 16ème et le 19ème siècle. Parmi ceux-ci, environ 645 000 sont arrivés aux actuels Etats-Unis. On estime généralement à 15% le taux de mortalité des captifs pendant le voyage.</French>
+        <German>[TAB]Die Kolonisierung Amerikas vom 16. bis 19. Jahrhundert ging mit einer Massenversklavung von Afrikanern einher, die in allen Teilen des dünn besiedelten Doppelkontinents als billige Arbeitskräfte eingesetzt wurden. Dies betrifft nicht nur die britischen, niederländischen, schwedischen, französischen und spanischen Kolonien, aus denen später die USA entstanden sind, sondern in noch grösserem Umfang Brasilien und die europäischen Kolonien in der Karibik. Auf dem nordamerikanischen Festland erlangte die Sklaverei jedoch Ausprägungsformen, die auf dem Doppelkontinent einzigartig waren, und nach der Gründung der USA stand sie im Spannungsfeld zwischen einer Ökonomie, die auf der Arbeitsleistung von Sklaven erbaut war, und dem politischen Programm einer jungen Nation, deren Selbstverständnis prominent die Idee der Freiheit zugrundelag. Nur wenigen Sklaven wurde von ihren Besitzern die Freiheit geschenkt, bis 1862 die Nordstaaten der USA unter der Führung von Abraham Lincoln die Sklaverei abschafften.</German>
+        <Italian>[TAB]An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships. Approximately 6 million black Africans were killed by others in tribal wars.</Italian>
+        <Spanish>[TAB]An estimated 12 million Africans arrived in the Americas from the 16th to the 19th centuries.Of these, an estimated 645,000 were brought to what is now the United States. The usual estimate is that about 15 per cent of slaves died during the voyage, with mortality rates considerably higher in Africa itself in the process of capturing and transporting indigenous peoples to the ships. Approximately 6 million black Africans were killed by others in tribal wars.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_CRIMINAL</Tag>
+        <English>Revolting Criminal:Revolting Criminals</English>
+        <French>
+            <Text>Bagnard revolté:Bagnards revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Kleinkrimineller:Revoltierende Kleinkriminelle</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Piccolo revolte:Piccoli revolti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Convicto repugnante:Convictos repugnantes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_CRIMINAL_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Revolting Criminals[COLOR_REVERT] cannot be acquired. They are only generated by [COLOR_HIGHLIGHT_TEXT]Revolts of Criminals[COLOR_REVERT] that work as forced labor. They will attack the Player and fight until death. [PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Revoltierende Kriminelle[COLOR_REVERT] können nicht erlangt werden. Sie werden lediglich durch [COLOR_HIGHLIGHT_TEXT]Aufstände von Kriminelle[COLOR_REVERT] erzeugt, die zur Zwangsarbeit gewzungen werden. Sie greifen den Spieler and und kämpfen bis zum Tod. [PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Diener, Kriminelle und Sklaven[\LINK].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_CRIMINAL_PEDIA</Tag>
+        <English>Facing a two-fold increase of population and crime, Europe's leaders decided to take a creative approach to penal reform: rather than building more prisons, criminals were simply shipped to distant colonies to serve out their terms. The English colony of Georgia was initially planned to be settled almost exclusively by previous occupants of debtors' prisons. Vast sections of Australia were also settled in this manner, with thousands of convicts being sent to cities like Fremantle to labor in the various public works projects. If they survived, these convicts could eventually earn the right to charge for their work and perhaps even purchase their freedom, becoming once again members of the society against which they had previously erred.</English>
+        <French>Confrontés à une importante augmentation de la population et du crime, les chefs d'Etat européens décident d'adopter une approche novatrice vis-à-vis de la réforme pénale : plutôt que de construire de nouvelles prisons, les criminels sont simplement expédiés dans des colonies lointaines pour purger leur peine. La colonie anglaise de Georgie est à l'origine prévue pour être peuplée presque exclusivement de migrants emprisonnés en Angleterre pour dette. Une grande partie des régions d'Australie sont également colonisées de cette manière et des milliers de détenus sont envoyés dans des villes comme Fremantle pour exécuter divers projets de travaux publics. S'ils survivent, ces détenus peuvent alors prétendre à un salaire et même acheter leur liberté, redevenant ainsi des membres de la société contre qui ils avaient autrefois péché.</French>
+        <German>In Anbetracht der Zunahme sowohl der Bevölkerung als auch der Kriminalität, entschieden sich die europäischen Machthaber für einen kreativen Weg der Sicherheitsverwahrung. Anstatt immer weiter neue Gefängnisse zu errichten, wurden Kriminelle einfach in entfernte Kolonien entsandt, um dort die Zeit ihrer Strafe zu verbringen. Die britische Kolonie Georgia sollte ursprünglich ausschließlich mit ehemaligen Insassen aus Schuldnergefängnissen besiedelt werden. Auch weite Teile Australiens wurden auf diese Weise besiedelt, indem Verurteilte in Städte wie Fremantle entsandt wurden, um dort in verschiedenen öffentlichen Projekten zu arbeiten. Die Verurteilten, die überlebten, konnten sich schließlich das Recht auf Bezahlung für ihre Arbeit verdienen und schließlich vielleicht sogar ihre Freiheit kaufen, wodurch sie wieder ein Teil der Gesellschaft wurden, der sie vormals Schaden zugefügt hatten.</German>
+        <Italian>Di fronte al contemporaneo aumento di popolazione e crimine, i leader europei decisero di assumere un approccio creativo alle riforme penali: piuttosto di costruire ulteriori prigioni, i criminali venivano semplicemente inviati nelle distanti colonie per scontare la propria pena. La colonia inglese della Georgia doveva inizialmente venire colonizzata quasi esclusivamente da precedenti galeotti, finiti in prigione per debiti. Anche gran parte dell'Australia fu colonizzata in questo modo, con migliaia di condannati inviati in città come Fremantle per lavorare nei diversi progetti pubblici. Se fossero sopravvissuti, i condannati avrebbero infine potuto ottenere il diritto di guadagnare con il proprio lavoro e forse addirittura acquistare la propria libertà, tornando a essere membri della società contro cui avevano precedentemente errato.</Italian>
+        <Spanish>Al enfrentarse a un aumento galopante de la población y la delincuencia, los líderes europeos optaron por un enfoque creativo de las reformas penales: en vez de construir más prisiones, se limitarían a expatriar a los presidiarios a colonias lejanas donde cumplirían condena. La colonia inglesa de Georgia se pensó en un inicio para que fuera ocupada exclusivamente por los deudores condenados a prisión. También se colonizaron de esta manera grandes extensiones de Australia, con miles de presidiarios a los que se envió a Fremantle a realizar trabajos forzados en diversos proyectos de obras públicas. Si sobrevivían, tenían el derecho de cobrar por su trabajo y, con suerte, de comprar su libertad, con lo que podrían volver a convertirse en miembros de la sociedad a la que previamente habían fallado.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE</Tag>
+        <English>
+            <Text>Revolting Native Slave:Revolting Native Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave indigène revolté:Esclaves indigènes revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Versklavter Ureinwohner: Revoltierende Versklavte Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Spanish>
+            <Text>Esclavo Nativo:Esclavos Nativos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Revolting Native Slaves[COLOR_REVERT] cannot be acquired. They are only generated by [COLOR_HIGHLIGHT_TEXT]Slave Revolts[COLOR_REVERT], will attack the Player and fight until death. [PARAGRAPH:2]For more information, see [LINK=CONCEPT_SLAVES]Servants, Criminals and Slaves[\LINK].</English>
+        <German>[COLOR_UNIT_TEXT]Revoltierende Versklavte Ureinwohner[COLOR_REVERT] können nicht erlangt werden. Sie werden lediglich durch [COLOR_HIGHLIGHT_TEXT]Sklavenrevolten[COLOR_REVERT] erzeugt, greifen den Spieler and und kämpfen bis zum Tod. [PARAGRAPH:2]Für weitere Informationen siehe [LINK=CONCEPT_SLAVES]Diener, Kriminelle und Sklaven[\LINK].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLTING_NATIVE_SLAVE_PEDIA</Tag>
+        <English>[TAB]Before Slaves from Africa were brought to the New World, the use of labour from enslaved Natives was widely spread, especially in South and Central America.</English>
+        <French>[TAB]Avant l'arrivée des esclaves venus d'Afrique, l'usage d'indigènes capturés comme esclaves était très répandu, particulièrement en Amérique du Sud et en Amérique Centrale.</French>
+        <German>[TAB]Bevor Sklaven aus Afrika in großen Mengen in die Neue Welt gebracht wurden, war der Handel mit versklavten Ureinwohnern weit verbreitet. Vorallem in Süd- und Zentralamerika.</German>
+        <Italian>[TAB]Before Slaves from Africa were brought to the New World, the use of labour from enslaved Natives was widely spread, especially in South and Central America.</Italian>
+        <Spanish>[TAB]Before Slaves from Africa were brought to the New World, the use of labour from enslaved Natives was widely spread, especially in South and Central America.</Spanish>
     </TEXT>
 </Civ4GameText>
