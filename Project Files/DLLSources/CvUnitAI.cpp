@@ -9290,6 +9290,8 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 							}
 							// TAC - AI Improved Naval AI - koma13 - END
 
+							int iBestDirectionValue = MAX_INT;
+
 							if (bValid)
 							{
 								CvPlot* pLoopPlot = NULL;
@@ -9300,7 +9302,6 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 								}
 								else
 								{
-									int iBestDirectionValue = MAX_INT;
 									for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
 									{
 										CvPlot* pDirectionPlot = plotDirection(pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE(), (DirectionTypes)iDirection);
@@ -9334,7 +9335,7 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 									}
 									
 									iValue *= 1000;
-									iValue /= 100 + ((iPathTurns == 0) ? 0 : getPathCost());
+									iValue /= 100 + ((iPathTurns == 0) ? 1 : iBestDirectionValue);
 									
 									int iDistance = stepDistance(pLoopSelectionGroup->getX(), pLoopSelectionGroup->getY(), pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE());
 									
