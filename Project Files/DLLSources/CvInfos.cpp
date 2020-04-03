@@ -1354,6 +1354,7 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_iMovesChange(0),
 	m_iWorkRate(0),
 	m_iMissionaryRate(0),
+	m_iNativeTradeRate(0), // WTP, ray, Native Trade Posts - START
 	m_iPowerValue(0),
 	m_iAssetValue(0),
 	m_bWorkPlot(false),
@@ -1442,6 +1443,12 @@ int CvProfessionInfo::getMissionaryRate() const
 {
 	return m_iMissionaryRate;
 }
+// WTP, ray, Native Trade Posts - START
+int CvProfessionInfo::getNativeTradeRate() const
+{
+	return m_iNativeTradeRate;
+}
+// WTP, ray, Native Trade Posts - END
 int CvProfessionInfo::getPowerValue() const
 {
 	return m_iPowerValue;
@@ -1546,6 +1553,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMovesChange);
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iMissionaryRate);
+	stream->Read(&m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_bWorkPlot);
@@ -1610,6 +1618,7 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMovesChange);
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iMissionaryRate);
+	stream->Write(m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iAssetValue);
 	stream->Write(m_bWorkPlot);
@@ -1672,6 +1681,7 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMovesChange, "iMovesChange");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iMissionaryRate, "iMissionaryRate");
+	pXML->GetChildXmlValByName(&m_iNativeTradeRate, "iNativeTradeRate"); // WTP, ray, Native Trade Posts - START
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_bWorkPlot, "bWorkPlot");
@@ -2567,6 +2577,7 @@ m_iMoves(0),
 m_iWorkRate(0),
 m_iWorkRateModifier(0),
 m_iMissionaryRateModifier(0),
+m_iNativeTradeRateModifier(0), // WTP, ray, Native Trade Posts - START
 m_iCombat(0),
 m_iXPValueAttack(0),
 m_iXPValueDefense(0),
@@ -2803,6 +2814,12 @@ int CvUnitInfo::getMissionaryRateModifier() const
 {
 	return m_iMissionaryRateModifier;
 }
+// WTP, ray, Native Trade Posts - START
+int CvUnitInfo::getNativeTradeRateModifier() const
+{
+	return m_iNativeTradeRateModifier;
+}
+// WTP, ray, Native Trade Posts - END
 int CvUnitInfo::getCombat() const
 {
 	return m_iCombat;
@@ -3435,6 +3452,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iWorkRateModifier);
 	stream->Read(&m_iMissionaryRateModifier);
+	stream->Read(&m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iCombat);
 	stream->Read(&m_iXPValueAttack);
 	stream->Read(&m_iXPValueDefense);
@@ -3663,6 +3681,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iWorkRateModifier);
 	stream->Write(m_iMissionaryRateModifier);
+	stream->Write(m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iCombat);
 	stream->Write(m_iXPValueAttack);
 	stream->Write(m_iXPValueDefense);
@@ -3926,6 +3945,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iWorkRateModifier, "iWorkRateModifier");
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
+	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
 	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
 	pXML->SetVariableListTagPair(&m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
 	// < JAnimals Mod Start >

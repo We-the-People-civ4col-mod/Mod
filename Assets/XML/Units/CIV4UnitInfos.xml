@@ -174,6 +174,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -334,6 +335,17 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -521,6 +533,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -788,6 +801,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -973,6 +997,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -1218,6 +1243,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -1231,6 +1267,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
@@ -1429,6 +1469,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -1770,6 +1811,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -1951,6 +2003,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -2192,6 +2245,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -2276,6 +2340,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -2529,6 +2594,10 @@
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_LINE_INFANTRY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
@@ -2734,6 +2803,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -2995,6 +3065,10 @@
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_LINE_INFANTRY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
@@ -3194,6 +3268,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -3398,6 +3473,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -3570,6 +3649,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -3774,6 +3854,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -3946,6 +4030,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -4134,6 +4219,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -4306,6 +4395,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -4494,6 +4584,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -4666,6 +4760,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -4854,6 +4949,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -5026,6 +5125,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -5214,6 +5314,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -5386,6 +5490,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -5574,6 +5679,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -5746,6 +5855,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -5934,6 +6044,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -6106,6 +6220,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -6302,6 +6417,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -6474,6 +6593,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -6670,6 +6790,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -6842,6 +6966,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -7038,6 +7163,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -7210,6 +7339,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -7406,6 +7536,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -7578,6 +7712,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -7766,6 +7901,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -7938,6 +8077,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -8118,6 +8258,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -8290,6 +8434,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -8478,6 +8623,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -8650,6 +8799,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -8830,6 +8980,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -9002,6 +9156,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -9182,6 +9337,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -9354,6 +9513,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -9534,6 +9694,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -9706,6 +9870,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -9876,6 +10041,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -10050,6 +10219,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -10213,6 +10383,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -10226,6 +10407,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -10400,6 +10585,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -10604,6 +10790,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -10776,6 +10966,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -10980,6 +11171,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -11152,6 +11347,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -11352,6 +11548,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -11524,6 +11724,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -11724,6 +11925,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -11896,6 +12101,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -12092,6 +12298,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -12264,6 +12474,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -12460,6 +12671,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -12632,6 +12847,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -12832,6 +13048,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -13004,6 +13224,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -13204,6 +13425,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -13376,6 +13601,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -13576,6 +13802,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -13748,6 +13978,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -13952,6 +14183,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -14124,6 +14359,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -14328,6 +14564,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -14500,6 +14740,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -14704,6 +14945,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -14876,6 +15121,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -15080,6 +15326,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -15252,6 +15502,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -15448,6 +15699,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -15620,6 +15875,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -15816,6 +16072,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -15988,6 +16248,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -16192,6 +16453,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -16364,6 +16629,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -16568,6 +16834,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -16740,6 +17010,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -16952,6 +17223,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -17124,6 +17399,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -17328,6 +17604,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -17503,6 +17783,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -17661,6 +17942,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -17687,6 +17979,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -17767,6 +18063,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -17936,6 +18233,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -17958,6 +18266,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -18056,6 +18368,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -18251,6 +18564,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -18404,6 +18718,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -18578,6 +18893,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -18754,6 +19070,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -18908,6 +19225,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -19113,6 +19431,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -19283,6 +19602,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -19436,6 +19756,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -19589,6 +19910,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -19725,6 +20047,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -19922,6 +20245,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -20099,6 +20423,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -20393,6 +20718,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -20568,6 +20894,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -20740,6 +21070,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -20923,6 +21254,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -21099,6 +21434,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -21272,6 +21608,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -21450,6 +21790,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -21625,6 +21966,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -21705,6 +22050,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -21869,6 +22215,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -22033,6 +22380,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -22188,6 +22536,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -22355,6 +22704,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -22541,6 +22891,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -22620,6 +22974,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -22810,6 +23165,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -22889,6 +23248,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -23079,6 +23439,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -23158,6 +23522,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -23348,6 +23713,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -23528,6 +23897,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>100</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -23701,6 +24071,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -23879,6 +24253,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -24039,6 +24414,10 @@
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -24213,6 +24592,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -24409,6 +24789,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -24590,6 +24981,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -24786,6 +25178,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -24967,6 +25370,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -25163,6 +25567,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -25344,6 +25759,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -25544,6 +25960,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -25615,6 +26035,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -25872,6 +26293,10 @@
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_PIONEER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
@@ -25954,6 +26379,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -26258,6 +26684,10 @@
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_SCOUT</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
@@ -26437,6 +26867,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -26631,6 +27062,17 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -26831,6 +27273,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -26998,6 +27441,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_UNIT_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -27008,6 +27462,12 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_CHRISTIAN_MISSIONARY_PROT</Type>
@@ -27183,6 +27643,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -27350,6 +27811,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_MISSIONARY_PROT</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -27360,6 +27832,12 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_RUSSIAN_MISSIONARY</Type>
@@ -27535,6 +28013,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -27702,6 +28181,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_RUSSIAN_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -27712,6 +28202,394 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
+        </UnitInfo>
+        <UnitInfo>
+            <Type>UNIT_EXPERT_TRADER</Type>
+            <Class>UNITCLASS_EXPERT_TRADER</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>NONE</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
+            <DefaultProfession>PROFESSION_NATIVE_TRADER</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_EXPERT_TRADER</Description>
+            <Civilopedia>TXT_KEY_UNIT_EXPERT_TRADER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_EXPERT_TRADER_STRATEGY</Strategy>
+            <iTeachLevel>3</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>0</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>1</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>0</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_TRADER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COLONIST</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds>
+                <Build>
+                    <BuildType>BUILD_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLASTERED_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FARM</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_PASTURE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MINE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_QUARRY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_VINEYARD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COLLECTORS_POST2</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_LODGE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_COCOA_PLANTATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_TRAPPER_HUT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_FORT</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_MONASTERY</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_JUNGLE</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_DRAIN_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_GRASS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_MARSH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_SAVANNAH</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+            </Builds>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>-2000</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iImmigrationWeight>100</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>100</iNativeTradeRateModifier>
+            <TerrainImpassables/>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>1</iCombat>
+            <iXPValueAttack>4</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>0</iWithdrawalProb>
+            <iCityAttack>0</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>0</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses/>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers/>
+            <YieldDemands>
+                <YieldDemand>
+                    <YieldType>YIELD_COFFEE</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WOOL_CLOTH</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_LEATHER</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_SALT</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+            </YieldDemands>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COATS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_COATS</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HEALTH</YieldType>
+                    <iChange>1</iChange>
+                </YieldChange>
+            </YieldChanges>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>350</iAsset>
+            <iPower>0</iPower>
+            <iNativeLearnTime>-1</iNativeLearnTime>
+            <iStudentWeight>0</iStudentWeight>
+            <iTeacherWeight>2</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.25</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>1</iMeleeWaveSize>
+                    <iRangedWaveSize>1</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_EXPERT_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_RUSSIAN_MISSIONARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_EXPERT_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_NOBLE</Type>
@@ -27883,6 +28761,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -28083,6 +28962,10 @@
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
@@ -28255,6 +29138,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -28455,6 +29339,17 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -28548,6 +29443,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -28755,6 +29651,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -28900,6 +29797,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -29045,6 +29943,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -29186,6 +30085,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -29331,6 +30231,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -29476,6 +30377,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -29626,6 +30528,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -29786,6 +30689,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables>
                 <TerrainImpassable>
                     <TerrainType>TERRAIN_OCEAN</TerrainType>
@@ -29954,6 +30858,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -30125,6 +31030,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -30296,6 +31202,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -30467,6 +31374,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -30638,6 +31546,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -30809,6 +31718,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -30989,6 +31899,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -31147,6 +32058,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -31309,6 +32221,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -31555,6 +32468,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -31717,6 +32631,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -31861,6 +32776,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -32031,6 +32947,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -32197,6 +33114,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -32354,6 +33272,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -32507,6 +33426,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -32652,6 +33572,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -32828,6 +33749,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
@@ -32991,6 +33913,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33119,6 +34042,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33247,6 +34171,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33375,6 +34300,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33503,6 +34429,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33631,6 +34558,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33759,6 +34687,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -33887,6 +34816,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34015,6 +34945,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34143,6 +35074,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34271,6 +35203,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34399,6 +35332,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34527,6 +35461,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34655,6 +35590,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34783,6 +35719,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -34911,6 +35848,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35039,6 +35977,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35167,6 +36106,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35295,6 +36235,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35423,6 +36364,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35551,6 +36493,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35679,6 +36622,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35807,6 +36751,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -35935,6 +36880,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36063,6 +37009,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36191,6 +37138,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36319,6 +37267,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36447,6 +37396,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36575,6 +37525,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36703,6 +37654,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36831,6 +37783,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -36959,6 +37912,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37087,6 +38041,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37215,6 +38170,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37343,6 +38299,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37471,6 +38428,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37599,6 +38557,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37727,6 +38686,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37855,6 +38815,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -37983,6 +38944,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38111,6 +39073,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38239,6 +39202,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38367,6 +39331,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38495,6 +39460,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38623,6 +39589,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38751,6 +39718,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -38879,6 +39847,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39007,6 +39976,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39135,6 +40105,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39263,6 +40234,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39391,6 +40363,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39519,6 +40492,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39648,6 +40622,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
@@ -39779,6 +40754,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -39916,6 +40892,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40053,6 +41030,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40190,6 +41168,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40327,6 +41306,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40464,6 +41444,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40601,6 +41582,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40738,6 +41720,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -40875,6 +41858,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -41012,6 +41996,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -41149,6 +42134,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>
@@ -41286,6 +42272,7 @@
             <iWorkRate>0</iWorkRate>
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
             <TerrainNatives>

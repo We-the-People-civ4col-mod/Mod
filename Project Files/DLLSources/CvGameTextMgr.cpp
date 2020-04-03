@@ -1210,6 +1210,14 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_ESTABLISH_MISSIONS"));
 	}
 
+	// WTP, ray, Native Trade Posts - START
+	if (kProfession.getNativeTradeRate() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_ESTABLISH_TRADE_POST"));
+	}
+	// WTP, ray, Native Trade Posts - END
+
 	if (kProfession.canFound())
 	{
 		szBuffer.append(NEWLINE);
@@ -4901,6 +4909,13 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BETTER_MISSION_RATE", kUnitInfo.getMissionaryRateModifier()));
 	}
+	// WTP, ray, Native Trade Posts - START
+	if (kUnitInfo.getNativeTradeRateModifier() != 0)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_BETTER_TRADE_POST_RATE", kUnitInfo.getNativeTradeRateModifier()));
+	}
+	// WTP, ray, Native Trade Posts - END
 	if (kUnitInfo.isNoDefensiveBonus())
 	{
 		szBuffer.append(NEWLINE);
@@ -7675,6 +7690,15 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 	{
 		szBuffer.append(CvWString::format(L" %c", GC.getCivilizationInfo(GET_PLAYER(pCity->getMissionaryPlayer()).getCivilizationType()).getMissionaryChar()));
 	}
+
+	// WTP, ray, Native Trade Posts - START
+	if (pCity->getTradePostPlayer() != NO_PLAYER)
+	{
+		szBuffer.append(CvWString::format(L" %c", GC.getYieldInfo(YIELD_TRADE_GOODS).getChar()));
+	}
+	// WTP, ray, Native Trade Posts - END
+
+
 	// WTP, ray, improvement Native Trade Indicator, issue #85 - START
 	CvPlayer& cityOwnerPlayer =	GET_PLAYER(pCity->getOwnerINLINE());
 	if (cityOwnerPlayer.isNative())

@@ -349,6 +349,7 @@ public:
 	DllExport int getMovesChange() const;
 	DllExport int getWorkRate() const;
 	DllExport int getMissionaryRate() const;
+	DllExport int getNativeTradeRate() const; // WTP, ray, Native Trade Posts - START
 	DllExport int getPowerValue() const;
 	DllExport int getAssetValue() const;
 	DllExport bool isWorkPlot() const;
@@ -391,6 +392,7 @@ protected:
 	int m_iMovesChange;
 	int m_iWorkRate;
 	int m_iMissionaryRate;
+	int m_iNativeTradeRate; // WTP, ray, Native Trade Posts - START
 	int m_iPowerValue;
 	int m_iAssetValue;
 	bool m_bWorkPlot;
@@ -678,6 +680,7 @@ public:
 	DllExport int getWorkRate() const;
 	DllExport int getWorkRateModifier() const;
 	DllExport int getMissionaryRateModifier() const;
+	DllExport int getNativeTradeRateModifier() const; // WTP, ray, Native Trade Posts - START
 	DllExport int getCombat() const;
 	DllExport void setCombat(int iNum);
 	DllExport int getXPValueAttack() const;
@@ -858,6 +861,7 @@ protected:
 	int m_iWorkRate;
 	int m_iWorkRateModifier;
 	int m_iMissionaryRateModifier;
+	int m_iNativeTradeRateModifier; // WTP, ray, Native Trade Posts - START
 	int m_iCombat;
 	int m_iXPValueAttack;
 	int m_iXPValueDefense;

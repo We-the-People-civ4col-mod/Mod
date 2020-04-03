@@ -837,6 +837,7 @@ void CyEnumsPythonInterface()
 		.value("UNITAI_SETTLER", UNITAI_SETTLER)
 		.value("UNITAI_WORKER", UNITAI_WORKER)
 		.value("UNITAI_MISSIONARY", UNITAI_MISSIONARY)
+		.value("UNITAI_TRADER", UNITAI_TRADER) // WTP, ray, Native Trade Posts - START
 		.value("UNITAI_SCOUT", UNITAI_SCOUT)
 		.value("UNITAI_WAGON", UNITAI_WAGON)
 		.value("UNITAI_TREASURE", UNITAI_TREASURE)
@@ -984,6 +985,7 @@ void CyEnumsPythonInterface()
 		.value("COMMAND_SAIL_TO_AFRICA", COMMAND_SAIL_TO_AFRICA) /*** TRIANGLETRADE 10/15/08 by DPII ***/
 		.value("COMMAND_SAIL_TO_PORT_ROYAL", COMMAND_SAIL_TO_PORT_ROYAL) // R&R, ray, Port Royal
 		.value("COMMAND_MERGE_TREASURES", COMMAND_MERGE_TREASURES) // WTP, merge Treasures, of Raubwuerger
+		.value("COMMAND_ESTABLISH_TRADE_POST", COMMAND_ESTABLISH_TRADE_POST) // WTP, ray, Native Trade Posts - START
 		.value("NUM_COMMAND_TYPES", NUM_COMMAND_TYPES)
 		;
 	python::enum_<ControlTypes>("ControlTypes")

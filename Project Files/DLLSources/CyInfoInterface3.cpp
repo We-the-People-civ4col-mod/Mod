@@ -492,6 +492,7 @@ void CyInfoPythonInterface3()
 		.def("getMovesChange", &CvProfessionInfo::getMovesChange, "int ()")
 		.def("getWorkRate", &CvProfessionInfo::getWorkRate, "int ()")
 		.def("getMissionaryRate", &CvProfessionInfo::getMissionaryRate, "int ()")
+		.def("getNativeTradeRate", &CvProfessionInfo::getNativeTradeRate, "int ()") // WTP, ray, Native Trade Posts - START
 		.def("isWorkPlot", &CvProfessionInfo::isWorkPlot, "bool ()")
 		.def("isCitizen", &CvProfessionInfo::isCitizen, "bool ()")
 		.def("isWater", &CvProfessionInfo::isWater, "bool ()")

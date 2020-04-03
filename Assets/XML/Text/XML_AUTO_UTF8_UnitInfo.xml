@@ -5867,4 +5867,22 @@
         <Italian>[TAB]Before Slaves from Africa were brought to the New World, the use of labour from enslaved Natives was widely spread, especially in South and Central America.</Italian>
         <Spanish>[TAB]Before Slaves from Africa were brought to the New World, the use of labour from enslaved Natives was widely spread, especially in South and Central America.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EXPERT_TRADER</Tag>
+        <English>Expert Native Trader:Expert Native Traders</English>
+        <German>
+            <Text>Erfahrener Ureinwohnerhändler:Erfahrene Ureinwohnerhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EXPERT_TRADER_STRATEGY</Tag>
+        <English>[LINK=PROFESSION_NATIVE_TRADER]Native Traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] that can establish [COLOR_HIGHLIGHT_TEXT]Trade Posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] [LINK=CONCEPT_SETTLEMENTS]Settlements[\LINK]. Over time, Trade Posts will generate money and create [LINK=UNIT_TREASURE]Treasures[\LINK], that are sent back to the colonies.Doing this with a [LINK=UNIT_EXPERT_TRADER]Exptert Trader[\LINK] greatly increase the rate at which new [LINK=UNIT_TREASURE]Treasures[\LINK] are created.</English>
+        <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können. Mit der Zeit erzeugen Handelsposten Gold, welches sie dann als [LINK=UNIT_TREASURE]Schätze[\LINK] zurück in die Kolonien schicken.Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK] erhöht dies drastisch die Rate mit der [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt werden.</German>    
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EXPERT_TRADER_PEDIA</Tag>
+        <English>Fur trading was one of the main economic activities in Northern America from the late 16th century to the mid-19th century. At the time, demand for fur was surging in Europe as it was used to make cloth and fancy hats. Data collected from England in the 18th century highlights that the years from 1746 to 1763 saw an increase of 12 shillings per pelt. It has been calculated that over 20 million beaver hats were exported from England alone from 1700 to 1770. Both trading partners, Native Americans and Europeans, provided the other a comparative advantage in the fur trade industry. The opportunity cost of hunting beavers in Europe was extremely high: by the seventeenth and eighteenth centuries, the Eurasian beaver was near extinction in England and France. On the other hand, traders and trappers thought the wildlife in the New World was essentially limitless. Native Americans made use of the trade goods received, particularly knives, axes, and guns. The fur trade provided a stable source of income for many Native Americans until the mid-19th century, when changing fashion trends in Europe and a decline in the beaver population in North America brought about a collapse in demand for fur.</English>
+    </TEXT>
 </Civ4GameText>

@@ -207,6 +207,9 @@ public:
 	int /*PlayerTypes*/ getMissionaryPlayer() const; // R&R, Robert Surcouf, No More Variables Hidden game option START
 	int getMissionaryRate() const; // R&R, Robert Surcouf, No More Variables Hidden game option END
 	
+	int /*PlayerTypes*/ getTradePostPlayer() const; // WTP, ray, Native Trade Posts - START
+	int getNativeTradeRate() const; // WTP, ray, Native Trade Posts - START
+
 	bool isRevealed(int /*TeamTypes*/ eIndex, bool bDebug);	
 	void setRevealed(int /*TeamTypes*/ eIndex, bool bNewValue);	
 	std::wstring getName();

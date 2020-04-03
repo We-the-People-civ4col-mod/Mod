@@ -743,6 +743,14 @@ public:
 	int getMissionarySuccessPercent() const;
 	void setMissionarySuccessPercent(int iValue);
 
+	// WTP, ray, Native Trade Posts - START
+	void burnTradePosts(PlayerTypes ePlayer);
+	bool canHaveTradePost(PlayerTypes ePlayer) const;
+	void validateTradePosts();
+	int getNativeTradePostSuccessPercent() const;
+	void setNativeTradePostSuccessPercent(int iValue);
+	// WTP, ray, Native Trade Posts - END
+
 	int getRebelCombatPercent() const;
 
 	int getProfessionEquipmentModifier(ProfessionTypes eProfession) const;
@@ -928,6 +936,7 @@ protected:
 	int m_iMissionaryRateModifier;
 	int m_iNativeTradeModifier; // R&R, ray, new Attribute in Traits
 	int m_iMissionarySuccessPercent;
+	int m_iNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
 
 	uint m_uiStartTime;  // XXX save these?
 

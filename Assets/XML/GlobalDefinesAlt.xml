@@ -1085,4 +1085,34 @@
 		<DefineName>MAX_TREASURE_AMOUNT</DefineName>
 		<iDefineIntVal>3000</iDefineIntVal>
 	</Define>
+	<!-- Native Trade Post - begin -->
+	<Define>
+		<DefineName>TRADER_RATE_EFFECT_ON_SUCCESS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TRADE_POST_GOLD_PER_NATIVE</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>GAIN_ATTITUDE_FOR_TRADE_POST</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_CHANCE_TRADE_POST</DefineName>
+		<iDefineIntVal>25</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_CHANCE_TRADE_POST</DefineName>
+		<iDefineIntVal>90</iDefineIntVal>
+	</Define>
+	<!-- Native Trade Post - End -->
 </Civ4Defines>

@@ -2133,6 +2133,7 @@ bool CvUnit::isActionRecommended(int iAction)
 	case COMMAND_SPEAK_WITH_CHIEF:
 	case COMMAND_YIELD_TRADE:
 	case COMMAND_LEARN:
+	case COMMAND_ESTABLISH_TRADE_POST: // WTP, ray, Native Trade Posts - START
 		return true;
 		break;
 	default:
@@ -2434,6 +2435,14 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 
 	case COMMAND_ESTABLISH_MISSION:
 		if (canEstablishMission())
+		{
+			return true;
+		}
+		break;
+
+	// WTP, ray, Native Trade Posts - START
+	case COMMAND_ESTABLISH_TRADE_POST:
+		if (canEstablishTradePost())
 		{
 			return true;
 		}
@@ -2752,6 +2761,12 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 		case COMMAND_ESTABLISH_MISSION:
 			establishMission();
+			bCycle = true;
+			break;
+
+		// WTP, ray, Native Trade Posts - START
+		case COMMAND_ESTABLISH_TRADE_POST:
+			establishTradePost();
 			bCycle = true;
 			break;
 
@@ -5260,6 +5275,64 @@ bool CvUnit::canEstablishMission() const
 	return true;
 }
 
+
+// WTP, ray, Native Trade Posts - START
+bool CvUnit::canEstablishTradePost() const
+{
+	if (getProfession() == NO_PROFESSION)
+	{
+		return false;
+	}
+
+	if (GC.getProfessionInfo(getProfession()).getNativeTradeRate() <= 0)
+	{
+		return false;
+	}
+
+	if(!canMove())
+	{
+		return false;
+	}
+
+	CvPlot* pPlot = plot();
+	if (pPlot == NULL)
+	{
+		return false;
+	}
+
+	CvCity* pCity = pPlot->getPlotCity();
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+	if (!kCityOwner.canHaveTradePost(getOwnerINLINE()))
+	{
+		return false;
+	}
+
+	if (pCity->getTradePostCivilization() == getCivilizationType())
+	{
+		return false;
+	}
+
+	// R&R, ray, Natives do not talk when furious - START
+	if (isHuman() && !kCityOwner.isHuman() && isAutomated())
+	{
+		int currentPlayerAttitude = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
+		if (currentPlayerAttitude == 0)
+		{
+			return false;
+		}
+	}
+	// R&R, ray, Natives do not talk when furious - END
+
+	return true;
+}
+// WTP, ray, Native Trade Posts - END
+
+
 void CvUnit::establishMission()
 {
 	if (!canEstablishMission())
@@ -5320,6 +5393,68 @@ void CvUnit::establishMission()
 
 	kill(true);
 }
+
+// WTP, ray, Native Trade Posts - START
+void CvUnit::establishTradePost()
+{
+	if (!canEstablishTradePost())
+	{
+		return;
+	}
+
+	CvCity* pCity = plot()->getPlotCity();
+	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+
+	// R&R, ray, Natives do not talk when furious - START
+	int currentPlayerAttitude = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
+	if (isHuman() &&  currentPlayerAttitude == 0)
+	{
+		CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_NOT_WILLING_TO_TALK", pCity->getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+		return;
+	}
+	// R&R, ray, Natives do not talk when furious - ELSE
+
+	if (GC.getGameINLINE().getSorenRandNum(100, "Trade Post failure roll") > getNativeTradePostSuccessPercent())
+	{
+		CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_FAILED", plot()->getPlotCity()->getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+		GET_PLAYER(pCity->getOwnerINLINE()).AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
+	}
+	else
+	{
+		GET_PLAYER(getOwnerINLINE()).setNativeTradePostSuccessPercent(GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
+
+		int iNativeTradeRate = GC.getProfessionInfo(getProfession()).getNativeTradeRate() * (100 + getUnitInfo().getNativeTradeRateModifier()) / 100;
+		if (!isHuman())
+		{
+			iNativeTradeRate = (iNativeTradeRate * 100 + 50) / GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent();
+		}
+
+		// change Attitudes
+		int attitudeIncreaseForTradePost = GC.getDefineINT("GAIN_ATTITUDE_FOR_TRADE_POST");
+		kCityOwner.AI_changeAttitudeExtra(getOwnerINLINE(), attitudeIncreaseForTradePost);
+		if (pCity->getTradePostPlayer() != NO_PLAYER)
+		{
+			CvPlayer& oldTradePostPlayer = GET_PLAYER(pCity->getTradePostPlayer());
+			int attitudeDecreaseForDestroyingTradePost = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST");
+			oldTradePostPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingTradePost);
+		}
+
+		pCity->setTradePostPlayer(getOwnerINLINE());
+		pCity->setNativeTradeRate(iNativeTradeRate);
+
+		for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+		{
+			FatherPointTypes ePointType = (FatherPointTypes) i;
+			int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, GC.getFatherPointInfo(ePointType).getMissionaryPoints() * gameSpeedMod/100);
+		}
+	}
+
+	kill(true);
+}
+// WTP, ray, Native Trade Posts - END
 
 int CvUnit::getMissionarySuccessPercent() const
 {
@@ -5402,6 +5537,90 @@ int CvUnit::getMissionarySuccessPercent() const
 	return totalChance;
 	// R&R, ray, Rebuild Missioning End
 }
+
+
+// WTP, ray, Native Trade Posts - START
+int CvUnit::getNativeTradePostSuccessPercent() const
+{
+	CvCity* pCity = NULL;
+	CvPlot* pPlot = plot();
+	if (pPlot != NULL)
+	{
+		pCity = pPlot->getPlotCity();
+	}
+
+	//needed for UnitAI, includes small fix
+	if (pCity == NULL || !pCity->isNative())
+	{
+		//Old Code
+		return GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * (100 + (getUnitInfo().getNativeTradeRateModifier() * GC.getDefineINT("TRADER_RATE_EFFECT_ON_SUCCESS") / 100)) / 100;
+	}
+
+	// 1. Find out how many missions already exist at this Native-Nation -> Missioning Rate
+	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+
+	int numCitiesTotal = kCityOwner.getNumCities();
+
+	int numCitiesTradePosts = 0;
+	
+	CvCity* pLoopCity;
+	int iLoop;
+
+	for (pLoopCity = kCityOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kCityOwner.nextCity(&iLoop))
+	{
+		if (pLoopCity->getTradePostPlayer() != NO_PLAYER)
+		{
+			numCitiesTradePosts = (numCitiesTradePosts + 1);
+		}
+	}
+
+	// 2. Get Attitude of Natives to currently missioning Player
+	int attitudeNativeToTradePostPlayer = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
+
+	// 3. Check Attitudes of old missioninh player and existing Mission
+	int attitudeChanceImprovement = GC.getDefineINT("CHANCE_IMPROVEMENT_EACH_ATTITIUDE_LEVEL");
+	int penaltyExisingTradePost = 0;
+	int attitudeNativeToOldTradePostPlayer = 0;
+
+	if (pCity->getTradePostPlayer() != NO_PLAYER)
+	{
+		attitudeNativeToOldTradePostPlayer = kCityOwner.AI_getAttitude(pCity->getTradePostPlayer(), false);
+		penaltyExisingTradePost = GC.getDefineINT("CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS");
+	}
+
+	// 4. Getting the expertmodifier of this unit
+	int expertModifier = getUnitInfo().getNativeTradeRateModifier();
+
+	// 5. Getting Min and Max
+	int minChance = GC.getDefineINT("MIN_CHANCE_TRADE_POST");
+	int maxChance = GC.getDefineINT("MAX_CHANCE_TRADE_POST");
+
+	// 6. Putting it all together
+
+	//expert starts with higher value
+	int totalChance = 50 + expertModifier / 2;
+	//the more trade posts exist, the harder it gets
+	totalChance = totalChance - 100 * numCitiesTradePosts / numCitiesTotal;
+	//now take a look at attitudes
+	totalChance = totalChance + attitudeChanceImprovement * (attitudeNativeToTradePostPlayer - attitudeNativeToOldTradePostPlayer);
+	//now substract the penalty for exising trade post
+	totalChance = totalChance - penaltyExisingTradePost;
+
+	if (totalChance > maxChance)
+	{
+		totalChance = maxChance;
+	}
+
+	else if (totalChance < minChance)
+	{
+		totalChance = minChance;
+	}
+
+	return totalChance;
+
+}
+// WTP, ray, Native Trade Posts - END
+
 
 // R&R, ray , Stirring Up Natives - START
 bool CvUnit::canStirUp() const

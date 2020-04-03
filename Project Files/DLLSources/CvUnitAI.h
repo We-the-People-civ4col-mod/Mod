@@ -115,6 +115,7 @@ protected:
 	void AI_settlerMove();
 	void AI_workerMove();
 	void AI_missionaryMove();
+	void AI_nativeTraderMove(); // WTP, ray, Native Trade Posts - START
 	void AI_scoutMove();
 	void AI_treasureMove();
 	void AI_yieldUhMove();
@@ -206,6 +207,8 @@ protected:
 
 	bool AI_moveTowardsVictimCity();
 	bool AI_spreadReligion();
+
+	bool AI_spreadTradePosts(); // WTP, ray, Native Trade Posts - START
 
 	bool AI_learn(int iRange = 8);
 

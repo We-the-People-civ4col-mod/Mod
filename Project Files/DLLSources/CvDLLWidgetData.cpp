@@ -2254,6 +2254,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 				}
 			}
+			
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_ESTABLISH_MISSION)
 			{
 				CvUnit* pMissionary = NULL;
@@ -2276,6 +2277,31 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					szBuffer.append(gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_MISSION2", std::min(100, pMissionary->getMissionarySuccessPercent())));
 				}
 			}
+
+			// WTP, ray, Native Trade Posts - START
+			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_ESTABLISH_TRADE_POST)
+			{
+				CvUnit* pTrader = NULL;
+				pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
+				while (pSelectedUnitNode != NULL)
+				{
+					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
+					if (pSelectedUnit->canEstablishTradePost())
+					{
+						pTrader = pSelectedUnit;
+						break;
+					}
+
+					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
+				}
+
+				if (pTrader != NULL)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2", std::min(100, pTrader->getNativeTradePostSuccessPercent())));
+				}
+			}
+			// WTP, ray, Native Trade Posts - END
 
 			// R&R, ray , Stirring Up Natives - START
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_STIR_UP_NATIVES)

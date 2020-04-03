@@ -6118,6 +6118,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6221,6 +6225,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -7060,6 +7068,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -7163,6 +7175,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8009,6 +8025,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -8112,6 +8132,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8961,6 +8985,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -9064,6 +9092,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -9912,6 +9944,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10015,6 +10051,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -10854,6 +10894,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10957,6 +11001,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -11793,6 +11841,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -11896,6 +11948,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -12732,6 +12788,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -12835,6 +12895,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13692,6 +13756,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -13795,6 +13863,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -14644,6 +14716,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14747,6 +14823,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15585,6 +15665,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15688,6 +15772,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16547,6 +16635,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -16650,6 +16742,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -17490,6 +17586,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17593,6 +17693,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -18435,6 +18539,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -18538,6 +18646,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -19381,6 +19493,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -19484,6 +19600,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -20324,6 +20444,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -20427,6 +20551,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -21267,6 +21395,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -21370,6 +21502,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22219,6 +22355,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -22322,6 +22462,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -23142,6 +23286,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -23245,6 +23393,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -24094,6 +24246,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24197,6 +24353,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25032,6 +25192,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -25135,6 +25299,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25966,6 +26134,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26069,6 +26241,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -26903,6 +27079,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -27006,6 +27186,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -27831,6 +28015,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -27934,6 +28122,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -28773,6 +28965,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28876,6 +29072,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -29711,6 +29911,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -29814,6 +30018,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -30646,6 +30854,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -30749,6 +30961,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31580,6 +31796,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -31683,6 +31903,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -32514,6 +32738,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -32617,6 +32845,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -33442,6 +33674,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33545,6 +33781,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -34478,6 +34718,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -34581,6 +34825,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>

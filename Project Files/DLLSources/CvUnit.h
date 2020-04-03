@@ -182,6 +182,12 @@ public:
 	void establishMission();
 	int getMissionarySuccessPercent() const;
 
+	// WTP, ray, Native Trade Posts - START
+	bool canEstablishTradePost() const;
+	void establishTradePost();
+	int getNativeTradePostSuccessPercent() const;
+	// WTP, ray, Native Trade Posts - END
+
 	// R&R, ray , Stirring Up Natives - START
 	bool canStirUp() const;
 	void stirUpNatives();

@@ -803,8 +803,8 @@ public:
 	int getLOWEST_CITY_HEALTH();
 	// R&R, ray, Health - END
 
-	// WTP, merge Treasures, of Raubwuerger - START
-    int getMAX_TREASURE_AMOUNT();
+    int getMAX_TREASURE_AMOUNT(); // WTP, merge Treasures, of Raubwuerger - START
+	int getTRADE_POST_GOLD_PER_NATIVE();
 
 	DllExport float getCAMERA_MIN_YAW();
 	DllExport float getCAMERA_MAX_YAW();
@@ -1313,6 +1313,7 @@ protected:
 	// R&R, ray, Health - END
 
 	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger
+	int m_TRADE_POST_GOLD_PER_NATIVE; // WTP, ray, Native Trade Posts - START
 
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;
@@ -2226,6 +2227,13 @@ inline int CvGlobals::getMAX_TREASURE_AMOUNT()
 	return m_MAX_TREASURE_AMOUNT;
 }
 // WTP, merge Treasures, of Raubwuerger - END
+
+// WTP, ray, Native Trade Posts - START
+inline int CvGlobals::getTRADE_POST_GOLD_PER_NATIVE()
+{
+	return m_TRADE_POST_GOLD_PER_NATIVE;
+}
+// WTP, ray, Native Trade Posts - END
 
 inline float CvGlobals::getCAMERA_MIN_YAW()
 {

@@ -283,6 +283,7 @@ m_LOWEST_CITY_HEALTH(0),
 // R&R, ray, Health - END
 
 m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
+m_TRADE_POST_GOLD_PER_NATIVE(0), // WTP, ray, Native Trade Posts - START
 
 m_fCAMERA_MIN_YAW(0),
 m_fCAMERA_MAX_YAW(0),
@@ -2638,6 +2639,7 @@ void CvGlobals::cacheGlobals()
 	// R&R, ray, caching globals from Global Defines Alt - END
 
 	m_MAX_TREASURE_AMOUNT = getDefineINT("MAX_TREASURE_AMOUNT"); // WTP, merge Treasures, of Raubwuerger
+	m_TRADE_POST_GOLD_PER_NATIVE = getDefineINT("TRADE_POST_GOLD_PER_NATIVE"); // WTP, ray, Native Trade Posts - START
 
 	// K-Mod \ RaR
 	m_bUSE_AI_UNIT_UPDATE_CALLBACK = getDefineINT("USE_AI_UNIT_UPDATE_CALLBACK") != 0;

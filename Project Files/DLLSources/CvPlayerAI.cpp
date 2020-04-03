@@ -1271,6 +1271,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_SETTLER:
 	case UNITAI_WORKER:
 	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT:
 	case UNITAI_WAGON:
 	case UNITAI_TREASURE:
@@ -1314,6 +1315,7 @@ bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI) const
 	case UNITAI_SETTLER:
 	case UNITAI_WORKER:
 	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT:
 	case UNITAI_WAGON:
 	case UNITAI_TREASURE:
@@ -4734,6 +4736,8 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 			break;
 		case UNITAI_MISSIONARY:
 			break;
+		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
+			break;
 		case UNITAI_SCOUT:
 			break;
 		case UNITAI_WAGON:
@@ -4861,6 +4865,7 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		case UNITAI_SETTLER:
 		case UNITAI_WORKER:
 		case UNITAI_MISSIONARY:
+		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 		case UNITAI_SCOUT:
 			if (kUnitInfo.getDefaultProfession() != NO_PROFESSION)
 			{
@@ -5003,6 +5008,7 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 	case UNITAI_SETTLER:
 	case UNITAI_WORKER:
 	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT:
 		break;
 
@@ -10580,6 +10586,16 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 				}
 			}
 			break;
+		// WTP, ray, Native Trade Posts - START
+		case UNITAI_TRADER:
+			{
+				if (kProfession.getNativeTradeRate() > 0)
+				{
+					iValue += kProfession.getNativeTradeRate();
+				}
+			}
+			break;
+
 		case UNITAI_SCOUT:
 			{
 				if (kProfession.isScout())
@@ -10729,7 +10745,9 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 {
 	int iCurrentCount = AI_totalUnitAIs(eUnitAI);
 	int iCount = AI_totalUnitAIs(eUnitAI) + AI_getNumRetiredAIUnits(eUnitAI);
-	int iPopulation = AI_getPopulation() + AI_getNumRetiredAIUnits(UNITAI_MISSIONARY);
+	// WTP, ray, Native Trade Posts - START
+	// adjustment for UNITAI_TRADER
+	int iPopulation = AI_getPopulation() + AI_getNumRetiredAIUnits(UNITAI_MISSIONARY) + AI_getNumRetiredAIUnits(UNITAI_TRADER); 
 	int iValue = 0;
 	switch (eUnitAI)
 	{
@@ -10802,6 +10820,34 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 				}
 			}
 			break;
+
+		// WTP, ray, Native Trade Posts - START
+		case UNITAI_TRADER:
+			if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
+			{
+				int iLowerPop = 12;
+				int iPop = 15 + iCount * 5;
+				int iModifier = 0;
+				iModifier -= getNativeCombatModifier() * 4;
+				iModifier += getNativeTradeModifier();
+				iModifier += 10 * GC.getLeaderHeadInfo(getLeaderType()).getNativeAttitude();
+				iModifier += getNativeTradePostSuccessPercent() - 50;
+				if (iModifier != 0)
+				{
+					iLowerPop *= 100 + std::max(0, -iModifier);
+					iLowerPop /= 100 + std::max(0, iModifier);
+					iPop *= 100 + std::max(0, -iModifier);
+					iPop /= 100 + std::max(0, iModifier);
+				}
+
+				iValue = (100 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
+				if (iValue > 0)
+				{
+					iValue += 100;
+				}
+			}
+			break;
+		// WTP, ray, Native Trade Posts - END
 
 		case UNITAI_SCOUT:
 			if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
@@ -11256,6 +11302,21 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 			iConModifiers += iModifier / 8;
 		}
 	}
+
+	// WTP, ray, Native Trade Posts - START
+	if (kProfession.getNativeTradeRate() > 0)
+	{
+		int iModifier = kUnit.getNativeTradeRateModifier();
+		if (iModifier > 0)
+		{
+			iProModifiers += iModifier;
+		}
+		else
+		{
+			iConModifiers += iModifier / 8;
+		}
+	}
+	// WTP, ray, Native Trade Posts - EMD
 
 	if (kProfession.getWorkRate() > 0)
 	{

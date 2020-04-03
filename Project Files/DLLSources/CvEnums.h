@@ -1322,6 +1322,7 @@ enum DllExport UnitAITypes
 	UNITAI_SETTLER,
 	UNITAI_WORKER,
 	UNITAI_MISSIONARY,
+	UNITAI_TRADER, // WTP, ray, Native Trade Posts - START
 	UNITAI_SCOUT,
 	UNITAI_WAGON,
 	UNITAI_TREASURE,
@@ -1523,6 +1524,7 @@ enum DllExport CommandTypes
 	COMMAND_SAIL_TO_AFRICA, /*** TRIANGLETRADE 10/15/08 by DPII ***/
 	COMMAND_SAIL_TO_PORT_ROYAL, // R&R, ray, Port Royal
 	COMMAND_MERGE_TREASURES, // WTP, merge treasures, of Raubwuerger
+	COMMAND_ESTABLISH_TRADE_POST, // WTP, ray, Native Trade Posts - START
 
 #ifdef _USRDLL
 	NUM_COMMAND_TYPES

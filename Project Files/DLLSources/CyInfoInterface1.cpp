@@ -115,6 +115,7 @@ void CyInfoPythonInterface1()
 		.def("getWorkRate", &CvUnitInfo::getWorkRate, "int ()")
 		.def("getWorkRateModifier", &CvUnitInfo::getWorkRateModifier, "int ()")
 		.def("getMissionaryRateModifier", &CvUnitInfo::getMissionaryRateModifier, "int ()")
+		.def("getNativeTradeRateModifier", &CvUnitInfo::getNativeTradeRateModifier, "int ()") // WTP, ray, Native Trade Posts - START
 		.def("getCombat", &CvUnitInfo::getCombat, "int ()")
 		.def("setCombat", &CvUnitInfo::setCombat, "void (int)")
 		.def("getXPValueAttack", &CvUnitInfo::getXPValueAttack, "int ()")

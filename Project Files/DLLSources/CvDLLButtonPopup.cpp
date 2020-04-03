@@ -3445,6 +3445,16 @@ bool CvDLLButtonPopup::launchTalkNativesPopup(CvPopup* pPopup, CvPopupInfo& info
 		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, NULL, COMMAND_ESTABLISH_MISSION);
 	}
 
+	// WTP, ray, Native Trade Posts - START
+	if (pUnit->canEstablishTradePost())
+	{
+		++iNumActions;
+		CvWString szText = gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST");
+		szText += L" (" + gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2", std::min(100, pUnit->getNativeTradePostSuccessPercent())) + L")";
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, NULL, COMMAND_ESTABLISH_TRADE_POST);
+	}
+	// WTP, ray, Native Trade Posts - END
+
 	if (pUnit->canTradeYield(pUnit->plot()))
 	{
 		++iNumActions;

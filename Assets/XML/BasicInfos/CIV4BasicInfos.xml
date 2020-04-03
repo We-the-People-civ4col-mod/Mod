@@ -92,6 +92,11 @@
             <Civilopedia>TXT_KEY_CONCEPT_MISSIONARIES_PEDIA</Civilopedia>
         </ConceptInfo>
         <ConceptInfo>
+            <Type>CONCEPT_NATIVE_TRADERS</Type>
+            <Description>TXT_KEY_CONCEPT_NATIVE_TRADERS</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_NATIVE_TRADERS_PEDIA</Civilopedia>
+        </ConceptInfo>
+        <ConceptInfo>
             <Type>CONCEPT_COMBAT</Type>
             <Description>TXT_KEY_CONCEPT_COMBAT</Description>
             <Civilopedia>TXT_KEY_CONCEPT_COMBAT_PEDIA</Civilopedia>

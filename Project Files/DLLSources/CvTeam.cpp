@@ -719,6 +719,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 			if ((kPlayer.getTeam() == getID()) || (kPlayer.getTeam() == eTeam))
 			{
 				kPlayer.validateMissions();
+				kPlayer.validateTradePosts(); // WTP, ray, Native Trade Posts - START
 			}
 		}
 

@@ -229,6 +229,10 @@ bool CvUnitAI::AI_update()
 			case UNITAI_MISSIONARY:
 				AI_missionaryMove();
 				break;
+			// WTP, ray, Native Trade Posts - START
+			case UNITAI_TRADER:
+				AI_nativeTraderMove();
+				break;
 				
 			case UNITAI_SCOUT:
 				AI_scoutMove();
@@ -418,6 +422,7 @@ bool CvUnitAI::AI_europeUpdate()
 		case UNITAI_SETTLER:
 		case UNITAI_WORKER:
 		case UNITAI_MISSIONARY:
+		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 		case UNITAI_SCOUT:
 		case UNITAI_WAGON:
 		case UNITAI_TREASURE:
@@ -662,6 +667,10 @@ int CvUnitAI::AI_groupFirstVal()
 		
 	case UNITAI_MISSIONARY:
 		return 1;
+		break;
+
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
+		return 2;
 		break;
 	
 	case UNITAI_SCOUT:
@@ -1854,6 +1863,111 @@ void CvUnitAI::AI_missionaryMove()
 	getGroup()->pushMission(MISSION_SKIP);
 	return;
 }
+
+
+
+// WTP, ray, Native Trade Posts - START
+void CvUnitAI::AI_nativeTraderMove()
+{
+	PROFILE_FUNC();
+	
+	if (AI_breakAutomation())
+	{
+		return;
+	}
+
+	// Erik: Disabled for now, missionaries
+	// will not found or join cities at the start
+	// of the game
+	/*
+	// If we have no cities, become a colonist
+	// so that we can found or join one
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getNumCities() == 0)
+	{
+		AI_setUnitAIType(UNITAI_COLONIST);
+		AI_colonistMove();
+	}
+	*/
+
+	CvCity* pCity = (plot()->getOwnerINLINE() == getOwnerINLINE()) ? plot()->getPlotCity() : NULL;
+	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
+	if (bDanger)
+	{
+		if (pCity != NULL)
+		{
+			if (canJoinCity(plot()))
+			{
+				joinCity();
+				return;
+			}
+		}
+		if (AI_retreatToCity())
+		{
+			return;
+		}
+		if (AI_safety())
+		{
+			return;
+		}
+	}
+		
+	if (!isHuman() && pCity != NULL)
+	{
+		if (AI_betterJob())
+		{
+			return;
+		}
+	}
+	
+	if (isCargo())
+	{
+		if (AI_unloadWhereNeeded())
+		{
+			return;
+		}
+	}
+	
+	if (AI_spreadTradePosts())
+	{
+		return;
+	}
+	
+	if (area()->getNumUnrevealedTiles(getTeam()) > 0)
+	{
+		if (AI_exploreOpenBorders(4))
+		{
+			return;
+		}
+		
+		if (AI_explore(true))
+		{
+			return;
+		}
+	}
+	
+	//We should try and convert profession to something else
+	//When this is possible.
+
+	if (AI_retreatToCity())
+	{
+		AI_setUnitAIType(UNITAI_COLONIST);
+		GET_PLAYER(getOwnerINLINE()).AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1);
+		return;
+	}
+
+	if (AI_safety())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+// WTP, ray, Native Trade Posts - END
+
+
+
 
 void CvUnitAI::AI_scoutMove()
 {
@@ -8833,6 +8947,96 @@ bool CvUnitAI::AI_spreadReligion()
 
 	return false;
 }
+
+// WTP, ray, Native Trade Posts - START
+bool CvUnitAI::AI_spreadTradePosts()
+{
+	PROFILE_FUNC();
+	
+	FAssert(GC.getProfessionInfo(getProfession()).getNativeTradeRate() > 0);
+	
+	int iBestValue = 0;
+	CvPlot* pBestPlot = NULL;
+	CvPlot* pBestSpreadPlot = NULL;
+		
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
+	{
+		CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+		if (kLoopPlayer.isAlive())
+		{
+			if (kLoopPlayer.canHaveTradePost(getOwnerINLINE()) && getNativeTradePostSuccessPercent() > 50)
+			{
+				if (kLoopPlayer.AI_getAttitude(getOwnerINLINE()) >= ATTITUDE_ANNOYED)
+				{
+					int iLoop;
+					for (CvCity* pLoopCity = kLoopPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kLoopPlayer.nextCity(&iLoop))
+					{
+						CvPlot* pLoopPlot = pLoopCity->plot();
+						if (pLoopPlot->isRevealed(getTeam(), false))
+						{
+							if (pLoopPlot->getArea() == getArea())
+							{
+								if ((pLoopCity->getTradePostCivilization() != getCivilizationType()) && (pLoopPlot->calculateCulturePercent(pLoopPlot->getOwnerINLINE()) == 100))
+								{
+									if (kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_SPREAD, getGroup()) == 0)
+									{
+										int iPathTurns;
+										if (generatePath(pLoopPlot, MOVE_NO_ENEMY_TERRITORY, true, &iPathTurns))
+										{
+											if (iPathTurns < 10)
+											{
+												int iValue = pLoopCity->getPopulation();
+												
+												if (pLoopPlot->getCulture(getOwnerINLINE()) > 0)
+												{
+													iValue /= 4;
+												}
+												
+												iValue *= 100 + GC.getGameINLINE().getSorenRandNum(25, "AI best spread plot");
+												iValue /= 400 + getPathCost();
+												if (iValue > iBestValue)
+												{
+													iBestValue = iValue;
+													pBestSpreadPlot = pLoopPlot;
+													pBestPlot = getPathEndTurnPlot();
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+		
+
+	if ((pBestPlot != NULL) && (pBestSpreadPlot != NULL))
+	{
+		if (atPlot(pBestSpreadPlot))
+		{
+			FAssert(canEstablishTradePost());
+			establishTradePost();
+			kOwner.AI_changeNumRetiredAIUnits(UNITAI_TRADER, 1);
+			return true;
+		}
+		else
+		{
+			FAssert(!atPlot(pBestPlot));
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_SPREAD, pBestSpreadPlot);
+			return true;
+		}
+	}
+
+	return false;
+}
+// WTP, ray, Native Trade Posts - END
+
+
+
 
 bool CvUnitAI::AI_learn(int iRange)
 {

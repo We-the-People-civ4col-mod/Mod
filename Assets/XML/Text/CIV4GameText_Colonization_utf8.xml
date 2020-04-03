@@ -910,6 +910,16 @@
         <Spanish>[ICON_BULLET]Las misiones son un %D1%% más eficaces</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_CAN_ESTABLISH_TRADE_POST</Tag>
+        <English>[ICON_BULLET]Can Establish Trade Posts</English>
+        <German>[ICON_BULLET]Kann Handelsposten errichten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BETTER_TRADE_POST_RATE</Tag>
+        <English>[ICON_BULLET]Trade Posts are %D1%% more effective</English>
+        <German>[ICON_BULLET]Handelsposten sind %D1%% effektiver</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_NATIVES_CONVERTED</Tag>
         <English>Your mission has converted a Native in %s1_city</English>
         <French>Votre mission a converti un indigène dans la ville : %s1_city</French>
@@ -932,6 +942,16 @@
         <German>In %s1_city haben die Ureinwohner die %s2:3_civ_adjective Mission niedergebrannt und den Missionar in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, als er eine alte Götzenstatue zerbrochen hatte.</German>
         <Italian>I nativi a %s1_city hanno rinnegato la missione %s2_civ_adjective</Italian>
         <Spanish>Los Nativos %s1_city han abandonado la misión %s2:2_civ_adjective.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_ESTABLISHED</Tag>
+        <English>A %s2_civ_adjective trade post has been established in %s1_city</English>
+        <German>Ein %s2:3_civ_adjective Handelsposten wurde in %s1_city errichtet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_REMOVED</Tag>
+        <English>Natives in %s1_city have renounced the %s2_civ_adjective trade post</English>
+        <German>In %s1_city haben die Ureinwohner den %s2:3_civ_adjective Handelsposten niedergebrannt und den Händler in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, da er zu stark gefeilscht hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_POPULATION</Tag>
@@ -1745,7 +1765,7 @@
         <Tag>TXT_KEY_EVENT_THE_CITY</Tag>
         <English>the settlement</English>
         <French>la colonie</French>
-        <German>die Siedlung</German>
+        <German/>
         <Italian>l'insediamento</Italian>
         <Spanish>el asentamiento</Spanish>
     </TEXT>

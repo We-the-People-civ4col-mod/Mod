@@ -277,6 +277,11 @@
             <DefaultUnit>UNIT_CHRISTIAN_MISSIONARY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_EXPERT_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_EXPERT_TRADER</Description>
+            <DefaultUnit>UNIT_EXPERT_TRADER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_NOBLE</Type>
             <Description>TXT_KEY_UNITCLASS_NOBLE</Description>
             <DefaultUnit>UNIT_NOBLE</DefaultUnit>

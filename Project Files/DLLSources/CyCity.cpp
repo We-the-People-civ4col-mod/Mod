@@ -855,6 +855,18 @@ int CyCity::getMissionaryRate() const
 	return m_pCity ? m_pCity->getMissionaryRate() : -1;
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option END
+
+// WTP, ray, Native Trade Posts - START
+int /*PlayerTypes*/ CyCity::getTradePostPlayer() const
+{
+	return m_pCity ? m_pCity->getTradePostPlayer() :NO_PLAYER;
+}
+int CyCity::getNativeTradeRate() const
+{
+	return m_pCity ? m_pCity->getNativeTradeRate() : -1;
+}
+// WTP, ray, Native Trade Posts - START
+
 bool CyCity::isRevealed(int /*TeamTypes */eIndex, bool bDebug)
 {
 	return m_pCity ? m_pCity->isRevealed((TeamTypes)eIndex, bDebug) : false;

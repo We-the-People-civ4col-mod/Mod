@@ -826,6 +826,26 @@
         <Spanish>Fundar una misión[NEWLINE]Success rate: %d1_success</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_FAILED</Tag>
+        <English>Your native trader failed to establish a trade post in %s1_CityName.</English>
+        <German>Eurem Ureinwohnerhändler ist es nicht gelungen, in %s1_CityName einen Handelsposten zu errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
+        <English>Establish a trade post</English>
+        <German>Einen Handelsposten errichten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
+        <English>Establish a trade post [NEWLINE]Success rate: %d1_success</English>
+        <German>Einen Handelsposten errichten[NEWLINE]Erfolgschance: %d1_success</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_CREATED_TREASURE</Tag>
+        <English>Your trade post in %s1_CityName sends the collected gold back home to our colonies.</English>
+        <German>Euer Handelsposten in %s1_CityName sendet die erwirtschafteten Reichtümer zurück in die Kolonien.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MEMORY_MISSION_FAIL</Tag>
         <English>"Your missionaries have insulted our Spirits!"</English>
         <French>"Vos missionnaires ont insulté nos Esprits !"</French>

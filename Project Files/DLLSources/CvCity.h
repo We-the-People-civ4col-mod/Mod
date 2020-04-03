@@ -230,6 +230,12 @@ public:
 	void updatePopulation(int iOldPopulation);
 	long getRealPopulation() const;
 
+	// WTP, ray, Native Trade Posts - START
+	DllExport int getNativeTradePostGold() const;
+	DllExport void setNativeTradePostGold (int iNewValue);
+	DllExport void changeNativeTradePostGold(int iChange);
+	// WTP, ray, Native Trade Posts - END
+
 	int getHighestPopulation() const;
 	void setHighestPopulation(int iNewValue);
 
@@ -485,6 +491,14 @@ public:
 	int getMissionaryRate() const;
 	void setMissionaryRate(int iRate);
 
+	// WTP, ray, Native Trade Posts - START
+	PlayerTypes getTradePostPlayer() const;
+	CivilizationTypes getTradePostCivilization() const;
+	void setTradePostPlayer(PlayerTypes ePlayer);
+	int getNativeTradeRate() const;
+	void setNativeTradeRate(int iRate);
+	// WTP, ray, Native Trade Posts - END
+
 	// R&R, ray , Stirring Up Natives - START
 	bool getHasBeenStirredUp() const;
 	void setHasBeenStirredUp(bool stirredUp);
@@ -690,6 +704,8 @@ protected:
 	int m_iCitySizeBoost;
 	int m_iHammers;
 	int m_iMissionaryRate;
+	int m_iNativeTradeRate; // WTP, ray, Native Trade Posts - START
+	int m_iTradePostGold; // WTP, ray, Native Trade Posts - START
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
 	int m_iCityHealth; // R&R, ray, Health
@@ -709,6 +725,7 @@ protected:
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
 	PlayerTypes m_eMissionaryPlayer;
+	PlayerTypes m_eTradePostPlayer; // WTP, ray, Native Trade Posts - START
 	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields
 	int* m_aiSeaPlotYield;
 	int* m_aiRiverPlotYield;
@@ -783,7 +800,8 @@ protected:
 	void doPrices(); // R&R, Androrc, Domestic Market
 	void doDecay();
 	void doMissionaries();
-	void doRebelSentiment();
+	void doNativeTradePost(); // WTP, ray, Native Trade Posts - START
+	void doRebelSentiment(); 
 	void doCityHealth(); // R&R, ray, Health - START
 	bool doCheckProduction();
 	void doCheat(bool bAlt, bool bShift, bool bCtrl);

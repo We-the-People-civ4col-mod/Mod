@@ -39,6 +39,10 @@
             <Description>UNITAI_MISSIONARY</Description>
         </UnitAIInfo>
         <UnitAIInfo>
+            <Type>UNITAI_TRADER</Type>
+            <Description>UNITAI_TRADER</Description>
+        </UnitAIInfo>
+        <UnitAIInfo>
             <Type>UNITAI_SCOUT</Type>
             <Description>UNITAI_SCOUT</Description>
         </UnitAIInfo>

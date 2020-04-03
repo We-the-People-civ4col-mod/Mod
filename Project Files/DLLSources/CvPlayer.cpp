@@ -432,6 +432,7 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_iMissionaryRateModifier = 0;
 	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
 	m_iMissionarySuccessPercent = 100;
+	m_iNativeTradePostSuccessPercent = 100; // WTP, ray, Native Trade Posts - START
 	m_uiStartTime = 0;
 
 	m_bAlive = false;
@@ -7871,6 +7872,8 @@ void CvPlayer::verifyAlive()
 
 						//koma13
 						//destroying Missions of that player
+						// WTP, ray, Native Trade Posts - START
+						// now also destroying Trade Posts of the player
 						for (int iI = 0; iI < MAX_PLAYERS; iI++)
 						{
 							if (GET_PLAYER((PlayerTypes)iI).isAlive())
@@ -7885,6 +7888,14 @@ void CvPlayer::verifyAlive()
 										{
 											pLoopCity->setMissionaryPlayer(NO_PLAYER);
 											pLoopCity->setMissionaryRate(0);
+										}
+
+										// WTP, ray, Native Trade Posts - START
+										if (pLoopCity->getTradePostPlayer() == getID())
+										{
+											pLoopCity->setTradePostPlayer(NO_PLAYER);
+											pLoopCity->setNativeTradeRate(0);
+											pLoopCity->setNativeTradePostGold(0);
 										}
 									}
 								}
@@ -12713,6 +12724,7 @@ void CvPlayer::read(FDataStreamBase* pStream)
 	if (uiFlag > 1)
 	{
 		pStream->Read(&m_iMissionarySuccessPercent);
+		pStream->Read(&m_iNativeTradePostSuccessPercent); // WTP, ray, Native Trade Posts - START
 	}
 
 	pStream->Read(&m_bAlive);
@@ -13200,6 +13212,7 @@ void CvPlayer::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCombatExperience);
 	pStream->Write(m_iSeaCombatExperience); // R&R, ray, Great Admirals
 	pStream->Write(m_iMissionarySuccessPercent);
+	pStream->Write(m_iNativeTradePostSuccessPercent); // WTP, ray, Native Trade Posts - START
 
 	pStream->Write(m_bAlive);
 	// R&R, ray, Bargaining - Start
@@ -18240,6 +18253,46 @@ bool CvPlayer::canHaveMission(PlayerTypes ePlayer) const
 	return true;
 }
 
+// WTP, ray, Native Trade Posts - START
+bool CvPlayer::canHaveTradePost(PlayerTypes ePlayer) const
+{
+	if (!isNative())
+	{
+		return false;
+	}
+
+	if (!GET_PLAYER(ePlayer).isAlive())
+	{
+		return false;
+	}
+
+	if (GET_PLAYER(ePlayer).isNative())
+	{
+		return false;
+	}
+
+	if (::atWar(GET_PLAYER(ePlayer).getTeam(), getTeam()))
+	{
+		return false;
+	}
+
+	return true;
+}
+
+void CvPlayer::burnTradePosts(PlayerTypes ePlayer)
+{
+	int iLoop;
+	for (CvCity* pCity = firstCity(&iLoop); pCity != NULL; pCity = nextCity(&iLoop))
+	{
+		if (pCity->getTradePostPlayer() == ePlayer)
+		{
+			pCity->setTradePostPlayer(NO_PLAYER);
+			pCity->setNativeTradePostGold(0);
+		}
+	}
+}
+// WTP, ray, Native Trade Posts - END
+
 void CvPlayer::validateMissions()
 {
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
@@ -18250,6 +18303,19 @@ void CvPlayer::validateMissions()
 		}
 	}
 }
+
+// WTP, ray, Native Trade Posts - START
+void CvPlayer::validateTradePosts()
+{
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		if (!canHaveTradePost((PlayerTypes) iPlayer))
+		{
+			burnTradePosts((PlayerTypes) iPlayer);
+		}
+	}
+}
+// WTP, ray, Native Trade Posts - END
 
 int CvPlayer::getMissionaryRateModifier() const
 {
@@ -18279,6 +18345,17 @@ int CvPlayer::getMissionarySuccessPercent() const
 void CvPlayer::setMissionarySuccessPercent(int iValue)
 {
 	m_iMissionarySuccessPercent = iValue;
+}
+
+// WTP, ray, Native Trade Posts - START
+int CvPlayer::getNativeTradePostSuccessPercent() const
+{
+	return m_iNativeTradePostSuccessPercent;
+}
+
+void CvPlayer::setNativeTradePostSuccessPercent(int iValue)
+{
+	m_iNativeTradePostSuccessPercent = iValue;
 }
 
 int CvPlayer::getRebelCombatPercent() const
@@ -18448,7 +18525,9 @@ bool CvPlayer::isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) c
 			{
 				// Natives cannot be combat professions
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-				if ((!kProfession.isUnarmed() && kProfession.getCombatChange() > 0 && !kProfession.isScout()) || kProfession.getMissionaryRate() > 0)
+				// WTP, ray, Native Trade Posts - START
+				// Adjustment for Native Trader
+				if ((!kProfession.isUnarmed() && kProfession.getCombatChange() > 0 && !kProfession.isScout()) || kProfession.getMissionaryRate() > 0 || kProfession.getNativeTradeRate() > 0)
 				{
 					return false;
 				}

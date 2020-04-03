@@ -438,9 +438,9 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iCitySizeBoost = 0;
 	m_iHammers = 0;
 	m_iMissionaryRate = 0;
-
+	m_iNativeTradeRate = 0; // WTP, ray, Native Trade Posts - START
+	m_iTradePostGold = 0; // WTP, ray, Native Trade Posts - START
 	m_bStirredUp = false; // R&R, ray , Stirring Up Natives - START
-
 	m_iWorksWaterCount = 0;
 	m_iRebelSentiment = 0;
 	m_iCityHealth = 0; // R&R, ray, Health
@@ -461,6 +461,7 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_eCultureLevel = NO_CULTURELEVEL;
 	m_eTeachUnitClass = NO_UNITCLASS;
 	m_eMissionaryPlayer = NO_PLAYER;
+	m_eTradePostPlayer = NO_PLAYER; // WTP, ray, Native Trade Posts - START
 
 	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
 	{
@@ -748,6 +749,13 @@ void CvCity::doTurn()
 	doDecay();
 
 	doMissionaries();
+
+	// WTP, ray, Native Trade Posts - START
+	if (isNative())
+	{
+		doNativeTradePost();
+	}
+	// WTP, ray, Native Trade Posts - END
 
 	doRebelSentiment();
 
@@ -3394,6 +3402,22 @@ void CvCity::setGameTurnAcquired(int iNewValue)
 	FAssert(getGameTurnAcquired() >= 0);
 }
 
+// WTP, ray, Native Trade Posts - START
+int CvCity::getNativeTradePostGold() const
+{
+	return m_iTradePostGold;
+}
+
+void CvCity::setNativeTradePostGold(int iNewValue)
+{
+	m_iTradePostGold = iNewValue;
+}
+
+void CvCity::changeNativeTradePostGold(int iChange)
+{
+	setNativeTradePostGold(getNativeTradePostGold() + iChange);
+}
+// WTP, ray, Native Trade Posts - END
 
 int CvCity::getPopulation() const
 {
@@ -7603,6 +7627,49 @@ void CvCity::doMissionaries()
 	GET_PLAYER(getOwnerINLINE()).applyMissionaryPoints(this);
 }
 
+// WTP, ray, Native Trade Posts - START
+void CvCity::doNativeTradePost()
+{
+	PlayerTypes ePlayer = getTradePostPlayer();
+	if (ePlayer != NO_PLAYER)
+	{
+		int iNativeTradeModifierNation = 100 + GET_PLAYER(getOwnerINLINE()).getNativeTradeModifier();
+		int iNativeTradeModifierTradePostOwner = 100 + GET_PLAYER(ePlayer).getNativeTradeModifier();
+		int iNativeTradeRateCity = 100 + getNativeTradeRate();
+		int iNativeVillagePopulation = getPopulation();
+		int iGoldPerNative = GC.getTRADE_POST_GOLD_PER_NATIVE();
+
+		int iTotalVillageGold= iNativeVillagePopulation * iGoldPerNative;
+		int iTotalModifier = iNativeTradeRateCity * iNativeTradeModifierNation * iNativeTradeModifierTradePostOwner;
+
+		// calculate fixed gold
+		int calculatedNewGold = (iTotalVillageGold * iTotalModifier) / 100 / 100 / 100;
+		// make a random from double value, because meanvalue should be similar to calculated value
+		int doubleGoldValue = calculatedNewGold * 2;
+		int randomizedGoldToAdd = GC.getGameINLINE().getSorenRandNum(doubleGoldValue, "Randomized Trade Post Gold");
+		changeNativeTradePostGold(randomizedGoldToAdd);
+
+		// now check the gold if it is enough to create a treasure
+		int iCurrentTradePostGold = getNativeTradePostGold();
+		int iThreshold = GC.getMAX_TREASURE_AMOUNT() / 3;
+		
+		if (iCurrentTradePostGold >= iThreshold)
+		{
+			// spawn the Treasure
+			UnitClassTypes eUnitClass = (UnitClassTypes) GC.getDefineINT("TREASURE_UNITCLASS");
+			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
+			CvUnit* pTreasure = GET_PLAYER(ePlayer).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iCurrentTradePostGold);
+			// when we create a treasure, set gold to 0
+			setNativeTradePostGold(0);
+
+			// we send a message now
+			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_CREATED_TREASURE", getNameKey());
+			gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pTreasure->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+	}
+	return;
+}
+// WTP, ray, Native Trade Posts - END
 
 // Private Functions...
 
@@ -7674,6 +7741,8 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iCitySizeBoost);
 	pStream->Read(&m_iHammers);
 	pStream->Read(&m_iMissionaryRate);
+	pStream->Read(&m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
+	pStream->Read(&m_iTradePostGold); // WTP, ray, Native Trade Posts - START
 	pStream->Read(&m_bStirredUp); // R&R, ray , Stirring Up Natives
 	pStream->Read(&m_iWorksWaterCount);
 	pStream->Read(&m_iRebelSentiment);
@@ -7710,10 +7779,26 @@ void CvCity::read(FDataStreamBase* pStream)
 				break;
 			}
 		}
+
+		// WTP, ray, Native Trade Posts - START
+		m_eTradePostPlayer = NO_PLAYER;
+		CivilizationTypes eTradePostCivilization;
+		pStream->Read((int*)&eTradePostCivilization);
+		for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
+		{
+			CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+			if (kPlayer.isAlive() && kPlayer.getCivilizationType() == eTradePostCivilization)
+			{
+				m_eTradePostPlayer = (PlayerTypes) iPlayer;
+				break;
+			}
+		}
+		// WTP, ray, Native Trade Posts - END
 	}
 	else
 	{
 		pStream->Read((int*)&m_eMissionaryPlayer);
+		pStream->Read((int*)&m_eTradePostPlayer); // WTP, ray, Native Trade Posts - START
 	}
 
 	pStream->Read(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields
@@ -7911,6 +7996,8 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iCitySizeBoost);
 	pStream->Write(m_iHammers);
 	pStream->Write(m_iMissionaryRate);
+	pStream->Write(m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
+	pStream->Write(m_iTradePostGold); // WTP, ray, Native Trade Posts - START
 	pStream->Write(m_bStirredUp); // R&R, ray , Stirring Up Natives
 	pStream->Write(m_iWorksWaterCount);
 	pStream->Write(m_iRebelSentiment);
@@ -7931,6 +8018,7 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_eCultureLevel);
 	pStream->Write(m_eTeachUnitClass);
 	pStream->Write(m_eMissionaryPlayer);
+	pStream->Write(m_eTradePostPlayer); // WTP, ray, Native Trade Posts - START
 
 	pStream->Write(NUM_YIELD_TYPES, m_aiLandPlotYield); // R&R, ray, Landplot Yields
 	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
@@ -9530,6 +9618,13 @@ PlayerTypes CvCity::getMissionaryPlayer() const
 	return m_eMissionaryPlayer;
 }
 
+// WTP, ray, Native Trade Posts - START
+PlayerTypes CvCity::getTradePostPlayer() const
+{
+	return m_eTradePostPlayer;
+}
+// WTP, ray, Native Trade Posts - END
+
 CivilizationTypes CvCity::getMissionaryCivilization() const
 {
 	if (getMissionaryPlayer() == NO_PLAYER)
@@ -9539,6 +9634,18 @@ CivilizationTypes CvCity::getMissionaryCivilization() const
 
 	return GET_PLAYER(getMissionaryPlayer()).getCivilizationType();
 }
+
+// WTP, ray, Native Trade Posts - START
+CivilizationTypes CvCity::getTradePostCivilization() const
+{
+	if (getTradePostPlayer() == NO_PLAYER)
+	{
+		return NO_CIVILIZATION;
+	}
+
+	return GET_PLAYER(getTradePostPlayer()).getCivilizationType();
+}
+// WTP, ray, Native Trade Posts - END
 
 void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 {
@@ -9595,6 +9702,64 @@ void CvCity::setMissionaryRate(int iRate)
 {
 	m_iMissionaryRate = iRate;
 }
+
+// WTP, ray, Native Trade Posts - START
+void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
+{
+	if (ePlayer != getTradePostPlayer())
+	{
+		PlayerTypes eOldPlayer = getTradePostPlayer();
+
+		m_eTradePostPlayer = ePlayer;
+
+		if (eOldPlayer != NO_PLAYER)
+		{
+			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
+
+			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			{
+				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				if (kLoopPlayer.isAlive())
+				{
+					if (isRevealed(kLoopPlayer.getTeam(), false))
+					{
+						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), false, false);
+					}
+				}
+			}
+		}
+
+		if (getMissionaryPlayer() != NO_CIVILIZATION)
+		{
+			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_ESTABLISHED", getNameKey(), GET_PLAYER(ePlayer).getCivilizationAdjectiveKey());
+
+			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			{
+				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				if (kLoopPlayer.isAlive())
+				{
+					if (isRevealed(kLoopPlayer.getTeam(), false))
+					{
+						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+					}
+				}
+			}
+		}
+
+		setBillboardDirty(true);
+	}
+}
+
+int CvCity::getNativeTradeRate() const
+{
+	return m_iNativeTradeRate;
+}
+
+void CvCity::setNativeTradeRate(int iRate)
+{
+	m_iNativeTradeRate = iRate;
+}
+// WTP, ray, Native Trade Posts - END
 
 // R&R, ray , Stirring Up Natives - START
 bool CvCity::getHasBeenStirredUp() const
