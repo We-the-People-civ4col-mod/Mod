@@ -7515,11 +7515,14 @@ void CvUnit::promote(PromotionTypes ePromotion, int iLeaderUnitId)
 
 	testPromotionReady();
 
+	CvSelectionGroup::path_finder.Reset(); // K-Mod. (This currently isn't important, because the AI doesn't use promotions mid-turn anyway.)
+
 	if (IsSelected())
 	{
 		gDLL->getInterfaceIFace()->playGeneralSound(GC.getPromotionInfo(ePromotion).getSound());
 
 		gDLL->getInterfaceIFace()->setDirty(UnitInfo_DIRTY_BIT, true);
+		gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder()); // K-Mod.
 	}
 	else
 	{
