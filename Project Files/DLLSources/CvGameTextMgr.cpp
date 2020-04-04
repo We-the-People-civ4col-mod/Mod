@@ -7965,6 +7965,33 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 		// R&R, ray , MYCP partially based on code of Aymerick - END
 	}
 
+	// WTP, ray, showing turns worked for becoming expert or free - START
+	// partially used code of devolution
+	const ProfessionTypes lastProfession = kUnit.getLastLbDProfession();
+	bool bCanBecomeExpert = kUnit.getUnitInfo().LbD_canBecomeExpert();
+	bool bCanGetFree = kUnit.getUnitInfo().LbD_canGetFree();
+	int iLbDRoundsWorked= kUnit.getLbDrounds();
+
+	// Display for become Expert - with turns worked and Expert Unit in Text
+	if(bCanBecomeExpert && lastProfession != NO_PROFESSION && GC.getProfessionInfo(lastProfession).LbD_isUsed() && iLbDRoundsWorked >0)
+	{
+		int expert = GC.getProfessionInfo(lastProfession).LbD_getExpert();
+		UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCivilizationType()).getCivilizationUnits(expert);
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED", iLbDRoundsWorked, GC.getUnitInfo(expertUnitType).getDescription()));
+		szString.append(SEPARATOR);
+	}
+
+	// Display for become Free - with Expert Unit in Text
+	if(bCanGetFree && lastProfession != NO_PROFESSION && GC.getProfessionInfo(lastProfession).LbD_isUsed() && iLbDRoundsWorked >0)
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED", iLbDRoundsWorked));
+		szString.append(SEPARATOR);
+	}
+
+	// WTP, ray, showing turns worked for becoming expert or free - END
+
 	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
 	{
 		CvPlayer& kOwner = GET_PLAYER(kCity.getOwnerINLINE());
