@@ -804,7 +804,7 @@ public:
 	// R&R, ray, Health - END
 
     int getMAX_TREASURE_AMOUNT(); // WTP, merge Treasures, of Raubwuerger - START
-	int getTRADE_POST_GOLD_PER_NATIVE();
+	int getTRADE_POST_GOLD_PER_NATIVE(); // WTP, ray, Native Trade Posts - START
 
 	DllExport float getCAMERA_MIN_YAW();
 	DllExport float getCAMERA_MAX_YAW();
