@@ -7989,8 +7989,70 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 		szString.append(gDLL->getText("TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED", iLbDRoundsWorked));
 		szString.append(SEPARATOR);
 	}
-
 	// WTP, ray, showing turns worked for becoming expert or free - END
+
+	// WTP, ray, showing citizen production modifiers - START
+	// using Code of devolution to display Yield Modifiers
+	std::pair<int, int> yieldModifiers[NUM_YIELD_TYPES];
+	std::pair<int, int> yieldChanges[NUM_YIELD_TYPES];
+
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	{
+		yieldModifiers[iYield].first = kUnit.getUnitInfo().getYieldModifier(iYield);
+		yieldModifiers[iYield].second = iYield;
+
+		yieldChanges[iYield].first = kUnit.getUnitInfo().getYieldChange(iYield);
+		yieldChanges[iYield].second = iYield;
+	}
+
+	// TODO: use static cast
+	std::sort(yieldModifiers, yieldModifiers + (int)NUM_YIELD_TYPES, std::greater<std::pair<int,int> >());
+	std::sort(yieldChanges, yieldChanges + (int)NUM_YIELD_TYPES, std::greater<std::pair<int, int> >());
+
+	int last = INT_MIN;
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	{	
+		const int iYieldModifier = yieldModifiers[iYield].first;
+
+		if (iYieldModifier != 0 && iYieldModifier != last)
+		{
+			// Display modifer
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP", iYieldModifier));
+			last = iYieldModifier;
+			szString.append(NEWLINE);
+		}
+		if (iYieldModifier != 0)
+		{
+			// Display yield icon
+			szString.append(CvWString::format(L" %c",  GC.getYieldInfo((YieldTypes)yieldModifiers[iYield].second).getChar()));
+		}
+	}
+
+	last = INT_MIN;
+
+
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	{
+		const int iYieldChange = yieldChanges[iYield].first;
+
+		if (iYieldChange != 0 && iYieldChange != last)
+		{
+			// Display modifer
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP", iYieldChange));
+			last = iYieldChange;
+			szString.append(NEWLINE);
+		}
+		if (iYieldChange != 0)
+		{
+			// Display yield icon
+			szString.append(CvWString::format(L" %c", GC.getYieldInfo((YieldTypes)yieldChanges[iYield].second).getChar()));
+		}
+	}
+	// WTP, ray, showing citizen production modifiers - END
 
 	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
 	{

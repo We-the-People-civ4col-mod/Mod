@@ -59,4 +59,14 @@
         <English>Working to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] since: %d1_turns Turns</English>
         <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit: %d1_turns Runden</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
+        <English>Production bonus of %d1_NewVal%%:</English>
+        <German>Produktionsbonus von %d1_NewVal%%:</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
+        <English>Production bonus of +%d1_NewVal:</English>
+        <German>Produktionsbonus von +%d1_NewVal:</German>
+    </TEXT>
 </Civ4GameText>
