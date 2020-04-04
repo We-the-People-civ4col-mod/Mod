@@ -61,12 +61,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
-        <English>Production bonus of %d1_NewVal%%:</English>
-        <German>Produktionsbonus von %d1_NewVal%%:</German>
+        <English>Production modifier of %d1_NewVal%%:</English>
+        <German>Produktionsmodifikator von %d1_NewVal%%:</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
-        <English>Production bonus of +%d1_NewVal:</English>
-        <German>Produktionsbonus von +%d1_NewVal:</German>
+        <English>Production modifier of %d1_NewVal:</English>
+        <German>Produktionsmodifikator von %d1_NewVal:</German>
     </TEXT>
 </Civ4GameText>
