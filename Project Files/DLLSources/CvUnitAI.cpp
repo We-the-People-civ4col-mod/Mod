@@ -8868,12 +8868,23 @@ bool CvUnitAI::AI_spreadReligion()
 	PROFILE_FUNC();
 	
 	FAssert(GC.getProfessionInfo(getProfession()).getMissionaryRate() > 0);
+
+	// WTP, ray, AI imporevment - START
+	// AI was running around with Missionaries and Native Traders too much
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (canEstablishMission())
+	{
+		establishMission();
+		kOwner.AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1); // line moved
+		return true;
+	}
+	// WTP, ray, AI imporevment - END
 	
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestSpreadPlot = NULL;
 		
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
 	{
 		CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
@@ -8954,12 +8965,23 @@ bool CvUnitAI::AI_spreadTradePosts()
 	PROFILE_FUNC();
 	
 	FAssert(GC.getProfessionInfo(getProfession()).getNativeTradeRate() > 0);
+
+	// WTP, ray, AI imporevment - START
+	// AI was running around with Missionaries and Native Traders too much
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (canEstablishTradePost())
+	{
+		establishTradePost();
+		kOwner.AI_changeNumRetiredAIUnits(UNITAI_TRADER, 1); // line moved
+		return true;
+	}
+	// WTP, ray, AI imporevment - END
 	
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestSpreadPlot = NULL;
 		
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
 	{
 		CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
