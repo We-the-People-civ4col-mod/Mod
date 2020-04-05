@@ -580,10 +580,6 @@
                     <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
                     <iFreeUnits>2</iFreeUnits>
                 </FreeUnit>
-                <FreeUnit>
-                    <UnitClass>UNITCLASS_BIG_COASTAL_SHIP</UnitClass>
-                    <iFreeUnits>1</iFreeUnits>
-                </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
                 <FatherPointCost>
@@ -2231,8 +2227,8 @@
             <RevealImprovements/>
             <FreeUnits>
                 <FreeUnit>
-                    <UnitClass>UNITCLASS_FARMER</UnitClass>
-                    <iFreeUnits>2</iFreeUnits>
+                    <UnitClass>UNITCLASS_SMALL_COASTAL_SHIP</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
                 </FreeUnit>
             </FreeUnits>
             <FatherPointCosts>
