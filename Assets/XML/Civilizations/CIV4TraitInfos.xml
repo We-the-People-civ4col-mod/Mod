@@ -7817,8 +7817,8 @@
             <iLevelExperienceModifier>0</iLevelExperienceModifier>
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-            <iNativeAngerModifier>-25</iNativeAngerModifier>
-            <iLearnTimeModifier>-25</iLearnTimeModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
             <iMissionaryModifier>0</iMissionaryModifier>
             <iNativeTradeModifier>0</iNativeTradeModifier>
@@ -7836,7 +7836,7 @@
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
-            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iPopGrowthThresholdModifier>-10</iPopGrowthThresholdModifier>
             <iCultureLevelModifier>0</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
@@ -7850,7 +7850,53 @@
             <FreePromotionUnitCombats/>
             <YieldModifiers/>
             <TaxYieldModifiers/>
-            <BuildingYieldChanges/>
+            <BuildingYieldChanges>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CHAPEL</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HEALTH</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HEALTH</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HEALTH</YieldType>
+                            <iYieldChange>4</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_GREAT_CATHEDRAL</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HEALTH</YieldType>
+                            <iYieldChange>5</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_MINSTER</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HEALTH</YieldType>
+                            <iYieldChange>6</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+            </BuildingYieldChanges>
             <UnitMoveChanges/>
             <ProfessionMoveChanges/>
             <BuildingProductionModifiers/>
