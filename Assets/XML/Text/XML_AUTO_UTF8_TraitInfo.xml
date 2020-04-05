@@ -928,4 +928,12 @@
         <Tag>TXT_KEY_TRAIT_IVAN_KRUZENSHTERN</Tag>
         <English>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WALTER_RALEIGH</Tag>
+        <English>TXT_KEY_FATHER_WALTER_RALEIGH</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VELAZQUEZ_DE_CUELLAR</Tag>
+        <English>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR</English>
+    </TEXT>
 </Civ4GameText>
