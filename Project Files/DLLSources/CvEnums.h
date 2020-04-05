@@ -767,6 +767,7 @@ enum DllExport GameOptionTypes
 	GAMEOPTION_NO_WILD_LAND_ANIMALS, // < JAnimals Mod Start >
 	GAMEOPTION_NO_WILD_SEA_ANIMALS, // < JAnimals Mod Start >
 	GAMEOPTION_REDUCED_CITY_DISTANCE, /// reduced city distance - Nightinggale
+	GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE, // WTP, ray, Game Option only 1 Colonist living in Village - START
 #ifdef _USRDLL
 	NUM_GAMEOPTION_TYPES
 #endif

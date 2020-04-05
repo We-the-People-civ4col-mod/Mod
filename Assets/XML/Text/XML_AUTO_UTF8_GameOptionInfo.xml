@@ -289,6 +289,16 @@
         <Spanish>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
+        <English>Only 1 Colonist learning per Native Village</English>
+        <German>Nur 1 Schüler gleichzeitig pro Ureinwohnerdorf</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
+        <English>Only 1 Colonist will be allowed to live and learn in a Native Village at the same time. After he finished the next Colonist can be trained.</English>
+        <German>Nur 1 Kolonist darf zur selben Zeit in einem Unreinwohnerdorft leben und lernen. Der nächste muss warten bis dieser fertig trainiert wurde.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_REF</Tag>
         <English>Reduced Royal Expeditionary Force</English>
         <French>Force expéditionnaire du Roi réduite</French>

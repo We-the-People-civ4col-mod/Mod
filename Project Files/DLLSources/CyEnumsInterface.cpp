@@ -483,6 +483,8 @@ void CyEnumsPythonInterface()
 		.value("GAMEOPTION_NO_MORE_VARIABLES_HIDDEN", GAMEOPTION_NO_MORE_VARIABLES_HIDDEN)	// R&R, Robert Surcouf, No More Variables Hidden game option
 		.value("GAMEOPTION_NO_WILD_LAND_ANIMALS", GAMEOPTION_NO_WILD_LAND_ANIMALS) // < JAnimals Mod Start >
 		.value("GAMEOPTION_NO_WILD_SEA_ANIMALS", GAMEOPTION_NO_WILD_SEA_ANIMALS) // < JAnimals Mod Start >
+		.value("GAMEOPTION_REDUCED_CITY_DISTANCE", GAMEOPTION_REDUCED_CITY_DISTANCE) /// reduced city distance - Nightinggale
+		.value("GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE", GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE) // WTP, ray, Game Option only 1 Colonist living in Village - START
 		.value("NUM_GAMEOPTION_TYPES", NUM_GAMEOPTION_TYPES)
 		;
 	python::enum_<MultiplayerOptionTypes>("MultiplayerOptionTypes")

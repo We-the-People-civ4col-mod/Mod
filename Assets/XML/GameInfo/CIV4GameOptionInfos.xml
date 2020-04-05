@@ -146,5 +146,12 @@
             <bDefault>0</bDefault>
             <bVisible>1</bVisible>
         </GameOptionInfo>
+        <GameOptionInfo>
+            <Type>GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Type>
+            <Description>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Description>
+            <Help>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Help>
+            <bDefault>0</bDefault>
+            <bVisible>1</bVisible>
+        </GameOptionInfo>
     </GameOptionInfos>
 </Civ4GameOptionInfos>

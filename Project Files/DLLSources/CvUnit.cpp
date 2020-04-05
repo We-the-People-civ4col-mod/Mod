@@ -4986,6 +4986,27 @@ void CvUnit::learn()
 	}
 	// R&R, ray, Natives do not talk when furious - ELSE
 
+	// WTP, ray, Game Option only 1 Colonist living in Village - START
+	else if (isHuman() && GC.getGameINLINE().isOption(GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE))
+	{
+		std::vector<CvUnit*> aUnits;
+		CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+		while (pUnitNode)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			// this checks if there is already another Native Living in this village
+			// if yes, we send a message and exit the method by return
+			if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+			{
+				CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING", plot()->getPlotCity()->getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_LEARN).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				return;
+			}
+		}
+	}
+	// WTP, ray, Game Option only 1 Colonist living in Village - END
+
 	if (isHuman() && !getGroup()->AI_isControlled() && !GET_PLAYER(eNativePlayer).isHuman())
 	{
 		UnitTypes eUnitType = getLearnUnitType(plot());

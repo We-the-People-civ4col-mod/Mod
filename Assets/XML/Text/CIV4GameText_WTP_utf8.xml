@@ -69,4 +69,9 @@
         <English>Production modifier of %d1_NewVal:</English>
         <German>Produktionsmodifikator von %d1_NewVal:</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
+        <English>Sire, another European is already living and learning in %s1_city. The Natives do not want to take a second one. [NEWLINE] We should come back when that other European has finished his time in the village.</English>
+        <German>Sire, es lebt und lernt bereits ein anderer Europäer in %s1_city. Die Ureinwohner möchten keinen weiteren aufnehmen. [NEWLINE] Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
+    </TEXT>
 </Civ4GameText>
