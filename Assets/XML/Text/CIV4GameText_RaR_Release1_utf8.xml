@@ -337,7 +337,7 @@
         <Tag>TXT_KEY_BOUGHT_NOBLE</Tag>
         <English>The Famous Noble from Europe has arrived in %s1_city, Mylord.</English>
         <French>Le Noble célèbre est arrivé a%s1_city, Monseigneur.</French>
-        <German>Der berühmte Edelmann ist in %s1_city angekommen, Mylord.</German>
+        <German>Der berühmte Edelmannin ist in %s1_city angekommen, Mylord.</German>
         <Italian>The Famous Noble from Europe has arrived in %s1_city, Mylord.</Italian>
         <Spanish>The Famous Noble from Europe has arrived in %s1_city, Mylord.</Spanish>
     </TEXT>
@@ -1467,11 +1467,11 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% better prices from Bargaining</English>
+        <English>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</English>
         <French>[ICON_BULLET]%D1%% permet d'obtenir des meilleur prix en négociant</French>
-        <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen</German>
-        <Italian>[ICON_BULLET]%D1%% better prices from Bargaining</Italian>
-        <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining</Spanish>
+        <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
+        <Italian>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Italian>
+        <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>

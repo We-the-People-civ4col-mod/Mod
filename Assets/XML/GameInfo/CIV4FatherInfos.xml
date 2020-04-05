@@ -554,7 +554,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
-                    <iCost>450</iCost>
+                    <iCost>300</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
@@ -566,6 +566,40 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,3</Button>
+        </FatherInfo>
+        <FatherInfo>
+            <Type>FATHER_NIKOLAI_REZANOV</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Rezanov.dds</Portrait>
+            <Description>TXT_KEY_FATHER_NIKOLAI_REZANOV</Description>
+            <Civilopedia>TXT_KEY_FATHER_NIKOLAI_REZANOV_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_NIKOLAI_REZANOV_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_TRADE</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BIG_COASTAL_SHIP</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_TRADE</FatherPointType>
+                    <iCost>450</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>450</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_NIKOLAI_REZANOV</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,6,12</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_JEAN_TALON</Type>
@@ -592,7 +626,7 @@
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>550</iCost>
+                    <iCost>600</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait/>
@@ -617,7 +651,7 @@
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>630</iCost>
+                    <iCost>650</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_JOHN_SMITH</Trait>
@@ -1123,11 +1157,11 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
-                    <iCost>475</iCost>
+                    <iCost>450</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>690</iCost>
+                    <iCost>600</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_GEORGE_FOX</Trait>
@@ -1135,6 +1169,36 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,9</Button>
+        </FatherInfo>
+        <FatherInfo>
+            <Type>FATHER_HERMAN_OF_ALASKA</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/HermanofAlaska.dds</Portrait>
+            <Description>TXT_KEY_FATHER_HERMAN_OF_ALASKA</Description>
+            <Civilopedia>TXT_KEY_FATHER_HERMAN_OF_ALASKA_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_HERMAN_OF_ALASKA_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_RELIGION</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
+                    <iCost>650</iCost>
+                </FatherPointCost>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>800</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_HERMAN_OF_ALASKA</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,12</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_BARTOLOME_DE_LAS_CASAS</Type>
@@ -1153,7 +1217,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_RELIGION</FatherPointType>
-                    <iCost>675</iCost>
+                    <iCost>700</iCost>
                 </FatherPointCost>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
@@ -2148,7 +2212,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>800</iCost>
+                    <iCost>750</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_NICOLAS_DE_VILLEGAGNON</Trait>
@@ -2156,6 +2220,32 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,11</Button>
+        </FatherInfo>
+        <FatherInfo>
+            <Type>FATHER_IVAN_KUSKOV</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Kuskov.dds</Portrait>
+            <Description>TXT_KEY_FATHER_IVAN_KUSKOV</Description>
+            <Civilopedia>TXT_KEY_FATHER_IVAN_KUSKOV_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_IVAN_KUSKOV_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_FARMER</UnitClass>
+                    <iFreeUnits>2</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>1000</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_IVAN_KUSKOV</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,12</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_GREGORIO_DE_MATTOS_E_GUERRA</Type>
@@ -2195,7 +2285,7 @@
             <FatherPointCosts>
                 <FatherPointCost>
                     <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
-                    <iCost>2000</iCost>
+                    <iCost>1600</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
             <Trait>TRAIT_BETSY_ROSS</Trait>
@@ -2203,6 +2293,40 @@
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>
             <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,7,1</Button>
+        </FatherInfo>
+        <FatherInfo>
+            <Type>FATHER_IVAN_KRUZENSHTERN</Type>
+            <Portrait>Art/Interface/Screens/Founding_Fathers/Kruzenshtern.dds</Portrait>
+            <Description>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</Description>
+            <Civilopedia>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_STRATEGY</Strategy>
+            <FatherCategory>FATHERCATEGORY_POLITICS</FatherCategory>
+            <RevealImprovements/>
+            <FreeUnits>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_SLOOP</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_BRIGANTINE</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+                <FreeUnit>
+                    <UnitClass>UNITCLASS_GREAT_ADMIRAL</UnitClass>
+                    <iFreeUnits>1</iFreeUnits>
+                </FreeUnit>
+            </FreeUnits>
+            <FatherPointCosts>
+                <FatherPointCost>
+                    <FatherPointType>FATHER_POINT_POLITICAL</FatherPointType>
+                    <iCost>2000</iCost>
+                </FatherPointCost>
+            </FatherPointCosts>
+            <Trait>TRAIT_IVAN_KRUZENSHTERN</Trait>
+            <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
+            <Sound>AS2D_FUTURE</Sound>
+            <SoundMP>AS2D_MP_FUTURE</SoundMP>
+            <Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,4,12</Button>
         </FatherInfo>
         <FatherInfo>
             <Type>FATHER_ROBERT_MORRIS</Type>

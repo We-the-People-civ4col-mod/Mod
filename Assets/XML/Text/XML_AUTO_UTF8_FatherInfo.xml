@@ -3873,4 +3873,156 @@
         <Italian>Allarga i confini facilmente, convincendo [COLOR_TECH_TEXT]William Brewster[COLOR_REVERT] a unirsi alla tua causa. Prendendo Brewster come Padre Fondatore ridurrai il costo per acquistare la terra dai nativi!</Italian>
         <Spanish>Ampliad vuestras fronteras fácilmente convenciendo a [COLOR_TECH_TEXT]William Brewster[COLOR_REVERT] de que se una a vosotros. Al adoptar a Brewster como Padre fundador, disminuiréis el coste de compra de tierras a los Nativos.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA</Tag>
+        <English>
+            <Text>Herman of Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Herman von Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Jan de Witt</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Herman de Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Herman de Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA_PEDIA</Tag>
+        <English>[H1]Herman of Alaska[\H1][NEWLINE][BOLD]Lived: [\BOLD]1750 - 1836[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Herman of Alaska was a Russian Orthodox monk and missionary to Alaska, which was then part of Russian America. His gentle approach and ascetic life earned him the love and respect of both the native Alaskans and the Russian colonists. He is considered by many Orthodox Christians as the patron saint of North America. [NEWLINE]Herman and the other missionaries encountered a harsh reality at Kodiak that did not correspond to the official Russian descriptions. The native Kodiak population, called "Americans" by the Russian settlers, were subject to harsh treatment by the Russian-American Company, which was being overseen by Shelikhov's manager Alexander Baranov who later became the first governor of the colony. The men were forced to hunt for sea otter even during harsh weather, and women and children were abused. The monks were also shocked at the widespread alcoholism in the Russian population, and the fact that most of the settlers had taken native mistresses. The monks themselves were not given the supplies that Shelikhov promised them, and had to till the ground with wooden implements. Despite these difficulties, the monks managed to baptize over 7,000 natives in the Kodiak region, and set about building a church and monastery.</English>
+        <German>[H1]Herman von Alaska[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1750 - 1836[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Herman von Alaska war ein russischer orthodoxer Mönch aus dem Valaam-Kloster in Russland, der 1793 mit acht anderen Mönchen auf die Aleuten zog, um den Ureinwohnern das Evangelium zu bringen. Im Rahmen der russischen Expansion nach Nordamerika hatte es hier seit 1740 Forschungs- und Handelsaktivitäten gegeben. Das Jahr 1793 markiert die Ankunft der Orthodoxen Mission in Nordamerika. Herman baute eine Schule und verteidigte die Ureinwohner gegen Ungerechtigkeiten und Ausbeutung seitens russischer Händler. Er wurde Apa genannt, was Großvater bedeutet. Er verbrachte den Großteil seines Lebens in einer Einsiedelei auf Spruce Island, einer kleinen bewaldteten Insel nahe Kodiak. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA_STRATEGY</Tag>
+        <English>Looking improve your relations with [COLOR_HIGHLIGHT_TEXT]Natives[COLOR_REVERT]? Convincing [COLOR_TECH_TEXT]Herman of Alaska[COLOR_REVERT] to join your Continental Congress will drastically reduce [COLOR_HIGHLIGHT_TEXT]frictions with Natives[COLOR_REVERT] and speed up [COLOR_HIGHLIGHT_TEXT]Learning in Villages of Natives[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen[COLOR_REVERT] zu den Ureinwohnern verbesser? Wenn Sie [COLOR_TECH_TEXT]Herman von Alaska[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei die [COLOR_HIGHLIGHT_TEXT]Spannungen mit Ureinwohnern[COLOR_REVERT] zu reduzieren und erhöht die Geschwindigkeit der [COLOR_HIGHLIGHT_TEXT]Ausbildung in Ureinwohnerdörfern[COLOR_REVERT]!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV</Tag>
+        <English>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV_PEDIA</Tag>
+        <English>[H1]Nikolai Petrowitsch Resanov[\H1][NEWLINE][BOLD]Lived: [\BOLD]1764 - 1807[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] Nikolai Petrowitsch Resanov was a Russian nobleman and statesman who promoted the project of Russian colonization of Alaska and California to three successive Tsars—Catherine the Great, Paul, and Aleksander I. [NEWLINE]Rezanov had just succeeded in persuading Catherine II to sign his charter when she died (1796), forcing him to begin again to obtain a charter from the unbalanced and intractable Tsar Paul I. For a time the outlook appeared hopeless, but Rezanov's skill, subtlety and address prevailed, and he obtained the Tsar's signature to the Ukase of 1799 shortly before the Tsar was assassinated. The Russian-American Company (RAC) was granted a monopoly over the Pacific Northwest coast of North America, from latitude 55 degrees northward, roughly the southern border of Alaska today; and over the chain of islands extending from Kamchatka northward to Alaska and southward to Japan for a period of twenty years. As a civil servant, Rezanov couldn't be directly named a director of the company, so he was officially designated the RAC's High Representative in the Capital.</English>
+        <German>[H1]Nikolai Petrowitsch Resanov[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1764 - 1807[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Nikolai Petrowitsch Resanov war ein russischer Staatsmann und einer der Gründungsinitiatoren der Russisch-Amerikanischen Kompagnie (RAK). [NEWLINE]Am 11. August 1799 brachte er den Zaren dazu, die 1797 eingeleitete Interessenvereinigung der letzten übrig gebliebenen und sich gegenseitig bekämpfenden Pelzhandelsfirmen in Russisch-Amerika und den Kurilen in einem Ukas unter dem Namen einer Monopolgesellschaft, der Russisch-Amerikanischen Kompagnie (RAK), neu zu konstituieren. Am 18. Oktober 1800 stimmte der Zar ebenfalls zu, die Hauptverwaltung der RAK von Irkutsk nach Sankt Petersburg zu verlegen. Das Direktorium der RAK, dem ein Angehöriger der Schelichow-Familie angehören musste, war damit sehr nahe an die eigentlichen Entscheidungsträgern gerückt. Als Alexander I. am 12. März 1801 den Thron bestieg, machte er Resanow zum Mitglied der Finnland-Kommission und beteiligte sich mit weiteren Mitgliedern seiner Familie am Kapital der RAK. Ende 1802 war die Zahl der Aktieninhaber der RAK von 17 auf 400 gestiegen. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV_STRATEGY</Tag>
+        <English>Looking improve your [COLOR_HIGHLIGHT_TEXT]Coastal Trade Ships[COLOR_REVERT] and make [COLOR_HIGHLIGHT_TEXT]Trade with Natives[COLOR_REVERT] more profitable? Convincing [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] to join your Continental Congress will make your [COLOR_HIGHLIGHT_TEXT]Trade with Natives[COLOR_REVERT] more profitable and speed up [COLOR_HIGHLIGHT_TEXT]Coastal Ships[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Küstenshiffe[COLOR_REVERT] verbessern und [COLOR_HIGHLIGHT_TEXT]Handel mit Ureinwohnern[COLOR_REVERT] profitabler gestalten? Wenn Sie [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei den [COLOR_HIGHLIGHT_TEXT]Handel mit Ureinwohnern[COLOR_REVERT] profitabler werden zu lassen und die Geschwindigkeit der [COLOR_HIGHLIGHT_TEXT]Küstenschiffe[COLOR_REVERT] zu erhöhen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KUSKOV</Tag>
+        <English>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KUSKOV_PEDIA</Tag>
+        <English>[H1]Ivan Alexandrovich Kuskov[\H1][NEWLINE][BOLD]Lived: [\BOLD]1765 - 1823[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] Ivan Aleksandrovich Kuskov was the senior assistant to Aleksandr Baranov, the Chief Administrator of the Russian-American Company (RAC). [NEWLINE]He was a native of Totma, Russia, he served in the RAC for 31 years, attaining the rank of Commerce Counselor (12th rank) and being awarded the gold medal "for zealous service" from Emperor Aleksandr I. Between 1808 and 1812 he led five exploratory expeditions to California with the intent of founding an agricultural settlement to supply the northern colonies of Russian America (Alaska). Kuskov, under guidance from Baranov, founded Fortress Ross (present day Fort Ross) in 1812. Kuskov served as Administrator at Fort Ross from 1812 until 1821. In 1819 he was recommended for the Order of St. Vladimir, 4th class, but had not received the award by the time of his death in 1823. After retiring from the RAC he returned to his home town of Totma, in the Vologda province on July 4, 1821, and died in 1823. His house is preserved to this day in Totma as the "Kuskov House Museum", under the direction of the Totma Museum Association, which preserves two original portraits, presumed to have been painted in California of Kuskov and his wife. </English>
+        <German>[H1]Ivan Alexandrovich Kuskov[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1765 - 1823[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Ivan Aleksandrovich Kuskov war ein russischer Seefahrer, Erforscher Alaskas und Nordkaliforniens und Gründer und Regent der ersten russischen Siedlung in Kalifornien. [NEWLINE]Er verbrachte insgesamt 31 Jahre seines Lebens auf Reisen, erforschte dabei Alaska und die ganze Westküste Nordamerikas. Kuskow gründete 1812 in Kalifornien die russische Festung Fort Ross, heute ein US-Nationalpark. Sowohl in Fort Ross, als auch in seiner Heimatstadt Totma in Russland gibt es Kuskow-Museen. Kuskow reiste zum ersten Mal 1790 nach Amerika, nachdem er einen Vertrag mit dem Kaufmann Alexander Andrejewitsch Baranow aus Kargopol (heute Oblast Archangelsk) unterzeichnet hatte. Später wurde Kuskow rechte Hand Baranows und leitete die Russisch-Amerikanische Kompagnie als dessen Stellvertreter. Die russische Regierung zeichnete Kuskow 1804 mit einer Medaille aus. 1806 wurde ihm der Titel des Kommerzialrates verliehen (in Russland hatten zu dieser Zeit nur fünf Personen diesen hohen Titel). Kurz nach seiner Heimkehr aus Amerika 1823 ist er verstorben. Sein Grab befindet sich im Spasso-Sumorin (Heiland-Sumorin) Kloster in der Nähe von Totma. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KUSKOV_STRATEGY</Tag>
+        <English>Looking improve your [COLOR_HIGHLIGHT_TEXT]Food Production[COLOR_REVERT] and make [COLOR_HIGHLIGHT_TEXT]Buying Land from Natives[COLOR_REVERT] cheaper? Convincing [COLOR_TECH_TEXT]Ivan Alexandrovich Kuskov[COLOR_REVERT] to join your Continental Congress will give [COLOR_HIGHLIGHT_TEXT]additional Food in your Cities[COLOR_REVERT] and also lower the price of [COLOR_HIGHLIGHT_TEXT]buying land from Natives[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Nahrungserträge[COLOR_REVERT] verbessern und [COLOR_HIGHLIGHT_TEXT]Landkauf von Ureinwohnern[COLOR_REVERT] günstiger gestalten? Wenn Sie [COLOR_TECH_TEXT]Ivan Alexandrovich Kuskov[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei die [COLOR_HIGHLIGHT_TEXT]Nahrungserträge[COLOR_REVERT] der Kolonien zu erhöhen und [COLOR_HIGHLIGHT_TEXT]Landkauf von Ureinwohnern[COLOR_REVERT] billiger werden zu lassen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</Tag>
+        <English>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_PEDIA</Tag>
+        <English>[H1]Ivan Fyodorovich Kruzenshtern[\H1][NEWLINE][BOLD]Lived: [\BOLD]1770 - 1864[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] Ivan Fyodorovich Kruzenshtern was a Baltic German admiral and explorer, who led the first Russian circumnavigation of the globe. [NEWLINE]Krusenstern was born in Hagudi, Harrien, Governorate of Estonia, Russian Empire into a Baltic German family descended from the Swedish aristocratic family von Krusenstjerna, who remained in the province after the country was ceded to Russia. In 1787, he joined the Russian Imperial Navy, and served in the war against Sweden. Subsequently, he served in the Royal Navy between 1793 and 1799, visiting America, India and China.</English>
+        <German>[H1]Ivan Fyodorovich Kruzenshtern[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1770 - 1864[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Ivan Fyodorovich Kruzenshtern war ein deutsch-baltischer Admiral der russischen Flotte und führte die erste russische Weltumseglung durch. [NEWLINE]Krusenstern wurde im Seekadettenkorps in Kronstadt ausgebildet und nahm zwischen 1787 und 1790 an den Kriegen gegen Schweden teil. Er leistete von 1793 bis 1799 Dienst in der britischen Flotte in Nordamerika, Afrika und Asien. Von 1803 bis 1806 war er Leiter der russischen Weltumsegelungsexpedition. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_STRATEGY</Tag>
+        <English>Looking improve your [COLOR_HIGHLIGHT_TEXT]Relations to King and other European[COLOR_REVERT] and get [COLOR_HIGHLIGHT_TEXT]more ships[COLOR_REVERT]? Convincing [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] to join your Continental Congress will improve your [COLOR_HIGHLIGHT_TEXT]Relations to King and other European[COLOR_REVERT] more grant you [COLOR_HIGHLIGHT_TEXT]free Ships[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Great Admiral[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu König und anderen Europäern[COLOR_REVERT] verbessern [COLOR_HIGHLIGHT_TEXT]mehr Schiffe[COLOR_REVERT] bekommen? Wenn Sie [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu König und anderen Europäern[COLOR_REVERT] zu verbessern und Sie bekommen obendrein einen [COLOR_HIGHLIGHT_TEXT]Großen Admiral[COLOR_REVERT]!</German>
+    </TEXT>
 </Civ4GameText>
