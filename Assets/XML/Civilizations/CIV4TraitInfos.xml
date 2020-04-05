@@ -7729,7 +7729,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
-            <iChiefGoldModifier>10</iChiefGoldModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
             <iKingAttitudeChange>0</iKingAttitudeChange>
