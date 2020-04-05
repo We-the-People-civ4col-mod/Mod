@@ -7671,7 +7671,7 @@
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
             <iKingAttitudeChange>0</iKingAttitudeChange>
             <iCityDefense>0</iCityDefense>
-            <iLandPriceDiscount>25</iLandPriceDiscount>
+            <iLandPriceDiscount>-25</iLandPriceDiscount>
             <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
