@@ -215,15 +215,15 @@
 	</Define>
 	<Define>
 		<DefineName>LBD_CHANCE_REVOLT</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>LBD_CHANCE_MOD_REVOLT_CRIMINAL</DefineName>
-		<iDefineIntVal>3</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>LBD_CHANCE_MOD_REVOLT_SLAVE</DefineName>
-		<iDefineIntVal>3</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_FREED_SLAVE</DefineName>
