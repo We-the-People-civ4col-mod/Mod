@@ -1092,7 +1092,7 @@
 	</Define>
 	<Define>
 		<DefineName>TRADE_POST_GOLD_PER_NATIVE</DefineName>
-		<iDefineIntVal>10</iDefineIntVal>
+		<iDefineIntVal>6</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS</DefineName>
