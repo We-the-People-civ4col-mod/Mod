@@ -23050,7 +23050,7 @@
         <EventInfo>
             <Type>EVENT_JUNGLE_FIRE_3</Type>
             <Description>TXT_KEY_EVENT_JUNGLE_FIRE_3</Description>
-            <LocalInfoText>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_3</LocalInfoText>
+            <LocalInfoText/>
             <WorldNewsTexts/>
             <OtherPlayerPopup/>
             <QuestFailText/>
