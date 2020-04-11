@@ -1474,7 +1474,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_JUNGLE_FIRE_3</Tag>
-        <English>????</English>
+        <English>Another fire broke out, because we did not proprerly extinguish the first fire before.</English>
+        <German>Ein weiteres Feuer ist ausgebrochen, weil wir das vorherige nicht gelöscht hatten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_3</Tag>
+        <English>Another fire broke out, because we did not proprerly extinguish the first fire before.</English>
+        <German>Ein weiteres Feuer ist ausgebrochen, weil wir das vorherige nicht gelöscht hatten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KINGFURIOUS_1</Tag>
