@@ -19606,7 +19606,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>3</iCombat>
+            <iCombat>2</iCombat>
             <iXPValueAttack>2</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>5</iWithdrawalProb>
@@ -19760,7 +19760,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>3</iCombat>
+            <iCombat>2</iCombat>
             <iXPValueAttack>2</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>5</iWithdrawalProb>
@@ -19914,7 +19914,7 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings/>
-            <iCombat>3</iCombat>
+            <iCombat>2</iCombat>
             <iXPValueAttack>2</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
             <iWithdrawalProb>5</iWithdrawalProb>
