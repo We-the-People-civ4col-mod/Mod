@@ -2618,6 +2618,13 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	if (!CreateFXml())
 		return false;
 
+	// always enable the display of python exceptions.
+	// The main issue here is that the game can reset the ini file and disable exceptions without telling you.
+	// This means you can think no errors means working python change when in reality the game is just hiding them.
+	// Also it provides more useful bug reports if people can tell which python exception they triggered.
+	// Nightinggale
+	gDLL->ChangeINIKeyValue("CONFIG", "HidePythonExceptions", "0");
+
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(true);
 	/// XML type preloading - end - Nightinggale
