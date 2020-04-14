@@ -19921,7 +19921,7 @@
             <iCityAttack>10</iCityAttack>
             <iCityDefense>0</iCityDefense>
             <iHillsAttack>0</iHillsAttack>
-            <iHillsDefense>0</iHillsDefense>
+            <iHillsDefense>10</iHillsDefense>
             <iDomesticBonus>0</iDomesticBonus>
             <TerrainAttacks/>
             <TerrainDefenses/>
