@@ -732,6 +732,8 @@ enum DllExport YieldTypes
 	YIELD_CULTURE,
 	YIELD_HEALTH,
 	YIELD_EDUCATION,
+	YIELD_HAPPINESS, // WTP, ray, Happiness - START
+	YIELD_UNHAPPINESS, // WTP, ray, Happiness - START
 
 #ifdef _USRDLL
 	NUM_YIELD_TYPES

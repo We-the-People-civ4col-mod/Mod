@@ -4639,6 +4639,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		case YIELD_EDUCATION:
 			break;
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+			break;
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
+			break;
 		case YIELD_CANNONS:
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
 			// block it so that production is not diverted to it. (cannons are usually just sold in Europe

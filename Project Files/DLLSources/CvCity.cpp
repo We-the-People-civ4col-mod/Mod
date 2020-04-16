@@ -444,6 +444,9 @@ void CvCity::reset(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructo
 	m_iWorksWaterCount = 0;
 	m_iRebelSentiment = 0;
 	m_iCityHealth = 0; // R&R, ray, Health
+	m_iCityHappiness = 0; // WTP, ray, Happiness - START
+	m_iCityUnHappiness = 0; // WTP, ray, Happiness - START
+	m_iCityTimerFestivitiesOrUnrest = 0; // WTP, ray, Happiness - START
 	m_iTeachUnitMultiplier = 100;
 	m_iEducationThresholdMultiplier = 100;
 	m_iTotalYieldStored = 0; //VET NewCapacity - 1/9
@@ -744,6 +747,13 @@ void CvCity::doTurn()
 		doLbD(); // TAC - LBD - Ray - START
 		doPrices(); // R&R, Androrc Domestic Market
 		doCityHealth(); // R&R, ray, Health
+		// WTP, ray, Happiness - START
+		updateCityHappiness();
+		updateCityUnHappiness();
+		changeCityTimerFestivitiesOrUnrest(-1);
+		doCityHappiness();
+		doCityUnHappiness();
+		// WTP, ray, Happiness - END
 	}
 	
 	doDecay();
@@ -2913,7 +2923,7 @@ int CvCity::foodDifference() const
 
 int CvCity::growthThreshold() const
 {
-	return (GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100-getCityHealth()) / 100); // R&R, ray, Health
+	return (GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - getCityHealth() - getCityHappiness() + getCityUnHappiness()) / 100); // R&R, ray, Health // WTP, ray, Happiness - START
 }
 
 int CvCity::productionLeft() const
@@ -7049,6 +7059,12 @@ void CvCity::doYields()
 						iAmount = iAmountForSale;
 					}
 					int iProfit = iAmount * getYieldBuyPrice(eYield);
+
+					// WTP, ray, Happiness - START 
+					int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
+					iProfit = (iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers)) / 100;
+					// WTP, ray, Happiness - END
+
 					aiYields[eYield] -= iAmount;
 					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
 					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
@@ -7747,6 +7763,9 @@ void CvCity::read(FDataStreamBase* pStream)
 	pStream->Read(&m_iWorksWaterCount);
 	pStream->Read(&m_iRebelSentiment);
 	pStream->Read(&m_iCityHealth); // R&R, ray, Health
+	pStream->Read(&m_iCityHappiness); // WTP, ray, Happiness - START
+	pStream->Read(&m_iCityUnHappiness); // WTP, ray, Happiness - START
+	pStream->Read(&m_iCityTimerFestivitiesOrUnrest ); // WTP, ray, Happiness - START
 	pStream->Read(&m_iTeachUnitMultiplier);
 	if (uiFlag > 1)
 	{
@@ -8002,6 +8021,9 @@ void CvCity::write(FDataStreamBase* pStream)
 	pStream->Write(m_iWorksWaterCount);
 	pStream->Write(m_iRebelSentiment);
 	pStream->Write(m_iCityHealth); // R&R, ray, Health
+	pStream->Write(m_iCityHappiness); // WTP, ray, Happiness - START
+	pStream->Write(m_iCityUnHappiness); // WTP, ray, Happiness - START
+	pStream->Write(m_iCityTimerFestivitiesOrUnrest); // WTP, ray, Happiness - START
 	pStream->Write(m_iTeachUnitMultiplier);
 	pStream->Write(m_iEducationThresholdMultiplier);
 
@@ -9894,9 +9916,565 @@ void CvCity::changeCityHealth(int iValue)
 
 void CvCity::doCityHealth()
 {	
-		changeCityHealth(getCityHealthChange());
+	changeCityHealth(getCityHealthChange());
 }
 // R&R, ray, Health - END
+
+
+// WTP, ray, Happiness - START
+
+void CvCity::doCityHappiness()
+{	
+	// we do not do this for every tiny village
+	int iMinPopulation = GC.getMIN_POP_NEG_HAPPINESS() * 2;
+	if (getPopulation() < iMinPopulation)
+	{
+		return;
+	}
+
+	// we check the timer to prevent firing this too often
+	int iCurrentTimer = getCityTimerFestivitiesOrUnrest();
+	if (iCurrentTimer > 0)
+	{
+		return;
+	}
+
+	// min Happiness
+	int iHappinessBalance = getCityHappiness() - getCityUnHappiness();
+	int minHappinessForFestivities = GC.getMIN_BALANCE_FESTIVITIES_HAPPINESS();
+
+	// we check if we have the min value of Happiness
+	if (iHappinessBalance < minHappinessForFestivities)
+	{
+		return;
+	}
+
+	// get random values
+	int chanceForFestivities = GC.getBASE_CHANCE_FESTIVITIES_HAPPINESS();
+	chanceForFestivities = chanceForFestivities * iHappinessBalance; // the chances are scaled by Happiness balance
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Festivities Happiness");
+
+	// random has failed
+	if (chanceForFestivities < randomValue)
+	{
+		return;
+	}
+
+	// first we reset the timer - because we are going to fire
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	int iTimerResetValue = GC.getTIMER_FESTIVITIES_OR_UNRESTS()*gamespeedMod/100;
+	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
+
+	// otherwise we do festivities - which give one of the father point categories by random; 
+	int iFoundingFatherPoints = GC.getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+
+	int iNumFatherPointInfos = GC.getNumFatherPointInfos();
+	// we skip fathr points for Exploration - which is 0 that is why we first subract 2 and then add 1
+	int randomFatherCategorySelection = GC.getGameINLINE().getSorenRandNum(iNumFatherPointInfos - 2, "Random Father Point selection");
+	randomFatherCategorySelection = randomFatherCategorySelection + 1;
+	FatherPointTypes ePointType = (FatherPointTypes) randomFatherCategorySelection;
+
+	GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iFoundingFatherPoints);
+
+	CvWString szBuffer;
+	szBuffer = gDLL->getText("TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS", getNameKey(), iFoundingFatherPoints, GC.getFatherPointInfo(ePointType).getDescription());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+
+	return;
+}
+
+void CvCity::doCityUnHappiness()
+{	
+	// we do not do this for AI
+	if(!isHuman())
+	{
+		return;
+	}
+
+	// we do not do this for every tiny village
+	int iMinPopulation = GC.getMIN_POP_NEG_HAPPINESS() * 2;
+	if (getPopulation() < iMinPopulation)
+	{
+		return;
+	}
+
+	// we do not trigger again if already in Occupation
+	if(getOccupationTimer() > 0)
+	{
+		return;
+	}
+
+	// we check the timer to prevent firing this too often
+	int iCurrentTimer = getCityTimerFestivitiesOrUnrest();
+	if (iCurrentTimer > 0)
+	{
+		return;
+	}
+
+	// min Happiness
+	int iUnHappinessBalance = getCityUnHappiness() - getCityHappiness();
+	int minUnHappinessForUnrest = GC.getMIN_BALANCE_UNREST_UNHAPPINESS();
+
+	// we check if we have the min value of Happiness
+	if (iUnHappinessBalance < minUnHappinessForUnrest)
+	{
+		return;
+	}
+
+	// get random values
+	int chanceForUnrest = GC.getBASE_CHANCE_UNREST_UNHAPPINESS();
+	chanceForUnrest = chanceForUnrest * iUnHappinessBalance; // the chances are scaled by UnHappiness balance
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Unrest UnHappiness");
+
+	// random has failed
+	if (chanceForUnrest < randomValue)
+	{
+		return;
+	}
+
+	// first we reset the timer - because we are going to fire
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	int iTimerResetValue = GC.getTIMER_FESTIVITIES_OR_UNRESTS()*gamespeedMod/100;
+	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
+
+	// now we do unrest 
+	int iUnrestTime = GC.getTURNS_UNREST_UNHAPPINESS();
+	setOccupationTimer(iUnrestTime*gamespeedMod/100);
+
+	// add message
+	CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS", getNameKey());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+
+	return;
+}
+
+// basic set and get methods
+int CvCity::getCityHappiness() const
+{
+	return m_iCityHappiness;
+}
+
+void CvCity::setCityHappiness(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityHappiness = iValue;
+}
+
+void CvCity::updateCityHappiness()
+{
+	int iTotalCityHappiness = 0;
+
+	iTotalCityHappiness += calculateNetYield(YIELD_HAPPINESS);
+	iTotalCityHappiness += getHappinessFromCrosses();
+	iTotalCityHappiness += getHappinessFromBells();
+	iTotalCityHappiness += getHappinessFromHealth();
+	iTotalCityHappiness += getHappinessFromCulture();
+	iTotalCityHappiness += getHappinessFromEducation();
+	iTotalCityHappiness += getHappinessFromDomesticDemandsFulfilled();
+	iTotalCityHappiness += getHappinessFromTreaties();
+
+	setCityHappiness(iTotalCityHappiness);
+}
+
+int CvCity::getCityUnHappiness() const
+{
+	return m_iCityUnHappiness;
+}
+
+void CvCity::setCityUnHappiness(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityUnHappiness = iValue;
+}
+
+void CvCity::updateCityUnHappiness()
+{
+	int iTotalCityUnHappiness = 0;
+
+	iTotalCityUnHappiness += calculateNetYield(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	iTotalCityUnHappiness += getUnhappinessFromPopulation();
+	iTotalCityUnHappiness += getUnhappinessFromSlavery(); 
+	iTotalCityUnHappiness += getUnhappinessFromWars();
+	iTotalCityUnHappiness += getUnhappinessFromMissingDefense();
+	iTotalCityUnHappiness += getUnhappinessFromTaxRate();
+
+	setCityUnHappiness(iTotalCityUnHappiness);
+}
+
+// specific computation methods for factors of Unhappiness
+int CvCity::getUnhappinessFromPopulation() const
+{
+	int iUnHapPop = 0;
+	int iPopulation = getPopulation();
+	iUnHapPop = iPopulation - GC.getMIN_POP_NEG_HAPPINESS();
+
+	// to prevent negative Unhappiness in case we have less pop than min value for neg pop
+	if (iUnHapPop > 0)
+	{
+		return iUnHapPop;
+	}
+
+	return 0;
+}
+
+int CvCity::getUnhappinessFromSlavery() const
+{
+	int iUnHapSlav = 0;
+	for (int i = 0; i < getPopulation(); ++i)
+	{
+		CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+		if (GC.getUnitInfo(pLoopUnit->getUnitType()).LbD_canEscape())
+		{
+			iUnHapSlav++;
+		}
+	}
+	return iUnHapSlav;
+}
+
+int CvCity::getUnhappinessFromWars() const
+{
+	int iUnHapWar = 0;
+	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_UNHAPPINESS(); 
+	int iNumEuropeanWars = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isAlive())
+		{
+			// we do not count ourselves of course
+			if (iI != GET_TEAM(getTeam()).getID())
+			{
+				// we count teams we are at war with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isAtWar((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasEuropePlayer())
+				{
+					iNumEuropeanWars++;
+				}
+			}
+		}
+	}
+
+	iUnHapWar = iFactorPerWar * iNumEuropeanWars;
+	return iUnHapWar;
+}
+
+int CvCity::getUnhappinessFromMissingDefense() const
+{
+	int iUnHapMissingDef = 0;
+
+	int iPopDefenseDivisor = GC.getPOP_DIVISOR_DEFENSE_UNHAPPINESS(); 
+	// since this is a divisor it may never be 0 - to prevent CTD by messing up XML config
+	if (iPopDefenseDivisor == 0)
+	{
+		iPopDefenseDivisor = 1;
+	}
+
+	int iDefendersNeeded = 0;
+	iDefendersNeeded = getPopulation() / iPopDefenseDivisor;
+	int iDefendersFound = plot()->getNumDefenders(getOwnerINLINE());
+	iUnHapMissingDef = iDefendersNeeded - iDefendersFound;
+
+	// we only have a Unappiness for missing defenders - theoreticyally it is possible that we have more
+	if (iUnHapMissingDef > 0)
+	{
+		return iUnHapMissingDef;
+	}
+	
+	// more defenders than needed does not help
+	return 0;
+}
+
+int CvCity::getUnhappinessFromTaxRate() const
+{
+	int iUnHapTax = 0;
+
+	int iTaxDivisor = GC.getTAX_DIVISOR_UNHAPPINESS(); 
+	// since this is a divisor it may never be 0 - to prevent CTD by messing up XML config
+	if (iTaxDivisor == 0)
+	{
+		iTaxDivisor = 1;
+	}
+
+	int iCurrentTaxRate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
+	iUnHapTax = iCurrentTaxRate / iTaxDivisor;
+
+	return iUnHapTax;
+}
+
+// specific computation methods for factors of Happiness
+int CvCity::getHappinessFromCrosses() const
+{
+	int iHapCrosses = 0;
+	int iCrosses = calculateNetYield(YIELD_CROSSES);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapCrosses = iCrosses / (iPopulation / iPopDivisor);
+
+	if (iHapCrosses > (iPopulation / iPopDivisor))
+	{
+		iHapCrosses = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapCrosses == 0 && iCrosses > 0)
+	{
+		iHapCrosses = 1;
+	}
+
+	return iHapCrosses;
+}
+
+int CvCity::getHappinessFromBells() const
+{
+	int iHapBells = 0;
+	int iBells = calculateNetYield(YIELD_BELLS);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapBells = iBells / (iPopulation / iPopDivisor);
+
+	if (iHapBells > (iPopulation / iPopDivisor))
+	{
+		iHapBells = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapBells == 0 && iBells > 0)
+	{
+		iHapBells = 1;
+	}
+	return iHapBells;
+}
+
+int CvCity::getHappinessFromHealth() const
+{
+	int iHapHealth = 0;
+	int iHealth = calculateNetYield(YIELD_HEALTH);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapHealth = iHealth / (iPopulation / iPopDivisor);
+	
+	if (iHapHealth > (iPopulation / iPopDivisor))
+	{
+		iHapHealth = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapHealth == 0 && iHealth > 0)
+	{
+		iHapHealth = 1;
+	}
+	return iHapHealth;
+}
+
+int CvCity::getHappinessFromCulture() const
+{
+	int iHapCulture = 0;
+	int iCulture = calculateNetYield(YIELD_CULTURE);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapCulture = iCulture / (iPopulation / iPopDivisor);
+
+	if (iHapCulture > (iPopulation / iPopDivisor))
+	{
+		iHapCulture = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapCulture == 0 && iCulture > 0)
+	{
+		iCulture = 1;
+	}
+	return iHapCulture;
+}
+
+int CvCity::getHappinessFromEducation() const
+{
+	int iHapEducation = 0;
+	int iEducation = calculateNetYield(YIELD_EDUCATION);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapEducation = iEducation / (iPopulation / iPopDivisor);
+
+	if (iHapEducation > (iPopulation / iPopDivisor))
+	{
+		iHapEducation = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapEducation == 0 && iEducation > 0)
+	{
+		iHapEducation = 1;
+	}
+	return iHapEducation;
+}
+
+int CvCity::getHappinessFromDomesticDemandsFulfilled() const
+{
+	int iHapDomesticDemand = 0;
+
+	// loop the Yields and find demand fulfilled
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+		if (GC.getYieldInfo(eYield).isCargo())
+		{
+			if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield) > 0))
+			{
+				iHapDomesticDemand++;
+			}	
+		}
+	}
+
+	return iHapDomesticDemand;
+}
+
+int CvCity::getHappinessFromTreaties() const
+{
+	// calcuation logic - calculation umber of Open Borders and Defensive Pacts
+	int iNumOpenBorders = 0;
+	int iNumDefensivePacts = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isAlive())
+		{
+			// we do not count ourselves of course
+			if (iI != GET_TEAM(getTeam()).getID())
+			{
+				// we count teams we have opne borders with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isOpenBorders((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasEuropePlayer())
+				{
+					iNumOpenBorders++;
+				}
+
+				// we count teams we a defensive pact with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isDefensivePact((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasEuropePlayer())
+				{
+					iNumDefensivePacts++;
+				}
+			}
+		}
+	}
+
+	int iHapTreaties = iNumOpenBorders + iNumDefensivePacts;
+
+	// we give only a max of 5 here - to be considered and checkecked in balanancing
+	/*if (iHapTreaties > 5)
+	{
+		return 5;
+	}*/
+
+	return iHapTreaties;
+}
+
+int CvCity::getCityTimerFestivitiesOrUnrest() const
+{
+	return m_iCityTimerFestivitiesOrUnrest;
+}
+
+void CvCity::setCityTimerFestivitiesOrUnrest(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityTimerFestivitiesOrUnrest = iValue;
+}
+
+void CvCity::changeCityTimerFestivitiesOrUnrest(int iValue) 
+{
+	if (m_iCityTimerFestivitiesOrUnrest + iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityTimerFestivitiesOrUnrest = m_iCityTimerFestivitiesOrUnrest + iValue;
+}
+
+// WTP, ray, Happiness - END
 
 void CvCity::setTeachUnitMultiplier(int iModifier)
 {
@@ -11334,6 +11912,33 @@ void CvCity::doLbD()
 	chance_increase_free = chance_increase_free / train_percent / 100;
 	pre_rounds_free = pre_rounds_free * train_percent / 100;
 
+	// WTP, ray, Happiness - START
+	// we now calculate and apply Happiness vs. Unhappiness on it
+	int iCityHappiness = getCityHappiness();
+	int iCityUnHappiness = getCityUnHappiness();
+
+	// this is the percentage rate we apply for positive features - it may become negative but that is intended
+	int iPosHappinessBalance = iCityHappiness - iCityUnHappiness;
+
+	// become expert Happiness vs Unhappiness modification
+	base_chance_expert = base_chance_expert + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	chance_increase_expert = chance_increase_expert + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	pre_rounds_expert = pre_rounds_expert * (100 - iPosHappinessBalance) / 100; // pre rounds experts is shortened
+
+	// become free Happiness vs Unhappiness modification
+	base_chance_free = base_chance_free + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	chance_increase_free = chance_increase_free + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	pre_rounds_free = pre_rounds_free * (100 - iPosHappinessBalance) / 100; // pre rounds free is shortened
+
+	// this is the percentage rate we apply for negative features - it may become negative but that is intended
+	int iNegHappinessBalance = iCityUnHappiness - iCityHappiness;
+
+	// escape and revolt Unhappiness vs Happiness modification
+	base_chance_escape = base_chance_escape + (iNegHappinessBalance / 5); // chances are increased for positive values iNegHappinessBalance, decreased for negative values iNegHappinessBalance
+	base_chance_revolt = base_chance_revolt + (iNegHappinessBalance / 5); // chances are increased for positive values iNegHappinessBalance, decreased for negative values iNegHappinessBalance
+
+	// WTP, ray, Happiness - END
+
 	// loop through units
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
@@ -11991,6 +12596,8 @@ void CvCity::doEntertainmentBuildings()
 	}
 
 	int iGoldthroughCulture = iCulturePerTurn +  ((iCulturePerTurn * factorFromBuildingLevel) / 2); // 50 percent extra for each level
+	iGoldthroughCulture = iGoldthroughCulture * (100 + getCityHappiness() - getCityUnHappiness()) / 100; // WTP, ray, Happiness - START
+
 	if (highestLevelEntertainmentBuilding != NO_BUILDING && iGoldthroughCulture > 0)
 	{
 		GET_PLAYER(getOwnerINLINE()).changeGold(iGoldthroughCulture);

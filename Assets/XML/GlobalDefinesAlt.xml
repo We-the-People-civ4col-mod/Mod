@@ -1114,5 +1114,53 @@
 		<DefineName>MAX_CHANCE_TRADE_POST</DefineName>
 		<iDefineIntVal>90</iDefineIntVal>
 	</Define>
-	<!-- Native Trade Post - End -->
+	<!-- Happiness vs Unhappiness - begin -->
+	<Define>
+		<DefineName>MIN_POP_NEG_HAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>POP_DIVISOR_HAPPINESS</DefineName>
+		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PER_EUROPEAN_AT_WAR_UNHAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>POP_DIVISOR_DEFENSE_UNHAPPINESS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TAX_DIVISOR_UNHAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_CHANCE_UNREST_UNHAPPINESS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_CHANCE_FESTIVITIES_HAPPINESS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_BALANCE_UNREST_UNHAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_BALANCE_FESTIVITIES_HAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TURNS_UNREST_UNHAPPINESS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TIMER_FESTIVITIES_OR_UNRESTS</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
 </Civ4Defines>

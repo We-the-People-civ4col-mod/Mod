@@ -7859,7 +7859,7 @@
                     <BuildingClassType>BUILDINGCLASS_CHAPEL</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
-                            <YieldType>YIELD_HEALTH</YieldType>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
                             <iYieldChange>1</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
@@ -7868,7 +7868,7 @@
                     <BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
-                            <YieldType>YIELD_HEALTH</YieldType>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
                             <iYieldChange>2</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
@@ -7877,7 +7877,7 @@
                     <BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
-                            <YieldType>YIELD_HEALTH</YieldType>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
                             <iYieldChange>3</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
@@ -7886,7 +7886,7 @@
                     <BuildingClassType>BUILDINGCLASS_GREAT_CATHEDRAL</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
-                            <YieldType>YIELD_HEALTH</YieldType>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
                             <iYieldChange>4</iYieldChange>
                         </YieldChange>
                     </BuildingYields>
@@ -7895,7 +7895,7 @@
                     <BuildingClassType>BUILDINGCLASS_MINSTER</BuildingClassType>
                     <BuildingYields>
                         <YieldChange>
-                            <YieldType>YIELD_HEALTH</YieldType>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
                             <iYieldChange>5</iYieldChange>
                         </YieldChange>
                     </BuildingYields>

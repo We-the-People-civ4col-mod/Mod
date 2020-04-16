@@ -1218,7 +1218,109 @@ void CyCity::changeCityHealth(int iValue)
 }
 // R&R, ray, Health - END
 
+// WTP, ray, Happiness - START
+int CyCity::getCityHappiness() const
+{
+	return m_pCity ? m_pCity->getCityHappiness() : -1;
+}
 
+void CyCity::setCityHappiness(int iValue)
+{
+	if (m_pCity)
+	{
+		m_pCity->setCityHappiness(iValue);
+	}
+}
+
+void CyCity::updateCityHappiness()
+{
+	if (m_pCity)
+	{
+		m_pCity->updateCityHappiness();
+	}
+}
+
+int CyCity::getCityUnHappiness() const
+{
+	return m_pCity ? m_pCity->getCityUnHappiness() : -1;
+}
+
+void CyCity::setCityUnHappiness(int iValue)
+{
+	if (m_pCity)
+	{
+		m_pCity->setCityUnHappiness(iValue);
+	}
+}
+
+void CyCity::updateCityUnHappiness()
+{
+	if (m_pCity)
+	{
+		m_pCity->updateCityUnHappiness();
+	}
+}
+
+int CyCity::getHappinessFromCrosses() const
+{
+	return m_pCity ? m_pCity->getHappinessFromCrosses() : -1;
+}
+
+int CyCity::getHappinessFromBells() const
+{
+	return m_pCity ? m_pCity->getHappinessFromBells() : -1;
+}
+
+int CyCity::getHappinessFromHealth() const
+{
+	return m_pCity ? m_pCity->getHappinessFromHealth() : -1;
+}
+
+int CyCity::getHappinessFromCulture() const
+{
+	return m_pCity ? m_pCity->getHappinessFromCulture() : -1;
+}
+
+int CyCity::getHappinessFromEducation() const
+{
+	return m_pCity ? m_pCity->getHappinessFromEducation() : -1;
+}
+
+int CyCity::getHappinessFromDomesticDemandsFulfilled() const
+{
+	return m_pCity ? m_pCity->getHappinessFromDomesticDemandsFulfilled() : -1;
+}
+
+int CyCity::getHappinessFromTreaties() const
+{
+	return m_pCity ? m_pCity->getHappinessFromTreaties() : -1;
+}
+
+int CyCity::getUnhappinessFromPopulation() const
+{
+	return m_pCity ? m_pCity->getHappinessFromTreaties() : -1;
+}
+
+int CyCity::getUnhappinessFromSlavery() const
+{
+	return m_pCity ? m_pCity->getUnhappinessFromSlavery() : -1;
+}
+
+int CyCity::getUnhappinessFromWars() const
+{
+	return m_pCity ? m_pCity->getUnhappinessFromWars() : -1;
+}
+
+int CyCity::getUnhappinessFromMissingDefense() const
+{
+	return m_pCity ? m_pCity->getUnhappinessFromMissingDefense() : -1;
+}
+
+int CyCity::getUnhappinessFromTaxRate() const
+{
+	return m_pCity ? m_pCity->getUnhappinessFromTaxRate() : -1;
+}
+// WTP, ray, Happiness - END
 CyUnit* CyCity::getUnitWorkingPlot(int iPlotIndex)
 {
 	return m_pCity ? new CyUnit(m_pCity->getUnitWorkingPlot(iPlotIndex)) : NULL;

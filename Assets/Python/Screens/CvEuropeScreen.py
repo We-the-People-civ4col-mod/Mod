@@ -36,7 +36,7 @@ class CvEuropeScreen:
 
 	def __init__(self):
 		self.WIDGET_ID = "EuropeScreenWidget"
-		self.nWidgetCount = 0		
+		self.nWidgetCount = 0
 		self.UNIT_BUTTON_ID = 1
 		self.UNIT_CARGO_BUTTON_ID = 2
 		self.BUY_YIELD_BUTTON_ID = 3
@@ -650,8 +650,16 @@ class CvEuropeScreen:
 		fStoredPercent = float(player.getCrossesStored()) / float(player.immigrationThreshold())
 		screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, fStoredPercent)
 		if (fStoredPercent < 1.0):
-			fRatePercent = float(player.getYieldRate(YieldTypes.YIELD_CROSSES)) / float(player.immigrationThreshold()) / (1 - fStoredPercent)
+		#  WTP, ray, Happiness
+			iCrossRate = player.getYieldRate(YieldTypes.YIELD_CROSSES)
+			iHappinessRate = player.getHappinessRate()
+			iUnHappinessRate = player.getUnHappinessRate()
+			iTotal = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate)) / 100
+			if (iTotal < 0):
+				iTotal = 0;
+			fRatePercent = float(iTotal) / float(player.immigrationThreshold()) / (1 - fStoredPercent)
 			screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_RATE, fRatePercent)
+		#  WTP, ray, Happiness
 		screen.setLabel(self.getNextWidgetName(), "", u"<font=3>" + localText.getText("TXT_KEY_IMMIGRATION_BAR", (player.getCrossesStored(), player.immigrationThreshold(), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar())) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, iX + iW / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, self.HELP_CROSS_RATE, -1)
 
 		return 0
@@ -896,7 +904,8 @@ class CvEuropeScreen:
 			elif iData1 == self.TREASURY_ID:
 				return localText.getText("TXT_KEY_ECON_GOLD_RESERVE" , ())
 			elif iData1 == self.HELP_CROSS_RATE:
-				return localText.getText("TXT_KEY_YIELD_RATE", (player.getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()))
+				#  WTP, ray, Happiness
+				return localText.getText("TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS", (player.getYieldRate(YieldTypes.YIELD_CROSSES), gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), player.getHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar(), player.getUnHappinessRate(), gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()))
 			elif iData1 == self.TRAVEL_INFO or iData1 == self.RECALL:
 				return self.cargoMessage(iData2)
 			elif iData1 == self.TRADE_LOG:
@@ -909,7 +918,7 @@ class CvEuropeScreen:
 			elif iData1 == self.PREVIEW_MODE:
 				return localText.getText("TXT_KEY_EU_PREVIEW_MODE", ())
 			elif iData1 == self.BOYCOTT:
-				# WTP, Erik: Prevent the hoovertext from suggesting that lifting a boycott is possible during the revolution				
+				# WTP, Erik: Prevent the hoovertext from suggesting that lifting a boycott is possible during the revolution
 				if player.isInRevolution():
 					return u""
 				else:
@@ -918,10 +927,10 @@ class CvEuropeScreen:
 			elif iData1 == self.HELP_TAX_RATE:
 				if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN):
 				# R&Rmod, vetiarvind, Price dependent tax increase - START
-					return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsScore(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
-					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))				
+					return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsScore(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))
+					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar(),self.getChanceProb()/10,self.getChanceProb()%10))
 				# R&Rmod, vetiarvind, Price dependent tax increase - END
-				else:					
+				else:
 					return localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
 					#return localText.getText("TXT_KEY_TAX_BAR", (self.getTotalYieldsTraded(), self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()))
 					#return localText.getText("TXT_KEY_TAX_BAR", (0, self.getTaxTreshold(), gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()))

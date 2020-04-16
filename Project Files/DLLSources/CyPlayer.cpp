@@ -611,6 +611,16 @@ int CyPlayer::getYieldRate(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getYieldRate(eIndex) : -1;
 }
+// WTP, ray, Happiness - START
+int CyPlayer::getHappinessRate()
+{
+	return m_pPlayer ? m_pPlayer->getHappinessRate() : -1;
+}
+int CyPlayer::getUnHappinessRate()
+{
+	return m_pPlayer ? m_pPlayer->getUnHappinessRate() : -1;
+}
+// WTP, ray, Happiness - END
 int CyPlayer::getYieldRateModifier(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getYieldRateModifier(eIndex) : 0;

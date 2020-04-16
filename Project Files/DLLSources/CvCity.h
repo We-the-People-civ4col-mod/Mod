@@ -516,6 +516,33 @@ public:
 	DllExport void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
 
+	// WTP, ray, Happiness - START
+	DllExport int getCityHappiness() const;
+	DllExport void setCityHappiness(int iValue);
+	DllExport void updateCityHappiness();
+	DllExport int getCityUnHappiness() const;
+	DllExport void setCityUnHappiness(int iValue);
+	DllExport void updateCityUnHappiness();
+
+	DllExport int getUnhappinessFromPopulation() const;
+	DllExport int getUnhappinessFromSlavery() const;
+	DllExport int getUnhappinessFromWars() const;
+	DllExport int getUnhappinessFromMissingDefense() const;
+
+	DllExport int getHappinessFromCrosses() const;
+	DllExport int getHappinessFromBells() const;
+	DllExport int getHappinessFromHealth() const;
+	DllExport int getHappinessFromCulture() const;
+	DllExport int getHappinessFromEducation() const;
+	DllExport int getHappinessFromDomesticDemandsFulfilled() const;
+	DllExport int getHappinessFromTreaties() const;
+	DllExport int getUnhappinessFromTaxRate() const;
+
+	DllExport int getCityTimerFestivitiesOrUnrest() const;
+	DllExport void setCityTimerFestivitiesOrUnrest(int iValue);
+	DllExport void changeCityTimerFestivitiesOrUnrest(int iValue);
+	// WTP, ray, Happiness - END
+
 	int getTeachUnitMultiplier() const;
 	void setTeachUnitMultiplier(int iModifier);
 	UnitClassTypes bestTeachUnitClass();
@@ -709,6 +736,9 @@ protected:
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
 	int m_iCityHealth; // R&R, ray, Health
+	int m_iCityHappiness; // WTP, ray, Happiness
+	int m_iCityUnHappiness; // WTP, ray, Happiness
+	int m_iCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness
 	int m_iTeachUnitMultiplier;
 	int m_iEducationThresholdMultiplier;
 	int m_iTotalYieldStored;			//VET NewCapacity - 2/2
@@ -803,6 +833,8 @@ protected:
 	void doNativeTradePost(); // WTP, ray, Native Trade Posts - START
 	void doRebelSentiment(); 
 	void doCityHealth(); // R&R, ray, Health - START
+	void doCityHappiness(); // WTP, ray, Happiness - START
+	void doCityUnHappiness(); // WTP, ray, Happiness - START
 	bool doCheckProduction();
 	void doCheat(bool bAlt, bool bShift, bool bCtrl);
 	int getExtraProductionDifference(int iExtra, int iModifier) const;

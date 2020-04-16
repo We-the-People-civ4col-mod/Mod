@@ -8667,6 +8667,52 @@ int CvPlayer::getYieldRate(YieldTypes eIndex) const
 	return iTotalRate;
 }
 
+// WTP, ray, Happiness - START
+int CvPlayer::getHappinessRate() const
+{
+	if (getNumCities() == 0)
+	{
+		return 0;
+	}
+
+	int iTotalRate = GC.getCivilizationInfo(getCivilizationType()).getFreeYields(YIELD_HAPPINESS);
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		iTotalRate += pLoopCity->getCityHappiness();
+	}
+
+	iTotalRate = iTotalRate / getNumCities(); // we calculate the average because it is supposed to be a percentage later
+
+	return iTotalRate;
+}
+
+int CvPlayer::getUnHappinessRate() const
+{
+	if (getNumCities() == 0)
+	{
+		return 0;
+	}
+
+	// small AI cheat to prevent issues 
+	if (!isHuman())
+	{
+		return 0;
+	}
+
+	int iTotalRate = GC.getCivilizationInfo(getCivilizationType()).getFreeYields(YIELD_UNHAPPINESS);
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		iTotalRate += pLoopCity->getCityUnHappiness();
+	}
+
+	iTotalRate = iTotalRate / getNumCities(); // we calculate the average because it is supposed to be a percentage later
+
+	return iTotalRate;
+}
+// WTP, ray, Happiness - END
+
 bool CvPlayer::isYieldEuropeTradable(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
@@ -11135,6 +11181,12 @@ void CvPlayer::doCrosses()
 	}
 
 	int iCrossRate = getYieldRate(YIELD_CROSSES);
+	// WTP, ray, Happiness - START
+	int iHappinessRate = getHappinessRate();
+	int iUnHappinessRate = getUnHappinessRate();
+
+	iCrossRate = (iCrossRate * (100 + iHappinessRate - iUnHappinessRate)) / 100; // this is percentage modifcation
+	// WTP, ray, Happiness - EMD
 
 	//add crosses to political points
 	for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
@@ -11145,7 +11197,13 @@ void CvPlayer::doCrosses()
 
 	if (getImmigrationConversion() == YIELD_CROSSES)
 	{
-		changeCrossesStored(iCrossRate);
+		// WTP, ray, Happiness - START
+		// changeCrossesStored(iCrossRate);
+		if (iCrossRate > 0)
+		{
+			changeCrossesStored(iCrossRate);
+		}
+		// WTP, ray, Happiness - END
 
 		// TAC - short messages for immigration after fist - RAY
 		int imCount = 0;
@@ -20464,7 +20522,8 @@ void CvPlayer::doLbD()
 void CvPlayer::checkForNativeMercs()
 {
 	//check if min round for feature activation has been reached
-	if(GC.getGame().getGameTurn() < GC.getMIN_ROUND_NATIVE_MERCS())
+	int gamespeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent(); // WTP, ray, small correction in balancing
+	if(GC.getGame().getGameTurn() < GC.getMIN_ROUND_NATIVE_MERCS()* gamespeedMod / 100)
 	{
 		return;
 	}
@@ -20507,9 +20566,6 @@ void CvPlayer::checkForNativeMercs()
 					totalmercprice = basemercprice / 2;
 				}
 
-				//Gamespeed
-				int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-
 				totalmercprice = totalmercprice * gamespeedMod / 100;
 				int cheapmercprice = totalmercprice / 2;
 
@@ -20526,7 +20582,7 @@ void CvPlayer::checkForNativeMercs()
 							int iMercPriceAI = totalmercprice * GC.getDefineINT("AI_PRICE_PERCENT_FOR_BUYING_MERCENARIES") / 100;
 							if (getGold() > iMercPriceAI)
 							{
-								m_iTimerNativeMerc = GC.getTIMER_NATIVE_MERC();
+								m_iTimerNativeMerc = GC.getTIMER_NATIVE_MERC() * gamespeedMod / 100; // WTP, ray, small correction in balancing
 								buyNativeMercs(potentialMercPlayer.getID(), iMercPriceAI, false);
 							}
 						}
@@ -20535,7 +20591,7 @@ void CvPlayer::checkForNativeMercs()
 				//more complicated case for human
 				else
 				{
-					m_iTimerNativeMerc = GC.getTIMER_NATIVE_MERC();
+					m_iTimerNativeMerc = GC.getTIMER_NATIVE_MERC() * gamespeedMod / 100; // WTP, ray, small correction in balancing
 					// handle this by DiploEvent
 					CvDiploParameters* pDiplo = new CvDiploParameters(potentialMercPlayer.getID());
 
@@ -20575,7 +20631,8 @@ void CvPlayer::checkForNativeMercs()
 void CvPlayer::checkForNativeSlaves()
 {
 	//check if min round for feature activation has been reached
-	if(GC.getGame().getGameTurn() < GC.getMIN_ROUND_NATIVE_SLAVE())
+	int gamespeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent(); // WTP, ray, small correction in balancing
+	if(GC.getGame().getGameTurn() < GC.getMIN_ROUND_NATIVE_SLAVE()* gamespeedMod / 100)
 	{
 		return;
 	}
@@ -20613,10 +20670,6 @@ void CvPlayer::checkForNativeSlaves()
 					discount = 50;
 				}
 				int totalslaveprice = baseslaveprice - discount;
-				
-				//Gamespeed
-				int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-
 				totalslaveprice = totalslaveprice * gamespeedMod / 100;
 				
 				//simple logik for AI
@@ -20643,7 +20696,7 @@ void CvPlayer::checkForNativeSlaves()
 							//exchanging gold
 							potentialSlavePlayer.changeGold(totalslaveprice);
 							changeGold(-totalslaveprice);
-							m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE();
+							m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE() * gamespeedMod / 100; // WTP, ray, small correction in balancing
 
 							//creating unit
 							UnitTypes DefaultSlaveUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"));
@@ -20656,7 +20709,7 @@ void CvPlayer::checkForNativeSlaves()
 				//more complicated case for human
 				else
 				{
-					m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE();
+					m_iTimerNativeSlave = GC.getTIMER_NATIVE_SLAVE() * gamespeedMod / 100; // WTP, ray, small correction in balancing
 					// handle this by DiploEvent
 					CvDiploParameters* pDiplo = new CvDiploParameters(potentialSlavePlayer.getID());
 
@@ -20698,7 +20751,6 @@ void CvPlayer::checkForAfricanSlaves()
 	int iminround = GC.getMIN_ROUND_AFRICAN_SLAVES();
 	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iminround = iminround * gamespeedMod / 100;
-
 
 	//check if min round for feature activation has been reached
 	if(GC.getGame().getGameTurn() < iminround)
@@ -20743,7 +20795,6 @@ void CvPlayer::checkForAfricanSlaves()
 	int baseslaveprice = GC.getDefineINT("BASE_AFRICAN_SLAVES_PRICE");
 	int discount = King.AI_getAttitude(getID(), false) * 10;
 	int totalslavesprice = baseslaveprice - discount;
-	//int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	totalslavesprice = numSlavesOffered * totalslavesprice * gamespeedMod / 100;
 
 	//simple logik for AI
@@ -20851,7 +20902,7 @@ void CvPlayer::checkForPrisonsCrowded()
 	int baseprisonerprice = GC.getDefineINT("BASE_PRISONER_PRICE");
 	int discount = King.AI_getAttitude(getID(), false) * 10;
 	int totalprisonersprice = baseprisonerprice - discount;
-//	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+
 	totalprisonersprice = numPrisonersOffered * totalprisonersprice * gamespeedMod / 100;
 
 	//simple logik for AI
@@ -20985,9 +21036,7 @@ void CvPlayer::checkForRevolutionaryNoble()
 	// Diplo-Event for Human
 	else
 	{
-		m_iTimerRevolutionaryNoble = GC.getTIMER_REVOLUTIONARY_NOBLE();
-		m_iTimerRevolutionaryNoble *= gamespeedMod;
-		m_iTimerRevolutionaryNoble /= 100;
+		m_iTimerRevolutionaryNoble = GC.getTIMER_REVOLUTIONARY_NOBLE() * gamespeedMod / 100;
 		// handle this by DiploEvent with own king
 		CvDiploParameters* pDiplo = new CvDiploParameters(getParent());
 
@@ -21073,7 +21122,7 @@ void CvPlayer::checkForBishop()
 	int basebishopprice = GC.getDefineINT("BASE_BISHOP_PRICE");
 	int discount = Church.AI_getAttitude(getID(), false) * 100;
 	basebishopprice = basebishopprice - discount;
-	//int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+
 	basebishopprice = basebishopprice * gamespeedMod / 100;
 
 	int randompart = basebishopprice / 2;
@@ -21643,8 +21692,6 @@ void CvPlayer::checkForRangers()
 
 	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
     
-
-
 	int pricetopay = GC.getDefineINT("PRICE_RANGERS") * gamespeedMod / 100;
 	
 	// simple logic for AI
@@ -21828,7 +21875,6 @@ void CvPlayer::checkForPirates()
 	}
 
 	 int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-
 
 	// R&R, ray, first appearance of Pirates in relation to Gamespeed
 	int minround = GC.getMIN_ROUND_PIRATES() * gamespeedMod / 100;

@@ -8700,8 +8700,10 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_BELLS:
 		case YIELD_CROSSES:
 		case YIELD_CULTURE:
-		case YIELD_HEALTH:
+		case YIELD_HEALTH: // R&R, ray, Health - START
 		case YIELD_EDUCATION:
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			FAssertMsg(false, "Selling intangibles?");
 			break;
 		default:
@@ -8913,8 +8915,10 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_BELLS:
 		case YIELD_CROSSES:
 		case YIELD_CULTURE:
-		case YIELD_HEALTH:
+		case YIELD_HEALTH: // R&R, ray, Health - START
 		case YIELD_EDUCATION:
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			bFinal = false;
 			FAssertMsg(false, "Selling intangibles?");
 			break;
@@ -8998,8 +9002,10 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_BELLS:
 		case YIELD_CROSSES:
 		case YIELD_CULTURE:
-		case YIELD_HEALTH:
+		case YIELD_HEALTH: // R&R, ray, Health - START
 		case YIELD_EDUCATION:
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			bBuy = false;
 			FAssertMsg(false, "Selling intangibles?");
 			break;
@@ -9201,11 +9207,14 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 				break;
 			case YIELD_CROSSES:
 			case YIELD_CULTURE:
-			case YIELD_HEALTH:
+			case YIELD_HEALTH: // R&R, ray, Health - START
 			case YIELD_EDUCATION:
+			case YIELD_HAPPINESS: // WTP, ray, Happiness - START
 				iValue *= 100;
 				iValue /= iWeaponsMultiplier;
 				break;
+			case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
+				iValue = 0; // this Yield is just bad, it is never supposed to be created purolsely
 			default:
 			break;
 		}
@@ -9315,6 +9324,8 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_CULTURE:
 			case YIELD_HEALTH:
 			case YIELD_EDUCATION:
+			case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+			case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 				break;
 			default:
 				FAssert(false);

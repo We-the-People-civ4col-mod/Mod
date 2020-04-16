@@ -803,6 +803,22 @@ public:
 	int getLOWEST_CITY_HEALTH();
 	// R&R, ray, Health - END
 
+	// WTP, ray, Happiness - START
+	int getMIN_POP_NEG_HAPPINESS();
+	int getPOP_DIVISOR_HAPPINESS();
+	int getPER_EUROPEAN_AT_WAR_UNHAPPINESS();
+	int getPOP_DIVISOR_DEFENSE_UNHAPPINESS();
+	int getTAX_DIVISOR_UNHAPPINESS();
+
+	int getBASE_CHANCE_UNREST_UNHAPPINESS();
+	int getBASE_CHANCE_FESTIVITIES_HAPPINESS();
+	int getMIN_BALANCE_UNREST_UNHAPPINESS();
+	int getMIN_BALANCE_FESTIVITIES_HAPPINESS();
+	int getTURNS_UNREST_UNHAPPINESS();
+	int getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+	int getTIMER_FESTIVITIES_OR_UNRESTS();
+	// WTP, ray, Happiness - END
+
     int getMAX_TREASURE_AMOUNT(); // WTP, merge Treasures, of Raubwuerger - START
 	int getTRADE_POST_GOLD_PER_NATIVE(); // WTP, ray, Native Trade Posts - START
 
@@ -1311,6 +1327,22 @@ protected:
 	int m_MAX_CITY_HEALTH;
 	int m_LOWEST_CITY_HEALTH;
 	// R&R, ray, Health - END
+
+	// WTP, ray, Happiness - START
+	int m_MIN_POP_NEG_HAPPINESS;
+	int m_POP_DIVISOR_HAPPINESS;
+	int m_PER_EUROPEAN_AT_WAR_UNHAPPINESS;
+	int m_POP_DIVISOR_DEFENSE_UNHAPPINESS;
+	int m_TAX_DIVISOR_UNHAPPINESS;
+
+	int m_BASE_CHANCE_UNREST_UNHAPPINESS;
+	int m_BASE_CHANCE_FESTIVITIES_HAPPINESS;
+	int m_MIN_BALANCE_UNREST_UNHAPPINESS;
+	int m_MIN_BALANCE_FESTIVITIES_HAPPINESS;
+	int m_TURNS_UNREST_UNHAPPINESS;
+	int m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
+	int m_TIMER_FESTIVITIES_OR_UNRESTS;
+	// WTP, ray, Happiness - END
 
 	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger
 	int m_TRADE_POST_GOLD_PER_NATIVE; // WTP, ray, Native Trade Posts - START
@@ -2220,6 +2252,68 @@ inline int CvGlobals::getLOWEST_CITY_HEALTH()
 	return m_LOWEST_CITY_HEALTH;
 }
 // R&R, ray, Health - END
+
+// WTP, ray, Happiness - START
+inline int CvGlobals::getMIN_POP_NEG_HAPPINESS()
+{
+	return m_MIN_POP_NEG_HAPPINESS;
+}
+
+inline int CvGlobals::getPOP_DIVISOR_HAPPINESS()
+{
+	return m_POP_DIVISOR_HAPPINESS;
+}
+
+inline int CvGlobals::getPER_EUROPEAN_AT_WAR_UNHAPPINESS()
+{
+	return m_PER_EUROPEAN_AT_WAR_UNHAPPINESS;
+}
+
+inline int CvGlobals::getPOP_DIVISOR_DEFENSE_UNHAPPINESS()
+{
+	return m_POP_DIVISOR_DEFENSE_UNHAPPINESS;
+}
+
+inline int CvGlobals::getTAX_DIVISOR_UNHAPPINESS()
+{
+	return m_TAX_DIVISOR_UNHAPPINESS;
+}
+
+inline int CvGlobals::getBASE_CHANCE_UNREST_UNHAPPINESS()
+{
+	return m_BASE_CHANCE_UNREST_UNHAPPINESS;
+}
+
+inline int CvGlobals::getBASE_CHANCE_FESTIVITIES_HAPPINESS()
+{
+	return m_BASE_CHANCE_FESTIVITIES_HAPPINESS;
+}
+
+inline int CvGlobals::getMIN_BALANCE_UNREST_UNHAPPINESS()
+{
+	return m_MIN_BALANCE_UNREST_UNHAPPINESS;
+}
+
+inline int CvGlobals::getMIN_BALANCE_FESTIVITIES_HAPPINESS()
+{
+	return m_MIN_BALANCE_FESTIVITIES_HAPPINESS;
+}
+
+inline int CvGlobals::getTURNS_UNREST_UNHAPPINESS()
+{
+	return m_TURNS_UNREST_UNHAPPINESS;
+}
+
+inline int CvGlobals::getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS()
+{
+	return m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
+}
+
+inline int CvGlobals::getTIMER_FESTIVITIES_OR_UNRESTS()
+{
+	return m_TIMER_FESTIVITIES_OR_UNRESTS;
+}
+// WTP, ray, Happiness - END
 
 // WTP, merge Treasures, of Raubwuerger - START
 inline int CvGlobals::getMAX_TREASURE_AMOUNT()

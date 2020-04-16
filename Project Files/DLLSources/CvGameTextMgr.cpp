@@ -2875,7 +2875,9 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 	pCity->calculateNetYields(aiYields);
 	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
-		if (aiYields[iYield] > 0 && (YieldTypes) iYield != YIELD_CULTURE  && (YieldTypes) iYield != YIELD_HEALTH) 
+		// WTP, ray, Happiness - START
+		//if (aiYields[iYield] > 0 && (YieldTypes) iYield != YIELD_CULTURE  && (YieldTypes) iYield != YIELD_HEALTH) 
+		if (aiYields[iYield] > 0 && (YieldTypes) iYield != YIELD_CULTURE  && (YieldTypes) iYield != YIELD_HEALTH && (YieldTypes) iYield != YIELD_HAPPINESS && (YieldTypes) iYield != YIELD_UNHAPPINESS) 
 		{
 			if (bFirst)
 			{
@@ -2958,6 +2960,20 @@ void CvGameTextMgr::setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity)
 		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HEALTH", pCity->getCityHealth(), GC.getYieldInfo(YIELD_HEALTH).getChar()));
 	}
 	// R&R, ray, Health - END
+	// WTP, ray, Happiness - START
+	int netHappiness = pCity->getCityHappiness();
+	if (netHappiness != 0)
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD", netHappiness, GC.getYieldInfo(YIELD_HAPPINESS).getChar()));
+	}
+	int netUnHappiness = pCity->getCityUnHappiness();
+	if (netUnHappiness != 0)
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD", netUnHappiness, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
+	}
+	// WTP, ray, Happiness - END
 
 	szString.append(NEWLINE);
 
@@ -7513,6 +7529,119 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		int iTotalCityHealth = city.getCityHealth();
 		szBuffer.append(gDLL->getText("TXT_KEY_CITY_HEALTH_TOTAL", info.getTextKeyWide(), iTotalCityHealth, info.getChar()));
 	}
+	// WTP, ray, Happiness - START
+	// Code Happiness and Unhappiness YIELD Help
+	else if (eYieldType == YIELD_HAPPINESS)
+	{
+		// this is not needed because already displayed
+		/*int iProducedHappiness = city.calculateNetYield(YIELD_HAPPINESS);
+		if (iProducedHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HAPPINESS_PRODUCED", info.getTextKeyWide(), iProducedHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}*/
+		int iCrossesHappiness = city.getHappinessFromCrosses();
+		if (iCrossesHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_CROSSES", info.getTextKeyWide(), iCrossesHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iBellsHappiness = city.getHappinessFromBells();
+		if (iBellsHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_BELLS", info.getTextKeyWide(), iBellsHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iHealthHappiness = city.getHappinessFromHealth();
+		if (iHealthHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_HEALTH", info.getTextKeyWide(), iHealthHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		};
+		int iCultureHappiness = city.getHappinessFromCulture();
+		if (iCultureHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_CULTURE", info.getTextKeyWide(), iCultureHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iEducationHappiness = city.getHappinessFromEducation();
+		if (iEducationHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_EDUCATION", info.getTextKeyWide(), iEducationHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iDomesticDemandHappiness = city.getHappinessFromDomesticDemandsFulfilled();
+		if (iDomesticDemandHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_DOMESTIC_DEMAND", info.getTextKeyWide(), iDomesticDemandHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iTreatiesHappiness = city.getHappinessFromTreaties();
+		if (iTreatiesHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_HAPPINESS_TREATIES", info.getTextKeyWide(), iTreatiesHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+
+		city.updateCityHappiness();
+		int iTotalCityHappiness = city.getCityHappiness();
+		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HAPPINESS", info.getTextKeyWide(), iTotalCityHappiness, info.getChar()));
+
+	}
+	else if (eYieldType == YIELD_UNHAPPINESS)
+	{
+		// this is not needed because already displayed
+		/*
+		int iProducedUnHappiness = city.calculateNetYield(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+		if (iProducedUnHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_UNHAPPINESS_PRODUCED", info.getTextKeyWide(), iProducedUnHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}*/
+		int iPopulationUnHappiness = city.getUnhappinessFromPopulation();
+		if (iPopulationUnHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINESS_POPULATION", info.getTextKeyWide(), iPopulationUnHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iSlaveryUnHappiness = city.getUnhappinessFromSlavery();
+		if (iSlaveryUnHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINESS_SLAVERY", info.getTextKeyWide(), iSlaveryUnHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iWarsUnHappiness = city.getUnhappinessFromWars();
+		if (iWarsUnHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINESS_WARS", iWarsUnHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+		int iMissingDefenseUnHappiness = city.getUnhappinessFromMissingDefense();
+		if (iMissingDefenseUnHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINES_MISSING_DEFENSES", info.getTextKeyWide(), iMissingDefenseUnHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+		int iTaxRateUnHappiness = city.getUnhappinessFromTaxRate();
+		if (iTaxRateUnHappiness != 0)
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINES_TAX_RATE", info.getTextKeyWide(), iTaxRateUnHappiness, info.getChar()));
+			szBuffer.append(NEWLINE);
+		}
+
+
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+
+		city.updateCityUnHappiness();
+		int iTotalCityUnHappiness = city.getCityUnHappiness();
+		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS", info.getTextKeyWide(), iTotalCityUnHappiness, info.getChar()));
+	}
+	// WTP, ray, Happiness - END
 	else // old code
 	{
 		szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), iModifiedProduction, info.getChar()));
@@ -7665,6 +7794,9 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 	}
 	// R&R, ray, Health - END
 
+	// WTP, ray, Happiness - START
+	// YIELD Modifier Helptext would be here - currently not planned
+
 	FAssertMsg(iBaseModifier == kCity.getBaseYieldRateModifier(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 
 	return iBaseModifier;
@@ -7710,6 +7842,23 @@ void CvGameTextMgr::buildCityBillboardIconString( CvWStringBuffer& szBuffer, CvC
 		}
 	}
 	// WTP, ray, improvement Native Trade Indicator, issue #85 - END
+
+	// WTP, ray, Happiness - START
+	// only for Europeans
+	if (!cityOwnerPlayer.isNative())
+	{
+		int iHappiness = pCity->getCityHappiness();
+		int iUnHappiness = pCity->getCityUnHappiness();
+		if (iHappiness > iUnHappiness)
+		{
+			szBuffer.append(CvWString::format(L" %c", GC.getYieldInfo(YIELD_HAPPINESS).getChar()));
+		}
+		if (iUnHappiness > iHappiness)
+		{
+			szBuffer.append(CvWString::format(L" %c", GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
+		}
+	}
+	// WTP, ray, Happiness - END
 
 	// XXX out this in bottom bar???
 	if (pCity->isOccupation())

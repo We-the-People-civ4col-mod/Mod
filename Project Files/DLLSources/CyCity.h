@@ -284,6 +284,29 @@ public:
 	void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
 
+	// WTP, ray, Happiness - START
+	int getCityHappiness() const;
+	void setCityHappiness(int iValue);
+	void updateCityHappiness();
+	int getCityUnHappiness() const;
+	void setCityUnHappiness(int iValue);
+	void updateCityUnHappiness();
+
+	int getHappinessFromCrosses() const;
+	int getHappinessFromBells() const;
+	int getHappinessFromHealth() const;
+	int getHappinessFromCulture() const;
+	int getHappinessFromEducation() const;
+	int getHappinessFromDomesticDemandsFulfilled() const;
+	int getHappinessFromTreaties() const;
+
+	int getUnhappinessFromPopulation() const;
+	int getUnhappinessFromSlavery() const;
+	int getUnhappinessFromWars() const;
+	int getUnhappinessFromMissingDefense() const;
+	int getUnhappinessFromTaxRate() const;
+	// WTP, ray, Happiness - END
+
 	bool isExport(int /*YieldTypes*/ eYield) const;
 	void addExport(int /*YieldTypes*/ eYield);
 	void removeExport(int /*YieldTypes*/ eYield);
