@@ -6752,10 +6752,10 @@
             <bLeader>0</bLeader>
             <bBlitz>0</bBlitz>
             <bAmphib>0</bAmphib>
-            <bRiver>1</bRiver>
+            <bRiver>0</bRiver>
             <bEnemyRoute>1</bEnemyRoute>
             <bAlwaysHeal>0</bAlwaysHeal>
-            <bHillsDoubleMove>1</bHillsDoubleMove>
+            <bHillsDoubleMove>0</bHillsDoubleMove>
             <iVisibilityChange>0</iVisibilityChange>
             <iMovesChange>1</iMovesChange>
             <iMoveDiscountChange>0</iMoveDiscountChange>
