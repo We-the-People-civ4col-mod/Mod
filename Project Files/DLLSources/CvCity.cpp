@@ -10669,6 +10669,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 CvUnit* CvCity::ejectBestDefender(CvUnit* pCurrentBest, CvUnit* pAttacker)
 {
+
 	ProfessionTypes eProfession;
 	CvUnit* pDefender = getBestDefender(&eProfession, pCurrentBest, pAttacker);
 

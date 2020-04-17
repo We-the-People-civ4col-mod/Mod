@@ -1664,7 +1664,9 @@ void CvUnit::updateCombat(bool bQuick)
 			bool bAdvance = false;
 			bool bRaided = raidWeapons(pDefender);
 
-			if (!pDefender->isUnarmed() || GET_PLAYER(getOwnerINLINE()).isNative())
+			// WTP, ray, prevent Barbarian Civs to eject all the unarmed Units to defend a City it just conquered - START
+			// if (!pDefender->isUnarmed() || GET_PLAYER(getOwnerINLINE()).isNative())
+			if ((!pDefender->isUnarmed() && !pDefender->isBarbarian()) || GET_PLAYER(getOwnerINLINE()).isNative())
 			{
 				CvCity* pCity = pPlot->getPlotCity();
 				if (NULL != pCity && pCity->getOwnerINLINE() == pDefender->getOwnerINLINE())
