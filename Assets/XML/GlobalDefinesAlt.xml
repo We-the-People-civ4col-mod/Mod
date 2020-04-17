@@ -1117,7 +1117,7 @@
 	<!-- Happiness vs Unhappiness - begin -->
 	<Define>
 		<DefineName>MIN_POP_NEG_HAPPINESS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>POP_DIVISOR_HAPPINESS</DefineName>
