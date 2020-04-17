@@ -10153,7 +10153,7 @@ int CvCity::getUnhappinessFromWars() const
 			if (iI != GET_TEAM(getTeam()).getID())
 			{
 				// we count teams we are at war with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
-				if (GET_TEAM(getTeam()).isAtWar((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasEuropePlayer())
+				if (GET_TEAM(getTeam()).isAtWar((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
 				{
 					iNumEuropeanWars++;
 				}
@@ -10323,7 +10323,7 @@ int CvCity::getHappinessFromCulture() const
 	int iHapCulture = 0;
 	int iCulture = calculateNetYield(YIELD_CULTURE);
 	int iPopulation = getPopulation();
-	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS()*2; // this needed to be balanced, because it was too much
 
 	// to prevent division by 0
 	if (iPopulation == 0)
@@ -10424,13 +10424,13 @@ int CvCity::getHappinessFromTreaties() const
 			if (iI != GET_TEAM(getTeam()).getID())
 			{
 				// we count teams we have opne borders with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
-				if (GET_TEAM(getTeam()).isOpenBorders((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasEuropePlayer())
+				if (GET_TEAM(getTeam()).isOpenBorders((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
 				{
 					iNumOpenBorders++;
 				}
 
 				// we count teams we a defensive pact with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
-				if (GET_TEAM(getTeam()).isDefensivePact((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasEuropePlayer())
+				if (GET_TEAM(getTeam()).isDefensivePact((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
 				{
 					iNumDefensivePacts++;
 				}
