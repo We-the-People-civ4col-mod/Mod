@@ -10466,8 +10466,9 @@ void CvCity::setCityTimerFestivitiesOrUnrest(int iValue)
 
 void CvCity::changeCityTimerFestivitiesOrUnrest(int iValue) 
 {
-	if (m_iCityTimerFestivitiesOrUnrest + iValue < 0)
+	if (getCityTimerFestivitiesOrUnrest() + iValue < 0)
 	{
+		m_iCityTimerFestivitiesOrUnrest = 0;
 		return;
 	}
 
