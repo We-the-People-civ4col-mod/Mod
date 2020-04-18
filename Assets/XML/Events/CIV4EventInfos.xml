@@ -21785,7 +21785,7 @@
             <AdditionalEvents/>
             <EventTimes/>
             <ClearEvents/>
-            <PythonCallback>applyHelpKingPleased</PythonCallback>
+            <PythonCallback>applyKingPleased</PythonCallback>
             <PythonExpireCheck/>
             <PythonCanDo/>
             <PythonHelp>getHelpKingPleased</PythonHelp>
