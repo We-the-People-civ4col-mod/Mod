@@ -9952,7 +9952,7 @@ void CvCity::doCityHappiness()
 	// get random values
 	int chanceForFestivities = GC.getBASE_CHANCE_FESTIVITIES_HAPPINESS();
 	chanceForFestivities = chanceForFestivities * iHappinessBalance; // the chances are scaled by Happiness balance
-	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Festivities Happiness");
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Festivities Happiness Triggered");
 
 	// random has failed
 	if (chanceForFestivities < randomValue)
@@ -9966,7 +9966,8 @@ void CvCity::doCityHappiness()
 	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
 
 	// otherwise we do festivities - which give one of the father point categories by random; 
-	int iFoundingFatherPoints = GC.getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+	int iMaxFoundingFatherPoints = GC.getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+	int iFoundingFatherPoints = GC.getGameINLINE().getSorenRandNum(iMaxFoundingFatherPoints, "Festivities Happiness Father Points");
 
 	int iNumFatherPointInfos = GC.getNumFatherPointInfos();
 	// we skip fathr points for Exploration - which is 0 that is why we first subract 2 and then add 1
@@ -10131,7 +10132,7 @@ int CvCity::getUnhappinessFromSlavery() const
 	for (int i = 0; i < getPopulation(); ++i)
 	{
 		CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
-		if (GC.getUnitInfo(pLoopUnit->getUnitType()).LbD_canEscape())
+		if (GC.getUnitInfo(pLoopUnit->getUnitType()).LbD_canRevolt())
 		{
 			iUnHapSlav++;
 		}
