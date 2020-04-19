@@ -130,4 +130,9 @@
         <English>The high Happiness in city %s1_city_name has lead to festivities that generated %d2 %s3_father_points</English>
         <German>Die hohe Zufriedenheit in der Stadt %s1_city_name hat zu Feierlichkeiten geführt, die %d2 %s3_father_points erzeugt haben.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
+        <English>[ICON_BULLET]%D1%% less %F2_Icon from Slaves in Cities</English>
+        <German>[ICON_BULLET]%D1%% weniger %F2_Icon durch Sklaven in Städten </German>
+    </TEXT>
 </Civ4GameText>

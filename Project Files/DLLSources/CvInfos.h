@@ -3057,6 +3057,7 @@ public:
 	DllExport int getMaxTaxRateThresholdDecrease() const; // R&R, ray, new Attribute in Traits
 	DllExport int getMercantileFactor() const;
 	DllExport int getTreasureModifier() const;
+	DllExport int getUnhappinessFromSlavesModifier() const; // WTP, ray, Happiness - START
 	DllExport int getChiefGoldModifier() const;
 	DllExport int getNativeAttitudeChange() const;
 	DllExport int getEuropeanAttitudeChange() const; // R&R, ray, new Attribute in Traits 
@@ -3114,6 +3115,7 @@ protected:
 	int m_iMaxTaxRateThresholdDecrease; // R&R, ray, new Attribute in Traits
 	int m_iMercantileFactor;
 	int m_iTreasureModifier;
+	int m_iUnhappinessFromSlavesModifier; // WTP, ray, Happiness - START
 	int m_iChiefGoldModifier;
 	int m_iNativeAttitudeChange;
 	int m_iEuropeanAttitudeChange; // R&R, ray, new Attribute in Traits

@@ -2284,7 +2284,7 @@
                     <iCost>1200</iCost>
                 </FatherPointCost>
             </FatherPointCosts>
-            <Trait/>
+            <Trait>TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Trait>
             <Quote>TXT_KEY_FUTURE_QUOTE</Quote>
             <Sound>AS2D_FUTURE</Sound>
             <SoundMP>AS2D_MP_FUTURE</SoundMP>

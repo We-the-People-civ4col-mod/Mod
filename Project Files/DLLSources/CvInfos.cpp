@@ -10597,6 +10597,7 @@ CvTraitInfo::CvTraitInfo() :
 	m_iMaxTaxRateThresholdDecrease(0), // R&R, ray, new Attribute in Traits
 	m_iMercantileFactor(0),
 	m_iTreasureModifier(0),
+	m_iUnhappinessFromSlavesModifier(0), // WTP, ray, Happiness - START
 	m_iChiefGoldModifier(0),
 	m_iNativeAttitudeChange(0),
 	m_iEuropeanAttitudeChange(0), // R&R, ray, new Attribute in Traits
@@ -10686,6 +10687,12 @@ int CvTraitInfo::getTreasureModifier() const
 {
 	return m_iTreasureModifier;
 }
+// WTP, ray, Happiness - START
+int CvTraitInfo::getUnhappinessFromSlavesModifier() const
+{
+	return m_iUnhappinessFromSlavesModifier;
+}
+// WTP, ray, Happiness - END
 int CvTraitInfo::getChiefGoldModifier() const
 {
 	return m_iChiefGoldModifier;
@@ -10909,6 +10916,7 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Read(&m_iMercantileFactor);
 	stream->Read(&m_iTreasureModifier);
+	stream->Read(&m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Read(&m_iChiefGoldModifier);
 	stream->Read(&m_iNativeAttitudeChange);
 	stream->Read(&m_iEuropeanAttitudeChange); // R&R, ray, new Attribute in Traits
@@ -11016,6 +11024,7 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Write(m_iMercantileFactor);
 	stream->Write(m_iTreasureModifier);
+	stream->Write(m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Write(m_iChiefGoldModifier);
 	stream->Write(m_iNativeAttitudeChange);
 	stream->Write(m_iEuropeanAttitudeChange); // R&R, ray, new Attribute in Traits
@@ -11077,6 +11086,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMaxTaxRateThresholdDecrease, "iMaxTaxRateThresholdDecrease"); // R&R, ray, new Attribute in Traits
 	pXML->GetChildXmlValByName(&m_iMercantileFactor, "iMercantileFactor");
 	pXML->GetChildXmlValByName(&m_iTreasureModifier, "iTreasureModifier");
+	pXML->GetChildXmlValByName(&m_iUnhappinessFromSlavesModifier, "iUnhappinessFromSlavesModifier"); // WTP, ray, Happiness - START
 	pXML->GetChildXmlValByName(&m_iChiefGoldModifier, "iChiefGoldModifier");
 	pXML->GetChildXmlValByName(&m_iNativeAttitudeChange, "iNativeAttitudeChange");
 	pXML->GetChildXmlValByName(&m_iEuropeanAttitudeChange, "iEuropeanAttitudeChange"); // R&R, ray, new Attribute in Traits

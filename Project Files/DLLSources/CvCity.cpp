@@ -10137,6 +10137,22 @@ int CvCity::getUnhappinessFromSlavery() const
 			iUnHapSlav++;
 		}
 	}
+
+	// adjustment for Traits that reduce Unhappiness from Slaves
+	// we only need to check this if we have slaves at all
+	if (iUnHapSlav > 0)
+	{
+		int iTraitUnhappinessSlavesModifier = 0;
+		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+		{
+			if (hasTrait((TraitTypes) iTrait))
+			{
+				CvTraitInfo& kTrait = GC.getTraitInfo((TraitTypes) iTrait);
+				iTraitUnhappinessSlavesModifier += kTrait.getUnhappinessFromSlavesModifier();
+			}
+		}
+		iUnHapSlav = iUnHapSlav * (100 - iTraitUnhappinessSlavesModifier) / 100; // the Modifier in XML is expected to be positive
+	}
 	return iUnHapSlav;
 }
 

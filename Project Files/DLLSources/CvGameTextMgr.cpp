@@ -3113,6 +3113,19 @@ void CvGameTextMgr::parseTraits(CvWStringBuffer &szHelpString, TraitTypes eTrait
 			//}
 		}
 
+		// WTP, ray, Happiness - START
+		int iUnhappinessFromSlavesModifier = kTrait.getUnhappinessFromSlavesModifier();
+		if(iUnhappinessFromSlavesModifier != 0)
+		{
+			szHelpString.append(NEWLINE);
+			if (bIndent)
+			{
+				szHelpString.append(L"  ");
+			}
+			szHelpString.append(gDLL->getText("TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER", -iUnhappinessFromSlavesModifier, GC.getYieldInfo(YIELD_UNHAPPINESS).getChar()));
+		}
+		// WTP, ray, Happiness - START
+
 		if (kTrait.getChiefGoldModifier() != 0)
 		{
 			szHelpString.append(NEWLINE);
