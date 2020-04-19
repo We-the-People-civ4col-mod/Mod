@@ -10340,7 +10340,7 @@ int CvCity::getHappinessFromCulture() const
 	int iHapCulture = 0;
 	int iCulture = calculateNetYield(YIELD_CULTURE);
 	int iPopulation = getPopulation();
-	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS()*2; // this needed to be balanced, because it was too much
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
 
 	// to prevent division by 0
 	if (iPopulation == 0)
@@ -10357,7 +10357,7 @@ int CvCity::getHappinessFromCulture() const
 		iPopDivisor = 1;
 	}
 
-	iHapCulture = iCulture / (iPopulation / iPopDivisor);
+	iHapCulture = iCulture / ((iPopulation / iPopDivisor));
 
 	if (iHapCulture > (iPopulation / iPopDivisor))
 	{
