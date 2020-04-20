@@ -10115,7 +10115,15 @@ int CvCity::getUnhappinessFromPopulation() const
 {
 	int iUnHapPop = 0;
 	int iPopulation = getPopulation();
-	iUnHapPop = iPopulation - GC.getMIN_POP_NEG_HAPPINESS();
+	int iMinPopForHappiness = GC.getMIN_POP_NEG_HAPPINESS();
+
+	// small help for AI
+	if(!isHuman())
+	{
+		iMinPopForHappiness = iMinPopForHappiness*2;
+	}
+
+	iUnHapPop = iPopulation - iMinPopForHappiness;
 
 	// to prevent negative Unhappiness in case we have less pop than min value for neg pop
 	if (iUnHapPop > 0)
