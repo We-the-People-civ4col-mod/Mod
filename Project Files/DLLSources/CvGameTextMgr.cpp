@@ -7629,7 +7629,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		int iWarsUnHappiness = city.getUnhappinessFromWars();
 		if (iWarsUnHappiness != 0)
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINESS_WARS", iWarsUnHappiness, info.getChar()));
+			szBuffer.append(gDLL->getText("TXT_KEY_UNHAPPINESS_WARS", info.getTextKeyWide(), iWarsUnHappiness, info.getChar()));
 			szBuffer.append(NEWLINE);
 		}
 		int iMissingDefenseUnHappiness = city.getUnhappinessFromMissingDefense();

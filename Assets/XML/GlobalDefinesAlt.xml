@@ -1092,7 +1092,7 @@
 	</Define>
 	<Define>
 		<DefineName>TRADE_POST_GOLD_PER_NATIVE</DefineName>
-		<iDefineIntVal>6</iDefineIntVal>
+		<iDefineIntVal>8</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS</DefineName>
@@ -1125,7 +1125,7 @@
 	</Define>
 	<Define>
 		<DefineName>PER_EUROPEAN_AT_WAR_UNHAPPINESS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>POP_DIVISOR_DEFENSE_UNHAPPINESS</DefineName>
