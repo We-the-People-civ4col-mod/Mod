@@ -1,10 +1,26 @@
 We the People Changelog
 
-Version 2.7.3
+Version 2.8
+WARNING: NOT SAVEGAME COMPATIBLE
+Savegames from previous versions will not load
+
+New Features
+- New concept: colonist happiness
+- Added the ability to open trading posts in native settlements
+- Readded town guard unit
+- European Line Infantry can now change profession
+- Treasures can now merge
+- Slaves can now revolt and they can become free
+- Russians now have their own priest and missionary units
+- Added some Russian founding fathers
+- New game option: Only 1 colonist living with Natives at at time
 
 Improvements:
 - #309 Added message when uprest ends in a colony
-- added 4 more quests
+- added 5 new quests
+- Turn counter displayed for units working to become experts or become free
+- Citizen help now display yield modifiers
+- Python errors will now always be displayed (makes bug reports more useful)
 
 Balance:
 - #124 you can no longer just take whatever cargo you want from natives even if you have a permanent alliance
@@ -19,11 +35,14 @@ Balance:
 - Greatly reduced some overpowered expert bonuses. It's no longer possible to get +300% from an expert
 - Hurry cost now use 150% of cargo cost in Europe (was 125% from vanilla)
 - The 5 dock quest now gives a frigate instead of a ship-of-the-line
+- Some units now have a defense of 1 instead of 0
+- Lumber mill improvement is now called sawmill and is an upgraded lumber camp
+- Founding Father Samuel Adams now cost the intended 11.000 trade points, not 1.100 (technically a bugfix, but it affects balance)
 
 Fixes:
 - #42 help text is no longer able to reveal the owner of units with hidden nationality
 - #44 #45 Custom house popup now clearly tells which yields will never be sold
-- #68 Political refugess can now become experts though learning by doing
+- #68 Political refuges can now become experts though learning by doing
 - #85 native settlement billboards (nametags) now display if the natives are too angry to trade
 - #120 greatly reduced usefulness of the found and abandon exploit
 - #160 natives will no longer build ships
@@ -39,9 +58,12 @@ Fixes:
 - #348 added goto button for coastal ships. Still no goto Europe for obvious reasons
 - #358 Monasteries can now grow large even if they are outside your cultural borders
 - #361 Gold icon (top left) could be drawn on top of text about current turn and turn limit
+- Allowing Wagon Trains to be captured again
 - Governor units no longer have a domestic need for 0.05 food/turn because it's always rounded to 0 anyway
 - Sophisticated trait no longer has inverted tax rate threshold modifier
 - Removed "Cannot declare war" text in help popup in some cases where it shouldn't have been included
+- Various quest related issues
+- Some quests will now not show up in multiplayer as they can cause network desyncs
 - Fixed many small issues with text display
 
 Version 2.7.2
