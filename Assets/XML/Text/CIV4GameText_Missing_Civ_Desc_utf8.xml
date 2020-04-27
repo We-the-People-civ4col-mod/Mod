@@ -186,7 +186,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</Tag>
+		<Tag>TXT_KEY_CIV_ZAPOTEC_DESC</Tag>
 		<English>Zapotec</English>
 		<French>
 			<Text>Zapotecs</Text>
@@ -482,7 +482,7 @@
 		</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_CIV_OMAGUA_SHORT_DESC</Tag>
+		<Tag>TXT_KEY_CIV_OMAGUA_DESC</Tag>
 		<English>Omagua</English>
 		<French>
 			<Text>Omaguas</Text>
