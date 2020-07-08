@@ -11745,7 +11745,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	//default case is servant (and potential others to be configured)
 	else
 	{
-		int mod = mod_serv; // Servants are supposed to have a higher chance
+		mod = mod_serv; // Servants are supposed to have a higher chance
 		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 	}
 
