@@ -17621,6 +17621,14 @@ CvUnit* CvPlayer::buyPortRoyalUnit(UnitTypes eUnit, int iPriceModifier)
 	if (iPrice > getGold())
 	{
 		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getUnitInfo(eUnit).getTextKeyWide(), iPrice));
+
+		// TAC - Trade Messages - koma13 - START
+		m_aeTradeMessageTypes.push_back(TRADE_MESSAGE_LACK_FUNDS);
+		m_aeTradeMessageYields.push_back(NO_YIELD);
+		m_aiTradeMessageAmounts.push_back(0);
+		m_aiTradeMessageCommissions.push_back(0);
+		// TAC - Trade Messages - koma13 - END
+
 		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
 		return NULL;
 	}
