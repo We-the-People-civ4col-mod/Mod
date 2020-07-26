@@ -3373,7 +3373,9 @@ bool CvDLLButtonPopup::launchSelectYieldAmountPopup(CvPopup* pPopup, CvPopupInfo
 
 	//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - start
 	UnitTravelStates uts = pUnit->getUnitTravelState();
-	if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_FROM_PORT_ROYAL)
+	// WTP, ray, refixing SHIFT-KEY
+	// if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_FROM_PORT_ROYAL)
+	if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
 	//if (pUnit->getUnitTravelState() != UNIT_TRAVEL_STATE_IN_EUROPE)
 	//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - end
 	{
