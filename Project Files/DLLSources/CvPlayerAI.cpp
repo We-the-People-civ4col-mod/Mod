@@ -3581,11 +3581,27 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 		UnitTypes eLoopUnit = (UnitTypes) GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(i);
 		if (eLoopUnit != NO_UNIT)
 		{
+
+			//WTP, Ray, fixing Unit Variation for Buying Units from King - START
 			CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
+
 			if (kUnit.getDomainType() == DOMAIN_LAND && kPlayer.getEuropeUnitBuyPrice(eLoopUnit) > 0)
 			{
-				// ERIK: TODO: Find out how to check for combat / armed units
-				bool bValid = (kUnit.getCombat() > 5);
+				// check Combat Value of Unit
+				bool isValidbyUnitCombat = (kUnit.getCombat() > 5);
+
+				// check Combat Change From Profession
+				ProfessionTypes checkProfession = (ProfessionTypes) GC.getUnitInfo(eLoopUnit).getDefaultProfession();
+				bool isValidbyDefaultProfessionCombatChange = false;
+				if (checkProfession != NO_PROFESSION)
+				{
+					isValidbyDefaultProfessionCombatChange = (GC.getProfessionInfo(checkProfession).getCombatChange() > 3);
+				}
+
+				bool bValid = (isValidbyUnitCombat || isValidbyDefaultProfessionCombatChange);
+				//WTP, Ray, fixing Unit Variation for Buying Units from King - END
+
+				//WTP, Ray, replaced because otherwise King gives Medics, which also have Promotions
 				/*
 				for (int j = 0; j < GC.getNumPromotionInfos() && !bValid; ++j)
 				{
@@ -3603,6 +3619,8 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 					{
 						iBestValue = iValue;
 						eUnit = eLoopUnit;
+						//WTP, Ray, fixing Unit Variation for Buying Units from King - END
+						eProfession = (ProfessionTypes) GC.getUnitInfo(eLoopUnit).getDefaultProfession();
 					}
 				}
 			}
@@ -3615,7 +3633,8 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 	}
 
 	iNumUnits = 1;
-	eProfession = (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession();
+	//WTP, Ray, fixing Unit Variation for Buying Units from King - END
+	//eProfession = (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession();
 
 	return kPlayer.getEuropeUnitBuyPrice(eUnit) * GC.getDefineINT("KING_BUY_UNIT_PRICE_MODIFIER") / 100;
 }
