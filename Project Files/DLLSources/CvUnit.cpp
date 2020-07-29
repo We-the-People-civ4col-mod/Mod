@@ -8823,10 +8823,24 @@ int CvUnit::defenseXPValue() const
 int CvUnit::maxXPValue() const
 {
 	int iMaxValue = MAX_INT;
+
+	// WTP, XP cap to prevent farming XP from Animals
 	if (getUnitInfo().isAnimal())
+	{
 		iMaxValue = std::min(iMaxValue, GC.getDefineINT("ANIMAL_MAX_XP_VALUE"));
+	}
+
+	// WTP, XP cap to prevent farming XP from Runaways
 	if (getUnitInfo().LbD_canEscape())
-		iMaxValue = std::min(iMaxValue, GC.getDefineINT("ESCAPE_MAX_XP_VALUE"));
+	{
+		// WTP, ray, modified XP cap code of devolution in case of Runaways by additional check for Profession Combat Change
+		// it can only be a Runaway if CombatChange of the Profession is 1 or maybe 0 if config changes
+		ProfessionTypes eUnitProfession = getProfession();
+		if (eUnitProfession != NO_PROFESSION && GC.getProfessionInfo(eUnitProfession).getCombatChange() <= 1)
+		{
+			iMaxValue = std::min(iMaxValue, GC.getDefineINT("ESCAPE_MAX_XP_VALUE"));
+		}
+	}
 
 	return iMaxValue;
 }
