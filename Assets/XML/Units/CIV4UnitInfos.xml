@@ -214,8 +214,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges/>
@@ -346,6 +354,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -570,6 +593,14 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_SALT</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
                     <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
@@ -810,6 +841,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -1254,6 +1300,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -1265,6 +1326,10 @@
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
             <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SETTLER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
@@ -1513,8 +1578,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -1822,6 +1895,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -2047,8 +2135,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -2254,6 +2350,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -2589,6 +2700,10 @@
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
             <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SETTLER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
@@ -3061,6 +3176,10 @@
             <iLeaderExperience>0</iLeaderExperience>
             <ProfessionsNotAllowed>
                 <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SETTLER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
@@ -3308,8 +3427,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -3456,6 +3583,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -3689,8 +3831,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -3837,6 +3987,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -4070,8 +4235,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -4202,6 +4375,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -4435,8 +4623,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -4567,6 +4763,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -4800,8 +5011,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -4932,6 +5151,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -5165,8 +5399,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -5297,6 +5539,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -5530,8 +5787,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -5662,6 +5927,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -5895,8 +6175,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -6027,6 +6315,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -6260,8 +6563,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -6400,6 +6711,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -6633,8 +6959,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -6773,6 +7107,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -7006,8 +7355,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -7146,6 +7503,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -7379,8 +7751,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -7519,6 +7899,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -7752,8 +8147,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -7884,6 +8287,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -8117,8 +8535,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -8241,6 +8667,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -8474,8 +8915,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -8606,6 +9055,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -8839,8 +9303,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -8963,6 +9435,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -9196,8 +9683,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -9320,6 +9815,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -9553,8 +10063,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -9677,6 +10195,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -9910,9 +10443,17 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
-                    <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>>
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
@@ -10026,6 +10567,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -10259,8 +10815,16 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
             </YieldDemands>
             <YieldChanges>
@@ -10392,6 +10956,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -10651,7 +11230,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -10773,6 +11360,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -11032,7 +11634,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -11154,6 +11764,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -11413,7 +12038,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -11531,6 +12164,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -11786,7 +12434,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -11908,6 +12564,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -12163,7 +12834,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -12281,6 +12960,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -12536,7 +13230,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -12654,6 +13356,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -12909,6 +13626,14 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
@@ -13031,6 +13756,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -13289,6 +14029,14 @@
                     <iYieldDemand>20</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
                     <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
@@ -13408,6 +14156,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -13663,7 +14426,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
                     <iYieldDemand>20</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -13785,6 +14556,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -14044,7 +14830,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -14166,6 +14960,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -14421,7 +15230,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -14547,6 +15364,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -14806,7 +15638,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -14928,6 +15768,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -15187,7 +16042,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -15309,6 +16172,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -15564,7 +16442,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -15682,6 +16568,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -15937,7 +16838,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -16055,6 +16964,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -16310,7 +17234,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -16436,6 +17368,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -16691,7 +17638,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -16817,6 +17772,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -17067,7 +18037,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -17206,6 +18184,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -17465,7 +18458,15 @@
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_WINE</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
+                </YieldDemand>
+                <YieldDemand>
+                    <YieldType>YIELD_BEER</YieldType>
+                    <iYieldDemand>10</iYieldDemand>
                 </YieldDemand>
                 <YieldDemand>
                     <YieldType>YIELD_WHALE_OIL</YieldType>
@@ -17587,6 +18588,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -17953,6 +18969,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -18242,6 +19273,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -20866,6 +21912,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -21216,6 +22277,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -21582,6 +22658,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -21936,6 +23027,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -22558,28 +23664,7 @@
             <UnitCombatMods/>
             <DomainMods/>
             <YieldModifiers/>
-            <YieldDemands>
-                <YieldDemand>
-                    <YieldType>YIELD_COFFEE</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
-                </YieldDemand>
-                <YieldDemand>
-                    <YieldType>YIELD_WOOL_CLOTH</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
-                </YieldDemand>
-                <YieldDemand>
-                    <YieldType>YIELD_LEATHER</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
-                </YieldDemand>
-                <YieldDemand>
-                    <YieldType>YIELD_SALT</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
-                </YieldDemand>
-                <YieldDemand>
-                    <YieldType>YIELD_RUM</YieldType>
-                    <iYieldDemand>20</iYieldDemand>
-                </YieldDemand>
-            </YieldDemands>
+            <YieldDemands/>
             <YieldChanges/>
             <BonusYieldChanges/>
             <bLandYieldChanges>1</bLandYieldChanges>
@@ -22863,6 +23948,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -23131,6 +24231,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -23407,6 +24522,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -23679,6 +24809,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -24058,6 +25203,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_UNIT_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -24399,6 +25559,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -24800,6 +25975,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -25187,6 +26377,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -25578,6 +26783,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -25945,6 +27165,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -26024,7 +27259,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iEuropeCost>-2000</iEuropeCost>
+            <iEuropeCost>-1000</iEuropeCost>
             <iEuropeCostIncrease>0</iEuropeCostIncrease>
             <iImmigrationWeight>100</iImmigrationWeight>
             <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
@@ -26267,6 +27502,21 @@
                     <UnitMeshGroup>
                         <iRequired>2</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -27075,6 +28325,21 @@
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -27450,6 +28715,21 @@
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
+                    </UnitMeshGroup>
+                    <UnitMeshGroup>
+                        <iRequired>1</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>

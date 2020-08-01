@@ -2253,6 +2253,61 @@
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
+            <Type>PROFESSION_SETTLER</Type>
+            <Description>TXT_KEY_PROFESSION_SETTLER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_SETTLER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_SETTLER_HELP</Help>
+            <Combat>UNITCOMBAT_MELEE</Combat>
+            <DefaultUnitAI>UNITAI_SETTLER</DefaultUnitAI>
+            <SpecialBuilding>NONE</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>0</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCityDefender>1</bCityDefender>
+            <bCanFound>1</bCanFound>
+            <bUnarmed>1</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>1</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>0</iAsset>
+            <YieldEquipedNums>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
+            </YieldEquipedNums>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>NONE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>NONE</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_units.dds,4,6</Button>
+            <bUseLbD>0</bUseLbD>
+            <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
+            <iLbDLearnLevel>1</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_MISSIONARY</Type>
             <Description>TXT_KEY_PROFESSION_MISSIONARY</Description>
             <Civilopedia>TXT_KEY_PROFESSION_MISSIONARY_PEDIA</Civilopedia>

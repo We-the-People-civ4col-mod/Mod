@@ -70,6 +70,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_CITY_FOUNDER</Type>
+            <Button>,Art/colonization_atlas_units.dds,4,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/CM_city_founder.dds</FullLengthIcon>
+            <fScale>0.54</fScale>
+            <fInterfaceScale>0.88</fInterfaceScale>
+            <NIF>Art/Units/settler/city_founder/greatmerchantancient.nif</NIF>
+            <KFM>Art/Units/settler/city_founder/greatmerchantancient.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_COLONIST_FEMALE</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,3</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Free_Colonist.dds</FullLengthIcon>

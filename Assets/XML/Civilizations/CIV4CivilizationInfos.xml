@@ -6196,6 +6196,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -7143,6 +7147,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8100,6 +8108,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -9063,6 +9075,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -10022,6 +10038,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -10972,6 +10992,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -11919,6 +11943,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -12863,6 +12891,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13834,6 +13866,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -14794,6 +14830,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -15740,6 +15780,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16713,6 +16757,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -17661,6 +17709,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -18614,6 +18666,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -19571,6 +19627,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -20522,6 +20582,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -21470,6 +21534,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22433,6 +22501,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -23361,6 +23433,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -24324,6 +24400,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -25270,6 +25350,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -26209,6 +26293,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -27157,6 +27245,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -28090,6 +28182,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -29043,6 +29139,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -29989,6 +30089,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -30929,6 +31033,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31874,6 +31982,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -32816,6 +32928,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -33749,6 +33865,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -34793,6 +34913,10 @@
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
