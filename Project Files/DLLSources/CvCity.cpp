@@ -10069,7 +10069,10 @@ void CvCity::updateCityHappiness()
 {
 	int iTotalCityHappiness = 0;
 
-	iTotalCityHappiness += calculateNetYield(YIELD_HAPPINESS);
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
+	// iTotalCityHappiness += calculateNetYield(YIELD_HAPPINESS);
+	iTotalCityHappiness += getBaseRawYieldProduced(YIELD_HAPPINESS);
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 	iTotalCityHappiness += getHappinessFromCrosses();
 	iTotalCityHappiness += getHappinessFromBells();
 	iTotalCityHappiness += getHappinessFromHealth();
@@ -10100,7 +10103,10 @@ void CvCity::updateCityUnHappiness()
 {
 	int iTotalCityUnHappiness = 0;
 
-	iTotalCityUnHappiness += calculateNetYield(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
+	// iTotalCityUnHappiness += calculateNetYield(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	iTotalCityUnHappiness += getBaseRawYieldProduced(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 	iTotalCityUnHappiness += getUnhappinessFromPopulation();
 	iTotalCityUnHappiness += getUnhappinessFromSlavery(); 
 	iTotalCityUnHappiness += getUnhappinessFromWars();

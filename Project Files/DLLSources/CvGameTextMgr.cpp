@@ -7789,26 +7789,33 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		}
 	}
 
-	int iRebelMod = kCity.getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
-	if (0 != iRebelMod)
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
+	// just if condition added
+	if (eYieldType != YIELD_HAPPINESS && eYieldType != YIELD_UNHAPPINESS)
 	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_REBEL", iRebelMod, info.getChar()));
-		iBaseModifier += iRebelMod;
-	}
+		int iRebelMod = kCity.getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
+		if (0 != iRebelMod)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_REBEL", iRebelMod, info.getChar()));
+			iBaseModifier += iRebelMod;
+		}
 
-	// R&R, ray, Health - START
-	int iHealthMod = kCity.getCityHealth();
-	if (0 != iHealthMod)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_HEALTH", iHealthMod, info.getChar()));
-		iBaseModifier += iHealthMod;
-	}
-	// R&R, ray, Health - END
+		// R&R, ray, Health - START
+		int iHealthMod = kCity.getCityHealth();
+		if (0 != iHealthMod)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_HEALTH", iHealthMod, info.getChar()));
+			iBaseModifier += iHealthMod;
+		}
+		// R&R, ray, Health - END
 
-	// WTP, ray, Happiness - START
-	// YIELD Modifier Helptext would be here - currently not planned
+		// WTP, ray, Happiness - START
+		// YIELD Modifier Helptext would be here - currently not planned
+		
+	}
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
 
 	FAssertMsg(iBaseModifier == kCity.getBaseYieldRateModifier(eYieldType), "Yield Modifier in setProductionHelp does not agree with actual value");
 
