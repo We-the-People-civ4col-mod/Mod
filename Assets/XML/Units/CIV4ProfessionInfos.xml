@@ -2228,7 +2228,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2276,15 +2276,15 @@
             <iMissionaryRate>0</iMissionaryRate>
             <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
-            <iAsset>0</iAsset>
+            <iAsset>200</iAsset>
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iYieldAmount>50</iYieldAmount>
+                    <iYieldAmount>30</iYieldAmount>
                 </YieldEquipedNum>
                 <YieldEquipedNum>
                     <YieldType>YIELD_LUMBER</YieldType>
-                    <iYieldAmount>50</iYieldAmount>
+                    <iYieldAmount>30</iYieldAmount>
                 </YieldEquipedNum>
                 <YieldEquipedNum>
                     <YieldType>YIELD_HORSES</YieldType>
@@ -2321,7 +2321,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2359,7 +2359,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2402,7 +2402,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2445,7 +2445,7 @@
             <bWater>0</bWater>
             <bScout>1</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>3</iCombatChange>
@@ -2455,7 +2455,7 @@
             <iMissionaryRate>0</iMissionaryRate>
             <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>50</iPower>
-            <iAsset>200</iAsset>
+            <iAsset>250</iAsset>
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_HORSES</YieldType>
@@ -2679,7 +2679,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>2</iCombatChange>
@@ -2727,7 +2727,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>3</iCombatChange>
@@ -2775,7 +2775,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
@@ -2818,7 +2818,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>9</iCombatChange>
@@ -2874,7 +2874,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
@@ -2917,7 +2917,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>12</iCombatChange>
@@ -2973,7 +2973,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
@@ -3025,7 +3025,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
@@ -3077,7 +3077,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
@@ -3129,7 +3129,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>11</iCombatChange>

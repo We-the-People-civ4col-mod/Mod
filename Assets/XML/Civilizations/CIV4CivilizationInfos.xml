@@ -429,11 +429,11 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -901,8 +901,8 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_PIONEER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
@@ -1346,8 +1346,8 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
@@ -1736,12 +1736,12 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_TRAPPER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -2105,11 +2105,11 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_SCOUT</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_SCOUT</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNIT_FISHERMAN</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -2425,12 +2425,12 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -2780,12 +2780,12 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_LUMBERJACK</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_FARMER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -3303,11 +3303,11 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_HUNTER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_NATIVE_TRADER</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
