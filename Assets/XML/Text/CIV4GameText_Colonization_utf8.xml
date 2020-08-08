@@ -1621,8 +1621,8 @@
         <Tag>TXT_KEY_UNIT_CAN_FOUND</Tag>
         <English>[ICON_BULLET]Can Found new Colonies</English>
         <French>[ICON_BULLET]Peut fonder de nouvelles colonies</French>
-        <German>[ICON_BULLET]Kann neue Kolonien gr&#252;nden</German>
-        <Italian>[ICON_BULLET]Pu&#242; fondare nuove colonie</Italian>
+        <German>[ICON_BULLET]Kann neue Kolonien gründen</German>
+        <Italian>[ICON_BULLET]Può fondare nuove colonie</Italian>
         <Spanish>[ICON_BULLET]Puede fundar nuevas colonias</Spanish>
     </TEXT>
     <TEXT>
@@ -1789,8 +1789,8 @@
         <Tag>TXT_KEY_UNIT_FOUND_CITY</Tag>
         <English>[ICON_BULLET]Can Found new Colonies in Profession Settler</English>
         <French>[ICON_BULLET]Peut fonder de nouvelles colonies en profession colons</French>
-        <German>[ICON_BULLET]Kann im Beruf Siedler neue Kolonien gr&#252;nden</German>
-        <Italian>[ICON_BULLET]Pu&#242; fondare nuove colonie en trabajo colono</Italian>
+        <German>[ICON_BULLET]Kann im Beruf Siedler neue Kolonien gründen</German>
+        <Italian>[ICON_BULLET]Può fondare nuove colonie en trabajo colono</Italian>
         <Spanish>[ICON_BULLET]Puede fundar nuevas colonias en trabajo colono</Spanish>
     </TEXT>
     <TEXT>
