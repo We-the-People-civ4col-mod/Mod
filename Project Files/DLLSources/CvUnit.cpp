@@ -11149,6 +11149,27 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 					if (iYieldRequired > 0)
 					{
 						int iMissing = iYieldRequired - iYieldCarried;
+
+						//WTP, ray, Settler Professsion - START
+						// we only do this if the city is larger 3
+						if (!kOwner.isHuman() && !kOwner.isNative() && kNewProfession.canFound() &&  pCity->getPopulation() > 3)
+						{
+							int iYieldsStoredInCity = pCity->getYieldStored(eYieldType);
+							if (iMissing > iYieldsStoredInCity)
+							{
+								// we check the requiredm Yields for AI so it can equip Settlers
+								int iYieldsToBeAdded = iMissing - iYieldsStoredInCity;
+
+								// we give Yields required for a little gold
+								if (kOwner.getGold() > iYieldsToBeAdded)
+								{
+									pCity->changeYieldStored(eYieldType, iYieldsToBeAdded);
+									kOwner.changeGold(-iYieldsToBeAdded);
+								}
+							}
+						}
+						//WTP, ray, Settler Professsion - END
+
 						if (iMissing > pCity->getYieldStored(eYieldType))
 						{
 							return false;

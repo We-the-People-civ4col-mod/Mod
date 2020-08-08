@@ -7960,6 +7960,7 @@ void CvPlayerAI::AI_doProfessions()
 
 			if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
 			{
+
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 
 				bool bDone = false;
@@ -7989,6 +7990,7 @@ void CvPlayerAI::AI_doProfessions()
 
 									for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
 									{
+
 										ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
 										CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
 
@@ -10594,7 +10596,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			{
 				if (kProfession.canFound())
 				{
-					iValue += 100;
+					iValue += 200; //WTP, ray, Settler Professsion - START
 				}
 			}
 			break;
@@ -10630,9 +10632,9 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			{
 				if (kProfession.isScout())
 				{
-					iValue += 50;
+					iValue += 100;
 				}
-				iValue += 50 * kProfession.getMovesChange();
+				iValue += 20 * kProfession.getMovesChange();
 			}
 			break;
 
@@ -10745,21 +10747,39 @@ ProfessionTypes CvPlayerAI::AI_idealProfessionForUnitAIType(UnitAITypes eUnitAI,
 
 		if (!(kProfession.isCitizen() || kProfession.isWorkPlot()))
 		{
+			//WTP, ray, Settler Professsion - START
 			if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
 			{
-				CvUnit* pUnit = NULL;
-				if (pCity != NULL)
+				//we can only do this, if it is checking for a Unit in a City
+				if (eUnitAI == UNITAI_SETTLER && kProfession.canFound() && pCity != NULL)
 				{
-					pUnit = pCity->getPopulationUnitByIndex(0);
-				}
-				if (pUnit == NULL || pUnit->canHaveProfession(eLoopProfession, true))
-				{
-					int iValue = AI_professionValue(eLoopProfession, eUnitAI);
-
-					if (iValue > iBestValue)
+					//we better check the size of the City
+					//I have no idea, what the population check below in else is supposed to do
+					if (pCity->getPopulation() > 1)
 					{
-						iBestValue = iValue;
+						iBestValue = MAX_INT;
 						eBestProfession = eLoopProfession;
+						break; // do not loop through professions anymore, we already found the best Profession for SETTLER_AI
+					}
+				}
+			
+				else 
+				//WTP, ray, Settler Professsion - END
+				{
+					CvUnit* pUnit = NULL;
+					if (pCity != NULL)
+					{
+						pUnit = pCity->getPopulationUnitByIndex(0);
+					}
+					if (pUnit == NULL || pUnit->canHaveProfession(eLoopProfession, true))
+					{
+						int iValue = AI_professionValue(eLoopProfession, eUnitAI);
+
+						if (iValue > iBestValue)
+						{
+							iBestValue = iValue;
+							eBestProfession = eLoopProfession;
+						}
 					}
 				}
 			}
