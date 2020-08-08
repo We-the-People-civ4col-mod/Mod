@@ -6789,6 +6789,14 @@ bool CvUnit::doFound(bool bBuyLand)
 		if (NULL != pCity)
 		{
 			pCity->addPopulationUnit(this, NO_PROFESSION);
+
+			//WTP, ray, Settler Professsion - START
+			//consuming YIELDS when Founding a City
+			for (int i=0; i < NUM_YIELD_TYPES; ++i)
+			{
+				pCity->setYieldStored((YieldTypes) i, 0);
+			}
+			//WTP, ray, Settler Professsion - END
 		}
 	}
 
