@@ -11158,13 +11158,16 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 							if (iMissing > iYieldsStoredInCity)
 							{
 								// we check the requiredm Yields for AI so it can equip Settlers
-								int iYieldsToBeAdded = iMissing - iYieldsStoredInCity;
+								int iYieldAmountToBeAdded = iMissing - iYieldsStoredInCity;
+
+								//I explicitly use Europe Sell Price because Europe Buy Price would be too expensive.
+								int iPriceSettlerYieldPrice = iYieldAmountToBeAdded * kOwner.getYieldSellPrice(eYieldType);
 
 								// we give Yields required for a little gold
-								if (kOwner.getGold() > iYieldsToBeAdded)
+								if (kOwner.getGold() > iPriceSettlerYieldPrice)
 								{
-									pCity->changeYieldStored(eYieldType, iYieldsToBeAdded);
-									kOwner.changeGold(-iYieldsToBeAdded);
+									pCity->changeYieldStored(eYieldType, iYieldAmountToBeAdded);
+									kOwner.changeGold(-iPriceSettlerYieldPrice);
 								}
 							}
 						}

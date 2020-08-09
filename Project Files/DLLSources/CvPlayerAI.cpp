@@ -7960,7 +7960,6 @@ void CvPlayerAI::AI_doProfessions()
 
 			if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
 			{
-
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 
 				bool bDone = false;

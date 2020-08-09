@@ -1928,6 +1928,55 @@ CvUnit* CvPlayer::initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI, Direction
 	return pUnit;
 }
 
+//WTP, ray, Settler Professsion - START
+//This is the function to init Units in Profession Settler in Europe
+void CvPlayer::initEuropeSettler(bool bPayEquipment)
+{
+	// here we need to get the Profession Settler for initUnit call
+	ProfessionTypes eSettlerProfession = NO_PROFESSION;
+	int iEquipmentCots = 0;
+	for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+	{
+		// storing the Loop Profession
+		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+
+		// checking if the profession is valid and can found settlements
+		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession) && kProfession.canFound())
+		{
+			//  only if bPayEquipment - the for the Equipment is calculated. otherwise it stays 0
+			if(bPayEquipment)
+			{
+				for (int i=0; i < NUM_YIELD_TYPES; ++i)
+				{
+					YieldTypes eYieldType = (YieldTypes) i;
+					int iYieldAmount = kProfession.getYieldEquipmentAmount(i);
+					iEquipmentCots += iYieldAmount * getYieldSellPrice(eYieldType); // we only use the sell price
+				}
+			}
+
+			eSettlerProfession = eLoopProfession;
+			break; // we do not loop further
+		}
+	}
+	
+	if (eSettlerProfession != NO_PROFESSION)
+	{
+		// AI pays the calculated costs - wich are already calculated nicely just Sell Price
+		// if bPayEquipment is false, these are 0
+		// if it does not have the money it does not get the Settler in Europe
+		if(getGold() >= iEquipmentCots)
+		{
+			changeGold(-iEquipmentCots);
+			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+			CvUnit* pUnit = initUnit(eUnit, eSettlerProfession, INVALID_PLOT_COORD, INVALID_PLOT_COORD, UNITAI_SETTLER, NO_DIRECTION);
+			unloadUnitToEurope(pUnit);		
+		}
+	}
+	return;
+}
+//WTP, ray, Settler Professsion - END
+
 
 /*** TRIANGLETRADE 10/23/08 by DPII ***/
 CvUnit* CvPlayer::initAfricaUnit(UnitTypes eUnit, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
@@ -7831,6 +7880,55 @@ void CvPlayer::verifyAlive()
 				// TAC - RESPAWN Option - Ray - End
 			}
 		}
+
+		//WTP, ray, Settler Professsion - START
+		//only if player is still alive
+		if (!bKill && !bRespawnDeactivated)
+		{
+			// Only Colonial Players, but not Kings, not Natives, not Animals, ...
+			if (getParent() != NO_PLAYER)
+			{
+				// we check that there is no War of Independence and other small things
+				CvPlayer& kEurope = GET_PLAYER(getParent());
+				if(kEurope.isAlive() && kEurope.isEurope() && !::atWar(getTeam(), kEurope.getTeam()) && (GC.getGameINLINE().getAIAutoPlay() == 0 || GC.getGameINLINE().getActivePlayer() != getID()))
+				{
+					//we check if Player needs a new settler, because he lost all Cities and Units in Settler Profession
+					int iNumPlayerCities = getNumCities();
+					int iNumSettlers = AI_getNumAIUnits(UNITAI_SETTLER);
+
+					//we also check if AI is landlocked and needs more cities
+					CvPlayerAI& kPlayer = GET_PLAYER(getID());
+					int iAIdesiredCities = kPlayer.AI_desiredCityCount();
+
+					// no cities and no settlers check
+					if (iNumPlayerCities == 0 && iNumSettlers == 0)
+					{
+						//create a Unit in Profession Settler in Europe - for free, but with tax increase
+						initEuropeSettler(false);
+
+						//sending a text message for King granting a Settler
+						CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_SETTLER", getCivilizationShortDescriptionKey());
+						gDLL->getInterfaceIFace()->addMessage((getID()), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+
+						// King increases tax rate
+						changeTaxRate(1);
+					}
+
+					// ONLY for AI: landlock check - not necessary anymore if we already spawned in first if
+					else if (!isHuman() && (iAIdesiredCities > (iNumPlayerCities + iNumSettlers)))
+					{
+						if (kPlayer.AI_isLandLocked())
+						{
+							//create a Unit in Profession Settler in Europe - having to pay equipment
+							initEuropeSettler(true);
+							// King increases tax rate
+						}
+					}
+
+				}
+			}
+		}
+		//WTP, ray, Settler Professsion - END
 
 		if (bKill)
 		{

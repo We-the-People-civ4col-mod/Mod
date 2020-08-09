@@ -74,4 +74,9 @@
         <English>Sire, another European is already living and learning in %s1_city. The Natives do not want to take a second one. [NEWLINE] We should come back when that other European has finished his time in the village.</English>
         <German>Sire, es lebt und lernt bereits ein anderer Europäer in %s1_city. Die Ureinwohner möchten keinen weiteren aufnehmen. [NEWLINE] Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
+        <English>Since %s1_player has no more settlements and also no more settlers, his Majesty has decided to equip some colonists in Europe as settler. Of course this comes with a tax increase.</English>
+        <German>Da %s1_player keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Ihre Majestät entschieden in Europe einige Kolonisten als Siedler auszurüsten. Dies beinhaltet natürlich eine Steuererhöung.</German>
+    </TEXT>
 </Civ4GameText>
