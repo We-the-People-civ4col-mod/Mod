@@ -81,9 +81,6 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 	// Init non-saved data
 	setup();
 
-	// Create and initialize the cache
-	CvPlot::setMaxVisibilityRangeCache();
-
 	//--------------------------------
 	// Init other game data
 	gDLL->logMemState("CvMap before init plots");
@@ -227,6 +224,10 @@ void CvMap::setupGraphical()
 {
 	if (!GC.IsGraphicsInitialized())
 		return;
+
+	// Need to ensure that the cache is initialized both on map creation
+	// and when a save is loaded
+	CvPlot::setMaxVisibilityRangeCache(); // advc.003h
 
 	PROFILE_FUNC();
 
