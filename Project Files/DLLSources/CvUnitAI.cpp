@@ -8963,8 +8963,6 @@ bool CvUnitAI::AI_spreadReligion()
 bool CvUnitAI::AI_spreadTradePosts()
 {
 	PROFILE_FUNC();
-	
-	FAssert(GC.getProfessionInfo(getProfession()).getNativeTradeRate() > 0);
 
 	// WTP, ray, AI imporevment - START
 	// AI was running around with Missionaries and Native Traders too much
@@ -9040,7 +9038,6 @@ bool CvUnitAI::AI_spreadTradePosts()
 	{
 		if (atPlot(pBestSpreadPlot))
 		{
-			FAssert(canEstablishTradePost());
 			establishTradePost();
 			kOwner.AI_changeNumRetiredAIUnits(UNITAI_TRADER, 1);
 			return true;
