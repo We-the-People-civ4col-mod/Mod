@@ -2342,7 +2342,7 @@
             </YieldsConsumed>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,6,6</Button>
             <bUseLbD>0</bUseLbD>
-            <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
+            <ExpertUnit>UNITCLASS_CHRISTIAN_MISSIONARY</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -2385,7 +2385,7 @@
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,16</Button>
             <bUseLbD>0</bUseLbD>
-            <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
+            <ExpertUnit>UNITCLASS_EXPERT_TRADER</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
