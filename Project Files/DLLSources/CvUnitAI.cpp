@@ -8941,9 +8941,10 @@ bool CvUnitAI::AI_spreadReligion()
 
 	if ((pBestPlot != NULL) && (pBestSpreadPlot != NULL))
 	{
-		if (atPlot(pBestSpreadPlot))
+		// WTP, ray, for safety I added this 
+		// I noticed that if 2 Missionaris are placed on a Native Village at the same time, both try to establish a Mission
+		if (atPlot(pBestSpreadPlot) && canEstablishMission())
 		{
-			FAssert(canEstablishMission());
 			establishMission();
 			kOwner.AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1);
 			return true;
@@ -9036,7 +9037,9 @@ bool CvUnitAI::AI_spreadTradePosts()
 
 	if ((pBestPlot != NULL) && (pBestSpreadPlot != NULL))
 	{
-		if (atPlot(pBestSpreadPlot))
+		// WTP, ray, for safety I added this 
+		// I noticed that if 2 Native Traders are placed on a Native Village at the same time, both try to establish a Trade Post
+		if (atPlot(pBestSpreadPlot) && canEstablishTradePost())
 		{
 			establishTradePost();
 			kOwner.AI_changeNumRetiredAIUnits(UNITAI_TRADER, 1);
