@@ -182,6 +182,10 @@ public:
 	void establishMission();
 	int getMissionarySuccessPercent() const;
 
+	// Ramstormp, Disillusioned Missionary - START
+	int getFailedMissionarySurvivalPercent() const;
+	// Ramstormp - END
+
 	// WTP, ray, Native Trade Posts - START
 	bool canEstablishTradePost() const;
 	void establishTradePost();

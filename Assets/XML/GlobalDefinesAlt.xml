@@ -1163,4 +1163,20 @@
 		<DefineName>TIMER_FESTIVITIES_OR_UNRESTS</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>EXPELLED_MISSIONARY_SURVIVAL_CHANCE</DefineName>
+		<iDefineIntVal>100</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_FAILED_MISSIONARY</DefineName>
+		<DefineTextVal>UNITCLASS_FAILED_MISSIONARY</DefineTextVal>
+	</Define>
 </Civ4Defines>

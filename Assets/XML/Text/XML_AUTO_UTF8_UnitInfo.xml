@@ -699,6 +699,28 @@
         <Spanish>Aunque muchos de los intrépidos espíritus que hollaron las tierras vírgenes americanas eran soldados y guerreros, casi hubo la misma cantidad de hombres de Dios que se adentraron en lo desconocido para extender su fe. Parte diplomático y parte explorador, el Misionero en muchos casos se convirtió en el representante de sus coetáneos europeos y establecía contactos y formaba alianzas, todo mientras propagaba activamente el Cristianismo para acercar las tradiciones del Nuevo Mundo un poco más a las del Antiguo.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_FAILED_MISSIONARY</Tag>
+        <English>Disillusioned Missionary:Disilussioned Missionaries</English>
+        <German>
+            <Text>Desillusionierter Missionar:Desillusionierte Missionare</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAILED_MISSIONARY_STRATEGY</Tag>
+        <English>Disillusioned Missionaries are the result of failed attempts to setup a Mission in a Native village. They are bad workers in general. Since their belief is not totally broken and they know the holy word, they can still be used as Preachers though.</English>
+        <German>Desillusionierte Missionare sind das Ergebnis fehlgeschlagener Missionierungsversuche in Ureinwohnerdörfern. Sie sind im allgemeinen schlechte Arbeiter. Da ihr Glaube allerdings nicht ganz erloschen ist und sie die Heilige Schrift kennen, können sie noch als Prediger dienen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_FAILED_MISSIONARY_PEDIA</Tag>
+        <English>While many of the intrepid souls that stepped into the American wilderness were soldiers and warriors, nearly as many were men of god, marching into the unknown to spread their faith. Part diplomat, part explorer, the Missionary in many cases became the representative for his fellow Europeans, developing contacts, forming alliances, and all the while actively spreading Christianity to draw the traditions of the New World a little closer to those of the Old.</English>
+        <French>Parmi les âmes intrépides qui s'aventurent dans les régions sauvages américaines, il y a certes des soldats et des guerriers, mais aussi des hommes de Dieu, plongeant vers l'inconnu pour propager leur foi. Moitié diplomate, moitié explorateur, le Missionnaire sert souvent d'émissaire pour le compte des Européens, nouant des contacts et formant des alliances tout en propageant activement le christianisme pour rapprocher encore davantage les traditions du Nouveau monde de celles de l'Ancien.</French>
+        <German>Auch wenn viele der unerschrockenen Seelen, die in die amerikanische Wildnis zogen, Soldaten und Krieger waren, gab es fast ebenso viele Männer Gottes, die in das große Unbekannte schritten, um ihren Glauben zu verbreiten. Der Missionar, teils Diplomat, teils Entdecker, wurde oft der Repräsentant der übrigen Europäer, stellte Kontakte her, formte Allianzen und verbreitete gleichzeitig noch das Christentum, um die Traditionen der Neuen Welt denen der Alten anzunähern.</German>
+        <Italian>Mentre molti degli intrepidi uomini che si fecero avanti sui selvaggi territori americani erano soldati e guerrieri, quasi altrettanti erano uomini di Dio, che marciavano verso l'ignoto per diffondere la propria fede. Parte diplomatici, parte esploratori, i missionari divennero in molti casi i rappresentanti degli europei sviluppando contatti, formando alleanze e contemporaneamente diffondendo il cristianesimo per avvicinare le tradizioni del Nuovo Mondo a quelle del vecchio.</Italian>
+        <Spanish>Aunque muchos de los intrépidos espíritus que hollaron las tierras vírgenes americanas eran soldados y guerreros, casi hubo la misma cantidad de hombres de Dios que se adentraron en lo desconocido para extender su fe. Parte diplomático y parte explorador, el Misionero en muchos casos se convirtió en el representante de sus coetáneos europeos y establecía contactos y formaba alianzas, todo mientras propagaba activamente el Cristianismo para acercar las tradiciones del Nuevo Mundo un poco más a las del Antiguo.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CIGARS</Tag>
         <English>Cigars</English>
         <French>

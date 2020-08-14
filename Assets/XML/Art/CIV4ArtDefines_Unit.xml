@@ -1030,6 +1030,23 @@
             </AudioRunSounds>
         </UnitArtInfo>
         <UnitArtInfo>
+            <Type>ART_DEF_UNIT_FAILED_MISSIONARY</Type>
+            <Button>,Art/colonization_atlas_units.dds,6,6</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/Failed_Missionary.dds</FullLengthIcon>
+            <fScale>0.44</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Units/Settler/Failed_Missionary/Failed_Missionary.nif</NIF>
+            <KFM>Art/Units/Jesuit_Missionary/Jesuit_Missionary.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>0</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
+        <UnitArtInfo>
             <Type>ART_DEF_UNIT_PROFESSION_UNIT_MISSIONARY</Type>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,12</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/Missionary_Jesuit.dds</FullLengthIcon>

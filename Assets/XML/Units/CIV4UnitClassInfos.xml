@@ -277,6 +277,11 @@
             <DefaultUnit>UNIT_CHRISTIAN_MISSIONARY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_FAILED_MISSIONARY</Type>
+            <Description>TXT_KEY_UNITCLASS_FAILED_MISSIONARY</Description>
+            <DefaultUnit>UNIT_FAILED_MISSIONARY</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_EXPERT_TRADER</Type>
             <Description>TXT_KEY_UNITCLASS_EXPERT_TRADER</Description>
             <DefaultUnit>UNIT_EXPERT_TRADER</DefaultUnit>

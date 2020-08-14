@@ -448,6 +448,10 @@
         <English>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FAILED_MISSIONARY</Tag>
+        <English>TXT_KEY_UNIT_FAILED_MISSIONARY</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CIGARS</Tag>
         <English>Cigars</English>
         <French>

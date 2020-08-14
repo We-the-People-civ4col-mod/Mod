@@ -5382,7 +5382,23 @@ void CvUnit::establishMission()
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_FAILED", plot()->getPlotCity()->getNameKey());
 		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 		GET_PLAYER(pCity->getOwnerINLINE()).AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
+
+		//Ramstormp, Disillusioned missionary - START
+		if (GC.getGameINLINE().getSorenRandNum(100, "Dis mission roll") < getFailedMissionarySurvivalPercent())
+		{
+			UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
+			// WTP, ray, just for safety
+			if (FailedMissionaryType != NO_UNIT)
+			{
+				CvUnit* FailedMissionaryUnit = GET_PLAYER(getOwnerINLINE()).initUnit(FailedMissionaryType, (ProfessionTypes)GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+				//  WTP, ray, we still need to display a message - your missionary failed and became a Failed Missionary
+				CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL", plot()->getPlotCity()->getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+		} 
+		//Ramstormp, Disillusioned missionary - END
 	}
+
 	else
 	{
 		GET_PLAYER(getOwnerINLINE()).setMissionarySuccessPercent(GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
@@ -5401,6 +5417,22 @@ void CvUnit::establishMission()
 			CvPlayer& oldMissionaryPlayer = GET_PLAYER(pCity->getMissionaryPlayer());
 			int attitudeDecreaseForDestroyingMission = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_MISSION");
 			oldMissionaryPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingMission);
+
+			//Ramstormp, Disillusioned Missionary - START
+			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GC.getDefineINT("EXPELLED_MISSIONARY_SURVIVAL_CHANCE"))
+			{
+				UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
+				if (FailedMissionaryType != NO_UNIT)
+				{
+					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
+					CvUnit* FailedMissionaryUnit = oldMissionaryPlayer.initUnit(FailedMissionaryType, (ProfessionTypes)GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
+					CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED", plot()->getPlotCity()->getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(pCity->getMissionaryPlayer(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+			}
+			//Ramstormp, Disillusioned missionary - END
+
 		}
 		// R&R, ray, Rebuild Missioning End
 
@@ -5562,6 +5594,33 @@ int CvUnit::getMissionarySuccessPercent() const
 	return totalChance;
 	// R&R, ray, Rebuild Missioning End
 }
+
+
+//Ramstormp, Disillusioned missionary - START
+int CvUnit::getFailedMissionarySurvivalPercent() const
+{
+	int survivalChance = 0;
+
+	// this is checking for an Expert
+	if (getUnitInfo().getMissionaryRateModifier() > 0)
+	{
+		survivalChance = GC.getDefineINT("FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE");
+	}
+
+	// otherwise it is not an Expert
+	else
+	{
+		survivalChance = GC.getDefineINT("FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE");
+	}
+
+	// just for safety if XML config was messed up, checking for smaller 0 is enough
+	if (survivalChance < 0)
+	{	
+		return 0;
+	}
+	return survivalChance;
+}
+//Ramstormp, Disillusioned missionary - END
 
 
 // WTP, ray, Native Trade Posts - START

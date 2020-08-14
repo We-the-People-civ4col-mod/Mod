@@ -79,4 +79,14 @@
         <English>Since %s1_player has no more settlements and also no more settlers, his Majesty has decided to equip some colonists in Europe as settler. Of course this comes with a tax increase.</English>
         <German>Da %s1_player keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Ihre Majestät entschieden in Europe einige Kolonisten als Siedler auszurüsten. Dies beinhaltet natürlich eine Steuererhöung.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
+        <English>The Natives in %s1_CityName have however not killed your Missionary for insulting their gods. But they have heavily beaten him and left him completely broken and disillusioned.</English>
+        <German>Die Ureinwohner in %s1_CityName haben euren Missionar jedoch nicht aufgrund der Beleidigung ihrer Götter getötet. Sie haben ihn aber schwer verprügelt und dadurch komplett gebrochen und desillusioiert.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
+        <English>The Natives in %s1_CityName have beaten and chased away your Missionary, since a Missionary from another Nation took his place and accused him of hereticism and other devlish deeds.</English>
+        <German>Die Ureinwohner von %s1_CityName haben euren Missionar mit Prügeln aus dem Dorf verjagt, da ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelei beschuldigte.</German>
+    </TEXT>
 </Civ4GameText>
