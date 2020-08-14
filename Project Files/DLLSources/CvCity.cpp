@@ -10236,6 +10236,12 @@ int CvCity::getUnhappinessFromTaxRate() const
 	int iCurrentTaxRate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
 	iUnHapTax = iCurrentTaxRate / iTaxDivisor;
 
+	// to ensure that small cities are not hit too much by Unhappiness from Taxes
+	if (iUnHapTax > getPopulation())
+	{
+		iUnHapTax = getPopulation();
+	}
+
 	return iUnHapTax;
 }
 
