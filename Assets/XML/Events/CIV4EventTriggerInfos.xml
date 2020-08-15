@@ -8748,7 +8748,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>isNativeVillageAndHuman</PythonCanDo>
+            <PythonCanDo>isNativeVillage</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
