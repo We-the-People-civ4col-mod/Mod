@@ -10469,7 +10469,7 @@
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
             <iUnitExperienceWeight>0</iUnitExperienceWeight>
-            <bUnitsOnPlot>1</bUnitsOnPlot>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
             <BuildingsRequired>
                 <BuildingClass>BUILDINGCLASS_LANDING_STAGE</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
@@ -10479,8 +10479,8 @@
             </BuildingsRequired>
             <iNumBuildings>1</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>1</iNumPlotsRequired>
-            <bOwnPlot>1</bOwnPlot>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
@@ -10506,8 +10506,8 @@
             <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
-            <iCityFoodWeight>1</iCityFoodWeight>
-            <PythonCanDo>isHuman</PythonCanDo>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
