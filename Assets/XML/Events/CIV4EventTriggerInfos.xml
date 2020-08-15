@@ -4755,7 +4755,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -5576,7 +5576,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -5644,7 +5644,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8653,7 +8653,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8721,7 +8721,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8862,7 +8862,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8932,7 +8932,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -9003,7 +9003,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -10479,7 +10479,7 @@
             </BuildingsRequired>
             <iNumBuildings>1</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
