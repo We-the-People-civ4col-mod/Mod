@@ -10506,7 +10506,7 @@
             <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
-            <iCityFoodWeight>0</iCityFoodWeight>
+            <iCityFoodWeight>1</iCityFoodWeight>
             <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
