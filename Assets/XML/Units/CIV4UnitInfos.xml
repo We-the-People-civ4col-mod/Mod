@@ -30420,98 +30420,6 @@
                         <ArtDefineTag>ART_DEF_UNIT_NOBLE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>3</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>3</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>3</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
-                    </UnitMeshGroup>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -30523,12 +30431,44 @@
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
             <ProfessionsNotAllowed>
+               <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_COLONIAL_MILITIA</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_HEAVY_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
                 <ProfessionNotAllowed>
                     <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SCOUT</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_PIONEER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SETTLER</VoidProfessionType>
                     <bIsNotAllowed>1</bIsNotAllowed>
                 </ProfessionNotAllowed>
             </ProfessionsNotAllowed>
@@ -30816,120 +30756,6 @@
                         <ArtDefineTag>ART_DEF_UNIT_BISHOP</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_SCOUT</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>3</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>3</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>3</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_DRAGOON</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_PIONEER</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
-                <UnitMeshGroups>
-                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
-                    <fMaxSpeed>1.75</fMaxSpeed>
-                    <fPadTime>1</fPadTime>
-                    <iMeleeWaveSize>4</iMeleeWaveSize>
-                    <iRangedWaveSize>0</iRangedWaveSize>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
-                    </UnitMeshGroup>
-                    <UnitMeshGroup>
-                        <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
-                    </UnitMeshGroup>
-                </UnitMeshGroups>
             </ProfessionMeshGroups>
             <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
             <HotKey/>
@@ -30940,6 +30766,48 @@
             <FreePromotions/>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
+            <ProfessionsNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_PIONEER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SETTLER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_MISSIONARY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_NATIVE_TRADER</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_LINE_INFANTRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_COLONIAL_MILITIA</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_DRAGOON</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_SCOUT</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+                <ProfessionNotAllowed>
+                    <VoidProfessionType>PROFESSION_HEAVY_CAVALRY</VoidProfessionType>
+                    <bIsNotAllowed>1</bIsNotAllowed>
+                </ProfessionNotAllowed>
+            </ProfessionsNotAllowed>
         </UnitInfo>
         <UnitInfo>
             <Type>UNIT_NATIVE</Type>
