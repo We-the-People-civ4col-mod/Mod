@@ -22,6 +22,9 @@
 // this is usually variable combos, which will cause asserts and bugs later
 static void verifyXMLsettings()
 {
+	return;
+	// WTP, ray, due to the change in Event System to trigger on Num Units on Map not only for a Unit on a Plot, this does not make sense anymore
+	/*
 	for (int i=0; i < GC.getNumEventTriggerInfos(); ++i)
 	{
 		EventTriggerTypes eTrigger = (EventTriggerTypes)i;
@@ -33,6 +36,7 @@ static void verifyXMLsettings()
 			FAssertMsg(isPlotEventTrigger(eTrigger), CvString::format("XML error: %s has bUnitsOnPlot set, but failed isPlotEventTrigger()", kInfo.getType()));
 		}
 	}
+	*/
 }
 #endif
 /// xml verification
