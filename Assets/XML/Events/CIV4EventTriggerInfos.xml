@@ -3815,14 +3815,16 @@
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
-            <iMinTreasury>0</iMinTreasury>
-            <iMinPopulation>15</iMinPopulation>
+            <iMinTreasury>2000</iMinTreasury>
+            <iMinPopulation>10</iMinPopulation>
             <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-            <UnitsRequired/>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_CARPENTER</UnitClass>
+            </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>

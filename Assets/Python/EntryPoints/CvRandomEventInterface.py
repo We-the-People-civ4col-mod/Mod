@@ -1628,6 +1628,12 @@ def countUnits(argsList, iUnitType):
 	return iUnitsCurrent
 
 def CheckCarpenter(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if not player.isPlayable():
+		return false
+
 	iUnitType = CvUtil.findInfoTypeNum('UNIT_CARPENTER')
 	iUnitsCurrent = countUnits(argsList, iUnitType)
 	if iUnitsCurrent > 0:
