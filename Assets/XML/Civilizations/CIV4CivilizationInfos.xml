@@ -901,7 +901,7 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_EMIGRANT</UnitClassType>
+                    <UnitClassType>UNITCLASS_HUNTER</UnitClassType>
                     <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
