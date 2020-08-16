@@ -1738,6 +1738,28 @@
                     </UnitMeshGroup>
                 </UnitMeshGroups>
                 <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
                     <ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
                     <fMaxSpeed>1.75</fMaxSpeed>
                     <fPadTime>1</fPadTime>
@@ -2192,6 +2214,28 @@
                     <UnitMeshGroup>
                         <iRequired>3</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>3</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
+                    <fMaxSpeed>1.75</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>4</iMeleeWaveSize>
+                    <iRangedWaveSize>0</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
                 <UnitMeshGroups>
