@@ -861,6 +861,8 @@ def getHelpPeasantWarPrep(argsList):
 def canTriggerLostTribe(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return false
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	eScout = gc.getInfoTypeForString("PROFESSION_SCOUT")
 	if unit.getProfession() != eScout:
