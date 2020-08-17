@@ -70,7 +70,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -527,7 +527,7 @@
             <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>25</iWeight>
+            <iWeight>100</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -708,7 +708,7 @@
             <bPrereqEventPlot>0</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>0</bGlobal>
+            <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -777,7 +777,7 @@
             <bPrereqEventPlot>0</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>0</bGlobal>
+            <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -1653,7 +1653,7 @@
             <bPrereqEventPlot>0</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>0</bGlobal>
+            <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -1996,6 +1996,7 @@
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                 <UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
+                <UnitClass>UNITCLASS_FISHING_BOAT</UnitClass>
             </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
@@ -2183,7 +2184,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -4524,7 +4525,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -6194,7 +6195,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -6265,7 +6266,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -6457,7 +6458,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6598,7 +6599,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6815,7 +6816,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6962,7 +6963,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7041,7 +7042,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7121,7 +7122,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7195,7 +7196,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7343,7 +7344,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8401,7 +8402,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8471,7 +8472,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8496,8 +8497,8 @@
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
             <iMinTreasury>0</iMinTreasury>
-            <iMinPopulation>0</iMinPopulation>
-            <iMaxPopulation>5</iMaxPopulation>
+            <iMinPopulation>5</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
@@ -8820,7 +8821,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -9066,7 +9067,7 @@
             <UnitsRequired>
                 <UnitClass>UNITCLASS_STATESMAN</UnitClass>
             </UnitsRequired>
-            <iNumUnits>2</iNumUnits>
+            <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
@@ -9106,7 +9107,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -9257,7 +9258,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -9332,7 +9333,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
