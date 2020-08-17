@@ -691,7 +691,7 @@
 	</Define>
 	<Define>
 		<DefineName>EUROPE_MARKET_CORRELATION_PERCENT</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NATIVE_GROWTH_THRESHOLD_MULTIPLIER</DefineName>
