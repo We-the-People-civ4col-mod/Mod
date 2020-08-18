@@ -3194,4 +3194,44 @@
         <Italian>Use a small part of the reward of our traders to build an additional large coastal ship and keep the rest for other expenses.</Italian>
         <Spanish>Use a small part of the reward of our traders to build an additional large coastal ship and keep the rest for other expenses.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SELL_NATIVE_SLAVE</Tag>
+        <English>A native slave has been charged with neglecting his duties.</English>
+        <French>A native slave has been charged with neglecting his duties.</French>
+        <German>Ein Ureinwohnersklave wurde angeklagt seine Pflichten vernachlässigt zu haben.</German>
+        <Italian>A native slave has been charged with neglecting his duties.</Italian>
+        <Spanish>A native slave has been charged with neglecting his duties.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SELL_NATIVE_SLAVE</Tag>
+        <English>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</English>
+        <French>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</French>
+        <German>Mylord, ein Ureinwohnersklave wurde ins Gericht gebracht. Sein Besitzer, ein wohlhabender Gentleman der Kolonies, erklärte dass er mehrere Verbrechen begannen hat, wie seine Pflichten zu vernachlässigen und auch aufrührerisches Verhalten. Der Gentleman verlangt daher, dass die Bedingunge der Sklavenvertrages auf 90 Jahre festgelegt werden, wie es in solchen Fällen üblich ist. Wir sollten diesen Fall als Gelegenheit sehen, die Rahmenbedingungen der Haltung von Ureinwohersklaven zu klären.</German>
+        <Italian>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</Italian>
+        <Spanish>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_KEEP</Tag>
+        <English>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed.</English>
+        <French>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed. </French>
+        <German>Der ehrenwerte Gentleman ist absolut im Recht. Ein Sklavenvertrag soll bei solchen schwerwiegenden Vergehen immer auf 90 Jahre festgeschrieben werden.</German>
+        <Italian>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed.</Italian>
+        <Spanish>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_FREE</Tag>
+        <English>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</English>
+        <French>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</French>
+        <German>Wir müssen das Recht umschreiben um die Ureinwohner vor solcherlei Ausbeutung zu schützen. Befreit den Sklaven, entschädigt jedoch seinen Besitzer.</German>
+        <Italian>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</Italian>
+        <Spanish>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_SELL</Tag>
+        <English>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</English>
+        <French>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</French>
+        <German>Diese ganzen Gesetze sind veraltet. Verhaftet einfach den Sklaven wegen Aufrührerei und verkauft ihn dann bei nächster Gelegenheit an das nächste auslaufende Sklavenshiff</German>
+        <Italian>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</Italian>
+        <Spanish>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</Spanish>
+    </TEXT>
 </Civ4GameText>
