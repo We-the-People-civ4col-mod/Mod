@@ -258,19 +258,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS</Tag>
-        <English>Random settlement areas</English>
+        <English>Random settlement areas of Natives</English>
         <French>Positionnement aléatoires des indigènes</French>
         <German>Beliebige Siedlungsgebiete der Ureinwohner</German>
-        <Italian>Random settlement areas</Italian>
-        <Spanish>Random settlement areas</Spanish>
+        <Italian>Random settlement areas of Natives</Italian>
+        <Spanish>Random settlement areas of Natives</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS_HELP</Tag>
-        <English>Random settlement areas</English>
+        <English>Random settlement areas for Natives instead of using Geographic Correct Placement</English>
         <French>Les indigènes sont placés de manière aléatoire, sans tenir compte de la lattitude.</French>
         <German>Ureinwohnervölker werden auf der Nord-Süd-Achse zufällig und nicht historisch korrekt platziert</German>
-        <Italian>Random settlement areas</Italian>
-        <Spanish>Random settlement areas</Spanish>
+        <Italian>Random settlement areas for Natives instead of using Geographic Correct Placement</Italian>
+        <Spanish>Random settlement areas for Natives instead of using Geographic Correct Placement</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE</Tag>
