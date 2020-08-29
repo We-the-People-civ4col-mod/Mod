@@ -1377,35 +1377,9 @@ void CvUnitAI::AI_FleeingMove()
 // R&R, ray, Fleeing Units - FALSE
 
 void CvUnitAI::AI_colonistMove()
-{
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	if ((kOwner.getNumCities() == 0) && (kOwner.AI_getNumAIUnits(UNITAI_SETTLER) == 0))
-	{
-		if (canFound(NULL))
-		{
-			AI_setUnitAIType(UNITAI_SETTLER);
-			AI_settlerMove();
-			return;
-		}
-	}
-	
+{	
 	if (isCargo())
 	{
-		// TAC - AI City Sites - koma13 - START
-		if (canFound(NULL))
-		{
-			if (kOwner.AI_desiredCityCount() > (kOwner.getNumCities() + kOwner.AI_totalUnitAIs(UNITAI_SETTLER)))
-			{
-				if (kOwner.AI_isLandLocked(true))
-				{
-					AI_setUnitAIType(UNITAI_SETTLER);
-					AI_settlerMove();
-					return;
-				}
-			}
-		}
-		// TAC - AI City Sites - koma13 - END
-
 		if (AI_joinOptimalCity())
 		{
 			return;
@@ -1416,19 +1390,6 @@ void CvUnitAI::AI_colonistMove()
 		}
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
-	}
-	
-	if ((area()->getCitiesPerPlayer(getOwnerINLINE()) == 0) && (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0))
-	{
-		if (canFound(NULL))
-		{ 
-			if (area()->getBestFoundValue(getOwnerINLINE()) > 0)
-			{
-				AI_setUnitAIType(UNITAI_SETTLER);
-				AI_settlerMove();
-				return;
-			}
-		}
 	}
 	
 	int iDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 3);
@@ -1455,25 +1416,6 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 	
-	// TAC - AI City Sites - koma13 - START
-	//if (area()->getBestFoundValue(getOwnerINLINE()) > 1500 && area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0)
-	if ((area()->getBestFoundValue(getOwnerINLINE()) > (kOwner.AI_isLandLocked() ? 1 : 1500)) && area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0)
-	{
-		//if (kOwner.AI_getPopulation() / kOwner.getNumCities() > 4)
-		int iDesiredCities = kOwner.AI_desiredCityCount();
-		if (iDesiredCities > (kOwner.getNumCities() + kOwner.AI_totalUnitAIs(UNITAI_SETTLER)))
-
-		{
-			if (canFound(NULL))
-			{ 
-				AI_setUnitAIType(UNITAI_SETTLER);
-				AI_settlerMove();
-				return;
-			}
-		}
-	}
-	// TAC - AI City Sites - koma13 - END
-
 	if (AI_joinCity())
 	{
 		return;
