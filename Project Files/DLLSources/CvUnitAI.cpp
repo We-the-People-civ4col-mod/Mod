@@ -2288,33 +2288,99 @@ void CvUnitAI::AI_defensiveMove()
 	PROFILE_FUNC();
 	
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false);
-	if ((kOwner.getNumCities() == 0) && (kOwner.AI_getNumAIUnits(UNITAI_SETTLER) == 0))
+	const bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false);
+	
+	// BETTER_BTS_AI_MOD, Settler AI, 09/18/09, jdog5000: START
+	if (!plot()->isOwned())
 	{
-		if (canFound(NULL))
+		if (AI_group(UNITAI_SETTLER, 1, -1, -1, false, false, false, 2, true))
 		{
-			AI_setUnitAIType(UNITAI_SETTLER);
-			AI_settlerMove();
+			return;
+		}
+	} 
+	// BETTER_BTS_AI_MOD: END
+
+
+	if (bDanger)
+	{
+		if (AI_leaveAttack(1, 70, 140)) // was ,,175
+		{
+			return;
+		}
+
+		if (AI_chokeDefend())
+		{
 			return;
 		}
 	}
+
+	if (AI_guardCityBestDefender())
+	{
+		return;
+	}
 	
+	// Enable this when we finally implement this UNITAI
+	/*
+	if (!bDanger)
+	{
+		if (getPlot().getOwner() == getOwner())
+		{
+			if (AI_load(UNITAI_SETTLER_SEA, MISSIONAI_LOAD_SETTLER, UNITAI_SETTLE, -1, -1, 1, -1, MOVE_SAFE_TERRITORY, 1))
+			{
+				return;
+			}
+		}
+	}
+	*/
+
+	if (AI_guardCityMinDefender())
+	{
+		return;
+	}
+
+	// R&R, improvements for AI defense
+	// if (kOwner.AI_isStrategy(STRATEGY_REVOLUTION) && bDanger)
+	//{
+	// Don't do this, it will trap defenders inside cities whenever there's the slightest danger
+	/*
+	if ((pCity != NULL) && bDanger)
+	{
+		getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_CITY);
+		return;
+	}
+	*/
+	//}
+	
+	if (!bDanger)
+	{
+		if (AI_group(UNITAI_SETTLER, /*iMaxGroup*/ 1, -1, -1, false, false, false, /*iMaxPath*/ 2, /*bAllowRegrouping*/ true))
+		{
+			return;
+		}
+
+		if (AI_group(UNITAI_SETTLER, /*iMaxGroup*/ 2, -1, -1, false, false, false, /*iMaxPath*/ 2, /*bAllowRegrouping*/ true))
+		{
+			return;
+		}
+
+		// Enable this when we finally implement this UNITAI
+		/*
+		if (getPlot().getOwner() == getOwner())
+		{
+			if (AI_load(UNITAI_SETTLER_SEA, MISSIONAI_LOAD_SETTLER, UNITAI_SETTLE, -1, -1, 1, -1, MOVE_SAFE_TERRITORY))
+			{
+				return;
+			}
+		}
+		*/
+	}
+
 	CvCity* pCity = plot()->getPlotCity();
 	if ((pCity != NULL) && (pCity->getOwnerINLINE() != getOwnerINLINE()))
 	{
 		pCity = NULL;
 	}
 
-	// R&R, improvements for AI defense
-	// if (kOwner.AI_isStrategy(STRATEGY_REVOLUTION) && bDanger)
-	//{
-	if ((pCity != NULL) && bDanger)
-	{
-		getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_CITY);
-		return;
-	}
-	//}
-	
 	if ((!isHuman() && getProfession() != NO_PROFESSION) && !bDanger)
 	{
 		if (pCity != NULL)
