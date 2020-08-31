@@ -3234,4 +3234,44 @@
         <Italian>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</Italian>
         <Spanish>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SELL_AFRICAN_SLAVE</Tag>
+        <English>A deceased plantation owner has freed his African slaves.</English>
+        <French>A deceased planter has freed his African slaves.</French>
+        <German>Ein im Sterben liegender Plantagenbesitzer hat seine schwarzen Sklaven aus der Sklaverei entlassen.</German>
+        <Italian>A deceased planter has freed his African slaves.</Italian>
+        <Spanish>A deceased planter has freed his African slaves.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SELL_AFRICAN_SLAVE</Tag>
+        <English>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</English>
+        <French>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</French>
+        <German>Mylord, ein im Sterben liegender Plantagenbesitzer hat in seinem letzten Willen verfügt, dass seine schwarzen Sklaven aus der Sklaverei entlassen werden sollen. Kurz nachdem er verstarb, sind jedoch Sklaveneintreiber erschienen und haben seine Sklaven in Ketten gelegt. Sie behaupten, dass der alte Mann nicht mehr Herr seiner Sinne gewesen sei und wollen die Sklaven an den Höchstbietenden verkaufen. Sollen wir hier eingreifen?</German>
+        <Italian>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</Italian>
+        <Spanish>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_FREE</Tag>
+        <English>We will abide by the man's wishes.</English>
+        <French>We will abide by the man's wishes.</French>
+        <German>Wir werden den letzten Willen dieses Mannes respektieren.</German>
+        <Italian>We will abide by the man's wishes.</Italian>
+        <Spanish>We will abide by the man's wishes.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_KEEP</Tag>
+        <English>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</English>
+        <French>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</French>
+        <German>Die Sklaven müssen weiterhin in Ketten bleiben. Würden wir sie befreien, so würde dies andere Sklaven aufstacheln ihre Freiheit zu fordern.</German>
+        <Italian>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</Italian>
+        <Spanish>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_SELL</Tag>
+        <English>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</English>
+        <French>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</French>
+        <German>Weist die Sklaveneintreiber an, die schwarzen Sklaven an eine Plantage einer anderen Nation zu verkaufen.</German>
+        <Italian>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Italian>
+        <Spanish>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Spanish>
+    </TEXT>
 </Civ4GameText>
