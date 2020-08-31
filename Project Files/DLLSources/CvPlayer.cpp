@@ -7872,7 +7872,8 @@ void CvPlayer::verifyAlive()
 				}
 
 				// TAC - RESPAWN Option - Ray - Start
-				if (!isNative() && !isHuman() && getNumUnits() < 3 && GC.getGameINLINE().getGameTurn() > 100 && GC.getDefineINT("KI_RESPAWN_OFF") == 1)
+				// WTP, ray, logic adapted a bit - now it also checks for no Settlers and less than 5 Units instead of 3
+				if (!isNative() && !isHuman() && GC.getGameINLINE().getGameTurn() > 100 && getNumUnits() < 5 && AI_getNumAIUnits(UNITAI_SETTLER) == 0 && GC.getDefineINT("KI_RESPAWN_OFF") == 1)
 				{
 					bKill = true;
 					bRespawnDeactivated = true;
