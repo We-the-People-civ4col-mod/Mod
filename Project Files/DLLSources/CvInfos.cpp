@@ -3347,7 +3347,7 @@ const char* CvUnitInfo::getArtDefineTag(int index, int iProfession, int iStyle) 
 			{
 				return pcTag;
 			}
-			else //retrieve the unit art style tag for no profession if the one for the desired profession is missing
+			else if (-1 == iProfession)//retrieve the unit art style tag for no profession if the one for the desired profession is missing
 			{
 				pcTag = GC.getUnitArtStyleTypeInfo(eStyle).getArtDefineTag(index, iUnit, -1);
 				if (NULL != pcTag)

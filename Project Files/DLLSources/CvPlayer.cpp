@@ -7903,15 +7903,27 @@ void CvPlayer::verifyAlive()
 					// no cities and no settlers check
 					if (iNumPlayerCities == 0 && iNumSettlers == 0)
 					{
-						//create a Unit in Profession Settler in Europe - for free, but with tax increase
-						initEuropeSettler(false);
+						//for Human, we just init a Settler in Europe
+						if(isHuman())
+						{
+							//create a Unit in Profession Settler in Europe - for free, but with tax increase
+							initEuropeSettler(false);
 
-						//sending a text message for King granting a Settler
-						CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_SETTLER", getCivilizationShortDescriptionKey());
-						gDLL->getInterfaceIFace()->addMessage((getID()), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
+							//sending a text message for King granting a Settler
+							CvWString szBuffer = gDLL->getText("TXT_KEY_NO_MORE_SETTLER", getCivilizationShortDescriptionKey());
+							gDLL->getInterfaceIFace()->addMessage((getID()), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MAJOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"));
 
-						// King increases tax rate
-						changeTaxRate(1);
+							// King increases tax rate
+							changeTaxRate(1);
+						}
+						// for AI we init Starting Units - because of Problems to transport Settlers from Europe
+						else
+						{
+							//spawn Starting Units
+							initFreeUnits();
+							// King increases tax rate
+							changeTaxRate(1);
+						}
 					}
 
 					// ONLY for AI: landlock check - not necessary anymore if we already spawned in first if
@@ -7921,7 +7933,6 @@ void CvPlayer::verifyAlive()
 						{
 							//create a Unit in Profession Settler in Europe - having to pay equipment
 							initEuropeSettler(true);
-							// King increases tax rate
 						}
 					}
 
