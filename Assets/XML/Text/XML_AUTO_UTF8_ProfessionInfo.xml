@@ -3574,7 +3574,7 @@
         <Tag>TXT_KEY_PROFESSION_SETTLER</Tag>
         <English>Settler:Settlers</English>
         <German>
-            <Text>Siedler:Siedler</Text>
+            <Text>Siedlungsgründer:Siedlungsgründer</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -3587,7 +3587,7 @@
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Tag>
         <English>[LINK=PROFESSION_SETTLER]Settlers[\LINK] are the only [LINK=CONCEPT_PROFESSION]profession[\LINK] that can establish new [LINK=CONCEPT_SETTLEMENTS]Settlements[\LINK].[PARAGRAPH:1]To do so it requires some [COLOR_HIGHLIGHT_TEXT]equipment[COLOR_REVERT]. You can either equip colonists in your settlements if you have the equipment stored or in Europe by paying gold for the equipment.</English>
-        <German>[LINK=PROFESSION_SETTLER]Siedler[\LINK] sind der einzige [LINK=CONCEPT_PROFESSION]Beruf[\LINK] der neue [LINK=CONCEPT_SETTLEMENTS]Siedlungen[\LINK] gründen kann. [PARAGRAPH:1]Dafür brauchen sie aber [COLOR_HIGHLIGHT_TEXT]Ausrüstung[COLOR_REVERT]. Man kann Kolonisten als Siedler entweder in einer Siedlung ausrüsten, falls diese die Ausrüstung gelagert hat, oder aber gleich in Europa, falls man das nötige Gold für die Ausrüstung hat.</German>    
+        <German>[LINK=PROFESSION_SETTLER]Siedlungsgründer[\LINK] sind der einzige [LINK=CONCEPT_PROFESSION]Beruf[\LINK] der neue [LINK=CONCEPT_SETTLEMENTS]Siedlungen[\LINK] gründen kann. [PARAGRAPH:1]Dafür brauchen sie aber [COLOR_HIGHLIGHT_TEXT]Ausrüstung[COLOR_REVERT]. Man kann Kolonisten als Siedlungsgründer entweder in einer Siedlung ausrüsten, falls diese die Ausrüstung gelagert hat, oder aber gleich in Europa, falls man das nötige Gold für die Ausrüstung hat.</German>    
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_SETTLER_PEDIA</Tag>
