@@ -16369,7 +16369,8 @@ int CvPlayerAI::AI_getYieldBestExportPrice(YieldTypes eYield) const
 	const CvPlayer& kParent = GET_PLAYER(eParent);
 
 	// Return the max price we would get by selling in the currently AI accessibly ports
-	// WTP, ray, this needs to be the Sell Price! And Africa really is a bad decision here for Human and AI. (It is too rare)
+	// WTP, ray, Africa really is a bad decision here for AI. - It is too rare that AI should sail to Africa.
+	// Especially if we only use this to determin the best price of a Yield on CityPlot
 	// return std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
 	return kParent.getYieldBuyPrice(eYield);
 }
