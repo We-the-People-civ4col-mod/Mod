@@ -6471,6 +6471,13 @@ void CvCityAI::AI_assignCityPlot()
 	if (isNative())
 		return;
 
+	// WTP, ray, check to not override settings of Human Player - START
+	if (isHuman() && getPreferredYieldAtCityPlot() != NO_YIELD)
+	{
+		return;
+	}
+	// WTP, ray, check to not override settings of Human Player - END
+
 	int iBestValue = 0;
 	YieldTypes eBestYield = NO_YIELD;
 

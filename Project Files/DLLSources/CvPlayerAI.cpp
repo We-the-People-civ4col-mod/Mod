@@ -16369,7 +16369,9 @@ int CvPlayerAI::AI_getYieldBestExportPrice(YieldTypes eYield) const
 	const CvPlayer& kParent = GET_PLAYER(eParent);
 
 	// Return the max price we would get by selling in the currently AI accessibly ports
-	return std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+	// WTP, ray, this needs to be the Sell Price! And Africa really is a bad decision here for Human and AI. (It is too rare)
+	// return std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+	return kParent.getYieldBuyPrice(eYield);
 }
 
 // TAC - AI City Sites - koma13 - END
