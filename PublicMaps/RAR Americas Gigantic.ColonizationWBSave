@@ -197929,7 +197929,7 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_FISHERMAN, UnitOwner=3
-		Profession=PROFESSION_PIONEER
+		Profession=PROFESSION_SETTLER
 		Damage=0
 		Level=1, Experience=0
 		FacingDirection=4
