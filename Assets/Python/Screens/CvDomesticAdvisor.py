@@ -149,7 +149,7 @@ class CvDomesticAdvisor:
 			if iState != self.TRADEROUTE_STATE and iState != self.NATIVE_STATE and iState != self.GAME_FONT_STATE:
 				self.initPage(iState, 0)
 
-		self.createSubpage(self.GENERAL_STATE, 2)
+		self.createSubpage(self.GENERAL_STATE, 3)
 		
 		#GeneralState Headers
 		szListName = self.StatePages[self.GENERAL_STATE][0] + "ListBackground"
@@ -171,8 +171,10 @@ class CvDomesticAdvisor:
 		screen.setTableColumnHeader( szListName, 13, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.STRENGTH_CHAR)) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 12 )
 		# Defense Column
 		screen.setTableColumnHeader( szListName, 14, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR)) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 12 )
+		# Happy Column
+		screen.setTableColumnHeader( szListName, 15, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 12 )
 		# Production Column
-		screen.setTableColumnHeader( szListName, 15, "<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_PRODUCING", ()).upper() + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 4 )
+		screen.setTableColumnHeader( szListName, 16, "<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_PRODUCING", ()).upper() + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 4 )
 
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
 		szListName = self.StatePages[self.GENERAL_STATE][1] + "ListBackground"
@@ -190,6 +192,36 @@ class CvDomesticAdvisor:
 			screen.setTableColumnHeader(szListName, iYield-iStartYield + 2, "<font=2>" + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 17 + 1)
 		## R&R, Robert Surcouf, Domestic Market display End
 		
+		#GeneralState Headers
+		szListName = self.StatePages[self.GENERAL_STATE][3] + "ListBackground"
+		# Total Happynes
+		screen.setTableColumnHeader( szListName, 2, "<font=2>" + (u" %c" %CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(TOTAL)" +"</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )#
+		# Happynes from Crosses
+		screen.setTableColumnHeader( szListName, 5, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(" +(u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Happynes from Bells
+		screen.setTableColumnHeader( szListName, 6, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(" +(u" %c" % gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar()) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Happynes from Health
+		screen.setTableColumnHeader( szListName, 7, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(" +(u" %c" % CyGame().getSymbolID(FontSymbols.HEALTHY_CHAR)) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Happynes from Culture
+		screen.setTableColumnHeader( szListName, 8, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(" +(u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar()) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Happynes from Education
+		screen.setTableColumnHeader( szListName, 9, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(" +(u" %c" % gc.getYieldInfo(YieldTypes.YIELD_EDUCATION).getChar()) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Happynes from Domestic Market
+		screen.setTableColumnHeader( szListName, 10, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"("  +(u" %c" % (8580)) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Happynes from Treates
+		screen.setTableColumnHeader( szListName, 11, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.HAPPY_CHAR)) +"(" +(u" %c" % CyGame().getSymbolID(FontSymbols.TRADE_CHAR)) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+
+		# Unhappynes from Population
+		screen.setTableColumnHeader( szListName, 12, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.UNHAPPY_CHAR)) +"(" +(u" %c" % CyGame().getSymbolID(FontSymbols.ANGRY_POP_CHAR)) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Unhappynes from Slavery
+		screen.setTableColumnHeader( szListName, 13, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.UNHAPPY_CHAR)) +"(" +(u" %c" % CyGame().getSymbolID(FontSymbols.OCCUPATION_CHAR)) +")" +"</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Unhappynes from Wars
+		screen.setTableColumnHeader( szListName, 14, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.UNHAPPY_CHAR)) +"(" +(u" %c" % gc.getYieldInfo(YieldTypes.YIELD_BLADES).getChar()) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Unhappynes from Missing Defense
+		screen.setTableColumnHeader( szListName, 15, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.UNHAPPY_CHAR)) +"(" +(u" %c" % CyGame().getSymbolID(FontSymbols.DEFENSE_CHAR)) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+		# Unhappynes from Tax Rate
+		screen.setTableColumnHeader( szListName, 16, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.UNHAPPY_CHAR)) +"(" +(u" %c" % CyGame().getSymbolID(FontSymbols.GOLD_CHAR)) +")" + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 14 )
+
 		#WareHouseState Headers
 #VET NewCapacity - begin 3/4
 		#screen.setTableColumnHeader( "WareHouseStateListBackground", 2, "<font=3>" + "MAX" + "</font>", 60 )
@@ -319,7 +351,6 @@ class CvDomesticAdvisor:
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 		
 		if(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 0):
-
 			# Population
 			screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" + unicode(pLoopCity.getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Liberty
@@ -345,8 +376,15 @@ class CvDomesticAdvisor:
 			# Defense
 			szBuffer = u"<font=2>%s%%</font>" % (str(pLoopCity.getDefenseModifier()))
 			screen.setTableInt(szState + "ListBackground", 14, i, "<font=2>" + szBuffer + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happyness
+			if (pLoopCity.getCityHappiness() > pLoopCity.getCityUnHappiness() ):
+				screen.setTableInt(szState + "ListBackground", 15, i, "<font=2>" + "<color=0,255,0>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			elif (pLoopCity.getCityHappiness() == pLoopCity.getCityUnHappiness() ):
+				screen.setTableInt(szState + "ListBackground", 15, i, "<font=2>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			elif (pLoopCity.getCityHappiness() < pLoopCity.getCityUnHappiness() ):
+				screen.setTableInt(szState + "ListBackground", 15, i, "<font=2>" + "<color=255,0,0>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Producing
-			screen.setTableText(szState + "ListBackground", 15, i, "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			screen.setTableText(szState + "ListBackground", 16, i, "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		elif(self.CurrentState == self.PRODUCTION_STATE):
 			start = self.YieldStart()
@@ -516,6 +554,39 @@ class CvDomesticAdvisor:
 					screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + "<color=0,255,255>" + unicode(pLoopCity.getYieldStored(iYield)) + " / " + unicode(pLoopCity.getYieldDemand(iYield)) + " / " + "</color>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				# CBM 0.8.020 display of quantity available in city - end	
 		## R&R, Robert Surcouf, Domestic Market display End
+		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 3): 
+			# Total Happynes
+			if (pLoopCity.getCityHappiness() > pLoopCity.getCityUnHappiness() ):
+				screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" + "<color=0,255,0>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			elif (pLoopCity.getCityHappiness() < pLoopCity.getCityUnHappiness() ):
+				screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" + "<color=255,0,0>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			elif (pLoopCity.getCityHappiness() == pLoopCity.getCityUnHappiness() ):
+				screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Crosses
+			screen.setTableInt(szState + "ListBackground", 5, i, "<font=2>" + unicode(pLoopCity.getHappinessFromCrosses()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Bells
+			screen.setTableInt(szState + "ListBackground", 6, i, "<font=2>" + unicode(pLoopCity.getHappinessFromBells()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Health
+			screen.setTableInt(szState + "ListBackground", 7, i, "<font=2>" + unicode(pLoopCity.getHappinessFromHealth()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Culture
+			screen.setTableInt(szState + "ListBackground", 8, i, "<font=2>" + unicode(pLoopCity.getHappinessFromCulture()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Education
+			screen.setTableInt(szState + "ListBackground", 9, i, "<font=2>" + unicode(pLoopCity.getHappinessFromEducation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Domestic Market
+			screen.setTableInt(szState + "ListBackground", 10, i, "<font=2>" + unicode(pLoopCity.getHappinessFromDomesticDemandsFulfilled()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Happynes from Treates
+			screen.setTableInt(szState + "ListBackground", 11, i, "<font=2>" + unicode(pLoopCity.getHappinessFromTreaties()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+
+			# Unhappynes from Population
+			screen.setTableInt(szState + "ListBackground", 12, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Unhappynes from Slavery
+			screen.setTableInt(szState + "ListBackground", 13, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromSlavery()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Unhappynes from Wars
+			screen.setTableInt(szState + "ListBackground", 14, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromWars()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Unhappynes from Missing Defense
+			screen.setTableInt(szState + "ListBackground", 15, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromMissingDefense()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Unhappynes from Tax Rate
+			screen.setTableInt(szState + "ListBackground", 16, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromTaxRate()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
 	def updateCitizenTable(self, pCity, iRow):
 		screen = CyGInterfaceScreen("DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR)
