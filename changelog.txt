@@ -1,5 +1,36 @@
 We the People Changelog
 
+Version 2.8.1
+WARNING: NOT SAVEGAME COMPATIBLE
+Savegames from previous versions will not load
+
+New Features
+- Overhauled Founding Cities Mechanic using Profession "Settler"
+- Failed Missionary (from Ramstormp)
+- "Happiness Advisor Tab" in Domestic Advisor (from Raubwuerger)
+
+New Events
+- Python Event "Sell Native Slave" (from @Acheron81)
+- Python Event "Sell African Slave" (from @Acheron81)
+
+Improvements and Balancing
+- AI improvements for Missionaries and Native Traders
+- Rebel Bonus on Happiness from Buildings removed
+- max. Unhappiness from Tax Rate capped to City Population
+- Fixed many small Asserts (uncritical Warnings in Code)
+- several small Improvements considering Python Events
+- several AI improvements
+- code refactoring for performance and stabilities
+
+Fixes
+- Fixed Visibility Bug on Ocean
+- Fixed Shift-Key Bug for Loading in Port Royal
+- Fixed Python Exception in Port Royal when lacking Funds
+- Fixed Bug in King Unit Requests
+- Fixed Bug in XP Cap (for Wild Animals and Runaways)
+- Fixed bug of settings for "City Center Plot Yield" not being stored
+- Several small text corrections (English and German)
+
 Version 2.8
 WARNING: NOT SAVEGAME COMPATIBLE
 Savegames from previous versions will not load
