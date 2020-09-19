@@ -1410,7 +1410,9 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-            <UnitsRequired/>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_SCOUT</UnitClass>
+            </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -1948,7 +1950,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -3761,7 +3763,7 @@
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
             <iNumPlotsRequired>1</iNumPlotsRequired>
-            <bOwnPlot>1</bOwnPlot>
+            <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
@@ -6672,7 +6674,7 @@
             <bShowPlot>0</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8865,7 +8867,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>1</iNumPlotsRequired>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
