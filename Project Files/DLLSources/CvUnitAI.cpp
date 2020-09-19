@@ -6212,7 +6212,7 @@ bool CvUnitAI::AI_europeBuyYields()
 		aiYields[iYield] = 0;
 	}
 //VET NewCapacity - begin 1/4
-	int iCargoYields;
+	// no longer needed
 //VET NewCapacity - end 1/4
 	
 	int aiTotalYields[NUM_YIELD_TYPES];
@@ -6231,20 +6231,10 @@ bool CvUnitAI::AI_europeBuyYields()
 				{	
 					int iNeeded = pLoopCity->getMaintainLevel(eLoopYield);
 //VET NewCapacity - begin 2/4
-					if (GC.getNEW_CAPACITY())
-					{
-						for (int i = 1; i < NUM_YIELD_TYPES; i++)
-						{
-							iCargoYields = 0;
-							if ((pLoopCity->getYieldStored((YieldTypes)i) > 0) && (GC.getYieldInfo((YieldTypes)i).isCargo()))
-								{iCargoYields++;}
-						}
-						if (iCargoYields < 1)
-							{iCargoYields = 1;}
-						iNeeded /= iCargoYields;
-					}
+					// no longer needed
 //VET NewCapacity - end 2/4
-					if (pLoopCity->getYieldStored(eLoopYield) < iNeeded)
+					iNeeded -= pLoopCity->getYieldStored(eLoopYield);
+					if (iNeeded > 0)
 					{
 						aiYields[eLoopYield] += iNeeded;
 					}
