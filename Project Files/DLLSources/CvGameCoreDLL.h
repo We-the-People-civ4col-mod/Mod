@@ -13,6 +13,9 @@
 //
 #pragma warning( disable: 4530 )	// C++ exception handler used, but unwind semantics are not enabled
 
+// enable extra warnings
+#pragma warning( 3: 4701 ) // local variable used without being initialized
+
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <MMSystem.h>

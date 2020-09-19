@@ -14331,7 +14331,7 @@ bool CvPlayerAI::AI_advancedStartPlaceCity(CvPlot* pPlot)
 
 	while (iPlotsImproved < iTargetPopulation)
 	{
-		CvPlot* pBestPlot;
+		CvPlot* pBestPlot = NULL;
 		ImprovementTypes eBestImprovement = NO_IMPROVEMENT;
 		int iBestValue = 0;
 		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)

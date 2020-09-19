@@ -3523,7 +3523,8 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 	// R&R, ray, African Slaves - START
 	case DIPLOEVENT_ACQUIRE_AFRICAN_SLAVES:
 		{
-			int numSlaves = iData1;
+			int iNumSlaves = iData1;
+			FAssertMsg(iNumSlaves > 0, CvString::format("Trying to add %d African slaves", iNumSlaves).c_str());
 			//int pricetopay = iData2;
 			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
@@ -3531,10 +3532,10 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			int discount = AI_getAttitude(ePlayer, false) * 10;
 			int totalslavesprice = baseslaveprice - discount;
 			int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-			int pricetopay = numSlaves * totalslavesprice * gamespeedMod / 100;
+			int pricetopay = iNumSlaves * totalslavesprice * gamespeedMod / 100;
 			
 			int availableGold = kPlayer.getGold();
-			if (availableGold >= pricetopay)
+			if (availableGold >= pricetopay && iNumSlaves > 0)
 			{
 				//get City
 				int iLoop;
@@ -3543,18 +3544,19 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				if (locationToAppear != NULL)
 				{
 					UnitTypes SlaveType = (UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"));
-					CvUnit* SlaveUnit;
-					for (int i=0;i<numSlaves;i++)
+					CvUnit* pSlaveUnit = NULL;
+					for (int i=0; i < iNumSlaves; ++i)
 					{
-						SlaveUnit = kPlayer.initUnit(SlaveType, (ProfessionTypes) GC.getUnitInfo(SlaveType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+						pSlaveUnit = kPlayer.initUnit(SlaveType, (ProfessionTypes) GC.getUnitInfo(SlaveType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
 					}
+					FAssert(pSlaveUnit != NULL);
 					//pay the king
 					changeGold(pricetopay);
 					AI_changeAttitudeExtra(ePlayer, 1);
 					kPlayer.changeGold(-pricetopay);
 
 					CvWString szBuffer = gDLL->getText("TXT_KEY_BOUGHT_AFRICAN_SLAVE", locationToAppear->getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, SlaveUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), SlaveUnit->getX(), SlaveUnit->getY(), true, true);
+					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pSlaveUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pSlaveUnit->getX(), pSlaveUnit->getY(), true, true);
 				}
 			}
 		}
@@ -3564,7 +3566,8 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 	// R&R, ray, Prisons Crowded - START
 	case DIPLOEVENT_ACQUIRE_PRISONERS:
 		{
-			int numPrisoners = iData1;
+			int iNumPrisoners = iData1;
+			FAssertMsg(iNumPrisoners > 0, CvString::format("Trying to add %d prisoners", iNumPrisoners).c_str());
 			//int pricetopay = iData2;
 			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 
@@ -3572,10 +3575,10 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			int discount = AI_getAttitude(ePlayer, false) * 10;
 			int totalprisonersprice = baseprisonerprice - discount;
 			int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-			int pricetopay = numPrisoners * totalprisonersprice * gamespeedMod / 100;
+			int pricetopay = iNumPrisoners * totalprisonersprice * gamespeedMod / 100;
 
 			int availableGold = kPlayer.getGold();
-			if (availableGold >= pricetopay)
+			if (availableGold >= pricetopay && iNumPrisoners > 0)
 			{	
 
 				//create the prisoners
@@ -3585,11 +3588,11 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 
 				if (locationToAppear != NULL)
 				{
-					UnitTypes PrisonerType = (UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PRISONER"));
-					CvUnit* PrisonerUnit;
-					for (int i=0;i<numPrisoners;i++)
+					UnitTypes ePrisonerType = (UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PRISONER"));
+					CvUnit* pPrisonerUnit = NULL;
+					for (int i=0; i < iNumPrisoners; ++i)
 					{
-						PrisonerUnit = kPlayer.initUnit(PrisonerType, (ProfessionTypes) GC.getUnitInfo(PrisonerType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+						pPrisonerUnit = kPlayer.initUnit(ePrisonerType, (ProfessionTypes) GC.getUnitInfo(ePrisonerType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
 					}
 					//pay the king
 					changeGold(pricetopay);
@@ -3601,7 +3604,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					kPlayer.changeGold(-pricetopay);
 
 					CvWString szBuffer = gDLL->getText("TXT_KEY_BOUGHT_PRISONERS", locationToAppear->getNameKey());
-					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, PrisonerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), PrisonerUnit->getX(), PrisonerUnit->getY(), true, true);
+					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pPrisonerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pPrisonerUnit->getX(), pPrisonerUnit->getY(), true, true);
 				}
 			}
 		}
@@ -4278,7 +4281,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			if (locationToAppear != NULL)
 			{
 				UnitTypes DefaultSupportType;
-				CvUnit* SupportUnit;
+				CvUnit* pSupportUnit = NULL;
 
 				if(choosenLandSupport) {
 					supportAmount = GC.getDefineINT("REV_SUPPORT_LAND");
@@ -4291,15 +4294,16 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					supportAmount = GC.getDefineINT("REV_SUPPORT_SEA");
 					DefaultSupportType = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REV_SUPPORT_SEA"));
 				}
+				FAssert(supportAmount > 0);
 
 				for (int i=0;i<supportAmount;i++)
 				{
-					SupportUnit = kPlayer.initUnit(DefaultSupportType, (ProfessionTypes) GC.getUnitInfo(DefaultSupportType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
+					pSupportUnit = kPlayer.initUnit(DefaultSupportType, (ProfessionTypes) GC.getUnitInfo(DefaultSupportType).getDefaultProfession(), locationToAppear->getX_INLINE(), locationToAppear->getY_INLINE(), NO_UNITAI);
 				}
 
 				//sending message
 				CvWString szBuffer = gDLL->getText("TXT_KEY_REV_SUPPORT_ARRIVED", GC.getLeaderHeadInfo(GET_PLAYER(getParent()).getLeaderType()).getDescription());
-				gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, SupportUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), SupportUnit->getX(), SupportUnit->getY(), true, true);
+				gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pSupportUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pSupportUnit->getX(), pSupportUnit->getY(), true, true);
 			}
 		}
 		break;
@@ -4348,7 +4352,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				UnitTypes KingReinforcementTypeArtil = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_ARTIL"));
 				UnitTypes KingReinforcementTypeSea = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_KING_REINFORCEMENT_SEA"));
 
-				CvUnit* ReinforcementUnit;
+				CvUnit* ReinforcementUnit = NULL;
 				//get City
 				CvCity* pLoopCity = NULL;
 				CvCity* locationToAppear = NULL;
@@ -4387,7 +4391,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				}
 
 				// WTP, ray, giving reinforcement to other Player as well - START
-				CvUnit* ReinforcementOtherPlayerUnit;
+				CvUnit* ReinforcementOtherPlayerUnit = NULL;
 				CvPlayer& otherPlayer = GET_PLAYER(enemyID);
 				//get City
 				CvCity* pLoopOtherPlayerCity = NULL;

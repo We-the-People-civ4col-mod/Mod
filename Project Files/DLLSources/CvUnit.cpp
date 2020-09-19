@@ -6468,8 +6468,6 @@ bool CvUnit::canPillage(const CvPlot* pPlot) const
 bool CvUnit::pillage()
 {
 	CvWString szBuffer;
-	int iPillageGold;
-	long lPillageGold;
 	ImprovementTypes eTempImprovement = NO_IMPROVEMENT;
 	RouteTypes eTempRoute = NO_ROUTE;
 
@@ -6501,7 +6499,8 @@ bool CvUnit::pillage()
 		{
 			// Use python to determine pillage amounts...
 			//lPillageGold = 0;
-			lPillageGold = -1; // K-Mod
+			long lPillageGold = -1; // K-Mod
+			int iPillageGold = 0;
 
 			if (GC.getUSE_DO_PILLAGE_GOLD_CALLBACK()) // K-Mod. I've writen C to replace the python callback.
 			{
@@ -9755,7 +9754,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 	CvCity* pOldCity;
 	CvCity* pNewCity;
 	CvCity* pWorkingCity;
-	CvUnit* pTransportUnit;
+	CvUnit* pTransportUnit = NULL;
 	CvUnit* pLoopUnit;
 	CvPlot* pOldPlot;
 	CvPlot* pNewPlot;
