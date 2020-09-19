@@ -13229,7 +13229,16 @@ int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, boo
 			if (getUnitClassType() == kTrigger.getUnitRequired(i))
 			{
 				// WTP, ray, trying to fix wrong plot selection for Unit Events - START
-				if (kTrigger.isUnitsOnPlot() && plot() == pPlot)
+				if (kTrigger.isUnitsOnPlot())
+				{
+					if(plot() == pPlot)
+					{
+						bFoundValid = true;
+						break;
+					}
+				}
+				// old code
+				else
 				{
 					bFoundValid = true;
 					break;
