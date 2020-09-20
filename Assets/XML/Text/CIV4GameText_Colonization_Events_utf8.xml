@@ -3274,4 +3274,52 @@
         <Italian>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Italian>
         <Spanish>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Spanish>
     </TEXT>
+<!-- EUROPE TRADE Events -->
+<!-- Generic Texts -->
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Tag>
+        <English>We will fulfill the orders of his Majesty!</English>
+        <German>Wir werden den Befehl Ihrer Majestät erfüllen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Tag>
+        <English>For the Glory and Wealth of the Motherland!</English>
+        <German>Für Ruhm und Reichtum des Heimatlandes!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
+        <English>Deliver the following amount of goods to Europe [COLOR_FONT_GOLD]before any other Nations does[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <German>Liefere die folgende Warenmenge nach Europa [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
+        <English>Citizens of our Homeland are exited by the quality of our Colonial goods. [NEWLINE]His Majesty is delighted. Demand for our colonial goods is rising.</English>
+        <German>Die Bürger des Heimatlandes sind von der Qualität unsere Kolonialwaren begeistert. [NEWLINE]Ihre Majestät is hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
+    </TEXT>
+<!-- Specific Trigger and Event Fail Texts -->
+    <TEXT>
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Tag>
+        <English>The race to dominate the [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] Market in Europe has started.</English>
+        <German>Das Rennen zur Beherrschung des Markt in Europe für [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] hat begonnen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Tag>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] to the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SUGAR_FAILED</Tag>
+        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] Market in Europe.</English>
+        <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu beherrschen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Tag>
+        <English>We have succeeded to become the dominant market leader for trade with [COLOR_FONT_GOLD]Sugar[COLOR_REVERT].</English>
+        <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Tag>
+        <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with [COLOR_FONT_GOLD]Sugar[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
+        <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
+    </TEXT>
 </Civ4GameText>

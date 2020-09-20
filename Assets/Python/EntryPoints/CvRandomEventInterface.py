@@ -2944,3 +2944,324 @@ def getHelpCocaEvent1(argsList):
 	if event.getGenericParameter(1) <> 0 :
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
 	return szHelp
+	
+######## EUROPE TRADE Events ###########
+
+## Explanations ##
+# use this as info for XML Event setup
+# The Generic Parameters are all configured in the Events the Event Triggers offer
+
+#Start Quest Event: The Trigger for it needs to be setup as "City Trigger"
+# Generic Parameter 1: Amount to start the Quest
+# Generic Parameter 2: Yield ID used for the Quest
+# Generic Parameter 3: Amount to successfully finish the Quest
+
+#Done Quest Event: The Trigger for it needs to be setup as "City Trigger"
+# Generic Parameter 1: Amount to successfully finish the Quest
+# Generic Parameter 2: Yield ID used for the Quest
+# Generic Parameter 3: King Relations Change
+# Generic Parameter 4: Yield Price Change
+
+# This is generic function called by the specific functions of the Trigger! - Not directly by the Trigger XML.
+# It uses the argsList of the Events forwarded by the Trigger as function Parameter
+def CanDoEuropeTrade(argsList, iYieldID, iQuantity):
+
+	ePlayer = argsList[1]
+	
+	# safety checks to make sure it is a colonial player
+	player = gc.getPlayer(ePlayer)
+	if not player.isPlayable():
+		return false
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return false
+	
+	# This would break immersion and make event unlogical
+	if player.isInRevolution():
+		return false
+	
+	# because we might want to do something with the City
+	iCityId = argsList[2]
+	city = player.getCity(iCityId)
+	if city.isNone():
+		return false
+	
+	# here we select the Amount of the Yield from function argument iQuantity
+	quantity = iQuantity
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	
+	# now we check if enough of the Yield has been traded with Europe using function argument iYieldID
+	if player.getYieldTradedTotalINT(iYieldID) < quantity:
+		return false
+	return true
+
+# This is the Function for the Event Target Yield and Target Amount
+# This Function is only used for the "Quest Start"
+def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting Player and King
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# we get the Yield as Parameter from Event 
+	yields = {
+		66 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		49 : "YIELD_FURNITURE"
+		}
+	# First we get the Yield for this Event
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+	
+	# Second we get the Target Quantity to deliver and of course also consider gamespeed
+	quantity = event.getGenericParameter(3)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+
+	# Now we construct the Help Text
+	szHelp = ""
+	if quantity > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
+	return szHelp
+
+
+# This is the Function for the Event Help Text for Price and Attitude
+# This Function is only used for the "Quest Done"
+def getHelpQuestDoneEuropeTradePriceAndAttitude(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting Player and King
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# we get the Yield as Parameter from Event 
+	yields = {
+		66 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		49 : "YIELD_FURNITURE"
+		}
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+
+	#szHelp = localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP", ())
+	szHelp = ""
+	if event.getGenericParameter(4) > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(4), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(4) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_DECREASE", (event.getGenericParameter(4), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
+	if event.getGenericParameter(3) > 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	if event.getGenericParameter(3) < 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
+	return szHelp
+
+# This is the Function for the Event Help to apply Price and Attitude changes
+# This Function is only used for the "Quest DONE"
+def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	
+	# getting King and Player
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	
+	# changing the Attitude
+	player.AI_changeAttitudeExtra(eking, event.getGenericParameter(3))
+	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
+	
+	# getting the Yield for the Price Change
+	yields = {
+		66 : "YIELD_FOOD",
+		1 : "YIELD_LUMBER",
+		2 : "YIELD_STONE",
+		3 : "YIELD_HEMP",
+		4 : "YIELD_ORE",
+		5 : "YIELD_SHEEP",
+		6 : "YIELD_CATTLE",
+		7 : "YIELD_HORSES",
+		8 : "YIELD_COCA_LEAVES",
+		9 : "YIELD_COCOA_FRUITS",
+		10 : "YIELD_COFFEE_BERRIES",
+		11 : "YIELD_TOBACCO",
+		12 : "YIELD_WOOL",
+		13 : "YIELD_COTTON",
+		14 : "YIELD_INDIGO",
+		15 : "YIELD_HIDES",
+		16 : "YIELD_FUR",
+		17 : "YIELD_PREMIUM_FUR",
+		18 : "YIELD_RAW_SALT",
+		19 : "YIELD_RED_PEPPER",
+		20 : "YIELD_BARLEY",
+		21 : "YIELD_SUGAR",
+		22 : "YIELD_GRAPES",
+		23 : "YIELD_WHALE_BLUBBER",
+		24 : "YIELD_VALUABLE_WOOD",
+		25 : "YIELD_TRADE_GOODS",
+		26 : "YIELD_ROPE",
+		27 : "YIELD_SAILCLOTH",
+		28 : "YIELD_TOOLS",
+		29 : "YIELD_BLADES",
+		30 : "YIELD_MUSKETS",
+		31 : "YIELD_CANNONS",
+		32 : "YIELD_SILVER",
+		33 : "YIELD_GOLD",
+		34 : "YIELD_GEMS",
+		35 : "YIELD_COCOA",
+		36 : "YIELD_COFFEE",
+		37 : "YIELD_CIGARS",
+		38 : "YIELD_WOOL_CLOTH",
+		39 : "YIELD_CLOTH",
+		40 : "YIELD_COLOURED_CLOTH",
+		41 : "YIELD_LEATHER",
+		42 : "YIELD_COATS",
+		43 : "YIELD_PREMIUM_COATS",
+		44 : "YIELD_SALT",
+		45 : "YIELD_SPICES",
+		46 : "YIELD_BEER",
+		47 : "YIELD_RUM",
+		48 : "YIELD_WINE",
+		49 : "YIELD_WHALE_OIL",
+		49 : "YIELD_FURNITURE"
+		}
+	
+	# changing the Price
+	iChoose = yields[event.getGenericParameter(2)]
+	iYield = gc.getInfoTypeForString(iChoose)
+	iPrice = king.getYieldBuyPrice(iYield)
+	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(4), 1)
+
+####### Here Start all the QUEST TRIGGERS Functions #######
+# These are the specific checks for the specific Event Triggers
+
+def canTriggerEuropeTradeQuest_SUGAR_START(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SUGAR_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+	
+def canTriggerEuropeTradeQuest_SUGAR_DONE(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
