@@ -1298,7 +1298,7 @@ int CyCity::getHappinessFromTreaties() const
 
 int CyCity::getUnhappinessFromPopulation() const
 {
-	return m_pCity ? m_pCity->getHappinessFromTreaties() : -1;
+	return m_pCity ? m_pCity->getUnhappinessFromPopulation() : -1;
 }
 
 int CyCity::getUnhappinessFromSlavery() const
