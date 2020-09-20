@@ -3862,6 +3862,11 @@ bool CvPlot::at(int iX, int iY) const
 	return ((getX_INLINE() == iX) && (getY_INLINE() == iY));
 }
 
+int CvPlot::getIndex() const
+{
+	return ((getY_INLINE() * GC.getMapINLINE().getGridWidthINLINE()) + getX_INLINE());
+}
+
 
 int CvPlot::getLatitude() const
 {
