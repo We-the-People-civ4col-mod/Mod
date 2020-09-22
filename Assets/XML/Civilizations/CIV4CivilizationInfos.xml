@@ -34059,7 +34059,12 @@
             <Ships/>
             <Buildings/>
             <Units/>
-            <Professions/>
+            <Professions>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+            </Professions>
             <Traits/>
             <FreeUnitClasses/>
             <FreeBuildingClasses/>
