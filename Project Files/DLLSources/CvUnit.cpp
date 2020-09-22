@@ -11219,7 +11219,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 
 						//WTP, ray, Settler Professsion - START
 						// we only do this if the city is larger 3
-						if (!kOwner.isHuman() && !kOwner.isNative() && kNewProfession.canFound() &&  pCity->getPopulation() > 3)
+						if (!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && kNewProfession.canFound() &&  pCity->getPopulation() > 3)
 						{
 							int iYieldsStoredInCity = pCity->getYieldStored(eYieldType);
 							if (iMissing > iYieldsStoredInCity)
