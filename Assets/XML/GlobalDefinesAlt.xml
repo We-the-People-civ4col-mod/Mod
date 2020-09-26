@@ -162,6 +162,10 @@
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>TAX_RATE_MAX_INCREASE</DefineName>
+		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>AI_HURRY_IMMIGRANTS</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
