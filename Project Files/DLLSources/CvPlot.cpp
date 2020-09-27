@@ -1050,7 +1050,7 @@ CvPlot* CvPlot::getNearestLandPlot() const
 }
 
 
-int CvPlot::seeFromLevel(TeamTypes eTeam) const
+int CvPlot::seeFromLevel() const
 {
 	int iLevel;
 
@@ -1275,7 +1275,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 				{
 					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false))
 					{
-						int fromLevel = seeFromLevel(eTeam);
+						int fromLevel = seeFromLevel();
 						int throughLevel = pPlot->seeThroughLevel();
 						if(outerRing) //check strictly higher level
 						{
@@ -1283,7 +1283,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 							int passThroughLevel = passThroughPlot->seeThroughLevel();
 							if (fromLevel >= passThroughLevel)
 							{
-								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel(eTeam) > fromLevel)) //either we can see through to it or it is high enough to see from far
+								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel() > fromLevel)) //either we can see through to it or it is high enough to see from far
 								{
 									return true;
 								}

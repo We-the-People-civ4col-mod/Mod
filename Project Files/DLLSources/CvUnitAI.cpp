@@ -11840,7 +11840,7 @@ bool CvUnitAI::AI_exploreRange(int iRange)
 							{
 								if (getPathLastNode()->m_iData1 == 0)
 								{
-									iValue += pLoopPlot->seeFromLevel(getTeam()) * 500;
+									iValue += pLoopPlot->seeFromLevel() * 500;
 								}
 								iValue *= 100;
 								iValue += GC.getGame().getSorenRandNum(100, "AI Explore Range");
