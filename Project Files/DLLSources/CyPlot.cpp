@@ -78,9 +78,9 @@ CyPlot* CyPlot::getNearestLandPlot()
 {
 	return m_pPlot ? new CyPlot(m_pPlot->getNearestLandPlot()) : NULL;
 }
-int CyPlot::seeFromLevel(int /*TeamTypes*/ eTeam)
+int CyPlot::seeFromLevel()
 {
-	return m_pPlot ? m_pPlot->seeFromLevel((TeamTypes)eTeam) : -1;
+	return m_pPlot ? m_pPlot->seeFromLevel() : -1;
 }
 int CyPlot::seeThroughLevel()
 {

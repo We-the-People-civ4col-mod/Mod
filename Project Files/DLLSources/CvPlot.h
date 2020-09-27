@@ -86,7 +86,7 @@ public:
 	int getNearestLandArea() const;
 	CvPlot* getNearestLandPlot() const;
 
-	int seeFromLevel(TeamTypes eTeam) const;
+	int seeFromLevel() const;
 	int seeThroughLevel() const;
 	void changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit);
 	bool canSeePlot(CvPlot *plot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const;
