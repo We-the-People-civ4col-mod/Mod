@@ -468,7 +468,7 @@ protected:
 	short m_iRiverCrossingCount;
 	short m_iDistanceToOcean;
 	short m_iCrumbs;
-
+	signed char m_seeFromLevelCache;
 	// Super Forts begin *canal* *choke*
 	int m_iCanalValue;
 	int m_iChokeValue;
@@ -568,6 +568,7 @@ public:
 	// Cache the computation of the max visibility range
 	static void setMaxVisibilityRangeCache();
 protected:
+	void setSeeFromLevelCache();
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
 	// CvPlot::hasYield cache - end - Nightinggale

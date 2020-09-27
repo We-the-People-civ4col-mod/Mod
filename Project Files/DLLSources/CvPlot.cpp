@@ -63,6 +63,7 @@ CvPlot::CvPlot()
 
 	m_szScriptData = NULL;
 
+	m_seeFromLevelCache = -1;
 	reset(0, 0, true);
 }
 
@@ -1152,8 +1153,13 @@ CvPlot* CvPlot::getNearestLandPlot() const
 	return getNearestLandPlotInternal(0);
 }
 
-
 int CvPlot::seeFromLevel() const
+{
+	FAssertMsg(m_seeFromLevelCache != -1, "Cache has not been initialized!");
+	return m_seeFromLevelCache;
+}
+
+void CvPlot::setSeeFromLevelCache()
 {
 	int iLevel;
 
@@ -1183,7 +1189,7 @@ int CvPlot::seeFromLevel() const
 		iLevel += GC.getSEAWATER_SEE_FROM_CHANGE();
 	}
 
-	return iLevel;
+	m_seeFromLevelCache = iLevel;
 }
 
 
@@ -4960,6 +4966,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+		setSeeFromLevelCache();
 	}
 }
 
@@ -5018,6 +5025,7 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+		setSeeFromLevelCache();
 	}
 }
 
@@ -5093,6 +5101,7 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+		setSeeFromLevelCache();
 	}
 }
 
@@ -8281,6 +8290,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_eRiverWEDirection);
 	pStream->Read(&m_eEurope);
 	updateImpassable();
+	setSeeFromLevelCache();
 
 	m_plotCity.read(pStream);
 	m_workingCity.read(pStream);
