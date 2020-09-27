@@ -8958,6 +8958,459 @@ ColorTypes CvPlot::plotMinimapColor()
 	return (ColorTypes)GC.getInfoTypeForString("COLOR_CLEAR");
 }
 
+//
+// read object from a stream
+// used during load
+//
+void CvPlot::read(FDataStreamBase* pStream)
+{
+	int iI;
+	bool bVal;
+	char cCount;
+	int iCount;
+
+	// Init saved data
+	reset();
+
+	uint uiFlag=0;
+	pStream->Read(&uiFlag);	// flags for expansion
+
+	pStream->Read(&m_iX);
+	pStream->Read(&m_iY);
+	pStream->Read(&m_iArea);
+	// m_pPlotArea not saved
+	pStream->Read(&m_iFeatureVariety);
+	pStream->Read(&m_iOwnershipDuration);
+	pStream->Read(&m_iImprovementDuration);
+	pStream->Read(&m_iUpgradeProgress);
+	pStream->Read(&m_iForceUnownedTimer);
+	pStream->Read(&m_iCityRadiusCount);
+	pStream->Read(&m_iRiverID);
+	pStream->Read(&m_iMinOriginalStartDist);
+	pStream->Read(&m_iRiverCrossingCount);
+	pStream->Read(&m_iDistanceToOcean);
+	pStream->Read(&m_iCrumbs);
+
+	// Super Forts begin *canal* *choke*
+	pStream->Read(&m_iCanalValue);
+	pStream->Read(&m_iChokeValue);
+	// Super Forts end
+	// Super Forts begin *bombard*
+	pStream->Read(&m_iDefenseDamage);
+	pStream->Read(&m_bBombarded);
+	// Super Forts end
+
+	pStream->Read(&bVal);
+	m_bStartingPlot = bVal;
+	pStream->Read(&bVal);
+	m_bHills = bVal;
+	pStream->Read(&bVal);
+	m_bNOfRiver = bVal;
+	pStream->Read(&bVal);
+	m_bWOfRiver = bVal;
+	pStream->Read(&bVal);
+	m_bPotentialCityWork = bVal;
+	// m_bShowCitySymbols not saved
+	// m_bFlagDirty not saved
+	// m_bPlotLayoutDirty not saved
+	// m_bLayoutStateWorked not saved
+	// m_bImpassable not saved
+
+	pStream->Read(&m_eOwner);
+	pStream->Read(&m_ePlotType);
+	pStream->Read(&m_eTerrainType);
+	pStream->Read(&m_eFeatureType);
+	pStream->Read(&m_eBonusType);
+	pStream->Read(&m_eImprovementType);
+	pStream->Read(&m_eRouteType);
+	pStream->Read(&m_eRiverNSDirection);
+	pStream->Read(&m_eRiverWEDirection);
+	pStream->Read(&m_eEurope);
+	updateImpassable();
+	setSeeFromLevelCache();
+
+	m_plotCity.read(pStream);
+	m_workingCity.read(pStream);
+	m_workingCityOverride.read(pStream);
+
+	pStream->Read(NUM_YIELD_TYPES, m_aiYield);
+
+	pStream->Read(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
+
+	SAFE_DELETE_ARRAY(m_aiCulture);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aiCulture = new int[cCount];
+		pStream->Read(cCount, m_aiCulture);
+	}
+
+	// Super Forts begin *culture*
+	SAFE_DELETE_ARRAY(m_aiCultureRangeForts);
+	pStream->Read(&cCount);
+	if(cCount > 0)
+	{
+		m_aiCultureRangeForts = new short[cCount];
+		pStream->Read(cCount, m_aiCultureRangeForts);
+	}
+	// Super Forts end
+
+	SAFE_DELETE_ARRAY(m_aiFoundValue);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aiFoundValue = new int[cCount];
+		pStream->Read(cCount, m_aiFoundValue);
+	}
+
+	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aiPlayerCityRadiusCount = new char[cCount];
+		pStream->Read(cCount, m_aiPlayerCityRadiusCount);
+	}
+
+	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aiVisibilityCount = new short[cCount];
+		pStream->Read(cCount, m_aiVisibilityCount);
+	}
+
+	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aiRevealedOwner = new char[cCount];
+		pStream->Read(cCount, m_aiRevealedOwner);
+	}
+
+	SAFE_DELETE_ARRAY(m_abRiverCrossing);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_abRiverCrossing = new bool[cCount];
+		pStream->Read(cCount, m_abRiverCrossing);
+	}
+
+	SAFE_DELETE_ARRAY(m_abRevealed);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_abRevealed = new bool[cCount];
+		pStream->Read(cCount, m_abRevealed);
+	}
+
+	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aeRevealedImprovementType = new short[cCount];
+		pStream->Read(cCount, m_aeRevealedImprovementType);
+	}
+
+	SAFE_DELETE_ARRAY(m_aeRevealedRouteType);
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_aeRevealedRouteType = new short[cCount];
+		pStream->Read(cCount, m_aeRevealedRouteType);
+	}
+
+	m_szScriptData = pStream->ReadString();
+
+	SAFE_DELETE_ARRAY(m_paiBuildProgress);
+	pStream->Read(&iCount);
+	if (iCount > 0)
+	{
+		m_paiBuildProgress = new short[iCount];
+		pStream->Read(iCount, m_paiBuildProgress);
+	}
+
+	if (NULL != m_apaiCultureRangeCities)
+	{
+		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
+		{
+			SAFE_DELETE_ARRAY(m_apaiCultureRangeCities[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_apaiCultureRangeCities);
+	}
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_apaiCultureRangeCities = new char*[cCount];
+		for (iI = 0; iI < cCount; ++iI)
+		{
+			pStream->Read(&iCount);
+			if (iCount > 0)
+			{
+				m_apaiCultureRangeCities[iI] = new char[iCount];
+				pStream->Read(iCount, m_apaiCultureRangeCities[iI]);
+			}
+			else
+			{
+				m_apaiCultureRangeCities[iI] = NULL;
+			}
+		}
+	}
+
+	if (NULL != m_apaiInvisibleVisibilityCount)
+	{
+		for (int iI = 0; iI < MAX_TEAMS; ++iI)
+		{
+			SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount[iI]);
+		}
+		SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount);
+	}
+	pStream->Read(&cCount);
+	if (cCount > 0)
+	{
+		m_apaiInvisibleVisibilityCount = new short*[cCount];
+		for (iI = 0; iI < cCount; ++iI)
+		{
+			pStream->Read(&iCount);
+			if (iCount > 0)
+			{
+				m_apaiInvisibleVisibilityCount[iI] = new short[iCount];
+				pStream->Read(iCount, m_apaiInvisibleVisibilityCount[iI]);
+			}
+			else
+			{
+				m_apaiInvisibleVisibilityCount[iI] = NULL;
+			}
+		}
+	}
+
+	m_units.Read(pStream);
+}
+
+//
+// write object to a stream
+// used during save
+//
+void CvPlot::write(FDataStreamBase* pStream)
+{
+	uint iI;
+
+	uint uiFlag=0;
+	pStream->Write(uiFlag);		// flag for expansion
+
+	pStream->Write(m_iX);
+	pStream->Write(m_iY);
+	pStream->Write(m_iArea);
+	// m_pPlotArea not saved
+	pStream->Write(m_iFeatureVariety);
+	pStream->Write(m_iOwnershipDuration);
+	pStream->Write(m_iImprovementDuration);
+	pStream->Write(m_iUpgradeProgress);
+	pStream->Write(m_iForceUnownedTimer);
+	pStream->Write(m_iCityRadiusCount);
+	pStream->Write(m_iRiverID);
+	pStream->Write(m_iMinOriginalStartDist);
+	pStream->Write(m_iRiverCrossingCount);
+	pStream->Write(m_iDistanceToOcean);
+	pStream->Write(m_iCrumbs);
+
+	// Super Forts begin *canal* *choke*
+	pStream->Write(m_iCanalValue);
+	pStream->Write(m_iChokeValue);
+	// Super Forts end
+	// Super Forts begin *bombard*
+	pStream->Write(m_iDefenseDamage);
+	pStream->Write(m_bBombarded);
+	// Super Forts end
+
+	pStream->Write(m_bStartingPlot);
+	pStream->Write(m_bHills);
+	pStream->Write(m_bNOfRiver);
+	pStream->Write(m_bWOfRiver);
+	pStream->Write(m_bPotentialCityWork);
+	// m_bShowCitySymbols not saved
+	// m_bFlagDirty not saved
+	// m_bPlotLayoutDirty not saved
+	// m_bLayoutStateWorked not saved
+	// m_bImpassable not saved
+
+	pStream->Write(m_eOwner);
+	pStream->Write(m_ePlotType);
+	pStream->Write(m_eTerrainType);
+	pStream->Write(m_eFeatureType);
+	pStream->Write(m_eBonusType);
+	pStream->Write(m_eImprovementType);
+	pStream->Write(m_eRouteType);
+	pStream->Write(m_eRiverNSDirection);
+	pStream->Write(m_eRiverWEDirection);
+	pStream->Write(m_eEurope);
+
+	m_plotCity.write(pStream);
+	m_workingCity.write(pStream);
+	m_workingCityOverride.write(pStream);
+
+	pStream->Write(NUM_YIELD_TYPES, m_aiYield);
+
+	pStream->Write(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
+
+	if (NULL == m_aiCulture)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_PLAYERS);
+		pStream->Write(MAX_PLAYERS, m_aiCulture);
+	}
+
+	// Super Forts begin *culture*
+	if (NULL == m_aiCultureRangeForts)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_PLAYERS);
+		pStream->Write(MAX_PLAYERS, m_aiCultureRangeForts);
+	}
+	// Super Forts end
+
+	if (NULL == m_aiFoundValue)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_PLAYERS);
+		pStream->Write(MAX_PLAYERS, m_aiFoundValue);
+	}
+
+	if (NULL == m_aiPlayerCityRadiusCount)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_PLAYERS);
+		pStream->Write(MAX_PLAYERS, m_aiPlayerCityRadiusCount);
+	}
+
+	if (NULL == m_aiVisibilityCount)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_TEAMS);
+		pStream->Write(MAX_TEAMS, m_aiVisibilityCount);
+	}
+
+	if (NULL == m_aiRevealedOwner)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_TEAMS);
+		pStream->Write(MAX_TEAMS, m_aiRevealedOwner);
+	}
+
+	if (NULL == m_abRiverCrossing)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)NUM_DIRECTION_TYPES);
+		pStream->Write(NUM_DIRECTION_TYPES, m_abRiverCrossing);
+	}
+
+	if (NULL == m_abRevealed)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_TEAMS);
+		pStream->Write(MAX_TEAMS, m_abRevealed);
+	}
+
+	if (NULL == m_aeRevealedImprovementType)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_TEAMS);
+		pStream->Write(MAX_TEAMS, m_aeRevealedImprovementType);
+	}
+
+	if (NULL == m_aeRevealedRouteType)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_TEAMS);
+		pStream->Write(MAX_TEAMS, m_aeRevealedRouteType);
+	}
+
+	pStream->WriteString(m_szScriptData);
+
+	if (NULL == m_paiBuildProgress)
+	{
+		pStream->Write((int)0);
+	}
+	else
+	{
+		pStream->Write((int)GC.getNumBuildInfos());
+		pStream->Write(GC.getNumBuildInfos(), m_paiBuildProgress);
+	}
+
+	if (NULL == m_apaiCultureRangeCities)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_PLAYERS);
+		for (iI=0; iI < MAX_PLAYERS; ++iI)
+		{
+			if (NULL == m_apaiCultureRangeCities[iI])
+			{
+				pStream->Write((int)0);
+			}
+			else
+			{
+				pStream->Write((int)GC.getNumCultureLevelInfos());
+				pStream->Write(GC.getNumCultureLevelInfos(), m_apaiCultureRangeCities[iI]);
+			}
+		}
+	}
+
+	if (NULL == m_apaiInvisibleVisibilityCount)
+	{
+		pStream->Write((char)0);
+	}
+	else
+	{
+		pStream->Write((char)MAX_TEAMS);
+		for (iI=0; iI < MAX_TEAMS; ++iI)
+		{
+			if (NULL == m_apaiInvisibleVisibilityCount[iI])
+			{
+				pStream->Write((int)0);
+			}
+			else
+			{
+				pStream->Write((int)GC.getNumInvisibleInfos());
+				pStream->Write(GC.getNumInvisibleInfos(), m_apaiInvisibleVisibilityCount[iI]);
+			}
+		}
+	}
+
+	m_units.Write(pStream);
+}
+
 void CvPlot::setLayoutDirty(bool bDirty)
 {
 	if (!GC.IsGraphicsInitialized())
