@@ -1262,7 +1262,7 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 			for (int dy = -iRange; dy <= iRange; dy++)
 			{
 				//check if in facing direction
-				if (shouldProcessDisplacementPlot(dx, dy, iRange - 1, eFacingDirection))
+				if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
 				{
 					bool outerRing = false;
 					if ((abs(dx) == iRange) || (abs(dy) == iRange))
@@ -1314,7 +1314,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 	dy = dyWrap(dy);
 
 	//check if in facing direction
-	if (shouldProcessDisplacementPlot(dx, dy, iRange - 1, eFacingDirection))
+	if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
 	{
 		bool outerRing = false;
 		if ((abs(dx) == iRange) || (abs(dy) == iRange))
@@ -1409,7 +1409,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 	return false;
 }
 
-bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, int range, DirectionTypes eFacingDirection) const
+bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacingDirection) const
 {
 	if(eFacingDirection == NO_DIRECTION)
 	{
