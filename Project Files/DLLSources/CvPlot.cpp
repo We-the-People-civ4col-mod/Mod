@@ -46,6 +46,9 @@ CvPlot::CvPlot()
 	m_szScriptData = NULL;
 
 	m_seeFromLevelCache = -1;
+	m_seeThroughLevelCache = -1;
+
+
 	reset(0, 0, true);
 }
 
@@ -1089,8 +1092,13 @@ void CvPlot::setSeeFromLevelCache()
 	m_seeFromLevelCache = iLevel;
 }
 
-
 int CvPlot::seeThroughLevel() const
+{
+	FAssertMsg(m_seeThroughLevelCache != -1, "Cache has not been initialized!");
+	return m_seeThroughLevelCache;
+}
+
+void CvPlot::setSeeThroughLevelCache()
 {
 	int iLevel;
 
@@ -1118,7 +1126,7 @@ int CvPlot::seeThroughLevel() const
 		iLevel += GC.getSEAWATER_SEE_FROM_CHANGE();
 	}
 
-	return iLevel;
+	m_seeThroughLevelCache = iLevel;
 }
 
 
@@ -4849,6 +4857,7 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
 		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 	}
 }
 
@@ -4908,6 +4917,7 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
 		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 	}
 }
 
@@ -4984,6 +4994,7 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
 		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 	}
 }
 
