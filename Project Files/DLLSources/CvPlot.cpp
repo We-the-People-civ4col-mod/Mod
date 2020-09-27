@@ -1177,7 +1177,10 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 						}
 					}
 				}
-
+				// This code section is seemingly only useful if direction of sight is being used which is not the 
+				// case for any COLO mod. Its original purpose was to support the BTS mod Afterworld which was the only
+				// mod to my knowledge that made use of this feature
+				/*
 				if (eFacingDirection != NO_DIRECTION)
 				{
 					if((abs(dx) <= 1) && (abs(dy) <= 1)) //always reveal adjacent plots when using line of sight
@@ -1299,6 +1302,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 						}
 					}
 				}
+				*/
 			}
 		}
 	}
