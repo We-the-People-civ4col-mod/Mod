@@ -9022,7 +9022,7 @@ void CvPlot::read(FDataStreamBase* pStream)
 	pStream->Read(&m_eEurope);
 	updateImpassable();
 	setSeeFromLevelCache();
-
+	setSeeThroughLevelCache();
 	m_plotCity.read(pStream);
 	m_workingCity.read(pStream);
 	m_workingCityOverride.read(pStream);
