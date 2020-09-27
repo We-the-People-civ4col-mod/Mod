@@ -1392,13 +1392,14 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 	
-	int iDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 3);
+	const bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 2) > 0;
 	
-	if (AI_changeUnitAIType(99))
+	// Retreat when in danger and outside friendly territory
+	if (bDanger && plot()->getOwner() != getOwner())
 	{
-		return;
+		if (AI_retreatToCity(false, MAX_INT, true))
+			return;
 	}
-	
 	
 	if ((m_pUnitInfo->getLearnTime() >= 0) && (getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
 	{
@@ -1421,6 +1422,23 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 
+	// Consider jobs that we would be a decent fit for
+	if (AI_changeUnitAIType(99))
+	{
+		return;
+	}
+
+	CvCity* pCity = plot()->getPlotCity();
+	if (pCity != NULL)
+	{ 
+		// We might want to swap places with a citizen
+		if (AI_betterJob())
+		{
+			return;
+		}
+	}
+
+	// Consider any job to avoid being unemployed :(
 	if (AI_changeUnitAIType(49))
 	{
 		return;
