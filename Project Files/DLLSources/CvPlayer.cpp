@@ -18648,8 +18648,25 @@ void CvPlayer::gainAchievement(AchieveTypes eAchieve, bool bAnnounce, CvPlot* pP
 	}
 }
 
+bool CvPlayer::canGainAchievement() const
+{
+	const CvPlayerAI& kPlayer = GET_PLAYER(getID());
+
+	// Only European players may gain achievements
+	if (kPlayer.getParent() != NO_PLAYER)
+		return true;
+	// Natives, animals/pirates, kings and the church may not
+	else
+		return false;
+}
+
 void CvPlayer::doAchievements(bool afterMove)
 {
+	if (!canGainAchievement())
+	{
+		return;
+	}
+
 	if (GC.getGameINLINE().getGameTurn() < 1 && !afterMove)
 	{
 		return;
