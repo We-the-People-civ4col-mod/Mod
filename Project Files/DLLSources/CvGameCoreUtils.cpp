@@ -1033,12 +1033,18 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 							iCost += PATH_TERRITORY_WEIGHT;
 						}
 					}
+
 					// R&R, Robert Surcouf, Damage on Storm plots, Start
 					if (pToPlot->getFeatureType() != NO_FEATURE)
 					{
-						iCost += (PATH_DAMAGE_WEIGHT * std::max(0, GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage())) / GC.getMAX_HIT_POINTS();
+						const int iTurnDamage = GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage();
+
+						if (iTurnDamage > 0)
+						{
+							iCost += (PATH_DAMAGE_WEIGHT * std::max(0, iTurnDamage)) / GC.getMAX_HIT_POINTS();
+						}
 					}
-					
+
 					// R&R, Robert Surcouf, Damage on Storm plots, End
 					// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 					// Add additional cost for ending turn in or adjacent to enemy territory based on flags
