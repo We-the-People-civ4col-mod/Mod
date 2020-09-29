@@ -1182,13 +1182,10 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 					}
 
 					//check if anything blocking the plot
-					if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing))
+					CvPlot* const pPlot = canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing);
+					if (pPlot != NULL)
 					{
-						CvPlot* pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
-						if (NULL != pPlot)
-						{
-							pPlot->changeVisibilityCount(eTeam, ((bIncrement) ? 1 : -1), aSeeInvisibleTypes[i]);
-						}
+						pPlot->changeVisibilityCount(eTeam, ((bIncrement) ? 1 : -1), aSeeInvisibleTypes[i]);
 					}
 				}
 				// This code section is seemingly only useful if direction of sight is being used which is not the 
@@ -1237,7 +1234,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 		}
 
 		//check if anything blocking the plot
-		if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing))
+		if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing) != NULL)
 		{
 			return true;
 		}
@@ -1246,7 +1243,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 	return false;
 }
 
-bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
+CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
 {
 	CvPlot *pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
 	if (pPlot != NULL)
@@ -1254,11 +1251,11 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 		//base case is current plot
 		if((dx == 0) && (dy == 0))
 		{
-			return true;
+			return pPlot;
 		}
 
 		//find closest of three points (1, 2, 3) to original line from Start (S) to End (E)
-		//The diagonal is computed first as that guarantees a change in position
+		//The diagonal is computed first as that guarantees a change in position2p
 		// -------------
 		// |   | 2 | S |
 		// -------------
@@ -1287,7 +1284,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 			{
 				if(allClosest[i] == closest)
 				{
-					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false))
+					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false) != NULL)
 					{
 						int fromLevel = seeFromLevel();
 						int throughLevel = pPlot->seeThroughLevel();
@@ -1299,7 +1296,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 							{
 								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel() > fromLevel)) //either we can see through to it or it is high enough to see from far
 								{
-									return true;
+									return pPlot;
 								}
 							}
 						}
@@ -1307,11 +1304,11 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 						{
 							if(fromLevel >= throughLevel) //we can clearly see this level
 							{
-								return true;
+								return pPlot;
 							}
 							else if(firstPlot) //we can also see it if it is the first plot that is too tall
 							{
-								return true;
+								return pPlot;
 							}
 						}
 					}
@@ -1321,7 +1318,7 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 		}
 	}
 
-	return false;
+	return NULL;
 }
 
 bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacingDirection) const
