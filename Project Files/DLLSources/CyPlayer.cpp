@@ -523,9 +523,17 @@ bool CyPlayer::isFoundedFirstCity()
 {
 	return m_pPlayer ? m_pPlayer->isFoundedFirstCity() : false;
 }
-int CyPlayer::getID()
+PlayerTypes CyPlayer::getID() const
 {
-	return m_pPlayer ? m_pPlayer->getID() : -1;
+	return m_pPlayer ? m_pPlayer->getID() : NO_PLAYER;
+}
+WidgetTypes CyPlayer::getWikiWidget() const
+{
+	return WIDGET_MISSION_CHAR;
+}
+int CyPlayer::getChar() const
+{
+	return m_pPlayer ? GC.getCivilizationInfo(GET_PLAYER(m_pPlayer->getID()).getCivilizationType()).getMissionaryChar() : -1;
 }
 int /* HandicapTypes */ CyPlayer::getHandicapType()
 {

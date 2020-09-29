@@ -958,8 +958,10 @@ Multiple repeating units is possible and an equal number will be trained of each
         <English>Native info</English>
         <French>Informations sur les indigènes</French>
         <German>Informationen zu den Ureinwohnern</German>
-        <Italian>Native info</Italian>
-        <Spanish>Native info</Spanish>
+    </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
+        <English>Jump to settlement</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GROWTH</Tag>

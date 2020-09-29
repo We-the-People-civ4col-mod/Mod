@@ -5,6 +5,8 @@ import CvUtil
 import ScreenInput
 import CvScreenEnums
 
+import NativeAdvisor
+
 
 ## I rewrote most of the page to remove all hardcoded values
 ## In this process, a lot of the old code was moved and changed to look a lot differently
@@ -106,6 +108,7 @@ class CvDomesticAdvisor:
 
 		self.StateButtons = []
 		self.StatePages = []
+		self.StateWindow = []
 		
 		# Button generation
 		
@@ -119,7 +122,7 @@ class CvDomesticAdvisor:
 		self.CITIZEN_STATE            = self.addButton("CitizenState",           "INTERFACE_CITY_CITIZEN_BUTTON")
 		self.TOTAL_PRODUCTION_STATE   = self.addButton("TotalProductionState",   "INTERFACE_TOTAL_PRODUCTION_BUTTON")  # total production page - Nightinggale
 		self.TRADEROUTE_STATE         = self.addButton("TradeRouteState",        "INTERFACE_IMPORT_EXPORT_BUTTON")
-		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON")
+		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON"           , NativeAdvisor.NativeAdvisor(self))
 		
 		if (gc.isDebugBuild()):
 			self.GAME_FONT_STATE      = self.addButton("GameFontState",          "INTERFACE_CITY_MAP_BUTTON")
@@ -142,6 +145,11 @@ class CvDomesticAdvisor:
 		self.PRODUCTION_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_YIELDS_IN_A_PAGE
 		self.BUILDING_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_BUILDINGS_IN_A_PAGE
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
+
+		#Default State on Screen opening
+		self.CurrentState = gc.getDomesticAdvisorState()
+		self.CurrentPage = 0
+		
 		self.RebuildArrays()
 
 		#Initialize the Lists
@@ -265,9 +273,6 @@ class CvDomesticAdvisor:
 		# Citizen Headers
 		screen.setTableColumnHeader( self.StatePages[self.CITIZEN_STATE][0] + "ListBackground", 2, "<font=2>" +  localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN", ()).upper() + "</font>", self.nTableWidth * 3 / 4 )
 			
-		#Default State on Screen opening
-		self.CurrentState = gc.getDomesticAdvisorState()
-		self.CurrentPage = 0
 		
 		# Draw the city list...
 		self.drawContents()
@@ -303,6 +308,9 @@ class CvDomesticAdvisor:
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 		player = gc.getPlayer(CyGame().getActivePlayer())
 		screen.moveToFront( "Background" )
+		
+		if self.StateWindow[self.CurrentState] != None:
+			self.StateWindow[self.CurrentState].draw()
 
 		# total production page - start - Nightinggale
 		if self.CurrentState == self.TOTAL_PRODUCTION_STATE:
@@ -330,15 +338,14 @@ class CvDomesticAdvisor:
 				self.updateRouteTable(self.Routes[iRoute], player.getTradeRouteByIndex(iRoute).getID(), iRoute)
 				BonusRow += 1
 			self.BuildAllTransportsRow(BonusRow)
-			## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		elif self.CurrentState == self.NATIVE_STATE:
-			self.updateNativeTable()
-			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 		elif self.CurrentState == self.GAME_FONT_STATE:
 			self.drawGameFont()
 		
 		self.drawButtons()
-		screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
+		if self.StateWindow[self.CurrentState] != None:
+			screen.show(self.StateWindow[self.CurrentState].screenName)
+		else:
+			screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")			
 		self.updateAppropriateCitySelection()
 
 	def updateCityTable(self, pLoopCity, i):
@@ -746,6 +753,13 @@ class CvDomesticAdvisor:
 							SelectionState = True
 							
 	def RebuildArrays (self):
+		self.NativeCities = []
+		
+		if 'stateWindow' in dir(self):
+			for i in len(self.StateWindow):
+				if self.StateWindow[i] != None:
+					self.StateWindow[i].setDirty()
+		
 		#Get a list of the Players Cities
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.Cities = []
@@ -776,8 +790,10 @@ class CvDomesticAdvisor:
 			self.RouteValidity.append(RouteValidArray)
 		
 		
-		## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
-		self.NativeCities = []
+	def GetNativeCities(self):
+		# R&R, Robert Surcouf,  Domestic Advisor Screen - Start
+		if len(self.NativeCities) > 0:
+			return self.NativeCities
 		for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
 			ePlayer = gc.getPlayer(iLoopPlayer)
 			#if (player.isAlive() and player.isNative() and (gc.getTeam(player.getTeam()).isHasMet(activePlayer.getTeam()))):
@@ -787,6 +803,8 @@ class CvDomesticAdvisor:
 					self.NativeCities.append(pLoopCity)
 					(pLoopCity, iter) = ePlayer.nextCity(iter, false)
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
+		return self.NativeCities
+		
 	def RebuildTransportTable (self):
 		if self.CurrentState != self.TRADEROUTE_STATE:
 			return
@@ -833,86 +851,17 @@ class CvDomesticAdvisor:
 
 		screen.appendTableRow( szTableName )
 		screen.setTableRowHeight(szTableName, len(self.Routes), self.ROW_HIGHT)
-		
-	## R&R, Robert Surcouf,  Domestic Advisor Screen START
-	def updateNativeTable(self):
-		if self.CurrentState != self.NATIVE_STATE:
-			return
-	
-		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
-		playerID = gc.getGame().getActivePlayer()
-		player = gc.getPlayer(playerID)
-		
-		szState = self.StatePages[self.NATIVE_STATE][0]
-		screen.addTableControlGFC( szState + "ListBackground", 7, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
-		screen.enableSelect( szState + "ListBackground", True )
-		screen.enableSort( szState + "ListBackground" )
-		screen.setStyle( szState + "ListBackground", "Table_StandardCiv_Style" )
-		screen.hide( szState + "ListBackground" )
-		szStateName = szState + "ListBackground"
-		screen.setTableColumnHeader( szStateName, 0, "<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_NAME", ()).upper() + "</font>", self.CITY_NAME_COLUMN_WIDTH - 56 )
-		screen.setTableColumnHeader( szStateName, 1, "<font=2>" + "CIV" + "</font>", self.CITY_NAME_COLUMN_WIDTH -56)
-		screen.setTableColumnHeader( szStateName, 2, "<font=2>" + localText.getText("TXT_KEY_POPULATION", ()) + "</font>", (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / 12 )
-		screen.setTableColumnHeader( szStateName, 3, "<font=2>" + (u" %c" % CyGame().getSymbolID(FontSymbols.TRADE_CHAR)) + "</font>", 50 )
-		screen.setTableColumnHeader( szStateName, 4, "<font=2>" + (u" %c" % gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()) + "</font>", 130)
-		# Native advisor update - start - Nightinggale
-		screen.setTableColumnHeader( szStateName, 5, "<font=2>" + localText.getText("TXT_KEY_PEDIA_SPECIAL_ABILITIES", ()).upper() + "</font>", 200)
-		# Native advisor update - end - Nightinggale
-		
-		iter=0
-		for iNativeCity in range(len(self.NativeCities)):
-			pLoopCity =self.NativeCities[iNativeCity]
-			
-			ePlayer = gc.getPlayer(pLoopCity.getOwner())
-			
-			# figure out if the city should be displayed
-			bIsVisited = pLoopCity.isScoutVisited(gc.getGame().getActiveTeam())
-			
-			# visited cities are always known. No need to test visited cities
-			bIsKnown = bIsVisited
-			
-			if not bIsKnown:
-				if (ePlayer.isAlive() and (gc.getTeam(ePlayer.getTeam()).isHasMet(player.getTeam()))):
-					bIsKnown = pLoopCity.isRevealed(player.getTeam(), False)
-			
-			# add a line for every single known native city
-			if bIsKnown:
-				screen.appendTableRow( szStateName )
-				screen.setTableRowHeight(szStateName, iter, self.ROW_HIGHT)
-				
-				screen.setTableText(szState + "ListBackground", 0, iter, "<font=2>" + self.NativeCities[iNativeCity].getName() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				screen.setTableText(szState + "ListBackground", 1, iter, "<font=2>" + gc.getPlayer(self.NativeCities[iNativeCity].getOwner()).getCivilizationShortDescription(0) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				screen.setTableInt(szState + "ListBackground", 2, iter, "<font=2>" + unicode(self.NativeCities[iNativeCity].getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				
-				# desired yield
-				DesiredYieldChar = ""
-				# Note: skipping writing text will break sorting. Drawing an empty string will ensure column sorting works as expected.
-				if bIsVisited:
-					# the yield is known. Replace the empty string with the yield in question.
-					iYield = pLoopCity.AI_getDesiredYield()
-					DesiredYieldChar = u" %c" % gc.getYieldInfo(iYield).getChar()
-				screen.setTableText(szState + "ListBackground", 3, iter, "<font=2>" + DesiredYieldChar + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				
-				# mission icon
-				if pLoopCity.getMissionaryRate() > 0 and pLoopCity.getMissionaryPlayer() != PlayerTypes.NO_PLAYER:
-					if gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN) and pLoopCity.getMissionaryPlayer() == playerID:
-						iModifier = 100 + player.getMissionaryRateModifier()+ ePlayer.getMissionaryRateModifier()
-						screen.setTableText(szState + "ListBackground", 4, iter, "<font=2>"  + localText.getText("TXT_KEY_GROWTH", (ePlayer.getMissionaryPoints(gc.getGame().getActivePlayer()),ePlayer.missionaryThreshold(gc.getGame().getActivePlayer()), pLoopCity.getMissionaryRate() * iModifier /100)) + "</font>", "", self.WIDGET_MISSION, pLoopCity.getMissionaryPlayer(), -1, CvUtil.FONT_LEFT_JUSTIFY )	
-					else:
-						screen.setTableInt(szState + "ListBackground", 4, iter, "<font=2>" + "<font=2>" + (u" %c" % (gc.getCivilizationInfo(gc.getPlayer(pLoopCity.getMissionaryPlayer()).getCivilizationType()).getMissionaryChar())) + "</font>", "", self.WIDGET_MISSION, pLoopCity.getMissionaryPlayer(), -1, CvUtil.FONT_LEFT_JUSTIFY )
-
-				# Native advisor update - start - Nightinggale
-				if bIsVisited:
-					screen.setTableText(szState + "ListBackground", 5, iter, "<font=2>" + gc.getUnitInfo(self.NativeCities[iNativeCity].getTeachUnit()).getDescription() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				# Native advisor update - end - Nightinggale
-				
-				iter+= 1
-		## R&R, Robert Surcouf,  Domestic Advisor Screen END
 	
 	
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
 		' Calls function mapped in DomesticAdvisorInputMap'
+		
+		if self.StateWindow[self.CurrentState] != None:
+			returnVal = self.StateWindow[self.CurrentState].handleInput(inputClass)
+			if returnVal != -1:
+				return returnVal
+		
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 		if ( inputClass.getNotifyCode() == NotifyCode.NOTIFY_LISTBOX_ITEM_SELECTED ):
 			## R&R, Robert Surcouf,  Domestic Advisor Screen START
@@ -938,6 +887,8 @@ class CvDomesticAdvisor:
 				iData = inputClass.getData1()
 				if (iData >= 0 and iData < len(self.StatePages)):
 					if(self.CurrentState != iData):
+						if self.StateWindow[self.CurrentState] != None:
+							self.StateWindow[self.CurrentState].hide()
 						screen.hide(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
 						if self.CurrentState not in self.YieldPages or iData not in self.YieldPages:
 							self.CurrentPage = 0
@@ -988,9 +939,6 @@ class CvDomesticAdvisor:
 			self.RebuildRouteTable()
 			self.RebuildTransportTable()
 
-			## R&R, Robert Surcouf,  Domestic Advisor Screen START
-			self.updateNativeTable()
-			## R&R, Robert Surcouf,  Domestic Advisor Screen END
 			self.drawContents()
 			
 	def getWidgetHelp(self, argsList):
@@ -1026,8 +974,10 @@ class CvDomesticAdvisor:
 					return CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
 			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
 				return "DEBUG: GameFont"
-		if eWidgetType == self.WIDGET_MISSION:
+		if eWidgetType == WidgetTypes.WIDGET_MISSION_CHAR:
 			return gc.getPlayer(iData1).getCivilizationAdjective(0)
+		if eWidgetType == WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT:
+			return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT", ())
 			
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 	def getGeneralStateColumnSize(self, iNum):
@@ -1043,10 +993,11 @@ class CvDomesticAdvisor:
 		return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)), YieldTypes.YIELD_LUXURY_GOODS + 1)
 	
 	# auto-generated list creation - start - Nightinggale
-	def addButton(self, state_type, state_button):
+	def addButton(self, state_type, state_button, state_class = None):
 		index = len(self.StatePages)
 		self.StateButtons.append(state_button)
 		self.StatePages.append([state_type])
+		self.StateWindow.append(state_class)
 		return index
 		
 	def createSubpage(self, iState, iPage):
@@ -1192,4 +1143,13 @@ class CvDomesticAdvisor:
 
 		
 		return None
-				
+	
+	def createTable(self, szName):
+		self.getScreen().addTableControlGFC( szName, 7, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
+		self.getScreen().setStyle( szName, "Table_StandardCiv_Style" )
+
+	def getPlayer(self):
+		return gc.getPlayer(gc.getGame().getActivePlayer())
+	
+	def getScreen(self):
+		return CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )

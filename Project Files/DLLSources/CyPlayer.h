@@ -158,7 +158,9 @@ public:
 	bool isExtendedGame();
 	bool isFoundedFirstCity();
 	bool isStrike();
-	int getID();
+	PlayerTypes getID() const;
+	WidgetTypes getWikiWidget() const;
+	int getChar() const;
 	int /* HandicapTypes */ getHandicapType();
 	int /* CivilizationTypes */ getCivilizationType();
 	int /*LeaderHeadTypes*/ getLeaderType();

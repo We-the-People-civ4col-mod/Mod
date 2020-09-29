@@ -10,6 +10,8 @@ void CyInfoPythonInterface3()
 	python::class_<CvYieldInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvYieldInfo")
 		.def("getChar", &CvYieldInfo::getChar, "int ()")
 		.def("getIcon", &CvYieldInfo::getIcon, "string ()")
+		.def("getWikiWidget", &CvYieldInfo::getWikiWidget, "")
+		.def("getID", &CvYieldInfo::getID, "")
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 		.def("getCombiIcon", &CvYieldInfo::getCombiIcon, "string ()")
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc END

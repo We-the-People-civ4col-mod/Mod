@@ -9191,6 +9191,26 @@ const char* CvYieldInfo::getIcon() const
 {
 	return m_szIcon;
 }
+
+WidgetTypes CvYieldInfo::getWikiWidget() const
+{
+	return WIDGET_PEDIA_JUMP_TO_YIELDS;
+}
+
+YieldTypes CvYieldInfo::getID() const
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		if (this == &GC.getYieldInfo(eYield))
+		{
+			return eYield;
+		}
+	}
+	FAssertMsg(false, "Yield info failed to find itself")
+	return NO_YIELD;
+}
+
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 const char* CvYieldInfo::getCombiIcon() const
 {

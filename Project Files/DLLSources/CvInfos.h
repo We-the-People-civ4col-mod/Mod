@@ -2547,6 +2547,8 @@ public:
 	DllExport int getChar() const;
 	DllExport void setChar(int i);
 	DllExport const char* getIcon() const;
+	WidgetTypes getWikiWidget() const;
+	YieldTypes getID() const;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 	DllExport const char* getCombiIcon() const;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc END
