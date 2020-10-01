@@ -42,14 +42,30 @@ class DomesticAdvisorTable:
 		
 	def tableInit(self):
 		self.columnWidth = []
-		self.getScreen().addTableControlGFC( self.name, 7, (self.parent.nScreenWidth - self.iWidth) / 2, 60, self.iWidth, self.parent.nTableHeight, True, False, self.parent.iCityButtonSize, self.parent.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
+		self.columnName = []
+		
+	def tableHeaderComplete(self, bAllowSelect = True, bAllowSort = True):
+		self.getScreen().addTableControlGFC( self.name, len(self.columnWidth), (self.parent.nScreenWidth - self.iWidth) / 2, 60, self.iWidth, self.parent.nTableHeight, True, False, self.parent.iCityButtonSize, self.parent.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
 		self.getScreen().setStyle( self.name, "Table_StandardCiv_Style" )
+		
+		for i in range(len(self.columnWidth)):
+			self.getScreen().setTableColumnHeader( self.name, i, "<font=2>" + self.columnName[i] + "</font>", self.columnWidth[i] )
+			
+		if bAllowSelect:
+			self.enableSelect()
+		if bAllowSort:
+			self.enableSort()
 		
 	# note 0 means default height
 	def setNumRows(self, iRows, iHeight = 0):
 		if (iRows != self.getScreen().getTableNumRows(self.name)):
 			self.getScreen().setTableNumRows ( self.name, iRows)
 			self.setRowHeight(iHeight)
+		elif iRows == 1:
+			# The table inits to 1 line, not 0
+			# Assume the height not to be set if there is just one line
+			self.setRowHeight(iHeight)
+		
 		
 	def setRowHeight(self, iHeight = 0):
 		if iHeight != 0:
@@ -58,8 +74,8 @@ class DomesticAdvisorTable:
 			self.getScreen().setTableRowHeight(self.name, i, self.iRowHeight)
 		
 	def addHeaderDirect(self, iWidth, szName):
-		self.getScreen().setTableColumnHeader( self.name, len(self.columnWidth), "<font=2>" + szName + "</font>", iWidth )
 		self.columnWidth.append(iWidth)
+		self.columnName.append(szName)
 		self.iWidthLeft -= iWidth
 		
 	def addHeaderTxt(self, szName, iWidth):

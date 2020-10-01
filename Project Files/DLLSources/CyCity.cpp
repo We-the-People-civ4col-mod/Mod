@@ -846,7 +846,7 @@ bool CyCity::isEverOwned(int /*PlayerTypes*/ eIndex)
 	return m_pCity ? m_pCity->isEverOwned((PlayerTypes)eIndex) : false;
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option START
-int /*PlayerTypes*/ CyCity::getMissionaryPlayer() const
+PlayerTypes CyCity::getMissionaryPlayer() const
 {
 	return m_pCity ? m_pCity->getMissionaryPlayer() :NO_PLAYER;
 }
@@ -857,7 +857,7 @@ int CyCity::getMissionaryRate() const
 // R&R, Robert Surcouf, No More Variables Hidden game option END
 
 // WTP, ray, Native Trade Posts - START
-int /*PlayerTypes*/ CyCity::getTradePostPlayer() const
+PlayerTypes CyCity::getTradePostPlayer() const
 {
 	return m_pCity ? m_pCity->getTradePostPlayer() :NO_PLAYER;
 }

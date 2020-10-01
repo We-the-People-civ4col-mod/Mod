@@ -20,10 +20,36 @@ class NativeAdvisor:
 		self.drawn = False
 		self.name = "NativeStateClass"
 		self.screenName = self.name + "ListBackground"
-		
+		self.settlementIcon = gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_CHICKEE")).getButton()
+		self.tradeStationChar = gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()
+		self.tradeStationText = u" %c" % self.tradeStationChar
 		self.dirty = True
 		
 		self.tableManager = DomesticAdvisorTable.DomesticAdvisorTable(parent, self.screenName)
+		
+	def getKnownSettlementList(self):
+		player = gc.getPlayer(gc.getGame().getActivePlayer())
+		knownList = []
+		citylist = self.parent.GetNativeCities()
+		for iNativeCity in range(len(citylist)):
+			pLoopCity = citylist[iNativeCity]
+			
+			ePlayer = gc.getPlayer(pLoopCity.getOwner())
+			
+			# figure out if the city should be displayed
+			bIsVisited = pLoopCity.isScoutVisited(gc.getGame().getActiveTeam())
+			
+			# visited cities are always known. No need to test visited cities
+			bIsKnown = bIsVisited
+			
+			if not bIsKnown:
+				if (ePlayer.isAlive() and (gc.getTeam(ePlayer.getTeam()).isHasMet(player.getTeam()))):
+					bIsKnown = pLoopCity.isRevealed(player.getTeam(), False)
+			
+			# add a line for every single known native city
+			if bIsKnown:
+				knownList.append(pLoopCity)
+		return knownList
 		
 	def draw(self):
 		if not self.dirty and False:
@@ -31,7 +57,7 @@ class NativeAdvisor:
 			return
 			
 		self.dirty = False
-		citylist = self.parent.GetNativeCities()		
+		citylist = self.getKnownSettlementList()		
 		if self.tableManager.isNeedInit():
 			self.createTableHeader()
 			
@@ -58,13 +84,18 @@ class NativeAdvisor:
 			
 			# add a line for every single known native city
 			if bIsKnown:
-				self.tableManager.addPanelButton(ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION").getPath(), WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT, pLoopCity.plot().getIndex())
+				self.tableManager.addPanelButton(self.settlementIcon, WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT, pLoopCity.plot().getIndex())
 				self.tableManager.addText(pLoopCity.getName())
 				self.tableManager.addText(gc.getPlayer(pLoopCity.getOwner()).getCivilizationShortDescription(0))
 				self.tableManager.addInt(pLoopCity.getPopulation())
 				
 				if bIsVisited:
 					self.tableManager.drawChar(gc.getYieldInfo(pLoopCity.AI_getDesiredYield()))
+				else:
+					self.tableManager.skipCell()
+				
+				if pLoopCity.getTradePostPlayer() != -1:
+					self.tableManager.addText(self.tradeStationText, pLoopCity.getTradePostPlayer(), -1, player.getWikiWidget())
 				else:
 					self.tableManager.skipCell()
 				
@@ -110,6 +141,7 @@ class NativeAdvisor:
 		self.tableManager.addHeaderCityName("CIV")
 		self.tableManager.addHeaderTxt("TXT_KEY_POPULATION", 50)
 		self.tableManager.addHeaderChar(CyGame().getSymbolID(FontSymbols.TRADE_CHAR))
+		self.tableManager.addHeaderChar(self.tradeStationChar)
 		
 		# not hiding variables requires a wider column for missions
 		iCrossWidth = 50
@@ -119,9 +151,7 @@ class NativeAdvisor:
 		self.tableManager.addHeaderChar(gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), iCrossWidth)
 		self.tableManager.addHeaderTxt("TXT_KEY_PEDIA_SPECIAL_ABILITIES", 200)
 		
-		
-		self.tableManager.enableSelect()
-		self.tableManager.enableSort()
+		self.tableManager.tableHeaderComplete()
 		
 
 	

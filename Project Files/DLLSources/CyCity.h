@@ -204,10 +204,10 @@ public:
 	//R&R, Robert Surcouf, Domestic Market display END
 	
 	bool isEverOwned(int /*PlayerTypes*/ eIndex);
-	int /*PlayerTypes*/ getMissionaryPlayer() const; // R&R, Robert Surcouf, No More Variables Hidden game option START
+	PlayerTypes getMissionaryPlayer() const; // R&R, Robert Surcouf, No More Variables Hidden game option START
 	int getMissionaryRate() const; // R&R, Robert Surcouf, No More Variables Hidden game option END
 	
-	int /*PlayerTypes*/ getTradePostPlayer() const; // WTP, ray, Native Trade Posts - START
+	PlayerTypes getTradePostPlayer() const; // WTP, ray, Native Trade Posts - START
 	int getNativeTradeRate() const; // WTP, ray, Native Trade Posts - START
 
 	bool isRevealed(int /*TeamTypes*/ eIndex, bool bDebug);	
