@@ -959,9 +959,10 @@ Multiple repeating units is possible and an equal number will be trained of each
         <French>Informations sur les indigènes</French>
         <German>Informationen zu den Ureinwohnern</German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
         <English>Jump to settlement</English>
+        <German>Siedlung anzeigen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GROWTH</Tag>
