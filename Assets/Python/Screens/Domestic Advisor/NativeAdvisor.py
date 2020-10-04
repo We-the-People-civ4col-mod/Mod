@@ -75,16 +75,8 @@ class NativeAdvisor:
 			# figure out if the city should be displayed
 			bIsVisited = pLoopCity.isScoutVisited(gc.getGame().getActiveTeam())
 			
-			# visited cities are always known. No need to test visited cities
-			bIsKnown = bIsVisited
-			
-			if not bIsKnown:
-				if (ePlayer.isAlive() and (gc.getTeam(ePlayer.getTeam()).isHasMet(player.getTeam()))):
-					bIsKnown = pLoopCity.isRevealed(player.getTeam(), False)
-			
-			# add a line for every single known native city
-			if bIsKnown:
-				self.tableManager.addPanelButton(self.settlementIcon, WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT, pLoopCity.plot().getIndex())
+			if True:
+				self.tableManager.addPanelButton(self.settlementIcon, WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT, pLoopCity.plot().getIndex(), iNativeCity)
 				self.tableManager.addText(pLoopCity.getName())
 				self.tableManager.addText(gc.getPlayer(pLoopCity.getOwner()).getCivilizationShortDescription(0))
 				self.tableManager.addInt(pLoopCity.getPopulation())
@@ -117,12 +109,17 @@ class NativeAdvisor:
 				else:
 					self.tableManager.skipCell()
 	
+	def getWidgetHelp(self, argsList):
+		iScreen, eWidgetType, iData1, iData2, bOption = argsList
+		
+		if (eWidgetType == WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT):
+			self.parent.getScreen().hideScreen()
+			CyCamera().JustLookAtPlot(gc.getMap().plotByIndex(iData1))
+			return ""
+		
+		return None
+	
 	def handleInput (self, inputClass):
-		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
-			if (inputClass.getButtonType() == WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT):
-				self.parent.getScreen().hideScreen()
-				CyCamera().JustLookAtPlot(gc.getMap().plotByIndex(inputClass.iData1))
-				return 0
 		
 		return -1
 	

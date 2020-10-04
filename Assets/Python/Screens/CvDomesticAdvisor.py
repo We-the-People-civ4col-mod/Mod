@@ -942,6 +942,11 @@ class CvDomesticAdvisor:
 			self.drawContents()
 			
 	def getWidgetHelp(self, argsList):
+		if self.StateWindow[self.CurrentState] != None:
+			returnVal = self.StateWindow[self.CurrentState].getWidgetHelp(argsList)
+			if returnVal != None:
+				return returnVal
+	
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
 
 		if eWidgetType == WidgetTypes.WIDGET_GENERAL:
