@@ -523,7 +523,7 @@ bool CyPlayer::isFoundedFirstCity()
 {
 	return m_pPlayer ? m_pPlayer->isFoundedFirstCity() : false;
 }
-PlayerTypes CyPlayer::getID() const
+int CyPlayer::getID() const
 {
 	return m_pPlayer ? m_pPlayer->getID() : NO_PLAYER;
 }

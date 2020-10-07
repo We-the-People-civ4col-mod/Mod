@@ -158,7 +158,7 @@ public:
 	bool isExtendedGame();
 	bool isFoundedFirstCity();
 	bool isStrike();
-	PlayerTypes getID() const;
+	int getID() const;
 	WidgetTypes getWikiWidget() const;
 	int getChar() const;
 	int /* HandicapTypes */ getHandicapType();
