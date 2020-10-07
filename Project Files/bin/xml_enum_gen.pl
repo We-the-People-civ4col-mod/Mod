@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use XML::LibXML;
-
+use lib './bin';
 use XMLlists;
 
 my $FILE = getAutoDir() . "/AutoXmlEnum.h.tmp";

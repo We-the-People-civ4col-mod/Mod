@@ -277,7 +277,6 @@ source_list: Make_Dir
     @ECHO.>> $(FILE_DEPENDS)
 	@ECHO OBJS= \>> $(FILE_DEPENDS)
     @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.cpp') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
-    @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.c') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
 	@perl bin\xml_enum_gen.pl
 
