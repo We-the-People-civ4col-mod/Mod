@@ -35,24 +35,6 @@ int CvPlot::iMaxVisibilityRangeCache;
 
 CvPlot::CvPlot()
 {
-	m_aiYield = new short[NUM_YIELD_TYPES];
-
-	m_aiDangerMap = new short[MAX_PLAYERS];	// TAC - AI Improved Naval AI - koma13
-
-	m_aiCulture = NULL;
-	m_aiCultureRangeForts = NULL; // Super Forts *culture*
-	m_aiFoundValue = NULL;
-	m_aiPlayerCityRadiusCount = NULL;
-	m_aiVisibilityCount = NULL;
-	m_aiRevealedOwner = NULL;
-	m_abRiverCrossing = NULL;
-	m_abRevealed = NULL;
-	m_aeRevealedImprovementType = NULL;
-	m_aeRevealedRouteType = NULL;
-	m_paiBuildProgress = NULL;
-	m_apaiCultureRangeCities = NULL;
-	m_apaiInvisibleVisibilityCount = NULL;
-
 	m_pFeatureSymbol = NULL;
 	m_pPlotBuilder = NULL;
 	m_pRouteSymbol = NULL;
@@ -70,10 +52,6 @@ CvPlot::CvPlot()
 CvPlot::~CvPlot()
 {
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiYield);
-	
-	SAFE_DELETE_ARRAY(m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
 }
 
 void CvPlot::init(int iX, int iY)
@@ -102,40 +80,6 @@ void CvPlot::uninit()
 	gDLL->getFlagEntityIFace()->destroy(m_pFlagSymbolOffset);
 	m_pCenterUnit = NULL;
 
-	SAFE_DELETE_ARRAY(m_aiCulture);
-	SAFE_DELETE_ARRAY(m_aiCultureRangeForts); // Super Forts *culture*
-	SAFE_DELETE_ARRAY(m_aiFoundValue);
-	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
-
-	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
-	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
-
-	SAFE_DELETE_ARRAY(m_abRiverCrossing);
-	SAFE_DELETE_ARRAY(m_abRevealed);
-
-	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
-	SAFE_DELETE_ARRAY(m_aeRevealedRouteType);
-
-	SAFE_DELETE_ARRAY(m_paiBuildProgress);
-
-	if (NULL != m_apaiCultureRangeCities)
-	{
-		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiCultureRangeCities[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiCultureRangeCities);
-	}
-
-	if (NULL != m_apaiInvisibleVisibilityCount)
-	{
-		for (int iI = 0; iI < MAX_TEAMS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount);
-	}
-
 	m_units.clear();
 }
 
@@ -145,68 +89,21 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 {
 	uninit();
 
+	// apply default values for variables in savegame
+	resetSavedData();
+
 	m_iX = iX;
 	m_iY = iY;
-	m_iArea = FFreeList::INVALID_INDEX;
 	m_pPlotArea = NULL;
-	m_iFeatureVariety = 0;
-	m_iOwnershipDuration = 0;
-	m_iImprovementDuration = 0;
-	m_iUpgradeProgress = 0;
-	m_iForceUnownedTimer = 0;
-	m_iCityRadiusCount = 0;
-	m_iRiverID = -1;
-	m_iMinOriginalStartDist = -1;
-	m_iRiverCrossingCount = 0;
+	
+	// set the actual default. The default in resetSavedData is chosen to be the value used by all water plots, hence reduced savegame size 
 	m_iDistanceToOcean = MAX_SHORT;
-	m_iCrumbs = 0;
 
-	// Super Forts begin *canal* *choke*
-	m_iCanalValue = 0;
-	m_iChokeValue = 0;
-	// Super Forts end
-	// Super Forts begin *bombard*
-	m_iDefenseDamage = 0;
-	m_bBombarded = false;
-	// Super Forts end
-
-	m_bStartingPlot = false;
-	m_bHills = false;
-	m_bNOfRiver = false;
-	m_bWOfRiver = false;
-	m_bPotentialCityWork = false;
 	m_bShowCitySymbols = false;
 	m_bFlagDirty = false;
 	m_bPlotLayoutDirty = false;
 	m_bLayoutStateWorked = false;
 	m_bImpassable = false;
-
-	m_eOwner = NO_PLAYER;
-	m_ePlotType = PLOT_OCEAN;
-	m_eTerrainType = NO_TERRAIN;
-	m_eFeatureType = NO_FEATURE;
-	m_eBonusType = NO_BONUS;
-	m_eImprovementType = NO_IMPROVEMENT;
-	m_eRouteType = NO_ROUTE;
-	m_eRiverNSDirection = NO_CARDINALDIRECTION;
-	m_eRiverWEDirection = NO_CARDINALDIRECTION;
-	m_eEurope = NO_EUROPE;
-
-	m_plotCity.reset();
-	m_workingCity.reset();
-	m_workingCityOverride.reset();
-
-	for (int iI = 0; iI < NUM_YIELD_TYPES; ++iI)
-	{
-		m_aiYield[iI] = 0;
-	}
-
-	// TAC - AI Improved Naval AI - koma13 - START
-	for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-	{
-		m_aiDangerMap[iI] = 0;
-	}
-	// TAC - AI Improved Naval AI - koma13 - END
 	
 	updateImpassable();
 }
@@ -2428,30 +2325,16 @@ void CvPlot::changeDefenseDamage(int iChange)
 // Super Forts begin *culture*
 int CvPlot::getCultureRangeForts(PlayerTypes ePlayer) const
 {
-	if (NULL == m_aiCultureRangeForts)
-	{
-		return 0;
-	}
-
-	return m_aiCultureRangeForts[ePlayer];
+	return m_em_iCultureRangeForts.get(ePlayer);
 }
 
 void CvPlot::setCultureRangeForts(PlayerTypes ePlayer, int iNewValue)
 {
 	if (getCultureRangeForts(ePlayer) != iNewValue)
 	{
-		if(NULL == m_aiCultureRangeForts)
-		{
-			m_aiCultureRangeForts = new short[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_aiCultureRangeForts[iI] = 0;
-			}
-		}
-
-		m_aiCultureRangeForts[ePlayer] = iNewValue;
+		m_em_iCultureRangeForts.set(ePlayer, iNewValue);
 		
-		if(getCulture(ePlayer) == 0)
+		if (getCulture(ePlayer) == 0)
 		{
 			changeCulture(ePlayer, 1, false);
 		}
@@ -3094,7 +2977,7 @@ bool CvPlot::isWithinCultureRange(PlayerTypes ePlayer) const
 {
 	//allow culture two plots from cities culture
 	int iExtraCultureRange = GC.getDefineINT("BUY_PLOT_CULTURE_RANGE");
-	for (int iCultureLevel = 0; iCultureLevel < GC.getNumCultureLevelInfos(); ++iCultureLevel)
+	for (CultureLevelTypes eCultureLevel = FIRST_CULTURELEVEL; eCultureLevel < NUM_CULTURELEVEL_TYPES; ++eCultureLevel)
 	{
 		for (int iDX = -iExtraCultureRange; iDX <= iExtraCultureRange; iDX++)
 		{
@@ -3103,7 +2986,7 @@ bool CvPlot::isWithinCultureRange(PlayerTypes ePlayer) const
 				CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
 				if(pLoopPlot != NULL)
 				{
-					if (pLoopPlot->isCultureRangeCity(ePlayer, iCultureLevel))
+					if (pLoopPlot->isCultureRangeCity(ePlayer, eCultureLevel))
 					{
 						return true;
 					}
@@ -3127,13 +3010,12 @@ bool CvPlot::isWithinCultureRange(PlayerTypes ePlayer) const
 int CvPlot::getNumCultureRangeCities(PlayerTypes ePlayer) const
 {
 	int iCount;
-	int iI;
 
 	iCount = 0;
 
-	for (iI = 0; iI < GC.getNumCultureLevelInfos(); ++iI)
+	for (CultureLevelTypes eCultureLevel = FIRST_CULTURELEVEL; eCultureLevel < NUM_CULTURELEVEL_TYPES; ++eCultureLevel)
 	{
-		iCount += getCultureRangeCities(ePlayer, iI);
+		iCount += getCultureRangeCities(ePlayer, eCultureLevel);
 	}
 
 	return iCount;
@@ -4290,7 +4172,7 @@ EuropeTypes CvPlot::getEurope() const
 
 void CvPlot::setEurope(EuropeTypes eEurope)
 {
-	m_eEurope = (char)eEurope;
+	m_eEurope = eEurope;
 	gDLL->getInterfaceIFace()->setDirty(ColoredPlots_DIRTY_BIT, true);
 }
 
@@ -5540,9 +5422,9 @@ void CvPlot::changeRiverCrossingCount(int iChange)
 }
 
 
-short* CvPlot::getYield()
+const EnumMap<YieldTypes, short> CvPlot::getYield() const
 {
-	return m_aiYield;
+	return m_em_iYield;
 }
 
 
@@ -5550,7 +5432,7 @@ int CvPlot::getYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiYield[eIndex];
+	return m_em_iYield.get(eIndex);
 }
 
 // TAC - AI Improved Naval AI - koma13 - START
@@ -5558,7 +5440,7 @@ int CvPlot::getDangerMap(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiDangerMap[eIndex];
+	return m_em_iDangerMap.get(eIndex);
 }
 
 void CvPlot::setDangerMap(PlayerTypes eIndex, int iNewValue)
@@ -5566,12 +5448,8 @@ void CvPlot::setDangerMap(PlayerTypes eIndex, int iNewValue)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (m_aiDangerMap[eIndex] != iNewValue)
-	{
-		m_aiDangerMap[eIndex] = iNewValue;
-	}
-
-	FAssert(m_aiDangerMap[eIndex] >= 0);
+	m_em_iDangerMap.set(eIndex, iNewValue);
+	FAssert(m_em_iDangerMap.get(eIndex) >= 0);
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
@@ -6150,7 +6028,6 @@ void CvPlot::updateYield(bool bUpdateCity)
 	bool bChange;
 	int iNewYield;
 	int iOldYield;
-	int iI;
 
 	if (area() == NULL)
 	{
@@ -6159,16 +6036,18 @@ void CvPlot::updateYield(bool bUpdateCity)
 
 	bChange = false;
 
-	for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+	// TODO: skip all yields, which can never be produced on a plot
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		iNewYield = calculateYield((YieldTypes)iI, false);
+		iNewYield = calculateYield(eYield, false);
 
-		if (getYield((YieldTypes)iI) != iNewYield)
+		if (getYield(eYield) != iNewYield)
 		{
-			iOldYield = getYield((YieldTypes)iI);
+			iOldYield = getYield(eYield);
 
-			m_aiYield[iI] = iNewYield;
-			FAssert(getYield((YieldTypes)iI) >= 0);
+			m_em_iYield.set(eYield, iNewYield);
+			FAssert(getYield(eYield) >= 0);
 
 			if (bUpdateCity)
 			{
@@ -6198,15 +6077,7 @@ void CvPlot::updateYield(bool bUpdateCity)
 
 int CvPlot::getCulture(PlayerTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
-	FAssertMsg(eIndex < MAX_PLAYERS, "iIndex is expected to be within maximum bounds (invalid Index)");
-
-	if (NULL == m_aiCulture)
-	{
-		return 0;
-	}
-
-	return m_aiCulture[eIndex];
+	return m_em_iCulture.get(eIndex);
 }
 
 
@@ -6313,16 +6184,7 @@ void CvPlot::setCulture(PlayerTypes eIndex, int iNewValue, bool bUpdate)
 
 	if (getCulture(eIndex) != iNewValue)
 	{
-		if(NULL == m_aiCulture)
-		{
-			m_aiCulture = new int[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_aiCulture[iI] = 0;
-			}
-		}
-
-		m_aiCulture[eIndex] = iNewValue;
+		m_em_iCulture.set(eIndex, iNewValue);
 		FAssert(getCulture(eIndex) >= 0);
 
 		if (bUpdate)
@@ -6404,12 +6266,7 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_aiFoundValue)
-	{
-		return 0;
-	}
-
-	if (m_aiFoundValue[eIndex] == -1)
+	if (m_em_iFoundValue.get(eIndex) == -1)
 	{
 		long lResult=-1;
 		if(GC.getUSE_GET_CITY_FOUND_VALUE_CALLBACK())
@@ -6423,16 +6280,16 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 
 		if (lResult == -1)
 		{
-			m_aiFoundValue[eIndex] = GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE(), -1, true);
+			m_em_iFoundValue.set(eIndex, GET_PLAYER(eIndex).AI_foundValue(getX_INLINE(), getY_INLINE(), -1, true));
 		}
 
-		if (m_aiFoundValue[eIndex] > area()->getBestFoundValue(eIndex))
+		if (m_em_iFoundValue.get(eIndex) > area()->getBestFoundValue(eIndex))
 		{
-			area()->setBestFoundValue(eIndex, m_aiFoundValue[eIndex]);
+			area()->setBestFoundValue(eIndex, m_em_iFoundValue.get(eIndex));
 		}
 	}
 
-	return m_aiFoundValue[eIndex];
+	return m_em_iFoundValue.get(eIndex);
 }
 
 
@@ -6472,19 +6329,7 @@ void CvPlot::setFoundValue(PlayerTypes eIndex, int iNewValue)
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 	FAssert(iNewValue >= -1);
 
-	if (NULL == m_aiFoundValue && 0 != iNewValue)
-	{
-		m_aiFoundValue = new int[MAX_PLAYERS];
-		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-		{
-			m_aiFoundValue[iI] = 0;
-		}
-	}
-
-	if (NULL != m_aiFoundValue)
-	{
-		m_aiFoundValue[eIndex] = iNewValue;
-	}
+	m_em_iFoundValue.set(eIndex, iNewValue);
 }
 
 
@@ -6493,12 +6338,7 @@ int CvPlot::getPlayerCityRadiusCount(PlayerTypes eIndex) const
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_aiPlayerCityRadiusCount)
-	{
-		return 0;
-	}
-
-	return m_aiPlayerCityRadiusCount[eIndex];
+	return m_em_iPlayerCityRadiusCount.get(eIndex);
 }
 
 
@@ -6515,19 +6355,11 @@ void CvPlot::changePlayerCityRadiusCount(PlayerTypes eIndex, int iChange)
 
 	if (0 != iChange)
 	{
-		if (NULL == m_aiPlayerCityRadiusCount)
-		{
-			m_aiPlayerCityRadiusCount = new char[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_aiPlayerCityRadiusCount[iI] = 0;
-			}
-		}
-		
-		m_aiPlayerCityRadiusCount[eIndex] += iChange;
+		m_em_iPlayerCityRadiusCount.add(eIndex, iChange);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - start
-		if(m_aiPlayerCityRadiusCount[eIndex] < 0) 		
-			m_aiPlayerCityRadiusCount[eIndex] = 0;		
+		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
+		if(m_em_iPlayerCityRadiusCount.get(eIndex) < 0)
+			m_em_iPlayerCityRadiusCount.set(eIndex, 0);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - end
 		FAssert(getPlayerCityRadiusCount(eIndex) >= 0);
 	}
@@ -6539,12 +6371,7 @@ int CvPlot::getVisibilityCount(TeamTypes eTeam) const
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_aiVisibilityCount)
-	{
-		return 0;
-	}
-
-	return m_aiVisibilityCount[eTeam];
+	return m_em_iVisibilityCount.get(eTeam);
 }
 
 
@@ -6553,28 +6380,19 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 	CvCity* pCity;
 	CvPlot* pAdjacentPlot;
 	bool bOldVisible;
-	int iI;
 
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
 	if (iChange != 0)
 	{
-		if (NULL == m_aiVisibilityCount)
-		{
-			m_aiVisibilityCount = new short[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aiVisibilityCount[iI] = 0;
-			}
-		}
-
 		bOldVisible = isVisible(eTeam, false);
 
-		m_aiVisibilityCount[eTeam] += iChange;
+		m_em_iVisibilityCount.add(eTeam, iChange);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - start
-		if(m_aiVisibilityCount[eTeam] < 0)
-			m_aiVisibilityCount[eTeam] = 0;
+		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
+		if(m_em_iVisibilityCount.get(eTeam) < 0)
+			m_em_iVisibilityCount.set(eTeam, 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - end
 		FAssert(getVisibilityCount(eTeam) >= 0);
 
@@ -6589,9 +6407,9 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 			{
 				setRevealed(eTeam, true, false, NO_TEAM);
 
-				for (iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+				for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; ++eDirection)
 				{
-					pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+					pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), eDirection);
 
 					if (pAdjacentPlot != NULL)
 					{
@@ -6629,12 +6447,7 @@ PlayerTypes CvPlot::getRevealedOwner(TeamTypes eTeam, bool bDebug) const
 		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-		if (NULL == m_aiRevealedOwner)
-		{
-			return NO_PLAYER;
-		}
-
-		return (PlayerTypes)m_aiRevealedOwner[eTeam];
+		return m_em_eRevealedOwner.get(eTeam);
 	}
 }
 
@@ -6664,16 +6477,7 @@ void CvPlot::setRevealedOwner(TeamTypes eTeam, PlayerTypes eNewValue)
 
 	if (getRevealedOwner(eTeam, false) != eNewValue)
 	{
-		if (NULL == m_aiRevealedOwner)
-		{
-			m_aiRevealedOwner = new char[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aiRevealedOwner[iI] = -1;
-			}
-		}
-
-		m_aiRevealedOwner[eTeam] = eNewValue;
+		m_em_eRevealedOwner.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{
@@ -6687,8 +6491,6 @@ void CvPlot::setRevealedOwner(TeamTypes eTeam, PlayerTypes eNewValue)
 			}
 		}
 	}
-
-	FAssert((NULL == m_aiRevealedOwner) || (m_aiRevealedOwner[eTeam] == eNewValue));
 }
 
 
@@ -6744,12 +6546,12 @@ bool CvPlot::isRiverCrossing(DirectionTypes eIndex) const
 		return false;
 	}
 
-	if (NULL == m_abRiverCrossing)
-	{
-		return false;
-	}
+	// check bounds
+	// the code assumes 8 values, which can then fit in the 8 bits in a byte
+	BOOST_STATIC_ASSERT(NUM_DIRECTION_TYPES == 8);
+	FAssert(eIndex >= 0);
 
-	return m_abRiverCrossing[eIndex];
+	return HasBit(m_bmRiverCrossing, eIndex);
 }
 
 
@@ -6881,16 +6683,7 @@ void CvPlot::updateRiverCrossing(DirectionTypes eIndex)
 
 	if (isRiverCrossing(eIndex) != bValid)
 	{
-		if (NULL == m_abRiverCrossing)
-		{
-			m_abRiverCrossing = new bool[NUM_DIRECTION_TYPES];
-			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
-			{
-				m_abRiverCrossing[iI] = false;
-			}
-		}
-
-		m_abRiverCrossing[eIndex] = bValid;
+		SetBit(m_bmRiverCrossing, eIndex, bValid);
 
 		changeRiverCrossingCount((isRiverCrossing(eIndex)) ? 1 : -1);
 	}
@@ -6918,12 +6711,7 @@ bool CvPlot::isRevealed(TeamTypes eTeam, bool bDebug) const
 		return true;
 	}
 
-	if (NULL == m_abRevealed)
-	{
-		return false;
-	}
-
-	return m_abRevealed[eTeam];
+	return m_pab_Revealed.get(eTeam);
 }
 
 
@@ -6938,16 +6726,7 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 	if (isRevealed(eTeam, false) != bNewValue)
 	{
-		if (NULL == m_abRevealed)
-		{
-			m_abRevealed = new bool[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_abRevealed[iI] = false;
-			}
-		}
-
-		m_abRevealed[eTeam] = bNewValue;
+		m_pab_Revealed.set(eTeam, bNewValue);
 
 		if (area())
 		{
@@ -7095,15 +6874,7 @@ ImprovementTypes CvPlot::getRevealedImprovementType(TeamTypes eTeam, bool bDebug
 	}
 	else
 	{
-		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
-		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-
-		if (NULL == m_aeRevealedImprovementType)
-		{
-			return NO_IMPROVEMENT;
-		}
-
-		return (ImprovementTypes)m_aeRevealedImprovementType[eTeam];
+		return m_aeRevealedImprovementRouteTypes.getImprovement(eTeam);
 	}
 }
 
@@ -7113,18 +6884,9 @@ void CvPlot::setRevealedImprovementType(TeamTypes eTeam, ImprovementTypes eNewVa
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	if (getRevealedImprovementType(eTeam, false) != eNewValue)
+	if (m_aeRevealedImprovementRouteTypes.getImprovement(eTeam) != eNewValue)
 	{
-		if (NULL == m_aeRevealedImprovementType)
-		{
-			m_aeRevealedImprovementType = new short[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aeRevealedImprovementType[iI] = NO_IMPROVEMENT;
-			}
-		}
-
-		m_aeRevealedImprovementType[eTeam] = eNewValue;
+		m_aeRevealedImprovementRouteTypes.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{
@@ -7144,15 +6906,7 @@ RouteTypes CvPlot::getRevealedRouteType(TeamTypes eTeam, bool bDebug) const
 	}
 	else
 	{
-		FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
-		FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
-
-		if (NULL == m_aeRevealedRouteType)
-		{
-			return NO_ROUTE;
-		}
-
-		return (RouteTypes)m_aeRevealedRouteType[eTeam];
+		return m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
 	}
 }
 
@@ -7162,18 +6916,9 @@ void CvPlot::setRevealedRouteType(TeamTypes eTeam, RouteTypes eNewValue)
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
 
-	if (getRevealedRouteType(eTeam, false) != eNewValue)
+	if (m_aeRevealedImprovementRouteTypes.getRoute(eTeam) != eNewValue)
 	{
-		if (NULL == m_aeRevealedRouteType)
-		{
-			m_aeRevealedRouteType = new short[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_aeRevealedRouteType[iI] = NO_ROUTE;
-			}
-		}
-
-		m_aeRevealedRouteType[eTeam] = eNewValue;
+		m_aeRevealedImprovementRouteTypes.set(eTeam, eNewValue);
 
 		if (eTeam == GC.getGameINLINE().getActiveTeam())
 		{
@@ -7186,12 +6931,7 @@ void CvPlot::setRevealedRouteType(TeamTypes eTeam, RouteTypes eNewValue)
 
 int CvPlot::getBuildProgress(BuildTypes eBuild) const
 {
-	if (NULL == m_paiBuildProgress)
-	{
-		return 0;
-	}
-
-	return m_paiBuildProgress[eBuild];
+	return m_em_iBuildProgress.get(eBuild);
 }
 
 
@@ -7203,21 +6943,13 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 
 	if (iChange != 0)
 	{
-		if (NULL == m_paiBuildProgress)
-		{
-			m_paiBuildProgress = new short[GC.getNumBuildInfos()];
-			for (int iI = 0; iI < GC.getNumBuildInfos(); ++iI)
-			{
-				m_paiBuildProgress[iI] = 0;
-			}
-		}
+		m_em_iBuildProgress.add(eBuild, iChange);
 
-		m_paiBuildProgress[eBuild] += iChange;
 		FAssert(getBuildProgress(eBuild) >= 0);
 
 		if (getBuildProgress(eBuild) >= getBuildTime(eBuild))
 		{
-			m_paiBuildProgress[eBuild] = 0;
+			m_em_iBuildProgress.set(eBuild, 0);
 
 			if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
 			{
@@ -7634,66 +7366,39 @@ void CvPlot::setCenterUnit(CvUnit* pNewValue)
 }
 
 
-int CvPlot::getCultureRangeCities(PlayerTypes eOwnerIndex, int iRangeIndex) const
+int CvPlot::getCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex) const
 {
 	FAssert(eOwnerIndex >= 0);
 	FAssert(eOwnerIndex < MAX_PLAYERS);
-	FAssert(iRangeIndex >= 0);
-	FAssert(iRangeIndex < GC.getNumCultureLevelInfos());
+	FAssert(eRangeIndex >= 0);
+	FAssert(eRangeIndex < GC.getNumCultureLevelInfos());
 
-	if (NULL == m_apaiCultureRangeCities)
-	{
-		return 0;
-	}
-	else if (NULL == m_apaiCultureRangeCities[eOwnerIndex])
-	{
-		return 0;
-	}
-
-	return m_apaiCultureRangeCities[eOwnerIndex][iRangeIndex];
+	return m_em2_iCultureRangeCities.get(eOwnerIndex, eRangeIndex);
 }
 
 
-bool CvPlot::isCultureRangeCity(PlayerTypes eOwnerIndex, int iRangeIndex) const
+bool CvPlot::isCultureRangeCity(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex) const
 {
-	return (getCultureRangeCities(eOwnerIndex, iRangeIndex) > 0);
+	return (getCultureRangeCities(eOwnerIndex, eRangeIndex) > 0);
 }
 
 
-void CvPlot::changeCultureRangeCities(PlayerTypes eOwnerIndex, int iRangeIndex, int iChange)
+void CvPlot::changeCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex, int iChange)
 {
 	bool bOldCultureRangeCities;
 
 	FAssert(eOwnerIndex >= 0);
 	FAssert(eOwnerIndex < MAX_PLAYERS);
-	FAssert(iRangeIndex >= 0);
-	FAssert(iRangeIndex < GC.getNumCultureLevelInfos());
+	FAssert(eRangeIndex >= 0);
+	FAssert(eRangeIndex < GC.getNumCultureLevelInfos());
 
 	if (0 != iChange)
 	{
-		bOldCultureRangeCities = isCultureRangeCity(eOwnerIndex, iRangeIndex);
+		bOldCultureRangeCities = isCultureRangeCity(eOwnerIndex, eRangeIndex);
 
-		if (NULL == m_apaiCultureRangeCities)
-		{
-			m_apaiCultureRangeCities = new char*[MAX_PLAYERS];
-			for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-			{
-				m_apaiCultureRangeCities[iI] = NULL;
-			}
-		}
+		m_em2_iCultureRangeCities.add(eOwnerIndex, eRangeIndex, iChange);
 
-		if (NULL == m_apaiCultureRangeCities[eOwnerIndex])
-		{
-			m_apaiCultureRangeCities[eOwnerIndex] = new char[GC.getNumCultureLevelInfos()];
-			for (int iI = 0; iI < GC.getNumCultureLevelInfos(); ++iI)
-			{
-				m_apaiCultureRangeCities[eOwnerIndex][iI] = 0;
-			}
-		}
-
-		m_apaiCultureRangeCities[eOwnerIndex][iRangeIndex] += iChange;
-
-		if (bOldCultureRangeCities != isCultureRangeCity(eOwnerIndex, iRangeIndex))
+		if (bOldCultureRangeCities != isCultureRangeCity(eOwnerIndex, eRangeIndex))
 		{
 			updateCulture(true);
 		}
@@ -7708,16 +7413,7 @@ int CvPlot::getInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInvisib
 	FAssertMsg(eInvisible >= 0, "eInvisible is expected to be non-negative (invalid Index)");
 	FAssertMsg(eInvisible < GC.getNumInvisibleInfos(), "eInvisible is expected to be within maximum bounds (invalid Index)");
 
-	if (NULL == m_apaiInvisibleVisibilityCount)
-	{
-		return 0;
-	}
-	else if (NULL == m_apaiInvisibleVisibilityCount[eTeam])
-	{
-		return 0;
-	}
-
-	return m_apaiInvisibleVisibilityCount[eTeam][eInvisible];
+	return m_em2_iInvisibleVisibilityCount.get(eTeam, eInvisible);
 }
 
 
@@ -7740,25 +7436,7 @@ void CvPlot::changeInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInv
 	{
 		bOldInvisibleVisible = isInvisibleVisible(eTeam, eInvisible);
 
-		if (NULL == m_apaiInvisibleVisibilityCount)
-		{
-			m_apaiInvisibleVisibilityCount = new short*[MAX_TEAMS];
-			for (int iI = 0; iI < MAX_TEAMS; ++iI)
-			{
-				m_apaiInvisibleVisibilityCount[iI] = NULL;
-			}
-		}
-
-		if (NULL == m_apaiInvisibleVisibilityCount[eTeam])
-		{
-			m_apaiInvisibleVisibilityCount[eTeam] = new short[GC.getNumInvisibleInfos()];
-			for (int iI = 0; iI < GC.getNumInvisibleInfos(); ++iI)
-			{
-				m_apaiInvisibleVisibilityCount[eTeam][iI] = 0;
-			}
-		}
-
-		m_apaiInvisibleVisibilityCount[eTeam][eInvisible] += iChange;
+		m_em2_iInvisibleVisibilityCount.add(eTeam, eInvisible, iChange);
 
 		if (bOldInvisibleVisible != isInvisibleVisible(eTeam, eInvisible))
 		{
@@ -8198,458 +7876,6 @@ ColorTypes CvPlot::plotMinimapColor()
 	}
 
 	return (ColorTypes)GC.getInfoTypeForString("COLOR_CLEAR");
-}
-
-//
-// read object from a stream
-// used during load
-//
-void CvPlot::read(FDataStreamBase* pStream)
-{
-	int iI;
-	bool bVal;
-	char cCount;
-	int iCount;
-
-	// Init saved data
-	reset();
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iArea);
-	// m_pPlotArea not saved
-	pStream->Read(&m_iFeatureVariety);
-	pStream->Read(&m_iOwnershipDuration);
-	pStream->Read(&m_iImprovementDuration);
-	pStream->Read(&m_iUpgradeProgress);
-	pStream->Read(&m_iForceUnownedTimer);
-	pStream->Read(&m_iCityRadiusCount);
-	pStream->Read(&m_iRiverID);
-	pStream->Read(&m_iMinOriginalStartDist);
-	pStream->Read(&m_iRiverCrossingCount);
-	pStream->Read(&m_iDistanceToOcean);
-	pStream->Read(&m_iCrumbs);
-
-	// Super Forts begin *canal* *choke*
-	pStream->Read(&m_iCanalValue);
-	pStream->Read(&m_iChokeValue);
-	// Super Forts end
-	// Super Forts begin *bombard*
-	pStream->Read(&m_iDefenseDamage);
-	pStream->Read(&m_bBombarded);
-	// Super Forts end
-
-	pStream->Read(&bVal);
-	m_bStartingPlot = bVal;
-	pStream->Read(&bVal);
-	m_bHills = bVal;
-	pStream->Read(&bVal);
-	m_bNOfRiver = bVal;
-	pStream->Read(&bVal);
-	m_bWOfRiver = bVal;
-	pStream->Read(&bVal);
-	m_bPotentialCityWork = bVal;
-	// m_bShowCitySymbols not saved
-	// m_bFlagDirty not saved
-	// m_bPlotLayoutDirty not saved
-	// m_bLayoutStateWorked not saved
-	// m_bImpassable not saved
-
-	pStream->Read(&m_eOwner);
-	pStream->Read(&m_ePlotType);
-	pStream->Read(&m_eTerrainType);
-	pStream->Read(&m_eFeatureType);
-	pStream->Read(&m_eBonusType);
-	pStream->Read(&m_eImprovementType);
-	pStream->Read(&m_eRouteType);
-	pStream->Read(&m_eRiverNSDirection);
-	pStream->Read(&m_eRiverWEDirection);
-	pStream->Read(&m_eEurope);
-	updateImpassable();
-
-	m_plotCity.read(pStream);
-	m_workingCity.read(pStream);
-	m_workingCityOverride.read(pStream);
-
-	pStream->Read(NUM_YIELD_TYPES, m_aiYield);
-
-	pStream->Read(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
-
-	SAFE_DELETE_ARRAY(m_aiCulture);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiCulture = new int[cCount];
-		pStream->Read(cCount, m_aiCulture);
-	}
-
-	// Super Forts begin *culture*
-	SAFE_DELETE_ARRAY(m_aiCultureRangeForts);
-	pStream->Read(&cCount);
-	if(cCount > 0)
-	{
-		m_aiCultureRangeForts = new short[cCount];
-		pStream->Read(cCount, m_aiCultureRangeForts);
-	}
-	// Super Forts end
-
-	SAFE_DELETE_ARRAY(m_aiFoundValue);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiFoundValue = new int[cCount];
-		pStream->Read(cCount, m_aiFoundValue);
-	}
-
-	SAFE_DELETE_ARRAY(m_aiPlayerCityRadiusCount);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiPlayerCityRadiusCount = new char[cCount];
-		pStream->Read(cCount, m_aiPlayerCityRadiusCount);
-	}
-
-	SAFE_DELETE_ARRAY(m_aiVisibilityCount);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiVisibilityCount = new short[cCount];
-		pStream->Read(cCount, m_aiVisibilityCount);
-	}
-
-	SAFE_DELETE_ARRAY(m_aiRevealedOwner);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aiRevealedOwner = new char[cCount];
-		pStream->Read(cCount, m_aiRevealedOwner);
-	}
-
-	SAFE_DELETE_ARRAY(m_abRiverCrossing);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_abRiverCrossing = new bool[cCount];
-		pStream->Read(cCount, m_abRiverCrossing);
-	}
-
-	SAFE_DELETE_ARRAY(m_abRevealed);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_abRevealed = new bool[cCount];
-		pStream->Read(cCount, m_abRevealed);
-	}
-
-	SAFE_DELETE_ARRAY(m_aeRevealedImprovementType);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aeRevealedImprovementType = new short[cCount];
-		pStream->Read(cCount, m_aeRevealedImprovementType);
-	}
-
-	SAFE_DELETE_ARRAY(m_aeRevealedRouteType);
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_aeRevealedRouteType = new short[cCount];
-		pStream->Read(cCount, m_aeRevealedRouteType);
-	}
-
-	m_szScriptData = pStream->ReadString();
-
-	SAFE_DELETE_ARRAY(m_paiBuildProgress);
-	pStream->Read(&iCount);
-	if (iCount > 0)
-	{
-		m_paiBuildProgress = new short[iCount];
-		pStream->Read(iCount, m_paiBuildProgress);
-	}
-
-	if (NULL != m_apaiCultureRangeCities)
-	{
-		for (int iI = 0; iI < MAX_PLAYERS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiCultureRangeCities[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiCultureRangeCities);
-	}
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_apaiCultureRangeCities = new char*[cCount];
-		for (iI = 0; iI < cCount; ++iI)
-		{
-			pStream->Read(&iCount);
-			if (iCount > 0)
-			{
-				m_apaiCultureRangeCities[iI] = new char[iCount];
-				pStream->Read(iCount, m_apaiCultureRangeCities[iI]);
-			}
-			else
-			{
-				m_apaiCultureRangeCities[iI] = NULL;
-			}
-		}
-	}
-
-	if (NULL != m_apaiInvisibleVisibilityCount)
-	{
-		for (int iI = 0; iI < MAX_TEAMS; ++iI)
-		{
-			SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_apaiInvisibleVisibilityCount);
-	}
-	pStream->Read(&cCount);
-	if (cCount > 0)
-	{
-		m_apaiInvisibleVisibilityCount = new short*[cCount];
-		for (iI = 0; iI < cCount; ++iI)
-		{
-			pStream->Read(&iCount);
-			if (iCount > 0)
-			{
-				m_apaiInvisibleVisibilityCount[iI] = new short[iCount];
-				pStream->Read(iCount, m_apaiInvisibleVisibilityCount[iI]);
-			}
-			else
-			{
-				m_apaiInvisibleVisibilityCount[iI] = NULL;
-			}
-		}
-	}
-
-	m_units.Read(pStream);
-}
-
-//
-// write object to a stream
-// used during save
-//
-void CvPlot::write(FDataStreamBase* pStream)
-{
-	uint iI;
-
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iArea);
-	// m_pPlotArea not saved
-	pStream->Write(m_iFeatureVariety);
-	pStream->Write(m_iOwnershipDuration);
-	pStream->Write(m_iImprovementDuration);
-	pStream->Write(m_iUpgradeProgress);
-	pStream->Write(m_iForceUnownedTimer);
-	pStream->Write(m_iCityRadiusCount);
-	pStream->Write(m_iRiverID);
-	pStream->Write(m_iMinOriginalStartDist);
-	pStream->Write(m_iRiverCrossingCount);
-	pStream->Write(m_iDistanceToOcean);
-	pStream->Write(m_iCrumbs);
-
-	// Super Forts begin *canal* *choke*
-	pStream->Write(m_iCanalValue);
-	pStream->Write(m_iChokeValue);
-	// Super Forts end
-	// Super Forts begin *bombard*
-	pStream->Write(m_iDefenseDamage);
-	pStream->Write(m_bBombarded);
-	// Super Forts end
-
-	pStream->Write(m_bStartingPlot);
-	pStream->Write(m_bHills);
-	pStream->Write(m_bNOfRiver);
-	pStream->Write(m_bWOfRiver);
-	pStream->Write(m_bPotentialCityWork);
-	// m_bShowCitySymbols not saved
-	// m_bFlagDirty not saved
-	// m_bPlotLayoutDirty not saved
-	// m_bLayoutStateWorked not saved
-	// m_bImpassable not saved
-
-	pStream->Write(m_eOwner);
-	pStream->Write(m_ePlotType);
-	pStream->Write(m_eTerrainType);
-	pStream->Write(m_eFeatureType);
-	pStream->Write(m_eBonusType);
-	pStream->Write(m_eImprovementType);
-	pStream->Write(m_eRouteType);
-	pStream->Write(m_eRiverNSDirection);
-	pStream->Write(m_eRiverWEDirection);
-	pStream->Write(m_eEurope);
-
-	m_plotCity.write(pStream);
-	m_workingCity.write(pStream);
-	m_workingCityOverride.write(pStream);
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiYield);
-
-	pStream->Write(MAX_PLAYERS, m_aiDangerMap);	// TAC - AI Improved Naval AI - koma13
-
-	if (NULL == m_aiCulture)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiCulture);
-	}
-
-	// Super Forts begin *culture*
-	if (NULL == m_aiCultureRangeForts)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiCultureRangeForts);
-	}
-	// Super Forts end
-
-	if (NULL == m_aiFoundValue)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiFoundValue);
-	}
-
-	if (NULL == m_aiPlayerCityRadiusCount)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		pStream->Write(MAX_PLAYERS, m_aiPlayerCityRadiusCount);
-	}
-
-	if (NULL == m_aiVisibilityCount)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aiVisibilityCount);
-	}
-
-	if (NULL == m_aiRevealedOwner)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aiRevealedOwner);
-	}
-
-	if (NULL == m_abRiverCrossing)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)NUM_DIRECTION_TYPES);
-		pStream->Write(NUM_DIRECTION_TYPES, m_abRiverCrossing);
-	}
-
-	if (NULL == m_abRevealed)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_abRevealed);
-	}
-
-	if (NULL == m_aeRevealedImprovementType)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aeRevealedImprovementType);
-	}
-
-	if (NULL == m_aeRevealedRouteType)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		pStream->Write(MAX_TEAMS, m_aeRevealedRouteType);
-	}
-
-	pStream->WriteString(m_szScriptData);
-
-	if (NULL == m_paiBuildProgress)
-	{
-		pStream->Write((int)0);
-	}
-	else
-	{
-		pStream->Write((int)GC.getNumBuildInfos());
-		pStream->Write(GC.getNumBuildInfos(), m_paiBuildProgress);
-	}
-
-	if (NULL == m_apaiCultureRangeCities)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_PLAYERS);
-		for (iI=0; iI < MAX_PLAYERS; ++iI)
-		{
-			if (NULL == m_apaiCultureRangeCities[iI])
-			{
-				pStream->Write((int)0);
-			}
-			else
-			{
-				pStream->Write((int)GC.getNumCultureLevelInfos());
-				pStream->Write(GC.getNumCultureLevelInfos(), m_apaiCultureRangeCities[iI]);
-			}
-		}
-	}
-
-	if (NULL == m_apaiInvisibleVisibilityCount)
-	{
-		pStream->Write((char)0);
-	}
-	else
-	{
-		pStream->Write((char)MAX_TEAMS);
-		for (iI=0; iI < MAX_TEAMS; ++iI)
-		{
-			if (NULL == m_apaiInvisibleVisibilityCount[iI])
-			{
-				pStream->Write((int)0);
-			}
-			else
-			{
-				pStream->Write((int)GC.getNumInvisibleInfos());
-				pStream->Write(GC.getNumInvisibleInfos(), m_apaiInvisibleVisibilityCount[iI]);
-			}
-		}
-	}
-
-	m_units.Write(pStream);
 }
 
 void CvPlot::setLayoutDirty(bool bDirty)

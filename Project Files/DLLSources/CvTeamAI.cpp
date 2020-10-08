@@ -15,6 +15,8 @@
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
 
+#include "CvSavegame.h"
+
 // statics
 
 CvTeamAI* CvTeamAI::m_aTeams = NULL;
@@ -44,20 +46,6 @@ DllExport CvTeamAI& CvTeamAI::getTeamNonInl(TeamTypes eTeam)
 
 CvTeamAI::CvTeamAI()
 {
-	m_aiWarPlanStateCounter = new int[MAX_TEAMS];
-	m_aiAtWarCounter = new int[MAX_TEAMS];
-	m_aiAtPeaceCounter = new int[MAX_TEAMS];
-	m_aiHasMetCounter = new int[MAX_TEAMS];
-	m_aiOpenBordersCounter = new int[MAX_TEAMS];
-	m_aiDefensivePactCounter = new int[MAX_TEAMS];
-	m_aiShareWarCounter = new int[MAX_TEAMS];
-	m_aiWarSuccess = new int[MAX_TEAMS];
-	m_aiEnemyPeacetimeTradeValue = new int[MAX_TEAMS];
-	m_aiEnemyPeacetimeGrantValue = new int[MAX_TEAMS];
-	m_aiDamages = new int[MAX_TEAMS];
-	m_aeWarPlan = new WarPlanTypes[MAX_TEAMS];
-
-
 	AI_reset();
 }
 
@@ -65,19 +53,6 @@ CvTeamAI::CvTeamAI()
 CvTeamAI::~CvTeamAI()
 {
 	AI_uninit();
-
-	SAFE_DELETE_ARRAY(m_aiWarPlanStateCounter);
-	SAFE_DELETE_ARRAY(m_aiAtWarCounter);
-	SAFE_DELETE_ARRAY(m_aiAtPeaceCounter);
-	SAFE_DELETE_ARRAY(m_aiHasMetCounter);
-	SAFE_DELETE_ARRAY(m_aiOpenBordersCounter);
-	SAFE_DELETE_ARRAY(m_aiDefensivePactCounter);
-	SAFE_DELETE_ARRAY(m_aiShareWarCounter);
-	SAFE_DELETE_ARRAY(m_aiWarSuccess);
-	SAFE_DELETE_ARRAY(m_aiEnemyPeacetimeTradeValue);
-	SAFE_DELETE_ARRAY(m_aiEnemyPeacetimeGrantValue);
-	SAFE_DELETE_ARRAY(m_aiDamages);
-	SAFE_DELETE_ARRAY(m_aeWarPlan);
 }
 
 
@@ -98,33 +73,8 @@ void CvTeamAI::AI_uninit()
 void CvTeamAI::AI_reset()
 {
 	AI_uninit();
-
-	m_eWorstEnemy = NO_TEAM;
-	
-	for (int iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_aiWarPlanStateCounter[iI] = 0;
-		m_aiAtWarCounter[iI] = 0;
-		m_aiAtPeaceCounter[iI] = 0;
-		m_aiHasMetCounter[iI] = 0;
-		m_aiOpenBordersCounter[iI] = 0;
-		m_aiDefensivePactCounter[iI] = 0;
-		m_aiShareWarCounter[iI] = 0;
-		m_aiWarSuccess[iI] = 0;
-		m_aiEnemyPeacetimeTradeValue[iI] = 0;
-		m_aiEnemyPeacetimeGrantValue[iI] = 0;
-		m_aiDamages[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_aeWarPlan[iI] = NO_WARPLAN;
-	}
-
-	m_aiEnemyCityDistance.clear();
-	m_aiEnemyUnitDistance.clear();
+	AI_resetSavedData();
 }
-
 
 void CvTeamAI::AI_doTurnPre()
 {
@@ -1630,7 +1580,7 @@ int CvTeamAI::AI_getWarPlanStateCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiWarPlanStateCounter[eIndex];
+	return m_em_iWarPlanStateCounter.get(eIndex);
 }
 
 
@@ -1638,7 +1588,7 @@ void CvTeamAI::AI_setWarPlanStateCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiWarPlanStateCounter[eIndex] = iNewValue;
+	m_em_iWarPlanStateCounter.set(eIndex, iNewValue);
 	FAssert(AI_getWarPlanStateCounter(eIndex) >= 0);
 }
 
@@ -1653,7 +1603,7 @@ int CvTeamAI::AI_getAtWarCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiAtWarCounter[eIndex];
+	return m_em_iAtWarCounter.get(eIndex);
 }
 
 
@@ -1661,7 +1611,7 @@ void CvTeamAI::AI_setAtWarCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiAtWarCounter[eIndex] = iNewValue;
+	m_em_iAtWarCounter.set(eIndex, iNewValue);
 	FAssert(AI_getAtWarCounter(eIndex) >= 0);
 }
 
@@ -1676,7 +1626,7 @@ int CvTeamAI::AI_getAtPeaceCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiAtPeaceCounter[eIndex];
+	return m_em_iAtPeaceCounter.get(eIndex);
 }
 
 
@@ -1684,7 +1634,7 @@ void CvTeamAI::AI_setAtPeaceCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiAtPeaceCounter[eIndex] = iNewValue;
+	m_em_iAtPeaceCounter.set(eIndex, iNewValue);
 	FAssert(AI_getAtPeaceCounter(eIndex) >= 0);
 }
 
@@ -1699,7 +1649,7 @@ int CvTeamAI::AI_getHasMetCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiHasMetCounter[eIndex];
+	return m_em_iHasMetCounter.get(eIndex);
 }
 
 
@@ -1707,7 +1657,7 @@ void CvTeamAI::AI_setHasMetCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiHasMetCounter[eIndex] = iNewValue;
+	m_em_iHasMetCounter.set(eIndex, iNewValue);
 	FAssert(AI_getHasMetCounter(eIndex) >= 0);
 }
 
@@ -1722,7 +1672,7 @@ int CvTeamAI::AI_getOpenBordersCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiOpenBordersCounter[eIndex];
+	return m_em_iOpenBordersCounter.get(eIndex);
 }
 
 
@@ -1730,7 +1680,7 @@ void CvTeamAI::AI_setOpenBordersCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiOpenBordersCounter[eIndex] = iNewValue;
+	m_em_iOpenBordersCounter.set(eIndex, iNewValue);
 	FAssert(AI_getOpenBordersCounter(eIndex) >= 0);
 }
 
@@ -1745,7 +1695,7 @@ int CvTeamAI::AI_getDefensivePactCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiDefensivePactCounter[eIndex];
+	return m_em_iDefensivePactCounter.get(eIndex);
 }
 
 
@@ -1753,7 +1703,7 @@ void CvTeamAI::AI_setDefensivePactCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiDefensivePactCounter[eIndex] = iNewValue;
+	m_em_iDefensivePactCounter.set(eIndex, iNewValue);
 	FAssert(AI_getDefensivePactCounter(eIndex) >= 0);
 }
 
@@ -1768,7 +1718,7 @@ int CvTeamAI::AI_getShareWarCounter(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiShareWarCounter[eIndex];
+	return m_em_iShareWarCounter.get(eIndex);
 }
 
 
@@ -1776,7 +1726,7 @@ void CvTeamAI::AI_setShareWarCounter(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiShareWarCounter[eIndex] = iNewValue;
+	m_em_iShareWarCounter.set(eIndex, iNewValue);
 	FAssert(AI_getShareWarCounter(eIndex) >= 0);
 }
 
@@ -1791,7 +1741,7 @@ int CvTeamAI::AI_getWarSuccess(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiWarSuccess[eIndex];
+	return m_em_iWarSuccess.get(eIndex);
 }
 
 
@@ -1799,7 +1749,7 @@ void CvTeamAI::AI_setWarSuccess(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiWarSuccess[eIndex] = iNewValue;
+	m_em_iWarSuccess.set(eIndex, iNewValue);
 	FAssert(AI_getWarSuccess(eIndex) >= 0);
 }
 
@@ -1814,7 +1764,7 @@ int CvTeamAI::AI_getEnemyPeacetimeTradeValue(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiEnemyPeacetimeTradeValue[eIndex];
+	return m_em_iEnemyPeacetimeTradeValue.get(eIndex);
 }
 
 
@@ -1822,7 +1772,7 @@ void CvTeamAI::AI_setEnemyPeacetimeTradeValue(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiEnemyPeacetimeTradeValue[eIndex] = iNewValue;
+	m_em_iEnemyPeacetimeTradeValue.set(eIndex, iNewValue);
 	FAssert(AI_getEnemyPeacetimeTradeValue(eIndex) >= 0);
 }
 
@@ -1837,7 +1787,7 @@ int CvTeamAI::AI_getEnemyPeacetimeGrantValue(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiEnemyPeacetimeGrantValue[eIndex];
+	return m_em_iEnemyPeacetimeGrantValue.get(eIndex);
 }
 
 
@@ -1845,7 +1795,7 @@ void CvTeamAI::AI_setEnemyPeacetimeGrantValue(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiEnemyPeacetimeGrantValue[eIndex] = iNewValue;
+	m_em_iEnemyPeacetimeGrantValue.set(eIndex, iNewValue);
 	FAssert(AI_getEnemyPeacetimeGrantValue(eIndex) >= 0);
 }
 
@@ -1860,7 +1810,7 @@ int CvTeamAI::AI_getDamages(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiDamages[eIndex];
+	return m_em_iDamages.get(eIndex);
 }
 
 
@@ -1868,7 +1818,7 @@ void CvTeamAI::AI_setDamages(TeamTypes eIndex, int iNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiDamages[eIndex] = iNewValue;
+	m_em_iDamages.set(eIndex, iNewValue);
 }
 
 
@@ -1915,8 +1865,8 @@ WarPlanTypes CvTeamAI::AI_getWarPlan(TeamTypes eIndex) const
 	}
 
 	FAssert(eIndex < MAX_TEAMS);
-	FAssert(eIndex != getID() || m_aeWarPlan[eIndex] == NO_WARPLAN);
-	return m_aeWarPlan[eIndex];
+	FAssert(eIndex != getID() || m_em_eWarPlan.get(eIndex) == NO_WARPLAN);
+	return m_em_eWarPlan.get(eIndex);
 }
 
 
@@ -1965,7 +1915,7 @@ void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar
 	{
 		if (bWar || !isAtWar(eIndex))
 		{
-			m_aeWarPlan[eIndex] = eNewValue;
+			m_em_eWarPlan.set(eIndex, eNewValue);
 
 			AI_setWarPlanStateCounter(eIndex, 0);
 
@@ -2064,75 +2014,19 @@ int CvTeamAI::AI_targetValidity(TeamTypes eTeam) const
 
 void CvTeamAI::read(FDataStreamBase* pStream)
 {
-	CvTeam::read(pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	uint iSize;
-	pStream->Read(&iSize);
-	if (iSize > 0)
-	{
-		m_aiEnemyCityDistance.resize(iSize);
-		pStream->Read(iSize, &m_aiEnemyCityDistance[0]);
-	}
-	if (uiFlag > 0)
-	{
-		pStream->Read(&iSize);
-		if (iSize > 0)
-		{
-			m_aiEnemyUnitDistance.resize(iSize);
-			pStream->Read(iSize, &m_aiEnemyUnitDistance[0]);
-		}
-	}
-	pStream->Read(MAX_TEAMS, m_aiWarPlanStateCounter);
-	pStream->Read(MAX_TEAMS, m_aiAtWarCounter);
-	pStream->Read(MAX_TEAMS, m_aiAtPeaceCounter);
-	pStream->Read(MAX_TEAMS, m_aiHasMetCounter);
-	pStream->Read(MAX_TEAMS, m_aiOpenBordersCounter);
-	pStream->Read(MAX_TEAMS, m_aiDefensivePactCounter);
-	pStream->Read(MAX_TEAMS, m_aiShareWarCounter);
-	pStream->Read(MAX_TEAMS, m_aiWarSuccess);
-	pStream->Read(MAX_TEAMS, m_aiEnemyPeacetimeTradeValue);
-	pStream->Read(MAX_TEAMS, m_aiEnemyPeacetimeGrantValue);
-	pStream->Read(MAX_TEAMS, m_aiDamages);
-
-	pStream->Read(MAX_TEAMS, (int*)m_aeWarPlan);
-	pStream->Read((int*)&m_eWorstEnemy);
+	read(reader);
 }
 
 
 void CvTeamAI::write(FDataStreamBase* pStream)
 {
-	CvTeam::write(pStream);
-
-	uint uiFlag=1;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_aiEnemyCityDistance.size());
-	if (!m_aiEnemyCityDistance.empty())
-	{
-		pStream->Write(m_aiEnemyCityDistance.size(), &m_aiEnemyCityDistance[0]);
-	}
-	pStream->Write(m_aiEnemyUnitDistance.size());
-	if (!m_aiEnemyUnitDistance.empty())
-	{
-		pStream->Write(m_aiEnemyUnitDistance.size(), &m_aiEnemyUnitDistance[0]);
-	}
-	pStream->Write(MAX_TEAMS, m_aiWarPlanStateCounter);
-	pStream->Write(MAX_TEAMS, m_aiAtWarCounter);
-	pStream->Write(MAX_TEAMS, m_aiAtPeaceCounter);
-	pStream->Write(MAX_TEAMS, m_aiHasMetCounter);
-	pStream->Write(MAX_TEAMS, m_aiOpenBordersCounter);
-	pStream->Write(MAX_TEAMS, m_aiDefensivePactCounter);
-	pStream->Write(MAX_TEAMS, m_aiShareWarCounter);
-	pStream->Write(MAX_TEAMS, m_aiWarSuccess);
-	pStream->Write(MAX_TEAMS, m_aiEnemyPeacetimeTradeValue);
-	pStream->Write(MAX_TEAMS, m_aiEnemyPeacetimeGrantValue);
-	pStream->Write(MAX_TEAMS, m_aiDamages);
-
-	pStream->Write(MAX_TEAMS, (int*)m_aeWarPlan);
-	pStream->Write(m_eWorstEnemy);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }
 
 // Protected Functions...

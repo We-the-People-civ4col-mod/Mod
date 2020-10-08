@@ -1,6 +1,8 @@
 #include "CvGameCoreDLL.h"
 #include "CvDiploParameters.h"
 
+#include "CvSavegame.h"
+
 CvDiploParameters::CvDiploParameters(PlayerTypes ePlayer) :
 	m_eWhoTalkingTo(ePlayer),
 	m_eCommentType(NO_DIPLOCOMMENT),
@@ -12,14 +14,14 @@ CvDiploParameters::CvDiploParameters(PlayerTypes ePlayer) :
 	m_bOurOffering(false),
 	m_bTheirOffering(false)
 {
-	m_ourOffer.clear();
-	m_theirOffer.clear();
+	m_OurOffer.clear();
+	m_TheirOffer.clear();
 }
 
 CvDiploParameters::~CvDiploParameters()
 {
-	m_ourOffer.clear();
-	m_theirOffer.clear();
+	m_OurOffer.clear();
+	m_TheirOffer.clear();
 }
 
 void CvDiploParameters::setWhoTalkingTo(PlayerTypes eWhoTalkingTo)
@@ -62,7 +64,7 @@ void CvDiploParameters::addDiploCommentVariable(int iArg)
 
 void CvDiploParameters::addDiploCommentVariable(const FVariable& var)
 {
-	m_diploCommentArgs.push_back(var);
+	m_DiploCommentArgs.push_back(var);
 }
 
 DiploCommentTypes CvDiploParameters::getDiploComment() const
@@ -74,34 +76,34 @@ void CvDiploParameters::setOurOfferList(const CLinkList<TradeData>& ourOffer)
 {
 	CLLNode<TradeData> *pNode;
 
-	m_ourOffer.clear();
+	m_OurOffer.clear();
 
 	for (pNode = ourOffer.head(); pNode; pNode = ourOffer.next(pNode))
 	{
-		m_ourOffer.insertAtEnd(pNode->m_data);
+		m_OurOffer.insertAtEnd(pNode->m_data);
 	}
 }
 
 const CLinkList<TradeData>& CvDiploParameters::getOurOfferList() const
 {
-	return m_ourOffer;
+	return m_OurOffer;
 }
 
 void CvDiploParameters::setTheirOfferList(const CLinkList<TradeData>& theirOffer)
 {
 	CLLNode<TradeData> *pNode;
 
-	m_theirOffer.clear();
+	m_TheirOffer.clear();
 
 	for (pNode = theirOffer.head(); pNode; pNode = theirOffer.next(pNode))
 	{
-		m_theirOffer.insertAtEnd(pNode->m_data);
+		m_TheirOffer.insertAtEnd(pNode->m_data);
 	}
 }
 
 const CLinkList<TradeData>& CvDiploParameters::getTheirOfferList() const
 {
-	return m_theirOffer;
+	return m_TheirOffer;
 }
 
 void CvDiploParameters::setRenegotiate(bool bValue)
@@ -208,58 +210,16 @@ void CvDiploParameters::setCity(const IDInfo& kCity)
 
 void CvDiploParameters::read(FDataStreamBase& stream)
 {
-	int iType;
-	uint uiFlag=0;
-	stream.Read(&uiFlag);	// flags for expansion
+	CvSavegameReaderBase readerbase(&stream);
+	CvSavegameReader reader(readerbase);
 
-	stream.Read(&iType);
-	m_eWhoTalkingTo = (PlayerTypes)iType;
-	stream.Read(&iType);
-	m_eCommentType = (DiploCommentTypes)iType;
-	m_ourOffer.Read(&stream);
-	m_theirOffer.Read(&stream);
-	stream.Read(&m_bRenegotiate);
-	stream.Read(&m_bAIContact);
-	stream.Read(&m_iData);
-	stream.Read(&m_bHumanDiplo);
-	stream.Read(&m_bOurOffering);
-	stream.Read(&m_bTheirOffering);
-	stream.ReadString(m_szChatText);
-
-	// read diplo args vec
-	int i, iSize;
-	stream.Read(&iSize);
-	m_diploCommentArgs.resize(iSize);
-	for(i=0;i<iSize;i++)
-		m_diploCommentArgs[i].Read(&stream);
-
-	m_kTransport.read(&stream);
-	m_kCity.read(&stream);
+	read(reader);
 }
 
-void CvDiploParameters::write(FDataStreamBase& stream) const
+void CvDiploParameters::write(FDataStreamBase& stream)
 {
-	uint uiFlag=0;
-	stream.Write(uiFlag);		// flag for expansion
-
-	stream.Write(m_eWhoTalkingTo);
-	stream.Write(m_eCommentType);
-	m_ourOffer.Write(&stream);
-	m_theirOffer.Write(&stream);
-	stream.Write(m_bRenegotiate);
-	stream.Write(m_bAIContact);
-	stream.Write(m_iData);
-	stream.Write(m_bHumanDiplo);
-	stream.Write(m_bOurOffering);
-	stream.Write(m_bTheirOffering);
-	stream.WriteString(m_szChatText);
-
-	// write diplo args vec
-	int i, iSize = m_diploCommentArgs.size();
-	stream.Write(iSize);
-	for(i=0;i<iSize;i++)
-		m_diploCommentArgs[i].Write(&stream);
-
-	m_kTransport.write(&stream);
-	m_kCity.write(&stream);
+	CvSavegameWriterBase writerbase(&stream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

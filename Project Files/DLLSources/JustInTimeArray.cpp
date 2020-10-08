@@ -9,6 +9,8 @@
 
 #include "InfoArray.h"
 
+#include "CvSavegame.h"
+
 template<class T>
 JustInTimeArray<T>::JustInTimeArray(JITarrayTypes eType, T eDefault)
 : m_tArray(NULL)
@@ -291,6 +293,16 @@ int JustInTimeArray<T>::getPositiveCount() const
 }
 
 template<class T>
+T JustInTimeArray<T>::getMax() const
+{
+	if (!isAllocated())
+	{
+		return m_eDefault ;
+	}
+	return *std::max_element(m_tArray, m_tArray + m_iLength);
+}
+
+template<class T>
 int JustInTimeArray<T>::safeSet(T value, int iIndex)
 {
 	if (iIndex >= 0 && iIndex < this->length())
@@ -327,6 +339,25 @@ bool JustInTimeArray<T>::hasContent()
 
 	reset();
 	return false;
+}
+
+template<class T>
+int JustInTimeArray<T>::getFirstNoneDefault()
+{
+	if (m_tArray == NULL)
+	{
+		return NO_NONEDEFAULT_ARRAY;
+	}
+	for (int iIterator = 0; iIterator < m_iLength; ++iIterator)
+	{
+		if (m_tArray[iIterator] != m_eDefault)
+		{
+			return iIterator;
+		}
+	}
+
+	reset();
+	return NO_NONEDEFAULT_ARRAY;
 }
 
 template<class T>
@@ -444,6 +475,60 @@ void JustInTimeArray<T>::Write(FDataStreamBase* pStream)
 		pStream->Write(iLength, m_tArray);
 	}
 }
+
+template<class T>
+void JustInTimeArray<T>::Read(CvSavegameReader& reader)
+{
+	reset();
+
+	unsigned short iStart = NO_NONEDEFAULT_ARRAY;
+	reader.Read(iStart);
+
+	if (iStart == NO_NONEDEFAULT_ARRAY)
+	{
+		return;
+	}
+
+	unsigned short iLength = 0;
+	reader.Read(iLength);
+
+	for (int i = iStart; i < iLength; ++i)
+	{
+		T eBuffer;
+		reader.Read(eBuffer);
+		int iNewIndex = reader.ConvertIndex(getType(), i);
+		if (iNewIndex >= 0 && iNewIndex < m_iLength)
+		{
+			set(eBuffer, iNewIndex);
+		}
+	}
+}
+
+
+template<class T>
+void JustInTimeArray<T>::Write(CvSavegameWriter& writer)
+{
+	unsigned short iStart = this->getFirstNoneDefault();
+	unsigned short iLength = this->getNumUsedElements();
+
+	writer.Write(iStart);
+
+	if (iStart == NO_NONEDEFAULT_ARRAY)
+	{
+		return;
+	}
+
+	// the conversion table will be needed on load
+	// add one if it's not already added
+	writer.GetXmlByteSize(this->getType());
+
+	writer.Write(iLength);
+	for (int i = iStart; i < iLength; ++i)
+	{
+		writer.Write(get(i));
+	}
+}
+
 
 template<class T>
 void JustInTimeArray<T>::allocate()

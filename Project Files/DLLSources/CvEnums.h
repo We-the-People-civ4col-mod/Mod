@@ -122,6 +122,8 @@ enum DllExport DirectionTypes
 	DIRECTION_SOUTHWEST_MASK = 1 << DIRECTION_SOUTHWEST,
 	DIRECTION_WEST_MASK = 1 << DIRECTION_WEST,
 	DIRECTION_NORTHWEST_MASK = 1 << DIRECTION_NORTHWEST,
+
+	FIRST_DIRECTION = 0,
 };
 
 enum DllExport CardinalDirectionTypes
@@ -152,6 +154,23 @@ enum DllExport RotationTypes
 	ROTATE_270CW_MASK	= 1 << ROTATE_270CW,
 };
 
+enum CityPlotTypes
+{
+	NO_CITY_PLOT = -1,
+	FIRST_CITY_PLOT = 0,
+
+	NUM_CITY_PLOTS_1_PLOT = 9,
+	NUM_CITY_PLOTS_2_PLOTS = 25,
+
+#ifdef CHECK_GLOBAL_CONSTANTS
+	CITY_PLOTS_RADIUS,
+	NUM_CITY_PLOTS,
+	CITY_PLOTS_DIAMETER,
+#endif
+};
+
+#define NUM_CityPlot_TYPES NUM_CITY_PLOTS
+
 // camera wrap helper
 enum DllExport WrapDirection
 {
@@ -176,11 +195,19 @@ enum DllExport WrapDirection
 enum DllExport ColorTypes
 {
 	NO_COLOR = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_COLOR_TYPES,
+#endif
+	COMPILE_TIME_NUM_COLOR_TYPES = MAX_SHORT,
 };
 
 enum DllExport PlayerColorTypes
 {
 	NO_PLAYERCOLOR = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_PLAYERCOLOR_TYPES,
+#endif
+	COMPILE_TIME_NUM_PLAYERCOLOR_TYPES = MAX_SHORT,
 };
 
 //Warning: these values correspond to locations in the plot texture [JW]
@@ -784,6 +811,10 @@ enum DllExport TurnTimerTypes
 enum DllExport ArtStyleTypes
 {
 	NO_ARTSTYLE = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_ARTSTYLE_TYPES,
+#endif
+	COMPILE_TIME_NUM_ARTSTYLE_TYPES = MAX_SHORT,
 };
 
 //Androrc UnitArtStyles
@@ -842,12 +873,18 @@ enum DllExport TeamTypes
 {
 	UNKNOWN_TEAM = -2,
 	NO_TEAM = -1,
+	FIRST_TEAM = 0,
+	NUM_TEAM_TYPES = MAX_TEAMS,
+	COMPILE_TIME_NUM_TEAM_TYPES = NUM_TEAM_TYPES,
 };
 
 enum DllExport PlayerTypes
 {
 	UNKNOWN_PLAYER = -2,
 	NO_PLAYER = -1,
+	FIRST_PLAYER = 0,
+	NUM_PLAYER_TYPES = MAX_PLAYERS,
+	COMPILE_TIME_NUM_PLAYER_TYPES = NUM_PLAYER_TYPES,
 };
 
 enum DllExport OrderTypes
@@ -1039,6 +1076,10 @@ enum DllExport DenialTypes
 enum DllExport SpecialUnitTypes
 {
 	NO_SPECIALUNIT = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_SPECIALUNIT_TYPES,
+#endif
+	COMPILE_TIME_NUM_SPECIALUNIT_TYPES = MAX_SHORT,
 };
 
 /*
@@ -1386,8 +1427,9 @@ enum DllExport WarPlanTypes
 	WARPLAN_EXTORTION,
 
 #ifdef _USRDLL
-	NUM_WARPLAN_TYPES
+	NUM_WARPLAN_TYPES,
 #endif
+	COMPILE_TIME_NUM_WARPLAN_TYPES = NUM_WARPLAN_TYPES,
 };
 
 enum DllExport AreaAITypes
@@ -1403,8 +1445,9 @@ enum DllExport AreaAITypes
 	AREAAI_NEUTRAL,
 
 #ifdef _USRDLL
-	NUM_AREAAI_TYPES
+	NUM_AREAAI_TYPES,
 #endif
+	COMPILE_TIME_NUM_AREAAI_TYPES = NUM_AREAAI_TYPES,
 };
 
 enum DllExport EmotionTypes
@@ -1418,8 +1461,9 @@ enum DllExport EmotionTypes
 	EMOTION_SUBMISSION,
 
 #ifdef _USRDLL
-	NUM_EMOTION_TYPES
+	NUM_EMOTION_TYPES,
 #endif
+	COMPILE_TIME_NUM_EMOTION_TYPES = NUM_EMOTION_TYPES,
 };
 
 enum DllExport StrategyTypes
@@ -1442,8 +1486,9 @@ enum DllExport StrategyTypes
 	STRATEGY_REVOLUTION_DECLARING,
 	STRATEGY_REVOLUTION,
 #ifdef _USRDLL
-	NUM_STRATEGY_TYPES
+	NUM_STRATEGY_TYPES,
 #endif
+	COMPILE_TIME_NUM_STRATEGY_TYPES = NUM_STRATEGY_TYPES,
 
 };
 
@@ -1696,7 +1741,14 @@ enum DllExport DiploEventTypes
 
 enum DllExport DiploCommentTypes
 {
-	NO_DIPLOCOMMENT = -1
+	NO_DIPLOCOMMENT = -1,
+	//DiploCommentTypes is used as DiplomacyTypes, but cant be changed because of the exe.
+	//For the Savegame to write the right size the variables force the enum to have the right width
+	#ifdef _USRDLL
+	NUM_DIPLOCOMMENT_TYPES = COMPILE_TIME_NUM_DIPLOMACY_TYPES,
+	#endif
+
+	COMPILE_TIME_NUM_DIPLOCOMMENT_TYPES = NUM_DIPLOCOMMENT_TYPES
 };
 
 enum DllExport NetContactTypes
@@ -1730,8 +1782,11 @@ enum DllExport ContactTypes
 	// R&R, ray, Natives raiding party - END
 
 #ifdef _USRDLL
-	NUM_CONTACT_TYPES
+	NUM_CONTACT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_CONTACT_TYPES = NUM_CONTACT_TYPES,
+
 };
 
 enum DllExport MemoryTypes
@@ -1762,8 +1817,10 @@ enum DllExport MemoryTypes
 	MEMORY_MISSIONARY_FAIL,
 
 #ifdef _USRDLL
-	NUM_MEMORY_TYPES
+	NUM_MEMORY_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_MEMORY_TYPES = NUM_MEMORY_TYPES,
 };
 
 enum DllExport AttitudeTypes
@@ -1830,8 +1887,11 @@ enum DllExport FeatTypes
 	FEAT_PAD,
 
 #ifdef _USRDLL
-	NUM_FEAT_TYPES
+	NUM_FEAT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_FEAT_TYPES = NUM_FEAT_TYPES
+
 };
 
 enum DllExport SaveGameTypes
@@ -2558,6 +2618,7 @@ enum JITarrayTypes
 {
 	NO_JIT_ARRAY_TYPE = -1,
 
+	JIT_ARRAY_ACHIEVE,
 	JIT_ARRAY_ART_STYLE,
 	JIT_ARRAY_BONUS,
 	JIT_ARRAY_BUILD,
@@ -2568,9 +2629,11 @@ enum JITarrayTypes
 	JIT_ARRAY_CIVIC,
 	JIT_ARRAY_CIVIC_OPTION,
 	JIT_ARRAY_CIVILIZATION,
+	JIT_ARRAY_CLIMATE,
 	JIT_ARRAY_COLOR,
 	JIT_ARRAY_CULTURE,
 	JIT_ARRAY_DIPLO,
+	JIT_ARRAY_DOMAIN,
 	JIT_ARRAY_EMPHASIZE,
 	JIT_ARRAY_ERA,
 	JIT_ARRAY_EUROPE,
@@ -2580,10 +2643,12 @@ enum JITarrayTypes
 	JIT_ARRAY_FATHER_POINT,
 	JIT_ARRAY_FEATURE,
 	JIT_ARRAY_GAME_OPTION,
+	JIT_ARRAY_GAME_SPEED,
 	JIT_ARRAY_GOODY,
 	JIT_ARRAY_HANDICAP,
 	JIT_ARRAY_HURRY,
 	JIT_ARRAY_IMPROVEMENT,
+	JIT_ARRAY_INVISIBLE,
 	JIT_ARRAY_LEADER_HEAD,
 	JIT_ARRAY_MEMORY,
 	JIT_ARRAY_PLAYER_COLOR,
@@ -2591,6 +2656,7 @@ enum JITarrayTypes
 	JIT_ARRAY_PROFESSION,
 	JIT_ARRAY_PROMOTION,
 	JIT_ARRAY_ROUTE,
+	JIT_ARRAY_SEA_LEVEL,
 	JIT_ARRAY_TERRAIN,
 	JIT_ARRAY_TRAIT,
 	JIT_ARRAY_UNIT,
@@ -2599,6 +2665,7 @@ enum JITarrayTypes
 	JIT_ARRAY_UNIT_COMBAT,
 	JIT_ARRAY_UNIT_SPECIAL,
 	JIT_ARRAY_VICTORY,
+	JIT_ARRAY_WORLD_SIZE,
 	JIT_ARRAY_YIELD,
 
 
@@ -2621,7 +2688,6 @@ enum JITarrayTypes
 	JIT_ARRAY_EMOTION,
 	JIT_ARRAY_FEAT,
 	JIT_ARRAY_MISSION_AI,
-	JIT_ARRAY_PLAYER,
 	JIT_ARRAY_STRATEGY,
 	
 	// types used by InfoArray
@@ -2657,6 +2723,25 @@ static inline T operator++(T& c, int)
 {
 	T cache = c;
 	c = (T)(c + 1);
+	return cache;
+}
+
+// overloaded -- for enum types
+
+// prefix
+template <class T>
+static inline T& operator--(T& c)
+{
+	c = (T)(c - 1);
+	return c;
+}
+
+// postfix
+template <class T>
+static inline T operator--(T& c, int)
+{
+	T cache = c;
+	c = (T)(c - 1);
 	return cache;
 }
 

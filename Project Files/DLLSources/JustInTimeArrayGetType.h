@@ -5,6 +5,15 @@
 // Intended usage: functions, which needs the JITarrayTypes for a template argument
 
 
+static inline JITarrayTypes getJITarrayType(AchieveTypes var) {
+	return JIT_ARRAY_ACHIEVE;
+}
+
+static inline JITarrayTypes getJITarrayType(ArtStyleTypes var)
+{
+	return JIT_ARRAY_ART_STYLE;
+}
+
 static inline JITarrayTypes getJITarrayType(BonusTypes var)
 {
 	return JIT_ARRAY_BONUS;
@@ -45,6 +54,16 @@ static inline JITarrayTypes getJITarrayType(CivicOptionTypes var)
 	return JIT_ARRAY_CIVIC_OPTION;
 }
 
+static inline JITarrayTypes getJITarrayType(CivilizationTypes var)
+{
+	return JIT_ARRAY_CIVILIZATION;
+}
+
+static inline JITarrayTypes getJITarrayType(ClimateTypes var)
+{
+	return JIT_ARRAY_CLIMATE;
+}
+
 static inline JITarrayTypes getJITarrayType(ColorTypes var)
 {
 	return JIT_ARRAY_COLOR;
@@ -53,6 +72,11 @@ static inline JITarrayTypes getJITarrayType(ColorTypes var)
 static inline JITarrayTypes getJITarrayType(CultureLevelTypes var)
 {
 	return JIT_ARRAY_CULTURE;
+}
+
+static inline JITarrayTypes getJITarrayType(DiplomacyTypes var)
+{
+	return JIT_ARRAY_DIPLO;
 }
 
 static inline JITarrayTypes getJITarrayType(EraTypes var)
@@ -70,6 +94,11 @@ static inline JITarrayTypes getJITarrayType(EuropeTypes var)
 	return JIT_ARRAY_EUROPE;
 }
 
+static inline JITarrayTypes getJITarrayType(EventTypes var)
+{
+	return JIT_ARRAY_EVENT;
+}
+
 static inline JITarrayTypes getJITarrayType(EventTriggerTypes var)
 {
 	return JIT_ARRAY_EVENT_TRIGGER;
@@ -85,9 +114,24 @@ static inline JITarrayTypes getJITarrayType(FatherPointTypes var)
 	return JIT_ARRAY_FATHER_POINT;
 }
 
+static inline JITarrayTypes getJITarrayType(FeatTypes var)
+{
+	return JIT_ARRAY_FEAT;
+}
+
 static inline JITarrayTypes getJITarrayType(FeatureTypes var)
 {
 	return JIT_ARRAY_FEATURE;
+}
+
+static inline JITarrayTypes getJITarrayType(GameOptionTypes var)
+{
+	return JIT_ARRAY_GAME_OPTION;
+}
+
+static inline JITarrayTypes getJITarrayType(GameSpeedTypes var)
+{
+	return JIT_ARRAY_GAME_SPEED;
 }
 
 static inline JITarrayTypes getJITarrayType(GoodyTypes var)
@@ -110,9 +154,29 @@ static inline JITarrayTypes getJITarrayType(ImprovementTypes var)
 	return JIT_ARRAY_IMPROVEMENT;
 }
 
+static inline JITarrayTypes getJITarrayType(InvisibleTypes var)
+{
+	return JIT_ARRAY_INVISIBLE;
+}
+
 static inline JITarrayTypes getJITarrayType(LeaderHeadTypes var)
 {
 	return JIT_ARRAY_LEADER_HEAD;
+}
+
+static inline JITarrayTypes getJITarrayType(MemoryTypes var)
+{
+	return JIT_ARRAY_MEMORY;
+}
+
+static inline JITarrayTypes getJITarrayType(PlayerColorTypes var)
+{
+	return JIT_ARRAY_PLAYER_COLOR;
+}
+
+static inline JITarrayTypes getJITarrayType(PlayerOptionTypes var)
+{
+	return JIT_ARRAY_PLAYER_OPTION;
 }
 
 static inline JITarrayTypes getJITarrayType(ProfessionTypes var)
@@ -128,6 +192,11 @@ static inline JITarrayTypes getJITarrayType(PromotionTypes var)
 static inline JITarrayTypes getJITarrayType(RouteTypes var)
 {
 	return JIT_ARRAY_ROUTE;
+}
+
+static inline JITarrayTypes getJITarrayType(SeaLevelTypes var)
+{
+	return JIT_ARRAY_SEA_LEVEL;
 }
 
 static inline JITarrayTypes getJITarrayType(TerrainTypes var)
@@ -163,6 +232,16 @@ static inline JITarrayTypes getJITarrayType(UnitCombatTypes var)
 static inline JITarrayTypes getJITarrayType(SpecialUnitTypes var)
 {
 	return JIT_ARRAY_UNIT_SPECIAL;
+}
+
+static inline JITarrayTypes getJITarrayType(VictoryTypes var)
+{
+	return JIT_ARRAY_VICTORY;
+}
+
+static inline JITarrayTypes getJITarrayType(WorldSizeTypes var)
+{
+	return JIT_ARRAY_WORLD_SIZE;
 }
 
 static inline JITarrayTypes getJITarrayType(YieldTypes var)

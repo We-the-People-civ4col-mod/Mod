@@ -2,15 +2,16 @@
 #include "CvGameCoreDLL.h"
 #include "CvTradeRoute.h"
 #include "CvDLLInterfaceIFaceBase.h"
+#include "CvSavegame.h"
 
 CvTradeRouteGroup::CvTradeRouteGroup() 
 {
-	m_routes.clear();
+	m_Routes.clear();
 }
 
 CvTradeRouteGroup::~CvTradeRouteGroup()
 {
-	m_routes.clear();
+	m_Routes.clear();
 }
 
 int CvTradeRouteGroup::getID() const
@@ -26,7 +27,7 @@ void CvTradeRouteGroup::setID(int iId)
 void CvTradeRouteGroup::addRoute(CvTradeRoute* tradeRoute)
 {	
 
-	for (std::vector<CvTradeRoute>::iterator it = m_routes.begin(); it != m_routes.end(); ++it)
+	for (std::vector<CvTradeRoute>::iterator it = m_Routes.begin(); it != m_Routes.end(); ++it)
 	{
 		CvTradeRoute pTradeRoute = *it;
 		if (pTradeRoute.getSourceCity() == tradeRoute->getSourceCity()
@@ -38,7 +39,7 @@ void CvTradeRouteGroup::addRoute(CvTradeRoute* tradeRoute)
 	}
 	
 		
-	m_routes.push_back(*tradeRoute);
+	m_Routes.push_back(*tradeRoute);
 	
 }
 
@@ -60,7 +61,7 @@ void CvTradeRouteGroup::addRoute(const IDInfo& kSource, const IDInfo& kDestinati
 		return;
 	}
 
-	for (std::vector<CvTradeRoute>::iterator it = m_routes.begin(); it != m_routes.end(); ++it)
+	for (std::vector<CvTradeRoute>::iterator it = m_Routes.begin(); it != m_Routes.end(); ++it)
 	{
 		CvTradeRoute pTradeRoute = *it;
 		if (pTradeRoute.getSourceCity() == kSource
@@ -74,18 +75,18 @@ void CvTradeRouteGroup::addRoute(const IDInfo& kSource, const IDInfo& kDestinati
 	CvTradeRoute pTradeRoute = CvTradeRoute();
 
 	pTradeRoute.init(kSource, kDestination, eYield);	
-	m_routes.push_back(pTradeRoute);
+	m_Routes.push_back(pTradeRoute);
 	
 	
 }
 
 void CvTradeRouteGroup::removeRoute(int routeId)
 {
-	for (std::vector<CvTradeRoute>::iterator it = m_routes.begin(); it != m_routes.end(); )
+	for (std::vector<CvTradeRoute>::iterator it = m_Routes.begin(); it != m_Routes.end(); )
 	{
 		if((*it).getID() == routeId)
 		{
-			it = m_routes.erase(it);
+			it = m_Routes.erase(it);
 		}
 		else 
 			++it;
@@ -94,17 +95,17 @@ void CvTradeRouteGroup::removeRoute(int routeId)
 
 void CvTradeRouteGroup::clearRoutes()
 {
-	m_routes.clear();
+	m_Routes.clear();
 }
 
 int CvTradeRouteGroup::getRouteCount() const
 {
-	return m_routes.size();
+	return m_Routes.size();
 }
 
 CvTradeRoute* CvTradeRouteGroup::getRouteByIndex(int iIdx)
 {
-	return &(m_routes.at(iIdx));
+	return &(m_Routes.at(iIdx));
 }
 
 const CvWString CvTradeRouteGroup::getName(uint uiForm) const
@@ -118,37 +119,4 @@ void CvTradeRouteGroup::setName(const wchar* szNewValue)
 	gDLL->stripSpecialCharacters(szName);
 	if (!isEmpty(szName))
 		m_sName = szName;
-}
-
-
-void CvTradeRouteGroup::read(FDataStreamBase* pStream)
-{
-	pStream->Read(&m_iId);
-	pStream->ReadString(m_sName);
-
-	{	
-		int iNumElts;
-		pStream->Read(&iNumElts);
-		m_routes.clear();
-		for (int i = 0; i < iNumElts; ++i)
-		{
-			CvTradeRoute tradeRoute;
-			tradeRoute.read(pStream);
-			m_routes.push_back(tradeRoute);
-		}
-
-	}
-	
-}
-
-void CvTradeRouteGroup::write(FDataStreamBase* pStream)
-{	
-	pStream->Write(m_iId);	
-	pStream->WriteString(m_sName);
-		
-	pStream->Write(m_routes.size());
-	for (std::vector<CvTradeRoute>::iterator it = m_routes.begin(); it != m_routes.end(); ++it)
-	{
-		(*it).write(pStream);
-	}
 }

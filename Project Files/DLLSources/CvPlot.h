@@ -9,6 +9,8 @@
 #include "LinkedList.h"
 #include <bitset>
 
+#include "CvPlotFunctions.h"
+
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 
 class CvArea;
@@ -271,7 +273,7 @@ public:
 #ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
-		return (PlayerTypes)m_eOwner;
+		return m_eOwner;
 	}
 #endif
 	void setOwner(PlayerTypes eNewValue, bool bCheckUnits);
@@ -310,7 +312,7 @@ public:
 	void setMinOriginalStartDist(int iNewValue);
 	int getRiverCrossingCount() const;
 	void changeRiverCrossingCount(int iChange);
-	short* getYield();
+	const EnumMap<YieldTypes, short> getYield() const;
 	DllExport int getYield(YieldTypes eIndex) const;
 	
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -405,9 +407,9 @@ public:
 	DllExport CvUnit* getCenterUnit() const;
 	DllExport CvUnit* getDebugCenterUnit() const;
 	void setCenterUnit(CvUnit* pNewValue);
-	int getCultureRangeCities(PlayerTypes eOwnerIndex, int iRangeIndex) const;
-	bool isCultureRangeCity(PlayerTypes eOwnerIndex, int iRangeIndex) const;
-	void changeCultureRangeCities(PlayerTypes eOwnerIndex, int iRangeIndex, int iChange);
+	int getCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex) const;
+	bool isCultureRangeCity(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex) const;
+	void changeCultureRangeCities(PlayerTypes eOwnerIndex, CultureLevelTypes eRangeIndex, int iChange);
 	int getInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInvisible) const;
 	bool isInvisibleVisible(TeamTypes eTeam, InvisibleTypes eInvisible) const;
 	void changeInvisibleVisibilityCount(TeamTypes eTeam, InvisibleTypes eInvisible, int iChange);
@@ -443,12 +445,14 @@ public:
 	DllExport const char* getResourceLayerIcon(ResourceLayerOptions eOption, CvWStringBuffer& szHelp, PlotIndicatorVisibilityFlags& eVisibilityFlag, ColorTypes& eColor) const;
 	DllExport CvUnit* getUnitLayerUnit(UnitLayerOptionTypes eOption, CvWStringBuffer& szHelp, PlotIndicatorVisibilityFlags& eVisibilityFlag, ColorTypes& eColor, bool& bTestEnemyVisibility) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	void writeDesyncLog(FILE *f);
 
 protected:
+
+	void resetSavedData();
 
 	void updateImpassable();
 
@@ -474,7 +478,7 @@ protected:
 	// Super Forts end
 	// Super Forts begin *bombard*
 	int m_iDefenseDamage;
-	bool m_bBombarded;
+	bool m_bBombarded:1;
 	// Super Forts end
 
 	bool m_bStartingPlot:1;
@@ -488,43 +492,39 @@ protected:
 	bool m_bLayoutStateWorked:1;
 	bool m_bImpassable:1;
 
-	char /*PlayerTypes*/ m_eOwner;
-	short /*PlotTypes*/ m_ePlotType;
-	short /*TerrainTypes*/ m_eTerrainType;
-	short /*FeatureTypes*/ m_eFeatureType;
-	short /*BonusTypes*/ m_eBonusType;
-	short /*ImprovementTypes*/ m_eImprovementType;
-	short /*RouteTypes*/ m_eRouteType;
-	char /*CardinalDirectionTypes*/ m_eRiverNSDirection;
-	char /*CardinalDirectionTypes*/ m_eRiverWEDirection;
-	char /*EuropeTypes*/ m_eEurope;
+	PlotTypes m_ePlotType : 16;
+	TerrainTypes m_eTerrainType : 16;
+	FeatureTypes m_eFeatureType : 16;
+	BonusTypes m_eBonusType : 16;
+	ImprovementTypes m_eImprovementType : 16;
+	RouteTypes m_eRouteType : 16;
+
+	PlayerTypes m_eOwner : 8;
+	CardinalDirectionTypes m_eRiverNSDirection : 8;
+	CardinalDirectionTypes m_eRiverWEDirection : 8;
+	EuropeTypes m_eEurope : 8;
+
+	byte m_bmRiverCrossing;
 
 	IDInfo m_plotCity;
 	IDInfo m_workingCity;
 	IDInfo m_workingCityOverride;
 
-	short* m_aiYield;
-	
-	short* m_aiDangerMap;	// TAC - AI Improved Naval AI - koma13
-	
-	int* m_aiCulture;
-	
-	short* m_aiCultureRangeForts; // Super Forts *culture*
-	
-	int* m_aiFoundValue;
-	char* m_aiPlayerCityRadiusCount;
-	short* m_aiVisibilityCount;
-	char* m_aiRevealedOwner;
+	EnumMap<YieldTypes , short> m_em_iYield;
+	EnumMap<PlayerTypes, short> m_em_iDangerMap;	// TAC - AI Improved Naval AI - koma13
+	EnumMap<PlayerTypes,   int> m_em_iCulture;
+	EnumMap<PlayerTypes, short> m_em_iCultureRangeForts; // Super Forts *culture*
+	EnumMap<PlayerTypes,   int> m_em_iFoundValue;
+	EnumMap<PlayerTypes,  char> m_em_iPlayerCityRadiusCount;
+	EnumMap<TeamTypes  , short> m_em_iVisibilityCount;
+	EnumMap<TeamTypes  , PlayerTypes> m_em_eRevealedOwner;
 
-	bool* m_abRiverCrossing;	// bit vector
-	bool* m_abRevealed;
-
-	short* /*ImprovementTypes*/ m_aeRevealedImprovementType;
-	short* /*RouteTypes*/ m_aeRevealedRouteType;
+	TeamBoolArray m_pab_Revealed;
+	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;
 
 	char* m_szScriptData;
 
-	short* m_paiBuildProgress;
+	EnumMap<BuildTypes, short> m_em_iBuildProgress;
 
 	CvFeature* m_pFeatureSymbol;
 	CvRoute* m_pRouteSymbol;
@@ -535,8 +535,8 @@ protected:
 
 	CvPlotBuilder* m_pPlotBuilder;		// builds bonuses and improvements
 
-	char** m_apaiCultureRangeCities;
-	short** m_apaiInvisibleVisibilityCount;
+	EnumMap2D<PlayerTypes, CultureLevelTypes, char> m_em2_iCultureRangeCities;
+	EnumMap2D<TeamTypes, InvisibleTypes, short> m_em2_iInvisibleVisibilityCount;
 
 	CLinkList<IDInfo> m_units;
 

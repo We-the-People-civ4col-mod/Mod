@@ -14,6 +14,8 @@
 #include "FVariableSystem.h"
 #include "CvGameCoreUtils.h"
 
+#include "CvSavegame.h"
+
 /// xml verification
 #ifdef FASSERT_ENABLE
 
@@ -2374,6 +2376,44 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	if (bLoaded)
 	{
 		CvGameText::readLanguages(this);
+	}
+
+
+	// check that all xml tags have the expected prefix
+	// required as savegames will not save the prefix and it will just be assumed on load
+	{
+		CvString szName;
+		for (JITarrayTypes eType = FIRST_JIT_ARRAY; eType < NUM_JITarrayTypes; ++eType)
+		{
+			{
+				const char* szPrefix = getArrayPrefix(eType);
+				int iLengthPrefix = strlen(szPrefix);
+
+				if (iLengthPrefix == 0)
+				{
+					continue;
+				}
+
+				int iLength = getArrayLength(eType);
+
+				for (int i = 0; i < iLength; ++i)
+				{
+					const char* szType = getArrayType(eType, i);
+
+					szName = szType;
+					szName.resize(iLengthPrefix);
+
+					if (szName.compare(szPrefix) != 0)
+					{
+						FAssertMsg(false, CvString::format("%s is expected to begin with %s", szType, szPrefix).c_str());
+						char szMessage[1024];
+
+						sprintf(szMessage, "%s is expected to begin with %s", szType, szPrefix);
+						gDLL->MessageBox(szMessage, "XML type Error");
+					}
+				}
+			}
+		}
 	}
 
 	DestroyFXml();

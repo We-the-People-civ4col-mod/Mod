@@ -15,6 +15,8 @@
 #include "CvUnit.h"
 //#include "CvStructs.h"
 
+#include "CvSavegame.h"
+
 void IDInfo::read(FDataStreamBase* pStream)
 {
 	pStream->Read((int*)&eOwner);
@@ -25,6 +27,52 @@ void IDInfo::write(FDataStreamBase* pStream) const
 {
 	pStream->Write(eOwner);
 	pStream->Write(iID);
+}
+
+void IDInfo::read(CvSavegameReader& reader)
+{
+	reader.Read(eOwner);
+	reader.Read(iID);
+}
+
+void IDInfo::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eOwner);
+	writer.Write(iID);
+}
+
+void OrderData::read(CvSavegameReader& reader)
+{
+	reader.Read(eOrderType);
+	reader.Read(iData1);
+	reader.Read(iData2);
+	reader.Read(bSave);
+}
+
+void OrderData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eOrderType);
+	writer.Write(iData1);
+	writer.Write(iData2);
+	writer.Write(bSave);
+}
+
+void MissionData::read(CvSavegameReader& reader)
+{
+	reader.Read(eMissionType);
+	reader.Read(iData1);
+	reader.Read(iData2);
+	reader.Read(iFlags);
+	reader.Read(iPushTurn);
+}
+
+void MissionData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eMissionType);
+	writer.Write(iData1);
+	writer.Write(iData2);
+	writer.Write(iFlags);
+	writer.Write(iPushTurn);
 }
 
 void TradeData::read(FDataStreamBase* pStream)
@@ -43,6 +91,24 @@ void TradeData::write(FDataStreamBase* pStream) const
 	m_kTransport.write(pStream);
 	pStream->Write(m_bOffering);
 	pStream->Write(m_bHidden);
+}
+
+void TradeData::read(CvSavegameReader& reader)
+{
+	reader.Read(m_eItemType);
+	reader.Read(m_iData1);
+	m_kTransport.read(reader);
+	reader.Read(m_bOffering);
+	reader.Read(m_bHidden);
+}
+
+void TradeData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(m_eItemType);
+	writer.Write(m_iData1);
+	m_kTransport.write(writer);
+	writer.Write(m_bOffering);
+	writer.Write(m_bHidden);
 }
 
 int EventTriggeredData::getID() const
@@ -89,6 +155,40 @@ void EventTriggeredData::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szGlobalText);
 }
 
+void EventTriggeredData::read(CvSavegameReader& reader)
+{
+	reader.Read(m_iId);
+	reader.Read(m_eTrigger);
+	reader.Read(m_iTurn);
+	reader.Read(m_ePlayer);
+	reader.Read(m_iCityId);
+	reader.Read(m_iPlotX);
+	reader.Read(m_iPlotY);
+	reader.Read(m_iUnitId);
+	reader.Read(m_eOtherPlayer);
+	reader.Read(m_iOtherPlayerCityId);
+	reader.Read(m_eBuilding);
+	reader.Read(m_szText);
+	reader.Read(m_szGlobalText);
+}
+
+void EventTriggeredData::write(CvSavegameWriter& writer) const
+{
+	writer.Write(m_iId);
+	writer.Write(m_eTrigger);
+	writer.Write(m_iTurn);
+	writer.Write(m_ePlayer);
+	writer.Write(m_iCityId);
+	writer.Write(m_iPlotX);
+	writer.Write(m_iPlotY);
+	writer.Write(m_iUnitId);
+	writer.Write(m_eOtherPlayer);
+	writer.Write(m_iOtherPlayerCityId);
+	writer.Write(m_eBuilding);
+	writer.Write(m_szText);
+	writer.Write(m_szGlobalText);
+}
+
 void PlotExtraYield::read(FDataStreamBase* pStream)
 {
 	pStream->Read(&m_iX);
@@ -112,6 +212,28 @@ void PlotExtraYield::write(FDataStreamBase* pStream)
 	}
 }
 
+void PlotExtraYield::read(CvSavegameReader& reader)
+{
+	reader.Read(m_iX);
+	reader.Read(m_iY);
+
+	// use savegame code in EnumMap to allow for xml changes in yield xml
+	EnumMap<YieldTypes, int> tempArray;
+	tempArray.Read(reader);
+	tempArray.copyToVector(m_aeExtraYield);
+}
+
+void PlotExtraYield::write(CvSavegameWriter& writer) const 
+{
+	writer.Write(m_iX);
+	writer.Write(m_iY);
+
+	// use savegame code in EnumMap to allow for xml changes in yield xml
+	EnumMap<YieldTypes, int> tempArray;
+	tempArray.copyFromVector(m_aeExtraYield);
+	tempArray.Write(writer);
+}
+
 void BuildingYieldChange::read(FDataStreamBase* pStream)
 {
 	pStream->Read((int*)&eBuildingClass);
@@ -124,6 +246,20 @@ void BuildingYieldChange::write(FDataStreamBase* pStream)
 	pStream->Write(eBuildingClass);
 	pStream->Write(eYield);
 	pStream->Write(iChange);
+}
+
+void BuildingYieldChange::read(CvSavegameReader& reader)
+{
+	reader.Read(eBuildingClass);
+	reader.Read(eYield);
+	reader.Read(iChange);
+}
+
+void BuildingYieldChange::write(CvSavegameWriter& writer) const
+{
+	writer.Write(eBuildingClass);
+	writer.Write(eYield);
+	writer.Write(iChange);
 }
 
 void checkBattleUnitType(BattleUnitTypes unitType)

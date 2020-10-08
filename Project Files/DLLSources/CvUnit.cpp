@@ -29,6 +29,7 @@
 #include "CvDiploParameters.h"
 #include "CvTradeRoute.h"
 
+#include "CvSavegame.h"
 // Public Functions...
 
 CvUnitTemporaryStrengthModifier::CvUnitTemporaryStrengthModifier(CvUnit* pUnit, ProfessionTypes eProfession) :
@@ -53,45 +54,17 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
-	m_pabHasRealPromotion(NULL),
-	m_paiFreePromotionCount(NULL),
-	m_paiTerrainDoubleMoveCount(NULL),
-	m_paiFeatureDoubleMoveCount(NULL),
-	m_paiExtraTerrainAttackPercent(NULL),
-	m_paiExtraTerrainDefensePercent(NULL),
-	m_paiExtraFeatureAttackPercent(NULL),
-	m_paiExtraFeatureDefensePercent(NULL),
-	m_paiExtraUnitCombatModifier(NULL),
-	m_paiExtraUnitClassAttackModifier(NULL),
-	m_paiExtraUnitClassDefenseModifier(NULL),
+	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
-
-	// TAC - LbD - Ray - START
-	m_LbDrounds(0),
-	m_lastProfession(NO_PROFESSION),
-	// TAC - LbD - Ray - END
-
-	//ray18
-	moneyToBuyLand(0),
-	playerToBuyLand(NO_PLAYER),
-	//ray18 End
 
 	// unit yield cache - start - Nightinggale
 	m_eCachedYield(NO_YIELD),
 	// unit yield cache - end - Nightinggale
 
-	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION),
-
-	// R&R, ray, Natives Trading - START
-	m_AmountForNativeTrade(0),
-	m_YieldForNativeTrade(NO_YIELD)
-	// R&R, ray, Natives Trading - END
+	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION)
 
 {
-	m_aiExtraDomainModifier = new int[NUM_DOMAIN_TYPES];
-
-
 	CvDLLEntity::createUnitEntity(this);		// create and attach entity to unit
 
 	reset(0, NO_UNIT, NO_PLAYER, true);
@@ -109,8 +82,6 @@ CvUnit::~CvUnit()
 	CvDLLEntity::destroyEntity();			// delete CvUnitEntity and detach from us
 
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiExtraDomainModifier);
 }
 
 void CvUnit::reloadEntity()
@@ -352,17 +323,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 void CvUnit::uninit()
 {
-	SAFE_DELETE_ARRAY(m_pabHasRealPromotion);
-	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
-	SAFE_DELETE_ARRAY(m_paiTerrainDoubleMoveCount);
-	SAFE_DELETE_ARRAY(m_paiFeatureDoubleMoveCount);
-	SAFE_DELETE_ARRAY(m_paiExtraTerrainAttackPercent);
-	SAFE_DELETE_ARRAY(m_paiExtraTerrainDefensePercent);
-	SAFE_DELETE_ARRAY(m_paiExtraFeatureAttackPercent);
-	SAFE_DELETE_ARRAY(m_paiExtraFeatureDefensePercent);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitClassAttackModifier);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitClassDefenseModifier);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitCombatModifier);
 }
 
 
@@ -370,109 +330,17 @@ void CvUnit::uninit()
 // Initializes data members that are serialized.
 void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
 
-	m_iID = iID;
-	// TAC - LbD - Ray - START
-	m_LbDrounds = 0 ;
-	m_lastProfession = NO_PROFESSION;
-	// TAC - LbD - Ray - END
-
-	//ray18
-	moneyToBuyLand = 0;
-	playerToBuyLand = NO_PLAYER;
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	m_AmountForNativeTrade = 0;
-	m_YieldForNativeTrade = NO_YIELD;
-	// R&R, ray, Natives Trading - END
-
-	m_iGroupID = FFreeList::INVALID_INDEX;
-	m_iHotKeyNumber = -1;
-	m_iX = INVALID_PLOT_COORD;
-	m_iY = INVALID_PLOT_COORD;
-	m_iLastMoveTurn = 0;
-	m_iGameTurnCreated = 0;
-	m_iDamage = 0;
-	m_iMoves = 0;
-	m_iExperience = 0;
-	m_iLevel = 1;
-	m_iCargo = 0;
-	m_iAttackPlotX = INVALID_PLOT_COORD;
-	m_iAttackPlotY = INVALID_PLOT_COORD;
-	m_iCombatTimer = 0;
-	m_iCombatDamage = 0;
-	m_iFortifyTurns = 0;
-	m_iBlitzCount = 0;
-	m_iAmphibCount = 0;
-	m_iRiverCount = 0;
-	m_iEnemyRouteCount = 0;
-	m_iAlwaysHealCount = 0;
-	m_iHillsDoubleMoveCount = 0;
-	m_iExtraVisibilityRange = 0;
-	m_iExtraMoves = 0;
-	m_iExtraMoveDiscount = 0;
-	m_iExtraWithdrawal = 0;
-	m_iExtraBombardRate = 0;
-	m_iExtraEnemyHeal = 0;
-	m_iExtraNeutralHeal = 0;
-	m_iExtraFriendlyHeal = 0;
-	m_iSameTileHeal = 0;
-	m_iAdjacentTileHeal = 0;
-	m_iExtraCombatPercent = 0;
-	m_iExtraCityAttackPercent = 0;
-	m_iExtraCityDefensePercent = 0;
-	m_iExtraHillsAttackPercent = 0;
-	m_iExtraHillsDefensePercent = 0;
-	m_iExtraDomesticBonusPercent = 0;			
-	m_iPillageChange = 0;
-	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;
-	m_eFacingDirection = DIRECTION_SOUTH;
-	m_iImmobileTimer = 0;
-	m_iYieldStored = 0;
-	m_iExtraWorkRate = 0;
-	m_iUnitTravelTimer = 0;
-	m_iBadCityDefenderCount = 0;
-	m_iUnarmedCount = 0;
-
-	m_bMadeAttack = false;
-	m_bPromotionReady = false;
-	m_bDeathDelay = false;
-	m_bCombatFocus = false;
-	m_bInfoBarDirty = false;
-	m_bColonistLocked = false;
-	m_bGatheringResource = false; //TAC Whaling, ray
-	m_bBarbarian = false; // < JAnimals Mod Start >
-	m_bIgnoreDanger = false; // TAC - Trade Routes Advisor - koma13 - START
-
-	m_eOwner = eOwner;
-	m_eCapturingPlayer = NO_PLAYER;
-	m_eUnitType = eUnit;
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
-	m_eLeaderUnitType = NO_UNIT;
-	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
-	m_eProfession = NO_PROFESSION;
-	m_eUnitTravelState = NO_UNIT_TRAVEL_STATE;
-
-	m_combatUnit.reset();
-	m_transportUnit.reset();
-	m_homeCity.reset();
-	m_iPostCombatPlotIndex = -1;
-
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
-	{
-		m_aiExtraDomainModifier[iI] = 0;
+	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
+	if(eOwner!=NO_PLAYER){
+		setPromotions();
 	}
-
-	clear(m_szName);
-	m_szScriptData ="";
+	m_bInfoBarDirty = false;
+	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
+	m_iUnarmedCount = 0;
 
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
@@ -480,58 +348,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg((0 < GC.getNumPromotionInfos()), "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiFreePromotionCount = new int[GC.getNumPromotionInfos()];
-		m_pabHasRealPromotion = new bool[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-		{
-			m_pabHasRealPromotion[iI] = false;
-			m_paiFreePromotionCount[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumTerrainInfos()), "GC.getNumTerrainInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
-		m_paiTerrainDoubleMoveCount = new int[GC.getNumTerrainInfos()];
-		m_paiExtraTerrainAttackPercent = new int[GC.getNumTerrainInfos()];
-		m_paiExtraTerrainDefensePercent = new int[GC.getNumTerrainInfos()];
-		for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
-		{
-			m_paiTerrainDoubleMoveCount[iI] = 0;
-			m_paiExtraTerrainAttackPercent[iI] = 0;
-			m_paiExtraTerrainDefensePercent[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumFeatureInfos()), "GC.getNumFeatureInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
-		m_paiFeatureDoubleMoveCount = new int[GC.getNumFeatureInfos()];
-		m_paiExtraFeatureDefensePercent = new int[GC.getNumFeatureInfos()];
-		m_paiExtraFeatureAttackPercent = new int[GC.getNumFeatureInfos()];
-		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
-		{
-			m_paiFeatureDoubleMoveCount[iI] = 0;
-			m_paiExtraFeatureAttackPercent[iI] = 0;
-			m_paiExtraFeatureDefensePercent[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitCombatInfos()), "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitCombatModifier = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-		{
-			m_paiExtraUnitCombatModifier[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitClassInfos()), "GC.getNumUnitClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitClassAttackModifier = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiExtraUnitClassAttackModifier[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitClassInfos()), "GC.getNumUnitClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitClassDefenseModifier = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiExtraUnitClassDefenseModifier[iI] = 0;
-		}
-
 		AI_reset();
 	}
 }
@@ -925,7 +741,7 @@ void CvUnit::NotifyEntity(MissionTypes eMission)
 /**                                                                       **/
 /** float CvUnit::NBMOD_GetShipStrength() const                           **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Einheit.                               **/
+/** Ermittelt die Schiffstï¿½rke der Einheit.                               **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -6371,8 +6187,8 @@ bool CvUnit::doAcquireCheckNatives()
 
 		if (eNativeOwner != NO_PLAYER)
 		{
-			moneyToBuyLand = iCost;
-			playerToBuyLand = eNativeOwner;
+			m_iMoneyToBuyLand = iCost;
+			m_ePlayerToBuyLand = eNativeOwner;
 			GET_TEAM(getTeam()).meet(GET_PLAYER(eNativeOwner).getTeam(), false);
 		}
 
@@ -6402,19 +6218,19 @@ bool CvUnit::doAcquireCheckNatives()
 
 void CvUnit::buyLandAfterAcquire()
 {
-	if (playerToBuyLand != NO_PLAYER)
+	if (m_ePlayerToBuyLand != NO_PLAYER)
 	{
 		//resetting to Peace if Acquiring City has caused war
-		if (GET_TEAM(GET_PLAYER(playerToBuyLand).getTeam()).isAtWar(getTeam()))
+		if (GET_TEAM(GET_PLAYER(m_ePlayerToBuyLand).getTeam()).isAtWar(getTeam()))
 		{
-			GET_TEAM(GET_PLAYER(playerToBuyLand).getTeam()).makePeace(getTeam());
-			CvWString szBuffer = gDLL->getText("TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY", GET_PLAYER(playerToBuyLand).getNameKey());
+			GET_TEAM(GET_PLAYER(m_ePlayerToBuyLand).getTeam()).makePeace(getTeam());
+			CvWString szBuffer = gDLL->getText("TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY", GET_PLAYER(m_ePlayerToBuyLand).getNameKey());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitDefeatScript(), MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), NULL, NULL);
 		}
 
-		GET_PLAYER(playerToBuyLand).changeGold((moneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
-		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(playerToBuyLand, moneyToBuyLand);
-		GET_PLAYER(getOwnerINLINE()).changeGold(moneyToBuyLand * -1);		
+		GET_PLAYER(m_ePlayerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
+		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(m_ePlayerToBuyLand, m_iMoneyToBuyLand);
+		GET_PLAYER(getOwnerINLINE()).changeGold(m_iMoneyToBuyLand * -1);		
 	}
 }
 //Ende ray18
@@ -9078,22 +8894,22 @@ int CvUnit::getID() const
 // TAC - LbD - Ray - START
 int CvUnit::getLbDrounds() const
 {
-	return m_LbDrounds;
+	return m_iLbDrounds;
 }
 
 void CvUnit::setLbDrounds(int newRounds)
 {
-	m_LbDrounds = newRounds;
+	m_iLbDrounds = newRounds;
 }
 
 ProfessionTypes CvUnit::getLastLbDProfession() const
 {
-	return m_lastProfession;
+	return m_eLastProfession;
 }
 
 void CvUnit::setLastLbDProfession(ProfessionTypes eProfession)
 {
-	m_lastProfession = eProfession;
+	m_eLastProfession = eProfession;
 }
 // TAC - LbD - Ray - END
 
@@ -11564,7 +11380,7 @@ int CvUnit::getExtraDomainModifier(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiExtraDomainModifier[eIndex];
+	return m_ja_iExtraDomainModifier.get(eIndex);
 }
 
 
@@ -11572,7 +11388,7 @@ void CvUnit::changeExtraDomainModifier(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiExtraDomainModifier[eIndex] = (m_aiExtraDomainModifier[eIndex] + iChange);
+	m_ja_iExtraDomainModifier.add(iChange, eIndex);
 }
 
 
@@ -11672,7 +11488,7 @@ int CvUnit::getTerrainDoubleMoveCount(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiTerrainDoubleMoveCount[eIndex];
+	return m_ja_iTerrainDoubleMoveCount.get(eIndex);
 }
 
 
@@ -11688,7 +11504,7 @@ void CvUnit::changeTerrainDoubleMoveCount(TerrainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiTerrainDoubleMoveCount[eIndex] = (m_paiTerrainDoubleMoveCount[eIndex] + iChange);
+	m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getTerrainDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -11697,7 +11513,7 @@ int CvUnit::getFeatureDoubleMoveCount(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFeatureDoubleMoveCount[eIndex];
+	return m_ja_iFeatureDoubleMoveCount.get(eIndex);
 }
 
 
@@ -11713,7 +11529,7 @@ void CvUnit::changeFeatureDoubleMoveCount(FeatureTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiFeatureDoubleMoveCount[eIndex] = (m_paiFeatureDoubleMoveCount[eIndex] + iChange);
+	m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getFeatureDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -11722,7 +11538,7 @@ int CvUnit::getExtraTerrainAttackPercent(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraTerrainAttackPercent[eIndex];
+	return m_ja_iExtraTerrainAttackPercent.get(eIndex);
 }
 
 
@@ -11733,7 +11549,7 @@ void CvUnit::changeExtraTerrainAttackPercent(TerrainTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraTerrainAttackPercent[eIndex] += iChange;
+		m_ja_iExtraTerrainAttackPercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11743,7 +11559,7 @@ int CvUnit::getExtraTerrainDefensePercent(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraTerrainDefensePercent[eIndex];
+	return m_ja_iExtraTerrainDefensePercent.get(eIndex);
 }
 
 
@@ -11754,7 +11570,7 @@ void CvUnit::changeExtraTerrainDefensePercent(TerrainTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraTerrainDefensePercent[eIndex] += iChange;
+		m_ja_iExtraTerrainDefensePercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11764,7 +11580,7 @@ int CvUnit::getExtraFeatureAttackPercent(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraFeatureAttackPercent[eIndex];
+	return m_ja_iExtraFeatureAttackPercent.get(eIndex);
 }
 
 
@@ -11775,7 +11591,7 @@ void CvUnit::changeExtraFeatureAttackPercent(FeatureTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraFeatureAttackPercent[eIndex] += iChange;
+		m_ja_iExtraFeatureAttackPercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11785,7 +11601,7 @@ int CvUnit::getExtraFeatureDefensePercent(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraFeatureDefensePercent[eIndex];
+	return m_ja_iExtraFeatureDefensePercent.get(eIndex);
 }
 
 
@@ -11796,7 +11612,7 @@ void CvUnit::changeExtraFeatureDefensePercent(FeatureTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraFeatureDefensePercent[eIndex] += iChange;
+		m_ja_iExtraFeatureDefensePercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11806,42 +11622,42 @@ int CvUnit::getExtraUnitClassAttackModifier(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitClassAttackModifier[eIndex];
+	return m_ja_iExtraUnitClassAttackModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitClassAttackModifier(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitClassAttackModifier[eIndex] += iChange;
+	m_ja_iExtraUnitClassAttackModifier.add(iChange, eIndex);
 }
 
 int CvUnit::getExtraUnitClassDefenseModifier(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitClassDefenseModifier[eIndex];
+	return m_ja_iExtraUnitClassDefenseModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitClassDefenseModifier(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitClassDefenseModifier[eIndex] += iChange;
+	m_ja_iExtraUnitClassDefenseModifier.add(iChange, eIndex);
 }
 
 int CvUnit::getExtraUnitCombatModifier(UnitCombatTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitCombatModifier[eIndex];
+	return m_ja_iExtraUnitCombatModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitCombatModifier(UnitCombatTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitCombatModifier[eIndex] += iChange;
+	m_ja_iExtraUnitCombatModifier.add(iChange,eIndex);
 }
 
 bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
@@ -12008,7 +11824,7 @@ bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabHasRealPromotion[eIndex];
+	return m_ba_HasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -12018,7 +11834,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		m_pabHasRealPromotion[eIndex] = bValue;
+		m_ba_HasRealPromotion.set(bValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -12126,40 +11942,23 @@ void CvUnit::resetPromotions()
 	m_iExtraDomesticBonusPercent = 0;
 	m_iPillageChange = 0;
 	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;
+	m_iExperiencePercent = 0;	
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
 
-	for (int iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
-	{
-		m_paiExtraTerrainAttackPercent[iI] = 0;
-		m_paiExtraTerrainDefensePercent[iI] = 0;
-		m_paiTerrainDoubleMoveCount[iI] = 0;
-	}
+	m_ja_iExtraTerrainAttackPercent.reset();
+	m_ja_iExtraTerrainDefensePercent.reset();
+	m_ja_iTerrainDoubleMoveCount.reset();
+	
+	m_ja_iExtraFeatureAttackPercent.reset();
+	m_ja_iExtraFeatureDefensePercent.reset();
+	m_ja_iFeatureDoubleMoveCount.reset();
 
-	for (int iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
-	{
-		m_paiExtraFeatureAttackPercent[iI] = 0;
-		m_paiExtraFeatureDefensePercent[iI] = 0;
-		m_paiFeatureDoubleMoveCount[iI] = 0;
-	}
+	m_ja_iExtraUnitClassAttackModifier.reset();
+	m_ja_iExtraUnitClassDefenseModifier.reset();
 
-	for (int iI = 0; iI < GC.getNumUnitClassInfos(); ++iI)
-	{
-		m_paiExtraUnitClassAttackModifier[iI] = 0;
-		m_paiExtraUnitClassDefenseModifier[iI] = 0;
-	}
+	m_ja_iExtraUnitCombatModifier.reset();
+	m_ja_iExtraDomainModifier.reset();
 
-	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
-	{
-		m_paiExtraUnitCombatModifier[iI] = 0;
-	}
-
-	for (int iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
-	{
-		m_aiExtraDomainModifier[iI] = 0;
-	}
-
-	setPromotions();
 }
 
 void CvUnit::setPromotions(PromotionTypes ePromotion)
@@ -12249,7 +12048,7 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 
 	if (getFreePromotionCount(eIndex) != iValue)
 	{
-		m_paiFreePromotionCount[eIndex] = iValue;
+		m_ja_iFreePromotionCount.set(iValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -12265,7 +12064,7 @@ int CvUnit::getFreePromotionCount(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFreePromotionCount[eIndex];
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 int CvUnit::getSubUnitCount() const
@@ -12313,254 +12112,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 	}
 
 	return false;
-}
-
-void CvUnit::read(FDataStreamBase* pStream)
-{
-	// Init data before load
-	reset();
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iGroupID);
-	pStream->Read(&m_iHotKeyNumber);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iLastMoveTurn);
-	pStream->Read(&m_iGameTurnCreated);
-	pStream->Read(&m_iDamage);
-	pStream->Read(&m_iMoves);
-	pStream->Read(&m_iExperience);
-	pStream->Read(&m_iLevel);
-	pStream->Read(&m_iCargo);
-	pStream->Read(&m_iCargoCapacity);
-	pStream->Read(&m_iAttackPlotX);
-	pStream->Read(&m_iAttackPlotY);
-	pStream->Read(&m_iCombatTimer);
-	pStream->Read(&m_iCombatDamage);
-	pStream->Read(&m_iFortifyTurns);
-	pStream->Read(&m_iBlitzCount);
-	pStream->Read(&m_iAmphibCount);
-	pStream->Read(&m_iRiverCount);
-	pStream->Read(&m_iEnemyRouteCount);
-	pStream->Read(&m_iAlwaysHealCount);
-	pStream->Read(&m_iHillsDoubleMoveCount);
-	pStream->Read(&m_iExtraVisibilityRange);
-	pStream->Read(&m_iExtraMoves);
-	pStream->Read(&m_iExtraMoveDiscount);
-	pStream->Read(&m_iExtraWithdrawal);
-	pStream->Read(&m_iExtraBombardRate);
-	pStream->Read(&m_iExtraEnemyHeal);
-	pStream->Read(&m_iExtraNeutralHeal);
-	pStream->Read(&m_iExtraFriendlyHeal);
-	pStream->Read(&m_iSameTileHeal);
-	pStream->Read(&m_iAdjacentTileHeal);
-	pStream->Read(&m_iExtraCombatPercent);
-	pStream->Read(&m_iExtraCityAttackPercent);
-	pStream->Read(&m_iExtraCityDefensePercent);
-	pStream->Read(&m_iExtraHillsAttackPercent);
-	pStream->Read(&m_iExtraHillsDefensePercent);
-	pStream->Read(&m_iExtraDomesticBonusPercent);	
-	pStream->Read(&m_iPillageChange);
-	pStream->Read(&m_iUpgradeDiscount);
-	pStream->Read(&m_iExperiencePercent);
-	pStream->Read(&m_iBaseCombat);
-	pStream->Read((int*)&m_eFacingDirection);
-	pStream->Read(&m_iImmobileTimer);
-	pStream->Read(&m_iYieldStored);
-	pStream->Read(&m_iExtraWorkRate);
-	pStream->Read((int*)&m_eProfession);
-
-	// TAC - LbD - Ray - START
-	pStream->Read(&m_LbDrounds);
-	pStream->Read((int*)&m_lastProfession);
-	// TAC - LbD - Ray - END
-
-	//ray18
-	pStream->Read(&moneyToBuyLand);
-	pStream->Read((int*)&playerToBuyLand);	
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	pStream->Read(&m_AmountForNativeTrade);
-	pStream->Read((int*)&m_YieldForNativeTrade);
-	// R&R, ray, Natives Trading - END
-
-	pStream->Read(&m_iUnitTravelTimer);
-	pStream->Read(&m_iBadCityDefenderCount);
-	pStream->Read(&m_iUnarmedCount);
-	pStream->Read((int*)&m_eUnitTravelState);
-
-	pStream->Read(&m_bMadeAttack);
-	pStream->Read(&m_bPromotionReady);
-	pStream->Read(&m_bDeathDelay);
-	pStream->Read(&m_bCombatFocus);
-	// m_bInfoBarDirty not saved...
-	pStream->Read(&m_bColonistLocked);
-
-	pStream->Read(&m_bGatheringResource); //TAC Whaling, ray
-	
-	pStream->Read(&m_bIgnoreDanger); // TAC - Trade Routes Advisor - koma13 - START
-	// < JAnimals Mod Start >
-	pStream->Read(&m_bBarbarian);
-	// < JAnimals Mod End >
-	pStream->Read((int*)&m_eOwner);
-	pStream->Read((int*)&m_eCapturingPlayer);
-	pStream->Read((int*)&m_eUnitType);
-	FAssert(NO_UNIT != m_eUnitType);
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	pStream->Read((int*)&m_eLeaderUnitType);
-
-	m_combatUnit.read(pStream);
-	pStream->Read(&m_iPostCombatPlotIndex);
-	m_transportUnit.read(pStream);
-	m_homeCity.read(pStream);
-
-	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->ReadString(m_szName);
-	pStream->ReadString(m_szScriptData);
-
-	pStream->Read(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
-
-	// unit yield cache - start - Nightinggale
-	updateYieldCache();
-	// unit yield cache - end - Nightinggale
-
-	// update promotion cache
-	// this will fix issues introduced if some xml data has been changed since the game was saved
-	resetPromotions();
-	// TODO: remove variables overwritten by resetPromotions from savegames
-	// Note: this is delayed until we break savegames anyway. Storing unused data won't break anything.
-}
-
-
-void CvUnit::write(FDataStreamBase* pStream)
-{
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-	pStream->Write(m_iGroupID);
-	pStream->Write(m_iHotKeyNumber);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iLastMoveTurn);
-	pStream->Write(m_iGameTurnCreated);
-	pStream->Write(m_iDamage);
-	pStream->Write(m_iMoves);
-	pStream->Write(m_iExperience);
-	pStream->Write(m_iLevel);
-	pStream->Write(m_iCargo);
-	pStream->Write(m_iCargoCapacity);
-	pStream->Write(m_iAttackPlotX);
-	pStream->Write(m_iAttackPlotY);
-	pStream->Write(m_iCombatTimer);
-	pStream->Write(m_iCombatDamage);
-	pStream->Write(m_iFortifyTurns);
-	pStream->Write(m_iBlitzCount);
-	pStream->Write(m_iAmphibCount);
-	pStream->Write(m_iRiverCount);
-	pStream->Write(m_iEnemyRouteCount);
-	pStream->Write(m_iAlwaysHealCount);
-	pStream->Write(m_iHillsDoubleMoveCount);
-	pStream->Write(m_iExtraVisibilityRange);
-	pStream->Write(m_iExtraMoves);
-	pStream->Write(m_iExtraMoveDiscount);
-	pStream->Write(m_iExtraWithdrawal);
-	pStream->Write(m_iExtraBombardRate);
-	pStream->Write(m_iExtraEnemyHeal);
-	pStream->Write(m_iExtraNeutralHeal);
-	pStream->Write(m_iExtraFriendlyHeal);
-	pStream->Write(m_iSameTileHeal);
-	pStream->Write(m_iAdjacentTileHeal);
-	pStream->Write(m_iExtraCombatPercent);
-	pStream->Write(m_iExtraCityAttackPercent);
-	pStream->Write(m_iExtraCityDefensePercent);
-	pStream->Write(m_iExtraHillsAttackPercent);
-	pStream->Write(m_iExtraHillsDefensePercent);
-	pStream->Write(m_iExtraDomesticBonusPercent);	
-	pStream->Write(m_iPillageChange);
-	pStream->Write(m_iUpgradeDiscount);
-	pStream->Write(m_iExperiencePercent);
-	pStream->Write(m_iBaseCombat);
-	pStream->Write(m_eFacingDirection);
-	pStream->Write(m_iImmobileTimer);
-	pStream->Write(m_iYieldStored);
-	pStream->Write(m_iExtraWorkRate);
-	pStream->Write(m_eProfession);
-
-	// TAC - LbD - Ray - START
-	pStream->Write(m_LbDrounds);
-	pStream->Write(m_lastProfession);
-	// TAC - LbD - Ray - END
-
-	//ray18
-	pStream->Write(moneyToBuyLand);
-	pStream->Write(playerToBuyLand);
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	pStream->Write(m_AmountForNativeTrade);
-	pStream->Write(m_YieldForNativeTrade);
-	// R&R, ray, Natives Trading -END
-
-	pStream->Write(m_iUnitTravelTimer);
-	pStream->Write(m_iBadCityDefenderCount);
-	pStream->Write(m_iUnarmedCount);
-	pStream->Write(m_eUnitTravelState);
-
-	pStream->Write(m_bMadeAttack);
-	pStream->Write(m_bPromotionReady);
-	pStream->Write(m_bDeathDelay);
-	pStream->Write(m_bCombatFocus);
-	// m_bInfoBarDirty not saved...
-	pStream->Write(m_bColonistLocked);
-
-	pStream->Write(m_bGatheringResource); //TAC Whaling, ray
-
-	pStream->Write(m_bIgnoreDanger); // TAC - Trade Routes Advisor - koma13 - START
-	// < JAnimals Mod Start >
-	pStream->Write(m_bBarbarian);
-	// < JAnimals Mod End >
-	pStream->Write(m_eOwner);
-	pStream->Write(m_eCapturingPlayer);
-	pStream->Write(m_eUnitType);
-	pStream->Write(m_eLeaderUnitType);
-
-	m_combatUnit.write(pStream);
-	pStream->Write(m_iPostCombatPlotIndex);
-	m_transportUnit.write(pStream);
-	m_homeCity.write(pStream);
-
-	pStream->Write(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->WriteString(m_szName);
-	pStream->WriteString(m_szScriptData);
-
-	pStream->Write(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
 }
 
 // Protected Functions...
@@ -14798,22 +14349,22 @@ bool CvUnit::isFishingBoat() const
 // R&R, ray, Natives Trading - START
 void CvUnit::setYieldForNativeTrade(YieldTypes nativeTradeYield)
 {
-	m_YieldForNativeTrade = nativeTradeYield;
+	m_eYieldForNativeTrade = nativeTradeYield;
 }
 
 void CvUnit::setAmountForNativeTrade(int nativeTradeAmount)
 {
-	m_AmountForNativeTrade = nativeTradeAmount;
+	m_iAmountForNativeTrade = nativeTradeAmount;
 }
 
 YieldTypes CvUnit::getYieldForNativeTrade() const
 {
-	return m_YieldForNativeTrade;
+	return m_eYieldForNativeTrade;
 }
 
 int CvUnit::getAmountForNativeTrade() const
 {
-	return m_AmountForNativeTrade;
+	return m_iAmountForNativeTrade;
 }
 // R&R, ray, Natives Trading - END
 
@@ -14898,4 +14449,20 @@ bool CvUnit::isProfessionalMilitary() const
 	}
 
 	return false;
+}
+
+void CvUnit::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvUnit::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

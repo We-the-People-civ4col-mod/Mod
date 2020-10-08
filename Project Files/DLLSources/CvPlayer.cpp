@@ -35,47 +35,13 @@
 #include "CvDLLEventReporterIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 
+#include "CvSavegame.h"
+
 
 // Public Functions...
 
 CvPlayer::CvPlayer()
 {
-	m_aiSeaPlotYield = new int[NUM_YIELD_TYPES];
-	m_aiYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiCapitalYieldRateModifier = new int[NUM_YIELD_TYPES];
-	m_aiBuildingRequiredYieldModifier = new int[NUM_YIELD_TYPES];
-	m_aiCityExtraYield = new int[NUM_YIELD_TYPES];
-	m_aiExtraYieldThreshold = new int[NUM_YIELD_TYPES];
-	m_aiYieldBuyPrice = new int[NUM_YIELD_TYPES];
-	m_aiYieldAfricaBuyPrice = new int[NUM_YIELD_TYPES]; // R&R, ray, Africa
-	m_aiYieldPortRoyalBuyPrice = new int[NUM_YIELD_TYPES]; // R&R, ray, Port Royal
-	m_aiYieldTradedTotal = new int[NUM_YIELD_TYPES];
-	m_aiYieldBoughtTotal = new int[NUM_YIELD_TYPES];
-	m_aiTaxYieldModifierCount = new int[NUM_YIELD_TYPES];
-	m_aiYieldScoreTotal = new int[NUM_YIELD_TYPES]; // R&R, vetiarvind, Price dependent tax rate change
-	m_aiMissionaryPoints = new int[MAX_PLAYERS];
-	m_aiMissionaryThresholdMultiplier = new int[MAX_PLAYERS];
-
-	m_abYieldEuropeTradable = new bool[NUM_YIELD_TYPES];
-	m_abFeatAccomplished = new bool[NUM_FEAT_TYPES];
-	m_abOptions = new bool[NUM_PLAYEROPTION_TYPES];
-
-	m_paiImprovementCount = NULL;
-	m_paiFreeBuildingCount = NULL;
-	m_paiUnitClassCount = NULL;
-	m_paiUnitClassMaking = NULL;
-	m_paiUnitClassImmigrated = NULL;
-	m_paiUnitMoveChange = NULL;
-	m_paiUnitStrengthModifier = NULL;
-	m_paiProfessionCombatChange = NULL;
-	m_paiProfessionMoveChange = NULL;
-	m_paiBuildingClassCount = NULL;
-	m_paiBuildingClassMaking = NULL;
-	m_paiHurryCount = NULL;
-	m_paiSpecialBuildingNotRequiredCount = NULL;
-	m_aiProfessionEquipmentModifier = NULL;
-	m_aiTraitCount = NULL;
-
 	// R&R, ray, Bargaining - START
 	m_bWillingToBargain = false;
 	m_iTimeNoTrade = 0;
@@ -103,11 +69,6 @@ CvPlayer::CvPlayer()
 
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
-	m_paeCivics = NULL;
-
-	m_ppiImprovementYieldChange = NULL;
-	m_ppiBuildingYieldChange = NULL;
-
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	m_cache_YieldEquipmentAmount = new YieldArray<unsigned short>[GC.getNumProfessionInfos()];
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
@@ -118,26 +79,6 @@ CvPlayer::CvPlayer()
 CvPlayer::~CvPlayer()
 {
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiSeaPlotYield);
-	SAFE_DELETE_ARRAY(m_aiYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiCapitalYieldRateModifier);
-	SAFE_DELETE_ARRAY(m_aiBuildingRequiredYieldModifier);
-	SAFE_DELETE_ARRAY(m_aiCityExtraYield);
-	SAFE_DELETE_ARRAY(m_aiExtraYieldThreshold);
-	SAFE_DELETE_ARRAY(m_aiYieldBuyPrice);
-	SAFE_DELETE_ARRAY(m_aiYieldAfricaBuyPrice); // R&R, ray, Africa
-	SAFE_DELETE_ARRAY(m_aiYieldPortRoyalBuyPrice); // R&R, ray, Port Royal
-	SAFE_DELETE_ARRAY(m_aiYieldTradedTotal);
-	SAFE_DELETE_ARRAY(m_aiYieldScoreTotal); // R&R, vetiarvind, Price dependent tax rate change
-	SAFE_DELETE_ARRAY(m_aiYieldBoughtTotal);
-	SAFE_DELETE_ARRAY(m_aiTaxYieldModifierCount);
-	SAFE_DELETE_ARRAY(m_aiMissionaryPoints);
-	SAFE_DELETE_ARRAY(m_aiMissionaryThresholdMultiplier);
-	SAFE_DELETE_ARRAY(m_abYieldEuropeTradable);
-	SAFE_DELETE_ARRAY(m_abFeatAccomplished);
-	SAFE_DELETE_ARRAY(m_abOptions);
-
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale
 	if (m_cache_YieldEquipmentAmount != NULL)
 	{
@@ -298,48 +239,12 @@ void CvPlayer::init(PlayerTypes eID)
 
 void CvPlayer::uninit()
 {
-	int iI;
-
-	SAFE_DELETE_ARRAY(m_paiImprovementCount);
-	SAFE_DELETE_ARRAY(m_paiFreeBuildingCount);
-	SAFE_DELETE_ARRAY(m_paiUnitClassCount);
-	SAFE_DELETE_ARRAY(m_paiUnitClassMaking);
-	SAFE_DELETE_ARRAY(m_paiUnitClassImmigrated);
-	SAFE_DELETE_ARRAY(m_paiUnitMoveChange);
-	SAFE_DELETE_ARRAY(m_paiUnitStrengthModifier);
-	SAFE_DELETE_ARRAY(m_paiProfessionCombatChange);
-	SAFE_DELETE_ARRAY(m_paiProfessionMoveChange);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassCount);
-	SAFE_DELETE_ARRAY(m_paiBuildingClassMaking);
-	SAFE_DELETE_ARRAY(m_paiHurryCount);
-	SAFE_DELETE_ARRAY(m_paiSpecialBuildingNotRequiredCount);
-	SAFE_DELETE_ARRAY(m_aiProfessionEquipmentModifier);
-	SAFE_DELETE_ARRAY(m_aiTraitCount);
-
-	SAFE_DELETE_ARRAY(m_paeCivics);
-
 	m_triggersFired.clear();
 
 	// PatchMod: Achievements START
 	m_achievesGained.clear();
 	m_achievesTurn.clear();
 	// PatchMod: Achievements END
-	if (m_ppiImprovementYieldChange != NULL)
-	{
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			SAFE_DELETE_ARRAY(m_ppiImprovementYieldChange[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_ppiImprovementYieldChange);
-	}
-	if (m_ppiBuildingYieldChange != NULL)
-	{
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			SAFE_DELETE_ARRAY(m_ppiBuildingYieldChange[iI]);
-		}
-		SAFE_DELETE_ARRAY(m_ppiBuildingYieldChange);
-	}
 
 	m_groupCycle.clear();
 	m_aszCityNames.clear();
@@ -370,306 +275,23 @@ void CvPlayer::uninit()
 // Initializes data members that are serialized.
 void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 {
-	int iI, iJ;
 	//--------------------------------
 	// Uninit class
 	uninit();
+	resetSavedData(eID,bConstructorCall);
 
-    /** NBMOD TAX **/
-    m_iMaxTaxRate = 50;
-    /** NBMOD TAX **/
 
     /** NBMOD REF **/
-    m_iNBMOD_REF_StartValue = 0;
     m_bNBMOD_REF_Display = true;
     m_iNBMOD_REF_DisplayTurn = 0;
-
     /** NBMOD REF **/
-
-	// PatchMod: Achievements START
-	m_iNumCombatsWon = 0;
-	m_iNumSeaCombatsWon = 0;
-	// PatchMod: Achievements END
 
 	// Dale - AoD: AI Autoplay START
 	m_bDisableHuman = false;
 	// Dale - AoD: AI Autoplay END
-
-	m_iStartingX = INVALID_PLOT_COORD;
-	m_iStartingY = INVALID_PLOT_COORD;
-	m_iTotalPopulation = 0;
-	m_iTotalLand = 0;
-	m_iTotalLandScored = 0;
-	m_iGold = 0;
-	m_iAdvancedStartPoints = -1;
-	m_iGreatGeneralsCreated = 0;
-	m_iGreatGeneralsThresholdModifier = 0;
-	m_iGreatAdmiralsCreated = 0; // R&R, ray, Great Admirals
-	m_iGreatAdmiralsThresholdModifier = 0; // R&R, ray, Great Admirals
-	m_iGreatGeneralRateModifier = 0;
-	m_iDomesticGreatGeneralRateModifier = 0;
-	m_iImmigrationThresholdMultiplier = 100;
-	m_iRevolutionEuropeUnitThresholdMultiplier = 100;
-	m_iKingNumUnitMultiplier = 100;
-	m_iNativeAngerModifier = 0;
-	m_iFreeExperience = 0;
-	m_iWorkerSpeedModifier = 0;
-	m_iImprovementUpgradeRateModifier = 0;
-	m_iMilitaryProductionModifier = 0;
-	m_iCityDefenseModifier = 0;
-	m_iHighestUnitLevel = 1;
-	m_iFatherOverflowBells = 0;
-	m_iExpInBorderModifier = 0;
-	m_iLevelExperienceModifier = 0;
-	m_iCapitalCityID = FFreeList::INVALID_INDEX;
-	m_iCitiesLost = 0;
-	m_iAssets = 0;
-	m_iPower = 0;
-	m_iPopulationScore = 0;
-	m_iLandScore = 0;
-	m_iFatherScore = 0;
-	m_iCombatExperience = 0;
-	m_iSeaCombatExperience = 0; // R&R, ray, Great Admirals
-	m_iPopRushHurryCount = 0;
-	m_iCrossesStored = 0;
-	m_iBellsStored = 0;
-	m_iTaxRate = 0;
-	m_iNativeCombatModifier = 0;
-	m_iDominateNativeBordersCount = 0;
-	m_iRevolutionEuropeTradeCount = 0;
-	m_iFatherPointMultiplier = 100;
-	m_iMissionaryRateModifier = 0;
-	m_iNativeTradeModifier = 0; // R&R, ray, new Attribute in Traits
-	m_iMissionarySuccessPercent = 100;
+	
 	m_uiStartTime = 0;
 
-	m_bAlive = false;
-	m_bEverAlive = false;
-	m_bTurnActive = false;
-	m_bAutoMoves = false;
-	m_bEndTurn = false;
-	m_bPbemNewTurn = false;
-	m_bExtendedGame = false;
-	m_bFoundedFirstCity = false;
-	m_bStrike = false;
-	// R&R, ray, Bargaining - START
-	m_bWillingToBargain = false;
-	m_iTimeNoTrade = 0;
-	// R&R, ray, Bargaining - END
-
-	// R&R, ray, Timers Diplo Events - START
-	m_iTimerNativeMerc = 0;
-	m_iTimerEuropeanWars = 0;
-	m_iTimerEuropeanPeace = 0;
-	m_iTimerPrisonsCrowded = 0;
-	m_iTimerRevolutionaryNoble = 0;
-	m_iTimerBishop = 0;
-	m_iTimerChurchDemand = 0;
-	m_iTimerChurchWar = 0;
-	m_iTimerSmugglingShip = 0;
-	m_iTimerRanger = 0;
-	m_iTimerConquistador = 0;
-	m_iTimerPirates = 0;
-	m_iTimerContinentalGuard = 0;
-	m_iTimerMortar = 0;
-	m_iTimerNativeSlave = 0;
-	m_iTimerAfricanSlaves = 0;
-	m_iTimerStealingImmigrant = 0;
-	// R&R, ray, Timers Diplo Events - END
-
-	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
-
-	m_eID = eID;
-	updateTeamType();
-	updateHuman();
-
-	if (m_eID != NO_PLAYER)
-	{
-		m_ePersonalityType = GC.getInitCore().getLeader(m_eID); //??? Is this repeated data???
-	}
-	else
-	{
-		m_ePersonalityType = NO_LEADER;
-	}
-	m_eCurrentEra = ((EraTypes)0);  //??? Is this repeated data???
-	m_eParent = NO_PLAYER;
-	m_eImmigrationConversion = YIELD_CROSSES;
-
-	for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
-	{
-		m_aiSeaPlotYield[iI] = 0;
-		m_aiYieldRateModifier[iI] = 0;
-		m_aiCapitalYieldRateModifier[iI] = 0;
-		m_aiBuildingRequiredYieldModifier[iI] = 0;
-		m_aiCityExtraYield[iI] = 0;
-		m_aiExtraYieldThreshold[iI] = 0;
-		m_aiYieldBuyPrice[iI] = 0;
-		m_aiYieldAfricaBuyPrice[iI] = 0; // R&R, ray, Africa
-		m_aiYieldPortRoyalBuyPrice[iI] = 0; // R&R, ray, Port Royal
-		m_aiYieldTradedTotal[iI] = 0;
-		m_aiYieldBoughtTotal[iI] = 0;
-		m_aiYieldScoreTotal[iI] = 0; // R&R, vetiarvind, Price dependent tax rate change
-		m_abYieldEuropeTradable[iI] = true;
-		m_aiTaxYieldModifierCount[iI] = 0;
-	}
-
-	for (iI = 0; iI < MAX_PLAYERS; ++iI)
-	{
-		m_aiMissionaryPoints[iI] = 0;
-		m_aiMissionaryThresholdMultiplier[iI] = 100;
-	}
-
-	for (iI = 0; iI < NUM_FEAT_TYPES; iI++)
-	{
-		m_abFeatAccomplished[iI] = false;
-	}
-
-	for (iI = 0; iI < NUM_PLAYEROPTION_TYPES; iI++)
-	{
-		m_abOptions[iI] = false;
-	}
-
-	m_szScriptData = "";
-
-	if (!bConstructorCall)
-	{
-		FAssertMsg(0 < GC.getNumImprovementInfos(), "GC.getNumImprovementInfos() is not greater than zero but it is used to allocate memory in CvPlayer::reset");
-		FAssertMsg(m_paiImprovementCount==NULL, "about to leak memory, CvPlayer::m_paiImprovementCount");
-		m_paiImprovementCount = new int [GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			m_paiImprovementCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiFreeBuildingCount==NULL, "about to leak memory, CvPlayer::m_paiFreeBuildingCount");
-		m_paiFreeBuildingCount = new int [GC.getNumBuildingInfos()];
-		for (iI = 0; iI < GC.getNumBuildingInfos(); iI++)
-		{
-			m_paiFreeBuildingCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paiUnitClassCount==NULL, "about to leak memory, CvPlayer::m_paiUnitClassCount");
-		m_paiUnitClassCount = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitClassMaking==NULL, "about to leak memory, CvPlayer::m_paiUnitClassMaking");
-		m_paiUnitClassMaking = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitClassImmigrated==NULL, "about to leak memory, CvPlayer::m_paiUnitClassImmigrated");
-		m_paiUnitClassImmigrated = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitMoveChange==NULL, "about to leak memory, CvPlayer::m_paiUnitMoveChange");
-		m_paiUnitMoveChange = new int [GC.getNumUnitClassInfos()];
-		FAssertMsg(m_paiUnitStrengthModifier==NULL, "about to leak memory, CvPlayer::m_paiUnitStrengthModifier");
-		m_paiUnitStrengthModifier = new int [GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiUnitClassCount[iI] = 0;
-			m_paiUnitClassMaking[iI] = 0;
-			m_paiUnitClassImmigrated[iI] = 0;
-			m_paiUnitMoveChange[iI] = 0;
-			m_paiUnitStrengthModifier[iI] = 0;
-		}
-
-		FAssertMsg(m_paiProfessionCombatChange==NULL, "about to leak memory, CvPlayer::m_paiProfessionMoveChange");
-		m_paiProfessionCombatChange = new int [GC.getNumProfessionInfos()];
-		FAssertMsg(m_paiProfessionMoveChange==NULL, "about to leak memory, CvPlayer::m_paiProfessionMoveChange");
-		m_paiProfessionMoveChange = new int [GC.getNumProfessionInfos()];
-		for (iI = 0; iI < GC.getNumProfessionInfos(); iI++)
-		{
-			m_paiProfessionCombatChange[iI] = 0;
-			m_paiProfessionMoveChange[iI] = 0;
-		}
-
-		FAssertMsg(m_paiBuildingClassCount==NULL, "about to leak memory, CvPlayer::m_paiBuildingClassCount");
-		m_paiBuildingClassCount = new int [GC.getNumBuildingClassInfos()];
-		FAssertMsg(m_paiBuildingClassMaking==NULL, "about to leak memory, CvPlayer::m_paiBuildingClassMaking");
-		m_paiBuildingClassMaking = new int [GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_paiBuildingClassCount[iI] = 0;
-			m_paiBuildingClassMaking[iI] = 0;
-		}
-
-		FAssertMsg(m_paiHurryCount==NULL, "about to leak memory, CvPlayer::m_paiHurryCount");
-		m_paiHurryCount = new int [GC.getNumHurryInfos()];
-		for (iI = 0; iI < GC.getNumHurryInfos(); iI++)
-		{
-			m_paiHurryCount[iI] = GC.getHurryInfo((HurryTypes) iI).isStarting() ? 1 : 0;
-		}
-
-		FAssertMsg(m_paiSpecialBuildingNotRequiredCount==NULL, "about to leak memory, CvPlayer::m_paiSpecialBuildingNotRequiredCount");
-		m_paiSpecialBuildingNotRequiredCount = new int [GC.getNumSpecialBuildingInfos()];
-		for (iI = 0; iI < GC.getNumSpecialBuildingInfos(); iI++)
-		{
-			m_paiSpecialBuildingNotRequiredCount[iI] = 0;
-		}
-
-		FAssertMsg(m_paeCivics==NULL, "about to leak memory, CvPlayer::m_paeCivics");
-		m_paeCivics = new CivicTypes [GC.getNumCivicOptionInfos()];
-		for (iI = 0; iI < GC.getNumCivicOptionInfos(); iI++)
-		{
-			m_paeCivics[iI] = NO_CIVIC;
-		}
-
-		FAssertMsg(m_aiProfessionEquipmentModifier==NULL, "about to leak memory, CvPlayer::m_aiProfessionEquipmentModifier");
-		m_aiProfessionEquipmentModifier = new int[GC.getNumProfessionInfos()];
-		for (iI = 0; iI < GC.getNumProfessionInfos(); iI++)
-		{
-			m_aiProfessionEquipmentModifier[iI] = 0;
-		}
-
-		FAssertMsg(m_aiTraitCount==NULL, "about to leak memory, CvPlayer::m_aiTraitCount");
-		m_aiTraitCount = new int[GC.getNumTraitInfos()];
-		for (iI = 0; iI < GC.getNumTraitInfos(); iI++)
-		{
-			m_aiTraitCount[iI] = 0;
-		}
-
-		FAssertMsg(m_ppiImprovementYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiImprovementYieldChange");
-		m_ppiImprovementYieldChange = new int*[GC.getNumImprovementInfos()];
-		for (iI = 0; iI < GC.getNumImprovementInfos(); iI++)
-		{
-			m_ppiImprovementYieldChange[iI] = new int[NUM_YIELD_TYPES];
-			for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
-			{
-				m_ppiImprovementYieldChange[iI][iJ] = 0;
-			}
-		}
-
-		FAssertMsg(m_ppiBuildingYieldChange==NULL, "about to leak memory, CvPlayer::m_ppiBuildingYieldChange");
-		m_ppiBuildingYieldChange = new int*[GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_ppiBuildingYieldChange[iI] = new int[NUM_YIELD_TYPES];
-			for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
-			{
-				m_ppiBuildingYieldChange[iI][iJ] = 0;
-			}
-		}
-
-		m_mapEventsOccured.clear();
-		m_mapEventCountdown.clear();
-		m_aFreeUnitCombatPromotions.clear();
-		m_aFreeUnitClassPromotions.clear();
-		m_aEuropeRevolutionUnits.clear();
-		m_triggersFired.clear();
-		m_aDocksNextUnits.clear();
-		// PatchMod: Achievements START
-		m_achievesGained.clear();
-		m_achievesTurn.clear();
-		// PatchMod: Achievements END
-	}
-
-	m_cities.removeAll();
-
-	m_tradeRoutes.reset();
-	m_aTradeGroups.reset(); //R&R mod, vetiarvind, trade groups
-	m_units.reset();
-
-	freeEuropeUnits();
-	freeAfricaUnits(); /*** TRIANGLETRADE 10/23/08 by DPII ***/
-	freePortRoyalUnits(); // R&R, ray, Port Royal
-
-	m_selectionGroups.removeAll();
-
-	m_eventsTriggered.removeAll();
 	m_aszTradeMessages.clear();
 
 	// TAC - Trade Messages - koma13 - START
@@ -839,20 +461,20 @@ void CvPlayer::initFreeUnits()
 						int iKMW = kChild.NBMOD_REF_MakeStartValue();
 						while(kChild.NBMOD_GetEuropeMilitaryValue() < iKMW)
 						{
-							kChild.NBMOD_AddEuropeRandomUnit(false); // Einheit hinzufügen
+							kChild.NBMOD_AddEuropeRandomUnit(false); // Einheit hinzufï¿½gen
 						}
-						int iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
-						int iNumUnits = kChild.NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der König?
+						int iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
+						int iNumUnits = kChild.NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der Kï¿½nig?
 
 						// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
 						iNumUnits = iNumUnits * GC.getNBMOD_REF_NUM_UNITS_PERCENT() / 100;
 
-						// Ist die Anzahl der zu transportierenden Einheiten größer als die Transportkapazität?
+						// Ist die Anzahl der zu transportierenden Einheiten grï¿½ï¿½er als die Transportkapazitï¿½t?
 						while(iNumUnits > iTransporting)
 						{
-							// Dann ein Schiff aufrüsten
+							// Dann ein Schiff aufrï¿½sten
 							kChild.NBMOD_AddEuropeShipUnit(false);
-							iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
+							iTransporting = kChild.NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
 						}
 
 					}
@@ -2124,13 +1746,13 @@ bool CvPlayer::hasTrait(TraitTypes eTrait) const
 int CvPlayer::getTraitCount(TraitTypes eTrait) const
 {
 	FAssert(eTrait >= 0 && eTrait < GC.getNumTraitInfos());
-	return m_aiTraitCount[eTrait];
+	return m_em_iTraitCount.get(eTrait);
 }
 
 void CvPlayer::changeTraitCount(TraitTypes eTrait, int iChange)
 {
 	FAssert(eTrait >= 0 && eTrait < GC.getNumTraitInfos());
-	m_aiTraitCount[eTrait] += iChange;
+	m_em_iTraitCount.add(eTrait, iChange);
 	FAssert(getTraitCount(eTrait) >= 0);
 }
 
@@ -2588,7 +2210,7 @@ void CvPlayer::NBMOD_DecreaseMaxTaxRate()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetNewTaxRate(int iWantedTax)                     **/
 /**                                                                       **/
-/** Diese Methode ermittelt die tatsächlich neue Steuer.                  **/
+/** Diese Methode ermittelt die tatsï¿½chlich neue Steuer.                  **/
 /**                                                                       **/
 /** Parameter:                                                            **/
 /**  - iWantedTax = gewollte Steuer                                       **/
@@ -2609,7 +2231,7 @@ int CvPlayer::NBMOD_GetNewTaxRate(int iWantedTax) const
 	// Ist die aktuelle Steuerrate schon oberhalb der Grenze
 	if (getTaxRate() > m_iMaxTaxRate)
 	{
-		// Steuerrate unverändert lassen
+		// Steuerrate unverï¿½ndert lassen
 		iTaxRate = getTaxRate();
 	}
 
@@ -8402,7 +8024,7 @@ int CvPlayer::getSeaPlotYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiSeaPlotYield[eIndex];
+	return m_em_iSeaPlotYield.get(eIndex);
 }
 
 void CvPlayer::changeSeaPlotYield(YieldTypes eIndex, int iChange)
@@ -8412,7 +8034,7 @@ void CvPlayer::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiSeaPlotYield[eIndex] = (m_aiSeaPlotYield[eIndex] + iChange);
+		m_em_iSeaPlotYield.add(eIndex, iChange);
 
 		updateYield();
 	}
@@ -8422,7 +8044,7 @@ int CvPlayer::getYieldRateModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiYieldRateModifier[eIndex];
+	return m_em_iYieldRateModifier.get(eIndex);
 }
 
 int CvPlayer::getTaxYieldRateModifier(YieldTypes eIndex) const
@@ -8445,7 +8067,7 @@ void CvPlayer::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiYieldRateModifier[eIndex] += iChange;
+		m_em_iYieldRateModifier.add(eIndex, iChange);
 
 		invalidateYieldRankCache(eIndex);
 
@@ -8463,7 +8085,7 @@ int CvPlayer::getCapitalYieldRateModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiCapitalYieldRateModifier[eIndex];
+	return m_em_iCapitalYieldRateModifier.get(eIndex);
 }
 
 
@@ -8474,7 +8096,7 @@ void CvPlayer::changeCapitalYieldRateModifier(YieldTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_aiCapitalYieldRateModifier[eIndex] += iChange;
+		m_em_iCapitalYieldRateModifier.add(eIndex, iChange);
 
 		invalidateYieldRankCache(eIndex);
 
@@ -8494,7 +8116,7 @@ int CvPlayer::getBuildingRequiredYieldModifier(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiBuildingRequiredYieldModifier[eIndex];
+	return m_em_iBuildingRequiredYieldModifier.get(eIndex);
 }
 
 
@@ -8505,7 +8127,7 @@ void CvPlayer::changeBuildingRequiredYieldModifier(YieldTypes eIndex, int iChang
 
 	if (iChange != 0)
 	{
-		m_aiBuildingRequiredYieldModifier[eIndex] += iChange;
+		m_em_iBuildingRequiredYieldModifier.add(eIndex, iChange);
 		// transport feeder - start - Nightinggale
 		this->updateTransportThreshold(eIndex);
 		// transport feeder - end - Nightinggale
@@ -8516,7 +8138,7 @@ int CvPlayer::getCityExtraYield(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiCityExtraYield[eIndex];
+	return m_em_iCityExtraYield.get(eIndex);
 }
 
 void CvPlayer::updateCityExtraYield(YieldTypes eIndex)
@@ -8535,7 +8157,7 @@ void CvPlayer::updateCityExtraYield(YieldTypes eIndex)
 
 	if (getCityExtraYield(eIndex) != iBestValue)
 	{
-		m_aiCityExtraYield[eIndex] = iBestValue;
+		m_em_iCityExtraYield.set(eIndex, iBestValue);
 		FAssert(getCityExtraYield(eIndex) >= 0);
 
 		updateYield();
@@ -8547,7 +8169,7 @@ int CvPlayer::getExtraYieldThreshold(YieldTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiExtraYieldThreshold[eIndex];
+	return m_em_iExtraYieldThreshold.get(eIndex);
 }
 
 
@@ -8574,7 +8196,7 @@ void CvPlayer::updateExtraYieldThreshold(YieldTypes eIndex)
 
 	if (getExtraYieldThreshold(eIndex) != iBestValue)
 	{
-		m_aiExtraYieldThreshold[eIndex] = iBestValue;
+		m_em_iExtraYieldThreshold.set(eIndex, iBestValue);
 		FAssert(getExtraYieldThreshold(eIndex) >= 0);
 
 		updateYield();
@@ -8626,7 +8248,7 @@ bool CvPlayer::isYieldEuropeTradable(YieldTypes eYield) const
 		return false;
 	}
 
-	return m_abYieldEuropeTradable[eYield];
+	return m_em_bYieldEuropeTradable.get(eYield);
 }
 
 void CvPlayer::setYieldEuropeTradable(YieldTypes eYield, bool bTradeable)
@@ -8635,7 +8257,7 @@ void CvPlayer::setYieldEuropeTradable(YieldTypes eYield, bool bTradeable)
 
 	bool bOldTradeable = isYieldEuropeTradable(eYield);
 
-	m_abYieldEuropeTradable[eYield] = bTradeable;
+	m_em_bYieldEuropeTradable.set(eYield, bTradeable);
 
 	if (bOldTradeable != isYieldEuropeTradable(eYield))
 	{
@@ -8655,7 +8277,7 @@ bool CvPlayer::isFeatAccomplished(FeatTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_FEAT_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abFeatAccomplished[eIndex];
+	return m_em_bFeatAccomplished.get(eIndex);
 }
 
 
@@ -8663,7 +8285,7 @@ void CvPlayer::setFeatAccomplished(FeatTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_FEAT_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abFeatAccomplished[eIndex] = bNewValue;
+	m_em_bFeatAccomplished.set(eIndex, bNewValue);
 }
 
 bool CvPlayer::shouldDisplayFeatPopup(FeatTypes eIndex) const
@@ -8700,7 +8322,7 @@ bool CvPlayer::isOption(PlayerOptionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_PLAYEROPTION_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abOptions[eIndex];
+	return m_em_bOptions.get(eIndex);
 }
 
 
@@ -8708,7 +8330,7 @@ void CvPlayer::setOption(PlayerOptionTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_PLAYEROPTION_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abOptions[eIndex] = bNewValue;
+	m_em_bOptions.set(eIndex, bNewValue);
 }
 
 bool CvPlayer::isPlayable() const
@@ -8725,7 +8347,7 @@ int CvPlayer::getImprovementCount(ImprovementTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumImprovementInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiImprovementCount[eIndex];
+	return m_em_iImprovementCount.get(eIndex);
 }
 
 
@@ -8733,7 +8355,7 @@ void CvPlayer::changeImprovementCount(ImprovementTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumImprovementInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiImprovementCount[eIndex] = (m_paiImprovementCount[eIndex] + iChange);
+	m_em_iImprovementCount.add(eIndex, iChange);
 	FAssert(getImprovementCount(eIndex) >= 0);
 }
 
@@ -8742,7 +8364,7 @@ int CvPlayer::getFreeBuildingCount(BuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFreeBuildingCount[eIndex];
+	return m_em_iFreeBuildingCount.get(eIndex);
 }
 
 
@@ -8765,7 +8387,7 @@ void CvPlayer::changeFreeBuildingCount(BuildingTypes eIndex, int iChange)
 	{
 		iOldFreeBuildingCount = getFreeBuildingCount(eIndex);
 
-		m_paiFreeBuildingCount[eIndex] = (m_paiFreeBuildingCount[eIndex] + iChange);
+		m_em_iFreeBuildingCount.add(eIndex, iChange);
 		FAssert(getFreeBuildingCount(eIndex) >= 0);
 
 		if (iOldFreeBuildingCount == 0)
@@ -8792,20 +8414,20 @@ void CvPlayer::changeFreeBuildingCount(BuildingTypes eIndex, int iChange)
 int CvPlayer::getUnitClassCount(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitClassCount[eIndex];
+	return m_em_iUnitClassCount.get(eIndex);
 }
 
 void CvPlayer::changeUnitClassCount(UnitClassTypes eIndex, int iChange)
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	m_paiUnitClassCount[eIndex] += iChange;
+	m_em_iUnitClassCount.add(eIndex, iChange);
 	FAssert(getUnitClassCount(eIndex) >= 0);
 }
 
 int CvPlayer::getUnitClassMaking(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitClassMaking[eIndex];
+	return m_em_iUnitClassMaking.get(eIndex);
 }
 
 
@@ -8815,7 +8437,7 @@ void CvPlayer::changeUnitClassMaking(UnitClassTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiUnitClassMaking[eIndex] += iChange;
+		m_em_iUnitClassMaking.add(eIndex, iChange);
 		FAssert(getUnitClassMaking(eIndex) >= 0);
 
 		if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -8828,7 +8450,7 @@ void CvPlayer::changeUnitClassMaking(UnitClassTypes eIndex, int iChange)
 int CvPlayer::getUnitClassImmigrated(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitClassImmigrated[eIndex];
+	return m_em_iUnitClassImmigrated.get(eIndex);
 }
 
 void CvPlayer::changeUnitClassImmigrated(UnitClassTypes eIndex, int iChange)
@@ -8837,7 +8459,7 @@ void CvPlayer::changeUnitClassImmigrated(UnitClassTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiUnitClassImmigrated[eIndex] += iChange;
+		m_em_iUnitClassImmigrated.add(eIndex, iChange);
 		FAssert(getUnitClassImmigrated(eIndex) >= 0);
 	}
 }
@@ -8850,7 +8472,7 @@ int CvPlayer::getUnitClassCountPlusMaking(UnitClassTypes eIndex) const
 int CvPlayer::getUnitMoveChange(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitMoveChange[eIndex];
+	return m_em_iUnitMoveChange.get(eIndex);
 }
 
 void CvPlayer::changeUnitMoveChange(UnitClassTypes eIndex, int iChange)
@@ -8858,14 +8480,14 @@ void CvPlayer::changeUnitMoveChange(UnitClassTypes eIndex, int iChange)
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
 	if(iChange != 0)
 	{
-		m_paiUnitMoveChange[eIndex] += iChange;
+		m_em_iUnitMoveChange.add(eIndex, iChange);
 	}
 }
 
 int CvPlayer::getUnitStrengthModifier(UnitClassTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
-	return m_paiUnitStrengthModifier[eIndex];
+	return m_em_iUnitStrengthModifier.get(eIndex);
 }
 
 void CvPlayer::changeUnitStrengthModifier(UnitClassTypes eIndex, int iChange)
@@ -8873,14 +8495,14 @@ void CvPlayer::changeUnitStrengthModifier(UnitClassTypes eIndex, int iChange)
 	FAssert(eIndex >= 0 && eIndex < GC.getNumUnitClassInfos());
 	if(iChange != 0)
 	{
-		m_paiUnitStrengthModifier[eIndex] += iChange;
+		m_em_iUnitStrengthModifier.add(eIndex, iChange);
 	}
 }
 
 int CvPlayer::getProfessionMoveChange(ProfessionTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	return m_paiProfessionMoveChange[eIndex];
+	return m_em_iProfessionMoveChange.get(eIndex);
 }
 
 void CvPlayer::changeProfessionMoveChange(ProfessionTypes eIndex, int iChange)
@@ -8888,14 +8510,14 @@ void CvPlayer::changeProfessionMoveChange(ProfessionTypes eIndex, int iChange)
 	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
 	if(iChange != 0)
 	{
-		m_paiProfessionMoveChange[eIndex] += iChange;
+		m_em_iProfessionMoveChange.add(eIndex, iChange);
 	}
 }
 
 int CvPlayer::getProfessionCombatChange(ProfessionTypes eIndex) const
 {
 	FAssert(eIndex >= 0 && eIndex < GC.getNumProfessionInfos());
-	return m_paiProfessionCombatChange[eIndex];
+	return m_em_iProfessionCombatChange.get(eIndex);
 }
 
 void CvPlayer::changeProfessionCombatChange(ProfessionTypes eIndex, int iChange)
@@ -8932,7 +8554,7 @@ void CvPlayer::changeProfessionCombatChange(ProfessionTypes eIndex, int iChange)
 			}
 		}
 
-		m_paiProfessionCombatChange[eIndex] += iChange;
+		m_em_iProfessionCombatChange.add(eIndex, iChange);
 
 		for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 		{
@@ -8967,14 +8589,14 @@ int CvPlayer::getBuildingClassCount(BuildingClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassCount[eIndex];
+	return m_em_iBuildingClassCount.get(eIndex);
 }
 
 void CvPlayer::changeBuildingClassCount(BuildingClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiBuildingClassCount[eIndex] = (m_paiBuildingClassCount[eIndex] + iChange);
+	m_em_iBuildingClassCount.add(eIndex, iChange);
 	FAssert(getBuildingClassCount(eIndex) >= 0);
 }
 
@@ -8983,7 +8605,7 @@ int CvPlayer::getBuildingClassMaking(BuildingClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiBuildingClassMaking[eIndex];
+	return m_em_iBuildingClassMaking.get(eIndex);
 }
 
 
@@ -8994,7 +8616,7 @@ void CvPlayer::changeBuildingClassMaking(BuildingClassTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiBuildingClassMaking[eIndex] = (m_paiBuildingClassMaking[eIndex] + iChange);
+		m_em_iBuildingClassMaking.add(eIndex, iChange);
 		FAssert(getBuildingClassMaking(eIndex) >= 0);
 
 		if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -9035,7 +8657,7 @@ int CvPlayer::getHurryCount(HurryTypes eIndex) const
 {
 	FAssert(eIndex >= 0);
 	FAssert(eIndex < GC.getNumHurryInfos());
-	return m_paiHurryCount[eIndex];
+	return m_em_iHurryCount.get(eIndex);
 }
 
 
@@ -9049,12 +8671,12 @@ void CvPlayer::changeHurryCount(HurryTypes eIndex, int iChange)
 	FAssert(eIndex >= 0);
 	FAssert(eIndex < GC.getNumHurryInfos());
 
-	int oldHurryCount = m_paiHurryCount[eIndex];
-	m_paiHurryCount[eIndex] += iChange;
+	int oldHurryCount = m_em_iHurryCount.get(eIndex);
+	m_em_iHurryCount.add(eIndex, iChange);
 	FAssert(getHurryCount(eIndex) >= 0);
 
 	// if we just went from 0 to 1 (or the reverse)
-	if ((oldHurryCount > 0) != (m_paiHurryCount[eIndex] > 0))
+	if ((oldHurryCount > 0) != (m_em_iHurryCount.get(eIndex) > 0))
 	{
 		// does this hurry reduce population?
 		if (GC.getHurryInfo(eIndex).getProductionPerPopulation() > 0)
@@ -9068,7 +8690,7 @@ int CvPlayer::getSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex) co
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiSpecialBuildingNotRequiredCount[eIndex];
+	return m_em_iSpecialBuildingNotRequiredCount.get(eIndex);
 }
 
 
@@ -9081,7 +8703,7 @@ void CvPlayer::changeSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiSpecialBuildingNotRequiredCount[eIndex] = (m_paiSpecialBuildingNotRequiredCount[eIndex] + iChange);
+	m_em_iSpecialBuildingNotRequiredCount.add(eIndex, iChange);
 	FAssert(getSpecialBuildingNotRequiredCount(eIndex) >= 0);
 }
 
@@ -9090,7 +8712,7 @@ CivicTypes CvPlayer::getCivic(CivicOptionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumCivicOptionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paeCivics[eIndex];
+	return m_em_eCivics.get(eIndex);
 }
 
 void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
@@ -9099,7 +8721,7 @@ void CvPlayer::setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue)
 
 	if (eOldCivic != eNewValue)
 	{
-		m_paeCivics[eIndex] = eNewValue;
+		m_em_eCivics.set(eIndex, eNewValue);
 
 		if (eOldCivic != NO_CIVIC)
 		{
@@ -9151,7 +8773,7 @@ int CvPlayer::getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIn
 	FAssertMsg(eIndex1 < GC.getNumImprovementInfos(), "eIndex1 is expected to be within maximum bounds (invalid Index)");
 	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be within maximum bounds (invalid Index)");
-	return m_ppiImprovementYieldChange[eIndex1][eIndex2];
+	return m_em_iImprovementYieldChange.get(eIndex1, eIndex2);
 }
 
 
@@ -9164,7 +8786,7 @@ void CvPlayer::changeImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes
 
 	if (iChange != 0)
 	{
-		m_ppiImprovementYieldChange[eIndex1][eIndex2] += iChange;
+		m_em_iImprovementYieldChange.add(eIndex1, eIndex2, iChange);
 		FAssert(getImprovementYieldChange(eIndex1, eIndex2) >= 0);
 
 		updateYield();
@@ -9177,7 +8799,7 @@ int CvPlayer::getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTyp
 	FAssert(eBuildingClass < GC.getNumBuildingClassInfos());
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_ppiBuildingYieldChange[eBuildingClass][eYield];
+	return m_em_iBuildingYieldChange.get(eBuildingClass, eYield);
 }
 
 void CvPlayer::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange)
@@ -9189,7 +8811,7 @@ void CvPlayer::changeBuildingYieldChange(BuildingClassTypes eBuildingClass, Yiel
 
 	if (iChange != 0)
 	{
-		m_ppiBuildingYieldChange[eBuildingClass][eYield] += iChange;
+		m_em_iBuildingYieldChange.add(eBuildingClass, eYield, iChange);
 		FAssert(getBuildingYieldChange(eBuildingClass, eYield) >= 0);
 
 		updateYield();
@@ -9200,14 +8822,14 @@ int CvPlayer::getTaxYieldModifierCount(YieldTypes eYield) const
 {
 	FAssert(eYield > -1);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiTaxYieldModifierCount[eYield];
+	return m_em_iTaxYieldModifierCount.get(eYield);
 }
 
-void CvPlayer::changeTaxYieldModifierCount(YieldTypes eYield, int iChange) const
+void CvPlayer::changeTaxYieldModifierCount(YieldTypes eYield, int iChange)
 {
 	FAssert(eYield > -1);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	m_aiTaxYieldModifierCount[eYield] += iChange;
+	m_em_iTaxYieldModifierCount.add(eYield, iChange);
 }
 
 
@@ -10398,7 +10020,7 @@ void CvPlayer::doGold()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetEuropeMilitaryValue() const                    **/
 /**                                                                       **/
-/** Ermittelt den Militärwert der Europäischen Armee.                     **/
+/** Ermittelt den Militï¿½rwert der Europï¿½ischen Armee.                     **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10410,22 +10032,22 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
 	int iSize = m_aEuropeRevolutionUnits.size();
 	for (int iI = 0; iI < iSize; iI++)
 	{
-	    // Prüfen ob das überhaupt eine Einheit ist
+	    // Prï¿½fen ob das ï¿½berhaupt eine Einheit ist
 		if (getRevolutionEuropeUnit(iI) != NO_UNIT)
 		{
             // es darf sich um kein Schiff handeln
             if (GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getDomainType() != DOMAIN_SEA)
             {
-                // Die Stärke der Einheit ermitteln
+                // Die Stï¿½rke der Einheit ermitteln
                 fThisStrength = (float)GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getCombat();
 
-                // Prüfen, ob die Einheit überhaupt einen Beruf hat
+                // Prï¿½fen, ob die Einheit ï¿½berhaupt einen Beruf hat
                 if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
                 {
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
 
-                // Die Stärke mit einem Gewicht versehen
+                // Die Stï¿½rke mit einem Gewicht versehen
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();
 
                 fEMW += fThisStrength;
@@ -10442,7 +10064,7 @@ int CvPlayer::NBMOD_GetEuropeMilitaryValue() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_REF_GetStartValue() const                         **/
 /**                                                                       **/
-/** Gibt den Start-Miltärwert des Spieles zurück.                         **/
+/** Gibt den Start-Miltï¿½rwert des Spieles zurï¿½ck.                         **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10455,7 +10077,7 @@ int CvPlayer::NBMOD_REF_GetStartValue() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_REF_MakeStartValue()                              **/
 /**                                                                       **/
-/** Ermittelt den Militärwert beim Start des Spieles.                     **/
+/** Ermittelt den Militï¿½rwert beim Start des Spieles.                     **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10479,7 +10101,7 @@ int CvPlayer::NBMOD_REF_MakeStartValue()
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetColonialMilitaryValue() const                  **/
 /**                                                                       **/
-/** Ermittelt den Militärwert der Kolonialarmee.                          **/
+/** Ermittelt den Militï¿½rwert der Kolonialarmee.                          **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -10501,10 +10123,10 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 
 	int iLoop;
 
-    // Die Gesamtbevölkerung: Kolonisten * Gewicht
+    // Die Gesamtbevï¿½lkerung: Kolonisten * Gewicht
     fKMW += getTotalPopulation() * GC.getNBMOD_REF_POPULATION_WEIGHT();
 
-	// Die Einheitenstärke: Soldaten/Kanonen/Dragoner
+	// Die Einheitenstï¿½rke: Soldaten/Kanonen/Dragoner
 	for(pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
 	{
         if (GC.getNBMOD_REF_REAL_WEAPONS() == 1)
@@ -10573,11 +10195,11 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         fKMW += iStoredHorses * GC.getNBMOD_REF_HORSES_WEIGHT();
     }
 
-    // Den Bonus dazuzählen
+    // Den Bonus dazuzï¿½hlen
 
     fKMW = fKMW * (1.0 + (double)iBonusPercent/(double)100);
 
-    // Der Unabhängigkeitswille
+    // Der Unabhï¿½ngigkeitswille
 
     if (GC.getNBMOD_REF_REVOLUTION_PERCENT_ENABLE() == 1)
     {
@@ -10591,7 +10213,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
         fKMW = fKMW * NBMOD_GetMaxTaxRate() / 100;
     }
 
-    // Der Aufschlag des Königs
+    // Der Aufschlag des Kï¿½nigs
     fKMW = fKMW * GC.getNBMOD_REF_KING_PANIC_WEIGHT();
 
     // Der Schwierigkeitsgrad
@@ -10615,7 +10237,7 @@ int CvPlayer::NBMOD_GetColonialMilitaryValue() const
 /**                                                                       **/
 /** void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)               **/
 /**                                                                       **/
-/** Erweitert die königliche Armee um eine zufällige Einheit.             **/
+/** Erweitert die kï¿½nigliche Armee um eine zufï¿½llige Einheit.             **/
 /** Parameter:                                                            **/
 /**  - bDisplay = gibt an, ob eine Nachricht angezeigt werden soll        **/
 /**                                                                       **/
@@ -10642,7 +10264,7 @@ void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)
 			else
 			{
 
-                // Fragt ab ob es ein Schiff ist und ob das zufällige Aufrüsten von Schiffen verboten ist
+                // Fragt ab ob es ein Schiff ist und ob das zufï¿½llige Aufrï¿½sten von Schiffen verboten ist
 				if ((GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA) && (GC.getNBMOD_REF_RANDOM_SHIPS() != 1))
 				{
 					aiUnitWeights[i] = 0; // Es sollen keine Schiffe gebaut werden
@@ -10688,7 +10310,7 @@ void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)
 /**                                                                       **/
 /** void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)                 **/
 /**                                                                       **/
-/** Erweitert die königliche Armee um eine zufällige Seeeinheit.          **/
+/** Erweitert die kï¿½nigliche Armee um eine zufï¿½llige Seeeinheit.          **/
 /** Parameter:                                                            **/
 /**  - bDisplay = gibt an, ob eine Nachricht angezeigt werden soll        **/
 /**                                                                       **/
@@ -10757,7 +10379,7 @@ void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetNumEuropeUnits() const                         **/
 /**                                                                       **/
-/** Ermittelt die Anzahl der Landeinheiten des Königs.                    **/
+/** Ermittelt die Anzahl der Landeinheiten des Kï¿½nigs.                    **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetNumEuropeUnits() const
@@ -10778,7 +10400,7 @@ int CvPlayer::NBMOD_GetNumEuropeUnits() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetNumEuropeTransporting() const                  **/
 /**                                                                       **/
-/** Ermittelt die Transportkapazität des Königs.                          **/
+/** Ermittelt die Transportkapazitï¿½t des Kï¿½nigs.                          **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetNumEuropeTransporting() const
@@ -10802,7 +10424,7 @@ int CvPlayer::NBMOD_GetNumEuropeTransporting() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetEuropeShipStrength() const                     **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke des Königs.                                **/
+/** Ermittelt die Schiffstï¿½rke des Kï¿½nigs.                                **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetEuropeShipStrength() const
@@ -10813,22 +10435,22 @@ int CvPlayer::NBMOD_GetEuropeShipStrength() const
 	int iSize = m_aEuropeRevolutionUnits.size();
 	for (int iI = 0; iI < iSize; iI++)
 	{
-	    // Prüfen ob das überhaupt eine Einheit ist
+	    // Prï¿½fen ob das ï¿½berhaupt eine Einheit ist
 		if (getRevolutionEuropeUnit(iI) != NO_UNIT)
 		{
 
             if (GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getDomainType() == DOMAIN_SEA)
             {
-                // Die Stärke des Schiffes ermitteln
+                // Die Stï¿½rke des Schiffes ermitteln
                 fThisStrength = (float)GC.getUnitInfo(getRevolutionEuropeUnit(iI)).getCombat();
 
-                // Prüfen, ob die Einheit überhaupt einen Beruf hat
+                // Prï¿½fen, ob die Einheit ï¿½berhaupt einen Beruf hat
                 if (getRevolutionEuropeProfession(iI) != NO_PROFESSION)
                 {
                     fThisStrength += (float)GC.getProfessionInfo(getRevolutionEuropeProfession(iI)).getCombatChange();
                 }
 
-                // Die Stärke mit einem Gewicht versehen
+                // Die Stï¿½rke mit einem Gewicht versehen
                 fThisStrength = fThisStrength * GC.getUnitInfo(getRevolutionEuropeUnit(iI)).NBMOD_GetStrengthWeight();
 
                 fStrength += fThisStrength;
@@ -10845,7 +10467,7 @@ int CvPlayer::NBMOD_GetEuropeShipStrength() const
 /**                                                                       **/
 /** int CvPlayer::NBMOD_GetColonialShipStrength() const                   **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Kolonie.                               **/
+/** Ermittelt die Schiffstï¿½rke der Kolonie.                               **/
 /**                                                                       **/
 /***************************************************************************/
 int CvPlayer::NBMOD_GetColonialShipStrength() const
@@ -10905,7 +10527,7 @@ void CvPlayer::doBells()
 	if (!GC.getEraInfo(getCurrentEra()).isRevolution())
 	{
 		changeBellsStored(iBellsRate);
-		// Soll die Änderung des NBMODs benutzt werden
+		// Soll die ï¿½nderung des NBMODs benutzt werden
 		if (GC.getNBMOD_REF_ENABLE() != 1)
 		{
 			if (getBellsStored() >= revolutionEuropeUnitThreshold() && iBellsRate > GC.getCivilizationInfo(getCivilizationType()).getFreeYields(YIELD_BELLS))
@@ -10967,15 +10589,15 @@ void CvPlayer::doBells()
                 // DEBUG
                 gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"(EMW) %d vs. (KMW) %d",NBMOD_GetEuropeMilitaryValue(), NBMOD_GetColonialMilitaryValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
                 gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Start-MW: %d",NBMOD_REF_GetStartValue()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
-//            gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Einheiten/Kapazität: %d/%d",NBMOD_GetNumEuropeUnits(),NBMOD_GetNumEuropeTransporting()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
+//            gDLL->getInterfaceIFace()->addMessage(getID() , true, GC.getEVENT_MESSAGE_TIME(), CvWString::format(L"Einheiten/Kapazitï¿½t: %d/%d",NBMOD_GetNumEuropeUnits(),NBMOD_GetNumEuropeTransporting()), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"));
             }
 
-            // Zuerst überlegt sich der König, ob er seine Schlachtschiffe aufrüsten möchte
-            // Ist die Kolonialflotte stärker als die köbigliche Flotte?
+            // Zuerst ï¿½berlegt sich der Kï¿½nig, ob er seine Schlachtschiffe aufrï¿½sten mï¿½chte
+            // Ist die Kolonialflotte stï¿½rker als die kï¿½bigliche Flotte?
             if (NBMOD_GetColonialShipStrength() > NBMOD_GetEuropeShipStrength())
             {
 
-                // Dann ein Schiff aufrüsten
+                // Dann ein Schiff aufrï¿½sten
                 NBMOD_AddEuropeShipUnit(true);
                 bUnitGot = true;
             }
@@ -10983,16 +10605,16 @@ void CvPlayer::doBells()
 			/*
 			else
 				{
-					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
-					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der König?
+					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
+					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der Kï¿½nig?
 
 					// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
 					iNumUnits = iNumUnits * GC.getDefineINT("NBMOD_REF_NUM_UNITS_PERCENT") / 100;
 
-					// Ist die Anzahl der zu transportierenden Einheiten größer als die Transportkapazität?
+					// Ist die Anzahl der zu transportierenden Einheiten grï¿½ï¿½er als die Transportkapazitï¿½t?
 					if (iNumUnits > iTransporting)
 					{
-						// Dann ein Schiff aufrüsten
+						// Dann ein Schiff aufrï¿½sten
 						NBMOD_AddEuropeShipUnit(true);
 						bUnitGot = true;
 					}
@@ -11000,7 +10622,7 @@ void CvPlayer::doBells()
 			*/
 			// TAC - AI Revolution - koma13 - END
 
-            // Wenn noch kein Schiff aufgerüstet wurde, dann überlegt sich der König, ob er seine Landeinheiten rüstet
+            // Wenn noch kein Schiff aufgerï¿½stet wurde, dann ï¿½berlegt sich der Kï¿½nig, ob er seine Landeinheiten rï¿½stet
             if (!(bUnitGot))
             {
                 int iKMW = NBMOD_GetColonialMilitaryValue();
@@ -11008,7 +10630,7 @@ void CvPlayer::doBells()
 
                 float n = (float)iKMW/(float)iEMW;
 
-                while (n > 1.1) // die Kolonie ist viel stärker als der König
+                while (n > 1.1) // die Kolonie ist viel stï¿½rker als der Kï¿½nig
                 {
 
                     NBMOD_AddEuropeRandomUnit(true);
@@ -11022,7 +10644,7 @@ void CvPlayer::doBells()
 
                 }
 
-                // Die Kolonie ist stärker als der König, aber es wurden noch keine Waffen hinzugefügt
+                // Die Kolonie ist stï¿½rker als der Kï¿½nig, aber es wurden noch keine Waffen hinzugefï¿½gt
                 if (n > 1 && bUnitGot == false)
                 {
                     NBMOD_AddEuropeRandomUnit(true);
@@ -11033,16 +10655,16 @@ void CvPlayer::doBells()
 				// TAC - AI Revolution - koma13 - START
 				if (bUnitGot)
 				{
-					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazität steht dem König zur Verfügung?
-					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der König?
+					int iTransporting = NBMOD_GetNumEuropeTransporting(); // Wie viel Transportkapazitï¿½t steht dem Kï¿½nig zur Verfï¿½gung?
+					int iNumUnits = NBMOD_GetNumEuropeUnits(); // Wie viele Landeinheiten besitzt der Kï¿½nig?
 
 					// Errechnet wie vile Einheiten mit einer Welle zur Kolonie gelangen sollen
 					iNumUnits = iNumUnits * GC.getNBMOD_REF_NUM_UNITS_PERCENT() / 100;
 
-					// Ist die Anzahl der zu transportierenden Einheiten größer als die Transportkapazität?
+					// Ist die Anzahl der zu transportierenden Einheiten grï¿½ï¿½er als die Transportkapazitï¿½t?
 					while(iNumUnits > iTransporting)
 					{
-						// Dann ein Schiff aufrüsten
+						// Dann ein Schiff aufrï¿½sten
 						NBMOD_AddEuropeShipUnit(true);
 						iTransporting = NBMOD_GetNumEuropeTransporting();
 					}
@@ -12592,948 +12214,6 @@ bool CvPlayer::isPbemNewTurn() const
 void CvPlayer::setPbemNewTurn(bool bNew)
 {
 	m_bPbemNewTurn = bNew;
-}
-
-
-//
-// read object from a stream
-// used during load
-//
-void CvPlayer::read(FDataStreamBase* pStream)
-{
-	int iI;
-
-	// Init data before load
-	reset();
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	// PatchMod: Achievements START
-	pStream->Read(&m_iNumCombatsWon);
-	pStream->Read(&m_iNumSeaCombatsWon); // R&R, ray, Achievments for Sea Combats
-	// PatchMod: Achievements END
-	pStream->Read(&m_iStartingX);
-	pStream->Read(&m_iStartingY);
-	pStream->Read(&m_iTotalPopulation);
-	pStream->Read(&m_iTotalLand);
-	pStream->Read(&m_iTotalLandScored);
-	pStream->Read(&m_iGold);
-	pStream->Read(&m_iAdvancedStartPoints);
-	pStream->Read(&m_iGreatGeneralsCreated);
-	pStream->Read(&m_iGreatGeneralsThresholdModifier);
-	// R&R, ray, Great Admirals - START
-	pStream->Read(&m_iGreatAdmiralsCreated);
-	pStream->Read(&m_iGreatAdmiralsThresholdModifier);
-	// R&R, ray, Great Admirals - END
-	pStream->Read(&m_iGreatGeneralRateModifier);
-	pStream->Read(&m_iDomesticGreatGeneralRateModifier);
-	pStream->Read(&m_iImmigrationThresholdMultiplier);
-	pStream->Read(&m_iRevolutionEuropeUnitThresholdMultiplier);
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iKingNumUnitMultiplier);
-	}
-	if (uiFlag <= 2)
-	{
-		int iEducationThresholdMultiplier;
-		pStream->Read(&iEducationThresholdMultiplier);
-	}
-	pStream->Read(&m_iNativeAngerModifier);
-	pStream->Read(&m_iFreeExperience);
-	pStream->Read(&m_iWorkerSpeedModifier);
-	pStream->Read(&m_iImprovementUpgradeRateModifier);
-	pStream->Read(&m_iMilitaryProductionModifier);
-	pStream->Read(&m_iCityDefenseModifier);
-	pStream->Read(&m_iHighestUnitLevel);
-	pStream->Read(&m_iFatherOverflowBells);
-	pStream->Read(&m_iExpInBorderModifier);
-	pStream->Read(&m_iLevelExperienceModifier);
-	pStream->Read(&m_iCapitalCityID);
-	pStream->Read(&m_iCitiesLost);
-	pStream->Read(&m_iAssets);
-	pStream->Read(&m_iPower);
-	pStream->Read(&m_iPopulationScore);
-	pStream->Read(&m_iLandScore);
-	pStream->Read(&m_iFatherScore);
-	pStream->Read(&m_iCombatExperience);
-	pStream->Read(&m_iSeaCombatExperience); // R&R, ray, Great Admirals
-	if (uiFlag > 1)
-	{
-		pStream->Read(&m_iMissionarySuccessPercent);
-	}
-
-	pStream->Read(&m_bAlive);
-	// R&R, ray, Bargaining - Start
-	pStream->Read(&m_bWillingToBargain);
-	pStream->Read(&m_iTimeNoTrade);
-	// R&R, ray, Bargaining - End
-
-	// R&R, ray, Timers Diplo Events - START
-	pStream->Read(&m_iTimerNativeMerc);
-	pStream->Read(&m_iTimerEuropeanWars);
-	pStream->Read(&m_iTimerEuropeanPeace);
-	pStream->Read(&m_iTimerPrisonsCrowded);
-	pStream->Read(&m_iTimerRevolutionaryNoble);
-	pStream->Read(&m_iTimerBishop);
-	pStream->Read(&m_iTimerChurchDemand);
-	pStream->Read(&m_iTimerChurchWar);
-	pStream->Read(&m_iTimerSmugglingShip);
-	pStream->Read(&m_iTimerRanger);
-	pStream->Read(&m_iTimerConquistador);
-	pStream->Read(&m_iTimerPirates);
-	pStream->Read(&m_iTimerContinentalGuard);
-	pStream->Read(&m_iTimerMortar);
-	pStream->Read(&m_iTimerNativeSlave);
-	pStream->Read(&m_iTimerAfricanSlaves);
-	pStream->Read(&m_iTimerStealingImmigrant);
-	// R&R, ray, Timers Diplo Events - END
-
-	pStream->Read(&m_iChurchFavoursReceived); // R&R, ray, Church Favours
-
-	pStream->Read(&m_bEverAlive);
-	pStream->Read(&m_bTurnActive);
-	pStream->Read(&m_bAutoMoves);
-	pStream->Read(&m_bEndTurn);
-	pStream->Read(&m_bPbemNewTurn);
-	pStream->Read(&m_bExtendedGame);
-	pStream->Read(&m_bFoundedFirstCity);
-	pStream->Read(&m_bStrike);
-
-	pStream->Read((int*)&m_eID);
-	pStream->Read((int*)&m_ePersonalityType);
-	pStream->Read((int*)&m_eCurrentEra);
-	pStream->Read((int*)&m_eParent);
-	updateTeamType(); //m_eTeamType not saved
-	updateHuman();
-	pStream->Read((int*)&m_eImmigrationConversion);
-
-	pStream->Read(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiCapitalYieldRateModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiBuildingRequiredYieldModifier);
-	pStream->Read(NUM_YIELD_TYPES, m_aiCityExtraYield);
-	pStream->Read(NUM_YIELD_TYPES, m_aiExtraYieldThreshold);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldAfricaBuyPrice); // R&R, ray, Africa
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldPortRoyalBuyPrice); // R&R, ray, Port Royal
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldScoreTotal); // R&R, vetiarvind, Price dependent tax rate change
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldTradedTotal);
-	pStream->Read(NUM_YIELD_TYPES, m_aiYieldBoughtTotal);
-	pStream->Read(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
-	if (uiFlag > 1)
-	{
-		pStream->Read(MAX_PLAYERS, m_aiMissionaryPoints);
-		pStream->Read(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
-	}
-
-	pStream->Read(NUM_YIELD_TYPES, m_abYieldEuropeTradable);
-	pStream->Read(NUM_FEAT_TYPES, m_abFeatAccomplished);
-	pStream->Read(NUM_PLAYEROPTION_TYPES, m_abOptions);
-
-	pStream->ReadString(m_szScriptData);
-
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but it is expected to be in CvPlayer::read");
-	pStream->Read(GC.getNumImprovementInfos(), m_paiImprovementCount);
-	pStream->Read(GC.getNumBuildingInfos(), m_paiFreeBuildingCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassMaking);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitClassImmigrated);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitMoveChange);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiUnitStrengthModifier);
-	pStream->Read(GC.getNumProfessionInfos(), m_paiProfessionCombatChange);
-	pStream->Read(GC.getNumProfessionInfos(), m_paiProfessionMoveChange);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
-	pStream->Read(GC.getNumHurryInfos(), m_paiHurryCount);
-	pStream->Read(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	if (uiFlag <= 1)
-	{
-		std::vector<int> aiMissionaryPoints(GC.getNumCivilizationInfos());
-		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
-		pStream->Read(GC.getNumCivilizationInfos(), &aiMissionaryPoints[0]);
-	}
-	pStream->Read(GC.getNumProfessionInfos(), m_aiProfessionEquipmentModifier);
-	pStream->Read(GC.getNumTraitInfos(), m_aiTraitCount);
-
-	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Read((int*)&m_paeCivics[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppiImprovementYieldChange[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
-	{
-		pStream->Read(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
-	}
-
-	// The CivEffect cache isn't saved. Instead it's recalculated on load.
-	// This will make it adapt to changed xml settings.
-	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
-	CivEffect()->rebuildCivEffectCache();
-
-	m_groupCycle.Read(pStream);
-	{
-		CvWString szBuffer;
-		uint iSize;
-		pStream->Read(&iSize);
-		m_aszCityNames.resize(iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			pStream->ReadString(szBuffer);
-			m_aszCityNames[i] = szBuffer;
-		}
-	}
-
-	ReadStreamableFFreeListTrashArray(m_cities, pStream);
-	m_tradeRoutes.Read(pStream);
-	m_units.Read(pStream);
-
-	freeEuropeUnits();
-	int iNumEuropeUnits;
-	pStream->Read(&iNumEuropeUnits);
-	for(int i=0;i<iNumEuropeUnits;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aEuropeUnits.push_back(pUnit);
-	}
-
-	/*** TRIANGLETRADE 10/23/08 by DPII ***/
-	freeAfricaUnits();
-	int iNumAfricaUnits;
-	pStream->Read(&iNumAfricaUnits);
-	for(int i=0;i<iNumAfricaUnits;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aAfricaUnits.push_back(pUnit);
-	}
-	/**************************************/
-	// R&R, ray, Port Royal
-	freePortRoyalUnits();
-	int iNumPortRoyalUnits;
-	pStream->Read(&iNumPortRoyalUnits);
-	for(int i=0;i<iNumPortRoyalUnits;i++)
-	{
-		CvUnitAI *pUnit = new CvUnitAI();
-		pUnit->read(pStream);
-		m_aPortRoyalUnits.push_back(pUnit);
-	}
-	// R&R, ray, Port Royal - END
-
-	
-	m_aTradeGroups.Read(pStream); //R&R mod, vetiarvind, trade groups	
-	
-
-	ReadStreamableFFreeListTrashArray(m_selectionGroups, pStream);
-	ReadStreamableFFreeListTrashArray(m_eventsTriggered, pStream);
-
-	{
-		CvMessageQueue::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (CvMessageQueue::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvTalkingHeadMessage message;
-			message.read(*pStream);
-			m_listGameMessages.push_back(message);
-		}
-	}
-
-	{
-		clearPopups();
-		CvPopupQueue::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (CvPopupQueue::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvPopupInfo* pInfo = new CvPopupInfo();
-			if (NULL != pInfo)
-			{
-				pInfo->read(*pStream);
-				m_listPopups.push_back(pInfo);
-			}
-		}
-	}
-
-	{
-		clearDiplomacy();
-		CvDiploQueue::_Alloc::size_type iSize;
-		pStream->Read(&iSize);
-		for (CvDiploQueue::_Alloc::size_type i = 0; i < iSize; i++)
-		{
-			CvDiploParameters* pDiplo = new CvDiploParameters(NO_PLAYER);
-			if (NULL != pDiplo)
-			{
-				pDiplo->read(*pStream);
-				m_listDiplomacy.push_back(pDiplo);
-			}
-		}
-	}
-
-	{
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			int iScore;
-			pStream->Read(&iTurn);
-			pStream->Read(&iScore);
-			m_mapScoreHistory[iTurn] = iScore;
-		}
-	}
-
-	{
-		m_mapEconomyHistory.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			int iScore;
-			pStream->Read(&iTurn);
-			pStream->Read(&iScore);
-			m_mapEconomyHistory[iTurn] = iScore;
-		}
-	}
-
-	{
-		m_mapIndustryHistory.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			int iScore;
-			pStream->Read(&iTurn);
-			pStream->Read(&iScore);
-			m_mapIndustryHistory[iTurn] = iScore;
-		}
-	}
-
-	{
-		m_mapAgricultureHistory.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			int iScore;
-			pStream->Read(&iTurn);
-			pStream->Read(&iScore);
-			m_mapAgricultureHistory[iTurn] = iScore;
-		}
-	}
-
-	{
-		m_mapPowerHistory.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			int iScore;
-			pStream->Read(&iTurn);
-			pStream->Read(&iScore);
-			m_mapPowerHistory[iTurn] = iScore;
-		}
-	}
-
-	{
-		m_mapCultureHistory.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			int iScore;
-			pStream->Read(&iTurn);
-			pStream->Read(&iScore);
-			m_mapCultureHistory[iTurn] = iScore;
-		}
-	}
-
-	{
-		m_mapEventsOccured.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			EventTriggeredData kData;
-			EventTypes eEvent;
-			pStream->Read((int*)&eEvent);
-			kData.read(pStream);
-			m_mapEventsOccured[eEvent] = kData;
-		}
-	}
-
-	{
-		m_mapEventCountdown.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			EventTriggeredData kData;
-			EventTypes eEvent;
-			pStream->Read((int*)&eEvent);
-			kData.read(pStream);
-			m_mapEventCountdown[eEvent] = kData;
-		}
-	}
-
-	{
-		m_aFreeUnitCombatPromotions.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iUnitCombat;
-			int iPromotion;
-			pStream->Read(&iUnitCombat);
-			pStream->Read(&iPromotion);
-			m_aFreeUnitCombatPromotions.push_back(std::make_pair((UnitCombatTypes)iUnitCombat, (PromotionTypes)iPromotion));
-		}
-	}
-
-	{
-		m_aFreeUnitClassPromotions.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iUnitClass;
-			int iPromotion;
-			pStream->Read(&iUnitClass);
-			pStream->Read(&iPromotion);
-			m_aFreeUnitClassPromotions.push_back(std::make_pair((UnitClassTypes)iUnitClass, (PromotionTypes)iPromotion));
-		}
-	}
-
-	{
-		m_aEuropeRevolutionUnits.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			ProfessionTypes eProfession;
-			UnitTypes eUnit;
-			pStream->Read((int*)&eUnit);
-			pStream->Read((int*)&eProfession);
-			m_aEuropeRevolutionUnits.push_back(std::make_pair(eUnit, eProfession));
-		}
-	}
-
-	{
-		m_aDocksNextUnits.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			UnitTypes eUnit;
-			pStream->Read((int*)&eUnit);
-			m_aDocksNextUnits.push_back(eUnit);
-		}
-	}
-
-	// PatchMod: Achievements START
-	{
-		m_achievesGained.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			AchieveTypes eAchieve;
-			pStream->Read((int*)&eAchieve);
-			m_achievesGained.push_back(eAchieve);
-		}
-	}
-	{
-		m_achievesTurn.clear();
-		uint iSize;
-		pStream->Read(&iSize);
-		for (uint i = 0; i < iSize; i++)
-		{
-			int iTurn;
-			pStream->Read(&iTurn);
-			m_achievesTurn.push_back(iTurn);
-		}
-	}
-	// PatchMod: Achievements END
-
-	m_triggersFired.clear();
-	uint iSize;
-	pStream->Read(&iSize);
-	for (uint i = 0; i < iSize; i++)
-	{
-		int iTrigger;
-		pStream->Read(&iTrigger);
-		m_triggersFired.push_back((EventTriggerTypes)iTrigger);
-	}
-
-	// Get the NetID from the initialization structure
-	setNetID(gDLL->getAssignedNetworkID(getID()));
-
-	pStream->Read(&m_iPopRushHurryCount);
-	pStream->Read(&m_iCrossesStored);
-	pStream->Read(&m_iBellsStored);
-	pStream->Read(&m_iTaxRate);
-
-	/** NBMOD TAX **/
-	pStream->Read(&m_iMaxTaxRate);
-	/** NBMOD TAX **/
-
-    /** NBMOD REF **/
-	pStream->Read(&m_iNBMOD_REF_StartValue);
-    /** NBMOD REF **/
-
-	pStream->Read(&m_iNativeCombatModifier);
-	pStream->Read(&m_iDominateNativeBordersCount);
-	pStream->Read(&m_iRevolutionEuropeTradeCount);
-	pStream->Read(&m_iFatherPointMultiplier);
-	pStream->Read(&m_iMissionaryRateModifier);
-	pStream->Read(&m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
-
-	Update_cache_YieldEquipmentAmount(); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
-
-	// The allowed units and number of units on the dock might have changed in xml
-	// verify that the units on the dock are as they are intended
-	if (this->isAlive() && !this->isEurope() && !this->isNative())
-	{
-		verifyImmigration();
-	}
-}
-
-//
-// save object to a stream
-// used during save
-//
-void CvPlayer::write(FDataStreamBase* pStream)
-{
-	int iI;
-
-	uint uiFlag = 3;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	// PatchMod: Achievements START
-	pStream->Write(m_iNumCombatsWon);
-	pStream->Write(m_iNumSeaCombatsWon); // R&R, ray, Achievments for Sea Combats
-	// PatchMod: Achievements END
-	pStream->Write(m_iStartingX);
-	pStream->Write(m_iStartingY);
-	pStream->Write(m_iTotalPopulation);
-	pStream->Write(m_iTotalLand);
-	pStream->Write(m_iTotalLandScored);
-	pStream->Write(m_iGold);
-	pStream->Write(m_iAdvancedStartPoints);
-	pStream->Write(m_iGreatGeneralsCreated);
-	pStream->Write(m_iGreatGeneralsThresholdModifier);
-	// R&R, ray, Great Admirals - START
-	pStream->Write(m_iGreatAdmiralsCreated);
-	pStream->Write(m_iGreatAdmiralsThresholdModifier);
-	// R&R, ray, Great Admirals - END
-	pStream->Write(m_iGreatGeneralRateModifier);
-	pStream->Write(m_iDomesticGreatGeneralRateModifier);
-	pStream->Write(m_iImmigrationThresholdMultiplier);
-	pStream->Write(m_iRevolutionEuropeUnitThresholdMultiplier);
-	pStream->Write(m_iKingNumUnitMultiplier);
-	pStream->Write(m_iNativeAngerModifier);
-	pStream->Write(m_iFreeExperience);
-	pStream->Write(m_iWorkerSpeedModifier);
-	pStream->Write(m_iImprovementUpgradeRateModifier);
-	pStream->Write(m_iMilitaryProductionModifier);
-	pStream->Write(m_iCityDefenseModifier);
-	pStream->Write(m_iHighestUnitLevel);
-	pStream->Write(m_iFatherOverflowBells);
-	pStream->Write(m_iExpInBorderModifier);
-	pStream->Write(m_iLevelExperienceModifier);
-	pStream->Write(m_iCapitalCityID);
-	pStream->Write(m_iCitiesLost);
-	pStream->Write(m_iAssets);
-	pStream->Write(m_iPower);
-	pStream->Write(m_iPopulationScore);
-	pStream->Write(m_iLandScore);
-	pStream->Write(m_iFatherScore);
-	pStream->Write(m_iCombatExperience);
-	pStream->Write(m_iSeaCombatExperience); // R&R, ray, Great Admirals
-	pStream->Write(m_iMissionarySuccessPercent);
-
-	pStream->Write(m_bAlive);
-	// R&R, ray, Bargaining - Start
-	pStream->Write(m_bWillingToBargain);
-	pStream->Write(m_iTimeNoTrade);
-	// R&R, ray, Bargaining - End
-
-	// R&R, ray, Timers Diplo Events - START
-	pStream->Write(m_iTimerNativeMerc);
-	pStream->Write(m_iTimerEuropeanWars);
-	pStream->Write(m_iTimerEuropeanPeace);
-	pStream->Write(m_iTimerPrisonsCrowded);
-	pStream->Write(m_iTimerRevolutionaryNoble);
-	pStream->Write(m_iTimerBishop);
-	pStream->Write(m_iTimerChurchDemand);
-	pStream->Write(m_iTimerChurchWar);
-	pStream->Write(m_iTimerSmugglingShip);
-	pStream->Write(m_iTimerRanger);
-	pStream->Write(m_iTimerConquistador);
-	pStream->Write(m_iTimerPirates);
-	pStream->Write(m_iTimerContinentalGuard);
-	pStream->Write(m_iTimerMortar);
-	pStream->Write(m_iTimerNativeSlave);
-	pStream->Write(m_iTimerAfricanSlaves);
-	pStream->Write(m_iTimerStealingImmigrant);
-	// R&R, ray, Timers Diplo Events - END
-
-	pStream->Write(m_iChurchFavoursReceived); // R&R, ray, Church Favours
-
-	pStream->Write(m_bEverAlive);
-	pStream->Write(m_bTurnActive);
-	pStream->Write(m_bAutoMoves);
-	pStream->Write(m_bEndTurn);
-	pStream->Write(m_bPbemNewTurn && GC.getGameINLINE().isPbem());
-	pStream->Write(m_bExtendedGame);
-	pStream->Write(m_bFoundedFirstCity);
-	pStream->Write(m_bStrike);
-
-	pStream->Write(m_eID);
-	pStream->Write(m_ePersonalityType);
-	pStream->Write(m_eCurrentEra);
-	pStream->Write(m_eParent);
-	//m_eTeamType not saved
-	pStream->Write(m_eImmigrationConversion);
-
-	pStream->Write(NUM_YIELD_TYPES, m_aiSeaPlotYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiCapitalYieldRateModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiBuildingRequiredYieldModifier);
-	pStream->Write(NUM_YIELD_TYPES, m_aiCityExtraYield);
-	pStream->Write(NUM_YIELD_TYPES, m_aiExtraYieldThreshold);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBuyPrice);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldAfricaBuyPrice); // R&R, ray, Africa
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldPortRoyalBuyPrice); // R&R, ray, Port Royal
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldScoreTotal); // R&R, vetiarvind, Price dependent tax rate change
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldTradedTotal);
-	pStream->Write(NUM_YIELD_TYPES, m_aiYieldBoughtTotal);
-	pStream->Write(NUM_YIELD_TYPES, m_aiTaxYieldModifierCount);
-	pStream->Write(MAX_PLAYERS, m_aiMissionaryPoints);
-	pStream->Write(MAX_PLAYERS, m_aiMissionaryThresholdMultiplier);
-
-	pStream->Write(NUM_YIELD_TYPES, m_abYieldEuropeTradable);
-	pStream->Write(NUM_FEAT_TYPES, m_abFeatAccomplished);
-	pStream->Write(NUM_PLAYEROPTION_TYPES, m_abOptions);
-
-	pStream->WriteString(m_szScriptData);
-
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvPlayer::write");
-	pStream->Write(GC.getNumImprovementInfos(), m_paiImprovementCount);
-	pStream->Write(GC.getNumBuildingInfos(), m_paiFreeBuildingCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassMaking);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitClassImmigrated);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitMoveChange);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiUnitStrengthModifier);
-	pStream->Write(GC.getNumProfessionInfos(), m_paiProfessionCombatChange);
-	pStream->Write(GC.getNumProfessionInfos(), m_paiProfessionMoveChange);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_paiBuildingClassMaking);
-	pStream->Write(GC.getNumHurryInfos(), m_paiHurryCount);
-	pStream->Write(GC.getNumSpecialBuildingInfos(), m_paiSpecialBuildingNotRequiredCount);
-	pStream->Write(GC.getNumProfessionInfos(), m_aiProfessionEquipmentModifier);
-	pStream->Write(GC.getNumTraitInfos(), m_aiTraitCount);
-
-	for (iI=0;iI<GC.getNumCivicOptionInfos();iI++)
-	{
-		pStream->Write(m_paeCivics[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumImprovementInfos();iI++)
-	{
-		pStream->Write(NUM_YIELD_TYPES, m_ppiImprovementYieldChange[iI]);
-	}
-
-	for (iI=0;iI<GC.getNumBuildingClassInfos();iI++)
-	{
-		pStream->Write(NUM_YIELD_TYPES, m_ppiBuildingYieldChange[iI]);
-	}
-
-	m_groupCycle.Write(pStream);
-	{
-		uint iSize = m_aszCityNames.size();
-		pStream->Write(iSize);
-		for (uint i = 0; i < iSize; ++i)
-		{
-			pStream->WriteString(m_aszCityNames[i]);
-		}
-	}
-
-	WriteStreamableFFreeListTrashArray(m_cities, pStream);
-	m_tradeRoutes.Write(pStream);
-	m_units.Write(pStream);
-
-	pStream->Write((int)m_aEuropeUnits.size());
-	for(int i=0;i<(int)m_aEuropeUnits.size();i++)
-	{
-		m_aEuropeUnits[i]->write(pStream);
-	}
-
-	/*** TRIANGLETRADE 10/23/08 by DPII ***/
-	pStream->Write((int)m_aAfricaUnits.size());
-	for(int i=0;i<(int)m_aAfricaUnits.size();i++)
-	{
-		m_aAfricaUnits[i]->write(pStream);
-	}
-	/**************************************/
-	// R&R, ray, Port Royal
-	pStream->Write((int)m_aPortRoyalUnits.size());
-	for(int i=0;i<(int)m_aPortRoyalUnits.size();i++)
-	{
-		m_aPortRoyalUnits[i]->write(pStream);
-	}
-	// R&R, ray, Port Royal
-		
-	m_aTradeGroups.Write(pStream); //R&R mod, vetiarvind, trade groups	
-
-	WriteStreamableFFreeListTrashArray(m_selectionGroups, pStream);
-	WriteStreamableFFreeListTrashArray(m_eventsTriggered, pStream);
-
-	{
-		CvMessageQueue::_Alloc::size_type iSize = m_listGameMessages.size();
-		pStream->Write(iSize);
-		CvMessageQueue::iterator it;
-		for (it = m_listGameMessages.begin(); it != m_listGameMessages.end(); ++it)
-		{
-			CvTalkingHeadMessage& message = *it;
-			message.write(*pStream);
-		}
-	}
-
-	{
-		CvPopupQueue currentPopups;
-		if (GC.getGameINLINE().isNetworkMultiPlayer())
-		{
-			// don't save open popups in MP to avoid having different state on different machines
-			currentPopups.clear();
-		}
-		else
-		{
-			gDLL->getInterfaceIFace()->getDisplayedButtonPopups(currentPopups);
-		}
-		CvPopupQueue::_Alloc::size_type iSize = m_listPopups.size() + currentPopups.size();
-		pStream->Write(iSize);
-		CvPopupQueue::iterator it;
-		for (it = currentPopups.begin(); it != currentPopups.end(); ++it)
-		{
-			CvPopupInfo* pInfo = *it;
-			if (NULL != pInfo)
-			{
-				pInfo->write(*pStream);
-			}
-		}
-		for (it = m_listPopups.begin(); it != m_listPopups.end(); ++it)
-		{
-			CvPopupInfo* pInfo = *it;
-			if (NULL != pInfo)
-			{
-				pInfo->write(*pStream);
-			}
-		}
-	}
-
-	{
-		CvDiploQueue::_Alloc::size_type iSize = m_listDiplomacy.size();
-		pStream->Write(iSize);
-		CvDiploQueue::iterator it;
-		for (it = m_listDiplomacy.begin(); it != m_listDiplomacy.end(); ++it)
-		{
-			CvDiploParameters* pDiplo = *it;
-			if (NULL != pDiplo)
-			{
-				pDiplo->write(*pStream);
-			}
-		}
-	}
-
-	{
-		uint iSize = m_mapScoreHistory.size();
-		pStream->Write(iSize);
-		CvTurnScoreMap::iterator it;
-		for (it = m_mapScoreHistory.begin(); it != m_mapScoreHistory.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_mapEconomyHistory.size();
-		pStream->Write(iSize);
-		CvTurnScoreMap::iterator it;
-		for (it = m_mapEconomyHistory.begin(); it != m_mapEconomyHistory.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_mapIndustryHistory.size();
-		pStream->Write(iSize);
-		CvTurnScoreMap::iterator it;
-		for (it = m_mapIndustryHistory.begin(); it != m_mapIndustryHistory.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_mapAgricultureHistory.size();
-		pStream->Write(iSize);
-		CvTurnScoreMap::iterator it;
-		for (it = m_mapAgricultureHistory.begin(); it != m_mapAgricultureHistory.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_mapPowerHistory.size();
-		pStream->Write(iSize);
-		CvTurnScoreMap::iterator it;
-		for (it = m_mapPowerHistory.begin(); it != m_mapPowerHistory.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_mapCultureHistory.size();
-		pStream->Write(iSize);
-		CvTurnScoreMap::iterator it;
-		for (it = m_mapCultureHistory.begin(); it != m_mapCultureHistory.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_mapEventsOccured.size();
-		pStream->Write(iSize);
-		CvEventMap::iterator it;
-		for (it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			(*it).second.write(pStream);
-		}
-	}
-
-	{
-		uint iSize = m_mapEventCountdown.size();
-		pStream->Write(iSize);
-		CvEventMap::iterator it;
-		for (it = m_mapEventCountdown.begin(); it != m_mapEventCountdown.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			(*it).second.write(pStream);
-		}
-	}
-
-	{
-		uint iSize = m_aFreeUnitCombatPromotions.size();
-		pStream->Write(iSize);
-		UnitCombatPromotionArray::iterator it;
-		for (it = m_aFreeUnitCombatPromotions.begin(); it != m_aFreeUnitCombatPromotions.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_aFreeUnitClassPromotions.size();
-		pStream->Write(iSize);
-		UnitClassPromotionArray::iterator it;
-		for (it = m_aFreeUnitClassPromotions.begin(); it != m_aFreeUnitClassPromotions.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_aEuropeRevolutionUnits.size();
-		pStream->Write(iSize);
-		std::vector< std::pair<UnitTypes, ProfessionTypes> >::iterator it;
-		for (it = m_aEuropeRevolutionUnits.begin(); it != m_aEuropeRevolutionUnits.end(); ++it)
-		{
-			pStream->Write((*it).first);
-			pStream->Write((*it).second);
-		}
-	}
-
-	{
-		uint iSize = m_aDocksNextUnits.size();
-		pStream->Write(iSize);
-		std::vector<UnitTypes>::iterator it;
-		for (it = m_aDocksNextUnits.begin(); it != m_aDocksNextUnits.end(); ++it)
-		{
-			pStream->Write(*it);
-		}
-	}
-
-	// PatchMod: Achievements START
-	{
-		uint iSize = m_achievesGained.size();
-		pStream->Write(iSize);
-		std::vector<AchieveTypes>::iterator it;
-		for (it = m_achievesGained.begin(); it != m_achievesGained.end(); ++it)
-		{
-			pStream->Write(*it);
-		}
-	}
-	{
-		uint iSize = m_achievesTurn.size();
-		pStream->Write(iSize);
-		std::vector<int>::iterator it;
-		for (it = m_achievesTurn.begin(); it != m_achievesTurn.end(); ++it)
-		{
-			pStream->Write(*it);
-		}
-	}
-	// PatchMod: Achievements END
-
-	{
-		uint iSize = m_triggersFired.size();
-		pStream->Write(iSize);
-		std::vector<EventTriggerTypes>::iterator it;
-		for (it = m_triggersFired.begin(); it != m_triggersFired.end(); ++it)
-		{
-			pStream->Write((*it));
-		}
-	}
-
-	pStream->Write(m_iPopRushHurryCount);
-	pStream->Write(m_iCrossesStored);
-	pStream->Write(m_iBellsStored);
-	pStream->Write(m_iTaxRate);
-	/** NBMOD TAX **/
-	pStream->Write(m_iMaxTaxRate);
-	/** NBMOD TAX **/
-    /** NBMOD REF **/
-	pStream->Write(m_iNBMOD_REF_StartValue);
-    /** NBMOD REF **/
-	pStream->Write(m_iNativeCombatModifier);
-	pStream->Write(m_iDominateNativeBordersCount);
-	pStream->Write(m_iRevolutionEuropeTradeCount);
-	pStream->Write(m_iFatherPointMultiplier);
-	pStream->Write(m_iMissionaryRateModifier);
-	pStream->Write(m_iNativeTradeModifier); // R&R, ray, new Attribute in Traits
 }
 
 void CvPlayer::createGreatGeneral(UnitTypes eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY)
@@ -15843,7 +14523,7 @@ int CvPlayer::getYieldBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldBuyPrice[eYield];
+	return m_em_iYieldBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -16018,7 +14698,7 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldBuyPrice[eYield] = iPrice;
+		m_em_iYieldBuyPrice.set(eYield, iPrice);
 
 		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 
@@ -16364,7 +15044,7 @@ int CvPlayer::getYieldAfricaBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldAfricaBuyPrice[eYield];
+	return m_em_iYieldAfricaBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -16539,7 +15219,7 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldAfricaBuyPrice[eYield] = iPrice;
+		m_em_iYieldAfricaBuyPrice.set(eYield, iPrice);
 
 		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
 
@@ -16826,7 +15506,7 @@ int CvPlayer::getYieldPortRoyalBuyPrice(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
-	return m_aiYieldPortRoyalBuyPrice[eYield];
+	return m_em_iYieldPortRoyalBuyPrice.get(eYield);
 }
 
 void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
@@ -17001,7 +15681,7 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 		//int iOldPrice = getYieldBuyPrice(eYield);
 		// TAC - Price Limits - Ray - END
 
-		m_aiYieldPortRoyalBuyPrice[eYield] = iPrice;
+		m_em_iYieldPortRoyalBuyPrice.set(eYield, iPrice);
 
 		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
 
@@ -17559,7 +16239,7 @@ int CvPlayer::getYieldTradedTotal(YieldTypes eYield) const
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	return m_aiYieldTradedTotal[eYield];
+	return m_em_iYieldTradedTotal.get(eYield);
 }
 
 void CvPlayer::setYieldTradedTotal(YieldTypes eYield, int iValue)
@@ -17569,7 +16249,7 @@ void CvPlayer::setYieldTradedTotal(YieldTypes eYield, int iValue)
 
 	if(iValue != getYieldTradedTotal(eYield))
 	{
-		m_aiYieldTradedTotal[eYield] = iValue;
+		m_em_iYieldTradedTotal.set(eYield, iValue);
 	}
 }
 
@@ -17579,7 +16259,7 @@ int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);
 
-	return m_aiYieldScoreTotal[eYield];
+	return m_em_iYieldScoreTotal.get(eYield);
 }
 
 void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue)
@@ -17587,7 +16267,7 @@ void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue)
 	FAssert(eYield >= 0);
 	FAssert(eYield < NUM_YIELD_TYPES);	
 
-	m_aiYieldScoreTotal[eYield] = iValue;
+	m_em_iYieldScoreTotal.set(eYield, iValue);
 	
 }
 
@@ -17664,13 +16344,13 @@ int CvPlayer::getHighestStoredYieldCityId(YieldTypes eYield) const
 int CvPlayer::getYieldBoughtTotal(YieldTypes eYield) const
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	return m_aiYieldBoughtTotal[eYield];
+	return m_em_iYieldBoughtTotal.get(eYield);
 }
 
 void CvPlayer::setYieldBoughtTotal(YieldTypes eYield, int iValue)
 {
 	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
-	m_aiYieldBoughtTotal[eYield] = iValue;
+	m_em_iYieldBoughtTotal.set(eYield, iValue);
 }
 
 int CvPlayer::getCrossesStored() const
@@ -18103,7 +16783,7 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 int CvPlayer::getMissionaryPoints(PlayerTypes ePlayer) const
 {
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
-	return m_aiMissionaryPoints[ePlayer];
+	return m_em_iMissionaryPoints.get(ePlayer);
 }
 
 void CvPlayer::changeMissionaryPoints(PlayerTypes ePlayer, int iChange)
@@ -18111,21 +16791,21 @@ void CvPlayer::changeMissionaryPoints(PlayerTypes ePlayer, int iChange)
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
 	if(iChange != 0)
 	{
-		m_aiMissionaryPoints[ePlayer] += iChange;
-		FAssert(m_aiMissionaryPoints[ePlayer] >= 0);
+		m_em_iMissionaryPoints.add(ePlayer, iChange);
+		FAssert(m_em_iMissionaryPoints.get(ePlayer) >= 0);
 	}
 }
 
 int CvPlayer::getMissionaryThresholdMultiplier(PlayerTypes ePlayer) const
 {
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
-	return m_aiMissionaryThresholdMultiplier[ePlayer];
+	return m_em_iMissionaryThresholdMultiplier.get(ePlayer);
 }
 
 void CvPlayer::setMissionaryThresholdMultiplier(PlayerTypes ePlayer, int iValue)
 {
 	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
-	m_aiMissionaryThresholdMultiplier[ePlayer] = iValue;
+	m_em_iMissionaryThresholdMultiplier.set(ePlayer, iValue);
 	FAssert(getMissionaryThresholdMultiplier(ePlayer) > 0);
 }
 
@@ -18246,7 +16926,7 @@ int CvPlayer::getRebelCombatPercent() const
 int CvPlayer::getProfessionEquipmentModifier(ProfessionTypes eProfession) const
 {
 	FAssert(eProfession >= 0 && eProfession < GC.getNumProfessionInfos());
-	return m_aiProfessionEquipmentModifier[eProfession];
+	return m_em_iProfessionEquipmentModifier.get(eProfession);
 }
 
 void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int iValue)
@@ -18297,7 +16977,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			}
 		}
 
-		m_aiProfessionEquipmentModifier[eProfession] = iValue;
+		m_em_iProfessionEquipmentModifier.set(eProfession, iValue);
 
 		for (uint i = 0; i < aProfessionUnits.size(); ++i)
 		{
@@ -22600,7 +21280,7 @@ bool CvPlayer::isYieldAfricaTradable(YieldTypes eYield) const
 		return false;
 	}
 
-	return m_abYieldEuropeTradable[eYield];
+	return m_em_bYieldEuropeTradable.get(eYield);
 }
 /******************************************************/
 
@@ -22656,7 +21336,7 @@ bool CvPlayer::isYieldPortRoyalTradable(YieldTypes eYield) const
 	}
 	
 	return true; // Port Royal is not under the rule of your king
-	//return m_abYieldEuropeTradable[eYield];
+	//return m_em_bYieldEuropeTradable[eYield];
 }
 // R&R, ray, Port Royal - END
 
@@ -22787,4 +21467,20 @@ void CvPlayer::writeDesyncLog(FILE *f)
 		fprintf(f, "\tCity %d:\n", iLoop);
 		pLoopCity->writeDesyncLog(f);
 	}
+}
+
+void CvPlayer::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvPlayer::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

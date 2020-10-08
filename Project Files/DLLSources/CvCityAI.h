@@ -171,12 +171,15 @@ public:
 	
 	bool AI_isMajorCity() const;
 
+	DllExport void read(FDataStreamBase* pStream); 
+	DllExport void write(FDataStreamBase* pStream); 
 
-
-	DllExport void read(FDataStreamBase* pStream);
-	DllExport void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 protected:
+
+	void AI_resetSavedData();
 
 	int m_iGiftTimer;
 	int m_iTradeTimer; // R&R, ray, Natives Trading - START
@@ -186,10 +189,10 @@ protected:
 	int m_iFoundValue;
 	int m_iTargetSize;
 
-	int* m_aiYieldOutputWeight;
-	int* m_aiNeededYield;
-	int* m_aiTradeBalance;
-	int* m_aiYieldAdvantage;
+	EnumMap<YieldTypes,int> m_em_iYieldOutputWeight;
+	EnumMap<YieldTypes,int> m_em_iNeededYield;
+	EnumMap<YieldTypes,int> m_em_iTradeBalance;
+	EnumMap<YieldTypes,int> m_em_iYieldAdvantage;
 
 	int m_iEmphasizeAvoidGrowthCount;
 
@@ -201,18 +204,17 @@ protected:
 
 	IDInfo m_routeToCity;
 
-	int* m_aiEmphasizeYieldCount;
+	EnumMap<YieldTypes,int> m_em_iEmphasizeYieldCount;
 	bool m_bForceEmphasizeCulture;
 
-	int m_aiBestBuildValue[NUM_CITY_PLOTS_RADIUS_2];
+	EnumMapInt<CityPlotTypes, int> m_em_iBestBuildValue;
+	EnumMapInt<CityPlotTypes,BuildTypes> m_em_eBestBuild;
 
-	BuildTypes m_aeBestBuild[NUM_CITY_PLOTS_RADIUS_2];
-
-	bool* m_abEmphasize;
+	EnumMap<EmphasizeTypes,bool> m_em_bEmphasize;
 
 	mutable int m_iCachePlayerClosenessTurn;
 	mutable int m_iCachePlayerClosenessDistance;
-	int* m_aiPlayerCloseness;
+	EnumMap<PlayerTypes,int> m_em_iPlayerCloseness;
 
 	int m_iNeededFloatingDefenders;
 	int m_iNeededFloatingDefendersCacheTurn;
@@ -254,9 +256,9 @@ protected:
 
 	void AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB);
 
-	bool AI_potentialPlot(short* piYields) const;
+	bool AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) const;
 	bool AI_foodAvailable(int iExtra = 0) const;
-	int AI_yieldValue(short* piYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false, bool bWorkerOptimization = false) const;
+	int AI_yieldValue(const EnumMap<YieldTypes, short>& em_iYields, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false, bool bWorkerOptimization = false) const;
 	int AI_plotValue(const CvPlot* pPlot, bool bAvoidGrowth, bool bRemove, bool bIgnoreFood = false, bool bIgnoreGrowth = false, bool bIgnoreStarvation = false) const;
 
 	int AI_experienceWeight() const;

@@ -14,6 +14,8 @@
 //TAC Whaling, ray
 #include "CvDLLInterfaceIFaceBase.h"
 //End TAC Whaling, ray
+
+#include "CvSavegame.h"
 // Public Functions...
 
 CvSelectionGroupAI::CvSelectionGroupAI()
@@ -45,19 +47,7 @@ void CvSelectionGroupAI::AI_uninit()
 void CvSelectionGroupAI::AI_reset()
 {
 	AI_uninit();
-
-	m_iMissionAIX = INVALID_PLOT_COORD;
-	m_iMissionAIY = INVALID_PLOT_COORD;
-
-	m_bForceSeparate = false;
-
-	m_eMissionAIType = NO_MISSIONAI;
-
-	m_missionAIUnit.reset();
-
-	m_bGroupAttack = false;
-	m_iGroupAttackX = -1;
-	m_iGroupAttackY = -1;
+	AI_resetSavedData();
 }
 
 
@@ -1454,49 +1444,6 @@ CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 
 
 // Protected Functions...
-
-void CvSelectionGroupAI::read(FDataStreamBase* pStream)
-{
-	CvSelectionGroup::read(pStream);
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iMissionAIX);
-	pStream->Read(&m_iMissionAIY);
-
-	pStream->Read(&m_bForceSeparate);
-
-	pStream->Read((int*)&m_eMissionAIType);
-
-	m_missionAIUnit.read(pStream);
-
-	pStream->Read(&m_bGroupAttack);
-	pStream->Read(&m_iGroupAttackX);
-	pStream->Read(&m_iGroupAttackY);
-}
-
-
-void CvSelectionGroupAI::write(FDataStreamBase* pStream)
-{
-	CvSelectionGroup::write(pStream);
-
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iMissionAIX);
-	pStream->Write(m_iMissionAIY);
-
-	pStream->Write(m_bForceSeparate);
-
-	pStream->Write(m_eMissionAIType);
-
-	m_missionAIUnit.write(pStream);
-
-	pStream->Write(m_bGroupAttack);
-	pStream->Write(m_iGroupAttackX);
-	pStream->Write(m_iGroupAttackY);
-}
 
 // R&R mod, vetiarvind, max yield import limit - start
 

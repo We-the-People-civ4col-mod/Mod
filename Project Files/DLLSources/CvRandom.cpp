@@ -8,6 +8,8 @@
 #include <numeric>
 #include <limits>
 
+#include "CvSavegame.h"
+
 #define RANDOM_A      (1103515245)
 #define RANDOM_C      (12345)
 #define RANDOM_SHIFT  (16)
@@ -202,4 +204,21 @@ void CvRandom::read(FDataStreamBase* pStream)
 void CvRandom::write(FDataStreamBase* pStream)
 {
 	pStream->Write(m_ulRandomSeed);
+}
+
+//this is good as is
+void CvRandom::read(CvSavegameReader reader)
+{
+	reset();
+
+	reader.Read(m_ulRandomSeed);
+	/// random network fix - start - Nightinggale
+	std::srand(m_ulRandomSeed);
+	/// random network fix - end - Nightinggale
+}
+
+
+void CvRandom::write(CvSavegameWriter writer)
+{
+	writer.Write(m_ulRandomSeed);
 }

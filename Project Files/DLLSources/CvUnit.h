@@ -18,6 +18,9 @@ class CvSelectionGroup;
 class FAStarNode;
 class CvArtInfoUnit;
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 struct CombatDetails
 {
 	int iExtraCombatPercent;
@@ -700,6 +703,9 @@ public:
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
+	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	virtual void AI_init() = 0;
 	virtual void AI_uninit() = 0;
@@ -818,18 +824,18 @@ protected:
 	ProfessionTypes m_eProfession;
 
 	// TAC - LbD - Ray - START
-	int m_LbDrounds;
-	ProfessionTypes m_lastProfession;
+	int m_iLbDrounds;
+	ProfessionTypes m_eLastProfession;
 	// TAC - LbD - Ray - END
 
 	//ray18
-	int moneyToBuyLand;
-	PlayerTypes playerToBuyLand;
+	int m_iMoneyToBuyLand;
+	PlayerTypes m_ePlayerToBuyLand;
 	//ray18 End
 
 	// R&R, ray, Natives Trading - START
-	int m_AmountForNativeTrade;
-	YieldTypes m_YieldForNativeTrade;
+	int m_iAmountForNativeTrade;
+	YieldTypes m_eYieldForNativeTrade;
 	// R&R, ray, Natives Trading - END
 
 	UnitTravelStates m_eUnitTravelState;
@@ -839,22 +845,22 @@ protected:
 	IDInfo m_homeCity;
 	int m_iPostCombatPlotIndex;
 
-	int* m_aiExtraDomainModifier;
+	DomainArray<int> m_ja_iExtraDomainModifier;
 
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	bool* m_pabHasRealPromotion;
-	int* m_paiFreePromotionCount;
-	int* m_paiTerrainDoubleMoveCount;
-	int* m_paiFeatureDoubleMoveCount;
-	int* m_paiExtraTerrainAttackPercent;
-	int* m_paiExtraTerrainDefensePercent;
-	int* m_paiExtraFeatureAttackPercent;
-	int* m_paiExtraFeatureDefensePercent;
-	int* m_paiExtraUnitClassAttackModifier;
-	int* m_paiExtraUnitClassDefenseModifier;
-	int* m_paiExtraUnitCombatModifier;
+	BoolArray m_ba_HasRealPromotion;
+	PromotionArray<int> m_ja_iFreePromotionCount;
+	TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
+	FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
+	TerrainArray<int> m_ja_iExtraTerrainAttackPercent;
+	TerrainArray<int> m_ja_iExtraTerrainDefensePercent;
+	FeatureArray<int> m_ja_iExtraFeatureAttackPercent;
+	FeatureArray<int> m_ja_iExtraFeatureDefensePercent;
+	UnitClassArray<int> m_ja_iExtraUnitClassAttackModifier;
+	UnitClassArray<int> m_ja_iExtraUnitClassDefenseModifier;
+	UnitCombatArray<int> m_ja_iExtraUnitCombatModifier;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 

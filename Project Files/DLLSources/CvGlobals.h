@@ -121,6 +121,7 @@ class CivEffectInfo;
 
 #include "InfoCacheArray.h"
 #include "EnumTypeCacheArray.h"
+#include "Profile.h"
 
 class CvGlobals
 {
@@ -920,6 +921,8 @@ public:
 
 	void setCityCatchmentRadius(int iSetting);
 
+	ProfilerManager& getProfiler() { return m_ProfileManager; }
+
 protected:
 
 	bool m_bGraphicsInitialized;
@@ -1363,6 +1366,8 @@ protected:
 	int m_iUSE_ON_UNIT_CREATED_CALLBACK;
 	int m_iUSE_ON_UNIT_LOST_CALLBACK;
 	
+	ProfilerManager m_ProfileManager;
+
 	// K-Mod \ RaR
 	bool m_bUSE_AI_UNIT_UPDATE_CALLBACK;
 	bool m_bUSE_AI_DO_DIPLO_CALLBACK;

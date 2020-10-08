@@ -177,7 +177,7 @@ public:
 	int maxHurryPopulation() const;
 	int hurryYield(HurryTypes eHurry, YieldTypes eYield) const;
 
-	int cultureDistance(int iDX, int iDY) const;
+	CultureLevelTypes cultureDistance(int iDX, int iDY) const;
 
 	// Custom_House_Mod Start
 	bool isBestPortCity() const;
@@ -390,7 +390,7 @@ public:
 	void setBuildingProductionTime(BuildingTypes eIndex, int iNewValue);
 	void changeBuildingProductionTime(BuildingTypes eIndex, int iChange);
 
-	int getBuildingOriginalOwner(BuildingTypes eIndex) const;
+	PlayerTypes getBuildingOriginalOwner(BuildingTypes eIndex) const;
 	int getBuildingOriginalTime(BuildingTypes eIndex) const;
 
 	DllExport int getUnitProduction(UnitTypes eIndex) const;
@@ -511,8 +511,10 @@ public:
 
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
 	virtual void AI_doTurn() = 0;
@@ -705,46 +707,45 @@ protected:
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
 	PlayerTypes m_eMissionaryPlayer;
-	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields
-	int* m_aiSeaPlotYield;
-	int* m_aiRiverPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiYieldStored;
-	int* m_aiYieldRushed;
+	EnumMap<YieldTypes,int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields
+	EnumMap<YieldTypes,int> m_em_iSeaPlotYield;
+	EnumMap<YieldTypes,int> m_em_iRiverPlotYield;
+	EnumMap<YieldTypes,int> m_em_iYieldRateModifier;
+	EnumMap<YieldTypes,int> m_em_iYieldStored;
+	EnumMap<YieldTypes,int> m_em_iYieldRushed;
 	// R&R, Androrc, Domestic Market
-	int* m_aiYieldBuyPrice;
+	EnumMap<YieldTypes,int> m_em_iYieldBuyPrice;
 	//Androrc End
 	
 	// R&R, ray, finishing Custom House Screen
-	YieldArray<int> ma_aiCustomHouseSellThreshold;
-	BoolArray       ba_aiCustomHouseNeverSell;
+	EnumMap<YieldTypes,int> m_em_iCustomHouseSellThreshold;
+	EnumMap<YieldTypes,bool> m_em_bCustomHouseNeverSell;
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	UnitArray<int> ma_OrderedStudents;
-	BoolArray      ba_OrderedStudentsRepeat;
+	EnumMap<UnitTypes,int> m_em_iOrderedStudents;
+	EnumMap<UnitTypes,bool> m_em_bOrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
-
-	int* m_aiDomainFreeExperience;
-	int* m_aiDomainProductionModifier;
-	int* m_aiCulture;
-	bool* m_abEverOwned;
-	bool* m_abRevealed;
-	bool* m_abScoutVisited;
+	EnumMap<DomainTypes,int> m_em_iDomainFreeExperience;
+	EnumMap<DomainTypes,int> m_em_iDomainProductionModifier;
+	EnumMap<PlayerTypes,int> m_em_iCulture;
+	EnumMap<PlayerTypes,bool> m_em_bEverOwned;
+	EnumMap<TeamTypes,bool> m_em_bRevealed;
+	EnumMap<TeamTypes,bool> m_em_bScoutVisited;
 	CvWString m_szName;
 	CvString m_szScriptData;
-	int* m_paiBuildingProduction;
-	int* m_paiBuildingProductionTime;
-	int* m_paiBuildingOriginalOwner;
-	int* m_paiBuildingOriginalTime;
-	int* m_paiUnitProduction;
-	int* m_paiUnitProductionTime;
-	int* m_aiSpecialistWeights;
-	int* m_paiUnitCombatFreeExperience;
-	int* m_paiFreePromotionCount;
-	bool* m_pabHasRealBuilding;
-	bool* m_pabHasFreeBuilding;
-	int* m_paiWorkingPlot;
+	EnumMap<BuildingTypes,int> m_em_iBuildingProduction;
+	EnumMap<BuildingTypes,int> m_em_iBuildingProductionTime;
+	EnumMapDefault<BuildingTypes,PlayerTypes,NO_PLAYER> m_em_eBuildingOriginalOwner;
+	EnumMap<BuildingTypes,int> m_em_iBuildingOriginalTime;
+	EnumMap<UnitTypes,int> m_em_iUnitProduction;
+	EnumMap<UnitTypes,int> m_em_iUnitProductionTime;
+	EnumMap<UnitTypes,int> m_em_iSpecialistWeights;
+	EnumMap<UnitCombatTypes,int> m_em_iUnitCombatFreeExperience;
+	EnumMap<PromotionTypes,int> m_em_iFreePromotionCount;
+	EnumMap<BuildingTypes,bool> m_em_bHasRealBuilding;
+	EnumMap<BuildingTypes,bool> m_em_bHasFreeBuilding;
+	EnumMapInt<CityPlotTypes, int, -1> m_em_iWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;
 	std::vector< std::pair < float, float> > m_kWallOverridePoints;
@@ -753,20 +754,20 @@ protected:
 	std::vector<CvUnit*> m_aPopulationUnits;
 
 	// traderoute just-in-time - start - Nightinggale
-	BoolArray ba_tradeImports;
-	BoolArray ba_tradeExports;
-	YieldArray<unsigned short> ma_tradeThreshold;
+	EnumMap<YieldTypes,bool> m_em_bTradeImports;
+	EnumMap<YieldTypes,bool> m_em_bTradeExports;
+	EnumMap<YieldTypes,unsigned short> m_em_iTradeThreshold;
 	// traderoute just-in-time - end - Nightinggale
 	
-	YieldArray<unsigned short> ma_tradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
+	EnumMap<YieldTypes,unsigned short> m_em_iTradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
 
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
-	int*	m_aiBaseYieldRank;
-	bool*	m_abBaseYieldRankValid;
-	int*	m_aiYieldRank;
-	bool*	m_abYieldRankValid;
+	mutable EnumMapDefault<YieldTypes,int,-1> m_em_iBaseYieldRank;
+	mutable EnumMap<YieldTypes,bool> m_em_bBaseYieldRankValid;
+	mutable EnumMapDefault<YieldTypes,int,-1> m_em_iYieldRank;
+	mutable EnumMap<YieldTypes,bool> m_em_bYieldRankValid;
 
 	void doGrowth();
 	void doYields();
@@ -817,10 +818,10 @@ public:
 	void setAutoThresholdCache();
 
 protected:
-	BoolArray ba_tradeImportsMaintain;
-	BoolArray ba_tradeStopAutoImport;
-	YieldArray<int> ma_tradeAutoThreshold; // nosave - recalculate on load
-	YieldArray<int> ma_productionNeeded; // nosave - recalculate on load
+	EnumMap<YieldTypes,bool> m_em_bTradeImportsMaintain;
+	EnumMap<YieldTypes,bool> m_em_bTradeStopAutoImport;
+	EnumMap<YieldTypes,int> m_em_iTradeAutoThreshold; // nosave - recalculate on load
+	EnumMap<YieldTypes,int> m_em_iProductionNeeded; // nosave - recalculate on load
 
 	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
@@ -828,12 +829,12 @@ protected:
 	
 	// auto traderoute - start - Nightinggale
 public:
-	bool isAutoExport(YieldTypes eYield) const {return ba_tradeAutoExport.get(eYield);};
+	bool isAutoExport(YieldTypes eYield) const {return m_em_bTradeAutoExport.get(eYield);};
 protected:
 	void setAutoExport(YieldTypes eYield, bool bExport);
 	void doAutoExport(YieldTypes eYield);
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
-	BoolArray ba_tradeAutoExport;
+	EnumMap<YieldTypes,bool> m_em_bTradeAutoExport;
 	// auto traderoute - end - Nightinggale
 
 public:
@@ -883,22 +884,22 @@ inline int CvCity::getMaxYieldCapacity() const
 // transport feeder - start - Nightinggale
 inline bool CvCity::getImportsMaintain(YieldTypes eYield) const
 {
-	return ba_tradeImportsMaintain.get(eYield);
+	return m_em_bTradeImportsMaintain.get(eYield);
 }
 
 inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const
 {
-	return ba_tradeStopAutoImport.get(eYield);
+	return m_em_bTradeStopAutoImport.get(eYield);
 }
 
 inline int CvCity::getAutoMaintainThreshold(YieldTypes eYield) const
 {
-	return ma_tradeAutoThreshold.get(eYield);
+	return m_em_iTradeAutoThreshold.get(eYield);
 }
 
 inline int CvCity::getProductionNeeded(YieldTypes eYield) const
 {
-	return ma_productionNeeded.get(eYield);
+	return m_em_iProductionNeeded.get(eYield);
 }
 // transport feeder - end - Nightinggale
 #endif

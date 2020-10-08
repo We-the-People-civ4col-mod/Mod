@@ -278,6 +278,9 @@ public:
 
 protected:
 
+	int read(CvSavegameReader& reader, JITarrayTypes eType, bool*& pArray, bool bAllocate);
+	void write(CvSavegameWriter& writer, JITarrayTypes eType, bool* pArray, int iLength);
+
 	void clearCustomMapOptions();
 	void refreshCustomMapOptions();
 

@@ -81,8 +81,9 @@ public:
 	bool AI_loadAdjacent(CvPlot* pPlot, bool bTestCity);
 	bool AI_allowedToJoin(const CvCity* pCity) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 	//TAC Whaling, ray
 	bool AI_transportReturnToPort(bool bUnload, CvCity* pCity);
 	bool AI_moveToCity(bool bUnload, CvCity* pCity);
@@ -90,6 +91,8 @@ public:
 	bool AI_africa();
 
 protected:
+
+	void AI_resetSavedData();
 
 	int m_iBirthmark;
 	int m_iMovePriority;

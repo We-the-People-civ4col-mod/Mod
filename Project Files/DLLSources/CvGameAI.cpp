@@ -7,6 +7,9 @@
 #include "CvGlobals.h"
 #include "CvInfos.h"
 
+#include "CvSavegame.h"
+
+
 // Public Functions...
 
 CvGameAI::CvGameAI()
@@ -38,8 +41,7 @@ void CvGameAI::AI_uninit()
 void CvGameAI::AI_reset()
 {
 	AI_uninit();
-
-	m_iPad = 0;
+	AI_resetSavedData();
 }
 
 
@@ -115,23 +117,19 @@ int CvGameAI::AI_gameCompletePercent()
 
 void CvGameAI::read(FDataStreamBase* pStream)
 {
-	CvGame::read(pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
 
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iPad);
+	read(reader);
 }
 
 
 void CvGameAI::write(FDataStreamBase* pStream)
 {
-	CvGame::write(pStream);
-
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iPad);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase); 
+	write(writer); 
+	writerbase.WriteFile(); 
 }
 
 // Protected Functions...

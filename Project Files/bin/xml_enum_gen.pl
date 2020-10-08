@@ -5,7 +5,7 @@ use strict;
 use warnings;
 
 use XML::LibXML;
-
+use lib './bin';
 use XMLlists;
 
 my $FILE = getAutoDir() . "/AutoXmlEnum.h.tmp";
@@ -137,7 +137,15 @@ sub processFile
 
 	print $output "\n\tNUM_" . $TYPE . "_TYPES,\n";
 	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n" if $isYield;
-	print $output "\n#endif // HARDCODE_XML_VALUES\n" unless $isHardcoded;
+	print $output "\n\tCOMPILE_TIME_NUM_" . $TYPE . "_TYPES = NUM_" . $TYPE . "_TYPES,\n";
+	
+	unless ($isHardcoded)
+	{
+		print $output "\n#else // HARDCODE_XML_VALUES\n";
+		print $output "\n\tCOMPILE_TIME_NUM_" . $TYPE . "_TYPES = MAX_SHORT,\n";
+		print $output "\n#endif // HARDCODE_XML_VALUES\n";
+	}
+	
 	print $output "\n\tFIRST_" . $TYPE . " = 0,\n";
 	print $output "};\n\n";
 	
@@ -149,6 +157,7 @@ sub processFile
 		print $output_declare  $enum . " NUM_" . $TYPE . "_TYPES;\n";
 		print $output_init "NUM_" . $TYPE . "_TYPES = (" . $enum . ")" . getNumFunction($basename) . ";\n";
 	}
+	print $output "#define NUM_" . substr($enum, 0, -5) . "_TYPES NUM_" . $TYPE . "_TYPES\n\n"
 }
 
 sub getTypesInFile

@@ -3,6 +3,8 @@
 #ifndef CIV4_TRADE_ROUTE_H
 #define CIV4_TRADE_ROUTE_H
 
+class CvSavegameReader;
+class CvSavegameWriter;
 class CvTradeRoute
 {
 public:
@@ -27,9 +29,10 @@ public:
 
 	bool checkValid(PlayerTypes ePlayer) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
+	void resetSavedData();
 
 	// Custom_House_Mod Start
 	int getBestPortCityID(PlayerTypes ePlayer) const;

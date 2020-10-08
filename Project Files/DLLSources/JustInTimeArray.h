@@ -24,6 +24,9 @@ class InfoArray;
 class CvPlayer;
 class CvCivilizationInfo;
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 #include "CvEnums.h"
 #include "JustInTimeArrayGetType.h"
 
@@ -36,6 +39,9 @@ private:
 	const T m_eDefault;
 
 public:
+	// used by getFirstNoneDefault when used on an empty array
+	static const int NO_NONEDEFAULT_ARRAY = 0xffff;
+
 	JustInTimeArray(JITarrayTypes eType, T eDefault = (T)0);
 
 	~JustInTimeArray();
@@ -96,6 +102,8 @@ public:
 
 	int getPositiveCount() const;
 
+	T getMax() const;
+
 	// add bound checks. Ignore call if out of bound index
 	int safeSet(T value, int iIndex);
 	int safeAdd(T value, int iIndex);
@@ -106,6 +114,7 @@ public:
 	}
 
 	bool hasContent();
+	int getFirstNoneDefault();
 	inline bool isEmpty()
 	{
 		return !hasContent();
@@ -126,8 +135,11 @@ public:
 	// TODO remove this when cleaning up savegame code 
 	void read (FDataStreamBase* pStream, bool bEnable);
 	void write(FDataStreamBase* pStream, bool bEnable);
-	void Read (FDataStreamBase* pStream);
+	void Read(FDataStreamBase* pStream);
 	void Write(FDataStreamBase* pStream);
+
+	void Read(CvSavegameReader& reader);
+	void Write(CvSavegameWriter& writer);
 
 	void ReadWrite(bool bRead, FDataStreamBase* pStream);
 
@@ -258,7 +270,7 @@ protected:
 
 class CvInfoBase;
 
-bool isConversionArray(JITarrayTypes eType);
+JITarrayTypes GetBaseType(JITarrayTypes eType);
 bool isHardcodedArray(JITarrayTypes eType);
 int getArrayLength(JITarrayTypes eType);
 const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex);
@@ -268,6 +280,9 @@ const char* getArrayName(JITarrayTypes eType);
 CvWString getArrayNameWide(JITarrayTypes eType);
 const char* getArrayPrefix(JITarrayTypes eType);
 int getIndexForType(JITarrayTypes eType, const char* pTypeString);
+int getIndexForTypeAddingPrefix(JITarrayTypes eType, const char* pTypeString);
+const char* getArrayTypeWithoutPrefix(JITarrayTypes eType, int iIndex);
+JITarrayTypes getJITArrayTypeFromString(const char* szType);
 
 
 

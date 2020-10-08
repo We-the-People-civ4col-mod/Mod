@@ -13,6 +13,9 @@ Global
 		Debug|Multi core compilation = Debug|Multi core compilation
 		Debug|Single core compilation = Debug|Single core compilation
 		Debug|XML hardcoding = Debug|XML hardcoding
+		Final Release|Multi core compilation = Final Release|Multi core compilation
+		Final Release|Single core compilation = Final Release|Single core compilation
+		Final Release|XML hardcoding = Final Release|XML hardcoding
 		Profile|Multi core compilation = Profile|Multi core compilation
 		Profile|Single core compilation = Profile|Single core compilation
 		Profile|XML hardcoding = Profile|XML hardcoding
@@ -33,6 +36,12 @@ Global
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Single core compilation.Build.0 = Single core-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|XML hardcoding.ActiveCfg = XML hardcoding-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|XML hardcoding.Build.0 = XML hardcoding-Debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Multi core compilation.ActiveCfg = Multi core-Final Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Multi core compilation.Build.0 = Multi core-Final Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Single core compilation.ActiveCfg = Single core-Final Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Single core compilation.Build.0 = Single core-Final Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|XML hardcoding.ActiveCfg = XML hardcoding-Final Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|XML hardcoding.Build.0 = XML hardcoding-Final Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Multi core compilation.ActiveCfg = Multi core-Profile|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Multi core compilation.Build.0 = Multi core-Profile|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Single core compilation.ActiveCfg = Single core-Profile|Win32

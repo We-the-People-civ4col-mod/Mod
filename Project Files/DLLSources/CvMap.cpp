@@ -32,14 +32,13 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
 
+#include "CvSavegame.h"
+
 // Public Functions...
 
 CvMap::CvMap()
 {
 	CvMapInitData defaultMapData;
-
-	m_paiNumBonus = NULL;
-	m_paiNumBonusOnLand = NULL;
 
 	m_pMapPlots = NULL;
 
@@ -103,9 +102,6 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 
 void CvMap::uninit()
 {
-	SAFE_DELETE_ARRAY(m_paiNumBonus);
-	SAFE_DELETE_ARRAY(m_paiNumBonusOnLand);
-
 	SAFE_DELETE_ARRAY(m_pMapPlots);
 
 	m_areas.uninit();
@@ -118,14 +114,15 @@ void CvMap::uninit()
 // Initializes data members that are serialized.
 void CvMap::reset(CvMapInitData* pInitInfo)
 {
-	int iI;
-
 	// reset city catchment radius. It should be 1 plot unless explicitly requested otherwise.
 	setCityCatchmentRadius(0);
 
 	//--------------------------------
 	// Uninit class
 	uninit();
+
+	// apply default values for variables in savegame
+	resetSavedData();
 
 	//
 	// set grid size
@@ -181,20 +178,6 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 	{
 		// Check map script for wrap override (map script beats ini file)
 		gDLL->getPythonIFace()->pythonGetWrapXY(&m_bWrapX, &m_bWrapY);
-	}
-
-	if (GC.getNumBonusInfos())
-	{
-		FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated in CvMap::reset");
-		FAssertMsg(m_paiNumBonus==NULL, "mem leak m_paiNumBonus");
-		m_paiNumBonus = new int[GC.getNumBonusInfos()];
-		FAssertMsg(m_paiNumBonusOnLand==NULL, "mem leak m_paiNumBonusOnLand");
-		m_paiNumBonusOnLand = new int[GC.getNumBonusInfos()];
-		for (iI = 0; iI < GC.getNumBonusInfos(); iI++)
-		{
-			m_paiNumBonus[iI] = 0;
-			m_paiNumBonusOnLand[iI] = 0;
-		}
 	}
 
 	m_areas.removeAll();
@@ -953,7 +936,7 @@ int CvMap::getNumBonuses(BonusTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiNumBonus[eIndex];
+	return m_ja_NumBonuses.get(eIndex);
 }
 
 
@@ -961,7 +944,7 @@ void CvMap::changeNumBonuses(BonusTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiNumBonus[eIndex] = (m_paiNumBonus[eIndex] + iChange);
+	m_ja_NumBonuses.add(iChange, eIndex);
 	FAssert(getNumBonuses(eIndex) >= 0);
 }
 
@@ -970,7 +953,7 @@ int CvMap::getNumBonusesOnLand(BonusTypes eIndex)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiNumBonusOnLand[eIndex];
+	return m_ja_NumBonusesOnLand.get(eIndex);
 }
 
 
@@ -978,7 +961,7 @@ void CvMap::changeNumBonusesOnLand(BonusTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBonusInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiNumBonusOnLand[eIndex] = (m_paiNumBonusOnLand[eIndex] + iChange);
+	m_ja_NumBonusesOnLand.add(iChange, eIndex);
 	FAssert(getNumBonusesOnLand(eIndex) >= 0);
 }
 
@@ -1140,42 +1123,9 @@ void CvMap::read(FDataStreamBase* pStream)
 	// Init data before load
 	reset(&defaultMapData);
 
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iGridWidth);
-	pStream->Read(&m_iGridHeight);
-	pStream->Read(&m_iLandPlots);
-	pStream->Read(&m_iOwnedPlots);
-	pStream->Read(&m_iTopLatitude);
-	pStream->Read(&m_iBottomLatitude);
-	pStream->Read(&m_iNextRiverID);
-
-	pStream->Read(&m_bWrapX);
-	pStream->Read(&m_bWrapY);
-
-	if (uiFlag >= 1)
-	{
-		pStream->Read(&m_bUseTwoPlotCities);
-		setCityCatchmentRadius(m_bUseTwoPlotCities ? 1 : 0);
-	}
-
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonus);
-	pStream->Read(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
-
-	if (numPlotsINLINE() > 0)
-	{
-		m_pMapPlots = new CvPlot[numPlotsINLINE()];
-		int iI;
-		for (iI = 0; iI < numPlotsINLINE(); iI++)
-		{
-			m_pMapPlots[iI].read(pStream);
-		}
-	}
-
-	// call the read of the free list CvArea class allocations
-	ReadStreamableFFreeListTrashArray(m_areas, pStream);
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+	read(reader);
 
 	setup();
 }
@@ -1185,33 +1135,10 @@ void CvMap::read(FDataStreamBase* pStream)
 //
 void CvMap::write(FDataStreamBase* pStream)
 {
-	uint uiFlag=1;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iGridWidth);
-	pStream->Write(m_iGridHeight);
-	pStream->Write(m_iLandPlots);
-	pStream->Write(m_iOwnedPlots);
-	pStream->Write(m_iTopLatitude);
-	pStream->Write(m_iBottomLatitude);
-	pStream->Write(m_iNextRiverID);
-
-	pStream->Write(m_bWrapX);
-	pStream->Write(m_bWrapY);
-	pStream->Write(m_bUseTwoPlotCities);
-
-	FAssertMsg((0 < GC.getNumBonusInfos()), "GC.getNumBonusInfos() is not greater than zero but an array is being allocated");
-	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonus);
-	pStream->Write(GC.getNumBonusInfos(), m_paiNumBonusOnLand);
-
-	int iI;
-	for (iI = 0; iI < numPlotsINLINE(); iI++)
-	{
-		m_pMapPlots[iI].write(pStream);
-	}
-
-	// call the read of the free list CvArea class allocations
-	WriteStreamableFFreeListTrashArray(m_areas, pStream);
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }
 
 
