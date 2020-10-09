@@ -60,7 +60,11 @@ public:
 	DllExport virtual bool readPass2(CvXMLLoadUtility* pXML) { return false; }
 	DllExport virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
+	void cleanStrings();
+
 protected:
+	void checkStringContents(CvWString& szStr, const wchar* szExtension);
+
 	bool doneReadingXML(CvXMLLoadUtility* pXML);
 	bool m_bGraphicalOnly;
 	CvString m_szType;
@@ -348,6 +352,7 @@ public:
 	DllExport int getMovesChange() const;
 	DllExport int getWorkRate() const;
 	DllExport int getMissionaryRate() const;
+	DllExport int getNativeTradeRate() const; // WTP, ray, Native Trade Posts - START
 	DllExport int getPowerValue() const;
 	DllExport int getAssetValue() const;
 	DllExport bool isWorkPlot() const;
@@ -391,6 +396,7 @@ protected:
 	int m_iMovesChange;
 	int m_iWorkRate;
 	int m_iMissionaryRate;
+	int m_iNativeTradeRate; // WTP, ray, Native Trade Posts - START
 	int m_iPowerValue;
 	int m_iAssetValue;
 	bool m_bWorkPlot;
@@ -678,6 +684,7 @@ public:
 	DllExport int getWorkRate() const;
 	DllExport int getWorkRateModifier() const;
 	DllExport int getMissionaryRateModifier() const;
+	DllExport int getNativeTradeRateModifier() const; // WTP, ray, Native Trade Posts - START
 	DllExport int getCombat() const;
 	DllExport void setCombat(int iNum);
 	DllExport int getXPValueAttack() const;
@@ -749,6 +756,10 @@ public:
 	DllExport bool LbD_canGetFree() const;
 	DllExport bool LbD_canEscape() const;
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	DllExport bool LbD_canRevolt() const;
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	DllExport bool isCapturesCargo() const;
 	// TAC Capturing Ships - ray
@@ -854,6 +865,7 @@ protected:
 	int m_iWorkRate;
 	int m_iWorkRateModifier;
 	int m_iMissionaryRateModifier;
+	int m_iNativeTradeRateModifier; // WTP, ray, Native Trade Posts - START
 	int m_iCombat;
 	int m_iXPValueAttack;
 	int m_iXPValueDefense;
@@ -917,7 +929,9 @@ protected:
 	bool m_canGetFree;
 	bool m_canEscape;
 	// TAC - LbD - Ray - END
-
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	bool m_canRevolt;
+	// WTP, ray, LbD Slaves Revolt and Free - END
 	bool m_bCapturesCargo;
 	// TAC Capturing Ships - ray
 	bool m_bCapturesShips;
@@ -2547,6 +2561,8 @@ public:
 	DllExport int getChar() const;
 	DllExport void setChar(int i);
 	DllExport const char* getIcon() const;
+	WidgetTypes getWikiWidget() const;
+	YieldTypes getID() const;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 	DllExport const char* getCombiIcon() const;
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc END
@@ -3061,6 +3077,7 @@ public:
 	DllExport int getMaxTaxRateThresholdDecrease() const; // R&R, ray, new Attribute in Traits
 	DllExport int getMercantileFactor() const;
 	DllExport int getTreasureModifier() const;
+	DllExport int getUnhappinessFromSlavesModifier() const; // WTP, ray, Happiness - START
 	DllExport int getChiefGoldModifier() const;
 	DllExport int getNativeAttitudeChange() const;
 	DllExport int getEuropeanAttitudeChange() const; // R&R, ray, new Attribute in Traits 
@@ -3120,6 +3137,7 @@ protected:
 	int m_iMaxTaxRateThresholdDecrease; // R&R, ray, new Attribute in Traits
 	int m_iMercantileFactor;
 	int m_iTreasureModifier;
+	int m_iUnhappinessFromSlavesModifier; // WTP, ray, Happiness - START
 	int m_iChiefGoldModifier;
 	int m_iNativeAttitudeChange;
 	int m_iEuropeanAttitudeChange; // R&R, ray, new Attribute in Traits
@@ -3902,7 +3920,7 @@ public:
 	const wchar* getPlural() const { return m_szPlural; }
 	DllExport int getNumLanguages() const; // not static for Python access
 	DllExport void setNumLanguages(int iNum); // not static for Python access
-	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName);
+	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage);
 
 	static int getNumLanguagesStatic();
 	static const TCHAR* CvGameText::getLanguageName(int iLanguageID);
@@ -3911,10 +3929,12 @@ public:
 	static void setChangeLanguage();
 
 	static int getCodePage();
+	static int getLanguageID(const char* szLanguageName);
+
+
+	static bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound, const char* szType);
 
 protected:
-	static int getLanguageID(const char* szLanguageName);
-	bool readString(CvXMLLoadUtility* pXML, CvWString &szString, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound);
 
 	CvWString m_szText;
 	CvWString m_szGender;

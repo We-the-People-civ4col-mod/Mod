@@ -102,7 +102,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BONUS</Tag>
-        <English>TXT_KEY_BUILDING_BONUS</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BREWERS_HOUSE</Tag>
@@ -553,16 +553,14 @@
         <English>Furniture Factory</English>
         <French>Usine de meubles</French>
         <German>Möbelfabrik</German>
-        <Italian>Furniture Factory</Italian>
-        <Spanish>Furniture Factory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FURNITURE_MAKERS_HOUSE</Tag>
-        <English>TXT_KEY_FURNITURE_MAKERS_HOUSE</English>
+        <English>TXT_KEY_BUILDING_FURNITURE_MAKERS_HOUSE</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FURNITURY</Tag>
-        <English>TXT_KEY_FURNITURY</English>
+        <English>TXT_KEY_BUILDING_FURNITURY</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_FUR_FACTORY</Tag>

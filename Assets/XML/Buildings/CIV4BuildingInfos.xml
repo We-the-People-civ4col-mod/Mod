@@ -139,6 +139,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>1</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -223,6 +227,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
             </YieldChanges>
@@ -312,7 +320,15 @@
             <RiverPlotYieldChanges/>
             <YieldChanges>
                 <YieldChange>
+                    <YieldType>YIELD_BELLS</YieldType>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>3</iYieldChange>
                 </YieldChange>
             </YieldChanges>
@@ -385,7 +401,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>5</iProfessionOutput>
+            <iProfessionOutput>6</iProfessionOutput>
             <iMaxWorkers>6</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -410,7 +426,15 @@
             <RiverPlotYieldChanges/>
             <YieldChanges>
                 <YieldChange>
+                    <YieldType>YIELD_BELLS</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>5</iYieldChange>
                 </YieldChange>
             </YieldChanges>
@@ -504,8 +528,16 @@
             <RiverPlotYieldChanges/>
             <YieldChanges>
                 <YieldChange>
+                    <YieldType>YIELD_BELLS</YieldType>
+                    <iYieldChange>7</iYieldChange>
+                </YieldChange>
+                <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>10</iYieldChange>
+                    <iYieldChange>7</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>7</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -1378,6 +1410,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -1462,7 +1498,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>4</iYieldChange>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>3</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -1556,7 +1596,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>8</iYieldChange>
+                    <iYieldChange>4</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>4</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -1725,6 +1769,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -1809,6 +1857,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>3</iYieldChange>
                 </YieldChange>
             </YieldChanges>
@@ -1901,6 +1953,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>5</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -1989,7 +2045,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>10</iYieldChange>
+                    <iYieldChange>7</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>7</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -2231,7 +2291,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -2308,7 +2373,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -2397,7 +2467,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -2486,7 +2561,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>4</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -2571,7 +2651,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -2660,7 +2745,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>6</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences>
@@ -7629,6 +7719,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers>
                 <YieldModifier>
@@ -7718,7 +7812,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>4</iYieldChange>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>3</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers>
@@ -7813,7 +7911,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>6</iYieldChange>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>5</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers>
@@ -7911,6 +8013,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>1</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -7988,6 +8094,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -8054,7 +8164,7 @@
             <iHurryCostModifier>0</iHurryCostModifier>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iProfessionOutput>6</iProfessionOutput>
+            <iProfessionOutput>4</iProfessionOutput>
             <iMaxWorkers>3</iMaxWorkers>
             <iMinAreaSize>-1</iMinAreaSize>
             <iConquestProb>100</iConquestProb>
@@ -8084,7 +8194,11 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iYieldChange>1</iYieldChange>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>3</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -8182,7 +8296,11 @@
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iYieldChange>2</iYieldChange>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>5</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -8281,11 +8399,15 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
-                    <iYieldChange>10</iYieldChange>
+                    <iYieldChange>7</iYieldChange>
                 </YieldChange>
                 <YieldChange>
                     <YieldType>YIELD_CROSSES</YieldType>
-                    <iYieldChange>5</iYieldChange>
+                    <iYieldChange>7</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>7</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -8378,6 +8500,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>1</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -8466,6 +8592,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>2</iYieldChange>
                 </YieldChange>
             </YieldChanges>
@@ -8562,6 +8692,10 @@
                     <YieldType>YIELD_CULTURE</YieldType>
                     <iYieldChange>3</iYieldChange>
                 </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
@@ -8654,6 +8788,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>5</iYieldChange>
                 </YieldChange>
             </YieldChanges>
@@ -8926,7 +9064,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HAMMERS</YieldType>
@@ -9028,7 +9171,16 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -9112,7 +9264,11 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_FOOD</YieldType>
-                    <iYieldChange>1</iYieldChange>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
@@ -9267,7 +9423,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -9348,7 +9509,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>2</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
@@ -9437,7 +9603,12 @@
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>3</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers>
                 <YieldModifier>
                     <YieldType>YIELD_HEALTH</YieldType>
@@ -9530,6 +9701,10 @@
             <YieldChanges>
                 <YieldChange>
                     <YieldType>YIELD_HEALTH</YieldType>
+                    <iYieldChange>1</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
                     <iYieldChange>1</iYieldChange>
                 </YieldChange>
             </YieldChanges>

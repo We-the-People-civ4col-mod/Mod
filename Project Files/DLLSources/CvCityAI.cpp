@@ -156,6 +156,8 @@ void CvCityAI::AI_assignWorkingPlots()
 		return;
 	}
 	
+	AI_assignCityPlot();
+
 	GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
 	AI_updateNeededYields();
 
@@ -413,7 +415,7 @@ void CvCityAI::AI_chooseProduction()
 			// Erik: Only consider building a coastal transport if at least one other city is coastally reachable and the water area is valid
 			if (pWaterArea != NULL && AI_hasCoastalRoute())
 			{
-				if ((pWaterArea->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) + pWaterArea->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST)) < kPlayer.countNumCoastalCities() / 2)
+				if ((GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST)) < kPlayer.countNumCoastalCities() / 2)
 				{
 					if (AI_chooseUnit(UNITAI_TRANSPORT_COAST))
 					{
@@ -487,7 +489,7 @@ void CvCityAI::AI_chooseProduction()
 
 UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPickAny) const
 {
-	int aiUnitAIVal[NUM_UNITAI_TYPES];
+	int aiUnitAIVal[NUM_UNITAI_TYPES] = {};
 	UnitTypes eUnit = NO_UNIT;
 	UnitTypes eBestUnit = NO_UNIT;
 
@@ -549,15 +551,19 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 		
 			case UNITAI_TRANSPORT_COAST:
 				{
-					const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
-					if (((area()->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) + area()->getNumTrainAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST)) > iAreaCities/2))
+					CvArea* const pWaterArea = waterArea();
+					
+					int iValue = 0;
+					
+					if (pWaterArea != NULL && AI_hasCoastalRoute())
 					{
-						aiUnitAIVal[iI] = 0;
-					}			
-					else
-					{
-						aiUnitAIVal[iI] = GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
+						const int iAreaCities = area()->getCitiesPerPlayer(getOwnerINLINE());
+						if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST) <= iAreaCities / 2)
+						{
+							iValue = GET_PLAYER(getOwnerINLINE()).AI_unitAIValueMultipler((UnitAITypes)iI);
+						}
 					}
+					aiUnitAIVal[iI] = iValue;
 				}
 				break;
 
@@ -853,7 +859,7 @@ BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns,
 	return eBestBuilding;
 }
 
-BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int iMaxTurns)
+BuildingTypes CvCityAI::AI_bestBuildingIgnoreRequirements(int iFocusFlags, int iMaxTurns) const
 {
 	
 	int iBestValue = 0;
@@ -1093,7 +1099,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		if (GC.getNEW_CAPACITY())
 		{
 			int iExcess;
-			const iCoef = 100;
+			const int iCoef = 100;
 			iExcess = (iCityCapacity - getTotalYieldStored()) * iCoef;
 			if (iExcess < 1)
 				{iExcess = iCoef / 2;}
@@ -2021,7 +2027,7 @@ int CvCityAI::AI_totalBestBuildValue(CvArea* pArea) const
 	return iTotalValue;
 }
 
-int CvCityAI::AI_clearFeatureValue(int iIndex)
+int CvCityAI::AI_clearFeatureValue(int iIndex) const
 {
 	CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), iIndex);
 	FAssert(pPlot != NULL);
@@ -2195,9 +2201,14 @@ void CvCityAI::AI_doHurry(bool bForce)
 		}
 		if (getProductionUnitAI() == UNITAI_TRANSPORT_COAST)
 		{
-			if (waterArea()->getNumAIUnits(getOwnerINLINE(), UNITAI_TRANSPORT_COAST) == 0)
-			{
-				iHurryValue += 100;
+			CvArea* const pWaterArea = waterArea();
+			
+			if (pWaterArea != NULL)
+			{ 
+				if (GET_PLAYER(getOwnerINLINE()).AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST) == 0)
+				{
+					iHurryValue += 100;
+				}
 			}
 		}
 
@@ -2534,6 +2545,7 @@ void CvCityAI::AI_doEmphasize()
 	}
 }
 
+// Erik: Split this into two functions, one that finds the best build and another that queues the build
 bool CvCityAI::AI_chooseBuild()
 {
 	//These are now directly comparable.
@@ -3769,7 +3781,8 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 				}
 				*/
 
-				if (eYieldProducedType == YIELD_BELLS)
+				// Note that currently there are no professions that produce culture
+				if (eYieldProducedType == YIELD_CULTURE)
 				{
 					int iCulturePressure = AI_calculateCulturePressure();
 
@@ -3783,6 +3796,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 							iOutputValue /= 100;
 						}
 					}
+					/*
 					else if (kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) || getCultureLevel() < 2)
 					{
 						if ((iProfessionCount == 0) && (getPopulation() > 3))
@@ -3790,6 +3804,7 @@ int CvCityAI::AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUni
 							iOutputValue *= (getCultureLevel() < 2 ? 9 : 3);
 						}
 					}
+					*/
 				}
 				// TAC - AI Economy - koma13 - END
 			}
@@ -4557,6 +4572,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_HEALTH:
 			break;
 		case YIELD_EDUCATION:
+			break;
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+			break;
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			break;
 		case YIELD_CANNONS:
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
@@ -6378,6 +6397,55 @@ bool CvCityAI::AI_isMajorCity() const
 	return false;
 }
 
+
+// Choose the yield with the highest export value for the city plot 
+// TODO: Extend this by considering deficit input yields for slotworkers
+void CvCityAI::AI_assignCityPlot()
+{
+	// Natives are not supported yet
+	if (isNative())
+		return;
+
+	// WTP, ray, check to not override settings of Human Player - START
+	if (isHuman() && getPreferredYieldAtCityPlot() != NO_YIELD)
+	{
+		return;
+	}
+	// WTP, ray, check to not override settings of Human Player - END
+
+	int iBestValue = 0;
+	YieldTypes eBestYield = NO_YIELD;
+
+	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	for (uint i = 0; i < NUM_YIELD_TYPES; i++)
+	{
+		const YieldTypes eYield = (YieldTypes)i;
+		const int iYield = plot()->calculatePotentialCityYield(eYield, this);
+
+		if (iYield > 0)
+		{
+			const int iValue = kPlayer.AI_getYieldBestExportPrice(eYield) * iYield;
+
+			if (iValue > iBestValue)
+			{
+				iBestValue = iValue;
+				eBestYield = eYield;
+			}
+
+		}
+	}
+
+	if (eBestYield != NO_YIELD)
+	{
+		setPreferredYieldAtCityPlot(eBestYield);
+	}
+}
+
+
+//
+//
+//
 void CvCityAI::read(FDataStreamBase* pStream)
 {
 	CvSavegameReaderBase readerbase(pStream);

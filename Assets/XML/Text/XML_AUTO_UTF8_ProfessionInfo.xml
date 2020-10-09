@@ -1210,7 +1210,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FISHING_BOAT_WORKING_STRATEGY</Tag>
-        <English>TXT_KEY_PROFESSION_FISHING_BOAT_STRATEGY</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FURNITURE_MAKER</Tag>
@@ -3475,5 +3475,123 @@
         <German>Winzer pressen [COLOR_HIGHLIGHT_TEXT]Weintrauben[COLOR_REVERT] zu Traubensaft, aus dem dann [COLOR_HIGHLIGHT_TEXT]Wein[COLOR_REVERT] entsteht. Dieser Prozess ist noch effektiver, wenn Sie dem Beruf einen [COLOR_UNIT_TEXT]Meister Winzer[COLOR_REVERT] zuweisen.</German>
         <Italian>Winemakers press [COLOR_HIGHLIGHT_TEXT]Winegrapes[COLOR_REVERT] to Juice, which then is made to [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Italian>
         <Spanish>Winemakers press [COLOR_HIGHLIGHT_TEXT]Winegrapes[COLOR_REVERT] to Juice, which then is made to [COLOR_HIGHLIGHT_TEXT]Wine[COLOR_REVERT].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_TOWN_GUARD</Tag>
+        <English>
+            <Text>Town Guard:Town Guards</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Brigade:Brigades</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Stadtwache:Stadtwachen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Town Guard:Town Guards</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Town Guard:Town Guards</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_TOWN_GUARD_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Town Guards[COLOR_REVERT] are cheap military units which can serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]Blades[\LINK] as their weapons of choice. Due to the long halberds they wield, they are particularly effective in fighting cavalry units. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_INFANTRY]Veteran Soldier[\LINK].[PARAGRAPH:1]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+        <French>[COLOR_UNIT_TEXT]Town Guards[COLOR_REVERT] are cheap military units which can serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]Blades[\LINK] as their weapons of choice. Due to the long halberds they wield, they are particularly effective in fighting cavalry units.</French>
+        <German>[COLOR_UNIT_TEXT]Stadtwachen[COLOR_REVERT] sind günstige Militärtruppen, die ausgerüstet werden können um als erste Verteidigungslinie zu dienen, wenn eine Kolonie angegriffen wird. Sie haben keine Schusswaffen, sondern benutzen [LINK=YIELD_BLADES]Klingenwaffen[\LINK] als Waffen ihrer Wahl. Aufgrund der langen Helebarden sind sie besonders im Kampf gegen berittene Einheiten effektiv.</German>
+        <Italian>[COLOR_UNIT_TEXT]Town Guards[COLOR_REVERT] are cheap military units which can serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]Blades[\LINK] as their weapons of choice. Due to the long halberds they wield, they are particularly effective in fighting cavalry units.</Italian>
+        <Spanish>[COLOR_UNIT_TEXT]Town Guards[COLOR_REVERT] are cheap military units which can serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]Blades[\LINK] as their weapons of choice. Due to the long halberds they wield, they are particularly effective in fighting cavalry units.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_TOWN_GUARD_PEDIA</Tag>
+        <English>During the colonial age, the many wars with both natives and rival colonial powers compelled individual settlements to maintain loosely organized town militias, formed by civilians, to be mobilized in times of war. These militias served to defend the town itself from enemy raiders, but could also be called upon by the Colonial Authorities during larger conflicts. Due to the unprofessional nature of these fighters, they were less skilled in combat than professional soldiers. However, as militias often fought enemies that were directly threatening their homes and families, they've become known for being brave, unyielding defenders.[PARAGRAPH:1]During the Revolutionary War, town militias played a pivotal role in resisting the British invasion. As the war progressed, however, militiamen often became disgruntled once they were ordered to fight far from their homes, which shifted the burden of carrying on the war to the Continental Army. From that period on, the militias stayed at home to take up the role of an internal police force, suppressing slave rebellions, repelling Indian raids, and keeping Loyalists in check.[PARAGRAPH:1]After the Revolutionary War, the role of the militia was specified in the Constitution as the basic military force of the nascent nation, and conscription into the militia became compulsory for each male American.</English>
+        <French>During the colonial age, the many wars with both natives and rival colonial powers compelled individual settlements to maintain loosely organized town militias, formed by civilians, to be mobilized in times of war. These militias served to defend the town itself from enemy raiders, but could also be called upon by the Colonial Authorities during larger conflicts. Due to the unprofessional nature of these fighters, they were less skilled in combat than professional soldiers. However, as militias often fought enemies that were directly threatening their homes and families, they've become known for being brave, unyielding defenders.[PARAGRAPH:1]During the Revolutionary War, town militias played a pivotal role in resisting the British invasion. As the war progressed, however, militiamen often became disgruntled once they were ordered to fight far from their homes, which shifted the burden of carrying on the war to the Continental Army. From that period on, the militias stayed at home to take up the role of an internal police force, suppressing slave rebellions, repelling Indian raids, and keeping Loyalists in check.[PARAGRAPH:1]After the Revolutionary War, the role of the militia was specified in the Constitution as the basic military force of the nascent nation, and conscription into the militia became compulsory for each male American.</French>
+        <German>Während des Kolonialzeitaltes erforderten die vielen Konflikte mit sowohl Ureinwohner, wie auch rivalisierenden Kolonialmächten, dass die einzelnen Siedlungen lose organisierte Milizen mit Zivilisten und in grösseren Siedlungen auch reguläre Stadtwachen bildeten. Diese Truppen dienten dazu die Siedlungen vor Feinden zu schüten, aber auch die innere Ordnung aufrecht zu erhalten. Aufgrund der oft fehlenden Ausbildung mangelte es diese Truppen aber meist an der Schlagkraft von professionellen Soldaten. Jedoch glichen sie dieses oft durch Mut, angespornt durch den Willen zur Verteidigung ihrer Heimat, wieder aus.[PARAGRAPH:1]Während des Unabhängigkeitskrieges spielten Milizen und Stadtwachen eine nicht zu vernachlässigende Rolle bei der Zurückschlagung der britischen Invasion. Als der Krieg jedoch immer länger andauerte, machte sich auch Unzufriedenheit bei diesen Truppen breit, da ihnen Aufgaben und Kämpfe mit der Kontinentalarmee zugeteilt wurden, die sie weitab ihrer Heimatstädte führten. Dadurch blieben sie im späteren Verlauf des Krieges meist in der Nähe ihrer Heimatstädte und es wurden ihnen eher Aufgaben zugeteilt, die der Rolle von internen Polizeikräften und Sicherungstruppen entsprach. So schlugen sie beispielsweise Sklavenaufstände nieder oder wehrten kleinere Raubzüge von Ureinwohnern ab oder versuchten die Loyalisten in Schach zu halten.</German>
+        <Italian>During the colonial age, the many wars with both natives and rival colonial powers compelled individual settlements to maintain loosely organized town militias, formed by civilians, to be mobilized in times of war. These militias served to defend the town itself from enemy raiders, but could also be called upon by the Colonial Authorities during larger conflicts. Due to the unprofessional nature of these fighters, they were less skilled in combat than professional soldiers. However, as militias often fought enemies that were directly threatening their homes and families, they've become known for being brave, unyielding defenders.[PARAGRAPH:1]During the Revolutionary War, town militias played a pivotal role in resisting the British invasion. As the war progressed, however, militiamen often became disgruntled once they were ordered to fight far from their homes, which shifted the burden of carrying on the war to the Continental Army. From that period on, the militias stayed at home to take up the role of an internal police force, suppressing slave rebellions, repelling Indian raids, and keeping Loyalists in check.[PARAGRAPH:1]After the Revolutionary War, the role of the militia was specified in the Constitution as the basic military force of the nascent nation, and conscription into the militia became compulsory for each male American.</Italian>
+        <Spanish>During the colonial age, the many wars with both natives and rival colonial powers compelled individual settlements to maintain loosely organized town militias, formed by civilians, to be mobilized in times of war. These militias served to defend the town itself from enemy raiders, but could also be called upon by the Colonial Authorities during larger conflicts. Due to the unprofessional nature of these fighters, they were less skilled in combat than professional soldiers. However, as militias often fought enemies that were directly threatening their homes and families, they've become known for being brave, unyielding defenders.[PARAGRAPH:1]During the Revolutionary War, town militias played a pivotal role in resisting the British invasion. As the war progressed, however, militiamen often became disgruntled once they were ordered to fight far from their homes, which shifted the burden of carrying on the war to the Continental Army. From that period on, the militias stayed at home to take up the role of an internal police force, suppressing slave rebellions, repelling Indian raids, and keeping Loyalists in check.[PARAGRAPH:1]After the Revolutionary War, the role of the militia was specified in the Constitution as the basic military force of the nascent nation, and conscription into the militia became compulsory for each male American.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_ROYAL_TOWN_GUARD</Tag>
+        <English>
+            <Text>Royal Halberdier:Royal Halberdiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Brigadier royal:Brigadiers royaux</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Königlicher Hellebardenträger:Königliche Hellebardenträger</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Royal Halberdier:Royal Halberdiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Royal Halberdier:Royal Halberdiers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER</Tag>
+        <English>Native Trader:Native Traders</English>
+        <German>
+            <Text>Ureinwohnerhändler:Ureinwohnerhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_HELP</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_STRATEGY</Tag>
+        <English>[LINK=PROFESSION_NATIVE_TRADER]Native Traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] that can establish [COLOR_HIGHLIGHT_TEXT]Trade Posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] [LINK=CONCEPT_SETTLEMENTS]Settlements[\LINK]. Over time, Trade Posts will generate money and create [LINK=UNIT_TREASURE]Treasures[\LINK], that are sent back to the colonies.Doing this with a [LINK=UNIT_EXPERT_TRADER]Exptert Trader[\LINK] greatly increase the rate at which new [LINK=UNIT_TREASURE]Treasures[\LINK] are created.</English>
+        <German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können. Mit der Zeit erzeugen Handelsposten Gold, welches sie dann als [LINK=UNIT_TREASURE]Schätze[\LINK] zurück in die Kolonien schicken.Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK] erhöht dies drastisch die Rate mit der [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt werden.</German>    
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_PEDIA</Tag>
+        <English>Fur trading was one of the main economic activities in Northern America from the late 16th century to the mid-19th century. At the time, demand for fur was surging in Europe as it was used to make cloth and fancy hats. Data collected from England in the 18th century highlights that the years from 1746 to 1763 saw an increase of 12 shillings per pelt. It has been calculated that over 20 million beaver hats were exported from England alone from 1700 to 1770. Both trading partners, Native Americans and Europeans, provided the other a comparative advantage in the fur trade industry. The opportunity cost of hunting beavers in Europe was extremely high: by the seventeenth and eighteenth centuries, the Eurasian beaver was near extinction in England and France. On the other hand, traders and trappers thought the wildlife in the New World was essentially limitless. Native Americans made use of the trade goods received, particularly knives, axes, and guns. The fur trade provided a stable source of income for many Native Americans until the mid-19th century, when changing fashion trends in Europe and a decline in the beaver population in North America brought about a collapse in demand for fur.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_SETTLER</Tag>
+        <English>Settler:Settlers</English>
+        <German>
+            <Text>Siedlungsgründer:Siedlungsgründer</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_SETTLER_HELP</Tag>
+        <English>Can found new settlements.</English>
+        <German>Kann neue Siedlungen gründen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Tag>
+        <English>[LINK=PROFESSION_SETTLER]Settlers[\LINK] are the only [LINK=CONCEPT_PROFESSION]profession[\LINK] that can establish new [LINK=CONCEPT_SETTLEMENTS]Settlements[\LINK].[PARAGRAPH:1]To do so it requires some [COLOR_HIGHLIGHT_TEXT]equipment[COLOR_REVERT]. You can either equip colonists in your settlements if you have the equipment stored or in Europe by paying gold for the equipment.</English>
+        <German>[LINK=PROFESSION_SETTLER]Siedlungsgründer[\LINK] sind der einzige [LINK=CONCEPT_PROFESSION]Beruf[\LINK] der neue [LINK=CONCEPT_SETTLEMENTS]Siedlungen[\LINK] gründen kann. [PARAGRAPH:1]Dafür brauchen sie aber [COLOR_HIGHLIGHT_TEXT]Ausrüstung[COLOR_REVERT]. Man kann Kolonisten als Siedlungsgründer entweder in einer Siedlung ausrüsten, falls diese die Ausrüstung gelagert hat, oder aber gleich in Europa, falls man das nötige Gold für die Ausrüstung hat.</German>    
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_SETTLER_PEDIA</Tag>
+        <English>For the first century after the discovery of America by Christoph Kolumbus in the year 1492 the interest of the European colonial powers (mainly Spain, Portugal, England and France) was concentrated on South and Central America. Although some few early settlement efforts in South and Central America failed, most of them - especially on islands and at the coast of South and Central America - were successful. Many of these settlements exist until today.[PARAGRAPH:1]In contrary however most early settlement efforts in North America in the years between 1585 and 1587 failed. One of these failed settlements was the English Colony on Roanoke Island at the coast of todays North Carolina. Its left back settlers were either killed by angered Natives or died from hunger or to disease. [PARAGRAPH:1]But in the year 1607 England finally succeeded in getting a permanent hold in North America by the foundation of Jamestown. But even this success had a high price. Of the 105 first colonists only 33 survived the first seven months. The second Englisch Colonie Sagadahoc in todays Maine had to be abandoned again in 1608. Later settlements of the Netherlands, England and France were much more successful though, since the colonial nations had learned from their mistakes.</English>
+        <German>Für rund ein Jahrhundert nach der Entdeckung Amerikas durch Christoph Kolumbus 1492 konzentrierte sich das Interesse der europäischen Mächte (Spanien, Portugal, England und Frankreich) auf Süd- und Mittelamerika. Auch wenn einige wenige Siedlungsversuche in Süd- und Mittelamerika scheiterten, waren die meisten Siedlungsversuche auf den Inselns und an den Küsten Süd- und Mittelamerika erfolgreich und viele dieser Siedulungen haben bis heute Bestand.[PARAGRAPH:1]Die ersten frühen Siedlungsversuche in Nordamerika in den Jahren 1585 und 1587 jedoch scheiterten. Darunter war der Versuch eine englische Kolonie auf Roanoke Island vor der Küste des heutigen North Carolina zu etablieren. Die zurückgelassenen Siedler wurden entweder von den Indianern getötet oder starben an Hunger und Krankheiten. [PARAGRAPH:1]Erst 1607 gelang es England mit der Gründung von Jamestown dauerhaft Fuß zu fassen, doch war auch dieser Erfolg teuer erkauft, denn von den 105 Siedlern überlebten nur 33 die ersten sieben Monate. Eine zweite englische Kolonie, Sagadahoc im heutigen Maine, musste nach kaum einem Jahr 1608 wieder aufgegeben werden. Spätere Siedlungen der Niederlande, England und Frankreich waren aber deutlich erfolgreicher, da die Kolonialmächte aus ihren Fehlern gelernt hatten.</German>
     </TEXT>
 </Civ4GameText>

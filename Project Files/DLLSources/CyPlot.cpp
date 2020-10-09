@@ -282,6 +282,10 @@ bool CyPlot::at(int iX, int iY)
 {
 	return m_pPlot ? m_pPlot->at(iX, iY) : false;
 }
+int CyPlot::getIndex() const
+{
+	return m_pPlot ? m_pPlot->getIndex() : -1;
+}
 int CyPlot::getLatitude()
 {
 	return m_pPlot ? m_pPlot->getLatitude() : -1;

@@ -76,9 +76,13 @@ void CyCityPythonInterface3(python::class_<CyCity>& x)
 		// R&R, Robert Surcouf, Domestic Market display END
 		
 		// R&R, Robert Surcouf, No More Variables Hidden game option START
-		.def("getMissionaryPlayer", &CyCity::getMissionaryPlayer, "int /*PlayerTypes*/ ()")
+		.def("getMissionaryPlayer", &CyCity::getMissionaryPlayer, "PlayerTypes ()")
 		.def("getMissionaryRate", &CyCity::getMissionaryRate, "int ()")
 		// R&R, Robert Surcouf, No More Variables Hidden game option END
+		// WTP, ray, Native Trade Posts - START
+		.def("getTradePostPlayer", &CyCity::getTradePostPlayer, "PlayerTypes ()")
+		.def("getNativeTradeRate", &CyCity::getNativeTradeRate, "int ()")
+		// WTP, ray, Native Trade Posts - START
 		.def("isEverOwned", &CyCity::isEverOwned, "bool ()")
 		;
 }

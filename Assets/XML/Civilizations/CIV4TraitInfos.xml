@@ -23,6 +23,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>30</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -72,6 +73,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -120,12 +122,13 @@
             <iLearnTimeModifier>-50</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
             <iMissionaryModifier>0</iMissionaryModifier>
-            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iNativeTradeModifier>10</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
             <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>2</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -175,6 +178,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>20</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>25</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -185,7 +189,7 @@
             <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
             <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
             <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
-            <iCultureLevelModifier>-5</iCultureLevelModifier>
+            <iCultureLevelModifier>-10</iCultureLevelModifier>
             <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
             <iImprovementPriceModifier>0</iImprovementPriceModifier>
             <iLearningByDoingModifier>0</iLearningByDoingModifier>
@@ -224,6 +228,7 @@
             <iMaxTaxRateThresholdDecrease>5</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>-50</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -273,6 +278,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -391,6 +397,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -469,6 +476,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -551,6 +559,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -600,6 +609,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -635,6 +645,10 @@
                     <ProfessionType>PROFESSION_SCOUT</ProfessionType>
                     <iModifier>-20</iModifier>
                 </ProfessionEquipmentModifier>
+                <ProfessionEquipmentModifier>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
+                    <iModifier>-20</iModifier>
+                </ProfessionEquipmentModifier>
             </ProfessionEquipmentModifiers>
             <FreePromotions/>
             <FreePromotionUnitCombats/>
@@ -666,6 +680,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -720,6 +735,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -769,6 +785,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -818,6 +835,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -885,6 +903,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -939,6 +958,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -988,6 +1008,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1092,6 +1113,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1150,6 +1172,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1200,10 +1223,11 @@
             <iMissionaryModifier>0</iMissionaryModifier>
             <iNativeTradeModifier>0</iNativeTradeModifier>
             <iRebelCombatModifier>0</iRebelCombatModifier>
-            <iTaxRateThresholdModifier>-20</iTaxRateThresholdModifier>
+            <iTaxRateThresholdModifier>20</iTaxRateThresholdModifier>
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1258,6 +1282,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1307,6 +1332,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>100</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1397,6 +1423,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1456,6 +1483,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1523,6 +1551,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1600,6 +1629,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1649,6 +1679,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>25</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1716,6 +1747,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1770,6 +1802,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1828,7 +1861,7 @@
             <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
             <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
             <iNativeAngerModifier>-25</iNativeAngerModifier>
-            <iLearnTimeModifier>-75</iLearnTimeModifier>
+            <iLearnTimeModifier>-50</iLearnTimeModifier>
             <iNativeCombatModifier>0</iNativeCombatModifier>
             <iMissionaryModifier>0</iMissionaryModifier>
             <iNativeTradeModifier>0</iNativeTradeModifier>
@@ -1837,6 +1870,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1886,6 +1920,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -1953,6 +1988,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2020,6 +2056,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2096,6 +2133,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2163,6 +2201,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2226,6 +2265,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2289,6 +2329,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2352,6 +2393,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2406,6 +2448,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2455,6 +2498,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>3</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2541,6 +2585,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2623,6 +2668,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2705,6 +2751,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2809,6 +2856,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2891,6 +2939,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>4</iEuropeanAttitudeChange>
@@ -2945,6 +2994,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -2994,6 +3044,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3052,6 +3103,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3106,6 +3158,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3160,6 +3213,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3233,6 +3287,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3276,92 +3331,6 @@
             <GoodyFactors/>
         </TraitInfo>
         <TraitInfo>
-            <Type>TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Type>
-            <Description>TXT_KEY_TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Description>
-            <ShortDescription>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA</ShortDescription>
-            <iLevelExperienceModifier>0</iLevelExperienceModifier>
-            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
-            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
-            <iNativeAngerModifier>0</iNativeAngerModifier>
-            <iLearnTimeModifier>0</iLearnTimeModifier>
-            <iNativeCombatModifier>0</iNativeCombatModifier>
-            <iMissionaryModifier>0</iMissionaryModifier>
-            <iNativeTradeModifier>0</iNativeTradeModifier>
-            <iRebelCombatModifier>0</iRebelCombatModifier>
-            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
-            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
-            <iMercantileFactor>0</iMercantileFactor>
-            <iTreasureModifier>0</iTreasureModifier>
-            <iChiefGoldModifier>0</iChiefGoldModifier>
-            <iNativeAttitudeChange>0</iNativeAttitudeChange>
-            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
-            <iKingAttitudeChange>0</iKingAttitudeChange>
-            <iCityDefense>0</iCityDefense>
-            <iLandPriceDiscount>0</iLandPriceDiscount>
-            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
-            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
-            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
-            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
-            <iCultureLevelModifier>0</iCultureLevelModifier>
-            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
-            <iImprovementPriceModifier>0</iImprovementPriceModifier>
-            <iLearningByDoingModifier>0</iLearningByDoingModifier>
-            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
-            <iStorageCapacityModifier>0</iStorageCapacityModifier>
-            <CityExtraYields/>
-            <ExtraYieldThresholds/>
-            <ProfessionEquipmentModifiers/>
-            <FreePromotions/>
-            <FreePromotionUnitCombats/>
-            <YieldModifiers/>
-            <TaxYieldModifiers/>
-            <BuildingYieldChanges>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_SCHOOLHOUSE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_BELLS</YieldType>
-                            <iYieldChange>2</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_COLLEGE</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_BELLS</YieldType>
-                            <iYieldChange>4</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_UNIVERSITY</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_BELLS</YieldType>
-                            <iYieldChange>6</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-                <BuildingYieldChange>
-                    <BuildingClassType>BUILDINGCLASS_GREAT_UNIVERSITY</BuildingClassType>
-                    <BuildingYields>
-                        <YieldChange>
-                            <YieldType>YIELD_BELLS</YieldType>
-                            <iYieldChange>8</iYieldChange>
-                        </YieldChange>
-                    </BuildingYields>
-                </BuildingYieldChange>
-            </BuildingYieldChanges>
-            <UnitMoveChanges/>
-            <ProfessionMoveChanges/>
-            <BuildingProductionModifiers/>
-            <BuildingRequiredYieldModifiers/>
-            <UnitStrengthModifiers/>
-            <FreeBuildingClasses/>
-            <GoodyFactors/>
-        </TraitInfo>
-        <TraitInfo>
             <Type>TRAIT_JAN_DE_WITT</Type>
             <Description>TXT_KEY_TRAIT_JAN_DE_WITT</Description>
             <ShortDescription>TXT_KEY_FATHER_JAN_DE_WITT</ShortDescription>
@@ -3378,6 +3347,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3432,6 +3402,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3536,6 +3507,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3634,6 +3606,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3729,6 +3702,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3806,6 +3780,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -3901,6 +3876,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4003,6 +3979,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4085,6 +4062,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4171,6 +4149,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4237,6 +4216,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4319,6 +4299,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4378,6 +4359,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4437,6 +4419,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4496,6 +4479,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4550,6 +4534,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4632,6 +4617,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4702,6 +4688,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4760,6 +4747,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4831,6 +4819,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4880,6 +4869,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4939,6 +4929,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -4993,6 +4984,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5042,6 +5034,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5091,6 +5084,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5173,6 +5167,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5222,6 +5217,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>20</iChiefGoldModifier>
             <iNativeAttitudeChange>4</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5271,6 +5267,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5329,6 +5326,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5391,6 +5389,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5449,6 +5448,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5549,6 +5549,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>20</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5598,6 +5599,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5657,6 +5659,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5711,6 +5714,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5782,6 +5786,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5880,6 +5885,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5929,6 +5935,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -5987,6 +5994,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6069,6 +6077,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6144,6 +6153,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6244,6 +6254,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6351,6 +6362,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6405,6 +6417,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6472,6 +6485,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6505,6 +6519,10 @@
                     <UnitClass>UNITCLASS_HESSIAN</UnitClass>
                     <iCombatModifier>10</iCombatModifier>
                 </UnitStrengthModifier>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
             </UnitStrengthModifiers>
             <FreeBuildingClasses/>
             <GoodyFactors/>
@@ -6526,6 +6544,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6584,6 +6603,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6638,6 +6658,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6700,6 +6721,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6771,6 +6793,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6834,6 +6857,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -6902,6 +6926,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7015,6 +7040,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7110,6 +7136,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7181,6 +7208,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7263,6 +7291,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>2</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7312,6 +7341,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7378,6 +7408,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7446,6 +7477,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7532,6 +7564,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7608,6 +7641,7 @@
             <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
             <iMercantileFactor>0</iMercantileFactor>
             <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
             <iChiefGoldModifier>0</iChiefGoldModifier>
             <iNativeAttitudeChange>0</iNativeAttitudeChange>
             <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
@@ -7635,6 +7669,426 @@
                     <iYield>25</iYield>
                 </YieldModifier>
             </YieldModifiers>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_IVAN_KUSKOV</Type>
+            <Description>TXT_KEY_TRAIT_IVAN_KUSKOV</Description>
+            <ShortDescription>TXT_KEY_FATHER_IVAN_KUSKOV</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>-25</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields>
+                <CityExtraYield>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iYield>2</iYield>
+                </CityExtraYield>
+            </CityExtraYields>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_SMALL_COASTAL_SHIP</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+                <UnitMoveChange>
+                    <UnitClass>UNITCLASS_BIG_COASTAL_SHIP</UnitClass>
+                    <iChange>1</iChange>
+                </UnitMoveChange>
+            </UnitMoveChanges>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_NIKOLAI_REZANOV</Type>
+            <Description>TXT_KEY_TRAIT_NIKOLAI_REZANOV</Description>
+            <ShortDescription>TXT_KEY_TRAIT_NIKOLAI_REZANOV_SHORT</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>25</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_IVAN_KRUZENSHTERN</Type>
+            <Description>TXT_KEY_TRAIT_IVAN_KRUZENSHTERN</Description>
+            <ShortDescription>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>2</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>2</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_HERMAN_OF_ALASKA</Type>
+            <Description>TXT_KEY_TRAIT_HERMAN_OF_ALASKA</Description>
+            <ShortDescription>TXT_KEY_FATHER_HERMAN_OF_ALASKA</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>2</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CHAPEL</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
+                            <iYieldChange>1</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CHURCH</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
+                            <iYieldChange>2</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_CATHEDRAL</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
+                            <iYieldChange>3</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_GREAT_CATHEDRAL</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
+                            <iYieldChange>4</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+                <BuildingYieldChange>
+                    <BuildingClassType>BUILDINGCLASS_MINSTER</BuildingClassType>
+                    <BuildingYields>
+                        <YieldChange>
+                            <YieldType>YIELD_HAPPINESS</YieldType>
+                            <iYieldChange>5</iYieldChange>
+                        </YieldChange>
+                    </BuildingYields>
+                </BuildingYieldChange>
+            </BuildingYieldChanges>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers/>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_WALTER_RALEIGH</Type>
+            <Description>TXT_KEY_TRAIT_WALTER_RALEIGH</Description>
+            <ShortDescription>TXT_KEY_FATHER_WALTER_RALEIGH</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+            </UnitStrengthModifiers>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_VELAZQUEZ_DE_CUELLAR</Type>
+            <Description>TXT_KEY_VELAZQUEZ_DE_CUELLAR</Description>
+            <ShortDescription>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>0</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
+            <TaxYieldModifiers/>
+            <BuildingYieldChanges/>
+            <UnitMoveChanges/>
+            <ProfessionMoveChanges/>
+            <BuildingProductionModifiers/>
+            <BuildingRequiredYieldModifiers/>
+            <UnitStrengthModifiers>
+                <UnitStrengthModifier>
+                    <UnitClass>UNITCLASS_VETERAN_TOWN_GUARD</UnitClass>
+                    <iCombatModifier>10</iCombatModifier>
+                </UnitStrengthModifier>
+            </UnitStrengthModifiers>
+            <FreeBuildingClasses/>
+            <GoodyFactors/>
+        </TraitInfo>
+        <TraitInfo>
+            <Type>TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Type>
+            <Description>TXT_KEY_TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Description>
+            <ShortDescription>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA</ShortDescription>
+            <iLevelExperienceModifier>0</iLevelExperienceModifier>
+            <iGreatGeneralRateModifier>0</iGreatGeneralRateModifier>
+            <iDomesticGreatGeneralRateModifier>0</iDomesticGreatGeneralRateModifier>
+            <iNativeAngerModifier>0</iNativeAngerModifier>
+            <iLearnTimeModifier>0</iLearnTimeModifier>
+            <iNativeCombatModifier>0</iNativeCombatModifier>
+            <iMissionaryModifier>0</iMissionaryModifier>
+            <iNativeTradeModifier>0</iNativeTradeModifier>
+            <iRebelCombatModifier>0</iRebelCombatModifier>
+            <iTaxRateThresholdModifier>0</iTaxRateThresholdModifier>
+            <iMaxTaxRateThresholdDecrease>0</iMaxTaxRateThresholdDecrease>
+            <iMercantileFactor>0</iMercantileFactor>
+            <iTreasureModifier>0</iTreasureModifier>
+            <iUnhappinessFromSlavesModifier>25</iUnhappinessFromSlavesModifier>
+            <iChiefGoldModifier>0</iChiefGoldModifier>
+            <iNativeAttitudeChange>0</iNativeAttitudeChange>
+            <iEuropeanAttitudeChange>0</iEuropeanAttitudeChange>
+            <iKingAttitudeChange>0</iKingAttitudeChange>
+            <iCityDefense>0</iCityDefense>
+            <iLandPriceDiscount>0</iLandPriceDiscount>
+            <iRecruitPriceDiscount>0</iRecruitPriceDiscount>
+            <iEuropeTravelTimeModifier>0</iEuropeTravelTimeModifier>
+            <iImmigrationThresholdModifier>0</iImmigrationThresholdModifier>
+            <iPopGrowthThresholdModifier>0</iPopGrowthThresholdModifier>
+            <iCultureLevelModifier>0</iCultureLevelModifier>
+            <iPioneerSpeedModifier>0</iPioneerSpeedModifier>
+            <iImprovementPriceModifier>0</iImprovementPriceModifier>
+            <iLearningByDoingModifier>0</iLearningByDoingModifier>
+            <iSpecialistPriceModifier>0</iSpecialistPriceModifier>
+            <iStorageCapacityModifier>0</iStorageCapacityModifier>
+            <CityExtraYields/>
+            <ExtraYieldThresholds/>
+            <ProfessionEquipmentModifiers/>
+            <FreePromotions/>
+            <FreePromotionUnitCombats/>
+            <YieldModifiers/>
             <TaxYieldModifiers/>
             <BuildingYieldChanges/>
             <UnitMoveChanges/>

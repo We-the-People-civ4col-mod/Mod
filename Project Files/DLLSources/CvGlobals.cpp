@@ -189,6 +189,10 @@ m_LBD_CHANCE_MOD_FREE_SERVANT(0),
 m_LBD_CHANCE_ESCAPE(0),
 m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL(0),
 m_LBD_CHANCE_MOD_ESCAPE_SERVANT(0),
+// WTP, ray, LbD Slaves Revolt and Free - START
+m_LBD_CHANCE_REVOLT(0),
+m_LBD_CHANCE_MOD_REVOLT_SLAVE(0),
+m_LBD_CHANCE_MOD_REVOLT_CRIMINAL(0),
 // R&R, ray, getting Veterans or Free through Combat Experience
 m_LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT(0),
 m_LBD_MIN_EXPERIENCE_FREE_BY_COMBAT(0),
@@ -283,6 +287,25 @@ m_POP_DIVISOR_NEG_HEALTH(0),
 m_MAX_CITY_HEALTH(0),
 m_LOWEST_CITY_HEALTH(0),
 // R&R, ray, Health - END
+
+// WTP, ray, Happiness - START
+m_MIN_POP_NEG_HAPPINESS(0),
+m_POP_DIVISOR_HAPPINESS(0),
+m_PER_EUROPEAN_AT_WAR_UNHAPPINESS(0),
+m_POP_DIVISOR_DEFENSE_UNHAPPINESS(0),
+m_TAX_DIVISOR_UNHAPPINESS(0),
+
+m_BASE_CHANCE_UNREST_UNHAPPINESS(0),
+m_BASE_CHANCE_FESTIVITIES_HAPPINESS(0),
+m_MIN_BALANCE_UNREST_UNHAPPINESS(0),
+m_MIN_BALANCE_FESTIVITIES_HAPPINESS(0),
+m_TURNS_UNREST_UNHAPPINESS(0),
+m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS(0),
+m_TIMER_FESTIVITIES_OR_UNRESTS(0),
+// WTP, ray, Happiness - END
+
+m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
+m_TRADE_POST_GOLD_PER_NATIVE(0), // WTP, ray, Native Trade Posts - START
 
 m_fCAMERA_MIN_YAW(0),
 m_fCAMERA_MAX_YAW(0),
@@ -2592,6 +2615,10 @@ void CvGlobals::cacheGlobals()
 	m_LBD_CHANCE_ESCAPE = getDefineINT("LBD_CHANCE_ESCAPE");
 	m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL = getDefineINT("LBD_CHANCE_MOD_ESCAPE_CRIMINAL");
 	m_LBD_CHANCE_MOD_ESCAPE_SERVANT = getDefineINT("LBD_CHANCE_MOD_ESCAPE_SERVANT");
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	m_LBD_CHANCE_REVOLT= getDefineINT("LBD_CHANCE_REVOLT");
+	m_LBD_CHANCE_MOD_REVOLT_SLAVE = getDefineINT("LBD_CHANCE_MOD_REVOLT_SLAVE");
+	m_LBD_CHANCE_MOD_REVOLT_CRIMINAL = getDefineINT("LBD_CHANCE_MOD_REVOLT_CRIMINAL");
 	// R&R, ray, getting Veterans or Free through Combat Experience
 	m_LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT = getDefineINT("LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT");
 	m_LBD_MIN_EXPERIENCE_FREE_BY_COMBAT = getDefineINT("LBD_MIN_EXPERIENCE_FREE_BY_COMBAT");
@@ -2674,6 +2701,25 @@ void CvGlobals::cacheGlobals()
 	m_MAX_CITY_HEALTH = getDefineINT("MAX_CITY_HEALTH");
 	m_LOWEST_CITY_HEALTH = getDefineINT("LOWEST_CITY_HEALTH");
 	// R&R, ray, caching globals from Global Defines Alt - END
+
+	// WTP, ray, Happiness - START
+	m_MIN_POP_NEG_HAPPINESS = getDefineINT("MIN_POP_NEG_HAPPINESS");
+	m_POP_DIVISOR_HAPPINESS = getDefineINT("POP_DIVISOR_HAPPINESS");
+	m_PER_EUROPEAN_AT_WAR_UNHAPPINESS = getDefineINT("PER_EUROPEAN_AT_WAR_UNHAPPINESS");
+	m_POP_DIVISOR_DEFENSE_UNHAPPINESS = getDefineINT("POP_DIVISOR_DEFENSE_UNHAPPINESS");
+	m_TAX_DIVISOR_UNHAPPINESS = getDefineINT("TAX_DIVISOR_UNHAPPINESS");
+
+	m_BASE_CHANCE_UNREST_UNHAPPINESS = getDefineINT("BASE_CHANCE_UNREST_UNHAPPINESS");
+	m_BASE_CHANCE_FESTIVITIES_HAPPINESS = getDefineINT("BASE_CHANCE_FESTIVITIES_HAPPINESS");
+	m_MIN_BALANCE_UNREST_UNHAPPINESS = getDefineINT("MIN_BALANCE_UNREST_UNHAPPINESS");
+	m_MIN_BALANCE_FESTIVITIES_HAPPINESS = getDefineINT("MIN_BALANCE_FESTIVITIES_HAPPINESS");
+	m_TURNS_UNREST_UNHAPPINESS = getDefineINT("TURNS_UNREST_UNHAPPINESS");
+	m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS = getDefineINT("FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS");
+	m_TIMER_FESTIVITIES_OR_UNRESTS = getDefineINT("TIMER_FESTIVITIES_OR_UNRESTS");
+	// WTP, ray, Happiness - END
+
+	m_MAX_TREASURE_AMOUNT = getDefineINT("MAX_TREASURE_AMOUNT"); // WTP, merge Treasures, of Raubwuerger
+	m_TRADE_POST_GOLD_PER_NATIVE = getDefineINT("TRADE_POST_GOLD_PER_NATIVE"); // WTP, ray, Native Trade Posts - START
 
 	// K-Mod \ RaR
 	m_bUSE_AI_UNIT_UPDATE_CALLBACK = getDefineINT("USE_AI_UNIT_UPDATE_CALLBACK") != 0;
@@ -2809,6 +2855,14 @@ void CvGlobals::infoTypeFromStringReset()
 void CvGlobals::addToInfosVectors(void *infoVector)
 {
 	std::vector<CvInfoBase *> *infoBaseVector = (std::vector<CvInfoBase *> *) infoVector;
+	for (unsigned int i = 0; i < m_aInfoVectors.size(); ++i)
+	{
+		if (m_aInfoVectors[i] == infoBaseVector)
+		{
+			// don't add the same twice
+			return;
+		}
+	}
 	m_aInfoVectors.push_back(infoBaseVector);
 }
 
@@ -2893,3 +2947,37 @@ CvAchieveInfo& CvGlobals::getAchieveInfo(AchieveTypes eAchieve)
 	return *(m_paAchieveInfo[eAchieve]);
 }
 // PatchMod: Achievements END
+
+// string cleanup
+// Some xml files have references to strategy, pedia and so on for strings, which doesn't exist
+// This call will remove them from memory.
+void CvGlobals::cleanInfoStrings()
+{
+	if (GAMETEXT.getCurrentLanguage() == CvGameText::getLanguageID("Tag"))
+	{
+		// The Tag language reveals the TXT_KEYS
+		// Removing unused strings would be detected as all strings
+		return;
+	}
+
+	for (unsigned int i = 0; i < m_aInfoVectors.size(); ++i)
+	{
+		if (m_aInfoVectors[i]->size() > 0)
+		{
+			if (dynamic_cast<CvActionInfo*>((*m_aInfoVectors[i])[0]))
+			{
+				// action infos not supported for string cleanup.
+				// Won't fix because they don't need cleaning in the first place.
+				continue;
+			}
+
+			for (unsigned int j = 0; j < m_aInfoVectors[i]->size(); ++j)
+			{
+				(*m_aInfoVectors[i])[j]->cleanStrings();
+			}
+		}
+	}
+}
+
+
+

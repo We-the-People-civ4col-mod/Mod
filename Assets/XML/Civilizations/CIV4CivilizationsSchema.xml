@@ -235,6 +235,7 @@
 	<ElementType name="iMaxTaxRateThresholdDecrease" content="textOnly" dt:type="int"/>
 	<ElementType name="iMercantileFactor" content="textOnly" dt:type="int"/>
 	<ElementType name="iTreasureModifier" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnhappinessFromSlavesModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iChiefGoldModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iYieldThreshold" content="textOnly" dt:type="int"/>
 	<ElementType name="YieldType" content="textOnly"/>
@@ -379,6 +380,7 @@
 		<element type="iMaxTaxRateThresholdDecrease"/>
 		<element type="iMercantileFactor"/>
 		<element type="iTreasureModifier"/>
+		<element type="iUnhappinessFromSlavesModifier"/>
 		<element type="iChiefGoldModifier"/>
 		<element type="iNativeAttitudeChange"/>
 		<element type="iEuropeanAttitudeChange"/>

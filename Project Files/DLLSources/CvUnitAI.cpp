@@ -223,6 +223,10 @@ bool CvUnitAI::AI_update()
 			case UNITAI_MISSIONARY:
 				AI_missionaryMove();
 				break;
+			// WTP, ray, Native Trade Posts - START
+			case UNITAI_TRADER:
+				AI_nativeTraderMove();
+				break;
 				
 			case UNITAI_SCOUT:
 				AI_scoutMove();
@@ -392,14 +396,17 @@ bool CvUnitAI::AI_europeUpdate()
 		}
 	}
 
-	if (getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL))
-	{
-
-	}
-	else
+	if (!(getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL)))
 	{
 		if (isHurt() && (healRate(plot()) > 0))
 		{
+			if (hasCargo() && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				// If we're carrying any units we may as well unload them
+				// so that other ships can transport them while we heal
+				AI_unloadUnits(EUROPE);
+			}
+
 			return false;
 		}
 		switch (AI_getUnitAIType())
@@ -412,6 +419,7 @@ bool CvUnitAI::AI_europeUpdate()
 		case UNITAI_SETTLER:
 		case UNITAI_WORKER:
 		case UNITAI_MISSIONARY:
+		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 		case UNITAI_SCOUT:
 		case UNITAI_WAGON:
 		case UNITAI_TREASURE:
@@ -477,6 +485,23 @@ bool CvUnitAI::AI_europeUpdate()
 			}				
 			break;
 		case UNITAI_PIRATE_SEA:
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				if (hasCargo())
+				{
+					AI_sellYieldUnits(EUROPE);
+				}
+				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+			}
+			else if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+			{
+				if (hasCargo())
+				{
+					AI_sellYieldUnits(AFRICA);
+				}
+				crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+			}
+			break;
 		case UNITAI_ESCORT_SEA:		// TAC - AI Escort Sea - koma13
 			crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 		    break;
@@ -656,6 +681,10 @@ int CvUnitAI::AI_groupFirstVal()
 		
 	case UNITAI_MISSIONARY:
 		return 1;
+		break;
+
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
+		return 2;
 		break;
 	
 	case UNITAI_SCOUT:
@@ -1342,35 +1371,9 @@ void CvUnitAI::AI_FleeingMove()
 // R&R, ray, Fleeing Units - FALSE
 
 void CvUnitAI::AI_colonistMove()
-{
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	if ((kOwner.getNumCities() == 0) && (kOwner.AI_getNumAIUnits(UNITAI_SETTLER) == 0))
-	{
-		if (canFound(NULL))
-		{
-			AI_setUnitAIType(UNITAI_SETTLER);
-			AI_settlerMove();
-			return;
-		}
-	}
-	
+{	
 	if (isCargo())
 	{
-		// TAC - AI City Sites - koma13 - START
-		if (canFound(NULL))
-		{
-			if (kOwner.AI_desiredCityCount() > (kOwner.getNumCities() + kOwner.AI_totalUnitAIs(UNITAI_SETTLER)))
-			{
-				if (kOwner.AI_isLandLocked(true))
-				{
-					AI_setUnitAIType(UNITAI_SETTLER);
-					AI_settlerMove();
-					return;
-				}
-			}
-		}
-		// TAC - AI City Sites - koma13 - END
-
 		if (AI_joinOptimalCity())
 		{
 			return;
@@ -1383,26 +1386,14 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 	
-	if ((area()->getCitiesPerPlayer(getOwnerINLINE()) == 0) && (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0))
+	const bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 2) > 0;
+	
+	// Retreat when in danger and outside friendly territory
+	if (bDanger && plot()->getOwner() != getOwner())
 	{
-		if (canFound(NULL))
-		{ 
-			if (area()->getBestFoundValue(getOwnerINLINE()) > 0)
-			{
-				AI_setUnitAIType(UNITAI_SETTLER);
-				AI_settlerMove();
-				return;
-			}
-		}
+		if (AI_retreatToCity(false, MAX_INT, true))
+			return;
 	}
-	
-	int iDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 3);
-	
-	if (AI_changeUnitAIType(99))
-	{
-		return;
-	}
-	
 	
 	if ((m_pUnitInfo->getLearnTime() >= 0) && (getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
 	{
@@ -1420,30 +1411,28 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 	
-	// TAC - AI City Sites - koma13 - START
-	//if (area()->getBestFoundValue(getOwnerINLINE()) > 1500 && area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0)
-	if ((area()->getBestFoundValue(getOwnerINLINE()) > (kOwner.AI_isLandLocked() ? 1 : 1500)) && area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SETTLER) == 0)
-	{
-		//if (kOwner.AI_getPopulation() / kOwner.getNumCities() > 4)
-		int iDesiredCities = kOwner.AI_desiredCityCount();
-		if (iDesiredCities > (kOwner.getNumCities() + kOwner.AI_totalUnitAIs(UNITAI_SETTLER)))
-
-		{
-			if (canFound(NULL))
-			{ 
-				AI_setUnitAIType(UNITAI_SETTLER);
-				AI_settlerMove();
-				return;
-			}
-		}
-	}
-	// TAC - AI City Sites - koma13 - END
-
 	if (AI_joinCity())
 	{
 		return;
 	}
 
+	// Consider jobs that we would be a decent fit for
+	if (AI_changeUnitAIType(99))
+	{
+		return;
+	}
+
+	CvCity* pCity = plot()->getPlotCity();
+	if (pCity != NULL)
+	{ 
+		// We might want to swap places with a citizen
+		if (AI_betterJob())
+		{
+			return;
+		}
+	}
+
+	// Consider any job to avoid being unemployed :(
 	if (AI_changeUnitAIType(49))
 	{
 		return;
@@ -1528,60 +1517,7 @@ void CvUnitAI::AI_settlerMove()
 			return;
 		}
 	}
-	
-	CvCity* pCity;
-	bool bCanRoute;
-
-	bCanRoute = canBuildRoute();
-
-	pCity = NULL;
-
-	if (plot()->getOwnerINLINE() == getOwnerINLINE())
-	{
-		pCity = plot()->getPlotCity();
-		if (pCity == NULL)
-		{
-			pCity = plot()->getWorkingCity();
-		}
-	}
-	
-	if (pCity != NULL)
-	{
-		if ((pCity->AI_getWorkersNeeded() > 0) && (plot()->isCity() || (pCity->AI_getWorkersNeeded() < ((1 + pCity->AI_getWorkersHave() * 2) / 3))))
-		{
-			if (AI_improveCity(pCity))
-			{
-				return;
-			}
-		}
-	}
-	
-	if (AI_improveLocalPlot(2, pCity))
-	{
-		return;
-	}
-
-
-
-	if (pCity != NULL)
-	{
-		if (AI_improveCity(pCity))
-		{
-			return;
-		}
-	}
-
-
-	if (AI_nextCityToImprove(pCity))
-	{
-		return;
-	}
 		
-	if (AI_improveLocalPlot(3, NULL))
-	{
-		return;
-	}
-	
 	if (canJoinCity(plot()))
 	{
 		joinCity();
@@ -1849,6 +1785,111 @@ void CvUnitAI::AI_missionaryMove()
 	return;
 }
 
+
+
+// WTP, ray, Native Trade Posts - START
+void CvUnitAI::AI_nativeTraderMove()
+{
+	PROFILE_FUNC();
+	
+	if (AI_breakAutomation())
+	{
+		return;
+	}
+
+	// Erik: Disabled for now, missionaries
+	// will not found or join cities at the start
+	// of the game
+	/*
+	// If we have no cities, become a colonist
+	// so that we can found or join one
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getNumCities() == 0)
+	{
+		AI_setUnitAIType(UNITAI_COLONIST);
+		AI_colonistMove();
+	}
+	*/
+
+	CvCity* pCity = (plot()->getOwnerINLINE() == getOwnerINLINE()) ? plot()->getPlotCity() : NULL;
+	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
+	if (bDanger)
+	{
+		if (pCity != NULL)
+		{
+			if (canJoinCity(plot()))
+			{
+				joinCity();
+				return;
+			}
+		}
+		if (AI_retreatToCity())
+		{
+			return;
+		}
+		if (AI_safety())
+		{
+			return;
+		}
+	}
+		
+	if (!isHuman() && pCity != NULL)
+	{
+		if (AI_betterJob())
+		{
+			return;
+		}
+	}
+	
+	if (isCargo())
+	{
+		if (AI_unloadWhereNeeded())
+		{
+			return;
+		}
+	}
+	
+	if (AI_spreadTradePosts())
+	{
+		return;
+	}
+	
+	if (area()->getNumUnrevealedTiles(getTeam()) > 0)
+	{
+		if (AI_exploreOpenBorders(4))
+		{
+			return;
+		}
+		
+		if (AI_explore(true))
+		{
+			return;
+		}
+	}
+	
+	//We should try and convert profession to something else
+	//When this is possible.
+
+	if (AI_retreatToCity())
+	{
+		AI_setUnitAIType(UNITAI_COLONIST);
+		GET_PLAYER(getOwnerINLINE()).AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1);
+		return;
+	}
+
+	if (AI_safety())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+	return;
+}
+// WTP, ray, Native Trade Posts - END
+
+
+
+
 void CvUnitAI::AI_scoutMove()
 {
 	CvCity* pCity = plot()->getPlotCity();
@@ -2049,6 +2090,16 @@ void CvUnitAI::AI_treasureMove()
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
+
+	// WTP, merge Treasures, of Raubwuerger - START
+	// implementation of ray, AI logic for Merge Treasures
+	// will trigger anyways only in save Cities or Native Villages
+	if (canMergeTreasures())
+	{
+		mergeTreasures();
+		return;
+	}
+	// WTP, merge Treasures, of Raubwuerger - END
 	
 	if (AI_loadAdjacent(plot(), false))
 	{
@@ -2165,7 +2216,7 @@ void CvUnitAI::AI_generalMove()
 	aeUnitAITypes.push_back(UNITAI_ASSAULT_SEA);
 	aeUnitAITypes.push_back(UNITAI_COMBAT_SEA);
 	// Erik: Let's avoid great pirates :P
-	aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
+	//aeUnitAITypes.push_back(UNITAI_PIRATE_SEA);
 
 	if (AI_lead(aeUnitAITypes))
 	{
@@ -2191,33 +2242,99 @@ void CvUnitAI::AI_defensiveMove()
 	PROFILE_FUNC();
 	
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false);
-	if ((kOwner.getNumCities() == 0) && (kOwner.AI_getNumAIUnits(UNITAI_SETTLER) == 0))
+	const bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false);
+	
+	// BETTER_BTS_AI_MOD, Settler AI, 09/18/09, jdog5000: START
+	if (!plot()->isOwned())
 	{
-		if (canFound(NULL))
+		if (AI_group(UNITAI_SETTLER, 1, -1, -1, false, false, false, 2, true))
 		{
-			AI_setUnitAIType(UNITAI_SETTLER);
-			AI_settlerMove();
+			return;
+		}
+	} 
+	// BETTER_BTS_AI_MOD: END
+
+
+	if (bDanger)
+	{
+		if (AI_leaveAttack(1, 70, 140)) // was ,,175
+		{
+			return;
+		}
+
+		if (AI_chokeDefend())
+		{
 			return;
 		}
 	}
+
+	if (AI_guardCityBestDefender())
+	{
+		return;
+	}
 	
+	// Enable this when we finally implement this UNITAI
+	/*
+	if (!bDanger)
+	{
+		if (getPlot().getOwner() == getOwner())
+		{
+			if (AI_load(UNITAI_SETTLER_SEA, MISSIONAI_LOAD_SETTLER, UNITAI_SETTLE, -1, -1, 1, -1, MOVE_SAFE_TERRITORY, 1))
+			{
+				return;
+			}
+		}
+	}
+	*/
+
+	if (AI_guardCityMinDefender())
+	{
+		return;
+	}
+
+	// R&R, improvements for AI defense
+	// if (kOwner.AI_isStrategy(STRATEGY_REVOLUTION) && bDanger)
+	//{
+	// Don't do this, it will trap defenders inside cities whenever there's the slightest danger
+	/*
+	if ((pCity != NULL) && bDanger)
+	{
+		getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_CITY);
+		return;
+	}
+	*/
+	//}
+	
+	if (!bDanger)
+	{
+		if (AI_group(UNITAI_SETTLER, /*iMaxGroup*/ 1, -1, -1, false, false, false, /*iMaxPath*/ 2, /*bAllowRegrouping*/ true))
+		{
+			return;
+		}
+
+		if (AI_group(UNITAI_SETTLER, /*iMaxGroup*/ 2, -1, -1, false, false, false, /*iMaxPath*/ 2, /*bAllowRegrouping*/ true))
+		{
+			return;
+		}
+
+		// Enable this when we finally implement this UNITAI
+		/*
+		if (getPlot().getOwner() == getOwner())
+		{
+			if (AI_load(UNITAI_SETTLER_SEA, MISSIONAI_LOAD_SETTLER, UNITAI_SETTLE, -1, -1, 1, -1, MOVE_SAFE_TERRITORY))
+			{
+				return;
+			}
+		}
+		*/
+	}
+
 	CvCity* pCity = plot()->getPlotCity();
 	if ((pCity != NULL) && (pCity->getOwnerINLINE() != getOwnerINLINE()))
 	{
 		pCity = NULL;
 	}
 
-	// R&R, improvements for AI defense
-	// if (kOwner.AI_isStrategy(STRATEGY_REVOLUTION) && bDanger)
-	//{
-	if ((pCity != NULL) && bDanger)
-	{
-		getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_CITY);
-		return;
-	}
-	//}
-	
 	if ((!isHuman() && getProfession() != NO_PROFESSION) && !bDanger)
 	{
 		if (pCity != NULL)
@@ -4469,6 +4586,12 @@ void CvUnitAI::AI_transportSeaMove()
 	}
 	// TAC - AI Improved Naval AI - koma13 - END
 
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
+
+
 	if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
 	{
 		if (AI_respondToPickup(20, UNITAI_TREASURE))
@@ -5415,6 +5538,11 @@ void CvUnitAI::AI_escortSeaMove()
 {
 	PROFILE_FUNC();
 
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
+
 	if (plot()->isCity(true)) //prioritize getting outta there
 	{
 		int iOurDefense = GET_TEAM(getTeam()).AI_getOurPlotStrength(plot(),0,true,false,true);
@@ -5525,6 +5653,11 @@ void CvUnitAI::AI_escortSeaMove()
 
 void CvUnitAI::AI_combatSeaMove()
 {
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
+
 	// Erik: Check if there's an admiral waiting
 	if (AI_joinGreatAdmiral())
 		return;
@@ -5576,6 +5709,11 @@ void CvUnitAI::AI_combatSeaMove()
 
 void CvUnitAI::AI_pirateMove()
 {
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
+
 	if (AI_anyAttack(2, 49))
 	{
 		return;
@@ -6086,7 +6224,7 @@ bool CvUnitAI::AI_europeBuyYields()
 		aiYields[iYield] = 0;
 	}
 //VET NewCapacity - begin 1/4
-	int iCargoYields;
+	// no longer needed
 //VET NewCapacity - end 1/4
 	
 	int aiTotalYields[NUM_YIELD_TYPES];
@@ -6105,20 +6243,10 @@ bool CvUnitAI::AI_europeBuyYields()
 				{	
 					int iNeeded = pLoopCity->getMaintainLevel(eLoopYield);
 //VET NewCapacity - begin 2/4
-					if (GC.getNEW_CAPACITY())
-					{
-						for (int i = 1; i < NUM_YIELD_TYPES; i++)
-						{
-							iCargoYields = 0;
-							if ((pLoopCity->getYieldStored((YieldTypes)i) > 0) && (GC.getYieldInfo((YieldTypes)i).isCargo()))
-								{iCargoYields++;}
-						}
-						if (iCargoYields < 1)
-							{iCargoYields = 1;}
-						iNeeded /= iCargoYields;
-					}
+					// no longer needed
 //VET NewCapacity - end 2/4
-					if (pLoopCity->getYieldStored(eLoopYield) < iNeeded)
+					iNeeded -= pLoopCity->getYieldStored(eLoopYield);
+					if (iNeeded > 0)
 					{
 						aiYields[eLoopYield] += iNeeded;
 					}
@@ -6195,37 +6323,7 @@ bool CvUnitAI::AI_africa()
 	if (kOwner.getParent() == NO_PLAYER)
 		return false;
 
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	
-	const CvPlot* pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
-	//Sell to Africa
-	std::vector<CvUnit*> apUnits;
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
-
-		if (pLoopUnit->getTransportUnit() == this)
-		{
-			YieldTypes eYield = pLoopUnit->getYield();
-			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
-			{
-				if ((NO_YIELD == eYield) || kOwner.isYieldAfricaTradable(eYield))
-				{
-					apUnits.push_back(pLoopUnit);
-				}
-			}
-		}
-	}
-
-	for (uint i = 0; i < apUnits.size(); ++i)
-	{
-		kOwner.sellYieldUnitToAfrica(apUnits[i], apUnits[i]->getYieldStored(), 0);
-	}
+	AI_sellYieldUnits(AFRICA);
 
 	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
@@ -6321,45 +6419,10 @@ bool CvUnitAI::AI_africa()
 
 bool CvUnitAI::AI_europe()
 {
-	
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pPlot;
-	int iCount;
-
-	iCount = 0;
-
-	pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	
-	//Sell to Europe
-	std::vector<CvUnit*> apUnits;
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+	AI_sellYieldUnits(EUROPE);
 
-		if (pLoopUnit->getTransportUnit() == this)
-		{
-			YieldTypes eYield = pLoopUnit->getYield();
-			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
-			{
-				if ((NO_YIELD == eYield) || kOwner.isYieldEuropeTradable(eYield))
-				{
-					apUnits.push_back(pLoopUnit);
-				}
-			}
-		}
-	}
-
-	for (uint i = 0; i < apUnits.size(); ++i)
-	{
-		kOwner.sellYieldUnitToEurope(apUnits[i], apUnits[i]->getYieldStored(), 0);
-	}
-	
 	// TAC - AI King no Europe trading bugfix - koma13 - START
 	//kOwner.AI_doEurope();
 	if (kOwner.getParent() != NO_PLAYER)
@@ -6405,6 +6468,13 @@ bool CvUnitAI::AI_europe()
 		}
 	}
 	// TAC - AI purchases military units - koma13 - END
+
+	const int iPotentialColonistsToHurry = std::max(0, cargoSpace() - getCargo() - kOwner.getNumEuropeUnits());
+	
+	if (iPotentialColonistsToHurry > 0)
+	{ 
+		kOwner.AI_hurryBestDockUnits(std::min(GC.getDefineINT("DOCKS_NEXT_UNITS"), iPotentialColonistsToHurry));
+	}
 
 	// Erik: Pick up the most valuable units first (e.g. statesmen)
 	// and leave the less valuable units (e.g. servants) for last
@@ -6508,45 +6578,10 @@ bool CvUnitAI::AI_europe()
 
 bool CvUnitAI::AI_europeAssaultSea()
 {
-	
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pPlot;
-	int iCount;
-
-	iCount = 0;
-
-	pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	
-	//Sell to Europe
-	std::vector<CvUnit*> apUnits;
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+	AI_sellYieldUnits(EUROPE);
 
-		if (pLoopUnit->getTransportUnit() == this)
-		{
-			YieldTypes eYield = pLoopUnit->getYield();
-			if (NO_YIELD != eYield)
-			{
-				if (kOwner.isYieldEuropeTradable(eYield))
-				{
-					apUnits.push_back(pLoopUnit);
-				}
-			}
-		}
-	}
-
-	for (uint i = 0; i < apUnits.size(); ++i)
-	{
-		kOwner.sellYieldUnitToEurope(apUnits[i], apUnits[i]->getYieldStored(), 0);
-	}
-	
 	//Pick up units from Europe (FIFO)
 	while (kOwner.getNumEuropeUnits() > 0)
 	{
@@ -6748,16 +6783,17 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 	PROFILE_FUNC();
 	//Later on I'll make it so it can completely full yield units, for now though not.
 	FAssert(!isFull());
-	
+	FAssert(iMinPercent > 0);
+	FAssert(iMaxPath > 0);
+
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestMissionPlot = NULL;	// TAC - AI Improved Naval AI - koma13
-	
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
-	CvCity* pLoopCity;
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
 	int iLoop;
-	for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
+	for (CvCity* pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
 	{
 		if (!atPlot(pLoopCity->plot()) && AI_plotValid(pLoopCity->plot()))
 		{
@@ -6768,39 +6804,38 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 				if (pLoopCity->isBestPortCity() || (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopCity->plot(), MISSIONAI_TRANSPORT_SEA, getGroup(), 1) == 0))
 				// TAC - AI Improved Naval AI - koma13 - END
 				{
-					
+
 					int iPathTurns;
-					if (generatePath(pLoopCity->plot(), 0, true, &iPathTurns))
+					if (generatePath(pLoopCity->plot(), MOVE_NO_ENEMY_TERRITORY | MOVE_AVOID_ENEMY_WEIGHT_3, true, &iPathTurns))
 					{
 						if (iPathTurns <= iMaxPath)
 						{
-							
 							int iBestYieldValue = 0;
 							//Nothing too fancy, just find the best yield and best quantity.
 							for (int i = 0; i < NUM_YIELD_TYPES; i++)
 							{
-								YieldTypes eYield = (YieldTypes)i;
+								const YieldTypes eYield = (YieldTypes)i;
 								if (kOwner.isYieldEuropeTradable(eYield))
 								{
 									if (kOwner.AI_isYieldForSale(eYield))
 									{
-										int iStored = pLoopCity->getYieldStored(eYield);
-										if (iStored >= ((GC.getGameINLINE().getCargoYieldCapacity() * iMinPercent) / 100 ))
+										const int iAvailable = std::max(0, pLoopCity->getYieldStored(eYield) - pLoopCity->getMaintainLevel(eYield));
+										if (iAvailable >= ((GC.getGameINLINE().getCargoYieldCapacity() * iMinPercent) / 100))
 										{
-											int iYieldValue = iStored * kEuropePlayer.getYieldBuyPrice(eYield);
+											const int iYieldValue = iAvailable * kEuropePlayer.getYieldBuyPrice(eYield);
 											iBestYieldValue = std::max(iYieldValue, iBestYieldValue);
 										}
 									}
 								}
 							}
-						
+
 							if (iBestYieldValue > 0)
 							{
 								int iValue = (100000 * iBestYieldValue);
-								
+
 								iValue /= 100 + getPathCost();
 								iValue /= 3 + pLoopCity->plot()->getDistanceToOcean();
-								
+
 								if (iValue > iBestValue)
 								{
 									iBestValue = iValue;
@@ -6826,7 +6861,7 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 
 	return false;
 }
-	
+
 bool CvUnitAI::AI_collectGoods()
 {
 	bool bLoaded = false;
@@ -8738,12 +8773,23 @@ bool CvUnitAI::AI_spreadReligion()
 	PROFILE_FUNC();
 	
 	FAssert(GC.getProfessionInfo(getProfession()).getMissionaryRate() > 0);
+
+	// WTP, ray, AI imporevment - START
+	// AI was running around with Missionaries and Native Traders too much
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (canEstablishMission())
+	{
+		establishMission();
+		kOwner.AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1); // line moved
+		return true;
+	}
+	// WTP, ray, AI imporevment - END
 	
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestSpreadPlot = NULL;
 		
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
 	{
 		CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
@@ -8800,9 +8846,10 @@ bool CvUnitAI::AI_spreadReligion()
 
 	if ((pBestPlot != NULL) && (pBestSpreadPlot != NULL))
 	{
-		if (atPlot(pBestSpreadPlot))
+		// WTP, ray, for safety I added this 
+		// I noticed that if 2 Missionaris are placed on a Native Village at the same time, both try to establish a Mission
+		if (atPlot(pBestSpreadPlot) && canEstablishMission())
 		{
-			FAssert(canEstablishMission());
 			establishMission();
 			kOwner.AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1);
 			return true;
@@ -8817,6 +8864,106 @@ bool CvUnitAI::AI_spreadReligion()
 
 	return false;
 }
+
+// WTP, ray, Native Trade Posts - START
+bool CvUnitAI::AI_spreadTradePosts()
+{
+	PROFILE_FUNC();
+
+	// WTP, ray, AI imporevment - START
+	// AI was running around with Missionaries and Native Traders too much
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (canEstablishTradePost())
+	{
+		establishTradePost();
+		kOwner.AI_changeNumRetiredAIUnits(UNITAI_TRADER, 1); // line moved
+		return true;
+	}
+	// WTP, ray, AI imporevment - END
+	
+	int iBestValue = 0;
+	CvPlot* pBestPlot = NULL;
+	CvPlot* pBestSpreadPlot = NULL;
+		
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
+	{
+		CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+		if (kLoopPlayer.isAlive())
+		{
+			if (kLoopPlayer.canHaveTradePost(getOwnerINLINE()) && getNativeTradePostSuccessPercent() > 50)
+			{
+				if (kLoopPlayer.AI_getAttitude(getOwnerINLINE()) >= ATTITUDE_ANNOYED)
+				{
+					int iLoop;
+					for (CvCity* pLoopCity = kLoopPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kLoopPlayer.nextCity(&iLoop))
+					{
+						CvPlot* pLoopPlot = pLoopCity->plot();
+						if (pLoopPlot->isRevealed(getTeam(), false))
+						{
+							if (pLoopPlot->getArea() == getArea())
+							{
+								if ((pLoopCity->getTradePostCivilization() != getCivilizationType()) && (pLoopPlot->calculateCulturePercent(pLoopPlot->getOwnerINLINE()) == 100))
+								{
+									if (kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_SPREAD, getGroup()) == 0)
+									{
+										int iPathTurns;
+										if (generatePath(pLoopPlot, MOVE_NO_ENEMY_TERRITORY, true, &iPathTurns))
+										{
+											if (iPathTurns < 10)
+											{
+												int iValue = pLoopCity->getPopulation();
+												
+												if (pLoopPlot->getCulture(getOwnerINLINE()) > 0)
+												{
+													iValue /= 4;
+												}
+												
+												iValue *= 100 + GC.getGameINLINE().getSorenRandNum(25, "AI best spread plot");
+												iValue /= 400 + getPathCost();
+												if (iValue > iBestValue)
+												{
+													iBestValue = iValue;
+													pBestSpreadPlot = pLoopPlot;
+													pBestPlot = getPathEndTurnPlot();
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+		
+
+	if ((pBestPlot != NULL) && (pBestSpreadPlot != NULL))
+	{
+		// WTP, ray, for safety I added this 
+		// I noticed that if 2 Native Traders are placed on a Native Village at the same time, both try to establish a Trade Post
+		if (atPlot(pBestSpreadPlot) && canEstablishTradePost())
+		{
+			establishTradePost();
+			kOwner.AI_changeNumRetiredAIUnits(UNITAI_TRADER, 1);
+			return true;
+		}
+		else
+		{
+			FAssert(!atPlot(pBestPlot));
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_SPREAD, pBestSpreadPlot);
+			return true;
+		}
+	}
+
+	return false;
+}
+// WTP, ray, Native Trade Posts - END
+
+
+
 
 bool CvUnitAI::AI_learn(int iRange)
 {
@@ -11303,7 +11450,7 @@ bool CvUnitAI::AI_hide()
 
 
 // Returns true if a mission was pushed...
-bool CvUnitAI::AI_goody()
+bool CvUnitAI::AI_goody(bool bIgnoreCity)
 {
 	PROFILE_FUNC();
 
@@ -11326,7 +11473,7 @@ bool CvUnitAI::AI_goody()
 				iValue += 10000;
 			}
 			
-			if (pLoopPlot->isCity())
+			if (!bIgnoreCity && pLoopPlot->isCity())
 			{
 				if (!pLoopPlot->getPlotCity()->isScoutVisited(getTeam()))
 				{
@@ -11374,7 +11521,7 @@ bool CvUnitAI::AI_goody()
 
 }
 
-bool CvUnitAI::AI_goodyRange(int iRange)
+bool CvUnitAI::AI_goodyRange(int iRange, bool bIgnoreCity)
 {
 	PROFILE_FUNC();
 
@@ -11397,7 +11544,7 @@ bool CvUnitAI::AI_goodyRange(int iRange)
 					iValue += 10000;
 				}
 				
-				if (pLoopPlot->isCity())
+				if (!bIgnoreCity && pLoopPlot->isCity()) 
 				{
 					if (!pLoopPlot->getPlotCity()->isScoutVisited(getTeam()))
 					{
@@ -14737,26 +14884,27 @@ bool CvUnitAI::AI_joinCityBrave()
 	}
 	return false;
 }
-						
+			
+// Determine if we should join any city in this area where we can be employed
 bool CvUnitAI::AI_joinCity(int iMaxPath)
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	
+
 	CvUnit* pTransportUnit = getTransportUnit();
-	
+
 	bool bForceTransport = false;
 	if (plot()->isCity() && (plot()->getOwnerINLINE() != getOwnerINLINE()))
 	{
 		bForceTransport = true;
 	}
-	
+
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestJoinPlot = NULL;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
-	
-	ProfessionTypes eOptimalProfession = kOwner.AI_idealProfessionForUnit(getUnitType());
-	
+
+	const ProfessionTypes eOptimalProfession = kOwner.AI_idealProfessionForUnit(getUnitType());
+
 	int iLoop;
 	bool bTransportPath = false;
 	for (CvCity* pCity = kOwner.firstCity(&iLoop); pCity != NULL; pCity = kOwner.nextCity(&iLoop))
@@ -14767,14 +14915,14 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 		{
 			int iPathTurns = 0;
 			bool bTransport = pTransportUnit != NULL;
-			
+
 			if (!bForceTransport && canUnload() && (pLoopPlot->area() == area()))
 			{
 				bTransport = false;
 			}
 
 			bool bValid = atPlot(pLoopPlot);
-				
+
 			if (!bValid)
 			{
 				if (bTransport)
@@ -14790,55 +14938,53 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 				}
 				bTransportPath = bTransport;
 			}
-				
-			if (bValid && iPathTurns < iMaxPath)
-				{
-					ProfessionTypes eProfession;
-					int iValue = pCity->AI_unitJoinCityValue(this, &eProfession);
-					
-					iValue *= 100;
-					iValue /= 100;
-					
-					int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup());
-					// TAC - AI Economy- koma13 - START
-					//int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming, 0);
-					int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming);
-					// TAC - AI Economy- koma13 - END
-					if (iSizeGap > 0)
-					{
-						int iModifier = iSizeGap * (eOptimalProfession == NO_PROFESSION) ? 20 : 5;
-						iModifier += (pCity->getPopulation() + iIncoming == 1) ? 100 : 25;
-						iValue *= 100 + iModifier;
-						iValue /= 100;
-					}
-					// TAC - AI Economy- koma13 - START
-					else if (iSizeGap < 0)
-					{
-						iValue = 0;
-					}
-					// TAC - AI Economy- koma13 - END
-					
-					iValue *= 100;
-					iValue /= 100 + 10 * iPathTurns;
 
-					if (atPlot(pLoopPlot))
-					{
-						iValue *= 100 + std::max(0, (15 - pCity->getPopulation()) * 2) + ((eOptimalProfession == NO_PROFESSION) ? 25 : 10);
-						iValue /= 100;
-					}
-					
-					if (iValue > iBestValue)
-					{
-						iBestValue = iValue;
-						pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : pLoopPlot;
-						pBestJoinPlot = pLoopPlot;
-						eBestProfession = eProfession;
-					}
+			if (bValid && iPathTurns < iMaxPath)
+			{
+				ProfessionTypes eProfession;
+				int iValue = pCity->AI_unitJoinCityValue(this, &eProfession);
+
+				const int iIncoming = kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup());
+				// TAC - AI Economy- koma13 - START
+				//int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming, 0);
+				const int iSizeGap = pCity->AI_getTargetSize() - (pCity->getPopulation() + iIncoming);
+				// TAC - AI Economy- koma13 - END
+				if (iSizeGap > 0)
+				{
+					int iModifier = iSizeGap * (eOptimalProfession == NO_PROFESSION) ? 20 : 5;
+					iModifier += (pCity->getPopulation() + iIncoming == 1) ? 100 : 25;
+					iValue *= 100 + iModifier;
+					iValue /= 100;
+				}
+				// TAC - AI Economy- koma13 - START
+				else if (iSizeGap < 0)
+				{
+					// Even though this city is undesireable it's still better than having idle colonists
+					iValue /= 2;
+				}
+				// TAC - AI Economy- koma13 - END
+
+				iValue *= 100;
+				iValue /= 100 + 10 * iPathTurns;
+
+				if (atPlot(pLoopPlot))
+				{
+					iValue *= 100 + std::max(0, (15 - pCity->getPopulation()) * 2) + ((eOptimalProfession == NO_PROFESSION) ? 25 : 10);
+					iValue /= 100;
+				}
+
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : pLoopPlot;
+					pBestJoinPlot = pLoopPlot;
+					eBestProfession = eProfession;
 				}
 			}
 		}
+	}
 
-	
+
 	if (pBestJoinPlot == NULL)
 	{
 		CvCity* pPlotCity = plot()->getPlotCity();
@@ -14865,7 +15011,7 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 				getGroup()->pushMission(MISSION_SKIP);
 				return true;
 			}
-			
+
 			AI_setMovePriority(0);
 			plot()->getPlotCity()->addPopulationUnit(this, eBestProfession);
 			return true;
@@ -14884,7 +15030,8 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 	}
 	return false;
 }
-	
+
+
 bool CvUnitAI::AI_joinOptimalCity()
 {
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -15305,7 +15452,7 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 	{
 		return false;
 	}
-
+	
 	std::vector<CvUnit*> aGroupCargo;
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
@@ -18913,3 +19060,76 @@ bool CvUnitAI::AI_moveToCity(bool bUnload, CvCity* pLoopCity)
 	return true;
 }
 //End TAC Whaling, ray
+
+void CvUnitAI::AI_sellYieldUnits(Port port)
+{
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlot* pPlot = plot();
+	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+	std::vector<CvUnit*> apUnits;
+
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getTransportUnit() == this)
+		{			
+			if (pLoopUnit->isGoods() || pLoopUnit->getUnitInfo().isTreasure())
+			{
+				const YieldTypes eYield = pLoopUnit->getYield();
+
+				if ((NO_YIELD == eYield) || kOwner.isYieldEuropeTradable(eYield))
+				{
+					apUnits.push_back(pLoopUnit);
+				}
+			}
+		}
+	}
+
+	for (uint i = 0; i < apUnits.size(); ++i)
+	{
+		if (port == EUROPE)
+		{ 
+			kOwner.sellYieldUnitToEurope(apUnits[i], apUnits[i]->getYieldStored(), 0);
+		}
+		else if (port == AFRICA)
+		{
+			kOwner.sellYieldUnitToAfrica(apUnits[i], apUnits[i]->getYieldStored(), 0);
+		}
+	}
+}
+
+void CvUnitAI::AI_unloadUnits(Port port)
+{
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlot* pPlot = plot();
+	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
+	std::vector<CvUnit*> apUnits;
+
+	while (pUnitNode != NULL)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+
+		if (pLoopUnit->getTransportUnit() == this)
+		{
+			if (!pLoopUnit->isGoods())
+			{
+				apUnits.push_back(pLoopUnit);
+			}
+		}
+	}
+
+	for (uint i = 0; i < apUnits.size(); ++i)
+	{
+		if (port == EUROPE)
+		{
+			kOwner.unloadUnitToEurope(apUnits[i]);
+		}
+		else if (port == AFRICA)
+		{
+			kOwner.unloadUnitToAfrica(apUnits[i]);
+		}
+	}
+}

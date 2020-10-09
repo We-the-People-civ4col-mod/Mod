@@ -734,6 +734,14 @@
 		<Spanish>¿Y qué podéis decir que tenga el más mínimo interés para mí?</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CHIEF_JOSEPH_1</Tag>
+		<English>What could you possibly say that would be of even the slightest interest to me?</English>
+		<French>Que pourriez-vous dire qui soit du moindre intérêt pour moi ?</French>
+		<German>Bleichgesicht, Ihr sprecht mit gespaltener Zunge, Gift tropft aus Eurem Herzen, und Ihr vertreibt die Büffel. Ihr seid hier nicht erwünscht.</German>
+		<Italian>Cosa potresti mai dire di minimamente interessante per me?</Italian>
+		<Spanish>¿Y qué podéis decir que tenga el más mínimo interés para mí?</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_PENN_1</Tag>
 		<English>The test of any great man or nation is how it treats the impoverished. Will you help us in our time of need?</English>
 		<French>C'est à sa façon d'aider les pauvres qu'on reconnaît la grandeur d'un homme ou d'une nation. Pourriez-vous nous aider en ces temps difficiles ? </French>
@@ -2927,11 +2935,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHURCH_WAR_REFUSED</Tag>
-		<English>You have refused the order of the Church to declare war on %s1. The Church and your King are outraged but your relations to %s1 have improved.</English>
-		<French>Vous avez refusé l'ordre de l'église de déclarer la guerre aux %s1. Votre église et votre Roi sont outragés mais vos relations avec les %s1 se sont améliorés.</French>
-		<German>Ihr habt den Befehl der Kirche verweigert, %s1 den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber eure Beziehung zu %s1 hat sich verbessert.</German>
-		<Italian>You have refused the order of the Church to declare war on %s1. The Church and your King are outraged but your relations to %s1 have improved.</Italian>
-		<Spanish>You have refused the order of the Church to declare war on %s1. The Church and your King are outraged but your relations to %s1 have improved.</Spanish>
+		<English>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations to %s1 have improved.</English>
+		<French>Vous avez refusé l'ordre de l'église de déclarer la guerre. Votre église et votre Roi sont outragés mais vos relations avec les %s1 se sont améliorés.</French>
+		<German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber eure Beziehung zu %s1 hat sich verbessert.</German>
+		<Italian>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations to %s1 have improved.</Italian>
+		<Spanish>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations to %s1 have improved.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STEALING_IMMIGRANT_SUCCESSFULL</Tag>

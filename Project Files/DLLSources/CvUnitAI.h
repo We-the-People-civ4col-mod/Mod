@@ -118,6 +118,7 @@ protected:
 	void AI_settlerMove();
 	void AI_workerMove();
 	void AI_missionaryMove();
+	void AI_nativeTraderMove(); // WTP, ray, Native Trade Posts - START
 	void AI_scoutMove();
 	void AI_treasureMove();
 	void AI_yieldUhMove();
@@ -210,6 +211,8 @@ protected:
 	bool AI_moveTowardsVictimCity();
 	bool AI_spreadReligion();
 
+	bool AI_spreadTradePosts(); // WTP, ray, Native Trade Posts - START
+
 	bool AI_learn(int iRange = 8);
 
 	bool AI_requestPickup(int iMaxPath = MAX_INT);
@@ -260,9 +263,9 @@ protected:
 	bool AI_defend();
 	bool AI_safety();
 	bool AI_hide();
-	bool AI_goody();
-	bool AI_goodyRange(int iRange);
-	
+	bool AI_goody(bool bIgnoreCity = false);
+	bool AI_goodyRange(int iRange, bool bIgnoreCity = false);
+
 	bool AI_isValidExplore(CvPlot* pPlot) const;
 	int AI_explorePlotValue(CvPlot* pPlot, bool bImportantOnly = false) const;
 	bool AI_explore(bool bFavorOpenBorders = false);
@@ -395,6 +398,9 @@ protected:
 	bool AI_isObsoleteTradeShip();
 
 	bool AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger = true);
+
+	void AI_sellYieldUnits(Port port);
+	void AI_unloadUnits(Port port);
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

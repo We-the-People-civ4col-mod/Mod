@@ -482,7 +482,7 @@ private:
 			eEnd = (LengthType)iBuffer;
 		}
 
-		byte iBuffer;
+		byte iBuffer = 0;
 
 		for (LengthType eLoop = eStart; eLoop <= eEnd; ++eLoop)
 		{

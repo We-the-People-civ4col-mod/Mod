@@ -532,6 +532,8 @@ enum DllExport WidgetTypes
 	WIDGET_CITY_CENTER_PLOT,
 	WIDGET_HELP_TEXT,
 	WIDGET_NETWORK_DESYNC,
+	WIDGET_JUMP_TO_SETTLEMENT,
+	WIDGET_MISSION_CHAR,
 
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
@@ -672,6 +674,7 @@ enum DllExport GameOptionTypes
 	GAMEOPTION_NO_WILD_LAND_ANIMALS, // < JAnimals Mod Start >
 	GAMEOPTION_NO_WILD_SEA_ANIMALS, // < JAnimals Mod Start >
 	GAMEOPTION_REDUCED_CITY_DISTANCE, /// reduced city distance - Nightinggale
+	GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE, // WTP, ray, Game Option only 1 Colonist living in Village - START
 #ifdef _USRDLL
 	NUM_GAMEOPTION_TYPES
 #endif
@@ -1095,6 +1098,7 @@ enum DllExport UnitAITypes
 	UNITAI_SETTLER,
 	UNITAI_WORKER,
 	UNITAI_MISSIONARY,
+	UNITAI_TRADER, // WTP, ray, Native Trade Posts - START
 	UNITAI_SCOUT,
 	UNITAI_WAGON,
 	UNITAI_TREASURE,
@@ -1299,6 +1303,8 @@ enum DllExport CommandTypes
 	COMMAND_IGNORE_DANGER,	// TAC - Trade Routes Advisor - koma13
 	COMMAND_SAIL_TO_AFRICA, /*** TRIANGLETRADE 10/15/08 by DPII ***
 	COMMAND_SAIL_TO_PORT_ROYAL, // R&R, ray, Port Royal
+	COMMAND_MERGE_TREASURES, // WTP, merge treasures, of Raubwuerger
+	COMMAND_ESTABLISH_TRADE_POST, // WTP, ray, Native Trade Posts - START
 
 #ifdef _USRDLL
 	NUM_COMMAND_TYPES

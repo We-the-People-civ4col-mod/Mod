@@ -448,6 +448,10 @@
         <English>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FAILED_MISSIONARY</Tag>
+        <English>TXT_KEY_UNIT_FAILED_MISSIONARY</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CIGARS</Tag>
         <English>Cigars</English>
         <French>
@@ -673,15 +677,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONQUISTADOR</Tag>
-        <English>TXT_KEY_CONQUISTADOR</English>
+        <English>TXT_KEY_UNIT_CONQUISTADOR</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONTINENTAL_GUARD</Tag>
         <English>Continental Guard:Continental Guards</English>
         <French>Garde continentale:Gardes continentales</French>
         <German>Kontinentalgarde:Kontinentalgarde</German>
-        <Italian>Continental Guard:Continental Guards</Italian>
-        <Spanish>Continental Guard:Continental Guards</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
@@ -1829,7 +1831,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MILITIA</Tag>
-        <English>TXT_KEY_MILITIA</English>
+        <English>TXT_KEY_UNIT_MILITIA</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MINER</Tag>
@@ -1881,7 +1883,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MOUNTED_CONQUISTADOR</Tag>
-        <English>TXT_KEY_MOUNTED_CONQUISTADOR</English>
+        <English>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_MUSKETS</Tag>
@@ -2217,7 +2219,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RANGER</Tag>
-        <English>TXT_KEY_RANGER</English>
+        <English>TXT_KEY_UNIT_RANGER</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_RAW_SALT</Tag>
@@ -3401,5 +3403,94 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_FREED_SLAVE</Tag>
+        <English>
+            <Text>Freed Slave:Freed Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave exempté:Esclaves exemptés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Befreiter Sklave:Berfreite Sklaven</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Freed Slave:Freed Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo liberado:Esclavos liberados</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Tag>
+        <English>
+            <Text>Revolting Slave:Revolting Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave revolté:Esclaves revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Sklave:Revoltierende Sklaven</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Revolting Slave:Revolting Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo repugnante:Esclavos repugnantes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Tag>
+        <English>Revolting Criminal:Revolting Criminals</English>
+        <French>
+            <Text>Bagnard revolté:Bagnards revoltés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Revoltierender Kleinkrimineller:Revoltierende Kleinkriminelle</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Piccolo revolte:Piccoli revolti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Convicto repugnante:Convictos repugnantes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_EXPERT_TRADER</Tag>
+        <English>Expert Native Trader:Expert Native Traders</English>
+        <German>
+            <Text>Erfahrener Ureinwohnerhändler:Erfahrene Ureinwohnerhändler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
     </TEXT>
 </Civ4GameText>

@@ -1086,6 +1086,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_SETTLER:
 	case UNITAI_WORKER:
 	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT:
 	case UNITAI_WAGON:
 	case UNITAI_TREASURE:
@@ -1129,6 +1130,7 @@ bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI) const
 	case UNITAI_SETTLER:
 	case UNITAI_WORKER:
 	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT:
 	case UNITAI_WAGON:
 	case UNITAI_TREASURE:
@@ -1440,7 +1442,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 	std::vector<int> aiFood(NUM_CITY_PLOTS, 0);
 
-	for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
+	for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 	{
 		CvPlot* pLoopPlot = plotCity(iX, iY, iI);
 
@@ -1450,7 +1452,11 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 			{
 				if (pLoopPlot->isImpassable())
 				{
-					iBadTile += 2;
+					if (pLoopPlot->getBonusType() == NO_BONUS)
+					{
+						// Only count impassable plots that do not have any bonus resource as bad
+						iBadTile += 2;
+					}
 				}
 				else if (!pLoopPlot->isOwned() || GET_PLAYER(pLoopPlot->getOwnerINLINE()).isNative())
 				{
@@ -2598,6 +2604,8 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 
 // TAC - AI Improved Navel AI - koma13 - START
 //int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves)
+// Returns a count of hostile units (animals will be ignored since they do not represent a real threat) within iRange of the plot
+// if bDangerMap is true the count will include a (decaying) history of hostiles that we've seen.
 int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bDangerMap, bool bVisibleOnly) const
 // TAC - AI Improved Navel AI - koma13 - END
 {
@@ -2607,7 +2615,6 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 	CvUnit* pLoopUnit;
 	CvPlot* pLoopPlot;
 	int iCount;
-	int iDX, iDY;
 
 	iCount = 0;
 
@@ -2616,11 +2623,11 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 		iRange = DANGER_RANGE;
 	}
 
-	CvArea* pWaterArea = pPlot->waterArea();
+	//CvArea* pWaterArea = pPlot->waterArea();
 
-	for (iDX = -(iRange); iDX <= iRange; iDX++)
+	for (int iDX = -(iRange); iDX <= iRange; iDX++)
 	{
-		for (iDY = -(iRange); iDY <= iRange; iDY++)
+		for (int iDY = -(iRange); iDY <= iRange; iDY++)
 		{
 			pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
 			if (pLoopPlot != NULL)
@@ -2637,16 +2644,20 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 								pLoopUnit = ::getUnit(pUnitNode->m_data);
 								pUnitNode = pLoopPlot->nextUnitNode(pUnitNode);
 	
-								if (pLoopUnit->isEnemy(getTeam()))
-								{
-									if (pLoopUnit->canAttack())
-									{
-										if (!(pLoopUnit->isInvisible(getTeam(), false)))
-										{
-											iCount++;
-										}
-									}
-								}
+								if (!pLoopUnit->isEnemy(getTeam()))
+									continue;
+
+								if (!pLoopUnit->canAttack())
+									continue;
+
+								if ((pLoopUnit->isInvisible(getTeam(), false)))
+									continue;
+
+								// Ignore animals
+								if (pLoopUnit->getUnitInfo().isAnimal())
+									continue;
+
+								iCount++;
 							}
 						}
 
@@ -3390,11 +3401,27 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 		UnitTypes eLoopUnit = (UnitTypes) GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(i);
 		if (eLoopUnit != NO_UNIT)
 		{
+
+			//WTP, Ray, fixing Unit Variation for Buying Units from King - START
 			CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
+
 			if (kUnit.getDomainType() == DOMAIN_LAND && kPlayer.getEuropeUnitBuyPrice(eLoopUnit) > 0)
 			{
-				// ERIK: TODO: Find out how to check for combat / armed units
-				bool bValid = (kUnit.getCombat() > 5);
+				// check Combat Value of Unit
+				bool isValidbyUnitCombat = (kUnit.getCombat() > 5);
+
+				// check Combat Change From Profession
+				ProfessionTypes checkProfession = (ProfessionTypes) GC.getUnitInfo(eLoopUnit).getDefaultProfession();
+				bool isValidbyDefaultProfessionCombatChange = false;
+				if (checkProfession != NO_PROFESSION)
+				{
+					isValidbyDefaultProfessionCombatChange = (GC.getProfessionInfo(checkProfession).getCombatChange() > 3);
+				}
+
+				bool bValid = (isValidbyUnitCombat || isValidbyDefaultProfessionCombatChange);
+				//WTP, Ray, fixing Unit Variation for Buying Units from King - END
+
+				//WTP, Ray, replaced because otherwise King gives Medics, which also have Promotions
 				/*
 				for (int j = 0; j < GC.getNumPromotionInfos() && !bValid; ++j)
 				{
@@ -3412,6 +3439,8 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 					{
 						iBestValue = iValue;
 						eUnit = eLoopUnit;
+						//WTP, Ray, fixing Unit Variation for Buying Units from King - END
+						eProfession = (ProfessionTypes) GC.getUnitInfo(eLoopUnit).getDefaultProfession();
 					}
 				}
 			}
@@ -3424,7 +3453,8 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 	}
 
 	iNumUnits = 1;
-	eProfession = (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession();
+	//WTP, Ray, fixing Unit Variation for Buying Units from King - END
+	//eProfession = (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession();
 
 	return kPlayer.getEuropeUnitBuyPrice(eUnit) * GC.getDefineINT("KING_BUY_UNIT_PRICE_MODIFIER") / 100;
 }
@@ -4470,15 +4500,21 @@ int CvPlayerAI::AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvC
 	if (kUnitInfo.getUnitAIType(UNITAI_TRANSPORT_COAST))
 	{
 		int iValue = 0;
+		
 		if (pCity != NULL)
 		{
-			const int iCoastalCityCount = countNumCoastalCities();
-			const int iTransportCount = AI_totalAreaUnitAIs(pCity->area(), UNITAI_TRANSPORT_COAST);
-
-			int iNeededTransports = iCoastalCityCount / 2;
-			if (iNeededTransports < iTransportCount)
+			CvArea* const pWaterArea = pCity->waterArea();
+			
+			if (pWaterArea != NULL)
 			{
-				iValue += 50 * kUnitInfo.getCargoSpace();
+				const int iCoastalCityCount = countNumCoastalCities();
+				const int iTransportCount = AI_totalWaterAreaUnitAIs(pWaterArea, UNITAI_TRANSPORT_COAST);
+
+				int iNeededTransports = iCoastalCityCount / 2;
+				if (iNeededTransports < iTransportCount)
+				{
+					iValue += 50 * kUnitInfo.getCargoSpace();
+				}
 			}
 		}
 
@@ -4538,6 +4574,8 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 		case UNITAI_WORKER:
 			break;
 		case UNITAI_MISSIONARY:
+			break;
+		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 			break;
 		case UNITAI_SCOUT:
 			break;
@@ -4666,6 +4704,7 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		case UNITAI_SETTLER:
 		case UNITAI_WORKER:
 		case UNITAI_MISSIONARY:
+		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 		case UNITAI_SCOUT:
 			if (kUnitInfo.getDefaultProfession() != NO_PROFESSION)
 			{
@@ -4808,6 +4847,7 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 	case UNITAI_SETTLER:
 	case UNITAI_WORKER:
 	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT:
 		break;
 
@@ -7769,6 +7809,7 @@ void CvPlayerAI::AI_doProfessions()
 
 									for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
 									{
+
 										ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
 										CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
 
@@ -8428,6 +8469,8 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 			return false;
 			break;
 		case YIELD_HEMP:
+			return true;
+			break;
 		case YIELD_ORE:
 		case YIELD_SHEEP:
 		case YIELD_CATTLE:
@@ -8497,8 +8540,10 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_BELLS:
 		case YIELD_CROSSES:
 		case YIELD_CULTURE:
-		case YIELD_HEALTH:
+		case YIELD_HEALTH: // R&R, ray, Health - START
 		case YIELD_EDUCATION:
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			FAssertMsg(false, "Selling intangibles?");
 			break;
 		default:
@@ -8710,8 +8755,10 @@ bool CvPlayerAI::AI_isYieldFinalProduct(YieldTypes eYield) const
 		case YIELD_BELLS:
 		case YIELD_CROSSES:
 		case YIELD_CULTURE:
-		case YIELD_HEALTH:
+		case YIELD_HEALTH: // R&R, ray, Health - START
 		case YIELD_EDUCATION:
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			bFinal = false;
 			FAssertMsg(false, "Selling intangibles?");
 			break;
@@ -8795,8 +8842,10 @@ bool CvPlayerAI::AI_shouldBuyFromEurope(YieldTypes eYield) const
 		case YIELD_BELLS:
 		case YIELD_CROSSES:
 		case YIELD_CULTURE:
-		case YIELD_HEALTH:
+		case YIELD_HEALTH: // R&R, ray, Health - START
 		case YIELD_EDUCATION:
+		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+		case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 			bBuy = false;
 			FAssertMsg(false, "Selling intangibles?");
 			break;
@@ -8998,11 +9047,14 @@ int CvPlayerAI::AI_yieldValue(YieldTypes eYield, bool bProduce, int iAmount, boo
 				break;
 			case YIELD_CROSSES:
 			case YIELD_CULTURE:
-			case YIELD_HEALTH:
+			case YIELD_HEALTH: // R&R, ray, Health - START
 			case YIELD_EDUCATION:
+			case YIELD_HAPPINESS: // WTP, ray, Happiness - START
 				iValue *= 100;
 				iValue /= iWeaponsMultiplier;
 				break;
+			case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
+				iValue = 0; // this Yield is just bad, it is never supposed to be created purolsely
 			default:
 			break;
 		}
@@ -9112,6 +9164,8 @@ void CvPlayerAI::AI_updateYieldValues()
 			case YIELD_CULTURE:
 			case YIELD_HEALTH:
 			case YIELD_EDUCATION:
+			case YIELD_HAPPINESS: // WTP, ray, Happiness - START
+			case YIELD_UNHAPPINESS: // WTP, ray, Happiness - START
 				break;
 			default:
 				FAssert(false);
@@ -10361,7 +10415,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			{
 				if (kProfession.canFound())
 				{
-					iValue += 100;
+					iValue += 200; //WTP, ray, Settler Professsion - START
 				}
 			}
 			break;
@@ -10383,13 +10437,23 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 				}
 			}
 			break;
+		// WTP, ray, Native Trade Posts - START
+		case UNITAI_TRADER:
+			{
+				if (kProfession.getNativeTradeRate() > 0)
+				{
+					iValue += kProfession.getNativeTradeRate();
+				}
+			}
+			break;
+
 		case UNITAI_SCOUT:
 			{
 				if (kProfession.isScout())
 				{
-					iValue += 50;
+					iValue += 100;
 				}
-				iValue += 50 * kProfession.getMovesChange();
+				iValue += 20 * kProfession.getMovesChange();
 			}
 			break;
 
@@ -10502,21 +10566,39 @@ ProfessionTypes CvPlayerAI::AI_idealProfessionForUnitAIType(UnitAITypes eUnitAI,
 
 		if (!(kProfession.isCitizen() || kProfession.isWorkPlot()))
 		{
+			//WTP, ray, Settler Professsion - START
 			if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
 			{
-				CvUnit* pUnit = NULL;
-				if (pCity != NULL)
+				//we can only do this, if it is checking for a Unit in a City
+				if (eUnitAI == UNITAI_SETTLER && kProfession.canFound() && pCity != NULL)
 				{
-					pUnit = pCity->getPopulationUnitByIndex(0);
-				}
-				if (pUnit == NULL || pUnit->canHaveProfession(eLoopProfession, true))
-				{
-					int iValue = AI_professionValue(eLoopProfession, eUnitAI);
-
-					if (iValue > iBestValue)
+					//we better check the size of the City
+					//I have no idea, what the population check below in else is supposed to do
+					if (pCity->getPopulation() > 1)
 					{
-						iBestValue = iValue;
+						iBestValue = MAX_INT;
 						eBestProfession = eLoopProfession;
+						break; // do not loop through professions anymore, we already found the best Profession for SETTLER_AI
+					}
+				}
+			
+				else 
+				//WTP, ray, Settler Professsion - END
+				{
+					CvUnit* pUnit = NULL;
+					if (pCity != NULL)
+					{
+						pUnit = pCity->getPopulationUnitByIndex(0);
+					}
+					if (pUnit == NULL || pUnit->canHaveProfession(eLoopProfession, true))
+					{
+						int iValue = AI_professionValue(eLoopProfession, eUnitAI);
+
+						if (iValue > iBestValue)
+						{
+							iBestValue = iValue;
+							eBestProfession = eLoopProfession;
+						}
 					}
 				}
 			}
@@ -10532,7 +10614,9 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 {
 	int iCurrentCount = AI_totalUnitAIs(eUnitAI);
 	int iCount = AI_totalUnitAIs(eUnitAI) + AI_getNumRetiredAIUnits(eUnitAI);
-	int iPopulation = AI_getPopulation() + AI_getNumRetiredAIUnits(UNITAI_MISSIONARY);
+	// WTP, ray, Native Trade Posts - START
+	// adjustment for UNITAI_TRADER
+	int iPopulation = AI_getPopulation() + AI_getNumRetiredAIUnits(UNITAI_MISSIONARY) + AI_getNumRetiredAIUnits(UNITAI_TRADER); 
 	int iValue = 0;
 	switch (eUnitAI)
 	{
@@ -10605,6 +10689,34 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 				}
 			}
 			break;
+
+		// WTP, ray, Native Trade Posts - START
+		case UNITAI_TRADER:
+			if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
+			{
+				int iLowerPop = 12;
+				int iPop = 15 + iCount * 5;
+				int iModifier = 0;
+				iModifier -= getNativeCombatModifier() * 4;
+				iModifier += getNativeTradeModifier();
+				iModifier += 10 * GC.getLeaderHeadInfo(getLeaderType()).getNativeAttitude();
+				iModifier += getNativeTradePostSuccessPercent() - 50;
+				if (iModifier != 0)
+				{
+					iLowerPop *= 100 + std::max(0, -iModifier);
+					iLowerPop /= 100 + std::max(0, iModifier);
+					iPop *= 100 + std::max(0, -iModifier);
+					iPop /= 100 + std::max(0, iModifier);
+				}
+
+				iValue = (100 * std::max(0, iPopulation - (iLowerPop + iPop * iCount))) / iPop;
+				if (iValue > 0)
+				{
+					iValue += 100;
+				}
+			}
+			break;
+		// WTP, ray, Native Trade Posts - END
 
 		case UNITAI_SCOUT:
 			if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
@@ -11059,6 +11171,21 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 			iConModifiers += iModifier / 8;
 		}
 	}
+
+	// WTP, ray, Native Trade Posts - START
+	if (kProfession.getNativeTradeRate() > 0)
+	{
+		int iModifier = kUnit.getNativeTradeRateModifier();
+		if (iModifier > 0)
+		{
+			iProModifiers += iModifier;
+		}
+		else
+		{
+			iConModifiers += iModifier / 8;
+		}
+	}
+	// WTP, ray, Native Trade Posts - EMD
 
 	if (kProfession.getWorkRate() > 0)
 	{
@@ -13829,7 +13956,7 @@ bool CvPlayerAI::AI_advancedStartPlaceCity(CvPlot* pPlot)
 
 	while (iPlotsImproved < iTargetPopulation)
 	{
-		CvPlot* pBestPlot;
+		CvPlot* pBestPlot = NULL;
 		ImprovementTypes eBestImprovement = NO_IMPROVEMENT;
 		int iBestValue = 0;
 		for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -15838,3 +15965,155 @@ bool CvPlayerAI::AI_isLandLocked(bool bIgnoreCultureLock) const
 	return true;
 }
 // TAC - AI City Sites - koma13 - END
+
+// Returns the best price that we can get for the yield considering the export markets available to us
+// TODO: Consider natives, fellow Europeans, internal market, Port Royal
+int CvPlayerAI::AI_getYieldBestExportPrice(YieldTypes eYield) const
+{
+	FAssert(!isNative());
+	FAssert(GC.getYieldInfo(eYield).isCargo());
+
+	PlayerTypes eParent = getParent();
+
+	// This will allow the king to consider his own market for export
+	if (getParent() == NO_PLAYER)
+	{
+		eParent = getID();
+	}
+
+	const CvPlayer& kParent = GET_PLAYER(eParent);
+
+	// Return the max price we would get by selling in the currently AI accessibly ports
+	// WTP, ray, Africa really is a bad decision here for AI. - It is too rare that AI should sail to Africa.
+	// Especially if we only use this to determin the best price of a Yield on CityPlot
+	// return std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+	return kParent.getYieldBuyPrice(eYield);
+}
+
+// TAC - AI City Sites - koma13 - END
+// TAC - AI City Sites - koma13 - END
+
+// Returns true if we should prefer to to hurry a unit rather than buying an equivalent unit
+bool CvPlayerAI::AI_shouldHurryUnit() const
+{
+	// Note: Hurrying is generally better in the early game since the AI economy is not yet sophisticated
+	// enough to be able to properly employ specialists.
+	// Hurrying is also preferable until the cost of hurrying approaches the cost of a free colonist
+	int iEuropeMinBuyCost = INT_MAX;
+	
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	{
+		const UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+		if (eLoopUnit != NO_UNIT)
+		{
+			const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+		
+			// Find the cheapest European unit suitable for any profession that is for sale which cannot escape
+			if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getEuropeCost() > 0 && !kUnitInfo.LbD_canEscape())
+			{
+				if (getEuropeUnitBuyPrice(eLoopUnit) < iEuropeMinBuyCost)
+				{
+					iEuropeMinBuyCost = getEuropeUnitBuyPrice(eLoopUnit);
+				}
+			}
+		}
+	}
+	
+	// If we didn't find a single candidate then something is really wrong!
+	FAssert(iEuropeMinBuyCost != INT_MAX);
+
+	int iEuropeMinHurryCost = INT_MAX;
+	
+	// Find the cost of hurrying the cheapest unit suitable for any profession that cannot escape
+	for (int iIndex = 0; iIndex < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++iIndex)
+	{
+		const int iHurryCost = getHurryGold((HurryTypes)1, iIndex);
+		if (iHurryCost < iEuropeMinHurryCost)
+		{
+			iEuropeMinHurryCost = iHurryCost;
+		}
+	}
+	
+	FAssert(iEuropeMinHurryCost != INT_MAX);
+	return (iEuropeMinHurryCost < iEuropeMinBuyCost);
+}
+
+// Returns the index of the best unit (as in purchase price of an equivalent unit) to hurry 
+int CvPlayerAI::AI_getBestDockUnit() const
+{
+	int iBestIndex = 0;
+	int iBestAdvantage = 0;
+	const int iDockCount = GC.getDefineINT("DOCKS_NEXT_UNITS");
+	
+	// TODO: This needs to be a while loop since the indices are not stable
+	for (int iIndex = 0; iIndex < iDockCount; ++iIndex)
+	{
+		const UnitTypes eLoopUnit = (UnitTypes)getDocksNextUnit(iIndex);
+		
+		// At this point there should always be a unit available
+		FAssert(eLoopUnit != NO_UNIT);
+		
+		const int iHurryCost = getHurryGold((HurryTypes)1, iIndex);
+		
+		const int iUnitCost = getEuropeUnitBuyPrice(eLoopUnit);
+		
+		// Note: unit cost may be negative for units that are available for purchasing though
+		// the absolute value will still indicate the value of the unit
+		const int iHurryCostAdvantage = std::abs(iUnitCost) - iHurryCost;
+		
+		if (iHurryCostAdvantage > iBestAdvantage)
+		{
+			iBestAdvantage = iHurryCostAdvantage;
+			iBestIndex = iIndex;
+		}
+	}
+	
+	return iBestIndex;
+}
+
+// Determine the units on the docks that have the largest cost\value difference and hurry them
+void CvPlayerAI::AI_hurryBestDockUnits(int iHurryCount)
+{
+	if (AI_canHurryDockUnit() && iHurryCount > 0)
+	{
+		// Attempt to fill the rest of our cargo holds with hurried colonists
+		for (int iIndex = 0; iIndex < iHurryCount; iIndex++)
+		{
+			const int index = AI_getBestDockUnit();
+			
+			// Note: Will be false if we can't afford it
+			const bool bCanHurry = canHurry((HurryTypes)1, iIndex);
+			
+			if (bCanHurry)
+			{
+				hurry((HurryTypes)1, iIndex);
+			}
+			else
+			{
+				return;
+			}
+		}
+	}
+}
+
+bool CvPlayerAI::AI_canHurryDockUnit() const
+{
+	FAssert(!isHuman());
+	
+	if (GC.getAI_HURRY_IMMIGRANTS() <= 0)
+	{
+		return false;
+	}
+	
+	if (getParent() == NO_PLAYER)
+	{
+		return false;
+	}
+	
+	if (!canTradeWithEurope())
+	{
+		return false;
+	}
+	
+	return true;
+}

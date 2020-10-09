@@ -86,6 +86,8 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("isExtendedGame", &CyPlayer::isExtendedGame, "bool ()")
 		.def("isFoundedFirstCity", &CyPlayer::isFoundedFirstCity, "bool ()")
 		.def("getID", &CyPlayer::getID, "int ()")
+		.def("getWikiWidget", &CyPlayer::getWikiWidget, "int ()")
+		.def("getChar", &CyPlayer::getChar, "int ()")
 		.def("getHandicapType", &CyPlayer::getHandicapType, "int ()")
 		.def("getCivilizationType", &CyPlayer::getCivilizationType, "int ()")
 		.def("getLeaderType", &CyPlayer::getLeaderType, "int ()")
@@ -113,6 +115,8 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("getChurchFavourPrice", &CyPlayer::getChurchFavourPrice, "int ()") // R&R, ray, Church Favours
 		.def("getYieldRate", &CyPlayer::getYieldRate, "int (YieldTypes eIndex)")
 		.def("getYieldRateModifier", &CyPlayer::getYieldRateModifier, "int (YieldTypes eIndex)")
+		.def("getHappinessRate", &CyPlayer::getHappinessRate, "int ()") // WTP, ray, Happiness - START
+		.def("getUnHappinessRate", &CyPlayer::getUnHappinessRate, "int ()") // WTP, ray, Happiness - START
 		.def("getCapitalYieldRateModifier", &CyPlayer::getCapitalYieldRateModifier, "int (YieldTypes eIndex)")
 		.def("getExtraYieldThreshold", &CyPlayer::getExtraYieldThreshold, "int (YieldTypes eIndex)")
 		.def("isYieldEuropeTradable", &CyPlayer::isYieldEuropeTradable, "bool ()")

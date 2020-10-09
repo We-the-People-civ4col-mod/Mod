@@ -33,6 +33,49 @@ class CvCacheObject;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class CvXMLLoadUtility
 {
+	struct GameTextContainer
+	{
+		CvWString m_Text;
+		CvWString m_Gender;
+		CvWString m_Plural;
+
+		void Read(CvXMLLoadUtility* pXML, const char* szLanguage, bool bUTF8, bool bTranslated, const char* szFileName, const char* szTag);
+	};
+
+	struct GameTextStringKey
+	{
+		GameTextStringKey() : bOptional(false) {};
+
+		bool bOptional;
+		GameTextContainer English;
+		GameTextContainer Translated;
+	};
+
+
+
+	class GameTextList
+	{
+		friend GameTextList;
+
+	public:
+		GameTextContainer* get(std::string);
+
+		GameTextStringKey& init(std::string);
+
+
+		bool readString(const TCHAR* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer);
+		void add(std::string, const GameTextContainer& data);
+		void setAllStrings(GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList);
+
+	private:
+		typedef stdext::hash_map< std::string, GameTextContainer > FGameTextMap;
+		FGameTextMap m_map;
+
+		typedef stdext::hash_map< std::string, GameTextStringKey > GameTextMap;
+		GameTextMap m_list;
+	};
+
+
 //---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
 	// default constructor
@@ -278,7 +321,7 @@ private:
 	//
 	void SetGlobalActionInfo();
 	void SetGlobalAnimationPathInfo(CvAnimationPathInfo** ppAnimationPathInfo, char* szTagName, int* iNumVals);
-	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName);
+	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList);
 
 	// create a keyboard string from a KB code, Delete would be returned for KB_DELETE
 	CvWString CreateKeyStringFromKBCode(const TCHAR* pszHotKey);

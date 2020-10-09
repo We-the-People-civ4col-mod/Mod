@@ -82,6 +82,7 @@ public:
 	int getX();
 	int getY();
 	bool at(int iX, int iY);
+	int getIndex() const;
 	int getLatitude();
 	CyArea* area();
 	CyArea* waterArea();

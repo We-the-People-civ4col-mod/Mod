@@ -170,7 +170,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_IGNORE_DANGER_HELP</Tag>
-        <English>TXT_KEY_COMMAND_COMMAND_IGNORE_DANGER_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_KING_TRANSPORT</Tag>
@@ -471,5 +471,31 @@
         <German>Benutzen Sie Ihre Transporteinheiten, um mit den Einwohnern Handel zu treiben.</German>
         <Italian>Usa il tuo trasporto per commerciare con i locali.</Italian>
         <Spanish>Usad vuestro transporte para comerciar con los lugareños.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_MERGE_TREASURES</Tag>
+        <English>Merge Treasures</English>
+        <French>Merge Treasures</French>
+        <German>Schätze vereinen</German>
+        <Italian>Merge Treasures</Italian>
+        <Spanish>Merge Treasures</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_MERGE_TREASURES_HELP</Tag>
+        <English>Merge the Treasures on Plot to one Unit.</English>
+        <French>Merge the Treasures on Plot to one Unit.</French>
+        <German>Vereine die Schätze auf dem Plot zu einer Einheit</German>
+        <Italian>Merge the Treasures on Plot to one Unit.</Italian>
+        <Spanish>Merge the Treasures on Plot to one Unit.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST</Tag>
+        <English>Establish Trade Post</English>
+        <German>Handelsposten Einrichte</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION_HELP</Tag>
+        <English>Establish a trade post in the village to gradually generate treasures.</English>
+        <German>Eine Handelsposten errichten, um mit Ureinwohner Handel zu treiben und Schätze zu erzeugen</German>
     </TEXT>
 </Civ4GameText>

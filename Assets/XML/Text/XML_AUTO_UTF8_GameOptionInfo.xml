@@ -258,19 +258,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS</Tag>
-        <English>Random settlement areas</English>
+        <English>Random settlement areas of Natives</English>
         <French>Positionnement aléatoires des indigènes</French>
         <German>Beliebige Siedlungsgebiete der Ureinwohner</German>
-        <Italian>Random settlement areas</Italian>
-        <Spanish>Random settlement areas</Spanish>
+        <Italian>Random settlement areas of Natives</Italian>
+        <Spanish>Random settlement areas of Natives</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS_HELP</Tag>
-        <English>Random settlement areas</English>
+        <English>Random settlement areas for Natives instead of using Geographic Correct Placement</English>
         <French>Les indigènes sont placés de manière aléatoire, sans tenir compte de la lattitude.</French>
         <German>Ureinwohnervölker werden auf der Nord-Süd-Achse zufällig und nicht historisch korrekt platziert</German>
-        <Italian>Random settlement areas</Italian>
-        <Spanish>Random settlement areas</Spanish>
+        <Italian>Random settlement areas for Natives instead of using Geographic Correct Placement</Italian>
+        <Spanish>Random settlement areas for Natives instead of using Geographic Correct Placement</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE</Tag>
@@ -287,6 +287,16 @@
         <German>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</German>
         <Italian>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Italian>
         <Spanish>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
+        <English>Only 1 Colonist learning per Native Village</English>
+        <German>Nur 1 Schüler gleichzeitig pro Ureinwohnerdorf</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
+        <English>Only 1 Colonist will be allowed to live and learn in a Native Village at the same time. After he finished the next Colonist can be trained.</English>
+        <German>Nur 1 Kolonist darf zur selben Zeit in einem Unreinwohnerdorft leben und lernen. Der nächste muss warten bis dieser fertig trainiert wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_REDUCED_REF</Tag>

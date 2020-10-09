@@ -27,6 +27,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -64,6 +65,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -101,6 +103,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>250</iAsset>
             <YieldEquipedNums/>
@@ -138,6 +141,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -175,6 +179,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>250</iAsset>
             <YieldEquipedNums/>
@@ -212,6 +217,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -249,6 +255,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -286,6 +293,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -323,6 +331,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -360,6 +369,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -397,6 +407,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -434,6 +445,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -472,6 +484,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -510,6 +523,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -547,6 +561,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -584,6 +599,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -621,6 +637,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -658,6 +675,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -695,6 +713,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -732,6 +751,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>250</iAsset>
             <YieldEquipedNums/>
@@ -769,6 +789,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -806,6 +827,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -843,6 +865,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -880,6 +903,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -917,6 +941,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>250</iAsset>
             <YieldEquipedNums/>
@@ -954,6 +979,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -991,6 +1017,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1028,6 +1055,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1065,6 +1093,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1102,6 +1131,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1139,6 +1169,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1176,6 +1207,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1213,6 +1245,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1251,6 +1284,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1288,6 +1322,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1325,6 +1360,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1362,6 +1398,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1399,6 +1436,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1436,6 +1474,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1473,6 +1512,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1510,6 +1550,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums/>
@@ -1547,6 +1588,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums/>
@@ -1584,6 +1626,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1621,6 +1664,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1658,6 +1702,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums/>
@@ -1695,6 +1740,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums/>
@@ -1732,6 +1778,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>500</iAsset>
             <YieldEquipedNums/>
@@ -1769,6 +1816,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums/>
@@ -1806,6 +1854,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1843,6 +1892,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -1880,6 +1930,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>250</iAsset>
             <YieldEquipedNums/>
@@ -1917,6 +1968,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1955,6 +2007,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -1993,6 +2046,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums/>
@@ -2030,6 +2084,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums/>
@@ -2067,6 +2122,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -2104,6 +2160,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums/>
@@ -2141,6 +2198,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>0</iAsset>
             <YieldEquipedNums/>
@@ -2170,7 +2228,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2178,6 +2236,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>0</iAsset>
             <YieldEquipedNums/>
@@ -2189,6 +2248,61 @@
                 <YieldType>NONE</YieldType>
             </YieldsConsumed>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,7,9</Button>
+            <bUseLbD>0</bUseLbD>
+            <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
+            <iLbDLearnLevel>1</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_SETTLER</Type>
+            <Description>TXT_KEY_PROFESSION_SETTLER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_SETTLER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_SETTLER_HELP</Help>
+            <Combat>UNITCOMBAT_MELEE</Combat>
+            <DefaultUnitAI>UNITAI_SETTLER</DefaultUnitAI>
+            <SpecialBuilding>NONE</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>0</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCityDefender>1</bCityDefender>
+            <bCanFound>1</bCanFound>
+            <bUnarmed>1</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>1</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>200</iAsset>
+            <YieldEquipedNums>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iYieldAmount>30</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_LUMBER</YieldType>
+                    <iYieldAmount>30</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_TOOLS</YieldType>
+                    <iYieldAmount>20</iYieldAmount>
+                </YieldEquipedNum>
+            </YieldEquipedNums>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>NONE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>NONE</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_units.dds,4,6</Button>
             <bUseLbD>0</bUseLbD>
             <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
@@ -2207,7 +2321,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2215,6 +2329,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>25</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums/>
@@ -2227,7 +2342,50 @@
             </YieldsConsumed>
             <Button>,Art/Colonization_Civilizations_Leaders.dds,6,6</Button>
             <bUseLbD>0</bUseLbD>
-            <ExpertUnit>UNITCLASS_COLONIST</ExpertUnit>
+            <ExpertUnit>UNITCLASS_CHRISTIAN_MISSIONARY</ExpertUnit>
+            <iLbDLearnLevel>1</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_NATIVE_TRADER</Type>
+            <Description>TXT_KEY_PROFESSION_NATIVE_TRADER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_NATIVE_TRADER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_NATIVE_TRADER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_NATIVE_TRADER_HELP</Help>
+            <Combat>UNITCOMBAT_MELEE</Combat>
+            <DefaultUnitAI>UNITAI_TRADER</DefaultUnitAI>
+            <SpecialBuilding>NONE</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>0</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>1</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>1</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>25</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>200</iAsset>
+            <YieldEquipedNums>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_TRADE_GOODS</YieldType>
+                    <iYieldAmount>100</iYieldAmount>
+                </YieldEquipedNum>
+            </YieldEquipedNums>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>NONE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>NONE</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,2,16</Button>
+            <bUseLbD>0</bUseLbD>
+            <ExpertUnit>UNITCLASS_EXPERT_TRADER</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -2244,7 +2402,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>1</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>1</iCombatChange>
@@ -2252,6 +2410,7 @@
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>100</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>350</iAsset>
             <YieldEquipedNums>
@@ -2286,7 +2445,7 @@
             <bWater>0</bWater>
             <bScout>1</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>3</iCombatChange>
@@ -2294,8 +2453,9 @@
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>50</iPower>
-            <iAsset>200</iAsset>
+            <iAsset>250</iAsset>
             <YieldEquipedNums>
                 <YieldEquipedNum>
                     <YieldType>YIELD_HORSES</YieldType>
@@ -2336,6 +2496,7 @@
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>100</iPower>
             <iAsset>150</iAsset>
             <YieldEquipedNums/>
@@ -2378,6 +2539,7 @@
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>100</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums>
@@ -2425,6 +2587,7 @@
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>150</iPower>
             <iAsset>200</iAsset>
             <YieldEquipedNums>
@@ -2472,6 +2635,7 @@
             <bMoveIntoPeak>1</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>200</iPower>
             <iAsset>250</iAsset>
             <YieldEquipedNums>
@@ -2502,6 +2666,102 @@
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
+            <Type>PROFESSION_TOWN_GUARD</Type>
+            <Description>TXT_KEY_PROFESSION_TOWN_GUARD</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_TOWN_GUARD_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_TOWN_GUARD_STRATEGY</Strategy>
+            <Help/>
+            <Combat>UNITCOMBAT_MELEE</Combat>
+            <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
+            <SpecialBuilding>NONE</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>0</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCityDefender>1</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>2</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>100</iPower>
+            <iAsset>0</iAsset>
+            <YieldEquipedNums>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLADES</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+            </YieldEquipedNums>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_TOWN_GUARD</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
+            <YieldsProduced>
+                <YieldType>NONE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>NONE</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,5,7</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_VETERAN_TOWN_GUARD</ExpertUnit>
+            <iLbDLearnLevel>1</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
+            <Type>PROFESSION_ROYAL_HALBERDIER</Type>
+            <Description>TXT_KEY_PROFESSION_ROYAL_TOWN_GUARD</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_TOWN_GUARD_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_TOWN_GUARD_STRATEGY</Strategy>
+            <Help/>
+            <Combat>UNITCOMBAT_MELEE</Combat>
+            <DefaultUnitAI>UNITAI_DEFENSIVE</DefaultUnitAI>
+            <SpecialBuilding>NONE</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>0</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCityDefender>1</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>3</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>100</iPower>
+            <iAsset>0</iAsset>
+            <YieldEquipedNums>
+                <YieldEquipedNum>
+                    <YieldType>YIELD_BLADES</YieldType>
+                    <iYieldAmount>50</iYieldAmount>
+                </YieldEquipedNum>
+            </YieldEquipedNums>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_TOWN_GUARD</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
+            <YieldsProduced>
+                <YieldType>NONE</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>NONE</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,8,8</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_ROYAL_HALBERDIER</ExpertUnit>
+            <iLbDLearnLevel>1</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_COLONIAL_MILITIA</Type>
             <Description>TXT_KEY_PROFESSION_COLONIAL_MILITIA</Description>
             <Civilopedia>TXT_KEY_PROFESSION_COLONIAL_MILITIA_PEDIA</Civilopedia>
@@ -2515,7 +2775,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
@@ -2523,6 +2783,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>150</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums>
@@ -2557,14 +2818,15 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
-            <iCombatChange>8</iCombatChange>
+            <iCombatChange>9</iCombatChange>
             <iMovesChange>0</iMovesChange>
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>300</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums>
@@ -2595,7 +2857,7 @@
             </YieldsConsumed>
             <Button>,Art/colonization_atlas_professions_bonus.dds,2,7</Button>
             <bUseLbD>1</bUseLbD>
-            <ExpertUnit>UNITCLASS_VETERAN</ExpertUnit>
+            <ExpertUnit>UNITCLASS_EUROPEAN_LINE_INFANTRY</ExpertUnit>
             <iLbDLearnLevel>1</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
@@ -2612,7 +2874,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
@@ -2620,6 +2882,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>150</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums>
@@ -2654,7 +2917,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>1</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>0</bNoDefensiveBonus>
             <iCombatChange>12</iCombatChange>
@@ -2662,6 +2925,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>300</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums>
@@ -2709,7 +2973,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>7</iCombatChange>
@@ -2717,6 +2981,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>200</iPower>
             <iAsset>300</iAsset>
             <YieldEquipedNums>
@@ -2760,7 +3025,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
@@ -2768,6 +3033,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>200</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums>
@@ -2811,7 +3077,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>8</iCombatChange>
@@ -2819,6 +3085,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>350</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums>
@@ -2862,7 +3129,7 @@
             <bWater>0</bWater>
             <bScout>0</bScout>
             <bCityDefender>0</bCityDefender>
-            <bCanFound>1</bCanFound>
+            <bCanFound>0</bCanFound>
             <bUnarmed>0</bUnarmed>
             <bNoDefensiveBonus>1</bNoDefensiveBonus>
             <iCombatChange>11</iCombatChange>
@@ -2870,6 +3137,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>350</iPower>
             <iAsset>400</iAsset>
             <YieldEquipedNums>
@@ -2921,6 +3189,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>0</iPower>
             <iAsset>100</iAsset>
             <YieldEquipedNums/>
@@ -2958,6 +3227,7 @@
             <bMoveIntoPeak>0</bMoveIntoPeak>
             <iWorkRate>0</iWorkRate>
             <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
             <iPower>00</iPower>
             <iAsset>50</iAsset>
             <YieldEquipedNums/>

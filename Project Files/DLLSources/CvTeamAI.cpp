@@ -917,29 +917,59 @@ int CvTeamAI::AI_endWarVal(TeamTypes eTeam) const
 	}
 }
 
+// eTeam is the team that we're evaluating
 int CvTeamAI::AI_mapTradeVal(TeamTypes eTeam) const
 {
-	CvPlot* pLoopPlot;
-	int iValue;
-	int iI;
+	int iValue = 0;
 
 	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
-
-	iValue = 0;
-
-	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	
+	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
 	{
-		pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		const CvPlot* const pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
+		// If we haven't revealed the plot and the other team has
 		if (!(pLoopPlot->isRevealed(getID(), false)) && pLoopPlot->isRevealed(eTeam, false))
 		{
+			int iBonusMultiplier = 1;
+				
+			const BonusTypes eBonus = pLoopPlot->getBonusType();
+			if (NO_BONUS != eBonus)
+			{
+				// Value plots with bonus resources more
+				iBonusMultiplier = 2;
+			}
+		
+			int iPlotValue = 0;
+
 			if (pLoopPlot->isWater())
 			{
-				iValue++;
+				iPlotValue = 1;
 			}
 			else
 			{
-				iValue += 5;
+				iPlotValue = 5;
+			}
+
+			iValue += (iPlotValue * iBonusMultiplier);
+
+			// This eliminates the possible exploit where the human player would sell their maps
+			// just prior to popping a goodie or visiting a village
+			if (isHuman())
+			{
+				if (!pLoopPlot->isRevealedGoody(getID()) && pLoopPlot->isRevealedGoody(eTeam))
+				{
+					iValue += 250;
+				}
+
+				const CvCity* pCity = pLoopPlot->getPlotCity();
+				if (pCity != NULL)
+				{
+					if (!pCity->isScoutVisited(getID()))
+					{
+						iValue += 50;
+					}
+				}
 			}
 		}
 	}
@@ -953,7 +983,9 @@ int CvTeamAI::AI_mapTradeVal(TeamTypes eTeam) const
 
 	if (isHuman())
 	{
-		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
+		// Human players generally get more value out of map knowledge so
+		// the AI will charge them more for this advantage :P
+		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER")) * 2;
 	}
 	else
 	{
@@ -1082,7 +1114,7 @@ DenialTypes CvTeamAI::AI_makePeaceTrade(TeamTypes ePeaceTeam, TeamTypes eTeam) c
 
 
 	// Erik: If the AI is fighting the revolutionary war it will not consider
-	// making peave before its kings has lost
+	// making peace before its kings has lost
 	
 	if (isInRevolution() && GET_TEAM(ePeaceTeam).hasEuropePlayer())
 	{
@@ -1473,7 +1505,7 @@ DenialTypes CvTeamAI::AI_defensivePactTrade(TeamTypes eTeam) const
 	return NO_DENIAL;
 }
 
-
+// eTeam is the team that we're considering to ally with
 DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 {
 	PROFILE_FUNC();
@@ -1524,6 +1556,11 @@ DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 				}
 			}
 		}
+	}
+
+	if (!GET_TEAM(eTeam).isInRevolution() && GC.getDefineINT("PERMANENT_ALLIANCE_REQUIRES_REVOLUTION"))
+	{
+		return DENIAL_NO_GAIN;
 	}
 
 	return NO_DENIAL;

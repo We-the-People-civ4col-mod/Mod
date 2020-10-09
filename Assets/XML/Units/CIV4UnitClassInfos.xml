@@ -27,6 +27,11 @@
             <DefaultUnit>UNIT_CONVERTED_NATIVE</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_FREED_SLAVE</Type>
+            <Description>TXT_KEY_UNITCLASS_FREED_SLAVE</Description>
+            <DefaultUnit>UNIT_FREED_SLAVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_NATIVE_SLAVE</Type>
             <Description>TXT_KEY_UNITCLASS_NATIVE_SLAVE</Description>
             <DefaultUnit>UNIT_NATIVE_SLAVE</DefaultUnit>
@@ -272,6 +277,16 @@
             <DefaultUnit>UNIT_CHRISTIAN_MISSIONARY</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_FAILED_MISSIONARY</Type>
+            <Description>TXT_KEY_UNITCLASS_FAILED_MISSIONARY</Description>
+            <DefaultUnit>UNIT_FAILED_MISSIONARY</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_EXPERT_TRADER</Type>
+            <Description>TXT_KEY_UNITCLASS_EXPERT_TRADER</Description>
+            <DefaultUnit>UNIT_EXPERT_TRADER</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_NOBLE</Type>
             <Description>TXT_KEY_UNITCLASS_NOBLE</Description>
             <DefaultUnit>UNIT_NOBLE</DefaultUnit>
@@ -310,6 +325,11 @@
             <Type>UNITCLASS_TRAIN</Type>
             <Description>TXT_KEY_UNITCLASS_TRAIN</Description>
             <DefaultUnit>UNIT_TRAIN</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_VETERAN_TOWN_GUARD</Type>
+            <Description>TXT_KEY_UNIT_VETERAN_TOWN_GUARD</Description>
+            <DefaultUnit>UNIT_VETERAN_TOWN_GUARD</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_VETERAN</Type>
@@ -377,6 +397,21 @@
             <DefaultUnit>UNIT_NATIVE_MERC</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_SLAVE</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Description>
+            <DefaultUnit>UNIT_REVOLTING_SLAVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_NATIVE_SLAVE</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_NATIVE_SLAVE</Description>
+            <DefaultUnit>UNIT_REVOLTING_NATIVE_SLAVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_REVOLTING_CRIMINAL</Type>
+            <Description>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Description>
+            <DefaultUnit>UNIT_REVOLTING_CRIMINAL</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_RANGER</Type>
             <Description>TXT_KEY_UNITCLASS_RANGER</Description>
             <DefaultUnit>UNIT_RANGER</DefaultUnit>
@@ -390,6 +425,11 @@
             <Type>UNITCLASS_MOUNTED_CONQUISTADOR</Type>
             <Description>TXT_KEY_UNITCLASS_MOUNTED_CONQUISTADOR</Description>
             <DefaultUnit>UNIT_MOUNTED_CONQUISTADOR</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
+            <Type>UNITCLASS_ROYAL_HALBERDIER</Type>
+            <Description>TXT_KEY_UNIT_ROYAL_HALBERDIER</Description>
+            <DefaultUnit>UNIT_ROYAL_HALBERDIER</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
             <Type>UNITCLASS_ROYAL_LIGHT_INFANTRY</Type>

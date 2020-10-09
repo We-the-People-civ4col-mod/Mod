@@ -214,7 +214,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS_STRATEGY</Tag>
-        <English>????</English>
+        <English>Increase your your conversion of Natives by adding [COLOR_TECH_TEXT]Bartolome de las Casas[COLOR_REVERT] to your colony as a Founding Father. When Bartolome de las Casas joins your colony, all your [COLOR_HIGHLIGHT_TEXT]Missions[COLOR_REVERT] will generate [COLOR_HIGHLIGHT_TEXT]Converted Natives[COLOR_REVERT] at a higher pace. With him an [COLOR_HIGHLIGHT_TEXT]Expert Missionary[COLOR_REVERT] will join your Nation to found another Mission.</English>
+        <French>Increase your your conversion of Natives by adding [COLOR_TECH_TEXT]Bartolome de las Casas[COLOR_REVERT] to your colony as a Founding Father. When Bartolome de las Casas joins your colony, all your [COLOR_HIGHLIGHT_TEXT]Missions[COLOR_REVERT] will generate [COLOR_HIGHLIGHT_TEXT]Converted Natives[COLOR_REVERT] at a higher pace. With him an [COLOR_HIGHLIGHT_TEXT]Expert Missionary[COLOR_REVERT] will join your Nation to found another Mission.</French>
+        <German>Die Konvertierung von Ureinhwohnern nimmt durch den Beitritt von [COLOR_TECH_TEXT]Bartolome de las Casas[COLOR_REVERT] zu den Gründervätern der Nation stark zu. Wenn Bartolome de las Casas der Kolonialnation beitritt, erzeugen [COLOR_HIGHLIGHT_TEXT]Missionen[COLOR_REVERT] viel schneller [COLOR_HIGHLIGHT_TEXT]Konvertierte Ureinwohner[COLOR_REVERT]. Zusätzlich bringt er gleich einen [COLOR_HIGHLIGHT_TEXT]Erfahrenen Missionar[COLOR_REVERT] zur Gründung einer weiteren Mission mit.</German>
+        <Italian>Increase your your conversion of Natives by adding [COLOR_TECH_TEXT]Bartolome de las Casas[COLOR_REVERT] to your colony as a Founding Father. When Bartolome de las Casas joins your colony, all your [COLOR_HIGHLIGHT_TEXT]Missions[COLOR_REVERT] will generate [COLOR_HIGHLIGHT_TEXT]Converted Natives[COLOR_REVERT] at a higher pace. With him an [COLOR_HIGHLIGHT_TEXT]Expert Missionary[COLOR_REVERT] will join your Nation to found another Mission.</Italian>
+        <Spanish>Increase your your conversion of Natives by adding [COLOR_TECH_TEXT]Bartolome de las Casas[COLOR_REVERT] to your colony as a Founding Father. When Bartolome de las Casas joins your colony, all your [COLOR_HIGHLIGHT_TEXT]Missions[COLOR_REVERT] will generate [COLOR_HIGHLIGHT_TEXT]Converted Natives[COLOR_REVERT] at a higher pace. With him an [COLOR_HIGHLIGHT_TEXT]Expert Missionary[COLOR_REVERT] will join your Nation to found another Mission.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_BENJAMIN_LINCOLN</Tag>
@@ -652,53 +656,53 @@
         <Tag>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR_STRATEGY</Tag>
         <English>Bolster your colony's numbers by adopting [COLOR_TECH_TEXT]Diego Velazquez de Cuellar[COLOR_REVERT]. When this Founding Father joins your side, you will immediately receive three free [COLOR_UNIT_TEXT]Indentured Servants[COLOR_REVERT] in your capital!</English>
         <French>Stimuler votre croissance démographique en adoptant [COLOR_TECH_TEXT]Diego Velazquez de Cuellar[COLOR_REVERT]. Lorsque ce Père fondateur rejoint votre colonie, 3 [COLOR_UNIT_TEXT]engagés[COLOR_REVERT] apparaissent immédiatement dans votre capitale !</French>
-        <German>Erhöhen Sie die Einwohnerzahl Ihrer Kolonie, indem Sie [COLOR_TECH_TEXT]Diego VelÃ¡zquez de CuÃ©llar[COLOR_REVERT] zu sich einladen! Wenn dieser Gründervater sich Ihnen anschließt, erhalten Sie in Ihrer Hauptstadt sofort kostenlos drei [COLOR_UNIT_TEXT]Schuldknechte[COLOR_REVERT]!</German>
+        <German>Erhöhen Sie die Einwohnerzahl Ihrer Kolonie, indem Sie [COLOR_TECH_TEXT]Diego Velazquez de Cuellar[COLOR_REVERT] zu sich einladen! Wenn dieser Gründervater sich Ihnen anschließt, erhalten Sie in Ihrer Hauptstadt sofort kostenlos drei [COLOR_UNIT_TEXT]Schuldknechte[COLOR_REVERT]!</German>
         <Italian>Aumenta la popolazione della tua colonia, adottando [COLOR_TECH_TEXT]Diego Velazquez de Cuellar[COLOR_REVERT]. Quando questo Padre Fondatore si unirà alla tua causa, otterrai immediatamente tre [COLOR_UNIT_TEXT]servi per contratto[COLOR_REVERT] gratuiti, nella tua capitale!</Italian>
         <Spanish>Mejorad los números de vuestra colonia con [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT]. Cuando este Padre fundador se una a vuestro bando, recibiréis de inmediato tres [COLOR_UNIT_TEXT]Siervos por deudas[COLOR_REVERT] en la capital.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DE_GRASSE</Tag>
         <English>
-            <Text>François Joseph Paul de Grasse</Text>
+            <Text>Francois Joseph Paul de Grasse</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>François Joseph Paul de Grasse</Text>
+            <Text>Francois Joseph Paul de Grasse</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>François Joseph Paul de Grasse</Text>
+            <Text>Francois Joseph Paul de Grasse</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>François Joseph Paul de Grasse</Text>
+            <Text>Francois Joseph Paul de Grasse</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>François Joseph Paul de Grasse</Text>
+            <Text>Francois Joseph Paul de Grasse</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DE_GRASSE_PEDIA</Tag>
-        <English>[H1]François Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Lived: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]François-Joseph Paul was a French admiral. He is best known for his command of the French fleet at the Battle of the Chesapeake, which led directly to the British surrender at Yorktown.</English>
-        <French>[H1]François Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Dates : [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]François Joseph Paul, marquis de Grasse Tilly, comte de Grasse, né au château des Valettes du Bar (actuellement Le Bar-sur-Loup, Alpes-Maritimes) le 13 septembre 1722 et décédé le 11 janvier 1788 au château de Tilly dans les actuelles Yvelines, est un officier de marine qui sert l'ordre de Saint-Jean de Jérusalem et la Marine royale française. Il assume divers commandement lors de la guerre de Succession d'Autriche et de Sept Ans avant de terminer sa carrière comme lieutenant-général lors de la guerre d'indépendance américaine. [PARAGRAPH:1] Nommé en 1781 commandant de la principale escadre française, son action résolue dans la baie de la Chesapeake permet la victoire décisive de Yorktown. Lourdement battu et capturé en 1782 à la bataille des Saintes, il connait la disgrâce royale jusqu'à sa mort, même si ce combat est sans conséquence sur la suite de la guerre. Les historiens l'ont réhabilité et les marines américaines et françaises donnent régulièrement son nom à de grosses unités de guerre.</French>
-        <German>[H1]François Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]François Joseph Paul de Grasse war ein französischer Admiral, der - obwohl er nicht einmal amerikanischen Boden betreten hat - eine kurze, aber entscheidende Rolle im Amerikanischen Unabhängigkeitskrieg spielte. Der Sieg seiner Flotte über die Royal Navy in der Chesapeake Bay am 5. September 1781 ermöglichte den Fall Yorktowns und trug so entscheidend zur Niederlage der Briten im Revolutionskrieg bei.</German>
-        <Italian>[H1]François Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Vita: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Informazioni:[\BOLD][NEWLINE][TAB]François-Joseph Paul was a French admiral. He is best known for his command of the French fleet at the Battle of the Chesapeake, which led directly to the British surrender at Yorktown.</Italian>
-        <Spanish>[H1]François Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Vivió: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Biografía:[\BOLD][NEWLINE][TAB]François-Joseph Paul was a French admiral. He is best known for his command of the French fleet at the Battle of the Chesapeake, which led directly to the British surrender at Yorktown.</Spanish>
+        <English>[H1]Francois Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Lived: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Francois-Joseph Paul was a French admiral. He is best known for his command of the French fleet at the Battle of the Chesapeake, which led directly to the British surrender at Yorktown.</English>
+        <French>[H1]Francois Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Dates : [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Francois Joseph Paul, marquis de Grasse Tilly, comte de Grasse, né au château des Valettes du Bar (actuellement Le Bar-sur-Loup, Alpes-Maritimes) le 13 septembre 1722 et décédé le 11 janvier 1788 au château de Tilly dans les actuelles Yvelines, est un officier de marine qui sert l'ordre de Saint-Jean de Jérusalem et la Marine royale française. Il assume divers commandement lors de la guerre de Succession d'Autriche et de Sept Ans avant de terminer sa carrière comme lieutenant-général lors de la guerre d'indépendance américaine. [PARAGRAPH:1] Nommé en 1781 commandant de la principale escadre française, son action résolue dans la baie de la Chesapeake permet la victoire décisive de Yorktown. Lourdement battu et capturé en 1782 à la bataille des Saintes, il connait la disgrâce royale jusqu'à sa mort, même si ce combat est sans conséquence sur la suite de la guerre. Les historiens l'ont réhabilité et les marines américaines et françaises donnent régulièrement son nom à de grosses unités de guerre.</French>
+        <German>[H1]Francois Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Francois Joseph Paul de Grasse war ein französischer Admiral, der - obwohl er nicht einmal amerikanischen Boden betreten hat - eine kurze, aber entscheidende Rolle im Amerikanischen Unabhängigkeitskrieg spielte. Der Sieg seiner Flotte über die Royal Navy in der Chesapeake Bay am 5. September 1781 ermöglichte den Fall Yorktowns und trug so entscheidend zur Niederlage der Briten im Revolutionskrieg bei.</German>
+        <Italian>[H1]Francois Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Vita: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Informazioni:[\BOLD][NEWLINE][TAB]Francois-Joseph Paul was a French admiral. He is best known for his command of the French fleet at the Battle of the Chesapeake, which led directly to the British surrender at Yorktown.</Italian>
+        <Spanish>[H1]Francois Joseph Paul de Grasse[\H1][NEWLINE][BOLD]Vivió: [\BOLD]1706-1790[PARAGRAPH:2:1][BOLD]Biografía:[\BOLD][NEWLINE][TAB]Francois-Joseph Paul was a French admiral. He is best known for his command of the French fleet at the Battle of the Chesapeake, which led directly to the British surrender at Yorktown.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DE_GRASSE_STRATEGY</Tag>
-        <English>[COLOR_TECH_TEXT]François Joseph Paul de Grasse[COLOR_REVERT] increase the strength of your military ships to better control the oceans.</English>
-        <French>[COLOR_TECH_TEXT]François Joseph Paul de Grasse[COLOR_REVERT] augmente la puissance de vos navires militaires pour mieux maîtriser les océans.</French>
-        <German>[COLOR_TECH_TEXT]François Joseph Paul de Grasse[COLOR_REVERT] stärkt die Kriegsschiffe und unterstützt damit eine Seekriegsstrategie im Unabhängigkeitskampf.</German>
-        <Italian>[COLOR_TECH_TEXT]François Joseph Paul de Grasse[COLOR_REVERT] increase the strength of your military ships to better control the oceans.</Italian>
-        <Spanish>[COLOR_TECH_TEXT]François Joseph Paul de Grasse[COLOR_REVERT] increase the strength of your military ships to better control the oceans.</Spanish>
+        <English>[COLOR_TECH_TEXT]Francois Joseph Paul de Grasse[COLOR_REVERT] increase the strength of your military ships to better control the oceans.</English>
+        <French>[COLOR_TECH_TEXT]Francois Joseph Paul de Grasse[COLOR_REVERT] augmente la puissance de vos navires militaires pour mieux maîtriser les océans.</French>
+        <German>[COLOR_TECH_TEXT]Francois Joseph Paul de Grasse[COLOR_REVERT] stärkt die Kriegsschiffe und unterstützt damit eine Seekriegsstrategie im Unabhängigkeitskampf.</German>
+        <Italian>[COLOR_TECH_TEXT]Francois Joseph Paul de Grasse[COLOR_REVERT] increase the strength of your military ships to better control the oceans.</Italian>
+        <Spanish>[COLOR_TECH_TEXT]Francois Joseph Paul de Grasse[COLOR_REVERT] increase the strength of your military ships to better control the oceans.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_DOM_PEDRO_I</Tag>
@@ -1259,7 +1263,7 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_PEDIA</Tag>
         <English>[H1]Giovanni da Verrazano[\H1][NEWLINE][BOLD]Lived: [\BOLD]1485-1528[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Giovanni da Verrazano, a Florentine explorer in the employ of Francis I of France, was the first European to ever see the eastern seaboard of North America. His mission - to find a water route to China. Setting sail in 1524, Verrazano explored the territory between Newfoundland and South Carolina, discovering New York Harbor and Cape Fear. He failed in his prescribed mission, to find that ever-elusive "Northwestern Passage" to China, and the French monarchy left Verrazano's discoveries uncolonized, letting what they saw as unprofitable land claims in New York slip into Dutch, and later English, hands.</English>
-        <French>[H1]Jean de Verrazane[\H1][NEWLINE][BOLD]Dates : [\BOLD]1485 - 1528[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Explorateur florentin au service de François Ier, roi de France, Jean de Verrazane fut le premier Européen à voir la côte est de l'Amérique du Nord. Verrazane prend la mer en 1524, avec pour mission de découvrir une route maritime vers la Chine : il explore alors le territoire entre Terre-Neuve et la Caroline du Sud et découvre la baie de New York, ainsi que le cap Fear. Le passage par le Nord-ouest pour rejoindre la Chine reste pourtant introuvable. Pour la monarchie française, la mission est un échec et elle ne prend pas la peine de coloniser les découvertes "sans intérêt" de Verrazane, laissant ainsi les Hollandais, puis les Anglais, s'emparer des territoires de New York.</French>
+        <French>[H1]Jean de Verrazane[\H1][NEWLINE][BOLD]Dates : [\BOLD]1485 - 1528[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Explorateur florentin au service de Francois Ier, roi de France, Jean de Verrazane fut le premier Européen à voir la côte est de l'Amérique du Nord. Verrazane prend la mer en 1524, avec pour mission de découvrir une route maritime vers la Chine : il explore alors le territoire entre Terre-Neuve et la Caroline du Sud et découvre la baie de New York, ainsi que le cap Fear. Le passage par le Nord-ouest pour rejoindre la Chine reste pourtant introuvable. Pour la monarchie française, la mission est un échec et elle ne prend pas la peine de coloniser les découvertes "sans intérêt" de Verrazane, laissant ainsi les Hollandais, puis les Anglais, s'emparer des territoires de New York.</French>
         <German>[H1]Giovanni da Verrazano[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1485 - 1528[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Giovanni da Verrazano, ein Florentiner Entdecker im Dienste Franz I. von Frankreich, sah als erster Europäer die östliche Küste von Nordamerika.Seine Mission bestand darin einen Seeweg nach China zu finden. Er setzte 1524 die Segel und erforschte das Gebiet zwischen Neufundland und Süd-Carolina. Dabei entdeckte er das heutige Hafengebiet von New York sowie Cape Fear. Seine eigentliche Mission, die Entdeckung der sagenhaften "Nordwestpassage" nach China, schlug fehl, und der König von Frankreich geruhte die von Verrazano entdeckten Gebiete nicht zu besiedeln. Die als unrentabel eingestuften Ländereien in New York fielen daher zunächst an Holland und später an die Engländer.</German>
         <Italian>[H1]Giovanni da Verrazzano[\H1][NEWLINE][BOLD]Vita: [\BOLD]1485-1528[PARAGRAPH:2:1][BOLD]Informazioni:[\BOLD][NEWLINE][TAB]Giovanni da Verrazzano, un esploratore fiorentino al servizio di Francesco I di Francia, fu il primo europeo a vedere la costa orientale del Nord America. La sua missione era quella di trovare una rotta per la Cina. Verrazzano salpò nel 1524 ed esplorò il territorio tra Terranova e la Carolina del Sud, scoprendo la baia di New York e Cape Fear. Fallì nella missione che gli era stata assegnata, ovvero di trovare l'elusivo "passaggio nord-orientale" per la Cina, e la monarchia francese non colonizzò le terre da lui scoperte. Lasciò infatti che i diritti territoriali di New York, che considerava poco redditizi, cadessero in mano prima degli olandesi e poi degli inglesi.</Italian>
         <Spanish>[H1]Giovanni da Verrazano[\H1][NEWLINE][BOLD]Vivió: [\BOLD]1485-1528[PARAGRAPH:2:1][BOLD]Biografía:[\BOLD][NEWLINE][TAB]Giovanni da Verrazano, explorador florentino al servicio de Francisco I de Francia, fue el primer europeo en ver el litoral oriental de Norteamérica. Su misión consistía en encontrar una ruta marítima hasta China. Tras hacerse a la mar en 1524, Verrazano exploró el territorio entre Terranova y Carolina del Sur, descubriendo el puerto de Nueva York y Cape Fear. No consiguió realizar la misión que le habían encomendado, encontrar el escurridizo "pasadizo noroccidental" a China, y la monarquía francesa dejó los descubrimientos de Verrazano sin colonizar, permitiendo que, lo que creía que eran concesiones de tierra sin valor en Nueva York, cayeran en manos holandesas y, posteriormente, inglesas.</Spanish>
@@ -1721,41 +1725,41 @@
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Jean de Brébeuf</Text>
+            <Text>Jean de Brebeuf</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Jean de Brébeuf</Text>
+            <Text>Jean de Brebeuf</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Jean de Brébeuf</Text>
+            <Text>Jean de Brebeuf</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Jean de Brébeuf</Text>
+            <Text>Jean de Brebeuf</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JEAN_DE_BREBEUF_PEDIA</Tag>
-        <English>[H1]Jean de Brébeuf[\H1][NEWLINE][BOLD]Lived: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] In 1622 he was ordained. In 1625 he sailed to Canada as a missionary, arriving on June 19, and lived with the Huron natives near Lake Huron, learning their customs and language, of which he became an expert. Because of a war with England, Brebeuf was forced to return to France but when the peace was signed, he returned to the Hurons in 1634. Brebeuf told many of his experiences in Canada in the Jesuit Relations, an invaluable source of early Canadian history. He was head of the Huron mission, a position he relinquished to Father Jerome Lalemant in 1638. His success as a missionary was very slow and it was only in 1635 that he made his first converts. He claimed to have made 14 as of 1635, and as of 1636 he said the number went up 86. The Jesuits were frequently blamed for disasters like epidemics, battle defeats, and crop failures and once Brebeuf was condemned to death and another time beaten. But by 1647 there were thousands of converted Huron.</English>
-        <French>[H1]Jean de Brébeuf[\H1][NEWLINE][BOLD]Dates : [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Ordonné prêtre en 1622, Jean de Brébeuf arriva au Canada en 1625 en tant que missionnaire. Il vivra avec les hurons vivant dans la région du lac éponyme, apprenant leurs traditions et leur langue. En raison d'une guerre avec l'Angleterre, Brébeuf sera contraint à revenir en France, mais une fois la paix revenue, il retournera chez les hurons dès 1634. Brébeuf a raconté nombreuses de ses expériences dans les Relations Jésuites, une source inestimable sur l'Histoire précoce du Canada. Il était à la tête de la mission huron, un position qu'il laissera au Père Jérôme Lalement en 1638. Son succès en tant que missionnaire a été très lent et ce n'est qu'en 1635 qu'il a commencé à faire ses premiers convertis. Il en revendiquait 14 eb 1635, puis 86 l'année suivante. Les hurons accusaient régulièrement les jésuites d'être responsables d'épidémie, de défaite militaire ou de mauvaises récoltes, et Brébeuf sera finalement condamné à mort en 1649. Cependant, dès le milieu du XVIIème siècle, on comptait déjà des milliers de convertis hurons.</French>
-        <German>[H1]Jean de Brébeuf[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Jean de Brébeuf war ein französischer Jesuit, der im Gebiet der Wyandot (Huronen) am Huronsee in Kanada das Evangelium verkündete. 1593 in der Normandie geboren, trat Brébeuf mit 24 Jahren ins Seminar der Jesuiten in Roms ein. Nach seiner Weihe zum Priester reiste er nach Kanada, wo er 1625 in Québec an Land ging. Kurz darauf brach der zum Stamm der Wyandot (Huronen) auf, wo er mit Unterbrechungen - unter anderem durch Kriege Frankreichs gegen England - bis an sein Lebensende verblieb. Er studierte die Sprache und die Sitten der Ureinwohner und galt schon bald als ausgezeichneter Indianer-Experte. Die Missionserfolge entwickelten sich allerdings sehr langsam - und bisweilen auch äusserst brenzlig: Traten unglückliche Ereignisse wie Epidemien, Kriege oder Missernten ein, wurde dies von den Indianern oftmals auf die Präsenz der Jesuiten zurückgeführt. Aufzeichnungen zufolge, konnte Brébeuf in den ersten zehn Jahren gerade mal 14 Ureinwohner zur Konvertierung bewegen. Weitere zehn Jahre später, waren es dann bereits einige Tausend. Brébeuf starb 1649 nach Folterungen am Marterpfahl der Irokesen, nachdem diese bei einem Kampf mit den Wyandot die Missionsstation überfallen hatten.</German>
-        <Italian>[H1]Jean de Brébeuf[\H1][NEWLINE][BOLD]Lived: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] In 1622 he was ordained. In 1625 he sailed to Canada as a missionary, arriving on June 19, and lived with the Huron natives near Lake Huron, learning their customs and language, of which he became an expert. Because of a war with England, Brebeuf was forced to return to France but when the peace was signed, he returned to the Hurons in 1634. Brebeuf told many of his experiences in Canada in the Jesuit Relations, an invaluable source of early Canadian history. He was head of the Huron mission, a position he relinquished to Father Jerome Lalemant in 1638. His success as a missionary was very slow and it was only in 1635 that he made his first converts. He claimed to have made 14 as of 1635, and as of 1636 he said the number went up 86. The Jesuits were frequently blamed for disasters like epidemics, battle defeats, and crop failures and once Brebeuf was condemned to death and another time beaten. But by 1647 there were thousands of converted Huron.</Italian>
-        <Spanish>[H1]Jean de Brébeuf[\H1][NEWLINE][BOLD]Lived: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] In 1622 he was ordained. In 1625 he sailed to Canada as a missionary, arriving on June 19, and lived with the Huron natives near Lake Huron, learning their customs and language, of which he became an expert. Because of a war with England, Brebeuf was forced to return to France but when the peace was signed, he returned to the Hurons in 1634. Brebeuf told many of his experiences in Canada in the Jesuit Relations, an invaluable source of early Canadian history. He was head of the Huron mission, a position he relinquished to Father Jerome Lalemant in 1638. His success as a missionary was very slow and it was only in 1635 that he made his first converts. He claimed to have made 14 as of 1635, and as of 1636 he said the number went up 86. The Jesuits were frequently blamed for disasters like epidemics, battle defeats, and crop failures and once Brebeuf was condemned to death and another time beaten. But by 1647 there were thousands of converted Huron.</Spanish>
+        <English>[H1]Jean de Brebeuf[\H1][NEWLINE][BOLD]Lived: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] In 1622 he was ordained. In 1625 he sailed to Canada as a missionary, arriving on June 19, and lived with the Huron natives near Lake Huron, learning their customs and language, of which he became an expert. Because of a war with England, Brebeuf was forced to return to France but when the peace was signed, he returned to the Hurons in 1634. Brebeuf told many of his experiences in Canada in the Jesuit Relations, an invaluable source of early Canadian history. He was head of the Huron mission, a position he relinquished to Father Jerome Lalemant in 1638. His success as a missionary was very slow and it was only in 1635 that he made his first converts. He claimed to have made 14 as of 1635, and as of 1636 he said the number went up 86. The Jesuits were frequently blamed for disasters like epidemics, battle defeats, and crop failures and once Brebeuf was condemned to death and another time beaten. But by 1647 there were thousands of converted Huron.</English>
+        <French>[H1]Jean de Brebeuf[\H1][NEWLINE][BOLD]Dates : [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Ordonné prêtre en 1622, Jean de Brebeuf arriva au Canada en 1625 en tant que missionnaire. Il vivra avec les hurons vivant dans la région du lac éponyme, apprenant leurs traditions et leur langue. En raison d'une guerre avec l'Angleterre, Brebeuf sera contraint à revenir en France, mais une fois la paix revenue, il retournera chez les hurons dès 1634. Brebeuf a raconté nombreuses de ses expériences dans les Relations Jésuites, une source inestimable sur l'Histoire précoce du Canada. Il était à la tête de la mission huron, un position qu'il laissera au Père Jérôme Lalement en 1638. Son succès en tant que missionnaire a été très lent et ce n'est qu'en 1635 qu'il a commencé à faire ses premiers convertis. Il en revendiquait 14 eb 1635, puis 86 l'année suivante. Les hurons accusaient régulièrement les jésuites d'être responsables d'épidémie, de défaite militaire ou de mauvaises récoltes, et Brebeuf sera finalement condamné à mort en 1649. Cependant, dès le milieu du XVIIème siècle, on comptait déjà des milliers de convertis hurons.</French>
+        <German>[H1]Jean de Brebeuf[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Jean de Brebeuf war ein französischer Jesuit, der im Gebiet der Wyandot (Huronen) am Huronsee in Kanada das Evangelium verkündete. 1593 in der Normandie geboren, trat Brebeuf mit 24 Jahren ins Seminar der Jesuiten in Roms ein. Nach seiner Weihe zum Priester reiste er nach Kanada, wo er 1625 in Québec an Land ging. Kurz darauf brach der zum Stamm der Wyandot (Huronen) auf, wo er mit Unterbrechungen - unter anderem durch Kriege Frankreichs gegen England - bis an sein Lebensende verblieb. Er studierte die Sprache und die Sitten der Ureinwohner und galt schon bald als ausgezeichneter Indianer-Experte. Die Missionserfolge entwickelten sich allerdings sehr langsam - und bisweilen auch äusserst brenzlig: Traten unglückliche Ereignisse wie Epidemien, Kriege oder Missernten ein, wurde dies von den Indianern oftmals auf die Präsenz der Jesuiten zurückgeführt. Aufzeichnungen zufolge, konnte Brebeuf in den ersten zehn Jahren gerade mal 14 Ureinwohner zur Konvertierung bewegen. Weitere zehn Jahre später, waren es dann bereits einige Tausend. Brebeuf starb 1649 nach Folterungen am Marterpfahl der Irokesen, nachdem diese bei einem Kampf mit den Wyandot die Missionsstation überfallen hatten.</German>
+        <Italian>[H1]Jean de Brebeuf[\H1][NEWLINE][BOLD]Lived: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] In 1622 he was ordained. In 1625 he sailed to Canada as a missionary, arriving on June 19, and lived with the Huron natives near Lake Huron, learning their customs and language, of which he became an expert. Because of a war with England, Brebeuf was forced to return to France but when the peace was signed, he returned to the Hurons in 1634. Brebeuf told many of his experiences in Canada in the Jesuit Relations, an invaluable source of early Canadian history. He was head of the Huron mission, a position he relinquished to Father Jerome Lalemant in 1638. His success as a missionary was very slow and it was only in 1635 that he made his first converts. He claimed to have made 14 as of 1635, and as of 1636 he said the number went up 86. The Jesuits were frequently blamed for disasters like epidemics, battle defeats, and crop failures and once Brebeuf was condemned to death and another time beaten. But by 1647 there were thousands of converted Huron.</Italian>
+        <Spanish>[H1]Jean de Brebeuf[\H1][NEWLINE][BOLD]Lived: [\BOLD]1593-1649[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] In 1622 he was ordained. In 1625 he sailed to Canada as a missionary, arriving on June 19, and lived with the Huron natives near Lake Huron, learning their customs and language, of which he became an expert. Because of a war with England, Brebeuf was forced to return to France but when the peace was signed, he returned to the Hurons in 1634. Brebeuf told many of his experiences in Canada in the Jesuit Relations, an invaluable source of early Canadian history. He was head of the Huron mission, a position he relinquished to Father Jerome Lalemant in 1638. His success as a missionary was very slow and it was only in 1635 that he made his first converts. He claimed to have made 14 as of 1635, and as of 1636 he said the number went up 86. The Jesuits were frequently blamed for disasters like epidemics, battle defeats, and crop failures and once Brebeuf was condemned to death and another time beaten. But by 1647 there were thousands of converted Huron.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JEAN_DE_BREBEUF_STRATEGY</Tag>
-        <English>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant towardy your expansion and more willing to teach you their knowledge.</English>
-        <French>Améliorez vos relations avec les indigènes en ralliant [COLOR_TECH_TEXT]Jen de Brébeuf[COLOR_REVERT] à vos Pères Fondateurs. Avec de Brébeuf, les indigènes seront plus tolérants vis-à-vis de votre expansion et plus enclin à vous apprendre leurs connaissances.</French>
-        <German>Wäre es vielleicht weise, wenn Ihr die [COLOR_HIGHLIGHT_TEXT]Beziehungen mit den Eingeborenen[COLOR_REVERT] verbessern und [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] als Gründervater in den Kontinentalkongress berufen würdet, Gouverneur? Die Indianer vertrauen diesem Mann - er könnte die Wilden nachsichtig stimmen und sie zudem ermuntern, ihr Wissen mit uns zu teilen.</German>
-        <Italian>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant towardy your expansion and more willing to teach you their knowledge.</Italian>
-        <Spanish>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant towardy your expansion and more willing to teach you their knowledge.</Spanish>
+        <English>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brebeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant towardy your expansion and more willing to teach you their knowledge.</English>
+        <French>Améliorez vos relations avec les indigènes en ralliant [COLOR_TECH_TEXT]Jen de Brebeuf[COLOR_REVERT] à vos Pères Fondateurs. Avec de Brebeuf, les indigènes seront plus tolérants vis-à-vis de votre expansion et plus enclin à vous apprendre leurs connaissances.</French>
+        <German>Wäre es vielleicht weise, wenn Ihr die [COLOR_HIGHLIGHT_TEXT]Beziehungen mit den Eingeborenen[COLOR_REVERT] verbessern und [COLOR_TECH_TEXT]Jean de Brebeuf[COLOR_REVERT] als Gründervater in den Kontinentalkongress berufen würdet, Gouverneur? Die Indianer vertrauen diesem Mann - er könnte die Wilden nachsichtig stimmen und sie zudem ermuntern, ihr Wissen mit uns zu teilen.</German>
+        <Italian>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brebeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant towardy your expansion and more willing to teach you their knowledge.</Italian>
+        <Spanish>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brebeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant towardy your expansion and more willing to teach you their knowledge.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_JEAN_TALON</Tag>
@@ -3168,35 +3172,35 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE</Tag>
         <English>
-            <Text>René-Robert Cavelier de La Salle</Text>
+            <Text>Rene-Robert Cavelier de La Salle</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>René-Robert Cavelier de La Salle</Text>
+            <Text>Rene-Robert Cavelier de La Salle</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>René-Robert Cavelier de La Salle</Text>
+            <Text>Rene-Robert Cavelier de La Salle</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>René-Robert Cavelier de La Salle</Text>
+            <Text>Rene-Robert Cavelier de La Salle</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>René-Robert Cavelier de La Salle</Text>
+            <Text>Rene-Robert Cavelier de La Salle</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE_PEDIA</Tag>
-        <English>[H1]René-Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Lived: [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]René-Robert Cavelier de La Salle was a French explorer who explored the Great Lakes region, the Mississippi basin and Gulf of Mexico. He traversed the whole Misissippi river down to the Gulf of Mexico, and claimed the land for France and naming it Louisiana, in honor of the French king Louis XIV. La Salle was killed by a mutinious crew member in 1687, while on an expedition to relocate the mouth of the Mississippi river and found a colony there.</English>
-        <French>[H1]René-Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Dates : [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]René-Robert Cavelier de La Salle était un explorateur français qui fit de nombreux voyages dans la région des Grands Lacs, le bassin du Mississippi et le Golfe du Mexique. Il a parcouru l'ensemble du fleuve Mississippi de sa source jusqu'au Golfe du Mexique. Il a revendiqué l'ensemble de ces terres qu'il a nommé Louisiane, en l'honneur du Roi Louix XIV. La Salle a été tué par un équipage en mutinerie en 1687 alors qu'il était à bord d'une expédition pour fonder une nouvelle colonie aux bouches du Mississippi.</French>
+        <English>[H1]Rene-Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Lived: [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Rene-Robert Cavelier de La Salle was a French explorer who explored the Great Lakes region, the Mississippi basin and Gulf of Mexico. He traversed the whole Misissippi river down to the Gulf of Mexico, and claimed the land for France and naming it Louisiana, in honor of the French king Louis XIV. La Salle was killed by a mutinious crew member in 1687, while on an expedition to relocate the mouth of the Mississippi river and found a colony there.</English>
+        <French>[H1]Rene-Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Dates : [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Rene-Robert Cavelier de La Salle était un explorateur français qui fit de nombreux voyages dans la région des Grands Lacs, le bassin du Mississippi et le Golfe du Mexique. Il a parcouru l'ensemble du fleuve Mississippi de sa source jusqu'au Golfe du Mexique. Il a revendiqué l'ensemble de ces terres qu'il a nommé Louisiane, en l'honneur du Roi Louix XIV. La Salle a été tué par un équipage en mutinerie en 1687 alors qu'il était à bord d'une expédition pour fonder une nouvelle colonie aux bouches du Mississippi.</French>
         <German>[H1]Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Robert Cavelier de La Salle war ein französischer Entdecker aus Rouen. Im Alter von 22 Jahren reiste er nach Kanada zu seinem Bruder Jean, einem Priester des Sulpizianerordens. Der Orden überließ ihm ein Stück Land nahe Montreal. Dort errichtete er eine befestigte Siedlung, lernte Sitten und Sprachen der Indianer und betrieb einen Pelzhandel. Auf der Suche nach einem Flusssystem, das in den Pazifik münden sollte, verkaufte er seinen Besitz und erkundete die Ohio-Region. Mit seinem Gönner, dem franz. Gouverneur von Kanada, Louis de Frontenac, zeichnete er verantwortlich für die Gründung von Fort Frontenac und Fort Ontario. Nach einer Reise nach Frankreich erhielt er offiziell vom König den Auftrag, den Westen von Kanada zu erforschen. Für dieses Vorhaben verschuldete er sich über alle Maßen; 1678 kehrte er wieder nach Kanada zurück. Im Jahr 1679 baute er das erste große Segelschiff der Großen Seen. Es sollte ihm durch Handel Geld für neue Exkursionen einbringen, erlitt aber Schiffbruch. 1682 startete er mit Hundeschlitten eine Expedition über den gefrorenen Illinois, erreichte den Mississippi, den er mit Kanus befuhr, und im April 1683 als erster Europäer dessen Mündungsgebiet im Golf von Mexiko. In den Folgejahren versuchte er, das Gebiet entlang des Mississippi dauerhaft durch Siedlungsgründungen für Frankreich zu sichern. Allerdings hatte er viele Neider, trotz oder wegen der Gunst des Königs. Als nächstes versuchte er, das heutige Gebiet von New Orleans von See her zu erreichen, verfehlte es aber und landete 800 km weiter westwärts. Bei seiner letzten großen Reise wurde er von Mitgliedern seiner Expedition ermordet.</German>
         <Italian>[H1]Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Vita: [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Informazioni:[\BOLD][NEWLINE][TAB]Robert Cavelier de La Salle</Italian>
         <Spanish>[H1]Robert Cavelier de La Salle[\H1][NEWLINE][BOLD]Vivió: [\BOLD]1643 - 1687[PARAGRAPH:2:1][BOLD]Biografía:[\BOLD][NEWLINE][TAB]Robert Cavelier de La Salle</Spanish>
@@ -3608,46 +3612,46 @@
     <TEXT>
         <Tag>TXT_KEY_FATHER_TOME_DE_SOUSA</Tag>
         <English>
-            <Text>Tomé de Sousa</Text>
+            <Text>Tome de Sousa</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </English>
         <French>
-            <Text>Tomé de Sousa</Text>
+            <Text>Tome de Sousa</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Tomé de Sousa</Text>
+            <Text>Tome de Sousa</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Tomé de Sousa</Text>
+            <Text>Tome de Sousa</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Tomé de Sousa</Text>
+            <Text>Tome de Sousa</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_TOME_DE_SOUSA_PEDIA</Tag>
-        <English>[H1]Tomé de Sousa[\H1][NEWLINE][BOLD]Lived: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Tomé de Sousa was the first governor-general of the Portuguese colony of Brazil from 1549 to 1553. He was a nobleman and soldier born in Rates, Povoa de Varzim. Sousa was born a half-breed noble and participated in military expeditions in Africa. He was the agent in charge of restoring the king's authority in Brazil. Up until this point, Brazil had been neglected by Portugal, which was putting all of its resources into the spice trade in India. There was a decline in the spice trade and increasing threats around Brazil's borders by the surrounding Spanish colonies, which prompted Portugal to intervene. He brought 1,000 colonists and soldiers with him on an expedition to Brazil, including four hundred degredados - "men banished from Portugal for some minor criminal activity." Among the colonists were six Jesuits, the first in Brazil, whom he assisted in the christianization of the natives and helped to reaffirm the King's rule over the colonies. In terms of his relations with the Indians, he was able to befriend them and to prevent any further hostilities from them, as he proved to enjoy cruel and often extreme punishment.</English>
-        <French>[H1]Tomé de Sousa[\H1][NEWLINE][BOLD]Dates : [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Tomé de Sousa fut un important militaire et politique portugais. Apparenté à la maison royale, d'une famille établie dans la cosmopolite Lisbonne de l'époque. Le fidalgo portugais laissa derrière lui amis, sécurité et confort pour s'aventurer sur une terre sauvage et inconnue où beaucoup déjà ont perdu la vie, victimes d'étranges maladies et, plus rarement, des indigènes.[PARAGRAPH:1]Sa mission : fonder une ville fortifiée dans la région de Bahia, afin d'assurer la domination portugaise sur tout le littoral brésilien alors menacé par des trafiquants français et espagnols ; mais aussi apporter l'appui militaire nécessaire aux provinces données par le roi aux colons, les capitanias hereditárias, contre les invasions et attaques indiennes.[PARAGRAPH:1]Le 7 janvier 1549, Tomé de Sousa est nommé gouverneur général de la province de Bahia et de toutes les autres grâce à ses liens de parenté avec Martim Afonso de Sousa, ami d'enfance du roi Jean III de Portugal. Accompagné des premiers jésuites, il part du Portugal le 2 février 1549. Ils arrivent au Brésil le 27 mars de la même année et fondent la ville de Salvador. Elle fut construite et inaugurée le jour de la Toussaint. Tomé de Sousa avait amené avec lui un document important sur lequel étaient inscrits ses droits et devoirs de gouverneur général tels que défendre le territoire, entrer en contact avec les indigènes et tenter de les évangéliser, explorer le sertão, ou encore veiller aux intérêts économiques de la couronne. Il eut quelques difficultés à installer son gouvernement et entra dans une lutte administrative pour la reconnaissance de son pouvoir. Son mandat prit fin en 1553 et il quitta le Brésil.</French>
-        <German>[H1]Tomé de Sousa[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Tomé de Sousa war der erste Gouverneur der portugiesischen Kolonie in Brasilien, welche er von 1549-1553 regierte. Obwohl von edlem Geblüt, gehörte de Sousa dem niedrigen Adel an und musste sich erst als Kämpfer gegen die nordafrikanischen Mauren sowie als Kommandant von Expeditionen nach Portugiesisch-Indien einen Ruf erarbeiten. Als de Sousa zum Generalgouverneur Brasiliens ernannt wurde, waren diese Kolonien lange vom Mutterland vernachlässigt worden. Die portugiesische Krone hatte praktisch all ihre Kräfte darauf verwendet, den im Niedergang begriffenen Gewürzhandel mit Indien zu stabilisieren. Um die Position Portugals in Brasilien zu sichern, scharte de Sousa rund 1000 Kolonisten und Soldaten zusammen - darunter etliche "Degredados", also wegen kleineren kriminellen Vergehen aus Portugal verbannte Männer. Unter den Einwanderern befanden sich auch sechs Jesuitenmönche, welche als erste Missionare in Brasilien die Christianisierung - und damit auch die Unterwerfung - der Indianer vorantrieben. Das Verhältnis des Gouverneurs de Sousa zu den Eingeborenen scheint trotz der ihm zugeschriebenen Brutalität einigermassen gut gewesen zu sein.</German>
-        <Italian>[H1]Tomé de Sousa[\H1][NEWLINE][BOLD]Lived: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]v de Sousa was the first governor-general of the Portuguese colony of Brazil from 1549 to 1553. He was a nobleman and soldier born in Rates, Povoa de Varzim. Sousa was born a half-breed noble and participated in military expeditions in Africa. He was the agent in charge of restoring the king's authority in Brazil. Up until this point, Brazil had been neglected by Portugal, which was putting all of its resources into the spice trade in India. There was a decline in the spice trade and increasing threats around Brazil's borders by the surrounding Spanish colonies, which prompted Portugal to intervene. He brought 1,000 colonists and soldiers with him on an expedition to Brazil, including four hundred degredados - "men banished from Portugal for some minor criminal activity." Among the colonists were six Jesuits, the first in Brazil, whom he assisted in the christianization of the natives and helped to reaffirm the King's rule over the colonies. In terms of his relations with the Indians, he was able to befriend them and to prevent any further hostilities from them, as he proved to enjoy cruel and often extreme punishment.</Italian>
-        <Spanish>[H1]Tomé de Sousa[\H1][NEWLINE][BOLD]Lived: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Tomé de Sousa was the first governor-general of the Portuguese colony of Brazil from 1549 to 1553. He was a nobleman and soldier born in Rates, Povoa de Varzim. Sousa was born a half-breed noble and participated in military expeditions in Africa. He was the agent in charge of restoring the king's authority in Brazil. Up until this point, Brazil had been neglected by Portugal, which was putting all of its resources into the spice trade in India. There was a decline in the spice trade and increasing threats around Brazil's borders by the surrounding Spanish colonies, which prompted Portugal to intervene. He brought 1,000 colonists and soldiers with him on an expedition to Brazil, including four hundred degredados - "men banished from Portugal for some minor criminal activity." Among the colonists were six Jesuits, the first in Brazil, whom he assisted in the christianization of the natives and helped to reaffirm the King's rule over the colonies. In terms of his relations with the Indians, he was able to befriend them and to prevent any further hostilities from them, as he proved to enjoy cruel and often extreme punishment.</Spanish>
+        <English>[H1]Tome de Sousa[\H1][NEWLINE][BOLD]Lived: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Tome de Sousa was the first governor-general of the Portuguese colony of Brazil from 1549 to 1553. He was a nobleman and soldier born in Rates, Povoa de Varzim. Sousa was born a half-breed noble and participated in military expeditions in Africa. He was the agent in charge of restoring the king's authority in Brazil. Up until this point, Brazil had been neglected by Portugal, which was putting all of its resources into the spice trade in India. There was a decline in the spice trade and increasing threats around Brazil's borders by the surrounding Spanish colonies, which prompted Portugal to intervene. He brought 1,000 colonists and soldiers with him on an expedition to Brazil, including four hundred degredados - "men banished from Portugal for some minor criminal activity." Among the colonists were six Jesuits, the first in Brazil, whom he assisted in the christianization of the natives and helped to reaffirm the King's rule over the colonies. In terms of his relations with the Indians, he was able to befriend them and to prevent any further hostilities from them, as he proved to enjoy cruel and often extreme punishment.</English>
+        <French>[H1]Tome de Sousa[\H1][NEWLINE][BOLD]Dates : [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Biographie :[\BOLD][NEWLINE][TAB]Tome de Sousa fut un important militaire et politique portugais. Apparenté à la maison royale, d'une famille établie dans la cosmopolite Lisbonne de l'époque. Le fidalgo portugais laissa derrière lui amis, sécurité et confort pour s'aventurer sur une terre sauvage et inconnue où beaucoup déjà ont perdu la vie, victimes d'étranges maladies et, plus rarement, des indigènes.[PARAGRAPH:1]Sa mission : fonder une ville fortifiée dans la région de Bahia, afin d'assurer la domination portugaise sur tout le littoral brésilien alors menacé par des trafiquants français et espagnols ; mais aussi apporter l'appui militaire nécessaire aux provinces données par le roi aux colons, les capitanias hereditárias, contre les invasions et attaques indiennes.[PARAGRAPH:1]Le 7 janvier 1549, Tome de Sousa est nommé gouverneur général de la province de Bahia et de toutes les autres grâce à ses liens de parenté avec Martim Afonso de Sousa, ami d'enfance du roi Jean III de Portugal. Accompagné des premiers jésuites, il part du Portugal le 2 février 1549. Ils arrivent au Brésil le 27 mars de la même année et fondent la ville de Salvador. Elle fut construite et inaugurée le jour de la Toussaint. Tome de Sousa avait amené avec lui un document important sur lequel étaient inscrits ses droits et devoirs de gouverneur général tels que défendre le territoire, entrer en contact avec les indigènes et tenter de les évangéliser, explorer le sertão, ou encore veiller aux intérêts économiques de la couronne. Il eut quelques difficultés à installer son gouvernement et entra dans une lutte administrative pour la reconnaissance de son pouvoir. Son mandat prit fin en 1553 et il quitta le Brésil.</French>
+        <German>[H1]Tome de Sousa[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Tome de Sousa war der erste Gouverneur der portugiesischen Kolonie in Brasilien, welche er von 1549-1553 regierte. Obwohl von edlem Geblüt, gehörte de Sousa dem niedrigen Adel an und musste sich erst als Kämpfer gegen die nordafrikanischen Mauren sowie als Kommandant von Expeditionen nach Portugiesisch-Indien einen Ruf erarbeiten. Als de Sousa zum Generalgouverneur Brasiliens ernannt wurde, waren diese Kolonien lange vom Mutterland vernachlässigt worden. Die portugiesische Krone hatte praktisch all ihre Kräfte darauf verwendet, den im Niedergang begriffenen Gewürzhandel mit Indien zu stabilisieren. Um die Position Portugals in Brasilien zu sichern, scharte de Sousa rund 1000 Kolonisten und Soldaten zusammen - darunter etliche "Degredados", also wegen kleineren kriminellen Vergehen aus Portugal verbannte Männer. Unter den Einwanderern befanden sich auch sechs Jesuitenmönche, welche als erste Missionare in Brasilien die Christianisierung - und damit auch die Unterwerfung - der Indianer vorantrieben. Das Verhältnis des Gouverneurs de Sousa zu den Eingeborenen scheint trotz der ihm zugeschriebenen Brutalität einigermassen gut gewesen zu sein.</German>
+        <Italian>[H1]Tome de Sousa[\H1][NEWLINE][BOLD]Lived: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]v de Sousa was the first governor-general of the Portuguese colony of Brazil from 1549 to 1553. He was a nobleman and soldier born in Rates, Povoa de Varzim. Sousa was born a half-breed noble and participated in military expeditions in Africa. He was the agent in charge of restoring the king's authority in Brazil. Up until this point, Brazil had been neglected by Portugal, which was putting all of its resources into the spice trade in India. There was a decline in the spice trade and increasing threats around Brazil's borders by the surrounding Spanish colonies, which prompted Portugal to intervene. He brought 1,000 colonists and soldiers with him on an expedition to Brazil, including four hundred degredados - "men banished from Portugal for some minor criminal activity." Among the colonists were six Jesuits, the first in Brazil, whom he assisted in the christianization of the natives and helped to reaffirm the King's rule over the colonies. In terms of his relations with the Indians, he was able to befriend them and to prevent any further hostilities from them, as he proved to enjoy cruel and often extreme punishment.</Italian>
+        <Spanish>[H1]Tome de Sousa[\H1][NEWLINE][BOLD]Lived: [\BOLD]1503-1579[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Tome de Sousa was the first governor-general of the Portuguese colony of Brazil from 1549 to 1553. He was a nobleman and soldier born in Rates, Povoa de Varzim. Sousa was born a half-breed noble and participated in military expeditions in Africa. He was the agent in charge of restoring the king's authority in Brazil. Up until this point, Brazil had been neglected by Portugal, which was putting all of its resources into the spice trade in India. There was a decline in the spice trade and increasing threats around Brazil's borders by the surrounding Spanish colonies, which prompted Portugal to intervene. He brought 1,000 colonists and soldiers with him on an expedition to Brazil, including four hundred degredados - "men banished from Portugal for some minor criminal activity." Among the colonists were six Jesuits, the first in Brazil, whom he assisted in the christianization of the natives and helped to reaffirm the King's rule over the colonies. In terms of his relations with the Indians, he was able to befriend them and to prevent any further hostilities from them, as he proved to enjoy cruel and often extreme punishment.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_TOME_DE_SOUSA_STRATEGY</Tag>
-        <English>Increase your population by adding [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</English>
-        <French>Augmentez votre population en ajoutant [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] parmi vos Pères Fondateurs. Il apportera de [COLOR_HIGHLIGHT_TEXT]nombreux colons[COLOR_REVERT] avec lui.</French>
-        <German>Käme Euch ein einmaliger Bevölkerungszuwachs in den Kolonien gelegen, Gouverneur? Dann wäre es angebracht, [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] im Kontinentalkongress willkommen zu heissen. Bei seiner Ankunft bringt dieser Gründervater nicht weniger als [COLOR_HIGHLIGHT_TEXT]1 Missionar, 2 Schuldknechte, 2 freie Kolonisten[COLOR_REVERT] sowie [COLOR_HIGHLIGHT_TEXT]1 Einheit Offiziere[COLOR_REVERT] mit.</German>
-        <Italian>Increase your population by adding [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</Italian>
-        <Spanish>Increase your population by adding [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</Spanish>
+        <English>Increase your population by adding [COLOR_TECH_TEXT]Tome de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</English>
+        <French>Augmentez votre population en ajoutant [COLOR_TECH_TEXT]Tome de Sousa[COLOR_REVERT] parmi vos Pères Fondateurs. Il apportera de [COLOR_HIGHLIGHT_TEXT]nombreux colons[COLOR_REVERT] avec lui.</French>
+        <German>Käme Euch ein einmaliger Bevölkerungszuwachs in den Kolonien gelegen, Gouverneur? Dann wäre es angebracht, [COLOR_TECH_TEXT]Tome de Sousa[COLOR_REVERT] im Kontinentalkongress willkommen zu heissen. Bei seiner Ankunft bringt dieser Gründervater nicht weniger als [COLOR_HIGHLIGHT_TEXT]1 Missionar, 2 Schuldknechte, 2 freie Kolonisten[COLOR_REVERT] sowie [COLOR_HIGHLIGHT_TEXT]1 Einheit Offiziere[COLOR_REVERT] mit.</German>
+        <Italian>Increase your population by adding [COLOR_TECH_TEXT]Tome de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</Italian>
+        <Spanish>Increase your population by adding [COLOR_TECH_TEXT]Tome de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA</Tag>
@@ -3868,5 +3872,157 @@
         <German>Gewinnt man die Hilfe von [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT], kann man die Zuckergewinnung deutlich steigern.</German>
         <Italian>Allarga i confini facilmente, convincendo [COLOR_TECH_TEXT]William Brewster[COLOR_REVERT] a unirsi alla tua causa. Prendendo Brewster come Padre Fondatore ridurrai il costo per acquistare la terra dai nativi!</Italian>
         <Spanish>Ampliad vuestras fronteras fácilmente convenciendo a [COLOR_TECH_TEXT]William Brewster[COLOR_REVERT] de que se una a vosotros. Al adoptar a Brewster como Padre fundador, disminuiréis el coste de compra de tierras a los Nativos.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA</Tag>
+        <English>
+            <Text>Herman of Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Herman de Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Herman von Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Herman de Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Herman de Alaska</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA_PEDIA</Tag>
+        <English>[H1]Herman of Alaska[\H1][NEWLINE][BOLD]Lived: [\BOLD]1750 - 1836[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB]Herman of Alaska was a Russian Orthodox monk and missionary to Alaska, which was then part of Russian America. His gentle approach and ascetic life earned him the love and respect of both the native Alaskans and the Russian colonists. He is considered by many Orthodox Christians as the patron saint of North America. [NEWLINE]Herman and the other missionaries encountered a harsh reality at Kodiak that did not correspond to the official Russian descriptions. The native Kodiak population, called "Americans" by the Russian settlers, were subject to harsh treatment by the Russian-American Company, which was being overseen by Shelikhov's manager Alexander Baranov who later became the first governor of the colony. The men were forced to hunt for sea otter even during harsh weather, and women and children were abused. The monks were also shocked at the widespread alcoholism in the Russian population, and the fact that most of the settlers had taken native mistresses. The monks themselves were not given the supplies that Shelikhov promised them, and had to till the ground with wooden implements. Despite these difficulties, the monks managed to baptize over 7,000 natives in the Kodiak region, and set about building a church and monastery.</English>
+        <German>[H1]Herman von Alaska[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1750 - 1836[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB]Herman von Alaska war ein russischer orthodoxer Mönch aus dem Valaam-Kloster in Russland, der 1793 mit acht anderen Mönchen auf die Aleuten zog, um den Ureinwohnern das Evangelium zu bringen. Im Rahmen der russischen Expansion nach Nordamerika hatte es hier seit 1740 Forschungs- und Handelsaktivitäten gegeben. Das Jahr 1793 markiert die Ankunft der Orthodoxen Mission in Nordamerika. Herman baute eine Schule und verteidigte die Ureinwohner gegen Ungerechtigkeiten und Ausbeutung seitens russischer Händler. Er wurde Apa genannt, was Großvater bedeutet. Er verbrachte den Großteil seines Lebens in einer Einsiedelei auf Spruce Island, einer kleinen bewaldteten Insel nahe Kodiak. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_HERMAN_OF_ALASKA_STRATEGY</Tag>
+        <English>Looking improve your relations with [COLOR_HIGHLIGHT_TEXT]Natives[COLOR_REVERT] and improve the [COLOR_HIGHLIGHT_TEXT]Happiness[COLOR_REVERT] of your colonies? Convincing [COLOR_TECH_TEXT]Herman of Alaska[COLOR_REVERT] to join your Continental Congress will improve [COLOR_HIGHLIGHT_TEXT]relations with Natives[COLOR_REVERT] and give [COLOR_HIGHLIGHT_TEXT]Religious Buildings[COLOR_REVERT] a [COLOR_HIGHLIGHT_TEXT]Happiness Bonus[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen[COLOR_REVERT] zu den Ureinwohnern und gleichzeitig die [COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT] ihrer Kolonien verbessern? Wenn Sie [COLOR_TECH_TEXT]Herman von Alaska[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei die [COLOR_HIGHLIGHT_TEXT]Spannungen mit Ureinwohnern[COLOR_REVERT] zu reduzieren [COLOR_HIGHLIGHT_TEXT]Kirchengebäude[COLOR_REVERT] bekommen einen [COLOR_HIGHLIGHT_TEXT]Bonus auf Zufriedenheit[COLOR_REVERT]!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV</Tag>
+        <English>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nikolai Petrowitsch Resanov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV_PEDIA</Tag>
+        <English>[H1]Nikolai Petrowitsch Resanov[\H1][NEWLINE][BOLD]Lived: [\BOLD]1764 - 1807[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] Nikolai Petrowitsch Resanov was a Russian nobleman and statesman who promoted the project of Russian colonization of Alaska and California to three successive Tsars—Catherine the Great, Paul, and Aleksander I. [NEWLINE]Rezanov had just succeeded in persuading Catherine II to sign his charter when she died (1796), forcing him to begin again to obtain a charter from the unbalanced and intractable Tsar Paul I. For a time the outlook appeared hopeless, but Rezanov's skill, subtlety and address prevailed, and he obtained the Tsar's signature to the Ukase of 1799 shortly before the Tsar was assassinated. The Russian-American Company (RAC) was granted a monopoly over the Pacific Northwest coast of North America, from latitude 55 degrees northward, roughly the southern border of Alaska today; and over the chain of islands extending from Kamchatka northward to Alaska and southward to Japan for a period of twenty years. As a civil servant, Rezanov couldn't be directly named a director of the company, so he was officially designated the RAC's High Representative in the Capital.</English>
+        <German>[H1]Nikolai Petrowitsch Resanov[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1764 - 1807[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Nikolai Petrowitsch Resanov war ein russischer Staatsmann und einer der Gründungsinitiatoren der Russisch-Amerikanischen Kompagnie (RAK). [NEWLINE]Am 11. August 1799 brachte er den Zaren dazu, die 1797 eingeleitete Interessenvereinigung der letzten übrig gebliebenen und sich gegenseitig bekämpfenden Pelzhandelsfirmen in Russisch-Amerika und den Kurilen in einem Ukas unter dem Namen einer Monopolgesellschaft, der Russisch-Amerikanischen Kompagnie (RAK), neu zu konstituieren. Am 18. Oktober 1800 stimmte der Zar ebenfalls zu, die Hauptverwaltung der RAK von Irkutsk nach Sankt Petersburg zu verlegen. Das Direktorium der RAK, dem ein Angehöriger der Schelichow-Familie angehören musste, war damit sehr nahe an die eigentlichen Entscheidungsträgern gerückt. Als Alexander I. am 12. März 1801 den Thron bestieg, machte er Resanow zum Mitglied der Finnland-Kommission und beteiligte sich mit weiteren Mitgliedern seiner Familie am Kapital der RAK. Ende 1802 war die Zahl der Aktieninhaber der RAK von 17 auf 400 gestiegen. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_NIKOLAI_REZANOV_STRATEGY</Tag>
+        <English>Looking improve your and make [COLOR_HIGHLIGHT_TEXT]Trade with Natives[COLOR_REVERT] more profitable? Convincing [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] to join your Continental Congress will make your [COLOR_HIGHLIGHT_TEXT]Trade with Natives[COLOR_REVERT] more profitable!</English>
+        <German>Möchten Sie Ihren [COLOR_HIGHLIGHT_TEXT]Handel mit Ureinwohnern[COLOR_REVERT] profitabler gestalten? Wenn Sie [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei den [COLOR_HIGHLIGHT_TEXT]Handel mit Ureinwohnern[COLOR_REVERT] profitabler werden zu lassen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KUSKOV</Tag>
+        <English>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ivan Alexandrovich Kuskov</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KUSKOV_PEDIA</Tag>
+        <English>[H1]Ivan Alexandrovich Kuskov[\H1][NEWLINE][BOLD]Lived: [\BOLD]1765 - 1823[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] Ivan Aleksandrovich Kuskov was the senior assistant to Aleksandr Baranov, the Chief Administrator of the Russian-American Company (RAC). [NEWLINE]He was a native of Totma, Russia, he served in the RAC for 31 years, attaining the rank of Commerce Counselor (12th rank) and being awarded the gold medal "for zealous service" from Emperor Aleksandr I. Between 1808 and 1812 he led five exploratory expeditions to California with the intent of founding an agricultural settlement to supply the northern colonies of Russian America (Alaska). Kuskov, under guidance from Baranov, founded Fortress Ross (present day Fort Ross) in 1812. Kuskov served as Administrator at Fort Ross from 1812 until 1821. In 1819 he was recommended for the Order of St. Vladimir, 4th class, but had not received the award by the time of his death in 1823. After retiring from the RAC he returned to his home town of Totma, in the Vologda province on July 4, 1821, and died in 1823. His house is preserved to this day in Totma as the "Kuskov House Museum", under the direction of the Totma Museum Association, which preserves two original portraits, presumed to have been painted in California of Kuskov and his wife. </English>
+        <German>[H1]Ivan Alexandrovich Kuskov[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1765 - 1823[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Ivan Aleksandrovich Kuskov war ein russischer Seefahrer, Erforscher Alaskas und Nordkaliforniens und Gründer und Regent der ersten russischen Siedlung in Kalifornien. [NEWLINE]Er verbrachte insgesamt 31 Jahre seines Lebens auf Reisen, erforschte dabei Alaska und die ganze Westküste Nordamerikas. Kuskow gründete 1812 in Kalifornien die russische Festung Fort Ross, heute ein US-Nationalpark. Sowohl in Fort Ross, als auch in seiner Heimatstadt Totma in Russland gibt es Kuskow-Museen. Kuskow reiste zum ersten Mal 1790 nach Amerika, nachdem er einen Vertrag mit dem Kaufmann Alexander Andrejewitsch Baranow aus Kargopol (heute Oblast Archangelsk) unterzeichnet hatte. Später wurde Kuskow rechte Hand Baranows und leitete die Russisch-Amerikanische Kompagnie als dessen Stellvertreter. Die russische Regierung zeichnete Kuskow 1804 mit einer Medaille aus. 1806 wurde ihm der Titel des Kommerzialrates verliehen (in Russland hatten zu dieser Zeit nur fünf Personen diesen hohen Titel). Kurz nach seiner Heimkehr aus Amerika 1823 ist er verstorben. Sein Grab befindet sich im Spasso-Sumorin (Heiland-Sumorin) Kloster in der Nähe von Totma. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KUSKOV_STRATEGY</Tag>
+        <English>Looking improve your [COLOR_HIGHLIGHT_TEXT]Food Production[COLOR_REVERT] and make [COLOR_HIGHLIGHT_TEXT]Buying Land from Natives[COLOR_REVERT] cheaper? Convincing [COLOR_TECH_TEXT]Ivan Alexandrovich Kuskov[COLOR_REVERT] to join your Continental Congress will give [COLOR_HIGHLIGHT_TEXT]additional Food in your Cities[COLOR_REVERT] and also lower the price of [COLOR_HIGHLIGHT_TEXT]buying land from Natives[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Nahrungserträge[COLOR_REVERT] verbessern und [COLOR_HIGHLIGHT_TEXT]Landkauf von Ureinwohnern[COLOR_REVERT] günstiger gestalten? Wenn Sie [COLOR_TECH_TEXT]Ivan Alexandrovich Kuskov[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei die [COLOR_HIGHLIGHT_TEXT]Nahrungserträge[COLOR_REVERT] der Kolonien zu erhöhen und [COLOR_HIGHLIGHT_TEXT]Landkauf von Ureinwohnern[COLOR_REVERT] billiger werden zu lassen!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</Tag>
+        <English>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </English>
+        <French>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ivan Fyodorovich Kruzenshtern</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_PEDIA</Tag>
+        <English>[H1]Ivan Fyodorovich Kruzenshtern[\H1][NEWLINE][BOLD]Lived: [\BOLD]1770 - 1846[PARAGRAPH:2:1][BOLD]Background:[\BOLD][NEWLINE][TAB] Ivan Fyodorovich Kruzenshtern was a Baltic German admiral and explorer, who led the first Russian circumnavigation of the globe. [NEWLINE]Krusenstern was born in Hagudi, Harrien, Governorate of Estonia, Russian Empire into a Baltic German family descended from the Swedish aristocratic family von Krusenstjerna, who remained in the province after the country was ceded to Russia. In 1787, he joined the Russian Imperial Navy, and served in the war against Sweden. Subsequently, he served in the Royal Navy between 1793 and 1799, visiting America, India and China.</English>
+        <German>[H1]Ivan Fyodorovich Kruzenshtern[\H1][NEWLINE][BOLD]Lebte: [\BOLD]1770 - 1846[PARAGRAPH:2:1][BOLD]Hintergrund:[\BOLD][NEWLINE][TAB] Ivan Fyodorovich Kruzenshtern war ein deutsch-baltischer Admiral der russischen Flotte und führte die erste russische Weltumseglung durch. [NEWLINE]Krusenstern wurde im Seekadettenkorps in Kronstadt ausgebildet und nahm zwischen 1787 und 1790 an den Kriegen gegen Schweden teil. Er leistete von 1793 bis 1799 Dienst in der britischen Flotte in Nordamerika, Afrika und Asien. Von 1803 bis 1806 war er Leiter der russischen Weltumsegelungsexpedition. </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FATHER_IVAN_KRUZENSHTERN_STRATEGY</Tag>
+        <English>Looking improve your [COLOR_HIGHLIGHT_TEXT]Relations to King and other European[COLOR_REVERT] and get [COLOR_HIGHLIGHT_TEXT]more ships[COLOR_REVERT]? Convincing [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] to join your Continental Congress will improve your [COLOR_HIGHLIGHT_TEXT]Relations to King and other European[COLOR_REVERT] more grant you [COLOR_HIGHLIGHT_TEXT]free Ships[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Great Admiral[COLOR_REVERT]!</English>
+        <German>Möchten Sie Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu König und anderen Europäern[COLOR_REVERT] verbessern [COLOR_HIGHLIGHT_TEXT]mehr Schiffe[COLOR_REVERT] bekommen? Wenn Sie [COLOR_TECH_TEXT]Nikolai Petrowitsch Resanov[COLOR_REVERT] überreden, Ihrem Kontinentalkongress beizutreten, trägt dies stark dazu bei Ihre [COLOR_HIGHLIGHT_TEXT]Beziehungen zu König und anderen Europäern[COLOR_REVERT] zu verbessern und Sie bekommen obendrein einen [COLOR_HIGHLIGHT_TEXT]Großen Admiral[COLOR_REVERT]!</German>
     </TEXT>
 </Civ4GameText>

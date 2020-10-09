@@ -628,7 +628,7 @@
             <iTilesPerGoody>0</iTilesPerGoody>
             <iGoodyRange>0</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>50</iUpgradeTime>
+            <iUpgradeTime>40</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>5</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
@@ -1688,7 +1688,7 @@
             <iTilesPerGoody>0</iTilesPerGoody>
             <iGoodyRange>0</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
-            <iUpgradeTime>0</iUpgradeTime>
+            <iUpgradeTime>30</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>10</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
@@ -1755,7 +1755,7 @@
                 </BonusTypeStruct>
             </BonusTypeStructs>
             <ImprovementPillage/>
-            <ImprovementUpgrade/>
+            <ImprovementUpgrade>IMPROVEMENT_LUMBERMILL</ImprovementUpgrade>
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
@@ -1773,11 +1773,11 @@
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_LUMBER</YieldType>
-                    <iValue>5</iValue>
+                    <iValue>4</iValue>
                 </YieldIntegerPair>
                 <YieldIntegerPair>
                     <YieldType>YIELD_VALUABLE_WOOD</YieldType>
-                    <iValue>5</iValue>
+                    <iValue>4</iValue>
                 </YieldIntegerPair>
             </YieldIncreases>
             <RiverSideYieldChanges/>
@@ -1792,7 +1792,7 @@
             <bGoody>0</bGoody>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
-            <iAdvancedStartCost>24</iAdvancedStartCost>
+            <iAdvancedStartCost>36</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iTilesPerGoody>0</iTilesPerGoody>
             <iGoodyRange>0</iGoodyRange>

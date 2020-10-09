@@ -521,11 +521,25 @@ void CvCity::doTurn()
 		doLbD(); // TAC - LBD - Ray - START
 		doPrices(); // R&R, Androrc Domestic Market
 		doCityHealth(); // R&R, ray, Health
+		// WTP, ray, Happiness - START
+		updateCityHappiness();
+		updateCityUnHappiness();
+		changeCityTimerFestivitiesOrUnrest(-1);
+		doCityHappiness();
+		doCityUnHappiness();
+		// WTP, ray, Happiness - END
 	}
 	
 	doDecay();
 
 	doMissionaries();
+
+	// WTP, ray, Native Trade Posts - START
+	if (isNative())
+	{
+		doNativeTradePost();
+	}
+	// WTP, ray, Native Trade Posts - END
 
 	doRebelSentiment();
 
@@ -556,6 +570,13 @@ void CvCity::doTurn()
 	if (getOccupationTimer() > 0)
 	{
 		changeOccupationTimer(-1);
+		// WTP, ray, Change for Request "Occupation has ended" - START
+		// WTP, ray, if Occupation has ended now, we will send a message that Occupation is over
+		if (isOccupation() == FALSE)
+		{
+			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_OCCUPATION_ENDED", getNameKey()), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+		// WTP, ray, Change for Request "Occupation has ended" - START
 	}
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -2676,7 +2697,7 @@ int CvCity::foodDifference() const
 
 int CvCity::growthThreshold() const
 {
-	return (GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100-getCityHealth()) / 100); // R&R, ray, Health
+	return (GET_PLAYER(getOwnerINLINE()).getGrowthThreshold(getPopulation()) * (100 - getCityHealth() - getCityHappiness() + getCityUnHappiness()) / 100); // R&R, ray, Health // WTP, ray, Happiness - START
 }
 
 int CvCity::productionLeft() const
@@ -3165,6 +3186,22 @@ void CvCity::setGameTurnAcquired(int iNewValue)
 	FAssert(getGameTurnAcquired() >= 0);
 }
 
+// WTP, ray, Native Trade Posts - START
+int CvCity::getNativeTradePostGold() const
+{
+	return m_iTradePostGold;
+}
+
+void CvCity::setNativeTradePostGold(int iNewValue)
+{
+	m_iTradePostGold = iNewValue;
+}
+
+void CvCity::changeNativeTradePostGold(int iChange)
+{
+	setNativeTradePostGold(getNativeTradePostGold() + iChange);
+}
+// WTP, ray, Native Trade Posts - END
 
 int CvCity::getPopulation() const
 {
@@ -6797,6 +6834,12 @@ void CvCity::doYields()
 						iAmount = iAmountForSale;
 					}
 					int iProfit = iAmount * getYieldBuyPrice(eYield);
+
+					// WTP, ray, Happiness - START 
+					int iCityHappinessDomesticMarketGoldModifiers = getCityHappiness() - getCityUnHappiness();
+					iProfit = (iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers)) / 100;
+					// WTP, ray, Happiness - END
+
 					aiYields[eYield] -= iAmount;
 					GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
 					iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
@@ -7378,6 +7421,49 @@ void CvCity::doMissionaries()
 	GET_PLAYER(getOwnerINLINE()).applyMissionaryPoints(this);
 }
 
+// WTP, ray, Native Trade Posts - START
+void CvCity::doNativeTradePost()
+{
+	PlayerTypes ePlayer = getTradePostPlayer();
+	if (ePlayer != NO_PLAYER)
+	{
+		int iNativeTradeModifierNation = 100 + GET_PLAYER(getOwnerINLINE()).getNativeTradeModifier();
+		int iNativeTradeModifierTradePostOwner = 100 + GET_PLAYER(ePlayer).getNativeTradeModifier();
+		int iNativeTradeRateCity = 100 + getNativeTradeRate();
+		int iNativeVillagePopulation = getPopulation();
+		int iGoldPerNative = GC.getTRADE_POST_GOLD_PER_NATIVE();
+
+		int iTotalVillageGold= iNativeVillagePopulation * iGoldPerNative;
+		int iTotalModifier = iNativeTradeRateCity * iNativeTradeModifierNation * iNativeTradeModifierTradePostOwner;
+
+		// calculate fixed gold
+		int calculatedNewGold = (iTotalVillageGold * iTotalModifier) / 100 / 100 / 100;
+		// make a random from double value, because meanvalue should be similar to calculated value
+		int doubleGoldValue = calculatedNewGold * 2;
+		int randomizedGoldToAdd = GC.getGameINLINE().getSorenRandNum(doubleGoldValue, "Randomized Trade Post Gold");
+		changeNativeTradePostGold(randomizedGoldToAdd);
+
+		// now check the gold if it is enough to create a treasure
+		int iCurrentTradePostGold = getNativeTradePostGold();
+		int iThreshold = GC.getMAX_TREASURE_AMOUNT() / 3;
+		
+		if (iCurrentTradePostGold >= iThreshold)
+		{
+			// spawn the Treasure
+			UnitClassTypes eUnitClass = (UnitClassTypes) GC.getDefineINT("TREASURE_UNITCLASS");
+			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
+			CvUnit* pTreasure = GET_PLAYER(ePlayer).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iCurrentTradePostGold);
+			// when we create a treasure, set gold to 0
+			setNativeTradePostGold(0);
+
+			// we send a message now
+			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_CREATED_TREASURE", getNameKey());
+			gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, pTreasure->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+		}
+	}
+	return;
+}
+// WTP, ray, Native Trade Posts - END
 
 // Private Functions...
 
@@ -7402,68 +7488,87 @@ public:
 
 void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& iChosenNumGenerics) const
 {
-	int iNumBuildings;
-	BuildingTypes eCurType;
+	const int iNumBuildings = GC.getNumBuildingInfos();
+
 	std::vector<BuildingTypes> kVisible;
 
-	iNumBuildings = GC.getNumBuildingInfos();
-	for(int i = 0; i < iNumBuildings; i++)
+	for (int i = 0; i < iNumBuildings; i++)
 	{
-		eCurType = (BuildingTypes) i;
-		if(isHasBuilding(eCurType))
+		const BuildingTypes eCurType = (BuildingTypes)i;
+
+		if (!isHasBuilding(eCurType))
+			continue;
+
+		const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eCurType);
+		const bool bNationalWonder = kBuilding.isNationalWonder();
+		const bool bDefense = kBuilding.getDefenseModifier() > 0;
+
+		if (bNationalWonder || bDefense)
 		{
+			// Defensive structures and national wonders are always visible
+			kChosenVisible.push_back(eCurType);
+		}
+		else
+		{
+			// All other buildings are candidates for being non-visible
 			kVisible.push_back(eCurType);
 		}
 	}
 
+	// Unused feature, disabled until we determine if it's useful
+	/*
 	BonusTypes eBonus = plot()->getBonusType();
 	if (eBonus != NO_BONUS)
 	{
-		BuildingTypes eBonusBuilding = (BuildingTypes) GC.getBonusInfo(eBonus).getBuilding();
-		if(eBonusBuilding != NO_BUILDING)
+		BuildingTypes eBonusBuilding = (BuildingTypes)GC.getBonusInfo(eBonus).getBuilding();
+		if (eBonusBuilding != NO_BUILDING)
 		{
 			kVisible.push_back(eBonusBuilding);
 		}
 	}
+	*/
 
 	// sort the visible ones by decreasing priority
-	VisibleBuildingComparator kComp;
+	const VisibleBuildingComparator kComp;
 	std::sort(kVisible.begin(), kVisible.end(), kComp);
 
 	// how big is this city, in terms of buildings?
 	// general rule: no more than fPercentUnique percent of a city can be uniques
 	int iTotalVisibleBuildings;
-	if(stricmp(GC.getDefineSTRING("GAME_CITY_SIZE_METHOD"), "METHOD_EXPONENTIAL") == 0)
+	const static bool bIsExp = !stricmp(GC.getDefineSTRING("GAME_CITY_SIZE_METHOD"), "METHOD_EXPONENTIAL");
+
+	if (bIsExp)
 	{
-		int iCityScaleMod =  ((int)(pow((float)getPopulation(), GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER")))) * 2;
+		const static float fCitySizeExpMod = GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER");
+		int iCityScaleMod = ((int)(pow((float)getPopulation(), fCitySizeExpMod))) * 2;
 		iTotalVisibleBuildings = (10 + iCityScaleMod);
-	} 
-	else 
+	}
+	else
 	{
-		float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
-		float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
-		float fCurSize = (float)getPopulation();
+		const static float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
+		const static float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
+		const float fCurSize = (float)getPopulation();
 		iTotalVisibleBuildings = int(((fHi - fLo) / 50.0f) * fCurSize + fLo);
 	}
-	float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
-	int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
+
+	const static float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
+	const int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
 
 	// compute how many buildings are generics vs. unique Civ buildings?
-	int iNumGenerics;
 	int iNumUniques;
-	if((int)kVisible.size() > iMaxNumUniques)
+	if ((int)kVisible.size() > iMaxNumUniques)
 	{
 		iNumUniques = iMaxNumUniques;
 	}
-	else 
+	else
 	{
 		iNumUniques = kVisible.size();
 	}
-	iNumGenerics = iTotalVisibleBuildings - iNumUniques + getCitySizeBoost();
-	
+	const int iNumGenerics = iTotalVisibleBuildings - iNumUniques + getCitySizeBoost();
+
 	// return
 	iChosenNumGenerics = iNumGenerics;
-	for(int i = 0; i < iNumUniques; i++)
+	for (int i = 0; i < iNumUniques; i++)
 	{
 		kChosenVisible.push_back(kVisible[i]);
 	}
@@ -8869,6 +8974,13 @@ PlayerTypes CvCity::getMissionaryPlayer() const
 	return m_eMissionaryPlayer;
 }
 
+// WTP, ray, Native Trade Posts - START
+PlayerTypes CvCity::getTradePostPlayer() const
+{
+	return m_eTradePostPlayer;
+}
+// WTP, ray, Native Trade Posts - END
+
 CivilizationTypes CvCity::getMissionaryCivilization() const
 {
 	if (getMissionaryPlayer() == NO_PLAYER)
@@ -8878,6 +8990,18 @@ CivilizationTypes CvCity::getMissionaryCivilization() const
 
 	return GET_PLAYER(getMissionaryPlayer()).getCivilizationType();
 }
+
+// WTP, ray, Native Trade Posts - START
+CivilizationTypes CvCity::getTradePostCivilization() const
+{
+	if (getTradePostPlayer() == NO_PLAYER)
+	{
+		return NO_CIVILIZATION;
+	}
+
+	return GET_PLAYER(getTradePostPlayer()).getCivilizationType();
+}
+// WTP, ray, Native Trade Posts - END
 
 void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 {
@@ -8934,6 +9058,64 @@ void CvCity::setMissionaryRate(int iRate)
 {
 	m_iMissionaryRate = iRate;
 }
+
+// WTP, ray, Native Trade Posts - START
+void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
+{
+	if (ePlayer != getTradePostPlayer())
+	{
+		PlayerTypes eOldPlayer = getTradePostPlayer();
+
+		m_eTradePostPlayer = ePlayer;
+
+		if (eOldPlayer != NO_PLAYER)
+		{
+			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
+
+			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			{
+				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				if (kLoopPlayer.isAlive())
+				{
+					if (isRevealed(kLoopPlayer.getTeam(), false))
+					{
+						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), false, false);
+					}
+				}
+			}
+		}
+
+		if (getTradePostPlayer() != NO_CIVILIZATION)
+		{
+			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_ESTABLISHED", getNameKey(), GET_PLAYER(ePlayer).getCivilizationAdjectiveKey());
+
+			for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			{
+				CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+				if (kLoopPlayer.isAlive())
+				{
+					if (isRevealed(kLoopPlayer.getTeam(), false))
+					{
+						gDLL->getInterfaceIFace()->addMessage(kLoopPlayer.getID(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+					}
+				}
+			}
+		}
+
+		setBillboardDirty(true);
+	}
+}
+
+int CvCity::getNativeTradeRate() const
+{
+	return m_iNativeTradeRate;
+}
+
+void CvCity::setNativeTradeRate(int iRate)
+{
+	m_iNativeTradeRate = iRate;
+}
+// WTP, ray, Native Trade Posts - END
 
 // R&R, ray , Stirring Up Natives - START
 bool CvCity::getHasBeenStirredUp() const
@@ -9068,9 +9250,603 @@ void CvCity::changeCityHealth(int iValue)
 
 void CvCity::doCityHealth()
 {	
-		changeCityHealth(getCityHealthChange());
+	changeCityHealth(getCityHealthChange());
 }
 // R&R, ray, Health - END
+
+
+// WTP, ray, Happiness - START
+
+void CvCity::doCityHappiness()
+{	
+	// we do not do this for every tiny village
+	int iMinPopulation = GC.getMIN_POP_NEG_HAPPINESS() * 2;
+	if (getPopulation() < iMinPopulation)
+	{
+		return;
+	}
+
+	// we check the timer to prevent firing this too often
+	int iCurrentTimer = getCityTimerFestivitiesOrUnrest();
+	if (iCurrentTimer > 0)
+	{
+		return;
+	}
+
+	// min Happiness
+	int iHappinessBalance = getCityHappiness() - getCityUnHappiness();
+	int minHappinessForFestivities = GC.getMIN_BALANCE_FESTIVITIES_HAPPINESS();
+
+	// we check if we have the min value of Happiness
+	if (iHappinessBalance < minHappinessForFestivities)
+	{
+		return;
+	}
+
+	// get random values
+	int chanceForFestivities = GC.getBASE_CHANCE_FESTIVITIES_HAPPINESS();
+	chanceForFestivities = chanceForFestivities * iHappinessBalance; // the chances are scaled by Happiness balance
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Festivities Happiness Triggered");
+
+	// random has failed
+	if (chanceForFestivities < randomValue)
+	{
+		return;
+	}
+
+	// first we reset the timer - because we are going to fire
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	int iTimerResetValue = GC.getTIMER_FESTIVITIES_OR_UNRESTS()*gamespeedMod/100;
+	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
+
+	// otherwise we do festivities - which give one of the father point categories by random; 
+	int iMaxFoundingFatherPoints = GC.getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+	int iFoundingFatherPoints = GC.getGameINLINE().getSorenRandNum(iMaxFoundingFatherPoints, "Festivities Happiness Father Points");
+
+	int iNumFatherPointInfos = GC.getNumFatherPointInfos();
+	// we skip fathr points for Exploration - which is 0 that is why we first subract 2 and then add 1
+	int randomFatherCategorySelection = GC.getGameINLINE().getSorenRandNum(iNumFatherPointInfos - 2, "Random Father Point selection");
+	randomFatherCategorySelection = randomFatherCategorySelection + 1;
+	FatherPointTypes ePointType = (FatherPointTypes) randomFatherCategorySelection;
+
+	GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, iFoundingFatherPoints);
+
+	CvWString szBuffer;
+	szBuffer = gDLL->getText("TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS", getNameKey(), iFoundingFatherPoints, GC.getFatherPointInfo(ePointType).getDescription());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(YIELD_CULTURE).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
+
+	return;
+}
+
+void CvCity::doCityUnHappiness()
+{	
+	// we do not do this for AI
+	if(!isHuman())
+	{
+		return;
+	}
+
+	// we do not do this for every tiny village
+	int iMinPopulation = GC.getMIN_POP_NEG_HAPPINESS() * 2;
+	if (getPopulation() < iMinPopulation)
+	{
+		return;
+	}
+
+	// we do not trigger again if already in Occupation
+	if(getOccupationTimer() > 0)
+	{
+		return;
+	}
+
+	// we check the timer to prevent firing this too often
+	int iCurrentTimer = getCityTimerFestivitiesOrUnrest();
+	if (iCurrentTimer > 0)
+	{
+		return;
+	}
+
+	// min Happiness
+	int iUnHappinessBalance = getCityUnHappiness() - getCityHappiness();
+	int minUnHappinessForUnrest = GC.getMIN_BALANCE_UNREST_UNHAPPINESS();
+
+	// we check if we have the min value of Happiness
+	if (iUnHappinessBalance < minUnHappinessForUnrest)
+	{
+		return;
+	}
+
+	// get random values
+	int chanceForUnrest = GC.getBASE_CHANCE_UNREST_UNHAPPINESS();
+	chanceForUnrest = chanceForUnrest * iUnHappinessBalance; // the chances are scaled by UnHappiness balance
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "Unrest UnHappiness");
+
+	// random has failed
+	if (chanceForUnrest < randomValue)
+	{
+		return;
+	}
+
+	// first we reset the timer - because we are going to fire
+	int gamespeedMod = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	int iTimerResetValue = GC.getTIMER_FESTIVITIES_OR_UNRESTS()*gamespeedMod/100;
+	setCityTimerFestivitiesOrUnrest(iTimerResetValue);
+
+	// now we do unrest 
+	int iUnrestTime = GC.getTURNS_UNREST_UNHAPPINESS();
+	setOccupationTimer(iUnrestTime*gamespeedMod/100);
+
+	// add message
+	CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS", getNameKey());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+
+	return;
+}
+
+// basic set and get methods
+int CvCity::getCityHappiness() const
+{
+	return m_iCityHappiness;
+}
+
+void CvCity::setCityHappiness(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityHappiness = iValue;
+}
+
+void CvCity::updateCityHappiness()
+{
+	int iTotalCityHappiness = 0;
+
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
+	// iTotalCityHappiness += calculateNetYield(YIELD_HAPPINESS);
+	iTotalCityHappiness += getBaseRawYieldProduced(YIELD_HAPPINESS);
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
+	iTotalCityHappiness += getHappinessFromCrosses();
+	iTotalCityHappiness += getHappinessFromBells();
+	iTotalCityHappiness += getHappinessFromHealth();
+	iTotalCityHappiness += getHappinessFromCulture();
+	iTotalCityHappiness += getHappinessFromEducation();
+	iTotalCityHappiness += getHappinessFromDomesticDemandsFulfilled();
+	iTotalCityHappiness += getHappinessFromTreaties();
+
+	setCityHappiness(iTotalCityHappiness);
+}
+
+int CvCity::getCityUnHappiness() const
+{
+	return m_iCityUnHappiness;
+}
+
+void CvCity::setCityUnHappiness(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityUnHappiness = iValue;
+}
+
+void CvCity::updateCityUnHappiness()
+{
+	int iTotalCityUnHappiness = 0;
+
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
+	// iTotalCityUnHappiness += calculateNetYield(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	iTotalCityUnHappiness += getBaseRawYieldProduced(YIELD_UNHAPPINESS); // should not exist but in case it ever does
+	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
+	iTotalCityUnHappiness += getUnhappinessFromPopulation();
+	iTotalCityUnHappiness += getUnhappinessFromSlavery(); 
+	iTotalCityUnHappiness += getUnhappinessFromWars();
+	iTotalCityUnHappiness += getUnhappinessFromMissingDefense();
+	iTotalCityUnHappiness += getUnhappinessFromTaxRate();
+
+	setCityUnHappiness(iTotalCityUnHappiness);
+}
+
+// specific computation methods for factors of Unhappiness
+int CvCity::getUnhappinessFromPopulation() const
+{
+	int iUnHapPop = 0;
+	int iPopulation = getPopulation();
+	int iMinPopForHappiness = GC.getMIN_POP_NEG_HAPPINESS();
+
+	// small help for AI
+	if(!isHuman())
+	{
+		iMinPopForHappiness = iMinPopForHappiness*2;
+	}
+
+	iUnHapPop = iPopulation - iMinPopForHappiness;
+
+	// to prevent negative Unhappiness in case we have less pop than min value for neg pop
+	if (iUnHapPop > 0)
+	{
+		return iUnHapPop;
+	}
+
+	return 0;
+}
+
+int CvCity::getUnhappinessFromSlavery() const
+{
+	int iUnHapSlav = 0;
+	for (int i = 0; i < getPopulation(); ++i)
+	{
+		CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+		if (GC.getUnitInfo(pLoopUnit->getUnitType()).LbD_canRevolt())
+		{
+			iUnHapSlav++;
+		}
+	}
+
+	// adjustment for Traits that reduce Unhappiness from Slaves
+	// we only need to check this if we have slaves at all
+	if (iUnHapSlav > 0)
+	{
+		int iTraitUnhappinessSlavesModifier = 0;
+		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+		{
+			if (hasTrait((TraitTypes) iTrait))
+			{
+				CvTraitInfo& kTrait = GC.getTraitInfo((TraitTypes) iTrait);
+				iTraitUnhappinessSlavesModifier += kTrait.getUnhappinessFromSlavesModifier();
+			}
+		}
+		iUnHapSlav = iUnHapSlav * (100 - iTraitUnhappinessSlavesModifier) / 100; // the Modifier in XML is expected to be positive
+	}
+	return iUnHapSlav;
+}
+
+int CvCity::getUnhappinessFromWars() const
+{
+	int iUnHapWar = 0;
+	int iFactorPerWar = GC.getPER_EUROPEAN_AT_WAR_UNHAPPINESS(); 
+	int iNumEuropeanWars = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isAlive())
+		{
+			// we do not count ourselves of course
+			if (iI != GET_TEAM(getTeam()).getID())
+			{
+				// we count teams we are at war with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isAtWar((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
+				{
+					iNumEuropeanWars++;
+				}
+			}
+		}
+	}
+
+	iUnHapWar = iFactorPerWar * iNumEuropeanWars;
+	return iUnHapWar;
+}
+
+int CvCity::getUnhappinessFromMissingDefense() const
+{
+	int iUnHapMissingDef = 0;
+
+	int iPopDefenseDivisor = GC.getPOP_DIVISOR_DEFENSE_UNHAPPINESS(); 
+	// since this is a divisor it may never be 0 - to prevent CTD by messing up XML config
+	if (iPopDefenseDivisor == 0)
+	{
+		iPopDefenseDivisor = 1;
+	}
+
+	int iDefendersNeeded = 0;
+	iDefendersNeeded = getPopulation() / iPopDefenseDivisor;
+	int iDefendersFound = plot()->getNumDefenders(getOwnerINLINE());
+	iUnHapMissingDef = iDefendersNeeded - iDefendersFound;
+
+	// we only have a Unappiness for missing defenders - theoreticyally it is possible that we have more
+	if (iUnHapMissingDef > 0)
+	{
+		return iUnHapMissingDef;
+	}
+	
+	// more defenders than needed does not help
+	return 0;
+}
+
+int CvCity::getUnhappinessFromTaxRate() const
+{
+	int iUnHapTax = 0;
+
+	int iTaxDivisor = GC.getTAX_DIVISOR_UNHAPPINESS(); 
+	// since this is a divisor it may never be 0 - to prevent CTD by messing up XML config
+	if (iTaxDivisor == 0)
+	{
+		iTaxDivisor = 1;
+	}
+
+	int iCurrentTaxRate = GET_PLAYER(getOwnerINLINE()).getTaxRate();
+	iUnHapTax = iCurrentTaxRate / iTaxDivisor;
+
+	// to ensure that small cities are not hit too much by Unhappiness from Taxes
+	if (iUnHapTax > getPopulation())
+	{
+		iUnHapTax = getPopulation();
+	}
+
+	return iUnHapTax;
+}
+
+// specific computation methods for factors of Happiness
+int CvCity::getHappinessFromCrosses() const
+{
+	int iHapCrosses = 0;
+	int iCrosses = calculateNetYield(YIELD_CROSSES);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapCrosses = iCrosses / (iPopulation / iPopDivisor);
+
+	if (iHapCrosses > (iPopulation / iPopDivisor))
+	{
+		iHapCrosses = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapCrosses == 0 && iCrosses > 0)
+	{
+		iHapCrosses = 1;
+	}
+
+	return iHapCrosses;
+}
+
+int CvCity::getHappinessFromBells() const
+{
+	int iHapBells = 0;
+	int iBells = calculateNetYield(YIELD_BELLS);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapBells = iBells / (iPopulation / iPopDivisor);
+
+	if (iHapBells > (iPopulation / iPopDivisor))
+	{
+		iHapBells = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapBells == 0 && iBells > 0)
+	{
+		iHapBells = 1;
+	}
+	return iHapBells;
+}
+
+int CvCity::getHappinessFromHealth() const
+{
+	int iHapHealth = 0;
+	int iHealth = calculateNetYield(YIELD_HEALTH);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapHealth = iHealth / (iPopulation / iPopDivisor);
+	
+	if (iHapHealth > (iPopulation / iPopDivisor))
+	{
+		iHapHealth = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapHealth == 0 && iHealth > 0)
+	{
+		iHapHealth = 1;
+	}
+	return iHapHealth;
+}
+
+int CvCity::getHappinessFromCulture() const
+{
+	int iHapCulture = 0;
+	int iCulture = calculateNetYield(YIELD_CULTURE);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapCulture = iCulture / ((iPopulation / iPopDivisor));
+
+	if (iHapCulture > (iPopulation / iPopDivisor))
+	{
+		iHapCulture = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapCulture == 0 && iCulture > 0)
+	{
+		iCulture = 1;
+	}
+	return iHapCulture;
+}
+
+int CvCity::getHappinessFromEducation() const
+{
+	int iHapEducation = 0;
+	int iEducation = calculateNetYield(YIELD_EDUCATION);
+	int iPopulation = getPopulation();
+	int iPopDivisor = GC.getPOP_DIVISOR_HAPPINESS();
+
+	// to prevent division by 0
+	if (iPopulation == 0)
+	{
+		iPopulation = 1;
+	}
+	if (iPopDivisor == 0)
+	{
+		iPopDivisor = 1;
+	}
+	if ((iPopulation / iPopDivisor) == 0)
+	{
+		iPopulation = 1;
+		iPopDivisor = 1;
+	}
+
+	iHapEducation = iEducation / (iPopulation / iPopDivisor);
+
+	if (iHapEducation > (iPopulation / iPopDivisor))
+	{
+		iHapEducation = (iPopulation / iPopDivisor);
+	}
+	// if we produce a little, we give at least 1 Happiness
+	if (iHapEducation == 0 && iEducation > 0)
+	{
+		iHapEducation = 1;
+	}
+	return iHapEducation;
+}
+
+int CvCity::getHappinessFromDomesticDemandsFulfilled() const
+{
+	int iHapDomesticDemand = 0;
+
+	// loop the Yields and find demand fulfilled
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes) iYield;
+		if (GC.getYieldInfo(eYield).isCargo())
+		{
+			if (getYieldDemand(eYield) > 0 && (getYieldStored(eYield) > 0))
+			{
+				iHapDomesticDemand++;
+			}	
+		}
+	}
+
+	return iHapDomesticDemand;
+}
+
+int CvCity::getHappinessFromTreaties() const
+{
+	// calcuation logic - calculation umber of Open Borders and Defensive Pacts
+	int iNumOpenBorders = 0;
+	int iNumDefensivePacts = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		if (GET_TEAM((TeamTypes)iI).isAlive())
+		{
+			// we do not count ourselves of course
+			if (iI != GET_TEAM(getTeam()).getID())
+			{
+				// we count teams we have opne borders with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isOpenBorders((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
+				{
+					iNumOpenBorders++;
+				}
+
+				// we count teams we a defensive pact with that have European Players - thus we do not count Native-only Teams, Wild Animals, Kings, ...
+				if (GET_TEAM(getTeam()).isDefensivePact((TeamTypes)iI) && GET_TEAM((TeamTypes)iI).hasColonialPlayer())
+				{
+					iNumDefensivePacts++;
+				}
+			}
+		}
+	}
+
+	int iHapTreaties = iNumOpenBorders + iNumDefensivePacts;
+
+	// we give only a max of 5 here - to be considered and checkecked in balanancing
+	/*if (iHapTreaties > 5)
+	{
+		return 5;
+	}*/
+
+	return iHapTreaties;
+}
+
+int CvCity::getCityTimerFestivitiesOrUnrest() const
+{
+	return m_iCityTimerFestivitiesOrUnrest;
+}
+
+void CvCity::setCityTimerFestivitiesOrUnrest(int iValue)
+{
+	if (iValue < 0)
+	{
+		return;
+	}
+
+	m_iCityTimerFestivitiesOrUnrest = iValue;
+}
+
+void CvCity::changeCityTimerFestivitiesOrUnrest(int iValue) 
+{
+	if (getCityTimerFestivitiesOrUnrest() + iValue < 0)
+	{
+		m_iCityTimerFestivitiesOrUnrest = 0;
+		return;
+	}
+
+	m_iCityTimerFestivitiesOrUnrest = m_iCityTimerFestivitiesOrUnrest + iValue;
+}
+
+// WTP, ray, Happiness - END
 
 void CvCity::setTeachUnitMultiplier(int iModifier)
 {
@@ -9264,6 +10040,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 CvUnit* CvCity::ejectBestDefender(CvUnit* pCurrentBest, CvUnit* pAttacker)
 {
+
 	ProfessionTypes eProfession;
 	CvUnit* pDefender = getBestDefender(&eProfession, pCurrentBest, pAttacker);
 
@@ -10140,17 +10917,16 @@ void CvCity::doAutoExport(YieldTypes eYield)
 // auto traderoute - end - Nightinggale
 
 // PatchMod: Achievements START
-bool CvCity::isHasSpecialBuilding(int iValue)
+bool CvCity::isHasSpecialBuilding(int iValue) const
 {
-	bool check = false;
 	for (int iI = 0; iI < GC.getNumBuildingInfos(); iI++)
 	{
 		if (GC.getBuildingInfo((BuildingTypes)iI).getSpecialBuildingType() == iValue && isHasBuilding((BuildingTypes)iI))
 		{
-			check = true;
+			return true;
 		}
 	}
-	return check;
+	return false;
 }
 // PatchMod: Achievements END
 
@@ -10279,14 +11055,44 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	//cases criminal or servant
 	int modcase = convUnit->getUnitInfo().getUnitClassType();
 
-	//default case is servant
-	int mod = mod_serv;
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	// modified code to have specific Units for African Slaves and Native Slaves
+
+	// store the UnitClass and modifier
+	UnitTypes GeneratedUnitType;
+	int mod;
 	
-	// if criminal
-	if (modcase == 2)
+	// convert Unit to Free Unit (Colonist, Freed Slave or Converted Native
+
+	// if CRIMIAL general Default Pop-Unit
+	if (modcase == GC.getDefineINT("UNITCLASS_PRISONER"))
 	{
-		mod = mod_crim;
+		mod = mod_crim; // Criminals are supposed to have a lower chance
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 	}
+
+	// If African Slave generate a Freed Slave
+	else if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	{
+		mod = mod_crim; // we just use the same lower chance as for Criminals
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FREED_SLAVE"));
+	}
+
+	// If Native Slave generate a Converted Native
+	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
+	{
+		mod = mod_crim; // we just use the same lower chance as for Criminals
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_CONVERTED_NATIVE"));
+	}
+
+	//default case is servant (and potential others to be configured)
+	else
+	{
+		mod = mod_serv; // Servants are supposed to have a higher chance
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+	}
+
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	int calculatedChance = (base + (workedRounds - pre_rounds) * increase * l_level * mod);
 	
@@ -10300,19 +11106,16 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 		return false;
 	}
 	
-	// convert Unit to Free Settler
-	UnitTypes DefaultUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
-	FAssert(DefaultUnitType != NO_UNIT);
+	// spawn the Unit
 	//ray16
-	CvUnit* DefaultUnit = GET_PLAYER(getOwnerINLINE()).initUnit(DefaultUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
-	FAssert(DefaultUnit != NULL);
+	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
+	FAssert(GeneratedUnit != NULL);
 	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
-	DefaultUnit->convert(convUnit, true);
-	//addPopulationUnit(DefaultUnit, NO_PROFESSION);
+	GeneratedUnit->convert(convUnit, true);
 	// AddMessage
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
 	//Ende ray16
-	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, DefaultUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GeneratedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
 
 	return true;
 }
@@ -10357,8 +11160,8 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	const TCHAR* buttonStringForMessage = convUnit->getButton();
 
-	// R&R, ray, Fleeing Units
-	createFleeingUnit(convUnit->getUnitType());
+	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
+	createFleeingUnit(convUnit->getUnitType(), false);
 
 	//Unit is then simply destroyed
 	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
@@ -10372,6 +11175,79 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 
 	return true;
 }
+
+// WTP, ray, LbD Slaves Revolt and Free - START
+bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave) 
+{	
+	//Feature deactivated for KI
+	if (!isHuman()) {
+		return false;
+	}
+
+	// do not use feature if City Population = 1, because might destroy city
+	if (getPopulation() == 1)
+	{
+		return false;
+	}
+
+	//cases criminal or slave
+	int modcase = convUnit->getUnitInfo().getUnitClassType();
+
+	//default case is Criminal - also if we ever have something else
+	int mod;
+	UnitTypes GeneratedUnitType;
+	
+	// if African Slave
+	if (modcase == GC.getDefineINT("UNITCLASS_AFRICAN_SLAVE"))
+	{
+		mod = mod_slave;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_SLAVE"));
+	}
+	// if Native Slave
+	//default case is Criminal - also if we ever have something else
+	else if (modcase == GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"))
+	{
+		mod = mod_slave;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_NATIVE_SLAVE"));
+	}
+	//default case is Criminal - also if we ever have something else
+	else
+	{
+		mod = mod_crim;
+		GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_CRIMINAL"));
+	}
+
+	// get chance and random value
+	int calculatedChance = (base * mod);
+	int randomValue = GC.getGameINLINE().getSorenRandNum(1000, "LbD Revolt Slave");
+	
+	// no Success if randomValue larger calculatedChance
+	if (randomValue > calculatedChance)
+	{
+		return false;
+	}
+
+	// get Button of the Unit from UnitType for message
+	// Test um Bug zu finden
+	// CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).getUnit(GeneratedUnitType);
+	// const TCHAR* buttonStringForMessage = GeneratedUnit->getButton();
+	const TCHAR* buttonStringForMessage = convUnit->getButton();
+
+	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
+	// Test um Bug zu finden
+	createFleeingUnit(GeneratedUnitType, true);
+
+	//Unit is then simply destroyed
+	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	convUnit->kill(false);
+	
+	// AddMessage
+	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_REVOLT", getNameKey());
+	gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, buttonStringForMessage, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), getX_INLINE(), getY_INLINE(), true, true);
+
+	return true;
+}
+// WTP, ray, LbD Slaves Revolt and Free - END
 
 void CvCity::doLbD()
 {	
@@ -10390,6 +11266,12 @@ void CvCity::doLbD()
 	int mod_escape_criminal = GC.getLBD_CHANCE_MOD_ESCAPE_CRIMINAL();
 	int mod_escape_servant = GC.getLBD_CHANCE_MOD_ESCAPE_SERVANT();
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	int base_chance_revolt = GC.getLBD_CHANCE_REVOLT();
+	int mod_revolt_slave = GC.getLBD_CHANCE_MOD_REVOLT_SLAVE();
+	int mod_revolt_criminal = GC.getLBD_CHANCE_MOD_REVOLT_CRIMINAL();
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	//getting GameSpeedModifiert in percent
 	int train_percent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 
@@ -10400,6 +11282,33 @@ void CvCity::doLbD()
 	chance_increase_free = chance_increase_free / train_percent / 100;
 	pre_rounds_free = pre_rounds_free * train_percent / 100;
 
+	// WTP, ray, Happiness - START
+	// we now calculate and apply Happiness vs. Unhappiness on it
+	int iCityHappiness = getCityHappiness();
+	int iCityUnHappiness = getCityUnHappiness();
+
+	// this is the percentage rate we apply for positive features - it may become negative but that is intended
+	int iPosHappinessBalance = iCityHappiness - iCityUnHappiness;
+
+	// become expert Happiness vs Unhappiness modification
+	base_chance_expert = base_chance_expert + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	chance_increase_expert = chance_increase_expert + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	pre_rounds_expert = pre_rounds_expert * (100 - iPosHappinessBalance) / 100; // pre rounds experts is shortened
+
+	// become free Happiness vs Unhappiness modification
+	base_chance_free = base_chance_free + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	chance_increase_free = chance_increase_free + (iPosHappinessBalance / 5); // chances are increased for positive values iPosHappinessBalance, decreased for negative values iPosHappinessBalance
+	pre_rounds_free = pre_rounds_free * (100 - iPosHappinessBalance) / 100; // pre rounds free is shortened
+
+	// this is the percentage rate we apply for negative features - it may become negative but that is intended
+	int iNegHappinessBalance = iCityUnHappiness - iCityHappiness;
+
+	// escape and revolt Unhappiness vs Happiness modification
+	base_chance_escape = base_chance_escape + (iNegHappinessBalance / 5); // chances are increased for positive values iNegHappinessBalance, decreased for negative values iNegHappinessBalance
+	base_chance_revolt = base_chance_revolt + (iNegHappinessBalance / 5); // chances are increased for positive values iNegHappinessBalance, decreased for negative values iNegHappinessBalance
+
+	// WTP, ray, Happiness - END
+
 	// loop through units
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
@@ -10408,6 +11317,7 @@ void CvCity::doLbD()
 		bool lbd_expert_successful = false;
 		bool lbd_free_successful = false;
 		bool lbd_escape_successful = false;
+		bool lbd_revolt_successful = false; // WTP, ray, LbD Slaves Revolt and Free - START
 		
 
 		// only do something for this unit if the profession does use LbD
@@ -10439,6 +11349,14 @@ void CvCity::doLbD()
 			{
 				lbd_escape_successful = LbD_try_escape(pLoopUnit, base_chance_escape, mod_escape_criminal, mod_escape_servant);
 			}
+
+			// WTP, ray, LbD Slaves Revolt and Free - START
+			// try to revolt if escape revolt possible and free unsuccessful and escape unsuccessufl
+			if(pLoopUnit->getUnitInfo().LbD_canRevolt() && !lbd_escape_successful && !lbd_free_successful && !lbd_expert_successful)
+			{
+				lbd_revolt_successful = LbD_try_revolt(pLoopUnit, base_chance_revolt, mod_revolt_criminal, mod_revolt_slave);
+			}
+			// WTP, ray, LbD Slaves Revolt and Free - END
 
 		}
 		
@@ -11008,7 +11926,8 @@ bool CvCity::isCustomHouseNeverSell(YieldTypes eYield) const
 // R&R, ray, finishing Custom House Screen END
 
 // R&R, ray, Fleeing Units - START
-void CvCity::createFleeingUnit(UnitTypes eUnit)
+// WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
+void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 {
 
 	if (GC.getGameINLINE().getBarbarianPlayer() == NO_PLAYER)
@@ -11041,10 +11960,19 @@ void CvCity::createFleeingUnit(UnitTypes eUnit)
 		}
 	}
 
-	// init fleeing Unit
+	// init fleeing or revolting Unit
 	if (pBestPlot != NULL)
 	{
-		CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), UNITAI_FLEEING);
+		// Fleeing AI
+		if (bDefautAI == false)
+		{
+			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), UNITAI_FLEEING);
+		}
+		//Default AI
+		else
+		{
+			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), NO_UNITAI);
+		}
 	}
 }
 // R&R, ray, Fleeing Units - END
@@ -11076,6 +12004,8 @@ void CvCity::doEntertainmentBuildings()
 	}
 
 	int iGoldthroughCulture = iCulturePerTurn +  ((iCulturePerTurn * factorFromBuildingLevel) / 2); // 50 percent extra for each level
+	iGoldthroughCulture = iGoldthroughCulture * (100 + getCityHappiness() - getCityUnHappiness()) / 100; // WTP, ray, Happiness - START
+
 	if (highestLevelEntertainmentBuilding != NO_BUILDING && iGoldthroughCulture > 0)
 	{
 		GET_PLAYER(getOwnerINLINE()).changeGold(iGoldthroughCulture);

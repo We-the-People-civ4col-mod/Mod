@@ -311,6 +311,8 @@ void CyEnumsPythonInterface()
 		.value("WIDGET_CITY_CENTER_PLOT", WIDGET_CITY_CENTER_PLOT)
 		.value("WIDGET_HELP_TEXT", WIDGET_HELP_TEXT)
 		.value("WIDGET_NETWORK_DESYNC", WIDGET_NETWORK_DESYNC)
+		.value("WIDGET_JUMP_TO_SETTLEMENT", WIDGET_JUMP_TO_SETTLEMENT)
+		.value("WIDGET_MISSION_CHAR", WIDGET_MISSION_CHAR)
 		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
 		;
 	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")
@@ -457,6 +459,8 @@ void CyEnumsPythonInterface()
 		.value("YIELD_CULTURE", YIELD_CULTURE)
 		.value("YIELD_HEALTH", YIELD_HEALTH)
 		.value("YIELD_EDUCATION", YIELD_EDUCATION)
+		.value("YIELD_HAPPINESS", YIELD_HAPPINESS) // WTP, ray, Happiness - START
+		.value("YIELD_UNHAPPINESS", YIELD_UNHAPPINESS) // WTP, ray, Happiness - START
 		.value("NUM_YIELD_TYPES", NUM_YIELD_TYPES)
 		;
 	python::enum_<EmphasizeTypes>("EmphasizeTypes")
@@ -483,6 +487,8 @@ void CyEnumsPythonInterface()
 		.value("GAMEOPTION_NO_MORE_VARIABLES_HIDDEN", GAMEOPTION_NO_MORE_VARIABLES_HIDDEN)	// R&R, Robert Surcouf, No More Variables Hidden game option
 		.value("GAMEOPTION_NO_WILD_LAND_ANIMALS", GAMEOPTION_NO_WILD_LAND_ANIMALS) // < JAnimals Mod Start >
 		.value("GAMEOPTION_NO_WILD_SEA_ANIMALS", GAMEOPTION_NO_WILD_SEA_ANIMALS) // < JAnimals Mod Start >
+		.value("GAMEOPTION_REDUCED_CITY_DISTANCE", GAMEOPTION_REDUCED_CITY_DISTANCE) /// reduced city distance - Nightinggale
+		.value("GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE", GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE) // WTP, ray, Game Option only 1 Colonist living in Village - START
 		.value("NUM_GAMEOPTION_TYPES", NUM_GAMEOPTION_TYPES)
 		;
 	python::enum_<MultiplayerOptionTypes>("MultiplayerOptionTypes")
@@ -837,6 +843,7 @@ void CyEnumsPythonInterface()
 		.value("UNITAI_SETTLER", UNITAI_SETTLER)
 		.value("UNITAI_WORKER", UNITAI_WORKER)
 		.value("UNITAI_MISSIONARY", UNITAI_MISSIONARY)
+		.value("UNITAI_TRADER", UNITAI_TRADER) // WTP, ray, Native Trade Posts - START
 		.value("UNITAI_SCOUT", UNITAI_SCOUT)
 		.value("UNITAI_WAGON", UNITAI_WAGON)
 		.value("UNITAI_TREASURE", UNITAI_TREASURE)
@@ -983,6 +990,8 @@ void CyEnumsPythonInterface()
 		.value("COMMAND_IGNORE_DANGER", COMMAND_IGNORE_DANGER)	// TAC - Trade Routes Advisor - koma13
 		.value("COMMAND_SAIL_TO_AFRICA", COMMAND_SAIL_TO_AFRICA) /*** TRIANGLETRADE 10/15/08 by DPII ***/
 		.value("COMMAND_SAIL_TO_PORT_ROYAL", COMMAND_SAIL_TO_PORT_ROYAL) // R&R, ray, Port Royal
+		.value("COMMAND_MERGE_TREASURES", COMMAND_MERGE_TREASURES) // WTP, merge Treasures, of Raubwuerger
+		.value("COMMAND_ESTABLISH_TRADE_POST", COMMAND_ESTABLISH_TRADE_POST) // WTP, ray, Native Trade Posts - START
 		.value("NUM_COMMAND_TYPES", NUM_COMMAND_TYPES)
 		;
 	python::enum_<ControlTypes>("ControlTypes")

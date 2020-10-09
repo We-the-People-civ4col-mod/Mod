@@ -28,9 +28,11 @@
 	const int defaultCitySizeBoost = 0 ;
 	const int defaultHammers = 0 ;
 	const int defaultMissionaryRate = 0 ;
+	const int defaultNativeTradeRate = 0; // WTP, ray, Native Trade Posts - START
 	const int defaultWorksWaterCount = 0 ;
 	const int defaultRebelSentiment = 0 ;
 	const int defaultCityHealth = 0 ; // R&R, ray, Health
+	const int defaultCityHappiness = 0; // WTP, ray, Happiness - START
 	const int defaultTeachUnitMultiplier = 100 ;
 	const int defaultEducationThresholdMultiplier = 100 ;
 	const int defaultPopulationRank = -1;
@@ -49,6 +51,7 @@
 	const UnitClassTypes defaultTeachUnitClass = NO_UNITCLASS;
 
 	const PlayerTypes defaultMissionaryPlayer = NO_PLAYER;
+	const PlayerTypes defaultTradePostPlayer = NO_PLAYER; // WTP, ray, Native Trade Posts - START
 	const YieldTypes defaultPreferredYieldAtCityPlot = NO_YIELD;
 
 // 
@@ -80,9 +83,11 @@ enum SavegameVariableTypes
 	CitySave_CitySizeBoost,
 	CitySave_Hammers,
 	CitySave_MissionaryRate,
+	CitySave_NativeTradeRate, // WTP, ray, Native Trade Posts - START
 	CitySave_WorksWaterCount,
 	CitySave_RebelSentiment,
 	CitySave_CityHealth, // R&R, ray, Health
+	CitySave_CityHappiness, // WTP, ray, Happiness - START
 	CitySave_TeachUnitMultiplier,
 	CitySave_EducationThresholdMultiplier,
 	CitySave_PopulationRank,
@@ -112,6 +117,7 @@ enum SavegameVariableTypes
 	CitySave_tradeMaxThreshold,
 
 	CitySave_MissionaryPlayer,
+	CitySave_TradePostPlayer, // WTP, ray, Native Trade Posts - START
 	CitySave_PreferredYieldAtCityPlot,
 
 	CitySave_LandPlotYield,
@@ -190,9 +196,11 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_CitySizeBoost: return "CitySave_CitySizeBoost";
 		case CitySave_Hammers: return "CitySave_Hammers";
 		case CitySave_MissionaryRate: return "CitySave_MissionaryRate";
+		case CitySave_NativeTradeRate: return "CitySave_NativeTradeRate"; // WTP, ray, Native Trade Posts - START
 		case CitySave_WorksWaterCount: return "CitySave_WorksWaterCount";
 		case CitySave_RebelSentiment: return "CitySave_RebelSentiment";
 		case CitySave_CityHealth: return "CitySave_CityHealth";
+		case CitySave_CityHappiness: return "CitySave_m_iCityHappiness"; // WTP, ray, Happiness - START
 		case CitySave_TeachUnitMultiplier: return "CitySave_TeachUnitMultiplier";
 		case CitySave_EducationThresholdMultiplier: return "CitySave_EducationThresholdMultiplier";
 		case CitySave_PopulationRank: return "CitySave_PopulationRank";
@@ -222,6 +230,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_tradeMaxThreshold: return "CitySave_tradeMaxThreshold";
 
 		case CitySave_MissionaryPlayer: return "CitySave_MissionaryPlayer";
+		case CitySave_TradePostPlayer: return "CitySave_TradePostPlayer"; // WTP, ray, Native Trade Posts - START
 		case CitySave_PreferredYieldAtCityPlot: return "CitySave_PreferredYieldAtCityPlot";
 
 		case CitySave_LandPlotYield: return "CitySave_LandPlotYield";
@@ -303,9 +312,11 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_iCitySizeBoost = defaultCitySizeBoost;
 	m_iHammers = defaultHammers;
 	m_iMissionaryRate = defaultMissionaryRate;
+	m_iNativeTradeRate = defaultNativeTradeRate; // WTP, ray, Native Trade Posts - START
 	m_iWorksWaterCount = defaultWorksWaterCount;
 	m_iRebelSentiment = defaultRebelSentiment;
 	m_iCityHealth = defaultCityHealth; // R&R, ray, Health
+	m_iCityHappiness = defaultCityHappiness; // WTP, ray, Happiness - START
 	m_iTeachUnitMultiplier = defaultTeachUnitMultiplier;
 	m_iEducationThresholdMultiplier = defaultEducationThresholdMultiplier;
 	m_iPopulationRank = defaultPopulationRank;
@@ -335,6 +346,7 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_em_iTradeMaxThreshold.reset();
 
 	m_eMissionaryPlayer = defaultMissionaryPlayer;
+	m_eTradePostPlayer = defaultTradePostPlayer; // WTP, ray, Native Trade Posts - START
 	m_ePreferredYieldAtCityPlot = defaultPreferredYieldAtCityPlot;
 
 	m_em_iLandPlotYield.reset();
@@ -429,9 +441,11 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_CitySizeBoost: reader.Read(m_iCitySizeBoost); break;
 		case CitySave_Hammers: reader.Read(m_iHammers); break;
 		case CitySave_MissionaryRate: reader.Read(m_iMissionaryRate); break;
+		case CitySave_NativeTradeRate: reader.Read(m_iNativeTradeRate); break;
 		case CitySave_WorksWaterCount: reader.Read(m_iWorksWaterCount); break;
 		case CitySave_RebelSentiment: reader.Read(m_iRebelSentiment); break;
 		case CitySave_CityHealth: reader.Read(m_iCityHealth); break; // R&R, ray, Health
+		case CitySave_CityHappiness: reader.Read(m_iCityHappiness); break; // WTP, ray, Happiness - START = 0; // WTP, ray, Happiness - START
 		case CitySave_TeachUnitMultiplier: reader.Read(m_iTeachUnitMultiplier); break;
 		case CitySave_EducationThresholdMultiplier: reader.Read(m_iEducationThresholdMultiplier); break;
 		case CitySave_PopulationRank: reader.Read(m_iPopulationRank); break;
@@ -462,6 +476,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_tradeMaxThreshold: reader.Read(m_em_iTradeMaxThreshold); break;
 
 		case CitySave_MissionaryPlayer: reader.Read(m_eMissionaryPlayer); break;
+		case CitySave_TradePostPlayer: reader.Read(m_eTradePostPlayer); break; // WTP, ray, Native Trade Posts - START
 		case CitySave_PreferredYieldAtCityPlot: reader.Read(m_ePreferredYieldAtCityPlot); break;
 
 		case CitySave_LandPlotYield: reader.Read(m_em_iLandPlotYield); break;
@@ -554,9 +569,11 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_CitySizeBoost, m_iCitySizeBoost, defaultCitySizeBoost);
 	writer.Write(CitySave_Hammers, m_iHammers, defaultHammers);
 	writer.Write(CitySave_MissionaryRate, m_iMissionaryRate, defaultMissionaryRate);
+	writer.Write(CitySave_NativeTradeRate, m_iNativeTradeRate, defaultNativeTradeRate);
 	writer.Write(CitySave_WorksWaterCount, m_iWorksWaterCount, defaultWorksWaterCount);
 	writer.Write(CitySave_RebelSentiment, m_iRebelSentiment, defaultRebelSentiment);
 	writer.Write(CitySave_CityHealth, m_iCityHealth, defaultCityHealth); // R&R, ray, Health
+	writer.Write(CitySave_CityHappiness, m_iCityHappiness, defaultCityHappiness); // WTP, ray, Happiness - START
 	writer.Write(CitySave_TeachUnitMultiplier, m_iTeachUnitMultiplier, defaultTeachUnitMultiplier);
 	writer.Write(CitySave_EducationThresholdMultiplier, m_iEducationThresholdMultiplier, defaultEducationThresholdMultiplier);
 	writer.Write(CitySave_PopulationRank, m_iPopulationRank, defaultPopulationRank);
@@ -586,6 +603,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_tradeMaxThreshold, m_em_iTradeMaxThreshold);
 
 	writer.Write(CitySave_MissionaryPlayer, m_eMissionaryPlayer, defaultMissionaryPlayer);
+	writer.Write(CitySave_TradePostPlayer, m_eTradePostPlayer, defaultTradePostPlayer); // WTP, ray, Native Trade Posts - START
 	writer.Write(CitySave_PreferredYieldAtCityPlot, m_ePreferredYieldAtCityPlot, defaultPreferredYieldAtCityPlot);
 		
 	writer.Write(CitySave_LandPlotYield, m_em_iLandPlotYield);

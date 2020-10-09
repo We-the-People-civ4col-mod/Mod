@@ -25,6 +25,7 @@ namespace
 		const char* szExpression;
 		const char* szMessage;
 		const char* szFileName;
+		const char* szFunctionName; // advc.006f
 		unsigned int line;
 
 		// EIP / EBP / ESP
@@ -64,12 +65,14 @@ namespace
 				sprintf( g_AssertText, "Assert Failed\r\n\r\n"
 					"File:  %s\r\n"
 					"Line:  %u\r\n"
+					"Func:  %s\r\n" // advc.006f
 					"Expression:  %s\r\n"
 					"Message:  %s\r\n"
 					"\r\n"
 					"----------------------------------------------------------\r\n",
 					g_AssertInfo.szFileName,
 					g_AssertInfo.line,
+					g_AssertInfo.szFunctionName, // advc.006f
 					g_AssertInfo.szExpression,
 					g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "" );
 
@@ -133,13 +136,15 @@ namespace
 
 } // end anonymous namespace
 
-bool FAssertDlg( const char* szExpr, const char* szMsg, const char*szFile, unsigned int line, bool& bIgnoreAlways )
+bool FAssertDlg(const char* szExpr, const char* szMsg, const char* szFile, unsigned int line,
+	/* <advc.006f> */ const char* szFunction, /* </advc006f> */ bool& bIgnoreAlways) 
 {
 //	FILL_CONTEXT( g_AssertInfo.context );
 
 	g_AssertInfo.szExpression = szExpr;
 	g_AssertInfo.szMessage = szMsg;
 	g_AssertInfo.szFileName = szFile;
+	g_AssertInfo.szFunctionName = szFunction; // advc.006f
 	g_AssertInfo.line = line;
 
 	DWORD dwResult = DisplayAssertDialog();

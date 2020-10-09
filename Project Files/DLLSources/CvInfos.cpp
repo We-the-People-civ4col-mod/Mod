@@ -156,6 +156,11 @@ const wchar*  CvInfoBase::getHelp() const
 		m_szCachedHelp = gDLL->getText(m_szHelpKey);
 	}
 
+	if (m_szCachedHelp == L"????")
+	{
+		return L"";
+	}
+
 	return m_szCachedHelp;
 }
 
@@ -164,6 +169,11 @@ const wchar* CvInfoBase::getStrategy() const
 	if (m_szCachedStrategy.empty())
 	{
 		m_szCachedStrategy = gDLL->getText(m_szStrategyKey);
+	}
+
+	if (m_szCachedStrategy == L"????")
+	{
+		return L"";
 	}
 
 	return m_szCachedStrategy;
@@ -227,6 +237,31 @@ bool CvInfoBase::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szButton, "Button");
 
 	return true;
+}
+
+void CvInfoBase::cleanStrings()
+{
+	checkStringContents(m_szTextKey       , L"_DESCRIPTION");
+	checkStringContents(m_szCivilopediaKey, L"_PEDIA"      );
+	checkStringContents(m_szHelpKey       , L"_HELP"       );
+	checkStringContents(m_szStrategyKey   , L"_STRATEGY"   );
+}
+
+void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
+{
+	if (szStr.length() == 0)
+	{
+		return;
+	}
+
+	// plenty of arguments to get around stuff like %2_city crashing the exe during this test
+	CvWString szText = gDLL->getText(szStr, L"", L"", L"", L"", L"", L"", L"", L"", L"", L"", L"");
+
+	if (szText == L"????" || (szText.length() > 7 && wcsncmp(szText, L"TXT_KEY", 7) == 0))
+	{
+		szStr.clear();
+		return;
+	}
 }
 
 //======================================================================================================
@@ -1325,6 +1360,7 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_iMovesChange(0),
 	m_iWorkRate(0),
 	m_iMissionaryRate(0),
+	m_iNativeTradeRate(0), // WTP, ray, Native Trade Posts - START
 	m_iPowerValue(0),
 	m_iAssetValue(0),
 	m_bWorkPlot(false),
@@ -1413,6 +1449,12 @@ int CvProfessionInfo::getMissionaryRate() const
 {
 	return m_iMissionaryRate;
 }
+// WTP, ray, Native Trade Posts - START
+int CvProfessionInfo::getNativeTradeRate() const
+{
+	return m_iNativeTradeRate;
+}
+// WTP, ray, Native Trade Posts - END
 int CvProfessionInfo::getPowerValue() const
 {
 	return m_iPowerValue;
@@ -1517,6 +1559,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMovesChange);
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iMissionaryRate);
+	stream->Read(&m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_bWorkPlot);
@@ -1581,6 +1624,7 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMovesChange);
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iMissionaryRate);
+	stream->Write(m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iAssetValue);
 	stream->Write(m_bWorkPlot);
@@ -1647,6 +1691,7 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMovesChange, "iMovesChange");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iMissionaryRate, "iMissionaryRate");
+	pXML->GetChildXmlValByName(&m_iNativeTradeRate, "iNativeTradeRate"); // WTP, ray, Native Trade Posts - START
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_bWorkPlot, "bWorkPlot");
@@ -2542,6 +2587,7 @@ m_iMoves(0),
 m_iWorkRate(0),
 m_iWorkRateModifier(0),
 m_iMissionaryRateModifier(0),
+m_iNativeTradeRateModifier(0), // WTP, ray, Native Trade Posts - START
 m_iCombat(0),
 m_iXPValueAttack(0),
 m_iXPValueDefense(0),
@@ -2602,6 +2648,9 @@ m_canBecomeExpert(false),
 m_canGetFree(false),
 m_canEscape(false),
 // TAC - LbD - Ray - END
+// WTP, ray, LbD Slaves Revolt and Free - START
+m_canRevolt(false),
+// WTP, ray, LbD Slaves Revolt and Free - END
 m_bCapturesCargo(false),
 // TAC Capturing Ships - ray
 m_bCapturesShips(false),
@@ -2772,6 +2821,12 @@ int CvUnitInfo::getMissionaryRateModifier() const
 {
 	return m_iMissionaryRateModifier;
 }
+// WTP, ray, Native Trade Posts - START
+int CvUnitInfo::getNativeTradeRateModifier() const
+{
+	return m_iNativeTradeRateModifier;
+}
+// WTP, ray, Native Trade Posts - END
 int CvUnitInfo::getCombat() const
 {
 	return m_iCombat;
@@ -3033,18 +3088,23 @@ bool CvUnitInfo::LbD_canEscape() const
 }
 // TAC - LbD - Ray - END
 
+// WTP, ray, LbD Slaves Revolt and Free - START
+bool CvUnitInfo::LbD_canRevolt() const
+{
+	return m_canRevolt;
+}
+// WTP, ray, LbD Slaves Revolt and Free - END
+
 bool CvUnitInfo::isCapturesCargo() const
 {
 	return m_bCapturesCargo;
 }
 
 // TAC Capturing Ships - ray
-
 bool CvUnitInfo::isCapturesShips() const
 {
 	return m_bCapturesShips;
 }
-
 // TAC Capturing Ships - ray - END
 
 bool CvUnitInfo::isLandYieldChanges() const
@@ -3286,7 +3346,7 @@ const char* CvUnitInfo::getArtDefineTag(int index, int iProfession, int iStyle) 
 			{
 				return pcTag;
 			}
-			else //retrieve the unit art style tag for no profession if the one for the desired profession is missing
+			else if (-1 == iProfession)//retrieve the unit art style tag for no profession if the one for the desired profession is missing
 			{
 				pcTag = GC.getUnitArtStyleTypeInfo(eStyle).getArtDefineTag(index, iUnit, -1);
 				if (NULL != pcTag)
@@ -3391,6 +3451,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iWorkRateModifier);
 	stream->Read(&m_iMissionaryRateModifier);
+	stream->Read(&m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iCombat);
 	stream->Read(&m_iXPValueAttack);
 	stream->Read(&m_iXPValueDefense);
@@ -3463,6 +3524,10 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_canGetFree);
 	stream->Read(&m_canEscape);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	stream->Read(&m_canRevolt);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	stream->Read(&m_bCapturesCargo);
 	// TAC Capturing Ships - ray
@@ -3610,6 +3675,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iWorkRateModifier);
 	stream->Write(m_iMissionaryRateModifier);
+	stream->Write(m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iCombat);
 	stream->Write(m_iXPValueAttack);
 	stream->Write(m_iXPValueDefense);
@@ -3679,6 +3745,10 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_canGetFree);
 	stream->Write(m_canEscape);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	stream->Write(m_canRevolt);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	stream->Write(m_bCapturesCargo);
 	// TAC Capturing Ships - ray
@@ -3818,6 +3888,10 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_canEscape,"bLbDCanEscape",false);
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	pXML->GetChildXmlValByName(&m_canRevolt,"bLbDCanRevolt",false);
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	pXML->GetChildXmlValByName(&m_bCapturesCargo,"bCapturesCargo",false);
 	// TAC Capturing Ships - ray
 	pXML->GetChildXmlValByName(&m_bCapturesShips,"bCapturesShips",false);
@@ -3862,6 +3936,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iWorkRateModifier, "iWorkRateModifier");
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
+	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
 	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
 	pXML->SetVariableListTagPair(&m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
 	// < JAnimals Mod Start >
@@ -9118,6 +9193,26 @@ const char* CvYieldInfo::getIcon() const
 {
 	return m_szIcon;
 }
+
+WidgetTypes CvYieldInfo::getWikiWidget() const
+{
+	return WIDGET_PEDIA_JUMP_TO_YIELDS;
+}
+
+YieldTypes CvYieldInfo::getID() const
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		if (this == &GC.getYieldInfo(eYield))
+		{
+			return eYield;
+		}
+	}
+	FAssertMsg(false, "Yield info failed to find itself")
+	return NO_YIELD;
+}
+
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 const char* CvYieldInfo::getCombiIcon() const
 {
@@ -10529,6 +10624,7 @@ CvTraitInfo::CvTraitInfo() :
 	m_iMaxTaxRateThresholdDecrease(0), // R&R, ray, new Attribute in Traits
 	m_iMercantileFactor(0),
 	m_iTreasureModifier(0),
+	m_iUnhappinessFromSlavesModifier(0), // WTP, ray, Happiness - START
 	m_iChiefGoldModifier(0),
 	m_iNativeAttitudeChange(0),
 	m_iEuropeanAttitudeChange(0), // R&R, ray, new Attribute in Traits
@@ -10618,6 +10714,12 @@ int CvTraitInfo::getTreasureModifier() const
 {
 	return m_iTreasureModifier;
 }
+// WTP, ray, Happiness - START
+int CvTraitInfo::getUnhappinessFromSlavesModifier() const
+{
+	return m_iUnhappinessFromSlavesModifier;
+}
+// WTP, ray, Happiness - END
 int CvTraitInfo::getChiefGoldModifier() const
 {
 	return m_iChiefGoldModifier;
@@ -10841,6 +10943,7 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Read(&m_iMercantileFactor);
 	stream->Read(&m_iTreasureModifier);
+	stream->Read(&m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Read(&m_iChiefGoldModifier);
 	stream->Read(&m_iNativeAttitudeChange);
 	stream->Read(&m_iEuropeanAttitudeChange); // R&R, ray, new Attribute in Traits
@@ -10948,6 +11051,7 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Write(m_iMercantileFactor);
 	stream->Write(m_iTreasureModifier);
+	stream->Write(m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Write(m_iChiefGoldModifier);
 	stream->Write(m_iNativeAttitudeChange);
 	stream->Write(m_iEuropeanAttitudeChange); // R&R, ray, new Attribute in Traits
@@ -11011,6 +11115,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMaxTaxRateThresholdDecrease, "iMaxTaxRateThresholdDecrease"); // R&R, ray, new Attribute in Traits
 	pXML->GetChildXmlValByName(&m_iMercantileFactor, "iMercantileFactor");
 	pXML->GetChildXmlValByName(&m_iTreasureModifier, "iTreasureModifier");
+	pXML->GetChildXmlValByName(&m_iUnhappinessFromSlavesModifier, "iUnhappinessFromSlavesModifier"); // WTP, ray, Happiness - START
 	pXML->GetChildXmlValByName(&m_iChiefGoldModifier, "iChiefGoldModifier");
 	pXML->GetChildXmlValByName(&m_iNativeAttitudeChange, "iNativeAttitudeChange");
 	pXML->GetChildXmlValByName(&m_iEuropeanAttitudeChange, "iEuropeanAttitudeChange"); // R&R, ray, new Attribute in Traits
@@ -12956,7 +13061,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -12967,11 +13072,15 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 	gDLL->getXMLIFace()->SetToChild(pXML->GetXML()); // Move down to Child level
 	pXML->GetXmlVal(m_szType);		// TAG
 
+	setGender(L"N");
+	setPlural(L"false");
+
 	// move to the tag, which contains the language, which we will load.
 
 	bool bLanguageFound = true;
 
 	// First try the user selected language
+	/*
 	if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), getLanguageName(GAMETEXT.getCurrentLanguage())))
 	{
 		bLanguageFound = false;
@@ -12989,20 +13098,27 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 			}
 		}
 	}
+	*/
+
+	if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), szLanguage))
+	{
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML()); // Move back up to Parent
+		return false;
+	}
 	
-	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName, bLanguageFound))
+	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName, bLanguageFound, getType()))
 	{
 		// There are child tags. Read all 3 of them.
 
 		// TEXT
 		setText(wszTextVal);
 		// GENDER
-		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName, bLanguageFound))
+		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName, bLanguageFound, getType()))
 		{
 			setGender(wszTextVal);
 		}
 		// PLURAL
-		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName, bLanguageFound))
+		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName, bLanguageFound, getType()))
 		{
 			setPlural(wszTextVal);
 		}
@@ -13010,7 +13126,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 	else
 	{
 		// No Text child meaning no gender or plural. Just read the text.
-		readString(pXML, wszTextVal, NULL, bUTF8, szFileName, bLanguageFound);
+		readString(pXML, wszTextVal, NULL, bUTF8, szFileName, bLanguageFound, getType());
 		setText(wszTextVal);
 	}
 
@@ -13019,7 +13135,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 }
 
 // read a string from an xml tag. Key feature is to convert from UTF-8 to whatever codepage the current language is using.
-bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound)
+bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound, const char* szType)
 {
 	if (!bUTF8)
 	{
@@ -13208,7 +13324,7 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 				szBuffer.Convert(wszTextVal);
 
 				char	szMessage[1024];
-				sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, getType(), szBuffer.c_str(), getCodePage());
+				sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, szType, szBuffer.c_str(), getCodePage());
 				gDLL->MessageBox(szMessage, "Text encoding error");
 			}
 		}
@@ -15091,6 +15207,7 @@ CvMainMenuInfo::~CvMainMenuInfo()
 }
 std::string CvMainMenuInfo::getScene() const
 {
+	GC.cleanInfoStrings();
 	return m_szScene;
 }
 std::string CvMainMenuInfo::getSoundtrack() const

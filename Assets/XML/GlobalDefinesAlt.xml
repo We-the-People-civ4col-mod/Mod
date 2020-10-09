@@ -162,6 +162,10 @@
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>TAX_RATE_MAX_INCREASE</DefineName>
+		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>AI_HURRY_IMMIGRANTS</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
@@ -212,6 +216,38 @@
 	<Define>
 		<DefineName>LBD_CHANCE_MOD_ESCAPE_SERVANT</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LBD_CHANCE_REVOLT</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LBD_CHANCE_MOD_REVOLT_CRIMINAL</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LBD_CHANCE_MOD_REVOLT_SLAVE</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_FREED_SLAVE</DefineName>
+		<DefineTextVal>UNITCLASS_FREED_SLAVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_CONVERTED_NATIVE</DefineName>
+		<DefineTextVal>UNITCLASS_CONVERTED_NATIVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_REVOLTING_SLAVE</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_SLAVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_REVOLTING_NATIVE_SLAVE</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_NATIVE_SLAVE</DefineTextVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_REVOLTING_CRIMINAL</DefineName>
+		<DefineTextVal>UNITCLASS_REVOLTING_CRIMINAL</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>LBD_MIN_EXPERIENCE_FREE_BY_COMBAT</DefineName>
@@ -279,7 +315,7 @@
 	</Define>
 	<Define>
 		<DefineName>REV_SUPPORT_LAND</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>REV_SUPPORT_SEA</DefineName>
@@ -295,11 +331,11 @@
 	</Define>
 	<Define>
 		<DefineName>POS_TAX_EUROPE_WARS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NEG_TAX_EUROPE_WARS</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>3</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_LAND</DefineName>
@@ -307,7 +343,7 @@
 	</Define>
 	<Define>
 		<DefineName>KING_REINFORCEMENT_LAND</DefineName>
-		<iDefineIntVal>4</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_ARTIL</DefineName>
@@ -315,7 +351,7 @@
 	</Define>
 	<Define>
 		<DefineName>KING_REINFORCEMENT_ARTIL</DefineName>
-		<iDefineIntVal>2</iDefineIntVal>
+		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_KING_REINFORCEMENT_SEA</DefineName>
@@ -655,7 +691,7 @@
 	</Define>
 	<Define>
 		<DefineName>EUROPE_MARKET_CORRELATION_PERCENT</DefineName>
-		<iDefineIntVal>0</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NATIVE_GROWTH_THRESHOLD_MULTIPLIER</DefineName>
@@ -1030,5 +1066,117 @@
 		<DefineName>CITY_DEFENSE_DAMAGE_HEAL_RATE</DefineName>
 		<iDefineIntVal>5</iDefineIntVal>
 	</Define>
-<!-- Super Forts end -->
+	<!-- Super Forts end -->
+	<!-- XP cap begin -->
+	<Define>
+		<DefineName>ANIMAL_MAX_XP_VALUE</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>ESCAPE_MAX_XP_VALUE</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<!-- XP cap end -->
+	<Define>
+		<DefineName>PERMANENT_ALLIANCE_REQUIRES_REVOLUTION</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_TREASURE_AMOUNT</DefineName>
+		<iDefineIntVal>3000</iDefineIntVal>
+	</Define>
+	<!-- Native Trade Post - begin -->
+	<Define>
+		<DefineName>TRADER_RATE_EFFECT_ON_SUCCESS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TRADE_POST_GOLD_PER_NATIVE</DefineName>
+		<iDefineIntVal>8</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>GAIN_ATTITUDE_FOR_TRADE_POST</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_CHANCE_TRADE_POST</DefineName>
+		<iDefineIntVal>25</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_CHANCE_TRADE_POST</DefineName>
+		<iDefineIntVal>90</iDefineIntVal>
+	</Define>
+	<!-- Happiness vs Unhappiness - begin -->
+	<Define>
+		<DefineName>MIN_POP_NEG_HAPPINESS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>POP_DIVISOR_HAPPINESS</DefineName>
+		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>PER_EUROPEAN_AT_WAR_UNHAPPINESS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>POP_DIVISOR_DEFENSE_UNHAPPINESS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TAX_DIVISOR_UNHAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_CHANCE_UNREST_UNHAPPINESS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>BASE_CHANCE_FESTIVITIES_HAPPINESS</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_BALANCE_UNREST_UNHAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MIN_BALANCE_FESTIVITIES_HAPPINESS</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TURNS_UNREST_UNHAPPINESS</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TIMER_FESTIVITIES_OR_UNRESTS</DefineName>
+		<iDefineIntVal>20</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>EXPELLED_MISSIONARY_SURVIVAL_CHANCE</DefineName>
+		<iDefineIntVal>100</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>UNITCLASS_FAILED_MISSIONARY</DefineName>
+		<DefineTextVal>UNITCLASS_FAILED_MISSIONARY</DefineTextVal>
+	</Define>
 </Civ4Defines>

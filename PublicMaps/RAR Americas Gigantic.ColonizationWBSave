@@ -162451,7 +162451,7 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_COLONIST, UnitOwner=4
-		Profession=PROFESSION_HEAVY_CAVALRY
+		Profession=PROFESSION_DRAGOON
 		Damage=0
 		Level=1, Experience=0
 		FacingDirection=4
@@ -162460,12 +162460,12 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_CARPENTER, UnitOwner=4
-		Profession=PROFESSION_PIONEER
+		Profession=PROFESSION_SETTLER
 		Damage=0
 		Level=1, Experience=0
 		FacingDirection=4
 		Sleep
-		UnitAIType=UNITAI_WORKER
+		UnitAIType=UNITAI_SETTLER
 	EndUnit
 EndPlot
 BeginPlot
@@ -197920,7 +197920,7 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_COLONIST, UnitOwner=3
-		Profession=PROFESSION_HEAVY_CAVALRY
+		Profession=PROFESSION_DRAGOON
 		Damage=0
 		Level=1, Experience=0
 		FacingDirection=4
@@ -197929,12 +197929,12 @@ BeginPlot
 	EndUnit
 	BeginUnit
 		UnitType=UNIT_FISHERMAN, UnitOwner=3
-		Profession=PROFESSION_PIONEER
+		Profession=PROFESSION_SETTLER
 		Damage=0
 		Level=1, Experience=0
 		FacingDirection=4
 		Sleep
-		UnitAIType=UNITAI_WORKER
+		UnitAIType=UNITAI_SETTLER
 	EndUnit
 EndPlot
 BeginPlot

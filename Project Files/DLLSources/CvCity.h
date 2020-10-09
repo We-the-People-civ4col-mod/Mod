@@ -44,7 +44,7 @@ public:
 	DllExport void kill();
 
 	// PatchMod: Achievements START
-	bool isHasSpecialBuilding(int iValue);
+	bool isHasSpecialBuilding(int iValue) const;
 	// PatchMod: Achievements END
 
 	// TAC - LbD - Ray - START
@@ -53,6 +53,10 @@ public:
 	bool LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_rounds, int mod_crim, int mod_serv, int l_level);
 	bool LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	bool LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	// R&R, ray, Extra City Defense Attacks - START
 	void doExtraCityDefenseAttacks();
@@ -224,6 +228,12 @@ public:
 	DllExport void changePopulation(int iChange);
 	void updatePopulation(int iOldPopulation);
 	long getRealPopulation() const;
+
+	// WTP, ray, Native Trade Posts - START
+	DllExport int getNativeTradePostGold() const;
+	DllExport void setNativeTradePostGold (int iNewValue);
+	DllExport void changeNativeTradePostGold(int iChange);
+	// WTP, ray, Native Trade Posts - END
 
 	int getHighestPopulation() const;
 	void setHighestPopulation(int iNewValue);
@@ -481,6 +491,14 @@ public:
 	int getMissionaryRate() const;
 	void setMissionaryRate(int iRate);
 
+	// WTP, ray, Native Trade Posts - START
+	PlayerTypes getTradePostPlayer() const;
+	CivilizationTypes getTradePostCivilization() const;
+	void setTradePostPlayer(PlayerTypes ePlayer);
+	int getNativeTradeRate() const;
+	void setNativeTradeRate(int iRate);
+	// WTP, ray, Native Trade Posts - END
+
 	// R&R, ray , Stirring Up Natives - START
 	bool getHasBeenStirredUp() const;
 	void setHasBeenStirredUp(bool stirredUp);
@@ -497,6 +515,33 @@ public:
 	DllExport void setCityHealth(int iValue);
 	DllExport void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
+
+	// WTP, ray, Happiness - START
+	DllExport int getCityHappiness() const;
+	DllExport void setCityHappiness(int iValue);
+	DllExport void updateCityHappiness();
+	DllExport int getCityUnHappiness() const;
+	DllExport void setCityUnHappiness(int iValue);
+	DllExport void updateCityUnHappiness();
+
+	DllExport int getUnhappinessFromPopulation() const;
+	DllExport int getUnhappinessFromSlavery() const;
+	DllExport int getUnhappinessFromWars() const;
+	DllExport int getUnhappinessFromMissingDefense() const;
+
+	DllExport int getHappinessFromCrosses() const;
+	DllExport int getHappinessFromBells() const;
+	DllExport int getHappinessFromHealth() const;
+	DllExport int getHappinessFromCulture() const;
+	DllExport int getHappinessFromEducation() const;
+	DllExport int getHappinessFromDomesticDemandsFulfilled() const;
+	DllExport int getHappinessFromTreaties() const;
+	DllExport int getUnhappinessFromTaxRate() const;
+
+	DllExport int getCityTimerFestivitiesOrUnrest() const;
+	DllExport void setCityTimerFestivitiesOrUnrest(int iValue);
+	DllExport void changeCityTimerFestivitiesOrUnrest(int iValue);
+	// WTP, ray, Happiness - END
 
 	int getTeachUnitMultiplier() const;
 	void setTeachUnitMultiplier(int iModifier);
@@ -549,7 +594,7 @@ public:
 	virtual BuildTypes AI_getBestBuild(int iIndex) const = 0;
 	virtual void AI_updateBestBuild() = 0;
 	virtual int AI_cityValue() const = 0;
-	virtual int AI_clearFeatureValue(int iIndex) = 0;
+	virtual int AI_clearFeatureValue(int iIndex) const = 0;
 	virtual int AI_calculateCulturePressure() const = 0;
 	virtual int AI_calculateWaterWorldPercent() const = 0;
 	virtual int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance = 7) const = 0;
@@ -649,7 +694,7 @@ public:
 	int getCustomHouseSellThreshold(YieldTypes eYield) const;
 	void setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell);
 	bool isCustomHouseNeverSell(YieldTypes eYield) const;
-	void createFleeingUnit(UnitTypes eUnit);
+	void createFleeingUnit(UnitTypes eUnit, bool bDefautAI); // WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
 	// R&R, ray, finishing Custom House Screen END
 	// Teacher List - start - Nightinggale
 	int getOrderedStudents(UnitTypes eUnit);
@@ -688,9 +733,14 @@ protected:
 	int m_iCitySizeBoost;
 	int m_iHammers;
 	int m_iMissionaryRate;
+	int m_iNativeTradeRate; // WTP, ray, Native Trade Posts - START
+	int m_iTradePostGold; // WTP, ray, Native Trade Posts - START
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
 	int m_iCityHealth; // R&R, ray, Health
+	int m_iCityHappiness; // WTP, ray, Happiness
+	int m_iCityUnHappiness; // WTP, ray, Happiness
+	int m_iCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness
 	int m_iTeachUnitMultiplier;
 	int m_iEducationThresholdMultiplier;
 	int m_iTotalYieldStored;			//VET NewCapacity - 2/2
@@ -707,6 +757,7 @@ protected:
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
 	PlayerTypes m_eMissionaryPlayer;
+	PlayerTypes m_eTradePostPlayer; // WTP, ray, Native Trade Posts - START
 	EnumMap<YieldTypes,int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields
 	EnumMap<YieldTypes,int> m_em_iSeaPlotYield;
 	EnumMap<YieldTypes,int> m_em_iRiverPlotYield;
@@ -780,8 +831,11 @@ protected:
 	void doPrices(); // R&R, Androrc, Domestic Market
 	void doDecay();
 	void doMissionaries();
-	void doRebelSentiment();
+	void doNativeTradePost(); // WTP, ray, Native Trade Posts - START
+	void doRebelSentiment(); 
 	void doCityHealth(); // R&R, ray, Health - START
+	void doCityHappiness(); // WTP, ray, Happiness - START
+	void doCityUnHappiness(); // WTP, ray, Happiness - START
 	bool doCheckProduction();
 	void doCheat(bool bAlt, bool bShift, bool bCtrl);
 	int getExtraProductionDifference(int iExtra, int iModifier) const;

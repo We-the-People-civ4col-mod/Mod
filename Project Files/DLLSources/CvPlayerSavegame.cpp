@@ -64,6 +64,7 @@ const int defaultChurchFavoursReceived = 0;
 
 const int defaultKingNumUnitMultiplier = 100;
 const int defaultMissionarySuccessPercent = 100;
+const int defaultNativeTradePostSuccessPercent = 100; // WTP, ray, Native Trade Posts - START
 const int defaultTimeNoTrade = 0;
 
 const bool defaultAlive = false;
@@ -158,6 +159,7 @@ enum SavegameVariableTypes
 
 	PlayerSave_KingNumUnitMultiplier,
 	PlayerSave_MissionarySuccessPercent,
+	PlayerSave_NativeTradePostSuccessPercent, // WTP, ray, Native Trade Posts - START
 	PlayerSave_TimeNoTrade,
 
 	PlayerSave_Alive,
@@ -332,6 +334,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 
 	case PlayerSave_KingNumUnitMultiplier: return "PlayerSave_KingNumUnitMultiplier";
 	case PlayerSave_MissionarySuccessPercent: return "PlayerSave_MissionarySuccessPercent";
+	case PlayerSave_NativeTradePostSuccessPercent: return "PlayerSave_NativeTradePostSuccessPercent"; // WTP, ray, Native Trade Posts - START
 	case PlayerSave_TimeNoTrade: return "PlayerSave_TimeNoTrade";
 
 	case PlayerSave_Alive: return "PlayerSave_Alive";
@@ -511,6 +514,7 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 
 	m_iKingNumUnitMultiplier = defaultKingNumUnitMultiplier;
 	m_iMissionarySuccessPercent = defaultMissionarySuccessPercent;
+	m_iNativeTradePostSuccessPercent = defaultNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
 	m_iTimeNoTrade = defaultTimeNoTrade;
 
 	m_bAlive = defaultAlive;
@@ -712,6 +716,7 @@ void CvPlayer::read(CvSavegameReader reader)
 
 		case PlayerSave_KingNumUnitMultiplier: reader.Read(m_iKingNumUnitMultiplier); break;
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
+		case PlayerSave_NativeTradePostSuccessPercent: reader.Read(m_iNativeTradePostSuccessPercent); break; // WTP, ray, Native Trade Posts - START)
 		case PlayerSave_TimeNoTrade: reader.Read(m_iTimeNoTrade); break;
 
 		case PlayerSave_Alive: reader.Read(m_bAlive); break;
@@ -914,6 +919,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 
 	writer.Write(PlayerSave_KingNumUnitMultiplier, m_iKingNumUnitMultiplier, defaultKingNumUnitMultiplier);
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);
+	writer.Write(PlayerSave_NativeTradePostSuccessPercent, m_iNativeTradePostSuccessPercent, defaultNativeTradePostSuccessPercent); // WTP, ray, Native Trade Posts - START
 	writer.Write(PlayerSave_TimeNoTrade, m_iTimeNoTrade, defaultTimeNoTrade);
 
 	writer.Write(PlayerSave_Alive, m_bAlive, defaultAlive);

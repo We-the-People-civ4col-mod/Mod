@@ -190,6 +190,7 @@ public:
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
 	DllExport CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
+	void initEuropeSettler(bool bPayEquipment);
 	DllExport CvUnit* initAfricaUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION); /*** TRIANGLETRADE 10/23/08 by DPII ***/
 	DllExport CvUnit* initPortRoyalUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION); // R&R, ray, Port Royal
 	void killUnits();
@@ -255,7 +256,7 @@ public:
 	void findNewCapital();
 	DllExport bool canRaze(CvCity* pCity) const;
 	void raze(CvCity* pCity);
-	void disband(CvCity* pCity);
+	void disband(CvCity* pCity, bool bAbandon = false);
 	bool canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* pUnit) const;
 	int receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
@@ -455,6 +456,8 @@ public:
 	int getExtraYieldThreshold(YieldTypes eIndex) const;
 	void updateExtraYieldThreshold(YieldTypes eIndex);
 	int getYieldRate(YieldTypes eIndex) const;
+	int getHappinessRate() const; // WTP, ray, Happiness - START
+	int getUnHappinessRate() const; // WTP, ray, Happiness - START
 	bool isYieldEuropeTradable(YieldTypes eIndex) const;
 	void setYieldEuropeTradable(YieldTypes eIndex, bool bTradeable);
 	void setYieldEuropeTradableAll();
@@ -753,6 +756,14 @@ public:
 	int getMissionarySuccessPercent() const;
 	void setMissionarySuccessPercent(int iValue);
 
+	// WTP, ray, Native Trade Posts - START
+	void burnTradePosts(PlayerTypes ePlayer);
+	bool canHaveTradePost(PlayerTypes ePlayer) const;
+	void validateTradePosts();
+	int getNativeTradePostSuccessPercent() const;
+	void setNativeTradePostSuccessPercent(int iValue);
+	// WTP, ray, Native Trade Posts - END
+
 	int getRebelCombatPercent() const;
 
 	int getProfessionEquipmentModifier(ProfessionTypes eProfession) const;
@@ -938,6 +949,7 @@ protected:
 	int m_iMissionaryRateModifier;
 	int m_iNativeTradeModifier; // R&R, ray, new Attribute in Traits
 	int m_iMissionarySuccessPercent;
+	int m_iNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
 
 	uint m_uiStartTime;  // XXX save these?
 

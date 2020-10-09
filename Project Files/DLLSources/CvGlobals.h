@@ -719,6 +719,10 @@ public:
 	int getLBD_CHANCE_ESCAPE();
 	int getLBD_CHANCE_MOD_ESCAPE_CRIMINAL();
 	int getLBD_CHANCE_MOD_ESCAPE_SERVANT();
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	int getLBD_CHANCE_REVOLT();
+	int getLBD_CHANCE_MOD_REVOLT_SLAVE();
+	int getLBD_CHANCE_MOD_REVOLT_CRIMINAL();
 	// R&R, ray, getting Veterans or Free through Combat Experience
 	int getLBD_EXPERIENCE_VETERAN();
 	int getLBD_EXPERIENCE_FREE();
@@ -813,6 +817,25 @@ public:
 	int getMAX_CITY_HEALTH();
 	int getLOWEST_CITY_HEALTH();
 	// R&R, ray, Health - END
+
+	// WTP, ray, Happiness - START
+	int getMIN_POP_NEG_HAPPINESS();
+	int getPOP_DIVISOR_HAPPINESS();
+	int getPER_EUROPEAN_AT_WAR_UNHAPPINESS();
+	int getPOP_DIVISOR_DEFENSE_UNHAPPINESS();
+	int getTAX_DIVISOR_UNHAPPINESS();
+
+	int getBASE_CHANCE_UNREST_UNHAPPINESS();
+	int getBASE_CHANCE_FESTIVITIES_HAPPINESS();
+	int getMIN_BALANCE_UNREST_UNHAPPINESS();
+	int getMIN_BALANCE_FESTIVITIES_HAPPINESS();
+	int getTURNS_UNREST_UNHAPPINESS();
+	int getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS();
+	int getTIMER_FESTIVITIES_OR_UNRESTS();
+	// WTP, ray, Happiness - END
+
+    int getMAX_TREASURE_AMOUNT(); // WTP, merge Treasures, of Raubwuerger - START
+	int getTRADE_POST_GOLD_PER_NATIVE(); // WTP, ray, Native Trade Posts - START
 
 	// softcoding enum values
 
@@ -917,6 +940,8 @@ public:
 
 	void deleteInfoArrays();
 
+	void cleanInfoStrings();
+	
 	const YieldTypeArray& getUnitYieldDemandTypes() const { return m_acUnitYieldDemandTypes; }
 
 	void setCityCatchmentRadius(int iSetting);
@@ -1236,6 +1261,10 @@ protected:
 	int m_LBD_CHANCE_ESCAPE;
 	int m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL;
 	int m_LBD_CHANCE_MOD_ESCAPE_SERVANT;
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	int m_LBD_CHANCE_REVOLT;
+	int m_LBD_CHANCE_MOD_REVOLT_SLAVE;
+	int m_LBD_CHANCE_MOD_REVOLT_CRIMINAL;
 	// R&R, ray, getting Veterans or Free through Combat Experience
 	int m_LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT;
 	int m_LBD_MIN_EXPERIENCE_FREE_BY_COMBAT;
@@ -1329,6 +1358,25 @@ protected:
 	// R&R, ray, Health - END
 
 	YieldTypeArray m_acUnitYieldDemandTypes;
+
+	// WTP, ray, Happiness - START
+	int m_MIN_POP_NEG_HAPPINESS;
+	int m_POP_DIVISOR_HAPPINESS;
+	int m_PER_EUROPEAN_AT_WAR_UNHAPPINESS;
+	int m_POP_DIVISOR_DEFENSE_UNHAPPINESS;
+	int m_TAX_DIVISOR_UNHAPPINESS;
+
+	int m_BASE_CHANCE_UNREST_UNHAPPINESS;
+	int m_BASE_CHANCE_FESTIVITIES_HAPPINESS;
+	int m_MIN_BALANCE_UNREST_UNHAPPINESS;
+	int m_MIN_BALANCE_FESTIVITIES_HAPPINESS;
+	int m_TURNS_UNREST_UNHAPPINESS;
+	int m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
+	int m_TIMER_FESTIVITIES_OR_UNRESTS;
+	// WTP, ray, Happiness - END
+
+	int m_MAX_TREASURE_AMOUNT; // WTP, merge Treasures, of Raubwuerger
+	int m_TRADE_POST_GOLD_PER_NATIVE; // WTP, ray, Native Trade Posts - START
 
 	float m_fCAMERA_MIN_YAW;
 	float m_fCAMERA_MAX_YAW;
@@ -1652,7 +1700,6 @@ inline int CvGlobals::getAI_LOST_TRANSPORT_MEMORY_COUNT()
 }
 // TAC - AI Improved Navel AI - koma13 - END
 
-
 // R&R, ray, caching globals from Global Defines Alt - START
 // Caching Vanilla variables
 inline int CvGlobals::getPLOT_VISIBILITY_RANGE()
@@ -1901,6 +1948,19 @@ inline int CvGlobals::getLBD_CHANCE_MOD_ESCAPE_CRIMINAL()
 inline int CvGlobals::getLBD_CHANCE_MOD_ESCAPE_SERVANT()
 {
 	return m_LBD_CHANCE_MOD_ESCAPE_SERVANT;
+}
+// WTP, ray, LbD Slaves Revolt and Free - START
+inline int CvGlobals::getLBD_CHANCE_REVOLT()
+{
+	return m_LBD_CHANCE_REVOLT;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_REVOLT_SLAVE()
+{
+	return m_LBD_CHANCE_MOD_REVOLT_SLAVE;
+}
+inline int CvGlobals::getLBD_CHANCE_MOD_REVOLT_CRIMINAL()
+{
+	return m_LBD_CHANCE_MOD_REVOLT_CRIMINAL;
 }
 // R&R, ray, getting Veterans or Free through Combat Experience
 inline int CvGlobals::getLBD_EXPERIENCE_VETERAN()
@@ -2226,6 +2286,82 @@ inline int CvGlobals::getLOWEST_CITY_HEALTH()
 }
 // R&R, ray, Health - END
 
+// WTP, ray, Happiness - START
+inline int CvGlobals::getMIN_POP_NEG_HAPPINESS()
+{
+	return m_MIN_POP_NEG_HAPPINESS;
+}
+
+inline int CvGlobals::getPOP_DIVISOR_HAPPINESS()
+{
+	return m_POP_DIVISOR_HAPPINESS;
+}
+
+inline int CvGlobals::getPER_EUROPEAN_AT_WAR_UNHAPPINESS()
+{
+	return m_PER_EUROPEAN_AT_WAR_UNHAPPINESS;
+}
+
+inline int CvGlobals::getPOP_DIVISOR_DEFENSE_UNHAPPINESS()
+{
+	return m_POP_DIVISOR_DEFENSE_UNHAPPINESS;
+}
+
+inline int CvGlobals::getTAX_DIVISOR_UNHAPPINESS()
+{
+	return m_TAX_DIVISOR_UNHAPPINESS;
+}
+
+inline int CvGlobals::getBASE_CHANCE_UNREST_UNHAPPINESS()
+{
+	return m_BASE_CHANCE_UNREST_UNHAPPINESS;
+}
+
+inline int CvGlobals::getBASE_CHANCE_FESTIVITIES_HAPPINESS()
+{
+	return m_BASE_CHANCE_FESTIVITIES_HAPPINESS;
+}
+
+inline int CvGlobals::getMIN_BALANCE_UNREST_UNHAPPINESS()
+{
+	return m_MIN_BALANCE_UNREST_UNHAPPINESS;
+}
+
+inline int CvGlobals::getMIN_BALANCE_FESTIVITIES_HAPPINESS()
+{
+	return m_MIN_BALANCE_FESTIVITIES_HAPPINESS;
+}
+
+inline int CvGlobals::getTURNS_UNREST_UNHAPPINESS()
+{
+	return m_TURNS_UNREST_UNHAPPINESS;
+}
+
+inline int CvGlobals::getFOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS()
+{
+	return m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS;
+}
+
+inline int CvGlobals::getTIMER_FESTIVITIES_OR_UNRESTS()
+{
+	return m_TIMER_FESTIVITIES_OR_UNRESTS;
+}
+// WTP, ray, Happiness - END
+
+// WTP, merge Treasures, of Raubwuerger - START
+inline int CvGlobals::getMAX_TREASURE_AMOUNT()
+{
+	return m_MAX_TREASURE_AMOUNT;
+}
+// WTP, merge Treasures, of Raubwuerger - END
+
+// WTP, ray, Native Trade Posts - START
+inline int CvGlobals::getTRADE_POST_GOLD_PER_NATIVE()
+{
+	return m_TRADE_POST_GOLD_PER_NATIVE;
+}
+// WTP, ray, Native Trade Posts - END
+
 inline float CvGlobals::getCAMERA_MIN_YAW()
 {
 	return m_fCAMERA_MIN_YAW;
@@ -2393,7 +2529,6 @@ inline int CvGlobals::getUSE_ON_UNIT_LOST_CALLBACK()
 {
 	return m_iUSE_ON_UNIT_LOST_CALLBACK;
 }
-
 inline int CvGlobals::getMAX_CIV_PLAYERS()
 {
 	return MAX_PLAYERS;

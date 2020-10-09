@@ -179,7 +179,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>-7</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-5</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>4</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>3</iAfricaSellPriceDifference>
@@ -220,7 +220,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>600</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>5</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>6</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>7</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -261,7 +261,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>600</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>5</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>6</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>7</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -302,7 +302,7 @@
             <iSellPriceDifference>3</iSellPriceDifference>
             <iPriceChangeThreshold>600</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>10</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>11</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -507,7 +507,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>2</iAfricaSellPriceDifference>
@@ -631,7 +631,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -837,7 +837,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -919,7 +919,7 @@
             <iSellPriceDifference>1</iSellPriceDifference>
             <iPriceChangeThreshold>1000</iPriceChangeThreshold>
             <iPriceCorrectionPercent>1</iPriceCorrectionPercent>
-            <iEuropeVolumeAttrition>3</iEuropeVolumeAttrition>
+            <iEuropeVolumeAttrition>-3</iEuropeVolumeAttrition>
             <iAfricaBuyPriceLow>2</iAfricaBuyPriceLow>
             <iAfricaBuyPriceHigh>3</iAfricaBuyPriceHigh>
             <iAfricaSellPriceDifference>1</iAfricaSellPriceDifference>
@@ -2382,6 +2382,86 @@
             <Icon>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,8,16</Icon>
             <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,4,16</HighlightIcon>
             <Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,4,16</Button>
+        </YieldInfo>
+        <YieldInfo>
+            <Type>YIELD_HAPPINESS</Type>
+            <Description>TXT_KEY_YIELD_HAPPINESS</Description>
+            <Civilopedia>TXT_KEY_YIELD_HAPPINESS_PEDIA</Civilopedia>
+            <bCargo>0</bCargo>
+            <iBuyPriceLow>0</iBuyPriceLow>
+            <iBuyPriceHigh>0</iBuyPriceHigh>
+            <iBuyPriceMin>0</iBuyPriceMin>
+            <iSellPriceDifference>0</iSellPriceDifference>
+            <iPriceChangeThreshold>0</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>0</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>0</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>0</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>0</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>0</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>0</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>0</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>0</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>-1</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>5</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>0</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>NONE</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>,Art/colonization_atlas_resources.dds,2,16</Icon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,3,16</HighlightIcon>
+            <Button>,Art/colonization_atlas_resources.dds,2,7</Button>
+        </YieldInfo>
+        <YieldInfo>
+            <Type>YIELD_UNHAPPINESS</Type>
+            <Description>TXT_KEY_YIELD_UNHAPPINESS</Description>
+            <Civilopedia>TXT_KEY_YIELD_UNHAPPINESS_PEDIA</Civilopedia>
+            <bCargo>0</bCargo>
+            <iBuyPriceLow>0</iBuyPriceLow>
+            <iBuyPriceHigh>0</iBuyPriceHigh>
+            <iBuyPriceMin>0</iBuyPriceMin>
+            <iSellPriceDifference>0</iSellPriceDifference>
+            <iPriceChangeThreshold>0</iPriceChangeThreshold>
+            <iPriceCorrectionPercent>0</iPriceCorrectionPercent>
+            <iEuropeVolumeAttrition>0</iEuropeVolumeAttrition>
+            <iAfricaBuyPriceLow>0</iAfricaBuyPriceLow>
+            <iAfricaBuyPriceHigh>0</iAfricaBuyPriceHigh>
+            <iAfricaSellPriceDifference>0</iAfricaSellPriceDifference>
+            <iPortRoyalBuyPriceLow>0</iPortRoyalBuyPriceLow>
+            <iPortRoyalBuyPriceHigh>0</iPortRoyalBuyPriceHigh>
+            <iPortRoyalSellPriceDifference>0</iPortRoyalSellPriceDifference>
+            <iNativeBuyPrice>-1</iNativeBuyPrice>
+            <iNativeSellPrice>-1</iNativeSellPrice>
+            <iNativeConsumptionPercent>-1</iNativeConsumptionPercent>
+            <iNativeHappy>0</iNativeHappy>
+            <iHillsChange>0</iHillsChange>
+            <iPeakChange>0</iPeakChange>
+            <iLakeChange>0</iLakeChange>
+            <iCityChange>0</iCityChange>
+            <iMinCity>0</iMinCity>
+            <iAIWeightPercent>100</iAIWeightPercent>
+            <iAIBaseValue>0</iAIBaseValue>
+            <iNativeBaseValue>0</iNativeBaseValue>
+            <iPower>0</iPower>
+            <iAsset>0</iAsset>
+            <ColorType>COLOR_YIELD_FOOD</ColorType>
+            <UnitClass>NONE</UnitClass>
+            <iTextureIndex>-1</iTextureIndex>
+            <iWaterTextureIndex>-1</iWaterTextureIndex>
+            <Icon>,Art/colonization_atlas_resources.dds,3,16</Icon>
+            <HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds.dds,3,16</HighlightIcon>
+            <Button>,Art/colonization_atlas_resources.dds,3,7</Button>
         </YieldInfo>
     </YieldInfos>
 </Civ4YieldInfos>

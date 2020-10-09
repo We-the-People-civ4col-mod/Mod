@@ -586,7 +586,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CONVERTED_TOWNHALL_1</Tag>
-        <English>Okay, give hin a bible.</English>
+        <English>Okay, give him a bible.</English>
         <French/>
         <German>Dies sei ihm gewährt. Weist ihm eine Arbeit zu.</German>
         <Italian/>
@@ -1201,6 +1201,22 @@
         <Spanish>Pah, the courtier would be confounded. Majesty, we will manage our colonies ourselves and better than a courtier from Europe. We will use the money for the development of the colony instead of preparing the chamber for your spy.</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_1</Tag>
+        <English>Search for this poor woman and bring her to the colonies. We can at least give her proper work with a steady income without angering the court too much. But do it without making much noise.</English>
+        <French>Search for this poor woman and bring her to the colonies. We can at least give her proper work with a steady income without angering the court too much. But do it without making much noise.</French>
+        <German>Sucht nach der armen Frau und bringt sie in die Kolonien. Wir können ihr zumindest eine anständige Arbeitstelle mit stetigem Einkommen beschaffen ohne den Hof zu sehr zu verärgern. Lasst dies jedoch leise geschehen.</German>
+        <Italian>Search for this poor woman and bring her to the colonies. We can at least give her proper work with a steady income without angering the court too much. But do it without making much noise.</Italian>
+        <Spanish>Search for this poor woman and bring her to the colonies. We can at least give her proper work with a steady income without angering the court too much. But do it without making much noise.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_2</Tag>
+        <English>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</English>
+        <French>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</French>
+        <German>Schicket der Frau etwas Geld und informiert den Hof Seiner Majestät, dass wir uns der Sache angenommen haben.</German>
+        <Italian>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</Italian>
+        <Spanish>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL</Tag>
         <English>The emissary promises you a deal of great advantage if your nation will be the first to build a great arsenal in the New World.</English>
         <French>L'émissaire promet un contrat très avantageux si notre Nation est la première à construire un Grand arsenal dans ls Nouveau Monde.</French>
@@ -1458,7 +1474,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_JUNGLE_FIRE_3</Tag>
-        <English>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_3</English>
+        <English>Another fire broke out, because we did not proprerly extinguish the first fire before.</English>
+        <German>Ein weiteres Feuer ist ausgebrochen, weil wir das vorherige nicht gelöscht hatten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_3</Tag>
+        <English>Another fire broke out, because we did not proprerly extinguish the first fire before.</English>
+        <German>Ein weiteres Feuer ist ausgebrochen, weil wir das vorherige nicht gelöscht hatten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KINGFURIOUS_1</Tag>
@@ -2772,7 +2794,7 @@
         <Tag>TXT_KEY_EVENT_WINTER_1</Tag>
         <English>Send as many furs and coats to Europe as we can spare.</English>
         <French>Envoyez autant de fourrures et de manteaux vers l'Europe que nous sommes en mesure d'offrir.</French>
-        <German>Ein bitterkalter Winter in unserer europäischen Heimat lässt die Menschen frieren. Schickt soviele Pelzwaren und Felle nach Europa, wie wir entbehren können!</German>
+        <German>Bitterkalte Winter in unserer europäischen Heimat lässt die Menschen frieren. Schickt soviele Pelzwaren und Felle nach Europa, wie wir entbehren können!</German>
         <Italian>Send as many furs and coats to Europe as we can spare.</Italian>
         <Spanish>Send as many furs and coats to Europe as we can spare.</Spanish>
     </TEXT>

@@ -211,6 +211,7 @@ public:
 	}
 #endif
 	bool at(int iX, int iY) const;
+	int getIndex() const;
 	int getLatitude() const;
 	int getFOWIndex() const;
 	DllExport CvArea* area() const;

@@ -826,6 +826,26 @@
         <Spanish>Fundar una misión[NEWLINE]Success rate: %d1_success</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_FAILED</Tag>
+        <English>Your native trader failed to establish a trade post in %s1_CityName.</English>
+        <German>Eurem Ureinwohnerhändler ist es nicht gelungen, in %s1_CityName einen Handelsposten zu errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
+        <English>Establish a trade post</English>
+        <German>Einen Handelsposten errichten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
+        <English>Establish a trade post [NEWLINE]Success rate: %d1_success</English>
+        <German>Einen Handelsposten errichten[NEWLINE]Erfolgschance: %d1_success</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_CREATED_TREASURE</Tag>
+        <English>Your trade post in %s1_CityName sends the collected gold back home to our colonies.</English>
+        <German>Euer Handelsposten in %s1_CityName sendet die erwirtschafteten Reichtümer zurück in die Kolonien.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MEMORY_MISSION_FAIL</Tag>
         <English>"Your missionaries have insulted our Spirits!"</English>
         <French>"Vos missionnaires ont insulté nos Esprits !"</French>
@@ -1142,6 +1162,14 @@
         <Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_LBD_REVOLT</Tag>
+        <English>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Un captif s'est revolté et enfui de %s1_city.[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Ein Unfreier in %s1_city hat revoltiert. Man vermutet, dass er in die Wildnis geflohen ist.[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
         <English>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</English>
         <French>[ICON_BULLET]Peut accueillir %d1_Num [NUM1:employé:employés]</French>
@@ -1204,6 +1232,14 @@
         <German>[ICON_BULLET]Kann fliehen, um sich seinem Schicksal zu entziehen</German>
         <Italian>[ICON_BULLET]Can flee</Italian>
         <Spanish>[ICON_BULLET]Can flee</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLT</Tag>
+        <English>[ICON_BULLET]Can revolt</English>
+        <French>[ICON_BULLET]Peut revolter</French>
+        <German>[ICON_BULLET]Kann revoltieren und zur Bedrohung werden</German>
+        <Italian>[ICON_BULLET]Can revolt</Italian>
+        <Spanish>[ICON_BULLET]Can revolt</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD1</Tag>
@@ -1319,11 +1355,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
-        <English>The reinforcement troops of our king have arrived.</English>
-        <French>Les renforts de notre roi sont arrivés.</French>
-        <German>Die Unterstützungstruppen unseres Königs sind eingetroffen.</German>
-        <Italian>The reinforcement troops of our king have arrived.</Italian>
-        <Spanish>The reinforcement troops of our king have arrived.</Spanish>
+        <English>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</English>
+        <French>Les renforts de notre roi sont arrivés. Les renforts du otre roi sont arrivés aussi.</French>
+        <German>Die Unterstützungstruppen unseres Königs sind eingetroffen. Wir haben Gerüche gehört, dass der König eures Gegners auch Unterstützungstruppen entsand hat.</German>
+        <Italian>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</Italian>
+        <Spanish>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
@@ -2316,5 +2352,69 @@
         <German>gekauft</German>
         <Italian>bought</Italian>
         <Spanish>bought</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
+        <English>Portuguese Colonies</English>
+        <French>Colonies portugaises</French>
+        <German>Colónias Portuguesas</German>
+        <Italian>Colonie portoghesi</Italian>
+        <Spanish>Portuguese Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
+        <English>Portuguese Empire</English>
+        <French>Empire portugais</French>
+        <German>Königreich Portugal</German>
+        <Italian>Impero Portoghese</Italian>
+        <Spanish>Portuguese Empire</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_DESC</Tag>
+        <English>Danish Colonies</English>
+        <French>Colonies danoises</French>
+        <German>Dänische Kolonien</German>
+        <Italian>Danish Colonies</Italian>
+        <Spanish>Danish Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_EUROPE_DESC</Tag>
+        <English>Kingdom of Denmark</English>
+        <French>Empire danois</French>
+        <German>Königreich von Dänemark</German>
+        <Italian>Kingdom of Denmark</Italian>
+        <Spanish>Kingdom of Denmark</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
+        <English>Swedish Colonies</English>
+        <French>Colonies suédoises</French>
+        <German>Schwedische Kolonien</German>
+        <Italian>Swedish Colonies</Italian>
+        <Spanish>Swedish Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
+        <English>Kingdom of Sweden</English>
+        <French>Empire Suédois</French>
+        <German>Königreich von Schweden</German>
+        <Italian>Kingdom of Sweden</Italian>
+        <Spanish>Kingdom of Sweden</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
+        <English>Russian Colonies</English>
+        <French>Colonies russes</French>
+        <German>Russische Kolonien</German>
+        <Italian>Russian Colonies</Italian>
+        <Spanish>Russian Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_DESC</Tag>
+        <English>Russian Empire</English>
+        <French>Empire Russe</French>
+        <German>Russisches Reich</German>
+        <Italian>Russian Empire</Italian>
+        <Spanish>Russian Empire</Spanish>
     </TEXT>
 </Civ4GameText>

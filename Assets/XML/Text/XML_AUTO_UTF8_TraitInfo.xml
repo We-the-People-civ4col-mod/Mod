@@ -646,7 +646,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_NICOLAS_MONARDES</Tag>
-        <English>TXT_KEY_FATHER_NICOLAS_MONARDES</English>
+        <English>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_NOMADS</Tag>
@@ -911,5 +911,29 @@
     <TEXT>
         <Tag>TXT_KEY_TRAIT_WILLIAM_BREWSTER</Tag>
         <English>TXT_KEY_FATHER_WILLIAM_BREWSTER</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_HERMAN_OF_ALASKA</Tag>
+        <English>TXT_KEY_FATHER_HERMAN_OF_ALASKA</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_IVAN_KUSKOV</Tag>
+        <English>TXT_KEY_FATHER_IVAN_KUSKOV</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_NIKOLAI_REZANOV</Tag>
+        <English>TXT_KEY_FATHER_NIKOLAI_REZANOV</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_IVAN_KRUZENSHTERN</Tag>
+        <English>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAIT_WALTER_RALEIGH</Tag>
+        <English>TXT_KEY_FATHER_WALTER_RALEIGH</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_VELAZQUEZ_DE_CUELLAR</Tag>
+        <English>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR</English>
     </TEXT>
 </Civ4GameText>

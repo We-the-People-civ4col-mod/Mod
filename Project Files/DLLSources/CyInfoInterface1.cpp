@@ -101,6 +101,9 @@ void CyInfoPythonInterface1()
 		.def("LbD_canGetFree", &CvUnitInfo::LbD_canGetFree, "bool ()")
 		.def("LbD_canEscape", &CvUnitInfo::LbD_canEscape, "bool ()")		
 		// TAC - LbD - Ray - END
+		// WTP, ray, LbD Slaves Revolt and Free - START
+		.def("LbD_canRevolt", &CvUnitInfo::LbD_canRevolt, "bool ()")
+		// WTP, ray, LbD Slaves Revolt and Free - END
 		.def("getAIWeight", &CvUnitInfo::getAIWeight, "int ()")
 		.def("getHurryCostModifier", &CvUnitInfo::getHurryCostModifier, "int ()")
 		.def("getEuropeCost", &CvUnitInfo::getEuropeCost, "int ()")
@@ -112,6 +115,7 @@ void CyInfoPythonInterface1()
 		.def("getWorkRate", &CvUnitInfo::getWorkRate, "int ()")
 		.def("getWorkRateModifier", &CvUnitInfo::getWorkRateModifier, "int ()")
 		.def("getMissionaryRateModifier", &CvUnitInfo::getMissionaryRateModifier, "int ()")
+		.def("getNativeTradeRateModifier", &CvUnitInfo::getNativeTradeRateModifier, "int ()") // WTP, ray, Native Trade Posts - START
 		.def("getCombat", &CvUnitInfo::getCombat, "int ()")
 		.def("setCombat", &CvUnitInfo::setCombat, "void (int)")
 		.def("getXPValueAttack", &CvUnitInfo::getXPValueAttack, "int ()")

@@ -145,8 +145,6 @@
         <English>Wild Animals wander the lands and seas of the World.</English>
         <French>[H1]Animaux sauvages[\H1][NEWLINE][PARAGRAPH:2][BOLD]Histoire :[\BOLD][NEWLINE][TAB]Au début d'une partie, des prédateurs errent dans le monde. Ces animaux attaquent les unités qui passent à leur portée. La menace est particulièrement grande pour les unités désarmées comme les ouvriers ou les colons. Les animaux sauvages peuvent être combattus et détruits comme toute autre unité du jeu. Ils n'apparaissent pas ni ne circulent dans les zones délimitées par une [LINK=CONCEPT_BORDERS]Frontière nationale[\LINK]. Ils disparaîtront progressivement au fur et à mesure de l'extension des implantations humaines..</French>
         <German>Wilde Tiere können zu Land und zu Wasser gefunden werden.</German>
-        <Italian>Wild Animals wander the lands and seas of the World.</Italian>
-        <Spanish>Wild Animals wander the lands and seas of the World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_BLACKFOOT</Tag>
@@ -394,7 +392,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_PEDIA</Tag>
-        <English>TXT_KEY_CIV_DUTCH_EUROPE_PEDIA</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_DUTCH_PEDIA</Tag>
@@ -446,7 +444,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_PEDIA</Tag>
-        <English>TXT_KEY_CIV_ENGLAND_EUROPE_PEDIA</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_ENGLAND_PEDIA</Tag>
@@ -498,7 +496,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_PEDIA</Tag>
-        <English>TXT_KEY_CIV_FRANCE_EUROPE_PEDIA</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_FRANCE_PEDIA</Tag>
@@ -1090,7 +1088,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_PEDIA</Tag>
-        <English>TXT_KEY_CIV_SPAIN_EUROPE_PEDIA</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_SPAIN_PEDIA</Tag>

@@ -70,7 +70,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -270,7 +270,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -347,7 +347,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -417,7 +417,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -527,7 +527,7 @@
             <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>25</iWeight>
+            <iWeight>100</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -562,7 +562,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>1</bPickPlayer>
@@ -670,7 +670,7 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>20</iWeight>
@@ -708,7 +708,7 @@
             <bPrereqEventPlot>0</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>0</bGlobal>
+            <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -737,7 +737,7 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>-1</iWeight>
@@ -775,9 +775,9 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>0</bGlobal>
+            <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -804,9 +804,9 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>200</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
@@ -830,7 +830,7 @@
                 <BuildingClass>BUILDINGCLASS_FUR_TRADING_POST</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_FUR_FACTORY</BuildingClass>
             </BuildingsRequired>
-            <iNumBuildings>1</iNumBuildings>
+            <iNumBuildings>3</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
             <iNumPlotsRequired>0</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
@@ -898,7 +898,7 @@
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
             <UnitsRequired/>
-            <iNumUnits>1</iNumUnits>
+            <iNumUnits>0</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>-1</iUnitDistanceWeight>
@@ -924,7 +924,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -974,7 +974,7 @@
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
             <UnitsRequired/>
-            <iNumUnits>1</iNumUnits>
+            <iNumUnits>0</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>-1</iUnitDistanceWeight>
@@ -1002,7 +1002,7 @@
                 <Event>EVENT_FARM_BANDITS_3</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -1082,7 +1082,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -1329,15 +1329,15 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>200</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
             <iMinTreasury>0</iMinTreasury>
-            <iMinPopulation>0</iMinPopulation>
+            <iMinPopulation>20</iMinPopulation>
             <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
@@ -1410,7 +1410,9 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-            <UnitsRequired/>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_SCOUT</UnitClass>
+            </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -1603,7 +1605,7 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>5</iWeight>
@@ -1651,9 +1653,9 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>0</bGlobal>
+            <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -1948,7 +1950,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -1996,6 +1998,7 @@
                 <UnitClass>UNITCLASS_FRIGATE</UnitClass>
                 <UnitClass>UNITCLASS_SHIP_OF_THE_LINE</UnitClass>
                 <UnitClass>UNITCLASS_WHALING_BOAT</UnitClass>
+                <UnitClass>UNITCLASS_FISHING_BOAT</UnitClass>
             </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
@@ -2183,7 +2186,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -2198,7 +2201,7 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>200</iWeight>
@@ -2254,7 +2257,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -2268,7 +2271,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isHuman</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -2283,9 +2286,9 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>200</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -2339,7 +2342,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -2353,7 +2356,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isHuman</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -3669,7 +3672,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Quest_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>200</iWeight>
+            <iWeight>-1</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -3718,7 +3721,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDo>isHuman</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -3760,7 +3763,7 @@
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
             <iNumPlotsRequired>1</iNumPlotsRequired>
-            <bOwnPlot>1</bOwnPlot>
+            <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
@@ -3791,7 +3794,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDo>isHuman</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -3815,14 +3818,16 @@
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
-            <iMinTreasury>0</iMinTreasury>
-            <iMinPopulation>15</iMinPopulation>
+            <iMinTreasury>2000</iMinTreasury>
+            <iMinPopulation>10</iMinPopulation>
             <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-            <UnitsRequired/>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_CARPENTER</UnitClass>
+            </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -3989,7 +3994,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -4060,7 +4065,7 @@
                 <Event>EVENT_THE_ROYALS_1</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -4131,7 +4136,7 @@
                 <Event>EVENT_THE_ROYALS_2</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -4202,7 +4207,7 @@
                 <Event>EVENT_THE_ROYALS_3</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -4273,7 +4278,7 @@
                 <Event>EVENT_THE_ROYALS_4</Event>
             </PrereqEvents>
             <bPrereqEventPlot>1</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>1</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -4522,7 +4527,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -4661,7 +4666,7 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>-1</iWeight>
@@ -4751,12 +4756,12 @@
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
             <iUnitExperienceWeight>0</iUnitExperienceWeight>
-            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <bUnitsOnPlot>1</bUnitsOnPlot>
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
-            <bOwnPlot>0</bOwnPlot>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
+            <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
@@ -4777,7 +4782,7 @@
             <bOtherPlayerNative>0</bOtherPlayerNative>
             <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
             <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
-            <bPickCity>1</bPickCity>
+            <bPickCity>0</bPickCity>
             <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
@@ -5146,7 +5151,7 @@
             <bTutorial>0</bTutorial>
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/hudson.dds</EventArt>
-            <iPercentGamesActive>80</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>-1</iWeight>
             <bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -5576,7 +5581,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -5644,7 +5649,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -6192,7 +6197,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -6263,7 +6268,7 @@
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
             <iPercentGamesActive>100</iPercentGamesActive>
-            <iWeight>500</iWeight>
+            <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
@@ -6455,7 +6460,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6596,7 +6601,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6669,7 +6674,7 @@
             <bShowPlot>0</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6813,7 +6818,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -6960,7 +6965,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7039,7 +7044,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7119,7 +7124,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7193,7 +7198,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7341,7 +7346,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -7472,7 +7477,7 @@
             <bPrereqEventPlot>0</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>1</bGlobal>
+            <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -8399,7 +8404,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8469,7 +8474,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8494,8 +8499,8 @@
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
             <iMinTreasury>0</iMinTreasury>
-            <iMinPopulation>0</iMinPopulation>
-            <iMaxPopulation>5</iMaxPopulation>
+            <iMinPopulation>5</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
@@ -8629,7 +8634,7 @@
             <bTutorial>0</bTutorial>
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>500</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8653,7 +8658,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8668,7 +8673,7 @@
             <bPrereqEventPlot>0</bPrereqEventPlot>
             <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
-            <bGlobal>1</bGlobal>
+            <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
             <bOtherPlayerWar>0</bOtherPlayerWar>
             <bOtherPlayerAI>0</bOtherPlayerAI>
@@ -8695,9 +8700,9 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>500</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8721,7 +8726,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8818,7 +8823,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8835,9 +8840,9 @@
                 </TriggerText>
             </TriggerTexts>
             <bTutorial>0</bTutorial>
-            <bSinglePlayer>0</bSinglePlayer>
+            <bSinglePlayer>1</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>100</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8862,7 +8867,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8889,7 +8894,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDo>isHuman</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -8908,7 +8913,7 @@
             <bTutorial>0</bTutorial>
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>500</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -8932,7 +8937,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -8979,7 +8984,7 @@
             <bTutorial>0</bTutorial>
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>1000</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -9003,7 +9008,7 @@
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
             <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
@@ -9049,7 +9054,7 @@
             <bTutorial>0</bTutorial>
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>500</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -9069,12 +9074,16 @@
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
             <iUnitExperienceWeight>0</iUnitExperienceWeight>
-            <bUnitsOnPlot>1</bUnitsOnPlot>
-            <BuildingsRequired/>
-            <iNumBuildings>0</iNumBuildings>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired>
+                <BuildingClass>BUILDINGCLASS_TOWNHALL</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+            </BuildingsRequired>
+            <iNumBuildings>3</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
             <iNumPlotsRequired>0</iNumPlotsRequired>
-            <bOwnPlot>1</bOwnPlot>
+            <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
@@ -9094,13 +9103,13 @@
             <bOtherPlayerAI>0</bOtherPlayerAI>
             <bOtherPlayerNative>0</bOtherPlayerNative>
             <bOtherPlayerPlayable>1</bOtherPlayerPlayable>
-            <iOtherPlayerShareBorders>1</iOtherPlayerShareBorders>
-            <bPickCity>0</bPickCity>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>1</bPickCity>
             <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -9251,7 +9260,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -9285,7 +9294,7 @@
             <UnitsRequired>
                 <UnitClass>UNITCLASS_PREACHER</UnitClass>
             </UnitsRequired>
-            <iNumUnits>1</iNumUnits>
+            <iNumUnits>2</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>-1</iUnitDistanceWeight>
@@ -9326,7 +9335,7 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>0</iCityFoodWeight>
-            <PythonCanDo/>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
@@ -9487,7 +9496,7 @@
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
             <Civic>NONE</Civic>
             <iMinTreasury>5000</iMinTreasury>
-            <iMinPopulation>5</iMinPopulation>
+            <iMinPopulation>15</iMinPopulation>
             <iMaxPopulation>0</iMaxPopulation>
             <iMinMapLandmass>0</iMinMapLandmass>
             <iMinOurLandmass>0</iMinOurLandmass>
@@ -9519,6 +9528,79 @@
             <Events>
                 <Event>EVENT_GOVERNOR_1</Event>
                 <Event>EVENT_GOVERNOR_2</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>1</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_GOVERNOR_LOVER</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_GOVERNOR_LOVER</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENT_TRIGGER_GOVERNOR_LOVER</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Governor.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>1500</iMinTreasury>
+            <iMinPopulation>20</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_GOVERNOR</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>1</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired>
+                <BuildingClass>BUILDINGCLASS_CITYHALL</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+            </BuildingsRequired>
+            <iNumBuildings>6</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_GOVERNOR_LOVER_1</Event>
+                <Event>EVENT_GOVERNOR_LOVER_2</Event>
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
@@ -9596,7 +9678,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -9670,7 +9752,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -10201,7 +10283,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -10372,7 +10454,7 @@
             <bTutorial>0</bTutorial>
             <bSinglePlayer>0</bSinglePlayer>
             <EventArt>,Art/achievements/brigantine.dds</EventArt>
-            <iPercentGamesActive>0</iPercentGamesActive>
+            <iPercentGamesActive>100</iPercentGamesActive>
             <iWeight>-1</iWeight>
             <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
             <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
@@ -10392,7 +10474,7 @@
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
             <iUnitExperienceWeight>0</iUnitExperienceWeight>
-            <bUnitsOnPlot>1</bUnitsOnPlot>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
             <BuildingsRequired>
                 <BuildingClass>BUILDINGCLASS_LANDING_STAGE</BuildingClass>
                 <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
@@ -10403,7 +10485,7 @@
             <iNumBuildings>1</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
             <iNumPlotsRequired>0</iNumPlotsRequired>
-            <bOwnPlot>1</bOwnPlot>
+            <bOwnPlot>0</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
@@ -10416,7 +10498,7 @@
             </Events>
             <PrereqEvents/>
             <bPrereqEventPlot>0</bPrereqEventPlot>
-            <bRecurring>1</bRecurring>
+            <bRecurring>0</bRecurring>
             <bTeam>0</bTeam>
             <bGlobal>0</bGlobal>
             <bPickPlayer>0</bPickPlayer>
@@ -10430,8 +10512,854 @@
             <bShowPlot>1</bShowPlot>
             <bFrontPopup>0</bFrontPopup>
             <iCityFoodWeight>1</iCityFoodWeight>
-            <PythonCanDo>TriggerChance</PythonCanDo>
+            <PythonCanDo>isPlayable</PythonCanDo>
             <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST</Type>
+            <WorldNewsTexts/>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Quest_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>10</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>1</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_FIVE_WAGON_TRAINS_QUEST</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>0</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE_WORLD</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>5</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_1</Event>
+                <Event>EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_2</Event>
+            </Events>
+            <PrereqEvents>
+                <Event>EVENT_FIVE_WAGON_TRAINS_QUEST</Event>
+            </PrereqEvents>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>1</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST</Type>
+            <WorldNewsTexts/>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Quest_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>10</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_TRAPPER</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>1</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired>
+                <BuildingClass>BUILDINGCLASS_FUR_TRADERS_HOUSE</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_FUR_TRADING_POST</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_FUR_FACTORY</BuildingClass>
+            </BuildingsRequired>
+            <iNumBuildings>1</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_FIVE_FUR_TRAPPERS_QUEST</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>0</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE_WORLD</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_TRAPPER</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>5</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_FIVE_FUR_TRAPPERS_QUEST_DONE_1</Event>
+                <Event>EVENT_FIVE_FUR_TRAPPERS_QUEST_DONE_2</Event>
+            </Events>
+            <PrereqEvents>
+                <Event>EVENT_FIVE_FUR_TRAPPERS_QUEST</Event>
+            </PrereqEvents>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>1</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_MANY_SLAVES_QUEST</Type>
+            <WorldNewsTexts/>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Quest_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>20</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_TOBACCO_PLANTER</UnitClass>
+                <UnitClass>UNITCLASS_COTTON_PLANTER</UnitClass>
+                <UnitClass>UNITCLASS_SUGAR_PLANTER</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>6</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_MANY_SLAVES_QUEST</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>0</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_MANY_SLAVES_QUEST_DONE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE_WORLD</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_AFRICAN_SLAVE</UnitClass>
+                <UnitClass>UNITCLASS_NATIVE_SLAVE</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>6</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_MANY_SLAVES_QUEST_DONE_1</Event>
+                <Event>EVENT_MANY_SLAVES_QUEST_DONE_2</Event>
+            </Events>
+            <PrereqEvents>
+                <Event>EVENT_MANY_SLAVES_QUEST</Event>
+            </PrereqEvents>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>1</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST</Type>
+            <WorldNewsTexts/>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Quest_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>10</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_SMALL_COASTAL_SHIP</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>1</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired>
+                <BuildingClass>BUILDINGCLASS_MARKET</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_TOWN_MARKET</BuildingClass>
+                <BuildingClass>BUILDINGCLASS_CENTRAL_CITY_MARKET</BuildingClass>
+            </BuildingsRequired>
+            <iNumBuildings>1</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>0</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_WORLD</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_SMALL_COASTAL_SHIP</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>3</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_1</Event>
+                <Event>EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_2</Event>
+            </Events>
+            <PrereqEvents>
+                <Event>EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST</Event>
+            </PrereqEvents>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>1</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_SELL_NATIVE_SLAVE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_SELL_NATIVE_SLAVE</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENT_TRIGGER_SELL_NATIVE_SLAVE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>2000</iWeight>
+            <bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>200</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>-1</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_NATIVE_SLAVE</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>1</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>1</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
+            <bOwnPlot>1</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_SELL_NATIVE_SLAVE_KEEP</Event>
+                <Event>EVENT_SELL_NATIVE_SLAVE_FREE</Event>
+                <Event>EVENT_SELL_NATIVE_SLAVE_SELL</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>1</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_SELL_AFRICAN_SLAVE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_EVENTTRIGGER_SELL_AFRICAN_SLAVE</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENT_TRIGGER_SELL_AFRICAN_SLAVE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>2000</iWeight>
+            <bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>-1</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired>
+                <UnitClass>UNITCLASS_AFRICAN_SLAVE</UnitClass>
+            </UnitsRequired>
+            <iNumUnits>1</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>1</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
+            <bOwnPlot>1</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_SELL_AFRICAN_SLAVE_FREE</Event>
+                <Event>EVENT_SELL_AFRICAN_SLAVE_KEEP</Event>
+                <Event>EVENT_SELL_AFRICAN_SLAVE_SELL</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>0</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo>isPlayable</PythonCanDo>
+            <PythonCanDoCity/>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+<!-- EUROPE TRADE EventTriggers -->
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/quest_image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>-1</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired/>
+            <iNumUnits>0</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>0</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_START</Event>
+            </Events>
+            <PrereqEvents/>
+            <bPrereqEventPlot>0</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>1</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>1</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo/>
+            <PythonCanDoCity>canTriggerEuropeTradeQuest_SUGAR_START</PythonCanDoCity>
+            <PythonCanDoUnit/>
+            <PythonCallback/>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
+            <Type>EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Type>
+            <WorldNewsTexts>
+                <Text>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Text>
+            </WorldNewsTexts>
+            <TriggerTexts>
+                <TriggerText>
+                    <Text>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_DONE</Text>
+                    <Era>NONE</Era>
+                </TriggerText>
+            </TriggerTexts>
+            <bTutorial>0</bTutorial>
+            <bSinglePlayer>0</bSinglePlayer>
+            <EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+            <iPercentGamesActive>100</iPercentGamesActive>
+            <iWeight>-1</iWeight>
+            <bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+            <bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+            <Civic>NONE</Civic>
+            <iMinTreasury>0</iMinTreasury>
+            <iMinPopulation>0</iMinPopulation>
+            <iMaxPopulation>0</iMaxPopulation>
+            <iMinMapLandmass>0</iMinMapLandmass>
+            <iMinOurLandmass>0</iMinOurLandmass>
+            <iMaxOurLandmass>-1</iMaxOurLandmass>
+            <MinDifficulty>NONE</MinDifficulty>
+            <UnitsRequired/>
+            <iNumUnits>0</iNumUnits>
+            <iNumUnitsGlobal>0</iNumUnitsGlobal>
+            <iUnitDamagedWeight>0</iUnitDamagedWeight>
+            <iUnitDistanceWeight>0</iUnitDistanceWeight>
+            <iUnitExperienceWeight>0</iUnitExperienceWeight>
+            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <BuildingsRequired/>
+            <iNumBuildings>0</iNumBuildings>
+            <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+            <iNumPlotsRequired>0</iNumPlotsRequired>
+            <bOwnPlot>1</bOwnPlot>
+            <iPlotType>-1</iPlotType>
+            <FeaturesRequired/>
+            <TerrainsRequired/>
+            <ImprovementsRequired/>
+            <RoutesRequired/>
+            <Events>
+                <Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE</Event>
+            </Events>
+            <PrereqEvents>
+                <Event>EVENT_EUROPE_TRADE_QUEST_SUGAR_START</Event>
+            </PrereqEvents>
+            <bPrereqEventPlot>1</bPrereqEventPlot>
+            <bRecurring>0</bRecurring>
+            <bTeam>0</bTeam>
+            <bGlobal>0</bGlobal>
+            <bPickPlayer>0</bPickPlayer>
+            <bOtherPlayerWar>0</bOtherPlayerWar>
+            <bOtherPlayerAI>0</bOtherPlayerAI>
+            <bOtherPlayerNative>0</bOtherPlayerNative>
+            <bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+            <iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+            <bPickCity>1</bPickCity>
+            <bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+            <bShowPlot>1</bShowPlot>
+            <bFrontPopup>0</bFrontPopup>
+            <iCityFoodWeight>0</iCityFoodWeight>
+            <PythonCanDo/>
+            <PythonCanDoCity>canTriggerEuropeTradeQuest_SUGAR_DONE</PythonCanDoCity>
             <PythonCanDoUnit/>
             <PythonCallback/>
         </EventTriggerInfo>

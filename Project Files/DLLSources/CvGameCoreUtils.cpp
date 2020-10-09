@@ -1819,6 +1819,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_SETTLER: szString = L"settler"; break;
 	case UNITAI_WORKER: szString = L"worker"; break;
 	case UNITAI_MISSIONARY: szString = L"missionary"; break;
+	case UNITAI_TRADER: szString = L"trade"; break; // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT: szString = L"scout"; break;
 	case UNITAI_WAGON: szString = L"wagon"; break;
 	case UNITAI_TREASURE: szString = L"treasure"; break;

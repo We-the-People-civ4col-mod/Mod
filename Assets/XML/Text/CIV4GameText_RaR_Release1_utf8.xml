@@ -337,7 +337,7 @@
         <Tag>TXT_KEY_BOUGHT_NOBLE</Tag>
         <English>The Famous Noble from Europe has arrived in %s1_city, Mylord.</English>
         <French>Le Noble célèbre est arrivé a%s1_city, Monseigneur.</French>
-        <German>Der berühmte Edelmannin ist in %s1_city angekommen, Mylord.</German>
+        <German>Der berühmte Edelmann ist in %s1_city angekommen, Mylord.</German>
         <Italian>The Famous Noble from Europe has arrived in %s1_city, Mylord.</Italian>
         <Spanish>The Famous Noble from Europe has arrived in %s1_city, Mylord.</Spanish>
     </TEXT>
@@ -565,6 +565,16 @@
         <Italian>Gli schiavi che abbiamo comprato dall'Africa sono arrivati in %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos que compramos de África han llegado %s1_city, Mylord.</Spanish>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used for transports of goods and peoples near the coast. They are small, but fast and indeed faster and more spacious than wagon trains. They can only be used near the coast but they cannot use ocean fields so that they cannot sail to Europe. The small coastal ship has two slots for goods and peoples, the bigger one has three slots.</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur geringfügig verteidigen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping [COLOR_REVERT] is - of course - operated near the coast. Small and habile as well as spacious sailling vessels are suitable to transport goods and peoples between the colonies already shortly after the landing in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</English>
+		<German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und wendige - dafür aber recht geräumige Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der neuen Welt Schiffe zu bauen, mit denen Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln. </German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
         <English>Consumes: %s1_symbol_list</English>
@@ -948,8 +958,11 @@ Multiple repeating units is possible and an equal number will be trained of each
         <English>Native info</English>
         <French>Informations sur les indigènes</French>
         <German>Informationen zu den Ureinwohnern</German>
-        <Italian>Native info</Italian>
-        <Spanish>Native info</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
+        <English>Jump to settlement</English>
+        <German>Siedlung anzeigen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GROWTH</Tag>
@@ -1457,11 +1470,11 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% better prices from Bargaining</English>
+        <English>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</English>
         <French>[ICON_BULLET]%D1%% permet d'obtenir des meilleur prix en négociant</French>
-        <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen</German>
-        <Italian>[ICON_BULLET]%D1%% better prices from Bargaining</Italian>
-        <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining</Spanish>
+        <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
+        <Italian>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Italian>
+        <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>

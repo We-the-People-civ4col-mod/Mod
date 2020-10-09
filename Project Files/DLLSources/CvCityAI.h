@@ -38,7 +38,7 @@ public:
 
 	DllExport BuildingTypes AI_bestBuilding(int iFocusFlags = 0, int iMaxTurns = 0, bool bAsync = false) const;
 	BuildingTypes AI_bestBuildingThreshold(int iFocusFlags = 0, int iMaxTurns = 0, int iMinThreshold = 0, bool bAsync = false) const;
-	BuildingTypes AI_bestBuildingIgnoreRequirements(int iFocusFlags = 0, int iMaxTurns = 0);
+	BuildingTypes AI_bestBuildingIgnoreRequirements(int iFocusFlags = 0, int iMaxTurns = 0) const;
 
 	bool AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity = false) const;	// TAC - AI Buildings - koma13
 	
@@ -77,7 +77,7 @@ public:
 	DllExport int AI_getBestBuildValue(int iIndex) const;
 	DllExport int AI_totalBestBuildValue(CvArea* pArea) const;
 
-	int AI_clearFeatureValue(int iIndex);
+	int AI_clearFeatureValue(int iIndex) const;
 	DllExport BuildTypes AI_getBestBuild(int iIndex) const;
 	DllExport int AI_countBestBuilds(CvArea* pArea) const;
 	DllExport void AI_updateBestBuild();
@@ -277,6 +277,8 @@ protected:
 	void AI_updateWorkersNeededHere();
 
 	bool AI_hasCoastalRoute() const;
+
+	void AI_assignCityPlot();
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
