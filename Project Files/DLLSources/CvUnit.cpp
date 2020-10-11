@@ -3167,7 +3167,15 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (bIgnoreLoad || plot()->isWater() || !canLoad(pPlot, false))
 			{
-				return false;
+				//WTP, ray, Large Rivers - START
+				// allowing all Land Units to enter Large Rivers
+				// further below we will code exceptions - Maybe also configure in XML
+				//return false;
+				if(pPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+				{
+					return false;
+				}
+				//WTP, ray, Large Rivers - END
 			}
 		}
 		break;

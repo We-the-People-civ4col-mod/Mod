@@ -958,6 +958,13 @@ bool CvPlot::isWithinTeamCityRadius(TeamTypes eTeam, PlayerTypes eIgnorePlayer) 
 
 bool CvPlot::isLake() const
 {
+	//WTP, ray, Large Rivers - Start
+	if (getTerrainType() == TERRAIN_LARGE_RIVERS)
+	{
+		return false;
+	}
+	//WTP, ray, Large Rivers - END
+
 	CvArea* pArea;
 
 	pArea = area();
@@ -4749,7 +4756,14 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 			{
 				if (isAdjacentToLand())
 				{
-					setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					//WTP, ray, Large Rivers - START
+					//we do not want to change Large Rivers to Coast, only Ocean
+					// setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					if (getTerrainType() != TERRAIN_LARGE_RIVERS)
+					{
+						setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					}
+					//WTP, ray, Large Rivers - END
 				}
 				else
 				{
@@ -4778,7 +4792,14 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 						{
 							if (pLoopPlot->isAdjacentToLand())
 							{
-								pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								//WTP, ray, Large Rivers - START
+								//we do not want to change Large Rivers to Coast, only Ocean
+								// pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+								{
+									pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								}
+								//WTP, ray, Large Rivers - END
 							}
 							else
 							{

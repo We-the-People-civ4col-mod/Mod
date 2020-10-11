@@ -421,7 +421,7 @@
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>1</bLbDCanGetFree>
-            <bLbDCanEscape>1</bLbDCanEscape>
+            <bLbDCanEscape>0</bLbDCanEscape>
             <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
@@ -10394,7 +10394,7 @@
                 <YieldDemand>
                     <YieldType>YIELD_BEER</YieldType>
                     <iYieldDemand>10</iYieldDemand>
-                </YieldDemand>
+                </YieldDemand>>
             </YieldDemands>
             <YieldChanges>
                 <YieldChange>
@@ -32351,7 +32351,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -32523,7 +32528,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -32695,7 +32705,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -32867,7 +32882,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -33039,7 +33059,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -33211,7 +33236,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -33392,7 +33422,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>36</iCombat>
@@ -33551,7 +33586,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>38</iCombat>
@@ -33961,7 +34001,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>33</iCombat>
@@ -34124,7 +34169,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>35</iCombat>
@@ -34440,7 +34490,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>35</iCombat>
@@ -34607,7 +34662,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>45</iCombat>
@@ -34765,7 +34825,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>55</iCombat>
@@ -34919,7 +34984,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>65</iCombat>
@@ -35065,7 +35135,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
@@ -42247,7 +42322,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
@@ -42385,7 +42465,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
@@ -42523,7 +42608,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
@@ -42661,7 +42751,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
