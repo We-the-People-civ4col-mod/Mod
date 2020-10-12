@@ -3062,13 +3062,17 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 
 		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 		{
-			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
+			//WTP, ray, Large Rivers - START
+			// stop large ships from entering Large Rivers in own Terrain
+			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
+			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
 			{
 				if (bIgnoreLoad || !canLoad(pPlot, true))
 				{
 					return false;
 				}
 			}
+			//WTP, ray, Large Rivers - END
 		}
 	}
 
