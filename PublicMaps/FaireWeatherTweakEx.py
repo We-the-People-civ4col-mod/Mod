@@ -3131,7 +3131,7 @@ def getCustomMapOptionDefault(argsList):
     # TAC - Map scripts - koma13 - END
 
     elif mc.mapOptionNames[optionID] == "colony catchment radius":
-        return 0
+        return CyGlobalContext().getDefaultCityCatchmentRadius()
     return 0
     
 def isRandomCustomMapOption(argsList):

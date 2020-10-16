@@ -32,6 +32,11 @@ def getWrapY():
 
 def getGridSize(argsList):
 	"Reduce grid sizes by one level."
+	
+	# set city catchment radius
+	mmap = CyGlobalContext().getMap()
+	mmap.setCityCatchmentRadius(mmap.getCustomMapOption(0))
+	
 	grid_sizes = {
 		WorldSizeTypes.WORLDSIZE_TINY:		(40,24),
 		WorldSizeTypes.WORLDSIZE_SMALL:		(52,32),
@@ -1272,3 +1277,72 @@ def addFeatures():
 	return 0
 
 
+def getNumCustomMapOptions():
+	"""
+	Number of different user-defined options for this map
+	Return an integer
+	"""
+	return 1
+	
+def getCustomMapOptionName(argsList):
+	"""
+	Returns name of specified option
+	argsList[0] is Option ID (int)
+	Return a Unicode string
+	"""
+	optionID = argsList[0]
+	if optionID == 0:
+		 return CyTranslator().getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS", ())
+	return u""
+	
+def getNumCustomMapOptionValues(argsList):
+	"""
+	Number of different choices for a particular setting
+	argsList[0] is Option ID (int)
+	Return an integer
+	"""
+	optionID = argsList[0]
+	if optionID == 0:
+		return 2
+	
+	return 0
+	
+def getCustomMapOptionDescAt(argsList):
+	"""
+	Returns name of value of option at specified row
+	argsList[0] is Option ID (int)
+	argsList[1] is Selection Value ID (int)
+	Return a Unicode string
+	"""
+	optionID = argsList[0]
+	selectionID = argsList[1]
+	if optionID == 0:
+		if selectionID == 0:
+			return CyTranslator().getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT", ())
+		elif selectionID == 1:
+			return CyTranslator().getText("TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT", ())
+
+	return u""
+
+def getCustomMapOptionDefault(argsList):
+	"""
+	Returns default value of specified option
+	argsList[0] is Option ID (int)
+	Return an integer
+	"""
+	optionID = argsList[0]
+	if optionID == 0:
+		return CyGlobalContext().getDefaultCityCatchmentRadius()
+	return 0
+
+def isRandomCustomMapOption(argsList):
+	"""
+	Returns a flag indicating whether a random option should be provided
+	argsList[0] is Option ID (int)
+	Return a bool
+	"""
+	optionID = argsList[0]
+	if optionID == 0:
+		return False
+
+	return False

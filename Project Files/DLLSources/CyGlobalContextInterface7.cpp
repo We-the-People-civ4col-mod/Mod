@@ -60,6 +60,7 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 		.def("getDiplomacyPowerTypes", &CyGlobalContext::getDiplomacyPowerTypes, "string () - Returns enum string")
 		/// one/two city plot radius
 		.def("getCityDiameter", &CyGlobalContext::getCityDiameter, "int ()")
+		.def("getDefaultCityCatchmentRadius", &CyGlobalContext::getDefaultCityCatchmentRadius, "int ()")
 		// city radius end
 		.def("setGameFontDebug", &CyGlobalContext::setGameFontDebug, "(int)")
 		.def("setDomesticAdvisorState", &CyGlobalContext::setDomesticAdvisorState, "(int)")

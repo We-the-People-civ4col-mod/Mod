@@ -209,6 +209,7 @@
     <ClCompile Include="DLLSources\CyUnitInterface2.cpp" />
     <ClCompile Include="DLLSources\FAssert.cpp" />
     <ClCompile Include="DLLSources\FDialogTemplate.cpp" />
+    <ClCompile Include="DLLSources\UserSettings.cpp" />
     <ClCompile Include="DLLSources\_precompile.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -334,6 +335,7 @@
     <ClInclude Include="DLLSources\JustInTimeArray.h" />
     <ClInclude Include="DLLSources\LinkedList.h" />
     <ClInclude Include="DLLSources\resource.h" />
+    <ClInclude Include="DLLSources\UserSettings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl" />

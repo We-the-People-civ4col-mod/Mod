@@ -442,6 +442,9 @@
     <ClCompile Include="DLLSources\Profile.cpp">
       <Filter>Maintenance\Profile</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\UserSettings.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -809,6 +812,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\Profile.h">
       <Filter>Maintenance\Profile</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\UserSettings.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -14,7 +14,7 @@ from array import *
 # globals
 gc = CyGlobalContext()
 version = 11
-fileencoding = "latin_1"	# aka "iso-8859-1"
+fileencoding = "cp1252"	# aka "iso-8859-1"
 
 #############
 def getPlayer(idx):
@@ -1168,7 +1168,7 @@ class CvMapDesc:
 		self.numSignsWritten = 0
 		self.bRandomizeResources = "false"
 		self.bRandomizeGoodies = "false"
-		self.iCityRadius = 0
+		self.iCityRadius = -1
 
 	def write(self, f):
 		"write map data"
@@ -1274,7 +1274,7 @@ class CvMapDesc:
 
 			v = parser.findTokenValue(toks, "City Catchment Radius")
 			if v!=-1:
-				self.iCityRadius = v - 1 # use 1-2 for scenario editors instead of 0-1 for map options
+				self.iCityRadius = int(v) - 1 # use 1-2 for scenario editors instead of 0-1 for map options
 				continue
 
 			if parser.findTokenValue(toks, "EndMap")!=-1:

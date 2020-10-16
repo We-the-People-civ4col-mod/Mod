@@ -20,6 +20,7 @@
 #include "FProfiler.h"
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
+#include "UserSettings.h"
 
 #include <stdlib.h>
 
@@ -540,13 +541,20 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
 		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT"));
 	}
-	else
+	else if (iRadius == 2)
 	{
 		m_aaiXYCityPlot = m_aaiXYCityPlot_2_plot;
 		NUM_CITY_PLOTS = NUM_CITY_PLOTS_2_PLOTS;
 		CITY_PLOTS_DIAMETER = static_cast<CityPlotTypes>(5);
 		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE_TWO_PLOT");
 		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
+	}
+	else
+	{
+		// invalid setting (likely 0). Use UserSetting value.
+		// Odds are that a scenario is read and the radius isn't specified.
+		UserSettings settings;
+		setCityCatchmentRadius(settings.getColonyRadius());
 	}
 #endif
 }
