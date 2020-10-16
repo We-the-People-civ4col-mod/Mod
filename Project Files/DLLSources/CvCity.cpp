@@ -12459,13 +12459,15 @@ int CvCity::getYieldDemand(YieldTypes eYield) const
 		}
 	}
 
+	static const int iSpecialBuildingMarket = GC.getDefineINT("SPECIALBUILDING_MARKET");
+
 	// R&R, ray, adjustment to new Market Buildings
 	int MarketLevel = 0;
 	for (int i = 0; i < GC.getNumBuildingInfos(); ++i)
 	{
 		BuildingTypes eBuilding = (BuildingTypes) i;
 		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
-		if (kBuilding.getSpecialBuildingType() == GC.getDefineINT("SPECIALBUILDING_MARKET") && isHasBuilding(eBuilding))
+		if (kBuilding.getSpecialBuildingType() == iSpecialBuildingMarket && isHasBuilding(eBuilding))
 		{
 			if (kBuilding.getSpecialBuildingPriority() > MarketLevel)
 			{
