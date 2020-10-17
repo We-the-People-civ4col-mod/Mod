@@ -285,5 +285,14 @@
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,4,14</Button>
         </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_RAFT_STATION</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>0.9</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/raft_station/An_port_district2.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,2,16</Button>
+        </ImprovementArtInfo>
     </ImprovementArtInfos>
 </Civ4ArtDefines>

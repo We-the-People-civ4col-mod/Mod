@@ -2779,5 +2779,47 @@
             <RouteYieldChanges/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_RAFT_STATION</Type>
+            <Description>TXT_KEY_IMPROVEMENT_RAFT_STATION</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_RAFT_STATION_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_RAFT_STATION</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bMonastery>0</bMonastery>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>1</bWater>
+            <bGoody>0</bGoody>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>30</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>20</iDefenseModifier>
+            <iPillageGold>100</iPillageGold>
+            <bOutsideBorders>1</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
     </ImprovementInfos>
 </Civ4ImprovementInfos>

@@ -1621,7 +1621,10 @@ void CvUnit::updateCombat(bool bQuick)
 			//ray14
 			// R&R, ray, changes to Wild Animals - added addittional check so Animals do not capture
 			// WTP, ray, allowing Wagon Trains to be caught again
-			if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+			//WTP, ray, Large Rivers - START
+			// allowing Cargo Ships on Large Rivers to be caugth as well
+			// if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+			if ((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
 			{
 				CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
 				pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);	
@@ -3063,13 +3066,21 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 		{
 			//WTP, ray, Large Rivers - START
+			// allow all Land Units to enter Large Rivers with Improvement
+
+			bool bLandUnitMayPassLargeRiverDueToImprovement = false;
+			bLandUnitMayPassLargeRiverDueToImprovement = (getDomainType() == DOMAIN_LAND && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS && pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS));
 			// stop large ships from entering Large Rivers in own Terrain
 			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
 			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
 			{
+				// if (bIgnoreLoad || !canLoad(pPlot, true))
 				if (bIgnoreLoad || !canLoad(pPlot, true))
 				{
-					return false;
+					if (bLandUnitMayPassLargeRiverDueToImprovement == false)
+					{
+						return false;
+					}
 				}
 			}
 			//WTP, ray, Large Rivers - END

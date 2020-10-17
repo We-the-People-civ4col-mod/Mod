@@ -6306,14 +6306,33 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	{
 		if (info.isWater())
 		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER"));
+			//WTP, ray, Large Rivers - START
+			if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS"));
+			}
+
+			// old code in else
+			else
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER"));
+			}
+			//WTP, ray, Large Rivers - END
 		}
 		if (info.isRequiresFlatlands())
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ONLY_BUILD_FLATLANDS"));
 		}
+		//WTP, ray, Large Rivers - START
+		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
+		}
+		//WTP, ray, Large Rivers - END
 	}
 
 	if (info.getImprovementUpgrade() != NO_IMPROVEMENT)
