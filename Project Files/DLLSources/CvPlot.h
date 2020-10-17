@@ -69,6 +69,7 @@ public:
 	bool shareAdjacentArea( const CvPlot* pPlot) const;
 	bool isAdjacentToLand() const;
 	bool isCoastalLand(int iMinWaterSize = -1) const;
+	bool hasAnyOtherWaterPlotsThanJustLargeRivers() const;
 	bool isAdjacentWaterPassable(CvPlot* pPlot) const;
 
 	bool isVisibleWorked() const;
