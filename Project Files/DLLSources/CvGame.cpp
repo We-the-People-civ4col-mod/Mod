@@ -6462,6 +6462,10 @@ int CvGame::getSorenRandNum(int iNum, const char* pszLog)
 
 int CvGame::calculateSyncChecksum(CvString* pLogString)
 {
+	// Don't bother with any checksum in a SP game!
+	if (!GC.getGameINLINE().isGameMultiPlayer())
+		return 0;
+
 	PROFILE_FUNC();
 
 	CvUnit* pLoopUnit;
