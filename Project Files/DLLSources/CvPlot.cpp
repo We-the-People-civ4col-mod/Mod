@@ -1252,24 +1252,30 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 	}
 
 	//fill invisible types
-	std::vector<InvisibleTypes> aSeeInvisibleTypes;
+	
+	InvisibleTypes aSeeInvisibleTypes[NUM_INVISIBLE_TYPES];
+
+	int iSeeInvisibleTypesCount = 0;
+
 	if (NULL != pUnit)
 	{
-		for(int i=0;i<pUnit->getNumSeeInvisibleTypes();i++)
+		for (int i = 0; i < pUnit->getNumSeeInvisibleTypes(); i++)
 		{
-			aSeeInvisibleTypes.push_back(pUnit->getSeeInvisibleType(i));
+			aSeeInvisibleTypes[i] = pUnit->getSeeInvisibleType(i);
+			iSeeInvisibleTypesCount++;
 		}
 	}
 
-	if(aSeeInvisibleTypes.size() == 0)
+	if (iSeeInvisibleTypesCount == 0)
 	{
-		aSeeInvisibleTypes.push_back(NO_INVISIBLE);
+		aSeeInvisibleTypes[0] = NO_INVISIBLE;
+		iSeeInvisibleTypesCount++;
 	}
 
 	//check one extra outer ring
 	iRange++;
 
-	for(int i=0;i<(int)aSeeInvisibleTypes.size();i++)
+	for (int i = 0; i < iSeeInvisibleTypesCount; i++)
 	{
 		for (int dx = -iRange; dx <= iRange; dx++)
 		{
