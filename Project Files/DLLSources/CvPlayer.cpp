@@ -13186,6 +13186,15 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 				return NULL;
 			}
 		}
+		else if (0 == strcmp(kTrigger.getPythonCanDo(), "TriggerChance"))
+		{
+			const EventTypes eEvent = (EventTypes)kTrigger.getEvent(0);
+			const CvEventInfo& kEvent = GC.getEventInfo(eEvent);
+			if (GC.getGameINLINE().getSorenRandNum(1000, "(c) TAC 2010 Events") >= kEvent.getGenericParameter(3))
+			{
+				return NULL;
+			}
+		}
 		else
 		{
 			long lResult;
@@ -13454,6 +13463,13 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 		else if (0 == strcmp(kEvent.getPythonCanDo(), "isHuman"))
 		{
 			if (!isHuman())
+			{
+				return false;
+			}
+		}
+		else if (0 == strcmp(kEvent.getPythonCanDo(), "TriggerChance"))
+		{
+			if (GC.getGameINLINE().getSorenRandNum(1000, "(c) TAC 2010 Events") >= kEvent.getGenericParameter(3))
 			{
 				return false;
 			}
