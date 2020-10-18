@@ -1,0 +1,19 @@
+/Profile output.txt
+/UserSettings.txt
+*.pdb
+*.dll
+/Project Files/.vs/
+/Project Files/temp_files/
+*.vcxproj.user
+*.settings
+*.zip
+*.log
+*.vcxprojAssemblyReference.cache
+*.ini.bak
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
