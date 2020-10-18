@@ -4337,6 +4337,17 @@ bool CvUnit::canClearSpecialty() const
 		return false;
 	}
 
+	//WTP, fix crash for clearing Unit Specialization in revolting City - START
+	CvCity* pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
+	if (pCity != NULL)
+	{
+		if (pCity->isOccupation())
+		{
+			return false;
+		}
+	}
+	//WTP, fix crash for clearing Unit Specialization in revolting City - END
+
 	return true;
 }
 
