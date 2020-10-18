@@ -2980,7 +2980,7 @@ class CvMainInterface:
 				iStored = pCity.getYieldStored(i)
 				iRate = pCity.calculateNetYield(i)
 
-				if (iStored > pCity.getMaxYieldCapacity() and i != int(YieldTypes.YIELD_FOOD) and i != int(YieldTypes.YIELD_LUMBER) and i != int(YieldTypes.YIELD_STONE)): # WTP, ray, fix for unnecessary red colour of more Stone or Lumber than total Storage
+				if (iStored > pCity.getMaxYieldCapacity() and i != int(YieldTypes.YIELD_FOOD) and i != int(YieldTypes.YIELD_LUMBER) and i != int(YieldTypes.YIELD_STONE)): # WTP, ray, fix for unnecessary red colour of more Stone or Lumber stored than total Storage
 					szStored = u"<color=255,0,0>%d</color>" %(iStored)
 				else:
 					szStored = u"<color=0,255,255>%d</color>" %(iStored)
