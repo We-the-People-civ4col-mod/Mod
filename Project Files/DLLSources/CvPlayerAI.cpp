@@ -1892,8 +1892,29 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 
 	if (pPlot->isCoastalLand(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
 	{
-		iValue *= 125;
-		iValue /= 100;
+		//WTP, ray, Large Rivers - START
+		// to ensure that first city is not found at Large River without other Water access
+		if (bStartingLoc)
+		{
+			if (pPlot->hasAnyOtherWaterPlotsThanJustLargeRivers())
+			{
+				iValue *= 125; // found value increased
+				iValue /= 100;
+			}
+			else
+			{
+				iValue *= 80; // found value decreased
+				iValue /= 100;
+			}
+		}
+
+		// old normal logic - not considering special cases for Large Rivers without direct Ocean Plots - for all Cities after first city
+		else
+		{
+			iValue *= 125;
+			iValue /= 100;
+		}
+		//WTP, ray, Large Rivers - END
 	}
 
 	if (bStartingLoc)
