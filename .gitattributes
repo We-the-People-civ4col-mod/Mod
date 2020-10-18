@@ -1,30 +1,30 @@
 # define line endings
 
 # user readable files
-*.txt crlf
-*.ini crlf
-*.bak crlf
-*.xml crlf
+*.txt lf
+*.ini lf
+*.bak lf
+*.xml lf
 
 # source code
-*.cpp crlf
-*.c   crlf
-*.hpp crlf
-*.h   crlf
-*.py  crlf
+*.cpp lf
+*.c   lf
+*.hpp lf
+*.h   lf
+*.py  lf
 
 # project files and other compilation related files
-*Makefile crlf
-*.project crlf
-*.vcxproj crlf
-*.sln     crlf
-*.filters crlf
-*.pl      crlf
-*.pm      crlf
-*.bat     crlf
+*Makefile lf
+*.project lf
+*.vcxproj lf
+*.sln     lf
+*.filters lf
+*.pl      lf
+*.pm      lf
+*.bat     lf
 
 # Custom file formats
-*.ColonizationWBSave crlf
+*.ColonizationWBSave lf
 
 # binary files
 *.ico binary
@@ -44,8 +44,8 @@
 *.kf  binary
 
 # git specific files
-.gitattributes crlf  
-.gitignore     crlf
+.gitattributes lf  
+.gitignore     lf
 
 
 
