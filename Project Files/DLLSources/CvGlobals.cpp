@@ -2697,9 +2697,43 @@ int CvGlobals::getDefineINT( const char * szName ) const
 
 float CvGlobals::getDefineFLOAT( const char * szName ) const
 {
-	float fReturn = 0;
-	GC.getDefinesVarSystem()->GetValue( szName, fReturn );
-	return fReturn;
+
+	if (0 == strcmp(szName, "MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT"))
+	{
+		static const float val = getDefineFLOAT("MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "SADDLE_PARABOLA_MIN_Y_PERCENT"))
+	{
+		static const float val = getDefineFLOAT("SADDLE_PARABOLA_MIN_Y_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "SADDLE_PARABOLA_MIN_X_PERCENT"))
+	{
+		static const float val = getDefineFLOAT("SADDLE_PARABOLA_MIN_X_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "SADDLE_PARABOLA_Y_INTERCEPT_PERCENT"))
+	{
+		static const float val = getDefineFLOAT("SADDLE_PARABOLA_Y_INTERCEPT_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "MINIMAP_PARABOLA_MIN_X_PERCENT"))
+	{
+		static const float val = getDefineFLOAT("MINIMAP_PARABOLA_MIN_X_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "MINIMAP_PARABOLA_MIN_Y_PERCENT"))
+	{
+		static const float val = getDefineFLOAT("MINIMAP_PARABOLA_MIN_Y_PERCENT");
+		return val;
+	}
+	else
+	{
+		float fReturn = 0;
+		GC.getDefinesVarSystem()->GetValue( szName, fReturn );
+		return fReturn;
+	}
 }
 
 const char * CvGlobals::getDefineSTRING( const char * szName ) const
