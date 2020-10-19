@@ -288,4 +288,14 @@
         <Tag>TXT_KEY_BUILD_VINEYARD_HELP</Tag>
         <English>????</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_RAFT_STATION</Tag>
+        <English>Build a [LINK=IMPROVEMENT_RAFT_STATION]River Ferry Statin[\LINK]</English>
+        <German>[LINK=IMPROVEMENT_RAFT_STATION]Flussfährenstation[\LINK] bauen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_RAFT_STATION_HELP</Tag>
+        <English>Allows to cross [LINK=TERRAIN_LARGE_RIVERS]Large Rivers[\LINK]</English>
+        <German>Erlaubt es einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren</German>
+    </TEXT>
 </Civ4GameText>

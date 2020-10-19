@@ -154,6 +154,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -534,6 +538,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -1023,6 +1031,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -1409,6 +1421,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -1988,6 +2004,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -2837,6 +2857,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -3308,6 +3332,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -3710,6 +3738,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -4116,6 +4148,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -4502,6 +4538,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -4892,6 +4932,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -5278,6 +5322,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -5668,6 +5716,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -6056,6 +6108,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -6442,6 +6498,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -6840,6 +6900,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -7234,6 +7298,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -7632,6 +7700,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8028,6 +8100,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8416,6 +8492,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8794,6 +8874,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -9184,6 +9268,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -9562,6 +9650,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -9944,6 +10036,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -10324,6 +10420,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -10696,6 +10796,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11061,6 +11165,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -11467,6 +11575,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11871,6 +11983,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -12269,6 +12385,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -12671,6 +12791,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13067,6 +13191,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13461,6 +13589,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -13863,6 +13995,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -14263,6 +14399,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -14661,6 +14801,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -15067,6 +15211,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -15469,6 +15617,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -15875,6 +16027,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -16279,6 +16435,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -16675,6 +16835,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -17069,6 +17233,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -17475,6 +17643,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -17877,6 +18049,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -18291,6 +18467,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -18696,6 +18876,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -21619,6 +21803,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -21984,6 +22172,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -22365,6 +22557,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -22734,6 +22930,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -24922,6 +25122,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -25293,6 +25497,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -25645,6 +25853,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -26051,6 +26263,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -26455,6 +26671,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -26857,6 +27077,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -28021,6 +28245,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28442,6 +28670,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28816,6 +29048,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -29188,6 +29424,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -29978,6 +30218,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -30360,6 +30604,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -30690,6 +30938,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>

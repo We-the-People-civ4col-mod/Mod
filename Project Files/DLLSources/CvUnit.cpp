@@ -7121,7 +7121,13 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 
 	if (!pPlot->isValidDomainForAction(*this))
 	{
-		return false;
+		//WTP, ray, Large Rivers - Start
+		// allowing Pioneers to Build on Large Rivers
+		if (pPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+		{
+			return false;
+		}
+		//WTP, ray, Large Rivers - Start
 	}
 
 	// R&R, ray, prevent Forts and Monasteries to be built on Peaks - start
