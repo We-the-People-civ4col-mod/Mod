@@ -3857,7 +3857,11 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 
 	case DOMAIN_LAND:
 	case DOMAIN_IMMOBILE:
-		return (!isWater() || kUnitInfo.isCanMoveAllTerrain());
+		//WTP, ray, Large Rivers - START
+		// fixing Valid Domain for Large Rivers
+		//return (!isWater() || kUnitInfo.isCanMoveAllTerrain());
+		return (!isWater() || getTerrainType() == TERRAIN_LARGE_RIVERS || kUnitInfo.isCanMoveAllTerrain());
+		//WTP, ray, Large Rivers - START
 		break;
 
 	default:
