@@ -280,4 +280,19 @@
         <Italian>A volcano is an opening, or rupture, in a planet's surface or crust, which allows hot, molten rock, ash, and gases to escape from below the surface. Volcanic activity involving the extrusion of rock tends to form mountains or features like mountains over a period of time.</Italian>
         <Spanish>A volcano is an opening, or rupture, in a planet's surface or crust, which allows hot, molten rock, ash, and gases to escape from below the surface. Volcanic activity involving the extrusion of rock tends to form mountains or features like mountains over a period of time.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_RIVER_FORD</Tag>
+        <English>River Ford</English>
+        <German>Flussfurt</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Tag>
+        <English>[BOLD]Strategy[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]River Fords[COLOR_REVERT] allow all Land Units to pass a [LINK=TERRAIN_LARGE_RIVERS]Large River[\LINK]. They are a natural result of sediments of the flowing river.</English>
+        <German>[BOLD]Strategie[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flussfurten[COLOR_REVERT] erlauben es allen Landeinheiten einen [LINK=TERRAIN_LARGE_RIVERS]Großen FLuss[\LINK] zu überqueren. Sie enstehen auf natürliche Weise durch Ablagerungen von Flusssedimenten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TERRAIN_FEATURE_ALLOWS_CROSSING_OF_LARGE_RIVERS</Tag>
+        <English>[ICON_BULLET]Allows all Land Units to cross [LINK=TERRAIN_LARGE_RIVERS]Large Rivers[\LINK]</English>
+        <German>[ICON_BULLET]Erlaubt es allen Landeinheiten einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
+    </TEXT>
 </Civ4GameText>

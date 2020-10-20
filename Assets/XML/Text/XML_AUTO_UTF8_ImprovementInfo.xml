@@ -1027,12 +1027,12 @@
         <German>[TAB][COLOR_HIGHLIGHT_TEXT]Flussfähren[COLOR_REVERT] und Flösse waren die am meisten genutzen Transportmittel um [COLOR_HIGHLIGHT_TEXT]große Flüsse[COLOR_REVERT] und Ströme in der neuen Welt zu überqueren, bevor der technische Fortschritt es erlaubte größere uns tabilere Brücken zu bauen.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS</Tag>
+        <Tag>TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS</Tag>
         <English>[ICON_BULLET]Allows all Land Units to cross [LINK=TERRAIN_LARGE_RIVERS]Large Rivers[\LINK]</English>
         <German>[ICON_BULLET]Erlaubt es allen Landeinheiten einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS</Tag>
+        <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS</Tag>
         <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LARGE_RIVERS]Large Rivers[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LARGE_RIVERS]Großen Flüssen[\LINK] gebaut werden.</German>
     </TEXT>

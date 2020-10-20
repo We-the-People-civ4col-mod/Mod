@@ -294,5 +294,24 @@
                 <VarietyButton>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,6,4</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_RIVER_FORD</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+            <fScale>0.5</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,8,4</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/RIVER_FORD/Ice15_06.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/RIVER_FORD/Ice15_07.nif</ModelFile>
+                            <Connections/>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,8,4</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
     </FeatureArtInfos>
 </Civ4ArtDefines>

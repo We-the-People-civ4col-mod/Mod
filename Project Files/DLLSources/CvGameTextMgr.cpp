@@ -6880,6 +6880,15 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_FEATURE_NO_IMPROVEMENT"));
 	}
+
+	//WTP, ray, Large Rivers - START
+	// Pedia text for Crossing Large Rivers
+	if (feature.isTerrain(TERRAIN_LARGE_RIVERS))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_FEATURE_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
+	}
+	//WTP, ray, Large Rivers - START
 }
 
 
