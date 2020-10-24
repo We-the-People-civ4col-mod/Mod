@@ -2059,6 +2059,14 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		}
 		// R&R, ray, one Route Type after the other - START
 
+		//WTP, ray, Large Rivers - START
+		// no routes on Large Rivers
+		if (getTerrainType() == TERRAIN_LARGE_RIVERS)
+		{
+			return false;
+		}
+		//WTP, ray, Large Rivers - END
+
 		bValid = true;
 	}
 
