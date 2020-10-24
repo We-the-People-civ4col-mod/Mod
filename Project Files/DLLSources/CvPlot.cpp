@@ -1949,9 +1949,13 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 				//outside borders can't be built in other's culture
 				if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
 				{
-					if (getTeam() != NO_TEAM)
+					//WTP, ray, Large Rivers
+					if (getTerrainType() != TERRAIN_LARGE_RIVERS)
 					{
-						return false;
+						if (getTeam() != NO_TEAM)
+						{
+							return false;
+						}
 					}
 				}
 				else //only buildable in own culture
