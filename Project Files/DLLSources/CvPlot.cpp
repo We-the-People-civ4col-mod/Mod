@@ -2099,7 +2099,11 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		// only inside own borders
 		if (GET_PLAYER(ePlayer).getTeam() != getTeam())
 		{
-			return false;
+			// Plot not owned. Fail unless it's an improvement, which can be outside borders
+			if (eImprovement == NO_IMPROVEMENT || !GC.getImprovementInfo(eImprovement).isOutsideBorders())
+			{
+				return false;
+			}
 		}
 
 		bValid = true;
