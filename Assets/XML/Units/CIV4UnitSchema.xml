@@ -761,6 +761,7 @@
 	<ElementType name="bCitizen" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bWater" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bScout" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCanCrossLargeRivers" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCityDefender" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCanFound" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bUnarmed" content="textOnly" dt:type="boolean"/>
@@ -797,6 +798,7 @@
 		<element type="bCitizen"/>
 		<element type="bWater"/>
 		<element type="bScout"/>
+		<element type="bCanCrossLargeRivers"/>
 		<element type="bCityDefender"/>
 		<element type="bCanFound"/>
 		<element type="bUnarmed"/>

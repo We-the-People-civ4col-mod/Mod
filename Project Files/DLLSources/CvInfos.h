@@ -356,6 +356,8 @@ public:
 	DllExport bool isCitizen() const;
 	DllExport bool isWater() const;
 	DllExport bool isScout() const;
+	DllExport bool isCanCrossLargeRivers() const; //WTP, ray, Large Rivers
+	DllExport bool isCanEnterPeaks() const; //WTP, ray, Large Rivers		 
 	DllExport bool isCityDefender() const;
 	DllExport bool canFound() const;
 	DllExport bool isUnarmed() const;
@@ -399,6 +401,7 @@ protected:
 	bool m_bCitizen;
 	bool m_bWater;
 	bool m_bScout;
+	bool m_bCanCrossLargeRivers; //WTP, ray, Large Rivers
 	bool m_bCityDefender;
 	bool m_bCanFound;
 	bool m_bUnarmed;

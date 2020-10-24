@@ -1361,6 +1361,7 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_bCitizen(false),
 	m_bWater(false),
 	m_bScout(false),
+	m_bCanCrossLargeRivers(false), //WTP, ray, Large Rivers
 	m_bCityDefender(false),
 	m_bCanFound(false),
 	// TAC - LbD - Ray - START
@@ -1473,6 +1474,14 @@ bool CvProfessionInfo::isScout() const
 {
 	return m_bScout;
 }
+
+//WTP, ray, Large Rivers - START
+bool CvProfessionInfo::isCanCrossLargeRivers() const
+{
+	return m_bCanCrossLargeRivers;
+}
+//WTP, ray, Large Rivers - END
+
 bool CvProfessionInfo::isCityDefender() const
 {
 	return m_bCityDefender;
@@ -1560,6 +1569,7 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bCitizen);
 	stream->Read(&m_bWater);
 	stream->Read(&m_bScout);
+	stream->Read(&m_bCanCrossLargeRivers);//WTP, ray, Large Rivers
 	stream->Read(&m_bCityDefender);
 	stream->Read(&m_bCanFound);
 	
@@ -1625,6 +1635,7 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bCitizen);
 	stream->Write(m_bWater);
 	stream->Write(m_bScout);
+	stream->Write(m_bCanCrossLargeRivers);//WTP, ray, Large Rivers
 	stream->Write(m_bCityDefender);
 	stream->Write(m_bCanFound);
 
@@ -1688,6 +1699,7 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bCitizen, "bCitizen");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bScout, "bScout");
+	pXML->GetChildXmlValByName(&m_bCanCrossLargeRivers, "bCanCrossLargeRivers"); //WTP, ray, Large Rivers
 	pXML->GetChildXmlValByName(&m_bCityDefender, "bCityDefender");
 	pXML->GetChildXmlValByName(&m_bCanFound, "bCanFound");
 

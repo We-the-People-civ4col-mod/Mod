@@ -1224,6 +1224,15 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_FOUND"));
 	}
 
+	//WTP, ray, Large Rivers - START
+	if (kProfession.isCanCrossLargeRivers())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROFESSION_CAN_CROSS_LARGE_RIVERS"));
+	}
+	//WTP, ray, END
+
+
 	/// Move Into Peak - start - Nightinggale
 	if (kProfession.allowsMoveIntoPeak())
 	{
