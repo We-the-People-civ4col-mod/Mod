@@ -1,5 +1,11 @@
 #!/usr/bin/perl -w
 
+#
+# Script to change the version number within the MSVS project file
+# This way we only need to maintain one file, which helps because the file lists all source files.
+# Using the correct version of the project file unlocks Intellisense, which is very useful.
+# Look it up if you don't know it, but it's like spellcheck for C++, click on funcion call to jump to function etc.
+#
 
 use strict;
 use warnings;
@@ -13,18 +19,15 @@ if (scalar @ARGV == 1)
 
 if ($version == 2010)
 {
-
 }
 elsif ($version == 2017)
 {
-
 }
 else
 {
 	die "Argument needs to set year for target version\n";
 }
 
-#open (my $output, "> " . $FILE) or die "Can't open file " . $FILE . "\n" . $!;
 
 my $dir = './';
 
@@ -32,13 +35,10 @@ opendir(DIR, $dir) or die $!;
 
 while (my $file = readdir(DIR))
 {
-	# We only want files
 	next unless (-f "$dir/$file");
 
-	# Use a regular expression to find files ending in .txt
 	next unless ($file =~ m/\.vcxproj$/);
 
-	#print "$file\n";
 	handleFile($file);
 }
 
