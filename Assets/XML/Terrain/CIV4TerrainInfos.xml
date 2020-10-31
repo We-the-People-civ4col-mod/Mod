@@ -1274,7 +1274,7 @@
             <iSeeThrough>0</iSeeThrough>
             <iBuildModifier>0</iBuildModifier>
             <iDefense>-10</iDefense>
-            <Button>Art/Interface\Buttons\Terrain_Large_River.dds</Button>
+            <Button>,Art/Interface/Buttons/BaseTerrain_TerrainFeatures_Atlas.dds,6,3</Button>
             <FootstepSounds>
                 <FootstepSound>
                     <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
