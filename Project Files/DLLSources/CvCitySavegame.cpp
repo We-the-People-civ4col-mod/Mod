@@ -29,6 +29,7 @@
 	const int defaultHammers = 0 ;
 	const int defaultMissionaryRate = 0 ;
 	const int defaultNativeTradeRate = 0; // WTP, ray, Native Trade Posts - START
+	const int defaultTradePostGold = 0; // WTP, ray, Native Trade Posts - START
 	const int defaultWorksWaterCount = 0 ;
 	const int defaultRebelSentiment = 0 ;
 	const int defaultCityHealth = 0 ; // R&R, ray, Health
@@ -162,6 +163,7 @@ enum SavegameVariableTypes
 	CitySave_orderQueue,
 
 	CitySave_WorkingPlot,
+	CitySave_TradePostGold,
 
 	NUM_CITYSAVE_ENUM_VALUES,
 };
@@ -197,6 +199,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_Hammers: return "CitySave_Hammers";
 		case CitySave_MissionaryRate: return "CitySave_MissionaryRate";
 		case CitySave_NativeTradeRate: return "CitySave_NativeTradeRate"; // WTP, ray, Native Trade Posts - START
+		case CitySave_TradePostGold: return "CitySave_TradePostGold"; // WTP, ray, Native Trade Posts - START
 		case CitySave_WorksWaterCount: return "CitySave_WorksWaterCount";
 		case CitySave_RebelSentiment: return "CitySave_RebelSentiment";
 		case CitySave_CityHealth: return "CitySave_CityHealth";
@@ -313,6 +316,7 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_iHammers = defaultHammers;
 	m_iMissionaryRate = defaultMissionaryRate;
 	m_iNativeTradeRate = defaultNativeTradeRate; // WTP, ray, Native Trade Posts - START
+	m_iTradePostGold = defaultTradePostGold; // WTP, ray, Native Trade Posts - START
 	m_iWorksWaterCount = defaultWorksWaterCount;
 	m_iRebelSentiment = defaultRebelSentiment;
 	m_iCityHealth = defaultCityHealth; // R&R, ray, Health
@@ -442,6 +446,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_Hammers: reader.Read(m_iHammers); break;
 		case CitySave_MissionaryRate: reader.Read(m_iMissionaryRate); break;
 		case CitySave_NativeTradeRate: reader.Read(m_iNativeTradeRate); break;
+		case CitySave_TradePostGold: reader.Read(m_iTradePostGold); break;
 		case CitySave_WorksWaterCount: reader.Read(m_iWorksWaterCount); break;
 		case CitySave_RebelSentiment: reader.Read(m_iRebelSentiment); break;
 		case CitySave_CityHealth: reader.Read(m_iCityHealth); break; // R&R, ray, Health
@@ -570,6 +575,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_Hammers, m_iHammers, defaultHammers);
 	writer.Write(CitySave_MissionaryRate, m_iMissionaryRate, defaultMissionaryRate);
 	writer.Write(CitySave_NativeTradeRate, m_iNativeTradeRate, defaultNativeTradeRate);
+	writer.Write(CitySave_TradePostGold, m_iTradePostGold, defaultTradePostGold);
 	writer.Write(CitySave_WorksWaterCount, m_iWorksWaterCount, defaultWorksWaterCount);
 	writer.Write(CitySave_RebelSentiment, m_iRebelSentiment, defaultRebelSentiment);
 	writer.Write(CitySave_CityHealth, m_iCityHealth, defaultCityHealth); // R&R, ray, Health
