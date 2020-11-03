@@ -148,8 +148,7 @@ WITH_GIT=1
 !ENDIF
 
 #### Target Files ####
-Target_BIN=$(TARGET)\CvGameCoreDLL.dll
-Target_BIN_TEMP=$(TEMP_TARGET_FILES)\CvGameCoreDLL.dll
+Target_BIN=$(TEMP_TARGET_FILES)\CvGameCoreDLL.dll
 
 !IF [IF NOT EXIST CvGameCoreDLL.rc EXIT 1] == 0
 Target_RESOURCE=$(TEMP_TARGET_FILES)\CvGameCoreDLL.res
@@ -266,14 +265,10 @@ clean:
 	@FOR %i IN ($(Target_BIN) $(Target_STATICLIB) $(Target_LIBDEF) $(Target_RESOURCE) \
 		$(Target_PCH) $(Target_PDB) $(Target_OTHER)) DO @IF EXIST "%i" DEL "%i"
 
-$(Target_BIN): $(Target_BIN_TEMP)
-	-COPY "$(Target_BIN_TEMP)" "$(Target_BIN)"
-
-		
 build: $(Target_BIN)
 !IFDEF YOURMOD
-	-COPY "$(Target_BIN)" "$(YOURMOD)\Assets\."
-	-COPY "$(Target_PDB)" "$(YOURMOD)\Assets\."
+	@bin\copy.pl "$(Target_BIN)" "$(YOURMOD)\Assets\." verbose
+	@bin\copy.pl "$(Target_PDB)" "$(YOURMOD)\Assets\."
 !IF "$(YOURMOD)" != ".."
 	-xcopy "..\Assets\*" "$(YOURMOD)\Assets\*" /e /y /f /d
 	-xcopy "..\PublicMaps\*" "$(YOURMOD)\PublicMaps\*" /e /y /f /d
@@ -297,7 +292,6 @@ source_list: Make_Dir
 
 fastdep:
 	@ECHO Running fastdep
-#!IF [IF EXIST $(GIT) EXIT 1 AND EXIST ..\.git EXIT 1] != 0
 !IFDEF WITH_GIT
 	@$(GIT) rev-parse HEAD | bin\git_version.pl
 !ELSE
@@ -317,9 +311,9 @@ Target_unfinished:
 	@FOR /F %i IN ('dir /b $(TEMP_TARGET_FILES)\*.@') DO \
 		@IF EXIST "$(TEMP_TARGET_FILES)\%i" DEL "$(TEMP_TARGET_FILES)\%i"
 
-$(Target_BIN_TEMP): $(OBJS) $(Target_RESOURCE)
+$(Target_BIN): $(OBJS) $(Target_RESOURCE)
 	@ECHO.Linking DLL
-	@$(LD) /out:$(Target_BIN_TEMP) $(LDFLAGS) $(LIBS) $(OBJS) $(Target_RESOURCE)
+	@$(LD) /out:$(Target_BIN) $(LDFLAGS) $(LIBS) $(OBJS) $(Target_RESOURCE)
 
 {$(SOURCE_DIR)\.}.cpp{$(TEMP_TARGET_FILES)\.}.obj:
 	@ECHO.>"$*.obj.@"
