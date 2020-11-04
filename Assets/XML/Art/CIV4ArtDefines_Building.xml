@@ -356,7 +356,7 @@
         </BuildingArtInfo>
         <BuildingArtInfo>
             <Type>ART_DEF_BUILDING_MAGAZINE</Type>
-            <LSystem>LSYSTEM_2x2</LSystem>
+            <LSystem>LSYSTEM_2x3</LSystem>
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,2,1</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
@@ -948,9 +948,9 @@
             <bAnimated>0</bAnimated>
             <CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,7,6</CityTexture>
             <CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>0.45</fInterfaceScale>
-            <NIF>Art/Structures/Buildings/market/humanbazaar.nif</NIF>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Structures/Buildings/market/grocer.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,3,5</Button>
         </BuildingArtInfo>
