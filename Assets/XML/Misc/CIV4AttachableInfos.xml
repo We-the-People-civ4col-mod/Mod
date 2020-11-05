@@ -26,6 +26,18 @@
 			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_05.nif</Path>
 		</AttachableInfo>
 		<AttachableInfo>
+			<Type>ATTACHABLE_CHIMNEYSMOKEC</Type>
+			<Description>ATTACHABLE_CHIMNEYSMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_03.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CHIMNEYSMOKED</Type>
+			<Description>ATTACHABLE_CHIMNEYSMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_02.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
 			<Type>ATTACHABLE_SMOKE</Type>
 			<Description>ATTACHABLE_SMOKE</Description>
 			<fScale>1.0</fScale>
