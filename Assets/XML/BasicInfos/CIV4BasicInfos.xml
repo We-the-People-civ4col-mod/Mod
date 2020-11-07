@@ -291,5 +291,10 @@
             <Description>TXT_KEY_CONCEPT_RIVERS</Description>
             <Civilopedia>TXT_KEY_CONCEPT_RIVERS_PEDIA</Civilopedia>
         </ConceptInfo>
+        <ConceptInfo>
+            <Type>CONCEPT_LARGE_RIVERS</Type>
+            <Description>TXT_KEY_CONCEPT_LARGE_RIVERS</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_LARGE_RIVERS_PEDIA</Civilopedia>
+        </ConceptInfo>
     </ConceptInfos>
 </Civ4BasicInfos>

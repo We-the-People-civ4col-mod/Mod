@@ -1258,7 +1258,39 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_LARGE_RIVERS_PEDIA</Tag>
-        <English>[H1]Large Rivers[\H1][NEWLINE][NEWLINE][BOLD]Strategy:[\BOLD][NEWLINE][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Large Rivers[COLOR_REVERT] tbd [NEWLINE][NEWLINE][BOLD]Background:[\BOLD][NEWLINE][PARAGRAPH:1]The spread of civilizations tended to follow the course of [COLOR_HIGHLIGHT_TEXT]large rivers[COLOR_REVERT] due to abundant resources of [COLOR_HIGHLIGHT_TEXT]food[COLOR_REVERT] like fish and fertile land, as well as the economic advantages provided by [COLOR_HIGHLIGHT_TEXT]easier movement of cargo[COLOR_REVERT]. [NEWLINE]In the old world many existing civilizations have centers near large rivers; and new world settlers also saw the value in settling an area with both a fresh water supply and access for larger vessels. [NEWLINE]In an age when bridges were mostly only built on highly frequented routes, the crossing of a large river was a strenuous and dangerous undertaking; so most large rivers in the new world were crossed at natural sites where [COLOR_HIGHLIGHT_TEXT]sand banks, shallow water or islets[COLOR_REVERT] offered assistance. At other places a [COLOR_HIGHLIGHT_TEXT]ferry system[COLOR_REVERT] was put in place to get people, cargo and livestock to the other side.</English>
-        <German>[H1]Grosse Flüsse[\H1][NEWLINE][NEWLINE][BOLD]Strategie:[\BOLD][NEWLINE][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Grosse Flüsse[COLOR_REVERT] tbd [NEWLINE][NEWLINE][BOLD]Background:[\BOLD][NEWLINE][PARAGRAPH:1]Die Ausbreitung der Zivilisation geschah üblicherweise zuerst entlang der Verläufe [COLOR_HIGHLIGHT_TEXT]grosser Flüsse[COLOR_REVERT]. Dies lag daran, dass es dort meist viel [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT] in Form von Fischen oder Tieren, sowohl fruchtbares Land gab. Ausserdem erleichterten sie den [COLOR_HIGHLIGHT_TEXT]Transport von Waren[COLOR_REVERT]. [NEWLINE]Die Siedler der Neuen Welt erkannten diese Vorteile der grossen Flüsse ebenfalls und der Zugang zu frischem Wasser und der Möglichkeit grössere Flussboote zu nutzen, wurde auch geschätzt. [NEWLINE]In einem Zeitalter, in dem Brücken meist nur an kleineren Flüssen und hoch frequentierten Strassen zu finden waren, musste die Überquerung dieser grossen Flüsse meist durch COLOR_HIGHLIGHT_TEXT]natürliche Flussfurten[COLOR_REVERT], kleinere Inseln oder Sandbänke geschehen. Später wurden auch Stationen für [COLOR_HIGHLIGHT_TEXT]Flussfähren[COLOR_REVERT] gebaut, um den Siedlern an weiteren Stellen zu erlauben, ihre Waren und ihr Vieh auf die andere Seite zu bringen.</German>
+        <English>[H1]Large Rivers[\H1]
+        [H2]Strategy:[H2]
+        [BOLD]Rules for Settlements:[\BOLD]
+        [ICON_BULLET]Settlements can not be built directly on Large Rivers, but of course can be built next to it
+        [ICON_BULLET]Settlements at Large Rivers without direct access to Ocean can only build [COLOR_HIGHLIGHT_TEXT]Landing Stage[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Pier[COLOR_REVERT]
+        [NEWLINE]
+        [BOLD]Rules for Ships:[\BOLD]
+        [ICON_BULLET]Small Ships like [COLOR_HIGHLIGHT_TEXT]Coastal Ships[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Large Coastal Ships[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Sloops[COLOR_REVERT] can sail on Large Rivers
+        [ICON_BULLET]Larger Ships like [COLOR_HIGHLIGHT_TEXT]Caravels[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Whaling Ships[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Frigates[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Galleons[COLOR_REVERT] can not sail on Large Rivers
+        [NEWLINE]
+        [BOLD]Rules for Land Units:[\BOLD]
+        [ICON_BULLET]Some special Units like [COLOR_HIGHLIGHT_TEXT]Native Mercenaries[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Rangers [COLOR_REVERT]can always cross Large Rivers
+        [ICON_BULLET]Some Professions like [COLOR_HIGHLIGHT_TEXT]Scouts[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]Pioneers[COLOR_REVERT] are also always allowed to cross Large Rivers
+        [ICON_BULLET]Other Units or Professions may only cross Large Rivers using [COLOR_HIGHLIGHT_TEXT]River Ferries[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]River Fords[COLOR_REVERT]
+        [ICON_BULLET]Of course, small ships can also be used to help Units cross Large Rivers
+        [H2]Background:[H2]
+        The spread of civilizations tended to follow the course of [COLOR_HIGHLIGHT_TEXT]large rivers[COLOR_REVERT] due to fertile land and abundant resources of [COLOR_HIGHLIGHT_TEXT]food[COLOR_REVERT] such as freshwater fish, as well as the economic advantages provided by [COLOR_HIGHLIGHT_TEXT]easier movement of cargo[COLOR_REVERT]. [NEWLINE]In the old world many existing civilizations have centers near large rivers; and new world settlers also saw the value in settling an area with both a fresh water supply and access for larger vessels. [NEWLINE]In an age when bridges were mostly only built on highly frequented routes, the crossing of a large river was a strenuous and dangerous undertaking; so most large rivers in the new world were crossed at natural sites where [COLOR_HIGHLIGHT_TEXT]sand banks, shallow water or islets[COLOR_REVERT] offered assistance. At other places a [COLOR_HIGHLIGHT_TEXT]ferry system[COLOR_REVERT] was put in place to get people, cargo and livestock to the other side.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Grosse Flüsse[COLOR_REVERT]
+        [H2]Strategie:[H2]
+        [BOLD]Regeln für Siedlungen:[\BOLD]
+        [ICON_BULLET]Siedlungen können nicht direkt auf Grossen Flüssen gebaut werden, aber natürlich an diesen
+        [ICON_BULLET]Siedlungen an Grossen Flüssen, ohne direkt angrenzenden Ozean können lediglich [COLOR_HIGHLIGHT_TEXT]Landungsteg[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Pier[COLOR_REVERT] bauen
+        [NEWLINE]
+        [BOLD]Regeln für Schiffe:[\BOLD]
+        [ICON_BULLET]Kleine Schiffe, wie [COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Große Küstenselger[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Fischerboote[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Schaluppen[COLOR_REVERT] können auf Grossen Flüssen segeln
+        [ICON_BULLET]Größere Schiffe, wie [COLOR_HIGHLIGHT_TEXT]Karavellen[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Walfänger[COLOR_REVERT], [COLOR_HIGHLIGHT_TEXT]Frigatten[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Galleonen[COLOR_REVERT] können nicht auf Grossen Flüssen segeln
+        [NEWLINE]
+        [BOLD]Rules for Landeinheiten:[\BOLD]
+        [ICON_BULLET]Einige spezielle Einheiten, wie [COLOR_HIGHLIGHT_TEXT]Indianische Söldner[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Ranger[COLOR_REVERT] können Grosse Flüsse immer überqueren
+        [ICON_BULLET]Einige spezielle Berufe, wie [COLOR_HIGHLIGHT_TEXT]Späher[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Pioniere[COLOR_REVERT] können ebenfalls Grosse Flüsse immer überqueren
+        [ICON_BULLET]Andere Einheiten oder Berufe können Grosse Flüsse nur mit der Hilfe von [COLOR_HIGHLIGHT_TEXT]Flussfähren[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]Flussfurten[COLOR_REVERT] überqueren
+        [ICON_BULLET]Natürlich können auch immer kleine Schiffe genutzt werden, um einen Grossen Fluss zu überqueren
+        [H2]Background:[H2]
+        Die Ausbreitung der Zivilisation geschah üblicherweise zuerst entlang der Verläufe [COLOR_HIGHLIGHT_TEXT]grosser Flüsse[COLOR_REVERT]. Dies lag daran, dass es dort meist viel [COLOR_HIGHLIGHT_TEXT]Nahrung[COLOR_REVERT] in Form von Fischen oder Tieren, sowohl fruchtbares Land gab. Ausserdem erleichterten sie den [COLOR_HIGHLIGHT_TEXT]Transport von Waren[COLOR_REVERT]. [NEWLINE]Die Siedler der Neuen Welt erkannten diese Vorteile der grossen Flüsse ebenfalls und der Zugang zu frischem Wasser und der Möglichkeit grössere Flussboote zu nutzen, wurde auch geschätzt. [NEWLINE]In einem Zeitalter, in dem Brücken meist nur an kleineren Flüssen und hoch frequentierten Strassen zu finden waren, musste die Überquerung dieser grossen Flüsse meist durch COLOR_HIGHLIGHT_TEXT]natürliche Flussfurten[COLOR_REVERT], kleinere Inseln oder Sandbänke geschehen. Später wurden auch Stationen für [COLOR_HIGHLIGHT_TEXT]Flussfähren[COLOR_REVERT] gebaut, um den Siedlern an weiteren Stellen zu erlauben, ihre Waren und ihr Vieh auf die andere Seite zu bringen.</German>
     </TEXT>
 </Civ4GameText>
