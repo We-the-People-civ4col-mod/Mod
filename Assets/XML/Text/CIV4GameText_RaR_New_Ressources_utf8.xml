@@ -74,6 +74,30 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_BONUS_CACTUS</Tag>
+        <English>Cactus trees</English>
+        <French>
+            <Text>Cactus</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Kaktus</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Cactus</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>CACTUS</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONSMITH</Tag>
         <English>
             <Text>Master Cannonsmith:Master Cannonsmiths</Text>
