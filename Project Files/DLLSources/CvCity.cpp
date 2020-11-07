@@ -10708,7 +10708,7 @@ void CvCity::setImportsLimit(YieldTypes eYield, int iValue)
 {
 	if (getImportsLimit(eYield) != iValue)
 	{		
-		m_em_iTradeThreshold.set(eYield, iValue);
+		m_em_iTradeMaxThreshold.set(eYield, iValue);
 		if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
@@ -10718,7 +10718,7 @@ void CvCity::setImportsLimit(YieldTypes eYield, int iValue)
 
 int CvCity::getImportsLimit(YieldTypes eYield) const
 {		
-	return m_em_iTradeThreshold.get(eYield);	
+	return m_em_iTradeMaxThreshold.get(eYield);
 }
 
 // R&R mod, vetiarvind, max yield import limit - End
