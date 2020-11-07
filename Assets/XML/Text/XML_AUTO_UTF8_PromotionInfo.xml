@@ -1205,6 +1205,30 @@
         <Spanish>Guerra Naval VI</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SAILING</Tag>
+        <English>River Sailor</English>
+        <French>Swift de rivière</French>
+        <German>Flußsegler</German>
+        <Italian>Fiume Veloce</Italian>
+        <Spanish>Río Swift</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SCOUT</Tag>
+        <English>River Crosser</English>
+        <French>Traversée de rivière</French>
+        <German>Flußquerer</German>
+        <Italian>Attraversamento del fiume</Italian>
+        <Spanish>Cruce del río</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_RAIDER</Tag>
+        <English>River Fighter</English>
+        <French>Chasseur de rivière</French>
+        <German>Flußkämpfer</German>
+        <Italian>Combattente del fiume</Italian>
+        <Spanish>Luchador de río</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROMOTION_SEA_EXPLORER</Tag>
         <English>Sea Explorer</English>
         <French>Explorateur des mers</French>
