@@ -94,11 +94,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FORTIFY_HELP</Tag>
-        <English>The unit "digs in" to better withstand enemy attack. A unit gets a 5%% defensive bonus for each turn it is fortified, to a maximum bonus of 25%%.</English>
-        <French>L'unité se retranche pour mieux résister aux attaques ennemies. Une unité retranchée bénéficie d'un bonus de défense de 5%% pour chaque tour passé à se régénérer, avec un maximum de 25%%.</French>
-        <German>Die Einheit "gräbt sich ein", um dem Feind besser standhalten zu können. Befestigte Einheiten erhalten pro Runde 5%% Defensivbonus (maximal 25%%).</German>
-        <Italian>L'unità si "trincera" per poter fronteggiare meglio l'attacco nemico. Un'unità guadagna il 5%% di bonus difensivo per ogni turno che rimane fortificata, fino a un massimo del 25%%.</Italian>
-        <Spanish>La unidad se "atrinchera" para aguantar mejor los ataques del enemigo. Obtiene una bonificación defensiva del 5%% por cada turno que se fortifique hasta un máximo de un 25%%.</Spanish>
+        <English>The unit "digs in" to better withstand enemy attack. A unit gets a 5% defensive bonus for each turn it is fortified, to a maximum bonus of 25%.</English>
+        <French>L'unité se retranche pour mieux résister aux attaques ennemies. Une unité retranchée bénéficie d'un bonus de défense de 5% pour chaque tour passé à se régénérer, avec un maximum de 25%.</French>
+        <German>Die Einheit "gräbt sich ein", um dem Feind besser standhalten zu können. Befestigte Einheiten erhalten pro Runde 5% Defensivbonus (maximal 25%).</German>
+        <Italian>L'unità si "trincera" per poter fronteggiare meglio l'attacco nemico. Un'unità guadagna il 5% di bonus difensivo per ogni turno che rimane fortificata, fino a un massimo del 25%.</Italian>
+        <Spanish>La unidad se "atrinchera" para aguantar mejor los ataques del enemigo. Obtiene una bonificación defensiva del 5% por cada turno que se fortifique hasta un máximo de un 25%.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FOUND</Tag>

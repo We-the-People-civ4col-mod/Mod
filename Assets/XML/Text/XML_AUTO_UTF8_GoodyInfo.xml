@@ -22,35 +22,95 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
-        <English>You have discovered a lost missionary!</English>
-        <French>Vous avez découvert un missionnaire perdu !</French>
-        <German>Ihr habt einen verlaufenen Missionar entdeckt!</German>
-        <Italian>You have discovered a lost missionary!</Italian>
-        <Spanish>You have discovered a lost missionary!</Spanish>
+        <English>Jesuit Missionary:Jesuit Missionaries</English>
+        <French>
+            <Text>Missionnaire jésuite:Missionnaires jésuites</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Jesuitenmissionar:Jesuitenmissionare</German>
+        <Italian>
+            <Text>Missionario gesuita:Missionari gesuiti</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Misionero jesuita:Misioneros jesuit. </Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
-        <English>You have discovered a lost colonist from a former failed colony!</English>
-        <French>Vous avez découvert un colon perdu d'une ancienne colonie !</French>
-        <German>Ihr habt einen verlorenen Kolonisten einer gescheiterten Kolonie entdeckt!</German>
-        <Italian>You have discovered a lost colonist from a former failed colony!</Italian>
-        <Spanish>You have discovered a lost colonist from a former failed colony!</Spanish>
+        <English>Free Colonist:Free Colonists</English>
+        <French>
+            <Text>Colon libre:Colons libres</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Freier Kolonist:Freie Kolonisten</German>
+        <Italian>
+            <Text>Libero colono:Liberi coloni</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Colono libre:Colonos libres</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
-        <English>You have discovered a lost conquistador who was separated from his fellows!</English>
-        <French>Vous avez découvert un conquistador perdu abandonné par les siens !</French>
-        <German>Ihr habt einen Conquistador entdeckt, der von seiner Truppe getrennt wurde!</German>
-        <Italian>You have discovered a lost conquistador who was separated from his fellows!</Italian>
-        <Spanish>You have discovered a lost conquistador who was separated from his fellows!</Spanish>
+        <English>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Conquistador:Conquistadors</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
-        <English>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</English>
-        <French>Vous avez découvert un navire flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
-        <German>Ihr habt ein steuerlos treibendes Schiff im offenen Meer entdeckt! Die gesamte Besatzung ist to. Es scheint als sei sie verdurstet.</German>
-        <Italian>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Italian>
-        <Spanish>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Spanish>
+        <English>Caravel:Caravels</English>
+        <French>
+            <Text>Caravelle:Caravelles</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Karavelle:Karavellen</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Caravella:Caravelle</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Carabela:Carabelas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE</Tag>
@@ -170,23 +230,43 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
-        <English>You have discovered a proud native warrior who offers to join you!</English>
-        <French>Vous avez découvert un fier guerrier indigène qui propose de vous rejoindre !</French>
-        <German>Ihr habt einen stolzen Ureinwohnerkrieger entdeckt, der sich euch anschliesst!</German>
-        <Italian>You have discovered a proud native warrior who offers to join you!</Italian>
-        <Spanish>You have discovered a proud native warrior who offers to join you!</Spanish>
+        <English>Native Mercenary:Native Mercenaries</English>
+        <French>Mercenaire indigène:Mercenaires indigènes</French>
+        <German>Indianischer Söldner:Indianische Söldner</German>
+        <Italian>Native Mercenary:Native Mercenaries</Italian>
+        <Spanish>Native Mercenary:Native Mercenaries</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
-        <English>You have discovered a runaway slave from a native tribe!</English>
-        <French>Vous avez découvert un esclave fuyant une tribu indigène !</French>
-        <German>Ihr habt einen Ureinwohnersklaven entdeckt, der von seinem Stamm geflohen ist!</German>
-        <Italian>You have discovered a runaway slave from a native tribe!</Italian>
-        <Spanish>You have discovered a runaway slave from a native tribe!</Spanish>
+        <English>
+            <Text>Native Slave:Native Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Esclave indigène:Esclaves indigènes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Versklavter Ureinwohner:Versklavte Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Native Slave:Native Slaves</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Esclavo Nativo:Esclavos Nativos</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_EL_DORADO</Tag>
-        <English>Rumors about El Dorado</English>
+        <English>Rumours about El Dorado</English>
         <French>Rumeurs à propos de l'El Dorado</French>
         <German>Gerüchte über El Dorado</German>
         <Italian>Rumors about El Dorado</Italian>
@@ -194,7 +274,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
-        <English>Rumors about the Fountain of Youth</English>
+        <English>Rumours about the Fountain of Youth</English>
         <French>Rumeurs à propos de la Fontaine de Jouvence</French>
         <German>Gerüchte über den Jungbrunnen</German>
         <Italian>Rumors about the Fountain of Youth</Italian>
@@ -202,7 +282,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_PIRATE_TREASURE</Tag>
-        <English>Rumors about a Pirate Treasure</English>
+        <English>Rumours about a Pirate Treasure</English>
         <French>Rumeurs à propos du trésor pirate</French>
         <German>Gerüchte über über einen Piratenschatz</German>
         <Italian>Rumors about a Pirate Treasure</Italian>
@@ -234,11 +314,23 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
-        <English>You have discovered a survivor from a shipwreck!</English>
-        <French>Vous avez découvert les survivants d'un nauffrage !</French>
-        <German>Ihr habt einen Überlebenden eines Schiffsunglücks entdeckt!</German>
-        <Italian>You have discovered a survivor from a shipwreck!</Italian>
-        <Spanish>You have discovered a survivor from a shipwreck!</Spanish>
+        <English>Indentured Servant:Indentured Servants</English>
+        <French>
+            <Text>Engagé:Engagés</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Schuldknecht:Schuldknechte</German>
+        <Italian>
+            <Text>Servo per contratto:Servi per contratto</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Siervo por deudas:Siervos por deudas</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_TREASURE</Tag>

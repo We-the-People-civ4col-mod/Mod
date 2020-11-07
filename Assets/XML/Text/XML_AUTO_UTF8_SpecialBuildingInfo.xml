@@ -170,7 +170,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_FURNITURE</Tag>
-        <English>Furnitureproduction</English>
+        <English>Furniture Production</English>
         <French>Fabrication des meubles</French>
         <German>Möbelherstellung</German>
         <Italian>Furnitureproduction</Italian>
@@ -234,7 +234,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_MEAT</Tag>
-        <English>Slaughtery</English>
+        <English>Slaughterhouse</English>
         <French>Abattage</French>
         <German>Schlachtung</German>
         <Italian>Slaughtery</Italian>
@@ -250,7 +250,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
-        <English>Armory Buildings</English>
+        <English>Armoury Buildings</English>
         <French>
             <Text>Bâtiments dédiés aux armes</Text>
             <Gender>Male</Gender>

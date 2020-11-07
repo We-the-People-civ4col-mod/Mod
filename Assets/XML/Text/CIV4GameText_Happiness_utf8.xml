@@ -95,28 +95,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS</Tag>
-        <English>[COLOR_POSITIVE_TEXT]Citizens are happy:[COLOR_REVERT][NEWLINE][ICON_BULLET] Learning by Doing is faster [NEWLINE][ICON_BULLET] Slaves and Criminals become free faster [NEWLINE][ICON_BULLET] Slaves and Criminals running away less often [NEWLINE][ICON_BULLET] Slaves and Criminals revolting less often [NEWLINE][ICON_BULLET] Population growing faster [NEWLINE][ICON_BULLET] Domestic Market profits increased [NEWLINE][ICON_BULLET] Entertainment profits increased [NEWLINE][ICON_BULLET] Immigration from Europe increased [NEWLINE][ICON_BULLET] High Happiness can cause Festivities</English>
+        <English>[COLOR_POSITIVE_TEXT]Citizens are happy:[COLOR_REVERT][NEWLINE][ICON_BULLET] Learning by Doing is faster [NEWLINE][ICON_BULLET] Slaves and Criminals become free faster [NEWLINE][ICON_BULLET] Slaves and Criminals run away less often [NEWLINE][ICON_BULLET] Slaves and Criminals revolt less often [NEWLINE][ICON_BULLET] The population grows faster [NEWLINE][ICON_BULLET] Domestic Market profits increase [NEWLINE][ICON_BULLET] Entertainment profits increase [NEWLINE][ICON_BULLET] Immigration from Europe increases [NEWLINE][ICON_BULLET] High Happiness can cause Festivities</English>
         <German>[COLOR_POSITIVE_TEXT]Stadtbewohner sind glücklich:[COLOR_REVERT][NEWLINE][ICON_BULLET] Erlernen es Berufes durch Ausübung beschleunigt [NEWLINE][ICON_BULLET] Sklaven und Kriminelle werden schneller freie Siedler [NEWLINE][ICON_BULLET] Sklaven und Kriminelle flüchten weniger oft [NEWLINE][ICON_BULLET] Sklaven und Kriminelle revoltieren weniger oft [NEWLINE][ICON_BULLET] Bevölkerung wächst schneller [NEWLINE][ICON_BULLET] Höhere Profite durch heimischen Markt [NEWLINE][ICON_BULLET] Höhere Profite durch Unterhaltung [NEWLINE][ICON_BULLET] Einwanderung aus Europa erhöht [NEWLINE][ICON_BULLET] Hohe Zufriedenheit kann zu Feierlichkeiten führen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_HAPPINESS_NEGATIVE_EFFECTS </Tag>
-        <English>[COLOR_NEGATIVE_TEXT]Citizens are unhappy:[COLOR_REVERT][NEWLINE][ICON_BULLET] Learning by Doing is slower [NEWLINE][ICON_BULLET] Slaves and Criminals become free slower [NEWLINE][ICON_BULLET] Slaves and Criminals running away more often [NEWLINE][ICON_BULLET] Slaves and Criminals revolting more often [NEWLINE][ICON_BULLET] Population growing slower [NEWLINE][ICON_BULLET] Domestic Market profits decreased [NEWLINE][ICON_BULLET] Entertainment profits decreased [NEWLINE][ICON_BULLET] Immigration from Europe decreased [NEWLINE][ICON_BULLET] High Unappiness can cause Unrest</English>
+        <English>[COLOR_NEGATIVE_TEXT]Citizens are unhappy:[COLOR_REVERT][NEWLINE][ICON_BULLET] Learning by Doing is slower [NEWLINE][ICON_BULLET] Slaves and Criminals become free more slowly [NEWLINE][ICON_BULLET] Slaves and Criminals run away more often [NEWLINE][ICON_BULLET] Slaves and Criminals revolt more often [NEWLINE][ICON_BULLET] Population grows slower [NEWLINE][ICON_BULLET] Domestic Market profits decrease [NEWLINE][ICON_BULLET] Entertainment profits decrease [NEWLINE][ICON_BULLET] Immigration from Europe decreases [NEWLINE][ICON_BULLET] High Unappiness can cause Unrest</English>
         <German>[COLOR_NEGATIVE_TEXT]Stadtbewohner sind unglücklich:[COLOR_REVERT][NEWLINE][ICON_BULLET] Erlernen es Berufes durch Ausübung verlangsamt [NEWLINE][ICON_BULLET] Sklaven und Kriminelle werden langsamer freie Siedler [NEWLINE][ICON_BULLET] Sklaven und Kriminelle flüchten öfter [NEWLINE][ICON_BULLET] Sklaven und Kriminelle revoltieren öfter [NEWLINE][ICON_BULLET] Bevölkerung wächst langsamer [NEWLINE][ICON_BULLET] Geringere Profite durch heimischen Markt [NEWLINE][ICON_BULLET] Geringere Profite durch Unterhaltung [NEWLINE][ICON_BULLET] Einwanderung aus Europa gesenkt [NEWLINE][ICON_BULLET] Hohe Unzufriedenheit kann zu Unruhen führen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_HAPPINESS_ZERO_EFFECTS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Citizens are neither happy nor unhappy:[COLOR_REVERT][NEWLINE][ICON_BULLET] no effects currently</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Citizens are neither happy nor unhappy:[COLOR_REVERT][NEWLINE][ICON_BULLET] no current effects</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Stadtbewohner sind weder glücklich noch unglücklich:[COLOR_REVERT][NEWLINE][ICON_BULLET] aktuell keine Effekte</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD</Tag>
-        <English>Happiness of the City: %d1 %F2_Icon</English>
+        <English>Happiness in the City: %d1 %F2_Icon</English>
         <French>Satisfaction de la ville : %d1 %F2_Icon</French>
         <German>Zufriedenheit der Stadt: %d1 %F2_Icon</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD</Tag>
-        <English>Unappiness of the City: %d1 %F2_Icon</English>
+        <English>Unhappiness in the City: %d1 %F2_Icon</English>
         <French>Insatisfaction de la ville : %d1 %F2_Icon</French>
         <German>Unzufriedenheit der Stadt: %d1 %F2_Icon</German>
     </TEXT>

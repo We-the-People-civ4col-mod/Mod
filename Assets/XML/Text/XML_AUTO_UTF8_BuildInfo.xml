@@ -170,7 +170,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_REFORESTATION_GRASS</Tag>
-        <English>Plant Forest</English>
+        <English>Plant a Forest</English>
         <French>Planter une forêt</French>
         <German>Wald aufforsten</German>
         <Italian>Plant Forest</Italian>
@@ -266,7 +266,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILD_TRAPPER_HUT</Tag>
-        <English>Build a [LINK=IMPROVEMENT_TRAPPER_HUT]Trapperhut[\LINK]</English>
+        <English>Build a [LINK=IMPROVEMENT_TRAPPER_HUT]Trapper hut[\LINK]</English>
         <French>Construire une [LINK=IMPROVEMENT_TRAPPER_HUT]Hutte du trappeur[\LINK]</French>
         <German>[LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütte[\LINK] bauen</German>
         <Italian>Costruire una [LINK=IMPROVEMENT_TRAPPER_HUT]Trapperhut[\LINK]</Italian>

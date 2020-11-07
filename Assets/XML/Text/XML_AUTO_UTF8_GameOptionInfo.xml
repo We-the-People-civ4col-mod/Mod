@@ -10,7 +10,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ADVANCED_START_HELP</Tag>
-        <English>Allows players to 'purchase' their choice of starting settlements, units, terrain improvements, etc. when game begins.</English>
+        <English>Allows players to 'purchase' their choice of starting settlements, units and improvements when the game begins.</English>
         <French>Permet aux joueurs "d'acheter " des colonies, unités, terrains, améliorations, etc. au début du jeu.</French>
         <German>Ermöglicht den Spielern, bei Spielbeginn ihre Auswahl an Siedlungen, Einheiten, Gelände-Modernisierungen etc. zu erwerben.</German>
         <Italian>Permette ai giocatori di "acquistare" insediamenti, unità, miglioramenti del terreno, ecc. all'avvio del gioco.</Italian>
@@ -58,7 +58,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ALWAYS_WAR_HELP</Tag>
-        <English>All AI players are at war with the human for the length of the game</English>
+        <English>All AI players are at war with the human player for the length of the game</English>
         <French>Toutes les factions gérées par l'IA sont en guerre avec le joueur pendant toute la durée du jeu.</French>
         <German>Alle KI-Spieler befinden sich für die gesamte Spieldauer mit den menschlichen Spielern im Krieg</German>
         <Italian>Tutti i giocatori gestiti dall'IA sono in guerra con le colonie dei giocatori per tutta la partita</Italian>
@@ -186,7 +186,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_NO_MORE_VARIABLES_HIDDEN_HELP</Tag>
-        <English>The game displays extra infos on attitudes, taxes, Natives etc...</English>
+        <English>The game displays extra information on attitudes, taxes, Natives etc...</English>
         <French>Des informations supplémentaires sur les attitudes, les taxes, et les indiens apparaissent a l'écran</French>
         <German>Im spiel werden zusätzliche Informationen angzeigt. Zur Attitude, zu den Steuern, zu den Ureinwohnern ...</German>
         <Italian>The game displays extra infos on attitudes, taxes, Natives etc...</Italian>
@@ -295,7 +295,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
-        <English>Only 1 Colonist will be allowed to live and learn in a Native Village at the same time. After he finished the next Colonist can be trained.</English>
+        <English>Only 1 Colonist is allowed to live and learn in a Native Village at any one time. After he's qualified, the next Colonist can be trained.</English>
         <German>Nur 1 Kolonist darf zur selben Zeit in einem Unreinwohnerdorft leben und lernen. Der nächste muss warten bis dieser fertig trainiert wurde.</German>
     </TEXT>
     <TEXT>
