@@ -3274,6 +3274,26 @@
         <Italian>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Italian>
         <Spanish>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_SOLDIERS_SON_IN_FORT</Tag>
+        <English>A soldier's son has been secretly raised in a Fort.</English>
+        <German>A soldier's son has been secretly raised in a Fort.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_SOLDIERS_SON_IN_FORT</Tag>
+        <English>Mylord, during on of the regular inspections in one of our Forts, one of its officers found out that one of the soldiers had secretly been raising his son in the fort after the child's mother had died. The young man is now 15 years and seems have become a fine lad considering these tough curcomstances for a child.</English>
+        <German>Mylord, während einer der regulären Inspektionen in einem unserer Forts, fand einer der Offiziere heraus, dass einer der Soldaten heimlich seinen Sohn im Fort aufzog, nachdem die Mutter des Kindes gestorben war. Der junge Mann ist nun 15 Jahre alt und scheint trotz der schwierigen Bedingungen für ein Kind ein anständiges Wesen zu haben.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_1</Tag>
+        <English>The young man must surely have learned something during his time in the Fort. Take care that he finishes at least some basic training in the Militia, give him some arms and put him into service.</English>
+        <German>Der junge Mann wird sicher etwas während seiner Zeit im Fort gelernt haben. Stellt sicher, dass er zumindest eine grundlegende Ausbildung in der Miliz bekommt, gebt ihm Waffen und lasst ihn in Dienst stellen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_2</Tag>
+        <English>We should give the young man a chance for a normal life and let him make his own decisions once he is of age. Give him proper clothes and send him to one of our cities where he can choose a profession of his liking.</English>
+        <German>Wir sollten dem jungen Mann eine Chance auf ein normales Leben geben und darauf seine eigenen Entscheidungen zu treffen. Gebt ihm saubere Kleidung, sendet ihn in eine unserer Städte und lasst ihn selbst einen Beruf wählen.</German>
+    </TEXT>
 <!-- EUROPE TRADE Events -->
 <!-- Generic Texts -->
     <TEXT>
