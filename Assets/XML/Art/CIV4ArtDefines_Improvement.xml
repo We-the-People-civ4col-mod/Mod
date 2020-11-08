@@ -70,6 +70,15 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,16</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_CAMPFIRE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/campfire/campfire.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,4,16</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_FARM</Type>
             <bExtraAnimations>1</bExtraAnimations>
             <fScale>0.6</fScale>

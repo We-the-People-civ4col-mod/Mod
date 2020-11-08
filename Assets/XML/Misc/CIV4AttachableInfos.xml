@@ -44,6 +44,12 @@
 			<Path>Art/Interface/Attachables/AttachableSmoke.nif</Path>
 		</AttachableInfo>
 		<AttachableInfo>
+			<Type>ATTACHABLE_IMPCAMPFIRE</Type>
+			<Description>ATTACHABLE_SMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/campfire/fx_fire_campfire.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
 			<Type>ATTACHABLE_CARAVEL_DAMAGE_SMOKE</Type>
 			<Description>DarkSmoke for the 4th Damage State of the Caravel</Description>
 			<fScale>1.5</fScale>

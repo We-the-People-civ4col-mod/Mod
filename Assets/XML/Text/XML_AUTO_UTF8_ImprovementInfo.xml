@@ -376,6 +376,26 @@
             <Plural>1</Plural>
         </Spanish>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT5</Tag>
+        <English>Camp Fire</English>
+        <French>
+            <Text>Feu de camp</Text>
+            <Gender>Neutral</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Lagerfeuer</German>
+        <Italian>
+            <Text>Fuoco da campo</Text>
+            <Gender>Neutral</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Fogata</Text>
+            <Gender>Neutral</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LAND_WORKED</Tag>
         <English>Land Worked</English>
