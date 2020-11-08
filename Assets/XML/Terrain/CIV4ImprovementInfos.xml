@@ -276,6 +276,48 @@
             <WorldSoundscapeAudioScript/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
+       <ImprovementInfo>
+            <Type>IMPROVEMENT_GOODY_HUT4</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT3_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_SHIPWRECK</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>1</bWater>
+            <bGoody>1</bGoody>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>100</iTilesPerGoody>
+            <iGoodyRange>20</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>0</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <WorldSoundscapeAudioScript/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
         <ImprovementInfo>
             <Type>IMPROVEMENT_FARM</Type>
             <Description>TXT_KEY_IMPROVEMENT_FARM</Description>

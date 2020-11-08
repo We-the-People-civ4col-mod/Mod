@@ -356,7 +356,27 @@
         <Italian>[TAB]A burial ground or cemetery is a spatially defined area where the remains of deceased people are buried or are otherwise interred. The term "cemetery" implies that the land is specifically designated as a burial ground. The intact or cremated remains of deceased people may be interred. The remains may be interred in a grave, commonly referred to as burial, or may be interred in a tomb, an "above-ground grave" (resembling a sarcophagus), a mausoleum, columbarium, or other edifice. In Western cultures, funeral ceremonies are often observed in cemeteries. These ceremonies or rites of passage differ according to cultural practices and religious beliefs. Modern cemeteries often include crematoria, and some grounds previously used for both, continue as crematoria as a principal use long after the interment areas have been filled.</Italian>
         <Spanish>[TAB]A burial ground or cemetery is a spatially defined area where the remains of deceased people are buried or are otherwise interred. The term "cemetery" implies that the land is specifically designated as a burial ground. The intact or cremated remains of deceased people may be interred. The remains may be interred in a grave, commonly referred to as burial, or may be interred in a tomb, an "above-ground grave" (resembling a sarcophagus), a mausoleum, columbarium, or other edifice. In Western cultures, funeral ceremonies are often observed in cemeteries. These ceremonies or rites of passage differ according to cultural practices and religious beliefs. Modern cemeteries often include crematoria, and some grounds previously used for both, continue as crematoria as a principal use long after the interment areas have been filled.</Spanish>
     </TEXT>
-    <TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Tag>
+        <English>Ship Wreck</English>
+        <French>
+            <Text>Ship Wreck</Text>
+            <Gender>Neutral</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Schiffswrack</German>
+        <Italian>
+            <Text>Ship Wreck</Text>
+            <Gender>Neutral</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Ship Wrecke</Text>
+            <Gender>Neutral</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+	<TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_LAND_WORKED</Tag>
         <English>Land Worked</English>
         <French>
