@@ -913,7 +913,7 @@
             <PrereqTerrainType>TERRAIN_LARGE_RIVERS</PrereqTerrainType>
             <ResultTerrainType>NONE</ResultTerrainType>
             <ResultFeatureType>NONE</ResultFeatureType>
-            <RouteType>NONE</RouteType>
+            <RouteType>ROUTE_RAFT_STATION</RouteType>
             <EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
             <FeatureStructs/>
             <HotKey/>

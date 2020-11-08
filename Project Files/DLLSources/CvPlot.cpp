@@ -2025,7 +2025,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 	eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
 
-	if (eRoute != NO_ROUTE)
+	if (eRoute != NO_ROUTE && !GC.getRouteInfo(eRoute).isGraphicalOnly()) //WTP, Nightinggale, Large Rivers - START
 	{
 		if (isPeak())
 		{
@@ -5344,6 +5344,14 @@ RouteTypes CvPlot::getRouteType() const
 
 void CvPlot::setRouteType(RouteTypes eNewValue)
 {
+	//WTP, Nightinggale, Large Rivers - START
+	if (eNewValue != NO_ROUTE && GC.getRouteInfo(eNewValue).isGraphicalOnly())
+	{
+		// don't build routes, which aren't supposed to show up
+		return;
+	}
+	//WTP, Nightinggale, Large Rivers - END
+
 	bool bOldRoute;
 	int iI;
 

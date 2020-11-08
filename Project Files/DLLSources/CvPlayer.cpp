@@ -12375,6 +12375,13 @@ int CvPlayer::getAdvancedStartRouteCost(RouteTypes eRoute, bool bAdd, CvPlot* pP
 		return -1;
 	}
 
+	//WTP, Nightinggale, Large Rivers - START
+	if (GC.getRouteInfo(eRoute).isGraphicalOnly())
+	{
+		return -1;
+	}
+	//WTP, Nightinggale, Large Rivers - END
+
 	int iNumRoutes = 0;
 
 	int iCost = GC.getRouteInfo(eRoute).getAdvancedStartCost();
