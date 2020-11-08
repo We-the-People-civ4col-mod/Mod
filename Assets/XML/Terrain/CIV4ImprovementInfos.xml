@@ -282,7 +282,7 @@
             <WorldSoundscapeAudioScript/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
-       <ImprovementInfo>
+        <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT4</Type>
             <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT4_PEDIA</Civilopedia>
@@ -325,7 +325,7 @@
             <WorldSoundscapeAudioScript/>
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
-       <ImprovementInfo>
+        <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT5</Type>
             <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT5</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT5_PEDIA</Civilopedia>
@@ -354,7 +354,7 @@
             <iDefenseModifier>0</iDefenseModifier>
             <iPillageGold>0</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
-           <TerrainMakesValids>
+            <TerrainMakesValids>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_GRASS</TerrainType>
                     <bMakesValid>1</bMakesValid>
