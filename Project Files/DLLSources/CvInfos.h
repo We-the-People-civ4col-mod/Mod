@@ -2257,6 +2257,7 @@ public:
 	DllExport bool isRequiresFeature() const;
 	DllExport bool isWater() const;
 	DllExport bool isGoody() const;
+	DllExport bool isGoodyForSpawningUnits() const; //WTP, Unit only Goodies
 	DllExport bool isPermanent() const;
 	DllExport bool useLSystem() const;
 	DllExport bool isOutsideBorders() const;
@@ -2322,6 +2323,7 @@ protected:
 	bool m_bRequiresFeature;
 	bool m_bWater;
 	bool m_bGoody;
+	bool m_bGoodyForSpawningUnits; //WTP, Unit only Goodies
 	bool m_bPermanent;
 	bool m_bUseLSystem;
 	bool m_bOutsideBorders;

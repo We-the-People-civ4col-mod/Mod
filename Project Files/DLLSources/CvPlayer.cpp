@@ -5764,6 +5764,10 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 		if (!isNative() && !GC.getGameINLINE().isBarbarianPlayer(getID()))
 		// < JAnimals Mod End >
 		{
+			//WTP, Unit only Goodies -END 
+			bool bCanTriggerUnitGoodies = pPlot->isGoodyForSpawningUnits();
+			//WTP, Unit only Goodies - START
+
 			pPlot->removeGoody();
 
 			std::vector<int> aGoodyFactors(GC.getNumGoodyInfos(), 1);
@@ -5793,19 +5797,58 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 					for (int iJ = 0; iJ < aGoodyFactors[eGoody]; ++iJ)
 					{
 						int iRandValue = GC.getGameINLINE().getSorenRandNum(1000, "Goodies");
-						// R&R, ray, Goodies with units much less frequent - START
+
+						//WTP, Unit only Goodies - START
+						bool bValid = false;
 						CvGoodyInfo& uGoody = GC.getGoodyInfo(eGoody);
+
+						// Case: Goody gives a Unit
 						if (uGoody.getUnitClassType() != NO_UNITCLASS)
 						{
-							iRandValue = GC.getGameINLINE().getSorenRandNum(900, "Unit Goodies");
+							// special case Treasures
+							if (uGoody.getUnitClassType() == (UnitClassTypes) GC.getDefineINT("TREASURE_UNITCLASS"))
+							{
+								bool isWaterGoody = uGoody.isWaterGoody();
+
+								// in Water it needs to be a Unit Goody
+								if (isWaterGoody && bCanTriggerUnitGoodies)
+								{
+									bValid = true;
+								}
+
+								// on land it shall be not a Unit Goody
+								else if (!isWaterGoody && !bCanTriggerUnitGoodies)
+								{
+									bValid = true;
+								}
+							}
+
+							// in all other Cases Unit Goodies may only be triggered if bCanTriggerUnitGoodies 
+							else if (bCanTriggerUnitGoodies)
+							{
+								bValid = true;
+							}
 						}
-						// R&R, ray, Goodies with units much less frequent - END
-						
-						if(iRandValue > iBestValue)
+
+						// Case: Goody gives other rewards
+						else 
 						{
-							iBestValue = iRandValue;
-							eBestGoody = eGoody;
+							if (!bCanTriggerUnitGoodies)
+							{
+								bValid = true;	
+							}
 						}
+
+						// so now we figured out the Goody is valid or not
+						if (bValid)
+						{
+							if(iRandValue > iBestValue)
+							{
+								iBestValue = iRandValue;
+								eBestGoody = eGoody;
+							}
+						}
+						//WTP, Unit only Goodies - END
 					}
 				}
 			}

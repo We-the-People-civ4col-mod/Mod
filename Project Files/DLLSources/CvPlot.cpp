@@ -3534,6 +3534,18 @@ bool CvPlot::isGoody(TeamTypes eTeam) const
 	return (GC.getImprovementInfo(getImprovementType()).isGoody());
 }
 
+//WTP, Unit only Goodies - START
+bool CvPlot::isGoodyForSpawningUnits(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningUnits());
+}
+//WTP, Unit only Goodies - END
+
 
 bool CvPlot::isRevealedGoody(TeamTypes eTeam) const
 {

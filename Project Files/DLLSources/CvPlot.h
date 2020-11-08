@@ -160,6 +160,8 @@ public:
 	bool isAdjacentNonvisible(TeamTypes eTeam) const;
 
 	DllExport bool isGoody(TeamTypes eTeam = NO_TEAM) const;
+	DllExport bool isGoodyForSpawningUnits(TeamTypes eTeam = NO_TEAM) const; //WTP, Unit only Goodies
+
 	bool isRevealedGoody(TeamTypes eTeam = NO_TEAM) const;
 	void removeGoody();
 

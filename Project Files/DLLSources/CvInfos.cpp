@@ -7949,6 +7949,7 @@ m_bRequiresRiverSide(false),
 m_bRequiresFeature(false),
 m_bWater(false),
 m_bGoody(false),
+m_bGoodyForSpawningUnits(false), //WTP, Unit only Goodies
 m_bPermanent(false),
 m_bUseLSystem(false),
 m_bOutsideBorders(false),
@@ -8113,6 +8114,13 @@ bool CvImprovementInfo::isGoody() const
 {
 	return m_bGoody;
 }
+//WTP, Unit only Goodies - START
+bool CvImprovementInfo::isGoodyForSpawningUnits() const
+{
+	return m_bGoodyForSpawningUnits;
+}
+//WTP, Unit only Goodies - EMD
+
 bool CvImprovementInfo::isPermanent() const
 {
 	return m_bPermanent;
@@ -8266,6 +8274,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bRequiresFeature);
 	stream->Read(&m_bWater);
 	stream->Read(&m_bGoody);
+	stream->Read(&m_bGoodyForSpawningUnits); //WTP, Unit only Goodies
 	stream->Read(&m_bPermanent);
 	stream->Read(&m_bUseLSystem);
 	stream->Read(&m_bOutsideBorders);
@@ -8342,6 +8351,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bRequiresFeature);
 	stream->Write(m_bWater);
 	stream->Write(m_bGoody);
+	stream->Write(m_bGoodyForSpawningUnits); //WTP, Unit only Goodies
 	stream->Write(m_bPermanent);
 	stream->Write(m_bUseLSystem);
 	stream->Write(m_bOutsideBorders);
@@ -8390,6 +8400,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bRequiresFeature, "bRequiresFeature");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bGoody, "bGoody");
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningUnits, "bGoodyForSpawningUnits"); //WTP, Unit only Goodies
 	pXML->GetChildXmlValByName(&m_bPermanent, "bPermanent");
 	pXML->GetChildXmlValByName(&m_bUseLSystem, "bUseLSystem");
 	pXML->GetChildXmlValByName(&m_iTilesPerGoody, "iTilesPerGoody");
