@@ -285,7 +285,7 @@
        <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT4</Type>
             <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT3_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT4_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_SHIPWRECK</ArtDefineTag>
             <PrereqNatureYields/>
             <YieldIncreases/>
@@ -328,7 +328,7 @@
        <ImprovementInfo>
             <Type>IMPROVEMENT_GOODY_HUT5</Type>
             <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT5</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT2_PEDIA</Civilopedia>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT5_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_CAMPFIRE</ArtDefineTag>
             <PrereqNatureYields/>
             <YieldIncreases/>
