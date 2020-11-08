@@ -3322,7 +3322,11 @@ BestJob AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit
 
 struct FindBestJob
 {
-	BestJob bestJob;
+	FindBestJob(std::vector<int>& valid_, CvCityAI* pCity_, CvUnit* pUnit_, bool bIndoorOnly_) :
+		valid(valid_), pCity(pCity_), pUnit(pUnit_), bIndoorOnly(bIndoorOnly_), bestJob() {}
+
+	FindBestJob(const FindBestJob& x, tbb::split) : valid(x.valid), pCity(x.pCity), pUnit(x.pUnit), bIndoorOnly(x.bIndoorOnly), bestJob()
+	{};
 
 	void operator()(const tbb::blocked_range<size_t>& r)
 	{
@@ -3332,29 +3336,39 @@ struct FindBestJob
 		{
 			const BestJob currentBestJob = AI_findBestJob(pCity, (ProfessionTypes)valid[i], pUnit, bIndoorOnly);
 
-			if (currentBestJob.iBestValue > bestJob.iBestValue)
+			update(currentBestJob);
+		}
+	}
+
+	void join(const FindBestJob& x)
+	{
+		update(x.bestJob);
+	}
+
+	BestJob bestJob;
+
+private:
+
+	void update(const BestJob& potentialBestJob)
+	{
+		if (potentialBestJob.iBestValue > bestJob.iBestValue)
+		{
+			// Update best job since we've found a better one
+			bestJob = potentialBestJob;
+		}
+		// Tie-breaker clause
+		else if (bestJob.eBestProfession != NO_PROFESSION && potentialBestJob.iBestValue == bestJob.iBestValue)
+		{
+			// Prefer the lowest profession index to preserve commutative ordering
+			if (potentialBestJob.eBestProfession < bestJob.eBestProfession)
 			{
-				bestJob = currentBestJob;
+				// Swap anyway, even if the values are the same we must preserve
+				// deterministic ordering
+				bestJob = potentialBestJob;
 			}
 		}
 	}
 
-	FindBestJob(const FindBestJob& x, tbb::split) : valid(x.valid), pCity(x.pCity), pUnit(x.pUnit), bIndoorOnly(x.bIndoorOnly), bestJob()
-	{};
-
-	void join(const FindBestJob& x)
-	{
-		if (x.bestJob.iBestValue > bestJob.iBestValue)
-		{
-			// Update best job since we've found a better one
-			bestJob = x.bestJob;
-		}
-	}
-
-	FindBestJob(std::vector<int>& valid_, CvCityAI* pCity_, CvUnit* pUnit_, bool bIndoorOnly_) :
-		valid(valid_), pCity(pCity_), pUnit(pUnit_), bIndoorOnly(bIndoorOnly_), bestJob() {}
-
-private:
 	std::vector<int>& valid;
 	CvCityAI* pCity;
 	CvUnit* pUnit;
