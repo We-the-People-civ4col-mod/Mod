@@ -5848,6 +5848,11 @@ void CvUnitAI::AI_exploreSeaMove()
 	{
 		return;
 	}
+
+	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	{
+		return;
+	}
 	
 	if (AI_exploreCoast(2))
 	{
