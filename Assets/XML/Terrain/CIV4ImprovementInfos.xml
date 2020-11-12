@@ -304,7 +304,7 @@
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>100</iTilesPerGoody>
+            <iTilesPerGoody>40</iTilesPerGoody>
             <iGoodyRange>20</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
@@ -347,8 +347,8 @@
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>50</iTilesPerGoody>
-            <iGoodyRange>3</iGoodyRange>
+            <iTilesPerGoody>40</iTilesPerGoody>
+            <iGoodyRange>10</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>0</iDefenseModifier>
