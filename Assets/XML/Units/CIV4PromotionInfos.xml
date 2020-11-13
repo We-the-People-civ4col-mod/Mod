@@ -6997,39 +6997,15 @@
             <FeatureDoubleMoves/>
             <UnitCombats>
                 <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_NAVAL_TRADE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_MILITARY</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_PIRACY</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
+                    <bUnitCombat>1</bUnitCombat>
                 </UnitCombat>
             </UnitCombats>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
-            <bGraphicalOnly>0</bGraphicalOnly>
+            <bGraphicalOnly>1</bGraphicalOnly>
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>,Art/colonization_promotions_atlas.dds,2,14</Button>
         </PromotionInfo>
@@ -7037,7 +7013,7 @@
             <Type>PROMOTION_LARGE_RIVER_SCOUT</Type>
             <Description>TXT_KEY_PROMOTION_LARGE_RIVER_SCOUT</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
-            <PromotionPrereq>PROMOTION_EXPLORER2</PromotionPrereq>
+            <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>
             <PromotionPrereqOr2>NONE</PromotionPrereqOr2>
             <bLeader>0</bLeader>
@@ -7092,44 +7068,20 @@
                     <UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
                     <bUnitCombat>1</bUnitCombat>
                 </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_TRADE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_MILITARY</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_PIRACY</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
             </UnitCombats>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
-            <bGraphicalOnly>0</bGraphicalOnly>
+            <bGraphicalOnly>1</bGraphicalOnly>
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>,Art/colonization_promotions_atlas.dds,1,16</Button>
         </PromotionInfo>
-      <PromotionInfo>
+        <PromotionInfo>
             <Type>PROMOTION_LARGE_RIVER_RAIDER</Type>
             <Description>TXT_KEY_PROMOTION_LARGE_RIVER_RAIDER</Description>
             <Sound>AS2D_IF_LEVELUP</Sound>
-            <PromotionPrereq>PROMOTION_SWAMP_FOX1</PromotionPrereq>
+            <PromotionPrereq>NONE</PromotionPrereq>
             <PromotionPrereqOr1>NONE</PromotionPrereqOr1>
             <PromotionPrereqOr2>NONE</PromotionPrereqOr2>
             <bLeader>0</bLeader>
@@ -7191,26 +7143,6 @@
             <FeatureDoubleMoves/>
             <UnitCombats>
                 <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_MOUNTED</UnitCombatType>
-                    <bUnitCombat>1</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_TRADE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_MILITARY</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_NAVAL_PIRACY</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
-                    <UnitCombatType>UNITCOMBAT_SIEGE</UnitCombatType>
-                    <bUnitCombat>0</bUnitCombat>
-                </UnitCombat>
-                <UnitCombat>
                     <UnitCombatType>UNITCOMBAT_MELEE</UnitCombatType>
                     <bUnitCombat>1</bUnitCombat>
                 </UnitCombat>
@@ -7223,7 +7155,7 @@
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
-            <bGraphicalOnly>0</bGraphicalOnly>
+            <bGraphicalOnly>1</bGraphicalOnly>
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>,Art/colonization_promotions_atlas.dds,2,16</Button>
         </PromotionInfo>

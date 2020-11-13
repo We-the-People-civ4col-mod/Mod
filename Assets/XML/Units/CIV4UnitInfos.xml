@@ -20891,7 +20891,12 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_RAIDER</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -21536,6 +21541,10 @@
                 </FreePromotion>
                 <FreePromotion>
                     <PromotionType>PROMOTION_FORCED_MARCH1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_RAIDER</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
@@ -26001,7 +26010,12 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_SCOUT</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
             <ProfessionsNotAllowed>
@@ -32622,7 +32636,7 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>UNITCLASS_SMALL_COASTAL_SHIP</Capture>
-            <Combat>NONE</Combat>
+            <Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
