@@ -264,4 +264,14 @@
         <Tag>TXT_KEY_GOODY_WAR</Tag>
         <English>TXT_KEY_CONCEPT_WAR</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_RANGER</Tag>
+        <English>You have discovered a wounded Ranger who offers his services to us for our help.</English>
+        <German>Ihr habt einen verwundetetn Ranger entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
+        <English>You have discovered a Native Trader who had lost his orientation now wants to offer his services to you!</English>
+        <German>Ihr habt einen Uhreinwohnerhändler entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet.</German>
+    </TEXT>
 </Civ4GameText>
