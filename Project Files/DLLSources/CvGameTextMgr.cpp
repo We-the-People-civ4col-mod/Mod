@@ -5680,8 +5680,18 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET_BUILDING"));
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED", kBuilding.getDomesticMarketModifier()));
+
+		int iIncrease = kBuilding.getDomesticMarketModifier();
+		if (kBuilding.getSpecialBuildingType() == getIndexForType(JIT_ARRAY_BUILDING_SPECIAL, "SPECIALBUILDING_TRADE"))
+		{
+			// marketplaces enables trading by adding the base 100. However we want the bonus in addition to the 100%
+			iIncrease -= 100;
+		}
+		if (iIncrease > 0)
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_MARKET_BUILDING_INCREASED", kBuilding.getDomesticMarketModifier()));
+		}
 	}
 
 	int iYieldStorage = kBuilding.getYieldStorage();

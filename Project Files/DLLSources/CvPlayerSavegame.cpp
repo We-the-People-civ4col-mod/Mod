@@ -268,6 +268,7 @@ enum SavegameVariableTypes
 	PlayerSave_chievesGained,
 	PlayerSave_chievesTurn,
 	PlayerSave_triggersFired,
+	PlayerSave_CacheUpdate,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -443,6 +444,7 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_chievesGained: return "PlayerSave_chievesGained";
 	case PlayerSave_chievesTurn: return "PlayerSave_chievesTurn";
 	case PlayerSave_triggersFired: return "PlayerSave_triggersFired";
+	case PlayerSave_CacheUpdate: return "PlayerSave_CacheUpdate";
 
 	}
 	return "";
@@ -829,14 +831,18 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_chievesGained: reader.Read(m_achievesGained); break;
 		case PlayerSave_chievesTurn: reader.Read(m_achievesTurn); break;
 		case PlayerSave_triggersFired: reader.Read(m_triggersFired); break;
+
+		case PlayerSave_CacheUpdate:
+			// Updating cache prior to reading anything, which relies on cache to load properly or set other caches
+			// Cities in particular relies on cached values in CvPlayer
+
+			// The CivEffect cache isn't saved. Instead it's recalculated on load.
+			// This will make it adapt to changed xml settings.
+			CivEffect()->rebuildCivEffectCache();
+			break;
 		}
 	}
 
-
-	// The CivEffect cache isn't saved. Instead it's recalculated on load.
-	// This will make it adapt to changed xml settings.
-	// Set the CivEffect cache before loading cities and units in order to make CivEffects available to those classes.
-	CivEffect()->rebuildCivEffectCache();
 	// Get the NetID from the initialization structure
 	setNetID(gDLL->getAssignedNetworkID(getID()));
 
@@ -984,14 +990,6 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_BuildingYieldChange, m_em_iBuildingYieldChange);
 
 	writer.Write(PlayerSave_groupCycle, m_groupCycle);
-	writer.Write(PlayerSave_CityNames, m_aszCityNames);
-	writer.Write(PlayerSave_cities, m_cities);
-	writer.Write(PlayerSave_tradeRoutes, m_tradeRoutes);
-	writer.Write(PlayerSave_units, m_units);
-
-	writer.Write(PlayerSave_EuropeUnits, m_aEuropeUnits);
-	writer.Write(PlayerSave_AfricaUnits, m_aAfricaUnits);
-	writer.Write(PlayerSave_PortRoyalUnits, m_aPortRoyalUnits);
 
 	writer.Write(PlayerSave_PopRushHurryCount, m_iPopRushHurryCount, defaultPopRushHurryCount);
 	writer.Write(PlayerSave_CrossesStored, m_iCrossesStored, defaultCrossesStored);
@@ -1062,6 +1060,20 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_chievesGained, m_achievesGained);
 	writer.Write(PlayerSave_chievesTurn, m_achievesTurn);
 	writer.Write(PlayerSave_triggersFired, m_triggersFired);
+
+
+	// forces a cache update on read
+	// Anything relying on CivEffect should be below this
+	writer.Write(PlayerSave_CacheUpdate);
+
+	writer.Write(PlayerSave_CityNames, m_aszCityNames);
+	writer.Write(PlayerSave_cities, m_cities);
+	writer.Write(PlayerSave_tradeRoutes, m_tradeRoutes);
+	writer.Write(PlayerSave_units, m_units);
+
+	writer.Write(PlayerSave_EuropeUnits, m_aEuropeUnits);
+	writer.Write(PlayerSave_AfricaUnits, m_aAfricaUnits);
+	writer.Write(PlayerSave_PortRoyalUnits, m_aPortRoyalUnits);
 
 	writer.Write(PlayerSave_END);
 }
