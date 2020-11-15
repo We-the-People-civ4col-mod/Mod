@@ -196,13 +196,16 @@ GLOBAL_INCS=/I"$(TOOLKIT)/include" /I"$(PSDK)/Include" /I"$(PSDK)/Include/mfc"
 
 BOOST_LIB_PATH =
 !IF [IF NOT EXIST "$(BOOST_LIB_PATH)Boost-1.32.0\libs\boost_python-vc71-mt-gd-1_32.lib" EXIT 1] != 0
-BOOST_LIB_PATH = $(SOURCE_DIR)
+BOOST_LIB_PATH = ../../Compiler/lib/
+!IF [IF NOT EXIST "$(BOOST_LIB_PATH)Boost-1.32.0\libs\boost_python-vc71-mt-gd-1_32.lib" EXIT 1] != 0
+BOOST_LIB_PATH = $(SOURCE_DIR)/
 !IF [IF NOT EXIST "$(BOOST_LIB_PATH)Boost-1.32.0\libs\boost_python-vc71-mt-gd-1_32.lib" EXIT 1] != 0
 BOOST_LIB_PATH=$(CIV4_PATH)/
 !IF [IF NOT EXIST "$(BOOST_LIB_PATH)Boost-1.32.0\libs\boost_python-vc71-mt-gd-1_32.lib" EXIT 1] != 0
 BOOST_LIB_PATH=$(CIV4_LIB_INSTALL_PATH)/
 !IF [IF NOT EXIST "$(BOOST_LIB_PATH)Boost-1.32.0\libs\boost_python-vc71-mt-gd-1_32.lib" EXIT 1] != 0
 !MESSAGE FATAL ERROR: Failed to locate boost and python
+!ENDIF
 !ENDIF
 !ENDIF
 !ENDIF
