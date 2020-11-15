@@ -1296,6 +1296,46 @@
             <iLbDLearnLevel>2</iLbDLearnLevel>
         </ProfessionInfo>
         <ProfessionInfo>
+            <Type>PROFESSION_WOOL_DYER</Type>
+            <Description>TXT_KEY_PROFESSION_WOOL_DYER</Description>
+            <Civilopedia>TXT_KEY_PROFESSION_DYER_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_PROFESSION_DYER_STRATEGY</Strategy>
+            <Help>TXT_KEY_PROFESSION_DYER_HELP</Help>
+            <Combat>NONE</Combat>
+            <DefaultUnitAI>NONE</DefaultUnitAI>
+            <SpecialBuilding>SPECIALBUILDING_COLOURED_CLOTH</SpecialBuilding>
+            <bWorkPlot>0</bWorkPlot>
+            <bCitizen>1</bCitizen>
+            <bWater>0</bWater>
+            <bScout>0</bScout>
+            <bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+            <bCityDefender>0</bCityDefender>
+            <bCanFound>0</bCanFound>
+            <bUnarmed>0</bUnarmed>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <iCombatChange>0</iCombatChange>
+            <iMovesChange>0</iMovesChange>
+            <bMoveIntoPeak>0</bMoveIntoPeak>
+            <iWorkRate>0</iWorkRate>
+            <iMissionaryRate>0</iMissionaryRate>
+            <iNativeTradeRate>0</iNativeTradeRate>
+            <iPower>0</iPower>
+            <iAsset>300</iAsset>
+            <YieldEquipedNums/>
+            <FreePromotions/>
+            <YieldsProduced>
+                <YieldType>YIELD_COLOURED_CLOTH</YieldType>
+            </YieldsProduced>
+            <YieldsConsumed>
+                <YieldType>YIELD_WOOL_CLOTH</YieldType>
+                <YieldType>YIELD_INDIGO</YieldType>
+            </YieldsConsumed>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,5,5</Button>
+            <bUseLbD>1</bUseLbD>
+            <ExpertUnit>UNITCLASS_DYER</ExpertUnit>
+            <iLbDLearnLevel>2</iLbDLearnLevel>
+        </ProfessionInfo>
+        <ProfessionInfo>
             <Type>PROFESSION_FUR_TRADER</Type>
             <Description>TXT_KEY_PROFESSION_FUR_TRADER</Description>
             <Civilopedia>TXT_KEY_PROFESSION_FUR_TRADER_PEDIA</Civilopedia>

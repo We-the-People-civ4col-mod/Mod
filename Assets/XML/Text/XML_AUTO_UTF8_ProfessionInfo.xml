@@ -1034,27 +1034,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER</Tag>
-        <English>Dyer:Dyers</English>
-        <French>
-            <Text>Teinturier:Teinturiers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
+        <English>Cloth Dyer:Cloth Dyers</English>
         <German>
-            <Text>Färber:Färber</Text>
+            <Text>Stoffwalker:Stoffwalker</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Italian>
-            <Text>Dyer:Dyers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Dyer:Dyers</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_DYER_HELP</Tag>
@@ -1075,6 +1060,19 @@
         <German>Färber färben [COLOR_HIGHLIGHT_TEXT]Stoffe[COLOR_REVERT] mittels [COLOR_HIGHLIGHT_TEXT]Indigo[COLOR_REVERT], wodurch [COLOR_HIGHLIGHT_TEXT]Gefärbte Stoffe[COLOR_REVERT] entstehen. Dieser Prozess finden meist in Gebäuden der Stoffproduktion statt und ist noch effektiver, wenn Sie dem Beruf einen [COLOR_UNIT_TEXT]Meister Färber[COLOR_REVERT] zuweisen.</German>
         <Italian>Dyers dye [COLOR_HIGHLIGHT_TEXT]Cloth[COLOR_REVERT] to [COLOR_HIGHLIGHT_TEXT]Coloured Cloth[COLOR_REVERT] using [COLOR_HIGHLIGHT_TEXT]Indigo[COLOR_REVERT].</Italian>
         <Spanish>Dyers dye [COLOR_HIGHLIGHT_TEXT]Cloth[COLOR_REVERT] to [COLOR_HIGHLIGHT_TEXT]Coloured Cloth[COLOR_REVERT] using [COLOR_HIGHLIGHT_TEXT]Indigo[COLOR_REVERT].</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_WOOL_DYER</Tag>
+        <English>Wool Cloth Dyer:Wool Cloth Dyers</English>
+        <German>
+            <Text>Wollstoffwalker:Wollstoffwalker</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROFESSION_DYER_HELP</Tag>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_FARMER</Tag>
