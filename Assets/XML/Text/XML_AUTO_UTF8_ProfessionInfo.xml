@@ -1036,7 +1036,7 @@
         <Tag>TXT_KEY_PROFESSION_DYER</Tag>
         <English>Cloth Dyer:Cloth Dyers</English>
         <German>
-            <Text>Stoffwalker:Stoffwalker</Text>
+            <Text>Leinenfärber:Leinenfärber</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1063,9 +1063,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_WOOL_DYER</Tag>
-        <English>Wool Cloth Dyer:Wool Cloth Dyers</English>
+        <English>Wool Dyer:Wool Dyers</English>
         <German>
-            <Text>Wollstoffwalker:Wollstoffwalker</Text>
+            <Text>Wollfärber:Wollfärber</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
