@@ -988,7 +988,11 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSa
 				T tBuffer;
 				reader.Read(tBuffer);
 				IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), i);
-				set(iIndex, tBuffer);
+				if (iIndex != -1)
+				{
+					// -1 means xml entry was removed. Discard the data in question and hope the savegame will still work
+					set(iIndex, tBuffer);
+				}
 			}
 		}
 		else
@@ -997,7 +1001,11 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSa
 			T tBuffer;
 			reader.Read(tBuffer);
 			IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), iFirst);
-			set(iIndex, tBuffer);
+			if (iIndex != -1)
+			{
+				// -1 means xml entry was removed. Discard the data in question and hope the savegame will still work
+				set(iIndex, tBuffer);
+			}
 		}
 
 		if (bLast)
