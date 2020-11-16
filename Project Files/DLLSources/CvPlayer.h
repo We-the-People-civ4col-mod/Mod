@@ -844,7 +844,7 @@ public:
 	virtual void AI_makeProductionDirty() = 0;
 	virtual void AI_conquerCity(CvCity* pCity) = 0;
 	virtual int AI_foundValue(int iX, int iY, int iMinUnitRange = -1, bool bStartingLoc = false) = 0;
-	virtual int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) = 0;
+	virtual int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const = 0;
 	virtual bool AI_isWillingToTalk(PlayerTypes ePlayer) = 0;
 	virtual bool AI_demandRebukedSneak(PlayerTypes ePlayer) = 0;
 	virtual bool AI_demandRebukedWar(PlayerTypes ePlayer) = 0;

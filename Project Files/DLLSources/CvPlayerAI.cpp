@@ -2453,7 +2453,7 @@ CvCity* CvPlayerAI::AI_findTargetCity(CvArea* pArea)
 }
 
 
-int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bOffensive)
+int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bOffensive) const
 {
 	PROFILE_FUNC();
 
@@ -15704,15 +15704,25 @@ int CvPlayerAI::AI_getEuropeYieldSpending()
 // TAC - AI Economy - koma13 - END
 
 // TAC - AI Improved Naval AI - koma13 - START
+// Erik: Repurposed to return true for UnitAITypes types that should
+// avoid enemies (unless protected) during pathfinding
 bool CvPlayerAI::AI_needsProtection(UnitAITypes eUnitAI) const
 {
 	if (!isHuman())
 	{
 		switch (eUnitAI)
 		{
+			case UNITAI_COLONIST:
+			case UNITAI_SETTLER:
+			case UNITAI_WORKER:
+			case UNITAI_MISSIONARY:
+			case UNITAI_TRADER:
+			case UNITAI_WAGON:
+			case UNITAI_TREASURE:
+			case UNITAI_GENERAL:
+			case UNITAI_WORKER_SEA:
 			case UNITAI_TRANSPORT_SEA:
 			case UNITAI_TRANSPORT_COAST:
-				// Erik: Return value was removed by accident, sorry!
 				return true;
 				break;
 
