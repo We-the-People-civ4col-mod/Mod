@@ -35,7 +35,7 @@ def getGridSize(argsList):
 	
 	# set city catchment radius
 	mmap = CyGlobalContext().getMap()
-	mmap.setCityCatchmentRadius(mmap.getCustomMapOption(0))
+	mmap.setCityCatchmentRadiusMapMaker(mmap.getCustomMapOption(0))
 	
 	grid_sizes = {
 		WorldSizeTypes.WORLDSIZE_TINY:		(40,24),
@@ -1332,7 +1332,7 @@ def getCustomMapOptionDefault(argsList):
 	"""
 	optionID = argsList[0]
 	if optionID == 0:
-		return CyGlobalContext().getDefaultCityCatchmentRadius()
+		return CyGlobalContext().getDefaultCityCatchmentRadius()-1
 	return 0
 
 def isRandomCustomMapOption(argsList):

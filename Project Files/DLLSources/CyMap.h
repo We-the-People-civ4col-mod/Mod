@@ -90,7 +90,8 @@ public:
 	//int getNumPlayerOwnedPlots(int /*PlayerTypes*/ iPlayer);
 
 	int getCityCatchmentRadius() const;
-	void setCityCatchmentRadius(int iSetting);
+	void setCityCatchmentRadiusMapMaker(int iSetting);
+	void setCityCatchmentRadiusNoMapMaker(int iSetting);
 
 protected:
 	CvMap* m_pMap;

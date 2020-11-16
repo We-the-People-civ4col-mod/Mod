@@ -337,7 +337,7 @@ class MapConstants :
         mmap = gc.getMap()
 
         # set city catchment radius
-        mmap.setCityCatchmentRadius(mmap.getCustomMapOption(mc.getMapOption("colony catchment radius")))
+        mmap.setCityCatchmentRadiusMapMaker(mmap.getCustomMapOption(mc.getMapOption("colony catchment radius")))
 
         #Distance to Europe
         selectionID = mmap.getCustomMapOption(self.getMapOption("distance"))
@@ -3132,7 +3132,7 @@ def getCustomMapOptionDefault(argsList):
     # TAC - Map scripts - koma13 - END
 
     elif mc.mapOptionNames[optionID] == "colony catchment radius":
-        return CyGlobalContext().getDefaultCityCatchmentRadius()
+        return CyGlobalContext().getDefaultCityCatchmentRadius()-1
     return 0
     
 def isRandomCustomMapOption(argsList):

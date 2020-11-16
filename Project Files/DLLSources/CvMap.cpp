@@ -1202,14 +1202,13 @@ void CvMap::writeDesyncLog(FILE *f)
 	}
 }
 
-int CvMap::getCityCatchmentRadius() const
+char CvMap::getCityCatchmentRadius() const
 {
-	return m_bUseTwoPlotCities ? 1 : 0;
+	return NUM_CITY_PLOTS == NUM_CITY_PLOTS_1_PLOT ? 1 : 2;
 }
 
 void CvMap::setCityCatchmentRadius(int iSetting)
 {
-	m_bUseTwoPlotCities = iSetting > 0;
 	GC.setCityCatchmentRadius(iSetting);
 }
 

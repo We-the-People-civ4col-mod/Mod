@@ -12,8 +12,7 @@ UserSettings::UserSettings()
 
 int UserSettings::getColonyRadius() const
 {
-	// internally raidus is 0 and 1, not 1 and 2 like it is presented to the user
-	return m_iColonyRadius - 1;
+	return m_iColonyRadius;
 }
 
 // open the settings file

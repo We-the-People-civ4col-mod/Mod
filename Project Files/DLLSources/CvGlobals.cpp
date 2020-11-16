@@ -531,7 +531,6 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 	// What really should be checked here is that the total count of cities in the game should be 0.
 //	FAssert(!GC.getGameINLINE().isFinalInitialized());
 #ifndef CHECK_GLOBAL_CONSTANTS
-	++iRadius;
 	CITY_PLOTS_RADIUS = static_cast<CityPlotTypes>(iRadius);
 	if (iRadius == 1)
 	{

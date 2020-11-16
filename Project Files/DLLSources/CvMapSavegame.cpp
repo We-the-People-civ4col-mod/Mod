@@ -13,7 +13,6 @@ const int defaultNextRiverID = 0;
 
 const bool defaultWrapX = false;
 const bool defaultWrapY = false;
-const bool defaultUseTwoPlotCities = false;
 
 enum SavegameVariableTypes
 {
@@ -78,7 +77,6 @@ void CvMap::resetSavedData()
 
 	m_bWrapX            = defaultWrapX;
 	m_bWrapY            = defaultWrapY;
-	m_bUseTwoPlotCities = defaultUseTwoPlotCities;
 
 	m_ja_NumBonuses.reset();
 	m_ja_NumBonusesOnLand.reset();
@@ -124,10 +122,12 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_WrapY:               reader.Read(m_bWrapY);              break;
 		
 		case Save_UseTwoPlotCities:
-			reader.Read(m_bUseTwoPlotCities);
-			setCityCatchmentRadius(m_bUseTwoPlotCities ? 1 : 0);
+		{
+			char iBuffer = 0;
+			reader.Read(iBuffer);
+			setCityCatchmentRadius(iBuffer);
 			break;
-
+		}
 		case Save_Plots:
 		{
 			FAssertMsg(m_pMapPlots == NULL, "Memory leak");
@@ -208,7 +208,7 @@ void CvMap::write(CvSavegameWriter writer)
 
 	writer.Write(Save_WrapX, m_bWrapX, defaultWrapX);
 	writer.Write(Save_WrapY, m_bWrapY, defaultWrapY);
-	writer.Write(Save_UseTwoPlotCities, m_bUseTwoPlotCities, defaultUseTwoPlotCities);
+	writer.Write(Save_UseTwoPlotCities, this->getCityCatchmentRadius(), (char)0);
 
 	if (numPlotsINLINE() > 0)
 	{

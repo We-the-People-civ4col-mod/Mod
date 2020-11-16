@@ -263,7 +263,7 @@ public:
 
 	void writeDesyncLog(FILE *f);
 
-	int getCityCatchmentRadius() const;
+	char getCityCatchmentRadius() const;
 	void setCityCatchmentRadius(int iSetting);
 
 protected:
@@ -282,8 +282,6 @@ protected:
 
 	bool m_bWrapX;
 	bool m_bWrapY;
-
-	bool m_bUseTwoPlotCities;
 
 	BonusArray<int> m_ja_NumBonuses;
 	BonusArray<int> m_ja_NumBonusesOnLand;

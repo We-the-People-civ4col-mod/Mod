@@ -23,7 +23,7 @@ def getGridSize(argsList):
 	
 	# set city catchment radius
 	mmap = CyGlobalContext().getMap()
-	mmap.setCityCatchmentRadius(mmap.getCustomMapOption(0))
+	mmap.setCityCatchmentRadiusMapMaker(mmap.getCustomMapOption(0))
 
 def generatePlotTypes():
 	NiTextOut("Setting Plot Types (Python Fractal) ...")
@@ -108,7 +108,7 @@ def getCustomMapOptionDefault(argsList):
 	"""
 	optionID = argsList[0]
 	if optionID == 0:
-		return CyGlobalContext().getDefaultCityCatchmentRadius()
+		return CyGlobalContext().getDefaultCityCatchmentRadius()-1
 	return 0
 
 def isRandomCustomMapOption(argsList):

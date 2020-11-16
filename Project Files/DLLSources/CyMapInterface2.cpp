@@ -52,7 +52,8 @@ void CyMapPythonInterface2(python::class_<CyMap>& x)
 		.def("calculateCanalAndChokePoints", &CyMap::calculateCanalAndChokePoints, "void ()")// Super Forts  *canal* *choke*
 		
 		.def("getCityCatchmentRadius", &CyMap::getCityCatchmentRadius, "int ()")
-		.def("setCityCatchmentRadius", &CyMap::setCityCatchmentRadius, "void (int)")
+		.def("setCityCatchmentRadiusMapMaker", &CyMap::setCityCatchmentRadiusMapMaker, "void (int)")
+		.def("setCityCatchmentRadiusNoMapMaker", &CyMap::setCityCatchmentRadiusNoMapMaker, "void (int)")
 
 		;
 }
