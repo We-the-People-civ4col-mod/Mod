@@ -29,14 +29,19 @@ my $updated = 0;
 
 readOldFile();
 
-
+# directories to search
 push(@paths, "..\\..\\Compiler");
 push(@paths, $ProgramFiles) unless $ProgramFiles eq "12345678";
 push(@paths, substr($ProgramFiles, 0, -6)) if substr($ProgramFiles, -5) eq "(x86)";
 
+
+# files to look for in each searched directory
+# Note that if the same flag (first argument) is used more than once, it will use the first, which finds the file
+# This allows searching multiple different locations for the same file
 process("TOOLKIT", "\\Microsoft Visual C++ Toolkit 2003");
 process("PSDK", "\\Microsoft SDKs\\Windows\\v6.0");
 process("GIT", "\\SmartGit\\git\\bin\\git.exe");
+process("GIT", "\\Git\\git-bash.exe");
 
 exit if $updated == 0;
 
