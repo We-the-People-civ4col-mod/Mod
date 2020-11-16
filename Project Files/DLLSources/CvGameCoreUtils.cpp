@@ -857,6 +857,39 @@ bool PUF_isUnitAITypeGroupie(const CvUnit* pUnit, int iData1, int iData2)
 }
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
 
+namespace
+{
+	// Returns true if no enemy was found near the kGroup's potential target plot x,y. False otherwise
+	bool isPlotSafe(CvSelectionGroup& kGroup, int x, int y)
+	{
+		const CvPlayerAI& kPlayer = GET_PLAYER(kGroup.getHeadOwner());
+
+		// in WTP (almost) all units can fight since they have non-zero combat strength.
+		// Thus we need a different criteria for evaluating danger based on the unit role rather than
+		// the unit's combat ability
+		//if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible()) // BTS \ COLO default condition
+		if (kPlayer.AI_needsProtection(kGroup.getHeadUnitAI()) && !kGroup.alwaysInvisible())
+		{
+			CvPlot* const pPlot = GC.getMapINLINE().plotINLINE(x, y);
+
+			if (kGroup.getDomainType() == DOMAIN_SEA)
+			{
+				if (kPlayer.AI_getWaterDanger(pPlot, -1, true, true, false) > 0)
+					return false;
+			}
+
+			if (kGroup.getDomainType() == DOMAIN_LAND)
+			{
+				if (kPlayer.AI_getPlotDanger(pPlot, 2, false) > 0)
+					return false;
+			}
+		}
+
+		// Plot is considered safe if not filtered(i.e. rejected) by any of the above functions
+		return true;
+	}
+}
+
 int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 {
 
@@ -893,28 +926,8 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 		}	
 		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
-			const CvPlayerAI& kPlayer = GET_PLAYER(pSelectionGroup->getHeadOwner());
-
-			// in WTP (almost) all units can fight since they have non-zero combat strength.
-			// Thus we need a different criteria for evaluating danger based on the unit role rather than
-			// the unit's combat ability
-			//if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible()) // BTS \ COLO default condition
-			if (kPlayer.AI_needsProtection(pSelectionGroup->getHeadUnitAI()) && !pSelectionGroup->alwaysInvisible())
-			{
-				CvPlot* const pPlot = GC.getMapINLINE().plotINLINE(iToX, iToY);
-				
-				if (pSelectionGroup->getDomainType() == DOMAIN_SEA)
-				{
-					if (kPlayer.AI_getWaterDanger(pPlot, -1, true, true, false) > 0)
-						return false;
-				}
-
-				if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
-				{
-					if (kPlayer.AI_getPlotDanger(pPlot, 2, false) > 0)
-						return false;
-				}
-			}
+			if (!isPlotSafe(*pSelectionGroup, iToX, iToY))
+				return FALSE;		
 		}
 		// BETTER_BTS_AI_MOD: END
 	}
@@ -1244,27 +1257,19 @@ int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int 
 		return FALSE;
 
 	bool const bAIControl = pSelectionGroup->AI_isControlled();
-	/*
+	
 	if (bAIControl)
 	{
 		if (parent->m_iData2 > 1 || parent->m_iData1 == 0)
 		{
 			if (!(iFlags & MOVE_IGNORE_DANGER))
 			{
-				if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible())
-				{
-					// TODO: Use AI_getPlotDanger ?
-					if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kFromPlot))
-					{
-						return FALSE;
-						// WTP: Fix this!
-						//return TRUE;
-					}
-				}
+				if (!isPlotSafe(*pSelectionGroup, kFromPlot.getX_INLINE(), kFromPlot.getY_INLINE()))
+					return FALSE;
 			}
 		}
 	}
-	*/
+
 	if (bAIControl || kFromPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
 	{
 		if (iFlags & (MOVE_THROUGH_ENEMY /* K-Mod: */ | MOVE_ATTACK_STACK))
