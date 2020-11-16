@@ -890,21 +890,32 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			{
 				return FALSE;
 			}
-		}
-		/*
+		}	
 		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
-			if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible())
+			const CvPlayerAI& kPlayer = GET_PLAYER(pSelectionGroup->getHeadOwner());
+
+			// in WTP (almost) all units can fight since they have non-zero combat strength.
+			// Thus we need a different criteria for evaluating danger based on the unit role rather than
+			// the unit's combat ability
+			//if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible()) // BTS \ COLO default condition
+			if (kPlayer.AI_needsProtection(pSelectionGroup->getHeadUnitAI()) && !pSelectionGroup->alwaysInvisible())
 			{
-				if (GET_PLAYER(pSelectionGroup->getHeadOwner()).AI_getAnyPlotDanger(kToPlot))
+				CvPlot* const pPlot = GC.getMapINLINE().plotINLINE(iToX, iToY);
+				
+				if (pSelectionGroup->getDomainType() == DOMAIN_SEA)
 				{
-					// WTP: fixme
-					//return true;
-					return FALSE;
+					if (kPlayer.AI_getWaterDanger(pPlot, -1, true, true, false) > 0)
+						return false;
+				}
+
+				if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
+				{
+					if (kPlayer.AI_getPlotDanger(pPlot, 2, false) > 0)
+						return false;
 				}
 			}
 		}
-		*/
 		// BETTER_BTS_AI_MOD: END
 	}
 
