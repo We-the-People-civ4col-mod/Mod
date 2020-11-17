@@ -32724,7 +32724,24 @@
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>2</iCombat>
             <iXPValueAttack>1</iXPValueAttack>
             <iXPValueDefense>1</iXPValueDefense>
@@ -32890,7 +32907,24 @@
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>2</iCombat>
             <iXPValueAttack>2</iXPValueAttack>
             <iXPValueDefense>1</iXPValueDefense>
@@ -33060,6 +33094,10 @@
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -33238,6 +33276,10 @@
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
                 </EvasionBuilding>
@@ -33414,6 +33456,10 @@
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -33592,6 +33638,10 @@
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
                 </EvasionBuilding>
@@ -33769,6 +33819,10 @@
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
                 </EvasionBuilding>
@@ -33945,6 +33999,10 @@
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -34130,7 +34188,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>36</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
@@ -34294,7 +34369,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>38</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
@@ -34458,6 +34550,10 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -35024,6 +35120,10 @@
             <FeatureImpassables/>
             <EvasionBuildings>
                 <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
                 </EvasionBuilding>
@@ -35198,7 +35298,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>35</iCombat>
             <iXPValueAttack>6</iXPValueAttack>
             <iXPValueDefense>4</iXPValueDefense>
@@ -35370,7 +35487,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>45</iCombat>
             <iXPValueAttack>6</iXPValueAttack>
             <iXPValueDefense>4</iXPValueDefense>
@@ -35533,7 +35667,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>55</iCombat>
             <iXPValueAttack>7</iXPValueAttack>
             <iXPValueDefense>5</iXPValueDefense>
@@ -35692,7 +35843,24 @@
                 </TerrainImpassable>
             </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>65</iCombat>
             <iXPValueAttack>8</iXPValueAttack>
             <iXPValueDefense>6</iXPValueDefense>
@@ -35844,6 +36012,10 @@
             </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
