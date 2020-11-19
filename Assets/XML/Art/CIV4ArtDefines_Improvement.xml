@@ -121,7 +121,7 @@
             <fInterfaceScale>1.25</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Cocoa_Plantation/Cocoa_Plantation.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_buildings.dds,2,11</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,6,15</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_TRAPPER_HUT</Type>
@@ -217,10 +217,10 @@
             <Type>ART_DEF_IMPROVEMENT_LARGE_COCOA_PLANTATION</Type>
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>0.8</fScale>
-            <fInterfaceScale>1.25</fInterfaceScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Cocoa_Plantation/Cocoa_Plantation2.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_buildings.dds,7,14</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,2,11</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_TRAPPER_CAMP</Type>
