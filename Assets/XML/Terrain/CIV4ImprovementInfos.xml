@@ -454,7 +454,7 @@
             <iGoodyRange>10</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
-            <iDefenseModifier>0</iDefenseModifier>
+            <iDefenseModifier>10</iDefenseModifier>
             <iPillageGold>0</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
@@ -533,7 +533,7 @@
             <iGoodyRange>10</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
-            <iDefenseModifier>0</iDefenseModifier>
+            <iDefenseModifier>10</iDefenseModifier>
             <iPillageGold>0</iPillageGold>
             <bOutsideBorders>0</bOutsideBorders>
             <TerrainMakesValids>
