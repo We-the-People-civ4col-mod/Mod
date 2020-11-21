@@ -3340,8 +3340,10 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bHelp) const
 	return iModifier;
 }
 
-
-int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
+// bAssumeRevealed=true will allow a unit (AI or player controlled) to use the actual cost rather 
+// than the worst-case estimate if not revealed
+int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
+	bool bAssumeRevealed) const // advc.001i
 {
 	int iRegularCost;
 	int iRouteCost;
@@ -3354,10 +3356,12 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot) const
 		return GC.getMOVE_DENOMINATOR();
 	}
 
-	if (!isRevealed(pUnit->getTeam(), false))
+	if (!bAssumeRevealed && !isRevealed(pUnit->getTeam(), false))
 	{
 		if (pUnit->getDomainType() == DOMAIN_SEA)
 		{
+			// Note: Not strictly true due to the introduction of storms which can
+			// "drain" all movement points
 			return GC.getMOVE_DENOMINATOR();
 		}
 		else
