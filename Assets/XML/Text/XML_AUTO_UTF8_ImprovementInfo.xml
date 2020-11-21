@@ -1092,4 +1092,32 @@
         <English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LARGE_RIVERS]Large Rivers[\LINK]</English>
         <German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LARGE_RIVERS]Großen Flüssen[\LINK] gebaut werden.</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6</Tag>
+        <English>Raider's Camp</English>
+        <German>
+            <Text>Verbrecherversteck</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6_PEDIA</Tag>
+        <English>tbd</English>
+        <German>tbd</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7</Tag>
+        <English>Animal Layer</English>
+        <German>
+            <Text>Tierversteck</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Tag>
+        <English>tbd</English>
+        <German>tbd</German>
+    </TEXT>
 </Civ4GameText>

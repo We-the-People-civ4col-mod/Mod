@@ -312,5 +312,23 @@
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,2,16</Button>
         </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>18.5</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/structures/improvements/BarbarianCamp/BarbarianCamp.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/palisadewall.dds</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_ANIMAL_CAVE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>0.9</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/caves/cave.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/cave.dds</Button>
+        </ImprovementArtInfo>
     </ImprovementArtInfos>
 </Civ4ArtDefines>
