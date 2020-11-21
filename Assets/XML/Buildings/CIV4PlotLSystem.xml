@@ -64,7 +64,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x1</Attribute>
@@ -75,7 +75,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x1</Attribute>
@@ -86,7 +86,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x1</Attribute>
@@ -97,7 +97,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x1</Attribute>
@@ -109,7 +109,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x1</Attribute>
@@ -121,7 +121,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x1</Attribute>
@@ -133,7 +133,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x1</Attribute>
@@ -145,7 +145,7 @@
 			<Attribute Class="Scalar">bForceGround:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 	</LNode>
 	<!-- ******************************************************************************************** -->
@@ -164,7 +164,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x2</Attribute>
@@ -175,7 +175,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x2</Attribute>
@@ -186,7 +186,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x2</Attribute>
@@ -197,7 +197,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x2</Attribute>
@@ -209,7 +209,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x2</Attribute>
@@ -221,7 +221,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x2</Attribute>
@@ -233,7 +233,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x2</Attribute>
@@ -245,7 +245,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 	</LNode>
 	<!-- ******************************************************************************************** -->
@@ -265,7 +265,7 @@
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x3</Attribute>
@@ -276,7 +276,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x3</Attribute>
@@ -288,7 +288,7 @@
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x3</Attribute>
@@ -299,7 +299,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x3</Attribute>
@@ -312,7 +312,7 @@
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x3</Attribute>
@@ -324,7 +324,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x3</Attribute>
@@ -337,7 +337,7 @@
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x3</Attribute>
@@ -349,7 +349,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 	</LNode>
 	<!-- ******************************************************************************************** -->
@@ -368,7 +368,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::4x2</Attribute>
@@ -379,7 +379,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::4x2</Attribute>
@@ -390,7 +390,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::4x2</Attribute>
@@ -401,7 +401,7 @@
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::4x2</Attribute>
@@ -413,7 +413,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::4x2</Attribute>
@@ -425,7 +425,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::4x2</Attribute>
@@ -437,7 +437,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::4x2</Attribute>
@@ -449,7 +449,7 @@
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:farm_crop</Attribute>
-			<Scale>0.5</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 	</LNode>
 	<!-- ******************************************************************************************** -->
@@ -2532,35 +2532,48 @@
 		<Attribute Class="Scalar">bNotBFS:1</Attribute>
 		<ArtRef Name="art:IMPROVEMENT_FARM2">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>
+		<ArtRef Name="art:IMPROVEMENT_FARM2_ENGLAND">
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/england/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ENGLAND</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:IMPROVEMENT_FARM2_SPAIN">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/spain/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
-			<Scale>0.2</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:IMPROVEMENT_FARM2_PORTUGAL">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/spain/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
-			<Scale>0.2</Scale>
+			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:IMPROVEMENT_FARM2_DUTCH">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/dutch/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_DUTCH</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:IMPROVEMENT_FARM2_DENMARK">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/denmark/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_DENMARK</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:IMPROVEMENT_FARM2_FRANCE">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/france/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_FRANCE</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Scale>0.4</Scale>
@@ -2573,6 +2586,7 @@
 		</ArtRef>
 		<ArtRef Name="art:IMPROVEMENT_FARM4">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm2/farm_1x2_building.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/plantation/plantation.kfm</Attribute>
 			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
 			<Scale>0.4</Scale>
 		</ArtRef>
@@ -2664,6 +2678,19 @@
 		</ArtRef>
 		<ArtRef Name="goal:IMPROVEMENT_FARM">
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/farm_2x1_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ENGLAND</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM1</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM2_ENGLAND</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>	
+		<ArtRef Name="goal:IMPROVEMENT_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">NNIF:Art/Structures/Improvements/Farm/farm_2x1_building.nif</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM3</Attribute>
@@ -2692,7 +2719,7 @@
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/farm_2x1_building.nif</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_DUTCH</Attribute>
-			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM3</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM1</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_FARM2_DUTCH</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -2830,7 +2857,62 @@
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Scale>0.4</Scale>
-		</ArtRef>			
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm2/Native/farm_2x1_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_SOUTH</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.3</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_IROQUOIS</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.3</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_WEST</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.3</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/Native/farm_1x2_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_EAST</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.3</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_FARM">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm2/Native/farm_2x1_building.nif</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_NATIVES_CENTRALAMERICA</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.3</Scale>
+		</ArtRef>		
 		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/Plantation.nif</Attribute>
