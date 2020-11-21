@@ -1103,8 +1103,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6_PEDIA</Tag>
-        <English>tbd</English>
-        <German>tbd</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]Raider's Camps[COLOR_REVERT] are Goodies that are protected. When you defeat the criminals you can take their riches and secrets.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Verbrecherversteck[COLOR_REVERT] sind Goodies, die bewacht werden. Wenn die Kriminelle besiegt wurden, gehören Ihnen ihre Schätze.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7</Tag>
@@ -1117,7 +1117,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Tag>
-        <English>tbd</English>
-        <German>tbd</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]Animal Layers[COLOR_REVERT] are Goodies that are protected by wild animals. Maybe there is somthing valuable in there.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Tierverstecke[COLOR_REVERT] sind Goodies, die durch wilde Tiere bewacht werden. Vielleicht versteckt sich darin ja etwas wertvolles</German>
     </TEXT>
 </Civ4GameText>
