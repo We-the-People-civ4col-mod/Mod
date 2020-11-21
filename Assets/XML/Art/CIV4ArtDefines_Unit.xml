@@ -13225,7 +13225,7 @@
         </UnitArtInfo>
         <UnitArtInfo>
             <Type>ART_DEF_UNIT_REVOLTING_NATIVE</Type>
-            <Button>,Art/colonization_atlas_military.dds,6,4</Button>
+            <Button>,Art/colonization_atlas_units.dds,6,4</Button>
             <FullLengthIcon>,Art/Interface/Screens/City_Management/native_slave.dds</FullLengthIcon>
             <fScale>0.42</fScale>
             <fInterfaceScale>0.98</fInterfaceScale>
