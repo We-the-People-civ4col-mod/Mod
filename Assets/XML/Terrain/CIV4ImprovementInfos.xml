@@ -25,6 +25,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -63,6 +66,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -101,6 +107,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -139,6 +148,9 @@
             <bWater>0</bWater>
             <bGoody>1</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -202,6 +214,9 @@
             <bWater>0</bWater>
             <bGoody>1</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -253,6 +268,9 @@
             <bWater>1</bWater>
             <bGoody>1</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -300,6 +318,9 @@
             <bWater>1</bWater>
             <bGoody>1</bGoody>
             <bGoodyForSpawningUnits>1</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -343,6 +364,9 @@
             <bWater>0</bWater>
             <bGoody>1</bGoody>
             <bGoodyForSpawningUnits>1</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -452,6 +476,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -610,6 +637,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>60</iAdvancedStartCost>
@@ -749,6 +779,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -867,6 +900,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -974,6 +1010,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1082,6 +1121,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1145,6 +1187,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1208,6 +1253,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1271,6 +1319,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1334,6 +1385,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1406,6 +1460,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>25</iAdvancedStartCost>
@@ -1523,6 +1580,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -1681,6 +1741,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>60</iAdvancedStartCost>
@@ -1820,6 +1883,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1930,6 +1996,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>36</iAdvancedStartCost>
@@ -2048,6 +2117,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2155,6 +2227,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2258,6 +2333,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2321,6 +2399,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2384,6 +2465,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2447,6 +2531,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2510,6 +2597,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2582,6 +2672,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>25</iAdvancedStartCost>
@@ -2667,6 +2760,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -2741,6 +2837,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>80</iAdvancedStartCost>
@@ -2815,6 +2914,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -2883,6 +2985,9 @@
             <bWater>0</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -2950,6 +3055,9 @@
             <bWater>1</bWater>
             <bGoody>0</bGoody>
             <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
