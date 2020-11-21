@@ -315,7 +315,7 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>18.5</fScale>
+            <fScale>1.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/structures/improvements/BarbarianCamp/BarbarianCamp.nif</NIF>
             <KFM/>
