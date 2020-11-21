@@ -21194,7 +21194,7 @@
                     <iRangedWaveSize>1</iRangedWaveSize>
                     <UnitMeshGroup>
                         <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_NATIVE_MERC</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_REVOLTING_NATIVE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
