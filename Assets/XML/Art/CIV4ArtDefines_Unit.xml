@@ -13223,5 +13223,22 @@
                 <AudioRunTypeEnd/>
             </AudioRunSounds>
         </UnitArtInfo>
+        <UnitArtInfo>
+            <Type>ART_DEF_UNIT_REVOLTING_NATIVE</Type>
+            <Button>,Art/colonization_atlas_military.dds,6,4</Button>
+            <FullLengthIcon>,Art/Interface/Screens/City_Management/native_slave.dds</FullLengthIcon>
+            <fScale>0.42</fScale>
+            <fInterfaceScale>0.98</fInterfaceScale>
+            <NIF>Art/Units/Settler/Native_Slave/revolting_native.nif</NIF>
+            <KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+            <fBattleDistance>0.35</fBattleDistance>
+            <fRangedDeathTime>0.31</fRangedDeathTime>
+            <bActAsRanged>1</bActAsRanged>
+            <TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
+            <AudioRunSounds>
+                <AudioRunTypeLoop/>
+                <AudioRunTypeEnd/>
+            </AudioRunSounds>
+        </UnitArtInfo>
     </UnitArtInfos>
 </Civ4ArtDefines>
