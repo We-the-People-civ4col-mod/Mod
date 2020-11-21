@@ -20,17 +20,23 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 
-#define PATH_MOVEMENT_WEIGHT									(1000)
-#define PATH_RIVER_WEIGHT											(100)
-#define PATH_CITY_WEIGHT											(100)
-#define PATH_DEFENSE_WEIGHT										(10)
-#define PATH_TERRITORY_WEIGHT									(3)
-#define PATH_STEP_WEIGHT											(2)
-#define PATH_STRAIGHT_WEIGHT									(1)
-#define PATH_FOGBUST_WEIGHT										(100)
+#define PATH_MOVEMENT_WEIGHT							(1000)
+//#define PATH_RIVER_WEIGHT								(100)
+#define PATH_RIVER_WEIGHT								(20) // K-Mod ( * river crossing penalty)
+//#define PATH_CITY_WEIGHT								(100)
+#define PATH_CITY_WEIGHT								(200) // K-Mod
+//#define PATH_DEFENSE_WEIGHT							(10)
+#define PATH_DEFENSE_WEIGHT								(4) // K-Mod. ( * defence bonus)
+#define PATH_TERRITORY_WEIGHT							(5) // was 3
+#define PATH_DOW_WEIGHT									(4) // advc.082
+#define PATH_STEP_WEIGHT								(4) // was 2
+#define PATH_STRAIGHT_WEIGHT							(2) // was 1
+#define PATH_FOGBUST_WEIGHT							    (100)
 // R&R, Robert Surcouf, Damage on Storm plots, Start
-#define PATH_DAMAGE_WEIGHT										(2000)
+#define PATH_DAMAGE_WEIGHT								(500)
 // R&R, Robert Surcouf, Damage on Storm plots, End
+#define PATH_COMBAT_WEIGHT								(300) // K-Mod. penalty for having to fight along the way.
+
 CvPlot* plotCity(int iX, int iY, int iIndex)
 {
 	return GC.getMapINLINE().plotINLINE((iX + GC.getCityPlotX()[iIndex]), (iY + GC.getCityPlotY()[iIndex]));
@@ -988,7 +994,7 @@ int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY)
 	return (stepDistance(iFromX, iFromY, iToX, iToY) * PATH_MOVEMENT_WEIGHT);
 }
 
-
+#if 0
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
 	CLLNode<IDInfo>* pUnitNode;
@@ -1201,6 +1207,376 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	if ((pFromPlot->getX_INLINE() != pToPlot->getX_INLINE()) && (pFromPlot->getY_INLINE() != pToPlot->getY_INLINE()))
 	{
 		iWorstCost += PATH_STRAIGHT_WEIGHT;
+	}
+
+	FAssert(iWorstCost > 0);
+
+	return iWorstCost;
+}
+#endif
+
+// This function has been completely rewritten for K-Mod. (the rewrite includes some bug fixes as well as some new features)
+int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
+{
+	//PROFILE_FUNC(); // advc.003o
+
+	CvMap const& m = GC.getMap(); // advc: ... and use CvPlot references:
+	CvPlot const& kFromPlot = m.getPlot(parent->m_iX, parent->m_iY);
+	CvPlot const& kToPlot = m.getPlot(node->m_iX, node->m_iY);
+
+	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
+	// K-Mod
+	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
+
+
+	int iWorstCost = 0;
+	int iWorstMovesLeft = MAX_INT;
+	int iWorstMaxMoves = MAX_INT;
+
+	TeamTypes eTeam = pSelectionGroup->getHeadTeam();
+	// <advc.035>
+	//int const iFlipModifierDiv = 7;
+	//int iFlipModifier = iFlipModifierDiv;
+	// </advc.035>
+	// K-Mod
+	int iExploreModifier = 3; // (in thirds)
+#if 0
+	if (!kToPlot.isRevealed(eTeam))
+	{
+		if (pSelectionGroup->getAutomateType() == AUTOMATE_EXPLORE ||
+			(!pSelectionGroup->isHuman() && (pSelectionGroup->getHeadUnitAIType() == UNITAI_EXPLORE || pSelectionGroup->getHeadUnitAIType() == UNITAI_EXPLORE_SEA)))
+		{
+			iExploreModifier = 2; // lower cost to encourage exploring unrevealed areas
+		}
+		else if (!kFromPlot.isRevealed(eTeam))
+		{
+			iExploreModifier = 4; // higher cost to discourage pathfinding deep into the unknown
+		}
+	}
+#endif
+	// K-Mod end
+	// <advc.035>
+#if 0
+	else if (GC.getDefineBOOL(CvGlobals::OWN_EXCLUSIVE_RADIUS) &&
+		(iFlags & MOVE_DECLARE_WAR) && eTeam != BARBARIAN_TEAM)
+	{
+		PlayerTypes const eSecondOwner = kToPlot.getSecondOwner();
+		PlayerTypes const eFirstOwner = kToPlot.getOwner();
+		if (eSecondOwner != NO_PLAYER && eFirstOwner != NO_PLAYER &&
+			((pSelectionGroup->getDomainType() == DOMAIN_SEA) == kToPlot.isWater()))
+		{	// Avoid tiles that flip from us to the enemy upon DoW
+			if (TEAMID(eFirstOwner) == eTeam && (GET_TEAM(eTeam).isHuman() ?
+				(!GET_TEAM(eTeam).isFriendlyTerritory(TEAMID(eSecondOwner)) &&
+					!GET_TEAM(eTeam).isAtWar(TEAMID(eSecondOwner))) :
+				GET_TEAM(eTeam).AI_isSneakAttackReady(TEAMID(eSecondOwner))))
+				iFlipModifier++;
+			// Seek out enemy tiles that will flip to us upon DoW
+			if (TEAMID(eSecondOwner) == eTeam && (GET_TEAM(eTeam).isHuman() ?
+				(!GET_TEAM(eTeam).isFriendlyTerritory(TEAMID(eFirstOwner)) &&
+					!GET_TEAM(eTeam).isAtWar(TEAMID(eFirstOwner))) :
+				GET_TEAM(eTeam).AI_isSneakAttackReady(TEAMID(eFirstOwner))))
+				iFlipModifier--;
+			/*  This could be done much more accurately, taking into account
+			vassal agreements, defensive pacts, and going through the entire
+			selection group, but I worry about the performance, and it's OK
+			if it doesn't always work correctly. */
+		}
+	} // </advc.035>
+#endif
+	{
+		for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
+			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
+		{
+			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
+
+			int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
+			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
+				false); // advc.001i
+			int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
+
+			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
+			iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
+
+			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
+			iCost = (iCost * iExploreModifier) / 3;
+			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+			if (iCost > iWorstCost)
+			{
+				iWorstCost = iCost;
+				iWorstMovesLeft = iMovesLeft;
+				iWorstMaxMoves = iMaxMoves;
+			}
+		}
+	}
+
+	iWorstCost += PATH_STEP_WEIGHT;
+
+	// symmetry breaking. This is meant to prevent two paths from having equal cost.
+	// (If two paths have equal cost, sometimes the interface shows one path and the units follow the other. This is bad.)
+	/* original K-Mod symmetry breaking. (extra cost for turning a corner)
+	if (parent->m_pParent)
+	{
+	const int map_width = m.getGridWidth();
+	const int map_height = m.getGridHeight();
+
+	#define WRAP_X(x) ((x) - ((x) > map_width/2 ? map_width : 0) + ((x) < -map_width/2 ? map_width : 0))
+	#define WRAP_Y(y) ((y) - ((y) > map_height/2 ? map_height : 0) + ((y) < -map_height/2 ? map_height : 0))
+
+	int start_x = parent->m_pParent->m_iX;
+	int start_y = parent->m_pParent->m_iY;
+
+	int dx1 = WRAP_X(pFromPlot->getX() - start_x);
+	int dy1 = WRAP_Y(pFromPlot->getY() - start_y);
+	int dx2 = WRAP_X(pToPlot->getX() - start_x);
+	int dy2 = WRAP_Y(pToPlot->getY() - start_y);
+
+	// cross product. (greater than zero => sin(angle) > 0 => angle > 0)
+	int cross = dx1 * dy2 - dx2 * dy1;
+	if (cross > 0)
+	iWorstCost += PATH_ASYMMETRY_WEIGHT; // turning left
+	else if (cross < 0)
+	iWorstCost -= PATH_ASYMMETRY_WEIGHT; // turning right
+
+	// woah - hang on. Does that say /minus/ asym weight?
+	// Doesn't this guy know that bad things happen if the total weight is negative?
+	// ...
+	// take a breath.
+	#if PATH_STEP_WEIGHT < PATH_ASYMMETRY_WEIGHT
+	#error "I'm sorry, but I must demand that step weight be greater than asym weight."
+	#endif
+	// I think we're going to be ok.
+
+	#undef WRAP_X
+	#undef WRAP_Y
+	} */
+
+	// Unfortunately, the above code is not sufficient to fix the symmetry problem.
+	// Here's a new method, which combines symmetry breaking with the old "straight path" effect.
+	// Note: symmetry breaking is not important for AI controlled units.
+
+	// It's actually marginally better strategy to move diagonally - for mapping reasons.
+	// So let the AI prefer diagonal movement.
+	// However, diagonal zig-zags will probably seem unnatural and weird to humans who are just trying to move in a straight line.
+	// So let the pathfinding for human groups prefer cardinal movement.
+	bool const bAIControl = pSelectionGroup->AI_isControlled();
+	if (bAIControl)
+	{
+		if (kFromPlot.getX() == kToPlot.getX() || kFromPlot.getY() == kToPlot.getY())
+			iWorstCost += PATH_STRAIGHT_WEIGHT;
+	}
+	else
+	{
+		if (kFromPlot.getX() != kToPlot.getX() && kFromPlot.getY() != kToPlot.getY())
+			iWorstCost += PATH_STRAIGHT_WEIGHT * (1 + (node->m_iX + node->m_iY) % 2);
+		iWorstCost += (node->m_iX + node->m_iY + 1) % 3;
+	}
+	// unfortunately, this simple method may have problems at the world-wrap boundries.
+	// It's difficult to tell when to correct for wrap effects and when not to, because as soon as the
+	// unit starts moving, the start position of the path changes, and so it's no longer posible to tell
+	// whether or not the unit started on the other side of the boundry.  Drat.
+
+	// end symmetry breaking.
+
+	if (!kToPlot.isRevealed(eTeam, false))
+		return iWorstCost;
+#if 0
+	// WTP: Not supported yet due to the sheer effort required to port everything from AdvCiv atm.
+	// the cost of battle...
+	if (iFlags & MOVE_ATTACK_STACK)
+	{
+		FAssert(bAIControl); // only the AI uses MOVE_ATTACK_STACK
+		FAssert(pSelectionGroup->getDomainType() == DOMAIN_LAND);
+
+		int iEnemyDefence = 0;
+
+		if (kToPlot.isVisible(eTeam))
+		{	/*  <advc.001> In the rare case that the AI plans war while animals
+			still roam the map, the DefenceStrength computation will crash
+			when it gets to the point where the UnitCombatType is accessed.
+			(Actually, not so exotic b/c advc.300 allows animals to survive
+			in continents w/o civ cities.) */
+			CvUnit* pUnit = kToPlot.getUnitByIndex(0);
+			if (pUnit != NULL && !pUnit->isAnimal()) // </advc.001>
+			{
+				iEnemyDefence = GET_PLAYER(pSelectionGroup->getOwner()).
+					AI_localDefenceStrength(&kToPlot, NO_TEAM,
+						pSelectionGroup->getDomainType(), 0, true, false,
+						pSelectionGroup->isHuman());
+			}
+		}
+		else
+		{
+			// plot not visible. use memory
+			iEnemyDefence = GET_TEAM(eTeam).AI_getStrengthMemory(kToPlot.getX(), kToPlot.getY());
+		}
+
+		if (iEnemyDefence > 0)
+		{
+			iWorstCost += PATH_DAMAGE_WEIGHT;
+			int iAttackRatio = std::max(10, 100 * pSelectionGroup->AI().AI_sumStrength(&kToPlot) / iEnemyDefence);
+			// Note. I half intend to have pathValid return false whenever the above ratio is less than 100.
+			// I just haven't done that yet, mostly because I'm worried about performance.
+			if (iAttackRatio < 400)
+			{
+				iWorstCost += PATH_MOVEMENT_WEIGHT * GC.getMOVE_DENOMINATOR() * (400 - iAttackRatio) /
+					std::min(150, iAttackRatio);
+			}
+			// else, don't worry about it too much.
+		}
+	} //
+#endif
+	  // <advc.082>
+	TeamTypes eToPlotTeam = kToPlot.getTeam();
+	/*  The AVOID_ENEMY code in the no-moves-left branch below doesn't stop the AI
+	from trying to move _through_ enemy territory and thus declaring war
+	earlier than necessary */
+	if (bAIControl && (iFlags & MOVE_DECLARE_WAR) && eToPlotTeam != NO_TEAM &&
+		eToPlotTeam != eTeam && GET_TEAM(eTeam).AI_isSneakAttackReady(eToPlotTeam))
+		iWorstCost += PATH_DOW_WEIGHT;
+	// </advc.082>
+	if (iWorstMovesLeft <= 0)
+	{
+		if (eToPlotTeam != eTeam)
+		{
+			iWorstCost += PATH_TERRITORY_WEIGHT;
+		}
+
+		// Damage caused by features (for mods)
+		if (PATH_DAMAGE_WEIGHT != 0)
+		{
+			const FeatureTypes featureType = kToPlot.getFeatureType();
+
+			if (featureType != NO_FEATURE)
+			{
+				const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(kToPlot.getFeatureType());
+
+				//GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage()
+				iWorstCost += PATH_DAMAGE_WEIGHT *
+					std::max(0, kFeatureInfo.getTurnDamage()) /
+					GC.getMAX_HIT_POINTS();
+			}
+
+			/* WTP: Not supported 
+			if (kToPlot.getExtraMovePathCost() > 0)
+			{
+				iWorstCost += (PATH_MOVEMENT_WEIGHT * kToPlot.getExtraMovePathCost());
+			}
+			*/
+		}
+		// defence modifiers
+		int iDefenceMod = 0;
+		int iDefenceCount = 0;
+		int iFromDefenceMod = 0; // defence bonus for our attacking units left behind
+		int iAttackWeight = 0;
+		int iAttackCount = 0;
+		int iEnemies = kToPlot.getNumVisibleEnemyDefenders(pSelectionGroup->getHeadUnit());
+
+		for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
+			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
+		{
+			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			if (!pLoopUnit->canFight())
+				continue; // advc
+			iDefenceCount++;
+			if (pLoopUnit->canDefend(&kToPlot))
+			{
+				iDefenceMod += pLoopUnit->noDefensiveBonus() ? 0 :
+					//pToPlot->defenseModifier(eTeam, false);
+					GET_TEAM(eTeam).AI_plotDefense(kToPlot); // advc.012
+			}
+			else iDefenceMod -= 100; // we don't want to be here.
+
+									 // K-Mod note. the above code doesn't count all defensive bonuses, unfortunately.
+									 // We could count everything like this:
+									 /*CombatDetails combat_details;
+									 pLoopUnit->maxCombatStr(pToPlot, NULL, &combat_details);
+									 iDefenceMod += combat_details.iModifierTotal;*/
+									 // but that seems like overkill. I'm worried it would be too slow.
+
+									 // defence for units who stay behind after attacking an enemy.
+			if (iEnemies > 0)
+			{
+				// For human-controlled units, only apply the following effects for multi-step moves.
+				// (otherwise this might prevent the user from attacking from where they want to attack from.)
+				if (bAIControl || parent->m_iKnownCost != 0 || iFlags & MOVE_HAS_STEPPED)
+				{
+					iAttackCount++;
+					iFromDefenceMod += pLoopUnit->noDefensiveBonus() ? 0 : kFromPlot.defenseModifier(eTeam, false);
+
+					if (!kFromPlot.isCity())
+					{
+						iAttackWeight += PATH_CITY_WEIGHT;
+						// it's done this way around rather than subtracting when in a city so that the overall adjustment can't be negative.
+					}
+					if (pLoopUnit->canAttack() && !pLoopUnit->isRiver() && kFromPlot.isRiverCrossing(directionXY(&kFromPlot, &kToPlot)))
+					{
+						iAttackWeight -= PATH_RIVER_WEIGHT * GC.getRIVER_ATTACK_MODIFIER(); // Note, river modifier will be negative.
+																												//iAttackMod -= (PATH_MOVEMENT_WEIGHT * iMovesLeft);
+					}
+				}
+				// If this is a direct attack move from a human player, make sure it is the best value move possible. (This allows humans to choose which plot they attack from.)
+				// (note: humans have no way of ordering units to attack units en-route, so the fact that this is an attack move means we are at the destination.)
+				else if (pLoopUnit->canAttack()) // parent->m_iKnownCost == 0 && !(iFlags & MOVE_HAS_STEPPED) && !bAIControl
+					return PATH_STEP_WEIGHT; // DONE!
+			}
+		}
+		//
+		if (iAttackCount > 0)
+		{
+			// scale attack weights down if not all our units will need to fight.
+			iAttackWeight *= std::min(iAttackCount, iEnemies);
+			iAttackWeight /= iAttackCount;
+			iFromDefenceMod *= std::min(iAttackCount, iEnemies);
+			iFromDefenceMod /= iAttackCount;
+			iAttackCount = std::min(iAttackCount, iEnemies);
+		}
+		//
+		iWorstCost += PATH_DEFENSE_WEIGHT * std::max(0, (iDefenceCount * 200 - iDefenceMod) / std::max(1, iDefenceCount));
+		iWorstCost += PATH_DEFENSE_WEIGHT * std::max(0, (iAttackCount * 200 - iFromDefenceMod) / std::max(1, iAttackCount));
+		iWorstCost += std::max(0, iAttackWeight) / std::max(1, iAttackCount);
+		// if we're in enemy territory, consider the sum of our defensive bonuses as well as the average
+		if (kToPlot.isOwned() && atWar(eToPlotTeam, eTeam))
+		{
+			iWorstCost += PATH_DEFENSE_WEIGHT * std::max(0, (iDefenceCount * 200 - iDefenceMod) / 5);
+			iWorstCost += PATH_DEFENSE_WEIGHT * std::max(0, (iAttackCount * 200 - iFromDefenceMod) / 5);
+			iWorstCost += std::max(0, iAttackWeight) / 5;
+		}
+
+		// additional cost for ending turn in or adjacent to enemy territory based on flags (based on BBAI)
+		if (iFlags & (MOVE_AVOID_ENEMY_WEIGHT_2 | MOVE_AVOID_ENEMY_WEIGHT_3))
+		{
+			if (kToPlot.isOwned() && GET_TEAM(eTeam).AI_getWarPlan(eToPlotTeam) != NO_WARPLAN)
+			{
+				iWorstCost *= (iFlags & MOVE_AVOID_ENEMY_WEIGHT_3) ? 3 : 2;
+			}
+			else
+			{
+				CvPlot* pAdjacentPlot;
+				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+				{
+					pAdjacentPlot = plotDirection(kToPlot.getX(), kToPlot.getY(), (DirectionTypes)iI);
+					if (pAdjacentPlot != NULL)
+					{
+						if (pAdjacentPlot->isOwned() && atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()))
+						{
+							if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_3)
+							{
+								iWorstCost *= 3;
+								iWorstCost /= 2;
+							}
+							else
+							{
+								iWorstCost *= 4;
+								iWorstCost /= 3;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 
 	FAssert(iWorstCost > 0);

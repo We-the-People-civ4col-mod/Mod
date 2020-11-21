@@ -166,6 +166,8 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
+	int AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding = false,
+		bool bGarrisonStrength = false) const; // advc.500b
 protected:
 
 	static CvTeamAI* m_aTeams;
