@@ -7,13 +7,15 @@
 
 // The following #defines should not be moddable...
 
-#define MOVE_IGNORE_DANGER										(0x00000001)
+// Vanilla flags begin
+#define MOVE_IGNORE_DANGER										(0x00000001) 
 #define MOVE_SAFE_TERRITORY										(0x00000002)
 #define MOVE_NO_ENEMY_TERRITORY									(0x00000004)
 #define MOVE_DECLARE_WAR										(0x00000008)
 #define MOVE_DIRECT_ATTACK										(0x00000010)
 #define MOVE_THROUGH_ENEMY										(0x00000020)
-#define MOVE_BUST_FOG											(0x00000040)
+#define MOVE_BUST_FOG											(0x00000040) 
+// Vanilla flags end
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 // These two flags signal to weight the cost of moving through or adjacent to enemy territory higher
 // Used to reduce exposure to attack for approaching enemy cities
@@ -21,18 +23,18 @@
 #define MOVE_AVOID_ENEMY_WEIGHT_3								(0x00000100)
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
 
+// K-Mod flags begin
 #define MOVE_ATTACK_STACK									(0x00000200) // K-Mod.. allow the path to fight through enemy defences, but prefer not to.
 #define MOVE_SINGLE_ATTACK									(0x00000400) // K-Mod. only attack with one unit, not the whole stack
 #define MOVE_NO_ATTACK										(0x00000800) // K-Mod. used to prevent humans from accidentally attacking unseen units
 #define MOVE_HAS_STEPPED									(0x00001000) // K-Mod. used to signal that at least one step has been taken for this move command
 #define MOVE_ASSUME_VISIBLE									(0x00002000) // K-Mod. With this flag, the pathfinder will plan around enemy units even if they are not visible. (Note: AI units do this regardless of the flag.)
 #define MOVE_ROUTE_TO										(0x00004000) // advc.049
-
-// TODO: Move this
-#define MOVE_MAX_MOVES										(0x00008000)
+#define MOVE_MAX_MOVES										(0x00008000) // Introduced to WTP by K-Mod but originated in BTS
+// K-Mod flags end
 
 // R&R, ray, Natives raiding party - START
-#define MOVE_DIRECT_RAID									(0x00008000) // Was identical to MOVE_AVOID_ENEMY_WEIGHT_2
+#define MOVE_DIRECT_RAID									(0x00010000) // WTP : Changed value due to clashing with a K-Mod flag
 // R&R, ray, Natives raiding party - END
 
 #define RANDPLOT_LAND													(0x00000001)
