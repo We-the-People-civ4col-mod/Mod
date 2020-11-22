@@ -128,8 +128,8 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Trapper_House/Trapper_House.nif</NIF>
-            <KFM>Art/Structures/Improvements/campfire/camp.kfm</KFM>
+            <NIF>Art/Structures/Improvements/Trapper_Hut/camp.nif</NIF>
+            <KFM>Art/Structures/Improvements/Trapper_Hut/camp.kfm</KFM>
             <Button>,Art/colonization_atlas_buildings.dds,3,11</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
@@ -227,8 +227,8 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Trapper_House/Trapper_Camp.nif</NIF>
-            <KFM>Art/Structures/Improvements/campfire/camp.kfm</KFM>
+            <NIF>Art/Structures/Improvements/Trapper_House/camp.nif</NIF>
+            <KFM>Art/Structures/Improvements/Trapper_House/camp.kfm</KFM>
             <Button>,Art/colonization_atlas_buildings.dds,4,13</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
