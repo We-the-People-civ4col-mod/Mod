@@ -94,6 +94,7 @@
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
         <HandicapInfo>
@@ -184,6 +185,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -280,6 +282,7 @@
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
         <HandicapInfo>
@@ -373,6 +376,7 @@
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
         <HandicapInfo>
@@ -465,6 +469,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -561,6 +566,7 @@
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
         <HandicapInfo>
@@ -656,6 +662,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>

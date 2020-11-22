@@ -1120,4 +1120,24 @@
         <English>[COLOR_HIGHLIGHT_TEXT]Animal Lairs[COLOR_REVERT] are Goodies that are protected by wild animals. Maybe there is somthing valuable in there.</English>
         <German>[COLOR_HIGHLIGHT_TEXT]Tierverstecke[COLOR_REVERT] sind Goodies, die durch wilde Tiere bewacht werden. Vielleicht versteckt sich darin ja etwas wertvolles</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>
+        <English>[ICON_BULLET]Can spawn friendly units when explored.</English>
+        <German>[ICON_BULLET]Kann freundliche Einheiten hervorbringen, wenn es erkundet wird.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_ANIMALS</Tag>
+        <English>[ICON_BULLET]Spawns Wild Animals that guard it.</English>
+        <German>[ICON_BULLET]Erzeugt Wilde Tiere als Beschützer.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_NATIVES</Tag>
+        <English>[ICON_BULLET]Spawns Hostile Natives that guard it.</English>
+        <German>[ICON_BULLET]Erzeugt Feindliche Ureinwohner als Beschützer.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS</Tag>
+        <English>[ICON_BULLET]Spawns Revolting Units and Criminals that guard it.</English>
+        <German>[ICON_BULLET]Erzeugt Revoltierende Sklavene und Kriminelle als Beschützer.</German>
+    </TEXT>
 </Civ4GameText>
