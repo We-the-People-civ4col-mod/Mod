@@ -56,7 +56,7 @@
 		<Height>1</Height>
 		<Attribute Class="RegionTest">0</Attribute>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -67,7 +67,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -78,7 +78,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -89,7 +89,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -100,7 +100,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -112,7 +112,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -124,7 +124,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -136,7 +136,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x1</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -156,7 +156,7 @@
 		<Height>2</Height>
 		<Attribute Class="RegionTest">0</Attribute>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -167,7 +167,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -178,7 +178,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -189,7 +189,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -200,7 +200,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -212,7 +212,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -224,7 +224,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -236,7 +236,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -256,7 +256,7 @@
 		<Height>2</Height>
 		<Attribute Class="RegionTest">0</Attribute>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -268,7 +268,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -279,7 +279,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -291,7 +291,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -302,7 +302,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -315,7 +315,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -327,7 +327,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -340,7 +340,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::2x3</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::2x3</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -360,7 +360,7 @@
 		<Height>2</Height>
 		<Attribute Class="RegionTest">0</Attribute>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -371,7 +371,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -382,7 +382,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -393,7 +393,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_w.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Farm/crops_uw.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -404,7 +404,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -416,7 +416,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -428,7 +428,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -440,7 +440,7 @@
 			<Scale>0.4</Scale>
 		</ArtRef>
 		<ArtRef Name="art:crop">
-			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_w.nif::4x2</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/plantation2/crops_uw.nif::4x2</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
 			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
@@ -1016,7 +1016,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::1x1_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1026,7 +1026,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::1x1_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1036,7 +1036,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::1x1_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1047,7 +1047,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::4x4_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::4x4_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1058,7 +1058,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::2x2_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1068,7 +1068,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::2x2_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1078,7 +1078,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::2x2_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1089,7 +1089,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::4x4_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::4x4_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1185,7 +1185,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::1x1_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::1x1_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1195,7 +1195,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::1x1_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::1x1_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1205,7 +1205,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::1x1_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::1x1_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1216,7 +1216,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::4x4_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::4x4_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1227,7 +1227,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::2x2_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::2x2_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1237,7 +1237,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::2x2_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::2x2_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1247,7 +1247,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::2x2_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::2x2_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1258,7 +1258,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::4x4_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::4x4_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1270,7 +1270,7 @@
 		</ArtRef>
 <!-- coffee -->
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1280,7 +1280,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1290,7 +1290,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1301,7 +1301,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1312,7 +1312,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1322,7 +1322,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1332,7 +1332,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1343,7 +1343,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1354,7 +1354,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1364,7 +1364,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1374,7 +1374,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1385,7 +1385,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x1_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1396,7 +1396,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1406,7 +1406,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -1416,7 +1416,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1427,7 +1427,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x2_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
@@ -1437,7 +1437,7 @@
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-		<!-- cotton -->
+<!-- cotton -->
 		<ArtRef Name="art:cotton_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cotton/Cotton.nif::2x1_01_Sugar_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COTTON</Attribute>
@@ -1606,7 +1606,7 @@
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-		<!-- tobacco -->
+<!-- tobacco -->
 		<ArtRef Name="art:tobacco_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Tobacco/Tobacco.nif::2x1_01_Tobacco_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>
@@ -1617,7 +1617,7 @@
 			<Attribute Class="Rotation">0,180</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-				<ArtRef Name="art:tobacco_crop">
+		<ArtRef Name="art:tobacco_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Tobacco/Tobacco.nif::2x1_01_Tobacco_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_FARM</Attribute>
@@ -1775,7 +1775,7 @@
 			<Attribute Class="Rotation">90,270</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-		<!-- sugar -->
+<!-- sugar -->
 		<ArtRef Name="art:sugar_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Sugar/Sugar_LSystem.nif::2x1_01_Sugar_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>
@@ -1951,7 +1951,7 @@
 	<LNode Name="BLeaf_2x2">
 		<Width>2</Width>
 		<Height>2</Height>
-		<!-- CORN -->
+<!-- CORN -->
 		<ArtRef Name="art:corn_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Corn/Corn_Lsystem.nif::2x2_01_Sugar_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_CORN</Attribute>
@@ -2059,7 +2059,7 @@
 		</ArtRef>
 <!-- Hemp -->
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::1x1_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::1x1_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2095,7 +2095,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::2x2_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2104,7 +2104,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:hemp_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::2x2_01_Cnq_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::2x2_01_Cnq_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2112,9 +2112,42 @@
 			<Attribute Class="Scalar">szBatchGroup:hemp_crop</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
+<!-- Hemp improvement crap -->
+		<ArtRef Name="art:HEMP_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem_nw.nif::1x3_01_Rack_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:HEMP_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::1x3_01_Rack_Worked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:HEMP_PLANTATION_POOL">
+			<!-- worked pool -->
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_Pool_Spinning.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Terrain/Resources/Hemp/Cnq.kfm</Attribute>
+			<Attribute Class="Scalar">iPlayAnimationID:0</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+		</ArtRef>
+		<ArtRef Name="art:HEMP_PLANTATION_POOL">
+			<!-- unworked pool -->
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Hemp/Cnq_LSystem.nif::1x1_01_Pool_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+		</ArtRef>
 <!-- Indigo -->
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::2x2_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::2x2_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2150,7 +2183,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::2x2_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::2x2_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2159,35 +2192,66 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:indigo_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::2x2_01_Indigo_Notworked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::2x2_01_Indigo_Notworked</Attribute>
 			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:indigo_crop</Attribute>
 			<Scale>0.8</Scale>
+		</ArtRef>
+<!-- Indigo improvement crap -->
+		<ArtRef Name="art:INDIGO_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::1x3_01_Rack_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:INDIGO_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem.nif::1x3_01_Rack_Worked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:INDIGO_PLANTATION_POOL">
+			<!-- worked pool -->
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_pool_spinning.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Terrain/Resources/Indigo/Indigo.kfm</Attribute>
+			<Attribute Class="Scalar">iPlayAnimationID:0</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+		</ArtRef>
+		<ArtRef Name="art:INDIGO_PLANTATION_POOL">
+			<!-- unworked pool -->
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Indigo/Indigo_LSystem_uw.nif::1x1_01_Pool_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 		</ArtRef>
 <!-- Coffee -->
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::2x2_01_Cofwe_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:coffee_crop</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::1x1_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::2x2_01_Cofwe_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_FARM,!IMPROVEMENT_LARGE_FARM,!IMPROVEMENT_PLANTATION,!IMPROVEMENT_LARGE_PLANTATION</Attribute>
-			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:coffee_crop</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::2x2_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::2x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
@@ -2196,7 +2260,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::2x2_01_Coffee_Worked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::2x2_01_Cofwe_Worked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:1</Attribute>
@@ -2205,7 +2269,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::2x2_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::2x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2214,7 +2278,7 @@
 			<Scale>0.8</Scale>
 		</ArtRef>
 		<ArtRef Name="art:coffee_crop">
-			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Coffee_LSystem.nif::2x2_01_Coffee_NotWorked</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::2x2_01_Cofwe_NotWorked</Attribute>
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">bBonusWorkedOnly:0</Attribute>
@@ -2222,7 +2286,42 @@
 			<Attribute Class="Scalar">szBatchGroup:coffee_crop</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-		<!-- COTTON -->
+<!-- coffee improvement crap -->
+		<ArtRef Name="art:COFFEE_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x3_01_Rack_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:COFFEE_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x3_01_Rack_Worked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+
+		<ArtRef Name="art:COFFEE_PLANTATION_GRINDER">
+			<!-- worked pool -->
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_Grinder_Worked.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Terrain/Resources/Coffee/Cofwes_Grinder_Worked.kfm</Attribute>
+			<Attribute Class="Scalar">iPlayAnimationID:0</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+
+		</ArtRef>
+		<ArtRef Name="art:COFFEE_PLANTATION_GRINDER">
+			<!-- unworked pool -->
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Coffee/Cofwes_LSystem.nif::1x2_01_Grinder_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+		</ArtRef>
+<!-- COTTON -->
 		<ArtRef Name="art:cotton_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cotton/Cotton.nif::2x2_01_Sugar_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_COTTON</Attribute>
@@ -2315,7 +2414,24 @@
 			<Attribute Class="Scalar">szBatchGroup:cotton_crop</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-		<!-- TOBACCO -->
+<!-- Cotton improvement crap -->
+		<ArtRef Name="art:COTTON_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cotton/Cotton.nif::1x3_01_Rack_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:COTTON_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Cotton/Cotton.nif::1x3_01_Rack_Worked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+<!-- TOBACCO -->
 		<ArtRef Name="art:tobacco_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Tobacco/Tobacco.nif::2x2_01_Tobacco_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>
@@ -2408,7 +2524,24 @@
 			<Attribute Class="Scalar">szBatchGroup:tobacco_crop</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
-		<!-- SUGAR -->
+<!-- Tobacco improvement crap -->
+		<ArtRef Name="art:TOBACCO_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Tobacco/Tobacco.nif::1x3_01_Rack_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:TOBACCO_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Tobacco/Tobacco.nif::1x3_01_Rack_Worked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+<!-- SUGAR -->
 		<ArtRef Name="art:sugar_crop">
 			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Sugar/Sugar_LSystem.nif::2x2_01_Sugar_Normal</Attribute>
 			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>
@@ -2499,6 +2632,23 @@
 			<Attribute Class="Scalar">bCutTrees:0</Attribute>
 			<Attribute Class="Scalar">fCenterCut:70</Attribute>
 			<Attribute Class="Scalar">szBatchGroup:sugar_crop</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+<!-- Sugar improvement crap -->
+		<ArtRef Name="art:SUGAR_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Sugar/Sugar_LSystem.nif::1x3_01_Rack_NotWorked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+		<ArtRef Name="art:SUGAR_PLANTATION_RACK">
+			<Attribute Class="Scalar">NIF:Art/Terrain/Resources/Sugar/Sugar_LSystem.nif::1x3_01_Rack_Worked</Attribute>
+			<Attribute Class="Scalar">bExtraGoalOnly:1</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">szForceContourNode:Building</Attribute>
 			<Scale>0.8</Scale>
 		</ArtRef>
 	</LNode>
@@ -2944,6 +3094,7 @@
 		</ArtRef>		
 		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,!BONUS_ALL</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -2956,6 +3107,7 @@
 		</ArtRef>
 		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
@@ -2971,6 +3123,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
@@ -2985,6 +3138,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
@@ -2997,6 +3151,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -3010,6 +3165,7 @@
 		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
 			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Bonus">NO_BONUS,BONUS_ALL,!BONUS_TOBACCO,!BONUS_COTTON,!BONUS_HEMP,!BONUS_INDIGO,!BONUS_COFFEE,!BONUS_COCOA,!BONUS_SUGAR</Attribute>
 			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
 			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
 			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
@@ -3020,8 +3176,6 @@
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
 			<Scale>0.7</Scale>
 		</ArtRef>
-		
-
 		<!--- corn -->
 		<ArtRef Name="goal:BONUS_CORN">
 			<Attribute Class="Bonus">BONUS_CORN</Attribute>
@@ -3038,6 +3192,223 @@
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
 		</ArtRef>
+<!-- hemp plantation -->
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_HEMP</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:HEMP_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
 		<!--- Hemp -->
 		<ArtRef Name="goal:BONUS_HEMP">
 			<Attribute Class="Bonus">BONUS_HEMP</Attribute>
@@ -3045,6 +3416,223 @@
 			<Attribute Class="Scalar">bPlace:0</Attribute>
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
+		</ArtRef>
+<!-- indigo plantation -->
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_INDIGO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:INDIGO_PLANTATION_POOL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
 		</ArtRef>
 		<!--- Indigo -->
 		<ArtRef Name="goal:BONUS_INDIGO">
@@ -3054,6 +3642,223 @@
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
 		</ArtRef>
+<!-- coffee plantation -->
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COFFEE_PLANTATION_GRINDER</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
 		<!--- Coffee -->
 		<ArtRef Name="goal:BONUS_COFFEE">
 			<Attribute Class="Bonus">BONUS_COFFEE</Attribute>
@@ -3061,6 +3866,211 @@
 			<Attribute Class="Scalar">bPlace:0</Attribute>
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
+		</ArtRef>
+<!-- cotton plantation -->
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_COTTON</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:COTTON_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
 		</ArtRef>
 		<!--- cotton -->
 		<ArtRef Name="goal:BONUS_COTTON">
@@ -3070,6 +4080,211 @@
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
 		</ArtRef>
+<!-- tobacco plantation -->
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:TOBACCO_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
 		<!--- tobacco -->
 		<ArtRef Name="goal:BONUS_TOBACCO">
 			<Attribute Class="Bonus">BONUS_TOBACCO</Attribute>
@@ -3077,6 +4292,211 @@
 			<Attribute Class="Scalar">bPlace:0</Attribute>
 			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
 			<Attribute Class="Scalar">bIsPartOfBonus:1</Attribute>
+		</ArtRef>
+<!-- Sugar plantation -->
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:1</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.5</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_CAMPFIRE_SMALL</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_SOUTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LARGE_PLANTATION">
+			<Attribute Class="Improvement">IMPROVEMENT_LARGE_PLANTATION</Attribute>
+			<Attribute Class="Bonus">BONUS_SUGAR</Attribute>	
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Plantation/farm_shed2.nif</Attribute>
+			<Attribute Class="Scalar">szExtra:art:IMPROVEMENT_PLANTATION2_NORTH</Attribute>
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>			
+			<Attribute Class="Scalar">szExtra:art:SUGAR_PLANTATION_RACK</Attribute>
+			<Attribute Class="Scalar">iCropAreaMultiplier:12</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">fCenterCut:70</Attribute>
+			<Attribute Class="Scalar">bZMode_Ground:1</Attribute>
+			<Attribute Class="Scalar">bImprovementWorkedOnly:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Scale>0.7</Scale>
 		</ArtRef>
 		<!--- sugar -->
 		<ArtRef Name="goal:BONUS_SUGAR">
