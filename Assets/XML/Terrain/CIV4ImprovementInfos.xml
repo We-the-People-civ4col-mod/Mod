@@ -505,9 +505,9 @@
             <bGraphicalOnly>0</bGraphicalOnly>
         </ImprovementInfo>
         <ImprovementInfo>
-            <Type>IMPROVEMENT_GOODY_HUT7</Type>
-            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT7</Description>
-            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Civilopedia>
+            <Type>IMPROVEMENT_GOODY_HUT8</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT8</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT8_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_HOSTILE_VILLAGE</ArtDefineTag>
             <PrereqNatureYields/>
             <YieldIncreases/>
