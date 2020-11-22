@@ -278,6 +278,20 @@ bool CvUnitAI::AI_update()
 				{
 					AI_imperialCannonMove();
 				}
+				//WTP, Protected Hostile Goodies - START
+				if (GC.getGameINLINE().getBarbarianPlayer() == getOwnerINLINE())
+				{
+					if(plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileCriminals())
+					{
+						if(plot()->getNumDefenders(getOwnerINLINE()) <= 2)
+						{
+							getGroup()->pushMission(MISSION_FORTIFY);
+							return true;
+						}
+					}
+					AI_attackCityMove();
+				}
+				//WTP, Protected Hostile Goodies - END
 				else
 				{
 					// TAC - AI Attack City - koma13 - START
@@ -1114,6 +1128,18 @@ void CvUnitAI::AI_animalMove()
 			return;
 		}
 	}
+
+	//WTP, Protected Hostile Goodies - START
+	// protect Goody if not yet protected
+	if (plot()->isGoodyForSpawningHostileAnimals())
+	{
+		if(plot()->getNumDefenders(getOwnerINLINE()) <= 2)
+		{
+			getGroup()->pushMission(MISSION_FORTIFY);
+			return;
+		}
+	}
+	//WTP, Protected Hostile Goodies - END
 
 	if (AI_animalAttack())
 	{

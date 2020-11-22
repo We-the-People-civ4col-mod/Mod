@@ -3165,7 +3165,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		// R&R, ray, Monasteries and Forts - START
 		if (m_pUnitInfo->isAnimal())
 		{
-			if (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCity())
+			//WTP, Protected Hostile Goodies - small adaptation
+			if (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCity() || pPlot->isGoodyForSpawningHostileCriminals() || pPlot->isGoodyForSpawningHostileNatives())
 			{
 				return false;
 			}

@@ -2258,6 +2258,9 @@ public:
 	DllExport bool isWater() const;
 	DllExport bool isGoody() const;
 	DllExport bool isGoodyForSpawningUnits() const; //WTP, Unit only Goodies
+	DllExport bool isGoodyForSpawningHostileAnimals() const; //WTP, Unit only Goodies
+	DllExport bool isGoodyForSpawningHostileNatives() const; //WTP, Unit only Goodies
+	DllExport bool isGoodyForSpawningHostileCriminals() const; //WTP, Unit only Goodies
 	DllExport bool isPermanent() const;
 	DllExport bool useLSystem() const;
 	DllExport bool isOutsideBorders() const;
@@ -2324,6 +2327,9 @@ protected:
 	bool m_bWater;
 	bool m_bGoody;
 	bool m_bGoodyForSpawningUnits; //WTP, Unit only Goodies
+	bool m_bGoodyForSpawningHostileAnimals; //WTP, Unit only Goodies
+	bool m_bGoodyForSpawningHostileNatives; //WTP, Unit only Goodies
+	bool m_bGoodyForSpawningHostileCriminals; //WTP, Unit only Goodies
 	bool m_bPermanent;
 	bool m_bUseLSystem;
 	bool m_bOutsideBorders;

@@ -6342,6 +6342,31 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
 		}
 		//WTP, ray, Large Rivers - END
+
+		//WTP, ray, Large Rivers
+		//WTP, Unit only Goodies
+		// START texts in Colopedia
+		if (info.isGoodyForSpawningUnits())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_UNITS"));
+		}
+		if (info.isGoodyForSpawningHostileAnimals())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_ANIMALS"));
+		}
+		if (info.isGoodyForSpawningHostileNatives())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_NATIVES"));
+		}
+		if (info.isGoodyForSpawningHostileCriminals())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS"));
+		}
+		// END texts in Colopedia
 	}
 
 	if (info.getImprovementUpgrade() != NO_IMPROVEMENT)

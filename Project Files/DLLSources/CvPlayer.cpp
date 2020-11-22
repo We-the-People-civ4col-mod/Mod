@@ -5764,7 +5764,7 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 		if (!isNative() && !GC.getGameINLINE().isBarbarianPlayer(getID()))
 		// < JAnimals Mod End >
 		{
-			//WTP, Unit only Goodies -END 
+			//WTP, Unit only Goodies - END 
 			bool bCanTriggerUnitGoodies = pPlot->isGoodyForSpawningUnits();
 			//WTP, Unit only Goodies - START
 
@@ -5833,9 +5833,20 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 						// Case: Goody gives other rewards
 						else 
 						{
-							if (!bCanTriggerUnitGoodies)
+							// Land or Water Goody?
+							bool isWaterGoody = uGoody.isWaterGoody();
+
+							// case Land Goody
+							// Goodies that are not giving Units only valid for Land Goody Huts not giving Units
+							if (!isWaterGoody && !bCanTriggerUnitGoodies)
 							{
 								bValid = true;	
+							}
+							// case Water Goody
+							// to ensure that Water Unit Goodies do not only trigger Units - unless Cargo is full
+							if (isWaterGoody && (!bCanTriggerUnitGoodies || (pUnit->cargoSpace() - pUnit->getCargo() <= 0)))
+							{
+								bValid = true;
 							}
 						}
 

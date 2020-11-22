@@ -7950,6 +7950,9 @@ m_bRequiresFeature(false),
 m_bWater(false),
 m_bGoody(false),
 m_bGoodyForSpawningUnits(false), //WTP, Unit only Goodies
+m_bGoodyForSpawningHostileAnimals(false), //WTP, Protected Hostile Goodies
+m_bGoodyForSpawningHostileNatives(false), //WTP, Protected Hostile Goodies
+m_bGoodyForSpawningHostileCriminals(false), //WTP, Protected Hostile Goodies
 m_bPermanent(false),
 m_bUseLSystem(false),
 m_bOutsideBorders(false),
@@ -8119,8 +8122,24 @@ bool CvImprovementInfo::isGoodyForSpawningUnits() const
 {
 	return m_bGoodyForSpawningUnits;
 }
-//WTP, Unit only Goodies - EMD
+//WTP, Unit only Goodies - END
 
+//WTP, Protected Hostile Goodies - START
+bool CvImprovementInfo::isGoodyForSpawningHostileAnimals() const
+{
+	return m_bGoodyForSpawningHostileAnimals;
+}
+
+bool CvImprovementInfo::isGoodyForSpawningHostileNatives() const
+{
+	return m_bGoodyForSpawningHostileNatives;
+}
+
+bool CvImprovementInfo::isGoodyForSpawningHostileCriminals() const
+{
+	return m_bGoodyForSpawningHostileCriminals;
+}
+//WTP, Protected Hostile Goodies - END
 bool CvImprovementInfo::isPermanent() const
 {
 	return m_bPermanent;
@@ -8275,6 +8294,9 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bWater);
 	stream->Read(&m_bGoody);
 	stream->Read(&m_bGoodyForSpawningUnits); //WTP, Unit only Goodies
+	stream->Read(&m_bGoodyForSpawningHostileAnimals); //WTP, Protected Hostile Goodies
+	stream->Read(&m_bGoodyForSpawningHostileNatives); //WTP, Protected Hostile Goodies
+	stream->Read(&m_bGoodyForSpawningHostileCriminals); //WTP, Protected Hostile Goodies
 	stream->Read(&m_bPermanent);
 	stream->Read(&m_bUseLSystem);
 	stream->Read(&m_bOutsideBorders);
@@ -8352,6 +8374,9 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bWater);
 	stream->Write(m_bGoody);
 	stream->Write(m_bGoodyForSpawningUnits); //WTP, Unit only Goodies
+	stream->Write(m_bGoodyForSpawningHostileAnimals); //WTP, Protected Hostile Goodies
+	stream->Write(m_bGoodyForSpawningHostileNatives); //WTP, Protected Hostile Goodies
+	stream->Write(m_bGoodyForSpawningHostileCriminals); //WTP, Protected Hostile Goodies
 	stream->Write(m_bPermanent);
 	stream->Write(m_bUseLSystem);
 	stream->Write(m_bOutsideBorders);
@@ -8401,6 +8426,9 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bGoody, "bGoody");
 	pXML->GetChildXmlValByName(&m_bGoodyForSpawningUnits, "bGoodyForSpawningUnits"); //WTP, Unit only Goodies
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningHostileAnimals, "bGoodyForSpawningHostileAnimals"); //WTP, Unit only Goodies
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningHostileNatives, "bGoodyForSpawningHostileNatives"); //WTP, Unit only Goodies
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningHostileCriminals, "bGoodyForSpawningHostileCriminals"); //WTP, Unit only Goodies
 	pXML->GetChildXmlValByName(&m_bPermanent, "bPermanent");
 	pXML->GetChildXmlValByName(&m_bUseLSystem, "bUseLSystem");
 	pXML->GetChildXmlValByName(&m_iTilesPerGoody, "iTilesPerGoody");

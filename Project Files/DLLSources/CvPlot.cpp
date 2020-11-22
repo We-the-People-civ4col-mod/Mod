@@ -341,6 +341,136 @@ void CvPlot::doTurn()
 		doImprovementUpgrade();			
 	}
 
+	//WTP, Protected Hostile Goodies - START
+	if (isGoodyForSpawningHostileAnimals())
+	{
+		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+
+		//remove Animal Goodies in Native Territory
+		if (getOwner() != NO_PLAYER)
+		{
+			removeGoody();
+		}
+
+		// only if Barbarian Player exists and only if not owned (e.g. by Natives)
+		else if (BarbarianPlayerType != NO_PLAYER)
+		{
+			// only if not defended yet
+			if(getNumDefenders(BarbarianPlayerType) == 0)
+			{
+				int iJ;
+				int iValue, iBestValue, iRand;
+				UnitTypes eBestUnit, eLoopUnit;
+				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
+				CivilizationTypes eBarbCiv = barbarianPlayer.getCivilizationType();
+
+				eBestUnit = NO_UNIT;
+				iBestValue = 0;
+
+				// finding a suitable Animal to spawn on plot
+				for (iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
+				{
+					//eLoopUnit = (UnitTypes) GC.getCivilizationInfo(eBarbCiv).getCivilizationUnits(iJ);
+					eLoopUnit = (UnitTypes) iJ;
+
+					if (eLoopUnit == NO_UNIT)
+					{
+						continue;
+					}
+					if (!GC.getUnitInfo(eLoopUnit).isAnimal())
+					{
+						continue;
+					}
+
+					iValue = 0;
+					if (getTerrainType() != NO_TERRAIN)
+					{
+						if (GC.getUnitInfo(eLoopUnit).getTerrainNative(getTerrainType()))
+						{
+							iRand = GC.getWILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT();
+							iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Land Animal Selection - Terrain Weight"));
+						}
+					}
+
+					if (iValue > 0 && iValue > iBestValue)
+					{
+						eBestUnit = eLoopUnit;
+						iBestValue = iValue;
+					}
+				}
+
+				// we have found a Unit and will spawn it now
+				if (eBestUnit != NO_UNIT)
+				{
+					CvUnit* pNewUnit = barbarianPlayer.initUnit(eBestUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), UNITAI_ANIMAL);
+					pNewUnit->setBarbarian(true);
+				}
+			}
+		}
+	}
+
+	// case hostile Native Village
+	if (isGoodyForSpawningHostileNatives())
+	{
+		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+		// only if Barbarian Player exists
+		if (BarbarianPlayerType != NO_PLAYER)
+		{
+			// only if not defended yet
+			if(getNumDefenders(BarbarianPlayerType) == 0)
+			{
+				// Spawns Native Mercenaries
+				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
+				UnitTypes GeneratedUnitType = NO_UNIT;
+				GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_MERC"));
+
+				if(GeneratedUnitType != NO_UNIT)
+				{
+					// we generate with Default UNit AI
+					CvUnit* protectingUnit = barbarianPlayer.initUnit(GeneratedUnitType, (ProfessionTypes) GC.getUnitInfo(GeneratedUnitType).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+				}
+			}
+		}
+	}
+
+	// case Raider Camp
+	if (isGoodyForSpawningHostileCriminals())
+	{
+		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+		// only if Barbarian Player exists
+		if (BarbarianPlayerType != NO_PLAYER)
+		{
+			// only if not defended yet
+			if(getNumDefenders(BarbarianPlayerType) == 0)
+			{
+				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
+				UnitTypes GeneratedUnitType = NO_UNIT;
+
+				// to have a little variation
+				int randomUnitGerationValue = GC.getGameINLINE().getSorenRandNum(3, "Barbarian Camp Defender");
+				if (randomUnitGerationValue <= 1)
+				{
+					GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_SLAVE"));
+				}
+				if (randomUnitGerationValue == 2)
+				{
+					GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_NATIVE_SLAVE"));
+				}
+				else
+				{
+					GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_CRIMINAL"));
+				}
+
+				if(GeneratedUnitType != NO_UNIT)
+				{
+					// we generate with Default Unit AI
+					CvUnit* protectingUnit = barbarianPlayer.initUnit(GeneratedUnitType, (ProfessionTypes) GC.getUnitInfo(GeneratedUnitType).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+				}
+			}
+		}
+	}
+	//WTP, Protected Hostile Goodies - END
+
 	// Super Forts begin *bombard*
 	if (!isBombarded() && getDefenseDamage() > 0)
 	{
@@ -3545,6 +3675,38 @@ bool CvPlot::isGoodyForSpawningUnits(TeamTypes eTeam) const
 	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningUnits());
 }
 //WTP, Unit only Goodies - END
+
+//WTP, Protected Hostile Goodies - START
+bool CvPlot::isGoodyForSpawningHostileAnimals(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningHostileAnimals());
+}
+
+bool CvPlot::isGoodyForSpawningHostileNatives(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningHostileNatives());
+}
+
+bool CvPlot::isGoodyForSpawningHostileCriminals(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningHostileCriminals());
+}
+//WTP, Protected Hostile Goodies - END
 
 
 bool CvPlot::isRevealedGoody(TeamTypes eTeam) const

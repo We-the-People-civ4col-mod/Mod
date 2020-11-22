@@ -161,6 +161,9 @@ public:
 
 	DllExport bool isGoody(TeamTypes eTeam = NO_TEAM) const;
 	DllExport bool isGoodyForSpawningUnits(TeamTypes eTeam = NO_TEAM) const; //WTP, Unit only Goodies
+	DllExport bool isGoodyForSpawningHostileAnimals(TeamTypes eTeam = NO_TEAM) const; //WTP, Protected Hostile Goodies
+	DllExport bool isGoodyForSpawningHostileNatives(TeamTypes eTeam = NO_TEAM) const; //WTP, Protected Hostile Goodies
+	DllExport bool isGoodyForSpawningHostileCriminals(TeamTypes eTeam = NO_TEAM) const; //WTP, Protected Hostile Goodies
 
 	bool isRevealedGoody(TeamTypes eTeam = NO_TEAM) const;
 	void removeGoody();
