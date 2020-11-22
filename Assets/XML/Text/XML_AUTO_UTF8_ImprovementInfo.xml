@@ -1118,7 +1118,21 @@
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Animal Lairs[COLOR_REVERT] are Goodies that are protected by wild animals. Maybe there is somthing valuable in there.</English>
-        <German>[COLOR_HIGHLIGHT_TEXT]Tierverstecke[COLOR_REVERT] sind Goodies, die durch wilde Tiere bewacht werden. Vielleicht versteckt sich darin ja etwas wertvolles</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Tierverstecke[COLOR_REVERT] sind Goodies, die durch wilde Tiere bewacht werden. Vielleicht versteckt sich darin ja etwas wertvolles.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8</Tag>
+        <English>Hostile Native Village</English>
+        <German>
+            <Text>Feindliches Ureinwohnerdorf</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8_PEDIA</Tag>
+        <English>[COLOR_HIGHLIGHT_TEXT]Hostile Native Villages[COLOR_REVERT] are Goodies that are protected by hostile Natives. When you defeat the hostile Natives you can take their riches and secrets.</English>
+        <German>[COLOR_HIGHLIGHT_TEXT]Feindliche Ureinwohnerdörfer[COLOR_REVERT] sind Goodies, die durch wilde Tiere bewacht werden. Wenn die feindlichen Ureinwohner besiegt wurden, gehören Ihnen ihre Schätze.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>
