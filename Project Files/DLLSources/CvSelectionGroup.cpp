@@ -2539,17 +2539,33 @@ bool CvSelectionGroup::groupDeclareWar(CvPlot* pPlot, bool bForce)
 // Returns true if attack was made...
 bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting)
 {
-	CvPlot* pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	FAssert(!isBusy()); // K-Mod
 
-	if (iFlags & MOVE_THROUGH_ENEMY)
+	CvPlot* pDestPlot = GC.getMap().plot(iX, iY);
+
+	// K-Mod. Rather than clearing the existing path data; use a temporary pathfinder.
+	KmodPathFinder final_path;
+	final_path.SetSettings(this, iFlags & ~MOVE_DECLARE_WAR);
+	/*if (iFlags & MOVE_THROUGH_ENEMY) {
+	if (generatePath(plot(), pDestPlot, iFlags))
+	pDestPlot = getPathFirstPlot();
+	}*/ // BtS
+	// K-Mod
+	if (iFlags & (MOVE_THROUGH_ENEMY | MOVE_ATTACK_STACK) && !(iFlags & MOVE_DIRECT_ATTACK))
 	{
-		if (generatePath(plot(), pDestPlot, iFlags))
+		if (final_path.GeneratePath(pDestPlot))
 		{
-			pDestPlot = getPathFirstPlot();
+			pDestPlot = final_path.GetPathFirstPlot();
 		}
-	}
+	} // K-Mod end
 
 	FAssertMsg(pDestPlot != NULL, "DestPlot is not assigned a valid value");
+
+	if (getNumUnits() <= 0)
+		return false; // advc
+
+	if (/*getDomainType0) != DOMAIN_AIR && */stepDistance(getX(), getY(), pDestPlot->getX(), pDestPlot->getY()) != 1)
+		return false; // advc
 
 	bool bStack = (isHuman() && GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_STACK_ATTACK));
 	bool bAttack = false;
@@ -2561,9 +2577,13 @@ bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlre
 
 	if (getNumUnits() > 0)
 	{
-		if (stepDistance(getX(), getY(), pDestPlot->getX_INLINE(), pDestPlot->getY_INLINE()) == 1)
+		//if (stepDistance(getX(), getY(), pDestPlot->getX_INLINE(), pDestPlot->getY_INLINE()) == 1)
 		{
-			if ((iFlags & MOVE_DIRECT_ATTACK) || (iFlags & MOVE_DIRECT_RAID) || (generatePath(plot(), pDestPlot, iFlags) && (getPathFirstPlot() == pDestPlot)))
+			//if ((iFlags & MOVE_DIRECT_ATTACK) || (iFlags & MOVE_DIRECT_RAID) || (generatePath(plot(), pDestPlot, iFlags) && (getPathFirstPlot() == pDestPlot)))
+			// K-Mod.
+			if (iFlags & (MOVE_THROUGH_ENEMY | MOVE_ATTACK_STACK | MOVE_DIRECT_ATTACK | MOVE_DIRECT_RAID) ||
+				/*getDomainType() == DOMAIN_AIR ||*/ (final_path.GeneratePath(pDestPlot) &&
+					final_path.GetPathFirstPlot() == pDestPlot)) // K-Mod end
 			{
 				// R&R, ray, Natives raiding party
 				int iAttackOdds;
@@ -2666,11 +2686,12 @@ bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlre
 						if (bFailedAlreadyFighting || !bStack)
 						{
 							// if this is AI stack, follow through with the attack to the end
-							if (!isHuman() && getNumUnits() > 1)
+							if (!isHuman() && getNumUnits() > 1 &&
+								// K-Mod: if this is AI stack, follow through with the attack to the end
+								!(iFlags & MOVE_SINGLE_ATTACK))
 							{
 								AI_queueGroupAttack(iX, iY);
 							}
-
 							break;
 						}
 					}
@@ -2764,8 +2785,8 @@ void CvSelectionGroup::groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUni
 // Returns true if move was made...
 bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 {
-	CvPlot* pDestPlot;
-	CvPlot* pPathPlot;
+	KmodPathFinder final_path; // K-Mod
+	CvPlot* const pOriginPlot = plot(); // K-Mod
 
 	if (at(iX, iY))
 	{
@@ -2776,40 +2797,69 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 	FAssert(headMissionQueueNode() != NULL);
 
-	pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
+	CvPlot* const pDestPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 	FAssertMsg(pDestPlot != NULL, "DestPlot is not assigned a valid value");
 
 	FAssertMsg(canAllMove(), "canAllMove is expected to be true");
 
+	/*
 	if (!generatePath(plot(), pDestPlot, iFlags))
 	{
 		return false;
 	}
 
-	pPathPlot = getPathFirstPlot();
+	pPathPlot = getPathFirstPlot(); // BtS
+	*/
+
+	// K-Mod. I've added & ~MOVE_DECLARE_WAR so that if we need to declare war at this point, and haven't yet done so,
+	// the move will fail here rather than splitting the group inside groupMove.
+	// Also, I've change it to use a different pathfinder, to avoid clearing the path data - and to avoid OOS errors.
+	final_path.SetSettings(this, iFlags & ~MOVE_DECLARE_WAR);
+	if (!final_path.GeneratePath(pDestPlot))
+		return false;
+
+	CvPlot* pPathPlot = final_path.GetPathFirstPlot();
+	// K-Mod end
 
 	if (groupAmphibMove(pPathPlot, iFlags))
-	{
 		return false;
-	}
 
+	/*
 	bool bForce = false;
 	MissionAITypes eMissionAI = AI_getMissionAIType();
 	if (eMissionAI == MISSIONAI_PILLAGE)
-	{
 		bForce = true;
-	}
-
 	if (groupDeclareWar(pPathPlot, bForce))
-	{
-		return false;
-	}
+		return false;*/ // BtS
+	// Disabled by K-Mod. AI war decisions have no business being here.
 
 	bool bEndMove = false;
 	if(pPathPlot == pDestPlot)
 		bEndMove = true;
 
-	groupMove(pPathPlot, iFlags & MOVE_THROUGH_ENEMY, NULL, bEndMove);
+	//groupMove(pPathPlot, iFlags & MOVE_THROUGH_ENEMY, NULL, bEndMove);
+	groupMove(pPathPlot, false, NULL, bEndMove); // K-Mod
+
+	FAssert(getNumUnits() == 0 || atPlot(pPathPlot)); // K-Mod
+
+	// K-Mod.
+	if (!AI_isControlled() && !bEndMove)
+	{
+		//If the step we just took will make us change our path to something longer, then cancel the move.
+		// This prevents units from wasting all their moves by trying to walk around enemy units.
+		FAssert(final_path.IsPathComplete());
+		std::pair<int, int> old_moves = std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves());
+		if (!final_path.GeneratePath(pDestPlot)
+			|| std::make_pair(final_path.GetPathTurns(), -final_path.GetFinalMoves()) > old_moves)
+		{
+			clearMissionQueue();
+		}
+		// Also, if the step we just took causes us to backtrack - its probably because we've lost vision of a unit that was blocking the path.
+		// Apply the MOVE_ASSUME_VISIBLE flag, so that we remember to go the long way around.
+		else if (final_path.GetPathFirstPlot() == pOriginPlot)
+			headMissionQueueNode()->m_data.iFlags |= MOVE_ASSUME_VISIBLE;
+	}
+	// K-Mod end
 
 	return true;
 }
