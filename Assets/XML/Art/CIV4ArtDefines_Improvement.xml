@@ -335,8 +335,8 @@
             <bExtraAnimations>0</bExtraAnimations>
             <fScale>1.5</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/structures/improvements/BarbarianCamp/BarbarianCamp.nif</NIF>
-            <KFM/>
+            <NIF>Art/structures/improvements/NativeHostileVillage/tribalvillage.nif</NIF>
+            <KFM>Art/structures/improvements/NativeHostileVillage/tribalvillage.kfm</KFM>
             <Button>Art/interface/buttons/palisadewall.dds</Button>
         </ImprovementArtInfo>
     </ImprovementArtInfos>
