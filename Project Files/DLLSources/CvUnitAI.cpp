@@ -281,7 +281,7 @@ bool CvUnitAI::AI_update()
 				//WTP, Protected Hostile Goodies - START
 				if (GC.getGameINLINE().getBarbarianPlayer() == getOwnerINLINE())
 				{
-					if(plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileCriminals())
+					if(plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileNatives())
 					{
 						if(plot()->getNumDefenders(getOwnerINLINE()) <= 2)
 						{
