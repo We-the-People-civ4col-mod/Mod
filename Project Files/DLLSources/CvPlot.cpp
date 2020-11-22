@@ -413,8 +413,15 @@ void CvPlot::doTurn()
 	if (isGoodyForSpawningHostileNatives())
 	{
 		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+
+		//remove Hostile Native Goodies in Native Territory
+		if (getOwner() != NO_PLAYER)
+		{
+			removeGoody();
+		}
+
 		// only if Barbarian Player exists
-		if (BarbarianPlayerType != NO_PLAYER)
+		else if (BarbarianPlayerType != NO_PLAYER)
 		{
 			// only if not defended yet
 			if(getNumDefenders(BarbarianPlayerType) == 0)
@@ -437,8 +444,15 @@ void CvPlot::doTurn()
 	if (isGoodyForSpawningHostileCriminals())
 	{
 		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+		
+		//remove Raider Goodies in Native Territory
+		if (getOwner() != NO_PLAYER)
+		{
+			removeGoody();
+		}
+
 		// only if Barbarian Player exists
-		if (BarbarianPlayerType != NO_PLAYER)
+		else if (BarbarianPlayerType != NO_PLAYER)
 		{
 			// only if not defended yet
 			if(getNumDefenders(BarbarianPlayerType) == 0)
