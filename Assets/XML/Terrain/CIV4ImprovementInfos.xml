@@ -450,8 +450,8 @@
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-            <iTilesPerGoody>40</iTilesPerGoody>
-            <iGoodyRange>10</iGoodyRange>
+            <iTilesPerGoody>80</iTilesPerGoody>
+            <iGoodyRange>20</iGoodyRange>
             <iFeatureGrowth>0</iFeatureGrowth>
             <iUpgradeTime>0</iUpgradeTime>
             <iDefenseModifier>10</iDefenseModifier>
