@@ -18091,7 +18091,9 @@ bool CvUnitAI::AI_plotValid(CvPlot* pPlot)
 		break;
 
 	case DOMAIN_LAND:
-		if (pPlot->getArea() == getArea() || m_pUnitInfo->isCanMoveAllTerrain())
+		//WTP, ray, Large Rivers - making sure that AI generally considers Large Rivers valid for Land Plots
+		// if (pPlot->getArea() == getArea() || m_pUnitInfo->isCanMoveAllTerrain())
+		if (pPlot->getArea() == getArea() || m_pUnitInfo->isCanMoveAllTerrain() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
 		{
 			return true;
 		}
