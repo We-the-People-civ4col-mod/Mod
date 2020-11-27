@@ -16,6 +16,7 @@ class CyTeam;
 class CyArtFileMgr;
 class CyUserProfile;
 class CyVariableSystem;
+class CyUserSettings;
 class CyGlobalContext
 {
 public:
@@ -280,5 +281,7 @@ public:
 	void setGameFontDebug(int iChar);
 	int getDomesticAdvisorState() const;
 	void setDomesticAdvisorState(int iPage);
+
+	CyUserSettings* getUserSettings() const;
 };
 #endif	// CyGlobalContext_h

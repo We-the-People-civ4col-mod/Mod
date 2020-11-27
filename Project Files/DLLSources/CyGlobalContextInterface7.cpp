@@ -12,6 +12,7 @@
 //#include "CvStructs.h"
 #include "CvInfos.h"
 #include "CyTeam.h"
+#include "CyUserSettings.h"
 
 
 void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
@@ -65,5 +66,7 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 		.def("setGameFontDebug", &CyGlobalContext::setGameFontDebug, "(int)")
 		.def("setDomesticAdvisorState", &CyGlobalContext::setDomesticAdvisorState, "(int)")
 		.def("getDomesticAdvisorState", &CyGlobalContext::getDomesticAdvisorState, "int ()")
+
+		.def("getUserSettings", &CyGlobalContext::getUserSettings, python::return_value_policy<python::manage_new_object>(), "class ()")
 	;
 }

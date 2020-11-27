@@ -16,6 +16,7 @@
 #include "CvTeamAI.h"
 #include "CyArtFileMgr.h"
 #include "UserSettings.h"
+#include "CyUserSettings.h"
 
 CyGlobalContext::CyGlobalContext()
 {
@@ -514,3 +515,7 @@ void CyGlobalContext::setDomesticAdvisorState(int iPage)
 	iDomesticAdvisorState = iPage;
 }
 
+CyUserSettings* CyGlobalContext::getUserSettings() const
+{
+	return new CyUserSettings();
+}

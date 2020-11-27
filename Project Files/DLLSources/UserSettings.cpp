@@ -3,9 +3,11 @@
 #include "UserSettings.h"
 
 static const int iDefaultCityCatchmentRadius = 2;
+static const int iDefaultDebugMaxGameFont = 0;
 
 UserSettings::UserSettings()
 	: m_iColonyRadius(iDefaultCityCatchmentRadius)
+	, m_iDebugMaxGameFont(iDefaultDebugMaxGameFont)
 {
 	read();
 }
@@ -13,6 +15,11 @@ UserSettings::UserSettings()
 int UserSettings::getColonyRadius() const
 {
 	return m_iColonyRadius;
+}
+
+int UserSettings::getDebugMaxGameFont() const
+{
+	return m_iDebugMaxGameFont;
 }
 
 // open the settings file
@@ -66,6 +73,7 @@ void UserSettings::read()
 		// order doesn't matter as all settings will check all lines. Not the fastest approach, but it's the least likely to fail.
 		// bFail goes true if at least one failed
 		bFail |= scanFile(f, "Default Colony Catchment Radius=%d", m_iColonyRadius);
+		bFail |= scanFile(f, "Debug Max Gamefont=%d", m_iDebugMaxGameFont);
 
 		fclose(f);
 
@@ -98,6 +106,16 @@ void UserSettings::write()
 		fprintf(f, "\n# Can be changed at new game startup, but engine limitations prevents a GUI for this setting in scenarios");
 		fprintf(f, "\n# Note: scenarios can ignore this setting and specify radius");
 		fprintf(f, "\nDefault Colony Catchment Radius=%d\n", m_iColonyRadius);
+
+		fprintf(f, "\n-----------------------------------------------------------------------------------");
+		fprintf(f, "\nSettings below this are intended for modders only");
+		fprintf(f, "\nThey serve no gameplay value and are only used to verify that mods work as intended");
+		fprintf(f, "\n-----------------------------------------------------------------------------------\n");
+
+		fprintf(f, "\nEnables the debug screen for GameFont");
+		fprintf(f, "\n0 = off, 1 = on (autodetection of max value)");
+		fprintf(f, "\nValue higher than 8483 will set the max directly");
+		fprintf(f, "\nDebug Max Gamefont=%d\n", m_iDebugMaxGameFont);
 
 		fclose(f);
 	}

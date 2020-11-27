@@ -124,7 +124,7 @@ class CvDomesticAdvisor:
 		self.TRADEROUTE_STATE         = self.addButton("TradeRouteState",        "INTERFACE_IMPORT_EXPORT_BUTTON")
 		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON"           , NativeAdvisor.NativeAdvisor(self))
 		
-		if (gc.isDebugBuild()):
+		if (gc.getUserSettings().getDebugMaxGameFont() > 0):
 			self.GAME_FONT_STATE      = self.addButton("GameFontState",          "INTERFACE_CITY_MAP_BUTTON")
 			self.GameFontSet = False
 		
@@ -148,6 +148,11 @@ class CvDomesticAdvisor:
 
 		#Default State on Screen opening
 		self.CurrentState = gc.getDomesticAdvisorState()
+		if self.CurrentState >= len(self.StatePages):
+			# a button has vanished since last time
+			# most likely the user turned off debug mode
+			# set a different page to recover
+			self.CurrentState = 0
 		self.CurrentPage = 0
 		
 		self.RebuildArrays()
@@ -1053,7 +1058,11 @@ class CvDomesticAdvisor:
 			screen.setTableColumnHeader( szStateName, 3, "<font=2>Button</font>", 56)
 			screen.setTableColumnHeader( szStateName, 4, "<font=2>Type</font>", 500)
 			
-			iMax = FontSymbols.MAX_NUM_SYMBOLS + CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) - 8483 + 10
+			# load the max value from UserSettings
+			iMax = gc.getUserSettings().getDebugMaxGameFont() - 8483 + 1
+			if iMax <= 0:
+				# UserSettings didn't request a specific max. Use the lenght assumed by the game
+				iMax = FontSymbols.MAX_NUM_SYMBOLS + CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) - 8483 + 10
 			for iLine in range(iMax):
 				iID = iLine + 8483
 				screen.appendTableRow(szStateName)
