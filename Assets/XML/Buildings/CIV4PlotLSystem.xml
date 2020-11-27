@@ -676,7 +676,31 @@
 		<ArtRef Name="goal:IMPROVEMENT_LAND_WORKED">
 			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/LandWorked/Land_worked_building.nif</Attribute>
 			<Attribute Class="Improvement">IMPROVEMENT_LAND_WORKED</Attribute>
-			<Attribute Class="ArtStyle">ARTSTYLE_ENGLAND,ARTSTYLE_DUTCH,ARTSTYLE_FRANCE,ARTSTYLE_SPAIN,ARTSTYLE_PORTUGAL,ARTSTYLE_DENMARK,ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_ENGLAND,ARTSTYLE_DUTCH,ARTSTYLE_FRANCE,ARTSTYLE_DENMARK,ARTSTYLE_RUSSIA</Attribute>
+			<Attribute Class="Scalar">bApplyRotation:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iPlayAnimationID:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LAND_WORKED">
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/LandWorked/Land_worked_building_spain.nif</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LAND_WORKED</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_SPAIN</Attribute>
+			<Attribute Class="Scalar">bApplyRotation:0</Attribute>
+			<Attribute Class="Scalar">bCutTrees:1</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Attribute Class="Rotation">0,180</Attribute>
+			<Attribute Class="Scalar">iPlayAnimationID:0</Attribute>
+			<Attribute Class="Scalar">fTwist:-0.7853981633</Attribute>
+			<Scale>0.4</Scale>
+		</ArtRef>
+		<ArtRef Name="goal:IMPROVEMENT_LAND_WORKED">
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/LandWorked/Land_worked_building_port.nif</Attribute>
+			<Attribute Class="Improvement">IMPROVEMENT_LAND_WORKED</Attribute>
+			<Attribute Class="ArtStyle">ARTSTYLE_PORTUGAL</Attribute>
 			<Attribute Class="Scalar">bApplyRotation:0</Attribute>
 			<Attribute Class="Scalar">bCutTrees:1</Attribute>
 			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
