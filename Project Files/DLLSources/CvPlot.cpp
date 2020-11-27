@@ -429,7 +429,7 @@ void CvPlot::doTurn()
 				// Spawns Native Mercenaries
 				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
 				UnitTypes GeneratedUnitType = NO_UNIT;
-				GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_MERC"));
+				GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE"));
 
 				if(GeneratedUnitType != NO_UNIT)
 				{

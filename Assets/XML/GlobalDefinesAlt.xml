@@ -1183,4 +1183,8 @@
 		<DefineName>UNITCLASS_FAILED_MISSIONARY</DefineName>
 		<DefineTextVal>UNITCLASS_FAILED_MISSIONARY</DefineTextVal>
 	</Define>
+	<Define>
+		<DefineName>UNITCLASS_PROTECTOR_HOSTILE_VILLAGE</DefineName>
+		<DefineTextVal>UNITCLASS_HOSTILE_NATIVE</DefineTextVal>
+	</Define>
 </Civ4Defines>

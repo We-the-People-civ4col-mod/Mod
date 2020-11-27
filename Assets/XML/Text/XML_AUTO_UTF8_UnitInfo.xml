@@ -5907,4 +5907,18 @@
         <Tag>TXT_KEY_UNIT_EXPERT_TRADER_PEDIA</Tag>
         <English>Fur trading was one of the main economic activities in Northern America from the late 16th century to the mid-19th century. At the time, demand for fur was surging in Europe because it was used to make cloth and fancy hats. Data collected from England in the 18th century highlights that the years from 1746 to 1763 saw an increase of 12 shillings per pelt. It has been calculated that over 20 million beaver hats were exported from England alone from 1700 to 1770. Native Americans and Europeans combined to create a comparative advantage in the fur trade. Routes formed an early communications network. The opportunity cost of hunting beavers in Europe was extremely high: by the seventeenth and eighteenth centuries, the Eurasian beaver was near extinction in England and France. On the other hand, traders and trappers thought the wildlife in the New World was essentially limitless. Native Americans valued the trade goods received, particularly knives, axes, and guns. The fur trade provided a stable source of income for many Native Americans until the mid-19th century, when changing fashion trends in Europe and a decline in the beaver population in North America brought about a collapse in demand for fur.</English>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOSTILE_NATIVE</Tag>
+        <English>Hostile Native:Hostile Natives</English>
+        <German>
+            <Text>Feindlicher Ureinwohner:Feindliche Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_HOSTILE_NATIVE_STRATEGY</Tag>
+        <English>[COLOR_UNIT_TEXT]Hostile Natives[COLOR_REVERT] cannot be acquired. They are hostile to the Player and usually found in [COLOR_HIGHLIGHT_TEXT]Hostile Native Villages[COLOR_REVERT]. They will protect their village until death and attack the Player if their village is destroyed.</English>
+        <German>[COLOR_UNIT_TEXT]Feindliche Ureinwohner[COLOR_REVERT] können nicht erworben werden. Sie sind dem Spieler gegenüber feindlichen und meist nur in [COLOR_HIGHLIGHT_TEXT]Feindlichen Ureinwohnerdörfern[COLOR_REVERT] zu finden. Sie werden ihr Dorf bis zum Tod verteidigen und greifen den Spieler an, wenn dieses zerstört wird.</German>
+    </TEXT>
 </Civ4GameText>

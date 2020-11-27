@@ -736,6 +736,12 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_NATIVE_MERC", idx);
 		//End TAC Native Mercs
 
+		//WTP, Protected Hostile Goodies - START
+		SetGlobalDefine("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE", idx);
+		//WTP, Protected Hostile Goodies - END
+
 		// R&R, ray, Native Slave, START
 		SetGlobalDefine("UNITCLASS_NATIVE_SLAVE", szVal);
 		idx = FindInInfoClass(szVal);
