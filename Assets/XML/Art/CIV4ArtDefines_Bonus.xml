@@ -231,7 +231,7 @@
             <fScale>1</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cocoa/cocoa.nif</NIF>
-            <KFM>Art/Terrain/Resources/Cocoa/cocoa.kfm</KFM>
+            <KFM>Art/Terrain/Resources/Coffee/Coffee.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,6,11</Button>
             <FontButtonIndex>40</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>

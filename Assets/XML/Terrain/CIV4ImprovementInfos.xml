@@ -1616,7 +1616,7 @@
             <bActsAsCity>0</bActsAsCity>
             <bHillsMakesValid>0</bHillsMakesValid>
             <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
             <bRequiresRiverSide>0</bRequiresRiverSide>
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
@@ -1626,7 +1626,7 @@
             <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
             <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
+            <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iTilesPerGoody>0</iTilesPerGoody>
@@ -2828,7 +2828,7 @@
             <bActsAsCity>0</bActsAsCity>
             <bHillsMakesValid>0</bHillsMakesValid>
             <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
             <bRequiresRiverSide>0</bRequiresRiverSide>
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
@@ -2838,7 +2838,7 @@
             <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
             <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
+            <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iTilesPerGoody>0</iTilesPerGoody>
