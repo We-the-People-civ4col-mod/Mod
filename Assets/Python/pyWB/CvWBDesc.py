@@ -1166,6 +1166,7 @@ class CvMapDesc:
 		self.seaLevel = None
 		self.numPlotsWritten = 0
 		self.numSignsWritten = 0
+		self.bRandomizeFeatures = "false" #WTP, ray, Randomize Features Map Option
 		self.bRandomizeResources = "false"
 		self.bRandomizeGoodies = "false"
 
@@ -1189,6 +1190,7 @@ class CvMapDesc:
 		f.write("\tsealevel=%s\n" %(gc.getSeaLevelInfo(map.getSeaLevel()).getType(),))
 		f.write("\tnum plots written=%d\n" %(iNumPlots,))
 		f.write("\tnum signs written=%d\n" %(iNumSigns,))
+		f.write("\tRandomize Features=false\n") #WTP, ray, Randomize Features Map Option
 		f.write("\tRandomize Resources=false\n")
 		f.write("EndMap\n")
 
@@ -1258,6 +1260,11 @@ class CvMapDesc:
 			v = parser.findTokenValue(toks, "num signs written")
 			if v!=-1:
 				self.numSignsWritten = int(v)
+				continue
+
+			v = parser.findTokenValue(toks, "Randomize Features")
+			if v!=-1:
+				self.bRandomizeFeatures = v
 				continue
 
 			v = parser.findTokenValue(toks, "Randomize Resources")
@@ -1412,6 +1419,10 @@ class CvWBDesc:
 		for pDesc in self.signDesc:
 			pDesc.apply()
 
+		if (self.mapDesc.bRandomizeFeatures != "false"): #WTP, ray, Randomize Features Map Option
+			CyMapGenerator().eraseFeaturesOnLand()
+			CyMapGenerator().addFeaturesOnLand()
+			
 		if (self.mapDesc.bRandomizeResources != "false"):
 			for iPlotLoop in range(CyMap().numPlots()):
 				pPlot = CyMap().plotByIndex(iPlotLoop)
@@ -1419,7 +1430,7 @@ class CvWBDesc:
 			CyMapGenerator().addBonuses()
 			
 		if (self.mapDesc.bRandomizeGoodies != "false"):
-			CyMapGenerator().eraseGoodies()	
+			CyMapGenerator().eraseGoodies()
 			CyMapGenerator().addGoodies()
 
 		return 0	# ok

@@ -65,6 +65,14 @@ void CyMapGenerator::addFeatures()
 		m_pMapGenerator->addFeatures();
 }
 
+//WTP, ray, Randomize Features Map Option - START
+void CyMapGenerator::addFeaturesOnLand()
+{
+	if (m_pMapGenerator)
+		m_pMapGenerator->addFeaturesOnLand();
+}
+//WTP, ray, Randomize Features Map Option - END
+
 void CyMapGenerator::addBonuses()
 {
 	if (m_pMapGenerator)
@@ -106,6 +114,14 @@ void CyMapGenerator::eraseFeatures()
 	if (m_pMapGenerator)
 		m_pMapGenerator->eraseFeatures();
 }
+
+//WTP, ray, Randomize Features Map Option - START
+void CyMapGenerator::eraseFeaturesOnLand()
+{
+	if (m_pMapGenerator)
+		m_pMapGenerator->eraseFeaturesOnLand();
+}
+//WTP, ray, Randomize Features Map Option - END
 
 void CyMapGenerator::eraseBonuses()
 {

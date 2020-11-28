@@ -30,6 +30,7 @@ public:
 	void doRiver(CvPlot* pStartPlot, CardinalDirectionTypes eLastCardinalDirection=NO_CARDINALDIRECTION, CardinalDirectionTypes eOriginalCardinalDirection=NO_CARDINALDIRECTION, int iThisRiverID=-1);
 	bool addRiver(CvPlot *pFreshWaterPlot);
 	DllExport void addFeatures();
+	DllExport void addFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	DllExport void addBonuses();
 	void addUniqueBonusType(BonusTypes eBonusType);
 	void addNonUniqueBonusType(BonusTypes eBonusType);
@@ -38,6 +39,7 @@ public:
 
 	DllExport void eraseRivers();
 	DllExport void eraseFeatures();
+	DllExport void eraseFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	DllExport void eraseBonuses();
 	DllExport void eraseGoodies();
 	DllExport void eraseEurope();

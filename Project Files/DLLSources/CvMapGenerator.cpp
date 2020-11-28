@@ -647,6 +647,38 @@ void CvMapGenerator::addFeatures()
 	}
 }
 
+
+//WTP, ray, Randomize Features Map Option - START
+void CvMapGenerator::addFeaturesOnLand()
+{
+	PROFILE_FUNC();
+
+	CvPlot* pPlot;
+	int iI, iJ;
+
+	for (iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	{
+		pPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
+		FAssert(pPlot != NULL);
+		// only for Land Plots
+		if(!pPlot->isWater())
+		{
+			for (iJ = 0; iJ < GC.getNumFeatureInfos(); iJ++)
+			{
+				if (pPlot->canHaveFeature((FeatureTypes)iJ))
+				{
+					if (GC.getGameINLINE().getMapRandNum(10000, "addFeaturesAtPlot") < GC.getFeatureInfo((FeatureTypes)iJ).getAppearanceProbability())
+					{
+						pPlot->setFeatureType((FeatureTypes)iJ);
+					}
+				}
+			}
+		}
+	}
+}
+//WTP, ray, Randomize Features Map Option - END
+
+
 void CvMapGenerator::addBonuses()
 {
 	PROFILE_FUNC();
@@ -1014,6 +1046,21 @@ void CvMapGenerator::eraseFeatures()
 		pPlot->setFeatureType(NO_FEATURE);
 	}
 }
+
+//WTP, ray, Randomize Features Map Option - START
+void CvMapGenerator::eraseFeaturesOnLand()
+{
+	for (int i = 0; i < GC.getMapINLINE().numPlotsINLINE(); i++)
+	{
+		CvPlot* pPlot = GC.getMapINLINE().plotByIndexINLINE(i);
+		// only for Land Plots
+		if(!pPlot->isWater())
+		{
+			pPlot->setFeatureType(NO_FEATURE);
+		}
+	}
+}
+//WTP, ray, Randomize Features Map Option - END
 
 void CvMapGenerator::eraseBonuses()
 {
