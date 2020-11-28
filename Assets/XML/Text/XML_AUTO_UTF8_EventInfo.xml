@@ -2863,5 +2863,29 @@
         <Italian>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Italian>
         <Spanish>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Spanish>
     </TEXT>
+		<TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT_1</Tag>
+        <English>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</English>
+        <French>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</French>
+        <German>Ja, diese Stelle ist für einen Handelsposten genau richtig. Ortsansässige Farmer und Indianer werden mit uns Handeln. Damit stechen wir die Konkurrenz aus.</German>
+        <Italian>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</Italian>
+        <Spanish>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT_2</Tag>
+        <English>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</English>
+        <French>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</French>
+        <German>Das bedroht die Handelsinteressen unserer Nachbarn. Mir sind die guten nachbarschaftlichen Beziehungen wichtiger.</German>
+        <Italian>InterroWe cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</Italian>
+        <Spanish>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT_3</Tag>
+        <English>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</English>
+        <French>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</French>
+        <German>Für sowas hab ich jetzt keine Zeit. Die Handelsgesellschaft soll sich gefälligst selbst darum kümmern.</German>
+        <Italian>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Italian>
+        <Spanish>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Spanish>
+    </TEXT>
 	
 </Civ4GameText>

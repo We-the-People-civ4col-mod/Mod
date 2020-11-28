@@ -3391,4 +3391,28 @@
         <Italian>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Italian>
         <Spanish>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Spanish>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT</Tag>
+        <English>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</English>
+        <French>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</French>
+        <German>Eine Handelsgesellschaft ist drauf und dran an einer strategisch günstigen Stelle ein neues Handelsfort zu errichten!</German>
+        <Italian>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</Italian>
+        <Spanish>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_1</Tag>
+        <English>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</English>
+        <French>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</French>
+        <German>Sire, einige Händler habe eine günstige Stelle für einen Handelsposten gefunden. Er liegt strategisch günstig, um unsere Handelsinteressen in der Region auszubauen. Wollen wir den Bau unterstützen und uns so einen Vorteil verschaffen?</German>
+        <Italian>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</Italian>
+        <Spanish>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_2</Tag>
+        <English>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</English>
+        <French>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</French>
+        <German>Sire, ein Bote ist angekommen. Eine unserer Handelsgesellschaften möchte an der Grenze ein Handelsfort errichten. Dies würde uns nützen, aber unsere Nachbarn entzürnen. Was sollen wir tun?</German>
+        <Italian>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Italian>
+        <Spanish>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Spanish>
+    </TEXT>
 </Civ4GameText>
