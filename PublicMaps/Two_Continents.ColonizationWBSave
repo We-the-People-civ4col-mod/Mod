@@ -123606,7 +123606,7 @@ EndPlot
 BeginPlot
 	x=95,y=101
 	BonusType=BONUS_PEARLS
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
