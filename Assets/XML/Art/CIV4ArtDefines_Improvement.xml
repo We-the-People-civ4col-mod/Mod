@@ -18,7 +18,7 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_WATER_WORKED</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>0.5</fScale>
+            <fScale>0.4</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/FishingBoat/FishingBoat.nif</NIF>
             <KFM>Art/Structures/Improvements/FishingBoat/FishingBoat.kfm</KFM>
