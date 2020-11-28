@@ -2838,4 +2838,30 @@
         <Italian>We need those fish now. Fill your nets with all you can catch.</Italian>
         <Spanish>We need those fish now. Fill your nets with all you can catch.</Spanish>
     </TEXT>
+	
+	<TEXT>
+        <Tag>TXT_KEY_EVENT_RABBLE_1</Tag>
+        <English>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</English>
+        <French>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</French>
+        <German>Na schön, das Lumpenpack soll ihren Wegzoll haben. Aber wir müssen dringend was gegen dieses Gesindel tun. Wir sollten noch ein paar Büttel mehr einstellen.</German>
+        <Italian>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</Italian>
+        <Spanish>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_RABBLE_2</Tag>
+        <English>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</English>
+        <French>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</French>
+        <German>Wir können doch diesen Wegelagerern nicht unser ganzes Gold geben. Womit bezahlen wir die neuen Waren. Lasst uns verhandeln, vielleicht geben sie sich auch mit weniger zufrieden?!</German>
+        <Italian>InterroWe cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</Italian>
+        <Spanish>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_RABBLE_3</Tag>
+        <English>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</English>
+        <French>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</French>
+        <German>Pah, wir werden diesem Gesindel keine einzige Goldmünze geben! Wir schicken nach den Bütteln, die werden es diesen Banditen schon zeigen!</German>
+        <Italian>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Italian>
+        <Spanish>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Spanish>
+    </TEXT>
+	
 </Civ4GameText>

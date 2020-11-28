@@ -3367,4 +3367,28 @@
         <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with [COLOR_FONT_GOLD]Tobacco[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
         <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Tabak[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_RABBLE</Tag>
+        <English>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</English>
+        <French>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</French>
+        <German>Es gibt Gerüchte, dass in den Kolonien Straßenräuber ihr Unwesen treiben und die Wagenkolonnen der Händler überfallen. Hütet Euch!</German>
+        <Italian>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</Italian>
+        <Spanish>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_1</Tag>
+        <English>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</English>
+        <French>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</French>
+        <German>Straßenräuber haben einen Wagenzug überfallen und zwingen die Kutscher zur Übergabe der Kasse. Ihr müsst Eure Kolonie besser schützen, Sire!</German>
+        <Italian>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</Italian>
+        <Spanish>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_2</Tag>
+        <English>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</English>
+        <French>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</French>
+        <German>Eure Kolonien entwickeln sich prächtig. Leider zieht das auch weniger freundliche Zeitgenossen an. Wegelagerer haben einen Wagenzug überfallen und fordern Wegzoll vom Kutscher!</German>
+        <Italian>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Italian>
+        <Spanish>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Spanish>
+    </TEXT>
 </Civ4GameText>
