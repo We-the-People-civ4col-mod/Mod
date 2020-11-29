@@ -2886,4 +2886,36 @@
         <Italian>I don't have time for this now. The trading company should take care of it itself.</Italian>
         <Spanish>I don't have time for this now. The trading company should take care of it itself.</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT2_1</Tag>
+        <English>All right, relationships are important to me. There are other places for a fort. Tear it down!</English>
+        <French>All right, relationships are important to me. There are other places for a fort. Tear it down!</French>
+        <German>Na schön, die Beziehungen sind mir wichtig. Es gibt noch andere Plätze für ein Fort. Lasst es abreißen!</German>
+        <Italian>All right, relationships are important to me. There are other places for a fort. Tear it down!</Italian>
+        <Spanish>All right, relationships are important to me. There are other places for a fort. Tear it down!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT2_2</Tag>
+        <English>This now threatens our trade interests again. But I am not a brute either. We should share our success with our neighbours.</English>
+        <French>This now threatens our trade interests again. But I am not a brute either. We should share our success with our neighbours.</French>
+        <German>Das bedroht nun wieder unsere Handelsinteressen. Aber ich bin auch kein Unmensch. Wir sollten unsere Nachbarn an unserem Erfolg teilhaben lassen.</German>
+        <Italian>This now threatens our trade interests again. But I am not a brute either. We should share our success with our neighbours.</Italian>
+        <Spanish>This now threatens our trade interests again. But I am not a brute either. We should share our success with our neighbours.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT2_3</Tag>
+        <English>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</English>
+        <French>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</French>
+        <German>Für was halten die sich? Wir sind hier die herrschende Macht. Sollen sie dahingehen, wo der Pfeffer wächst!</German>
+        <Italian>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</Italian>
+        <Spanish>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</Spanish>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENT_TRADEFORT3</Tag>
+        <English>The King is far away and this decision had to be taken locally in the colonies for the good of our nation.</English>
+        <French>The King is far away and this decision had to be taken locally in the colonies for the good of our nation.</French>
+        <German>Der König ist weit weg und diese Entscheidung musste vor Ort in den Kolonien zum Wohl unserer Nation getroffen werden.</German>
+        <Italian>The King is far away and this decision had to be taken locally in the colonies for the good of our nation.</Italian>
+        <Spanish>The King is far away and this decision had to be taken locally in the colonies for the good of our nation.</Spanish>
+    </TEXT>
 </Civ4GameText>

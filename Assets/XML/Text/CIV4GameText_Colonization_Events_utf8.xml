@@ -3415,4 +3415,44 @@
         <Italian>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</Italian>
         <Spanish>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</Spanish>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT2</Tag>
+        <English>A trading fort provokes the minds of neighbouring settlers!</English>
+        <French>A trading fort provokes the minds of neighbouring settlers!</French>
+        <German>Ein Handelsfort erregt die Gemüter benachbarter Siedler!</German>
+        <Italian>A trading fort provokes the minds of neighbouring settlers!</Italian>
+        <Spanish>A trading fort provokes the minds of neighbouring settlers!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_1</Tag>
+        <English>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</English>
+        <French>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</French>
+        <German>Sire, es war vielleicht doch keine so gute Idee, das neue Handelsfort an dieser Grenze zu errichten. Unsere Nachbarn nehmen es uns wirklich übel.</German>
+        <Italian>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</Italian>
+        <Spanish>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_2</Tag>
+        <English>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</English>
+        <French>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</French>
+        <German>Sire, ein Bote ist angekommen. Unsere Nachbarn verlangen, dass wir das neue Handelsfort umgehend wieder abreißen. Sie sind wirklich ungehalten.</German>
+        <Italian>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</Italian>
+        <Spanish>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</Spanish>
+    </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT3</Tag>
+        <English>The Crown expresses its disapproval of your arbitrary actions!</English>
+        <French>The Crown expresses its disapproval of your arbitrary actions!</French>
+        <German>Die Krone bringt ihr Missfallen über Euer eigenmächtiges Handeln zum Ausdruck!</German>
+        <Italian>The Crown expresses its disapproval of your arbitrary actions!</Italian>
+        <Spanish>The Crown expresses its disapproval of your arbitrary actions!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT3</Tag>
+        <English>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</English>
+        <French>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</French>
+        <German>Sire, seiner Majestät ist zu Ohren gekommen, dass ihr der königlichen Handelsgesellschaft das Fort genommen habt, nur um Euch bei Euren Nachbarn lieb Kind zu machen.</German>
+        <Italian>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</Italian>
+        <Spanish>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</Spanish>
+    </TEXT>
 </Civ4GameText>
