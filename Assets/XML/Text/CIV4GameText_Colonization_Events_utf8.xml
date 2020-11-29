@@ -3367,7 +3367,7 @@
         <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with [COLOR_FONT_GOLD]Tobacco[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
         <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Tabak[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RABBLE</Tag>
         <English>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</English>
         <French>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</French>
@@ -3391,7 +3391,7 @@
         <Italian>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Italian>
         <Spanish>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Spanish>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT</Tag>
         <English>A trading company is about to set up a new trading fort in a strategic location!</English>
         <French>A trading company is about to set up a new trading fort in a strategic location!</French>
