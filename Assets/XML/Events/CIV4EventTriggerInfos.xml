@@ -11687,7 +11687,7 @@
             <MinDifficulty>NONE</MinDifficulty>
             <UnitsRequired> 
                 <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
-                </UnitsRequired>
+            </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
