@@ -11577,7 +11577,7 @@
             <PythonCanDoUnit/>
             <PythonCallback/>
         </EventTriggerInfo>
-	    <EventTriggerInfo>
+        <EventTriggerInfo>
             <Type>EVENTTRIGGER_RABBLE</Type>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENTTRIGGER_RABBLE</Text>
@@ -11607,12 +11607,12 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-			<UnitsRequired> 
-				<UnitClass>UNITCLASS_OXCART</UnitClass>
-				<UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
-				<UnitClass>UNITCLASS_TREK</UnitClass>
-				<UnitClass>UNITCLASS_STAGECOACH</UnitClass>
-			</UnitsRequired>
+            <UnitsRequired> 
+                <UnitClass>UNITCLASS_OXCART</UnitClass>
+                <UnitClass>UNITCLASS_WAGON_TRAIN</UnitClass>
+                <UnitClass>UNITCLASS_TREK</UnitClass>
+                <UnitClass>UNITCLASS_STAGECOACH</UnitClass>
+            </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -11628,7 +11628,7 @@
             <FeaturesRequired/>
             <TerrainsRequired/>
             <ImprovementsRequired/>
-			<RoutesRequired/>
+            <RoutesRequired/>
             <Events>
                 <Event>EVENT_RABBLE_1</Event>
                 <Event>EVENT_RABBLE_2</Event>
@@ -11655,7 +11655,7 @@
             <PythonCanDoUnit/>
             <PythonCallback/>
         </EventTriggerInfo>
-	    <EventTriggerInfo>
+        <EventTriggerInfo>
             <Type>EVENTTRIGGER_TRADEFORT</Type>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENTTRIGGER_TRADEFORT</Text>
@@ -11685,9 +11685,9 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-			<UnitsRequired> 
-				<UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
-				</UnitsRequired>
+            <UnitsRequired> 
+                <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
+                </UnitsRequired>
             <iNumUnits>1</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -11703,7 +11703,7 @@
             <FeaturesRequired/>
             <TerrainsRequired/>
             <ImprovementsRequired/>
-			<RoutesRequired/>
+            <RoutesRequired/>
             <Events>
                 <Event>EVENT_TRADEFORT_1</Event>
                 <Event>EVENT_TRADEFORT_2</Event>
@@ -11730,7 +11730,7 @@
             <PythonCanDoUnit/>
             <PythonCallback/>
         </EventTriggerInfo>
-	    <EventTriggerInfo>
+        <EventTriggerInfo>
             <Type>EVENTTRIGGER_TRADEFORT2</Type>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENTTRIGGER_TRADEFORT2</Text>
@@ -11760,7 +11760,7 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-			<UnitsRequired/> 
+            <UnitsRequired/> 
             <iNumUnits>0</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -11779,7 +11779,7 @@
                 <ImprovementType>IMPROVEMENT_FORT</ImprovementType>
                 <ImprovementType>IMPROVEMENT_LARGE_FORT</ImprovementType>
             </ImprovementsRequired>
-			<RoutesRequired/>
+            <RoutesRequired/>
             <Events>
                 <Event>EVENT_TRADEFORT2_1</Event>
                 <Event>EVENT_TRADEFORT2_2</Event>
@@ -11807,8 +11807,8 @@
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
-        </EventTriggerInfo>		
-	    <EventTriggerInfo>
+        </EventTriggerInfo>
+        <EventTriggerInfo>
             <Type>EVENTTRIGGER_TRADEFORT3</Type>
             <WorldNewsTexts>
                 <Text>TXT_KEY_EVENTTRIGGER_TRADEFORT3</Text>
@@ -11834,7 +11834,7 @@
             <iMinOurLandmass>0</iMinOurLandmass>
             <iMaxOurLandmass>-1</iMaxOurLandmass>
             <MinDifficulty>NONE</MinDifficulty>
-			<UnitsRequired/> 
+            <UnitsRequired/> 
             <iNumUnits>0</iNumUnits>
             <iNumUnitsGlobal>0</iNumUnitsGlobal>
             <iUnitDamagedWeight>0</iUnitDamagedWeight>
@@ -11850,7 +11850,7 @@
             <FeaturesRequired/>
             <TerrainsRequired/>
             <ImprovementsRequired/>
-			<RoutesRequired/>
+            <RoutesRequired/>
             <Events>
                 <Event>EVENT_TRADEFORT3</Event>
             </Events>
@@ -11876,6 +11876,6 @@
             <PythonCanDoCity/>
             <PythonCanDoUnit/>
             <PythonCallback/>
-        </EventTriggerInfo>			
+        </EventTriggerInfo>
     </EventTriggerInfos>
 </Civ4EventTriggerInfos>

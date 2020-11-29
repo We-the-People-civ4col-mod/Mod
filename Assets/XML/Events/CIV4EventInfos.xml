@@ -25203,7 +25203,7 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
-	    <EventInfo>
+        <EventInfo>
             <Type>EVENT_TRADEFORT2_1</Type>
             <Description>TXT_KEY_EVENT_TRADEFORT2_1</Description>
             <LocalInfoText/>
@@ -25311,7 +25311,7 @@
             <iAttitudeModifier>0</iAttitudeModifier>
             <iTheirEnemyAttitudeModifier>0</iTheirEnemyAttitudeModifier>
             <iPopulationChange>0</iPopulationChange>
-			<AdditionalEvents/> 
+            <AdditionalEvents/> 
             <EventTimes/>
             <ClearEvents/>
             <PythonCallback/>
