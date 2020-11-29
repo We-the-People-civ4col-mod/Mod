@@ -2926,4 +2926,12 @@
         <Italian>Aye, an excellent spawning ground. No wonder the fish feel at home here. And soon the local fishermen will be doing the same...</Italian>
         <Spanish>Aye, an excellent spawning ground. No wonder the fish feel at home here. And soon the local fishermen will be doing the same...</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_LOST_SHIP_1</Tag>
+        <English>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</English>
+        <French>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</French>
+        <German>Aye, das Schiff ist nicht mehr zu retten. Diese verdammten seichten Gewässer. Dann steuert das Schiff wenigstens in Ufernähe, vielleicht können wir später noch etwas daraus bergen!</German>
+        <Italian>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</Italian>
+        <Spanish>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</Spanish>
+    </TEXT>
 </Civ4GameText>

@@ -3471,4 +3471,20 @@
         <Italian>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</Italian>
         <Spanish>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</Spanish>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_LOST_SHIP_1</Tag>
+        <English>A ship ran aground in poor visibility!</English>
+        <French>A ship ran aground in poor visibility!</French>
+        <German>Ein Schiff ist bei schlechter Sicht auf Grund gelaufen!</German>
+        <Italian>A ship ran aground in poor visibility!</Italian>
+        <Spanish>A ship ran aground in poor visibility!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_LOST_SHIP_1</Tag>
+        <English>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</English>
+        <French>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</French>
+        <German>Captain, das Schiff sinkt! Wir haben schon mehrere Fuß Wasser gemacht, weil mehrere Planken eingedrückt wurden. Der Bootsmann kann das Leck nicht abdichten. Gebt den Befehl "Alle Mann von Bord" oder wir gehen alle drauf!</German>
+        <Italian>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</Italian>
+        <Spanish>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</Spanish>
+    </TEXT>
 </Civ4GameText>
