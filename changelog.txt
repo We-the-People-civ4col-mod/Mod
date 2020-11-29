@@ -1,5 +1,38 @@
 We the People Changelog
 
+Version 2.8.2.0
+WARNING: NOT SAVEGAME COMPATIBLE
+Savegames from previous versions will not load
+
+New Features:
+- colony plot radius is now a map option (no need for switching DLL files)
+
+- Improvements:
+- Added trading post, health and happiness to Domestic Advisor
+- Added "jump to settlement" to native advisor (still needs more work. Triggers on mouse over)
+- Added Europe trade quests
+- Automated ships now explore shipwrecks
+
+Balance:
+- Ships now have a better chance of withdrawing 
+
+Fixes:
+- Fixed number of stored lumber and stone turning red in cases when it should be green
+- Import limits in colonies now work as intended again
+- Various text fixes
+- Various event fixes
+
+AI:
+- Better handling of Settlers
+- Fix: now considers how much is stored in the colonies when buying cargo in Europe
+
+Internal features:
+- New savegame format
+- New "engine" for making pages in the domestic advisor
+- New data structures (EnumMap, InfoArray, caches etc)
+- CivEffects
+- Plenty of xml verification for early automated bug catching
+
 Version 2.8.1
 WARNING: NOT SAVEGAME COMPATIBLE
 Savegames from previous versions will not load
