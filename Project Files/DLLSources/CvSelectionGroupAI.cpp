@@ -981,7 +981,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			if ((pSourceCity != NULL) && ((domainType != DOMAIN_SEA) || (pSourceWaterArea != NULL)))
 			{
 				int iSourceArea = (domainType == DOMAIN_SEA) ? pSourceWaterArea->getID() : pSourceCity->getArea();
-				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()))
+				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) || 
+					domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 				{
 					if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 					{
