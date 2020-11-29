@@ -3455,4 +3455,20 @@
         <Italian>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</Italian>
         <Spanish>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</Spanish>
     </TEXT>
+   <TEXT>
+        <Tag>TXT_KEY_EVENTTRIGGER_RIVER_FISHING_1</Tag>
+        <English>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</English>
+        <French>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</French>
+        <German>Ein Flußschiffer hat einen mächtigen Fischschwarm in einem der großen Ströme entdeckt!</German>
+        <Italian>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</Italian>
+        <Spanish>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_RIVER_FISHING_1</Tag>
+        <English>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</English>
+        <French>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</French>
+        <German>Captain, seht nur! Der Fluss ist so voller Fische, dass sie sogar aus dem Wasser springen. Wenn sie uns nur auch so in die Netze springen, sind wir gemachte Leute!</German>
+        <Italian>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</Italian>
+        <Spanish>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</Spanish>
+    </TEXT>
 </Civ4GameText>
