@@ -295,7 +295,9 @@ source_list: Make_Dir
 
 fastdep:
 	@ECHO Running fastdep
-!IFDEF WITH_GIT
+!IFDEF RELEASE_VERSION
+	@echo $(RELEASE_VERSION)| bin\git_version.pl
+!ELSEIFDEF WITH_GIT
 	@$(GIT) rev-parse HEAD | bin\git_version.pl
 !ELSE
 	@echo Unknown Version| bin\git_version.pl

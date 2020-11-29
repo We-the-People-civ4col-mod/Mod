@@ -23,11 +23,7 @@ my $output = "";
 # generate the file content
 $output .= "#ifndef AUTO_GIT_VERSION_H\n";
 $output .= "#define AUTO_GIT_VERSION_H\n";
-$output .= "#ifdef GIT_VERSION\n";
-$output .= "const char* szGitVersion = \"GIT_VERSION\";\n";
-$output .= "#else\n";
 $output .= "const char* szGitVersion = \"" . $version . "\";\n";
-$output .= "#endif\n";
 $output .= "#endif\n";
 
 # read the existing file
