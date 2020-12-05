@@ -9116,7 +9116,10 @@ CvCity* CvUnit::getEvasionCity() const
 			{
 				if (pLoopCity->getArea() == getArea() || pLoopCity->plot()->isAdjacentToArea(getArea()))
 				{
-					if (pLoopCity->plot()->isFriendlyCity(*this, false))
+					//WTP, ray, Large Rivers - START
+					// Correcting that Ships eveade to Cities without Ocean access
+					// if (pLoopCity->plot()->isFriendlyCity(*this, false))
+					if (pLoopCity->plot()->isFriendlyCity(*this, false) && pLoopCity->plot()->hasAnyOtherWaterPlotsThanJustLargeRivers())
 					{
 						for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
 						{
