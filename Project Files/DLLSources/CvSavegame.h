@@ -237,6 +237,9 @@ public:
 	int ConvertIndex(JITarrayTypes eType, int iIndex) const;
 	int GetXmlSize(JITarrayTypes eType) const;
 
+	template<class T>
+	void Discard();
+
 #ifndef MakefileCompilation
 	// remove IntelliSense errors, which causes bogus red lines in the code
 	// This isn't compiled and won't effect the game at runtime
@@ -635,6 +638,16 @@ template<class T>
 inline void CvSavegameReader::Read(CLinkList<T>& lList)
 {
 	lList.Read(*this);
+}
+
+// read data and discard without using it
+// used for making savegame backward compatible if something used to be saved, but is no longer needed
+// most likely example is if the value is recalculated on load
+template<class T>
+inline void CvSavegameReader::Discard()
+{
+	T buffer = (T)0;
+	Read(buffer);
 }
 
 

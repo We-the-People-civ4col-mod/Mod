@@ -83,9 +83,9 @@ enum SavegameVariableTypes
 	
 	UnitSave_ImmobileTimer,
 	UnitSave_YieldStored,
-	UnitSave_ExtraWorkRate,
+	UnitSave_ExtraWorkRate, // not used
 	UnitSave_UnitTravelTimer,
-	UnitSave_BadCityDefenderCount,
+	UnitSave_BadCityDefenderCount, // not used
 	UnitSave_PostCombatPlotIndex,
 	UnitSave_LbDrounds,
 	UnitSave_AmountForNativeTrade,
@@ -310,9 +310,9 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_ImmobileTimer: reader.Read(m_iImmobileTimer); break;
 		case UnitSave_YieldStored: reader.Read(m_iYieldStored); break;
-		case UnitSave_ExtraWorkRate: reader.Read(m_iExtraWorkRate); break;
+		case UnitSave_ExtraWorkRate: reader.Discard<int>(); break;
 		case UnitSave_UnitTravelTimer: reader.Read(m_iUnitTravelTimer); break;
-		case UnitSave_BadCityDefenderCount: reader.Read(m_iBadCityDefenderCount); break;
+		case UnitSave_BadCityDefenderCount: reader.Discard<int>(); break;
 		case UnitSave_PostCombatPlotIndex: reader.Read(m_iPostCombatPlotIndex); break;
 		case UnitSave_LbDrounds: reader.Read(m_iLbDrounds); break;
 		case UnitSave_AmountForNativeTrade: reader.Read(m_iAmountForNativeTrade); break;
@@ -363,7 +363,10 @@ void CvUnit::read(CvSavegameReader reader)
 	resetPromotions();
 
 	// update profession/promotion cache
-	processProfessionStats(getProfession(), 1);
+	if (getProfession() != NO_PROFESSION)
+	{
+		processProfessionStatsUnsaved(GC.getProfessionInfo(getProfession()), 1);
+	}
 	setPromotions();
 
 
@@ -403,9 +406,7 @@ void CvUnit::write(CvSavegameWriter writer)
 
 	writer.Write(UnitSave_ImmobileTimer, m_iImmobileTimer, defaultImmobileTimer);
 	writer.Write(UnitSave_YieldStored, m_iYieldStored, defaultYieldStored);
-	writer.Write(UnitSave_ExtraWorkRate, m_iExtraWorkRate, defaultExtraWorkRate);
 	writer.Write(UnitSave_UnitTravelTimer, m_iUnitTravelTimer, defaultUnitTravelTimer);
-	writer.Write(UnitSave_BadCityDefenderCount, m_iBadCityDefenderCount, defaultBadCityDefenderCount);
 	writer.Write(UnitSave_PostCombatPlotIndex, m_iPostCombatPlotIndex, defaultPostCombatPlotIndex);
 
 	writer.Write(UnitSave_LbDrounds, m_iLbDrounds, defaultLbDrounds);
