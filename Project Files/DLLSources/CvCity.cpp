@@ -560,29 +560,6 @@ void CvCity::doTurn()
 				}
 			}
 		}
-
-		// Fixing stuck units in colonies - Nightinggale - Start
-		// Once in a while a citizen can lose profession in a colony
-		// This can happen if fishermen are removed by pirates, but apparently also in other cases
-		// Without a profession, the unit is hidden in the colony screen, hence no way for the player to change the profession
-		// The code here will kick out such units, which will make them available to the player again
-		// Doesn't fix the cause of the problem, but this way the player will regain lost units during new turn event
-		std::vector<CvUnit*> stuckUnits;
-		for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
-		{
-			CvUnit* pUnit = m_aPopulationUnits[i];
-
-			if (pUnit->getProfession() == NO_PROFESSION)
-			{
-				stuckUnits.push_back(pUnit);
-			}
-		}
-
-		for (unsigned int i = 0; i < stuckUnits.size(); ++i)
-		{
-			removePopulationUnit(stuckUnits[i], false, NO_PROFESSION);
-		}
-		// Fixing stuck units in colonies - Nightinggale - End
 	}
 
 	if (getCultureUpdateTimer() > 0)
@@ -606,6 +583,38 @@ void CvCity::doTurn()
 	{
 		m_aPopulationUnits[i]->doTurn();
 	}
+
+	// Fixing stuck units in colonies - Nightinggale - Start
+	// Once in a while a citizen can lose profession in a colony
+	// This can happen if fishermen are removed by pirates, but apparently also in other cases
+	// Without a profession, the unit is hidden in the colony screen, hence no way for the player to change the profession
+	// The code here will kick out such units, which will make them available to the player again
+	// Doesn't fix the cause of the problem, but this way the player will regain lost units during new turn event
+	if (!isOccupation())
+	{
+		std::vector<CvUnit*> stuckUnits;
+		for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+		{
+			CvUnit* pUnit = m_aPopulationUnits[i];
+
+			if (pUnit->getProfession() == NO_PROFESSION)
+			{
+				stuckUnits.push_back(pUnit);
+			}
+		}
+
+		if (stuckUnits.size() > 0)
+		{
+			FAssertMsg(false, "Citizen in colony stuck with NO_PROFESSION");
+			ProfessionTypes eDefaultProfession = (ProfessionTypes)GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession();
+
+			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
+			{
+				removePopulationUnit(stuckUnits[i], false, eDefaultProfession);
+			}
+		}
+	}
+	// Fixing stuck units in colonies - Nightinggale - End
 
 	// ONEVENT - Do turn
 	gDLL->getEventReporterIFace()->cityDoTurn(this, getOwnerINLINE());
