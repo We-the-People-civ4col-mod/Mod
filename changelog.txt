@@ -1,5 +1,11 @@
 We the People Changelog
 
+Version (unreleased)
+
+Fixes:
+- Pioneers will now calculate correct work rate on load (not stacking cache on each load)
+- Units stuck in colonies with NO_PROFESSION will now be kicked out to make then reachable for the player again
+
 Version 2.8.2.0
 WARNING: NOT SAVEGAME COMPATIBLE
 Savegames from previous versions will not load
