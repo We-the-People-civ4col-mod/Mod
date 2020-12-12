@@ -2171,7 +2171,8 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 	if (eRoute != NO_ROUTE && !GC.getRouteInfo(eRoute).isGraphicalOnly()) //WTP, Nightinggale, Large Rivers - START
 	{
-		if (isPeak())
+		//WTP, ray, removed useless and confusing logic to prevent Roads for Peak being surrounded by Peaks
+		/*if (isPeak())
 		{
 			bool bFoundNonPeak = false;
 			for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
@@ -2190,7 +2191,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			{
 				return false;
 			}
-		}
+		}*/
 
 		if (getRouteType() != NO_ROUTE)
 		{
