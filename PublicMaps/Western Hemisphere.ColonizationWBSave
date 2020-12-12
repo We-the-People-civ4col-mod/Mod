@@ -4351,6 +4351,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=45
+	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=2,4,
@@ -7728,6 +7729,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=49
+	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=2,
@@ -15775,6 +15777,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=16
+	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=6,
@@ -15830,6 +15833,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=24
+	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=5,
@@ -18249,6 +18253,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=22
+	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=6,
