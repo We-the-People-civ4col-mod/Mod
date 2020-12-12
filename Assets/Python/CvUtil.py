@@ -154,7 +154,7 @@ def pyPrint(stuff):
 
 def pyAssert(cond, msg):
 	if (cond==False):
-		sys.stderr.write(msg)
+		sys.stderr.write(string(msg))
 	assert(cond, msg)
 
 def getScoreComponent(iRawScore, iInitial, iMax, iFactor, bExponential, bFinal, bVictory):
