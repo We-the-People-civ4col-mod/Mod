@@ -1,10 +1,12 @@
 We the People Changelog
 
-Version (unreleased)
-
+Version 2.8.2.1
 Fixes:
 - Pioneers will now calculate correct work rate on load (not stacking cache on each load)
 - Units stuck in colonies with NO_PROFESSION will now be kicked out to make then reachable for the player again
+- Changing from a military profession will now always remove the free promotions from that profession*
+
+* the fix prevents new units from getting corrupted promotion cache, but units already affected in 2.8.2.0 savegames will not be fixed.
 
 Version 2.8.2.0
 WARNING: NOT SAVEGAME COMPATIBLE
