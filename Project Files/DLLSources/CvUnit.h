@@ -546,9 +546,6 @@ public:
 	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL) const;
 	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity);
 	void processProfessionStats(ProfessionTypes eProfession, int iChange);
-private:
-	void processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange);
-public:
 	int getProfessionChangeYieldRequired(ProfessionTypes eProfession, YieldTypes eYield) const;
 	int getEuropeProfessionChangeCost(ProfessionTypes eProfession) const;
 
