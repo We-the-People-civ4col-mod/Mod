@@ -41,7 +41,7 @@ push(@paths, substr($ProgramFiles, 0, -6)) if substr($ProgramFiles, -5) eq "(x86
 process("TOOLKIT", "\\Microsoft Visual C++ Toolkit 2003");
 process("PSDK", "\\Microsoft SDKs\\Windows\\v6.0");
 process("GIT", "\\SmartGit\\git\\bin\\git.exe");
-process("GIT", "\\Git\\git-bash.exe");
+process("GIT", "\\Git\\cmd\\git.exe");
 
 exit if $updated == 0;
 
