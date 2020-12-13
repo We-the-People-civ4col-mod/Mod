@@ -11276,8 +11276,7 @@ void CvUnit::processProfessionStats(ProfessionTypes eProfession, int iChange)
 		CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 		if (eProfession != NO_PROFESSION)
 		{
-			CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-			setBaseCombatStr(baseCombatStr() + iChange * (kProfession.getCombatChange() + kOwner.getProfessionCombatChange(eProfession)));
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 			processProfessionStatsUnsaved(kProfession, iChange);
 
 			for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); iPromotion++)
@@ -11296,6 +11295,12 @@ void CvUnit::processProfessionStats(ProfessionTypes eProfession, int iChange)
 void CvUnit::processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange)
 {
 	FAssert(iChange != 0);
+
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	ProfessionTypes eProfession = kProfession.getIndex();
+
+	setBaseCombatStr(baseCombatStr() + iChange * (kProfession.getCombatChange() + kOwner.getProfessionCombatChange(eProfession)));
+
 	changeExtraMoves(iChange * kProfession.getMovesChange());
 	changeExtraWorkRate(iChange *  kProfession.getWorkRate());
 
