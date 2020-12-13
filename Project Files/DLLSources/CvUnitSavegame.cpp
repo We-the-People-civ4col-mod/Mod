@@ -365,7 +365,7 @@ void CvUnit::read(CvSavegameReader reader)
 	// update profession/promotion cache
 	if (getProfession() != NO_PROFESSION)
 	{
-		processProfessionStatsUnsaved(GC.getProfessionInfo(getProfession()), 1);
+		processProfessionStats(getProfession(), 1);
 	}
 	setPromotions();
 

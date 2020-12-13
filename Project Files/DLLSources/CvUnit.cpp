@@ -11278,8 +11278,17 @@ void CvUnit::processProfessionStats(ProfessionTypes eProfession, int iChange)
 		{
 			CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 			setBaseCombatStr(baseCombatStr() + iChange * (kProfession.getCombatChange() + kOwner.getProfessionCombatChange(eProfession)));
-			processProfessionStatsUnsaved(kProfession, iChange);
+			changeExtraMoves(iChange * kProfession.getMovesChange());
+			changeExtraWorkRate(iChange * kProfession.getWorkRate());
 
+			if (!kProfession.isCityDefender())
+			{
+				changeBadCityDefenderCount(iChange);
+			}
+			if (kProfession.isUnarmed())
+			{
+				changeUnarmedCount(iChange);
+			}
 			for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); iPromotion++)
 			{
 				if (kProfession.isFreePromotion(iPromotion))
@@ -11292,23 +11301,6 @@ void CvUnit::processProfessionStats(ProfessionTypes eProfession, int iChange)
 		processUnitCombatType(getProfessionUnitCombatType(eProfession), iChange);
 	}
 }
-
-void CvUnit::processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange)
-{
-	FAssert(iChange != 0);
-	changeExtraMoves(iChange * kProfession.getMovesChange());
-	changeExtraWorkRate(iChange *  kProfession.getWorkRate());
-
-	if (!kProfession.isCityDefender())
-	{
-		changeBadCityDefenderCount(iChange);
-	}
-	if (kProfession.isUnarmed())
-	{
-		changeUnarmedCount(iChange);
-	}
-}
-
 
 int CvUnit::getProfessionChangeYieldRequired(ProfessionTypes eProfession, YieldTypes eYield) const
 {
