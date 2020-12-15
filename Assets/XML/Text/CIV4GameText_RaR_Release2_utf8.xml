@@ -87,11 +87,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
-        <English>%s1: %D2%F3 (with Resource [LINK=literal]%s4[\LINK])</English>
-        <French>%s1 :  %D2%F3 (avec Resource [LINK=literal]%s4[\LINK])</French>
-        <German>%s1: %D2%F3 (mit Bonus Ressource [LINK=literal]%s4[\LINK])</German>
-        <Italian>%s1: %D2%F3 (con Resource [LINK=literal]%s4[\LINK])</Italian>
-        <Spanish>%s1: %D2 %F3 (con Resource [LINK=literal]%s4[\LINK])</Spanish>
+        <English>%s1: %D2%F3 (with Resource [LINK=%s5]%s4[\LINK])</English>
+        <French>%s1 :  %D2%F3 (avec Resource [LINK=%s5]%s4[\LINK])</French>
+        <German>%s1: %D2%F3 (mit Bonus Ressource [LINK=%s5]%s4[\LINK])</German>
+        <Italian>%s1: %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
+        <Spanish>%s1: %D2 %F3 (con Resource [LINK=%s5]%s4[\LINK])</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HEALTH_CITY</Tag>
