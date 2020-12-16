@@ -86,6 +86,10 @@ CUSTOM_CFLAGS  =
 CUSTOM_LDFLAGS =
 
 
+# Perl binary setup
+# Allows overwriting in Makefile.settings
+PERL=perl
+
 
 !IF [IF NOT EXIST Makefile.settings EXIT 1] != 0
 !IF [ECHO CUSTOM_CFLAGS = > Makefile.settings]
@@ -270,8 +274,8 @@ clean:
 
 build: $(Target_BIN)
 !IFDEF YOURMOD
-	@bin\copy.pl "$(Target_BIN)" "$(YOURMOD)\Assets\." verbose
-	@bin\copy.pl "$(Target_PDB)" "$(YOURMOD)\Assets\."
+	@$(PERL) bin\copy.pl "$(Target_BIN)" "$(YOURMOD)\Assets\." verbose
+	@$(PERL) bin\copy.pl "$(Target_PDB)" "$(YOURMOD)\Assets\."
 !IF "$(YOURMOD)" != ".."
 	-xcopy "..\Assets\*" "$(YOURMOD)\Assets\*" /e /y /f /d
 	-xcopy "..\PublicMaps\*" "$(YOURMOD)\PublicMaps\*" /e /y /f /d
@@ -290,17 +294,17 @@ source_list: Make_Dir
 	@ECHO OBJS= \>> $(FILE_DEPENDS)
     @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.cpp') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
-	@perl bin\xml_enum_gen.pl
-	@bin\Makefile_setup.pl "$(PROGRAMFILES)"
+	@$(PERL) bin\xml_enum_gen.pl
+	@$(PERL) bin\Makefile_setup.pl "$(PROGRAMFILES)"
 
 fastdep:
 	@ECHO Running fastdep
 !IFDEF RELEASE_VERSION
-	@echo $(RELEASE_VERSION)| bin\git_version.pl
+	@echo $(RELEASE_VERSION)| $(PERL) bin\git_version.pl
 !ELSEIFDEF WITH_GIT
-	@$(GIT) rev-parse HEAD | bin\git_version.pl
+	@$(GIT) rev-parse HEAD | $(PERL) bin\git_version.pl
 !ELSE
-	@echo Unknown Version| bin\git_version.pl
+	@echo Unknown Version| $(PERL) bin\git_version.pl
 !ENDIF
 	@$(FD) --objectextension=pch -q --removepath=$(SOURCE_DIR)\ -O $(TEMP_TARGET_FILES) $(SOURCE_DIR)\CvGameCoreDLL.cpp >> $(FILE_DEPENDS)
     @$(FD) --objectextension=obj -q --removepath=$(SOURCE_DIR)\ -O $(TEMP_TARGET_FILES) $(SOURCES) >> $(FILE_DEPENDS)
