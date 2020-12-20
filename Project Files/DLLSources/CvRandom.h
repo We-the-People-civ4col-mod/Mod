@@ -13,6 +13,9 @@ public:
 	DllExport CvRandom();
 	DllExport virtual ~CvRandom();
 
+	bool isSorenRand() const;
+	void setSorenRand();
+
 	DllExport void init(unsigned long ulSeed);
 	void uninit();
 	void reset(unsigned long ulSeed = 0);
@@ -37,6 +40,9 @@ public:
 protected:
 
 	unsigned long m_ulRandomSeed;
+#ifdef WITH_RANDOM_LOGGING
+	bool m_bIsSorenRand;
+#endif
 };
 
 #endif

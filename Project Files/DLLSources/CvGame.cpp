@@ -36,6 +36,8 @@
 
 CvGame::CvGame()
 {
+	m_sorenRand.setSorenRand();
+
 	m_pReplayInfo = NULL;
 
 	// PatchMod: Victorys START
