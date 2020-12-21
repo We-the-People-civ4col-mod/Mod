@@ -25,6 +25,12 @@ class NativeAdvisor:
 		self.tradeStationText = u" %c" % self.tradeStationChar
 		self.dirty = True
 		
+		# store selected city as the plot
+		# a plot won't vanish and error handling on plot.isCity is easer than a dead city reference
+		self.settlementPlot = -1
+		self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON = WidgetTypes.NUM_WIDGET_TYPES
+		self.JumpToSettlementButtonName = "NativeAdvisorJumpToSettlementButton"
+		
 		self.tableManager = DomesticAdvisorTable.DomesticAdvisorTable(parent, self.screenName)
 		
 	def getKnownSettlementList(self):
@@ -51,10 +57,27 @@ class NativeAdvisor:
 				knownList.append(pLoopCity)
 		return knownList
 		
+	def setSettlementPlot(self, iPlotID):
+		self.settlementPlot = iPlotID
+		self.drawJumpToSettlementButton()
+	
+	def drawJumpToSettlementButton(self):
+		if self.settlementPlot != -1:
+			plot = gc.getMap().plotByIndex(self.settlementPlot)
+			if plot.isCity():
+				city = plot.getPlotCity()
+				self.tableManager.getScreen().setText(self.JumpToSettlementButtonName, "Background", u"<font=4>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT_CITY", (city.getName(), ))  + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 10 + self.parent.iButtonSize, 32, 0, FontTypes.TITLE_FONT, self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON, self.settlementPlot, -1)
+				return
+		# no city on plot
+		self.settlementPlot = -1
+		self.tableManager.getScreen().hide(self.JumpToSettlementButtonName)
+		
 	def draw(self):
 		if not self.dirty and False:
 			self.tableManager.show()
 			return
+			
+		self.drawJumpToSettlementButton()
 			
 		self.dirty = False
 		citylist = self.getKnownSettlementList()		
@@ -113,18 +136,27 @@ class NativeAdvisor:
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
 		
 		if (eWidgetType == WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT):
-			self.parent.getScreen().hideScreen()
-			CyCamera().JustLookAtPlot(gc.getMap().plotByIndex(iData1))
+			self.setSettlementPlot(iData1)
 			return ""
+			 
+		if eWidgetType == self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON:
+			return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT", ())
 		
 		return None
 	
 	def handleInput (self, inputClass):
+	
+		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
+			if (inputClass.getButtonType() == self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON):
+				self.parent.getScreen().hideScreen()
+				CyCamera().JustLookAtPlot(gc.getMap().plotByIndex(inputClass.getData1()))
+				return 0
 		
 		return -1
 	
 	def hide(self):
 		self.tableManager.hide()
+		self.tableManager.getScreen().hide(self.JumpToSettlementButtonName)
 		
 	def setDirty(self):
 		self.dirty = True

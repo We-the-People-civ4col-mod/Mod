@@ -986,8 +986,6 @@ class CvDomesticAdvisor:
 				return "DEBUG: GameFont"
 		if eWidgetType == WidgetTypes.WIDGET_MISSION_CHAR:
 			return gc.getPlayer(iData1).getCivilizationAdjective(0)
-		if eWidgetType == WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT:
-			return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT", ())
 			
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 	def getGeneralStateColumnSize(self, iNum):
