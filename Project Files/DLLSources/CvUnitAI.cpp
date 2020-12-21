@@ -8092,9 +8092,17 @@ bool CvUnitAI::AI_betterJob()
 		return false;
 	}
 
+	const ProfessionTypes eOriginalProfession = getProfession();
+
+	// Check if the unit can have its original profession assigned when leaving the city
+	// This prevents the crash that was reported in issue #394
+	if (!canHaveProfession(eOriginalProfession, false, plot(), /*bForceCheck*/true))
+	{	FAssertMsg(false, "Illegal Profession");
+		return false;
+	}
+
 	pCity->AI_setWorkforceHack(true);
-	
-	ProfessionTypes eOriginalProfession = getProfession();
+
 	std::vector<CvUnit*> units;
 	int iOriginalMovePriority = AI_getMovePriority();
 	UnitAITypes eOriginalAI = AI_getUnitAIType();

@@ -543,7 +543,7 @@ public:
 
 
 	void setProfession(ProfessionTypes eProfession, bool bForce = false);
-	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL) const;
+	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL, bool bForceCheck = false) const;
 	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity);
 	void processProfessionStats(ProfessionTypes eProfession, int iChange);
 private:

@@ -10922,14 +10922,14 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 	}
 }
 
-bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot) const
+bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot, bool bForceCheck) const
 {
 	if (NO_PROFESSION == eProfession)
 	{
 		return true;
 	}
 	
-	if (eProfession == getProfession())
+	if (!bForceCheck && eProfession == getProfession())
 	{
 		return true;
 	}
