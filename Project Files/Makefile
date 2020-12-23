@@ -261,7 +261,7 @@ LDFLAGS = $(LDFLAGS) $(CONFIG_DLFLAGS)
 #### Targets ####
 #################
 
-.PHONY: all clean build precompile Make_Dir fastdep source_list
+.PHONY: all clean build precompile Make_Dir fastdep source_list test
 
 all: Precompile build
 
@@ -323,6 +323,9 @@ Target_unfinished:
 $(Target_BIN): $(OBJS) $(Target_RESOURCE)
 	@ECHO.Linking DLL
 	@$(LD) /out:$(Target_BIN) $(LDFLAGS) $(LIBS) $(OBJS) $(Target_RESOURCE)
+
+# test only compiles the files and skips linking
+test: $(OBJS) $(Target_RESOURCE)
 
 {$(SOURCE_DIR)\.}.cpp{$(TEMP_TARGET_FILES)\.}.obj:
 	@ECHO.>"$*.obj.@"
