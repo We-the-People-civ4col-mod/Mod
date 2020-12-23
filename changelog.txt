@@ -1,5 +1,21 @@
 We the People Changelog
 
+Version 2.8.2.2
+
+Improvements:
+- "Jump to settlement" in native advisor now works by clicking a button rather than mouse over (no more accidental jumping/closing)
+
+Fixes:
+- Fixed severe slowdown related to exploring AI and ship loading
+- Hot seat multiplayer will no longer crash during the diplomacy screen
+- #394 units with invalid professions will no longer crash the game
+- Happiness cooldown counter (turns since last happy event) will not longer become corrupted
+- Fixed network OOS related to happiness cooldown counter
+- Colopedia improvement page now always links to bonuses as intended (no more units)
+
+Old savegames still work, but time since last happiness event in colonies will be reset to get rid of corrupted counters.
+Not a major issue because it only happens while upgrading.
+
 Version 2.8.2.1
 Fixes:
 - Pioneers will now calculate correct work rate on load (not stacking cache on each load)
