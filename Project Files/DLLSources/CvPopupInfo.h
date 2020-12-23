@@ -23,10 +23,10 @@ public:
 	DllExport virtual ~CvPopupInfo();
 
 	DllExport void read(FDataStreamBase& stream);
-	DllExport void write(FDataStreamBase& stream);
+	DllExport void write(FDataStreamBase& stream) const;
 	
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	void resetSavedData();
 

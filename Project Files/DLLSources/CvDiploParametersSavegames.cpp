@@ -124,7 +124,7 @@ void CvDiploParameters::read(CvSavegameReader reader)
 	
 }
 
-void CvDiploParameters::write(CvSavegameWriter writer)
+void CvDiploParameters::write(CvSavegameWriter writer) const
 {
 	writer.AssignClassType(SAVEGAME_CLASS_DIPLOPARAMETERS);
 

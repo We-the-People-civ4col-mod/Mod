@@ -628,7 +628,7 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, BoolArray& baArray)
 	}
 }
 
-void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array)
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const PlayerBoolArrayBase& array)
 {
 	if (array.hasContent())
 	{
@@ -637,7 +637,7 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerBoolArrayBase& a
 	}
 }
 
-void CvSavegameWriter::Write(SavegameVariableTypes eType, IDInfo& idInfo)
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const IDInfo& idInfo)
 {
 	// get hold of the default values
 	IDInfo temp;
@@ -650,13 +650,13 @@ void CvSavegameWriter::Write(SavegameVariableTypes eType, IDInfo& idInfo)
 		idInfo.write(*this);
 	}
 }
-void CvSavegameWriter::Write(SavegameVariableTypes eType, CvTurnScoreMap& Map)
+void CvSavegameWriter::Write(SavegameVariableTypes eType, const CvTurnScoreMap& Map)
 {
 	int iSize=Map.size();
 	if(iSize>0){
 		Write(eType);
 		Write(iSize);
-		for (CvTurnScoreMap::iterator it = Map.begin(); it != Map.end(); ++it)
+		for (CvTurnScoreMap::const_iterator it = Map.begin(); it != Map.end(); ++it)
 		{
 			Write(it->first);
 			Write(it->second);

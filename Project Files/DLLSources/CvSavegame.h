@@ -307,25 +307,25 @@ public:
 	void Write(JustInTimeArray<T>& jitArray);
 
 	template<class T>
-	void Write(std::vector<T>& vec);
+	void Write(const std::vector<T>& vec);
 
 	template<class T>
-	void Write(SavegameVariableTypes eType, std::vector<T>& vec);
+	void Write(SavegameVariableTypes eType, const std::vector<T>& vec);
 
 	template<class T>
-	void Write(std::vector<T*>& vec);
+	void Write(const std::vector<T*>& vec);
 
 	template<class T>
-	void Write(std::list<T>& vec);
+	void Write(const std::list<T>& vec);
 
 	template<class T>
-	void Write(SavegameVariableTypes eType, std::list<T>& vec);
+	void Write(SavegameVariableTypes eType, const std::list<T>& vec);
 
 	template<class T>
-	void Write(std::list<T*>& vec);
+	void Write(const std::list<T*>& vec);
 
 	template<class T1,class T2>
-	void Write(std::pair<T1,T2>& pair);
+	void Write(const std::pair<T1,T2>& pair);
 	
 	template<class T>
 	void Write(SavegameVariableTypes eType, FFreeListTrashArray<T>& array);
@@ -334,7 +334,7 @@ public:
 	void Write(SavegameVariableTypes eType, CvIdVector<T>& vec);
 
 	template<class T>
-	void Write(SavegameVariableTypes eType, std::vector<T*>& vec);
+	void Write(SavegameVariableTypes eType, const std::vector<T*>& vec);
 
 	void Write(SavegameVariableTypes eType);
 	void Write(SavegameVariableTypes eType, const CvString  & szString);
@@ -342,14 +342,14 @@ public:
 	void Write(SavegameVariableTypes eType, const char      * szString);
 	void Write(SavegameVariableTypes eType, const wchar     * szString);
 	void Write(SavegameVariableTypes eType, BoolArray& baArray);
-	void Write(SavegameVariableTypes eType, PlayerBoolArrayBase& array);
-	void Write(SavegameVariableTypes eType, IDInfo& idInfo);
-	void Write(SavegameVariableTypes eType, CvTurnScoreMap& idInfo);
+	void Write(SavegameVariableTypes eType, const PlayerBoolArrayBase& array);
+	void Write(SavegameVariableTypes eType, const IDInfo& idInfo);
+	void Write(SavegameVariableTypes eType, const CvTurnScoreMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvEventMap& idInfo);
 	void Write(SavegameVariableTypes eType, CvRandom& rand);
 
 	template<class T>
-	void Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array);
+	void Write(SavegameVariableTypes eType, const PlayerArrayBase<T>& array);
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, T eVariable, T eDefault);
@@ -370,7 +370,7 @@ public:
 	void Write(SavegameVariableTypes eType, EnumMap2DDefault<T1, T2, T3, T4>& em);
 
 	template<class T>
-	void Write(SavegameVariableTypes eType, CLinkList<T>& lList);
+	void Write(SavegameVariableTypes eType, const CLinkList<T>& lList);
 
 	// Add all enums used in savegames (single byte)
 	void Write(ActivityTypes          variable) { WriteEnum(variable); }
@@ -674,18 +674,18 @@ inline void CvSavegameWriter::Write(JustInTimeArray<T>& jitArray)
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(std::vector<T>& vec)
+inline void CvSavegameWriter::Write(const std::vector<T>& vec)
 {
 	unsigned short iLength = vec.size();
 	Write(iLength);
-	for (std::vector<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	for (std::vector<T>::const_iterator it = vec.begin(); it != vec.end(); ++it)
 	{
-		Write(*it);
+		Write((T)*it);
 	}
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T>& vec)
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const std::vector<T>& vec)
 {
 	if (vec.size() > 0)
 	{
@@ -695,38 +695,38 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T>&
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(std::vector<T*>& vec)
+inline void CvSavegameWriter::Write(const std::vector<T*>& vec)
 {
 	unsigned short iLength = vec.size();
 	Write(iLength);
-	for (std::vector<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	for (std::vector<T*>::const_iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		Write(**it);
 	}
 }
 
 template<>
-inline void CvSavegameWriter::Write(std::vector<CvUnit*>& vec) {
+inline void CvSavegameWriter::Write(const std::vector<CvUnit*>& vec) {
 	unsigned short iLength = vec.size();
 	Write(iLength);
-	for (std::vector<CvUnit*>::iterator it = vec.begin(); it != vec.end(); ++it) {
+	for (std::vector<CvUnit*>::const_iterator it = vec.begin(); it != vec.end(); ++it) {
 		Write(static_cast <CvUnitAI&>(**it));
 	}
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(std::list<T>& vec)
+inline void CvSavegameWriter::Write(const std::list<T>& vec)
 {
 	unsigned short iLength = vec.size();
 	Write(iLength);
-	for (std::list<T>::iterator it = vec.begin(); it != vec.end(); ++it)
+	for (std::list<T>::const_iterator it = vec.begin(); it != vec.end(); ++it)
 	{
-		Write(*it);
+		Write((T)*it);
 	}
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::list<T>& vec)
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const std::list<T>& vec)
 {
 	if (vec.size() > 0)
 	{
@@ -736,18 +736,18 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::list<T>& v
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(std::list<T*>& vec)
+inline void CvSavegameWriter::Write(const std::list<T*>& vec)
 {
 	unsigned short iLength = vec.size();
 	Write(iLength);
-	for (std::list<T*>::iterator it = vec.begin(); it != vec.end(); ++it)
+	for (std::list<T*>::const_iterator it = vec.begin(); it != vec.end(); ++it)
 	{
 		Write(**it);
 	}
 }
 
 template<class T1,class T2>
-	void CvSavegameWriter::Write(std::pair<T1,T2>& pair)
+	void CvSavegameWriter::Write(const std::pair<T1,T2>& pair)
 	{
 		Write(pair.first);
 		Write(pair.second);
@@ -774,7 +774,7 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, CvIdVector<T>& 
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T*>& vec)
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const std::vector<T*>& vec)
 {
 	if (vec.size() > 0)
 	{
@@ -784,7 +784,7 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, std::vector<T*>
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, PlayerArrayBase<T>& array)
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const PlayerArrayBase<T>& array)
 {
 	if (array.hasContent())
 	{
@@ -846,7 +846,7 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, EnumMap2DDefaul
 }
 
 template<class T>
-inline void CvSavegameWriter::Write(SavegameVariableTypes eType, CLinkList<T>& lList)
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const CLinkList<T>& lList)
 {
 	if (lList.getLength()>0)
 	{

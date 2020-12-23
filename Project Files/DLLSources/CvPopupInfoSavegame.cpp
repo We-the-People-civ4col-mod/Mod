@@ -122,7 +122,7 @@ void CvPopupInfo::read(CvSavegameReader reader)
 	
 }
 
-void CvPopupInfo::write(CvSavegameWriter writer)
+void CvPopupInfo::write(CvSavegameWriter writer) const
 {
 	writer.AssignClassType(SAVEGAME_CLASS_POPUPINFO);
 

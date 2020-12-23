@@ -197,7 +197,7 @@ void CvPopupInfo::read(FDataStreamBase& stream)
 	read(reader);
 }
 
-void CvPopupInfo::write(FDataStreamBase& stream)
+void CvPopupInfo::write(FDataStreamBase& stream) const
 {
 	CvSavegameWriterBase writerbase(&stream);
 	CvSavegameWriter writer(writerbase);

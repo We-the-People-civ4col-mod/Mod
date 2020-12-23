@@ -216,7 +216,7 @@ void CvDiploParameters::read(FDataStreamBase& stream)
 	read(reader);
 }
 
-void CvDiploParameters::write(FDataStreamBase& stream)
+void CvDiploParameters::write(FDataStreamBase& stream) const
 {
 	CvSavegameWriterBase writerbase(&stream);
 	CvSavegameWriter writer(writerbase);

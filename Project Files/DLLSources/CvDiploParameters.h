@@ -47,10 +47,10 @@ public:
 	DllExport void setCity(const IDInfo& kCity);
 
 	DllExport void read(FDataStreamBase& stream);
-	DllExport void write(FDataStreamBase& stream);
+	DllExport void write(FDataStreamBase& stream) const;
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	void resetSavedData();
 
