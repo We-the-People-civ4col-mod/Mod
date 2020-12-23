@@ -7000,6 +7000,7 @@ bool CvUnitAI::AI_deliverUnits()
 		}
 	}
 	
+	/*
 	if (iBestValue > 0)
 	{
 		// TAC - AI Improved Naval AI - koma13 - START
@@ -7019,6 +7020,27 @@ bool CvUnitAI::AI_deliverUnits()
 		return true;
 	}
 	return false;
+	*/
+	if (iBestValue > 0)
+	{
+		if (atPlot(pBestPlot))
+		{
+			if (AI_wakeCargo(NO_UNITAI, AI_getMovePriority() + 1))
+			{
+				// Need to yield here to let the cargo take its turn
+				return true;
+			}
+			return false;
+		}
+		else
+		{
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, NO_MISSIONAI, pBestDestination);
+			return true;
+		}
+	}
+	return false;
+
+
 }
 // TAC - AI Improved Naval AI - koma13 - START
 CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger)
@@ -11921,7 +11943,7 @@ bool CvUnitAI::AI_exploreFromShip(int iMaxPath)
 			}
 		}
 	}
-	
+	/*
 	if (pBestPlot != NULL)
 	{
 		if (plotDistance(getX_INLINE(), getY_INLINE(), pBestExplorePlot->getX_INLINE(), pBestExplorePlot->getY_INLINE()) == 1)
@@ -11936,6 +11958,15 @@ bool CvUnitAI::AI_exploreFromShip(int iMaxPath)
 			return true;
 		}
 	}
+	*/
+
+	if (pBestPlot != NULL)
+	{
+		// Unconditionally move us towards the best plot
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestExplorePlot->getX_INLINE(), pBestExplorePlot->getY_INLINE(), 0, false, false, MISSIONAI_EXPLORE, pBestExplorePlot);
+		return true;
+	}
+
 	return false;
 }
 
