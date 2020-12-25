@@ -45,9 +45,9 @@ class CvArtInfoInterface;
 public: \
 	friend class Cv##name##ArtInfoItem; \
 	DllExport CvArtInfo##name##* get##name##ArtInfo(const char *szArtDefineTag) const; \
-	DllExport int getNum##name##ArtInfos() { return (int)m_pa##name##ArtInfo.size(); } \
-	DllExport std::vector<CvArtInfo##name##*>& get##name##ArtInfo() { return m_pa##name##ArtInfo; } \
-	DllExport CvArtInfo##name##& get##name##ArtInfo(int i); \
+	int getNum##name##ArtInfos() { return (int)m_pa##name##ArtInfo.size(); } \
+	std::vector<CvArtInfo##name##*>& get##name##ArtInfo() { return m_pa##name##ArtInfo; } \
+	CvArtInfo##name##& get##name##ArtInfo(int i); \
 private: \
 	typedef std::map<const char* /* index */,CvArtInfo##name##* /*value */, ltstr> ArtInfo##name##MapType; \
 	ArtInfo##name##MapType* m_map##name##ArtInfos; \
@@ -68,8 +68,8 @@ public:
 	// singleton accessor
 	DllExport static CvArtFileMgr& GetInstance();
 
-	DllExport CvArtFileMgr() {};
-	DllExport virtual ~CvArtFileMgr() {};
+	CvArtFileMgr() {};
+	virtual ~CvArtFileMgr() {};
 
 	DllExport void Init();
 	DllExport void DeInit();
