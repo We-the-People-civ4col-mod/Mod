@@ -93,9 +93,9 @@ public:
 	DllExport CvWString getName() const;
 
 	DllExport int getNumMembers() const;
-	DllExport void changeNumMembers(int iChange);
+	void changeNumMembers(int iChange);
 	DllExport int getAliveCount() const;
-	DllExport int isAlive() const;
+	int isAlive() const;
 	void changeAliveCount(int iChange);
 	int getEverAliveCount() const;
 	int isEverAlive() const;
@@ -117,7 +117,7 @@ public:
 	void changeGoldTradingCount(int iChange);
 
 	int getOpenBordersTradingCount() const;
-	DllExport bool isOpenBordersTrading() const;
+	bool isOpenBordersTrading() const;
 	void changeOpenBordersTradingCount(int iChange);
 
 	int getDefensivePactTradingCount() const;
@@ -133,18 +133,18 @@ public:
 
 	TeamTypes getID() const;
 
-	DllExport bool isHasMet(TeamTypes eIndex) const;
+	bool isHasMet(TeamTypes eIndex) const;
 	void makeHasMet(TeamTypes eIndex, bool bNewDiplo);
 	DllExport bool isAtWar(TeamTypes eIndex) const;
-	DllExport void setAtWar(TeamTypes eIndex, bool bNewValue);
+	void setAtWar(TeamTypes eIndex, bool bNewValue);
 	bool isPermanentWarPeace(TeamTypes eIndex) const;
 	void setPermanentWarPeace(TeamTypes eIndex, bool bNewValue);
 
-	DllExport bool isOpenBorders(TeamTypes eIndex) const;
+	bool isOpenBorders(TeamTypes eIndex) const;
 	void setOpenBorders(TeamTypes eIndex, bool bNewValue);
-	DllExport bool isDefensivePact(TeamTypes eIndex) const;
+	bool isDefensivePact(TeamTypes eIndex) const;
 	void setDefensivePact(TeamTypes eIndex, bool bNewValue);
-	DllExport bool isForcePeace(TeamTypes eIndex) const;
+	bool isForcePeace(TeamTypes eIndex) const;
 	void setForcePeace(TeamTypes eIndex, bool bNewValue);
 
 	int getUnitClassCount(UnitClassTypes eIndex) const;
