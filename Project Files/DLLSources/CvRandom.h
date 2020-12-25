@@ -23,12 +23,12 @@ public:
 	DllExport unsigned short get(unsigned short usNum, const TCHAR* pszLog = NULL);  //  Returns value from 0 to num-1 inclusive.
 	DllExport float getFloat();
 	DllExport float getGaussian(float fMean, float fStandardDeviation);
-	DllExport int pickValue(std::vector<int>& aWeights, const TCHAR* pszLog);
-	DllExport void shuffleArray(std::vector<int>& aNumbers, const TCHAR* pszLog);
+	int pickValue(std::vector<int>& aWeights, const TCHAR* pszLog);
+	void shuffleArray(std::vector<int>& aNumbers, const TCHAR* pszLog);
 	DllExport void shuffleSequence(std::vector<int>& aNumbers, const TCHAR* pszLog);
 
 	void reseed(unsigned long ulNewValue);
-	DllExport unsigned long getSeed();
+	unsigned long getSeed();
 
 	// for serialization
 	void read(FDataStreamBase* pStream);
