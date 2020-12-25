@@ -302,12 +302,12 @@ public:
 	bool isCombat() const;
 
 	DllExport int maxHitPoints() const;
-	DllExport int currHitPoints() const;
+	int currHitPoints() const;
 	bool isHurt() const;
 	DllExport bool isDead() const;
 
 	void setBaseCombatStr(int iCombat);
-	DllExport int baseCombatStr() const;
+	int baseCombatStr() const;
 	void updateBestLandCombat();
 	int maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
 	int currCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
@@ -445,7 +445,7 @@ public:
 	int getLevel() const;
 	void setLevel(int iNewValue);
 	void changeLevel(int iChange);
-	DllExport int getCargo() const;
+	int getCargo() const;
 	void changeCargo(int iChange);
 
 	CvPlot* getAttackPlot() const;
@@ -535,10 +535,10 @@ public:
 	DllExport ProfessionTypes getProfession() const;
 
 	// TAC - LbD - Ray - START
-	DllExport int getLbDrounds() const;
-	DllExport void setLbDrounds(int newRounds);
-	DllExport ProfessionTypes getLastLbDProfession() const;
-	DllExport void setLastLbDProfession(ProfessionTypes eProfession);
+	int getLbDrounds() const;
+	void setLbDrounds(int newRounds);
+	ProfessionTypes getLastLbDProfession() const;
+	void setLastLbDProfession(ProfessionTypes eProfession);
 	// TAC - LbD - Ray - END
 
 
