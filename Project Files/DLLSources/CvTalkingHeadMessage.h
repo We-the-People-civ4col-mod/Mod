@@ -20,13 +20,13 @@ public:
 	DllExport const wchar* getDescription() const;
 	void setDescription(CvWString pszDescription);
 	DllExport const CvString& getSound() const;
-	DllExport void setSound(LPCTSTR pszSound);
+	void setSound(LPCTSTR pszSound);
 	DllExport const CvString& getIcon() const;
 	void setIcon(LPCTSTR pszIcon);
 	DllExport int getLength() const;
 	DllExport void setLength(int iLength);
 	DllExport ColorTypes getFlashColor() const;
-	DllExport void setFlashColor(ColorTypes eColor);
+	void setFlashColor(ColorTypes eColor);
 	DllExport int getX() const;
 	void setX(int i);
 	DllExport int getY() const;
