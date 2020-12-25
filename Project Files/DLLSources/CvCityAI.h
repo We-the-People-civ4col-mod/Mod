@@ -14,73 +14,73 @@ class CvCityAI : public CvCity
 
 public:
 
-	DllExport CvCityAI();
-	DllExport virtual ~CvCityAI();
+	CvCityAI();
+	virtual ~CvCityAI();
 
-	DllExport void AI_init();
-	DllExport void AI_uninit();
-	DllExport void AI_reset();
+	void AI_init();
+	void AI_uninit();
+	void AI_reset();
 
-	DllExport void AI_doTurn();
+	void AI_doTurn();
 	void AI_doNative();
 
-	DllExport void AI_assignWorkingPlots();
-	DllExport void AI_updateAssignWork();
+	void AI_assignWorkingPlots();
+	void AI_updateAssignWork();
 
-	DllExport bool AI_avoidGrowth() const;
+	bool AI_avoidGrowth() const;
 	void AI_setAvoidGrowth(bool bNewValue);
-	DllExport bool AI_ignoreGrowth() const;
+	bool AI_ignoreGrowth() const;
 
-	DllExport void AI_chooseProduction();
+	void AI_chooseProduction();
 
-	DllExport UnitTypes AI_bestUnit(bool bAsync = false, UnitAITypes* peBestUnitAI = NULL, bool bPickAny = false) const;
-	DllExport UnitTypes AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync = false) const;
+	UnitTypes AI_bestUnit(bool bAsync = false, UnitAITypes* peBestUnitAI = NULL, bool bPickAny = false) const;
+	UnitTypes AI_bestUnitAI(UnitAITypes eUnitAI, bool bAsync = false) const;
 
-	DllExport BuildingTypes AI_bestBuilding(int iFocusFlags = 0, int iMaxTurns = 0, bool bAsync = false) const;
+	BuildingTypes AI_bestBuilding(int iFocusFlags = 0, int iMaxTurns = 0, bool bAsync = false) const;
 	BuildingTypes AI_bestBuildingThreshold(int iFocusFlags = 0, int iMaxTurns = 0, int iMinThreshold = 0, bool bAsync = false) const;
 	BuildingTypes AI_bestBuildingIgnoreRequirements(int iFocusFlags = 0, int iMaxTurns = 0) const;
 
 	bool AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity = false) const;	// TAC - AI Buildings - koma13
 	
-	DllExport int AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags = 0) const;
+	int AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags = 0) const;
 
-	DllExport int AI_neededSeaWorkers() const;
+	int AI_neededSeaWorkers() const;
 
-	DllExport bool AI_isDefended(int iExtra = 0) const;
-	DllExport bool AI_isDanger() const;
+	bool AI_isDefended(int iExtra = 0) const;
+	bool AI_isDanger() const;
 
-	DllExport int AI_neededDefenders() const;
-	DllExport int AI_numDefenders(bool bDefenseOnly = true, bool bIncludePotential = true) const;
+	int AI_neededDefenders() const;
+	int AI_numDefenders(bool bDefenseOnly = true, bool bIncludePotential = true) const;
 	int AI_numPotentialDefenders() const;
 	int AI_minDefenders() const;
 	int AI_neededFloatingDefenders();
 	void AI_updateNeededFloatingDefenders();
 
-	DllExport int AI_getEmphasizeAvoidGrowthCount() const;
-	DllExport bool AI_isEmphasizeAvoidGrowth() const;
+	int AI_getEmphasizeAvoidGrowthCount() const;
+	bool AI_isEmphasizeAvoidGrowth() const;
 
-	DllExport bool AI_isAssignWorkDirty() const;
-	DllExport void AI_setAssignWorkDirty(bool bNewValue);
+	bool AI_isAssignWorkDirty() const;
+	void AI_setAssignWorkDirty(bool bNewValue);
 
-	DllExport bool AI_isChooseProductionDirty() const;
-	DllExport void AI_setChooseProductionDirty(bool bNewValue);
+	bool AI_isChooseProductionDirty() const;
+	void AI_setChooseProductionDirty(bool bNewValue);
 
-	DllExport CvCity* AI_getRouteToCity() const;
-	DllExport void AI_updateRouteToCity();
+	CvCity* AI_getRouteToCity() const;
+	void AI_updateRouteToCity();
 
-	DllExport int AI_getEmphasizeYieldCount(YieldTypes eIndex) const;
+	int AI_getEmphasizeYieldCount(YieldTypes eIndex) const;
 
-	DllExport bool AI_isEmphasize(EmphasizeTypes eIndex) const;
-	DllExport void AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue);
+	bool AI_isEmphasize(EmphasizeTypes eIndex) const;
+	void AI_setEmphasize(EmphasizeTypes eIndex, bool bNewValue);
 	void AI_forceEmphasizeCulture(bool bNewValue);
 
-	DllExport int AI_getBestBuildValue(int iIndex) const;
-	DllExport int AI_totalBestBuildValue(CvArea* pArea) const;
+	int AI_getBestBuildValue(int iIndex) const;
+	int AI_totalBestBuildValue(CvArea* pArea) const;
 
 	int AI_clearFeatureValue(int iIndex) const;
-	DllExport BuildTypes AI_getBestBuild(int iIndex) const;
-	DllExport int AI_countBestBuilds(CvArea* pArea) const;
-	DllExport void AI_updateBestBuild();
+	BuildTypes AI_getBestBuild(int iIndex) const;
+	int AI_countBestBuilds(CvArea* pArea) const;
+	void AI_updateBestBuild();
 
 	virtual int AI_cityValue() const;
 
@@ -171,8 +171,8 @@ public:
 	
 	bool AI_isMajorCity() const;
 
-	DllExport void read(FDataStreamBase* pStream); 
-	DllExport void write(FDataStreamBase* pStream); 
+	void read(FDataStreamBase* pStream); 
+	void write(FDataStreamBase* pStream); 
 
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
