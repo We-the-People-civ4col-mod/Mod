@@ -46,13 +46,13 @@ public:
 	void updateMission();
 	DllExport CvPlot* lastMissionPlot();
 
-	DllExport bool canStartMission(int iMission, int iData1, int iData2, CvPlot* pPlot = NULL, bool bTestVisible = false, bool bUseCache = false);
+	bool canStartMission(int iMission, int iData1, int iData2, CvPlot* pPlot = NULL, bool bTestVisible = false, bool bUseCache = false);
 	void startMission();
 	void continueMission(int iSteps = 0);
 	DllExport bool canDoInterfaceMode(InterfaceModeTypes eInterfaceMode);
 	DllExport bool canDoInterfaceModeAt(InterfaceModeTypes eInterfaceMode, CvPlot* pPlot);
 
-	DllExport bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bUseCache = false);
+	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bUseCache = false);
 	bool canEverDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache);
 	void setupActionCache();
 	bool isHuman();
@@ -165,12 +165,12 @@ public:
 	DllExport int getUnitIndex(CvUnit* pUnit, int maxIndex = -1) const;
 	DllExport CLLNode<IDInfo>* headUnitNode() const;
 	DllExport CvUnit* getHeadUnit() const;
-	DllExport CvUnit* getUnitAt(int index) const;
+	CvUnit* getUnitAt(int index) const;
 	UnitAITypes getHeadUnitAI() const;
 	PlayerTypes getHeadOwner() const;
 	TeamTypes getHeadTeam() const;
 	void clearMissionQueue();
-	DllExport int getLengthMissionQueue() const;
+	int getLengthMissionQueue() const;
 	MissionData* getMissionFromQueue(int iIndex) const;
 	void insertAtEndMissionQueue(MissionData mission, bool bStart = true);
 	CLLNode<MissionData>* deleteMissionQueueNode(CLLNode<MissionData>* pNode);
