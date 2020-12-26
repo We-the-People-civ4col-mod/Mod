@@ -25,7 +25,7 @@ public:
 	int countCoastalLand() const;
 	int countNumUniqueBonusTypes() const;
 
-	DllExport int getID() const;
+	int getID() const;
 	void setID(int iID);
 	int getNumTiles() const;
 	bool isLake() const;

@@ -261,7 +261,7 @@ LDFLAGS = $(LDFLAGS) $(CONFIG_DLFLAGS)
 #### Targets ####
 #################
 
-.PHONY: all clean build precompile Make_Dir fastdep source_list
+.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport
 
 all: Precompile build
 
@@ -285,7 +285,7 @@ build: $(Target_BIN)
 
 precompile: Make_Dir Target_unfinished $(Target_PCH)
 
-source_list: Make_Dir
+source_list: Make_Dir test_DllExport
 	@ECHO Building source list
 	@ECHO SOURCES= \> $(FILE_DEPENDS)
 	@FOR %j in ($(SUBDIRS)) DO @(FOR %i IN ($(SOURCE_DIR)\%j\*.cpp) DO @ECHO %i \>> $(FILE_DEPENDS))
@@ -433,3 +433,20 @@ $(TEMP_TARGET_FILES)\$(BLACKLIST).obj: $(BLACKLIST).cpp
 
 !ENDIF
 
+###
+### test targets
+###
+# testing is done for automated testing. It's not intended to produce a working DLL file. In fact it won't even produce one at all
+
+# this test is really fast (below 0.01 seconds) and is always executed in target source_list
+test_DllExport:
+	@ECHO Testing DllExport
+	@$(PERL) bin\DllExport.pl "$(SOURCE_DIR)"
+
+# first step in the testing process
+# each target mentioned here will run in a dedicated process
+# this allows testing to run in parallel with the precompiled header generation (a single threaded task)
+pre_test: precompile
+
+test: $(OBJS) $(Target_RESOURCE)
+	@ECHO Verification complete

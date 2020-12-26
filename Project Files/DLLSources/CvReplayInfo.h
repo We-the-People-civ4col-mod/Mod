@@ -12,65 +12,65 @@ class CvReplayInfo
 {
 public:
 	DllExport CvReplayInfo();
-	DllExport virtual ~CvReplayInfo();
+	virtual ~CvReplayInfo();
 
-	DllExport void createInfo(PlayerTypes ePlayer);
+	void createInfo(PlayerTypes ePlayer);
 
-	DllExport int getActivePlayer() const;
-	DllExport LeaderHeadTypes getLeader(int iPlayer = -1) const;
-	DllExport ColorTypes getColor(int iPlayer = -1) const;
-	DllExport HandicapTypes getDifficulty() const;
-	DllExport const CvWString& getLeaderName() const;
-	DllExport const CvWString& getCivDescription() const;
-	DllExport const CvWString& getShortCivDescription() const;
-	DllExport const CvWString& getCivAdjective() const;
-	DllExport const CvWString& getMapScriptName() const;
-	DllExport WorldSizeTypes getWorldSize() const;
-	DllExport ClimateTypes getClimate() const;
-	DllExport SeaLevelTypes getSeaLevel() const;
-	DllExport EraTypes getEra() const;
-	DllExport GameSpeedTypes getGameSpeed() const;
-	DllExport bool isGameOption(GameOptionTypes eOption) const;
-	DllExport bool isVictoryCondition(VictoryTypes eVictory) const;
-	DllExport VictoryTypes getVictoryType() const;
-	DllExport bool isMultiplayer() const;
+	int getActivePlayer() const;
+	LeaderHeadTypes getLeader(int iPlayer = -1) const;
+	ColorTypes getColor(int iPlayer = -1) const;
+	HandicapTypes getDifficulty() const;
+	const CvWString& getLeaderName() const;
+	const CvWString& getCivDescription() const;
+	const CvWString& getShortCivDescription() const;
+	const CvWString& getCivAdjective() const;
+	const CvWString& getMapScriptName() const;
+	WorldSizeTypes getWorldSize() const;
+	ClimateTypes getClimate() const;
+	SeaLevelTypes getSeaLevel() const;
+	EraTypes getEra() const;
+	GameSpeedTypes getGameSpeed() const;
+	bool isGameOption(GameOptionTypes eOption) const;
+	bool isVictoryCondition(VictoryTypes eVictory) const;
+	VictoryTypes getVictoryType() const;
+	bool isMultiplayer() const;
 
-	DllExport void addReplayMessage(CvReplayMessage* pMessage);
-	DllExport void clearReplayMessageMap();
-	DllExport int getReplayMessageTurn(uint i) const;
-	DllExport ReplayMessageTypes getReplayMessageType(uint i) const;
-	DllExport int getReplayMessagePlotX(uint i) const;
-	DllExport int getReplayMessagePlotY(uint i) const;
-	DllExport PlayerTypes getReplayMessagePlayer(uint i) const;
-	DllExport const wchar* getReplayMessageText(uint i) const;
-	DllExport uint getNumReplayMessages() const;
-	DllExport ColorTypes getReplayMessageColor(uint i) const;
+	void addReplayMessage(CvReplayMessage* pMessage);
+	void clearReplayMessageMap();
+	int getReplayMessageTurn(uint i) const;
+	ReplayMessageTypes getReplayMessageType(uint i) const;
+	int getReplayMessagePlotX(uint i) const;
+	int getReplayMessagePlotY(uint i) const;
+	PlayerTypes getReplayMessagePlayer(uint i) const;
+	const wchar* getReplayMessageText(uint i) const;
+	uint getNumReplayMessages() const;
+	ColorTypes getReplayMessageColor(uint i) const;
 
-	DllExport int getInitialTurn() const;
-	DllExport int getFinalTurn() const;
-	DllExport int getStartYear() const;
-	DllExport const wchar* getFinalDate() const;
-	DllExport CalendarTypes getCalendar() const;
-	DllExport int getNumPlayers() const;
-	DllExport int getPlayerScore(int iPlayer, int iTurn) const;
-	DllExport int getPlayerEconomy(int iPlayer, int iTurn) const;
-	DllExport int getPlayerIndustry(int iPlayer, int iTurn) const;
-	DllExport int getPlayerAgriculture(int iPlayer, int iTurn) const;
-	DllExport int getFinalScore() const;
-	DllExport int getFinalEconomy() const;
-	DllExport int getFinalIndustry() const;
-	DllExport int getFinalAgriculture() const;
-	DllExport int getNormalizedScore() const;
+	int getInitialTurn() const;
+	int getFinalTurn() const;
+	int getStartYear() const;
+	const wchar* getFinalDate() const;
+	CalendarTypes getCalendar() const;
+	int getNumPlayers() const;
+	int getPlayerScore(int iPlayer, int iTurn) const;
+	int getPlayerEconomy(int iPlayer, int iTurn) const;
+	int getPlayerIndustry(int iPlayer, int iTurn) const;
+	int getPlayerAgriculture(int iPlayer, int iTurn) const;
+	int getFinalScore() const;
+	int getFinalEconomy() const;
+	int getFinalIndustry() const;
+	int getFinalAgriculture() const;
+	int getNormalizedScore() const;
 
 	DllExport int getMapHeight() const;
 	DllExport int getMapWidth() const;
 	DllExport const unsigned char* getMinimapPixels() const;
-	DllExport int getMinimapSizeInBytes() const;
+	int getMinimapSizeInBytes() const;
 
 	DllExport const char* getModName() const;
 
 	DllExport bool read(FDataStreamBase& stream);
-	DllExport void write(FDataStreamBase& stream);
+	void write(FDataStreamBase& stream);
 
 protected:
 	bool isValidPlayer(int i) const;

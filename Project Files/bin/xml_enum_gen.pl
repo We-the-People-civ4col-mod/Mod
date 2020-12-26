@@ -121,7 +121,7 @@ sub processFile
 	my $isYield = $enum eq "YieldTypes";
 
 	print $output "enum ";
-	print $output "DllExport " if isDllExport($enum);
+	#print $output "DllExport " if isDllExport($enum);
 	print $output $enum . "\n{\n";
 	print $output "\tINVALID_PROFESSION = -2,\n" if $basename eq "Profession";
 	print $output "\t" . getNoType($TYPE) . " = -1,\n\n";

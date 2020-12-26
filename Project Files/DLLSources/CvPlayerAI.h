@@ -99,7 +99,7 @@ public:
 	bool AI_isWillingToTalk(PlayerTypes ePlayer);
 	bool AI_demandRebukedSneak(PlayerTypes ePlayer);
 	bool AI_demandRebukedWar(PlayerTypes ePlayer);
-	DllExport bool AI_hasTradedWithTeam(TeamTypes eTeam);
+	bool AI_hasTradedWithTeam(TeamTypes eTeam);
 
 	AttitudeTypes AI_getAttitude(PlayerTypes ePlayer, bool bForced = true);
 	int AI_getAttitudeVal(PlayerTypes ePlayer, bool bForced = true);

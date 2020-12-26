@@ -41,7 +41,7 @@ public:
 	void uninit();
 	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, int iX = 0, int iY = 0, bool bConstructorCall = false);
 	void setupGraphical();
-	DllExport void kill();
+	void kill();
 
 	// PatchMod: Achievements START
 	bool isHasSpecialBuilding(int iValue) const;
@@ -98,16 +98,16 @@ public:
 
 	int findPopulationRank() const;
 	int findBaseYieldRateRank(YieldTypes eYield) const;
-	DllExport int findYieldRateRank(YieldTypes eYield) const;
+	int findYieldRateRank(YieldTypes eYield) const;
 
 	UnitTypes allUpgradesAvailable(UnitTypes eUnit, int iUpgradeCount = 0) const;
 
 	DllExport bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreUpgrades = false) const;
-	DllExport bool canTrain(UnitCombatTypes eUnitCombat) const;
+	bool canTrain(UnitCombatTypes eUnitCombat) const;
 	DllExport bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	DllExport bool canConvince(FatherPointTypes eFatherPoint, bool bContinue = false, bool bTestVisible = false) const;
 
-	DllExport int getFoodTurnsLeft() const;
+	int getFoodTurnsLeft() const;
 	DllExport bool isProduction() const;
 	bool isProductionUnit() const;
 	bool isProductionBuilding() const;
@@ -117,24 +117,24 @@ public:
 	int getProductionExperience(UnitTypes eUnit = NO_UNIT) const;
 	void addProductionExperience(CvUnit* pUnit);
 
-	DllExport UnitTypes getProductionUnit() const;
+	UnitTypes getProductionUnit() const;
 	UnitAITypes getProductionUnitAI() const;
-	DllExport BuildingTypes getProductionBuilding() const;
+	BuildingTypes getProductionBuilding() const;
 	FatherPointTypes getProductionFatherPoint() const;
 	const CvInfoBase* getProductionInfo() const;
-	DllExport const wchar* getProductionName() const;
-	DllExport const wchar* getProductionNameKey() const;
-	DllExport int getGeneralProductionTurnsLeft() const;
+	const wchar* getProductionName() const;
+	const wchar* getProductionNameKey() const;
+	int getGeneralProductionTurnsLeft() const;
 
 	int getFirstUnitOrder(UnitTypes eUnit) const;
 	int getFirstBuildingOrder(BuildingTypes eBuilding) const;
 	int getNumTrainUnitAI(UnitAITypes eUnitAI) const;
 
-	DllExport int getProduction() const;
-	DllExport int getProductionNeeded(YieldTypes eYield) const;
-	DllExport int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;
-	DllExport int getYieldProductionNeeded(BuildingTypes eBuilding, YieldTypes eYield) const;
-	DllExport int getProductionTurnsLeft() const;
+	int getProduction() const;
+	int getProductionNeeded(YieldTypes eYield) const;
+	int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;
+	int getYieldProductionNeeded(BuildingTypes eBuilding, YieldTypes eYield) const;
+	int getProductionTurnsLeft() const;
 	DllExport int getProductionTurnsLeft(UnitTypes eUnit, int iNum) const;
 	DllExport int getProductionTurnsLeft(BuildingTypes eBuilding, int iNum) const;
 	int getProductionTurnsLeft(int iProductionNeeded, int iProduction, int iFirstProductionDifference, int iProductionDifference) const;
@@ -145,13 +145,13 @@ public:
 	int getProductionModifier(UnitTypes eUnit) const;
 	int getProductionModifier(BuildingTypes eBuilding) const;
 
-	DllExport int getCurrentProductionDifference(bool bOverflow) const;
+	int getCurrentProductionDifference(bool bOverflow) const;
 
 	DllExport bool canHurry(HurryTypes eHurry, bool bTestVisible = false) const;
 	void hurry(HurryTypes eHurry);
 
 	void processBuilding(BuildingTypes eBuilding, int iChange);
-	DllExport HandicapTypes getHandicapType() const;
+	HandicapTypes getHandicapType() const;
 	DllExport CivilizationTypes getCivilizationType() const;
 	LeaderHeadTypes getPersonalityType() const;
 	ArtStyleTypes getArtStyleType() const;
@@ -164,13 +164,13 @@ public:
 
 	DllExport bool isCapital() const;
 	bool isCoastal(int iMinWaterSize) const;
-	DllExport bool isDisorder() const;
+	bool isDisorder() const;
 
 	int extraPopulation() const;
 
 	int foodConsumption(int iExtra = 0) const;
-	DllExport int foodDifference() const;
-	DllExport int growthThreshold() const;
+	int foodDifference() const;
+	int growthThreshold() const;
 
 	int productionLeft() const;
 	int hurryCost(bool bExtra, bool bIgnoreNew) const;
@@ -193,7 +193,7 @@ public:
 	int getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit) const;
 	BuildingTypes getYieldBuilding(YieldTypes eYield) const;
 	DllExport int getID() const;
-	DllExport int getIndex() const;
+	int getIndex() const;
 	DllExport IDInfo getIDInfo() const;
 	void setID(int iID);
 	DllExport int getX() const;
@@ -217,22 +217,22 @@ public:
 	DllExport CvArea* area() const;
 	CvArea* waterArea() const;
 
-	DllExport CvPlot* getRallyPlot() const;
+	CvPlot* getRallyPlot() const;
 	void setRallyPlot(CvPlot* pPlot);
 	int getGameTurnFounded() const;
 	void setGameTurnFounded(int iNewValue);
 	int getGameTurnAcquired() const;
 	void setGameTurnAcquired(int iNewValue);
-	DllExport int getPopulation() const;
-	DllExport void setPopulation(int iNewValue);
-	DllExport void changePopulation(int iChange);
+	int getPopulation() const;
+	void setPopulation(int iNewValue);
+	void changePopulation(int iChange);
 	void updatePopulation(int iOldPopulation);
 	long getRealPopulation() const;
 
 	// WTP, ray, Native Trade Posts - START
-	DllExport int getNativeTradePostGold() const;
-	DllExport void setNativeTradePostGold (int iNewValue);
-	DllExport void changeNativeTradePostGold(int iChange);
+	int getNativeTradePostGold() const;
+	void setNativeTradePostGold (int iNewValue);
+	void changeNativeTradePostGold(int iChange);
 	// WTP, ray, Native Trade Posts - END
 
 	int getHighestPopulation() const;
@@ -244,7 +244,7 @@ public:
 
 	int getHealRate() const;
 	void changeHealRate(int iChange);
-	DllExport int getFood() const;
+	int getFood() const;
 	void setFood(int iNewValue);
 	void changeFood(int iChange);
 
@@ -296,12 +296,12 @@ public:
 	void setAllCitizensAutomated(bool bAutomated);
 	void setCitizenAutomated(int iUnitID);
 
-	DllExport bool isProductionAutomated() const;
+	bool isProductionAutomated() const;
 	void setProductionAutomated(bool bNewValue, bool bClear);
 
 	/* allows you to programatically specify a cities walls rather than having them be generated automagically */
 	DllExport bool isWallOverride() const;
-	DllExport void setWallOverride(bool bOverride);
+	void setWallOverride(bool bOverride);
 	DllExport bool isBillboardDirty() const;
 	DllExport void setBillboardDirty(bool bNewValue);
 	DllExport bool isLayoutDirty() const;
@@ -321,7 +321,7 @@ public:
 	PlayerTypes getOriginalOwner() const;
 	void setOriginalOwner(PlayerTypes eNewValue);
 	CultureLevelTypes getCultureLevel() const;
-	DllExport int getCultureThreshold() const;
+	int getCultureThreshold() const;
 	int getCultureThreshold(CultureLevelTypes eLevel) const;
 	void setCultureLevel(CultureLevelTypes eNewValue);
 	void updateCultureLevel();
@@ -349,13 +349,13 @@ public:
 	void changeDomainFreeExperience(DomainTypes eIndex, int iChange);
 	int getDomainProductionModifier(DomainTypes eIndex) const;
 	void changeDomainProductionModifier(DomainTypes eIndex, int iChange);
-	DllExport int getCulture(PlayerTypes eIndex) const;
+	int getCulture(PlayerTypes eIndex) const;
 	int countTotalCulture() const;
 	PlayerTypes findHighestCulture() const;
 	int calculateCulturePercent(PlayerTypes eIndex) const;
 	int calculateTeamCulturePercent(TeamTypes eIndex) const;
 	void setCulture(PlayerTypes eIndex, int iNewValue, bool bPlots);
-	DllExport void changeCulture(PlayerTypes eIndex, int iChange, bool bPlots);
+	void changeCulture(PlayerTypes eIndex, int iChange, bool bPlots);
 
 //VET NewCapacity - begin 1/2
 	int getTotalYieldStored() const; // In python
@@ -382,17 +382,17 @@ public:
 	bool isEverOwned(PlayerTypes eIndex) const;
 	void setEverOwned(PlayerTypes eIndex, bool bNewValue);
 	DllExport bool isRevealed(TeamTypes eIndex, bool bDebug) const;
-	DllExport void setRevealed(TeamTypes eIndex, bool bNewValue);
+	void setRevealed(TeamTypes eIndex, bool bNewValue);
 
 	DllExport const CvWString getName(uint uiForm = 0) const;
 	DllExport const wchar* getNameKey() const;
-	DllExport void setName(const wchar* szNewValue, bool bFound = false);
+	void setName(const wchar* szNewValue, bool bFound = false);
 	void doFoundMessage();
 	// Script data needs to be a narrow string for pickling in Python
 	std::string getScriptData() const;
 	void setScriptData(std::string szNewValue);
 
-	DllExport int getBuildingProduction(BuildingTypes eIndex) const;
+	int getBuildingProduction(BuildingTypes eIndex) const;
 	void setBuildingProduction(BuildingTypes eIndex, int iNewValue);
 	void changeBuildingProduction(BuildingTypes eIndex, int iChange);
 
@@ -403,7 +403,7 @@ public:
 	PlayerTypes getBuildingOriginalOwner(BuildingTypes eIndex) const;
 	int getBuildingOriginalTime(BuildingTypes eIndex) const;
 
-	DllExport int getUnitProduction(UnitTypes eIndex) const;
+	int getUnitProduction(UnitTypes eIndex) const;
 	void setUnitProduction(UnitTypes eIndex, int iNewValue);
 	void changeUnitProduction(UnitTypes eIndex, int iChange);
 
@@ -417,9 +417,9 @@ public:
 	bool isFreePromotion(PromotionTypes eIndex) const;
 	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 	CvUnit* getUnitWorkingPlot(int iPlotIndex) const;
-	DllExport bool isUnitWorkingPlot(int iPlotIndex) const;
+	bool isUnitWorkingPlot(int iPlotIndex) const;
 	bool isUnitWorkingAnyPlot(const CvUnit* pUnit) const;
-	DllExport CvUnit* getUnitWorkingPlot(const CvPlot* pPlot) const;
+	CvUnit* getUnitWorkingPlot(const CvPlot* pPlot) const;
 	bool isUnitWorkingPlot(const CvPlot* pPlot) const;
 	void clearUnitWorkingPlot(int iPlotIndex);
 	void clearUnitWorkingPlot(CvPlot* pPlot);
@@ -427,11 +427,11 @@ public:
 	//Androrc Multiple Professions per Building
 	void alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool bAskProfession);
 	//Androrc End
-	DllExport void alterUnitProfession(int iUnitId, ProfessionTypes eProfession);
-	DllExport void ejectToTransport(int iUnitId, int iTransportId);
+	void alterUnitProfession(int iUnitId, ProfessionTypes eProfession);
+	void ejectToTransport(int iUnitId, int iTransportId);
 	void replaceCitizen(int iUnitId, int iReplacedUnitId, bool bAskProfession);
 	bool isHasRealBuilding(BuildingTypes eIndex) const;
-	DllExport void setHasRealBuilding(BuildingTypes eIndex, bool bNewValue);
+	void setHasRealBuilding(BuildingTypes eIndex, bool bNewValue);
 	void setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool bFirst, PlayerTypes eOriginalOwner, int iOriginalTime);
 	bool isValidBuildingLocation(BuildingTypes eIndex) const;
 	bool isHasFreeBuilding(BuildingTypes eIndex) const;
@@ -447,8 +447,8 @@ public:
 	void getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >& aOrders, YieldTypes eYield, bool bYieldsComplete, int iChange) const;
 	void startHeadOrder();
 	void stopHeadOrder();
-	DllExport int getOrderQueueLength() const;
-	DllExport OrderData* getOrderFromQueue(int iIndex);
+	int getOrderQueueLength() const;
+	OrderData* getOrderFromQueue(int iIndex);
 	DllExport CLLNode<OrderData>* nextOrderQueueNode(CLLNode<OrderData>* pNode) const;
 	DllExport CLLNode<OrderData>* headOrderQueueNode() const;
 	CLLNode<OrderData>* tailOrderQueueNode() const;
@@ -466,7 +466,7 @@ public:
 	DllExport bool getCityBillboardTopBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 	DllExport bool getCityBillboardBottomBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 
-	DllExport void setWallOverridePoints(const std::vector< std::pair<float, float> >& kPoints); /* points are given in world space ... i.e. PlotXToPointX, etc */
+	void setWallOverridePoints(const std::vector< std::pair<float, float> >& kPoints); /* points are given in world space ... i.e. PlotXToPointX, etc */
 	DllExport const std::vector< std::pair<float, float> >& getWallOverridePoints() const;
 	int getTriggerValue(EventTriggerTypes eTrigger) const;
 	bool canApplyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
@@ -476,13 +476,13 @@ public:
 	int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
 	void setBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
 	void changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
-	DllExport PlayerTypes getLiberationPlayer(bool bConquest) const;
+	PlayerTypes getLiberationPlayer(bool bConquest) const;
 	void liberate(bool bConquest);
 
 	int getMaxYieldCapacity() const;
 	bool isAutoRaze() const;
 	void setScoutVisited(TeamTypes eTeam, bool bVisited);
-	DllExport bool isScoutVisited(TeamTypes eTeam) const;
+	bool isScoutVisited(TeamTypes eTeam) const;
 	GoodyTypes getGoodyType(const CvUnit* pUnit) const;
 	int doGoody(CvUnit* pUnit, GoodyTypes eGoody);
 	PlayerTypes getMissionaryPlayer() const;
@@ -504,43 +504,43 @@ public:
 	void setHasBeenStirredUp(bool stirredUp);
 	// R&R, ray , Stirring Up Natives - END
 
-	DllExport int getRebelPercent() const;
-	DllExport int getRebelSentiment() const;
-	DllExport void setRebelSentiment(int iValue);
+	int getRebelPercent() const;
+	int getRebelSentiment() const;
+	void setRebelSentiment(int iValue);
 
 	// R&R, ray, Health - START
-	DllExport int getCityHealth() const;
-	DllExport int getCityHealthChange() const;
-	DllExport int getCityHealthChangeFromPopulation() const;
-	DllExport void setCityHealth(int iValue);
-	DllExport void changeCityHealth(int iValue);
+	int getCityHealth() const;
+	int getCityHealthChange() const;
+	int getCityHealthChangeFromPopulation() const;
+	void setCityHealth(int iValue);
+	void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
 
 	// WTP, ray, Happiness - START
-	DllExport int getCityHappiness() const;
-	DllExport void setCityHappiness(int iValue);
-	DllExport void updateCityHappiness();
-	DllExport int getCityUnHappiness() const;
-	DllExport void setCityUnHappiness(int iValue);
-	DllExport void updateCityUnHappiness();
+	int getCityHappiness() const;
+	void setCityHappiness(int iValue);
+	void updateCityHappiness();
+	int getCityUnHappiness() const;
+	void setCityUnHappiness(int iValue);
+	void updateCityUnHappiness();
 
-	DllExport int getUnhappinessFromPopulation() const;
-	DllExport int getUnhappinessFromSlavery() const;
-	DllExport int getUnhappinessFromWars() const;
-	DllExport int getUnhappinessFromMissingDefense() const;
+	int getUnhappinessFromPopulation() const;
+	int getUnhappinessFromSlavery() const;
+	int getUnhappinessFromWars() const;
+	int getUnhappinessFromMissingDefense() const;
 
-	DllExport int getHappinessFromCrosses() const;
-	DllExport int getHappinessFromBells() const;
-	DllExport int getHappinessFromHealth() const;
-	DllExport int getHappinessFromCulture() const;
-	DllExport int getHappinessFromEducation() const;
-	DllExport int getHappinessFromDomesticDemandsFulfilled() const;
-	DllExport int getHappinessFromTreaties() const;
-	DllExport int getUnhappinessFromTaxRate() const;
+	int getHappinessFromCrosses() const;
+	int getHappinessFromBells() const;
+	int getHappinessFromHealth() const;
+	int getHappinessFromCulture() const;
+	int getHappinessFromEducation() const;
+	int getHappinessFromDomesticDemandsFulfilled() const;
+	int getHappinessFromTreaties() const;
+	int getUnhappinessFromTaxRate() const;
 
-	DllExport int getCityTimerFestivitiesOrUnrest() const;
-	DllExport void setCityTimerFestivitiesOrUnrest(int iValue);
-	DllExport void changeCityTimerFestivitiesOrUnrest(int iValue);
+	int getCityTimerFestivitiesOrUnrest() const;
+	void setCityTimerFestivitiesOrUnrest(int iValue);
+	void changeCityTimerFestivitiesOrUnrest(int iValue);
 	// WTP, ray, Happiness - END
 
 	int getTeachUnitMultiplier() const;
@@ -658,7 +658,7 @@ public:
 	CvUnit* removeUnitType(UnitTypes eUnit, ProfessionTypes eProfession);
 	void removeNonCityPopulationUnits();
 	int getPopulationUnitId(int iPlotIndex) const;
-	DllExport CvUnit* getPopulationUnitById(int iUnitId) const;
+	CvUnit* getPopulationUnitById(int iUnitId) const;
 	CvUnit* getPopulationUnitByIndex(int iUnitIndex) const;
 	int getPopulationUnitIndex(CvUnit *pUnit) const;
 	CvPlot* getPlotWorkedByUnit(const CvUnit* pUnit) const;
