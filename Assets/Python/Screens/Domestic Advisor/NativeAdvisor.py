@@ -147,7 +147,7 @@ class NativeAdvisor:
 	def handleInput (self, inputClass):
 	
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
-			if (inputClass.getButtonType() == self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON):
+			if (inputClass.getButtonType() == self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON or inputClass.getButtonType() == WidgetTypes.WIDGET_JUMP_TO_SETTLEMENT):
 				self.parent.getScreen().hideScreen()
 				CyCamera().JustLookAtPlot(gc.getMap().plotByIndex(inputClass.getData1()))
 				return 0
