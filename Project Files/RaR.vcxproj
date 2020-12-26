@@ -574,13 +574,13 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
@@ -595,7 +595,7 @@ set TARGET=Release
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
@@ -603,7 +603,7 @@ nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
@@ -619,7 +619,7 @@ set TARGET=FinalRelease
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
@@ -627,7 +627,7 @@ nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
@@ -643,7 +643,7 @@ set TARGET=FinalRelease
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
@@ -651,7 +651,7 @@ nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
@@ -665,13 +665,13 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
@@ -684,16 +684,16 @@ set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
-nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom test</NMakeBuildCommandLine>
+bin\jom pre_test /NOLOGO &amp;&amp; ^
+bin\jom test /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
-nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom test</NMakeReBuildCommandLine>
+nmake pre_test /NOLOGO &amp;&amp; ^
+bin\jom test /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
@@ -709,7 +709,7 @@ set TARGET=Debug
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
@@ -717,7 +717,7 @@ nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
@@ -731,13 +731,13 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
@@ -751,7 +751,7 @@ set TARGET=Profile
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
@@ -759,7 +759,7 @@ nmake clean /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
@@ -773,13 +773,13 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Assert
 nmake clean  /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
@@ -794,7 +794,7 @@ set TARGET=Assert
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeBuildCommandLine>
+bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
@@ -802,7 +802,7 @@ nmake clean  /NOLOGO &amp;&amp; ^
 nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
-bin\jom build</NMakeReBuildCommandLine>
+bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
