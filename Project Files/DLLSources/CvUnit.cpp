@@ -14973,15 +14973,18 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getDefineINT("TREASURE_UNITCLASS");
 	if (eUnitClass == NO_UNITCLASS)
 	{
+		FAssertMsg(eUnitClass != NO_UNITCLASS, "Failed to find treasure unitclass while merging");
 		return; //Something went wrong
 	}
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
 
 	if (eUnit == NO_UNIT)
 	{
-		FAssert(GC.getUnitInfo(eUnit).isTreasure());
+		FAssertMsg(eUnit != NO_UNIT, "Failed to find treasure unit while merging");
 		return;
 	}
+
+	FAssert(GC.getUnitInfo(eUnit).isTreasure());
 
 	for (int treasures = 0; treasures < treasureCount_MaxAmount; treasures++)
 	{
@@ -14989,7 +14992,7 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 		// set Movement Points to 0, to prevent cheating
 		pTreasure->setMoves(maxMoves());
 	}
-	if (restAmount >= 0)
+	if (restAmount > 0)
 	{
 		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
 		// set Movement Points to 0, to prevent cheating
