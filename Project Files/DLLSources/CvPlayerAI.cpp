@@ -700,7 +700,7 @@ void CvPlayerAI::AI_unitUpdate()
 						}
 						if (bRemove)
 						{
-							pLoopCity->removePopulationUnit(pRemoveUnit, false, (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+							pLoopCity->removePopulationUnit(pRemoveUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 						}
 					}
 				}
@@ -3411,7 +3411,7 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 				bool isValidbyUnitCombat = (kUnit.getCombat() > 5);
 
 				// check Combat Change From Profession
-				ProfessionTypes checkProfession = (ProfessionTypes) GC.getUnitInfo(eLoopUnit).getDefaultProfession();
+				ProfessionTypes checkProfession = GC.getUnitInfo(eLoopUnit).getDefaultProfession();
 				bool isValidbyDefaultProfessionCombatChange = false;
 				if (checkProfession != NO_PROFESSION)
 				{
@@ -3440,7 +3440,7 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 						iBestValue = iValue;
 						eUnit = eLoopUnit;
 						//WTP, Ray, fixing Unit Variation for Buying Units from King - END
-						eProfession = (ProfessionTypes) GC.getUnitInfo(eLoopUnit).getDefaultProfession();
+						eProfession = GC.getUnitInfo(eLoopUnit).getDefaultProfession();
 					}
 				}
 			}
@@ -7778,7 +7778,7 @@ void CvPlayerAI::AI_doProfessions()
 		{
 			ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(eUnitAI);
 
-			if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
+			if ((eProfession != NO_PROFESSION) && (eUnitAI == UNITAI_SETTLER || (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())))
 			{
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 
@@ -7943,7 +7943,7 @@ void CvPlayerAI::AI_doProfessions()
 		{
 			ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE, pLoopCity);
 
-			if ((eProfession != NO_PROFESSION) && (eProfession != (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
+			if ((eProfession != NO_PROFESSION) && (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
 			{
 				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 				bool bDone = false;
@@ -8070,7 +8070,7 @@ void CvPlayerAI::AI_doEurope()
 	if ((eBuyProfession != NO_PROFESSION) && (iBuyProfessionValue > iBuyUnitValue) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
 	// TAC - AI Military Buildup - koma13 - END
 	{
-		ProfessionTypes eDefaultProfession = (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+		ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 
 		int iBestValue = 0;
 		CvUnit* pBestUnit = NULL;
@@ -9732,7 +9732,7 @@ void CvPlayerAI::AI_createNatives()
 			UnitTypes eBrave = AI_bestUnit(UNITAI_DEFENSIVE);
 			if (eBrave != NO_UNIT)
 			{
-				initUnit(eBrave, (ProfessionTypes) GC.getUnitInfo(eBrave).getDefaultProfession(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
+				initUnit(eBrave, GC.getUnitInfo(eBrave).getDefaultProfession(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE());
 			}
 		}
 	}
@@ -10465,7 +10465,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 
 		case UNITAI_DEFENSIVE:
 			{
-				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo((ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
+				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
 				if (isNative())
 				{
 					iValue += 10;
@@ -10486,7 +10486,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			//if (isNative())
 			{
 				iValue += 10;
-				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo((ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
+				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
 				if (!kProfession.isUnarmed() && iExtraCombatStrength > 0)
 				{
 					iValue += iExtraCombatStrength * 15;
@@ -10499,7 +10499,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			break;
 		case UNITAI_COUNTER:
 			{
-				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo((ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
+				int iExtraCombatStrength = kProfession.getCombatChange() - GC.getProfessionInfo(GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()).getCombatChange();
 				if (isNative())
 				{
 					iValue += 10;
@@ -11091,7 +11091,7 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 		return 0;
 	}
 
-	if (eProfession == (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())
+	if (eProfession == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())
 	{
 		return 100;
 	}
@@ -11227,7 +11227,7 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 		}
 	}
 
-	if (eProfession != (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())
+	if (eProfession != GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession())
 	{
 		if (kUnit.getDefaultProfession() == eProfession)
 		{
@@ -11235,11 +11235,11 @@ int CvPlayerAI::AI_professionSuitability(UnitTypes eUnit, ProfessionTypes eProfe
 		}
 		else
 		{
-			if (hasContentsYieldEquipmentAmount((ProfessionTypes)kUnit.getDefaultProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+			if (hasContentsYieldEquipmentAmount(kUnit.getDefaultProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
 				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 				{
-					if (getYieldEquipmentAmount((ProfessionTypes)kUnit.getDefaultProfession(), (YieldTypes) iYield) > 0)
+					if (getYieldEquipmentAmount(kUnit.getDefaultProfession(), (YieldTypes) iYield) > 0)
 					{
 						if (getYieldEquipmentAmount(eProfession, (YieldTypes) iYield) == 0)
 						{
@@ -11445,7 +11445,7 @@ void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 	FAssert(pCity != NULL);
 
-	ProfessionTypes eDefaultProfession = (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+	ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 
 	//Ensure all units are added to city.
 	if (pUnitA->isOnMap())
@@ -15118,7 +15118,7 @@ void CvPlayerAI::AI_updateNextBuyProfession()
 	if (!AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
 	// TAC - AI Economy - koma13 - END
 	{
-		ProfessionTypes eDefaultProfession = (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+		ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 		int iColMultiplier = AI_unitAIValueMultipler(UNITAI_COLONIST);
 		//Professions which work in cities.
 		for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)

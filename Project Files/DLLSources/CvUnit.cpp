@@ -571,7 +571,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		{
 			if (!GET_PLAYER(eCapturingPlayer).isProfessionValid(eCaptureProfession, eCaptureUnitType))
 			{
-				eCaptureProfession = (ProfessionTypes) GC.getUnitInfo(eCaptureUnitType).getDefaultProfession();
+				eCaptureProfession = GC.getUnitInfo(eCaptureUnitType).getDefaultProfession();
 			}
 			CvUnit* pkCapturedUnit = GET_PLAYER(eCapturingPlayer).initUnit(eCaptureUnitType, eCaptureProfession, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldStored);
 
@@ -5217,7 +5217,7 @@ void CvUnit::establishMission()
 			// WTP, ray, just for safety
 			if (FailedMissionaryType != NO_UNIT)
 			{
-				CvUnit* FailedMissionaryUnit = GET_PLAYER(getOwnerINLINE()).initUnit(FailedMissionaryType, (ProfessionTypes)GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+				CvUnit* FailedMissionaryUnit = GET_PLAYER(getOwnerINLINE()).initUnit(FailedMissionaryType, GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
 				//  WTP, ray, we still need to display a message - your missionary failed and became a Failed Missionary
 				CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL", plot()->getPlotCity()->getNameKey());
 				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
@@ -5252,7 +5252,7 @@ void CvUnit::establishMission()
 				if (FailedMissionaryType != NO_UNIT)
 				{
 					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
-					CvUnit* FailedMissionaryUnit = oldMissionaryPlayer.initUnit(FailedMissionaryType, (ProfessionTypes)GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+					CvUnit* FailedMissionaryUnit = oldMissionaryPlayer.initUnit(FailedMissionaryType, GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
 					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
 					CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED", plot()->getPlotCity()->getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(pCity->getMissionaryPlayer(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
@@ -5629,7 +5629,7 @@ void CvUnit::stirUpNatives()
 		UnitTypes DefaultUnitType = (UnitTypes)GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));		
 		if (NO_UNIT != DefaultUnitType)
 		{
-			CvUnit* pUnit = kCityOwner.initUnit(DefaultUnitType, (ProfessionTypes) GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());			
+			CvUnit* pUnit = kCityOwner.initUnit(DefaultUnitType, GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());			
 			
 			CvPlayerAI& kNativeAI = GET_PLAYER(pCity->getOwner());
 			if (kNativeAI.AI_hasPotentialRaidTarget())
@@ -14306,7 +14306,7 @@ bool CvUnit::raidCity(CvCity* pCity)
 				CvPlayer& kPlayer = GET_PLAYER(pCity->getOwnerINLINE());
 
 				UnitTypes SlaveType = (UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"));
-				CvUnit* SlaveUnit = kPlayer.initUnit(SlaveType, (ProfessionTypes) GC.getUnitInfo(SlaveType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
+				CvUnit* SlaveUnit = kPlayer.initUnit(SlaveType, GC.getUnitInfo(SlaveType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
 
 				CvWString szString = gDLL->getText("TXT_KEY_RAIDING_NATIVE_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey());				
 				gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, SlaveUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE());		
@@ -14988,13 +14988,13 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 
 	for (int treasures = 0; treasures < treasureCount_MaxAmount; treasures++)
 	{
-		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxTreasureGold);
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxTreasureGold);
 		// set Movement Points to 0, to prevent cheating
 		pTreasure->setMoves(maxMoves());
 	}
 	if (restAmount > 0)
 	{
-		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
 		// set Movement Points to 0, to prevent cheating
 		pTreasure->setMoves(maxMoves());
 	}

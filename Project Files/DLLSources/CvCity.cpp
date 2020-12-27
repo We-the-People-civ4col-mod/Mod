@@ -606,7 +606,7 @@ void CvCity::doTurn()
 		if (stuckUnits.size() > 0)
 		{
 			FAssertMsg(false, "Citizen in colony stuck with NO_PROFESSION");
-			ProfessionTypes eDefaultProfession = (ProfessionTypes)GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession();
+			ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession();
 
 			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
 			{
@@ -5875,7 +5875,7 @@ void CvCity::ejectToTransport(int iUnitId, int iTransportId)
 	{
 		if (pUnit->canLoadUnit(pTransport, pUnit->plot(), true))
 		{
-			if (removePopulationUnit(pUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+			if (removePopulationUnit(pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 			{
 				pUnit->loadUnit(pTransport);
 			}
@@ -6358,7 +6358,7 @@ void CvCity::popOrder(int iNum, bool bFinish, bool bChoose)
 			changeOverflowProduction(iOverflow, getProductionModifier(eTrainUnit));
 			setUnitProduction(eTrainUnit, 0);
 
-			pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eTrainUnit, (ProfessionTypes) GC.getUnitInfo(eTrainUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE(), eTrainAIUnit);
+			pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eTrainUnit, GC.getUnitInfo(eTrainUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE(), eTrainAIUnit);
 			FAssertMsg(pUnit != NULL, "pUnit is expected to be assigned a valid unit object");
 
 			pUnit->finishMoves();
@@ -6801,7 +6801,7 @@ void CvCity::doGrowth()
 			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 			if (NO_UNIT != eUnit)
 			{
-				CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
+				CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 
 				changeFood(-(std::max(0, (growthThreshold() - getFoodKept()))));
 			}
@@ -7484,7 +7484,7 @@ void CvCity::doNativeTradePost()
 			// spawn the Treasure
 			UnitClassTypes eUnitClass = (UnitClassTypes) GC.getDefineINT("TREASURE_UNITCLASS");
 			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
-			CvUnit* pTreasure = GET_PLAYER(ePlayer).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iCurrentTradePostGold);
+			CvUnit* pTreasure = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iCurrentTradePostGold);
 			// when we create a treasure, set gold to 0
 			setNativeTradePostGold(0);
 
@@ -8097,7 +8097,7 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 		{
 			for (int i = 0; i < kEvent.getNumUnits(); ++i)
 			{
-				GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
+				GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 			}
 		}
 	}
@@ -8694,7 +8694,7 @@ CvUnit* CvCity::createYieldUnit(YieldTypes eYield, PlayerTypes ePlayer, int iYie
 	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(kOwner.getCivilizationType()).getCivilizationUnits(GC.getYieldInfo(eYield).getUnitClass());
 	if (NO_UNIT != eUnit)
 	{
-		pUnit = kOwner.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldAmount);
+		pUnit = kOwner.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldAmount);
 		FAssertMsg(pUnit != NULL, "pUnit expected to be assigned (not NULL)");
 
 		FAssert(iYieldAmount <= getYieldStored(eYield));
@@ -10212,7 +10212,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 	pUnit->setYieldStored(0);
 	// perform the conversion
-	if (!removePopulationUnit(pUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+	if (!removePopulationUnit(pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 	{
 		return false;
 	}
@@ -11047,7 +11047,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	//ray16
 	CvUnit* expertUnit = GET_PLAYER(getOwnerINLINE()).initUnit(expertUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(expertUnit != NULL);
-	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	expertUnit->convert(convUnit, true);
 	//addPopulationUnit(expertUnit, NO_PROFESSION);
 	//AddMessage
@@ -11142,7 +11142,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	//ray16
 	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(GeneratedUnit != NULL);
-	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	GeneratedUnit->convert(convUnit, true);
 	// AddMessage
 	CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
@@ -11196,7 +11196,7 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	createFleeingUnit(convUnit->getUnitType(), false);
 
 	//Unit is then simply destroyed
-	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	convUnit->kill(false);
 	
 	// AddMessage
@@ -11270,7 +11270,7 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	createFleeingUnit(GeneratedUnitType, true);
 
 	//Unit is then simply destroyed
-	bool remove = removePopulationUnit(convUnit, false, (ProfessionTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	convUnit->kill(false);
 	
 	// AddMessage
@@ -11998,12 +11998,12 @@ void CvCity::createFleeingUnit(UnitTypes eUnit, bool bDefautAI)
 		// Fleeing AI
 		if (bDefautAI == false)
 		{
-			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), UNITAI_FLEEING);
+			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), UNITAI_FLEEING);
 		}
 		//Default AI
 		else
 		{
-			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), NO_UNITAI);
+			CvUnit* fleeingUnit = barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), NO_UNITAI);
 		}
 	}
 }

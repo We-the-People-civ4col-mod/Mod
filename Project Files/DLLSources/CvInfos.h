@@ -708,7 +708,7 @@ public:
 	int getUnitCaptureClassType() const;
 	int getUnitCombatType() const;
 	DllExport int getDomainType() const;
-	DllExport int getDefaultProfession() const;
+	ProfessionTypes getDefaultProfession() const;
 	int getDefaultUnitAIType() const;
 	int getInvisibleType() const;
 	int getSeeInvisibleType(int i) const;
@@ -836,6 +836,11 @@ public:
 	void read(FDataStreamBase* );
 	void write(FDataStreamBase* );
 	bool read(CvXMLLoadUtility* pXML);
+
+	// EXE/python access functions
+	DllExport int EXE_getDefaultProfession() const;
+
+
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 
@@ -887,7 +892,7 @@ protected:
 	int m_iUnitCaptureClassType;
 	int m_iUnitCombatType;
 	int m_iDomainType;
-	int m_iDefaultProfession;
+	ProfessionTypes m_eDefaultProfession;
 	int m_iDefaultUnitAIType;
 	int m_iInvisibleType;
 	int m_iPrereqBuilding;
@@ -1557,7 +1562,7 @@ public:
 	int getTreasure() const;
 	int getFavoredTerrain() const;
 	int getCapturedCityUnitClass() const;
-	int getDefaultProfession() const;
+	ProfessionTypes getDefaultProfession() const;
 	DllExport int getMissionaryChar() const;
 	DllExport void setMissionaryChar(int iChar);
 
@@ -1628,6 +1633,10 @@ public:
 	bool readPass2(CvXMLLoadUtility* pXML);
 	void read(FDataStreamBase* stream);
 	void write(FDataStreamBase* stream);
+
+	// EXE/python access functions
+	int PY_getDefaultProfession() const;
+
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	int m_iDefaultPlayerColor;
@@ -1663,7 +1672,7 @@ protected:
 	int m_iTreasure;
 	int m_iFavoredTerrain;
 	int m_iCapturedCityUnitClass;
-	int m_iDefaultProfession;
+	ProfessionTypes m_eDefaultProfession;
 	int m_iMissionaryChar;
 
 	bool m_bAIPlayable;

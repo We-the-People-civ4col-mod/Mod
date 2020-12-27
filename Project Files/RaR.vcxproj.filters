@@ -836,6 +836,9 @@
     <None Include="DLLSources\interfaceDirtyBits.inl">
       <Filter>Misc</Filter>
     </None>
+    <None Include="DLLSources\CvGameCoreDLL.def">
+      <Filter>Misc</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Python">

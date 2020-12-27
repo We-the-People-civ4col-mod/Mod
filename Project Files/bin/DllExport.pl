@@ -69,13 +69,13 @@ sub processfile
 	{
 		if (index($line, "DllExport") != -1)
 		{
-			if ($known_file and $line eq $next_line)
+			if ($line eq $next_line)
 			{
 				$next_line = shift @txt_lines;
 			}
 			else
 			{
-				die "\nDllExport ERROR: $file: Found line, which shouldn't be there: $line\n\n\n";
+				die "\nDllExport ERROR: $file: Found line, which shouldn't be there: $line\nExpected: $next_line\n\n";
 			}
 		}
 	}

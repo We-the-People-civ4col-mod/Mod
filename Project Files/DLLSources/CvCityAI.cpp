@@ -2990,7 +2990,7 @@ bool CvCityAI::AI_removeWorstPopulationUnit(bool bDelete)
 {
 	for (int i = (int) m_aPopulationUnits.size() - 1; i >= 0; --i)
 	{
-		ProfessionTypes eEjectProfession = (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+		ProfessionTypes eEjectProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 		if (m_aPopulationUnits[i]->canHaveProfession(eEjectProfession, false))
 		{
 			if (removePopulationUnit(m_aPopulationUnits[i], bDelete, eEjectProfession))
@@ -3235,7 +3235,7 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(pUnit, false, (ProfessionTypes) GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		return NULL;

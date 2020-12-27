@@ -3739,7 +3739,7 @@ void CvGame::reviveActivePlayer()
 		}
 
 		UnitTypes eUnit = (UnitTypes) 0;
-		GET_PLAYER(getActivePlayer()).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), 0, 0);
+		GET_PLAYER(getActivePlayer()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), 0, 0);
 	}
 }
 

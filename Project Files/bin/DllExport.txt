@@ -574,7 +574,6 @@ CvInfos.h
 	DllExport CvUnitInfo();
 	DllExport int getUnitClassType() const;
 	DllExport int getDomainType() const;
-	DllExport int getDefaultProfession() const;
 	DllExport int getGroupSize(int iProfession) const;									 // the initial number of individuals in the unit group
 	DllExport int getGroupDefinitions(int iProfession) const;					 // the number of UnitMeshGroups for this unit
 	DllExport bool isMechUnit() const;
@@ -583,6 +582,7 @@ CvInfos.h
 	DllExport int getUnitGroupRequired(int i, int iProfession) const;
 	DllExport const char* getFormationType() const;
 	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const;
+	DllExport int EXE_getDefaultProfession() const;
 	DllExport CvUnitFormationInfo();
 	DllExport const char* getFormationType() const;
 	DllExport const std::vector<EntityEventTypes> & getEventTypes() const;

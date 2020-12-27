@@ -9122,7 +9122,7 @@ void CvPlot::doMonastery()
 								UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(MonasteryOwner).getCivilizationType()).getCivilizationUnits(eUnitClass);
 								if (eUnit != NO_UNIT)
 								{
-									CvUnit* pUnit = GET_PLAYER(MonasteryOwner).initUnit(eUnit, (ProfessionTypes) GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
+									CvUnit* pUnit = GET_PLAYER(MonasteryOwner).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 									szBuffer = gDLL->getText("TXT_KEY_MONASTERY_IMPROVEMENT_CONVERTED_NATIVE");
 									gDLL->getInterfaceIFace()->addMessage(MonasteryOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), getX_INLINE(), getY_INLINE(), true, true);
 								}

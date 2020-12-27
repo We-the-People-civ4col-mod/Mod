@@ -346,6 +346,7 @@
     <ClInclude Include="DLLSources\UserSettings.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="DLLSources\CvGameCoreDLL.def" />
     <None Include="DLLSources\FVariableSystem.inl" />
     <None Include="DLLSources\interfaceDirtyBits.inl" />
   </ItemGroup>

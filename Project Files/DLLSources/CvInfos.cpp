@@ -2608,7 +2608,7 @@ m_iSpecialUnitType(NO_SPECIALUNIT),
 m_iUnitCaptureClassType(NO_UNITCLASS),
 m_iUnitCombatType(NO_UNITCOMBAT),
 m_iDomainType(NO_DOMAIN),
-m_iDefaultProfession(NO_PROFESSION),
+m_eDefaultProfession(NO_PROFESSION),
 m_iDefaultUnitAIType(NO_UNITAI),
 m_iInvisibleType(NO_INVISIBLE),
 m_iPrereqBuilding(NO_BUILDING),
@@ -2915,9 +2915,9 @@ int CvUnitInfo::getDomainType() const
 {
 	return m_iDomainType;
 }
-int CvUnitInfo::getDefaultProfession() const
+ProfessionTypes CvUnitInfo::getDefaultProfession() const
 {
-	return m_iDefaultProfession;
+	return m_eDefaultProfession;
 }
 int CvUnitInfo::getDefaultUnitAIType() const
 {
@@ -3476,7 +3476,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iUnitCaptureClassType);
 	stream->Read(&m_iUnitCombatType);
 	stream->Read(&m_iDomainType);
-	stream->Read(&m_iDefaultProfession);
+	stream->Read(&m_eDefaultProfession);
 	stream->Read(&m_iDefaultUnitAIType);
 	stream->Read(&m_iInvisibleType);
 	int iNumInvisibleTypes;
@@ -3700,7 +3700,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iUnitCaptureClassType);
 	stream->Write(m_iUnitCombatType);
 	stream->Write(m_iDomainType);
-	stream->Write(m_iDefaultProfession);
+	stream->Write(m_eDefaultProfession);
 	stream->Write(m_iDefaultUnitAIType);
 	stream->Write(m_iInvisibleType);
 	stream->Write((int)m_aiSeeInvisibleTypes.size());
@@ -3828,8 +3828,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	m_iUnitCombatType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Domain");
 	m_iDomainType = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "DefaultProfession");
-	m_iDefaultProfession = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), &m_eDefaultProfession, "DefaultProfession", false);
 	pXML->GetChildXmlValByName(szTextVal, "DefaultUnitAI");
 	m_iDefaultUnitAIType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Invisible");
@@ -4034,6 +4033,13 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	updateArtDefineButton();
 	return true;
 }
+
+int CvUnitInfo::EXE_getDefaultProfession() const
+{
+	return getDefaultProfession();
+}
+
+
 //======================================================================================================
 //					CvUnitFormationInfo
 //======================================================================================================
@@ -5772,7 +5778,7 @@ m_iDensityMultiplier(0),
 m_iTreasure(0),
 m_iFavoredTerrain(NO_TERRAIN),
 m_iCapturedCityUnitClass(NO_UNITCLASS),
-m_iDefaultProfession(NO_PROFESSION),
+m_eDefaultProfession(NO_PROFESSION),
 m_iMissionaryChar(0),
 m_bPlayable(false),
 m_bAIPlayable(false),
@@ -5910,9 +5916,9 @@ int CvCivilizationInfo::getCapturedCityUnitClass() const
 {
 	return m_iCapturedCityUnitClass;
 }
-int CvCivilizationInfo::getDefaultProfession() const
+ProfessionTypes CvCivilizationInfo::getDefaultProfession() const
 {
-	return m_iDefaultProfession;
+	return m_eDefaultProfession;
 }
 int CvCivilizationInfo::getMissionaryChar() const
 {
@@ -6159,7 +6165,7 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iTreasure);
 	stream->Read(&m_iFavoredTerrain);
 	stream->Read(&m_iCapturedCityUnitClass);
-	stream->Read(&m_iDefaultProfession);
+	stream->Read(&m_eDefaultProfession);
 	stream->Read(&m_iMissionaryChar);
 	stream->Read(&m_bAIPlayable);
 	stream->Read(&m_bPlayable);
@@ -6267,7 +6273,7 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iTreasure);
 	stream->Write(m_iFavoredTerrain);
 	stream->Write(m_iCapturedCityUnitClass);
-	stream->Write(m_iDefaultProfession);
+	stream->Write(m_eDefaultProfession);
 	stream->Write(m_iMissionaryChar);
 	stream->Write(m_bAIPlayable);
 	stream->Write(m_bPlayable);
@@ -6339,8 +6345,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	m_iFavoredTerrain = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "CapturedCityUnitClass");
 	m_iCapturedCityUnitClass = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "DefaultProfession");
-	m_iDefaultProfession = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), &m_eDefaultProfession, "DefaultProfession", false);
 	// set the current xml node to it's next sibling and then
 	pXML->GetChildXmlValByName(&m_bPlayable, "bPlayable");
 	pXML->GetChildXmlValByName(&m_bAIPlayable, "bAIPlayable");
@@ -6554,6 +6559,12 @@ bool CvCivilizationInfo::readPass2(CvXMLLoadUtility* pXML)
 	m_iDerivativeCiv = GC.getInfoTypeForString(szTextVal);
 	return true;
 }
+
+int CvCivilizationInfo::PY_getDefaultProfession() const
+{
+	return getDefaultProfession();
+}
+
 //======================================================================================================
 //					CvVictoryInfo
 //======================================================================================================
