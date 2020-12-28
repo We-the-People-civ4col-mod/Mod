@@ -4700,8 +4700,25 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		case UNITAI_FLEEING: // R&R, ray, Fleeing Units
 			break;
 
-		case UNITAI_COLONIST:
 		case UNITAI_SETTLER:
+			{
+				// This fixes the bug that caused townguard units to be assigned
+				// the settler ai. Note that we cannot check the unit by itself since most units
+				// have bFound set to true, thus we need to check the default profession as well
+				const ProfessionTypes eProfession = (ProfessionTypes)kUnitInfo.getDefaultProfession();
+				if (eProfession != NO_PROFESSION)
+				{
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+					if (kUnitInfo.isFound() && kProfession.canFound())
+					{
+						bValid = true;
+					}
+				}
+			}
+			break;
+
+		case UNITAI_COLONIST:
 		case UNITAI_WORKER:
 		case UNITAI_MISSIONARY:
 		case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START

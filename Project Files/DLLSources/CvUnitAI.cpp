@@ -1017,6 +1017,11 @@ void CvUnitAI::AI_setUnitAIType(UnitAITypes eNewValue)
 {
 	if (AI_getUnitAIType() != eNewValue)
 	{
+		if (eNewValue == UNITAI_SETTLER)
+		{
+			FAssertMsg(canFound(NULL), "Unit must be able to found to have this UNITAI!");
+		}
+
 		bool bOnMap = (getX_INLINE() != INVALID_PLOT_COORD) && (getY_INLINE() != INVALID_PLOT_COORD);
 
 		if (AI_getUnitAIType() != NO_UNITAI)
