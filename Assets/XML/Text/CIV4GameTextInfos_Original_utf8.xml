@@ -14752,7 +14752,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MOD_REQUIRED</Tag>
-        <English>The save file you have selected requires the following mod to be loaded:[NEWLINE][BOLD]%s1[\BOLD][NEWLINE]The application must restart, ok?</English>
+        <English>The save file you have selected requires the following mod to be loaded:[NEWLINE][BOLD]%s1[\BOLD][NEWLINE]The application must restart, okay?</English>
         <French>La sauvegarde sélectionnée nécessite le chargement du mod suivant : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE] L'application doit être relancée. Confirmer ?</French>
         <German>Für den von Ihnen gewählten Spielstand muss das folgende Mod geladen werden: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE] Die Anwendung wird neu gestartet, okay? </German>
         <Italian>Il salvataggio selezionato richiede il caricamento del seguente mod: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE] Il gioco deve essere riavviato, continuare?</Italian>
