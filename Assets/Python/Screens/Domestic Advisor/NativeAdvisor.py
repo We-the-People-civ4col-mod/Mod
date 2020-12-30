@@ -6,6 +6,7 @@ import ScreenInput
 import CvScreenEnums
 
 import DomesticAdvisorTable
+import BaseAdvisorWindow
 
 ## Based on work from R&R, Robert Surcouf,  Domestic Advisor Screen
 
@@ -14,24 +15,19 @@ gc = CyGlobalContext()
 ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
 
-class NativeAdvisor:
+class NativeAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def __init__(self, parent):
-		self.parent = parent
-		self.drawn = False
-		self.name = "NativeStateClass"
-		self.screenName = self.name + "ListBackground"
+		BaseAdvisorWindow.BaseAdvisorWindow.__init__(self, parent, "NativeStateClass")
+	
 		self.settlementIcon = gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_CHICKEE")).getButton()
 		self.tradeStationChar = gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()
 		self.tradeStationText = u" %c" % self.tradeStationChar
-		self.dirty = True
 		
 		# store selected city as the plot
 		# a plot won't vanish and error handling on plot.isCity is easer than a dead city reference
 		self.settlementPlot = -1
 		self.WIDGET_JUMP_TO_SETTLEMENT_BUTTON = WidgetTypes.NUM_WIDGET_TYPES
 		self.JumpToSettlementButtonName = "NativeAdvisorJumpToSettlementButton"
-		
-		self.tableManager = DomesticAdvisorTable.DomesticAdvisorTable(parent, self.screenName)
 		
 	def getKnownSettlementList(self):
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -72,23 +68,16 @@ class NativeAdvisor:
 		self.settlementPlot = -1
 		self.tableManager.getScreen().hide(self.JumpToSettlementButtonName)
 		
-	def draw(self):
-		if not self.dirty and False:
-			self.tableManager.show()
-			return
+	def drawTableContent(self):
+		
 			
 		self.drawJumpToSettlementButton()
 			
-		self.dirty = False
 		citylist = self.getKnownSettlementList()		
-		if self.tableManager.isNeedInit():
-			self.createTableHeader()
-			
+		
 		self.tableManager.setNumRows(len(citylist))
 		
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		self.tableManager.show()
-		self.tableManager.clearRows()
 		
 		for iNativeCity in range(len(citylist)):
 			pLoopCity = citylist[iNativeCity]
@@ -179,8 +168,3 @@ class NativeAdvisor:
 		
 		self.tableManager.addHeaderChar(gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar(), iCrossWidth)
 		self.tableManager.addHeaderTxt("TXT_KEY_PEDIA_SPECIAL_ABILITIES", 200)
-		
-		self.tableManager.tableHeaderComplete()
-		
-
-	

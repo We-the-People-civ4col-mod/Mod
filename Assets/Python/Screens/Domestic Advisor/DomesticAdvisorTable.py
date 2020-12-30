@@ -17,49 +17,53 @@ ArtFileMgr = CyArtFileMgr()
 localText = CyTranslator()
 
 class DomesticAdvisorTable:
-	def __init__(self, parent, szName):
+	def __init__(self, parent):
 		self.parent = parent
-		self.name = szName
-		self.iWidth = parent.nTableWidth
+		self.MainAdvisor = parent.parent
+		self.iWidth = self.MainAdvisor.nTableWidth
 		self.iWidthLeft = self.iWidth
-		self.iRowHeight = self.parent.ROW_HIGHT
+		self.iRowHeight = self.MainAdvisor.ROW_HIGHT
 		self.columnWidth = []
+		self.currentPage = 0
+		self.pagesNotSet = []
+		
+		self.pagesNotSet.append(True)
 		
 	def show(self):
-		self.getScreen().show( self.name )
+		self.getScreen().show( self.currentPageName() )
 	
 	def hide(self):
-		self.getScreen().hide( self.name )
+		self.getScreen().hide( self.currentPageName() )
 		
 	def isNeedInit(self):
 		return len(self.columnWidth) == 0
 		
 	def enableSelect(self):
-		self.getScreen().enableSelect( self.name, True )
+		self.getScreen().enableSelect( self.currentPageName(), True )
 		
 	def enableSort(self):
-		self.getScreen().enableSort( self.name )
+		self.getScreen().enableSort( self.currentPageName() )
 		
 	def tableInit(self):
 		self.columnWidth = []
 		self.columnName = []
-		
-	def tableHeaderComplete(self, bAllowSelect = True, bAllowSort = True):
-		self.getScreen().addTableControlGFC( self.name, len(self.columnWidth), (self.parent.nScreenWidth - self.iWidth) / 2, 60, self.iWidth, self.parent.nTableHeight, True, False, self.parent.iCityButtonSize, self.parent.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
-		self.getScreen().setStyle( self.name, "Table_StandardCiv_Style" )
+	
+	def setHeader(self):
+		if (self.pagesNotSet[self.currentPage]):
+			self.pagesNotSet[self.currentPage] = False
+			self.tableHeaderComplete()
+	
+	def tableHeaderComplete(self):
+		self.getScreen().addTableControlGFC( self.currentPageName(), len(self.columnWidth), (self.MainAdvisor.nScreenWidth - self.iWidth) / 2, 60, self.iWidth, self.MainAdvisor.nTableHeight, True, False, self.MainAdvisor.iCityButtonSize, self.MainAdvisor.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
+		self.getScreen().setStyle( self.currentPageName(), "Table_StandardCiv_Style" )
 		
 		for i in range(len(self.columnWidth)):
-			self.getScreen().setTableColumnHeader( self.name, i, "<font=2>" + self.columnName[i] + "</font>", self.columnWidth[i] )
-			
-		if bAllowSelect:
-			self.enableSelect()
-		if bAllowSort:
-			self.enableSort()
+			self.getScreen().setTableColumnHeader( self.currentPageName(), i, "<font=2>" + self.columnName[i] + "</font>", self.columnWidth[i] )
 		
 	# note 0 means default height
 	def setNumRows(self, iRows, iHeight = 0):
-		if (iRows != self.getScreen().getTableNumRows(self.name)):
-			self.getScreen().setTableNumRows ( self.name, iRows)
+		if (iRows != self.getScreen().getTableNumRows(self.currentPageName())):
+			self.getScreen().setTableNumRows ( self.currentPageName(), iRows)
 			self.setRowHeight(iHeight)
 		elif iRows == 1:
 			# The table inits to 1 line, not 0
@@ -70,8 +74,8 @@ class DomesticAdvisorTable:
 	def setRowHeight(self, iHeight = 0):
 		if iHeight != 0:
 			self.iRowHeight = iHeight
-		for i in range(self.getScreen().getTableNumRows(self.name)):
-			self.getScreen().setTableRowHeight(self.name, i, self.iRowHeight)
+		for i in range(self.getScreen().getTableNumRows(self.currentPageName())):
+			self.getScreen().setTableRowHeight(self.currentPageName(), i, self.iRowHeight)
 		
 	def addHeaderDirect(self, iWidth, szName):
 		self.columnWidth.append(iWidth)
@@ -82,10 +86,10 @@ class DomesticAdvisorTable:
 		self.addHeaderDirect(iWidth, localText.getText(szName, ()).upper())
 		
 	def addHeaderButton(self, szTitle = ""):
-		self.addHeaderDirect(self.parent.ROW_HIGHT, szTitle)
+		self.addHeaderDirect(self.MainAdvisor.ROW_HIGHT, szTitle)
 		
 	def addHeaderCityName(self, szName = "TXT_KEY_DOMESTIC_ADVISOR_NAME"):
-		self.addHeaderTxt(szName, self.parent.CITY_NAME_COLUMN_WIDTH)
+		self.addHeaderTxt(szName, self.MainAdvisor.CITY_NAME_COLUMN_WIDTH)
 		
 	def addHeaderChar(self, iChar, iWidth = 50):
 		char = (u" %c" % iChar)
@@ -107,38 +111,41 @@ class DomesticAdvisorTable:
 		if self.curColumn >= len(self.columnWidth):
 			self.curRow += 1
 			self.curColumn = 0
-			if self.getScreen().getTableNumRows(self.name) == self.curRow:
-				self.getScreen().appendTableRow( self.name )
-				self.getScreen().setTableRowHeight(self.name, self.curRow, self.parent.ROW_HIGHT)
+			if self.getScreen().getTableNumRows(self.currentPageName()) == self.curRow:
+				self.getScreen().appendTableRow( self.currentPageName() )
+				self.getScreen().setTableRowHeight(self.currentPageName(), self.curRow, self.MainAdvisor.ROW_HIGHT)
 	
 	def addText(self, szText, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL, justified = CvUtil.FONT_LEFT_JUSTIFY):
 		self.progressCell()
-		self.getScreen().setTableText(self.name, self.curColumn, self.curRow, "<font=2>" + szText + "</font>", "", widget, iData1, iData2, justified )
+		self.getScreen().setTableText(self.currentPageName(), self.curColumn, self.curRow, "<font=2>" + szText + "</font>", "", widget, iData1, iData2, justified )
 
 	def addInt(self, iValue, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL, justified = CvUtil.FONT_RIGHT_JUSTIFY):
 		self.progressCell()
-		self.getScreen().setTableInt(self.name, self.curColumn, self.curRow, "<font=2>" + unicode(iValue) + "</font>", "", widget, iData1, iData2, justified )
+		self.getScreen().setTableInt(self.currentPageName(), self.curColumn, self.curRow, "<font=2>" + unicode(iValue) + "</font>", "", widget, iData1, iData2, justified )
 		
 	def drawChar(self, pInstance ):
 		self.progressCell()
 		eChar = u" %c" % pInstance.getChar()
-		self.getScreen().setTableText(self.name, self.curColumn, self.curRow, "<font=2>" + eChar + "</font>", "", pInstance.getWikiWidget(), pInstance.getID(), -1, CvUtil.FONT_LEFT_JUSTIFY )
+		self.getScreen().setTableText(self.currentPageName(), self.curColumn, self.curRow, "<font=2>" + eChar + "</font>", "", pInstance.getWikiWidget(), pInstance.getID(), -1, CvUtil.FONT_LEFT_JUSTIFY )
 		
 	def applyPanel(self):
 		self.progressCell()
-		name = self.name + "-" + str(self.curRow) + "-" + str(self.curColumn)
+		name = self.currentPageName() + "-" + str(self.curRow) + "-" + str(self.curColumn)
 		self.getScreen().addPanel(name, u"", u"", True, False, 0, 0, self.getCellWidth(), self.getCellHeight(), PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		self.getScreen().attachControlToTableCell(name, self.name, self.curRow, self.curColumn )
+		self.getScreen().attachControlToTableCell(name, self.currentPageName(), self.curRow, self.curColumn )
 		return name
 		
 	def addPanelButton(self, buttonArt, widget = WidgetTypes.WIDGET_GENERAL, iData1 = -1, iData2 = -1):
 		name = self.applyPanel()
-		szButtonName = self.name + "Button-" + str(self.curRow) + "-" + str(self.curColumn)
+		szButtonName = self.currentPageName() + "Button-" + str(self.curRow) + "-" + str(self.curColumn)
 		self.getScreen().setImageButtonAt(szButtonName, name, buttonArt, 0, 0, self.getCellWidth(), self.getCellHeight(), widget, iData1, iData2)
 		
 	def skipCell(self):
 		self.addText("")
 
+
+	def currentPageName(self):
+		return self.parent.screenName + str(self.currentPage)
 
 	def getScreen(self):
 		return CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
