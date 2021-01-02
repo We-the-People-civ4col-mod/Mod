@@ -10845,12 +10845,12 @@ ProfessionTypes CvUnit::getProfession() const
 	return m_eProfession;
 }
 
-void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
+bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 {
 	if (!bForce && !canHaveProfession(eProfession, false))
 	{
 		FAssertMsg(false, "Unit can not have profession");
-		return;
+		return false;
 	}
 
 	if (getProfession() != eProfession)
@@ -10885,7 +10885,7 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 					}
 
 					setColonistLocked(bLock);
-					return;
+					return true;
 				}
 			}
 		}
@@ -10920,6 +10920,8 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 			}
 		}
 	}
+
+	return true;
 }
 
 bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot, bool bForceCheck) const
