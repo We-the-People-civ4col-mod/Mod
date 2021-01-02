@@ -3302,7 +3302,8 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 	CvUnit* pBestUnit = NULL;
 	int iBestValue = 0;
 	
-	AI_setWorkforceHack(true);
+	//AI_setWorkforceHack(true);
+
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
@@ -3334,8 +3335,9 @@ CvUnit* CvCityAI::AI_juggleColonist(CvUnit* pUnit)
 			}
 		}
 	}
-	AI_setWorkforceHack(false);
 	
+	//AI_setWorkforceHack(false);
+
 	if (pBestUnit != NULL)
 	{
 		AI_swapUnits(pUnit, pBestUnit);		
