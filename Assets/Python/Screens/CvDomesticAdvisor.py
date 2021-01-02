@@ -5,6 +5,7 @@ import CvUtil
 import ScreenInput
 import CvScreenEnums
 
+import WarehouseAdvisor
 import NativeAdvisor
 
 
@@ -91,6 +92,11 @@ class CvDomesticAdvisor:
 
 		self.Y_EXIT = self.nScreenHeight - 36
 		self.X_EXIT = self.nScreenWidth - 30
+		
+		self.DEFAULT_COLUMN_WIDTH = 50
+		
+		self.iCurrentBuildingSubPage = 0
+		self.iCurrentYieldSubPage = 0
 
 		screen.setRenderInterfaceOnly(True)
 		screen.setRenderFrozenWorld(True)
@@ -116,7 +122,8 @@ class CvDomesticAdvisor:
 		
 		self.GENERAL_STATE            = self.addButton("GeneralState",           "INTERFACE_CITY_MAP_BUTTON")
 		self.PRODUCTION_STATE         = self.addButton("ProductionState",        "INTERFACE_NET_YIELD_BUTTON")
-		self.WAREHOUSE_STATE          = self.addButton("WareHouseState",         "INTERFACE_STORES_BUTTON")
+		self.WAREHOUSE_STATE          = self.addButton("WareHouseState",         "INTERFACE_STORES_BUTTON"           , WarehouseAdvisor.WarehouseAdvisor(self))
+		#self.WAREHOUSE_STATE          = self.addButton("WareHouseState",         "INTERFACE_STORES_BUTTON") #           , WarehouseAdvisor.WarehouseAdvisor(self))
 		self.BUILDING_STATE           = self.addButton("BuildingState",          "INTERFACE_CITY_BUILD_BUTTON")
 		self.IMPORTEXPORT_STATE       = self.addButton("ImportExportState",      "INTERFACE_CITY_GOVENOR_BUTTON")
 		self.CITIZEN_STATE            = self.addButton("CitizenState",           "INTERFACE_CITY_CITIZEN_BUTTON")
@@ -905,12 +912,18 @@ class CvDomesticAdvisor:
 				# auto-generated list creation - start - Nightinggale
 				elif (iData == 100 or iData == 102):
 					# iData == 1 was already taken. (100, 102) - 101 gives the -1/+1 needed
-					new_page = self.CurrentPage + iData - 101
-					
-					if (new_page >= 0 and new_page < len(self.StatePages[self.CurrentState])):
-						screen.hide(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
-						self.CurrentPage = new_page
-						self.drawContents()
+					if self.StateWindow[self.CurrentState] != None:
+						if (iData == 100):
+							self.StateWindow[self.CurrentState].prevPage()
+						else:
+							self.StateWindow[self.CurrentState].nextPage()
+					else:
+						new_page = self.CurrentPage + iData - 101
+						
+						if (new_page >= 0 and new_page < len(self.StatePages[self.CurrentState])):
+							screen.hide(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
+							self.CurrentPage = new_page
+							self.drawContents()
 				# auto-generated list creation - end - Nightinggale
 				elif (iData == 10001):
 					if (self.selectedSelectionGroupHeadUnitID == inputClass.getData2()):

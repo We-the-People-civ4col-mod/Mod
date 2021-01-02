@@ -386,6 +386,9 @@ public:
 	CyTradeRouteGroup* getTradeGroup(int iIndex);	
 	// R&R mod, vetiarvind, trade groups - end
 
+	CyInfoArray* getSpecialBuildingTypes() const;
+	CyInfoArray* getStoredYieldTypes() const;
+
 	int getCivEffectCount(CivEffectTypes eCivEffect) const;
 
 	unsigned int getNumUnitsOnDock() const;

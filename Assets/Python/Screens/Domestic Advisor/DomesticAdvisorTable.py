@@ -18,13 +18,19 @@ localText = CyTranslator()
 
 class DomesticAdvisorTable:
 	def __init__(self, parent):
+		self.iFillWidthWhenOverPercentage = 90
+		self.bFillSinglePage = True
+	
 		self.parent = parent
 		self.MainAdvisor = parent.parent
 		self.iWidth = self.MainAdvisor.nTableWidth
-		self.iWidthLeft = self.iWidth
+		self.defaultColumnWidth = self.MainAdvisor.DEFAULT_COLUMN_WIDTH
 		self.iRowHeight = self.MainAdvisor.ROW_HIGHT
-		self.columnWidth = []
-		self.currentPage = 0
+		self.InfoArray = None
+		self.columnWidth = [[]]
+		self.columnName = [[]]
+		self.columnsOnPage = []
+		self.curPage = 0
 		self.pagesNotSet = []
 		
 		self.pagesNotSet.append(True)
@@ -36,29 +42,25 @@ class DomesticAdvisorTable:
 		self.getScreen().hide( self.currentPageName() )
 		
 	def isNeedInit(self):
-		return len(self.columnWidth) == 0
+		return len(self.columnWidth[0]) == 0
 		
 	def enableSelect(self):
 		self.getScreen().enableSelect( self.currentPageName(), True )
 		
 	def enableSort(self):
 		self.getScreen().enableSort( self.currentPageName() )
-		
-	def tableInit(self):
-		self.columnWidth = []
-		self.columnName = []
 	
 	def setHeader(self):
-		if (self.pagesNotSet[self.currentPage]):
-			self.pagesNotSet[self.currentPage] = False
+		if (self.pagesNotSet[self.currentPage()]):
+			self.pagesNotSet[self.currentPage()] = False
 			self.tableHeaderComplete()
 	
 	def tableHeaderComplete(self):
-		self.getScreen().addTableControlGFC( self.currentPageName(), len(self.columnWidth), (self.MainAdvisor.nScreenWidth - self.iWidth) / 2, 60, self.iWidth, self.MainAdvisor.nTableHeight, True, False, self.MainAdvisor.iCityButtonSize, self.MainAdvisor.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
+		self.getScreen().addTableControlGFC( self.currentPageName(), self.columnsOnCurrentPage(), (self.MainAdvisor.nScreenWidth - self.iWidth) / 2, 60, self.iWidth, self.MainAdvisor.nTableHeight, True, False, self.MainAdvisor.iCityButtonSize, self.MainAdvisor.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
 		self.getScreen().setStyle( self.currentPageName(), "Table_StandardCiv_Style" )
 		
-		for i in range(len(self.columnWidth)):
-			self.getScreen().setTableColumnHeader( self.currentPageName(), i, "<font=2>" + self.columnName[i] + "</font>", self.columnWidth[i] )
+		for i in range(len(self.columnWidth[self.currentPage()])):
+			self.getScreen().setTableColumnHeader( self.currentPageName(), i, "<font=2>" + self.columnName[self.currentPage()][i] + "</font>", self.columnWidth[self.currentPage()][i] )
 		
 	# note 0 means default height
 	def setNumRows(self, iRows, iHeight = 0):
@@ -78,9 +80,8 @@ class DomesticAdvisorTable:
 			self.getScreen().setTableRowHeight(self.currentPageName(), i, self.iRowHeight)
 		
 	def addHeaderDirect(self, iWidth, szName):
-		self.columnWidth.append(iWidth)
-		self.columnName.append(szName)
-		self.iWidthLeft -= iWidth
+		self.columnWidth[self.currentPage()].append(iWidth)
+		self.columnName[self.currentPage()].append(szName)
 		
 	def addHeaderTxt(self, szName, iWidth):
 		self.addHeaderDirect(iWidth, localText.getText(szName, ()).upper())
@@ -95,20 +96,78 @@ class DomesticAdvisorTable:
 		char = (u" %c" % iChar)
 		self.addHeaderDirect(iWidth, char)
 
+	def addHeaderArrayBuildings(self):
+		self.InfoArray = gc.getPlayer(CyGame().getActivePlayer()).getSpecialBuildingTypes()
+		iTableWidth = self.iWidth - self.columnWidth[0][0] - self.columnWidth[0][1]
+		self.__addHeaderArray(iTableWidth)
+		self.curPage = JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL
+
+	def addHeaderArrayYields(self):
+		self.InfoArray = gc.getPlayer(CyGame().getActivePlayer()).getStoredYieldTypes()
+		iTableWidth = self.iWidth - self.columnWidth[0][0] - self.columnWidth[0][1]
+		self.__addHeaderArray(iTableWidth)
+		self.curPage = JITarrayTypes.JIT_ARRAY_YIELD
+
+	def __addHeaderArray(self, iTableWidth):
+		iMaxColumnsOnPage = iTableWidth // self.defaultColumnWidth
+		iNumColumns = self.InfoArray.getLength()
+		
+		# add sub pages to allow enough room for all of the array content
+		while (iNumColumns > iMaxColumnsOnPage):
+			iNumColumns -= iMaxColumnsOnPage
+			self.columnsOnPage.append(iMaxColumnsOnPage)
+			self.pagesNotSet.append(True)
+			self.columnWidth.append(self.columnWidth[0][:])
+			self.columnName.append(self.columnName[0][:])
+		self.columnsOnPage.append(iNumColumns)
+
+		# fill each sub page with columns
+		for i in range(len(self.columnsOnPage)):
+			self.curPage = i
+			iColumnOffset = len(self.columnWidth)
+		
+			iOffset = self.__getCurrentOffset()
+			iIndex = self.currentPage()
+			iColumn = len(self.columnWidth)
+			
+			iNumColumnsOnPage = self.columnsOnPage[iIndex]
+			
+			iColumnWidth = self.defaultColumnWidth
+			iNumExtraPixels = 0
+			iColumnLength = iColumnWidth * iNumColumnsOnPage
+			
+			iFillPercentage = ((self.iWidth - self.widthLeft() + iColumnLength) * 100) / self.iWidth
+			
+			bFill = self.bFillSinglePage and len(self.columnsOnPage) == 1
+			
+			if (bFill or iFillPercentage > self.iFillWidthWhenOverPercentage):
+				iColumnWidth = int(self.widthLeft() // iNumColumnsOnPage)
+				iNumExtraPixels = self.widthLeft() - (iColumnWidth * iNumColumnsOnPage)
+			
+			for iNum in range(iNumColumnsOnPage):
+				iArrayIndex = iOffset + iNum
+				
+				iWidth = iColumnWidth
+				if (iNum < iNumExtraPixels):
+					iWidth += 1
+				
+				self.addHeaderDirect(iWidth, self.getColumnHeader(iArrayIndex))
+		self.curPage = 0
+
 	def clearRows(self):
 		# removes all rows and sets the counters to be ready to start on the first row
 		self.curRow = -1
-		self.curColumn = len(self.columnWidth)
+		self.curColumn = self.columnsOnCurrentPage()
 
 	def getCellHeight(self):
 		return self.iRowHeight
 	
 	def getCellWidth(self):
-		return self.columnWidth[self.curColumn]
+		return self.columnWidth[self.currentPage()][self.curColumn]
 
 	def progressCell(self):
 		self.curColumn += 1
-		if self.curColumn >= len(self.columnWidth):
+		if self.curColumn >= self.columnsOnCurrentPage():
 			self.curRow += 1
 			self.curColumn = 0
 			if self.getScreen().getTableNumRows(self.currentPageName()) == self.curRow:
@@ -118,6 +177,9 @@ class DomesticAdvisorTable:
 	def addText(self, szText, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL, justified = CvUtil.FONT_LEFT_JUSTIFY):
 		self.progressCell()
 		self.getScreen().setTableText(self.currentPageName(), self.curColumn, self.curRow, "<font=2>" + szText + "</font>", "", widget, iData1, iData2, justified )
+
+	def addTextRight(self, szText, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL):
+		self.addText(szText, iData1, iData2, widget, CvUtil.FONT_RIGHT_JUSTIFY)
 
 	def addInt(self, iValue, iData1 = -1, iData2 = -1, widget = WidgetTypes.WIDGET_GENERAL, justified = CvUtil.FONT_RIGHT_JUSTIFY):
 		self.progressCell()
@@ -143,9 +205,87 @@ class DomesticAdvisorTable:
 	def skipCell(self):
 		self.addText("")
 
+	def autofillRow(self, iCity, pCity):
+		iOffset = self.__getCurrentOffset()
+		iNumColumnsOnPage = self.columnsOnPage[self.currentPage()]
+		for i in range(iNumColumnsOnPage):
+			iType = self.InfoArray.get(i + iOffset)
+			self.parent.drawColonyCell(iCity, pCity, iType, self.getInfoForType(iType))
+		
+	def __getCurrentOffset(self):
+		iOffset = 0
+		iPage = self.currentPage()
+		if (iPage > 0):
+			for i in range(iPage):
+				iOffset += self.columnsOnPage[i]
+		return iOffset
+	
+	def columnsOnCurrentPage(self):
+		return len(self.columnWidth[self.currentPage()])
+		
+	def widthLeft(self):
+		iWidth = self.iWidth
+		for i in (self.columnWidth[self.currentPage()]):
+			iWidth -= i
+		return iWidth
+	
+	def getColumnHeader(self, iColumn):
+		info = self.getInfoForColumn(iColumn)
+		if (info != None):
+			return (u" %c" % info.getChar())
+			
+		return ""
+	
+	def getInfoForType(self, iType):
+		if (self.InfoArray != None):
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
+				return gc.getSpecialBuildingInfo(iType)
+			if (self.InfoArray.getType(0) == JITarrayTypes.JIT_ARRAY_YIELD):
+				return gc.getYieldInfo(iType)
+			
+		return None
+	
+	def getInfoForColumn(self, iColumn):
+		if (self.InfoArray != None):
+			return self.getInfoForType(self.InfoArray.get(iColumn))
+			
+		return None
+
+	def nextPage(self):
+		self.setPage(self.currentPage() + 1)
+		
+	def prevPage(self):
+		self.setPage(self.currentPage() - 1)
+		
+	def isFirstPage(self):
+		return self.currentPage() == 0
+		
+	def isLastPage(self):
+		return (self.currentPage() + 1) == self.numPages()
+
+	def currentPage(self):
+		if (self.curPage ==JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
+			return self.MainAdvisor.iCurrentBuildingSubPage
+		if (self.curPage == JITarrayTypes.JIT_ARRAY_YIELD):
+			return self.MainAdvisor.iCurrentYieldSubPage
+		return self.curPage
 
 	def currentPageName(self):
-		return self.parent.screenName + str(self.currentPage)
+		return self.parent.screenName + str(self.currentPage())
+
+	def numPages(self):
+		return len(self.columnWidth)
+
+	def setPage(self, iPage):
+		if (iPage >= 0 and iPage < self.numPages() and iPage != self.currentPage()):
+			self.parent.hide()
+			if (self.curPage == JITarrayTypes.JIT_ARRAY_BUILDING_SPECIAL):
+				self.MainAdvisor.iCurrentBuildingSubPage = iPage
+			elif (self.curPage == JITarrayTypes.JIT_ARRAY_YIELD):
+				self.MainAdvisor.iCurrentYieldSubPage = iPage
+			else:
+				self.curPage = iPage
+			self.parent.draw()
 
 	def getScreen(self):
 		return CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )

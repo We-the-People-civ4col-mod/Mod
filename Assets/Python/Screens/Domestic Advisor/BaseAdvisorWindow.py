@@ -27,7 +27,22 @@ class BaseAdvisorWindow:
 
 	# fill the cells of the table
 	def drawTableContent(self):
-		return
+		self.drawEachColonyLine()
+
+	def drawEachColonyLine(self):
+		self.tableManager.clearRows()
+		self.tableManager.setNumRows(len(self.parent.Cities))
+		for iCity in range(len(self.parent.Cities)):
+			pLoopCity = self.parent.Cities[iCity]
+			self.tableManager.addPanelButton(ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION").getPath(), WidgetTypes.WIDGET_ZOOM_CITY, pLoopCity.getOwner(), pLoopCity.getID())
+			self.tableManager.addText(pLoopCity.getName())
+			self.drawColonyRow(iCity, pLoopCity)
+			
+	def drawColonyRow(self, iCity, pCity):
+		self.tableManager.autofillRow(iCity, pCity)
+		
+	def drawColonyCell(self, iCity, pCity, iType, info):
+		self.tableManager.skipCell()
 
 	# set custom help
 	def getWidgetHelp(self, argsList):
@@ -47,7 +62,6 @@ class BaseAdvisorWindow:
 
 	def createTableHeader(self):
 		# create table headers
-		self.tableManager.tableInit()
 		self.tableManager.addHeaderButton()
 		
 		# some rows here
@@ -59,6 +73,20 @@ class BaseAdvisorWindow:
 	def setSortSelect(self):
 		self.tableManager.enableSelect()
 		self.tableManager.enableSort()
+
+	# left/right arrow sub pages
+	# in most cases the table manager can handle this automatic, but it is possible to override here if needed
+	def nextPage(self):
+		self.tableManager.nextPage()
+		
+	def prevPage(self):
+		self.tableManager.prevPage()
+		
+	def isFirstPage(self):
+		return self.tableManager.isFirstPage()
+		
+	def isLastPage(self):
+		return self.tableManager.isLastPage()
 
 	###
 	### the rest of the methods are unlikely to need being overwritten

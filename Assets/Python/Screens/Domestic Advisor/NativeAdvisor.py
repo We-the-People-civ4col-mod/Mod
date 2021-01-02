@@ -152,8 +152,6 @@ class NativeAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		
 	def createTableHeader(self):
 		# create table headers
-		
-		self.tableManager.tableInit()
 		self.tableManager.addHeaderButton()
 		self.tableManager.addHeaderCityName()
 		self.tableManager.addHeaderCityName("CIV")

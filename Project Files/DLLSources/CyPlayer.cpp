@@ -17,6 +17,7 @@
 #include "CvGlobals.h"
 #include "CyTradeRoute.h"
 #include "CyTradeRouteGroup.h" // R&R mod, vetiarvind, trade groups
+#include "CyData.h"
 
 
 CyPlayer::CyPlayer() : m_pPlayer(NULL)
@@ -1505,6 +1506,28 @@ CyTradeRouteGroup* CyPlayer::getTradeGroup(int iIndex)
 }
 
 // R&R mod, vetiarvind, trade groups - end
+
+CyInfoArray* CyPlayer::getSpecialBuildingTypes() const
+{
+	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
+
+	BoolArray BA(JIT_ARRAY_BUILDING_SPECIAL, true);
+
+	return new CyInfoArray(BA);
+}
+
+CyInfoArray* CyPlayer::getStoredYieldTypes() const
+{
+	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
+
+	BoolArray BA(JIT_ARRAY_YIELD);
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
+	{
+		BA.set(true, eYield);
+	}
+	return new CyInfoArray(BA);
+}
 
 // CivEffect
 int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const
