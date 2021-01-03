@@ -251,7 +251,10 @@ void CvCityAI::AI_assignWorkingPlots()
 		iCount++;
 		if (iCount > iMaxIterations)
 		{
-			FAssertMsg(false, "AI plot assignment confusion");
+			CvWString szTempBuffer;
+			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!", pUnit->getNameAndProfession().GetCString(), getName().GetCString());
+			std::string s(szTempBuffer.begin(), szTempBuffer.end());
+			FAssertMsg(false, s.c_str());
 			break;
 		}
 	}
@@ -3370,16 +3373,30 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	pUnitA->setProfession(NO_PROFESSION);
 	pUnitB->setProfession(NO_PROFESSION);
 
-	pUnitA->setProfession(eProfessionB);
+	const bool bResA = pUnitA->setProfession(eProfessionB);
 	if (pPlotB != NULL)
 	{
 		setUnitWorkingPlot(pPlotB, pUnitA->getID());
 	}
 	
-	pUnitB->setProfession(eProfessionA);
+	const bool bResB = pUnitB->setProfession(eProfessionA);
+
+	while (!bResB)
+	{
+		const bool bRes = pUnitB->setProfession(eProfessionA);
+	}
+
 	if (pPlotA != NULL)
 	{
 		setUnitWorkingPlot(pPlotA, pUnitB->getID());
+	}
+
+	if (!(bResA && bResB))
+	{
+		CvWString szTempBuffer;	
+		szTempBuffer.Format(L"Units: %s and %s in city: %s failed to swap!", pUnitA->getNameAndProfession().GetCString(), pUnitB->getNameAndProfession().GetCString(), getName().GetCString());
+		std::string s(szTempBuffer.begin(), szTempBuffer.end());
+		FAssertMsg(false, s.c_str());
 	}
 }
 
