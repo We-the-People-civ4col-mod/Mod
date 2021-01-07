@@ -2417,4 +2417,64 @@
         <Italian>Russian Empire</Italian>
         <Spanish>Russian Empire</Spanish>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SHUAR_DESC</Tag>
+        <English>Shuar</English>
+        <French>
+            <Text>Shuars</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Shuar</German>
+        <Italian>
+            <Text>Shuar</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Shuar</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_MAYA_DESC</Tag>
+        <English>Maya Empire</English>
+        <French>
+            <Text>Empire Maya</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Maya-St&#228;dtebund</German>
+        <Italian>
+            <Text>Impero Maya</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Imperio Maya</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_TEHUELCHE_DESC</Tag>
+        <English>Tehuelche</English>
+        <French>
+            <Text>Tehuelche</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>Tehuelche</German>
+        <Italian>
+            <Text>Tehuelche</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Tehuelche</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+    </TEXT>
 </Civ4GameText>
