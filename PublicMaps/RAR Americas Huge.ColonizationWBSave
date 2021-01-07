@@ -13207,7 +13207,7 @@ BeginPlot
 	x=14,y=104
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -22664,7 +22664,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=104
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -28432,7 +28432,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=95
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -33821,7 +33821,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=38,y=92
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
