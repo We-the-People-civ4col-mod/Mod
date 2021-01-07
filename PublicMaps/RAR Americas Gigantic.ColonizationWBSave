@@ -53944,7 +53944,7 @@ BeginPlot
 	x=34,y=202
 	isNOfRiver
 	RiverWEDirection=1
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -61411,7 +61411,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=154
-	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -62972,7 +62971,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=40,y=166
-	BonusType=BONUS_GIANT_TREE
 	FeatureType=FEATURE_LIGHT_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -67453,7 +67451,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=153
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=2
@@ -67796,7 +67794,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=43,y=210
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -78229,7 +78227,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=201
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -94596,7 +94594,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=199
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -106400,7 +106398,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=69,y=193
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -110879,7 +110877,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=187
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -110957,7 +110955,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=200
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=2
@@ -116864,7 +116862,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=76,y=194
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -124294,7 +124292,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=81,y=187
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -130252,7 +130250,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=85,y=190
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -142117,7 +142115,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=93,y=197
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -144625,7 +144623,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=95,y=108
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_TIMBER
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=1
@@ -145057,7 +145055,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=95,y=187
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -155338,7 +155336,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=102,y=189
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
@@ -159860,7 +159858,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=105,y=194
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	ImprovementType=IMPROVEMENT_GOODY_HUT2
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
@@ -170304,7 +170302,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=112,y=190
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=2
@@ -195853,7 +195851,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=129,y=238
-	BonusType=BONUS_GIANT_TREE
+	BonusType=BONUS_BOREAL_FOREST
 	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=1
