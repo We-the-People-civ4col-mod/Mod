@@ -1853,6 +1853,35 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	}
 }
 
+CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
+{
+	CvWString szString;
+
+	switch (eUnitAIState)
+	{
+	case NO_UNITAI_STATE: szString = L"NO_UNITAI_STATE"; break;
+	case UNITAI_STATE_DEFAULT: szString = L"UNITAI_STATE_DEFAULT"; break;
+	case UNITAI_STATE_BEARING_GIFTS: szString = L"UNITAI_STATE_BEARING_GIFTS"; break;
+	case UNITAI_STATE_RETURN_HOME: szString = L"UNITAI_STATE_RETURN_HOME"; break;
+	case UNITAI_STATE_WANDER: szString = L"UNITAI_STATE_WANDER"; break;
+	case UNITAI_STATE_RAIDING_PARTY: szString = L"UNITAI_STATE_RAIDING_PARTY"; break;
+	case UNITAI_STATE_BEARING_TRADE: szString = L"UNITAI_STATE_BEARING_TRADE"; break;
+	case UNITAI_STATE_GUARDING: szString = L"UNITAI_STATE_GUARDING"; break;
+	case UNITAI_STATE_ADVANCING: szString = L"UNITAI_STATE_ADVANCING"; break;
+	case UNITAI_STATE_GROUPING: szString = L"UNITAI_STATE_GROUPING"; break;
+	case UNITAI_STATE_CHARGING: szString = L"UNITAI_STATE_CHARGING"; break;
+	case UNITAI_STATE_RETREATING: szString = L"UNITAI_STATE_RETREATING"; break;
+	case UNITAI_STATE_PICKUP: szString = L"UNITAI_STATE_PICKUP"; break;
+	case UNITAI_STATE_PURCHASED: szString = L"UNITAI_STATE_PURCHASED"; break;
+	case UNITAI_STATE_SELL_TO_NATIVES: szString = L"UNITAI_STATE_SELL_TO_NATIVES"; break;
+	case UNITAI_STATE_SAIL: szString = L"UNITAI_STATE_SAIL"; break;
+	default: szString = CvWString::format(L"UNKOWN_UNITAI_STATE(%d)", eUnitAIState); break;
+	}
+
+	return szString;
+}
+
+
 /// post load function - start - Nightinggale
 //
 // This function is called whenever a savegame finish loading

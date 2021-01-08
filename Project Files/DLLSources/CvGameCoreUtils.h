@@ -327,6 +327,7 @@ void getActivityTypeString(CvWString& szString, ActivityTypes eActivityType);
 void getMissionTypeString(CvWString& szString, MissionTypes eMissionType);
 void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI);
 void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
+CvWString getUnitAIStateString(UnitAIStates eUnitAIState);
 
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);

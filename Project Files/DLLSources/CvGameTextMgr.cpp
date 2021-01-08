@@ -478,7 +478,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 
 	if (GC.getGameINLINE().isDebugMode() && !bAlt && !bShift && (pUnit->AI_getUnitAIType() != NO_UNITAI))
 	{
-	    szTempBuffer.Format(L" (%s (%d))", GC.getUnitAIInfo(pUnit->AI_getUnitAIType()).getDescription(), pUnit->AI_getUnitAIState());
+	    szTempBuffer.Format(L" %s %s\n", GC.getUnitAIInfo(pUnit->AI_getUnitAIType()).getDescription(), getUnitAIStateString(pUnit->AI_getUnitAIState()).GetCString());
 		szString.append(szTempBuffer);
 	}
 
