@@ -370,6 +370,9 @@ void CvPlot::read(CvSavegameReader reader)
 	
 	// Loading done. Set up the cache (if any).
 	updateImpassable();
+
+	setSeeFromLevelCache();
+	setSeeThroughLevelCache();
 }
 
 void CvPlot::write(CvSavegameWriter writer)

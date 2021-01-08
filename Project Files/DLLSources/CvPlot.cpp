@@ -1210,6 +1210,7 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 						}
 					}
 				}
+				*/
 			}
 		}
 	}
@@ -1319,7 +1320,6 @@ CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int orig
 						}
 					}
 				}
-				*/
 			}
 		}
 	}
