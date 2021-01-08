@@ -139,6 +139,7 @@ public:
 protected:
 
 	void uninit();
+	bool canGainAchievement() const;
 
 public:
 

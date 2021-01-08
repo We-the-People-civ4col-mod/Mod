@@ -88,12 +88,12 @@ public:
 	int getNearestLandArea() const;
 	CvPlot* getNearestLandPlot() const;
 
-	int seeFromLevel(TeamTypes eTeam) const;
+	int seeFromLevel() const;
 	int seeThroughLevel() const;
 	void changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit);
 	bool canSeePlot(CvPlot *plot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const;
-	bool canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const;
-	bool shouldProcessDisplacementPlot(int dx, int dy, int range, DirectionTypes eFacingDirection) const;
+	CvPlot* canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const;
+	bool shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacingDirection) const;
 	void updateSight(bool bIncrement);
 	void updateSeeFromSight(bool bIncrement);
 	bool canHaveBonus(BonusTypes eBonus, bool bIgnoreLatitude = false) const;
@@ -472,7 +472,8 @@ protected:
 	short m_iRiverCrossingCount;
 	short m_iDistanceToOcean;
 	short m_iCrumbs;
-
+	signed char m_seeFromLevelCache;
+	signed char m_seeThroughLevelCache;
 	// Super Forts begin *canal* *choke*
 	int m_iCanalValue;
 	int m_iChokeValue;
@@ -568,6 +569,8 @@ public:
 	// Cache the computation of the max visibility range
 	static void setMaxVisibilityRangeCache();
 protected:
+	void setSeeFromLevelCache();
+	void setSeeThroughLevelCache();
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
 	// CvPlot::hasYield cache - end - Nightinggale

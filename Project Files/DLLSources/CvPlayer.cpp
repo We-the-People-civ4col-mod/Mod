@@ -13170,29 +13170,57 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 
 	if (!isEmpty(kTrigger.getPythonCanDo()))
 	{
-		long lResult;
-
-		CyArgsList argsList;
-		argsList.add(gDLL->getPythonIFace()->makePythonObject(pTriggerData));
-
-		gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kTrigger.getPythonCanDo(), argsList.makeFunctionArgs(), &lResult);
-
-		if (0 == lResult)
+		// Fastpath for event trigger callbacks:
+		// Before we invoke the slow python callback, check if we can obtain the result directly
+		if (0 == strcmp(kTrigger.getPythonCanDo(), "isPlayable"))
 		{
-			deleteEventTriggered(pTriggerData->getID());
-			return NULL;
+			if (!isPlayable())
+			{	
+				return NULL;
+			}
 		}
-
-		// python may change pTriggerData
-		pCity = getCity(pTriggerData->m_iCityId);
-		pPlot = GC.getMapINLINE().plot(pTriggerData->m_iPlotX, pTriggerData->m_iPlotY);
-		pUnit = getUnit(pTriggerData->m_iUnitId);
-		eOtherPlayer = pTriggerData->m_eOtherPlayer;
-		if (NO_PLAYER != eOtherPlayer)
+		else if (0 == strcmp(kTrigger.getPythonCanDo(), "isHuman"))
 		{
-			pOtherPlayerCity = GET_PLAYER(eOtherPlayer).getCity(pTriggerData->m_iOtherPlayerCityId);
+			if (!isHuman())
+			{
+				return NULL;
+			}
 		}
-		eBuilding = pTriggerData->m_eBuilding;
+		else if (0 == strcmp(kTrigger.getPythonCanDo(), "TriggerChance"))
+		{
+			const EventTypes eEvent = (EventTypes)kTrigger.getEvent(0);
+			const CvEventInfo& kEvent = GC.getEventInfo(eEvent);
+			if (GC.getGameINLINE().getSorenRandNum(1000, "(c) TAC 2010 Events") >= kEvent.getGenericParameter(3))
+			{
+				return NULL;
+			}
+		}
+		else
+		{
+			long lResult;
+
+			CyArgsList argsList;
+			argsList.add(gDLL->getPythonIFace()->makePythonObject(pTriggerData));
+
+			gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kTrigger.getPythonCanDo(), argsList.makeFunctionArgs(), &lResult);
+
+			if (0 == lResult)
+			{
+				deleteEventTriggered(pTriggerData->getID());
+				return NULL;
+			}
+
+			// python may change pTriggerData
+			pCity = getCity(pTriggerData->m_iCityId);
+			pPlot = GC.getMapINLINE().plot(pTriggerData->m_iPlotX, pTriggerData->m_iPlotY);
+			pUnit = getUnit(pTriggerData->m_iUnitId);
+			eOtherPlayer = pTriggerData->m_eOtherPlayer;
+			if (NO_PLAYER != eOtherPlayer)
+			{
+				pOtherPlayerCity = GET_PLAYER(eOtherPlayer).getCity(pTriggerData->m_iOtherPlayerCityId);
+			}
+			eBuilding = pTriggerData->m_eBuilding;
+		}
 	}
 
 	std::vector<CvWString> aszTexts;
@@ -13423,17 +13451,43 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 
 	if (!isEmpty(kEvent.getPythonCanDo()))
 	{
-		long lResult;
-
-		CyArgsList argsList;
-		argsList.add(eEvent);
-		argsList.add(gDLL->getPythonIFace()->makePythonObject(&kTriggeredData));
-
-		gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kEvent.getPythonCanDo(), argsList.makeFunctionArgs(), &lResult);
-
-		if (0 == lResult)
+		// Fastpath for event trigger callbacks:
+		// Before we invoke the slow python callback, check if we can obtain the result directly
+		if (0 == strcmp(kEvent.getPythonCanDo(), "isPlayable"))
 		{
-			return false;
+			if (!isPlayable())
+			{
+				return false;
+			}
+		}
+		else if (0 == strcmp(kEvent.getPythonCanDo(), "isHuman"))
+		{
+			if (!isHuman())
+			{
+				return false;
+			}
+		}
+		else if (0 == strcmp(kEvent.getPythonCanDo(), "TriggerChance"))
+		{
+			if (GC.getGameINLINE().getSorenRandNum(1000, "(c) TAC 2010 Events") >= kEvent.getGenericParameter(3))
+			{
+				return false;
+			}
+		}
+		else
+		{
+			long lResult;
+
+			CyArgsList argsList;
+			argsList.add(eEvent);
+			argsList.add(gDLL->getPythonIFace()->makePythonObject(&kTriggeredData));
+
+			gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kEvent.getPythonCanDo(), argsList.makeFunctionArgs(), &lResult);
+
+			if (0 == lResult)
+			{
+				return false;
+			}
 		}
 	}
 
@@ -18648,8 +18702,25 @@ void CvPlayer::gainAchievement(AchieveTypes eAchieve, bool bAnnounce, CvPlot* pP
 	}
 }
 
+bool CvPlayer::canGainAchievement() const
+{
+	const CvPlayerAI& kPlayer = GET_PLAYER(getID());
+
+	// Only European players may gain achievements
+	if (kPlayer.getParent() != NO_PLAYER)
+		return true;
+	// Natives, animals/pirates, kings and the church may not
+	else
+		return false;
+}
+
 void CvPlayer::doAchievements(bool afterMove)
 {
+	if (!canGainAchievement())
+	{
+		return;
+	}
+
 	if (GC.getGameINLINE().getGameTurn() < 1 && !afterMove)
 	{
 		return;

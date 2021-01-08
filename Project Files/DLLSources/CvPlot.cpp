@@ -45,6 +45,10 @@ CvPlot::CvPlot()
 
 	m_szScriptData = NULL;
 
+	m_seeFromLevelCache = -1;
+	m_seeThroughLevelCache = -1;
+
+
 	reset(0, 0, true);
 }
 
@@ -1049,8 +1053,13 @@ CvPlot* CvPlot::getNearestLandPlot() const
 	return getNearestLandPlotInternal(0);
 }
 
+int CvPlot::seeFromLevel() const
+{
+	FAssertMsg(m_seeFromLevelCache != -1, "Cache has not been initialized!");
+	return m_seeFromLevelCache;
+}
 
-int CvPlot::seeFromLevel(TeamTypes eTeam) const
+void CvPlot::setSeeFromLevelCache()
 {
 	int iLevel;
 
@@ -1080,11 +1089,16 @@ int CvPlot::seeFromLevel(TeamTypes eTeam) const
 		iLevel += GC.getSEAWATER_SEE_FROM_CHANGE();
 	}
 
-	return iLevel;
+	m_seeFromLevelCache = iLevel;
 }
 
-
 int CvPlot::seeThroughLevel() const
+{
+	FAssertMsg(m_seeThroughLevelCache != -1, "Cache has not been initialized!");
+	return m_seeThroughLevelCache;
+}
+
+void CvPlot::setSeeThroughLevelCache()
 {
 	int iLevel;
 
@@ -1112,7 +1126,7 @@ int CvPlot::seeThroughLevel() const
 		iLevel += GC.getSEAWATER_SEE_FROM_CHANGE();
 	}
 
-	return iLevel;
+	m_seeThroughLevelCache = iLevel;
 }
 
 
@@ -1135,31 +1149,37 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 	}
 
 	//fill invisible types
-	std::vector<InvisibleTypes> aSeeInvisibleTypes;
+	
+	InvisibleTypes aSeeInvisibleTypes[NUM_INVISIBLE_TYPES];
+
+	int iSeeInvisibleTypesCount = 0;
+
 	if (NULL != pUnit)
 	{
-		for(int i=0;i<pUnit->getNumSeeInvisibleTypes();i++)
+		for (int i = 0; i < pUnit->getNumSeeInvisibleTypes(); i++)
 		{
-			aSeeInvisibleTypes.push_back(pUnit->getSeeInvisibleType(i));
+			aSeeInvisibleTypes[i] = pUnit->getSeeInvisibleType(i);
+			iSeeInvisibleTypesCount++;
 		}
 	}
 
-	if(aSeeInvisibleTypes.size() == 0)
+	if (iSeeInvisibleTypesCount == 0)
 	{
-		aSeeInvisibleTypes.push_back(NO_INVISIBLE);
+		aSeeInvisibleTypes[0] = NO_INVISIBLE;
+		iSeeInvisibleTypesCount++;
 	}
 
 	//check one extra outer ring
 	iRange++;
 
-	for(int i=0;i<(int)aSeeInvisibleTypes.size();i++)
+	for (int i = 0; i < iSeeInvisibleTypesCount; i++)
 	{
 		for (int dx = -iRange; dx <= iRange; dx++)
 		{
 			for (int dy = -iRange; dy <= iRange; dy++)
 			{
 				//check if in facing direction
-				if (shouldProcessDisplacementPlot(dx, dy, iRange - 1, eFacingDirection))
+				if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
 				{
 					bool outerRing = false;
 					if ((abs(dx) == iRange) || (abs(dy) == iRange))
@@ -1168,16 +1188,16 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 					}
 
 					//check if anything blocking the plot
-					if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing))
+					CvPlot* const pPlot = canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing);
+					if (pPlot != NULL)
 					{
-						CvPlot* pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
-						if (NULL != pPlot)
-						{
-							pPlot->changeVisibilityCount(eTeam, ((bIncrement) ? 1 : -1), aSeeInvisibleTypes[i]);
-						}
+						pPlot->changeVisibilityCount(eTeam, ((bIncrement) ? 1 : -1), aSeeInvisibleTypes[i]);
 					}
 				}
-
+				// This code section is seemingly only useful if direction of sight is being used which is not the 
+				// case for any COLO mod. Its original purpose was to support the BTS mod Afterworld which was the only
+				// mod to my knowledge that made use of this feature
+				/*
 				if (eFacingDirection != NO_DIRECTION)
 				{
 					if((abs(dx) <= 1) && (abs(dy) <= 1)) //always reveal adjacent plots when using line of sight
@@ -1190,6 +1210,7 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 						}
 					}
 				}
+				*/
 			}
 		}
 	}
@@ -1211,7 +1232,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 	dy = dyWrap(dy);
 
 	//check if in facing direction
-	if (shouldProcessDisplacementPlot(dx, dy, iRange - 1, eFacingDirection))
+	if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
 	{
 		bool outerRing = false;
 		if ((abs(dx) == iRange) || (abs(dy) == iRange))
@@ -1220,7 +1241,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 		}
 
 		//check if anything blocking the plot
-		if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing))
+		if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing) != NULL)
 		{
 			return true;
 		}
@@ -1229,7 +1250,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 	return false;
 }
 
-bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
+CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
 {
 	CvPlot *pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
 	if (pPlot != NULL)
@@ -1237,11 +1258,11 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 		//base case is current plot
 		if((dx == 0) && (dy == 0))
 		{
-			return true;
+			return pPlot;
 		}
 
 		//find closest of three points (1, 2, 3) to original line from Start (S) to End (E)
-		//The diagonal is computed first as that guarantees a change in position
+		//The diagonal is computed first as that guarantees a change in position2p
 		// -------------
 		// |   | 2 | S |
 		// -------------
@@ -1270,9 +1291,9 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 			{
 				if(allClosest[i] == closest)
 				{
-					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false))
+					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false) != NULL)
 					{
-						int fromLevel = seeFromLevel(eTeam);
+						int fromLevel = seeFromLevel();
 						int throughLevel = pPlot->seeThroughLevel();
 						if(outerRing) //check strictly higher level
 						{
@@ -1280,9 +1301,9 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 							int passThroughLevel = passThroughPlot->seeThroughLevel();
 							if (fromLevel >= passThroughLevel)
 							{
-								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel(eTeam) > fromLevel)) //either we can see through to it or it is high enough to see from far
+								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel() > fromLevel)) //either we can see through to it or it is high enough to see from far
 								{
-									return true;
+									return pPlot;
 								}
 							}
 						}
@@ -1290,11 +1311,11 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 						{
 							if(fromLevel >= throughLevel) //we can clearly see this level
 							{
-								return true;
+								return pPlot;
 							}
 							else if(firstPlot) //we can also see it if it is the first plot that is too tall
 							{
-								return true;
+								return pPlot;
 							}
 						}
 					}
@@ -1303,10 +1324,10 @@ bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int origina
 		}
 	}
 
-	return false;
+	return NULL;
 }
 
-bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, int range, DirectionTypes eFacingDirection) const
+bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacingDirection) const
 {
 	if(eFacingDirection == NO_DIRECTION)
 	{
@@ -4838,6 +4859,8 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 	}
 }
 
@@ -4896,6 +4919,8 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 	}
 }
 
@@ -4971,6 +4996,8 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 	}
 }
 

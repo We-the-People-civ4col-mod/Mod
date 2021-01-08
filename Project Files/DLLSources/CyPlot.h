@@ -31,7 +31,7 @@ public:
 	bool isRiver();
 	bool isRiverConnection(int /*DirectionTypes*/ eDirection);
 	int getNearestLandArea();
-	int seeFromLevel(int /*TeamTypes*/ eTeam);
+	int seeFromLevel();
 	CyPlot* getNearestLandPlot();
 	int seeThroughLevel();
 	bool canHaveBonus(int /*BonusTypes*/ eBonus, bool bIgnoreLatitude);
