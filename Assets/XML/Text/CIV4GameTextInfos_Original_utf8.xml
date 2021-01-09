@@ -215,7 +215,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_NEEDS_CULTURE_BORDER</Tag>
-        <English>[COLOR_WARNING_TEXT]Must be within our Cultural Borders.[COLOR_REVERT]</English>
+        <English>[COLOR_WARNING_TEXT]Must be within our cultural borders.[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Uniquement à l'intérieur de nos frontières culturelles.[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Muss sich innerhalb unserer kulturellen Grenzen befinden[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Bisogna essere all'interno dei propri confini culturali.[COLOR_REVERT]</Italian>
@@ -303,7 +303,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER</Tag>
-        <English>[ICON_BULLET]Built only in Water</English>
+        <English>[ICON_BULLET]Built only in water</English>
         <French>[ICON_BULLET]Uniquement dans l'eau</French>
         <German>[ICON_BULLET]Kann nur im Wasser errichtet werden</German>
         <Italian>[ICON_BULLET]Si può costruire solo in acqua</Italian>
@@ -311,7 +311,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_ONLY_BUILD_FLATLANDS</Tag>
-        <English>[ICON_BULLET]Can only be built on Flatlands</English>
+        <English>[ICON_BULLET]Can only be built on flatlands</English>
         <French>[ICON_BULLET]Uniquement sur les terres planes</French>
         <German>[ICON_BULLET]Kann nur im Flachland errichtet werden</German>
         <Italian>[ICON_BULLET]Si può costruire solo in pianura</Italian>
@@ -319,7 +319,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_REQUIRES_RIVER</Tag>
-        <English>[ICON_BULLET]Requires River</English>
+        <English>[ICON_BULLET]Requires river</English>
         <French>[ICON_BULLET]Requiert une rivière</French>
         <German>[ICON_BULLET]Erfordert einen Fluss</German>
         <Italian>[ICON_BULLET]Richiede un fiume</Italian>
@@ -1287,7 +1287,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DEMO_SCREEN_LAND_AREA_MEASURE</Tag>
-        <English> Square km</English>
+        <English> Square Km</English>
         <French> Km²</French>
         <German> Quadratkilometer</German>
         <Italian>Km quadrati</Italian>
@@ -4367,7 +4367,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_BUILDING_DEFENSE_DEMAND</Tag>
-        <English>Sire, the defenses of %s1_CityName are very weak, making us an inviting target! Remember, good fences make good neighbors. The construction of [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] would give our people safety at last!</English>
+        <English>Sire, the defenses of %s1_CityName are very weak, making us an inviting target! Remember, good fences make good neighbours. The construction of [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] would give our people safety at last!</English>
         <French>Sire, les défenses de %s1_CityName sont très faibles, ce qui fait de nous une cible bien vulnérable ! N'oubliez pas que mieux vaut prévenir que guérir ! La construction d'un bâtiment ([COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT]) permettrait d'assurer la sécurité de notre peuple !</French>
         <German>%s1_CityName besitzt nur sehr schwache Verteidigungsmöglichkeiten! Das macht sie geradewegs zur Zielscheibe! Ihr wisst ja sicher: Nur gute Zäune gewährleisten gute Nachbarschaft. Wenn wir das Gebäude [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] errichten würden, wäre die Bevölkerung endlich sicher!</German>
         <Italian>Sire, le difese della città %s1_CityName sono deboli e siamo un bersaglio invitante! Ricorda, una buona difesa crea un buon vicinato, La costruzione dell'edificio [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] metterebbe al sicuro la nostra gente!</Italian>
@@ -4375,7 +4375,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_CULTURE_DEMAND</Tag>
-        <English>Sire, %s1_CityName is not producing any culture - this would expand our borders, bringing more of the world under our command! The construction of a [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] would let the culture flow!</English>
+        <English>Sire, %s1_CityName is not encouraging any culture - culture would expand our borders, bringing more of the world under our influence! The construction of a [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] would help our culture to thrive!</English>
         <French>Sire, %s1_CityName ne génère pas de culture. Cela nous permettrait d'élargir nos frontières et ainsi d'accroître notre influence ! La construction d'un bâtiment ([COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT]) permettrait de pallier ce manque !</French>
         <German>In %s1_CityName mangelt es an Kultur, die wir jedoch brauchen, wenn wir unsere Grenzen erweitern und weitere Gebiete der Welt unter unsere Kontrolle bringen wollen! Um den Kulturausstoß zu steigern, sollten wir das Gebäude [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] errichten!</German>
         <Italian>Sire, %s1_CityName non sta producendo cultura che invece ci servirebbe per espandere i nostri confini e controllare il mondo! La costruzione di [NUM2:un:una] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumenterà la cultura!</Italian>
@@ -4471,7 +4471,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEAT_ACCOMPLISHED_MORE</Tag>
-        <English>What's the Big Picture?</English>
+        <English>What's the big picture?</English>
         <French>Alors, comment ça se présente ?</French>
         <German>Wie ist die Lage?</German>
         <Italian>Qual è il grande piano?</Italian>
@@ -5263,7 +5263,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_OUTPUT_NOT_FOUND</Tag>
-        <English>Localized Output not found.</English>
+        <English>Localized output not found.</English>
         <French>Données de sortie localisées non trouvées...</French>
         <German>Kein lokalisierter Text vorhanden ...</German>
         <Italian>Dati localizzati non trovati...</Italian>
@@ -5711,7 +5711,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMAIL_REQUIRED_DESC</Tag>
-        <English>You must enter a valid E-Mail address.</English>
+        <English>You must enter a valid e-mail address.</English>
         <French>Vous devez saisir une adresse e-mail valide.</French>
         <German>Sie müssen eine gültige E-Mail-Adresse angeben.</German>
         <Italian>Devi inserire un indirizzo e-mail valido.</Italian>
@@ -5727,7 +5727,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LOGIN_REQUIRED_DESC</Tag>
-        <English>You must enter a Username.</English>
+        <English>You must enter a username.</English>
         <French>Vous devez saisir un nom d'utilisateur.</French>
         <German>Sie müssen einen Benutzernamen angeben.</German>
         <Italian>Devi inserire uno username.</Italian>
@@ -6191,7 +6191,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WBREAD_FAILURE</Tag>
-        <English>Failed to read worldbuilder file "%s1_WBName"</English>
+        <English>Failed to read Worldbuilder file "%s1_WBName"</English>
         <French>Echec de lecture du fichier "%s1_WBName" de l'éditeur de mondes</French>
         <German>Weltenbauer-Datei "%s1_WBName" konnte nicht gelesen werden</German>
         <Italian>Impossibile leggere il file dell'editor "%1_WBName"</Italian>
@@ -6727,7 +6727,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SP_LOAD_ERROR_DESC</Tag>
-        <English>You are not permitted to load Multiplayer games in Single-Player mode!</English>
+        <English>You are not permitted to load Multiplayer games in Single Player mode!</English>
         <French>Vous ne pouvez pas charger de parties multijoueur en mode Solo !</French>
         <German>Im Einzelspieler-Modus können keine Multiplayer-Spiele geladen werden!</German>
         <Italian>Non ti è permesso caricare partite multigiocatore in modalità giocatore singolo!</Italian>
@@ -7423,7 +7423,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEACE_ERROR</Tag>
-        <English>When trading for a peace treaty, only one player may offer items to another player.  Only gifts may be offered as payment for ending war, no trades can be made.</English>
+        <English>When trading for a peace treaty, only one player may offer items to another player.  Only gifts may be offered as payment for ending war. No trades can be made.</English>
         <French>Lors de la négociation d'un traité de paix, seul l'un des joueurs peut offrir quelque chose à l'autre. Pour faire la paix, seuls les présents sont possibles, aucun échange ne peut être conclu.</French>
         <German>Beim Aushandeln eines Friedensvertrags bietet der anfragende Spieler dem anderen Spieler eine Gegenleistung an. Es findet kein beidseitiger Handel statt und es können ausschließlich Schenkungen angeboten werden.</German>
         <Italian>Quando tratti la pace, solo un giocatore può offrirla a un altro. Come pagamento per il termine di una guerra, sono accettati solamente dei doni e non sono permesse azioni commerciali.</Italian>
@@ -7543,7 +7543,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RECOMMENDED_SPECS_MESSAGE</Tag>
-        <English>Your machine is below recommended specifications. The graphic settings were altered to accomodate this, however, you may experience performance issues.</English>
+        <English>Your machine is below recommended specifications. The graphic settings were altered to accomodate this. You may, however, experience performance issues.</English>
         <French>Votre machine ne correspond pas à la configuration recommandée. Les paramètres graphiques ont été modifiés pour pallier ce problème, mais les performances du programme risquent d'en souffrir.</French>
         <German>Ihr Computer entspricht nicht den empfohlenen Systemspezifikationen. Die Grafikeinstellungen wurden entsprechend angepasst, es könnten jedoch Performance-Probleme auftreten.</German>
         <Italian>Il tuo computer è al di sotto dei requisiti consigliati. Le impostazioni grafiche sono state alterate di conseguenza ma, tuttavia, potrai avere dei problemi di prestazioni.</Italian>
@@ -8519,7 +8519,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BAD_NEW_PASSWORD_DESC</Tag>
-        <English>The password is incorrect for the provided E-Mail address.</English>
+        <English>The password is incorrect for the provided email address.</English>
         <French>Le mot de passe ne correspond pas à l'adresse e-mail fournie.</French>
         <German>Das Passwort für die angegebene E-Mail-Adresse ist nicht korrekt.</German>
         <Italian>La password per l'indirizzo e-mail fornito non è valida.</Italian>
@@ -9872,7 +9872,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_EXTRA_BAD</Tag>
-        <English>%D1: "Past events have drawn our people apart."</English>
+        <English>%D1: "Past events have driven our people apart."</English>
         <French>%D1 : "Les événements passés prouvent qu'on ne peut vous faire confiance."</French>
         <German>%D1: "Die vergangenen Ereignisse haben Eure schlechten Absichten bewiesen. "</German>
         <Italian>%D1: "Gli eventi passati ci hanno dimostrato la tua natura malvagia."</Italian>
@@ -10576,7 +10576,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_6</Tag>
-        <English>Soon my numberless minions shall destroy you all! ([OUR_NAME] declares war!)</English>
+        <English>Soon my innumerable minions shall destroy you all! ([OUR_NAME] declares war!)</English>
         <French>Bientôt, mes innombrables guerriers vous extermineront jusqu'au dernier ! ([OUR_NAME] vous déclare la guerre !)</French>
         <German>Von weit her seit Ihr angereist in diesen Teil der Welt. Eure Rückreise habt Ihr verwirkt.  ([OUR_NAME] erklärt Euch den Krieg!)</German>
         <Italian>I miei innumerevoli seguaci vi stermineranno rapidamente! ([OUR_NAME] dichiara guerra!)</Italian>
@@ -10600,7 +10600,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DECLARE_WAR_9</Tag>
-        <English>I suppose you realize, this means war. ([OUR_NAME] declares war!)</English>
+        <English>I suppose you realize this means war. ([OUR_NAME] declares war!)</English>
         <French>Je suppose que vous réalisez que cela signifie la guerre ? ([OUR_NAME] vous déclare la guerre !)</French>
         <German>Bald werdet Ihr Eurem Schöpfer gegenüber treten. ([OUR_NAME] erklärt Euch den Krieg!)</German>
         <Italian>Credo tu sappia che questo significa guerra. ([OUR_NAME] dichiara guerra!)</Italian>
@@ -10800,7 +10800,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_18</Tag>
-        <English>Peace with honor, [CT_NAME]: that's what it's all about.</English>
+        <English>Peace with honour, [CT_NAME]: that's what it's all about.</English>
         <French>La paix et l'honneur, [CT_NAME], c'est tout ce qui compte.</French>
         <German>Dann lassen wir Euch jetzt unbehelligt abrücken, [CT_NAME].</German>
         <Italian>Una pace onorevole, [CT_NAME], ecco di cosa si tratta.</Italian>
@@ -11912,7 +11912,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FR_NO_DEAL_2</Tag>
-        <English>That's just crazy-talk. I don't think it can be done.</English>
+        <English>That's just crazy talk. I don't think it can be done.</English>
         <French>C'est de la folie. Je ne pense pas que ce soit possible.</French>
         <German>So kommen wir nicht weiter! Ich glaube, das wird nichts mehr!</German>
         <Italian>Queste sono solo chiacchiere da bar. Non credo si possa fare.</Italian>
@@ -12600,7 +12600,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_THANKS_54</Tag>
-        <English>We're done here, right? Well, don't let me keep you. Thanks and good bye.</English>
+        <English>We're done here, right? Well, don't let me keep you. Thanks and good-bye.</English>
         <French>Nous en avons fini, n'est-ce pas ? Je ne vous retiens pas plus longtemps. Merci et au revoir.</French>
         <German>Wir sind hier fertig, oder? Nun, dann lasst Euch nicht aufhalten. Danke und auf Wiedersehen.</German>
         <Italian>Abbiamo finito? Non ti tratterrò oltre, grazie e arrivederci.</Italian>
@@ -13224,7 +13224,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_4</Tag>
-        <English>Give us what we want, [CT_NAME], lest we come and take it.</English>
+        <English>Give us what we want, [CT_NAME], before we come and take it.</English>
         <French>Donnez-nous ce que nous demandons, [CT_NAME], sinon nous viendrons nous servir.</French>
         <German>Gebt uns, was wir verlangen, [CT_NAME]! Andernfalls kommen wir zu Euch und holen es uns.</German>
         <Italian>Dacci ciò che vogliamo, [CT_NAME], altrimenti ce lo verremo a prendere.</Italian>
@@ -13264,7 +13264,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_1</Tag>
-        <English>The honor of [OUR_CIV_SHORT] requires that we ask you to give us a small donation.</English>
+        <English>The honour of [OUR_CIV_SHORT] requires that we ask you to give us a small donation.</English>
         <French>L'honneur des [OUR_CIV_SHORT] exige que nous vous demandions une modeste donation.</French>
         <German>Seid nicht dumm, [CT_NAME], und erfüllt unsere Forderungen.</German>
         <Italian>Per l'onore [OUR_CIV_SHORT:3] dobbiamo chiederti di fare una piccola donazione.</Italian>
@@ -13352,7 +13352,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_7</Tag>
-        <English>I wonder if you would consider giving us a small gift, [CT_NAME], in honor of the timeless friendship between Mighty [OUR_CIV_SHORT] and your weak and defenseless people?</English>
+        <English>I wonder if you would consider giving us a small gift, [CT_NAME], in honour of the timeless friendship between Mighty [OUR_CIV_SHORT] and your weak and defenseless people?</English>
         <French>Je me demandais si vous accepteriez de nous faire un petit cadeau, [CT_NAME], en l'honneur de l'amitié qui lie depuis si longtemps les puissants [OUR_CIV_SHORT] et votre civilisation insignifiante ?</French>
         <German>Ich frage mich, ob Ihr wohl bereit wärt, uns ein kleines Geschenk zu machen, [CT_NAME]?</German>
         <Italian>Mi chiedo se ti andrebbe di offrirci un piccolo dono, [CT_NAME], per onorare la vecchia amicizia tra [OUR_CIV_SHORT:2] e la tua debole gente.</Italian>
@@ -13480,7 +13480,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_REJECTED_POWER_STRONGER_3</Tag>
-        <English>Very well. I suggest that you start cranking out those soldiers, [CT_NAME]. You'll have need of them shortly.</English>
+        <English>Very well. I suggest that you start cranking out those soldiers, [CT_NAME]. Soon you'll need them.</English>
         <French>Fort bien. Je vous conseille de rassembler vos troupes, [CT_NAME]. Vous en aurez besoin très bientôt.</French>
         <German>Keine kluge Entscheidung.</German>
         <Italian>Molto bene. Ti suggerisco di chiamare a raccolta i tuoi soldati, [CT_NAME]. Ne avrai bisogno.</Italian>
@@ -14616,11 +14616,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAIN_MENU_UNLOAD_MOD</Tag>
-        <English>Unload RaR</English>
-        <French>Décharger RaR</French>
-        <German>RaR deaktivieren</German>
-        <Italian>Annulla RaR</Italian>
-        <Spanish>Descargar RaR</Spanish>
+        <English>Unload WTP</English>
+        <French>Décharger WTP</French>
+        <German>WTP deaktivieren</German>
+        <Italian>Annulla WTP</Italian>
+        <Spanish>Descargar WTP</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DIPLOMACY_BUSY</Tag>
@@ -14752,7 +14752,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MOD_REQUIRED</Tag>
-        <English>The save file you have selected requires the following mod to be loaded:[NEWLINE][BOLD]%s1[\BOLD][NEWLINE]The application must restart, ok?</English>
+        <English>The save file you have selected requires the following mod to be loaded:[NEWLINE][BOLD]%s1[\BOLD][NEWLINE]The application must restart, okay?</English>
         <French>La sauvegarde sélectionnée nécessite le chargement du mod suivant : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE] L'application doit être relancée. Confirmer ?</French>
         <German>Für den von Ihnen gewählten Spielstand muss das folgende Mod geladen werden: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE] Die Anwendung wird neu gestartet, okay? </German>
         <Italian>Il salvataggio selezionato richiede il caricamento del seguente mod: [NEWLINE][BOLD]%s1[\BOLD][NEWLINE] Il gioco deve essere riavviato, continuare?</Italian>
