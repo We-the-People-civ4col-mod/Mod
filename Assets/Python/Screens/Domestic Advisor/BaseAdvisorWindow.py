@@ -65,8 +65,6 @@ class BaseAdvisorWindow:
 		self.tableManager.addHeaderButton()
 		
 		# some rows here
-		
-		self.tableManager.tableHeaderComplete()
 
 	# fairly self explanatory. Overwrite and remove unwanted lines.
 	# Tip: if you don't want either, write return because python doesn't allow empty methods.
