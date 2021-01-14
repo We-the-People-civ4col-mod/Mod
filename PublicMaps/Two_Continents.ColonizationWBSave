@@ -18606,7 +18606,7 @@ EndPlot
 BeginPlot
 	x=14,y=128
 	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -23170,7 +23170,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=23
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -25138,7 +25138,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=139
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -29817,7 +29816,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=55
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -30473,7 +30471,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=158
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -32193,7 +32190,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=25,y=17
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -33544,7 +33541,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=26,y=25
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -34789,7 +34785,7 @@ EndPlot
 BeginPlot
 	x=27,y=15
 	ImprovementType=IMPROVEMENT_GOODY_HUT3
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -36066,7 +36062,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=28,y=12
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -37853,7 +37849,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=96
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -38124,7 +38120,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=29,y=143
-	FeatureType=FEATURE_FOREST, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -41482,7 +41477,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=58
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -42275,7 +42269,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=32,y=189
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
@@ -48470,7 +48463,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=134
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -62150,7 +62142,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=48,y=19
-	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -69889,7 +69880,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=19
-	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -70243,7 +70233,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=54,y=78
-	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -75340,7 +75329,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=64
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
@@ -78256,7 +78244,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=118
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -97057,7 +97045,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=75,y=18
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -115350,7 +115338,7 @@ EndPlot
 BeginPlot
 	x=89,y=25
 	ImprovementType=IMPROVEMENT_GOODY_HUT3
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -117931,7 +117919,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=91,y=23
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -121674,7 +121662,7 @@ EndPlot
 BeginPlot
 	x=93,y=203
 	ImprovementType=IMPROVEMENT_GOODY_HUT3
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -121828,7 +121816,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=94,y=15
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
@@ -124369,7 +124357,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=96,y=9
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
