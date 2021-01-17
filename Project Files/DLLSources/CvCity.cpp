@@ -590,7 +590,7 @@ void CvCity::doTurn()
 	// Without a profession, the unit is hidden in the colony screen, hence no way for the player to change the profession
 	// The code here will kick out such units, which will make them available to the player again
 	// Doesn't fix the cause of the problem, but this way the player will regain lost units during new turn event
-	if (!isOccupation())
+	if (isHuman() && !isOccupation())
 	{
 		std::vector<CvUnit*> stuckUnits;
 		for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -603,10 +603,14 @@ void CvCity::doTurn()
 			}
 		}
 
-		if (stuckUnits.size() > 0)
+		// At least 1 pop must remain
+		if (stuckUnits.size() > 0 && (m_aPopulationUnits.size() - stuckUnits.size() > 0))
 		{
+			// The AI will reassign its colonist the next turn so only trigger this (i.e. warn)
+			// human players
 			FAssertMsg(false, "Citizen in colony stuck with NO_PROFESSION");
-			ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession();
+
+			const ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession();
 
 			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
 			{
