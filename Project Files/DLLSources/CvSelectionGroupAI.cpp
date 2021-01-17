@@ -1085,6 +1085,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		}
 	}
 
+	bool bNoRoute = true;
+
 	//We need to iterate over every source city, and see if there's anything which needs moving to the respective destination city.
 	//We apply some bias to the city we are presently at, but not too much - sometimes empty runs need to be made...
 	//Basically this looks at the entire NEXT trade run (source-city to dest-city), with some bias given towards
@@ -1107,8 +1109,16 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			if(pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0)
 			{
 				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0; 
-				generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);				
-				generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
+				const bool bSourceOk = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
+				const bool bDestOk = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
+
+				if (!(bSourceOk && bDestOk))
+					// We require both of these paths to be valid. If not, we skip this route
+					continue;
+
+				// At least one destination is reachable
+				bNoRoute = false;
+
 				// Erik: If we can travel from the current plot to the source, and then from source to destination in the same turn,
 				// we have to make sure that we don't overestimate the amount that we should load
 				int turnsRequired;
@@ -1151,6 +1161,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			}
 		}
 	}
+
+	// We bail if there's not a single viable destination
+	if (bNoRoute)
+		return false;
 
 	// TAC - Trade Routes Advisor - koma13 - START
 	// R&R mod, vetiarvind, max yield import limit - start
@@ -1267,7 +1281,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					{
 						int turnsToReach = 0; 
 						iOriginalAmount = iAmount = std::min(GC.getGameINLINE().getCargoYieldCapacity(), iAmount);
-						generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
+						const bool r1 = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
+						FAssertMsg(r1, "Path must be valid!");
 						// Erik: If the destination can be reached in the same turn, subtract a turn
 						turnsToReach = std::max(0, turnsToReach - 1);
 						iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReach, aiYieldsLoaded[eYield]);
