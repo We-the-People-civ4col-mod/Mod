@@ -31,7 +31,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE</Tag>
-        <English>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</English>
+        <English>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and resources.</English>
         <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution historique des indigènes et des ressources.</French>
         <German>Genaue riesigen Karte von Amerika (68x128 Plots) mit historischen Standorte der Eingeborenen und Ressourcen.</German>
         <Italian>Faithful huge map of the Americas (68x128 plots) with historical locations of Natives and ressources.</Italian>
@@ -39,7 +39,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_HUGE_RANDOM</Tag>
-        <English>Faithful huge map of the Americas (68x128 plots) with random locations of Natives, ressources and starting locations for Europeans.</English>
+        <English>Faithful huge map of the Americas (68x128 plots) with random locations of Natives, resources and starting locations for Europeans.</English>
         <French>Représentation fidèle immense des Amériques (68x128 cases), avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens.</French>
         <German>Genaue riesigen Karte von Amerika (68x128 Plots) mit zufälligen Orten der Eingeborenen, Ressourcen und Startplätze für die Europäer.</German>
         <Italian>Faithful huge map of the Americas (68x128 plots) with random locations for Natives, ressources and starting locations</Italian>
@@ -47,7 +47,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TOTAL_CITY_HEALTH</Tag>
-        <English>Health of the City: %d1 %F2_Icon</English>
+        <English>Health of the city: %d1 %F2_Icon</English>
         <French>Santé de la ville : %d1 %F2_Icon</French>
         <German>Gesundheit der Stadt: %d1 %F2_Icon</German>
         <Italian>Health of the City: %d1 %F2_Icon</Italian>
@@ -55,7 +55,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
-        <English>[ICON_BULLET]%D1%%%F2 from City Health</English>
+        <English>[ICON_BULLET]%D1%%%F2 from city health</English>
         <French>[ICON_BULLET]%D1%%%F2 par la santé de la ville</French>
         <German>[ICON_BULLET]%D1%%%F2 durch Gesundheit der Stadt</German>
         <Italian>[ICON_BULLET]%D1%%%F2 from City Health</Italian>
@@ -87,7 +87,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
-        <English>%s1: %D2%F3 (with Resource [LINK=literal]%s4[\LINK])</English>
+        <English>%s1: %D2%F3 (with resource [LINK=literal]%s4[\LINK])</English>
         <French>%s1 :  %D2%F3 (avec Resource [LINK=literal]%s4[\LINK])</French>
         <German>%s1: %D2%F3 (mit Bonus Ressource [LINK=literal]%s4[\LINK])</German>
         <Italian>%s1: %D2%F3 (con Resource [LINK=literal]%s4[\LINK])</Italian>
@@ -127,7 +127,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
-        <English>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</English>
+        <English>You have discovered a ship drifting on the sea! All the sailors are dead. They must have died of thirst.</English>
         <French>Vous avez découvert un navire flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
         <German>Ihr habt ein steuerlos treibendes Schiff im offenen Meer entdeckt! Die gesamte Besatzung ist to. Es scheint als sei sie verdurstet.</German>
         <Italian>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Italian>
@@ -184,7 +184,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_VISIBILITY_RANGE</Tag>
-        <English>[ICON_BULLET]%D1_Change Visibility Range</English>
+        <English>[ICON_BULLET]%D1_Change visibility range</English>
         <French>[ICON_BULLET]Champ de vision %D1_Change</French>
         <German>[ICON_BULLET]%D1_Sichtweitenänderung</German>
         <Italian>[ICON_BULLET]%D1_Change raggio di visibilità</Italian>
@@ -192,7 +192,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_SEE_FROM</Tag>
-        <English>[ICON_BULLET]%D1_Change Visibility Height</English>
+        <English>[ICON_BULLET]%D1_Change visibility height</English>
         <French>[ICON_BULLET]%D1_Change Hauteur Visibilite</French>
         <German>[ICON_BULLET]%D1_Change Visibility Height</German>
         <Italian>[ICON_BULLET]%D1_Change visibilita Altezza</Italian>

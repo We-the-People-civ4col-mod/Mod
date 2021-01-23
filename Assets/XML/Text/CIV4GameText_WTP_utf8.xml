@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
+        <English>????</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
+        <English>The unrest in %s1_city has ended now. All business is back to normal.</English>
+        <French>The unrest in %s1_city has ended now. All business it back to normal.</French>
+        <German>Die Unruhen in %s1_city sind vorrüber. Das Tagesgeschäft in der Stadt nimmt wieder seinen normalen Lauf.</German>
+        <Italian>The unrest in %s1_city has ended now. All business it back to normal.</Italian>
+        <Spanish>The unrest in %s1_city has ended now. All business it back to normal.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
+        <English>The ship called %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</English>
+        <French>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</French>
+        <German>Das Schiff %s1_UnitName konnte vor der Einnahme von %s2_CityName durch den Feind noch fliehen.</German>
+        <Italian>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</Italian>
+        <Spanish>The ship %s1_UnitName could escape %s2_CityName when it was captured by the enemy.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY</Tag>
+        <English>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</English>
+        <French>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</French>
+        <German>Das feindliche Schiff %s1_UnitName konnte vor der Einnahme von %s2_CityName durch eure Truppen noch fliehen.</German>
+        <Italian>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</Italian>
+        <Spanish>The ship %s1_UnitName of the enemy could escape %s2_CityName when it was captured by your troops.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
+        <English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</English>
+        <French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</French>
+        <German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Runden)[COLOR_REVERT]</German>
+        <Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns Turns)[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
+        <English>Reinforcement troops have arrived from our King after another king declared war on us.</English>
+        <French>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</French>
+        <German>Unterstützungstruppen unseres Königs sind eingetroffen, da man us auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
+        <Italian>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</Italian>
+        <Spanish>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
+        <English>Working to gain freedom since: %d1_turns Turns</English>
+        <German>Arbeitet für seine Freiheit seit: %d1_turns Runden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
+        <English>Working to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] since: %d1_turns Turns</English>
+        <German>Arbeitet darauf hin [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden seit: %d1_turns Runden</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
+        <English>Production modifier of %d1_NewVal%%:</English>
+        <German>Produktionsmodifikator von %d1_NewVal%%:</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
+        <English>Production modifier of %d1_NewVal:</English>
+        <German>Produktionsmodifikator von %d1_NewVal:</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
+        <English>Sire, another European is already living and learning in %s1_city. The Natives do not want to take a second one. [NEWLINE] We should come back once that first European finishes his time in the village.</English>
+        <German>Sire, es lebt und lernt bereits ein anderer Europäer in %s1_city. Die Ureinwohner möchten keinen weiteren aufnehmen. [NEWLINE] Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
+        <English>Since %s1_player has no more settlements and also no more settlers, His Majesty has decided to equip some colonists in Europe as settler. Of course this comes with a tax increase.</English>
+        <German>Da %s1_player keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Ihre Majestät entschieden in Europe einige Kolonisten als Siedler auszurüsten. Dies beinhaltet natürlich eine Steuererhöung.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
+        <English>The Natives in %s1_CityName have however not killed your missionary for insulting their gods. But they have beaten severely him, leaving him completely broken and disillusioned.</English>
+        <German>Die Ureinwohner in %s1_CityName haben euren Missionar jedoch nicht aufgrund der Beleidigung ihrer Götter getötet. Sie haben ihn aber schwer verprügelt und dadurch komplett gebrochen und desillusioiert.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
+        <English>The Natives in %s1_CityName have beaten and chased away your missionary, since a missionary from another nation supplanted him, accusing him of heresy and other devilish deeds.</English>
+        <German>Die Ureinwohner von %s1_CityName haben euren Missionar mit Prügeln aus dem Dorf verjagt, da ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelei beschuldigte.</German>
+    </TEXT>
+</Civ4GameText>

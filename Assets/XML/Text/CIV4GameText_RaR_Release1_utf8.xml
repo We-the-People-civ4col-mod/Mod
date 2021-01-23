@@ -47,7 +47,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_ACCEPTED</Tag>
-        <English>We have made peace negotiations with %s1_nation as per the wishes of our King.</English>
+        <English>We have undertaken peace negotiations with %s1_nation as per the wishes of our King.</English>
         <French>Conformément aux souhaits du Roi, nous avons accepté les négociations de paix avec %s1_nation.</French>
         <German>Wie durch den König gewünscht, haben wir den Friedensverhandlungen mit %s1_nation zugestimmt. Die Diplomaten haben sich nach der Verhandlung entschieden zu bleiben.</German>
         <Italian>Come auspicato dal nostro Re, abbiamo accettato negoziati di pace con %s1_nation</Italian>
@@ -103,7 +103,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! A %s3_BldngName was destroyed by raiding party!</English>
+        <English>%s1_civ_adjective raid on %s2_city! A %s3_BldngName was destroyed by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! [NUM1:Un:Une] %s3_BldngName [NUM1:a été détruit:a été détruite] par des ennemis infiltrés !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno distrutto [NUM1:un:una] %s3_BldngName !</Italian>
@@ -111,7 +111,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! All %s3_buildName progress was destroyed by raiding party!</English>
+        <English>%s1_civ_adjective raid on %s2_city! All %s3_buildName progress was destroyed by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Toutes les progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von gegnerischen Eindringlingen zerstört!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
@@ -119,7 +119,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURY_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! %d3[ICON_GOLD] of our state treasury was looted by raiding party!</English>
+        <English>%s1_civ_adjective raid on %s2_city! %d3[ICON_GOLD] of our state treasury was looted by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %d3[ICON_GOLD] de notre trésor a été pillée par des ennemis infiltrés !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Feindliche Eindringlingen haben einen %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno rubato %d3[ICON_GOLD] del nostro tesoro di stato!</Italian>
@@ -135,7 +135,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HARBOR_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! Raiding party attacks harbor, your %s3_unit was damaged!</English>
+        <English>%s1_civ_adjective raid on %s2_city! Raiding party attacks harbour, your %s3_unit was damaged!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Votre %s3_unit a subi des dégâts !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! %s3_unit beschädigt!</German>
         <Italian>Raid %s1_civ_adjective a %s2_city! La tua unità %s3_unit  è stata danneggiata!</Italian>
@@ -311,7 +311,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_FAILED</Tag>
-        <English>Your Missionary was not successful when trying to convince the Natives of this village of the evilness of their white neighbours.</English>
+        <English>Your missionary was not able to convince the Natives of this village of the evil of their white neighbours.</English>
         <French>Votre missionnaire n'a pas réussi à convaincre les autochtones de ce village de la méchanceté de leurs voisins.</French>
         <German>Euer Missionar war bei dem Versuch, die Einwohner dieses Dorfes von der Bösartigkeit ihrer weissen Nachbarn zu überzeugen, nicht erfolgreich.</German>
         <Italian>Il tuo missionaria non è riuscita quando si cerca di convincere i nativi di questo villaggio della malvagità dei loro vicini bianchi.</Italian>
@@ -319,7 +319,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_SUCCESSFULL</Tag>
-        <English>Your Missionary successfully convinced some young Natives of this village to raid their evil white neighbours.</English>
+        <English>Your missionary successfully convinced some young Natives of this village to raid their evil white neighbours.</English>
         <French>Votre missionnaire a réussi à convaincre certains jeunes indigènes de ce village d'aller piller leurs mauvais voisins.</French>
         <German>Euer Missionar hat die Einwohner dieses Dorfes erfolgreich zu einem Überfall auf ihre bösen weißen Nachbarn überzeugt.</German>
         <Italian>Il tuo Missionario convinto con successo alcuni giovani nativi di questo villaggio a razziare i loro vicini bianchi malvagi.</Italian>
@@ -327,7 +327,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_PRISONERS</Tag>
-        <English>The Prisoners we have bought from our King have arrived in %s1_city, Mylord.</English>
+        <English>The prisoners we have bought from our King have arrived in %s1_city, Milord.</English>
         <French>Les prisonniers que nous avons achetés à notre roi sont arrivés en %s1_city, Mylord.</French>
         <German>Die Gefangenen, die wir erworben haben, sind in %s1_city angekommen, Mylord.</German>
         <Italian>I prigionieri che abbiamo comprato dal nostro re sono arrivati in %s1_city, mio signore.</Italian>
@@ -335,9 +335,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NOBLE</Tag>
-        <English>The Famous Noble from Europe has arrived in %s1_city, Mylord.</English>
+        <English>The famous noble from Europe has arrived in %s1_city, Milord.</English>
         <French>Le Noble célèbre est arrivé a%s1_city, Monseigneur.</French>
-        <German>Der berühmte Edelmannin ist in %s1_city angekommen, Mylord.</German>
+        <German>Der berühmte Edelmann ist in %s1_city angekommen, Mylord.</German>
         <Italian>The Famous Noble from Europe has arrived in %s1_city, Mylord.</Italian>
         <Spanish>The Famous Noble from Europe has arrived in %s1_city, Mylord.</Spanish>
     </TEXT>
@@ -375,7 +375,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY</Tag>
-        <English>Storage capacity in %s1_city is almost at its limits, Mylord.</English>
+        <English>Storage capacity in %s1_city is almost at its limits, Milord.</English>
         <French>La capacité de stockage à %s1_city a presque atteint ses limites, Mylord.</French>
         <German>Die Lagerhauskapazität in %s1_city ist fast an ihren Grenzen, Mylord.</German>
         <Italian>La capacità di storage in %s1_city è quasi al suo limite, Mylord.</Italian>
@@ -495,7 +495,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
-        <English>[ICON_BULLET]%D1%% effect of Revolutionary Rate on Rebel [ICON_STRENGTH]</English>
+        <English>[ICON_BULLET]%D1%% effect of revolutionary rate on rebel [ICON_STRENGTH]</English>
         <French>[ICON_BULLET]%D1%% effet du sentiment de révolte sur la [ICON_STRENGTH]</French>
         <German>[ICON_BULLET]%D1%% Auswirkung von Revolutionsbereitschaft auf [ICON_STRENGTH] der Rebellen</German>
         <Italian>Effetto [ICON_BULLET]%D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
@@ -511,7 +511,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
-        <English>The smugglers we have hired await your orders in %s1_city, Mylord.</English>
+        <English>The smugglers we have hired await your orders in %s1_city, Milord.</English>
         <French>Les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city, Sir.</French>
         <German>Die angeheuerten Schmuggler erwarten in %s1_city Eure Befehle, Mylord.</German>
         <Italian>The smugglers we have hired await your orders in %s1_city, Mylord.</Italian>
@@ -527,7 +527,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEE_RANGER</Tag>
-        <English>[ICON_BULLET]Can see Rangers.</English>
+        <English>[ICON_BULLET]Can see rangers.</English>
         <French>[ICON_BULLET]Peut voir les gardes-forestiers.</French>
         <German>[ICON_BULLET]Kann Ranger sehen.</German>
         <Italian>[ICON_BULLET]Can see Rangers.</Italian>
@@ -535,7 +535,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAINED_RANGERS</Tag>
-        <English>A new unit of Rangers awaits your commands in %s1_city, Mylord.</English>
+        <English>A new unit of rangers awaits your commands in %s1_city, Milord.</English>
         <French>Une nouvelle unité de gardes-forestiers attend vos ordres à %s1_city, Sir.</French>
         <German>Eine neue Einheit Rangers erwartet Ihre Befehle in %s1_city, Mylord.</German>
         <Italian>A new unit of Rangers awaits your commands in %s1_city, Mylord.</Italian>
@@ -543,7 +543,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRED_CONQUISTADORS</Tag>
-        <English>The Conquistadors from Europe have arrived in %s1_city, Mylord.</English>
+        <English>The conquistadors from Europe have arrived in %s1_city, Milord.</English>
         <French>Les conquistadors venus d'Europe sont arrivés à %s1_city, Sir.</French>
         <German>Conquistadores aus Europe sind in %s1_city angekommen, Mylord.</German>
         <Italian>The Conquistadors from Europe have arrived in %s1_city, Mylord.</Italian>
@@ -551,7 +551,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_SLAVE</Tag>
-        <English>The Native Slaves we bought have been delivered to %s1_city, Mylord.</English>
+        <English>The Native slaves we bought have been delivered to %s1_city, Milord.</English>
         <French>Les Esclaves indigènes que nous avons achetés sont arrivés à %s1_city, Sir.</French>
         <German>Die Ureinwohnersklaven die wir gekauft haben, wurden nach %s1_city geliefert, Mylord.</German>
         <Italian>I nativi schiavi che abbiamo comprato sono stati consegnati a %s1_city, Mylord.</Italian>
@@ -559,12 +559,22 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_AFRICAN_SLAVE</Tag>
-        <English>The Slaves we bought from Africa have arrived in %s1_city, Mylord.</English>
+        <English>The slaves we bought from Africa have arrived in %s1_city, Milord.</English>
         <French>Les esclaves que nous avons acheté en Afrique sont arrivés en %s1_city, Sir.</French>
         <German>Die Sklaven aus Afrika wurden nach %s1_city geliefert, Mylord.</German>
         <Italian>Gli schiavi che abbiamo comprato dall'Africa sono arrivati in %s1_city, Mylord.</Italian>
         <Spanish>Los esclavos que compramos de África han llegado %s1_city, Mylord.</Spanish>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]can be used to transport goods and people near the coast. They are small but fast, faster and more spacious than wagon trains. Unable to enter ocean tiles, they travel only along the coast. They cannot sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots.</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur geringfügig verteidigen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal shipping [COLOR_REVERT] is - of course - operated near the coast. Small yet spacious sailing vessels can transport goods and people soon after colonies are established in the New World. Due to their small size these coastal vessels cannot sail to Europe or Africa.</English>
+		<German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und wendige - dafür aber recht geräumige Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der neuen Welt Schiffe zu bauen, mit denen Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln. </German>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
         <English>Consumes: %s1_symbol_list</English>
@@ -623,7 +633,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_BISHOP</Tag>
-        <English>The new Bishop has arrived in %s1_city, Mylord.</English>
+        <English>The new Bishop has arrived in %s1_city, Milord.</English>
         <French>Le nouvel évêque est arrivé à %s1_city, Sir.</French>
         <German>Der neue Bischof ist in %s1_city angekommen, Mylord.</German>
         <Italian>The new Bishop has arrived in %s1_city, Mylord.</Italian>
@@ -721,7 +731,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT</Tag>
-        <English>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</English>
+        <English>Select goods that will be sold by the Custom House, and choose the mimimum amount of a specific yield to enable the Custom House to sell that amount in city %s1_city</English>
         <French>Sélectionner les biens que le poste de douane va vendre, ainsi que le seuil de marchandises qui déclenche la vente de celle-ci pour la colonie suivante: %s1_city</French>
         <German>Wähle Güter, die auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle ab der das Zollhaus in %s1_city verkaufen soll.</German>
         <Italian>Select goods that will be sold by Custom House, and select mimimum amount of a specific yield to enable Custom House to sell such yield in city %s1_city</Italian>
@@ -729,7 +739,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT_NO_NEW_CAPACITY</Tag>
-        <English>New Capacity not activated ! Settings will have no effect.</English>
+        <English>New capacity not activated ! Settings will have no effect.</English>
         <French>La nouvelle capacité n'est pas activée ! Les paramètres n'auront aucun effet.</French>
         <German>New Capacity nicht aktiviert ! Einstellungen haben keine Wirkung.</German>
         <Italian>New Capacity not activated ! Settings will have no effect.</Italian>
@@ -785,7 +795,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NOT_FOUND_CITY</Tag>
-        <English>[ICON_BULLET]Can Not Found a New Settlement</English>
+        <English>[ICON_BULLET]Cannot Found a new settlement</English>
         <French>[ICON_BULLET]Ne peut pas fonder une nouvelle colonie</French>
         <German>[ICON_BULLET]Kann keine neue Siedlung gründen</German>
         <Italian>[ICON_BULLET]Può fondare un nuovo insediamento</Italian>
@@ -833,7 +843,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_FROM_HANDICAP</Tag>
-        <English>%D1 from Difficulty Level</English>
+        <English>%D1 from difficulty level</English>
         <French>%D1: (niveau de difficulté)</French>
         <German>%D1 durch Schwierigkeitsgrad</German>
         <Italian>%D1 per il livello di difficoltà</Italian>
@@ -948,8 +958,11 @@ Multiple repeating units is possible and an equal number will be trained of each
         <English>Native info</English>
         <French>Informations sur les indigènes</French>
         <German>Informationen zu den Ureinwohnern</German>
-        <Italian>Native info</Italian>
-        <Spanish>Native info</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT</Tag>
+        <English>Jump to settlement</English>
+        <German>Siedlung anzeigen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GROWTH</Tag>
@@ -969,7 +982,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_DAMAGE</Tag>
-        <English>Damage per Turn: %d1_Amt%%</English>
+        <English>Damage per turn: %d1_Amt%%</English>
         <French>Dégâts par tour : %d1_Amt%%</French>
         <German>Schaden pro Runde: %d1_Amt%%</German>
         <Italian>Danno per turno: %d1_Amt%%</Italian>
@@ -1017,7 +1030,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_GOOD</Tag>
-        <English>[ICON_BULLET]Strengthens Relations and ends all wars with Europeans.</English>
+        <English>[ICON_BULLET]Strengthens relations and ends all wars with Europeans.</English>
         <French>[ICON_BULLET]Renforce les relations et achève les guerres avec les européens.</French>
         <German>[ICON_BULLET]Stärkt Beziehungen und beendet alle Kriege mit Europäern.</German>
         <Italian>[ICON_BULLET]Strengthens Relations and ends all wars with Europeans.</Italian>
@@ -1025,7 +1038,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_BAD</Tag>
-        <English>[ICON_BULLET]Weakens Relations with Europeans.</English>
+        <English>[ICON_BULLET]Weakens relations with Europeans.</English>
         <French>[ICON_BULLET]Affaiblit les relations avec les européens.</French>
         <German>[ICON_BULLET]Schwächt Beziehungen zu Europäern.</German>
         <Italian>[ICON_BULLET]Weakens Relations with Europeans.</Italian>
@@ -1033,7 +1046,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_KING_ATTITUDE_GOOD</Tag>
-        <English>[ICON_BULLET]Strengthens Relations with Kings.</English>
+        <English>[ICON_BULLET]Strengthens relations with Kings.</English>
         <French>[ICON_BULLET]Renforce les relations avec le Roi.</French>
         <German>[ICON_BULLET]Stärkt Beziehungen mit Königen.</German>
         <Italian>[ICON_BULLET]Strengthens Relations with Kings.</Italian>
@@ -1041,7 +1054,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_KING_ATTITUDE_BAD</Tag>
-        <English>[ICON_BULLET]Weakens Relations with Kings.</English>
+        <English>[ICON_BULLET]Weakens relations with Kings.</English>
         <French>[ICON_BULLET]Affaiblit les relations avec le Roi.</French>
         <German>[ICON_BULLET]Schwächt Beziehungen mit Königen.</German>
         <Italian>[ICON_BULLET]Weakens Relations with Kings.</Italian>
@@ -1049,7 +1062,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_RIVER</Tag>
-        <English>[COLOR_WARNING_TEXT]Requires[COLOR_REVERT] River</English>
+        <English>[COLOR_WARNING_TEXT]Requires[COLOR_REVERT] river</English>
         <French>[COLOR_WARNING_TEXT]Nécessite[COLOR_REVERT] un fleuve</French>
         <German>[COLOR_WARNING_TEXT]Erfordert[COLOR_REVERT] einen Fluss</German>
         <Italian>[COLOR_WARNING_TEXT]Richiede[COLOR_REVERT] un fiume</Italian>
@@ -1057,7 +1070,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_TAKE_TRAIN</Tag>
-        <English>Take this Carriage</English>
+        <English>Take this carriage</English>
         <French>Rejoindre le convoi</French>
         <German>In Fuhrwerk einsteigen</German>
         <Italian>Take this Carriage</Italian>
@@ -1065,7 +1078,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_TAKE_TRAIN_HELP</Tag>
-        <English>The Carriage will load this unit</English>
+        <English>The carriage will load this unit</English>
         <French>Le convoyeur va charger cette unité</French>
         <German>Die Einheit wird im Frachtraum des Fuhrwerks verladen</German>
         <Italian>The Carriage will load this unit</Italian>
@@ -1073,7 +1086,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAVEL_RAILROAD_ONLY</Tag>
-        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires Plastered Country Roads[COLOR_REVERT] to travel.</English>
+        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires plastered country roads[COLOR_REVERT] to travel.</English>
         <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager.</French>
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]Erfordert gepflasterte Landstraße[COLOR_REVERT]  um fahren zu können.</German>
         <Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Requires Plastered Country Roads[COLOR_REVERT] to travel.</Italian>
@@ -1081,7 +1094,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
-        <English>You have discovered a runaway slave from a native tribe!</English>
+        <English>You have discovered a runaway slave from a Native tribe!</English>
         <French>Vous avez découvert un esclave fuyant une tribu indigène !</French>
         <German>Ihr habt einen Ureinwohnersklaven entdeckt, der von seinem Stamm geflohen ist!</German>
         <Italian>You have discovered a runaway slave from a native tribe!</Italian>
@@ -1089,7 +1102,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
-        <English>You have discovered a proud native warrior who offers to join you!</English>
+        <English>You have discovered a proud Native warrior who offers to join you!</English>
         <French>Vous avez découvert un fier guerrier indigène qui propose de vous rejoindre !</French>
         <German>Ihr habt einen stolzen Ureinwohnerkrieger entdeckt, der sich euch anschliesst!</German>
         <Italian>You have discovered a proud native warrior who offers to join you!</Italian>
@@ -1145,7 +1158,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE_SEA</Tag>
-        <English>The crew of your ship has gained some experience!</English>
+        <English>The crew of your ship has gained experience!</English>
         <French>L'équipage de votre navire a gagné de l'expérience !</French>
         <German>Die Crew eures Schiffes hat etwas Erfahrung gewonnen!</German>
         <Italian>The crew of your ship has gained some experience!!</Italian>
@@ -1177,7 +1190,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL_CANNOT_ENTER_PLAYER_TERRITORY</Tag>
-        <English>[ICON_BULLET]Cannot enter Player territories</English>
+        <English>[ICON_BULLET]Cannot enter player territories</English>
         <French>[ICON_BULLET]Ne peut rentrer dans le territoire du joueur</French>
         <German>[ICON_BULLET]Kann das Gebiet des Spielers nicht betreten</German>
         <Italian>[ICON_BULLET]Cannot enter Player territories</Italian>
@@ -1241,7 +1254,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
-        <English>[TAB]The American black bear or North American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution and a large global population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behavior common to many species of bears.</English>
+        <English>[TAB]The American black bear (Ursus americanus) is medium-sized by world standards, but nonetheless the continent's smallest. It is the most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in forested areas, but do leave forests in search of food. They can be attracted to human communities because of the availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution with a population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behaviour common to many species of bears. Despite their name, not all black bears are black in colour. There are also silver-grey and reddish-brown varieties, and some 'black' bears have a coat colour almost identical to grizzlies. The colouration of the fur is related to habitat: while animals living in dense forests with a cooler climate (in the north and east of the range) tend to be black, black bears in the southern and western parts of the range, which live in more open, drier terrain, are browner. The range of the American black bear includes large parts of North America. They live in almost all of Alaska and Canada except the extreme north; in the core area of the United States (the 48 contiguous states) they are also widespread and were originally only absent in the southwestern, arid part of the country. In Mexico, they are found mainly in the Sierra Madre Oriental and Sierra Madre Occidental mountain ranges. Black bears are hunted by humans for many reasons: the potential threat to humans, attacks on livestock including beehives, the need for fur and meat, and sport hunting. Studies have shown that the damage to grazing animals is negligible, but that damage to agricultural fields is more significant. Sport hunting is widespread, with around 40,000 animals killed each year according to a 1995 estimate. The use of bear fur and meat has largely declined today; among Indigenous people, this was the main reason for hunting. Bearskin caps that are part of the parade uniform of various British regiments are still made today from the fur of Canadian black bears. </English>
         <French>[TAB]L'ours noir (Ursus americanus) est l'ours le plus commun en Amérique du Nord. Il se rencontre dans une aire géographique qui s'étend du nord du Canada et de l'Alaska au nord du Mexique, et des côtes atlantiques aux côtes pacifiques de l'Amérique du Nord. Il est présent dans un bon nombre d'États américains et dans toutes les provinces canadiennes. Il préfère les forêts et les montagnes où il trouve sa nourriture et peut se cacher. La population d'ours noirs était sans doute de deux millions d'individus autrefois. Aujourd'hui, l'espèce est protégée et on estime qu'il existe entre 500 000 et 750 000 ours noirs sur ce continent.</French>
         <German>[TAB]Der Amerikanische Schwarzbär (Ursus americanus), auch Baribal genannt, ist eine in Nordamerika lebende Raubtierart aus der Familie der Bären (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gefürchteten Grizzlybär gilt der Schwarzbär als weniger gefährlich. Amerikanische Schwarzbären haben den typischen Körperbau der Bären. Der Rumpf ist massiv, die Gliedmaßen kräftig. Die Pfoten haben je fünf starke Krallen, welche die Bären zum Reißen, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen Bären nur ein kurzer Stummel. Der große Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Trotz ihres Namens sind nicht alle Amerikanischen Schwarzbären schwarz gefärbt. Es gibt auch silbergraue und rötlichbraune Varianten, und manche Baribals haben eine mit Grizzlies nahezu identische Fellfarbe. Die Färbung des Fells hängt mit dem Lebensraum zusammen: während Tiere, die in dichten Wäldern mit kühlerem Klima (im Norden und Osten des Verbreitungsgebietes) leben, eher schwarz sind, haben die Schwarzbären im südlichen und westlichen Teil des Verbreitungsgebietes, die in offenem, trockenerem Terrain wohnen, eine eher bräunliche Färbung. Das Verbreitungsgebiet der Amerikanischen Schwarzbären umfasst große Teile Nordamerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des äußersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenhängenden Staaten) sind sie ebenfalls weit verbreitet und fehlten ursprünglich nur im südwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgszüge Sierra Madre Oriental und Sierra Madre Occidental vor. Amerikanische Schwarzbären wurden und werden vom Menschen aus verschiedensten Gründen gejagt. Dazu zählen die potenzielle Gefährdung des Menschen, die Angst vor gerissenen Weidetieren und zerstörten Agrarflächen und Bienenstöcken, der Bedarf an Fell und Fleisch sowie die Sportjagd. Untersuchungen haben gezeigt, dass der Schaden bei Weidetieren vernachlässigbar ist, dass sie aber wohl auf landwirtschaftlich genutzten Feldern Schäden anrichten können. Die Sportjagd ist weit verbreitet, nach einer Schätzung aus dem Jahr 1995 werden jedes Jahr rund 40.000 Tiere erlegt. Die Verwendung des Bärenfells und des Fleisches ist heute weitgehend zurückgegangen; bei den Indianern war dies der wichtigste Grund für die Bejagung. Die Bärenfellmützen, die zur Paradeuniform verschiedener britischer Regimenter gehören, werden aber bis heute aus dem Fell kanadischer Schwarzbären hergestellt. </German>
         <Italian>[TAB]The American black bear or North American black bear (Ursus americanus) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in largely forested areas, but do leave forests in search of food. Sometimes they become attracted to human communities because of the immediate availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution and a large global population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behavior common to many species of bears.</Italian>
@@ -1257,7 +1270,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_EL_DORADO</Tag>
-        <English>Rumors are spreading in Europe that you found the mythical city of El Dorado!</English>
+        <English>Rumours are spreading in Europe that you have found the mythical city of El Dorado!</English>
         <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique El Dorado !</French>
         <German>Gerüchte breiten sich in Europa aus, dass ihr die mystische Stadt El Dorado gefunden habt!</German>
         <Italian>Rumors are spreading in Europe that you found the mythical city of El Dorado!</Italian>
@@ -1265,7 +1278,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
-        <English>Rumors are spreading in Europe that you found a map to the mythical Fountain of Youth!</English>
+        <English>Rumours are spreading in Europe that you found a map to the mythical Fountain of Youth!</English>
         <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé la mythique Fontaine de Jouvence !</French>
         <German>Gerüchte breiten sich in Europa aus, dass ihr den mystischen Jungbrunnen gefunden habt!</German>
         <Italian>Rumors are spreading in Europe that you found a map to the mythical Fountain of Youth!</Italian>
@@ -1273,7 +1286,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_PIRATE_TREASURE</Tag>
-        <English>Rumors are spreading in Europe that you found a map to a huge Pirate Treasure!</English>
+        <English>Rumours are spreading in Europe that you found a map to a huge pirate treasure!</English>
         <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique trésor de Barbe Noire !</French>
         <German>Gerüchte breiten sich in Europa aus, dass ihr eine Karte zu einem riesigen Piratenschatz gefunden habt!</German>
         <Italian>Rumors are spreading in Europe that you found a map to a huge Pirate Treasure!</Italian>
@@ -1281,7 +1294,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_FEATURES</Tag>
-        <English>[ICON_BULLET]Protects an area against Raiding Natives, Wild Animals and other enemies.</English>
+        <English>[ICON_BULLET]Protects an area against raiding Natives, wild animals and other enemies.</English>
         <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et d'autres ennemies.</French>
         <German>[ICON_BULLET]Schützt ein Gebiet gegen Ureinwohnerüberfälle, Wilde Tiere und andere Gegner.</German>
         <Italian>[ICON_BULLET]Protects an area against Raiding Natives, Wild Animals and other enemies.</Italian>
@@ -1289,7 +1302,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES</Tag>
-        <English>[ICON_BULLET]Might convert Natives walking by or convince them to bring presents to your cities.</English>
+        <English>[ICON_BULLET]Might convert nearby Natives or convince them to bring gifts to your cities.</English>
         <French>[ICON_BULLET]permet de convertir des indigènes de passage et de les convaincre d'apporter des présents dans vos villes.</French>
         <German>[ICON_BULLET]Kann in manchen Fällen Ureinwohner konvertieren oder sie überzeugen Geschenke zu liefern.</German>
         <Italian>[ICON_BULLET]Might convert Natives walking by or convince them to bring presents to your cities.</Italian>
@@ -1297,7 +1310,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT</Tag>
-        <English>Your Fort was attacked by some Natives on a Raid.</English>
+        <English>Your Fort was attacked by Natives on a raid.</English>
         <French>Votre fort a été attaqué par des indigènes lors d'un raid.</French>
         <German>Euer Fort wurde durch einen Ureinwohnerüberfall angegriffen.</German>
         <Italian>Your Fort was attacked by some Natives on a Raid.</Italian>
@@ -1305,7 +1318,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT_BUT_DEFEATED</Tag>
-        <English>The Troops in your Fort defeated some Natives on a Raid.</English>
+        <English>The troops in your fort drove off raiding Natives.</English>
         <French>Les troupes de votre fort ont été vaincues par des indigènes lors d'un raid.</French>
         <German>Euer Fort hat einen Ureinwohnerüberfall abgewehrt.</German>
         <Italian>The Troops in your Fort defeated some Natives on a Raid.</Italian>
@@ -1361,7 +1374,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_KILLED_ANIMAL</Tag>
-        <English>A troops in a fort have killed a wandering animal! The remnants are worth %d1[ICON_GOLD]!</English>
+        <English>Troops in a fort have killed an animal intruder! The remnants are worth %d1[ICON_GOLD]!</English>
         <French>Les troupes en garde dans un fort ont tué un animal errant ! Ses restes ont été vendus pour %d1[ICON_GOLD]!</French>
         <German>Die Truppen eines Forts haben ein herumwanderndes Tier getötet, dessen Körperteile %d2[ICON_GOLD] wert sind !</German>
         <Italian>A troops in a fort have killed a wandering animal! The remnants are worth %d1[ICON_GOLD]!</Italian>
@@ -1369,7 +1382,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_APEASED_RAIDING_NATIVE</Tag>
-        <English>A Monastery successfully appeased some young Natives on a Raid!</English>
+        <English>A monastery successfully appeased some young Natives on a raid!</English>
         <French>Un monastère a calmé avec succès des jeunes indigènes partis pour un raid !</French>
         <German>Ein Kolster hat erfolgreich eine Ureinwohner auf einem Raubzug befriedet.</German>
         <Italian>A Monastery successfully appeased some young Natives on a Raid!</Italian>
@@ -1377,7 +1390,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_GOT_PRESENT</Tag>
-        <English>Natives brought presents to a Monastery worth %d1[ICON_GOLD]!</English>
+        <English>Natives brought gifts to a monastery worth %d1[ICON_GOLD]!</English>
         <French>Des indigènes ont apportés des présents dans un monastère pour une valeur de %d1[ICON_GOLD]!</French>
         <German>Ureinwohner haben einem Kloster Geschenke im Wert von %d1[ICON_GOLD] gebracht!</German>
         <Italian>Natives brought presents to a Monastery worth %d1[ICON_GOLD]!</Italian>
@@ -1385,7 +1398,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_CONVERTED_NATIVE</Tag>
-        <English>A Monastery successfully converted a wandering Native!</English>
+        <English>A monastery successfully converted a wandering Native!</English>
         <French>Un monastère a converti avec succès des indigènes de passage !</French>
         <German>Ein Kloster hat erfolgreich einen herumwandernden Ureinwohner konvertiert!</German>
         <Italian>A Monastery successfully converted a wandering Native!</Italian>
@@ -1393,7 +1406,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRED_PIRATES</Tag>
-        <English>The pirates we have hired await your orders in %s1_city, Mylord.</English>
+        <English>The pirates we have hired await your orders in %s1_city, Milord.</English>
         <French>Les pirates que nous avons recrutés attendent vos ordres %s1_city, Sir.</French>
         <German>Die angeheuerten Piraten erwarten in %s1_city Eure Befehle, Mylord.</German>
         <Italian>The pirates we have hired await your orders in %s1_city, Mylord.</Italian>
@@ -1425,7 +1438,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_CONTINENTAL_GUARD</Tag>
-        <English>With the help of our European allies, we have successfully trained a Continental Guard in %s1_city, Mylord.</English>
+        <English>With the help of our European allies, we have successfully trained a Continental Guard in %s1_city, Milord.</English>
         <French>Avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city, Sir.</French>
         <German>Mit der Hilfe unserer europäischen Alliierten haben wir erfolgreich eine Kontinentalgarde in %s1_city ausgebildet, Mylord</German>
         <Italian>With the help of our European allies, we have successfully trained a Continental Guard in %s1_city, Mylord.</Italian>
@@ -1433,7 +1446,7 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
-        <English>The Mortar we have bought from our European allies has arrived in %s1_city, Mylord.</English>
+        <English>The mortar we have bought from our European allies has arrived in %s1_city, Milord.</English>
         <French>Le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city, Sir.</French>
         <German>Der Mörser, den wir von unseren europäischen Alliierten gekauft haben, ist in %s1_city angekommen, Mylord</German>
         <Italian>The Mortar we have bought from our European allies has arrived in %s1_city, Mylord.</Italian>
@@ -1457,11 +1470,11 @@ Multiple repeating units is possible and an equal number will be trained of each
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% better prices from Bargaining</English>
+        <English>[ICON_BULLET]%D1%% better prices from bargaining and trading posts</English>
         <French>[ICON_BULLET]%D1%% permet d'obtenir des meilleur prix en négociant</French>
-        <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen</German>
-        <Italian>[ICON_BULLET]%D1%% better prices from Bargaining</Italian>
-        <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining</Spanish>
+        <German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
+        <Italian>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Italian>
+        <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
@@ -1483,7 +1496,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_LEVIED_MILITIA_FOR_PROTECTION</Tag>
-        <English>Mylord, the city %s1_city has levied a Settler's Militia because they felt unprotected. [NEWLINE]To do so, they have taken food from the Storage and Money from the Treasury.</English>
+        <English>Milord, the city %s1_city has levied a settler's militia because they felt unprotected. [NEWLINE]To do so, they have taken food from storage and money from the treasury.</English>
         <French>Sir, la ville de %s1_city  a levé une milice à partir de simples colons car ils ne se sentaient pas protéger. [NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>
         <German>Mylord, die Stadt %s1_city hat eine Siedlermiliz ausgehoben, weil sie sich unzureichend geschützt fühlte. [NEWLINE]Dafür haben Sie Nahrung aus den Lagern und Gold aus der Schatzkammer entnommen.</German>
         <Italian>Mylord, the city %s1_city has levied a Settler's Militia because they felt unprotected. [NEWLINE]To do so, they have taken food from the Storage and Money from the Treasury.</Italian>
@@ -1491,7 +1504,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_MISSING_PROTECTION</Tag>
-        <English>Mylord, there is unrest in city %s1_city because the population feels unprotected.</English>
+        <English>Milord, there is unrest in city %s1_city because the population feels unprotected.</English>
         <French>Sir, il y a des désordres civiles à city %s1_city car la population ne s'y sent pas protégée.</French>
         <German>Mylord, in %s1_city gibt es Unruhen, weil die Bürger sich nicht ausreichend geschützt fühlen.</German>
         <Italian>Mylord, there is unrest in city %s1_city because the population feels unprotected.</Italian>
@@ -1499,7 +1512,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_DEMAND</Tag>
-        <English>Word about your generous donation to the Mother Church is spread.</English>
+        <English>Word about your generous donation to the Mother Church has spread.</English>
         <French>L'information concernant votre généreuse donation à l'Eglise se répand.</French>
         <German>Die Kunde über eure grosszügige Spende an die Heilige Mutter Kirche verbreitet sich.</German>
         <Italian>Word about your generous donation to the Mother Church is spread.</Italian>
@@ -1507,7 +1520,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_ATTITUDE_KING</Tag>
-        <English>[NEWLINE]The King is very pleased by the increase of prestige for his Nation through your actions.</English>
+        <English>[NEWLINE]The King is very pleased that prestige for his nation has increased through your actions.</English>
         <French>[NEWLINE]Le Roi est heureux de voir le prestige de sa Nation augmenter au travers de vos actions.</French>
         <German>[NEWLINE]Der König ist sehr erfreut über den Ruhm, den Eure Taten seiner Nation bescheren.</German>
         <Italian>[NEWLINE]The King is very pleased by the increase of prestige for his Nation through your actions.</Italian>
@@ -1515,7 +1528,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_ATTITUDE_EUROPEANS</Tag>
-        <English>[NEWLINE]Your prestige at other European Nations has grown.</English>
+        <English>[NEWLINE]Your prestige among other European nations has grown.</English>
         <French>[NEWLINE]Votre prestige chez les autres Nations européennes a augmenté.</French>
         <German>[NEWLINE]Euer Ansehen bei anderen europäischen Nationen ist gestiegen.</German>
         <Italian>[NEWLINE]Your prestige at other Europeans Nations has grown.</Italian>
@@ -1523,7 +1536,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_IMMIGRATION</Tag>
-        <English>[NEWLINE]Immigration of faithful christians to your colony has increased.</English>
+        <English>[NEWLINE]Immigration of faithful Christians to your colony has increased.</English>
         <French>[NEWLINE]L'immigration de chrétiens fidèles vers vos colonies a augmenté.</French>
         <German>[NEWLINE]Die Immigration gläubiger Christen in die Kolonien ist gestiegen.</German>
         <Italian>[NEWLINE]Immigration of faithful christians to your colony has increased.</Italian>
@@ -1531,7 +1544,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_MISSIONARY</Tag>
-        <English>[NEWLINE]A Missionary hearing those words has spontaneously decided to join your cause.</English>
+        <English>[NEWLINE]A missionary hearing those words has spontaneously decided to join your cause.</English>
         <French>[NEWLINE]Un missionnaire ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
         <German>[NEWLINE]Ein Missionar, der diese Worte hörte, hat spontan entschieden sich eurer Sache anzuschliessen.</German>
         <Italian>[NEWLINE]A Missionary hearing those words has spontaneously decided to join your cause.</Italian>
@@ -1539,7 +1552,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_REWARD_PREACHER</Tag>
-        <English>[NEWLINE]A Preacher hearing those words has spontaneously decided to join your cause.</English>
+        <English>[NEWLINE]A preacher hearing those words has spontaneously decided to join your cause.</English>
         <French>[NEWLINE]Un prêtre ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
         <German>[NEWLINE]Ein Prediger, der diese Worte hörte, hat spontan entschieden sich eurer Sache anzuschliessen.</German>
         <Italian>[NEWLINE]A Preacher hearing those words has spontaneously decided to join your cause.</Italian>
@@ -1547,7 +1560,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REFUSED_CHURCH_DEMAND</Tag>
-        <English>Word about your refusal to help the poor and desperate is spread.</English>
+        <English>Word about your refusal to help the poor and desperate has spread.</English>
         <French>Votre refus d'aider les pauvres et les désespérés choque l'opinion.</French>
         <German>Die Kunde über eure Weigerung den Armen und Hilfsbedürftigen zu spenden verpreitet sich.</German>
         <Italian>Word about your refusal to help the poor and desperate is spread.</Italian>
@@ -1555,7 +1568,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_ATTITUDE_KING</Tag>
-        <English>[NEWLINE]The King is very unpleased by the loss of prestige for his Nation through your actions.</English>
+        <English>[NEWLINE]The King is profoundly displeased by the loss of prestige for his nation through your actions.</English>
         <French>[NEWLINE]Le Roi est très insatisfait de la perte du prestige de sa Nation au travers de vos actions.</French>
         <German>[NEWLINE]Der König ist sehr unerfreut über den Verlust an Ansehen, den Eure Taten seiner Nation bescheren.</German>
         <Italian>[NEWLINE]The King is very pleased by the loss of prestige for his Nation through your actions.</Italian>
@@ -1563,7 +1576,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_ATTITUDE_EUROPEANS</Tag>
-        <English>[NEWLINE]Your prestige at other European Nations has suffered.</English>
+        <English>[NEWLINE]Your prestige at other European nations has suffered.</English>
         <French>[NEWLINE]Votre prestige chez les autres Nations européeennes s'est dégradé.</French>
         <German>[NEWLINE]Euer Ansehen bei anderen europäischen Nationen ist gefallen.</German>
         <Italian>[NEWLINE]Your prestige at other Europeans Nations has suffered.</Italian>
@@ -1571,7 +1584,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_UNREST</Tag>
-        <English>[NEWLINE]The faithful citizens in your capitol are marching on the streets.</English>
+        <English>[NEWLINE]The faithful citizens in your capitol are marching in the streets.</English>
         <French>[NEWLINE]Les chrétiens fidèles de votre capitale marchent dans les rues.</French>
         <German>[NEWLINE]Die Gläubigen demonstrieren auf den Strassen der Hauptstadt gegen Eure Handlung.</German>
         <Italian>[NEWLINE]The faithful citizens in your capitol are marching on the streets.</Italian>
@@ -1579,7 +1592,7 @@ Turn import off at 100%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_IMMIGRATION</Tag>
-        <English>[NEWLINE]Immigration of faithful christians to your colony has decreased.</English>
+        <English>[NEWLINE]Immigration of faithful Christians to your colony has decreased.</English>
         <French>[NEWLINE]L'immigration de chrétiens fidèles vers vos colonies a diminué.</French>
         <German>[NEWLINE]Die Immigration gläubiger Christen in die Kolonien ist gesunken.</German>
         <Italian>[NEWLINE]Immigration of faithful christians to your colony has decreased.</Italian>

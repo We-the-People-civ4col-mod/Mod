@@ -491,7 +491,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_MARATHON_Old</Tag>
-        <English>Marathon, 2 Phasen</English>
+        <English>Marathon, 2 phases</English>
         <French>
             <Text>Marathon, 2 phases</Text>
             <Gender>Male</Gender>
@@ -515,7 +515,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_EPIC_Old</Tag>
-        <English>Epic, 2 Phasen</English>
+        <English>Epic, 2 phases</English>
         <French>
             <Text>Épique, 2 phases</Text>
             <Gender>Male</Gender>
@@ -539,7 +539,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_NORMAL_Old</Tag>
-        <English>Normal, 2 Phasen</English>
+        <English>Normal, 2 phases</English>
         <French>
             <Text>Normale, 2 phases</Text>
             <Gender>Male</Gender>
@@ -563,7 +563,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAMESPEED_QUICK_Old</Tag>
-        <English>Quick, 2 Phases</English>
+        <English>Quick, 2 phases</English>
         <French>
             <Text>Rapide, 2 phases</Text>
             <Gender>Male</Gender>
@@ -587,7 +587,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_OFFER_CITY_2</Tag>
-        <English>We would like to offer you the lands this settlement is on as a sign of our respect.</English>
+        <English>We would like to offer you the lands of this settlement as a sign of our respect.</English>
         <French>Nous aimerions vous offrir cette colonie en gage de notre respect.</French>
         <German>Wir möchten diese Siedlung zu Euren Gunsten aufgeben, seid Ihr damit einverstanden?</German>
         <Italian>Vorremmo offrirti questo insediamento in segno di rispetto.</Italian>
@@ -671,7 +671,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NATIVE_NORTH</Tag>
-        <English>Natives of Northamerica</English>
+        <English>Indigenous North Americans</English>
         <French>
             <Text>Indigène:Indigènes</Text>
             <Gender>Male</Gender>
@@ -707,7 +707,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HIM_GOLD_CAPTURE</Tag>
-        <English>You lost %d1 gold to Pirates</English>
+        <English>You lost %d1 gold to pirates</English>
         <French>Les pirates vous ont pris %d1 or</French>
         <German>Ihr verliert %d1 Gold an die Piraten</German>
         <Italian>You lost %d1 gold to Pirates</Italian>
@@ -747,7 +747,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FORCE_START_PEACE</Tag>
-        <English>You overstep your authority attempting to declare war on another European nation!</English>
+        <English>You overstep your authority, attempting to declare war on another European nation!</English>
         <French>Vous avez outrepassé votre autorité en tentant de déclarer la guerre à une autre nation européenne !</French>
         <German>Ihr habt eure Befugnisse überschritten, als ihr versuchtet, einer anderen Europäischen Nation den Krieg zu erklären!</German>
         <Italian>You overstep your authority attempting to declare war on another European nation!</Italian>
@@ -755,7 +755,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLOCOMMENT_FORCE_START_PEACE</Tag>
-        <English>You overstep your authority attempting to declare war on another European nation!</English>
+        <English>You overstep your authority, attempting to declare war on another European nation!</English>
         <French>Vous avez outrepassé votre autorité en tent de déclarer la guerre à une autre nation européenne !</French>
         <German>Ihr habt eure Befugnisse überschritten, als ihr versuchtet, einer anderen Europäischen Nation den Krieg zu erklären!</German>
         <Italian>You overstep your authority attempting to declare war on another European nation!</Italian>
@@ -826,6 +826,26 @@
         <Spanish>Fundar una misión[NEWLINE]Success rate: %d1_success</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_FAILED</Tag>
+        <English>Your native trader failed to establish a trading post in %s1_CityName.</English>
+        <German>Eurem Ureinwohnerhändler ist es nicht gelungen, in %s1_CityName einen Handelsposten zu errichten.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
+        <English>Establish a trading post</English>
+        <German>Einen Handelsposten errichten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
+        <English>Establish a trading post [NEWLINE]Success rate: %d1_success</English>
+        <German>Einen Handelsposten errichten[NEWLINE]Erfolgschance: %d1_success</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_CREATED_TREASURE</Tag>
+        <English>Your trading post in %s1_CityName sends the collected gold back home to our colonies.</English>
+        <German>Euer Handelsposten in %s1_CityName sendet die erwirtschafteten Reichtümer zurück in die Kolonien.</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_MEMORY_MISSION_FAIL</Tag>
         <English>"Your missionaries have insulted our Spirits!"</English>
         <French>"Vos missionnaires ont insulté nos Esprits !"</French>
@@ -835,7 +855,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_OFFER_CITY_2</Tag>
-        <English>We would like to offer you the lands this settlement is on as a sign of our respect.</English>
+        <English>We would like to offer you the lands of this settlement as a sign of our respect.</English>
         <French>Nous voulons vous offrir les terres sur lesquels vous vous êtes établis en témoignage de notre respect.</French>
         <German>Wir möchten Euch diese Siedlungen übergeben - als Zeichen des Respekts.</German>
         <Italian>We would like to offer you the lands this settlement is on as a sign of our respect.</Italian>
@@ -943,7 +963,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_HIM_GOLD_CAPTURE</Tag>
-        <English>You lost %d1 gold to Pirates</English>
+        <English>You lost %d1 gold to pirates</English>
         <French>Les pirates vous ont pris %d1 or</French>
         <German>Piraten konnten %d1 Gold von Euch erbeuten</German>
         <Italian>I pirati ti hanno estorto %d1 ori</Italian>
@@ -999,7 +1019,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_SENTRY_WHILE_HEAL</Tag>
-        <English>Sentry while Healing</English>
+        <English>Sentry while healing</English>
         <French>En sentinelle jusqu'à guérison</French>
         <German>Wachen während der Heilung</German>
         <Italian>Sentry while Healing</Italian>
@@ -1023,7 +1043,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_MOVE_TO_SENTRY</Tag>
-        <English>Move and Sentry</English>
+        <English>Move to sentry</English>
         <French>Déplacer et mettre en sentinelle</French>
         <German>Wachen während der Bewegung</German>
         <Italian>Move and Sentry</Italian>
@@ -1031,7 +1051,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_INTERFACEMODE_GO_TO_SENTRY</Tag>
-        <English>Go To and Sentry Mode</English>
+        <English>Go to sentry mode</English>
         <French>Mode "aller à et mettre en sentinelle"</French>
         <German>Wachen während Gehe zu</German>
         <Italian>Go To and Sentry Mode</Italian>
@@ -1039,7 +1059,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_SELECT_UNIT_PROFESSION</Tag>
-        <English>Select All Units (Same Profession)</English>
+        <English>Select all units (same profession)</English>
         <French>Selectionner toutes les unités (même type)</French>
         <German>Wähle alle Einheiten desselben Typs</German>
         <Italian>Select All Units (Same Profession)</Italian>
@@ -1047,7 +1067,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAME_OPTION_CITY_BOMBARD</Tag>
-        <English>Enable City Bombard</English>
+        <English>Enable city bombard</English>
         <French>Bombardement automatique</French>
         <German>Automatische Bombardierung</German>
         <Italian>Enable City Bombard</Italian>
@@ -1055,7 +1075,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GAME_OPTION_CITY_BOMBARD_HELP</Tag>
-        <English>Cities bombard automatically when crossing hostile ships</English>
+        <English>Cities bombard automatically when encounteringing hostile ships</English>
         <French>Les villes bombardent automatiquement à l'approche de navires hostiles</French>
         <German>Städte bombardieren automatisch vorbeifahrende Schiffe</German>
         <Italian>Enable City Bombard</Italian>
@@ -1087,7 +1107,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_INDIAN_HARBOUR</Tag>
-        <English>[ICON_BULLET]Cannot enter native villages</English>
+        <English>[ICON_BULLET]Cannot enter Native villages</English>
         <French>[ICON_BULLET]Ne peut rentrer dans les villages indigènes</French>
         <German>[ICON_BULLET]Kann Ureinwohnerdörfer nicht anlaufen</German>
         <Italian>[ICON_BULLET]Cannot enter native villages</Italian>
@@ -1135,11 +1155,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LBD_ESCAPE</Tag>
-        <English>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</English>
+        <English>[COLOR_WARNING_TEXT]An unfree colonist has fled from %s1_city.[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Un captif s'est enfui de %s1_city.[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Ein Unfreier in %s1_city ist verschwunden. Man vermutet, dass er in die Wildnis geflohen ist.[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</Italian>
         <Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has fled from %s1_city.[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_LBD_REVOLT</Tag>
+        <English>[COLOR_WARNING_TEXT]An unfree colonist has revolted and fled from %s1_city.[COLOR_REVERT]</English>
+        <French>[COLOR_WARNING_TEXT]Un captif s'est revolté et enfui de %s1_city.[COLOR_REVERT]</French>
+        <German>[COLOR_WARNING_TEXT]Ein Unfreier in %s1_city hat revoltiert. Man vermutet, dass er in die Wildnis geflohen ist.[COLOR_REVERT]</German>
+        <Italian>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]An unfree Colonist has revolted and fled from %s1_city.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
@@ -1206,8 +1234,16 @@
         <Spanish>[ICON_BULLET]Can flee</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_REVOLT</Tag>
+        <English>[ICON_BULLET]Can revolt</English>
+        <French>[ICON_BULLET]Peut revolter</French>
+        <German>[ICON_BULLET]Kann revoltieren und zur Bedrohung werden</German>
+        <Italian>[ICON_BULLET]Can revolt</Italian>
+        <Spanish>[ICON_BULLET]Can revolt</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROF_LBD1</Tag>
-        <English>[ICON_BULLET]Can become an expert through hard work after some time</English>
+        <English>[ICON_BULLET]Can become an expert through work over time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach einiger Zeit zum Experten in diesem Beruf werden</German>
         <Italian>[ICON_BULLET]Can become an expert through hard work after some time</Italian>
@@ -1215,7 +1251,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROF_LBD2</Tag>
-        <English>[ICON_BULLET]Can become an expert through hard work after a long time</English>
+        <English>[ICON_BULLET]Can become an expert through work after a long time</English>
         <French>[ICON_BULLET]Un colon libre exerçant cette profession peut devenir un expert au bout d'un certain temps</French>
         <German>[ICON_BULLET]Ein Freier Kolonist kann nach langer Zeit zum Experten in diesem Beruf werden</German>
         <Italian>[ICON_BULLET]Can become an expert through hard work after a long time</Italian>
@@ -1239,7 +1275,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_YOU_UNIT_CAPTURED_ENEMY_SHIP</Tag>
-        <English>An enemy unit was captured after fight.</English>
+        <English>An enemy unit was captured after a fight.</English>
         <French>Une unité ennemie a été capturé après le combat.</French>
         <German>Gouverneur, wir konnten ein feindliches Schiff kapern.</German>
         <Italian>An enemy unit was captured after fight.</Italian>
@@ -1247,7 +1283,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_MORE_RESPAWN</Tag>
-        <English>Player %s1_player has withdrawn from the new world.</English>
+        <English>Player %s1_player has withdrawn from the New World.</English>
         <French>Las de l'insuccès de %s1_player, son Roi a décidé de retirer du Nouveau Monde l'ensemble de ses explorateurs, soldats et colons.</French>
         <German>Zunächst hat %s1_player das Schlachtenglück verlassen - und nun verliert er auch noch die Gunst seines Königs, der es leid ist, zum Gespött der ganzen Welt zu werden. Majestät geruhen, alle Entdecker, Soldaten und Kolonisten aus der Neuen Welt zurück nach Europa zu beordern.</German>
         <Italian>Player %s1_player has withdrawn from the new world.</Italian>
@@ -1255,7 +1291,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_AMERICA_DESC</Tag>
-        <English>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, fixing of several river bugs, fair balanced transferplots and starting positions</English>
+        <English>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, several river bugs fixed, fair balanced transfer plots and starting positions</English>
         <French>Version TAC de l'hémisphère Ouest (Immense):zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec quelques ajustements dans l'intérêt du jeu.</French>
         <German>TAC-Variante der Gesamtamerika-Karte Western Hemisphere (Huge): authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, korrekt platzierte Inseln, fair verteilte Überfahrtsfelder nach Europa; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten; Fixing von bewaldeten Meeresfeldern</German>
         <Italian>TAC-version of Western Hemisphere (Huge): realistic and coherent temperate zones, authentic rivers, authentic mountains, authentic islands, fixing of several river bugs, fair balanced transferplots and starting positions</Italian>
@@ -1263,7 +1299,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_NORTHWEST_DESC</Tag>
-        <English>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pazific transferplots, only five Atlantic transferplots und starting positions for different temperate zones and different game experiences</English>
+        <English>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pacific transfer plots, only five Atlantic transfer plots and starting positions for different temperate zones and different game experiences</English>
         <French>Version TAC du passage par le Nord Ouest (Immense):zones tempérées réalistes et cohérentes, fleuves, montagnes, îles authentiques à la réalité avec seulement 5 cases d'accès à l'Europe par l'Atlantique servant chacune de position de départ pour diversifier les expériences de jeu.</French>
         <German>TAC-Variante der Karte Northwest Passage: nur Indianervölker aus Nordamerika, authentische und zusammenhängende Klimazonen, authentische Flüsse, authentische Höhenzüge, erstmals Pazifik-Überfahrtsfelder, nur noch fünf, fair verteilte Überfahrtsfelder im Atlantik, die als Startpositionen in verschiedene Klimazonen führen, die unterschiedliche Herausforderungen bieten; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten</German>
         <Italian>TAC-version of Northwest Passage: realistic and coherent temperate zones, authentic rivers, authentic mountains, fixing of several river bugs, new Pazific transferplots, only five Atlantic transferplots und starting positions for different temperate zones and different game experiences</Italian>
@@ -1271,7 +1307,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_SOUTH_AMERICA_DESC</Tag>
-        <English>TAC-version of South America: transferplots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with less desert plots and more lumber</English>
+        <English>TAC-version of South America: transfer plots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with fewer desert plots and more lumber</English>
         <French>Version TAC de l'Amérique du Sud avec quelques ajustements au niveau des fleuves, de la jungle et du désert en Patagonie.</French>
         <German>TAC-Variante der Karte South America: nur Indianervölker aus Südamerika, mehr Dschungel, mehr Berge, mehr Flüsse, ausgeglichener balancierte Atlantik-Überfahrtsfelder, erstmals Pazifik-Überfahrtsfelder, Südzipfel mit weniger Wüste und erstmals mit Holzquellen; Fixing von Flüssen, die stromaufwärts flossen oder im Binnenland versickerten</German>
         <Italian>TAC-version of South America: transferplots optimized, fixing of several river bugs, more rivers, more plots with jungle and peaks, Patagonia with less desert plots and more lumber</Italian>
@@ -1279,7 +1315,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_CENTRAL_AMERICA_DESC</Tag>
-        <English>TAC-map of Central America: from the Caribic Sea to Mexico, from the Mississippi River to Amazon</English>
+        <English>TAC-map of Central America: from the Caribbean Sea to Mexico, from the Mississippi River to Amazon</English>
         <French>Version TAC de l'Amérique Centrale : de la mer des Caraïbes au Mexique, du Mississippi à l'Amazone.</French>
         <German>TAC-Karte von Zentralamerika: von den Karibischen Inseln bis Mexiko, vom Mississippi-Delta bis hin zum Amazonasdschungel</German>
         <Italian>TAC-map of Central America: from the Caribic Sea to Mexico, from the Mississippi River to Amazon</Italian>
@@ -1287,7 +1323,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDBUILDER_TAC_EAST_COAST_DESC</Tag>
-        <English>Huge TAC-map of the East Coast of North America. Technically defined as a small map so that there will be only settlements of the four North American native tribes. From Newfoundland to Florida, from the Great Lakes to the Atlantic.</English>
+        <English>Huge TAC-map of the East Coast of North America. Defined as a small map, therefore only four North American native tribes have settlements. Newfoundland south to Florida, the Great Lakes east to the Atlantic.</English>
         <French>Version TAC de la côte Est Nord-Américaine. Défini volontairement comme une petite carte pour n'abriter que 4 tribus Nord-Américaines. De Terre-Neuve à la Floride, des Grands Lacs à l'Atlantique.</French>
         <German>Riesige TAC-Karte der Ostküste Nordamerikas. Technisch als "kleine" Karte ausgewiesen, damit sie nur von den vier Indianerstämmen des Nordens besiedelt ist. Von Neufundland bis Florida, von den Großen Seen bis zur Atlantikküste.</German>
         <Italian>Huge TAC-map of the East Coast of North America. Technically defined as a small map so that there will be only settlements of the four North American native tribes. From Newfoundland to Florida, from the Great Lakes to the Atlantic.</Italian>
@@ -1295,7 +1331,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NATIVE_MERC</Tag>
-        <English>You have acquired native mercenaries.</English>
+        <English>You have acquired Native mercenaries.</English>
         <French>Vous avez acquis une unité de mercenaires indigènes.</French>
         <German>Gouverneur, unsere einheimischen Söldner stehen bereit.</German>
         <Italian>You have acquired native mercenaries.</Italian>
@@ -1311,7 +1347,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_DECREASED_MAX_TAX</Tag>
-        <English>The King is pleased and decreased our maximal tax rate.</English>
+        <English>The King is pleased and has decreased our maximum tax rate.</English>
         <French>Le Roi est satisfait et accepte de réduire notre taux maximal d'imposition.</French>
         <German>Erfreut über unseren Gehorsam hat der König den maximalen Steuersatz um %d1_decrease gesenkt.</German>
         <Italian>The King is pleased and decreased our maximal tax rate</Italian>
@@ -1319,15 +1355,15 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS</Tag>
-        <English>The reinforcement troops of our king have arrived.</English>
-        <French>Les renforts de notre roi sont arrivés.</French>
-        <German>Die Unterstützungstruppen unseres Königs sind eingetroffen.</German>
-        <Italian>The reinforcement troops of our king have arrived.</Italian>
-        <Spanish>The reinforcement troops of our king have arrived.</Spanish>
+        <English>Reinforcement troops from our King have arrived. We heard rumours that the king of your new enemy sent reinforcements as well.</English>
+        <French>Les renforts de notre roi sont arrivés. Les renforts du otre roi sont arrivés aussi.</French>
+        <German>Die Unterstützungstruppen unseres Königs sind eingetroffen. Wir haben Gerüche gehört, dass der König eures Gegners auch Unterstützungstruppen entsand hat.</German>
+        <Italian>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</Italian>
+        <Spanish>The reinforcement troops of our king have arrived. We heard rumors that the king of your new enemy sent reinforcements as well.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_INCCREASED_MAX_TAX</Tag>
-        <English>The King is angry and has increased our maximal tax rate.</English>
+        <English>The King is angry and has increased our maximum tax rate.</English>
         <French>Irrité par notre désobéissance, le roi a augmenté notre taux maximal d'imposition de d1_increase%. [NEWLINE] Notre relation avec s2_nation% mais s'est améliorée.</French>
         <German>Verärgert über unseren Ungehorsam hat der König unseren maximalen Steuersatz um %d1_increase erhöht.[NEWLINE]Unsere Beziehung zu %s2_nation hat sich jedoch verbessert.</German>
         <Italian>The King is angry and increased our maximal tax rate.</Italian>
@@ -1343,7 +1379,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_WHALING_UNLOAD</Tag>
-        <English>Automate Whaling</English>
+        <English>Automate whaling</English>
         <French>Automatiser la chasse à la baleine</French>
         <German>Schiff jagt Wale automatisch</German>
         <Italian>Automate Whaling</Italian>
@@ -1351,7 +1387,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_WHALING_UNLOAD_HELP</Tag>
-        <English>Will gather blubber from whales until the ship is full, then unload cargo at selected port</English>
+        <English>Will gather blubber from whales until the ship is full, then unload cargo at a selected port</English>
         <French>Pêchera jusqu'au plein de sa cargaison puis rentrera au port sélectionné</French>
         <German>Schiff geht vollautomatisch auf Waljagd: sucht Bonusressource Wale, sammelt Walspeck und bringt ihn in eine Hafenstadt</German>
         <Italian>Colletta alimentare a partire dai pesci fino balena o la nave è piena</Italian>
@@ -1359,7 +1395,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT</Tag>
-        <English>Automate Gatherboat</English>
+        <English>Automate fishing boat</English>
         <French>Automatiser la pêche</French>
         <German>Fang automatisieren</German>
         <Italian>Automatizza i peschereccio</Italian>
@@ -1367,7 +1403,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_AUTOMATE_FISHINGBOAT_HELP</Tag>
-        <English>Will gather until the ship is full, then unload cargo at the nearest port</English>
+        <English>Will catch fish til fully loaded, then unload cargo at the nearest port</English>
         <French>Pêchera jusqu'au plein de sa cargaison puis rentrera au port le plus proche</French>
         <German>Schiff geht vollautomatisch auf Fang. Sucht Bonusressource, sammelt Ware und bringt sie in eine Hafenstadt</German>
         <Italian>Colletta alimentare a partire dai pesci fino balena o la nave è piena</Italian>
@@ -1391,7 +1427,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALER_FULL</Tag>
-        <English>Your %s1_unit is filled to the brim with food from the sea.</English>
+        <English>Your %s1_unit is filled to the brim with fresh seafood.</English>
         <French>Votre %s1_unit est rempli de nourriture à ras bord.</French>
         <German>Das Schiff %s1_unit hat jetzt so viel Walspeck an Bord, wie es fassen kann.</German>
         <Italian>Il vostro %s1_unit è riempito al bordo con il cibo dal mare.</Italian>
@@ -1399,7 +1435,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WHALER_FULL_UNLOAD</Tag>
-        <English>Your %s1_unit is filled to the brim with food from the sea and is returning to %s2_city to unload.</English>
+        <English>Your %s1_unit is filled to the brim with fresh seafood and is returning to %s2_city to unload.</English>
         <French>Votre %s1_unit est rempli de nourriture à ras bord.</French>
         <German>Das Schiff %s1_unit hat jetzt so viel Walspeck an Bord, wie es fassen kann.</German>
         <Italian>Il vostro %s1_unit è riempito al bordo con il cibo dal mare.</Italian>
@@ -1407,7 +1443,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SELECT_RETURN_CITY</Tag>
-        <English>Select a City for your %s1_unit to return when cargo hold is full</English>
+        <English>Select a city where your %s1_unit can return once the cargo hold is full.</English>
         <French>Sélectionner la ville dans laquelle votre %s1_unit doit revenir une fois plein</French>
         <German>Gouverneur, wählt eine Küstenstadt aus, zu der das Schiff %s1_unit fahren soll, wenn sein Frachtraum voll ist!</German>
         <Italian>Select a City for your %s1_unit to return when cargo hold is full</Italian>
@@ -1423,7 +1459,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_CITY_RADIUS_PLOT_WORKED</Tag>
-        <English>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</English>
+        <English>[COLOR_PLAYER_RED]This spot is already being worked by the neighbouring city[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Cette zone est déjà exploitée par les citoyen d'une ville proche[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Dieser Platz wird bereits durch eine Stadt bewirtschaftet[COLOR_REVERT]</German>
         <Italian>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</Italian>
@@ -1455,7 +1491,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_WHALE_TAKEN</Tag>
-        <English>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</English>
+        <English>[COLOR_PLAYER_RED]This spot is taken. Only one fishing boat per resource[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Cette zone est déjà exploitée par un autre navire de pêche ![COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Hier geht bereits ein anderes Schiff auf die Waljagd![COLOR_REVERT]</German>
         <Italian>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Italian>
@@ -1463,7 +1499,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_GATHER_BOAT_WHALING</Tag>
-        <English>[ICON_BULLET]Can gather Whale Fat from sea resource Whale</English>
+        <English>[ICON_BULLET]Can gather blubber from sperm whale resource</English>
         <French>[ICON_BULLET]Peut pêcher de la graisse de baleine en exploitant la ressource maritime Baleine</French>
         <German>[ICON_BULLET]Kann Walspeck auf Bonusressource Wale gewinnen</German>
         <Italian>[ICON_BULLET]Can gather Whale Fat from sea resource Whale</Italian>
@@ -1511,7 +1547,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NO_RAW_ON_FIELD</Tag>
-        <English>Gouvernor, a Settler in %s1_city cannot produce any %F2_yield_icon on his tile.</English>
+        <English>Governor, a settler in %s1_city cannot produce any %F2_yield_icon on his tile.</English>
         <French>Gouverneur, un colon de %s1_city ne peut plus produire de %F2_yield_icon sur sa case.</French>
         <German>Gouverneur, ein Bürger aus %s1_city, dem Ihr befohlen hattet, %F2_yield_icon einzubringen, meldet, dass er derzeit nichts zu tun hat.</German>
         <Italian>Gouvernor, a Settler in %s1_city cannot produce any %F2_yield_icon on his tile.</Italian>
@@ -1583,7 +1619,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_0</Tag>
-        <English>Few isles (default)</English>
+        <English>Few islands (default)</English>
         <French>Quelques grandes îles (par défaut)</French>
         <German>Wenige Inseln (Standard)</German>
         <Italian>Few isles (default)</Italian>
@@ -1591,7 +1627,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_FAIRE_WEATHER_MANY_ISLES_1</Tag>
-        <English>Many isles</English>
+        <English>Many islands</English>
         <French>De nombreuses îles</French>
         <German>Viele Inseln</German>
         <Italian>Many isles</Italian>
@@ -1911,7 +1947,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_LOAD_GROUP_TABLE</Tag>
-        <English>Load Group:</English>
+        <English>Load group:</English>
         <French>Groupe de Route :</French>
         <German>Gruppe Laden:</German>
         <Italian>Gruppo di Carico:</Italian>
@@ -1927,7 +1963,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRADE_ROUTES_DELETE_GROUP_TABLE</Tag>
-        <English>Delete Group:</English>
+        <English>Delete group:</English>
         <French>Supprimer Groupe :</French>
         <German>Gruppe Entfernen:</German>
         <Italian>Elimina Gruppo:</Italian>
@@ -2135,7 +2171,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_EAST_MESSAGE</Tag>
-        <English>New world - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</English>
+        <English>New World - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Atlantique[COLOR_REVERT]</French>
         <German>Kurs [COLOR_HIGHLIGHT_TEXT]Atlantik[COLOR_REVERT]</German>
         <Italian>New world - [COLOR_HIGHLIGHT_TEXT]east[COLOR_REVERT]</Italian>
@@ -2143,7 +2179,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EU_SAIL_WEST_MESSAGE</Tag>
-        <English>New world - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</English>
+        <English>New World - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</English>
         <French>Nouveau monde - [COLOR_HIGHLIGHT_TEXT]Pacifique[COLOR_REVERT]</French>
         <German>Kurs [COLOR_HIGHLIGHT_TEXT]Pazifik[COLOR_REVERT]</German>
         <Italian>New world - [COLOR_HIGHLIGHT_TEXT]west[COLOR_REVERT]</Italian>
@@ -2316,5 +2352,69 @@
         <German>gekauft</German>
         <Italian>bought</Italian>
         <Spanish>bought</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PORTUGAL_DESC</Tag>
+        <English>Portuguese Colonies</English>
+        <French>Colonies portugaises</French>
+        <German>Colónias Portuguesas</German>
+        <Italian>Colonie portoghesi</Italian>
+        <Spanish>Portuguese Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
+        <English>Portuguese Empire</English>
+        <French>Empire portugais</French>
+        <German>Königreich Portugal</German>
+        <Italian>Impero Portoghese</Italian>
+        <Spanish>Portuguese Empire</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_DESC</Tag>
+        <English>Danish Colonies</English>
+        <French>Colonies danoises</French>
+        <German>Dänische Kolonien</German>
+        <Italian>Danish Colonies</Italian>
+        <Spanish>Danish Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_DENMARK_EUROPE_DESC</Tag>
+        <English>Kingdom of Denmark</English>
+        <French>Empire danois</French>
+        <German>Königreich von Dänemark</German>
+        <Italian>Kingdom of Denmark</Italian>
+        <Spanish>Kingdom of Denmark</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
+        <English>Swedish Colonies</English>
+        <French>Colonies suédoises</French>
+        <German>Schwedische Kolonien</German>
+        <Italian>Swedish Colonies</Italian>
+        <Spanish>Swedish Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
+        <English>Kingdom of Sweden</English>
+        <French>Empire Suédois</French>
+        <German>Königreich von Schweden</German>
+        <Italian>Kingdom of Sweden</Italian>
+        <Spanish>Kingdom of Sweden</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_DESC</Tag>
+        <English>Russian Colonies</English>
+        <French>Colonies russes</French>
+        <German>Russische Kolonien</German>
+        <Italian>Russian Colonies</Italian>
+        <Spanish>Russian Colonies</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CIV_RUSSIA_EUROPE_DESC</Tag>
+        <English>Russian Empire</English>
+        <French>Empire Russe</French>
+        <German>Russisches Reich</German>
+        <Italian>Russian Empire</Italian>
+        <Spanish>Russian Empire</Spanish>
     </TEXT>
 </Civ4GameText>
