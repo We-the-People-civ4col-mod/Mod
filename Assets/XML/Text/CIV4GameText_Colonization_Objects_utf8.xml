@@ -240,7 +240,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Misionero jesuita:Misioneros jesuit. </Text>
+            <Text>Misionero jesuita:Misioneros jesuit</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -310,7 +310,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_FATHER_HERNAN_CORTES</Tag>
+        <Tag>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN</Tag>
         <English>
             <Text>Jose de San Martin</Text>
             <Gender>Male</Gender>
@@ -498,7 +498,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_CITY_NAME_BATBADOS</Tag>
+        <Tag>TXT_KEY_CITY_NAME_BARBADOS</Tag>
         <English>Barbados</English>
         <French>
             <Text>La Barbade</Text>
@@ -738,7 +738,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_CITY_NAME_NEW_PORT</Tag>
+        <Tag>TXT_KEY_CITY_NAME_NEWPORT</Tag>
         <English>Newport</English>
         <French>
             <Text>Newport</Text>
@@ -4934,7 +4934,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GREAT_PERSON_GALVEZ</Tag>
+        <Tag>TXT_KEY_GREAT_PERSON_GATES</Tag>
         <English>Horatio Gates</English>
         <French>
             <Text>Horatio Gates</Text>
@@ -4954,7 +4954,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GREAT_PERSON_HIGGINS</Tag>
+        <Tag>TXT_KEY_GREAT_PERSON_GALVEZ</Tag>
         <English>Bernardo de Galvez</English>
         <French>
             <Text>Bernardo de Gálvez</Text>
@@ -4974,7 +4974,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GREAT_PERSON_CARRERA</Tag>
+        <Tag>TXT_KEY_GREAT_PERSON_HIGGINS</Tag>
         <English>Bernardo O' Higgins</English>
         <French>
             <Text>Bernardo O' Higgins</Text>
@@ -4994,7 +4994,7 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GREAT_PERSON_RUYTER</Tag>
+        <Tag>TXT_KEY_GREAT_PERSON_CARRERA</Tag>
         <English>Jose Miguel Carrera</English>
         <French>
             <Text>José Miguel Carrera</Text>
@@ -5775,7 +5775,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_NAME_TIIS_TSEBA</Tag>
-        <English>Tiiis Tseba</English>
+        <English>Tiis Tseba</English>
         <French>
             <Text>Tiiis Tseba</Text>
             <Gender>Female</Gender>
