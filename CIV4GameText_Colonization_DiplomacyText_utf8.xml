@@ -3487,7 +3487,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_ATTITUDE_PLAYER_FURIOUS_5</Tag>
-        <English>%s1? Weird. Whenever I hear that name, it suddenly smells like coyote shit. (Furious)</English>
+        <English>%s1? Weird. Whenever I hear that name, it suddenly smells like skunk shit. (Furious)</English>
         <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] est un summum de bêtise ! (Colère)</French>
         <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]? Seltsam. Immer wenn ich diesen Namen höre, riecht es plötzlich nach Kojotenscheiße. (Wütend)</German>
         <Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] è [NUM1:una schifosa disonesta:uno schifoso disonesto]! (Tono furioso)</Italian>
@@ -3999,7 +3999,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SITTING_BULL_1</Tag>
-		<English>Paleface, I am [OUR_NAME], chief and medicine man of the Sioux. The buffalo is sacred to my people. Its meat nourishes us, its hide warms us, and its sinews serve us as yarn. From its ribs we build sledges in winter. From its children we strip the tender skin to swaddle our own children in. Spare our buffaloes in the hunt, and we will spare you.</English>
+		<English>Paleface, I am [OUR_NAME], chief and medicine man of the Sioux. The buffalo is sacred to my people. Its meat nourishes us, its hide warms us, and its sinews serve us as yarn. From its ribs we build sledges in winter. From its children we strip the tender skin to swaddle our own children in. Spare our buffalo in the hunt, and we will spare you.</English>
 		<French>Bonjour, je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] des [OUR_CIV_ADJ:3]. Allons discuter autour du feu.</French>
 		<German>Bleichgesicht, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling und Medizinmann der [COLOR_HIGHLIGHT_TEXT]Sioux[COLOR_REVERT]. Der Büffel ist meinem Volk heilig. Sein Fleisch nährt uns, sein Fell wärmt uns, und seine Sehnen dienen uns als Garn. Aus seinen Rippen bauen wir im Winter Schlitten. Seinen Kindern ziehen wir die zarte Haut ab, um unsere eigenen Kinder darin zu windeln. Verschont unsere Büffel bei der Jagd, und wir werden Euch verschonen.</German>
 		<Italian>Saluti, sono [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] della civiltà [OUR_CIV_ADJ]. Sediamoci davanti al fuoco e parliamo.</Italian>
@@ -4247,7 +4247,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_MANGAS_COLORADAS_1</Tag>
-		<English>I would rather trust any coyote than you, paleface. You steal our land. You kill the animals. You chop down the trees. An evil spirit dwells in your heart.</English>
+		<English>I would trust any skunk over you, paleface. You steal our land. You kill the animals. You chop down the trees. An evil spirit dwells in your heart.</English>
 		<French>Après les atrocités que vous avez commises, il n'y aura jamais de paix !</French>
 		<German>Jedem Koyoten würde ich eher trauen als Euch, Bleichgesicht. Ihr stiehlt unser Land. Ihr tötet die Tiere. Ihr hackt die Bäume ab. Ein böser Geist wohnt in Eurem Herzen.</German>
 		<Italian>Dopo le atrocità che hai commesso non può esserci alcuna pace!</Italian>
@@ -4391,7 +4391,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_MONTEZUMA_1</Tag>
-		<English>I knew that you would come. My high priests have recognised today, in the blood of a sacrifice, that you are on your way to me. I have had some refreshments prepared. I hope your bowels will find the food agreeable.</English>
+		<English>I knew that you would come. My high priests have recognised today, in the blood of a sacrifice, that you are on your way to me. I have had some refreshments prepared. I hope you will find the food agreeable.</English>
 		<French>Comme toujours, je suis honoré de votre présence. J'espère que vous avez apporté quelques victimes à sacrifier, je suis à court.</French>
 		<German>Ich wusste, dass Ihr kommen würdet. Meine Hohepriester haben heute im Herzblut eines Opfers erkannt, dass Ihr auf dem Wege zu mir seid. Ich habe einige Erfrischungen vorbereiten lassen. Ich hoffe, Euren Eingeweiden wird die Kost bekömlich sein.</German>
 		<Italian>Come sempre, vengo onorato dalla tua presenza. Spero che tu abbia portato le tue vittime sacrificali, perché io le ho finite.</Italian>
@@ -4407,7 +4407,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_SITTING_BULL_1</Tag>
-		<English>I greet you, paleface. I welcome you with open hands. What gifts have you brought us? And did you see a herd of buffaloes on the way there?</English>
+		<English>I greet you, paleface. I welcome you with open hands. What gifts have you brought us? And did you see a herd of buffalo on the way there?</English>
 		<French>Bienvenue, mon ami ! Je vous félicite d'avoir eu la sagesse de chercher conseil auprès de civilisations plus évoluées.</French>
 		<German>Ich grüße Euch, Bleichgesicht. Ich empfange Euch mit offenen Händen. Welche Geschenke habt Ihr uns mitgebracht? Und habt Ihr auf dem Hinweg eine Büffelherde ziehen sehen?</German>
 		<Italian>Benvenuto, amico mio! Sei davvero saggio a cercare consiglio presso chi è migliore di te.</Italian>
@@ -4543,7 +4543,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SITTING_BULL_1</Tag>
-		<English>Paleface, you speak with a forked tongue, poison drips from your heart, and you drive away the buffaloes. You are not wanted here!</English>
+		<English>Paleface, you speak with a forked tongue, poison drips from your heart, and you drive away the buffalo. You are not wanted here!</English>
 		<French>Que pourriez-vous dire qui soit du moindre intérêt pour moi ?</French>
 		<German>Bleichgesicht, Ihr sprecht mit gespaltener Zunge, Gift tropft aus Eurem Herzen, und Ihr vertreibt die Büffel. Ihr seid hier nicht erwünscht!</German>
 		<Italian>Cosa potresti mai dire di minimamente interessante per me?</Italian>
@@ -4551,7 +4551,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_CHIEF_JOSEPH_1</Tag>
-		<English>Paleface, you speak with a forked tongue, poison drips from your heart, and you drive away the buffaloes. You are not wanted here!</English>
+		<English>Paleface, you speak with a forked tongue, poison drips from your heart, and you drive away the buffalo. You are not wanted here!</English>
 		<French>Que pourriez-vous dire qui soit du moindre intérêt pour moi ?</French>
 		<German>Bleichgesicht, Ihr sprecht mit gespaltener Zunge, Gift tropft aus Eurem Herzen, und Ihr vertreibt die Büffel. Ihr seid hier nicht erwünscht!</German>
 		<Italian>Cosa potresti mai dire di minimamente interessante per me?</Italian>
@@ -4679,7 +4679,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_SITTING_BULL_1</Tag>
-		<English>It has been a long time since my people encountered a herd of buffaloes. We have no more leather or hides, and our children walk barefoot. Our pots are empty and our women are scrawny. Can you help us, [CT_NAME]?</English>
+		<English>It has been a long time since my people encountered a herd of buffalo. We have no more leather or hides, and our children walk barefoot. Our pots are empty and our women are scrawny. Can you help us, [CT_NAME]?</English>
 		<French>Voudriez-vous partager votre richesse avec vos amis et alliés, [CT_NAME] ?</French>
 		<German>Lange ist mein Volk auf keine Büffelherde mehr gestoßen. Wir haben kein Leder und keine Häute mehr, und unsere Kinder laufen barfuß. Unsere Töpfe sind leer und unsere Weiber dürr. Könnt Ihr uns helfen, [CT_NAME]?</German>
 		<Italian>Vuoi condividere un po' delle tue ricchezze con i tuoi buoni amici e alleati, [CT_NAME]?</Italian>
@@ -4815,7 +4815,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SITTING_BULL_1</Tag>
-		<English>You are hunting our buffaloes, [CT_NAME]. Well, we don't want to be petty. But you certainly don't either, do you?</English>
+		<English>You are hunting our buffalo, [CT_NAME]. Well, we don't want to be petty. But you certainly don't either, do you?</English>
 		<French>Au nom de l'amitié qui lie nos grands peuples, j'exige que vous nous donniez ceci en gage d'estime.</French>
 		<German>Ihr jagt unsere Büffel, [CT_NAME]. Nun, wir wollen nicht kleinlich sein. Aber Ihr doch gewiss auch nicht, oder?</German>
 		<Italian>Per il bene della duratura amicizia tra i nostri grandi popoli ti chiedo ciò di cui abbiamo bisogno come segno di riconoscimento.</Italian>
@@ -5479,7 +5479,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_1</Tag>
-		<English>I thank you for your hospitality. Even though you are pagans, you may have something human about you.</English>
+		<English>I thank you for your hospitality. Even though you are pagans, there's something human about you.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Ich danke Euch für Eure Gastfreundschaft. Auch wenn Ihr Heiden seid, habt Ihr womöglich etwas Menschliches an Euch.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5487,7 +5487,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_2</Tag>
-		<English>Thank you! Also for the fact that the chief's daughter made me happy with her charm.</English>
+		<English>Thank you! The chief's charming daughter made me very happy.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Habt Dank! Auch dafür, dass mich die Häuptlingstochter mit ihrem Liebreiz beglückte.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5503,7 +5503,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_4</Tag>
-		<English>Thank you for your welcome! But unfortunately I have to move on now.</English>
+		<English>Thank you for your welcome! Unfortunately I must move on now.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Danke für Euer Willkommen! Doch muss ich jetzt leider weiterziehen.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5551,7 +5551,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_10</Tag>
-		<English>Farewell! And please believe that when you saw me galloping naked on my horse last night it didn't mean what it looked like.</English>
+		<English>Farewell! Please believe that the naked ride on my horse last night didn't mean what it looked like.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Lebt wohl! Und glaubt mir bitte, dass der nackte Ritt auf meinem Pferd, bei dem Ihr mich letzte Nacht ertappt habt, nicht das bedeutet, wonach es aussah.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5575,7 +5575,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_13</Tag>
-		<English>Farewell! By the way, I took some of the deep-fried otter tails as a snack for the road.</English>
+		<English>Farewell! I took some of the deep-fried otter tails as a snack for the road.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Lebt wohl! Ich habe mir übrigens noch ein paar der frittierten Otterschwänze als Wegzehrung eingesteckt.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5583,7 +5583,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_14</Tag>
-		<English>Farewell! The roasted chinchillas were a delicacy.</English>
+		<English>Farewell! Roasted chinchillas were a delicacy.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Lebt wohl! Die gerösteten Chinchillas waren eine Delikatesse.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5591,7 +5591,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_15</Tag>
-		<English>I'm afraid I have to move on now. And please excuse me for not wanting to try the steamed leeches.</English>
+		<English>I'm afraid I have to move on now. Please excuse me for not wanting to try the steamed leeches. Though I do eat eels.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Ich muss jetzt leider weiterziehen. Und entschuldigt bitte, dass ich die gedünsteten Egel nicht probieren wollte.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5615,7 +5615,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_18</Tag>
-		<English>The visit with you was an unforgettable experience! Especially the mushroom decoction that your shaman offered me. But now, unfortunately, I have to fly on!</English>
+		<English>The visit with you was an unforgettable experience! Especially the mushroom decoction that your shaman offered me. Now I must fly!</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Der Besuch bei Euch war ein unvergessliches Erlebnis! Insbesondere der Pilzsud, den mir Euer Schamane angeboten hat. Doch jetzt muss ich leider weiterfliegen!</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
