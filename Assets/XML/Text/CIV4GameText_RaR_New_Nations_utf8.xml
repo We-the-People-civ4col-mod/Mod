@@ -51,7 +51,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_TUGLAWINA_1</Tag>
-        <English>Too late. Because of your crimes, the spirits of the northern lights have marked you for death.</English>
+        <English>Too late. Because of your crimes, the spirits of the Northern Lights have marked you for death.</English>
         <French>Il est trop tard. Vos crimes ont conduit les esprits de la lumière boréale à vous marquer pour mort.</French>
         <German>Dafür ist es zu spät. Wegen Eurer Verbrechen haben die Geister des Nordlichts Euren Tod bestimmt.</German>
     </TEXT>
@@ -141,7 +141,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_KONDIARONK_1</Tag>
-        <English>No, paleface. We will not leave the warpath. Only when your scalp hangs in my tipi will I take my men home to their children and wives.</English>
+        <English>No, paleface. We will not leave the warpath. Only when your scalp hangs in my teepee will I take my men home to their children and wives.</English>
         <French>Non, visage pâle. Notre peuple ne retrouvera la paix que lorsque j'arborerai le cuir de votre crane à l'entrée de mon Wigwam.</French>
         <German>Nein, Bleichgesicht. Wir werden den Kriegspfad nicht verlassen. Erst wenn Euer Skalp in meinem Wigwam hängt, werde ich meine Krieger heim zu ihren Kindern und Weibern holen.</German>
     </TEXT>
@@ -153,7 +153,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_KONDIARONK_1</Tag>
-        <English>Your arrival in [OUR_CIV_ADJ] lands was heralded by unrest among evil spirits. Apparently, they are horrified by your presence. As are we. What do you want?</English>
+        <English>Your arrival in [OUR_CIV_ADJ] lands was heralded by unrest among evil spirits. They are horrified by your presence, as are we. What do you want?</English>
         <French>Votre arrivée sur les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] étaient annoncée par les mauvais esprits. Apparemment, ils sont horrifiés par votre présence. Comme nous le sommes également. Que voulez-vous donc ?</French>
         <German>Eure Ankunft im [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stammesgebiet wurde von den bösen Geistern vorhergesagt. Offenbar sind sie von Eurer Anwesenheit entsetzt. Genau wie wir. Was wollt Ihr?</German>
     </TEXT>
@@ -221,13 +221,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_COCIJOEZA_1</Tag>
-        <English>We, the people of the clouds, can never make peace with the filthy beasts that you are.</English>
+        <English>We, the people of the clouds, can never make peace with such filthy beasts as you.</English>
         <French>Nous, peuple des nuages, ne pourrons jamais faire la paix avec les bêtes immondes que vous êtes.</French>
         <German>Wir, die Menschen der Wolken, können niemals Frieden schließen mit den dreckigen Bestien, die Ihr seid.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_COCIJOEZA_1</Tag>
-        <English>The [CT_CIV_ADJ] are welcome visitors to the glorious cities of the [OUR_CIV_ADJ]. On which issues may we assist you with our counsel?</English>
+        <English>The [CT_CIV_ADJ] are welcome visitors to the glorious cities of the [OUR_CIV_ADJ]. On which issues may we counsel you?</English>
         <French>Nous invitons avec joie les [CT_CIV_ADJ] à venir visiter nos fiers cités-états [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. En quoi pouvons-nous vous aider ?</French>
         <German>Die [CT_CIV_ADJ] sind gern gesehene Gäste in den glorreichen Städten der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Bei welchen Themen können wir Euch mit unserem Rat zur Seite stehen?</German>
     </TEXT>
@@ -299,7 +299,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SEPE_TIARAJU_1</Tag>
-        <English>Welcome, overdressed stranger. I, [OUR_NAME], represent the [OUR_CIV_ADJ] tribes. Let us have dinner together with all of our families, our friends, their families, their friends, and all people that were somehow still missed out!</English>
+        <English>Welcome, overdressed stranger. I, [OUR_NAME], represent the [OUR_CIV_ADJ] tribes. Let us have dinner together with all of our families, our friends, their families, their friends, and all those people who were somehow still missed out!</English>
         <French>Bonjour, visiteur aux vêtements étranges. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], représentant du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:1][COLOR_REVERT]. Allons donc dîner ensemble avec nos familles, nos amis, leurs familles, leurs amis et d'autres encore qui, par malchance, n'auraient pas été mentionnés !</French>
         <German>Willkommen, viel Kleidung tragender Fremder. Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], vertrete die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Stämme. Lasst uns gemeinsam mit all unseren Familien, unseren Freunden, deren Familien, deren Freunden und allen Menschen, die irgendwie noch gefehlt haben, zu Abend essen!</German>
     </TEXT>
@@ -323,7 +323,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SEPE_TIARAJU_1</Tag>
-        <English>There you are again. Just when I was having a nice evening. Please tell us how we can make you go away again.</English>
+        <English>There you are again. Just when I was having a nice evening. Please tell us how we can make you go away.</English>
         <French>Encore vous... c'est dommage, je passais une soirée agréable. Dîtes-nous donc ce qu'il vous faut pour que vous disparaissiez à nouveau.</French>
         <German>Ihr schon wieder... schade, ich hatte einen angenehmen Abend. Warum sagt Ihr uns nicht, wie wir Euch wieder zum Verschwinden bringen können.</German>
     </TEXT>
@@ -337,7 +337,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_SEPE_TIARAJU_1</Tag>
-        <English>I come in peace to ask for assistance. What do you say?</English>
+        <English>I come in peace to ask for help. What do you say?</English>
         <French>Je suis venu en paix vous demander de l'aide. Qu'avez-vous à répondre ?</French>
         <German>Ich komme in Frieden und bitte um Unterstützung. Wie lautet Eure Antwort?</German>
     </TEXT>
@@ -389,13 +389,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MUNK_1</Tag>
-        <English>It is an honour to meet the great [CT_NAME], governor of [CT_EMPIRE]. I am [OUR_NAME], and I present you the friendship of the [OUR_CIV_ADJ] people. I hope we can establish a lasting friendship on this day.</English>
+        <English>It is an honour to meet the great [CT_NAME], governor of [CT_EMPIRE]. I am [OUR_NAME], and I present you the friendship of the [OUR_CIV_ADJ] people. I hope on this day we can establish a lasting friendship.</English>
         <French>C'est un honneur de rencontrer le grand [CT_NAME], gouverneur de l'[CT_EMPIRE]. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], et je vous présente l'amitié du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Que pouvons-nous faire pour vous, aujourd'hui ?</French>
         <German>Es ist mir eine Ehre, den großen [CT_NAME], Gouverneur von [CT_EMPIRE], zu treffen. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich biete Euch die Freundschaft des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] Volkes. Was können wir heute für Euch tun?</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MUNK_1</Tag>
-        <English>Your traitorous nation is not welcome any longer in this world. There will be no negotiations. Outside!</English>
+        <English>Your traitorous nation is no longer welcome in this world. There will be no negotiations. Outside!</English>
         <French>Votre nation de traîtres ne devrait pas avoir sa place dans ce monde. Il n'y aura aucune négociation. Dehors !</French>
         <German>Eure Nation von Verrätern sollte keinen Platz in dieser Welt haben. Es wird keine Verhandlungen geben. Hinfort!</German>
     </TEXT>
@@ -413,7 +413,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MUNK_1</Tag>
-        <English>Your past transgressions have greatly saddened me. I can barely keep my fleet from sinking yours. Do you have anything to say in your defense?</English>
+        <English>Your past transgressions have saddened me greatly. I can barely prevent my fleet from sinking yours. Do you have anything to say in your defense?</English>
         <French>Vos transgressions passées m'ont beaucoup affectés. J'ai du mal à contenir mes marins qui trépignent à l'idée de saborder votre flotte. Qu'avez-vous donc à dire pour votre défense ?</French>
         <German>Eure vergangenen Verfehlungen haben mich sehr getroffen. Ich kann meine Kapitäne kaum bändigen, die nur zu gern Eure Flotte versenken würden. Was habt Ihr zu Eurer eigenen Verteidigung zu sagen?</German>
     </TEXT>
@@ -427,7 +427,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_MUNK_1</Tag>
-        <English>We are in need, but do not have the surplus to trade. Please be generous and give us what we need.</English>
+        <English>We are in need, but do not have any surplus to trade. Please be generous and give us what we need.</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Seid bitte großzügig und gebt uns, was wir brauchen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -435,7 +435,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_MUNK_1</Tag>
-        <English>The weakness of your civilization makes us laugh. Give us what we want or suffer the consequences.</English>
+        <English>The weakness of your civilization makes us laugh! Give us what we want or suffer the consequences.</English>
         <French>Je déteste m'attaquer aux plus faibles, mais je le ferai quand même. Donnez-nous ce que nous voulons ou vous en subirez les conséquences.</French>
         <German>Ich verabscheue es, auf den Friedfertigen herumzuhacken, aber ich werde es trotzdem tun. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
@@ -467,7 +467,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_EGEDE_1</Tag>
-        <English>Your evil nation is destined for a bloody, fiery end but, let me tell you, there will be a hotter fire waiting for you. I hope you have come to confess your sins and surrender your belongings to the people of God.</English>
+        <English>Your evil nation is destined for a bloody, fiery end but, let me tell you, there is a hotter fire waiting for you. I hope you have come to confess your sins and surrender your belongings to the people of God.</English>
         <French>Votre nation est habitée par le mal. Vous qui aimez tant le sang et la fureur, sachez qu'encore plus de flammes vous attendent après votre mort. J'espère que vous êtes au moins venu pour vous repantir de vos pêchés.</French>
         <German>Eure böse Nation ist für ein blutiges, feuriges Ende bestimmt, aber lasst mich Euch sagen, dass nach dem Ende noch mehr Feuer auf Euch warten wird. Ich hoffe, Ihr sind gekommen, um Eure Sünden zu bekennen und Euer Hab und Gut dem Volk Gottes zu übergeben.</German>
     </TEXT>
@@ -481,7 +481,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_EGEDE_1</Tag>
-        <English>We are in need, but do not have the surplus to trade. Please find it in your heart to donate what we need.</English>
+        <English>We are in need, but do not have any surplus to trade. Please find it in your heart to donate what we need.</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Wir sind in Not, aber wir haben nichts, womit wir handeln könnten. Seid bitte großzügig und gebt uns, was wir wollen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -543,7 +543,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PRINTZ_1</Tag>
-        <English>You have managed to make the friendliest and most honourable people on this planet too angry to even talk with you. Congratulations.</English>
+        <English>You have managed to make the friendliest and most honourable people on this planet too angry even to talk to you. Congratulations!</English>
         <French>Vous avez réussi à mettre le peuple le plus amicale de la terre trop en colère pour vous recevoir. Félicitations !</French>
         <German>Ihr habt es geschafft, die freundlichsten und ehrenwertesten Menschen auf der Welt so wütend zu machen, daß sie überhaupt nicht mehr mit Euch sprechen wollen. Glückwunsch!</German>
     </TEXT>
@@ -575,7 +575,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_PRINTZ_1</Tag>
-        <English>We are in need, but do not have the surplus to trade. Please find it in your heart to donate what we need.</English>
+        <English>We are in need, but do not have any surplus to trade. Please find it in your heart to donate what we need.</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -583,7 +583,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_PRINTZ_1</Tag>
-        <English>The weakness of your nation makes us laugh. Give us what we want or pay the consequences.</English>
+        <English>The weakness of your nation makes us laugh! Give us what we want or pay the consequences.</English>
         <French>Je déteste m'attaquer aux plus faibles, mais je le ferai quand même. Donnez-nous ce que nous voulons ou vous en subirez les conséquences.</French>
         <German>Die Schwäche Eurer Nation bringt uns zum Lachen. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
@@ -591,7 +591,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RISING_1</Tag>
-        <English>I present you my greetings, [CT_NAME]. I am [OUR_NAME], governor of the [OUR_EMPIRE]. Yes, I know you're excited, now that you finally have met me. I advise you to make peace with us, as there is much that we can teach you.</English>
+        <English>I present to you my greetings, [CT_NAME]. I am [OUR_NAME], governor of the [OUR_EMPIRE]. Yes, I know you're excited, now that you finally have met me. I advise you to make peace with us, as there is much that we can teach you.</English>
         <French>Cher [CT_NAME], je vous salue ! Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur des [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Oui, je me rends compte de la joie qui vous habite à l'idée d'enfin me rencontrer. Je vous invite à faire la paix avec vous, pour le grand bien de votre propre peuple.</French>
         <German>Lieber [CT_NAME], ich grüße Euch! Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Ja, ich kann sehen, wie glücklich Ihr sind, mich endlich zu treffen. Ich lade Euch ein, Frieden mit uns zu schließen, denn es gibt viel, was wir Euch lehren können.</German>
     </TEXT>
@@ -603,7 +603,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_RISING_1</Tag>
-        <English>Our artillery needed testing, and we're very glad that you volunteered to be target practice. We'll let you know it once we get bored. This is not yet the case.</English>
+        <English>Our artillery needed testing. You have volunteered to be the target. We'll stop once we get bored. This is not yet the case.</English>
         <French>Je suis heureux que vous vous soyez porter comme cible volontaire pour l'entraînement de notre entrainement. On vous tiendra au courant lorsqu'on sera lassés. Ce n'est pas encore le cas.</French>
         <German>Unsere Artillerie brauchte dringend Training. Ich bin froh, dass Ihr Euch freiwillig als Zielscheibe zur Verfügung gestellt habt. Wir sagen Euch Bescheid, wenn uns langweilig wird. Das ist noch nicht der Fall.</German>
     </TEXT>
@@ -629,7 +629,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_RISING_1</Tag>
-        <English>We are in need, but do not have the surplus to trade. Please find it in your heart to donate what we need.</English>
+        <English>We are in need, but do not have surplus to trade. Please find it in your heart to donate what we need.</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -697,7 +697,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_ERMAK_1</Tag>
-        <English>We will make peace after we've sent you back to whatever Western European dwarf state you come from.</English>
+        <English>We will make peace after we've sent you back to whatever Western European dwarf state spawned you.</English>
         <French>Nous ne signerons de paix que le jour où l'on vous aura renvoyé dans votre mini-nation européenne.</French>
         <German>Wir werden Frieden schließen, nachdem wir Euch in den westeuropäischen Kleinstaat zurückgeschickt haben, aus dem Ihr kommt.</German>
     </TEXT>
@@ -709,7 +709,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ERMAK_1</Tag>
-        <English>You are not worthy of being in the presence of the future leader of this world. But I'll give you a chance to regain some of my appreciation, as I'm feeling good today. Where are the caravans bringing in the presents for [OUR_NAME]</English>
+        <English>You are not worthy of being in the presence of the future leader of this world. But I'll give you a chance to regain some of my appreciation, as I'm feeling good today. Where are the caravans bringing in the presents for [OUR_NAME]?</English>
         <French>Vous êtes trop pathétique pour mériter de discuter avec le prochain maître de ce continent. Mais je suis de bonne humeur aujourd'hui, je vais vous laisser une chance de vous racheter. Où sont donc les convois apportant votre tribut à [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] ?</French>
         <German>Ihr seid zu erbärmlich, um es zu verdienen, sich mit dem baldigen Herrn dieses Kontinents zu streiten. Aber ich habe heute gute Laune, also gebe ich Euch eine Chance, sich zu rehabilitieren. Wo sind die Karawanen, die Euren Tribut nach [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT] bringen?</German>
     </TEXT>
@@ -723,7 +723,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_ERMAK_1</Tag>
-        <English>We are in need, but do not have the surplus to trade. Please find it in your heart to donate what we need.</English>
+        <English>We are in need, but do not have any surplus to trade. Please find it in your heart to donate what we need.</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -731,7 +731,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ERMAK_1</Tag>
-        <English>The weakness of your civilization makes us laugh. Give us what we want or pay the consequences.</English>
+        <English>The weakness of your civilization makes us laugh. Give us what we want, or pay the consequences.</English>
         <French>La fébrilité de votre pseudo-civilisation me fait rire. Donnez-nous ce que nous voulons ou vous en subirez les conséquences.</French>
         <German>Die Schwäche Eurer Nation bringt uns zum Lachen. Gebt uns, was wir wollen, oder tragt die Konsequenzen.</German>
         <Italian>Odio approfittare degli umili, ma lo farò ugualmente. Dacci ciò che vogliamo o preparati ad affrontare le conseguenze.</Italian>
@@ -739,7 +739,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_BARANOV_1</Tag>
-        <English>I see that the [CT_CIV_ADJ] have come to this wonderful New World as well. I am [OUR_NAME], governor of the [OUR_EMPIRE]. I hope we can be good neighbours and friends, as we have been in Europe.</English>
+        <English>I see that the [CT_CIV_ADJ] have come to this wonderful New World as well. I am [OUR_NAME], governor of the [OUR_EMPIRE]. I hope we can be good neighbours and friends, as in Europe.</English>
         <French>Je vois que les [CT_CIV_ADJ] sont également venus dans ce merveilleux nouveau monde. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur de [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. J'espère que nous pourrons être de bons voisins et amis, comme nous le sommes en Europe.</French>
         <German>Ich sehe, dass die [CT_CIV_ADJ] auch in diese wunderbare Neue Welt gekommen sind. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Ich hoffe, wir können gute Nachbarn und Freunde sein, so wie wir es in Europa sind.</German>
     </TEXT>
@@ -763,7 +763,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_BARANOV_1</Tag>
-        <English>Your subjects still haven't deposed you? Their lack of sense and intellect is evident. What do you want?</English>
+        <English>Your subjects still haven't deposed you? Their lack of intellect is evident. What do you want?</English>
         <French>Vos sujets ne vous ont donc pas encore renversé ? Cela prouve bien le manque de sens commun de votre peuple. Que voulez-vous ?</French>
         <German>Eure Untertanen haben Euch immer noch nicht abgesetzt? Dies beweist den Mangel an Intellekt und gesundem Menschenverstand Eurer Leute. Was wollt Ihr?</German>
     </TEXT>
@@ -777,7 +777,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_BARANOV_1</Tag>
-        <English>We are in need, but do not have the surplus to trade. Please find it in your heart to donate what we need.</English>
+        <English>We are in need, but do not have any surplus to trade. Please find it in your heart to donate what we need.</English>
         <French>Nous sommes dans le besoin, mais nous n'avons pas de quoi négocier. Soyez généreux et donnez-nous ce que nous voulons.</French>
         <German>Wir sind in Not, haben aber nicht genug, um zu handeln. Fasst Euch doch bitte ein Herz und spendet, was wir benötigen.</German>
         <Italian>Abbiamo bisogno di aiuto, ma non abbiamo niente da scambiare. Spero che trovi nel tuo cuore la volontà di donarci quello che ci serve.</Italian>
@@ -831,7 +831,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_JAUREYBO_1</Tag>
-        <English>You want me to speak with you, [CT_NAME]? I'm sorry, I consider it childish to play with my dinner.</English>
+        <English>You want me to speak with you, [CT_NAME]? I'm sorry. I consider it infantile to play with my dinner.</English>
         <French>Vous voulez parle, [CT_NAME] ? Désolé mais je n'aime pas bavarder avec mon prochain repas.</French>
         <German>Ihr wollt mit mir reden, [CT_NAME]? Es tut mir leid, ich halte es für unangebracht, mit meinem Essen zu spielen.</German>
     </TEXT>
@@ -905,7 +905,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_NARBONA_1</Tag>
-        <English>Welcome to the hunting grounds of the [OUR_CIV_ADJ]. I am [OUR_NAME], and I hope the relationship between the [OUR_CIV_ADJ] and the [CT_EMPIRE] will be to the benefit of both. Let us exchange stories of our peoples under the light of the moon.</English>
+        <English>Welcome to the hunting grounds of the [OUR_CIV_ADJ]. I am [OUR_NAME], and I hope the relationship between the [OUR_CIV_ADJ] and the [CT_EMPIRE] will be to the benefit of us both. Let us exchange stories of our peoples beneath the light of the moon.</English>
         <French>Bienvenue en terres de chasse du fier peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. J'espère que les relations entre les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] et l'[CT_EMPIRE] seront aux bénéfices de chacun. Je vous invite à vous assoir au clair de lune pour que nous apprenions davantage sur les aventures de nos peuples.</French>
         <German>Willkommen in den Jagdgründen des stolzen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Ich hoffe, dass die Beziehung zwischen den [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] und den [CT_EMPIRE] für alle von Vorteil sein wird. Ich lade Euch ein, im Mondlicht zu sitzen, damit wir uns Geschichten über unsere Völker erzählen können.</German>
     </TEXT>
@@ -1003,7 +1003,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_OPPUSSOQUIONUSKE_1</Tag>
-        <English>The honourable people of the [CT_EMPIRE] are always welcome in the woods of the [OUR_CIV_ADJ]. Come to my longhouse and let us speak of our friendship.</English>
+        <English>The honourable people of the [CT_EMPIRE] are always welcome in the woods of the [OUR_CIV_ADJ]. Come to my longhouse and let us discuss our friendship.</English>
         <French>Le honorable peuple de l'[CT_EMPIRE] est toujours la bienvenue dans les forêts [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:4][COLOR_REVERT]. Allons donc discuter dans notre maison longue.</French>
         <German>Das ehrenwerte Volk der [CT_EMPIRE] ist in den Wäldern der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] immer willkommen. Kommt in mein Langhaus und lasst uns über unsere Freundschaft sprechen.</German>
     </TEXT>
@@ -1065,13 +1065,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MACHIPARA_1</Tag>
-        <English>I, [OUR_NAME], cacique of the [OUR_CIV_ADJ] people, offer my friendship to the strangers with the pale complexions and the hairy chins. If you are friendly, the forests of the [OUR_CIV_ADJ] will be a haven to you. But if you are traitorous, our poisonous blowdarts will pierce your throats.</English>
+        <English>I, [OUR_NAME], cacique of the [OUR_CIV_ADJ] people, offer my friendship to the strangers with the pale complexions and the hairy chins. If you are friendly, the forests of the [OUR_CIV_ADJ] will be a haven to you. If you are traitorous, our poisonous blowdarts will pierce your throats.</English>
         <French>Moi, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], propose son amitié aux étrangers aux mentons poilus. Si vos intentions sont pacifiques, la forêt [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] sera un havre de paix pour vous. Dans le cas contraire, nos flèches empoisonnées n'auront aucune difficulté pour traverser vos gorges.</French>
         <German>Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Cacique des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes, biete den Fremden mit dem blassen Teint und dem haarbedeckten Kinn meine Freundschaft an. Wenn Ihr freundlich seid, werden die Wälder der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] ein Zufluchtsort für Euch sein. Wenn Ihr aber verräterisch seid, werden unsere vergifteten Pfeile keine Schwierigkeiten haben, Eure Kehlen zu durchbohren.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MACHIPARA_1</Tag>
-        <English>Go away. Your words are a poison more deadly than the poison of the frogs in which we dip our arrows.</English>
+        <English>Go away. Your words are more deadly than the poison of the frogs in which we dip our arrows.</English>
         <French>Allez-vous-en. Vos paroles sont plus venimeuses encore que le poison des grenouilles dans lequel nous trempons nos flèches.</French>
         <German>Geht weg. Eure Worte sind ein übleres Gift als das Gift der Frösche, in die wir unsere Pfeile tauchen</German>
     </TEXT>
@@ -1237,7 +1237,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_QUEMUENCHATOCHA_1</Tag>
-        <English>Our atlatls drive stones further through a board than the shot from your muskets. Your weapons are weak, and you will die!</English>
+        <English>Our atlatls drive stones deeper into wood than your muskets send bullets. Your weapons are weak, and you will die!</English>
         <French>Nos atlas enfoncent les pierres plus profondément dans une planche que vos balles de mousquet. Vos armes sont faibles, et vous allez mourir !</French>
         <German>Unsere Atlatls treiben Steine tiefer in ein Brett als Eure Musketenkugeln. Eure Waffen sind schwach, und Ihr werdet sterben!</German>
     </TEXT>
@@ -1305,7 +1305,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_IRON_JACKET_1</Tag>
-        <English>Greetings, white faced stranger. I am [OUR_NAME], leader of the [OUR_CIV_ADJ] warriors. I hope this day is the beginning of a long and fruitful friendship.</English>
+        <English>Greetings, white-faced stranger. I am [OUR_NAME], leader of the [OUR_CIV_ADJ] warriors. I hope this day is the beginning of a long and fruitful friendship.</English>
         <French>Bonjour, étranger au visage pâle. Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef des guerriers [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. J'espère que ce jour est le début d'une longue et fructueuse amitié.</French>
         <German>Seid gegrüßt, weißgesichtiger Fremder. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Anführer der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Krieger. Ich hoffe, dieser Tag ist der Beginn einer langen und fruchtbaren Freundschaft.</German>
     </TEXT>
@@ -1323,13 +1323,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_IRON_JACKET_1</Tag>
-        <English>Welcome dear friends. Let us exchange hunting stories around the campfire tonight. May our trade relations be of benefit to both our nations.</English>
+        <English>Welcome dear friends. Let us exchange hunting stories around the campfire tonight. May trading benefit both our nations.</English>
         <French>Bienvenue cher amis. Partageons ensemble nos récits de chasse au coin du feu. Que nos relations soient bénéfiques à nos deux nations.</French>
         <German>Willkommen liebe Freunde. Lasst uns heute Abend am Lagerfeuer Jagdgeschichten austauschen. Mögen unsere Handelsbeziehungen für beide Völker von Nutzen sein.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_IRON_JACKET_1</Tag>
-        <English>Your people are walking the warpath. If you continue, you will find the deadly bows of the [OUR_CIV_ADJ] at its end. I hope you have come instead to let yourself be educated on the subject of honour.</English>
+        <English>Your people are on the warpath. If you continue, you will find the deadly bows of the [OUR_CIV_ADJ] at its end. I hope you have come instead to be educated on the subject of honour.</English>
         <French>Vous vous entraînez tout seul dans les sentiers de la guerre. Si vous continuez, vous croiserez rapidement les projectiles mortels des arcs [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. J'espère que vous avez appris de vos erreurs passées.</French>
         <German>Euer Volk führt sich selbst auf den Weg des Krieges. Wenn Ihr weitergeht, werdet Ihr die tödlichen Bögen der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] an ihrem Ende finden. Ich hoffe, Ihr seid gekommen, um euch stattdessen über das Thema Ehre belehren zu lassen.</German>
     </TEXT>
@@ -1347,7 +1347,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_IRON_JACKET_1</Tag>
-        <English>I could destroy the [CT_EMPIRE] with great ease. Give me what I demand and I will spare your people.</English>
+        <English>I could destroy the [CT_EMPIRE] easily. Give me what I demand and I will spare your people.</English>
         <French>Je pourrais détruire le [CT_EMPIRE] avec une grande facilité. Donnez moi ce que je demande et j'épargnerai votre peuple.</French>
         <German>Ich könnte die [CT_EMPIRE] mit großer Leichtigkeit zerstören. Gebt mir, was ich verlange, und ich werde Euer Volk verschonen.</German>
     </TEXT>
@@ -1385,25 +1385,25 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_WASHAKIE_1</Tag>
-        <English>I am [OUR_NAME], leader of the great [OUR_CIV_ADJ] nation. Let us share this land and hunt our bison as friends.</English>
+        <English>I am [OUR_NAME], leader of the great [OUR_CIV_ADJ] nation. Let us share this land and hunt the bison as friends.</English>
         <French>Je suis [OUR_NAME], chef de la grande nation [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT]. Partageons ces terres ensemble et allons chasser le bison en ami.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Anführer der großen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Nation. Lasst uns dieses Land gemeinsam nutzen und als Freunde auf Büffeljagd gehen.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_WASHAKIE_1</Tag>
-        <English>The hunter never hears the prey's plea for mercy. I will speak you again on that day when we both reach the happy hunting ground.</English>
+        <English>The hunter never hears the prey plead for mercy. I will speak you again on that day when we both reach the happy hunting ground.</English>
         <French>Le chasseur n'accorde jamais la pitié à sa proie. Je ne vous reparlerai que lorsque vous serez à nouveau dans le camp des chasseurs.</French>
         <German>Der Jäger zeigt niemals Gnade mit seiner Beute. Ich spreche erst wieder mit Euch, wenn wir beide in die Ewigen Jagdgründe eingegangen sind.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_NO_PEACE_LEADER_WASHAKIE_1</Tag>
-        <English>On behalf of our fallen kinsmen, we will continue our fight until justice is served!</English>
+        <English>On behalf of our fallen kinsmen, we will fight until justice is served!</English>
         <French>Au nom de nos frères tombés, nous continuerons notre lutte jusqu'à ce que justice soit faite !</French>
         <German>Im Namen unserer gefallenen Brüder werden wir unseren Kampf fortsetzen, bis der Gerechtigkeit Genüge getan ist!</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_WASHAKIE_1</Tag>
-        <English>Welcome to the camps of the [OUR_CIV_ADJ] people. Share some peyote with me and tell me about your business.</English>
+        <English>Welcome to the camps of the [OUR_CIV_ADJ] people. Share peyote and tell me about your business.</English>
         <French>Bienvenue au campagne du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Partageons donc un peu de peyote et parlons affaires.</French>
         <German>Willkommen in den Lagern des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes. Lasst uns etwas Peyote teilen und übers Geschäft reden.</German>
     </TEXT>
@@ -1415,7 +1415,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_WASHAKIE_1</Tag>
-        <English>My tribe is in need. Share your supplies with us, and our grandchildren will tell their grandchildren stories of your acts of kindness.</English>
+        <English>My tribe is in need. Share your supplies with us, and our grandchildren will tell their grandchildren of your acts of kindness.</English>
         <French>Ma tribu est dans le besoin. Partagez vos provisions avec nous, homme blanc, et nos petits-enfants raconteront à leurs petits-enfants les histoires de vos actes de gentillesse.</French>
         <German>Mein Stamm ist in Not. Teilt Eure Vorräte mit uns, weißer Mann, und unsere Enkel werden ihren Enkeln von Euren milden Taten Geschichten erzählen.</German>
         <Italian>La mia tribù è nel bisogno. Condividi le tue provviste con noi, uomo bianco, e i nostri nipoti racconteranno ai loro nipoti le storie dei tuoi atti di gentilezza.</Italian>
@@ -1467,7 +1467,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TARANO_1</Tag>
-        <English>I am [OUR_NAME], first warrior of the [OUR_CIV_ADJ] tribes. I hope you leave our lands pristine as you pass through them, for we will not allow anyone to disturb our peace.</English>
+        <English>I am [OUR_NAME], first warrior of the [OUR_CIV_ADJ] tribes. I hope you leave our lands pristine as you pass through them, for we cannot allow anyone to disturb our peace.</English>
         <French>Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Premier guerrier des tribus [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. J'espère que vous laisserez nos terres intactes une fois que vous les aurez traversées. Nous n'autorisons personne à troubler notre paix.</French>
         <German>Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], erster Krieger der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Stämme. Ich hoffe, Ihr lasst unsere ursprüngliche Landschaft unberührt, wenn Ihr sie durchquert, denn wir erlauben niemandem, unseren Frieden zu stören.</German>
     </TEXT>
@@ -1509,7 +1509,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_TARANO_1</Tag>
-        <English>I could wipe out every settler family of [CT_EMPIRE] in this country at will. Give me what I ask and I may allow you to live here a while longer.</English>
+        <English>I could wipe out every settler of [CT_EMPIRE] in this country. Give me what I ask and I may allow you to live a while longer.</English>
         <French>Je pourrais effacer les graines de [CT_EMPIRE] dans ce pays à volonté. Donnez-moi ce que je demande et je vous autoriserai peut-être à vivre ici un peu plus longtemps.</French>
         <German>Ich könnte nach Belieben die Saat der [CT_EMPIRE] in diesem Land auslöschen. Gebt mir, was ich verlange, und ich erlaube Euch vielleicht, noch eine Weile hier zu leben.</German>
     </TEXT>
@@ -1547,13 +1547,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_PINE_LEAF_1</Tag>
-        <English>The [OUR_CIV_ADJ] welcome the bearded visitors to their camps. We are a peaceful people, and if you treat us honourably, you will enjoy our enduring friendship. My name is [OUR_NAME], war chief of the [OUR_CIV_ADJ]. At tonight's communal fire let us share the songs of our ancestors.</English>
+        <English>The [OUR_CIV_ADJ] welcome the bearded visitors to their camps. We are a peaceful people, and if you treat us honourably, you will enjoy our enduring friendship. My name is [OUR_NAME], war chief of the [OUR_CIV_ADJ]. At tonight's fire let us share the songs of our ancestors.</English>
         <French>Les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] accueillent les visiteurs barbus dans leurs camps. Nous sommes un peuple pacifique, et si vous nous traitez honorablement, vous apprécierez notre amitié durable. Je m'appelle [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef de guerre des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Partageons les chants de nos ancêtres au feu commun ce soir.</French>
         <German>Die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] begrüßen die bärtigen Besucher in ihren Lagern. Wir sind ein friedliches Volk, und wenn Ihr uns ehrenhaft behandelt, werdet Ihr unsere dauerhafte Freundschaft genießen. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Kriegshäuptling der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Lasst uns heute Abend am Gemeinschaftsfeuer die Lieder unserer Vorfahren singen.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_PINE_LEAF_1</Tag>
-        <English>Your past treacheries have filled the [OUR_CIV_ADJ] with great sadness. We do not want to speak with you any more.</English>
+        <English>Your past treacheries have filled the [OUR_CIV_ADJ] with great sadness. We do not want to talk any more.</English>
         <French>Vos trahisons passées ont rempli de déception le coeur des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Nous ne voulons plus vous parler.</French>
         <German>Euer vergangener Verrat hat die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] mit großer Traurigkeit erfüllt. Wir wollen nicht mehr mit Euch sprechen.</German>
     </TEXT>
@@ -1627,7 +1627,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RUNNING_EAGLE_1</Tag>
-        <English>Welcome, stranger, to the lands of the mighty [OUR_CIV_ADJ] Confederacy. My name is [OUR_NAME], and I hope we can welcome you as a friend, for the legendary warriors of the [OUR_CIV_ADJ] are fearsome foes. Let us ask the medicine men to grant to our friendship the blessings of the spirits.</English>
+        <English>Welcome, stranger, to the lands of the mighty [OUR_CIV_ADJ] confederacy. My name is [OUR_NAME], and I hope we can welcome you as a friend, for the legendary warriors of the [OUR_CIV_ADJ] are fearsome foes. Let us ask the medicine men to grant to our friendship the blessings of the spirits.</English>
         <French>Bienvenue, étranger, sur les terres de la puissante Confédération [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Je m'appelle [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], et j'espère que nous pourrons vous accueillir en tant qu'ami, car les légendaires guerriers de la [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] sont des ennemis redoutables. Demandons aux guérisseurs d'accorder à notre amitié les bénédictions des esprits.</French>
         <German>Willkommen, Fremder, in den Ländern der mächtigen [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Konföderation. Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich hoffe, dass wir Euch als Freund willkommen heißen können, denn die legendären Krieger der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] sind furchterregende Feinde. Lasst uns die Medizinmänner bitten, unserer Freundschaft den Segen der Geister zu gewähren.</German>
     </TEXT>
@@ -1645,7 +1645,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_RUNNING_EAGLE_1</Tag>
-        <English>Welcome to my tipi, friend. Let us pow wow and speak of our great feats in battle.</English>
+        <English>Welcome to my teepee, friend. Let us pow wow and tell of great feats in battle.</English>
         <French>Bienvenue dans mon tipi, cher ami. Faisons donc un Pow Wow et remémorons-nous nos plus grands succès guerriers.</French>
         <German>Willkommen in meinem Tipi, Freund. Lasst uns ein Pow Wow und von unseren großen Taten im Kampf sprechen.</German>
     </TEXT>
@@ -1669,7 +1669,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_RUNNING_EAGLE_1</Tag>
-        <English>I could wipe the seed of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
+        <English>I could wipe the legacy of the [CT_EMPIRE] from this land at will. Give me what I demand and you may live a while longer.</English>
         <French>Je pourrais effacer la graine du [CT_EMPIRE] de cette terre à volonté. Donnez-moi ce que je demande et je vous permettrai peut-être de vivre un peu plus longtemps.</French>
         <German>Ich könnte die Saat des [CT_EMPIRE] nach Belieben aus diesem Land auslöschen. Gebt mir, was ich verlange, und ich erlaube Euch vielleicht, noch eine Weile zu leben.</German>
     </TEXT>
@@ -1707,13 +1707,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_URRACA_1</Tag>
-        <English>My name is [OUR_NAME], and I welcome you to the lands of the [OUR_CIV_ADJ] people. Join us in our city to watch the stick throwing games, and tell us about your people.</English>
+        <English>My name is [OUR_NAME], and I welcome you to the lands of the [OUR_CIV_ADJ] people. Join us in our city to watch the atlatl games, and tell us about your people.</English>
         <French>Mon nom est [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]. Je vous accueille en terre [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:2][COLOR_REVERT] en espérant que vous saurez la respecter. Maintenant venez donc assister à nos jeux de lancée de baton, et dites m'en plus sur votre peuple.</French>
         <German>Mein Name ist [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich heiße Euch in den Ländern des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volkes willkommen. Kommt zu uns in die Stadt, um Euch die Stockwurfspiele anzusehen, und erzählt uns von Eurem Volk.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_URRACA_1</Tag>
-        <English>The presence of you cockroaches pollutes the rainforest. Leave us alone.</English>
+        <English>The presence of you cockroaches pollutes our rainforest. Leave us alone.</English>
         <French>Vous êtes des cafards qui polluent notre belle forêt tropical. Laissons-nous tranquille.</French>
         <German>Ihr seid Kakerlaken, deren Anwesenheit unseren schönen Regenwald verschmutzt. Lasst uns in Ruhe.</German>
     </TEXT>
@@ -1749,7 +1749,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_URRACA_1</Tag>
-        <English>I could wipe the seed of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
+        <English>I could wipe the posterity of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
         <French>Je pourrais effacer la graine du [CT_EMPIRE] de cette terre à volonté. Donnez-moi ce que je demande et je pourrais vous permettre de vivre un peu plus longtemps.</French>
         <German>Ich könnte die Saat der [CT_EMPIRE] nach Belieben aus diesem Land auslöschen. Gebt mir, was ich verlange, und ich erlaube Euch vielleicht, noch eine Weile zu leben.</German>
     </TEXT>
@@ -1787,7 +1787,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_ERENDIRA_1</Tag>
-        <English>The people of the [OUR_CIV_ADJ] Empire greet the visitors from over the sea. I am [OUR_NAME], leader of our many cities. Be warned that we are a strong and proud nation, and do not tolerate disrespect.</English>
+        <English>The people of the [OUR_CIV_ADJ] Empire greet the visitors from across the sea. I am [OUR_NAME], leader of our many cities. Be warned. We are a strong and proud nation, and do not tolerate disrespect.</English>
         <French>Le peuple de l'Empire [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] accueile avec bienveillance ses visiteurs venus des mers. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], dirigeant des nombreuses cités [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Soyez prévenus que nous sommes une nation fière et puissante, et que nous ne tolérons pas l'irrespect.</French>
         <German>Das Volk des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Reiches begrüßt die Besucher von jenseits des Meeres. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Herrscherin über viele [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Städte. Seid gewarnt: Wir sind eine mächtige und stolze Nation und dulden keine Respektlosigkeit.</German>
     </TEXT>
@@ -1805,13 +1805,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_ERENDIRA_1</Tag>
-        <English>The [OUR_CIV_ADJ] welcome the [CT_CIV_ADJ] in their grand cities. I consider you to be a friend of my people. I trust that our conversation will reflect your ecstasy about having this great honour bestowed upon you.</English>
+        <English>The [OUR_CIV_ADJ] welcome the [CT_CIV_ADJ] into our great cities. I consider you to be a friend of my people. I trust that our conversation will demonstrate your ecstasy over this great honour bestowed upon you.</English>
         <French>Les [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT] souhaitent la bienvenue aux [CT_CIV_ADJ:3]. En tant qu'ami de notre peuple, je vous invite à venir admirer nos grandes villes.</French>
         <German>Die [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] heißen die [CT_CIV_ADJ] in ihren großen Städten willkommen. Ich betrachte Euch als einen Freund meines Volkes. Ich vertraue darauf, dass unser Gespräch Eure Ekstase darüber widerspiegelt, dass Euch diese große Ehre zuteil wird.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_ERENDIRA_1</Tag>
-        <English>The beggars of the [CT_EMPIRE] are here again to grovel at my feet. Tell us why you are here, and I may decide to let you leave while still in possession of the regular number of limbs.</English>
+        <English>The beggars of the [CT_EMPIRE] are here again to grovel at my feet. Tell us why you are here, and I may decide to let you leave while still in possession of the usual number of limbs.</English>
         <French>Les mendiants du [CT_EMPIRE] sont de nouveau là pour ramper à mes pieds. Dites-nous pourquoi vous êtes ici, et je pourrais décider de vous laisser partir tout en étant en possession du nombre régulier de membres.</French>
         <German>Die Bettler der [CT_EMPIRE] sind wieder hier, um zu meinen Füßen zu kriechen. Sagt uns, warum Ihr hier sind, und ich werde vielleicht beschließen, Euch gehen zu lassen, während Ihr noch im Besitz der regulären Anzahl von Gliedmaßen sind.</German>
     </TEXT>
@@ -1829,7 +1829,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_ERENDIRA_1</Tag>
-        <English>I could wipe the seed of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
+        <English>I could wipe the legacy of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
         <French>Je pourrais effacer la graine du [CT_EMPIRE] de cette terre à volonté. Donnez-moi ce que je demande et je pourrais vous permettre de vivre un peu plus longtemps.</French>
         <German>Ich könnte die Saat der [CT_EMPIRE] nach Belieben aus diesem Land auslöschen. Gebt mir, was ich verlange, und ich erlaube Euch vielleicht, noch eine Weile zu leben.</German>
     </TEXT>
@@ -1867,7 +1867,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AOMAGUA_1</Tag>
-        <English>I, [OUR_NAME], represent the prosperous and wealthy nation of the [OUR_CIV_ADJ]. Join me in a banquet together with the nobles of my people, and you will see that peace and cooperation between our nations will benefit us both.</English>
+        <English>I, [OUR_NAME], represent the prosperous and wealthy nation of the [OUR_CIV_ADJ]. Join me in a banquet together with the nobles of my people, and you will see how peace and cooperation between our nations will benefit us both.</English>
         <French>Moi, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], représente la nation prospère et riche des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Rejoignez-moi pour un banquet avec les nobles de mon peuple, et vous verrez qu'une coopération entre nos deux nations peut nous être mutuellement bénéfiques.</French>
         <German>Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], vertrete die wohlhabende und wohlhabende Nation der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Begleitet mich zu einem Bankett mit den Adligen meines Volkes, und Ihr werdet sehen, dass Frieden und Zusammenarbeit zwischen unseren beiden Völkern für beide Seiten von Vorteil sein können.</German>
     </TEXT>
@@ -1885,7 +1885,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FR_LEADER_AOMAGUA_1</Tag>
-        <English>Welcome to the grand jungles of the [OUR_CIV_ADJ]. Let us speak of the prosperity that has resulted from our friendship. Please enjoy our hospitality during your stay.</English>
+        <English>Welcome to the vast jungles of the [OUR_CIV_ADJ]. Let us speak of the prosperity that has resulted from our friendship. Please enjoy our hospitality during your stay.</English>
         <French>Bienvenue dans la grande jungle des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Parlons de la prospérité qui résulte de notre amitié. Profitez de notre hospitalité pendant votre séjour.</French>
         <German>Willkommen im großen Dschungel der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Lasst uns über den Wohlstand sprechen, der aus unserer Freundschaft entstanden ist. Bitte genießt unsere Gastfreundschaft während Eures Aufenthaltes.</German>
     </TEXT>
@@ -1947,13 +1947,13 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_LAUTARO_1</Tag>
-        <English>I present my friendship to the strangers with the iron skins. I am [OUR_NAME], and have the honour of leading the fierce and independent [OUR_CIV_ADJ] people. Join us while our shamans petition ancestral spirits for guidance in our future relationship.</English>
+        <English>I present my friendship to the iron-skinned strangers. I am [OUR_NAME], and have the honour of leading the fierce and independent [OUR_CIV_ADJ] people. Join us while our shamans petition ancestral spirits for guidance in our future relationship.</English>
         <French>Je présente mon amitié aux étrangers aux vêtements de fer. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], et c'est un honneur de mener le peuple des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Les Shamans consultent les esprits ancestraux dans l'espoir qu'ils nous guideront dans nos relations à venir.</French>
         <German>Ich biete den Fremden mit den Eisenhäuten meine Freundschaft an. Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], und ich genieße die Ehre, das wilde und unabhängige [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] Volk zu führen. Begleitet uns, während unsere Schamanen die Geister der Ahnen konsultieren, damit sie uns in unseren zukünftigen Beziehungen leiten.</German>
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_LAUTARO_1</Tag>
-        <English>Go away. I need to go hunting. On your people.</English>
+        <English>Go away. I need to go hunting. For your people.</English>
         <French>Je n'ai pas de temps pour vous. Je dois partir à la chasse... contre votre peuple.</French>
         <German>Geht weg. Ich muss auf die Jagd gehen. Auf Euer Volk.</German>
     </TEXT>
@@ -1971,7 +1971,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_LAUTARO_1</Tag>
-        <English>Talking to you is like sleeping on an anthill. Do me a favour. Keep it as concise as possible. Then go away. The back of your head is prettier than your face.</English>
+        <English>Talking to you is like sleeping on an anthill. Do me a favour. Keep it as short as possible. Then go away. The back of your head is more pleasing than your face.</English>
         <French>Parler avec vous, c'est comme dormir sur une fourmilière. Faites-moi une faveur, et soyez aussi concis que possible. Et ensuite, partez. J'aime beaucoup plus l'arrière de ta tête que ton visage.</French>
         <German>Mit Euch zu reden ist wie auf einem Ameisenhaufen zu schlafen. Tut mir einen Gefallen, und fasst Euch so kurz wie möglich. Und dann verschwindet. Ich mag die Rückseite Eures Kopfes viel mehr als Euer Gesicht.</German>
     </TEXT>
@@ -1989,7 +1989,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_LAUTARO_1</Tag>
-        <English>I could wipe the seed of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
+        <English>I could scour the progeny of the [CT_EMPIRE] from this land at will. Give me what I demand and I may allow you to live a while longer.</English>
         <French>Je pourrais effacer la graine du [CT_EMPIRE] de cette terre à volonté. Donnez-moi ce que je demande et je pourrais vous permettre de vivre un peu plus longtemps.</French>
         <German>Ich könnte die Saat der [CT_EMPIRE] nach Belieben aus diesem Land auslöschen. Gebt mir, was ich verlange, und ich erlaube Euch vielleicht, noch eine Weile zu leben.</German>
     </TEXT>
