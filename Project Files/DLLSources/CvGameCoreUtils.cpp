@@ -892,6 +892,8 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			}
 		}
 
+		// Bug? This may prevent AI units from considering land areas connected by river fords etc.
+		/*
 		if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
 		{
 			int iGroupAreaID = pSelectionGroup->getArea();
@@ -903,6 +905,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 				}
 			}
 		}
+		*/
 	}
 
 	if (bAIControl || pToPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
