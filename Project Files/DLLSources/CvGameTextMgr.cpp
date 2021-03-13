@@ -1761,7 +1761,8 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 		break;
 
 	case DOMAIN_LAND:
-		bValid = !(pPlot->isWater());
+		bValid = gDLL->getInterfaceIFace()->getSelectionList()->canMoveInto(pPlot, true);
+		//bValid = !(pPlot->isWater());
 		break;
 
 	case DOMAIN_IMMOBILE:
