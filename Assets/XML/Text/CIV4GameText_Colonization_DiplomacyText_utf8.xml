@@ -207,7 +207,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_PEACE_10</Tag>
-        <English>You have free withdrawal, [CT_NAME].</English>
+        <English>You are free to withdraw, [CT_NAME].</English>
         <French>Que la paix perdure des siècles durant.</French>
         <German>Ihr habt freien Abzug, [CT_NAME].</German>
         <Italian>Possa la pace regnare in eterno.</Italian>
@@ -3919,7 +3919,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HERNAN_CORTES_1</Tag>
-		<English>Buenas dias, stranger. Allow me: [OUR_NAME], conquistador, soldier of fortune and treasure hunter. I am on my way to the god-king of this pagan realm to be honoured and gifted by him. Don't get in my way, strays!</English>
+		<English>Buenas dias, stranger. Allow me: [OUR_NAME], conquistador, soldier of fortune and treasure hunter. I am on my way to the god-king of this pagan realm to be honoured and gifted by him. Don't get in my way!</English>
 		<French>Bonjour, mon ami. Je m'appelle [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], mais vous pouvez m'appeler Hernán. Evitez simplement de m'appeler trop tard pour dîner.</French>
 		<German>Buenas dias, Fremder. Gestatten: [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Konquistador, Glücksritter und Schatzjäger. Ich bin auf dem Weg zum Gottkönig dieses heidnischen Reiches, um mich von ihm ehren und beschenken zu lassen. Kommt mir nicht in die Quere, Streuner!</German>
 		<Italian>Salve, amico. Il mio nome è [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], ma puoi chiamarmi Hernán. Basta che non mi chiami troppo tardi per la cena.</Italian>
@@ -5543,7 +5543,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_9</Tag>
-		<English>I'm recovering now, thanks to your shaman who sealed my wound with fire.</English>
+		<English>I'm recovering now, thanks to your shaman who had the skill to sear my injury with a hot coal.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Dann kann ich weiterziehen! Dank Eures Schamanen, der mir mit seiner heiligen Holzkohle dieses gewaltige Furunkel aus dem Arsch gebrannt hat.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5583,7 +5583,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_14</Tag>
-		<English>Farewell! Your roasted chinchillas are a fine delicacy, though it takes so many for a meal.</English>
+		<English>Farewell! Your roasted chinchillas are a fine delicacy. I could eat a dozen!</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Lebt wohl! Die gerösteten Chinchillas waren eine Delikatesse.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
