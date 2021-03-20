@@ -5719,7 +5719,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_KING_ASK_FOR_GOLD_9</Tag>
-		<English>You may kiss my signet ring for the paltry sum of%d1[ICON_GOLD].</English>
+		<English>You may kiss my signet ring for the paltry sum of %d1[ICON_GOLD].</English>
 		<French>Vous pouvez embrasser ma chevalière pour la modique somme de %d1[ICON_GOLD].</French>
 		<German>Camilla, Unser liebstes Reitpferd, ist von einem tückischen Abzess an ihrem Arsch genesen. Unsere Gebete wurden erhört! Nun wollen Wir dem Herrn im Himmel für seine Gnade danken. Schickt Uns %d1[ICON_GOLD], wir wollen ein diamantenes Kreuz auf Camillas Sattel sticken lassen.</German>
 		<Italian>Puoi baciarmi l'anello per l'ottimo prezzo di %d1[ICON_GOLD].</Italian>
