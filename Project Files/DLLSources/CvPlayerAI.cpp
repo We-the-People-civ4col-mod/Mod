@@ -9420,9 +9420,8 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			}
 //VET NewCapacity - end 8/8
 
-			if (iStored < iMaintainLevel)
+			if (iStored < iMaintainLevel && iMaintainLevel > 0)
 			{
-				FAssert(iMaintainLevel > 0);
 				iValue *= 125 + 75 * (iMaintainLevel - iStored) / iMaintainLevel;
 				iValue /= 100;
 			}
