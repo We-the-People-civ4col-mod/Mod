@@ -1188,10 +1188,13 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 					}
 
 					//check if anything blocking the plot
-					CvPlot* const pPlot = canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing);
-					if (pPlot != NULL)
+					if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing))
 					{
-						pPlot->changeVisibilityCount(eTeam, ((bIncrement) ? 1 : -1), aSeeInvisibleTypes[i]);
+						CvPlot* const pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
+						if (NULL != pPlot)
+						{
+							pPlot->changeVisibilityCount(eTeam, ((bIncrement) ? 1 : -1), aSeeInvisibleTypes[i]);
+						}
 					}
 				}
 				// This code section is seemingly only useful if direction of sight is being used which is not the 
@@ -1241,7 +1244,7 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 		}
 
 		//check if anything blocking the plot
-		if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing) != NULL)
+		if (canSeeDisplacementPlot(eTeam, dx, dy, dx, dy, true, outerRing))
 		{
 			return true;
 		}
@@ -1250,9 +1253,9 @@ bool CvPlot::canSeePlot(CvPlot *pPlot, TeamTypes eTeam, int iRange, DirectionTyp
 	return false;
 }
 
-CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
+bool CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const
 {
-	CvPlot *pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
+	const CvPlot *pPlot = plotXY(getX_INLINE(), getY_INLINE(), dx, dy);
 	if (pPlot != NULL)
 	{
 		//base case is current plot
@@ -1262,14 +1265,14 @@ CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int orig
 		}
 
 		//find closest of three points (1, 2, 3) to original line from Start (S) to End (E)
-		//The diagonal is computed first as that guarantees a change in position2p
+		//The diagonal is computed first as that guarantees a change in position
 		// -------------
 		// |   | 2 | S |
 		// -------------
 		// | E | 1 | 3 |
 		// -------------
 
-		int displacements[3][2] = {{dx - getSign(dx), dy - getSign(dy)}, {dx - getSign(dx), dy}, {dx, dy - getSign(dy)}};
+		const int displacements[3][2] = {{dx - getSign(dx), dy - getSign(dy)}, {dx - getSign(dx), dy}, {dx, dy - getSign(dy)}};
 		int allClosest[3];
 		int closest = -1;
 		for (int i=0;i<3;i++)
@@ -1285,25 +1288,25 @@ CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int orig
 		//iterate through all minimum plots to see if any of them are passable
 		for(int i=0;i<3;i++)
 		{
-			int nextDX = displacements[i][0];
-			int nextDY = displacements[i][1];
+			const int nextDX = displacements[i][0];
+			const int nextDY = displacements[i][1];
 			if((nextDX != dx) || (nextDY != dy)) //make sure we change plots
 			{
 				if(allClosest[i] == closest)
 				{
-					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false) != NULL)
+					if(canSeeDisplacementPlot(eTeam, nextDX, nextDY, originalDX, originalDY, false, false))
 					{
-						int fromLevel = seeFromLevel();
-						int throughLevel = pPlot->seeThroughLevel();
+						const int fromLevel = seeFromLevel();
+						const int throughLevel = pPlot->seeThroughLevel();
 						if(outerRing) //check strictly higher level
 						{
-							CvPlot *passThroughPlot = plotXY(getX_INLINE(), getY_INLINE(), nextDX, nextDY);
-							int passThroughLevel = passThroughPlot->seeThroughLevel();
+							const CvPlot *const passThroughPlot = plotXY(getX_INLINE(), getY_INLINE(), nextDX, nextDY);
+							const int passThroughLevel = passThroughPlot->seeThroughLevel();
 							if (fromLevel >= passThroughLevel)
 							{
 								if((fromLevel > passThroughLevel) || (pPlot->seeFromLevel() > fromLevel)) //either we can see through to it or it is high enough to see from far
 								{
-									return pPlot;
+									return true;
 								}
 							}
 						}
@@ -1311,11 +1314,11 @@ CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int orig
 						{
 							if(fromLevel >= throughLevel) //we can clearly see this level
 							{
-								return pPlot;
+								return true;
 							}
 							else if(firstPlot) //we can also see it if it is the first plot that is too tall
 							{
-								return pPlot;
+								return true;
 							}
 						}
 					}
@@ -1324,7 +1327,7 @@ CvPlot* CvPlot::canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int orig
 		}
 	}
 
-	return NULL;
+	return false;
 }
 
 bool CvPlot::shouldProcessDisplacementPlot(int dx, int dy, DirectionTypes eFacingDirection) const
