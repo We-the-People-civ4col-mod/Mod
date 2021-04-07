@@ -1,5 +1,24 @@
 We the People Changelog
 
+Version 2.8.2.4
+
+Improvements:
+- Better optimization at compile time (Whole Program Optimization)
+
+Fixes:
+- Fixed fog of war not appearing on some plots
+
+Version 2.8.2.3
+
+Improvements:
+- Various performance improvements
+
+Fixes:
+- Native Advisor: clicking on a settlement icon is now a shortcut to jumping to the settlement (doesn't always work)
+- Merging treasures is no longer able to create treasures containing 0 gold
+- Various fixes to town guards
+- Fixed freeze if AI transport can't reach any colony
+
 Version 2.8.2.2
 
 Improvements:
