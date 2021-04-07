@@ -1101,34 +1101,35 @@ void CvUnit::updateCombat(bool bQuick)
 		FAssertMsg(plot()->isFighting(), "Current unit instance plot is not fighting as expected");
 		FAssertMsg(pPlot->isFighting(), "pPlot is not fighting as expected");
 
-		if (!pDefender->canDefend())
+		// Determine if the defender can defend in this plot (ships inside a city cannot defend against land attacks)
+		if (!pPlot->isValidDomainForAction(*this))
 		{
 			// WTP, ray, fix for destroying ships instead of ejecting - START
 			bool bShipCityEscape = false;
 			bool bPlotCityOrFort = pDefender->plot()->isCity() || pDefender->plot()->isFort();
 
 			// Ships in Harbour Cities should be ejected damaged when City Captured
-			if (pDefender != NULL && bPlotCityOrFort && getDomainType()!= DOMAIN_SEA && pDefender->getDomainType() == DOMAIN_SEA)
+			if (bPlotCityOrFort && getDomainType()!= DOMAIN_SEA && pDefender->getDomainType() == DOMAIN_SEA)
 			{
-				CvPlot* DefenderPlot = pDefender->plot();
-				CvPlot* ejectPlot = NULL;
-				CvPlot* pAdjacentPlot = NULL;
-				CvCity* CityForMessage = pDefender->plot()->getPlotCity();
+				CvPlot* pDefenderPlot = pDefender->plot();
+				CvPlot* pEjectPlot = NULL;
+				CvCity* pCityForMessage = pDefender->plot()->getPlotCity();
 				
 				// Try to find a suitable water plot to eject
 				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 				{
-					pAdjacentPlot = plotDirection(DefenderPlot->getX_INLINE(), DefenderPlot->getY_INLINE(), ((DirectionTypes)iI));
-					// must be water without enemies
-					if (pAdjacentPlot != NULL && pAdjacentPlot->isWater() && pAdjacentPlot->getNumVisibleEnemyDefenders(pDefender) == 0)
+					CvPlot* pAdjacentPlot = pAdjacentPlot = plotDirection(pDefenderPlot->getX_INLINE(), pDefenderPlot->getY_INLINE(), ((DirectionTypes)iI));
+
+					// Determine if we can escape to this plot
+					if (pAdjacentPlot != NULL && pDefender->canMoveInto(pAdjacentPlot))
 					{
-						ejectPlot = pAdjacentPlot;
+						pEjectPlot = pAdjacentPlot;
 						break;
 					}
 				}
 
 				// if suitable eject Plot found, give some random damage and move to eject Plot
-				if (ejectPlot != NULL)
+				if (pEjectPlot != NULL)
 				{
 					int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
 					pDefender->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
@@ -1138,16 +1139,16 @@ void CvUnit::updateCombat(bool bQuick)
 					pDefender->setCombatUnit(NULL);
 
 					// changing position
-					pDefender->setXY(ejectPlot->getX_INLINE(), ejectPlot->getY_INLINE());
+					pDefender->setXY(pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
 					
-					if (CityForMessage != NULL)
+					if (pCityForMessage != NULL)
 					{
 						// Send Messages
-						szBuffer = gDLL->getText("TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), CityForMessage->getNameKey());
-						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_THEIR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ejectPlot->getX_INLINE(), ejectPlot->getY_INLINE());
+						szBuffer = gDLL->getText("TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), pCityForMessage->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_THEIR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
 
-						szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), CityForMessage->getNameKey());
-						gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_OUR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), ejectPlot->getX_INLINE(), ejectPlot->getY_INLINE());
+						szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), pCityForMessage->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_OUR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
 					}
 
 					// set to true to avoid killing the Defender Unit in next if below
