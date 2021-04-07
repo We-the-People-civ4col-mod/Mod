@@ -7,28 +7,35 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RaR", "RaR.vcxproj", "{3021
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Assert|Build Release = Assert|Build Release
 		Assert|Multi core compilation = Assert|Multi core compilation
 		Assert|Single core compilation = Assert|Single core compilation
 		Assert|Test = Assert|Test
 		Assert|XML hardcoding = Assert|XML hardcoding
+		Debug|Build Release = Debug|Build Release
 		Debug|Multi core compilation = Debug|Multi core compilation
 		Debug|Single core compilation = Debug|Single core compilation
 		Debug|Test = Debug|Test
 		Debug|XML hardcoding = Debug|XML hardcoding
+		Final Release|Build Release = Final Release|Build Release
 		Final Release|Multi core compilation = Final Release|Multi core compilation
 		Final Release|Single core compilation = Final Release|Single core compilation
 		Final Release|Test = Final Release|Test
 		Final Release|XML hardcoding = Final Release|XML hardcoding
+		Profile|Build Release = Profile|Build Release
 		Profile|Multi core compilation = Profile|Multi core compilation
 		Profile|Single core compilation = Profile|Single core compilation
 		Profile|Test = Profile|Test
 		Profile|XML hardcoding = Profile|XML hardcoding
+		Release|Build Release = Release|Build Release
 		Release|Multi core compilation = Release|Multi core compilation
 		Release|Single core compilation = Release|Single core compilation
 		Release|Test = Release|Test
 		Release|XML hardcoding = Release|XML hardcoding
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Build Release.ActiveCfg = Build Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Build Release.Build.0 = Build Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Multi core compilation.ActiveCfg = Multi core-Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Multi core compilation.Build.0 = Multi core-Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Single core compilation.ActiveCfg = Single core-Assert|Win32
@@ -37,6 +44,8 @@ Global
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|Test.Build.0 = Test-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|XML hardcoding.ActiveCfg = XML hardcoding-Assert|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Assert|XML hardcoding.Build.0 = XML hardcoding-Assert|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Build Release.ActiveCfg = Build Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Build Release.Build.0 = Build Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Multi core compilation.ActiveCfg = Multi core-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Multi core compilation.Build.0 = Multi core-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Single core compilation.ActiveCfg = Single core-Debug|Win32
@@ -45,6 +54,8 @@ Global
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|Test.Build.0 = Test-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|XML hardcoding.ActiveCfg = XML hardcoding-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Debug|XML hardcoding.Build.0 = XML hardcoding-Debug|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Build Release.ActiveCfg = Build Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Build Release.Build.0 = Build Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Multi core compilation.ActiveCfg = Multi core-Final Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Multi core compilation.Build.0 = Multi core-Final Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Single core compilation.ActiveCfg = Single core-Final Release|Win32
@@ -53,6 +64,8 @@ Global
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|Test.Build.0 = Test-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|XML hardcoding.ActiveCfg = XML hardcoding-Final Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Final Release|XML hardcoding.Build.0 = XML hardcoding-Final Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Build Release.ActiveCfg = Build Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Build Release.Build.0 = Build Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Multi core compilation.ActiveCfg = Multi core-Profile|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Multi core compilation.Build.0 = Multi core-Profile|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Single core compilation.ActiveCfg = Single core-Profile|Win32
@@ -61,6 +74,8 @@ Global
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|Test.Build.0 = Test-Debug|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|XML hardcoding.ActiveCfg = XML hardcoding-Profile|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Profile|XML hardcoding.Build.0 = XML hardcoding-Profile|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Release|Build Release.ActiveCfg = Build Release|Win32
+		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Release|Build Release.Build.0 = Build Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Release|Multi core compilation.ActiveCfg = Multi core-Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Release|Multi core compilation.Build.0 = Multi core-Release|Win32
 		{3021AF0E-699D-4232-86F6-FC374A0C9957}.Release|Single core compilation.ActiveCfg = Single core-Release|Win32

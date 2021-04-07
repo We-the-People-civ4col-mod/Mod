@@ -40,8 +40,8 @@ push(@paths, substr($ProgramFiles, 0, -6)) if substr($ProgramFiles, -5) eq "(x86
 # This allows searching multiple different locations for the same file
 process("TOOLKIT", "\\Microsoft Visual C++ Toolkit 2003");
 process("PSDK", "\\Microsoft SDKs\\Windows\\v6.0");
-process("GIT", "\\SmartGit\\git\\bin\\git.exe");
 process("GIT", "\\Git\\cmd\\git.exe");
+process("GIT", "\\SmartGit\\git\\bin\\git.exe");
 
 exit if $updated == 0;
 

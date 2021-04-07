@@ -18,6 +18,12 @@ my $version = <>;
 # remove the trailing newline
 $version =~ s/\R//g;
 
+if ($version eq "READ")
+{
+	$version = readFile();
+	rename "WeThePeople-temp.zip", "WeThePeople-" . $version . ".zip" if -e "WeThePeople-temp.zip"
+}
+
 my $output = "";
 
 # generate the file content
@@ -39,3 +45,20 @@ if (-e $file)
 open (my $output_file, "> " . $file) or die "Can't open file " . $file . "\n" . $!;
 print $output_file $output;
 close $output_file;
+
+
+# read the version from the changelog.txt
+# fairly primitive. It uses the string from the first line starting with "Version "
+sub readFile
+{
+	my $filename = '../changelog.txt';
+	open(my $fh, '<:encoding(UTF-8)', $filename)
+	  or die "Could not open file '$filename' $!";
+
+	while (my $row = <$fh>) {
+	  chomp $row;
+	  next unless substr($row, 0, 8) eq "Version ";
+	  $row =~ s/\R//g;
+	  return substr($row, 8);
+	}
+}

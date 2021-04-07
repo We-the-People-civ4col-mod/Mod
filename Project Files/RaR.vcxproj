@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Build Release|Win32">
+      <Configuration>Build Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Test-Debug|Win32">
       <Configuration>Test-Debug</Configuration>
       <Platform>Win32</Platform>
@@ -401,6 +405,11 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <CLRSupport>true</CLRSupport>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'" Label="Configuration">
     <ConfigurationType>Makefile</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -464,6 +473,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'" Label="PropertySheets">
@@ -652,6 +664,28 @@ nmake source_list /NOLOGO &amp;&amp; ^
 nmake fastdep /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>set TARGET=FinalRelease
+nmake clean /NOLOGO</NMakeCleanCommandLine>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <NMakeIncludeSearchPath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'">
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeBuildCommandLine>set TARGET=FinalRelease
+set RELEASE_VERSION=READ
+nmake source_list /NOLOGO &amp;&amp; ^
+nmake fastdep /NOLOGO &amp;&amp; ^
+nmake precompile  /NOLOGO &amp;&amp; ^
+bin\jom build /NOLOGO &amp;&amp; ^
+nmake BuildRelease /NOLOGO</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>set TARGET=FinalRelease
+set RELEASE_VERSION=READ
+nmake clean /NOLOGO &amp;&amp; ^
+nmake source_list /NOLOGO &amp;&amp; ^
+nmake fastdep /NOLOGO &amp;&amp; ^
+nmake precompile  /NOLOGO &amp;&amp; ^
+bin\jom build /NOLOGO &amp;&amp; ^
+nmake BuildRelease /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
     <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>

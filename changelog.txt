@@ -4,9 +4,11 @@ Version 2.8.2.4
 
 Improvements:
 - Better optimization at compile time (Whole Program Optimization)
+- Scripted release building for consistency between releases (easier to download newest release)
 
 Fixes:
 - Fixed fog of war not appearing on some plots
+- #409 Fix bug where ships could try to flee instead of defending if attacked. Fleeing then failed, causing instant destruction of the ship.
 
 Version 2.8.2.3
 

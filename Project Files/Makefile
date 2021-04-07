@@ -261,7 +261,7 @@ LDFLAGS = $(LDFLAGS) $(CONFIG_DLFLAGS)
 #### Targets ####
 #################
 
-.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport
+.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport BuildRelease
 
 all: Precompile build
 
@@ -270,7 +270,7 @@ dll: all
 clean:
 	@IF EXIST "$(TEMP_TARGET_FILES)" RMDIR /s /q "$(TEMP_TARGET_FILES)"
 	@FOR %i IN ($(Target_BIN) $(Target_STATICLIB) $(Target_LIBDEF) $(Target_RESOURCE) \
-		$(Target_PCH) $(Target_PDB) $(Target_OTHER)) DO @IF EXIST "%i" DEL "%i"
+		$(Target_PCH) $(Target_PDB) $(Target_OTHER) "WeThePeople-*.zip") DO @IF EXIST "%i" DEL "%i"
 
 build: $(Target_BIN)
 !IFDEF YOURMOD
@@ -432,6 +432,16 @@ $(TEMP_TARGET_FILES)\$(BLACKLIST).obj: $(BLACKLIST).cpp
 	@DEL "$*.obj.@"
 
 !ENDIF
+
+# Build a zip file based on the current head revision
+# Includes custom code to inject the untracked dll file into the zip file
+# NOTE: requires git 2.29 or newer. Git bundled with smartGIT at the time of writing this is 2.28
+BuildRelease:
+	@ECHO Building zip file
+	@cd ..
+	@$(GIT) archive --format=zip --prefix=assets/ --add-file=assets/CvGameCoreDLL.dll --prefix= -9 --output "Project Files"/WeThePeople-temp.zip head
+	@cd "Project Files"
+	@echo $(RELEASE_VERSION)| $(PERL) bin\git_version.pl
 
 ###
 ### test targets

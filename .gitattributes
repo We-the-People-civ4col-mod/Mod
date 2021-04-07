@@ -54,3 +54,4 @@
 
 .gitattributes export-ignore  
 .gitignore     export-ignore
+.ini.bak       export-ignore
