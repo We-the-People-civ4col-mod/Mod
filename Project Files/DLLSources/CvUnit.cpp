@@ -4779,7 +4779,7 @@ bool CvUnit::load(bool bCheckCity)
 
 	pPlot = plot();
 
-	for (iPass = 0; iPass < 2; iPass++)
+	for (iPass = 0; iPass < 3; iPass++)
 	{
 		pUnitNode = pPlot->headUnitNode();
 
@@ -4790,7 +4790,10 @@ bool CvUnit::load(bool bCheckCity)
 
 			if (canLoadUnit(pLoopUnit, pPlot, bCheckCity))
 			{
-				if ((iPass == 0) ? (pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) : (pLoopUnit->getTeam() == getTeam()))
+				// First pass matches only ships that are not sleeping, subsequent matches ignore activity
+				if ((iPass == 0 && pLoopUnit->getGroup()->getActivityType() != ACTIVITY_SLEEP && pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) ||
+					(iPass == 1 && pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) ||
+					(iPass == 2 && pLoopUnit->getTeam() == getTeam()))
 				{
 					if (!setTransportUnit(pLoopUnit))
 					{
