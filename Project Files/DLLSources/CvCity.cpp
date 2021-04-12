@@ -10752,10 +10752,32 @@ void CvCity::setImportsLimit(YieldTypes eYield, int iValue)
 	}
 }
 
+// Note: AI code should use the getMaxImportAmount wrapper rather than calling this function directly
 int CvCity::getImportsLimit(YieldTypes eYield) const
 {		
 	return m_em_iTradeMaxThreshold.get(eYield);
 }
+
+// Returns the max number of yield units that the city is willing to accept
+int CvCity::getMaxImportAmount(YieldTypes eYield) const
+{
+	FAssert(isImport(eYield));
+
+	const int iImportLimit = m_em_iTradeMaxThreshold.get(eYield);
+
+	if (iImportLimit == 0)
+	{
+		// The city has not set a limit for this yield, return the amount of remaining storage
+		return  getMaxYieldCapacity() - getTotalYieldStored();
+	}
+	else
+	{
+		// The city has set an import limit, return the max amount it can accept
+		const int iRemainingCapacity = getMaxYieldCapacity() - getTotalYieldStored();
+		return std::min(iRemainingCapacity, iImportLimit);
+	}
+}
+
 
 // R&R mod, vetiarvind, max yield import limit - End
 

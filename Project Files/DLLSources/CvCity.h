@@ -919,6 +919,9 @@ public:
 	inline int getStorageLossSellPercentage()const					{ return m_iStorageLossSellPercentage; }
 	inline bool getIgnoresBoycott()const							{ return m_bIgnoresBoycott; }
 	inline bool getHasUnlockedStorageLossTradeSettings()const		{ return m_bHasUnlockedStorageLossTradeSettings; }
+
+	int getMaxImportAmount(YieldTypes eYield) const;
+
 };
 
 // NBMOD EDU cache - start - Nightinggale

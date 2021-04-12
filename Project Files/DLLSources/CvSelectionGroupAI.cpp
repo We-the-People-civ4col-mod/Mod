@@ -1066,7 +1066,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				
 				YieldTypes eYield = routes[i]->getYield();
 				int yieldsToUnload = aiYieldsLoaded[eYield];
-				if(pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0)
+				if(pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0)
 				{
 					int turnsToReach = 0; 
 					generatePath(plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
@@ -1106,7 +1106,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getAutoMaintainThreshold(eYield);
 			// transport feeder - end - Nightinggale
 			// R&R mod, vetiarvind, max yield import limit - start
-			if(pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0)
+			if(pDestinationCity != NULL &&   pDestinationCity->getMaxImportAmount(eYield) > 0)
 			{
 				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0; 
 				const bool bSourceOk = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
@@ -1137,6 +1137,13 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				}
 				
 				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsRequired, aiYieldsLoaded[eYield]);
+			}
+			// Note that Europe has no import limit!
+			else if (pDestinationCity == NULL && routes[i]->getDestinationCity() == kEurope)
+			{
+				// This is a Europe trade-route, exempt it from the reachability criteria
+				// TODO: Check that there is actually a route to Europe!
+				bNoRoute = false;
 			}
 			
 			// R&R mod, vetiarvind, max yield import limit - end
@@ -1276,7 +1283,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 					// R&R mod, vetiarvind, max yield import limit - start				
 					int iOriginalAmount = iAmount;
-					int bDestinationHasImportLimit = pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0;
+					int bDestinationHasImportLimit = pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0;
 					if(bDestinationHasImportLimit)
 					{
 						int turnsToReach = 0; 
@@ -1494,7 +1501,7 @@ int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYi
 	if(maxYieldsToLoad <= 0) return 0; // R&R mod, vetiarvind, max yield import limit fix
 	int yieldsToLoad = maxYieldsToLoad;	
 		
-	int importLimit = pDestinationCity->getImportsLimit(eYield);
+	int importLimit = pDestinationCity->getMaxImportAmount(eYield);
 	if(importLimit > 0)
 	{
 		int stored = pDestinationCity->getYieldStored(eYield);
@@ -1507,7 +1514,7 @@ int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYi
 
 void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit)
 {
-		if(pCity->getImportsLimit(unit->getYield()) > 0)
+		if(pCity->getMaxImportAmount(unit->getYield()) > 0)
 		{
 			int totalStored = unit->getYieldStored();
 			int toUnload = estimateYieldsToLoad(pCity, totalStored, unit->getYield(), 0, 0);
