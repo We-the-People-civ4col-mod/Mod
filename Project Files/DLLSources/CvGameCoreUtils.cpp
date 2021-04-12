@@ -1930,3 +1930,10 @@ CvString getCompileFlags(int iDefineFlags)
 	return szString;
 }
 // city radius end
+
+bool CvDLLUtilityIFaceBase::isOOSVisible() const
+{
+	long lResult = 0;
+	gDLL->getPythonIFace()->callFunction(PYCPPModule, "isOOSVisible", NULL, &lResult);
+	return lResult != 0;
+}

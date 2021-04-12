@@ -604,6 +604,7 @@ enum ButtonPopupTypes
 	// Teacher List - end - Nightinggale	
 	BUTTONPOPUP_SAVE_TRADEGROUP,//R&R mod, vetiarvind, trade groups
 	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
+	BUTTONPOPUP_DESYNC_LOG_COMPLETE, // desync log
 	
 	
 

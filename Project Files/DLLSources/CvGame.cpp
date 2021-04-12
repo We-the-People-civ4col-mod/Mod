@@ -6408,6 +6408,8 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 
 	if (pLogString != NULL)
 	{
+		// doesn't look right that iValue should change if logging is enabled - Nightinggale
+		/*
 		iValue += getMapRand().getSeed();
 		iValue += getSorenRand().getSeed();
 
@@ -6416,6 +6418,7 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 
 		iValue += GC.getMapINLINE().getOwnedPlots();
 		iValue += GC.getMapINLINE().getNumAreas();
+		*/
 
 		*pLogString += CvString::format("Map seed = %d\n", getMapRand().getSeed());
 		*pLogString += CvString::format("Gameplay seed = %d\n", getSorenRand().getSeed());
@@ -7271,4 +7274,16 @@ void CvGame::writeDesyncLog()
 
 		fclose(f);
 	}
+
+	filename = gDLL->getModName();
+	filename.append(CvString::format("Desync save for player %d.ColonizationSave", getActivePlayer()));
+
+	// remove the savegame file if it exist. Let it silently fail if it's not there.
+	remove(filename.c_str());
+
+	gDLL->getEngineIFace()->SaveGame(filename);
+
+	// create a popup telling the task is done
+	CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DESYNC_LOG_COMPLETE);
+	gDLL->getInterfaceIFace()->addPopup(pInfo, NO_PLAYER, true);
 }
