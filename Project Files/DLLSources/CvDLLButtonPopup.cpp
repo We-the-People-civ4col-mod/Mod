@@ -828,13 +828,13 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						}
 
 						// load yield data and store in human readable variable names						
-						bool bImport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						bool bExport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
-						bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
-						bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(iYield) & 0x08);
-						int iMaintainLevel    =  pPopupReturn->getSpinnerWidgetValue(iYield);
-						int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(NUM_YIELD_TYPES + iYield);
-						
+						const bool bImport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
+						const bool bExport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
+						const bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
+						const bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(iYield) & 0x08);
+						const int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(iYield);
+						const int iMaintainLevel = pPopupReturn->getSpinnerWidgetValue(NUM_YIELD_TYPES + iYield);
+
 						// check if any data is different from the same data in the city
 						if (bImport != pCity->isImport(eYield)
 							|| bExport != pCity->isExport(eYield)
@@ -3079,9 +3079,9 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 			// transport feeder - start - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
 			// transport feeder - end - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
 
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 
