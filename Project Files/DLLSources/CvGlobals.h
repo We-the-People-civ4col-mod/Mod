@@ -589,7 +589,7 @@ public:
 	CvString& getAutomateTypes(AutomateTypes e);
 
 	CvString*& getDirectionTypes();
-	CvString& getDirectionTypes(AutomateTypes e);
+	CvString& getDirectionTypes(DirectionTypes e);
 
 	DllExport int& getNumFootstepAudioTypes();
 	CvString*& getFootstepAudioTypes();

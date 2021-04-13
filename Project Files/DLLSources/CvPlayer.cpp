@@ -16820,7 +16820,7 @@ void CvPlayer::changeRevolutionEuropeTradeCount(int iChange)
 
 		validateTradeRoutes();
 
-		if (GC.getGameINLINE().getActiveTeam() == getID())
+		if (GC.getGameINLINE().getActiveTeam() == getTeam())
 		{
 			gDLL->getInterfaceIFace()->setDirty(ColoredPlots_DIRTY_BIT, true);
 		}
@@ -18819,7 +18819,7 @@ void CvPlayer::doAchievements(bool afterMove)
 							CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iK);
 							if(kPlayer.getCivilizationType() != NO_CIVILIZATION)
 							{
-								if (!kPlayer.isEurope() && kPlayer.getParent() != NO_CIVILIZATION && kPlayer.getTeam() != getTeam() && GET_TEAM(getTeam()).isHasMet(kPlayer.getTeam()))
+								if (!kPlayer.isEurope() && kPlayer.getParent() != NO_PLAYER && kPlayer.getTeam() != getTeam() && GET_TEAM(getTeam()).isHasMet(kPlayer.getTeam()))
 								{
                                     count++;
 								}

@@ -2411,7 +2411,7 @@ CvString*& CvGlobals::getDirectionTypes()
 	return m_paszDirectionTypes;
 }
 
-CvString& CvGlobals::getDirectionTypes(AutomateTypes e)
+CvString& CvGlobals::getDirectionTypes(DirectionTypes e)
 {
 	FAssert(e > -1);
 	FAssert(e < NUM_DIRECTION_TYPES);

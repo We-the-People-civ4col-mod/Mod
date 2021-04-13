@@ -9064,7 +9064,7 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer)
 			}
 		}
 
-		if (getMissionaryPlayer() != NO_CIVILIZATION)
+		if (getMissionaryPlayer() != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_ESTABLISHED", getNameKey(), GET_PLAYER(ePlayer).getCivilizationAdjectiveKey());
 
@@ -9121,7 +9121,7 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer)
 			}
 		}
 
-		if (getTradePostPlayer() != NO_CIVILIZATION)
+		if (getTradePostPlayer() != NO_PLAYER)
 		{
 			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_ESTABLISHED", getNameKey(), GET_PLAYER(ePlayer).getCivilizationAdjectiveKey());
 

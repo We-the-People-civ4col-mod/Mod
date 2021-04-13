@@ -5138,7 +5138,7 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 		updateYield(true);
 
-		if (NO_FEATURE != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
+		if (NO_IMPROVEMENT != eOldImprovement && GC.getImprovementInfo(eOldImprovement).isActsAsCity())
 		{
 			verifyUnitValidPlot();
 		}
@@ -6586,7 +6586,7 @@ bool CvPlot::isRiverCrossing(DirectionTypes eIndex) const
 
 	// check bounds
 	// the code assumes 8 values, which can then fit in the 8 bits in a byte
-	BOOST_STATIC_ASSERT(NUM_DIRECTION_TYPES == 8);
+	BOOST_STATIC_ASSERT(NUM_DIRECTION_TYPES == (DirectionTypes)8);
 	FAssert(eIndex >= 0);
 
 	return HasBit(m_bmRiverCrossing, eIndex);

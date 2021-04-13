@@ -6437,9 +6437,8 @@ void CvCityAI::AI_assignCityPlot()
 
 	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 
-	for (uint i = 0; i < NUM_YIELD_TYPES; i++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		const YieldTypes eYield = (YieldTypes)i;
 		const int iYield = plot()->calculatePotentialCityYield(eYield, this);
 
 		if (iYield > 0)
