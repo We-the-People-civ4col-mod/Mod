@@ -51,6 +51,8 @@ enum SavegameClassTypes
 	FIRST_SAVEGAME_CLASS_TYPES = 0,
 };
 
+SET_ENUM_OPERATORS_AND_FORBID(SavegameClassTypes)
+
 class CvSavegameReaderBase;
 class CvSavegameWriterBase;
 
@@ -858,7 +860,7 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const CLinkList
 template<typename T>
 inline void CvSavegameWriter::WriteEnum(T variable)
 {
-	FAssert(variable >= (char)MIN_CHAR && variable <= MAX_CHAR);
+	FAssert((int)variable >= (char)MIN_CHAR && (int)variable <= MAX_CHAR);
 	char iBuffer = variable;
 	Write(iBuffer);
 }

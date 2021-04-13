@@ -126,11 +126,11 @@ sub getNumFunction
 {
 	my $basename = shift;
 
-	return "m_paCivEffectInfo.size()"   if $basename eq "CivEffect";
-	return "m_paDomainInfo.size()"      if $basename eq "Domain";
-	return "m_paUnitAIInfos.size()"     if $basename eq "UnitAI";
-	return "GC.getNumWorldInfos()"      if $basename eq "WorldSize";
-	return "m_paYieldInfo.size()"       if $basename eq "Yield";
+	return "((CivEffectTypes)m_paCivEffectInfo.size())"   if $basename eq "CivEffect";
+	return "((DomainTypes)m_paDomainInfo.size())"         if $basename eq "Domain";
+	return "((UnitAITypes)m_paUnitAIInfos.size())"        if $basename eq "UnitAI";
+	return "((WorldSizeTypes)GC.getNumWorldInfos())"      if $basename eq "WorldSize";
+	return "((YieldTypes)m_paYieldInfo.size())"           if $basename eq "Yield";
 	
 	return "GC.getNum" . $basename . "Infos()";
 }

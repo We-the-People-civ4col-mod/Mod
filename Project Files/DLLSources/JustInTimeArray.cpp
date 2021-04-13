@@ -383,7 +383,7 @@ template<>
 void JustInTimeArray<int>::generateInitCivEffect(const InfoArray& kIarray)
 {
 	FAssert(kIarray.getDimentions() == 2);
-	FAssert(this->m_iType == kIarray.getType(0));
+	FAssert(this->getType() == kIarray.getType(0));
 
 	for (int i = 0; i < kIarray.getLength(); ++i)
 	{

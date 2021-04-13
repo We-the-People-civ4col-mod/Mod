@@ -166,7 +166,7 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Read(C
 	// Last index is not saved if the bool for first == last is set.
 	// As a result, the overhead for each token can be 1-4 bytes.
 
-	const int iLength = InnerArrayType((OuterArrayType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((OuterArrayType)0) : reader.GetXmlSize(ArrayType((OuterArrayType)0));
+	const int iLength = (JITarrayTypes)InnerArrayType((OuterArrayType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((OuterArrayType)0) : reader.GetXmlSize(ArrayType((OuterArrayType)0));
 	const bool bUseTwoByteStart = iLength > 64;
 
 	int iBuffer;
@@ -277,7 +277,7 @@ inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Read(C
 template<class OuterArrayType, class InnerArrayType, class T, int DEFAULT>
 inline void EnumMap2DDefault<OuterArrayType, InnerArrayType, T, DEFAULT>::Write(CvSavegameWriter& writer) const
 {
-	const int iLength = InnerArrayType((OuterArrayType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((OuterArrayType)0) : writer.GetXmlSize(ArrayType((OuterArrayType)0));
+	const int iLength = (JITarrayTypes)InnerArrayType((OuterArrayType)0) == NO_JIT_ARRAY_TYPE ? ArrayLength((OuterArrayType)0) : writer.GetXmlSize(ArrayType((OuterArrayType)0));
 	const bool bUseTwoByteStart = iLength > 64;
 
 	// first support writing an empty array

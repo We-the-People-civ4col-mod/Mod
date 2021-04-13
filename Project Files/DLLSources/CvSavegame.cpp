@@ -195,7 +195,7 @@ void CvSavegameReader::AssignClassType(SavegameClassTypes eType)
 
 void CvSavegameReader::Read(SavegameVariableTypes& variable)
 {
-	FAssert(m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
+	FAssert(m_eClassType >= FIRST_SAVEGAME_CLASS_TYPES && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
 	int iSize = 2;
 
 	unsigned int padding_prefix = 0;
@@ -205,7 +205,7 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 		Read(padding_prefix);
 	}
 
-	if (m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
+	if (m_eClassType >= FIRST_SAVEGAME_CLASS_TYPES && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
 	{
 		iSize = enumByteSize[m_eClassType];
 	}
@@ -695,10 +695,10 @@ void CvSavegameWriter::Write(byte* var, unsigned int iSize)
 
 void CvSavegameWriter::Write(SavegameVariableTypes eType)
 {
-	FAssert(m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
+	FAssert(m_eClassType >= FIRST_SAVEGAME_CLASS_TYPES && m_eClassType < NUM_SAVEGAME_CLASS_TYPES);
 	int iSize = 2;
 
-	if (m_eClassType >= 0 && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
+	if (m_eClassType >= FIRST_SAVEGAME_CLASS_TYPES && m_eClassType < NUM_SAVEGAME_CLASS_TYPES)
 	{
 		iSize = enumByteSize[m_eClassType];
 	}

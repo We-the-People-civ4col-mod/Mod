@@ -522,10 +522,10 @@ private:
 
 		// write empty array if needed
 
-		if (eStart == MAX_INT)
+		if (eStart == (LengthType)MAX_INT)
 		{
 			// saving 1 to 0 will cause the reader to not read any data, hence no need to save blocks
-			FAssert(eEnd == MIN_INT);
+			FAssert(eEnd == (LengthType)MIN_INT);
 			eStart = (LengthType)1;
 			eEnd = (LengthType)0;
 		}
