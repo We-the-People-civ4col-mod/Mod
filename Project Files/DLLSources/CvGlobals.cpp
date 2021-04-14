@@ -1347,8 +1347,7 @@ std::vector<CvTraitInfo*>& CvGlobals::getTraitInfo()	// For Moose - XML Load Uti
 
 CvTraitInfo& CvGlobals::getTraitInfo(TraitTypes eTraitNum)
 {
-	FAssert(eTraitNum > -1);
-	FAssert(eTraitNum < GC.getNumTraitInfos());
+	FAssert(validEnumRange(eTraitNum));
 	return *(m_paTraitInfo[eTraitNum]);
 }
 

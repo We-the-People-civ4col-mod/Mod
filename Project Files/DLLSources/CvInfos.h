@@ -4496,7 +4496,7 @@ public:
 	DllExport CvFatherInfo();
 	virtual ~CvFatherInfo();
 	int getFatherCategory() const;
-	int getTrait() const;
+	TraitTypes getTrait() const;
 	int getFreeUnits(int iUnitClass) const;
 	int getPointCost(int iFatherPointType) const;
 	bool isRevealImprovement(int iImprovement) const;
@@ -4514,7 +4514,7 @@ public:
 
 protected:
 	int m_iFatherCategory;
-	int m_iTrait;
+	TraitTypes m_eTrait;
 	CivEffectTypes m_eCivEffect;
 	int* m_aiFreeUnits;
 	int* m_aiPointCost;

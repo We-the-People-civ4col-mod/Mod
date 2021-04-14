@@ -353,42 +353,42 @@ private:
 	template<>
 	__forceinline void _setAll<false, ENUMMAP_SIZE_NATIVE>(T eValue)
 	{
-		std::fill_n(m_pArrayFull, numElements(), eValue);
+		std::fill_n(m_pArrayFull, (int)numElements(), eValue);
 	}
 	template<>
 	__forceinline void _setAll<false, ENUMMAP_SIZE_1_BYTE>(T eValue)
 	{
-		std::fill_n(m_pArrayChar, numElements(), eValue);
+		std::fill_n(m_pArrayChar, (int)numElements(), eValue);
 	}
 	template<>
 	__forceinline void _setAll<false, ENUMMAP_SIZE_2_BYTES>(T eValue)
 	{
-		std::fill_n(m_pArrayShort, numElements(), eValue);
+		std::fill_n(m_pArrayShort, (int)numElements(), eValue);
 	}
 	template<>
 	__forceinline void _setAll<false, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(m_pArrayBool, _getNumBoolBlocks<false>(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(m_pArrayBool, (int)_getNumBoolBlocks<false>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_NATIVE>(T eValue)
 	{
-		std::fill_n(&m_InlineNative[0], numElements(), eValue);
+		std::fill_n(&m_InlineNative[0], (int)numElements(), eValue);
 	}
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_1_BYTE>(T eValue)
 	{
-		std::fill_n(&m_Inline_1_byte[0], numElements(), eValue);
+		std::fill_n(&m_Inline_1_byte[0], (int)numElements(), eValue);
 	}
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_2_BYTES>(T eValue)
 	{
-		std::fill_n(&m_Inline_2_bytes[0], numElements(), eValue);
+		std::fill_n(&m_Inline_2_bytes[0], (int)numElements(), eValue);
 	}
 	template<>
 	__forceinline void _setAll<true, ENUMMAP_SIZE_BOOL>(T eValue)
 	{
-		std::fill_n(&m_InlineBoolArray[0], _getNumBoolBlocks<bINLINE>(), eValue ? MAX_UNSIGNED_INT : 0);
+		std::fill_n(&m_InlineBoolArray[0], (int)_getNumBoolBlocks<bINLINE>(), eValue ? MAX_UNSIGNED_INT : 0);
 	}
 
 	// allocate
@@ -594,8 +594,8 @@ inline EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::EnumMapBase()
 	BOOST_STATIC_ASSERT(SIZE != ENUMMAP_SIZE_BOOL || DEFAULT == 0 || DEFAULT == 1);
 
 	FAssertMsg(bINLINE || sizeof(*this) == 4, "EnumMap is supposed to only contain a pointer");
-	FAssertMsg(getLength() >= 0 && getLength() <= ArrayLength((LengthType)0), "Custom length out of range");
-	FAssertMsg(First() >= 0 && First() <= getLength(), "Custom length out of range");
+	FAssertMsg(getLength() >= (IndexType)0 && getLength() <= ArrayLength((LengthType)0), "Custom length out of range");
+	FAssertMsg(First() >= (IndexType)0 && (First() < getLength() || First() == (IndexType)0), "Custom length out of range");
 
 	if (bINLINE)
 	{
@@ -988,7 +988,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSa
 				T tBuffer;
 				reader.Read(tBuffer);
 				IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), i);
-				if (iIndex != -1)
+				if (iIndex != (IndexType)-1)
 				{
 					// -1 means xml entry was removed. Discard the data in question and hope the savegame will still work
 					set(iIndex, tBuffer);
@@ -1001,7 +1001,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Read(CvSa
 			T tBuffer;
 			reader.Read(tBuffer);
 			IndexType iIndex = (IndexType)reader.ConvertIndex(ArrayType((LengthType)0), iFirst);
-			if (iIndex != -1)
+			if (iIndex != (IndexType)-1)
 			{
 				// -1 means xml entry was removed. Discard the data in question and hope the savegame will still work
 				set(iIndex, tBuffer);
@@ -1133,7 +1133,7 @@ inline void EnumMapBase<IndexType, T, DEFAULT, T_SUBSET, LengthType>::_Write(CvS
 				writer.Write((byte)iLast);
 			}
 			
-			for (int i = iFirst; i <= iLast; ++i)
+			for (int i = iFirst; i <= (int)iLast; ++i)
 			{
 				writer.Write(get((IndexType)i));
 			}

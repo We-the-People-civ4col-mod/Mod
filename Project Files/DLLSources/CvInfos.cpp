@@ -15266,7 +15266,7 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 
 CvFatherInfo::CvFatherInfo() :
 	m_iFatherCategory(NO_FATHERCATEGORY),
-	m_iTrait(NO_TRAIT),
+	m_eTrait(NO_TRAIT),
 	m_eCivEffect(NO_CIV_EFFECT),
 	m_aiFreeUnits(NULL),
 	m_aiPointCost(NULL),
@@ -15286,9 +15286,9 @@ int CvFatherInfo::getFatherCategory() const
 	return m_iFatherCategory;
 }
 
-int CvFatherInfo::getTrait() const
+TraitTypes CvFatherInfo::getTrait() const
 {
-	return m_iTrait;
+	return m_eTrait;
 }
 
 int CvFatherInfo::getFreeUnits(int iUnitClass) const
@@ -15336,7 +15336,7 @@ void CvFatherInfo::read(FDataStreamBase* stream)
 	uint uiFlag=0;
 	stream->Read(&uiFlag);	// flags for expansion
 	stream->Read(&m_iFatherCategory);
-	stream->Read(&m_iTrait);
+	stream->Read(&m_eTrait);
 
 	SAFE_DELETE_ARRAY(m_aiFreeUnits);
 	m_aiFreeUnits = new int [GC.getNumUnitClassInfos()];
@@ -15363,7 +15363,7 @@ void CvFatherInfo::write(FDataStreamBase* stream)
 	uint uiFlag=0;
 	stream->Write(uiFlag);		// flag for expansion
 	stream->Write(m_iFatherCategory);
-	stream->Write(m_iTrait);
+	stream->Write(m_eTrait);
 	stream->Write(GC.getNumUnitClassInfos(), m_aiFreeUnits);
 	stream->Write(GC.getNumFatherPointInfos(), m_aiPointCost);
 	stream->Write(GC.getNumImprovementInfos(), m_abRevealImprovement);
@@ -15385,8 +15385,7 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 	m_iFatherCategory = GC.getInfoTypeForString(szTextVal);
 
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
-	pXML->GetChildXmlValByName(szTextVal, "Trait");
-	m_iTrait = GC.getInfoTypeForString(szTextVal);
+	pXML->GetEnum(getType(), &m_eTrait, "Trait", false);
 
 	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
 

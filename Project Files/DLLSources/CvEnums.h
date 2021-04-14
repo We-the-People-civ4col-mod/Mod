@@ -2924,7 +2924,7 @@ SET_ENUM_OPERATORS_AND_FORBID(TileArtTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ToolTipAlignTypes);
 SET_ENUM_OPERATORS(TradeableItems);
 SET_ENUM_OPERATORS_AND_FORBID(TradeMessageTypes);
-SET_ENUM_OPERATORS(TraitTypes);
+SET_ENUM_OPERATORS_AND_FORBID(TraitTypes);
 SET_ENUM_OPERATORS(TurnTimerTypes);
 SET_ENUM_OPERATORS(UnitAIStates);
 SET_ENUM_OPERATORS(UnitAITypes);
@@ -2946,5 +2946,11 @@ SET_ENUM_OPERATORS_AND_FORBID(WorldBuilderPopupTypes);
 SET_ENUM_OPERATORS(WorldSizeTypes);
 SET_ENUM_OPERATORS(YieldTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ZoomLevelTypes);
+
+template<class T>
+static bool validEnumRange(T eValue)
+{
+	return eValue >= (T)0 && eValue < (T)getArrayLength(getJITarrayType(eValue));
+}
 
 #endif	// CVENUMS_h

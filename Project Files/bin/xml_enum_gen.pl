@@ -133,7 +133,7 @@ sub processFile
 		print $output_test "DisplayXMLhardcodingError(strcmp(\"". $type . "\", " . getInfo($basename) . "($type).getType()) == 0, \"$type\", true);\n" if $isHardcoded;
 	}
 
-	print $output_test "DisplayXMLhardcodingError(NUM_" . $TYPE . "_TYPES == " . getNumFunction($basename) . ", \"NUM_" . $TYPE . "_TYPES\", " . $hardcodedBool . ");\n";
+	print $output_test "DisplayXMLhardcodingError(NUM_" . $TYPE . "_TYPES == (" . $enum . ")" . getNumFunction($basename) . ", \"NUM_" . $TYPE . "_TYPES\", " . $hardcodedBool . ");\n";
 
 	print $output "\n\tNUM_" . $TYPE . "_TYPES,\n";
 	print $output "\tNUM_CARGO_YIELD_TYPES = YIELD_HAMMERS,\n" if $isYield;

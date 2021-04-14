@@ -1790,13 +1790,13 @@ bool CvPlayer::hasTrait(TraitTypes eTrait) const
 
 int CvPlayer::getTraitCount(TraitTypes eTrait) const
 {
-	FAssert(eTrait >= 0 && eTrait < GC.getNumTraitInfos());
+	FAssert(validEnumRange(eTrait));
 	return m_em_iTraitCount.get(eTrait);
 }
 
 void CvPlayer::changeTraitCount(TraitTypes eTrait, int iChange)
 {
-	FAssert(eTrait >= 0 && eTrait < GC.getNumTraitInfos());
+	FAssert(validEnumRange(eTrait));
 	m_em_iTraitCount.add(eTrait, iChange);
 	FAssert(getTraitCount(eTrait) >= 0);
 }
@@ -1804,9 +1804,8 @@ void CvPlayer::changeTraitCount(TraitTypes eTrait, int iChange)
 int CvPlayer::getMercantileFactor() const
 {
 	int iMercantileFactor = 100;
-	for (int iTrait = 0; iTrait<GC.getNumTraitInfos(); ++iTrait)
+	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
 	{
-		TraitTypes eTrait = (TraitTypes)iTrait;
 		if (hasTrait(eTrait))
 		{
 			iMercantileFactor *= (100 + GC.getTraitInfo(eTrait).getMercantileFactor());
