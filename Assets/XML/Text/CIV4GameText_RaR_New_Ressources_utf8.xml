@@ -10,92 +10,6 @@
         <English>Deemphasize Cattle</English>
         <French>Minimiser le Bétail</French>
         <German>Schwerpunkt Rinder aufheben</German>
-        <Italian>Deemphasize Cattle</Italian>
-        <Spanish>Deemphasize Cattle</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_YIELD_COCOA</Tag>
-        <English>Cocoa</English>
-        <French>Cacao torréfié</French>
-        <German>
-            <Text>Kakao</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cocoa</Italian>
-        <Spanish>Cocoa</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_COCOA</Tag>
-        <English>Cocoa</English>
-        <French>Cacao torréfié</French>
-        <German>
-            <Text>Kakao</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cocoa</Italian>
-        <Spanish>Cocoa</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BONUS_COCOA</Tag>
-        <English>Cocoa Trees</English>
-        <French>Cacao</French>
-        <German>
-            <Text>Kakao</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>Cocoa</Italian>
-        <Spanish>Cocoa</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BONUS_SALT</Tag>
-        <English>Salt Deposits</English>
-        <French>
-            <Text>Sel</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Salz</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Salt</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Salt</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BONUS_CACTUS</Tag>
-        <English>Cactus trees</English>
-        <French>
-            <Text>Cactus</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Kaktus</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Cactus</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>CACTUS</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNONSMITH</Tag>
@@ -132,18 +46,10 @@
         <German>[TAB]Der Fleischer, auch Metzger, Schlachter ist einer der älteren Handwerksberufe. Fleischer beschäftigen sich mit der Schlachtung und mit der Herstellung von Fleisch- und Wurstwaren, sie arbeiten in Schlachthöfen und in Fleischereien.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_PROFESSION_BREWER_PEDIA</Tag>
-        <English>[TAB]Brewing is the production of beer through steeping a starch source (commonly cereal grains) in water and then fermenting with yeast. Brewing has taken place since around the 6th millennium BC, and archaeological evidence suggests that this technique was used in ancient Egypt. Brewers produced beer for colonists. The Puritans on the Mayflower brought more beer than water over with them. In Europe drinking beer was safer than drinking water which was often polluted with sewage or garbage. Alcohol was also an effective analgesic, providing energy necessary for hard work, but also enhancing the quality of life.</English>
-        <French>[TAB]La bière est une boisson alcoolisée obtenue par fermentation de matières glucidiques végétales et d'eau. C'est une boisson alcoolisée obtenue par transformation de matières amylacées par voies enzymatiques et microbiologiques. Plus spécifiquement de nos jours, elles est généralement fabriquée à partir d'eau, de malt (céréale germée, principalement de l'orge, parfois additionné d'autres céréales) et depuis le Moyen âge, de houblon. C'est l'une des boissons les plus populaires et consommées au monde.</French>
-        <German>[TAB]Bier ist ein alkohol- und kohlensäurehaltiges Getränk, das durch Gärung meist aus den Grundzutaten Wasser, Malz und Hopfen gewonnen wird. Malz wiederum ist getrocknetes und gekeimtes Getreide, meist Gerste. Bier ist schon seit tausenden Jahren bekannt.</German>
-        <Italian>[TAB]Beer is an alcoholic drink. Mostly made from barley.</Italian>
-        <Spanish>[TAB]Beer is an alcoholic drink. Mostly made from barley.</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_PROFESSION_WINEMAKER_PEDIA</Tag>
         <English>[TAB]Wine, a beverage made from fermented grapes, was first produced as early as 6000 BC. Its use spread throughout the Middle East and Egypt, and it quickly became a popular beverage of the ancient world. Grapes used for the making of wine are grown in many different regions of the world. Most vineyards are located in hills and valleys of temperate regions. Wine making as an industry has been perfected over several centuries. Many regions such as the Rhine and Loire valleys of Europe are well known for their fine wines, and derive a significant portion of their economy from wine making.</English>
         <French>[TAB]Le vin est une boisson obtenue par la fermentation du raisin. Sa production débute dès 6 000 ans av. J.-C. Sa consommation se répand à travers tout le Moyen-Orient et l'Egypte, et il devient rapidement une boisson très populaire dans le monde antique. Le raisin utilisé dans la fabrication du vin est cultivé dans de nombreuses régions du monde. Les vignes sont généralement situées sur les coteaux et dans les vallées des régions tempérées. Les procédés de fabrication du vin ont été perfectionnés au cours des siècles. De nombreuses régions, comme les vallées du Rhin et de la Loire, sont réputées pour leurs bons vins, et une grande partie de leur économie est liée à la fabrication du vin.</French>
-        <German>[TAB]Der aus fermentierten Trauben hergestellte Wein wurde erstmals um 6000 vor Christus produziert und war im Nahen Osten und in Ägypten weit verbreitet. Das Getränk entwickelte sich schnell zu einem der beliebtesten kulinarischen Genüsse der Antike. Die für die Weinherstellung benötigten Trauben werden in vielen verschiedenen Gebieten der Welt angebaut, die meisten Weinhänge befinden sich jedoch in den Hügeln und Tälern von Regionen mit gemäßigtem Klima. Im Laufe mehrerer Jahrhunderte wurde die industrielle Weinherstellung immer weiter perfektioniert. Viele Anbaugebiete wie die Rhein- und Loiretäler in Europa sind für ihre feinen Weine bekannt und beziehen einen Großteil ihrer wirtschaftlichen Erträge aus der Weinproduktion.</German>
+        <German>[TAB]Der aus fermentierten Trauben hergestellte Wein wurde erstmals um 6000 vor Christus produziert und war im Nahen Osten und in Ägypten weit verbreitet. Das Getränk entwickelte sich schnell zu einem der beliebtesten kulinarischen Genüsse der Antike. Die für die Weinherstellung benötigten Trauben werden in vielen verschiedenen Gebieten der Welt angebaut, die meisten Weinhänge befinden sich jedoch in den Hügeln und Tälern von Regionen mit gemäßigtem Klima. Im Laufe mehrerer Jahrhunderte wurde die industrielle Weinherstellung immer weiter perfektioniert.[PARAGRAPH:1]Viele Anbaugebiete wie die Rhein- und Loiretäler in Europa sind für ihre feinen Weine bekannt und beziehen einen Großteil ihrer wirtschaftlichen Erträge aus der Weinproduktion.</German>
         <Italian>[TAB]Realizzato dalla fermentazione dell'uva, il primo vino risale circa al 6000 a. C. e si diffuse rapirdamente attraverso il Medio Oriente e l'Egitto, diventando una delle bevande più popolari del mondo antico. Le qualità d'uva usate per la realizzazione del vino crescono in differenti zone del mondo; la maggior parte delle vigne si possono trovare sulle colline e nelle vallate di regioni dal clima temperato. L'industria del vino è andata perfezionandosi nel corso dei secoli: molte regioni europee, come le vallate del Reno e della Loira, sono rinomate per la produzione di ottimi vini, principale forma di economia della zona.</Italian>
         <Spanish>[TAB]El vino, una bebida preparada a partir de uvas fermentadas, se elaboró por vez primera ya en el 6000 a. C. Su consumo se extendió rápidamente por Oriente Medio y Egipto, y pronto se convirtió en una popular bebida en el mundo antiguo. Las uvas empleadas en la fabricación del vino crecen en muchas y muy distintas partes del mundo. La mayoría de las viñas están en colinas y valles de regiones templadas. La vinicultura se ha perfeccionado como industria a lo largo de varios siglos. Muchas regiones, como los valles del Rin y del Loira en Europa, son conocidas por sus grandes vinos y obtienen una parte significativa de sus ingresos de la vinicultura.</Spanish>
     </TEXT>
@@ -168,72 +74,56 @@
         <English>[ICON_BULLET]Can gather Fish from sea resources</English>
         <French>[ICON_BULLET]Peut pêcher du poisson à partir de la mer</French>
         <German>[ICON_BULLET]Kann Fisch auf Bonusressourcen gewinnen</German>
-        <Italian>[ICON_BULLET]Can gather Fish from sea resources</Italian>
-        <Spanish>[ICON_BULLET]Can gather Fish from sea resources</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FISHING_UNLOAD</Tag>
         <English>Automate Fishing</English>
         <French>Automatisation de la pêche</French>
         <German>Fischfang automatisieren</German>
-        <Italian>Automate Fishing</Italian>
-        <Spanish>Automate Fishing</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISSION_FISHING_UNLOAD_HELP</Tag>
         <English>Will gather fish from sea resources until the ship is full, then unload cargo at the selected port.</English>
         <French>Collecter de la nouriture provenant de poissons ou de baleines jusqu'à ce que le bateau soit plein</French>
-        <German>Schiff geht vollautomatisch auf Fischfang und bringt diesen in eine Hafenstad, wenn der Laderaum voll ist.</German>
+        <German>Schiff geht vollautomatisch auf Fischfang und bringt diesen in eine Hafenstadt, wenn der Laderaum voll ist.</German>
         <Italian>Colletta alimentare a partire dai pesci fino balena o la nave è piena</Italian>
         <Spanish>Recoger la comida de pescado o la ballena hasta que el barco está lleno</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_CITY_RADIUS</Tag>
-        <English>[COLOR_PLAYER_RED]Must be outside City radius[COLOR_REVERT]</English>
+        <English>[COLOR_PLAYER_RED]Must be outside city radius[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Doit être en dehors de votre territoire[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Muss außerhalb des Stadtradius liegen[COLOR_REVERT]</German>
-        <Italian>[COLOR_PLAYER_RED]Must be outside City radius[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_PLAYER_RED]Must be outside City radius[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_CITY_RADIUS_PLOT_WORKED</Tag>
         <English>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Cet emplacement est déjà exploité par une colonie environante[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Dieser Platz wird bereits durch eine Stadt bewirtschaftet[COLOR_REVERT]</German>
-        <Italian>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_PLAYER_RED]This spot is already being worked by the neighboring city[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_NO_FISH</Tag>
         <English>[COLOR_PLAYER_RED]Fish bonus is required[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Un bateau de pêche est requis[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Fischvorkommen wird benötigt[COLOR_REVERT]</German>
-        <Italian>[COLOR_PLAYER_RED]Fish bonus is required[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_PLAYER_RED]Fishbonus is required[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_NEEDS_FISHING_BOAT</Tag>
-        <English>[COLOR_PLAYER_RED]Fishing ship required to gather resource[COLOR_REVERT]</English>
+        <English>[COLOR_PLAYER_RED]Fishing boat required to gather resource[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Un bateau de pêche est requis pour rêcolter des ressources[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Fischerboot wird benötigt[COLOR_REVERT]</German>
-        <Italian>[COLOR_PLAYER_RED]Fishing  ship required to gather resource[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_PLAYER_RED]Fishing  ship required to gather resource[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_FULL</Tag>
         <English>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Il n'y a plus de place pour de la nourriture[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Der Frachtraum ist voll![COLOR_REVERT]</German>
-        <Italian>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_FISH_TAKEN</Tag>
-        <English>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</English>
+        <English>[COLOR_PLAYER_RED]This spot is taken, only one fishing boat per resource[COLOR_REVERT]</English>
         <French>[COLOR_PLAYER_RED]Cet emplacement est occupé, il ne peut y avoir qu'un Navire par Ressource[COLOR_REVERT]</French>
         <German>[COLOR_PLAYER_RED]Hier geht bereits ein anderes Schiff auf die Fang![COLOR_REVERT]</German>
-        <Italian>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_PLAYER_RED]This spot is taken, only one Fishing Ship per resource[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FISHER_FULL</Tag>
@@ -257,7 +147,5 @@
         <English>Emphasize Blades</English>
         <French>Privilégier les sabres</French>
         <German>Schwerpunkt Klingenwaffen</German>
-        <Italian>Emphasize Blades</Italian>
-        <Spanish>Emphasize Blades</Spanish>
     </TEXT>
 </Civ4GameText>
