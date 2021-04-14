@@ -186,7 +186,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BISONS_3</Tag>
-        <English>We are sorry if our Native friends have problems. But the Bison are on our land. We will continue hunting them.</English>
+        <English>We are sorry if our Native friends have problems, but the bison are on our land. We will continue hunting them.</English>
         <French>Nous sommes attristés par les problèmes de nos amis indigènes, mais les bisons sont sur nos terres. Nous continuerons à les chasser.</French>
         <German>Wir bedauern, falls unsere wilden Freunde Probleme haben. Aber die Bisons sind auf unserem Land und wir werden sie weiterhin jagen.</German>
         <Italian>We are sorry if our Native friends have problems. But the Bisons are on our land. We will continue hunting them.</Italian>
@@ -226,7 +226,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BRAVE_NATIVE_SLAVE_2</Tag>
-        <English>Give this Native weapons and promise him a good salary if he will serve in our army. Such bravery should be prominent.</English>
+        <English>Give this Native weapons and promise him a good salary if he will serve in our army. Such bravery is exemplary.</English>
         <French>Donnez à cet indigène des armes et promettez lui un bon salaire en servant dans l'armée. Nous avons besoin d'hommes courageux.</French>
         <German>Gebt diesem Wilden Waffen und versprecht ihm einen gerechten Lohn, wenn er in unserer Armee dient. Solcher Mut muss eingesetzt werden.</German>
         <Italian>Give this Native some weapons and promise him a good salary if he will serve us in our army. Such bravery needs to be used.</Italian>
@@ -490,7 +490,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COMMANDEERED_RETURN</Tag>
-        <English>The Royal Navy has returned our Frigate, somewhat the worse for wear, though with a generous share of booty in her hold!</English>
+        <English>The Royal Navy has returned our frigate, somewhat the worse for wear, though with a generous share of booty in her hold!</English>
         <French>La Marine Royale nous a rendu notre frégate, il est vrai un endommagé, mais avec un joli butin dans sa soute !</French>
         <German>Die Royal Navy hat unser Schiff zürückgegeben. Es ist zwar etwas mitgenommen, aber als Ausgleich erhalten wir einen grosszügigen Anteil an der Beute in Frachtraum.</German>
         <Italian>The Royal Navy has returned our Frigate, somewhat the worse for wear, though with a generous share of booty in her hold!</Italian>
@@ -666,7 +666,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DESERTED_WOLF_WHELP_2</Tag>
-        <English>What can we do with such a rabid animal? Try to sell it.</English>
+        <English>What can we do with a possibly rabid animal? Try to sell it.</English>
         <French>Que voulez-vous que je fasse d'un tel animal ? Essayez de le vendre.</French>
         <German>Wir haben für solch ein tollwütiges Tier keine Verwendung. Versucht es zu verkaufen.</German>
         <Italian>What can we do with such a rabid animal? Try to sell it.</Italian>
@@ -674,7 +674,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DESPERATE_CONQUISTADORES_1</Tag>
-        <English>Put those cutthroats in chains. We will allow nobody to raid our Native friends.</English>
+        <English>Put those cutthroats in chains. Nobody is going to raid our Native friends.</English>
         <French>Que ces égorgeurs soient enchaînés. Nous n'autorisons personne à s'en prendre à nos amis indigènes.</French>
         <German>Legt diesen Halsabschneidern ketten an. Niemand darf ungestraft unsere wilden Freunde angreifen.</German>
         <Italian>Put those cutthroats in chains. We will allow nobody to raid our Native friends.</Italian>
@@ -690,7 +690,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DIPLOMATIC_CONNECTIONS_1</Tag>
-        <English>The Statesman shall use this connection and offer the other Statesman a lucrative position in our administration.</English>
+        <English>The stateman shall use this connection to offer the other official a lucrative position in our administration.</English>
         <French>Très bien, que cet homme d'État propose à son collègue une position lucrative dans notre administration.</French>
         <German>Der Staatsmann soll seine Beziehungen nutzen und seinem Kollegen bei uns eine bessere Stelle als bei seinem bisherigen Arbeitgeber anbieten.</German>
         <Italian>The Statesman shall use this connection and offer the other Statesman a lucrative position in our administration.</Italian>
@@ -714,7 +714,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_DISEASED_NATIVES_2</Tag>
-        <English>They shall bring their diseased to our city. We will pay the doctors for their treatment.</English>
+        <English>They shall bring their diseased to our city. We will pay doctors for their treatment.</English>
         <French>Qu'ils amènent leur malades dans notre ville. Nous allons prendre en charge leur traitement médical.</French>
         <German>Die Wilden sollen ihre Kranken in unsere Stadt bringen. Wir werden die Doktoren bezahlen um sie zu behandeln.</German>
         <Italian>They shall bring their diseased to our city. We will pay the doctors for their treatment.</Italian>
@@ -814,7 +814,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMOUS_ACTORS_1</Tag>
-        <English>Famous Actors? Of course they shall be hired. We really need more culture in our colonies.</English>
+        <English>Famous actors? Of course they shall be hired. We really need more culture in our colonies.</English>
         <French>Des acteurs célèbres ? Bien sûr que nous devons les engager. Nous avons vraiment besoin de développer la culture dans nos colonies.</French>
         <German>Berühmte Schauspieler würden bei uns auftreten. Worauf wartet ihr noch? Setzt sofort den Vertrag auf.</German>
         <Italian>Famous Actors? Of course they shall be hired. We really need more culture in our colonies.</Italian>
@@ -862,7 +862,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_2</Tag>
-        <English>As loyal subjects to His Majesty we fulfill His demand with greatest pleasure. We hope that His Royal Highness will be pleased by our comprehensive variety of finest cigars.</English>
+        <English>As loyal subjects to His Majesty we fulfill His demand with the greatest pleasure. We hope that His Royal Highness will be pleased by our comprehensive selection of finest cigars.</English>
         <French>En tant qu'humbles sujets loyaux à sa Sérénissime Majesté, nous répondrons à votre demande avec grand plaisir. Nous espérons que Son Altesse sera ravie par la variété de nos plus fameux cigares.</French>
         <German>Als loyale Untertanen entbieten wir unserem Herrscher ehrerbietigst unsere Glückwünsche und entsenden ihm als Präsent eine große Auswahl feinster Zigarren!</German>
         <Italian>As loyal subjects to His Majesty we fulfill His demand with greatest pleasure and honour. We hope that His Royal Highness will be pleased by our extensive choice of finest cigars.</Italian>
@@ -870,7 +870,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_3</Tag>
-        <English>Send a shipment of our finest brandy to His Majesty... and may he live long and prosper.</English>
+        <English>Send a shipment of our finest brandy to His Majesty ... and may he live long and prosper.</English>
         <French>Envoyez à Sa Majesté une embarcation de nos plus fameuses liqueurs... et que ça vit soit longue et prospère.</French>
         <German>Schickt Seiner Majestät eine Schiffsladung besten Branntweins. Und richtet ihm aus, der Genuss dieser geistigen Getränke möge ihn stärken, auf dass er uns noch viele Jahre gütigst regiere.</German>
         <Italian>Send a shipment of our finest brandy to His Majesty... and may he live long and prosper.</Italian>
@@ -942,7 +942,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_5</Tag>
-        <English>Terrible deeds? How melodramtic! Give him a shot of liquor, let my young cook beef him up and send him back into the woods.</English>
+        <English>Terrible deeds? How melodramatic! Give him a shot of liquor, let my young cook beef him up and send him back into the woods.</English>
         <French>Des choses terribles ? Quelle dramaturgie ! Donnez lui un bon verre de liqueur, que mon cuisinier lui prépare du bÂœuf et le ramène dans les bois.</French>
         <German>"Furchtbare Taten"? Wie melodramatisch. Gebt dem Mann einen Schnaps, heißt meine junge Köchin ihn stärken, und setzt ihn dann wieder aufs Pferd.</German>
         <Italian>Terrible deeds? How melodramtic! Give him a shot of liquor, let my young cook beef him up and let him return into the woods.</Italian>
@@ -958,7 +958,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_UNIVERSITY_2</Tag>
-        <English>Ask for a theologist. Religion is an important matter.</English>
+        <English>Ask for a theologian. Religion is an important matter.</English>
         <French>Demandez un théologien. La religion est ce qui compte le plus.</French>
         <German>Fragt nach einem Theologen. Religion ist wichtig.</German>
         <Italian>Ask for a theologist. Religion is an important matter.</Italian>
@@ -982,7 +982,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_2</Tag>
-        <English>They don't seem to know what to do with the tools I give them. Take everything from these squanderers, they don't need it!</English>
+        <English>They don't seem to know what to do with the tools I give them. Take everything from these wastrels. They don't need it!</English>
         <French>Ils ne semblent pas savoir quoi faire de leurs outils. Reprenez tout à ces gaspilleurs, ils n'en ont pas besoin !</French>
         <German>Die wissen wohl nicht wohin mit den Eisenwaren, die ich ihnen zuteile. Nehmt diesen Verschwendern weg, was sie nicht benötigen!</German>
         <Italian>They don't seem to know what to do with the tools I assign them. Take everything from these squanderers, they don't need!</Italian>
@@ -998,7 +998,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIRST_WHEELWRIGHT_4</Tag>
-        <English>Are they bored? These lazy dogs! I will hurry them along!</English>
+        <English>Are they bored? These lazy dogs! I'll hurry them along!</English>
         <French>Pourquoi proposent-ils ça, ils s'ennuient ? Je vais leur apprendre à travailler !</French>
         <German>Langweilen sich diese faulen Hunde etwa? Die werde ich antreiben!</German>
         <Italian>Are they bored? These lazy dogs! I will hurry them along!</Italian>
@@ -1022,7 +1022,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_1</Tag>
-        <English>Fill the coffers of the colonies, your Highness, and we will do further good deeds.</English>
+        <English>Fill the coffers of the colonies, Your Highness, and we will do further good deeds.</English>
         <French>Remplissons les coffres de nos colonies, votre Altesse, et nous ferons d'autres bonnes actions.</French>
         <German>Füllt die Schatzkammern unserer Kolonien, Hoheit, und wir werden weitere gute Werke vollbringen können.</German>
         <Italian>Fill the coffers of the colonies, your Highness, and we will do further good deeds.</Italian>
@@ -1062,7 +1062,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_DOCKS</Tag>
-        <English>Well, we were planning to build many harbours anyways. But an additional reward shall be welcome.</English>
+        <English>Well, we were planning to build many harbours anyway; but an additional reward shall be welcome.</English>
         <French>Bien, nous avions prévus de construire plusieurs ports de toute manière. Une récompense additionnelle ne peut être que la bienvenue.</French>
         <German>Wir wollten zwar sowieso mehrere Hafenstädte gründen, aber eine zusätzliche Belohnung ist natürlich sehr willkommen.</German>
         <Italian>Well, we were planning to build many harbours anyways. But an additional reward shall be welcome.</Italian>
@@ -1110,7 +1110,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_2</Tag>
-        <English>We now have markets but we need roads to connect them. They shall hire some Pioneers.</English>
+        <English>We now have markets but we need roads to connect them. They shall hire some pioneers.</English>
         <French>Nous avons certes des marchés mais nous avons besoin de routes pour les connecter. Ils peuvent nous embaucher des pionniers.</French>
         <German>Wir haben zwar nun die Märkte, aber diese müssen durch Strassen verbunden werden. Sie sollen einige Pioniere anheuern.</German>
         <Italian>We now have markets but we need roads to connect them. They shall hire some Pioneers.</Italian>
@@ -1118,7 +1118,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_3</Tag>
-        <English>More Wagon Trains to transport the goods to the new markets would be useful.</English>
+        <English>More wagon trains to transport goods to the new markets would be a big help.</English>
         <French>Nous avons besoin de convois terrestres pour transporter les biens vers ces nouveaux marchés.</French>
         <German>Mehr Wagenzüge wären sehr hilfreich, denn dann können wir die Waren besser zu den Märkten transportieren.</German>
         <Italian>More Wagon Trains to transport the goods to the new markets would be useful.</Italian>
@@ -1186,7 +1186,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_1</Tag>
-        <English>Majesty, we are very pleased that the crown will support our efforts in the New World. We will prepare the chamber for the Honourable Lord.</English>
+        <English>Majesty, we are very pleased that the Crown will support our efforts in the New World. We will prepare the chamber for the Honourable Lord.</English>
         <French>Majesty, we are very pleased that the crown will support our efforts in the New World. We will prepare the chamber for the honourable lord.</French>
         <German>Majestät, wir sind Euch für Eure Unterstützung äußerst dankbar. In der Tat lässt die Verwaltung unserer Kolonien noch sehr zu wünschen übrig. Wir werden die Gemächer für seine Gnaden vorbereiten lassen.</German>
         <Italian>Majesty, we are very pleased that the crown will support our efforts in the New World. We will prepare the chamber for the honourable lord.</Italian>
@@ -1210,7 +1210,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_2</Tag>
-        <English>Send that woman some money and inform His Majesty's court that we have taken care about the matter.</English>
+        <English>Send that woman some money and inform His Majesty's court that we have taken care of the matter.</English>
         <French>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</French>
         <German>Schicket der Frau etwas Geld und informiert den Hof Seiner Majestät, dass wir uns der Sache angenommen haben.</German>
         <Italian>Send that woman some money and inform the court of His Majesty that we have taken care about the matter.</Italian>
@@ -1234,7 +1234,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_2</Tag>
-        <English>Soon the Russian sovereign is to marry the daughter of the Prussian king. Now he wishes to get rid of certain young varlets and assure their discretion.</English>
+        <English>Soon the Russian sovereign is to marry the daughter of the Prussian king. Now he wishes to get rid of certain young varlets while assuring their discretion.</English>
         <French>Bientôt le souverain russe va se marier à la fille du roi de Prusse. Il souhaite maintenant se débarrase de certains valets en toute discretion.</French>
         <German>Der russische Fürst heiratet in Bälde die Tochter des preußischen Königs. Vorab würde er gerne diskret einige junge Kammerdiener loswerden, deren Zutraulichkeiten jetzt nicht mehr erwünscht sind. Nun denn!</German>
         <Italian>Soon the Russian sovereign will marry the daughter of the Prussian king. Now he wishes to get rid of some young valets and their confidingnesses discretely.</Italian>
@@ -1250,7 +1250,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_GREAT_ARSENAL_DONE_4</Tag>
-        <English>This man seems to be a common hustler. Drastic steps are needful to change him into an honest citizen. He should surrender his wallet and put his nose to the grindstone.</English>
+        <English>This man seems to be a common hustler. Drastic steps are needful to change him into an honest citizen. He should hand over his wallet and put his nose to the grindstone.</English>
         <French>Cet homme semble être un arnaqueur. Des mesures drastiques seront nécessaire pour le changer en un honnête citoyen. Il devrait nous donner son portefeuille et mettre sa tête dans le guidon.</French>
         <German>Je länger der Unterhändler redet, desto halbseidener klingen seine Offerten. Euer Herz sagt Euch, dass dieser Mann ein Nepper ist, ein Schlepper, ein Bauernfänger! Ihr heißt Eure Gardisten, dem Gauner die Geldbörse abzunehmen und ihn zu hartem, aber ehrlichen Tagewerk zu zwingen.</German>
         <Italian>This man seems to be a hustler. Drastic steps are needful to change this guy into an honest citizen. He should deliver his wallet and put his nose to the grindstone.</Italian>
@@ -1362,7 +1362,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HOLY_GIANT_TREES_2</Tag>
-        <English>Sacred Trees? We must immediately call for a Missionary to drive out such devilish beliefs.</English>
+        <English>Sacred trees? We must immediately call for a missionary to drive out such devilish beliefs.</English>
         <French>Des arbres sacrés ? Nous devons appeler nos missionnaires pour les détourner de ces croyances païennes et les guider vers la lumière du Christ.</French>
         <German>Heilige Bäume ? Wir müssen nach einem Missionar schicken lassen, der diesen teuflischen Glauben austreibt.</German>
         <Italian>Sacred Trees? We must immediately call for a Missionary to drive out such devilish beliefs.</Italian>
@@ -1394,7 +1394,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HORSE_DEAL_1</Tag>
-        <English>Offer him a deal. We will sell him enough horses at a low price to start breeding. In return, he shall regularly bring us a horse from his best stock.</English>
+        <English>Offer him a deal. We will sell him enough horses at a low price to start breeding. In return, he shall regularly bring us the best horse from his stock.</English>
         <French>Proposez lui un marché. Nous lui vendrons suffisamment de chevaux pour à un prix bas pour qu'il puisse commencer son affaire. En échange, il devra nous fournir régulièrement avec ses meilleurs chevaux.</French>
         <German>Bietet dem Mann einen Handel an. Wir werden ihm genug Pferde für seine Zucht zu einem sehr niedrigen Preis verkaufen. Im Gegenzug soll er uns ab und zu eines seiner besten Zuchtpferde bringen.</German>
         <Italian>Offer him a deal. We will sell him enough horses to start breeding for a low price. In return, he shall regularly bring us a horse of his best breed.</Italian>
@@ -1402,7 +1402,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HORSE_DEAL_2</Tag>
-        <English>It is a pity, but we don't have any horses we could spare.</English>
+        <English>It is a pity, but we don't have any horses we can spare.</English>
         <French>C'est dommage mais nous ne disposons pas de suffisamment de chevaux pour l'aider.</French>
         <German>Leider haben wir keine Pferde, die wir einfach abgeben könnten.</German>
         <Italian>It is a pity, but we don't have any horses we could spare.</Italian>
@@ -1516,7 +1516,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_3</Tag>
-        <English>We will teach them manners! Send a troop of soldiers, let them mount their bayonets and bring me all silver they can find.</English>
+        <English>We will teach them manners! Send a troop of soldiers with fixed bayonets to bring me all silver they can find.</English>
         <French>Nous allons leur apprendre nos manières ! Envoyez une troupe de soldats armés de bayonnettes et ramenez tout l'argent que vous trouverez.</French>
         <German>Wir werden diese Weiber schon Mores lehren. Schickt einen Trupp Soldaten los und lasst sie die Bajonette aufpflanzen. Und bringt mir alles Silber, das Ihr finden könnt.</German>
         <Italian>We will teach them manners! Send a troop of soldiers, let them mount their bayonets and bring me all silver they can find.</Italian>
@@ -1540,7 +1540,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LUXURY_GOODS_2</Tag>
-        <English>We must show a firm hand! Send the troops to break apart this crowd and lock up all troublemakers over night.</English>
+        <English>We must show a firm hand! Send the troops to break up this crowd and lock up all troublemakers overnight.</English>
         <French>Nous devons montrer notre intransigeance ! Envoyez les troupes pour disperser la foule et emprisonner les perturbateurs dans la nuit.</French>
         <German>Wir müssen hart durchgreifen. Entsendet die lokalen Truppen um die Menge auseinanderzutreiben. Alle Unruhenstifter sollen über Nacht eingesperrt werden.</German>
         <Italian>We must show a hard hand! Send the troops to break apart this crowd and imprison all troublemakers over night.</Italian>
@@ -1556,7 +1556,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_2</Tag>
-        <English>They would surely make great Scouts. Try to hire them.</English>
+        <English>They would surely make great scouts. Try to hire them.</English>
         <French>Ils pourraient sans doute faire de très bons éclaireurs. Essayez de les engager.</French>
         <German>Sie wären us sicherlich als Kundschafter sehr dienlich.</German>
         <Italian>They would surely make great Scouts. Try to hire them.</Italian>
@@ -1564,7 +1564,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_3</Tag>
-        <English>Try to convince them to join our forces as Rangers.</English>
+        <English>Try to convince them to join our forces as rangers.</English>
         <French>Essayez de les convaincre de rejoindre nos forces en tant que gardes-forestiers.</French>
         <German>Versucht sie zu überzeugen unseren Truppen als Rangers zu dienen.</German>
         <Italian>Try to convince them to join our forces as Rangers.</Italian>
@@ -1596,7 +1596,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MOLESTING_MISSIONARY_1</Tag>
-        <English>That is outrageous. Instantly free the Missionary. A man of the church cannot have done such things.</English>
+        <English>That is outrageous. Instantly free the missionary. A man of the church would never have done such things.</English>
         <French>C'est une outrage ! Libérez immédiatement le missionnaire. Un homme de Dieu ne peut se laisser à de pareils perversions.</French>
         <German>Das ist unerhört. Befreit den Missionar sofort. Ein Mann der Kirche kann sich doch solcher Taten nicht schuldig gemacht haben.</German>
         <Italian>That is outrageous. Instantly free the Missionary. A man of the church cannot have done such things.</Italian>
@@ -1604,7 +1604,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MOLESTING_MISSIONARY_2</Tag>
-        <English>Well, our Native friends have no reason to lie. We will punish the man. He shall never work as a Missionary or a Priest again.</English>
+        <English>Well, our Native friends have no reason to lie. We will punish the man. He shall never work as a missionary or a priest again.</English>
         <French>Bon, nos amis indigènes n'ont pas de raison de mentir. Nous allons le punir. Il n'exercera plus jamais la fonction de missionnaire ou de prêtre.</French>
         <German>Nun, unsere wilden Freunde haben keinen Grund zu lügen. Wir werden den Mann bestrafen. Er wird natürlich auch nie wieder ein kirchliches Amt inne haben.</German>
         <Italian>Well, our Native friends have no reason to lie. We will punish the man. He shall never work as a Missionary or a Priest again.</Italian>
@@ -1636,7 +1636,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MONASTERY_HIDING_SLAVES_1</Tag>
-        <English>Well, those Slaves have to be returned to our European neighbour again. It is the law.</English>
+        <English>Well, those slaves have to be returned to our European neighbour again. It's the law.</English>
         <French>Ces esclaves doivent être rendus à leur maître. C'est la loi.</French>
         <German>Wir müssen dem Gesetz Folge leisten und die Sklaven wieder unserem Nachbarn übergeben.</German>
         <Italian>Well, those Slaves have to be returned to our European neighbour again. It is the law.</Italian>
@@ -1644,7 +1644,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MONASTERY_HIDING_SLAVES_2</Tag>
-        <English>Those slaves are now ours. Our neighbour will not dare to attack a Monastery.</English>
+        <English>Those slaves are now ours. Our neighbour will not dare attack a monastery.</English>
         <French>Ces esclaves sont mainenant les nôtres. Nos voisins n'oseront pas attaquer un monastère.</French>
         <German>Die Sklaven gehören nun uns. Unser Nachbar wird es nicht wagen ein Kloster anzugreifen.</German>
         <Italian>Those slaves are now ours. Our neighbour will not dare to attack a Monastery.</Italian>
@@ -1668,7 +1668,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MONASTERY_TRADING_FOOD_2</Tag>
-        <English>Give them half of the food we have stored in the next city for free.</English>
+        <English>Give them half of the food we've stored in the next city.</English>
         <French>Faîtes leur don de la moitié de la nourriture stockée dans la ville la plus proche.</French>
         <German>Schenkt ihnen die Hälfte der Nahrungsvorräte der am Nächsten gelegenen Stadt.</German>
         <Italian>Give them half of the food we have stored in the next city for free.</Italian>
@@ -1700,7 +1700,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRAINING_1</Tag>
-        <English>Our Native Mercenary shall stay for some time. Gaining further knowledge is always a good idea.</English>
+        <English>Our Native mercenary shall stay for some time. Gaining further knowledge is always a good idea.</English>
         <French>Notre mercenaire peut rester quelques temps. Gagner davantage de connaissances est toujours une bonne chose.</French>
         <German>Der Indianischen Söldner kann ruhig eine Weile in dem Dorf bleiben. Der Austausch von Wissen ist immer sinnvoll.</German>
         <Italian>Our Native Mercenary shall stay for some time. Gaining further knowledge is always a good idea.</Italian>
@@ -1708,7 +1708,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRAINING_2</Tag>
-        <English>That is not possible. This Native Mercenary is urgently needed elsewhere.</English>
+        <English>That is not possible. This Native mercenary is urgently needed elsewhere.</English>
         <French>Ce n'est pas possible. On a besoin immédiatement de notre unité de mercenaire.</French>
         <German>Das ist leider nicht möglich. Der Indianischen Söldner wird dringend an anderer Stelle gebraucht.</German>
         <Italian>That is not possible. This Native Mercenary is urgently needed elsewhere.</Italian>
@@ -1796,7 +1796,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK1_2</Tag>
-        <English>I will never knuckle under to these blackguards! Let them taste our steel and cannons!</English>
+        <English>I will never knuckle under to these blackguards! Let them taste our steel and feel our cannons!</English>
         <French>Je ne plierais jamais le genoux devant ces bandits! Faisons leur goûter notre acier et nos canons! </French>
         <German>Wir beugen uns nicht vor Banditen! Lasst sie unseren Stahl und unsere Kanonen schmecken!</German>
         <Italian>I will never knuckle under to these blackguards! Let them taste our steel and cannons!</Italian>
@@ -1812,7 +1812,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PIRATEATTACK2_2</Tag>
-        <English>A pox on you sir! You shall learn what this colony is made of!</English>
+        <English>A pox on you, sir! You shall learn what this colony is made of!</English>
         <French>Soyez maudit monsieur! Vous allez apprendre de quel bois nous sommes faits dans cette colonie!</French>
         <German>Alle Flüche der See sollen ihn treffen! Wir greifen zu den Waffen!</German>
         <Italian>A pox on you sir! You shall learn what this colony is made of!</Italian>
@@ -1868,7 +1868,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_2</Tag>
-        <English>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challenges of the life here in the New World.</English>
+        <English>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challenges of life here in the New World.</English>
         <French>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</French>
         <German>Lieber nicht, wir sind gerade etwas knapp bei Kasse und diese Studierten sind doch alles Aufschneider, die nur den ganzen Tag im Salon verbringen und kluge Reden schwingen. Ich brauche Leute, die auch anpacken können.</German>
         <Italian>To be honest, we don't need another dandy who wastes our time and money. To establish this colony we need people who can tackle the challanges of the life here in the New World.</Italian>
@@ -1876,7 +1876,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRINTING_PRESS_1</Tag>
-        <English>Well then, print some passages from the Bible. We shall further spread the words of Jesus Christ and the Apostles.</English>
+        <English>Well then, print some passages from the Bible. We shall spread the word of Jesus Christ and the Apostles.</English>
         <French>Très bien, dans ce cas nous pourrions imprimer des passages de la Bible. Nous devons propager encore davantage la parole du Christ et de ses apôtres.</French>
         <German>Dann druckt Passage aus der Bibel. Wir werden die Worte Jesus Christi und der Apostel verbreiten.</German>
         <Italian>Well then, print some passages from the Bible. We shall further spread the words of Jesus Christ and the Apostles.</Italian>
@@ -1900,7 +1900,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRIVATEER_2</Tag>
-        <English>We can't do anything. These letters of marque have been issued by our own admiralty and the King. And the private investors will not willy-nilly waive their right to capture foreign merchant vessels.</English>
+        <English>We can't do anything. These letters of marque have been issued by our own admiralty and the King. The private investors will not willy-nilly waive their right to capture foreign merchant vessels.</English>
         <French>We can't do anything. These letters of marque have been issued by our own admiralty and the king. And the private investors will not willy-nilly waive their rights to capture foreign merchant vessels.</French>
         <German>Ja nun, dagegen können wir nichts machen. Die Kaperbriefe werden von der Admiralität auf Geheiß seiner Majestät ausgegeben. Und die privaten Eigner werden nicht gern auf ihre Profite verzichten wollen.</German>
         <Italian>We can't do anything. These letters of marque have been issued by our own admiralty and the king. And the private investors will not willy-nilly waive their rights to capture foreign merchant vessels.</Italian>
@@ -2036,7 +2036,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUINS_DONE_1</Tag>
-        <English>Researchers at the Royal Court expect more information about the savages in our region. Let the men search for the legacy of the natives.</English>
+        <English>Researchers at the Royal Court expect more information about the savages in our region. Let the men search for the legacy of the Natives.</English>
         <French>Des chercheurs de la cour du Roi souhaitent en savoir davantager sur les sauvages de notre région. Demandons à nos hommes de chercher à propos de l'héritage de nos indigènes.</French>
         <German>Bei Hofe erwartet man sich weitere Erkenntnisse über die Wilden. Lasst nach ihren Hinterlassenschaften suchen! Insbesondere die geheimnisvolle Knotenschrift hat es unseren Forschern angetan.</German>
         <Italian>Researchers at the royal court expect more information about the savages in our region. Let the men search for the legacy of the natives.</Italian>
@@ -2092,7 +2092,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUM_BLOSSOM_3</Tag>
-        <English>Only the rum was looted? Nobody was hurt? Send them more rum, only good will come of that.</English>
+        <English>Only the rum was looted? Nobody was hurt? Send them more rum. Only good will come of that.</English>
         <French>Seulement le rhum a été pillé ? Personne n'a été blessé ? Envoyez leur plus de rhum, cela ne peut que nous apporter de bonnes choses.</French>
         <German>Sie haben nur den Rum gestohlen? Niemand wurde verletzt? Schickt ihnen noch eine zusätzliche Ladung, das wird sich noch für uns auszahlen.</German>
         <Italian>Only the rum was looted? Nobody was hurt? Send them more rum, only good will come of that.</Italian>
@@ -2148,7 +2148,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2</Tag>
-        <English>Your Majesty, if I may reconsider... The protection of our colony against wild animals and native raiders is even more important.</English>
+        <English>Your Majesty, if I may reconsider... The protection of our colony against wild animals and Native raiders is even more important.</English>
         <French>Votre Majesté, sauf votre respect, la protection de notre colonie contre les dangers environnants, animaux sauvages et raids indigènes, est encore plus prioritaire.</French>
         <German>Majestät, wichtiger noch als der Aufbau unserer Kolonie ist ihr Schutz vor den Gefahren der Wildnis. Bestien und Eingeborene lauern uns allerorten auf.</German>
         <Italian>Your Majesty, if I may reconsider... The protection of our colony against wild animals and native raiders is even more important.</Italian>
@@ -2292,7 +2292,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_1</Tag>
-        <English>The Chapel is the only reasonable choice for the children of Christ.</English>
+        <English>The chapel is the only reasonable choice for the children of Christ.</English>
         <French>Il n'y a d'autres choix raisonnable que celui de la chapelle pour les enfants du Christ.</French>
         <German>Die Kapelle ist die einzige sinnvolle Wahl für die Kinder Christi.</German>
         <Italian>The Chapel is the only reasonable choice for the children of Christ.</Italian>
@@ -2300,7 +2300,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_2</Tag>
-        <English>The Tavern is more important because it will help to bring the citizens closer together.</English>
+        <English>The tavern is more important because it will help to bring the citizens closer together.</English>
         <French>La taverne permettra de rassembler les citoyens ensemble. Il s'agit du choix le plus sensé.</French>
         <German>Die Taverne ist wichtiger, da sie helfen wird, die Gemeinde näher zusammen zu bringen.</German>
         <Italian>The Tavern is more important because it will help to bring the citizens closer together.</Italian>
@@ -2308,7 +2308,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAVERN_VS_CHAPEL_3</Tag>
-        <English>To avoid any arguments, the Materials shall be confiscated and sold.</English>
+        <English>To avoid any arguments, the materials shall be confiscated and sold.</English>
         <French>Pour éviter tout argument, les matériaux seront confisqués et vendus. Qu'on ne me dérange plus pour ces enfantillages !</French>
         <German>Um Streit zu verhindern, sollen die Materialien einfach verkauft werden.</German>
         <Italian>To avoid any arguments, the Materials shall be confiscated and sold.</Italian>
@@ -2316,7 +2316,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TERRAX_1</Tag>
-        <English>Well then, the early bird catches the worm. Let our settlers pack their belongings and send them into the wilderness.</English>
+        <English>Well then, the early bird catches the worm. Let our settlers pack their belongings and head out into the wilderness.</English>
         <French>Eh bien, l'oiseau doit bien finir par attraper le ver. Laissons nos colons faire leurs bagages et envoyons-les dans l'arrière-pays.</French>
         <German>Nun denn, der frühe Vogel fängt den Wurm. Lasst unsere Siedler ihre Habseligkeiten packen und scheucht sie in die Wildnis!</German>
         <Italian>Well then, the early bird catches the worm. Let our settlers pack their belongings and send them into the wilderness.</Italian>
@@ -2340,7 +2340,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THANKSGIVING_ALLOW</Tag>
-        <English>That sounds like a wonderful idea. They shall take the food from storage and can also have some gold from our treasury.</English>
+        <English>That sounds like a wonderful idea. They shall take food from storage and can also have some gold from our treasury.</English>
         <French>Cela semble être une merveilleuse idée. Ils peuvent se servir en nourriture dans leur réserve et recevront de l'Or de notre trésorerie.</French>
         <German>Natürlich werden wir diese hervorragende Idee unterstützen. Sie sollen die Nahrung aus ihren Lagern nehmen und zusätzlich noch etwas Gold aus der Schatzkammer erhalten.</German>
         <Italian>That sounds like a wonderful idea. They shall take the food from their storage and will additionally receive some gold from our treasury.</Italian>
@@ -2356,7 +2356,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_1</Tag>
-        <English>Get me the head of this crowd and hoist some more flags of our king. A fair word between two gentleman and a glass of wine should sort things out. I'll make him an offer he can't refuse..</English>
+        <English>Get me the leader of this crowd and hoist some more of our king's flags. A fair word between two gentleman and a glass of wine should sort things out. I'll make him an offer he can't refuse..</English>
         <French>Amenez moi le meneur de cette foule et hisser davantage de drapeau de notre roi. Un simple dialogue entre deux gentilshommes autour d'un verre de vin devrait clarifier les choses. Je vais lui faire une offre qu'il ne pourra refuser...</French>
         <German>Holt mir den führenden Kopf hierher und hängt noch zwei königliche Banner aus dem Fenster. Ein guter Schluck Wein und ein offenes Gespräch haben schon so manche Bluttat verhindert. Ich werde ihm ein Angebot machen, dass er nicht ablehnen kann.</German>
         <Italian>Get me the head of this crowd and hoist some more flags of our king. A fair word between two gentleman and a glass of wine should sort things out. I'll make him an offer he can't refuse.</Italian>
@@ -2372,7 +2372,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2</Tag>
-        <English>Let them talk! Freedom of speech and conscience for every man, that is our watchword.</English>
+        <English>Let them talk! Freedom of speech and conscience for every man - that is our watchword.</English>
         <French>Laissez le parler ! La liberté d'expression et de conscience appartient à chacun. C'est notre principe de vie.</French>
         <German>Lasst sie gewähren, der wache Geist und das freie Wort waren mir stets teuer. Ich unterdrücke sie nicht, sagt ihnen das. Sie sind hier mindestens so frei, ihre unverbrüchliche Königsliebe zu leben, wie in unserem Mutterland.</German>
         <Italian>Let them proceed! The freedom of speech has always been important to me. I won´t opress them, tell them so. They are free to live ther Loyalty here the same way as in the country of their ancestors.</Italian>
@@ -2396,7 +2396,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_3a</Tag>
-        <English>A hell of a plan, these devils!  Alright, save what you can, that´s all we can do for now ... but this kind of "party" gives me another idea..</English>
+        <English>A hell of a plan, these devils!  All right, save what you can. That´s all we can do for now ... but this kind of "party" gives me another idea..</English>
         <French>Quel plan démoniaque, ces chiens ! Très bien, sauvez ce que vous pouvez, c'est la seule chose que nous pouvons faire maintenant... mais cette drôle de « fête » m'a donné une idée...</French>
         <German>Ein teuflischer Plan, diese Hunde, rettet, was zu retten ist ... allein, der Wortlaut dieses Anschlages kommt mir wirklich bekannt vor.</German>
         <Italian>The hell of a plan, these devils!  Alright, save what you can, that´s all we can do for now ... but this kind of "party" thing really remembers me of something.</Italian>
@@ -2404,7 +2404,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_4</Tag>
-        <English>Gun them down, disposses them, banish them! Better we get rid off this scum now, or else they'll stab us later in the back.</English>
+        <English>Gun them down, dispossess them, banish them! Better we get rid off this scum now, or else they'll stab us later in the back.</English>
         <French>J'ordonne aux soldats de tirer ! Vous devez les déposer et les bannir ! Il vaut mieux se débarasser d'eux maintenant plutôt qu'ils nous trahissent plus tard.</French>
         <German>Kartätscht dieses Pack zusammen, enteignet sie, jagt sie aus der Stadt! Besser wir bereinigen die Sache jetzt schnell und gründlich, als dass sie uns später in den Rücken fallen ...</German>
         <Italian>Gun them down, disposses them, banish them! Better we get rid off this scum now, as that it attacks us from behind later.</Italian>
@@ -2608,7 +2608,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TUTORIAL_PIONEER</Tag>
-        <English>I will make a Pioneer.</English>
+        <English>I will make a pioneer.</English>
         <French>Je vais créer un pionnier.</French>
         <German>Ich möchte einen Pionier errichten.</German>
         <Italian>Creerò un pioniere.</Italian>
@@ -2632,7 +2632,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TUTORIAL_SPEAK_WITH_CHIEF_ACCEPTED</Tag>
-        <English>I will go speak to a Chief right away.</English>
+        <English>I will go speak to a chief right away.</English>
         <French>Je vais de ce pas rencontrer un chef.</French>
         <German>Ich werde sofort mit einem Häuptling sprechen.</German>
         <Italian>Parlerò subito con un capo.</Italian>
@@ -2644,7 +2644,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TUTORIAL_SPEAK_WITH_CHIEF_DENIED</Tag>
-        <English>I don't want to talk to the native chiefs.</English>
+        <English>I don't want to talk to the Native chiefs.</English>
         <French>Je refuse d'aller à la rencontre des chefs indigènes.</French>
         <German>Ich will nicht mit den Eingeborenenhäuptlingen sprechen.</German>
         <Italian>Non voglio andare a parlare con i capi dei nativi.</Italian>
@@ -2688,7 +2688,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WASHED_OUT_2</Tag>
-        <English>Dispatch emergency crews to repair the damage, without heed to cost.</English>
+        <English>Dispatch emergency crews to repair the damage without heed to cost.</English>
         <French>Envoyer des équipes d'urgence réparer les dégâts, quel qu'en soit le coût.</French>
         <German>Baukolonnen sollen möglichst rasch den Schlamm wegschippen, auf dass die Straße wieder befahrbar ist.[NEWLINE]Rüstet die Männer großzügig mit Fleisch, Brot und geistigen Getränken aus, damit sie ihren Auftrag frohen Herzens angehen!</German>
         <Italian>Invia squadre di emergenza per riparare i danni, senza badare ai costi.</Italian>
@@ -2776,7 +2776,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WINE_THEFT_1</Tag>
-        <English>Oh well, let them keep the wine. Nobody was hurt during this prank. Being hard on them would only upset the population.</English>
+        <English>Oh well, let them keep the wine. Nobody was hurt during this prank. Being hard on them would only upset the citizenry.</English>
         <French>Et bien dans ce cas laissons les garder le vin. Personne n'a été blessée. Une punition trop stricte risque d'énerver la population.</French>
         <German>Lasst ihnen den Wein. Wegen eines Streichs einiger Jungendliche hart vorzugehen, würde nur für Unruhe sorgen.</German>
         <Italian>Oh well, let them keep the wine. Nobody was hurt during this prank. Going hard on them would only upset the population.</Italian>
@@ -2848,7 +2848,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RABBLE_2</Tag>
-        <English>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</English>
+        <English>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate. Maybe they'll settle for less?</English>
         <French>We cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</French>
         <German>Wir können doch diesen Wegelagerern nicht unser ganzes Gold geben. Womit bezahlen wir die neuen Waren. Lasst uns verhandeln, vielleicht geben sie sich auch mit weniger zufrieden?!</German>
         <Italian>InterroWe cannot give all our gold to these highwaymen. How are we going to pay for the new goods? Let's negotiate, maybe they will settle for less?</Italian>
@@ -2856,7 +2856,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RABBLE_3</Tag>
-        <English>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</English>
+        <English>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia. They'll show these bandits!</English>
         <French>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</French>
         <German>Pah, wir werden diesem Gesindel keine einzige Goldmünze geben! Wir schicken nach den Bütteln, die werden es diesen Banditen schon zeigen!</German>
         <Italian>Pah, we are not going to give a single gold coin to this rabble! We'll send for the militia, they'll show these bandits!</Italian>
@@ -2904,7 +2904,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRADEFORT2_3</Tag>
-        <English>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</English>
+        <English>Who do they think they are? We're the ruling power here. Let them go where the pepper grows!</English>
         <French>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</French>
         <German>Für was halten die sich? Wir sind hier die herrschende Macht. Sollen sie dahingehen, wo der Pfeffer wächst!</German>
         <Italian>What do they think they are? We are the ruling power here. Let them go where the pepper grows!</Italian>
@@ -2920,7 +2920,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RIVER_FISHING_1</Tag>
-        <English>Aye, an excellent spawning ground. No wonder the fish feel at home here. And soon the local fishermen will be doing the same...</English>
+        <English>Aye, an excellent spawning ground. No wonder the fish feel at home here. Soon the local fishermen will be doing the same...</English>
         <French>Aye, an excellent spawning ground. No wonder the fish feel at home here. And soon the local fishermen will be doing the same...</French>
         <German>Aye, ein hervorragender Laichgrund. Kein Wunder, dass sich die Fische hier wohlfühlen. Und bald werden es auch die örtlichen Fischer...</German>
         <Italian>Aye, an excellent spawning ground. No wonder the fish feel at home here. And soon the local fishermen will be doing the same...</Italian>
@@ -2928,7 +2928,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_SHIP_1</Tag>
-        <English>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</English>
+        <English>Aye, the ship is unsalvageable. These damn shallow waters! Steer the ship close to shore. Maybe we can salvage something from it later.</English>
         <French>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</French>
         <German>Aye, das Schiff ist nicht mehr zu retten. Diese verdammten seichten Gewässer. Dann steuert das Schiff wenigstens in Ufernähe, vielleicht können wir später noch etwas daraus bergen!</German>
         <Italian>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</Italian>
