@@ -882,7 +882,7 @@ public:
 	int getNumTradeGroups() const;
 	// R&R mod, vetiarvind, trade groups - end
 
-	void writeDesyncLog(FILE *f);
+	void writeDesyncLog(FILE *f) const;
 
 protected:
 

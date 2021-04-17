@@ -704,7 +704,7 @@ public:
 
 	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
 	
-	void writeDesyncLog(FILE *f);
+	void writeDesyncLog(FILE *f) const;
 
 protected:
 	int m_iID;

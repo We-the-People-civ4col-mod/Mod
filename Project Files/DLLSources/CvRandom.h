@@ -15,6 +15,7 @@ public:
 
 	bool isSorenRand() const;
 	void setSorenRand();
+	void writeLog(const CvString& szLog) const;
 
 	DllExport void init(unsigned long ulSeed);
 	void uninit();

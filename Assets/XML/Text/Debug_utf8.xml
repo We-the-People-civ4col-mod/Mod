@@ -7,6 +7,6 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE</Tag>
-		<English>Done generating files:[NEWLINE]Desync log for player %d1.txt[NEWLINE]Desync save for player %d2.ColonizationSave[NEWLINE][NEWLINE]The files have been placed in the mod itself.[NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
+		<English>Done generating files:In mod dir:[NEWLINE]    Desync log for player %d1.txt[NEWLINE]    Desync save for player %d2.ColonizationSave[NEWLINE]In documents\my games\colonization\logs:[NEWLINE]    Random Player %d3.log[NEWLINE][NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
 	</TEXT>
 </Civ4GameText>

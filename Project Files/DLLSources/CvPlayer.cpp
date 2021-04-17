@@ -21894,12 +21894,30 @@ void CvPlayer::sortEuropeUnits()
 	std::sort(m_aEuropeUnits.begin(), m_aEuropeUnits.end(), compareUnitValue);
 }
 
-void CvPlayer::writeDesyncLog(FILE *f)
+void CvPlayer::writeDesyncLog(FILE *f) const
 {
-	int iLoop;
-	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	fprintf(f, "Player %d %S\n", getID(), getName());
+
+	fprintf(f, "\tLand: %d\n", getTotalLand());
+	fprintf(f, "\tPopScore: %d\n", getPopScore());
+	fprintf(f, "\tUnits: %d\n", getNumUnits());
+	fprintf(f, "\tNumTradeRoutes: %d\n", getNumTradeRoutes());
+	fprintf(f, "\tPower: %d\n", getPower());
+	fprintf(f, "\tTax Rate: %d\n", getTaxRate());
+	fprintf(f, "\tPrizes\n");
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		fprintf(f, "\tCity %d:\n", iLoop);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		if (kYield.isCargo() && isYieldEuropeTradable(eYield))
+		{
+			fprintf(f, "\t\t%S: %d %d\n", kYield.getDescription(), getYieldBuyPrice(eYield), getYieldSellPrice(eYield));
+		}
+	}
+
+	int iLoop;
+	for (const CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		fprintf(f, "\tCity %d %S\n", iLoop, pLoopCity->getName().c_str());
 		pLoopCity->writeDesyncLog(f);
 	}
 }

@@ -30,6 +30,18 @@ CvRandom::~CvRandom()
 
 bool CvRandom::isSorenRand() const
 {
+	// avoid crashing during init
+	if (!GC.IsGraphicsInitialized() || gDLL->isGameInitializing())
+	{
+		return false;
+	}
+
+	// always log random stuff in network games
+	// an OOS is much easier to track down if this log is available
+	if (GC.getGameINLINE().isNetworkMultiPlayer())
+	{
+		return true;
+	}
 #ifdef WITH_RANDOM_LOGGING
 	return m_bIsSorenRand;
 #else
@@ -42,6 +54,13 @@ void CvRandom::setSorenRand()
 #ifdef WITH_RANDOM_LOGGING
 	m_bIsSorenRand = true;
 #endif
+}
+
+void CvRandom::writeLog(const CvString& szLog) const
+{
+	CvString filename;
+	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
+	gDLL->logMsg(filename, szLog);
 }
 
 
@@ -79,7 +98,7 @@ void CvRandom::reset(unsigned long ulSeed)
 	{
 		CvString szLog;
 		szLog.Format("Reset %llu", getSeed());
-		gDLL->logMsg("random.log", szLog);
+		writeLog(szLog);
 	}
 }
 
@@ -99,11 +118,11 @@ unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
 		}
 	}
 
-	if (isSorenRand())
+	if (pszLog && isSorenRand())
 	{
 		CvString szLog;
 		szLog.Format("%s, %llu, %d", pszLog, getSeed(), usNum);
-		gDLL->logMsg("random.log", szLog);
+		writeLog(szLog);
 	}
 
 	m_ulRandomSeed = ((RANDOM_A * m_ulRandomSeed) + RANDOM_C);
@@ -114,11 +133,11 @@ unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
 
 	unsigned short us = ((unsigned short)((((m_ulRandomSeed >> RANDOM_SHIFT) & MAX_UNSIGNED_SHORT) * ((unsigned long)usNum)) / (MAX_UNSIGNED_SHORT + 1)));
 
-	if (isSorenRand())
+	if (pszLog && isSorenRand())
 	{
 		CvString szLog;
 		szLog.Format("%llu, %d", getSeed(), us);
-		gDLL->logMsg("random.log", szLog);
+		writeLog(szLog);
 	}
 
 	return us;
@@ -226,7 +245,7 @@ void CvRandom::reseed(unsigned long ulNewValue)
 	{
 		CvString szLog;
 		szLog.Format("Reseed %llu", getSeed());
-		gDLL->logMsg("random.log", szLog);
+		writeLog(szLog);
 	}
 }
 
@@ -250,7 +269,7 @@ void CvRandom::read(FDataStreamBase* pStream)
 	{
 		CvString szLog;
 		szLog.Format("Load old %llu", getSeed());
-		gDLL->logMsg("random.log", szLog);
+		writeLog(szLog);
 	}
 }
 
@@ -274,7 +293,7 @@ void CvRandom::read(CvSavegameReader reader)
 	{
 		CvString szLog;
 		szLog.Format("Load new %llu", getSeed());
-		gDLL->logMsg("random.log", szLog);
+		writeLog(szLog);
 	}
 }
 

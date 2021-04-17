@@ -7262,11 +7262,12 @@ void CvGame::writeDesyncLog()
 		calculateSyncChecksum(&LogString);
 		fprintf(f, "%s\n", LogString.c_str());
 
-		for (int i = 0; i < MAX_PLAYERS; ++i)
+		for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 		{
-			if (GET_PLAYER(static_cast<PlayerTypes>(i)).isAlive())
+			const CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+			if (kPlayer.isAlive())
 			{
-				GET_PLAYER(static_cast<PlayerTypes>(i)).writeDesyncLog(f);
+				kPlayer.writeDesyncLog(f);
 			}
 		}
 

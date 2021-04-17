@@ -12132,19 +12132,37 @@ void CvCity::UpdateBuildingAffectedCache()
 }
 // building affected cache - end - Nightinggale
 
-void CvCity::writeDesyncLog(FILE *f)
+void CvCity::writeDesyncLog(FILE *f) const
 {
+	fprintf(f, "\t\tCoordinates: (%d, %d)\n", getX_INLINE(), getY_INLINE());
+	fprintf(f, "\t\tPopulation: %d\n", getPopulation());
+
+	fprintf(f, "\t\tHappiness: %d\n", getCityHappiness());
+	fprintf(f, "\t\tUnhappiness: %d\n", getCityUnHappiness());
+	fprintf(f, "\t\tHealth: %d\n", getCityHealth());
+
 	fprintf(f, "\t\tCulture level: %d\n", getCultureLevel());
 	fprintf(f, "\t\tCulture rate: %d\n", getCultureRate());
 	fprintf(f, "\t\tCulture threshold: %d\n", getCultureThreshold());
 	fprintf(f, "\t\tCulture update timer: %d\n", getCultureUpdateTimer());
 
-	for (int i = 0; i < MAX_PLAYERS; ++i)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 	{
-		int iCulture = this->getCulture(static_cast<PlayerTypes>(i));
+		int iCulture = getCulture(ePlayer);
 		if (iCulture > 0)
 		{
-			fprintf(f, "\t\tCulture player %d: %d\n", i, iCulture);
+			fprintf(f, "\t\tCulture player %d: %d\n", ePlayer, iCulture);
+		}
+	}
+
+	fprintf(f, "\t\tWarehouse capacity: %d\n", getMaxYieldCapacity());
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		int iNum = getYieldStored(eYield);
+		if (iNum != 0)
+		{
+			fprintf(f, "\t\t\t%S: %d\n", GC.getYieldInfo(eYield).getDescription(), iNum);
 		}
 	}
 }
