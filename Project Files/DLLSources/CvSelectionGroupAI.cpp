@@ -1040,9 +1040,17 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		{
 			// R&R mod, vetiarvind, max yield import limit - start
 			//units[i]->unload();
-			unloadToCity(pPlotCity, units[i]);
+			unloadToCity(pPlotCity, units[i], UnloadMode::Force);
 			// R&R mod, vetiarvind, max yield import limit - end
 		}
+	
+		// It may happen that the destination has stopped importing the yield, if so search for
+		// another nearby city that imports the yield. If that fails, force unload the yield
+		// as a last resort if not a single city imports this yield so that we can free up
+		// the storage space
+		// Note that this is very rate since the presence of a port city in any given area
+		// will act as a "sink" for excess yields of any type
+	
 	}
 
 	short aiYieldsLoaded[NUM_YIELD_TYPES];
@@ -1469,8 +1477,7 @@ CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 // Protected Functions...
 
 // R&R mod, vetiarvind, max yield import limit - start
-
-bool CvSelectionGroupAI::getIgnoreDangerStatus() 
+bool CvSelectionGroupAI::getIgnoreDangerStatus() const
 {
 	bool bIgnoreDanger = false;
 	
@@ -1496,7 +1503,7 @@ bool CvSelectionGroupAI::getIgnoreDangerStatus()
 // R&R mod, vetiarvind, max yield import limit - end
 // Private Functions...
 // R&R mod, vetiarvind, max yield import limit - start
-int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded)
+int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded) const
 {
 	if(maxYieldsToLoad <= 0) return 0; // R&R mod, vetiarvind, max yield import limit fix
 	int yieldsToLoad = maxYieldsToLoad;	
@@ -1512,9 +1519,9 @@ int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYi
 	return yieldsToLoad;
 }
 
-void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit)
+void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit, UnloadMode um)
 {
-		if(pCity->getMaxImportAmount(unit->getYield()) > 0)
+		if (um == UnloadMode::NoForce && pCity->getMaxImportAmount(unit->getYield()) > 0)
 		{
 			int totalStored = unit->getYieldStored();
 			int toUnload = estimateYieldsToLoad(pCity, totalStored, unit->getYield(), 0, 0);

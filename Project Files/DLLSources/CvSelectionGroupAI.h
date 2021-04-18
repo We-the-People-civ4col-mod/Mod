@@ -66,6 +66,12 @@ public:
 
 	void AI_resetSavedData();
 
+	enum UnloadMode
+	{
+		NoForce,
+		Force
+	};
+
 protected:
 
 	int m_iMissionAIX;
@@ -82,12 +88,12 @@ protected:
 	int m_iGroupAttackY;
 
 	// R&R mod, vetiarvind, max yield import limit - start	
-	bool getIgnoreDangerStatus(); 	
+	bool getIgnoreDangerStatus() const;
 	// R&R mod, vetiarvind, max yield import limit - end
 private:
 	// R&R mod, vetiarvind, max yield import limit - start
-	int estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded);	
-	void unloadToCity(CvCity* pCity, CvUnit* unit);
+	int estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded) const;
+	void unloadToCity(CvCity* pCity, CvUnit* unit, UnloadMode um = NoForce);
 	// R&R mod, vetiarvind, max yield import limit - end
 
 	void processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo, int>& cityValues, std::vector<CvTradeRoute*>& routes, std::vector<int>& routeValues, std::vector<bool>& yieldsDelivered, std::vector<bool>& yieldsToUnload);
