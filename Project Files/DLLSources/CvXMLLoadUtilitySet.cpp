@@ -2626,6 +2626,11 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	// Nightinggale
 	gDLL->ChangeINIKeyValue("CONFIG", "HidePythonExceptions", "0");
 
+	// disable file caching to eliminate the risk that somebody ends up with cached out of date data
+	// the speed boost from the cache doesn't matter on modern hardware anyway
+	gDLL->ChangeINIKeyValue("CONFIG", "DisableFileCaching", "1");
+	gDLL->ChangeINIKeyValue("CONFIG", "DisableCaching", "1");
+
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(true);
 	/// XML type preloading - end - Nightinggale
