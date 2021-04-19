@@ -253,13 +253,13 @@ public:
 
 	// modded enum read function
 	template <class T>
-	void GetEnum(const char* szType, T *eEnum, const char* szTagName, bool bMandatory = true)
+	void GetEnum(const char* szType, T& eEnum, const char* szTagName, bool bMandatory = true)
 	{
 		CvString szTextVal;
 		this->GetChildXmlValByName(szTextVal, szTagName);
 		if (szTextVal.length() > 0 && strcmp(szTextVal.c_str(), "NONE") != 0)
 		{
-			JITarrayTypes eType = getJITarrayType(*eEnum);
+			JITarrayTypes eType = getJITarrayType(eEnum);
 			int iLength = getArrayLength(eType);
 			for (int i = 0; i < iLength; ++i)
 			{
@@ -267,13 +267,13 @@ public:
 				{
 					// the type match
 					// assign the index
-					*eEnum = static_cast<T>(i);
+					eEnum = static_cast<T>(i);
 					return;
 				}
 			}
 			FAssertMsg(false, CvString::format("%s: Tag %s has to contain something of type %s, but %s was found", szType, szTagName, getArrayName(eType), szTextVal.c_str()).c_str());
 		}
-		*eEnum = static_cast<T>(-1);
+		eEnum = static_cast<T>(-1);
 		FAssertMsg(!bMandatory, CvString::format("%s: Tag %s has to be present and contain something other than NONE", szType, szTagName).c_str());
 	}
 

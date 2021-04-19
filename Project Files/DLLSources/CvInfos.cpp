@@ -3827,7 +3827,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	m_iUnitCombatType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Domain");
 	m_iDomainType = pXML->FindInInfoClass(szTextVal);
-	pXML->GetEnum(getType(), &m_eDefaultProfession, "DefaultProfession", false);
+	pXML->GetEnum(getType(), m_eDefaultProfession, "DefaultProfession", false);
 	pXML->GetChildXmlValByName(szTextVal, "DefaultUnitAI");
 	m_iDefaultUnitAIType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Invisible");
@@ -4495,7 +4495,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "CivicOptionType");
 	m_iCivicOptionType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iDomesticGreatGeneralRateModifier, "iDomesticGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iFreeExperience, "iFreeExperience");
@@ -6349,7 +6349,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	m_iFavoredTerrain = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "CapturedCityUnitClass");
 	m_iCapturedCityUnitClass = pXML->FindInInfoClass(szTextVal);
-	pXML->GetEnum(getType(), &m_eDefaultProfession, "DefaultProfession", false);
+	pXML->GetEnum(getType(), m_eDefaultProfession, "DefaultProfession", false);
 	// set the current xml node to it's next sibling and then
 	pXML->GetChildXmlValByName(&m_bPlayable, "bPlayable");
 	pXML->GetChildXmlValByName(&m_bAIPlayable, "bAIPlayable");
@@ -6364,7 +6364,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bCentralAmericanNative, "bCentralAmericanNative");
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
 	{
@@ -6776,7 +6776,7 @@ bool CvHurryInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iProductionPerPopulation, "iProductionPerPopulation");
 	pXML->GetChildXmlValByName(&m_iGoldPerCross, "iGoldPerCross");
 	pXML->GetChildXmlValByName(&m_iYieldCostEuropePercent, "iYieldCostEuropePercent");
-	pXML->GetEnum(getType(), &m_eProductionYieldConsumed, "ProductionYieldConsumed", false);
+	pXML->GetEnum(getType(), m_eProductionYieldConsumed, "ProductionYieldConsumed", false);
 	pXML->GetChildXmlValByName(&m_iProductionYieldPercent, "iProductionYieldPercent");
 	pXML->GetChildXmlValByName(&m_iFlatGold, "iFlatGold");
 	pXML->GetChildXmlValByName(&m_bStarting, "bStarting");
@@ -11119,7 +11119,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "ShortDescription");
 	setShortDescription(szTextVal);
 
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
 	pXML->GetChildXmlValByName(&m_iLevelExperienceModifier, "iLevelExperienceModifier");
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
@@ -12582,7 +12582,7 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_bRevolution, "bRevolution");
 	pXML->GetChildXmlValByName(&m_bNoGoodies, "bNoGoodies");
 	pXML->GetChildXmlValByName(&m_iGameTurn, "iGameTurn");
@@ -15393,9 +15393,9 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 	m_iFatherCategory = GC.getInfoTypeForString(szTextVal);
 
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
-	pXML->GetEnum(getType(), &m_eTrait, "Trait", false);
+	pXML->GetEnum(getType(), m_eTrait, "Trait", false);
 
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
 	pXML->SetVariableListTagPair(&m_aiFreeUnits, "FreeUnits", GC.getNumUnitClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiPointCost, "FatherPointCosts", GC.getNumFatherPointInfos(), 0);
