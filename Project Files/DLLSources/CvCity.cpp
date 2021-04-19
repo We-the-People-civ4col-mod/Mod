@@ -93,9 +93,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	// R&R, Androrc, Domestic Market
 	if(!isNative())
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 			FAssert(kYield.getBuyPriceHigh() >= kYield.getBuyPriceLow());
 
@@ -118,9 +117,8 @@ void CvCity::init(int iID, PlayerTypes eOwner, int iX, int iY, bool bBumpUnits)
 	// initializing default data
 	if(!isNative())
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 			int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100; // R&R, ray adjusting defaults of Custom House Screen to Gamespeed
 			if (kYield.isCargo())
@@ -430,9 +428,9 @@ void CvCity::kill()
 		setHasFreeBuilding(((BuildingTypes)iI), false);
 	}
 
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		setYieldStored((YieldTypes) i, 0);
+		setYieldStored(eYield, 0);
 	}
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
@@ -2439,9 +2437,8 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 	if (getProduction() >= getProductionNeeded(YIELD_HAMMERS))
 	{
 		bool bYieldBuyable = false;
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if (GC.getYieldInfo(eYield).isCargo())
 			{
 				if (getHurryYieldDeficit(eHurry, eYield) > 0)
@@ -2467,9 +2464,8 @@ bool CvCity::canHurry(HurryTypes eHurry, bool bTestVisible) const
 			return false;
 		}
 
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if (GC.getYieldInfo(eYield).isCargo())
 			{
 				if (getHurryYieldDeficit(eHurry, eYield) > 0)
@@ -2530,9 +2526,8 @@ void CvCity::hurry(HurryTypes eHurry)
 	int iHurryGold = hurryGold(eHurry);
 	int iHurryPopulation = hurryPopulation(eHurry);
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
 		changeYieldRushed(eYield, getHurryYieldDeficit(eHurry, eYield));
 
 		if (GC.getHurryInfo(eHurry).getProductionYieldConsumed() == eYield)
@@ -2609,12 +2604,12 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	changeHealRate(GC.getBuildingInfo(eBuilding).getHealRateChange() * iChange);
 	changeMilitaryProductionModifier(GC.getBuildingInfo(eBuilding).getMilitaryProductionModifier() * iChange);
 	changeWorksWaterCount((GC.getBuildingInfo(eBuilding).isWorksWater()) ? iChange : 0);
-	for (int iI = 0; iI < NUM_YIELD_TYPES; iI++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		changeLandPlotYield(((YieldTypes)iI), (GC.getBuildingInfo(eBuilding).getLandPlotYieldChange(iI) * iChange)); // R&R, ray, Landplot Yields
-		changeSeaPlotYield(((YieldTypes)iI), (GC.getBuildingInfo(eBuilding).getSeaPlotYieldChange(iI) * iChange));
-		changeRiverPlotYield(((YieldTypes)iI), (GC.getBuildingInfo(eBuilding).getRiverPlotYieldChange(iI) * iChange));
-		changeYieldRateModifier(((YieldTypes)iI), (GC.getBuildingInfo(eBuilding).getYieldModifier(iI) * iChange));
+		changeLandPlotYield(eYield, (GC.getBuildingInfo(eBuilding).getLandPlotYieldChange(eYield) * iChange)); // R&R, ray, Landplot Yields
+		changeSeaPlotYield(eYield, (GC.getBuildingInfo(eBuilding).getSeaPlotYieldChange(eYield) * iChange));
+		changeRiverPlotYield(eYield, (GC.getBuildingInfo(eBuilding).getRiverPlotYieldChange(eYield) * iChange));
+		changeYieldRateModifier(eYield, (GC.getBuildingInfo(eBuilding).getYieldModifier(eYield) * iChange));
 	}
 	setYieldRateDirty();
 	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
@@ -2828,9 +2823,8 @@ int CvCity::hurryGold(HurryTypes eHurry) const
 	PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
 	if (eParent != NO_PLAYER)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			iGold += getHurryYieldDeficit(eHurry, eYield) * GET_PLAYER(eParent).getYieldSellPrice(eYield) * GC.getHurryInfo(eHurry).getYieldCostEuropePercent() / 100;
 		}
 	}
@@ -3973,16 +3967,14 @@ void CvCity::updateCultureLevel()
 // R&R, ray, Landplot Yields - START
 int CvCity::getLandPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 	return m_em_iLandPlotYield.get(eIndex);
 }
 
 
 void CvCity::changeLandPlotYield(YieldTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 
 	if (iChange != 0)
 	{
@@ -3995,16 +3987,14 @@ void CvCity::changeLandPlotYield(YieldTypes eIndex, int iChange)
 
 int CvCity::getSeaPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 	return m_em_iSeaPlotYield.get(eIndex);
 }
 
 
 void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 
 	if (iChange != 0)
 	{
@@ -4017,16 +4007,14 @@ void CvCity::changeSeaPlotYield(YieldTypes eIndex, int iChange)
 
 int CvCity::getRiverPlotYield(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 	return m_em_iRiverPlotYield.get(eIndex);
 }
 
 
 void CvCity::changeRiverPlotYield(YieldTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 
 	if (iChange != 0)
 	{
@@ -4270,16 +4258,14 @@ void CvCity::setYieldRateDirty()
 
 int CvCity::getYieldRateModifier(YieldTypes eIndex) const
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 	return m_em_iYieldRateModifier.get(eIndex);
 }
 
 
 void CvCity::changeYieldRateModifier(YieldTypes eIndex, int iChange)
 {
-	FAssertMsg(eIndex >= 0, "eIndex expected to be >= 0");
-	FAssertMsg(eIndex < NUM_YIELD_TYPES, "eIndex expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex));
 
 	if (iChange != 0)
 	{
@@ -4614,15 +4600,13 @@ void CvCity::changeTotalYieldStored(int iChange)
 
 int CvCity::getYieldStored(YieldTypes eYield) const
 {
-	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
-	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eYield));
 	return m_em_iYieldStored.get(eYield);
 }
 
 void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 {
-	FAssertMsg(eYield >= 0, "eYield expected to be >= 0");
-	FAssertMsg(eYield < NUM_YIELD_TYPES	, "eYield expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eYield));
 	FAssert(iValue >= 0 || eYield == YIELD_FOOD);
 
 	int iChange = iValue - getYieldStored(eYield);
@@ -4692,13 +4676,13 @@ void CvCity::changeYieldStored(YieldTypes eYield, int iChange)
 
 int CvCity::getYieldRushed(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 	return m_em_iYieldRushed.get(eYield);
 }
 
 void CvCity::changeYieldRushed(YieldTypes eYield, int iChange)
 {
-	FAssert(eYield >= 0 && eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 	m_em_iYieldRushed.add(eYield, iChange);
 	FAssert(getYieldRushed(eYield) >= 0);
 }
@@ -5015,7 +4999,7 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 
 int CvCity::calculateNetYield(YieldTypes eYield) const
 {
-	FAssert(eYield < NUM_YIELD_TYPES && eYield >= 0);
+	FAssert(validEnumRange(eYield));
 	int aiYields[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields);
 	return aiYields[eYield];
@@ -5023,7 +5007,7 @@ int CvCity::calculateNetYield(YieldTypes eYield) const
 
 int CvCity::calculateActualYieldProduced(YieldTypes eYield) const
 {
-	FAssert(eYield < NUM_YIELD_TYPES && eYield >= 0);
+	FAssert(validEnumRange(eYield));
 	int aiYields[NUM_YIELD_TYPES];
 	int aiYieldsProduced[NUM_YIELD_TYPES];
 	calculateNetYields(aiYields, aiYieldsProduced);
@@ -5032,7 +5016,7 @@ int CvCity::calculateActualYieldProduced(YieldTypes eYield) const
 
 int CvCity::calculateActualYieldConsumed(YieldTypes eYield) const
 {
-	FAssert(eYield < NUM_YIELD_TYPES && eYield >= 0);
+	FAssert(validEnumRange(eYield));
 	int aiYields[NUM_YIELD_TYPES];
 	int aiYieldsProduced[NUM_YIELD_TYPES];
 	int aiYieldsConsumed[NUM_YIELD_TYPES];
@@ -6860,7 +6844,7 @@ void CvCity::doYields()
 			YieldTypes eYield = kYieldArray.get(i);
 			if (eYield != NO_YIELD)
 			{
-				FAssert(eYield < aYields.length());
+				FAssert(validEnumRange(eYield));
 				int iAmount = aYields.get(eYield);
 				if (iAmount > 0 && (getYieldStored(eYield)+aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
 				{
@@ -6897,9 +6881,8 @@ void CvCity::doYields()
 	// R&R, ray, adjustment for less Custom House messages
 	int iCustomHouseProfit = 0;
 	
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
 		switch (eYield)
 		{
 		case YIELD_FOOD:
@@ -7081,7 +7064,7 @@ void CvCity::doYields()
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
 				}
 				//VET NewCapacity -- ray fix for messages - START
-				else if (iYield == 5 && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
+				else if (eYield == YIELD_SHEEP && GC.getNEW_CAPACITY() && (iMaxCapacity - iTotalYields) > 0 && (iMaxCapacity - iTotalYields) < (iMaxCapacity / 10)) //only do this message once, thus iYield 5
 				{
 					CvWString szBuffer = gDLL->getText("TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY", getNameKey());
 					gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
@@ -10805,8 +10788,7 @@ void CvCity::setImportsMaintain(YieldTypes eYield, bool bSetting)
 // used by setImportsMaintain() because that one changes something
 void CvCity::checkImportsMaintain(YieldTypes eYield, bool bUpdateScreen)
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 
 	if (!m_em_bTradeImportsMaintain.get(eYield))
 	{
@@ -11812,8 +11794,7 @@ void CvCity::doExtraCityDefenseAttacks()
 //Androrc Domestic Market
 int CvCity::getYieldBuyPrice(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 	return m_em_iYieldBuyPrice.get(eYield);
 }
 
@@ -11821,8 +11802,7 @@ int CvCity::getYieldBuyPrice(YieldTypes eYield) const
 // No messages, because too many messages get annoying
 void CvCity::setYieldBuyPrice(YieldTypes eYield, int iPrice)
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 
 	iPrice = std::max(iPrice, 1);
 	if (iPrice != getYieldBuyPrice(eYield))
@@ -11890,8 +11870,7 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 
 int CvCity::getYieldDemand(YieldTypes eYield) const
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 
 	if (eYield >= NUM_CARGO_YIELD_TYPES)
 	{
@@ -11946,8 +11925,7 @@ void CvCity::doPrices()
 // R&R, ray, finishing Custom House Screen
 void CvCity::setCustomHouseSellThreshold(YieldTypes eYield, int iCustomHouseSellThreshold)
 {
-	FAssert(eYield >= 0);
-	FAssert(eYield < NUM_YIELD_TYPES);
+	FAssert(validEnumRange(eYield));
 
 	if (iCustomHouseSellThreshold != getCustomHouseSellThreshold(eYield))
 	{

@@ -2706,6 +2706,9 @@ enum JITarrayTypes
 	JIT_ARRAY_UNSIGNED_INT,
 	JIT_ARRAY_FLOAT,
 
+	JIT_ARRAY_PLAYER,
+	JIT_ARRAY_TEAM,
+
 	// last a value, which solve purpose is to BOOST_STATIC_ASSERT if index overflows
 	MAX_JIT_ARRAY_VALUE,
 
@@ -2731,6 +2734,17 @@ BOOST_STATIC_ASSERT(MAX_JIT_ARRAY_VALUE <= 0xFF);
 	The linker error will say in which function the offending call occurs.
 	A compiler error would also provide a line number, but the compiler
 	can't tell if a global function has any call locations. */
+
+
+#define UNFORBID_COMPARISON_OPERATORS(Type1, Type2) \
+	static inline bool operator==(Type1 a, Type2 b) {return (int)a == (int)b;} \
+	static inline bool operator!=(Type1 a, Type2 b) {return (int)a != (int)b;} \
+	static inline bool operator> (Type1 a, Type2 b) {return (int)a >  (int)b;} \
+	static inline bool operator< (Type1 a, Type2 b) {return (int)a <  (int)b;} \
+	static inline bool operator>=(Type1 a, Type2 b) {return (int)a >= (int)b;} \
+	static inline bool operator<=(Type1 a, Type2 b) {return (int)a <= (int)b;} \
+
+
 
 #define SET_ENUM_OPERATORS(EnumName)                  \
 /* prefix */                                          \
@@ -2946,6 +2960,11 @@ SET_ENUM_OPERATORS_AND_FORBID(WorldBuilderPopupTypes);
 SET_ENUM_OPERATORS(WorldSizeTypes);
 SET_ENUM_OPERATORS(YieldTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ZoomLevelTypes);
+
+// disable the check for a specific enum type in a single file
+#define DEFINE_ENUM_INT_COMPARISON(EnumName)       \
+	UNFORBID_COMPARISON_OPERATORS(EnumName, int)   \
+	UNFORBID_COMPARISON_OPERATORS(int, EnumName)
 
 template<class T>
 static bool validEnumRange(T eValue)

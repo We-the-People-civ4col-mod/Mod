@@ -3219,11 +3219,10 @@ int CvUnitInfo::getYieldChange(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiYieldChange ? m_aiYieldChange[i] : -1;
 }
-int CvUnitInfo::getYieldCost(int i) const
+int CvUnitInfo::getYieldCost(YieldTypes eYield) const
 {
-	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_aiYieldCost ? m_aiYieldCost[i] : -1;
+	FAssert(validEnumRange(eYield));
+	return m_aiYieldCost ? m_aiYieldCost[eYield] : -1;
 }
 int CvUnitInfo::getUnitGroupRequired(int i, int iProfession) const
 {
@@ -4037,6 +4036,11 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 int CvUnitInfo::EXE_getDefaultProfession() const
 {
 	return getDefaultProfession();
+}
+
+int CvUnitInfo::PYgetYieldCost(int i) const
+{
+	return getYieldCost(static_cast<YieldTypes>(i));
 }
 
 
@@ -6708,7 +6712,7 @@ CvHurryInfo::CvHurryInfo() :
 	m_iProductionPerPopulation(0),
 	m_iGoldPerCross(0),
 	m_iYieldCostEuropePercent(0),
-	m_iProductionYieldConsumed(NO_YIELD),
+	m_eProductionYieldConsumed(NO_YIELD),
 	m_iProductionYieldPercent(0),
 	m_iFlatGold(0),
 	m_bStarting(false),
@@ -6741,9 +6745,9 @@ int CvHurryInfo::getYieldCostEuropePercent() const
 {
 	return m_iYieldCostEuropePercent;
 }
-int CvHurryInfo::getProductionYieldConsumed() const
+YieldTypes CvHurryInfo::getProductionYieldConsumed() const
 {
-	return m_iProductionYieldConsumed;
+	return m_eProductionYieldConsumed;
 }
 int CvHurryInfo::getProductionYieldPercent() const
 {
@@ -6772,13 +6776,17 @@ bool CvHurryInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iProductionPerPopulation, "iProductionPerPopulation");
 	pXML->GetChildXmlValByName(&m_iGoldPerCross, "iGoldPerCross");
 	pXML->GetChildXmlValByName(&m_iYieldCostEuropePercent, "iYieldCostEuropePercent");
-	pXML->GetChildXmlValByName(szTextVal, "ProductionYieldConsumed");
-	m_iProductionYieldConsumed = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), &m_eProductionYieldConsumed, "ProductionYieldConsumed", false);
 	pXML->GetChildXmlValByName(&m_iProductionYieldPercent, "iProductionYieldPercent");
 	pXML->GetChildXmlValByName(&m_iFlatGold, "iFlatGold");
 	pXML->GetChildXmlValByName(&m_bStarting, "bStarting");
 	pXML->GetChildXmlValByName(&m_bCity, "bCity");
 	return true;
+}
+
+int CvHurryInfo::PYgetProductionYieldConsumed() const
+{
+	return getProductionYieldConsumed();
 }
 //======================================================================================================
 //					CvHandicapInfo

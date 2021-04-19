@@ -315,20 +315,16 @@ void CvArea::setTargetCity(PlayerTypes eIndex, CvCity* pNewValue)
 
 int CvArea::getYieldRateModifier(PlayerTypes eIndex1, YieldTypes eIndex2) const
 {
-	FAssertMsg(eIndex1 >= 0, "eIndex1 is expected to be >= 0");
-	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be < MAX_PLAYERS");
-	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be >= 0");
-	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex1));
+	FAssert(validEnumRange(eIndex2));
 	return m_em2_iYieldRateModifier.get(eIndex1, eIndex2);
 }
 
 
 void CvArea::changeYieldRateModifier(PlayerTypes eIndex1, YieldTypes eIndex2, int iChange)
 {
-	FAssertMsg(eIndex1 >= 0, "eIndex1 is expected to be >= 0");
-	FAssertMsg(eIndex1 < MAX_PLAYERS, "eIndex1 is expected to be < MAX_PLAYERS");
-	FAssertMsg(eIndex2 >= 0, "eIndex2 is expected to be >= 0");
-	FAssertMsg(eIndex2 < NUM_YIELD_TYPES, "eIndex2 is expected to be < NUM_YIELD_TYPES");
+	FAssert(validEnumRange(eIndex1));
+	FAssert(validEnumRange(eIndex2));
 
 	if (iChange != 0)
 	{

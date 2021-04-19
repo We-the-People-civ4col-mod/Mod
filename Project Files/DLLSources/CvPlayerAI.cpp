@@ -11708,9 +11708,9 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 		{
 			//Although AI_unitValue compares well within units, the value is somewhat independent of cost
 			int iUnitValue = 0;
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				iUnitValue += GC.getUnitInfo(eUnit).getYieldCost(iYield);
+				iUnitValue += GC.getUnitInfo(eUnit).getYieldCost(eYield);
 			}
 			if (iUnitValue > 0)
 			{
@@ -11732,9 +11732,9 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 		if (NULL != pUnit)
 		{
 			int iUnitValue = 0;
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				iUnitValue += pUnit->getUnitInfo().getYieldCost(iYield);
+				iUnitValue += pUnit->getUnitInfo().getYieldCost(eYield);
 			}
 			if (iUnitValue > 0)
 			{

@@ -5104,10 +5104,10 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 		if (eUnit != NO_UNIT)
 		{
 			CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				int iAmount = kUnit.getYieldCost(i);
-				aiLevels[i] = std::max(iAmount, aiLevels[i]);
+				int iAmount = kUnit.getYieldCost(eYield);
+				aiLevels[eYield] = std::max(iAmount, aiLevels[eYield]);
 			}
 		}
 	}

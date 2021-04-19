@@ -26,7 +26,7 @@
 
 CvTeam::CvTeam()
 {
-	reset((TeamTypes)0, true);
+	reset(FIRST_TEAM, true);
 }
 
 

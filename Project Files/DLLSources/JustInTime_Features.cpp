@@ -84,6 +84,8 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_WORLD_SIZE:         return NUM_WORLDSIZE_TYPES;
 	case JIT_ARRAY_YIELD:              return NUM_YIELD_TYPES;
 	case JIT_ARRAY_CARGO_YIELD:        return NUM_CARGO_YIELD_TYPES;
+	case JIT_ARRAY_PLAYER:             return NUM_PLAYER_TYPES;
+	case JIT_ARRAY_TEAM:               return NUM_TEAM_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;

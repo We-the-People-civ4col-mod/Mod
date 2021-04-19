@@ -5368,14 +5368,13 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 
 		if (!bCivilopediaText)
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				if (GC.getUnitInfo(eUnit).getYieldCost(iYield) > 0)
+				if (GC.getUnitInfo(eUnit).getYieldCost(eYield) > 0)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo(eYield).isCargo())
 					{
-						int iCost = (ePlayer == NO_PLAYER ? GC.getUnitInfo(eUnit).getYieldCost(iYield) : GET_PLAYER(ePlayer).getYieldProductionNeeded(eUnit, eYield));
+						int iCost = (ePlayer == NO_PLAYER ? GC.getUnitInfo(eUnit).getYieldCost(eYield) : GET_PLAYER(ePlayer).getYieldProductionNeeded(eUnit, eYield));
 						if (NULL == pCity || pCity->getYieldStored(eYield) + pCity->getYieldRushed(eYield) < iCost)
 						{
 							szBuffer.append(NEWLINE);
@@ -5416,11 +5415,10 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 				szBuffer.append(szTempBuffer);
 			}
 
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				if (GC.getUnitInfo(eUnit).getYieldCost(iYield) > 0)
+				if (GC.getUnitInfo(eUnit).getYieldCost(eYield) > 0)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo(eYield).isCargo())
 					{
 						int iCost = GET_PLAYER(pCity->getOwnerINLINE()).getYieldProductionNeeded(eUnit, eYield);

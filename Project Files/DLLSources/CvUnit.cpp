@@ -1878,9 +1878,9 @@ bool CvUnit::isActionRecommended(int iAction)
 
 					if (eFinalImprovement != NO_IMPROVEMENT)
 					{
-						for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+						for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 						{
-							if (GC.getImprovementInfo(eFinalImprovement).getRouteYieldChanges(eRoute, (YieldTypes)i) > 0)
+							if (GC.getImprovementInfo(eFinalImprovement).getRouteYieldChanges(eRoute, eYield) > 0)
 							{
 								return true;
 							}
@@ -2555,7 +2555,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		case COMMAND_UNLOAD:
 			if (iData2 >= 0)
 			{
-				FAssert(iData1 == getYield());
+				FAssert((YieldTypes)iData1 == getYield());
 				FAssert(getYield() != NO_YIELD);
 				unloadStoredAmount(iData2);
 			}
@@ -3644,9 +3644,9 @@ void CvUnit::gift(bool bTestTransport)
 	pGiftUnit->convert(this, true);
 
 	int iUnitValue = 0;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(iYield);
+		iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(eYield);
 	}
 	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, iUnitValue / 5);
 
@@ -3858,9 +3858,9 @@ int CvUnit::getLoadYieldAmount(YieldTypes eYield) const
 
 bool CvUnit::canLoadYields(const CvPlot* pPlot, bool bTrade) const
 {
-	for (int iYield = 0; iYield <  NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		if(canLoadYield(pPlot, (YieldTypes) iYield, bTrade))
+		if(canLoadYield(pPlot, eYield, bTrade))
 		{
 			return true;
 		}
@@ -3970,9 +3970,9 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 			//if (GC.getNEW_CAPACITY() && !isHuman())
 			{
 				int iCargoYields = 0;
-				for (int iYield = 3; iYield < NUM_YIELD_TYPES; iYield++)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+				for (YieldTypes eLoopYield = YIELD_HEMP; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
 				{
-					if ((pCity->getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
+					if ((pCity->getYieldStored(eLoopYield) > 0) && (GC.getYieldInfo(eLoopYield).isCargo()))
 						{iCargoYields++;}
 				}
 				
@@ -4043,9 +4043,8 @@ bool CvUnit::canTradeYield(const CvPlot* pPlot) const
 	//check if the city has any cargo that we can fit
 	if(!bYieldFound)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if ((pCity->getYieldStored(eYield) > 0) && (getLoadYieldAmount(eYield) > 0))
 			{
 				bYieldFound = true;
@@ -6678,9 +6677,9 @@ bool CvUnit::doFound(bool bBuyLand)
 
 			//WTP, ray, Settler Professsion - START
 			//consuming YIELDS when Founding a City
-			for (int i=0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				pCity->setYieldStored((YieldTypes) i, 0);
+				pCity->setYieldStored(eYield, 0);
 			}
 			//WTP, ray, Settler Professsion - END
 		}
@@ -8510,9 +8509,8 @@ int CvUnit::getPower() const
 
 		if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		{
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) i;
 				iPower += GC.getYieldInfo(eYield).getPowerValue() * GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), eYield);
 			}
 		}
@@ -8535,9 +8533,8 @@ int CvUnit::getAsset() const
 		iAsset += GC.getProfessionInfo(getProfession()).getAssetValue();
 		if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		{
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) i;
 				iAsset += GC.getYieldInfo(eYield).getAssetValue() * GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), eYield);
 			}
 		}
@@ -11020,9 +11017,8 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 		{
 			if (kOwner.hasContentsYieldEquipmentAmountSecure(getProfession()) || kOwner.hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				for (int i=0; i < NUM_YIELD_TYPES; ++i)
+				for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 				{
-					YieldTypes eYieldType = (YieldTypes) i;
 					int iYieldCarried  = kOwner.getYieldEquipmentAmountSecure(getProfession(), eYieldType); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
 					if (iYieldRequired > 0)
@@ -11079,9 +11075,8 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 
 		if (kOwner.hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		{
-			for (int i=0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) i;
 				if (!kOwner.isYieldEuropeTradable(eYield))
 				{
 					if (kOwner.getYieldEquipmentAmount(eProfession, eYield) > kOwner.getYieldEquipmentAmount(getProfession(), eYield))
@@ -11216,9 +11211,8 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) i;
 					int iYieldAmount = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(eProfession, eYield);
 					iPower += iChange * GC.getYieldInfo(eYield).getPowerValue() * iYieldAmount;
 					kOwner.changeAssets(iChange * GC.getYieldInfo(eYield).getAssetValue() * iYieldAmount);
@@ -11250,9 +11244,8 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 		{
 			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmountSecure(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				for (int i = 0; i < NUM_YIELD_TYPES; i++)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) i;
 					pCity->changeYieldStored(eYield, -iChange * kOwner.getYieldEquipmentAmount(eProfession, eYield));
 				}
 			}
@@ -11337,9 +11330,8 @@ int CvUnit::getEuropeProfessionChangeCost(ProfessionTypes eProfession) const
 	CvPlayer& kEurope = GET_PLAYER(kOwner.getParent());
 
 	int iGoldCost = 0;
-	for (int i=0; i < NUM_YIELD_TYPES; ++i)
+	for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 	{
-		YieldTypes eYieldType = (YieldTypes) i;
 		int iMissing = getProfessionChangeYieldRequired(eProfession, eYieldType);
 		if (iMissing > 0)
 		{
@@ -13187,9 +13179,8 @@ void CvUnit::updateYieldCache()
 YieldTypes CvUnit::getYieldUncached() const
 // unit yield cache - end - Nightinggale
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
 		if(getUnitClassType() == GC.getYieldInfo(eYield).getUnitClass())
 		{
 			return eYield;
@@ -13772,9 +13763,8 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 			if (eCurrentProfession == NO_PROFESSION || GC.getProfessionInfo(eProfession).getCombatChange() > GC.getProfessionInfo(eCurrentProfession).getCombatChange() || (GC.getProfessionInfo(eProfession).getCombatChange() >= GC.getProfessionInfo(eCurrentProfession).getCombatChange() && GC.getProfessionInfo(eProfession).getMovesChange() > GC.getProfessionInfo(eCurrentProfession).getMovesChange()) )
 			{
 				bool bCanHaveProfession = false;
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					//ray Korrektur negativer Warenbestand
 					//int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYield);
 					int iYieldRequired = GC.getProfessionInfo(eProfession).getYieldEquipmentAmount(eYield);
@@ -13788,7 +13778,7 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 						
 						//ray Korrektur negativer Warenbestand
 						//if (iYieldRequired > 0 && aYields[iYield] == 0)
-						if (iYieldRequired > aYields[iYield])
+						if (iYieldRequired > aYields[eYield])
 						{
 							bCanHaveProfession = false;
 							break;
@@ -13817,10 +13807,9 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 	CvCity* pCity = plot()->getPlotCity();
 	if (pCity != NULL && pCity->isNative())
 	{
-		for (int zYield = 0; zYield < NUM_YIELD_TYPES; ++zYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes tYield = (YieldTypes) zYield;
-			pCity->changeYieldStored(tYield, aYields[zYield]);
+			pCity->changeYieldStored(eYield, aYields[eYield]);
 		}
 	}
 	setProfession(eProfession, true);
@@ -13849,17 +13838,16 @@ bool CvUnit::raidWeapons(CvCity* pCity)
 	}
 
 	std::vector<int> aYields(NUM_YIELD_TYPES);
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		// R&R, ray, code improvement - START
-		YieldTypes cYield = (YieldTypes) iYield;
-		if(cYield  == YIELD_HORSES || cYield  == YIELD_MUSKETS)
+		if(eYield  == YIELD_HORSES || eYield  == YIELD_MUSKETS)
 		{
-			aYields[iYield] = pCity->getYieldStored(cYield);
+			aYields[eYield] = pCity->getYieldStored(eYield);
 		}
 		else
 		{
-			aYields[iYield] = 0;
+			aYields[eYield] = 0;
 		}
 		// R&R, ray, code improvement - END
 	}
@@ -13869,14 +13857,13 @@ bool CvUnit::raidWeapons(CvCity* pCity)
 		return false;
 	}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		if (aYields[iYield] > 0)
+		if (aYields[eYield] > 0)
 		{
-			pCity->changeYieldStored(eYield, -aYields[iYield]);
+			pCity->changeYieldStored(eYield, -aYields[eYield]);
 
-			CvWString szString = gDLL->getText("TXT_KEY_GOODS_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), aYields[iYield], GC.getYieldInfo(eYield).getTextKeyWide());
+			CvWString szString = gDLL->getText("TXT_KEY_GOODS_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), aYields[eYield], GC.getYieldInfo(eYield).getTextKeyWide());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE());
 			gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pCity->getX_INLINE(), pCity->getY_INLINE());
 		}
@@ -13907,11 +13894,9 @@ bool CvUnit::raidWeapons(CvUnit* pUnit)
 	CvPlayer& kOwner = GET_PLAYER(pUnit->getOwnerINLINE());
 	if (kOwner.hasContentsYieldEquipmentAmountSecure(pUnit->getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	{
-
-
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			aYields[iYield] += kOwner.getYieldEquipmentAmount(pUnit->getProfession(), (YieldTypes) iYield);
+			aYields[eYield] += kOwner.getYieldEquipmentAmount(pUnit->getProfession(), eYield);
 		}
 	}
 
@@ -13920,12 +13905,11 @@ bool CvUnit::raidWeapons(CvUnit* pUnit)
 		return false;
 	}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		if (aYields[iYield] > 0)
+		if (aYields[eYield] > 0)
 		{
-			CvWString szString = gDLL->getText("TXT_KEY_WEAPONS_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pUnit->getNameOrProfessionKey(), aYields[iYield], GC.getYieldInfo(eYield).getTextKeyWide());
+			CvWString szString = gDLL->getText("TXT_KEY_WEAPONS_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pUnit->getNameOrProfessionKey(), aYields[eYield], GC.getYieldInfo(eYield).getTextKeyWide());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAZE", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pUnit->getX_INLINE(), pUnit->getY_INLINE(), true, true);
 			gDLL->getInterfaceIFace()->addMessage(pUnit->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAZE", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pUnit->getX_INLINE(), pUnit->getY_INLINE(), true, true);
 		}
@@ -14397,12 +14381,13 @@ bool CvUnit::raidGoods(CvCity* pCity)
 	}
 
 	std::vector<YieldTypes> aYields;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		if (pCity->getYieldStored(eYield) > 0 && GC.getYieldInfo(eYield).isCargo())
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			aYields.push_back(eYield);
+			if (pCity->getYieldStored(eYield) > 0 && GC.getYieldInfo(eYield).isCargo())
+			{
+				aYields.push_back(eYield);
+			}
 		}
 	}
 
@@ -14450,11 +14435,11 @@ bool CvUnit::isFullToBrim() const
 		std::vector<int> aiYieldsLoaded;
 		int iNumUnitYield = kUnit.getNumYieldsGatherable();
 
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			if (kUnit.canGatherYield(iYield))
+			if (kUnit.canGatherYield(eYield))
 			{
-				aiYieldsLoaded.push_back(iYield);
+				aiYieldsLoaded.push_back(eYield);
 			}
 		}
 
@@ -14762,13 +14747,12 @@ bool CvUnit::gatherResource()
 
 		if (!bWhalerFull)
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				if (eBonusYieldChanges[iYield] > 0)
+				if (eBonusYieldChanges[eYield] > 0)
 				{
-					YieldTypes eYield = (YieldTypes)iYield;
 					UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getYieldInfo(eYield).getUnitClass());
-					CvUnit* eGatheredUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), NO_UNITAI, NO_DIRECTION, eBonusYieldChanges[iYield]);
+					CvUnit* eGatheredUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), NO_UNITAI, NO_DIRECTION, eBonusYieldChanges[eYield]);
 
 					if (eGatheredUnit != NULL)
 					{

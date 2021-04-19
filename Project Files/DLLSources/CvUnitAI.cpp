@@ -1084,9 +1084,9 @@ int CvUnitAI::AI_sacrificeValue(const CvPlot* pPlot) const
 
 	iValue *= 100 + withdrawalProbability();
 	int iCostValue = 0;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		iCostValue += m_pUnitInfo->getYieldCost(iYield);
+		iCostValue += m_pUnitInfo->getYieldCost(eYield);
 	}
 	iDenominator = std::max(1, (1 + iCostValue));
 	iCostValue += iDenominator - 1;  // round up

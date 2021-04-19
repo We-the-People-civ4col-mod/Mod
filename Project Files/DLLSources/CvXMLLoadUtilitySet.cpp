@@ -16,6 +16,12 @@
 
 #include "CvSavegame.h"
 
+// ignore type check for template functions
+// no need to be strict in this file
+DEFINE_ENUM_INT_COMPARISON(YieldTypes)
+
+
+
 /// xml verification
 #ifdef FASSERT_ENABLE
 

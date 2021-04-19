@@ -5698,9 +5698,9 @@ bool CvPlayer::canTrain(UnitTypes eUnit, bool bContinue, bool bTestVisible, bool
 	if (!bIgnoreCost)
 	{
 		bool bCanBuild = false;
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			if (GC.getUnitInfo(eUnit).getYieldCost(iYield) > 0)
+			if (GC.getUnitInfo(eUnit).getYieldCost(eYield) > 0)
 			{
 				bCanBuild = true;
 				break;

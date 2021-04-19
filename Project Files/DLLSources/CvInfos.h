@@ -797,7 +797,7 @@ public:
 	//Androrc End
 	int getBonusYieldChange(int i) const;
 	int getYieldChange(int i) const;
-	int getYieldCost(int i) const;
+	int getYieldCost(YieldTypes eYield) const;
 	DllExport int getUnitGroupRequired(int i, int iProfession) const;
 
 	bool getUpgradeUnitClass(int i) const;
@@ -840,6 +840,7 @@ public:
 	// EXE/python access functions
 	DllExport int EXE_getDefaultProfession() const;
 
+	int PYgetYieldCost(int i) const;
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
@@ -1788,20 +1789,22 @@ class CvHurryInfo :
 		int getProductionPerPopulation() const;
 		int getGoldPerCross() const;
 		int getYieldCostEuropePercent() const;
-		int getProductionYieldConsumed() const;
+		YieldTypes getProductionYieldConsumed() const;
 		int getProductionYieldPercent() const;
 		int getFlatGold() const;
 		bool isStarting() const;
 		bool isCity() const;
 
 		bool read(CvXMLLoadUtility* pXML);
+
+		int PYgetProductionYieldConsumed() const;
 	//---------------------------------------PUBLIC MEMBER VARIABLES---------------------------------
 	protected:
 		int m_iGoldPerProduction;
 		int m_iProductionPerPopulation;
 		int m_iGoldPerCross;
 		int m_iYieldCostEuropePercent;
-		int m_iProductionYieldConsumed;
+		YieldTypes m_eProductionYieldConsumed;
 		int m_iProductionYieldPercent;
 		int m_iFlatGold;
 		bool m_bStarting;

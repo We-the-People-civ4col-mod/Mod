@@ -9,6 +9,10 @@
 #include "CvInfoWater.h"
 #include "FProfiler.h"
 
+// ignore type check for template functions
+// no need to be strict in this file
+DEFINE_ENUM_INT_COMPARISON(YieldTypes)
+
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   InitStringList(CvString **ppszList, int iListLen, CvString szString = "")

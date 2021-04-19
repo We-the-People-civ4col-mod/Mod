@@ -169,6 +169,11 @@ static inline JITarrayTypes getJITarrayType(MemoryTypes var)
 	return JIT_ARRAY_MEMORY;
 }
 
+static inline JITarrayTypes getJITarrayType(PlayerTypes var)
+{
+	return JIT_ARRAY_PLAYER;
+}
+
 static inline JITarrayTypes getJITarrayType(PlayerColorTypes var)
 {
 	return JIT_ARRAY_PLAYER_COLOR;
@@ -202,6 +207,11 @@ static inline JITarrayTypes getJITarrayType(SeaLevelTypes var)
 static inline JITarrayTypes getJITarrayType(TerrainTypes var)
 {
 	return JIT_ARRAY_TERRAIN;
+}
+
+static inline JITarrayTypes getJITarrayType(TeamTypes var)
+{
+	return JIT_ARRAY_TEAM;
 }
 
 static inline JITarrayTypes getJITarrayType(TraitTypes var)
