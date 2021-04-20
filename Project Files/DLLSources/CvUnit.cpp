@@ -11015,7 +11015,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 		//make sure all equipment is available
 		if (!pCity->AI_isWorkforceHack())
 		{
-			if (kOwner.hasContentsYieldEquipmentAmountSecure(getProfession()) || kOwner.hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+			if ((kOwner.hasContentsYieldEquipmentAmountSecure(getProfession()) || kOwner.hasContentsYieldEquipmentAmount(eProfession)) && !gDLL->GetWorldBuilderMode()) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
 				for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 				{
@@ -11182,7 +11182,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 		if (isOnMap())
 		{
 			//TAC Whaling, ray
-			if (!getUnitInfo().isGatherBoat())
+			if (!getUnitInfo().isGatherBoat() && !gDLL->GetWorldBuilderMode())
 			{
 				return false;
 			}
@@ -11240,7 +11240,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 	if (pCity != NULL && pCity->getOwnerINLINE() == getOwnerINLINE())
 	{
-		if (iChange != 0)
+		if (iChange != 0 && !gDLL->GetWorldBuilderMode())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmountSecure(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
