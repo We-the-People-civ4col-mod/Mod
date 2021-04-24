@@ -1677,13 +1677,22 @@
             <iBombardDefense>0</iBombardDefense>
             <iAsset>100</iAsset>
             <iPower>0</iPower>
-            <iYieldStorage>0</iYieldStorage>
+            <iYieldStorage>300</iYieldStorage>
             <iStorageLossSellPercentage>0</iStorageLossSellPercentage>
             <fVisibilityPriority>1.0</fVisibilityPriority>
             <LandPlotYieldChanges/>
             <SeaPlotYieldChanges/>
             <RiverPlotYieldChanges/>
-            <YieldChanges/>
+            <YieldChanges>
+                <YieldChange>
+                    <YieldType>YIELD_CULTURE</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HAPPINESS</YieldType>
+                    <iYieldChange>5</iYieldChange>
+                </YieldChange>
+            </YieldChanges>
             <YieldModifiers/>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
