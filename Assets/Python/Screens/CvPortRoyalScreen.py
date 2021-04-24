@@ -1386,7 +1386,7 @@ class CvPortRoyalScreen:
 				screen.setSoundId(self.playSound("AS2D_SS_TUNDRALOOP"))
 			else:
 				unitsVolume = 0.75
-				screen.setSoundId(self.playSound("AS2D_SS_EUROPELOOP"))
+				screen.setSoundId(self.playSound("AS2D_SS_PORTROYALELOOP"))
 
 			CyAudioGame().Set2DSoundVolume(self.iSoundID, unitsVolume)
 

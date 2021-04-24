@@ -911,6 +911,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	std::vector<bool> yieldsToUnload(NUM_YIELD_TYPES, false);
 	std::vector<int> yieldsOnBoard(NUM_YIELD_TYPES, false);
 
+	// R&R mod, vetiarvind, max yield import limit - start
+	const bool bIgnoreDanger = getIgnoreDangerStatus();
+	// R&R mod, vetiarvind, max yield import limit - end
+
 	// Erik: We need to determine if we're dealing with a coastal transport
 	bool bCoastalTransport = false;
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
@@ -971,13 +975,15 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			if ((pSourceCity != NULL) && ((domainType != DOMAIN_SEA) || (pSourceWaterArea != NULL)))
 			{
 				int iSourceArea = (domainType == DOMAIN_SEA) ? pSourceWaterArea->getID() : pSourceCity->getArea();
-				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()))
+				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) || 
+					domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 				{
 					if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 					{
 						processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 					}
 				}
+				// TODO: Need to path find if the area check fails like below
 			}
 		}
 	}
@@ -989,20 +995,34 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			CvCity* pSourceCity = ::getCity(pRoute->getSourceCity());
 			if (pSourceCity != NULL)
 			{
+				const DomainTypes domainType = getDomainType();
+
 				CvArea* pSourceWaterArea = pSourceCity->waterArea();
 				if (getDomainType() != DOMAIN_SEA || pSourceWaterArea != NULL) //land or good water..this if block is basically the same code as the AI_full_automate case
 				{
 					int iSourceArea = (getDomainType() == DOMAIN_SEA) ? pSourceWaterArea->getID() : pSourceCity->getArea();
-					if (getDomainType() == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()))
+					if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) ||
+						domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 					{
-						if ((getDomainType() == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
+						if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 						{
 							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 						}
 					}
 					else
 					{
-						FAssertMsg(false, "Unexpected : Unit can't run trade route it's assigned to");
+						// Due to the introduction of the large river feature, the area check may not be sufficient. This is the case
+						// if the source city is in a different area, connected by river fords \ ferry stations
+						const bool res = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true);
+
+						if (res)
+						{
+							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
+						}
+						else
+						{
+							FAssertMsg(false, "Unexpected : Unit can't run trade route it's assigned to");
+						}
 					}
 
 				}
@@ -1058,17 +1078,13 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	std::fill(aiYieldsLoaded, aiYieldsLoaded + NUM_YIELD_TYPES, 0);
 	const bool bNoCargo = (AI_getYieldsLoaded(aiYieldsLoaded) == 0);
 
-	// R&R mod, vetiarvind, max yield import limit - start	
-	const bool bIgnoreDanger = getIgnoreDangerStatus();
-	// R&R mod, vetiarvind, max yield import limit - end
-
 	if (!bNoCargo)
 	{
 		//We need to iterate over every destination city and see if we can unload.
 		for (uint i = 0; i < routes.size(); ++i)
 		{
 			CvCity* pDestinationCity = ::getCity(routes[i]->getDestinationCity());
-			if ((pDestinationCity == NULL) || (pDestinationCity != pPlotCity))
+			if ((pDestinationCity != NULL) && (pDestinationCity != pPlotCity))
 			{
 				// R&R mod, vetiarvind, max yield import limit - start
 				

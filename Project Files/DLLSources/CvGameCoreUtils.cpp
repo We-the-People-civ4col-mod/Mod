@@ -900,6 +900,8 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			}
 		}
 
+		// Bug? This may prevent AI units from considering land areas connected by river fords etc.
+		/*
 		if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
 		{
 			int iGroupAreaID = pSelectionGroup->getArea();
@@ -911,6 +913,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 				}
 			}
 		}
+		*/
 	}
 
 	if (bAIControl || pToPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
@@ -1539,7 +1542,9 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 			}
 		}
 
-		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
+		//WTP, ray, Large Rivers
+		// if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
+		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTeam() == eTeam)
 		{
 			return true;
 		}

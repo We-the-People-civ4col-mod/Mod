@@ -86,8 +86,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CREDITS_END</Tag>
-		<English>And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We could use quite much material from these games.[NEWLINE]
-The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us whether we can use their material or not. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
+		<English>And we don't want to forget to thank Firaxis and 2Kgames for their masterpiece Civ4/BtS. We use a lot of material from these games.[NEWLINE]
+The copyright of these materials belongs to the respective owners. In most cases we got permission to use their materials but in some cases we didn't. We ask these authors to contact us as  to whether we can use their material. The copyright of the changes the TAC team has done to these materials belongs to TAC. The copyright of changes the RaR team has done to these materials belongs to RaR.[NEWLINE]
 The copyright of "Sid Meier's Civilisation IV: Colonization" belongs to Take Two Interactive. Sid Meier 's Civilization IV: Colonization, Civ, Civilization, 2K Games, the 2K-Logo, Firaxis Games, the Firaxis game logo and Take-Two Interactive Software are registered trademarks of Take-Two Interactive Software, Inc. Developed by Firaxis Games.[NEWLINE]
 Some textures on our 3D-models have been created with images from CGTextures.com. These images may not be redistributed by default. Please visit www.cgtextures.com for more information.[NEWLINE]
 RaR is a non-commercial mod project. If you use or distribute RaR please pay attention to the copyright. We allow usage and distribution as long as RaR remains non-commercial.[NEWLINE]
@@ -848,7 +848,7 @@ Enjoy![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_40</Tag>
-		<English>When you recruit units from Europe that usually require goods to take up their profession, like the Veteran Soldier or Seasoned Scout, they will come fully equipped with all the horses and weapons they require.</English>
+		<English>When you recruit units from Europe who require goods to take up their profession, like the Veteran Soldier or Seasoned Scout, they come fully equipped with all the horses and weapons they require.</English>
 		<French>Lorsque vous recrutez en Europe des unités dont la profession nécessitent certaines marchandises (comme c'est le cas pour le soldat vétéran ou l'éclaireur aguerri), ils se joindront à vous avec tous les chevaux et/ou les armes requises.</French>
 		<German>Wenn Sie in Europa Einheiten rekrutieren, die Güter benötigen, um ihrem Beruf nachzugehen (etwa einen Offizier oder einen Routinierten Späher), werden diese Einheiten voll ausgerüstet - mit den notwendigen Pferden und Schusswaffen - geliefert.</German>
 		<Italian>Quando recluti in Europa unità che solitamente hanno bisogno di beni per intraprendere la professione, come per soldati veterani o scout esperti, arriveranno completamente equipaggiati con le armi e i cavalli di cui hanno bisogno.</Italian>
@@ -1048,7 +1048,7 @@ Enjoy![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_20</Tag>
-		<English>Press [CTRL + # key] to bind the selected unit to that # key. For example: [CTRL + 3] would make it so anytime 3 is pressed, that unit is automatically selected.</English>
+		<English>Press [CTRL + # key] to bind the selected unit to that # key. For example: [CTRL + 3] would make it so any time 3 is pressed, that unit is automatically selected.</English>
 		<French>Appuyez sur [CTRL + touche numérique] pour affecter l'unité sélectionnée à cette touche. Par exemple, avec [CTRL + 3], l'unité sera automatiquement sélectionnée à chaque fois que vous appuierez sur la touche 3.</French>
 		<German>Drücken Sie [STRG + Zahl], um der gewählten Einheit die Zahl zuzuweisen. Beispiel: Drücken Sie [STRG + 3] wird die entsprechende Einheit ausgewählt, sobald Sie die 3 drücken.</German>
 		<Italian>Premi [CTRL + #] per assegnare l'unità selezionata al tasto #. Per esempio, premendo [CTRL + 3], ogni volta che si premerà il tasto 3 quell'unità verrà automaticamente selezionata.</Italian>

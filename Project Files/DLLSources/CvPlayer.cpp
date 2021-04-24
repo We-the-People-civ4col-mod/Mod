@@ -3792,7 +3792,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				int iLoop;
 				for (pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
 				{
-					if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+					if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopCity->plot()->hasAnyOtherWaterPlotsThanJustLargeRivers())
 					{
 						locationToAppear = pLoopCity;
 						break;
@@ -5425,6 +5425,10 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 		if (!isNative() && !GC.getGameINLINE().isBarbarianPlayer(getID()))
 		// < JAnimals Mod End >
 		{
+			//WTP, Unit only Goodies - END 
+			bool bCanTriggerUnitGoodies = pPlot->isGoodyForSpawningUnits();
+			//WTP, Unit only Goodies - START
+
 			pPlot->removeGoody();
 
 			std::vector<int> aGoodyFactors(GC.getNumGoodyInfos(), 1);
@@ -5454,19 +5458,69 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 					for (int iJ = 0; iJ < aGoodyFactors[eGoody]; ++iJ)
 					{
 						int iRandValue = GC.getGameINLINE().getSorenRandNum(1000, "Goodies");
-						// R&R, ray, Goodies with units much less frequent - START
+
+						//WTP, Unit only Goodies - START
+						bool bValid = false;
 						CvGoodyInfo& uGoody = GC.getGoodyInfo(eGoody);
+
+						// Case: Goody gives a Unit
 						if (uGoody.getUnitClassType() != NO_UNITCLASS)
 						{
-							iRandValue = GC.getGameINLINE().getSorenRandNum(900, "Unit Goodies");
+							// special case Treasures
+							if (uGoody.getUnitClassType() == (UnitClassTypes) GC.getDefineINT("TREASURE_UNITCLASS"))
+							{
+								bool isWaterGoody = uGoody.isWaterGoody();
+
+								// in Water it needs to be a Unit Goody
+								if (isWaterGoody && bCanTriggerUnitGoodies)
+								{
+									bValid = true;
+								}
+
+								// on land it shall be not a Unit Goody
+								else if (!isWaterGoody && !bCanTriggerUnitGoodies)
+								{
+									bValid = true;
+								}
+							}
+
+							// in all other Cases Unit Goodies may only be triggered if bCanTriggerUnitGoodies 
+							else if (bCanTriggerUnitGoodies)
+							{
+								bValid = true;
+							}
 						}
-						// R&R, ray, Goodies with units much less frequent - END
-						
-						if(iRandValue > iBestValue)
+
+						// Case: Goody gives other rewards
+						else 
 						{
-							iBestValue = iRandValue;
-							eBestGoody = eGoody;
+							// Land or Water Goody?
+							bool isWaterGoody = uGoody.isWaterGoody();
+
+							// case Land Goody
+							// Goodies that are not giving Units only valid for Land Goody Huts not giving Units
+							if (!isWaterGoody && !bCanTriggerUnitGoodies)
+							{
+								bValid = true;	
+							}
+							// case Water Goody
+							// to ensure that Water Unit Goodies do not only trigger Units - unless Cargo is full
+							if (isWaterGoody && (!bCanTriggerUnitGoodies || pUnit == NULL || (pUnit->cargoSpace() - pUnit->getCargo() <= 0)))
+							{
+								bValid = true;
+							}
 						}
+
+						// so now we figured out the Goody is valid or not
+						if (bValid)
+						{
+							if(iRandValue > iBestValue)
+							{
+								iBestValue = iRandValue;
+								eBestGoody = eGoody;
+							}
+						}
+						//WTP, Unit only Goodies - END
 					}
 				}
 			}
@@ -11997,6 +12051,13 @@ int CvPlayer::getAdvancedStartRouteCost(RouteTypes eRoute, bool bAdd, CvPlot* pP
 	{
 		return -1;
 	}
+
+	//WTP, Nightinggale, Large Rivers - START
+	if (GC.getRouteInfo(eRoute).isGraphicalOnly())
+	{
+		return -1;
+	}
+	//WTP, Nightinggale, Large Rivers - END
 
 	int iNumRoutes = 0;
 
@@ -20829,7 +20890,7 @@ void CvPlayer::checkForPirates()
 	int iLoop;
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
-		if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+		if (pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopCity->plot()->hasAnyOtherWaterPlotsThanJustLargeRivers())
 		{
 			locationToAppear = pLoopCity;
 			break;
@@ -21093,7 +21154,7 @@ void CvPlayer::createEnemyPirates()
 	{
 		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
 
-		if (pLoopPlot->getTeam() == NO_TEAM && pLoopPlot->isWater() && pLoopPlot->area()->hasEurope() && pLoopPlot->getNumUnits() == 0)
+		if (pLoopPlot->getTeam() == NO_TEAM && pLoopPlot->isWater() && pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS && pLoopPlot->area()->hasEurope() && pLoopPlot->getNumUnits() == 0)
 		{
 			int iValue = (plotDistance(cityToAttack->getX_INLINE(), cityToAttack->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) * 2);
 			if (pLoopPlot->area() != cityToAttack->area())

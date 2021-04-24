@@ -24,6 +24,7 @@ void CyMapGeneratorPythonInterface()
 		.def("addRivers", &CyMapGenerator::addRivers, "void ()")
 		.def("doRiver", &CyMapGenerator::doRiver, "void (CyPlot* pStartPlot, int /*CardinalDirectionTypes*/ eCardinalDirection)")
 		.def("addFeatures", &CyMapGenerator::addFeatures, "void ()")
+		.def("addFeaturesOnLand", &CyMapGenerator::addFeaturesOnLand, "void ()") //WTP, ray, Randomize Features Map Option
 		.def("addBonuses", &CyMapGenerator::addBonuses, "void ()")
 		.def("addUniqueBonusType", &CyMapGenerator::addUniqueBonusType, "void (int /*BonusTypes*/ eBonusType)")
 		.def("addNonUniqueBonusType", &CyMapGenerator::addNonUniqueBonusType, "void (int /*BonusTypes*/ eBonusType)")
@@ -32,6 +33,7 @@ void CyMapGeneratorPythonInterface()
 
 		.def("eraseRivers", &CyMapGenerator::eraseRivers, "void ()")
 		.def("eraseFeatures", &CyMapGenerator::eraseFeatures, "void ()")
+		.def("eraseFeaturesOnLand", &CyMapGenerator::eraseFeaturesOnLand, "void ()") //WTP, ray, Randomize Features Map Option
 		.def("eraseBonuses", &CyMapGenerator::eraseBonuses, "void ()")
 		.def("eraseGoodies", &CyMapGenerator::eraseGoodies, "void ()")
 		.def("eraseEurope", &CyMapGenerator::eraseEurope)

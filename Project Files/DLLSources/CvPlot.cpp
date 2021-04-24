@@ -242,6 +242,150 @@ void CvPlot::doTurn()
 		doImprovementUpgrade();			
 	}
 
+	//WTP, Protected Hostile Goodies - START
+	if (isGoodyForSpawningHostileAnimals())
+	{
+		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+
+		//remove Animal Goodies in Native Territory
+		if (getOwner() != NO_PLAYER)
+		{
+			removeGoody();
+		}
+
+		// only if Barbarian Player exists and only if not owned (e.g. by Natives)
+		else if (BarbarianPlayerType != NO_PLAYER)
+		{
+			// only if not defended yet
+			if(getNumDefenders(BarbarianPlayerType) == 0)
+			{
+				int iJ;
+				int iValue, iBestValue, iRand;
+				UnitTypes eBestUnit, eLoopUnit;
+				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
+				CivilizationTypes eBarbCiv = barbarianPlayer.getCivilizationType();
+
+				eBestUnit = NO_UNIT;
+				iBestValue = 0;
+
+				// finding a suitable Animal to spawn on plot
+				for (iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
+				{
+					//eLoopUnit = (UnitTypes) GC.getCivilizationInfo(eBarbCiv).getCivilizationUnits(iJ);
+					eLoopUnit = (UnitTypes) iJ;
+
+					if (eLoopUnit == NO_UNIT)
+					{
+						continue;
+					}
+					if (!GC.getUnitInfo(eLoopUnit).isAnimal())
+					{
+						continue;
+					}
+
+					iValue = 0;
+					if (getTerrainType() != NO_TERRAIN)
+					{
+						if (GC.getUnitInfo(eLoopUnit).getTerrainNative(getTerrainType()))
+						{
+							iRand = GC.getWILD_ANIMAL_LAND_TERRAIN_NATIVE_WEIGHT();
+							iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Land Animal Selection - Terrain Weight"));
+						}
+					}
+
+					if (iValue > 0 && iValue > iBestValue)
+					{
+						eBestUnit = eLoopUnit;
+						iBestValue = iValue;
+					}
+				}
+
+				// we have found a Unit and will spawn it now
+				if (eBestUnit != NO_UNIT)
+				{
+					CvUnit* pNewUnit = barbarianPlayer.initUnit(eBestUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), UNITAI_ANIMAL);
+					pNewUnit->setBarbarian(true);
+				}
+			}
+		}
+	}
+
+	// case hostile Native Village
+	if (isGoodyForSpawningHostileNatives())
+	{
+		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+
+		//remove Hostile Native Goodies in Native Territory
+		if (getOwner() != NO_PLAYER)
+		{
+			removeGoody();
+		}
+
+		// only if Barbarian Player exists
+		else if (BarbarianPlayerType != NO_PLAYER)
+		{
+			// only if not defended yet
+			if(getNumDefenders(BarbarianPlayerType) == 0)
+			{
+				// Spawns Native Mercenaries
+				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
+				UnitTypes GeneratedUnitType = NO_UNIT;
+				GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE"));
+
+				if(GeneratedUnitType != NO_UNIT)
+				{
+					// we generate with Default UNit AI
+					CvUnit* protectingUnit = barbarianPlayer.initUnit(GeneratedUnitType, (ProfessionTypes) GC.getUnitInfo(GeneratedUnitType).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+				}
+			}
+		}
+	}
+
+	// case Raider Camp
+	if (isGoodyForSpawningHostileCriminals())
+	{
+		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
+		
+		//remove Raider Goodies in Native Territory
+		if (getOwner() != NO_PLAYER)
+		{
+			removeGoody();
+		}
+
+		// only if Barbarian Player exists
+		else if (BarbarianPlayerType != NO_PLAYER)
+		{
+			// only if not defended yet
+			if(getNumDefenders(BarbarianPlayerType) == 0)
+			{
+				CvPlayer& barbarianPlayer = GET_PLAYER(BarbarianPlayerType);
+				UnitTypes GeneratedUnitType = NO_UNIT;
+
+				// to have a little variation
+				int randomUnitGerationValue = GC.getGameINLINE().getSorenRandNum(3, "Barbarian Camp Defender");
+				if (randomUnitGerationValue <= 1)
+				{
+					GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_SLAVE"));
+				}
+				if (randomUnitGerationValue == 2)
+				{
+					GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_NATIVE_SLAVE"));
+				}
+				else
+				{
+					GeneratedUnitType = (UnitTypes)GC.getCivilizationInfo(barbarianPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_REVOLTING_CRIMINAL"));
+				}
+
+				if(GeneratedUnitType != NO_UNIT)
+				{
+					// we generate with Default Unit AI
+					CvUnit* protectingUnit = barbarianPlayer.initUnit(GeneratedUnitType, (ProfessionTypes) GC.getUnitInfo(GeneratedUnitType).getDefaultProfession(), getX_INLINE(), getY_INLINE(), NO_UNITAI);
+				}
+			}
+		}
+	}
+	//WTP, Protected Hostile Goodies - END
+
 	// Super Forts begin *bombard*
 	if (!isBombarded() && getDefenseDamage() > 0)
 	{
@@ -786,6 +930,34 @@ bool CvPlot::isCoastalLand(int iMinWaterSize) const
 	return false;
 }
 
+//WTP, ray, Large Rivers - START
+// this checks if the adjacent water tiles are just Large Rivers
+// needed to prevent that Buildings for bigger ships can be built - anything that can not enter Large Rivers
+bool CvPlot::hasAnyOtherWaterPlotsThanJustLargeRivers() const
+{
+	PROFILE_FUNC();
+
+	// now we check if there is any plot adjacent that is Water but not Large Rivers
+	// if we find any Water Plot that is not Large Rivers, this is not just Large Rivers
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pAdjacentPlot != NULL)
+		{
+			if (pAdjacentPlot->isWater() && pAdjacentPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+			{
+					return true;
+			}
+		}
+	}
+
+	// otherwise it is Coastal LAnds and all Water Plots need to be Large Rivers
+	return false;
+}
+//WTP, ray, Large Rivers - END
+
+
 bool CvPlot::isAdjacentWaterPassable(CvPlot* pPlot) const
 {
 	FAssert(pPlot != NULL);
@@ -859,6 +1031,13 @@ bool CvPlot::isWithinTeamCityRadius(TeamTypes eTeam, PlayerTypes eIgnorePlayer) 
 
 bool CvPlot::isLake() const
 {
+	//WTP, ray, Large Rivers - Start
+	if (getTerrainType() == TERRAIN_LARGE_RIVERS)
+	{
+		return false;
+	}
+	//WTP, ray, Large Rivers - END
+
 	CvArea* pArea;
 
 	pArea = area();
@@ -1835,9 +2014,13 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 				//outside borders can't be built in other's culture
 				if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
 				{
-					if (getTeam() != NO_TEAM)
+					//WTP, ray, Large Rivers
+					if (getTerrainType() != TERRAIN_LARGE_RIVERS)
 					{
-						return false;
+						if (getTeam() != NO_TEAM)
+						{
+							return false;
+						}
 					}
 				}
 				else //only buildable in own culture
@@ -1907,9 +2090,10 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 	eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
 
-	if (eRoute != NO_ROUTE)
+	if (eRoute != NO_ROUTE && !GC.getRouteInfo(eRoute).isGraphicalOnly()) //WTP, Nightinggale, Large Rivers - START
 	{
-		if (isPeak())
+		//WTP, ray, removed useless and confusing logic to prevent Roads for Peak being surrounded by Peaks
+		/*if (isPeak())
 		{
 			bool bFoundNonPeak = false;
 			for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
@@ -1928,7 +2112,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			{
 				return false;
 			}
-		}
+		}*/
 
 		if (getRouteType() != NO_ROUTE)
 		{
@@ -1944,6 +2128,14 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			return false;
 		}
 		// R&R, ray, one Route Type after the other - START
+
+		//WTP, ray, Large Rivers - START
+		// no routes on Large Rivers
+		if (getTerrainType() == TERRAIN_LARGE_RIVERS)
+		{
+			return false;
+		}
+		//WTP, ray, Large Rivers - END
 
 		bValid = true;
 	}
@@ -1973,7 +2165,11 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		// only inside own borders
 		if (GET_PLAYER(ePlayer).getTeam() != getTeam())
 		{
-			return false;
+			// Plot not owned. Fail unless it's an improvement, which can be outside borders
+			if (eImprovement == NO_IMPROVEMENT || !GC.getImprovementInfo(eImprovement).isOutsideBorders())
+			{
+				return false;
+			}
 		}
 
 		bValid = true;
@@ -3389,6 +3585,50 @@ bool CvPlot::isGoody(TeamTypes eTeam) const
 	return (GC.getImprovementInfo(getImprovementType()).isGoody());
 }
 
+//WTP, Unit only Goodies - START
+bool CvPlot::isGoodyForSpawningUnits(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningUnits());
+}
+//WTP, Unit only Goodies - END
+
+//WTP, Protected Hostile Goodies - START
+bool CvPlot::isGoodyForSpawningHostileAnimals(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningHostileAnimals());
+}
+
+bool CvPlot::isGoodyForSpawningHostileNatives(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningHostileNatives());
+}
+
+bool CvPlot::isGoodyForSpawningHostileCriminals(TeamTypes eTeam) const
+{
+	if (getImprovementType() == NO_IMPROVEMENT)
+	{
+		return false;
+	}
+
+	return (GC.getImprovementInfo(getImprovementType()).isGoodyForSpawningHostileCriminals());
+}
+//WTP, Protected Hostile Goodies - END
+
 
 bool CvPlot::isRevealedGoody(TeamTypes eTeam) const
 {
@@ -3728,7 +3968,11 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 
 	case DOMAIN_LAND:
 	case DOMAIN_IMMOBILE:
-		return (!isWater() || kUnitInfo.isCanMoveAllTerrain());
+		//WTP, ray, Large Rivers - START
+		// fixing Valid Domain for Large Rivers
+		//return (!isWater() || kUnitInfo.isCanMoveAllTerrain());
+		return (!isWater() || getTerrainType() == TERRAIN_LARGE_RIVERS || kUnitInfo.isCanMoveAllTerrain());
+		//WTP, ray, Large Rivers - START
 		break;
 
 	default:
@@ -4655,7 +4899,14 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 			{
 				if (isAdjacentToLand())
 				{
-					setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					//WTP, ray, Large Rivers - START
+					//we do not want to change Large Rivers to Coast, only Ocean
+					// setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					if (getTerrainType() != TERRAIN_LARGE_RIVERS)
+					{
+						setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+					}
+					//WTP, ray, Large Rivers - END
 				}
 				else
 				{
@@ -4684,7 +4935,14 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 						{
 							if (pLoopPlot->isAdjacentToLand())
 							{
-								pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								//WTP, ray, Large Rivers - START
+								//we do not want to change Large Rivers to Coast, only Ocean
+								// pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								if (pLoopPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+								{
+									pLoopPlot->setTerrainType(((TerrainTypes)(GC.getDefineINT("SHALLOW_WATER_TERRAIN"))), bRecalculate, bRebuildGraphics);
+								}
+								//WTP, ray, Large Rivers - END
 							}
 							else
 							{
@@ -5175,6 +5433,14 @@ RouteTypes CvPlot::getRouteType() const
 
 void CvPlot::setRouteType(RouteTypes eNewValue)
 {
+	//WTP, Nightinggale, Large Rivers - START
+	if (eNewValue != NO_ROUTE && GC.getRouteInfo(eNewValue).isGraphicalOnly())
+	{
+		// don't build routes, which aren't supposed to show up
+		return;
+	}
+	//WTP, Nightinggale, Large Rivers - END
+
 	bool bOldRoute;
 	int iI;
 

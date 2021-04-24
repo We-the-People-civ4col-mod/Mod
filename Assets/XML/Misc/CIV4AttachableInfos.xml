@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Greg Cunningham (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Attachables -->
+<Civ4AttachableInfos xmlns="x-schema:CIV4MiscSchema.xml">
+	<AttachableInfos>
+		<!-- Units: -->
+		<AttachableInfo>
+			<Type>ATTACHABLE_FIREPLACEFLAME</Type>
+			<Description>ATTACHABLE_FIREPLACEFLAME</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/fireplace_flame/fx_fireplace_flame.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CHIMNEYSMOKE</Type>
+			<Description>ATTACHABLE_CHIMNEYSMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_04.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CHIMNEYSMOKEB</Type>
+			<Description>ATTACHABLE_CHIMNEYSMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_05.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CHIMNEYSMOKEC</Type>
+			<Description>ATTACHABLE_CHIMNEYSMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_03.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CHIMNEYSMOKED</Type>
+			<Description>ATTACHABLE_CHIMNEYSMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/chimney_smoke/fx_chimneysmoke_02.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_SMOKE</Type>
+			<Description>ATTACHABLE_SMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Interface/Attachables/AttachableSmoke.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_IMPCAMPFIRE</Type>
+			<Description>ATTACHABLE_SMOKE</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/campfire/fx_fire_campfire.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CARAVEL_DAMAGE_SMOKE</Type>
+			<Description>DarkSmoke for the 4th Damage State of the Caravel</Description>
+			<fScale>1.5</fScale>
+			<Path>Art/Effects/ship_damage_smoke_gunpowder/fx_ship_damage_gunpowder_smoke.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_FRIGATE_DAMAGE_SMOKE</Type>
+			<Description>DarkSmoke for the 4th Damage State of the Frigate</Description>
+			<fScale>2.6</fScale>
+			<Path>Art/Effects/ship_damage_smoke_gunpowder/fx_ship_damage_gunpowder_smoke.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_GALLEON_DAMAGE_SMOKE</Type>
+			<Description>DarkSmoke for the 4th Damage State of the Galleon</Description>
+			<fScale>3</fScale>
+			<Path>Art/Effects/ship_damage_smoke_gunpowder/fx_ship_damage_gunpowder_smoke.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CARAVEL_BOW_FROTH</Type>
+			<Description>Bow Froth for the Caravel</Description>
+			<fScale>0.31</fScale>
+			<Path>Art/Effects/water_ship_bow_froth/fx_water_ship_bow_froth.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_CARAVEL_SIDE_FROTH</Type>
+			<Description>Side Froth for the Caravel</Description>
+			<fScale>0.24</fScale>
+			<Path>Art/Effects/water_ship_side_froth/fx_water_ship_side_froth.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_FRIGATE_BOW_FROTH</Type>
+			<Description>Bow Froth for the Frigate</Description>
+			<fScale>0.35</fScale>
+			<Path>Art/Effects/water_ship_bow_froth/fx_water_ship_bow_froth.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_FRIGATE_SIDE_FROTH</Type>
+			<Description>Side Froth for the Frigate</Description>
+			<fScale>0.3</fScale>
+			<Path>Art/Effects/water_ship_side_froth/fx_water_ship_side_froth.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_GALLEON_BOW_FROTH</Type>
+			<Description>Bow Froth for the Galleon</Description>
+			<fScale>0.42</fScale>
+			<Path>Art/Effects/water_ship_bow_froth/fx_water_ship_bow_froth.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_GALLEON_SIDE_FROTH</Type>
+			<Description>Side Froth for the Galleon</Description>
+			<fScale>0.42</fScale>
+			<Path>Art/Effects/water_ship_side_froth/fx_water_ship_side_froth.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_HIGHLIGHT_PROPHET</Type>
+			<Description>Highlight effect for the Prophet</Description>
+			<fScale>0.9</fScale>
+			<Path>Art/Effects/unit_greatpeople/fx_GreatPeople_Prophet_Highlight.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_HIGHLIGHT_WARLORD</Type>
+			<Description>Highlight effect for the Warlord</Description>
+			<fScale>0.9</fScale>
+			<Path>Art/Effects/unit_greatpeople/fx_GreatPeople_Warlord_Highlight.nif</Path>
+		</AttachableInfo>
+		<!-- Improvements: -->
+		<AttachableInfo>
+			<Type>ATTACHABLE_IMPCHIMNEYSMOKE_01</Type>
+			<Description>Improvements chimney smoke</Description>
+			<fScale>1.0</fScale>
+			<Path>Art/Effects/improvement_smoke_chimney/fx_improvement_smoke_chimney.nif</Path>
+		</AttachableInfo>
+		<AttachableInfo>
+			<Type>ATTACHABLE_IMPFIREPLACEFIRE</Type>
+			<Description>Fire for improvement fire place</Description>
+			<fScale>0.2</fScale>
+			<Path>Art/Effects/fire_torch/fx_fire_torch.nif</Path>
+		</AttachableInfo>
+	</AttachableInfos>
+</Civ4AttachableInfos>

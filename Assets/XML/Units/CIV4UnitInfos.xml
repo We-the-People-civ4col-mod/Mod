@@ -154,6 +154,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -175,7 +179,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -421,7 +430,7 @@
             <bTreasure>0</bTreasure>
             <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
             <bLbDCanGetFree>1</bLbDCanGetFree>
-            <bLbDCanEscape>1</bLbDCanEscape>
+            <bLbDCanEscape>0</bLbDCanEscape>
             <bLbDCanRevolt>0</bLbDCanRevolt>
             <UnitClassUpgrades/>
             <UnitAIs>
@@ -536,6 +545,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -557,7 +570,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -1023,6 +1041,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -1044,7 +1066,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -1411,6 +1438,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -1432,7 +1463,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -1990,6 +2026,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -2011,7 +2051,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -2393,7 +2438,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -2837,6 +2887,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -2860,7 +2914,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -3308,6 +3367,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -3329,7 +3392,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -3712,6 +3780,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -3733,7 +3805,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -4116,6 +4193,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -4137,7 +4218,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -4504,6 +4590,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -4525,7 +4615,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -4892,6 +4987,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -4913,7 +5012,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -5280,6 +5384,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -5301,7 +5409,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -5668,6 +5781,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -5689,7 +5806,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -6056,6 +6178,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -6077,7 +6203,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -6444,6 +6575,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -6465,7 +6600,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -6840,6 +6980,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -6861,7 +7005,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -7236,6 +7385,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -7257,7 +7410,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -7632,6 +7790,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -7653,7 +7815,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -8028,6 +8195,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8049,7 +8220,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -8416,6 +8592,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8437,7 +8617,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -8796,6 +8981,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -8817,7 +9006,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -9184,6 +9378,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -9205,7 +9403,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -9564,6 +9767,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -9585,7 +9792,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -9944,6 +10156,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -9965,7 +10181,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -10324,6 +10545,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -10345,7 +10570,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -10696,6 +10926,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -10717,7 +10951,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -11063,6 +11302,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11084,7 +11327,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -11467,6 +11715,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11488,7 +11740,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -11871,6 +12128,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -11892,7 +12153,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -12271,6 +12537,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -12292,7 +12562,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -12671,6 +12946,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -12692,7 +12971,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -13067,6 +13351,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13088,7 +13376,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -13463,6 +13756,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13484,7 +13781,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -13863,6 +14165,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -13884,7 +14190,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -14263,6 +14574,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -14284,7 +14599,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -14663,6 +14983,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -14684,7 +15008,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -15067,6 +15396,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -15088,7 +15421,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -15471,6 +15809,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -15492,7 +15834,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -15875,6 +16222,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -15896,7 +16247,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -16279,6 +16635,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -16300,7 +16660,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -16675,6 +17040,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -16696,7 +17065,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -17071,6 +17445,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -17092,7 +17470,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -17475,6 +17858,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -17496,7 +17883,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -17879,6 +18271,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -17900,7 +18296,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -18291,6 +18692,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -18312,7 +18717,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -18698,6 +19108,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -18719,7 +19133,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -18992,7 +19411,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -19290,7 +19714,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>3</iCombat>
@@ -19640,7 +20069,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>3</iCombat>
@@ -19815,7 +20249,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>12</iCombat>
@@ -19992,7 +20431,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>5</iCombat>
@@ -20147,7 +20591,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>12</iCombat>
@@ -20442,7 +20891,12 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_RAIDER</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -20740,7 +21194,7 @@
                     <iRangedWaveSize>1</iRangedWaveSize>
                     <UnitMeshGroup>
                         <iRequired>2</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_NATIVE_MERC</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_REVOLTING_NATIVE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -20878,6 +21332,160 @@
                     <UnitMeshGroup>
                         <iRequired>2</iRequired>
                         <ArtDefineTag>ART_DEF_UNIT_REVOLTING_CRIMINAL</ArtDefineTag>
+                    </UnitMeshGroup>
+                </UnitMeshGroups>
+            </ProfessionMeshGroups>
+            <FormationType>FORMATION_TYPE_DEFAULT</FormationType>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <FreePromotions/>
+            <LeaderPromotion>NONE</LeaderPromotion>
+            <iLeaderExperience>0</iLeaderExperience>
+        </UnitInfo>
+        <UnitInfo>
+            <Type>UNIT_HOSTILE_NATIVE</Type>
+            <Class>UNITCLASS_HOSTILE_NATIVE</Class>
+            <UniqueNames/>
+            <Special>NONE</Special>
+            <Capture>NONE</Capture>
+            <Combat>UNITCOMBAT_MELEE</Combat>
+            <Domain>DOMAIN_LAND</Domain>
+            <DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+            <DefaultProfession>NONE</DefaultProfession>
+            <Invisible>NONE</Invisible>
+            <SeeInvisible>NONE</SeeInvisible>
+            <Description>TXT_KEY_UNIT_HOSTILE_NATIVE</Description>
+            <Civilopedia>TXT_KEY_UNIT_NATIVE_PEDIA</Civilopedia>
+            <Strategy>TXT_KEY_UNIT_HOSTILE_NATIVE_STRATEGY</Strategy>
+            <iTeachLevel>100</iTeachLevel>
+            <fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNoBadGoodies>0</bNoBadGoodies>
+            <bOnlyDefensive>0</bOnlyDefensive>
+            <bNoCapture>0</bNoCapture>
+            <bQuickCombat>0</bQuickCombat>
+            <bRivalTerritory>0</bRivalTerritory>
+            <bMilitaryProduction>0</bMilitaryProduction>
+            <bFound>0</bFound>
+            <bInvisible>0</bInvisible>
+            <bNoDefensiveBonus>0</bNoDefensiveBonus>
+            <bCanMoveImpassable>0</bCanMoveImpassable>
+            <bMoveIntoPeak>1</bMoveIntoPeak>
+            <bCanMoveAllTerrain>0</bCanMoveAllTerrain>
+            <bFlatMovementCost>0</bFlatMovementCost>
+            <bIgnoreTerrainCost>0</bIgnoreTerrainCost>
+            <bMechanized>0</bMechanized>
+            <bLineOfSight>0</bLineOfSight>
+            <bHiddenNationality>1</bHiddenNationality>
+            <bAlwaysHostile>0</bAlwaysHostile>
+            <bTreasure>0</bTreasure>
+            <bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
+            <bLbDCanGetFree>0</bLbDCanGetFree>
+            <bLbDCanEscape>0</bLbDCanEscape>
+            <bLbDCanRevolt>0</bLbDCanRevolt>
+            <UnitClassUpgrades/>
+            <UnitAIs>
+                <UnitAI>
+                    <UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+                <UnitAI>
+                    <UnitAIType>UNITAI_COUNTER</UnitAIType>
+                    <bUnitAI>1</bUnitAI>
+                </UnitAI>
+            </UnitAIs>
+            <NotUnitAIs/>
+            <Builds/>
+            <PrereqBuilding>NONE</PrereqBuilding>
+            <PrereqOrBuildings/>
+            <ProductionTraits/>
+            <iAIWeight>0</iAIWeight>
+            <YieldCosts/>
+            <iHurryCostModifier>0</iHurryCostModifier>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iEuropeCost>-1</iEuropeCost>
+            <iEuropeCostIncrease>0</iEuropeCostIncrease>
+            <iImmigrationWeight>0</iImmigrationWeight>
+            <iImmigrationWeightDecay>0</iImmigrationWeightDecay>
+            <iMinAreaSize>-1</iMinAreaSize>
+            <iMoves>1</iMoves>
+            <bCapturesCargo>0</bCapturesCargo>
+            <bCapturesShips>0</bCapturesShips>
+            <iWorkRate>0</iWorkRate>
+            <iWorkRateModifier>0</iWorkRateModifier>
+            <iMissionaryRateModifier>0</iMissionaryRateModifier>
+            <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
+            <TerrainImpassables/>
+            <FeatureImpassables/>
+            <EvasionBuildings/>
+            <iCombat>2</iCombat>
+            <iXPValueAttack>4</iXPValueAttack>
+            <iXPValueDefense>2</iXPValueDefense>
+            <iWithdrawalProb>5</iWithdrawalProb>
+            <iCityAttack>0</iCityAttack>
+            <iCityDefense>0</iCityDefense>
+            <iHillsAttack>0</iHillsAttack>
+            <iHillsDefense>10</iHillsDefense>
+            <iDomesticBonus>0</iDomesticBonus>
+            <TerrainAttacks/>
+            <TerrainDefenses/>
+            <FeatureAttacks/>
+            <FeatureDefenses>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+                <FeatureDefense>
+                    <FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+                    <iFeatureDefense>10</iFeatureDefense>
+                </FeatureDefense>
+            </FeatureDefenses>
+            <UnitClassAttackMods/>
+            <UnitClassDefenseMods/>
+            <UnitCombatMods/>
+            <DomainMods/>
+            <YieldModifiers/>
+            <YieldChanges/>
+            <BonusYieldChanges/>
+            <bLandYieldChanges>1</bLandYieldChanges>
+            <bWaterYieldChanges>1</bWaterYieldChanges>
+            <iBombardRate>0</iBombardRate>
+            <SpecialCargo>NONE</SpecialCargo>
+            <DomainCargo>NONE</DomainCargo>
+            <iCargo>0</iCargo>
+            <iRequiredTransportSize>1</iRequiredTransportSize>
+            <iBerthSize>1</iBerthSize>
+            <iAsset>300</iAsset>
+            <iPower>250</iPower>
+            <iNativeLearnTime>-1</iNativeLearnTime>
+            <iStudentWeight>0</iStudentWeight>
+            <iTeacherWeight>0</iTeacherWeight>
+            <ProfessionMeshGroups>
+                <UnitMeshGroups>
+                    <ProfessionType>NONE</ProfessionType>
+                    <fMaxSpeed>1.25</fMaxSpeed>
+                    <fPadTime>1</fPadTime>
+                    <iMeleeWaveSize>1</iMeleeWaveSize>
+                    <iRangedWaveSize>1</iRangedWaveSize>
+                    <UnitMeshGroup>
+                        <iRequired>2</iRequired>
+                        <ArtDefineTag>ART_DEF_UNIT_BRAVE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
             </ProfessionMeshGroups>
@@ -21087,6 +21695,10 @@
                 </FreePromotion>
                 <FreePromotion>
                     <PromotionType>PROMOTION_FORCED_MARCH1</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_RAIDER</PromotionType>
                     <bFreePromotion>1</bFreePromotion>
                 </FreePromotion>
             </FreePromotions>
@@ -21619,6 +22231,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -21640,7 +22256,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -21986,6 +22607,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -22007,7 +22632,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -22365,6 +22995,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -22386,7 +23020,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -22736,6 +23375,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -22757,7 +23400,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -23032,7 +23680,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>6</iCombat>
@@ -23197,7 +23850,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>8</iCombat>
@@ -23362,7 +24020,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>10</iCombat>
@@ -23518,7 +24181,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>9</iCombat>
@@ -23665,7 +24333,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -23950,7 +24623,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -24239,7 +24917,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -24528,7 +25211,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -24895,6 +25583,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
             </Builds>
@@ -25268,6 +25960,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -25622,6 +26318,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -25643,7 +26343,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -26026,6 +26731,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -26047,7 +26756,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -26430,6 +27144,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -26451,7 +27169,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -26834,6 +27557,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -26855,7 +27582,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -27146,7 +27878,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -27505,7 +28242,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -27996,6 +28738,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28017,7 +28763,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -28417,6 +29168,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28438,7 +29193,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -28791,6 +29551,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -28812,7 +29576,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -29165,6 +29934,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -29186,7 +29959,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>100</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -29455,7 +30233,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -29953,6 +30736,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -29974,7 +30761,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>100</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -30335,6 +31127,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -30356,7 +31152,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -30667,6 +31468,10 @@
                     <BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
+                <Build>
+                    <BuildType>BUILD_RAFT_STATION</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
             </Builds>
             <PrereqBuilding>NONE</PrereqBuilding>
             <PrereqOrBuildings/>
@@ -30688,7 +31493,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>1</iCombat>
@@ -31144,7 +31954,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -31290,7 +32105,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -31436,7 +32256,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -31578,7 +32403,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -31724,7 +32554,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -31870,7 +32705,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -31935,7 +32775,7 @@
             <UniqueNames/>
             <Special>NONE</Special>
             <Capture>UNITCLASS_SMALL_COASTAL_SHIP</Capture>
-            <Combat>NONE</Combat>
+            <Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
             <Domain>DOMAIN_SEA</Domain>
             <DefaultUnitAI>UNITAI_TRANSPORT_COAST</DefaultUnitAI>
             <DefaultProfession>NONE</DefaultProfession>
@@ -32033,7 +32873,24 @@
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>2</iCombat>
             <iXPValueAttack>1</iXPValueAttack>
             <iXPValueDefense>1</iXPValueDefense>
@@ -32086,7 +32943,12 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_SAILING</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -32194,7 +33056,24 @@
                     <bFeatureImpassable>1</bFeatureImpassable>
                 </FeatureImpassable>
             </FeatureImpassables>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>2</iCombat>
             <iXPValueAttack>2</iXPValueAttack>
             <iXPValueDefense>1</iXPValueDefense>
@@ -32247,7 +33126,12 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_SAILING</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -32351,9 +33235,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -32523,9 +33416,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -32695,9 +33597,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -32867,9 +33778,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -33039,9 +33959,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -33211,9 +34140,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -33392,9 +34330,31 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>36</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
@@ -33551,9 +34511,31 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
-            <EvasionBuildings/>
+            <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
+            </EvasionBuildings>
             <iCombat>38</iCombat>
             <iXPValueAttack>4</iXPValueAttack>
             <iXPValueDefense>2</iXPValueDefense>
@@ -33716,20 +34698,7 @@
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
             <TerrainImpassables/>
             <FeatureImpassables/>
-            <EvasionBuildings>
-                <EvasionBuilding>
-                    <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-                    <bEvasion>1</bEvasion>
-                </EvasionBuilding>
-                <EvasionBuilding>
-                    <BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-                    <bEvasion>1</bEvasion>
-                </EvasionBuilding>
-                <EvasionBuilding>
-                    <BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
-                    <bEvasion>1</bEvasion>
-                </EvasionBuilding>
-            </EvasionBuildings>
+            <EvasionBuildings/>
             <iCombat>27</iCombat>
             <iXPValueAttack>5</iXPValueAttack>
             <iXPValueDefense>3</iXPValueDefense>
@@ -33961,7 +34930,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>33</iCombat>
@@ -34124,7 +35098,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>35</iCombat>
@@ -34272,6 +35251,10 @@
             <TerrainImpassables/>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -34440,7 +35423,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>35</iCombat>
@@ -34607,7 +35595,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>45</iCombat>
@@ -34765,7 +35758,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>55</iCombat>
@@ -34919,7 +35917,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>65</iCombat>
@@ -35065,9 +36068,18 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings>
+                <EvasionBuilding>
+                    <BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
+                    <bEvasion>1</bEvasion>
+                </EvasionBuilding>
                 <EvasionBuilding>
                     <BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
                     <bEvasion>1</bEvasion>
@@ -35332,7 +36344,12 @@
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
             <iHotKeyPriority>0</iHotKeyPriority>
-            <FreePromotions/>
+            <FreePromotions>
+                <FreePromotion>
+                    <PromotionType>PROMOTION_LARGE_RIVER_SAILING</PromotionType>
+                    <bFreePromotion>1</bFreePromotion>
+                </FreePromotion>
+            </FreePromotions>
             <LeaderPromotion>NONE</LeaderPromotion>
             <iLeaderExperience>0</iLeaderExperience>
         </UnitInfo>
@@ -42115,7 +43132,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <EvasionBuildings/>
             <iCombat>2</iCombat>
@@ -42247,7 +43269,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
@@ -42385,7 +43412,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
@@ -42523,7 +43555,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>
@@ -42661,7 +43698,12 @@
             <iWorkRateModifier>0</iWorkRateModifier>
             <iMissionaryRateModifier>0</iMissionaryRateModifier>
             <iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-            <TerrainImpassables/>
+            <TerrainImpassables>
+                <TerrainImpassable>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrainImpassable>1</bTerrainImpassable>
+                </TerrainImpassable>
+            </TerrainImpassables>
             <FeatureImpassables/>
             <TerrainNatives>
                 <TerrainNative>

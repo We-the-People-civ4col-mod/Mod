@@ -3493,4 +3493,13 @@
             <Plural>0:1</Plural>
         </German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_HOSTILE_NATIVE</Tag>
+        <English>Hostile Native:Hostile Natives</English>
+        <German>
+            <Text>Feindlicher Ureinwohner:Feindliche Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
 </Civ4GameText>

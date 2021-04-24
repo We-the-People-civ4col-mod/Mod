@@ -5560,6 +5560,17 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			
 			if (kBuild.getRoute() != NO_ROUTE)
 			{
+				//WTP, Nightinggale, Large Rivers - START
+				if (GC.getRouteInfo((RouteTypes)kBuild.getRoute()).isGraphicalOnly())
+				{
+					// AI should not build "fake" routes as best build. They are meant for river crossings.
+					// Allowing building them here means building IMPROVEMENT_RAFT_STATION without considering if there is anything of interest on the other side of the large river.
+					// The AI can use MISSION_ROUTE_TO to make the river crossings while planning routes from city to city.  
+					bValid = false;
+					break;
+				}
+				//WTP, Nightinggale, Large Rivers - END
+
 				if (pPlot->getCrumbs() > 0)
 				{
 					bool bValid = true;

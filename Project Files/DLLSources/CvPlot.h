@@ -71,6 +71,7 @@ public:
 	bool shareAdjacentArea( const CvPlot* pPlot) const;
 	bool isAdjacentToLand() const;
 	bool isCoastalLand(int iMinWaterSize = -1) const;
+	bool hasAnyOtherWaterPlotsThanJustLargeRivers() const;
 	bool isAdjacentWaterPassable(CvPlot* pPlot) const;
 
 	bool isVisibleWorked() const;
@@ -161,6 +162,11 @@ public:
 	bool isAdjacentNonvisible(TeamTypes eTeam) const;
 
 	DllExport bool isGoody(TeamTypes eTeam = NO_TEAM) const;
+	bool isGoodyForSpawningUnits(TeamTypes eTeam = NO_TEAM) const; //WTP, Unit only Goodies
+	bool isGoodyForSpawningHostileAnimals(TeamTypes eTeam = NO_TEAM) const; //WTP, Protected Hostile Goodies
+	bool isGoodyForSpawningHostileNatives(TeamTypes eTeam = NO_TEAM) const; //WTP, Protected Hostile Goodies
+	bool isGoodyForSpawningHostileCriminals(TeamTypes eTeam = NO_TEAM) const; //WTP, Protected Hostile Goodies
+
 	bool isRevealedGoody(TeamTypes eTeam = NO_TEAM) const;
 	void removeGoody();
 

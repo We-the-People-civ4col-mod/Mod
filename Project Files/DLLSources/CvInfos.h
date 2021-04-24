@@ -359,6 +359,8 @@ public:
 	bool isCitizen() const;
 	bool isWater() const;
 	bool isScout() const;
+	bool isCanCrossLargeRivers() const; //WTP, ray, Large Rivers
+	bool isCanEnterPeaks() const; //WTP, ray, Large Rivers		
 	bool isCityDefender() const;
 	bool canFound() const;
 	bool isUnarmed() const;
@@ -403,6 +405,7 @@ protected:
 	bool m_bCitizen;
 	bool m_bWater;
 	bool m_bScout;
+	bool m_bCanCrossLargeRivers; //WTP, ray, Large Rivers
 	bool m_bCityDefender;
 	bool m_bCanFound;
 	bool m_bUnarmed;
@@ -2279,6 +2282,10 @@ public:
 	bool isRequiresFeature() const;
 	DllExport bool isWater() const;
 	bool isGoody() const;
+	bool isGoodyForSpawningUnits() const; //WTP, Unit only Goodies
+	bool isGoodyForSpawningHostileAnimals() const; //WTP, Unit only Goodies
+	bool isGoodyForSpawningHostileNatives() const; //WTP, Unit only Goodies
+	bool isGoodyForSpawningHostileCriminals() const; //WTP, Unit only Goodies
 	bool isPermanent() const;
 	DllExport bool useLSystem() const;
 	bool isOutsideBorders() const;
@@ -2344,6 +2351,10 @@ protected:
 	bool m_bRequiresFeature;
 	bool m_bWater;
 	bool m_bGoody;
+	bool m_bGoodyForSpawningUnits; //WTP, Unit only Goodies
+	bool m_bGoodyForSpawningHostileAnimals; //WTP, Unit only Goodies
+	bool m_bGoodyForSpawningHostileNatives; //WTP, Unit only Goodies
+	bool m_bGoodyForSpawningHostileCriminals; //WTP, Unit only Goodies
 	bool m_bPermanent;
 	bool m_bUseLSystem;
 	bool m_bOutsideBorders;

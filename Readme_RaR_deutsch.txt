@@ -14,12 +14,12 @@ Es basiert auf TAC (The Authentic Colonization) in der Version 2.03_final.
 
 Teammitglieder:
 
-	Schmiddie
+	raystuttgart
 	Devolution
 	Nightinggale	
+	Schmiddie
 	
 	Inaktive Mitglieder:		
-	raystuttgart
 	Robert Surcouf
 	colonialfan
 	KJ Jansson

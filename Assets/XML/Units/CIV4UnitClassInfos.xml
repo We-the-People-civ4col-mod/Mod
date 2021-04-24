@@ -412,6 +412,11 @@
             <DefaultUnit>UNIT_REVOLTING_CRIMINAL</DefaultUnit>
         </UnitClassInfo>
         <UnitClassInfo>
+            <Type>UNITCLASS_HOSTILE_NATIVE</Type>
+            <Description>TXT_KEY_UNITCLASS_HOSTILE_NATIVE</Description>
+            <DefaultUnit>UNIT_HOSTILE_NATIVE</DefaultUnit>
+        </UnitClassInfo>
+        <UnitClassInfo>
             <Type>UNITCLASS_RANGER</Type>
             <Description>TXT_KEY_UNITCLASS_RANGER</Description>
             <DefaultUnit>UNIT_RANGER</DefaultUnit>

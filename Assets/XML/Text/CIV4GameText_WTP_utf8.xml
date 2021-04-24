@@ -9,9 +9,9 @@
         <Tag>TXT_KEY_UNIT_ANIMAL_STRATEGY</Tag>
         <English>????</English>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
-        <English>The unrest in %s1_city has ended now. All business it back to normal.</English>
+        <English>The unrest in %s1_city has ended now. All business is back to normal.</English>
         <French>The unrest in %s1_city has ended now. All business it back to normal.</French>
         <German>Die Unruhen in %s1_city sind vorrüber. Das Tagesgeschäft in der Stadt nimmt wieder seinen normalen Lauf.</German>
         <Italian>The unrest in %s1_city has ended now. All business it back to normal.</Italian>
@@ -43,7 +43,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
-        <English>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</English>
+        <English>Reinforcement troops have arrived from our King after another king declared war on us.</English>
         <French>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</French>
         <German>Unterstützungstruppen unseres Königs sind eingetroffen, da man us auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
         <Italian>Reinforcement troops of our king have arrived because we were declared War on by the order of another king.</Italian>
@@ -71,7 +71,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
-        <English>Sire, another European is already living and learning in %s1_city. The Natives do not want to take a second one. [NEWLINE] We should come back when that other European has finished his time in the village.</English>
+        <English>Sire, another European is already living and learning in %s1_city. The Natives do not want to take a second one. [NEWLINE] We should come back once that first European finishes his time in the village.</English>
         <German>Sire, es lebt und lernt bereits ein anderer Europäer in %s1_city. Die Ureinwohner möchten keinen weiteren aufnehmen. [NEWLINE] Wir sollten zurückkehren, wenn der andere Europäer seine Zeit im Dorf beendet hat.</German>
     </TEXT>
     <TEXT>

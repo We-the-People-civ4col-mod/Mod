@@ -122,7 +122,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERS_HOUSE</Tag>
-        <English>Butchers House</English>
+        <English>Butcher's House</English>
         <French>Maison du Boucher</French>
         <German>Metzgerhaus</German>
         <Italian>Butchers House</Italian>
@@ -494,7 +494,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_DYERS_HOUSE</Tag>
-        <English>Dyers House</English>
+        <English>Dyer's House</English>
         <French>Maison du teinturier</French>
         <German>Färberhaus</German>
         <Italian>Dyers House</Italian>
@@ -732,7 +732,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>Great Wheelwrights Workshop</English>
+        <English>Great Wheelwright's Workshop</English>
         <French>
             <Text>Scierie industrielle:Scieries industrielles</Text>
             <Gender>Female</Gender>
@@ -1168,7 +1168,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_STATUE_GOVERNOR</Tag>
-        <English>Statue of Governor</English>
+        <English>Statue of the Governor</English>
         <French>
             <Text>Statue du Gouverneur:Statues de Gouverneur</Text>
             <Gender>Female</Gender>
@@ -1212,7 +1212,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_TANNERS_HOUSE</Tag>
-        <English>Tanners House</English>
+        <English>Tanner's House</English>
         <French>Maison du Tanneur</French>
         <German>Gerberhaus</German>
         <Italian>Tanners House</Italian>
@@ -1592,7 +1592,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDINGCLASS_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>Wheelwrights Workshop</English>
+        <English>Wheelwright's Workshop</English>
         <French>
             <Text>Scierie:Scieries</Text>
             <Gender>Female</Gender>

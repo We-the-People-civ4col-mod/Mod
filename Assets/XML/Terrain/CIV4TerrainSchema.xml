@@ -384,6 +384,10 @@
 	<ElementType name="bRequiresRiverSide" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRequiresFeature" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bGoody" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoodyForSpawningUnits" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoodyForSpawningHostileAnimals" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoodyForSpawningHostileNatives" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGoodyForSpawningHostileCriminals" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bPermanent" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iGoodyRange" content="textOnly" dt:type="int"/>
 	<ElementType name="iFeatureGrowth" content="textOnly" dt:type="int"/>
@@ -435,6 +439,10 @@
 		<element type="bRequiresFeature"/>
 		<element type="bWater"/>
 		<element type="bGoody"/>
+		<element type="bGoodyForSpawningUnits"/>
+		<element type="bGoodyForSpawningHostileAnimals"/>
+		<element type="bGoodyForSpawningHostileNatives"/>
+		<element type="bGoodyForSpawningHostileCriminals"/>
 		<element type="bPermanent"/>
 		<element type="bUseLSystem"/>
 		<element type="iAdvancedStartCost"/>

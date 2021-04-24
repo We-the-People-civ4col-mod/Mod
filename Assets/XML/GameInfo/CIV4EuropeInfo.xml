@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Sea Level -->
+<Civ4EuropeInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<EuropeInfos>
+		<EuropeInfo>
+			<Type>EUROPE_EAST</Type>
+			<Description>TXT_KEY_EUROPE_EAST</Description>
+			<Direction>east</Direction>
+			<bStart>1</bStart>
+			<iTripLength>2</iTripLength>
+			<iMinLandDistance>4</iMinLandDistance>
+			<iWidthPercent>20</iWidthPercent>
+		</EuropeInfo>
+		<EuropeInfo>
+			<Type>EUROPE_WEST</Type>
+			<Description>TXT_KEY_EUROPE_WEST</Description>
+			<Direction>west</Direction>
+			<bStart>0</bStart>
+			<iTripLength>4</iTripLength>
+			<iMinLandDistance>4</iMinLandDistance>
+			<iWidthPercent>20</iWidthPercent>
+		</EuropeInfo>
+		<EuropeInfo>
+			<Type>EUROPE_NORTH</Type>
+			<Description>TXT_KEY_EUROPE_NORTH</Description>
+			<Direction>north</Direction>
+			<bStart>0</bStart>
+			<iTripLength>2</iTripLength>
+			<iMinLandDistance>0</iMinLandDistance>
+			<iWidthPercent>0</iWidthPercent>
+		</EuropeInfo>
+		<EuropeInfo>
+			<Type>EUROPE_SOUTH</Type>
+			<Description>TXT_KEY_EUROPE_SOUTH</Description>
+			<Direction>south</Direction>
+			<bStart>0</bStart>
+			<iTripLength>4</iTripLength>
+			<iMinLandDistance>3</iMinLandDistance>
+			<iWidthPercent>0</iWidthPercent>
+		</EuropeInfo>
+	</EuropeInfos>
+</Civ4EuropeInfo>

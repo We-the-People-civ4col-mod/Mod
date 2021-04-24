@@ -24,6 +24,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -61,6 +65,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -98,6 +106,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -135,6 +147,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -197,6 +213,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -247,6 +267,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>1</bWater>
             <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>-1</iAdvancedStartCost>
@@ -269,6 +293,368 @@
                 </TerrainMakesValid>
             </TerrainMakesValids>
             <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <WorldSoundscapeAudioScript/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_GOODY_HUT4</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT4_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_SHIPWRECK</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>1</bWater>
+            <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>1</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>40</iTilesPerGoody>
+            <iGoodyRange>20</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>0</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_COAST</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <WorldSoundscapeAudioScript/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_GOODY_HUT5</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT5</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT5_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_CAMPFIRE</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>1</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>40</iTilesPerGoody>
+            <iGoodyRange>10</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>0</iDefenseModifier>
+            <iPillageGold>0</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <WorldSoundscapeAudioScript/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_GOODY_HUT6</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT6</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT6_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>1</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>80</iTilesPerGoody>
+            <iGoodyRange>20</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>10</iDefenseModifier>
+            <iPillageGold>0</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <WorldSoundscapeAudioScript/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_GOODY_HUT8</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT8</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT8_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_HOSTILE_VILLAGE</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>1</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>80</iTilesPerGoody>
+            <iGoodyRange>20</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>10</iDefenseModifier>
+            <iPillageGold>0</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <WorldSoundscapeAudioScript/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_GOODY_HUT7</Type>
+            <Description>TXT_KEY_IMPROVEMENT_GOODY_HUT7</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_ANIMAL_CAVE</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>0</bWater>
+            <bGoody>1</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>1</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>-1</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>40</iTilesPerGoody>
+            <iGoodyRange>10</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>10</iDefenseModifier>
+            <iPillageGold>0</iPillageGold>
+            <bOutsideBorders>0</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_GRASS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_SAVANNAH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_PLAINS</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_DESERT</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_TUNDRA</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_MARSH</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_JUNGLE</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+            </FeatureMakesValids>
             <BonusTypeStructs/>
             <ImprovementPillage/>
             <ImprovementUpgrade/>
@@ -326,6 +712,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -483,6 +873,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>60</iAdvancedStartCost>
@@ -621,6 +1015,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -738,6 +1136,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -844,6 +1246,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -951,6 +1357,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1013,6 +1423,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1075,6 +1489,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1137,6 +1555,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1194,13 +1616,17 @@
             <bActsAsCity>0</bActsAsCity>
             <bHillsMakesValid>0</bHillsMakesValid>
             <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
             <bRequiresRiverSide>0</bRequiresRiverSide>
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
+            <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iTilesPerGoody>0</iTilesPerGoody>
@@ -1270,6 +1696,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>25</iAdvancedStartCost>
@@ -1386,6 +1816,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -1543,6 +1977,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>60</iAdvancedStartCost>
@@ -1681,6 +2119,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -1790,6 +2232,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>36</iAdvancedStartCost>
@@ -1907,6 +2353,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2013,6 +2463,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2115,6 +2569,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2177,6 +2635,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2239,6 +2701,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2301,6 +2767,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
@@ -2358,13 +2828,17 @@
             <bActsAsCity>0</bActsAsCity>
             <bHillsMakesValid>0</bHillsMakesValid>
             <bRiverSideMakesValid>0</bRiverSideMakesValid>
-            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresFlatlands>1</bRequiresFlatlands>
             <bRequiresRiverSide>0</bRequiresRiverSide>
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
-            <bUseLSystem>0</bUseLSystem>
+            <bUseLSystem>1</bUseLSystem>
             <iAdvancedStartCost>24</iAdvancedStartCost>
             <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
             <iTilesPerGoody>0</iTilesPerGoody>
@@ -2434,6 +2908,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>25</iAdvancedStartCost>
@@ -2518,6 +2996,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -2591,6 +3073,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>80</iAdvancedStartCost>
@@ -2664,6 +3150,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -2731,6 +3221,10 @@
             <bRequiresFeature>0</bRequiresFeature>
             <bWater>0</bWater>
             <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
             <bPermanent>0</bPermanent>
             <bUseLSystem>0</bUseLSystem>
             <iAdvancedStartCost>30</iAdvancedStartCost>
@@ -2769,6 +3263,52 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_SNOW</TerrainType>
+                    <bMakesValid>1</bMakesValid>
+                </TerrainMakesValid>
+            </TerrainMakesValids>
+            <FeatureMakesValids/>
+            <BonusTypeStructs/>
+            <ImprovementPillage/>
+            <ImprovementUpgrade/>
+            <RouteYieldChanges/>
+            <bGraphicalOnly>0</bGraphicalOnly>
+        </ImprovementInfo>
+        <ImprovementInfo>
+            <Type>IMPROVEMENT_RAFT_STATION</Type>
+            <Description>TXT_KEY_IMPROVEMENT_RAFT_STATION</Description>
+            <Civilopedia>TXT_KEY_IMPROVEMENT_RAFT_STATION_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_IMPROVEMENT_RAFT_STATION</ArtDefineTag>
+            <PrereqNatureYields/>
+            <YieldIncreases/>
+            <RiverSideYieldChanges/>
+            <HillsYieldChanges/>
+            <bActsAsCity>0</bActsAsCity>
+            <bMonastery>0</bMonastery>
+            <bHillsMakesValid>0</bHillsMakesValid>
+            <bRiverSideMakesValid>0</bRiverSideMakesValid>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiverSide>0</bRequiresRiverSide>
+            <bRequiresFeature>0</bRequiresFeature>
+            <bWater>1</bWater>
+            <bGoody>0</bGoody>
+            <bGoodyForSpawningUnits>0</bGoodyForSpawningUnits>
+            <bGoodyForSpawningHostileAnimals>0</bGoodyForSpawningHostileAnimals>
+            <bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
+            <bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
+            <bPermanent>0</bPermanent>
+            <bUseLSystem>0</bUseLSystem>
+            <iAdvancedStartCost>30</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iTilesPerGoody>0</iTilesPerGoody>
+            <iGoodyRange>0</iGoodyRange>
+            <iFeatureGrowth>0</iFeatureGrowth>
+            <iUpgradeTime>0</iUpgradeTime>
+            <iDefenseModifier>20</iDefenseModifier>
+            <iPillageGold>100</iPillageGold>
+            <bOutsideBorders>1</bOutsideBorders>
+            <TerrainMakesValids>
+                <TerrainMakesValid>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
                     <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
             </TerrainMakesValids>

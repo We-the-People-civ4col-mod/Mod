@@ -490,7 +490,8 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		}
 	}
 
-	if (pUnit->getOwnerINLINE() != GC.getGameINLINE().getActivePlayer() && !pUnit->getUnitInfo().isHiddenNationality())
+	//WTP, ray fixed Nationality Text displayed for Barbarians / Wild Animals
+	if (pUnit->getOwnerINLINE() != GC.getGameINLINE().getActivePlayer() && !pUnit->getUnitInfo().isHiddenNationality() && pUnit->getOwnerINLINE() != GC.getGameINLINE().getBarbarianPlayer())
 	{
 		szString.append(L", ");
 		szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, GET_PLAYER(pUnit->getOwnerINLINE()).getPlayerTextColorR(), GET_PLAYER(pUnit->getOwnerINLINE()).getPlayerTextColorG(), GET_PLAYER(pUnit->getOwnerINLINE()).getPlayerTextColorB(), GET_PLAYER(pUnit->getOwnerINLINE()).getPlayerTextColorA(), GET_PLAYER(pUnit->getOwnerINLINE()).getName());
@@ -1224,6 +1225,15 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_CAN_FOUND"));
 	}
 
+	//WTP, ray, Large Rivers - START
+	if (kProfession.isCanCrossLargeRivers())
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROFESSION_CAN_CROSS_LARGE_RIVERS"));
+	}
+	//WTP, ray, END
+
+
 	/// Move Into Peak - start - Nightinggale
 	if (kProfession.allowsMoveIntoPeak())
 	{
@@ -1751,7 +1761,8 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 		break;
 
 	case DOMAIN_LAND:
-		bValid = !(pPlot->isWater());
+		bValid = gDLL->getInterfaceIFace()->getSelectionList()->canMoveInto(pPlot, true);
+		//bValid = !(pPlot->isWater());
 		break;
 
 	case DOMAIN_IMMOBILE:
@@ -6322,14 +6333,58 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 	{
 		if (info.isWater())
 		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER"));
+			//WTP, ray, Large Rivers - START
+			if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS"));
+			}
+
+			// old code in else
+			else
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER"));
+			}
+			//WTP, ray, Large Rivers - END
 		}
 		if (info.isRequiresFlatlands())
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ONLY_BUILD_FLATLANDS"));
 		}
+		//WTP, ray, Large Rivers - START
+		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
+		}
+		//WTP, ray, Large Rivers - END
+
+		//WTP, ray, Large Rivers
+		//WTP, Unit only Goodies
+		// START texts in Colopedia
+		if (info.isGoodyForSpawningUnits())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_UNITS"));
+		}
+		if (info.isGoodyForSpawningHostileAnimals())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_ANIMALS"));
+		}
+		if (info.isGoodyForSpawningHostileNatives())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_NATIVES"));
+		}
+		if (info.isGoodyForSpawningHostileCriminals())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_GOODY_FOR_SPAWNING_HOSTILE_CRIMINALS"));
+		}
+		// END texts in Colopedia
 	}
 
 	if (info.getImprovementUpgrade() != NO_IMPROVEMENT)
@@ -6877,6 +6932,15 @@ void CvGameTextMgr::setFeatureHelp(CvWStringBuffer &szBuffer, FeatureTypes eFeat
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_FEATURE_NO_IMPROVEMENT"));
 	}
+
+	//WTP, ray, Large Rivers - START
+	// Pedia text for Crossing Large Rivers
+	if (feature.isTerrain(TERRAIN_LARGE_RIVERS))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_TERRAIN_FEATURE_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
+	}
+	//WTP, ray, Large Rivers - START
 }
 
 

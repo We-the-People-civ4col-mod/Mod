@@ -81,7 +81,7 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,12</Button>
             <FontButtonIndex>24</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_TOBACCO</Type>
@@ -136,7 +136,7 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,8,12</Button>
             <FontButtonIndex>13</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_DEER</Type>
@@ -202,7 +202,7 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,10</Button>
             <FontButtonIndex>43</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_BISON</Type>
@@ -231,7 +231,7 @@
             <fScale>1</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cocoa/cocoa.nif</NIF>
-            <KFM>Art/Terrain/Resources/Cocoa/cocoa.kfm</KFM>
+            <KFM>Art/Terrain/Resources/Coffee/Coffee.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,6,11</Button>
             <FontButtonIndex>40</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -268,7 +268,7 @@
             <Button>,Art/Interface/Buttons/Unit_Resource_Atlas.dds,1,16</Button>
             <FontButtonIndex>31</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HIGH_SEA_FISH</Type>
@@ -279,7 +279,7 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,11</Button>
             <FontButtonIndex>15</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HORSES</Type>
@@ -345,7 +345,7 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,3,13</Button>
             <FontButtonIndex>33</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_WALRUSS</Type>
@@ -356,7 +356,7 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,7,13</Button>
             <FontButtonIndex>34</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_SEA_OTTERS</Type>
@@ -367,7 +367,7 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,4,13</Button>
             <FontButtonIndex>32</FontButtonIndex>
             <bShadowCastor>0</bShadowCastor>
-            <bRefractionCastor>0</bRefractionCastor>
+            <bRefractionCastor>1</bRefractionCastor>
         </BonusArtInfo>
         <BonusArtInfo>
             <Type>ART_DEF_BONUS_HEMP</Type>
@@ -490,5 +490,16 @@
             <bShadowCastor>1</bShadowCastor>
             <bRefractionCastor>0</bRefractionCastor>
         </BonusArtInfo>
+		<BonusArtInfo>
+			<Type>ART_DEF_BONUS_KAKTEEN_MIT_GRASS</Type>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>0.8</fInterfaceScale>
+			<NIF>Art/Terrain/Resources/Cactus/cactus.nif</NIF>
+			<KFM/>
+			<Button>,Art/colonization_atlas_professions_bonus.dds,5,14</Button>
+			<FontButtonIndex>49</FontButtonIndex>
+			<bShadowCastor>1</bShadowCastor>
+			<bRefractionCastor>0</bRefractionCastor>
+		</BonusArtInfo>
     </BonusArtInfos>
 </Civ4ArtDefines>
