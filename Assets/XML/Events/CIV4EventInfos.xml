@@ -29186,7 +29186,7 @@
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
-            <iGenericParameter2>66</iGenericParameter2>
+            <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>500</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
@@ -29252,7 +29252,7 @@
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
             <iGenericParameter1>500</iGenericParameter1>
-            <iGenericParameter2>4</iGenericParameter2>
+            <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
@@ -29318,7 +29318,7 @@
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
             <iGenericParameter1>500</iGenericParameter1>
-            <iGenericParameter2>66</iGenericParameter2>
+            <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
@@ -29384,7 +29384,7 @@
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
             <iGenericParameter1>500</iGenericParameter1>
-            <iGenericParameter2>66</iGenericParameter2>
+            <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
@@ -36351,5 +36351,5 @@
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
         </EventInfo>
-	</EventInfos>
+    </EventInfos>
 </Civ4EventInfos>

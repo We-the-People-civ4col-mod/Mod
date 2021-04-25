@@ -12013,8 +12013,8 @@
             <RoutesRequired/>
             <Events>
                 <Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE</Event>
-				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_1</Event>
-				<Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_2</Event>
+                <Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_1</Event>
+                <Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_DONE_2</Event>
             </Events>
             <PrereqEvents>
                 <Event>EVENT_EUROPE_TRADE_QUEST_TOBACCO_START</Event>

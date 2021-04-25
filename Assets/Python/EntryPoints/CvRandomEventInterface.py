@@ -2972,6 +2972,10 @@ def CanDoEuropeTrade(argsList, iYieldID, iQuantity):
 	if not player.isPlayable():
 		return false
 	
+	# this here should not be needed because isPlayable but since we have Asserts ... 
+	if player.isNative():
+		return false
+	
 	king = gc.getPlayer(player.getParent())
 	if not king.isEurope():
 		return false
@@ -3010,7 +3014,7 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 	
 	# we get the Yield as Parameter from Event 
 	yields = {
-		66 : "YIELD_FOOD",
+		0 : "YIELD_FOOD",
 		1 : "YIELD_LUMBER",
 		2 : "YIELD_STONE",
 		3 : "YIELD_HEMP",
@@ -3094,7 +3098,7 @@ def getHelpQuestDoneEuropeTradePriceAndAttitude(argsList):
 	
 	# we get the Yield as Parameter from Event 
 	yields = {
-		66 : "YIELD_FOOD",
+		0 : "YIELD_FOOD",
 		1 : "YIELD_LUMBER",
 		2 : "YIELD_STONE",
 		3 : "YIELD_HEMP",
@@ -3179,7 +3183,7 @@ def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
 	
 	# getting the Yield for the Price Change
 	yields = {
-		66 : "YIELD_FOOD",
+		0 : "YIELD_FOOD",
 		1 : "YIELD_LUMBER",
 		2 : "YIELD_STONE",
 		3 : "YIELD_HEMP",
@@ -3969,6 +3973,32 @@ def canTriggerEuropeTradeQuest_SAILCLOTH_DONE(argsList):
 	
 	return bTrigger
 
+def canTriggerEuropeTradeQuest_CLOTH_START(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_CLOTH_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerEuropeTradeQuest_CLOTH_DONE(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_CLOTH_DONE")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
 def canTriggerEuropeTradeQuest_TOOLS_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
@@ -4229,7 +4259,7 @@ def canTriggerEuropeTradeQuest_GEMS_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_SUGAR_START(argsList):	 
+def canTriggerEuropeTradeQuest_SUGAR_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SUGAR_START")
@@ -4242,7 +4272,7 @@ def canTriggerEuropeTradeQuest_SUGAR_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_SUGAR_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_SUGAR_DONE(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SUGAR_DONE")
@@ -4255,7 +4285,7 @@ def canTriggerEuropeTradeQuest_SUGAR_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_WOOL_CLOTH_START(argsList):	 
+def canTriggerEuropeTradeQuest_WOOL_CLOTH_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_START")
@@ -4268,7 +4298,7 @@ def canTriggerEuropeTradeQuest_WOOL_CLOTH_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_WOOL_CLOTH_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_WOOL_CLOTH_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE")
@@ -4281,7 +4311,7 @@ def canTriggerEuropeTradeQuest_WOOL_CLOTH_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_COLOURED_CLOTH_START(argsList):	 
+def canTriggerEuropeTradeQuest_COLOURED_CLOTH_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_START")
@@ -4294,7 +4324,7 @@ def canTriggerEuropeTradeQuest_COLOURED_CLOTH_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_COLOURED_CLOTH_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_COLOURED_CLOTH_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_DONE")
@@ -4307,7 +4337,7 @@ def canTriggerEuropeTradeQuest_COLOURED_CLOTH_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_LEATHER_START(argsList):	 
+def canTriggerEuropeTradeQuest_LEATHER_START(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_LEATHER_START")
@@ -4320,7 +4350,7 @@ def canTriggerEuropeTradeQuest_LEATHER_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_LEATHER_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_LEATHER_DONE(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_LEATHER_DONE")
@@ -4333,7 +4363,7 @@ def canTriggerEuropeTradeQuest_LEATHER_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_COATS_START(argsList):	 
+def canTriggerEuropeTradeQuest_COATS_START(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_COATS_START")
@@ -4346,7 +4376,7 @@ def canTriggerEuropeTradeQuest_COATS_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_COATS_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_COATS_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_COATS_DONE")
@@ -4359,7 +4389,7 @@ def canTriggerEuropeTradeQuest_COATS_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_PREMIUM_COATS_START(argsList):	 
+def canTriggerEuropeTradeQuest_PREMIUM_COATS_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_START")
@@ -4372,7 +4402,7 @@ def canTriggerEuropeTradeQuest_PREMIUM_COATS_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_PREMIUM_COATS_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_PREMIUM_COATS_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE")
@@ -4385,7 +4415,7 @@ def canTriggerEuropeTradeQuest_PREMIUM_COATS_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_SPICES_START(argsList):	 
+def canTriggerEuropeTradeQuest_SPICES_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SPICES_START")
@@ -4398,7 +4428,7 @@ def canTriggerEuropeTradeQuest_SPICES_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_SPICES_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_SPICES_DONE(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SPICES_DONE")
@@ -4411,7 +4441,7 @@ def canTriggerEuropeTradeQuest_SPICES_DONE(argsList):
 	
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_SPICES_START(argsList):	 
+def canTriggerEuropeTradeQuest_SPICES_START(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SPICES_START")
@@ -4424,7 +4454,7 @@ def canTriggerEuropeTradeQuest_SPICES_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_SPICES_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_SPICES_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SPICES_DONE")
@@ -4437,7 +4467,7 @@ def canTriggerEuropeTradeQuest_SPICES_DONE(argsList):
 	
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_BEER_START(argsList):	 
+def canTriggerEuropeTradeQuest_BEER_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_BEER_START")
@@ -4450,7 +4480,7 @@ def canTriggerEuropeTradeQuest_BEER_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_BEER_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_BEER_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_BEER_DONE")
@@ -4463,7 +4493,7 @@ def canTriggerEuropeTradeQuest_BEER_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_WINE_START(argsList):	 
+def canTriggerEuropeTradeQuest_WINE_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_WINE_START")
@@ -4476,7 +4506,7 @@ def canTriggerEuropeTradeQuest_WINE_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_WINE_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_WINE_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_WINE_DONE")
@@ -4489,7 +4519,7 @@ def canTriggerEuropeTradeQuest_WINE_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_WHALE_OIL_START(argsList):	 
+def canTriggerEuropeTradeQuest_WHALE_OIL_START(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_START")
@@ -4502,7 +4532,7 @@ def canTriggerEuropeTradeQuest_WHALE_OIL_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_WHALE_OIL_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_WHALE_OIL_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_DONE")
@@ -4515,7 +4545,7 @@ def canTriggerEuropeTradeQuest_WHALE_OIL_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_FURNITURE_START(argsList):	 
+def canTriggerEuropeTradeQuest_FURNITURE_START(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_FURNITURE_START")
@@ -4528,7 +4558,7 @@ def canTriggerEuropeTradeQuest_FURNITURE_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_FURNITURE_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_FURNITURE_DONE(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_FURNITURE_DONE")
@@ -4541,7 +4571,7 @@ def canTriggerEuropeTradeQuest_FURNITURE_DONE(argsList):
 	
 	return bTrigger
 
-def canTriggerEuropeTradeQuest_SALT_START(argsList):	 
+def canTriggerEuropeTradeQuest_SALT_START(argsList):
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SALT_START")
@@ -4554,7 +4584,7 @@ def canTriggerEuropeTradeQuest_SALT_START(argsList):
 	 
 	return bTrigger
 	
-def canTriggerEuropeTradeQuest_SALT_DONE(argsList):	 
+def canTriggerEuropeTradeQuest_SALT_DONE(argsList): 
 	
 	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
 	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_SALT_DONE")
