@@ -3064,7 +3064,8 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 		47 : "YIELD_RUM",
 		48 : "YIELD_WINE",
 		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE"
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
 		}
 	# First we get the Yield for this Event
 	iChoose = yields[event.getGenericParameter(2)]
@@ -3148,7 +3149,8 @@ def getHelpQuestDoneEuropeTradePriceAndAttitude(argsList):
 		47 : "YIELD_RUM",
 		48 : "YIELD_WINE",
 		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE"
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
 		}
 	iChoose = yields[event.getGenericParameter(2)]
 	iYield = gc.getInfoTypeForString(iChoose)
@@ -3233,7 +3235,8 @@ def applyQuestDoneEuropeTradePriceAndAttitude(argsList):
 		47 : "YIELD_RUM",
 		48 : "YIELD_WINE",
 		49 : "YIELD_WHALE_OIL",
-		50 : "YIELD_FURNITURE"
+		50 : "YIELD_FURNITURE",
+		51 : "YIELD_LUXURY_GOODS"
 		}
 	
 	# changing the Price
