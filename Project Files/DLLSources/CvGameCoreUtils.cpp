@@ -1896,13 +1896,21 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 //
 void postLoadGameFixes()
 {
-	// unit yield cache - start - Nightinggale
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	// deal with plots
+	CvMap& kMap = GC.getMapINLINE();
+	const int iNumPlots = kMap.numPlotsINLINE();
+	
+	// reset visibility count as it is garbage right now
+	for (int iI = 0; iI < iNumPlots; ++iI)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-		pLoopPlot->setYieldCache();
+		kMap.plotByIndexINLINE(iI)->m_em_iVisibilityCount.reset();
 	}
-	// unit yield cache - end - Nightinggale
+
+	// set proper cache for all plots (doable now that the entire savegame have been loaded
+	for (int iI = 0; iI < iNumPlots; ++iI)
+	{
+		kMap.plotByIndexINLINE(iI)->postLoadFixes();
+	}
 }
 /// post load function - end - Nightinggale
 

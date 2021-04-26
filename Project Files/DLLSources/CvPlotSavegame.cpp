@@ -492,7 +492,7 @@ void CvPlot::write(CvSavegameWriter writer)
 	writer.Write(Save_CultureRangeForts, m_em_iCultureRangeForts);
 	writer.Write(Save_FoundValue, m_em_iFoundValue);
 	writer.Write(Save_PlayerCityRadiusCount, m_em_iPlayerCityRadiusCount);
-	writer.Write(Save_VisibilityCount, m_em_iVisibilityCount);
+	// m_em_iVisibilityCount recalculated on load
 	writer.Write(Save_RevealedOwner, m_em_eRevealedOwner);
 
 	writer.Write(Save_CultureRangeCities, m_em2_iCultureRangeCities);

@@ -641,11 +641,6 @@ int CyPlot::getVisibilityCount(int /*TeamTypes*/ eTeam)
 {
 	return m_pPlot ? m_pPlot->getVisibilityCount((TeamTypes)eTeam) : -1;
 }
-void CyPlot::changeVisibilityCount(int /*TeamTypes*/ eTeam, int iChange, int /*InvisibleTypes*/ eSeeInvisible)
-{
-	if (m_pPlot)
-		m_pPlot->changeVisibilityCount((TeamTypes) eTeam, iChange, (InvisibleTypes) eSeeInvisible);
-}
 int /*PlayerTypes*/ CyPlot::getRevealedOwner(int /*TeamTypes*/ eTeam, bool bDebug)
 {
 	return m_pPlot ? m_pPlot->getRevealedOwner((TeamTypes)eTeam, bDebug) : -1;

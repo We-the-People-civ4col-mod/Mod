@@ -34,6 +34,8 @@ public:
 	CvPlot();
 	virtual ~CvPlot();
 
+	friend void postLoadGameFixes();
+
 	void init(int iX, int iY);
 	void uninit();
 	void reset(int iX = 0, int iY = 0, bool bConstructorCall=false);
@@ -451,6 +453,8 @@ public:
 
 	DllExport const char* getResourceLayerIcon(ResourceLayerOptions eOption, CvWStringBuffer& szHelp, PlotIndicatorVisibilityFlags& eVisibilityFlag, ColorTypes& eColor) const;
 	DllExport CvUnit* getUnitLayerUnit(UnitLayerOptionTypes eOption, CvWStringBuffer& szHelp, PlotIndicatorVisibilityFlags& eVisibilityFlag, ColorTypes& eColor, bool& bTestEnemyVisibility) const;
+
+	void postLoadFixes();
 
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);

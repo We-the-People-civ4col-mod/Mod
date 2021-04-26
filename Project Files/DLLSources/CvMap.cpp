@@ -211,10 +211,6 @@ void CvMap::setupGraphical()
 	if (!GC.IsGraphicsInitialized())
 		return;
 
-	// Need to ensure that the cache is initialized both on map creation
-	// and when a save is loaded
-	CvPlot::setMaxVisibilityRangeCache(); // advc.003h
-
 	PROFILE_FUNC();
 
 	if (m_pMapPlots != NULL)
