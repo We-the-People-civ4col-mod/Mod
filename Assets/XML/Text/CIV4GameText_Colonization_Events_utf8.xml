@@ -1943,8 +1943,6 @@
         <English>Natives of a nearby tribe are deeply upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks are handed over to them for punishment.</English>
         <French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs sont rendus pour les punir de leur infamie.</French>
         <German>Ureinwohner eines nahegelegenen Stammes sind sehr verärgert, weil einige unserer Holzfäller einen Giant Tree gefällt haben, der ihnen heilig war. Sie fordern, dass wir ihnen die Schuldigen zur Bestrafung ausliefern.</German>
-        <Italian>Natives of a nearby tribe are heavily upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks are handed over to them for punishment.</Italian>
-        <Spanish>Natives of a nearby tribe are heavily upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks are handed over to them for punishment.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
@@ -1959,8 +1957,6 @@
         <English>The settlers from one of our villages want to celebrate a successful year and intend to invite their Native neighbours as well. They ask for our permission for the celebration, and if we want to sponsor the event.</English>
         <French>Les colons de l'un de nos villages ont célébré une année riche en succès et tiennent à inviter leur voisins indigènes. Ils demandent la permission pour cette célébration et nous demande notre concours financier.</French>
         <German>Die Siedler einer unserer Städte wollen ein erfolgreiches letztes Jahr feiern und auch ihre Nachbarn aus den nahegelegenene Ureinwohnerdörfern einladen. Sie bitten untertänigst um unsere Erlaubnis für dieses Fest und fragen, ob wir das Ereignis vielleicht sponsoren wollen.</German>
-        <Italian>The settlers from one of our villages want to celebrate a successful last year and intend to invite their Native neighbours as well. They ask for our permission for that celebration and if we want to sponsor the event.</Italian>
-        <Spanish>The settlers from one of our villages want to celebrate a successful last year and intend to invite their Native neighbours as well. They ask for our permission for that celebration and if we might sponsor the event.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HALLOWEEN</Tag>
@@ -1999,32 +1995,24 @@
         <English>A deserted wolf cub has been found in the wilderness.</English>
         <French>Un louveteau abandonné a été trouvé dans le désert.</French>
         <German>Ein verlassener Wolfswelpe wurde in der Wildnis gefunden.</German>
-        <Italian>A deserted wolf whelp has been found in the wilderness.</Italian>
-        <Spanish>A deserted wolf whelp has been found in the wilderness.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DESERTED_WOLF_WHELP</Tag>
         <English>Our men have found a deserted wolf cub in the wilderness. His mother is probably dead. Perhaps this young beast could be tamed or else sold to some crazy rich man.</English>
         <French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être dompté ou même vendu à un home riche qui s'ennuie.</French>
         <German>Einer unserer Männer hat einen verlassenen Wolfswelpen in der Wildnis gefunden. Seine Mutter ist wahrscheinlich tot. Vielleicht kann das kleine Biest ja gezähmt werden. Oder wir verkaufen es einem Reichen, der gelangweilt genug ist.</German>
-        <Italian>Our men have found a deserted wolf whelp in the wilderness. His mother is probably dead. Eventually this young beast can be tamed or it could be sold to some crazy and bored rich man.</Italian>
-        <Spanish>Our men have found a deserted wolf whelp in the wilderness. His mother is probably dead. Eventually this young beast can be tamed or it could be sold to some crazy and bored rich man.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TAVERN_VS_CHAPEL</Tag>
         <English>Some left-over construction materials from a former colony have been found.</English>
         <French>Certains matériaux de construction délaissés à l'époque de la fondation de la colonie ont été retrouvés.</French>
         <German>Einige übriggelassene Baumaterialien von der Gründung einer Kolonie wurden entdeckt.</German>
-        <Italian>Some left over construction materials from foundation of a colony were found.</Italian>
-        <Spanish>Some left over construction materials from foundation of a colony were found.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TAVERN_VS_CHAPEL</Tag>
-        <English>Colonists at a recently founded city have materials left over from its construction. Some citizens want to use those for constructing a chapel. Others want to build a tavern. Whatever we will decide, one party will be unhappy.</English>
+        <English>Colonists at a recently founded city have materials left over from its construction. Some want to build a chapel. Others want a tavern. Whatever we decide will make one party unhappy.</English>
         <French>Certains colons ont récemment découvert des matériaux de construction délaissés lors de la fondation de leur colonoe. Certains d'entre eux souhaitent l'utiliser pour construire une chapelle, d'autres pour construire une taverne. Quelque soit la décision, l'un des deux camps ne sera pas satisfait.</French>
         <German>Einige Kolonisten einer kürzlich gegründeten Stadt haben entdeckt, dass noch einige Baumaterialien übrig geblieben sind. Einige Bewohner wollen mit diesen Baumaterialien eine Kapelle errichten. Andere Bewohner wollen stattdessen eine Taverne bauen. Wie auch immer wir uns entscheiden, eine Seite wird unzufrieden sein.</German>
-        <Italian>Some colonists of a recently founded city discovered that some materials were left over from its foundation. Some citizens want to use those for constructing a chapel. Other citizens want to build a tavern. Whatever we will decide, one party will be unhappy.</Italian>
-        <Spanish>Some colonists of a recently founded city discovered that some materials were left over from its foundation. Some citizens want to use those for constructing a chapel. Other citizens want to build a tavern. Whatever we will decide, one party will be unhappy.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BANKRUPT_FARMER</Tag>
@@ -2036,607 +2024,457 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BANKRUPT_FARMER</Tag>
-        <English>A recently immigrated farmer took a big loan to buy land but now he cannot pay. He wants to sell everything he has to repay the loan and go back to Europe.</English>
+        <English>A farmer, recently arrived, got a big loan to buy land but now he can't pay. He wants to sell everything he has to repay the loan and go back to Europe.</English>
         <French>Un fermier ayant récemment immigré s'est lourdement endetté pour acheter des terres qu'il ne peut plus rembourser. Il veut tout ce qui lui reste pour clore ses dettes et rentrer en Europe.</French>
         <German>Ein kürzlich eingewanderter Farmer hat einen hohen Kredit aufgenommen um sich etwas Land zu kaufen. Diesen kann er nun nicht mehr zurückzahlen. Daher will er sein gesamtes Habe verkaufen um damit den Kredit zu begleichen und wieder nach Europa heimzukehren.</German>
-        <Italian>A recently immigrated farmer took a high credit to buy some land which he now cannot pay anymore. He wants to sell everything he has to be able to repay the credit and go back to Europe.</Italian>
-        <Spanish>A recently immigrated farmer took a high credit to buy some land which he now cannot pay anymore. He wants to sell everything he has to be able to repay the credit and go back to Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
         <English>A large-scale military conflict in Europe has ended.</English>
         <French>Un conflit militaire d'importance a pris fin en Europe.</French>
         <German>Ein bedeutender militärischer Konflikt wurde in Europa beendet.</German>
-        <Italian>A large scale military conflict in Europe has ended.</Italian>
-        <Spanish>A large scale military conflict in Europe has ended.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
-        <English>A large-scale military conflict in Europe has ended. Many troops are not needed any more and have been sent home. Maybe we could hire some of them.</English>
+        <English>A large-scale military conflict in Europe has ended. Many troops are no longer needed and have been sent home. Maybe we could hire some of them.</English>
         <French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyés à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
         <German>Ein bedeutender militärischer Konflikt wurde in Europa beendet. Viele Truppen werden wieder entlassen. Vielleicht können wir einige davon anheuern.</German>
-        <Italian>A large scale military conflict in Europe has ended. Many troops are not needed anymore and have been sent home again. Maybe we could hire some of them.</Italian>
-        <Spanish>A large scale military conflict in Europe has ended. Many troops are not needed anymore and have been sent home again. Maybe we could hire some of them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DRUNKEN_FISHER</Tag>
         <English>A drunken fisher died in a storm.</English>
         <French>Un pêcheur alcoolisé est moort dans une tempête.</French>
         <German>Ein betrunkener Fischer starb in einem Sturm.</German>
-        <Italian>A drunken fisher died in a storm.</Italian>
-        <Spanish>A drunken fisher died in a storm.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DRUNKEN_FISHER</Tag>
-        <English>A drunken fisher fell over board during a storm and drowned. His widow now wants to sell his fishing boat, since she has no use for it.</English>
+        <English>A drunken fisher fell overboard during a storm and drowned. His widow now wants to sell his fishing boat, since she has no use for it.</English>
         <French>Un pêcheur alcoolisé est passé par dessus bord lors d'une tempête. Il s'est noyé. Sa veuve souhaite vendre son bâteau de pêche, n'en ayant plus d'usage.</French>
         <German>Ein betrunkener Fischer fiel während eines Sturms über Bord und ertrank. Seine Witwe möchte nun dessen Fischerboot verkaufen, da sie keine Verwendung dafür hat.</German>
-        <Italian>A drunken fisher fell over board during a storm and drowned. His widow now wants to sell his fishing boat, since she has no usage for it.</Italian>
-        <Spanish>A drunken fisher fell over board during a storm and drowned. His widow now wants to sell his fishing boat, since she has no usage for it.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ROTTEN_MEAT</Tag>
-        <English>A Butcher has fled Europe because he was accused of selling rotten meat.</English>
+        <English>A butcher has fled Europe where he was accused of selling rotten meat.</English>
         <French>Un boûcher venu d'Europe est accusé d'être en fuite après avoir vendu de la viande pourrie.</French>
         <German>Ein Schlachtermeister ist aus Europa geflohen, weil er verdorbenes Fleisch verkauft haben soll.</German>
-        <Italian>A Butcher has fled Europe because he was accused of selling rotten meat.</Italian>
-        <Spanish>A Butcher has fled Europe because he was accused of selling rotten meat.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ROTTEN_MEAT</Tag>
-        <English>A Butcher has arrived in the harbour of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads that he is innocent and wants us to give him a second chance.</English>
+        <English>A butcher has arrived in the harbour of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
         <French>Un ancien boûcher est arrivé au port de l'une de nos villes. Il a fui d'Europe parce qu'il était accusé d'avoir vendu de la viande pourrie. Il clâme son innocence et souhaite qu'on lui laisse une deuxième chance.</French>
         <German>Ein Schlachtermeister ist im Hafen einer unserer Städte eingetroffen. Er musste aus Europa fliehen, weil er verdorbenes Fleisch verkauft haben soll. Er behauptet aber unschuldig zu sein und bittet um eine zweite Chance.</German>
-        <Italian>A former Butcher has arrived in the harbor of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads that he is innocent and wants us to give him a second chance.</Italian>
-        <Spanish>A former Butcher has arrived in the harbor of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads that he is innocent and wants us to give him a second chance.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DESPERATE_CONQUISTADORES</Tag>
-        <English>Some desperate Conquistadores have raided a Native settlement.</English>
+        <English>Some desperate conquistadores have raided a Native settlement.</English>
         <French>Des conquistadors désespérés ont pillé un village indigène.</French>
         <German>Einige verzweifelte Conquistadores haben ein Ureinwohnerdorf überfallen.</German>
-        <Italian>Some Desperate Conquistadores have raided a Native settlement.</Italian>
-        <Spanish>Some Desperate Conquistadores have raided a Native settlement.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DESPERATE_CONQUISTADORES</Tag>
-        <English>Some Mounted Conquistadores arrived in one of our settlements in pretty bad shape. Some are wounded. Soon after Natives from a nearby tribe arrived and accused those same Conquistadores of raiding their villages.</English>
+        <English>Some mounted conquistadores showed up at one of our settlements in pretty bad shape. Some are wounded. Then Natives from a nearby tribe arrived and accused those same conquistadores of raiding their villages.</English>
         <French>Des conquistadors à cheval sont arrivés dans l'une de nos villes dans un bien triste état. Ils comptent plusieurs blessés. Peu de temps après, des indigènes d'une tribu voisine sont également arrivés et ont accusé les conquistadors d'avoir réalisé un raide dans leurs villages.</French>
         <German>Einige berittene Conquistadores in sehr schlechtem Zustand sind in einer unserer Siedlungen angekommen. Einige von ihnen sind verwundet. Kurz darauf trafen auch einige Ureinwohner eines nahegelegenen Stammes ein und beschuldigten die Conquistadores ihre Dörfer überfallen zu haben.</German>
-        <Italian>Some Mounted Conquistadores in pretty bad shape arrived in on of our settlements. Some of them are wounded. Shortly later some Natives of a nearby tribe arrived as well and accused those Conquistadores of having raided their villages.</Italian>
-        <Spanish>Some Mounted Conquistadores in pretty bad shape arrived in on of our settlements. Some of them are wounded. Shortly later some Natives of a nearby tribe arrived as well and accused those Conquistadores of having raided their villages.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRAPPER_TROUBLE</Tag>
         <English>Trouble between trappers and Natives over hunting rights.</English>
         <French>Des tensions montent entre trappeurs et indigènes à propos de droits de chasse.</French>
         <German>Konflikte zwischen Trappern und Ureinwohnern über Jagdrechte.</German>
-        <Italian>Trouble between trappers and Natives over hunting rights.</Italian>
-        <Spanish>Trouble between trappers and Natives over hunting rights.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRAPPER_TROUBLE</Tag>
-        <English>Close to one of our forts, our troops heard shots in the woods. When they went out of the fort to investigate, they walked into an argument between Natives and Trappers about hunting rights. The Natives claim that those forests still belong to them and that no white man is allowed to hunt there.</English>
+        <English>In the woods close to one of our forts our troops heard shots. When they went out to investigate they walked into an dispute between Natives and trappers about hunting rights. The Natives claim that those forests still belong to them and that no settler is allowed to hunt there.</English>
         <French>À proximité de l'un de nos forts, nos troupes ont entendu des tirs dans les bois. En menant l'investigation, ils se sont confrontés à une querelle entre des trappeurs et des indigènes à propos de droits de chasse. Les indigènes considèrent que cette forêt leur appartient et que les blancs n'y sont pas autorisés à chasser.</French>
         <German>In der Nähe eines unserer Forts haben die Truppen Schüsse in den Wäldern gehört. Als sie diese untersuchten, fanden sie Ureinwohner und Trapper in eine Streit über Jagdrechte in den umliegenden Wäldern. Die Ureinwohner behaupten, dass das Land immer noch ihnen gehört und dass dort kein weisser Mann ohne ihre Erlaubnis jagen darf.</German>
-        <Italian>Close to one of our forts, our troops heard shots in the woods. When they went out of the fort to investigate, they stumbled into an argument between Natives and Trappers about hunting rights in the nearby forests. The Natives claim that those forests still belong to them and that no white man is allowed to be hunting in them.</Italian>
-        <Spanish>Close to one of our Forts, our troops heard shots in the woods. When they went out of the fort to investigate, they stumbled into an argument between Natives and Trappers about hunting rights in the nearby forests. The Natives claim that those forests still belong to them and that no white man is allowed to be hunting in them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
         <English>Cutthroats are roaming the woods.</English>
         <French>Des truands occupent les bois.</French>
         <German>Halsabschneider machen die Wälder unsicher.</German>
-        <Italian>Cutthroats are roaming the woods.</Italian>
-        <Spanish>Cutthroats are roaming the woods.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
-        <English>We have heard reports that some cutthroats are roaming the woods. Luckily one of our forts is nearby and could send troops to intervene.</English>
+        <English>We have heard reports that outlaws are roaming the woods. Luckily one of our nearby forts can send troops to intervene.</English>
         <French>Selon plusieurs rapports, des truands occupent les bois. Heureusement nous disposons d'un fort à proximité et nous pouvons faire intervenir des troupes.</French>
         <German>In der Nähe eines unserer Forts scheinen sich einige Halsabschneider in den Wäldern zu verstecken. Sollen unsere Truppen eingreifen ?.</German>
-        <Italian>We have heard reports that some cutthroats are roaming the woods. Luckily one of our forts is nearby and could send troops to intervene.</Italian>
-        <Spanish>We have heard reports that some cutthroats are roaming the woods. Luckily one of our forts is nearby and could send troops to intervene.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
         <English>Men from the wilderness buy supplies in the forts.</English>
         <French>Des hommes dans les terres sauvages s'approvisionnent dans les forts.</French>
         <German>Männer in der Wildniss nutzen die Forts um Vorräte zu kaufen.</German>
-        <Italian>Men from the wilderness buy supplies in the forts.</Italian>
-        <Spanish>Men from the wilderness buy supplies in the forts.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
-        <English>Some men living in the nearby wilderness have come to one of our forts to buy supplies. They have gathered a lot of knowledge of the area and could be very useful to us.</English>
+        <English>Some men from the nearby wilderness haved come into our fort to buy supplies. They know the area and could be very useful to us.</English>
         <French>Des hommes vivant dans les terres sauvages sont venu pour s'approvisionner dans nos forts. Ils semblent bien connaître les environs et pourraient nous être utiles.</French>
         <German>Einige Männer, die in der nahegelegenen Wildniss leben, sind in unser Fort gekommen um Vorräte zu kaufen. Es scheint als hätten sie sehr viel Wissen über die Gegend. Daher könnten sie uns sehr nützlich sein.</German>
-        <Italian>Some men living in the nearby wilderness have come to one of our forts to buy supplies. They seem to have gathered a lot of knowledge of the area and could be very useful to us.</Italian>
-        <Spanish>Some men living in the nearby wilderness have come to one of our forts to buy supplies. They seem to have gathered a lot of knowledge of the area and could be very useful to us.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_TRADING_FOOD</Tag>
-        <English>After a long, hard winter, Natives have come to a Monastery to buy food.</English>
+        <English>After a long hard winter Natives have come to a monastery to buy food.</English>
         <French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture.</French>
         <German>Nach einem langen harten Winter kamen Ureinwohner in ein Kloster um Nahrung zu kaufen.</German>
-        <Italian>After a long, hard winter, Natives have come to a Monastery to buy some food.</Italian>
-        <Spanish>After a long, hard winter, Natives have come to a Monastery to buy some food.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_TRADING_FOOD</Tag>
-        <English>After a long, hard winter, Natives from a nearby village have come to one of our Monasteries to buy food. They do not have much to offer in exchange.</English>
+        <English>After a long hard winter, Natives from a nearby village have come to one of our monasteries hoping to buy food. They do not have much to offer in exchange.</English>
         <French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture. Ils n'ont pas grand-chose à offrir en échange.</French>
         <German>Nach einem langen harten Winter kamen Ureinwohner aus einem benachbarten Dorf in eines unserer Kloster um Nahrung zu kaufen. Sie haben aber im Austausch wenig anzubieten.</German>
-        <Italian>After a long, hard winter, Natives from a nearby village have come to one of our Monasteries to buy some food. They do not have much to offer in exchange.</Italian>
-        <Spanish>After a long, hard winter, Natives from a nearby village have come to one of our Monasteries to buy some food. They do not have much to offer in exchange.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HIDING_SLAVES</Tag>
-        <English>Some Native slaves escaped the white man and seek protection in Monasteries.</English>
+        <English>Some Native slaves escaped a foreign colony to seek protection in our monasteries.</English>
         <French>Des esclaves indigènes se sont enfuis et cherchent la protection dans nos monastères.</French>
         <German>Einige Ureinwohnersklaven entfliehen der Gefangenschaft des Weissen Mannes und suche Schutz in Klöstern.</German>
-        <Italian>Some Native slaves escaped the white man and seek protection in Monasteries.</Italian>
-        <Spanish>Some Native slaves escaped the white man and seek protection in Monasteries.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HIDING_SLAVES</Tag>
-        <English>Some Native slaves escaped from one of our European neighbours and seek protection in one of our Monasteries. Troops from our European neighbour have surrounded the Monastery and demand that their property is returned to them.</English>
+        <English>Some Native slaves escaped from a foreign colony. They want protection in one of our monasteries. Troops from our European neighbour have surrounded the monastery to demand that their property be returned to them.</English>
         <French>Des esclaves indigènes se sont enfuis de chez l'un de nos voisins européens et cherchent la protection de l'un de nos monastères. Des troupes des colons européens voisins encerclent le monastère et demandent que leur propriété leur soit rendu.</French>
         <German>Einige Ureinwohnersklaven konnten der Gefangenschaft eines unserer europäischen Nachbarn entfliehen und suchen nun Schutz in einem unserer Klöstern. Truppen unseres Nachbarn haben aber bereits das Kloster umstellt und verlangen die Herausgabe der Sklaven.</German>
-        <Italian>Some Native slaves escaped from one of our European neighbours and seek protection in one of our Monasteries. Troops of our European neighbour have surrounded the Monastery and demand that their property is returned to them.</Italian>
-        <Spanish>Some Native slaves escaped from one of our European neighbours and seek protection in one of our Monasteries. Troops of our European neighbour have surrounded the Monastery and demand that their property is returned to them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
-        <English>Natives brought a wounded warrior to a Monastery.</English>
+        <English>Natives brought a wounded warrior to a monastery.</English>
         <French>Des indigènes ont apporté un guerrier blessé dans un monastère.</French>
         <German>Ureinwohner brachten Verwundeten in ein Kloster.</German>
-        <Italian>Natives brought a wounded warrior to a Monastery.</Italian>
-        <Spanish>Natives brought a wounded warrior to a Monastery.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
-        <English>Some Natives from a nearby village brought a badly wounded young warrior to one of our Monasteries. He was attacked by a bear. If we do not help him, he will surely die.</English>
+        <English>Some Natives from a nearby village brought a badly wounded young warrior to one of our monasteries. He was attacked by a bear. If we do not help him, he will surely die.</English>
         <French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourrir.</French>
         <German>Einige Ureinwohner eines nahegelegen Dorfes haben einen schwer verwundeten jungen Krieger in eines unserer Klöster gebracht. Er scheint vom einem Bären angegriffen worden zu sein. Wenn wir nicht helfen, wird er sterben.</German>
-        <Italian>Some Native from a nearby village brought a heavily wounded young warrior to one of our Monasteries. It seems like he was attacked by a bear. If we do not help him, he will surely die.</Italian>
-        <Spanish>Some Native from a nearby village brought a heavily wounded young warrior to one of our Monasteries. It seems like he was attacked by a bear. If we do not help him, he will surely die.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_UNIVERSITY</Tag>
         <English>The first university has been founded in %s2_city.</English>
         <French>La première université a été fondée à %s2_city.</French>
         <German>Die erste Universität der Neuen Welt wurde in %s2_city gegründet.</German>
-        <Italian>The first university has been founded in %s2_city.</Italian>
-        <Spanish>The first university has been founded in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_UNIVERSITY</Tag>
-        <English>An influential society of educated men in our mother country heard about the foundation of our first University. They want to help us by sending a highly educated man to work as a professor.</English>
+        <English>An influential society of educated men in our mother country heard about the founding of our first university. They want to help us by sending a highly educated man to work as a professor.</English>
         <French>Une société influente d'hommes éduqués dans notre mère patrie ont entendu parlé de la fondation de notre première université. Ils souhaitent nous aider en nous envoyer un de leur sage pour y enseigner.</French>
         <German>Eine einflussreiche Gesellschaft gebildeter Männer unseres Heimatlandes hat von der Gründung unserer ersten Universität erfahren. Sie wollen uns helfen, indem sie uns einen hoch gebildeten Mann schicken wollen, der unsere Studenten unterrichtet.</German>
-        <Italian>A influential society of educated men in our mother country heard about the foundation of our first Universtiy. They want to help us by sending a highly educated man to work as a professor.</Italian>
-        <Spanish>A influential society of educated men in our mother country heard about the foundation of our first Universtiy. They want to help us by sending a highly educated man to work as a professor.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_YOUNG_COD_SWARM</Tag>
         <English>Large schools of cod in the oceans.</English>
         <French>Des bancs massifs de cabillauds dans les océans.</French>
         <German>Riesige Kabeljauschwärme in den Ozeanen.</German>
-        <Italian>Large swarms of cod in the oceans.</Italian>
-        <Spanish>Large swarms of cod in the oceans.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_YOUNG_COD_SWARM</Tag>
-        <English>One of our fishing boats has sighted a large school of young cod. If we harvest those fish now, the cod will probably not recover.</English>
+        <English>One of our fishing boats has sighted a large school of young cod; if we harvest those fish now, the cod will probably not recover.</English>
         <French>L'un de nos bateaux de pêche a repéré de larges bancs de jeunes cabillauds. Si nous les pêchons tous d'un seul coup, il ne pourra probablement pas se reproduire.</French>
         <German>Eines unserer Fischerboote hat einen riesigen Schwarm junger Kabeljaufische entdeckt. Wenn wir ihn jedoch jetzt bereits abfischen, wird es sich nicht davon erholen.</German>
-        <Italian>One of our fishing boats has sighted a large swarm of young cod. If we harvest those fish now, the swarm will probably not recover.</Italian>
-        <Spanish>One of our fishing boats has sighted a large swarm of young cod. If we harvest those fish now, the swarm will probably not recover.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS</Tag>
-        <English>An influential trading company wants to expand its business in the New World. It offers a reward to the first colony to build 5 cities with harbours.</English>
+        <English>An influential trading company wants to expand its business in the New World. It offers a reward to the first colony to build five cities with harbours.</English>
         <French>Une grande compagnie financière souhaite développer ses activités dans le Nouveau Monde. Elle offre une récompense à la première colonie qui construira 5 villes disposant de docks ou de meilleurs ports.</French>
         <German>Eine einflussreiche Handelsgesellschaft will ihre Unternehmungen in der Neuen Welt ausweiten. Sie bietet daher der ersten Kolonie, die 5 Städte mit einfachen oder ausgebauten Häfen errichtet, eine Belohnung an.</German>
-        <Italian>An influential trading company wants to expand its business in the New World. It offers a reward to the first colony to build 5 cities with Docks or even better harbours.</Italian>
-        <Spanish>An influential trading company wants to expand its business in the New World. It offers a reward to the first colony to build 5 cities with Docks or even better harbours.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_DOCKS</Tag>
-        <English>Another colony has built harbours in 5 cities before you. They are now granted support from an influential trading company.</English>
+        <English>Another colony has built harbours in five cities first. They've won the support offered by the influential trading company.</English>
         <French>Une autre puissance a construit 5 ports avant vous. Ils ont obtenu le soutien de la compagnie financière influente.</French>
         <German>Eine andere Kolonie konnte vor euch in 5 Städten Häfen errichten. Sie werden daher nun von einer einflussreiche Handelsgesellschaft unterstützt.</German>
-        <Italian>Another colony has built harbours in 5 cities before you. They are now granted support from an influential trading company.</Italian>
-        <Spanish>Another colony has built harbours in 5 cities before you. They are now granted support from an influential trading company.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_DOCKS_DONE</Tag>
-        <English>A colonial power has built harbours in 5 cities before any other colony could.</English>
+        <English>A colonial power has built harbours in five cities ahead of every other colony.</English>
         <French>Une colonie a été la première a construire 5 ports avant les autres.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Häfen errichten.</German>
-        <Italian>A colonial power hasbuilt harbours in 5 cities before any other colony could.</Italian>
-        <Spanish>A colonial power hasbuilt harbours in 5 cities before any other colony could.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS_DONE</Tag>
-        <English>You have built harbours in 5 cities before any other colony could. You are now granted support from an influential trading company. Choose your reward.</English>
+        <English>You have built harbours in five cities before any other colony could. You now have support from an influential trading company. Choose your reward.</English>
         <French>Vous avez été le première à construire 5 ports dans vos colonies. Vous avez obtenu le soutien d'une grande compagnie financière. Choisissez votre récompense.</French>
         <German>Eure Kolonie konnte vor allen anderen in 5 Städten Häfen errichten. Ihr werdet daher nun von einer einflussreiche Handelsgesellschaft unterstützt. Wählt eure Belohnung.</German>
-        <Italian>You have built harbours in 5 cities before any other colony could. You are now granted support from an influential trading company. Choose your reward.</Italian>
-        <Spanish>You have built harbours in 5 cities before any other colony could. You are now granted support from an influential trading company. Choose your reward.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS</Tag>
-        <English>A group of private traders in our colony insists that we must create more markets. They even offer us a reward, if we are the first colony to have 5 cities with markets.</English>
+        <English>A group of private traders in our colony insists that we need more markets. They even offer a reward if we can be the first to have five cities with markets.</English>
         <French>Des négociants privés dans nos colonies nous demandent d'investir dans davantage de marchés. Ils nous proposent même une récompense si nous devenons la première puissance coloniale à construire 5 marchés.</French>
         <German>Eine einflussreiche Gruppe von Händler aus unseren Städten fordert, dass wir mehr Märkte in den Kolonien bauen. Sie bietet als Anreiz sogar eine Belohnung, falls wir als erste erste Kolonie in 5 Städten Märkte errichtet haben.</German>
-        <Italian>A group of private traders in our colony demands that we invest into more markets in the colonies. They even offer a reward to us, if we are the first colony to have 5 cities with markets.</Italian>
-        <Spanish>A group of private traders in our colony demands that we invest into more markets in the colonies. They even offer a reward to us, if we are the first colony to have 5 cities with markets.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_MARKETS</Tag>
-        <English>Another colony has built markets in 5 cities before you. You have lost the chance to get the reward from our private traders.</English>
+        <English>Another colony has built markets in five cities before you. You've missed the chance to get that reward from the private traders.</English>
         <French>Une autre colonie a construit 5 marchés dans ses villes avant nous. Vous avez perdu votre chance de gagner une récompense de la part des négociants privés.</French>
         <German>Eine andere Kolonie konnte vor euch in 5 Städten Märkte errichten. Dadurch habt ihr die Chance auf eine Belohung durch unsere eigenen Händler vertan.</German>
-        <Italian>Another colony has built markets in 5 cities before you. You have lost the chance to win the reward of our private traders.</Italian>
-        <Spanish>Another colony has built markets in 5 cities before you. You have lost the chance to win the reward of our private traders.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_MARKETS_DONE</Tag>
-        <English>A colonial power has built markets in 5 cities before all other colonies could.</English>
+        <English>Another colonial power is the first to have markets in five cities.</English>
         <French>Une puissance coloniale a été la première à construire des marchés dans 5 villes.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Märkte errichten.</German>
-        <Italian>A colonial power has built markets in 5 cities before all other colonies could.</Italian>
-        <Spanish>A colonial power has built markets in 5 cities before all other colonies could.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS_DONE</Tag>
-        <English>You have built markets in 5 cities before all other colonies could. The group of private traders now asks which reward they should offer.</English>
+        <English>You've built markets in five cities before any other colony could. The private traders now ask which reward they should offer.</English>
         <French>Vous avez été le premier à construire 5 marchés dans vos villes. Les négociants privés vous proposent de choisir votre récompense.</French>
         <German>Eure Kolonie konnte vor allen anderen in 5 Städten Märkte errichten. Die Händler aus unseren Städten fragen nun, welche Belohnung ihr dafür wollt.</German>
-        <Italian>You have built markets in 5 cities before all other colonies could. The group of private traders now asks which reward they could offer.</Italian>
-        <Spanish>You have built markets in 5 cities before all other colonies could. The group of private traders now asks which reward they could offer.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
         <English>A corn chamber in %s2_city caught fire.</English>
         <French>Un grenier à maïs à %s2_city a pris feu.</French>
         <German>Eine Getreidekammer in %s2_city hat Feuer gefangen.</German>
-        <Italian>A corn chamber in %s2_city caught fire.</Italian>
-        <Spanish>A corn chamber in %s2_city caught fire.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BURNING_CORN_CHAMBER</Tag>
-        <English>A corn chamber in %s2_city caught fire. Although the fire was extinguished and most of the corn saved, the building is heavily damaged and will need to be repaired or it will crumble.</English>
+        <English>A corn chamber in %s2_city caught fire. Although the fire was extinguished and most of the corn saved, the building is heavily damaged and needs to be repaired or it will collapse.</English>
         <French>Un grenier à maïs a pris feu à %s2_city. Même si le feu a pu être éteint, la récolte de grain n'a pas pu être sauvée, le bâtiment est très endommagé et a besoin de réparation pour ne pas s'écrouler.</French>
         <German>Eine Getreidekammer in %s2_city hat Feuer gefangen. Obwohl das Feuer glöscht werden konnten und das meiste Getreide gerettet wurde,  muss das Gebäude wieder repariert werden, oder es wird zusammenfallen.</German>
-        <Italian>A corn chamber in %s2_city caught fire. Although the fire could be extinguished and and most of the corn itself could be saved, the building is heavily damaged and will need to be repaired or it will crumble.</Italian>
-        <Spanish>A corn chamber in %s2_city caught fire. Although the fire could be extinguished and and most of the corn could be saved, the building is heavily damaged and will need to be repaired or it will crumble.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONTAMINATED_WELL</Tag>
-        <English>The water of a well in %s2_city was contaminated with the corpse of a dead animal.</English>
+        <English>The well water in %s2_city was contaminated by a dead animal.</English>
         <French>L'eau d'un puit à %s2_city a été contaminé par le corps d'un animal mort.</French>
         <German>Das Wasser eines Brunnens in %s2_city wurde durch ein totes Tier verseucht.</German>
-        <Italian>The water of a well in %s2_city was contaminated with the corpse of a dead animal.</Italian>
-        <Spanish>The water of a well in %s2_city was contaminated with the corpse of a dead animal.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONTAMINATED_WELL</Tag>
-        <English>An animal fell into one of our wells in %s2_city and drowned. Now the corpse has contaminated the water. We will need to seal the well and dig a new one.</English>
+        <English>An animal drowned in one of our wells in %s2_city. Now the carcass has contaminated the water. We need to seal the well and dig a new one.</English>
         <French>Un animal est tombé dans un de nos puits à %s2_city et s'y est noyé. Le corps a contaminé l'eau. Nous devons condamner le puit et en construire un nouveau.</French>
         <German>Ein Tier ist in einen unserer Brunnen in %s2_city gefallen und ertrunken. Nun hat dessen Körper das Wasser verseucht. Wir werden den Brunnen versiegeln und einen neuen Brunnen graben müssen.</German>
-        <Italian>An animal fell into one of our wells in %s2_city and drowned. Now the corpse has contaminated the water. We will need to seal the well and dig a new one.</Italian>
-        <Spanish>An animal fell into one of our wells in %s2_city and drowned. Now the corpse has contaminated the water. We will need to seal the well and dig a new one.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HIDDEN_GEM_MINE</Tag>
-        <English>Natives are concealing a gem deposit.</English>
+        <English>Natives are hiding a gem deposit.</English>
         <French>Des indigènes cachent une mine de diamant.</French>
         <German>Ureinwohner verstecken ein Edelsteinvorkommen.</German>
-        <Italian>Natives are hiding a gem mine.</Italian>
-        <Spanish>Natives are hiding a gem mine.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HIDDEN_GEM_MINE</Tag>
-        <English>Our men noticed that some of the Natives that visit their city wear necklaces with beautiful stones. They're valuable gems. When asked about those stones, they say that they're sacred but will not say where they found them.</English>
+        <English>Our men noticed that some of the Natives who visit their city wear necklaces studded with beautiful stones, valuable gems. When asked about those stones, the Natives say that they're sacred and won't say where they found them.</English>
         <French>Nos hommes ont reperé des indigènes lors d'une de leur visite avec de magnifiques colliers de pierres précieuses. Ils croient qu'il s'agit de diamants. Quand la question leur a été posée, ils ont répondu qu'il s'agissait de pierres sacrées et n'ont pas voulu nous dire où ils les ont trouvés.</French>
         <German>Unsere Männer haben festgestellt, dass einige Ureinwohner die ihre Stadt besuchen Halsketten mit wunderschönen Steinen tragen. Diese scheinen wertvolle Edelsteine zu sein. Nach deren Herkunft befragt, reagierten die Ureinwohner ausweichend und sagten nur, dass diese ihnen heilig seien.</German>
-        <Italian>Our men noticed that some of the Natives that visit their city wear necklaces with beautiful looking stones. They seem to be valuable gems. When asked about those stones, they told us that they were sacred to them but did not want to say where they found them.</Italian>
-        <Spanish>Our men noticed that some of the Natives that visit their city wear necklaces with beautiful looking stones. They seem to be valuable gems. When asked about those stones, they told us that they were sacred to them but did not want to say where they found them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BEER_ROBBERY</Tag>
-        <English>Many barrels of beer have been stolen from the warehouse in %s2_city.</English>
+        <English>Several barrels of beer have been stolen from the warehouse in %s2_city.</English>
         <French>Plusieurs tonneaux de bière ont été volés dans l'entrepôt de %s2_city.</French>
         <German>Aus dem Warenhaus in %s2_city wurde Bier gestohlen.</German>
-        <Italian>Many barrels of beer have been stolen from the warehouse in %s2_city.</Italian>
-        <Spanish>Many barrels of beer have been stolen from the warehouse in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BEER_ROBBERY</Tag>
-        <English>A warehouse in %s2_city has been robbed. Cutthroats from our %s1_civ neighbours in %s6_city are suspected of looting a cartload of beer.</English>
+        <English>A warehouse in %s2_city has been robbed. Bandits from our %s1_civ neighbours in %s6_city are suspected of looting a cartload of beer.</English>
         <French>Des hommes sont entrés dans l'entrepôt de %s2_city par effraction. Des brigands provenant de chez nos voisins %s1_civ à %s6_city sont suspectés d'avoir pillés nos tonneaux de bières.</French>
         <German>Ein Lagerhaus in %s2_city wurde aufgebrochen und ausgeraubt. Es werden Diebe von %s1_civ Nachbarn in %s6_city verdächtigt, den Überfall begangen und eine Ladung Beer geraubt zu haben.</German>
-        <Italian>A warehouse in %s2_city has been roobed. Cutthroats from our %s1_civ neighbours in %s6_city are suspected of looting a cartload of beer.</Italian>
-        <Spanish>A warehouse in %s2_city has been roobed. Cutthroats from our %s1_civ neighbours in %s6_city are suspected of looting a cartload of beer.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WINE_THEFT</Tag>
         <English>Some barrels of wine have been stolen from the warehouse in %s2_city.</English>
         <French>Plusieurs tonneaux de vin ont été volés dans l'entrepôt de %s2_city.</French>
         <German>Aus dem Warenhaus in %s2_city wurde Wein gestohlen.</German>
-        <Italian>Some barrels of wine have been stolen from the warehouse in %s2_city.</Italian>
-        <Spanish>Some barrels of wine have been stolen from the warehouse in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINE_THEFT</Tag>
-        <English>A warehouse in %s2_city has been robbed. Several barrels of wine are missing. Some young hotspurs of the city are suspected of being behind all this. The citizens see this affair as a funny prank.</English>
+        <English>A warehouse in %s2_city has been robbed. Several barrels of wine are missing. Some young upstarts in the city are suspected of being behind it all. The citizens see it as an amusing prank.</English>
         <French>Des hommes sont entrés dans l'entrepôt de %s2_city par effraction. Plusieurs tonneaux de bières sont manquants. Des jeunes délinquants de la ville sont suspectés d'être à l'origine du délit. Les citoyens voit cette affaire comme une farce amusante.</French>
         <German>Ein Lagerhaus in %s2_city wurde aufgebrochen und einige Fässer Wein geraubt. Es werden es werden junge Männer aus der Stadt selbst verdächtigt. Die Bürger sehen darin einen lustigen Streich.</German>
-        <Italian>A warehouse in %s2_city has been robbed. Several barrels of wine are missing. Some young hotspurs of the city are suspected of being behind all this. The citizens see this affair as a funny prank.</Italian>
-        <Spanish>A warehouse in %s2_city has been robbed. Several barrels of wine are missing. Some young hotspurs of the city are suspected of being behind all this. The citizens see this affair as a funny prank.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_LUXURY_GOODS</Tag>
         <English>Social unrest in %s2_city.</English>
         <French>Révolte sociale à %s2_city.</French>
         <German>Aus dem Warenhaus in %s2_city wurde Wein gestohlen.</German>
-        <Italian>Social unrest in %s2_city.</Italian>
-        <Spanish>Social unrest in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LUXURY_GOODS</Tag>
-        <English>There is social unrest in %s2_city. The poorer people have joined with drunks and troublemakers and are marching towards one of our warehouses storing luxury goods. It looks like they're ready to raid it.</English>
+        <English>There is social unrest in %s2_city. The poorer people have joined with drunks and troublemakers to march towards one of our warehouses stocking luxury goods. It looks like they're ready to raid it.</English>
         <French>Il y a une révolte sociale à %s2_city. Des pauvres, des alcooliques et des perturbateurs se sont regroupés et marchent en direction de l'un de nos entrepôts qui contient des denrées précieuses. Ils semblent vouloir le piller.</French>
         <German>Es herrschen soziale Unruhen in %s2_city. Die Armen haben sich mit Betrunken und Raufbolden zusammengetan und marschieren auf eines unserer Warenhäuser, dasss Luxuswaren beinhalten. Es scheint als würden sie dieses plündern wollen.</German>
-        <Italian>There is social unrest in %s2_city. The poorer people have joined with drunks and troublemakers and are marching towards one of our warehouses with luxury goods. It seems as if they are about to raid it.</Italian>
-        <Spanish>There is social unrest in %s2_city. The poorer people have joined with drunks and troublemakers and are marching towards one of our warehouses with luxury goods. It seems as if they are about to raid it.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CATTLE_AND_SHEEP</Tag>
-        <English>Conflict between cowboys and shepherds in %s2_city.</English>
+        <English>Rangle war between cowboys and shepherds in %s2_city.</English>
         <French>Contflit entre des éleveurs et des bergers à %s2_city.</French>
         <German>Streit zwischen Rinderzüchtern und Schafzüchtern in %s2_city.</German>
-        <Italian>Conflict between cowboys and shepherds in %s2_city.</Italian>
-        <Spanish>Conflict between cowboys and shepherds in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CATTLE_AND_SHEEP</Tag>
-        <English>A serious conflict between cowboys and shepherds has arisen in %s2_city. Each side claims that the other side has too many animals which destroy pastures and water holes.</English>
+        <English>A range war between cowboys and shepherds is heating up in %s2_city. Each group says the other has too many animals which destroy pastures and waterholes.</English>
         <French>Un conflit sérieux entre des cowboys et des bergers a éclaté à %s2_city. Les deux camps considèrent que l'autre élève trop d'animaux et leur limite leur zone de pâturage.</French>
         <German>Ein ernsthaftern Konflikt zwischen Rinderzüchtern und Schafzüchtern in %s2_city keimt auf. Jede Seite behauptet, dass die andere die Weiden überweidet und die Wasserstellen verschmutzt.</German>
-        <Italian>A serious conflict between cowboys and shepherds has arisen in %s2_city. Each side claims that the other side has too much animals and is destroying pastures and watering places.</Italian>
-        <Spanish>A serious conflict between cowboys and shepherds has arisen in %s2_city. Each side claims that the other side has too much animals and is destroying pastures and watering places.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HORSE_DEAL</Tag>
-        <English>Many horses are bred in the region around %s2_city.</English>
+        <English>Many horses are bred in the pastures around %s2_city.</English>
         <French>De nombreux chevaux sont élevés dans la région autour de %s2_city.</French>
         <German>Viele Pferde werden in der Gegend um %s2_city gezüchtet.</German>
-        <Italian>Many horses are bred in the region around %s2_city.</Italian>
-        <Spanish>Many horses are bred in the region around %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HORSE_DEAL</Tag>
-        <English>A newly arrived immigrant has bought some land several miles away from %s2_city. He is dreaming of becoming a rancher and breeding horses. However he does not have enough money left to buy the livestock needed.</English>
+        <English>A newly arrived immigrant bought land several miles away from %s2_city. He dreams of becoming a rancher and breeding horses. However he does not have money left to buy the necessary livestock.</English>
         <French>Un immigrant nouvellement arrivé a acheté des terres aux alentours de %s2_city. Il rêve de devenir un propriétaire de ranch et d'élever des chevaux. Cependant il ne lui reste plus beaucoup d'argent pour acheter les animaux nécessaires.</French>
         <German>Ein kürzlich eingetroffener Immigrant hat sich etwas Land einige Meilen von %s2_city entfernt gekauft. Er träumt davon ein Rancher zu werden und Pferde zu züchten. Er hat jedoch kaum noch Geld übrig um sich die Pferde zu kaufen.</German>
-        <Italian>A newly arrived immigrant has bought some land several miles away from %s2_city. He is dreaming of becoming a rancher and breeding horses. However he does not have much money left to buy the livestock needed.</Italian>
-        <Spanish>A newly arrived immigrant has bought some land several miles away from %s2_city. He is dreaming of becoming a rancher and breeding horses. However he does not have much money left to buy the livestock needed.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FAMOUS_ACTORS</Tag>
         <English>The reputation of the theater in %s2_city is growing.</English>
         <French>La réputation de notre théâtre à %s2_city est grandissante.</French>
         <German>Der Ruf des Theaters in %s2_city wächst.</German>
-        <Italian>The reputation of the theater in %s2_city is growing.</Italian>
-        <Spanish>The reputation of the theater in %s2_city is growing.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMOUS_ACTORS</Tag>
-        <English>The reputation of the theater in %s2_city is growing. A famous group of actors from Europe is willing to perform there. Shall we hire them?</English>
+        <English>The reputation of the theater in %s2_city is growing. A famous group of European actors is willing to perform there. Shall we hire them?</English>
         <French>La réputation de notre théâtre à %s2_city est grandissante. Un groupe d'acteurs célèbres venu d'Europe veut s'y produire. Devons-nous les engager ?</French>
         <German>Der Ruf des Theaters in %s2_city wächst. Eine Gruppe berühmter Schauspieler aus Europa ist bereit dort aufzutreten. Sollen wir sie engagieren?</German>
-        <Italian>The reputation of the theater in %s2_city is growing. A famous group of actors from Europe is willing to perform there. Shall we hire them?</Italian>
-        <Spanish>The reputation of the theater in %s2_city is growing. A famous group of actors from Europe is willing to perform there. Shall we hire them?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PROSTITUTES</Tag>
         <English>Prostitutes in the saloon of %s2_city.</English>
         <French>Des prostitués dans le saloon de %s2_city.</French>
         <German>Prostituierte im Saloon von %s2_city.</German>
-        <Italian>Prostitutes in the saloon of %s2_city.</Italian>
-        <Spanish>Prostitutes in the saloon of %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PROSTITUTES</Tag>
-        <English>Some women have recently arrived in %s2_city and want to work as bar ladies in the saloon. Once the women of the city heard about that they started rioting. They claim that those bar ladies are prostitutes and will seduce their good men. If we don't chase those bar ladies away, the women will riot.</English>
+        <English>Some women have recently arrived in %s2_city and want to work as barmaids in the saloon. Once the women of the city heard about that, they were irate. They claim that those barmaids are prostitutes who will seduce their good men. If we don't ban the barmaids the women will riot.</English>
         <French>Des femmes sont récemment arrivées à %s2_city et souhaitent travailler en tant que danseuses dans le saloon. Lorsque les femmes de de la ville ont entendu parler de cette histoire, elles ont commencé à manifester. Elles prétendent que ses danseuses sont en fait des prostitués qui veulent s'en prendre à leurs hommes. Si nous ne chassons pas les danseuses, une émeute va éclater.</French>
         <German>Eine Frauen sind in %s2_city eingetroffen und wollen im Saloon als Barfrauen arbeiten. Sobald die Frauen der Stadt davon Wind bekommen haben, haben sie sofort einen kleinen Aufstand angezettelt. Sie behaupten dass diese Barfrauen in Wahrheit Prostituierte seien und ihre guten Männer verführen wollten. Wenn wir diese Barfrauen nicht verjagen, werden die Frauen durchdrehen.</German>
-        <Italian>Some women have recently arrived in %s2_city and want to work as bar ladies in the saloon. Once the women of the city heard about that they started rioting. They claim that those bar ladies are prostitutes and would seduce their good men. If we don't chase those bar ladies away, the women will riot.</Italian>
-        <Spanish>Some women have recently arrived in %s2_city and want to work as bar ladies in the saloon. Once the women of the city heard about that they started rioting. They claim that those bar ladies are prostitutes and would seduce their good men. If we don't chase those bar ladies away, the women will riot.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WILD_ANIMAL</Tag>
         <English>A dangerous wild animal is scaring the citizens of %s2_city.</English>
         <French>Un animal sauvage dangereux effraie les citoyens de %s2_city.</French>
         <German>Wildes Tier verängstigt Bevölkerung von %s2_city.</German>
-        <Italian>A dangerous wild animal is scaring the citizens of %s2_city.</Italian>
-        <Spanish>A dangerous wild animal is scaring the citizens of %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WILD_ANIMAL</Tag>
-        <English>A dangerous wild animal is scaring the citizens of %s2_city. They ask for our help.</English>
+        <English>A dangerous wild animal is scaring the citizens of %s2_city. They want our help.</English>
         <French>Une animal sauvage dangereux effraie les citoyens de %s2_city. Ils demandent de l'aide.</French>
         <German>Ein wildes Tier verängstigt die Bevölkerung von %s2_city. Sie bitten um unsere Hilfe.</German>
-        <Italian>A dangerous wild animal is scaring the citizens of %s2_city. They ask for our help.</Italian>
-        <Spanish>A dangerous wild animal is scaring the citizens of %s2_city. They ask for our help.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SMUGGLERS_CAUGHT</Tag>
         <English>Smugglers caught in %s2_city.</English>
         <French>Des contrebandiers ont été attrapés à %s2_city.</French>
         <German>Schmuggler in %s2_city gefasst.</German>
-        <Italian>Smugglers caught in %s2_city.</Italian>
-        <Spanish>Smugglers caught in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SMUGGLERS_CAUGHT</Tag>
         <English>The officials in %s2_city have caught some smugglers. They were buying salt and other goods from private traders in the city and selling it at high profits in Europe without paying customs.</English>
         <French>Des officiers de %s2_city ont attrapés des contrebandiers. Ils étaient en train d'acheter du sel et d'autres biens lorsqu'un négociant privé de la ville leur a vendu sans payer les droits de douane pour l'Europe.</French>
         <German>Die Offiziellen in %s2_city haben einige Schmuggler geschnappt. Diese haben Salz und andere Güter von privaten Händlern gekauft und dieses dann am Zoll vorbei in Europa zu hohen Profiten verkauft.</German>
-        <Italian>The officials in %s2_city have caught some smugglers. They were buying salt and other goods from private traders in the city and selling it without paying customs at high profits in Europe.</Italian>
-        <Spanish>The officials in %s2_city have caught some smugglers. They were buying salt and other goods from private traders in the city and selling it without paying customs at high profits in Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CHIEFS_DAUGHTER</Tag>
         <English>A chief's daughter fell in love with a white scout.</English>
         <French>La fille d'un chef amérindien est tombée amoureuse d'un de nos éclaireurs.</French>
         <German>Die Tochter eines Häuptlings hat sich in einen weissen Scout verliebt.</German>
-        <Italian>A chief's daughter fell in love with a white scout.</Italian>
-        <Spanish>A chief's daughter fell in love with a white scout.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CHIEFS_DAUGHTER</Tag>
-        <English>The chief's daughter and our scout fell in love. The chief himself is not very happy but loves his daughter and thus will allow the marriage if we agree as well. If they marry, the scout will stay in the village and not work for us any longer.</English>
+        <English>The chief's daughter and our scout fell in love. The chief himself is not very happy but loves his daughter and thus will allow the marriage if we agree as well. If they marry, the scout will stay in the village and no longer work for us.</English>
         <French>La fille d'un chef amérindien et l'un de nos éclaireurs sont tombés amoureux. Le chef n'est pas très heureux mais adorent sa fille, il acceptera donc le mariage si nous donnons également notre accord. S'ils se marrient, l'éclaireur restera dans le village et abandonnera sa mission.</French>
         <German>Die Tochter des Häuptlings und unser Scout haben sich verliebt. Der Häuptling ist darüber nicht besonders erfreut, liebt jedoch seine Tochter und wird der Hochzeit zustimmen, wenn auch wir unsere Zustimmung geben. Falls die beiden heiraten, wird der Scout im Dorf bleiben und nicht mehr für uns arbeiten.</German>
-        <Italian>The chief's daughter and our scout fell in love. The chief himself is not very happy but loves his daughter and thus will allow the marriage if we agree as well. If they marry, the scout will stay in the village and not work for us any longer.</Italian>
-        <Spanish>The chief's daughter and our scout fell in love. The chief himself is not very happy but loves his daughter and thus will allow the marriage if we agree as well. If they marry, the scout will stay in the village and not work for us any longer.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRAINING</Tag>
-        <English>While passing a Native village, one of our Native Mercenaries has been invited to stay for a while to exchange stories and knowledge.</English>
+        <English>Passing by an Indigenous village one of our Native mercenaries has been invited to visit to trade stories and exchange knowledge.</English>
         <French>En passant dans un village amérindien, l'un de nos mercenaires indigènes a été invité à rester un temps pour un échange d'histoire et de savoir.</French>
         <German>Während einer unserer Indianischen Söldner ein anderes Ureinwohnerdorf durchwanderte, wurde er eingeladen eine Weile zu bleiben um Geschichten auszutauschen und neues Wissen zu erlangen.</German>
-        <Italian>While passing a Native village, one of our Native Mercenaries has been invited to stay for a while to exchange stories and knowledge.</Italian>
-        <Spanish>While passing a Native village, one of our Native Mercenaries has been invited to stay for a while to exchange stories and knowledge.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DISEASED_NATIVES_FOLLOW_UP</Tag>
-        <English>A medical doctor from Europe wants to fight diseases of the White Man that are spreading in Native villages.</English>
+        <English>A medical doctor from Europe wants to fight settler diseases that are spreading through Native villages.</English>
         <French>Un médecin venu d'Europe souhaite combattre la maladie de l'Homme Blanc qui se propage dans les villages indigènes.</French>
         <German>Ein Arzt aus Europa will die Krankheiten des Weissen Mannes bekämpfen, die sich in den Dörfern der Ureinwohner verbreiten.</German>
-        <Italian>Medical Doctor from Europe wants to fight diseases of the White Man that are spreading in Native Villages.</Italian>
-        <Spanish>Medical Doctor from Europe wants to fight diseases of the White Man that are spreading in Native Villages.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DISEASED_NATIVES_FOLLOW_UP</Tag>
-        <English>A medical doctor from Europe has arrived in one of our cities. He heard Native suffering and now wants to fight the diseases of the White Man that are spreading in Native villages.</English>
+        <English>A medical doctor from Europe has arrived in one of our cities. He heard about Native suffering and now wants to fight settler diseases spreading through Native villages.</English>
         <French>Un médecin venu d'Europe est arrivé dans l'une de nos ville. Il sait que les indigènes souffrent actuellement d'une épidémie venue d'Europe et souhaite la combattre.</French>
         <German>Ein Arzt aus Europa ist in einer unserer Städte eingetroffen und will die Krankheiten des Weissen Mannes bekämpfen, die sich in den Dörfern der Ureinwohner verbreiten.</German>
-        <Italian>A medical doctor from Europe has arrived in on of our cities. He heard about the situation of the Natives and now wants to fight the diseases of the White Man that are spreading in Native Villages.</Italian>
-        <Spanish>A medical doctor from Europe has arrived in on of our cities. He heard about the situation of the Natives and now wants to fight the diseases of the White Man that are spreading in Native Villages.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BROKEN_AXIS</Tag>
         <English>One of our transports had an accident and broke its axle.</English>
         <French>L'une de nos unités de transport a eu un accident et casser un essieu.</French>
         <German>Einer unserer Warentransporte hatte einen Unfall und brach sich dabei die Achse.</German>
-        <Italian>One of our transports had an accident and broke its axis.</Italian>
-        <Spanish>One of our transports had an accident and broke its axis.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BROKEN_AXIS</Tag>
         <English>One of our transports had an accident and broke its axle. It can be repaired. If we pay to send help, it will be fixed sooner.</English>
         <French>L'une de nos unités de transport a eu un accident et casser un essieu. Même si la réparation est difficile, elle reste possible. Si nous payons pour avoir de l'aide, la réparation pourrait s'accélérer.</French>
         <German>Einer unserer Warentransporte hatte einen Unfall und brach sich dabei die Achse. Der Schaden ist zwar schwerwiegend, kann aber repariert werden. Wenn wir etwas Geld zahlen um Hilfe zu schicken, wahrscheinlich sogar recht bald.</German>
-        <Italian>One of our transports had an accident and broke its axis. It is quite difficult but possible to repair. If we pay to send some help, it will probably be repaired again sooner.</Italian>
-        <Spanish>One of our transports had an accident and broke its axis. It is quite difficult but possible to repair. If we pay to send some help, it will probably be repaired again sooner.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SECOND_CHANCE</Tag>
         <English>An officer recognized a petty criminal as a former brother in arms.</English>
         <French>Un officier a reconnu un criminel comme un ancien frère d'armes.</French>
         <German>Ein Offizier hat einen Kriminellen als ehemaligen Waffenbruder wiedererkannt.</German>
-        <Italian>An officer recognized a petty criminal as a former brother in arms.</Italian>
-        <Spanish>An officer recognized a petty criminal as a former brother in arms.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SECOND_CHANCE</Tag>
-        <English>One of our officers approaches us and tells us that he recognized one of the petty criminals as a former brother in arms. He says that the man was rewarded for bravery and was a good soldier, though he had serious problems with discipline and alcohol. He was imprisoned for attacking a superior officer after that superior insulted him. Our officer pleads with us to give the criminal a second chance.</English>
+        <English>One of our officers has come to tell us he recognizes one of the petty criminals as a former brother in arms. He says that the man was decorated for bravery, though he had serious problems with discipline and alcohol. He was imprisoned for attacking a superior officer who had insulted him. Our officer pleads with us to give the criminal a second chance.</English>
         <French>L'un de nos officiers s'est approché de nous pour nous dire qu'il avait reconnu parmi les criminels un ancien frère d'armes. Il nous a dit que l'homme avait été récompensé pour sa bravoure et que c'était un bon soldat, mais qu'il souffrait de problèmes d'alcool et de discipline. Il a été emprisonné pour avoir battu un officier supérieur qui l'avait insulté. Notre officier nous demande de donner une seconde chance à ce criminel.</French>
         <German>Einer unserer Offiziere hat einen der Kriminellen als ehemaligen Soldaten und Waffenbruder wiedererkannt. Dieser soll ein guter man und mutiger Soldat gewesen sein. Jedoch mit Problemen bei der Disziplin und mit dem Alkohol. Er wurde verurteilt, weil er einen Vorgesetzten aufgrund einer Beleidigung zusammengeschlagen hat. Unser Offizier bittet, dass wir Gnade erweisen und dem Mann eine zweite Chance geben.</German>
-        <Italian>One of our officers approaches us and tells us that he recognized one of the petty criminals as a former brother in arms. He tells that that man had been rewarded for bravery and was a good soldier, only having serious problems with discipline and alcohol. He had been imprisoned for beating a superior officer when that superior insulted him. Our officer pleads us to give the criminal a second chance.</Italian>
-        <Spanish>One of our officers approaches us and tells us that he recognized one of the petty criminals as a former brother in arms. He tells that that man had been rewarded for bravery and was a good soldier, only having serious problems with discipline and alcohol. He had been imprisoned for beating a superior officer when that superior insulted him. Our officer pleads us to give the criminal a second chance.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BRAVE_NATIVE_SLAVE</Tag>
-        <English>A Native Slave has saved the life of a colonist.</English>
+        <English>A Native slave has saved the life of a colonist.</English>
         <French>Un esclave indigène a sauvé la vie d'un de nos colons.</French>
         <German>Ein Ureinwohnersklave hat das Leben eines Siedlers gerettet.</German>
-        <Italian>A Native Slave has saved the life of a colonist.</Italian>
-        <Spanish>A Native Slave has saved the life of a colonist.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BRAVE_NATIVE_SLAVE</Tag>
-        <English>A Native Slave has saved the life of one of our colonists when wild horses were about to trample him. The colonist now asks that this slave be set free for his bravery.</English>
+        <English>A Native slave has saved the life of one of our colonists who fell beneath the hooves of wild horses. The colonist now asks that this slave be set free for his bravery.</English>
         <French>Un esclave indigène a sauvé la vie de l'un de nos colons lorsque des chevaux sont devenus fous et allaient le piétiner. Le colon demande que l'esclave recouvre sa liberté pour le remercier de son courage.</French>
         <German>Ein Ureinwohnersklave hat das Leben eines unserer Siedlers gerettet, als einige Pferde durchgingen und den Siedler beinahe überrannte. Der Siedler bitten nun, dass der Ureinwohnersklave aufgrund seines Mutes die Freiheit bekommt.</German>
-        <Italian>A Native Slave has saved the life of one of our colonists when some horses went wild and were going to stamped over him. The colonist now demands, that this slave is set free for his bravery.</Italian>
-        <Spanish>A Native Slave has saved the life of one of our colonists when some horses went wild and were going to stamped over him. The colonist now demands, that this slave is set free for his bravery.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DIPLOMATIC_CONNECTIONS</Tag>
-        <English>A Statesman is using his diplomatic connections.</English>
+        <English>A statesman is using his diplomatic connections.</English>
         <French>Un homme d'État utilise son réseau diplomatique.</French>
         <German>Ein Staatsmann nutzt seine diplomatischen Beziehungen.</German>
-        <Italian>A Statesman is using his diplomatic connections.</Italian>
-        <Spanish>A Statesman is using his diplomatic connections.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DIPLOMATIC_CONNECTIONS</Tag>
-        <English>One of our Statesmen told us that he has diplomatic connections to another statesman from one of our colonial neighbours. They could even be called friends. He also knows that the other statesman is not very satisfied with his current employment and could be convinced to work for us instead.</English>
+        <English>One of our statesmen says he has diplomatic connections to a statesman with one of our colonial neighbours. They might even be called friends. He also knows that the other statesman is dissatisfied with his current employment and could be convinced to come and work for us.</English>
         <French>Un de nos hommes d'États nous a expliqué qu'il avait des relations diplomatiques proches avec un collègue chez une puissance coloniale voisine. Il dit qu'ils peuvent même être considéré comme amis. Il sait également que cet autre homme d'État vit des moments difficiles et pourraient être tenté de venir nous rejoindre.</French>
         <German>Einer unserer Staatsmänner berichtet uns, dass er diplatische Beziehungen zu einem andere Staatsmann eines unsere europäischen Nachbarn hat und diesen sogar als Freund bezeichnet. Er weiss von diesem Staatsmann, dass dieser mit seiner aktuellen Stelle unzufrieden ist und überzeugt werden könnte stattdessen für uns zu arbeiten.</German>
-        <Italian>One of our Statesmen told us, that he does have some diplomatic relations to another Statesman from one of our colonial neighbours. He says that they could even be called friends. He also knows that the other Statesman is not very satisfied with his current employment and could be convinced to work for us instead.</Italian>
-        <Spanish>One of our Statesmen told us, that he does have some diplomatic relations to another Statesman from one of our colonial neighbours. He says that they could even be called friends. He also knows that the other Statesman is not very satisfied with his current employment and could be convinced to work for us instead.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRINTING_PRESS</Tag>
-        <English>The Printing Press in %s2_city still functions.</English>
+        <English>The printing ress in %s2_city still functions.</English>
         <French>L'imprimerie de %s2_city n'est pas utilisée à pleine capacité.</French>
         <German>Die Druckerpresse in %s2_city hat noch freie Druckkapazität.</German>
-        <Italian>Printing Press in %s2_city still has printing capacity.</Italian>
-        <Spanish>Printing Press in %s2_city still has printing capacity.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRINTING_PRESS</Tag>
-        <English>The Printing Press in %s2_city still is working. But the citizens ask for something besides political pamphlets to be printed.</English>
+        <English>The printing press in %s2_city still is working. Citizens would like to see something besides political pamphlets printed.</English>
         <French>L'imprimerie de %s2_city n'est pas utilisée à pleine capacité. Les citoyens demandent si nous ne pourrions pas imprimer autre chose que des pamphlets politiques.</French>
         <German>Die Druckerpresse in %s2_city hat noch freie Druckkapazität. Die Bewohner der Stadt bitten aber, dass etwas anderes als politische Pamphlete gedruckt werden solle.</German>
-        <Italian>The Printing Press in %s2_city still has printing capacity. But the citizens ask for something else than political pamphlets to be printed.</Italian>
-        <Spanish>The Printing Press in %s2_city still has printing capacity. But the citizens ask for something else than political pamphlets to be printed.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_EXPERIENCED_SAILORS</Tag>
         <English>Experienced Sailors to be hired in %s2_city.</English>
         <French>Des marins experimentés sont à embaucher à %s2_city.</French>
         <German>Erfahrene Seeleute wollen in %s2_city angeheuert werden.</German>
-        <Italian>Experienced Sailors to be hired in %s2_city.</Italian>
-        <Spanish>Experienced Sailors to be hired in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EXPERIENCED_SAILORS</Tag>
-        <English>Experienced Sailors have arrived in %s2_city and are looking for employment. They could be hired for one of our ships. They look like they have gone through some really hard times.</English>
+        <English>Experienced sailors have arrived in %s2_city looking for employment. They could be useful on one of our ships. They look like they've gone through really hard times.</English>
         <French>Des marins experimentés sont arrivés à %s2_city et cherchent un emploi. Ils pourraient être embauchés dans l'un de nos navires. Ils ont l'air d'avoir vécu des épreuves difficiles.</French>
         <German>Erfahrene Seeleute sind in %s2_city eingetroffen und suchen nach Arbeit. Wir könnten sie als Besatzung für eines unserer Schiffe anheuern. Sie scheinen harte Zeiten durchgemacht zu haben.</German>
-        <Italian>Experienced Sailors have arrived in %s2_city and are looking for employment. They could be hired for one of our ships. They look like they have gone through some really hard times.</Italian>
-        <Spanish>Experienced Sailors have arrived in %s2_city and are looking for employment. They could be hired for one of our ships. They look like they have gone through some really hard times.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BISHOP_APPOINTMENT</Tag>
         <English>A bishop was appointed in %s2_city.</English>
         <French>Un évêque a été nommé à %s2_city.</French>
         <German>Ein Bischof wurde in %s2_city ernannt.</German>
-        <Italian>A bishop was appointed in %s2_city.</Italian>
-        <Spanish>A bishop was appointed in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BISHOP_APPOINTMENT</Tag>
-        <English>Authorities of the church have contacted us. They say that the colonies need to have a Bishop to guide the believers. One of our Priests in %s2_city fulfills all criteria and could become our Bishop. The bureaucracy, however is expensive.</English>
+        <English>Authorities of the church have contacted us. They say that the colonies need a bishop to guide the believers. One of our priests in %s2_city fulfills all criteria and could become our bishop. Getting his appointment through the bureaucracy, however is expensive.</English>
         <French>Les autorités de l'Église nous ont contacté. Elles prétendent qu'un évêque est nécessaire pour guider les croyants de nos colonies. L'un de nos prêtres à %s2_city remplit les critères pour être promu en tant qu'évêque. L'édit administratif pour le permettre peut cependant coûter cher.</French>
         <German>Authoritäten der Kriche haben uns kontaktiert. Sie sagen, dass die Kolonien einen Bischof brauchen um die Gläubigen zu führen. Einer unsere Prediger in %s2_city erfüllt die Kriterien und kann zum Bischof ernannt werden. Der bürokratische Vorgang der Ernennung ist jedoch aufwendig und teuer.</German>
         <Italian>Authorities of the church have contacted us. They say that the colonies need to have a Bishop to guide the believers. One of our Priests in %s2_city fulfills all criterias and could be appointed to become our Bishop. The burocratic act however is expensive.</Italian>
