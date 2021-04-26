@@ -14062,7 +14062,7 @@ bool CvUnit::raidBuilding(CvCity* pCity)
 		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 		// R&R, ray fix for Buildings with workers destoryed
 		// only buildings without workers possible will be destroyed
-		if (pCity->isHasBuilding(eBuilding) && kBuilding.getMaxWorkers() == 0)
+		if (pCity->isHasRealBuilding(eBuilding) && kBuilding.getMaxWorkers() == 0)
 		{
 			aBuildings.push_back(eBuilding);
 		}
