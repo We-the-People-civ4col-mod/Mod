@@ -3079,9 +3079,9 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 	# Now we construct the Help Text
 	szHelp = ""
 	if quantity > 0 :
-		if event.getGenericParameter(2) != 25:
+		if event.getGenericParameter(2) != 25 and event.getGenericParameter(2) != 51:
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
-		elif event.getGenericParameter(2) == 25:
+		elif event.getGenericParameter(2) == 25 or event.getGenericParameter(2) == 51:
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
 	return szHelp
 
@@ -4599,3 +4599,30 @@ def canTriggerEuropeTradeQuest_SALT_DONE(argsList):
 	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
 	
 	return bTrigger
+
+def canTriggerEuropeTradeQuest_LUXURY_GOODS_START(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_START")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Start this should be e.g. 200
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+
+def canTriggerEuropeTradeQuest_LUXURY_GOODS_DONE(argsList):
+	
+	# Read Parameters 1+2 from the two events and check if enough yield is stored in city
+	eEvent = gc.getInfoTypeForString("EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE")
+	event = gc.getEventInfo(eEvent)
+	iYieldID = event.getGenericParameter(2)
+	iQuantity = event.getGenericParameter(1) # for Quest Done this should be e.g. 1000
+
+	# Now we call the Generic Helper Function
+	bTrigger = CanDoEuropeTrade(argsList, iYieldID, iQuantity)
+	
+	return bTrigger
+

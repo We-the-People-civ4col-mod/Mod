@@ -3451,12 +3451,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SUGAR_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3476,12 +3476,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TOBACCO_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]tobacco leaves[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]tobacco leaves[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Tabakblätter[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TOBACCO_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]tobacco leaves[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]tobacco leaves[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Tabakblätter[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3501,12 +3501,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FOOD_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]food[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]food[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FOOD_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]food[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]food[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3526,12 +3526,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_LUMBER_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]wood[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]wood[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Holz[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_LUMBER_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wood[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wood[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Holz[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3551,12 +3551,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ORE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]ore[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]ore[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Erz[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_ORE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]ore[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]ore[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Erz[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3576,12 +3576,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_STONE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]stone[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]stone[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Stein[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_STONE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]stone[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]stone[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Stein[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3601,12 +3601,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HEMP_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]hemp[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]hemp[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HEMP_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]hemp[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]hemp[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3626,12 +3626,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SHEEP_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]sheep[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]sheep[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Schafe[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SHEEP_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]sheep[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]sheep[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Schafe[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3651,12 +3651,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CATTLE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cattle[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cattle[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kühe[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CATTLE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cattle[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cattle[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Kühe[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3676,12 +3676,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HORSES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]horses[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]horses[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Pferde[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HORSES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]horses[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]horses[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Pferde[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3701,12 +3701,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cocoa beans[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cocoa beans[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakaobohnen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COCOA_FRUITS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cocoa beans[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cocoa beans[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Kakaobohnen[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3726,12 +3726,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCA_LEAVES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kokablätter[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COCA_LEAVES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Kokablätter[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3751,12 +3751,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FUR_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]furs[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]furs[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Felle[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FUR_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]furs[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]furs[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Felle[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3776,12 +3776,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COFFEE_BERRIES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]coffee beans[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]coffee beans[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffeebohnen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COFFEE_BERRIES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coffee beans[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coffee beans[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Kaffeebohnen[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3801,12 +3801,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WOOL_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]wool[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]wool[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wolle[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WOOL_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wool[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wool[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Wolle[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3826,12 +3826,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COTTON_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cotton[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COTTON_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cotton[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cotton[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3851,12 +3851,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_INDIGO_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]indigo[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_INDIGO_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]indigo[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]indigo[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3876,12 +3876,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HIDES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]hides[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]hides[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Lederhäute[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HIDES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]hides[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]hides[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Lederhäute[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3901,12 +3901,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelpelze[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Edelpelze[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3926,12 +3926,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAW_SALT_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]raw salt[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]raw salt[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Steinsalz[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RAW_SALT_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]raw salt[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]raw salt[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Steinsalz[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3951,12 +3951,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RED_PEPPER_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Roter Pfeffer[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RED_PEPPER_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Roter Pfeffer[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -3976,12 +3976,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BARLEY_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]barley[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]barley[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gerste[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_BARLEY_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]barley[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]barley[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Gerste[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4001,12 +4001,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GRAPES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]grapes[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]grapes[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Weintrauben[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GRAPES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]grapes[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]grapes[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Weintrauben[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4026,12 +4026,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WHALE_BLUBBER_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]blubber[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]blubber[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Walspeck[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WHALE_BLUBBER_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]blubber[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]blubber[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Walspeck[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4051,12 +4051,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_VALUABLE_WOOD_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]noble wood[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]noble wood[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelholz[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_VALUABLE_WOOD_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]noble wood[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]noble wood[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Edelholz[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4071,28 +4071,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
-        <English>The race to dominate the [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] Market in Europe has started.</English>
-        <German>Das Rennen zur Beherrschung des Markt in den Kolonien für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] hat begonnen.</German>
+        <English>The race to dominate the [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] Market in the Colonies has started.</English>
+        <German>Das Rennen zur Beherrschung des Markt in den Kolonien für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] aus Europa hat begonnen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
-        <German>Die Eingeborenen in den Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] so begeistert das euch seine Majestät befielt der dominante Marktführer für diese Ware zu werden.</German>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of European [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] in the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <German>Die Eingeborenen in den Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa so begeistert das euch seine Majestät befielt der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] Market in Europe.</English>
-        <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] zu beherrschen.</German>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] Market in den Kolonien.</English>
+        <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in den Kolonien für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] aus Europa zu beherrschen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
-        <English>We have succeeded to become the dominant market leader for trade with [COLOR_FONT_GOLD]trade goods[COLOR_REVERT].</English>
-        <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] zu werden.</German>
+        <English>We have succeeded to become the dominant market leader for trade with European [COLOR_FONT_GOLD]trade goods[COLOR_REVERT].</English>
+        <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] aus Europa zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
-        <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with [COLOR_FONT_GOLD]trade goods[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
-        <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
+        <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with European [COLOR_FONT_GOLD]trade goods[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
+        <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] aus Europa zu werden. Ihre Majstät will uns dafür belohnen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_START</Tag>
@@ -4101,12 +4101,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4126,12 +4126,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TOOLS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]tools[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]tools[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TOOLS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]tools[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]tools[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Werkzeuge[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4151,12 +4151,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BLADES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]blades[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]blades[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_BLADES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]blades[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]blades[COLOR_REVERT] Market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4176,12 +4176,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MUSKETS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]muskets[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]muskets[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_MUSKETS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]muskets[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]muskets[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4201,12 +4201,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CANNONS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cannons[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CANNONS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cannons[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cannons[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4226,12 +4226,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROPE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]rope[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]rope[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_ROPE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]rope[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]rope[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4251,12 +4251,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SILVER_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]silver[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]silver[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Silber[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SILVER_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]silver[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]silver[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4276,12 +4276,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOLD_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]gold[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]gold[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOLD_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]gold[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]gold[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4301,12 +4301,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEMS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]gems[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]gems[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GEMS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]gems[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]gems[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4326,12 +4326,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakau[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COCOA_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cocoa[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Kakau[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4351,12 +4351,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COFFEE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]coffee[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]coffee[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COFFEE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coffee[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coffee[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4376,12 +4376,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CIGARS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cigars[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cigars[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CIGARS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cigars[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cigars[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4401,12 +4401,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WOOL_CLOTH_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]wool cloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]wool cloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wolltuch[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wool cloth[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wool cloth[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Wolltuch[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4426,12 +4426,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLOTH_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]cloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]cloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Tuch[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CLOTH_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cloth[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]cloth[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Tuch[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4451,12 +4451,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COLOURED_CLOTH_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gefärbten Tüchern[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Gefärbte Tücher[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4476,12 +4476,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_LEATHER_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]leather[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]leather[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Leder[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_LEATHER_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]leather[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]leather[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Leder[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4501,12 +4501,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COATS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]coats[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]coats[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Pelzen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COATS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coats[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]coats[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Pelze[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4526,12 +4526,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_COATS_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]premium coats[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]premium coats[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Luxuspelzen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]premium coats[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]premium coats[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Luxuspelze[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4551,12 +4551,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SPICES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]spices[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]spices[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SPICES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]spices[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]spices[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4576,12 +4576,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SPICES_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]spices[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]spices[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SPICES_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]spices[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]spices[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4601,12 +4601,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SALT_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]salt[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]salt[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Salz[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SALT_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]salt[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]salt[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Salz[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4626,12 +4626,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FURNITURE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]furniture[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]furniture[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_FURNITURE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]furniture[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]furniture[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4651,12 +4651,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WHALE_OIL_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]whale oil[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]whale oil[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Tran[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]whale oil[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]whale oil[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Tran[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4676,12 +4676,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WINE_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]wine[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]wine[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wein[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WINE_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wine[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]wine[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4701,12 +4701,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BEER_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of Colonial [COLOR_FONT_GOLD]beer[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]beer[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Bier[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_BEER_FAILED</Tag>
-        <English>A Colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]beer[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]beer[COLOR_REVERT] Market in Europe.</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
@@ -4718,5 +4718,30 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BEER_DONE</Tag>
         <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with [COLOR_FONT_GOLD]beer[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
         <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LUXURY_GOODS_START</Tag>
+        <English>The race to dominate the [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT] Market in the Colonies has started.</English>
+        <German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa hat begonnen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_LUXURY_GOODS_START</Tag>
+        <English>His Majesty and the citizens of the the colonial cities are delighted by the first deliveries of European [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT] in the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <German>Ihre Majestät und die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa in den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_LUXURY_GOODS_FAILED</Tag>
+        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT] Market in the Colonies.</English>
+        <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in den Kolonien für [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa zu beherrschen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE</Tag>
+        <English>We have succeeded to become the dominant market leader for trade with European [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT].</English>
+        <German>Uns ist es gelungen der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa zu werden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_LUXURY_GOODS_DONE</Tag>
+        <English>We have succeeded to fulfill the orders of His Majesty to become the dominant market leader for trade with European [COLOR_FONT_GOLD]luxury goods[COLOR_REVERT]. His Majesty is in generous mood and wants to reward us.</English>
+        <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Luxusgütern[COLOR_REVERT] aus Europa zu werden. Ihre Majstät will uns dafür belohnen.</German>
     </TEXT>
 </Civ4GameText>
