@@ -2477,312 +2477,234 @@
         <English>Authorities of the church have contacted us. They say that the colonies need a bishop to guide the believers. One of our priests in %s2_city fulfills all criteria and could become our bishop. Getting his appointment through the bureaucracy, however is expensive.</English>
         <French>Les autorités de l'Église nous ont contacté. Elles prétendent qu'un évêque est nécessaire pour guider les croyants de nos colonies. L'un de nos prêtres à %s2_city remplit les critères pour être promu en tant qu'évêque. L'édit administratif pour le permettre peut cependant coûter cher.</French>
         <German>Authoritäten der Kriche haben uns kontaktiert. Sie sagen, dass die Kolonien einen Bischof brauchen um die Gläubigen zu führen. Einer unsere Prediger in %s2_city erfüllt die Kriterien und kann zum Bischof ernannt werden. Der bürokratische Vorgang der Ernennung ist jedoch aufwendig und teuer.</German>
-        <Italian>Authorities of the church have contacted us. They say that the colonies need to have a Bishop to guide the believers. One of our Priests in %s2_city fulfills all criterias and could be appointed to become our Bishop. The burocratic act however is expensive.</Italian>
-        <Spanish>Authorities of the church have contacted us. They say that the colonies need to have a Bishop to guide the believers. One of our Priests in %s2_city fulfills all criterias and could be appointed to become our Bishop. The burocratic act however is expensive.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_COCA_TRADE</Tag>
         <English>Rumours are spreading that coca leaves improve the morale of slaves.</English>
         <French>Des rumeurs se propagent que les feuilles de coca pourraient avoir un effet positif sur le moral de nos esclaves.</French>
         <German>Gerüchte verbreiten sich, dass Cocablätter sich positiv auf die Arbeitsmoral von Sklaven auswirken.</German>
-        <Italian>Rumors are spreading that coca leaves have positive effect on working morale of slaves.</Italian>
-        <Spanish>Rumors are spreading that coca leaves have positive effect on working morale of slaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COCA_TRADE</Tag>
-        <English>A slave trader has approached us with a business deal because he heard about the positive effects of Coca Leaves on working morale of slaves. He offers us some of his slaves in exchange for a load of our coca leaves.</English>
+        <English>A slave trader has approached us with a business deal because he heard coca Leaves make slaves work harder. He offers to trade us slaves for a load of our coca leaves.</English>
         <French>Un marchand d'esclaves nous a approché et nous proposons un marché. Il a entendu parler d'effets positifs des feuilles de coca sur le moral des esclaves. Ils nous proposent de nous offrir des esclaves en échange d'une cargaison de nos feuilles de coca</French>
         <German>Ein Sklavenhändler hat uns kontaktiert um uns ein Geschäft vorzuschlagen, da er von der positiven Wirkung von Cocablättern auf die Arbeitsmoral von Sklaven gehört hat. Er bietet uns einige seiner Skalven im Austausch für eine Ladung unserer Cocablätter.</German>
-        <Italian>A slave trader has approached us to offer a business deal because he heard about the positive effects of Coca Leaves on working morale of slaves. He offers us some of his slaves in exchange for a load of our coca leaves.</Italian>
-        <Spanish>A slave trader has approached us to offer a business deal because he heard about the positive effects of Coca Leaves on working morale of slaves. He offers us some of his slaves in exchange for a load of our coca leaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_COCA_PROBLEM</Tag>
-        <English>Rumours are spreading that excessive consumption of coca leaves is causing problems in %s2_city.</English>
+        <English>Rumours are spreading that too much coca use is causing problems in %s2_city.</English>
         <French>Des rumeurs se propagent selon lesquelles la consommatione excessive de coca causerait des problèmes à %s2_city.</French>
         <German>Gerüchte verbreiten sich, dass exzessiver Konsum von Cocablätter in %s2_city zu Problemen führte.</German>
-        <Italian>Rumors are spreading that excessive consume of coca leaves is causing problems in %s2_city.</Italian>
-        <Spanish>Rumors are spreading that excessive consume of coca leaves is causing problems in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COCA_PROBLEM</Tag>
-        <English>Milord, we are hearing reports that coca consumption in %s2_city has very negative effects on the morale and behaviour of its citizens. Some worried people even demand that all coca leaves shall be burnt.</English>
+        <English>Milord, we are hearing reports that coca consumption in %s2_city has very negative effects on the morale and behaviour there. Some worried citizens even demand that all coca leaves must be burnt.</English>
         <French>Seigneur, selon certains rapports, la consommation excessive de feuilles de coca à %s2_city aurait des effets négatifs sur le moral et le comportement de nos citoyens. Des personnes inquiètes en appellent à ce que nous brûlions l'ensemble de notre production.</French>
         <German>Mylord, wir hören immer mehr Berichte, dass der Konsum von Cocablättern in %s2_city sehr schlechte Auswirkungen auf die Moral und das Verhalten seiner Bevölkerung hat. Einige besorgte Bürger bitten sogar darum, dass alle Cocablätter verbrannt werden.</German>
-        <Italian>Mylord, we are hearing reports that the consume of coca leaves in %s2_city has very negative effects on the morale and behaviour of its citizens. Some worried people even demand, that all coca leaves shall be burnt.</Italian>
-        <Spanish>Mylord, we are hearing reports that the consume of coca leaves in %s2_city has very negative effects on the morale and behaviour of its citizens. Some worried people even demand, that all coca leaves shall be burnt.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GOVERNOR</Tag>
         <English>His Majesty has placed a vicegerent into your colonies in order to regain control.</English>
         <French>His Majesty has delegated a vicegerent into your colonies in order to regain control.</French>
         <German>Es heißt der König habe aufgrund der steigenden Zahl von Kolonien in der Neuen Welt einen Gouverneur nach %s2_city entsandt.</German>
-        <Italian>His Majesty has delegated a vicegerent into your colonies in order to regain control.</Italian>
-        <Spanish>His Majesty has delegated a vicegerent into your colonies in order to regain control.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GOVERNOR</Tag>
-        <English>Milord, your colonies are growing fast but administration leaves a lot to be desired. Unacceptable. Therefore His Majesty has decided to put a viceregent into your colonies in order to regain control.</English>
+        <English>Milord, your colonies are growing fast but administration leaves a lot to be desired. That's unacceptable. Therefore His Majesty has decided to appoint a viceregent for your colonies in order to regain control.</English>
         <French>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</French>
         <German>Mylord, die Anzahl der von Euch verwalteten Kolonien in der Neuen Welt wächst stetig und die Verwaltungsstrukturen lassen noch arg zu wünschen übrig. Wir haben daher entschieden, unseren Cousin Dritten Grades als Statthalter zu entsenden, um die Verwaltung der Kolonien neu zu ordnen.</German>
-        <Italian>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</Italian>
-        <Spanish>Mylord, your colonies are growing fast and faster but the administration leaves a lot to be desired. This is unacceptable. Therefore His Majesty has decided to delegate a viceregent into your colonies in order to regain control.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GOVERNOR_LOVER</Tag>
         <English>The Governor of the Colonies has a secret lover in the Old World.</English>
         <French>The Governor of the Colonies has a secret lover in the Old World.</French>
         <German>Gerüchte machen den Lauf, dass der Gouverneur eine Geliebte in der Alten Welt hat.</German>
-        <Italian>The Governor of the Colonies has a secret lover in the Old World.</Italian>
-        <Spanish>The Governor of the Colonies has a secret lover in the Old World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GOVERNOR_LOVER</Tag>
-        <English>Milord, letters were found in the room of the Governor by the cleaning personel. They prove that he had a secret lover among the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</English>
+        <English>Milord, cleaners found letters in the Governor's room. They prove back in the Old World he had a secret lover among his Royal Majesty's servants. She was thrown out of the palace and is now living in poverty.</English>
         <French>Mylord, letters were found in the room of the Governor by the cleaning personell. They prove that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</French>
         <German>Mylord, es wurden vom Reinigungspersonal Briefe im Raum des Gouverneurs gefunden, die beweisen dass er eine geheime Geliebte unter den Palastbediensteten seiner Majestät in der alten Welt hatte. Sie wurde aus dem Palast geworfen und lebt nun in den Armenvierteln.</German>
-        <Italian>Mylord, letters were found in the room of the Governor by the cleaning personell. They prove that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</Italian>
-        <Spanish>Mylord, letters were found in the room of the Governor by the cleaning personell. They prove that he had a secret lover from the palace servants of his Royal Majesty in the Old World. She was thrown out of the palace and is now living in poverty.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_POLITICAL_REFUGEE</Tag>
         <English>It seems that a well-educated refugee intends to sail to the New World.</English>
         <French>It seems that a well educated refugee intends to sail into the New World.</French>
         <German>Ein Studierter möchte in die Neue Welt reisen und sich %s2_city anschließen.</German>
-        <Italian>It seems that a well educated refugee intends to sail into the New World.</Italian>
-        <Spanish>It seems that a well educated refugee intends to sail into the New World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_POLITICAL_REFUGEE</Tag>
-        <English>Milord, the opportunity for liberty in the New World now causes well-educated people to leave their homes and to sail to the New Word. A graduate wishes to join our own colony, if we will pay his passage.</English>
+        <English>Milord, a chance at liberty is enough for well-educated people to leave their homes and to sail to the New Word. A university graduate wishes to join our own colony, if we will pay his passage.</English>
         <French>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</French>
         <German>Mylord, die Vorzüge der Freiheit in der Neuen Welt lassen auch die Gebildeten aufhorchen. Es heißt, dass einer dieser Studierten sich unseren Kolonien anschließen würde, wenn wir ihm die überfahrt bezahlen.</German>
-        <Italian>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</Italian>
-        <Spanish>Mylord, the benefits of liberty in the New World obviously also causes well educated people to leave their homes and to sail into the New Word. It seems that a graduate wishes to join our own colonies, in case we are willing to pay the passage for him.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALE_OIL_COOKER</Tag>
-        <English>A Master Train Oil Cooker wants to join %s2_city.</English>
+        <English>A master train oil Cooker wants to join %s2_city.</English>
         <French>A Master Train Oil Cooker wants to join %s2_city.</French>
         <German>In %s2_city möchte sich uns ein Meistertrankocher anschließen.</German>
-        <Italian>A Master Train Oil Cooker wants to join %s2_city.</Italian>
-        <Spanish>A Master Train Oil Cooker wants to join %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALE_OIL_COOKER</Tag>
-        <English>Milord, whaling along our coasts promises high profits. One of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who wants to start a new life in the colonies. Shall we engage him?</English>
+        <English>Milord, whaling along our coasts promises high profits. In Europe our merchant vessel recently picked up a master train oil cooker, who wants to start a new life in the colonies. Shall we engage him?</English>
         <French>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</French>
         <German>Mylord, der Walfang vor unseren Küsten würde gute Gewinne versprechen. Wie es der Zufall will, hat der Kapitän eines Handelsschiffes in Europa einen Meistertrankocher an Bord genommen, der hier ein neues Leben beginnen möchte. Sollen wir im eine Anstellung geben?</German>
-        <Italian>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</Italian>
-        <Spanish>Mylord, whaling along our coasts promises high profits. Lucky as we are one of the merchant vessels recently picked up a Master Train Oil Cooker in Europe, who likes to start a new life in the colonies. Shall we engage him?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALING</Tag>
-        <English>A trading company intends to develop %s2_city as a basis for their whaling activities.</English>
+        <English>A trading company intends to use %s2_city as a base for their whaling activities.</English>
         <French>A trading company intends to develop %s2_city as basis for their whaling activities.</French>
         <German>Eine Handelskompanie möchte %s2_city als Basis für ihren Walfang ausbauen.</German>
-        <Italian>A trading company intends to develop %s2_city as basis for their whaling activities.</Italian>
-        <Spanish>A trading company intends to develop %s2_city as basis for their whaling activities.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALING</Tag>
-        <English>Milord, a powerful trading company intends to use one of our towns for whaling in this area. We would all benefit from this deal. They are promising ships, men and for new buildings, if we protect them. We can collect taxes for whale fat and train oil.</English>
+        <English>Milord, a powerful trading company intends to use one of our towns as a whaling port. We would all profit from this deal. They promise ships, men and new buildings, in return for our protection. We can collect taxes for whale fat and train oil.</English>
         <French>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</French>
         <German>Mylord, eine mächtige Handelskompanie möchte eine unserer Kolonien als Basis für ihren Walfang ausbauen. Davon würden wir sicher profitieren. Sie versprechen uns Schiffe, Männer und Baumaterial für neue Gebäude zu liefern, wenn wir im Gegenzug für Ihren Schutz sorgen und die Zölle auf Walspeck sowie Tranöl eine Weile aussetzen.</German>
-        <Italian>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</Italian>
-        <Spanish>Mylord, a powerful trading company intends to develop one of our colonies as basis for their whaling activities in this area. We should all benefit from this deal. They are promising ships, men and construction material for new buildings, in case we grant to protect them and to expose taxes for whale fat and train oil.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRIVATEER</Tag>
-        <English>Privateers are the pest of the seas.</English>
+        <English>Privateers are the plague of the seas.</English>
         <French>Privateers are the pest of the seas.</French>
         <German>Freibeuter werden zur Plage der Meere.</German>
-        <Italian>Privateers are the pest of the seas.</Italian>
-        <Spanish>Privateers are the pest of the seas.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRIVATEER</Tag>
-        <English>Milord, our neighbours have sent a diplomat. His Excellency is very upset about the privateer activities around his harbours and the increasing losses of merchant vessels. He demands that we revoke their letters of marque. </English>
+        <English>Milord, our neighbours have sent a diplomat. His Excellency is very upset about privateers haunting his harbours and looting merchant vessels. He demands that we revoke their letters of marque. </English>
         <French>Mylord, our neighbours have sent a diplomat. His Excellency is very upset about the privateer activities around his harbours and the increasing losses of merchant vessels. He awaits that we revoke their letters of marque.</French>
         <German>Mylord, Unsere Nachbarn haben einen Diplomaten geschickt. Seine Exzellenz ist sehr erbost über die zunehmende Anzahl von Schiffensverlusten durch Freibeuter. Man verlangt von uns, den Freibeutern ihre Kaperbriefe zu entziehen.</German>
-        <Italian>Mylord, our neighbours have sent a diplomat. His Excellency is very upset about the privateer activities around his harbours and the increasing losses of merchant vessels. He awaits that we revoke their letters of marque.</Italian>
-        <Spanish>Mylord, our neighbours have sent a diplomat. His Excellency is very upset about the privateer activities around his harbours and the increasing losses of merchant vessels. He awaits that we revoke their letters of marque.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRIVATEER_2</Tag>
-        <English>Private investors have shifted from buccaneering to legal investments in merchant vessels.</English>
+        <English>Private investors have turned from buccaneering to legal investments in merchant vessels.</English>
         <French>Private investors change from buccaneering to legal investments in merchant vessels.</French>
         <German>Private Eigner stellen ihre Freibeuter auf Handelsschiffahrt um.</German>
-        <Italian>Private investors change from buccaneering to legal investments in merchant vessels.</Italian>
-        <Spanish>Private investors change from buccaneering to legal investments in merchant vessels.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRIVATEER_2</Tag>
-        <English>Milord, private financiers of pirate ships have now converted their privateers into merchant vessels and will no longer raid our merchant fleet.</English>
+        <English>Milord, private financiers have now converted their pirate ships into commercial vessels which will no longer raid our merchant fleet.</English>
         <French>Mylord, the private investors of the ships which letters of marque have been revoked have converted their privateers into merchant vessels and will not enhance our merchant fleet.</French>
         <German>Mylord, die Eigner der Freibeuter, deren Kaperbriefe wir eingezogen haben, haben ihr Schiff in ein Handelsschiff umgerüstet und werden von nun an unsere Handelsflotte verstärken.</German>
-        <Italian>Mylord, the private investors of the ships which letters of marque have been revoked have converted their privateers into merchant vessels and will not enhance our merchant fleet.</Italian>
-        <Spanish>Mylord, the private investors of the ships which letters of marque have been revoked have converted their privateers into merchant vessels and will not enhance our merchant fleet.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PRIVATEER_3</Tag>
         <English>Privateers will be mercilessly hunted.</English>
         <French>Privateers will be mercilessly hunted.</French>
         <German>Freibeuter werden gnadenlos gejagt.</German>
-        <Italian>Privateers will be mercilessly hunted.</Italian>
-        <Spanish>Privateers will be mercilessly hunted.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PRIVATEER_3</Tag>
-        <English>Milord, one of our new privateers has been captured by our neighbour's navy. The buccaneers have been hanged without mercy.</English>
+        <English>Milord, one of our new privateers was captured by our neighbour's navy. The buccaneers have all been hanged.</English>
         <French>Mylord, one of our new privateers has been taken by the marine of our neighbours. The buccaneers have been hanged without mercy.</French>
         <German>Mylord, der Freibeuter, den wir kürzlich mit einem neuen Kaperbrief ausstatteten, wurde von der Marine unserer Konkurenten aufgebracht und die Freibeuter wegen Piraterie gehängt.</German>
-        <Italian>Mylord, one of our new privateers has been taken by the marine of our neighbours. The buccaneers have been hanged without mercy.</Italian>
-        <Spanish>Mylord, one of our new privateers has been taken by the marine of our neighbours. The buccaneers have been hanged without mercy.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_TOWNHALL</Tag>
         <English>A native from a tribe nearby wishes to join our colony.</English>
         <French/>
         <German>Ein Ureinwohner möchte sich euch schließen.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_TOWNHALL_1</Tag>
-        <English>Commander, a native wishes to settle down at our city. He fled from his tribe instead to fight againt their enemies. That means he is a coward.</English>
+        <English>Commander, a frightened Native waits humbly in your servant's quarters. His tribe has disowned him because he fled instead of fighting when conquistadores raided his village. He begs for your mercy and a new chance.</English>
         <French/>
         <German>Kommandant, ein eingeschüchterter Indianer steht demütig in Eurer Gesindestube. Sein Stamm habe ihn verstoßen, weil er bei einem Überfall von Conquistadores auf sein Dorf geflohen war, statt zu kämpfen. Er bittet um Eure Gnade und eine neue Chance.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_DOCK</Tag>
         <English>You get a converted native.</English>
         <French/>
         <German>Ein Konvertierter Ureinwohner schließt sich Euch an.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_DOCK_1</Tag>
         <English>Commander, a converted native wishes to settle down in our city.</English>
         <French/>
         <German>Kommandant, ein Missionar reist derzeit durch unsere Kolonien. Sein indianischer Diener, der ihn begleitet, will ihn verlassen, weil er die unsittlichen Annäherungen seines Herrn satt hat.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_CHAPEL</Tag>
         <English>You get a converted native.</English>
         <French/>
         <German>Ein Konvertierter Ureinwohner schließt sich Euch an.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_1</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, the parish priest asks if you can take care of a Native boy. He lost his father and mother to smallpox and is now all alone.</English>
         <French/>
         <German>Kommandant, der Gemeindepfarrer fragt, ob ihr Euch eines Indianerjünglings annehmen könnt. Er habe Vater und Mutter durch die Blattern verloren und stehe jetzt ganz alleine da.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_2</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, a Native has been caught trying to steal the silver chalice from the church. The scoundrel is repentant and wishes to pay his debt by active penance.</English>
         <French/>
         <German>Kommandant, ein Indianer wurde in Eurem Gotteshaus bei dem Versuch erwischt, den silbernen Messkelch zu stehlen. Die Rothaut ist reuig und möchte ihre Schuld durch tätige Buße begleichen.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_3</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, in the confessional the parish priest persuaded a Native that his wild nature was not pleasing to God, that he had to be tamed by hard work under your strict command.</English>
         <French/>
         <German>Kommandant, der Gemeindepfarrer konnte im Beichtstuhl eine Rothaut davon überzeugen, dass seine halbwilde Natur nicht gottgefällig ist und nur durch harte Arbeit unter Eurem strengen Kommando gezügelt werden könne.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_4</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, a passing Native was inspired by the stained glass windows in your house of worship. He says the morning light shone through them straight into his soul. Now he wants to live with us.</English>
         <French/>
         <German>Kommandant, ein vorbeiziehender Indianer hat der Anblick der bunten Glasfenster in Eurem Gotteshaus bezaubert. Er sah das Morgenlicht durch sie hindurch in seine Seele leuchten, meint er. Nun möchte er unter uns Weißen leben.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_5</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, an Indian experienced a vision during our church service. He saw the Saviour standing at the altar with a flaming sword, and the severed head of a wolf in his left hand. This Native is now eager to join our fight.</English>
         <French/>
         <German>Kommandant, ein Indianer erlebte beim zufälligen Besuch unseres Gottesdienstes eine Vision. Er sah den Heiland mit einem Flammenschwerte am Altar stehen, in der Linken trug er den abgeschlagenen Kopf eines Wolfes. Ehrfürchtig möchte sich die Rothaut nun unserem Kampfe anschließen.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_6</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, a young Indian asks you to teach him to read so that he can study the Holy Scriptures. In return he offers to help wherever there is a need.</English>
         <French/>
         <German>Kommandant, ein junger Indianer bittet Euch, ihm das Lesen beizubringen, damit er in unserem Gotteshaus die Heilige Schrift studieren kann. Im Gegenzug bietet er an, überall anzupacken, wo Not am Mann ist.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_7</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, a Native is ready to renounce the Manitou and serve our Lord Jesus Christ instead.</English>
         <French/>
         <German>Kommandant, eine Rothaut möchte Manitou abschwören und stattdessen unserem Herrn Jesus Christus dienen.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_8</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down in our city.</English>
         <French/>
         <German>Kommandant, ein Indianerjüngling hat sich in die Statue der Heiligen Jungfrau Maria verliebt, die in unserem Gotteshaus steht. Er möchte nun in unserer Gemeinde leben, um stets in ihrer Nähe zu sein.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_9</Tag>
-        <English>Commander, a converted native has visited our Lord's house. He is very impressed by our faith in God and wishes to settle down at our city.</English>
+        <English>Commander, we caught a young Native who broke into the cellar of our church and drank an entire keg of our mass wine. The boy is repentant and wants to pay off his debt through service.</English>
         <French/>
         <German>Kommandant, wir haben eine Rothaut erwischt, die in den Keller unseres Gotteshauses eingebrochen und ein ganzes Fässchen unseres Messweines ausgesoffen hat. Der Bursche ist reuig und will seine Schuld durch Dienste abtragen.</German>
-        <Italian/>
-        <Spanish/>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_3</Tag>
         <English>A forest fire sparked by lightning has raged across the land near %s2_city.</English>
         <French>Un feu de forêt provoqué par la foudre s'est propagé autour de %s2_city.</French>
         <German>Viele Bürger von %s2_city verlieren bei den Bränden ihr Hab und Gut. Die Menschen sind empört.</German>
-        <Italian>Un incendio forestale, causato da un fulmine, ha devastato il territorio vicino a %s2_city.</Italian>
-        <Spanish>Un incendio forestal causado por un rayo ha asolado las tierras aledañas a %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_1</Tag>
-        <English>Playing children from %s2_city sparked a fire in the nearby forest and went home without stamping out the fire. Many acres of forest are burnt down due to these brats!</English>
+        <English>Commander, a young man from %s2_city and his sweetheart wish to marry, but their fathers are rival charcoal burners who hate each other. The stubborn geezers refuse to give their blessing. Now the desperate couple threatens to light the forest on fire to blackmail the old men. Our citizens know that a forest fire could devastate the whole area. They ask you to intervene.</English>
         <French>Catastrophe à %s2_city : l'incendie d'un village s'est propagé à la forêt, brûlant des milliers d'hectares.</French>
         <German>Kommandant, ein Bursche aus %s2_city und seine Maid wollen heiraten, doch sind ihre Väter zwei rivalisierende Köhler und einander spinnefeind. Die störrischen Waldschraten wollen den Beiden nicht ihren Segen geben. Nun hat sich das verzweifelte Pärchen im Forst versteckt und droht, ein Feuer zu legen, um die Alten zu erpressen. Die Bürger fürchten, ein Waldbrand könne die ganze Gegend verwüsten, und bitten Euch einzugreifen.</German>
-        <Italian>Tragedia nei pressi di %s2_city: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
-        <Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_1</Tag>
-        <English>Playing children from %s2_city sparked a fire in the nearby forest and went home without stamping out the fire. Many acres of forest are burnt down due to these brats!</English>
+        <English>In %s2_city a couple of pranksters told the village idiot that a werewolf in the nearby forest was hunting him personally. The idiot of course set the forest on fire to incinerate the beast. There's an east wind fanning the flames, sending a wall of fire across the land, turning countless acres to sooty ash.</English>
         <French>Catastrophe à %s2_city : l'incendie d'un village s'est propagé à la forêt, brûlant des milliers d'hectares.</French>
         <German>In %s2_city haben ein paar übermütige Burschen dem Dorfnarren eingeredet, durch den nahen Forst streife ein Werwolf, der es auf ihn höchstpersönlich abgesehen habe. Daraufhin hat der verängstigte Tölpel im Wald ein Feuer gelegt, um die Bestie zu verbrennen. Der Ostwind hat die Flammen entfacht, und eine Feuerwalze rast durch das Land. Die Todeshitze droht viele Hektar in rußige Asche zu verwandeln.</German>
-        <Italian>Tragedia nei pressi di %s2_city: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
-        <Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ADMIRAL_1</Tag>
         <English>The word is that in %s2_city a lazy Admiral eats the governor out of house and home.</English>
         <French>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</French>
         <German>Man munkelt, dass ein untätiger Admiral durch seine Gelage in %s2_city dem örtlichen Statthalter die Haare vom Kompf frisst.</German>
-        <Italian>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</Italian>
-        <Spanish>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ADMIRAL_1</Tag>
