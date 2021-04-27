@@ -2702,477 +2702,365 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ADMIRAL_1</Tag>
-        <English>The word is that in %s2_city a lazy Admiral eats the governor out of house and home.</English>
+        <English>The word is that in %s2_city a lazy admiral is eating the governor out of house and home.</English>
         <French>The word is that in %s2_city a lazy Admial eats the governor out of house and home.</French>
         <German>Man munkelt, dass ein untätiger Admiral durch seine Gelage in %s2_city dem örtlichen Statthalter die Haare vom Kompf frisst.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ADMIRAL_1</Tag>
-        <English>Milord, the new Admiral eats and drinks more than we can afford and spends more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </English>
+        <English>Milord, the new admiral eats and drinks constantly and spends more time with women than with the new recruits. His banquets are the talk of the town. We have to do something to stop it. </English>
         <French>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </French>
         <German>Mylord, einer unserer neu bestallten Admiräle feiert lieber und labt sich an Wein und Frauen, als dass er unseren jungen Matrosen Seemannschaft beibringt. Seine Gelage sind schon Stadtgespräch. Wir müssen etwas unternehmen, so etwas ist schlecht für die Moral.</German>
-        <Italian>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </Italian>
-        <Spanish>Mylord, the new Admiral who arrived recently eats and drinks more than we can tolerate and spents more time with women than with the new recruits. His banquets are common talk. We have to do something to stop it. </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ADMIRAL_BORD</Tag>
-        <English>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing orders soon. </English>
+        <English>In %s2_city the navy has outfitted a new sloop. It seems that the Admiral will get his sailing orders soon. </English>
         <French>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </French>
         <German>In %s2_city rüstet die Marine eine neue Sloop aus. Der Admiral wird wohl bald seine Segelorder erhalten. </German>
-        <Italian>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </Italian>
-        <Spanish>In %s2_city the navy equips a sloop. It seems that the Admiral will get his sailing order soon. </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_ADMIRAL_LAND</Tag>
         <English>But it seems that the governor in %s2_city is a generous man. </English>
         <French>But it seems that the governor in %s2_city is a generous man. </French>
         <German>Aber der Statthalter in %s2_city ist offenbar ein großzügiger Mann.</German>
-        <Italian>But it seems that the governor in %s2_city is a generous man. </Italian>
-        <Spanish>But it seems that the governor in %s2_city is a generous man. </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST</Tag>
-        <English>You have built your first wagon train but the traders of our colonies urge you to build at least five of them to support our inland cities and dominate domestic trade with our own goods. If you are the first nation to do so they offer a reward.</English>
+        <English>You have built your first wagon train. Commercial traders with your colonies urge you to build at least five to supply the inland cities so your own goods can dominate domestic trade. If you are the first nation to do so they offer a reward.</English>
         <French>You have built your first wagon train but the traders of our colonies urge you to build at least five of them to support our inland cities and dominate domestic trade with our own goods. If you succeed to be the first Nation to do so they offer a reward.</French>
         <German>Ihr habt euren ersten Wagenzug erworben, aber die Händler der Colonien verlangen von euch, dass ihr mindestens five davon baut um unsere Inlandsstädte zu versorgen und den heimischen Markt mit unseren eigenen Waren zu versorgen. Wenn Ihr die erste Nation seid, die dies erreicht, bieten Sie eine Belohnung.</German>
-        <Italian>You have built your first wagon train but the traders of our colonies urge you to build at least five of them to support our inland cities and dominate domestic trade with our own goods. If you succeed to be the first Nation to do so they offer a reward.</Italian>
-        <Spanish>You have built your first wagon train but the traders of our colonies urge you to build at least five of them to support our inland cities and dominate domestic trade with our own goods. If you succeed to be the first Nation to do so they offer a reward.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST</Tag>
-        <English>We will do as the traders ask. Our wagon trains shall travel the roads of the New World, delivering goods to the markets of all colonial cities and to our Native neighbours.</English>
+        <English>We will do as the traders ask. Our wagon trains shall travel the roads of the New World, delivering goods to markets in all the colonial cities, and to our Native neighbours.</English>
         <French>We will do as the traders ask. Our wagon trains shall roam the roads and land of the New World and deliver goods to markets of all colonial cities and our Native neighbours.</French>
         <German>Wir werden tun, wie es die Händler erbitten. Unsere Wagenzüge sollen alle Straßen und Länder der Neuen Welt befahren und Waren auf alle Mäkrte der Kolonien und zu unserene Nachbarn den Ureinwohnern liefern.</German>
-        <Italian>We will do as the traders ask. Our wagon trains shall roam the roads and land of the New World and deliver goods to markets of all colonial cities and our Native neighbours.</Italian>
-        <Spanish>We will do as the traders ask. Our wagon trains shall roam the roads and land of the New World and deliver goods to markets of all colonial cities and our Native neighbours.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_WAGON_TRAINS_QUEST</Tag>
-        <English>For God's sake! Another governor has built five wagon trains before we were able to. Forget about any rewards.</English>
+        <English>Worse luck! Another governor built five wagon trains before we could. Forget about any rewards.</English>
         <French>For God's sake! Another governor has built five wagon trains before we were able to. Forget about any rewards.</French>
         <German>Schlechte Kunde! Einem anderen Gouverneur ist es als erstem gelungen fünf Wagenzüge zu erwerben. Die Belohnung der Händler ist hinfällig.</German>
-        <Italian>For God's sake! Another governor has built five wagon trains before we were able to. Forget about any rewards.</Italian>
-        <Spanish>For God's sake! Another governor has built five wagon trains before we were able to. Forget about any rewards.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE_WORLD</Tag>
         <English>A colonial nation has built five wagon trains.</English>
         <French>A colonial nation has built five wagon trains.</French>
         <German>Eine Kolonialmacht hat fünf Wagenzüge erworben.</German>
-        <Italian>A colonial nation has built five wagon trains.</Italian>
-        <Spanish>A colonial nation has built five wagon trains.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE</Tag>
         <English>Congratulations! You are the first governor with five wagon trains in the New World. The Lord's blessing is upon you. The traders are in a generous mood.</English>
         <French>Congratulations! You are the first governor with five wagon trains in the New World. The Lord's blessing will be upon you. The traders are in generous mood.</French>
         <German>Glückwunsch! Ihr seid der erste Gouverneur, der es geschafft hat fünf Wagenzüge in der Neuen Welt zu erwerben. Der Segen Gottes liegt auf euch und die Händler sind in großzügiger Stimmung.</German>
-        <Italian>Congratulations! You are the first governor with five wagon trains in the New World. The Lord's blessing will be upon you. The traders are in generous mood.</Italian>
-        <Spanish>Congratulations! You are the first governor with five wagon trains in the New World. The Lord's blessing will be upon you. The traders are in generous mood.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_1</Tag>
         <English>The traders will pay us for the use of our wagon trains.</English>
         <French>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us</French>
         <German>Die Händer sollen einen Teil unserer Aufwände durch ihr Einkommen kompensieren, dass sie mit unseren Wagenzügen erworben haben.</German>
-        <Italian>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us</Italian>
-        <Spanish>The traders shall compensate our efforts by paying some of their earned income using our wagon trains to us</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_2</Tag>
-        <English>Now that we have so many wagon trains, we could use some more pioneers to build roads.</English>
+        <English>Now that we have so many wagon trains, we need more pioneers to build roads.</English>
         <French>Now that we have so many new wagon trains, we could use some more pioneers to build them. The traders could hire them for us.</French>
         <German>Nun da wir so viele neue Wagenzüge haben, benötigen wir auch mehr Pioniere um Straßen für sie zu bauen. Die Händler sollen diese für uns anwerben.</German>
-        <Italian>Now that we have so many new wagon trains, we could use some more pioneers to build them. The traders could hire them for us.</Italian>
-        <Spanish>Now that we have so many new wagon trains, we could use some more pioneers to build them. The traders could hire them for us.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST</Tag>
-        <English>We have now set up a basic fur trade in our colonies but our Majesty orders us to expand the business by hiring at least five fur trappers. If we are the first Nation to do so, His Majesty offers a reward.</English>
+        <English>We've got a basic fur trade under way but our Majesty expects us to expand the business by hiring at least five fur trappers. If we are the first nation to do so, His Majesty offers a reward.</English>
         <French>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offer a reward.</French>
         <German>Wir haben einen grundlegenden aber florierenden Pelzhandel etabliert. Seine Majestät befiehlt aber den Prozess zu beschleunigen und weiter in den Pelzandel zu expanidieren, indem wir mindestens fünf Pelzhändler anwerben. Wenn wir dies als erste Nation schaffen, verspricht Ihre Majestät eine Belohnung.</German>
-        <Italian>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offer a reward.</Italian>
-        <Spanish>We have now set up basic fur trade in our colonies but our Majesty orders us to expand our fur business my hiring at least five fur trappers. If we achieve to be the first Nation to do so, his Majesty will offera reward.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST</Tag>
         <English>We will do as His Majesty orders. Our new nation will dominate the fur trade of the New World and our citizens will enjoy luxurious fur.</English>
         <French>We will do as his Majesty orders. Our new nation will dominate the fur trade of the New World and our homeland will indulge in luxurious fur.</French>
         <German>Wir werden den Befehlen seiner Majestät gehorchen. Unsere Nation wir den Pelzhandel der Neuen Welt dominieren und unser Heimatland wird in luxuriösen Pelzen schwelgen.</German>
-        <Italian>We will do as his Majesty orders. Our new nation will dominate the fur trade of the New World and our homeland will indulge in luxurious fur.</Italian>
-        <Spanish>We will do as his Majesty orders. Our new nation will dominate the fur trade of the New World and our homeland will indulge in luxurious fur.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_FUR_TRAPPERS_QUEST</Tag>
         <English>For God's sake! Another colonial nation has succeeded in acquiring five fur trappers first and now dominates the fur market.</English>
         <French>For God's sake! Another colonial nation has succeeded in acquiring five fur trappers first and now dominates the fur market.</French>
         <German>Schlechte Kunde! Einer anderen Kolonialmahct ist es gelungen als erstes fünf erfahrene Pelzjäger zu erwerben und dominiert nun den Pelzhandel.</German>
-        <Italian>For God's sake! Another colonial nation has succeeded in acquiring five fur trappers first and now dominates the fur market.</Italian>
-        <Spanish>For God's sake! Another colonial nation has succeeded in acquiring five fur trappers first and now dominates the fur market.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE_WORLD</Tag>
-        <English>A colonial nation has acquired five fur trappers.</English>
+        <English>A colonial nation has five fur trappers.</English>
         <French>A colonial nation has acquired five fur trappers.</French>
         <German>Eine Kolonialmacht hat fünf Pelzjäger erworben.</German>
-        <Italian>A colonial nation has acquired five fur trappers.</Italian>
-        <Spanish>A colonial nation has acquired five fur trappers.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE</Tag>
         <English>Congratulations! You are the first governor with five fur trappers in the New World. The Lord's blessing is upon you. His Majesty is delighted with the luxurious fur and is in a very generous mood.</English>
         <French>Congratulations! You are the first governor with five fur trappers in the New World. The Lord's blessing will be upon you. His Majesty is delighted by the luxurious fur we deliver and in very generous mood.</French>
         <German>Glückwunsch! Ihr seid der erste Gouverneur, der es geschafft hat fünf Pelzjäger in der Neuen Welt zu erwerben. Der Segen Gottes liegt auf euch. Ihre Majstestät ist von den luxuriösen Pelzen entzückt und in sehr großzügiger Stimmung.</German>
-        <Italian>Congratulations! You are the first governor with five fur trappers in the New World. The Lord's blessing will be upon you. His Majesty is delighted by the luxurious fur we deliver and in very generous mood.</Italian>
-        <Spanish>Congratulations! You are the first governor with five fur trappers in the New World. The Lord's blessing will be upon you. His Majesty is delighted by the luxurious fur we deliver and in very generous mood.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST_DONE_1</Tag>
-        <English>Declare one of our fur trading cities to be the central hub for collecting premium fur. The trappers will receive extra services. Finance it with the reward of our Majesty.</English>
+        <English>Declare one of our fur trading cities to be the central hub for collecting premium fur. The trappers will receive extra services. Finance it with the reward from our Majesty.</English>
         <French>Declare one of our fur trading cities to be the central hub for collecting premium fur. The trappers shall get extra services for that. Finance it with the reward of our Majesty.</French>
         <German>Benennt eine unsere Städte, die mit Pelzen handeln zum Zentralen Pelzhandlesplatz. Die Pelzjäger sollen dort zusätzliche Dienstleistungen finden. Finanziert dies mit der Belohnung Ihrer Majestät.</German>
-        <Italian>Declare one of our fur trading cities to be the central hub for collecting premium fur. The trappers shall get extra services for that. Finance it with the reward of our Majesty.</Italian>
-        <Spanish>Declare one of our fur trading cities to be the central hub for collecting premium fur. The trappers shall get extra services for that. Finance it with the reward of our Majesty.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST_DONE_2</Tag>
-        <English>Use the reward of our Majesty to hire more fur traders from the Old World to produce more fur coats in our colonies.</English>
+        <English>Use our Majesty's reward to lure fur traders from the Old World to produce more fur coats in our colonies.</English>
         <French>Use the reward of our Majesty to hire more fur traders from the Old World to produce more fur coats in our colonies.</French>
         <German>Nutzt die Belohnung Ihrere Majestät um weitere Pelzhändler aus der Neuen Welt anzuheuern, die dann wiederum mehr Pelzmäntel herstellen können.</German>
-        <Italian>Use the reward of our Majesty to hire more fur traders from the Old World to produce more fur coats in our colonies.</Italian>
-        <Spanish>Use the reward of our Majesty to hire more fur traders from the Old World to produce more fur coats in our colonies.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST</Tag>
-        <English>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we can be the first colonial nation to get at least six cargo loads of native or African Slaves.</English>
+        <English>We have obtained our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we can be the first colonial nation to get at least six cargo loads of Native or African slaves.</English>
         <French>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</French>
         <German>Ihr habt eure ersten Sklaven erworben. Die Plantagenbesitzer der Kolonien fordern jedoch noch mehr. Wenn ihr als erste Nation mindestens sechs Wagenladungen Ureinwohnersklaven oder Sklaven aus Afrika erwerbt, versprechen Sie einen Belohnung.</German>
-        <Italian>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</Italian>
-        <Spanish>We have acquired our first slaves. The plantation owners are very happy to have that additional work force and promise a reward if we achieve to be the first colonial nation to acquire at least six cargo loads of native slaves or african Slaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST</Tag>
-        <English>We will do as the plantation owners ask. Our plantations will get all the work force they need.</English>
+        <English>We will do as the plantation owners ask. Our plantations will get all the workers they need.</English>
         <French>We will do as the plantation owners ask. Our plantations will get all the work force they need.</French>
         <German>Wir werden den Wünschen der Plantagenbesitzern entsprechend. Unsere Plantagen werden die Arbeitskräfte bekommen, die sie brauchen.</German>
-        <Italian>We will do as the plantation owners ask. Our plantations will get all the work force they need.</Italian>
-        <Spanish>We will do as the plantation owners ask. Our plantations will get all the work force they need.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_MANY_SLAVES_QUEST</Tag>
-        <English>Another governor has acquired six cargo loads of slaves before we were able to. Forget about any rewards.</English>
+        <English>Another governor has brought over six cargo loads of slaves before we could. Forget any rewards.</English>
         <French>For God's sake! Another governor has acquired six cargo loads of slaves before we were able to. Forget about any rewards.</French>
         <German>Schlechte Kunde! Einem anderen Gouverneur ist es als erstem gelungen sechs Schiffsladungen von Sklaven zu erwerben. Die Belohnung der Händler ist hinfällig.</German>
-        <Italian>For God's sake! Another governor has acquired six cargo loads of slaves before we were able to. Forget about any rewards.</Italian>
-        <Spanish>For God's sake! Another governor has acquired six cargo loads of slaves before we were able to. Forget about any rewards.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE_WORLD</Tag>
         <English>A colonial nation has acquired six cargo loads of slaves.</English>
         <French>A colonial nation has acquired six cargo loads of slaves.</French>
         <German>Eine Kolonialmacht hat sechs Schiffsladungen von Sklaven erworben.</German>
-        <Italian>A colonial nation has acquired six cargo loads of slaves.</Italian>
-        <Spanish>A colonial nation has acquired six cargo loads of slaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE</Tag>
-        <English>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing upon you. The plantation owners are in a generous mood.</English>
+        <English>Congratulations! You are the first colonial nation with six cargo loads of slaves for the New World plantations. The Lord's blessing upon you. The plantation owners are in a generous mood.</English>
         <French>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</French>
         <German>Glückwunsch! Ihr seid der erste Gouverneur, der es geschafft hat sechs Schiffsladungen von Sklaven in der Neuen Welt zu erwerben. Der Segen Gottes liegt auf euch und die Planatagenbesitzer sind in großzügiger Stimmung.</German>
-        <Italian>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</Italian>
-        <Spanish>Congratulations! You are the first colonial nation with six cargo loads of slaves to work on the plantations of the New World. The Lord's blessing will be upon you. The plantation owners are in generous mood.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST_DONE_1</Tag>
-        <English>The plantation owners will reward our efforts by paying some of their income from the additional work force we have delivered.</English>
+        <English>The plantation owners will reward our efforts now that they get extra income from the larger work force we've delivered.</English>
         <French>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</French>
         <German>Die Plantagenbesitzer sollen einen Teil unserer Aufwände durch ihr Einkommen kompensieren, dass sie mit der von uns gelieferten zusätzlichen Arbeitskraft erworben haben.</German>
-        <Italian>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</Italian>
-        <Spanish>The plantation owners shall compensate our efforts by paying some of their income they earned by the additional work force we delivered to them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST_DONE_2</Tag>
-        <English>Now that we have so many slaves in the colonies, we need more guards to keep them from running away. The plantation needs more settler militia.</English>
+        <English>Now that we have so many slaves in the colonies, we need guards to keep them from escaping. The plantation needs more settler militia.</English>
         <French>Now that we have so many slaves in the colonies, we need to have more guards to keep them from running away. The plantation could at least hire some additional settler militia.</French>
         <German>Nun da wir so viele Sklaven in den Kolonien haben, benötigen wir auch mehr Wachen um sie daran zu hindern zu fliehen. Die Plantagenbesitzer sollen zumindest diese für uns anwerben.</German>
-        <Italian>Now that we have so many slaves in the colonies, we need to have more guards to keep them from running away. The plantation could at least hire some additional settler militia.</Italian>
-        <Spanish>Now that we have so many slaves in the colonies, we need to have more guards to keep them from running away. The plantation could at least hire some additional settler militia.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST</Tag>
-        <English>We now have our first small coastal ships connecting the towns but our traders want us to expand the coastal service. If we are the first to have three small coastal ships, our traders offer a reward.</English>
+        <English>Small coastal ships now connect our seaport towns. Traders want us to expand the coastal service. If we are the first to have three small coastal ships, the traders will give us a reward.</English>
         <French>We have now set up our first coastal trade and transport with small coastal ships between our colonies but our traders ask us to expand the coastal ship connections. If we achieve to be the first nation to have three small coastal ships, our traders offers a reward.</French>
         <German>Wir haben unsere ersten Küstenhandel und Küstentransport mit Küstenschiffen zwischen den Kolonien etabliert. Unsere Händler bitten jedoch darum, diesen zu erweitern. Wenn wir die erste Nation sind, die mindestens drei kleine Küstentransportschiffe hat, bieten sie eine Belohnung.</German>
-        <Italian>We have now set up our first coastal trade and transport with small coastal ships between our colonies but our traders ask us to expand the coastal ship connections. If we achieve to be the first nation to have three small coastal ships, our traders offers a reward.</Italian>
-        <Spanish>We have now set up our first coastal trade and transport with small coastal ships between our colonies but our traders ask us to expand the coastal ship connections. If we achieve to be the first nation to have three small coastal ships, our traders offers a reward.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST</Tag>
-        <English>We will do as our traders ask. A better coastal ship connection will transport goods efficiently.</English>
+        <English>We will do as the traders ask. A better coastal ship service will transport goods efficiently.</English>
         <French>We will do as our traders ask. A better coastal ship conncection will help us to transport our goods more efficiently.</French>
         <German>Wir werden tun, wie es die Händler erbitten. Eine bessere Küstenschiffsverbindung wird es uns erlauben Gütertransporte effizienter zu gestalten.</German>
-        <Italian>We will do as our traders ask. A better coastal ship conncection will help us to transport our goods more efficiently.</Italian>
-        <Spanish>We will do as our traders ask. A better coastal ship conncection will help us to transport our goods more efficiently.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_THREE_SMALL_COASTAL_SHIPS_QUEST</Tag>
-        <English>For God's sake! Another colonial nation has succeeded in getting three small coastal ships before we could. Forget any rewards.</English>
+        <English>For Heaven's sake! Another colonial nation has succeeded in getting three small coastal ships before we could. Forget any rewards.</English>
         <French>For God's sake! Another colonial nation has succeeded in acquiring three small coastal ships first before we did. Forget about any rewards.</French>
         <German>Schlechte Kunde! Einer anderen Kolonialmahct ist es gelungen als erstes drei kleine Küstentransportschiffe zu erwerben. Die Belohnung der Händler ist hinfällig.</German>
-        <Italian>For God's sake! Another colonial nation has succeeded in acquiring three small coastal ships first before we did. Forget about any rewards.</Italian>
-        <Spanish>For God's sake! Another colonial nation has succeeded in acquiring three small coastal ships first before we did. Forget about any rewards.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_WORLD</Tag>
         <English>A colonial nation has acquired three small coastal ships.</English>
         <French>A colonial nation has acquired three small coastal ships.</French>
         <German>Eine Kolonialmacht hat drei kleine Küstentransportschiffe erworben.</German>
-        <Italian>A colonial nation has acquired three small coastal ships.</Italian>
-        <Spanish>A colonial nation has acquired three small coastal ships.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE</Tag>
         <English>Congratulations! You are the first governor in the New World with three small coastal ships. The Lord's blessing is upon you. The traders are delighted and in a very generous mood.</English>
         <French>Congratulations! You are the first governor with three small coastal ships in the New World. The Lord's blessing will be upon you. The traders are delighted and in very generous mood.</French>
         <German>Glückwunsch! Ihr seid der erste Gouverneur, der es geschafft hat drei kleine Küstentransportschiffe in der Neuen Welt zu erwerben. Der Segen Gottes liegt auf euch. Die Händler sind in sehr großzügiger Stimmung.</German>
-        <Italian>Congratulations! You are the first governor with three small coastal ships in the New World. The Lord's blessing will be upon you. The traders are delighted and in very generous mood.</Italian>
-        <Spanish>Congratulations! You are the first governor with three small coastal ships in the New World. The Lord's blessing will be upon you. The traders are delighted and in very generous mood.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_1</Tag>
-        <English>Declare one of our harbour cities as the central hub for collecting the additional salt from the traders' coastal journeys. Coastal service will be improved. Finance it with the traders' reward.</English>
+        <English>Declare one of our harbour cities as the central hub for collecting the additional salt from trading. Coastal service will be improved. Finance it with the traders' reward.</English>
         <French>Declare one of our harbour cities to be the central hub for collecting the additional salt that the traders bring from their coastal journeys. The coastal ships shall get extra services for that. Finance it with the reward of our traders.</French>
         <German>Benennt eine unsere Hafenstädte, die mit Pelzen handeln zum Zentralen Salzhandelsplatz. Die Küstentransportschiffe sollen dort zusätzliche Dienstleistungen finden. Finanziert dies mit der Belohnung der Händler.</German>
-        <Italian>Declare one of our harbour cities to be the central hub for collecting the additional salt that the traders bring from their coastal journeys. The coastal ships shall get extra services for that. Finance it with the reward of our traders.</Italian>
-        <Spanish>Declare one of our harbour cities to be the central hub for collecting the additional salt that the traders bring from their coastal journeys. The coastal ships shall get extra services for that. Finance it with the reward of our traders.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_2</Tag>
         <English>Use a small part of the traders' reward to build another large coastal ship. Keep the rest for expenses.</English>
         <French>Use a small part of the reward of our traders to build an additional large coastal ship and keep the rest for other expenses.</French>
         <German>Nutzt die Belohnung unserer Händler um ein größeres Küstentransportschiff zu bauen, behaltet aber einen Teil für andere Ausgaben zurück.</German>
-        <Italian>Use a small part of the reward of our traders to build an additional large coastal ship and keep the rest for other expenses.</Italian>
-        <Spanish>Use a small part of the reward of our traders to build an additional large coastal ship and keep the rest for other expenses.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SELL_NATIVE_SLAVE</Tag>
-        <English>A native slave has been charged with neglecting his duties.</English>
+        <English>A Native slave has been accused of neglecting his duties.</English>
         <French>A native slave has been charged with neglecting his duties.</French>
         <German>Ein Ureinwohnersklave wurde angeklagt seine Pflichten vernachlässigt zu haben.</German>
-        <Italian>A native slave has been charged with neglecting his duties.</Italian>
-        <Spanish>A native slave has been charged with neglecting his duties.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SELL_NATIVE_SLAVE</Tag>
-        <English>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</English>
+        <English>Mylord, a Native slave is before the court. The master, a wealthy gentleman, accuses him of guilty of neglecting his duties and "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of Native slaves.</English>
         <French>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</French>
         <German>Mylord, ein Ureinwohnersklave wurde ins Gericht gebracht. Sein Besitzer, ein wohlhabender Gentleman der Kolonies, erklärte dass er mehrere Verbrechen begannen hat, wie seine Pflichten zu vernachlässigen und auch aufrührerisches Verhalten. Der Gentleman verlangt daher, dass die Bedingunge der Sklavenvertrages auf 90 Jahre festgelegt werden, wie es in solchen Fällen üblich ist. Wir sollten diesen Fall als Gelegenheit sehen, die Rahmenbedingungen der Haltung von Ureinwohersklaven zu klären.</German>
-        <Italian>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</Italian>
-        <Spanish>Mylord, a native slave is brought before the court. The master, a wealthy gentleman of the colony, declares him guilty of crimes including neglect of duties and even "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of native slaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_KEEP</Tag>
-        <English>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed.</English>
+        <English>The honourable gentleman is correct. The law permits extending the term of indenture when a crime has been committed.</English>
         <French>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed. </French>
         <German>Der ehrenwerte Gentleman ist absolut im Recht. Ein Sklavenvertrag soll bei solchen schwerwiegenden Vergehen immer auf 90 Jahre festgeschrieben werden.</German>
-        <Italian>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed.</Italian>
-        <Spanish>The honorable gentleman is correct. The law permits an extension to the terms of indenture when a crime has been committed.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_FREE</Tag>
-        <English>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</English>
-        <French>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</French>
+        <English>We should rewrite the law to protect Natives from this kind of exploitation. Free the slave and pay the owner for his loss.</English>
+        <French>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the owner for his loss.</French>
         <German>Wir müssen das Recht umschreiben um die Ureinwohner vor solcherlei Ausbeutung zu schützen. Befreit den Sklaven, entschädigt jedoch seinen Besitzer.</German>
-        <Italian>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</Italian>
-        <Spanish>We should rewrite the law to protect the natives from this kind of exploitation. Free the slave and pay the gentleman for his loss.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_SELL</Tag>
-        <English>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</English>
+        <English>I find these legal proceedings tedious. Arrest this slave for dereliction of duty. Sell him to the next outbound slave ship.</English>
         <French>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</French>
         <German>Diese ganzen Gesetze sind veraltet. Verhaftet einfach den Sklaven wegen Aufrührerei und verkauft ihn dann bei nächster Gelegenheit an das nächste auslaufende Sklavenshiff</German>
-        <Italian>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</Italian>
-        <Spanish>I find these legal proceedings so tedious. Arrest this slave on the charge of dereliction of duty and sell him aboard the next outbound slave ship.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SELL_AFRICAN_SLAVE</Tag>
         <English>A deceased plantation owner has freed his African slaves.</English>
         <French>A deceased planter has freed his African slaves.</French>
         <German>Ein im Sterben liegender Plantagenbesitzer hat seine schwarzen Sklaven aus der Sklaverei entlassen.</German>
-        <Italian>A deceased planter has freed his African slaves.</Italian>
-        <Spanish>A deceased planter has freed his African slaves.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SELL_AFRICAN_SLAVE</Tag>
-        <English>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</English>
+        <English>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever. They intend to sell the slaves to the highest bidder. Should we intervene? Be warned! Setting slaves free will be unpopular with the European settlers.</English>
         <French>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</French>
         <German>Mylord, ein im Sterben liegender Plantagenbesitzer hat in seinem letzten Willen verfügt, dass seine schwarzen Sklaven aus der Sklaverei entlassen werden sollen. Kurz nachdem er verstarb, sind jedoch Sklaveneintreiber erschienen und haben seine Sklaven in Ketten gelegt. Sie behaupten, dass der alte Mann nicht mehr Herr seiner Sinne gewesen sei und wollen die Sklaven an den Höchstbietenden verkaufen. Sollen wir hier eingreifen?</German>
-        <Italian>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</Italian>
-        <Spanish>Mylord, a recently deceased planter left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever and will sell the slaves to the highest bidder. Should we intervene? Be warned, setting slaves free will be unpopular with the gentry.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_FREE</Tag>
         <English>We will abide by the man's wishes.</English>
         <French>We will abide by the man's wishes.</French>
         <German>Wir werden den letzten Willen dieses Mannes respektieren.</German>
-        <Italian>We will abide by the man's wishes.</Italian>
-        <Spanish>We will abide by the man's wishes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_KEEP</Tag>
-        <English>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</English>
+        <English>If we let them go free all of our slaves will start to expect the same. They must be kept in bondage.</English>
         <French>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</French>
         <German>Die Sklaven müssen weiterhin in Ketten bleiben. Würden wir sie befreien, so würde dies andere Sklaven aufstacheln ihre Freiheit zu fordern.</German>
-        <Italian>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</Italian>
-        <Spanish>If we let them go free soon all of our slaves will expect the same. They must be kept in bondage.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_SELL</Tag>
         <English>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</English>
         <French>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</French>
         <German>Weist die Sklaveneintreiber an, die schwarzen Sklaven an eine Plantage einer anderen Nation zu verkaufen.</German>
-        <Italian>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Italian>
-        <Spanish>Allow the sale to proceed, but sell them to a foreign plantation to avoid further incident.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SOLDIERS_SON_IN_FORT</Tag>
-        <English>A soldier's son has been secretly raised in a Fort.</English>
+        <English>A soldier's son has been secretly raised in a fort.</English>
         <German>A soldier's son has been secretly raised in a Fort.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SOLDIERS_SON_IN_FORT</Tag>
-        <English>Mylord, during on of the regular inspections in one of our Forts, one of its officers found out that one of the soldiers had secretly been raising his son in the fort after the child's mother had died. The young man is now 15 years and seems have become a fine lad considering these tough curcomstances for a child.</English>
+        <English>Mylord, during a routine inspection of one of our forts, an officer learned that one of the soldiers had secretly raised his son there after the child's mother died. The young man is now fifteen years of age and has grown up to be a fine lad, especially considering how tough it must have been.</English>
         <German>Mylord, während einer der regulären Inspektionen in einem unserer Forts, fand einer der Offiziere heraus, dass einer der Soldaten heimlich seinen Sohn im Fort aufzog, nachdem die Mutter des Kindes gestorben war. Der junge Mann ist nun 15 Jahre alt und scheint trotz der schwierigen Bedingungen für ein Kind ein anständiges Wesen zu haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_1</Tag>
-        <English>The young man must surely have learned something during his time in the Fort. Take care that he finishes at least some basic training in the Militia, give him some arms and put him into service.</English>
+        <English>The young man must surely have learned something during his time in the Fort. Take care that he finishes basic training in the militia, arm him and put him into service.</English>
         <German>Der junge Mann wird sicher etwas während seiner Zeit im Fort gelernt haben. Stellt sicher, dass er zumindest eine grundlegende Ausbildung in der Miliz bekommt, gebt ihm Waffen und lasst ihn in Dienst stellen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_2</Tag>
-        <English>We should give the young man a chance for a normal life and let him make his own decisions once he is of age. Give him proper clothes and send him to one of our cities where he can choose a profession of his liking.</English>
+        <English>We should give the young man a chance for a normal life and let him make his own decisions once he is of age. Give him proper clothes and send him to one of our cities where he can choose a profession to his liking.</English>
         <German>Wir sollten dem jungen Mann eine Chance auf ein normales Leben geben und darauf seine eigenen Entscheidungen zu treffen. Gebt ihm saubere Kleidung, sendet ihn in eine unserer Städte und lasst ihn selbst einen Beruf wählen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RABBLE</Tag>
-        <English>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</English>
+        <English>There are rumours that outlaws are roaming the colonies and attacking the merchants' wagon trains. Beware!</English>
         <French>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</French>
         <German>Es gibt Gerüchte, dass in den Kolonien Straßenräuber ihr Unwesen treiben und die Wagenkolonnen der Händler überfallen. Hütet Euch!</German>
-        <Italian>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</Italian>
-        <Spanish>There are rumours that muggers are roaming the colonies and attacking the merchants' wagon trains. Beware!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_1</Tag>
-        <English>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</English>
+        <English>Bandits have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</English>
         <French>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</French>
         <German>Straßenräuber haben einen Wagenzug überfallen und zwingen die Kutscher zur Übergabe der Kasse. Ihr müsst Eure Kolonie besser schützen, Sire!</German>
-        <Italian>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</Italian>
-        <Spanish>Muggers have attacked a wagon train and forced the coachmen to hand over the cash. You must protect your colony better, Sire!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_2</Tag>
-        <English>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</English>
+        <English>Your colonies are developing magnificently. Unfortunately this also attracts daangerous opportunists. Highwaymen have attacked a wagon train, demanding a toll from the coachman!</English>
         <French>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</French>
         <German>Eure Kolonien entwickeln sich prächtig. Leider zieht das auch weniger freundliche Zeitgenossen an. Wegelagerer haben einen Wagenzug überfallen und fordern Wegzoll vom Kutscher!</German>
-        <Italian>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Italian>
-        <Spanish>Your colonies are developing magnificently. Unfortunately this also attracts less friendly contemporaries. Rabbles have attacked a wagon train and demand tolls from the coachman!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT</Tag>
-        <English>A trading company is about to set up a new trading fort in a strategic location!</English>
+        <English>A trading company has a strategic location for a new fort!</English>
         <French>A trading company is about to set up a new trading fort in a strategic location!</French>
         <German>Eine Handelsgesellschaft ist drauf und dran an einer strategisch günstigen Stelle ein neues Handelsfort zu errichten!</German>
-        <Italian>A trading company is about to set up a new trading fort in a strategic location!</Italian>
-        <Spanish>A trading company is about to set up a new trading fort in a strategic location!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_1</Tag>
-        <English>Sire, some traders had found a favourable position for a trading post. It is strategically located to develop our trading interests in the region. Do we want to support the construction and gain an advantage?</English>
+        <English>Sire, some traders have chosen a good position for a trading post. It is strategically positioned to advance our trading interests in the region. Do we want to support the construction and gain an advantage?</English>
         <French>Sire, some traders had found a favourable position for a trading post. It is strategically located to develop our trading interests in the region. Do we want to support the construction and gain an advantage?</French>
         <German>Sire, einige Händler habe eine günstige Stelle für einen Handelsposten gefunden. Er liegt strategisch günstig, um unsere Handelsinteressen in der Region auszubauen. Wollen wir den Bau unterstützen und uns so einen Vorteil verschaffen?</German>
-        <Italian>Sire, some traders had found a favourable position for a trading post. It is strategically located to develop our trading interests in the region. Do we want to support the construction and gain an advantage?</Italian>
-        <Spanish>Sire, some traders had found a favourable position for a trading post. It is strategically located to develop our trading interests in the region. Do we want to support the construction and gain an advantage?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_2</Tag>
-        <English>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</English>
+        <English>Sire, a messenger has arrived. One of our trading companies wants to set up a trading post on the border. This would benefit us, but would anger our neighbours. What should we do?</English>
         <French>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</French>
         <German>Sire, ein Bote ist angekommen. Eine unserer Handelsgesellschaften möchte an der Grenze ein Handelsfort errichten. Dies würde uns nützen, aber unsere Nachbarn erzürnen. Was sollen wir tun?</German>
-        <Italian>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</Italian>
-        <Spanish>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</Spanish>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT2</Tag>
-        <English>A trading fort provokes the minds of neighbouring settlers!</English>
+        <English>A trading fort does business that could disturb nearby settlers.</English>
         <French>A trading fort provokes the minds of neighbouring settlers!</French>
         <German>Ein Handelsfort erregt die Gemüter benachbarter Siedler!</German>
-        <Italian>A trading fort provokes the minds of neighbouring settlers!</Italian>
-        <Spanish>A trading fort provokes the minds of neighbouring settlers!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_1</Tag>
-        <English>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</English>
+        <English>Sire, perhaps it was not such a good idea to build the new trading fort on the border after all. Our neighbours really resent it.</English>
         <French>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</French>
         <German>Sire, es war vielleicht doch keine so gute Idee, das neue Handelsfort an dieser Grenze zu errichten. Unsere Nachbarn nehmen es uns wirklich übel.</German>
-        <Italian>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</Italian>
-        <Spanish>Sire, perhaps it was not such a good idea to build the new trading fort on this border after all. Our neighbours really resent it.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_2</Tag>
-        <English>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</English>
+        <English>Sire, a messenger is here. Our neighbours demand that we tear down the new trading post immediately. They're furious.</English>
         <French>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</French>
         <German>Sire, ein Bote ist angekommen. Unsere Nachbarn verlangen, dass wir das neue Handelsfort umgehend wieder abreißen. Sie sind wirklich ungehalten.</German>
-        <Italian>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</Italian>
-        <Spanish>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</Spanish>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT3</Tag>
         <English>The Crown expresses its disapproval of your arbitrary actions!</English>
         <French>The Crown expresses its disapproval of your arbitrary actions!</French>
         <German>Die Krone bringt ihr Missfallen über Euer eigenmächtiges Handeln zum Ausdruck!</German>
-        <Italian>The Crown expresses its disapproval of your arbitrary actions!</Italian>
-        <Spanish>The Crown expresses its disapproval of your arbitrary actions!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT3</Tag>
-        <English>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</English>
+        <English>His Majesty has heard that you demolished the Royal Trading Company fort just to ingratiate yourself with your neighbours.</English>
         <French>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</French>
         <German>Sire, seiner Majestät ist zu Ohren gekommen, dass ihr der königlichen Handelsgesellschaft das Fort genommen habt, nur um Euch bei Euren Nachbarn lieb Kind zu machen.</German>
-        <Italian>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</Italian>
-        <Spanish>His Majesty has heard that you have taken the fort from the Royal Trading Company just to ingratiate yourself with your neighbours.</Spanish>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RIVER_FISHING_1</Tag>
-        <English>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</English>
+        <English>A boatman discovered a vast shoal of fish in one of the large rivers!</English>
         <French>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</French>
         <German>Ein Flußschiffer hat einen mächtigen Fischschwarm in einem der großen Ströme entdeckt!</German>
-        <Italian>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</Italian>
-        <Spanish>A river boatman has discovered a mighty shoal of fish in one of the large rivers!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RIVER_FISHING_1</Tag>
-        <English>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</English>
+        <English>Captain, look! The river is so full of fish that they jump out of the water. If only they would jump into our nets, we would be rich men!</English>
         <French>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</French>
         <German>Captain, seht nur! Der Fluss ist so voller Fische, dass sie sogar aus dem Wasser springen. Wenn sie uns nur auch so in die Netze springen, sind wir gemachte Leute!</German>
-        <Italian>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</Italian>
-        <Spanish>Captain, look! The river is so full of fish that they even jump out of the water. If only they would jump into our nets, we would be made men!</Spanish>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_LOST_SHIP_1</Tag>
-        <English>A ship ran aground in poor visibility!</English>
+        <English>A ship ran aground in the fog.</English>
         <French>A ship ran aground in poor visibility!</French>
         <German>Ein Schiff ist bei schlechter Sicht auf Grund gelaufen!</German>
-        <Italian>A ship ran aground in poor visibility!</Italian>
-        <Spanish>A ship ran aground in poor visibility!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LOST_SHIP_1</Tag>
-        <English>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</English>
+        <English>Captain, the ship is sinking! We're taking on water where the planks broke. The bosun can't seal the leak. Give the order to abandon ship or we perish!</English>
         <French>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</French>
         <German>Captain, das Schiff sinkt! Wir haben schon mehrere Fuß Wasser gemacht, weil mehrere Planken eingedrückt wurden. Der Bootsmann kann das Leck nicht abdichten. Gebt den Befehl "Alle Mann von Bord" oder wir gehen alle drauf!</German>
-        <Italian>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</Italian>
-        <Spanish>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Tag>
@@ -3191,32 +3079,32 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
-        <English>Deliver the following amount of goods to Europe [COLOR_FONT_GOLD]before any other Nations does[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <English>Deliver this quantity of goods to Europe [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge nach Europa [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
-        <English>Deliver the following amount of goods to the colonies [COLOR_FONT_GOLD]before any other Nations does[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
+        <English>Deliver the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation can[COLOR_REVERT]: [NEWLINE]%D1_amount %F2_yield</English>
         <German>Liefere die folgende Warenmenge in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation tut:[COLOR_REVERT] [NEWLINE]%D1_amount %F2_yield</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
-        <English>Citizens of our Homeland are excited by the quality of our colonial goods. [NEWLINE]His Majesty is delighted. Demand for our colonial goods is rising.</English>
+        <English>The quality of our colonial goods has impressed citizens in our homeland. [NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
         <German>Die Bürger des Heimatlandes sind von der Qualität unsere Kolonialwaren begeistert. [NEWLINE]Ihre Majestät is hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Tag>
-        <English>The race to dominate the [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] Market in Europe has started.</English>
+        <English>The race to dominate the [COLOR_FONT_GOLD]sugar[COLOR_REVERT] market in Europe is under way.</English>
         <German>Das Rennen zur Beherrschung des Markt in Europe für [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] hat begonnen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SUGAR_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first deliveries of colonial [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] from the Colonies. His Majesty thus orders you to become the dominant market leader for that good.</English>
+        <English>His Majesty and citizens of the homeland are delighted with the first deliveries of colonial [COLOR_FONT_GOLD]sugar[COLOR_REVERT]. His Majesty thus orders you to become the market leader.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SUGAR_FAILED</Tag>
-        <English>A colonial Nation succeeded first to dominate the [COLOR_FONT_GOLD]Sugar[COLOR_REVERT] Market in Europe.</English>
+        <English>A colonial nation was first to dominate the [COLOR_FONT_GOLD]sugar[COLOR_REVERT] market in Europe.</English>
         <German>Einer Kolonialmacht ist es zuerst gelungen den Markt in Europe für [COLOR_FONT_GOLD]Zucker[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
