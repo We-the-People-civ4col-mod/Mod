@@ -25373,7 +25373,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>21</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -25437,7 +25437,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>21</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -25503,7 +25503,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>21</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -25569,7 +25569,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>21</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -25632,7 +25632,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>11</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -25696,7 +25696,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>11</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -25762,7 +25762,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>11</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -25828,7 +25828,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>11</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -25891,7 +25891,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>1</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -25955,7 +25955,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>1</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -26021,7 +26021,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>1</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -26084,7 +26084,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>4</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -26148,7 +26148,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>4</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -26214,7 +26214,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>4</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -26277,7 +26277,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>2</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>2000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -26341,7 +26341,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>2</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -26407,7 +26407,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>2</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -26470,7 +26470,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>3</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -26534,7 +26534,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>3</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -26600,7 +26600,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>3</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -26663,7 +26663,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>5</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -26727,7 +26727,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>5</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -26793,7 +26793,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>5</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -26859,7 +26859,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>5</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -26922,7 +26922,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>6</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -26986,7 +26986,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>6</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -27052,7 +27052,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>6</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -27118,7 +27118,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>6</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -27181,7 +27181,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>7</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -27245,7 +27245,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>7</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -27311,7 +27311,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>7</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -27377,7 +27377,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>7</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -27440,7 +27440,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>9</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -27504,7 +27504,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>9</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -27570,7 +27570,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>9</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -27636,7 +27636,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>9</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -27699,7 +27699,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>8</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -27763,7 +27763,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>8</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -27829,7 +27829,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>8</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -27892,7 +27892,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>16</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -27956,7 +27956,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>16</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -28022,7 +28022,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>16</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28088,7 +28088,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>16</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28154,7 +28154,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>16</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28217,7 +28217,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>10</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -28281,7 +28281,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>10</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -28347,7 +28347,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>10</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28413,7 +28413,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>10</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28476,7 +28476,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>12</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -28540,7 +28540,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>12</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -28606,7 +28606,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>12</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28669,7 +28669,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>13</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -28733,7 +28733,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>13</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -28799,7 +28799,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>13</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28865,7 +28865,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>13</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -28928,7 +28928,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>14</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -28992,7 +28992,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>14</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -29058,7 +29058,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>14</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29124,7 +29124,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>14</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29187,7 +29187,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -29251,7 +29251,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -29317,7 +29317,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29383,7 +29383,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>0</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29446,7 +29446,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>15</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -29510,7 +29510,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>15</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -29576,7 +29576,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>15</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29639,7 +29639,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>17</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -29703,7 +29703,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>17</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -29769,7 +29769,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>17</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29835,7 +29835,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>17</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29901,7 +29901,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>17</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -29964,7 +29964,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>18</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -30028,7 +30028,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>18</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -30094,7 +30094,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>18</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30160,7 +30160,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>18</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30226,7 +30226,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>18</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30289,7 +30289,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>19</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -30353,7 +30353,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>19</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -30419,7 +30419,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>19</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30485,7 +30485,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>19</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30548,7 +30548,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>20</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -30612,7 +30612,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>20</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -30678,7 +30678,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>20</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30741,7 +30741,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>22</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -30805,7 +30805,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>22</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -30871,7 +30871,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>22</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -30934,7 +30934,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>23</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>2000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -30998,7 +30998,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>23</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -31064,7 +31064,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>23</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -31127,7 +31127,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>24</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -31191,7 +31191,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>24</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -31257,7 +31257,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>24</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -31320,7 +31320,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>25</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -31384,7 +31384,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>25</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -31450,7 +31450,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>25</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -31513,7 +31513,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>27</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -31577,7 +31577,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>27</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -31643,7 +31643,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>27</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -31706,7 +31706,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>28</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -31770,7 +31770,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>28</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -31836,7 +31836,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>28</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -31902,7 +31902,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>28</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -31965,7 +31965,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>29</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -32029,7 +32029,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>29</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -32095,7 +32095,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>29</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -32161,7 +32161,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>29</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -32224,7 +32224,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>31</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -32288,7 +32288,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>31</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -32354,7 +32354,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>31</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -32420,7 +32420,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>31</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -32483,7 +32483,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>30</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -32547,7 +32547,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>30</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -32613,7 +32613,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>30</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -32679,7 +32679,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>30</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-1</iGenericParameter4>
@@ -32742,7 +32742,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>26</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -32806,7 +32806,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>26</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -32872,7 +32872,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>26</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -32935,7 +32935,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>32</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -32999,7 +32999,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>32</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -33065,7 +33065,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>32</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -33128,7 +33128,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>34</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>2000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -33192,7 +33192,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>34</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -33258,7 +33258,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>34</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -33321,7 +33321,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>37</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -33385,7 +33385,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>37</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -33451,7 +33451,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>37</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -33514,7 +33514,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>36</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -33578,7 +33578,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>36</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -33644,7 +33644,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>36</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -33707,7 +33707,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>35</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -33771,7 +33771,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>35</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -33837,7 +33837,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>35</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -33900,7 +33900,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>33</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>2000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -33964,7 +33964,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>33</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -34030,7 +34030,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>33</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -34093,7 +34093,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>38</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -34157,7 +34157,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>38</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -34223,7 +34223,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>38</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -34286,7 +34286,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>39</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -34350,7 +34350,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>39</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -34416,7 +34416,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>39</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -34479,7 +34479,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>40</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>4000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -34543,7 +34543,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>4000</iGenericParameter1>
             <iGenericParameter2>40</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -34609,7 +34609,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>4000</iGenericParameter1>
             <iGenericParameter2>40</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -34672,7 +34672,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>41</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -34736,7 +34736,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>41</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -34802,7 +34802,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>41</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -34865,7 +34865,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>42</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -34929,7 +34929,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>42</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -34995,7 +34995,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>42</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -35058,7 +35058,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>43</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -35122,7 +35122,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>43</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -35188,7 +35188,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>43</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -35251,7 +35251,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>45</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -35315,7 +35315,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>45</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -35381,7 +35381,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>45</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -35444,7 +35444,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>50</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>4000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -35508,7 +35508,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>4000</iGenericParameter1>
             <iGenericParameter2>50</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -35574,7 +35574,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>4000</iGenericParameter1>
             <iGenericParameter2>50</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -35637,7 +35637,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>49</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>3000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -35701,7 +35701,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>49</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -35767,7 +35767,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>3000</iGenericParameter1>
             <iGenericParameter2>49</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -35830,7 +35830,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>48</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -35894,7 +35894,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>48</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -35960,7 +35960,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>48</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -36023,7 +36023,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>44</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>4000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -36087,7 +36087,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>4000</iGenericParameter1>
             <iGenericParameter2>44</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -36153,7 +36153,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>4000</iGenericParameter1>
             <iGenericParameter2>44</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -36216,7 +36216,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>46</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>5000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -36280,7 +36280,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>46</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -36346,7 +36346,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>5000</iGenericParameter1>
             <iGenericParameter2>46</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>1</iGenericParameter4>
@@ -36409,7 +36409,7 @@
             <iAIValue>800</iAIValue>
             <iGenericParameter1>100</iGenericParameter1>
             <iGenericParameter2>51</iGenericParameter2>
-            <iGenericParameter3>500</iGenericParameter3>
+            <iGenericParameter3>2000</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
         </EventInfo>
         <EventInfo>
@@ -36473,7 +36473,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>51</iGenericParameter2>
             <iGenericParameter3>1</iGenericParameter3>
             <iGenericParameter4>0</iGenericParameter4>
@@ -36539,7 +36539,7 @@
             <PythonHelp>getHelpQuestDoneEuropeTradePriceAndAttitude</PythonHelp>
             <Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
             <iAIValue>800</iAIValue>
-            <iGenericParameter1>500</iGenericParameter1>
+            <iGenericParameter1>2000</iGenericParameter1>
             <iGenericParameter2>51</iGenericParameter2>
             <iGenericParameter3>0</iGenericParameter3>
             <iGenericParameter4>-2</iGenericParameter4>
