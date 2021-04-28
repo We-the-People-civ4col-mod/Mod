@@ -9448,6 +9448,17 @@ void CvPlot::doMonastery()
 }
 // R&R, ray, Monasteries and Forts - END
 
+// setting up cache after loading a game
+void CvPlot::postLoadFixes()
+{
+	// update count for clearing fog of war
+	updateSight(true);
+
+	// tells if a plot can produce yields or not
+	// Surprisingly CPU heavy, hence cached
+	setYieldCache();
+}
+
 void CvPlot::writeDesyncLog(FILE *f)
 {
 	fprintf(f, "\t(%d,%d)\n", this->getX_INLINE(), this->getY_INLINE());

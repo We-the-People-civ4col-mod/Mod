@@ -164,7 +164,6 @@ public:
 	int getPlayerCityRadiusCount(int /*PlayerTypes*/ eIndex);
 	bool isPlayerCityRadius(int /*PlayerTypes*/ eIndex);
 	int getVisibilityCount(int /*TeamTypes*/ eTeam);
-	void changeVisibilityCount(int /*TeamTypes*/ eTeam, int iChange, int /*InvisibleTypes*/ eSeeInvisible);
 	int /*PlayerTypes*/ getRevealedOwner(int /*TeamTypes*/ eTeam, bool bDebug);
 	int /*TeamTypes*/ getRevealedTeam(int /*TeamTypes*/ eTeam, bool bDebug);
 	bool isRiverCrossing(DirectionTypes eIndex);
