@@ -3887,7 +3887,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROPE_DONE</Tag>
-        <EnglishIn obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]rope[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <English>In obedience to the orders of His Majesty we're now the market leader for [COLOR_FONT_GOLD]rope[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
         <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
     </TEXT>
     <TEXT>
@@ -3937,7 +3937,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOLD_DONE</Tag>
-        <EnglishFulfilling His Majesty's orders we're now the market leader for [COLOR_FONT_GOLD]gold[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
+        <English>Fulfilling His Majesty's orders we're now the market leader for [COLOR_FONT_GOLD]gold[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
         <German>Uns ist es gelungen die Befehle Ihrer Majstät zu erfüllen und der dominante Marktführer für den Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu werden. Ihre Majstät will uns dafür belohnen.</German>
     </TEXT>
     <TEXT>
@@ -4102,7 +4102,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COLOURED_CLOTH_FAILED</Tag>
-        <EnglishA colonial nation now dominates the European market for [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT].</English>
+        <English>A colonial nation now dominates the European market for [COLOR_FONT_GOLD]coloured cloth[COLOR_REVERT].</English>
         <German>Einer anderen Kolonialmacht ist es zuerst gelungen den Markt in Europa für [COLOR_FONT_GOLD]Gefärbte Tücher[COLOR_REVERT] zu beherrschen.</German>
     </TEXT>
     <TEXT>
