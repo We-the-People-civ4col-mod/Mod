@@ -14,7 +14,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_IMMIGRANT</Tag>
-        <English>[BOLD]Immigration[\BOLD][NEWLINE][TAB]A new colonist is waiting at the docks of your motherland looking for religious freedom and passage to the New World. To pick him up, move your ship to the coloured area near the edge of the map and click the "Sail to Europe" button.</English>
+        <English>[BOLD]Immigration[\BOLD][NEWLINE][TAB]A new colonist is waiting at the docks of your motherland looking for passage to the New World and religious freedom. To pick him up, move your ship to the coloured area near the edge of the map and click the "Sail to Europe" button.</English>
         <French>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Un nouveau colon en quête de liberté religieuse attend impatiemment dans le port de votre mère patrie qu'un navire le transporte jusqu'au Nouveau monde. Pour le récupérer, déplacez votre navire jusqu'à la zone colorée bordant la carte, puis cliquez sur Naviguer vers l'Europe.</French>
         <German>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Ein neuer Kolonist wartet an den Docks Ihres Mutterlandes und ist auf der Suche nach Religionsfreiheit und einer Überfahrt in die Neue Welt. Um ihn abzuholen, bewegen Sie Ihr Schiff in den farbigen Bereich am Rand der Karte und klicken Sie auf den Button "Nach Europa segeln".</German>
     </TEXT>
@@ -32,20 +32,20 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_NATIVE_VILLAGES</Tag>
-        <English>[BOLD]Natives[\BOLD][NEWLINE][TAB]Native interaction is beneficial in many ways. You can freely enter Native settlements. When one of your units enters a Native village you can speak with the chief (and possibly receive a gift); live among the Natives to learn a specialty; trade goods (if your unit is a transport); or establish a mission (if your unit is a missionary). You can also use combat units to conquer Native settlements.</English>
+        <English>[BOLD]Natives[\BOLD][NEWLINE][TAB]You can freely enter Native settlements. Native interaction is beneficial in many ways. When one of your units enters a Native village you can speak with the chief (and possibly receive a gift); live among the Natives to learn a specialty; trade goods (if your unit is a transport); build a trading post (if your unit is a trader) or establish a mission (if your unit is a missionary). You can also use combat units to attack and raze Native settlements.</English>
         <French>[BOLD]Indigènes[\BOLD][NEWLINE][TAB]Interagir avec les indigènes peut offrir de nombreux avantages. Pour commencer, vous pouvez entrer librement dans leurs colonies. Lorsque l'une de vos unités s'y trouve, il vous est possible de parler à son chef et peut-être même de recevoir un présent. Il est également possible de vivre au sein de la colonie pour y apprendre une spécialité, d'y acheter ou vendre des marchandises aux autochtones, ou d'y établir une mission (si l'unité en question est un missionnaire). Il vous est également possible, grâce à vos unités de combat, de vous emparer des colonies indigènes.</French>
-        <German>[BOLD]Ureinwohner[\BOLD][NEWLINE][TAB]Interaktion mit den Ureinwohnern kann zahlreiche Vorteile bringen. Sie können Ureinwohner-Siedlungen uneingeschränkt betreten. Wenn sich eine Ihrer Einheiten in einer Ureinwohner-Siedlung befindet, können Sie mit dem Häuptling der Siedlung sprechen (und erhalten vielleicht ein Geschenk), bei den Ureinwohnern leben und eine Spezialfähigkeit erlernen, Handel mit den Ureinwohnern betreiben (wenn es sich um eine Transporteinheit handelt) oder eine Mission errichten (wenn die Einheit ein Missionar ist). Sie können Ureinwohner-Siedlungen mit Kampfeinheiten auch erobern.</German
+        <German>[BOLD]Ureinwohner[\BOLD][NEWLINE][TAB]Interaktion mit den Ureinwohnern kann zahlreiche Vorteile bringen. Sie können Ureinwohner-Siedlungen uneingeschränkt betreten. Wenn sich eine Ihrer Einheiten in einer Ureinwohner-Siedlung befindet, können Sie mit dem Häuptling der Siedlung sprechen (und erhalten vielleicht ein Geschenk), bei den Ureinwohnern leben und eine Spezialfähigkeit erlernen, Handel mit den Ureinwohnern betreiben (wenn es sich um eine Transporteinheit handelt) oder eine Mission errichten (wenn die Einheit ein Missionar ist). Sie können Ureinwohner-Siedlungen mit Kampfeinheiten auch erobern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_REVOLUTION</Tag>
-        <English>[BOLD]Revolution![\BOLD][NEWLINE][TAB]Over half of your citizens believe your colony should be a sovereign state.  You can now declare independence from your motherland by visiting the Revolution Screen.</English>
+        <English>[BOLD]Revolution![\BOLD][NEWLINE][TAB]Over half the citizens believe your colony should be a sovereign state.  You can now declare independence from your motherland by visiting the Revolution Screen.</English>
         <French>[BOLD]Révolution ![\BOLD][NEWLINE][TAB]Plus de la moitié des citoyens estiment que votre colonie devrait être autonome. Vous pouvez désormais déclarer votre indépendance depuis l'écran de Révolution.</French>
         <German>[BOLD]Revolution![\BOLD][NEWLINE][TAB]Mehr als die Hälfte Ihrer Bürger wollen, dass Ihre Kolonie zu einem souveränen Staat wird. Sie können nun die Unabhängigkeit von Ihrem Mutterland erklären, indem Sie den Revolutionsbildschirm aufrufen.</German>
     </TEXT>
     <!--TUTORIAL EVENTS-->
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_RESOURCE_TOOLS</Tag>
-        <English>[BOLD]Tools[\BOLD][NEWLINE][TAB]%s2_city has begun to create tools. Manufactured from ore, tools are a component of many advanced buildings and are also used to make pioneers and guns.</English>
+        <English>[BOLD]Tools[\BOLD][NEWLINE][TAB]%s2_city has begun to create tools. Manufactured from ore, tools are a component of many advanced buildings and are also used to create pioneers and guns.</English>
         <French>[BOLD]Outils[\BOLD][NEWLINE][TAB]%s2_city a commencé à créer des outils. Fabriqués à partir de minerai, les outils sont nécessaires pour construire de nombreux bâtiments complexes et servent aussi à la création des pionniers et des armes à feu.</French>
         <German>[BOLD]Werkzeuge[\BOLD][NEWLINE][TAB]%s2_city hat mit der Produktion von Werkzeugen begonnen. Die aus Eisenerz gefertigten Werkzeuge werden zur Errichtung vieler fortschrittlicher Gebäude benötigt und kommen ebenfalls bei der Ausbildung von Pionieren und der Herstellung von Schusswaffen zum Einsatz.</German>
     </TEXT>
@@ -57,7 +57,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_AUTOMATED_TRADE</Tag>
-        <English>[BOLD]Automated Trade[\BOLD][NEWLINE][TAB]Trade between two cities can be automated by using a transport, such as a wagon train or a ship. To set up trade, first click on the governor tab in the Settlement Screen. Specify an import in one settlement and an export in another. Now select a transport unit (either a ship or wagon train), click on the Assign Trade Routes button and place a checkmark in the trade route where you want this transport unit to travel.</English>
+        <English>[BOLD]Automated Trade[\BOLD][NEWLINE][TAB]Trade between two cities can be automated with a transport such as a wagon train or ship. To set up trade, first click on the governor tab in the Settlement Screen. Specify an import in one settlement and an export in another. Now select a transport unit (either a ship or wagon train), click on the Assign Trade Routes button and place a checkmark in the trade route where you want this transport unit to travel.</English>
         <French>[BOLD]Commerce automatisé[\BOLD][NEWLINE][TAB]Le commerce entre deux villes peut être automatisé en utilisant une unité de transport, comme un chariot ou un navire. Pour mettre en place le commerce, cliquez sur l'onglet "Gouverneur" dans l'écran de colonie et attribuez une importation à une colonie et une exportation à une autre. Sélectionnez ensuite une unité de transport (un navire ou un chariot), cliquez sur le bouton "Attribuer des routes commerciales" et désignez la route commerciale sur laquelle vous voulez faire circuler cette unité de transport.</French>
         <German>[BOLD]Automatisierter Handel[\BOLD][NEWLINE][TAB]Der Handel zwischen zwei Städten kann mit Hilfe eines Transportmittels, d. h. ein Kutschentross oder ein Schiff, automatisiert werden. Um alle Handelsvorkehrungen zu treffen, klicken Sie im Siedlungsbildschirm auf "Gouverneur" und weisen Sie der einen Siedlung einen Import, der anderen einen Export zu. Jetzt wählen Sie eine Transporteinheit (entweder ein Schiff oder einen Kutschentross), klicken Sie auf "Handelswege zuweisen" und markieren Sie den Handelsweg, den das Transportmittel nehmen soll.</German>
     </TEXT>
@@ -69,13 +69,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_MOTHERLAND</Tag>
-        <English>[BOLD]Europe[\BOLD][NEWLINE][TAB]One of your ships will arrive in Europe shortly. From the Europe screen you can buy and sell goods, load immigrants, and recruit new units. When you're done, drag your ship to the section of the screen labeled "Outbound."</English>
+        <English>[BOLD]Europe[\BOLD][NEWLINE][TAB]One of your ships will reach Europe shortly. On the Europe screen you can buy and sell goods, load immigrants, and recruit new units. When you're done, drag your ship to the section of the screen labeled "Outbound."</English>
         <French>[BOLD]Europe[\BOLD][NEWLINE][TAB]L'un de vos navires arrivera bientôt en Europe. Depuis l'écran de l'Europe, vous pouvez acheter et vendre des marchandises, faire monter des immigrants à bord et recruter de nouvelles unités. Une fois que vous avez terminé, faites glisser votre navire dans la zone de l'écran où apparaît la mention "En partance".</French>
         <German>[BOLD]Europa[\BOLD][NEWLINE][TAB]Eines Ihrer Schiffe soll in Kürze in Europa ankommen. Im Europa-Bildschirm können Sie Güter kaufen und verkaufen, Immigranten an Bord holen und neue Einheiten rekrutieren. Wenn Sie damit fertig sind, ziehen Sie Ihr Schiff in den Bereich des Bildschirms, auf dem "Auslaufend" steht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_PROFESSIONS</Tag>
-        <English>[BOLD]Professions[\BOLD][NEWLINE][TAB]Any citizen can be assigned to a profession by double-clicking him on the settlement screen and selecting a profession from the menu, or by dragging him onto a tile or building. The number of goods that a unit creates while assigned to a profession depends in large part on the unit's type. For example, an indentured servant can work in the blacksmith's shop, but he will never produce as many tools as an expert blacksmith.</English>
+        <English>[BOLD]Professions[\BOLD][NEWLINE][TAB]Citizens can be assigned to professions by double-clicking them on the settlement screen and selecting a profession from the menu, or by dragging them onto a tile or building. The number of goods that a unit creates while assigned to a profession depends in large part on the unit's type. For example, an indentured servant can work in the blacksmith's shop, but he will never produce as many tools as an expert blacksmith.</English>
         <French>[BOLD]Professions[\BOLD][NEWLINE][TAB]N'importe quel citoyen peut adopter n'importe quelle profession. Pour cela, faites un [double clic] sur lui dans l'écran de colonie et choisissez-lui une profession dans le menu. Vous pouvez également le faire glisser vers une case ou un bâtiment. La quantité de marchandises que cette unité crée lorsque vous lui avez attribué une profession dépend en grande partie de son type. Par exemple, même si un engagé peut travailler dans une forge, il ne produira pas autant d'outils qu'un forgeron professionnel.</French>
         <German>[BOLD]Berufe[\BOLD][NEWLINE][TAB]Jeder Bürger kann einem beliebigen Beruf zugewiesen werden - entweder, indem Sie im Siedlungsbildschirm doppelt auf den Bürger klicken und aus dem Menü einen Beruf auswählen, oder indem Sie ihn auf ein Geländefeld oder Gebäude ziehen. Die Anzahl der Güter, die eine Einheit produziert, hängt zu einem großen Teil von der Art der Einheit ab. So kann etwa ein Schuldknecht in einem Schmiedebetrieb arbeiten, wird jedoch deutlich weniger Werkzeug herstellen als ein Meisterschmied.</German>
     </TEXT>
@@ -87,1212 +87,916 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_SPEAK_WITH_CHIEF</Tag>
-        <English>[BOLD]Speak to Chief[\BOLD][NEWLINE][TAB]Making contact with the chiefs of neighbouring native villages can be a valuable source of resources to fledgling colonies. Contacted chiefs will tell you what goods their village is interested in acquiring, what skill they can teach your colonists, and - if you are the first European to contact the village - they will often give you a gift.[NEWLINE][TAB]To speak to a chief, move a unit onto the village tile and select the "Speak to Chief" order.</English>
+        <English>[BOLD]Speak to Chief[\BOLD][NEWLINE][TAB]Making contact with the chiefs of neighbouring native villages can provide valuable resources to fledgling colonies. Contacted chiefs will tell you what product their village needs, what skill they can teach your colonists, and - if you are the first European to contact the village - they will often give you a gift.[NEWLINE][NEWLINE]To speak to a chief, move a unit onto the village tile and select "Speak to Chief".</English>
         <French>[BOLD]Parler au chef[\BOLD][NEWLINE][TAB]Rencontrer les chefs des villages indigènes voisins peut s'avérer une précieuse mine de ressources pour les colonies nouvellement créées. Les chefs que vous contactez vous diront quelles marchandises leur village souhaiterait pouvoir acheter, les compétences qu'ils peuvent enseigner à vos colons, et si vous êtes le premier Européen à entrer en contact avec eux, ils pourront même vous offrir un cadeau ![NEWLINE][TAB]Pour parler à un chef, envoyez une unité sur la case du village et sélectionnez l'ordre "Parler au chef".</French>
         <German>[BOLD]Mit dem Häuptling sprechen[\BOLD][NEWLINE][TAB]Den Kontakt mit Häuptlingen benachbarter Dörfer von Eingeborenen herzustellen kann eine wertvolle Ressourcenquelle für junge Kolonien sein. Kontaktierte Häuptlinge werden Ihnen mitteilen, an welchen Gütern ihr Dorf interessiert ist, welche Fähigkeiten sie Ihren Kolonisten beibringen können, und - falls Sie der erste Europäer sind, der Kontakt zu dem Dorf aufnimmt - überreichen sie oft Geschenke.[NEWLINE][TAB]Um mit einem Häuptling zu sprechen, bewegen Sie eine Einheit auf das Geländefeld des Dorfes und wählen Sie den Befehl "Mit dem Häuptling sprechen!".</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_SPEAK_WITH_CHIEF_COMPLETED</Tag>
-        <English>[BOLD]Success![\BOLD][NEWLINE][TAB]Good job! You have successfully spoken to a chief.</English>
+        <English>[BOLD]Success![\BOLD][NEWLINE][TAB]Good job! You have successfully spoken with a chief.</English>
         <French>[BOLD]Victoire ![\BOLD][NEWLINE][TAB]Bien joué ! Vous avez réussi à parler à un chef.</French>
         <German>[BOLD]Erfolg![\BOLD][NEWLINE][TAB]Gut gemacht! Sie haben erfolgreich mit einem Häuptling gesprochen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_WAR</Tag>
-        <English>[BOLD]War[\BOLD][NEWLINE][TAB]War has been declared between you and the %s1_civ. To defend your cities, you will want to make sure each of your settlements has guns. Guns can either be purchased from Europe or built in a settlement that has an Armory. [NEWLINE]Once you have guns, any unit can be equipped with guns to become a Soldier. In addition to guns, Cannons can also be made in an Armory or bought from Europe. War will continue until one side is destroyed, or peace is negotiated through the diplomacy screen.</English>
+        <English>[BOLD]War[\BOLD][NEWLINE][TAB]War now rages between you and the %s1_civ. Each of your settlements needs guns for defence. Guns can either be purchased from Europe or built in a settlement that has an armoury. [NEWLINE][NEWLINE]Once you have guns, any unit can be equipped with guns to become a soldier. In addition to guns, cannons can also be forged in an armoury or imported from Europe. War will continue until one side is destroyed, or peace is negotiated through the diplomacy screen.</English>
         <French>[BOLD]Guerre[\BOLD][NEWLINE][TAB]La guerre a été déclarée entre vous et les %s1_civ. Pour assurer la défense de vos villes, vous devrez faire en sorte que toutes vos villes possèdent des armes à feu. Pour vous procurer des armes à feu, achetez-les en Europe ou faites-les fabriquer dans une colonie équipée d'une armurerie.[NEWLINE]Une fois en possession d'armes à feu, vous pouvez en équiper vos unités pour en faire des soldats. En plus des armes à feu, les canons peuvent également être fabriqués dans une armurerie ou achetés en Europe. La guerre continuera de faire rage jusqu'à ce que l'un des deux camps soient détruit ou qu'un accord de paix soit négocié via l'écran de diplomatie.</French>
         <German>[BOLD]Krieg[\BOLD][NEWLINE][TAB]Zwischen Ihrem und dem %s1:3_civ Volk wurde der Krieg erklärt. Um Ihre Siedlungen zu verteidigen, sollten Sie sicherstellen, dass alle Ihre Siedlungen über Schusswaffen verfügen. Sie können entweder aus Europa gekauft oder in einer Siedlung hergestellt werden, die über eine Waffenkammer verfügt. [NEWLINE]Sobald Sie Schusswaffen haben, können Sie alle Einheiten damit ausstatten, um sie zu Soldaten zu machen. Zusätzlich zu den Schusswaffen können Sie auch Kanonen in der Waffenkammer herstellen oder in Europa kaufen. Der Krieg dauert an, bis eine Seite zerstört ist oder über den Diplomatie-Bildschirm Frieden ausgehandelt wurde.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_IMMIGRANT_DONE_2</Tag>
-        <English>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Congratulations! You have picked up your first immigrant from Europe. Immigrants appear as your settlements produce Crosses. You can increase your production of Crosses by having a unit work within a Church or Cathedral. On the Europe Screen you can see how long it will be until another immigrant becomes available.</English>
+        <English>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Congratulations! You have picked up your first immigrant from Europe. Immigrants appear as your settlements produce crosses. You can increase your production of crosses by having a unit serve in a church or cathedral. On the Europe Screen you can see how long it will be until the next immigrant becomes available.</English>
         <French>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Félicitations ! Vous avez récupéré votre premier immigrant en Europe. Les immigrants apparaissent à mesure que vos colonies produisent des croix. Pour augmenter votre production de croix, faites travailler une unité dans une église ou une cathédrale. Consultez l'écran de l'Europe pour savoir dans combien de temps le prochain immigrant sera disponible.</French>
         <German>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Glückwunsch! Sie haben Ihren ersten Immigranten aus Europa aufgenommen! Immigranten erscheinen, wenn Ihre Siedlungen Kreuze produzieren. Sie können die Produktion von Kreuzen erhöhen, wenn Sie eine Einheit in einer Kirche oder Kathedrale arbeiten lassen. Wie lange es dauert, bis ein weiterer Immigrant verfügbar wird, sehen Sie auf dem Europa-Bildschirm.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_FOUNDING_FATHERS_2</Tag>
-        <English>[BOLD]Founding Fathers[\BOLD][NEWLINE][TAB]A Founding Father is about to offer to join your colony. A Founding Father is not a physical unit in the game, but instead provides a significant bonus to your colony. When a Founding Father joins your colony, Founding Father points are consumed, so sometimes it may be advantageous to save your points for a more expensive Founding Father. But be warned, a Founding Father will join only the first colony that accepts him or her.</English>
+        <English>[BOLD]Founding Fathers[\BOLD][NEWLINE][TAB]A Founding Father is about to offer to join your colony. A Founding Father is not a physical unit in the game, but instead provides a significant bonus to your colony. When a Founding Father joins your colony, Founding Father points are consumed, so sometimes it may be advantageous to save your points for a more expensive Founding Father. But be warned! A Founding Father will join only the first colony that accepts him or her and, once rejected, will spurn you thereafter.</English>
         <French>[BOLD]Pères fondateurs[\BOLD][NEWLINE][TAB]Un Père fondateur s'apprête à rejoindre votre colonie. Le Père fondateur n'est pas une unité physique du jeu, mais il apporte un bonus significatif à votre colonie. Quand un Père fondateur rejoint votre colonie, vous utilisez des points de Pères fondateurs, il peut donc parfois s'avérer avantageux d'économiser vos points pour acquérir un Père fondateur plus cher. Mais attention, un Père fondateur ne rejoindra que la première colonie qui l'accepte.</French>
         <German>[BOLD]Gründerväter[\BOLD][NEWLINE][TAB]Ein Gründervater macht Ihnen das Angebot, sich Ihrer Kolonie anzuschließen. Ein Gründervater ist keine physische Einheit im Spiel, sondern sie bietet einen beträchtlichen Bonus für Ihre Kolonie. Wenn sich ein Gründervater Ihrer Kolonie anschließt, kostet das Gründerväterpunkte, es kann also manchmal von Vorteil sein, die Punkte für einen teureren Gründervater zu sparen. Aber seien Sie gewarnt, ein Gründervater schließt sich nur der Kolonie an, die ihn als Erstes aufnimmt.</German>
-        <Italian>[BOLD]Padri Fondatori[\BOLD][NEWLINE][TAB]Un Padre Fondatore sta per offrirsi di unirsi alla tua colonia. Un Padre Fondatore non è un'unità fisica vera e propria, ma fornisce un importante bonus alla tua colonia. Quando un Padre Fondatore si unisce alla tua colonia, consumi punti Padre Fondatore, quindi talvolta conviene risparmiarli per spenderli successivamente per un Padre Fondatore più costoso. Ma fai attenzione, perché un Padre Fondatore entrerà solo nella prima colonia che lo accetta.</Italian>
-        <Spanish>[BOLD]Padres fundadores[\BOLD][NEWLINE][TAB]Un Padre fundador está a punto de unirse a vuestra colonia. Un Padre fundador no es unidad "física" del juego, si no que, en vez de ello, proporciona una bonificación importante a vuestra colonia. Cuando un Padre fundador se une a vuestra colonia, se consumen puntos de Padres fundadores, por lo que a veces puede resultar más provechoso guardarse los puntos para un Padre fundador más caro. Aunque también habéis de saber que un Padre fundador (o Madre fundadora) solo se unirá a la primera colonia que lo (la) acepte.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_OVERSTOCK</Tag>
-        <English>[BOLD]Goods Wasted[\BOLD][NEWLINE][TAB]You are losing goods in %s2_city. Each settlement normally holds only 100 of each good and, once this threshold is reached, you will lose goods each turn. To increase this threshold build a Warehouse or Warehouse Expansion.</English>
+        <English>[BOLD]Goods Wasted[\BOLD][NEWLINE][TAB]The inventory is shrinking in %s2_city. Each settlement normally holds only 100 of each good and, once this threshold is reached, you will lose goods each turn. To increase this threshold build a warehouse or warehouse expansion.</English>
         <French>[BOLD]Marchandises perdues[\BOLD][NEWLINE][TAB]%s2_city perd des marchandises. Chaque colonie ne peut normalement disposer que de 100 unités de chaque marchandise au maximum. Si jamais ce plafond venait à être dépassé, vous commenceriez à perdre des marchandises chaque tour. Pour augmenter ce plafond, construisez un entrepôt ou une extension d'entrepôt.</French>
         <German>[BOLD]Verschwendete Güter[\BOLD][NEWLINE][TAB]Sie verlieren Güter in der Siedlung %s2_city. Jede Siedlung kann normalerweise 100 Einheiten jedes Gutes halten, aber wenn diese Grenze erreicht ist, verlieren Sie in jede Runde Güter. Um diese Grenze zu erhöhen, errichten Sie ein Lagerhaus oder eine Lagerhauserweiterung.</German>
-        <Italian>[BOLD]Beni sprecati[\BOLD][NEWLINE][TAB]A %s2_city stai perdendo beni. Normalmente ogni insediamento può immagazzinare 100 unità di ciascun bene e, una volta raggiunto questo limite, comincerai a perdere beni a ogni turno. Per aumentare il limite devi costruire un magazzino o un'espansione del magazzino.</Italian>
-        <Spanish>[BOLD]Mercancías desperdiciadas[\BOLD][NEWLINE][TAB]Estáis perdiendo mercancías en %s2_city. Normalmente, cada asentamiento solo puede almacenar 100 unidades de cada mercancía y, una vez que se alcanza este tope, empezaréis a perder mercancías cada turno. Para aumentar este tope, construid un Almacén o un Almacén ampliado.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_TAXES</Tag>
-        <English>[BOLD]Taxes![\BOLD][NEWLINE][TAB]Your King has raised your taxes. These taxes will be deducted from every monetary transaction with your motherland.[NEWLINE]Any time your king attempts to raise your taxes, you are given the option of throwing a "Goods Party." Doing so will stop the tax increase, but you will never be able to trade that good with your motherland again!</English>
+        <English>[BOLD]Taxes![\BOLD][NEWLINE][TAB]Your King has raised your taxes. These taxes will be deducted from every monetary transaction with your motherland.[NEWLINE][NEWLINE]Any time your king attempts to raise your taxes, you are given the option of throwing a "Goods Party." Doing so will stop the tax increase, but you will never be able to trade that good with your motherland again!</English>
         <French>[BOLD]Impôts ![\BOLD][NEWLINE][TAB]Votre roi a augmenté vos impôts, déduits de chaque transaction monétaire que vous effectuez avec la mère patrie.[NEWLINE]Chaque fois que votre roi veut augmenter vos impôts, vous avez la possibilité d'organiser une opération contestataire de Destruction des marchandises. Si vous choisissez cette option, l'augmentation sera ignorée, mais vous ne pourrez plus jamais vendre cette marchandise en Europe !</French>
         <German>[BOLD]Steuern![\BOLD][NEWLINE][TAB]Ihr König hat die Steuern erhöht. Diese Steuern werden bei jeder Geldtransaktion mit Ihrem Heimatland abgezogen.[NEWLINE]Immer wenn Ihr König versucht, die Steuern zu erhöhen, können Sie einen "Güteraufstand" starten. Dadurch verhindern Sie die Steuererhöhung, aber Sie können dieses Gut nie mehr mit Ihrem Heimatland handeln!</German>
-        <Italian>[BOLD]Tasse![\BOLD][NEWLINE][TAB]Il re ha aumentato le tasse. Queste verranno dedotte da ogni transazione monetaria con la madrepatria.[NEWLINE]Ogni volta che il re cerca di aumentare le tasse, hai l'opportunità di protestare dando la "festa" di un determinato bene. Così facendo eviterai l'aumento di tasse, ma non potrai mai più commerciare quel bene con la madrepatria!</Italian>
-        <Spanish>[BOLD]¡Impuestos![\BOLD][NEWLINE][TAB]Vuestro rey os ha subido los impuestos. Éstos se deducirán de toda transacción monetaria realizada con la madre patria.[NEWLINE]Cada vez que vuestro monarca intente subiros los impuestos, se os dará la opción de fundar un partido para la mercancía en concreto. Al hacerlo, impediréis el aumento de impuestos, pero nunca más podréis comerciar con vuestra patria.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_FOUND_COLONY_2</Tag>
-        <English>[BOLD]Founding a Settlement[\BOLD][NEWLINE][TAB]The life of a colonist is a challenging one. In order to survive, you will need to find land and construct a settlement. When a unit that can build a settlement is selected, blue circles will appear on the tiles that would make excellent locations to found a new settlement.  Once you have found the appropriate location, move a unit to the appropriate tile and click the "Build Settlement" button.</English>
+        <English>[BOLD]Founding a Settlement[\BOLD][NEWLINE][TAB]The life of a colonist is a challenging one. In order to survive, you will need to find land and construct a settlement. When a unit that can build a settlement is selected, blue circles will appear on tiles that would be excellent locations.  Once you've chosen the best location, move a unit to the appropriate tile and click the "Build Settlement" button.</English>
         <French>[BOLD]Fonder une colonie[\BOLD][NEWLINE][TAB]La vie d'un colon est loin d'être un long fleuve tranquille. Pour survivre, vous allez devoir trouver une terre à exploiter et y fonder une colonie. Quand une unité capable de bâtir une colonie est sélectionnée, des cercles bleus apparaissent sur les cases susceptibles de convenir à votre nouvelle colonie. Une fois que vous avez déterminé l'endroit approprié, déplacez-y une unité et sélectionnez "Fonder une colonie".</French>
         <German>[BOLD]Eine Siedlung gründen[\BOLD][NEWLINE][TAB]Das Leben eines Kolonisten ist nicht leicht. Um zu überleben, müssen Sie Land finden und eine Siedlung errichten. Wenn eine Einheit ausgewählt ist, die eine Siedlung gründen kann, erscheinen blaue Kreise auf den zum Bau optimal geeigneten Geländefeldern. Wenn Sie einen geeigneten Ort gefunden haben, bewegen Sie die Einheit zu dem Geländefeld und klicken Sie auf "Siedlung gründen".</German>
-        <Italian>[BOLD]Fondazione di un insediamento[\BOLD][NEWLINE][TAB]La vita di un colono è piena di sfide. Per sopravvivere dovrai trovare una terra e fondare un insediamento. Quando selezioni un'unità che può costruire un insediamento, sulle caselle adatte alla fondazione di un insediamento appariranno dei cerchi blu. Dopo aver trovato la posizione adeguata, sposta un'unità su quella casella e clicca sul pulsante "Costruisci insediamento".</Italian>
-        <Spanish>[BOLD]Fundación de un asentamiento[\BOLD][NEWLINE][TAB]La vida del colono es difícil. Para sobrevivir, tenéis que encontrar tierra y construir un asentamiento. Cuando se selecciona una unidad que puede construir un asentamiento, aparecerán círculos azules en las casillas que se consideren idóneas para fundar un asentamiento.  Una vez que hayáis encontrado la ubicación apropiada, llevad una unidad a la respectiva casilla y haced clic en el botón "Construir Asentamiento".</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TUTORIAL_CITY_SCREEN</Tag>
-        <English>[BOLD]Settlement Screen[\BOLD][NEWLINE][TAB]On the Settlement Screen, you can control what your settlement's population produces.  To produce raw materials, like cotton, sugar, or tobacco, simply drag a colonist into the Terrain Window to the right of the Building Display. To assign a colonist to make Manufactured Goods, drag him to a building on the Building Display in middle of the screen. You may also drag him to the section labeled "Garrison" to have the unit leave the settlement. Note: you must always have at least one colonist inside your settlement or it will be abandoned.[NEWLINE][TAB]Across the bottom of the settlement screen is the Goods Display, which list all of the goods your settlement contains and how many it produces or loses each turn. Goods can be loaded into any transport currently in the same tile as your settlement by dragging them to the "Transport" section.</English>
+        <English>[BOLD]Settlement Screen[\BOLD][NEWLINE][TAB]On the Settlement Screen you can control what your settlement's population produces.  To get raw materials like cotton, sugar, or tobacco, simply drag a colonist into the Terrain Window to the right of the Building Display. To assign a colonist to make manufactured goods, drag him to a building on the Building Display in the middle of the screen. You may also drag him to the section labeled "Garrison" so that the unit leaves the settlement. Note: you must always have at least one colonist inside your settlement or it will be abandoned.[NEWLINE][NEWLINE]Across the bottom of the settlement screen is the Goods Display, which lists all of the goods your settlement has on hand and how much it produces or loses each turn. Goods can be loaded into any transport in the same tile as your settlement by dragging them to the "Transport" section.</English>
         <French>[BOLD]Ecran de colonie[\BOLD][NEWLINE][TAB]Sur l'écran de colonie, vous pouvez contrôler ce que produit la population de votre colonie. Pour produire des matières premières comme du coton, du sucre ou du tabac, il vous suffit de déposer un colon dans la fenêtre du terrain, sur la droite de la fenêtre des bâtiments. Pour assigner un colon à la fabrication de marchandises manufacturées, déposez-le sur un bâtiment de la fenêtre des bâtiments au centre de l'écran. Vous pouvez également le déposer dans la section "Garnison" pour que l'unité quitte la colonie. Attention, vous devez toujours avoir au moins un colon présent dans votre colonie ![NEWLINE][TAB]En bas de l'écran se trouve la fenêtre des marchandises, qui répertorie la liste de toutes les marchandises que possède votre colonie et combien elle en produit ou en perd chaque tour. Les marchandises peuvent être chargées dans n'importe quelle unité de transport située sur la case de votre colonie, en les déposant dans la section "Transport".</French>
         <German>[BOLD]Siedlungsbildschirm[\BOLD][NEWLINE][TAB]Im Siedlungsbildschirm können Sie kontrollieren, was die Bevölkerung dieser Siedlung produziert. Um Rohstoffe wie Baumwolle, Zucker oder Tabak zu produzieren, zieht einfach einen Kolonisten in das Geländefenster rechts von der Gebäudeanzeige. Um einen Kolonisten anzuweisen, Fertigwaren herzustellen, ziehen Sie ihn zu einem Gebäude der Gebäudeanzeige in der Mitte des Bildschirms. Sie können ihn auch in den Bereich "Garnison" ziehen, damit die Einheit die Siedlung verlässt. Achtung, in Ihrer Siedlung muss sich immer mindestens ein Kolonist befinden.[NEWLINE][TAB]Unten im Siedlungsbildschirm befindet sich die Güteranzeige, eine Liste aller Güter Ihrer Siedlung mit Angaben, wie viel davon pro Runde produziert werden oder verlorengehen. Güter können in ein beliebiges Transportmittel geladen werden, das sich im gleichen Geländefeld wie Ihre Siedlung befindet, indem Sie sie in den Bereich "Transport" ziehen.</German>
-        <Italian>[BOLD]Schermata dell'insediamento[\BOLD][NEWLINE][TAB]Nella schermata dell'insediamento puoi controllare ciò che produce la popolazione del tuo insediamento. Per produrre materie prime come cotone, zucchero o tabacco, trascina semplicemente un colono nella finestra del terreno, a destra della finestra degli edifici. Per assegnare un colono alla produzione di beni finiti, trascinalo su un edificio nella finestra degli edifici, al centro dello schermo. Puoi anche trascinarlo nella sezione chiamata Guarnigione, per fare in modo che lasci l'insediamento. Ricorda che devi sempre avere almeno un colono all'interno dell'insediamento.[NEWLINE][TAB]Nella parte inferiore della schermata dell'insediamento trovi la finestra dei beni, che elenca tutti i beni contenuti nell'insediamento e quanti quest'ultimo ne produce o ne perde ogni turno. Puoi caricare i beni su qualsiasi mezzo di trasporto presente nella stessa casella dell'insediamento trascinandoli nella sezione Trasporto.</Italian>
-        <Spanish>[BOLD]Pantalla del asentamiento[\BOLD][NEWLINE][TAB]En esta pantalla podéis controlar lo que produce la población de vuestro asentamiento.  Para producir materias primas ?como Algodón, Azúcar o Tabaco? basta con arrastrar a un colono hasta la ventana del terreno, a la derecha del visor de edificios. Para destinar a un Colono a hacer bienes manufacturados, arrastradlo hasta un edificio del visor de edificios, en medio de la pantalla. También podéis arrastrarlo hasta el apartado llamado "Guarnición" para que la unidad deje el asentamiento. Nota: Siempre debéis tener al menos un colono en vuestro asentamiento.[NEWLINE][TAB]A lo largo de la parte inferior de la pantalla se encuentra el visor de mercancías, que lista todas las mercancías que contiene el asentamiento y la cantidad de ellas que produce o pierde cada turno. Las mercancías se pueden embarcar en cualquier transporte que se encuentre en la misma casilla del asentamiento arrastrándolas al apartado "Transporte".</Spanish>
     </TEXT>
     <!-- TAC Events Texts below -->
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ADVENTURER</Tag>
         <English>Rumours about valuable treasure troves near %s2_city are spreading fast.</English>
         <French>Une rumeur court à propos des environs de %s2_city. Des immenses trésors seraient cachés dans les environs...</French>
-        <German>Gerüchte über wertvolle Schatzfunde in der Nähe von %s2_city verbreiten sich rasch.</German>
-        <Italian>Rumours about valuable treasure troves near %s2_city are spreading fast.</Italian>
-        <Spanish>Rumours about valuable treasure troves near %s2_city are spreading fast.</Spanish>
+        <German>Gerüchte über wertvolle Schatzfunde in der Nähe von %s2_city verbreiten sich rasch.</German>>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ADVENTURER</Tag>
-        <English>Rumours about valuable treasure troves near %s2_city attract adventurers from all over the world. Citizens and the King are watching their activities with distrust.</English>
+        <English>Rumours about valuable treasure troves near %s2_city attract adventurers from all over the world. Local residents and the King are watching their activities with distrust.</English>
         <French>Une rumeur court à propos des environs de %s2_city. Des immenses trésors seraient cachés dans les environs... Cette rumeur attire des Aventuriers. Les citoyens et le Roi surveillent leurs agissements avec méfiance.</French>
         <German>Gerüchte über wertvolle Schatzfunde in der Nähe von %s2_city ziehen Glücksritter aus aller Herren Länder an. Die Einwohner und der König beobachten die Vorgänge argwöhnisch.</German>
-        <Italian>Rumours about valuable treasure troves near %s2_city attract adventurerers from all over the world. Citizens and the king are watching their activities with distrust.</Italian>
-        <Spanish>Rumours about valuable treasure troves near %s2_city attract adventurerers from all over the world. Citizens and the king are watching their activities with distrust.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRSTCOLONY</Tag>
-        <English>Governor, your men stand before you. Deeply moved they listen to your words. This is your nation's first colony in the New World and your citizens thank you for giving them the chance to participate in this historical moment. Your men wish to take an oath to remind them of their virtues. Which oath do you want them to swear?</English>
+        <English>Governor, your men stand before you. Deeply moved they listen to your words. This is your nation's first colony in the New World and your citizens thank you for giving them the chance to participate in this historical moment. Your men wish to take an oath to remind them of their virtues. Which oath will you have them swear?</English>
         <French>Gouverneur, vos hommes attendent vos ordres. Ils boivent vos paroles. C'est votre première colonie dans le Nouveau Monde et vos citoyens vous remercient de leur donner une chance de participer à un tel moment historique. Vos hommes souhaitent prêter serment afin de se rappeler de leur vertu. Quel serment souhaitez-vous qu'ils prêtent?</French>
         <German>Gouverneur, tief ergriffen stehen Eure Männer vor Euch. Dies ist die erste Kolonie Eurer Heimatnation in der Neuen Welt. Dankbar sind Eure Gefährten, dass Ihr ihnen die Chance gebt, an diesem historischen Augenblick teilzunehmen. Die Männer möchten einen Schwur ablegen, ein Versprechen, tugendhaft zu leben. Welchen Eid wollt Ihr sie schwören lassen?</German>
-        <Italian>Governor, your men stand before you. Deeply moved they listen to your words. This is the first colony of your nation in the New World and your citizens thank you for giving them the chance to participate in this historical moment. Your men wish to take an oath to remind them of their virtues. Which oath do you want them to swear?</Italian>
-        <Spanish>Governor, your men stand before you. Deeply moved they listen to your words. This is the first colony of your nation in the New World and your citizens thank you for giving them the chance to participate in this historical moment. Your men wish to take an oath to remind them of their virtues. Which oath do you want them to swear?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SECONDCOLONY</Tag>
         <English>Your King has benevolently recognized the foundation of your second colony in the New World and offers his support.</English>
         <French>Votre roi a reconnu avec bienveillance la fondation de votre deuxième colonie dans le Nouveau Monde et offre son soutien.</French>
         <German>Euer König sieht mit Wohlgefallen die Gründung der zweiten Kolonie in der Neuen Welt und bietet seine Unterstützung an.</German>
-        <Italian>Your King has benevolently recognized the foundation of your second colony in the New World and offers his support.</Italian>
-        <Spanish>Your King has benevolently recognized the foundation of your second colony in the New World and offers his support.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The %s1_civ King is offering materials to build a wagon.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le Roi %s1_civ vous offre les matériaux nécessaires à la construction d'un chariot.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Euer Majestät offeriert Euch Materialien, mit denen Ihr ein Fuhrwerk bauen könnt.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]The %s1_civ King is offering materials to build a wagon.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]The %s1_civ King is offering materials to build a wagon.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SECONDCOLONY_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Your King is offering weapons for the defense of your colony.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Votre Roi vous offre des armes pour défendre votre colonie.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Euer König bietet Euch Schusswaffen an, mit denen Ihr die Kolonie verteidigen könnt.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Your King is offering weapons for the defense of your colony.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Your King is offering weapons for the defense of your colony.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FOREST_FIRE</Tag>
         <English>Fire has raged through a forest near the %s1_civ_adjective city of %s2_city.</English>
         <French>Le feu s'est propagé à une forêt près de la ville %s1:2_civ_adjective de %s2_city.</French>
         <German>Ein Feuer hat ein Waldstück nahe der %s1:2_civ_adjective Siedlung %s2_city verwüstet.</German>
-        <Italian>Un incendio ha devastato una foresta vicina alla città %s1_civ_adjective di %s2_city.</Italian>
-        <Spanish>El fuego ha asolado un bosque cerca de la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_1</Tag>
         <English>Mischievious children from %s2_city sparked a fire in the nearby forest and went home without stamping it out. Many acres of forest have been burnt down due to these brats!</English>
         <French>Catastrophe à %s2_city : l'incendie d'un village s'est propagé à la forêt, brûlant des milliers d'hectares.</French>
         <German>Spielende Kinder aus %s2_city haben im nahen Wald ein Feuerchen entfacht und sind nach Hause gelaufen, ohne es auszutreten. Diese Bälger! Viele Morgen besten Waldes sind abgebrannt.</German>
-        <Italian>Tragedia nei pressi di %s2_city: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
-        <Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_2</Tag>
-        <English>Criminals have set fire to the forest near %s2_city in a failed bid to escape justice.</English>
+        <English>Outlaws set a fire in a forest near %s2_city to escape their henchmen in the smoke, but they got lost and roasted themselves. May they burn forever in Hell! The bad news is that a wide swathe of land now lies in ruins.</English>
         <French>Des criminels ont mis le feu à la forêt près de %s2_city en tentant vainement d'échapper à la justice.</French>
         <German>Gesetzlose haben in einem Wald nahe %s2_city ein Feuer gelegt, um ihren Häschern im Rauch zu entkommen. Die Spitzbuben verliefen sich und wurden zum Opfer der Flammen - recht so! Mögen sie in der Hölle weiterbrennen. Doch ein weiter Landstrich liegt nun in Schutt und Asche.</German>
-        <Italian>Dei criminali hanno appiccato il fuoco alla foresta vicino a %s2_city, nel fallito tentativo di coprire la propria fuga.</Italian>
-        <Spanish>Unos prófugos han prendido fuego al bosque cercano a %s2_city en un triste intento por huir de la justicia.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_3</Tag>
-        <English>Tragedy has struck near %s2_city as a village fire spread to the forest, scarring the land for miles.</English>
+        <English>Tragedy has struck near %s2_city. A fire from burning debris spread to the forest, scarring the land for miles.</English>
         <French>Catastrophe à %s2_city : l'incendie d'un village s'est propagé à la forêt, brûlant des milliers d'hectares.</French>
         <German>Der Funkenschlag eines Erntedankfeuers in %s2_city hat den nahen Wald in Flammen aufgehen lassen. Diese feiernden Narren!</German>
-        <Italian>Tragedia nei pressi di %s2_city: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
-        <Spanish>La tragedia se ha cebado con %s2_city, pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HAPPY_HUNTING</Tag>
         <English>Surplus game harvested by hunters near the %s1_civ_adjective city of %s2_city has fueled a minor population boom.</English>
         <French>Un surplus de gibier débusqué par des chasseurs près de la ville %s1:2_civ_adjective de %s2_city a donné lieu à une brusque hausse de la population.</French>
         <German>Glückliche Umstände füllen den hungrigen Einwohnern von %s2_city die Bäuche.</German>
-        <Italian>L'abbondante selvaggina procurata dai cacciatori vicino alla città %s1_civ_adjective di %s2_city ha causato un piccolo boom demografico.</Italian>
-        <Spanish>El excedente logrado por los cazadores cerca de la ciudad %s1:2_civ_adjective de %s2_city ha impulsado un pequeño crecimiento de la población.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_1</Tag>
-        <English>Moose herds near %s2_city have grown particularly large. Our hunters harvested a cache of surplus food.</English>
+        <English>Moose herds near %s2_city have grown particularly large. Our hunters harvested a windfall of surplus food.</English>
         <French>Des troupeaux d'élans près de %s2_city se sont fortement développés. Nos chasseurs ont récolté un surplus de nourriture.</French>
         <German>Die Wildhüter von %s2_city konnten einen feisten Bären erlegen, der in den nahen Wäldern sein Unwesen trieb.</German>
-        <Italian>I branchi di alci vicino a %s2_city sono diventati particolarmente numerosi. I nostri cacciatori hanno procurato una riserva extra di cibo.</Italian>
-        <Spanish>Las manadas de alces cerca de %s2_city se han hecho especialmente grandes. Los cazadores se han cobrado una reserva de comida.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_2</Tag>
         <English>The people of %s2_city celebrate as the latest caribou hunting season has brought a rich harvest.</English>
         <French>Les citoyens de %s2_city célèbrent une saison de chasse aux élans particulièrement fructueuse.</French>
         <German>In %s2_city ist ein fetter Wirt überführt worden, seinen Gästen Rattenkadaver als Hirschragout serviert zu haben.[NEWLINE]Der Mann wurde an die eigenen Schweine verfüttert! Und seine reichen Kellervorräte an Getreide, Käse und Bier wurden ins Lagerhaus der Gemeinde verbracht.</German>
-        <Italian>La popolazione di %s2_city festeggia l'abbondanza della recente stagione di caccia al caribù.</Italian>
-        <Spanish>Las gentes de %s2_city celebran que la última temporada de caza de caribúes ha sido muy generosa.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_3</Tag>
-        <English>Deer proliferate through the forest near %s2_city, allowing our hunters to store up extra meat.</English>
+        <English>There's a growing deer population in the forest near %s2_city, allowing our hunters to store up extra meat.</English>
         <French>Les cerfs prolifèrent dans la forêt près de %s2_city, permettant à nos chasseurs de stocker de la nourriture supplémentaire.</French>
         <German>Die Männer von %s2_city haben eine Treibjagd in den nahen Wäldern veranstaltet. Eine große Hirschherde lief den wackeren Waidmännern vor die Flinten.</German>
-        <Italian>I cervi proliferano nella foresta vicino a %s2_city, e i nostri cacciatori possono procurare carne in più.</Italian>
-        <Spanish>Los ciervos proliferan por el bosque cercano a %s2_city, lo que ha permitido a los cazadores almacenar una reserva de carne.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WASHED_OUT</Tag>
         <English>Floods washed out some of the routes near the %s1_civ_adjective city of %s2_city.</English>
         <French>Des inondations ont noyé les routes près de la ville %s1:2_civ_adjective de %s2_city.</French>
         <German>Ein Fahrweg in der Nähe von %s2_city ist leider nicht mehr passierbar.</German>
-        <Italian>Le inondazioni hanno distrutto alcune strade vicino alla città %s1_civ_adjective di %s2_city.</Italian>
-        <Spanish>Las inundaciones han arrasado algunas de las rutas cercanas a la ciudad %s1:2_civ_adjective de %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WASHED_OUT_1</Tag>
         <English>Floods have washed out the routes near %s2_city.</English>
         <French>Des inondations ont noyé les routes près de %s2_city.</French>
         <German>Ein befestigter Fahrweg bei %s2_city wurde nach heftigen Regengüssen von einer Schlammlawine verschüttet.</German>
-        <Italian>Le inondazioni hanno distrutto le strade vicino a %s2_city.</Italian>
-        <Spanish>Las inundaciones han arrasado las rutas cercanas a %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MOTHER_LODE</Tag>
         <English>Silver miners near the %s1_civ_adjective city of %s2_city struck the mother lode.</English>
         <French>Des mineurs près de la ville %s1:2_civ_adjective de %s2_city ont trouvé une importante veine d'argent.</French>
         <German>Minenarbeiter aus %s2_city sind auf neue Silbervorkommen gestoßen.</German>
-        <Italian>I minatori d'oro vicino alla città %s1_civ_adjective di %s2_city hanno scoperto il filone principale.</Italian>
-        <Spanish>Los mineros de la ciudad %s1:2_civ_adjective de %s2_city han dado con el filón principal de oro.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MOTHER_LODE_1</Tag>
-        <English>Our silver miners near %s2_city have struck the mother lode!</English>
+        <English>Our silver miners near %s2_city have struck it rich!</English>
         <French>Nos mineurs près de %s2_city ont trouvé une importante veine d'argent ! Nous sommes riches, riches, riches !</French>
         <German>Bergmänner aus %s2_city haben im Fels eine neue Silberader entdeckt.</German>
-        <Italian>I nostri minatori vicino a %s2_city hanno scoperto il filone principale! Siamo ricchi, ricchi, ricchi!</Italian>
-        <Spanish>¡Los mineros han dado con el filón principal de oro cerca de %s2_city! ¡Somos ricos, ricos, ricos!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_1</Tag>
         <English>A dreadful harvest for our %s1_civ_adjective neighbours in the city of %s6_city just across the border has left its people starving. We can gain favour with them by delivering humanitarian assistance from %s2_city.</English>
         <French>Nos voisins %s1:3_civ_adjective de la ville frontalière de %s6_city ont subi une récolte catastrophique qui a provoqué la famine de la population. Nous pourrions gagner leur estime si nous leur offrions l'aide humanitaire de %s2_city.</French>
         <German>Eine Missernte hat über unsere %s1:2_civ_adjective Nachbarn in %s6_city Hunger und Leid gebracht. Wir könnten ihre Not lindern und damit ihre Herzen erobern.</German>
-        <Italian>Un raccolto disastroso sta facendo patire la fame ai nostri vicini %s1_civ_adjective nella città di %s6_city, appena oltre confine. Potremmo guadagnarci il loro favore con degli aiuti umanitari da %s2_city.</Italian>
-        <Spanish>Una terrible cosecha de nuestros vecinos %s1:3_civ_adjective de la ciudad de %s6_city, justo al otro lado de la frontera, hace que se estén muriendo de hambre. Tenemos la posibilidad de ganarnos su favor si les proporcionamos ayuda humanitaria desde %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_2</Tag>
-        <English>Famine has struck the city of %s6_city. Our people in %s2_city have enough food on hand to assist their %s1_civ_adjective neighbours. We stand ready to provide aid and comfort.</English>
+        <English>Famine stalks the city of %s6_city. Our people in %s2_city have enough food on hand to assist their %s1_civ_adjective neighbours. We stand ready to provide aid and comfort.</English>
         <French>La famine s'est emparée de %s6_city. Nos citoyens de %s2_city ont assez de nourriture pour aider leurs voisins %s1:3_civ_adjective. Nous attendons vos ordres pour leur procurer aide et réconfort.</French>
         <German>In %s6_city hat ein nächtliches Unwetter das Dach der Lagerhalle abgedeckt und die Kornsäcke durchnässt. Die Ernte eines ganzen Sommers schimmelt.[NEWLINE]Unsere Bürger in %s2_city hätten genug Nahrungsvorräte, um ihre Nachbarn zu unterstützen.</German>
-        <Italian>La carestia ha colpito la città di %s6_city. La nostra gente a %s2_city ha abbastanza cibo per aiutare i vicini %s1_civ_adjective. Siamo pronti a fornire aiuto e conforto.</Italian>
-        <Spanish>La hambruna se ha cebado en la ciudad de %s6_city. Nuestras gentes de %s2_city tienen bastante comida a mano para ayudar a sus vecinos %s1:3_civ_adjective. Estamos listos para proporcionarles ayuda y consuelo.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_3</Tag>
-        <English>Tragedy strikes just beyond your border, as the %s1_civ_adjective Empire struggles to feed all its hungry people in %s6_city. Many will die without enough to eat. Should the citizens of %s2_city move to assist them?</English>
+        <English>Tragedy strikes just beyond your border, as the %s1_civ_adjective Empire struggles to feed all its hungry people in %s6_city. Many will starve without help. Should the citizens of %s2_city move to assist them?</English>
         <French>L'horreur sévit à quelques lieues de votre frontière : l'empire %s1:1_civ_adjective peine à nourrir les citoyens affamés de %s6_city. De nombreux habitants mourront faute de nourriture. Voulez-vous leur octroyer l'aide des citoyens de %s2_city ?</French>
         <German>Eine Mäuseplage sucht %s6_city heim. Hunderte der kleinen Nager flitzen durch die Gassen und Häuser und fressen den Menschen die Nahrungskammern leer.[NEWLINE]Welche Sünden müssen diese Menschen begangen haben, dass sie der Allmächtige derart bestraft? Wohlan, wir könnten helfen.</German>
-        <Italian>Una tragedia ha colpito appena al di là del confine: l'impero %s1_civ_adjective fatica a soddisfare la gente affamata di %s6_city. Molti moriranno, se non hanno abbastanza da mangiare. Vuoi che i cittadini di %s2_city si mobilitino per portare aiuto?</Italian>
-        <Spanish>Ha ocurrido una tragedia justo al otro lado de la frontera: el imperio %s1:1_civ_adjective hace cuanto puede para alimentar a su hambrienta población de %s6_city. Pero sin sustento suficiente, muchos morirán. ¿Deben los ciudadanos de %s2_city movilizarse para ayudarlos?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEWS_EVENT_FAMINE_2</Tag>
         <English>The generous people of %s2_city have donated famine relief to the endangered people of %s4_city. This humanitarian effort has brought the two nations closer together.</English>
         <French>Les généreux citoyens de %s2_city ont donné de la nourriture aux habitants de %s4_city. Cette aide humanitaire a rapproché les deux nations.</French>
         <German>Anerkennend gedenken die Menschen in %s4_city ihren Nachbarn aus %s2_city, die ihnen mit ein paar Säcken Korn aus dem Gröbsten geholfen haben.</German>
-        <Italian>La generosa popolazione di %s2_city ha salvato dalla carestia la gente di %s4_city. Questo sforzo umanitario ha avvicinato le due nazioni.</Italian>
-        <Spanish>El generoso pueblo de %s2_city ha enviado ayuda para paliar la hambruna que sufren los afligidos habitantes de %s4_city. Este acto humanitario ha estrechado los lazos entre ambas naciones.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEWS_EVENT_FAMINE_3</Tag>
         <English>The generous people of %s2_city have donated massive famine relief to the starving people of %s4_city. This generous humanitarian effort has brought the two nations much closer together.</English>
         <French>Les généreux citoyens de %s2_city sont massivement venus en aide au peuple affamé de %s4_city. Cette aide humanitaire généreuse a considérablement rapproché les deux nations.</French>
         <German>Mit Ehrfurcht gedenken die Menschen von %s4_city den Bürgern aus %s2_city, die ihre Gürtel enger schnallten, um die Not ihrer Nachbarn zu lindern.[NEWLINE]Diese Tugendhaftigkeit hat auch diplomatisch großen Eindruck hinterlassen.</German>
-        <Italian>La generosa popolazione di %s2_city ha decisamente salvato dalla carestia la gente affamata di %s4_city. Questo generoso sforzo umanitario ha avvicinato molto le due nazioni.</Italian>
-        <Spanish>El generoso pueblo de %s2_city ha enviado ayuda ingente para paliar la hambruna que sufren los necesitados habitantes de %s4_city. Este generoso acto humanitario ha estrechado mucho más los lazos entre ambas naciones.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_OTHER_2</Tag>
-        <English>The %s1_civ_adjective people in %s2_city have sent half their stored food to your city of %s4_city to fend off starvation caused by a poor local harvest. This humanitarian relief represents a positive turning point in your relations.</English>
+        <English>The %s1_civ_adjective people in %s2_city have sent half their stored food to your city of %s4_city to fend off starvation following a poor local harvest. This humanitarian relief represents a positive turning point in your relations.</English>
         <French>Les citoyens %s1:3_civ_adjective de %s2_city ont envoyé la moitié de leurs stocks de nourriture dans votre ville de %s4_city pour lutter contre la famine provoquée par une mauvaise récolte. cette aide humanitaire pourrait représenter un tournant positif dans vos relations.</French>
         <German>Anerkennend gedenken die Menschen in %s4_city ihren Nachbarn aus %s2_city, die ihnen mit ein paar Säcken Korn aus dem Gröbsten geholfen haben.</German>
-        <Italian>La gente %s1_civ_adjective di %s2_city ha inviato metà delle proprie scorte di cibo alla tua città di %s4_city per allontanare la carestia causata da un cattivo raccolto. Questo aiuto umanitario potrebbe rappresentare un punto di svolta nelle relazioni con loro.</Italian>
-        <Spanish>El pueblo %s1:1_civ_adjective de %s2_city ha enviado la mitad de los alimentos que tenía almacenados a nuestra ciudad de %s4_city para paliar la hambruna causada por una mala cosecha en el lugar. Este acto humanitario bien puede representar un punto de quiebra positivo en nuestras relaciones.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAMINE_OTHER_3</Tag>
         <English>The generous %s1_civ_adjective people in %s2_city have sent all of their food stores to your city of %s4_city to prevent famine caused by a poor local harvest. This humanitarian effort brings your two peoples much closer together.</English>
         <French>Les généreux citoyens %s1:3_civ_adjective de %s2_city ont envoyé tous leurs stocks de nourriture dans votre ville de %s4_city pour enrayer une famine due à une mauvaise récolte. Cette aide humanitaire a considérablement rapproché vos deux peuples !</French>
         <German>Mit ehrfurchtsvoller Dankbarkeit gedenken die Menschen von %s4_city den Bürgern aus %s2_city, die ihre Gürtel enger schnallten, um die Not ihrer Nachbarn zu lindern.[NEWLINE]Diese Tugendhaftigkeit hat auch diplomatisch großen Eindruck hinterlassen.</German>
-        <Italian>La generosa popolazione %s1_civ_adjective di %s2_city ha inviato l'intera scorta di cibo alla tua città di %s4_city per scongiurare la carestia causata da un cattivo raccolto. Questo sforzo umanitario ha avvicinato molto le due popolazioni!</Italian>
-        <Spanish>Los generosos %s1:3_civ_adjective de %s2_city han enviado cuantos alimentos tenían almacenados a nuestra ciudad de %s4_city para paliar la hambruna causada por una mala cosecha en el lugar. Este generoso acto humanitario ha estrechado mucho más los lazos entre nuestros dos pueblos.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FESTIVITY</Tag>
         <English>The %s1_civ_adjective King is giving a grand festival at His Royal Court.</English>
         <French>Le Roi %s1_civ_adjective King organise une fête fastureuse à Sa Cour Royal.</French>
         <German>Der %s1:3_civ_adjective König richtet ein rauschendes Fest am Hofe aus.</German>
-        <Italian>The %s1_civ_adjective King is giving a noble festivity at His Royal Court.</Italian>
-        <Spanish>The %s1_civ_adjective King is giving a noble festivity at His Royal Court.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY1</Tag>
         <English>Our King is going to host a grand festival at His Royal Court. His Majesty demands that we deliver wares from %s2_city to Europe to show our support.</English>
         <French>Notre Glorieux Roi organise une fête fastueuse en son Palais. Sa Majesté demande une livraison de %s2_city vers l'Europe.</French>
         <German>Unser König plant ein rauschendes Fest zu seinem Thronjubiläum. Er erwartet, dass wir die Feierlichkeiten mit Warenlieferungen aus %s2_city großzügig unterstützen.</German>
-        <Italian>Our King is going to host a noble festivity at His royal court. His Majesty demands us to deliver wares from %s2_city to Europe.</Italian>
-        <Spanish>Our King is going to host a noble festivity at His royal court. His Majesty demands us to deliver wares from %s2_city to Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY2</Tag>
-        <English>An heir to the throne has been born. Our King has invited all members of the European high nobility to his court. His Royal Highness expects us to deliver wares from %s2_city to Europe.</English>
+        <English>An heir to the throne has been born! Our King has invited all the European high nobility to his court. His Royal Highness expects us to deliver wares from %s2_city to Europe.</English>
         <French>Un héritier au trône vient de naître. En guise de célébration, notre Roi a invité à sa cour les plus grands nobles de toute l'Europe. Son altesse attend que nous lui livrions des marchandises depuis %s2_city vers l'Europe.</French>
         <German>Ein Thronfolger wurde geboren. Unser König hat den gesamten Hochadel Europas zu den Feierlichkeiten eingeladen. Er erwartet, dass wir zu diesem Prunk und Pomp Warenlieferungen aus %s2_city beisteuern.</German>
-        <Italian>An heir to the throne has been born. Our King has invited all members of the European high nobility to His court. His Royal Highness expects us to deliver wares from %s2_city to Europe.</Italian>
-        <Spanish>An heir to the throne has been born. Our King has invited all members of the European high nobility to His court. His Royal Highness expects us to deliver wares from %s2_city to Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Your King is not amused. Rumours report that he was asking for his smelling salts.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde dem König zugetragen. Kammerdiener berichten, dass er nach seinem Riechsalz verlangte.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Your king is not amused.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Your king is not amused.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their King. Demand for our colonial goods is rising.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmentent.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde dem König zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is rising.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is rising.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FESTIVITY_4_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their King. Demand for our colonial goods is rising.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmentent.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde dem König zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is rising.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is rising.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WINTER</Tag>
         <English>Cold winter in Europe.</English>
         <French>Hiver très froid en Europe.</French>
         <German>Winter in Europa.</German>
-        <Italian>Cold winter in Europe.</Italian>
-        <Spanish>Cold winter in Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINTER</Tag>
         <English>Several years of cold winters in our European homeland.</English>
         <French>Notre patrie en Europe subit du ans de hiver particulièrement froid.</French>
         <German>Mehrere Jahre in Folge mit bitterkalten Wintern in unserer europäischen Heimat lassen die Menschen frieren.</German>
-        <Italian>Several years of cold winters in our European homeland</Italian>
-        <Spanish>Several years of cold winters in our European homeland</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WINTER_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The cold winter means increasing demand for our furs and coats in %s1_civ.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]L'hiver froid en Europe génère une augmentation de la demande pour nos fourrures et manteaux de %s1_civ.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Der eisigkalte Winter führt zu erhöhter Nachfrage nach unseren Pelzwaren und Fellen in %s1_player.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]The cold winter leads to an increasing demand for our furs and coats in %s1_civ.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]The cold winter leads to an increasing demand for our furs and coats in %s1_civ.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_END_WINTER</Tag>
-        <English>The period of cold weather in Europe has ended.</English>
+        <English>The cold weather in Europe has ended.</English>
         <French>La vague de froid en Europe a pris fin.</French>
         <German>Die Kälteperiode in Europa ist vorüber.</German>
-        <Italian>The period of cold weather in Europa has ended.</Italian>
-        <Spanish>The period of cold weather in Europa has ended.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_END_WINTER</Tag>
         <English>A cold winter in our European homeland has come to an end.</English>
         <French>La vague de froid en Europe a pris fin.</French>
         <German>Ein Kälteperiode mit bitterkalten Wintern in unserer europäischen Heimat geht vorüber.</German>
-        <Italian>A cold winter in our European homeland has come to an end.</Italian>
-        <Spanish>A cold winter in our European homeland has come to an end.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_END_WINTER_HELP</Tag>
-        <English>[COLOR_FONT_GOLD]The period of cold winters is over. Demand for our furs and coats in %s1_civ is decreasing.[COLOR_REVERT]</English>
+        <English>[COLOR_FONT_GOLD]The long stretch of cold weather has ended. Demand for our furs and coats in %s1_civ is decreasing.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]La période de grand froid est terminé. La demande pour nos fourrures et manteaux de %s1_civ s'affaiblit.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Die Periode harter Winter in Europa ist vorüber. Die Nachfrage nach unseren Pelzwaren und Fellen in %s1_civ sinkt wieder.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]The period of cold winters is over. Demand for our furs and coats in %s1_civ is decreasing.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]The period of cold winters is over. Demand for our furs and coats in %s1_civ is decreasing.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_VOLCANO_1</Tag>
         <English>A volcanic eruption near %s2_city has devastated the countryside. Fortunately, the %s1_civ_adjective city itself was spared.</English>
         <French>Une éruption volcanique près de %s2_city a dévasté la campagne. Heureusement, la ville %s1:2_civ_adjective a été épargnée.</French>
         <German>In der Nähe von %s2_city hat ein Vulkan Lava und Asche gespien und den Landstrich verwüstet.</German>
-        <Italian>Un'eruzione vulcanica vicino a %s2_city ha devastato il territorio. Fortunatamente la città %s1_civ_adjective è stata risparmiata.</Italian>
-        <Spanish>La erupción de un volcán cercano a %s2_city ha devastado el campo. Por suerte, la propia ciudad %s1:2_civ_adjective se ha salvado.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_1</Tag>
-        <English>A volcano has erupted near %s2_city, spewing deadly ash clouds, lava flows, and snow melts filled with mud and debris.</English>
+        <English>A volcano has erupted near %s2_city, spewing deadly ash clouds, lava flows and snow melts choked with mud and debris.</English>
         <French>Un volcan est entré en éruption près de %s2_city, crachant des nuages de cendre, des coulées de lave et de la neige mêlée de boue et de débris.</French>
         <German>Gouverneur, Schreckliches ist bei %s2_city geschehen. Zunächst verstummten die Vögel. Dann grollte die Erde. Und dann, dann barst der Berg neben der Stadt, und ein Vulkan erstieg aus dem Gestein. Er schoss glühendheiße Steine in die Luft. Sie gingen in der nahen Stadt nieder und erschlugen Hühner und Hunde und auch so manches kleine Kind. Schließlich schwebten dichte Ascheflocken herab und legten ein schwarzes Leichentuch über die Siedlung. Welch fruchtbares Unglück! Die Überlebenden flehen Euch an, Hilfe zu schicken.</German>
-        <Italian>Un vulcano ha eruttato vicino a %s2_city, vomitando letali nuvole di cenere, lava e causando inondazioni di neve sciolta mista a fango e detriti.</Italian>
-        <Spanish>Un volcán ha entrado en erupción cerca de %s2_city, escupiendo mortíferas nubes de ceniza, ríos de lava y barro y lluvias de rocas.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS</Tag>
-        <English>Bandits are wreaking havoc in %s1_civ_adjective farmlands.</English>
+        <English>Bandits are preying on the outlying farms around %s1_civ_adjective.</English>
         <French>Des bandits ont ravagé des fermes %s1:4_civ_adjective.</French>
         <German>Strauchdiebe lauern %s1:2_civ_adjective Bauern auf.</German>
-        <Italian>I banditi stanno devastando i terreni agricoli %s1_civ_adjective.</Italian>
-        <Spanish>Los bandidos están arrasando los cultivos %s1:3_civ_adjective.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_1</Tag>
-        <English>Farmers outside %s2_city are complaining of bandits robbing them regularly.</English>
+        <English>Farmers outside %s2_city complain bandits rob them regularly.</English>
         <French>Des fermiers près de %s2_city se plaignent d'être régulièrement pillés par des bandits.</French>
         <German>Die Bauern von %s2_city beklagen sich, dass sie von frechen Strauchdieben belästigt werden.</German>
-        <Italian>I contadini fuori %s2_city si lamentano dei costanti furti dei banditi.</Italian>
-        <Spanish>Los granjeros de los aledaños de %s2_city se quejan de bandidos que les roban cada poco tiempo.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_2</Tag>
         <English>Criminal activity has disrupted food production in a farming region outside %s2_city.</English>
         <French>La production de nourriture a été interrompue suite à de nombreux pillages dans une région agricole près de %s2_city.</French>
         <German>Eine Bande herumstreunernder Fremder stiehlt den Bauern von %s2_city die Haare vom Kopf.</German>
-        <Italian>L'attività criminale ha interrotto la produzione di cibo nella regione agricola fuori %s2_city.</Italian>
-        <Spanish>La actividad delictiva ha cortado la producción de alimentos en una región agrícola cercana a %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_3</Tag>
-        <English>We may need to take action against thieves in %s2_city who are preying upon our farmers.</English>
+        <English>We may need to take action against outlaws in %s2_city who pillage our farmers.</English>
         <French>Il nous faudra peut-être prendre des mesures contre les voleurs qui pillent nos fermes près de %s2_city.</French>
         <German>Immer öfter lauern Wegelagerer den Bauern von %s2_city auf. Allmählich traut sich kaum ein Einheimischer noch, zu seinen Feldern zu gehen.</German>
-        <Italian>Forse dovremmo intervenire contro i ladri a %s2_city, che derubano regolarmente i nostri agricoltori.</Italian>
-        <Spanish>Es posible que debamos tomar medidas contra los ladrones de %s2_city que se aprovechan de nuestros granjeros.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS_AGAIN</Tag>
         <English>The %s1_civ_adjective Empire continues to suffer a loss of food production due to banditry.</English>
         <French>L'empire %s1:1_civ_adjective subit toujours une baisse de sa production de nourriture en raison de nombreux pillages.</French>
         <German>Die Bauern des %s1:2_civ_adjective Reiches werden weiterhin von Strauchdieben belästigt.</German>
-        <Italian>L'impero %s1_civ_adjective soffre di carenza di cibo a causa dei furti dei banditi.</Italian>
-        <Spanish>El imperio %s1:1_civ_adjective no deja de sufrir pérdidas en la producción de alimentos debido al bandidaje.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_1</Tag>
         <English>The local authorities of %s2_city are still struggling to control the bandit activity plaguing our farmers.</English>
         <French>Les autorités locales de %s2_city luttent toujours contre les pillages frappant nos fermes.</French>
         <German>Immer noch überfallen herumstreunernde Tagediebe die Bauern von %s2_city.</German>
-        <Italian>Le autorità locali a %s2_city faticano ancora nel mettere sotto controllo l'attività banditesca che affligge i nostri agricoltori.</Italian>
-        <Spanish>Las autoridades locales de %s2_city aún pugnan por controlar el bandidaje que asola a nuestros granjeros.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_2</Tag>
-        <English>Criminals are still preying on our farmers. A more stringent response may be necessary in %s2_city.</English>
+        <English>Criminals are still preying on our farmers. A harsh response is needed in %s2_city.</English>
         <French>Les criminels pillent toujours nos fermes. Des mesures plus fermes devraient être prises à %s2_city.</French>
         <German>Immer noch plagen sich die Bauern von %s2_city mit den Überfällen durch Wegelagerer herum. Hilfe tut not.</German>
-        <Italian>I criminali stanno ancora depredando i nostri agricoltori. Potrebbe essere necessaria una reazione più severa, a %s2_city.</Italian>
-        <Spanish>Los delincuentes aún se ceban con nuestros granjeros. Será necesaria una respuesta más contundente en %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MINING_ACCIDENT</Tag>
-        <English>A tragic mining accident near the %s1_civ_adjective city of %s2_city has claimed the lives of hundreds of their miners.</English>
+        <English>A tragic mining accident near the %s1_civ_adjective city of %s2_city has claimed the lives of hundreds of miners.</English>
         <French>Un tragique accident minier près de la ville %s1:2_civ_adjective de %s2_city a ôté la vie de centaines de mineurs.</French>
         <German>Bei einem tragischen Unfall in den Minen von %s2_city kamen viele Bergarbeiter ums Leben.</German>
-        <Italian>Un tragico incidente minerario vicino alla città %s1_civ_adjective di %s2_city ha tolto la vita a centinaia dei loro minatori.</Italian>
-        <Spanish>Un trágico accidente en una mina cerca de la ciudad %s1:2_civ_adjective de %s2_city se ha cobrado la vida de cientos de mineros.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_1</Tag>
-        <English>A minor earthquake near %s2_city has caused the collapse of a nearby mine. Trapped miners have perished by the hundreds.</English>
+        <English>A minor earthquake near %s2_city nonetheless caused the collapse of a nearby mine. Trapped miners died.</English>
         <French>Un tremblement de terre mineur près de %s2_city a provoqué l'effondrement d'une mine voisine. Des centaines de mineurs ont péri.</French>
         <German>Erdstöße haben zum Einsturz einer Mine bei %s2_city geführt. Viele Bergarbeiter kamen ums Leben. Der Herr sei ihren Seelen gnädig!</German>
-        <Italian>Un piccolo terremoto vicino a %s2_city ha causato il crollo di una vicina miniera. Centinaia di minatori sono morti intrappolati.</Italian>
-        <Spanish>Un pequeño terremoto cerca de %s2_city ha causado el derrumbe de una mina cercana. Los mineros han quedado atrapados y han muerto a centenares.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_2</Tag>
         <English>A massive explosion has destroyed one of our mines. The cause is unknown, but hundreds are dead.</English>
         <French>Une énorme explosion a détruit l'une de nos mines. La cause est inconnue mais des centaines de mineurs sont morts.</French>
         <German>In einer Mine haben sich untertage Gase entzündet. Die Luft brannte, und viele Bergarbeiter fanden einen grausamen Tod. Mögen Sie im himmlischen Paradies ihr Glück wiederfinden![NEWLINE]Ihre sterblichen Hüllen können wir leider nicht bergen, denn die hölzernen Stützbalken der unterirdischen Gänge sind verkohlt und brüchig.</German>
-        <Italian>Un'enorme esplosione ha distrutto una delle nostre miniere. La causa è sconosciuta, ma ci sono centinaia di vittime.</Italian>
-        <Spanish>Una gran explosión ha destruido una de nuestras minas. Se desconoce la causa, pero los muertos se cuentan por centenares.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_3</Tag>
-        <English>Tragedy has struck near %s2_city as poisonous gases filled a mine and struck down most of the miners who were inside.</English>
+        <English>Tragedy has struck near %s2_city. Poisonous gases filled a mine and killed most of the miners who were inside.</English>
         <French>Une tragédie a eu lieu près de %s2_city : des gaz toxiques ont infiltré une mine et tué la plupart des mineurs qui s'y trouvaient.</French>
         <German>In einer Mine bei %s2_city soll es spuken. Dies glauben zumindestens die Bergleute. Sie haben die unterirdischen Gänge fluchtartig verlassen und den Eingang zum Einsturz gebracht. Welch abergläubische Torheit!</German>
-        <Italian>È accaduta una tragedia vicino a %s2_city: gas velenosi hanno riempito una miniera e ucciso la maggior parte dei minatori che vi si trovavano.</Italian>
-        <Spanish>Ha ocurrido una tragedia cerca de la ciudad de %s2_city: unos gases venenosos han llenado una mina y han acabado con casi todos los mineros que había en su interior.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MINING_ACCIDENT_3_LANDMARK</Tag>
         <English>Mining Accident</English>
         <French>Accident de mine</French>
         <German>Minenunglück</German>
-        <Italian>Mining Accident</Italian>
-        <Spanish>Mining Accident</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_AT_THE_SWORD</Tag>
         <English>%s1_civ_adjective soldiers have rallied behind their heroes.</English>
         <French>Des soldats %s1:3_civ_adjective se sont ralliés à leurs héros de guerre.</French>
         <German>Einige %s1:3_civ_adjective Soldaten haben sich auf dem Schlachtfeld wacker geschlagen und Ruhm erworben.</German>
-        <Italian>I soldati %s1_civ_adjective si sono riuniti attorno ai loro eroi guerrieri.</Italian>
-        <Spanish>Los soldados %s1:3_civ_adjective han cerrado filas alrededor de sus héroes de la espada.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AT_THE_SWORD_1</Tag>
         <English>Soldiers from our victorious %s3_unit have rallied behind their combat heroes! Their strength and resolve have firmed! Their proficiency has increased!</English>
         <French>Des soldats de notre glorieuse unité (%s3_unit) se sont ralliés à leurs héros de guerre ! Leur force et leur détermination se sont aguerries ! Leur compétence s'est accrue !</French>
         <German>Als %s3_unit haben einige unserer Soldaten Heldenhaftes geleistet.</German>
-        <Italian>I soldati della vittoriosa unità %s3_unit si sono riuniti attorno ai loro eroi combattenti! La loro forza e la loro determinazione si sono rinsaldate! La loro efficacia è aumentata!</Italian>
-        <Spanish>Los soldados de [NUM3:nuestro:nuestra:nuestros:nuestras] %s3_unit han cerrado filas alrededor de sus héroes de guerra. ¡Su fuerza y su resolución son ahora más inquebrantables y su habilidad ha aumentado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_UNIT_AT_THE_SWORD</Tag>
         <English>Heroes of the New World</English>
         <French>Héros de guerre</French>
         <German>Kriegsheld</German>
-        <Italian>Eroi della Spada</Italian>
-        <Spanish>Héroes de la espada</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SPOILED_GRAIN</Tag>
         <English>Vermin got into the granary in %s2_city. All the food stored there was ruined.</English>
         <French>La vermine a infesté les greniers de la ville : %s2_city. Toute la nourriture qui y était stockée a été perdue.</French>
         <German>Ungeziefer ist in den Kornspeicher von %s2_city gelangt. Alle dort gelagerten Nahrungsvorräte wurden vernichtet.</German>
-        <Italian>I ratti si sono intrufolati nel granaio a %s2_city. Tutto il cibo immagazzinato è stato rovinato.</Italian>
-        <Spanish>Las alimañas entraron en el granero de %s2_city. Toda la comida que allí había almacenada se ha perdido.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SPOILED_GRAIN_1</Tag>
         <English>Vermin have gotten into the granary in %s2_city. All the food stored there is spoiled.</English>
         <French>la vermine a infesté les greniers de la ville : %s2_city. Toute la nourriture stockée ici est gâtée.</French>
         <German>Ungeziefer ist in den Getreidespeicher von %s2_city gelangt. Alle dort gelagerten Nahrungsvorräte sind verdorben.</German>
-        <Italian>I ratti si sono intrufolati nel granaio a %s2_city. Tutto il cibo immagazzinato è stato danneggiato.</Italian>
-        <Spanish>Las alimañas han entrado en el granero de %s2_city. Toda la comida que allí había almacenada se ha echado a perder.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FUGITIVE</Tag>
-        <English>%s1_civ_adjective authorities are rumoured to have captured a fugitive fleeing from %s4_civ_adjective justice. No confirmation is available.</English>
+        <English>The rumour is that %s1_civ_adjective authorities captured a fugitive fleeing from %s4_civ_adjective justice. No confirmation is available.</English>
         <French>Les autorités %s1:4_civ_adjective auraient capturé un fugitif poursuivi par la justice %s4:2_civ_adjective. Cette information n'a pas été confirmée.</French>
         <German>Es gibt Gerüchte, %s1:3_civ_adjective Häscher hätten einen böse beleumdeten Kerl ergriffen, der anderenorts schon seit langem gesucht wird.</German>
-        <Italian>Si dice che le autorità %s1_civ_adjective abbiano catturato un uomo in fuga dalla giustizia %s4_civ_adjective. Non è disponibile alcuna conferma.</Italian>
-        <Spanish>Se rumorea que las autoridades %s1:4_civ_adjective han capturado a un fugitivo que huía de la justicia %s4:2_civ_adjective. No disponemos de confirmación.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_1</Tag>
         <English>A fugitive from justice, wanted for crimes in the %s1_civ_adjective colonies, has been discovered hiding out in our territory.</English>
         <French>Un fugitif poursuivi pour des crimes perpétrés dans l'empire %s1:1_civ_adjective a été découvert sur notre territoire.</French>
         <German>Ein berüchtigter Straßenräuber, der im %s1:2_civ_adjective Territorium gesucht wird, ist von einer unserer Stadtwachen aufgegriffen worden. Möglicherweise verrät er uns, wo er seine Beute versteckt hat.</German>
-        <Italian>Nei nostri territori è stato scoperto un fuggitivo, ricercato per i crimini commessi nell'impero %s1_civ_adjective.</Italian>
-        <Spanish>Hemos descubierto que en nuestro territorio se oculta un prófugo de la justicia, buscado por delitos en el imperio %s1:1_civ_adjective.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_2</Tag>
-        <English>An assassin wanted for slaying a %s1_civ_adjective official has been caught fleeing through our land.</English>
+        <English>We've caught a cunning conman and fence wanted in %s1_civ_adjective as he fled through our land. He may tell us where his loot is hidden.</English>
         <French>Un assassin poursuivi pour avoir assassiné un haut fonctionnaire %s1:1_civ_adjective a été capturé alors qu'il traversait notre territoire</French>
         <German>Ein durchtriebener Hochstapler und Hehler, der im %s1:2_civ_adjective Territorium gesucht wird, ist von einer unserer Stadtwachen aufgegriffen worden. Möglicherweise verrät er uns, wo er seine Beute versteckt hat.</German>
-        <Italian>È stato catturato nei nostri territori un assassino, ricercato per l'omicidio di un funzionario %s1_civ_adjective.</Italian>
-        <Spanish>Hemos atrapado huyendo por nuestra tierra a un asesino buscado por matar a un funcionario %s1:1_civ_adjective.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_INFO_FUGITIVE_5</Tag>
         <English>Word of our interrogation of the fugitive has leaked to %s3_civ_adjective authorities, angering them.</English>
         <French>L'interrogatoire du fugitif est venu aux oreilles des autorités %s3:4_civ_adjective et a provoqué leur colère.</French>
         <German>Die %s3:2_civ_adjective Behörden haben von unserem Verhör Wind bekommen und sind verärgert.</German>
-        <Italian>Voci dell'interrogatorio del fuggitivo sono arrivate alle autorità %s3_civ_adjective, facendole incollerire.</Italian>
-        <Spanish>El asunto de nuestro interrogatorio al prófugo se ha filtrado a las autoridades %s3:4_civ_adjective y las ha enojado.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP</Tag>
         <English>Cold winter in Europe.</English>
         <French>Vague de froid en Europe.</French>
         <German>Unruhen unter der %s1:2_civ_adjective Landbevölkerung in Europa.</German>
-        <Italian>Cold winter in Europe.</Italian>
-        <Spanish>Cold winter in Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PEASANT_WARPREP_1</Tag>
         <English>It seems as if a conflict between our mother country and another European country is about to break out.</English>
         <French>Il semble qu'un conflite entre notre mère patrie et une autre puissance européenne va bientôt éclater</French>
         <German>Unruhen unter der Landbevölkerung in Europa. Ein Krieg scheint bevorzustehen.</German>
-        <Italian>It seems as if a conflict between our mother country and another European country is shortly before breakout.</Italian>
-        <Spanish>It seems as if a conflict between our mother country and another European country is shortly before breakout.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1A</Tag>
-        <English>Store our furs until next winter.</English>
+        <English>Rura unrest is growing in Europe. Relations between %s1__player and %s3__player have deteriorated. War is in the air.</English>
         <French>Il y aura d'autres hivers. Stockez des fourrures jusqu'à la prochaine fois.</French>
         <German>Die Unruhen unter der Landbevölkerung in Europa weiten sich aus. Die Beziehungen zwischen %s1__player und %s3__player verschlechtern sich. Krieg liegt in der Luft.</German>
-        <Italian>There will be another winter. Store our furs until that time.</Italian>
-        <Spanish>There will be another winter. Store our furs until that time.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_HELP</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] for %F2_yield in %s3_city and [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] for %F5_yield in %s6_city.</English>
         <French>ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] for %F2_yield in %s3_city and [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] for %F5_yield in %s6_city.</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] für %F2_yield in %s3_city und [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] für %F5_yield in %s6_city.</German>
-        <Italian>ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] for %F2_yield in %s3_city and [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] for %F5_yield in %s6_city.</Italian>
-        <Spanish>ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] for %F2_yield in %s3_city and [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] for %F5_yield in %s6_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAX_INCREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Tax increase to %D2%% total</English>
         <French>[[ICON_BULLET]Augmentation du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%%</French>
         <German>[ICON_BULLET]Steuererhöhung um [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] auf %D2%%</German>
-        <Italian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Tax increase to %D2%% total</Italian>
-        <Spanish>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Tax increase to %D2%% total</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAXTAX_INCREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax increase to %D2% total</English>
         <French>[ICON_BULLET]Augmentation maximale du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT pour atteindre %D2%</French>
         <German>[ICON_BULLET]Maximalsteuer erhöht sich um [COLOR_NEGATIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
-        <Italian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax increase to %D2% total</Italian>
-        <Spanish>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax increase to %D2% total</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MAXTAXDECREASE</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax decrease to %D2% total</English>
         <French>[ICON_BULLET]Réduction maximale du taux d'impôt de [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2% total</French>
         <German>[ICON_BULLET]Maximalsteuer sinkt um [COLOR_POSITIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
-        <Italian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax decrease to %D2% total</Italian>
-        <Spanish>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Tax decrease to %D2% total</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RELATION_KING_DECREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] relations hit with %s2_civ_adjective king.</English>
         <French>[ICON_BULLET]Vos relations avec le Roi %s2_civ_adjective ont été dégradées de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Beziehungen zum %s2:2_civ_adjective König verschlechtern sich um [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] relations hit with %s2_civ_adjective king.</Italian>
-        <Spanish>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] relations hit with %s2_civ_adjective king.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RELATION_KING_INCREASE</Tag>
         <English>[ICON_BULLET]Relations to %s2_civ_adjective king are improved by [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Vos relations avec le roi %s2_civ_adjective se sont ameliorées de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Beziehungen zum %s2:2_civ_adjective König verbessern sich um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET]Relations to %s2_civ_adjective king are improved by [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</Italian>
-        <Spanish>[ICON_BULLET]Relations to %s2_civ_adjective king are improved by [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_LOOSE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</English>
         <French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à %s3_city.</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</German>
-        <Italian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</Italian>
-        <Spanish>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_GAIN</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</English>
         <French>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à %s3_city.</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city</German>
-        <Italian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</Italian>
-        <Spanish>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in %s3_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_YIELD_OVERFLOW</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Maximum storage capacity in %s3_city for %F2_yield is exceeded by %D1.[COLOR_REVERT]</English>
         <French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]La capacité maximale de stockage à %s3_pour %F2_yield a été dépassée de %D1.[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Die maximale Lagermenge für %F2_yield in %s3_city wird um %d1 überschritten.[COLOR_REVERT]</German>
-        <Italian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Maximum storage capacity in %s3_city for %F2_yield is exceeded by %D1.[COLOR_REVERT]</Italian>
-        <Spanish>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Maximum storage capacity in %s3_city for %F2_yield is exceeded by %D1.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_INCREASE</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</English>
         <French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
-        <Italian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</Italian>
-        <Spanish>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PRICE_DECREASE</Tag>
         <English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</English>
         <French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
         <German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
-        <Italian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</Italian>
-        <Spanish>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in %s3_player</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FATHER_POINTS</Tag>
         <English>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</English>
         <French>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</French>
         <German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</German>
-        <Italian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</Italian>
-        <Spanish>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_fathertype %s3_fathertype</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_LOST_TRIBE</Tag>
         <English>A rumour is spreading: A %s1_civ_adjective scout has found an Amazon tribe in a remote valley.</English>
         <French>Une rumeur se propage : un éclaireur %s1_civ_adjective aurait trouvé des guerrières amazones dans une vallée lointaine.</French>
         <German>Ein Gerücht macht die Runde: Ein %s1:4_civ_adjective Späher habe in einem entlegenen Tal ein Amazonenvolk entdeckt.</German>
-        <Italian>A rumour is spreading: A %s1_civ_adjective scout has found an Amazon tribe in a remote valley..</Italian>
-        <Spanish>A rumour is spreading: A %s1_civ_adjective scout has found an Amazon tribe in a remote valley.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LOST_TRIBE_1</Tag>
-        <English>Deep in unknown territory amidst the jungles of the New World, our brave scout has discovered an unknown Amazon tribe. While watching naked armed women danced wildly around a fire he was captured and interrogated before being released.</English>
+        <English>Our imaginative scout has come up with a fairy tale. In deep jungle he got lost one evening. As the night deepened he heard muffled drumming from a hidden ravine.[NEWLINE][NEWLINE]He crawled closer, only to discover a camp of naked warrior women leaping around a fire, wild as young she-wolves. Silver-tipped clubs flashed in the flickering firelight as the Amazons whirled them to the rhythm of the sounds. Then they caught sight of him. Suddenly he felt like a rabbit facing wolves. He fled.</English>
         <French>En s'enfonçant dans des territoires inexplorées de la jungle, votre éclaireur valeureux a découvert une tribu inconnue d'amazones. Des femmes nues et armées dansent sauvagement autour du feu.</French>
         <German>Märchenhaftes berichtet ein Späher. Im tiefsten Urwald habe er sich eines Abends verlaufen. Düsternis senkte sich über die Welt, als ein dumpfes Trommeln aus einer verborgnen Schlucht erklang.[NEWLINE]Er pirschte sich an und blickte hinab auf ein Lager nackter Kriegerinnen, die um ein Feuer sprangen, wild wie junge Wölfinnen. Im flackernden Lichtschein blitzten silberbeschlagene Holzkeulen, die die Amazonen im Rhythmus der Klänge schwangen. Als sie ihn erblickten, funkelte die Jagdlust in ihren Augen, und er floh.</German>
-        <Italian>Deep in unknown territory amidst the jungles of the New World, our brave scout has discovered an unknown Amazon tribe. Naked armed women dance wildly around a fire.</Italian>
-        <Spanish>Deep in unknown territory amidst the jungles of the New World, our brave scout has discovered an unknown Amazon tribe. Naked armed women dance wildly around a fire.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_4_HELP</Tag>
         <English>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] becomes promoted to [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</English>
         <French>[ICON_BULLET]L'unité [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] a été promu en tant que [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</French>
         <German>[ICON_BULLET]Der [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] wird zu einem [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT] befördert.</German>
-        <Italian>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] becomes promoted to [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</Italian>
-        <Spanish>[ICON_BULLET]The [COLOR_UNIT_TEXT]%s2:1_unit (%s1:1_unit)[COLOR_REVERT] becomes promoted to [COLOR_UNIT_TEXT]%s3:1_unit[COLOR_REVERT].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LOST_TRIBE_4B_HELP</Tag>
         <English>[COLOR_WARNING_TEXT](Not available if an [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] is already working for you.)[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT](Indisponible si une unité [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] travaille déjà pour vous.)[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT](Nicht verfügbar, wenn bereits ein [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] in Euren Diensten steht.)[COLOR_REVERT]</German>
-        <Italian>[COLOR_WARNING_TEXT](Not available if an [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] is already working for you.)[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_WARNING_TEXT](Not available if an [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_WARNING_TEXT] is already working for you.)[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_1</Tag>
         <English>Several scholars in Europe state that the Earth is a globe. Adventurers and explorers from all nations have set sail to find the western route to Asia.</English>
         <French>De nombreux savants en Europe affirment que la Terre est ronde. Des aventuriers et explorateurs de toutes les nations montent les voiles pour découvrir la route de l'Ouest vers l'Asie.</French>
         <German>Die Erde sei eine Kugel, behaupten einige Gelehrte in Europa. Abenteurer und Forscher aus den verschiedensten Nationen brechen auf, um die Westroute nach Asien zu entdecken.</German>
-        <Italian>Several Scholars in Europe state that the Earth is a globe. Adventurers and explorers from all nations set sail to find the western route to Asia.</Italian>
-        <Spanish>Several Scholars in Europe state that the Earth is a globe. Adventurers and explorers from all nations set sail to find the western route to Asia.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_PACIFIC</Tag>
         <English>Foreign explorers have discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</English>
         <French>Des explorateurs étrangers ont découvert et cartographié un océan à l'Ouest du Nouveau Monde qui mène sans doute possible vers la Chine.</French>
         <German>Fremde Forscher sind uns zuvorgekommen! Sie haben im Westen dieser Neuen Welt ein weites Meer kartographiert, hinter dessen Horizont unzweifelhaft China liegt.</German>
-        <Italian>Foreign explorers have discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</Italian>
-        <Spanish>Foreign explorers have discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PACIFIC_HELP</Tag>
         <English>Be the first to explore the western route to Asia. Glory and wealth will be yours!</English>
         <French>Soyez le premier à explorer la route de l'Ouest vers l'Asie. Or et Gloire vous attendra.</French>
         <German>Entdeckt als Erster die westliche Seeroute nach Asien. Ruhm und Reichtümer werden Euch sicher sein.</German>
-        <Italian>Be the first to explore the western route to Asia. Glory and wealth will be yours.</Italian>
-        <Spanish>Be the first to explore the western route to Asia. Glory and wealth will be yours.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_PACIFIC_DONE</Tag>
         <English>A %s1:4_civ_adjective adventurer was the first to discover the western route to Asia.</English>
         <French>Un aventurier %s1:4_civ_adjective a été le premier à découvrir la route vers l'Asie.</French>
         <German>Ein %s1:4_civ_adjective Abenteurer hat als Erster die Westküste erkundet und eine Passage nach Asien gefunden.</German>
-        <Italian>A %s1:4_civ_adjective adventurer was the first to discover the western route to Asia.</Italian>
-        <Spanish>A %s1:4_civ_adjective adventurer was the first to discover the western route to Asia.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PACIFIC_DONE</Tag>
         <English>What a triumph! One of our explorers has discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</English>
         <French>Quelle triomphe ! Un de nos explorateurs a découvert et cartographié un océan à l'Ouest du Nouveau Monde qui mène sans doute possible vers la Chine.</French>
         <German>Welch Triumph! Einer unserer Entdecker hat im Westen dieser Neuen Welt ein weites Meer kartographiert, hinter dessen Horizont unzweifelhaft China liegt. Der Wettlauf um die Entdeckung der westlichen Seeroute nach Asien ist entschieden.</German>
-        <Italian>What a triumph! One of our explorers has discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</Italian>
-        <Spanish>What a triumph! One of our explorers has discovered and mapped an ocean in the west of the New World which undoubtedly leads to China.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_SELECT_EVENT</Tag>
         <English>[BOLD]Choose an event which should be triggered. It can only be started if all trigger conditions (XML and python) are met.[BOLD]</English>
         <French>[BOLD]Choisissez un événement qui doit être déclenché. Il peut démarrer si toutes les conditions de déclenchement (XML et python) sont réunies.[BOLD]</French>
         <German>[BOLD]Event aussuchen, das gestartet werden soll. Es kann nur gestartet werden, wenn alle Bedingungen im gewählten Trigger erfüllt sind (XML und Python).[BOLD]</German>
-        <Italian>[BOLD]Choose an event which should be triggered. It can only be started if all trigger conditions (XML and python) are met.[BOLD]</Italian>
-        <Spanish>[BOLD]Choose an event which should be triggered. It can only be started if all trigger conditions (XML and python) are met.[BOLD]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_SELECT_NEVER_MIND</Tag>
         <English>[BOLD]Do not trigger an event.[BOLD]</English>
         <French>Ne déclencher aucun événement.</French>
         <German>[BOLD]Kein Event starten![BOLD]</German>
-        <Italian>Do not trigger an event.</Italian>
-        <Spanish>Do not trigger an event.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_VOLCANO_DORMANT_1</Tag>
         <English>The volcano near the %s1_civ_adjective city of %s2_city has become dormant again.</English>
         <French>Le volcan près de la ville %s1_civ_adjective de %s2_city s'est à nouveau mis en sommeil.</French>
         <German>Der Vulkan nahe der %s1:2_civ_adjective Siedlung %s2_city ist zur Ruhe gekommen.</German>
-        <Italian>Il volcano vicino alla %s1_civ_adjective citta di %s2_city e comincia di dormire.</Italian>
-        <Spanish>The volcano near the %s1_civ_adjective city of %s2_city has become dormant again.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_DORMANT_1</Tag>
         <English>The volcano near %s2_city no longer spews deadly ash clouds and lava flows.</English>
         <French>Le volcan près de %s2_city a cessé de cracher ses cendres mortelles, sa lave et ses débris rocheux.</French>
         <German>Der Vulkan nahe %s2_city hat aufgehört, tödliche Aschenwolken und Lavaflüße auszuspucken.</German>
-        <Italian>Il volcano vicino a %s2_city non ancora e attivo.</Italian>
-        <Spanish>The volcano near %s2_city has stopped spewing deadly ash clouds, lava flows, and mud- and debris-filled snow melts.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_VOLCANO_1_HELP</Tag>
         <English>[ICON_BULLET]Suffer loss of plot improvements near the eruption</English>
         <French>[ICON_BULLET]Subir des pertes d'aménagements sur les cases proches de l'éruption</French>
         <German>[ICON_BULLET]Verlust der Geländefeld-Modernisierungen in der Nähe der Eruption</German>
-        <Italian>[ICON_BULLET]Perdita dei miglioramenti delle caselle vicino all'eruzione</Italian>
-        <Spanish>[ICON_BULLET]Pérdida de mejoras de casillas cerca de la erupción.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TORNADO_1</Tag>
         <English>Vicious tornadoes carved a path of destruction through the %s1_civ_adjective Empire.</English>
         <French>De violentes tornades ont semé le chaos à travers l'empire %s1:1_civ_adjective.</French>
         <German>Ein schwerer Wirbelsturm hat eine Schneise der Verwüstung durch die %s1:2_civ_adjective Kolonie geschlagen.</German>
-        <Italian>Dei terribili tornado hanno lasciato una scia di distruzione nell'impero %s1_civ_adjective.</Italian>
-        <Spanish>Unos tornados muy fuertes han dejado una estela de destrucción a su paso por el imperio %s1:1_civ_adjective.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TORNADO_1</Tag>
         <English>As the heavens opened up down came the fist of retribution. Terrible spirals of air wiped away our %s8_improvement.</English>
         <French>Les cieux se sont ouverts et le poing du châtiment s'est abattu. D'effroyables volutes d'air ont anéanti notre %s8_improvement.</French>
         <German>Gouverneur, eine Windhose, so hoch wie der Himmel, tobt durch unser Land. Wer nicht schnell genug flüchtet, den packt sie und lässt ihn wie Herbstlaub durch die Luft tanzen. Eine Gemeinde ist nun ohne %s8_improvement, weil der Sturm alle Bauten zerriss. Können wir den Menschen helfen?</German>
-        <Italian>I cieli si sono aperti e la giustizia divina ha colpito. Dei terribili tornado hanno spazzato via %s8_improvement.</Italian>
-        <Spanish>Los cielos se han abierto y un puño castigador ha caído sobre nosotros. Las terribles ráfagas de viento huracanado han derribado [NUM8:nuestro:nuestra:nuestros:nuestras] %s8_improvement.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_WHEELWRIGHT</Tag>
         <English>Eager wheelwrights support the citizens in %s2_city.</English>
         <French>Des menuisiers-charrons souhaitent aider les citoyens de %s2_city.</French>
         <German>Eifrige Stellmacher setzen sich aufopferungsvoll für die kleinen Leute in %s2_city ein.</German>
-        <Italian>Eager wheelwrights support the citizens in %s2_city.</Italian>
-        <Spanish>Eager wheelwrights support the citizens in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_WHEELWRIGHT</Tag>
         <English>Governor, the wheelwrights in %s2_city offer to construct carts for the farmers to help them cultivate their fields.</English>
         <French>Gouverneur, les menuisiers-charrons de %s2_city vous proposent de construire des chariots pour aider les fermiers à cultiver leurs champs.</French>
         <German>Gouverneur, die Stellmacher Eurer Wagnerei in %s2_city bieten an, den Bauern Karren zu bauen, so dass sie ihre Felder flinker bewirtschaften können.</German>
-        <Italian>Governor, the wheelwrights in %s2_city offer to construct carts for the farmers to help them cultivate their fields.</Italian>
-        <Spanish>Governor, the wheelwrights in %s2_city offer to construct carts for the farmers to help them cultivate their fields.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FIRST_CATHEDRAL</Tag>
         <English>The cathedral in %s2_city draws the attention of foreigners.</English>
         <French>La cathédrale de %s2_city attirent l'attention des étrangers.</French>
         <German>Die Kathedrale in %s2_city lockt Fremde an.</German>
-        <Italian>The cathedral in %s2_city draws the attention of foreigners.</Italian>
-        <Spanish>The cathedral in %s2_city draws the attention of foreigners.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CATHEDRAL</Tag>
         <English>Governor, a ranger waits outside. He says, he has seen and done terrible things. Scalps hang from his belt and his leather vest is stained with blood. He saw the tower of our cathedral and wants to change his life. He asks what he can do to help us.</English>
         <French>Gouverneur, un garde-forestier vous attend. Il dit qu'il a fait des choses terribles. Des scalpes sont accrochés à sa ceinture et sa veste est pleine de sang. Il a vu la tour de notre cathédrale et veut changer de vie. Il demande ce qu'il peut faire pour la communauté.</French>
         <German>Gouverneur, ein Waldläufer wartet vor der Tür. Furchtbares habe er in der Wildnis gesehen, meint er, und Furchtbares habe er getan. Aus der Ferne sah er den Turm unserer Kathedrale, und hielt dies für ein Zeichen, sein Leben zu ändern.</German>
-        <Italian>Governor, a ranger waits outside. He says, he has seen and done terrible things. Scalps hang from his belt and his leather vest is stained with blood. He saw the tower of our cathedral and wants to change his life. He asked what he can do to help us.</Italian>
-        <Spanish>Governor, a ranger waits outside. He says, he has seen and done terrible things. Scalps hang from his belt and his leather vest is stained with blood. He saw the tower of our cathedral and wants to change his life. He asked what he can do to help us.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BABY_BOOM_1</Tag>
         <English>%s1_civ_adjective soldiers and their wives are celebrating the end of war by creating a baby boom.</English>
         <French>Des soldats %s1:3_civ_adjective et leurs femmes ont célébré la fin de la guerre en provoquant un baby-boom.</French>
         <German>Überglückliche %s1:3_civ_adjective Soldaten feiern, dass sie den Krieg überlebt haben.</German>
-        <Italian>I soldati %s1_civ_adjective e le loro mogli celebrano la fine della guerra, creando un boom di nascite.</Italian>
-        <Spanish>Los soldados %s1:3_civ_adjective y sus mujeres están celebrando el final de la guerra con un "baby boom".</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
         <English>Our soldiers, returning from war, have dedicated themselves to peace and to raising families. Our civilization is experiencing a baby boom!</English>
         <French>De retour de la guerre, nos soldats se sont consacrés à la paix et à fonder des familles. Notre civilisation connaît un baby-boom !</French>
         <German>Gouverneur, abgekämpft und müde kehren unsere Männer aus dem Krieg, in den Ihr sie schicktet, heim. Doch sind sie nicht müde genug, in den Wirtshäusern zu feiern und ihre Kriegsbeute zu verprassen. Die Schankmaiden machen den Kriegshelden schöne Augen und diese den Jungfern dicke Bäuche. Es ist ein schandhaftes Treiben, findet Ihr nicht?</German>
-        <Italian>I nostri soldati, tornati dalla guerra, si sono dedicati alla pace e a crearsi delle famiglie. La nostra civiltà gode di un boom di nascite!</Italian>
-        <Spanish>Nuestros soldados, al volver de la guerra, se han dedicado a la paz y a cuidar de sus familias. ¡Nuestra civilización está atravesando un "baby boom"!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BABY_BOOM_HELP</Tag>
         <English>Population growth in 1 to %d1 cities.</English>
         <French>Croissance de la population dans 1 à %d1 villes.</French>
         <German>Bevölkerungswachstum in 1 bis %d1 Siedlungen</German>
-        <Italian>Population growth in 1 to %d1 cities.</Italian>
-        <Spanish>Population growth in 1 to %d1 cities.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_JADE</Tag>
         <English>%s1_civ_adjective merchants are now selling jade carvings in small quantities.</English>
         <French>Des marchands %s1:3_civ_adjective vendent de petites quantités de sculptures en jade.</French>
         <German>Die %s1:2_civ_adjective Bergleute sind auf Jadevorkommen gestoßen.</German>
-        <Italian>I mercanti %s1_civ_adjective vendono piccole quantità di giada intagliata.</Italian>
-        <Spanish>Los mercaderes %s1:3_civ_adjective están vendiendo tallas de jade en pequeñas cantidades.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_JADE_1</Tag>
         <English>A rich source of jade has been found amongst the veins of iron at one of our mines.</English>
         <French>Une source importante de jade a été découverte parmi les veines de fer d'une de nos mines.</French>
         <German>Gouverneur, in den Bergen nahe %s2_city sind Minenarbeiter auf seltsame Geröllhaufen gestoßen. Es scheint Jade zu sein. Das satte Grün des Waldes und das seelenvolle Blau des Meeres schimmern in den weichen Steinen.[NEWLINE]Einen haben die Arbeiter den Eingeborenen gezeigt. Ihre Gesichter leuchteten vor Glück, und sie boten ihnen Gold zum Tausch an.</German>
-        <Italian>Tra i filoni di ferro, in una delle nostre miniere, è stata trovata una ricca fonte di giada.</Italian>
-        <Spanish>En una de nuestras minas se ha encontrado un rico filón de jade entre las vetas de hierro.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_JADE_1_LANDMARK</Tag>
         <English>Jade</English>
         <French>Jade</French>
         <German>Jade</German>
-        <Italian>Giada</Italian>
-        <Spanish>Jade</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WHALEOFATHING</Tag>
-        <English>A new source of Whales has been located off the %s1_civ_adjective coast.</English>
+        <English>A new source of whales has been located off the %s1_civ_adjective coast.</English>
         <French>Une nouvelle source de baleines a été localisée près de la côte %s1:2_civ_adjective.</French>
         <German>An der Küste des %s1:2_civ_adjective Landes wurde eine neue Walschule entdeckt.</German>
-        <Italian>È stata localizzata una nuova fonte di balene davanti alla costa %s1_civ_adjective.</Italian>
-        <Spanish>Se ha localizado un nuevo caladero de ballenas en la costa %s1:2_civ_adjective.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WHALEOFATHING_1</Tag>
-        <English>The poorly lighted room is crowded with drunken sailors. Tobacco smoke is burning in your eyes. A skinny captain entertains the crowd with a sea-monster story. Your adjutant is whispering next to your ear: "The story is getting bigger and better all the time. What do you want to do with this braggart?"</English>
+        <English>The dim room is crowded with drunken sailors. Tobacco smoke burns your eyes. A skinny captain entertains the crowd with a sea-monster story. Your adjutant whispers in your ear: "The story gets bigger and better all the time. What do you want to do with this braggart?"</English>
         <French>La pièce mal éclairée est bondé de marins ennivrés. L'épaisse fumée de tabac brûle tes yeux. Un capitaine freluquet divertit la foule avec une histoire de monstre marin. Votre adjudant murmure à votre oreille: « L'histoire est de plus en plus grosse à chaque fois, que voulez-vous faire avec ce fanfaron ? »</French>
         <German>Ihr späht in das von Tranfunzeln dürftig erhellte Gewölbe der Taverne. Die Luft ist zum Schneiden. Tabakqualm und die Ausdünstungen saufender Seefahrer füllen den Raum. Viele umringen einen hageren Kapitän, der mit geweiteten Augen und heiserer Stimme die Meute unterhält. Ihr vernehmt neben viel Gelächter einige schrille Wortfetzen: "Augen, glühend groß wie Schmiedefeuer ... dreißig Tentakel." "Schnappende Höllenmäuler ... mein Schiff fast zertrümmert ...", tönt es herüber. Euer Adjutant flüstert euch beflissen zu: "Nun, vorhin war es noch ein einziges Seeungeheuer mit schlappen zwanzig Tentakeln, was gedenkt ihr mit diesem Aufschneider zu tun?"</German>
-        <Italian>The poorly lighted room is crowded with drunken sailors. Tobacco smoke is burning in your eyes quickly. A skinny captain entertains the crowd with some kind of a sea-monster-story. Your adjutant is whispering next to your ear: "The story is getting bigger and better all the time, what do you want to do with this swagger?"</Italian>
-        <Spanish>The poorly lighted room is crowded with drunken sailors. Tobacco smoke is burning in your eyes quickly. A skinny captain entertains the crowd with some kind of a sea-monster-story. Your adjutant is whispering next to your ear: "The story is getting bigger and better all the time, what do you want to do with this swagger?"</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALEOFATHING_1_LANDMARK</Tag>
         <English>Whales</English>
         <French>Baleines</French>
         <German>Wale</German>
-        <Italian>Whales</Italian>
-        <Spanish>Whales</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CACAO_BONUS</Tag>
         <English>The people in the %s1:2_civ_adjective colonies discovered a new species of exceptionally fertile cocao plants.</English>
         <French>Les colons %s1:3_civ_adjective ont découvert une nouvelle espèce de cacaoyer particulièrement fertile.</French>
         <German>In den %s1:2_civ_adjective Kolonien wurde eine neue Sorte ertragreicher Kakaobäume entdeckt.</German>
-        <Italian>The people in the %s1:2_civ_adjective colonies discovered a new species of very fertile cocoa trees.</Italian>
-        <Spanish>The people in the %s1:2_civ_adjective colonies discovered a new species of very fertile cocoa trees.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CACAO_BONUS_1</Tag>
         <English>Natives have shown our cocoa pickers some exceptionally productive cocoa trees.</English>
         <French>Les indigènes ont montré à nos cueilleurs de cacao une espèce de cacaoyer particulièrement fertile.</French>
         <German>Indios haben unseren Kakaopflückerinnen im Urwald eine neue Sorte besonders ertragreicher Kakaobäume gezeigt.</German>
-        <Italian>Indios have shown our cocoa pluckers a species of very fertile cocoa trees.</Italian>
-        <Spanish>Indios have shown our cocoa pluckers a species of very fertile cocoa trees.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_BONUS_HELP</Tag>
         <English>[ICON_BULLET]New [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT] Bonus Resource</English>
         <French>[ICON_BULLET]Nouvelle ressource bonus de %s1_Icon ressources</French>
         <German>[ICON_BULLET]Neue [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT] Bonusressource</German>
-        <Italian>[ICON_BULLET]New %s1_Icon Bonus Resource</Italian>
-        <Spanish>[ICON_BULLET]New %s1_Icon Bonus Resource</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERBS</Tag>
-        <English>%s1_civ_adjective horticulturists have harnessed rare plants to produce remedies.</English>
+        <English>%s1_civ_adjective horticulturists have cultivated rare plants to produce medicines.</English>
         <French>Des horticulteurs %s1:3_civ_adjective ont exploité des ressources locales pour produire des remèdes.</French>
         <German>Die %s1:2_civ_adjective Siedler helfen den Wilden mit heilenden Kräutern.</German>
-        <Italian>Gli orticultori %s1_civ_adjective hanno sfruttato rare risorse locali per produrre farmaci.</Italian>
-        <Spanish>Los horticultores %s1:3_civ_adjective han aprovechado extraños recursos del lugar para producir remedios.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERBS_1</Tag>
-        <English>A medicinal tea cultivated by locals has been found to be effective with treating illness. This tea grows only in a specific region near %s2_city.</English>
+        <English>Governor, the midwife of %s2_city, a cranky, crazy old woman, cured the feverish chief of the nearby Native settlement with a tea she made for him. They both stank terribly - the tea as well as the woman - but the brew helped.[NEWLINE][NEWLINE]Now the all the Native villages want the woman to help them with their herbs, hoping she can take away every ache and wart. Do you agree with this, Lord?</English>
         <French>Un thé médicinal cultivé par des herboristes locaux s'est avéré efficace pour traiter certaines maladies. Ce thé ne pousse que dans une région bien spécifique près de %s2_city.</French>
         <German>Gouverneur, die Hebamme von %s2_city, eine hutzlige, verrückte Alte, hat den hitzig fiebernden Häuptling des nahen Ureinwohnerdorfes geheilt vermittels eines Tees, den sie ihm eingeflößt hatte. Sie stanken beide erbärmlich - der Tee wie das Weib -, doch der Sud half.[NEWLINE]Nun ersuchen die Wilden, die Frau möge ihnen mit ihren Kräutern zukünftig bei all ihren kleinen und großen Nöten beistehen, möge ihnen jedes Weh und jede Warze hinfortnehmen. Seid Ihr damit einverstanden, Herr?</German>
-        <Italian>Si è scoperto che un tè medicinale coltivato dalla gente del posto è efficace nel curare i malanni. Questo tè cresce solo in una specifica regione vicino a %s2_city.</Italian>
-        <Spanish>Se ha descubierto que una infusión medicinal cultivada por los lugareños es eficaz para tratar enfermedades. Esta planta solo crece en una región muy concreta, cerca de %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_HERBS_1_LANDMARK</Tag>
         <English>Herbs</English>
         <French>Herbes</French>
         <German>Kräuter</German>
-        <Italian>Herbs</Italian>
-        <Spanish>Herbs</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CALM_1</Tag>
         <English>Our %s3_unit is becalmed.</English>
         <French>Vptre navire « %s3_unit » est bloquée par la pétole, pas un souffle d'air.</French>
         <German>Euer Schiff "%s3_unit" ist in eine Flaute geraten.</German>
-        <Italian>Our %s3_unit is becalmed.</Italian>
-        <Spanish>Our %s3_unit is becalmed.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CALM_HELP</Tag>
         <English>[ICON_BULLET]%D1 slower passage to Europe for %s2_unit</English>
         <French>[ICON_BULLET]%D1 passage ralenti vers l'Europe pour %s2_unit</French>
         <German>[ICON_BULLET]Überfahrt für %s2_unit verlängert sich um %D1 Runde.</German>
-        <Italian>[ICON_BULLET]%D1 slower passage to Europe for %s2_unit</Italian>
-        <Spanish>[ICON_BULLET]%D1 slower passage to Europe for %s2_unit</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TAILWIND_1</Tag>
         <English>%s3_unit is affected by a strong tailwind.</English>
         <French>Votre navire « %s3_unit » est affecté par de forts vents arrières.</French>
         <German>Euer Schiff "%s3_unit" wird von kräftigem Rückenwind begünstigt.</German>
-        <Italian>%s3_unit is affected by strong tailwind.</Italian>
-        <Spanish>%s3_unit is affected by strong tailwind.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAILWIND_HELP_1</Tag>
         <English>[ICON_BULLET]%D1 additional moves for %s2_unit</English>
         <French>[ICON_BULLET]%D1 déplacement supplémentaires pour %s2_unit</French>
         <German>[ICON_BULLET]%D1 zusätzliche Bewegungspunkte für %s2_unit.</German>
-        <Italian>[ICON_BULLET]%D1 additional moves for %s2_unit</Italian>
-        <Spanish>[ICON_BULLET]%D1 additional moves for %s2_unit</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TAILWIND_HELP_2</Tag>
         <English>[ICON_BULLET]%D1 faster passage to Europe for %s2_unit</English>
         <French>[ICON_BULLET]%D1 passage plus rapide vers l'Europe pour %s2_unit</French>
         <German>[ICON_BULLET]%D1 schnellere Überfahrt für %s2_unit.</German>
-        <Italian>[ICON_BULLET]%D1 faster passage to Europe for %s2_unit</Italian>
-        <Spanish>[ICON_BULLET]%D1 faster passage to Europe for %s2_unit</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RUNAWAY</Tag>
         <English>In %s2_city horses ran away into the wilderness.</English>
         <French>Des chevaux de %s2_city se sont enfuits dans la nature.</French>
         <German>In %s2_city sind Pferde entlaufen und in die Wildnis geflohen.</German>
-        <Italian>In %s2_city horses ran away into the wilderness.</Italian>
-        <Spanish>In %s2_city horses ran away into the wilderness.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUNAWAY_1</Tag>
         <English>In %s2_city horses galloped off into the wilderness. Our %s1_civ neighbours in %s6_city are suspected of rustling the horses.</English>
         <French>Des chevaux de %s2_city se sont enfuits dans la nature. Nos voisins %s1_civ à %s6_city sont suscpéctés d'avoir capturé les chevaux.</French>
         <German>In %s2_city sind Pferde entlaufen und in die Wildnis geflohen. Unsere %s1_civ Nachbarn in %s6_city werden verdächtigt, die Pferde eingefangen zu haben.</German>
-        <Italian>In %s2_city horses ran away into the wilderness. Our %s1_civ neighbours in %s6_city are suspected of capturing the horses.</Italian>
-        <Spanish>In %s2_city horses ran away into the wilderness. Our %s1_civ neighbours in %s6_city are suspected of capturing the horses.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
-        <English>At the Austrian Emperor's banquet Europe's royalty has agreed on a wager. The monarch whose subjects first found several colonies will be declared the winner.</English>
+        <English>Governor, astonishing news has reached us from the Old World. At the coronation feast of the German Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own king promises us rich rewards if we help him win the bet!</English>
         <French>Les monarques européens ont fait un pari lors d'un banquet tenu par l'Empereur d'Autriche. Celui dont les sujets loyaux auront fondé les premiers plusieurs colonies à l'intérieur des terres sera déclaré vainqueur.</French>
         <German>Gouverneur, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Unser eigner König hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
-        <Italian>The European Royalty made a bet at the German emperor's banquet. The one Majesty, whose loyal subjects found several colonies in the inland first, will be entitled the winner.</Italian>
-        <Spanish>The European Royalty made a bet at the German emperor's banquet. The one Majesty, whose loyal subjects found several colonies in the inland first, will be entitled the winner.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TERRAX_HELP</Tag>
         <English>Be the first to found at least %s1 settlements in the heartland (with no access to the sea or inland sea).</English>
         <French>Soyez le premier à fonder au moins %s1 colonies dans les terres (sans accès à l'océan ou à des lacs et mers intérieurs).</French>
         <German>Gründet als erster mindestens %s1 Siedlungen im Landesinneren (ohne Zugang zum Ozean oder einem Binnenmeer).</German>
-        <Italian>Be the first to found at least %s1 settlements in the heartland (with no access to the sea or inland sea).</Italian>
-        <Spanish>Be the first to found at least %s1 settlements in the heartland (with no access to the sea or inland sea).</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_TERRAX</Tag>
         <English>Bad news, Governor. Your king lost his bet. Another nation's settlers have founded several colonies in the heartland.</English>
         <French>Mauvaise nouvelle, Gouverneur. Votre Roi a perdu son pari. Les colons d'une autre nations ont fondé plusieurs colonies à l'intérieur des terres.</French>
         <German>Schlechte Kunde, Gouverneur: Ein anderer Statthalter war schneller als Ihr und hat als erster im Landesinneren neue Siedlungen gegründet. Euer König hat seine Wette verloren.</German>
-        <Italian>Bad news, Governor. Your king lost his bet. Another nation's settlers have founded several colonies in the heartland.</Italian>
-        <Spanish>Bad news, Governor. Your king lost his bet. Another nation's settlers have founded several colonies in the heartland.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_TERRAX_DONE</Tag>
         <English>Numerous new %s1:3_civ_adjective settlements have been established inland.</English>
         <French>De nombreuses nouvelles colonies %s1:3_civ_adjective ont été fondées à l'intérieur des terres.</French>
         <German>Zahlreiche neue %s1:3_civ_adjective Siedlungen wurden im Landesinneren gegründet.</German>
-        <Italian>Numerous new %s1:3_civ_adjective settlements have been founded in the inland.</Italian>
-        <Spanish>Numerous new %s1:3_civ_adjective settlements have been founded in the inland.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_DONE</Tag>
         <English>Great news, Governor! His Majesty, our beloved King, has won his wager. Your settlers now have several communities in the heartland.</English>
         <French>Excellente nouvelle Gouverneur ! Nous avons fait gagner à notre Roi son pari. Vous avez fondé plusieurs colonies à l'intérieur des terres.</French>
         <German>Großartige Kunde, Gouverneur: Ihr habt so viele neue Siedlungen im Landesinneren gegründet, dass Euer König seine Wette gewinnen konnte. Ihre Majestät ist voll des Lobes über Euch!</German>
-        <Italian>Great news, Governor. His Majesty, our beloved king, has won His bet. Your settlers have founded several colonies in the heartland.</Italian>
-        <Spanish>Great news, Governor. His Majesty, our beloved king, has won His bet. Your settlers have founded several colonies in the heartland.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SHIPYARD</Tag>
         <English>The shipyard in %s2_city attracts harlots from the Old World.</English>
         <French>Le port de %s2_city attirent des prostitués venus d'Europe.</French>
         <German>Die Schiffswerft in %s2_city lockt Dirnen aus der Alten Welt an.</German>
-        <Italian>The shipyard in %s2_city attracts harlots from the Old World.</Italian>
-        <Spanish>The shipyard in %s2_city attracts harlots from the Old World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SHIPYARD</Tag>
         <English>Governor, in %s2_city a skipper's widow opened up a brothel. She hired some young harlots from Europe to sweeten the sailors' evenings. Shall we expel these wanton women?</English>
         <French>Gouverneur, la veuve d'un capitaine a ouvert un bordel à %s2_city. Elle a recruté des jeunes prostitués venues d'Europe pour adoucir les soirées de nos marins. Devons-nous les expulser hors de nos colonies ?</French>
         <German>Gouverneur, in %s2_city hat eine resolute Kapitänswitwe neben der Schiffswerft ein Bordell aufgemacht und ein paar junge Dirnen aus der Heimat angeworben, die nun den Zimmermännern und Schauerleuten den Feierabend versüßen. Sollen wir die Weibsbilder vertreiben?</German>
-        <Italian>Governor, in %s2_city a skipper's widow opened up a brothel. She hired some young harlots from Europe to sweeten the sailors' evenings. Shall we expel these women?</Italian>
-        <Spanish>Governor, in %s2_city a skipper's widow opened up a brothel. She hired some young harlots from Europe to sweeten the sailors' evenings. Shall we expel these women?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CARGOSPACE</Tag>
         <English>A master shipwright offers his services in %s2_city.</English>
         <French>Un maître charpentier de navire vous propose ses services à %s2_city.</French>
         <German>Ein Schiffsbaumeister bietet seine Dienste in %s2_city an.</German>
-        <Italian>A master shipwright offers his services in %s2_city.</Italian>
-        <Spanish>A master shipwright offers his services in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CARGOSPACE_1</Tag>
-        <English>Governor, a master shipwright offers to increase the cargo capacity of one of your ships in %s2_city.</English>
+        <English>Governor, a master shipwright offers to expand the cargo capacity of one of your ships in %s2_city.</English>
         <French>Gouverneur, un maître charpentier de navire propose d'augmenter la capacité en cargaison de l'un de vos bateaux à %s2_city.</French>
         <German>Gouverneur, in %s2_city bietet Euch ein durchreisender Schiffsbaumeister an, in der Schiffswerft ein Schiff auszubauen. Durch geschickte Raumnutzung will er mehr Stauraum schaffen. Sollen wir ihn gewähren lassen?</German>
-        <Italian>Governor, a master shipwright offers to enhance the cargo capacity of one of your ships in %s2_city.</Italian>
-        <Spanish>Governor, a master shipwright offers to enhance the cargo capacity of one of your ships in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_HELP</Tag>
         <English>[ICON_BULLET]With a %d3% percentage of success the unit "%s2_unit" receives %d1 [NUM1:extra cargo space:extra cargo spaces].</English>
         <French>[ICON_BULLET]Le navire « %s2_unit » a %d3% pourcent de chance de recevoir %d1 [NUM1:espace de cargaison supplémentaire:espaces de cargaison supplémentaires].</French>
         <German>[ICON_BULLET]Mit %d3% Wahrscheinlichkeit, erhält die Einheit "%s2_unit" %d1 [NUM1:zusätzlichen Frachtraum:zusätzliche Frachträume].</German>
-        <Italian>[ICON_BULLET]With a %d3% percentage of success the unit "%s2_unit" receives %d1 [NUM1:extra cargo space:extra cargo spaces].</Italian>
-        <Spanish>[ICON_BULLET]With a %d3% percentage of success the unit "%s2_unit" receives %d1 [NUM1:extra cargo space:extra cargo spaces].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_FAILED</Tag>
         <English>[COLOR_NEGATIVE_TEXT]Governor, the impostor has fled with your money![COLOR_REVERT]</English>
         <French>[COLOR_NEGATIVE_TEXT]Gouverneur, l'imposteur s'est enfui avec votre argent ![COLOR_REVERT]</French>
         <German>[COLOR_NEGATIVE_TEXT]Gouverneur, der Hochstapler hat sich mit Eurem Geld auf und davon gemacht![COLOR_REVERT]</German>
-        <Italian>[COLOR_NEGATIVE_TEXT]Governor, the impostor has fled with your money![COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_NEGATIVE_TEXT]Governor, the impostor has fled with your money![COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_CARGOSPACE_SUCCESS</Tag>
         <English>[COLOR_POSITIVE_TEXT]Governor, the added cargo space of the %s1_unit is progressing quickly.[COLOR_REVERT]</English>
         <French>[COLOR_POSITIVE_TEXT]Gouverneur, l'amélioration de la cargaison pour le navire « %s1_unit » avance rapidement.[COLOR_REVERT]</French>
         <German>[COLOR_POSITIVE_TEXT]Gouverneur, der Ausbau der %s1_unit schreitet zügig voran.[COLOR_REVERT]</German>
-        <Italian>[COLOR_POSITIVE_TEXT]Governor, the cargo space upgrade of the %s1_unit is progressing quickly.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_POSITIVE_TEXT]Governor, the cargo space upgrade of the %s1_unit is progressing quickly.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HYMNS_AND_SCULPTURES</Tag>
-        <English>Inspired by religious music and sculpture in %s2_city, a new Great Artist has emerged in the %s1_civ_adjective Empire.</English>
+        <English>Inspired by religious music and sculpture in %s2_city, a great artist has emerged in the %s1_civ_adjective Empire.</English>
         <French>Inspiré par la musique et les sculptures religieuses de %s2_city, un nouvel artiste illustre a émergé dans l'empire %s1:1_civ_adjective.</French>
         <German>Von den religiösen Klängen und Skulpturen in der Stadt %s2_city inspiriert, wurden im %s1:2_civ_adjective Reich neue Künstler ausgebildet.</German>
-        <Italian>Nell'impero %s1_civ_adjective è emerso un nuovo Grande Artista, ispirato dalla musica e dalla scultura religiose a %s2_city.</Italian>
-        <Spanish>Inspirado por la música y las esculturas religiosas de %s2_city, ha aparecido un gran artista en el imperio %s1:1_civ_adjective.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_1</Tag>
-        <English>The music played in your %s5_building in %s2_city has inspired a young person, who has grown into a Great Artist!</English>
+        <English>The music played in your %s5_building in %s2_city has inspired a young performer, who has developed into a great artist!</English>
         <French>La musique jouée dans votre %s5_building de %s2_city a inspiré une jeune personne, laquelle est devenue un artiste illustre !</French>
-        <German>Die Musik, die in Eurer %s5_building in %s2_city gespielt wird, hat zahlreiche junge Menschen dazu inspiriert, sich zu Künstlern ausbilden zu lassen!</German>
-        <Italian>La musica suonata in %s5_building a %s2_city ha ispirato un giovane, che è poi diventato un Grande Artista!</Italian>
-        <Spanish>La música tocada en [NUM5:nuestro:nuestra:nuestros:nuestras] %s5_building de %s2_city ha inspirado a un joven, que ha crecido hasta convertirse en un gran artista.</Spanish>
+        <German>Die Musik, die in Eurer %s5_building in %s2_city gespielt wird, hat zahlreiche junge Menschen dazu inspiriert, sich zu Künstlern ausbilden zu lassen!</German></Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_2</Tag>
-        <English>The art and sculpture decorating the %s5_building in %s2_city has nurtured the imagination and talents of a new Great Artist!</English>
+        <English>The art and sculpture decorating the %s5_building in %s2_city has nurtured the imagination and talents of a great artist!</English>
         <French>L'art et les sculptures ornant votre %s5_building de %s2_city ont nourri l'imagination et le talent d'un nouvel artiste illustre !</French>
         <German>Die in der %s5_building der Stadt %s2_city zu besichtigende Kunst und Bildhauerei hat der Vorstellungskraft und dem Talent neuer Künstler Vorschub geleistet!</German>
-        <Italian>L'arte e la scultura che decorano %s5_building a %s2_city hanno nutrito l'immaginazione e i talenti di un nuovo Grande Artista!</Italian>
-        <Spanish>El arte y las esculturas que decoran [NUM5:el:la:los:las] %s5_building de %s2_city ha alimentado la imaginación y el talento de un nuevo gran artista.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_1</Tag>
-        <English>Constant attacks on peaceful merchant ships leads to frigates sent from Europe to hunt down the harassers.</English>
+        <English>Because of constant attacks on peaceful merchant ships, frigates have been sent from Europe to hunt down the harassers.</English>
         <French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour faire fuire les agresseurs.</French>
         <German>Angriffe durch Kriegsschiffe beeinträchtigen die Überfahrten der Händler. Ein Monarch schickt eine Fregatte, um die Störenfriede zu vertreiben.</German>
-        <Italian>Constant attacks on peaceful merchant ships result in fregates being sent from Europe to drive the harassers away.</Italian>
-        <Spanish>Constant attacks on peaceful merchant ships result in fregates being sent from Europe to drive the harassers away.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_2</Tag>
-        <English>Ongoing attacks on peaceful merchant ships leads to frigates being sent from Europe to destroy the harassers once and for all.</English>
+        <English>Following ongoing attacks on merchant ships, frigates are coming from Europe to destroy the predators once and for all.</English>
         <French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour en finir une fois pour toute.</French>
         <German>Immer noch beeinträchtigen Kriegsschiffe die Überfahrten der Händler. Ein Monarch schickt eine Fregatte, um den Störenfrieden den Garaus zu machen.</German>
-        <Italian>The ongoing attacks on peaceful merchant ships result in fregates being sent from Europe to dispose of the harassers once and for all.</Italian>
-        <Spanish>The ongoing attacks on peaceful merchant ships result in fregates being sent from Europe to dispose of the harassers once and for all.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_3</Tag>
         <English>Warships and pirates are still terrorizing the merchants. A king in Europe is sending a third frigate to America to protect the sea lanes.</English>
         <French>Les bateaux de guerre et les pirates continuent à terroriser nos marchands. Un roi en Europe décide d'envoyer une troisième frégate aux Amériques pour protéger les voies maritimes.</French>
         <German>Kriegsschiffe terrorisieren ohne Unterlass die Überfahrten der Händler. Ein Monarch scheut weder Kosten noch Mühen und schickt zum dritten Mal eine Fregatte nach Amerika, um die Küste sicherer zu machen.</German>
-        <Italian>Warships and pirates are still terrorizing the merchants. A King in Europe is going out of his way to send a third fregate to America to protect the sea lanes.</Italian>
-        <Spanish>Warships and pirates are still terrorizing the merchants. A King in Europe is going out of his way to send a third fregate to America to protect the sea lanes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_1</Tag>
-        <English>Governor, hostile ships are hunting our merchants. Our King will send a frigate to fight against pirates.</English>
+        <English>Governor, hostile ships are hunting our merchants. Our King's frigate will send them to a watery grave.</English>
         <French>Gouverneur, des navires hostiles chassent nos marchands. Notre Roi va envoyer une frégate pour combattre les pirates.</French>
         <German>Gouverneur, Kriegsschiffe fremder Nationen machen unsere Küste unsicher. Unser König wird eine Fregatte entsenden, um den Halunken ein nasses Grab zu bereiten.</German>
-        <Italian>Governor, hostile ships are hunting our merchants. Our King will send a frigate to fight against pirates.</Italian>
-        <Spanish>Governor, hostile ships are hunting our merchants. Our King will send a frigate to fight against pirates.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_2</Tag>
-        <English>Governor, hostile ships are still on patrol along our coast and are capturing our merchant ships. Our King will send another frigate to protect the sea lanes.</English>
+        <English>Governor, hostile ships are still hunting along our coast where they capture our merchant ships. Our King will send another frigate to protect the sea lanes.</English>
         <French>Gouverneur, des navires hostiles continuent à patrouiller le long de nos côtes et à capturer nos navires marchands. Notre Roi envoi une nouvelle frégate pour protéger les voies maritimes.</French>
         <German>Gouverneur, immer noch segeln Feinde an unserer Küste entlang und machen Jagd auf unsere Schiffe. Unser König entsendet erneut eine Fregatte zu unserem Schutz.</German>
-        <Italian>Governor, hostile ships are still on patrol along our coast and are capturing our merchant ships. Our King will send another frigate to protect the sea lanes.</Italian>
-        <Spanish>Governor, hostile ships are still on patrol along our coast and are capturing our merchant ships. Our King will send another frigate to protect the sea lanes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_3</Tag>
-        <English>Governor, our King is deeply disappointed about your inability to keep the sea lanes safe. He has sent a frigate from Europe again to support us. Rest assured, this will be the last help he is giving us.</English>
+        <English>Governor, our King says he is disappointed by our inability to bring the enemy warships to heel. He has once again ordered a frigate from Europe to the New World to eliminate these rogues. The king warns us, however, that he cannot spare any more ships.</English>
         <French>Gouverneur, notre Roi est profondément déçu de notre incapacité à assurer la sécurité des voies maritimes. Il a envoyé encore une frégate d'Europe pour nous aider. Soyez assuré que c'est la dernière fois qu'il nous viendra en aide.</French>
         <German>Gouverneur, unser König lässt verlauten, er sei enttäuscht von unserem Unvermögen, die feindlichen Kriegsschiffe zur Räson zu ziehen. Er hat erneut eine Fregatte aus Europa in die Neue Welt abkommandiert, um diese Schurken auszuschalten. Der König warnt uns aber - weitere Schiffe könne er nicht entbehren.</German>
-        <Italian>Governor, our King is deeply disappointed about your inability to keep the sea lanes safe. He has sent again a frigate from Europe to support us. Rest assured, this will be the last help he is giving us.</Italian>
-        <Spanish>Governor, our King is deeply disappointed about your inability to keep the sea lanes safe. He has sent again a frigate from Europe to support us. Rest assured, this will be the last help he is giving us.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NO_SMOKING</Tag>
         <English>A tobacco plantation is in danger.</English>
         <French>Une plantation de tabac est en danger.</French>
         <German>Tabakpflanzern wird von renitenten Frauenzimmern Feuer unterm Hintern gemacht.</German>
-        <Italian>A tobacco plantation is in danger.</Italian>
-        <Spanish>A tobacco plantation is in danger.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NO_SMOKING_1</Tag>
         <English>A group of angry women want to destroy our tobacco plantation outside %s2_city. The say that smoking is sinful.</English>
         <French>Un groupe de femmes en colère veut détruire notre plantation de tabac près de %s2_city. Elles disent que fumer est un pêché.</French>
         <German>Gouverneur, aufgebrachte Weibsbilder marschieren in %s2_city zu einer Tabakplantage. Sie tragen Fackeln und wollen das Anwesen niederbrennen. Ihre Anführerin hält flammende Reden, das Einatmen von Qualm sei satanisch. Wer eine Zigarre paffe, würde dem Teufel ein Brandopfer bringen.</German>
-        <Italian>A group of angry ladies want to destroy our tobacco plantation outside %s2_city. The say that smoking is sinful.</Italian>
-        <Spanish>A group of angry ladies want to destroy our tobacco plantation outside %s2_city. The say that smoking is sinful.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BUGS</Tag>
         <English>Boll weevils are troubling farmers.</English>
         <French>Une invasion de charançons trouble nos récoltes.</French>
         <German>Rüsselkäfer und ihre Larven plagen eine Baumwollplantage.</German>
-        <Italian>Boll weevils are troubling farmers.</Italian>
-        <Spanish>Boll weevils are troubling farmers.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BUGS_1</Tag>
-        <English>Boll weevils are troubling the farmers of our plantation outside %s2_city. Governor, what shall we do?</English>
+        <English>Governor, boll weevils have infested a plantation near %s2_city. The black beetle bores its proboscis into the cotton boll and lays eggs there. Larvae eat the capsules empty before we can harvest the cotton filaments. An Indian medicine man advises us to destroy the fields and burn down the plantation. Otherwise the infestation will spread.</English>
         <French>Une invasion de charançons trouble nos récoltes dans une plantation près de %s2_city. Gouverneur, que devons-nous faire ?</French>
         <German>Gouverneur, Baumwollkapselkäfer haben eine Plantage bei %s2_city befallen. Das schwarze Getier bohrt seine Rüssel in die Kapselfrüchte und legt dort Eier ab. Larven fresssen die Kapseln leer, bevor wir ihre Samenfäden ernten können. Ein indianischer Medizinmann hat uns geraten, die Felder zu vernichten und sogar das Anwesen niederzubrennen, anderenfalls sei der Plage nicht Herr zu werden.</German>
-        <Italian>Boll weevils are troubling the farmers of our plantation outside %s2_city. Governor, what shall we do?</Italian>
-        <Spanish>Boll weevils are troubling the farmers of our plantation outside %s2_city. Governor, what shall we do?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_CATHEDRALS_1</Tag>
-        <English>You have built your first church in the New World. However, godliness does not need false modesty.</English>
+        <English>You have built your first church in the New World and thus done a pious work. Remember that the fear of God knows neither measure nor modesty.</English>
         <French>Vous avez construit votre première église dans le Nouveau Monde. Cependant, la piété n'aime pas la fausse modestie.</French>
         <German>Ihr habt Eure erste Kirche in der Neuen Welt erbaut und damit ein frommes Werk getan. Doch Gottesfurcht kennt weder Maß noch Bescheidenheit.</German>
-        <Italian>You have built your first church in the New World. However, godliness does not need false modesty.</Italian>
-        <Spanish>You have built your first church in the New World. However, godliness does not need false modesty.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_FIVE_CATHEDRALS</Tag>
