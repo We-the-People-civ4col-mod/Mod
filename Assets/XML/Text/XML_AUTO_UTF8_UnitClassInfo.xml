@@ -2042,6 +2042,15 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
+        <English>Prepared Settler:Prepared Pioneers</English>
+        <German>
+            <Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIRATE_FRIGATE</Tag>
         <English>
             <Text>Pirate Frigate:Pirate Frigates</Text>
