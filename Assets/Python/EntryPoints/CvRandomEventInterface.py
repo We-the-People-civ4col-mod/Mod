@@ -2995,6 +2995,12 @@ def CanDoEuropeTrade(argsList, iYieldID, iQuantity):
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
 	
+	# here we check Handicap Setting for AI only to avoid confusing number in texts when Difficulty changes
+	Handicap = gc.getHandicapInfo(CyGame().getHandicapType())
+	#for AI
+	if not player.isHuman():
+		quantity = quantity * Handicap.getAITrainPercent()/100
+	
 	# now we check if enough of the Yield has been traded with Europe using function argument iYieldID
 	if player.getYieldTradedTotalINT(iYieldID) < quantity:
 		return false
@@ -3075,6 +3081,12 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 	quantity = event.getGenericParameter(3)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+	
+	# here we check Handicap Setting for AI only to avoid confusing number in texts
+	Handicap = gc.getHandicapInfo(CyGame().getHandicapType())
+	#for AI
+	if not player.isHuman():
+		quantity = quantity * Handicap.getAITrainPercent()/100
 
 	# Now we construct the Help Text
 	szHelp = ""
