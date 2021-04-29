@@ -6189,6 +6189,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -7141,6 +7145,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -8102,6 +8110,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -9068,6 +9080,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -10031,6 +10047,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -10985,6 +11005,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -11936,6 +11960,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -12885,6 +12913,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -13859,6 +13891,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -14823,6 +14859,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -15774,6 +15814,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -16750,6 +16794,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -17703,6 +17751,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -18660,6 +18712,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -19620,6 +19676,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -20575,6 +20635,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -21528,6 +21592,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -22494,6 +22562,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -23427,6 +23499,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -24393,6 +24469,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -25343,6 +25423,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -26287,6 +26371,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -27238,6 +27326,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -28176,6 +28268,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -29132,6 +29228,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -30082,6 +30182,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -31027,6 +31131,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -31975,6 +32083,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -32921,6 +33033,10 @@
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -33859,6 +33975,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -34912,6 +35032,10 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
