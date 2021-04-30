@@ -1194,7 +1194,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	}
 
 	// We bail if there's not a single viable destination
-	if (bNoRoute)
+	// Transports with cargo should carry on because they might need to drop it off somewhere before they can start on normal traderoutes
+	if (bNoRoute && bNoCargo)
 		return false;
 
 	// TAC - Trade Routes Advisor - koma13 - START
@@ -1383,6 +1384,15 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		CvCity* pCity = kOwner.AI_findBestPort();
 		if (pCity != NULL && !atPlot(pCity->plot()))
 		{
+			// check that the city is reachable
+			int iTurns = 0;
+			if (!generatePath(plot(), pCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &iTurns))
+			{
+				// no path. Bail out instead of trying to add a movement command
+				// if the command to move is given, then movement will fail and this function is called again
+				// in other words trying to move will cause an infinite loop (bug #416)
+				return false;
+			}
 			kBestDestination = pCity->getIDInfo();
 		}
 	}
