@@ -1,5 +1,5 @@
 Detailled information in our forum:
-http://forums.civfanatics.com/forumdisplay.php?f=455
+https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 
 Welcome to Religion and Revolution !
@@ -36,8 +36,9 @@ Of course the TAC-team.
 
 Otherwise basically almost every modder out there.
 Please tell us, if we use parts of your work and forgot your name.
-
-	Nightingale	
+	
+	Zeta Nexus
+	Rampstormp
 	Writing Bull	
 	Willi_Tell
 	Isabelxxx
