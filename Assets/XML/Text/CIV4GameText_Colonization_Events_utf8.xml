@@ -1046,7 +1046,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_1</Tag>
-        <English>Governor, at the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
+        <English>At the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
         <French>Un émissaire étranger de la cour de Russie est arrivée à notre capitale.</French>
         <German>Gouverneur, beim Richtfest Eures Arsenals zieht Euch ein fremdartig gekleideter Ausländer beiseite. Er spricht Eure Muttersprache, doch mit einem fürchterlichen Akzent. Der Mann behauptet, im Auftrag eines russischen Fürsten zu handeln, der gerne mit der stärksten Wirtschaftsmacht der Neuen Welt ins Geschäft kommen möchte.</German>
     </TEXT>
@@ -1064,7 +1064,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_DONE</Tag>
-        <English>Governor, you are the first to build a great arsenal. A foreign emissary from the court of the Tsar of All the Russias offers you an interesting deal.</English>
+        <English>You are the first to build a great arsenal. A foreign emissary from the court of the Tsar of All the Russias offers you an interesting deal.</English>
         <French>Gouverneur, vous êtes le premier à construire un Grand arsenal. L'émissaire étrange de la cour du Grand Tsar de Toutes les Russies vous offrent un contrat intéressant...</French>
         <German>Gouverneur, Ihr habt als erster in der Neuen Welt ein Großes Zeughaus errichten können. Wie versprochen, taucht zum Richtfest der ominöse ausländische Geschäftsmann wieder auf, der vorgibt, im Auftrag eines russischen Fürsten zu handeln. Immer noch spricht der Unterhändler Eure Muttersprache mit furchtbarem Akzent. Ihr nehmt Euch vor, ihm den Hauslehrer Eurer Neffen, Herrn Berlitz, zu empfehlen, der bei der Spracherziehung der Tunichtgute wahre Wunder wirkte. Doch zuvor bittet Ihr den Fremden, die Angebote des Fürsten vorzutragen.</German>
     </TEXT>
@@ -1287,7 +1287,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_LUMBER</Tag>
-        <English>The Royal Navy has requisitioned 200 tons of lumber for the construction of new ships, ready as soon as possible at the %s2_city docks.</English>
+        <English>The Royal Navy has requisitioned 200 tons of lumber for the construction of new ships, to be delivered as soon as possible at the %s2_city docks.</English>
         <French>La Marine Royale a réquisitionné 200 tonnes de bois pour la construction de ses nouveaux navires. Les biens sont à collecter le plus tôt possible aux docks de %s2_city.</French>
         <German>Die Royal Navy hat 200 Tonnen Holz für den Bau neuer Schiffe angefordert. Das Holz soll so bald wie möglich ine einer Siedlung mit Dock oder Zollhaus bereitgestellt werden. </German>
     </TEXT>
@@ -1335,7 +1335,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CATTLETHIEF</Tag>
-        <English>The winter has been hard. Guards of %s2_city caught Natives from a nearby %s1_player village trying to steal some of our cattle for food.</English>
+        <English>The winter has been hard. Guards in %s2_city caught Natives from a nearby %s1_player village trying to steal some of our cattle for food.</English>
         <French>L'hiver a été difficile, et les gardes de %s2_city ont attrapé une bande indigène du village voisin de %s1_player qui tentait de voler du bétail de nos troupeaux pour assurer leur subsistance.</French>
         <German>Der harte letzte Winter hat die Ureinwohner einer nahen %s1_player Siedlung dazu verleitet Vieh der Herden von %s2_city zu stehlen, doch unsere wachsame Stadtwache hat sie dabei gefangen.</German>
     </TEXT>
@@ -1353,7 +1353,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_KINGFURIOUS</Tag>
-        <English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your overwhelming misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be  authorized to sack  %s2_city and confiscate that undeserved wealth!</English>
+        <English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your countless misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be  authorized to sack  %s2_city and confiscate your undeserved wealth!</English>
         <French>Par décret Royal, votre perfidie touche à sa fin. En récompense de vos mauvaises actions, le Roi vient d'autoriser la mise à sac des de la colonie suivante: %s2_city ... A moins bien sûr que vous ne dédomagiez la Couronne!</French>
         <German>Durch unumstösslichen Beschluss Ihrer Majestät, wird euer verräterisches Handeln bestraft. Als teilweise Wiedergutmachung eurer vielen Vergehen, werdet ihr sofort eine Strafe zahlen oder königliche Abgesandte sind dazu authorisiert im Umland von %s2_city alles zu konfiszieren, was rechtmässig Ihrer Majestät gehört!</German>
     </TEXT>
@@ -1426,7 +1426,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DISEASED_NATIVES</Tag>
-        <English>A disease is spreading in a nearby Native village. The disease broke out after settlers visited their village. Now the Native people need our help.</English>
+        <English>A disease is spreading in a nearby Native village. The disease broke out after our settlers visited them. Now the Native people need our help.</English>
         <French>Une maladie est en train de se propager dans un village indigène voisin. Les indigènes croient que cela fait suite à la visite de certains de nos colons et demandent de l'aide.</French>
         <German>Eine Krankheit breitet sich in einer nahegelegenen Siedlung der Wilden aus. Sie behaupten, die Krankheit sei ausgebrochen nachdem einige unserer Siedler ihr Dorf besucht hatten. Sie bitten um unsere Hilfe.</German>
     </TEXT>
@@ -1470,7 +1470,7 @@
         <Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
         <English>European colonists in %s2_city have celebrated the first Thanksgiving.</English>
         <French>Des colons européens de %s2_city ont célébré leur premier Thanksgiving.</French>
-        <German>Europäische Kolonisten in %s2_city haben das erste Thanksgiving gefeiert.</German>>
+        <German>Europäische Kolonisten in %s2_city haben das erste Thanksgiving gefeiert.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THANKSGIVING</Tag>
