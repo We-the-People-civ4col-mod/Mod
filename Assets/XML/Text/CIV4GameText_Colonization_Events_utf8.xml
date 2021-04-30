@@ -45,7 +45,7 @@
     <!--TUTORIAL EVENTS-->
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_RESOURCE_TOOLS</Tag>
-        <English>[BOLD]Tools[\BOLD][NEWLINE][TAB]%s2_city has begun to create tools. Manufactured from ore, tools are a component of many advanced buildings and are also used to create pioneers and guns.</English>
+        <English>[BOLD]Tools[\BOLD][NEWLINE][TAB]%s2_city now makes tools. Manufactured from ore, tools are a component of many advanced buildings and are also used to create pioneers and guns.</English>
         <French>[BOLD]Outils[\BOLD][NEWLINE][TAB]%s2_city a commencé à créer des outils. Fabriqués à partir de minerai, les outils sont nécessaires pour construire de nombreux bâtiments complexes et servent aussi à la création des pionniers et des armes à feu.</French>
         <German>[BOLD]Werkzeuge[\BOLD][NEWLINE][TAB]%s2_city hat mit der Produktion von Werkzeugen begonnen. Die aus Eisenerz gefertigten Werkzeuge werden zur Errichtung vieler fortschrittlicher Gebäude benötigt und kommen ebenfalls bei der Ausbildung von Pionieren und der Herstellung von Schusswaffen zum Einsatz.</German>
     </TEXT>
@@ -144,7 +144,7 @@
         <Tag>TXT_KEY_EVENTTRIGGER_ADVENTURER</Tag>
         <English>Rumours about valuable treasure troves near %s2_city are spreading fast.</English>
         <French>Une rumeur court à propos des environs de %s2_city. Des immenses trésors seraient cachés dans les environs...</French>
-        <German>Gerüchte über wertvolle Schatzfunde in der Nähe von %s2_city verbreiten sich rasch.</German>>
+        <German>Gerüchte über wertvolle Schatzfunde in der Nähe von %s2_city verbreiten sich rasch.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ADVENTURER</Tag>
@@ -514,7 +514,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1A</Tag>
-        <English>Rura unrest is growing in Europe. Relations between %s1__player and %s3__player have deteriorated. War is in the air.</English>
+        <English>Rural unrest is growing in Europe. Relations between %s1__player and %s3__player have deteriorated. War is in the air.</English>
         <French>Il y aura d'autres hivers. Stockez des fourrures jusqu'à la prochaine fois.</French>
         <German>Die Unruhen unter der Landbevölkerung in Europa weiten sich aus. Die Beziehungen zwischen %s1__player und %s3__player verschlechtern sich. Krieg liegt in der Luft.</German>
     </TEXT>
@@ -598,7 +598,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LOST_TRIBE_1</Tag>
-        <English>Our imaginative scout has come up with a fairy tale. In deep jungle he got lost one evening. As the night deepened he heard muffled drumming from a hidden ravine.[NEWLINE][NEWLINE]He crawled closer, only to discover a camp of naked warrior women leaping around a fire, wild as young she-wolves. Silver-tipped clubs flashed in the flickering firelight as the Amazons whirled them to the rhythm of the sounds. Then they caught sight of him. Suddenly he felt like a rabbit facing wolves. He fled.</English>
+        <English>Our imaginative scout has come up with a fairy tale. In deep jungle he got lost one evening. As the night deepened he heard muffled drumming from a hidden ravine.[NEWLINE][NEWLINE]He crawled closer, only to discover a camp of naked warrior women leaping around a fire, wild as young she-wolves. Silver-tipped clubs flashed in the flickering firelight as the Amazons whirled them to the rhythm of the sounds. Then they caught sight of him. Suddenly he felt like a rabbit facing the wolves. He fled.</English>
         <French>En s'enfonçant dans des territoires inexplorées de la jungle, votre éclaireur valeureux a découvert une tribu inconnue d'amazones. Des femmes nues et armées dansent sauvagement autour du feu.</French>
         <German>Märchenhaftes berichtet ein Späher. Im tiefsten Urwald habe er sich eines Abends verlaufen. Düsternis senkte sich über die Welt, als ein dumpfes Trommeln aus einer verborgnen Schlucht erklang.[NEWLINE]Er pirschte sich an und blickte hinab auf ein Lager nackter Kriegerinnen, die um ein Feuer sprangen, wild wie junge Wölfinnen. Im flackernden Lichtschein blitzten silberbeschlagene Holzkeulen, die die Amazonen im Rhythmus der Klänge schwangen. Als sie ihn erblickten, funkelte die Jagdlust in ihren Augen, und er floh.</German>
     </TEXT>
@@ -790,7 +790,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HERBS_1</Tag>
-        <English>Governor, the midwife of %s2_city, a cranky, crazy old woman, cured the feverish chief of the nearby Native settlement with a tea she made for him. They both stank terribly - the tea as well as the woman - but the brew helped.[NEWLINE][NEWLINE]Now the all the Native villages want the woman to help them with their herbs, hoping she can take away every ache and wart. Do you agree with this, Lord?</English>
+        <English>Governor, the midwife of %s2_city, a cranky, crazy old woman, cured the feverish chief of the nearby Native settlement with a tea she made for him. They both stank terribly - the tea as well as the woman - but the brew helped.[NEWLINE][NEWLINE]Now the all the Native villages want the woman to help them with their herbs, hoping she can take away every ache and pain. Do you agree with this, Lord?</English>
         <French>Un thé médicinal cultivé par des herboristes locaux s'est avéré efficace pour traiter certaines maladies. Ce thé ne pousse que dans une région bien spécifique près de %s2_city.</French>
         <German>Gouverneur, die Hebamme von %s2_city, eine hutzlige, verrückte Alte, hat den hitzig fiebernden Häuptling des nahen Ureinwohnerdorfes geheilt vermittels eines Tees, den sie ihm eingeflößt hatte. Sie stanken beide erbärmlich - der Tee wie das Weib -, doch der Sud half.[NEWLINE]Nun ersuchen die Wilden, die Frau möge ihnen mit ihren Kräutern zukünftig bei all ihren kleinen und großen Nöten beistehen, möge ihnen jedes Weh und jede Warze hinfortnehmen. Seid Ihr damit einverstanden, Herr?</German>
     </TEXT>
@@ -844,7 +844,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
-        <English>Governor, astonishing news has reached us from the Old World. At the coronation feast of the German Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own king promises us rich rewards if we help him win the bet!</English>
+        <English>Governor, astonishing news has reached us from the Old World. At the coronation feast of the Habsburg Emperor, the rulers of Europe were all gathered together. As the wine flowed, they bragged and teased each other. One word led to another and finally a bet was made: the ruler first to have the most new towns in the interior of the New World will win. Our own king promises us rich rewards if we help him win the bet!</English>
         <French>Les monarques européens ont fait un pari lors d'un banquet tenu par l'Empereur d'Autriche. Celui dont les sujets loyaux auront fondé les premiers plusieurs colonies à l'intérieur des terres sera déclaré vainqueur.</French>
         <German>Gouverneur, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Unser eigner König hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
     </TEXT>
