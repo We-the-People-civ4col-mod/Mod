@@ -93,7 +93,7 @@
             <fScale>0.54</fScale>
             <fInterfaceScale>0.88</fInterfaceScale>
             <NIF>Art/Units/settler/experienced_settler/Free_Colonist.nif</NIF>
-            <KFM>Art/Units/settler/experienced_settler/Free_Colonist.kfm</KFM>
+            <KFM>Art/Units/Free_Colonist/Free_Colonist.kfm</KFM>
             <fBattleDistance>0.35</fBattleDistance>
             <fRangedDeathTime>0.31</fRangedDeathTime>
             <bActAsRanged>0</bActAsRanged>
