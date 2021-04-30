@@ -924,7 +924,7 @@
         <Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_1</Tag>
         <English>The music played in your %s5_building in %s2_city has inspired a young performer, who has developed into a great artist!</English>
         <French>La musique jouée dans votre %s5_building de %s2_city a inspiré une jeune personne, laquelle est devenue un artiste illustre !</French>
-        <German>Die Musik, die in Eurer %s5_building in %s2_city gespielt wird, hat zahlreiche junge Menschen dazu inspiriert, sich zu Künstlern ausbilden zu lassen!</German></Spanish>
+        <German>Die Musik, die in Eurer %s5_building in %s2_city gespielt wird, hat zahlreiche junge Menschen dazu inspiriert, sich zu Künstlern ausbilden zu lassen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_2</Tag>
