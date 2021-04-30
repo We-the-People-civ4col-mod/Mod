@@ -148,7 +148,7 @@ Stelle zuerst sicher, dass dein Spiel Colonization mit dem offiziellen Patch 1.0
 (Andere Versionen verursachen schwere Probleme.)
 
 Hinweis dazu:
-Wenn due Steam Version hast, bist du automatisch auf diesem Stand und musst nichts machen.
+Wenn du die Steam Version hast, bist du automatisch auf diesem Stand und musst nichts machen.
 (Nur die alte CD Version muss aktualiser werden.)
 
 Installiere "We the People" sonst wie jede andere Mod.
