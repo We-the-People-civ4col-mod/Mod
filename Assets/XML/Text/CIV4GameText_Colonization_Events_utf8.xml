@@ -976,19 +976,19 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NO_SMOKING_1</Tag>
-        <English>A group of angry women want to destroy our tobacco plantation outside %s2_city. The say that smoking is sinful.</English>
+        <English>A group of angry women want to destroy our tobacco plantation outside %s2_city. They say smoking is sinful.</English>
         <French>Un groupe de femmes en colère veut détruire notre plantation de tabac près de %s2_city. Elles disent que fumer est un pêché.</French>
         <German>Gouverneur, aufgebrachte Weibsbilder marschieren in %s2_city zu einer Tabakplantage. Sie tragen Fackeln und wollen das Anwesen niederbrennen. Ihre Anführerin hält flammende Reden, das Einatmen von Qualm sei satanisch. Wer eine Zigarre paffe, würde dem Teufel ein Brandopfer bringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BUGS</Tag>
-        <English>Boll weevils are troubling farmers.</English>
+        <English>Boll weevils are destroying cotton crops.</English>
         <French>Une invasion de charançons trouble nos récoltes.</French>
         <German>Rüsselkäfer und ihre Larven plagen eine Baumwollplantage.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BUGS_1</Tag>
-        <English>Governor, boll weevils have infested a plantation near %s2_city. The black beetle bores its proboscis into the cotton boll and lays eggs there. Larvae eat the capsules empty before we can harvest the cotton filaments. An Indian medicine man advises us to destroy the fields and burn down the plantation. Otherwise the infestation will spread.</English>
+        <English>Governor, boll weevils have infested a plantation near %s2_city. The black beetle bores into the cotton boll and lays eggs there. Larvae eat everything in the capsules before we can harvest the cotton filaments. An Indian medicine man advises us to destroy the fields and burn down the plantation. Otherwise the infestation will spread.</English>
         <French>Une invasion de charançons trouble nos récoltes dans une plantation près de %s2_city. Gouverneur, que devons-nous faire ?</French>
         <German>Gouverneur, Baumwollkapselkäfer haben eine Plantage bei %s2_city befallen. Das schwarze Getier bohrt seine Rüssel in die Kapselfrüchte und legt dort Eier ab. Larven fresssen die Kapseln leer, bevor wir ihre Samenfäden ernten können. Ein indianischer Medizinmann hat uns geraten, die Felder zu vernichten und sogar das Anwesen niederzubrennen, anderenfalls sei der Plage nicht Herr zu werden.</German>
     </TEXT>
@@ -1019,598 +1019,450 @@
         <English>Congratulations! You are the first governor with five abbeys in the New World. The Lord's blessing will be upon you. As well your King is in a generous mood today.</English>
         <French>Félicitations ! Vous êtes le premier gouverneur à construire cinq abbayes dans le Nouveau Monde. Le Seigneur vous bénit. Votre Roi semble être d'humeur généreuse aujourd'hui.</French>
         <German>Glückwunsch! Ihr habt als erster Gouverneur fünf Abteien in der Neuen Welt errichtet. Gottes Lohn ist Euch gewiss. Aber auch Euer König möchte sich großzügig zeigen.</German>
-        <Italian>Congratulations! You are the first governor with five abbayes in the New World. The Lord's blessing will be upon you. Your king is also in a generous mood.</Italian>
-        <Spanish>Congratulations! You are the first governor with five abbayes in the New World. The Lord's blessing will be upon you. Your king is also in a generous mood.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_1</Tag>
-        <English>You have built your first ironworks. Fine! But is that enough?</English>
+        <English>A delegation from the craftsmen's guilds is here to see you. The masters praise your efforts in setting up a blacksmith's workshop where ironmongery can be mass produced. The demand for nails and rivets, bolts and axes, clamps and screws is growing. Productivity means more progress in the colonies. They suggest building a factory in a central location, larger than any the New World has ever seen.</English>
         <French>Vous avez construit votre premier usine sidérurgique. Très bien ! Mais est-ce suffisant ?</French>
         <German>Eine Abordnung der Handwerkergilden wird bei Euch vorstellig. Die Meister loben Eure Tatkraft, eine Schmiedemanufaktur errichtet zu haben, in der Eisenwaren in großen Mengen hergestellt werden können. Doch wüchse die Nachfrage an Nägeln und Nieten, Bolzen und Beilen, Schellen und Schrauben noch weiter an. Die Entwicklung der Kolonien hinge maßgeblich davon ab, diesen Bedarf zu decken. Demütig unterbreitet man Euch die Idee, an zentraler Stelle eine Fabrik zu errichten, größer als alle anderen, die die Neue Welt bisher gesehen hat.</German>
-        <Italian>You have built your first ironworks. Fine! But is that enough?</Italian>
-        <Spanish>You have built your first ironworks. Fine! But is that enough?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_GREAT_TOOL_FACTORY</Tag>
         <English>Oh no! Another governor has built a great tool factory. Forget your reward!</English>
         <French>Oh non ! Un autre gouverneur a déjà construit des Hauts fourneaux. Oubliez la récompense !</French>
         <German>Ein anderer Gouverneur hat als erster eine Große Eisenwarenfabrik errichtet. Rechnet nicht mehr mit einer Belohnung, wenn Ihr gleichzieht.</German>
-        <Italian>O no! Another governor has built a great tool factory. Forget your gratification!</Italian>
-        <Spanish>O no! Another governor has built a great tool factory. Forget your gratification!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
         <English>Somebody has built a great tool factory.</English>
         <French>Une puissance étrangère a construit des Hauts fourneaux.</French>
         <German>Eine Nation hat eine Große Eisenwarenfabrik errichtet.</German>
-        <Italian>Somebody has built a great tool factory.</Italian>
-        <Spanish>Somebody has built a great tool factory.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
         <English>Congratulations! You are the first governor with a great tool factory. Your citizens are grateful.</English>
         <French>Félicitations ! Vous êtes le premier gouverneur à construire des Hauts fourneaux dans le nouveau monde. Vos citoyens vous sont reconnaissants.</French>
         <German>Welch erstaunliche Leistung! Ihr habt als erster Gouverneur eine Große Eisenwarenfabrik in der Neuen Welt errichtet. Die Handwerkergilden fühlen sich Euch zu Dank verpflichtet.</German>
-        <Italian>Congratulations! You are the first governor with a great tool factory. Your citizens are grateful.</Italian>
-        <Spanish>Congratulations! You are the first governor with a great tool factory. Your citizens are grateful.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_1</Tag>
-        <English>A foreign emissary from the Russian court has arrived at your capitol.</English>
+        <English>Governor, at the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
         <French>Un émissaire étranger de la cour de Russie est arrivée à notre capitale.</French>
         <German>Gouverneur, beim Richtfest Eures Arsenals zieht Euch ein fremdartig gekleideter Ausländer beiseite. Er spricht Eure Muttersprache, doch mit einem fürchterlichen Akzent. Der Mann behauptet, im Auftrag eines russischen Fürsten zu handeln, der gerne mit der stärksten Wirtschaftsmacht der Neuen Welt ins Geschäft kommen möchte.</German>
-        <Italian>A foreign businessman is visiting your colonies. He says that he is a transactor of a Russian sovereign.</Italian>
-        <Spanish>A foreign businessman is visiting your colonies. He says that he is a transactor of a Russian sovereign.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_GREAT_ARSENAL</Tag>
         <English>Another governor has built a great arsenal. The foreign businessman will give the promised rewards to him.</English>
         <French>Un autre gouverneur des Amériques a construit un Grand Arsenal. L'émissaire étranger va lui donner la récompense promise.</French>
         <German>Ein anderer Gouverneur hat als erster ein Großes Zeughaus errichtet und das Geschäft mit dem russischen Fürsten abschließen können. Schade!</German>
-        <Italian>Another American governor has built a great arsenal. The foreign businessmen will give the promised gratification to him.</Italian>
-        <Spanish>Another American governor has built a great arsenal. The foreign businessmen will give the promised gratification to him.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_GREAT_ARSENAL_DONE</Tag>
         <English>Somebody has built a great arsenal.</English>
         <French>Une autre puissance a construit un Grand arsenal.</French>
         <German>Eine Nation hat ein Großes Zeughaus errichtet.</German>
-        <Italian>Somebody has built a great arsenal.</Italian>
-        <Spanish>Somebody has built a great arsenal.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_DONE</Tag>
-        <English>Governor, you are the first to build a great arsenal. A foreign emissary from the court of the great Tsar of All the Russias offers you an interesting deal..</English>
+        <English>Governor, you are the first to build a great arsenal. A foreign emissary from the court of the Tsar of All the Russias offers you an interesting deal.</English>
         <French>Gouverneur, vous êtes le premier à construire un Grand arsenal. L'émissaire étrange de la cour du Grand Tsar de Toutes les Russies vous offrent un contrat intéressant...</French>
         <German>Gouverneur, Ihr habt als erster in der Neuen Welt ein Großes Zeughaus errichten können. Wie versprochen, taucht zum Richtfest der ominöse ausländische Geschäftsmann wieder auf, der vorgibt, im Auftrag eines russischen Fürsten zu handeln. Immer noch spricht der Unterhändler Eure Muttersprache mit furchtbarem Akzent. Ihr nehmt Euch vor, ihm den Hauslehrer Eurer Neffen, Herrn Berlitz, zu empfehlen, der bei der Spracherziehung der Tunichtgute wahre Wunder wirkte. Doch zuvor bittet Ihr den Fremden, die Angebote des Fürsten vorzutragen.</German>
-        <Italian>Governor, you are the first one who manages to build a great arsenal. The foreign businessman, speaking for a Russian sovereign, offers you an interesting deal.</Italian>
-        <Spanish>Governor, you are the first one who manages to build a great arsenal. The foreign businessman, speaking for a Russian sovereign, offers you an interesting deal.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RUM_BLOSSOM</Tag>
         <English>A warehouse in %s2_city has been raided.</English>
         <French>Un entrepôt à %s2_city a subi un raid.</French>
         <German>Ein Lagerhaus in %s2_city wurde überfallen.</German>
-        <Italian>A warehouse in %s2_city has been raided.</Italian>
-        <Spanish>A warehouse in %s2_city has been raided.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUM_BLOSSOM_1</Tag>
         <English>A warehouse in %s2_city has been raided. Our %s1_civ neighbours in %s6_city are suspected of looting a cartload of rum.</English>
         <French>Un entrepôt à %s2_city a subi un raid. Nos voisins %s1_civ de %s6_city sont suspectés d'avoir piller notre cargaison de rhum.</French>
         <German>Ein Lagerhaus in %s2_city wurde überfallen und ausgeraubt. Unsere %s1_civ Nachbarn in %s6_city werden verdächtigt, den Überfall begangen und die Ladung Rum geraubt zu haben.</German>
-        <Italian>A warehouse in %s2_city has been raided. Our %s1_civ neighbours in %s6_city are suspected of the raid and looting a cartload of rum.</Italian>
-        <Spanish>A warehouse in %s2_city has been raided. Our %s1_civ neighbours in %s6_city are suspected of the raid and looting a cartload of rum.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUINS_1</Tag>
         <English>Governor, the ruins near %s2_city were never explored properly. Your councillors recommend sending an expedition.</English>
         <French>Gouverneur, les ruines près de %s2_city n'avait jamais été exploré proprement. Vos conseillers vous recommendent d'envoyer une expédition.</French>
         <German>Gouverneur, die Ruinen nahe %s2_city sind bis heute nicht gründlich untersucht worden. Eure Berater empfehlen eine Expedition zu entsenden.</German>
-        <Italian>Gouvernor, the ruins near %s2_city were never explored properly. Your councillors recommend to send an expedition.</Italian>
-        <Spanish>Gouvernor, the ruins near %s2_city were never explored properly. Your councillors recommend to send an expedition.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RUINS_DONE</Tag>
         <English>A %s1_civ_adjective expedition starts for the ruins near %s2_city.</English>
         <French>Une expédition %s1_civ_adjective prend route vers les ruines situées près de %s2_city.</French>
         <German>Eine %s1:3_civ_adjective Expedition bricht in die Ruinen nahe %s2_city auf.</German>
-        <Italian>A %s1_civ_adjective expedition starts for the ruins near %s2_city.</Italian>
-        <Spanish>A %s1_civ_adjective expedition starts for the ruins near %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_RUINS_HELP</Tag>
         <English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] into the ruins near %s2_city within %d3 rounds.</English>
         <French>Envoyez l'unité [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] dans les ruines près de %s2_city dans les %d3 prochains tours.</French>
         <German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] in die Ruine nahe %s2_city.</German>
-        <Italian>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] into the ruins near %s2_city within %d3 rounds.</Italian>
-        <Spanish>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] into the ruins near %s2_city within %d3 rounds.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_RUINS</Tag>
         <English>Unfortunately, your expedition can no longer explore the ruins.</English>
         <French>Malheureusement, votre expédition ne peut plus explorer les ruines.</French>
         <German>Leider kann die Ruine von Eurer Expedition nicht mehr erkundet werden.</German>
-        <Italian>Unfortunately, your expedition can no longer explore the ruins.</Italian>
-        <Spanish>Unfortunately, your expedition can no longer explore the ruins.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RUINS_DONE</Tag>
-        <English>Governor, our expedition arrived at the ruins. What should our men focus on?</English>
+        <English>Governor, our expedition has arrived at the ruins. What are we looking for?</English>
         <French>Gouverneur, notre expédition est arrivé aux ruines. Sur quoi nos hommes doivent-ils se concentrer ?</French>
         <German>Gouverneur, unsere Expedition hat die Ruinen erreicht. Wonach sollen unsere Männer suchen?</German>
-        <Italian>Gouvernor, our expedition arrived at the ruins. What should our men focus on?</Italian>
-        <Spanish>Gouvernor, our expedition arrived at the ruins. What should our men focus on?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_CARPENTER_FAMILY</Tag>
         <English>A %s1_civ_adjective master carpenter wishes to be visited by his family from Europe.</English>
         <French>Un maître charpentier %s1_civ_adjective souhaite que sa famille en Europe lui rende visite.</French>
         <German>Ein %s1:4_civ_adjective Meisterzimmermann möchte seine Familie in die Neue Welt nachkommen lassen.</German>
-        <Italian>A %s1_civ_adjective master carpenter wishes to be visited by his family from Europe.</Italian>
-        <Spanish>A %s1_civ_adjective master carpenter wishes to be visited by his family from Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CARPENTER_FAMILY_1</Tag>
-        <English>A master carpenter wishes to send a letter to his family in Europe and to tell them how pretty the New World is. Governor, he asks you whether you could give him some money for the passage of one of his brothers.</English>
+        <English>A master carpenter wishes to send a letter to his family in Europe to tell them all about the wonderful New World. Governor, he asks you whether you could give him money to pay for the passage of one of his brothers.</English>
         <French>n maître charpentier souhaite envoyer une lettre à sa famille en Europe et leur dire à quel point le Nouveau Monde est beau. Gouverneur, il vous demande si vous pourriez lui donner un peu d'argent pour le passage de l'un de ses frères.</French>
         <German>Ein Meisterzimmermann will seiner Familie in der Heimat schreiben, wie sehr ihm das Leben in der Neuen Welt gefällt. Er fragt Euch, Herr Gouverneur, ob Ihr ihm etwas Geld geben möchtet. Er würde es seinen Angehörigen schicken, damit einer seiner Brüder in die Neue Welt nachkommen kann.</German>
-        <Italian>A master carpenter wishes to send a letter to his family in Europe and to tell them how pretty the New World is. Governor, he asks you whether you could give him some money for the passage of one of his brothers.</Italian>
-        <Spanish>A master carpenter wishes to send a letter to his family in Europe and to tell them how pretty the New World is. Governor, he asks you whether you could give him some money for the passage of one of his brothers.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BOOK_MORMON</Tag>
         <English>A %s1_civ_adjective citizen near %s2_city has proclaimed that an angel has revealed to him the sacred Book of Mormon.</English>
         <French>U</French>
         <German> Im %s1:2_civ_adjective Reich behauptet ein Mann, ein Engel hätte ihm nahe der Stadt %s2_city das Buch Mormon überreicht.</German>
-        <Italian>A %s1_civ_adjective citizen proclaims, that an angel has given the Book of Mormon to him near %s2_city.</Italian>
-        <Spanish>A %s1_civ_adjective citizen proclaims, that an angel has given the Book of Mormon to him near %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BOOK_MORMON</Tag>
         <English>A man proclaims that in the desert near %s2_city an angel has revealed a Holy Book inscribed on plates of silver. The news is spreading like wildfire in our colony. Nearly all inhabitants of the city believe him and this so-called Book of Mormon. What should we do?</English>
         <French>Un citoyen %s1_civ_adjective près de %s2_city proclame qu'un ange lui a révélé un livre sacré inscrit sur des plaques d'argent. La nouvelle se répand comme une trainée de poudre dans nos colonies. Presque tous les habitants de la ville le croit avec son livre des Mormons. Que devons-nous faire ?</French>
         <German>Gouverneur! Ein Mann behauptet, ein Engel hätte ihm in der Wüste nahe der Stadt %s2_city eine heilige Schrift überreicht.[NEWLINE]Die Nachricht verbreitet sich wie ein Lauffeuer, fast alle Stadtbewohner folgen ihm und diesem Buch Mormon bereits. Was sollen wir tun?</German>
-        <Italian>Governor, a man proclaims, that in the desert near %s2_city an angel has given a holy book to him. The news is spreading like a wildfire in our colony, nearly all inhabitants of the city do believe him and this so called Book of Mormon. What should we do?</Italian>
-        <Spanish>Governor, a man proclaims, that in the desert near %s2_city an angel has given a holy book to him. The news is spreading like a wildfire in our colony, nearly all inhabitants of the city do believe him and this so called Book of Mormon. What should we do?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS</Tag>
         <English>A riot in the %s1_civ_adjective colonies is taking place in %s2_city.</English>
         <French>Une émeute dans les colonies %s1_civ_adjective est survenue à %s2_city.</French>
         <German>Das %s1:3_civ_adjective Kolonialreich wird von Protesten treuer Royalisten erschüttert, sie gehen in %s2_city auf die Straße!</German>
-        <Italian>A riot in the %s1_civ_adjective colonies is taking place in %s2_city.</Italian>
-        <Spanish>A riot in the %s1_civ_adjective colonies is taking place in %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS</Tag>
-        <English>Governor, certain prominent citizens of %s2_city are protesting that you are not truly loyal to the sovereign. You have to react somehow, but mind the consequences!</English>
+        <English>Governor, certain prominent citizens of %s2_city are proclaiming you are not truly loyal to the sovereign. You have to respond, but mind the consequences!</English>
         <French>Gouverneur, certain citoyens éminents de %s2_city manifestent. Ils déclarent que vous n'êtes pas vraiment loyal envers notre Souverain. Vous vous devez de réagir, mais gare aux conséquences !</French>
         <German>Gouverneur! Ein guter Teil der Bürger in %s2_city zieht protestierend in Richtung des örtlichen Regierungspalastes. Sie werfen Euch vor, dass Ihr unserem König nicht mehr loyal seid, einige bezichtigen Euch gar des Separatismus! Ihr müsst etwas tun, doch bedenkt, dass es Folgen haben könnte ... </German>
-        <Italian>Governor, some of the citizens in %s2_city are protesting. They proclaim, that you are not loyal to the king anymore. You have to react somehow, but mind the consequences!</Italian>
-        <Spanish>Governor, some of the citizens in %s2_city are protesting. They proclaim, that you are not loyal to the king anymore. You have to react somehow, but mind the consequences!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_1PYTHON</Tag>
         <English>... maybe the King will hear of your good manners ...</English>
         <French>... peut-être que même le Roi va entendre parler de nos bonnes manières ...</French>
         <German>... von solch wohlfeilem Gebaren könnte sogar der König erfahren ...</German>
-        <Italian>... maybe even the king will hear of your good manners ...</Italian>
-        <Spanish>... maybe even the king will hear of your good manners ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2PYTHON</Tag>
         <English>... this kind of talk may cause some trouble ...</English>
         <French>... ce type de conversation peut causer des problèmes ...</French>
         <German>... dieses royalistische Palaver könnte uns noch zu schaffen machen ...</German>
-        <Italian>... this kind of talk may cause some trouble ...</Italian>
-        <Spanish>... this kind of talk may cause some trouble ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_3PYTHON</Tag>
-        <English>... this could make them even more angry ...</English>
+        <English>... this could make the loyalists even more angry ...</English>
         <French>... ce type d'action peut les rendre très énervés ...</French>
         <German>... das wird für Groll und Wut sorgen, die Königstreuen könnten uns noch einen Denkzettel verpassen ...</German>
-        <Italian>... this acting could make them even more angry ...</Italian>
-        <Spanish>... this acting could make them even more angry ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_4PYTHON</Tag>
-        <English>... this is tough stuff. They will seek revenge for sure ...</English>
+        <English>... this is tough stuff. They'll want revenge for sure ...</English>
         <French>... c'est violent, ils chercheront certainement à se venger ...</French>
         <German>... ein heikler Schritt, die Lumpen werden sicher Rache üben ...</German>
-        <Italian>... this is tough stuff, they will seek revenge for sure ...</Italian>
-        <Spanish>... this is tough stuff, they will seek revenge for sure ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_1</Tag>
         <English>The %s1_civ_adjective King sends a gift to his loyal governor.</English>
         <French>Le roi %s1_civ_adjective a envoyé un cadeau à son gouverneur loyal.</French>
         <German>Der %s1:3_civ_adjective König zeigt sich gegenüber seinem treuen Gouverneur erkenntlich.</German>
-        <Italian>The %s1_civ_adjective king sends a gift to his loyal governor.</Italian>
-        <Spanish>The %s1_civ_adjective king sends a gift to his loyal governor.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_1</Tag>
-        <English>It seems, Governor, that your unrefusable offer made its point at the royal court. His Highness is sending you two of his best men to protect your life along with his best regards.</English>
+        <English>It seems, Governor, that your hard work is recognized at the Royal Court. His Highness is sending two of his most distinguished soldiers to protect your life.</English>
         <French>Il semble, Gouverneur, que votre offre ne pouvait effectivement pas être refusée et qu'elle a marqué les esprit à la cour du Roi. Son Altesse vous envoie deux de ses meilleurs hommes pour vous protéger.</French>
         <German>Es scheint, Gouverneur, dass Eure aufrichtigen Bemühungen um die königstreuen Bürger von %s2_city sogar am entfernten Hofe Eindruck schinden. Mit den besten Grüßen schickt Euch ihre königliche Hoheit zwei erlesene Soldaten als Leibwache.</German>
-        <Italian>It seems, governor, that your unrefusable offer made its point at the royal court. His higness is sending you two of his best men to protect your life alog with best regards.</Italian>
-        <Spanish>It seems, governor, that your unrefusable offer made its point at the royal court. His higness is sending you two of his best men to protect your life alog with best regards.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_2</Tag>
         <English>In the %s1_civ_adjective colonies royalists are causing trouble.</English>
         <French>Les royalistes sèment le trouble dans les colonies %s1_civ_adjective.</French>
         <German>Überall im %s1:2_civ_adjective Kolonialreich begehren die Royalisten auf.</German>
-        <Italian>In the %s1_civ_adjective colonies the royalists are causing trouble.</Italian>
-        <Spanish>In the %s1_civ_adjective colonies the royalists are causing trouble.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_2</Tag>
-        <English>Governor, royalists are speaking everywhere. They are founding clubs and lodges. At the moment this is only a problem in the bigger cities. The countryside is not yet so involved.</English>
+        <English>Governor, royalists take full advantage of their right to free speech. Their clubs and lodges are everywhere. It's mainly in the bigger cities. So far the country folk aren't involved.</English>
         <French>Gouverneur, les royalistes semblent faire usage de leur droit d'expression. Ils sont en train de fonder des clubs et des loges partout. Pour le moment ce n'est un problème que dans les plus grandes villes, le reste du pays reste encore à l'écart.</French>
         <German>Gouverneur! Die Königstreuen scheinen von ihrem Recht auf freie Rede regen Gebrauch zu machen. Es bilden sich überall Logen und Clubs. Gerade die großen kulturellen Zentren des Landes scheinen diesen patriotischen Tendenzen anheim zu fallen. Unter der einfachen Bevölkerung auf dem Lande finden dererlei Grillen noch keinen Anklang.</German>
-        <Italian>Governor, the royalists seem to make use of the freedom of speech. They are founding clubs and lodges everywhere. At the moment this is only a problem in the bigger cities, the countryside does not participate so far.</Italian>
-        <Spanish>Governor, the royalists seem to make use of the freedom of speech. They are founding clubs and lodges everywhere. At the moment this is only a problem in the bigger cities, the countryside does not participate so far.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
         <English>Royalists have destroyed food in the %s1_civ_adjective colonies.</English>
         <French>Les royalistes ont détruit les réserves de nourriture dans les %s1_civ_adjective.</French>
         <German>Royalisten haben in den %s1:2_civ_adjective Städten Nahrung vernichtet.</German>
-        <Italian>Royalists have destroyed food in the %s1_civ_adjective colonies.</Italian>
-        <Spanish>Royalists have destroyed food in the %s1_civ_adjective colonies.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
-        <English>Governor! The royalists hit us hard. They destroyed a lot of food in our granaries. By proclaiming that it was your order they tricked the local people and troops.</English>
+        <English>Governor. The King's loyalists have tricked us. They've gotten into all the granaries in all the cities and destroyed everything edible. In many places good people helped because they were told it was your order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
         <French>Gouverneur ! Les royalistes nous ont durement touchés. Ils ont détruit de grandes réserves de nourritures dans tous nos greniers. Apparemment, ils ont dupé les populations locales et les troupes en proclamant qu'il s'agissait de votre ordre : la « fête de la nourriture » contre le Roi.</French>
         <German>Gouverneur! Die Königstreuen haben uns übel mitgespielt. Sie haben in allen Städten die Kornspeicher besetzt und begonnen, das Getreide und alles andere Essbare zu vernichten. Vielerorts beteiligten sich brave Leute an diesem Frevel, weil es hieß, es wäre Eure Order! Auf getürkten Anschlägen stand zu lesen: "Aufgrund der unverschämt hohen Steuern ist es erste Bürgerpflicht, sich dem König zu widersetzen! Vernichtet aus Protest alle Nahrungsmittel in allen Städten!"</German>
-        <Italian>Governor! The royalists hit us hard. They destroyed a lot of food in all the granaries of ours. Obviously, they tricked the local people and troops by proclaiming, that it was your order. The "food party" to protest against the king.</Italian>
-        <Spanish>Governor! The royalists hit us hard. They destroyed a lot of food in all the granaries of ours. Obviously, they tricked the local people and troops by proclaiming, that it was your order. The "food party" to protest against the king.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
-        <English>Royalists blew up the newspaper in the %s1_civ_adjective city of %s2_city.</English>
+        <English>The newspaper in the %s1_civ_adjective city of %s2_city was blown up.</English>
         <French>Les royalistes ont fait sauter le journal dans la ville %s1_civ_adjective de %s2_city.</French>
         <German>Royalisten haben in der %s3_civ_adjective Stadt %s2_city die Zeitung gesprengt!</German>
-        <Italian>Royalists blew up the newspaper in the %s1_civ_adjective city of %s2_city.</Italian>
-        <Spanish>Royalists blew up the newspaper in the %s1_civ_adjective city of %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
-        <English>Governor, GOVERNOR! The Newspaper in %s2_city has been blown up! A royalist underground movement will destroy free speech for revenge. They painted "Long live the king" on a nearby wall, signed by the name Sir Sekwaf Yug, quite a strange name ...</English>
+        <English>Governor, GOVERNOR! The newspaper in %s2_city has been blown up! It looks like revenge by a royalist underground movement. They painted "Long live the King" on a nearby wall, signed Sir Sekwaf Yug, a clumsy alias.</English>
         <French>Gouverneur, GOUVERNEUR ! Le journal de %s2_city a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Sekwaf Yug, un drôle de nom... </French>
         <German>Gouverneur! GOUVERNEUR ! In %s2_city wurde die Zeitung in die Luft gejagt. Eine versprengte Gruppe Royalisten hat wohl Rache genommen. An einer Wirtshauswand in der Nähe stand in großen Lettern: "Es lebe der König!", unterzeichnet von einem gewissen Sir Sekwaf Yug. Es scheint ein Tarnname zu sein, so heißt doch kein ...</German>
-        <Italian>Governor, GOVERNOR! The Newspaper in %s2_city has been blown up! Some royalistic underground movement is out for revenge. They painted "Long live the king" on a nearby wall, signed by the name Sir Sekwaf Yug, quite a strange name, that not seems to be an ordinary name ...</Italian>
-        <Spanish>Governor, GOVERNOR! The Newspaper in %s2_city has been blown up! Some royalistic underground movement is out for revenge. They painted "Long live the king" on a nearby wall, signed by the name Sir Sekwaf Yug, quite a strange name, that not seems to be an ordinary name ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_THE_ROYALS_2aPYTHON</Tag>
         <English>The will for revolution is falling, at least just in the bigger cities ...</English>
         <French>... Le soutien pour une révolution chute, en tout cas dans les grandes villes ...</French>
         <German>... die revolutionäre Begeisterung lässt nach, aber wenigstens nur in den großen Städten ...</German>
-        <Italian>... the will for revolution is falling, at least just in the bigger cities ...</Italian>
-        <Spanish>... the will for revolution is falling, at least just in the bigger cities ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATES</Tag>
-        <English>The amount of gold and other treasure passing through our cities is getting attention, perhaps too much attention! Your citizens may succomb to such a temptation.</English>
+        <English>The amount of gold and other treasure passing through our cities is getting attention, perhaps too much attention! Your citizens may succumb to such temptation.</English>
         <French>Le montant d'or et d'autres trésors qui est transporté au travers de nos villes commencent à attirer l'attention.. Vos citoyens risque de succomber à la tentation.</French>
         <German>Der Reichtum dieses Landes ist erstaunlich! Kisten voll Gold, Geschmeide und mannigfaltigen Gemmen strömen in die Hafenstädte. Nun, derartiges zu sehen befördert nicht immer das Beste in den Menschen. Um ehrlich zu sein, Gouverneur, man munkelt in den Spelunken und Hafenvierteln bereits, welches Lagerhaus einen Besuch gar lohnen würde. Wenn Ihr nicht bald etwas unternehmt, dann wird die Gier Eure braven Kolonisten vergiften.</German>
-        <Italian>The amount of gold and other treasure, that is carried through our cities, is getting attention, a lot of attention! Your citizens may take adavantage of such a temptation.</Italian>
-        <Spanish>The amount of gold and other treasure, that is carried through our cities, is getting attention, a lot of attention! Your citizens may take adavantage of such a temptation.</Spanish>
     </TEXT>
     <!--RaR Events -->
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_OVERFISHING</Tag>
-        <English>Changing currents have disrupted usual spawning patterns. Fishermen trawling from the ports of %s2_city are hauling in an unusually rich catch. Although seasonal yields are booming, local elders grumble that such intense harvesting may jeopardize the catch in years to come.</English>
+        <English>Changing currents have disrupted the usual spawning patterns. Fishermen trawling from the ports of %s2_city are hauling in an unusually rich catch. Although seasonal yields are booming, local elders grumble that such intense harvesting may jeopardize the catch in years to come.</English>
         <French>Un changement dans les courants a perturbé les habitudes de reproduction des poissons. Les pêcheurs de %s2_city transportent une prise exceptionnellement abondante. Bien que les rendements saisonniers sont en plein essor, les anciens se plaignent de cette récolte intense qui peut compromettre la pêche dans les années à venir.</French>
         <German>Eine Strömungsänderung hat das übliche Laichverhalten gestört und die Fischerleute aus %s2_city ziehen ungewöhnlich reiche Fänge auf ihre Boote. Obwohl die saisonalen Erträge in die Höhe schiessen, raten örtliche erfahrene Fischer zur Zruückhaltung, um durch die das intensive Fischen nicht die Erträge der kommenden Jahre zu gefährden.</German>
-        <Italian>A change in the currents has disrupted usual spawning patterns, and fishermen trawling from the ports of %s2_city are hauling in an unusually rich catch. Although seasonal yields are booming, local elders grumble that such intense harvesting may jeopardize the catch in years to come.</Italian>
-        <Spanish>A change in the currents has disrupted usual spawning patterns, and fishermen trawling from the ports of %s2_city are hauling in an unusually rich catch. Although seasonal yields are booming, local elders grumble that such intense harvesting may jeopardize the catch in years to come.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PROSPECTORS</Tag>
-        <English>Attracted by wild rumours of rich local silver deposits, foreign prospectors have been pouring into the mountains near %s2_city. Before long, these itinerant claim jumpers will have the best pickings for themselves!</English>
+        <English>Attracted by wild rumours of local silver deposits, foreign prospectors are pouring into the mountains near %s2_city. These claim jumpers aim to have the best pickings for themselves!</English>
         <French>Attiré par des rumeurs étranges à propos de gisements d'argent abondants, les prospecteurs étrangers indépendants se ruent dans les montagnes près de %s2_city. Ces itinérants souhaitent certainement garder les meilleurs prises pour eux-mêmes !</French>
         <German>Durch wilde Gerüchte bezüglich reicher Silbervorkommen angelockt, strömen fremde Glücksuchende in die Berge nahe %s2_city. Bald werden diese die besten Claims für sich beansprucht haben!</German>
-        <Italian>Attracted by wild rumors of rich local silver deposits, independent foreign prospectors have been pouring into the mountains near %s2_city. Before long, these itinerant claimjumpers may have taken the best pickings for themselves!</Italian>
-        <Spanish>Attracted by wild rumors of rich local silver deposits, independent foreign prospectors have been pouring into the mountains near %s2_city. Before long, these itinerant claimjumpers may have taken the best pickings for themselves!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WITCHTRIAL</Tag>
         <English>The townsfolk are whispering that a large family of recent immigrants to %s2_city are witches! They keep to themselves, grow strange roots in cottage gardens, and don't attend church on Sundays. One of them even has a birthmark!</English>
         <French>Le bruit cour qu'une famille de récents immigrants à %s2_city est en fait composée de sorcières ! Elles restent entre elles, font pousser d'étranges racines dans leur jardin, et ne vont pas à l'église le dimanche. L'une d'elles a même une tache de naissance !</French>
         <German>Die Bevölkerung flüstert, dass eine grosse Familie, die kürzlich in %s2_city eingewandert ist, unter dem Verdacht der Hexerei steht. Sie bleiben unter sich, bauen seltsame Wurzeln und Kräuter an und nehmen nicht an Gottesdiensten teil. Einer von Ihnen hat sogar ein auffallendes Geburtsmal.</German>
-        <Italian>The townsfolk are whispering that a large family of recent immigrants to %s2_city are suspected to be witches! They keep to themselves, grow strange roots in cottage gardens, and don't attend church on Sundays. One of them even has a birthmark!</Italian>
-        <Spanish>The townsfolk are whispering that a large family of recent immigrants to %s2_city are suspected to be witches! They keep to themselves, grow strange roots in cottage gardens, and don't attend church on Sundays. One of them even has a birthmark!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COUNTERBLASTE</Tag>
         <English>Our beloved monarch has suddenly developed an eccentric opinion that tobacco smoking is injurious to the lungs, even going so far as to publish a pamphlet denouncing the habit. This bizarre idea could ruin our export market!</English>
         <French>Notre Monarque bien-aimé a soudainement développé l'idée farfelue que fumer du tabac serait mauvais pour les poumons, allant jusqu'à autoriser la publication d'un pamphlet dénonçant cette habitude. Cette idée saugrenue pourrait ruiner nos exportations !</French>
         <German>Unser geliebter Herrscher hat kürzlich eine exzentrische Meinung zum Tabakgenuss entwickelt. Er glaubt, dies sei schadhaft für die Lungen. Er will sogar so weit gehen ein Pamphlet zu veröffentlichen, dass davor warnt. Dies bizarre Idee kann unsere Exporteinnahmen schwer schädigen.</German>
-        <Italian>Our beloved monarch has suddenly developed an eccentric opinion that tobacco smoking is injurious to the lungs, even going so far as to publish a pamphlet denouncing the habit. This bizarre idea could ruin our export market!</Italian>
-        <Spanish>Our beloved monarch has suddenly developed an eccentric opinion that tobacco smoking is injurious to the lungs, even going so far as to publish a pamphlet denouncing the habit. This bizarre idea could ruin our export market!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COUNTERBLASTE_1_HELP</Tag>
         <English>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is declining.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is declining.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Eure Antwort wurde dem König zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren sinkt.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is declining.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Nobles and citizens are following the example of their king. Demand for our colonial goods is declining.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COUNTERBLASTE_2_HELP</Tag>
         <English>[COLOR_FONT_GOLD]The king receives word that his citizens in the colonies are questioning his judgment in this matter.[COLOR_REVERT]</English>
         <French>[COLOR_FONT_GOLD]The king receives word that his citizens in the colonies are questioning his judgment.[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Der König ist höchst unerfreut dass man sein Urteil zu dieser Angelegenheit in Frage stellt.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]The king receives word that his citizens in the colonies are questioning his judgment.[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]The king receives word that his citizens in the colonies are questioning his judgment.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_WHALING_1_HELP</Tag>
-        <English>[COLOR_FONT_GOLD]The price increases since, due to the new offer, citizens are now aware that train oil burns better than tallow[COLOR_REVERT]</English>
+        <English>[COLOR_FONT_GOLD]The price increases since, due to the new offer, citizens now know that train oil burns better than tallow[COLOR_REVERT].</English>
         <French>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</French>
         <German>[COLOR_FONT_GOLD]Die Nachfrage nach edlem Tranöl in Europa steigt, da die braven Bürger sich aufgrund des neuen Angebots darüber bewusst werden, dass öl besser brennt als Talg.[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]The price increases since - due to the new offer - the citizens become aware that train oil burns better than tallow[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_COMMANDEERED</Tag>
-        <English>Your Lordship, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary Pirates. How shall we respond?</English>
+        <English>Your Lordship, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary pirates. How shall we respond?</English>
         <French>Votre Honneur, la marine Royale a réquisitionné l'un de nos meilleurs navires pour aider dans une campagne contre des pirates barbares. Comment devons-nous répondre ?</French>
         <German>Exzellenz, die Royal Navy hat eines unserer besten Schiffe requiriert um in einer Kampagne gegen Piraten zu unterstützen. Wie sollen wir darauf reagieren?</German>
-        <Italian>Your Lordship, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary Pirates. How shall we respond?</Italian>
-        <Spanish>Your Lordship, the Royal Navy has requisitioned one of our finest ships to aid in a campaign against the Barbary Pirates. How shall we respond?</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SENDCONVERTS</Tag>
-        <English>The Royal Court has been taken with the picturesque garb and customs of certain of our converted native subjects, and has sent for them to be transported to Europe.</English>
+        <English>The Royal Court has been taken with the picturesque garb and customs of certain of our converted Native subjects, and has sent for them to be transported to Europe.</English>
         <French>La Cour Royale a été saisie de joie en voyant les tenues pittoresques des sauvages. Le Roi souhaite que vous rapportiez un converti à la Cour.</French>
         <German>Der königliche Hof ist fasziniert von der Kunst und Geschichten der Ureinwohner. Man wünscht, dass wir einen Konvertierten Ureinwohner nach Europa schicken.</German>
-        <Italian>The Royal Court has been taken with the picturesque garb and customs of certain of our native converts, and has sent for them to be transported to Europe.</Italian>
-        <Spanish>The Royal Court has been taken with the picturesque garb and customs of certain of our native converts, and has sent for them to be transported to Europe.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_LUMBER</Tag>
-        <English>The Royal Navy has requisitioned 200 tons of Lumber for the construction of new ships. The goods are to be collected as soon as possible at the docks of %s2_city.</English>
+        <English>The Royal Navy has requisitioned 200 tons of lumber for the construction of new ships, ready as soon as possible at the %s2_city docks.</English>
         <French>La Marine Royale a réquisitionné 200 tonnes de bois pour la construction de ses nouveaux navires. Les biens sont à collecter le plus tôt possible aux docks de %s2_city.</French>
         <German>Die Royal Navy hat 200 Tonnen Holz für den Bau neuer Schiffe angefordert. Das Holz soll so bald wie möglich ine einer Siedlung mit Dock oder Zollhaus bereitgestellt werden. </German>
-        <Italian>The Royal Navy has requisitioned 200 tons of lumber for the construction of new ships. The goods are to be collected as soon as possible at any settlement with a Dock or Customs House.</Italian>
-        <Spanish>The Royal Navy has requisitioned 200 tons of lumber for the construction of new ships. The goods are to be collected as soon as possible at any settlement with a Dock or Customs House.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_REQUISITION_HELP</Tag>
         <English>Fulfill these requirements for the following results:</English>
         <French>Répondez à la demande pour les résultats suivants :</French>
         <German>Leider ist es unserer bescheidenen Wirtschaft nicht möglich dieser Anfrage gerecht zu werden.</German>
-        <Italian>Alas, I regret to inform you that our humble industries have not the capacity to meet this demand.</Italian>
-        <Spanish>Alas, I regret to inform you that our humble industries have not the capacity to meet this demand.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_LUMBER</Tag>
-        <English>Representatives of the Royal Navy have arrived at %s2_city to take delivery of 200 tons of lumber, as promised per our previous arrangement.</English>
+        <English>Representatives of the Royal Navy have arrived at %s2_city to take delivery of 200 tons of lumber, per our previous arrangement.</English>
         <French>Les représentants de la Marine Royale sont arrivés à %s2_city pour prendre livraison des 200 tonnes de bois, comme convenu lors de notre dernier arrangement.</French>
         <German>Representanten der Royal Navy sind in %s2_city angekommen um die versprochene Lieferung der 200 Tonnen Holz entgegen zu nehmen.</German>
-        <Italian>Representatives of the Royal Navy have arrived at %s2_city to take delivery of 200 tons of lumber, as promised per our previous arrangement.</Italian>
-        <Spanish>Representatives of the Royal Navy have arrived at %s2_city to take delivery of 200 tons of lumber, as promised per our previous arrangement.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_COATS</Tag>
         <English>His Royal Highness has decided to finance a polar expedition in search of the fabled Terra Australis. 200 crates of fine winter coats have been commissioned from the furriers of %s2_city.</English>
         <French>Son Altesse Royale a décidé de financer une expédition polaire à la recherche de la légendaire Terra Australis. 200 caisses de manteaux d'hiver fines ont été commandées aux fourreurs de %s2_city.</French>
         <German>Seine königliche Hoheit hat beschlossen eine Polar-Expedition auszustatten um das sagenhafte Terra Australis zu finden. 200 Ladungen der besten Mäntel werden von den Pelzhändlern von %s2_city verlangt.</German>
-        <Italian>His Royal Highness has decided to finance a polar expedition in search of the fabled Terra Australis. 200 crates of fine winter Coats have been commissioned from the furriers of %s2_city.</Italian>
-        <Spanish>His Royal Highness has decided to finance a polar expedition in search of the fabled Terra Australis. 200 crates of fine winter Coats have been commissioned from the furriers of %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_COATS</Tag>
         <English>His Majesty's explorers have arrived to collect the shipment of coats for their polar expedition.</English>
         <French>Les explorateurs de Sa Majesté sont arrivés pour prendre livraion des manteaux à l'usage de l'expédition polaire.</French>
         <German>Die Entdecker seiner Majestät sind angekommen um die Ladung Mäntel für die Polar-Expedition abzuholen.</German>
-        <Italian>His Majesty's explorers have arrived to collect the shipment of Coats for their polar expedition.</Italian>
-        <Spanish>His Majesty's explorers have arrived to collect the shipment of Coats for their polar expedition.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_IMPATIENT</Tag>
         <English>It has been quite some time, and the agreed-upon goods have yet to be delivered to %s2_city. His Majesty is not accustomed to being kept waiting!</English>
         <French>Cela fait déjà un certain temps, et les biens convenus n'ont toujours pas été livrés à %s2_city. Sa Majesté n'est pas habituée à devoir attendre !</French>
         <German>Die Verzögerung der versprochenen Warenlieferung in %s2_city ist sehr bedenklich. Ihre Majestät ist nicht erfreut!</German>
-        <Italian>It has been quite some time, and the agreed-upon goods have yet to be delivered to %s2_city. His Majesty is not accustomed to being kept waiting!</Italian>
-        <Spanish>It has been quite some time, and the agreed-upon goods have yet to be delivered to %s2_city. His Majesty is not accustomed to being kept waiting!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HUDSON</Tag>
-        <English>By royal decree, all further trading in coats shall be done through duly authorized agents of the Hudson Bay Company.</English>
+        <English>By Royal decree, all further trading in coats shall be done through duly authorized agents of the Hudson Bay Company.</English>
         <French>Par décrêt royal, tout prochain commerce de manteau devra être réalisé par des agents dûment autorisés de la compagnie de la Baie d'Hudson.</French>
         <German>Laut königlichen Beschluss dürfen alle weiteren Handelsgeschäfte mit Pelzen ab sofort nur noch durch Vertreter der Hudson Bay Company erfolgen.</German>
-        <Italian>By royal decree, all further trading in Coats shall be done through the agents of the Hudson Bay Company.</Italian>
-        <Spanish>By royal decree, all further trading in Coats shall be done through the agents of the Hudson Bay Company.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HORSETHIEF</Tag>
-        <English>A band of dastardly horse rustlers has seized the finest animals in our herd, and threatens to torch the barns if they are pursued.</English>
+        <English>A gang of scruffy horse rustlers has seized the finest animals in our herd, and will burn the barns if they're pursued.</English>
         <French>Une ignoble bande de voleurs de chevaux a saisi les plus beaux animaux de notre troupeau, et menace de mettre le feu aux granges si ils sont poursuivis.</French>
         <German>Eine Bande von niederträchtigen Pferdedieben hat die besten Tiere unserer Herde geraubt und droht sogar damit die Stallungen und Scheunen zu verbrennen, wenn Sie verfolgt werden.</German>
-        <Italian>A band of dastardly horse rustlers has seized the finest animals in our herd, and threatens to torch the barns if they are pursued.</Italian>
-        <Spanish>A band of dastardly horse rustlers has seized the finest animals in our herd, and threatens to torch the barns if they are pursued.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_CATTLETHIEF</Tag>
-        <English>The winter has been hard, and the guards of %s2_city have caught a band of natives from a nearby %s1_player settlement attempting to steal cattle from our herds for sustenance.</English>
+        <English>The winter has been hard. Guards of %s2_city caught Natives from a nearby %s1_player village trying to steal some of our cattle for food.</English>
         <French>L'hiver a été difficile, et les gardes de %s2_city ont attrapé une bande indigène du village voisin de %s1_player qui tentait de voler du bétail de nos troupeaux pour assurer leur subsistance.</French>
         <German>Der harte letzte Winter hat die Ureinwohner einer nahen %s1_player Siedlung dazu verleitet Vieh der Herden von %s2_city zu stehlen, doch unsere wachsame Stadtwache hat sie dabei gefangen.</German>
-        <Italian>The winter has been hard, and the guards of %s2_city have caught a band of natives from a nearby %s1_player settlement attempting to steal cattle from our herds for sustenance.</Italian>
-        <Spanish>The winter has been hard, and the guards of %s2_city have caught a band of natives from a nearby %s1_player settlement attempting to steal cattle from our herds for sustenance.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KING_PLEASED_HELP</Tag>
         <English>Relations with your King have improved.</English>
         <French>Votre Roi est satisfait de votre réponse!</French>
         <German>Ihre Majestät ist über diese Antwort sehr erfreut.</German>
-        <Italian>Your King is delighted by this reponse.</Italian>
-        <Spanish>Your King is delighted by this reponse.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_KING_ANGRY_HELP</Tag>
         <English>Your King has been angered!</English>
         <French>Votre Roi est en colère!</French>
         <German>Ihre Majestät ist über diese Reaktion sehr verärgert.</German>
-        <Italian>Your King has been angered!</Italian>
-        <Spanish>Your King has been angered!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_KINGFURIOUS</Tag>
-        <English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your overwhelming misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents are authorized to sack the countryside of %s2_city and confiscate their undeserved wealth!</English>
+        <English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your overwhelming misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be  authorized to sack  %s2_city and confiscate that undeserved wealth!</English>
         <French>Par décret Royal, votre perfidie touche à sa fin. En récompense de vos mauvaises actions, le Roi vient d'autoriser la mise à sac des de la colonie suivante: %s2_city ... A moins bien sûr que vous ne dédomagiez la Couronne!</French>
         <German>Durch unumstösslichen Beschluss Ihrer Majestät, wird euer verräterisches Handeln bestraft. Als teilweise Wiedergutmachung eurer vielen Vergehen, werdet ihr sofort eine Strafe zahlen oder königliche Abgesandte sind dazu authorisiert im Umland von %s2_city alles zu konfiszieren, was rechtmässig Ihrer Majestät gehört!</German>
-        <Italian>By solemn decree of His Royal Majesty's Privy Council, your treasonous and obstreporous perfidy has gone on long enough! In partial recompense of your numerous misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents are authorized to sack the countryside of %s2_city and confiscate their rightful wealth!</Italian>
-        <Spanish>By solemn decree of His Royal Majesty's Privy Council, your treasonous and obstreporous perfidy has gone on long enough! In partial recompense of your numerous misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents are authorized to sack the countryside of %s2_city and confiscate their rightful wealth!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_ARCHBISHOPRIC</Tag>
-        <English>Through the worship and toil of your people, the Cathedral of %s2_city has been proclaimed the seat of a new Archbishopric, attracting pilgrims from surrounding churches.</English>
+        <English>Due to the devotion and contributions of your people, the cathedral of %s2_city has been proclaimed the seat of a new Archbishopric, attracting pilgrims from surrounding churches.</English>
         <French>Par la piété et le labeur de votre peuple, la cathédrale de %s2_city a été proclamé comme le nouveau siège de l'Archevêché, attirant les pélerins de toutes les églises environnantes.</French>
         <German>Aufgrund der Verehrung durch die Bevölkerung und ihrer geschichtlichen Bedeutung, wurde die Kathedrale von %s2_city zum Sitze des Erzbischofs ernannt und zieht nun noch mehr Pilger aus der Gegend an.</German>
-        <Italian>Through the worship and toil of your people, the Cathedral of %s2_city has been proclaimed the seat of a new Archbishopric, attracting pilgrims from the surrounding churches.</Italian>
-        <Spanish>Through the worship and toil of your people, the Cathedral of %s2_city has been proclaimed the seat of a new Archbishopric, attracting pilgrims from the surrounding churches.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVETRADE</Tag>
-        <English>Since your colonies have now made contact with multiple native peoples, a local merchant in %s2city proposes a modest investment in a network of trading posts that can gather rare and valuable spices from distant tribes.</English>
+        <English>Since your colonies have now made contact with various Native nations, a local merchant in %s2city proposes to invest in a network of trading posts to gather rare and valuable spices from distant tribes.</English>
         <French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de %s2city vous propose d'investir dans un réseau de poste de douane pour ainsi reccueillir des épices de valeur provenant de tribus lointaines.</French>
         <German>Da unsere Kolonien nun Kontakt zu mehreren Ureinwohnerstämmen haben, hat ein örtlicher Händler vorgeschlagen von %s2city ein Netzwerka aus Handelsposten aufzubauen, dass seltene Güter von diesen Stämmen erwirbt.</German>
-        <Italian>As your colonies have now made contact with multiple native peoples, a local merchant in %s2city proposes a modest investment in a network of trading posts that can gather rare and valuable spices from distant tribes.</Italian>
-        <Spanish>As your colonies have now made contact with multiple native peoples, a local merchant in %s2city proposes a modest investment in a network of trading posts that can gather rare and valuable spices from distant tribes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK1</Tag>
-        <English>Spying the growing wealth of our sea traders, a scurvy band of pirates has gathered near our shores, demanding a thousand gold doubloons in ransom lest they put our shipping to the torch!</English>
+        <English>Spying the growing wealth of our sea traders, a scurvy collection of pirates is massing off our shores, demanding ransom of a thousand gold doubloons lest they put our shipping to fire and the sword!</English>
         <French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant un millier de doublons d'or en rançon pour ne pas passer nos navires par le feux.</French>
         <German>Durch den wachsenden Reichtum unserer Seehändler angelockt, hat sich eine dreckige Bande Piraten vor unseren Küsten versammelt. Sie verlangen Tausend Golddublonen als Lösegeld damit sie unsere Schiffe nicht in Flammen aufgehen lassen.</German>
-        <Italian>Spying the growing wealth of our sea traders, a scurvy band of pirates has gathered near our shores, demanding a thousand gold doubloons in ransom lest they put our shipping to the torch!</Italian>
-        <Spanish>Spying the growing wealth of our sea traders, a scurvy band of pirates has gathered near our shores, demanding a thousand gold doubloons in ransom lest they put our shipping to the torch!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK2</Tag>
-        <English>The infamous pirate Lord Roc Brasiliano has sent an emissary demanding a princely fortune in gold and silver. Otherwise he threatens to send our vulnerable merchantmen to Davy Jones' locker. How shall we respond?</English>
+        <English>The infamous pirate Lord Roc Brasiliano has sent an emissary demanding a fortune in gold and silver. Otherwise he threatens to send our vulnerable merchantmen to Davy Jones' locker. How shall we respond?</English>
         <French>L'infâme chef pirate Roc Brasiliano a envoyé un émissaire pour nous demander une fortune princière en or et en argent, nous menaçant d'envoyer notre vulnérable flotte marchande par le fond. Comment devons nous répondre?</French>
         <German>Der berüchtigte Piratenführer Roc Brasiliano sendet uns einen Abgesandten, der eine königliche Summe Gold und Silber fordert. Andernfalls droht er damit unsere verletzlichen Handelsschiffe auf den Grund von Davy Jones Reich zu schicken.</German>
-        <Italian>The infamous pirate lord Roc Brasiliano sends an emissary demanding a princely fortune in gold and silver, threatening otherwise to send our vulnerable merchantmen to the bottom of Davy Jones' locker. How shall we respond?</Italian>
-        <Spanish>The infamous pirate lord Roc Brasiliano sends an emissary demanding a princely fortune in gold and silver, threatening otherwise to send our vulnerable merchantmen to the bottom of Davy Jones' locker. How shall we respond?</Spanish>
     </TEXT>
     <!--New Event RaR 2.1 -->
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_WINE_PLANTS</Tag>
-        <English>A European vintager has brought his finest wine plants to the colonies.</English>
+        <English>A European vintager has brought his finest grapevines to the colonies.</English>
         <French>Un vigneron européen a vendu l'une de ses meilleurs cépages à nos colonies.</French>
         <German>Ein Winzer aus Europa hat seine besten Weinpflanzen in die neue Welt verkauft.</German>
-        <Italian>A European vintager has sold his finest wine plants to the colonies.</Italian>
-        <Spanish>A European vintager has sold his finest wine plants to the colonies.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_WINE_PLANTS</Tag>
-        <English>A European vintager offers to sell us his best wine plants. He demands 400[ICON_GOLD].</English>
+        <English>A European vintager offers to sell us his best grapevines. His price is 400[ICON_GOLD].</English>
         <French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande 400[ICON_GOLD].</French>
         <German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt 400[ICON_GOLD].</German>
-        <Italian>A European vintager offers to sell us his best wine plants. He demands 400[ICON_GOLD].</Italian>
-        <Spanish>A European vintager offers to sell us his best wine plants. He demands 400[ICON_GOLD].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_RED_PEPPER_PLANTS</Tag>
-        <English>Local Natives have sold some of their Red Pepper plants to European colonists.</English>
+        <English>Local Natives have sold some of their red pepper plants to European colonists.</English>
         <French>Des indigènes ont vendu leur meilleurs plants de piment aux colons européens.</French>
         <German>Ureinwohner haben europäischen Kolonisten Setzlingen ihres Roten Pfeffers verkauft.</German>
-        <Italian>Local Natives have sold some of their Red Pepper plants to European colonists.</Italian>
-        <Spanish>Local Natives have sold some of their Red Pepper plants to European colonists.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_RED_PEPPER_PLANTS</Tag>
-        <English>Local Natives offer us some seeds of their Red Pepper plants for sale. They demand 300[ICON_GOLD].</English>
+        <English>Local Natives will sell us some seeds from their red pepper plants. They ask 300[ICON_GOLD].</English>
         <French>Des indigènes proposent de nous vendre leurs semences pour des plants de piment. Il demande 300[ICON_GOLD].</French>
         <German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen 300[ICON_GOLD].</German>
-        <Italian>Local Natives offer us some seeds of their Red Pepper plants for sale. They demand 300[ICON_GOLD].</Italian>
-        <Spanish>Local Natives offer us some seeds of their Red Pepper plants for sale. They demand 300[ICON_GOLD].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SICK_IMMIGRANTS</Tag>
-        <English>Due to the long voyage across the sea many immigrants arrive in the New World sick and diseased.</English>
+        <English>After the long voyage across the sea many immigrants reach the New World suffering from disease.</English>
         <French>De nombreux immigrants sont arrivés malades dans le Nouveau Monde en raison du long voyage en mer.</French>
         <German>Viele Einwanderer kommen durch die lange Schiffsreise krank in der Neuen Welt an.</German>
-        <Italian>Many Immigrants arrive sick and diseased in the New World due to the long voyage over sea.</Italian>
-        <Spanish>Many Immigrants arrive sick and diseased in the New World due to the long voyage over sea.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SICK_IMMIGRANTS</Tag>
-        <English>Some new immigrants have arrived. But they're diseased and weak from the long ship voyage.</English>
+        <English>Some new immigrants have arrived. They're sick and weak from the long voyage.</English>
         <French>Quelques nouveaux immigrants sont arrivés. Mais ils semblent malade en raison du long voyage en mer.</French>
         <German>Einige neue Immigranten sind eingetroffen. Sie scheinen durch die lange Schiffreise krank geworden zu sein.</German>
-        <Italian>Some new Immigrants have arrived. But they seem to be diseased and sick from the long voyage on the ships.</Italian>
-        <Spanish>Some new Immigrants have arrived. But they seem to be diseased and sick from the long voyage on the ships.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DISEASED_NATIVES</Tag>
-        <English>Diseases of the White Man are spreading in Native Villages.</English>
+        <English>Settler diseases are spreading to Native villages.</English>
         <French>Des maladies importées d'Europe se répandent dans les villages indigènes.</French>
         <German>Die Krankheiten des Weissen Mannes verbreiten sich in den Dörfern der Ureinwohner.</German>
-        <Italian>Diseases of the White Man are spreading in Native Villages.</Italian>
-        <Spanish>Diseases of the White Man are spreading in Native Villages.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DISEASED_NATIVES</Tag>
-        <English>A disease is spreading in a nearby Native village. The Natives believe the disease broke out after our citizens visited their village. They are now asking for help.</English>
+        <English>A disease is spreading in a nearby Native village. The disease broke out after settlers visited their village. Now the Native people need our help.</English>
         <French>Une maladie est en train de se propager dans un village indigène voisin. Les indigènes croient que cela fait suite à la visite de certains de nos colons et demandent de l'aide.</French>
         <German>Eine Krankheit breitet sich in einer nahegelegenen Siedlung der Wilden aus. Sie behaupten, die Krankheit sei ausgebrochen nachdem einige unserer Siedler ihr Dorf besucht hatten. Sie bitten um unsere Hilfe.</German>
-        <Italian>A disease is spreading in a nearby Native village. The Natives believe the disease broke out after some of our citizens visited their village and are now asking for help.</Italian>
-        <Spanish>A disease is spreading in a nearby Native village. The Natives believe the disease broke out after some of our citizens visited their village and are now asking for help.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SALT_RESOURCE</Tag>
         <English>European Settlers have discovered a huge salt deposit near %s2_city.</English>
         <French>Des colons européens ont décovert un immense dépôt de sel près de %s2_city.</French>
         <German>Europäische Siedler haben grosse Salzvorkommen in der Gegend um %s2_city.</German>
-        <Italian>European Settlers discovered a huge salt deposit near %s2_city.</Italian>
-        <Spanish>European Settlers discovered a huge salt deposit near %s2_city.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SALT_RESOURCE</Tag>
-        <English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might find salt deposits but it will cost 500[ICON_GOLD].</English>
+        <English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost 500[ICON_GOLD].</English>
         <French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera 500[ICON_GOLD].</French>
         <German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Minenexpedition könnte ein Salzvorkommen entdecken, wird aber 500[ICON_GOLD] kosten.</German>
-        <Italian>Local settlers report that on nearby hills in the desert, the air tastes very salty. A mining expedition might find salt deposits but will cost 500[ICON_GOLD].</Italian>
-        <Spanish>Local settlers report that on nearby hills in the desert, the air tastes very salty. A mining expedition might find salt deposits but will cost 500[ICON_GOLD].</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_BISONS</Tag>
-        <English>Natives are angry because the White Man is hunting their Bison.</English>
+        <English>Natives are angry because settlers hunt their bison.</English>
         <French>Les indigènes sont en colère parce que des hommes blancs chassent leurs bisons.</French>
         <German>Die Ureinwohner sind verärgert, weil die Europäer zu viele Bisons jagen.</German>
-        <Italian>Natives are angry because the White Man is hunting their Bisons.</Italian>
-        <Spanish>Natives are angry because the White Man is hunting their Bisons.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_BISONS</Tag>
-        <English>Natives from a nearby tribe approach the mayor of one of our towns and demand that we stop hunting bison in the area. They claim that by the right of their ancestors those bison belong to them. They need bison meat to survival.</English>
+        <English>Natives told the mayor of one of our towns to stop hunting bison in the area. They claim that by the right of their ancestors those bison belong to them. They need bison meat to survive.</English>
         <French>Des indigènes d'une tribu voisine se sont rapprochés du maire de l'une de nos villes pour demander que nous cessions de chasser le bison dans la zone. Ils prétendent que les bisons leurs appartiennent par leurs droits ancestraux, et qu'ils ne pourront survivre sans cette viande.</French>
         <German>Ureinwohner eines nahegelegenen Stammes sind an uns herangetreten. Sie fordern, dass wir die Jagd auf die Bisons der Gegend einstellen. Sie behaupten, dass die Bisons durch das Recht ihrer Vorväter ihnen gehören und sie diese zum Ueberleben brauchen.</German>
-        <Italian>Natives from a nearby tribe approach the mayor of one of our towns and demands that we stop hunting the bisons in the area. They claim that by the right of their ancestors those bisons belong to them and say that they need the meat of the bisons for survival.</Italian>
-        <Spanish>Natives from a nearby tribe approach the mayor of one of our towns and demands that we stop hunting the bisons in the area. They claim that by the right of their ancestors those bisons belong to them and say that they need the meat of the bisons for survival.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HOLY_GIANT_TREES</Tag>
         <English>European colonists in %s2_city have cut down a giant tree that was sacred to the Natives.</English>
         <French>Les colons européens de %s2_city ont abbatu des arbres géants qui étaient sacrés pour les indigènes.</French>
         <German>Europäische Kolonisten aus %s2_city haben einen Giant Tree gefällt, der den Ureinwohnern heilig war.</German>
-        <Italian>European colonists in %s2_city have cut down a giant tree that was sacred to the Natives.</Italian>
-        <Spanish>European colonists in %s2_city have cut down a giant tree that was sacred to the Natives.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HOLY_GIANT_TREES</Tag>
-        <English>Natives of a nearby tribe are deeply upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks are handed over to them for punishment.</English>
+        <English>Natives of a nearby tribe are deeply upset because our lumberjacks have cut down a giant tree that was sacred to them. They demand that the lumberjacks be handed over to them for punishment.</English>
         <French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs sont rendus pour les punir de leur infamie.</French>
         <German>Ureinwohner eines nahegelegenen Stammes sind sehr verärgert, weil einige unserer Holzfäller einen Giant Tree gefällt haben, der ihnen heilig war. Sie fordern, dass wir ihnen die Schuldigen zur Bestrafung ausliefern.</German>
     </TEXT>
@@ -1618,9 +1470,7 @@
         <Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
         <English>European colonists in %s2_city have celebrated the first Thanksgiving.</English>
         <French>Des colons européens de %s2_city ont célébré leur premier Thanksgiving.</French>
-        <German>Europäische Kolonisten in %s2_city haben das erste Thanksgiving gefeiert.</German>
-        <Italian>European colonists in %s2_city have celebrated the first Thanksgiving.</Italian>
-        <Spanish>European colonists in %s2_city have celebrated the first Thanksgiving.</Spanish>
+        <German>Europäische Kolonisten in %s2_city haben das erste Thanksgiving gefeiert.</German>>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_THANKSGIVING</Tag>
@@ -1633,32 +1483,24 @@
         <English>European colonists in %s2_city have celebrated the first Hallowe'en in the New World.</English>
         <French>Les colons européens de %s2_city ont célébré leur première fête d'Halloween dans le Nouveau Monde.</French>
         <German>Europäische Kolonisten in %s2_city haben das erste Halloween in der neuen Welt gefeiert.</German>
-        <Italian>European colonists in %s2_city have celebrated the first Halloween in the New World.</Italian>
-        <Spanish>European colonists in %s2_city have celebrated the first Halloween in the New World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_HALLOWEEN</Tag>
-        <English>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like quite a wild event, almost heretical.</English>
+        <English>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like a wild event, possibly heretical.</English>
         <French>Des colons récemment arrivés d'Irlande et d'autres pays européens veulent célébrer ce qu'ils appellent « Halloween ». Cela semble être une célébration assez païenne, sinon clairement hérétique.</French>
         <German>Einige Siedler, die erst kürzlich aus Irland und anderen europäischen Ländern angekommen sind, wollen ein Fest feiern, welches sie 'Halloween' nennen. Das Fest hört sich etwas supekt an.</German>
-        <Italian>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Halloween'. It does sound like a quite wild event, almost heretical.</Italian>
-        <Spanish>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Halloween'. It does sound like a quite wild event, almost heretical.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_MOLESTING_MISSIONARY</Tag>
-        <English>Missionary accused of sexually molesting Native women.</English>
+        <English>A missionary is accused of sexually molesting Native women.</English>
         <French>Des missionnaires sont accusés d'avoir abusés de femmes indigènes.</French>
         <German>Ein Missionar wurde beschuldigt Ureinwohnerinnen sexuell zu belästigen.</German>
-        <Italian>Missionary accused of sexually molesting Native women.</Italian>
-        <Spanish>Missionary accused of sexually molesting Native women.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_MOLESTING_MISSIONARY</Tag>
-        <English>Some Natives from a nearby village have arrived in one of our cities. They have a Missionary with them, with his hands tied, and they accuse him of having sexually molested their women.</English>
+        <English>Some Natives from a nearby village are in one of our cities. They've brought a missionary, his hands tied, and they accuse him of having sexually molested their women.</English>
         <French>Des indigènes d'un village voisin sont venus dans l'une de nos villes. Ils avaient un missionnaire avec eux auxquels ils ont liés les mains. Ils l'accusent d'avoir abusé sexuellement de leurs femmes.</French>
         <German>Einige Wilde aus einer nahegelegenen Siedlung sind in einer unserer Städte angekommen. Sie haben einen gefesselten Missionar bei sich und beschuldigen diesen, dass er ihre Frauen sexuell belästigt habe.</German>
-        <Italian>Some Natives from a nearby village have arrived in one of our cities. They have a Missionary with them, who has been tied at his hands, and they accuse him of having sexually molested their women.</Italian>
-        <Spanish>Some Natives from a nearby village have arrived in one of our cities. They have a Missionary with them, who has been tied at his hands, and they accuse him of having sexually molested their women.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_DESERTED_WOLF_WHELP</Tag>
@@ -1668,7 +1510,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_DESERTED_WOLF_WHELP</Tag>
-        <English>Our men have found a deserted wolf cub in the wilderness. His mother is probably dead. Perhaps this young beast could be tamed or else sold to some crazy rich man.</English>
+        <English>Our men have found a deserted wolf cub in the wilderness. His mother is probably dead. Perhaps this young beast could be tamed or else sold to some crazy rich person.</English>
         <French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être dompté ou même vendu à un home riche qui s'ennuie.</French>
         <German>Einer unserer Männer hat einen verlassenen Wolfswelpen in der Wildnis gefunden. Seine Mutter ist wahrscheinlich tot. Vielleicht kann das kleine Biest ja gezähmt werden. Oder wir verkaufen es einem Reichen, der gelangweilt genug ist.</German>
     </TEXT>
