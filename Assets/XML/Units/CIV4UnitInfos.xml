@@ -26432,7 +26432,7 @@
                     </UnitMeshGroup>
                     <UnitMeshGroup>
                         <iRequired>1</iRequired>
-                        <ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
+                        <ArtDefineTag>ART_DEF_UNIT_EXPERIENCED_SETTLER_FEMALE</ArtDefineTag>
                     </UnitMeshGroup>
                 </UnitMeshGroups>
                 <UnitMeshGroups>
