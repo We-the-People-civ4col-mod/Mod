@@ -2621,7 +2621,7 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	{
 		//WTP fixing small bugs in City Founding an Roads
 		CvPlot* pPlot = plot();
-		if (pPlot->getRouteType() <= 1)
+		if (pPlot->getRouteType() < 1)
 		{
 			pPlot->setRouteType((RouteTypes)1);
 		}
