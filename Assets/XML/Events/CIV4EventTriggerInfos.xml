@@ -1139,12 +1139,12 @@
             <iUnitDamagedWeight>1</iUnitDamagedWeight>
             <iUnitDistanceWeight>0</iUnitDistanceWeight>
             <iUnitExperienceWeight>1</iUnitExperienceWeight>
-            <bUnitsOnPlot>0</bUnitsOnPlot>
+            <bUnitsOnPlot>1</bUnitsOnPlot>
             <BuildingsRequired/>
             <iNumBuildings>0</iNumBuildings>
             <iNumBuildingsGlobal>0</iNumBuildingsGlobal>
-            <iNumPlotsRequired>0</iNumPlotsRequired>
-            <bOwnPlot>0</bOwnPlot>
+            <iNumPlotsRequired>1</iNumPlotsRequired>
+            <bOwnPlot>1</bOwnPlot>
             <iPlotType>-1</iPlotType>
             <FeaturesRequired/>
             <TerrainsRequired/>
