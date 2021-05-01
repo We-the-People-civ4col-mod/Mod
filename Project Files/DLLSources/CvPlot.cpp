@@ -5495,7 +5495,11 @@ void CvPlot::updateCityRoute()
 			eCityRoute = ((RouteTypes)(GC.getDefineINT("INITIAL_CITY_ROUTE_TYPE")));
 		}
 
-		setRouteType(eCityRoute);
+		//WTP fixing small bugs in City Founding an Roads
+		if(getRouteType() < eCityRoute)
+		{
+			setRouteType(eCityRoute);
+		}
 	}
 }
 

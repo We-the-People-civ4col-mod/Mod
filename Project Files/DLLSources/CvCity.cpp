@@ -2607,16 +2607,21 @@ void CvCity::processBuilding(BuildingTypes eBuilding, int iChange)
 	//RWL Railroads and Trainstations
 	if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == 26) // easiest way to identify Trainstation
 	{
+		//WTP fixing small bugs in City Founding an Roads
 		CvPlot* pPlot = plot();
-		pPlot->setRouteType((RouteTypes)2);
+		if (pPlot->getRouteType() < 2)
+		{
+			pPlot->setRouteType((RouteTypes)2);
+		}
 	}
 	//RWL END Railroads and Trainstations
 
 	// R&R, ray, Plastered Road
 	if (GC.getBuildingInfo(eBuilding).getAICitySize() == 4) // easiest way to identify Townhall
 	{
+		//WTP fixing small bugs in City Founding an Roads
 		CvPlot* pPlot = plot();
-		if (pPlot->getRouteType() != 2)
+		if (pPlot->getRouteType() <= 1)
 		{
 			pPlot->setRouteType((RouteTypes)1);
 		}
