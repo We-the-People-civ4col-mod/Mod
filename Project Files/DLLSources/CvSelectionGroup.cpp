@@ -1987,6 +1987,11 @@ bool CvSelectionGroup::canMoveInto(CvPlot* pPlot, bool bAttack)
 	return false;
 }
 
+bool CvSelectionGroup::canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar)
+{
+	// K-Mod. (hack to avoid breaking the DllExport) advc: 2x const, CvPlot&
+	return canMoveOrAttackInto(*pPlot, bDeclareWar, false);
+}
 
 bool CvSelectionGroup::canMoveOrAttackInto(CvPlot const& kPlot, bool bDeclareWar,
 	bool bCheckMoves, bool bAssumeVisible) const // K-Mod
