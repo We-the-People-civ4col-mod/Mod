@@ -1095,10 +1095,11 @@ void CvPlot::setSeeFromLevelCache()
 int CvPlot::seeThroughLevel() const
 {
 	FAssertMsg(m_seeThroughLevelCache != -1, "Cache has not been initialized!");
+	FAssert(m_seeThroughLevelCache == getSeeThroughLevelUncached());
 	return m_seeThroughLevelCache;
 }
 
-void CvPlot::setSeeThroughLevelCache()
+signed char CvPlot::getSeeThroughLevelUncached() const
 {
 	int iLevel;
 
@@ -1126,10 +1127,13 @@ void CvPlot::setSeeThroughLevelCache()
 		iLevel += GC.getSEAWATER_SEE_FROM_CHANGE();
 	}
 
-	m_seeThroughLevelCache = iLevel;
+	return iLevel;
 }
 
-
+void CvPlot::setSeeThroughLevelCache()
+{
+	m_seeThroughLevelCache = getSeeThroughLevelUncached();
+}
 
 void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit)
 {
@@ -4645,6 +4649,10 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 
 		m_ePlotType = eNewValue;
 
+		// update caches right away as they are used by updateSeeFromSight
+		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
+
 		updateYield(true);
 
 		updateSeeFromSight(true);
@@ -4862,8 +4870,6 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
-		setSeeFromLevelCache();
-		setSeeThroughLevelCache();
 	}
 }
 
@@ -4898,6 +4904,10 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 		}
 
 		m_eTerrainType = eNewValue;
+
+		// update caches right away as they are used by updateSeeFromSight
+		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 		updateImpassable();
 
 		updateYield(true);
@@ -4922,8 +4932,6 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
-		setSeeFromLevelCache();
-		setSeeThroughLevelCache();
 	}
 }
 
@@ -4975,7 +4983,11 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 
 		m_eFeatureType = eNewValue;
 		m_iFeatureVariety = iVariety;
+
+		// update caches right away as they are used by updateSeeFromSight
 		updateImpassable();
+		setSeeFromLevelCache();
+		setSeeThroughLevelCache();
 
 		updateYield(true);
 
@@ -4999,8 +5011,6 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
-		setSeeFromLevelCache();
-		setSeeThroughLevelCache();
 	}
 }
 

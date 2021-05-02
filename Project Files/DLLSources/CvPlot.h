@@ -570,6 +570,7 @@ public:
 	static void setMaxVisibilityRangeCache();
 protected:
 	void setSeeFromLevelCache();
+	signed char getSeeThroughLevelUncached() const;
 	void setSeeThroughLevelCache();
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
