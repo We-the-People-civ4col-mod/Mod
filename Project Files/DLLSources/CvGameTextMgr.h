@@ -58,6 +58,7 @@ public:
 	DllExport void setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPlot, bool bOneLine, bool bShort);
 	DllExport bool setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot);
 	DllExport void setPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot);
+	void setCityPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot); // city plot mouse over help - inaiwae
 	DllExport void setCityBarHelp(CvWStringBuffer &szString, CvCity* pCity);
 	DllExport void setScoreHelp(CvWStringBuffer &szString, PlayerTypes ePlayer);
 	DllExport void setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCity, const CvUnit& kUnit);
