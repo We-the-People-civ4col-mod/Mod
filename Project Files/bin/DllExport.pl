@@ -82,7 +82,7 @@ sub processfile
 	
 	if ($known_file)
 	{
-		die "\nDllExport ERROR: $file: Failed to locale line: $next_line\n\n\n" unless index($next_line, "DllExport") == -1;
+		die "\nDllExport ERROR: $file: Failed to locate line: $next_line\n\n\n" unless index($next_line, "DllExport") == -1;
 		$next_file = $next_line;
 	}
 }
