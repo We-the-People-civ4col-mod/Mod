@@ -579,9 +579,12 @@ public:
 	// Cache the computation of the max visibility range
 	static void setMaxVisibilityRangeCache();
 protected:
+	// plot visibility cache
 	void setSeeFromLevelCache();
-	signed char getSeeThroughLevelUncached() const;
 	void setSeeThroughLevelCache();
+	int getSeeFromLevelUncached() const;
+	int getSeeThroughLevelUncached() const;
+
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
 	// CvPlot::hasYield cache - end - Nightinggale

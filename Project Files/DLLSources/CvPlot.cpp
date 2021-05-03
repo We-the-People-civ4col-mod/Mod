@@ -1234,11 +1234,11 @@ CvPlot* CvPlot::getNearestLandPlot() const
 
 int CvPlot::seeFromLevel() const
 {
-	FAssertMsg(m_seeFromLevelCache != -1, "Cache has not been initialized!");
+	FAssert(m_seeFromLevelCache == getSeeFromLevelUncached());
 	return m_seeFromLevelCache;
 }
 
-void CvPlot::setSeeFromLevelCache()
+int CvPlot::getSeeFromLevelUncached() const
 {
 	int iLevel;
 
@@ -1268,17 +1268,21 @@ void CvPlot::setSeeFromLevelCache()
 		iLevel += GC.getSEAWATER_SEE_FROM_CHANGE();
 	}
 
-	m_seeFromLevelCache = iLevel;
+	return iLevel;
+}
+
+void CvPlot::setSeeFromLevelCache()
+{
+	m_seeFromLevelCache = getSeeFromLevelUncached();
 }
 
 int CvPlot::seeThroughLevel() const
 {
-	FAssertMsg(m_seeThroughLevelCache != -1, "Cache has not been initialized!");
 	FAssert(m_seeThroughLevelCache == getSeeThroughLevelUncached());
 	return m_seeThroughLevelCache;
 }
 
-signed char CvPlot::getSeeThroughLevelUncached() const
+int CvPlot::getSeeThroughLevelUncached() const
 {
 	int iLevel;
 
@@ -4894,8 +4898,11 @@ void CvPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGr
 		m_ePlotType = eNewValue;
 
 		// update caches right away as they are used by updateSeeFromSight
-		setSeeFromLevelCache();
-		setSeeThroughLevelCache();
+		if (getTerrainType() != NO_TERRAIN)
+		{
+			setSeeFromLevelCache();
+			setSeeThroughLevelCache();
+		}
 
 		updateYield(true);
 
@@ -5244,7 +5251,6 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 
 		// update caches right away as they are used by updateSeeFromSight
 		updateImpassable();
-		setSeeFromLevelCache();
 		setSeeThroughLevelCache();
 
 		updateYield(true);
@@ -5363,6 +5369,9 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		// Super Forts end
 
 		m_eImprovementType = eNewValue;
+
+		// update caches right away as they are used by updateSeeFromSight
+		setSeeFromLevelCache();
 
 		if (getImprovementType() == NO_IMPROVEMENT)
 		{
