@@ -273,6 +273,7 @@ namespace boost
 #include "CvString.h"
 #include "CvEnums.h"
 #include "CvStructs.h"
+#include "NetworkDataPacking.h"
 #include "CvDLLUtilityIFaceBase.h"
 
 #include "JustInTimeArray.h"

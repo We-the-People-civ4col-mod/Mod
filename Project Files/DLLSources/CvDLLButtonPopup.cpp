@@ -877,10 +877,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 							// It's not important what changed because the update is all or nothing.
 
 							// first merge the ints values into a single int because the network package only has a single int32 available
-							int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
-							iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+							NetworkDataTradeRouteInts buffer;
+							buffer.iImportLimitLevel = iImportLimitLevel;
+							buffer.iMaintainLevel    = iMaintainLevel;
 
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, buffer.iNetwork, bImport, bExport, bMaintainImport, bAutoExport);
 						}
 						// R&R mod, vetiarvind, max yield import limit - end
 						// transport feeder - end - Nightinggale

@@ -853,10 +853,9 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		// R&R mod, vetiarvind, max yield import limit - start | implement Nightinggale's bit twiddling optimization
 		{
 			// see CvDLLButtonPopup::OnOkClicked() for details on how those ints are stored
-			int iMaintainLevel    =  iData2 & 0xFFFF;
-			int iImportLimitLevel =  (iData2 >> 16) & 0xFFFF;
-			setImportsLimit((YieldTypes) iData1, iImportLimitLevel);
-			setMaintainLevel((YieldTypes) iData1, iMaintainLevel);
+			NetworkDataTradeRouteInts buffer(iData2);
+			setImportsLimit ((YieldTypes) iData1, buffer.iImportLimitLevel);
+			setMaintainLevel((YieldTypes) iData1, buffer.iMaintainLevel);
 		}
 		// R&R mod, vetiarvind, max yield import limit - end
 

@@ -837,6 +837,9 @@
     <ClInclude Include="DLLSources\CyData.h">
       <Filter>Python\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\NetworkDataPacking.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
