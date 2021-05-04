@@ -1,24 +1,74 @@
-Detailled information in our forum:
+Detailed information is available in our forum:
 https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 
-Welcome to Religion and Revolution !
+Welcome to "We The People"!
+
+Foreword
+-------
+
+"We The People" is the most extensive and complex mod for "Sid Meier's Civilization IV: Colonization" that you can find.
+As a player, you must decide for yourself whether it is also the best. Just try out a few mods.
+
+There is heart and soul and a lot of modding history in "We The People", as the next few paragraphs will show you.
+It is not for nothing that a small but passionate team continuously improves and expands this mod with the help of the community.
+
+Our origins:
+-----------------
+
+To avoid confusion, let's say straightaway that "We The People" (WTP for short) is the successful continuation of "Religion and Revolution" (simply RaR for short).
+WTP continues the proud tradition of RaR with a new team. Among them are many old team members of RaR.
+
+Therefore WTP still contains all the features of RaR, but is much bigger and even better.
+That means more new features, nicer graphics, better AI, countless bug fixes, text corrections, balancing improvements, performance improvements ...
 
 
-Religion and Revolution is a huge mod for "Sid Meier's Civilization IV: Colonization" developed by an international team of passionate modders.
-It is based on TAC (The Authentic Colonization) 2.03_final but more about that later.
+Old RaR veterans always recommend that instead of RaR you now play WTP.
+Of course that's up to you, the players, and your preferences.
 
-The mod itself and our forum have both become pretty big.
-Thus I will try to summarize / link the most important threads and informations here.
+"Religion and Revolution" (RaR) - the predecessor of "We The People" - in its day was based on "The Authentic Colonization" (TAC) in version 2.03_final.
+Without TAC, WTP would not exist today. Therefore, we also owe TAC eternal gratitude and corresponding credits.
+
+So why the change of the project name?
+-------------------------------------------
+
+Well, most of the RaR team members finally decided that enough was enough. As with TAC, the core team became too small and the air was out.
+The rest of the community and some former team members weren't ready for that. They decided not to give up on RaR as a mod.
+
+The team composition, and also the mod philosophy, had changed so much that a new name was appropriate.
+Over time one, another and then more of the old RaR team came back until there was a new team again.
+
+Small conclusion:
+--------------
+
+We are proud to be part of the history of this community, so that after many successes and setbacks we still exist today.
+We hope that our mod will continue as part of this community history for a while yet.
+
+It's not possible to list every single supporter or modder to whom we owe thanks.
+We will therefore concentrate on those to whom we owe the greatest thanks, now or in the past.
+
+We hope you have fun playing our mod.
+Also check out our forum from time to time.
+
+https://forums.civfanatics.com/forums/civ4col-we-the-people.591/
 
 ------------------
 
-Team members:
+Current active WTP team members
 
+	raystuttgart
 	Devolution
 	Nightinggale
-	raystuttgart
 	Schmiddie
+	Mr.ZorG
+
+Particularly active WTP supporters:
+
+	Raubwürger
+	Fürstbischof
+	Kendon
+
+Former (now inactive) RaR members:
 
 	Robert Surcouf
 	colonialfan
@@ -26,20 +76,22 @@ Team members:
 	Androrc the Orc
 	orlanth
 
-+ many partners that give valuable support.
++ many partners who have supported us in the past. 
 
 ------------------
 
 Credits:
 
-Of course the TAC-team.
+The TAC team, of course.
 
-Otherwise basically almost every modder out there.
-Please tell us, if we use parts of your work and forgot your name.
-	
+Otherwise basically every modder who has published so far.
+Please tell us if we use parts of your work and have forgotten your name.
+
+	Lethiel
 	Zeta Nexus
-	Rampstormp
-	Writing Bull	
+	Vaeringjar
+	Ramstormp
+	Writing Bull
 	Willi_Tell
 	Isabelxxx
 	Dale
@@ -54,7 +106,6 @@ Please tell us, if we use parts of your work and forgot your name.
 	bernie14
 	ekmek
 	SaibotLieh
-	The Capo
 	Sanotra
 	Aeterna
 	Roamty
@@ -64,138 +115,121 @@ Please tell us, if we use parts of your work and forgot your name.
 	Commander_Bello
 	Vetiarvind
 	Barthoze
-	melcher k�rzer	
-	Fankman	
+	melcher kürzer
+	Fankman
 	...
 
 ------------------
 
-Special Thanks to Mod DB for hosting the download of our mod!
+Special thanks to Mod DB for hosting the download of our mod!
+Special thanks to the other forums, like Steam, who also report about us.
 
 ------------------
 
-Please also read the ingame-credits at the Encyclopedia to get detailed credits-informations.
-Also please read Some Remarks about Distribuiton and Rights of Usage in the post below.
+Formal notes:
 
-Special Credits for Music:
+Please read the ingame credits in Colopedia for detailed information.
+Please read the notes about distribution and rights of the mod RaR, below.
 
-Ren� Osmanczyk (Composer of most of our Soundtrack)
+Special credits for the music:
+
+René Osmanczyk (composer of most of our soundtrack)
 Gregoire Lourme, The Seven Seas Journey, Cinematic Volume 7 Animation Movies (http://www.jamendo.com/de/track/1119930/the-seven-seas-journey)
 
-Special Credits and Thanks also to the creators / publishers of the original game:
+Special credits and thanks also to the creators/publishers of the original game:
 
 Firaxis and 2Kgames
 
 -------------------
 
-For an Overview of all Features, Improvements and Additions, please read here in our Forum:
+How do I install the mod?
 
-http://forums.civfanatics.com/showpost.php?p=10892630&postcount=2
+First of all, make sure that your Colonization game uses the official patch 1.01.f.
+(Other versions cause severe problems).
+
+Note:
+If you have the Steam version, you are automatically up to date and don't need to do anything.
+(Only the old CD version needs to be updated).
+
+Install "We The People" like any other mod.
+First, unpack the archive from the download link of the corresponding release (e.g. on GitHub).
+Then copy the unzipped mod into the "Mods" folder of Colonization:
+(e.g. C:\User\UserName\My Games\Colonization\MODS).
+
+P.S.: Check the forum every now and then to see if there are new versions.
 
 -------------------
 
+What is this mod?
 
-How do I install the mod ?
+It is currently by far the largest CivCol mod in existence.
+It’s our attempt to bring together many of the best ideas and concepts that the CivCol modding has created.
 
-First make sure that your colonization game is patched to official patch 1.01f.
-(Everything else will cause heavy problems.)
+We have also tried to bring back some of the bigger features from the original Colonization, which for some reason were missing from CivCol.
 
-Otherwise install it like any other mod.
-Unpack the archive from the download link and put the mod into the /mods folder of the game.
+But we didn't just throw it all together. Almost everything we put in has been tweaked and improved.
+We’ve very carefully weighed which features to include and how to implement them.
 
-Do me a personal favour please:
-Do not rename the folder of the mod.
-Leave it as it is "Religion_and_Revolution".
-This will make it easier for me to analyse savegames.
+We want to create a mod that offers more variety, more surprises and more challenge.
+Little by little we’re trying to improve every single aspect of the game: economy, exploration, diplomacy, trade, events, wars...
 
+Some aspects of the mod are meant to lean a little more towards complicated simulation, 
+while others deliver more action.
 
-What is this mod ?
-
-Well, it is currently by far the largest existing CivCol mod.
-It is our attempt to unite many of the best ideas and concepts created by the CivCol modding community into one single gigantic mod.
-We also tried to recreate some more great features from original Colonization that had been missing to CivCol for some reason.
-
-But we did not simply throw everything together. Almost everything we included was heavily adjusted and improved.
-We considered very carefully which features to add and how to implement them.
-
-We want to create a mod that offers more diversity, more possibilites and more challenge.
-Step by step we try to improve every single aspect the game offers. (Economy, Exploration, Diplomacy, Trade, Events, Wars, ...)
-Some aspects of the mod already have and will continue to move a little bit more towards complex simulation, others a little bit more towards action.
-
-But while doing so, we always try to think about usability, AI, performance, historical authenticity ...
-
-We are not done yet, of course.
+But, while we do this, we always think about usability, AI, performance, historical authenticity; things to to think about.
+Not everything is done yet.
 
 
-This mod is based on TAC ?
+-------------------
 
-Yes, it is originally based on TAC and almost completely includes everything that is in TAC 2.03_final.
-With its amazing size, love for the detail and outstanding quality TAC was a great base for this project.
+Is using our work allowed?
 
-However, we have heavily changed, improved or added to that base.
-A very big part of Religion and Revolution is new features not known in TAC.
-(In many cases adjusted / improved versions of features from other mods / modcomps but also often created by ourselves.)
+Yes, in general you can use our source code, our graphics, our images ...
+But please remember to give proper credit. Ask if you’re not sure.
 
-We really have to thank all the modders out there for their great work.
-Special thanks again to the TAC team.
-Without all their hard work, this mod would not exist.
+-------------------
 
+Important remarks about distribution and rights of use:
+"We The People" is a non-commercial mod project.
 
-Is it allowed to use your work ?
+If you distribute "We The People", please pay attention to the copyright.
+We allow use and distribution as long as "We The People" remains non-commercial.
+Of course, you are allowed to use "We The People" in your own mod project, as long as there’s no copyright infringement and it’s a non-commercial project.
+If you use "We The People" in a mod of your own, you must say so, and also point out changes to the original "We The People" mod.
 
-Yes, generally you can use our source code, graphics, images, ...
+-------------------
 
-!!! However !!!
-
-1. We do contain music that does not belong to us.
-Ren� Osmanczyk for example has allowed us to use his music.
-If you want to use and publish it as well, you need to ask him before doing so.
-
-2. We do contain a lot of work from other modders and mod projects (especially TAC).
-Please consider that, when giving credits as well.
-If you are not sure, who to credit, simply ask us and we will try to tell you.
-
-
-Some Remarks about Distribuiton and Rights of Usage:
-
-Religion and Revolution is a non-commercial mod project.
-If you use or distribute Religion and Revolution please pay attention to the copyright.
-We allow usage and distribution as long as Religion and Revolution remains non-commercial.
-As a matter of course it is permitted to use Religion and Revolution in an own mod project
-as long as the copyrights are not harmed, and it is a non-commercial project too.
-If you use Religion and Revolution in an own mod project you have to make clear that you have
-done changes to the original Religion and Revolution and eventually also to our base project TAC.
-
-
-Would money help in any way ?
-
+Can I support your work financially? 
 No.
-People have offered us to donate money, but we cannot and will not accept money.
-This project is for fun only.
-
-
-What are the plans for the future ?
-
-Well, we are still far away from having reached all our goals.
-There are still a lot of big features / wishes on our list. (see Overview)
-Otherwise there are also always new ideas coming up.
-
-Is it possible to participate ?
-
-Yes definitely !
-Apart from the normal ways community can help and participate (feedback, reporting bugs, sharing ideas, ...),
-we are also looking for partners, projects that want to have a cooperation or new team members.
-It simply depends on the level of involvment you want to have and how far you share our vision.
-
-
-Some Advice
-
-We really suggest you read our Overview, FAQ, ingame Colopedia and Tips and Tricks before playing the mod.
-If you do not, you are very likely to miss out a lot of changed concepts and cool features ...
-
-Although we have tried to completely translate into German and French,
-you probably get the best gaming experience and the most atmospheric texts, when playing in English.
+Many people have offered to donate money, but we can't accept money.
+This project was only born out of joy and fun in modding.
 
 -------------------
 
-We hope you will enjoy playing the mod just as much as we enjoy creating it.
+What are the plans for the future?
+
+Please have a look at our forum.
+That’s where we can keep game status and current  planning up to date.
+
+-------------------
+
+Is it possible to participate?
+
+Yes, absolutely.
+You can give feedback, report bugs, share ideas ...
+We are also looking for new team members, partners and projects for collaborations. 
+
+-------------------
+
+A little advice:
+
+When you play "We The People” for the first time, read the Colopedia and check out the forum.
+Ask questions if you don't know something. The team and the community are helpful.
+
+-------------------
+
+Now it’s finally time to play the mod!
+Have fun!
+
+Your WTP Team
+
