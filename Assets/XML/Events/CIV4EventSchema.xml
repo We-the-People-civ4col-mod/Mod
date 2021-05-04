@@ -87,10 +87,10 @@
 	<ElementType name="PythonHelp" content="textOnly"/>
 	<ElementType name="iWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIValue" content="textOnly" dt:type="int"/>
-	<ElementType name="iGenericParameter1" content="textOnly" dt:type="int"/>
-	<ElementType name="iGenericParameter2" content="textOnly" dt:type="int"/>
-	<ElementType name="iGenericParameter3" content="textOnly" dt:type="int"/>
-	<ElementType name="iGenericParameter4" content="textOnly" dt:type="int"/>
+	<ElementType name="iGenericParameter1" content="textOnly"/>
+	<ElementType name="iGenericParameter2" content="textOnly"/>
+	<ElementType name="iGenericParameter3" content="textOnly"/>
+	<ElementType name="iGenericParameter4" content="textOnly"/>
 	<ElementType name="iPercentGamesActive" content="textOnly" dt:type="int"/>
 	<ElementType name="bProbabilityUnitMultiply" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bProbabilityBuildingMultiply" content="textOnly" dt:type="boolean"/>

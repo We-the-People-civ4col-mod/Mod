@@ -251,6 +251,10 @@ public:
 	// the m_szXmlPath member variable pre-pended to it to form the full pathname
 	bool LoadCivXml(FXml* pFXml, const TCHAR* szFilename);
 
+	// read a tag and store the int value, either directly as an int or as a type string, which is converted to an int
+	// xml schema type must be set to string 
+	bool GetIntOrType(const char* szType, int& iVar, const char* szTagName, bool bMandatory = true);
+
 	// modded enum read function
 	template <class T>
 	void GetEnum(const char* szType, T& eEnum, const char* szTagName, bool bMandatory = true)

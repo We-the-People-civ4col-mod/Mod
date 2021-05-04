@@ -15173,10 +15173,10 @@ bool CvEventInfo::read(CvXMLLoadUtility* pXML)
 	m_iUnitPromotion = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iAIValue, "iAIValue");
 	// TAC - Generic Parameters for Events - Ray - START
-	pXML->GetChildXmlValByName(&m_iGenericParameter1, "iGenericParameter1");
-	pXML->GetChildXmlValByName(&m_iGenericParameter2, "iGenericParameter2");
-	pXML->GetChildXmlValByName(&m_iGenericParameter3, "iGenericParameter3");
-	pXML->GetChildXmlValByName(&m_iGenericParameter4, "iGenericParameter4");
+	pXML->GetIntOrType(getType(), m_iGenericParameter1, "iGenericParameter1", false);
+	pXML->GetIntOrType(getType(), m_iGenericParameter2, "iGenericParameter2", false);
+	pXML->GetIntOrType(getType(), m_iGenericParameter3, "iGenericParameter3", false);
+	pXML->GetIntOrType(getType(), m_iGenericParameter4, "iGenericParameter4", false);
 	// TAC - Generic Parameters for Events - Ray - END
 	CvString* pszPromotions = NULL;
 	FAssertMsg(NULL == m_aiUnitCombatPromotions, "Memory leak");
