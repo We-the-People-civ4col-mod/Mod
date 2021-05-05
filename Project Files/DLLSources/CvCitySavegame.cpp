@@ -170,6 +170,8 @@ enum SavegameVariableTypes
 
 	CitySave_CityTimerFestivitiesOrUnrest, // WTP, ray, Happiness - START
 
+	CitySave_tradeAutoExports,
+
 	NUM_CITYSAVE_ENUM_VALUES,
 };
 
@@ -234,6 +236,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_OrderedStudentsRepeat: return "CitySave_OrderedStudentsRepeat";
 		case CitySave_tradeImports: return "CitySave_tradeImports";
 		case CitySave_tradeExports: return "CitySave_tradeExports";
+		case CitySave_tradeAutoExports: return "CitySave_tradeAutoExports";
 		case CitySave_tradeThreshold: return "CitySave_tradeThreshold";
 		case CitySave_tradeImportsMaintain: return "CitySave_tradeImportsMaintain";
 		case CitySave_tradeStopAutoImport: return "CitySave_tradeStopAutoImport";
@@ -355,6 +358,7 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bC
 	m_em_bTradeExports.reset();
 	m_em_iTradeThreshold.reset();
  	m_em_bTradeImportsMaintain.reset();
+	m_em_bTradeAutoExport.reset();
 	m_em_bTradeStopAutoImport.reset();
 	m_em_iTradeMaxThreshold.reset();
 
@@ -486,6 +490,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_OrderedStudentsRepeat: reader.Read(m_em_bOrderedStudentsRepeat); break;
 		case CitySave_tradeImports: reader.Read(m_em_bTradeImports); break;
 		case CitySave_tradeExports: reader.Read(m_em_bTradeExports); break;
+		case CitySave_tradeAutoExports: reader.Read(m_em_bTradeAutoExport); break;
 		case CitySave_tradeThreshold: reader.Read(m_em_iTradeThreshold); break;
 		case CitySave_tradeImportsMaintain: reader.Read(m_em_bTradeImportsMaintain); break;
 		case CitySave_tradeStopAutoImport: reader.Read(m_em_bTradeStopAutoImport); break;
@@ -616,6 +621,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_OrderedStudentsRepeat,m_em_bOrderedStudentsRepeat);
 	writer.Write(CitySave_tradeImports, m_em_bTradeImports);
 	writer.Write(CitySave_tradeExports, m_em_bTradeExports);
+	writer.Write(CitySave_tradeAutoExports, m_em_bTradeAutoExport);
 	writer.Write(CitySave_tradeThreshold, m_em_iTradeThreshold);
  	writer.Write(CitySave_tradeImportsMaintain, m_em_bTradeImportsMaintain);
 	writer.Write(CitySave_tradeStopAutoImport, m_em_bTradeStopAutoImport);

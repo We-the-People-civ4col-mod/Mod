@@ -804,14 +804,6 @@ protected:
 	std::vector<BuildingYieldChange> m_aBuildingYieldChange;
 	std::vector<CvUnit*> m_aPopulationUnits;
 
-	// traderoute just-in-time - start - Nightinggale
-	EnumMap<YieldTypes,bool> m_em_bTradeImports;
-	EnumMap<YieldTypes,bool> m_em_bTradeExports;
-	EnumMap<YieldTypes,unsigned short> m_em_iTradeThreshold;
-	// traderoute just-in-time - end - Nightinggale
-	
-	EnumMap<YieldTypes,unsigned short> m_em_iTradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
-
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
@@ -872,7 +864,15 @@ public:
 	void setAutoThresholdCache();
 
 protected:
-	EnumMap<YieldTypes,bool> m_em_bTradeImportsMaintain;
+	// traderoute popup arrays
+	EnumMap<YieldTypes, bool> m_em_bTradeImports;
+	EnumMap<YieldTypes, bool> m_em_bTradeExports;
+	EnumMap<YieldTypes, bool> m_em_bTradeImportsMaintain;
+	EnumMap<YieldTypes, bool> m_em_bTradeAutoExport;
+	EnumMap<YieldTypes, unsigned short> m_em_iTradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
+	EnumMap<YieldTypes, unsigned short> m_em_iTradeThreshold;
+
+	// saves the hysteresis state
 	EnumMap<YieldTypes,bool> m_em_bTradeStopAutoImport;
 	EnumMap<YieldTypes,int> m_em_iTradeAutoThreshold; // nosave - recalculate on load
 	EnumMap<YieldTypes,int> m_em_iProductionNeeded; // nosave - recalculate on load
@@ -888,7 +888,7 @@ protected:
 	void setAutoExport(YieldTypes eYield, bool bExport);
 	void doAutoExport(YieldTypes eYield);
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
-	EnumMap<YieldTypes,bool> m_em_bTradeAutoExport;
+	
 	// auto traderoute - end - Nightinggale
 
 public:
