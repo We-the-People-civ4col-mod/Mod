@@ -424,6 +424,7 @@ public:
 	DllExport CvPlot* plot() const;
 	CvCity* getCity() const;
 	int getArea() const;
+	int getLandArea() const;
 	CvArea* area() const;
 	int getLastMoveTurn() const;
 	void setLastMoveTurn(int iNewValue);

@@ -10116,6 +10116,27 @@ int CvUnit::getArea() const
 	return pPlot->getArea();
 }
 
+// get the areaID of a plot in the 3x3 area with the unit in the center
+int CvUnit::getLandArea() const
+{
+	if (getX_INLINE() != INVALID_PLOT_COORD && getY_INLINE() != INVALID_PLOT_COORD)
+	{
+		// scanning the 3x3 area
+		// Use plotCity for order as this will start with the center plot
+		// This means unless the unit is on water (like large river), the result will be the same as getArea()
+		for (int i = 0; i < 9; ++i)
+		{
+			const CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), i);
+			if (pPlot != NULL && !pPlot->isWater())
+			{
+				return pPlot->getArea();
+			}
+		}
+	}
+
+	// failed to locate land. Rely on vanilla code for what to do now
+	return getArea();
+}
 
 CvArea* CvUnit::area() const
 {
