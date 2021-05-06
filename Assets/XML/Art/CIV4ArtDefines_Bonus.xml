@@ -231,7 +231,7 @@
             <fScale>1</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>
             <NIF>Art/Terrain/Resources/Cocoa/cocoa.nif</NIF>
-            <KFM>Art/Terrain/Resources/Coffee/Coffee.kfm</KFM>
+            <KFM>Art/Terrain/Resources/Coffee/Cofwes.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,6,11</Button>
             <FontButtonIndex>40</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
@@ -252,8 +252,8 @@
             <Type>ART_DEF_BONUS_COFFEE</Type>
             <fScale>0.8</fScale>
             <fInterfaceScale>1.1</fInterfaceScale>
-            <NIF>Art/Terrain/Resources/Coffee/Coffee.nif</NIF>
-            <KFM>Art/Terrain/Resources/Coffee/Coffee.kfm</KFM>
+            <NIF>Art/Terrain/Resources/Coffee/Cofwes.nif</NIF>
+            <KFM>Art/Terrain/Resources/Coffee/Cofwes.kfm</KFM>
             <Button>,Art/colonization_atlas_professions_bonus.dds,5,11</Button>
             <FontButtonIndex>37</FontButtonIndex>
             <bShadowCastor>1</bShadowCastor>
