@@ -160952,7 +160952,7 @@ BeginPlot
 	isWOfRiver
 	BonusType=BONUS_COCONUT
 	FeatureType=FEATURE_JUNGLE, FeatureVariety=0
-	TerrainType=TERRAIN_MARSH
+	TerrainType=TERRAIN_SAVANNAH
 	PlotType=2
 EndPlot
 BeginPlot
