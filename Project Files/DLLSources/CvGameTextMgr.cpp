@@ -2794,6 +2794,94 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 	// R&R, Robert Surcouf, Damage on Storm plots, End
 }
 
+// city plot mouse over help - inaiwae - START
+void CvGameTextMgr::setCityPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
+{
+	CvWString szTempBuffer;
+	BonusTypes eBonus;
+	ImprovementTypes eImprovement;
+	PlayerTypes eRevealOwner;
+	int iI;
+	int iYield;
+	int iTurns;
+	if (pPlot->getTerrainType() != NO_TERRAIN)
+	{
+		if (pPlot->isPeak())
+		{
+			szString.append(gDLL->getText("TXT_KEY_PLOT_PEAK"));
+		}
+		else
+		{
+			if (pPlot->isWater())
+			{
+				szTempBuffer.Format(SETCOLR, TEXT_COLOR("COLOR_WATER_TEXT"));
+				szString.append(szTempBuffer);
+			}
+			if (pPlot->isHills())
+			{
+				szString.append(gDLL->getText("TXT_KEY_PLOT_HILLS"));
+			}
+			if (pPlot->getFeatureType() != NO_FEATURE)
+			{
+				szTempBuffer.Format(L"%s/", GC.getFeatureInfo(pPlot->getFeatureType()).getDescription());
+				szString.append(szTempBuffer);
+			}
+			szString.append(GC.getTerrainInfo(pPlot->getTerrainType()).getDescription());
+			if (pPlot->isWater())
+			{
+				szString.append(ENDCOLR);
+			}
+		}
+	}
+	if (pPlot->hasYield())
+	{
+		szString.append(NEWLINE);
+		for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+		{
+			iYield = pPlot->calculatePotentialYield(((YieldTypes)iI), NULL, true);
+			if (iYield != 0)
+			{
+				szTempBuffer.Format(L"%d%c ", iYield, GC.getYieldInfo((YieldTypes) iI).getChar());
+				szString.append(szTempBuffer);
+			}
+		}
+	}
+	if (pPlot->isLake())
+	{
+		szString.append(NEWLINE);
+		szString.append(gDLL->getText("TXT_KEY_PLOT_FRESH_WATER_LAKE"));
+	}
+	eBonus = pPlot->getBonusType();
+	if (eBonus != NO_BONUS)
+	{
+		szTempBuffer.Format(L"%c " SETCOLR L"%s" ENDCOLR, GC.getBonusInfo(eBonus).getChar(), TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getBonusInfo(eBonus).getDescription());
+		szString.append(NEWLINE);
+		szString.append(szTempBuffer);
+	}
+	eImprovement = pPlot->getRevealedImprovementType(GC.getGameINLINE().getActiveTeam(), true);
+	if (eImprovement != NO_IMPROVEMENT)
+	{
+		szString.append(NEWLINE);
+		szString.append(GC.getImprovementInfo(eImprovement).getDescription());
+		if (GC.getImprovementInfo(eImprovement).getImprovementUpgrade() != NO_IMPROVEMENT)
+		{
+			if ((pPlot->getUpgradeProgress() > 0) || pPlot->isBeingWorked())
+			{
+				eRevealOwner = pPlot->getRevealedOwner(GC.getGameINLINE().getActiveTeam(), true);
+				iTurns = pPlot->getUpgradeTimeLeft(eImprovement, eRevealOwner);
+				szString.append(NEWLINE);
+				szString.append(gDLL->getText("TXT_KEY_PLOT_IMP_UPGRADE", iTurns, GC.getImprovementInfo((ImprovementTypes) GC.getImprovementInfo(eImprovement).getImprovementUpgrade()).getTextKeyWide()));
+			}
+		}
+	}
+	if (pPlot->getRevealedRouteType(GC.getGameINLINE().getActiveTeam(), true) != NO_ROUTE)
+	{
+		szString.append(NEWLINE);
+		szString.append(GC.getRouteInfo(pPlot->getRevealedRouteType(GC.getGameINLINE().getActiveTeam(), true)).getDescription());
+	}
+
+}
+// city plot mouse over help - inaiwae - END
 
 void CvGameTextMgr::setCityPlotYieldValueString(CvWStringBuffer &szString, CvCity* pCity, int iIndex, bool bAvoidGrowth, bool bIgnoreGrowth, bool bIgnoreFood)
 {

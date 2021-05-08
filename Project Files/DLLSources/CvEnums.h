@@ -509,6 +509,7 @@ enum WidgetTypes
 	WIDGET_DOMESTIC_MARKET,
 	// R&R, Robert Surcouf, Custom House Popup-Screen END
 	WIDGET_ASSIGN_CITIZEN_TO_PLOT,
+	WIDGET_CITY_PLOT_INFO, // city plot mouse over help - inaiwae
 	WIDGET_ASSIGN_TRADE_ROUTE,
 	WIDGET_EJECT_CITIZEN,
 	WIDGET_SHIP_CARGO,

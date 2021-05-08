@@ -192,6 +192,10 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_ASSIGN_CITIZEN_TO_PLOT:
 		break;
 
+	case WIDGET_CITY_PLOT_INFO:
+		parseCityPlotHelp(widgetDataStruct, szBuffer); // city plot mouse over help - inaiwae
+		break;
+
 	case WIDGET_ZOOM_CITY:
 		szBuffer.append(gDLL->getText("TXT_KEY_ZOOM_CITY_HELP"));
 		break;
@@ -2384,6 +2388,26 @@ void CvDLLWidgetData::parseCitizenHelp(CvWidgetDataStruct &widgetDataStruct, CvW
 		GAMETEXT.setCitizenHelp(szBuffer, *pCity, *pUnit);
 	}
 }
+
+// city plot mouse over help - inaiwae - START
+void CvDLLWidgetData::parseCityPlotHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
+{
+    CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(widgetDataStruct.m_iData2);
+    if (pCity == NULL)
+    {
+        pCity =    gDLL->getInterfaceIFace()->getHeadSelectedCity();
+    }
+    if (pCity != NULL)
+    {
+        CvPlot* pPlot = pCity->getCityIndexPlot(widgetDataStruct.m_iData1);
+        if (NULL == pPlot)
+        {
+			return;
+		}
+		GAMETEXT.setCityPlotHelp(szBuffer, pPlot);
+	}
+}
+// city plot mouse over help - inaiwae - END
 
 void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
