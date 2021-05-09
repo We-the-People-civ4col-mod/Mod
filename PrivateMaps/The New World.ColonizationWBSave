@@ -90733,7 +90733,7 @@ EndPlot
 BeginPlot
 	x=75,y=122
 	TerrainType=TERRAIN_OCEAN
-	PlotType=3,
+	PlotType=3
 EndPlot
 BeginPlot
 	x=75,y=123
