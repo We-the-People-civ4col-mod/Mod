@@ -78750,19 +78750,16 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=65,y=135
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=65,y=136
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=65,y=137
@@ -78814,19 +78811,16 @@ BeginPlot
 	FeatureType=FEATURE_VENT_DEF, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=65,y=147
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=65,y=148
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=65,y=149
@@ -79924,46 +79918,18 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=66,y=135
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=0
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=0
-		Profession=PROFESSION_DRAGOON
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_PREACHER, UnitOwner=0
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=66,y=136
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=66,y=137
@@ -80016,54 +79982,18 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=66,y=147
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVELA_REDONDA, UnitOwner=37
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_MOUNTED_CONQUISTADOR, UnitOwner=37
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_COUNTER
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CHRISTIAN_MISSIONARY, UnitOwner=37
-		Profession=PROFESSION_MISSIONARY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_MISSIONARY
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=37
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=66,y=148
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=66,y=149
@@ -81194,21 +81124,18 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=135
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=136
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=0,
 EndPlot
 BeginPlot
 	x=67,y=137
@@ -81265,14 +81192,12 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=67,y=147
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=67,y=148
@@ -81280,7 +81205,6 @@ BeginPlot
 	FeatureType=FEATURE_VENT_FAV, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=37,
 EndPlot
 BeginPlot
 	x=67,y=149
@@ -83814,19 +83738,16 @@ BeginPlot
 	FeatureType=FEATURE_VENT_FAV, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=69,y=165
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=69,y=166
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=69,y=167
@@ -85034,45 +84955,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=70,y=165
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=34
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=34
-		Profession=PROFESSION_DRAGOON
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FARMER, UnitOwner=34
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=70,y=166
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=70,y=167
@@ -86275,21 +86168,18 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=71,y=165
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=71,y=166
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=34,
 EndPlot
 BeginPlot
 	x=71,y=167
@@ -86427,20 +86317,17 @@ BeginPlot
 	x=71,y=193
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=71,y=194
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=71,y=195
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=71,y=196
@@ -87630,46 +87517,18 @@ BeginPlot
 	x=72,y=193
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=72,y=194
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=33
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_EXPERT_TRADER, UnitOwner=33
-		Profession=PROFESSION_NATIVE_TRADER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_TRADER
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUNTER, UnitOwner=33
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=72,y=195
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=72,y=196
@@ -88869,21 +88728,18 @@ BeginPlot
 	x=73,y=193
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=73,y=194
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=73,y=195
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=33,
 EndPlot
 BeginPlot
 	x=73,y=196
@@ -90877,22 +90733,19 @@ EndPlot
 BeginPlot
 	x=75,y=122
 	TerrainType=TERRAIN_OCEAN
-	PlotType=3
-	TeamReveal=38,
+	PlotType=3,
 EndPlot
 BeginPlot
 	x=75,y=123
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=75,y=124
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=75,y=125
@@ -92090,39 +91943,12 @@ BeginPlot
 	x=76,y=122
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=76,y=123
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=38
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CHRISTIAN_MISSIONARY, UnitOwner=38
-		Profession=PROFESSION_MISSIONARY
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_MISSIONARY
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_HUNTER, UnitOwner=38
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=76,y=124
@@ -92130,7 +91956,6 @@ BeginPlot
 	FeatureType=FEATURE_VENT_DEF, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=76,y=125
@@ -93345,21 +93170,18 @@ BeginPlot
 	x=77,y=122
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=77,y=123
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=77,y=124
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=38,
 EndPlot
 BeginPlot
 	x=77,y=125
@@ -106953,20 +106775,17 @@ BeginPlot
 	x=88,y=113
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=88,y=114
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=88,y=115
 	FeatureType=FEATURE_VENT_DEF, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=88,y=116
@@ -108198,46 +108017,18 @@ BeginPlot
 	x=89,y=113
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=89,y=114
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARAVEL, UnitOwner=36
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=36
-		Profession=PROFESSION_DRAGOON
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FISHERMAN, UnitOwner=36
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=89,y=115
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=89,y=116
@@ -109484,14 +109275,12 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=90,y=114
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=90,y=115
@@ -109499,7 +109288,6 @@ BeginPlot
 	FeatureType=FEATURE_VENT_DEF, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=36,
 EndPlot
 BeginPlot
 	x=90,y=116
@@ -114106,19 +113894,16 @@ BeginPlot
 	x=94,y=37
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=94,y=38
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=94,y=39
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=94,y=40
@@ -115391,45 +115176,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=95,y=38
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_CARRACK, UnitOwner=35
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_SCOUT, UnitOwner=35
-		Profession=PROFESSION_SCOUT
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SCOUT
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_FISHERMAN, UnitOwner=35
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=95,y=39
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=95,y=40
@@ -116694,20 +116451,17 @@ BeginPlot
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=96,y=38
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=96,y=39
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=35,
 EndPlot
 BeginPlot
 	x=96,y=40
@@ -132190,20 +131944,17 @@ BeginPlot
 	x=108,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=32,
 EndPlot
 BeginPlot
 	x=108,y=83
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=32,
 EndPlot
 BeginPlot
 	x=108,y=84
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=32,
 EndPlot
 BeginPlot
 	x=108,y=85
@@ -133480,39 +133231,12 @@ BeginPlot
 	x=109,y=82
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=32,
 EndPlot
 BeginPlot
 	x=109,y=83
 	EuropeType=EUROPE_EAST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	BeginUnit
-		UnitType=UNIT_FLUYT, UnitOwner=32
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=6
-		UnitAIType=UNITAI_TRANSPORT_SEA
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_COLONIST, UnitOwner=32
-		Profession=PROFESSION_DRAGOON
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_OFFENSIVE
-	EndUnit
-	BeginUnit
-		UnitType=UNIT_CARPENTER, UnitOwner=32
-		Profession=PROFESSION_SETTLER
-		Damage=0
-		Level=1, Experience=0
-		FacingDirection=4
-		Sleep
-		UnitAIType=UNITAI_SETTLER
-	EndUnit
-	TeamReveal=32,
 EndPlot
 BeginPlot
 	x=109,y=84
@@ -133520,7 +133244,6 @@ BeginPlot
 	BonusType=BONUS_WHALE
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
-	TeamReveal=32,
 EndPlot
 BeginPlot
 	x=109,y=85
