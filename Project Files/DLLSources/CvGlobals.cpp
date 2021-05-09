@@ -2751,43 +2751,52 @@ int CvGlobals::getDefineINT( const char * szName ) const
 
 float CvGlobals::getDefineFLOAT( const char * szName ) const
 {
+	// the exe calls this functions fairly often, usually related to camera settings
+	// since reading this uncached is slow, use static floats to store the values between calls
+	// this way values are only read uncached once and responding to the exe over and over will take less CPU time
 
 	if (0 == strcmp(szName, "MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT"))
 	{
-		static const float val = getDefineFLOAT("MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT");
+		static const float val = getDefineFLOATUncached("MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT");
 		return val;
 	}
 	else if (0 == strcmp(szName, "SADDLE_PARABOLA_MIN_Y_PERCENT"))
 	{
-		static const float val = getDefineFLOAT("SADDLE_PARABOLA_MIN_Y_PERCENT");
+		static const float val = getDefineFLOATUncached("SADDLE_PARABOLA_MIN_Y_PERCENT");
 		return val;
 	}
 	else if (0 == strcmp(szName, "SADDLE_PARABOLA_MIN_X_PERCENT"))
 	{
-		static const float val = getDefineFLOAT("SADDLE_PARABOLA_MIN_X_PERCENT");
+		static const float val = getDefineFLOATUncached("SADDLE_PARABOLA_MIN_X_PERCENT");
 		return val;
 	}
 	else if (0 == strcmp(szName, "SADDLE_PARABOLA_Y_INTERCEPT_PERCENT"))
 	{
-		static const float val = getDefineFLOAT("SADDLE_PARABOLA_Y_INTERCEPT_PERCENT");
+		static const float val = getDefineFLOATUncached("SADDLE_PARABOLA_Y_INTERCEPT_PERCENT");
 		return val;
 	}
 	else if (0 == strcmp(szName, "MINIMAP_PARABOLA_MIN_X_PERCENT"))
 	{
-		static const float val = getDefineFLOAT("MINIMAP_PARABOLA_MIN_X_PERCENT");
+		static const float val = getDefineFLOATUncached("MINIMAP_PARABOLA_MIN_X_PERCENT");
 		return val;
 	}
 	else if (0 == strcmp(szName, "MINIMAP_PARABOLA_MIN_Y_PERCENT"))
 	{
-		static const float val = getDefineFLOAT("MINIMAP_PARABOLA_MIN_Y_PERCENT");
+		static const float val = getDefineFLOATUncached("MINIMAP_PARABOLA_MIN_Y_PERCENT");
 		return val;
 	}
 	else
 	{
-		float fReturn = 0;
-		GC.getDefinesVarSystem()->GetValue( szName, fReturn );
-		return fReturn;
+		return getDefineFLOATUncached(szName);
 	}
+}
+
+// vanilla getDefineFLOAT. Used when wanting to ignore the cache, like when setting the cache
+float CvGlobals::getDefineFLOATUncached(const char * szName) const
+{
+	float fReturn = 0;
+	GC.getDefinesVarSystem()->GetValue(szName, fReturn);
+	return fReturn;
 }
 
 const char * CvGlobals::getDefineSTRING( const char * szName ) const

@@ -613,6 +613,7 @@ public:
 	// ***** EXPOSED TO PYTHON *****
 	DllExport int getDefineINT( const char * szName ) const;
 	DllExport float getDefineFLOAT( const char * szName ) const;
+	float getDefineFLOATUncached(const char * szName) const;
 	DllExport const char * getDefineSTRING( const char * szName ) const;
 	DllExport void setDefineINT( const char * szName, int iValue );
 	DllExport void setDefineFLOAT( const char * szName, float fValue );
