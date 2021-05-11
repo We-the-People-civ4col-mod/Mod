@@ -841,11 +841,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			CvCity* pCity = kPlayer.getCity(info.getData1());
 			if (pCity != NULL)
 			{
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo(eYield).isCargo())
 					{
+						YieldTypes eExportYield = eYield + NUM_YIELD_TYPES;
 						// transport feeder - start - Nightinggale
 						// R&R mod, vetiarvind, max yield import limit - start
 
@@ -857,12 +857,12 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						}
 
 						// load yield data and store in human readable variable names						
-						const bool bImport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						const bool bExport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
-						const bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
-						const bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(iYield) & 0x08);
-						const int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(iYield);
-						const int iMaintainLevel = pPopupReturn->getSpinnerWidgetValue(NUM_YIELD_TYPES + iYield);
+						const bool bImport          = (pPopupReturn->getCheckboxBitfield(eYield)       & 0x01);
+						const bool bExport          = (pPopupReturn->getCheckboxBitfield(eExportYield) & 0x01);
+						const bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(eYield)       & 0x02);
+						const bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(eExportYield) & 0x02);
+						const int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(eYield);
+						const int iMaintainLevel    =  pPopupReturn->getSpinnerWidgetValue(eExportYield);
 
 						// check if any data is different from the same data in the city
 						if (bImport != pCity->isImport(eYield)
@@ -881,7 +881,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 							buffer.iImportLimitLevel = iImportLimitLevel;
 							buffer.iMaintainLevel    = iMaintainLevel;
 
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, buffer.iNetwork, bImport, bExport, bMaintainImport, bAutoExport);
+							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, eYield, buffer.iNetwork, bImport, bExport, bMaintainImport, bAutoExport);
 						}
 						// R&R mod, vetiarvind, max yield import limit - end
 						// transport feeder - end - Nightinggale
@@ -3078,19 +3078,18 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 	{
 		return false;
 	}
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_YIELD_IMPORT_POPUP", pCity->getNameKey()));
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_TITLE", pCity->getNameKey()));
 
 	// auto traderoute - start - Nightinggale
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTO_TRADEROUTE_CLEAR_ALL").c_str(), NULL, 0);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTO_TRADEROUTE_IMPORT_ALL").c_str(), NULL, 1);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTO_TRADEROUTE_AUTO_EXPORT_ALL").c_str(), NULL, 2);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_CLEAR_ALL").c_str(), NULL, 0);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_ALL").c_str(), NULL, 1);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_ALL").c_str(), NULL, 2);
 	// auto traderoute - end - Nightinggale
 
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 		if (kYield.isCargo())
 		{
 			// R&R mod, vetiarvind, max yield import limit - start
@@ -3103,32 +3102,32 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			
 			// transport feeder - start - Nightinggale
 			
+
+			// import
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
-			
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
-			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 4, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP); 
-			
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT") + L"</font>", iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isImport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_EXPORT") + L"</font>", iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->isExport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 2, pCity->getImportsMaintain(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 2, L"", iYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP"));
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 3, pCity->isAutoExport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 3, L"", iYield, gDLL->getText("TXT_KEY_POPUP_AUTO_EXPORT_HELP"));
-			// transport feeder - end - Nightinggale
-			// R&R mod, vetiarvind, max yield import limit - start
+
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
+			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, eYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isImport(eYield), eYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->getImportsMaintain(eYield), eYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP"));
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 
+			// export
+			YieldTypes eExportYield = eYield + NUM_YIELD_TYPES;
+
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
-			// transport feeder - start - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
-			// transport feeder - end - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
 
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eExportYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
+			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, eExportYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isExport(eYield), eExportYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->isAutoExport(eYield), eExportYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP"));
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
-
 			// R&R mod, vetiarvind, max yield import limit - end
 		}
 	}

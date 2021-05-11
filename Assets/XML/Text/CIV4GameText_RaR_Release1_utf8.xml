@@ -1472,24 +1472,6 @@ Multiple repeating units is possible and an equal number will be trained of each
         <Spanish>[ICON_BULLET]%D1%% better prices from Bargaining and Trade Posts</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
-        <English>Import feeder
-Turn import on at 75%
-Turn import off at 100%</English>
-        <French>Gestionnaire d'importation
-Démarre l'importation à 75%
-Arrête l'importation à 100%</French>
-        <German>Import feeder
-Schaltet Import bei 75% an
-Schaltet Import bei 100% aus</German>
-        <Italian>Import feeder
-Turn import on at 75%
-Turn import off at 100%</Italian>
-        <Spanish>Import feeder
-Turn import on at 75%
-Turn import off at 100%</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_CITY_LEVIED_MILITIA_FOR_PROTECTION</Tag>
         <English>Milord, the city %s1_city has levied a Settler's Militia because they felt unprotected. [NEWLINE]To do so, they have taken Food from Storage and Money from the Treasury.</English>
         <French>Sir, la ville de %s1_city  a levé une milice à partir de simples colons car ils ne se sentaient pas protéger. [NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>

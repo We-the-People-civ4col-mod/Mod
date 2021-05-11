@@ -296,5 +296,10 @@
             <Description>TXT_KEY_CONCEPT_LARGE_RIVERS</Description>
             <Civilopedia>TXT_KEY_CONCEPT_LARGE_RIVERS_PEDIA</Civilopedia>
         </ConceptInfo>
+		<ConceptInfo>
+            <Type>CONCEPT_AUTO_IMPORT_EXPORT</Type>
+            <Description>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT_PEDIA</Civilopedia>
+        </ConceptInfo>
     </ConceptInfos>
 </Civ4BasicInfos>

@@ -10,22 +10,6 @@
         <English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</English>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_AUTO_TRADEROUTE_CLEAR_ALL</Tag>
-        <English>Clear All</English>
-     </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_AUTO_TRADEROUTE_IMPORT_ALL</Tag>
-        <English>Import All Goods</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_AUTO_TRADEROUTE_AUTO_EXPORT_ALL</Tag>
-        <English>Auto Export All Goods</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_POPUP_AUTO_EXPORT_HELP</Tag>
-        <English>Automatic turn export on and off at turn start[NEWLINE]A high number of trade routes slows down the game. This feature allows disabling trade routes when there's nothing to transport.[NEWLINE]Remember that restarting exports won't take effect until the next turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_ACTION_BECOMES_STRING</Tag>
         <English>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</English>
     </TEXT>

@@ -2114,14 +2114,6 @@
         <Spanish>Edite los bienes creados y comercializados</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_YIELD_IMPORT_POPUP</Tag>
-        <English>Select imports, exports, minimum and maximum goods stored for %s1_city</English>
-        <French>Sélectionner les imports, les exports, et les seuils de biens stockées à %s1_city</French>
-        <German>Importe, Exporte und gelagerte Mindestgüter, Maximal für die Stadt %s1_city auswählen</German>
-        <Italian>Seleziona importazioni, esportazioni e quantità minima, massimo di beni immagazzinati per %s1_city</Italian>
-        <Spanish>Seleccionar importaciones, exportaciones y las mercancías mínimas, máximo almacenadas en %s1_city</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_CAPTURES_CARGO</Tag>
         <English>[ICON_BULLET]Captures the cargo of defeated transports</English>
         <French>[ICON_BULLET]Récupère la cargaison des unités de transport vaincues</French>
@@ -2240,22 +2232,6 @@
         <German>Bis zu</German>
         <Italian>Fino</Italian>
         <Spanish>Hasta</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_POPUP_IMPORT</Tag>
-        <English>Import</English>
-        <French>Importer</French>
-        <German>Import</German>
-        <Italian>Importazione</Italian>
-        <Spanish>Importar</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_POPUP_EXPORT</Tag>
-        <English>Export</English>
-        <French>Exporter</French>
-        <German>Export</German>
-        <Italian>Esportazione</Italian>
-        <Spanish>Exportar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ADVISOR_NO_PROFESSION</Tag>

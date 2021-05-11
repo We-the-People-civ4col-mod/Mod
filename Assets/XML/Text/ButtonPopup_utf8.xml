@@ -16,4 +16,73 @@
 		<English>Each turn the governor will consider what would be best to produce. He can easily change production to get the best out of the situation whenever things change.[NEWLINE][NEWLINE]Note: Your requests are guidelines only. If in future the requested crops are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
 		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[NEWLINE][NEWLINE]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_TITLE</Tag>
+        <English>Select imports, exports, minimum and maximum goods stored for %s1_city[NEWLINE]Read Colopedia's concept page for how to use this.</English>
+        <French>Sélectionner les imports, les exports, et les seuils de biens stockées à %s1_city</French>
+        <German>Importe, Exporte und gelagerte Mindestgüter, Maximal für die Stadt %s1_city auswählen</German>
+        <Italian>Seleziona importazioni, esportazioni e quantità minima, massimo di beni immagazzinati per %s1_city</Italian>
+        <Spanish>Seleccionar importaciones, exportaciones y las mercancías mínimas, máximo almacenadas en %s1_city</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_CLEAR_ALL</Tag>
+        <English>Clear All</English>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_ALL</Tag>
+        <English>Import All Goods</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_EXPORT_ALL</Tag>
+        <English>Auto Export All Goods</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_IMPORT</Tag>
+        <English>Import</English>
+        <French>Importer</French>
+        <German>Import</German>
+        <Italian>Importazione</Italian>
+        <Spanish>Importar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_IMPORT_HELP</Tag>
+        <English>Import this cargo[NEWLINE][NEWLINE]Left: import limit[NEWLINE]While importing, not transport can make the warehouse exceed this amount.[NEWLINE]0 means no limit.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
+        <English>Feeder</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
+        <English>Import feeder
+Turn import on at 75%
+Turn import off at 100%
+Compared to Maintail level (bottom spinbutton)</English>
+        <French>Gestionnaire d'importation
+Démarre l'importation à 75%
+Arrête l'importation à 100%</French>
+        <German>Import feeder
+Schaltet Import bei 75% an
+Schaltet Import bei 100% aus</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_EXPORT</Tag>
+        <English>Export</English>
+        <French>Exporter</French>
+        <German>Export</German>
+        <Italian>Esportazione</Italian>
+        <Spanish>Exportar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_EXPORT_HELP</Tag>
+        <English>Export this cargo[NEWLINE][NEWLINE]Left: maintain level[NEWLINE]Import if warehouse is below this level or export if warehouse exceeds this level.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT</Tag>
+        <English>Auto</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP</Tag>
+        <English>Automatic turn export on and off at turn start[NEWLINE]A high number of trade routes slows down the game. This feature allows disabling trade routes when there's nothing to transport.[NEWLINE]Remember that restarting exports won't take effect until the next turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
+    </TEXT>
 </Civ4GameText>
