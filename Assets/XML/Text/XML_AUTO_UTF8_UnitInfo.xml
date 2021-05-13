@@ -5807,9 +5807,8 @@
             <Text>Revolting African Slave:Revolting African Slaves</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
-        </Italian>
         <Spanish>
-            <Text>Esclavo repugnante africano:Esclavos repugnantes africanos</Text>
+            <Text>Esclavo rebelde africano:Esclavos rebeldes africanos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -5849,7 +5848,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Convicto repugnante:Convictos repugnantes</Text>
+            <Text>Convicto rebelde:Convictos rebeldes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
