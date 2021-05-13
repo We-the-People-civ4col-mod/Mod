@@ -5980,6 +5980,7 @@
 		<English>We will hunt down these criminals in Your name, Your Majesty !</English>
 		<French>Nous chasserons ces criminels en votre nom, votre Majesté !</French>
 		<German>Wir werden diese Verbrecher zur Strecke bringen, Eure Majestät !</German>
+	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_SMUGGLERS</Tag>
 		<English>Thank you for this hint, um warning, Your Majesty. We will act accordingly. (Hire smugglers)</English>
@@ -6428,7 +6429,7 @@
 		<Tag>TXT_KEY_CHURCH_WAR_REFUSED</Tag>
 		<English>You have refused the order of the Church to declare war. The Church and your King are outraged but your relations with %s1 have improved.</English>
 		<French>Vous avez refusé l'ordre de l'église de déclarer la guerre. Votre église et votre Roi sont outragés mais vos relations avec les [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] se sont améliorés.</French>
-		<German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber Eure Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] hat sich verbessert.</German
+		<German>Ihr habt den Befehl der Kirche verweigert, den Krieg zu erklären. Die Kirche und der König sind entrüstet, aber Eure Beziehung zu [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] hat sich verbessert.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STEALING_IMMIGRANT_SUCCESSFULL</Tag>

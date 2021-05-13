@@ -23,6 +23,7 @@ our @EXPORT = qw(
 	updateAutoFile
 	isTwoLevelFile
 	isDllExport
+	getXMLlocation
 );
 
 # first is a list of files with hardcoded Type settings in the DLL.
