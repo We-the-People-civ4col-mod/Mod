@@ -3464,7 +3464,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Esclavo repugnante:Esclavos repugnantes</Text>
+            <Text>Esclavo rebelde:Esclavos rebeldes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -3488,7 +3488,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Convicto repugnante:Convictos repugnantes</Text>
+            <Text>Convicto rebelde:Convictos rebeldes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
