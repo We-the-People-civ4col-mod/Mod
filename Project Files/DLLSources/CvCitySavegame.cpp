@@ -550,6 +550,17 @@ void CvCity::read(CvSavegameReader reader)
 		}
 		
 	}
+	// BUG WORKAROUND. Reset any yield, which stores negative amount
+	// ideally this shouldn't be here, but it makes the asserts and error message
+	// trigger when the bug triggers again rather than triggering if the bug happened prior to saving
+	// This increases the odds of catching the bug in the act
+	// We can always remove this later once the negative storage bug has been fixed
+	//    Nightinggale
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		m_em_iYieldStored.keepMax(eYield, 0);
+	}
+
 	UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 	this->setAutoThresholdCache(); // transport feeder - Nightinggale
 	cache_storageLossTradeValues_usingRawData(); //caching storage loss trade values

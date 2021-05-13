@@ -4641,6 +4641,17 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 	FAssert(validEnumRange(eYield));
 	FAssert(iValue >= 0 || eYield == YIELD_FOOD);
 
+	if (iValue < 0 && eYield != YIELD_FOOD)
+	{
+		// this is such a critical bug that we want people to be alert to it even without having asserts enabled
+		// this is the best chance we have of getting an autosave from the turn before it happened.
+		//    Nightinggale
+		CvString szDesc(gDLL->getText("TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC"));
+		CvString szTitle(gDLL->getText("TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE"));
+
+		gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+	}
+
 	int iChange = iValue - getYieldStored(eYield);
 	if (iChange != 0)
 	{
