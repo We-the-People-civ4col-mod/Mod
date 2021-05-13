@@ -5803,10 +5803,6 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Italian>
-            <Text>Revolting African Slave:Revolting African Slaves</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
         <Spanish>
             <Text>Esclavo rebelde africano:Esclavos rebeldes africanos</Text>
             <Gender>Male</Gender>
