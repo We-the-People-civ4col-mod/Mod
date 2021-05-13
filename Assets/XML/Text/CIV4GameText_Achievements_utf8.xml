@@ -10,72 +10,54 @@
 	  <English>[COLOR_HIGHLIGHT_TEXT]Chronicle[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</English>
         <French>[COLOR_HIGHLIGHT_TEXT]Chronique[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</French>
         <German>[COLOR_HIGHLIGHT_TEXT]Chronik[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</German>
-        <Italian>[COLOR_HIGHLIGHT_TEXT]Chronicle[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_HIGHLIGHT_TEXT]Chronicle[COLOR_REVERT] [COLOR_GREEN]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Spanish>
     </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
 		<English>Chronicle</English>
 		<French>Chronique</French>
 		<German>Ereignischronik</German>
-		<Italian>Chronicle</Italian>
-		<Spanish>Chronicle</Spanish>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVES</Tag>
         <English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
         <French>%s1 - %d2 [NUM2:réalisation:réalisations]</French>
         <German>%s1 - %d2 [NUM2:Leistung:Leistungen]</German>
-        <Italian>%s1 - %d2 [NUM2:Achievement:Achievements]</Italian>
-        <Spanish>%s1 - %d2 [NUM2:Achievement:Achievements]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_DEFAULT</Tag>
         <English>Default Achievement</English>
         <French>Réalisation (par défaut)</French>
         <German>Standard Errungenschaft</German>
-        <Italian>Default Achievement</Italian>
-        <Spanish>Default Achievement</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_DEFAULT_HEAD</Tag>
         <English>Main Achievements</English>
         <French>En-tête de réalisation (par défaut)</French>
         <German>Haupterrungenschaften</German>
-        <Italian>Default Achievement Head</Italian>
-        <Spanish>Default Achievement Head</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_DEFAULT_TEXT</Tag>
         <English>Default Achievement Text</English>
         <French>Corps de réalisation (par défaut)</French>
         <German>Standard Errungenschaftstext</German>
-        <Italian>Default Achievement Text</Italian>
-        <Spanish>Default Achievement Text</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PACIFIC</Tag>
         <English>Discovery of the Pacific</English>
         <French>Découverte du Pacifique</French>
         <German>Pazifik entdeckt</German>
-        <Italian>Discovered Pacific</Italian>
-        <Spanish>Discovered Pacific</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PACIFIC_HEAD</Tag>
         <English>A sea as still and peaceful as the sky</English>
         <French>Vous avez découvert l'océan Pacifique</French>
         <German>Ein Meer, so still und friedlich wie der Himmel</German>
-        <Italian>You have discovered the Pacific</Italian>
-        <Spanish>You have discovered the Pacific</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PACIFIC_TEXT</Tag>
-        <English>As your vessel sails away from land, you realise you have found the Pacific.[NEWLINE][NEWLINE]Your explorer had looked out into the distance in disbelief. Beyond the beach, an endless expanse of water stretched to the horizon. A sea as wide as the sky.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He was right,[COLOR_REVERT]" he murmurs, "[COLOR_SELECTED_TEXT]the governor was right.[COLOR_REVERT]" There is a sea route leading west from the New World, out into the endless expanse of a new ocean.[NEWLINE][NEWLINE]An ocean whose calm swells seem so peaceful, as if the thought of storms were just an old sailor's yarn. "[COLOR_SELECTED_TEXT]It shall be called the 'Pacific Ocean'. The 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>As your vessel sails away from land, you realise you have found the Pacific.[NEWLINE][NEWLINE]Not long ago your explorer peered into the distance in disbelief. Beyond the beach, an endless expanse of water stretched to the horizon. A sea as wide as the sky.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He was right,[COLOR_REVERT]" he murmurs, "[COLOR_SELECTED_TEXT]the governor was right.[COLOR_REVERT]" There is a sea route leading west from the New World, out into the endless expanse of a new ocean.[NEWLINE][NEWLINE]An ocean whose calm swells seem so peaceful, as if the thought of storms were just an old sailor's yarn. "[COLOR_SELECTED_TEXT]It shall be called the 'Pacific Ocean'. The 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Lorsque votre navire s'éloigne de la côte, vous réalisez que vous avez découvert l'Océan Pacifique. La route des Indes est enfin ouverte... Mais n'est-elle pas plus longue que Colomb l'imaginait ?[NEWLINE][NEWLINE]</French>
         <German>Ungläubig starrt Euer Entdecker in die Ferne. Jenseits der Küstenlinie dehnt sich eine schier endlose Wasserfläche bis zum Horizont. Ein Meer, so weit wie der Himmel. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er hatte recht,[COLOR_REVERT]" murmelt er, "[COLOR_SELECTED_TEXT]der Gouverneur hatte recht.[COLOR_REVERT]" Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen führt, hinaus in die endlose Weite eines neuen Ozeans. [NEWLINE][NEWLINE]Ein Ozean, dessen ruhiger Wellengang so friedlich wirkt, als wäre der Gedanke an Unwetter nur Seemannsgarn. "[COLOR_SELECTED_TEXT]Der 'Stille Ozean' soll er heißen. Der 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>As your vessel sails away from land, you realise you have found the Pacific. Isn't it ironic that it took this many more years to find India than Columbus originally anticipated.</Italian>
-        <Spanish>As your vessel sails away from land, you realise you have found the Pacific. Isn't it ironic that it took this many more years to find India than Columbus originally anticipated.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC</Tag>
@@ -90,256 +72,191 @@
         <English>A dream of fame and glory</English>
         <French>Vous rêvez d'un monde nouveau</French>
         <German>Ein Traum von Ruhm und Glorie</German>
-        <Italian>You have a dream</Italian>
-        <Spanish>You have a dream</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC_TEXT</Tag>
         <English>You are dreaming. Dreaming of the discovery of a new continent, a new world far away.[NEWLINE][NEWLINE]Just a moment ago, you were sitting at your desk by candlelight, poring over old parchments that whisper of an unknown land on faraway shores.[NEWLINE][NEWLINE]A vision appears. Sights and sounds of everyday life fade away. Night-black darkness and silence stun your senses.[NEWLINE][NEWLINE]You see yourself on a coast far from home. You stand surrounded by your men. You hear your voice claiming this wilderness as your own.[NEWLINE][NEWLINE]An ensign plants your flag in the soil of this New World, and a devout churchman thanks the Creator for letting you discover it.[NEWLINE][NEWLINE]You realize that this is the path predestined for you. The path that will write your name in the annals of history, so that for a thousand years and more every child will see you as a symbol of daring and bravery.[NEWLINE][NEWLINE]As your vision fades away, you understand what you must do in the morning.[NEWLINE][NEWLINE]</English>
         <French>Cela fait déjà 77 ans que des navigateurs portugais un peu fou ont réussi à franchir le Cap Chaunar, ouvrant alors le monde au-delà des côtes marocaines. Aujourd'hui, il n'y a plus de doutes possibles : navigateurs, astronomes, mathématiciens, savants, tous par leurs observations convergent vers la même conclusion... elle est ronde.[NEWLINE][NEWLINE]Cette nuit vous avez rêvé. Rêver d'un chemin vers l'Ouest, un chemin vers les Indes, un chemin vers le Nouveau Monde. Ce matin, vous savez ce qu'il vous reste à faire.[NEWLINE][NEWLINE]</French>
         <German>Eben habt Ihr noch bei Kerzenschein an Eurem Schreibtisch gesessen und über alten Pergamenten gebrütet, die von einem unbekanntem Land an fernen Gestaden raunen.[NEWLINE][NEWLINE]Da sucht Euch eine Vision heim. Licht und Lärm des Lebens verstummen, nachtschwarze Dunkelheit und Stille betäuben Eure Sinne. Dann seht Ihr Euch selbst, an einer Küste fern der Heimat.[NEWLINE][NEWLINE]Ihr steht im Kreise Eurer Männer. Ihr hört Eure Stimme, wie sie diese Wildnis als Euer Eigen beansprucht.[NEWLINE][NEWLINE]Ein Fähnrich pflanzt Eure Flagge in das Erdreich dieser Neuen Welt, und ein frommer Kirchenmann dankt dem Schöpfer, dass er Euch sie entdecken ließ.[NEWLINE][NEWLINE]Ihr erkennt, dass dies der Euch vorherbestimmte Pfad ist. Der Weg, der Euren Namen in die Annalen schreiben wird, auf dass er noch im nächsten Millennium als Symbol für Wagemut und Tapferkeit jedem Kind bekannt ist.[NEWLINE][NEWLINE]Als Eure Vision erlischt, wisst Ihr, was Ihr am nächsten Morgen zu tun habt.[NEWLINE][NEWLINE]</German>
-        <Italian>You are dreaming. Dreaming to discover a new continent, a new world far away. Next morning you know what you have to do ...</Italian>
-        <Spanish>You are dreaming. Dreaming to discover a new continent, a new world far away. Next morning you know what you have to do ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LANDFALL</Tag>
         <English>"Land, ho!"</English>
         <French>« Terre en vu ! »</French>
         <German>"Land in Sicht!"</German>
-        <Italian>Found the New World</Italian>
-        <Spanish>Found the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LANDFALL_HEAD</Tag>
         <English>A New World</English>
         <French>« Terre en vue ! »</French>
         <German>Eine Neue Welt</German>
-        <Italian>You have discovered the New World</Italian>
-        <Spanish>You have discovered the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_LANDFALL_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]Land, ho![COLOR_REVERT]" comes the call from the crow's nest one morning, and your men rush on deck.[NEWLINE][NEWLINE]On the horizon you can make out a distant silhouette. At last! After long weeks at sea, you have reached a land where no devout Christian man has ever before set foot.[NEWLINE][NEWLINE]A New World waits for you to subdue it. What wonders and what horrors await you?[NEWLINE][NEWLINE]</English>
         <French>C'est le cri poussé par le matelot du haut de la vigie. Vous ne vous trompiez donc pas, votre survie est assurée ! N'est-ce pas un Nouveau Monde qui semble s'ouvrir à vous ?[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Land in Sicht![COLOR_REVERT]" erschallt eines Morgens der Ruf aus dem Krähennest, und Eure Männer stürzen an Deck.[NEWLINE][NEWLINE]Ihr erspäht am Horizont einen grauen Schattenriss. Endlich! Nach langen Wochen auf See habt Ihr ein Land entdeckt, auf das noch kein frommer Christenmensch seinen Fuß gesetzt hat.[NEWLINE][NEWLINE]Eine Neue Welt wartet darauf, dass Ihr sie Euch untertan macht. Welche Wunder und welche Schrecknisse werden Euch erwarten?[NEWLINE][NEWLINE]</German>
-        <Italian>With a shout of "Land Ho" from the crowsnest of your vessel, the crew cheers loudly. Your long voyage from Europe is over.</Italian>
-        <Spanish>With a shout of "Land Ho" from the crowsnest of your vessel, the crew cheers loudly. Your long voyage from Europe is over.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING</Tag>
         <English>Your first colony</English>
         <French>Votre première colonie</French>
         <German>Eure erste Siedlung</German>
-        <Italian>Your first colony</Italian>
-        <Spanish>Your first colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING_HEAD</Tag>
-        <English>Topping-out ceremony</English>
+        <English>Housewarming</English>
         <French>Votre première colonie</French>
         <German>Richtfest</German>
-        <Italian>Your first colony</Italian>
-        <Spanish>Your first colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING_TEXT</Tag>
         <English>Finding a suitable stretch of land with timber and a quiet bay for fishing, your colonists set about the task of establishing new homes in the New World.[NEWLINE][NEWLINE]The carpenters put aside their hammers, and you open the last barrel of brandy you brought from the old country.[NEWLINE][NEWLINE]Exhausted and satisfied, your people look at the first camp they have set up. It is not large, but it is a beginning.[NEWLINE][NEWLINE]You now have your first settlement in the New World. The brush will be cleared, fertile land will be cultivated.[NEWLINE][NEWLINE]You clear your throat and look around. Heads bow, and you raise your voice in thanksgiving to the Lord who watches over you.[NEWLINE][NEWLINE]</English>
         <French>Vos colons ont découvert un lieu propice à l'établissement d'une colonie dans ce Nouveau Monde, riche en bois de construction et en gibier de toute sorte.[NEWLINE][NEWLINE]</French>
         <German>Die Zimmerleute legen ihre Hämmer beiseite, und Ihr lasst das letzte Fässchen Branntwein öffnen, das Ihr aus der alten Heimat mitgebracht habt.[NEWLINE][NEWLINE]Erschöpft und zufrieden blicken Eure Leute auf das erste Lager, das sie errichtet haben. Es ist nicht groß, aber es ist ein Anfang.[NEWLINE][NEWLINE]Ihr habt nun Eure erste Niederlassung in der Neuen Welt. Das Gestrüpp wird gerodet, das fruchtbare Land bestellt werden.[NEWLINE][NEWLINE]Ihr räuspert Euch und blickt in die Runde. Die Köpfe senken sich, und Ihr erhebt Eure Stimme zu einem Dankgebet an den Herrn, der über Euch wacht.[NEWLINE][NEWLINE]</German>
-        <Italian>Finding a suitable stretch of land with both timber and a quiet bay for fishing, your colonists start the task of establishing new homes in the New World.</Italian>
-        <Spanish>Finding a suitable stretch of land with both timber and a quiet bay for fishing, your colonists start the task of establishing new homes in the New World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES</Tag>
         <English>Your second colony</English>
         <French>Votre deuxième colonie</French>
         <German>Eure zweite Siedlung</German>
-        <Italian>Your second colony</Italian>
-        <Spanish>Your second colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_HEAD</Tag>
         <English>Onward journey</English>
         <French>L'expansion commence !</French>
         <German>Weiterfahrt</German>
-        <Italian>You have two settlements in the New World</Italian>
-        <Spanish>You have two settlements in the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_TEXT</Tag>
         <English>You have two settlements in the New World[NEWLINE][NEWLINE]Stunned cries ring out, then there is a clatter up the narrow stairs, and a ragged crowd of emigrant children in clogs tumbles onto the ship's bridge.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Take it easy![COLOR_REVERT]" the captain grumbles amiably.[NEWLINE][NEWLINE]Their parents follow, the mother wringing her hands, and the father looking as indignant as if he'd eaten bad porridge. "[COLOR_SELECTED_TEXT]Jesus, Mary and Joseph![COLOR_REVERT]" he shouts, pointing to the nearby coastal village the ship is sailing past, "[COLOR_SELECTED_TEXT]why don't you take us ashore?[COLOR_REVERT]"[NEWLINE][NEWLINE]Distrust and fear are suddenly written all over his face. "[COLOR_SELECTED_TEXT]Are you looking for a remote bay to sell us to the pirates?[COLOR_REVERT]"[NEWLINE][NEWLINE]Then the captain laughs, so heartily that the children start to giggle.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Don't worry, my good man! Look down the coast and see those plumes of smoke on the horizon. The good governor has long called this second settlement his own. There you will find your new home.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez désormais deux colonies dans le Nouveau Monde[NEWLINE][NEWLINE]</French>
         <German>Verblüffte Schreie erschallen, dann klappert es die schmale Stiege herauf, und eine zerlumpte Schar Auswandererkinder in Holzschuhen purzelt auf das Achterdeck.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer mit der Ruhe![COLOR_REVERT]", brummt der Kapitän freundlich.[NEWLINE][NEWLINE]Ihre Eltern folgen, die Mutter ringt die Hände, und der Vater blickt so empört, als habe man ihm in die Morgengrütze gespuckt. "[COLOR_SELECTED_TEXT]Jesses, Maria und Josef![COLOR_REVERT]", ruft er und zeigt auf das nahe Küstendorf, an dem das Schiff vorbeisegelt, "[COLOR_SELECTED_TEXT]warum bringt Ihr uns nicht an Land?[COLOR_REVERT]"[NEWLINE][NEWLINE]Misstrauen und Angst stehen ihm plötzlich ins Gesicht geschrieben. "[COLOR_SELECTED_TEXT]Wollt Ihr uns vielleicht in einer entlegenen Bucht an die Piraten verkaufen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Da lacht der Kapitän, so herzhaft, dass die Kinder mitkichern müssen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Keine Sorge, guter Mann! Schaut mal die Küste entlang und blickt auf die Rauchfahnen am Horizont. Der gute Gouverneur nennt längst eine zweite Siedlung sein Eigen, und dort werdet Ihr Eure neue Heimat finden.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have two settlements in the New World</Italian>
-        <Spanish>You have two settlements in the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES</Tag>
         <English>Your fourth colony</English>
         <French>Votre quatrième colonie</French>
         <German>Eure vierte Siedlung</German>
-        <Italian>Your fourth colony</Italian>
-        <Spanish>Your fourth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_HEAD</Tag>
         <English>This land is blessed</English>
         <French>Ce pays est donc béni !</French>
         <German>Dieses Land ist gesegnet</German>
-        <Italian>You have four settlements in the New World</Italian>
-        <Spanish>You have four settlements in the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_TEXT</Tag>
         <English>A loud voice resounds across the square in front of your austere governor's mansion. You walk to the narrow window and look down at the crowd surrounding the crier.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]This land is blessed[COLOR_REVERT]", the man announces in a clear voice. "[COLOR_SELECTED_TEXT]Out in the wilderness the fourth of our settlements has been established in the past week. Fertile fields will be tilled, strong houses built, healthy children born, and the word of the Lord proclaimed.[NEWLINE][NEWLINE]Undoubtedly, we owe this not only to our diligence and the benevolence of the Almighty; but also to the wisdom and prudence of our leader.[COLOR_REVERT]"[NEWLINE][NEWLINE]The crowd nods approvingly.[NEWLINE][NEWLINE]</English>
         <French>Vous disposez dorénavant de quatre colonies dans le Nouveau Monde. Les richesses de ces terres sont-elles sans limite ?[NEWLINE][NEWLINE]</French>
         <German>Eine laute Stimme erschallt über den Platz vor Eurem schmucklosen Gouverneurspalast. Ihr schreitet zum schmalen Fenster und blickt hinunter auf die Menge, die den Ausrufer umringt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dieses Land ist gesegnet[COLOR_REVERT]", verkündet der Mann mit klarer Stimme. "[COLOR_SELECTED_TEXT]Ein Stück weiter die Wildnis herab wurde in der vergangenen Woche die vierte unserer Siedlungen errichtet. Fruchtbare Äcker werden bestellt, feste Häuser gebaut, gesunde Kinder geboren und das Wort des Herrn verkündet werden.[NEWLINE][NEWLINE]Zweifellos verdanken wir dies nicht nur unserem Fleiß und dem Wohlwollen des Allmächtigen. Sondern auch der Klugheit und Umsicht unseres Anführers.[COLOR_REVERT]"[NEWLINE][NEWLINE]Die Menge nickt beifällig.[NEWLINE][NEWLINE]</German>
-        <Italian>You have four settlements in the New World</Italian>
-        <Spanish>You have four settlements in the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES</Tag>
         <English>Your sixth colony</English>
         <French>Votre sixième colonie</French>
         <German>Eure sechste Siedlung</German>
-        <Italian>Your sixth colony</Italian>
-        <Spanish>Your sixth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
         <English>The oracle</English>
         <French>« Mais que recherchent ces gens chez nous ? »</French>
         <German>Das Orakel</German>
-        <Italian>You have six settlements in the New World</Italian>
-        <Spanish>You have six settlements in the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_TEXT</Tag>
         <English>You have founded six settlements in the New World! The Natives are now afraid they are losing their land.[NEWLINE][NEWLINE]The council is reverently silent as the blind old man enters the circle. The seer leans on a staff, his back hunched, his voice low and exhausted.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I have presented your concerns to the gods. Your fear that these new settlers cannot understand our world. They create village after village, as if they need to escape from each other.[NEWLINE][NEWLINE]I have asked the gods the question that burns in your heart. Shall we kill all the settlers? Well, this is the answer of the gods ...[COLOR_REVERT]" Tensely, the men lean forward.[NEWLINE][NEWLINE]</English>
         <French>C'est la question que pose un jeune chasseur indigène au chamane de son village. Permettre à quelques désespérés de trouver refuge est une chose, les voir conquérir nos terres en est une autre. Ils viennent de fonder leur sixième colonie ![NEWLINE][NEWLINE]Le chamane répond : « Lorsque tu recueilles un bébé jaguar abandonnée, n'oublie pas qu'un jour il deviendra grand. »[NEWLINE][NEWLINE]</French>
         <German>Ehrfürchtig schweigt der Rat, als der blinde Alte den Kreis betritt. Der Orakelpriester stützt sich auf einen Stab, sein Rücken ist krumm, die Stimme leise und erschöpft.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich habe den Göttern Eure Sorgen vorgetragen. Eure Furcht, dass der Weiße Mann sich nicht fügen will in unsere Welt. Er gründet ein Dorf nach dem nächsten und nimmt mehr Platz, als ihm zusteht.[NEWLINE][NEWLINE]Ich habe den Göttern die Frage gestellt, die Euch im Herzen brennt. Sollen wir die Weißen töten? Nun, dies ist die Antwort der Götter ...[COLOR_REVERT]" Gespannt beugen sich die Männer vor.[NEWLINE][NEWLINE]</German>
-        <Italian>You have founded six settlements in the New World! The natives fear losing their land.</Italian>
-        <Spanish>You have founded six settlements in the New World! The natives fear losing their land.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES</Tag>
         <English>Your eighth colony</English>
         <French>Votre huitième colonie</French>
         <German>Eure achte Siedlung</German>
-        <Italian>Your eighth colony</Italian>
-        <Spanish>Your eighth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_HEAD</Tag>
         <English>The answer of the gods</English>
         <French>Vous avez huit colonies dans le Nouveau Monde</French>
         <German>Die Antwort der Götter</German>
-        <Italian>You have eight settlements in the New World</Italian>
-        <Spanish>You have eight settlements in the New World</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_TEXT</Tag>
         <English>Your colonies continue to spread across the land. The Natives are full of fear and anger. Will they fight for their homeland?[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Shall we kill all the settlers? This is what you wanted to know[COLOR_REVERT]", says the blind old man in a brittle voice. "[COLOR_SELECTED_TEXT]I asked the gods. This is their answer ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Tensely, the Native council members lean forward. As the oracle continues, the sound of his steely voice, cutting like a sword through the reverent silence, is riveting.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Cut off this snake's head, and three new heads will grow back. Cast the serpent into the fire, and five new serpents will swim out of the sea to crawl into your midst. Serve the snake and feed it, and it will lay ten eggs.[NEWLINE][NEWLINE]Your actions and inactions are irrelevant to the future of this world.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous fondé sans cesse de plus en plus de colonies! Les indigènes sont remplis de crainte et de colère. Vont-ils se battre pour défendre leur terre?[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Sollen wir die Weißen töten? Dies wolltet ihr wissen[COLOR_REVERT]", sagt der blinde Alte mit brüchiger Stimme, "[COLOR_SELECTED_TEXT]ich habe die Götter gefragt. Dies ist ihre Antwort ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Gespannt beugen sich die indianischen Ratsmitglieder vor. Als der Orakelpriester weiterredet, überrascht der Klang seiner stählernen Stimme, die wie ein Schwert durch die andächtige Stille schneidet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Schlagt dieser Schlange den Kopf ab, und drei neue Köpfe werden nachwachsen. Werft die Schlange ins Feuer, und fünf neue Schlangen werden aus dem Meer heranschwimmen und in Eure Mitte kriechen. Dient der Schlange und füttert sie, und sie wird zehn Eier legen.[NEWLINE][NEWLINE]Euer Tun und Euer Lassen sind ohne Belang für die Zukunft dieser Welt.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have founded more and more colonies. The natives are full of fear and anger. Will they fight for their homeland?</Italian>
-        <Spanish>You have founded more and more colonies. The natives are full of fear and anger. Will they fight for their homeland?</Spanish>
-    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_COLONIES</Tag>
         <English>Your tenth colony</English>
         <French>Votre dixième colonie</French>
         <German>Eure zehnte Siedlung</German>
-        <Italian>Your tenth colony</Italian>
-        <Spanish>Your tenth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_COLONIES_HEAD</Tag>
         <English>The Promised Land</English>
         <French>Votre dixième colonie</French>
         <German>Das Gelobte Land</German>
-        <Italian>Your tenth colony</Italian>
-        <Spanish>Your tenth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_COLONIES_TEXT</Tag>
         <English>You have ten settlements in the New World. Your people are truly blessed to have such a great leader.[NEWLINE][NEWLINE]The light of the candle flickers. You bend over and smooth the map. You measure the distance with a compass.[NEWLINE][NEWLINE]It is a long way from your governor's seat to this new city you have founded. Half the earth lies between.[NEWLINE][NEWLINE]There are now ten communities. Your citizens have cleared forests, driven mines into mountains, built roads, and brought God to the Indigenous people.[NEWLINE][NEWLINE]Ten cities! Humbly you look to the silver cross hanging on the wall. "[COLOR_SELECTED_TEXT]Truly,[COLOR_REVERT]" you say softly, "[COLOR_SELECTED_TEXT]truly, this is the Promised Land.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez fondé dix colonies dans le Nouveau Monde. Votre peuple est fier d'avoir un si grand dirigeant.[NEWLINE][NEWLINE]</French>
         <German>Das Licht der Kerze flackert. Ihr beugt Euch vor und glättet die Karte. Mit einem Zirkel messt Ihr die Entfernung.[NEWLINE][NEWLINE]Von Eurem Gouverneurssitz bis zu der neuen Stadt, die Ihr habt gründen lassen, ist es weit. Ein halber Erdkreis spannt sich dazwischen.[NEWLINE][NEWLINE]Zehn Gemeinden sind es jetzt. Eure Bürger haben Wälder gerodet, Minen in Berge getrieben, Straßen gebaut und die Wilden das Wort Gottes gelehrt.[NEWLINE][NEWLINE]Zehn Städte! Demütig blickt Ihr zu dem silbernen Kreuz, das an der Wand hängt. "[COLOR_SELECTED_TEXT]Fürwahr,[COLOR_REVERT]" sprecht Ihr leise, "[COLOR_SELECTED_TEXT]fürwahr, dies ist das Gelobte Land.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have ten settlements in the New World. Your people are happy to have such a great leader.</Italian>
-        <Spanish>You have ten settlements in the New World. Your people are happy to have such a great leader.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES</Tag>
         <English>Your fifteenth colony</English>
         <French>Votre quinzième colonie</French>
         <German>Eure fünfzehnte Siedlung</German>
-        <Italian>Your fifteenth colony</Italian>
-        <Spanish>Your fifteenth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_HEAD</Tag>
         <English>A nation blossoms</English>
         <French>Votre quinzième colonie</French>
         <German>Eine Nation erblüht</German>
-        <Italian>Your fifteenth colony</Italian>
-        <Spanish>Your fifteenth colony</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_TEXT</Tag>
         <English>Once again, a new settlement joins your blossoming empire.[NEWLINE][NEWLINE]Forests become fields. Roads crisscross the wilderness. More and more cities spring up and cover the land.[NEWLINE][NEWLINE]A new nation is born. A nation strong enough to fight for its independence.[NEWLINE][NEWLINE]</English>
         <French>Une nouvelle nation est en train de grandir. Mais cette nation est-elle suffisamment autonome pour déjà prétendre à se gouverner par elle-même ?[NEWLINE][NEWLINE]</French>
         <German>Schon wieder zählt eine neue Siedlung zu Eurem erblühenden Reich.[NEWLINE][NEWLINE]Aus Wäldern werden Felder. Straßen durchziehen die Wildnis. Immer mehr Städte ersprießen und überziehen das Land.[NEWLINE][NEWLINE]Eine neue Nation entsteht. Eine Nation, stark genug, ihre Unabhängigkeit zu erstreiten.[NEWLINE][NEWLINE]</German>
-        <Italian>A new nation is growing gradually. A nation strong enough to fight for independence.</Italian>
-        <Spanish>A new nation is growing gradually. A nation strong enough to fight for independence.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH</Tag>
         <English>Your first house of God</English>
         <French>Votre première église</French>
         <German>Euer erstes Gotteshaus</German>
-        <Italian>Your first church</Italian>
-        <Spanish>Your first church</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_HEAD</Tag>
         <English>The house of God</English>
         <French>Votre première église</French>
         <German>Das Haus Gottes</German>
-        <Italian>Your first church</Italian>
-        <Spanish>Your first church</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_TEXT</Tag>
         <English>After building your first church the colonists have a place to worship. People in Europe are now more inclined to come to the New World.[NEWLINE][NEWLINE]Windows that float high up under the ceiling. Windows through which a ray of sunlight falls at the first devotion, onto your face.[NEWLINE][NEWLINE]The faithful murmur. The Lord God may watch over his heavenly kingdom and over the hereafter but here, in the New World, you are His representative. And you have given this house to your subjects.[NEWLINE][NEWLINE]The first house of God in this half of the earth. May it bring glory to God and glory to you![NEWLINE][NEWLINE]</English>
         <French>Vos colons disposent désormais d'un lieu de culte digne de ce nom. Les âmes de nôtres vont pouvoir trouver la paix. Les européens sont déjà plus enclins à venir s'intaller dans le Nouveau Monde.[NEWLINE][NEWLINE]</French>
         <German>Fenster, die hoch oben unter der Decke schweben. Fenster, durch die bei der ersten Andacht ein Sonnenstrahl herabfällt, Euch direkt ins Gesicht.[NEWLINE][NEWLINE]Die Gläubigen raunen. Gott, der Herr, mag über sein Himmelsreich wachen und über das Jenseits. Doch hier, in der Neuen Welt, seid Ihr sein Stellvertreter. Und Ihr habt Euren Schutzbefohlenen dieses Haus geschenkt.[NEWLINE][NEWLINE]Das erste Gotteshaus in diesem Teil des Erdkreises. Möge es Gott zur Ehre und Euch zum Ruhme gereichen![NEWLINE][NEWLINE]</German>
-        <Italian>After building your first church the colonists have a place to worship. People in Europe are now more inclined to come to the New World.</Italian>
-        <Spanish>After building your first church the colonists have a place to worship. People in Europe are now more inclined to come to the New World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES</Tag>
         <English>Two houses of God</English>
         <French>Votre deuxième église</French>
         <German>Zwei Gotteshäuser</German>
-        <Italian>Your second church</Italian>
-        <Spanish>Your second church</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_HEAD</Tag>
         <English>Praise the Lord</English>
         <French>Votre deuxième église</French>
         <German>Lobet den Herrn</German>
-        <Italian>Your second church</Italian>
-        <Spanish>Your second church</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_TEXT</Tag>
         <English>Again, a pious topping-out ceremony was celebrated. Another place of worship now stands in this part of the world. "[COLOR_SELECTED_TEXT]Praise the Lord![COLOR_REVERT]", the faithful are shouting. "[COLOR_SELECTED_TEXT]Praise the Lord in heaven! And praise the Lord Governor, who has built these magnificent churches in honour of God.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Avec cette deuxième église, la population ne peut cacher sa joie : "[COLOR_SELECTED_TEXT]Loué soit le Seigneur![COLOR_REVERT]" s'exclame-t-on. "[COLOR_SELECTED_TEXT]Et loué soit notre gouverneur![COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>Wieder wurde ein frommes Richtfest gefeiert. Ein weiteres Gotteshaus steht nun in diesem Teil der Welt. "[COLOR_SELECTED_TEXT]Lobet den Herrn![COLOR_REVERT]" murmelt das Volk. "[COLOR_SELECTED_TEXT]Lobet den Herrn im Himmel! Und den Herrn Gouverneur, der Gott zu Ehren diese prachtvollen Kirchen errichten lässt.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have built your second church. "Praise the Lord!", the people are whispering. "And praise our governor!"</Italian>
-        <Spanish>You have built your second church. "Praise the Lord!", the people are whispering. "And praise our governor!"</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES</Tag>
@@ -351,539 +268,405 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_HEAD</Tag>
-        <English>The Godliness of the Governor</English>
+        <English>The godliness of the Governor</English>
         <French>Votre troisième église</French>
         <German>Die Gottesfurcht des Gouverneurs</German>
-        <Italian>Your third church</Italian>
-        <Spanish>Your third church</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_TEXT</Tag>
         <English>Reverently, the citizens bow their heads when they see you. Your fear of God has become a legend.[NEWLINE][NEWLINE]You have already built three houses of worship in this strange world. There are many citizens who are convinced that you are a holy man.[NEWLINE][NEWLINE]</English>
         <French>Vous venez de construire votre troisième église. De nombreux gens commencent à penser que leur gouverneur est un saint homme.[NEWLINE][NEWLINE]</French>
         <German>Ehrfürchtig senken die Bürger die Häupter, wenn Sie Euch erblicken. Eure Gottesfurcht ist zur Legende geworden.[NEWLINE][NEWLINE]Drei Gotteshäuser habt Ihr nun bereits in dieser fremden Welt errichten lassen. Es gibt viele Bürger, die überzeugt sind, dass Ihr ein heiliger Mann seid.[NEWLINE][NEWLINE]</German>
-        <Italian>You have built the third church. Many people are believing that their governor is a holy man.</Italian>
-        <Spanish>You have built the third church. Many people are believing that their governor is a holy man.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL</Tag>
         <English>Your first cathedral</English>
         <French>Votre première cathédrale</French>
         <German>Eure erste Kathedrale</German>
-        <Italian>Your first cathedral</Italian>
-        <Spanish>Your first cathedral</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_HEAD</Tag>
         <English>Your first cathedral</English>
         <French>Votre première cathédrale</French>
         <German>Eure erste Kathedrale</German>
-        <Italian>Your first cathedral</Italian>
-        <Spanish>Your first cathedral</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_TEXT</Tag>
         <English>You have built your first cathedral.[NEWLINE][NEWLINE]The Governor's fear of God made it a reality! Or was it instead the secular influence of Mother Church? The good citizens will never know.[NEWLINE][NEWLINE]The huge cathedral, however... High above the rooftops of the city, its white towers shine in the sunshine and cast their shadows far across the New World.[NEWLINE][NEWLINE]The bishop has come to celebrate the new place of worship with a mass and is already saying the first solemn words to his flock before they, i.e. the missionaries and the nuns of the local monastery, leave again, to free the heathen children from the devil and lead them into the bosom of the church.[NEWLINE][NEWLINE]The towers of the huge cathedral will show them the way...[NEWLINE][NEWLINE]</English>
         <French>Le voyageur est encore à plusieurs lieues de notre colonie, mais deux tours de pierre se distingue déjà à l'horizon. « C'est donc elle, notre Cathédrale ! » lui dit son accompagnateur. « Oui », lui répond le voyageur « Et en tant qu'évêque, c'est une joie d'avoir été élu pour l'inaugurer ».[NEWLINE][NEWLINE]</French>
         <German>Die Gottesfurcht des Gouverneurs hat es Wirklichkeit werden lassen! Oder war es doch eher der weltliche Einfluss von Mutter Kirche? Dies werden die braven Bürger wohl nie erfahren.[NEWLINE][NEWLINE]Die riesige Kathedrale jedoch... Hoch über den Dächern der Stadt strahlen ihre weißen Türme im Sonnenschein und werfen Ihre Schatten bis weit in die Neue Welt hinein.[NEWLINE][NEWLINE]Der Bischof ist gekommen, um das neue Gotteshaus mit einer Messe zu feiern und spricht bereits die ersten feierlichen Worte zu seinen Schäfchen, bevor diese, d.h. die Missionare und die Nonnen des örtlichen Klosters, wieder aufbrechen, um die Heidenkinder vom Teufel zu befreien und in den Schoß der Kirche zu führen.[NEWLINE][NEWLINE]Die Türme der riesigen Kathedrale werden ihnen den Weg weisen...[NEWLINE][NEWLINE]</German>
-        <Italian>You have built your first cathedral. The Bishop has come to praise this tremendous building, the church and of course...God; and to hold a ceremonial mass![NEWLINE][NEWLINE]</Italian>
-        <Spanish>You have built your first cathedral. The Bishop has come to praise this tremendous building, the church and of course...God; and to hold a ceremonial mass![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS</Tag>
         <English>Three lumbermills</English>
         <French>Votre troisième la scierie</French>
         <German>Drei Sägewerke in Städten</German>
-        <Italian>Your third lumbermill</Italian>
-        <Spanish>Your third lumbermill</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_HEAD</Tag>
         <English>Woodworking at its best</English>
         <French>Votre troisième la scierie</French>
         <German>Holzverarbeitung vom Feinsten</German>
-        <Italian>Your third lumbermill</Italian>
-        <Spanish>Your third lumbermill</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_TEXT</Tag>
         <English>Things are moving forward in the colonies! The good citizens in the colonies now own three sawmills.[NEWLINE][NEWLINE]Thank God that the governor has been so prudent, because this flood of settlers will demand large quantities of timber well into the future.[NEWLINE][NEWLINE]</English>
         <French>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman![NEWLINE][NEWLINE]</French>
         <German>Es geht voran in den Kolonien! Drei Sägewerke nennen die braven Bürger in den Kolonien nun schon ihr Eigen.[NEWLINE][NEWLINE]Gott sei es gedankt, dass der Gouverneur so umsichtig war, denn die Flut der Siedler wird auch in Zukunft Bauholz in Mengen benötigen.[NEWLINE][NEWLINE]</German>
-        <Italian>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman!</Italian>
-        <Spanish>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER</Tag>
         <English>Your first Cathedral of the Archbishop</English>
         <French>La Cathédrale de notre Archevêché</French>
         <German>Eure erste Kathedrale des Erzbishofs</German>
-        <Italian>Your first Cathedral of the Archbishop</Italian>
-        <Spanish>Your first Cathedral of the Archbishop</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER_HEAD</Tag>
         <English>The Cathedral of the Archbishop</English>
         <French>La Cathédrale de notre Archevêché</French>
         <German>Die Kathedrale des Erzbishofs</German>
-        <Italian>Your first Cathedral of the Archbishop</Italian>
-        <Spanish>Your first Cathedral of the Archbishop</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER_TEXT</Tag>
-        <English>You have built your Cathedral of the Archbishop.[NEWLINE][NEWLINE]Great events cast their shadows ahead. One of the most massive structures in the New World has been built.[NEWLINE][NEWLINE]What walls, what towers! The Archbishop's Cathedral shows even the last unconverted Native how the Lord God inspires people to great achievements.[NEWLINE][NEWLINE]The Archbishop has come to celebrate his new place of work with a Holy Mass and to give thanks to God for this place of worship with his fellow believers. Where better to recognize the power of God than here under these towers that reach into the clouds?[NEWLINE][NEWLINE]However,the Archbishop's sermon chooses not to mention how the good citizens of the colonies have paid for this towering building with their worldly deeds, and that the governor could only be "persuaded" to build it after massive pressure from Mother Church. Besides, it was only right and proper that the citizens should show their love for their parish priest by building a magnificent place of worship. How else might the Lord God be convinced of his devotion than through this cathedral...?![NEWLINE][NEWLINE]</English>
+        <English>You have built your Cathedral of the Archbishop.[NEWLINE][NEWLINE]Great events cast their shadows ahead. One of the most massive structures in the New World has been built.[NEWLINE][NEWLINE]What walls, what towers! The Archbishop's cathedral shows even the last unconverted Native how the Lord God inspires people to great achievements.[NEWLINE][NEWLINE]The Archbishop has come to celebrate his new place of work with a Holy Mass and to give thanks to God for this place of worship with his fellow believers. Where better to recognize the power of God than here under these towers that reach into the clouds?[NEWLINE][NEWLINE]However,the Archbishop's sermon chooses not to mention how the good citizens of the colonies have paid for this towering building with their worldly deeds, and that the governor could only be "persuaded" to build it after massive pressure from Mother Church. Besides, it was only right and proper that the citizens should show their love for their parish priest by building a magnificent place of worship. How else might the Lord God be convinced of his devotion than through this cathedral...?![NEWLINE][NEWLINE]</English>
         <French>You avec construit votre Cathédrale d'Archevêché. L'Archevêque est venu pour bénir ce monument magnifique, Dieu, la Saint-Eglise... et bien sûr son nouveau pouvoir ![NEWLINE][NEWLINE]</French>
         <German>Große Ereignisse werfen ihre Schatten voraus. Eines der gewaltigsten Bauwerke in der Neuen Welt ist errichtet worden.[NEWLINE][NEWLINE]Was für Mauern, was für Türme! Die Kathedrale des Erzbischofs zeigt auch dem letzten zweifelnden Indio, zu welch' großartigen Leistungen der Herrgott die Menschen bewegen kann.[NEWLINE][NEWLINE]Der Erzbischof ist gekommen, um seine neue Wirkungsstätte mit einer heiligen Messe zu feiern und mit seinen Glaubensbrüdern Gott für dieses Gotteshaus zu danken. Wo könnte man die Macht Gottes besser erkennen als hier unter diesen Türmen, die bis in die Wolken hineinragen?[NEWLINE][NEWLINE]Dass dieses riesige Bauwerk jedoch im Grunde nur durch allzu weltliches Handeln von den braven Bürgern der Kolonien bezahlt wurde und der Gouverneur erst durch massivem Druck von Mutter Kirche zu diesem Bau "überredet" werden konnte, verschweigt der Erzbischof in seiner Predigt dann doch lieber. Außerdem war es nur recht und billig, dass die Bürger dieser Gemeinde ihrem Pfarrer ein standesgemäßes Gotteshaus errichten. Wie sonst sollte der Herrgott von seiner Ergebenheit überzeugt werden, als durch diese Kathedrale...?![NEWLINE][NEWLINE]</German>
-        <Italian>You have built your Cathedral of the Archbishop. The Archbishop has come to praise this tremendous building, the church, God and of course...his power and to hold a ceremonial mass![NEWLINE][NEWLINE]</Italian>
-        <Spanish>You have built your Cathedral of the Archbishop. The Archbishop has come to praise this tremendous building, the church, God and of course...his power and to hold a ceremonial mass![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE</Tag>
         <English>Your first schoolhouse</English>
         <French>Votre première école</French>
         <German>Eure erste Schule</German>
-        <Italian>Your first schoolhouse</Italian>
-        <Spanish>Your first schoolhouse</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_HEAD</Tag>
         <English>Bonehead</English>
         <French>Votre première école</French>
         <German>Holzkopf</German>
-        <Italian>Your first schoolhouse</Italian>
-        <Spanish>Your first schoolhouse</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_TEXT</Tag>
         <English>You have built your first schoolhouse. The cornerstone of public education is laid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]We already have a church. I don't understand why we need another big building with all these benches and a pulpit?[COLOR_REVERT]" Perplexed, the lumberjack leans on his crude axe.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Not a pulpit, a teacher's podium! Here I can show your boy how to read the Holy Scriptures himself. He'll learn everything needful to take his proper place in the colony, and he'll know what's what![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Father, with all due respect, my boy is going to be a lumberjack![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]God willing, he might learn to be a blacksmith instead if he has the talent and the will. Look at your old axe. I can't tell which side the edge used to be on![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous venez de construire votre première école. Il s'agit des premiers fondements de votre système d'èducation.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Also ne Kirch ham wa doch, also ich versteh das nich, was brauchn wa noch so´n riesen Kasten mit die ganze Bänke und ner Kanzel?[COLOR_REVERT]" Ratlos stützt sich der vierschrötige Mann auf seine grobschlächtige Axt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nicht Kanzel, Katheder! Hier werde ich deinem Buben beibringen, die Heilige Schrift zu lesen. Später lernt er dann alles, was es braucht, um an der rechten Stelle in der Kolonie mit Verstand anzupacken![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr Pfarrer, bei allm Respekt, aba mein Jung wird Holzfäller![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So Gott will, vielleicht besser ein brauchbarer Schmied und Werkzeugmacher. Sieh dir dein altes Beil doch an, ich erkenne nicht, auf welcher Seite die Schneide einst war![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have built the first schoolhouse. The cornerstone of public education is laid.</Italian>
-        <Spanish>You have built the first schoolhouse. The cornerstone of public education is laid.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE</Tag>
-        <English>Your first defence work</English>
+        <English>Your first palisades</English>
         <French>Votre première palissade</French>
         <German>Euer erstes Verteidigungswerk</German>
-        <Italian>Your first stockade</Italian>
-        <Spanish>Your first stockade</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_HEAD</Tag>
         <English>Locked out</English>
         <French>Enfin protégés !</French>
         <German>Ausgesperrt</German>
-        <Italian>Your first stockade</Italian>
-        <Spanish>Your first stockade</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_TEXT</Tag>
         <English>You have built your first stockade.[NEWLINE][NEWLINE]Suddenly a shadow fills the doorway, blocking out the evening sun.[NEWLINE][NEWLINE]The woman is startled as the shadow touches her - but then she looks up and smiles.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A beautiful evening, darling,[COLOR_REVERT]" the man says amiably. "[COLOR_SELECTED_TEXT]Where is our little one?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isn't he playing with the chickens outside the door?[COLOR_REVERT]" she asks, worried again.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Be calm. We finished the defence work today. No wolf will be skulking around our houses, looking for a chicken. Or something bigger.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Une femme s'approche appeurée d'un soldat : « Mon fils est parti pourchassé un poulet et ne le retrouve plus, je crains pour sa sécurité ! » « N'ayez aucune crainte », lui répond le soldat, « avec notre nouvelle défense, les loups n'erreront plus dans nos rues. »[NEWLINE][NEWLINE]</French>
         <German>Ein Schatten steht plötzlich im Türrahmen und verdeckt die Abendsonne. Die Frau erschrickt, als sie der Schatten berührt - doch als sie aufsieht, lächelt sie. "[COLOR_SELECTED_TEXT]Guten Abend, Eheweib[COLOR_REVERT]", brummt der Mann freundlich. "[COLOR_SELECTED_TEXT]Wo steckt denn unser Kleiner?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Spielt er denn nicht vor der Tür mit den Hühnern?[COLOR_REVERT]" fragt sie zurück und ist erneut besorgt. "[COLOR_SELECTED_TEXT]Beruhige dich, Weib. Wir sind heute mit dem Verteidigungswerk fertig geworden. Kein Wolf wird mehr zwischen den Häusern umherstreifen, auf der Suche nach einem Huhn. Oder etwas Größerem.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have built your first stockade.</Italian>
-        <Spanish>You have built your first stockade.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE</Tag>
         <English>Several defence works</English>
         <French>Votre troisième palissade</French>
         <German>Einige Verteidigungswerke</German>
-        <Italian>Your third stockade</Italian>
-        <Spanish>Your third stockade</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_HEAD</Tag>
         <English>Protector and protected</English>
         <French>Vous venez de construire votre troisième palissade</French>
         <German>Beschützer und Beschützte</German>
-        <Italian>You have built your third stockade</Italian>
-        <Spanish>You have built your third stockade</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_TEXT</Tag>
-        <English>You have built your third defence work[NEWLINE][NEWLINE]Straight, solid tree trunks, debarked and anchored in the ground, enclose and protect your settlements. Watch towers, from which watchful eyes suspiciously examine the surrounding countryside, rise above the houses.[NEWLINE][NEWLINE]The defences you erect in your cities protect your citizens - and earn you the respect of your subjects.[NEWLINE][NEWLINE]</English>
+        <English>You have built your third fortification.[NEWLINE][NEWLINE]Straight, solid tree trunks, debarked and anchored in the ground, enclose and protect your settlements. Watch towers, from which watchful eyes suspiciously examine the surrounding countryside, rise above the houses.[NEWLINE][NEWLINE]The defences you erect in your cities protect your citizens - and earn you the respect of your subjects.[NEWLINE][NEWLINE]</English>
         <French>Le système de défense que nous construisons dans nos colonies apportent protection aux citoyens, et respect à votre égard.[NEWLINE][NEWLINE]</French>
         <German>Gerade, feste Baumstämme, entrindet und im Erdgrund verankert, umschließen und beschirmen die Siedlungen. Wachtürme, von denen aufmerksame Augenpaare misstrauisch das Umland mustern, erheben sich über den Häusern.[NEWLINE][NEWLINE]Die Verteidigungswerke, die Ihr in Euren Städten errichten lasst, bringen Euren Bürgern Schutz - und Euch den Respekt Eurer Untertanen.[NEWLINE][NEWLINE]</German>
-        <Italian>You have built your third stockade</Italian>
-        <Spanish>You have built your third stockade</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE</Tag>
         <English>Many defence works</English>
         <French>Huit Palissades</French>
         <German>Viele Verteidigungswerke</German>
-        <Italian>Eight stockades</Italian>
-        <Spanish>Eight stockades</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_HEAD</Tag>
         <English>Peace on earth</English>
         <French>Huit Palissades</French>
         <German>Frieden auf Erden</German>
-        <Italian>Eight stockades</Italian>
-        <Spanish>Eight stockades</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_TEXT</Tag>
         <English>Defence works of stout timber surround your settlements. Your people are thankful that they can live in peace.[NEWLINE][NEWLINE]In more and more of your cities, solid walls and watchtowers provide protection for your citizens.[NEWLINE][NEWLINE]Truly, only God can take care of human happiness in the hereafter. But for this world you, the governor, are here.[NEWLINE][NEWLINE]You give your subjects peace on earth.[NEWLINE][NEWLINE]May your happiness never arouse the envy of others![NEWLINE][NEWLINE]Especially not the envy of a tyrant well known to you, who poses as your sovereign...[NEWLINE][NEWLINE]</English>
         <French>De plus en plus de nos villes sont protégés par des murs solides et des tours de garde. Le peuple vous remercie de lui apporter cette paix.[NEWLINE][NEWLINE]</French>
         <German>In immer mehr Eurer Städte sorgen feste Mauern und Wachtürme für den Schutz Eurer Bürger.[NEWLINE][NEWLINE]Fürwahr, für das Menschenglück im Jenseits kann nur Gott sorgen. Doch für das Diesseits seid Ihr, der Gouverneur, da.[NEWLINE][NEWLINE]Ihr schenkt Euren Untertanen Frieden auf Erden.[NEWLINE][NEWLINE]Möge Euer Glück niemals den Neid anderer wecken![NEWLINE][NEWLINE]Insbesondere nicht die Missgunst eines Euch wohlbekannten Tyrannen, der sich als Euer Landesherr aufspielt ...[NEWLINE][NEWLINE]</German>
-        <Italian>You have built many stockades. Your people are thankful that they can live in peace.</Italian>
-        <Spanish>You have built many stockades. Your people are thankful that they can live in peace.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION</Tag>
         <English>Your first great bastion</English>
         <French>Votre premier grand bastion</French>
         <German>Eure erste Große Bastion</German>
-        <Italian>Your first great bastion</Italian>
-        <Spanish>Your first great bastion</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_HEAD</Tag>
         <English>An impregnable fortress</English>
         <French>Votre premier grand bastion</French>
         <German>Eine uneinnehmbare Festung</German>
-        <Italian>Your first great bastion</Italian>
-        <Spanish>Your first great bastion</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_TEXT</Tag>
         <English>You have built your first great bastion.[NEWLINE][NEWLINE]The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks of the impregnability of this fortress.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first Great Bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Les artisans rangent leurs outils, le prêtre apporte sa bénédiction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilité de la forteresse.[NEWLINE][NEWLINE]Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majesté.[NEWLINE][NEWLINE]Au loin, alors que  le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse à l'oreille : « Espérons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises ».[NEWLINE][NEWLINE]</French>
         <German>Die Handwerker legen ihre Werkzeuge beiseite, der Pfarrer segnet die Mauern, die neue Wache zieht auf und der Kommandeur spricht von der Uneinnehmbarkeit dieser Festung.[NEWLINE][NEWLINE]Hoch über der Stadt ragt sie auf, stolz und mächtig - die erste Große Bastion dieser Festung verleiht ihr ein wahrlich majestätisches Aussehen.[NEWLINE][NEWLINE]Aus der Ferne lauscht der Gouverneur den Salutschüssen.[NEWLINE][NEWLINE]Seine Frau meint fragend zu ihm: "[COLOR_SELECTED_TEXT]Ob wir uns nun wirklich sicherer fühlen können? Wird eine so große Festung unsere Nachbarn nicht vielleicht doch eher provozieren?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have built your first great bastion.[NEWLINE][NEWLINE]</Italian>
-        <Spanish>You have built your first great bastion.[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS</Tag>
         <English>Many liberty bells (50)</English>
         <French>Cinquante cloches par tour</French>
         <German>Viele Freiheitsglocken</German>
-        <Italian>Fifty bells per turn</Italian>
-        <Spanish>Fifty bells per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_HEAD</Tag>
         <English>An inkling of freedom</English>
         <French>Cinquante cloches par tour</French>
         <German>Eine Ahnung von Freiheit</German>
-        <Italian>Fifty bells per turn</Italian>
-        <Spanish>Fifty bells per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_TEXT</Tag>
         <English>Many people are proud to call themselves citizens of the New World.[NEWLINE][NEWLINE]More and more frequently, your citizens ring the bells of their assembly hall, expressing their desire for freedom.[NEWLINE][NEWLINE]You shake your head meekly. You still need the goodwill of your king. In the wilderness lurk predators, some on four and some on two legs.[NEWLINE][NEWLINE]Your subjects still must fear for their lives when they leave the protection of the settlements.[NEWLINE][NEWLINE]Only those who live in peace have the strength to go to war for freedom.[NEWLINE][NEWLINE]You know you need patience and staying power.[NEWLINE][NEWLINE]</English>
         <French>Un population sans cesse croissante se dit fière d'être citoyenne du Nouveau Monde.[NEWLINE][NEWLINE]</French>
         <German>Immer häufiger lassen Eure Bürger die Glocken ihrer Versammlungshalle läuten und verleihen damit ihrem Wunsch nach Freiheit Ausdruck.[NEWLINE][NEWLINE]Ihr schüttelt milde Euer Haupt. Noch braucht Ihr das Wohlwollen Eures Königs. In der Wildnis verstecken sich Raubtiere, solche auf vier - und solche auf zwei Beinen.[NEWLINE][NEWLINE]Noch müssen Eure Untertanen um ihr Leben bangen, wenn sie den Schutz der Siedlungen verlassen.[NEWLINE][NEWLINE]Nur wer im Frieden lebt, hat die Kraft, für die Freiheit in den Krieg zu ziehen.[NEWLINE][NEWLINE]Ihr wisst, Ihr braucht Geduld und einen langen Atem.[NEWLINE][NEWLINE]</German>
-        <Italian>Many people are proud to live in the New World.</Italian>
-        <Spanish>Many people are proud to live in the New World.</Spanish>
-    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS</Tag>
         <English>Very many liberty bells (200)</English>
         <French>Deux cent cloches par tour</French>
         <German>Sehr viele Freiheitsglocken</German>
-        <Italian>Two hundred bells per turn</Italian>
-        <Spanish>Two hundred bells per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_HEAD</Tag>
         <English>Flaming desire</English>
         <French>Deux cent cloches par tour</French>
         <German>Flammende Sehnsucht</German>
-        <Italian>Two hundred bells per turn</Italian>
-        <Spanish>Two hundred bells per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_TEXT</Tag>
         <English>More and more people embrace the patriotism of a growing nation.[NEWLINE][NEWLINE]More and more citizens are ringing the bells of their assembly halls to sound the signal for freedom. Their clamour resounds throughout the land, throughout the New World - even across the ocean.[NEWLINE][NEWLINE]The distant king hears their clanging. You are aware of that.[NEWLINE][NEWLINE]His anger grows. The time is not far off when he will send for his generals to plan a war.[NEWLINE][NEWLINE]And you, governor, you will no longer hear the ringing of bells, but the sound of battle.[NEWLINE][NEWLINE]</English>
         <French>Fiers de leur Histoire, le patriotisme d'une Nation grandissante emplie le coeur de nos citoyens...[NEWLINE][NEWLINE]</French>
         <German>Immer mehr Bürger lassen die Glocken ihrer Versammlungshallen läuten, um ein Zeichen für die Freiheit zu setzen. Ihr Klang erschallt durchs ganze Land, durch die ganze Neue Welt - sogar über den Ozean hinweg.[NEWLINE][NEWLINE]Der ferne König vernimmt ihr Schwingen, dessen seid Ihr Euch bewusst.[NEWLINE][NEWLINE]Sein Zorn wächst. Die Zeit ist nicht mehr fern, in der er seine Marschälle kommen lässt, um einen Krieg zu planen.[NEWLINE][NEWLINE]Und Ihr, Gouverneur, Ihr werdet dann nicht mehr Glockengeläute, sondern Schlachtenlärm hören.[NEWLINE][NEWLINE]</German>
-        <Italian>More and more people are proud to live in the New World.</Italian>
-        <Spanish>More and more people are proud to live in the New World.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS</Tag>
         <English>Very many liberty bells (300)</English>
         <French>Trois cents cloches par tour</French>
         <German>Sehr viele Freiheitsglocken</German>
-        <Italian>Three hundred bells per turn</Italian>
-        <Spanish>Three hundred bells per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_HEAD</Tag>
         <English>Conspiracy</English>
         <French>Trois cents cloches par tour</French>
         <German>Verschwörung</German>
-        <Italian>Three hundred bells per turn</Italian>
-        <Spanish>Three hundred bells per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_TEXT</Tag>
         <English>More and more people embrace the patriotism of a growing nation. The intention of the people in your colonies is definitely clear.[NEWLINE][NEWLINE]Across the rooftops of the cities the bells ring more and more often, calling for the freedom of a new nation.[NEWLINE][NEWLINE]People in the colonies, however, make their preparations for the revolution in secret - after all, this is nothing less than treason.[NEWLINE][NEWLINE]Conspiratorial meetings in the back rooms of pubs, drawing up secret plans for mobilisation in the event of war against the king, procuring money and weapons for the new continental army...[NEWLINE][NEWLINE]</English>
         <French>Pour une part sans cesse plus importante de notre peuple américain, la Destinée Manifeste de notre Nation ne fait plus aucun doute. Saurez-vous en être à la hauteur ?[NEWLINE][NEWLINE]</French>
         <German>Während über den Dächern der Städte immer öfter die Glocken für die Freiheit einer neuen Nation läuten, treffen die Menschen in den Kolonien die Vorbereitungen für die Revolution jedoch im Verborgenen - schließlich handelt es sich hierbei um nichts weniger als Hochverrat.[NEWLINE][NEWLINE]Konspirative Treffen in den Hinterzimmern der Kneipen, Ausarbeitung geheimer Pläne für eine Mobilmachung im Falle eines Krieges gegen den König, Beschaffung von Geld und Waffen für die neue kontinentale Armee...[NEWLINE][NEWLINE]</German>
-        <Italian>More and more people embrace the patriotism of a growing nation. The intention of the people in your colonies is definitely clear. The insurgence begins...</Italian>
-        <Spanish>More and more people embrace the patriotism of a growing nation. The intention of the people in your colonies is definitely clear. The insurgence begins...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES</Tag>
         <English>Zealous preachers (10 crosses)</English>
         <French>Dix croix par tour</French>
         <German>Eifrige Prediger</German>
-        <Italian>Ten crosses per turn</Italian>
-        <Spanish>Ten crosses per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_HEAD</Tag>
         <English>Pray in freedom</English>
         <French>Dix croix par tour</French>
         <German>Bete in Freiheit</German>
-        <Italian>Ten crosses per turn</Italian>
-        <Spanish>Ten crosses per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_TEXT</Tag>
         <English>Many people are preaching in the churches.[NEWLINE][NEWLINE]Not only God is respected in your church, but also the freedom of the word. Here men who had to remain silent in their old homeland can preach freely.[NEWLINE][NEWLINE]There the stubborn sovereign actively oppressed their faith.[NEWLINE][NEWLINE]Back in the old country word gets around. More and more people jostle on the harbour quays looking a place on an emigrant ship.[NEWLINE][NEWLINE]</English>
         <French>Les croyants viennent en nombre dans les Églises.[NEWLINE][NEWLINE]</French>
         <German>Nicht nur Gott wird in Eurer Kirche Achtung gezollt, sondern auch der Freiheit des Wortes. Hier dürfen Männer frei predigen, die in ihrer alten Heimat schweigen mussten.[NEWLINE][NEWLINE]Ihre Konfession war dem sturen Landesherrn nicht erwünscht.[NEWLINE][NEWLINE]Das spricht sich zu Hause herum. Immer mehr Menschen drängeln auf den Hafenkais, um einen Platz auf einem Auswandererschiff zu finden.[NEWLINE][NEWLINE]</German>
-        <Italian>Many people are preaching in the churches.</Italian>
-        <Spanish>Many people are preaching in the churches.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES</Tag>
-        <English>Very zealous preachers</English>
+        <English>More zealous preachers</English>
         <French>De nombreuses croix par tour</French>
         <German>Sehr eifrige Prediger</German>
-        <Italian>Many crosses per turn</Italian>
-        <Spanish>Many crosses per turn</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_HEAD</Tag>
         <English>Choose your Lord</English>
         <French>De nombreuses croix par tour</French>
         <German>Wähle deinen Herrn</German>
-        <Italian>Many crosses per turn</Italian>
-        <Spanish>Many crosses per turn</Spanish>
+	    
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_TEXT</Tag>
         <English>More and more people are preaching in the churches.[NEWLINE][NEWLINE]Again and again during the Sunday devotions men get to their feet and stride to the pulpit. They praise God - and they also praise you, the governor, who allows them to choose for themselves whichever denomination will offer true salvation.[NEWLINE][NEWLINE]The news that in the New World everyone can worship in his own way, that he is allowed to determine for himself the rules by which he wants to live - this news finds open ears in the Old World.[NEWLINE][NEWLINE]</English>
         <French>Nos Églises se remplissent chaque jour encore davantage.[NEWLINE][NEWLINE]</French>
         <German>Immer wieder stehen während der sonntäglichen Andachten Männer auf und schreiten auf die Kanzel. Sie preisen Gott - und sie rühmen auch Euch, den Gouverneur, der es Ihnen gestattet, selbst die Konfession zu wählen, in der sie ihr Seelenheil finden möchten.[NEWLINE][NEWLINE]Die Kunde, dass in der Neuen Welt ein jeder in der ihm eigenen Weise den Gottesdienst feiern kann, dass er die Regeln, nach denen er leben will, selber bestimmen darf - diese Kunde findet in der Alten Welt offene Ohren.[NEWLINE][NEWLINE]</German>
-        <Italian>More and more people are preaching in the churches.</Italian>
-        <Spanish>More and more people are preaching in the churches.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EDUCATION</Tag>
         <English>Many students</English>
         <French>De nombreux Etudiants</French>
         <German>Viele Schüler</German>
-        <Italian>Many students</Italian>
-        <Spanish>Many students</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EDUCATION_HEAD</Tag>
         <English>Dreaming allowed</English>
         <French>De nombreux étudiants</French>
         <German>Träumen erlaubt</German>
-        <Italian>Many students</Italian>
-        <Spanish>Many students</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EDUCATION_TEXT</Tag>
         <English>More and more young people are becoming students and improving their abilities.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tell us what you see, you dreamer![COLOR_REVERT]"[NEWLINE][NEWLINE]The student is startled. As he gazes out the window the lecturer suddenly appears next to him and gently shakes his shoulder.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Uh, well ...[COLOR_REVERT]" he stammers, searching for an idea that will save him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I was admiring the splendour of this New World. And meditating on nature as God created it. And thinking about the nature of man, how he is born free, subject to no one.[NEWLINE][NEWLINE]No king should demand obedience from him, but only God.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, well,[COLOR_REVERT]" the lecturer replies, smiling, "[COLOR_SELECTED_TEXT]I guess we have the same dream.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>De plus en plus de jeunes veulent se former pour apprendre de nouvelles compétences.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Erzähl uns doch mal, was du siehst, du Träumer![COLOR_REVERT]"[NEWLINE][NEWLINE]Erschrocken fährt der Student zusammen. Gerade hatte er noch aus dem Fenster geschaut, da steht unvermittelt die Dozentin neben ihm und rüttelt sanft an seiner Schulter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Äh, tja ...[COLOR_REVERT]", stammelt er und sucht nach einem Einfall, der ihn rettet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hinaus in die Lieblichkeit dieser Neuen Welt blickte ich. Und sann über die Natur nach, wie Gott sie erschaffen hat. Und über die Natur des Menschen. Dass er frei geboren ist und nicht als Untertan.[NEWLINE][NEWLINE]Und dass kein König von ihm Gehorsam verlangen sollte, sondern nur Gott.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So, so[COLOR_REVERT]", erwidert die Dozentin und muss lächeln, "[COLOR_SELECTED_TEXT]da haben wir wohl den gleichen Traum.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>More and more young people want to become students and gain new abilities.[NEWLINE][NEWLINE]</Italian>
-        <Spanish>More and more young people want to become students and gain new abilities.[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT</Tag>
         <English>First Europeans met</English>
         <French>Contact avec des européens</French>
         <German>Erste Europäer getroffen</German>
-        <Italian>Met another european nation</Italian>
-        <Spanish>Met another european nation</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_HEAD</Tag>
         <English>Not alone in a foreign land</English>
         <French>Une autre puissance coloniale</French>
         <German>Nicht allein in der Fremde</German>
-        <Italian>You have met another european nation</Italian>
-        <Spanish>You have met another european nation</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_TEXT</Tag>
         <English>You have discovered that other European powers seek to claim the New World for themselves.[NEWLINE][NEWLINE]Your men look at you, startled. They are not used to their governor swearing; and certainly not so crudely, so blasphemously.[NEWLINE][NEWLINE]A maid looks down and crosses herself silently.[NEWLINE][NEWLINE]But you care only for what you have spied in the distance. A familiar flag. The flag of a king - and it is not yours.[NEWLINE][NEWLINE]Your fears have come true. Other powers have also sent ships, settlers and scouts to subjugate this New World.[NEWLINE][NEWLINE]Suddenly you shiver and pull your cloak tighter around your shoulders.[NEWLINE][NEWLINE]</English>
         <French>Vous avez découvert l'existence d'autres colons européens dans le Nouveau Monde.[NEWLINE][NEWLINE]</French>
         <German>Erschrocken blicken Eure Männer Euch an. Sie sind nicht gewohnt, dass Ihr Gouverneur flucht. Und erst recht nicht so derbe, so gotteslästerlich.[NEWLINE][NEWLINE]Eine Magd blickt zu Boden und bekreuzigt sich stumm.[NEWLINE][NEWLINE]Doch Euch kümmert nur das, was Ihr in der Ferne erspäht habt. Eine altbekannte Flagge. Die Flagge eines Königs - und es ist nicht der Eure.[NEWLINE][NEWLINE]Eure Befürchtungen sind wahrgeworden. Auch andere Mächte haben Schiffe, Siedler und Späher entsandt, um sich diese Neue Welt untertan zu machen.[NEWLINE][NEWLINE]Plötzlich fröstelt Euch und Ihr zieht Euch den Umhang fester um die Schultern.[NEWLINE][NEWLINE]</German>
-        <Italian>You have discovered that there are other European colonists in the new world too.</Italian>
-        <Spanish>You have discovered that there are other European colonists in the new world too.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT</Tag>
         <English>Three European rivals met</English>
         <French>Trois nations européennes contactées</French>
         <German>Drei europäische Konkurrenten getroffen</German>
-        <Italian>Met three other colonial nations</Italian>
-        <Spanish>Met three other colonial nations</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_HEAD</Tag>
         <English>Family reunion overseas</English>
         <French>Vous avez contacté trois autre nations européennes</French>
         <German>Familientreffen in Übersee</German>
-        <Italian>Met three other European nations</Italian>
-        <Spanish>Met three other European nations</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_TEXT</Tag>
         <English>You have discovered many European colonies from other nations in the New World.[NEWLINE][NEWLINE]Friendly, the foreign officer waves his hat with the bobbing peacock feather. And you wave your own hat, just as friendly.[NEWLINE][NEWLINE]But your smile is only a masquerade. Once again you have encountered a foreign patrol. Once again you have encountered other Europeans who, like you, have set out for foreign lands.[NEWLINE][NEWLINE]This continent once seemed so infinitely large to you ...[NEWLINE][NEWLINE]</English>
         <French>Il y a quantité d'autres colons européens dans le Nouveau Monde provenant de nombreuses Nations.[NEWLINE][NEWLINE]</French>
         <German>Freundlich schwenkt der fremde Offizier seinen Hut mit der wippenden Pfauenfeder. Und ebenso freundlich winkt Ihr mit Eurem Hut zurück.[NEWLINE][NEWLINE]Doch Euer Lächeln ist nur Maskerade. Wieder seid Ihr einer fremden Patrouille begegnet. Erneut seid Ihr auf andere Europäer gestoßen, die wie Ihr in die Fremde gezogen seid.[NEWLINE][NEWLINE]So unendlich weit schien Euch dieser Kontinent einst zu sein ...[NEWLINE][NEWLINE]</German>
-        <Italian>You have discovered that there are many European colonists from other nations in the new world.</Italian>
-        <Spanish>You have discovered that there are many European colonists from other nations in the new world.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT</Tag>
         <English>Seven European rivals met</English>
         <French>Sept nations européennes contactées</French>
         <German>Sieben europäische Konkurrenten</German>
-        <Italian>Met seven other colonial nations</Italian>
-        <Spanish>Met seven other colonial nations</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_HEAD</Tag>
         <English>It's getting crowded</English>
         <French>Vous avez contacté sept autres nations européennes</French>
         <German>Es wird eng</German>
-        <Italian>Met seven other colonial powers</Italian>
-        <Spanish>Met seven other colonial powers</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_TEXT</Tag>
-        <English>This continent once seemed so infinitely large to you. Now you have discovered seven other European powers that also settled in the New World.[NEWLINE][NEWLINE]Do you want to maintain good trade relations with them, trade with them and thereby fill our coffers? Or do you want to plunder their colonies and annex them to your colonial empire?[NEWLINE][NEWLINE]In any case, you should re-examine your military strength and, if necessary, ask the king for more troops.[NEWLINE][NEWLINE]You never know what those other powers might be up to...[NEWLINE][NEWLINE]</English>
+        <English>This continent once seemed so infinitely large to you. Now you have discovered seven other European powers that also settled in the New World.[NEWLINE][NEWLINE]Do you want to maintain good trade relations with them, trade with them and thereby fill our coffers? Or do you want to plunder their colonies and annex them to your colonial empire?[NEWLINE][NEWLINE]In any case, you should re-examine your military strength and, if necessary, ask the King for more troops.[NEWLINE][NEWLINE]You never know what those other powers might be up to...[NEWLINE][NEWLINE]</English>
         <French>Des colons viennent dons de tous les pays européens pour partir à la conquête du Nouveau Monde.[NEWLINE][NEWLINE]Gouverneur, ne serait-il pas opportun de reconsidérer notre stratégie coloniale ? Peut-être devrions-nous revoir nos arrangements avec le Roi et lui demander davantage de troupes coloniales.[NEWLINE][NEWLINE]</French>
         <German>So unendlich weit schien Euch dieser Kontinent einst zu sein, aber jetzt habt Ihr bereits sieben weitere europäische Mächte entdeckt, die sich ebenfalls in die Neue Welt aufgemacht haben.[NEWLINE][NEWLINE]Ihr solltet einmal Eure Strategie überdenken, Gouverneur! Wollt Ihr mit ihnen gute Beziehungen pflegen, mit ihnen Handel treiben und dadurch unsere Kassen füllen? Oder wollt Ihr ihre Kolonien plündern und sie Eurem Kolonialreich einverleiben?[NEWLINE][NEWLINE]Auf jeden Fall solltet Ihr Euch einen Überblick über Eure militärische Stärke verschaffen, damit Ihr gegebenenfalls den König um weitere Truppen bitten könnt.[NEWLINE][NEWLINE]Man weiß ja nie, wass die anderen Mächte im Schilde führen...[NEWLINE][NEWLINE]</German>
-        <Italian>You have discovered seven european colonies from other nations in the New World.[NEWLINE][NEWLINE]Governor, you should think about our colonial strategy and maybe you should reconsider your military arrangements and ask the king for more colonial troops...[NEWLINE][NEWLINE]</Italian>
-        <Spanish>You have discovered seven european colonies from other nations in the New World.[NEWLINE][NEWLINE]Governor, you should think about our colonial strategy and maybe you should reconsider your military arrangements and ask the king for more colonial troops...[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT</Tag>
-        <English>First native tribe met</English>
+        <English>First Native tribe met</English>
         <French>Contact avec des indigènes</French>
         <German>Erster Stamm getroffen</German>
-        <Italian>Met a native tribe</Italian>
-        <Spanish>Met a native tribe</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_HEAD</Tag>
-        <English>First natives met</English>
+        <English>First Natives met</English>
         <French>Cette terre est donc habitée !</French>
         <German>Erste Wilde getroffen</German>
-        <Italian>Met a native tribe</Italian>
-        <Spanish>Met a native tribe</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_TEXT</Tag>
         <English>You have met the local Native people.[NEWLINE][NEWLINE]Cheerful eyes in brown, dirty faces. Young men with spears and bows, painted faces and alert curiosity. Young women grinding grains in clay jars and glancing furtively at you. Toothless old men hobbling trustingly towards you.[NEWLINE][NEWLINE]You suspected that this foreign land held wonders and dangers. But you would not have thought it possible that so many godless heathen children live here, without knowledge of the mercy of Jesus.[NEWLINE][NEWLINE]In the coming weeks you will tell them of the salvation that true Christian faith will give to their sin-laden souls.[NEWLINE][NEWLINE]And perhaps you can indeed save them from avarice for the treasures they surely hide, the gold your men hope to get from this unknown world.[NEWLINE][NEWLINE]</English>
         <French>Les coutumes de ces indigènes semblent bien étranges, n'ont-ils jamais entendu parler de Dieu ? Sans doute faudrait-il envoyé des hommes pieux en mission pour mieux les connaître et leur apprendre la foi chrétienne.[NEWLINE][NEWLINE]</French>
         <German>Fröhliche Augen in braunen, schmutzigen Gesichtern. Junge Männer mit Speeren und Bögen, bemalten Gesichtern und einem kindlichen Staunen. Junge Frauen, die in Tonkrügen Körner mahlen und Euch verstohlen anblicken. Zahnlose Alte, die zutraulich heranhumpeln.[NEWLINE][NEWLINE]Ihr ahntet, dass dieses fremde Land Wunder und Gefahren birgt. Doch dass hier so viele gottlose Heidenkinder hausen, ohne Kenntnis von der Barmherzigkeit Jesu, das hättet Ihr nicht für möglich gehalten.[NEWLINE][NEWLINE]Ihr werdet Ihnen in den nächsten Wochen von der Erlösung berichten, die der wahre christliche Glaube ihren mit Sünde beladenen Seelen schenken wird.[NEWLINE][NEWLINE]Und vielleicht könnt Ihr sie auch tatsächlich erlösen - von den Schätzen, die sie gewisslich verstecken, dem Gold, das Eure Männer in diesem Teil der Welt zu erbeuten hoffen.[NEWLINE][NEWLINE]</German>
-        <Italian>You have met natives.</Italian>
-        <Spanish>You have met natives.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT</Tag>
         <English>Three native tribes met</English>
         <French>Trois peuples indigènes</French>
         <German>Drei Stämme getroffen</German>
-        <Italian>Three native tribes</Italian>
-        <Spanish>Three native tribes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_HEAD</Tag>
         <English>The gold of the natives</English>
         <French>Vous avez rencontré trois peuples indigènes</French>
         <German>Das Gold der Wilden</German>
-        <Italian>Three native tribes</Italian>
-        <Spanish>Three native tribes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_TEXT</Tag>
         <English>You have made first contact with three Native nations.[NEWLINE][NEWLINE]With a smile, the Natives approach. They open their hands.[NEWLINE][NEWLINE]In the midday light of the sun, the silver amulets, the gold rings and the gemstone-decorated totem masks they offer you glisten.[NEWLINE][NEWLINE]A trapper who spent last winter with the heathens translates the words of their chief, who in exchange wants three iron hammers, a hemp sack with nails, a barrel of brandy and a blunderbuss.[NEWLINE][NEWLINE]You have to smile. Perhaps you can take the treasures of this foreign land without paying for them with the blood of your men.[NEWLINE][NEWLINE]</English>
         <French>Ce Nouveau Monde est habité par des peuples aux cultures variées. Sans doute serait-il habile de jouer sur leurs différences à notre avantage...[NEWLINE][NEWLINE]</French>
         <German>Mit einem Lächeln nähern sich die Eingeborenen. Sie öffnen ihre Hände.[NEWLINE][NEWLINE]Im Mittagslicht der Sonne glitzern die silbernen Amulette, die Goldringe und edelsteingeschmückten Totemmasken, die sie Euch anbieten.[NEWLINE][NEWLINE]Ein Trapper, der den letzten Winter bei den Heiden verbracht hat, übersetzt die Worte ihres Häuptlings. Drei Eisenhämmer erbittet der Wilde im Tausch, ein Hanfsäckcken mit Nägeln, ein Fässchen Branntwein und eine Donnerbüchse.[NEWLINE][NEWLINE]Ihr müsst schmunzeln. Vielleicht könnt Ihr diesem fremden Land seine Schätze nehmen, ohne dafür mit dem Blut Eurer Männer zu zahlen.[NEWLINE][NEWLINE]</German>
-        <Italian>You have had the first contact with three native nations</Italian>
-        <Spanish>You have had the first contact with three native nations</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT</Tag>
-        <English>Five native tribes met</English>
+        <English>Five Native tribes met</English>
         <French>Cinq peuples indigènes</French>
         <German>Fünf Stämme getroffen</German>
-        <Italian>Five native tribes</Italian>
-        <Spanish>Five native tribes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_HEAD</Tag>
         <English>This land is not ours alone</English>
         <French>Vous avez rencontré cinq peuples indigènes</French>
         <German>Dieses Land gehört uns nicht alleine</German>
-        <Italian>Five native tribes</Italian>
-        <Spanish>Five native tribes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_TEXT</Tag>
-        <English>You have made first contact with five native nations.[NEWLINE][NEWLINE]A sigh escapes your chest. Again the smoke of campfires curls into the sky in the distance. Again you meet a tribe of these savages who seize this fertile land and claim their ancestors bequeathed it to them.[NEWLINE][NEWLINE]But you know better. Only he who can enforce that right can claim it.[NEWLINE][NEWLINE]You order your men to load their rifles and the priest to bless you.[NEWLINE][NEWLINE]</English>
+        <English>You have made first contact with five Native nations.[NEWLINE][NEWLINE]A sigh escapes your chest. Again the smoke of campfires curls into the sky in the distance. Again you meet a tribe of these savages who seize this fertile land and claim their ancestors bequeathed it to them.[NEWLINE][NEWLINE]But you know better. Only he who can enforce that right can claim it.[NEWLINE][NEWLINE]You order your men to load their rifles and the priest to bless you.[NEWLINE][NEWLINE]</English>
         <French>Vous en découvrez chaque jour davantage sur ce Nouveau Monde qui se révèle sans cesse plus vaste.[NEWLINE][NEWLINE]</French>
         <German>Ein Seufzen entschlüpft Eurer Brust. Wieder kräuselt in der Ferne der Rauch von Lagerfeuern in den Himmel. Wieder trefft Ihr auf einen Stamm dieser Wilden, die dieses fruchtbare Land in Beschlag nehmen und behaupten, ihre Ahnen hätten es ihnen vermacht.[NEWLINE][NEWLINE]Doch Ihr wisst es besser. Nur derjenige erhebt einen Anspruch zu Recht, der dieses Recht auch durchzusetzen vermag.[NEWLINE][NEWLINE]Ihr befehlt Euren Männern, ihre Gewehre zu laden, und dem Priester, Euch zu segnen.[NEWLINE][NEWLINE]</German>
-        <Italian>You have had the first contact with five native nations</Italian>
-        <Spanish>You have had the first contact with five native nations</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT</Tag>
-        <English>Twenty native tribes met</English>
+        <English>Twenty Native tribes met</English>
         <French>Vingt peuples indigènes</French>
         <German>Zwanzig Stämme getroffen</German>
-        <Italian>Twenty native tribes</Italian>
-        <Spanish>Twenty native tribes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_HEAD</Tag>
         <English>Native diversity</English>
         <French>Vous avez rencontré vingt peuples indigènes</French>
         <German>Indianische Vielfalt</German>
-        <Italian>Twenty native tribes</Italian>
-        <Spanish>Twenty native tribes</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_TEXT</Tag>
         <English>You already have twenty different tribes on your map. How many more do you think might be added?[NEWLINE][NEWLINE]If you thought this vast land was essentially uninhabited, your scouts have proved you wrong.[NEWLINE][NEWLINE]What will contact with these different cultures bring? War or peace? Trade? Will the Church rid them of their superstitions and make them good Christians with the Bible in hand, or will you have to use your sword?[NEWLINE][NEWLINE]There is still a lot of work ahead of you, that much is certain...[NEWLINE][NEWLINE]</English>
         <French>Du Nord au Sud, vos explorateurs parcourent les terres de cette immense continent. En trouverez-vous un jour les limites ?[NEWLINE][NEWLINE]</French>
         <German>Zwanzig verschiedene Stämme habt Ihr nun bereits auf Eurer Landkarte verzeichnet. Wieviele werden wohl noch hinzukommen? Wenn Ihr gedacht habt, dieses weite Land sei im Wesentlichen unbesiedelt, haben Euch Eure Scouts mittlerweile eines Besseren belehrt.[NEWLINE][NEWLINE]Was wird der Kontakt mit diesen unterschiedlichen Kulturen wohl bringen? Krieg oder Frieden? Handel? Wird die Kirche sie von ihrem Aberglauben befreien und sie mit der Bibel in der Hand zu guten Christenmenschen machen oder müsst Ihr dafür Euer Schwert einsetzen?[NEWLINE][NEWLINE]Es liegt noch viel Arbeit vor Euch, soviel ist jedenfalls sicher...[NEWLINE][NEWLINE]</German>
-        <Italian>You have had the first contact with twenty native nations.</Italian>
-        <Spanish>You have had the first contact with twenty native nations.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE</Tag>
         <English>Your first trade agreement</English>
         <French>Premier échange commercial</French>
         <German>Eurer erstes Handelsgeschäft</German>
-        <Italian>Your first trade agreement</Italian>
-        <Spanish>Your first trade agreement</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_HEAD</Tag>
         <English>The first trade agreement</English>
         <French>Premier échange commercial</French>
         <German>Der erste Handelskontrakt</German>
-        <Italian>Your first trade agreement</Italian>
-        <Spanish>Your first trade agreement</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_TEXT</Tag>
