@@ -13,12 +13,12 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Sklave:Sklaven</Text>
+            <Text>Versklavter Afrikaner:Versklavte Afrikaner</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>African Slave:African Slaves</Text>
+            <Text>Schiavo africano:Schiavi africani</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
@@ -138,12 +138,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Beer</Text>
+            <Text>Birra</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Beer</Text>
+            <Text>Cerveza</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -208,7 +208,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterschmied:Meisterschmiede</Text>
+            <Text>Meister-Schmied:Meister-Schmiede</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -260,7 +260,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Bierbrauer:Meister Bierbrauer</Text>
+            <Text>Braumeister:Braumeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -316,7 +316,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Schlachtermeister:Schlachtermeister</Text>
+            <Text>Fleischermeister:Fleischermeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -360,7 +360,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Caravela Redonda:Caravelas Redondas</Text>
+            <Text>Quersegelkaravelle:Quersegelkaravellen</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -384,7 +384,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterzimmermann:Meisterzimmerleute</Text>
+            <Text>Zimmermeister:Zimmermeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -563,14 +563,26 @@
         <Tag>TXT_KEY_UNITCLASS_COCOA</Tag>
         <English>Cocoa</English>
         <French>Cacao torréfié</French>
-        <German>Kakao</German>
-        <Italian>Cocoa</Italian>
-        <Spanish>Cocoa</Spanish>
+        <German>
+            <Text>Kakao</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Cacao</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Cacao</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COCOA_FRUITS</Tag>
         <English>Cocoa Pods</English>
-        <French>Fèves de cacao</French>
+        <French>Cabosses de cacaoyer</French>
         <German>
             <Text>Kakaofrüchte</Text>
             <Gender>Female</Gender>
@@ -620,8 +632,8 @@
             <Gender>Female</Gender>
             <Plural>1</Plural>
         </German>
-        <Italian>Coffeeberries</Italian>
-        <Spanish>Coffeeberries</Spanish>
+        <Italian>Coffee Berries</Italian>
+        <Spanish>Coffee Berries</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_COFFEE_PLANTER</Tag>
@@ -642,7 +654,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Café exp.:Café exp.</Text>
+            <Text>Café experto:Café expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -684,6 +696,8 @@
         <English>Continental Guard:Continental Guards</English>
         <French>Garde continentale:Gardes continentales</French>
         <German>Kontinentalgarde:Kontinentalgarde</German>
+        <Italian>Continental Guard:Continental Guards</Italian>
+        <Spanish>Continental Guard:Continental Guards</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
@@ -693,7 +707,11 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Konvertierter Ureinwohner:Konvertierte Ureinwohner</German>
+        <German>
+            <Text>Konvertierter Ureinwohner:Konvertierte Ureinwohner</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Nativo convertito:Nativi convertiti</Text>
             <Gender>Male</Gender>
@@ -718,17 +736,17 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Corvette:Corvetten</Text>
+            <Text>Korvette:Korvetten</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Corvette:Corvettes</Text>
+            <Text>Corvetta:Corvette</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Corvette:Corvettes</Text>
+            <Text>Corbeta:Corbetas</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -741,7 +759,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Baumwolle</German>
+        <German>
+            <Text>Baumwolle</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Cotone</Text>
             <Gender>Male</Gender>
@@ -772,7 +794,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Algodonero exp.:Plantadores de algodón expertos</Text>
+            <Text>Algodonero experto:Plantadores de algodón expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -786,7 +808,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Cougar</Text>
+            <Text>Puma</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -830,7 +852,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterrumbrenner:Meisterrumbrenner</Text>
+            <Text>Brennermeister:Brennermeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -862,7 +884,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Färber:Meister Färber</Text>
+            <Text>Meister-Färber:Meister-Färber</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -962,7 +984,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Fermentierer:Meister Fermentierer</Text>
+            <Text>Meister-Fermentierer:Meister-Fermentierer</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1014,7 +1036,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Fluyt:Fluyten</Text>
+            <Text>Fleute:Fleuten</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1110,7 +1132,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Möbelschreiner:Meister Möbelschreiner</Text>
+            <Text>Schreinermeister:Schreinermeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1134,7 +1156,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterpelzhändler:Meisterpelzhändler</Text>
+            <Text>Meister-Pelzhändler:Meister-Pelzhändler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1189,12 +1211,12 @@
         <Italian>
             <Text>Pietre preziose</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Piedra preciosa</Text>
+            <Text>Piedras preciosas</Text>
             <Gender>Female</Gender>
-            <Plural>0</Plural>
+            <Plural>1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -1259,13 +1281,13 @@
             <Plural>1</Plural>
         </German>
         <Italian>
-            <Text>Winegrapes</Text>
-            <Gender>Male</Gender>
+            <Text>Uva</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Winegrapes</Text>
-            <Gender>Male</Gender>
+            <Text>Uva</Text>
+            <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
@@ -1402,7 +1424,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterwaffenschmied:Meisterwaffenschmiede</Text>
+            <Text>Büchsenmeister:Büchsenmeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1430,7 +1452,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Schwere Artillerie:Schwere Artillerien</Text>
+            <Text>Schwere Artillerie:Schwere Artillerie</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1640,7 +1662,7 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Indigo exp.:Indigo exp.</Text>
+            <Text>Indigo experto:Indigo expertos</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -1678,7 +1700,7 @@
             <Plural>0</Plural>
         </French>
         <German>
-            <Text>Kraken</Text>
+            <Text>Krake</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
@@ -1719,11 +1741,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LIGHT_ARTILLERY</Tag>
-        <English>Light Artillery:Light Artillery</English>
-        <French>Artillerie légère:Artilleries légères</French>
-        <German>Leichte Artillerie:Leichte Artillerien</German>
-        <Italian>Light Artillery:Light Artillery</Italian>
-        <Spanish>Light Artillery:Light Artillery</Spanish>
+        <English>
+            <Text>Light Artillery:Light Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Artillerie légère:Artilleries légères</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Leichte Artillerie:Leichte Artillerie</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Light Artillery:Light Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Light Artillery:Light Artilleries</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_LUMBER</Tag>
@@ -1867,7 +1909,7 @@
         </French>
         <German>
             <Text>Mörser:Mörser</Text>
-            <Gender>Female</Gender>
+            <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
@@ -1889,20 +1931,20 @@
         <Tag>TXT_KEY_UNITCLASS_MUSKETS</Tag>
         <English>Guns</English>
         <French>
-            <Text>Mousquet:Mousquets</Text>
-            <Gender>Male</Gender>
+            <Text>Arme à feu:Armes à feu</Text>
+            <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Musketen</German>
+        <German>Schusswaffen</German>
         <Italian>
-            <Text>Moschetti</Text>
-            <Gender>Male</Gender>
+            <Text>Armi</Text>
+            <Gender>Female</Gender>
             <Plural>1</Plural>
         </Italian>
         <Spanish>
-            <Text>Mosquetes</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
+            <Text>Arma:Armas</Text>
+            <Gender>Female</Gender>
+            <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
@@ -1926,7 +1968,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Berühmter Edelmann:Berühmte Edelmänner</Text>
+            <Text>Berühmter Edelmann:Berühmte Edelleute</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -1969,7 +2011,7 @@
         <Tag>TXT_KEY_UNITCLASS_ORE</Tag>
         <English>Ore</English>
         <French>
-            <Text>Minerai:Minerais</Text>
+            <Text>Minerai de fer:Minerais de fer</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2042,15 +2084,6 @@
         </Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
-        <English>Prepared Settler:Prepared Pioneers</English>
-        <German>
-            <Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIRATE_FRIGATE</Tag>
         <English>
             <Text>Pirate Frigate:Pirate Frigates</Text>
@@ -2063,8 +2096,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Piraten Fregatte:Piraten Fregatten</Text>
-            <Gender>Female</Gender>
+            <Text>Piratenschiff:Piratenschiffe</Text>
+            <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
@@ -2106,7 +2139,7 @@
         <Tag>TXT_KEY_UNITCLASS_PREMIUM_COATS</Tag>
         <English>Premium Coats</English>
         <French>
-            <Text>Manteaux de  qualité</Text>
+            <Text>Manteaux de qualité</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -2159,8 +2192,8 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Kaperfahrer:Kaperfahrer</Text>
-            <Gender>Male</Gender>
+            <Text>Kaperschiff:Kaperschiffe</Text>
+            <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
@@ -2339,7 +2372,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Seilmacher:Meister Seilmacher</Text>
+            <Text>Seilermeister:Seilermeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2356,14 +2389,18 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_CAVALRY</Tag>
-        <English>Royal Cavalryman:Royal Cavalrymen</English>
+        <English>
+            <Text>Royal Cavalryman:Royal Cavalrymen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Cavalier royal:cavalier royaux</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Königlicher Kavallerist:Königliche Kavallerist</Text>
+            <Text>Königlicher Kavallerist:Königliche Kavalleristen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2380,7 +2417,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_DRAGOON</Tag>
-        <English>Royal Dragoon:Royal Dragoons</English>
+        <English>
+            <Text>Royal Dragoon:Royal Dragoons</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Dragon royal:Dragons royaux</Text>
             <Gender>Male</Gender>
@@ -2432,20 +2473,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_ROYAL_LINE_INFANTRY</Tag>
-        <English>Royal Line Infantryman</English>
+        <English>
+            <Text>Royal Line Infantryman:Royal Line Infantrymen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
         <French>
             <Text>Royal d'Infanterie:Royaux d'Infanterie</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
-        <German>Königlicher Linieninfanterist</German>
-        <Italian>
-            <Text>Royal Line Infantryman</Text>
+        <German>
+            <Text>Königlicher Linieninfanterist:Königliche Linieninfanteristen</Text>
             <Gender>Male</Gender>
-            <Plural>0</Plural>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Royal Line Infantryman:Royal Line Infantrymen</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Royal Line Infantryman</Text>
+            <Text>Royal Line Infantryman:Royal Line Infantrymen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -2503,7 +2552,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Segelmacher:Meister Segelmacher</Text>
+            <Text>Meister-Segelmacher:Meister-Segelmacher</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2590,7 +2639,7 @@
         <Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>
         <English>Ship of the Line:Ships of the Line</English>
         <French>
-            <Text>Galion de guerre:Galions de guerre</Text>
+            <Text>Navire de ligne:Navires de ligne</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
@@ -2600,12 +2649,12 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Nave da prima linea:Navi da prima linea</Text>
+            <Text>Vascello:Vascelli</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Corbeta:Corbetas</Text>
+            <Text>Navío de línea:Navíos de línea</Text>
             <Gender>Female</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -2643,7 +2692,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Sloop:Sloops</Text>
+            <Text>Schaluppe:Schaluppen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2746,7 +2795,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Gewürzhändler:Meister Gewürzhändler</Text>
+            <Text>Meister-Gewürzhändler:Meister-Gewürzhändler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2898,7 +2947,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Ledergerber:Meister Ledergerber</Text>
+            <Text>Gerbermeister:Gerbermeister</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2942,7 +2991,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterzigarrendreher:Meisterzigarrendreher</Text>
+            <Text>Meister-Zigarrendreher:Meister-Zigarrendreher</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -2971,7 +3020,7 @@
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Colt. esperto di tab.:Coltivatori esperti di tabacco</Text>
+            <Text>Colt. esperto di tabacco:Coltivatori esperti di tabacco</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
@@ -3027,7 +3076,7 @@
         <French>Convoyeur:Convoyeurs</French>
         <German>
             <Text>Fuhrwerk:Fuhrwerke</Text>
-            <Gender>Male</Gender>
+            <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>Carriage:Carriages</Italian>
@@ -3098,7 +3147,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Infanterist:Erfahrene Infanteristen</Text>
+            <Text>Erfahrener Infanterie:Erfahrene Infanteristen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -3122,7 +3171,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Erfahrener Kavallerist:Erfahrene Kavalleristen</Text>
+            <Text>Erfahrener Kavallerie:Erfahrene Kavalleristen</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -3194,7 +3243,7 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meisterweber:Meisterweber</Text>
+            <Text>Meister-Weber:Meister-Weber</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
@@ -3245,7 +3294,11 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Walspeck</German>
+        <German>
+            <Text>Walspeck:Walspeck</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
         <Italian>
             <Text>Whale Fat</Text>
             <Gender>Male</Gender>
@@ -3279,11 +3332,31 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WHALE_OIL_COOKER</Tag>
-        <English>Master Train Oil Cooker:Master Train Oil Cookers</English>
-        <French>Maître affineur d'huile:Maîtres affineur d'huile</French>
-        <German>Meistertrankocher:Meistertrankocher</German>
-        <Italian>Master Train Oil Cooker:Master Train Oil Cookers</Italian>
-        <Spanish>Master Train Oil Cooker:Master Train Oil Cookers</Spanish>
+        <English>
+            <Text>Master Train Oil Cooker:Master Train Oil Cookers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Maître affineur d'huile:Maîtres affineur d'huile</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>
+            <Text>Meister-Trankocher:Meister-Trankocher</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </German>
+        <Italian>
+            <Text>Master Train Oil Cooker:Master Train Oil Cookers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Master Train Oil Cooker:Master Train Oil Cookers</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_WHALING_BOAT</Tag>
@@ -3303,12 +3376,12 @@
             <Plural>0</Plural>
         </German>
         <Italian>
-            <Text>Wine</Text>
+            <Text>Vino</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>Wine</Text>
+            <Text>Vino</Text>
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
@@ -3326,17 +3399,17 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Meister Winzer:Meister Winzer</Text>
+            <Text>Meister-Winzer:Meister-Winzer</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Master Vintager:Master Vintagers</Text>
+            <Text>Mastro vignaiolo:Mastri viticoltori</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Master Vintager:Master Vintagers</Text>
+            <Text>Maestro vinicultor:Maestros viticultores</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -3426,12 +3499,12 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Befreiter Sklave:Berfreite Sklaven</Text>
+            <Text>Befreiter Sklave:Befreite Sklaven</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Freed Slave:Freed Slaves</Text>
+            <Text>Schiavo liberato:Schiavi liberati</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
@@ -3444,27 +3517,27 @@
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_REVOLTING_SLAVE</Tag>
         <English>
-            <Text>Revolting Slave:Revolting Slaves</Text>
+            <Text>Revolting African Slave:Revolting African Slaves</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </English>
         <French>
-            <Text>Esclave revolté:Esclaves revoltés</Text>
+            <Text>Esclave africain révolté:Esclaves africains révoltés</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Revoltierender Sklave:Revoltierende Sklaven</Text>
+            <Text>Revoltierender Afrikanischer Sklave:Revoltierende Afrikanische Sklaven</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
         <Italian>
-            <Text>Revolting Slave:Revolting Slaves</Text>
+            <Text>Schiavo africano rivoltante:Rivoltosi schiavi africani</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Esclavo rebelde:Esclavos rebeldes</Text>
+            <Text>Esclavo africano rebelde:Esclavos africanos rebeldes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
@@ -3488,27 +3561,61 @@
             <Plural>0:1</Plural>
         </Italian>
         <Spanish>
-            <Text>Convicto rebelde:Convictos rebeldes</Text>
+            <Text>Convicto repugnante:Convictos repugnantes</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_EXPERT_TRADER</Tag>
-        <English>Expert Native Trader:Expert Native Traders</English>
+        <English>
+            <Text>Expert Native Trader:Expert Native Traders</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </English>
+        <French>
+            <Text>Expert commerçant indigènes:Expert commerçants indigènes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Erfahrener Ureinwohnerhändler:Erfahrene Ureinwohnerhändler</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Expert Native Trader:Expert Native Traders</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Expert Native Trader:Expert Native Traders</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNITCLASS_HOSTILE_NATIVE</Tag>
         <English>Hostile Native:Hostile Natives</English>
+        <French>
+            <Text>Indigène hostiles:Indigènes hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
         <German>
             <Text>Feindlicher Ureinwohner:Feindliche Ureinwohner</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Nativo ostile:Nativi ostili</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nativos hostiles:Nativos hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
 </Civ4GameText>
