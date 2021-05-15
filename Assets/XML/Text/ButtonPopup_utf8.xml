@@ -18,7 +18,7 @@
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_TITLE</Tag>
-        <English>Select imports, exports, minimum and maximum goods stored for %s1_city[NEWLINE]Read Colopedia's concept page to learn how to use this.</English>
+        <English>Select imports, exports, minimum and maximum goods stored for %s1_city[NEWLINE]Read Colopedia's concept page[NEWLINE]Transport Automation to learn how to use this.</English>
         <French>Sélectionner les imports, les exports, et les seuils de biens stockées à %s1_city</French>
         <German>Importe, Exporte und gelagerte Mindestgüter, Maximal für die Stadt %s1_city auswählen</German>
     </TEXT>

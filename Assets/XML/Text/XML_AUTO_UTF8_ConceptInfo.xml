@@ -1038,11 +1038,11 @@
     </TEXT>
 	<TEXT>
 			<Tag>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT</Tag>
-			<English>Automatic transporting goods between colonies</English>
+			<English>Transport Automation</English>
 	</TEXT>
 	<TEXT>
 			<Tag>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT_PEDIA</Tag>
-			<English>[H1]Automatic transporting goods between colonies[\H1]
+			<English>[H1]Transport Automation[\H1]
 [PARAGRAPH:1]
 Any player with more than one colony will eventually need to transport goods between the colonies.. This is done using transports, which are units with cargo slots. Examples of this are [LINK=UNIT_CARAVEL]caravels[\LINK] and [LINK=UNIT_WAGON_TRAIN]wagon trains[\LINK]. As the number of colonies grows, so does the need for transporting cargo. Luckily transports can be automated.
 
@@ -1098,7 +1098,10 @@ The last two checkboxes are more advanced. It is possible to set up a fully func
 [PARAGRAPH:1]Fully automated transports can’t start on a trade route until they are empty. This means a loaded transport will have to unload. If it can’t find a location it finds suitable, it will unload in the nearest colony even if that colony doesn’t import said cargo. The alternative would be to get the transport stuck.
 
 [COLOR_HIGHLIGHT_TEXT]Auto supplying construction[COLOR_REVERT]
-[PARAGRAPH:1]The constr</English>
+[PARAGRAPH:1]The construction queue once in a while requires a one time shipment of cargo, often [LINK=YIELD_TOOLS]tools[\LINK]. It is possible to let the automation take care of that while not storing anything unless it's needed. Enable feeder service and auto export while keeping both numbers at 0. If contruction then requires say 100 [LINK=YIELD_TOOLS]tools[\TOOLS], feeder service will import until 100 is stored. Maybe the transports will supply too much, but here auto export comes into play and will export the excess. If construction is canceled, all the tools will be set to export.
+
+[COLOR_HIGHLIGHT_TEXT]Manually controlled transports can be faster[COLOR_REVERT]
+[PARAGRAPH:1]Fully automated transports are somewhat unaware of travel distance and will happily spend 5 turns supplying what can be done in a single turn. For this reason if receiving cargo is urgent, don't forget that manually controlling a transport can be the best option. Also if supplying raw material for manufactoring, consider how much storage you want to maintain for imports as you might not get transports arriving consistently.</English>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_CONCEPT_TRAINING</Tag>
