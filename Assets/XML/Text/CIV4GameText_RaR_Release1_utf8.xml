@@ -14,8 +14,6 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-        <Italian>Savannah</Italian>
-        <Spanish>Savannah</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONQUISTADOR</Tag>
@@ -34,212 +32,154 @@
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
-        <Italian>
-            <Text>Conquistador:Conquistadores</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Conquistador:Conquistadores</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_ACCEPTED</Tag>
-        <English>We have undertaken peace negotiations with %s1_nation as per the wishes of our King.</English>
+        <English>We have begun peace negotiations with %s1_nation in compliance with the wishes of our King.</English>
         <French>Conformément aux souhaits du Roi, nous avons accepté les négociations de paix avec %s1_nation.</French>
         <German>Wie durch den König gewünscht, haben wir den Friedensverhandlungen mit %s1_nation zugestimmt. Die Diplomaten haben sich nach der Verhandlung entschieden zu bleiben.</German>
-        <Italian>Come auspicato dal nostro Re, abbiamo accettato negoziati di pace con %s1_nation</Italian>
-        <Spanish>Como deseado por nuestro Rey, hemos aceptado las negociaciones de paz con %s1_nation.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_DENIED</Tag>
-        <English>We have refused peace negotiations with %s1_nation. The King is unhappy with our decision.</English>
+        <English>We refuse to negotiate peace with %s1_nation. The King is unhappy with our decision.</English>
         <French>Nous avons rejeté les négociations de paix avec %s1_nation. Le Roi est mécontent.</French>
         <German>Wir haben die Friedensverhandlungen mit %s1_nation abgelehnt.</German>
-        <Italian>Abbiamo rifiutato negoziati di pace con %s1_nation. Il re è infelice con la nostra decisione.</Italian>
-        <Spanish>Hemos rechazado las negociaciones de paz con %s1_nation. El Rey está satisfecho con nuestra decisión.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>ABANDONING_CITY</Tag>
         <English>You are going to abandon this city.</English>
         <French>Vous allez abandonner cette colonie.</French>
         <German>Gouverneur, wenn Ihr alle Bewohner dieser Siedlung ihre Habseligkeiten packen lasst und sie fortschickt, wird der Ort verlassen sein und von der Karte getilgt werden.</German>
-        <Italian>Avete intenzione di abbandonare questa città.</Italian>
-        <Spanish>Usted va a abandonar esta ciudad.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>CITY_ABANDONED</Tag>
         <English>City %s1_city has been abandoned.</English>
         <French>La Colonie de %s1_city a été abandonnée.</French>
         <German>Die letzten Bürger haben %s1_city den Rücken gekehrt. Die Hütten werden verfallen, und bald wird sich niemand mehr dieses Ortes entsinnen.</German>
-        <Italian>City %s1_city è stato abbandonato.</Italian>
-        <Spanish>Ciudad %s1_city ha sido abandonado.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>NO_ABANDONING_CITY_BECAUSE_WAR</Tag>
         <English>Abandoning a city is not possible during war.</English>
         <French>L'abandon d'une colonie est impossible en temps de guerre.</French>
         <German>Gouverneur, es herrscht Krieg, und die Siedler fürchten sich, die schützende Siedlung aufzugeben.</German>
-        <Italian>Abbandonare la città non è possibile durante la guerra.</Italian>
-        <Spanish>El abandono de una ciudad no es posible durante la guerra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>NO_TRADE_BECAUSE_BAD_BARGAIN</Tag>
-        <English>This city currently does not want to trade with you.</English>
+        <English>This city currently refuses to trade with you.</English>
         <French>Cette colonie refuse de commercer avec vous.</French>
         <German>Das Volk der %s1_Civ möchte zur Zeit nicht mit euch handeln.</German>
-        <Italian>Questa città attualmente non vuole commerciare con voi.</Italian>
-        <Spanish>Esta ciudad actualmente no quiere negociar con usted.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>Debug</Tag>
         <English>Debug %d1_position %d2_value</English>
         <French>Debug %d1_position %d2_value</French>
         <German>Debug %d1_position %d2_value</German>
-        <Italian>Debug %d1_position %d2_value</Italian>
-        <Spanish>Debug %d1_position %d2_value</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RAIDED</Tag>
         <English>%s1_civ_adjective raid on %s2_city! A %s3_BldngName was destroyed by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! [NUM1:Un:Une] %s3_BldngName [NUM1:a été détruit:a été détruite] par des ennemis infiltrés !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
-        <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno distrutto [NUM1:un:una] %s3_BldngName !</Italian>
-        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han destruido [NUM1:un:una:unos:unas] %s3_BldngName !</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! All %s3_buildName progress was destroyed by the raiding party!</English>
+        <English>%s1_civ_adjective raid on %s2_city! All %s3_buildName progress has been destroyed by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Toutes les progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von gegnerischen Eindringlingen zerstört!</German>
-        <Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
-        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido todo el progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURY_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! %d3[ICON_GOLD] of our state treasury was looted by the raiding party!</English>
+        <English>%s1_civ_adjective raid on %s2_city! %d3[ICON_GOLD] from our state treasury was looted by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %d3[ICON_GOLD] de notre trésor a été pillée par des ennemis infiltrés !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Feindliche Eindringlingen haben einen %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
-        <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno rubato %d3[ICON_GOLD] del nostro tesoro di stato!</Italian>
-        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han saqueado %d3[ICON_GOLD] de nuestro tesoro!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCALP_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! Raiding party takes scalps, %s3_unit killed</English>
+        <English>%s1_civ_adjective raid on %s2_city! The raiders take scalps, with %s3_unit killed.</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %s3_unit a subi des dégâts</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! %s3_unit Es hat Opfer gegeben</German>
-        <Italian>Raid %s1_civ_adjective a %s2_city! sono morti %s3_unit</Italian>
-        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! Se lamenta la pérdida de %s3_unit</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HARBOR_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! Raiding party attacks harbor, your %s3_unit was damaged!</English>
+        <English>%s1_civ_adjective raid on %s2_city! Raiders attack the harbour, damaging your %s3_unit!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Votre %s3_unit a subi des dégâts !</French>
         <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! %s3_unit beschädigt!</German>
-        <Italian>Raid %s1_civ_adjective a %s2_city! La tua unità %s3_unit  è stata danneggiata!</Italian>
-        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! [NUM2:ha dañado:ha dañado:han dañado:han dañado] a [NUM1:vuestro:vuestra:vuestros:vuestras] %s3_unit !</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NOTHING_RAIDED</Tag>
         <English>%s1_civ_adjective raiding party wiped out in %s2_city! Nothing destroyed or stolen.</English>
         <French>%s1_civ_adjective raid anéanti en %s2_city! Rien n'a été détruit ou volé.</French>
         <German>%s1_civ_adjective Stoßtrupp in %s2_city ausgelõscht! Keine ernstzunehmenden Schäden verursacht.</German>
-        <Italian>%s1_civ_adjective gruppo di incursori spazzato via in %s2_city! Niente distrutto o rubato.</Italian>
-        <Spanish>%s1_civ_adjective partido de ataque acabó en %s2_city! Nada destruye o se lo roban.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
         <English>%s1_civ_adjective raiding party captured in %s2_city! They will pay with labour for their crimes.</English>
         <French>%s1_civ_adjective raid capturé en %s2_city! Ils paieront pour leurs crimes par le travail.</French>
         <German>%s1_civ_adjective Stoßtrupp in %s2_city gefangen genommen! Sie werden ihre Verbrechen abarbeiten.</German>
-        <Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
-        <Spanish>%s1_civ_adjective grupo asaltante capturado en %s2_city! Pagarán con el trabajo de sus crímenes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at an enemy ship and sunk it!</English>
+        <English>The citadel of %s1_city has targetted an enemy ship with its cannons, sinking it!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur un navire ennemi et l'a coulé !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf ein feindliches Schiff abgefeuert und es versenkt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni ad una nave nemica e affondato it!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones a un barco enemigo y hundido!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our ship and sunk it!</English>
+        <English>With its cannons the citadel of %s1_city has sunk our ship!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur notre navire et l'a coulé !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unser Schiff abgefeuert und es versenkt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni presso la nostra nave e affondata it!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones en nuestro barco y hundido!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_GOOD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at an enemy ship and damaged it!</English>
+        <English>Using its cannons the citadel of %s1_city has damaged an enemy ship!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur un navire ennemi et l'a endommagé !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf ein feindliches Schiff abgefeuert und es beschädigt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni ad una nave nemica e danneggiato it!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones a un barco enemigo y dañado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our ship and damaged it!</English>
+        <English>The citadel of %s1_city has fired its cannons at our ship, damaging it!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur notre navire et l'a endommagé !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unser Schiff abgefeuert und es beschädigt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni presso la nostra nave e danneggiato it!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones en nuestro barco y dañado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_BAD</Tag>
         <English>The citadel of %s1_city has fired its cannons at an enemy ship but missed it!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur un navire ennemi, mais elle l'a raté !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf ein feindliches Schiff abgefeuert, dieses jedoch verfehlt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni ad una nave nemica, ma perso!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones a un barco enemigo, pero lo perdimos!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_GOOD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our ship but missed it!</English>
+        <English>The citadel of %s1_city fired its cannons at our ship but missed it!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur notre navire, mais l'a raté !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unser Schiff abgefeuert, dieses jedoch verfehlt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni presso la nostra nave, ma perso!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones en nuestro barco, pero lo perdimos!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_GOOD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at enemy troops and destroyed them!</English>
+        <English>Cannon fire from the citadel of %s1_city has destroyed enemy troops!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur les troupes ennemies et les a détruites !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf feindliche Truppen abgefeuert und diese vernichtet!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni contro le truppe nemiche e distrutti!</Italian>
-        <Spanish>La ciudadela de% s1_city ha disparado sus cañones contra las tropas enemigas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our troops and destroyed them!</English>
+        <English>Cannons from %s1_city have destroyed our troops!</English>
         <French>La citadelle de %s1_city a tiré ses canons à nos troupes et les a détruites !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unsere Truppen abgefeuert und diese vernichtet!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni alle nostre truppe e distrutti!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones a nuestras tropas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_LAND_GOOD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at enemy troops and damaged them!</English>
+        <English>Cannons in the %s1_city citadel have damaged enemy troops!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur les troupes ennemies et les a endommagées !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf feindliche Truppen abgefeuert und diesen Schaden zugefügt!</German>
-        <Italian>The citadel of %s1_city has fired its cannons at enemy troops and damaged them!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones contra las tropas enemigas y les damamged!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_LAND_BAD</Tag>
         <English>The citadel of %s1_city has fired its cannons at our troops and damaged them!</English>
         <French>La citadelle de %s1_city a tiré ses canons à nos troupes et les a endommagées !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unsere Truppen abgefeuert und diesen Schaden zugefügt!</German>
-        <Italian>La cittadella di %s1_city ha sparato i suoi cannoni alle nostre truppe e damaged!</Italian>
-        <Spanish>La ciudadela de %s1_city ha disparado sus cañones a nuestras tropas y les damaged!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_LAND_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at enemy troops but missed them!</English>
+        <English>The citadel of %s1_city missed the enemy troops with its cannons!</English>
         <French>La citadelle de %s1_city a tiré ses canons sur les troupes ennemies, mais elle les a manquées !</French>
         <German>Die Zitadelle von %s1_city hat ihre Kannonen auf feindliche Truppen abgefeuert, diese jedoch verfehlt!</German>
     </TEXT>
