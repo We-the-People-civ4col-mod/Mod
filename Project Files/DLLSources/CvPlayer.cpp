@@ -6136,35 +6136,33 @@ void CvPlayer::processTrait(TraitTypes eTrait, int iChange)
 		}
 	}
 
-	bool bUpdatePlotYields = false;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-
-		changeYieldRateModifier(eYield, iChange * kTrait.getYieldModifier(iYield));
+		changeYieldRateModifier(eYield, iChange * kTrait.getYieldModifier(eYield));
 		changeBuildingRequiredYieldModifier(eYield, kTrait.getBuildingRequiredYieldModifier(eYield) * iChange);
 
-		if (kTrait.isTaxYieldModifier(iYield))
+		if (kTrait.isTaxYieldModifier(eYield))
 		{
 			changeTaxYieldModifierCount(eYield, iChange);
 		}
 
-		for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
+		for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < GC.getNumBuildingClassInfos(); ++eBuildingClass)
 		{
-			changeBuildingYieldChange((BuildingClassTypes) iBuildingClass, eYield, iChange * kTrait.getBuildingYieldChange(iBuildingClass, iYield));
+			changeBuildingYieldChange(eBuildingClass, eYield, iChange * kTrait.getBuildingYieldChange(eBuildingClass, eYield));
 		}
 
-		updateExtraYieldThreshold(eYield);
-
-		if (kTrait.getCityExtraYield(iYield) != 0 || kTrait.getExtraYieldThreshold(iYield) != 0)
+		// update the plot yield caches
+		// vanilla bug was present here. CityExtraYield would not apply even though it would call updateYield() if the trait changed the value.
+		// updateYield() relies on updateCityExtraYield having set the cache correctly first
+		//    Nightinggale
+		if (kTrait.getCityExtraYield(eYield) != 0)
 		{
-			bUpdatePlotYields = true;
+			updateCityExtraYield(eYield);
 		}
-	}
-
-	if (bUpdatePlotYields)
-	{
-		updateYield();
+		if (kTrait.getExtraYieldThreshold(eYield) != 0)
+		{
+			updateExtraYieldThreshold(eYield);
+		}
 	}
 
 	for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); ++iUnitClass)
