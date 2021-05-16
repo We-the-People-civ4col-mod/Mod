@@ -1,5 +1,250 @@
 We the People Changelog
 
+Version 2.9
+
+Features:
+- Large rivers (not in random maps yet)
+- Goody huts with guards, which periodically spawns hostile natives/raiders/animals (depending on type)
+- New file icons for shortcuts
+
+Improvements:
+- Multiple updated graphics
+- More events/quests
+- Added specialist settler
+- New Swedish audio for units (now they actually speak Swedish)
+- New sounds for Africa and Port Royal
+- Added large rivers to premade maps + varous small adjustments to them
+- Pointless vanilla game options are no longer displayed
+- Rearranged import/export popup in the colony screen and added a colopedia concept page on how to use it
+
+Fixes:
+- Loading a savegame will no longer risk incorrectly removing fog of war from plots
+- #425 Auto export is now saved correctly
+- Roads can now be build on peaks even if it's surrounded by only peaks
+- Buildings providing a road on the colony plot will no longer downgrade the road quality
+- #442 Fixed multiple bugs, which caused automated transports to not move
+- Removed case where raiding natives could report burning down a building without removing any buildings
+- #401 Blocked vanilla from trying to load map scripts (and fail) while starting vanilla
+- Fixed vanilla bug where circles on the map might not update correctly if a team has more than one player
+- Shipwrecks discovered by founding a colony will no longer causes bugs due to referring to the ship doing the discovery
+- Barbarian units are no longer called "wild animals" in mouseover help text
+- Ships using automated exploration will now aim for shipwrecks just like automated scouts on land search ruins
+- Clearing a unit speciality in a revolting colony will no longer crash the game
+- Forts now updates field of view as intended
+- #437 Scrolling up will no longer move the "unit pointer icon" behind the bottom panel
+- #459 Founding Fathers and traits providing extra yield on the colony plot will now provide the bonus (vanilla bug)
+
+AI:
+- AI will now actively search shipwrecks. It's now a race to get them first
+
+Modding features:
+- #438 Generic parameters in events now accept both ints and type strings (still stored as ints internally)
+- Introduced a new way of packing data in network packages (hopefully this will prevent trade routes from breaking again)
+
+World Builder:
+- Changing profession anywhere is once again allowed
+- Allows premade maps to randomize features (forests)
+
+
+Version 2.8.2.4
+
+Improvements:
+- Better optimization at compile time (Whole Program Optimization)
+- Scripted release building for consistency between releases (easier to download newest release)
+
+Fixes:
+- Fixed fog of war not appearing on some plots
+- #409 Fix bug where ships could try to flee instead of defending if attacked. Fleeing then failed, causing instant destruction of the ship.
+
+Version 2.8.2.3
+
+Improvements:
+- Various performance improvements
+
+Fixes:
+- Native Advisor: clicking on a settlement icon is now a shortcut to jumping to the settlement (doesn't always work)
+- Merging treasures is no longer able to create treasures containing 0 gold
+- Various fixes to town guards
+- Fixed freeze if AI transport can't reach any colony
+
+Version 2.8.2.2
+
+Improvements:
+- "Jump to settlement" in native advisor now works by clicking a button rather than mouse over (no more accidental jumping/closing)
+
+Fixes:
+- Fixed severe slowdown related to exploring AI and ship loading
+- Hot seat multiplayer will no longer crash during the diplomacy screen
+- #394 units with invalid professions will no longer crash the game
+- Happiness cooldown counter (turns since last happy event) will not longer become corrupted
+- Fixed network OOS related to happiness cooldown counter
+- Colopedia improvement page now always links to bonuses as intended (no more units)
+
+Old savegames still work, but time since last happiness event in colonies will be reset to get rid of corrupted counters.
+Not a major issue because it only happens while upgrading.
+
+Version 2.8.2.1
+Fixes:
+- Pioneers will now calculate correct work rate on load (not stacking cache on each load)
+- Units stuck in colonies with NO_PROFESSION will now be kicked out to make then reachable for the player again
+- Changing from a military profession will now always remove the free promotions from that profession*
+
+* the fix prevents new units from getting corrupted promotion cache, but units already affected in 2.8.2.0 savegames will not be fixed.
+
+Version 2.8.2.0
+WARNING: NOT SAVEGAME COMPATIBLE
+Savegames from previous versions will not load
+
+New Features:
+- colony plot radius is now a map option (no need for switching DLL files)
+
+- Improvements:
+- Added trading post, health and happiness to Domestic Advisor
+- Added "jump to settlement" to native advisor (still needs more work. Triggers on mouse over)
+- Added Europe trade quests
+- Automated ships now explore shipwrecks
+
+Balance:
+- Ships now have a better chance of withdrawing 
+
+Fixes:
+- Fixed number of stored lumber and stone turning red in cases when it should be green
+- Import limits in colonies now work as intended again
+- Various text fixes
+- Various event fixes
+
+AI:
+- Better handling of Settlers
+- Fix: now considers how much is stored in the colonies when buying cargo in Europe
+
+Internal features:
+- New savegame format
+- New "engine" for making pages in the domestic advisor
+- New data structures (EnumMap, InfoArray, caches etc)
+- CivEffects
+- Plenty of xml verification for early automated bug catching
+
+Version 2.8.1
+WARNING: NOT SAVEGAME COMPATIBLE
+Savegames from previous versions will not load
+
+New Features
+- Overhauled Founding Cities Mechanic using Profession "Settler"
+- Failed Missionary (from Ramstormp)
+- "Happiness Advisor Tab" in Domestic Advisor (from Raubwuerger)
+
+New Events
+- Python Event "Sell Native Slave" (from @Acheron81)
+- Python Event "Sell African Slave" (from @Acheron81)
+
+Improvements and Balancing
+- AI improvements for Missionaries and Native Traders
+- Rebel Bonus on Happiness from Buildings removed
+- max. Unhappiness from Tax Rate capped to City Population
+- Fixed many small Asserts (uncritical Warnings in Code)
+- several small Improvements considering Python Events
+- several AI improvements
+- code refactoring for performance and stabilities
+
+Fixes
+- Fixed Visibility Bug on Ocean
+- Fixed Shift-Key Bug for Loading in Port Royal
+- Fixed Python Exception in Port Royal when lacking Funds
+- Fixed Bug in King Unit Requests
+- Fixed Bug in XP Cap (for Wild Animals and Runaways)
+- Fixed bug of settings for "City Center Plot Yield" not being stored
+- Several small text corrections (English and German)
+
+Version 2.8
+WARNING: NOT SAVEGAME COMPATIBLE
+Savegames from previous versions will not load
+
+New Features
+- New concept: colonist happiness
+- Added the ability to open trading posts in native settlements
+- Readded town guard unit
+- European Line Infantry can now change profession
+- Treasures can now merge
+- Slaves can now revolt and they can become free
+- Russians now have their own priest and missionary units
+- Added some Russian founding fathers
+- New game option: Only 1 colonist living with Natives at at time
+
+Improvements:
+- #309 Added message when uprest ends in a colony
+- added 5 new quests
+- Turn counter displayed for units working to become experts or become free
+- Citizen help now display yield modifiers
+- Python errors will now always be displayed (makes bug reports more useful)
+
+Balance:
+- #124 you can no longer just take whatever cargo you want from natives even if you have a permanent alliance
+- #138 hemp can now be produced on colony plot
+- #253 rebalanced rangers to make them more useful
+- #336 lost tribe random event is now less likely to trigger and not as rewarding
+- #354 trapper vs hunter balance redone
+- #356 cattle thieves random event will now steal less cattle
+- Kings sends less troops for declaring war and the enemy will also get reinforcements if you do
+- Rebalanced when a governor is offered and price
+- Rebalanced some profession bonuses for balance and consistency
+- Greatly reduced some overpowered expert bonuses. It's no longer possible to get +300% from an expert
+- Hurry cost now use 150% of cargo cost in Europe (was 125% from vanilla)
+- The 5 dock quest now gives a frigate instead of a ship-of-the-line
+- Some units now have a defense of 1 instead of 0
+- Lumber mill improvement is now called sawmill and is an upgraded lumber camp
+- Founding Father Samuel Adams now cost the intended 11.000 trade points, not 1.100 (technically a bugfix, but it affects balance)
+
+Fixes:
+- #42 help text is no longer able to reveal the owner of units with hidden nationality
+- #44 #45 Custom house popup now clearly tells which yields will never be sold
+- #68 Political refuges can now become experts though learning by doing
+- #85 native settlement billboards (nametags) now display if the natives are too angry to trade
+- #120 greatly reduced usefulness of the found and abandon exploit
+- #160 natives will no longer build ships
+- #226 Defensive buildings (like stockade) would not always be displayed on the 3D map
+- #235 incorrect wording in event help text (like increased by -1)
+- #244 random event: selling a man to the natives should give you money, not cost you money
+- #252 Goto Port Royal button is now hidden if the ship can't go there
+- #257 ships will flee if possible instead of getting destroyed if they are in a colony when it's captured
+- #279 wrong revolution icon when displaying effects of leader traits
+- #289 incorrect display of culture in events (display bug only)
+- #336 animals and escapees can no longer be used to farm massive amounts of XP
+- #340 free ships (founding father bonus) can no longer spawn in the middle of the map
+- #348 added goto button for coastal ships. Still no goto Europe for obvious reasons
+- #358 Monasteries can now grow large even if they are outside your cultural borders
+- #361 Gold icon (top left) could be drawn on top of text about current turn and turn limit
+- Allowing Wagon Trains to be captured again
+- Governor units no longer have a domestic need for 0.05 food/turn because it's always rounded to 0 anyway
+- Sophisticated trait no longer has inverted tax rate threshold modifier
+- Removed "Cannot declare war" text in help popup in some cases where it shouldn't have been included
+- Various quest related issues
+- Some quests will now not show up in multiplayer as they can cause network desyncs
+- Fixed many small issues with text display
+
+Version 2.7.2
+
+Translation Improvements:
+- Translators can now use UTF-8 instead of html escapes for non-ASCII characters (doesn't actually unlock all of unicode though)
+- Strings missing in a translation will now use the English string instead of crashing the game
+- Ingame mod credits now mentions WTP and is much easier to translate and maintain
+
+AI Improvements:
+- #171 AI great admirals now ignore privateers
+- #123 AI will now value maps higher in diplomacy if they contain unvisited villages
+- #171 Fix overproduction of coastal transports
+- #171 AI now no longer ignores bonuses on impassable plots when planning colony placement
+- #171 AI now evaluates culture correctly
+
+Fixes:
+- #83 Fixed a crash when changing which yield to produce on a colony plot (debug mode only)
+- #267 Fixed AI freezing the game (infinite loop) in some cases when splitting up a group of units
+- #258 Abandoning a colony will no longer allow setting professions without paying the yield cost
+- #234 Colored circles that mark goodies will now only appear if the scout(expert only) or ship can actually move into the target plot. Changed the color of the circle to green to indicate that these units may only receive benefits.
+- #240 Fix bug that suggested that a boycott could be lifted during the revolution
+- #171 Boosts performance by caching the visual range of the best unit instead of calculating each time
+- #147 Boosts performance when trying to find a path to Europe (only look at actual Europe access plots)
+- Fixed makefile bug, which caused 1 plot dll files to run in debug mode (way too slow)
+
 Version 2.7.1.1
 
 Fixes:

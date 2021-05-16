@@ -400,6 +400,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -425,11 +429,11 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -869,6 +873,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -893,8 +901,8 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_PIONEER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_HUNTER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
@@ -1306,6 +1314,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -1334,8 +1346,8 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
@@ -1696,6 +1708,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -1720,12 +1736,12 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_TRAPPER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_CARPENTER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -2060,6 +2076,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -2085,11 +2105,11 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_SCOUT</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_SCOUT</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNIT_FISHERMAN</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -2377,6 +2397,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -2401,12 +2425,12 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -2728,6 +2752,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -2752,12 +2780,12 @@
                     <FreeUnitProfession>NONE</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_LUMBERJACK</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_FARMER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_DRAGOON</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -3193,7 +3221,7 @@
             <Units>
                 <Unit>
                     <UnitClassType>UNITCLASS_PREACHER</UnitClassType>
-                    <UnitType>UNIT_PRIEST</UnitType>
+                    <UnitType>UNIT_RUSSIAN_PRIEST</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_ROYAL_LIGHT_INFANTRY</UnitClassType>
@@ -3219,6 +3247,10 @@
                     <UnitClassType>UNITCLASS_HEAVY_ARTILLERY</UnitClassType>
                     <UnitType>UNIT_HEAVY_ARTILLERY_VETERAN</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_CHRISTIAN_MISSIONARY</UnitClassType>
+                    <UnitType>UNIT_RUSSIAN_MISSIONARY</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
@@ -3239,6 +3271,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -3267,11 +3303,11 @@
                 </FreeUnitClass>
                 <FreeUnitClass>
                     <UnitClassType>UNITCLASS_HUNTER</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_HEAVY_CAVALRY</FreeUnitProfession>
+                    <FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
                 </FreeUnitClass>
                 <FreeUnitClass>
-                    <UnitClassType>UNITCLASS_COLONIST</UnitClassType>
-                    <FreeUnitProfession>PROFESSION_PIONEER</FreeUnitProfession>
+                    <UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
+                    <FreeUnitProfession>PROFESSION_NATIVE_TRADER</FreeUnitProfession>
                 </FreeUnitClass>
             </FreeUnitClasses>
             <FreeBuildingClasses>
@@ -3405,6 +3441,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3414,6 +3454,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -3654,6 +3706,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3663,6 +3719,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -3900,6 +3968,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -3909,6 +3981,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -4149,6 +4233,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4158,6 +4246,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -4382,6 +4482,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4391,6 +4495,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -4616,6 +4732,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4625,6 +4745,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -4851,6 +4983,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -4860,6 +4996,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -5089,6 +5237,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -5098,6 +5250,18 @@
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
             </Units>
@@ -5758,6 +5922,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -5886,6 +6054,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -5942,7 +6118,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -5989,10 +6181,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -6001,6 +6209,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -6024,6 +6236,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -6033,6 +6249,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -6660,6 +6880,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6788,6 +7012,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -6844,7 +7076,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -6891,10 +7139,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -6903,6 +7167,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -6926,6 +7194,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -6935,6 +7207,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -7569,6 +7845,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -7697,6 +7977,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -7753,7 +8041,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -7800,10 +8104,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -7812,6 +8132,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -7835,6 +8159,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -7844,6 +8172,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8481,6 +8813,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -8609,6 +8945,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -8665,7 +9009,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -8712,10 +9072,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8724,6 +9100,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -8747,6 +9127,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -8756,6 +9140,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -9392,6 +9780,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -9520,6 +9912,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -9576,7 +9976,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -9623,10 +10039,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -9635,6 +10067,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -9658,6 +10094,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -9667,6 +10107,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -10294,6 +10738,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10422,6 +10870,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -10478,7 +10934,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -10525,10 +10997,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -10537,6 +11025,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -10560,6 +11052,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -10569,6 +11065,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -11193,6 +11693,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -11321,6 +11825,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -11377,7 +11889,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -11424,10 +11952,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -11436,6 +11980,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -11459,6 +12007,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -11468,6 +12020,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -12092,6 +12648,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -12220,6 +12780,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -12276,7 +12844,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -12323,10 +12907,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -12335,6 +12935,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -12358,6 +12962,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -12367,6 +12975,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13012,6 +13624,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -13140,6 +13756,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -13196,7 +13820,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -13243,10 +13883,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13255,6 +13911,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13278,6 +13938,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -13287,6 +13951,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -13924,6 +14592,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14052,6 +14724,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14108,7 +14788,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -14155,10 +14851,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -14167,6 +14879,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -14190,6 +14906,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -14199,6 +14919,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -14825,6 +15549,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -14953,6 +15681,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15009,7 +15745,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -15056,10 +15808,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15068,6 +15836,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15091,6 +15863,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -15100,6 +15876,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15747,6 +16527,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15875,6 +16659,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -15931,7 +16723,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -15978,10 +16786,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -15990,6 +16814,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16013,6 +16841,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -16022,6 +16854,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16650,6 +17486,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -16778,6 +17618,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -16834,7 +17682,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -16881,10 +17745,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16893,6 +17773,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -16916,6 +17800,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -16925,6 +17813,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -17555,6 +18447,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17683,6 +18579,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -17739,7 +18643,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -17786,10 +18706,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -17798,6 +18734,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -17821,6 +18761,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -17830,6 +18774,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -18461,6 +19409,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -18589,6 +19541,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -18645,7 +19605,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -18692,10 +19668,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -18704,6 +19696,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -18727,6 +19723,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -18736,6 +19736,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -19364,6 +20368,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -19492,6 +20500,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -19548,7 +20564,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -19595,10 +20627,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -19607,6 +20655,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -19630,6 +20682,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -19639,6 +20695,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -20267,6 +21327,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -20395,6 +21459,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -20451,7 +21523,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -20498,10 +21586,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -20510,6 +21614,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -20533,6 +21641,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -20542,6 +21654,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -21179,6 +22295,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -21307,6 +22427,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -21363,7 +22491,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -21410,10 +22554,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -21422,6 +22582,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -21445,6 +22609,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -21454,6 +22622,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22062,6 +23234,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -22190,6 +23366,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -22246,11 +23430,27 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
                     <UnitClassType>UNITCLASS_WHALE_OIL_COOKER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -22293,10 +23493,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22305,6 +23521,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22328,6 +23548,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -22337,6 +23561,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -22974,6 +24202,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -23102,6 +24334,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -23158,7 +24398,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -23205,10 +24461,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -23217,6 +24489,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -23240,6 +24516,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -23249,6 +24529,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -23872,6 +25156,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24000,6 +25288,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24056,7 +25352,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -24103,10 +25415,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -24115,6 +25443,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -24138,6 +25470,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -24147,6 +25483,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -24766,6 +26106,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24894,6 +26238,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -24950,7 +26302,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -24997,10 +26365,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25009,6 +26393,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25032,6 +26420,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -25041,6 +26433,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25663,6 +27059,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -25791,6 +27191,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -25847,7 +27255,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -25894,10 +27318,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25906,6 +27346,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -25929,6 +27373,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -25938,6 +27386,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -26551,6 +28003,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26679,6 +28135,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -26735,7 +28199,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -26782,10 +28262,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -26794,6 +28290,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -26817,6 +28317,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -26826,6 +28330,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -27453,6 +28961,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -27581,6 +29093,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -27637,7 +29157,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -27684,10 +29220,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -27696,6 +29248,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -27719,6 +29275,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -27728,6 +29288,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -28351,6 +29915,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28479,6 +30047,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -28535,7 +30111,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -28582,10 +30174,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -28594,6 +30202,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -28617,6 +30229,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -28626,6 +30242,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -29246,6 +30866,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -29374,6 +30998,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -29430,7 +31062,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -29477,10 +31125,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -29489,6 +31153,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -29512,6 +31180,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -29521,6 +31193,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -30140,6 +31816,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -30268,6 +31948,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -30324,7 +32012,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -30371,10 +32075,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -30383,6 +32103,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -30406,6 +32130,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -30415,6 +32143,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31034,6 +32766,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -31162,6 +32898,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -31218,7 +32962,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -31265,10 +33025,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31277,6 +33053,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31300,6 +33080,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -31309,6 +33093,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -31922,6 +33710,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -32050,6 +33842,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -32106,7 +33906,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -32153,10 +33969,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -32165,6 +33997,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -32188,6 +34024,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -32197,6 +34037,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -32335,7 +34179,12 @@
             <Ships/>
             <Buildings/>
             <Units/>
-            <Professions/>
+            <Professions>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+            </Professions>
             <Traits/>
             <FreeUnitClasses/>
             <FreeBuildingClasses/>
@@ -32918,6 +34767,10 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_FREED_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_MINER</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33046,6 +34899,14 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNITCLASS_VETERAN_TOWN_GUARD</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_ROYAL_HALBERDIER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_VETERAN_DRAGOON</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
@@ -33102,7 +34963,23 @@
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
+                    <UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
                     <UnitClassType>UNITCLASS_NATIVE_MERC</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_REVOLTING_CRIMINAL</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
                 <Unit>
@@ -33149,10 +35026,26 @@
                     <UnitClassType>UNITCLASS_DOCTOR</UnitClassType>
                     <UnitType>NONE</UnitType>
                 </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_SMALL_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_BIG_COASTAL_SHIP</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
+                <Unit>
+                    <UnitClassType>UNITCLASS_EXPERT_SETTLER</UnitClassType>
+                    <UnitType>NONE</UnitType>
+                </Unit>
             </Units>
             <Professions>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIST</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_SETTLER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -33161,6 +35054,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_ROYAL_CAVALRY</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_ROYAL_HALBERDIER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
@@ -33184,6 +35081,10 @@
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>
+                    <ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
                     <ProfessionType>PROFESSION_PIONEER</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
@@ -33193,6 +35094,10 @@
                 </Profession>
                 <Profession>
                     <ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
+                    <bValid>0</bValid>
+                </Profession>
+                <Profession>
+                    <ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
                     <bValid>0</bValid>
                 </Profession>
                 <Profession>

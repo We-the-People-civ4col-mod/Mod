@@ -16,8 +16,8 @@ class CvMapGenerator
 public:
 	DllExport static CvMapGenerator& GetInstance();
 	DllExport static void FreeInstance() { SAFE_DELETE(m_pInst); }
-	DllExport CvMapGenerator();
-	DllExport virtual ~CvMapGenerator();
+	CvMapGenerator();
+	virtual ~CvMapGenerator();
 
 	bool canPlaceBonusAt(BonusTypes eBonus, int iX, int iY, bool bIgnoreLatitude);
 	bool canPlaceGoodyAt(ImprovementTypes eImprovement, int iX, int iY);
@@ -30,14 +30,16 @@ public:
 	void doRiver(CvPlot* pStartPlot, CardinalDirectionTypes eLastCardinalDirection=NO_CARDINALDIRECTION, CardinalDirectionTypes eOriginalCardinalDirection=NO_CARDINALDIRECTION, int iThisRiverID=-1);
 	bool addRiver(CvPlot *pFreshWaterPlot);
 	DllExport void addFeatures();
+	void addFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	DllExport void addBonuses();
 	void addUniqueBonusType(BonusTypes eBonusType);
 	void addNonUniqueBonusType(BonusTypes eBonusType);
 	DllExport void addGoodies();
-	DllExport void addEurope();
+	void addEurope();
 
 	DllExport void eraseRivers();
 	DllExport void eraseFeatures();
+	void eraseFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	DllExport void eraseBonuses();
 	DllExport void eraseGoodies();
 	DllExport void eraseEurope();

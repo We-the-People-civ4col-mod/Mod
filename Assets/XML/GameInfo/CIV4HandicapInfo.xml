@@ -84,6 +84,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -91,6 +93,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -173,6 +176,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -180,6 +185,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -266,6 +272,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -273,6 +281,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -357,6 +366,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -364,6 +375,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -448,6 +460,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -455,6 +469,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -541,6 +556,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -548,6 +565,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>
@@ -635,6 +653,8 @@
                 <GoodyType>GOODY_COLONIST</GoodyType>
                 <GoodyType>GOODY_CONQUISTADOR</GoodyType>
                 <GoodyType>GOODY_CHRISTIAN_MISSIONARY</GoodyType>
+                <GoodyType>GOODY_RANGER</GoodyType>
+                <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
@@ -642,6 +662,7 @@
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
                 <GoodyType>GOODY_RUMORS_PIRATE_TREASURE</GoodyType>
+                <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
                 <GoodyType>GOODY_DESERTED_SHIP</GoodyType>
             </Goodies>
         </HandicapInfo>

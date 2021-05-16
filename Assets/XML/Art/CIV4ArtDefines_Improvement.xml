@@ -18,7 +18,7 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_WATER_WORKED</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>0.5</fScale>
+            <fScale>0.4</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/FishingBoat/FishingBoat.nif</NIF>
             <KFM>Art/Structures/Improvements/FishingBoat/FishingBoat.kfm</KFM>
@@ -61,6 +61,24 @@
             <Button>,Art/colonization_atlas_professions_bonus.dds,1,16</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_SHIPWRECK</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.3</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/shipwreck/shipwreck.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,3,16</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_CAMPFIRE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>0.7</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/campfire/campfire.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_professions_bonus.dds,4,16</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_FARM</Type>
             <bExtraAnimations>1</bExtraAnimations>
             <fScale>0.6</fScale>
@@ -99,19 +117,19 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_COCOA_PLANTATION</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>0.8</fScale>
+            <fScale>0.6</fScale>
             <fInterfaceScale>1.25</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Cocoa_Plantation/Cocoa_Plantation.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_buildings.dds,2,11</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,6,15</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_TRAPPER_HUT</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>1.4</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Trapper_House/Trapper_House.nif</NIF>
-            <KFM/>
+            <NIF>Art/Structures/Improvements/Trapper_Hut/camp.nif</NIF>
+            <KFM>Art/Structures/Improvements/Trapper_Hut/camp.kfm</KFM>
             <Button>,Art/colonization_atlas_buildings.dds,3,11</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
@@ -198,19 +216,19 @@
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_LARGE_COCOA_PLANTATION</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>0.8</fScale>
-            <fInterfaceScale>1.25</fInterfaceScale>
+            <fScale>0.7</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
             <NIF>Art/Structures/Improvements/Cocoa_Plantation/Cocoa_Plantation2.nif</NIF>
             <KFM/>
-            <Button>,Art/colonization_atlas_buildings.dds,7,14</Button>
+            <Button>,Art/colonization_atlas_buildings.dds,2,11</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
             <Type>ART_DEF_IMPROVEMENT_TRAPPER_CAMP</Type>
             <bExtraAnimations>0</bExtraAnimations>
-            <fScale>1.4</fScale>
+            <fScale>1.0</fScale>
             <fInterfaceScale>1.0</fInterfaceScale>
-            <NIF>Art/Structures/Improvements/Trapper_House/Trapper_Camp.nif</NIF>
-            <KFM/>
+            <NIF>Art/Structures/Improvements/Trapper_House/camp.nif</NIF>
+            <KFM>Art/Structures/Improvements/Trapper_House/camp.kfm</KFM>
             <Button>,Art/colonization_atlas_buildings.dds,4,13</Button>
         </ImprovementArtInfo>
         <ImprovementArtInfo>
@@ -284,6 +302,42 @@
             <NIF>Art/Structures/Improvements/monastery/monastery.nif</NIF>
             <KFM/>
             <Button>,Art/colonization_atlas_buildings.dds,4,14</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_RAFT_STATION</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>0.9</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/raft_station/An_port_district2.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,2,16</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_BARBARIAN_CAMP</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/structures/improvements/BarbarianCamp/BarbarianCamp.nif</NIF>
+            <KFM/>
+            <Button>,Art/colonization_atlas_buildings.dds,2,18</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_ANIMAL_CAVE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>0.9</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/Structures/Improvements/caves/cave.nif</NIF>
+            <KFM/>
+            <Button>Art/interface/buttons/cave.dds</Button>
+        </ImprovementArtInfo>
+        <ImprovementArtInfo>
+            <Type>ART_DEF_IMPROVEMENT_HOSTILE_VILLAGE</Type>
+            <bExtraAnimations>0</bExtraAnimations>
+            <fScale>1.5</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <NIF>Art/structures/improvements/NativeHostileVillage/tribalvillage.nif</NIF>
+            <KFM>Art/structures/improvements/NativeHostileVillage/tribalvillage.kfm</KFM>
+            <Button>,Art/colonization_atlas_buildings.dds,1,18</Button>
         </ImprovementArtInfo>
     </ImprovementArtInfos>
 </Civ4ArtDefines>

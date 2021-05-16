@@ -8,12 +8,17 @@
 #include <numeric>
 #include <limits>
 
+#include "CvSavegame.h"
+
 #define RANDOM_A      (1103515245)
 #define RANDOM_C      (12345)
 #define RANDOM_SHIFT  (16)
 
 CvRandom::CvRandom()
 {
+#ifdef WITH_RANDOM_LOGGING
+	m_bIsSorenRand = false;
+#endif
 	reset();
 }
 
@@ -21,6 +26,41 @@ CvRandom::CvRandom()
 CvRandom::~CvRandom()
 {
 	uninit();
+}
+
+bool CvRandom::isSorenRand() const
+{
+	// avoid crashing during init
+	if (!GC.IsGraphicsInitialized() || gDLL->isGameInitializing())
+	{
+		return false;
+	}
+
+	// always log random stuff in network games
+	// an OOS is much easier to track down if this log is available
+	if (GC.getGameINLINE().isNetworkMultiPlayer())
+	{
+		return true;
+	}
+#ifdef WITH_RANDOM_LOGGING
+	return m_bIsSorenRand;
+#else
+	return false;
+#endif
+}
+
+void CvRandom::setSorenRand()
+{
+#ifdef WITH_RANDOM_LOGGING
+	m_bIsSorenRand = true;
+#endif
+}
+
+void CvRandom::writeLog(const CvString& szLog) const
+{
+	CvString filename;
+	filename.append(CvString::format("Random Player %d.log", GC.getGameINLINE().getActivePlayer()));
+	gDLL->logMsg(filename, szLog);
 }
 
 
@@ -53,6 +93,13 @@ void CvRandom::reset(unsigned long ulSeed)
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
 	/// random network fix - end - Nightinggale
+
+	if (isSorenRand())
+	{
+		CvString szLog;
+		szLog.Format("Reset %llu", getSeed());
+		writeLog(szLog);
+	}
 }
 
 
@@ -71,6 +118,13 @@ unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
 		}
 	}
 
+	if (pszLog && isSorenRand())
+	{
+		CvString szLog;
+		szLog.Format("%s, %llu, %d", pszLog, getSeed(), usNum);
+		writeLog(szLog);
+	}
+
 	m_ulRandomSeed = ((RANDOM_A * m_ulRandomSeed) + RANDOM_C);
 
 	/// random network fix - start - Nightinggale
@@ -78,6 +132,13 @@ unsigned short CvRandom::get(unsigned short usNum, const TCHAR* pszLog)
 	/// random network fix - end - Nightinggale
 
 	unsigned short us = ((unsigned short)((((m_ulRandomSeed >> RANDOM_SHIFT) & MAX_UNSIGNED_SHORT) * ((unsigned long)usNum)) / (MAX_UNSIGNED_SHORT + 1)));
+
+	if (pszLog && isSorenRand())
+	{
+		CvString szLog;
+		szLog.Format("%llu, %d", getSeed(), us);
+		writeLog(szLog);
+	}
 
 	return us;
 }
@@ -179,6 +240,13 @@ void CvRandom::reseed(unsigned long ulNewValue)
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
 	/// random network fix - end - Nightinggale
+
+	if (isSorenRand())
+	{
+		CvString szLog;
+		szLog.Format("Reseed %llu", getSeed());
+		writeLog(szLog);
+	}
 }
 
 
@@ -196,10 +264,41 @@ void CvRandom::read(FDataStreamBase* pStream)
 	/// random network fix - start - Nightinggale
 	std::srand(m_ulRandomSeed);
 	/// random network fix - end - Nightinggale
+
+	if (isSorenRand())
+	{
+		CvString szLog;
+		szLog.Format("Load old %llu", getSeed());
+		writeLog(szLog);
+	}
 }
 
 
 void CvRandom::write(FDataStreamBase* pStream)
 {
 	pStream->Write(m_ulRandomSeed);
+}
+
+//this is good as is
+void CvRandom::read(CvSavegameReader reader)
+{
+	reset();
+
+	reader.Read(m_ulRandomSeed);
+	/// random network fix - start - Nightinggale
+	std::srand(m_ulRandomSeed);
+	/// random network fix - end - Nightinggale
+
+	if (isSorenRand())
+	{
+		CvString szLog;
+		szLog.Format("Load new %llu", getSeed());
+		writeLog(szLog);
+	}
+}
+
+
+void CvRandom::write(CvSavegameWriter writer)
+{
+	writer.Write(m_ulRandomSeed);
 }

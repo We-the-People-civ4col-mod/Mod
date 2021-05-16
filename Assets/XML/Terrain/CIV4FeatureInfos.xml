@@ -263,7 +263,7 @@
             <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>50</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>5000</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -495,7 +495,7 @@
             <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>50</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>5000</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -695,7 +695,7 @@
             <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>50</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>6000</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -927,7 +927,7 @@
             <iMovement>2</iMovement>
             <iSeeThrough>1</iSeeThrough>
             <iDefense>25</iDefense>
-            <iAppearance>0</iAppearance>
+            <iAppearance>1000</iAppearance>
             <iDisappearance>0</iDisappearance>
             <iTurnDamage>0</iTurnDamage>
             <bGeneratedEveryRound>0</bGeneratedEveryRound>
@@ -1447,6 +1447,87 @@
                 </FootstepSound>
             </FootstepSounds>
             <WorldSoundscapeAudioScript>ASSS_STORM_SELECT_AMB</WorldSoundscapeAudioScript>
+            <EffectType>NONE</EffectType>
+            <iEffectProbability>0</iEffectProbability>
+            <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>
+        </FeatureInfo>
+        <FeatureInfo>
+            <Type>FEATURE_RIVER_FORD</Type>
+            <Description>TXT_KEY_FEATURE_RIVER_FORD</Description>
+            <Civilopedia>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Civilopedia>
+            <ArtDefineTag>ART_DEF_FEATURE_RIVER_FORD</ArtDefineTag>
+            <YieldChanges/>
+            <RiverYieldIncreases/>
+            <iMovement>1</iMovement>
+            <iSeeThrough>0</iSeeThrough>
+            <iDefense>0</iDefense>
+            <iAppearance>0</iAppearance>
+            <iDisappearance>0</iDisappearance>
+            <iTurnDamage>0</iTurnDamage>
+            <bGeneratedEveryRound>0</bGeneratedEveryRound>
+            <iGrowth>0</iGrowth>
+            <bNoCoast>0</bNoCoast>
+            <bNoRiver>0</bNoRiver>
+            <bNoAdjacent>0</bNoAdjacent>
+            <bRequiresFlatlands>0</bRequiresFlatlands>
+            <bRequiresRiver>0</bRequiresRiver>
+            <bImpassable>0</bImpassable>
+            <bNoCity>1</bNoCity>
+            <bNoImprovement>1</bNoImprovement>
+            <bVisibleAlways>0</bVisibleAlways>
+            <OnUnitChangeTo/>
+            <TerrainBooleans>
+                <TerrainBoolean>
+                    <TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+                    <bTerrain>1</bTerrain>
+                </TerrainBoolean>
+            </TerrainBooleans>
+            <FootstepSounds>
+                <FootstepSound>
+                    <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_FOOT_UNIT_SNOW</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>FOOTSTEP_AUDIO_HUMAN_LOW</FootstepAudioType>
+                    <FootstepAudioScript>AS3D_UN_FOOT_UNIT_LOW_SNOW</FootstepAudioScript>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>FOOTSTEP_AUDIO_HORSE</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_WHEELS</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_WHEELS</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_WHEELS_2</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_WHEELS_2</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_ARTILLERY</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_ARTILLERY</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>LOOPSTEP_WHEELS_3</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+                <FootstepSound>
+                    <FootstepAudioType>ENDSTEP_WHEELS_3</FootstepAudioType>
+                    <FootstepAudioScript/>
+                </FootstepSound>
+            </FootstepSounds>
             <EffectType>NONE</EffectType>
             <iEffectProbability>0</iEffectProbability>
             <iAdvancedStartRemoveCost>0</iAdvancedStartRemoveCost>

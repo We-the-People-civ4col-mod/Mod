@@ -16,6 +16,7 @@ class CyTeam;
 class CyArtFileMgr;
 class CyUserProfile;
 class CyVariableSystem;
+class CyUserSettings;
 class CyGlobalContext
 {
 public:
@@ -273,11 +274,14 @@ public:
 	int getCITY_HOME_PLOT() const { return GC.getCITY_HOME_PLOT(); }
 
 	/// one/two city plot radius
-	int CyGlobalContext::getCityDiameter() const { return CITY_PLOTS_DIAMETER;}
+	int getCityDiameter() const { return CITY_PLOTS_DIAMETER;}
+	int getDefaultCityCatchmentRadius() const;
 	// city radius end
 
 	void setGameFontDebug(int iChar);
 	int getDomesticAdvisorState() const;
 	void setDomesticAdvisorState(int iPage);
+
+	CyUserSettings* getUserSettings() const;
 };
 #endif	// CyGlobalContext_h

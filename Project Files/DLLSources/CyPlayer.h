@@ -158,7 +158,9 @@ public:
 	bool isExtendedGame();
 	bool isFoundedFirstCity();
 	bool isStrike();
-	int getID();
+	int getID() const;
+	WidgetTypes getWikiWidget() const;
+	int getChar() const;
 	int /* HandicapTypes */ getHandicapType();
 	int /* CivilizationTypes */ getCivilizationType();
 	int /*LeaderHeadTypes*/ getLeaderType();
@@ -180,6 +182,8 @@ public:
     // R&R, Robert Surcouf, No More Variables Hidden game option END
 	int getYieldScoreTotalINT(int /*YieldTypes*/ eIndex); // R&R, vetiarvind, Price dependent tax rate change
 	int getYieldRate(YieldTypes eIndex);
+	int getHappinessRate(); // WTP, ray, Happiness - START
+	int getUnHappinessRate(); // WTP, ray, Happiness - START
 	int getYieldRateModifier(YieldTypes eIndex);
 	int getCapitalYieldRateModifier(YieldTypes eIndex);
 	int getExtraYieldThreshold(YieldTypes eIndex);
@@ -381,6 +385,9 @@ public:
 	int getNumTradeGroups() const;
 	CyTradeRouteGroup* getTradeGroup(int iIndex);	
 	// R&R mod, vetiarvind, trade groups - end
+
+	CyInfoArray* getSpecialBuildingTypes() const;
+	CyInfoArray* getStoredYieldTypes() const;
 
 	int getCivEffectCount(CivEffectTypes eCivEffect) const;
 

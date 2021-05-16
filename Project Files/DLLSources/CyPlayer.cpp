@@ -17,6 +17,7 @@
 #include "CvGlobals.h"
 #include "CyTradeRoute.h"
 #include "CyTradeRouteGroup.h" // R&R mod, vetiarvind, trade groups
+#include "CyData.h"
 
 
 CyPlayer::CyPlayer() : m_pPlayer(NULL)
@@ -523,9 +524,17 @@ bool CyPlayer::isFoundedFirstCity()
 {
 	return m_pPlayer ? m_pPlayer->isFoundedFirstCity() : false;
 }
-int CyPlayer::getID()
+int CyPlayer::getID() const
 {
-	return m_pPlayer ? m_pPlayer->getID() : -1;
+	return m_pPlayer ? m_pPlayer->getID() : NO_PLAYER;
+}
+WidgetTypes CyPlayer::getWikiWidget() const
+{
+	return WIDGET_MISSION_CHAR;
+}
+int CyPlayer::getChar() const
+{
+	return m_pPlayer ? GC.getCivilizationInfo(GET_PLAYER(m_pPlayer->getID()).getCivilizationType()).getMissionaryChar() : -1;
 }
 int /* HandicapTypes */ CyPlayer::getHandicapType()
 {
@@ -611,6 +620,16 @@ int CyPlayer::getYieldRate(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getYieldRate(eIndex) : -1;
 }
+// WTP, ray, Happiness - START
+int CyPlayer::getHappinessRate()
+{
+	return m_pPlayer ? m_pPlayer->getHappinessRate() : -1;
+}
+int CyPlayer::getUnHappinessRate()
+{
+	return m_pPlayer ? m_pPlayer->getUnHappinessRate() : -1;
+}
+// WTP, ray, Happiness - END
 int CyPlayer::getYieldRateModifier(YieldTypes eIndex)
 {
 	return m_pPlayer ? m_pPlayer->getYieldRateModifier(eIndex) : 0;
@@ -1487,6 +1506,28 @@ CyTradeRouteGroup* CyPlayer::getTradeGroup(int iIndex)
 }
 
 // R&R mod, vetiarvind, trade groups - end
+
+CyInfoArray* CyPlayer::getSpecialBuildingTypes() const
+{
+	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
+
+	BoolArray BA(JIT_ARRAY_BUILDING_SPECIAL, true);
+
+	return new CyInfoArray(BA);
+}
+
+CyInfoArray* CyPlayer::getStoredYieldTypes() const
+{
+	// Currently a bit pointless, but here there is a single location to alter all of the python code using this should we need to update.
+
+	BoolArray BA(JIT_ARRAY_YIELD);
+
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
+	{
+		BA.set(true, eYield);
+	}
+	return new CyInfoArray(BA);
+}
 
 // CivEffect
 int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const

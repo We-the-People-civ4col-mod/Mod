@@ -210,36 +210,36 @@ inline DirectionTypes directionXY(const CvPlot* pFromPlot, const CvPlot* pToPlot
 {
 	return directionXY(dxWrap(pToPlot->getX_INLINE() - pFromPlot->getX_INLINE()), dyWrap(pToPlot->getY_INLINE() - pFromPlot->getY_INLINE()));
 }
-DllExport CvPlot* plotCity(int iX, int iY, int iIndex);
-DllExport int plotCityXY(int iDX, int iDY);
-DllExport int plotCityXY(const CvCity* pCity, const CvPlot* pPlot);
+CvPlot* plotCity(int iX, int iY, int iIndex);
+int plotCityXY(int iDX, int iDY);
+int plotCityXY(const CvCity* pCity, const CvPlot* pPlot);
 
 DllExport bool isLeaderCivMatch(LeaderHeadTypes eLeader, CivilizationTypes eCiv, bool bHuman);
 
-DllExport CardinalDirectionTypes getOppositeCardinalDirection(CardinalDirectionTypes eDir);
-DllExport DirectionTypes cardinalDirectionToDirection(CardinalDirectionTypes eCard);
+CardinalDirectionTypes getOppositeCardinalDirection(CardinalDirectionTypes eDir);
+DirectionTypes cardinalDirectionToDirection(CardinalDirectionTypes eCard);
 DllExport bool isCardinalDirection(DirectionTypes eDirection);
-DllExport DirectionTypes estimateDirection(int iDX, int iDY);
+DirectionTypes estimateDirection(int iDX, int iDY);
 DllExport DirectionTypes estimateDirection(const CvPlot* pFromPlot, const CvPlot* pToPlot);
 DllExport float directionAngle(DirectionTypes eDirection);
-DllExport bool atWar(TeamTypes eTeamA, TeamTypes eTeamB);
-DllExport bool isPotentialEnemy(TeamTypes eOurTeam, TeamTypes eTheirTeam);
+bool atWar(TeamTypes eTeamA, TeamTypes eTeamB);
+bool isPotentialEnemy(TeamTypes eOurTeam, TeamTypes eTheirTeam);
 
 DllExport CvCity* getCity(const IDInfo& city);
 DllExport CvUnit* getUnit(const IDInfo& unit);
 
-DllExport bool isBeforeUnitCycle(const CvUnit* pFirstUnit, const CvUnit* pSecondUnit);
+bool isBeforeUnitCycle(const CvUnit* pFirstUnit, const CvUnit* pSecondUnit);
 
-DllExport ImprovementTypes finalImprovementUpgrade(ImprovementTypes eImprovement, int iCount = 0);
+ImprovementTypes finalImprovementUpgrade(ImprovementTypes eImprovement, int iCount = 0);
 
-DllExport __int64 getBinomialCoefficient(int iN, int iK);
-DllExport int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender);
+__int64 getBinomialCoefficient(int iN, int iK);
+int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender);
 int getCombatOddsDraw(CvUnit* pAttacker, CvUnit* pDefender);
 
 
 DllExport void setTradeItem(TradeData* pItem, TradeableItems eItemType, int iData1, const IDInfo* pTransport);
 
-DllExport bool isPlotEventTrigger(EventTriggerTypes eTrigger);
+bool isPlotEventTrigger(EventTriggerTypes eTrigger);
 DllExport void clear(wchar* szString);
 DllExport void clear(char* szString);
 DllExport void clear(std::string& szString);
@@ -251,38 +251,38 @@ DllExport bool isEmpty(const char* szString);
 DllExport bool isEmpty(const std::string& szStr);
 DllExport bool isEmpty(const wchar* szString);
 DllExport bool isEmpty(const std::wstring& szStr);
-DllExport void setListHelp(wchar* szBuffer, const wchar* szStart, const wchar* szItem, const wchar* szSeparator, bool bFirst);
-DllExport void setListHelp(CvWString& szBuffer, const wchar* szStart, const wchar* szItem, const wchar* szSeparator, bool bFirst);
-DllExport void setListHelp(CvWStringBuffer& szBuffer, const wchar* szStart, const wchar* szItem, const wchar* szSeparator, bool bFirst);
+void setListHelp(wchar* szBuffer, const wchar* szStart, const wchar* szItem, const wchar* szSeparator, bool bFirst);
+void setListHelp(CvWString& szBuffer, const wchar* szStart, const wchar* szItem, const wchar* szSeparator, bool bFirst);
+void setListHelp(CvWStringBuffer& szBuffer, const wchar* szStart, const wchar* szItem, const wchar* szSeparator, bool bFirst);
 
 // PlotUnitFunc's...
-DllExport bool PUF_isGroupHead( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
-DllExport bool PUF_isPlayer( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isVisualTeam( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isCombatTeam(const CvUnit* pUnit, int iData1, int iData2);
-DllExport bool PUF_isOtherTeam( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isVisible( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isGroupHead( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_isPlayer( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isVisualTeam( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isCombatTeam(const CvUnit* pUnit, int iData1, int iData2);
+bool PUF_isOtherTeam( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isVisible( const CvUnit* pUnit, int iData1, int iData2 = -1);
 DllExport bool PUF_isVisibleDebug( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_canSiege( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isPotentialEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_canDeclareWar( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
-DllExport bool PUF_canDefend( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
-DllExport bool PUF_cannotDefend( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
-DllExport bool PUF_canDefendGroupHead( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
-DllExport bool PUF_canDefendEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_canDefendPotentialEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isFighting( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isUnitType( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isDomainType( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isUnitAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_canSiege( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isPotentialEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_canDeclareWar( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_canDefend( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_cannotDefend( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_canDefendGroupHead( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_canDefendEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_canDefendPotentialEnemy( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isFighting( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isUnitType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isDomainType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isUnitAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
 // R&R, ray, Natives raiding party - START
-DllExport bool PUF_isUnitAIStateType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isUnitAIStateType( const CvUnit* pUnit, int iData1, int iData2 = -1);
 // R&R, ray, Natives raiding party - END
-DllExport bool PUF_isCityAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isNotCityAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
-DllExport bool PUF_isSelected( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
-DllExport bool PUF_makeInfoBarDirty(CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_isCityAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isNotCityAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isSelected( const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
+bool PUF_makeInfoBarDirty(CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
 bool PUF_isNoMission(const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 bool PUF_isAvailableUnitAITypeGroupie(const CvUnit* pUnit, int iData1, int iData2);
@@ -294,29 +294,29 @@ void postLoadGameFixes();
 /// post load function - end - Nightinggale
 
 // Inet Stuff
-DllExport void sendGameStats(wchar* pURL);
+void sendGameStats(wchar* pURL);
 
 // FAStarFunc...
-DllExport int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
-DllExport int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY);
-DllExport int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
-DllExport int stepHeuristic(int iFromX, int iFromY, int iToX, int iToY);
-DllExport int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int stepCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-DllExport int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
+int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY);
+int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int pathValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int stepDestValid(int iToX, int iToY, const void* pointer, FAStar* finder);
+int stepHeuristic(int iFromX, int iFromY, int iToX, int iToY);
+int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int stepCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
+int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 
-DllExport bool isPickableName(const TCHAR* szName);
+bool isPickableName(const TCHAR* szName);
 
-DllExport int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
-DllExport int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
+int getTurnMonthForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
+int getTurnYearForGame(int iGameTurn, int iStartYear, CalendarTypes eCalendar, GameSpeedTypes eSpeed);
 
 DllExport void boolsToString(const bool* pBools, int iNumBools, CvString* szOut);
 DllExport void stringToBools(const char* szString, int* iNumBools, bool** ppBools);
@@ -327,6 +327,7 @@ void getActivityTypeString(CvWString& szString, ActivityTypes eActivityType);
 void getMissionTypeString(CvWString& szString, MissionTypes eMissionType);
 void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI);
 void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
+CvWString getUnitAIStateString(UnitAIStates eUnitAIState);
 
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);

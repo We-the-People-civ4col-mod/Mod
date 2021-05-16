@@ -14,7 +14,7 @@ from array import *
 # globals
 gc = CyGlobalContext()
 version = 11
-fileencoding = "latin_1"	# aka "iso-8859-1"
+fileencoding = "cp1252"	# aka "iso-8859-1"
 
 #############
 def getPlayer(idx):
@@ -1166,9 +1166,10 @@ class CvMapDesc:
 		self.seaLevel = None
 		self.numPlotsWritten = 0
 		self.numSignsWritten = 0
+		self.bRandomizeFeatures = "false" #WTP, ray, Randomize Features Map Option
 		self.bRandomizeResources = "false"
 		self.bRandomizeGoodies = "false"
-		self.iCityRadius = 0
+		self.iCityRadius = 0 # 0 means value from UserSettings.txt
 
 	def write(self, f):
 		"write map data"
@@ -1190,8 +1191,9 @@ class CvMapDesc:
 		f.write("\tsealevel=%s\n" %(gc.getSeaLevelInfo(map.getSeaLevel()).getType(),))
 		f.write("\tnum plots written=%d\n" %(iNumPlots,))
 		f.write("\tnum signs written=%d\n" %(iNumSigns,))
+		f.write("\tRandomize Features=false\n") #WTP, ray, Randomize Features Map Option
 		f.write("\tRandomize Resources=false\n")
-		f.write("\tCity Catchment Radius=%d\n" %(map.getCityCatchmentRadius() + 1,)) # use 1-2 for scenario editors instead of 0-1 for map options
+		f.write("\tCity Catchment Radius=%d\n" %(map.getCityCatchmentRadius(),))
 		f.write("EndMap\n")
 
 	def read(self, f):
@@ -1262,6 +1264,11 @@ class CvMapDesc:
 				self.numSignsWritten = int(v)
 				continue
 
+			v = parser.findTokenValue(toks, "Randomize Features")
+			if v!=-1:
+				self.bRandomizeFeatures = v
+				continue
+
 			v = parser.findTokenValue(toks, "Randomize Resources")
 			if v!=-1:
 				self.bRandomizeResources = v
@@ -1274,7 +1281,7 @@ class CvMapDesc:
 
 			v = parser.findTokenValue(toks, "City Catchment Radius")
 			if v!=-1:
-				self.iCityRadius = v - 1 # use 1-2 for scenario editors instead of 0-1 for map options
+				self.iCityRadius = int(v)
 				continue
 
 			if parser.findTokenValue(toks, "EndMap")!=-1:
@@ -1409,7 +1416,7 @@ class CvWBDesc:
 		CyMap().rebuild(self.mapDesc.iGridW, self.mapDesc.iGridH, self.mapDesc.iTopLatitude, self.mapDesc.iBottomLatitude, self.mapDesc.bWrapX, self.mapDesc.bWrapY, WorldSizeTypes(worldSizeType), ClimateTypes(climateType), SeaLevelTypes(seaLevelType), 0, None)
 
 		# update the city catchment radius
-		CyMap().setCityCatchmentRadius(self.mapDesc.iCityRadius)
+		CyMap().setCityCatchmentRadiusNoMapMaker(self.mapDesc.iCityRadius)
 
 		for pDesc in self.plotDesc:
 			pDesc.preApply()	# set plot type / terrain type
@@ -1422,6 +1429,10 @@ class CvWBDesc:
 		for pDesc in self.signDesc:
 			pDesc.apply()
 
+		if (self.mapDesc.bRandomizeFeatures != "false"): #WTP, ray, Randomize Features Map Option
+			CyMapGenerator().eraseFeaturesOnLand()
+			CyMapGenerator().addFeaturesOnLand()
+			
 		if (self.mapDesc.bRandomizeResources != "false"):
 			for iPlotLoop in range(CyMap().numPlots()):
 				pPlot = CyMap().plotByIndex(iPlotLoop)
@@ -1429,7 +1440,7 @@ class CvWBDesc:
 			CyMapGenerator().addBonuses()
 			
 		if (self.mapDesc.bRandomizeGoodies != "false"):
-			CyMapGenerator().eraseGoodies()	
+			CyMapGenerator().eraseGoodies()
 			CyMapGenerator().addGoodies()
 
 		return 0	# ok

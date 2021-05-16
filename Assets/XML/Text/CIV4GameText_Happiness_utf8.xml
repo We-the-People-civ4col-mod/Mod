@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by lcollins (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Game Text Infos -->
+<Civ4GameText xmlns="http://www.firaxis.com">
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_HAPPINESS</Tag>
+		<English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS</Tag>
+		<English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_HAPPINESS_PRODUCED</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_CROSSES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Crosses</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kreuze</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_BELLS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Liberty Bells</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Freiheitsglocken</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_HEALTH</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from City Health</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gesundheit</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_CULTURE</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Culture</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kultur</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_EDUCATION</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Education</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bildung</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_DOMESTIC_DEMAND</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from fulfilled Domestic Demand</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verkauf auf Heimischen Markt</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_TREATIES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verträge mit anderen Europäern</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_UNHAPPINESS_PRODUCED</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_POPULATION</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Population size</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bevölkerungsgröße</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_SLAVERY</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Slaves</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Sklavenhaltung</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_WARS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Wars with other Europeans</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege mit anderen Europäern</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINES_MISSING_DEFENSES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Missing Protection</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch fehlenden Schutz</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINES_TAX_RATE</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Tax Rate</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Besteuerung</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS</Tag>
+		<English>%d1%F2 per turn[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]from %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]from %F6</English>
+		<French>%d1%F2 par tour [NEWLINE][COLOR_POSITIVE_TEXT]+ %d3%[COLOR_REVERT] de %F4, [NEWLINE][COLOR_NEGATIVE_TEXT]- %d5%[COLOR_REVERT] de %F6</French>
+		<German>%d1%F2 pro Runde[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F6</German>
+		<Italian>%d1%F2 per turno [NEWLINE][COLOR_POSITIVE_TEXT]+ %d3%[COLOR_REVERT] de %F4, [NEWLINE][COLOR_NEGATIVE_TEXT]- %d5%[COLOR_REVERT] de %F6</Italian>
+		<Spanish>%d1%F2 por turno [NEWLINE][COLOR_POSITIVE_TEXT]+ %d3%[COLOR_REVERT] de %F4, [NEWLINE][COLOR_NEGATIVE_TEXT]- %d5%[COLOR_REVERT] de %F6</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_POSITIVE_TEXT]happy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]The population grows faster[NEWLINE][ICON_BULLET]Learning by Doing is faster[NEWLINE][ICON_BULLET]Slaves and Criminals become free faster[NEWLINE][ICON_BULLET]Slaves and Criminals run away less often[NEWLINE][ICON_BULLET]Slaves and Criminals revolt less often[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][NEWLINE]High Happiness can cause [COLOR_POSITIVE_TEXT]Festivities[COLOR_REVERT]</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]glücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Bevölkerung wächst schneller[NEWLINE][ICON_BULLET]Erlernen eines Berufes durch Ausübung beschleunigt[NEWLINE][ICON_BULLET]Sklaven und Kriminelle werden schneller freie Siedler[NEWLINE][ICON_BULLET]Sklaven und Kriminelle flüchten weniger oft[NEWLINE][ICON_BULLET]Sklaven und Kriminelle revoltieren weniger oft[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Zufriedenheit kann zu Feierlichkeiten führen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_HAPPINESS_NEGATIVE_EFFECTS </Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_NEGATIVE_TEXT]unhappy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]The population grows slower[NEWLINE][ICON_BULLET]Learning by Doing is slower[NEWLINE][ICON_BULLET]Slaves and Criminals become free more slowly[NEWLINE][ICON_BULLET]Slaves and Criminals run away more often[NEWLINE][ICON_BULLET]Slaves and Criminals revolt more often[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][NEWLINE]High Unhappiness can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT]</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Bevölkerung wächst langsamer[NEWLINE][ICON_BULLET]Erlernen eines Berufes durch Ausübung verlangsamt[NEWLINE][ICON_BULLET]Sklaven und Kriminelle werden langsamer freie Siedler[NEWLINE][ICON_BULLET]Sklaven und Kriminelle flüchten öfter[NEWLINE][ICON_BULLET]Sklaven und Kriminelle revoltieren öfter[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Unzufriedenheit kann zu Unruhen führen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_HAPPINESS_ZERO_EFFECTS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The Citizens are [COLOR_SELECTED_TEXT]neither happy nor unhappy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder glücklich noch unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD</Tag>
+		<English>Happiness in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+		<French>Satisfaction de la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
+		<German>Zufriedenheit der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD</Tag>
+		<English>Unhappiness in the City : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+		<French>Insatisfaction de la ville : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
+		<German>Unzufriedenheit der Stadt : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Unhappiness has caused Unrest.</English>
+		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit in der Stadt hat zu Unruhen geführt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Happiness has led to festivities that generated %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</English>
+		<German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit in der Stadt hat zu Feierlichkeiten geführt, die %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT] erzeugt haben.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1%% less %F2_Icon from Slaves in Cities</English>
+		<German>[ICON_BULLET]%D1%% weniger %F2_Icon durch Sklavenhaltung in Städten</German>
+	</TEXT>
+</Civ4GameText>

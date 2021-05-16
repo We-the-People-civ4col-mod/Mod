@@ -260,7 +260,15 @@ bool isBeforeUnitCycle(const CvUnit* pFirstUnit, const CvUnit* pSecondUnit)
 
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB)
 {
-	int iDiff = pUnitA->AI_getMovePriority() - pUnitB->AI_getMovePriority();
+	// Apparently it's possible for one of the pointer to be NULL so I've added
+	// some extra protection
+	FAssert(pUnitA);
+	FAssert(pUnitB);
+
+	const int iMovePriorityA = (pUnitA != NULL) ? pUnitA->AI_getMovePriority() : 0;
+	const int iMovePriorityB = (pUnitB != NULL) ? pUnitB->AI_getMovePriority() : 0;
+	
+	const int iDiff = iMovePriorityA - iMovePriorityB;
 	if (iDiff > 0)
 	{
 		return false;
@@ -892,6 +900,8 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			}
 		}
 
+		// Bug? This may prevent AI units from considering land areas connected by river fords etc.
+		/*
 		if (pSelectionGroup->getDomainType() == DOMAIN_LAND)
 		{
 			int iGroupAreaID = pSelectionGroup->getArea();
@@ -903,6 +913,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 				}
 			}
 		}
+		*/
 	}
 
 	if (bAIControl || pToPlot->isRevealed(pSelectionGroup->getHeadTeam(), false))
@@ -1033,12 +1044,18 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 							iCost += PATH_TERRITORY_WEIGHT;
 						}
 					}
+
 					// R&R, Robert Surcouf, Damage on Storm plots, Start
 					if (pToPlot->getFeatureType() != NO_FEATURE)
 					{
-						iCost += (PATH_DAMAGE_WEIGHT * std::max(0, GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage())) / GC.getMAX_HIT_POINTS();
+						const int iTurnDamage = GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage();
+
+						if (iTurnDamage > 0)
+						{
+							iCost += (PATH_DAMAGE_WEIGHT * std::max(0, iTurnDamage)) / GC.getMAX_HIT_POINTS();
+						}
 					}
-					
+
 					// R&R, Robert Surcouf, Damage on Storm plots, End
 					// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 					// Add additional cost for ending turn in or adjacent to enemy territory based on flags
@@ -1525,7 +1542,9 @@ int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void
 			}
 		}
 
-		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
+		//WTP, ray, Large Rivers
+		// if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
+		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTeam() == eTeam)
 		{
 			return true;
 		}
@@ -1781,6 +1800,7 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_LOAD_SPECIAL: szString = L"MISSIONAI_LOAD_SPECIAL"; break;
 	case MISSIONAI_GUARD_CITY: szString = L"MISSIONAI_GUARD_CITY"; break;
 	case MISSIONAI_GUARD_BONUS: szString = L"MISSIONAI_GUARD_BONUS"; break;
+	case MISSIONAI_GUARD_TRADE_NET: szString = L"MISSIONAI_GUARD_TRADE_NET"; break;
 	case MISSIONAI_SPREAD: szString = L"MISSIONAI_SPREAD"; break;
 	case MISSIONAI_EXPLORE: szString = L"MISSIONAI_EXPLORE"; break;
 	case MISSIONAI_PILLAGE: szString = L"MISSIONAI_PILLAGE"; break;
@@ -1791,14 +1811,16 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_AWAIT_PICKUP: szString = L"MISSIONAI_AWAIT_PICKUP"; break;
 	case MISSIONAI_SAIL_TO_EUROPE: szString = L"MISSIONAI_SAIL_TO_EUROPE"; break;
 	case MISSIONAI_SAIL_FROM_EUROPE: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
-	case MISSIONAI_SAIL_TO_AFRICA: szString = L"MISSIONAI_SAIL_TO_AFRICA"; break;
-	case MISSIONAI_SAIL_FROM_AFRICA: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
 	case MISSIONAI_WORKER_SEA: szString = L"MISSIONAI_WORKER_SEA"; break; //TAC Whaling, ray
 	case MISSIONAI_TRANSPORT: szString = L"MISSIONAI_TRANSPORT"; break;
-	case MISSIONAI_TRANSPORT_SEA: szString = L"MISSIONAI_TRANSPORT_SEA"; break;	
+	case MISSIONAI_TRANSPORT_SEA: szString = L"MISSIONAI_TRANSPORT_SEA"; break;
 	case MISSIONAI_PIRACY: szString = L"MISSIONAI_PIRACY"; break;
 	case MISSIONAI_BOMBARD: szString = L"MISSIONAI_BOMBARD"; break;
 	case MISSIONAI_LEARN: szString = L"MISSIONAI_LEARN"; break;
+	case MISSIONAI_SAIL_TO_AFRICA: szString = L"MISSIONAI_SAIL_TO_AFRICA"; break;
+	case MISSIONAI_SAIL_FROM_AFRICA: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
+	case MISSIONAI_SAIL_TO_PORT_ROYAL: szString = L"MISSIONAI_SAIL_TO_PORT_ROYAL"; break;
+	case MISSIONAI_SAIL_FROM_PORT_ROYAL: szString = L"MISSIONAI_SAIL_FROM_PORT_ROYAL"; break;
 
 	default: szString = CvWString::format(L"UNKOWN_MISSION_AI(%d)", eMissionAI); break;
 	}
@@ -1819,6 +1841,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_SETTLER: szString = L"settler"; break;
 	case UNITAI_WORKER: szString = L"worker"; break;
 	case UNITAI_MISSIONARY: szString = L"missionary"; break;
+	case UNITAI_TRADER: szString = L"trade"; break; // WTP, ray, Native Trade Posts - START
 	case UNITAI_SCOUT: szString = L"scout"; break;
 	case UNITAI_WAGON: szString = L"wagon"; break;
 	case UNITAI_TREASURE: szString = L"treasure"; break;
@@ -1838,19 +1861,56 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	}
 }
 
+CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
+{
+	CvWString szString;
+
+	switch (eUnitAIState)
+	{
+	case NO_UNITAI_STATE: szString = L"NO_UNITAI_STATE"; break;
+	case UNITAI_STATE_DEFAULT: szString = L"UNITAI_STATE_DEFAULT"; break;
+	case UNITAI_STATE_BEARING_GIFTS: szString = L"UNITAI_STATE_BEARING_GIFTS"; break;
+	case UNITAI_STATE_RETURN_HOME: szString = L"UNITAI_STATE_RETURN_HOME"; break;
+	case UNITAI_STATE_WANDER: szString = L"UNITAI_STATE_WANDER"; break;
+	case UNITAI_STATE_RAIDING_PARTY: szString = L"UNITAI_STATE_RAIDING_PARTY"; break;
+	case UNITAI_STATE_BEARING_TRADE: szString = L"UNITAI_STATE_BEARING_TRADE"; break;
+	case UNITAI_STATE_GUARDING: szString = L"UNITAI_STATE_GUARDING"; break;
+	case UNITAI_STATE_ADVANCING: szString = L"UNITAI_STATE_ADVANCING"; break;
+	case UNITAI_STATE_GROUPING: szString = L"UNITAI_STATE_GROUPING"; break;
+	case UNITAI_STATE_CHARGING: szString = L"UNITAI_STATE_CHARGING"; break;
+	case UNITAI_STATE_RETREATING: szString = L"UNITAI_STATE_RETREATING"; break;
+	case UNITAI_STATE_PICKUP: szString = L"UNITAI_STATE_PICKUP"; break;
+	case UNITAI_STATE_PURCHASED: szString = L"UNITAI_STATE_PURCHASED"; break;
+	case UNITAI_STATE_SELL_TO_NATIVES: szString = L"UNITAI_STATE_SELL_TO_NATIVES"; break;
+	case UNITAI_STATE_SAIL: szString = L"UNITAI_STATE_SAIL"; break;
+	default: szString = CvWString::format(L"UNKOWN_UNITAI_STATE(%d)", eUnitAIState); break;
+	}
+
+	return szString;
+}
+
+
 /// post load function - start - Nightinggale
 //
 // This function is called whenever a savegame finish loading
 //
 void postLoadGameFixes()
 {
-	// unit yield cache - start - Nightinggale
-	for (int iI = 0; iI < GC.getMapINLINE().numPlotsINLINE(); iI++)
+	// deal with plots
+	CvMap& kMap = GC.getMapINLINE();
+	const int iNumPlots = kMap.numPlotsINLINE();
+	
+	// reset visibility count as it is garbage right now
+	for (int iI = 0; iI < iNumPlots; ++iI)
 	{
-		CvPlot* pLoopPlot = GC.getMapINLINE().plotByIndexINLINE(iI);
-		pLoopPlot->setYieldCache();
+		kMap.plotByIndexINLINE(iI)->m_em_iVisibilityCount.reset();
 	}
-	// unit yield cache - end - Nightinggale
+
+	// set proper cache for all plots (doable now that the entire savegame have been loaded
+	for (int iI = 0; iI < iNumPlots; ++iI)
+	{
+		kMap.plotByIndexINLINE(iI)->postLoadFixes();
+	}
 }
 /// post load function - end - Nightinggale
 
@@ -1883,3 +1943,10 @@ CvString getCompileFlags(int iDefineFlags)
 	return szString;
 }
 // city radius end
+
+bool CvDLLUtilityIFaceBase::isOOSVisible() const
+{
+	long lResult = 0;
+	gDLL->getPythonIFace()->callFunction(PYCPPModule, "isOOSVisible", NULL, &lResult);
+	return lResult != 0;
+}

@@ -1,5 +1,3 @@
-#pragma once
-
 //	$Revision: #4 $		$Author: mbreitkreutz $ 	$DateTime: 2005/06/13 13:35:55 $
 //------------------------------------------------------------------------------------------------
 //
@@ -12,10 +10,12 @@
 //------------------------------------------------------------------------------------------------
 //  Copyright (c) 2002-2004 Firaxis Games, Inc. All rights reserved.
 //------------------------------------------------------------------------------------------------
-
+#pragma		once
 #ifndef		FVARIABLESYSTEM_H
 #define		FVARIABLESYSTEM_H
-#pragma		once
+
+class CvSavegameReader;
+class CvSavegameWriter;
 
 //! Represents the different types of data an FVariable can represent.
 enum eVariableType
@@ -52,14 +52,18 @@ class FDataStreamBase;
 class FVariable
 {
 	public:
-		FVariable() : m_dValue(0) {}
+		// advc: Initialization of m_eType was missing (from C2C)
+		FVariable() : m_dValue(0), m_eType(FVARTYPE_INT) {}
 		FVariable(const FVariable& src) { CopyFrom(src); }
 		virtual ~FVariable();
 
 		const FVariable& operator=( const FVariable& varSrc ) { CopyFrom(varSrc); return *this; }
 		void CopyFrom(const FVariable& varSrc);
 		void Read(FDataStreamBase *);
-		void Write(FDataStreamBase *) const;
+		void Write(FDataStreamBase *);
+		
+		void read(CvSavegameReader);
+		void write(CvSavegameWriter);
 
 		union
 		{

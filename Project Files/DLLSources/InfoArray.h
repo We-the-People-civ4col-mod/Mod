@@ -64,6 +64,8 @@ class InfoArray;
 
 class InfoArray
 {
+	// make the python interface a friend as it needs to bypass the type check
+	friend class CyInfoArray;
 	// declare InfoArrayMod to be friend
 	// this allows any InfoArrayMod to access getInternal directly, bypassing the type checks
 	// this gives more coding freedom, but getType should be compared in asserts if done so to preserve the strict type checks
@@ -107,10 +109,10 @@ public:
 
 #include "InfoArrayGet.h"
 
+protected:
 	// needed by python interface. Do not use this in the DLL as it lacks type checking
 	int pyGet(int iIndex, int iSubIndex) const {return getInternal(iIndex, iSubIndex);}
 
-protected:
 	int getInternal(int iIndex, int iTokenIndex = 0) const;
 	short m_iLength;
 	char m_iNumDimentions;

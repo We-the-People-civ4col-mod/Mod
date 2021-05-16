@@ -29,6 +29,7 @@
 #include "CvDiploParameters.h"
 #include "CvTradeRoute.h"
 
+#include "CvSavegame.h"
 // Public Functions...
 
 CvUnitTemporaryStrengthModifier::CvUnitTemporaryStrengthModifier(CvUnit* pUnit, ProfessionTypes eProfession) :
@@ -53,45 +54,17 @@ CvUnitTemporaryStrengthModifier::~CvUnitTemporaryStrengthModifier()
 
 
 CvUnit::CvUnit() :
-	m_pabHasRealPromotion(NULL),
-	m_paiFreePromotionCount(NULL),
-	m_paiTerrainDoubleMoveCount(NULL),
-	m_paiFeatureDoubleMoveCount(NULL),
-	m_paiExtraTerrainAttackPercent(NULL),
-	m_paiExtraTerrainDefensePercent(NULL),
-	m_paiExtraFeatureAttackPercent(NULL),
-	m_paiExtraFeatureDefensePercent(NULL),
-	m_paiExtraUnitCombatModifier(NULL),
-	m_paiExtraUnitClassAttackModifier(NULL),
-	m_paiExtraUnitClassDefenseModifier(NULL),
+	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
-
-	// TAC - LbD - Ray - START
-	m_LbDrounds(0),
-	m_lastProfession(NO_PROFESSION),
-	// TAC - LbD - Ray - END
-
-	//ray18
-	moneyToBuyLand(0),
-	playerToBuyLand(NO_PLAYER),
-	//ray18 End
 
 	// unit yield cache - start - Nightinggale
 	m_eCachedYield(NO_YIELD),
 	// unit yield cache - end - Nightinggale
 
-	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION),
-
-	// R&R, ray, Natives Trading - START
-	m_AmountForNativeTrade(0),
-	m_YieldForNativeTrade(NO_YIELD)
-	// R&R, ray, Natives Trading - END
+	m_ba_isPromotionApplied(JIT_ARRAY_PROMOTION)
 
 {
-	m_aiExtraDomainModifier = new int[NUM_DOMAIN_TYPES];
-
-
 	CvDLLEntity::createUnitEntity(this);		// create and attach entity to unit
 
 	reset(0, NO_UNIT, NO_PLAYER, true);
@@ -109,8 +82,6 @@ CvUnit::~CvUnit()
 	CvDLLEntity::destroyEntity();			// delete CvUnitEntity and detach from us
 
 	uninit();
-
-	SAFE_DELETE_ARRAY(m_aiExtraDomainModifier);
 }
 
 void CvUnit::reloadEntity()
@@ -352,17 +323,6 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 void CvUnit::uninit()
 {
-	SAFE_DELETE_ARRAY(m_pabHasRealPromotion);
-	SAFE_DELETE_ARRAY(m_paiFreePromotionCount);
-	SAFE_DELETE_ARRAY(m_paiTerrainDoubleMoveCount);
-	SAFE_DELETE_ARRAY(m_paiFeatureDoubleMoveCount);
-	SAFE_DELETE_ARRAY(m_paiExtraTerrainAttackPercent);
-	SAFE_DELETE_ARRAY(m_paiExtraTerrainDefensePercent);
-	SAFE_DELETE_ARRAY(m_paiExtraFeatureAttackPercent);
-	SAFE_DELETE_ARRAY(m_paiExtraFeatureDefensePercent);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitClassAttackModifier);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitClassDefenseModifier);
-	SAFE_DELETE_ARRAY(m_paiExtraUnitCombatModifier);
 }
 
 
@@ -370,109 +330,17 @@ void CvUnit::uninit()
 // Initializes data members that are serialized.
 void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
 
-	m_iID = iID;
-	// TAC - LbD - Ray - START
-	m_LbDrounds = 0 ;
-	m_lastProfession = NO_PROFESSION;
-	// TAC - LbD - Ray - END
-
-	//ray18
-	moneyToBuyLand = 0;
-	playerToBuyLand = NO_PLAYER;
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	m_AmountForNativeTrade = 0;
-	m_YieldForNativeTrade = NO_YIELD;
-	// R&R, ray, Natives Trading - END
-
-	m_iGroupID = FFreeList::INVALID_INDEX;
-	m_iHotKeyNumber = -1;
-	m_iX = INVALID_PLOT_COORD;
-	m_iY = INVALID_PLOT_COORD;
-	m_iLastMoveTurn = 0;
-	m_iGameTurnCreated = 0;
-	m_iDamage = 0;
-	m_iMoves = 0;
-	m_iExperience = 0;
-	m_iLevel = 1;
-	m_iCargo = 0;
-	m_iAttackPlotX = INVALID_PLOT_COORD;
-	m_iAttackPlotY = INVALID_PLOT_COORD;
-	m_iCombatTimer = 0;
-	m_iCombatDamage = 0;
-	m_iFortifyTurns = 0;
-	m_iBlitzCount = 0;
-	m_iAmphibCount = 0;
-	m_iRiverCount = 0;
-	m_iEnemyRouteCount = 0;
-	m_iAlwaysHealCount = 0;
-	m_iHillsDoubleMoveCount = 0;
-	m_iExtraVisibilityRange = 0;
-	m_iExtraMoves = 0;
-	m_iExtraMoveDiscount = 0;
-	m_iExtraWithdrawal = 0;
-	m_iExtraBombardRate = 0;
-	m_iExtraEnemyHeal = 0;
-	m_iExtraNeutralHeal = 0;
-	m_iExtraFriendlyHeal = 0;
-	m_iSameTileHeal = 0;
-	m_iAdjacentTileHeal = 0;
-	m_iExtraCombatPercent = 0;
-	m_iExtraCityAttackPercent = 0;
-	m_iExtraCityDefensePercent = 0;
-	m_iExtraHillsAttackPercent = 0;
-	m_iExtraHillsDefensePercent = 0;
-	m_iExtraDomesticBonusPercent = 0;			
-	m_iPillageChange = 0;
-	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;
-	m_eFacingDirection = DIRECTION_SOUTH;
-	m_iImmobileTimer = 0;
-	m_iYieldStored = 0;
-	m_iExtraWorkRate = 0;
-	m_iUnitTravelTimer = 0;
-	m_iBadCityDefenderCount = 0;
-	m_iUnarmedCount = 0;
-
-	m_bMadeAttack = false;
-	m_bPromotionReady = false;
-	m_bDeathDelay = false;
-	m_bCombatFocus = false;
-	m_bInfoBarDirty = false;
-	m_bColonistLocked = false;
-	m_bGatheringResource = false; //TAC Whaling, ray
-	m_bBarbarian = false; // < JAnimals Mod Start >
-	m_bIgnoreDanger = false; // TAC - Trade Routes Advisor - koma13 - START
-
-	m_eOwner = eOwner;
-	m_eCapturingPlayer = NO_PLAYER;
-	m_eUnitType = eUnit;
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
-	m_eLeaderUnitType = NO_UNIT;
-	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
-	m_eProfession = NO_PROFESSION;
-	m_eUnitTravelState = NO_UNIT_TRAVEL_STATE;
-
-	m_combatUnit.reset();
-	m_transportUnit.reset();
-	m_homeCity.reset();
-	m_iPostCombatPlotIndex = -1;
-
-	for (iI = 0; iI < NUM_DOMAIN_TYPES; iI++)
-	{
-		m_aiExtraDomainModifier[iI] = 0;
+	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
+	if(eOwner!=NO_PLAYER){
+		setPromotions();
 	}
-
-	clear(m_szName);
-	m_szScriptData ="";
+	m_bInfoBarDirty = false;
+	m_iBaseCombat = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCombat() : 0;
+	m_iUnarmedCount = 0;
 
 	// unit yield cache - start - Nightinggale
 	updateYieldCache();
@@ -480,58 +348,6 @@ void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstruct
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg((0 < GC.getNumPromotionInfos()), "GC.getNumPromotionInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiFreePromotionCount = new int[GC.getNumPromotionInfos()];
-		m_pabHasRealPromotion = new bool[GC.getNumPromotionInfos()];
-		for (iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-		{
-			m_pabHasRealPromotion[iI] = false;
-			m_paiFreePromotionCount[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumTerrainInfos()), "GC.getNumTerrainInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
-		m_paiTerrainDoubleMoveCount = new int[GC.getNumTerrainInfos()];
-		m_paiExtraTerrainAttackPercent = new int[GC.getNumTerrainInfos()];
-		m_paiExtraTerrainDefensePercent = new int[GC.getNumTerrainInfos()];
-		for (iI = 0; iI < GC.getNumTerrainInfos(); iI++)
-		{
-			m_paiTerrainDoubleMoveCount[iI] = 0;
-			m_paiExtraTerrainAttackPercent[iI] = 0;
-			m_paiExtraTerrainDefensePercent[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumFeatureInfos()), "GC.getNumFeatureInfos() is not greater than zero but a float array is being allocated in CvUnit::reset");
-		m_paiFeatureDoubleMoveCount = new int[GC.getNumFeatureInfos()];
-		m_paiExtraFeatureDefensePercent = new int[GC.getNumFeatureInfos()];
-		m_paiExtraFeatureAttackPercent = new int[GC.getNumFeatureInfos()];
-		for (iI = 0; iI < GC.getNumFeatureInfos(); iI++)
-		{
-			m_paiFeatureDoubleMoveCount[iI] = 0;
-			m_paiExtraFeatureAttackPercent[iI] = 0;
-			m_paiExtraFeatureDefensePercent[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitCombatInfos()), "GC.getNumUnitCombatInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitCombatModifier = new int[GC.getNumUnitCombatInfos()];
-		for (iI = 0; iI < GC.getNumUnitCombatInfos(); iI++)
-		{
-			m_paiExtraUnitCombatModifier[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitClassInfos()), "GC.getNumUnitClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitClassAttackModifier = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiExtraUnitClassAttackModifier[iI] = 0;
-		}
-
-		FAssertMsg((0 < GC.getNumUnitClassInfos()), "GC.getNumUnitClassInfos() is not greater than zero but an array is being allocated in CvUnit::reset");
-		m_paiExtraUnitClassDefenseModifier = new int[GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_paiExtraUnitClassDefenseModifier[iI] = 0;
-		}
-
 		AI_reset();
 	}
 }
@@ -755,7 +571,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		{
 			if (!GET_PLAYER(eCapturingPlayer).isProfessionValid(eCaptureProfession, eCaptureUnitType))
 			{
-				eCaptureProfession = (ProfessionTypes) GC.getUnitInfo(eCaptureUnitType).getDefaultProfession();
+				eCaptureProfession = GC.getUnitInfo(eCaptureUnitType).getDefaultProfession();
 			}
 			CvUnit* pkCapturedUnit = GET_PLAYER(eCapturingPlayer).initUnit(eCaptureUnitType, eCaptureProfession, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, iYieldStored);
 
@@ -925,7 +741,7 @@ void CvUnit::NotifyEntity(MissionTypes eMission)
 /**                                                                       **/
 /** float CvUnit::NBMOD_GetShipStrength() const                           **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Einheit.                               **/
+/** Ermittelt die Schiffstï¿½rke der Einheit.                               **/
 /**                                                                       **/
 /***************************************************************************/
 
@@ -1285,30 +1101,87 @@ void CvUnit::updateCombat(bool bQuick)
 		FAssertMsg(plot()->isFighting(), "Current unit instance plot is not fighting as expected");
 		FAssertMsg(pPlot->isFighting(), "pPlot is not fighting as expected");
 
-		if (!pDefender->canDefend())
+		// Determine if the defender can defend in this plot (ships inside a city cannot defend against land attacks)
+		if (!pPlot->isValidDomainForAction(*this))
 		{
-			if (!bVisible)
+			// WTP, ray, fix for destroying ships instead of ejecting - START
+			bool bShipCityEscape = false;
+			bool bPlotCityOrFort = pDefender->plot()->isCity() || pDefender->plot()->isFort();
+
+			// Ships in Harbour Cities should be ejected damaged when City Captured
+			if (bPlotCityOrFort && getDomainType()!= DOMAIN_SEA && pDefender->getDomainType() == DOMAIN_SEA)
 			{
-				bFinish = true;
+				CvPlot* pDefenderPlot = pDefender->plot();
+				CvPlot* pEjectPlot = NULL;
+				CvCity* pCityForMessage = pDefender->plot()->getPlotCity();
+				
+				// Try to find a suitable water plot to eject
+				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+				{
+					CvPlot* pAdjacentPlot = pAdjacentPlot = plotDirection(pDefenderPlot->getX_INLINE(), pDefenderPlot->getY_INLINE(), ((DirectionTypes)iI));
+
+					// Determine if we can escape to this plot
+					if (pAdjacentPlot != NULL && pDefender->canMoveInto(pAdjacentPlot))
+					{
+						pEjectPlot = pAdjacentPlot;
+						break;
+					}
+				}
+
+				// if suitable eject Plot found, give some random damage and move to eject Plot
+				if (pEjectPlot != NULL)
+				{
+					int iDamageRand = std::max(10, GC.getGameINLINE().getSorenRandNum(75, "random ship damage"));
+					pDefender->setDamage(GC.getMAX_HIT_POINTS() * iDamageRand / 100);
+
+					// clean up to avoid Asserts when changing positon
+					setCombatUnit(NULL);
+					pDefender->setCombatUnit(NULL);
+
+					// changing position
+					pDefender->setXY(pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
+					
+					if (pCityForMessage != NULL)
+					{
+						// Send Messages
+						szBuffer = gDLL->getText("TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), pCityForMessage->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_THEIR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
+
+						szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY", pDefender->getName().GetCString(), pCityForMessage->getNameKey());
+						gDLL->getInterfaceIFace()->addMessage(pDefender->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_OUR_WITHDRAWL", MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pEjectPlot->getX_INLINE(), pEjectPlot->getY_INLINE());
+					}
+
+					// set to true to avoid killing the Defender Unit in next if below
+					bShipCityEscape = true;
+				}
 			}
-			else
+			// WTP, ray, fix for destroying ships instead of ejecting - END
+			
+			if (bShipCityEscape == false) // WTP, ray, fix for destroying ships instead of ejecting
 			{
-				CvMissionDefinition kMission;
-				kMission.setMissionTime(getCombatTimer() * gDLL->getSecsPerTurn());
-				kMission.setMissionType(MISSION_SURRENDER);
-				kMission.setUnit(BATTLE_UNIT_ATTACKER, this);
-				kMission.setUnit(BATTLE_UNIT_DEFENDER, pDefender);
-				kMission.setPlot(pPlot);
-				gDLL->getEntityIFace()->AddMission(&kMission);
+				if (!bVisible)
+				{
+					bFinish = true;
+				}
+			
+				else
+				{
+					CvMissionDefinition kMission;
+					kMission.setMissionTime(getCombatTimer() * gDLL->getSecsPerTurn());
+					kMission.setMissionType(MISSION_SURRENDER);
+					kMission.setUnit(BATTLE_UNIT_ATTACKER, this);
+					kMission.setUnit(BATTLE_UNIT_DEFENDER, pDefender);
+					kMission.setPlot(pPlot);
+					gDLL->getEntityIFace()->AddMission(&kMission);
 
-				// Surrender mission
-				setCombatTimer(GC.getMissionInfo(MISSION_SURRENDER).getTime());
+					// Surrender mission
+					setCombatTimer(GC.getMissionInfo(MISSION_SURRENDER).getTime());
 
-				GC.getGameINLINE().incrementTurnTimer(getCombatTimer());
+					GC.getGameINLINE().incrementTurnTimer(getCombatTimer());
+				}
+				// Kill them!
+				pDefender->setDamage(GC.getMAX_HIT_POINTS());
 			}
-
-			// Kill them!
-			pDefender->setDamage(GC.getMAX_HIT_POINTS());
 		}
 		else
 		{
@@ -1566,7 +1439,11 @@ void CvUnit::updateCombat(bool bQuick)
 
 			//ray14
 			// R&R, ray, changes to Wild Animals - added addittional check so Animals do not capture
-			if ((pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+			// WTP, ray, allowing Wagon Trains to be caught again
+			//WTP, ray, Large Rivers - START
+			// allowing Cargo Ships on Large Rivers to be caugth as well
+			// if (((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
+			if ((pDefender->cargoSpace() > 0 && (pDefender->getDomainType() == DOMAIN_LAND || (pDefender->getDomainType() == DOMAIN_SEA && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)) || pDefender->getUnitInfo().isTreasure() || (pDefender->isUnarmed() && pDefender->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pDefender->getProfession()).getCombatChange() > 0)) && !GET_PLAYER(getOwnerINLINE()).isNative() && !GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE())) 
 			{
 				CvUnit* pkCapturedUnitAfterFight = GET_PLAYER(getOwnerINLINE()).initUnit(pDefender->getUnitType(), pDefender->getProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
 				pkCapturedUnitAfterFight->setDamage(GC.getMAX_HIT_POINTS() / 2);	
@@ -1610,7 +1487,9 @@ void CvUnit::updateCombat(bool bQuick)
 			bool bAdvance = false;
 			bool bRaided = raidWeapons(pDefender);
 
-			if (!pDefender->isUnarmed() || GET_PLAYER(getOwnerINLINE()).isNative())
+			// WTP, ray, prevent Barbarian Civs to eject all the unarmed Units to defend a City it just conquered - START
+			// if (!pDefender->isUnarmed() || GET_PLAYER(getOwnerINLINE()).isNative())
+			if ((!pDefender->isUnarmed() && !pDefender->isBarbarian()) || GET_PLAYER(getOwnerINLINE()).isNative())
 			{
 				CvCity* pCity = pPlot->getPlotCity();
 				if (NULL != pCity && pCity->getOwnerINLINE() == pDefender->getOwnerINLINE())
@@ -2002,9 +1881,9 @@ bool CvUnit::isActionRecommended(int iAction)
 
 					if (eFinalImprovement != NO_IMPROVEMENT)
 					{
-						for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+						for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 						{
-							if (GC.getImprovementInfo(eFinalImprovement).getRouteYieldChanges(eRoute, (YieldTypes)i) > 0)
+							if (GC.getImprovementInfo(eFinalImprovement).getRouteYieldChanges(eRoute, eYield) > 0)
 							{
 								return true;
 							}
@@ -2079,6 +1958,7 @@ bool CvUnit::isActionRecommended(int iAction)
 	case COMMAND_SPEAK_WITH_CHIEF:
 	case COMMAND_YIELD_TRADE:
 	case COMMAND_LEARN:
+	case COMMAND_ESTABLISH_TRADE_POST: // WTP, ray, Native Trade Posts - START
 		return true;
 		break;
 	default:
@@ -2385,6 +2265,14 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		}
 		break;
 
+	// WTP, ray, Native Trade Posts - START
+	case COMMAND_ESTABLISH_TRADE_POST:
+		if (canEstablishTradePost())
+		{
+			return true;
+		}
+		break;
+
 	// R&R, ray , Stirring Up Natives - START
 	case COMMAND_STIR_UP_NATIVES:
 		if (canStirUp())
@@ -2412,13 +2300,14 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	case COMMAND_GOTO_MENU:
 		if (getTransportUnit() == NULL || plot()->isValidDomainForAction(getUnitType()))
 		{
+			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
 			// Erik: Disable the goto menu for coastal transports for now until we figure
 			// out how to filter the unreachable cities
-			if (canCrossCoastOnly())
-			{
-				return false;
-			}			
-
+			// if (canCrossCoastOnly())
+			// {
+			//	 return false;
+			// }			
+			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -END
 			return true;
 			/*
 			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || canAutoCrossOcean(plot()))
@@ -2450,6 +2339,15 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		}
 		break;
 	// TAC - Trade Routes Advisor - koma13 - END
+	
+	// WTP, merge Treasures, of Raubwuerger - START
+	case COMMAND_MERGE_TREASURES:
+		if (canMergeTreasures())
+		{
+			return true;
+		}
+		break;
+	// R&R, ray , Stirring Up Natives - - END
 
 	default:
 		FAssert(false);
@@ -2660,7 +2558,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		case COMMAND_UNLOAD:
 			if (iData2 >= 0)
 			{
-				FAssert(iData1 == getYield());
+				FAssert((YieldTypes)iData1 == getYield());
 				FAssert(getYield() != NO_YIELD);
 				unloadStoredAmount(iData2);
 			}
@@ -2688,6 +2586,12 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 		case COMMAND_ESTABLISH_MISSION:
 			establishMission();
+			bCycle = true;
+			break;
+
+		// WTP, ray, Native Trade Posts - START
+		case COMMAND_ESTABLISH_TRADE_POST:
+			establishTradePost();
 			bCycle = true;
 			break;
 
@@ -2736,6 +2640,16 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			break;
 		// TAC - Trade Routes Advisor - koma13 - END
 
+		// WTP, merge Treasures, of Raubwuerger - START
+		// ray, small improvement
+		case COMMAND_MERGE_TREASURES:
+			if(isGroupHead())
+			{
+				mergeTreasures();
+			}
+			break;
+		// R&R, ray , Stirring Up Natives - - END
+		
 		default:
 			FAssert(false);
 			break;
@@ -2938,16 +2852,25 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		}
 	}
 
+	const FeatureTypes eFeature = pPlot->getFeatureType();
+
+	// Prevent the AI from moving through storms and sustaining damage
+	// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
+	if (getGroup()->AI_isControlled() && (eFeature != NO_FEATURE) &&  GC.getFeatureInfo(eFeature).getTurnDamage() > 0)
+	{
+		return false;
+	}
+
 	CvArea *pPlotArea = pPlot->area();
 	TeamTypes ePlotTeam = pPlot->getTeam();
 	bool bCanEnterArea = canEnterArea(pPlot->getOwnerINLINE(), pPlotArea);
 	if (bCanEnterArea)
-	{
-		if (pPlot->getFeatureType() != NO_FEATURE)
+	{	
+		if (eFeature != NO_FEATURE)
 		{
-			if (m_pUnitInfo->getFeatureImpassable(pPlot->getFeatureType()))
+			if (m_pUnitInfo->getFeatureImpassable(eFeature))
 			{
-				if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+				if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
 				{
 					return false;
 				}
@@ -2958,16 +2881,40 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 				}
 			}
 		}
-		
+
 		if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 		{
-			if (DOMAIN_SEA != getDomainType() || pPlot->getTeam() != getTeam())  // sea units can enter impassable in own cultural borders
+			//WTP, ray, Large Rivers - START
+			// allow all Land Units to enter Large Rivers with Improvement
+
+			bool bLandUnitMayPassLargeRiverDueToImprovement = false;
+			bool bLandUnitMayPassLargeRiverDueToTerrainFeature = false;
+			bool bLandUnitMayPassLargeRiverDueToProfession = false;
+			bool bLandUnitMayBeLoaded = false;
+
+			if (getDomainType() == DOMAIN_LAND && pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
 			{
+				bLandUnitMayPassLargeRiverDueToImprovement = (pPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pPlot->getImprovementType()).getTerrainMakesValid(TERRAIN_LARGE_RIVERS));
+				bLandUnitMayPassLargeRiverDueToTerrainFeature = (pPlot->getFeatureType() != NO_FEATURE && GC.getFeatureInfo(pPlot->getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS));
+				bLandUnitMayPassLargeRiverDueToProfession = (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).isCanCrossLargeRivers());
+				bLandUnitMayBeLoaded = canLoad(pPlot, false);
+			}
+
+
+			// stop large ships from entering Large Rivers in own Terrain
+			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
+			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || pPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
+			{
+				// if (bIgnoreLoad || !canLoad(pPlot, true))
 				if (bIgnoreLoad || !canLoad(pPlot, true))
 				{
-					return false;
+					if (bLandUnitMayPassLargeRiverDueToImprovement == false && bLandUnitMayPassLargeRiverDueToTerrainFeature == false && bLandUnitMayPassLargeRiverDueToProfession == false && bLandUnitMayBeLoaded == false)
+					{
+						return false;
+					}
 				}
 			}
+			//WTP, ray, Large Rivers - END
 		}
 	}
 
@@ -3037,7 +2984,8 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		// R&R, ray, Monasteries and Forts - START
 		if (m_pUnitInfo->isAnimal())
 		{
-			if (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCity())
+			//WTP, Protected Hostile Goodies - small adaptation
+			if (pPlot->isFort() || pPlot->isMonastery() || pPlot->isCity() || pPlot->isGoodyForSpawningHostileCriminals() || pPlot->isGoodyForSpawningHostileNatives())
 			{
 				return false;
 			}
@@ -3066,7 +3014,15 @@ bool CvUnit::canMoveInto(const CvPlot* pPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (bIgnoreLoad || plot()->isWater() || !canLoad(pPlot, false))
 			{
-				return false;
+				//WTP, ray, Large Rivers - START
+				// allowing all Land Units to enter Large Rivers
+				// further below we will code exceptions - Maybe also configure in XML
+				//return false;
+				if(pPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+				{
+					return false;
+				}
+				//WTP, ray, Large Rivers - END
 			}
 		}
 		break;
@@ -3724,9 +3680,9 @@ void CvUnit::gift(bool bTestTransport)
 	pGiftUnit->convert(this, true);
 
 	int iUnitValue = 0;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(iYield);
+		iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(eYield);
 	}
 	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, iUnitValue / 5);
 
@@ -3938,9 +3894,9 @@ int CvUnit::getLoadYieldAmount(YieldTypes eYield) const
 
 bool CvUnit::canLoadYields(const CvPlot* pPlot, bool bTrade) const
 {
-	for (int iYield = 0; iYield <  NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		if(canLoadYield(pPlot, (YieldTypes) iYield, bTrade))
+		if(canLoadYield(pPlot, eYield, bTrade))
 		{
 			return true;
 		}
@@ -4050,9 +4006,9 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 			//if (GC.getNEW_CAPACITY() && !isHuman())
 			{
 				int iCargoYields = 0;
-				for (int iYield = 3; iYield < NUM_YIELD_TYPES; iYield++)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
+				for (YieldTypes eLoopYield = YIELD_HEMP; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
 				{
-					if ((pCity->getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
+					if ((pCity->getYieldStored(eLoopYield) > 0) && (GC.getYieldInfo(eLoopYield).isCargo()))
 						{iCargoYields++;}
 				}
 				
@@ -4123,9 +4079,8 @@ bool CvUnit::canTradeYield(const CvPlot* pPlot) const
 	//check if the city has any cargo that we can fit
 	if(!bYieldFound)
 	{
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes eYield = (YieldTypes) iYield;
 			if ((pCity->getYieldStored(eYield) > 0) && (getLoadYieldAmount(eYield) > 0))
 			{
 				bYieldFound = true;
@@ -4212,6 +4167,17 @@ bool CvUnit::canClearSpecialty() const
 	{
 		return false;
 	}
+
+	//WTP, fix crash for clearing Unit Specialization in revolting City - START
+	CvCity* pCity = GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID());
+	if (pCity != NULL)
+	{
+		if (pCity->isOccupation())
+		{
+			return false;
+		}
+	}
+	//WTP, fix crash for clearing Unit Specialization in revolting City - END
 
 	return true;
 }
@@ -4631,7 +4597,7 @@ bool CvUnit::load(bool bCheckCity)
 
 	pPlot = plot();
 
-	for (iPass = 0; iPass < 2; iPass++)
+	for (iPass = 0; iPass < 3; iPass++)
 	{
 		pUnitNode = pPlot->headUnitNode();
 
@@ -4642,7 +4608,10 @@ bool CvUnit::load(bool bCheckCity)
 
 			if (canLoadUnit(pLoopUnit, pPlot, bCheckCity))
 			{
-				if ((iPass == 0) ? (pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) : (pLoopUnit->getTeam() == getTeam()))
+				// First pass matches only ships that are not sleeping, subsequent matches ignore activity
+				if ((iPass == 0 && pLoopUnit->getGroup()->getActivityType() != ACTIVITY_SLEEP && pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) ||
+					(iPass == 1 && pLoopUnit->getOwnerINLINE() == getOwnerINLINE()) ||
+					(iPass == 2 && pLoopUnit->getTeam() == getTeam()))
 				{
 					if (!setTransportUnit(pLoopUnit))
 					{
@@ -4896,6 +4865,27 @@ void CvUnit::learn()
 		return;
 	}
 	// R&R, ray, Natives do not talk when furious - ELSE
+
+	// WTP, ray, Game Option only 1 Colonist living in Village - START
+	else if (isHuman() && GC.getGameINLINE().isOption(GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE))
+	{
+		std::vector<CvUnit*> aUnits;
+		CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+		while (pUnitNode)
+		{
+			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			// this checks if there is already another Native Living in this village
+			// if yes, we send a message and exit the method by return
+			if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
+			{
+				CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING", plot()->getPlotCity()->getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_LEARN).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+				return;
+			}
+		}
+	}
+	// WTP, ray, Game Option only 1 Colonist living in Village - END
 
 	if (isHuman() && !getGroup()->AI_isControlled() && !GET_PLAYER(eNativePlayer).isHuman())
 	{
@@ -5186,6 +5176,64 @@ bool CvUnit::canEstablishMission() const
 	return true;
 }
 
+
+// WTP, ray, Native Trade Posts - START
+bool CvUnit::canEstablishTradePost() const
+{
+	if (getProfession() == NO_PROFESSION)
+	{
+		return false;
+	}
+
+	if (GC.getProfessionInfo(getProfession()).getNativeTradeRate() <= 0)
+	{
+		return false;
+	}
+
+	if(!canMove())
+	{
+		return false;
+	}
+
+	CvPlot* pPlot = plot();
+	if (pPlot == NULL)
+	{
+		return false;
+	}
+
+	CvCity* pCity = pPlot->getPlotCity();
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+	if (!kCityOwner.canHaveTradePost(getOwnerINLINE()))
+	{
+		return false;
+	}
+
+	if (pCity->getTradePostCivilization() == getCivilizationType())
+	{
+		return false;
+	}
+
+	// R&R, ray, Natives do not talk when furious - START
+	if (isHuman() && !kCityOwner.isHuman() && isAutomated())
+	{
+		int currentPlayerAttitude = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
+		if (currentPlayerAttitude == 0)
+		{
+			return false;
+		}
+	}
+	// R&R, ray, Natives do not talk when furious - END
+
+	return true;
+}
+// WTP, ray, Native Trade Posts - END
+
+
 void CvUnit::establishMission()
 {
 	if (!canEstablishMission())
@@ -5211,7 +5259,23 @@ void CvUnit::establishMission()
 		CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_FAILED", plot()->getPlotCity()->getNameKey());
 		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
 		GET_PLAYER(pCity->getOwnerINLINE()).AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
+
+		//Ramstormp, Disillusioned missionary - START
+		if (GC.getGameINLINE().getSorenRandNum(100, "Dis mission roll") < getFailedMissionarySurvivalPercent())
+		{
+			UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
+			// WTP, ray, just for safety
+			if (FailedMissionaryType != NO_UNIT)
+			{
+				CvUnit* FailedMissionaryUnit = GET_PLAYER(getOwnerINLINE()).initUnit(FailedMissionaryType, GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+				//  WTP, ray, we still need to display a message - your missionary failed and became a Failed Missionary
+				CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL", plot()->getPlotCity()->getNameKey());
+				gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+			}
+		} 
+		//Ramstormp, Disillusioned missionary - END
 	}
+
 	else
 	{
 		GET_PLAYER(getOwnerINLINE()).setMissionarySuccessPercent(GET_PLAYER(getOwnerINLINE()).getMissionarySuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
@@ -5230,6 +5294,22 @@ void CvUnit::establishMission()
 			CvPlayer& oldMissionaryPlayer = GET_PLAYER(pCity->getMissionaryPlayer());
 			int attitudeDecreaseForDestroyingMission = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_MISSION");
 			oldMissionaryPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingMission);
+
+			//Ramstormp, Disillusioned Missionary - START
+			if (GC.getGameINLINE().getSorenRandNum(100, "Dis missal roll") < GC.getDefineINT("EXPELLED_MISSIONARY_SURVIVAL_CHANCE"))
+			{
+				UnitTypes FailedMissionaryType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_FAILED_MISSIONARY"));
+				if (FailedMissionaryType != NO_UNIT)
+				{
+					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
+					CvUnit* FailedMissionaryUnit = oldMissionaryPlayer.initUnit(FailedMissionaryType, GC.getUnitInfo(FailedMissionaryType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE());
+					//  WTP, ray, we still need to display a message - your missionary was thrown out because new Mission and became a Failed Missionary
+					CvWString szBuffer = gDLL->getText("TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED", plot()->getPlotCity()->getNameKey());
+					gDLL->getInterfaceIFace()->addMessage(pCity->getMissionaryPlayer(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_MISSION).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+				}
+			}
+			//Ramstormp, Disillusioned missionary - END
+
 		}
 		// R&R, ray, Rebuild Missioning End
 
@@ -5246,6 +5326,69 @@ void CvUnit::establishMission()
 
 	kill(true);
 }
+
+// WTP, ray, Native Trade Posts - START
+void CvUnit::establishTradePost()
+{
+	if (!canEstablishTradePost())
+	{
+		return;
+	}
+
+	CvCity* pCity = plot()->getPlotCity();
+	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+
+	// R&R, ray, Natives do not talk when furious - START
+	int currentPlayerAttitude = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
+	if (isHuman() &&  currentPlayerAttitude == 0)
+	{
+		CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_NOT_WILLING_TO_TALK", pCity->getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
+		return;
+	}
+	// R&R, ray, Natives do not talk when furious - ELSE
+
+	if (GC.getGameINLINE().getSorenRandNum(100, "Trade Post failure roll") > getNativeTradePostSuccessPercent())
+	{
+		CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_FAILED", plot()->getPlotCity()->getNameKey());
+		gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_POSITIVE_DINK", MESSAGE_TYPE_MINOR_EVENT, GC.getCommandInfo(COMMAND_ESTABLISH_TRADE_POST).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"), getX_INLINE(), getY_INLINE(), true, true);
+		// removed the Memory Count because it display strange unfitting since it is not a Mission and there is no special Memory Count for Trade Posts
+		//GET_PLAYER(pCity->getOwnerINLINE()).AI_changeMemoryCount((getOwnerINLINE()), MEMORY_MISSIONARY_FAIL, 1);
+	}
+	else
+	{
+		GET_PLAYER(getOwnerINLINE()).setNativeTradePostSuccessPercent(GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getMissionFailureThresholdPercent() / 100);
+
+		int iNativeTradeRate = GC.getProfessionInfo(getProfession()).getNativeTradeRate() * (100 + getUnitInfo().getNativeTradeRateModifier()) / 100;
+		if (!isHuman())
+		{
+			iNativeTradeRate = (iNativeTradeRate * 100 + 50) / GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent();
+		}
+
+		// change Attitudes
+		int attitudeIncreaseForTradePost = GC.getDefineINT("GAIN_ATTITUDE_FOR_TRADE_POST");
+		kCityOwner.AI_changeAttitudeExtra(getOwnerINLINE(), attitudeIncreaseForTradePost);
+		if (pCity->getTradePostPlayer() != NO_PLAYER)
+		{
+			CvPlayer& oldTradePostPlayer = GET_PLAYER(pCity->getTradePostPlayer());
+			int attitudeDecreaseForDestroyingTradePost = GC.getDefineINT("OTHER_EUROPEAN_ANGRY_FOR_DESTROYING_TRADE_POST");
+			oldTradePostPlayer.AI_changeAttitudeExtra(getOwnerINLINE(), -attitudeDecreaseForDestroyingTradePost);
+		}
+
+		pCity->setTradePostPlayer(getOwnerINLINE());
+		pCity->setNativeTradeRate(iNativeTradeRate);
+
+		for (int i = 0; i < GC.getNumFatherPointInfos(); ++i)
+		{
+			FatherPointTypes ePointType = (FatherPointTypes) i;
+			int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+			GET_PLAYER(getOwnerINLINE()).changeFatherPoints(ePointType, GC.getFatherPointInfo(ePointType).getMissionaryPoints() * gameSpeedMod/100);
+		}
+	}
+
+	kill(true);
+}
+// WTP, ray, Native Trade Posts - END
 
 int CvUnit::getMissionarySuccessPercent() const
 {
@@ -5328,6 +5471,117 @@ int CvUnit::getMissionarySuccessPercent() const
 	return totalChance;
 	// R&R, ray, Rebuild Missioning End
 }
+
+
+//Ramstormp, Disillusioned missionary - START
+int CvUnit::getFailedMissionarySurvivalPercent() const
+{
+	int survivalChance = 0;
+
+	// this is checking for an Expert
+	if (getUnitInfo().getMissionaryRateModifier() > 0)
+	{
+		survivalChance = GC.getDefineINT("FAILED_EXPERT_MISSIONARY_SURVIVAL_CHANCE");
+	}
+
+	// otherwise it is not an Expert
+	else
+	{
+		survivalChance = GC.getDefineINT("FAILED_REGULAR_MISSIONARY_SURVIVAL_CHANCE");
+	}
+
+	// just for safety if XML config was messed up, checking for smaller 0 is enough
+	if (survivalChance < 0)
+	{	
+		return 0;
+	}
+	return survivalChance;
+}
+//Ramstormp, Disillusioned missionary - END
+
+
+// WTP, ray, Native Trade Posts - START
+int CvUnit::getNativeTradePostSuccessPercent() const
+{
+	CvCity* pCity = NULL;
+	CvPlot* pPlot = plot();
+	if (pPlot != NULL)
+	{
+		pCity = pPlot->getPlotCity();
+	}
+
+	//needed for UnitAI, includes small fix
+	if (pCity == NULL || !pCity->isNative())
+	{
+		//Old Code
+		return GET_PLAYER(getOwnerINLINE()).getNativeTradePostSuccessPercent() * (100 + (getUnitInfo().getNativeTradeRateModifier() * GC.getDefineINT("TRADER_RATE_EFFECT_ON_SUCCESS") / 100)) / 100;
+	}
+
+	// 1. Find out how many missions already exist at this Native-Nation -> Missioning Rate
+	CvPlayer& kCityOwner = GET_PLAYER(pCity->getOwnerINLINE());
+
+	int numCitiesTotal = kCityOwner.getNumCities();
+
+	int numCitiesTradePosts = 0;
+	
+	CvCity* pLoopCity;
+	int iLoop;
+
+	for (pLoopCity = kCityOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kCityOwner.nextCity(&iLoop))
+	{
+		if (pLoopCity->getTradePostPlayer() != NO_PLAYER)
+		{
+			numCitiesTradePosts = (numCitiesTradePosts + 1);
+		}
+	}
+
+	// 2. Get Attitude of Natives to currently missioning Player
+	int attitudeNativeToTradePostPlayer = kCityOwner.AI_getAttitude(getOwnerINLINE(), false);
+
+	// 3. Check Attitudes of old missioninh player and existing Mission
+	int attitudeChanceImprovement = GC.getDefineINT("CHANCE_IMPROVEMENT_EACH_ATTITIUDE_LEVEL");
+	int penaltyExisingTradePost = 0;
+	int attitudeNativeToOldTradePostPlayer = 0;
+
+	if (pCity->getTradePostPlayer() != NO_PLAYER)
+	{
+		attitudeNativeToOldTradePostPlayer = kCityOwner.AI_getAttitude(pCity->getTradePostPlayer(), false);
+		penaltyExisingTradePost = GC.getDefineINT("CHANCE_PENALTY_OTHER_TRADE_POST_ALREADY_EXISTS");
+	}
+
+	// 4. Getting the expertmodifier of this unit
+	int expertModifier = getUnitInfo().getNativeTradeRateModifier();
+
+	// 5. Getting Min and Max
+	int minChance = GC.getDefineINT("MIN_CHANCE_TRADE_POST");
+	int maxChance = GC.getDefineINT("MAX_CHANCE_TRADE_POST");
+
+	// 6. Putting it all together
+
+	//expert starts with higher value
+	int totalChance = 50 + expertModifier / 2;
+	//the more trade posts exist, the harder it gets
+	totalChance = totalChance - 100 * numCitiesTradePosts / numCitiesTotal;
+	//now take a look at attitudes
+	totalChance = totalChance + attitudeChanceImprovement * (attitudeNativeToTradePostPlayer - attitudeNativeToOldTradePostPlayer);
+	//now substract the penalty for exising trade post
+	totalChance = totalChance - penaltyExisingTradePost;
+
+	if (totalChance > maxChance)
+	{
+		totalChance = maxChance;
+	}
+
+	else if (totalChance < minChance)
+	{
+		totalChance = minChance;
+	}
+
+	return totalChance;
+
+}
+// WTP, ray, Native Trade Posts - END
+
 
 // R&R, ray , Stirring Up Natives - START
 bool CvUnit::canStirUp() const
@@ -5425,7 +5679,7 @@ void CvUnit::stirUpNatives()
 		UnitTypes DefaultUnitType = (UnitTypes)GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));		
 		if (NO_UNIT != DefaultUnitType)
 		{
-			CvUnit* pUnit = kCityOwner.initUnit(DefaultUnitType, (ProfessionTypes) GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());			
+			CvUnit* pUnit = kCityOwner.initUnit(DefaultUnitType, GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());			
 			
 			CvPlayerAI& kNativeAI = GET_PLAYER(pCity->getOwner());
 			if (kNativeAI.AI_hasPotentialRaidTarget())
@@ -6082,8 +6336,6 @@ bool CvUnit::canPillage(const CvPlot* pPlot) const
 bool CvUnit::pillage()
 {
 	CvWString szBuffer;
-	int iPillageGold;
-	long lPillageGold;
 	ImprovementTypes eTempImprovement = NO_IMPROVEMENT;
 	RouteTypes eTempRoute = NO_ROUTE;
 
@@ -6115,7 +6367,8 @@ bool CvUnit::pillage()
 		{
 			// Use python to determine pillage amounts...
 			//lPillageGold = 0;
-			lPillageGold = -1; // K-Mod
+			long lPillageGold = -1; // K-Mod
+			int iPillageGold = 0;
 
 			if (GC.getUSE_DO_PILLAGE_GOLD_CALLBACK()) // K-Mod. I've writen C to replace the python callback.
 			{
@@ -6371,8 +6624,8 @@ bool CvUnit::doAcquireCheckNatives()
 
 		if (eNativeOwner != NO_PLAYER)
 		{
-			moneyToBuyLand = iCost;
-			playerToBuyLand = eNativeOwner;
+			m_iMoneyToBuyLand = iCost;
+			m_ePlayerToBuyLand = eNativeOwner;
 			GET_TEAM(getTeam()).meet(GET_PLAYER(eNativeOwner).getTeam(), false);
 		}
 
@@ -6402,19 +6655,19 @@ bool CvUnit::doAcquireCheckNatives()
 
 void CvUnit::buyLandAfterAcquire()
 {
-	if (playerToBuyLand != NO_PLAYER)
+	if (m_ePlayerToBuyLand != NO_PLAYER)
 	{
 		//resetting to Peace if Acquiring City has caused war
-		if (GET_TEAM(GET_PLAYER(playerToBuyLand).getTeam()).isAtWar(getTeam()))
+		if (GET_TEAM(GET_PLAYER(m_ePlayerToBuyLand).getTeam()).isAtWar(getTeam()))
 		{
-			GET_TEAM(GET_PLAYER(playerToBuyLand).getTeam()).makePeace(getTeam());
-			CvWString szBuffer = gDLL->getText("TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY", GET_PLAYER(playerToBuyLand).getNameKey());
+			GET_TEAM(GET_PLAYER(m_ePlayerToBuyLand).getTeam()).makePeace(getTeam());
+			CvWString szBuffer = gDLL->getText("TXT_KEY_MAKE_PEACE_AFTER_ACQUIRE_CITY", GET_PLAYER(m_ePlayerToBuyLand).getNameKey());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitDefeatScript(), MESSAGE_TYPE_INFO, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), NULL, NULL);
 		}
 
-		GET_PLAYER(playerToBuyLand).changeGold((moneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
-		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(playerToBuyLand, moneyToBuyLand);
-		GET_PLAYER(getOwnerINLINE()).changeGold(moneyToBuyLand * -1);		
+		GET_PLAYER(m_ePlayerToBuyLand).changeGold((m_iMoneyToBuyLand * GC.getDefineINT("BUY_PLOT_SELLER_INCOME_PERCENT")) / 100);
+		GET_PLAYER(getOwnerINLINE()).AI_changeGoldTradedTo(m_ePlayerToBuyLand, m_iMoneyToBuyLand);
+		GET_PLAYER(getOwnerINLINE()).changeGold(m_iMoneyToBuyLand * -1);		
 	}
 }
 //Ende ray18
@@ -6471,6 +6724,14 @@ bool CvUnit::doFound(bool bBuyLand)
 		if (NULL != pCity)
 		{
 			pCity->addPopulationUnit(this, NO_PROFESSION);
+
+			//WTP, ray, Settler Professsion - START
+			//consuming YIELDS when Founding a City
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+			{
+				pCity->setYieldStored(eYield, 0);
+			}
+			//WTP, ray, Settler Professsion - END
 		}
 	}
 
@@ -6694,7 +6955,13 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 
 	if (!pPlot->isValidDomainForAction(*this))
 	{
-		return false;
+		//WTP, ray, Large Rivers - Start
+		// allowing Pioneers to Build on Large Rivers
+		if (pPlot->getTerrainType() != TERRAIN_LARGE_RIVERS)
+		{
+			return false;
+		}
+		//WTP, ray, Large Rivers - Start
 	}
 
 	// R&R, ray, prevent Forts and Monasteries to be built on Peaks - start
@@ -8298,9 +8565,8 @@ int CvUnit::getPower() const
 
 		if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		{
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) i;
 				iPower += GC.getYieldInfo(eYield).getPowerValue() * GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), eYield);
 			}
 		}
@@ -8323,9 +8589,8 @@ int CvUnit::getAsset() const
 		iAsset += GC.getProfessionInfo(getProfession()).getAssetValue();
 		if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		{
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) i;
 				iAsset += GC.getYieldInfo(eYield).getAssetValue() * GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(getProfession(), eYield);
 			}
 		}
@@ -8506,9 +8771,25 @@ int CvUnit::defenseXPValue() const
 
 int CvUnit::maxXPValue() const
 {
-	int iMaxValue;
+	int iMaxValue = MAX_INT;
 
-	iMaxValue = MAX_INT;
+	// WTP, XP cap to prevent farming XP from Animals
+	if (getUnitInfo().isAnimal())
+	{
+		iMaxValue = std::min(iMaxValue, GC.getDefineINT("ANIMAL_MAX_XP_VALUE"));
+	}
+
+	// WTP, XP cap to prevent farming XP from Runaways
+	if (getUnitInfo().LbD_canEscape())
+	{
+		// WTP, ray, modified XP cap code of devolution in case of Runaways by additional check for Profession Combat Change
+		// it can only be a Runaway if CombatChange of the Profession is 1 or maybe 0 if config changes
+		ProfessionTypes eUnitProfession = getProfession();
+		if (eUnitProfession != NO_PROFESSION && GC.getProfessionInfo(eUnitProfession).getCombatChange() <= 1)
+		{
+			iMaxValue = std::min(iMaxValue, GC.getDefineINT("ESCAPE_MAX_XP_VALUE"));
+		}
+	}
 
 	return iMaxValue;
 }
@@ -8656,7 +8937,10 @@ CvCity* CvUnit::getEvasionCity() const
 			{
 				if (pLoopCity->getArea() == getArea() || pLoopCity->plot()->isAdjacentToArea(getArea()))
 				{
-					if (pLoopCity->plot()->isFriendlyCity(*this, false))
+					//WTP, ray, Large Rivers - START
+					// Correcting that Ships eveade to Cities without Ocean access
+					// if (pLoopCity->plot()->isFriendlyCity(*this, false))
+					if (pLoopCity->plot()->isFriendlyCity(*this, false) && pLoopCity->plot()->hasAnyOtherWaterPlotsThanJustLargeRivers())
 					{
 						for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
 						{
@@ -9078,22 +9362,22 @@ int CvUnit::getID() const
 // TAC - LbD - Ray - START
 int CvUnit::getLbDrounds() const
 {
-	return m_LbDrounds;
+	return m_iLbDrounds;
 }
 
 void CvUnit::setLbDrounds(int newRounds)
 {
-	m_LbDrounds = newRounds;
+	m_iLbDrounds = newRounds;
 }
 
 ProfessionTypes CvUnit::getLastLbDProfession() const
 {
-	return m_lastProfession;
+	return m_eLastProfession;
 }
 
 void CvUnit::setLastLbDProfession(ProfessionTypes eProfession)
 {
-	m_lastProfession = eProfession;
+	m_eLastProfession = eProfession;
 }
 // TAC - LbD - Ray - END
 
@@ -9347,7 +9631,7 @@ void CvUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow, bool b
 	CvCity* pOldCity;
 	CvCity* pNewCity;
 	CvCity* pWorkingCity;
-	CvUnit* pTransportUnit;
+	CvUnit* pTransportUnit = NULL;
 	CvUnit* pLoopUnit;
 	CvPlot* pOldPlot;
 	CvPlot* pNewPlot;
@@ -9832,6 +10116,27 @@ int CvUnit::getArea() const
 	return pPlot->getArea();
 }
 
+// get the areaID of a plot in the 3x3 area with the unit in the center
+int CvUnit::getLandArea() const
+{
+	if (getX_INLINE() != INVALID_PLOT_COORD && getY_INLINE() != INVALID_PLOT_COORD)
+	{
+		// scanning the 3x3 area
+		// Use plotCity for order as this will start with the center plot
+		// This means unless the unit is on water (like large river), the result will be the same as getArea()
+		for (int i = 0; i < 9; ++i)
+		{
+			const CvPlot* pPlot = plotCity(getX_INLINE(), getY_INLINE(), i);
+			if (pPlot != NULL && !pPlot->isWater())
+			{
+				return pPlot->getArea();
+			}
+		}
+	}
+
+	// failed to locate land. Rely on vanilla code for what to do now
+	return getArea();
+}
 
 CvArea* CvUnit::area() const
 {
@@ -10618,12 +10923,12 @@ ProfessionTypes CvUnit::getProfession() const
 	return m_eProfession;
 }
 
-void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
+bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 {
 	if (!bForce && !canHaveProfession(eProfession, false))
 	{
 		FAssertMsg(false, "Unit can not have profession");
-		return;
+		return false;
 	}
 
 	if (getProfession() != eProfession)
@@ -10658,7 +10963,7 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 					}
 
 					setColonistLocked(bLock);
-					return;
+					return true;
 				}
 			}
 		}
@@ -10693,16 +10998,18 @@ void CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 			}
 		}
 	}
+
+	return true;
 }
 
-bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot) const
+bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot, bool bForceCheck) const
 {
 	if (NO_PROFESSION == eProfession)
 	{
 		return true;
 	}
 	
-	if (eProfession == getProfession())
+	if (!bForceCheck && eProfession == getProfession())
 	{
 		return true;
 	}
@@ -10788,16 +11095,39 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 		//make sure all equipment is available
 		if (!pCity->AI_isWorkforceHack())
 		{
-			if (kOwner.hasContentsYieldEquipmentAmountSecure(getProfession()) || kOwner.hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+			if ((kOwner.hasContentsYieldEquipmentAmountSecure(getProfession()) || kOwner.hasContentsYieldEquipmentAmount(eProfession)) && !gDLL->GetWorldBuilderMode()) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				for (int i=0; i < NUM_YIELD_TYPES; ++i)
+				for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 				{
-					YieldTypes eYieldType = (YieldTypes) i;
 					int iYieldCarried  = kOwner.getYieldEquipmentAmountSecure(getProfession(), eYieldType); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
 					if (iYieldRequired > 0)
 					{
 						int iMissing = iYieldRequired - iYieldCarried;
+
+						//WTP, ray, Settler Professsion - START
+						// we only do this if the city is larger 3
+						if (!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && kNewProfession.canFound() &&  pCity->getPopulation() > 3)
+						{
+							int iYieldsStoredInCity = pCity->getYieldStored(eYieldType);
+							if (iMissing > iYieldsStoredInCity)
+							{
+								// we check the requiredm Yields for AI so it can equip Settlers
+								int iYieldAmountToBeAdded = iMissing - iYieldsStoredInCity;
+
+								//I explicitly use Europe Sell Price because Europe Buy Price would be too expensive.
+								int iPriceSettlerYieldPrice = iYieldAmountToBeAdded * kOwner.getYieldSellPrice(eYieldType);
+
+								// we give Yields required for a little gold
+								if (kOwner.getGold() > iPriceSettlerYieldPrice)
+								{
+									pCity->changeYieldStored(eYieldType, iYieldAmountToBeAdded);
+									kOwner.changeGold(-iPriceSettlerYieldPrice);
+								}
+							}
+						}
+						//WTP, ray, Settler Professsion - END
+
 						if (iMissing > pCity->getYieldStored(eYieldType))
 						{
 							return false;
@@ -10825,9 +11155,8 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 
 		if (kOwner.hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 		{
-			for (int i=0; i < NUM_YIELD_TYPES; ++i)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				YieldTypes eYield = (YieldTypes) i;
 				if (!kOwner.isYieldEuropeTradable(eYield))
 				{
 					if (kOwner.getYieldEquipmentAmount(eProfession, eYield) > kOwner.getYieldEquipmentAmount(getProfession(), eYield))
@@ -10933,7 +11262,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 		if (isOnMap())
 		{
 			//TAC Whaling, ray
-			if (!getUnitInfo().isGatherBoat())
+			if (!getUnitInfo().isGatherBoat() && !gDLL->GetWorldBuilderMode())
 			{
 				return false;
 			}
@@ -10962,9 +11291,8 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmount(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) i;
 					int iYieldAmount = GET_PLAYER(getOwnerINLINE()).getYieldEquipmentAmount(eProfession, eYield);
 					iPower += iChange * GC.getYieldInfo(eYield).getPowerValue() * iYieldAmount;
 					kOwner.changeAssets(iChange * GC.getYieldInfo(eYield).getAssetValue() * iYieldAmount);
@@ -10992,13 +11320,12 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 	if (pCity != NULL && pCity->getOwnerINLINE() == getOwnerINLINE())
 	{
-		if (iChange != 0)
+		if (iChange != 0 && !gDLL->GetWorldBuilderMode())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).hasContentsYieldEquipmentAmountSecure(eProfession)) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 			{
-				for (int i = 0; i < NUM_YIELD_TYPES; i++)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) i;
 					pCity->changeYieldStored(eYield, -iChange * kOwner.getYieldEquipmentAmount(eProfession, eYield));
 				}
 			}
@@ -11025,18 +11352,8 @@ void CvUnit::processProfessionStats(ProfessionTypes eProfession, int iChange)
 		CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 		if (eProfession != NO_PROFESSION)
 		{
-			CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-			setBaseCombatStr(baseCombatStr() + iChange * (kProfession.getCombatChange() + kOwner.getProfessionCombatChange(eProfession)));
-			changeExtraMoves(iChange * kProfession.getMovesChange());
-			changeExtraWorkRate(iChange *  kProfession.getWorkRate());
-			if (!kProfession.isCityDefender())
-			{
-				changeBadCityDefenderCount(iChange);
-			}
-			if (kProfession.isUnarmed())
-			{
-				changeUnarmedCount(iChange);
-			}
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			processProfessionStatsUnsaved(kProfession, iChange);
 
 			for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); iPromotion++)
 			{
@@ -11048,6 +11365,28 @@ void CvUnit::processProfessionStats(ProfessionTypes eProfession, int iChange)
 		}
 
 		processUnitCombatType(getProfessionUnitCombatType(eProfession), iChange);
+	}
+}
+
+void CvUnit::processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange)
+{
+	FAssert(iChange != 0);
+
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	ProfessionTypes eProfession = kProfession.getIndex();
+
+	setBaseCombatStr(baseCombatStr() + iChange * (kProfession.getCombatChange() + kOwner.getProfessionCombatChange(eProfession)));
+
+	changeExtraMoves(iChange * kProfession.getMovesChange());
+	changeExtraWorkRate(iChange *  kProfession.getWorkRate());
+
+	if (!kProfession.isCityDefender())
+	{
+		changeBadCityDefenderCount(iChange);
+	}
+	if (kProfession.isUnarmed())
+	{
+		changeUnarmedCount(iChange);
 	}
 }
 
@@ -11071,9 +11410,8 @@ int CvUnit::getEuropeProfessionChangeCost(ProfessionTypes eProfession) const
 	CvPlayer& kEurope = GET_PLAYER(kOwner.getParent());
 
 	int iGoldCost = 0;
-	for (int i=0; i < NUM_YIELD_TYPES; ++i)
+	for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 	{
-		YieldTypes eYieldType = (YieldTypes) i;
 		int iMissing = getProfessionChangeYieldRequired(eProfession, eYieldType);
 		if (iMissing > 0)
 		{
@@ -11564,7 +11902,7 @@ int CvUnit::getExtraDomainModifier(DomainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiExtraDomainModifier[eIndex];
+	return m_ja_iExtraDomainModifier.get(eIndex);
 }
 
 
@@ -11572,7 +11910,7 @@ void CvUnit::changeExtraDomainModifier(DomainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_DOMAIN_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiExtraDomainModifier[eIndex] = (m_aiExtraDomainModifier[eIndex] + iChange);
+	m_ja_iExtraDomainModifier.add(iChange, eIndex);
 }
 
 
@@ -11672,7 +12010,7 @@ int CvUnit::getTerrainDoubleMoveCount(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiTerrainDoubleMoveCount[eIndex];
+	return m_ja_iTerrainDoubleMoveCount.get(eIndex);
 }
 
 
@@ -11688,7 +12026,7 @@ void CvUnit::changeTerrainDoubleMoveCount(TerrainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiTerrainDoubleMoveCount[eIndex] = (m_paiTerrainDoubleMoveCount[eIndex] + iChange);
+	m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getTerrainDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -11697,7 +12035,7 @@ int CvUnit::getFeatureDoubleMoveCount(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFeatureDoubleMoveCount[eIndex];
+	return m_ja_iFeatureDoubleMoveCount.get(eIndex);
 }
 
 
@@ -11713,7 +12051,7 @@ void CvUnit::changeFeatureDoubleMoveCount(FeatureTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiFeatureDoubleMoveCount[eIndex] = (m_paiFeatureDoubleMoveCount[eIndex] + iChange);
+	m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getFeatureDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -11722,7 +12060,7 @@ int CvUnit::getExtraTerrainAttackPercent(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraTerrainAttackPercent[eIndex];
+	return m_ja_iExtraTerrainAttackPercent.get(eIndex);
 }
 
 
@@ -11733,7 +12071,7 @@ void CvUnit::changeExtraTerrainAttackPercent(TerrainTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraTerrainAttackPercent[eIndex] += iChange;
+		m_ja_iExtraTerrainAttackPercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11743,7 +12081,7 @@ int CvUnit::getExtraTerrainDefensePercent(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraTerrainDefensePercent[eIndex];
+	return m_ja_iExtraTerrainDefensePercent.get(eIndex);
 }
 
 
@@ -11754,7 +12092,7 @@ void CvUnit::changeExtraTerrainDefensePercent(TerrainTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraTerrainDefensePercent[eIndex] += iChange;
+		m_ja_iExtraTerrainDefensePercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11764,7 +12102,7 @@ int CvUnit::getExtraFeatureAttackPercent(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraFeatureAttackPercent[eIndex];
+	return m_ja_iExtraFeatureAttackPercent.get(eIndex);
 }
 
 
@@ -11775,7 +12113,7 @@ void CvUnit::changeExtraFeatureAttackPercent(FeatureTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraFeatureAttackPercent[eIndex] += iChange;
+		m_ja_iExtraFeatureAttackPercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11785,7 +12123,7 @@ int CvUnit::getExtraFeatureDefensePercent(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraFeatureDefensePercent[eIndex];
+	return m_ja_iExtraFeatureDefensePercent.get(eIndex);
 }
 
 
@@ -11796,7 +12134,7 @@ void CvUnit::changeExtraFeatureDefensePercent(FeatureTypes eIndex, int iChange)
 
 	if (iChange != 0)
 	{
-		m_paiExtraFeatureDefensePercent[eIndex] += iChange;
+		m_ja_iExtraFeatureDefensePercent.add(iChange, eIndex);
 
 		setInfoBarDirty(true);
 	}
@@ -11806,42 +12144,42 @@ int CvUnit::getExtraUnitClassAttackModifier(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitClassAttackModifier[eIndex];
+	return m_ja_iExtraUnitClassAttackModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitClassAttackModifier(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitClassAttackModifier[eIndex] += iChange;
+	m_ja_iExtraUnitClassAttackModifier.add(iChange, eIndex);
 }
 
 int CvUnit::getExtraUnitClassDefenseModifier(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitClassDefenseModifier[eIndex];
+	return m_ja_iExtraUnitClassDefenseModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitClassDefenseModifier(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitClassDefenseModifier[eIndex] += iChange;
+	m_ja_iExtraUnitClassDefenseModifier.add(iChange, eIndex);
 }
 
 int CvUnit::getExtraUnitCombatModifier(UnitCombatTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiExtraUnitCombatModifier[eIndex];
+	return m_ja_iExtraUnitCombatModifier.get(eIndex);
 }
 
 void CvUnit::changeExtraUnitCombatModifier(UnitCombatTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitCombatInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_paiExtraUnitCombatModifier[eIndex] += iChange;
+	m_ja_iExtraUnitCombatModifier.add(iChange,eIndex);
 }
 
 bool CvUnit::canAcquirePromotion(PromotionTypes ePromotion) const
@@ -12008,7 +12346,7 @@ bool CvUnit::isHasRealPromotion(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_pabHasRealPromotion[eIndex];
+	return m_ba_HasRealPromotion.get(eIndex);
 }
 
 void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
@@ -12018,7 +12356,7 @@ void CvUnit::setHasRealPromotion(PromotionTypes eIndex, bool bValue)
 
 	if (isHasRealPromotion(eIndex) != bValue)
 	{
-		m_pabHasRealPromotion[eIndex] = bValue;
+		m_ba_HasRealPromotion.set(bValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -12126,40 +12464,23 @@ void CvUnit::resetPromotions()
 	m_iExtraDomesticBonusPercent = 0;
 	m_iPillageChange = 0;
 	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;
+	m_iExperiencePercent = 0;	
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
 
-	for (int iI = 0; iI < GC.getNumTerrainInfos(); ++iI)
-	{
-		m_paiExtraTerrainAttackPercent[iI] = 0;
-		m_paiExtraTerrainDefensePercent[iI] = 0;
-		m_paiTerrainDoubleMoveCount[iI] = 0;
-	}
+	m_ja_iExtraTerrainAttackPercent.reset();
+	m_ja_iExtraTerrainDefensePercent.reset();
+	m_ja_iTerrainDoubleMoveCount.reset();
+	
+	m_ja_iExtraFeatureAttackPercent.reset();
+	m_ja_iExtraFeatureDefensePercent.reset();
+	m_ja_iFeatureDoubleMoveCount.reset();
 
-	for (int iI = 0; iI < GC.getNumFeatureInfos(); ++iI)
-	{
-		m_paiExtraFeatureAttackPercent[iI] = 0;
-		m_paiExtraFeatureDefensePercent[iI] = 0;
-		m_paiFeatureDoubleMoveCount[iI] = 0;
-	}
+	m_ja_iExtraUnitClassAttackModifier.reset();
+	m_ja_iExtraUnitClassDefenseModifier.reset();
 
-	for (int iI = 0; iI < GC.getNumUnitClassInfos(); ++iI)
-	{
-		m_paiExtraUnitClassAttackModifier[iI] = 0;
-		m_paiExtraUnitClassDefenseModifier[iI] = 0;
-	}
+	m_ja_iExtraUnitCombatModifier.reset();
+	m_ja_iExtraDomainModifier.reset();
 
-	for (int iI = 0; iI < GC.getNumUnitCombatInfos(); ++iI)
-	{
-		m_paiExtraUnitCombatModifier[iI] = 0;
-	}
-
-	for (int iI = 0; iI < NUM_DOMAIN_TYPES; ++iI)
-	{
-		m_aiExtraDomainModifier[iI] = 0;
-	}
-
-	setPromotions();
 }
 
 void CvUnit::setPromotions(PromotionTypes ePromotion)
@@ -12249,7 +12570,7 @@ void CvUnit::setFreePromotionCount(PromotionTypes eIndex, int iValue)
 
 	if (getFreePromotionCount(eIndex) != iValue)
 	{
-		m_paiFreePromotionCount[eIndex] = iValue;
+		m_ja_iFreePromotionCount.set(iValue, eIndex);
 
 		setPromotions(eIndex);
 
@@ -12265,7 +12586,7 @@ int CvUnit::getFreePromotionCount(PromotionTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumPromotionInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_paiFreePromotionCount[eIndex];
+	return m_ja_iFreePromotionCount.get(eIndex);
 }
 
 int CvUnit::getSubUnitCount() const
@@ -12313,254 +12634,6 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 	}
 
 	return false;
-}
-
-void CvUnit::read(FDataStreamBase* pStream)
-{
-	// Init data before load
-	reset();
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iGroupID);
-	pStream->Read(&m_iHotKeyNumber);
-	pStream->Read(&m_iX);
-	pStream->Read(&m_iY);
-	pStream->Read(&m_iLastMoveTurn);
-	pStream->Read(&m_iGameTurnCreated);
-	pStream->Read(&m_iDamage);
-	pStream->Read(&m_iMoves);
-	pStream->Read(&m_iExperience);
-	pStream->Read(&m_iLevel);
-	pStream->Read(&m_iCargo);
-	pStream->Read(&m_iCargoCapacity);
-	pStream->Read(&m_iAttackPlotX);
-	pStream->Read(&m_iAttackPlotY);
-	pStream->Read(&m_iCombatTimer);
-	pStream->Read(&m_iCombatDamage);
-	pStream->Read(&m_iFortifyTurns);
-	pStream->Read(&m_iBlitzCount);
-	pStream->Read(&m_iAmphibCount);
-	pStream->Read(&m_iRiverCount);
-	pStream->Read(&m_iEnemyRouteCount);
-	pStream->Read(&m_iAlwaysHealCount);
-	pStream->Read(&m_iHillsDoubleMoveCount);
-	pStream->Read(&m_iExtraVisibilityRange);
-	pStream->Read(&m_iExtraMoves);
-	pStream->Read(&m_iExtraMoveDiscount);
-	pStream->Read(&m_iExtraWithdrawal);
-	pStream->Read(&m_iExtraBombardRate);
-	pStream->Read(&m_iExtraEnemyHeal);
-	pStream->Read(&m_iExtraNeutralHeal);
-	pStream->Read(&m_iExtraFriendlyHeal);
-	pStream->Read(&m_iSameTileHeal);
-	pStream->Read(&m_iAdjacentTileHeal);
-	pStream->Read(&m_iExtraCombatPercent);
-	pStream->Read(&m_iExtraCityAttackPercent);
-	pStream->Read(&m_iExtraCityDefensePercent);
-	pStream->Read(&m_iExtraHillsAttackPercent);
-	pStream->Read(&m_iExtraHillsDefensePercent);
-	pStream->Read(&m_iExtraDomesticBonusPercent);	
-	pStream->Read(&m_iPillageChange);
-	pStream->Read(&m_iUpgradeDiscount);
-	pStream->Read(&m_iExperiencePercent);
-	pStream->Read(&m_iBaseCombat);
-	pStream->Read((int*)&m_eFacingDirection);
-	pStream->Read(&m_iImmobileTimer);
-	pStream->Read(&m_iYieldStored);
-	pStream->Read(&m_iExtraWorkRate);
-	pStream->Read((int*)&m_eProfession);
-
-	// TAC - LbD - Ray - START
-	pStream->Read(&m_LbDrounds);
-	pStream->Read((int*)&m_lastProfession);
-	// TAC - LbD - Ray - END
-
-	//ray18
-	pStream->Read(&moneyToBuyLand);
-	pStream->Read((int*)&playerToBuyLand);	
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	pStream->Read(&m_AmountForNativeTrade);
-	pStream->Read((int*)&m_YieldForNativeTrade);
-	// R&R, ray, Natives Trading - END
-
-	pStream->Read(&m_iUnitTravelTimer);
-	pStream->Read(&m_iBadCityDefenderCount);
-	pStream->Read(&m_iUnarmedCount);
-	pStream->Read((int*)&m_eUnitTravelState);
-
-	pStream->Read(&m_bMadeAttack);
-	pStream->Read(&m_bPromotionReady);
-	pStream->Read(&m_bDeathDelay);
-	pStream->Read(&m_bCombatFocus);
-	// m_bInfoBarDirty not saved...
-	pStream->Read(&m_bColonistLocked);
-
-	pStream->Read(&m_bGatheringResource); //TAC Whaling, ray
-	
-	pStream->Read(&m_bIgnoreDanger); // TAC - Trade Routes Advisor - koma13 - START
-	// < JAnimals Mod Start >
-	pStream->Read(&m_bBarbarian);
-	// < JAnimals Mod End >
-	pStream->Read((int*)&m_eOwner);
-	pStream->Read((int*)&m_eCapturingPlayer);
-	pStream->Read((int*)&m_eUnitType);
-	FAssert(NO_UNIT != m_eUnitType);
-	m_pUnitInfo = (NO_UNIT != m_eUnitType) ? &GC.getUnitInfo(m_eUnitType) : NULL;
-	pStream->Read((int*)&m_eLeaderUnitType);
-
-	m_combatUnit.read(pStream);
-	pStream->Read(&m_iPostCombatPlotIndex);
-	m_transportUnit.read(pStream);
-	m_homeCity.read(pStream);
-
-	pStream->Read(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->ReadString(m_szName);
-	pStream->ReadString(m_szScriptData);
-
-	pStream->Read(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Read(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Read(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Read(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
-	pStream->Read(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
-	pStream->Read(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
-
-	// unit yield cache - start - Nightinggale
-	updateYieldCache();
-	// unit yield cache - end - Nightinggale
-
-	// update promotion cache
-	// this will fix issues introduced if some xml data has been changed since the game was saved
-	resetPromotions();
-	// TODO: remove variables overwritten by resetPromotions from savegames
-	// Note: this is delayed until we break savegames anyway. Storing unused data won't break anything.
-}
-
-
-void CvUnit::write(FDataStreamBase* pStream)
-{
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-	pStream->Write(m_iGroupID);
-	pStream->Write(m_iHotKeyNumber);
-	pStream->Write(m_iX);
-	pStream->Write(m_iY);
-	pStream->Write(m_iLastMoveTurn);
-	pStream->Write(m_iGameTurnCreated);
-	pStream->Write(m_iDamage);
-	pStream->Write(m_iMoves);
-	pStream->Write(m_iExperience);
-	pStream->Write(m_iLevel);
-	pStream->Write(m_iCargo);
-	pStream->Write(m_iCargoCapacity);
-	pStream->Write(m_iAttackPlotX);
-	pStream->Write(m_iAttackPlotY);
-	pStream->Write(m_iCombatTimer);
-	pStream->Write(m_iCombatDamage);
-	pStream->Write(m_iFortifyTurns);
-	pStream->Write(m_iBlitzCount);
-	pStream->Write(m_iAmphibCount);
-	pStream->Write(m_iRiverCount);
-	pStream->Write(m_iEnemyRouteCount);
-	pStream->Write(m_iAlwaysHealCount);
-	pStream->Write(m_iHillsDoubleMoveCount);
-	pStream->Write(m_iExtraVisibilityRange);
-	pStream->Write(m_iExtraMoves);
-	pStream->Write(m_iExtraMoveDiscount);
-	pStream->Write(m_iExtraWithdrawal);
-	pStream->Write(m_iExtraBombardRate);
-	pStream->Write(m_iExtraEnemyHeal);
-	pStream->Write(m_iExtraNeutralHeal);
-	pStream->Write(m_iExtraFriendlyHeal);
-	pStream->Write(m_iSameTileHeal);
-	pStream->Write(m_iAdjacentTileHeal);
-	pStream->Write(m_iExtraCombatPercent);
-	pStream->Write(m_iExtraCityAttackPercent);
-	pStream->Write(m_iExtraCityDefensePercent);
-	pStream->Write(m_iExtraHillsAttackPercent);
-	pStream->Write(m_iExtraHillsDefensePercent);
-	pStream->Write(m_iExtraDomesticBonusPercent);	
-	pStream->Write(m_iPillageChange);
-	pStream->Write(m_iUpgradeDiscount);
-	pStream->Write(m_iExperiencePercent);
-	pStream->Write(m_iBaseCombat);
-	pStream->Write(m_eFacingDirection);
-	pStream->Write(m_iImmobileTimer);
-	pStream->Write(m_iYieldStored);
-	pStream->Write(m_iExtraWorkRate);
-	pStream->Write(m_eProfession);
-
-	// TAC - LbD - Ray - START
-	pStream->Write(m_LbDrounds);
-	pStream->Write(m_lastProfession);
-	// TAC - LbD - Ray - END
-
-	//ray18
-	pStream->Write(moneyToBuyLand);
-	pStream->Write(playerToBuyLand);
-	//Ende ray18
-
-	// R&R, ray, Natives Trading - START
-	pStream->Write(m_AmountForNativeTrade);
-	pStream->Write(m_YieldForNativeTrade);
-	// R&R, ray, Natives Trading -END
-
-	pStream->Write(m_iUnitTravelTimer);
-	pStream->Write(m_iBadCityDefenderCount);
-	pStream->Write(m_iUnarmedCount);
-	pStream->Write(m_eUnitTravelState);
-
-	pStream->Write(m_bMadeAttack);
-	pStream->Write(m_bPromotionReady);
-	pStream->Write(m_bDeathDelay);
-	pStream->Write(m_bCombatFocus);
-	// m_bInfoBarDirty not saved...
-	pStream->Write(m_bColonistLocked);
-
-	pStream->Write(m_bGatheringResource); //TAC Whaling, ray
-
-	pStream->Write(m_bIgnoreDanger); // TAC - Trade Routes Advisor - koma13 - START
-	// < JAnimals Mod Start >
-	pStream->Write(m_bBarbarian);
-	// < JAnimals Mod End >
-	pStream->Write(m_eOwner);
-	pStream->Write(m_eCapturingPlayer);
-	pStream->Write(m_eUnitType);
-	pStream->Write(m_eLeaderUnitType);
-
-	m_combatUnit.write(pStream);
-	pStream->Write(m_iPostCombatPlotIndex);
-	m_transportUnit.write(pStream);
-	m_homeCity.write(pStream);
-
-	pStream->Write(NUM_DOMAIN_TYPES, m_aiExtraDomainModifier);
-
-	pStream->WriteString(m_szName);
-	pStream->WriteString(m_szScriptData);
-
-	pStream->Write(GC.getNumPromotionInfos(), m_pabHasRealPromotion);
-	pStream->Write(GC.getNumPromotionInfos(), m_paiFreePromotionCount);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiTerrainDoubleMoveCount);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiFeatureDoubleMoveCount);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiExtraTerrainAttackPercent);
-	pStream->Write(GC.getNumTerrainInfos(), m_paiExtraTerrainDefensePercent);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiExtraFeatureAttackPercent);
-	pStream->Write(GC.getNumFeatureInfos(), m_paiExtraFeatureDefensePercent);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassAttackModifier);
-	pStream->Write(GC.getNumUnitClassInfos(), m_paiExtraUnitClassDefenseModifier);
-	pStream->Write(GC.getNumUnitCombatInfos(), m_paiExtraUnitCombatModifier);
 }
 
 // Protected Functions...
@@ -12890,8 +12963,22 @@ int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, boo
 		{
 			if (getUnitClassType() == kTrigger.getUnitRequired(i))
 			{
-				bFoundValid = true;
-				break;
+				// WTP, ray, trying to fix wrong plot selection for Unit Events - START
+				if (kTrigger.isUnitsOnPlot())
+				{
+					if(plot() == pPlot)
+					{
+						bFoundValid = true;
+						break;
+					}
+				}
+				// old code
+				else
+				{
+					bFoundValid = true;
+					break;
+				}
+				// WTP, ray, trying to fix wrong plot selection for Unit Events - START
 			}
 		}
 
@@ -13172,9 +13259,8 @@ void CvUnit::updateYieldCache()
 YieldTypes CvUnit::getYieldUncached() const
 // unit yield cache - end - Nightinggale
 {
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
 		if(getUnitClassType() == GC.getYieldInfo(eYield).getUnitClass())
 		{
 			return eYield;
@@ -13386,7 +13472,15 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 
 		if (getGroup() != NULL)
 		{
-			getGroup()->splitGroup(1, this);
+			if (!isHuman())
+			{
+				// Erik: Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
+				getGroup()->AI_separate();
+			}
+			else
+			{
+				getGroup()->splitGroup(1, this);
+			}
 		}
 
 		if (!isOnMap())
@@ -13749,9 +13843,8 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 			if (eCurrentProfession == NO_PROFESSION || GC.getProfessionInfo(eProfession).getCombatChange() > GC.getProfessionInfo(eCurrentProfession).getCombatChange() || (GC.getProfessionInfo(eProfession).getCombatChange() >= GC.getProfessionInfo(eCurrentProfession).getCombatChange() && GC.getProfessionInfo(eProfession).getMovesChange() > GC.getProfessionInfo(eCurrentProfession).getMovesChange()) )
 			{
 				bool bCanHaveProfession = false;
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					//ray Korrektur negativer Warenbestand
 					//int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYield);
 					int iYieldRequired = GC.getProfessionInfo(eProfession).getYieldEquipmentAmount(eYield);
@@ -13765,7 +13858,7 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 						
 						//ray Korrektur negativer Warenbestand
 						//if (iYieldRequired > 0 && aYields[iYield] == 0)
-						if (iYieldRequired > aYields[iYield])
+						if (iYieldRequired > aYields[eYield])
 						{
 							bCanHaveProfession = false;
 							break;
@@ -13794,10 +13887,9 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 	CvCity* pCity = plot()->getPlotCity();
 	if (pCity != NULL && pCity->isNative())
 	{
-		for (int zYield = 0; zYield < NUM_YIELD_TYPES; ++zYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			YieldTypes tYield = (YieldTypes) zYield;
-			pCity->changeYieldStored(tYield, aYields[zYield]);
+			pCity->changeYieldStored(eYield, aYields[eYield]);
 		}
 	}
 	setProfession(eProfession, true);
@@ -13826,17 +13918,16 @@ bool CvUnit::raidWeapons(CvCity* pCity)
 	}
 
 	std::vector<int> aYields(NUM_YIELD_TYPES);
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		// R&R, ray, code improvement - START
-		YieldTypes cYield = (YieldTypes) iYield;
-		if(cYield  == YIELD_HORSES || cYield  == YIELD_MUSKETS)
+		if(eYield  == YIELD_HORSES || eYield  == YIELD_MUSKETS)
 		{
-			aYields[iYield] = pCity->getYieldStored(cYield);
+			aYields[eYield] = pCity->getYieldStored(eYield);
 		}
 		else
 		{
-			aYields[iYield] = 0;
+			aYields[eYield] = 0;
 		}
 		// R&R, ray, code improvement - END
 	}
@@ -13846,14 +13937,13 @@ bool CvUnit::raidWeapons(CvCity* pCity)
 		return false;
 	}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		if (aYields[iYield] > 0)
+		if (aYields[eYield] > 0)
 		{
-			pCity->changeYieldStored(eYield, -aYields[iYield]);
+			pCity->changeYieldStored(eYield, -aYields[eYield]);
 
-			CvWString szString = gDLL->getText("TXT_KEY_GOODS_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), aYields[iYield], GC.getYieldInfo(eYield).getTextKeyWide());
+			CvWString szString = gDLL->getText("TXT_KEY_GOODS_RAIDED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey(), aYields[eYield], GC.getYieldInfo(eYield).getTextKeyWide());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE());
 			gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pCity->getX_INLINE(), pCity->getY_INLINE());
 		}
@@ -13884,11 +13974,9 @@ bool CvUnit::raidWeapons(CvUnit* pUnit)
 	CvPlayer& kOwner = GET_PLAYER(pUnit->getOwnerINLINE());
 	if (kOwner.hasContentsYieldEquipmentAmountSecure(pUnit->getProfession())) // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	{
-
-
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			aYields[iYield] += kOwner.getYieldEquipmentAmount(pUnit->getProfession(), (YieldTypes) iYield);
+			aYields[eYield] += kOwner.getYieldEquipmentAmount(pUnit->getProfession(), eYield);
 		}
 	}
 
@@ -13897,12 +13985,11 @@ bool CvUnit::raidWeapons(CvUnit* pUnit)
 		return false;
 	}
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		if (aYields[iYield] > 0)
+		if (aYields[eYield] > 0)
 		{
-			CvWString szString = gDLL->getText("TXT_KEY_WEAPONS_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pUnit->getNameOrProfessionKey(), aYields[iYield], GC.getYieldInfo(eYield).getTextKeyWide());
+			CvWString szString = gDLL->getText("TXT_KEY_WEAPONS_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pUnit->getNameOrProfessionKey(), aYields[eYield], GC.getYieldInfo(eYield).getTextKeyWide());
 			gDLL->getInterfaceIFace()->addMessage(getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAZE", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pUnit->getX_INLINE(), pUnit->getY_INLINE(), true, true);
 			gDLL->getInterfaceIFace()->addMessage(pUnit->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_CITYRAZE", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYield).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), pUnit->getX_INLINE(), pUnit->getY_INLINE(), true, true);
 		}
@@ -13996,7 +14083,7 @@ bool CvUnit::raidBuilding(CvCity* pCity)
 		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 		// R&R, ray fix for Buildings with workers destoryed
 		// only buildings without workers possible will be destroyed
-		if (pCity->isHasBuilding(eBuilding) && kBuilding.getMaxWorkers() == 0)
+		if (pCity->isHasRealBuilding(eBuilding) && kBuilding.getMaxWorkers() == 0)
 		{
 			aBuildings.push_back(eBuilding);
 		}
@@ -14286,7 +14373,7 @@ bool CvUnit::raidCity(CvCity* pCity)
 				CvPlayer& kPlayer = GET_PLAYER(pCity->getOwnerINLINE());
 
 				UnitTypes SlaveType = (UnitTypes)GC.getCivilizationInfo(kPlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_NATIVE_SLAVE"));
-				CvUnit* SlaveUnit = kPlayer.initUnit(SlaveType, (ProfessionTypes) GC.getUnitInfo(SlaveType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
+				CvUnit* SlaveUnit = kPlayer.initUnit(SlaveType, GC.getUnitInfo(SlaveType).getDefaultProfession(), pCity->getX_INLINE(), pCity->getY_INLINE(), NO_UNITAI);
 
 				CvWString szString = gDLL->getText("TXT_KEY_RAIDING_NATIVE_CAPTURED", GC.getCivilizationInfo(getCivilizationType()).getAdjectiveKey(), pCity->getNameKey());				
 				gDLL->getInterfaceIFace()->addMessage(pCity->getOwnerINLINE(), true, GC.getEVENT_MESSAGE_TIME(), szString, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, SlaveUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pCity->getX_INLINE(), pCity->getY_INLINE());		
@@ -14374,12 +14461,13 @@ bool CvUnit::raidGoods(CvCity* pCity)
 	}
 
 	std::vector<YieldTypes> aYields;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		if (pCity->getYieldStored(eYield) > 0 && GC.getYieldInfo(eYield).isCargo())
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			aYields.push_back(eYield);
+			if (pCity->getYieldStored(eYield) > 0 && GC.getYieldInfo(eYield).isCargo())
+			{
+				aYields.push_back(eYield);
+			}
 		}
 	}
 
@@ -14427,11 +14515,11 @@ bool CvUnit::isFullToBrim() const
 		std::vector<int> aiYieldsLoaded;
 		int iNumUnitYield = kUnit.getNumYieldsGatherable();
 
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			if (kUnit.canGatherYield(iYield))
+			if (kUnit.canGatherYield(eYield))
 			{
-				aiYieldsLoaded.push_back(iYield);
+				aiYieldsLoaded.push_back(eYield);
 			}
 		}
 
@@ -14739,13 +14827,12 @@ bool CvUnit::gatherResource()
 
 		if (!bWhalerFull)
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				if (eBonusYieldChanges[iYield] > 0)
+				if (eBonusYieldChanges[eYield] > 0)
 				{
-					YieldTypes eYield = (YieldTypes)iYield;
 					UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getYieldInfo(eYield).getUnitClass());
-					CvUnit* eGatheredUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), NO_UNITAI, NO_DIRECTION, eBonusYieldChanges[iYield]);
+					CvUnit* eGatheredUnit = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), NO_UNITAI, NO_DIRECTION, eBonusYieldChanges[eYield]);
 
 					if (eGatheredUnit != NULL)
 					{
@@ -14798,22 +14885,22 @@ bool CvUnit::isFishingBoat() const
 // R&R, ray, Natives Trading - START
 void CvUnit::setYieldForNativeTrade(YieldTypes nativeTradeYield)
 {
-	m_YieldForNativeTrade = nativeTradeYield;
+	m_eYieldForNativeTrade = nativeTradeYield;
 }
 
 void CvUnit::setAmountForNativeTrade(int nativeTradeAmount)
 {
-	m_AmountForNativeTrade = nativeTradeAmount;
+	m_iAmountForNativeTrade = nativeTradeAmount;
 }
 
 YieldTypes CvUnit::getYieldForNativeTrade() const
 {
-	return m_YieldForNativeTrade;
+	return m_eYieldForNativeTrade;
 }
 
 int CvUnit::getAmountForNativeTrade() const
 {
-	return m_AmountForNativeTrade;
+	return m_iAmountForNativeTrade;
 }
 // R&R, ray, Natives Trading - END
 
@@ -14857,6 +14944,131 @@ int CvUnit::getCargoValue(Port port) const
 	return sellValue;
 }
 
+// WTP, merge Treasures, of Raubwuerger - START
+bool CvUnit::canMergeTreasures() const
+{
+	// WTP, ray, small improvements
+	// merge only available for treasures
+	if (getUnitInfo().isTreasure() == false)
+	{
+		return false;
+	}
+
+	// only in Cities or Native Villages
+	if (plot()->isCity() == false)
+	{
+		return false;
+	}
+
+	// we can only merge if we are still smaller than max gold amount
+	int maxTreasureGold = GC.getMAX_TREASURE_AMOUNT();
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+	maxTreasureGold = maxTreasureGold * iGameSpeedModifier;
+
+	if(getYieldStored() >= maxTreasureGold)
+	{
+		return false;
+	}
+
+	// we need to check if we have at least 2 valid treasures
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	CvUnit* pLoopUnit;
+	int validTreasuresCounter = 0;
+
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// we only count our own treasuers and only the ones that are smaller than max gold amount
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		{
+			validTreasuresCounter++;
+		}
+	}
+
+	return validTreasuresCounter >= 2;
+}
+
+void CvUnit::mergeTreasures()
+{
+	// probably not needed because merge is only called after caMerge - but for safety, let us keep it
+	if (canMergeTreasures() == false)
+	{
+		return;
+	}
+
+	// this stores the total gold we find in valid treasures to merge
+	int overallAmount = 0;
+
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
+	CvUnit* pLoopUnit;
+	int maxTreasureGold = GC.getMAX_TREASURE_AMOUNT();
+	int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
+	maxTreasureGold = maxTreasureGold * iGameSpeedModifier;
+
+	// first we count the gold of these treasures
+	while (pUnitNode != NULL)
+	{
+		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = plot()->nextUnitNode(pUnitNode);
+
+		// WTP, ray, small improvements
+		// we only count gold of our own treasuers and those that are not yet at max
+		// after that we can directly kill them, so no extra loop is needed
+		if (pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		{
+			overallAmount += pLoopUnit->getYieldStored();
+			pLoopUnit->kill(true);
+		}
+	}
+	
+	createTreasures(overallAmount, maxTreasureGold);
+
+	return;
+}
+
+void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
+{
+
+	FAssert(overallAmount > 0);
+	FAssert(maxTreasureGold > 0);
+	int treasureCount_MaxAmount = overallAmount / maxTreasureGold;
+	
+	int restAmount = overallAmount - (treasureCount_MaxAmount * maxTreasureGold);
+
+	UnitClassTypes eUnitClass = (UnitClassTypes)GC.getDefineINT("TREASURE_UNITCLASS");
+	if (eUnitClass == NO_UNITCLASS)
+	{
+		FAssertMsg(eUnitClass != NO_UNITCLASS, "Failed to find treasure unitclass while merging");
+		return; //Something went wrong
+	}
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
+
+	if (eUnit == NO_UNIT)
+	{
+		FAssertMsg(eUnit != NO_UNIT, "Failed to find treasure unit while merging");
+		return;
+	}
+
+	FAssert(GC.getUnitInfo(eUnit).isTreasure());
+
+	for (int treasures = 0; treasures < treasureCount_MaxAmount; treasures++)
+	{
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, maxTreasureGold);
+		// set Movement Points to 0, to prevent cheating
+		pTreasure->setMoves(maxMoves());
+	}
+	if (restAmount > 0)
+	{
+		CvUnit* pTreasure = GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), plot()->getX_INLINE(), plot()->getY_INLINE(), NO_UNITAI, NO_DIRECTION, restAmount);
+		// set Movement Points to 0, to prevent cheating
+		pTreasure->setMoves(maxMoves());
+	}
+}
+// WTP, merge Treasures, of Raubwuerger - END
+
+
 // Erik: We should come up with a XML tag (e.g. bJoin vs. bFound) so that we don't need to hard-code this
 bool CvUnit::isPrisonerOrSlave() const
 {
@@ -14898,4 +15110,20 @@ bool CvUnit::isProfessionalMilitary() const
 	}
 
 	return false;
+}
+
+void CvUnit::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvUnit::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

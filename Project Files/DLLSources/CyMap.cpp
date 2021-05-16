@@ -332,12 +332,20 @@ int CyMap::getCityCatchmentRadius() const
 {
 	if (m_pMap)
 	{
-		m_pMap->getCityCatchmentRadius();
+		return m_pMap->getCityCatchmentRadius();
 	}
 	return 0;
 }
 
-void CyMap::setCityCatchmentRadius(int iSetting)
+void CyMap::setCityCatchmentRadiusMapMaker(int iSetting)
+{
+	if (m_pMap)
+	{
+		m_pMap->setCityCatchmentRadius(iSetting + 1);
+	}
+}
+
+void CyMap::setCityCatchmentRadiusNoMapMaker(int iSetting)
 {
 	if (m_pMap)
 	{

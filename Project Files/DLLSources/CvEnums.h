@@ -13,21 +13,21 @@
 // 1 can turn into 0.9999, which is 0 when read as an int
 const double FLOAT_OFFSET = 0.00001f;
 
-enum DllExport GameStateTypes
+enum GameStateTypes
 {
 	GAMESTATE_ON,
 	GAMESTATE_OVER,
 	GAMESTATE_EXTENDED,
 };
 
-enum DllExport PopupStates
+enum PopupStates
 {
 	POPUPSTATE_IMMEDIATE,
 	POPUPSTATE_QUEUED,
 	POPUPSTATE_MINIMIZED,
 };
 
-enum DllExport PopupEventTypes
+enum PopupEventTypes
 {
 	POPUPEVENT_NONE,
 	POPUPEVENT_PRODUCTION,
@@ -35,7 +35,7 @@ enum DllExport PopupEventTypes
 	POPUPEVENT_CIVIC,
 };
 
-enum DllExport CameraLookAtTypes
+enum CameraLookAtTypes
 {
 	CAMERALOOKAT_NORMAL,
 	CAMERALOOKAT_CITY_ZOOM_IN,
@@ -46,14 +46,14 @@ enum DllExport CameraLookAtTypes
 	CAMERALOOKAT_HOTSEAT,
 };
 
-enum DllExport CameraMovementSpeeds
+enum CameraMovementSpeeds
 {
 	CAMERAMOVEMENTSPEED_NORMAL,
 	CAMERAMOVEMENTSPEED_SLOW,
 	CAMERAMOVEMENTSPEED_FAST,
 };
 
-enum DllExport ZoomLevelTypes
+enum ZoomLevelTypes
 {
 	ZOOM_UNKNOWN							= 0x00000000,
 	ZOOM_DETAIL								= 0x00000001,
@@ -62,7 +62,7 @@ enum DllExport ZoomLevelTypes
 	ZOOM_GLOBEVIEW						= 0x00000008
 };
 
-enum DllExport ResourceLayerOptions
+enum ResourceLayerOptions
 {
 	RESOURCE_LAYER_NATIVE_TRADE,
 	RESOURCE_LAYER_NATIVE_TRAIN,
@@ -73,7 +73,7 @@ enum DllExport ResourceLayerOptions
 #endif
 };
 
-enum DllExport UnitLayerOptionTypes
+enum UnitLayerOptionTypes
 {
 	SHOW_ALL_MILITARY,
 	SHOW_TEAM_MILITARY,
@@ -87,7 +87,7 @@ enum DllExport UnitLayerOptionTypes
 };
 
 
-enum DllExport PlotIndicatorVisibilityFlags
+enum PlotIndicatorVisibilityFlags
 {
 	VISIBLE_ALWAYS,
 	VISIBLE_ONSCREEN_ONLY,
@@ -97,7 +97,7 @@ enum DllExport PlotIndicatorVisibilityFlags
 };
 
 
-enum DllExport DirectionTypes
+enum DirectionTypes
 {
 	NO_DIRECTION = -1,
 
@@ -122,9 +122,11 @@ enum DllExport DirectionTypes
 	DIRECTION_SOUTHWEST_MASK = 1 << DIRECTION_SOUTHWEST,
 	DIRECTION_WEST_MASK = 1 << DIRECTION_WEST,
 	DIRECTION_NORTHWEST_MASK = 1 << DIRECTION_NORTHWEST,
+
+	FIRST_DIRECTION = 0,
 };
 
-enum DllExport CardinalDirectionTypes
+enum CardinalDirectionTypes
 {
 	NO_CARDINALDIRECTION = -1,
 
@@ -138,7 +140,7 @@ enum DllExport CardinalDirectionTypes
 #endif
 };
 
-enum DllExport RotationTypes
+enum RotationTypes
 {
 	ROTATE_NONE = 0,
 	ROTATE_90CW,
@@ -152,8 +154,25 @@ enum DllExport RotationTypes
 	ROTATE_270CW_MASK	= 1 << ROTATE_270CW,
 };
 
+enum CityPlotTypes
+{
+	NO_CITY_PLOT = -1,
+	FIRST_CITY_PLOT = 0,
+
+	NUM_CITY_PLOTS_1_PLOT = 9,
+	NUM_CITY_PLOTS_2_PLOTS = 25,
+
+#ifdef CHECK_GLOBAL_CONSTANTS
+	CITY_PLOTS_RADIUS,
+	NUM_CITY_PLOTS,
+	CITY_PLOTS_DIAMETER,
+#endif
+};
+
+#define NUM_CityPlot_TYPES NUM_CITY_PLOTS
+
 // camera wrap helper
-enum DllExport WrapDirection
+enum WrapDirection
 {
 	WRAP_SAVE,
 	WRAP_NONE = WRAP_SAVE,
@@ -173,18 +192,26 @@ enum DllExport WrapDirection
 	WRAP_DOWN_MASK = 1 << WRAP_DOWN,
 };
 
-enum DllExport ColorTypes
+enum ColorTypes
 {
 	NO_COLOR = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_COLOR_TYPES,
+#endif
+	COMPILE_TIME_NUM_COLOR_TYPES = MAX_SHORT,
 };
 
-enum DllExport PlayerColorTypes
+enum PlayerColorTypes
 {
 	NO_PLAYERCOLOR = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_PLAYERCOLOR_TYPES,
+#endif
+	COMPILE_TIME_NUM_PLAYERCOLOR_TYPES = MAX_SHORT,
 };
 
 //Warning: these values correspond to locations in the plot texture [JW]
-enum DllExport PlotStyles
+enum PlotStyles
 {
 	PLOT_STYLE_NONE = -1,
 
@@ -225,7 +252,7 @@ enum DllExport PlotStyles
 };
 
 //Warning: these values are used as an index into a fixed array
-enum DllExport PlotLandscapeLayers
+enum PlotLandscapeLayers
 {
 	PLOT_LANDSCAPE_LAYER_ALL = -1,
 	PLOT_LANDSCAPE_LAYER_BASE = 0,
@@ -234,7 +261,7 @@ enum DllExport PlotLandscapeLayers
 	PLOT_LANDSCAPE_LAYER_REVEALED_PLOTS = 1,
 };
 
-enum DllExport AreaBorderLayers
+enum AreaBorderLayers
 {
 	AREA_BORDER_LAYER_REVEALED_PLOTS,
 	AREA_BORDER_LAYER_WORLD_BUILDER,
@@ -246,12 +273,12 @@ enum DllExport AreaBorderLayers
 	NUM_AREA_BORDER_LAYERS
 };
 
-enum DllExport AttachableTypes
+enum AttachableTypes
 {
 	NO_ATTACHABLE = -1,
 };
 
-enum DllExport InterfaceModeTypes
+enum InterfaceModeTypes
 {
 	NO_INTERFACEMODE = -1,
 
@@ -272,7 +299,7 @@ enum DllExport InterfaceModeTypes
 #endif
 };
 
-enum DllExport InterfaceMessageTypes
+enum InterfaceMessageTypes
 {
 	NO_MESSAGE_TYPE = -1,
 
@@ -291,7 +318,7 @@ enum DllExport InterfaceMessageTypes
 #endif
 };
 
-enum DllExport FlyoutTypes
+enum FlyoutTypes
 {
 	NO_FLYOUT = -1,
 
@@ -307,7 +334,7 @@ enum DllExport FlyoutTypes
 	FLYOUR_SLEEP_ALL,
 };
 
-enum DllExport MinimapModeTypes
+enum MinimapModeTypes
 {
 	NO_MINIMAPMODE = -1,
 
@@ -321,7 +348,7 @@ enum DllExport MinimapModeTypes
 #endif
 };
 
-enum DllExport EngineDirtyBits
+enum EngineDirtyBits
 {
 	GlobeTexture_DIRTY_BIT,
 	GlobePartialTexture_DIRTY_BIT,
@@ -333,7 +360,7 @@ enum DllExport EngineDirtyBits
 #endif
 };
 
-enum DllExport InterfaceDirtyBits
+enum InterfaceDirtyBits
 {
 	SelectionCamera_DIRTY_BIT,
 	Fog_DIRTY_BIT,
@@ -376,7 +403,7 @@ enum DllExport InterfaceDirtyBits
 	NUM_INTERFACE_DIRTY_BITS
 #endif
 };
-enum DllExport WidgetTypes
+enum WidgetTypes
 {
 	WIDGET_PLOT_LIST,
 	WIDGET_PLOT_LIST_SHIFT,
@@ -482,6 +509,7 @@ enum DllExport WidgetTypes
 	WIDGET_DOMESTIC_MARKET,
 	// R&R, Robert Surcouf, Custom House Popup-Screen END
 	WIDGET_ASSIGN_CITIZEN_TO_PLOT,
+	WIDGET_CITY_PLOT_INFO, // city plot mouse over help - inaiwae
 	WIDGET_ASSIGN_TRADE_ROUTE,
 	WIDGET_EJECT_CITIZEN,
 	WIDGET_SHIP_CARGO,
@@ -505,6 +533,8 @@ enum DllExport WidgetTypes
 	WIDGET_CITY_CENTER_PLOT,
 	WIDGET_HELP_TEXT,
 	WIDGET_NETWORK_DESYNC,
+	WIDGET_JUMP_TO_SETTLEMENT,
+	WIDGET_MISSION_CHAR,
 
 #ifdef _USRDLL
 	NUM_WIDGET_TYPES
@@ -517,7 +547,7 @@ enum HelpTextTypes
 
 };
 
-enum DllExport ButtonPopupTypes
+enum ButtonPopupTypes
 {
 	BUTTONPOPUP_TEXT,
 	BUTTONPOPUP_MAIN_MENU,
@@ -575,6 +605,7 @@ enum DllExport ButtonPopupTypes
 	// Teacher List - end - Nightinggale	
 	BUTTONPOPUP_SAVE_TRADEGROUP,//R&R mod, vetiarvind, trade groups
 	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
+	BUTTONPOPUP_DESYNC_LOG_COMPLETE, // desync log
 	
 	
 
@@ -583,14 +614,14 @@ enum DllExport ButtonPopupTypes
 #endif
 };
 
-enum DllExport CustomMapOptionTypes
+enum CustomMapOptionTypes
 {
 	NO_CUSTOM_MAPOPTION = -1,
 };
 
 // This is our current relationship with each
 // one of our connected network peers
-enum DllExport InitStates
+enum InitStates
 {
 	INIT_INACTIVE,
 	INIT_CONNECTED,
@@ -606,7 +637,7 @@ enum DllExport InitStates
 	INIT_GAME_STARTED,
 };
 
-enum DllExport PlotTypes
+enum PlotTypes
 {
 	NO_PLOT = -1,
 
@@ -621,7 +652,7 @@ enum DllExport PlotTypes
 };
 
 /*
-enum DllExport GameOptionTypes
+enum GameOptionTypes
 {
 	NO_GAMEOPTION = -1,
 
@@ -645,13 +676,14 @@ enum DllExport GameOptionTypes
 	GAMEOPTION_NO_WILD_LAND_ANIMALS, // < JAnimals Mod Start >
 	GAMEOPTION_NO_WILD_SEA_ANIMALS, // < JAnimals Mod Start >
 	GAMEOPTION_REDUCED_CITY_DISTANCE, /// reduced city distance - Nightinggale
+	GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE, // WTP, ray, Game Option only 1 Colonist living in Village - START
 #ifdef _USRDLL
 	NUM_GAMEOPTION_TYPES
 #endif
 };
 */
 
-enum DllExport MultiplayerOptionTypes
+enum MultiplayerOptionTypes
 {
 	NO_MPOPTION = -1,
 
@@ -666,7 +698,7 @@ enum DllExport MultiplayerOptionTypes
 #endif
 };
 
-enum DllExport SpecialOptionTypes
+enum SpecialOptionTypes
 {
 	NO_SPECIALOPTION = -1,
 
@@ -677,7 +709,7 @@ enum DllExport SpecialOptionTypes
 #endif
 };
 
-enum DllExport GraphicOptionTypes
+enum GraphicOptionTypes
 {
 	NO_GRAPHICOPTION = -1,
 
@@ -697,7 +729,7 @@ enum DllExport GraphicOptionTypes
 #endif
 };
 
-enum DllExport ForceControlTypes
+enum ForceControlTypes
 {
 	NO_FORCECONTROL = -1,
 
@@ -714,7 +746,7 @@ enum DllExport ForceControlTypes
 #endif
 };
 
-enum DllExport TileArtTypes
+enum TileArtTypes
 {
 	TILE_ART_TYPE_NONE = -1,
 	TILE_ART_TYPE_TREES,
@@ -722,7 +754,7 @@ enum DllExport TileArtTypes
 	NUM_TILE_ART_TYPES
 };
 
-enum DllExport TerrainGroupTypes
+enum TerrainGroupTypes
 {
 	TERRAIN_GROUP_NONE = -1,
 	TERRAIN_GROUP_OCEAN,
@@ -731,7 +763,7 @@ enum DllExport TerrainGroupTypes
 	NUM_TERRAIN_GROUP_TYPES
 };
 
-enum DllExport FontSymbols
+enum FontSymbols
 {
 	// 'OTHER' symbols
 	HAPPY_CHAR = 0,
@@ -775,27 +807,31 @@ enum DllExport FontSymbols
 #endif
 };
 
-enum DllExport TurnTimerTypes
+enum TurnTimerTypes
 {
 	NO_TURNTIMER = -1,
 };
 
 // Used for managing Art Differences based on nationality
-enum DllExport ArtStyleTypes
+enum ArtStyleTypes
 {
 	NO_ARTSTYLE = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_ARTSTYLE_TYPES,
+#endif
+	COMPILE_TIME_NUM_ARTSTYLE_TYPES = MAX_SHORT,
 };
 
 //Androrc UnitArtStyles
 /*
-enum DllExport UnitArtStyleTypes
+enum UnitArtStyleTypes
 {
 	NO_UNIT_ARTSTYLE = -1,
 };
 */
 //Androrc End
 
-enum DllExport CitySizeTypes
+enum CitySizeTypes
 {
 	NO_CITYSIZE = -1,
 
@@ -808,24 +844,24 @@ enum DllExport CitySizeTypes
 #endif
 };
 
-enum DllExport FootstepAudioTypes
+enum FootstepAudioTypes
 {
 	NO_FOOTSTEPAUDIO = -1,
 };
 
-enum DllExport FootstepAudioTags
+enum FootstepAudioTags
 {
 	NO_FOOTSTEPAUDIO_TAG = -1,
 };
 
-enum DllExport ChatTargetTypes
+enum ChatTargetTypes
 {
 	NO_CHATTARGET = -1,
 	CHATTARGET_ALL = -2,
 	CHATTARGET_TEAM = -3,
 };
 
-enum DllExport VoiceTargetTypes
+enum VoiceTargetTypes
 {
 	NO_VOICETARGET = -1,
 
@@ -838,19 +874,25 @@ enum DllExport VoiceTargetTypes
 #endif
 };
 
-enum DllExport TeamTypes
+enum TeamTypes
 {
 	UNKNOWN_TEAM = -2,
 	NO_TEAM = -1,
+	FIRST_TEAM = 0,
+	NUM_TEAM_TYPES = MAX_TEAMS,
+	COMPILE_TIME_NUM_TEAM_TYPES = NUM_TEAM_TYPES,
 };
 
-enum DllExport PlayerTypes
+enum PlayerTypes
 {
 	UNKNOWN_PLAYER = -2,
 	NO_PLAYER = -1,
+	FIRST_PLAYER = 0,
+	NUM_PLAYER_TYPES = MAX_PLAYERS,
+	COMPILE_TIME_NUM_PLAYER_TYPES = NUM_PLAYER_TYPES,
 };
 
-enum DllExport OrderTypes
+enum OrderTypes
 {
 	NO_ORDER = -1,
 
@@ -863,7 +905,7 @@ enum DllExport OrderTypes
 #endif
 };
 
-enum DllExport TaskTypes
+enum TaskTypes
 {
 	TASK_RAZE,
 	TASK_GIFT,
@@ -907,7 +949,7 @@ enum DllExport TaskTypes
 #endif
 };
 
-enum DllExport PlayerActionTypes
+enum PlayerActionTypes
 {
 	PLAYER_ACTION_BUY_EUROPE_UNIT,
 	PLAYER_ACTION_SELL_YIELD_UNIT,
@@ -948,7 +990,7 @@ enum DllExport PlayerActionTypes
 #endif
 };
 
-enum DllExport AxisTypes
+enum AxisTypes
 {
 	AXIS_X,
 	AXIS_Y,
@@ -956,7 +998,7 @@ enum DllExport AxisTypes
 	NUM_AXIS_TYPES
 };
 
-enum DllExport InfoBarTypes
+enum InfoBarTypes
 {
 	INFOBAR_STORED,
 	INFOBAR_RATE,
@@ -968,7 +1010,7 @@ enum DllExport InfoBarTypes
 #endif
 };
 
-enum DllExport HealthBarTypes
+enum HealthBarTypes
 {
 	HEALTHBAR_ALIVE_ATTACK,
 	HEALTHBAR_ALIVE_DEFEND,
@@ -979,7 +1021,7 @@ enum DllExport HealthBarTypes
 #endif
 };
 
-enum DllExport CalendarTypes
+enum CalendarTypes
 {
 	NO_CALENDAR = -1,
 
@@ -992,17 +1034,17 @@ enum DllExport CalendarTypes
 	CALENDAR_WEEKS,
 };
 
-enum DllExport SeasonTypes
+enum SeasonTypes
 {
 	NO_SEASON = -1,
 };
 
-enum DllExport MonthTypes
+enum MonthTypes
 {
 	NO_MONTH = -1,
 };
 
-enum DllExport DenialTypes
+enum DenialTypes
 {
 	NO_DENIAL = -1,
 
@@ -1036,13 +1078,17 @@ enum DllExport DenialTypes
 #endif
 };
 
-enum DllExport SpecialUnitTypes
+enum SpecialUnitTypes
 {
 	NO_SPECIALUNIT = -1,
+#ifdef CHECK_GLOBAL_CONSTANTS
+	NUM_SPECIALUNIT_TYPES,
+#endif
+	COMPILE_TIME_NUM_SPECIALUNIT_TYPES = MAX_SHORT,
 };
 
 /*
-enum DllExport UnitAITypes
+enum UnitAITypes
 {
 	NO_UNITAI = -1,
 
@@ -1054,6 +1100,7 @@ enum DllExport UnitAITypes
 	UNITAI_SETTLER,
 	UNITAI_WORKER,
 	UNITAI_MISSIONARY,
+	UNITAI_TRADER, // WTP, ray, Native Trade Posts - START
 	UNITAI_SCOUT,
 	UNITAI_WAGON,
 	UNITAI_TREASURE,
@@ -1075,7 +1122,7 @@ enum DllExport UnitAITypes
 #endif
 };
 
-enum DllExport InvisibleTypes
+enum InvisibleTypes
 {
 	NO_INVISIBLE = -1,
 	INVISIBLE_RANGER, // R&R, ray, Rangers
@@ -1086,7 +1133,7 @@ enum DllExport InvisibleTypes
 };
 */
 
-enum DllExport ProbabilityTypes
+enum ProbabilityTypes
 {
 	NO_PROBABILITY = -1,
 
@@ -1099,7 +1146,7 @@ enum DllExport ProbabilityTypes
 #endif
 };
 
-enum DllExport ActivityTypes
+enum ActivityTypes
 {
 	NO_ACTIVITY = -1,
 
@@ -1116,7 +1163,7 @@ enum DllExport ActivityTypes
 };
 
 /*
-enum DllExport AutomateTypes
+enum AutomateTypes
 {
 	NO_AUTOMATE = -1,
 
@@ -1137,7 +1184,7 @@ enum DllExport AutomateTypes
 };
 
 // any additions need to be reflected in GlobalTypes.xml
-enum DllExport MissionTypes
+enum MissionTypes
 {
 	NO_MISSION = -1,
 
@@ -1174,7 +1221,7 @@ enum DllExport MissionTypes
 };
 */
 
-enum DllExport MissionAITypes
+enum MissionAITypes
 {
 	NO_MISSIONAI = -1,
 
@@ -1216,7 +1263,7 @@ enum DllExport MissionAITypes
 
 /*
 // any additions need to be reflected in GlobalTypes.xml
-enum DllExport CommandTypes
+enum CommandTypes
 {
 	NO_COMMAND = -1,
 
@@ -1258,6 +1305,8 @@ enum DllExport CommandTypes
 	COMMAND_IGNORE_DANGER,	// TAC - Trade Routes Advisor - koma13
 	COMMAND_SAIL_TO_AFRICA, /*** TRIANGLETRADE 10/15/08 by DPII ***
 	COMMAND_SAIL_TO_PORT_ROYAL, // R&R, ray, Port Royal
+	COMMAND_MERGE_TREASURES, // WTP, merge treasures, of Raubwuerger
+	COMMAND_ESTABLISH_TRADE_POST, // WTP, ray, Native Trade Posts - START
 
 #ifdef _USRDLL
 	NUM_COMMAND_TYPES
@@ -1294,7 +1343,7 @@ BOOST_STATIC_ASSERT(COMMAND_CLEAR_SPECIALTY == 25);
 BOOST_STATIC_ASSERT(COMMAND_HOTKEY == 26);
 
 /*
-enum DllExport ControlTypes
+enum ControlTypes
 {
 	NO_CONTROL = -1,
 
@@ -1372,7 +1421,7 @@ extern HurryTypes HURRY_GOLD;
 extern HurryTypes HURRY_IMMIGRANT;
 #endif
 
-enum DllExport WarPlanTypes
+enum WarPlanTypes
 {
 	NO_WARPLAN = -1,
 
@@ -1386,11 +1435,12 @@ enum DllExport WarPlanTypes
 	WARPLAN_EXTORTION,
 
 #ifdef _USRDLL
-	NUM_WARPLAN_TYPES
+	NUM_WARPLAN_TYPES,
 #endif
+	COMPILE_TIME_NUM_WARPLAN_TYPES = NUM_WARPLAN_TYPES,
 };
 
-enum DllExport AreaAITypes
+enum AreaAITypes
 {
 	NO_AREAAI = -1,
 
@@ -1403,11 +1453,12 @@ enum DllExport AreaAITypes
 	AREAAI_NEUTRAL,
 
 #ifdef _USRDLL
-	NUM_AREAAI_TYPES
+	NUM_AREAAI_TYPES,
 #endif
+	COMPILE_TIME_NUM_AREAAI_TYPES = NUM_AREAAI_TYPES,
 };
 
-enum DllExport EmotionTypes
+enum EmotionTypes
 {
 	NO_EMOTION = -1,
 
@@ -1418,11 +1469,12 @@ enum DllExport EmotionTypes
 	EMOTION_SUBMISSION,
 
 #ifdef _USRDLL
-	NUM_EMOTION_TYPES
+	NUM_EMOTION_TYPES,
 #endif
+	COMPILE_TIME_NUM_EMOTION_TYPES = NUM_EMOTION_TYPES,
 };
 
-enum DllExport StrategyTypes
+enum StrategyTypes
 {
 	NO_STRATEGY = -1,
 
@@ -1442,12 +1494,13 @@ enum DllExport StrategyTypes
 	STRATEGY_REVOLUTION_DECLARING,
 	STRATEGY_REVOLUTION,
 #ifdef _USRDLL
-	NUM_STRATEGY_TYPES
+	NUM_STRATEGY_TYPES,
 #endif
+	COMPILE_TIME_NUM_STRATEGY_TYPES = NUM_STRATEGY_TYPES,
 
 };
 
-enum DllExport EndTurnButtonStates
+enum EndTurnButtonStates
 {
 	END_TURN_GO,
 	END_TURN_OVER_HIGHLIGHT,
@@ -1458,7 +1511,7 @@ enum DllExport EndTurnButtonStates
 #endif
 };
 
-enum DllExport FogOfWarModeTypes
+enum FogOfWarModeTypes
 {
 	FOGOFWARMODE_OFF,
 	FOGOFWARMODE_UNEXPLORED,
@@ -1469,7 +1522,7 @@ enum DllExport FogOfWarModeTypes
 #endif
 };
 
-enum DllExport FogTypes
+enum FogTypes
 {
 	FOG_TYPE_NONE,
 	FOG_TYPE_PARALLEL,
@@ -1477,7 +1530,7 @@ enum DllExport FogTypes
 	NUM_FOG_TYPES
 };
 
-enum DllExport CameraOverlayTypes
+enum CameraOverlayTypes
 {
 	CAMERA_OVERLAY_DECAL,
 	CAMERA_OVERLAY_ADDITIVE,
@@ -1496,7 +1549,7 @@ enum FOWUpdateTypes
 // AnimationTypes is depreciated, and will be eventually removed.
 // BONUSANIMATION_* and IMPROVEMENTANIMATION_* are still used, and will be left.
 
-enum DllExport AnimationTypes
+enum AnimationTypes
 {
 	NONE_ANIMATION = -1,	// NO_ANIMATION is used by FirePlace
 
@@ -1513,12 +1566,12 @@ enum DllExport AnimationTypes
 	IMPROVEMENTANIMATION_ON_EXTRA_4,
 };
 
-enum DllExport EntityEventTypes
+enum EntityEventTypes
 {
 	ENTITY_EVENT_NONE = -1,			//!< Invalid event
 };
 
-enum DllExport AnimationPathTypes
+enum AnimationPathTypes
 {
 	ANIMATIONPATH_NONE = -1,
 
@@ -1589,12 +1642,12 @@ enum AnimationOperatorTypes
 	ANIMOP_LAST
 };
 
-enum DllExport CursorTypes
+enum CursorTypes
 {
 	NO_CURSOR = -1,
 };
 
-enum DllExport FunctionTypes
+enum FunctionTypes
 {
 	FUNC_NOINTERP = 0,	// NiAnimationKey::NOINTERP,
 	FUNC_LINKEY,	//	= NiAnimationKey::LINKEY,
@@ -1608,7 +1661,7 @@ enum DllExport FunctionTypes
 #endif
 };
 
-enum DllExport TradeableItems
+enum TradeableItems
 {
 	TRADE_ITEM_NONE = -1,
 
@@ -1637,7 +1690,7 @@ enum DllExport TradeableItems
 #endif
 };
 
-enum DllExport DiploEventTypes
+enum DiploEventTypes
 {
 	NO_DIPLOEVENT = -1,
 
@@ -1694,12 +1747,19 @@ enum DllExport DiploEventTypes
 #endif
 };
 
-enum DllExport DiploCommentTypes
+enum DiploCommentTypes
 {
-	NO_DIPLOCOMMENT = -1
+	NO_DIPLOCOMMENT = -1,
+	//DiploCommentTypes is used as DiplomacyTypes, but cant be changed because of the exe.
+	//For the Savegame to write the right size the variables force the enum to have the right width
+	#ifdef _USRDLL
+	NUM_DIPLOCOMMENT_TYPES = COMPILE_TIME_NUM_DIPLOMACY_TYPES,
+	#endif
+
+	COMPILE_TIME_NUM_DIPLOCOMMENT_TYPES = NUM_DIPLOCOMMENT_TYPES
 };
 
-enum DllExport NetContactTypes
+enum NetContactTypes
 {
 	NO_NETCONTACT = -1,
 	NETCONTACT_INITIAL,
@@ -1712,7 +1772,7 @@ enum DllExport NetContactTypes
 #endif
 };
 
-enum DllExport ContactTypes
+enum ContactTypes
 {
 	CONTACT_JOIN_WAR,
 	CONTACT_STOP_TRADING,
@@ -1730,11 +1790,14 @@ enum DllExport ContactTypes
 	// R&R, ray, Natives raiding party - END
 
 #ifdef _USRDLL
-	NUM_CONTACT_TYPES
+	NUM_CONTACT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_CONTACT_TYPES = NUM_CONTACT_TYPES,
+
 };
 
-enum DllExport MemoryTypes
+enum MemoryTypes
 {
 	MEMORY_DECLARED_WAR,
 	MEMORY_DECLARED_WAR_ON_FRIEND,
@@ -1762,11 +1825,13 @@ enum DllExport MemoryTypes
 	MEMORY_MISSIONARY_FAIL,
 
 #ifdef _USRDLL
-	NUM_MEMORY_TYPES
+	NUM_MEMORY_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_MEMORY_TYPES = NUM_MEMORY_TYPES,
 };
 
-enum DllExport AttitudeTypes
+enum AttitudeTypes
 {
 	NO_ATTITUDE = -1,
 
@@ -1782,7 +1847,7 @@ enum DllExport AttitudeTypes
 };
 
 //! Enumeration for playing events with CvLeaderheadWidget
-enum DllExport LeaderheadAction
+enum LeaderheadAction
 {
 	NO_LEADERANIM = -1,		//!< If used with CvLeaderheadWidget::PerformAction, plays the idle animation
 
@@ -1804,7 +1869,7 @@ enum DllExport LeaderheadAction
 #endif
 };
 
-enum DllExport DiplomacyPowerTypes
+enum DiplomacyPowerTypes
 {
 	NO_DIPLOMACYPOWER		= -1,
 	DIPLOMACYPOWER_WEAKER,
@@ -1816,7 +1881,7 @@ enum DllExport DiplomacyPowerTypes
 #endif
 };
 
-enum DllExport FeatTypes
+enum FeatTypes
 {
 	FEAT_TREASURE,
 	FEAT_TREASURE_IN_PORT,
@@ -1830,11 +1895,14 @@ enum DllExport FeatTypes
 	FEAT_PAD,
 
 #ifdef _USRDLL
-	NUM_FEAT_TYPES
+	NUM_FEAT_TYPES,
 #endif
+
+	COMPILE_TIME_NUM_FEAT_TYPES = NUM_FEAT_TYPES
+
 };
 
-enum DllExport SaveGameTypes
+enum SaveGameTypes
 {
 	SAVEGAME_NONE = -1,
 
@@ -1853,7 +1921,7 @@ enum DllExport SaveGameTypes
 #endif
 };
 
-enum DllExport InitializationStates
+enum InitializationStates
 {
 	INIT_OK,
 	INIT_FAILED,
@@ -1863,7 +1931,7 @@ enum DllExport InitializationStates
 #endif
 };
 
-enum DllExport GameType
+enum GameType
 {
 	GAME_NONE = -1,
 
@@ -1886,7 +1954,7 @@ enum DllExport GameType
 #endif
 };
 
-enum DllExport GameMode
+enum GameMode
 {
 	NO_GAMEMODE = -1,
 
@@ -1898,7 +1966,7 @@ enum DllExport GameMode
 #endif
 };
 
-enum DllExport GamePwdTypes
+enum GamePwdTypes
 {
 	NO_PWDTYPE = -1,
 
@@ -1911,7 +1979,7 @@ enum DllExport GamePwdTypes
 #endif
 };
 
-enum DllExport SlotClaim
+enum SlotClaim
 {
 	SLOTCLAIM_UNASSIGNED,
 	SLOTCLAIM_RESERVED,
@@ -1922,7 +1990,7 @@ enum DllExport SlotClaim
 #endif
 };
 
-enum DllExport SlotStatus
+enum SlotStatus
 {
 	SS_OPEN,
 	SS_COMPUTER,
@@ -1932,7 +2000,7 @@ enum DllExport SlotStatus
 	SS_MAX_SLOT_STATUS,
 };
 
-enum DllExport InterfaceVisibility
+enum InterfaceVisibility
 {
 	INTERFACE_SHOW,
 	INTERFACE_HIDE,
@@ -1941,7 +2009,7 @@ enum DllExport InterfaceVisibility
 	INTERFACE_ADVANCED_START,
 };
 
-enum DllExport GenericButtonSizes
+enum GenericButtonSizes
 {
 	BUTTON_SIZE_46,
 	BUTTON_SIZE_32,
@@ -1951,7 +2019,7 @@ enum DllExport GenericButtonSizes
 	BUTTON_SIZE_CUSTOM,
 };
 
-enum DllExport MenuScreenType
+enum MenuScreenType
 {
 	MENU_SCREEN_STANDARD,
 	MENU_SCREEN_BASELOBBY,
@@ -1999,7 +2067,7 @@ enum DllExport MenuScreenType
 	MENU_SCREEN_SP_DIFFICULTY,
 };
 
-enum DllExport WorldBuilderPopupTypes
+enum WorldBuilderPopupTypes
 {
 	WBPOPUP_NONE = -1,
 
@@ -2018,7 +2086,7 @@ enum DllExport WorldBuilderPopupTypes
 #endif
 };
 
-enum DllExport EventType
+enum EventType
 {
 	// mouseEvent
 	EVT_LBUTTONDOWN = 1,
@@ -2033,7 +2101,7 @@ enum DllExport EventType
 };
 
 // Different types of load
-enum DllExport LoadType
+enum LoadType
 {
 	LOAD_NORMAL,
 	LOAD_INIT,
@@ -2044,7 +2112,7 @@ enum DllExport LoadType
 };
 
 //	Available Fonts
-enum DllExport FontTypes
+enum FontTypes
 {
 	TITLE_FONT,
 	GAME_FONT,
@@ -2053,7 +2121,7 @@ enum DllExport FontTypes
 	MENU_HIGHLIGHT_FONT,
 };
 
-enum DllExport PanelStyles
+enum PanelStyles
 {
 	// Built in styles
 	PANEL_STYLE_STANDARD,
@@ -2115,7 +2183,7 @@ enum DllExport PanelStyles
 	PANEL_STYLE_MAIN_SELECT,
 };
 
-enum DllExport ButtonStyles
+enum ButtonStyles
 {
 	BUTTON_STYLE_STANDARD,
 	BUTTON_STYLE_ETCHED,
@@ -2150,14 +2218,14 @@ enum DllExport ButtonStyles
 	BUTTON_STYLE_ARROW_DOWN
 };
 
-enum DllExport ImageShapes
+enum ImageShapes
 {
 	IMAGE_SHAPE_RECTANGLE,
 	IMAGE_SHAPE_ELLIPSE,
 	IMAGE_SHAPE_PARABOLA_TOP,
 };
 
-enum DllExport TableStyles
+enum TableStyles
 {
 	TABLE_STYLE_STANDARD,
 	TABLE_STYLE_EMPTY,
@@ -2168,7 +2236,7 @@ enum DllExport TableStyles
 	TABLE_STYLE_STAGINGROOM
 };
 
-enum DllExport EventContextTypes
+enum EventContextTypes
 {
 	NO_EVENTCONTEXT = -1,
 
@@ -2176,7 +2244,7 @@ enum DllExport EventContextTypes
 	EVENTCONTEXT_ALL,
 };
 
-enum DllExport CivLoginStates
+enum CivLoginStates
 {
 	NO_CIV_LOGIN = -1,
 
@@ -2186,7 +2254,7 @@ enum DllExport CivLoginStates
 	LOGIN_CIV_HAS_ID,
 };
 
-enum DllExport VersionTypes
+enum VersionTypes
 {
 	NO_VERSIONTYPE = -1,
 
@@ -2197,13 +2265,13 @@ enum DllExport VersionTypes
 	VERSIONTYPE_XML,
 };
 
-enum DllExport VoteResultTypes
+enum VoteResultTypes
 {
 	VOTERESULT_MAJORITY,
 	VOTERESULT_UNANIMOUS,
 };
 
-enum DllExport VoteStatusTypes
+enum VoteStatusTypes
 {
 	NO_VOTESTATUS = -1,
 
@@ -2213,7 +2281,7 @@ enum DllExport VoteStatusTypes
 };
 
 // Tab Group in Options Menu
-enum DllExport TabGroupTypes
+enum TabGroupTypes
 {
 	NO_TABGROUP = -1,
 
@@ -2228,7 +2296,7 @@ enum DllExport TabGroupTypes
 #endif
 };
 
-enum DllExport ReplayMessageTypes
+enum ReplayMessageTypes
 {
 	NO_REPLAY_MESSAGE = -1,
 
@@ -2245,7 +2313,7 @@ enum DllExport ReplayMessageTypes
 Enum:		EAudioTag
 Purpose:	To enumerate all of the tag strings loaded from the csv or xml files
 ------------------------------------------------------------------------------------*/
-enum DllExport AudioTag
+enum AudioTag
 {
 	AUDIOTAG_NONE = -1,
 	AUDIOTAG_SOUNDID,
@@ -2260,7 +2328,7 @@ enum DllExport AudioTag
 	AUDIOTAG_COUNT,
 };
 
-enum DllExport CivilopediaPageTypes
+enum CivilopediaPageTypes
 {
 	NO_CIVILOPEDIA_PAGE = -1,
 
@@ -2285,7 +2353,7 @@ enum DllExport CivilopediaPageTypes
 #endif
 };
 
-enum DllExport ActionSubTypes
+enum ActionSubTypes
 {
 	NO_ACTIONSUBTYPE = -1,
 
@@ -2303,7 +2371,7 @@ enum DllExport ActionSubTypes
 #endif
 };
 
-enum DllExport GameMessageTypes
+enum GameMessageTypes
 {
 	GAMEMESSAGE_NETWORK_READY,
 	GAMEMESSAGE_SAVE_GAME_FLAG,
@@ -2389,7 +2457,7 @@ enum DllExport GameMessageTypes
 	GAMEMESSAGE_MOD_NET_MESSAGE
 };
 
-enum DllExport PopupControlLayout
+enum PopupControlLayout
 {
 	POPUP_LAYOUT_LEFT,
 	POPUP_LAYOUT_CENTER,
@@ -2400,7 +2468,7 @@ enum DllExport PopupControlLayout
 	POPUP_LAYOUT_NUMLAYOUTS
 };
 
-enum DllExport JustificationTypes
+enum JustificationTypes
 {
 	DLL_FONT_LEFT_JUSTIFY = 1<<0,
 	DLL_FONT_RIGHT_JUSTIFY = 1<<1,
@@ -2409,7 +2477,7 @@ enum DllExport JustificationTypes
 	DLL_FONT_ADDITIVE = 1<<4,
 };
 
-enum DllExport ToolTipAlignTypes
+enum ToolTipAlignTypes
 {
 	TOOLTIP_TOP_LEFT,
 	TOOLTIP_TOP_INLEFT,
@@ -2432,7 +2500,7 @@ enum DllExport ToolTipAlignTypes
 	TOOLTIP_INTOP_LEFT,
 };
 
-enum DllExport ActivationTypes
+enum ActivationTypes
 {
 	ACTIVATE_NORMAL,
 	ACTIVATE_CHILDFOCUS,
@@ -2440,7 +2508,7 @@ enum DllExport ActivationTypes
 	ACTIVATE_MIMICPARENTFOCUS,
 };
 
-enum DllExport HitTestTypes
+enum HitTestTypes
 {
 	HITTEST_DEFAULT,
 	HITTEST_ON,
@@ -2449,7 +2517,7 @@ enum DllExport HitTestTypes
 	HITTEST_NOHIT,
 };
 
-enum DllExport GraphicLevelTypes
+enum GraphicLevelTypes
 {
 	GRAPHICLEVEL_HIGH,
 	GRAPHICLEVEL_MEDIUM,
@@ -2462,7 +2530,7 @@ enum DllExport GraphicLevelTypes
 #endif
 };
 
-enum DllExport AdvancedStartActionTypes
+enum AdvancedStartActionTypes
 {
 	NO_ADVANCEDSTARTACTION = -1,
 
@@ -2482,7 +2550,7 @@ enum DllExport AdvancedStartActionTypes
 #endif
 };
 
-enum DllExport UnitTravelStates
+enum UnitTravelStates
 {
 	NO_UNIT_TRAVEL_STATE = -1,
 
@@ -2506,7 +2574,7 @@ enum DllExport UnitTravelStates
 #endif
 };
 
-enum DllExport UnitAIStates
+enum UnitAIStates
 {
 	NO_UNITAI_STATE = -1,
 
@@ -2533,7 +2601,7 @@ enum DllExport UnitAIStates
 };
 
 // TAC - Trade Messages - koma13 - START
-enum DllExport TradeMessageTypes
+enum TradeMessageTypes
 {
 	NO_TRADE_MESSAGE = -1,
 	TRADE_MESSAGE_EUROPE_YIELD_SOLD,
@@ -2558,6 +2626,7 @@ enum JITarrayTypes
 {
 	NO_JIT_ARRAY_TYPE = -1,
 
+	JIT_ARRAY_ACHIEVE,
 	JIT_ARRAY_ART_STYLE,
 	JIT_ARRAY_BONUS,
 	JIT_ARRAY_BUILD,
@@ -2568,9 +2637,11 @@ enum JITarrayTypes
 	JIT_ARRAY_CIVIC,
 	JIT_ARRAY_CIVIC_OPTION,
 	JIT_ARRAY_CIVILIZATION,
+	JIT_ARRAY_CLIMATE,
 	JIT_ARRAY_COLOR,
 	JIT_ARRAY_CULTURE,
 	JIT_ARRAY_DIPLO,
+	JIT_ARRAY_DOMAIN,
 	JIT_ARRAY_EMPHASIZE,
 	JIT_ARRAY_ERA,
 	JIT_ARRAY_EUROPE,
@@ -2580,10 +2651,12 @@ enum JITarrayTypes
 	JIT_ARRAY_FATHER_POINT,
 	JIT_ARRAY_FEATURE,
 	JIT_ARRAY_GAME_OPTION,
+	JIT_ARRAY_GAME_SPEED,
 	JIT_ARRAY_GOODY,
 	JIT_ARRAY_HANDICAP,
 	JIT_ARRAY_HURRY,
 	JIT_ARRAY_IMPROVEMENT,
+	JIT_ARRAY_INVISIBLE,
 	JIT_ARRAY_LEADER_HEAD,
 	JIT_ARRAY_MEMORY,
 	JIT_ARRAY_PLAYER_COLOR,
@@ -2591,6 +2664,7 @@ enum JITarrayTypes
 	JIT_ARRAY_PROFESSION,
 	JIT_ARRAY_PROMOTION,
 	JIT_ARRAY_ROUTE,
+	JIT_ARRAY_SEA_LEVEL,
 	JIT_ARRAY_TERRAIN,
 	JIT_ARRAY_TRAIT,
 	JIT_ARRAY_UNIT,
@@ -2599,6 +2673,7 @@ enum JITarrayTypes
 	JIT_ARRAY_UNIT_COMBAT,
 	JIT_ARRAY_UNIT_SPECIAL,
 	JIT_ARRAY_VICTORY,
+	JIT_ARRAY_WORLD_SIZE,
 	JIT_ARRAY_YIELD,
 
 
@@ -2621,7 +2696,6 @@ enum JITarrayTypes
 	JIT_ARRAY_EMOTION,
 	JIT_ARRAY_FEAT,
 	JIT_ARRAY_MISSION_AI,
-	JIT_ARRAY_PLAYER,
 	JIT_ARRAY_STRATEGY,
 	
 	// types used by InfoArray
@@ -2633,6 +2707,9 @@ enum JITarrayTypes
 	JIT_ARRAY_UNSIGNED_INT,
 	JIT_ARRAY_FLOAT,
 
+	JIT_ARRAY_PLAYER,
+	JIT_ARRAY_TEAM,
+
 	// last a value, which solve purpose is to BOOST_STATIC_ASSERT if index overflows
 	MAX_JIT_ARRAY_VALUE,
 
@@ -2643,21 +2720,261 @@ BOOST_STATIC_ASSERT(MAX_JIT_ARRAY_VALUE <= 0xFF);
 
 // overloaded ++ for enum types
 
-// prefix
-template <class T>
-static inline T& operator++(T& c)
-{
-	c = (T)(c + 1);
-	return c;
+// copied concept from AdvCiv
+// cause linker error if enum types are mixed
+// unlike AdvCiv, this forbids all types, not just specific ones
+// also mixing int and enums is a no go
+#define FORBID_COMPARISON_OPERATORS(Type1, Type2) \
+	bool operator==(Type1, Type2); \
+	bool operator!=(Type1, Type2); \
+	bool operator>(Type1, Type2); \
+	bool operator<(Type1, Type2); \
+	bool operator>=(Type1, Type2); \
+	bool operator<=(Type1, Type2);
+/*  ^No definition - so that these comparisons result in a linker error.
+	The linker error will say in which function the offending call occurs.
+	A compiler error would also provide a line number, but the compiler
+	can't tell if a global function has any call locations. */
+
+
+#define UNFORBID_COMPARISON_OPERATORS(Type1, Type2) \
+	static inline bool operator==(Type1 a, Type2 b) {return (int)a == (int)b;} \
+	static inline bool operator!=(Type1 a, Type2 b) {return (int)a != (int)b;} \
+	static inline bool operator> (Type1 a, Type2 b) {return (int)a >  (int)b;} \
+	static inline bool operator< (Type1 a, Type2 b) {return (int)a <  (int)b;} \
+	static inline bool operator>=(Type1 a, Type2 b) {return (int)a >= (int)b;} \
+	static inline bool operator<=(Type1 a, Type2 b) {return (int)a <= (int)b;} \
+
+
+
+#define SET_ENUM_OPERATORS(EnumName)                  \
+/* prefix */                                          \
+static inline EnumName& operator++(EnumName& c)       \
+{                                                     \
+	c = (EnumName)(c + 1);                            \
+	return c;                                         \
+}                                                     \
+/* postfix */                                         \
+static inline EnumName operator++(EnumName& c, int)   \
+{                                                     \
+	EnumName cache = c;                               \
+	c = (EnumName)(c + 1);                            \
+	return cache;                                     \
+}                                                     \
+/* prefix */                                          \
+static inline EnumName& operator--(EnumName& c)       \
+{                                                     \
+	c = (EnumName)(c - 1);                            \
+	return c;                                         \
+}                                                     \
+/* postfix */                                         \
+static inline EnumName operator--(EnumName& c, int)   \
+{                                                     \
+	EnumName cache = c;                               \
+	c = (EnumName)(c - 1);                            \
+	return cache;                                     \
+}                                                     \
+static inline EnumName operator+(const EnumName& A, const EnumName& B)     \
+{                                                                          \
+return (EnumName)((int)A + (int)B);                                        \
 }
 
-// postfix
-template <class T>
-static inline T operator++(T& c, int)
+#define SET_ENUM_OPERATORS_AND_FORBID(EnumName)       \
+	FORBID_COMPARISON_OPERATORS(EnumName, int)        \
+	FORBID_COMPARISON_OPERATORS(int, EnumName)        \
+	SET_ENUM_OPERATORS(EnumName)
+
+
+
+SET_ENUM_OPERATORS(AchieveTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ActionSubTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ActivationTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ActivityTypes);
+SET_ENUM_OPERATORS_AND_FORBID(AdvancedStartActionTypes);
+SET_ENUM_OPERATORS(AlarmTypes);
+SET_ENUM_OPERATORS(AnimationCategoryTypes);
+SET_ENUM_OPERATORS(AnimationPathTypes);
+SET_ENUM_OPERATORS(AnimationOperatorTypes);
+SET_ENUM_OPERATORS(AnimationTypes);
+SET_ENUM_OPERATORS_AND_FORBID(AreaBorderLayers);
+SET_ENUM_OPERATORS(AreaAITypes);
+SET_ENUM_OPERATORS(ArtStyleTypes);
+SET_ENUM_OPERATORS_AND_FORBID(AttachableTypes);
+SET_ENUM_OPERATORS(AttitudeTypes);
+SET_ENUM_OPERATORS_AND_FORBID(AudioTag);
+SET_ENUM_OPERATORS(AutomateTypes);
+SET_ENUM_OPERATORS_AND_FORBID(AxisTypes);
+SET_ENUM_OPERATORS(BonusTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ButtonPopupTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ButtonStyles);
+SET_ENUM_OPERATORS(BuildingClassTypes);
+SET_ENUM_OPERATORS(BuildingTypes);
+SET_ENUM_OPERATORS(BuildTypes);
+SET_ENUM_OPERATORS(CalendarTypes);
+SET_ENUM_OPERATORS_AND_FORBID(CameraLookAtTypes);
+SET_ENUM_OPERATORS_AND_FORBID(CameraMovementSpeeds);
+SET_ENUM_OPERATORS_AND_FORBID(CameraOverlayTypes);
+SET_ENUM_OPERATORS(CardinalDirectionTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ChatTargetTypes);
+SET_ENUM_OPERATORS(CivEffectTypes);
+SET_ENUM_OPERATORS(CivicOptionTypes);
+SET_ENUM_OPERATORS(CivicTypes);
+SET_ENUM_OPERATORS(CivilizationTypes);
+SET_ENUM_OPERATORS_AND_FORBID(CivilopediaPageTypes);
+SET_ENUM_OPERATORS_AND_FORBID(CivLoginStates);
+SET_ENUM_OPERATORS(CityPlotTypes);
+SET_ENUM_OPERATORS_AND_FORBID(CitySizeTypes);
+SET_ENUM_OPERATORS(ClimateTypes);
+SET_ENUM_OPERATORS(ColorTypes);
+SET_ENUM_OPERATORS(CommandTypes);
+SET_ENUM_OPERATORS(ConceptTypes);
+SET_ENUM_OPERATORS(ContactTypes);
+SET_ENUM_OPERATORS(ControlTypes);
+SET_ENUM_OPERATORS(CultureLevelTypes);
+SET_ENUM_OPERATORS(CursorTypes);
+SET_ENUM_OPERATORS_AND_FORBID(CustomMapOptionTypes);
+SET_ENUM_OPERATORS(DenialTypes);
+SET_ENUM_OPERATORS_AND_FORBID(DiploCommentTypes);
+SET_ENUM_OPERATORS_AND_FORBID(DiploEventTypes);
+SET_ENUM_OPERATORS(DiplomacyPowerTypes);
+SET_ENUM_OPERATORS(DiplomacyTypes);
+SET_ENUM_OPERATORS(DirectionTypes);
+SET_ENUM_OPERATORS(DomainTypes);
+SET_ENUM_OPERATORS(EffectTypes);
+SET_ENUM_OPERATORS(EmotionTypes);
+SET_ENUM_OPERATORS(EmphasizeTypes);
+SET_ENUM_OPERATORS_AND_FORBID(EndTurnButtonStates);
+SET_ENUM_OPERATORS_AND_FORBID(EngineDirtyBits);
+SET_ENUM_OPERATORS(EntityEventTypes);
+SET_ENUM_OPERATORS(EraTypes);
+SET_ENUM_OPERATORS(EuropeTypes);
+SET_ENUM_OPERATORS_AND_FORBID(EventContextTypes);
+SET_ENUM_OPERATORS(EventTriggerTypes);
+SET_ENUM_OPERATORS(EventTypes);
+SET_ENUM_OPERATORS(FatherCategoryTypes);
+SET_ENUM_OPERATORS(FatherPointTypes);
+SET_ENUM_OPERATORS(FatherTypes);
+SET_ENUM_OPERATORS(FeatureTypes);
+SET_ENUM_OPERATORS(FeatTypes);
+SET_ENUM_OPERATORS_AND_FORBID(FlyoutTypes);
+SET_ENUM_OPERATORS_AND_FORBID(FogOfWarModeTypes);
+SET_ENUM_OPERATORS_AND_FORBID(FogTypes);
+SET_ENUM_OPERATORS(FontSymbols);
+SET_ENUM_OPERATORS_AND_FORBID(FontTypes);
+SET_ENUM_OPERATORS_AND_FORBID(FOWUpdateTypes);
+SET_ENUM_OPERATORS(ForceControlTypes);
+SET_ENUM_OPERATORS_AND_FORBID(FootstepAudioTags);
+SET_ENUM_OPERATORS_AND_FORBID(FootstepAudioTypes);
+SET_ENUM_OPERATORS(FunctionTypes);
+SET_ENUM_OPERATORS(GameMessageTypes);
+SET_ENUM_OPERATORS_AND_FORBID(GameMode);
+SET_ENUM_OPERATORS(GameOptionTypes);
+SET_ENUM_OPERATORS_AND_FORBID(GamePwdTypes);
+SET_ENUM_OPERATORS(GameSpeedTypes);
+SET_ENUM_OPERATORS_AND_FORBID(GameStateTypes);
+SET_ENUM_OPERATORS_AND_FORBID(GameType);
+SET_ENUM_OPERATORS_AND_FORBID(GenericButtonSizes);
+SET_ENUM_OPERATORS(GoodyTypes);
+SET_ENUM_OPERATORS_AND_FORBID(GraphicLevelTypes);
+SET_ENUM_OPERATORS(GraphicOptionTypes);
+SET_ENUM_OPERATORS(HandicapTypes);
+SET_ENUM_OPERATORS_AND_FORBID(HealthBarTypes);
+SET_ENUM_OPERATORS_AND_FORBID(HelpTextTypes);
+SET_ENUM_OPERATORS_AND_FORBID(HitTestTypes);
+SET_ENUM_OPERATORS(HurryTypes);
+SET_ENUM_OPERATORS_AND_FORBID(InitializationStates);
+SET_ENUM_OPERATORS_AND_FORBID(ImageShapes);
+SET_ENUM_OPERATORS(ImprovementTypes);
+SET_ENUM_OPERATORS_AND_FORBID(InfoBarTypes);
+SET_ENUM_OPERATORS_AND_FORBID(InterfaceDirtyBits);
+SET_ENUM_OPERATORS_AND_FORBID(InterfaceMessageTypes);
+SET_ENUM_OPERATORS(InterfaceModeTypes);
+SET_ENUM_OPERATORS_AND_FORBID(InterfaceVisibility);
+SET_ENUM_OPERATORS(InvisibleTypes);
+SET_ENUM_OPERATORS_AND_FORBID(InitStates);
+SET_ENUM_OPERATORS(JITarrayTypes);
+SET_ENUM_OPERATORS_AND_FORBID(JustificationTypes);
+SET_ENUM_OPERATORS_AND_FORBID(LeaderheadAction);
+SET_ENUM_OPERATORS(LeaderHeadTypes);
+SET_ENUM_OPERATORS_AND_FORBID(LoadType);
+SET_ENUM_OPERATORS(MemoryTypes);
+SET_ENUM_OPERATORS_AND_FORBID(MenuScreenType);
+SET_ENUM_OPERATORS_AND_FORBID(MinimapModeTypes);
+SET_ENUM_OPERATORS_AND_FORBID(MissionAITypes);
+SET_ENUM_OPERATORS(MissionTypes);
+SET_ENUM_OPERATORS(MonthTypes);
+SET_ENUM_OPERATORS(MultiplayerOptionTypes);
+SET_ENUM_OPERATORS_AND_FORBID(NetContactTypes);
+SET_ENUM_OPERATORS_AND_FORBID(OrderTypes);
+SET_ENUM_OPERATORS_AND_FORBID(PanelStyles);
+SET_ENUM_OPERATORS_AND_FORBID(PlayerActionTypes);
+SET_ENUM_OPERATORS(PlayerColorTypes);
+SET_ENUM_OPERATORS(PlayerOptionTypes);
+SET_ENUM_OPERATORS(PlayerTypes);
+SET_ENUM_OPERATORS_AND_FORBID(PlotIndicatorVisibilityFlags);
+SET_ENUM_OPERATORS_AND_FORBID(PlotLandscapeLayers);
+SET_ENUM_OPERATORS_AND_FORBID(PlotStyles);
+SET_ENUM_OPERATORS(PlotTypes);
+SET_ENUM_OPERATORS_AND_FORBID(PopupControlLayout);
+SET_ENUM_OPERATORS_AND_FORBID(PopupEventTypes);
+SET_ENUM_OPERATORS_AND_FORBID(PopupStates);
+SET_ENUM_OPERATORS_AND_FORBID(ProbabilityTypes);
+SET_ENUM_OPERATORS(ProfessionTypes);
+SET_ENUM_OPERATORS(PromotionTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ReplayMessageTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ResourceLayerOptions);
+SET_ENUM_OPERATORS_AND_FORBID(RotationTypes);
+SET_ENUM_OPERATORS(RouteTypes);
+SET_ENUM_OPERATORS_AND_FORBID(SaveGameTypes);
+SET_ENUM_OPERATORS(SeaLevelTypes);
+SET_ENUM_OPERATORS(SeasonTypes);
+SET_ENUM_OPERATORS_AND_FORBID(SlotClaim);
+SET_ENUM_OPERATORS_AND_FORBID(SlotStatus);
+SET_ENUM_OPERATORS(SpecialBuildingTypes);
+SET_ENUM_OPERATORS(SpecialUnitTypes);
+SET_ENUM_OPERATORS(StrategyTypes);
+SET_ENUM_OPERATORS_AND_FORBID(TabGroupTypes);
+SET_ENUM_OPERATORS_AND_FORBID(TableStyles);
+SET_ENUM_OPERATORS_AND_FORBID(TaskTypes);
+SET_ENUM_OPERATORS(TeamTypes);
+SET_ENUM_OPERATORS_AND_FORBID(TerrainGroupTypes);
+SET_ENUM_OPERATORS(TerrainTypes);
+SET_ENUM_OPERATORS_AND_FORBID(TileArtTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ToolTipAlignTypes);
+SET_ENUM_OPERATORS(TradeableItems);
+SET_ENUM_OPERATORS_AND_FORBID(TradeMessageTypes);
+SET_ENUM_OPERATORS_AND_FORBID(TraitTypes);
+SET_ENUM_OPERATORS(TurnTimerTypes);
+SET_ENUM_OPERATORS(UnitAIStates);
+SET_ENUM_OPERATORS(UnitAITypes);
+SET_ENUM_OPERATORS(UnitArtStyleTypes);
+SET_ENUM_OPERATORS(UnitClassTypes);
+SET_ENUM_OPERATORS(UnitCombatTypes);
+SET_ENUM_OPERATORS_AND_FORBID(UnitLayerOptionTypes);
+SET_ENUM_OPERATORS(UnitTravelStates);
+SET_ENUM_OPERATORS(UnitTypes);
+SET_ENUM_OPERATORS_AND_FORBID(VersionTypes);
+SET_ENUM_OPERATORS(VictoryTypes);
+SET_ENUM_OPERATORS_AND_FORBID(VoiceTargetTypes);
+SET_ENUM_OPERATORS_AND_FORBID(VoteResultTypes);
+SET_ENUM_OPERATORS_AND_FORBID(VoteStatusTypes);
+SET_ENUM_OPERATORS(WarPlanTypes);
+SET_ENUM_OPERATORS_AND_FORBID(WidgetTypes);
+SET_ENUM_OPERATORS_AND_FORBID(WrapDirection);
+SET_ENUM_OPERATORS_AND_FORBID(WorldBuilderPopupTypes);
+SET_ENUM_OPERATORS(WorldSizeTypes);
+SET_ENUM_OPERATORS(YieldTypes);
+SET_ENUM_OPERATORS_AND_FORBID(ZoomLevelTypes);
+
+// disable the check for a specific enum type in a single file
+#define DEFINE_ENUM_INT_COMPARISON(EnumName)       \
+	UNFORBID_COMPARISON_OPERATORS(EnumName, int)   \
+	UNFORBID_COMPARISON_OPERATORS(int, EnumName)
+
+template<class T>
+static bool validEnumRange(T eValue)
 {
-	T cache = c;
-	c = (T)(c + 1);
-	return cache;
+	return eValue >= (T)0 && eValue < (T)getArrayLength(getJITarrayType(eValue));
 }
 
 #endif	// CVENUMS_h

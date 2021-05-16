@@ -54,9 +54,9 @@ public:
 	const CLinkList<TradeData>* getSecondTrades() const;
 
 	DllExport bool isCancelable(PlayerTypes eByPlayer = NO_PLAYER, CvWString* pszReason = NULL);
-	DllExport int turnsToCancel(PlayerTypes eByPlayer = NO_PLAYER);
+	int turnsToCancel(PlayerTypes eByPlayer = NO_PLAYER);
 
-	DllExport static bool isAnnual(TradeableItems eItem);
+	static bool isAnnual(TradeableItems eItem);
 	DllExport static bool isDual(TradeableItems eItem, bool bExcludePeace = false);
 	DllExport static bool hasData(TradeableItems eItem);
 	DllExport static bool isGold(TradeableItems eItem);
@@ -66,6 +66,11 @@ public:
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData(int iID = 0, PlayerTypes eFirstPlayer = NO_PLAYER, PlayerTypes eSecondPlayer = NO_PLAYER);
 
 protected:
 	void reset(int iID = 0, PlayerTypes eFirstPlayer = NO_PLAYER, PlayerTypes eSecondPlayer = NO_PLAYER);

@@ -1,6 +1,7 @@
 #include "CvGameCoreDLL.h"
 #include "CvTradeRoute.h"
 #include "CvDLLInterfaceIFaceBase.h"
+#include "CvSavegame.h"
 
 CvTradeRoute::CvTradeRoute() :
 	m_iId(ANYWHERE_CITY_ID),
@@ -186,29 +187,6 @@ bool CvTradeRoute::checkValid(PlayerTypes ePlayer) const
 	}
 
 	return true;
-}
-
-
-void CvTradeRoute::read(FDataStreamBase* pStream)
-{
-	uint uiFlag = 0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iId);
-	m_kSourceCity.read(pStream);
-	m_kDestinationCity.read(pStream);
-	pStream->Read((int*) &m_eYield);
-}
-
-void CvTradeRoute::write(FDataStreamBase* pStream)
-{
-	uint uiFlag = 0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iId);
-	m_kSourceCity.write(pStream);
-	m_kDestinationCity.write(pStream);
-	pStream->Write(m_eYield);
 }
 
 void CvTradeRoute::setActiveDirty()

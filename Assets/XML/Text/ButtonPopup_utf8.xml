@@ -3,17 +3,80 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE</Tag>
-		<English>The land near the colony can produce goods. The governor asks if you have any requests.</English>
-		<German>Feldfrüchte können auf dem Land nahe der Siedlung angebaut werden. Der Gouverneur fragt ob Ihr Wünsche habt.</German>
+		<English>Crops can be grown on land surrounding the settlement. The governor asks what you want done.</English>
+		<German>Es können Feldfrüchte auf dem Land nahe der Siedlung angebaut werden. Der Gouverneur fragt, ob Sie besondere Wünsche haben.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_AUTO</Tag>
-		<English>Trust the governor to take care of his land.</English>
-		<German>Der Gouverneur weiß am besten wie sein Land zu nutzen ist</German>
+		<English>The governor knows the best use for the land.</English>
+		<German>Der Gouverneur weiß am besten, wie sein Land zu nutzen ist.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP</Tag>
-		<English>Each turn the governor will consider what would be best to produce. He can easily change production to get the best out of the situation whenever things change.[NEWLINE][NEWLINE]Note: Your requests are guidelines only. If in future the requested goods are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
-		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern etwas zu ändern, kann er frei über die Produktion entscheiden, um das beste aus der Situation zu machen.[NEWLINE][NEWLINE]Beachtet: Ihre Wünsche sind nur Richtlinien. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
+		<English>Each turn the governor looks at the land options. Whenever things change he authorizes optimum production for the current situation.[NEWLINE][NEWLINE]Note: Your choices are guidelines only. What you want could become unavailable. Whenever that happens the governor takes temporary control of production. If your preference becomes available later, the governor remembers and will change back.</English>
+		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[NEWLINE][NEWLINE]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
 	</TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_TITLE</Tag>
+        <English>Select imports, exports, minimum and maximum goods stored for %s1_city[NEWLINE]Read Colopedia's concept page[NEWLINE]Transport Automation to learn how to use this.</English>
+        <French>Sélectionner les imports, les exports, et les seuils de biens stockées à %s1_city</French>
+        <German>Importe, Exporte und gelagerte Mindestgüter, Maximal für die Stadt %s1_city auswählen</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_CLEAR_ALL</Tag>
+        <English>Clear All</English>
+     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_ALL</Tag>
+        <English>Import All Goods</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_EXPORT_ALL</Tag>
+        <English>Auto Export All Goods</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_IMPORT</Tag>
+        <English>Import</English>
+        <French>Importer</French>
+        <German>Import</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_IMPORT_HELP</Tag>
+        <English>Import this cargo[NEWLINE][NEWLINE]Left: import limit[NEWLINEImports cannot exceed warehouse inventory limits.[NEWLINE]0 means no limit.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
+        <English>Feeder</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
+        <English>Import feeder
+Turn import on at 75%
+Turn import off at 100%
+Compared to Maintail level (bottom spinbutton)</English>
+        <French>Gestionnaire d'importation
+Démarre l'importation à 75%
+Arrête l'importation à 100%</French>
+        <German>Import feeder
+Schaltet Import bei 75% an
+Schaltet Import bei 100% aus</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_EXPORT</Tag>
+        <English>Export</English>
+        <French>Exporter</French>
+        <German>Export</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_EXPORT_HELP</Tag>
+        <English>Export this cargo[NEWLINE][NEWLINE]Left: maintain level[NEWLINE]Import as long as the warehouse inventory is below this level. Export when it's more.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT</Tag>
+        <English>Auto</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP</Tag>
+        <English>Automatic turn export on and off at turn start[NEWLINE]Too many trade routes slow down the game. This feature lets you disable trade routes when there's nothing to transport.[NEWLINE]Remember that restarting exports won't take effect until the following turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
+    </TEXT>
 </Civ4GameText>

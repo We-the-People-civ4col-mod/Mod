@@ -20,6 +20,7 @@
 #include "FProfiler.h"
 #include "FVariableSystem.h"
 #include "CvInitCore.h"
+#include "UserSettings.h"
 
 #include <stdlib.h>
 
@@ -189,6 +190,10 @@ m_LBD_CHANCE_MOD_FREE_SERVANT(0),
 m_LBD_CHANCE_ESCAPE(0),
 m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL(0),
 m_LBD_CHANCE_MOD_ESCAPE_SERVANT(0),
+// WTP, ray, LbD Slaves Revolt and Free - START
+m_LBD_CHANCE_REVOLT(0),
+m_LBD_CHANCE_MOD_REVOLT_SLAVE(0),
+m_LBD_CHANCE_MOD_REVOLT_CRIMINAL(0),
 // R&R, ray, getting Veterans or Free through Combat Experience
 m_LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT(0),
 m_LBD_MIN_EXPERIENCE_FREE_BY_COMBAT(0),
@@ -283,6 +288,25 @@ m_POP_DIVISOR_NEG_HEALTH(0),
 m_MAX_CITY_HEALTH(0),
 m_LOWEST_CITY_HEALTH(0),
 // R&R, ray, Health - END
+
+// WTP, ray, Happiness - START
+m_MIN_POP_NEG_HAPPINESS(0),
+m_POP_DIVISOR_HAPPINESS(0),
+m_PER_EUROPEAN_AT_WAR_UNHAPPINESS(0),
+m_POP_DIVISOR_DEFENSE_UNHAPPINESS(0),
+m_TAX_DIVISOR_UNHAPPINESS(0),
+
+m_BASE_CHANCE_UNREST_UNHAPPINESS(0),
+m_BASE_CHANCE_FESTIVITIES_HAPPINESS(0),
+m_MIN_BALANCE_UNREST_UNHAPPINESS(0),
+m_MIN_BALANCE_FESTIVITIES_HAPPINESS(0),
+m_TURNS_UNREST_UNHAPPINESS(0),
+m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS(0),
+m_TIMER_FESTIVITIES_OR_UNRESTS(0),
+// WTP, ray, Happiness - END
+
+m_MAX_TREASURE_AMOUNT(0), // WTP, merge Treasures, of Raubwuerger
+m_TRADE_POST_GOLD_PER_NATIVE(0), // WTP, ray, Native Trade Posts - START
 
 m_fCAMERA_MIN_YAW(0),
 m_fCAMERA_MAX_YAW(0),
@@ -507,23 +531,29 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 	// What really should be checked here is that the total count of cities in the game should be 0.
 //	FAssert(!GC.getGameINLINE().isFinalInitialized());
 #ifndef CHECK_GLOBAL_CONSTANTS
-	++iRadius;
-	CITY_PLOTS_RADIUS = iRadius;
+	CITY_PLOTS_RADIUS = static_cast<CityPlotTypes>(iRadius);
 	if (iRadius == 1)
 	{
 		m_aaiXYCityPlot = m_aaiXYCityPlot_1_plot;
-		NUM_CITY_PLOTS = 9;
-		CITY_PLOTS_DIAMETER = 3;
+		NUM_CITY_PLOTS = NUM_CITY_PLOTS_1_PLOT;
+		CITY_PLOTS_DIAMETER = static_cast<CityPlotTypes>(3);
 		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE");
 		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_ONE_PLOT"));
 	}
-	else
+	else if (iRadius == 2)
 	{
 		m_aaiXYCityPlot = m_aaiXYCityPlot_2_plot;
-		NUM_CITY_PLOTS = 25;
-		CITY_PLOTS_DIAMETER = 5;
+		NUM_CITY_PLOTS = NUM_CITY_PLOTS_2_PLOTS;
+		CITY_PLOTS_DIAMETER = static_cast<CityPlotTypes>(5);
 		m_iMIN_CITY_RANGE = getDefineINT("MIN_CITY_RANGE_TWO_PLOT");
 		GC.setDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE", GC.getDefineFLOAT("CAMERA_CITY_ZOOM_IN_DISTANCE_TWO_PLOT"));
+	}
+	else
+	{
+		// invalid setting (likely 0). Use UserSetting value.
+		// Odds are that a scenario is read and the radius isn't specified.
+		UserSettings settings;
+		setCityCatchmentRadius(settings.getColonyRadius());
 	}
 #endif
 }
@@ -533,6 +563,10 @@ void CvGlobals::setCityCatchmentRadius(int iRadius)
 //
 void CvGlobals::uninit()
 {
+	// The game is ending. Assume profiling to be done and write the resulting file
+	// the call is ignored if profiling isn't enabled at compile time
+	getProfiler().writeFile();
+
 	//
 	// See also CvXMLLoadUtilityInit.cpp::CleanUpGlobalVariables()
 	//
@@ -1313,8 +1347,7 @@ std::vector<CvTraitInfo*>& CvGlobals::getTraitInfo()	// For Moose - XML Load Uti
 
 CvTraitInfo& CvGlobals::getTraitInfo(TraitTypes eTraitNum)
 {
-	FAssert(eTraitNum > -1);
-	FAssert(eTraitNum < GC.getNumTraitInfos());
+	FAssert(validEnumRange(eTraitNum));
 	return *(m_paTraitInfo[eTraitNum]);
 }
 
@@ -2377,7 +2410,7 @@ CvString*& CvGlobals::getDirectionTypes()
 	return m_paszDirectionTypes;
 }
 
-CvString& CvGlobals::getDirectionTypes(AutomateTypes e)
+CvString& CvGlobals::getDirectionTypes(DirectionTypes e)
 {
 	FAssert(e > -1);
 	FAssert(e < NUM_DIRECTION_TYPES);
@@ -2588,6 +2621,10 @@ void CvGlobals::cacheGlobals()
 	m_LBD_CHANCE_ESCAPE = getDefineINT("LBD_CHANCE_ESCAPE");
 	m_LBD_CHANCE_MOD_ESCAPE_CRIMINAL = getDefineINT("LBD_CHANCE_MOD_ESCAPE_CRIMINAL");
 	m_LBD_CHANCE_MOD_ESCAPE_SERVANT = getDefineINT("LBD_CHANCE_MOD_ESCAPE_SERVANT");
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	m_LBD_CHANCE_REVOLT= getDefineINT("LBD_CHANCE_REVOLT");
+	m_LBD_CHANCE_MOD_REVOLT_SLAVE = getDefineINT("LBD_CHANCE_MOD_REVOLT_SLAVE");
+	m_LBD_CHANCE_MOD_REVOLT_CRIMINAL = getDefineINT("LBD_CHANCE_MOD_REVOLT_CRIMINAL");
 	// R&R, ray, getting Veterans or Free through Combat Experience
 	m_LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT = getDefineINT("LBD_MIN_EXPERIENCE_VETERAN_BY_COMBAT");
 	m_LBD_MIN_EXPERIENCE_FREE_BY_COMBAT = getDefineINT("LBD_MIN_EXPERIENCE_FREE_BY_COMBAT");
@@ -2671,6 +2708,25 @@ void CvGlobals::cacheGlobals()
 	m_LOWEST_CITY_HEALTH = getDefineINT("LOWEST_CITY_HEALTH");
 	// R&R, ray, caching globals from Global Defines Alt - END
 
+	// WTP, ray, Happiness - START
+	m_MIN_POP_NEG_HAPPINESS = getDefineINT("MIN_POP_NEG_HAPPINESS");
+	m_POP_DIVISOR_HAPPINESS = getDefineINT("POP_DIVISOR_HAPPINESS");
+	m_PER_EUROPEAN_AT_WAR_UNHAPPINESS = getDefineINT("PER_EUROPEAN_AT_WAR_UNHAPPINESS");
+	m_POP_DIVISOR_DEFENSE_UNHAPPINESS = getDefineINT("POP_DIVISOR_DEFENSE_UNHAPPINESS");
+	m_TAX_DIVISOR_UNHAPPINESS = getDefineINT("TAX_DIVISOR_UNHAPPINESS");
+
+	m_BASE_CHANCE_UNREST_UNHAPPINESS = getDefineINT("BASE_CHANCE_UNREST_UNHAPPINESS");
+	m_BASE_CHANCE_FESTIVITIES_HAPPINESS = getDefineINT("BASE_CHANCE_FESTIVITIES_HAPPINESS");
+	m_MIN_BALANCE_UNREST_UNHAPPINESS = getDefineINT("MIN_BALANCE_UNREST_UNHAPPINESS");
+	m_MIN_BALANCE_FESTIVITIES_HAPPINESS = getDefineINT("MIN_BALANCE_FESTIVITIES_HAPPINESS");
+	m_TURNS_UNREST_UNHAPPINESS = getDefineINT("TURNS_UNREST_UNHAPPINESS");
+	m_FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS = getDefineINT("FOUNDING_FAHTER_POINTS_FESTIVITIES_HAPPINESS");
+	m_TIMER_FESTIVITIES_OR_UNRESTS = getDefineINT("TIMER_FESTIVITIES_OR_UNRESTS");
+	// WTP, ray, Happiness - END
+
+	m_MAX_TREASURE_AMOUNT = getDefineINT("MAX_TREASURE_AMOUNT"); // WTP, merge Treasures, of Raubwuerger
+	m_TRADE_POST_GOLD_PER_NATIVE = getDefineINT("TRADE_POST_GOLD_PER_NATIVE"); // WTP, ray, Native Trade Posts - START
+
 	// K-Mod \ RaR
 	m_bUSE_AI_UNIT_UPDATE_CALLBACK = getDefineINT("USE_AI_UNIT_UPDATE_CALLBACK") != 0;
 	m_bUSE_AI_DO_DIPLO_CALLBACK = getDefineINT("USE_AI_DO_DIPLO_CALLBACK") != 0;
@@ -2695,8 +2751,51 @@ int CvGlobals::getDefineINT( const char * szName ) const
 
 float CvGlobals::getDefineFLOAT( const char * szName ) const
 {
+	// the exe calls this functions fairly often, usually related to camera settings
+	// since reading this uncached is slow, use static floats to store the values between calls
+	// this way values are only read uncached once and responding to the exe over and over will take less CPU time
+
+	if (0 == strcmp(szName, "MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT"))
+	{
+		static const float val = getDefineFLOATUncached("MINIMAP_PARABOLA_Y_INTERCEPT_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "SADDLE_PARABOLA_MIN_Y_PERCENT"))
+	{
+		static const float val = getDefineFLOATUncached("SADDLE_PARABOLA_MIN_Y_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "SADDLE_PARABOLA_MIN_X_PERCENT"))
+	{
+		static const float val = getDefineFLOATUncached("SADDLE_PARABOLA_MIN_X_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "SADDLE_PARABOLA_Y_INTERCEPT_PERCENT"))
+	{
+		static const float val = getDefineFLOATUncached("SADDLE_PARABOLA_Y_INTERCEPT_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "MINIMAP_PARABOLA_MIN_X_PERCENT"))
+	{
+		static const float val = getDefineFLOATUncached("MINIMAP_PARABOLA_MIN_X_PERCENT");
+		return val;
+	}
+	else if (0 == strcmp(szName, "MINIMAP_PARABOLA_MIN_Y_PERCENT"))
+	{
+		static const float val = getDefineFLOATUncached("MINIMAP_PARABOLA_MIN_Y_PERCENT");
+		return val;
+	}
+	else
+	{
+		return getDefineFLOATUncached(szName);
+	}
+}
+
+// vanilla getDefineFLOAT. Used when wanting to ignore the cache, like when setting the cache
+float CvGlobals::getDefineFLOATUncached(const char * szName) const
+{
 	float fReturn = 0;
-	GC.getDefinesVarSystem()->GetValue( szName, fReturn );
+	GC.getDefinesVarSystem()->GetValue(szName, fReturn);
 	return fReturn;
 }
 
@@ -2805,6 +2904,14 @@ void CvGlobals::infoTypeFromStringReset()
 void CvGlobals::addToInfosVectors(void *infoVector)
 {
 	std::vector<CvInfoBase *> *infoBaseVector = (std::vector<CvInfoBase *> *) infoVector;
+	for (unsigned int i = 0; i < m_aInfoVectors.size(); ++i)
+	{
+		if (m_aInfoVectors[i] == infoBaseVector)
+		{
+			// don't add the same twice
+			return;
+		}
+	}
 	m_aInfoVectors.push_back(infoBaseVector);
 }
 
@@ -2889,3 +2996,34 @@ CvAchieveInfo& CvGlobals::getAchieveInfo(AchieveTypes eAchieve)
 	return *(m_paAchieveInfo[eAchieve]);
 }
 // PatchMod: Achievements END
+
+// string cleanup
+// Some xml files have references to strategy, pedia and so on for strings, which doesn't exist
+// This call will remove them from memory.
+void CvGlobals::cleanInfoStrings()
+{
+	if (GAMETEXT.getCurrentLanguage() == CvGameText::getLanguageID("Tag"))
+	{
+		// The Tag language reveals the TXT_KEYS
+		// Removing unused strings would be detected as all strings
+		return;
+	}
+
+	for (unsigned int i = 0; i < m_aInfoVectors.size(); ++i)
+	{
+		if (m_aInfoVectors[i]->size() > 0)
+		{
+			if (dynamic_cast<CvActionInfo*>((*m_aInfoVectors[i])[0]))
+			{
+				// action infos not supported for string cleanup.
+				// Won't fix because they don't need cleaning in the first place.
+				continue;
+			}
+
+			for (unsigned int j = 0; j < m_aInfoVectors[i]->size(); ++j)
+			{
+				(*m_aInfoVectors[i])[j]->cleanStrings();
+			}
+		}
+	}
+}

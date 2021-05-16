@@ -2,7 +2,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_MEMORY_ACCEPTED_JOIN_WAR</Tag>
-        <English>"You agreed to come to our aid in war-time."</English>
+        <English>"You agreed to come to our aid in wartime."</English>
         <French>"Vous avez accepté de nous aider en temps de guerre."</French>
         <German>"Ihr habt zugestimmt, uns in Kriegszeiten zur Seite zu stehen."</German>
         <Italian>"Hai accettato di aiutarci in tempi di guerra."</Italian>
@@ -50,7 +50,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MEMORY_DENIED_JOIN_WAR</Tag>
-        <English>"You refused to help us during war-time!"</English>
+        <English>"You refused to help us during wartime!"</English>
         <French>"Vous avez refusé de nous aider en temps de guerre !"</French>
         <German>"Ihr habt Euch geweigert, uns in Kriegszeiten zur Seite zu stehen!"</German>
         <Italian>"Vi siete rifiutati di aiutarci durante la guerra."</Italian>

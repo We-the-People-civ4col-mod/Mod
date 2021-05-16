@@ -23,6 +23,7 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CvPopupInfo.h"
 #include "CvTradeRoute.h"
+#include "CvSavegame.h"
 
 // Public Functions...
 
@@ -68,16 +69,8 @@ void CvSelectionGroup::reset(int iID, PlayerTypes eOwner, bool bConstructorCall)
 	//--------------------------------
 	// Uninit class
 	uninit();
+	resetSavedData(iID, eOwner);
 
-	m_iID = iID;
-	m_iMissionTimer = 0;
-
-	m_bForceUpdate = false;
-
-	m_eOwner = eOwner;
-
-	m_eActivityType = ACTIVITY_AWAKE;
-	m_eAutomateType = NO_AUTOMATE;
 	m_bIsBusyCache = false;
 
 	if (!bConstructorCall)
@@ -146,7 +139,7 @@ bool CvSelectionGroup::sentryAlert() const
 /**                                                                       **/
 /** float CvSelectionGroup::NBMOD_GetShipStrength() const                 **/
 /**                                                                       **/
-/** Ermittelt die Schiffstärke der Gruppe.                                **/
+/** Ermittelt die Schiffstï¿½rke der Gruppe.                                **/
 /**                                                                       **/
 /***************************************************************************/
 float CvSelectionGroup::NBMOD_GetShipStrength() const
@@ -4168,64 +4161,6 @@ int CvSelectionGroup::getMissionData2(int iNode) const
 	return -1;
 }
 
-
-void CvSelectionGroup::read(FDataStreamBase* pStream)
-{
-	// Init saved data
-	reset();
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iID);
-	pStream->Read(&m_iMissionTimer);
-
-	pStream->Read(&m_bForceUpdate);
-
-	pStream->Read((int*)&m_eOwner);
-	pStream->Read((int*)&m_eActivityType);
-	pStream->Read((int*)&m_eAutomateType);
-
-	m_units.Read(pStream);
-	m_missionQueue.Read(pStream);
-
-	{
-		int iSize;
-		pStream->Read(&iSize);
-		for(int i=0;i<iSize;i++)
-		{
-			int iRouteID;
-			pStream->Read(&iRouteID);
-			m_aTradeRoutes.insert(iRouteID);
-		}
-	}
-}
-
-
-void CvSelectionGroup::write(FDataStreamBase* pStream)
-{
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iID);
-	pStream->Write(m_iMissionTimer);
-
-	pStream->Write(m_bForceUpdate);
-
-	pStream->Write(m_eOwner);
-	pStream->Write(m_eActivityType);
-	pStream->Write(m_eAutomateType);
-
-	m_units.Write(pStream);
-	m_missionQueue.Write(pStream);
-
-	pStream->Write((int)m_aTradeRoutes.size());
-	for(std::set<int>::iterator it = m_aTradeRoutes.begin(); it != m_aTradeRoutes.end(); ++it)
-	{
-		pStream->Write(*it);
-	}
-}
-
 // Protected Functions...
 
 void CvSelectionGroup::activateHeadMission()
@@ -4352,4 +4287,20 @@ void CvSelectionGroup::speakWithChief()
 	{
 		pBestUnit->speakWithChief();
 	}
+}
+
+void CvSelectionGroup::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvSelectionGroup::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
 }

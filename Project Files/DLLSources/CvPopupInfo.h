@@ -4,10 +4,16 @@
 
 //#include "CvEnums.h"
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 struct CvPopupButtonPython
 {
 	CvWString szText;
 	CvString szArt;
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 };
 
 class CvPopupInfo
@@ -18,6 +24,11 @@ public:
 
 	DllExport void read(FDataStreamBase& stream);
 	DllExport void write(FDataStreamBase& stream) const;
+	
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer) const;
+
+	void resetSavedData();
 
 	DllExport const CvPopupInfo& operator=(const CvPopupInfo& other);
 

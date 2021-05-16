@@ -14,6 +14,8 @@
 //TAC Whaling, ray
 #include "CvDLLInterfaceIFaceBase.h"
 //End TAC Whaling, ray
+
+#include "CvSavegame.h"
 // Public Functions...
 
 CvSelectionGroupAI::CvSelectionGroupAI()
@@ -45,19 +47,7 @@ void CvSelectionGroupAI::AI_uninit()
 void CvSelectionGroupAI::AI_reset()
 {
 	AI_uninit();
-
-	m_iMissionAIX = INVALID_PLOT_COORD;
-	m_iMissionAIY = INVALID_PLOT_COORD;
-
-	m_bForceSeparate = false;
-
-	m_eMissionAIType = NO_MISSIONAI;
-
-	m_missionAIUnit.reset();
-
-	m_bGroupAttack = false;
-	m_iGroupAttackX = -1;
-	m_iGroupAttackY = -1;
+	AI_resetSavedData();
 }
 
 
@@ -596,6 +586,7 @@ bool CvSelectionGroupAI::AI_isDeclareWar(const CvPlot* pPlot)
 			case UNITAI_SETTLER:
 			case UNITAI_WORKER:
 			case UNITAI_MISSIONARY:
+			case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
 			case UNITAI_SCOUT:
 			case UNITAI_WAGON:
 			case UNITAI_TREASURE:
@@ -920,6 +911,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	std::vector<bool> yieldsToUnload(NUM_YIELD_TYPES, false);
 	std::vector<int> yieldsOnBoard(NUM_YIELD_TYPES, false);
 
+	// R&R mod, vetiarvind, max yield import limit - start
+	const bool bIgnoreDanger = getIgnoreDangerStatus();
+	// R&R mod, vetiarvind, max yield import limit - end
+
 	// Erik: We need to determine if we're dealing with a coastal transport
 	bool bCoastalTransport = false;
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
@@ -980,13 +975,15 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			if ((pSourceCity != NULL) && ((domainType != DOMAIN_SEA) || (pSourceWaterArea != NULL)))
 			{
 				int iSourceArea = (domainType == DOMAIN_SEA) ? pSourceWaterArea->getID() : pSourceCity->getArea();
-				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()))
+				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) || 
+					domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 				{
 					if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 					{
 						processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 					}
 				}
+				// TODO: Need to path find if the area check fails like below
 			}
 		}
 	}
@@ -998,20 +995,34 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			CvCity* pSourceCity = ::getCity(pRoute->getSourceCity());
 			if (pSourceCity != NULL)
 			{
+				const DomainTypes domainType = getDomainType();
+
 				CvArea* pSourceWaterArea = pSourceCity->waterArea();
 				if (getDomainType() != DOMAIN_SEA || pSourceWaterArea != NULL) //land or good water..this if block is basically the same code as the AI_full_automate case
 				{
 					int iSourceArea = (getDomainType() == DOMAIN_SEA) ? pSourceWaterArea->getID() : pSourceCity->getArea();
-					if (getDomainType() == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()))
+					if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) ||
+						domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 					{
-						if ((getDomainType() == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
+						if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
 						{
 							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 						}
 					}
 					else
 					{
-						FAssertMsg(false, "Unexpected : Unit can't run trade route it's assigned to");
+						// Due to the introduction of the large river feature, the area check may not be sufficient. This is the case
+						// if the source city is in a different area, connected by river fords \ ferry stations
+						const bool res = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true);
+
+						if (res)
+						{
+							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
+						}
+						else
+						{
+							FAssertMsg(false, "Unexpected : Unit can't run trade route it's assigned to");
+						}
 					}
 
 				}
@@ -1049,9 +1060,17 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		{
 			// R&R mod, vetiarvind, max yield import limit - start
 			//units[i]->unload();
-			unloadToCity(pPlotCity, units[i]);
+			unloadToCity(pPlotCity, units[i], UnloadMode::Force);
 			// R&R mod, vetiarvind, max yield import limit - end
 		}
+	
+		// It may happen that the destination has stopped importing the yield, if so search for
+		// another nearby city that imports the yield. If that fails, force unload the yield
+		// as a last resort if not a single city imports this yield so that we can free up
+		// the storage space
+		// Note that this is very rate since the presence of a port city in any given area
+		// will act as a "sink" for excess yields of any type
+	
 	}
 
 	short aiYieldsLoaded[NUM_YIELD_TYPES];
@@ -1059,23 +1078,19 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	std::fill(aiYieldsLoaded, aiYieldsLoaded + NUM_YIELD_TYPES, 0);
 	const bool bNoCargo = (AI_getYieldsLoaded(aiYieldsLoaded) == 0);
 
-	// R&R mod, vetiarvind, max yield import limit - start	
-	const bool bIgnoreDanger = getIgnoreDangerStatus();
-	// R&R mod, vetiarvind, max yield import limit - end
-
 	if (!bNoCargo)
 	{
 		//We need to iterate over every destination city and see if we can unload.
 		for (uint i = 0; i < routes.size(); ++i)
 		{
 			CvCity* pDestinationCity = ::getCity(routes[i]->getDestinationCity());
-			if ((pDestinationCity == NULL) || (pDestinationCity != pPlotCity))
+			if ((pDestinationCity != NULL) && (pDestinationCity != pPlotCity))
 			{
 				// R&R mod, vetiarvind, max yield import limit - start
 				
 				YieldTypes eYield = routes[i]->getYield();
 				int yieldsToUnload = aiYieldsLoaded[eYield];
-				if(pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0)
+				if(pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0)
 				{
 					int turnsToReach = 0; 
 					generatePath(plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
@@ -1093,6 +1108,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			}
 		}
 	}
+
+	bool bNoRoute = true;
 
 	//We need to iterate over every source city, and see if there's anything which needs moving to the respective destination city.
 	//We apply some bias to the city we are presently at, but not too much - sometimes empty runs need to be made...
@@ -1113,11 +1130,19 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getAutoMaintainThreshold(eYield);
 			// transport feeder - end - Nightinggale
 			// R&R mod, vetiarvind, max yield import limit - start
-			if(pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0)
+			if(pDestinationCity != NULL &&   pDestinationCity->getMaxImportAmount(eYield) > 0)
 			{
 				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0; 
-				generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);				
-				generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
+				const bool bSourceOk = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
+				const bool bDestOk = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
+
+				if (!(bSourceOk && bDestOk))
+					// We require both of these paths to be valid. If not, we skip this route
+					continue;
+
+				// At least one destination is reachable
+				bNoRoute = false;
+
 				// Erik: If we can travel from the current plot to the source, and then from source to destination in the same turn,
 				// we have to make sure that we don't overestimate the amount that we should load
 				int turnsRequired;
@@ -1136,6 +1161,13 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				}
 				
 				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsRequired, aiYieldsLoaded[eYield]);
+			}
+			// Note that Europe has no import limit!
+			else if (pDestinationCity == NULL && routes[i]->getDestinationCity() == kEurope)
+			{
+				// This is a Europe trade-route, exempt it from the reachability criteria
+				// TODO: Check that there is actually a route to Europe!
+				bNoRoute = false;
 			}
 			
 			// R&R mod, vetiarvind, max yield import limit - end
@@ -1160,6 +1192,11 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			}
 		}
 	}
+
+	// We bail if there's not a single viable destination
+	// Transports with cargo should carry on because they might need to drop it off somewhere before they can start on normal traderoutes
+	if (bNoRoute && bNoCargo)
+		return false;
 
 	// TAC - Trade Routes Advisor - koma13 - START
 	// R&R mod, vetiarvind, max yield import limit - start
@@ -1271,12 +1308,13 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 					// R&R mod, vetiarvind, max yield import limit - start				
 					int iOriginalAmount = iAmount;
-					int bDestinationHasImportLimit = pDestinationCity != NULL && pDestinationCity->getImportsLimit(eYield) > 0;
+					int bDestinationHasImportLimit = pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0;
 					if(bDestinationHasImportLimit)
 					{
 						int turnsToReach = 0; 
 						iOriginalAmount = iAmount = std::min(GC.getGameINLINE().getCargoYieldCapacity(), iAmount);
-						generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
+						const bool r1 = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
+						FAssertMsg(r1, "Path must be valid!");
 						// Erik: If the destination can be reached in the same turn, subtract a turn
 						turnsToReach = std::max(0, turnsToReach - 1);
 						iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReach, aiYieldsLoaded[eYield]);
@@ -1346,6 +1384,15 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		CvCity* pCity = kOwner.AI_findBestPort();
 		if (pCity != NULL && !atPlot(pCity->plot()))
 		{
+			// check that the city is reachable
+			int iTurns = 0;
+			if (!generatePath(plot(), pCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &iTurns))
+			{
+				// no path. Bail out instead of trying to add a movement command
+				// if the command to move is given, then movement will fail and this function is called again
+				// in other words trying to move will cause an infinite loop (bug #416)
+				return false;
+			}
 			kBestDestination = pCity->getIDInfo();
 		}
 	}
@@ -1455,52 +1502,8 @@ CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 
 // Protected Functions...
 
-void CvSelectionGroupAI::read(FDataStreamBase* pStream)
-{
-	CvSelectionGroup::read(pStream);
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iMissionAIX);
-	pStream->Read(&m_iMissionAIY);
-
-	pStream->Read(&m_bForceSeparate);
-
-	pStream->Read((int*)&m_eMissionAIType);
-
-	m_missionAIUnit.read(pStream);
-
-	pStream->Read(&m_bGroupAttack);
-	pStream->Read(&m_iGroupAttackX);
-	pStream->Read(&m_iGroupAttackY);
-}
-
-
-void CvSelectionGroupAI::write(FDataStreamBase* pStream)
-{
-	CvSelectionGroup::write(pStream);
-
-	uint uiFlag=0;
-	pStream->Write(uiFlag);		// flag for expansion
-
-	pStream->Write(m_iMissionAIX);
-	pStream->Write(m_iMissionAIY);
-
-	pStream->Write(m_bForceSeparate);
-
-	pStream->Write(m_eMissionAIType);
-
-	m_missionAIUnit.write(pStream);
-
-	pStream->Write(m_bGroupAttack);
-	pStream->Write(m_iGroupAttackX);
-	pStream->Write(m_iGroupAttackY);
-}
-
 // R&R mod, vetiarvind, max yield import limit - start
-
-bool CvSelectionGroupAI::getIgnoreDangerStatus() 
+bool CvSelectionGroupAI::getIgnoreDangerStatus() const
 {
 	bool bIgnoreDanger = false;
 	
@@ -1526,12 +1529,12 @@ bool CvSelectionGroupAI::getIgnoreDangerStatus()
 // R&R mod, vetiarvind, max yield import limit - end
 // Private Functions...
 // R&R mod, vetiarvind, max yield import limit - start
-int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded)
+int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded) const
 {
 	if(maxYieldsToLoad <= 0) return 0; // R&R mod, vetiarvind, max yield import limit fix
 	int yieldsToLoad = maxYieldsToLoad;	
 		
-	int importLimit = pDestinationCity->getImportsLimit(eYield);
+	int importLimit = pDestinationCity->getMaxImportAmount(eYield);
 	if(importLimit > 0)
 	{
 		int stored = pDestinationCity->getYieldStored(eYield);
@@ -1542,9 +1545,9 @@ int CvSelectionGroupAI::estimateYieldsToLoad(CvCity* pDestinationCity, int maxYi
 	return yieldsToLoad;
 }
 
-void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit)
+void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit, UnloadMode um)
 {
-		if(pCity->getImportsLimit(unit->getYield()) > 0)
+		if (um == UnloadMode::NoForce && pCity->getMaxImportAmount(unit->getYield()) > 0)
 		{
 			int totalStored = unit->getYieldStored();
 			int toUnload = estimateYieldsToLoad(pCity, totalStored, unit->getYield(), 0, 0);

@@ -1205,6 +1205,30 @@
         <Spanish>Guerra Naval VI</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SAILING</Tag>
+        <English>River Sailor</English>
+        <French>Swift de rivière</French>
+        <German>Flußsegler</German>
+        <Italian>Fiume Veloce</Italian>
+        <Spanish>Río Swift</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SCOUT</Tag>
+        <English>River Scout</English>
+        <French>Traversée de rivière</French>
+        <German>Flußscout</German>
+        <Italian>Attraversamento del fiume</Italian>
+        <Spanish>Cruce del río</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_LARGE_RIVER_RAIDER</Tag>
+        <English>River Fighter</English>
+        <French>Chasseur de rivière</French>
+        <German>Flußkämpfer</German>
+        <Italian>Combattente del fiume</Italian>
+        <Spanish>Luchador de río</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROMOTION_SEA_EXPLORER</Tag>
         <English>Sea Explorer</English>
         <French>Explorateur des mers</French>
@@ -1719,5 +1743,13 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PROMOTION_TOWN_GUARD</Tag>
+        <English>Town Defense</English>
+        <French>Defense de ville</French>
+        <German>Stadtverteidigung</German>
+        <Italian>Town Defense</Italian>
+        <Spanish>Town Defense</Spanish>
     </TEXT>
 </Civ4GameText>

@@ -1,0 +1,187 @@
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Alex Mantzaris (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Misc -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="Description" content="textOnly"/>
+	<ElementType name="Type" content="textOnly"/>
+	<ElementType name="iYield" content="textOnly" dt:type="int"/>
+	<ElementType name="YieldType" content="textOnly"/>
+	<ElementType name="Yield" content="eltOnly">
+		<element type="YieldType"/>
+		<element type="iYield"/>
+	</ElementType>
+	<ElementType name="Yields" content="eltOnly">
+		<element type="Yield" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Button" content="textOnly"/>
+	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
+	<ElementType name="iAdvancedStartCostIncrease" content="textOnly" dt:type="int"/>
+	<ElementType name="iValue" content="textOnly" dt:type="int"/>
+	<ElementType name="iMovement" content="textOnly" dt:type="int"/>
+	<ElementType name="iFlatMovement" content="textOnly" dt:type="int"/>
+	<ElementType name="bGraphicalOnly" content="textOnly" dt:type="boolean"/>
+	<ElementType name="RouteInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="bGraphicalOnly" minOccurs="0"/>
+		<element type="iValue"/>
+		<element type="iAdvancedStartCost"/>
+		<element type="iAdvancedStartCostIncrease"/>
+		<element type="iMovement"/>
+		<element type="iFlatMovement"/>
+		<element type="Yields"/>
+		<element type="Button"/>
+	</ElementType>
+	<ElementType name="RouteInfos" content="eltOnly">
+		<element type="RouteInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Path" content="textOnly"/>
+	<ElementType name="ModelFile" content="textOnly"/>
+	<ElementType name="BorderFile" content="textOnly"/>
+	<ElementType name="TextureIndex" content="textOnly" dt:type="int"/>
+	<ElementType name="DeltaType" content="textOnly"/>
+	<ElementType name="Rotations" content="textOnly"/>
+	<ElementType name="Connections" content="textOnly"/>
+	<ElementType name="RiverModelInfo" content="eltOnly">
+		<element type="ModelFile"/>
+		<element type="BorderFile"/>
+		<element type="TextureIndex"/>
+		<element type="DeltaType"/>
+		<element type="Connections"/>
+		<element type="Rotations"/>
+	</ElementType>
+	<ElementType name="RiverModelInfos" content="eltOnly">
+		<element type="RiverModelInfo" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="ZOffset" content="textOnly"/>
+	<ElementType name="ContainsGrid" content="textOnly" dt:type="int"/>
+	<ElementType name="TextureFile" content="textOnly"/>
+	<ElementType name="TextureScaling" content="textOnly"/>
+	<ElementType name="TextureScalingU" content="textOnly"/>
+	<ElementType name="TextureScalingV" content="textOnly"/>
+	<ElementType name="URate" content="textOnly"/>
+	<ElementType name="VRate" content="textOnly"/>
+	<ElementType name="ZHeight" content="textOnly"/>
+	<ElementType name="FogType" content="textOnly"/>
+	<ElementType name="CameraOverlayType" content="textOnly"/>
+	<ElementType name="FunctionType" content="textOnly"/>
+	<ElementType name="Time" content="textOnly"/>
+	<ElementType name="Value" content="textOnly"/>
+	<ElementType name="r" content="textOnly"/>
+	<ElementType name="g" content="textOnly"/>
+	<ElementType name="b" content="textOnly"/>
+	<ElementType name="MaterialAlpha" content="textOnly"/>
+	<ElementType name="CloseAlpha" content="textOnly"/>
+	<ElementType name="bVisible" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bGroundPlane" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCitySelection" content="textOnly" dt:type="boolean"/>
+	<ElementType name="fScale" content="textOnly"/>
+	<ElementType name="fUpdateRate" content="textOnly"/>
+	<ElementType name="bIsProjectile" content="textOnly" dt:type="int"/>
+	<ElementType name="bSticky" content="textOnly" dt:type="boolean"/>
+	<ElementType name="fSpeed" content="textOnly"/>
+	<ElementType name="fArcValue" content="textOnly"/>
+	<ElementType name="WaterMaterial" content="eltOnly">
+		<element type="MaterialAlpha"/>
+		<!-- Alpha !-->
+	</ElementType>
+	<ElementType name="Keyframe" content="eltOnly">
+		<element type="Time"/>
+		<element type="Value"/>
+	</ElementType>
+	<ElementType name="WaterBaseTexture" content="textOnly"/>
+	<ElementType name="WaterNormalTexture" content="textOnly"/>
+	<ElementType name="WaterTransitionTexture" content="textOnly"/>
+	<ElementType name="WaterEnvironmentTexture" content="textOnly"/>
+	<ElementType name="WaterGridTexture" content="textOnly"/>
+	<ElementType name="WaterPlaneInfo" content="eltOnly">
+		<element type="MaterialAlpha"/>
+		<element type="TextureScaling"/>
+		<element type="URate"/>
+		<element type="VRate"/>
+		<element type="WaterBaseTexture"/>
+		<element type="WaterNormalTexture"/>
+		<element type="WaterTransitionTexture"/>
+		<element type="WaterEnvironmentTexture"/>
+		<element type="WaterGridTexture"/>
+	</ElementType>
+	<ElementType name="TerrainPlaneInfo" content="eltOnly">
+		<element type="bVisible"/>
+		<element type="bGroundPlane"/>
+		<element type="bCitySelection"/>
+		<element type="MaterialAlpha"/>
+		<element type="CloseAlpha"/>
+		<element type="TextureFile"/>
+		<element type="TextureScalingU"/>
+		<element type="TextureScalingV"/>
+		<element type="URate"/>
+		<element type="VRate"/>
+		<element type="ZHeight"/>
+		<element type="FogType"/>
+	</ElementType>
+	<ElementType name="CameraOverlayInfo" content="eltOnly">
+		<element type="bVisible"/>
+		<element type="TextureFile"/>
+		<element type="CameraOverlayType"/>
+	</ElementType>
+	<ElementType name="EffectInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="fScale"/>
+		<element type="fUpdateRate"/>
+		<element type="Path"/>
+		<element type="bSticky" minOccurs="0"/>
+		<element type="bIsProjectile"/>
+		<element type="fSpeed" minOccurs="0"/>
+		<element type="fArcValue" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="AttachableInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="Description"/>
+		<element type="fScale"/>
+		<element type="Path"/>
+	</ElementType>
+	<ElementType name="WaterPlaneInfos" content="eltOnly">
+		<element type="WaterPlaneInfo" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="TerrainPlaneInfos" content="eltOnly">
+		<element type="TerrainPlaneInfo" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="CameraOverlayInfos" content="eltOnly">
+		<element type="CameraOverlayInfo" minOccurs="1" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4RouteInfos" content="eltOnly">
+		<element type="RouteInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4WaterPlaneInfos" content="eltOnly">
+		<element type="WaterPlaneInfos" minOccurs="0" maxOccurs="1"/>
+	</ElementType>
+	<ElementType name="Civ4TerrainPlaneInfos" content="eltOnly">
+		<element type="TerrainPlaneInfos" minOccurs="0" maxOccurs="1"/>
+	</ElementType>
+	<ElementType name="Civ4CameraOverlayInfos" content="eltOnly">
+		<element type="CameraOverlayInfos" minOccurs="0" maxOccurs="1"/>
+	</ElementType>
+	<ElementType name="Civ4EffectInfos" content="eltOnly">
+		<element type="EffectInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="EffectInfos" content="eltOnly">
+		<element type="EffectInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4AttachableInfos" content="eltOnly">
+		<element type="AttachableInfos" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AttachableInfos" content="eltOnly">
+		<element type="AttachableInfo" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4Misc" content="eltOnly">
+		<element type="RouteInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="WaterPlaneInfos" minOccurs="0" maxOccurs="1"/>
+		<element type="TerrainPlaneInfos" minOccurs="0" maxOccurs="1"/>
+		<element type="CameraOverlayInfos" minOccurs="0" maxOccurs="1"/>
+		<element type="EffectInfos" minOccurs="0" maxOccurs="1"/>
+		<element type="AttachableInfos" minOccurs="0" maxOccurs="1"/>
+	</ElementType>
+</Schema>

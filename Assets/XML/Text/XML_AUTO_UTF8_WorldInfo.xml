@@ -26,7 +26,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_GIGANTIC_HELP</Tag>
-        <English>TXT_KEY_WORLD_GIGANTIC_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_HUGE</Tag>
@@ -54,7 +54,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_HUGE_HELP</Tag>
-        <English>TXT_KEY_WORLD_HUGE_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_LARGE</Tag>
@@ -82,7 +82,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_LARGE_HELP</Tag>
-        <English>TXT_KEY_WORLD_LARGE_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_SMALL</Tag>
@@ -110,7 +110,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_SMALL_HELP</Tag>
-        <English>TXT_KEY_WORLD_SMALL_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_STANDARD</Tag>
@@ -138,7 +138,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_STANDARD_HELP</Tag>
-        <English>TXT_KEY_WORLD_STANDARD_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_TINY</Tag>
@@ -166,6 +166,6 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLDSIZE_TINY_HELP</Tag>
-        <English>TXT_KEY_WORLD_TINY_HELP</English>
+        <English>????</English>
     </TEXT>
 </Civ4GameText>

@@ -21,36 +21,18 @@
 #include "CyArgsList.h"
 #include "FProfiler.h"
 
+#include "CvSavegame.h"
 // Public Functions...
 
 CvTeam::CvTeam()
 {
-	m_abAtWar = new bool[MAX_TEAMS];
-	m_abHasMet = new bool[MAX_TEAMS];
-	m_abPermanentWarPeace = new bool[MAX_TEAMS];
-	m_abOpenBorders = new bool[MAX_TEAMS];
-	m_abDefensivePact = new bool[MAX_TEAMS];
-	m_abForcePeace = new bool[MAX_TEAMS];
-
-	m_abFatherIgnore = NULL;
-	m_aiFatherPoints = NULL;
-	m_aiUnitClassCount = NULL;
-	m_aiBuildingClassCount = NULL;
-	m_aiEuropeUnitsPurchased = NULL;
-
-	reset((TeamTypes)0, true);
+	reset(FIRST_TEAM, true);
 }
 
 
 CvTeam::~CvTeam()
 {
 	uninit();
-	SAFE_DELETE_ARRAY(m_abAtWar);
-	SAFE_DELETE_ARRAY(m_abHasMet);
-	SAFE_DELETE_ARRAY(m_abPermanentWarPeace);
-	SAFE_DELETE_ARRAY(m_abOpenBorders);
-	SAFE_DELETE_ARRAY(m_abDefensivePact);
-	SAFE_DELETE_ARRAY(m_abForcePeace);
 }
 
 
@@ -71,11 +53,6 @@ void CvTeam::init(TeamTypes eID)
 
 void CvTeam::uninit()
 {
-	SAFE_DELETE_ARRAY(m_abFatherIgnore);
-	SAFE_DELETE_ARRAY(m_aiFatherPoints);
-	SAFE_DELETE_ARRAY(m_aiUnitClassCount);
-	SAFE_DELETE_ARRAY(m_aiBuildingClassCount);
-	SAFE_DELETE_ARRAY(m_aiEuropeUnitsPurchased);
 }
 
 
@@ -83,72 +60,14 @@ void CvTeam::uninit()
 // Initializes data members that are serialized.
 void CvTeam::reset(TeamTypes eID, bool bConstructorCall)
 {
-	int iI;
-
 	//--------------------------------
 	// Uninit class
 	uninit();
 
-	m_iNumMembers = 0;
-	m_iAliveCount = 0;
-	m_iEverAliveCount = 0;
-	m_iNumCities = 0;
-	m_iTotalLand = 0;
-	m_iMapTradingCount = GC.getDefineINT("ENABLE_MAP_TRADING");
-	m_iGoldTradingCount = GC.getDefineINT("ENABLE_GOLD_TRADING");
-	m_iOpenBordersTradingCount = GC.getDefineINT("ENABLE_OPEN_BORDERS");
-	m_iDefensivePactTradingCount = GC.getDefineINT("ENABLE_DEFENSIVE_PACT_TRADING");
-	m_iPermanentAllianceTradingCount = GC.getDefineINT("ENABLE_ALLIANCE_TRADING");
-
-	m_bMapCentering = false;
-
-	m_eID = eID;
-
-	for (iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		m_abHasMet[iI] = false;
-		m_abAtWar[iI] = false;
-		m_abPermanentWarPeace[iI] = false;
-		m_abOpenBorders[iI] = false;
-		m_abDefensivePact[iI] = false;
-		m_abForcePeace[iI] = false;
-	}
+	resetSavedData(eID);
 
 	if (!bConstructorCall)
 	{
-		FAssertMsg(m_abFatherIgnore==NULL, "about to leak memory, CvTeam::m_abFatherIgnore");
-		m_abFatherIgnore = new bool [GC.getNumFatherInfos()];
-		for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
-		{
-			m_abFatherIgnore[iI] = false;
-		}
-
-		FAssertMsg(m_aiFatherPoints==NULL, "about to leak memory, CvTeam::m_aiFatherPoints");
-		m_aiFatherPoints = new int[GC.getNumFatherPointInfos()];
-		for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
-		{
-			m_aiFatherPoints[iI] = 0;
-		}
-
-		FAssertMsg(m_aiUnitClassCount==NULL, "about to leak memory, CvTeam::m_aiUnitClassCount");
-		FAssertMsg(m_aiEuropeUnitsPurchased==NULL, "about to leak memory, CvTeam::m_aiEuropeUnitsPurchased");
-		m_aiUnitClassCount = new int [GC.getNumUnitClassInfos()];
-		m_aiEuropeUnitsPurchased = new int [GC.getNumUnitClassInfos()];
-		for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-		{
-			m_aiUnitClassCount[iI] = 0;
-			m_aiEuropeUnitsPurchased[iI] = 0;
-		}
-
-		FAssertMsg(m_aiBuildingClassCount==NULL, "about to leak memory, CvTeam::m_aiBuildingClassCount");
-		m_aiBuildingClassCount = new int [GC.getNumBuildingClassInfos()];
-		for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
-		{
-			m_aiBuildingClassCount[iI] = 0;
-		}
-
-		m_aeRevealedBonuses.clear();
-
 		AI_reset();
 	}
 }
@@ -516,23 +435,23 @@ void CvTeam::shareCounters(TeamTypes eTeam)
 		}
 	}
 
-	for (iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 	{
 		changeUnitClassCount(((UnitClassTypes)iI), kOtherTeam.getUnitClassCount((UnitClassTypes)iI));
 	}
 
-	for (iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumBuildingClassInfos(); iI++)
 	{
 		changeBuildingClassCount((BuildingClassTypes)iI, kOtherTeam.getBuildingClassCount((BuildingClassTypes)iI));
 	}
 
-	for (iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumFatherPointInfos(); iI++)
 	{
 		FatherPointTypes ePointType = (FatherPointTypes) iI;
 		changeFatherPoints(ePointType, kOtherTeam.getFatherPoints(ePointType));
 	}
 
-	for (iI = 0; iI < GC.getNumFatherInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumFatherInfos(); iI++)
 	{
 		FatherTypes eFather = (FatherTypes) iI;
 		setFatherIgnore(eFather, isFatherIgnore(eFather) && kOtherTeam.isFatherIgnore(eFather));
@@ -719,6 +638,7 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 			if ((kPlayer.getTeam() == getID()) || (kPlayer.getTeam() == eTeam))
 			{
 				kPlayer.validateMissions();
+				kPlayer.validateTradePosts(); // WTP, ray, Native Trade Posts - START
 			}
 		}
 
@@ -1508,7 +1428,7 @@ int CvTeam::getBuildingClassCountPlusMaking(BuildingClassTypes eIndex) const
 }
 
 
-int CvTeam::countTotalCulture()
+int CvTeam::countTotalCulture() const
 {
 	int iCount;
 	int iI;
@@ -1730,7 +1650,7 @@ int CvTeam::getFatherPointCost(FatherTypes eFather, FatherPointTypes ePointType)
 int CvTeam::getFatherPoints(FatherPointTypes ePointType) const
 {
 	FAssert((ePointType >= 0) && (ePointType < GC.getNumFatherPointInfos()));
-	return m_aiFatherPoints[ePointType];
+	return m_em_iFatherPoints.get(ePointType);
 }
 
 void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
@@ -1741,8 +1661,8 @@ void CvTeam::changeFatherPoints(FatherPointTypes ePointType, int iChange)
 	{
 		if (hasColonialPlayer())
 		{
-			m_aiFatherPoints[ePointType] += iChange;
-			FAssert(m_aiFatherPoints[ePointType] >= 0);
+			m_em_iFatherPoints.add(ePointType, iChange);
+			FAssert(m_em_iFatherPoints.get(ePointType) >= 0);
 		}
 	}
 }
@@ -1769,13 +1689,13 @@ int CvTeam::getBestFatherPointMultiplier() const
 bool CvTeam::isFatherIgnore(FatherTypes eFather) const
 {
 	FAssert((eFather >= 0) && (eFather < GC.getNumFatherInfos()));
-	return m_abFatherIgnore[eFather];
+	return m_em_bFatherIgnore.get(eFather);
 }
 
 void CvTeam::setFatherIgnore(FatherTypes eFather, bool bValue)
 {
 	FAssert((eFather >= 0) && (eFather < GC.getNumFatherInfos()));
-	m_abFatherIgnore[eFather] = bValue;
+	m_em_bFatherIgnore.set(eFather, bValue);
 }
 
 bool CvTeam::canConvinceFather(FatherTypes eFather) const
@@ -2203,8 +2123,8 @@ bool CvTeam::isHasMet(TeamTypes eIndex)	const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	//FAssert((eIndex != getID()) || m_abHasMet[eIndex]);
-	return m_abHasMet[eIndex];
+	//FAssert((eIndex != getID()) || m_em_bHasMet[eIndex]);
+	return m_em_bHasMet.get(eIndex);
 }
 
 void CvTeam::makeHasMet(TeamTypes eIndex, bool bNewDiplo)
@@ -2217,7 +2137,7 @@ void CvTeam::makeHasMet(TeamTypes eIndex, bool bNewDiplo)
 
 	if (!isHasMet(eIndex))
 	{
-		m_abHasMet[eIndex] = true;
+		m_em_bHasMet.set(eIndex, true);
 
 		AI_setAtPeaceCounter(eIndex, 0);
 		AI_setAtWarCounter(eIndex, 0);
@@ -2315,7 +2235,7 @@ bool CvTeam::isAtWar(TeamTypes eIndex) const
 	}
 	else
 	{
-		return m_abAtWar[eIndex];
+		return m_em_bAtWar.get(eIndex);
 	}
 }
 
@@ -2330,7 +2250,7 @@ void CvTeam::setAtWar(TeamTypes eIndex, bool bNewValue)
 		AI_setOpenBordersCounter(eIndex, 0);
 	}
 
-	m_abAtWar[eIndex] = bNewValue;
+	m_em_bAtWar.set(eIndex, bNewValue);
 }
 
 
@@ -2338,7 +2258,7 @@ bool CvTeam::isPermanentWarPeace(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abPermanentWarPeace[eIndex];
+	return m_em_bPermanentWarPeace.get(eIndex);
 }
 
 
@@ -2346,7 +2266,7 @@ void CvTeam::setPermanentWarPeace(TeamTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abPermanentWarPeace[eIndex] = bNewValue;
+	m_em_bPermanentWarPeace.set(eIndex, bNewValue);
 }
 
 
@@ -2360,7 +2280,7 @@ bool CvTeam::isOpenBorders(TeamTypes eIndex) const
 		return false;
 	}
 
-	return m_abOpenBorders[eIndex];
+	return m_em_bOpenBorders.get(eIndex);
 }
 
 
@@ -2371,7 +2291,7 @@ void CvTeam::setOpenBorders(TeamTypes eIndex, bool bNewValue)
 
 	if (isOpenBorders(eIndex) != bNewValue)
 	{
-		m_abOpenBorders[eIndex] = bNewValue;
+		m_em_bOpenBorders.set(eIndex, bNewValue);
 
 		AI_setOpenBordersCounter(eIndex, 0);
 
@@ -2391,7 +2311,7 @@ bool CvTeam::isDefensivePact(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abDefensivePact[eIndex];
+	return m_em_bDefensivePact.get(eIndex);
 }
 
 
@@ -2402,7 +2322,7 @@ void CvTeam::setDefensivePact(TeamTypes eIndex, bool bNewValue)
 
 	if (isDefensivePact(eIndex) != bNewValue)
 	{
-		m_abDefensivePact[eIndex] = bNewValue;
+		m_em_bDefensivePact.set(eIndex, bNewValue);
 
 		if ((getID() == GC.getGameINLINE().getActiveTeam()) || (eIndex == GC.getGameINLINE().getActiveTeam()))
 		{
@@ -2422,7 +2342,7 @@ bool CvTeam::isForcePeace(TeamTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_abForcePeace[eIndex];
+	return m_em_bForcePeace.get(eIndex);
 }
 
 
@@ -2430,7 +2350,7 @@ void CvTeam::setForcePeace(TeamTypes eIndex, bool bNewValue)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < MAX_TEAMS, "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_abForcePeace[eIndex] = bNewValue;
+	m_em_bForcePeace.set(eIndex, bNewValue);
 
 	if (isForcePeace(eIndex))
 	{
@@ -2445,14 +2365,14 @@ int CvTeam::getUnitClassCount(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiUnitClassCount[eIndex];
+	return m_em_iUnitClassCount.get(eIndex);
 }
 
 void CvTeam::changeUnitClassCount(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiUnitClassCount[eIndex] += iChange;
+	m_em_iUnitClassCount.add(eIndex, iChange);
 	FAssert(getUnitClassCount(eIndex) >= 0);
 }
 
@@ -2460,14 +2380,14 @@ int CvTeam::getBuildingClassCount(BuildingClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiBuildingClassCount[eIndex];
+	return m_em_iBuildingClassCount.get(eIndex);
 }
 
 void CvTeam::changeBuildingClassCount(BuildingClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiBuildingClassCount[eIndex] += iChange;
+	m_em_iBuildingClassCount.add(eIndex, iChange);
 	FAssert(getBuildingClassCount(eIndex) >= 0);
 }
 
@@ -2475,14 +2395,14 @@ int CvTeam::getUnitsPurchasedHistory(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_aiEuropeUnitsPurchased[eIndex];
+	return m_em_iEuropeUnitsPurchased.get(eIndex);
 }
 
 void CvTeam::changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_aiEuropeUnitsPurchased[eIndex] += iChange;
+	m_em_iEuropeUnitsPurchased.add(eIndex, iChange);
 	FAssert(getUnitsPurchasedHistory(eIndex) >= 0);
 }
 
@@ -2889,86 +2809,6 @@ bool CvTeam::checkIndependence() const
 	return false;
 }
 
-void CvTeam::read(FDataStreamBase* pStream)
-{
-	// Init data before load
-	reset();
-
-	uint uiFlag=0;
-	pStream->Read(&uiFlag);	// flags for expansion
-
-	pStream->Read(&m_iNumMembers);
-	pStream->Read(&m_iAliveCount);
-	pStream->Read(&m_iEverAliveCount);
-	pStream->Read(&m_iNumCities);
-	pStream->Read(&m_iTotalLand);
-	pStream->Read(&m_iMapTradingCount);
-	pStream->Read(&m_iGoldTradingCount);
-	pStream->Read(&m_iOpenBordersTradingCount);
-	pStream->Read(&m_iDefensivePactTradingCount);
-	pStream->Read(&m_iPermanentAllianceTradingCount);
-
-	pStream->Read(&m_bMapCentering);
-
-	pStream->Read((int*)&m_eID);
-
-	pStream->Read(MAX_TEAMS, m_abHasMet);
-	pStream->Read(MAX_TEAMS, m_abAtWar);
-	pStream->Read(MAX_TEAMS, m_abPermanentWarPeace);
-	pStream->Read(MAX_TEAMS, m_abOpenBorders);
-	pStream->Read(MAX_TEAMS, m_abDefensivePact);
-	pStream->Read(MAX_TEAMS, m_abForcePeace);
-
-	pStream->Read(GC.getNumFatherInfos(), m_abFatherIgnore);
-	pStream->Read(GC.getNumFatherPointInfos(), m_aiFatherPoints);
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiUnitClassCount);
-	pStream->Read(GC.getNumBuildingClassInfos(), m_aiBuildingClassCount);
-	pStream->Read(GC.getNumUnitClassInfos(), m_aiEuropeUnitsPurchased);
-
-	int iSize;
-	m_aeRevealedBonuses.clear();
-	pStream->Read(&iSize);
-	for (int i = 0; i < iSize; ++i)
-	{
-		BonusTypes eBonus;
-		pStream->Read((int*)&eBonus);
-		m_aeRevealedBonuses.push_back(eBonus);
-	}
-}
-
-void CvTeam::write(FDataStreamBase* pStream)
-{
-	uint uiFlag = 0;
-	pStream->Write(uiFlag);		// flag for expansion
-	pStream->Write(m_iNumMembers);
-	pStream->Write(m_iAliveCount);
-	pStream->Write(m_iEverAliveCount);
-	pStream->Write(m_iNumCities);
-	pStream->Write(m_iTotalLand);
-	pStream->Write(m_iMapTradingCount);
-	pStream->Write(m_iGoldTradingCount);
-	pStream->Write(m_iOpenBordersTradingCount);
-	pStream->Write(m_iDefensivePactTradingCount);
-	pStream->Write(m_iPermanentAllianceTradingCount);
-	pStream->Write(m_bMapCentering);
-	pStream->Write(m_eID);
-	pStream->Write(MAX_TEAMS, m_abHasMet);
-	pStream->Write(MAX_TEAMS, m_abAtWar);
-	pStream->Write(MAX_TEAMS, m_abPermanentWarPeace);
-	pStream->Write(MAX_TEAMS, m_abOpenBorders);
-	pStream->Write(MAX_TEAMS, m_abDefensivePact);
-	pStream->Write(MAX_TEAMS, m_abForcePeace);
-	pStream->Write(GC.getNumFatherInfos(), m_abFatherIgnore);
-	pStream->Write(GC.getNumFatherPointInfos(), m_aiFatherPoints);
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiUnitClassCount);
-	pStream->Write(GC.getNumBuildingClassInfos(), m_aiBuildingClassCount);
-	pStream->Write(GC.getNumUnitClassInfos(), m_aiEuropeUnitsPurchased);
-	pStream->Write(m_aeRevealedBonuses.size());
-	for (std::vector<BonusTypes>::iterator it = m_aeRevealedBonuses.begin(); it != m_aeRevealedBonuses.end(); ++it)
-	{
-		pStream->Write(*it);
-	}
-}
 // CACHE: cache frequently used values
 ///////////////////////////////////////
 
@@ -3000,3 +2840,19 @@ int CvTeam::getTotalProductionRate() const
 	return iProductionRate;
 }
 // PatchMod: Victorys END
+
+void CvTeam::read(FDataStreamBase* pStream)
+{
+	CvSavegameReaderBase readerbase(pStream);
+	CvSavegameReader reader(readerbase);
+
+	read(reader);
+}
+
+void CvTeam::write(FDataStreamBase* pStream)
+{
+	CvSavegameWriterBase writerbase(pStream);
+	CvSavegameWriter writer(writerbase);
+	write(writer);
+	writerbase.WriteFile();
+}

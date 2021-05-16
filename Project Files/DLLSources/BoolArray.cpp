@@ -8,6 +8,7 @@
 #include "CvDLLXMLIFaceBase.h"
 #include "CvGameAI.h"
 #include "CvInitCore.h"
+#include "CvSavegame.h"
 
 #define BOOL_BLOCK ( iIndex >> 5 )
 #define BOOL_INDEX ( iIndex & 0x1F )
@@ -17,7 +18,9 @@ BoolArray::BoolArray(JITarrayTypes eType, bool bDefault)
 , m_iType(eType)
 , m_iLength(getArrayLength(eType))
 , m_bDefault(bDefault)
-{}
+{
+	FAssert(m_iLength > 0);
+}
 
 BoolArray::~BoolArray()
 {
@@ -228,6 +231,63 @@ void BoolArray::Write(FDataStreamBase* pStream)
 	{
 		int iNumBlocks = (iNumElements + 0x1F) >> 5;
 		pStream->Write(iNumBlocks, m_iArray);
+	}
+}
+
+void BoolArray::Read(CvSavegameReader& reader)
+{
+	reset();
+
+	unsigned short iNumElements = 0;
+	reader.Read(iNumElements);
+
+	// -32 will make the loop start by loading a new block
+	int iOffset = -32;
+	unsigned int iBlock = 0;
+		
+
+	for (int i = 0; i < iNumElements; ++i)
+	{
+		if ((i - iOffset) == 32)
+		{
+			// the block is used up. Load the next one
+			iOffset += 32;
+			reader.Read(iBlock);
+		}
+		// read the bool value for the next entry
+		bool bNewSetting = HasBit(iBlock, i - iOffset);
+
+		// read the new index. Will be the same as the old unless xml has changed
+		int iNewIndex = reader.ConvertIndex(getType(), i);
+
+		// store the new bool
+		// the safeSet checks index and ignores invalid indexes like -1.
+		safeSet(bNewSetting, iNewIndex);
+	}
+}
+
+void BoolArray::Write(CvSavegameWriter& writer)
+{
+	unsigned short iNumElements = getNumUsedElements();
+
+	writer.Write(iNumElements);
+
+	if (iNumElements == 0)
+	{
+		reset();
+	}
+	else
+	{
+		// the conversion table will be needed on load
+		// add one if it's not already added
+		writer.GetXmlByteSize(this->getType());
+
+		// save the actual data
+		int iNumBlocks = (iNumElements + 0x1F) >> 5;
+		for (int i = 0; i < iNumBlocks; ++i)
+		{
+			writer.Write(m_iArray[i]);
+		}
 	}
 }
 

@@ -78,9 +78,9 @@ CyPlot* CyPlot::getNearestLandPlot()
 {
 	return m_pPlot ? new CyPlot(m_pPlot->getNearestLandPlot()) : NULL;
 }
-int CyPlot::seeFromLevel(int /*TeamTypes*/ eTeam)
+int CyPlot::seeFromLevel()
 {
-	return m_pPlot ? m_pPlot->seeFromLevel((TeamTypes)eTeam) : -1;
+	return m_pPlot ? m_pPlot->seeFromLevel() : -1;
 }
 int CyPlot::seeThroughLevel()
 {
@@ -281,6 +281,10 @@ int CyPlot::getY()
 bool CyPlot::at(int iX, int iY)
 {
 	return m_pPlot ? m_pPlot->at(iX, iY) : false;
+}
+int CyPlot::getIndex() const
+{
+	return m_pPlot ? m_pPlot->getIndex() : -1;
 }
 int CyPlot::getLatitude()
 {
@@ -637,11 +641,6 @@ int CyPlot::getVisibilityCount(int /*TeamTypes*/ eTeam)
 {
 	return m_pPlot ? m_pPlot->getVisibilityCount((TeamTypes)eTeam) : -1;
 }
-void CyPlot::changeVisibilityCount(int /*TeamTypes*/ eTeam, int iChange, int /*InvisibleTypes*/ eSeeInvisible)
-{
-	if (m_pPlot)
-		m_pPlot->changeVisibilityCount((TeamTypes) eTeam, iChange, (InvisibleTypes) eSeeInvisible);
-}
 int /*PlayerTypes*/ CyPlot::getRevealedOwner(int /*TeamTypes*/ eTeam, bool bDebug)
 {
 	return m_pPlot ? m_pPlot->getRevealedOwner((TeamTypes)eTeam, bDebug) : -1;
@@ -681,11 +680,11 @@ bool CyPlot::changeBuildProgress(int /*BuildTypes*/ eBuild, int iChange, int /*T
 }
 int CyPlot::getCultureRangeCities(int /*PlayerTypes*/ eOwnerIndex, int iRangeIndex)
 {
-	return m_pPlot ? m_pPlot->getCultureRangeCities((PlayerTypes) eOwnerIndex, iRangeIndex) : -1;
+	return m_pPlot ? m_pPlot->getCultureRangeCities((PlayerTypes) eOwnerIndex, (CultureLevelTypes)iRangeIndex) : -1;
 }
 bool CyPlot::isCultureRangeCity(int /*PlayerTypes*/ eOwnerIndex, int iRangeIndex)
 {
-	return m_pPlot ? m_pPlot->isCultureRangeCity((PlayerTypes) eOwnerIndex, iRangeIndex) : false;
+	return m_pPlot ? m_pPlot->isCultureRangeCity((PlayerTypes) eOwnerIndex, (CultureLevelTypes)iRangeIndex) : false;
 }
 int CyPlot::getInvisibleVisibilityCount(int /*TeamTypes*/ eTeam, int /*InvisibleTypes*/ eInvisible)
 {

@@ -431,9 +431,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE</Tag>
-        <English>Religious unrest in %s1_europe has caused increased emigration. A %s2 is waiting in Europe.</English>
+        <English>Religious unrest and bad living conditions in %s1_europe have caused increased emigration. A %s2 is waiting in Europe.</English>
         <French>Des émeutes religieuses ( %s1_europe) ont provoqué un accroissement de l'émigration. Un %s2 vous attend en Europe.</French>
-        <German>Ein %s2 wünscht, in die Kolonien auszuwandern. Er hat vernommen, dass ihm in der Neuen Welt kein Landesherr Vorschriften macht, in welche Kirche er zu gehen habe.</German>
+        <German>Ein %s2 wünscht, in die Kolonien auszuwandern. Er hat vernommen, dass ihm in der Neuen Welt kein Landesherr Vorschriften macht, in welche Kirche er zu gehen habe und wie gut das Leben dort sei.</German>
         <Italian>I disordini religiosi in %s1_europe hanno causato un aumento dell'emigrazione. %s2 attende in Europa.</Italian>
         <Spanish>El malestar religioso en %s1_europe ha aumentado la emigración. [NUM2:Un:Una] %s2 aguarda en Europa.</Spanish>
     </TEXT>
@@ -910,6 +910,16 @@
         <Spanish>[ICON_BULLET]Las misiones son un %D1%% más eficaces</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_UNIT_CAN_ESTABLISH_TRADE_POST</Tag>
+        <English>[ICON_BULLET]Can Establish Trade Posts</English>
+        <German>[ICON_BULLET]Kann Handelsposten errichten</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_BETTER_TRADE_POST_RATE</Tag>
+        <English>[ICON_BULLET]Trade Posts are %D1%% more effective</English>
+        <German>[ICON_BULLET]Handelsposten sind %D1%% effektiver</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_NATIVES_CONVERTED</Tag>
         <English>Your mission has converted a Native in %s1_city</English>
         <French>Votre mission a converti un indigène dans la ville : %s1_city</French>
@@ -932,6 +942,16 @@
         <German>In %s1_city haben die Ureinwohner die %s2:3_civ_adjective Mission niedergebrannt und den Missionar in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, als er eine alte Götzenstatue zerbrochen hatte.</German>
         <Italian>I nativi a %s1_city hanno rinnegato la missione %s2_civ_adjective</Italian>
         <Spanish>Los Nativos %s1_city han abandonado la misión %s2:2_civ_adjective.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_ESTABLISHED</Tag>
+        <English>A %s2_civ_adjective trading post has been established in %s1_city</English>
+        <German>Ein %s2:3_civ_adjective Handelsposten wurde in %s1_city errichtet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRADE_POST_REMOVED</Tag>
+        <English>Natives in %s1_city have renounced the %s2_civ_adjective trading post</English>
+        <German>In %s1_city haben die Ureinwohner den %s2:3_civ_adjective Handelsposten niedergebrannt und den Händler in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, da er zu stark gefeilscht hat.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCORE_BREAKDOWN_POPULATION</Tag>
@@ -1471,7 +1491,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_REVOLUTION_EUROPE_TRADE</Tag>
-        <English>[ICON_BULLET]Can continue Trade with Europe</English>
+        <English>[ICON_BULLET]Can continue trade with Europe</English>
         <French>[ICON_BULLET]Peut continuer à commercer avec l'Europe</French>
         <German>[ICON_BULLET]Handel mit Europa weiterhin möglich</German>
         <Italian>[ICON_BULLET]Può continuare a commerciare con l'Europa</Italian>
@@ -1742,18 +1762,10 @@
         <Spanish>[ICON_BULLET]%D1%% al tiempo entre subidas de impuestos</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
-        <English>[ICON_BULLET]%D1%% effect of [ICON_BELLS] on Rebel [ICON_STRENGTH]</English>
-        <French>[ICON_BULLET]Effet des [ICON_BELLS] sur la [ICON_STRENGTH] rebelle %D1%%</French>
-        <German>[ICON_BULLET]%D1%% Auswirkung von [ICON_BELLS] auf [ICON_STRENGTH] der Rebellen</German>
-        <Italian>[ICON_BULLET]%D1%% effetto delle [ICON_BELLS] sulla [ICON_STRENGTH] dei ribelli</Italian>
-        <Spanish>[ICON_BULLET]%D1%% al efecto de [ICON_BELLS] en [ICON_STRENGTH] rebelde</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_EVENT_THE_CITY</Tag>
         <English>the settlement</English>
         <French>la colonie</French>
-        <German/>
+        <English>die Siedlung</English>
         <Italian>l'insediamento</Italian>
         <Spanish>el asentamiento</Spanish>
     </TEXT>
@@ -1775,11 +1787,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FOUND_CITY</Tag>
-        <English>[ICON_BULLET]Can Found a New Settlement</English>
-        <French>[ICON_BULLET]Peut fonder une nouvelle colonie</French>
-        <German>[ICON_BULLET]Kann eine neue Siedlung gründen</German>
-        <Italian>[ICON_BULLET]Può fondare un nuovo insediamento</Italian>
-        <Spanish>[ICON_BULLET]Puede fundar un nuevo asentamiento</Spanish>
+        <English>[ICON_BULLET]Can Found new Colonies in Profession Settler</English>
+        <French>[ICON_BULLET]Peut fonder de nouvelles colonies en profession colons</French>
+        <German>[ICON_BULLET]Kann im Beruf Siedler neue Kolonien gründen</German>
+        <Italian>[ICON_BULLET]Può fondare nuove colonie en trabajo colono</Italian>
+        <Spanish>[ICON_BULLET]Puede fundar nuevas colonias en trabajo colono</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PROMOTION_BOMBARD_TEXT</Tag>
@@ -1999,7 +2011,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_TREASURE</Tag>
-        <English>You have obtained a new %s1_unit. This unit can only be transported by a Galleon. If you do not have a Galleon, your King can transport the unit for you (for a trifling fee..). Just move it to a coastal city with a Dock and click on the appropriate command button.</English>
+        <English>You have obtained a new %s1_unit. This unit can only be transported by a Galleon. If you do not have a Galleon, your King will transport the unit for you (for a trifling fee..). Just move it to a coastal city with a Dock and click on the appropriate command button.</English>
         <French>Vous avez acquis une nouvelle unité : %s1_unit. Cette unité ne peut être transportée que par galion. Si vous n'en possédez pas, votre roi peut la transporter pour vous. Pour cela, il vous suffit de la déplacer dans une colonie côtière puis de cliquer sur le bouton approprié.</French>
         <German>Sie haben eine neue Einheit %s1_unit erhalten. Diese Einheit kann nur von einer Galeone transportiert werden. Wenn Sie keine Galeone haben, kann Ihr König die Einheit für Sie transportieren. Bewegen Sie sie einfach in eine Küstenstadt mit einem Dock und klicken Sie auf den entsprechenden Befehl.</German>
         <Italian>Hai ottenuto un %s1_unit. Può essere trasportato esclusivamente da un galeone. Se non hai un galeone puoi chiedere al re di farlo trasportare per te. Spostati in un insediamento costiero e clicca sul pulsante relativo.</Italian>
@@ -2100,14 +2112,6 @@
         <German>Bearbeiten Sie produzierte und gehandelte Waren</German>
         <Italian>Modifica beni creati e scambiati</Italian>
         <Spanish>Edite los bienes creados y comercializados</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_YIELD_IMPORT_POPUP</Tag>
-        <English>Select imports, exports, minimum and maximum goods stored for %s1_city</English>
-        <French>Sélectionner les imports, les exports, et les seuils de biens stockées à %s1_city</French>
-        <German>Importe, Exporte und gelagerte Mindestgüter, Maximal für die Stadt %s1_city auswählen</German>
-        <Italian>Seleziona importazioni, esportazioni e quantità minima, massimo di beni immagazzinati per %s1_city</Italian>
-        <Spanish>Seleccionar importaciones, exportaciones y las mercancías mínimas, máximo almacenadas en %s1_city</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAPTURES_CARGO</Tag>
@@ -2228,22 +2232,6 @@
         <German>Bis zu</German>
         <Italian>Fino</Italian>
         <Spanish>Hasta</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_POPUP_IMPORT</Tag>
-        <English>Import</English>
-        <French>Importer</French>
-        <German>Import</German>
-        <Italian>Importazione</Italian>
-        <Spanish>Importar</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_POPUP_EXPORT</Tag>
-        <English>Export</English>
-        <French>Exporter</French>
-        <German>Export</German>
-        <Italian>Esportazione</Italian>
-        <Spanish>Exportar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ADVISOR_NO_PROFESSION</Tag>
@@ -2543,7 +2531,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_JOIN_STARVING</Tag>
-        <English>[COLOR_WARNING_TEXT]There is not enough food available to join the Settlement[COLOR_REVERT]</English>
+        <English>[COLOR_WARNING_TEXT]There is not enough food available to join the settlement[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Impossible de se joindre à la colonie : nourriture insuffisante[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Es gibt nicht genügend Nahrung für den Anschluss an die Siedlung[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Non c'è abbastanza cibo a disposizione per unirsi all'insediamento[COLOR_REVERT]</Italian>
@@ -2598,7 +2586,7 @@
         <Spanish>Automatizar todas las acciones del [COLOR_UNIT_TEXT]Pionero[COLOR_REVERT]. La unidad seguirá trabajando hasta que canceléis la automatización.</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_EVASION_SHORT</Tag>
+        <Tag>TXT_KEY_UNIT_EVASION_WITH_CITY_SHORT</Tag>
         <English>[ICON_BULLET]Chance to survive defeat (%s1_city)</English>
         <French>[ICON_BULLET]Chances de survivre à une défaite (%s1_city)</French>
         <German>[ICON_BULLET]Überlebenschance bei Niederlage (%s1_city)</German>
@@ -2606,12 +2594,20 @@
         <Spanish>[ICON_BULLET]Probabilidad de sobrevivir a derrota (%s1_city)</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_UNIT_EVASION</Tag>
+        <Tag>TXT_KEY_UNIT_EVASION_WITH_CITY</Tag>
         <English>[ICON_BULLET]Chance to escape to %s1_city after losing a battle</English>
         <French>[ICON_BULLET]Chances de fuir et de rejoindre %s1_city après avoir perdu une bataille.</French>
         <German>[ICON_BULLET]Fluchtchance nach Niederlage zur Siedlung %s1_city</German>
         <Italian>[ICON_BULLET]Probabilità di fuggire a %s1_city dopo aver perso una battaglia</Italian>
         <Spanish>[ICON_BULLET]Probabilidad de escapar de %s1_city tras perder una batalla</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_UNIT_EVASION_SHORT</Tag>
+        <English>[ICON_BULLET]Chance to survive defeat</English>
+        <French>[ICON_BULLET]Chances de survivre à une défaite</French>
+        <German>[ICON_BULLET]Überlebenschance bei Niederlage</German>
+        <Italian>[ICON_BULLET]Probabilità di sopravvivere alla sconfitta</Italian>
+        <Spanish>[ICON_BULLET]Probabilidad de sobrevivir a derrota</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_EVASION_BUILDINGS</Tag>
@@ -2711,7 +2707,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</English>
+        <English>[ICON_BULLET]%D1%% chance Colonists learn a specialization by hard work</English>
         <French>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</French>
         <German>[ICON_BULLET]%D1%% Chance für Kolonisten durch harte Arbeit zum Spezialisten zu werden</German>
         <Italian>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</Italian>
@@ -2719,7 +2715,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SPECIALIST_PRICE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% Cost of training Colonists in Schools</English>
+        <English>[ICON_BULLET]%D1%% Cost of training Colonists in schools</English>
         <French>[ICON_BULLET]%D1%% Cost of training Colonists in Schools</French>
         <German>[ICON_BULLET]%D1%% Ausbildungskosten von Kolonisten in Schulen</German>
         <Italian>[ICON_BULLET]%D1%% Cost of training Colonists in Schools</Italian>
@@ -2743,7 +2739,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MAP_SCRIPT_ANEWWORLD_DESCR</Tag>
-        <English>A New World waits to be discovered. This map script generates a continent spanning from the north pole to the south pole.</English>
+        <English>A New World waits to be discovered. This map script generates a continent spanning from the North Pole to the South Pole.</English>
         <French>Un Nouveau Monde attend d'être découvert. Ce script de carte génère un continent qui s'étend du Pôle Nord au Pôle Sud.</French>
         <German>Zufallsgenerierte Welt mit einem großen Kontinent, der vom Nord- bis zum Südpol reicht</German>
         <Italian>Un Nuovo Mondo attende di essere scoperto. Lo script di questa mappa crea un continente che si estende dal Polo Nord al Polo Sud.</Italian>

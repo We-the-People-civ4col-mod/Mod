@@ -44,6 +44,30 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		.def("changeCityHealth", &CyCity::changeCityHealth, "void (int)")
 		// R&R, ray, Health - END
 
+		// WTP, ray, Happiness - START
+		.def("getCityHappiness", &CyCity::getCityHappiness, "int ()")
+		.def("setCityHappiness", &CyCity::setCityHappiness, "void (int)")
+		.def("updateCityHappiness", &CyCity::updateCityHappiness, "void ()")
+
+		.def("getCityUnHappiness", &CyCity::getCityUnHappiness, "int ()")
+		.def("setCityUnHappiness", &CyCity::setCityUnHappiness, "void (int)")
+		.def("updateCityUnHappiness", &CyCity::updateCityUnHappiness, "void ()")
+
+		.def("getHappinessFromCrosses", &CyCity::getHappinessFromCrosses, "int ()")
+		.def("getHappinessFromBells", &CyCity::getHappinessFromBells, "int ()")
+		.def("getHappinessFromHealth", &CyCity::getHappinessFromHealth, "int ()")
+		.def("getHappinessFromCulture", &CyCity::getHappinessFromCulture, "int ()")
+		.def("getHappinessFromEducation", &CyCity::getHappinessFromEducation, "int ()")
+		.def("getHappinessFromDomesticDemandsFulfilled", &CyCity::getHappinessFromDomesticDemandsFulfilled, "int ()")
+		.def("getHappinessFromTreaties", &CyCity::getHappinessFromTreaties, "int ()")
+
+		.def("getUnhappinessFromPopulation", &CyCity::getUnhappinessFromPopulation, "int ()")
+		.def("getUnhappinessFromSlavery", &CyCity::getUnhappinessFromSlavery, "int ()")
+		.def("getUnhappinessFromWars", &CyCity::getUnhappinessFromWars, "int ()")
+		.def("getUnhappinessFromMissingDefense", &CyCity::getUnhappinessFromMissingDefense, "int ()")
+		.def("getUnhappinessFromTaxRate", &CyCity::getUnhappinessFromTaxRate, "int ()")
+		// WTP, ray, Happiness - END
+
 		.def("getUnitWorkingPlot", &CyCity::getUnitWorkingPlot, python::return_value_policy<python::manage_new_object>(), "CyUnit* getUnitWorkingPlot(int /*PlotIndex*/)")
 		.def("addPopulationUnit", &CyCity::addPopulationUnit, "void addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfession)")
 		.def("removePopulationUnit", &CyCity::removePopulationUnit, "removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession)")

@@ -3,34 +3,34 @@
     <TEXT>
         <Tag>TXT_KEY_VICTORY_DOMINATION</Tag>
         <English>Domination</English>
-        <French>Domination</French>
+        <French>Suprématie</French>
         <German>Vorherrschaft</German>
-        <Italian>Domination</Italian>
-        <Spanish>Domination</Spanish>
+        <Italian>Supremazia</Italian>
+        <Spanish>Supremacía</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_DOMINATION_PEDIA</Tag>
-        <English>In Colonial Times, European Powers struggled for supremacy in New World. This mod will allow you to feel a bit of that aspect of Colonization history. You will struggle against natives and European Colonies to establish the largest new nation world has ever seen.</English>
-        <French>Dans les temps coloniaux, les puissances européens luttaient pour la suprématie dans le Nouveau Monde. Ce mod vous permet de ressentir quelques aspects de cette Histoire colonial, qui marquera à jamais l'Humanité. Vous combatterez vos rivaux européens et indigènes pour établir la plus grande Nation que le monde n'aura jamais connu.</French>
-        <German>In den Zeiten der Kolonialisierung kämpften die Europäischen Mächte um die Seeherrschaft in der Neuen Welt. Diese Möglichkeiten habt Ihr auch. Kämpft gegen die Ureinwohner und die anderen Kolonialmächte, um die größte Nation in der Neuen Welt zu werden.</German>
-        <Italian>In Colonial Times, European Powers struggled for supremacy in New World. This mod will allow you to feel a bit of that aspect of Colonization history. You will struggle against natives and European Colonies to establish the largest new nation world has ever seen.</Italian>
-        <Spanish>In Colonial Times, European Powers struggled for supremacy in New World. This mod will allow you to feel a bit of that aspect of Colonization history. You will struggle against natives and European Colonies to establish the largest new nation world has ever seen.</Spanish>
+        <English>In colonial times European powers struggled for supremacy in the New World. This mod, "We The People", explores that colonization history. You will negotiate with or struggle against Native nations and other European colonies, working to establish the most successful nation the New World has ever seen.</English>
+        <French>Dans les temps coloniaux, les puissances européens luttaient pour la suprématie dans le Nouveau Monde. Ce mod, "We The People", vous permet de ressentir quelques aspects de cette Histoire colonial, qui marquera à jamais l'Humanité. Vous combatterez vos rivaux européens et indigènes pour établir la plus grande Nation que le monde n'aura jamais connu.</French>
+        <German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Dieser Mod, "We The People", erlaubt Euch das Erleben der Kolonialisierungsgeschichte. Sie werden mit den Ureinwohnern und anderen europäischen Kolonien verhandeln oder gegen sie kämpfen und daran arbeiten, die erfolgreichste Nation zu gründen, die die Neue Welt je gesehen hat.</German>
+        <Italian>In epoca coloniale le potenze europee lottavano per la supremazia nel Nuovo Mondo. Questo mod, "We The People", esplora la storia della colonizzazione. Potrete negoziare o lottare contro le nazioni native e altre colonie europee, lavorando per stabilire la nazione di maggior successo che il Nuovo Mondo abbia mai visto.</Italian>
+        <Spanish>En la época colonial, las potencias europeas lucharon por la supremacía en el Nuevo Mundo. Este mod, "We The People", explora esa historia de colonización. Negociarás con las naciones nativas y otras colonias europeas, o lucharás contra ellas, trabajando para establecer la nación más exitosa que el Nuevo Mundo haya visto jamás.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_PRODUCTION</Tag>
         <English>Industrialisation</English>
         <French>Industrialisation</French>
         <German>Industrialisierung</German>
-        <Italian>Industrialisation</Italian>
-        <Spanish>Industrialisation</Spanish>
+        <Italian>Industrializzazione</Italian>
+        <Spanish>Industrialización</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_PRODUCTION_PEDIA</Tag>
         <English>Start the Industrial Revolution (production rate per turn)</English>
         <French>Commencer la Révolution Industrielle (taux de production par tour)</French>
-        <German>Industrielle Revolution (Produktionsrate pro Runde)</German>
-        <Italian>Start the Industrial Revolution (production rate per turn)</Italian>
-        <Spanish>Start the Industrial Revolution (production rate per turn)</Spanish>
+        <German>Leitet die Industrielle Revolution ein (Produktionsrate pro Runde)</German>
+        <Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
+        <Spanish>Iniciar la revolución industrial (tasa de producción por turno)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_REVOLUTION</Tag>
@@ -40,21 +40,29 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </French>
-        <German>Unabhängigkeit</German>
+        <German>
+            <Text>Unabhängigkeit</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </German>
         <Italian>
             <Text>Indipendenza</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Italian>
         <Spanish>
-            <Text>por independencia</Text>
+            <Text>Independencia</Text>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_REVOLUTION_PEDIA</Tag>
-        <English>????</English>
+        <English>For over 300 years, the European powers fought for supremacy in the New World. You have the opportunity to intervene decisively. Prove yourself in battles against the natives and the other colonial powers, stand up to your king and his expeditionary corps in the War of Independence and lead your nation to independence.</English>
+        <French>Pendant plus de 300 ans, les puissances européennes se sont battues pour la suprématie dans le Nouveau Monde. Vous avez la possibilité d'intervenir de manière décisive. Faites vos preuves dans les batailles contre les indigènes et les autres puissances coloniales, tenez tête à votre roi et à son corps expéditionnaire dans la guerre d'indépendance et menez votre nation à l'indépendance.</French>
+        <German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Ihr habt die Möglichkeit, dabei entscheidend einzugreifen. Bewährt Euch in Kämpfen gegen die Ureinwohner und die anderen Kolonialmächte, setzt Euch im Unabhängigkeitskrieg gegen Euren König und sein Expeditionskorps durch und führt Eure Nation in die Unabhängigkeit.</German>
+        <Italian>Per oltre 300 anni, le potenze europee hanno combattuto per la supremazia nel Nuovo Mondo. Avete l'opportunità di intervenire con decisione. Mettiti alla prova nelle battaglie contro i nativi e le altre potenze coloniali, tieni testa al tuo re e al suo corpo di spedizione nella guerra d'indipendenza e guida la tua nazione all'indipendenza.</Italian>
+        <Spanish>Durante más de 300 años, las potencias europeas lucharon por la supremacía en el Nuevo Mundo. Tienes la oportunidad de intervenir con decisión. Demuestra tu valía en las batallas contra los nativos y las demás potencias coloniales, enfréntate a tu rey y a sus cuerpos expedicionarios en la Guerra de la Independencia y lleva a tu nación a la independencia.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_SCORE</Tag>
@@ -93,8 +101,8 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </German>
-        <Italian>Score Victory after Turn Limit</Italian>
-        <Spanish>Score Victory after Turn Limit</Spanish>
+        <Italian>Punteggio della vittoria dopo il limite del turno</Italian>
+        <Spanish>Marcar la victoria después del límite de turno</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_VICTORY_TIME_PEDIA</Tag>

@@ -34,6 +34,7 @@ public:
 	void addRivers();
 	void doRiver(CyPlot* pStartPlot, CardinalDirectionTypes eCardinalDirection);
 	void addFeatures();
+	void addFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	void addBonuses();
 	void addUniqueBonusType(int /*BonusTypes*/ eBonusType);
 	void addNonUniqueBonusType(int /*BonusTypes*/ eBonusType);
@@ -42,6 +43,7 @@ public:
 
 	void eraseRivers();
 	void eraseFeatures();
+	void eraseFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	void eraseBonuses();
 	void eraseGoodies();
 	void eraseEurope();

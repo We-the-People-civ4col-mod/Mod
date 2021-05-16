@@ -2,6 +2,8 @@
 
 #ifndef TALKINGHEADMESSAGE_H
 #define TALKINGHEADMESSAGE_H
+class CvSavegameReader;
+class CvSavegameWriter;
 
 class CvTalkingHeadMessage
 {
@@ -9,20 +11,22 @@ public:
 	DllExport CvTalkingHeadMessage(int iMessageTurn = 0, int iLen = 0, LPCWSTR pszDesc = NULL, LPCTSTR pszSound = NULL, InterfaceMessageTypes eType = MESSAGE_TYPE_INFO, LPCTSTR icon = NULL, ColorTypes eColor = NO_COLOR, int iX = -1, int iY = -1, bool bShowOffScreenArrows = false, bool bShowOnScreenArrows = false);
 	DllExport virtual ~CvTalkingHeadMessage(void);
 
-	void read(FDataStreamBase& stream);
-	void write(FDataStreamBase& stream) const;
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
+	void resetSavedData();
 
 	// Accessors
 	DllExport const wchar* getDescription() const;
 	void setDescription(CvWString pszDescription);
 	DllExport const CvString& getSound() const;
-	DllExport void setSound(LPCTSTR pszSound);
+	void setSound(LPCTSTR pszSound);
 	DllExport const CvString& getIcon() const;
 	void setIcon(LPCTSTR pszIcon);
 	DllExport int getLength() const;
 	DllExport void setLength(int iLength);
 	DllExport ColorTypes getFlashColor() const;
-	DllExport void setFlashColor(ColorTypes eColor);
+	void setFlashColor(ColorTypes eColor);
 	DllExport int getX() const;
 	void setX(int i);
 	DllExport int getY() const;

@@ -3115,6 +3115,20 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SND_AMB_AFRICA</SoundID>
+			<Filename>Sounds/Ambient/AfricaAmbient</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_AMB_PORTROYALE</SoundID>
+			<Filename>Sounds/Ambient/PortRoyaleAmbient</Filename>
+			<LoadType>STREAMED</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SND_WARR_ATTK_VOX</SoundID>
 			<Filename>Sounds/Units/WarrAttkVox</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>

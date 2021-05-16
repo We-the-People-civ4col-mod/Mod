@@ -62,6 +62,9 @@ public:
 	void Read( FDataStreamBase* pStream );
 	void Write( FDataStreamBase* pStream ) const;
 
+	void Read( CvSavegameReader& reader );
+	void Write( CvSavegameWriter& writer ) const;
+
 	int getLength() const
 	{
 		return m_iLength;
@@ -391,6 +394,33 @@ inline void CLinkList< T >::Write( FDataStreamBase* pStream ) const
 	while ( pNode )
 	{
 		pStream->Write( sizeof ( T ), ( byte* )&pNode->m_data );
+		pNode = next( pNode );
+	}
+}
+
+template < class T >
+inline void CLinkList< T >::Read( CvSavegameReader& reader )
+{
+	int iLength;
+	reader.Read(iLength);
+
+	for ( int i = 0; i < iLength; i++ )
+	{
+		T Data;
+		reader.Read(Data);
+		insertAtEnd(Data);
+	}
+}
+
+template < class T >
+inline void CLinkList< T >::Write( CvSavegameWriter& writer ) const
+{
+	int iLength = getLength();
+	writer.Write( iLength );
+	CLLNode< T >* pNode = head();
+	while ( pNode )
+	{
+		writer.Write(pNode->m_data);
 		pNode = next( pNode );
 	}
 }

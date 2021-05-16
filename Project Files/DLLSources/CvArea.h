@@ -18,15 +18,14 @@ public:
   CvArea();
   virtual ~CvArea();
 
-  void init(int iID, bool bWater);
-	void uninit();
-	void reset(int iID = 0, bool bWater = false, bool bConstructorCall = false);
+	void init(int iID, bool bWater);
+	void reset();
 	int calculateTotalBestNatureYield() const;
 
 	int countCoastalLand() const;
 	int countNumUniqueBonusTypes() const;
 
-	DllExport int getID() const;
+	int getID() const;
 	void setID(int iID);
 	int getNumTiles() const;
 	bool isLake() const;
@@ -85,23 +84,22 @@ protected:
 	int m_iNumCities;
 	int m_iNumStartingPlots;
 	bool m_bWater;
-	int* m_aiUnitsPerPlayer;
-	int* m_aiCitiesPerPlayer;
-	int* m_aiPopulationPerPlayer;
-	int* m_aiPower;
-	int* m_aiBestFoundValue;
-	int* m_aiNumRevealedTiles;
-	AreaAITypes* m_aeAreaAIType;
+	EnumMap<PlayerTypes, int> m_em_iUnitsPerPlayer;
+	EnumMap<PlayerTypes, int> m_em_iCitiesPerPlayer;
+	EnumMap<PlayerTypes, int> m_em_iPopulationPerPlayer;
+	EnumMap<PlayerTypes, int> m_em_iPower;
+	EnumMap<PlayerTypes, int> m_em_iBestFoundValue;
+	EnumMap<TeamTypes  , int> m_em_iNumRevealedTiles;
+	EnumMap<TeamTypes  , AreaAITypes> m_em_eAreaAIType;
 	IDInfo* m_aTargetCities;
-	int** m_aaiYieldRateModifier;
-	int** m_aaiNumTrainAIUnits;
-	int** m_aaiNumAIUnits;
-	int* m_paiNumBonuses;
-	int* m_paiNumImprovements;
+	EnumMap2D<PlayerTypes, YieldTypes , short> m_em2_iYieldRateModifier;
+	EnumMap2D<PlayerTypes, UnitAITypes, int  > m_em2_iNumTrainAIUnits;
+	EnumMap2D<PlayerTypes, UnitAITypes, int  > m_em2_iNumAIUnits;
+	EnumMap<BonusTypes, int> m_em_iNumBonuses;
+	EnumMap<ImprovementTypes, int> m_em_iNumImprovements;
 public:
-	// for serialization
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 };
 
 inline int  CvArea :: getID()                                   const { return m_iID; }

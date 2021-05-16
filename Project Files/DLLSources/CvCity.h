@@ -41,10 +41,10 @@ public:
 	void uninit();
 	void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, int iX = 0, int iY = 0, bool bConstructorCall = false);
 	void setupGraphical();
-	DllExport void kill();
+	void kill();
 
 	// PatchMod: Achievements START
-	bool isHasSpecialBuilding(int iValue);
+	bool isHasSpecialBuilding(int iValue) const;
 	// PatchMod: Achievements END
 
 	// TAC - LbD - Ray - START
@@ -53,6 +53,10 @@ public:
 	bool LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_rounds, int mod_crim, int mod_serv, int l_level);
 	bool LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	bool LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	// R&R, ray, Extra City Defense Attacks - START
 	void doExtraCityDefenseAttacks();
@@ -94,16 +98,16 @@ public:
 
 	int findPopulationRank() const;
 	int findBaseYieldRateRank(YieldTypes eYield) const;
-	DllExport int findYieldRateRank(YieldTypes eYield) const;
+	int findYieldRateRank(YieldTypes eYield) const;
 
 	UnitTypes allUpgradesAvailable(UnitTypes eUnit, int iUpgradeCount = 0) const;
 
 	DllExport bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false, bool bIgnoreUpgrades = false) const;
-	DllExport bool canTrain(UnitCombatTypes eUnitCombat) const;
+	bool canTrain(UnitCombatTypes eUnitCombat) const;
 	DllExport bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	DllExport bool canConvince(FatherPointTypes eFatherPoint, bool bContinue = false, bool bTestVisible = false) const;
 
-	DllExport int getFoodTurnsLeft() const;
+	int getFoodTurnsLeft() const;
 	DllExport bool isProduction() const;
 	bool isProductionUnit() const;
 	bool isProductionBuilding() const;
@@ -113,24 +117,24 @@ public:
 	int getProductionExperience(UnitTypes eUnit = NO_UNIT) const;
 	void addProductionExperience(CvUnit* pUnit);
 
-	DllExport UnitTypes getProductionUnit() const;
+	UnitTypes getProductionUnit() const;
 	UnitAITypes getProductionUnitAI() const;
-	DllExport BuildingTypes getProductionBuilding() const;
+	BuildingTypes getProductionBuilding() const;
 	FatherPointTypes getProductionFatherPoint() const;
 	const CvInfoBase* getProductionInfo() const;
-	DllExport const wchar* getProductionName() const;
-	DllExport const wchar* getProductionNameKey() const;
-	DllExport int getGeneralProductionTurnsLeft() const;
+	const wchar* getProductionName() const;
+	const wchar* getProductionNameKey() const;
+	int getGeneralProductionTurnsLeft() const;
 
 	int getFirstUnitOrder(UnitTypes eUnit) const;
 	int getFirstBuildingOrder(BuildingTypes eBuilding) const;
 	int getNumTrainUnitAI(UnitAITypes eUnitAI) const;
 
-	DllExport int getProduction() const;
-	DllExport int getProductionNeeded(YieldTypes eYield) const;
-	DllExport int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;
-	DllExport int getYieldProductionNeeded(BuildingTypes eBuilding, YieldTypes eYield) const;
-	DllExport int getProductionTurnsLeft() const;
+	int getProduction() const;
+	int getProductionNeeded(YieldTypes eYield) const;
+	int getYieldProductionNeeded(UnitTypes eUnit, YieldTypes eYield) const;
+	int getYieldProductionNeeded(BuildingTypes eBuilding, YieldTypes eYield) const;
+	int getProductionTurnsLeft() const;
 	DllExport int getProductionTurnsLeft(UnitTypes eUnit, int iNum) const;
 	DllExport int getProductionTurnsLeft(BuildingTypes eBuilding, int iNum) const;
 	int getProductionTurnsLeft(int iProductionNeeded, int iProduction, int iFirstProductionDifference, int iProductionDifference) const;
@@ -141,13 +145,13 @@ public:
 	int getProductionModifier(UnitTypes eUnit) const;
 	int getProductionModifier(BuildingTypes eBuilding) const;
 
-	DllExport int getCurrentProductionDifference(bool bOverflow) const;
+	int getCurrentProductionDifference(bool bOverflow) const;
 
 	DllExport bool canHurry(HurryTypes eHurry, bool bTestVisible = false) const;
 	void hurry(HurryTypes eHurry);
 
 	void processBuilding(BuildingTypes eBuilding, int iChange);
-	DllExport HandicapTypes getHandicapType() const;
+	HandicapTypes getHandicapType() const;
 	DllExport CivilizationTypes getCivilizationType() const;
 	LeaderHeadTypes getPersonalityType() const;
 	ArtStyleTypes getArtStyleType() const;
@@ -160,13 +164,13 @@ public:
 
 	DllExport bool isCapital() const;
 	bool isCoastal(int iMinWaterSize) const;
-	DllExport bool isDisorder() const;
+	bool isDisorder() const;
 
 	int extraPopulation() const;
 
 	int foodConsumption(int iExtra = 0) const;
-	DllExport int foodDifference() const;
-	DllExport int growthThreshold() const;
+	int foodDifference() const;
+	int growthThreshold() const;
 
 	int productionLeft() const;
 	int hurryCost(bool bExtra, bool bIgnoreNew) const;
@@ -177,7 +181,7 @@ public:
 	int maxHurryPopulation() const;
 	int hurryYield(HurryTypes eHurry, YieldTypes eYield) const;
 
-	int cultureDistance(int iDX, int iDY) const;
+	CultureLevelTypes cultureDistance(int iDX, int iDY) const;
 
 	// Custom_House_Mod Start
 	bool isBestPortCity() const;
@@ -189,7 +193,7 @@ public:
 	int getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit) const;
 	BuildingTypes getYieldBuilding(YieldTypes eYield) const;
 	DllExport int getID() const;
-	DllExport int getIndex() const;
+	int getIndex() const;
 	DllExport IDInfo getIDInfo() const;
 	void setID(int iID);
 	DllExport int getX() const;
@@ -213,17 +217,23 @@ public:
 	DllExport CvArea* area() const;
 	CvArea* waterArea() const;
 
-	DllExport CvPlot* getRallyPlot() const;
+	CvPlot* getRallyPlot() const;
 	void setRallyPlot(CvPlot* pPlot);
 	int getGameTurnFounded() const;
 	void setGameTurnFounded(int iNewValue);
 	int getGameTurnAcquired() const;
 	void setGameTurnAcquired(int iNewValue);
-	DllExport int getPopulation() const;
-	DllExport void setPopulation(int iNewValue);
-	DllExport void changePopulation(int iChange);
+	int getPopulation() const;
+	void setPopulation(int iNewValue);
+	void changePopulation(int iChange);
 	void updatePopulation(int iOldPopulation);
 	long getRealPopulation() const;
+
+	// WTP, ray, Native Trade Posts - START
+	int getNativeTradePostGold() const;
+	void setNativeTradePostGold (int iNewValue);
+	void changeNativeTradePostGold(int iChange);
+	// WTP, ray, Native Trade Posts - END
 
 	int getHighestPopulation() const;
 	void setHighestPopulation(int iNewValue);
@@ -234,7 +244,7 @@ public:
 
 	int getHealRate() const;
 	void changeHealRate(int iChange);
-	DllExport int getFood() const;
+	int getFood() const;
 	void setFood(int iNewValue);
 	void changeFood(int iChange);
 
@@ -286,12 +296,12 @@ public:
 	void setAllCitizensAutomated(bool bAutomated);
 	void setCitizenAutomated(int iUnitID);
 
-	DllExport bool isProductionAutomated() const;
+	bool isProductionAutomated() const;
 	void setProductionAutomated(bool bNewValue, bool bClear);
 
 	/* allows you to programatically specify a cities walls rather than having them be generated automagically */
 	DllExport bool isWallOverride() const;
-	DllExport void setWallOverride(bool bOverride);
+	void setWallOverride(bool bOverride);
 	DllExport bool isBillboardDirty() const;
 	DllExport void setBillboardDirty(bool bNewValue);
 	DllExport bool isLayoutDirty() const;
@@ -311,7 +321,7 @@ public:
 	PlayerTypes getOriginalOwner() const;
 	void setOriginalOwner(PlayerTypes eNewValue);
 	CultureLevelTypes getCultureLevel() const;
-	DllExport int getCultureThreshold() const;
+	int getCultureThreshold() const;
 	int getCultureThreshold(CultureLevelTypes eLevel) const;
 	void setCultureLevel(CultureLevelTypes eNewValue);
 	void updateCultureLevel();
@@ -339,13 +349,13 @@ public:
 	void changeDomainFreeExperience(DomainTypes eIndex, int iChange);
 	int getDomainProductionModifier(DomainTypes eIndex) const;
 	void changeDomainProductionModifier(DomainTypes eIndex, int iChange);
-	DllExport int getCulture(PlayerTypes eIndex) const;
+	int getCulture(PlayerTypes eIndex) const;
 	int countTotalCulture() const;
 	PlayerTypes findHighestCulture() const;
 	int calculateCulturePercent(PlayerTypes eIndex) const;
 	int calculateTeamCulturePercent(TeamTypes eIndex) const;
 	void setCulture(PlayerTypes eIndex, int iNewValue, bool bPlots);
-	DllExport void changeCulture(PlayerTypes eIndex, int iChange, bool bPlots);
+	void changeCulture(PlayerTypes eIndex, int iChange, bool bPlots);
 
 //VET NewCapacity - begin 1/2
 	int getTotalYieldStored() const; // In python
@@ -372,17 +382,17 @@ public:
 	bool isEverOwned(PlayerTypes eIndex) const;
 	void setEverOwned(PlayerTypes eIndex, bool bNewValue);
 	DllExport bool isRevealed(TeamTypes eIndex, bool bDebug) const;
-	DllExport void setRevealed(TeamTypes eIndex, bool bNewValue);
+	void setRevealed(TeamTypes eIndex, bool bNewValue);
 
 	DllExport const CvWString getName(uint uiForm = 0) const;
 	DllExport const wchar* getNameKey() const;
-	DllExport void setName(const wchar* szNewValue, bool bFound = false);
+	void setName(const wchar* szNewValue, bool bFound = false);
 	void doFoundMessage();
 	// Script data needs to be a narrow string for pickling in Python
 	std::string getScriptData() const;
 	void setScriptData(std::string szNewValue);
 
-	DllExport int getBuildingProduction(BuildingTypes eIndex) const;
+	int getBuildingProduction(BuildingTypes eIndex) const;
 	void setBuildingProduction(BuildingTypes eIndex, int iNewValue);
 	void changeBuildingProduction(BuildingTypes eIndex, int iChange);
 
@@ -390,10 +400,10 @@ public:
 	void setBuildingProductionTime(BuildingTypes eIndex, int iNewValue);
 	void changeBuildingProductionTime(BuildingTypes eIndex, int iChange);
 
-	int getBuildingOriginalOwner(BuildingTypes eIndex) const;
+	PlayerTypes getBuildingOriginalOwner(BuildingTypes eIndex) const;
 	int getBuildingOriginalTime(BuildingTypes eIndex) const;
 
-	DllExport int getUnitProduction(UnitTypes eIndex) const;
+	int getUnitProduction(UnitTypes eIndex) const;
 	void setUnitProduction(UnitTypes eIndex, int iNewValue);
 	void changeUnitProduction(UnitTypes eIndex, int iChange);
 
@@ -407,9 +417,9 @@ public:
 	bool isFreePromotion(PromotionTypes eIndex) const;
 	void changeFreePromotionCount(PromotionTypes eIndex, int iChange);
 	CvUnit* getUnitWorkingPlot(int iPlotIndex) const;
-	DllExport bool isUnitWorkingPlot(int iPlotIndex) const;
+	bool isUnitWorkingPlot(int iPlotIndex) const;
 	bool isUnitWorkingAnyPlot(const CvUnit* pUnit) const;
-	DllExport CvUnit* getUnitWorkingPlot(const CvPlot* pPlot) const;
+	CvUnit* getUnitWorkingPlot(const CvPlot* pPlot) const;
 	bool isUnitWorkingPlot(const CvPlot* pPlot) const;
 	void clearUnitWorkingPlot(int iPlotIndex);
 	void clearUnitWorkingPlot(CvPlot* pPlot);
@@ -417,11 +427,11 @@ public:
 	//Androrc Multiple Professions per Building
 	void alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool bAskProfession);
 	//Androrc End
-	DllExport void alterUnitProfession(int iUnitId, ProfessionTypes eProfession);
-	DllExport void ejectToTransport(int iUnitId, int iTransportId);
+	void alterUnitProfession(int iUnitId, ProfessionTypes eProfession);
+	void ejectToTransport(int iUnitId, int iTransportId);
 	void replaceCitizen(int iUnitId, int iReplacedUnitId, bool bAskProfession);
 	bool isHasRealBuilding(BuildingTypes eIndex) const;
-	DllExport void setHasRealBuilding(BuildingTypes eIndex, bool bNewValue);
+	void setHasRealBuilding(BuildingTypes eIndex, bool bNewValue);
 	void setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool bFirst, PlayerTypes eOriginalOwner, int iOriginalTime);
 	bool isValidBuildingLocation(BuildingTypes eIndex) const;
 	bool isHasFreeBuilding(BuildingTypes eIndex) const;
@@ -437,8 +447,8 @@ public:
 	void getOrdersWaitingForYield(std::vector< std::pair<OrderTypes, int> >& aOrders, YieldTypes eYield, bool bYieldsComplete, int iChange) const;
 	void startHeadOrder();
 	void stopHeadOrder();
-	DllExport int getOrderQueueLength() const;
-	DllExport OrderData* getOrderFromQueue(int iIndex);
+	int getOrderQueueLength() const;
+	OrderData* getOrderFromQueue(int iIndex);
 	DllExport CLLNode<OrderData>* nextOrderQueueNode(CLLNode<OrderData>* pNode) const;
 	DllExport CLLNode<OrderData>* headOrderQueueNode() const;
 	CLLNode<OrderData>* tailOrderQueueNode() const;
@@ -456,7 +466,7 @@ public:
 	DllExport bool getCityBillboardTopBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 	DllExport bool getCityBillboardBottomBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 
-	DllExport void setWallOverridePoints(const std::vector< std::pair<float, float> >& kPoints); /* points are given in world space ... i.e. PlotXToPointX, etc */
+	void setWallOverridePoints(const std::vector< std::pair<float, float> >& kPoints); /* points are given in world space ... i.e. PlotXToPointX, etc */
 	DllExport const std::vector< std::pair<float, float> >& getWallOverridePoints() const;
 	int getTriggerValue(EventTriggerTypes eTrigger) const;
 	bool canApplyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
@@ -466,13 +476,13 @@ public:
 	int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
 	void setBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
 	void changeBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield, int iChange);
-	DllExport PlayerTypes getLiberationPlayer(bool bConquest) const;
+	PlayerTypes getLiberationPlayer(bool bConquest) const;
 	void liberate(bool bConquest);
 
 	int getMaxYieldCapacity() const;
 	bool isAutoRaze() const;
 	void setScoutVisited(TeamTypes eTeam, bool bVisited);
-	DllExport bool isScoutVisited(TeamTypes eTeam) const;
+	bool isScoutVisited(TeamTypes eTeam) const;
 	GoodyTypes getGoodyType(const CvUnit* pUnit) const;
 	int doGoody(CvUnit* pUnit, GoodyTypes eGoody);
 	PlayerTypes getMissionaryPlayer() const;
@@ -481,22 +491,57 @@ public:
 	int getMissionaryRate() const;
 	void setMissionaryRate(int iRate);
 
+	// WTP, ray, Native Trade Posts - START
+	PlayerTypes getTradePostPlayer() const;
+	CivilizationTypes getTradePostCivilization() const;
+	void setTradePostPlayer(PlayerTypes ePlayer);
+	int getNativeTradeRate() const;
+	void setNativeTradeRate(int iRate);
+	// WTP, ray, Native Trade Posts - END
+
 	// R&R, ray , Stirring Up Natives - START
 	bool getHasBeenStirredUp() const;
 	void setHasBeenStirredUp(bool stirredUp);
 	// R&R, ray , Stirring Up Natives - END
 
-	DllExport int getRebelPercent() const;
-	DllExport int getRebelSentiment() const;
-	DllExport void setRebelSentiment(int iValue);
+	int getRebelPercent() const;
+	int getRebelSentiment() const;
+	void setRebelSentiment(int iValue);
 
 	// R&R, ray, Health - START
-	DllExport int getCityHealth() const;
-	DllExport int getCityHealthChange() const;
-	DllExport int getCityHealthChangeFromPopulation() const;
-	DllExport void setCityHealth(int iValue);
-	DllExport void changeCityHealth(int iValue);
+	int getCityHealth() const;
+	int getCityHealthChange() const;
+	int getCityHealthChangeFromPopulation() const;
+	void setCityHealth(int iValue);
+	void changeCityHealth(int iValue);
 	// R&R, ray, Health - END
+
+	// WTP, ray, Happiness - START
+	int getCityHappiness() const;
+	void setCityHappiness(int iValue);
+	void updateCityHappiness();
+	int getCityUnHappiness() const;
+	void setCityUnHappiness(int iValue);
+	void updateCityUnHappiness();
+
+	int getUnhappinessFromPopulation() const;
+	int getUnhappinessFromSlavery() const;
+	int getUnhappinessFromWars() const;
+	int getUnhappinessFromMissingDefense() const;
+
+	int getHappinessFromCrosses() const;
+	int getHappinessFromBells() const;
+	int getHappinessFromHealth() const;
+	int getHappinessFromCulture() const;
+	int getHappinessFromEducation() const;
+	int getHappinessFromDomesticDemandsFulfilled() const;
+	int getHappinessFromTreaties() const;
+	int getUnhappinessFromTaxRate() const;
+
+	int getCityTimerFestivitiesOrUnrest() const;
+	void setCityTimerFestivitiesOrUnrest(int iValue);
+	void changeCityTimerFestivitiesOrUnrest(int iValue);
+	// WTP, ray, Happiness - END
 
 	int getTeachUnitMultiplier() const;
 	void setTeachUnitMultiplier(int iModifier);
@@ -511,8 +556,10 @@ public:
 
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
-	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
 	virtual void AI_doTurn() = 0;
@@ -547,7 +594,7 @@ public:
 	virtual BuildTypes AI_getBestBuild(int iIndex) const = 0;
 	virtual void AI_updateBestBuild() = 0;
 	virtual int AI_cityValue() const = 0;
-	virtual int AI_clearFeatureValue(int iIndex) = 0;
+	virtual int AI_clearFeatureValue(int iIndex) const = 0;
 	virtual int AI_calculateCulturePressure() const = 0;
 	virtual int AI_calculateWaterWorldPercent() const = 0;
 	virtual int AI_playerCloseness(PlayerTypes eIndex, int iMaxDistance = 7) const = 0;
@@ -611,7 +658,7 @@ public:
 	CvUnit* removeUnitType(UnitTypes eUnit, ProfessionTypes eProfession);
 	void removeNonCityPopulationUnits();
 	int getPopulationUnitId(int iPlotIndex) const;
-	DllExport CvUnit* getPopulationUnitById(int iUnitId) const;
+	CvUnit* getPopulationUnitById(int iUnitId) const;
 	CvUnit* getPopulationUnitByIndex(int iUnitIndex) const;
 	int getPopulationUnitIndex(CvUnit *pUnit) const;
 	CvPlot* getPlotWorkedByUnit(const CvUnit* pUnit) const;
@@ -647,7 +694,7 @@ public:
 	int getCustomHouseSellThreshold(YieldTypes eYield) const;
 	void setCustomHouseNeverSell(YieldTypes eYield, bool bNeverSell);
 	bool isCustomHouseNeverSell(YieldTypes eYield) const;
-	void createFleeingUnit(UnitTypes eUnit);
+	void createFleeingUnit(UnitTypes eUnit, bool bDefautAI); // WTP, ray, LbD Slaves Revolt and Free - START - adjusted to also have DefaultAI
 	// R&R, ray, finishing Custom House Screen END
 	// Teacher List - start - Nightinggale
 	int getOrderedStudents(UnitTypes eUnit);
@@ -657,7 +704,7 @@ public:
 
 	YieldTypes getPreferredYieldAtCityPlot() const { return m_ePreferredYieldAtCityPlot; }
 	
-	void writeDesyncLog(FILE *f);
+	void writeDesyncLog(FILE *f) const;
 
 protected:
 	int m_iID;
@@ -686,9 +733,14 @@ protected:
 	int m_iCitySizeBoost;
 	int m_iHammers;
 	int m_iMissionaryRate;
+	int m_iNativeTradeRate; // WTP, ray, Native Trade Posts - START
+	int m_iTradePostGold; // WTP, ray, Native Trade Posts - START
 	bool m_bStirredUp; // R&R, ray , Stirring Up Natives
 	int m_iRebelSentiment;
 	int m_iCityHealth; // R&R, ray, Health
+	int m_iCityHappiness; // WTP, ray, Happiness
+	int m_iCityUnHappiness; // WTP, ray, Happiness
+	int m_iCityTimerFestivitiesOrUnrest; // WTP, ray, Happiness
 	int m_iTeachUnitMultiplier;
 	int m_iEducationThresholdMultiplier;
 	int m_iTotalYieldStored;			//VET NewCapacity - 2/2
@@ -705,46 +757,46 @@ protected:
 	CultureLevelTypes m_eCultureLevel;
 	UnitClassTypes m_eTeachUnitClass;
 	PlayerTypes m_eMissionaryPlayer;
-	int* m_aiLandPlotYield; // R&R, ray, Landplot Yields
-	int* m_aiSeaPlotYield;
-	int* m_aiRiverPlotYield;
-	int* m_aiYieldRateModifier;
-	int* m_aiYieldStored;
-	int* m_aiYieldRushed;
+	PlayerTypes m_eTradePostPlayer; // WTP, ray, Native Trade Posts - START
+	EnumMap<YieldTypes,int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields
+	EnumMap<YieldTypes,int> m_em_iSeaPlotYield;
+	EnumMap<YieldTypes,int> m_em_iRiverPlotYield;
+	EnumMap<YieldTypes,int> m_em_iYieldRateModifier;
+	EnumMap<YieldTypes,int> m_em_iYieldStored;
+	EnumMap<YieldTypes,int> m_em_iYieldRushed;
 	// R&R, Androrc, Domestic Market
-	int* m_aiYieldBuyPrice;
+	EnumMap<YieldTypes,int> m_em_iYieldBuyPrice;
 	//Androrc End
 	
 	// R&R, ray, finishing Custom House Screen
-	YieldArray<int> ma_aiCustomHouseSellThreshold;
-	BoolArray       ba_aiCustomHouseNeverSell;
+	EnumMap<YieldTypes,int> m_em_iCustomHouseSellThreshold;
+	EnumMap<YieldTypes,bool> m_em_bCustomHouseNeverSell;
 	// R&R, ray, finishing Custom House Screen END
 
 	// Teacher List - start - Nightinggale
-	UnitArray<int> ma_OrderedStudents;
-	BoolArray      ba_OrderedStudentsRepeat;
+	EnumMap<UnitTypes,int> m_em_iOrderedStudents;
+	EnumMap<UnitTypes,bool> m_em_bOrderedStudentsRepeat;
 	// Teacher List - end - Nightinggale
-
-	int* m_aiDomainFreeExperience;
-	int* m_aiDomainProductionModifier;
-	int* m_aiCulture;
-	bool* m_abEverOwned;
-	bool* m_abRevealed;
-	bool* m_abScoutVisited;
+	EnumMap<DomainTypes,int> m_em_iDomainFreeExperience;
+	EnumMap<DomainTypes,int> m_em_iDomainProductionModifier;
+	EnumMap<PlayerTypes,int> m_em_iCulture;
+	EnumMap<PlayerTypes,bool> m_em_bEverOwned;
+	EnumMap<TeamTypes,bool> m_em_bRevealed;
+	EnumMap<TeamTypes,bool> m_em_bScoutVisited;
 	CvWString m_szName;
 	CvString m_szScriptData;
-	int* m_paiBuildingProduction;
-	int* m_paiBuildingProductionTime;
-	int* m_paiBuildingOriginalOwner;
-	int* m_paiBuildingOriginalTime;
-	int* m_paiUnitProduction;
-	int* m_paiUnitProductionTime;
-	int* m_aiSpecialistWeights;
-	int* m_paiUnitCombatFreeExperience;
-	int* m_paiFreePromotionCount;
-	bool* m_pabHasRealBuilding;
-	bool* m_pabHasFreeBuilding;
-	int* m_paiWorkingPlot;
+	EnumMap<BuildingTypes,int> m_em_iBuildingProduction;
+	EnumMap<BuildingTypes,int> m_em_iBuildingProductionTime;
+	EnumMapDefault<BuildingTypes,PlayerTypes,NO_PLAYER> m_em_eBuildingOriginalOwner;
+	EnumMap<BuildingTypes,int> m_em_iBuildingOriginalTime;
+	EnumMap<UnitTypes,int> m_em_iUnitProduction;
+	EnumMap<UnitTypes,int> m_em_iUnitProductionTime;
+	EnumMap<UnitTypes,int> m_em_iSpecialistWeights;
+	EnumMap<UnitCombatTypes,int> m_em_iUnitCombatFreeExperience;
+	EnumMap<PromotionTypes,int> m_em_iFreePromotionCount;
+	EnumMap<BuildingTypes,bool> m_em_bHasRealBuilding;
+	EnumMap<BuildingTypes,bool> m_em_bHasFreeBuilding;
+	EnumMapInt<CityPlotTypes, int, -1> m_em_iWorkingPlot;
 	IDInfo* m_paTradeCities;
 	mutable CLinkList<OrderData> m_orderQueue;
 	std::vector< std::pair < float, float> > m_kWallOverridePoints;
@@ -752,21 +804,13 @@ protected:
 	std::vector<BuildingYieldChange> m_aBuildingYieldChange;
 	std::vector<CvUnit*> m_aPopulationUnits;
 
-	// traderoute just-in-time - start - Nightinggale
-	BoolArray ba_tradeImports;
-	BoolArray ba_tradeExports;
-	YieldArray<unsigned short> ma_tradeThreshold;
-	// traderoute just-in-time - end - Nightinggale
-	
-	YieldArray<unsigned short> ma_tradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
-
 	// CACHE: cache frequently used values
 	mutable int	m_iPopulationRank;
 	mutable bool m_bPopulationRankValid;
-	int*	m_aiBaseYieldRank;
-	bool*	m_abBaseYieldRankValid;
-	int*	m_aiYieldRank;
-	bool*	m_abYieldRankValid;
+	mutable EnumMapDefault<YieldTypes,int,-1> m_em_iBaseYieldRank;
+	mutable EnumMap<YieldTypes,bool> m_em_bBaseYieldRankValid;
+	mutable EnumMapDefault<YieldTypes,int,-1> m_em_iYieldRank;
+	mutable EnumMap<YieldTypes,bool> m_em_bYieldRankValid;
 
 	void doGrowth();
 	void doYields();
@@ -779,8 +823,11 @@ protected:
 	void doPrices(); // R&R, Androrc, Domestic Market
 	void doDecay();
 	void doMissionaries();
-	void doRebelSentiment();
+	void doNativeTradePost(); // WTP, ray, Native Trade Posts - START
+	void doRebelSentiment(); 
 	void doCityHealth(); // R&R, ray, Health - START
+	void doCityHappiness(); // WTP, ray, Happiness - START
+	void doCityUnHappiness(); // WTP, ray, Happiness - START
 	bool doCheckProduction();
 	void doCheat(bool bAlt, bool bShift, bool bCtrl);
 	int getExtraProductionDifference(int iExtra, int iModifier) const;
@@ -817,10 +864,18 @@ public:
 	void setAutoThresholdCache();
 
 protected:
-	BoolArray ba_tradeImportsMaintain;
-	BoolArray ba_tradeStopAutoImport;
-	YieldArray<int> ma_tradeAutoThreshold; // nosave - recalculate on load
-	YieldArray<int> ma_productionNeeded; // nosave - recalculate on load
+	// traderoute popup arrays
+	EnumMap<YieldTypes, bool> m_em_bTradeImports;
+	EnumMap<YieldTypes, bool> m_em_bTradeExports;
+	EnumMap<YieldTypes, bool> m_em_bTradeImportsMaintain;
+	EnumMap<YieldTypes, bool> m_em_bTradeAutoExport;
+	EnumMap<YieldTypes, unsigned short> m_em_iTradeMaxThreshold;// R&R mod, vetiarvind, max yield import limit
+	EnumMap<YieldTypes, unsigned short> m_em_iTradeThreshold;
+
+	// saves the hysteresis state
+	EnumMap<YieldTypes,bool> m_em_bTradeStopAutoImport;
+	EnumMap<YieldTypes,int> m_em_iTradeAutoThreshold; // nosave - recalculate on load
+	EnumMap<YieldTypes,int> m_em_iProductionNeeded; // nosave - recalculate on load
 
 	// setImportsMaintain() is only allowed to be called by doTask() or it will cause desyncs
 	void setImportsMaintain(YieldTypes eYield, bool bSetting);
@@ -828,12 +883,12 @@ protected:
 	
 	// auto traderoute - start - Nightinggale
 public:
-	bool isAutoExport(YieldTypes eYield) const {return ba_tradeAutoExport.get(eYield);};
+	bool isAutoExport(YieldTypes eYield) const {return m_em_bTradeAutoExport.get(eYield);};
 protected:
 	void setAutoExport(YieldTypes eYield, bool bExport);
 	void doAutoExport(YieldTypes eYield);
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
-	BoolArray ba_tradeAutoExport;
+	
 	// auto traderoute - end - Nightinggale
 
 public:
@@ -864,6 +919,9 @@ public:
 	inline int getStorageLossSellPercentage()const					{ return m_iStorageLossSellPercentage; }
 	inline bool getIgnoresBoycott()const							{ return m_bIgnoresBoycott; }
 	inline bool getHasUnlockedStorageLossTradeSettings()const		{ return m_bHasUnlockedStorageLossTradeSettings; }
+
+	int getMaxImportAmount(YieldTypes eYield) const;
+
 };
 
 // NBMOD EDU cache - start - Nightinggale
@@ -883,22 +941,22 @@ inline int CvCity::getMaxYieldCapacity() const
 // transport feeder - start - Nightinggale
 inline bool CvCity::getImportsMaintain(YieldTypes eYield) const
 {
-	return ba_tradeImportsMaintain.get(eYield);
+	return m_em_bTradeImportsMaintain.get(eYield);
 }
 
 inline bool CvCity::isAutoImportStopped(YieldTypes eYield) const
 {
-	return ba_tradeStopAutoImport.get(eYield);
+	return m_em_bTradeStopAutoImport.get(eYield);
 }
 
 inline int CvCity::getAutoMaintainThreshold(YieldTypes eYield) const
 {
-	return ma_tradeAutoThreshold.get(eYield);
+	return m_em_iTradeAutoThreshold.get(eYield);
 }
 
 inline int CvCity::getProductionNeeded(YieldTypes eYield) const
 {
-	return ma_productionNeeded.get(eYield);
+	return m_em_iProductionNeeded.get(eYield);
 }
 // transport feeder - end - Nightinggale
 #endif

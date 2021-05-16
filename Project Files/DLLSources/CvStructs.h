@@ -10,6 +10,23 @@
 
 // XXX these should not be in the DLL per se (if the user changes them, we are screwed...)
 
+/*
+ * Despite the warning, this file isn't completely off limits to modding.
+ * The warning says the exe assumes a certain memory layout of the structs.
+ * This means whatever we do, we can't change the memory layout, which is severely limiting to what we can do.
+ * We can't add/remove/alter variables and we can't add hidden variables like virtual function pointers
+ *    (automatically created with virtual function declarations)
+ * What we can do is everything, which doesn't affect the memory layout at all.
+ * Realistically speaking, this is likely limited to adding new (non-virtual) functions.
+ * This means it should be safe to add functions to support CvSavegame.h.
+ * However since we can't change the variables themselves it makes no sense to add an enum to support changes in variables in savegames.
+ * Savegames should use the vanilla approach of just read/write everything in order.
+ * Maybe add something to conditionally save variables in big structs if they are prone to lots of default values.
+ *
+ * Nightinggale
+ */
+
+
 struct DllExport XYCoords
 {
 	XYCoords(int x=0, int y=0) : iX(x), iY(y) {}
@@ -43,6 +60,9 @@ struct DllExport IDInfo
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream) const;
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport GameTurnInfo
@@ -57,6 +77,9 @@ struct DllExport OrderData
 	int iData1;
 	int iData2;
 	bool bSave;
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport MissionData
@@ -66,6 +89,9 @@ struct DllExport MissionData
 	int iData2;
 	int iFlags;
 	int iPushTurn;
+	
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport TradeData
@@ -78,6 +104,9 @@ struct DllExport TradeData
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream) const;
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct EventTriggeredData
@@ -100,6 +129,9 @@ struct EventTriggeredData
 	void setID(int iID);
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct EventMessage
@@ -121,6 +153,9 @@ struct PlotExtraYield
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 typedef std::vector< std::pair<BuildingClassTypes, int> > BuildingChangeArray;
@@ -133,6 +168,9 @@ struct BuildingYieldChange
 
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
+
+	void read(CvSavegameReader& reader);
+	void write(CvSavegameWriter& writer) const;
 };
 
 struct DllExport FOWVis

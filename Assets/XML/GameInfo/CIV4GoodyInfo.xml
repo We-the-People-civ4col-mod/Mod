@@ -615,5 +615,55 @@
             <bUnique>1</bUnique>
             <GoodyWeights/>
         </GoodyInfo>
+        <GoodyInfo>
+            <Type>GOODY_RANGER</Type>
+            <Description>TXT_KEY_GOODY_RANGER</Description>
+            <Sound>AS2D_GOODY_XP</Sound>
+            <AnnounceText>TXT_KEY_GOODY_RANGER</AnnounceText>
+            <ChiefText>TXT_KEY_GOODY_RANGER</ChiefText>
+            <iGold>0</iGold>
+            <iGoldRand1>0</iGoldRand1>
+            <iGoldRand2>0</iGoldRand2>
+            <iImmigration>0</iImmigration>
+            <iMapOffset>0</iMapOffset>
+            <iMapRange>0</iMapRange>
+            <iMapProb>0</iMapProb>
+            <iExperience>0</iExperience>
+            <iHealing>0</iHealing>
+            <iDamagePrereq>0</iDamagePrereq>
+            <bBad>0</bBad>
+            <bWar>0</bWar>
+            <UnitClass>UNITCLASS_RANGER</UnitClass>
+            <TeachUnitClass>NONE</TeachUnitClass>
+            <iCityGoodyWeight>0</iCityGoodyWeight>
+            <bWaterGoody>0</bWaterGoody>
+            <bUnique>0</bUnique>
+            <GoodyWeights/>
+        </GoodyInfo>
+        <GoodyInfo>
+            <Type>GOODY_NATIVE_TRADER</Type>
+            <Description>TXT_KEY_GOODY_NATIVE_TRADER</Description>
+            <Sound>AS2D_GOODY_XP</Sound>
+            <AnnounceText>TXT_KEY_GOODY_NATIVE_TRADER</AnnounceText>
+            <ChiefText>TXT_KEY_GOODY_NATIVE_TRADER</ChiefText>
+            <iGold>0</iGold>
+            <iGoldRand1>0</iGoldRand1>
+            <iGoldRand2>0</iGoldRand2>
+            <iImmigration>0</iImmigration>
+            <iMapOffset>0</iMapOffset>
+            <iMapRange>0</iMapRange>
+            <iMapProb>0</iMapProb>
+            <iExperience>0</iExperience>
+            <iHealing>0</iHealing>
+            <iDamagePrereq>0</iDamagePrereq>
+            <bBad>0</bBad>
+            <bWar>0</bWar>
+            <UnitClass>UNITCLASS_EXPERT_TRADER</UnitClass>
+            <TeachUnitClass>NONE</TeachUnitClass>
+            <iCityGoodyWeight>0</iCityGoodyWeight>
+            <bWaterGoody>0</bWaterGoody>
+            <bUnique>0</bUnique>
+            <GoodyWeights/>
+        </GoodyInfo>
     </GoodyInfos>
 </Civ4GoodyInfo>

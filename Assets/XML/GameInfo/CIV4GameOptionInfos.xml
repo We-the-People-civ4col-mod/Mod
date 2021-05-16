@@ -32,7 +32,7 @@
             <Description>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV</Description>
             <Help>TXT_KEY_GAMEOPTION_LEAD_ANY_CIV_HELP</Help>
             <bDefault>0</bDefault>
-            <bVisible>1</bVisible>
+            <bVisible>0</bVisible>
         </GameOptionInfo>
         <GameOptionInfo>
             <Type>GAMEOPTION_PERMANENT_ALLIANCES</Type>
@@ -46,21 +46,21 @@
             <Description>TXT_KEY_GAMEOPTION_ALWAYS_WAR</Description>
             <Help>TXT_KEY_GAMEOPTION_ALWAYS_WAR_HELP</Help>
             <bDefault>0</bDefault>
-            <bVisible>1</bVisible>
+            <bVisible>0</bVisible>
         </GameOptionInfo>
         <GameOptionInfo>
             <Type>GAMEOPTION_ALWAYS_PEACE</Type>
             <Description>TXT_KEY_GAMEOPTION_ALWAYS_PEACE</Description>
             <Help>TXT_KEY_GAMEOPTION_ALWAYS_PEACE_HELP</Help>
             <bDefault>0</bDefault>
-            <bVisible>1</bVisible>
+            <bVisible>0</bVisible>
         </GameOptionInfo>
         <GameOptionInfo>
             <Type>GAMEOPTION_ONE_CITY_CHALLENGE</Type>
             <Description>TXT_KEY_GAMEOPTION_ONE_CITY_CHALLENGE</Description>
             <Help>TXT_KEY_GAMEOPTION_ONE_CITY_CHALLENGE_HELP</Help>
             <bDefault>0</bDefault>
-            <bVisible>1</bVisible>
+            <bVisible>0</bVisible>
         </GameOptionInfo>
         <GameOptionInfo>
             <Type>GAMEOPTION_NO_CHANGING_WAR_PEACE</Type>
@@ -81,7 +81,7 @@
             <Description>TXT_KEY_GAMEOPTION_LOCK_MODS</Description>
             <Help>TXT_KEY_GAMEOPTION_LOCK_MODS_HELP</Help>
             <bDefault>0</bDefault>
-            <bVisible>1</bVisible>
+            <bVisible>0</bVisible>
         </GameOptionInfo>
         <GameOptionInfo>
             <Type>GAMEOPTION_NO_GOODY_HUTS</Type>
@@ -143,6 +143,13 @@
             <Type>GAMEOPTION_REDUCED_CITY_DISTANCE</Type>
             <Description>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE</Description>
             <Help>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE_HELP</Help>
+            <bDefault>0</bDefault>
+            <bVisible>1</bVisible>
+        </GameOptionInfo>
+        <GameOptionInfo>
+            <Type>GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Type>
+            <Description>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Description>
+            <Help>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Help>
             <bDefault>0</bDefault>
             <bVisible>1</bVisible>
         </GameOptionInfo>

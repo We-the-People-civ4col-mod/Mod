@@ -13,6 +13,9 @@
 //
 #pragma warning( disable: 4530 )	// C++ exception handler used, but unwind semantics are not enabled
 
+// enable extra warnings
+#pragma warning( 3: 4701 ) // local variable used without being initialized
+
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <MMSystem.h>
@@ -165,7 +168,7 @@ __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 // variableless versions assuming the argument to be 0
 // useful for enums
 #define SETBIT( x ) (1 << x)
-#define SETBITS( x, y ) (((1 << x) - 1 ) << y)
+#define SETBITS( numBits, firstBit ) (((1 << numBits) - 1 ) << firstBit)
 
 #define GETBIT ( x, y ) ((x >> y) & 1)
 #define GETBITS( x, y, z ) ((x >> y) & ((1 << z) - 1 ))
@@ -258,6 +261,7 @@ namespace boost
 
 #endif // IntelliSense workaround
 
+#include "CvMacros.h"
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"
 #include "FDataStreamBase.h"
@@ -269,14 +273,20 @@ namespace boost
 #include "CvString.h"
 #include "CvEnums.h"
 #include "CvStructs.h"
+#include "NetworkDataPacking.h"
 #include "CvDLLUtilityIFaceBase.h"
 
 #include "JustInTimeArray.h"
 #include "BoolArray.h"
+#include "PlayerArray.h"
+#include "PlayerBoolArray.h"
 #include "InfoArray.h"
 #include "InfoCacheArray.h"
 
 #include "CvGlobalConstants.h"
+
+#include "EnumMap.h"
+#include "EnumMap2D.h"
 
 #include "CvGlobals.h"
 

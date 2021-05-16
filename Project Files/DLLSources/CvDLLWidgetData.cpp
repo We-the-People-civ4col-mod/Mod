@@ -192,6 +192,10 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, CvWidgetDataStruct &w
 	case WIDGET_ASSIGN_CITIZEN_TO_PLOT:
 		break;
 
+	case WIDGET_CITY_PLOT_INFO:
+		parseCityPlotHelp(widgetDataStruct, szBuffer); // city plot mouse over help - inaiwae
+		break;
+
 	case WIDGET_ZOOM_CITY:
 		szBuffer.append(gDLL->getText("TXT_KEY_ZOOM_CITY_HELP"));
 		break;
@@ -2254,6 +2258,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 				}
 			}
+			
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_ESTABLISH_MISSION)
 			{
 				CvUnit* pMissionary = NULL;
@@ -2276,6 +2281,31 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					szBuffer.append(gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_MISSION2", std::min(100, pMissionary->getMissionarySuccessPercent())));
 				}
 			}
+
+			// WTP, ray, Native Trade Posts - START
+			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_ESTABLISH_TRADE_POST)
+			{
+				CvUnit* pTrader = NULL;
+				pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
+				while (pSelectedUnitNode != NULL)
+				{
+					pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
+					if (pSelectedUnit->canEstablishTradePost())
+					{
+						pTrader = pSelectedUnit;
+						break;
+					}
+
+					pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
+				}
+
+				if (pTrader != NULL)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2", std::min(100, pTrader->getNativeTradePostSuccessPercent())));
+				}
+			}
+			// WTP, ray, Native Trade Posts - END
 
 			// R&R, ray , Stirring Up Natives - START
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_STIR_UP_NATIVES)
@@ -2359,6 +2389,26 @@ void CvDLLWidgetData::parseCitizenHelp(CvWidgetDataStruct &widgetDataStruct, CvW
 	}
 }
 
+// city plot mouse over help - inaiwae - START
+void CvDLLWidgetData::parseCityPlotHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
+{
+    CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(widgetDataStruct.m_iData2);
+    if (pCity == NULL)
+    {
+        pCity =    gDLL->getInterfaceIFace()->getHeadSelectedCity();
+    }
+    if (pCity != NULL)
+    {
+        CvPlot* pPlot = pCity->getCityIndexPlot(widgetDataStruct.m_iData1);
+        if (NULL == pPlot)
+        {
+			return;
+		}
+		GAMETEXT.setCityPlotHelp(szBuffer, pPlot);
+	}
+}
+// city plot mouse over help - inaiwae - END
+
 void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	//	Do not execute this if we are trying to contact ourselves...
@@ -2441,7 +2491,8 @@ void CvDLLWidgetData::parseContactCivHelp(CvWidgetDataStruct &widgetDataStruct, 
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_ALT_DECLARE_WAR"));
 			}
-			else if (!GET_TEAM(otherPlayer.getTeam()).isParentOf(GC.getGameINLINE().getActiveTeam()))
+			//else if (!GET_TEAM(otherPlayer.getTeam()).isParentOf(GC.getGameINLINE().getActiveTeam()))
+			else if (!GET_TEAM(otherPlayer.getTeam()).isParentOf(GC.getGameINLINE().getActiveTeam()) && !GET_TEAM(GC.getGameINLINE().getActiveTeam()).canDeclareWar(otherPlayer.getTeam()) && GC.getGameINLINE().isOption(GAMEOPTION_NO_MORE_VARIABLES_HIDDEN))
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_CANNOT_DECLARE_WAR"));

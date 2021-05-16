@@ -22,9 +22,9 @@
             <Civilopedia>TXT_KEY_CONCEPT_EUROPE_PEDIA</Civilopedia>
         </ConceptInfo>
         <ConceptInfo>
-            <Type>CONCEPT_NEW_WORLD</Type>
-            <Description>TXT_KEY_CONCEPT_NEW_WORLD</Description>
-            <Civilopedia>TXT_KEY_CONCEPT_NEW_WORLD_PEDIA</Civilopedia>
+            <Type>CONCEPT_THE_NEW_WORLD</Type>
+            <Description>TXT_KEY_CONCEPT_THE_NEW_WORLD</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_THE_NEW_WORLD_PEDIA</Civilopedia>
         </ConceptInfo>
         <ConceptInfo>
             <Type>CONCEPT_SETTLEMENTS</Type>
@@ -90,6 +90,11 @@
             <Type>CONCEPT_MISSIONARIES</Type>
             <Description>TXT_KEY_CONCEPT_MISSIONARIES</Description>
             <Civilopedia>TXT_KEY_CONCEPT_MISSIONARIES_PEDIA</Civilopedia>
+        </ConceptInfo>
+        <ConceptInfo>
+            <Type>CONCEPT_NATIVE_TRADERS</Type>
+            <Description>TXT_KEY_CONCEPT_NATIVE_TRADERS</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_NATIVE_TRADERS_PEDIA</Civilopedia>
         </ConceptInfo>
         <ConceptInfo>
             <Type>CONCEPT_COMBAT</Type>
@@ -183,8 +188,8 @@
         </ConceptInfo>
         <ConceptInfo>
             <Type>CONCEPT_SMUGGLING</Type>
-            <Description>TXT_KEY_CONCEPT_SMUGGLING</Description>
-            <Civilopedia>TXT_KEY_CONCEPT_SMUGGLING_PEDIA</Civilopedia>
+            <Description>TXT_KEY_CONCEPT_PIRACY_AND_SMUGGLING</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_PIRACY_AND_SMUGGLING_PEDIA</Civilopedia>
         </ConceptInfo>
         <ConceptInfo>
             <Type>CONCEPT_CATTLE_OR_SHEEP_BREEDING</Type>
@@ -225,6 +230,11 @@
             <Type>CONCEPT_HEALTH</Type>
             <Description>TXT_KEY_CONCEPT_HEALTH</Description>
             <Civilopedia>TXT_KEY_CONCEPT_HEALTH_PEDIA</Civilopedia>
+        </ConceptInfo>
+        <ConceptInfo>
+            <Type>CONCEPT_HAPPINESS_UNHAPPINESS</Type>
+            <Description>TXT_KEY_HAPPINESS_UNHAPPINESS</Description>
+            <Civilopedia>TXT_KEY_HAPPINESS_UNHAPPINESS_PEDIA</Civilopedia>
         </ConceptInfo>
         <ConceptInfo>
             <Type>CONCEPT_MONASTERIES</Type>
@@ -280,6 +290,16 @@
             <Type>CONCEPT_RIVERS</Type>
             <Description>TXT_KEY_CONCEPT_RIVERS</Description>
             <Civilopedia>TXT_KEY_CONCEPT_RIVERS_PEDIA</Civilopedia>
+        </ConceptInfo>
+        <ConceptInfo>
+            <Type>CONCEPT_LARGE_RIVERS</Type>
+            <Description>TXT_KEY_CONCEPT_LARGE_RIVERS</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_LARGE_RIVERS_PEDIA</Civilopedia>
+        </ConceptInfo>
+		<ConceptInfo>
+            <Type>CONCEPT_AUTO_IMPORT_EXPORT</Type>
+            <Description>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT</Description>
+            <Civilopedia>TXT_KEY_CONCEPT_AUTO_IMPORT_EXPORT_PEDIA</Civilopedia>
         </ConceptInfo>
     </ConceptInfos>
 </Civ4BasicInfos>

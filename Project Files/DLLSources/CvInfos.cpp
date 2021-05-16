@@ -156,6 +156,11 @@ const wchar*  CvInfoBase::getHelp() const
 		m_szCachedHelp = gDLL->getText(m_szHelpKey);
 	}
 
+	if (m_szCachedHelp == L"????")
+	{
+		return L"";
+	}
+
 	return m_szCachedHelp;
 }
 
@@ -164,6 +169,11 @@ const wchar* CvInfoBase::getStrategy() const
 	if (m_szCachedStrategy.empty())
 	{
 		m_szCachedStrategy = gDLL->getText(m_szStrategyKey);
+	}
+
+	if (m_szCachedStrategy == L"????")
+	{
+		return L"";
 	}
 
 	return m_szCachedStrategy;
@@ -227,6 +237,31 @@ bool CvInfoBase::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szButton, "Button");
 
 	return true;
+}
+
+void CvInfoBase::cleanStrings()
+{
+	checkStringContents(m_szTextKey       , L"_DESCRIPTION");
+	checkStringContents(m_szCivilopediaKey, L"_PEDIA"      );
+	checkStringContents(m_szHelpKey       , L"_HELP"       );
+	checkStringContents(m_szStrategyKey   , L"_STRATEGY"   );
+}
+
+void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
+{
+	if (szStr.length() == 0)
+	{
+		return;
+	}
+
+	// plenty of arguments to get around stuff like %2_city crashing the exe during this test
+	CvWString szText = gDLL->getText(szStr, L"", L"", L"", L"", L"", L"", L"", L"", L"", L"", L"");
+
+	if (szText == L"????" || (szText.length() > 7 && wcsncmp(szText, L"TXT_KEY", 7) == 0))
+	{
+		szStr.clear();
+		return;
+	}
 }
 
 //======================================================================================================
@@ -1325,12 +1360,14 @@ CvProfessionInfo::CvProfessionInfo() :
 	m_iMovesChange(0),
 	m_iWorkRate(0),
 	m_iMissionaryRate(0),
+	m_iNativeTradeRate(0), // WTP, ray, Native Trade Posts - START
 	m_iPowerValue(0),
 	m_iAssetValue(0),
 	m_bWorkPlot(false),
 	m_bCitizen(false),
 	m_bWater(false),
 	m_bScout(false),
+	m_bCanCrossLargeRivers(false), //WTP, ray, Large Rivers
 	m_bCityDefender(false),
 	m_bCanFound(false),
 	// TAC - LbD - Ray - START
@@ -1413,6 +1450,12 @@ int CvProfessionInfo::getMissionaryRate() const
 {
 	return m_iMissionaryRate;
 }
+// WTP, ray, Native Trade Posts - START
+int CvProfessionInfo::getNativeTradeRate() const
+{
+	return m_iNativeTradeRate;
+}
+// WTP, ray, Native Trade Posts - END
 int CvProfessionInfo::getPowerValue() const
 {
 	return m_iPowerValue;
@@ -1437,6 +1480,14 @@ bool CvProfessionInfo::isScout() const
 {
 	return m_bScout;
 }
+
+//WTP, ray, Large Rivers - START
+bool CvProfessionInfo::isCanCrossLargeRivers() const
+{
+	return m_bCanCrossLargeRivers;
+}
+//WTP, ray, Large Rivers - END
+
 bool CvProfessionInfo::isCityDefender() const
 {
 	return m_bCityDefender;
@@ -1517,12 +1568,14 @@ void CvProfessionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMovesChange);
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iMissionaryRate);
+	stream->Read(&m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iPowerValue);
 	stream->Read(&m_iAssetValue);
 	stream->Read(&m_bWorkPlot);
 	stream->Read(&m_bCitizen);
 	stream->Read(&m_bWater);
 	stream->Read(&m_bScout);
+	stream->Read(&m_bCanCrossLargeRivers);//WTP, ray, Large Rivers
 	stream->Read(&m_bCityDefender);
 	stream->Read(&m_bCanFound);
 	
@@ -1581,12 +1634,14 @@ void CvProfessionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMovesChange);
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iMissionaryRate);
+	stream->Write(m_iNativeTradeRate); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iPowerValue);
 	stream->Write(m_iAssetValue);
 	stream->Write(m_bWorkPlot);
 	stream->Write(m_bCitizen);
 	stream->Write(m_bWater);
 	stream->Write(m_bScout);
+	stream->Write(m_bCanCrossLargeRivers);//WTP, ray, Large Rivers
 	stream->Write(m_bCityDefender);
 	stream->Write(m_bCanFound);
 
@@ -1647,12 +1702,14 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMovesChange, "iMovesChange");
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iMissionaryRate, "iMissionaryRate");
+	pXML->GetChildXmlValByName(&m_iNativeTradeRate, "iNativeTradeRate"); // WTP, ray, Native Trade Posts - START
 	pXML->GetChildXmlValByName(&m_iPowerValue, "iPower");
 	pXML->GetChildXmlValByName(&m_iAssetValue, "iAsset");
 	pXML->GetChildXmlValByName(&m_bWorkPlot, "bWorkPlot");
 	pXML->GetChildXmlValByName(&m_bCitizen, "bCitizen");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bScout, "bScout");
+	pXML->GetChildXmlValByName(&m_bCanCrossLargeRivers, "bCanCrossLargeRivers"); //WTP, ray, Large Rivers
 	pXML->GetChildXmlValByName(&m_bCityDefender, "bCityDefender");
 	pXML->GetChildXmlValByName(&m_bCanFound, "bCanFound");
 
@@ -2542,6 +2599,7 @@ m_iMoves(0),
 m_iWorkRate(0),
 m_iWorkRateModifier(0),
 m_iMissionaryRateModifier(0),
+m_iNativeTradeRateModifier(0), // WTP, ray, Native Trade Posts - START
 m_iCombat(0),
 m_iXPValueAttack(0),
 m_iXPValueDefense(0),
@@ -2562,7 +2620,7 @@ m_iSpecialUnitType(NO_SPECIALUNIT),
 m_iUnitCaptureClassType(NO_UNITCLASS),
 m_iUnitCombatType(NO_UNITCOMBAT),
 m_iDomainType(NO_DOMAIN),
-m_iDefaultProfession(NO_PROFESSION),
+m_eDefaultProfession(NO_PROFESSION),
 m_iDefaultUnitAIType(NO_UNITAI),
 m_iInvisibleType(NO_INVISIBLE),
 m_iPrereqBuilding(NO_BUILDING),
@@ -2602,6 +2660,9 @@ m_canBecomeExpert(false),
 m_canGetFree(false),
 m_canEscape(false),
 // TAC - LbD - Ray - END
+// WTP, ray, LbD Slaves Revolt and Free - START
+m_canRevolt(false),
+// WTP, ray, LbD Slaves Revolt and Free - END
 m_bCapturesCargo(false),
 // TAC Capturing Ships - ray
 m_bCapturesShips(false),
@@ -2772,6 +2833,12 @@ int CvUnitInfo::getMissionaryRateModifier() const
 {
 	return m_iMissionaryRateModifier;
 }
+// WTP, ray, Native Trade Posts - START
+int CvUnitInfo::getNativeTradeRateModifier() const
+{
+	return m_iNativeTradeRateModifier;
+}
+// WTP, ray, Native Trade Posts - END
 int CvUnitInfo::getCombat() const
 {
 	return m_iCombat;
@@ -2860,9 +2927,9 @@ int CvUnitInfo::getDomainType() const
 {
 	return m_iDomainType;
 }
-int CvUnitInfo::getDefaultProfession() const
+ProfessionTypes CvUnitInfo::getDefaultProfession() const
 {
-	return m_iDefaultProfession;
+	return m_eDefaultProfession;
 }
 int CvUnitInfo::getDefaultUnitAIType() const
 {
@@ -3033,18 +3100,23 @@ bool CvUnitInfo::LbD_canEscape() const
 }
 // TAC - LbD - Ray - END
 
+// WTP, ray, LbD Slaves Revolt and Free - START
+bool CvUnitInfo::LbD_canRevolt() const
+{
+	return m_canRevolt;
+}
+// WTP, ray, LbD Slaves Revolt and Free - END
+
 bool CvUnitInfo::isCapturesCargo() const
 {
 	return m_bCapturesCargo;
 }
 
 // TAC Capturing Ships - ray
-
 bool CvUnitInfo::isCapturesShips() const
 {
 	return m_bCapturesShips;
 }
-
 // TAC Capturing Ships - ray - END
 
 bool CvUnitInfo::isLandYieldChanges() const
@@ -3159,11 +3231,10 @@ int CvUnitInfo::getYieldChange(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiYieldChange ? m_aiYieldChange[i] : -1;
 }
-int CvUnitInfo::getYieldCost(int i) const
+int CvUnitInfo::getYieldCost(YieldTypes eYield) const
 {
-	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_aiYieldCost ? m_aiYieldCost[i] : -1;
+	FAssert(validEnumRange(eYield));
+	return m_aiYieldCost ? m_aiYieldCost[eYield] : -1;
 }
 int CvUnitInfo::getUnitGroupRequired(int i, int iProfession) const
 {
@@ -3286,7 +3357,7 @@ const char* CvUnitInfo::getArtDefineTag(int index, int iProfession, int iStyle) 
 			{
 				return pcTag;
 			}
-			else //retrieve the unit art style tag for no profession if the one for the desired profession is missing
+			else if (-1 == iProfession)//retrieve the unit art style tag for no profession if the one for the desired profession is missing
 			{
 				pcTag = GC.getUnitArtStyleTypeInfo(eStyle).getArtDefineTag(index, iUnit, -1);
 				if (NULL != pcTag)
@@ -3391,6 +3462,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iWorkRate);
 	stream->Read(&m_iWorkRateModifier);
 	stream->Read(&m_iMissionaryRateModifier);
+	stream->Read(&m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Read(&m_iCombat);
 	stream->Read(&m_iXPValueAttack);
 	stream->Read(&m_iXPValueDefense);
@@ -3415,7 +3487,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iUnitCaptureClassType);
 	stream->Read(&m_iUnitCombatType);
 	stream->Read(&m_iDomainType);
-	stream->Read(&m_iDefaultProfession);
+	stream->Read(&m_eDefaultProfession);
 	stream->Read(&m_iDefaultUnitAIType);
 	stream->Read(&m_iInvisibleType);
 	int iNumInvisibleTypes;
@@ -3463,6 +3535,10 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_canGetFree);
 	stream->Read(&m_canEscape);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	stream->Read(&m_canRevolt);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	stream->Read(&m_bCapturesCargo);
 	// TAC Capturing Ships - ray
@@ -3610,6 +3686,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iWorkRate);
 	stream->Write(m_iWorkRateModifier);
 	stream->Write(m_iMissionaryRateModifier);
+	stream->Write(m_iNativeTradeRateModifier); // WTP, ray, Native Trade Posts - START
 	stream->Write(m_iCombat);
 	stream->Write(m_iXPValueAttack);
 	stream->Write(m_iXPValueDefense);
@@ -3634,7 +3711,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iUnitCaptureClassType);
 	stream->Write(m_iUnitCombatType);
 	stream->Write(m_iDomainType);
-	stream->Write(m_iDefaultProfession);
+	stream->Write(m_eDefaultProfession);
 	stream->Write(m_iDefaultUnitAIType);
 	stream->Write(m_iInvisibleType);
 	stream->Write((int)m_aiSeeInvisibleTypes.size());
@@ -3679,6 +3756,10 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_canGetFree);
 	stream->Write(m_canEscape);
 	// TAC - LbD - Ray - END
+
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	stream->Write(m_canRevolt);
+	// WTP, ray, LbD Slaves Revolt and Free - END
 
 	stream->Write(m_bCapturesCargo);
 	// TAC Capturing Ships - ray
@@ -3758,8 +3839,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	m_iUnitCombatType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Domain");
 	m_iDomainType = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "DefaultProfession");
-	m_iDefaultProfession = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eDefaultProfession, "DefaultProfession", false);
 	pXML->GetChildXmlValByName(szTextVal, "DefaultUnitAI");
 	m_iDefaultUnitAIType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "Invisible");
@@ -3818,6 +3898,10 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_canEscape,"bLbDCanEscape",false);
 	// TAC - LbD - Ray - END
 
+	// WTP, ray, LbD Slaves Revolt and Free - START
+	pXML->GetChildXmlValByName(&m_canRevolt,"bLbDCanRevolt",false);
+	// WTP, ray, LbD Slaves Revolt and Free - END
+
 	pXML->GetChildXmlValByName(&m_bCapturesCargo,"bCapturesCargo",false);
 	// TAC Capturing Ships - ray
 	pXML->GetChildXmlValByName(&m_bCapturesShips,"bCapturesShips",false);
@@ -3862,6 +3946,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iWorkRate, "iWorkRate");
 	pXML->GetChildXmlValByName(&m_iWorkRateModifier, "iWorkRateModifier");
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
+	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
 	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
 	pXML->SetVariableListTagPair(&m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
 	// < JAnimals Mod Start >
@@ -3959,6 +4044,18 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	updateArtDefineButton();
 	return true;
 }
+
+int CvUnitInfo::EXE_getDefaultProfession() const
+{
+	return getDefaultProfession();
+}
+
+int CvUnitInfo::PYgetYieldCost(int i) const
+{
+	return getYieldCost(static_cast<YieldTypes>(i));
+}
+
+
 //======================================================================================================
 //					CvUnitFormationInfo
 //======================================================================================================
@@ -4410,7 +4507,7 @@ bool CvCivicInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "CivicOptionType");
 	m_iCivicOptionType = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iAIWeight, "iAIWeight");
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iDomesticGreatGeneralRateModifier, "iDomesticGreatGeneralRateModifier");
 	pXML->GetChildXmlValByName(&m_iFreeExperience, "iFreeExperience");
@@ -5697,7 +5794,7 @@ m_iDensityMultiplier(0),
 m_iTreasure(0),
 m_iFavoredTerrain(NO_TERRAIN),
 m_iCapturedCityUnitClass(NO_UNITCLASS),
-m_iDefaultProfession(NO_PROFESSION),
+m_eDefaultProfession(NO_PROFESSION),
 m_iMissionaryChar(0),
 m_bPlayable(false),
 m_bAIPlayable(false),
@@ -5835,9 +5932,9 @@ int CvCivilizationInfo::getCapturedCityUnitClass() const
 {
 	return m_iCapturedCityUnitClass;
 }
-int CvCivilizationInfo::getDefaultProfession() const
+ProfessionTypes CvCivilizationInfo::getDefaultProfession() const
 {
-	return m_iDefaultProfession;
+	return m_eDefaultProfession;
 }
 int CvCivilizationInfo::getMissionaryChar() const
 {
@@ -6084,7 +6181,7 @@ void CvCivilizationInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iTreasure);
 	stream->Read(&m_iFavoredTerrain);
 	stream->Read(&m_iCapturedCityUnitClass);
-	stream->Read(&m_iDefaultProfession);
+	stream->Read(&m_eDefaultProfession);
 	stream->Read(&m_iMissionaryChar);
 	stream->Read(&m_bAIPlayable);
 	stream->Read(&m_bPlayable);
@@ -6192,7 +6289,7 @@ void CvCivilizationInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iTreasure);
 	stream->Write(m_iFavoredTerrain);
 	stream->Write(m_iCapturedCityUnitClass);
-	stream->Write(m_iDefaultProfession);
+	stream->Write(m_eDefaultProfession);
 	stream->Write(m_iMissionaryChar);
 	stream->Write(m_bAIPlayable);
 	stream->Write(m_bPlayable);
@@ -6264,8 +6361,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	m_iFavoredTerrain = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(szTextVal, "CapturedCityUnitClass");
 	m_iCapturedCityUnitClass = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "DefaultProfession");
-	m_iDefaultProfession = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eDefaultProfession, "DefaultProfession", false);
 	// set the current xml node to it's next sibling and then
 	pXML->GetChildXmlValByName(&m_bPlayable, "bPlayable");
 	pXML->GetChildXmlValByName(&m_bAIPlayable, "bAIPlayable");
@@ -6280,7 +6376,7 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bCentralAmericanNative, "bCentralAmericanNative");
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Cities"))
 	{
@@ -6479,6 +6575,12 @@ bool CvCivilizationInfo::readPass2(CvXMLLoadUtility* pXML)
 	m_iDerivativeCiv = GC.getInfoTypeForString(szTextVal);
 	return true;
 }
+
+int CvCivilizationInfo::PY_getDefaultProfession() const
+{
+	return getDefaultProfession();
+}
+
 //======================================================================================================
 //					CvVictoryInfo
 //======================================================================================================
@@ -6622,7 +6724,7 @@ CvHurryInfo::CvHurryInfo() :
 	m_iProductionPerPopulation(0),
 	m_iGoldPerCross(0),
 	m_iYieldCostEuropePercent(0),
-	m_iProductionYieldConsumed(NO_YIELD),
+	m_eProductionYieldConsumed(NO_YIELD),
 	m_iProductionYieldPercent(0),
 	m_iFlatGold(0),
 	m_bStarting(false),
@@ -6655,9 +6757,9 @@ int CvHurryInfo::getYieldCostEuropePercent() const
 {
 	return m_iYieldCostEuropePercent;
 }
-int CvHurryInfo::getProductionYieldConsumed() const
+YieldTypes CvHurryInfo::getProductionYieldConsumed() const
 {
-	return m_iProductionYieldConsumed;
+	return m_eProductionYieldConsumed;
 }
 int CvHurryInfo::getProductionYieldPercent() const
 {
@@ -6686,13 +6788,17 @@ bool CvHurryInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iProductionPerPopulation, "iProductionPerPopulation");
 	pXML->GetChildXmlValByName(&m_iGoldPerCross, "iGoldPerCross");
 	pXML->GetChildXmlValByName(&m_iYieldCostEuropePercent, "iYieldCostEuropePercent");
-	pXML->GetChildXmlValByName(szTextVal, "ProductionYieldConsumed");
-	m_iProductionYieldConsumed = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eProductionYieldConsumed, "ProductionYieldConsumed", false);
 	pXML->GetChildXmlValByName(&m_iProductionYieldPercent, "iProductionYieldPercent");
 	pXML->GetChildXmlValByName(&m_iFlatGold, "iFlatGold");
 	pXML->GetChildXmlValByName(&m_bStarting, "bStarting");
 	pXML->GetChildXmlValByName(&m_bCity, "bCity");
 	return true;
+}
+
+int CvHurryInfo::PYgetProductionYieldConsumed() const
+{
+	return getProductionYieldConsumed();
 }
 //======================================================================================================
 //					CvHandicapInfo
@@ -7863,6 +7969,10 @@ m_bRequiresRiverSide(false),
 m_bRequiresFeature(false),
 m_bWater(false),
 m_bGoody(false),
+m_bGoodyForSpawningUnits(false), //WTP, Unit only Goodies
+m_bGoodyForSpawningHostileAnimals(false), //WTP, Protected Hostile Goodies
+m_bGoodyForSpawningHostileNatives(false), //WTP, Protected Hostile Goodies
+m_bGoodyForSpawningHostileCriminals(false), //WTP, Protected Hostile Goodies
 m_bPermanent(false),
 m_bUseLSystem(false),
 m_bOutsideBorders(false),
@@ -8027,6 +8137,29 @@ bool CvImprovementInfo::isGoody() const
 {
 	return m_bGoody;
 }
+//WTP, Unit only Goodies - START
+bool CvImprovementInfo::isGoodyForSpawningUnits() const
+{
+	return m_bGoodyForSpawningUnits;
+}
+//WTP, Unit only Goodies - END
+
+//WTP, Protected Hostile Goodies - START
+bool CvImprovementInfo::isGoodyForSpawningHostileAnimals() const
+{
+	return m_bGoodyForSpawningHostileAnimals;
+}
+
+bool CvImprovementInfo::isGoodyForSpawningHostileNatives() const
+{
+	return m_bGoodyForSpawningHostileNatives;
+}
+
+bool CvImprovementInfo::isGoodyForSpawningHostileCriminals() const
+{
+	return m_bGoodyForSpawningHostileCriminals;
+}
+//WTP, Protected Hostile Goodies - END
 bool CvImprovementInfo::isPermanent() const
 {
 	return m_bPermanent;
@@ -8180,6 +8313,10 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bRequiresFeature);
 	stream->Read(&m_bWater);
 	stream->Read(&m_bGoody);
+	stream->Read(&m_bGoodyForSpawningUnits); //WTP, Unit only Goodies
+	stream->Read(&m_bGoodyForSpawningHostileAnimals); //WTP, Protected Hostile Goodies
+	stream->Read(&m_bGoodyForSpawningHostileNatives); //WTP, Protected Hostile Goodies
+	stream->Read(&m_bGoodyForSpawningHostileCriminals); //WTP, Protected Hostile Goodies
 	stream->Read(&m_bPermanent);
 	stream->Read(&m_bUseLSystem);
 	stream->Read(&m_bOutsideBorders);
@@ -8256,6 +8393,10 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bRequiresFeature);
 	stream->Write(m_bWater);
 	stream->Write(m_bGoody);
+	stream->Write(m_bGoodyForSpawningUnits); //WTP, Unit only Goodies
+	stream->Write(m_bGoodyForSpawningHostileAnimals); //WTP, Protected Hostile Goodies
+	stream->Write(m_bGoodyForSpawningHostileNatives); //WTP, Protected Hostile Goodies
+	stream->Write(m_bGoodyForSpawningHostileCriminals); //WTP, Protected Hostile Goodies
 	stream->Write(m_bPermanent);
 	stream->Write(m_bUseLSystem);
 	stream->Write(m_bOutsideBorders);
@@ -8304,6 +8445,10 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bRequiresFeature, "bRequiresFeature");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bGoody, "bGoody");
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningUnits, "bGoodyForSpawningUnits"); //WTP, Unit only Goodies
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningHostileAnimals, "bGoodyForSpawningHostileAnimals"); //WTP, Unit only Goodies
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningHostileNatives, "bGoodyForSpawningHostileNatives"); //WTP, Unit only Goodies
+	pXML->GetChildXmlValByName(&m_bGoodyForSpawningHostileCriminals, "bGoodyForSpawningHostileCriminals"); //WTP, Unit only Goodies
 	pXML->GetChildXmlValByName(&m_bPermanent, "bPermanent");
 	pXML->GetChildXmlValByName(&m_bUseLSystem, "bUseLSystem");
 	pXML->GetChildXmlValByName(&m_iTilesPerGoody, "iTilesPerGoody");
@@ -9118,6 +9263,26 @@ const char* CvYieldInfo::getIcon() const
 {
 	return m_szIcon;
 }
+
+WidgetTypes CvYieldInfo::getWikiWidget() const
+{
+	return WIDGET_PEDIA_JUMP_TO_YIELDS;
+}
+
+YieldTypes CvYieldInfo::getID() const
+{
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		YieldTypes eYield = (YieldTypes)iYield;
+		if (this == &GC.getYieldInfo(eYield))
+		{
+			return eYield;
+		}
+	}
+	FAssertMsg(false, "Yield info failed to find itself")
+	return NO_YIELD;
+}
+
 // KJ Jansson addon for Multiple Professions per Building modcomp by Androrc the Orc START
 const char* CvYieldInfo::getCombiIcon() const
 {
@@ -10529,6 +10694,7 @@ CvTraitInfo::CvTraitInfo() :
 	m_iMaxTaxRateThresholdDecrease(0), // R&R, ray, new Attribute in Traits
 	m_iMercantileFactor(0),
 	m_iTreasureModifier(0),
+	m_iUnhappinessFromSlavesModifier(0), // WTP, ray, Happiness - START
 	m_iChiefGoldModifier(0),
 	m_iNativeAttitudeChange(0),
 	m_iEuropeanAttitudeChange(0), // R&R, ray, new Attribute in Traits
@@ -10618,6 +10784,12 @@ int CvTraitInfo::getTreasureModifier() const
 {
 	return m_iTreasureModifier;
 }
+// WTP, ray, Happiness - START
+int CvTraitInfo::getUnhappinessFromSlavesModifier() const
+{
+	return m_iUnhappinessFromSlavesModifier;
+}
+// WTP, ray, Happiness - END
 int CvTraitInfo::getChiefGoldModifier() const
 {
 	return m_iChiefGoldModifier;
@@ -10841,6 +11013,7 @@ void CvTraitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Read(&m_iMercantileFactor);
 	stream->Read(&m_iTreasureModifier);
+	stream->Read(&m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Read(&m_iChiefGoldModifier);
 	stream->Read(&m_iNativeAttitudeChange);
 	stream->Read(&m_iEuropeanAttitudeChange); // R&R, ray, new Attribute in Traits
@@ -10948,6 +11121,7 @@ void CvTraitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iMaxTaxRateThresholdDecrease); // R&R, ray, new Attribute in Traits
 	stream->Write(m_iMercantileFactor);
 	stream->Write(m_iTreasureModifier);
+	stream->Write(m_iUnhappinessFromSlavesModifier); // WTP, ray, Happiness - START
 	stream->Write(m_iChiefGoldModifier);
 	stream->Write(m_iNativeAttitudeChange);
 	stream->Write(m_iEuropeanAttitudeChange); // R&R, ray, new Attribute in Traits
@@ -10996,7 +11170,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "ShortDescription");
 	setShortDescription(szTextVal);
 
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
 	pXML->GetChildXmlValByName(&m_iLevelExperienceModifier, "iLevelExperienceModifier");
 	pXML->GetChildXmlValByName(&m_iGreatGeneralRateModifier, "iGreatGeneralRateModifier");
@@ -11011,6 +11185,7 @@ bool CvTraitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iMaxTaxRateThresholdDecrease, "iMaxTaxRateThresholdDecrease"); // R&R, ray, new Attribute in Traits
 	pXML->GetChildXmlValByName(&m_iMercantileFactor, "iMercantileFactor");
 	pXML->GetChildXmlValByName(&m_iTreasureModifier, "iTreasureModifier");
+	pXML->GetChildXmlValByName(&m_iUnhappinessFromSlavesModifier, "iUnhappinessFromSlavesModifier"); // WTP, ray, Happiness - START
 	pXML->GetChildXmlValByName(&m_iChiefGoldModifier, "iChiefGoldModifier");
 	pXML->GetChildXmlValByName(&m_iNativeAttitudeChange, "iNativeAttitudeChange");
 	pXML->GetChildXmlValByName(&m_iEuropeanAttitudeChange, "iEuropeanAttitudeChange"); // R&R, ray, new Attribute in Traits
@@ -12458,7 +12633,7 @@ bool CvEraInfo::read(CvXMLLoadUtility* pXML)
 	{
 		return false;
 	}
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 	pXML->GetChildXmlValByName(&m_bRevolution, "bRevolution");
 	pXML->GetChildXmlValByName(&m_bNoGoodies, "bNoGoodies");
 	pXML->GetChildXmlValByName(&m_iGameTurn, "iGameTurn");
@@ -12956,7 +13131,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -12967,11 +13142,15 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 	gDLL->getXMLIFace()->SetToChild(pXML->GetXML()); // Move down to Child level
 	pXML->GetXmlVal(m_szType);		// TAG
 
+	setGender(L"N");
+	setPlural(L"false");
+
 	// move to the tag, which contains the language, which we will load.
 
 	bool bLanguageFound = true;
 
 	// First try the user selected language
+	/*
 	if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), getLanguageName(GAMETEXT.getCurrentLanguage())))
 	{
 		bLanguageFound = false;
@@ -12989,20 +13168,27 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 			}
 		}
 	}
+	*/
+
+	if (!gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), szLanguage))
+	{
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML()); // Move back up to Parent
+		return false;
+	}
 	
-	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName, bLanguageFound))
+	if (readString(pXML, wszTextVal, "Text", bUTF8, szFileName, bLanguageFound, getType()))
 	{
 		// There are child tags. Read all 3 of them.
 
 		// TEXT
 		setText(wszTextVal);
 		// GENDER
-		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName, bLanguageFound))
+		if (readString(pXML, wszTextVal, "Gender", bUTF8, szFileName, bLanguageFound, getType()))
 		{
 			setGender(wszTextVal);
 		}
 		// PLURAL
-		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName, bLanguageFound))
+		if (readString(pXML, wszTextVal, "Plural", bUTF8, szFileName, bLanguageFound, getType()))
 		{
 			setPlural(wszTextVal);
 		}
@@ -13010,7 +13196,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 	else
 	{
 		// No Text child meaning no gender or plural. Just read the text.
-		readString(pXML, wszTextVal, NULL, bUTF8, szFileName, bLanguageFound);
+		readString(pXML, wszTextVal, NULL, bUTF8, szFileName, bLanguageFound, getType());
 		setText(wszTextVal);
 	}
 
@@ -13019,7 +13205,7 @@ bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName
 }
 
 // read a string from an xml tag. Key feature is to convert from UTF-8 to whatever codepage the current language is using.
-bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound)
+bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const char* szTagName, bool bUTF8, const char *szFileName, bool bLanguageFound, const char* szType)
 {
 	if (!bUTF8)
 	{
@@ -13208,7 +13394,7 @@ bool CvGameText::readString(CvXMLLoadUtility* pXML, CvWString &wszTextVal, const
 				szBuffer.Convert(wszTextVal);
 
 				char	szMessage[1024];
-				sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, getType(), szBuffer.c_str(), getCodePage());
+				sprintf(szMessage, "Error reading file %s\n%s\nCurrent string: %s\nNext character isn't in codepage %d\n", szFileName, szType, szBuffer.c_str(), getCodePage());
 				gDLL->MessageBox(szMessage, "Text encoding error");
 			}
 		}
@@ -14987,10 +15173,10 @@ bool CvEventInfo::read(CvXMLLoadUtility* pXML)
 	m_iUnitPromotion = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iAIValue, "iAIValue");
 	// TAC - Generic Parameters for Events - Ray - START
-	pXML->GetChildXmlValByName(&m_iGenericParameter1, "iGenericParameter1");
-	pXML->GetChildXmlValByName(&m_iGenericParameter2, "iGenericParameter2");
-	pXML->GetChildXmlValByName(&m_iGenericParameter3, "iGenericParameter3");
-	pXML->GetChildXmlValByName(&m_iGenericParameter4, "iGenericParameter4");
+	pXML->GetIntOrType(getType(), m_iGenericParameter1, "iGenericParameter1", false);
+	pXML->GetIntOrType(getType(), m_iGenericParameter2, "iGenericParameter2", false);
+	pXML->GetIntOrType(getType(), m_iGenericParameter3, "iGenericParameter3", false);
+	pXML->GetIntOrType(getType(), m_iGenericParameter4, "iGenericParameter4", false);
 	// TAC - Generic Parameters for Events - Ray - END
 	CvString* pszPromotions = NULL;
 	FAssertMsg(NULL == m_aiUnitCombatPromotions, "Memory leak");
@@ -15091,6 +15277,7 @@ CvMainMenuInfo::~CvMainMenuInfo()
 }
 std::string CvMainMenuInfo::getScene() const
 {
+	GC.cleanInfoStrings();
 	return m_szScene;
 }
 std::string CvMainMenuInfo::getSoundtrack() const
@@ -15138,7 +15325,7 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 
 CvFatherInfo::CvFatherInfo() :
 	m_iFatherCategory(NO_FATHERCATEGORY),
-	m_iTrait(NO_TRAIT),
+	m_eTrait(NO_TRAIT),
 	m_eCivEffect(NO_CIV_EFFECT),
 	m_aiFreeUnits(NULL),
 	m_aiPointCost(NULL),
@@ -15158,9 +15345,9 @@ int CvFatherInfo::getFatherCategory() const
 	return m_iFatherCategory;
 }
 
-int CvFatherInfo::getTrait() const
+TraitTypes CvFatherInfo::getTrait() const
 {
-	return m_iTrait;
+	return m_eTrait;
 }
 
 int CvFatherInfo::getFreeUnits(int iUnitClass) const
@@ -15208,7 +15395,7 @@ void CvFatherInfo::read(FDataStreamBase* stream)
 	uint uiFlag=0;
 	stream->Read(&uiFlag);	// flags for expansion
 	stream->Read(&m_iFatherCategory);
-	stream->Read(&m_iTrait);
+	stream->Read(&m_eTrait);
 
 	SAFE_DELETE_ARRAY(m_aiFreeUnits);
 	m_aiFreeUnits = new int [GC.getNumUnitClassInfos()];
@@ -15235,7 +15422,7 @@ void CvFatherInfo::write(FDataStreamBase* stream)
 	uint uiFlag=0;
 	stream->Write(uiFlag);		// flag for expansion
 	stream->Write(m_iFatherCategory);
-	stream->Write(m_iTrait);
+	stream->Write(m_eTrait);
 	stream->Write(GC.getNumUnitClassInfos(), m_aiFreeUnits);
 	stream->Write(GC.getNumFatherPointInfos(), m_aiPointCost);
 	stream->Write(GC.getNumImprovementInfos(), m_abRevealImprovement);
@@ -15257,10 +15444,9 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 	m_iFatherCategory = GC.getInfoTypeForString(szTextVal);
 
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
-	pXML->GetChildXmlValByName(szTextVal, "Trait");
-	m_iTrait = GC.getInfoTypeForString(szTextVal);
+	pXML->GetEnum(getType(), m_eTrait, "Trait", false);
 
-	pXML->GetEnum(getType(), &m_eCivEffect, "eCivEffect", false);
+	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
 	pXML->SetVariableListTagPair(&m_aiFreeUnits, "FreeUnits", GC.getNumUnitClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_aiPointCost, "FatherPointCosts", GC.getNumFatherPointInfos(), 0);

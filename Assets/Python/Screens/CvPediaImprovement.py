@@ -141,7 +141,7 @@ class CvPediaImprovement:
 			for k in range(YieldTypes.NUM_YIELD_TYPES):
 				iYieldChange = gc.getImprovementInfo(self.iImprovement).getImprovementBonusYield(iBonus, k)
 				if (iYieldChange != 0):
-					szYield += localText.getText("TXT_KEY_PEDIA_BONUS_YIELD", (gc.getYieldInfo(k).getTextKey(), iYieldChange, gc.getYieldInfo(k).getChar(), gc.getBonusInfo(iBonus).getTextKey())) + u"\n"
+					szYield += localText.getText("TXT_KEY_PEDIA_BONUS_YIELD", (gc.getYieldInfo(k).getTextKey(), iYieldChange, gc.getYieldInfo(k).getChar(), gc.getBonusInfo(iBonus).getTextKey(), gc.getBonusInfo(iBonus).getType())) + u"\n"
 
 		for iRoute in range(gc.getNumRouteInfos()):
 			for k in range(YieldTypes.NUM_YIELD_TYPES):

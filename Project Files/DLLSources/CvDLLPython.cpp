@@ -49,6 +49,8 @@ void CyHallOfFameInterface();
 void CyGameCoreUtilsPythonInterface();
 void CyTradeRoutePythonInterface();
 void CyTradeRouteGroupPythonInterface();//R&R mod,vetiarvind, trade groups
+void CyUserSettingsPythonInterface(); // WTP
+void CyDataPythonInterface(); // WTP
 
 //
 //
@@ -72,6 +74,8 @@ DllExport void DLLPublishToPython()
 	CyGameCoreUtilsPythonInterface();
 	CyTradeRoutePythonInterface();
 	CyTradeRouteGroupPythonInterface();//R&R mod,vetiarvind, trade groups
+	CyUserSettingsPythonInterface(); // WTP
+	CyDataPythonInterface(); // WTP
 
 	//
 	// large interfaces which can be split across files if need be

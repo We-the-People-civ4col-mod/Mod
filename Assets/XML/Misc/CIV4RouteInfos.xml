@@ -39,5 +39,17 @@
             <Yields/>
             <Button>Art/Interface/Buttons/Builds/Railroad.dds</Button>
         </RouteInfo>
+        <RouteInfo>
+            <Type>ROUTE_RAFT_STATION</Type>
+            <Description>Whatever. Never displayed or build ingame. Used by BUILD_RAFT_STATION for automation prediction of a route like build</Description>
+			<bGraphicalOnly>1</bGraphicalOnly>
+            <iValue>3</iValue>
+            <iAdvancedStartCost>30</iAdvancedStartCost>
+            <iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+            <iMovement>15</iMovement>
+            <iFlatMovement>15</iFlatMovement>
+            <Yields/>
+            <Button>Art/Interface/Buttons/Builds/Railroad.dds</Button>
+        </RouteInfo>
     </RouteInfos>
 </Civ4RouteInfos>

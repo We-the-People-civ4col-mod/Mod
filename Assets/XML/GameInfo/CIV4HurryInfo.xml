@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Ed Piper (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Civ4HurryInfo - This structure describes the name for each multiplayer option. -->
+<Civ4HurryInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<HurryInfos>
+		<HurryInfo>
+			<Type>HURRY_GOLD</Type>
+			<Description>TXT_KEY_HURRY_GOLD</Description>
+			<iGoldPerProduction>6</iGoldPerProduction>
+			<iProductionPerPopulation>0</iProductionPerPopulation>
+			<iGoldPerCross>0</iGoldPerCross>
+			<iFlatGold>0</iFlatGold>
+			<iYieldCostEuropePercent>150</iYieldCostEuropePercent>
+			<bStarting>1</bStarting>
+			<bCity>1</bCity>
+			<ProductionYieldConsumed>YIELD_LUMBER</ProductionYieldConsumed>
+			<iProductionYieldPercent>150</iProductionYieldPercent>
+			<Button>Art/Interface/MainScreen/CityScreen/hurry_commerce.dds</Button>
+		</HurryInfo>
+		<HurryInfo>
+			<Type>HURRY_IMMIGRANT</Type>
+			<Description>TXT_KEY_HURRY_IMMIGRANT</Description>
+			<iGoldPerProduction>0</iGoldPerProduction>
+			<iProductionPerPopulation>0</iProductionPerPopulation>
+			<iGoldPerCross>10</iGoldPerCross>
+			<iFlatGold>50</iFlatGold>
+			<iYieldCostEuropePercent>0</iYieldCostEuropePercent>
+			<bStarting>1</bStarting>
+			<bCity>0</bCity>
+			<ProductionYieldConsumed>NONE</ProductionYieldConsumed>
+			<iProductionYieldPercent>0</iProductionYieldPercent>
+			<Button/>
+		</HurryInfo>
+	</HurryInfos>
+</Civ4HurryInfo>

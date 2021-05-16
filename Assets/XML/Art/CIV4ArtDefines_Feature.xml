@@ -105,9 +105,6 @@
                         <ModelFile>Art/Terrain/Features/IcePack/Ice15_03.nif</ModelFile>
                         <ModelFile>Art/Terrain/Features/IcePack/Ice15_04.nif</ModelFile>
                         <ModelFile>Art/Terrain/Features/IcePack/Ice15_05.nif</ModelFile>
-                        <ModelFile>Art/Terrain/Features/IcePack/Ice15_06.nif</ModelFile>
-                        <ModelFile>Art/Terrain/Features/IcePack/Ice15_07.nif</ModelFile>
-                        <ModelFile>Art/Terrain/Features/IcePack/Ice15_08.nif</ModelFile>
                         <Connections>NW NE SE SW</Connections>
                     </FeatureArtPiece>
                 </FeatureArtPieces>
@@ -292,6 +289,112 @@
                 </FeatureArtPieces>
                 <iModelCopies>32</iModelCopies>
                 <VarietyButton>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,6,4</VarietyButton>
+            </FeatureVariety>
+        </FeatureArtInfo>
+        <FeatureArtInfo>
+            <Type>ART_DEF_FEATURE_RIVER_FORD</Type>
+            <bAnimated>0</bAnimated>
+            <TileArtType>TILE_ART_TYPE_HALF_TILING</TileArtType>
+            <fScale>1.0</fScale>
+            <fInterfaceScale>1.0</fInterfaceScale>
+            <Button>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,8,4</Button>
+            <FeatureVariety>
+                <FeatureArtPieces>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice01_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice01_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice01_03.nif</ModelFile>
+                        <Connections>NW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice02_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice02_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice02_03.nif</ModelFile>
+                        <Connections>NE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice03_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice03_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice03_03.nif</ModelFile>
+                        <Connections>NW NE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice04_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice04_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice04_03.nif</ModelFile>
+                        <Connections>SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice05_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice05_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice05_03.nif</ModelFile>
+                        <Connections>NW SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice06_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice06_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice06_03.nif</ModelFile>
+                        <Connections>NE SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice07_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice07_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice07_03.nif</ModelFile>
+                        <Connections>NW NE SE</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice08_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice08_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice08_03.nif</ModelFile>
+                        <Connections>SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice09_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice09_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice09_03.nif</ModelFile>
+                        <Connections>NW SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice10_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice10_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice10_03.nif</ModelFile>
+                        <Connections>NE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice11_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice11_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice11_03.nif</ModelFile>
+                        <Connections>NW NE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice12_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice12_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice12_03.nif</ModelFile>
+                        <Connections>SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice13_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice13_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice13_03.nif</ModelFile>
+                        <Connections>NW SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice14_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice14_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice14_03.nif</ModelFile>
+                        <Connections>NE SE SW</Connections>
+                    </FeatureArtPiece>
+                    <FeatureArtPiece>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice15_01.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice15_02.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice15_03.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice15_04.nif</ModelFile>
+                        <ModelFile>Art/Terrain/Features/river_ford/Ice15_05.nif</ModelFile>
+                        <Connections>NW NE SE SW</Connections>
+                    </FeatureArtPiece>
+                </FeatureArtPieces>
+                <iModelCopies>1</iModelCopies>
+                <VarietyButton>,Art/Interface/Buttons/baseterrain_terrainfeatures_atlas_custom.dds,8,4</VarietyButton>
             </FeatureVariety>
         </FeatureArtInfo>
     </FeatureArtInfos>

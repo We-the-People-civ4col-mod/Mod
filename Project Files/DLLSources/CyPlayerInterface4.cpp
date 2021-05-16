@@ -6,6 +6,7 @@
 #include "CySelectionGroup.h"
 #include "CyArea.h"
 #include "CyTradeRoute.h"
+#include "CyData.h"
 //# include <boost/python/manage_new_object.hpp>
 //# include <boost/python/return_value_policy.hpp>
 //# include <boost/python/scope.hpp>
@@ -65,6 +66,9 @@ void CyPlayerPythonInterface4(python::class_<CyPlayer>& x)
 		.def("addRevolutionEuropeUnit", &CyPlayer::addRevolutionEuropeUnit, "void addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession)")
 		.def("getNumTradeMessages", &CyPlayer::getNumTradeMessages, "int ()")
 		.def("getTradeMessage", &CyPlayer::getTradeMessage, "string (int)")
+
+		.def("getSpecialBuildingTypes", &CyPlayer::getSpecialBuildingTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")
+		.def("getStoredYieldTypes", &CyPlayer::getStoredYieldTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")
 
 		.def("getCivEffectCount", &CyPlayer::getCivEffectCount, "int (CivEffectTypes eCivEffect)")
 		.def("getNumUnitsOnDock", &CyPlayer::getNumUnitsOnDock, "unsigned int ()")

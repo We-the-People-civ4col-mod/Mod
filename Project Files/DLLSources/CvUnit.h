@@ -18,6 +18,9 @@ class CvSelectionGroup;
 class FAStarNode;
 class CvArtInfoUnit;
 
+class CvSavegameReader;
+class CvSavegameWriter;
+
 struct CombatDetails
 {
 	int iExtraCombatPercent;
@@ -182,11 +185,27 @@ public:
 	void establishMission();
 	int getMissionarySuccessPercent() const;
 
+	// Ramstormp, Disillusioned Missionary - START
+	int getFailedMissionarySurvivalPercent() const;
+	// Ramstormp - END
+
+	// WTP, ray, Native Trade Posts - START
+	bool canEstablishTradePost() const;
+	void establishTradePost();
+	int getNativeTradePostSuccessPercent() const;
+	// WTP, ray, Native Trade Posts - END
+
 	// R&R, ray , Stirring Up Natives - START
 	bool canStirUp() const;
 	void stirUpNatives();
 	int getStirUpSuccessPercent() const;
 	// R&R, ray , Stirring Up Natives - END
+
+	// WTP, merge Treasures, of Raubwuerger - START
+	bool canMergeTreasures() const;
+	void mergeTreasures();
+	void createTreasures(int overallAmount, int maxTreasureGold);
+	// WTP, merge Treasures, of Raubwuerger - END
 
 	bool canSpeakWithChief(CvPlot* pPlot) const;
 	void speakWithChief();
@@ -283,12 +302,12 @@ public:
 	bool isCombat() const;
 
 	DllExport int maxHitPoints() const;
-	DllExport int currHitPoints() const;
+	int currHitPoints() const;
 	bool isHurt() const;
 	DllExport bool isDead() const;
 
 	void setBaseCombatStr(int iCombat);
-	DllExport int baseCombatStr() const;
+	int baseCombatStr() const;
 	void updateBestLandCombat();
 	int maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
 	int currCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
@@ -405,6 +424,7 @@ public:
 	DllExport CvPlot* plot() const;
 	CvCity* getCity() const;
 	int getArea() const;
+	int getLandArea() const;
 	CvArea* area() const;
 	int getLastMoveTurn() const;
 	void setLastMoveTurn(int iNewValue);
@@ -426,7 +446,7 @@ public:
 	int getLevel() const;
 	void setLevel(int iNewValue);
 	void changeLevel(int iChange);
-	DllExport int getCargo() const;
+	int getCargo() const;
 	void changeCargo(int iChange);
 
 	CvPlot* getAttackPlot() const;
@@ -516,17 +536,20 @@ public:
 	DllExport ProfessionTypes getProfession() const;
 
 	// TAC - LbD - Ray - START
-	DllExport int getLbDrounds() const;
-	DllExport void setLbDrounds(int newRounds);
-	DllExport ProfessionTypes getLastLbDProfession() const;
-	DllExport void setLastLbDProfession(ProfessionTypes eProfession);
+	int getLbDrounds() const;
+	void setLbDrounds(int newRounds);
+	ProfessionTypes getLastLbDProfession() const;
+	void setLastLbDProfession(ProfessionTypes eProfession);
 	// TAC - LbD - Ray - END
 
 
-	void setProfession(ProfessionTypes eProfession, bool bForce = false);
-	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL) const;
+	bool setProfession(ProfessionTypes eProfession, bool bForce = false);
+	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL, bool bForceCheck = false) const;
 	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity);
 	void processProfessionStats(ProfessionTypes eProfession, int iChange);
+private:
+	void processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange);
+public:
 	int getProfessionChangeYieldRequired(ProfessionTypes eProfession, YieldTypes eYield) const;
 	int getEuropeProfessionChangeCost(ProfessionTypes eProfession) const;
 
@@ -700,6 +723,9 @@ public:
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
+	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall);
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	virtual void AI_init() = 0;
 	virtual void AI_uninit() = 0;
@@ -737,6 +763,10 @@ public:
 	// R&R, ray, Port Royal
 	bool canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE) const;
 	void sailToPortRoyal(UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE);
+
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
+	int canCrossCoastOnly() const;
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
 
 	bool isProfessionalMilitary() const;
 
@@ -818,18 +848,18 @@ protected:
 	ProfessionTypes m_eProfession;
 
 	// TAC - LbD - Ray - START
-	int m_LbDrounds;
-	ProfessionTypes m_lastProfession;
+	int m_iLbDrounds;
+	ProfessionTypes m_eLastProfession;
 	// TAC - LbD - Ray - END
 
 	//ray18
-	int moneyToBuyLand;
-	PlayerTypes playerToBuyLand;
+	int m_iMoneyToBuyLand;
+	PlayerTypes m_ePlayerToBuyLand;
 	//ray18 End
 
 	// R&R, ray, Natives Trading - START
-	int m_AmountForNativeTrade;
-	YieldTypes m_YieldForNativeTrade;
+	int m_iAmountForNativeTrade;
+	YieldTypes m_eYieldForNativeTrade;
 	// R&R, ray, Natives Trading - END
 
 	UnitTravelStates m_eUnitTravelState;
@@ -839,22 +869,22 @@ protected:
 	IDInfo m_homeCity;
 	int m_iPostCombatPlotIndex;
 
-	int* m_aiExtraDomainModifier;
+	DomainArray<int> m_ja_iExtraDomainModifier;
 
 	CvWString m_szName;
 	CvString m_szScriptData;
 
-	bool* m_pabHasRealPromotion;
-	int* m_paiFreePromotionCount;
-	int* m_paiTerrainDoubleMoveCount;
-	int* m_paiFeatureDoubleMoveCount;
-	int* m_paiExtraTerrainAttackPercent;
-	int* m_paiExtraTerrainDefensePercent;
-	int* m_paiExtraFeatureAttackPercent;
-	int* m_paiExtraFeatureDefensePercent;
-	int* m_paiExtraUnitClassAttackModifier;
-	int* m_paiExtraUnitClassDefenseModifier;
-	int* m_paiExtraUnitCombatModifier;
+	BoolArray m_ba_HasRealPromotion;
+	PromotionArray<int> m_ja_iFreePromotionCount;
+	TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
+	FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
+	TerrainArray<int> m_ja_iExtraTerrainAttackPercent;
+	TerrainArray<int> m_ja_iExtraTerrainDefensePercent;
+	FeatureArray<int> m_ja_iExtraFeatureAttackPercent;
+	FeatureArray<int> m_ja_iExtraFeatureDefensePercent;
+	UnitClassArray<int> m_ja_iExtraUnitClassAttackModifier;
+	UnitClassArray<int> m_ja_iExtraUnitClassDefenseModifier;
+	UnitCombatArray<int> m_ja_iExtraUnitCombatModifier;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 
@@ -884,7 +914,9 @@ protected:
 	YieldTypes m_eCachedYield;
 // unit yield cache - end - Nightinggale
 	int getCargoValue(Port port) const;
-	int canCrossCoastOnly() const;
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - START
+	//int canCrossCoastOnly() const;
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
 
 	BoolArray m_ba_isPromotionApplied;
 };

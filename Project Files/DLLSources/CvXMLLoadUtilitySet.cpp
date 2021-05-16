@@ -14,6 +14,14 @@
 #include "FVariableSystem.h"
 #include "CvGameCoreUtils.h"
 
+#include "CvSavegame.h"
+
+// ignore type check for template functions
+// no need to be strict in this file
+DEFINE_ENUM_INT_COMPARISON(YieldTypes)
+
+
+
 /// xml verification
 #ifdef FASSERT_ENABLE
 
@@ -22,20 +30,164 @@
 // this is usually variable combos, which will cause asserts and bugs later
 static void verifyXMLsettings()
 {
+
 	for (int i=0; i < GC.getNumEventTriggerInfos(); ++i)
 	{
 		EventTriggerTypes eTrigger = (EventTriggerTypes)i;
 
 		CvEventTriggerInfo& kInfo = GC.getEventTriggerInfo(eTrigger);
-		
+	
 		if (kInfo.getPercentGamesActive() > 0 && kInfo.isUnitsOnPlot())
 		{
 			FAssertMsg(isPlotEventTrigger(eTrigger), CvString::format("XML error: %s has bUnitsOnPlot set, but failed isPlotEventTrigger()", kInfo.getType()));
 		}
 	}
+	
 }
 #endif
 /// xml verification
+
+void CvXMLLoadUtility::GameTextContainer::Read(CvXMLLoadUtility* pXML, const char* szLanguage, bool bUTF8, bool bTranslated, const char* szFileName, const char* szTag)
+{
+	if (gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), szLanguage))
+	{
+		
+		if (CvGameText::readString(pXML, m_Text, "Text", bUTF8, szFileName, bTranslated, szTag))
+		{
+			// There are child tags. Read all 3 of them.
+
+			// TEXT
+			// GENDER
+			if (!CvGameText::readString(pXML, m_Gender, "Gender", bUTF8, szFileName, bTranslated, szTag))
+			{
+				m_Gender = L"N";
+			}
+			// PLURAL
+			if (!CvGameText::readString(pXML, m_Plural, "Plural", bUTF8, szFileName, bTranslated, szTag))
+			{
+				m_Plural = L"false";
+			}
+		}
+		else
+		{
+			// No Text child meaning no gender or plural. Just read the text.
+			CvGameText::readString(pXML, m_Text, NULL, bUTF8, szFileName, bTranslated, szTag);
+			m_Gender = L"N";
+			m_Plural = L"false";
+		}
+		
+	}
+};
+
+CvXMLLoadUtility::GameTextContainer* CvXMLLoadUtility::GameTextList::get(std::string szType)
+{
+	FGameTextMap::iterator iIterator;
+	iIterator = m_map.find(szType);
+	if (iIterator == m_map.end())
+	{
+		return NULL;
+	}
+	return &iIterator->second;
+}
+
+void CvXMLLoadUtility::GameTextList::add(std::string szType, const CvXMLLoadUtility::GameTextContainer& kData)
+{
+	m_map[szType] = kData;
+}
+
+CvXMLLoadUtility::GameTextStringKey& CvXMLLoadUtility::GameTextList::init(std::string szTag)
+{
+	GameTextMap::iterator iIterator = m_list.find(szTag);
+	if (iIterator == m_list.end())
+	{
+		GameTextStringKey newKey;
+		newKey.bOptional = false;
+		m_list[szTag] = newKey;
+		iIterator = m_list.find(szTag);
+		FAssert(iIterator != m_list.end());
+	}
+	return iIterator->second;
+}
+
+bool CvXMLLoadUtility::GameTextList::readString(const TCHAR* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer)
+{
+	FGameTextMap::iterator iIterator;
+
+	bool bTranslated = true;
+
+	iIterator = FStringListCurrentLanguage.m_map.find(szTag);
+	if (iIterator == FStringListCurrentLanguage.m_map.end() || iIterator->second.m_Text == L"ENG")
+	{
+		bTranslated = iIterator != FStringListCurrentLanguage.m_map.end();
+
+		iIterator = m_map.find(szTag);
+		if (iIterator == m_map.end())
+		{
+			return false;
+		}
+	}
+
+	GameTextContainer* pContainer = &iIterator->second;
+
+	if (pContainer->m_Text.length() > 7 && wcsncmp(pContainer->m_Text.GetCString(), L"TXT_KEY", 7) == 0)
+	{
+		CvString szNewTag(pContainer->m_Text);
+		if (readString(szNewTag, FStringListCurrentLanguage, resultContainer))
+		{
+			return true;
+		}
+		else
+		{
+			resultContainer = *pContainer;
+			return false;
+		}
+	}
+
+	resultContainer = *pContainer;
+	return true;
+}
+
+void CvXMLLoadUtility::GameTextList::setAllStrings(GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList)
+{
+	bool bIsEnglish = GAMETEXT.getCurrentLanguage() == 0;
+	bool bIsTagLanguage = GAMETEXT.getCurrentLanguage() == CvGameText::getLanguageID("Tag");
+
+	for (GameTextMap::iterator iIterator = m_list.begin(); iIterator != m_list.end(); ++iIterator)
+	{
+		if (bIsTagLanguage)
+		{
+			CvWString szBuffer(iIterator->first.c_str());
+			gDLL->addText(iIterator->first.c_str() /*id*/, szBuffer.c_str());
+			continue;
+		}
+		GameTextContainer resultContainer;
+
+		bool bTranslated = readString(iIterator->first.c_str(), FStringListCurrentLanguage, resultContainer);
+
+		
+		if (resultContainer.m_Text.size() == 0)
+		{
+			CvString szBuffer(iIterator->first.c_str());
+			FAssertMsg(false, CvString::format("%s: failed to load string or resolve string reference", szBuffer.c_str()));
+			continue;
+		}
+
+		if (resultContainer.m_Text == L"????")
+		{
+			continue;
+		}
+
+		if (!bTranslated)
+		{
+			CvString szError;
+			szError.Format("Untranslated string: %s", iIterator->first.c_str());
+			gDLL->logMsg("translation.log", szError);
+		}
+
+		gDLL->addText(iIterator->first.c_str() /*id*/, resultContainer.m_Text.c_str(), resultContainer.m_Gender.c_str(), resultContainer.m_Plural.c_str());
+	}
+}
+
 
 // Store which codepage is used when loading the GameFont
 // Critical as it is used to detect if the language is changed and the incorrect GameFont is loaded
@@ -596,6 +748,12 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_NATIVE_MERC", idx);
 		//End TAC Native Mercs
 
+		//WTP, Protected Hostile Goodies - START
+		SetGlobalDefine("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_PROTECTOR_HOSTILE_VILLAGE", idx);
+		//WTP, Protected Hostile Goodies - END
+
 		// R&R, ray, Native Slave, START
 		SetGlobalDefine("UNITCLASS_NATIVE_SLAVE", szVal);
 		idx = FindInInfoClass(szVal);
@@ -613,6 +771,34 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_PRISONER", idx);
 		// R&R, ray, Prisons Crowded - END
+
+		// WTP, ray, LbD Slaves Revolt and Free - START
+		SetGlobalDefine("UNITCLASS_FREED_SLAVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_FREED_SLAVE", idx);
+
+		SetGlobalDefine("UNITCLASS_CONVERTED_NATIVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_CONVERTED_NATIVE", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_SLAVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_SLAVE", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_NATIVE_SLAVE", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_NATIVE_SLAVE", idx);
+
+		SetGlobalDefine("UNITCLASS_REVOLTING_CRIMINAL", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_REVOLTING_CRIMINAL", idx);
+		// WTP, ray, LbD Slaves Revolt and Free - END
+
+		//Ramstormp, Disillusioned Missionary - START
+		SetGlobalDefine("UNITCLASS_FAILED_MISSIONARY", szVal);
+		idx = FindInInfoClass(szVal);
+		GC.getDefinesVarSystem()->SetValue("UNITCLASS_FAILED_MISSIONARY", idx);
+		//Ramstormp, Disillusioned missionary - END
 
 		// R&R, ray, Revolutionary Noble - START
 		SetGlobalDefine("UNITCLASS_NOBLE", szVal);
@@ -973,6 +1159,34 @@ void CvXMLLoadUtility::SetGameFont()
 	ARTFILEMGR.getInterfaceArtInfo(GC.getInfoTypeForString("FONTS_GAMEFONT", true)).setPath(szPath.c_str());
 }
 
+// generates a list of xml files in a certain location
+// used by text reading as we can't control the order when using vanilla code
+// appends files to aszFiles, allowing adding to existing lists rather than overwriting
+static void loadTextFiles(std::vector<CvString>& aszFiles, const std::string szLocation, const std::string szPrefix)
+{
+	CvString szFileName;
+
+	// the files are located at:
+	// szLocation /Assets/ szPrefix
+
+	std::string szPath = szLocation;
+
+	szPath.append("\\Assets\\");
+	szPath.append(szPrefix);
+	szPath.append("*.xml");
+	WIN32_FIND_DATA data;
+	HANDLE hFind;
+	if ((hFind = FindFirstFile(szPath.c_str(), &data)) != INVALID_HANDLE_VALUE) {
+		do
+		{
+			szFileName = szPrefix;
+			szFileName.append(data.cFileName);
+			aszFiles.push_back(szFileName);
+		} while (FindNextFile(hFind, &data) != 0);
+		FindClose(hFind);
+	}
+}
+
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   SetGlobalText()
@@ -988,6 +1202,12 @@ bool CvXMLLoadUtility::LoadGlobalText()
 	if (!gDLL->cacheRead(cache))
 	{
 		bool bLoaded = false;
+
+		{
+			CvString szError;
+			szError.Format("Loading strings for language: %s", CvGameText::getLanguageName(GAMETEXT.getCurrentLanguage()));
+			gDLL->logMsg("translation.log", szError);
+		}
 
 		if (!CreateFXml())
 		{
@@ -1005,13 +1225,25 @@ bool CvXMLLoadUtility::LoadGlobalText()
 		std::vector<CvString> aszFiles;
 		std::vector<CvString> aszModfiles;
 
-		gDLL->enumerateFiles(aszFiles, "xml\\text\\*.xml");
+		// read vanilla, then mod
+		// gDLL->enumerateFiles mixes those two together. Removed because it unlocked vanilla overwriting mod strings.
+		loadTextFiles(aszFiles, "."                   , "xml\\text\\");
+		loadTextFiles(aszFiles, gDLL->getModName(true), "xml\\text\\");
 
 		if (gDLL->isModularXMLLoading())
 		{
 			gDLL->enumerateFiles(aszModfiles, "modules\\*_CIV4GameText.xml");
 			aszFiles.insert(aszFiles.end(), aszModfiles.begin(), aszModfiles.end());
 		}
+
+		// Files from translations
+		gDLL->enumerateFiles(aszModfiles, "xml\\text\\*\\*.xml");
+		aszFiles.insert(aszFiles.end(), aszModfiles.begin(), aszModfiles.end());
+
+		GameTextList FStringListEnglish;
+		GameTextList FStringListCurrentLang;
+
+		stdext::hash_map< std::string, bool > StringList;
 
 		for(std::vector<CvString>::iterator it = aszFiles.begin(); it != aszFiles.end(); ++it)
 		{
@@ -1029,13 +1261,15 @@ bool CvXMLLoadUtility::LoadGlobalText()
 				{
 					// First check if utf8 is in the filename.
 					// Vanilla has converted the path to lowercase at this point meaning it's not a case sensitive search.
-					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL;
+					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL || strstr(it->c_str(), "UTF8") != NULL;
 
 					// Now call the vanilla read code.
-					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str());
+					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str(), FStringListEnglish, FStringListCurrentLang, StringList);
 				}
 			}
 		}
+
+		FStringListEnglish.setAllStrings(FStringListCurrentLang, StringList);
 
 		DestroyFXml();
 
@@ -1653,7 +1887,6 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 	}
 }
 
-
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   SetGameText()
@@ -1661,11 +1894,15 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 //  PURPOSE :   Reads game text info from XML and adds it to the translation manager
 //
 //------------------------------------------------------------------------------------------------------
-void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName)
+void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList)
 {
 	PROFILE_FUNC();
 	logMsg("SetGameText %s\n", szTagName);
 	int i=0;		//loop counter - Index into pTextInfo
+
+	int iCurrentLanguage = GAMETEXT.getCurrentLanguage();
+
+	const TCHAR* szLanguageName = CvGameText::getLanguageName(iCurrentLanguage);
 
 	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szTextGroup)) // Get the Text Group 1st
 	{
@@ -1677,10 +1914,51 @@ void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagNam
 		// loop through each tag
 		for (i=0; i < iNumVals; i++)
 		{
-			CvGameText textInfo;
-			textInfo.read(this, bUTF8, szFileName);
+			SkipToNextVal();	// skip to the next non-comment node
 
-			gDLL->addText(textInfo.getType() /*id*/, textInfo.getText(), textInfo.getGender(), textInfo.getPlural());
+			{
+				CvString m_szType;
+				GetChildXmlValByName(m_szType, "Tag");
+
+				CvXMLLoadUtility::GameTextStringKey& StringKey = FStringListEnglish.init(m_szType);
+
+				if (!StringKey.bOptional)
+				{
+					GetChildXmlValByName(&StringKey.bOptional, "bOptional", false);
+				}
+
+				gDLL->getXMLIFace()->SetToChild(GetXML()); // Move down to Child level
+				StringKey.English.Read(this, "English", bUTF8, false, szFileName, m_szType);
+				StringKey.Translated.Read(this, szLanguageName, bUTF8, true, szFileName, m_szType);
+
+				gDLL->getXMLIFace()->SetToParent(GetXML()); // Move back up to Parent
+			}
+
+			CvGameText textInfo;
+			if (textInfo.read(this, bUTF8, szFileName, "English"))
+			{
+				StringList[textInfo.getType()] = true;
+
+				GameTextContainer newContainer;
+				newContainer.m_Text = textInfo.getText();
+				newContainer.m_Gender = textInfo.getGender();
+				newContainer.m_Plural = textInfo.getPlural();
+
+				FStringListEnglish.add(textInfo.getType(), newContainer);
+			}
+
+			if (iCurrentLanguage != 0 && textInfo.read(this, bUTF8, szFileName, szLanguageName))
+			{
+				StringList[textInfo.getType()] = true;
+
+				GameTextContainer newContainer;
+				newContainer.m_Text = textInfo.getText();
+				newContainer.m_Gender = textInfo.getGender();
+				newContainer.m_Plural = textInfo.getPlural();
+
+				FStringListCurrentLanguage.add(textInfo.getType(), newContainer);
+			}
+
 			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml) && i!=iNumVals-1)
 			{
 				char	szMessage[1024];
@@ -2360,6 +2638,11 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	// Nightinggale
 	gDLL->ChangeINIKeyValue("CONFIG", "HidePythonExceptions", "0");
 
+	// disable file caching to eliminate the risk that somebody ends up with cached out of date data
+	// the speed boost from the cache doesn't matter on modern hardware anyway
+	gDLL->ChangeINIKeyValue("CONFIG", "DisableFileCaching", "1");
+	gDLL->ChangeINIKeyValue("CONFIG", "DisableCaching", "1");
+
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(true);
 	/// XML type preloading - end - Nightinggale
@@ -2374,6 +2657,44 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	if (bLoaded)
 	{
 		CvGameText::readLanguages(this);
+	}
+
+
+	// check that all xml tags have the expected prefix
+	// required as savegames will not save the prefix and it will just be assumed on load
+	{
+		CvString szName;
+		for (JITarrayTypes eType = FIRST_JIT_ARRAY; eType < NUM_JITarrayTypes; ++eType)
+		{
+			{
+				const char* szPrefix = getArrayPrefix(eType);
+				int iLengthPrefix = strlen(szPrefix);
+
+				if (iLengthPrefix == 0)
+				{
+					continue;
+				}
+
+				int iLength = getArrayLength(eType);
+
+				for (int i = 0; i < iLength; ++i)
+				{
+					const char* szType = getArrayType(eType, i);
+
+					szName = szType;
+					szName.resize(iLengthPrefix);
+
+					if (szName.compare(szPrefix) != 0)
+					{
+						FAssertMsg(false, CvString::format("%s is expected to begin with %s", szType, szPrefix).c_str());
+						char szMessage[1024];
+
+						sprintf(szMessage, "%s is expected to begin with %s", szType, szPrefix);
+						gDLL->MessageBox(szMessage, "XML type Error");
+					}
+				}
+			}
+		}
 	}
 
 	DestroyFXml();

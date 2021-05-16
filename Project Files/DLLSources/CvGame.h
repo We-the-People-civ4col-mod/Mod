@@ -14,21 +14,21 @@ class CvCity;
 class CvReplayMessage;
 class CvReplayInfo;
 
-typedef std::vector<const CvReplayMessage*> ReplayMessageList;
+typedef std::vector<CvReplayMessage*> ReplayMessageList;
 
 class CvGame
 {
 
 public:
 
-	DllExport CvGame();
-	DllExport virtual ~CvGame();
+	CvGame();
+	virtual ~CvGame();
 
 	// PatchMod: Victorys START
 	int iVictoriesSet;
 	// PatchMod: Victorys END
 	DllExport void init(HandicapTypes eHandicap);
-	DllExport void reset(HandicapTypes eHandicap, bool bConstructorCall = false);
+	DllExport void reset(HandicapTypes eHandicap = NO_HANDICAP, bool bConstructorCall = false);
 
 protected:
 
@@ -40,21 +40,21 @@ public:
 	DllExport void regenerateMap();
 
 	DllExport void initDiplomacy();
-	DllExport void initFreeState();
-	DllExport void initFreeUnits();
-	DllExport void initImmigration();
+	void initFreeState();
+	void initFreeUnits();
+	void initImmigration();
 
-	DllExport void assignStartingPlots();
-	DllExport void normalizeStartingPlots();
+	void assignStartingPlots();
+	void normalizeStartingPlots();
 
 	void assignNativeTerritory();
 
 	DllExport void update();
-	DllExport void updateScore(bool bForce = false);
+	void updateScore(bool bForce = false);
 
 	DllExport void updateColoredPlots();
 
-	DllExport void updateCitySight(bool bIncrement);
+	void updateCitySight(bool bIncrement);
 
 	DllExport void updateSelectionList();
 	DllExport void updateTestEndTurn();
@@ -64,7 +64,7 @@ public:
 	DllExport CvUnit* getPlotUnit(const CvPlot* pPlot, int iIndex);
 	DllExport void getPlotUnits(const CvPlot *pPlot, std::vector<CvUnit *> &plotUnits);
 	DllExport void cycleCities(bool bForward = true, bool bAdd = false);
-	DllExport void cycleSelectionGroups(bool bClear, bool bForward = true);
+	void cycleSelectionGroups(bool bClear, bool bForward = true);
 	DllExport bool cyclePlotUnits(CvPlot* pPlot, bool bForward = true, bool bAuto = false, int iCount = -1);
 
 	DllExport void selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl);
@@ -80,113 +80,113 @@ public:
 	DllExport void setupActionCache();
 	DllExport void handleAction(int iAction);
 
-	DllExport bool canDoControl(ControlTypes eControl);
+	bool canDoControl(ControlTypes eControl);
 	DllExport void doControl(ControlTypes eControl);
 
 	DllExport void implementDeal(PlayerTypes eWho, PlayerTypes eOtherWho, CLinkList<TradeData>* pOurList, CLinkList<TradeData>* pTheirList, bool bForce = false);
-	DllExport void verifyDeals();
+	void verifyDeals();
 
 	DllExport void getGlobeviewConfigurationParameters(TeamTypes eTeam, bool& bStarsVisible, bool& bWorldIsRound);
-	DllExport int getSymbolID(int iSymbol);
+	int getSymbolID(int iSymbol);
 
 	int getProductionPerPopulation(HurryTypes eHurry);
 
 	int getAdjustedPopulationPercent(VictoryTypes eVictory) const;
 	int getAdjustedLandPercent(VictoryTypes eVictory) const;
 
-	DllExport int countCivPlayersAlive() const;
-	DllExport int countCivPlayersEverAlive() const;
-	DllExport int countCivTeamsAlive() const;
-	DllExport int countCivTeamsEverAlive() const;
-	DllExport int countHumanPlayersAlive() const;
-	DllExport int countHumanPlayersEverAlive() const;
+	int countCivPlayersAlive() const;
+	int countCivPlayersEverAlive() const;
+	int countCivTeamsAlive() const;
+	int countCivTeamsEverAlive() const;
+	int countHumanPlayersAlive() const;
+	int countHumanPlayersEverAlive() const;
 
 	int countTotalCivPower();
 
-	DllExport int getImprovementUpgradeTime(ImprovementTypes eImprovement) const;
+	int getImprovementUpgradeTime(ImprovementTypes eImprovement) const;
 
-	DllExport EraTypes getCurrentEra() const;
+	EraTypes getCurrentEra() const;
 
 	DllExport TeamTypes getActiveTeam();
 	DllExport CivilizationTypes getActiveCivilizationType();
 
-	DllExport unsigned int getLastEndTurnMessageSentTime();
+	unsigned int getLastEndTurnMessageSentTime();
 	DllExport bool isNetworkMultiPlayer() const;
 	DllExport bool isGameMultiPlayer() const;
 	DllExport bool isTeamGame() const;
 
-	DllExport bool isModem();
-	DllExport void setModem(bool bModem);
+	bool isModem();
+	void setModem(bool bModem);
 	DllExport void reviveActivePlayer();
 
 	DllExport int getNumHumanPlayers();
 
-	DllExport int getEndTurnMessagesSent();
+	int getEndTurnMessagesSent();
 	DllExport void incrementEndTurnMessagesSent();
 
 	DllExport int getGameTurn();
-	DllExport void setGameTurn(int iNewValue);
-	DllExport void incrementGameTurn();
-	DllExport int getTurnYear(int iGameTurn);
-	DllExport int getGameTurnYear();
+	void setGameTurn(int iNewValue);
+	void incrementGameTurn();
+	int getTurnYear(int iGameTurn);
+	int getGameTurnYear();
 
-	DllExport int getElapsedGameTurns() const;
+	int getElapsedGameTurns() const;
 	void incrementElapsedGameTurns();
 	bool isMaxTurnsExtended() const;
 	void setMaxTurnsExtended(bool bExtended);
-	DllExport int getMaxTurns() const;
-	DllExport void setMaxTurns(int iNewValue);
+	int getMaxTurns() const;
+	void setMaxTurns(int iNewValue);
 	void changeMaxTurns(int iChange);
 
 	DllExport void getTurnTimerText(CvWString& szBuffer) const;
 
-	DllExport int getMaxCityElimination() const;
-	DllExport void setMaxCityElimination(int iNewValue);
+	int getMaxCityElimination() const;
+	void setMaxCityElimination(int iNewValue);
 
-	DllExport int getNumAdvancedStartPoints() const;
-	DllExport void setNumAdvancedStartPoints(int iNewValue);
+	int getNumAdvancedStartPoints() const;
+	void setNumAdvancedStartPoints(int iNewValue);
 
-	DllExport int getStartTurn() const;
-	DllExport void setStartTurn(int iNewValue);
-	DllExport int getStartYear() const;
-	DllExport void setStartYear(int iNewValue);
+	int getStartTurn() const;
+	void setStartTurn(int iNewValue);
+	int getStartYear() const;
+	void setStartYear(int iNewValue);
 
-	DllExport int getEstimateEndTurn() const;
-	DllExport void setEstimateEndTurn(int iNewValue);
+	int getEstimateEndTurn() const;
+	void setEstimateEndTurn(int iNewValue);
 
 	DllExport int getTurnSlice() const;
-	DllExport int getMinutesPlayed() const;
-	DllExport void setTurnSlice(int iNewValue);
-	DllExport void changeTurnSlice(int iChange);
+	int getMinutesPlayed() const;
+	void setTurnSlice(int iNewValue);
+	void changeTurnSlice(int iChange);
 
-	DllExport int getCutoffSlice() const;
-	DllExport void setCutoffSlice(int iNewValue);
-	DllExport void changeCutoffSlice(int iChange);
+	int getCutoffSlice() const;
+	void setCutoffSlice(int iNewValue);
+	void changeCutoffSlice(int iChange);
 
 	DllExport int getTurnSlicesRemaining() const;
-	DllExport void resetTurnTimer();
-	DllExport void incrementTurnTimer(int iNumTurnSlices);
+	void resetTurnTimer();
+	void incrementTurnTimer(int iNumTurnSlices);
 	TurnTimerTypes getTurnTimerType() const;
-	DllExport int getMaxTurnLen();
+	int getMaxTurnLen();
 	int getTargetScore() const;
 
-	DllExport int getNumGameTurnActive();
+	int getNumGameTurnActive();
 	DllExport int countNumHumanGameTurnActive();
 	void changeNumGameTurnActive(int iChange);
-	DllExport int getNumCities() const;
+	int getNumCities() const;
 	void changeNumCities(int iChange);
-	DllExport int getTotalPopulation() const;
+	int getTotalPopulation() const;
 	int getMaxPopulation() const;
 	int getMaxLand() const;
 	int getMaxFather() const;
-	DllExport int getInitPopulation() const;
-	DllExport int getInitLand() const;
-	DllExport int getInitFather() const;
+	int getInitPopulation() const;
+	int getInitLand() const;
+	int getInitFather() const;
 	DllExport void initScoreCalculation();
-	DllExport int getAIAutoPlay();
+	int getAIAutoPlay();
 	DllExport void setAIAutoPlay(int iNewValue);
-	DllExport void changeAIAutoPlay(int iChange);
-	DllExport unsigned int getInitialTime();
+	void changeAIAutoPlay(int iChange);
+	unsigned int getInitialTime();
 	DllExport void setInitialTime(unsigned int uiNewValue);
 	bool isScoreDirty() const;
 	void setScoreDirty(bool bNewValue);
@@ -194,8 +194,8 @@ public:
 	DllExport bool isDebugMode() const;
 	DllExport void toggleDebugMode();
 	DllExport void updateDebugModeCache();
-	DllExport int getPitbossTurnTime() const;
-	DllExport void setPitbossTurnTime(int iHours);
+	int getPitbossTurnTime() const;
+	void setPitbossTurnTime(int iHours);
 
 	DllExport bool isHotSeat() const;
 	DllExport bool isPbem() const;
@@ -205,28 +205,28 @@ public:
 	DllExport bool isFinalInitialized() const;
 	DllExport void setFinalInitialized(bool bNewValue);
 
-	DllExport bool getPbemTurnSent() const;
+	bool getPbemTurnSent() const;
 	DllExport void setPbemTurnSent(bool bNewValue);
 
 	DllExport bool getHotPbemBetweenTurns() const;
-	DllExport void setHotPbemBetweenTurns(bool bNewValue);
+	void setHotPbemBetweenTurns(bool bNewValue);
 
-	DllExport bool isPlayerOptionsSent() const;
-	DllExport void sendPlayerOptions(bool bForce = false);
+	bool isPlayerOptionsSent() const;
+	void sendPlayerOptions(bool bForce = false);
 	DllExport PlayerTypes getActivePlayer() const;
 	DllExport void setActivePlayer(PlayerTypes eNewValue, bool bForceHotSeat = false);
 	DllExport void updateUnitEnemyGlow();
 
-	DllExport HandicapTypes getHandicapType() const;
-	DllExport void setHandicapType(HandicapTypes eHandicap);
+	HandicapTypes getHandicapType() const;
+	void setHandicapType(HandicapTypes eHandicap);
 	DllExport PlayerTypes getPausePlayer();
 	DllExport bool isPaused();
 	DllExport void setPausePlayer(PlayerTypes eNewValue);
 	DllExport int getBestLandUnitCombat();
-	DllExport void setBestLandUnitCombat(int iNewValue);
+	void setBestLandUnitCombat(int iNewValue);
 	DllExport TeamTypes getWinner() const;
 	DllExport VictoryTypes getVictory() const;
-	DllExport void setWinner(TeamTypes eNewWinner, VictoryTypes eNewVictory);
+	void setWinner(TeamTypes eNewWinner, VictoryTypes eNewVictory);
 
 	DllExport GameStateTypes getGameState() const;
 	DllExport void setGameState(GameStateTypes eNewValue);
@@ -248,12 +248,12 @@ public:
 	void setTeamRank(TeamTypes eTeam, int iRank);
 	int getTeamScore(TeamTypes eTeam) const;
 	void setTeamScore(TeamTypes eTeam, int iScore);
-	DllExport bool isOption(GameOptionTypes eIndex) const;
-	DllExport void setOption(GameOptionTypes eIndex, bool bEnabled);
+	bool isOption(GameOptionTypes eIndex) const;
+	void setOption(GameOptionTypes eIndex, bool bEnabled);
 	DllExport bool isMPOption(MultiplayerOptionTypes eIndex) const;
-	DllExport void setMPOption(MultiplayerOptionTypes eIndex, bool bEnabled);
-	DllExport bool isForcedControl(ForceControlTypes eIndex) const;
-	DllExport void setForceControl(ForceControlTypes eIndex, bool bEnabled);
+	void setMPOption(MultiplayerOptionTypes eIndex, bool bEnabled);
+	bool isForcedControl(ForceControlTypes eIndex) const;
+	void setForceControl(ForceControlTypes eIndex, bool bEnabled);
 	int getUnitCreatedCount(UnitTypes eIndex);
 	void incrementUnitCreatedCount(UnitTypes eIndex);
 	int getUnitClassCreatedCount(UnitClassTypes eIndex);
@@ -270,10 +270,10 @@ public:
 	bool isUniqueGoodyValid(GoodyTypes eIndex); // R&R, ray, Goody Enhancement
 	void setUniqueGoodyValid(GoodyTypes eIndex, bool bValid); // R&R, ray, Goody Enhancement
 
-	DllExport bool isInAdvancedStart() const;
+	bool isInAdvancedStart() const;
 
 	DllExport const CvWString & getName();
-	DllExport void setName(const TCHAR* szName);
+	void setName(const TCHAR* szName);
 
 	// Script data needs to be a narrow string for pickling in Python
 	std::string getScriptData() const;
@@ -296,13 +296,13 @@ public:
 	// TAC - Ship Names - Ray - END
 
 	DllExport int getIndexAfterLastDeal();
-	DllExport int getNumDeals();
+	int getNumDeals();
 	DllExport CvDeal* getDeal(int iID);
-	DllExport CvDeal* addDeal();
-	DllExport void deleteDeal(int iID);
+	CvDeal* addDeal();
+	void deleteDeal(int iID);
 	// iteration
-	DllExport CvDeal* firstDeal(int *pIterIdx, bool bRev=false);
-	DllExport CvDeal* nextDeal(int *pIterIdx, bool bRev=false);
+	CvDeal* firstDeal(int *pIterIdx, bool bRev=false);
+	CvDeal* nextDeal(int *pIterIdx, bool bRev=false);
 
 	CvRandom& getMapRand();
 	int getMapRandNum(int iNum, const char* pszLog);
@@ -313,21 +313,25 @@ public:
 	DllExport int calculateSyncChecksum(CvString* pLogString);
 	DllExport int calculateOptionsChecksum();
 
-	DllExport void addReplayMessage(ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER, CvWString pszText = L"",
+	void addReplayMessage(ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER, CvWString pszText = L"",
 		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR);
-	DllExport void clearReplayMessageMap();
-	DllExport int getReplayMessageTurn(uint i) const;
-	DllExport ReplayMessageTypes getReplayMessageType(uint i) const;
-	DllExport int getReplayMessagePlotX(uint i) const;
-	DllExport int getReplayMessagePlotY(uint i) const;
-	DllExport PlayerTypes getReplayMessagePlayer(uint i) const;
-	DllExport LPCWSTR getReplayMessageText(uint i) const;
-	DllExport uint getNumReplayMessages() const;
-	DllExport ColorTypes getReplayMessageColor(uint i) const;
+	void clearReplayMessageMap();
+	int getReplayMessageTurn(uint i) const;
+	ReplayMessageTypes getReplayMessageType(uint i) const;
+	int getReplayMessagePlotX(uint i) const;
+	int getReplayMessagePlotY(uint i) const;
+	PlayerTypes getReplayMessagePlayer(uint i) const;
+	LPCWSTR getReplayMessageText(uint i) const;
+	uint getNumReplayMessages() const;
+	ColorTypes getReplayMessageColor(uint i) const;
 
-	DllExport virtual void read(FDataStreamBase* pStream);
-	DllExport virtual void write(FDataStreamBase* pStream);
-	DllExport virtual void writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer);
+	virtual void read(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream);
+	virtual void writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer);
+
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
+	void resetSavedData(HandicapTypes eHandicap, bool bConstructorCall);
 
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
@@ -366,27 +370,27 @@ public:
 	void changeYieldBoughtTotal(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const;
 
 	// < JAnimals Mod Start >
-	DllExport PlayerTypes getBarbarianPlayer();
-    DllExport bool hasBarbarianPlayer();
+	PlayerTypes getBarbarianPlayer();
+    bool hasBarbarianPlayer();
     void setBarbarianPlayer(PlayerTypes eNewValue);
-    DllExport bool isBarbarianPlayer(PlayerTypes ePlayer);
+    bool isBarbarianPlayer(PlayerTypes ePlayer);
 	PlayerTypes getNextPlayerType() const;
 	// < JAnimals Mod End >
 
 	// R&R, ray, the Church - START
-	DllExport PlayerTypes getChurchPlayer();
-    DllExport bool hasChurchPlayer();
+	PlayerTypes getChurchPlayer();
+    bool hasChurchPlayer();
     void setChurchPlayer(PlayerTypes eNewValue);
-    DllExport bool isChurchPlayer(PlayerTypes ePlayer);
+    bool isChurchPlayer(PlayerTypes ePlayer);
 	// R&R, ray, the Church - END
 
 	// R&R, ray, Correct Geographical Placement of Natives - START
-	DllExport bool isWBNorthAmericanNative() const;
-	DllExport void setWBNorthAmericanNative(bool bValue);
-	DllExport bool isWBSouthAmericanNative() const;
-	DllExport void setWBSouthAmericanNative(bool bValue);
-	DllExport bool isWBCentralAmericanNative() const;
-	DllExport void setWBCentralAmericanNative(bool bValue);
+	bool isWBNorthAmericanNative() const;
+	void setWBNorthAmericanNative(bool bValue);
+	bool isWBSouthAmericanNative() const;
+	void setWBSouthAmericanNative(bool bValue);
+	bool isWBCentralAmericanNative() const;
+	void setWBCentralAmericanNative(bool bValue);
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
 	void writeDesyncLog();
@@ -439,23 +443,23 @@ protected:
 
 	CvString m_szScriptData;
 
-	int* m_aiRankPlayer;        // Ordered by rank...
-	int* m_aiPlayerScore;       // Ordered by player ID...
-	int* m_aiRankTeam;						// Ordered by rank...
-	int* m_aiTeamRank;						// Ordered by team ID...
-	int* m_aiTeamScore;						// Ordered by team ID...
+	EnumMap<PlayerTypes, int> m_em_iRankPlayer;        // Ordered by rank...
+	EnumMap<PlayerTypes, int> m_em_iPlayerScore;       // Ordered by player ID...
+	EnumMap<TeamTypes, int> m_em_iRankTeam;						// Ordered by rank...
+	EnumMap<TeamTypes, int> m_em_iTeamRank;						// Ordered by team ID...
+	EnumMap<TeamTypes, int> m_em_iTeamScore;						// Ordered by team ID...
 
-	int* m_paiUnitCreatedCount;
-	int* m_paiUnitClassCreatedCount;
-	int* m_paiBuildingClassCreatedCount;
+	EnumMap<UnitTypes, int> m_em_iUnitCreatedCount;
+	EnumMap<UnitClassTypes, int> m_em_iUnitClassCreatedCount;
+	EnumMap<BuildingClassTypes, int> m_em_iBuildingClassCreatedCount;
 
-	TeamTypes* m_aeFatherTeam;
-	int* m_aiFatherGameTurn;
+	EnumMapDefault<FatherTypes, TeamTypes, NO_TEAM> m_em_eFatherTeam;
+	EnumMapDefault<FatherTypes, int, -1> m_em_iFatherGameTurn;
 
-	bool* m_pabSpecialUnitValid;
-	bool* m_pabSpecialBuildingValid;
+	EnumMap<SpecialUnitTypes, bool> m_em_bSpecialUnitValid;
+	EnumMap<SpecialBuildingTypes, bool> m_em_bSpecialBuildingValid;
 
-	bool* m_pabUniqueGoodyValid; // R&R, ray, Goody Enhancement
+	EnumMap<GoodyTypes, bool> m_em_bUniqueGoodyValid; // R&R, ray, Goody Enhancement
 
 	std::vector<CvWString> m_aszDestroyedCities;
 	std::vector<CvWString> m_aszGreatGeneralBorn;

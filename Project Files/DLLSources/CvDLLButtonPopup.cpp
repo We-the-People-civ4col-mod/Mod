@@ -27,6 +27,29 @@
 
 #define PASSWORD_DEFAULT (L"*****")
 
+// WTP enums
+// Nake it easier to read windows with a lot of buttons
+// This also allows easy access to changing the order of buttons
+
+enum PopupButtonsMainMenu
+{
+	PopupButtonsMainMenu_ExitDesktop,
+	PopupButtonsMainMenu_ExitMenu,
+	PopupButtonsMainMenu_Retire,
+	PopupButtonsMainMenu_RegenerateMap,
+	PopupButtonsMainMenu_Load,
+	PopupButtonsMainMenu_Save,
+	PopupButtonsMainMenu_Options,
+	PopupButtonsMainMenu_WorldBuilder,
+	PopupButtonsMainMenu_GameDetails,
+	PopupButtonsMainMenu_DetailsTitle,
+	PopupButtonsMainMenu_Cancel,
+	PopupButtonsMainMenu_OOS,
+
+};
+
+// WTP end
+
 CvDLLButtonPopup* CvDLLButtonPopup::m_pInst = NULL;
 
 CvDLLButtonPopup& CvDLLButtonPopup::getInstance()
@@ -139,7 +162,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 		break;
 
 	case BUTTONPOPUP_MAIN_MENU:
-		if (pPopupReturn->getButtonClicked() == 0)
+		if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitDesktop)
 		{	// exit to desktop
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
 			if (NULL != pInfo)
@@ -148,7 +171,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
 			}
 		}
-		else if (pPopupReturn->getButtonClicked() == 1)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_ExitMenu)
 		{	// exit to main menu
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
 			if (NULL != pInfo)
@@ -157,7 +180,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
 			}
 		}
-		else if (pPopupReturn->getButtonClicked() == 2)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Retire)
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
 			if (NULL != pInfo)
@@ -166,7 +189,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
 			}
 		}
-		else if (pPopupReturn->getButtonClicked() == 3)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_RegenerateMap)
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
 			if (NULL != pInfo)
@@ -175,19 +198,19 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
 			}
 		}
-		else if (pPopupReturn->getButtonClicked() == 4)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Load)
 		{	// load game
 			GC.getGameINLINE().doControl(CONTROL_LOAD_GAME);
 		}
-		else if (pPopupReturn->getButtonClicked() == 5)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Save)
 		{	// save game
 			GC.getGameINLINE().doControl(CONTROL_SAVE_NORMAL);
 		}
-		else if (pPopupReturn->getButtonClicked() == 6)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_Options)
 		{	// options
 			gDLL->getPythonIFace()->callFunction("CvScreensInterface", "showOptionsScreen");
 		}
-		else if (pPopupReturn->getButtonClicked() == 7)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_WorldBuilder)
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRM_MENU);
 			if (NULL != pInfo)
@@ -196,14 +219,20 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				gDLL->getInterfaceIFace()->addPopup(pInfo, GC.getGameINLINE().getActivePlayer(), true);
 			}
 		}
-		else if (pPopupReturn->getButtonClicked() == 8)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_GameDetails)
 		{	// Game details
 			GC.getGameINLINE().doControl(CONTROL_ADMIN_DETAILS);
 		}
-		else if (pPopupReturn->getButtonClicked() == 9)
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_DetailsTitle)
 		{	// player details
 			GC.getGameINLINE().doControl(CONTROL_DETAILS);
 		}
+
+		else if (pPopupReturn->getButtonClicked() == PopupButtonsMainMenu_OOS)
+		{	// write network desync log. Has to be done in sync, hence send network traffic
+			gDLL->sendPlayerAction(static_cast<PlayerTypes>(0), PLAYER_ACTION_NETWORK_DESYNC_LOG_WRITE, -1, -1, -1);
+		}
+		
 		// 10 - cancel
 		break;
 
@@ -812,11 +841,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			CvCity* pCity = kPlayer.getCity(info.getData1());
 			if (pCity != NULL)
 			{
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo(eYield).isCargo())
 					{
+						YieldTypes eExportYield = eYield + NUM_YIELD_TYPES;
 						// transport feeder - start - Nightinggale
 						// R&R mod, vetiarvind, max yield import limit - start
 
@@ -828,13 +857,13 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						}
 
 						// load yield data and store in human readable variable names						
-						bool bImport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x01);
-						bool bExport          = (pPopupReturn->getCheckboxBitfield(iYield) & 0x02);
-						bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(iYield) & 0x04);
-						bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(iYield) & 0x08);
-						int iMaintainLevel    =  pPopupReturn->getSpinnerWidgetValue(iYield);
-						int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(NUM_YIELD_TYPES + iYield);
-						
+						const bool bImport          = (pPopupReturn->getCheckboxBitfield(eYield)       & 0x01);
+						const bool bExport          = (pPopupReturn->getCheckboxBitfield(eExportYield) & 0x01);
+						const bool bMaintainImport  = (pPopupReturn->getCheckboxBitfield(eYield)       & 0x02);
+						const bool bAutoExport      = (pPopupReturn->getCheckboxBitfield(eExportYield) & 0x02);
+						const int iImportLimitLevel =  pPopupReturn->getSpinnerWidgetValue(eYield);
+						const int iMaintainLevel    =  pPopupReturn->getSpinnerWidgetValue(eExportYield);
+
 						// check if any data is different from the same data in the city
 						if (bImport != pCity->isImport(eYield)
 							|| bExport != pCity->isExport(eYield)
@@ -848,10 +877,11 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 							// It's not important what changed because the update is all or nothing.
 
 							// first merge the ints values into a single int because the network package only has a single int32 available
-							int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
-							iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+							NetworkDataTradeRouteInts buffer;
+							buffer.iImportLimitLevel = iImportLimitLevel;
+							buffer.iMaintainLevel    = iMaintainLevel;
 
-							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, iYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+							gDLL->sendDoTask(info.getData1(), TASK_YIELD_TRADEROUTE, eYield, buffer.iNetwork, bImport, bExport, bMaintainImport, bAutoExport);
 						}
 						// R&R mod, vetiarvind, max yield import limit - end
 						// transport feeder - end - Nightinggale
@@ -1088,16 +1118,19 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 	case BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD:
 		{
-			int iYield = pPopupReturn->getButtonClicked();
+			const int iYield = pPopupReturn->getButtonClicked();
 			if (iYield >= NO_YIELD) // cancel is -2
 			{
-				CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
-				if (pCity->getPreferredYieldAtCityPlot() != iYield)
+				const CvCity* pCity = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getCity(info.getData1());
+				if (pCity != NULL && pCity->getPreferredYieldAtCityPlot() != iYield)
 				{
 					gDLL->sendDoTask(info.getData1(), TASK_CHOOSE_CITY_PLOT_YIELD, iYield, -1, false, false, false, false);
 				}
 			}
 		}
+		break;
+
+	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
 		break;
 
 	default:
@@ -1359,6 +1392,9 @@ bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 	// TAC - Goto Menu - koma13 - END
 	case BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD:
 		bLaunched = launchChooseCityPlotYieldPopup(pPopup, info);
+		break;
+	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
+		bLaunched = launchDesyncLogCompletePopup(pPopup, info);
 		break;
 
 	default:
@@ -2151,14 +2187,14 @@ bool CvDLLButtonPopup::launchMainMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	gDLL->getInterfaceIFace()->popupAddSeparator(pPopup);
 
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_DESKTOP").c_str(), NULL, 0, WIDGET_GENERAL, 0, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_DESKTOP").c_str(), NULL, PopupButtonsMainMenu_ExitDesktop, WIDGET_GENERAL, PopupButtonsMainMenu_ExitDesktop, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 
 	// commenting out since you can't exit to main menu and then restart a game
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_MAIN_MENU").c_str(), NULL, 1, WIDGET_GENERAL, 1, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_EXIT_TO_MAIN_MENU").c_str(), NULL, PopupButtonsMainMenu_ExitMenu, WIDGET_GENERAL, PopupButtonsMainMenu_ExitMenu, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 
 	if (GC.getGameINLINE().canDoControl(CONTROL_RETIRE))
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_RETIRE").c_str(), NULL, 2, WIDGET_GENERAL, 2, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_RETIRE").c_str(), NULL, PopupButtonsMainMenu_Retire, WIDGET_GENERAL, PopupButtonsMainMenu_Retire, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 	}
 
 	if ((GC.getGameINLINE().getElapsedGameTurns() == 0) && !(GC.getGameINLINE().isGameMultiPlayer()) && !(GC.getInitCore().getWBMapScript()))
@@ -2199,36 +2235,44 @@ bool CvDLLButtonPopup::launchMainMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 		if (bShow)
 		{
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_REGENERATE_MAP").c_str(), NULL, 3, WIDGET_GENERAL, 3, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_REGENERATE_MAP").c_str(), NULL, PopupButtonsMainMenu_RegenerateMap, WIDGET_GENERAL, PopupButtonsMainMenu_RegenerateMap, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 		}
 	}
 
 	if (GC.getGameINLINE().canDoControl(CONTROL_LOAD_GAME))
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_LOAD_GAME").c_str(), NULL, 4, WIDGET_GENERAL, 4, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_LOAD_GAME").c_str(), NULL, PopupButtonsMainMenu_Load, WIDGET_GENERAL, PopupButtonsMainMenu_Load, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 	}
 	if (GC.getGameINLINE().canDoControl(CONTROL_SAVE_NORMAL))
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_SAVE_GAME").c_str(), NULL, 5, WIDGET_GENERAL, 5, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_SAVE_GAME").c_str(), NULL, PopupButtonsMainMenu_Save, WIDGET_GENERAL, PopupButtonsMainMenu_Save, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 	}
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_OPTIONS").c_str(), NULL, 6, WIDGET_GENERAL, 6, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_OPTIONS").c_str(), NULL, PopupButtonsMainMenu_Options, WIDGET_GENERAL, PopupButtonsMainMenu_Options, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 
 	if (GC.getGameINLINE().canDoControl(CONTROL_WORLD_BUILDER))
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_ENTER_WB").c_str(), NULL, 7, WIDGET_GENERAL, 7, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_ENTER_WB").c_str(), NULL, PopupButtonsMainMenu_WorldBuilder, WIDGET_GENERAL, PopupButtonsMainMenu_WorldBuilder, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 	}
 
 	if (GC.getGameINLINE().canDoControl(CONTROL_ADMIN_DETAILS))
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_GAME_DETAILS").c_str(), NULL, 8, WIDGET_GENERAL, 8, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_GAME_DETAILS").c_str(), NULL, PopupButtonsMainMenu_GameDetails, WIDGET_GENERAL, PopupButtonsMainMenu_GameDetails, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 	}
 
 	if (GC.getGameINLINE().canDoControl(CONTROL_DETAILS))
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_DETAILS_TITLE").c_str(), NULL, 9, WIDGET_GENERAL, 9, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_DETAILS_TITLE").c_str(), NULL, PopupButtonsMainMenu_DetailsTitle, WIDGET_GENERAL, PopupButtonsMainMenu_DetailsTitle, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
 	}
 
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_CANCEL").c_str(), NULL, 10, WIDGET_GENERAL, 10, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+	if (gDLL->isOOSVisible())
+	{
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_DEBUG_DESYNC_LOG_BUTTON").c_str(), NULL, PopupButtonsMainMenu_OOS, WIDGET_GENERAL, PopupButtonsMainMenu_OOS, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+	}
+
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_CANCEL").c_str(), NULL, PopupButtonsMainMenu_Cancel, WIDGET_GENERAL, PopupButtonsMainMenu_Cancel, 0, true, POPUP_LAYOUT_STRETCH, DLL_FONT_CENTER_JUSTIFY);
+
+
+
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 
 	return (true);
@@ -3034,19 +3078,18 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 	{
 		return false;
 	}
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_YIELD_IMPORT_POPUP", pCity->getNameKey()));
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_TITLE", pCity->getNameKey()));
 
 	// auto traderoute - start - Nightinggale
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTO_TRADEROUTE_CLEAR_ALL").c_str(), NULL, 0);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTO_TRADEROUTE_IMPORT_ALL").c_str(), NULL, 1);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTO_TRADEROUTE_AUTO_EXPORT_ALL").c_str(), NULL, 2);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_CLEAR_ALL").c_str(), NULL, 0);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_ALL").c_str(), NULL, 1);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_ALL").c_str(), NULL, 2);
 	// auto traderoute - end - Nightinggale
 
 
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		YieldTypes eYield = (YieldTypes) iYield;
-		CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+		const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
 		if (kYield.isCargo())
 		{
 			// R&R mod, vetiarvind, max yield import limit - start
@@ -3059,32 +3102,32 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			
 			// transport feeder - start - Nightinggale
 			
+
+			// import
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
-			
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
-			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 4, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP); 
-			
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT") + L"</font>", iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isImport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_EXPORT") + L"</font>", iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->isExport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 2, pCity->getImportsMaintain(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 2, L"", iYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP"));
-			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 3, pCity->isAutoExport(eYield), iYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 3, L"", iYield, gDLL->getText("TXT_KEY_POPUP_AUTO_EXPORT_HELP"));
-			// transport feeder - end - Nightinggale
-			// R&R mod, vetiarvind, max yield import limit - start
+
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
+			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, eYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isImport(eYield), eYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->getImportsMaintain(eYield), eYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP"));
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 
+			// export
+			YieldTypes eExportYield = eYield + NUM_YIELD_TYPES;
+
 			gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
-			// transport feeder - start - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
-			// transport feeder - end - Nightinggale
-			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, NUM_YIELD_TYPES+iYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
 
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
+			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eExportYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
+			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, eExportYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isExport(eYield), eExportYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->isAutoExport(eYield), eExportYield);
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP"));
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
-
 			// R&R mod, vetiarvind, max yield import limit - end
 		}
 	}
@@ -3194,6 +3237,14 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 		{
 			if (eYield == YIELD_FOOD || eYield == YIELD_LUMBER || eYield == YIELD_STONE)
 			{
+				// Write never sell
+				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
+				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
+				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_NEVER_SELL"));
+				gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+
+				// disabled the full line. TODO figure out how we want to display this for a permanent solution.
+				/*
 				gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, iYield);
 				gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, iYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
@@ -3202,6 +3253,7 @@ bool CvDLLButtonPopup::launchCustomHousePopup(CvPopup* pPopup, CvPopupInfo &info
 				gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, true, iYield);
 				gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, iYield, L"", pCity->getCustomHouseSellThreshold(eYield), 10, 999, 0);
 				gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
+				*/
 			}
 			else 
 			{
@@ -3367,7 +3419,9 @@ bool CvDLLButtonPopup::launchSelectYieldAmountPopup(CvPopup* pPopup, CvPopupInfo
 
 	//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - start
 	UnitTravelStates uts = pUnit->getUnitTravelState();
-	if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_FROM_PORT_ROYAL)
+	// WTP, ray, refixing SHIFT-KEY
+	// if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_FROM_PORT_ROYAL)
+	if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
 	//if (pUnit->getUnitTravelState() != UNIT_TRAVEL_STATE_IN_EUROPE)
 	//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - end
 	{
@@ -3439,6 +3493,16 @@ bool CvDLLButtonPopup::launchTalkNativesPopup(CvPopup* pPopup, CvPopupInfo& info
 		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, NULL, COMMAND_ESTABLISH_MISSION);
 	}
 
+	// WTP, ray, Native Trade Posts - START
+	if (pUnit->canEstablishTradePost())
+	{
+		++iNumActions;
+		CvWString szText = gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST");
+		szText += L" (" + gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2", std::min(100, pUnit->getNativeTradePostSuccessPercent())) + L")";
+		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, NULL, COMMAND_ESTABLISH_TRADE_POST);
+	}
+	// WTP, ray, Native Trade Posts - END
+
 	if (pUnit->canTradeYield(pUnit->plot()))
 	{
 		++iNumActions;
@@ -3499,25 +3563,32 @@ bool CvDLLButtonPopup::launchGotoMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 	int iLoop;
 
 	gDLL->getInterfaceIFace()->popupSetHeaderString(pPopup, gDLL->getText("TXT_KEY_COMMAND_GOTO_MENU_TITLE"));
-	if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || pUnit->canAutoCrossOcean(pUnit->plot()))
+
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
+	if (pUnit->canCrossCoastOnly() == false)
 	{
-		CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_EUROPE"), szArtFilename, -2, WIDGET_GENERAL);
-		bValid = true;
+		if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || pUnit->canAutoCrossOcean(pUnit->plot()))
+		{
+			CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_EUROPE"), szArtFilename, -2, WIDGET_GENERAL);
+			bValid = true;
+		}
+		// R&R, vetiarvind, Goto other screens - START	
+		if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_AFRICA) || pUnit->canAutoCrossOcean(pUnit->plot()))
+		{		
+			CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_AFRICA"), szArtFilename, -3, WIDGET_GENERAL, pUnit->getID(), -1);
+			bValid = true;
+		}
+		// WTP, ray, added a bracket around or before caSailToPortRoyal check to fix changed order a bit - fix for issue 252
+		if (pUnit->canSailToPortRoyal(NULL) && (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL) || (pUnit->canAutoCrossOcean(pUnit->plot())))) //R&R, vetiarvind fix for hidden-nationality units to sail to PR
+		{		
+			const char* portRoyalImage = ARTFILEMGR.getInterfaceArtInfo("INTERFACE_PORT_ROYAL")->getPath();		
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL"), portRoyalImage, -4, WIDGET_GENERAL, pUnit->getID(), -1);
+			bValid = true;
+		}
 	}
-	// R&R, vetiarvind, Goto other screens - START	
-	if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_AFRICA) || pUnit->canAutoCrossOcean(pUnit->plot()))
-	{		
-		CvString szArtFilename = (kPlayer.getParent() != NO_PLAYER) ? GC.getCivilizationInfo(GET_PLAYER(kPlayer.getParent()).getCivilizationType()).getButton() : ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath();
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_AFRICA"), szArtFilename, -3, WIDGET_GENERAL, pUnit->getID(), -1);
-		bValid = true;
-	}
-	if (pUnit->canCrossOcean(pUnit->plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL) || (pUnit->canAutoCrossOcean(pUnit->plot()) && pUnit->canSailToPortRoyal(NULL))) //R&R, vetiarvind fix for hidden-nationality units to sail to PR
-	{		
-		const char* portRoyalImage = ARTFILEMGR.getInterfaceArtInfo("INTERFACE_PORT_ROYAL")->getPath();		
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL"), portRoyalImage, -4, WIDGET_GENERAL, pUnit->getID(), -1);
-		bValid = true;
-	}
+	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -END
 	// R&R, vetiarvind, Goto other screens - END
 	for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
 	{
@@ -3719,6 +3790,16 @@ bool CvDLLButtonPopup::launchChooseCityPlotYieldPopup(CvPopup* pPopup, CvPopupIn
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NEVER_MIND"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(), -2, WIDGET_GENERAL);
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
+
+	return true;
+}
+
+bool CvDLLButtonPopup::launchDesyncLogCompletePopup(CvPopup* pPopup, CvPopupInfo &info)
+{
+	int iPlayer = GC.getGameINLINE().getActivePlayer();
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE", iPlayer, iPlayer, iPlayer));
+
+	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
 
 	return true;
 }

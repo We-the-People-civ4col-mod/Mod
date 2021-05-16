@@ -34,7 +34,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_BLADES</Tag>
-        <English>????</English>
+        <English>Emphasize Blades</English>
+        <French>Privilégier les blades</French>
+        <German>Schwerpunkt Klingen</German>
+        <Italian>Emphasize Blades</Italian>
+        <Spanish>Emphasize Blades</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_CANNONS</Tag>
@@ -302,7 +306,11 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_CATTLE</Tag>
-        <English>????</English>
+        <English>Deemphasize Cattle</English>
+        <French>Minimiser le Bétail</French>
+        <German>Schwerpunkt Rinder aufheben</German>
+        <Italian>Deemphasize Cattle</Italian>
+        <Spanish>Deemphasize Cattle</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EMPHASIZE_NO_CIGARS</Tag>

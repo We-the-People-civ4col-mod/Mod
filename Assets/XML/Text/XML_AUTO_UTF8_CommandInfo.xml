@@ -170,7 +170,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_IGNORE_DANGER_HELP</Tag>
-        <English>TXT_KEY_COMMAND_COMMAND_IGNORE_DANGER_HELP</English>
+        <English>????</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_KING_TRANSPORT</Tag>
@@ -182,7 +182,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_KING_TRANSPORT_HELP</Tag>
-        <English>Contact King to Transport this Treasure for a fee</English>
+        <English>Contact King to transport this Treasure for a fee</English>
         <French>Contacter le roi afin qu'il vous facture un convoi pour le trésor</French>
         <German>König kontaktieren, um diesen Schatz gegen eine Gebühr zu transportieren</German>
         <Italian>Contatta il re per il trasporto del tesoro, in cambio di un onorario</Italian>
@@ -358,7 +358,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_SPEAK_WITH_CHIEF_HELP</Tag>
-        <English>Meet with the chief in hopes of learning more about the native way of life.</English>
+        <English>Meet with the Chief to learn more about the native way of life.</English>
         <French>Rencontrer le chef dans l'espoir d'en apprendre davantage sur le mode de vie des indigènes.</French>
         <German>Mit dem Häuptling sprechen, um vielleicht Geschenke zu erlangen</German>
         <Italian>Incontra il capo sperando di imparare di più sullo stile di vita dei nativi.</Italian>
@@ -471,5 +471,31 @@
         <German>Benutzen Sie Ihre Transporteinheiten, um mit den Einwohnern Handel zu treiben.</German>
         <Italian>Usa il tuo trasporto per commerciare con i locali.</Italian>
         <Spanish>Usad vuestro transporte para comerciar con los lugareños.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_MERGE_TREASURES</Tag>
+        <English>Merge Treasures</English>
+        <French>Merge Treasures</French>
+        <German>Schätze vereinen</German>
+        <Italian>Merge Treasures</Italian>
+        <Spanish>Merge Treasures</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_MERGE_TREASURES_HELP</Tag>
+        <English>Merge the Treasures on Plot to one Unit.</English>
+        <French>Merge the Treasures on Plot to one Unit.</French>
+        <German>Vereine die Schätze auf dem Plot zu einer Einheit</German>
+        <Italian>Merge the Treasures on Plot to one Unit.</Italian>
+        <Spanish>Merge the Treasures on Plot to one Unit.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST</Tag>
+        <English>Establish Trading Post</English>
+        <German>Handelsposten Einrichte</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION_HELP</Tag>
+        <English>Establish a Trading Post in the village to gradually generate treasures.</English>
+        <German>Eine Handelsposten errichten, um mit Ureinwohner Handel zu treiben und Schätze zu erzeugen</German>
     </TEXT>
 </Civ4GameText>

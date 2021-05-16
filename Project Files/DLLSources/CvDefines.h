@@ -116,4 +116,8 @@
 #define PYEventModule					"CvEventInterface"
 #define PYRandomEventModule					"CvRandomEventInterface"
 
+// modded
+#define PYCPPModule "CvCPPInterface"
+//
+
 #endif	// CVDEFINES_H

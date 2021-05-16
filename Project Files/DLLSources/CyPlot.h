@@ -31,7 +31,7 @@ public:
 	bool isRiver();
 	bool isRiverConnection(int /*DirectionTypes*/ eDirection);
 	int getNearestLandArea();
-	int seeFromLevel(int /*TeamTypes*/ eTeam);
+	int seeFromLevel();
 	CyPlot* getNearestLandPlot();
 	int seeThroughLevel();
 	bool canHaveBonus(int /*BonusTypes*/ eBonus, bool bIgnoreLatitude);
@@ -82,6 +82,7 @@ public:
 	int getX();
 	int getY();
 	bool at(int iX, int iY);
+	int getIndex() const;
 	int getLatitude();
 	CyArea* area();
 	CyArea* waterArea();
@@ -163,7 +164,6 @@ public:
 	int getPlayerCityRadiusCount(int /*PlayerTypes*/ eIndex);
 	bool isPlayerCityRadius(int /*PlayerTypes*/ eIndex);
 	int getVisibilityCount(int /*TeamTypes*/ eTeam);
-	void changeVisibilityCount(int /*TeamTypes*/ eTeam, int iChange, int /*InvisibleTypes*/ eSeeInvisible);
 	int /*PlayerTypes*/ getRevealedOwner(int /*TeamTypes*/ eTeam, bool bDebug);
 	int /*TeamTypes*/ getRevealedTeam(int /*TeamTypes*/ eTeam, bool bDebug);
 	bool isRiverCrossing(DirectionTypes eIndex);

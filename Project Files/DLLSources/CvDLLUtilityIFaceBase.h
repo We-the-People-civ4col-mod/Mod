@@ -81,6 +81,10 @@ public:
 	virtual int GetOptionsOOS(int iNetID) = 0;
 	virtual int GetLastPing(int iNetID) = 0;
 
+	// modded
+	bool isOOSVisible() const; // defined in CvGameCoreUtils.cpp
+	//
+
 	virtual bool IsModem() = 0;
 	virtual void SetModem(bool bModem) = 0;
 

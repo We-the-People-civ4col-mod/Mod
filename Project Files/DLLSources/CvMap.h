@@ -71,8 +71,8 @@ class CvMap
 
 public:
 
-	DllExport CvMap();
-	DllExport virtual ~CvMap();
+	CvMap();
+	virtual ~CvMap();
 
 	DllExport void init(CvMapInitData* pInitData=NULL);
 	DllExport void setupGraphical();
@@ -93,7 +93,7 @@ public:
 	DllExport void updateFlagSymbols();
 
 	DllExport void updateFog();
-	DllExport void updateVisibility();
+	void updateVisibility();
 	DllExport void updateSymbolVisibility();
 	void updateSymbols();
 	DllExport void updateMinimapColor();
@@ -109,7 +109,7 @@ public:
 	CvPlot* syncRandPlot(int iFlags = 0, int iArea = -1, int iMinUnitDistance = -1, int iTimeout = 100);
 
 	DllExport CvCity* findCity(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, bool bSameArea = true, bool bCoastalOnly = false, TeamTypes eTeamAtWarWith = NO_TEAM, DirectionTypes eDirection = NO_DIRECTION, CvCity* pSkipCity = NULL);
-	DllExport CvSelectionGroup* findSelectionGroup(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, bool bReadyToSelect = false);
+	CvSelectionGroup* findSelectionGroup(int iX, int iY, PlayerTypes eOwner = NO_PLAYER, bool bReadyToSelect = false);
 
 	CvArea* findBiggestArea(bool bWater);
 
@@ -140,10 +140,10 @@ public:
 	int plotX(int iIndex) const;
 	int plotY(int iIndex) const;
 
-	DllExport int pointXToPlotX(float fX);
+	int pointXToPlotX(float fX);
 	DllExport float plotXToPointX(int iX);
 
-	DllExport int pointYToPlotY(float fY);
+	int pointYToPlotY(float fY);
 	DllExport float plotYToPointY(int iY);
 
 	float getWidthCoords();
@@ -165,9 +165,9 @@ public:
 		return m_iGridHeight;
 	}
 #endif
-	DllExport int getLandPlots();
+	int getLandPlots();
 	void changeLandPlots(int iChange);
-	DllExport int getOwnedPlots();
+	int getOwnedPlots();
 	void changeOwnedPlots(int iChange);
 	int getTopLatitude();
 	int getBottomLatitude();
@@ -197,11 +197,11 @@ public:
 	}
 #endif
 	DllExport WorldSizeTypes getWorldSize();
-	DllExport ClimateTypes getClimate();
-	DllExport SeaLevelTypes getSeaLevel();
+	ClimateTypes getClimate();
+	SeaLevelTypes getSeaLevel();
 
-	DllExport int getNumCustomMapOptions();
-	DllExport CustomMapOptionTypes getCustomMapOption(int iOption);
+	int getNumCustomMapOptions();
+	CustomMapOptionTypes getCustomMapOption(int iOption);
 
 	int getNumBonuses(BonusTypes eIndex);
 	void changeNumBonuses(BonusTypes eIndex, int iChange);
@@ -237,8 +237,8 @@ public:
 #endif
 	DllExport CvPlot* pointToPlot(float fX, float fY);
 	int getIndexAfterLastArea();
-	DllExport int getNumAreas();
-	DllExport int getNumLandAreas();
+	int getNumAreas();
+	int getNumLandAreas();
 
 	CvArea* getArea(int iID);
 	CvArea* addArea();
@@ -257,16 +257,20 @@ public:
 	// Super Forts end
 
 	// Serialization:
-	DllExport virtual void read(FDataStreamBase* pStream);
-	DllExport virtual void write(FDataStreamBase* pStream);
+	virtual void read(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream);
 	void rebuild(int iGridW, int iGridH, int iTopLatitude, int iBottomLatitude, bool bWrapX, bool bWrapY, WorldSizeTypes eWorldSize, ClimateTypes eClimate, SeaLevelTypes eSeaLevel, int iNumCustomMapOptions, CustomMapOptionTypes * eCustomMapOptions);
 
 	void writeDesyncLog(FILE *f);
 
-	int getCityCatchmentRadius() const;
+	char getCityCatchmentRadius() const;
 	void setCityCatchmentRadius(int iSetting);
 
 protected:
+
+	void resetSavedData();
+	void read(CvSavegameReader reader);
+	void write(CvSavegameWriter writer);
 
 	int m_iGridWidth;
 	int m_iGridHeight;
@@ -279,10 +283,8 @@ protected:
 	bool m_bWrapX;
 	bool m_bWrapY;
 
-	bool m_bUseTwoPlotCities;
-
-	int* m_paiNumBonus;
-	int* m_paiNumBonusOnLand;
+	BonusArray<int> m_ja_NumBonuses;
+	BonusArray<int> m_ja_NumBonusesOnLand;
 
 	CvPlot* m_pMapPlots;
 

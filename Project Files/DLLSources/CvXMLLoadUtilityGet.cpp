@@ -1362,3 +1362,48 @@ int CvXMLLoadUtility::GetHotKeyInt(const TCHAR* pszHotKeyVal)
 	return -1;
 }
 
+bool CvXMLLoadUtility::GetIntOrType(const char* szType, int& iVar, const char* szTagName, bool bMandatory)
+{
+	// set the default value
+	iVar = 0;
+
+	CvString szValue;
+
+	bool bFound = GetChildXmlValByName(szValue, szTagName);
+	FAssertMsg(bFound || !bMandatory, CvString::format("%s: mandatory tag %s not found", szType, szTagName).c_str());
+
+	if (!bFound)
+	{
+		return false;
+	}
+	
+	if (szValue == "NONE")
+	{
+		FAssertMsg(false, CvString::format("%s: tag %s contains NONE, but NONE is not allowed", szType, szTagName).c_str());
+		iVar = -1;
+		return !bMandatory;
+	}
+	else if (szValue == "0")
+	{
+		iVar = 0;
+	}
+	else
+	{
+		iVar = std::atoi(szValue.c_str());
+
+		// atoi returns 0 if the string isn't an int
+		if (iVar == 0)
+		{
+			// string can't be converted to int
+			// try to look it up as a type instead
+			iVar = GC.getInfoTypeForString(szValue.c_str(), true);
+
+			if (iVar == -1)
+			{
+				FAssertMsg(false, CvString::format("%s: Tag %s contains string %s, but it can't be read as either int or type", szType, szTagName, szValue.c_str()).c_str());
+				return false;
+			}
+		}
+	}
+	return true;
+}

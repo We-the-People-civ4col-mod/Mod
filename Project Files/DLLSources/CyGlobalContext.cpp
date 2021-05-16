@@ -15,6 +15,9 @@
 #include "CyTeam.h"
 #include "CvTeamAI.h"
 #include "CyArtFileMgr.h"
+#include "UserSettings.h"
+#include "CyUserSettings.h"
+
 CyGlobalContext::CyGlobalContext()
 {
 }
@@ -490,6 +493,14 @@ void CyGlobalContext::setGameFontDebug(int iChar)
 	}
 }
 
+/// one/two city plot radius
+int CyGlobalContext::getDefaultCityCatchmentRadius() const
+{
+	UserSettings settings;
+	return settings.getColonyRadius();
+}
+// city radius end
+
 // not the nicest solution, but who cares?
 // All it does is allowing the DA to open on the last open state. It's not saved or anything.
 int iDomesticAdvisorState = 0;
@@ -504,3 +515,7 @@ void CyGlobalContext::setDomesticAdvisorState(int iPage)
 	iDomesticAdvisorState = iPage;
 }
 
+CyUserSettings* CyGlobalContext::getUserSettings() const
+{
+	return new CyUserSettings();
+}
