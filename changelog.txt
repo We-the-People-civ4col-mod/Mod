@@ -1,5 +1,51 @@
 We the People Changelog
 
+Version 2.9
+
+Features:
+- Large rivers (not in random maps yet)
+- Goody huts with guards, which periodically spawns hostile natives/raiders/animals (depending on type)
+- New file icons for shortcuts
+
+Improvements:
+- Multiple updated graphics
+- More events/quests
+- Added specialist settler
+- New Swedish audio for units (now they actually speak Swedish)
+- New sounds for Africa and Port Royal
+- Added large rivers to premade maps + varous small adjustments to them
+- Pointless vanilla game options are no longer displayed
+- Rearranged import/export popup in the colony screen and added a colopedia concept page on how to use it
+
+Fixes:
+- Loading a savegame will no longer risk incorrectly removing fog of war from plots
+- #425 Auto export is now saved correctly
+- Roads can now be build on peaks even if it's surrounded by only peaks
+- Buildings providing a road on the colony plot will no longer downgrade the road quality
+- #442 Fixed multiple bugs, which caused automated transports to not move
+- Removed case where raiding natives could report burning down a building without removing any buildings
+- #401 Blocked vanilla from trying to load map scripts (and fail) while starting vanilla
+- Fixed vanilla bug where circles on the map might not update correctly if a team has more than one player
+- Shipwrecks discovered by founding a colony will no longer causes bugs due to referring to the ship doing the discovery
+- Barbarian units are no longer called "wild animals" in mouseover help text
+- Ships using automated exploration will now aim for shipwrecks just like automated scouts on land search ruins
+- Clearing a unit speciality in a revolting colony will no longer crash the game
+- Forts now updates field of view as intended
+- #437 Scrolling up will no longer move the "unit pointer icon" behind the bottom panel
+- #459 Founding Fathers and traits providing extra yield on the colony plot will now provide the bonus (vanilla bug)
+
+AI:
+- AI will now actively search shipwrecks. It's now a race to get them first
+
+Modding features:
+- #438 Generic parameters in events now accept both ints and type strings (still stored as ints internally)
+- Introduced a new way of packing data in network packages (hopefully this will prevent trade routes from breaking again)
+
+World Builder:
+- Changing profession anywhere is once again allowed
+- Allows premade maps to randomize features (forests)
+
+
 Version 2.8.2.4
 
 Improvements:
