@@ -3394,6 +3394,7 @@ void CvDLLWidgetData::doCityUnitAssignCitizen(const CvWidgetDataStruct& destinat
 	//Androrc End
 
 	case WIDGET_ASSIGN_CITIZEN_TO_PLOT:
+	case WIDGET_CITY_PLOT_INFO: // city plot mouse over help - inaiwae - fix by Nightinggale
 		doAssignCitizenToPlot(gDLL->getInterfaceIFace()->getHeadSelectedCity(), destinationWidgetData.m_iData1, sourceWidgetData.m_iData1);
 		break;
 
@@ -3921,6 +3922,7 @@ void CvDLLWidgetData::doUnitIntoCity(const CvWidgetDataStruct& destinationWidget
 	//Androrc End
 
 	case WIDGET_ASSIGN_CITIZEN_TO_PLOT:
+	case WIDGET_CITY_PLOT_INFO: // city plot mouse over help - inaiwae - fix by Nightinggale
 		doAssignCitizenToPlot(gDLL->getInterfaceIFace()->getHeadSelectedCity(), destinationWidgetData.m_iData1, sourceWidgetData.m_iData1);
 		break;
 
