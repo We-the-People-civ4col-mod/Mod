@@ -115284,7 +115284,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=78,y=179
-	TerrainType=TERRAIN_OCEAN
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=30,
 EndPlot
