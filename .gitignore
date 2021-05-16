@@ -9,6 +9,7 @@
 *.zip
 *.log
 *.vcxprojAssemblyReference.cache
+*.ini
 *.ini.bak
 .DS_Store
 .DS_Store?
