@@ -273,30 +273,27 @@ bool CvUnitAI::AI_update()
 				{
 					AI_imperialCannonMove();
 				}
-
-				if (canMove()) // don't try to attack if the unit already used all movement points - Nightinggale
+				//WTP, Protected Hostile Goodies - START
+				else if (GC.getGameINLINE().getBarbarianPlayer() == getOwnerINLINE())
 				{
-					//WTP, Protected Hostile Goodies - START
-					if (GC.getGameINLINE().getBarbarianPlayer() == getOwnerINLINE())
+					if(plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileNatives())
 					{
-						if (plot()->isGoodyForSpawningHostileCriminals() || plot()->isGoodyForSpawningHostileNatives())
+						if (plot()->getNumDefenders(getOwnerINLINE()) <= 2)
 						{
-							if (plot()->getNumDefenders(getOwnerINLINE()) <= 2)
-							{
-								getGroup()->pushMission(MISSION_FORTIFY);
-								return true;
-							}
+							getGroup()->pushMission(MISSION_SKIP);
+							return true;
 						}
-						AI_attackCityMove();
 					}
-					//WTP, Protected Hostile Goodies - END
-					else
-					{
-						// TAC - AI Attack City - koma13 - START
-						//AI_offensiveMove();
+                    if (canMove()) // don't try to attack if the unit already used all movement points - Nightinggale
 						AI_attackCityMove();
-						// TAC - AI Attack City - koma13 - END
-					}
+				}
+				//WTP, Protected Hostile Goodies - END
+				else
+				{
+					// TAC - AI Attack City - koma13 - START
+					//AI_offensiveMove();
+					AI_attackCityMove();
+					// TAC - AI Attack City - koma13 - END
 				}
 				break;
 				
