@@ -321,6 +321,9 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 			GC.getUnitClassInfo((UnitClassTypes)i).readPass3();
 		}
 	}
+	// trade screen type - start - Nightinggale
+	PreLoadGlobalClassInfo(GC.getTradeScreenInfo(), "CIV4TradeScreenInfo", "GameInfo", "Civ4TradeScreenInfo/TradeScreenInfos/TradeScreenInfo", NULL);
+	// trade screen type - end - Nightinggale
 	// Load CivEffects
 	PreLoadGlobalClassInfo(GC.getCivEffectInfo(), "CIV4CivEffectsInfos", "CivEffects", "Civ4CivEffectInfos/CivEffectInfo", NULL);
 	//Androrc UnitArtStyles

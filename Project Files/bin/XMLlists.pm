@@ -37,6 +37,7 @@ sub isAlwaysHardcodedEnum
 	return 1 if $file eq "BasicInfos/CIV4InvisibleInfos.xml";
 	return 1 if $file eq "GameInfo/CIV4GameOptionInfos.xml";
 	return 1 if $file eq "GameInfo/CIV4PlayerOptionInfos.xml";
+	return 1 if $file eq "GameInfo/CIV4TradeScreenInfo.xml";
 	return 1 if $file eq "GameInfo/CIV4WorldInfo.xml";
 	return 1 if $file eq "Terrain/CIV4TerrainInfos.xml";
 	return 1 if $file eq "Terrain/CIV4YieldInfos.xml";
@@ -199,6 +200,7 @@ sub getEnumFiles
 	push(@list, "GameInfo/CIV4HurryInfo.xml");
 	push(@list, "GameInfo/CIV4PlayerOptionInfos.xml");
 	push(@list, "GameInfo/CIV4SeaLevelInfo.xml");
+	push(@list, "GameInfo/CIV4TradeScreenInfo.xml");
 	push(@list, "GameInfo/CIV4VictoryInfo.xml");
 	push(@list, "GameInfo/CIV4WorldInfo.xml");
 	

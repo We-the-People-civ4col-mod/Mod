@@ -883,4 +883,13 @@
 	<ElementType name="Civ4FatherPointInfos" content="eltOnly">
 		<element type="FatherPointInfos"/>
 	</ElementType>
+	<ElementType name="TradeScreenInfo" content="eltOnly">
+		<element type="Type"/>
+	</ElementType>
+	<ElementType name="TradeScreenInfos" content="eltOnly">
+		<element type="TradeScreenInfo" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Civ4TradeScreenInfo" content="eltOnly">
+		<element type="TradeScreenInfos"/>
+	</ElementType>
 </Schema>

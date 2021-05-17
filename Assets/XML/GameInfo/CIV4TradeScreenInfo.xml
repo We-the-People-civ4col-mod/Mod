@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Civ4TradeScreenInfo xmlns="x-schema:CIV4GameInfoSchema.xml">
+	<TradeScreenInfos>
+		<TradeScreenInfo>
+			<Type>TRADE_SCREEN_EUROPE</Type>
+		</TradeScreenInfo>
+		<TradeScreenInfo>
+			<Type>TRADE_SCREEN_AFRICA</Type>
+		</TradeScreenInfo>
+		<TradeScreenInfo>
+			<Type>TRADE_SCREEN_PORT_ROYAL</Type>
+		</TradeScreenInfo>
+	</TradeScreenInfos>
+</Civ4TradeScreenInfo>

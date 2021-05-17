@@ -16036,6 +16036,26 @@ int CvHandicapInfo::getAIMaxTaxrate() const
 }
 // TAC - AI More Immigrants - koma13 - END
 
+// trade screen type - start - Nightinggale
+CvTradeScreenInfo::CvTradeScreenInfo()
+{
+}
+CvTradeScreenInfo::~CvTradeScreenInfo()
+{
+}
+
+bool CvTradeScreenInfo::read(CvXMLLoadUtility* pXML)
+{
+	if (!CvInfoBase::read(pXML))
+	{
+		return false;
+	}
+
+	return true;
+}
+// trade screen type - end - Nightinggale
+
+
 ///
 /// CivEffect
 ///

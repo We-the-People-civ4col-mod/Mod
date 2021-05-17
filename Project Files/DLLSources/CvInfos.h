@@ -4716,6 +4716,20 @@ protected:
 };
 // PatchMod: Achievements END
 
+// trade screen type - start - Nightinggale
+class CvTradeScreenInfo :
+	public CvInfoBase
+{
+public:
+	CvTradeScreenInfo();
+	~CvTradeScreenInfo();
+
+	bool read(CvXMLLoadUtility* pXML);
+
+protected:
+};
+// trade screen type - end - Nightinggale
+
 class CivEffectInfo :
 	public CvInfoBase
 {

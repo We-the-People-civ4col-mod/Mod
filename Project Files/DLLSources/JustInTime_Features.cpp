@@ -74,6 +74,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_SEA_LEVEL:          return NUM_SEALEVEL_TYPES;
 	case JIT_ARRAY_STRATEGY:           return NUM_STRATEGY_TYPES;
 	case JIT_ARRAY_TERRAIN:            return GC.getNumTerrainInfos();
+	case JIT_ARRAY_TRADE_SCREEN:       return NUM_TRADESCREEN_TYPES;
 	case JIT_ARRAY_TRAIT:              return GC.getNumTraitInfos();
 	case JIT_ARRAY_UNIT:               return GC.getNumUnitInfos();
 	case JIT_ARRAY_UNIT_AI:            return NUM_UNITAI_TYPES;
@@ -136,6 +137,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_ROUTE:              return &GC.getRouteInfo((RouteTypes)iIndex);
 	case JIT_ARRAY_SEA_LEVEL:          return &GC.getSeaLevelInfo((SeaLevelTypes)iIndex);
 	case JIT_ARRAY_TERRAIN:            return &GC.getTerrainInfo((TerrainTypes)iIndex);
+	case JIT_ARRAY_TRADE_SCREEN:       return &GC.getTradeScreenInfo((TradeScreenTypes)iIndex);
 	case JIT_ARRAY_TRAIT:              return &GC.getTraitInfo((TraitTypes)iIndex);
 	case JIT_ARRAY_UNIT:               return &GC.getUnitInfo((UnitTypes)iIndex);
 	case JIT_ARRAY_UNIT_AI:            return &GC.getUnitAIInfo((UnitAITypes)iIndex);
@@ -223,6 +225,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_ROUTE:              return "Route";
 	case JIT_ARRAY_SEA_LEVEL:          return "SeaLevel";
 	case JIT_ARRAY_TERRAIN:            return "Terrain";
+	case JIT_ARRAY_TRADE_SCREEN:       return "TradeScreen";
 	case JIT_ARRAY_TRAIT:              return "Trait";
 	case JIT_ARRAY_UNIT:               return "Unit";
 	case JIT_ARRAY_UNIT_AI:            return "UnitAI";
@@ -292,6 +295,7 @@ const char* getArrayPrefix(JITarrayTypes eType)
 	case JIT_ARRAY_ROUTE:              return "ROUTE_";
 	case JIT_ARRAY_SEA_LEVEL:          return "SEALEVEL_";
 	case JIT_ARRAY_TERRAIN:            return "TERRAIN_";
+	case JIT_ARRAY_TRADE_SCREEN:       return "TRADE_SCREEN_";
 	case JIT_ARRAY_TRAIT:              return "TRAIT_";
 	case JIT_ARRAY_UNIT:               return "UNIT_";
 	case JIT_ARRAY_UNIT_AI:            return "UNITAI_";
