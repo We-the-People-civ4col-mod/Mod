@@ -270,7 +270,7 @@ void CvCityAI::AI_assignWorkingPlots()
 		
 		// CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
 		
-		CvUnit* pOldUnit = AI_parallelAssignToBestJob(pUnit);
+		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
 //#define CHECK		
 #ifdef CHECK
 		//BestJob bj= AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit* pUnit_, bool bIndoorOnly)
@@ -3194,48 +3194,42 @@ struct BestJob
 	ProfessionTypes eBestProfession;
 };
 
-// TODO: Use references instead
 // Note: cannot be a member since it must be called from the functor
-BestJob AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit* pUnit_, bool bIndoorOnly)
+BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const CvUnit& kUnit, bool bIndoorOnly)
 {
-	CvCityAI const* const cityAi = cityAi_;
-	CvUnit const* const pUnit = pUnit_;
-
 	int iBestValue = 0;
 	int iBestPlot = -1;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
 	
-	ProfessionTypes eLoopProfession = (ProfessionTypes)professionType;
-
 	// TODO: Get this out of the parallel loop so we don't launch taks with almost nothing to do
 	// We can accomplish this by having a "pre-filtered" list of valid citizen professions
-	if (pUnit->canHaveProfession(eLoopProfession, true))
+	if (kUnit.canHaveProfession(eProfession, true))
 	{
-		if (GC.getProfessionInfo(eLoopProfession).isWorkPlot() && !bIndoorOnly)
+		if (GC.getProfessionInfo(eProfession).isWorkPlot() && !bIndoorOnly)
 		{
 			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 			{
 				if (iI != CITY_HOME_PLOT)
 				{
-					CvPlot* pLoopPlot = cityAi->getCityIndexPlot(iI);
+					const CvPlot* const pLoopPlot = kCity.getCityIndexPlot(iI);
 
-					if (pLoopPlot != NULL && cityAi->canWork(pLoopPlot))
+					if (pLoopPlot != NULL && kCity.canWork(pLoopPlot))
 					{
-						int iValue = cityAi->AI_professionValue(eLoopProfession, pUnit, pLoopPlot, NULL);
+						int iValue = kCity.AI_professionValue(eProfession, &kUnit, pLoopPlot, NULL);
 						
 						bool bValid = true;
 
 						if (pLoopPlot->isBeingWorked())
 						{
-							CvUnit* pWorkingUnit = cityAi->getUnitWorkingPlot(iI);
-							FAssert(pWorkingUnit != pUnit);
+							CvUnit* pWorkingUnit = kCity.getUnitWorkingPlot(iI);
+							FAssert(pWorkingUnit != &kUnit);
 							// TAC - AI Economy - koma13 - START
 							if (pWorkingUnit != NULL && !pWorkingUnit->isColonistLocked())
 							{
-								iValue = cityAi->AI_professionValue(eLoopProfession, pUnit, pLoopPlot, pWorkingUnit);
+								iValue = kCity.AI_professionValue(eProfession, &kUnit, pLoopPlot, pWorkingUnit);
 							}
 							// TAC - AI Economy - koma13 - END
-							if ((pWorkingUnit->isColonistLocked() || (iValue <= cityAi->AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
+							if ((pWorkingUnit->isColonistLocked() || (iValue <= kCity.AI_professionValue(pWorkingUnit->getProfession(), pWorkingUnit, pLoopPlot, NULL))))
 							{
 								bValid = false;
 							}
@@ -3245,7 +3239,7 @@ BestJob AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit
 						if (bValid && (iValue > iBestValue))
 							// TAC - AI Economy - koma13 - END
 						{
-							eBestProfession = eLoopProfession;
+							eBestProfession = eProfession;
 							iBestValue = iValue;
 							iBestPlot = iI;
 						}
@@ -3255,20 +3249,20 @@ BestJob AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit
 		}
 		else
 		{
-			int iValue = cityAi->AI_professionValue(eLoopProfession, pUnit, NULL, NULL);
+			int iValue = kCity.AI_professionValue(eProfession, &kUnit, NULL, NULL);
 			bool bValid = true;
-			if (!pUnit->canHaveProfession(eLoopProfession, false))
+			if (!kUnit.canHaveProfession(eProfession, false))
 			{
-				CvUnit* pWorstUnit = cityAi->AI_getWorstProfessionUnit(eLoopProfession);
+				CvUnit* pWorstUnit = kCity.AI_getWorstProfessionUnit(eProfession);
 				// R&R, ray, removed unnecessary Assert from developing feature
 				// FAssert(pWorstUnit != pUnit && pWorstUnit != NULL);
 				// TAC - AI Economy - koma13 - START
 				if (pWorstUnit != NULL && !pWorstUnit->isColonistLocked())
 				{
-					iValue = cityAi->AI_professionValue(eLoopProfession, pUnit, NULL, pWorstUnit);
+					iValue = kCity.AI_professionValue(eProfession, &kUnit, NULL, pWorstUnit);
 				}
 				// TAC - AI Economy - koma13 - END
-				if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= cityAi->AI_professionValue(eLoopProfession, pWorstUnit, NULL, NULL)))
+				if (pWorstUnit == NULL || pWorstUnit->isColonistLocked() || (iValue <= kCity.AI_professionValue(eProfession, pWorstUnit, NULL, NULL)))
 				{
 					bValid = false;
 				}
@@ -3279,7 +3273,7 @@ BestJob AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit
 			if (bValid && iValue > iBestValue)
 				// TAC - AI Economy - koma13 - END
 			{
-				eBestProfession = eLoopProfession;
+				eBestProfession = eProfession;
 				iBestValue = iValue;
 				iBestPlot = -1;
 			}
@@ -3291,10 +3285,10 @@ BestJob AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit
 
 struct FindBestJob
 {
-	FindBestJob(std::vector<int>& valid_, CvCityAI* pCity_, CvUnit* pUnit_, bool bIndoorOnly_) :
-		valid(valid_), pCity(pCity_), pUnit(pUnit_), bIndoorOnly(bIndoorOnly_), bestJob() {}
+	FindBestJob(const std::vector<ProfessionTypes>& valid_, const CvCityAI& kCity_, const CvUnit& kUnit_, bool bIndoorOnly_) :
+		valid(valid_), kCity(kCity_), kUnit(kUnit_), bIndoorOnly(bIndoorOnly_), bestJob() {}
 
-	FindBestJob(const FindBestJob& x, tbb::split) : valid(x.valid), pCity(x.pCity), pUnit(x.pUnit), bIndoorOnly(x.bIndoorOnly), bestJob()
+	FindBestJob(const FindBestJob& x, tbb::split) : valid(x.valid), kCity(x.kCity), kUnit(x.kUnit), bIndoorOnly(x.bIndoorOnly), bestJob()
 	{};
 
 	void operator()(const tbb::blocked_range<size_t>& r)
@@ -3303,7 +3297,7 @@ struct FindBestJob
 
 		for (size_t i = r.begin(); i != end; ++i)
 		{
-			const BestJob currentBestJob = AI_findBestJob(pCity, (ProfessionTypes)valid[i], pUnit, bIndoorOnly);
+			const BestJob currentBestJob = AI_findBestJob(kCity, valid[i],  kUnit, bIndoorOnly);
 
 			update(currentBestJob);
 		}
@@ -3326,30 +3320,33 @@ private:
 			bestJob = potentialBestJob;
 		}
 		// Tie-breaker clause
+#if 0
 		else if (bestJob.eBestProfession != NO_PROFESSION && potentialBestJob.iBestValue == bestJob.iBestValue)
 		{
 			// Prefer the lowest profession index to preserve commutative ordering
 			if (potentialBestJob.eBestProfession < bestJob.eBestProfession)
 			{
+				// BUG: We can't really swap units this freely. What about swapping slot and plot workers, slaves and experts ?
 				// Swap anyway, even if the values are the same we must preserve
 				// deterministic ordering
 				bestJob = potentialBestJob;
 			}
 		}
+#endif
 	}
 
-	std::vector<int>& valid;
-	CvCityAI* pCity;
-	CvUnit* pUnit;
+	const std::vector<ProfessionTypes>& valid;
+	const CvCityAI& kCity;
+	const CvUnit& kUnit;
 	bool bIndoorOnly;
 };
 
 tbb::mutex jobMutex;
 
-CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
+CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 {
 	
-	std::vector<int>& kValidCityJobs = GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions;
+	std::vector<ProfessionTypes>& kValidCityJobs = GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions;
 
 	// TODO: Do this only once
 	// TODO: Determine the proper iniitialization order, when is getCivilizationInfo valid ?
@@ -3370,21 +3367,29 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
 		{
-			ProfessionTypes eLoopProfession = (ProfessionTypes)i;
+			const ProfessionTypes eLoopProfession = (ProfessionTypes)i;
 			if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession) && GC.getProfessionInfo(eLoopProfession).isCitizen())
 			{
-				kValidCityJobs.push_back(i);
+				kValidCityJobs.push_back(eLoopProfession);
 			}
 		}
 	}
 
-	FindBestJob fbj(GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions, this, pUnit, bIndoorOnly);
+	FindBestJob fbj(GET_PLAYER(getOwnerINLINE()).m_validCityJobProfessions, *this, kUnit, bIndoorOnly);
+
+	// Get the rng state prior to starting a concurrent operation
+	unsigned long rngStatePrior = GC.getGameINLINE().getSorenRand().peek();
 
 	// TODO: Determine if 8 bits are enough
 	// TODO: Split in two ranges to better balance the workload (plot vs. building workers) ?
 	// TODO: Maybe set grainsize to the number of professions that we expect to iterate through divided by the 
 	tbb::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
 	
+	// Assert that the rng state is the same after the concurrent operation has completed
+	unsigned long rngStatePost = GC.getGameINLINE().getSorenRand().peek();
+
+	FAssertMsg(rngStatePrior == rngStatePost, "It looks like at least one random number has been generated between the invokation of tbb::* !");
+
 	const int iBestValue = fbj.bestJob.iBestValue;
 	const int iBestPlot = fbj.bestJob.iBestPlot;
 	const ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
@@ -3397,7 +3402,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(pUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(&kUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		jobMutex.unlock();
@@ -3408,31 +3413,50 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 
 	if (!GC.getProfessionInfo(eBestProfession).isWorkPlot())
 	{
-		if (!pUnit->canHaveProfession(eBestProfession, false))
+		// Slot worker has no plot
+		FAssert(iBestPlot == -1);
+
+		if (!kUnit.canHaveProfession(eBestProfession, false))
 		{
 			pDisplacedUnit = AI_getWorstProfessionUnit(eBestProfession);
 			FAssert(pDisplacedUnit != NULL);
-			// TAC - AI Economy - koma13 - START
-			//FAssert(AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(iBestPlot), NULL) > AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL));
-			FAssert(AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit) > AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL));
+			// TAC - AI Economy - koma13 - STARTf
+			const int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, NULL, pDisplacedUnit);
+			const int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, NULL, NULL);
+			FAssert(iCurrentProfessionValue > iDisplacedUnitProfessionValue);
 			// TAC - AI Economy - koma13 - END
+			if (iCurrentProfessionValue <= iDisplacedUnitProfessionValue)
+			{
+				while (true)
+				{
+					volatile int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, NULL, pDisplacedUnit);
+ 					volatile int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, NULL, NULL);
+				}
+			}
 		}
 	}
 	else
 	{
-		FAssert(iBestPlot != -1);
+		FAssertMsg(iBestPlot >= 0, "iPlotIndex expected to be >= 0");
+		FAssertMsg(iBestPlot < NUM_CITY_PLOTS, "iPlotIndex expected to be < NUM_CITY_PLOTS");
+
 		if (isUnitWorkingPlot(iBestPlot))
 		{
 			pDisplacedUnit = getUnitWorkingPlot(iBestPlot);
 			FAssert(pDisplacedUnit != NULL);
 			// TAC - AI Economy - koma13 - START
-			//FAssert(AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(iBestPlot), NULL) > AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL));
-			
+			const int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit);
+			const int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL);
 
-			const int a = AI_professionValue(eBestProfession, pUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit);
-			const int b = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL);
-			FAssert(a >= b);
-
+			FAssert(iCurrentProfessionValue > iDisplacedUnitProfessionValue);
+			if (iCurrentProfessionValue <= iDisplacedUnitProfessionValue)
+			{
+				while (true)
+				{
+					 volatile int iCurrentProfessionValue = AI_professionValue(eBestProfession, &kUnit, getCityIndexPlot(iBestPlot), pDisplacedUnit);
+					 volatile int iDisplacedUnitProfessionValue = AI_professionValue(pDisplacedUnit->getProfession(), pDisplacedUnit, getCityIndexPlot(iBestPlot), NULL);
+				}
+			}
 			// TAC - AI Economy - koma13 - END
 			clearUnitWorkingPlot(iBestPlot);
 		}
@@ -3443,16 +3467,16 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 		pDisplacedUnit->setProfession(NO_PROFESSION);
 	}
 
-	pUnit->setProfession(eBestProfession);
+	kUnit.setProfession(eBestProfession);
 
-	FAssert(!isUnitWorkingAnyPlot(pUnit));
+	FAssert(!isUnitWorkingAnyPlot(&kUnit));
 	if (iBestPlot != -1)
 	{
-		setUnitWorkingPlot(iBestPlot, pUnit->getID());
+		setUnitWorkingPlot(iBestPlot, kUnit.getID());
 	}
 
 	FAssert(iBestPlot != -1 || !GC.getProfessionInfo(eBestProfession).isWorkPlot());
-	FAssert(iBestPlot == -1 || isUnitWorkingAnyPlot(pUnit));
+	FAssert(iBestPlot == -1 || isUnitWorkingAnyPlot(&kUnit));
 
 	jobMutex.unlock();
 
