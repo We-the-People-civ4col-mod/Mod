@@ -252,7 +252,7 @@ protected:
 	void AI_juggleCitizens();
 
 	CvUnit* AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly = false);
-	CvUnit* AI_parallelAssignToBestJob(CvUnit* pUnit, bool bIndoorOnly = false);
+	CvUnit* AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly = false);
 
 	CvUnit* AI_juggleColonist(CvUnit* pUnit);
 
