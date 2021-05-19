@@ -31,7 +31,7 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x);
 void CyGamePythonInterface1(python::class_<CyGame>& x);
 void CyGamePythonInterface2(python::class_<CyGame>& x);
 void CyGamePythonInterface3(python::class_<CyGame>& x);
-void CyRandomPythonInterface();
+void CySmallClassesPythonInterface();
 void CyEnumsPythonInterface();
 void CyTeamPythonInterface();
 void CyAreaPythonInterface();
@@ -59,7 +59,7 @@ DllExport void DLLPublishToPython()
 {
 	CyDealPythonInterface();
 	CyEnumsPythonInterface();
-	CyRandomPythonInterface();
+	CySmallClassesPythonInterface();
 	CyTeamPythonInterface();
 	CyAreaPythonInterface();
 	CyStructsPythonInterface1();

@@ -41,6 +41,10 @@
 // Public Functions...
 
 CvPlayer::CvPlayer()
+#pragma warning( disable: 4355 )
+// warning C4355: warns that "this" shouldn't be used in a constructor except if the called constructor only stores the pointer
+	: m_TradeMessages(this)
+#pragma warning( default: 4355 )
 {
 	// R&R, ray, Bargaining - START
 	m_bWillingToBargain = false;
@@ -296,6 +300,10 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_aiTradeMessageAmounts.clear();
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
+
+	// Trade Message Class - Nightinggale - start
+	m_TradeMessages.clear();
+	// Trade Message Class - Nightinggale - end
 
 	if (!bConstructorCall)
 	{
@@ -2186,6 +2194,10 @@ void CvPlayer::doTurn()
 	m_aiTradeMessageAmounts.clear();
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
+
+	// Trade Message Class - Nightinggale - start
+	m_TradeMessages.clear();
+	// Trade Message Class - Nightinggale - end
 
 	gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
 
@@ -18027,7 +18039,7 @@ int CvPlayer::getNumTradeMessages() const
 	return m_aszTradeMessages.size();
 }
 
-const wchar* CvPlayer::getTradeMessage(int i) const
+const wchar* CvPlayer::getTradeMessageVanilla(int i) const
 {
 	return m_aszTradeMessages[i].GetCString();
 }
@@ -18053,6 +18065,13 @@ int CvPlayer::getTradeMessageCommission(int i) const
 	return m_aiTradeMessageCommissions[i];
 }
 // TAC - Trade Messages - koma13 - END
+
+// Trade Message Class - Nightinggale - start
+const CvTradeMessage& CvPlayer::getTradeMessage(int i) const
+{
+	return m_TradeMessages.get(i);
+}
+// Trade Message Class - Nightinggale - end
 
 void CvPlayer::buildTradeTable(PlayerTypes eOtherPlayer, CLinkList<TradeData>& ourList, const IDInfo& kTransport) const
 {

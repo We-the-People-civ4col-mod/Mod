@@ -65,7 +65,7 @@ void CyPlayerPythonInterface4(python::class_<CyPlayer>& x)
 		.def("getYieldEquipmentAmount", &CyPlayer::getYieldEquipmentAmount, "int (int iProfession, int iYield)")
 		.def("addRevolutionEuropeUnit", &CyPlayer::addRevolutionEuropeUnit, "void addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*ProfessionTypes*/ eProfession)")
 		.def("getNumTradeMessages", &CyPlayer::getNumTradeMessages, "int ()")
-		.def("getTradeMessage", &CyPlayer::getTradeMessage, "string (int)")
+		.def("getTradeMessageVanilla", &CyPlayer::getTradeMessageVanilla, "string (int)")
 
 		.def("getSpecialBuildingTypes", &CyPlayer::getSpecialBuildingTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")
 		.def("getStoredYieldTypes", &CyPlayer::getStoredYieldTypes, python::return_value_policy<python::manage_new_object>(), "CyInfoArray ()")

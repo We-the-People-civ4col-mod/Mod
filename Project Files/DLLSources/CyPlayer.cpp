@@ -18,6 +18,7 @@
 #include "CyTradeRoute.h"
 #include "CyTradeRouteGroup.h" // R&R mod, vetiarvind, trade groups
 #include "CyData.h"
+#include "CySmallClasses.h"
 
 
 CyPlayer::CyPlayer() : m_pPlayer(NULL)
@@ -1327,9 +1328,9 @@ int CyPlayer::getNumTradeMessages() const
 {
 	return m_pPlayer ? m_pPlayer->getNumTradeMessages() : -1;
 }
-std::wstring CyPlayer::getTradeMessage(int i) const
+std::wstring CyPlayer::getTradeMessageVanilla(int i) const
 {
-	return m_pPlayer ? m_pPlayer->getTradeMessage(i) : L"";
+	return m_pPlayer ? m_pPlayer->getTradeMessageVanilla(i) : L"";
 }
 
 // TAC - Trade Messages - koma13 - START
@@ -1350,6 +1351,13 @@ int CyPlayer::getTradeMessageCommission(int i) const
 	return m_pPlayer ? m_pPlayer->getTradeMessageCommission(i) : -1;
 }
 // TAC - Trade Messages - koma13 - END
+
+// Trade Message Class - Nightinggale - start
+CyTradeMessage* CyPlayer::getTradeMessage(int i) const
+{
+	return m_pPlayer ? new CyTradeMessage(m_pPlayer->getTradeMessage(i)) : NULL;
+}
+// Trade Message Class - Nightinggale - end
 
 // PatchMod: Achievements START
 bool CyPlayer::isAchieveGained(int /*AchieveTypes*/ eAchieve)

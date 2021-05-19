@@ -286,7 +286,7 @@
     <ClCompile Include="DLLSources\CyPlotInterface2.cpp">
       <Filter>Python\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CyRandomInterface.cpp">
+    <ClCompile Include="DLLSources\CySmallClassesInterface.cpp">
       <Filter>Python\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CyReplayInfo.cpp">
@@ -455,6 +455,12 @@
       <Filter>Python\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CyDataInterface.cpp">
+      <Filter>Python\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CvSmallClasses.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CySmallClasses.cpp">
       <Filter>Python\CPP</Filter>
     </ClCompile>
   </ItemGroup>
@@ -839,6 +845,12 @@
     </ClInclude>
     <ClInclude Include="DLLSources\NetworkDataPacking.h">
       <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvSmallClasses.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CySmallClasses.h">
+      <Filter>Python\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -6,6 +6,7 @@
 #include "CySelectionGroup.h"
 #include "CyArea.h"
 #include "CyTradeRoute.h"
+#include "CySmallClasses.h"
 //# include <boost/python/manage_new_object.hpp>
 //# include <boost/python/return_value_policy.hpp>
 //# include <boost/python/scope.hpp>
@@ -148,6 +149,9 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("getTradeMessageYield", &CyPlayer::getTradeMessageYield, "int /*YieldTypes*/ (int)")
 		.def("getTradeMessageAmount", &CyPlayer::getTradeMessageAmount, "int (int)")
 		.def("getTradeMessageCommission", &CyPlayer::getTradeMessageCommission, "int (int)")
+		// Trade Message Class - Nightinggale - start
+		.def("getTradeMessage", &CyPlayer::getTradeMessage, python::return_value_policy<python::manage_new_object>(), "CyTradeMessage (int)")
+		// Trade Message Class - Nightinggale - end
 		.def("toggleMultiRowPlotList", &CyPlayer::toggleMultiRowPlotList, "void ()")
 		;
 }

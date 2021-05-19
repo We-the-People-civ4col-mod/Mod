@@ -796,7 +796,7 @@ public:
 	void buyLand(CvPlot* pPlot, bool bFree);
 
 	int getNumTradeMessages() const;
-	const wchar* getTradeMessage(int i) const;
+	const wchar* getTradeMessageVanilla(int i) const;
 
 	// TAC - Trade Messages - koma13 - START
 	TradeMessageTypes getTradeMessageType(int i) const;
@@ -804,6 +804,11 @@ public:
 	int getTradeMessageAmount(int i) const;
 	int getTradeMessageCommission(int i) const;
 	// TAC - Trade Messages - koma13 - END
+
+
+	// Trade Message Class - Nightinggale - start
+	const CvTradeMessage& getTradeMessage(int i) const;
+	// Trade Message Class - Nightinggale - end
 
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
@@ -1080,6 +1085,10 @@ protected:
 	std::vector<int> m_aiTradeMessageAmounts;
 	std::vector<int> m_aiTradeMessageCommissions;
 	// TAC - Trade Messages - koma13 - END
+
+	// Trade Message Class - Nightinggale - start
+	CvTradeMessageList m_TradeMessages;
+	// Trade Message Class - Nightinggale - end
 
 	void doGold();
 	void doBells();

@@ -14,6 +14,9 @@ class CyArea;
 class CyPlot;
 class CySelectionGroup;
 class CyTradeRoute;
+// Trade Message Class - Nightinggale - start
+class CyTradeMessage;
+// Trade Message Class - Nightinggale - end
 class CyTradeRouteGroup;
 
 class CyPlayer
@@ -334,13 +337,16 @@ public:
 	int getChurchFavourPrice() const; // R&R, ray, Church Favours
 
 	int getNumTradeMessages() const;
-	std::wstring getTradeMessage(int i) const;
+	std::wstring getTradeMessageVanilla(int i) const;
 	// TAC - Trade Messages - koma13 - START
 	int /*TradeMessageTypes*/ getTradeMessageType(int i) const;
 	int /*YieldTypes*/ getTradeMessageYield(int i) const;
 	int getTradeMessageAmount(int i) const;
 	int getTradeMessageCommission(int i) const;
 	// TAC - Trade Messages - koma13 - END
+	// Trade Message Class - Nightinggale - start
+	CyTradeMessage* getTradeMessage(int iIndex) const;
+	// Trade Message Class - Nightinggale - end
 	// TAC - TAC Interface - koma13 - START
 	void toggleMultiRowPlotList();
 	// TAC - TAC Interface - koma13 - END

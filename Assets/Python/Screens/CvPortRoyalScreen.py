@@ -604,7 +604,7 @@ class CvPortRoyalScreen:
 			if iLastFailed == sdToolKit.sdGetVal('komaScreens', player.getID(), 'DealFailed'):
 				screen.hide("DealFailedText")
 			else:
-				screen.setLabel( "DealFailedText", "Background", localText.getText("%s1", (player.getTradeMessage(iLastFailed),())), CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, self.BOX_Y - self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+				screen.setLabel( "DealFailedText", "Background", localText.getText("%s1", (player.getTradeMessageVanilla(iLastFailed),())), CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, self.BOX_Y - self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 				sdToolKit.sdSetVal('komaScreens', player.getID(), 'DealFailed', iLastFailed)
 
 		# Yield Rates

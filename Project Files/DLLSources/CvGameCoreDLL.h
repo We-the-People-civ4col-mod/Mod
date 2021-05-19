@@ -282,6 +282,7 @@ namespace boost
 #include "PlayerBoolArray.h"
 #include "InfoArray.h"
 #include "InfoCacheArray.h"
+#include "CvSmallClasses.h"
 
 #include "CvGlobalConstants.h"
 
