@@ -350,6 +350,12 @@ bool CyPlot::isStartingPlot()
 {
 	return m_pPlot ? m_pPlot->isStartingPlot() : false;
 }
+// WTP, ray, fix for SailTo - START
+bool CyPlot::isEuropeAccessable()
+{
+	return m_pPlot ? m_pPlot->isEuropeAccessable() : false;
+}
+// WTP, ray, fix for SailTo - END
 void CyPlot::setStartingPlot(bool bNewValue)
 {
 	if (m_pPlot)

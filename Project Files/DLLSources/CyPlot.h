@@ -106,6 +106,7 @@ public:
 	int getCityRadiusCount();
 	int isCityRadius();
 	bool isStartingPlot();
+	bool isEuropeAccessable(); // WTP, ray, fix for SailTo
 	void setStartingPlot(bool bNewValue);
 	bool isNOfRiver();
 	void setNOfRiver(bool bNewValue, CardinalDirectionTypes eRiverDir);

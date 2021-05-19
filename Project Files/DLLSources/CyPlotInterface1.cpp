@@ -103,6 +103,7 @@ void CyPlotPythonInterface1(python::class_<CyPlot>& x)
 		.def("getCityRadiusCount", &CyPlot::getCityRadiusCount, "int ()")
 		.def("isCityRadius", &CyPlot::isCityRadius, "int ()")
 		.def("isStartingPlot", &CyPlot::isStartingPlot, "bool ()")
+		.def("isEuropeAccessable", &CyPlot::isEuropeAccessable, "bool ()")
 		.def("setStartingPlot", &CyPlot::setStartingPlot, "void (bool bNewValue)")
 	;
 }
