@@ -4742,17 +4742,17 @@ public:
 	~CivEffectInfo();
 
 	// allow
-	inline const InfoArrayBase& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
-	inline const InfoArrayBase& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
-	inline const InfoArrayBase& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
-	inline const InfoArrayBase& getAllowedCivics               () const { return m_info_AllowCivics       ; }
-	inline const InfoArrayBase& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
-	inline const InfoArrayBase& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
-	inline const InfoArrayBase& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
-	inline const InfoArrayBase& getAllowedPromotions           () const { return m_info_AllowPromotions   ; }
-	inline const InfoArrayBase& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
-	inline const InfoArrayBase& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
-	inline const InfoArrayBase& getAllowedYields               () const { return m_info_AllowYields       ; }
+	inline const InfoArray<BonusTypes        , AllowTypes>& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
+	inline const InfoArray<BuildTypes        , AllowTypes>& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
+	inline const InfoArray<BuildingClassTypes, AllowTypes>& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
+	inline const InfoArray<CivicTypes        , AllowTypes>& getAllowedCivics               () const { return m_info_AllowCivics       ; }
+	inline const InfoArray<UnitClassTypes    , AllowTypes>& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
+	inline const InfoArray<ImprovementTypes  , AllowTypes>& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
+	inline const InfoArray<ProfessionTypes   , AllowTypes>& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
+	inline const InfoArray<PromotionTypes    , AllowTypes>& getAllowedPromotions           () const { return m_info_AllowPromotions   ; }
+	inline const InfoArray<RouteTypes        , AllowTypes>& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
+	inline const InfoArray<UnitClassTypes    , AllowTypes>& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
+	inline const InfoArray<YieldTypes        , AllowTypes>& getAllowedYields               () const { return m_info_AllowYields       ; }
 
 	// city
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }
@@ -4761,25 +4761,25 @@ public:
 	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange  ; }
 
 	// unit
-	inline const InfoArrayBase& getFreePromotions              () const { return m_info_FreePromotions    ; }
-	inline const InfoArrayBase& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
-	inline const InfoArrayBase& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
+	inline const InfoArray<PromotionTypes, AllowTypes>                 & getFreePromotions              () const { return m_info_FreePromotions    ; }
+	inline const InfoArray<ProfessionTypes, PromotionTypes, AllowTypes>& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
+	inline const InfoArray<UnitCombatTypes, PromotionTypes, AllowTypes>& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
 
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
 	// allow
-	InfoArrayMod m_info_AllowBonuses;
-	InfoArrayMod m_info_AllowBuilds;
-	InfoArrayMod m_info_AllowBuildings;
-	InfoArrayMod m_info_AllowCivics;
-	InfoArrayMod m_info_AllowImmigrants;
-	InfoArrayMod m_info_AllowImprovements;
-	InfoArrayMod m_info_AllowProfessions;
-	InfoArrayMod m_info_AllowPromotions;
-	InfoArrayMod m_info_AllowRoutes;
-	InfoArrayMod m_info_AllowUnits;
-	InfoArrayMod m_info_AllowYields;
+	InfoArray<BonusTypes        , AllowTypes> m_info_AllowBonuses;
+	InfoArray<BuildTypes        , AllowTypes> m_info_AllowBuilds;
+	InfoArray<BuildingClassTypes, AllowTypes> m_info_AllowBuildings;
+	InfoArray<CivicTypes        , AllowTypes> m_info_AllowCivics;
+	InfoArray<UnitClassTypes    , AllowTypes> m_info_AllowImmigrants;
+	InfoArray<ImprovementTypes  , AllowTypes> m_info_AllowImprovements;
+	InfoArray<ProfessionTypes   , AllowTypes> m_info_AllowProfessions;
+	InfoArray<PromotionTypes    , AllowTypes> m_info_AllowPromotions;
+	InfoArray<RouteTypes        , AllowTypes> m_info_AllowRoutes;
+	InfoArray<UnitClassTypes    , AllowTypes> m_info_AllowUnits;
+	InfoArray<YieldTypes        , AllowTypes> m_info_AllowYields;
 
 	// city
 	int m_iCanUseDomesticMarket;
@@ -4788,9 +4788,9 @@ protected:
 	int m_iNumUnitsOnDockChange;
 
 	// unit
-	InfoArrayMod m_info_FreePromotions;
-	InfoArrayMod m_info_FreePromotionsForProfessions;
-	InfoArrayMod m_info_FreePromotionsForUnitCombats;
+	InfoArray<                 PromotionTypes, AllowTypes> m_info_FreePromotions;
+	InfoArray<ProfessionTypes, PromotionTypes, AllowTypes> m_info_FreePromotionsForProfessions;
+	InfoArray<UnitCombatTypes, PromotionTypes, AllowTypes> m_info_FreePromotionsForUnitCombats;
 };
 
 

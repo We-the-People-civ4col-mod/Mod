@@ -16069,29 +16069,11 @@ bool CvTradeScreenInfo::read(CvXMLLoadUtility* pXML)
 ///
 
 CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
-// allow
-	: m_info_AllowBonuses                  (JIT_ARRAY_BONUS              , JIT_ARRAY_ALLOW)
-	, m_info_AllowBuilds                   (JIT_ARRAY_BUILD              , JIT_ARRAY_ALLOW)
-	, m_info_AllowBuildings                (JIT_ARRAY_BUILDING_CLASS     , JIT_ARRAY_ALLOW)
-	, m_info_AllowCivics                   (JIT_ARRAY_CIVIC              , JIT_ARRAY_ALLOW)
-	, m_info_AllowImmigrants               (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
-	, m_info_AllowImprovements             (JIT_ARRAY_IMPROVEMENT        , JIT_ARRAY_ALLOW)
-	, m_info_AllowProfessions              (JIT_ARRAY_PROFESSION         , JIT_ARRAY_ALLOW)
-	, m_info_AllowPromotions               (JIT_ARRAY_PROMOTION          , JIT_ARRAY_ALLOW)
-	, m_info_AllowRoutes                   (JIT_ARRAY_ROUTE              , JIT_ARRAY_ALLOW)
-	, m_info_AllowUnits                    (JIT_ARRAY_UNIT_CLASS         , JIT_ARRAY_ALLOW)
-	, m_info_AllowYields                   (JIT_ARRAY_YIELD              , JIT_ARRAY_ALLOW)
-
 	// city
-	, m_iCanUseDomesticMarket(0)
+	: m_iCanUseDomesticMarket(0)
 
 	// growth
 	, m_iNumUnitsOnDockChange(0)
-
-	// unit
-	, m_info_FreePromotions                (JIT_ARRAY_PROMOTION          , JIT_ARRAY_ALLOW)
-	, m_info_FreePromotionsForProfessions  (JIT_ARRAY_PROFESSION         , JIT_ARRAY_PROMOTION,     JIT_ARRAY_ALLOW)
-	, m_info_FreePromotionsForUnitCombats  (JIT_ARRAY_UNIT_COMBAT        , JIT_ARRAY_PROMOTION,     JIT_ARRAY_ALLOW)
 {
 	if (bAutogenerateAllow)
 	{

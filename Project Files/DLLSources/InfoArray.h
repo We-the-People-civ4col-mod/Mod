@@ -316,12 +316,20 @@ INFO_ARRAY_GET_INT(FloatTypes               , getFloat              , JIT_ARRAY_
 
 
 template<typename T0, typename T1 = JIT_NoneTypes, typename T2 = JIT_NoneTypes, typename T3 = JIT_NoneTypes>
-class InfoArray : public InfoArrayMod
+class InfoArray : protected InfoArrayMod
 	, public InfoArrayToken<0, T0>
 	, public InfoArrayToken<1, T1>
 	, public InfoArrayToken<2, T2>
 	, public InfoArrayToken<3, T3>
 {
+	// classes, which somehow bypasses the compile time type check
+	// TODO remove as many as possible
+	friend class CvCity;
+	friend class CvGlobals;
+	friend class CvUnitInfo;
+	friend class CvBuildingInfo;
+	friend class CivEffectInfo;
+	friend class CvPlayerCivEffect;
 public:
 	InfoArray() : InfoArrayMod(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
 #pragma warning( disable: 4355 )
