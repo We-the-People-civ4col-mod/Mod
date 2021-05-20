@@ -148,7 +148,7 @@ int BoolArray::getNumTrueElements() const
 	return iCount;
 }
 
-bool BoolArray::add(const InfoArray& kIarray)
+bool BoolArray::add(const InfoArrayBase& kIarray)
 {
 	bool bChanged = false;
 	int iLength = kIarray.getLength();

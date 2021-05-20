@@ -186,7 +186,7 @@ bool JustInTimeArray<double>::addCache(int iChange, const InfoArray* pIarray, Cv
 // Adding an InfoArray
 // this is used by CivEffects to store the combined values from multiple InfoArrays in a single JIT array
 template<class T>
-bool JustInTimeArray<T>::addCache(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo)
+bool JustInTimeArray<T>::addCache(int iChange, const InfoArrayBase& kIarray, const CvCivilizationInfo *pCivInfo)
 {
 	bool bChanged = false;
 	bool b2D = kIarray.getDimentions() == 2;
@@ -380,7 +380,7 @@ unsigned int JustInTimeArray<T>::getNumUsedElements(T* pNormalArray) const
 }
 
 template<>
-void JustInTimeArray<int>::generateInitCivEffect(const InfoArray& kIarray)
+void JustInTimeArray<int>::generateInitCivEffect(const InfoArrayBase& kIarray)
 {
 	FAssert(kIarray.getDimentions() == 2);
 	FAssert(this->getType() == kIarray.getType(0));
@@ -395,7 +395,7 @@ void JustInTimeArray<int>::generateInitCivEffect(const InfoArray& kIarray)
 }
 
 template<class T>
-void JustInTimeArray<T>::generateInitCivEffect(const InfoArray& kIarray)
+void JustInTimeArray<T>::generateInitCivEffect(const InfoArrayBase& kIarray)
 {
 	// silly little function, which is needed because generateInitCivEffect can't handle floating points (compiler warning/error avoidance)
 	FAssertMsg(false, "available only to ints");
@@ -767,7 +767,7 @@ void JustInTimeArray2D<T>::add(T eValue, int iIndex, int iSubIndex)
 }
 
 template<class T>
-bool JustInTimeArray2D<T>::addCache(int iChange, const InfoArray* pIarray)
+bool JustInTimeArray2D<T>::addCache(int iChange, const InfoArrayBase* pIarray)
 {
 	bool bChanged = false;
 
@@ -971,7 +971,7 @@ T CacheArray2D<T>::getAccumulative(int iIndex, int iSubIndex) const
 
 
 template<class T>
-bool CacheArray2D<T>::addCache(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo)
+bool CacheArray2D<T>::addCache(int iChange, const InfoArrayBase& kIarray, const CvCivilizationInfo *pCivInfo)
 {
 	FAssert(iChange == 1 || iChange == -1);
 	FAssert(kIarray.getDimentions() == 3 || (kIarray.getDimentions() == 2 && kIarray.isBool()));
@@ -1001,7 +1001,7 @@ bool CacheArray2D<T>::addCache(int iChange, const InfoArray& kIarray, const CvCi
 }
 
 template<class T>
-void CacheArray2D<T>::addCacheAccumulative(int iChange, const InfoArray& kIarray, const CvCivilizationInfo *pCivInfo)
+void CacheArray2D<T>::addCacheAccumulative(int iChange, const InfoArrayBase& kIarray, const CvCivilizationInfo *pCivInfo)
 {
 	FAssert(iChange == 1 || iChange == -1);
 	FAssert(kIarray.getDimentions() == 2);

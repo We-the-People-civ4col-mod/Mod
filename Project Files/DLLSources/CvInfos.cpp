@@ -2702,9 +2702,6 @@ m_aiUnitClassDefenseModifier(NULL),
 m_aiUnitCombatModifier(NULL),
 m_aiDomainModifier(NULL),
 m_aiYieldModifier(NULL),
-// R&R, Androrc, Domestic Market
-m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
-//Androrc End
 m_aiBonusYieldChange(NULL),
 m_aiYieldChange(NULL),
 m_aiYieldCost(NULL),
@@ -3219,6 +3216,12 @@ int CvUnitInfo::getYieldModifier(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_aiYieldModifier ? m_aiYieldModifier[i] : -1;
 }
+// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
+const InfoArray<YieldTypes, IntTypes>& CvUnitInfo::getYieldDemands() const
+{
+	return m_info_YieldDemands;
+}
+// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
 int CvUnitInfo::getBonusYieldChange(int i) const
 {
 	FAssertMsg(i < NUM_YIELD_TYPES, "Index out of bounds");
@@ -4854,7 +4857,6 @@ m_bNationalWonder(false), // R&R, ray, National Wonders
 m_bNeverCapture(false),
 m_bCenterInCity(false),
 m_iDomesticMarketModifier(0),
-m_info_YieldDemands(JIT_ARRAY_CARGO_YIELD, JIT_ARRAY_UNSIGNED_INT),
 m_aiProductionTraits(NULL),
 m_aiLandPlotYieldChange(NULL), // R&R, ray, Landplot Yields
 m_aiSeaPlotYieldChange(NULL),
@@ -5047,6 +5049,12 @@ bool CvBuildingInfo::isCenterInCity() const
 {
 	return m_bCenterInCity;
 }
+// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
+const InfoArray<YieldTypes, IntTypes>& CvBuildingInfo::getYieldDemands() const
+{
+	return m_info_YieldDemands;
+}
+// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
 const char* CvBuildingInfo::getConstructSound() const
 {
 	return m_szConstructSound;

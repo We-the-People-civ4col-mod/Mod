@@ -795,9 +795,9 @@ public:
 	int getUnitCombatModifier(int i) const;
 	int getDomainModifier(int i) const;
 	int getYieldModifier(int i) const;
-	// R&R, Androrc, Domestic Market
-	const InfoArray& getYieldDemands() const { return m_info_YieldDemands; }
-	//Androrc End
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
+	const InfoArray<YieldTypes, IntTypes>& getYieldDemands() const;
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
 	int getBonusYieldChange(int i) const;
 	int getYieldChange(int i) const;
 	int getYieldCost(YieldTypes eYield) const;
@@ -970,9 +970,9 @@ protected:
 	int* m_aiUnitCombatModifier;
 	int* m_aiDomainModifier;
 	int* m_aiYieldModifier;
-	// R&R, Androrc, Domestic Market
-	InfoArrayMod m_info_YieldDemands;
-	//Androrc End
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
+	InfoArray<YieldTypes, IntTypes> m_info_YieldDemands;
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
 	int* m_aiBonusYieldChange;
 	int* m_aiYieldChange;
 	int* m_aiYieldCost;
@@ -1287,7 +1287,9 @@ public:
 	bool isNeverCapture() const;
 	bool isCenterInCity() const;
 	int getDomesticMarketModifier() const { return m_iDomesticMarketModifier; }
-	const InfoArray& getYieldDemands() const { return m_info_YieldDemands; }
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
+	const InfoArray<YieldTypes, IntTypes>& getYieldDemands() const;
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
 	const char* getConstructSound() const;
 	void setConstructSound(const char* szVal);
 	const char* getArtDefineTag() const;
@@ -1377,7 +1379,9 @@ protected:
 	bool m_bNeverCapture;
 	bool m_bCenterInCity;
 	int m_iDomesticMarketModifier;
-	InfoArrayMod m_info_YieldDemands;
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - start
+	InfoArray<YieldTypes, IntTypes> m_info_YieldDemands;
+	// R&R, Androrc, Domestic Market -- modified by Nightinggale - end
 	CvString m_szConstructSound;
 	CvString m_szArtDefineTag;
 	CvString m_szMovieDefineTag;
@@ -4738,17 +4742,17 @@ public:
 	~CivEffectInfo();
 
 	// allow
-	inline const InfoArray& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
-	inline const InfoArray& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
-	inline const InfoArray& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
-	inline const InfoArray& getAllowedCivics               () const { return m_info_AllowCivics       ; }
-	inline const InfoArray& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
-	inline const InfoArray& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
-	inline const InfoArray& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
-	inline const InfoArray& getAllowedPromotions           () const { return m_info_AllowPromotions   ; }
-	inline const InfoArray& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
-	inline const InfoArray& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
-	inline const InfoArray& getAllowedYields               () const { return m_info_AllowYields       ; }
+	inline const InfoArrayBase& getAllowedBonuses              () const { return m_info_AllowBonuses      ; }
+	inline const InfoArrayBase& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
+	inline const InfoArrayBase& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
+	inline const InfoArrayBase& getAllowedCivics               () const { return m_info_AllowCivics       ; }
+	inline const InfoArrayBase& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
+	inline const InfoArrayBase& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
+	inline const InfoArrayBase& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
+	inline const InfoArrayBase& getAllowedPromotions           () const { return m_info_AllowPromotions   ; }
+	inline const InfoArrayBase& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
+	inline const InfoArrayBase& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
+	inline const InfoArrayBase& getAllowedYields               () const { return m_info_AllowYields       ; }
 
 	// city
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }
@@ -4757,9 +4761,9 @@ public:
 	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange  ; }
 
 	// unit
-	inline const InfoArray& getFreePromotions              () const { return m_info_FreePromotions    ; }
-	inline const InfoArray& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
-	inline const InfoArray& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
+	inline const InfoArrayBase& getFreePromotions              () const { return m_info_FreePromotions    ; }
+	inline const InfoArrayBase& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
+	inline const InfoArrayBase& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
 
 	bool read(CvXMLLoadUtility* pXML);
 

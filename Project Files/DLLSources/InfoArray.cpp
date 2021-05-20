@@ -22,7 +22,7 @@ InfoArray::InfoArray()
 }
 */
 
-InfoArray::InfoArray(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
+InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 	: m_iLength(0)
 	, m_iNumDimentions(0)
 	, m_pArray(NULL)
@@ -56,7 +56,7 @@ InfoArray::InfoArray(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes e
 	FAssert(m_iNumDimentions > 0);
 }
 
-InfoArray::~InfoArray()
+InfoArrayBase::~InfoArrayBase()
 {
 	SAFE_DELETE_ARRAY(m_pArray);
 }
@@ -66,7 +66,7 @@ InfoArray::~InfoArray()
 /// always available and will not change the member variables at all
 ///
 
-int InfoArray::getInternal(int iIndex, int iDimention) const
+int InfoArrayBase::getInternal(int iIndex, int iDimention) const
 {
 	if (iIndex >= m_iLength)
 	{
@@ -82,7 +82,19 @@ int InfoArray::getInternal(int iIndex, int iDimention) const
 	return m_pArray[iArrayIndex];
 }
 
-int InfoArray::getIndex(int iIndex) const
+int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
+{
+	for (int i = 0; i < m_iLength; ++i)
+	{
+		if (getInternal(i, iDim) == iValue)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
+
+int InfoArrayBase::getIndex(int iIndex) const
 {
 	FAssert(m_iNumDimentions <= 2);
 	for (int i = 0; i < m_iLength; i++)
@@ -95,7 +107,7 @@ int InfoArray::getIndex(int iIndex) const
 	return 0;
 }
 
-int InfoArray::getIndex(int iIndex, int iSubIndex) const
+int InfoArrayBase::getIndex(int iIndex, int iSubIndex) const
 {
 	FAssert(m_iNumDimentions == 3);
 	for (int i = 0; i < m_iLength; i++)
@@ -108,22 +120,22 @@ int InfoArray::getIndex(int iIndex, int iSubIndex) const
 	return 0;
 }
 
-int InfoArray::getLength() const
+int InfoArrayBase::getLength() const
 {
 	return m_iLength;
 }
 
-int InfoArray::getDimentions() const
+int InfoArrayBase::getDimentions() const
 {
 	return m_iNumDimentions;
 }
 
-bool InfoArray::isBool() const
+bool InfoArrayBase::isBool() const
 {
 	return getType(getDimentions() - 1) != JIT_ARRAY_NO_TYPE;
 }
 
-int InfoArray::getMin(int iDimention) const
+int InfoArrayBase::getMin(int iDimention) const
 {
 	int iValue = MAX_INT;
 
@@ -139,7 +151,7 @@ int InfoArray::getMin(int iDimention) const
 	return iValue;
 }
 
-int InfoArray::getMax(int iDimention) const
+int InfoArrayBase::getMax(int iDimention) const
 {
 	int iValue = MIN_INT;
 
@@ -155,7 +167,7 @@ int InfoArray::getMax(int iDimention) const
 	return iValue;
 }
 
-bool InfoArray::areIndexesValid(int iMax, int iDimention, int iMin) const
+bool InfoArrayBase::areIndexesValid(int iMax, int iDimention, int iMin) const
 {
 	for (int i = 0; i < m_iLength; ++i)
 	{
@@ -169,7 +181,7 @@ bool InfoArray::areIndexesValid(int iMax, int iDimention, int iMin) const
 	return true;
 }
 
-int InfoArray::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const
+int InfoArrayBase::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const
 {
 	if (eType == JIT_ARRAY_BUILDING && getType(iTokenIndex) == JIT_ARRAY_BUILDING_CLASS)
 	{
@@ -201,7 +213,7 @@ int InfoArray::getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iT
 /// operator overload
 ///
 
-InfoArray& InfoArray::operator=(const InfoArray &rhs)
+InfoArrayBase& InfoArrayBase::operator=(const InfoArrayBase &rhs)
 {
 	if (this != &rhs)
 	{
@@ -388,7 +400,50 @@ void InfoArrayMod::assign(const BoolArray* pBArray)
 	}
 }
 
-void InfoArrayMod::convertClass(const InfoArray* pInfoArray, const CvCivilizationInfo* pCivInfo)
+void InfoArrayMod::assign(const std::vector<int>& vec)
+{
+	assert(m_iNumDimentions == 1 || m_iNumDimentions == 2);
+	SAFE_DELETE_ARRAY(m_pArray);
+	m_iLength = 0;
+	const unsigned int iVecSize = vec.size();
+	for (unsigned int i = 0; i < iVecSize; ++i)
+	{
+		if (vec[i] != 0)
+		{
+			++m_iLength;
+		}
+	}
+
+
+	if (m_iLength == 0)
+	{
+		return;
+	}
+
+	m_pArray = new short[m_iLength * m_iNumDimentions];
+
+	int iCounter = 0;
+
+	for (unsigned int i = 0; i < iVecSize; ++i)
+	{
+		if (vec[i] != 0)
+		{
+			m_pArray[iCounter * m_iNumDimentions] = i;
+			if (m_iNumDimentions == 2)
+			{
+				m_pArray[(iCounter * m_iNumDimentions) + 1] = vec[i];
+			}
+			++iCounter;
+			if (iCounter == m_iLength)
+			{
+				// done converting. The rest of the values are all 0
+				return;
+			}
+		}
+	}
+}
+
+void InfoArrayMod::convertClass(const InfoArrayBase* pInfoArray, const CvCivilizationInfo* pCivInfo)
 {
 	FAssertMsg(pInfoArray->getType(0) == JIT_ARRAY_BUILDING_CLASS || pInfoArray->getType(0) == JIT_ARRAY_UNIT_CLASS, "InfoArray tries to resolve class in an array without classes");
 
@@ -404,7 +459,7 @@ void InfoArrayMod::convertClass(const InfoArray* pInfoArray, const CvCivilizatio
 	{
 		for (int iI = 0; iI < pInfoArray->getLength(); ++iI)
 		{
-			BuildingClassTypes eBuildingClass = pInfoArray->getBuildingClass(iI);
+			BuildingClassTypes eBuildingClass = pInfoArray->_getBuildingClass(iI);
 			if (pCivInfo != NULL)
 			{
 				int iBuilding = pCivInfo->getCivilizationBuildings(eBuildingClass);
@@ -438,7 +493,7 @@ void InfoArrayMod::convertClass(const InfoArray* pInfoArray, const CvCivilizatio
 	{
 		for (int iI = 0; iI < pInfoArray->getLength(); ++iI)
 		{
-			UnitClassTypes eUnitClass = pInfoArray->getUnitClass(iI);
+			UnitClassTypes eUnitClass = pInfoArray->_getUnitClass(iI);
 			if (pCivInfo != NULL)
 			{
 				int iUnit = pCivInfo->getCivilizationUnits(eUnitClass);
