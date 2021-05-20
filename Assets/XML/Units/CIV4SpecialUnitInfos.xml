@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by EXTREME (Firaxis Games) -->
+<!-- Sid Meier's Civilization 4 -->
+<!-- Copyright Firaxis Games 2005 -->
+<!-- -->
+<!-- Special Unit Infos -->
+<Civ4SpecialUnitInfos xmlns="x-schema:CIV4UnitSchema.xml">
+	<SpecialUnitInfos>
+		<SpecialUnitInfo>
+			<Type>SPECIALUNIT_YIELD_CARGO</Type>
+			<Description>TXT_KEY_SPECIALUNIT_YIELD_CARGO</Description>
+			<bValid>1</bValid>
+			<bCityLoad>1</bCityLoad>
+			<CarrierUnitAIs>
+				<CarrierUnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</CarrierUnitAI>
+			</CarrierUnitAIs>
+			<ProductionTraits/>
+		</SpecialUnitInfo>
+	</SpecialUnitInfos>
+</Civ4SpecialUnitInfos>
