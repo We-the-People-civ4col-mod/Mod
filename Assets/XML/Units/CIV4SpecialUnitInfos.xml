@@ -58,5 +58,18 @@
 			</CarrierUnitAIs>
 			<ProductionTraits/>
 		</SpecialUnitInfo>
+		<SpecialUnitInfo>
+			<Type>SPECIALUNIT_FORCED_LABOUR</Type>
+			<Description>TXT_KEY_SPECIALUNIT_YIELD_CARGO</Description>
+			<bValid>1</bValid>
+			<bCityLoad>1</bCityLoad>
+			<CarrierUnitAIs>
+				<CarrierUnitAI>
+					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</CarrierUnitAI>
+			</CarrierUnitAIs>
+			<ProductionTraits/>
+		</SpecialUnitInfo>
 	</SpecialUnitInfos>
 </Civ4SpecialUnitInfos>
