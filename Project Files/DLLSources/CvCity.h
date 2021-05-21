@@ -863,6 +863,8 @@ public:
 	void setAutoThresholdCache(YieldTypes eYield);
 	void setAutoThresholdCache();
 
+	bool isEuropeAccessable() const; // WTP, ray, fix for SailTo - for the City
+
 protected:
 	// traderoute popup arrays
 	EnumMap<YieldTypes, bool> m_em_bTradeImports;

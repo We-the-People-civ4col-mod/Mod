@@ -1235,7 +1235,7 @@ class CvPortRoyalScreen:
 		(city, iter) = player.firstCity(false)
 
 		while (city):
-			if city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()):
+			if (city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()) and city.isEuropeAccessable()):
 				if unit.getGroup().generatePath(plotEast, city.plot(), 0, false, None, true):
 					self.CityPlotList.append([city, None])
 				elif unit.getGroup().generatePath(plotWest, city.plot(), 0, false, None, true):

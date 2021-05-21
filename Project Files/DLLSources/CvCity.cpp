@@ -6000,6 +6000,24 @@ int CvCity::getNextFreeUnitId() const
 	return -1;
 }
 
+// WTP, ray, fix for SailTo - for the City - START
+bool CvCity::isEuropeAccessable() const
+{
+	// trying to check the adjacent Plots of the City for Water that is accessible to Europe
+	// however it should not be Large Rivers - at least for now
+	CvPlot* pAdjacentPlot;
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	{
+		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdjacentPlot != NULL && pAdjacentPlot->isWater() && pAdjacentPlot->isEuropeAccessable() && pAdjacentPlot->getTerrainType() == TERRAIN_COAST)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+// WTP, ray, fix for SailTo - for the City - END
+
 
 /*
 	bool CvCity::isHasRealBuilding(BuildingTypes eIndex)

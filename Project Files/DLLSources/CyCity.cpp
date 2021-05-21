@@ -1325,6 +1325,14 @@ int CyCity::getUnhappinessFromTaxRate() const
 	return m_pCity ? m_pCity->getUnhappinessFromTaxRate() : -1;
 }
 // WTP, ray, Happiness - END
+
+// WTP, ray, fix for SailTo - for the City - START
+bool CyCity::isEuropeAccessable() const
+{
+	return m_pCity ? m_pCity->isEuropeAccessable() : false;
+}
+// WTP, ray, fix for SailTo - for the City - END
+
 CyUnit* CyCity::getUnitWorkingPlot(int iPlotIndex)
 {
 	return m_pCity ? new CyUnit(m_pCity->getUnitWorkingPlot(iPlotIndex)) : NULL;

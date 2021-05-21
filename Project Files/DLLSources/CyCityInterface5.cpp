@@ -68,6 +68,8 @@ void CyCityPythonInterface5(python::class_<CyCity>& x)
 		.def("getUnhappinessFromTaxRate", &CyCity::getUnhappinessFromTaxRate, "int ()")
 		// WTP, ray, Happiness - END
 
+		.def("isEuropeAccessable", &CyCity::isEuropeAccessable, "bool ()") // WTP, ray, fix for SailTo - for the City
+
 		.def("getUnitWorkingPlot", &CyCity::getUnitWorkingPlot, python::return_value_policy<python::manage_new_object>(), "CyUnit* getUnitWorkingPlot(int /*PlotIndex*/)")
 		.def("addPopulationUnit", &CyCity::addPopulationUnit, "void addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfession)")
 		.def("removePopulationUnit", &CyCity::removePopulationUnit, "removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession)")

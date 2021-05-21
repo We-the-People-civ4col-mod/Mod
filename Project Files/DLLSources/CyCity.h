@@ -307,6 +307,8 @@ public:
 	int getUnhappinessFromTaxRate() const;
 	// WTP, ray, Happiness - END
 
+	bool isEuropeAccessable() const; // WTP, ray, fix for SailTo - for the City
+
 	bool isExport(int /*YieldTypes*/ eYield) const;
 	void addExport(int /*YieldTypes*/ eYield);
 	void removeExport(int /*YieldTypes*/ eYield);
