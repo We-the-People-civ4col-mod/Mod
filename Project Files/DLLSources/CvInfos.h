@@ -1312,6 +1312,11 @@ public:
 	int getDomainProductionModifier(int i) const;
 	int getProductionTraits(int i) const;
 	int getPrereqNumOfBuildingClass(int i) const;
+	//WTP, Nightinggale - Terrain locator - start
+	const InfoArray<TerrainTypes>& getRequiredAdjacentTerrains() const;
+	const InfoArray<TerrainTypes>& getRequiredCatchmentAreaTerrains() const;
+	const InfoArray<FeatureTypes>& getRequiredCatchmentAreaFeatures() const;
+	//WTP, Nightinggale - Terrain locator - end
 	int getYieldCost(int i) const;
 
 	bool isBuildingClassNeededInCity(int i) const;
@@ -1396,6 +1401,11 @@ protected:
 	int* m_aiDomainFreeExperience;
 	int* m_aiDomainProductionModifier;
 	int* m_aiPrereqNumOfBuildingClass;
+	//WTP, Nightinggale - Terrain locator - start
+	InfoArray<TerrainTypes> m_info_RequiredAdjacentTerrains;
+	InfoArray<TerrainTypes> m_info_RequiredCatchmentAreaTerrains;
+	InfoArray<FeatureTypes> m_info_RequiredCatchmentAreaFeatures;
+	//WTP, Nightinggale - Terrain locator - end
 	int* m_aiYieldCost;
 	bool* m_abBuildingClassNeededInCity;
 };

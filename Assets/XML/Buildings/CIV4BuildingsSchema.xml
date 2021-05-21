@@ -180,6 +180,17 @@
 	<ElementType name="BuildingClassNeededs" content="eltOnly">
 		<element type="BuildingClassNeeded" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="eRequiredTerrain" content="textOnly"/>
+	<ElementType name="eRequiredFeature" content="textOnly"/>
+	<ElementType name="RequiredAdjacentTerrains" content="eltOnly">
+		<element type="eRequiredTerrain" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RequiredCatchmentAreaTerrains" content="eltOnly">
+		<element type="eRequiredTerrain" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="RequiredCatchmentAreaFeatures" content="eltOnly">
+		<element type="eRequiredFeature" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="HotKey" content="textOnly"/>
 	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bShiftDown" content="textOnly" dt:type="boolean"/>
@@ -261,6 +272,9 @@
 		<element type="DomainProductionModifiers"/>
 		<element type="PrereqBuildingClasses"/>
 		<element type="BuildingClassNeededs"/>
+		<element type="RequiredAdjacentTerrains" minOccurs="0"/>
+		<element type="RequiredCatchmentAreaTerrains" minOccurs="0"/>
+		<element type="RequiredCatchmentAreaFeatures" minOccurs="0"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
 		<element type="bShiftDown"/>

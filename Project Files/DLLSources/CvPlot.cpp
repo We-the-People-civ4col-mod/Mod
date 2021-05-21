@@ -4144,6 +4144,30 @@ int CvPlot::getArea() const
 	return m_iArea;
 }
 
+void CvPlot::setArea(int iNewValue)
+{
+	bool bOldLake;
+
+	if (getArea() != iNewValue)
+	{
+		bOldLake = isLake();
+
+		if (area() != NULL)
+		{
+			processArea(area(), -1);
+		}
+
+		m_iArea = iNewValue;
+		m_pPlotArea = NULL;
+
+		if (area() != NULL)
+		{
+			processArea(area(), 1);
+			updateYield(true);
+		}
+	}
+}
+
 //WTP, ray, Large Rivers - Nightinggale addition - start
 
 // Large rivers have a tendency to confuse the AI because the AI uses areas to figure out if a land unit can move to a specific plot.
@@ -4217,29 +4241,65 @@ CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback)
 }
 //WTP, ray, Large Rivers - Nightinggale addition - end
 
-void CvPlot::setArea(int iNewValue)
+//WTP, Nightinggale - Terrain locator - start
+bool CvPlot::hasNearbyTerrain(const InfoArray<TerrainTypes>& info_Terrains, int iRange, bool bEmptyReturnVal) const
 {
-	bool bOldLake;
-
-	if (getArea() != iNewValue)
+	const int iLength = info_Terrains.getLength();
+	if (iLength == 0)
 	{
-		bOldLake = isLake();
+		return bEmptyReturnVal;
+	}
 
-		if (area() != NULL)
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL)
 		{
-			processArea(area(), -1);
-		}
-
-		m_iArea = iNewValue;
-		m_pPlotArea = NULL;
-
-		if (area() != NULL)
-		{
-			processArea(area(), 1);
-			updateYield(true);
+			const TerrainTypes eTerrain = getTerrainType();
+			for (int i = 0; i < iLength; ++i)
+			{
+				if (eTerrain == info_Terrains.getTerrain(i))
+				{
+					return true;
+				}
+			}
 		}
 	}
+	return false;
 }
+
+bool CvPlot::hasNearbyFeature(const InfoArray<FeatureTypes>& info_Features, int iRange, bool bEmptyReturnVal) const
+{
+	const int iLength = info_Features.getLength();
+	if (iLength == 0)
+	{
+		return bEmptyReturnVal;
+	}
+
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL)
+		{
+			const FeatureTypes eFeature = getFeatureType();
+			for (int i = 0; i < iLength; ++i)
+			{
+				if (eFeature == info_Features.getFeature(i))
+				{
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+//WTP, Nightinggale - Terrain locator - end
 
 
 int CvPlot::getFeatureVariety() const

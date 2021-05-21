@@ -1621,6 +1621,22 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	}
 	// TAC - AI Buildings - koma13 - END
 
+	//WTP, Nightinggale - Terrain locator - start
+	const CvPlot* pPlot = plot();
+	if (!pPlot->hasNearbyTerrain(kBuilding.getRequiredAdjacentTerrains()))
+	{
+		return false;
+	}
+	if (!pPlot->hasNearbyTerrain(kBuilding.getRequiredCatchmentAreaTerrains(), CITY_PLOTS_RADIUS))
+	{
+		return false;
+	}
+	if (!pPlot->hasNearbyFeature(kBuilding.getRequiredCatchmentAreaFeatures(), CITY_PLOTS_RADIUS))
+	{
+		return false;
+	}
+	//WTP, Nightinggale - Terrain locator - end
+
 	//WTP, ray, Large Rivers - START
 	// we do not allow Ships to be built at Large River without other Water - that can not enter Large Rivers
 	// this is for Human and AI, except Natives, to save performance

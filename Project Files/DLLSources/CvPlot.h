@@ -235,6 +235,11 @@ public:
 	CvPlot* getAdjacentLandPlot(bool bReturnSelfFallback);
 	//WTP, ray, Large Rivers - Nightinggale addition - end
 
+	//WTP, Nightinggale - Terrain locator - start
+	bool hasNearbyTerrain(const InfoArray<TerrainTypes>& info_Terrains, int iRange = 1, bool bEmptyReturnVal = true) const;
+	bool hasNearbyFeature(const InfoArray<FeatureTypes>& info_Features, int iRange = 1, bool bEmptyReturnVal = true) const;
+	//WTP, Nightinggale - Terrain locator - start
+
 	DllExport int getFeatureVariety() const;
 
 	int getOwnershipDuration() const;

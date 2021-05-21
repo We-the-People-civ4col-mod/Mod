@@ -5033,6 +5033,20 @@ bool CvBuildingInfo::isRiver() const
 {
 	return m_bRiver;
 }
+//WTP, Nightinggale - Terrain locator - start
+const InfoArray<TerrainTypes>& CvBuildingInfo::getRequiredAdjacentTerrains() const
+{
+	return m_info_RequiredAdjacentTerrains;
+}
+const InfoArray<TerrainTypes>& CvBuildingInfo::getRequiredCatchmentAreaTerrains() const
+{
+	return m_info_RequiredCatchmentAreaTerrains;
+}
+const InfoArray<FeatureTypes>& CvBuildingInfo::getRequiredCatchmentAreaFeatures() const
+{
+	return m_info_RequiredCatchmentAreaFeatures;
+}
+//WTP, Nightinggale - Terrain locator - end
 bool CvBuildingInfo::isCapital() const 
 {
 	return m_bCapital;
@@ -5466,6 +5480,11 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiDomainProductionModifier, "DomainProductionModifiers", NUM_DOMAIN_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiPrereqNumOfBuildingClass, "PrereqBuildingClasses", GC.getNumBuildingClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_abBuildingClassNeededInCity, "BuildingClassNeededs", GC.getNumBuildingClassInfos(), false);
+	//WTP, Nightinggale - Terrain locator - start
+	m_info_RequiredAdjacentTerrains.read(pXML, getType(), "RequiredAdjacentTerrains");
+	m_info_RequiredCatchmentAreaTerrains.read(pXML, getType(), "RequiredCatchmentAreaTerrains");
+	m_info_RequiredCatchmentAreaFeatures.read(pXML, getType(), "RequiredCatchmentAreaFeatures");
+	//WTP, Nightinggale - Terrain locator - end
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
 	return true;
 }
