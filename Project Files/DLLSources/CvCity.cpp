@@ -1583,9 +1583,24 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		}
 	}
 
+	//WTP, Nightinggale - Terrain locator - start
+	const CvPlot* pPlot = plot();
+	//WTP, Nightinggale - Terrain locator - end
+
 	// TAC - AI Buildings - koma13 - START
 	if (!isHuman())
 	{
+		//WTP, Nightinggale - Terrain locator - start
+		if (!pPlot->hasNearbyTerrain(kBuilding.getAIRequiredCatchmentAreaTerrains(), CITY_PLOTS_RADIUS))
+		{
+			return false;
+		}
+		if (!pPlot->hasNearbyFeature(kBuilding.getAIRequiredCatchmentAreaFeatures(), CITY_PLOTS_RADIUS))
+		{
+			return false;
+		}
+		//WTP, Nightinggale - Terrain locator - end
+
 		int iMinSize = kBuilding.getAICitySize();
 
 		if (iMinSize < 0)
@@ -1622,7 +1637,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	// TAC - AI Buildings - koma13 - END
 
 	//WTP, Nightinggale - Terrain locator - start
-	const CvPlot* pPlot = plot();
 	if (!pPlot->hasNearbyTerrain(kBuilding.getRequiredAdjacentTerrains()))
 	{
 		return false;

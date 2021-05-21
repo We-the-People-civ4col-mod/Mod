@@ -191,6 +191,12 @@
 	<ElementType name="RequiredCatchmentAreaFeatures" content="eltOnly">
 		<element type="eRequiredFeature" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="AIRequiredCatchmentAreaTerrains" content="eltOnly">
+		<element type="eRequiredTerrain" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="AIRequiredCatchmentAreaFeatures" content="eltOnly">
+		<element type="eRequiredFeature" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="HotKey" content="textOnly"/>
 	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bShiftDown" content="textOnly" dt:type="boolean"/>
@@ -275,6 +281,8 @@
 		<element type="RequiredAdjacentTerrains" minOccurs="0"/>
 		<element type="RequiredCatchmentAreaTerrains" minOccurs="0"/>
 		<element type="RequiredCatchmentAreaFeatures" minOccurs="0"/>
+		<element type="AIRequiredCatchmentAreaTerrains" minOccurs="0"/>
+		<element type="AIRequiredCatchmentAreaFeatures" minOccurs="0"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
 		<element type="bShiftDown"/>

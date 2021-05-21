@@ -4258,7 +4258,7 @@ bool CvPlot::hasNearbyTerrain(const InfoArray<TerrainTypes>& info_Terrains, int 
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL)
 		{
-			const TerrainTypes eTerrain = getTerrainType();
+			const TerrainTypes eTerrain = pLoopPlot->getTerrainType();
 			for (int i = 0; i < iLength; ++i)
 			{
 				if (eTerrain == info_Terrains.getTerrain(i))
@@ -4287,7 +4287,7 @@ bool CvPlot::hasNearbyFeature(const InfoArray<FeatureTypes>& info_Features, int 
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL)
 		{
-			const FeatureTypes eFeature = getFeatureType();
+			const FeatureTypes eFeature = pLoopPlot->getFeatureType();
 			for (int i = 0; i < iLength; ++i)
 			{
 				if (eFeature == info_Features.getFeature(i))

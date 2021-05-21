@@ -5046,6 +5046,14 @@ const InfoArray<FeatureTypes>& CvBuildingInfo::getRequiredCatchmentAreaFeatures(
 {
 	return m_info_RequiredCatchmentAreaFeatures;
 }
+const InfoArray<TerrainTypes>& CvBuildingInfo::getAIRequiredCatchmentAreaTerrains() const
+{
+	return m_info_AIRequiredCatchmentAreaTerrains;
+}
+const InfoArray<FeatureTypes>& CvBuildingInfo::getAIRequiredCatchmentAreaFeatures() const
+{
+	return m_info_AIRequiredCatchmentAreaFeatures;
+}
 //WTP, Nightinggale - Terrain locator - end
 bool CvBuildingInfo::isCapital() const 
 {
@@ -5484,6 +5492,8 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	m_info_RequiredAdjacentTerrains.read(pXML, getType(), "RequiredAdjacentTerrains");
 	m_info_RequiredCatchmentAreaTerrains.read(pXML, getType(), "RequiredCatchmentAreaTerrains");
 	m_info_RequiredCatchmentAreaFeatures.read(pXML, getType(), "RequiredCatchmentAreaFeatures");
+	m_info_AIRequiredCatchmentAreaTerrains.read(pXML, getType(), "AIRequiredCatchmentAreaTerrains");
+	m_info_AIRequiredCatchmentAreaFeatures.read(pXML, getType(), "AIRequiredCatchmentAreaFeatures");
 	//WTP, Nightinggale - Terrain locator - end
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
 	return true;

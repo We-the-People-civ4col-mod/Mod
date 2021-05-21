@@ -1316,6 +1316,8 @@ public:
 	const InfoArray<TerrainTypes>& getRequiredAdjacentTerrains() const;
 	const InfoArray<TerrainTypes>& getRequiredCatchmentAreaTerrains() const;
 	const InfoArray<FeatureTypes>& getRequiredCatchmentAreaFeatures() const;
+	const InfoArray<TerrainTypes>& getAIRequiredCatchmentAreaTerrains() const;
+	const InfoArray<FeatureTypes>& getAIRequiredCatchmentAreaFeatures() const;
 	//WTP, Nightinggale - Terrain locator - end
 	int getYieldCost(int i) const;
 
@@ -1405,6 +1407,8 @@ protected:
 	InfoArray<TerrainTypes> m_info_RequiredAdjacentTerrains;
 	InfoArray<TerrainTypes> m_info_RequiredCatchmentAreaTerrains;
 	InfoArray<FeatureTypes> m_info_RequiredCatchmentAreaFeatures;
+	InfoArray<TerrainTypes> m_info_AIRequiredCatchmentAreaTerrains;
+	InfoArray<FeatureTypes> m_info_AIRequiredCatchmentAreaFeatures;
 	//WTP, Nightinggale - Terrain locator - end
 	int* m_aiYieldCost;
 	bool* m_abBuildingClassNeededInCity;
