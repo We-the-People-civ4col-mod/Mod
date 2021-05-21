@@ -4144,6 +4144,78 @@ int CvPlot::getArea() const
 	return m_iArea;
 }
 
+//WTP, ray, Large Rivers - Nightinggale addition - start
+
+// Large rivers have a tendency to confuse the AI because the AI uses areas to figure out if a land unit can move to a specific plot.
+// While good for performance, it's bad when a unit is on a large river as the vanilla code will say it can only move to the water area.
+// The following functions seek to fix that.
+// area and getArea takes a domain and will act like vanilla unless it's DOMAIN_LAND on TERRAIN_LARGE_RIVERS.
+// for large rivers, the adjacent plots will be looped and the first found land plot will be used for reading the area.
+// This way the AI will think land units on large rivers are in the land area next to the river.
+// area() and getArea() in CvUnit will automatically apply the domain of the unit.
+
+CvArea* CvPlot::area(DomainTypes eDomain) const
+{
+	if (eDomain == DOMAIN_LAND && getTerrainType() == TERRAIN_LARGE_RIVERS)
+	{
+		return getAdjacentLandPlot(true)->area();
+	}
+
+	return area();
+}
+
+int CvPlot::getArea(DomainTypes eDomain) const
+{
+	if (eDomain == DOMAIN_LAND && getTerrainType() == TERRAIN_LARGE_RIVERS)
+	{
+		return getAdjacentLandPlot(true)->getArea();
+	}
+	return m_iArea;
+}
+
+const CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback) const
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	int iRange = 1;
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL && !pLoopPlot->isWater())
+		{
+			return pLoopPlot;
+		}
+	}
+
+	// no land plots found
+	// this is unreachable (at the time of writing)
+	// as it requires a land unit on a large river surrounded by only water
+	// it's included for completeness (read: future stability)
+	return bReturnSelfFallback ? this : NULL;
+}
+
+CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback)
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL && !pLoopPlot->isWater())
+		{
+			return pLoopPlot;
+		}
+	}
+
+	// no land plots found
+	// this is unreachable (at the time of writing)
+	// as it requires a land unit on a large river surrounded by only water
+	// it's included for completeness (read: future stability)
+	return bReturnSelfFallback ? this : NULL;
+}
+//WTP, ray, Large Rivers - Nightinggale addition - end
 
 void CvPlot::setArea(int iNewValue)
 {

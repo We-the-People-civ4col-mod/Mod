@@ -228,6 +228,13 @@ public:
 	int getArea() const;
 	void setArea(int iNewValue);
 
+	//WTP, ray, Large Rivers - Nightinggale addition - start
+	CvArea* area(DomainTypes eDomain) const;
+	int getArea(DomainTypes eDomain) const;
+	const CvPlot* getAdjacentLandPlot(bool bReturnSelfFallback) const;
+	CvPlot* getAdjacentLandPlot(bool bReturnSelfFallback);
+	//WTP, ray, Large Rivers - Nightinggale addition - end
+
 	DllExport int getFeatureVariety() const;
 
 	int getOwnershipDuration() const;

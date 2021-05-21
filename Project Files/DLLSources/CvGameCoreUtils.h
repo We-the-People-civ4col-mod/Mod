@@ -214,6 +214,17 @@ CvPlot* plotCity(int iX, int iY, int iIndex);
 int plotCityXY(int iDX, int iDY);
 int plotCityXY(const CvCity* pCity, const CvPlot* pPlot);
 
+// macro to loop all plots within a certain range
+// preferred approach if loop order doesn't matter as it is optimized for memory layout (max usage of CPU cache)
+// produces iLoopX and iLoopY intended for CvMap::plotINLINE.
+// WARNING: plotINLINE can return NULL. Never use such a pointer before checking if it's NULL first.
+// NULL only happens if the plot is outside the map, but as a general rule the game shouldn't crash if that happens.
+//   Nightinggale
+#define LOOP_ADJACENT_PLOTS( iCenterX, iCenterY, iRange ) \
+for (int iLoopY = iCenterY-iRange; iLoopY <= iCenterY+iRange; ++iLoopY) \
+for (int iLoopX = iCenterX-iRange; iLoopX <= iCenterX+iRange; ++iLoopX)
+
+
 DllExport bool isLeaderCivMatch(LeaderHeadTypes eLeader, CivilizationTypes eCiv, bool bHuman);
 
 CardinalDirectionTypes getOppositeCardinalDirection(CardinalDirectionTypes eDir);

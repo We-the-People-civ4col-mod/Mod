@@ -10105,6 +10105,11 @@ CvCity* CvUnit::getCity() const
 	return NULL;
 }
 
+//WTP, ray, Large Rivers - Nightinggale addition
+// Requesting the area for the domain for the unit
+// Does the same as vanilla except if plot is a large river, then land units
+// will get the area of a land plot next to the plot the unit is on
+// It will still return the water area if CvPlot fails to find a land plot
 int CvUnit::getArea() const
 {
 	CvPlot* pPlot = plot();
@@ -10113,7 +10118,7 @@ int CvUnit::getArea() const
 		return FFreeList::INVALID_INDEX;
 	}
 
-	return pPlot->getArea();
+	return pPlot->getArea(getDomainType());
 }
 
 // get the areaID of a plot in the 3x3 area with the unit in the center
@@ -10146,7 +10151,7 @@ CvArea* CvUnit::area() const
 		return NULL;
 	}
 
-	return pPlot->area();
+	return pPlot->area(getDomainType());
 }
 
 
