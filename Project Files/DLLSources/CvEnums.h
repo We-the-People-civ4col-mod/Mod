@@ -503,19 +503,29 @@ enum WidgetTypes
 	WIDGET_CREATE_TRADE_ROUTE,
 	WIDGET_EDIT_TRADE_ROUTE,
 	WIDGET_YIELD_IMPORT_EXPORT,
-	WIDGET_CONDENSED_YIELD_IMPORT_EXPORT, // R&R mod, vetiarvind, max yield import limit
-	// R&R, Robert Surcouf, Custom House Popup-Screen START
-	WIDGET_CUSTOM_HOUSE,
-	WIDGET_DOMESTIC_MARKET,
-	// R&R, Robert Surcouf, Custom House Popup-Screen END
 	WIDGET_ASSIGN_CITIZEN_TO_PLOT,
-	WIDGET_CITY_PLOT_INFO, // city plot mouse over help - inaiwae
 	WIDGET_ASSIGN_TRADE_ROUTE,
 	WIDGET_EJECT_CITIZEN,
 	WIDGET_SHIP_CARGO,
 	WIDGET_DOCK,
 	WIDGET_SAIL,
 	WIDGET_GOTO_CITY,
+
+	///
+	/// End of vanilla
+	///
+	/// Some vanilla values are hardcoded in the exe and it can result in weird bugs if changed
+	/// The values are now static asserted to be fixed at vanilla values and compilation fails if they are changed
+	/// there aren't any restrictions for order below this point
+	///    Nightinggale
+	///
+
+	WIDGET_CONDENSED_YIELD_IMPORT_EXPORT, // R&R mod, vetiarvind, max yield import limit
+	// R&R, Robert Surcouf, Custom House Popup-Screen START
+	WIDGET_CUSTOM_HOUSE,
+	WIDGET_DOMESTIC_MARKET,
+	// R&R, Robert Surcouf, Custom House Popup-Screen END
+	WIDGET_CITY_PLOT_INFO, // city plot mouse over help - inaiwae
 	WIDGET_MOVE_CARGO_TO_TRANSPORT_AFRICA, // R&R, ray, Africa
 	WIDGET_SHIP_CARGO_AFRICA, // R&R, ray, Africa
 	WIDGET_DOCK_AFRICA, /*** TRIANGLETRADE 10/28/08 by DPII ***/
