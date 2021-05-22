@@ -273,7 +273,17 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 			{
 				// read type and convert to int
 				iValue = getIndexForType(eType, szTextVal);
-				FAssertMsg(iValue != -1, CvString::format("%s tag %s: the string %s is read as %s, but it isn't present in that XML file", szType, sTagName, szTextVal.c_str(), getArrayName(eType)).c_str());
+				if (iValue < 0)
+				{
+					CvWString wideType(szType);
+					CvWString wideName(sTagName);
+					CvWString wideValue(szTextVal.c_str());
+					CvWString wideArrayName(getArrayName(eType));
+					CvString szDesc(gDLL->getText("TXT_KEY_ERROR_XML_WRONG_TYPE_STRING", wideType.c_str(), wideName.c_str(), wideValue.c_str(), wideArrayName.c_str()).c_str());
+					CvString szTitle(gDLL->getText("TXT_KEY_ERROR_XML_TITLE"));
+
+					gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+				}
 			}
 			else
 			{
@@ -311,7 +321,15 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 				else
 				{
 					iValue = std::atoi(szTextVal.c_str());
-					FAssertMsg(eType != JIT_ARRAY_UNSIGNED_INT || iValue >= 0, CvString::format("%s tag %s: negative numbers not allowed", szType, sTagName).c_str());
+					if (eType == JIT_ARRAY_UNSIGNED_INT && iValue < 0)
+					{
+						CvWString wideType(szType);
+						CvWString wideName(sTagName);
+						CvString szDesc(gDLL->getText("TXT_KEY_ERROR_XML_UNSIGNED_NEGATIVE_NUMBER", wideType.c_str(), wideName.c_str(), iValue));
+						CvString szTitle(gDLL->getText("TXT_KEY_ERROR_XML_TITLE"));
+
+						gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+					}
 				}
 			}
 			aIndex[iIndex] = iValue;

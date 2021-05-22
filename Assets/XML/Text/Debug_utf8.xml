@@ -17,4 +17,22 @@
 		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC</Tag>
 		<English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERROR_XML_TITLE</Tag>
+		<English>XML LOAD ERROR</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERROR_XML_WRONG_TYPE_STRING</Tag>
+		<English>%s1
+Tag: %s2
+Read: %s3
+Expected string of type %s4</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
+		<English>%s1
+Tag: %s2
+Read: %d3
+Excepted non-negative number</English>
+	</TEXT>
 </Civ4GameText>

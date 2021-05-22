@@ -5704,7 +5704,7 @@
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_TUNDRA</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
-                <eRequiredTerrain>TERRAIN_TERRAIN_MARSH</eRequiredTerrain>
+                <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
             <HotKey/>
             <bAltDown>0</bAltDown>
