@@ -1651,34 +1651,6 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	}
 	//WTP, Nightinggale - Terrain locator - end
 
-	//WTP, ray, Large Rivers - START
-	// we do not allow Ships to be built at Large River without other Water - that can not enter Large Rivers
-	// this is for Human and AI, except Natives, to save performance
-	if (!isNative() && kBuilding.isWater())
-	{
-		//WTP, ray, Large Rivers - START
-		// we do not allow Ships to be built at Large River without other Water - that can not enter Large Rivers
-		if(isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && !plot()->hasAnyOtherWaterPlotsThanJustLargeRivers())
-		{
-			for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
-			{
-				UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
-				if (eLoopUnit != NO_UNIT)
-				{
-					CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
-					if (kUnit.getDomainType() == DOMAIN_SEA)
-					{
-						if ((kUnit.getPrereqBuilding() == kBuilding.getBuildingClassType() || kUnit.isPrereqOrBuilding(kBuilding.getBuildingClassType())) && kUnit.getTerrainImpassable(TERRAIN_LARGE_RIVERS))
-						{
-							return false;
-						}
-					}
-				}
-			}
-		}
-	}
-	//WTP, ray, Large Rivers - END
-
 	if (!(GET_PLAYER(getOwnerINLINE()).canConstruct(eBuilding, bContinue, bTestVisible, bIgnoreCost)))
 	{
 		return false;
