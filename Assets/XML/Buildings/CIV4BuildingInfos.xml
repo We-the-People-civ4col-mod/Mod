@@ -1316,6 +1316,9 @@
                 <eRequiredTerrain>TERRAIN_PLAINS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_DESERT</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIRequiredCatchmentAreaPlotTypes>
+                <eRequiredPlotType>PLOT_HILLS</eRequiredPlotType>
+            </AIRequiredCatchmentAreaPlotTypes>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_SPICE_TRADER</eUnitClass>
@@ -5490,6 +5493,9 @@
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIRequiredCatchmentAreaPlotTypes>
+                <eRequiredPlotType>PLOT_HILLS</eRequiredPlotType>
+            </AIRequiredCatchmentAreaPlotTypes>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_GRAPES_PICKER</eUnitClass>
@@ -6543,6 +6549,10 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIRequiredCatchmentAreaPlotTypes>
+                <eRequiredPlotType>PLOT_PEAK</eRequiredPlotType>
+                <eRequiredPlotType>PLOT_HILLS</eRequiredPlotType>
+            </AIRequiredCatchmentAreaPlotTypes>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_MINER</eUnitClass>
@@ -7055,6 +7065,10 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIRequiredCatchmentAreaPlotTypes>
+                <eRequiredPlotType>PLOT_PEAK</eRequiredPlotType>
+                <eRequiredPlotType>PLOT_HILLS</eRequiredPlotType>
+            </AIRequiredCatchmentAreaPlotTypes>
             <AIUnitClassWeights>
                 <AIUnitClassWeight>
                     <eUnitClass>UNITCLASS_GUNSMITH</eUnitClass>
