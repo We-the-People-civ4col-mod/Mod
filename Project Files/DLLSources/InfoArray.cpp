@@ -269,7 +269,7 @@ void InfoArrayMod::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vecto
 
 			JITarrayTypes eType = getType(iIndex);
 
-			if (eType < (NUM_JITarrayTypes*2) || eType >= MAX_JIT_ARRAY_VALUE)
+			if (eType < JIT_ARRAY_NO_TYPE || eType >= MAX_JIT_ARRAY_VALUE)
 			{
 				// read type and convert to int
 				iValue = getIndexForType(eType, szTextVal);

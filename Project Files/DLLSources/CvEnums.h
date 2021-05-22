@@ -2703,12 +2703,13 @@ enum JITarrayTypes
 	// arrays below this line will not be converted on load
 	// useful for arrays unrelated to XML values
 	JIT_ARRAY_NO_CONVERSION = NUM_JITarrayTypes * 2,
-	
+
 	JIT_ARRAY_CONTACT,
 	JIT_ARRAY_EMOTION,
 	JIT_ARRAY_FEAT,
 	JIT_ARRAY_MISSION_AI,
 	JIT_ARRAY_STRATEGY,
+	JIT_ARRAY_PLOT_TYPE,
 	
 	// types used by InfoArray
 	JIT_ARRAY_NO_TYPE,

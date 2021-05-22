@@ -219,6 +219,10 @@ public:                                                                         
 	{                                                                              \
 		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
 	}                                                                              \
+	returnType getWithTemplate(int iIndex, returnType eVar) const                  \
+	{                                                                              \
+		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
+	}                                                                              \
 	int getIndexOf(returnType eValue) const                                        \
 	{                                                                              \
 		return _getIndexOf(eValue, DIMENTION);                                     \
@@ -297,6 +301,7 @@ INFO_ARRAY_GET(FeatTypes                    , getFeat               , JIT_ARRAY_
 INFO_ARRAY_GET(StrategyTypes                , getStrategy           , JIT_ARRAY_STRATEGY           )
 INFO_ARRAY_GET(PlayerTypes                  , getPlayer             , JIT_ARRAY_PLAYER             )
 INFO_ARRAY_GET(TeamTypes                    , getTeam               , JIT_ARRAY_TEAM               )
+INFO_ARRAY_GET(PlotTypes                    , getPlotType           , JIT_ARRAY_PLOT_TYPE          )
 
 // int/float etc
 INFO_ARRAY_GET_INT(ModifierTypes            , getModifier           , JIT_ARRAY_MODIFIER           )

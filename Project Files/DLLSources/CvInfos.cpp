@@ -5072,6 +5072,10 @@ const InfoArray<FeatureTypes>& CvBuildingInfo::getAIRequiredCatchmentAreaFeature
 {
 	return m_info_AIRequiredCatchmentAreaFeatures;
 }
+const InfoArray<PlotTypes>& CvBuildingInfo::AI_getRequiredCatchmentAreaPlotTypes() const
+{
+	return m_info_AIRequiredCatchmentAreaPlotTypes;
+}
 const InfoArray<UnitClassTypes, IntTypes>& CvBuildingInfo::AI_getUnitClassWeight() const
 {
 	return m_info_AIUnitClassWeight;
@@ -5511,12 +5515,13 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiPrereqNumOfBuildingClass, "PrereqBuildingClasses", GC.getNumBuildingClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_abBuildingClassNeededInCity, "BuildingClassNeededs", GC.getNumBuildingClassInfos(), false);
 	//WTP, Nightinggale - Terrain locator - start
-	readXML(m_info_RequiredAdjacentTerrains       , "RequiredAdjacentTerrains"       );
-	readXML(m_info_RequiredCatchmentAreaTerrains  , "RequiredCatchmentAreaTerrains"  );
-	readXML(m_info_RequiredCatchmentAreaFeatures  , "RequiredCatchmentAreaFeatures"  );
-	readXML(m_info_AIRequiredCatchmentAreaTerrains, "AIRequiredCatchmentAreaTerrains");
-	readXML(m_info_AIRequiredCatchmentAreaFeatures, "AIRequiredCatchmentAreaFeatures");
-	readXML(m_info_AIUnitClassWeight              , "AIUnitClassWeights"             );
+	readXML(m_info_RequiredAdjacentTerrains        , "RequiredAdjacentTerrains"        );
+	readXML(m_info_RequiredCatchmentAreaTerrains   , "RequiredCatchmentAreaTerrains"   );
+	readXML(m_info_RequiredCatchmentAreaFeatures   , "RequiredCatchmentAreaFeatures"   );
+	readXML(m_info_AIRequiredCatchmentAreaTerrains , "AIRequiredCatchmentAreaTerrains" );
+	readXML(m_info_AIRequiredCatchmentAreaFeatures , "AIRequiredCatchmentAreaFeatures" );
+	readXML(m_info_AIRequiredCatchmentAreaPlotTypes, "AIRequiredCatchmentAreaPlotTypes");
+	readXML(m_info_AIUnitClassWeight               , "AIUnitClassWeights"              );
 	//WTP, Nightinggale - Terrain locator - end
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
 	return true;

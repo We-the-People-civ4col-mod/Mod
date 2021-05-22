@@ -1591,11 +1591,15 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	if (!isHuman())
 	{
 		//WTP, Nightinggale - Terrain locator - start
-		if (!pPlot->hasNearbyTerrain(kBuilding.getAIRequiredCatchmentAreaTerrains(), CITY_PLOTS_RADIUS))
+		if (!pPlot->hasNearbyPlotWith(kBuilding.getAIRequiredCatchmentAreaTerrains(), CITY_PLOTS_RADIUS))
 		{
 			return false;
 		}
-		if (!pPlot->hasNearbyFeature(kBuilding.getAIRequiredCatchmentAreaFeatures(), CITY_PLOTS_RADIUS))
+		if (!pPlot->hasNearbyPlotWith(kBuilding.getAIRequiredCatchmentAreaFeatures(), CITY_PLOTS_RADIUS))
+		{
+			return false;
+		}
+		if (!pPlot->hasNearbyPlotWith(kBuilding.AI_getRequiredCatchmentAreaPlotTypes(), CITY_PLOTS_RADIUS))
 		{
 			return false;
 		}
@@ -1637,15 +1641,15 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 	// TAC - AI Buildings - koma13 - END
 
 	//WTP, Nightinggale - Terrain locator - start
-	if (!pPlot->hasNearbyTerrain(kBuilding.getRequiredAdjacentTerrains()))
+	if (!pPlot->hasNearbyPlotWith(kBuilding.getRequiredAdjacentTerrains()))
 	{
 		return false;
 	}
-	if (!pPlot->hasNearbyTerrain(kBuilding.getRequiredCatchmentAreaTerrains(), CITY_PLOTS_RADIUS))
+	if (!pPlot->hasNearbyPlotWith(kBuilding.getRequiredCatchmentAreaTerrains(), CITY_PLOTS_RADIUS))
 	{
 		return false;
 	}
-	if (!pPlot->hasNearbyFeature(kBuilding.getRequiredCatchmentAreaFeatures(), CITY_PLOTS_RADIUS))
+	if (!pPlot->hasNearbyPlotWith(kBuilding.getRequiredCatchmentAreaFeatures(), CITY_PLOTS_RADIUS))
 	{
 		return false;
 	}

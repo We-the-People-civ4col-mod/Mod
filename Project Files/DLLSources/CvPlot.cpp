@@ -4242,9 +4242,10 @@ CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback)
 //WTP, ray, Large Rivers - Nightinggale addition - end
 
 //WTP, Nightinggale - Terrain locator - start
-bool CvPlot::hasNearbyTerrain(const InfoArray<TerrainTypes>& info_Terrains, int iRange, bool bEmptyReturnVal) const
+template <typename T>
+bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmptyReturnVal) const
 {
-	const int iLength = info_Terrains.getLength();
+	const int iLength = kInfo.getLength();
 	if (iLength == 0)
 	{
 		return bEmptyReturnVal;
@@ -4258,39 +4259,11 @@ bool CvPlot::hasNearbyTerrain(const InfoArray<TerrainTypes>& info_Terrains, int 
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL)
 		{
-			const TerrainTypes eTerrain = pLoopPlot->getTerrainType();
+			T eVal = T(0);
+			eVal = pLoopPlot->getVariable(eVal);
 			for (int i = 0; i < iLength; ++i)
 			{
-				if (eTerrain == info_Terrains.getTerrain(i))
-				{
-					return true;
-				}
-			}
-		}
-	}
-	return false;
-}
-
-bool CvPlot::hasNearbyFeature(const InfoArray<FeatureTypes>& info_Features, int iRange, bool bEmptyReturnVal) const
-{
-	const int iLength = info_Features.getLength();
-	if (iLength == 0)
-	{
-		return bEmptyReturnVal;
-	}
-
-	CvMap& kMap = GC.getMapINLINE();
-	const int iPlotX = getX_INLINE();
-	const int iPlotY = getY_INLINE();
-	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
-	{
-		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
-		if (pLoopPlot != NULL)
-		{
-			const FeatureTypes eFeature = pLoopPlot->getFeatureType();
-			for (int i = 0; i < iLength; ++i)
-			{
-				if (eFeature == info_Features.getFeature(i))
+				if (eVal == kInfo.getWithTemplate(i, eVal))
 				{
 					return true;
 				}
@@ -4974,6 +4947,10 @@ PlotTypes CvPlot::getPlotType() const
 {
 	return (PlotTypes)m_ePlotType;
 }
+PlotTypes CvPlot::getVariable(PlotTypes) const
+{
+	return (PlotTypes)m_ePlotType;
+}
 
 
 bool CvPlot::isWater() const
@@ -5275,6 +5252,10 @@ TerrainTypes CvPlot::getTerrainType() const
 {
 	return (TerrainTypes)m_eTerrainType;
 }
+TerrainTypes CvPlot::getVariable(TerrainTypes) const
+{
+	return (TerrainTypes)m_eTerrainType;
+}
 
 
 void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bRebuildGraphics)
@@ -5334,6 +5315,10 @@ void CvPlot::setTerrainType(TerrainTypes eNewValue, bool bRecalculate, bool bReb
 
 
 FeatureTypes CvPlot::getFeatureType() const
+{
+	return (FeatureTypes)m_eFeatureType;
+}
+FeatureTypes CvPlot::getVariable(FeatureTypes) const
 {
 	return (FeatureTypes)m_eFeatureType;
 }
@@ -5415,6 +5400,11 @@ BonusTypes CvPlot::getBonusType() const
 	return (BonusTypes)m_eBonusType;
 }
 
+BonusTypes CvPlot::getVariable(BonusTypes) const
+{
+	return (BonusTypes)m_eBonusType;
+}
+
 void CvPlot::setBonusType(BonusTypes eNewValue)
 {
 	if (getBonusType() != eNewValue)
@@ -5467,6 +5457,10 @@ void CvPlot::setBonusType(BonusTypes eNewValue)
 
 
 ImprovementTypes CvPlot::getImprovementType() const
+{
+	return (ImprovementTypes)m_eImprovementType;
+}
+ImprovementTypes CvPlot::getVariable(ImprovementTypes) const
 {
 	return (ImprovementTypes)m_eImprovementType;
 }
@@ -5577,6 +5571,10 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 
 RouteTypes CvPlot::getRouteType() const
+{
+	return (RouteTypes)m_eRouteType;
+}
+RouteTypes CvPlot::getVariable(RouteTypes) const
 {
 	return (RouteTypes)m_eRouteType;
 }
@@ -9602,6 +9600,26 @@ void CvPlot::doMonastery()
 	}
 }
 // R&R, ray, Monasteries and Forts - END
+
+// function to force template function to compile
+// it's not supposed to be called
+// Nightinggale
+void CvPlot::__template_declaration_func()
+{
+	InfoArray<BonusTypes> a;
+	hasNearbyPlotWith(a);
+	InfoArray<FeatureTypes> b;
+	hasNearbyPlotWith(b);
+	InfoArray<ImprovementTypes> c;
+	hasNearbyPlotWith(c);
+	InfoArray<PlotTypes> d;
+	hasNearbyPlotWith(d);
+	InfoArray<RouteTypes> e;
+	hasNearbyPlotWith(e);
+	InfoArray<TerrainTypes> f;
+	hasNearbyPlotWith(f);
+
+}
 
 // setting up cache after loading a game
 void CvPlot::postLoadFixes()

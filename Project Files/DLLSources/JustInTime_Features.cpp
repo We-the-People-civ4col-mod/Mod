@@ -87,6 +87,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_CARGO_YIELD:        return NUM_CARGO_YIELD_TYPES;
 	case JIT_ARRAY_PLAYER:             return NUM_PLAYER_TYPES;
 	case JIT_ARRAY_TEAM:               return NUM_TEAM_TYPES;
+	case JIT_ARRAY_PLOT_TYPE:          return NUM_PLOT_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
@@ -152,14 +153,34 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	return NULL;
 }
 
+static const char* getArrayTypePlotTypes(PlotTypes eType)
+{
+	switch (eType)
+	{
+	case PLOT_PEAK:  return "PLOT_PEAK";
+	case PLOT_HILLS: return "PLOT_HILLS";
+	case PLOT_LAND:  return "PLOT_LAND";
+	case PLOT_OCEAN: return "PLOT_OCEAN";
+	}
+	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	FAssert(false);
+	return "";
+}
+
 const char* getArrayType(JITarrayTypes eType, int iIndex)
 {
+	if (iIndex == -1)
+	{
+		return "NONE";
+	}
+
 	// not all JIT arrays relies on XML data
 	// return an empty string when data doesn't rely in CvBasicInfo
 
 	switch (eType)
 	{
 	case JIT_ARRAY_ART_STYLE:          return GC.getArtStyleTypes((ArtStyleTypes)iIndex); // use the actual art style string for type
+	case JIT_ARRAY_PLOT_TYPE:          return getArrayTypePlotTypes(static_cast<PlotTypes>(iIndex));
 	}
 	const CvInfoBase *pInfo = getBaseInfo(eType, iIndex);
 	if (pInfo == NULL)
@@ -236,6 +257,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_WORLD_SIZE:         return "WorldSize";
 	case JIT_ARRAY_YIELD:              return "Yield";
 	case JIT_ARRAY_DOMAIN:             return "Domain";
+	case JIT_ARRAY_PLOT_TYPE:          return "PlotType";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";

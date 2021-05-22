@@ -236,8 +236,8 @@ public:
 	//WTP, ray, Large Rivers - Nightinggale addition - end
 
 	//WTP, Nightinggale - Terrain locator - start
-	bool hasNearbyTerrain(const InfoArray<TerrainTypes>& info_Terrains, int iRange = 1, bool bEmptyReturnVal = true) const;
-	bool hasNearbyFeature(const InfoArray<FeatureTypes>& info_Features, int iRange = 1, bool bEmptyReturnVal = true) const;
+	template <typename T>
+	bool hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange = 1, bool bEmptyReturnVal = true) const;
 	//WTP, Nightinggale - Terrain locator - start
 
 	DllExport int getFeatureVariety() const;
@@ -340,6 +340,13 @@ public:
 	int getDangerMap(PlayerTypes eIndex) const;
 	void setDangerMap(PlayerTypes eIndex, int iNewValue);
 	// TAC - AI Improved Naval AI - koma13 - END
+
+	BonusTypes getVariable(BonusTypes) const;
+	FeatureTypes getVariable(FeatureTypes) const;
+	ImprovementTypes getVariable(ImprovementTypes) const;
+	PlotTypes getVariable(PlotTypes) const;
+	RouteTypes getVariable(RouteTypes) const;
+	TerrainTypes getVariable(TerrainTypes) const;
 
 	int calculateNatureYield(YieldTypes eIndex, TeamTypes eTeam, bool bIgnoreFeature = false) const;
 	int calculateBestNatureYield(YieldTypes eIndex, TeamTypes eTeam) const;
@@ -603,6 +610,9 @@ protected:
 	void upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate);
 
 	static int iMaxVisibilityRangeCache;
+
+private:
+	void __template_declaration_func();
 };
 
 #endif
