@@ -209,21 +209,20 @@ template <> struct JIT_TYPE<type>                                               
 #define INFO_ARRAY_GET_SHARED(type, getName, JITtype, returnType)                  \
 INFO_ARRAY_CONST(type, JITtype)                                                    \
 template<int DIMENTION> class InfoArrayToken<DIMENTION, type>                      \
+ : virtual protected InfoArrayMod                                                  \
 {                                                                                  \
 BOOST_STATIC_ASSERT(DIMENTION >= 0 && DIMENTION < 4);                              \
 protected:                                                                         \
-	InfoArrayToken(const InfoArrayBase* base) : m_base(base) {}                    \
+	InfoArrayToken() {}                                                            \
 public:                                                                            \
 	returnType getName(int iIndex) const                                           \
 	{                                                                              \
-		return static_cast< returnType > (m_base->getInternal(iIndex, DIMENTION)); \
+		return static_cast< returnType > (getInternal(iIndex, DIMENTION));         \
 	}                                                                              \
 	int getIndexOf(returnType eValue) const                                        \
 	{                                                                              \
-		return m_base->_getIndexOf(eValue, DIMENTION);                             \
+		return _getIndexOf(eValue, DIMENTION);                                     \
 	}                                                                              \
-private:                                                                           \
-	const InfoArrayBase* m_base;                                                   \
 };
 
 #define INFO_ARRAY_GET(type, getName, JITtype)                                     \
@@ -240,7 +239,7 @@ INFO_ARRAY_CONST(JIT_NoneTypes, JIT_ARRAY_NO_TYPE)
 template<int DIMENTION> class InfoArrayToken<DIMENTION, JIT_NoneTypes>
 {
 protected:
-	InfoArrayToken(const InfoArrayBase* base) {};
+	InfoArrayToken() {};
 };
 
 INFO_ARRAY_GET(AchieveTypes                 , getAchieve            , JIT_ARRAY_ACHIEVE            )
@@ -280,7 +279,7 @@ INFO_ARRAY_GET(PlayerColorTypes             , getPlayerColor        , JIT_ARRAY_
 INFO_ARRAY_GET(PlayerOptionTypes            , getPlayerOption       , JIT_ARRAY_PLAYER_OPTION      )
 INFO_ARRAY_GET(ProfessionTypes              , getProfession         , JIT_ARRAY_PROFESSION         )
 INFO_ARRAY_GET(PromotionTypes               , getPromotion          , JIT_ARRAY_PROMOTION          )
-INFO_ARRAY_GET(RouteTypes                   , getRoute2              , JIT_ARRAY_ROUTE              )
+INFO_ARRAY_GET(RouteTypes                   , getRoute              , JIT_ARRAY_ROUTE              )
 INFO_ARRAY_GET(SeaLevelTypes                , getSeaLevel           , JIT_ARRAY_SEA_LEVEL          )
 INFO_ARRAY_GET(TerrainTypes                 , getTerrain            , JIT_ARRAY_TERRAIN            )
 INFO_ARRAY_GET(TraitTypes                   , getTrait              , JIT_ARRAY_TRAIT              )
@@ -308,9 +307,14 @@ INFO_ARRAY_GET_INT(UIntTypes                , getInt                , JIT_ARRAY_
 INFO_ARRAY_GET_INT(FloatTypes               , getFloat              , JIT_ARRAY_FLOAT              )
 
 
+//
+// Uses multiple inheritage with a single parent
+// Uses virtual parents to get this to work properly
+// Details: https://www.geeksforgeeks.org/multiple-inheritance-in-c/
+//
 
 template<typename T0, typename T1 = JIT_NoneTypes, typename T2 = JIT_NoneTypes, typename T3 = JIT_NoneTypes>
-class InfoArray : protected InfoArrayMod
+class InfoArray : virtual protected InfoArrayMod
 	, public InfoArrayToken<0, T0>
 	, public InfoArrayToken<1, T1>
 	, public InfoArrayToken<2, T2>
@@ -325,13 +329,10 @@ class InfoArray : protected InfoArrayMod
 	friend class CvInfoBase;
 public:
 	InfoArray() : InfoArrayMod(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
-#pragma warning( disable: 4355 )
-		// warning C4355: warns that "this" shouldn't be used in a constructor except if the called constructor only stores the pointer
-		, InfoArrayToken<0, T0>(this)
-		, InfoArrayToken<1, T1>(this)
-		, InfoArrayToken<2, T2>(this)
-		, InfoArrayToken<3, T3>(this)
-#pragma warning( default: 4355 )
+		, InfoArrayToken<0, T0>()
+		, InfoArrayToken<1, T1>()
+		, InfoArrayToken<2, T2>()
+		, InfoArrayToken<3, T3>()
 	{};
 
 	int getLength() const;
