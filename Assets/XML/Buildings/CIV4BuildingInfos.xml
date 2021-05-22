@@ -70,6 +70,20 @@
             <DomainProductionModifiers/>
             <PrereqBuildingClasses/>
             <BuildingClassNeededs/>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -156,6 +170,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -246,6 +274,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -348,6 +390,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -450,6 +506,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -557,6 +627,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -634,6 +718,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -791,6 +889,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -876,6 +988,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -980,6 +1106,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1081,6 +1221,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COCOA_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COFFEE_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FERMENTATOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1162,6 +1316,16 @@
                 <eRequiredTerrain>TERRAIN_PLAINS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_DESERT</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SPICE_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RED_PEPPER_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1247,6 +1411,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SPICE_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RED_PEPPER_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1345,6 +1519,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SPICE_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RED_PEPPER_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -1511,7 +1695,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
-			<iDomesticMarketModifier>150</iDomesticMarketModifier>
+            <iDomesticMarketModifier>150</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -1610,7 +1794,7 @@
                 </YieldChange>
             </YieldChanges>
             <YieldModifiers/>
-			<iDomesticMarketModifier>200</iDomesticMarketModifier>
+            <iDomesticMarketModifier>200</iDomesticMarketModifier>
             <ConstructSound/>
             <UnitCombatFreeExperiences/>
             <DomainFreeExperiences/>
@@ -2946,6 +3130,20 @@
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
             </RequiredAdjacentTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HEMP_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_ROPES_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SAILCLOTH_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3036,6 +3234,20 @@
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_LARGE_RIVERS</eRequiredTerrain>
             </RequiredAdjacentTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HEMP_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_ROPES_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SAILCLOTH_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3138,6 +3350,20 @@
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
             </RequiredAdjacentTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HEMP_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_ROPES_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SAILCLOTH_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3244,6 +3470,20 @@
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
             </RequiredAdjacentTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HEMP_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_ROPES_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SAILCLOTH_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3368,6 +3608,20 @@
             <RequiredAdjacentTerrains>
                 <eRequiredTerrain>TERRAIN_COAST</eRequiredTerrain>
             </RequiredAdjacentTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HEMP_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_ROPES_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SAILCLOTH_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3445,6 +3699,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COTTON_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WEAVER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3530,6 +3794,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COTTON_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WEAVER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3628,6 +3902,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_COTTON_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WEAVER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3708,6 +3992,16 @@
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_PLAINS</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_INDIGO_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DYER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3793,6 +4087,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_INDIGO_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DYER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3887,6 +4191,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_INDIGO_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DYER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -3964,6 +4278,29 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIRequiredCatchmentAreaFeatures>
+                <eRequiredFeature>FEATURE_FOREST</eRequiredFeature>
+                <eRequiredFeature>FEATURE_FOREST_TUNDRA</eRequiredFeature>
+                <eRequiredFeature>FEATURE_LIGHT_FOREST</eRequiredFeature>
+            </AIRequiredCatchmentAreaFeatures>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TRAPPER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SEALS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FUR_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4049,6 +4386,24 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TRAPPER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SEALS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FUR_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4147,6 +4502,24 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TRAPPER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SEALS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FUR_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4224,6 +4597,24 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TRAPPER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SEALS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FUR_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4309,6 +4700,24 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TRAPPER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SEALS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FUR_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4403,6 +4812,24 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TRAPPER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SEALS_HUNTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FUR_TRADER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4484,6 +4911,16 @@
                 <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_PLAINS</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BREWER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4569,6 +5006,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BREWER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4663,6 +5110,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BREWER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4744,6 +5201,16 @@
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SUGAR_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DISTILLER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4829,6 +5296,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SUGAR_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DISTILLER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -4923,6 +5400,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_SUGAR_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DISTILLER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5003,6 +5490,16 @@
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GRAPES_PICKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WINE_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5088,6 +5585,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GRAPES_PICKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WINE_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5182,6 +5689,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GRAPES_PICKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WINE_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5262,6 +5779,16 @@
             <AIRequiredCatchmentAreaTerrains>
                 <eRequiredTerrain>TERRAIN_GRASS</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TOBACCO_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TOBACCONIST</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5347,6 +5874,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TOBACCO_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TOBACCONIST</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5441,6 +5978,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TOBACCO_PLANTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TOBACCONIST</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5526,6 +6073,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WHALE_OIL_COOKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5624,6 +6177,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_WHALE_OIL_COOKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5706,6 +6265,16 @@
                 <eRequiredTerrain>TERRAIN_SAVANNAH</eRequiredTerrain>
                 <eRequiredTerrain>TERRAIN_MARSH</eRequiredTerrain>
             </AIRequiredCatchmentAreaTerrains>
+            <AIRequiredCatchmentAreaFeatures>
+                <eRequiredFeature>FEATURE_JUNGLE</eRequiredFeature>
+                <eRequiredFeature>FEATURE_FOREST_TUNDRA</eRequiredFeature>
+            </AIRequiredCatchmentAreaFeatures>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FURNITURE_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5791,6 +6360,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FURNITURE_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5885,6 +6460,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FURNITURE_MAKER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -5962,6 +6543,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_MINER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BLACKSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6047,6 +6638,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_MINER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BLACKSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6145,6 +6746,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_MINER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BLACKSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6243,6 +6854,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_MINER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BLACKSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6347,6 +6968,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_MINER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BLACKSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6424,6 +7055,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GUNSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6509,6 +7146,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GUNSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6607,6 +7250,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GUNSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6710,6 +7359,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GUNSMITH</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6885,6 +7540,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -6983,6 +7644,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7082,6 +7749,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7154,6 +7827,16 @@
             <DomainProductionModifiers/>
             <PrereqBuildingClasses/>
             <BuildingClassNeededs/>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_LUMBERJACK</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CARPENTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7239,6 +7922,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_LUMBERJACK</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CARPENTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7328,6 +8021,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_LUMBERJACK</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CARPENTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7426,6 +8129,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_LUMBERJACK</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_CARPENTER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7508,6 +8221,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BUTCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TANNER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7598,6 +8325,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BUTCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TANNER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7701,6 +8442,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_RANCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_BUTCHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_TANNER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7796,6 +8551,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7895,6 +8664,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -7999,6 +8782,20 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_STATESMAN</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_GOVERNOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8080,6 +8877,16 @@
             <DomainProductionModifiers/>
             <PrereqBuildingClasses/>
             <BuildingClassNeededs/>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_PREACHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8170,6 +8977,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_PREACHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8272,6 +9089,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_PREACHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8379,6 +9206,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_PREACHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8486,6 +9323,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_PREACHER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8572,6 +9419,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8670,6 +9523,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8768,6 +9627,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8871,6 +9736,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -8961,6 +9832,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -9051,6 +9928,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -9248,6 +10131,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -9342,6 +10231,12 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_FARMER</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -9496,6 +10391,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DOCTOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -9586,6 +10491,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DOCTOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
@@ -9685,6 +10600,16 @@
                     <bNeededInCity>1</bNeededInCity>
                 </BuildingClassNeeded>
             </BuildingClassNeededs>
+            <AIUnitClassWeights>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_EMIGRANT</eUnitClass>
+                    <iWeight>25</iWeight>
+                </AIUnitClassWeight>
+                <AIUnitClassWeight>
+                    <eUnitClass>UNITCLASS_DOCTOR</eUnitClass>
+                    <iWeight>50</iWeight>
+                </AIUnitClassWeight>
+            </AIUnitClassWeights>
             <HotKey/>
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
