@@ -66,7 +66,7 @@ protected:
 	void checkStringContents(CvWString& szStr, const wchar* szExtension);
 
 	template<typename T0, typename T1, typename T2, typename T3>
-	void readXML(InfoArray<T0, T1, T2, T3> kInfo, const char* szTag);
+	void readXML(InfoArray<T0, T1, T2, T3>& kInfo, const char* szTag);
 
 	bool doneReadingXML(CvXMLLoadUtility* pXML);
 	bool m_bGraphicalOnly;

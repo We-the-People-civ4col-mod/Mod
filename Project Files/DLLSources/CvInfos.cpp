@@ -277,7 +277,7 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 //
 
 template<typename T0, typename T1, typename T2, typename T3>
-void CvInfoBase::readXML(InfoArray<T0, T1, T2, T3> kInfo, const char* szTag)
+void CvInfoBase::readXML(InfoArray<T0, T1, T2, T3>& kInfo, const char* szTag)
 {
 	kInfo.read(m_pXML, getType(), szTag);
 }
