@@ -1616,8 +1616,6 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			iValue += 100 + 10 * getRawYieldProduced(eYieldConsumed);
 
 			// WTP, ray, also check for available AI experts for Building Construction - START
-			// this is the base value we later add the weigths
-			int iValueIncreaseExpert = 0;
 			// first we get the Array containing UnitClasses and Weight
 			const InfoArray<UnitClassTypes, IntTypes>& AI_ExpertWeightInfoArray = kBuildingInfo.AI_getUnitClassWeight();
 			// now we loop
@@ -1626,6 +1624,9 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				//first we get the XML info about Experts we check for from BuildingInfos
 				UnitClassTypes UnitClassExpertToCheckForWeightIncrease = AI_ExpertWeightInfoArray.getUnitClass(iI);
 				int iWeightIncreaseIfExpertFound = AI_ExpertWeightInfoArray.getInt(iI);
+
+				// in case somebody configured 0 as weight increase in XML we will not loop the Population
+				if (iWeightIncreaseIfExpertFound == 0) continue;
 
 				// now we need to figure out if the City has the UnitClass
 				for (int i = 0; i < getPopulation(); ++i)
