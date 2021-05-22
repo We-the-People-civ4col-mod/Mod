@@ -2508,7 +2508,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_1</Tag>
-        <English>Sire, some traders have chosen a good position for a trading post. It is strategically positioned to advance our trading interests in the region. Do we want to support the construction and gain an advantage?</English>
+        <English>Sire, some traders have chosen a good location for a trading post. It is strategically positioned to advance our commercial interests in the region. Do we want to support the construction?</English>
         <French>Sire, some traders had found a favourable position for a trading post. It is strategically located to develop our trading interests in the region. Do we want to support the construction and gain an advantage?</French>
         <German>Sire, einige Händler habe eine günstige Stelle für einen Handelsposten gefunden. Er liegt strategisch günstig, um unsere Handelsinteressen in der Region auszubauen. Wollen wir den Bau unterstützen und uns so einen Vorteil verschaffen?</German>
     </TEXT>
@@ -2759,7 +2759,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HEMP_START</Tag>
-        <English>His Majesty and the citizens of the Homeland are delighted by the first shipments [COLOR_FONT_GOLD]hemp[COLOR_REVERT] from the colonies. His Majesty wants you to be the market leader for hemp.</English>
+        <English>His Majesty and the citizens of the Homeland are delighted by the first shipments of [COLOR_FONT_GOLD]hemp[COLOR_REVERT] from the colonies. His Majesty wants you to be the market leader for hemp.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
@@ -2909,7 +2909,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_FUR_START</Tag>
-        <English>His Majesty is delighted with the first shipment of[COLOR_FONT_GOLD]furs[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader for furs.</English>
+        <English>His Majesty is delighted with the first shipment of [COLOR_FONT_GOLD]furs[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader for furs.</English>
         <German>Ihre Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Felle[COLOR_REVERT] aus den Kolonien begeistert. Ihre Majestät befiehlt euch daher der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
@@ -3234,7 +3234,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_START</Tag>
-        <English>His Majesty and the citizens of the homeland are delighted to see European [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] going to the colonies. His Majesty commands that you have the largest share of this market.</English>
+        <English>His Majesty and the citizens of the homeland are delighted to see European [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] going to the colonies. His Majesty commands that you gain the largest share of this market.</English>
         <German>Die Eingeborenen in den Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa so begeistert das euch seine Majestät befielt der dominante Marktführer für diese Ware zu werden.</German>
     </TEXT>
     <TEXT>
