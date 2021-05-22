@@ -17,6 +17,11 @@
 #include "CvGameCoreUtils.h"
 #include "iconv/converters.h"
 
+// static pointer used only by CvInfoBase
+// main purpose is to add read functions to CvInfoBase
+// and have pXML and getType() available without passing them as arguments
+CvXMLLoadUtility* CvInfoBase::m_pXML = NULL;
+
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   CInfoBase()
@@ -207,6 +212,9 @@ bool CvInfoBase::isMatchForLink(std::wstring szLink, bool bKeysOnly) const
 //
 bool CvInfoBase::read(CvXMLLoadUtility* pXML)
 {
+	// update static pointer
+	m_pXML = pXML;
+
 	// Skip any comments and stop at the next value we might want
 	if (!pXML->SkipToNextVal())
 	{
@@ -262,6 +270,16 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 		szStr.clear();
 		return;
 	}
+}
+
+//
+// XML reading code
+//
+
+template<typename T0, typename T1, typename T2, typename T3>
+void CvInfoBase::readXML(InfoArray<T0, T1, T2, T3> kInfo, const char* szTag)
+{
+	kInfo.read(m_pXML, getType(), szTag);
 }
 
 //======================================================================================================
@@ -3978,7 +3996,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiDomainModifier, "DomainMods", NUM_DOMAIN_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldModifier, "YieldModifiers", NUM_YIELD_TYPES, 0);
 	// R&R, Androrc, Domestic Market
-	m_info_YieldDemands.read(pXML, getType(), "YieldDemands");
+	readXML(m_info_YieldDemands, "YieldDemands");
 	//Androrc End
 	pXML->SetVariableListTagPair(&m_aiBonusYieldChange, "BonusYieldChanges", NUM_YIELD_TYPES, 0);
 	pXML->SetVariableListTagPair(&m_aiYieldChange, "YieldChanges", NUM_YIELD_TYPES, 0);
@@ -5445,7 +5463,7 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(szTextVal, "FreePromotion");
 	m_iFreePromotion = pXML->FindInInfoClass(szTextVal);
 	pXML->GetChildXmlValByName(&m_iDomesticMarketModifier, "iDomesticMarketModifier");
-	m_info_YieldDemands.read(pXML, getType(), "YieldDemands");
+	readXML(m_info_YieldDemands, "YieldDemands");
 	pXML->GetChildXmlValByName(&m_bWorksWater, "bWorksWater");
 	pXML->GetChildXmlValByName(&m_bWater, "bWater");
 	pXML->GetChildXmlValByName(&m_bRiver, "bRiver");
@@ -5493,12 +5511,12 @@ bool CvBuildingInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_aiPrereqNumOfBuildingClass, "PrereqBuildingClasses", GC.getNumBuildingClassInfos(), 0);
 	pXML->SetVariableListTagPair(&m_abBuildingClassNeededInCity, "BuildingClassNeededs", GC.getNumBuildingClassInfos(), false);
 	//WTP, Nightinggale - Terrain locator - start
-	m_info_RequiredAdjacentTerrains.read(pXML, getType(), "RequiredAdjacentTerrains");
-	m_info_RequiredCatchmentAreaTerrains.read(pXML, getType(), "RequiredCatchmentAreaTerrains");
-	m_info_RequiredCatchmentAreaFeatures.read(pXML, getType(), "RequiredCatchmentAreaFeatures");
-	m_info_AIRequiredCatchmentAreaTerrains.read(pXML, getType(), "AIRequiredCatchmentAreaTerrains");
-	m_info_AIRequiredCatchmentAreaFeatures.read(pXML, getType(), "AIRequiredCatchmentAreaFeatures");
-	m_info_AIUnitClassWeight.read(pXML, getType(), "AIUnitClassWeights");
+	readXML(m_info_RequiredAdjacentTerrains       , "RequiredAdjacentTerrains"       );
+	readXML(m_info_RequiredCatchmentAreaTerrains  , "RequiredCatchmentAreaTerrains"  );
+	readXML(m_info_RequiredCatchmentAreaFeatures  , "RequiredCatchmentAreaFeatures"  );
+	readXML(m_info_AIRequiredCatchmentAreaTerrains, "AIRequiredCatchmentAreaTerrains");
+	readXML(m_info_AIRequiredCatchmentAreaFeatures, "AIRequiredCatchmentAreaFeatures");
+	readXML(m_info_AIUnitClassWeight              , "AIUnitClassWeights"             );
 	//WTP, Nightinggale - Terrain locator - end
 	pXML->SetVariableListTagPair(&m_aiYieldCost, "YieldCosts", NUM_YIELD_TYPES, 0);
 	return true;

@@ -320,10 +320,9 @@ class InfoArray : protected InfoArrayMod
 	// TODO remove as many as possible
 	friend class CvCity;
 	friend class CvGlobals;
-	friend class CvUnitInfo;
-	friend class CvBuildingInfo;
 	friend class CivEffectInfo;
 	friend class CvPlayerCivEffect;
+	friend class CvInfoBase;
 public:
 	InfoArray() : InfoArrayMod(JIT_TYPE<T0>::TYPE, JIT_TYPE<T1>::TYPE, JIT_TYPE<T2>::TYPE, JIT_TYPE<T3>::TYPE)
 #pragma warning( disable: 4355 )
