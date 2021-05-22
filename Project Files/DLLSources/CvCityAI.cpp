@@ -1614,6 +1614,31 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		if (bProductionBuilding)
 		{
 			iValue += 100 + 10 * getRawYieldProduced(eYieldConsumed);
+
+			// WTP, ray, also check for available AI experts for Building Construction - START
+			// this is the base value we later add the weigths
+			int iValueIncreaseExpert = 0;
+			// first we get the Array containing UnitClasses and Weight
+			const InfoArray<UnitClassTypes, IntTypes>& AI_ExpertWeightInfoArray = kBuildingInfo.AI_getUnitClassWeight();
+			// now we loop
+			for (int iI = 0; iI < AI_ExpertWeightInfoArray.getLength(); ++iI)
+			{
+				//first we get the XML info about Experts we check for from BuildingInfos
+				UnitClassTypes UnitClassExpertToCheckForWeightIncrease = AI_ExpertWeightInfoArray.getUnitClass(iI);
+				int iWeightIncreaseIfExpertFound = AI_ExpertWeightInfoArray.getInt(iI);
+
+				// now we need to figure out if the City has the UnitClass
+				for (int i = 0; i < getPopulation(); ++i)
+				{
+					CvUnit* pUnit = getPopulationUnitByIndex(i);
+					if (pUnit->getUnitClassType() == UnitClassExpertToCheckForWeightIncrease)
+					{
+						// we add the XML ExpertIncrease value on top of the alredy calculated Building value
+						iValue += iWeightIncreaseIfExpertFound;
+					}
+				}
+			}
+			// WTP, ray, also check for available AI experts for Building Construction - END 
 		}
 	}
 	
