@@ -100,12 +100,6 @@ public:
 		return (JITarrayTypes)((m_aiTypes >> (8 * i)) & 0xFF);
 	}
 
-	int getInt(int iIndex, int iTokenIndex = 0) const
-	{
-		FAssertMsg(NUM_JITarrayTypes <= getType(iTokenIndex), "InfoArray called with the wrong get function");
-		return getInternal(iIndex, iTokenIndex);
-	}
-
 	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const
 	{
 		FAssert(GetBaseType(eType) == getType(iTokenIndex) || (eType >= NUM_JITarrayTypes && getType(iTokenIndex) >= NUM_JITarrayTypes));
