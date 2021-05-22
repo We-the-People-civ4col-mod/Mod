@@ -53,6 +53,7 @@
 	<ElementType name="bNeverCapture" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCenterInCity" content="textOnly" dt:type="boolean"/>
 	<ElementType name="iAIWeight" content="textOnly" dt:type="int"/>
+	<ElementType name="iWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iCost" content="textOnly" dt:type="int"/>
 	<ElementType name="iHurryCostModifier" content="textOnly" dt:type="int"/>
 	<ElementType name="iAdvancedStartCost" content="textOnly" dt:type="int"/>
@@ -197,6 +198,14 @@
 	<ElementType name="AIRequiredCatchmentAreaFeatures" content="eltOnly">
 		<element type="eRequiredFeature" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="eUnitClass" content="textOnly"/>
+	<ElementType name="AIUnitClassWeight" content="eltOnly">
+		<element type="eUnitClass" />
+		<element type="iWeight" />
+	</ElementType>
+	<ElementType name="AIUnitClassWeights" content="eltOnly">
+		<element type="AIUnitClassWeight" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="HotKey" content="textOnly"/>
 	<ElementType name="bAltDown" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bShiftDown" content="textOnly" dt:type="boolean"/>
@@ -283,6 +292,7 @@
 		<element type="RequiredCatchmentAreaFeatures" minOccurs="0"/>
 		<element type="AIRequiredCatchmentAreaTerrains" minOccurs="0"/>
 		<element type="AIRequiredCatchmentAreaFeatures" minOccurs="0"/>
+		<element type="AIUnitClassWeights" minOccurs="0"/>
 		<element type="HotKey"/>
 		<element type="bAltDown"/>
 		<element type="bShiftDown"/>

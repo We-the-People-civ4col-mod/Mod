@@ -1318,6 +1318,7 @@ public:
 	const InfoArray<FeatureTypes>& getRequiredCatchmentAreaFeatures() const;
 	const InfoArray<TerrainTypes>& getAIRequiredCatchmentAreaTerrains() const;
 	const InfoArray<FeatureTypes>& getAIRequiredCatchmentAreaFeatures() const;
+	const InfoArray<UnitClassTypes, IntTypes>& AI_getUnitClassWeight() const;
 	//WTP, Nightinggale - Terrain locator - end
 	int getYieldCost(int i) const;
 
@@ -1409,6 +1410,7 @@ protected:
 	InfoArray<FeatureTypes> m_info_RequiredCatchmentAreaFeatures;
 	InfoArray<TerrainTypes> m_info_AIRequiredCatchmentAreaTerrains;
 	InfoArray<FeatureTypes> m_info_AIRequiredCatchmentAreaFeatures;
+	InfoArray<UnitClassTypes, IntTypes> m_info_AIUnitClassWeight;
 	//WTP, Nightinggale - Terrain locator - end
 	int* m_aiYieldCost;
 	bool* m_abBuildingClassNeededInCity;
