@@ -2508,13 +2508,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_1</Tag>
-        <English>Sire, some traders have chosen a good location for a trading post. It is strategically positioned to advance our commercial interests in the region. Do we want to support the construction?</English>
-        <French>Sire, some traders had found a favourable position for a trading post. It is strategically located to develop our trading interests in the region. Do we want to support the construction and gain an advantage?</French>
+        <English>Sire, some traders have chosen a good location for a fort. It is strategically positioned to protect our commercial interests in the region. Do we want to support the construction?</English>
+        <French>Sire, some traders have chosen a good location for a fort. It is strategically positioned to protect our commercial interests in the region. Do we want to support the construction?</French>
         <German>Sire, einige Händler habe eine günstige Stelle für einen Handelsposten gefunden. Er liegt strategisch günstig, um unsere Handelsinteressen in der Region auszubauen. Wollen wir den Bau unterstützen und uns so einen Vorteil verschaffen?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_2</Tag>
-        <English>Sire, a messenger has arrived. One of our trading companies wants to set up a trading post on the border. This would benefit us, but would anger our neighbours. What should we do?</English>
+        <English>Sire, a messenger has arrived. One of our trading companies wants to set up a fort on the border. This would benefit us, but would anger our neighbours. What should we do?</English>
         <French>Sire, a messenger has arrived. One of our trading companies wants to set up a trading fort at the border. This would benefit us, but would anger our neighbours. What should we do?</French>
         <German>Sire, ein Bote ist angekommen. Eine unserer Handelsgesellschaften möchte an der Grenze ein Handelsfort errichten. Dies würde uns nützen, aber unsere Nachbarn erzürnen. Was sollen wir tun?</German>
     </TEXT>
@@ -2532,7 +2532,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_2</Tag>
-        <English>Sire, a messenger is here. Our neighbours demand that we tear down the new trading post immediately. They're furious.</English>
+        <English>Sire, a messenger is here. Our neighbours demand that we tear down the new trading fort immediately. They're furious.</English>
         <French>Sire, a messenger has arrived. Our neighbours are demanding that we tear down the new trading post immediately. They are really angry.</French>
         <German>Sire, ein Bote ist angekommen. Unsere Nachbarn verlangen, dass wir das neue Handelsfort umgehend wieder abreißen. Sie sind wirklich ungehalten.</German>
     </TEXT>
@@ -2569,7 +2569,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LOST_SHIP_1</Tag>
         <English>Captain, the ship is sinking! We're taking on water where the planks broke. The bosun can't seal the leak. Give the order to abandon ship or we perish!</English>
-        <French>Captain, the ship is sinking! We have already made several feet of water because several planks have been dented. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</French>
+        <French>Captain, the ship is sinking! We have already taken on several feet of water where the planks have cracked. The bosun cannot seal the leak. Give the order "All hands abandon ship" or we'll all perish!</French>
         <German>Captain, das Schiff sinkt! Wir haben schon mehrere Fuß Wasser gemacht, weil mehrere Planken eingedrückt wurden. Der Bootsmann kann das Leck nicht abdichten. Gebt den Befehl "Alle Mann von Bord" oder wir gehen alle drauf!</German>
     </TEXT>
     <TEXT>
