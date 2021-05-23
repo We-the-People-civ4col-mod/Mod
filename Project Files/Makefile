@@ -439,7 +439,7 @@ $(TEMP_TARGET_FILES)\$(BLACKLIST).obj: $(BLACKLIST).cpp
 BuildRelease:
 	@ECHO Building zip file
 	@cd ..
-	@$(GIT) archive --format=zip --prefix=assets/ --add-file=assets/CvGameCoreDLL.dll --prefix= -9 --output "Project Files"/WeThePeople-temp.zip head
+	@$(GIT) archive --format=zip --prefix=Assets/ --add-file=Assets/CvGameCoreDLL.dll --prefix= -9 --output "Project Files"/WeThePeople-temp.zip head
 	@cd "Project Files"
 	@echo $(RELEASE_VERSION)| $(PERL) bin\git_version.pl
 
