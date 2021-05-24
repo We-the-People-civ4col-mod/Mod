@@ -18542,7 +18542,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=189
-	FeatureType=FEATURE_FOREST_TUNDRA, FeatureVariety=0
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=3,
@@ -53846,7 +53845,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=127
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=13,
 EndPlot
@@ -59004,7 +59003,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=5
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=1,
 EndPlot
@@ -61145,7 +61144,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=98
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=2,12,19,
 EndPlot
@@ -78067,7 +78066,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=153
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=10,
 EndPlot
@@ -78444,7 +78443,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=209
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=23,
 EndPlot
@@ -97034,7 +97033,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=125
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=16,
 EndPlot
@@ -105596,7 +105595,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=64
-	FeatureType=FEATURE_FOREST, FeatureVariety=1
 	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=25,27,
@@ -106311,7 +106309,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=72,y=165
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=30,
 EndPlot
@@ -109529,7 +109527,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=74,y=201
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=29,
 EndPlot
@@ -115166,8 +115164,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=78,y=162
-	TerrainType=TERRAIN_COAST
-	PlotType=3
+	TerrainType=TERRAIN_LARGE_RIVERS
 	TeamReveal=30,
 EndPlot
 BeginPlot
@@ -116649,7 +116646,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=79,y=162
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=30,
 EndPlot
@@ -124050,7 +124047,7 @@ EndPlot
 BeginPlot
 	x=84,y=157
 	ImprovementType=IMPROVEMENT_GOODY_HUT3
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=14,30,
 EndPlot
@@ -130811,7 +130808,7 @@ EndPlot
 BeginPlot
 	x=89,y=52
 	BonusType=BONUS_SEA_OTTERS
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=9,25,
 EndPlot
@@ -136710,7 +136707,7 @@ EndPlot
 BeginPlot
 	x=93,y=42
 	BonusType=BONUS_CRAB
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=9,
 EndPlot
@@ -137748,13 +137745,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=93,y=191
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=4,
 EndPlot
 BeginPlot
 	x=93,y=192
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=4,
 EndPlot
@@ -139250,7 +139247,7 @@ EndPlot
 BeginPlot
 	x=94,y=192
 	BonusType=BONUS_CRAB
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=4,
 EndPlot
