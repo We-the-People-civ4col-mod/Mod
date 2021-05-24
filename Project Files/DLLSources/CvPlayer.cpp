@@ -1596,12 +1596,11 @@ void CvPlayer::initEuropeSettler(bool bPayEquipment)
 {
 	// here we need to get the Profession Settler for initUnit call
 	ProfessionTypes eSettlerProfession = NO_PROFESSION;
-	int iEquipmentCots = 0;
-	for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+	int iEquipmentCosts = 0;
+	for (ProfessionTypes eLoopProfession = FIRST_PROFESSION; eLoopProfession < NUM_PROFESSION_TYPES; ++eLoopProfession)
 	{
 		// storing the Loop Profession
-		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
 
 		// checking if the profession is valid and can found settlements
 		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession) && kProfession.canFound())
@@ -1609,11 +1608,10 @@ void CvPlayer::initEuropeSettler(bool bPayEquipment)
 			//  only if bPayEquipment - the for the Equipment is calculated. otherwise it stays 0
 			if(bPayEquipment)
 			{
-				for (int i=0; i < NUM_YIELD_TYPES; ++i)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYieldType = (YieldTypes) i;
-					int iYieldAmount = kProfession.getYieldEquipmentAmount(i);
-					iEquipmentCots += iYieldAmount * getYieldSellPrice(eYieldType); // we only use the sell price
+					int iYieldAmount = getYieldEquipmentAmount(eLoopProfession, eYield);
+					iEquipmentCosts += iYieldAmount * getYieldSellPrice(eYield); // we only use the sell price
 				}
 			}
 
@@ -1627,9 +1625,9 @@ void CvPlayer::initEuropeSettler(bool bPayEquipment)
 		// AI pays the calculated costs - wich are already calculated nicely just Sell Price
 		// if bPayEquipment is false, these are 0
 		// if it does not have the money it does not get the Settler in Europe
-		if(getGold() >= iEquipmentCots)
+		if(getGold() >= iEquipmentCosts)
 		{
-			changeGold(-iEquipmentCots);
+			changeGold(-iEquipmentCosts);
 			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
 			CvUnit* pUnit = initUnit(eUnit, eSettlerProfession, INVALID_PLOT_COORD, INVALID_PLOT_COORD, UNITAI_SETTLER, NO_DIRECTION);
 			unloadUnitToEurope(pUnit);		
