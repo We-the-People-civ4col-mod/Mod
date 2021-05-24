@@ -62406,23 +62406,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=146
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=14,
 EndPlot
 BeginPlot
 	x=39,y=147
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
 	x=39,y=148
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 EndPlot
 BeginPlot
 	x=39,y=149
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=14,
 EndPlot
@@ -63965,7 +63965,7 @@ EndPlot
 BeginPlot
 	x=40,y=146
 	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=14,
 EndPlot
@@ -65540,14 +65540,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=145
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=14,
 EndPlot
 BeginPlot
 	x=41,y=146
 	BonusType=BONUS_FISH
-	TerrainType=TERRAIN_COAST
+	TerrainType=TERRAIN_LARGE_RIVERS
 	PlotType=3
 	TeamReveal=14,
 EndPlot
