@@ -42,7 +42,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_IMPORT_HELP</Tag>
-        <English>Import this cargo[NEWLINE][NEWLINE]Left: import limit[NEWLINEImports cannot exceed warehouse inventory limits.[NEWLINE]0 means no limit.</English>
+        <English>Import this cargo[NEWLINE][NEWLINE]Left: import limit[NEWLINE]Imports cannot exceed warehouse inventory limits.[NEWLINE]0 means no limit.</English>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
