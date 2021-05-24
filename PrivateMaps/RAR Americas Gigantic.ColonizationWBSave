@@ -2910,61 +2910,61 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=220
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=221
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=222
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=223
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=224
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=225
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=226
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=227
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=228
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=229
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -4440,62 +4440,62 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=220
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=221
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=222
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=223
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=224
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=225
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=226
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=227
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=228
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=229
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -5976,49 +5976,49 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=2,y=222
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=223
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=224
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=225
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=226
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=227
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=228
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=2,y=229
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -7498,49 +7498,49 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=3,y=222
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=223
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=224
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=225
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=226
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=227
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=228
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=3,y=229
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -43226,7 +43226,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=125
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -49430,7 +49430,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=31,y=124
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -52637,7 +52637,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=33,y=122
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
@@ -62406,23 +62406,23 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=39,y=146
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=14,
 EndPlot
 BeginPlot
 	x=39,y=147
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=39,y=148
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 EndPlot
 BeginPlot
 	x=39,y=149
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=14,
 EndPlot
@@ -63965,7 +63965,7 @@ EndPlot
 BeginPlot
 	x=40,y=146
 	FeatureType=FEATURE_RIVER_FORD, FeatureVariety=0
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=14,
 EndPlot
@@ -65540,14 +65540,14 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=145
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=14,
 EndPlot
 BeginPlot
 	x=41,y=146
 	BonusType=BONUS_FISH
-	TerrainType=TERRAIN_LARGE_RIVERS
+	TerrainType=TERRAIN_COAST
 	PlotType=3
 	TeamReveal=14,
 EndPlot
