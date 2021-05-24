@@ -543,9 +543,9 @@ public:
 	// TAC - LbD - Ray - END
 
 
-	bool setProfession(ProfessionTypes eProfession, bool bForce = false);
+	bool setProfession(ProfessionTypes eProfession, bool bForce = false, bool bRemoveYieldsFromCity = true);
 	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL, bool bForceCheck = false) const;
-	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity);
+	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity, bool bRemoveYieldsFromCity = true);
 	void processProfessionStats(ProfessionTypes eProfession, int iChange);
 private:
 	void processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange);

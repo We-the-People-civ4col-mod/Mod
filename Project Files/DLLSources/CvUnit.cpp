@@ -10928,7 +10928,7 @@ ProfessionTypes CvUnit::getProfession() const
 	return m_eProfession;
 }
 
-bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
+bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemoveYieldsFromCity)
 {
 	if (!bForce && !canHaveProfession(eProfession, false))
 	{
@@ -10974,7 +10974,7 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 		}
 
 		// clean up from old profession
-		processProfession(getProfession(), -1, false);
+		processProfession(getProfession(), -1, false, bRemoveYieldsFromCity);
 		ProfessionTypes eOldProfession = getProfession();
 
 		// actually change profession
@@ -10985,7 +10985,7 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce)
 			// set cached data from promotions
 			setPromotions();
 		}
-		processProfession(getProfession(), 1, true);
+		processProfession(getProfession(), 1, true, bRemoveYieldsFromCity);
 
 		//reload unit model
 		reloadEntity();
@@ -11278,7 +11278,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	return true;
 }
 
-void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity)
+void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity, bool bRemoveYieldsFromCity)
 {
 	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
@@ -11323,7 +11323,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 		}
 	}
 
-	if (pCity != NULL && pCity->getOwnerINLINE() == getOwnerINLINE())
+	if (bRemoveYieldsFromCity && pCity != NULL && pCity->getOwnerINLINE() == getOwnerINLINE())
 	{
 		if (iChange != 0 && !gDLL->GetWorldBuilderMode())
 		{
@@ -13831,6 +13831,14 @@ void CvUnit::setBarbarian(bool bNewValue)
 }
 // < JAnimals Mod End >
 
+
+// Allow natives to raid weapons and horses from a defeated unit or city
+// Let the unit change profession to a random profession, which is better from a military point of view than the current one
+// Won't remove yield cost from any city
+// Argument aYields should be the amount of yields available from unit or city
+// Return value is true if anything was stolen
+// If returning true, aYields contains the amount of yields stolen for the profession change
+//   note that aYields can contain negative values on return
 bool CvUnit::raidWeapons(std::vector<int>& aYields)
 {
 	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -13881,7 +13889,20 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 	}
 
 	ProfessionTypes eNewProfession = aProfessions[GC.getGameINLINE().getSorenRandNum(aProfessions.size(), "Choose raid weapons")];
-	setProfession(eNewProfession, true);
+	// change to selected profession without paying for it
+	// if a city has to lose yields, let the calling function take care of that
+	setProfession(eNewProfession, true, false);
+
+	// aYields was used to tell how much is available to be stolen
+	// this info is no longer needed and instead it will be used to reply how much was actually stolen
+	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+	{
+		aYields[eYield] = kOwner.getYieldEquipmentAmount(eNewProfession, eYield);
+		if (eCurrentProfession != NO_PROFESSION)
+		{
+			aYields[eYield] -= kOwner.getYieldEquipmentAmount(eCurrentProfession, eYield);
+		}
+	}
 
 	return true;
 
@@ -13908,16 +13929,7 @@ bool CvUnit::raidWeapons(CvCity* pCity)
 	std::vector<int> aYields(NUM_YIELD_TYPES);
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
-		// R&R, ray, code improvement - START
-		if(eYield  == YIELD_HORSES || eYield  == YIELD_MUSKETS)
-		{
-			aYields[eYield] = pCity->getYieldStored(eYield);
-		}
-		else
-		{
-			aYields[eYield] = 0;
-		}
-		// R&R, ray, code improvement - END
+		aYields[eYield] = pCity->getYieldStored(eYield);
 	}
 
 	if (!raidWeapons(aYields))
