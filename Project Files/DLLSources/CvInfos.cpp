@@ -1619,6 +1619,11 @@ int CvProfessionInfo::getDefaultUnitAIType() const
     return m_iDefaultUnitAIType;
 }
 
+bool CvProfessionInfo::isWorkSlot() const
+{
+	return (m_bCitizen && !m_bWorkPlot);
+}
+
 void CvProfessionInfo::read(FDataStreamBase* stream)
 {
 	// R&R, ray , MYCP partially based on code of Aymerick - START
