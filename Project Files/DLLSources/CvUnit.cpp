@@ -13833,13 +13833,11 @@ void CvUnit::setBarbarian(bool bNewValue)
 
 bool CvUnit::raidWeapons(std::vector<int>& aYields)
 {
-	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
-	ProfessionTypes eCurrentProfession = getProfession();
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	const ProfessionTypes eCurrentProfession = getProfession();
 	std::vector<ProfessionTypes> aProfessions;
-	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 	{
-		ProfessionTypes eProfession = (ProfessionTypes) iProfession;
-		
 		//ray15 
 		//if (canHaveProfession(eProfession, false))
 		if (kOwner.isProfessionValid(eProfession, getUnitType()))
@@ -13850,9 +13848,7 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 				bool bCanHaveProfession = false;
 				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					//ray Korrektur negativer Warenbestand
-					//int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYield);
-					int iYieldRequired = GC.getProfessionInfo(eProfession).getYieldEquipmentAmount(eYield);
+					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYield);
 					if (iYieldRequired > 0)
 					{
 						bCanHaveProfession = true;
@@ -13884,21 +13880,8 @@ bool CvUnit::raidWeapons(std::vector<int>& aYields)
 		return false;
 	}
 
-	ProfessionTypes eProfession = aProfessions[GC.getGameINLINE().getSorenRandNum(aProfessions.size(), "Choose raid weapons")];
-
-	// R&R, ray, corrected small bug - START
-	// Force Porfession Change
-	// but first make sure, that if in case of Native defending own city no negative yields occur
-	CvCity* pCity = plot()->getPlotCity();
-	if (pCity != NULL && pCity->isNative())
-	{
-		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-		{
-			pCity->changeYieldStored(eYield, aYields[eYield]);
-		}
-	}
-	setProfession(eProfession, true);
-	// R&R, ray, corrected small bug - END
+	ProfessionTypes eNewProfession = aProfessions[GC.getGameINLINE().getSorenRandNum(aProfessions.size(), "Choose raid weapons")];
+	setProfession(eNewProfession, true);
 
 	return true;
 
