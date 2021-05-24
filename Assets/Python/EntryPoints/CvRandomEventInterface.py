@@ -1194,6 +1194,13 @@ def applyRunAway1(argsList):
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+
+	# Re-check the event pre-condition (the game state may have changed inbetween canTriggerRunAway
+	#   and applyRunAway1)
+	# Note: This check should help prevent the city from ending up with 
+	#   negative horses
+	if city.getYieldStored(iYield) < -quantity*2 :
+		return
 	
 	city.changeYieldStored(iYield, quantity)
 	nativecity.changeYieldStored(iYield, -quantity)
