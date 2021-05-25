@@ -3,7 +3,8 @@
 
 
 CvPlayerCivEffect::CvPlayerCivEffect()
-	: m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
+	: m_iAllowFoundCity(0)
+	, m_ba_CacheAllowBuild                     (JIT_ARRAY_BUILD, true)
 	, m_ja_iCacheFreePromotionsForProfessions  (JIT_ARRAY_PROFESSION      , JIT_ARRAY_PROMOTION)
 	, m_ja_iCacheFreePromotionsForUnitClasses  (JIT_ARRAY_UNIT_CLASS      , JIT_ARRAY_PROMOTION)
 {
@@ -38,6 +39,9 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 	bUpdateUnits |= m_ja_iCacheAllowsUnits                            .addCache(iChange, kCivEffect.getAllowedUnitClasses            (), pCivInfo);
 	m_ja_iCacheAllowsYields                                           .addCache(iChange, kCivEffect.getAllowedYields                 (), pCivInfo);
 
+	m_ja_iCacheAllowsConqueringCity                                   .addCache(iChange, kCivEffect.getAllowConqueringCity           (), pCivInfo);
+
+	m_iAllowFoundCity += iChange * kCivEffect.getAllowFoundCity();
 	m_iCacheCanUseDomesticMarket += iChange * kCivEffect.getCanUseDomesticMarket();
 
 	m_iCacheNumUnitsOnDock += iChange * kCivEffect.getNumUnitsOnDockChange();
@@ -218,7 +222,6 @@ void CvPlayerCivEffect::updateHasCivEffectCache() const
 	m_ja_iHasCivEffectCache.reset();
 
 	m_ja_iHasCivEffectCache.safeAdd(1, CIV_EFFECT_DEFAULT_ALL);
-	m_ja_iHasCivEffectCache.safeAdd(1, this->isNative() ? CIV_EFFECT_DEFAULT_NATIVE : this->isEurope() ? CIV_EFFECT_DEFAULT_KING : CIV_EFFECT_DEFAULT_EUROPEAN);
 	m_ja_iHasCivEffectCache.safeAdd(1, this->isHuman() ? CIV_EFFECT_DEFAULT_HUMAN : CIV_EFFECT_DEFAULT_AI);
 
 	for (TraitTypes eTrait = FIRST_TRAIT; eTrait < NUM_TRAIT_TYPES; ++eTrait)
@@ -255,4 +258,25 @@ void CvPlayerCivEffect::updateHasCivEffectCache() const
 	CvCivilizationInfo &kCivInfo = GC.getCivilizationInfo(getCivilizationType());
 
 	m_ja_iHasCivEffectCache.safeAdd(1, kCivInfo.getCivEffect());
+	switch (kCivInfo.getCivCategoryTypes())
+	{
+	case CIV_CATEGORY_EUROPEAN:
+		m_ja_iHasCivEffectCache.safeAdd(1, CIV_EFFECT_DEFAULT_EUROPEAN);
+		break;
+	case CIV_CATEGORY_NATIVE:
+		m_ja_iHasCivEffectCache.safeAdd(1, CIV_EFFECT_DEFAULT_NATIVE);
+		break;
+	case CIV_CATEGORY_KING:
+		m_ja_iHasCivEffectCache.safeAdd(1, CIV_EFFECT_DEFAULT_KING);
+		break;
+	case CIV_CATEGORY_BARBARIAN:
+		m_ja_iHasCivEffectCache.safeAdd(1, CIV_EFFECT_DEFAULT_BARBARIAN);
+		break;
+	case CIV_CATEGORY_CHURCH:
+		m_ja_iHasCivEffectCache.safeAdd(1, CIV_EFFECT_DEFAULT_CHURCH);
+		break;
+	case CIV_CATEGORY_NOT_SET:
+		break;
+	}
+	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
 }

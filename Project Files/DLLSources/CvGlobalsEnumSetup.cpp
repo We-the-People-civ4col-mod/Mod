@@ -12,6 +12,8 @@ CivEffectTypes   CIV_EFFECT_DEFAULT_ALL      = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_EUROPEAN = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_NATIVE   = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_KING     = NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_BARBARIAN= NO_CIV_EFFECT;
+CivEffectTypes   CIV_EFFECT_DEFAULT_CHURCH   = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_HUMAN    = NO_CIV_EFFECT;
 CivEffectTypes   CIV_EFFECT_DEFAULT_AI       = NO_CIV_EFFECT;
 
@@ -108,6 +110,14 @@ void CvGlobals::postXMLLoad(bool bFirst)
 			{
 				CIV_EFFECT_DEFAULT_KING = eCivEffect;
 			}
+			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_BARBARIAN") == 0)
+			{
+				CIV_EFFECT_DEFAULT_BARBARIAN = eCivEffect;
+			}
+			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_CHURCH") == 0)
+			{
+				CIV_EFFECT_DEFAULT_CHURCH = eCivEffect;
+			}
 			else if (strcmp(szType, "CIV_EFFECT_DEFAULT_HUMAN") == 0)
 			{
 				CIV_EFFECT_DEFAULT_HUMAN = eCivEffect;
@@ -131,6 +141,8 @@ void CvGlobals::postXMLLoad(bool bFirst)
 		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_EUROPEAN   != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_EUROPEAN"  );
 		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_NATIVE     != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_NATIVE"    );
 		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_KING       != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_KING"      );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_BARBARIAN  != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_BARBARIAN" );
+		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_CHURCH     != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_CHURCH"    );
 		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_HUMAN      != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_HUMAN"     );
 		DisplayXMLmissingError(CIV_EFFECT_DEFAULT_AI         != NO_CIV_EFFECT, "CIV_EFFECT_DEFAULT_AI"        );
 

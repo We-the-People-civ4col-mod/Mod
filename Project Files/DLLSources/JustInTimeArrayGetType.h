@@ -39,6 +39,11 @@ static inline JITarrayTypes getJITarrayType(SpecialBuildingTypes var)
 	return JIT_ARRAY_BUILDING_SPECIAL;
 }
 
+static inline JITarrayTypes getJITarrayType(CivCategoryTypes var)
+{
+	return JIT_ARRAY_CIV_CATEGORY;
+}
+
 static inline JITarrayTypes getJITarrayType(CivEffectTypes var)
 {
 	return JIT_ARRAY_CIV_EFFECT;

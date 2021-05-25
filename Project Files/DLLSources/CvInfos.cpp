@@ -5873,6 +5873,7 @@ m_bNorthAmericanNative(false),
 m_bSouthAmericanNative(false),
 m_bCentralAmericanNative(false),
 // R&R, ray, Correct Geographical Placement of Natives - END
+m_eCivCategory(NO_CIV_CATEGORY),
 m_eCivEffect(NO_CIV_EFFECT),
 m_aiCivilizationBuildings(NULL),
 m_aiCivilizationUnits(NULL),
@@ -6052,6 +6053,11 @@ bool CvCivilizationInfo::isCentralAmericanNative() const
 	return m_bCentralAmericanNative;
 }
 // R&R, ray, Correct Geographical Placement of Natives - END
+
+CivCategoryTypes CvCivilizationInfo::getCivCategoryTypes() const
+{
+	return m_eCivCategory;
+}
 
 const wchar* CvCivilizationInfo::getShortDescription(uint uiForm)
 {
@@ -6440,6 +6446,8 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bSouthAmericanNative, "bSouthAmericanNative");
 	pXML->GetChildXmlValByName(&m_bCentralAmericanNative, "bCentralAmericanNative");
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	pXML->GetEnum(getType(), m_eCivCategory, "eCivCategory");
 
 	pXML->GetEnum(getType(), m_eCivEffect, "eCivEffect", false);
 
@@ -16126,8 +16134,10 @@ bool CvTradeScreenInfo::read(CvXMLLoadUtility* pXML)
 ///
 
 CivEffectInfo::CivEffectInfo(bool bAutogenerateAllow)
+	// allow
+	: m_iAllowFoundCity(0)
 	// city
-	: m_iCanUseDomesticMarket(0)
+	, m_iCanUseDomesticMarket(0)
 
 	// growth
 	, m_iNumUnitsOnDockChange(0)
@@ -16203,6 +16213,7 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 		m_info_AllowBuilds                 .read(pXML, getType(), "AllowBuilds"                 );
 		m_info_AllowBuildings              .read(pXML, getType(), "AllowBuildingClasses"        );
 		m_info_AllowCivics                 .read(pXML, getType(), "AllowCivics"                 );
+		m_info_AllowConqueringCity         .read(pXML, getType(), "AllowConqueringCities"       );
 		m_info_AllowImmigrants             .read(pXML, getType(), "AllowImmigrants"             );
 		m_info_AllowImprovements           .read(pXML, getType(), "AllowImprovements"           );
 		m_info_AllowProfessions            .read(pXML, getType(), "AllowProfessions"            );
@@ -16210,6 +16221,8 @@ bool CivEffectInfo::read(CvXMLLoadUtility* pXML)
 		m_info_AllowRoutes                 .read(pXML, getType(), "AllowRoutes"                 );
 		m_info_AllowUnits                  .read(pXML, getType(), "AllowUnitClasses"            );
 		m_info_AllowYields                 .read(pXML, getType(), "AllowYields"                 );
+
+		pXML->GetChildXmlValByName(&m_iAllowFoundCity, "iAllowFoundCity");
 
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}

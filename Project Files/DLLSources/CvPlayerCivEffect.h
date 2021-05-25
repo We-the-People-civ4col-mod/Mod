@@ -29,6 +29,9 @@ public:
 	inline bool canUseUnit        (UnitTypes        eUnit         ) const { return m_ja_iCacheAllowsUnits         .get(eUnit)        > 0; }
 	inline bool canUseYield       (YieldTypes       eYield        ) const { return m_ja_iCacheAllowsYields        .get(eYield)       > 0; }
 
+	inline bool canConquerCity    (CivCategoryTypes eCivCategory  ) const { return m_ja_iCacheAllowsConqueringCity.get(eCivCategory) > 0; }
+	inline bool canFoundCity()                                      const { return m_iAllowFoundCity > 0; }
+
 	inline const BuildingTypeArray& getAllowedBuildingInfos()      const { return m_at_AllowedBuildings; }
 
 	inline bool canUseDomesticMarket()                             const { return m_iCacheCanUseDomesticMarket > 0; }
@@ -54,6 +57,10 @@ private:
 	RouteArray          <char> m_ja_iCacheAllowsRoutes;
 	UnitArray           <char> m_ja_iCacheAllowsUnits;
 	YieldArray          <char> m_ja_iCacheAllowsYields;
+
+	CivCategoryArray    <char> m_ja_iCacheAllowsConqueringCity;
+
+	char m_iAllowFoundCity;
 
 	// caches of allow caches
 	BoolArray                  m_ba_CacheAllowBuild;

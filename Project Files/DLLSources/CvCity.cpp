@@ -8956,7 +8956,11 @@ bool CvCity::isAutoRaze() const
 
 	if (getPreviousOwner() != NO_PLAYER)
 	{
-		if (GET_PLAYER(getPreviousOwner()).isNative() != isNative())
+		// set allow conquer to CivEffect data rather than hardcoding - Nightinggale
+		CvPlayerAI& kPrevOwner = GET_PLAYER(getPreviousOwner());
+		CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+		if (!kOwner.canConquerCity(kPrevOwner.getCivCategoryTypes()))
 		{
 			return true;
 		}

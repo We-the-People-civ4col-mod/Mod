@@ -661,6 +661,20 @@ enum PlotTypes
 #endif
 };
 
+enum CivCategoryTypes
+{
+	NO_CIV_CATEGORY = -1,
+
+	CIV_CATEGORY_EUROPEAN,
+	CIV_CATEGORY_NATIVE,
+	CIV_CATEGORY_KING,
+	CIV_CATEGORY_BARBARIAN,
+	CIV_CATEGORY_CHURCH,
+	CIV_CATEGORY_NOT_SET,
+
+	NUM_CIV_CATEGORY_TYPES,
+};
+
 /*
 enum GameOptionTypes
 {
@@ -764,6 +778,7 @@ enum TileArtTypes
 	NUM_TILE_ART_TYPES
 };
 
+// exclusively used by the exe related to terrain art
 enum TerrainGroupTypes
 {
 	TERRAIN_GROUP_NONE = -1,
@@ -2628,6 +2643,8 @@ extern CivEffectTypes CIV_EFFECT_DEFAULT_ALL;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_EUROPEAN;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_NATIVE;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_KING;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_BARBARIAN;
+extern CivEffectTypes CIV_EFFECT_DEFAULT_CHURCH;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_HUMAN;
 extern CivEffectTypes CIV_EFFECT_DEFAULT_AI;
 #endif
@@ -2710,6 +2727,7 @@ enum JITarrayTypes
 	JIT_ARRAY_MISSION_AI,
 	JIT_ARRAY_STRATEGY,
 	JIT_ARRAY_PLOT_TYPE,
+	JIT_ARRAY_CIV_CATEGORY,
 	
 	// types used by InfoArray
 	JIT_ARRAY_NO_TYPE,

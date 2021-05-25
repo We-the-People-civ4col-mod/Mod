@@ -1857,6 +1857,18 @@ bool CvPlayer::isNative() const
 	return GC.getCivilizationInfo(eCivilizationType).isNative();
 }
 
+CivCategoryTypes CvPlayer::getCivCategoryTypes() const
+{
+	CivilizationTypes eCivilizationType = getCivilizationType();
+	if (eCivilizationType == NO_CIVILIZATION)
+	{
+		return CIV_CATEGORY_NOT_SET;
+	}
+
+	return GC.getCivilizationInfo(eCivilizationType).getCivCategoryTypes();
+}
+
+
 bool CvPlayer::isAlwaysOpenBorders() const
 {
 	if(getCivilizationType() == NO_CIVILIZATION)
@@ -5543,6 +5555,11 @@ bool CvPlayer::canFound(int iX, int iY, bool bTestVisible) const
 	bool bValid;
 	int iRange;
 	int iDX, iDY;
+
+	if (!CivEffect()->canFoundCity())
+	{
+		return false;
+	}
 
 	pPlot = GC.getMapINLINE().plotINLINE(iX, iY);
 

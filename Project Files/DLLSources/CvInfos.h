@@ -1612,6 +1612,8 @@ public:
 	bool isCentralAmericanNative() const;
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
+	CivCategoryTypes getCivCategoryTypes() const;
+
 	inline CivEffectTypes getCivEffect() const { return m_eCivEffect; }
 
 	std::wstring pyGetShortDescription(uint uiForm) { return getShortDescription(uiForm); }
@@ -1720,6 +1722,8 @@ protected:
 	bool m_bSouthAmericanNative;
 	bool m_bCentralAmericanNative;
 	// R&R, ray, Correct Geographical Placement of Natives - END
+
+	CivCategoryTypes m_eCivCategory;
 
 	CivEffectTypes m_eCivEffect;
 
@@ -4770,6 +4774,7 @@ public:
 	inline const InfoArray<BuildTypes        , AllowTypes>& getAllowedBuilds               () const { return m_info_AllowBuilds       ; }
 	inline const InfoArray<BuildingClassTypes, AllowTypes>& getAllowedBuildingClasses      () const { return m_info_AllowBuildings    ; }
 	inline const InfoArray<CivicTypes        , AllowTypes>& getAllowedCivics               () const { return m_info_AllowCivics       ; }
+	inline const InfoArray<CivCategoryTypes  , AllowTypes>& getAllowConqueringCity         () const { return m_info_AllowConqueringCity;}
 	inline const InfoArray<UnitClassTypes    , AllowTypes>& getAllowedImmigrants           () const { return m_info_AllowImmigrants   ; }
 	inline const InfoArray<ImprovementTypes  , AllowTypes>& getAllowedImprovements         () const { return m_info_AllowImprovements ; }
 	inline const InfoArray<ProfessionTypes   , AllowTypes>& getAllowedProfessions          () const { return m_info_AllowProfessions  ; }
@@ -4777,6 +4782,8 @@ public:
 	inline const InfoArray<RouteTypes        , AllowTypes>& getAllowedRoutes               () const { return m_info_AllowRoutes       ; }
 	inline const InfoArray<UnitClassTypes    , AllowTypes>& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
 	inline const InfoArray<YieldTypes        , AllowTypes>& getAllowedYields               () const { return m_info_AllowYields       ; }
+	
+	inline const bool getAllowFoundCity                    () const { return m_iAllowFoundCity        ; }
 
 	// city
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }
@@ -4785,7 +4792,7 @@ public:
 	inline int getNumUnitsOnDockChange                     () const { return m_iNumUnitsOnDockChange  ; }
 
 	// unit
-	inline const InfoArray<PromotionTypes, AllowTypes>                 & getFreePromotions              () const { return m_info_FreePromotions    ; }
+	inline const InfoArray<PromotionTypes, AllowTypes>                 & getFreePromotions              () const { return m_info_FreePromotions              ; }
 	inline const InfoArray<ProfessionTypes, PromotionTypes, AllowTypes>& getFreePromotionsForProfessions() const { return m_info_FreePromotionsForProfessions; }
 	inline const InfoArray<UnitCombatTypes, PromotionTypes, AllowTypes>& getFreePromotionsForUnitCombats() const { return m_info_FreePromotionsForUnitCombats; }
 
@@ -4797,6 +4804,7 @@ protected:
 	InfoArray<BuildTypes        , AllowTypes> m_info_AllowBuilds;
 	InfoArray<BuildingClassTypes, AllowTypes> m_info_AllowBuildings;
 	InfoArray<CivicTypes        , AllowTypes> m_info_AllowCivics;
+	InfoArray<CivCategoryTypes  , AllowTypes> m_info_AllowConqueringCity;
 	InfoArray<UnitClassTypes    , AllowTypes> m_info_AllowImmigrants;
 	InfoArray<ImprovementTypes  , AllowTypes> m_info_AllowImprovements;
 	InfoArray<ProfessionTypes   , AllowTypes> m_info_AllowProfessions;
@@ -4804,6 +4812,8 @@ protected:
 	InfoArray<RouteTypes        , AllowTypes> m_info_AllowRoutes;
 	InfoArray<UnitClassTypes    , AllowTypes> m_info_AllowUnits;
 	InfoArray<YieldTypes        , AllowTypes> m_info_AllowYields;
+	
+	int m_iAllowFoundCity;
 
 	// city
 	int m_iCanUseDomesticMarket;

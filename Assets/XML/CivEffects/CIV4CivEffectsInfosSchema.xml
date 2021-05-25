@@ -7,6 +7,7 @@
 	<ElementType name="eBuild" content="textOnly"/>
 	<ElementType name="eBuildingClass" content="textOnly"/>
 	<ElementType name="eCivic" content="textOnly"/>
+	<ElementType name="eCivCategory" content="textOnly"/>
 	<ElementType name="eImprovement" content="textOnly"/>
 	<ElementType name="eProfession" content="textOnly"/>
 	<ElementType name="ePromotion" content="textOnly"/>
@@ -15,6 +16,7 @@
 	<ElementType name="eYield" content="textOnly"/>
 	
 	<ElementType name="iAllow" content="textOnly" dt:type="int" />
+	<ElementType name="iAllowFoundCity" content="textOnly" dt:type="int" />
 	<ElementType name="iCanUseDomesticMarket" content="textOnly" dt:type="int" />
 	<ElementType name="iNumUnitsOnDockChange" content="textOnly" dt:type="int" />
 	
@@ -33,6 +35,10 @@
 	</ElementType>
 	<ElementType name="AllowCivic" content="eltOnly">
 		<element type="eCivic" />
+		<element type="iAllow" />
+	</ElementType>
+	<ElementType name="AllowConqueringCity" content="eltOnly">
+		<element type="eCivCategory" />
 		<element type="iAllow" />
 	</ElementType>
 	<ElementType name="AllowImmigrant" content="eltOnly">
@@ -76,6 +82,9 @@
 	<ElementType name="AllowCivics" content="eltOnly">
 		<element type="AllowCivic" minOccurs="0" maxOccurs="*" />
 	</ElementType>
+	<ElementType name="AllowConqueringCities" content="eltOnly">
+		<element type="AllowConqueringCity" minOccurs="0" maxOccurs="*" />
+	</ElementType>
 	<ElementType name="AllowImmigrants" content="eltOnly">
 		<element type="AllowImmigrant" minOccurs="0" maxOccurs="*" />
 	</ElementType>
@@ -105,6 +114,7 @@
 		<element type="AllowBuilds" minOccurs="0" />
 		<element type="AllowBuildingClasses" minOccurs="0" />
 		<element type="AllowCivics" minOccurs="0" />
+		<element type="AllowConqueringCities" minOccurs="0" />
 		<element type="AllowImmigrants" minOccurs="0" />
 		<element type="AllowImprovements" minOccurs="0" />
 		<element type="AllowProfessions" minOccurs="0" />
@@ -112,6 +122,7 @@
 		<element type="AllowRoutes" minOccurs="0" />
 		<element type="AllowUnitClasses" minOccurs="0" />
 		<element type="AllowYields" minOccurs="0" />
+		<element type="iAllowFoundCity" minOccurs="0" />
 	</ElementType>
 
 	<ElementType name="TagGroupCity" content="eltOnly">

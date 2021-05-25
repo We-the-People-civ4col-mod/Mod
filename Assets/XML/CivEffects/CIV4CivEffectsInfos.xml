@@ -14,6 +14,20 @@
 	</CivEffectInfo>
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_EUROPEAN</Type>
+		<TagGroupAllow>
+			<AllowConqueringCities>
+				<AllowConqueringCity>
+					<eCivCategory>CIV_CATEGORY_EUROPEAN</eCivCategory>
+					<iAllow>1</iAllow>
+				</AllowConqueringCity>
+				<AllowConqueringCity>
+					<eCivCategory>CIV_CATEGORY_KING</eCivCategory>
+					<iAllow>1</iAllow>
+				</AllowConqueringCity>
+			</AllowConqueringCities>
+			<iAllowFoundCity>1</iAllowFoundCity>
+		</TagGroupAllow>
+		
 		<TagGroupCity>
 			<iCanUseDomesticMarket>1</iCanUseDomesticMarket>
 		</TagGroupCity>
@@ -23,9 +37,36 @@
 	</CivEffectInfo>
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_NATIVE</Type>
+		<TagGroupAllow>
+			<AllowConqueringCities>
+				<AllowConqueringCity>
+					<eCivCategory>CIV_CATEGORY_NATIVE</eCivCategory>
+					<iAllow>1</iAllow>
+				</AllowConqueringCity>
+			</AllowConqueringCities>
+			<iAllowFoundCity>1</iAllowFoundCity>
+		</TagGroupAllow>
 	</CivEffectInfo>
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_KING</Type>
+		<TagGroupAllow>
+			<AllowConqueringCities>
+				<AllowConqueringCity>
+					<eCivCategory>CIV_CATEGORY_EUROPEAN</eCivCategory>
+					<iAllow>1</iAllow>
+				</AllowConqueringCity>
+				<AllowConqueringCity>
+					<eCivCategory>CIV_CATEGORY_KING</eCivCategory>
+					<iAllow>1</iAllow>
+				</AllowConqueringCity>
+			</AllowConqueringCities>
+		</TagGroupAllow>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_BARBARIAN</Type>
+	</CivEffectInfo>
+	<CivEffectInfo>
+		<Type>CIV_EFFECT_DEFAULT_CHURCH</Type>
 	</CivEffectInfo>
 	<CivEffectInfo>
 		<Type>CIV_EFFECT_DEFAULT_HUMAN</Type>

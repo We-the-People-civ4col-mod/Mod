@@ -9,6 +9,7 @@
 	<ElementType name="Strategy" content="textOnly"/>
 	<ElementType name="ArtDefineTag" content="textOnly"/>
 	<ElementType name="AlarmType" content="textOnly"/>
+	<ElementType name="eCivCategory" content="textOnly"/>
 	<ElementType name="eCivEffect" content="textOnly"/>
 	<ElementType name="iBaseAttitude" content="textOnly" dt:type="int"/>
 	<ElementType name="iNativeAttitude" content="textOnly" dt:type="int"/>
@@ -547,6 +548,7 @@
 		<element type="bNorthAmericanNative" minOccurs="0"/>
 		<element type="bSouthAmericanNative" minOccurs="0"/>
 		<element type="bCentralAmericanNative" minOccurs="0"/>
+		<element type="eCivCategory" minOccurs="0"/>
 		<element type="eCivEffect" minOccurs="0"/>
 		<element type="iAdvancedStartPoints"/>
 		<element type="iAreaMultiplier"/>

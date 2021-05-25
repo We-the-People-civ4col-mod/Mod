@@ -267,7 +267,7 @@ public:
 			int iLength = getArrayLength(eType);
 			for (int i = 0; i < iLength; ++i)
 			{
-				if (strcmp(szTextVal.c_str(), getBaseInfo(eType, i)->getType()) == 0)
+				if (strcmp(szTextVal.c_str(), getArrayType(eType, i)) == 0)
 				{
 					// the type match
 					// assign the index

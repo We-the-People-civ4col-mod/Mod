@@ -203,6 +203,7 @@ public:
 	DllExport bool isHuman() const;
 	DllExport void updateHuman();
 	bool isNative() const;
+	CivCategoryTypes getCivCategoryTypes() const;
 	bool isAlwaysOpenBorders() const;
 	DllExport const wchar* getName(uint uiForm = 0) const;
 	DllExport const wchar* getNameKey() const;

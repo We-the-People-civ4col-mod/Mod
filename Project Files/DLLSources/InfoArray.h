@@ -297,11 +297,12 @@ INFO_ARRAY_GET(WorldSizeTypes               , getWorldSize          , JIT_ARRAY_
 INFO_ARRAY_GET(YieldTypes                   , getYield              , JIT_ARRAY_YIELD              )
 
 // enums not linked to xml
+INFO_ARRAY_GET(CivCategoryTypes             , getCivCategory        , JIT_ARRAY_CIV_CATEGORY       )
 INFO_ARRAY_GET(FeatTypes                    , getFeat               , JIT_ARRAY_FEAT               )
 INFO_ARRAY_GET(StrategyTypes                , getStrategy           , JIT_ARRAY_STRATEGY           )
 INFO_ARRAY_GET(PlayerTypes                  , getPlayer             , JIT_ARRAY_PLAYER             )
-INFO_ARRAY_GET(TeamTypes                    , getTeam               , JIT_ARRAY_TEAM               )
 INFO_ARRAY_GET(PlotTypes                    , getPlotType           , JIT_ARRAY_PLOT_TYPE          )
+INFO_ARRAY_GET(TeamTypes                    , getTeam               , JIT_ARRAY_TEAM               )
 
 // int/float etc
 INFO_ARRAY_GET_INT(ModifierTypes            , getModifier           , JIT_ARRAY_MODIFIER           )

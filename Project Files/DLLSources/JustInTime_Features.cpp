@@ -88,6 +88,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_PLAYER:             return NUM_PLAYER_TYPES;
 	case JIT_ARRAY_TEAM:               return NUM_TEAM_TYPES;
 	case JIT_ARRAY_PLOT_TYPE:          return NUM_PLOT_TYPES;
+	case JIT_ARRAY_CIV_CATEGORY:       return NUM_CIV_CATEGORY_TYPES;
 	}
 	FAssertMsg(false, "missing length case");
 	return 0;
@@ -153,7 +154,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	return NULL;
 }
 
-static const char* getArrayTypePlotTypes(PlotTypes eType)
+static const char* getArrayType(PlotTypes eType)
 {
 	switch (eType)
 	{
@@ -163,6 +164,22 @@ static const char* getArrayTypePlotTypes(PlotTypes eType)
 	case PLOT_OCEAN: return "PLOT_OCEAN";
 	}
 	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	FAssert(false);
+	return "";
+}
+
+static const char* getArrayType(CivCategoryTypes eType)
+{
+	switch (eType)
+	{
+	case CIV_CATEGORY_EUROPEAN:  return "CIV_CATEGORY_EUROPEAN";
+	case CIV_CATEGORY_NATIVE:    return "CIV_CATEGORY_NATIVE";
+	case CIV_CATEGORY_KING:      return "CIV_CATEGORY_KING";
+	case CIV_CATEGORY_BARBARIAN: return "CIV_CATEGORY_BARBARIAN";
+	case CIV_CATEGORY_CHURCH:    return "CIV_CATEGORY_CHURCH";
+	case CIV_CATEGORY_NOT_SET:   return "CIV_CATEGORY_NOT_SET";
+	}
+	BOOST_STATIC_ASSERT(NUM_CIV_CATEGORY_TYPES == 6);
 	FAssert(false);
 	return "";
 }
@@ -180,7 +197,8 @@ const char* getArrayType(JITarrayTypes eType, int iIndex)
 	switch (eType)
 	{
 	case JIT_ARRAY_ART_STYLE:          return GC.getArtStyleTypes((ArtStyleTypes)iIndex); // use the actual art style string for type
-	case JIT_ARRAY_PLOT_TYPE:          return getArrayTypePlotTypes(static_cast<PlotTypes>(iIndex));
+	case JIT_ARRAY_PLOT_TYPE:          return getArrayType(static_cast<PlotTypes>(iIndex));
+	case JIT_ARRAY_CIV_CATEGORY:       return getArrayType(static_cast<CivCategoryTypes>(iIndex));
 	}
 	const CvInfoBase *pInfo = getBaseInfo(eType, iIndex);
 	if (pInfo == NULL)
@@ -258,6 +276,7 @@ const char* getArrayName(JITarrayTypes eType)
 	case JIT_ARRAY_YIELD:              return "Yield";
 	case JIT_ARRAY_DOMAIN:             return "Domain";
 	case JIT_ARRAY_PLOT_TYPE:          return "PlotType";
+	case JIT_ARRAY_CIV_CATEGORY:       return "CivCategory";
 	}
 	FAssertMsg(false, "missing info case");
 	return "";

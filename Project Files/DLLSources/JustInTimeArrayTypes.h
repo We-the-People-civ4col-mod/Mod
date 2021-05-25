@@ -54,6 +54,13 @@ public:
 };
 
 template<class T>
+class CivCategoryArray : public JustInTimeArray<T>
+{
+public:
+	CivCategoryArray(T eDefault = (T)0) : JustInTimeArray<T>(JIT_ARRAY_CIV_CATEGORY, eDefault) {};
+};
+
+template<class T>
 class CivEffectArray: public JustInTimeArray<T>
 {
 public:
