@@ -10736,20 +10736,10 @@ void CvCity::updateImports()
 
 void CvCity::removeTradeRoutes()
 {
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-	{
-		YieldTypes eYield = (YieldTypes) i;
-
-		if (isExport(eYield))
-		{
-			removeExport(eYield);
-		}
-
-		if (isImport(eYield))
-		{
-			removeImport(eYield);
-		}
-	}
+	// replaced vanilla code as it only took care of import and export
+	// this call will call the same button as the "clear all" button
+	// this clears feeder service and auto export too
+	handleAutoTraderouteSetup(true, false, false);
 }
 
 void CvCity::setMaintainLevel(YieldTypes eYield, int iMaintainLevel)
