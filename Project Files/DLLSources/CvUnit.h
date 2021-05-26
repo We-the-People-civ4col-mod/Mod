@@ -542,7 +542,7 @@ public:
 	void setLastLbDProfession(ProfessionTypes eProfession);
 	// TAC - LbD - Ray - END
 
-
+	bool canLeaveCity() const;
 	bool setProfession(ProfessionTypes eProfession, bool bForce = false, bool bRemoveYieldsFromCity = true);
 	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL, bool bForceCheck = false) const;
 	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity, bool bRemoveYieldsFromCity = true);

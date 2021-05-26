@@ -79,4 +79,8 @@ Schaltet Import bei 100% aus</German>
         <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP</Tag>
         <English>Automatic turn export on and off at turn start[NEWLINE]Too many trade routes slow down the game. This feature lets you disable trade routes when there's nothing to transport.[NEWLINE]Remember that restarting exports won't take effect until the following turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
     </TEXT>
+	<TEXT>
+        <Tag>TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST</Tag>
+        <English>The colony is in chaos. Nobody will be able to leave before order is restored.</English>
+    </TEXT>
 </Civ4GameText>

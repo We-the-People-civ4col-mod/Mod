@@ -616,6 +616,7 @@ enum ButtonPopupTypes
 	BUTTONPOPUP_SAVE_TRADEGROUP,//R&R mod, vetiarvind, trade groups
 	BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD,
 	BUTTONPOPUP_DESYNC_LOG_COMPLETE, // desync log
+	BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED, // use info.setButtonPopupType to this to avoid the ok button from doing anything
 	
 	
 

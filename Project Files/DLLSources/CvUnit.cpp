@@ -3755,6 +3755,13 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 		return false;
 	}
 
+	// check that the unit is allowed to have the profession it's supposed to have in the cargo hold
+	// units will fail this if they are citizens in a city with unrest
+	if (!canHaveProfession(GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), false))
+	{
+		return false;
+	}
+
 	return true;
 }
 
@@ -10923,6 +10930,21 @@ void CvUnit::rotateFacingDirectionCounterClockwise()
 	setFacingDirection(eNewDirection);
 }
 
+// check if a unit can leave a colony
+// note that it will return true if the unit isn't a citizen
+bool CvUnit::canLeaveCity() const
+{
+	if (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).isCitizen())
+	{
+		CvCity* pCity = getCity();
+		if (pCity != NULL && pCity->isOccupation())
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
 ProfessionTypes CvUnit::getProfession() const
 {
 	return m_eProfession;
@@ -11097,6 +11119,13 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 
 	if (pCity != NULL)
 	{
+		// occupation/unrest will cause units to vanish if they leave
+		// better prevent citizens from leaving if that's the case
+		if (!canLeaveCity() && !kNewProfession.isCitizen())
+		{
+			return false;
+		}
+
 		//make sure all equipment is available
 		if (!pCity->AI_isWorkforceHack())
 		{

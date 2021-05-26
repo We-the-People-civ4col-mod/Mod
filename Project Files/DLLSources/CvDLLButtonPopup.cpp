@@ -1133,6 +1133,10 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 	case BUTTONPOPUP_DESYNC_LOG_COMPLETE:
 		break;
 
+	case BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED:
+		// generic "do nothing"
+		break;
+
 	default:
 		FAssert(false);
 		break;
@@ -2657,6 +2661,18 @@ bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo 
 	//Androrc Multiple Professions per Building
 	bool bShowOnlyBuildingCitizens = (info.getData3() == 2);
 	//Androrc End
+
+	
+	if (bShowOnlyNonCitizens && !pUnit->canLeaveCity())
+	{
+		// unrest in city. Show a menu telling nothing can be done.
+		// change button type to avoid having code when ok button is clicked
+		info.setButtonPopupType(BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED);
+		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST"));
+		gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
+		return true;
+	}
+	
 
 	CvPlot* pWorkingPlot = NULL;
 	if (pCity != NULL)
