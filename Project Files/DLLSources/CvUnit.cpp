@@ -1102,7 +1102,7 @@ void CvUnit::updateCombat(bool bQuick)
 		FAssertMsg(pPlot->isFighting(), "pPlot is not fighting as expected");
 
 		// Determine if the defender can defend in this plot (ships inside a city cannot defend against land attacks)
-		if (!pPlot->isValidDomainForAction(*this))
+		if (!pPlot->isValidDomainForAction(*pDefender))
 		{
 			// WTP, ray, fix for destroying ships instead of ejecting - START
 			bool bShipCityEscape = false;
@@ -1116,9 +1116,9 @@ void CvUnit::updateCombat(bool bQuick)
 				CvCity* pCityForMessage = pDefender->plot()->getPlotCity();
 				
 				// Try to find a suitable water plot to eject
-				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+				for (DirectionTypes eDirection = FIRST_DIRECTION; eDirection < NUM_DIRECTION_TYPES; ++eDirection)
 				{
-					CvPlot* pAdjacentPlot = pAdjacentPlot = plotDirection(pDefenderPlot->getX_INLINE(), pDefenderPlot->getY_INLINE(), ((DirectionTypes)iI));
+					CvPlot* pAdjacentPlot = plotDirection(pDefenderPlot->getX_INLINE(), pDefenderPlot->getY_INLINE(), eDirection);
 
 					// Determine if we can escape to this plot
 					if (pAdjacentPlot != NULL && pDefender->canMoveInto(pAdjacentPlot))
