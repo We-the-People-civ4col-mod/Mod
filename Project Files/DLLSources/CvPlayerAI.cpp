@@ -7958,6 +7958,12 @@ void CvPlayerAI::AI_doProfessions()
 										{
 											if (eThirdIdealProfession == NO_PROFESSION || pUnit->getProfession() != eThirdIdealProfession)
 											{
+												if (eUnitAI == UNITAI_SETTLER)
+												{
+													// TODO: Replace this with AdvCiv's AI() accessor
+													static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+												}
+
 												if (pUnit->canHaveProfession(eProfession, false) && (AI_professionSuitability(pUnit, eProfession, pLoopCity->plot()) > 100))
 												{
 													pLoopCity->removePopulationUnit(pUnit, false, eProfession);
@@ -8006,6 +8012,9 @@ void CvPlayerAI::AI_doProfessions()
 
 											if (eUnitAI == UNITAI_SETTLER)
 											{
+												// TODO: Replace this with AdvCiv's AI() accessor
+												static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+
 												if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
 												{
 													if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
