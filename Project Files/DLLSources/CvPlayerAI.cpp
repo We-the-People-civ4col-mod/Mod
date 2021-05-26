@@ -950,17 +950,17 @@ void CvPlayerAI::AI_assignWorkingPlots()
 {
 	AI_manageEconomy();
 
-	tbb::task_group g;
+	//tbb::task_group g;
 
 	int iLoop;
 	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 		// BUG: This is not thread safe, we need to protect removePop / updatePop
-		g.run(ApplyAssignWorkingPlots(*pLoopCity));
-		//pLoopCity->AI_assignWorkingPlots();
+		//g.run(ApplyAssignWorkingPlots(*pLoopCity));
+		pLoopCity->AI_assignWorkingPlots();
 	}
 
-	g.wait();
+	//g.wait();
 }
 
 
