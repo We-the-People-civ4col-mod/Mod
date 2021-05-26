@@ -177,6 +177,8 @@ public:
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
+	void AI_doSettlerProfessionCheat();
+
 protected:
 
 	void AI_resetSavedData();

@@ -11624,34 +11624,11 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 			{
 				for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
 				{
-					int iYieldCarried  = kOwner.getYieldEquipmentAmountSecure(getProfession(), eYieldType); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
-					int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
+					const int iYieldCarried  = kOwner.getYieldEquipmentAmountSecure(getProfession(), eYieldType); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
+					const int iYieldRequired = kOwner.getYieldEquipmentAmount(eProfession, eYieldType);
 					if (iYieldRequired > 0)
 					{
-						int iMissing = iYieldRequired - iYieldCarried;
-
-						//WTP, ray, Settler Professsion - START
-						// we only do this if the city is larger 3
-						if (!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && kNewProfession.canFound() &&  pCity->getPopulation() > 3)
-						{
-							int iYieldsStoredInCity = pCity->getYieldStored(eYieldType);
-							if (iMissing > iYieldsStoredInCity)
-							{
-								// we check the requiredm Yields for AI so it can equip Settlers
-								int iYieldAmountToBeAdded = iMissing - iYieldsStoredInCity;
-
-								//I explicitly use Europe Sell Price because Europe Buy Price would be too expensive.
-								int iPriceSettlerYieldPrice = iYieldAmountToBeAdded * kOwner.getYieldSellPrice(eYieldType);
-
-								// we give Yields required for a little gold
-								if (kOwner.getGold() > iPriceSettlerYieldPrice)
-								{
-									pCity->changeYieldStored(eYieldType, iYieldAmountToBeAdded);
-									kOwner.changeGold(-iPriceSettlerYieldPrice);
-								}
-							}
-						}
-						//WTP, ray, Settler Professsion - END
+						const int iMissing = iYieldRequired - iYieldCarried;
 
 						if (iMissing > pCity->getYieldStored(eYieldType))
 						{

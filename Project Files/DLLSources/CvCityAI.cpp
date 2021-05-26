@@ -6864,3 +6864,61 @@ void CvCityAI::write(FDataStreamBase* pStream)
 	write(writer);
 	writerbase.WriteFile();
 }
+
+void CvCityAI::AI_doSettlerProfessionCheat()
+{
+	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	if (!(!kOwner.isHuman() && !kOwner.isNative() && !GC.getGameINLINE().isBarbarianPlayer(kOwner.getID()) && !kOwner.isEurope() && getPopulation() > 3))
+		return;
+	
+	// Hackish way to cache this compution
+	static ProfessionTypes eSettlerProfession = NO_PROFESSION;
+
+	if (eSettlerProfession == NO_PROFESSION)
+	{
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+			if (kProfession.canFound() && GC.getCivilizationInfo(kOwner.getCivilizationType()).isValidProfession(eProfession))
+			{
+				eSettlerProfession = eProfession;
+				break;
+			}
+		}
+	}
+
+	if (eSettlerProfession == NO_PROFESSION)
+		return;
+
+	//make sure all equipment is available
+	if (kOwner.hasContentsYieldEquipmentAmount(eSettlerProfession))
+	{
+		for (YieldTypes eYieldType = FIRST_YIELD; eYieldType < NUM_YIELD_TYPES; ++eYieldType)
+		{
+			const int iYieldRequired = kOwner.getYieldEquipmentAmount(eSettlerProfession, eYieldType);
+			const int iYieldsStoredInCity = getYieldStored(eYieldType);
+
+			const int iMissing = iYieldRequired - iYieldsStoredInCity;
+
+			//WTP, ray, Settler Professsion - START
+			if (iMissing > iYieldsStoredInCity)
+			{
+				// we check the required Yields for AI so it can equip Settlers
+				const int iYieldAmountToBeAdded = iMissing - iYieldsStoredInCity;
+
+				//I explicitly use Europe Sell Price because Europe Buy Price would be too expensive.
+				const int iPriceSettlerYieldPrice = iYieldAmountToBeAdded * kOwner.getYieldSellPrice(eYieldType);
+
+				// we give Yields required for a little gold
+				if (kOwner.getGold() > iPriceSettlerYieldPrice)
+				{
+					changeYieldStored(eYieldType, iYieldAmountToBeAdded);
+					kOwner.changeGold(-iPriceSettlerYieldPrice);
+				}
+			}
+			//WTP, ray, Settler Professsion - END
+		}
+	}
+}
