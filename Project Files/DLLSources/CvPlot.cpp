@@ -4259,8 +4259,14 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmpt
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL)
 		{
-			T eVal = T(0);
-			eVal = pLoopPlot->getVariable(eVal);
+			const T eVal = pLoopPlot->getVariable((T)0);
+			if (eVal == (T)-1)
+			{
+				// said plot lacks whatever we are looking for. Skip looping the InfoArray
+				// this is more likely to trigger on feature or improvement than terrain, but
+				// to keep it simple, make this check for all types
+				continue;
+			}
 			for (int i = 0; i < iLength; ++i)
 			{
 				if (eVal == kInfo.getWithTemplate(i, eVal))
