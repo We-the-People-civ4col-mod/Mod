@@ -162,7 +162,7 @@ void CvCityAI::AI_doTurn()
 //	}
 //};
 
-tbb::mutex mutex;
+tbb::mutex jobMutex;
 
 void CvCityAI::AI_assignWorkingPlots()
 {
@@ -180,15 +180,16 @@ void CvCityAI::AI_assignWorkingPlots()
 	
 	AI_assignCityPlot();
 
-	GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
+	jobMutex.lock();
 
-	mutex.lock();
+	// No need to call this here, once per turn should be enough
+	//GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
 
 	AI_updateNeededYields();
 
 	//remove non-city people
 	removeNonCityPopulationUnits();
-	mutex.unlock();
+	jobMutex.unlock();
 
 
 	/*
@@ -263,19 +264,20 @@ void CvCityAI::AI_assignWorkingPlots()
 		CvPlot* pWorkedPlot =  getPlotWorkedByUnit(pUnit);
 		if (pWorkedPlot != NULL)
 		{
-			mutex.lock();
+			jobMutex.lock();
 			clearUnitWorkingPlot(pWorkedPlot);
-			mutex.unlock();
+			jobMutex.unlock();
 		}
 		
-		// CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
-		
+#define PARALLEL
+#ifdef PARALLEL		
 		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
-//#define CHECK		
-#ifdef CHECK
-		//BestJob bj= AI_findBestJob(CvCityAI* cityAi_, ProfessionTypes professionType, CvUnit* pUnit_, bool bIndoorOnly)
-		//	CvUnit* pOldUnitCheck = bj
-		FAssertMsg(pOldUnit == pOldUnitCheck, "Parallel version produced different result!");
+#endif
+
+//#define SERIAL		
+#ifdef SERIAL
+		CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
+		//FAssertMsg(pOldUnit == pOldUnitCheck, "Parallel version produced different result!");
 #endif
 
 		if (pOldUnit != NULL)
@@ -323,9 +325,9 @@ void CvCityAI::AI_assignWorkingPlots()
 
 	if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && isCitySelected())
 	{   // TODO: defer to main thread
-		mutex.lock();
+		jobMutex.lock();
 		gDLL->getInterfaceIFace()->setDirty(CitizenButtons_DIRTY_BIT, true);
-		mutex.unlock();
+		jobMutex.unlock();
 	}
 }
 
@@ -3372,7 +3374,6 @@ private:
 	bool bIndoorOnly;
 };
 
-tbb::mutex jobMutex;
 
 CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 {
