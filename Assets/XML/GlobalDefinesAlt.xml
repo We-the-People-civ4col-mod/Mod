@@ -178,8 +178,16 @@
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>LBD_CHANCE_INCREASE_EXPERT_FROM_TEACHER</DefineName>
+		<iDefineIntVal>1</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>LBD_PRE_ROUNDS_EXPERT</DefineName>
 		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>LBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>LBD_KI_MOD_EXPERT</DefineName>

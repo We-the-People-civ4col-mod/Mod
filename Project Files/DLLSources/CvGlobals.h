@@ -718,6 +718,8 @@ public:
 	int getLBD_BASE_CHANCE_EXPERT();
 	int getLBD_CHANCE_INCREASE_EXPERT();
 	int getLBD_PRE_ROUNDS_EXPERT();
+	int getLBD_CHANCE_INCREASE_EXPERT_FROM_TEACHER(); // WTP, ray, teacher addon for LbD
+	int getLBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER(); // WTP, ray, teacher addon for LbD
 	int getLBD_KI_MOD_EXPERT();
 	int getLBD_BASE_CHANCE_FREE();
 	int getLBD_CHANCE_INCREASE_FREE();
@@ -1261,6 +1263,8 @@ protected:
 	int m_LBD_BASE_CHANCE_EXPERT;
 	int m_LBD_CHANCE_INCREASE_EXPERT;
 	int m_LBD_PRE_ROUNDS_EXPERT;
+	int m_LBD_CHANCE_INCREASE_EXPERT_FROM_TEACHER; // WTP, ray, teacher addon for LbD
+	int m_LBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER; // WTP, ray, teacher addon for LbD
 	int m_LBD_KI_MOD_EXPERT;
 	int m_LBD_BASE_CHANCE_FREE;
 	int m_LBD_CHANCE_INCREASE_FREE;
@@ -1922,6 +1926,17 @@ inline int CvGlobals::getLBD_PRE_ROUNDS_EXPERT()
 {
 	return m_LBD_PRE_ROUNDS_EXPERT;
 }
+// WTP, ray, teacher addon for LbD - START
+inline int CvGlobals::getLBD_CHANCE_INCREASE_EXPERT_FROM_TEACHER()
+{
+	return m_LBD_CHANCE_INCREASE_EXPERT_FROM_TEACHER;
+}
+inline int CvGlobals::getLBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER()
+{
+	return m_LBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER;
+}
+// WTP, ray, teacher addon for LbD -END
+
 inline int CvGlobals::getLBD_KI_MOD_EXPERT()
 {
 	return m_LBD_KI_MOD_EXPERT;

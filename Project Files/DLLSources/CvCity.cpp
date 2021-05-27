@@ -11033,13 +11033,37 @@ bool CvCity::isHasSpecialBuilding(int iValue) const
 
 // TAC - LbD - Ray - START
 
-bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level) 
+bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level, int chance_increase_expert_from_teacher, int pre_rounds_expert_decrease_from_teacher) 
 {	
 	// get data from Unit
 	int workedRounds = convUnit->getLbDrounds();
 	ProfessionTypes lastProfession = convUnit->getLastLbDProfession();
 	ProfessionTypes currentProfession = convUnit->getProfession();
 	
+	// WTP, ray, teacher addon for LbD - START
+	// The Expert we might convert to later and also valid teachers
+	int expert = GC.getProfessionInfo(convUnit->getProfession()).LbD_getExpert();
+	UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(expert);
+	bool bValidTeacherFound = false;
+
+	// now we check if the esxpert is in the City as teacher
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		if (m_aPopulationUnits[i]->getUnitInfo().getUnitClassType() == (UnitClassTypes)GC.getUnitInfo(expertUnitType).getUnitClassType())
+		{
+			bValidTeacherFound = true;
+			continue;
+		}
+	}
+
+	// we found a valid teacher and we add or substract teacher values
+	if (bValidTeacherFound)
+	{
+		increase += chance_increase_expert_from_teacher;
+		pre_rounds -= pre_rounds_expert_decrease_from_teacher;
+	}
+	// WTP, ray, teacher addon for LbD - END
+
 	//getting KI-Modifier
 	int ki_modifier = GC.getLBD_KI_MOD_EXPERT();
 
@@ -11106,12 +11130,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	{
 		return false;
 	}
-	
-	// convert Unit to expert
-	int expert = GC.getProfessionInfo(convUnit->getProfession()).LbD_getExpert();
-
 		
-	UnitTypes expertUnitType = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(expert);
 	FAssert(expertUnitType != NO_UNIT);
 	//ray16
 	CvUnit* expertUnit = GET_PLAYER(getOwnerINLINE()).initUnit(expertUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
@@ -11357,6 +11376,9 @@ void CvCity::doLbD()
 	int chance_increase_expert = GC.getLBD_CHANCE_INCREASE_EXPERT();
 	int pre_rounds_expert = GC.getLBD_PRE_ROUNDS_EXPERT();
 
+	int chance_increase_expert_from_teacher = GC.getLBD_CHANCE_INCREASE_EXPERT_FROM_TEACHER(); // WTP, ray, teacher addon for LbD
+	int pre_rounds_expert_decrease_from_teacher = GC.getLBD_PRE_ROUNDS_EXPERT_DECREASE_FROM_TEACHER();  // WTP, ray, teacher addon for LbD
+
 	int base_chance_free = GC.getLBD_BASE_CHANCE_FREE();
 	int chance_increase_free = GC.getLBD_CHANCE_INCREASE_FREE();
 	int pre_rounds_free = GC.getLBD_PRE_ROUNDS_FREE();
@@ -11379,6 +11401,8 @@ void CvCity::doLbD()
 	//moddifying values with GameSpeed
 	chance_increase_expert = chance_increase_expert / train_percent / 100;
 	pre_rounds_expert = pre_rounds_expert * train_percent / 100;
+	chance_increase_expert_from_teacher = chance_increase_expert_from_teacher * train_percent / 100;
+	pre_rounds_expert_decrease_from_teacher = pre_rounds_expert_decrease_from_teacher * train_percent / 100;
 
 	chance_increase_free = chance_increase_free / train_percent / 100;
 	pre_rounds_free = pre_rounds_free * train_percent / 100;
@@ -11436,7 +11460,9 @@ void CvCity::doLbD()
 			// try to become expert if poosible
 			if(pLoopUnit->getUnitInfo().LbD_canBecomeExpert())
 			{
-				lbd_expert_successful = LbD_try_become_expert(pLoopUnit, base_chance_expert, chance_increase_expert, pre_rounds_expert, learn_level);
+				// WTP, ray, teacher addon for LbD
+				// adjusted method call with new teacher attributes
+				lbd_expert_successful = LbD_try_become_expert(pLoopUnit, base_chance_expert, chance_increase_expert, pre_rounds_expert, learn_level, chance_increase_expert_from_teacher, pre_rounds_expert_decrease_from_teacher);
 			}
 
 			// try to become free if poosible

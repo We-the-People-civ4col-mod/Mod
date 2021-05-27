@@ -49,7 +49,7 @@ public:
 
 	// TAC - LbD - Ray - START
 	void doLbD();
-	bool LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level);
+	bool LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int pre_rounds, int l_level, int chance_increase_expert_from_teacher, int pre_rounds_expert_decrease_from_teacher);
 	bool LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_rounds, int mod_crim, int mod_serv, int l_level);
 	bool LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv);
 	// TAC - LbD - Ray - END

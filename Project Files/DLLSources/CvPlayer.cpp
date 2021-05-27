@@ -19411,7 +19411,6 @@ void CvPlayer::doLbD()
 	int base_chance_expert = GC.getLBD_BASE_CHANCE_EXPERT();
 	int chance_increase_expert = GC.getLBD_CHANCE_INCREASE_EXPERT();
 	int pre_rounds_expert = GC.getLBD_PRE_ROUNDS_EXPERT();
-
 	int base_chance_free = GC.getLBD_BASE_CHANCE_FREE();
 	int chance_increase_free = GC.getLBD_CHANCE_INCREASE_FREE();
 	int pre_rounds_free = GC.getLBD_PRE_ROUNDS_FREE();
