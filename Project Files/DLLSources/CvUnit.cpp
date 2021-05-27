@@ -3755,9 +3755,8 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 		return false;
 	}
 
-	// check that the unit is allowed to have the profession it's supposed to have in the cargo hold
-	// units will fail this if they are citizens in a city with unrest
-	if (!canHaveProfession(GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), false))
+	// check if the unit is trying to flee a city with unrest
+	if (!canLeaveCity())
 	{
 		return false;
 	}
