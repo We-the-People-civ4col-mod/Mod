@@ -3560,7 +3560,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			if (pNode->m_data.m_eItemType == TRADE_GOLD)
 			{
 				int oldPrice = pNode->m_data.m_iData1;
-				int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceIncreaseMax, "Natives Price Change Sell");
+				int randomPriceChange = GC.getASyncRand().get(priceIncreaseMax, "Natives Price Change Sell");
 				if (randomPriceChange < priceIncreaseMax / 3)
 				{
 					randomPriceChange = priceIncreaseMax / 3;
@@ -3592,7 +3592,7 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 			if (pNode->m_data.m_eItemType == TRADE_GOLD)
 			{
 				int oldPrice = pNode->m_data.m_iData1;
-				int randomPriceChange = GC.getGameINLINE().getSorenRandNum(priceDecreaseMax, "Natives Price Change Buy");
+				int randomPriceChange = GC.getASyncRand().get(priceDecreaseMax, "Natives Price Change Buy");
 				if (randomPriceChange < priceDecreaseMax / 3)
 				{
 					randomPriceChange = priceDecreaseMax / 3;
