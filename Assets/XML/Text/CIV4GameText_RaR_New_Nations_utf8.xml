@@ -9,7 +9,7 @@
         <Tag>TXT_KEY_CIV_INUIT_SHORT_DESC</Tag>
         <English>Inuit</English>
         <French>
-            <Text>Inuits</Text>
+            <Text>Inuit</Text>
             <Gender>Male</Gender>
             <Plural>1</Plural>
         </French>
@@ -343,7 +343,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_SEPE_TIARAJU_1</Tag>
-        <English>Welcome, many-clothes wearing stranger. I, [OUR_NAME], represent the [OUR_CIV_ADJ] tribes. Let us have dinner together with all of our families, our friends, their families, their friends, and all people that were somehow still missed out!</English>
+        <English>Welcome, many-clothes wearing stranger. I, [OUR_NAME], represent the [OUR_CIV_ADJ] tribes. Let us have dinner together with all of our families, our friends, their families, their friends, and everyone else I might have overlooked!</English>
         <French>Bonjour, visiteur aux vêtements étranges. Je suis [OUR_NAME], représentant du peuple [OUR_CIV_ADJ:1]. Allons donc dîner ensemble avec nos familles, nos amis, leurs familles, leurs amis et d'autres encore qui, par malchance, n'auraient pas été mentionnés !</French>
         <German>Fremder, ich bin [OUR_NAME], Oberhaupt der Guarani. Begegnet uns mit Achtung, und wir werden auch Euch achten. Tut es nicht und ihr werdet es bereuen. Ich habe gesprochen.</German>
         <Italian>Salve. Mi chiamo [OUR_NAME], capo e protettore del popolo [OUR_CIV_ADJ]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>
@@ -2191,7 +2191,7 @@
     </TEXT>
     <TEXT>
         <Tag>AI_DIPLO_FIRST_CONTACT_LEADER_AOMAGUA_1</Tag>
-        <English>I, [OUR_NAME], represent the prosperous and wealthy nation of the [OUR_CIV_ADJ]. Join me in a banquet together with the nobles of my people, and you will see that peace and cooperation between our nations will benefit us both.</English>
+        <English>I, [OUR_NAME], represent the wealthy trading nation of the [OUR_CIV_ADJ]. Join me in a banquet together with the nobles of my people, and you will see that peace and cooperation between our nations will benefit us both.</English>
         <French>Moi, [OUR_NAME], représente la nation prospère et riche des [OUR_CIV_ADJ]. Rejoignez-moi pour un banquet avec les nobles de mon peuple, et vous verrez qu'une coopération entre nos deux nations peut nous être mutuellement bénéfiques.</French>
         <German>Fremder, ich bin [OUR_NAME], Oberhaupt der Omagua. Wärmt euch an unseren Feuern, doch achtet die Regeln der Gastfreundschaft.</German>
         <Italian>Salve. Mi chiamo [OUR_NAME], capo e protettore del popolo [OUR_CIV_ADJ]. Ti considero un amico. È nel tuo migliore interesse che io non cambi mai idea.</Italian>

@@ -3,46 +3,75 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE</Tag>
-		<English>Crops can be grown on land surrounding the settlement. The governor asks what you want done.</English>
+		<English>Crops can be grown on the land near the settlement. The governor asks if you have any requests.</English>
+		<French>On peut cultiver sur les terres près de la colonie. Le gouverneur demande si vous avez des demandes.</French>
 		<German>Es können Feldfrüchte auf dem Land nahe der Siedlung angebaut werden. Der Gouverneur fragt, ob Sie besondere Wünsche haben.</German>
+		<Italian>Le colture possono essere coltivate sul terreno vicino all'insediamento. Il governatore chiede se hai qualche richiesta.</Italian>
+		<Spanish>Se puede cultivar en las tierras cercanas al asentamiento. El gobernador pregunta si tiene alguna petición.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_AUTO</Tag>
-		<English>The governor knows the best use for the land.</English>
+		<English>The governor knows best how to use his land.</English>
+		<French>Le gouverneur sait mieux que quiconque comment utiliser ses terres.</French>
 		<German>Der Gouverneur weiß am besten, wie sein Land zu nutzen ist.</German>
+		<Italian>Il governatore sa come utilizzare al meglio la sua terra.</Italian>
+		<Spanish>El gobernador es el que mejor sabe cómo utilizar su tierra.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP</Tag>
-		<English>Each turn the governor looks at the land options. Whenever things change he authorizes optimum production for the current situation.[NEWLINE][NEWLINE]Note: Your choices are guidelines only. What you want could become unavailable. Whenever that happens the governor takes temporary control of production. If your preference becomes available later, the governor remembers and will change back.</English>
-		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[NEWLINE][NEWLINE]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
+		<English>Each turn the governor will consider what would be best to produce. He can easily change production to get the best out of the situation whenever things change.[PARAGRAPH:2]Note: Your requests are guidelines only. If in future the requested crops are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
+		<French>À chaque tour, le gouverneur réfléchira à ce qui serait le mieux à produire. Il peut facilement modifier la production pour tirer le meilleur parti de la situation lorsque les choses changent.[PARAGRAPH:2]Remarque : vos demandes ne sont que des indications. Si, à l'avenir, les cultures demandées ne sont plus disponibles, le gouverneur modifiera la production pour tirer le meilleur parti de la situation. Si votre demande redevient disponible plus tard, le gouverneur s'en souvient et reprendra la production.</French>
+		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[PARAGRAPH:2]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
+		<Italian>Ad ogni turno il governatore considererà cosa sarebbe meglio produrre. Egli può facilmente cambiare la produzione per ottenere il meglio dalla situazione ogni volta che le cose cambiano.[PARAGRAPH:2]Nota: Le tue richieste sono solo linee guida. Se in futuro le colture richieste non saranno disponibili, il governatore cambierà la produzione per trarre il meglio dalla situazione. Se la tua richiesta tornerà disponibile più tardi, il governatore se ne ricorderà e riprenderà la produzione.</Italian>
+		<Spanish>En cada turno, el gobernador considerará qué sería lo mejor para producir. Puede cambiar fácilmente la producción para sacar lo mejor de la situación siempre que las cosas cambien.[PARAGRAPH:2]Nota: Sus peticiones son sólo orientativas. Si en el futuro los cultivos solicitados no están disponibles, el gobernador cambiará la producción para sacar lo mejor de la situación. Si su solicitud vuelve a estar disponible más adelante, el gobernador lo recordará y reanudará la producción.</Spanish>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_TITLE</Tag>
-        <English>Select imports, exports, minimum and maximum goods stored for %s1_city[NEWLINE]Read Colopedia's concept page[NEWLINE]Transport Automation to learn how to use this.</English>
-        <French>Sélectionner les imports, les exports, et les seuils de biens stockées à %s1_city</French>
-        <German>Importe, Exporte und gelagerte Mindestgüter, Maximal für die Stadt %s1_city auswählen</German>
+        <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Select imports, exports, minimum and maximum goods stored (Read Colopedia's concept page [COLOR_HIGHLIGHT_TEXT]Transport Automation[COLOR_REVERT] to learn how to use this.) :[NEWLINE]</English>
+        <French>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Sélectionnez les importations, les exportations, le minimum et le maximum de marchandises stockées (Lisez la page conceptuelle de Colopedia [COLOR_HIGHLIGHT_TEXT]Automatisation du transport[COLOR_REVERT] pour savoir comment l'utiliser). :[NEWLINE]</French>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Importe, Exporte sowie Ober- und Untergrenze für Lagerbestände festlegen (Details sind in der Colopedia unter dem Konzept [COLOR_HIGHLIGHT_TEXT]Transportautomatisierung[COLOR_REVERT] nachzulesen) :[NEWLINE]</German>
+        <Italian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Seleziona le importazioni, le esportazioni, le merci minime e massime immagazzinate (Leggi la pagina del concetto di Colopedia [COLOR_HIGHLIGHT_TEXT]Automazione dei trasporti[COLOR_REVERT] per sapere come usarlo). :[NEWLINE]</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Seleccione las importaciones, las exportaciones y las mercancías mínimas y máximas almacenadas (Lea la página de conceptos de Colopedia [COLOR_HIGHLIGHT_TEXT]Automatización del transporte[COLOR_REVERT] para aprender a utilizarlo). :[NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_CLEAR_ALL</Tag>
         <English>Clear All</English>
-     </TEXT>
+        <French>Supprimer tout</French>
+        <German>Alles löschen</German>
+        <Italian>Cancellare tutto</Italian>
+        <Spanish>Eliminar todo</Spanish>
+    </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_ALL</Tag>
-        <English>Import All Goods</English>
+        <English>Import all goods</English>
+        <French>Importation de tous les biens</French>
+        <German>Import aller Güter</German>
+        <Italian>Importazione di tutte le merci</Italian>
+        <Spanish>Importar todas las mercancías</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_EXPORT_ALL</Tag>
-        <English>Auto Export All Goods</English>
+        <English>Auto-export all goods</English>
+        <French>Exportation automatique de tous les biens</French>
+        <German>Automatischer Export aller Güter</German>
+        <Italian>Esportazione automatica di tutte le merci</Italian>
+        <Spanish>Exportación automática de todas las mercancías</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_IMPORT</Tag>
         <English>Import</English>
         <French>Importer</French>
         <German>Import</German>
+        <Italian>Importazione</Italian>
+        <Spanish>Importar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_IMPORT_HELP</Tag>
-        <English>Import this cargo[NEWLINE][NEWLINE]Left: import limit[NEWLINE]Imports cannot exceed warehouse inventory limits.[NEWLINE]0 means no limit.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Import this good[COLOR_REVERT][PARAGRAPH:2]Left: import limit[NEWLINE]While importing, no transport can make the warehouse exceed this amount.[NEWLINE]0 means no limit.</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Importer cette bien[COLOR_REVERT][PARAGRAPH:2]A gauche : limite d'importation[NEWLINE]Pendant l'importation, aucun transport ne peut faire dépasser ce montant à l'entrepôt.[NEWLINE]0 signifie aucune limite.</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Güter importieren[COLOR_REVERT][PARAGRAPH:2]Links: Obergrenze für Importe[NEWLINE]Wenn importiert wird, kann der Lagerbestand durch ankommende Transporte nicht überschritten werden.[NEWLINE]0 bedeutet keine Einschränkungen.</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Importa questo merce[COLOR_REVERT][PARAGRAPH:2]Sinistra: limite di importazione[NEWLINE]Durante l'importazione, nessun trasporto può far superare al magazzino questa quantità.[NEWLINE]0 significa nessun limite.</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Importar esta mercancía[COLOR_REVERT][PARAGRAPH:2]Izquierda: límite de importación[NEWLINE]Durante la importación, ningún transporte puede hacer que el almacén supere esta cantidad.[NEWLINE]0 significa que no hay límite.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
@@ -50,36 +79,45 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
-        <English>Import feeder
-Turn import on at 75%
-Turn import off at 100%
-Compared to Maintail level (bottom spinbutton)</English>
-        <French>Gestionnaire d'importation
-Démarre l'importation à 75%
-Arrête l'importation à 100%</French>
-        <German>Import feeder
-Schaltet Import bei 75% an
-Schaltet Import bei 100% aus</German>
+        <English>[COLOR_HIGHLIGHT_TEXT]Import feeder[COLOR_REVERT][PARAGRAPH:2]Turn import on at 75%[NEWLINE]Turn import off at 100%[NEWLINE]Compared to maintain level (bottom spinbutton)</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Gestionnaire d'importation[COLOR_REVERT][PARAGRAPH:2]Démarre l'importation à 75%[NEWLINE]Arrête l'importation à 100%[NEWLINE]Par rapport au niveau de maintien (bouton rotatif inférieur)</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Importsteuerung[COLOR_REVERT][PARAGRAPH:2]Schaltet Import bei 75% an[NEWLINE]Schaltet Import bei 100% aus[NEWLINE]In Relation zur Obergrenze für Importe (unterer Button)</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Import feeder[COLOR_REVERT][PARAGRAPH:2]Attiva l'importazione al 75%[NEWLINE]Disattiva l'importazione al 100%[NEWLINE]Rispetto al mantenimento del livello (pulsante in basso)</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Alimentador de importación[COLOR_REVERT][PARAGRAPH:2]Activar la importación al 75%[NEWLINE]Desactivar la importación al 100%[NEWLINE]En comparación con mantener el nivel (botón giratorio inferior)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_EXPORT</Tag>
         <English>Export</English>
         <French>Exporter</French>
         <German>Export</German>
+        <Italian>Esportazione</Italian>
+        <Spanish>Exportar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_EXPORT_HELP</Tag>
-        <English>Export this cargo[NEWLINE][NEWLINE]Left: maintain level[NEWLINE]Import as long as the warehouse inventory is below this level. Export when it's more.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Export this good[COLOR_REVERT][PARAGRAPH:2]Left: maintain level[NEWLINE]Import if warehouse is below this level or export if warehouse exceeds this level.</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Exporter ce bien[COLOR_REVERT][PARAGRAPH:2]Gauche : maintenir le niveau[NEWLINE]Importer si l'entrepôt est inférieur à ce niveau ou exporter si l'entrepôt dépasse ce niveau.</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Güter exportieren[COLOR_REVERT][PARAGRAPH:2]Links: Lagerbestand einhalten[NEWLINE]Importieren, wenn der Lagerbestand unterhalb dieser Schwelle liegt.[NEWLINE]Exportieren, wenn der Lagerbestand oberhalb dieser Schwelle liegt.</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Esporta questo bene[COLOR_REVERT][PARAGRAPH:2]Sinistra: mantenere il livello[NEWLINE]Importa se il magazzino è sotto questo livello o esporta se il magazzino supera questo livello.</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Exportar este bien[COLOR_REVERT][PARAGRAPH:2]Izquierda: mantener el nivel[NEWLINE]Importar si el almacén está por debajo de este nivel o exportar si el almacén supera este nivel.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT</Tag>
         <English>Auto</English>
+        <French>Automatique</French>
+        <German>Automatisch</German>
+        <Italian>Automatico</Italian>
+        <Spanish>Automático</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP</Tag>
-        <English>Automatic turn export on and off at turn start[NEWLINE]Too many trade routes slow down the game. This feature lets you disable trade routes when there's nothing to transport.[NEWLINE]Remember that restarting exports won't take effect until the following turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
+        <English>[COLOR_HIGHLIGHT_TEXT]Automatic turn export ON/OFF at turn start[COLOR_REVERT][PARAGRAPH:2]A high number of trade routes slows down the game. This feature allows disabling trade routes when there's nothing to transport.[PARAGRAPH:2]Remember that restarting exports won't take effect until the next turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Activation/désactivation automatique des exportations au début du tour [COLOR_REVERT][PARAGRAPH:2]Un nombre élevé de routes commerciales ralentit le jeu. Cette fonctionnalité permet de désactiver les routes commerciales lorsqu'il n'y a rien à transporter.[PARAGRAPH:2]N'oubliez pas que le redémarrage des exportations ne prend effet qu'au tour suivant. Cela signifie qu'elle n'est pas bien adaptée aux cas où vous importez et exportez en même temps.</French>
+        <German>[COLOR_HIGHLIGHT_TEXT]Automatisches Ein- und Ausschalten des Exports bei Rundenbeginn[COLOR_REVERT][PARAGRAPH:2]Da eine hohe Anzahl von Handelsrouten das Spiel verlangsamt, ermöglicht diese Funktion es, Handelsrouten zu deaktivieren, wenn es nichts zu transportieren gibt.[PARAGRAPH:2]Denken Sie daran, dass das erneute Starten der Exporte erst in der nächsten Runde wirksam wird. Das heißt, es ist nicht gut geeignet für Fälle, in denen Sie gleichzeitig importieren und exportieren.</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Automatico attiva/disattiva le esportazioni all'inizio del turno[COLOR_REVERT][PARAGRAPH:2]Un alto numero di rotte commerciali rallenta il gioco. Questa funzione permette di disabilitare le rotte commerciali quando non c'è nulla da trasportare.[PARAGRAPH:2]Ricorda che il riavvio delle esportazioni non avrà effetto fino al turno successivo. Questo significa che non è adatto ai casi in cui si importa e si esporta allo stesso tempo.</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Activación/desactivación automática de la exportación al inicio del turno[COLOR_REVERT][PARAGRAPH:2]Un número elevado de rutas comerciales ralentiza el juego. Esta característica permite desactivar las rutas comerciales cuando no hay nada que transportar.[PARAGRAPH:2]Recuerda que el reinicio de las exportaciones no tendrá efecto hasta el siguiente turno. Esto significa que no es adecuado para los casos en los que se importa y exporta al mismo tiempo.</Spanish>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST</Tag>
         <English>The colony is in chaos. Nobody will be able to leave before order is restored.</English>
     </TEXT>

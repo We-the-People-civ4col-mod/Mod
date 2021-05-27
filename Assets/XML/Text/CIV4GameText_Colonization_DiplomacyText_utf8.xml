@@ -3959,7 +3959,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_HUAYNA_CAPAC_1</Tag>
-		<English>You look strange and sad, stranger. You pretend to be of high standing, but you are not carried on a palanquin, but on the back of a wild animal. You worship neither sun nor earth, only a tiny cross. You can't play snail trumpets or bone flutes, nor can you read the writing of knots. I see hardly any children among you, while I alone have 200 sons and daughters. You are so far behind us.</English>
+		<English>You look lost and sad, stranger. You pretend to be of high standing, yet you are not carried on a palanquin, but on the back of a wild animal. You worship neither sun nor earth, only a tiny cross. You can't play snail trumpets or bone flutes, nor can you read the writing of knots. I see hardly any children among you, while I alone have 200 sons and daughters. You are so far behind us.</English>
 		<French>Les [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] souhaitent la bienvenue aux glorieux [CT_CIV_ADJ:3] et à leur chef, [CT_NAME]. Si vous jouez le jeu avec nous, nous jouerons le jeu avec vous.</French>
 		<German>Seltsam und armselig wirkt Ihr, Fremder. Ihr gebt vor, von hohem Stand zu sein, doch lasst Ihr Euch nicht in Sänften tragen, sondern auf dem Rücken wilder Tiere. Ihr betet weder Sonne noch Erde an, sondern ein kleines Kreuz. Ihr kennt weder Schneckentrompeten noch Knochenflöten und auch nicht die Knotenschrift. Ich sehe kaum Kinder bei Euch, während ich alleine 200 Söhne und Töchter habe. Ihr dauert mich.</German>
 		<Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] dà il benvenuto alla popolazione [CT_CIV_ADJ] e alla loro guida, [CT_NAME]. Giochiamo insieme alla palla cerimoniale.</Italian>
@@ -3983,7 +3983,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MONTEZUMA_1</Tag>
-		<English>You must be a protégé of the gods, that they allow you to land on my shores. Thirteen slave children were sacrificed to them this morning on the altar of the sun so that your intentions might be revealed to me - unfortunately in vain. I will spare your lives now, but do not mistake my caution for weakness.</English>
+		<English>You must be a protégé of the gods, that they allow you to land on my shores. Thirteen slave children were sacrificed to them this morning on the Altar of the Sun so that your intentions might be revealed to me - unfortunately in vain. I will spare your lives now, but do not mistake my caution for weakness.</English>
 		<French>Je suis le chef des [OUR_CIV_ADJ:3], le grand et puissant [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]! Je vous souhaite la bienvenue dans mon empire et vous propose la paix. Mais je vous avertis, ne prenez pas cette proposition pour de la faiblesse ou je vous ferai immoler.</French>
 		<German>Ihr scheint ein Schützling der Götter zu sein, dass Sie Euch gestatten, die Gestade meiner Küste zu betreten. Ich habe ihnen heute morgen dreizehn Kinder auf dem Sonnenaltar opfern lassen, damit mir Eure Absichten offenbart werden - leider vergeblich. Vorerst werde ich Euer Leben schonen, doch verwechselt meine Vorsicht nicht mit Schwäche.</German>
 		<Italian>Sono il leader del popolo [OUR_CIV_ADJ], il grande e potente [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT]! Ti do il benvenuto nel mio impero e ti offro la pace. Ma ti avverto: non fare l'errore di considerare quest'offerta come un segno di debolezza, o ti farò condurre all'altare sacrificale.</Italian>
@@ -4119,7 +4119,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_MONTEZUMA_1</Tag>
-		<English>If you want to talk, go to the altar of the sun, [CT_NAME]. You can say one last word to the high priest before he cuts out your heart!</English>
+		<English>If you want to talk, go to the Altar of the Sun, [CT_NAME]. You can say one last word to the high priest before he cuts out your heart!</English>
 		<French>Parlez plutôt à ma lame de cérémonie, [CT_NAME].</French>
 		<German>Wenn Ihr reden wollt, geht zum Sonnenaltar, [CT_NAME]. Ihr könnt ein letzes Wort an den Hohepriester richten, bevor er Euch das Herz herausschneidet!</German>
 		<Italian>Perché non ne discuti con la lama cerimoniale, [CT_NAME]?</Italian>
@@ -4255,7 +4255,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_MONTEZUMA_1</Tag>
-		<English>You speak to me. Do I know you? You all look alike to me. White men with wild eyes and a hounded look. Come with me. I will lead you to the altar of the sun. Your destiny awaits you there. You don't want to? Then get out while you still can.</English>
+		<English>You speak to me. Do I know you? You all look alike to me. White men with wild eyes and a hounded look. Come with me. I will lead you to the Altar of the Sun. Your destiny awaits you there. You don't want to? Then get out while you still can.</English>
 		<French>Non. Nous n'avons pas encore exterminé assez de guerriers [CT_CIV_ADJ:3] pour étancher la soif de sang de nos dieux. Essayez plus tard.</French>
 		<German>Ihr sprecht mich an. Kenne ich Euch? In meinen Augen seht Ihr alle gleich aus. Weiße Männer mit wilden Augen und einem gehetzten Blick. Kommt mit, ich führe Euch zum Sonnenaltar. Dort wartet Eure Bestimmung auf Euch. Ihr wollt nicht? Dann verschwindet, solange Ihr es noch könnt.</German>
 		<Italian>No, non abbiamo ancora sacrificato abbastanza guerrieri [CT_CIV_ADJ:3] per placare l'infinita sete di sangue degli dei. Prova più tardi.</Italian>
@@ -4527,7 +4527,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_MONTEZUMA_1</Tag>
-		<English>So far we have spared you, [CT_NAME]. Now the altar of the sun awaits you. Your heart will beat in my hands.</English>
+		<English>So far we have spared you, [CT_NAME]. Now the Altar of the Sun awaits you. Your heart will beat in my hands.</English>
 		<French>Dites-moi, [CT_NAME]... Qu'ont bien pu faire les [CT_CIV_SHORT] aux dieux pour qu'ils les punissent au point de vous mettre à leur tête ?</French>
 		<German>Bislang haben wir Euch verschont, [CT_NAME]. Nun wartet der Sonnenaltar auf Euch. Euer Herz wird in meinen Händen zucken.</German>
 		<Italian>Dimmi, [CT_NAME], cosa ha fatto [CT_CIV_SHORT:2] perché gli dei si siano adirati a tal punto da fornire loro un leader come te?</Italian>
@@ -5031,7 +5031,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_LIVE_AMONG_NATIVES_1</Tag>
-		<English>Like children you appear to us, innocent and unlearned. Be our guest in %s1_city for a while and we will teach you to become a %s2_teach_unit.</English>
+		<English>Like children you appear to us, unknowing and innocent. Be our guest in %s1_city for a while and we will teach you to become a %s2_teach_unit.</English>
 		<French>Passez quelques temps dans ma tribu, dans [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]; vous apprendrez à connaître les [COLOR_UNIT_TEXT]%s2:3_teach_unit[COLOR_REVERT].</French>
 		<German>Wie Kinder erscheint Ihr uns, unwissend und unschuldig. Seid eine Weile unser Gast in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] und wir unterrichten Euch, damit Ihr ein [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT] werdet.</German>
 		<Italian>Passa un po' di tempo con la mia tribù a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] e ti insegneremo le tecniche dell'unità [COLOR_UNIT_TEXT]%s2_teach_unit[COLOR_REVERT].</Italian>
@@ -5047,7 +5047,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_LIVE_AMONG_NATIVES_REJECT_1</Tag>
-		<English>Maybe later</English>
+		<English>Maybe later.</English>
 		<French>Peut-être plus tard</French>
 		<German>Vielleicht später</German>
 		<Italian>Magari più tardi</Italian>
@@ -5321,7 +5321,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_TREASURE_TRANSPORT_1</Tag>
-		<English>A treasure! Well, well. This New World seems to have riches. A Royal galleon can ferry the valuables home. Leave the find to the Crown, you will receive %d2[ICON_GOLD] from us instantly, and you can get back to your daily business.</English>
+		<English>A treasure! Well, well. This New World seems to have riches. A Royal Galleon can ferry the valuables home. Leave the find to the Crown, you will receive %d2[ICON_GOLD] from Us instantly, and you can get back to your daily business.</English>
 		<French>Un trésor ! Désirez-vous que je le fasse acheminer au pays à bord de mes galions ? Il ne vous en coûtera qu'une faible commission de %d1%%. Quant à vous, vous toucherez immédiatement %d2[ICON_GOLD].</French>
 		<German>Ein Schatz! Sieh an. Diese Neue Welt scheint über gewisse Reichtümer zu verfügen. Nun, eine Königliche Galeone kann die Pretiosen in die Heimat überführen. Überlasst den Fund der Krone, und Ihr erhaltet von Uns stante pede %d2[ICON_GOLD] und könnt Euch danach wieder Eurem Tagesgeschäft widmen.</German>
 	</TEXT>
@@ -5363,13 +5363,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_2</Tag>
-		<English>Thank You, Your Majesty. No, thank you.</English>
+		<English>Thank You, Your Majesty, but no thank you.</English>
 		<French>Non merci, Seigneur.</French>
 		<German>Danke, Eure Majestät. Nein, danke.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_3</Tag>
-		<English>You are a wise man, Your Majesty! But so am I.</English>
+		<English>You are a wise man, Your Majesty! So am I.</English>
 		<French>Non merci, Seigneur.</French>
 		<German>Ihr seid ein kluger Mann, Eure Majestät ! Ich aber auch.</German>
 	</TEXT>
@@ -5453,7 +5453,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_8</Tag>
-		<English>We are delighted that fate has brought you to our village.</English>
+		<English>We are delighted that destiny has brought you to our village.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Lebt wohl! Und habt Dank, dass ich meine Wasserflasche füllen durfte.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5461,7 +5461,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_9</Tag>
-		<English>I'm recovering now, thanks to your shaman who had the skill to sear my injury with a hot coal.</English>
+		<English>I'm recovering now, thanks to your shaman who had the skill to sear my wound with a hot coal.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Dann kann ich weiterziehen! Dank Eures Schamanen, der mir mit seiner heiligen Holzkohle dieses gewaltige Furunkel aus dem Arsch gebrannt hat.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5509,7 +5509,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_15</Tag>
-		<English>I'm afraid I have to move on. Please excuse me for not trying your steamed leeches. In Europe we're used to eels.</English>
+		<English>Please excuse me for not trying your steamed leeches. In Europe we're used to eels.</English>
 		<French>Nous sommes ravis que le destin vous ait mené à notre village.</French>
 		<German>Ich muss jetzt leider weiterziehen. Und entschuldigt bitte, dass ich die gedünsteten Egel nicht probieren wollte.</German>
 		<Italian>Siamo contenti che il destino ci abbia portato al vostro villaggio.</Italian>
@@ -5565,7 +5565,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIFT_SHIP_1</Tag>
-		<English>Thank you, Your Majesty. Please be so gracious as to forgive my clumsiness.</English>
+		<English>Thank You, Your Majesty. Please be so gracious as to forgive my clumsiness.</English>
 		<French>Merci, votre Majesté.</French>
 		<German>Habt Dank, Eure Majestät. Und seid bitte so gnädig, mir mein Ungeschick zu verzeihen.</German>
 		<Italian>Grazie, vostra maestà.</Italian>
@@ -5573,7 +5573,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_KING_ASK_FOR_GOLD_1</Tag>
-		<English>Be congratulated, Governor. The Crown shows itself gracious and grants you an opportunity to please your King. %d1[ICON_GOLD] should suffice.</English>
+		<English>Be congratulated, Governor. The Crown shows itself gracious and grants you an opportunity to please Your King. %d1[ICON_GOLD] should suffice.</English>
 		<French>Veuillez immédiatement nous faire parvenir %d1[ICON_GOLD].</French>
 		<German>Seid beglückwünscht, Gouverneur. Die Krone zeigt sich huldvoll und gewährt Euch eine Gelegenheit, Eurem König gefällig zu sein. %d1[ICON_GOLD] dürften genügen.</German>
 		<Italian>Consegna immediatamente %d1[ICON_GOLD].</Italian>
@@ -5589,7 +5589,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_KING_ASK_FOR_GOLD_3</Tag>
-		<English>Malicious tongues within Our government hint that your loyalty to the Crown is no longer what it was when you left for the New World. Send Your Majesty %d1[ICON_GOLD] to shut your critics' loose mouths.</English>
+		<English>Malicious tongues within Our Government hint that your loyalty to the Crown is no longer what it was when you left for the New World. Send Your Majesty %d1[ICON_GOLD] to shut your critics' loose mouths.</English>
 		<French>[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] traverse une période difficile. Un don généreux de %d1[ICON_GOLD] serait fortement apprécié.</French>
 		<German>Böse Zungen in Unserem Beamtenkabinett munkeln, Eure Loyalität gegenüber der Krone sei nicht mehr so ehern geschmiedet wie bei Eurer Abreise in die Neue Welt. Schickt Eurer Majestät %d1[ICON_GOLD], um Euren Kritikern den losen Mund zu stopfen.</German>
 		<Italian>Sono tempi duri per [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. %d1[ICON_GOLD] ci farebbero comodo.</Italian>
@@ -5621,7 +5621,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_KING_ASK_FOR_GOLD_7</Tag>
-		<English>All of Europe is talking about the new King of Saxony, how much he spends on his little country. He has a new palace on the beautiful Elbe. The buildings are exquisite. Send Us %d1[ICON_GOLD] so We may entice his architects away from this fool!</English>
+		<English>All of Europe is talking about the new King of Saxony, how much he spends on his little country. He has a new palace on the beautiful Elbe. The buildings are exquisite. Send Us %d1[ICON_GOLD] so We may entice the architects away from this fool!</English>
 		<French>Vous pouvez embrasser ma chevalière pour la modique somme de %d1[ICON_GOLD].</French>
 		<German>Ganz Europa redet vom neuen König von Sachsen und dem Prunk, den er seinem Ländchen schenkt. Einen Zwinger und ein Lustschloss an der schönen Elbe hat er erbaut, und diese Bauwerke sollen von erlesener Pracht sein. Schickt Uns %d1[ICON_GOLD], damit Wir diesem Cretin seine Architekten abwerben können!</German>
 		<Italian>Puoi baciarmi l'anello per l'ottimo prezzo di %d1[ICON_GOLD].</Italian>
@@ -5777,7 +5777,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_KING_ACCEPTED_GOLD_1</Tag>
-		<English>Thank you, Your Majesty.</English>
+		<English>Thank You, Your Majesty.</English>
 		<French>Merci, votre majesté.</French>
 		<German>Danke, Eure Majestät.</German>
 	</TEXT>

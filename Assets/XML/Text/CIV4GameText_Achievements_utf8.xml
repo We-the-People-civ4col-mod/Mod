@@ -207,13 +207,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES</Tag>
-        <English>Your fifteenth colony</English>
+        <English>Your Fifteenth Colony</English>
         <French>Votre quinzième colonie</French>
         <German>Eure fünfzehnte Siedlung</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_HEAD</Tag>
-        <English>A nation blossoms</English>
+        <English>A Growing Nation</English>
         <French>Votre quinzième colonie</French>
         <German>Eine Nation erblüht</German>
     </TEXT>
@@ -225,7 +225,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH</Tag>
-        <English>Your first house of God</English>
+        <English>Your First House of God</English>
         <French>Votre première église</French>
         <German>Euer erstes Gotteshaus</German>
     </TEXT>
@@ -243,7 +243,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES</Tag>
-        <English>Two houses of God</English>
+        <English>Two Houses of God</English>
         <French>Votre deuxième église</French>
         <German>Zwei Gotteshäuser</German>
     </TEXT>
@@ -255,13 +255,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_TEXT</Tag>
-        <English>Again, a pious topping-out ceremony was celebrated. Another place of worship now stands in this part of the world. "[COLOR_SELECTED_TEXT]Praise the Lord![COLOR_REVERT]", the faithful are shouting. "[COLOR_SELECTED_TEXT]Praise the Lord in heaven! And praise the Lord Governor, who has built these magnificent churches in honour of God.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>Your second church has been consecrated to the Almighty. Another place of worship now stands in this part of the world. "[COLOR_SELECTED_TEXT]Praise the Lord![COLOR_REVERT]", the faithful are shouting. "[COLOR_SELECTED_TEXT]Praise the Lord in heaven! And praise the Lord Governor, who has built these magnificent churches in honour of God.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Avec cette deuxième église, la population ne peut cacher sa joie : "[COLOR_SELECTED_TEXT]Loué soit le Seigneur![COLOR_REVERT]" s'exclame-t-on. "[COLOR_SELECTED_TEXT]Et loué soit notre gouverneur![COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
         <German>Wieder wurde ein frommes Richtfest gefeiert. Ein weiteres Gotteshaus steht nun in diesem Teil der Welt. "[COLOR_SELECTED_TEXT]Lobet den Herrn![COLOR_REVERT]" murmelt das Volk. "[COLOR_SELECTED_TEXT]Lobet den Herrn im Himmel! Und den Herrn Gouverneur, der Gott zu Ehren diese prachtvollen Kirchen errichten lässt.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES</Tag>
-        <English>Three houses of God</English>
+        <English>Three Houses of God</English>
         <French>Votre troisième église</French>
         <German>Drei Gotteshäuser</German>
         <Italian>Your third church</Italian>
@@ -269,7 +269,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_HEAD</Tag>
-        <English>The godliness of the Governor</English>
+        <English>The Godliness of the Governor</English>
         <French>Votre troisième église</French>
         <German>Die Gottesfurcht des Gouverneurs</German>
     </TEXT>
@@ -281,13 +281,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL</Tag>
-        <English>Your first cathedral</English>
+        <English>Your First Cathedral</English>
         <French>Votre première cathédrale</French>
         <German>Eure erste Kathedrale</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_HEAD</Tag>
-        <English>Your first cathedral</English>
+        <English>Your First Cathedral</English>
         <French>Votre première cathédrale</French>
         <German>Eure erste Kathedrale</German>
     </TEXT>
@@ -359,13 +359,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_HEAD</Tag>
-        <English>Locked out</English>
+        <English>Safe At Last</English>
         <French>Enfin protégés !</French>
         <German>Ausgesperrt</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_TEXT</Tag>
-        <English>You have built your first stockade.[NEWLINE][NEWLINE]Suddenly a shadow fills the doorway, blocking out the evening sun.[NEWLINE][NEWLINE]The woman is startled as the shadow touches her - but then she looks up and smiles.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A beautiful evening, darling,[COLOR_REVERT]" the man says amiably. "[COLOR_SELECTED_TEXT]Where is our little one?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isn't he playing with the chickens outside the door?[COLOR_REVERT]" she asks, worried again.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Be calm. We finished the defence work today. No wolf will be skulking around our houses, looking for a chicken. Or something bigger.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have built your first stockade.[NEWLINE][NEWLINE]Suddenly a shadow fills the doorway, blocking out the evening sun.[NEWLINE][NEWLINE]The woman is startled as the shadow touches her - but then she looks up and smiles.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A beautiful evening, darling,[COLOR_REVERT]" the man says amiably. "[COLOR_SELECTED_TEXT]Where is our little one?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isn't he playing with the chickens outside the door?[COLOR_REVERT]" she asks, worried again.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Be calm. We finished putting up the palisades today. No wolf will be skulking around our houses, looking for a chicken. Or something bigger.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Une femme s'approche appeurée d'un soldat : « Mon fils est parti pourchassé un poulet et ne le retrouve plus, je crains pour sa sécurité ! » « N'ayez aucune crainte », lui répond le soldat, « avec notre nouvelle défense, les loups n'erreront plus dans nos rues. »[NEWLINE][NEWLINE]</French>
         <German>Ein Schatten steht plötzlich im Türrahmen und verdeckt die Abendsonne. Die Frau erschrickt, als sie der Schatten berührt - doch als sie aufsieht, lächelt sie. "[COLOR_SELECTED_TEXT]Guten Abend, Eheweib[COLOR_REVERT]", brummt der Mann freundlich. "[COLOR_SELECTED_TEXT]Wo steckt denn unser Kleiner?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Spielt er denn nicht vor der Tür mit den Hühnern?[COLOR_REVERT]" fragt sie zurück und ist erneut besorgt. "[COLOR_SELECTED_TEXT]Beruhige dich, Weib. Wir sind heute mit dem Verteidigungswerk fertig geworden. Kein Wolf wird mehr zwischen den Häusern umherstreifen, auf der Suche nach einem Huhn. Oder etwas Größerem.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -612,7 +612,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_HEAD</Tag>
-        <English>The gold of the natives</English>
+        <English>Native Gold</English>
         <French>Vous avez rencontré trois peuples indigènes</French>
         <German>Das Gold der Wilden</German>
     </TEXT>
@@ -630,7 +630,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_HEAD</Tag>
-        <English>This land is not ours alone</English>
+        <English>There Are Other People Here</English>
         <French>Vous avez rencontré cinq peuples indigènes</French>
         <German>Dieses Land gehört uns nicht alleine</German>
     </TEXT>
@@ -648,7 +648,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_HEAD</Tag>
-        <English>Native diversity</English>
+        <English>Many Native Nations</English>
         <French>Vous avez rencontré vingt peuples indigènes</French>
         <German>Indianische Vielfalt</German>
     </TEXT>
@@ -666,7 +666,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_HEAD</Tag>
-        <English>The first trade agreement</English>
+        <English>The First Trade Agreement</English>
         <French>Premier échange commercial</French>
         <German>Der erste Handelskontrakt</German>
     </TEXT>
@@ -688,7 +688,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_HEAD</Tag>
-        <English>Thousand goods traded</English>
+        <English>A Thousand Goods Traded</English>
         <French>Un millier d'échanges commerciaux</French>
         <German>Tausend Waren gehandelt</German>
         <Italian>Many trade agreements</Italian>
@@ -712,7 +712,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_HEAD</Tag>
-        <English>Three thousand goods traded</English>
+        <English>Three Thousand Goods Traded</English>
         <French>Un très grand nombre d'échanges commerciaux</French>
         <German>Dreitausend Waren gehandelt</German>
         <Italian>A large number of trade agreements</Italian>
@@ -736,7 +736,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_HEAD</Tag>
-        <English>Ten thousand goods traded</English>
+        <English>Ten Thousand Goods Traded</English>
         <French>Dix mille échanges commerciaux !</French>
         <German>Zehntausend Waren gehandelt</German>
         <Italian>A very large number of trade agreements</Italian>
@@ -760,7 +760,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_HEAD</Tag>
-        <English>One life against another</English>
+        <English>Gunsmoke</English>
         <French>Votre première victoire</French>
         <German>Ein Leben gegen das andere</German>
         <Italian>Your first military victory</Italian>
@@ -784,7 +784,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_HEAD</Tag>
-        <English>Ten military victories</English>
+        <English>Ten Victories</English>
         <French>Dixième victoire militaire !</French>
         <German>Zehn siegreiche Gefechte</German>
         <Italian>Your tenth military victory</Italian>
@@ -808,7 +808,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_HEAD</Tag>
-        <English>Blood red</English>
+        <English>Blood Red</English>
         <French>Quarantième victoire militaire</French>
         <German>Blutrot</German>
         <Italian>Forty military victories</Italian>
@@ -832,7 +832,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_HEAD</Tag>
-        <English>Playing the hero</English>
+        <English>Playing the Hero</English>
         <French>Soixante-dizième victoire militaire</French>
         <German>Den Helden spielen</German>
         <Italian>Seventy military victories</Italian>
@@ -856,7 +856,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_HEAD</Tag>
-        <English>In the shadow of war</English>
+        <English>War's Shadow</English>
         <French>Centième victoire militaire</French>
         <German>Im Schatten des Krieges</German>
         <Italian>Your hundredth military victory</Italian>
@@ -880,7 +880,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY_HEAD</Tag>
-        <English>Ten victorious naval actions</English>
+        <English>Ten Victorious Naval Actions</English>
         <French>Your tenth military victory at sea</French>
         <German>Zehn siegreiche Seegefechte</German>
         <Italian>Your tenth military victory at sea</Italian>
@@ -1704,7 +1704,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_TEXT</Tag>
-        <English>Your colonists begin to produce cigars.[NEWLINE][NEWLINE]You have just inhaled the smoke deeply and now it is pouring out of your mouth and nose. Disgusting! you think.[NEWLINE][NEWLINE]Perhaps even unnatural? After all, smoke is supposed to come out of Satan's nostrils, too.[NEWLINE][NEWLINE]You sniff. It does not smell sulphurous. Perhaps it is not Beelzebub at work after all.[NEWLINE][NEWLINE]You remember what the native interpreter told you. "[COLOR_SELECTED_TEXT]Tobacco soothes every ailment and refreshes the spirit[COLOR_REVERT]", he claimed. Maybe not a true story, but one that arouses curiosity.[NEWLINE][NEWLINE]You decide to tell it to the traders in Europe when you bring them the first cigars from the New World.[NEWLINE][NEWLINE]</English>
+        <English>Your colonists begin to produce cigars.[NEWLINE][NEWLINE]You have just inhaled the smoke deeply and now it is pouring out of your mouth and nose. Disgusting! you think.[NEWLINE][NEWLINE]Perhaps even unnatural? After all, smoke is supposed to come out of Satan's nostrils, too.[NEWLINE][NEWLINE]You sniff. It does not smell sulphurous. Perhaps it is not Beelzebub at work after all.[NEWLINE][NEWLINE]You remember what the Native interpreter told you. "[COLOR_SELECTED_TEXT]Tobacco soothes every ailment and refreshes the spirit[COLOR_REVERT]", he claimed. Maybe not a true story, but one that arouses curiosity.[NEWLINE][NEWLINE]You decide to tell it to the traders in Europe when you bring them the first cigars from the New World.[NEWLINE][NEWLINE]</English>
         <French>Grâce à cette première maison, vos colons sont en mesure de produire des cigares.[NEWLINE][NEWLINE]</French>
         <German>Eben habt Ihr den Qualm tief eingeatmet, jetzt quillt er Euch aus Mund und Nase wieder aus dem Leib. Widerwärtig! denkt Ihr.[NEWLINE][NEWLINE]Vielleicht auch widernatürlich? Immerhin soll auch Satan Rauch aus den Nüstern fahren.[NEWLINE][NEWLINE]Ihr schnuppert. Schwefelig riecht es nicht, vielleicht ist doch nicht der Beelzebub am Werke.[NEWLINE][NEWLINE]Ihr denkt daran, was Euch der eingeborene Dolmetscher erzählt hat. "[COLOR_SELECTED_TEXT]Tabak lindere jedes Leiden und erquicke den Geist[COLOR_REVERT]", hat er behauptet. Vielleicht keine wahre Geschichte, aber eine, die die Neugierde weckt.[NEWLINE][NEWLINE]Ihr beschließt, sie auch den Händlern in Europa zu erzählen, wenn Ihr ihnen die ersten Zigarren aus der Neuen Welt bringt.[NEWLINE][NEWLINE]</German>
         <Italian>Your colonists begin to produce cigars.</Italian>
@@ -2088,7 +2088,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE_TEXT</Tag>
-        <English>"[COLOR_SELECTED_TEXT]Governor, a political refugee has arrived in the New World.[NEWLINE][NEWLINE]We hear he is an educated and politically enlightened man. You may want to appoint him as an administrator or even a doctor.[NEWLINE][NEWLINE]However, this stranger will best serve your colony if you put him in a schoolhouse, college or university. He will quickly learn whichever profession you need most in the colony. Trust me![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>"[COLOR_SELECTED_TEXT]Governor, a political refugee has arrived in the New World.[NEWLINE][NEWLINE]We hear he is an educated and politically enlightened man. You may want to appoint him as an administrator or even a doctor.[NEWLINE][NEWLINE]This newcomer will best serve your colony if you put him in a schoolhouse, college or university. He will quickly learn whichever profession you need most in the colony. Trust me![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Gouverneur, es ist wieder ein politischer Flüchtling in der Neuen Welt angekommen.[NEWLINE][NEWLINE]Wie man hört, ist er ein gebildeter und politisch aufgeklärter Mann. Ihr solltet ihn eventuell als Verwaltungsbeamten oder auch als Doktor einsetzen.[NEWLINE][NEWLINE]Am besten dient dieser Fremde Eurer Kolonie jedoch, wenn Ihr ihn in eine Schule, Akademie oder Universität steckt. Er wird schnell einen Beruf erlernen, den Ihr derzeit in den Kolonien ganz besonders benötigt. Vertraut mir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
         <Italian>You have recruited your first political refugee. Political refugees are very good students and should be educated in schools/universities or at least be used as statesman or healer.[NEWLINE][NEWLINE]</Italian>
