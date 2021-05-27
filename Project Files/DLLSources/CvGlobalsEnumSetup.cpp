@@ -131,7 +131,7 @@ void CvGlobals::postXMLLoad(bool bFirst)
 				continue;
 			}
 			++iCounter;
-			if (iCounter == 6)
+			if (iCounter == 8)
 			{
 				// all found. No need to loop the rest
 				break;
