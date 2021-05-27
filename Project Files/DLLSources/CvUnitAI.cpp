@@ -2282,7 +2282,7 @@ void CvUnitAI::AI_defensiveMove()
 	// BETTER_BTS_AI_MOD, Settler AI, 09/18/09, jdog5000: START
 	if (!plot()->isOwned())
 	{
-		if (AI_group(UNITAI_SETTLER, 1, -1, -1, false, false, false, 2, true))
+		if (AI_group(UNITAI_SETTLER, 1, 1, -1, false, false, false, 2, true))
 		{
 			return;
 		}
@@ -13827,7 +13827,6 @@ bool CvUnitAI::AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack, bool 
 {
 	PROFILE_FUNC();
 
-	FAssert(canMove());
 	FAssert(canMove());
 
 	int iSearchRange = bFollow ? 1 : AI_searchRange(iRange);
