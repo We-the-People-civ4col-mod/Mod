@@ -3125,10 +3125,10 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
 			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eYield, L"", pCity->getImportsLimit(eYield), 10, 0xFFFF, 0);
 			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, eYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_IMPORT_HELP").getWithoutFormatting());
 			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isImport(eYield), eYield);
 			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->getImportsMaintain(eYield), eYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER") + L"</font>", eYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_FEEDER_HELP").getWithoutFormatting());
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 
 			// export
@@ -3139,10 +3139,10 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"", kYield.getButton(), -1, WIDGET_HELP_YIELD, eYield);
 			gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eExportYield, L"", pCity->getMaintainLevel(eYield), 10, 0xFFFF, 0);
 			gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 2, eExportYield, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_HELP").getWithoutFormatting());
 			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->isExport(eYield), eExportYield);
 			gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 1, pCity->isAutoExport(eYield), eExportYield);
-			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP"));
+			gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 1, L"<font=1>" + gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT") + L"</font>", eExportYield, gDLL->getText("TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP").getWithoutFormatting());
 			gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 			// R&R mod, vetiarvind, max yield import limit - end
 		}
@@ -3174,7 +3174,7 @@ bool CvDLLButtonPopup::launchTeacherListPopup(CvPopup* pPopup, CvPopupInfo &info
 		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_TEXT", pCity->getNameKey()));
 		gDLL->getInterfaceIFace()->popupStartHLayout(pPopup, 0);
 		gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, 1, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
-		gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_TEXT"), 1, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_HELP"));
+		gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_TEXT"), 1, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_HELP").getWithoutFormatting());
 		gDLL->getInterfaceIFace()->popupEndLayout(pPopup);
 		for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); iUnitClass++)
 		{
@@ -3193,7 +3193,7 @@ bool CvDLLButtonPopup::launchTeacherListPopup(CvPopup* pPopup, CvPopupInfo &info
 			{
 				gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, CvWString::format(L" %d%c", iPrice, gDLL->getSymbolID(GOLD_CHAR)));
 				gDLL->getInterfaceIFace()->popupCreateCheckBoxes(pPopup, 1, eUnit, WIDGET_GENERAL, POPUP_LAYOUT_TOP);
-				gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_TEXT"), eUnit, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP"));
+				gDLL->getInterfaceIFace()->popupSetCheckBoxText(pPopup, 0, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_TEXT"), eUnit, gDLL->getText("TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP").getWithoutFormatting());
 				gDLL->getInterfaceIFace()->popupSetCheckBoxState(pPopup, 0, pCity->getOrderedStudentsRepeat(eUnit), eUnit);
 				gDLL->getInterfaceIFace()->popupCreateSpinBox(pPopup, eUnit, L"", pCity->getOrderedStudents(eUnit), 1, 50, 0);
 			} else {

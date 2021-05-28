@@ -48,6 +48,36 @@ public:
 		}
 	}
 
+	// Function to remove formatting added in gDLL->getText
+	// This is useful for text in places where the exe won't allow formatting.
+	//    Nightinggale
+	CvWString getWithoutFormatting() const
+	{
+		CvWString szOutput;
+		const wchar* pChar = GetCString();
+		while (pChar != NULL && *pChar != NULL)
+		{
+			if (*pChar == '<')
+			{
+				do
+				{
+					++pChar;
+				}
+				while (pChar != NULL && *pChar != '>');
+				if (*pChar == '>')
+				{
+					++pChar;
+				}
+			}
+			else
+			{
+				szOutput.append(pChar, 1);
+				++pChar;
+			}
+		}
+		return szOutput;
+	}
+
 	// FString compatibility
 	const wchar* GetCString() const 	{ return c_str(); }
 

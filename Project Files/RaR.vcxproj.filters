@@ -612,9 +612,6 @@
     <ClInclude Include="DLLSources\CvSelectionGroupAI.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\CvString.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\CvStructs.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
@@ -839,6 +836,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\NetworkDataPacking.h">
       <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvString.h">
+      <Filter>Misc\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
