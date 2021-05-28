@@ -67,6 +67,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -455,6 +459,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -954,6 +962,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -1348,6 +1360,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -1931,6 +1947,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -2795,6 +2815,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3275,6 +3299,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -3685,6 +3713,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -4101,6 +4133,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -4495,6 +4531,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -4895,6 +4935,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -5289,6 +5333,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -5689,6 +5737,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6086,6 +6138,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -6480,6 +6536,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -6888,6 +6948,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -7290,6 +7354,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -7698,6 +7766,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8103,6 +8175,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8500,6 +8576,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -8886,6 +8966,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -9286,6 +9370,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -9672,6 +9760,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -10064,6 +10156,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10453,6 +10549,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -10834,6 +10934,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -11207,6 +11311,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -11623,6 +11731,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12036,6 +12148,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -12442,6 +12558,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -12854,6 +12974,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13259,6 +13383,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -13661,6 +13789,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -14073,6 +14205,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14482,6 +14618,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -14888,6 +15028,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -15304,6 +15448,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -15714,6 +15862,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -16130,6 +16282,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16543,6 +16699,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -16948,6 +17108,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -17350,6 +17514,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -17766,6 +17934,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -18176,6 +18348,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -18600,6 +18776,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -19013,6 +19193,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22139,6 +22323,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -22512,6 +22700,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -22903,6 +23095,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -23280,6 +23476,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -25493,6 +25693,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -25868,6 +26072,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -26223,6 +26431,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -26615,6 +26827,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -27031,6 +27247,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27444,6 +27664,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -27854,6 +28078,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -29038,6 +29266,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29468,6 +29700,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -29851,6 +30087,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -30231,6 +30471,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
@@ -31036,6 +31280,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31427,6 +31675,10 @@
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
                     <BuildType>BUILD_FARM</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
@@ -31765,6 +32017,10 @@
                 </Build>
                 <Build>
                     <BuildType>BUILD_RAILROAD</BuildType>
+                    <bBuild>1</bBuild>
+                </Build>
+                <Build>
+                    <BuildType>BUILD_REMOVE_ROAD</BuildType>
                     <bBuild>1</bBuild>
                 </Build>
                 <Build>

@@ -2098,6 +2098,32 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 	eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
 
+	// WTP, ray, removing Roads - START
+	// for now I additionally also hardcode eBuild (safest)
+	// or can I safely use NO_Route from eRoute
+	// BuildTypes BuildTypesToCompare = (BuildTypes) BUILD_REMOVE_ROAD;
+	if (eRoute == NO_ROUTE && eBuild == 3)
+	{
+		// never allow this to AI
+		if (!GET_PLAYER(ePlayer).isHuman())
+		{
+			return false;
+		}
+		// only allo this on own Terrain
+		if (GET_PLAYER(ePlayer).getTeam() != getTeam())
+		{
+			return false;
+		}
+		// only allow if there is a Road to Remove
+		if (getRouteType() == NO_ROUTE)
+		{
+			return false;
+		}
+
+		bValid = true;
+	}
+	// WTP, ray, removing Roads - END
+
 	if (eRoute != NO_ROUTE && !GC.getRouteInfo(eRoute).isGraphicalOnly()) //WTP, Nightinggale, Large Rivers - START
 	{
 		//WTP, ray, removed useless and confusing logic to prevent Roads for Peak being surrounded by Peaks
@@ -7418,6 +7444,13 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 			{
 				setImprovementType((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement());
 			}
+
+			// WTP, ray, removing Roads - START
+			if (GC.getBuildInfo(eBuild).getRoute() == NO_ROUTE && eBuild == 3)
+			{
+				setRouteType((RouteTypes)GC.getBuildInfo(eBuild).getRoute());
+			}
+			// WTP, ray, removing Roads - END
 
 			if (GC.getBuildInfo(eBuild).getRoute() != NO_ROUTE)
 			{

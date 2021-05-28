@@ -70,6 +70,27 @@
             <Button>Art\Interface\Game Hud\Actions\build_railroad_high_res.dds</Button>
         </BuildInfo>
         <BuildInfo>
+            <Type>BUILD_REMOVE_ROAD</Type>
+            <Description>TXT_KEY_REMOVE_ROAD</Description>
+            <Help>TXT_KEY_BUILD_REMOVE_HELP</Help>
+            <iTime>200</iTime>
+            <iCost>20</iCost>
+            <bKill>0</bKill>
+            <ImprovementType>NONE</ImprovementType>
+            <PrereqTerrainType>NONE</PrereqTerrainType>
+            <ResultTerrainType>NONE</ResultTerrainType>
+            <ResultFeatureType>NONE</ResultFeatureType>
+            <RouteType>NONE</RouteType>
+            <EntityEvent>ENTITY_EVENT_SHOVEL</EntityEvent>
+            <FeatureStructs/>
+            <HotKey/>
+            <bAltDown>0</bAltDown>
+            <bShiftDown>0</bShiftDown>
+            <bCtrlDown>0</bCtrlDown>
+            <iHotKeyPriority>0</iHotKeyPriority>
+            <Button>Art\Interface\Game Hud\Actions\remove_road_high_res.dds</Button>
+        </BuildInfo>
+        <BuildInfo>
             <Type>BUILD_FARM</Type>
             <Description>TXT_KEY_BUILD_FARM</Description>
             <Help>TXT_KEY_BUILD_FARM_HELP</Help>

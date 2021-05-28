@@ -278,4 +278,16 @@
         <English>Allows to cross [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
         <German>Erlaubt die Überquerung eines [LINK=TERRAIN_LARGE_RIVERS]Großen Flusses[\LINK]</German>
     </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_REMOVE_ROAD</Tag>
+        <English>Destroy a road</English>
+        <French>Destruire une route</French>
+        <German>Straße zerstören</German>
+        <Italian>Destruire una strada</Italian>
+        <Spanish>Destruir una carretera</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BUILD_REMOVE_HELP</Tag>
+        <English>????</English>
+    </TEXT>
 </Civ4GameText>
