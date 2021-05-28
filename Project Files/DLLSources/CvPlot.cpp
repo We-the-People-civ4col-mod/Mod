@@ -7445,17 +7445,18 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 				setImprovementType((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement());
 			}
 
-			// WTP, ray, removing Roads - START
-			if (GC.getBuildInfo(eBuild).getRoute() == NO_ROUTE && eBuild == 3)
-			{
-				setRouteType((RouteTypes)GC.getBuildInfo(eBuild).getRoute());
-			}
-			// WTP, ray, removing Roads - END
 
 			if (GC.getBuildInfo(eBuild).getRoute() != NO_ROUTE)
 			{
 				setRouteType((RouteTypes)GC.getBuildInfo(eBuild).getRoute());
 			}
+
+			// WTP, ray, removing Roads - START
+			else if (GC.getBuildInfo(eBuild).getRoute() == NO_ROUTE && eBuild == 3)
+			{
+				setRouteType(NO_ROUTE);
+			}
+			// WTP, ray, removing Roads - END
 
 			if (getFeatureType() != NO_FEATURE)
 			{
