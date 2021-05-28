@@ -73,7 +73,7 @@
             <Type>BUILD_REMOVE_ROAD</Type>
             <Description>TXT_KEY_REMOVE_ROAD</Description>
             <Help>TXT_KEY_BUILD_REMOVE_HELP</Help>
-            <iTime>200</iTime>
+            <iTime>400</iTime>
             <iCost>20</iCost>
             <bKill>0</bKill>
             <ImprovementType>NONE</ImprovementType>
