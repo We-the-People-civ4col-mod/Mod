@@ -5167,7 +5167,6 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 		{
 			return false;
 		}
-
 	}
 	// then we also check min turn - only if not 0
 	if (kGoody.getMinTurnValid() != 0)
@@ -5197,6 +5196,14 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 		{
 			return false;
 		}
+
+		// for Animals we also need to check the Terrain for immersion:
+		UnitTypes eUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kGoody.getUnitClassType())));
+		if(!GC.getUnitInfo(eUnit).getTerrainNative(pPlot->getTerrainType()))
+		{
+			return false;
+		}
+
 	}
 	// Hostile Natives should only spawned in Hostile Native Goody Huts - allows to configure immersive spawning
 	if (kGoody.isSpawnHostileNatives())
