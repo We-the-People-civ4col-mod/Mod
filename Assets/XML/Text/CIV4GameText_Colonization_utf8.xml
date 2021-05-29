@@ -863,7 +863,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_MAP</Tag>
-        <English>Please share a peace pipe and we will tell you of far away lands.</English>
+        <English>Please share a peace pipe and we will tell you of faraway lands.</English>
         <French>Venez partager le calumet de la paix et nous vous parlerons de terres lointaines.</French>
         <German>Lasst Euch nieder und rastet. Raucht eine Pfeife und lasst Euch von uns Geschichten über unsere Heimat erzählen, um Euren Geist zu erfrischen.</German>
         <Italian>Fumiamo il calumet della pace e ti racconterò di terre lontane.</Italian>
@@ -916,7 +916,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BETTER_TRADE_POST_RATE</Tag>
-        <English>[ICON_BULLET]Trade Posts are %D1%% more effective</English>
+        <English>[ICON_BULLET]Trading posts are %D1%% more effective</English>
         <German>[ICON_BULLET]Handelsposten sind %D1%% effektiver</German>
     </TEXT>
     <TEXT>
@@ -1483,7 +1483,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVIC_NATIVE_BORDERS</Tag>
-        <English>[ICON_BULLET]Colony borders dominate native borders</English>
+        <English>[ICON_BULLET]Colony borders dominate Native borders</English>
         <French>[ICON_BULLET]Les frontières du territoire prévalent sur les frontières indigènes.</French>
         <German>[ICON_BULLET]Koloniegrenzen beherrschen die Ureinwohnergrenzen</German>
         <Italian>[ICON_BULLET]I confini coloniali dominano i confini dei nativi</Italian>
@@ -1523,7 +1523,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_NO_GOODY</Tag>
-        <English>[ICON_BULLET]Cannot receive [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] from Ancient Ruins</English>
+        <English>[ICON_BULLET]Cannot receive [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] from ancient ruins</English>
         <French>[ICON_BULLET]Impossible de trouver un bonus : %s2_goody en explorant des ruines.</French>
         <German>[ICON_BULLET]Nicht möglich, [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] durch Antike Ruinen zu erhalten</German>
         <Italian>[ICON_BULLET]Non può ricevere [COLOR_HIGHLIGHT_TEXT]%s2_goody[COLOR_REVERT] dalle antiche rovine</Italian>
@@ -1563,7 +1563,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_HEALING</Tag>
-        <English>A native tribe has healed your unit!</English>
+        <English>A Native tribe has healed your unit!</English>
         <French>Une tribu indigène a soigné votre unité !</French>
         <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
         <Italian>Una tribù di nativi ha curato l'unità!</Italian>
@@ -1571,7 +1571,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
-        <English>You have offended the natives, who attack your unit in revenge!</English>
+        <English>You have offended the Natives, who attack your unit in revenge!</English>
         <French>Vous avez offensé les indigènes qui attaquent votre unité en représailles !</French>
         <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
         <Italian>Hai offeso i nativi, che attaccano la tua unità!</Italian>
@@ -1579,7 +1579,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_BURIAL_GROUNDS</Tag>
-        <English>You have discovered what appear to be native burial grounds. Do you wish to search for treasure?</English>
+        <English>You have discovered what appear to be Native burial grounds. Do you wish to search for treasure?</English>
         <French>Vous avez découvert ce qui semble être un cimetière indigène. Voulez-vous explorer ce trésor? </French>
         <German>Ihr habt etwas entdeckt, das wie eine Ureinwohner-Grabstätte aussieht. Wollt Ihr nach Schätzen suchen?</German>
         <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
@@ -1587,7 +1587,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_WAR</Tag>
-        <English>You have gravely offended the natives, who declare war on you in revenge!</English>
+        <English>You have gravely offended the Natives, who declare war on you in revenge!</English>
         <French>Vous avez offensé les indigènes qui vous déclarent la guerre en représailles !</French>
         <German>Ihr habt die Ureinwohner beleidigt. Sie erklären Euch aus Rache den Krieg!</German>
         <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
@@ -1595,7 +1595,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_SCOUT</Tag>
-        <English>Your unit is now a [COLOR_UNIT_TEXT]Seasoned Scout[COLOR_REVERT]</English>
+        <English>Your unit is now a [COLOR_UNIT_TEXT]seasoned scout[COLOR_REVERT]</English>
         <French>Votre unité est à présent un [COLOR_UNIT_TEXT]Eclaireur aguerri[COLOR_REVERT]</French>
         <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT]</German>
         <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT]</Italian>
@@ -1619,7 +1619,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CAN_FOUND</Tag>
-        <English>[ICON_BULLET]Can Found new Colonies</English>
+        <English>[ICON_BULLET]Can Found New Colonies</English>
         <French>[ICON_BULLET]Peut fonder de nouvelles colonies</French>
         <German>[ICON_BULLET]Kann neue Kolonien gründen</German>
         <Italian>[ICON_BULLET]Può fondare nuove colonie</Italian>
@@ -1667,7 +1667,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_LEARN_TIME_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% time spent Living Among Natives to Learn a new Skill</English>
+        <English>[ICON_BULLET]%D1%% time spent living among Natives to learn a new skill</English>
         <French>[ICON_BULLET]Temps passé à vivre parmi les indigènes pour apprendre une nouvelle technique %D1%%</French>
         <German>[ICON_BULLET]%D1%% Zeit bei Ureinwohnern verbracht, um neue Fähigkeit zu erlernen</German>
         <Italian>[ICON_BULLET]%D1%% tempo passato tra i nativi a imparare nuove abilità</Italian>
@@ -1691,7 +1691,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DELETE_TRADE_ROUTE</Tag>
-        <English>Delete this Trade Route</English>
+        <English>Delete This Trade Route</English>
         <French>Supprimer cette route commerciale</French>
         <German>Diesen Handelsweg löschen</German>
         <Italian>Elimina questa rotta commerciale</Italian>
@@ -1867,7 +1867,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_DEFENSE_MODIFIER_EXTRA</Tag>
-        <English>[ICON_BULLET]Acts as a Settlement for combat purposes</English>
+        <English>[ICON_BULLET]Acts as a settlement for combat purposes</English>
         <French>[ICON_BULLET]Considéré comme une colonie en ce qui concerne les combats.</French>
         <German>[ICON_BULLET]Dient als Standort für militärische Zwecke</German>
         <Italian>[ICON_BULLET]Ai fini dei combattimenti, equivalgono a un insediamento</Italian>
@@ -1891,7 +1891,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_CHIEF_GOLD_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% [ICON_GOLD] at first European contact with Native Villages</English>
+        <English>[ICON_BULLET]%D1%% [ICON_GOLD] at first European contact with Native villages</English>
         <French>[ICON_BULLET]%D1%% [ICON_GOLD] lors du premier contact européen avec les villages indigènes</French>
         <German>[ICON_BULLET]%D1%% höhere [ICON_GOLD]-Geschenke in Dörfern</German>
         <Italian>[ICON_BULLET]%D1%% [ICON_GOLD] al primo contatto europeo con i villaggi nativi</Italian>
@@ -1907,7 +1907,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_CAPITAL</Tag>
-        <English>[ICON_BULLET]Makes this Settlement the Capital</English>
+        <English>[ICON_BULLET]Makes this settlement the capital</English>
         <French>[ICON_BULLET]Faire de cette colonie notre capitale</French>
         <German>[ICON_BULLET]Erhebt diese Siedlung zur Hauptstadt</German>
         <Italian>[ICON_BULLET]Rende capitale questo insediamento</Italian>
@@ -2011,7 +2011,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NEW_TREASURE</Tag>
-        <English>You have obtained a new %s1_unit. This unit can only be transported by a Galleon. If you do not have a Galleon, your King will transport the unit for you (for a trifling fee..). Just move it to a coastal city with a Dock and click on the appropriate command button.</English>
+        <English>You have obtained a new %s1_unit. This unit can only be transported by a galleon. If you do not have a galleon, your King will transport the unit for you (for a trifling fee..). Just move it to a coastal city with a dock and click on the appropriate command button.</English>
         <French>Vous avez acquis une nouvelle unité : %s1_unit. Cette unité ne peut être transportée que par galion. Si vous n'en possédez pas, votre roi peut la transporter pour vous. Pour cela, il vous suffit de la déplacer dans une colonie côtière puis de cliquer sur le bouton approprié.</French>
         <German>Sie haben eine neue Einheit %s1_unit erhalten. Diese Einheit kann nur von einer Galeone transportiert werden. Wenn Sie keine Galeone haben, kann Ihr König die Einheit für Sie transportieren. Bewegen Sie sie einfach in eine Küstenstadt mit einem Dock und klicken Sie auf den entsprechenden Befehl.</German>
         <Italian>Hai ottenuto un %s1_unit. Può essere trasportato esclusivamente da un galeone. Se non hai un galeone puoi chiedere al re di farlo trasportare per te. Spostati in un insediamento costiero e clicca sul pulsante relativo.</Italian>
@@ -2243,7 +2243,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_EXTRA_GOODY</Tag>
-        <English>[ICON_BULLET]%d1 times as likely chance to get %s2_goody from Ancient Ruins</English>
+        <English>[ICON_BULLET]%d1 times as likely chance to get %s2_goody from ancient ruins</English>
         <French>[ICON_BULLET]%d1 fois plus de chance d'obtenir %s2_goody des ruines</French>
         <German>[ICON_BULLET]%d1 Mal höhere Chance auf %s2_goody durch Antike Ruinen</German>
         <Italian>[ICON_BULLET]Aumenta di %d1 volte la probabilità di trovare %s2_goody nelle antiche rovine</Italian>
@@ -2523,7 +2523,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CANNOT_JOIN_MOVE</Tag>
-        <English>[COLOR_WARNING_TEXT]Cannot join a Settlement after having moved[COLOR_REVERT]</English>
+        <English>[COLOR_WARNING_TEXT]Cannot join a settlement after having moved[COLOR_REVERT]</English>
         <French>[COLOR_WARNING_TEXT]Impossible de se joindre à une colonie après un déplacement[COLOR_REVERT]</French>
         <German>[COLOR_WARNING_TEXT]Kann sich nach Fortbewegung keiner Siedlung anschließen[COLOR_REVERT]</German>
         <Italian>[COLOR_WARNING_TEXT]Non può unirsi a un insediamento dopo essersi trasferito[COLOR_REVERT]</Italian>
@@ -2707,7 +2707,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% chance Colonists learn a specialization by hard work</English>
+        <English>[ICON_BULLET]%D1%% chance colonists learn a specialization by hard work</English>
         <French>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</French>
         <German>[ICON_BULLET]%D1%% Chance für Kolonisten durch harte Arbeit zum Spezialisten zu werden</German>
         <Italian>[ICON_BULLET]%D1%% chance Colonists learn Specialisms by hard work</Italian>
@@ -2715,7 +2715,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_SPECIALIST_PRICE_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% Cost of training Colonists in schools</English>
+        <English>[ICON_BULLET]%D1%% cost of training colonists in schools</English>
         <French>[ICON_BULLET]%D1%% Cost of training Colonists in Schools</French>
         <German>[ICON_BULLET]%D1%% Ausbildungskosten von Kolonisten in Schulen</German>
         <Italian>[ICON_BULLET]%D1%% Cost of training Colonists in Schools</Italian>
@@ -2723,7 +2723,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FATHER_STORAGE_CAPACITY_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% Storage Capacity in all settlements</English>
+        <English>[ICON_BULLET]%D1%% storage capacity in all settlements</English>
         <French>[ICON_BULLET]%D1%% Storage Capacity in all settlements</French>
         <German>[ICON_BULLET]%D1%% Lagerkapazität in allen Siedlungen</German>
         <Italian>[ICON_BULLET]%D1%% Storage Capacity in all settlements</Italian>
@@ -2947,7 +2947,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_NO</Tag>
-        <English>No thanks</English>
+        <English>No thanks.</English>
         <French>Non, merci.</French>
         <German>Nein danke.</German>
         <Italian>No, grazie.</Italian>
@@ -2955,7 +2955,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOTO_EUROPE_POPUP_NEVER_AGAIN</Tag>
-        <English>No, and please don't ask again</English>
+        <English>No, and please don't ask again.</English>
         <French>Non, et ne me posez plus la question, merci.</French>
         <German>Nein, und fragt bitte nicht noch einmal.</German>
         <Italian>No. Non chiedermelo più.</Italian>
@@ -2979,7 +2979,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TALK_NATIVES_POPUP_LEARN</Tag>
-        <English>Live among the natives</English>
+        <English>Live among the Natives</English>
         <French>Vivre parmi les indigènes</French>
         <German>Bei den Ureinwohnern leben und von ihnen lernen</German>
         <Italian>Vivi tra i nativi.</Italian>
@@ -3235,7 +3235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_ALARM</Tag>
-        <English>%D1: "Your way of life is threatening to ours."</English>
+        <English>%D1: "Your way of life threatens ours."</English>
         <French>%D1 : "Votre mode de vie est une menace pour le nôtre."</French>
         <German>%D1: "Eure Lebensweise ist eine Gefahr für uns."</German>
         <Italian>%D1: "Il tuo stile di vita è una minaccia per il nostro".</Italian>
