@@ -277,6 +277,7 @@ public:
 	bool isNative() const;
 
 	int visibilityRange() const;
+	int visibilityRangeUncached() const;
 
 	int baseMoves() const;
 	int maxMoves() const;
@@ -487,7 +488,7 @@ public:
 	void changeHillsDoubleMoveCount(int iChange);
 
 	int getExtraVisibilityRange() const;
-	void changeExtraVisibilityRange(int iChange);
+	void changeVisibilityRange(int iChange);
 	int getExtraMoves() const;
 	void changeExtraMoves(int iChange);
 	int getExtraMoveDiscount() const;
@@ -772,6 +773,9 @@ public:
 
 protected:
 
+	void updateVisibilityCache(int iNewRange);
+
+
 	int m_iID;
 	int m_iGroupID;
 	int m_iHotKeyNumber;
@@ -796,7 +800,7 @@ protected:
 	int m_iEnemyRouteCount;
 	int m_iAlwaysHealCount;
 	int m_iHillsDoubleMoveCount;
-	int m_iExtraVisibilityRange;
+	int m_iVisibilityRange;
 	int m_iExtraMoves;
 	int m_iExtraMoveDiscount;
 	int m_iExtraWithdrawal;

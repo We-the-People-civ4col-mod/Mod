@@ -8069,7 +8069,8 @@ m_iImprovementUpgrade(NO_IMPROVEMENT),
 // Super Forts begin *XML*
 m_iCulture(0),
 m_iCultureRange(0),
-m_iVisibilityChange(0),
+m_iPlotVisibilityChange(0),
+m_iUnitVisibilityChange(0),
 m_iSeeFrom(0),
 m_iUniqueRange(0),
 m_bBombardable(false),
@@ -8186,9 +8187,14 @@ int CvImprovementInfo::getCultureRange() const
 	return m_iCultureRange;
 }
 
-int CvImprovementInfo::getVisibilityChange() const
+int CvImprovementInfo::getPlotVisibilityChange() const
 {
-	return m_iVisibilityChange;
+	return m_iPlotVisibilityChange;
+}
+
+int CvImprovementInfo::getUnitVisibilityChange() const
+{
+	return m_iUnitVisibilityChange;
 }
 
 int CvImprovementInfo::getSeeFrom() const
@@ -8413,7 +8419,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	// Super Forts begin *XML*
 	stream->Read(&m_iCulture);
 	stream->Read(&m_iCultureRange);
-	stream->Read(&m_iVisibilityChange);
+//	stream->Read(&m_iVisibilityChange);
 	stream->Read(&m_iSeeFrom);
 	stream->Read(&m_iUniqueRange);
 	stream->Read(&m_bBombardable);
@@ -8493,7 +8499,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	// Super Forts begin *XML*
 	stream->Write(m_iCulture);
 	stream->Write(m_iCultureRange);
-	stream->Write(m_iVisibilityChange);
+//	stream->Write(m_iVisibilityChange);
 	stream->Write(m_iSeeFrom);
 	stream->Write(m_iUniqueRange);
 	stream->Write(m_bBombardable);
@@ -8577,7 +8583,8 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	// Super Forts begin *XML*
 	pXML->GetChildXmlValByName(&m_iCulture, "iCulture");
 	pXML->GetChildXmlValByName(&m_iCultureRange, "iCultureRange");
-	pXML->GetChildXmlValByName(&m_iVisibilityChange, "iVisibilityChange");
+	pXML->GetChildXmlValByName(&m_iPlotVisibilityChange, "iPlotVisibilityChange");
+	pXML->GetChildXmlValByName(&m_iUnitVisibilityChange, "iUnitVisibilityChange");
 	pXML->GetChildXmlValByName(&m_iSeeFrom, "iSeeFrom");
 	pXML->GetChildXmlValByName(&m_iUniqueRange, "iUnique");
 	pXML->GetChildXmlValByName(&m_bBombardable, "bBombardable");

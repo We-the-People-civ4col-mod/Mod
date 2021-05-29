@@ -1896,11 +1896,17 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 //
 void postLoadGameFixes()
 {
+#ifndef CHECK_GLOBAL_CONSTANTS
+	GAME_IS_STARTING_UP = false;
+#endif
+
 	// deal with plots
 	CvMap& kMap = GC.getMapINLINE();
 	const int iNumPlots = kMap.numPlotsINLINE();
 	
 	// reset visibility count as it is garbage right now
+	// this might not be needed anymore, but keep it just to be safe
+	// Nightinggale
 	for (int iI = 0; iI < iNumPlots; ++iI)
 	{
 		kMap.plotByIndexINLINE(iI)->m_em_iVisibilityCount.reset();

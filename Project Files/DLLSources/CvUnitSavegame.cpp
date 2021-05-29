@@ -220,8 +220,6 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iCombatDamage = defaultCombatDamage;
 	m_iFortifyTurns = defaultFortifyTurns;
 	
-	m_iExtraVisibilityRange = defaultExtraVisibilityRange;
-	
 	m_iImmobileTimer = defaultImmobileTimer;
 	m_iYieldStored = defaultYieldStored;
 	m_iExtraWorkRate = defaultExtraWorkRate;
@@ -306,8 +304,13 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_CombatDamage: reader.Read(m_iCombatDamage); break;
 		case UnitSave_FortifyTurns: reader.Read(m_iFortifyTurns); break;
 
-		case UnitSave_ExtraVisibilityRange: reader.Read(m_iExtraVisibilityRange); break;
-
+		case UnitSave_ExtraVisibilityRange: 
+		{
+			//reader.Read(m_iExtraVisibilityRange); break;
+			int iTemp = 0;
+			reader.Read(iTemp);
+			break;
+		}
 		case UnitSave_ImmobileTimer: reader.Read(m_iImmobileTimer); break;
 		case UnitSave_YieldStored: reader.Read(m_iYieldStored); break;
 		case UnitSave_ExtraWorkRate: reader.Discard<int>(); break;
@@ -402,7 +405,7 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_CombatDamage, m_iCombatDamage, defaultCombatDamage);
 	writer.Write(UnitSave_FortifyTurns, m_iFortifyTurns, defaultFortifyTurns);
 
-	writer.Write(UnitSave_ExtraVisibilityRange, m_iExtraVisibilityRange, defaultExtraVisibilityRange);
+	//writer.Write(UnitSave_ExtraVisibilityRange, m_iExtraVisibilityRange, defaultExtraVisibilityRange);
 
 	writer.Write(UnitSave_ImmobileTimer, m_iImmobileTimer, defaultImmobileTimer);
 	writer.Write(UnitSave_YieldStored, m_iYieldStored, defaultYieldStored);

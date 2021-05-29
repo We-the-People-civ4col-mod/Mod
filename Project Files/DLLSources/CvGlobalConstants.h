@@ -20,6 +20,15 @@ extern ColorTypes NUM_COLOR_TYPES;
 extern PlayerColorTypes NUM_PLAYERCOLOR_TYPES;
 extern SpecialUnitTypes NUM_SPECIALUNIT_TYPES;
 
+extern bool GAME_IS_STARTING_UP;
+
+#else
+
+enum
+{
+	GAME_IS_STARTING_UP,
+};
+
 #endif
 
 #endif

@@ -3093,7 +3093,7 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <iCulture>2</iCulture>
             <iCultureRange>1</iCultureRange>
-            <iVisibilityChange>2</iVisibilityChange>
+            <iUnitVisibilityChange>2</iUnitVisibilityChange>
             <iSeeFrom>1</iSeeFrom>
             <iUnique>2</iUnique>
             <bBombardable>1</bBombardable>
@@ -3170,7 +3170,7 @@
             <bGraphicalOnly>0</bGraphicalOnly>
             <iCulture>2</iCulture>
             <iCultureRange>1</iCultureRange>
-            <iVisibilityChange>2</iVisibilityChange>
+            <iUnitVisibilityChange>2</iUnitVisibilityChange>
             <iSeeFrom>1</iSeeFrom>
             <iUnique>2</iUnique>
             <bBombardable>1</bBombardable>

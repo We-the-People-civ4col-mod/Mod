@@ -2809,6 +2809,10 @@ static inline EnumName operator--(EnumName& c, int)   \
 static inline EnumName operator+(const EnumName& A, const EnumName& B)     \
 {                                                                          \
 return (EnumName)((int)A + (int)B);                                        \
+}                                                                          \
+static inline EnumName operator-(const EnumName& A, const EnumName& B)     \
+{                                                                          \
+return (EnumName)((int)A - (int)B);                                        \
 }
 
 #define SET_ENUM_OPERATORS_AND_FORBID(EnumName)       \

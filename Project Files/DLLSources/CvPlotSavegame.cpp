@@ -373,6 +373,8 @@ void CvPlot::read(CvSavegameReader reader)
 
 	setSeeFromLevelCache();
 	setSeeThroughLevelCache();
+	setPlotVisibilityCache();
+	setUnitVisibilityBonusCache();
 }
 
 void CvPlot::write(CvSavegameWriter writer)

@@ -111,6 +111,9 @@ void CvMap::uninit()
 // Initializes data members that are serialized.
 void CvMap::reset(CvMapInitData* pInitInfo)
 {
+	// reset plot max visual range
+	resetVisibilityCache();
+
 	// reset city catchment radius. It should be 1 plot unless explicitly requested otherwise.
 	setCityCatchmentRadius(0);
 

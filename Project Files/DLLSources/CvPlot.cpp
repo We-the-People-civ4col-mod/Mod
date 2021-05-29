@@ -29,7 +29,69 @@
 
 #define STANDARD_MINIMAP_ALPHA		(0.6f)
 
-int CvPlot::iMaxVisibilityRangeCache;
+// MAX_VISIBILITY_RANGE_PLOT is the max visibility range for a plot or a unit
+// MAX_VISIBILITY_RANGE_PLOT_BONUS is max bonus given from CvPlot to units on said plot
+// max theorical visual range is MAX_VISIBILITY_RANGE_PLOT + MAX_VISIBILITY_RANGE_PLOT_BONUS + 1
+// Keeping it as low as possible makes the game perform faster as it significantly reduces the numbers of plots to loop
+// though during certain events like moving weather features
+// Moving from 10 (vanilla guess at max visual range) to a realistic 3 will reduce the number of looped plots by 89%.
+// In general the game will use a low realistic number while it can increase if a rare promotion combo comes up.
+
+#ifndef CHECK_GLOBAL_CONSTANTS
+int MAX_VISIBILITY_RANGE_PLOT;
+int MAX_VISIBILITY_RANGE_PLOT_BONUS;
+#else
+enum
+{
+	MAX_VISIBILITY_RANGE_PLOT,
+	MAX_VISIBILITY_RANGE_PLOT_BONUS,
+};
+#endif
+
+
+void CvMap::resetVisibilityCache() const
+{
+#ifndef CHECK_GLOBAL_CONSTANTS
+	MAX_VISIBILITY_RANGE_PLOT = 0;
+	MAX_VISIBILITY_RANGE_PLOT_BONUS = 0;
+#endif
+}
+
+void CvUnit::updateVisibilityCache(int iNewRange)
+{
+	if (iNewRange != m_iVisibilityRange)
+	{
+		if (iNewRange > MAX_VISIBILITY_RANGE_PLOT)
+		{
+#ifndef CHECK_GLOBAL_CONSTANTS
+			MAX_VISIBILITY_RANGE_PLOT = iNewRange;
+#endif
+		}
+		m_iVisibilityRange = iNewRange;
+	}
+}
+
+void CvPlot::setPlotVisibilityCache()
+{
+	m_iPlotVisibilityCache = getPlotVisibilityUncached();
+	if (m_iPlotVisibilityCache > MAX_VISIBILITY_RANGE_PLOT)
+	{
+#ifndef CHECK_GLOBAL_CONSTANTS
+		MAX_VISIBILITY_RANGE_PLOT = m_iPlotVisibilityCache;
+#endif
+	}
+}
+
+void CvPlot::setUnitVisibilityBonusCache()
+{
+	m_iUnitVisibilityBonusCache = getUnitVisibilityBonusUncached();
+	if (m_iUnitVisibilityBonusCache > MAX_VISIBILITY_RANGE_PLOT_BONUS)
+	{
+#ifndef CHECK_GLOBAL_CONSTANTS
+		MAX_VISIBILITY_RANGE_PLOT_BONUS = m_iUnitVisibilityBonusCache;
+#endif
+	}
+}
 
 // Public Functions...
 
@@ -99,6 +161,10 @@ void CvPlot::reset(int iX, int iY, bool bConstructorCall)
 	m_iX = iX;
 	m_iY = iY;
 	m_pPlotArea = NULL;
+
+	// set the default value as it might never be touched again if it should keep the default value
+	setPlotVisibilityCache();
+	setUnitVisibilityBonusCache();
 	
 	// set the actual default. The default in resetSavedData is chosen to be the value used by all water plots, hence reduced savegame size 
 	m_iDistanceToOcean = MAX_SHORT;
@@ -1318,8 +1384,56 @@ void CvPlot::setSeeThroughLevelCache()
 	m_seeThroughLevelCache = getSeeThroughLevelUncached();
 }
 
+int CvPlot::getPlotVisibilityUncached() const
+{
+	int iRange = GC.getPLOT_VISIBILITY_RANGE();
+
+	ImprovementTypes eImprovement = getImprovementType();
+
+	if (eImprovement != NO_IMPROVEMENT)
+	{
+		const CvImprovementInfo& kInfo = GC.getImprovementInfo(eImprovement);
+		iRange += kInfo.getPlotVisibilityChange();
+	}
+
+	return iRange;
+}
+
+int CvPlot::getPlotVisibility() const
+{
+	FAssert(m_iPlotVisibilityCache == getPlotVisibilityUncached());
+	return m_iPlotVisibilityCache;
+}
+
+int CvPlot::getUnitVisibilityBonusUncached() const
+{
+	int iRange = 0;
+
+	ImprovementTypes eImprovement = getImprovementType();
+
+	if (eImprovement != NO_IMPROVEMENT)
+	{
+		const CvImprovementInfo& kInfo = GC.getImprovementInfo(eImprovement);
+		iRange += kInfo.getUnitVisibilityChange();
+	}
+
+	return iRange;
+}
+
+int CvPlot::getUnitVisibilityBonus() const
+{
+	FAssert(m_iUnitVisibilityBonusCache == getUnitVisibilityBonusUncached());
+	return m_iUnitVisibilityBonusCache;
+}
+
 void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit)
 {
+	// prevent visibility updates during init - Nightinggale
+	if (GAME_IS_STARTING_UP || iRange < 0)
+	{
+		return;
+	}
+
 	if(pUnit != NULL)
 	{
 		if(!pUnit->isOnMap())
@@ -1361,9 +1475,10 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 
 	for (int i = 0; i < iSeeInvisibleTypesCount; i++)
 	{
-		for (int dx = -iRange; dx <= iRange; dx++)
+		// looping x as the inner loop is faster because it loops the plots in the order they are stored in memory - Nightinggale
+		for (int dy = -iRange; dy <= iRange; dy++)
 		{
-			for (int dy = -iRange; dy <= iRange; dy++)
+			for (int dx = -iRange; dx <= iRange; dx++)
 			{
 				//check if in facing direction
 				if (shouldProcessDisplacementPlot(dx, dy, eFacingDirection))
@@ -1577,7 +1692,7 @@ void CvPlot::updateSight(bool bIncrement)
 	// Owned
 	if (isOwned())
 	{
-		changeAdjacentSight(getTeam(), GC.getPLOT_VISIBILITY_RANGE(), bIncrement, NULL);
+		changeAdjacentSight(getTeam(), getPlotVisibility(), bIncrement, NULL);
 	}
 
 	// Unit
@@ -1591,31 +1706,23 @@ void CvPlot::updateSight(bool bIncrement)
 	}
 }
 
-void CvPlot::setMaxVisibilityRangeCache()
-{
-	int iRange = GC.getUNIT_VISIBILITY_RANGE() + 1;
-	for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); ++iPromotion)
-	{
-		iRange += GC.getPromotionInfo((PromotionTypes)iPromotion).getVisibilityChange();
-	}
-
-	iMaxVisibilityRangeCache = iRange;
-}
-
 void CvPlot::updateSeeFromSight(bool bIncrement)
 {
-	const int iRange = iMaxVisibilityRangeCache;
+	MOD_PROFILE("updateSeeFromSight");
 
-	for (int iDX = -iRange; iDX <= iRange; iDX++)
+	const int iRange = MAX_VISIBILITY_RANGE_PLOT + MAX_VISIBILITY_RANGE_PLOT_BONUS + 1;
+
+	CvMap& kMap = GC.getMapINLINE();
+	const int iX = getX_INLINE();
+	const int iY = getY_INLINE();
+
+	LOOP_ADJACENT_PLOTS(iX, iY, iRange) \
 	{
-		for (int iDY = -iRange; iDY <= iRange; iDY++)
-		{
-			CvPlot* const pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 
-			if (pLoopPlot != NULL)
-			{
-				pLoopPlot->updateSight(bIncrement);
-			}
+		if (pLoopPlot != NULL)
+		{
+			pLoopPlot->updateSight(bIncrement);
 		}
 	}
 }
@@ -5540,6 +5647,8 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 
 		// update caches right away as they are used by updateSeeFromSight
 		setSeeFromLevelCache();
+		setPlotVisibilityCache();
+		setUnitVisibilityBonusCache();
 
 		if (getImprovementType() == NO_IMPROVEMENT)
 		{
@@ -6855,12 +6964,11 @@ void CvPlot::changePlayerCityRadiusCount(PlayerTypes eIndex, int iChange)
 	if (0 != iChange)
 	{
 		m_em_iPlayerCityRadiusCount.add(eIndex, iChange);
+		FAssert(getPlayerCityRadiusCount(eIndex) >= 0);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - start
-		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
 		if(m_em_iPlayerCityRadiusCount.get(eIndex) < 0)
 			m_em_iPlayerCityRadiusCount.set(eIndex, 0);
 		//R&R mod, vetiarvind, bug fix for city radius going below zero. - end
-		FAssert(getPlayerCityRadiusCount(eIndex) >= 0);
 	}
 }
 
@@ -6888,12 +6996,11 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 		bOldVisible = isVisible(eTeam, false);
 
 		m_em_iVisibilityCount.add(eTeam, iChange);
+		FAssert(getVisibilityCount(eTeam) >= 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - start
-		// TODO: get rid of this. The "fix" seems to hide the bug rather than actually fixing it
 		if(m_em_iVisibilityCount.get(eTeam) < 0)
 			m_em_iVisibilityCount.set(eTeam, 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - end
-		FAssert(getVisibilityCount(eTeam) >= 0);
 
 		if (eSeeInvisible != NO_INVISIBLE)
 		{

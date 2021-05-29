@@ -57,6 +57,7 @@ CvUnit::CvUnit() :
 	m_ba_HasRealPromotion(JIT_ARRAY_PROMOTION),
 	m_eUnitType(NO_UNIT),
 	m_iID(-1),
+	m_iVisibilityRange(-1),
 
 	// unit yield cache - start - Nightinggale
 	m_eCachedYield(NO_YIELD),
@@ -7822,19 +7823,39 @@ bool CvUnit::isNative() const
 
 int CvUnit::visibilityRange() const
 {
-	// R&R mod, vetiarvind merge Super Forts begin *vision*
-	int iImprovementVisibilityChange = 0;
-	CvPlot* pPlot = plot();
-	if(pPlot != NULL && pPlot->getImprovementType() != NO_IMPROVEMENT) //added null check
+	// completely rewritten function
+
+	FAssert(m_iVisibilityRange == visibilityRangeUncached())
+	int iRange = m_iVisibilityRange;
+
+	const CvPlot* pPlot = plot();
+	if (pPlot != NULL)
 	{
-		iImprovementVisibilityChange = GC.getImprovementInfo(plot()->getImprovementType()).getVisibilityChange();
+		iRange += pPlot->getUnitVisibilityBonus();
 	}
-	// TODO replace GC.getUNIT_VISIBILITY_RANGE() with hardcoded 1 as changing the xml value breaks savegames
-	// TODO figure out how to prevent CvImprovementInfo::getVisibilityChange from breaking savegames if changed
-	return (GC.getUNIT_VISIBILITY_RANGE() + getExtraVisibilityRange() + iImprovementVisibilityChange);
-	// Super Forts end
-	// Original --	return (GC.getUNIT_VISIBILITY_RANGE() + getExtraVisibilityRange()); */
+
+	return iRange;
 	
+}
+
+int CvUnit::visibilityRangeUncached() const
+{
+	int iRange = GC.getUNIT_VISIBILITY_RANGE();
+
+	const UnitCombatTypes eCombat = getUnitCombatType();
+
+	if (eCombat != NO_UNITCOMBAT)
+	{
+		for (PromotionTypes ePromotion = FIRST_PROMOTION; ePromotion < NUM_PROMOTION_TYPES; ++ePromotion)
+		{
+			if (isHasPromotion(ePromotion))
+			{
+				iRange += GC.getPromotionInfo(ePromotion).getVisibilityChange();
+			}
+		}
+	}
+
+	return iRange;
 }
 
 int CvUnit::baseMoves() const
@@ -10588,20 +10609,15 @@ void CvUnit::changeHillsDoubleMoveCount(int iChange)
 
 int CvUnit::getExtraVisibilityRange() const
 {
-	return m_iExtraVisibilityRange;
+	return m_iVisibilityRange - GC.getUNIT_VISIBILITY_RANGE();
 }
 
 
-void CvUnit::changeExtraVisibilityRange(int iChange)
+void CvUnit::changeVisibilityRange(int iChange)
 {
 	if (iChange != 0)
 	{
-		plot()->changeAdjacentSight(getTeam(), visibilityRange(), false, this);
-
-		m_iExtraVisibilityRange += iChange;
-		FAssert(getExtraVisibilityRange() >= 0);
-
-		plot()->changeAdjacentSight(getTeam(), visibilityRange(), true, this);
+		updateVisibilityCache(m_iVisibilityRange + iChange);
 	}
 }
 
@@ -12418,7 +12434,7 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
 	changeAlwaysHealCount((GC.getPromotionInfo(ePromotion).isAlwaysHeal()) ? iChange : 0);
 	changeHillsDoubleMoveCount((GC.getPromotionInfo(ePromotion).isHillsDoubleMove()) ? iChange : 0);
 
-	changeExtraVisibilityRange(GC.getPromotionInfo(ePromotion).getVisibilityChange() * iChange);
+	changeVisibilityRange(GC.getPromotionInfo(ePromotion).getVisibilityChange() * iChange);
 	changeExtraMoves(GC.getPromotionInfo(ePromotion).getMovesChange() * iChange);
 	changeExtraMoveDiscount(GC.getPromotionInfo(ePromotion).getMoveDiscountChange() * iChange);
 	changeExtraWithdrawal(GC.getPromotionInfo(ePromotion).getWithdrawalChange() * iChange);
@@ -12472,6 +12488,11 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
 
 void CvUnit::resetPromotions()
 {
+	if (getOwnerINLINE() != NO_PLAYER)
+	{
+		plot()->changeAdjacentSight(getTeam(), m_iVisibilityRange, false, this);
+	}
+
 	m_iBlitzCount = 0;
 	m_iAmphibCount = 0;
 	m_iRiverCount = 0;
@@ -12479,7 +12500,7 @@ void CvUnit::resetPromotions()
 	m_iAlwaysHealCount = 0;
 	m_iHillsDoubleMoveCount = 0;
 
-	changeExtraVisibilityRange(-this->getExtraVisibilityRange());
+	updateVisibilityCache(GC.getUNIT_VISIBILITY_RANGE());
 	m_iExtraMoves = 0;
 	m_iExtraMoveDiscount = 0;
 	m_iExtraWithdrawal = 0;
@@ -12497,7 +12518,7 @@ void CvUnit::resetPromotions()
 	m_iExtraDomesticBonusPercent = 0;
 	m_iPillageChange = 0;
 	m_iUpgradeDiscount = 0;
-	m_iExperiencePercent = 0;	
+	m_iExperiencePercent = 0;
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;
 
 	m_ja_iExtraTerrainAttackPercent.reset();
@@ -12514,6 +12535,10 @@ void CvUnit::resetPromotions()
 	m_ja_iExtraUnitCombatModifier.reset();
 	m_ja_iExtraDomainModifier.reset();
 
+	if (getOwnerINLINE() != NO_PLAYER)
+	{
+		plot()->changeAdjacentSight(getTeam(), m_iVisibilityRange, true, this);
+	}
 }
 
 void CvUnit::setPromotions(PromotionTypes ePromotion)
@@ -12523,75 +12548,81 @@ void CvUnit::setPromotions(PromotionTypes ePromotion)
 
 	UnitCombatTypes eUnitCombat = getUnitCombatType();
 
-	if (eUnitCombat == NO_UNITCOMBAT && !m_ba_isPromotionApplied.isAllocated())
+	int iOldVisibilityRange = m_iVisibilityRange;
+
+	// Only update promotions if the unit can have some or there are already promotions applied
+	// most calls will likely be from 
+	if (eUnitCombat != NO_UNITCOMBAT || m_ba_isPromotionApplied.isAllocated())
 	{
-		// unit has no active promotions and the profession can't have promotions.
-		// Bail out without spending more time on this unit.
-		// This is the case when switching between two civilian professions, like farmer->jumberjack.
-		return;
+
+		CvPlayerAI &kOwner = GET_PLAYER(getOwnerINLINE());
+
+		PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : FIRST_PROMOTION;
+		PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : NUM_PROMOTION_TYPES - static_cast<PromotionTypes>(1);
+
+		ProfessionTypes eProfession = getProfession();
+
+		bool bFoundAnyPromotions = false;
+
+		for (; eLoopPromotion <= eLastPromotion; ++eLoopPromotion)
+		{
+			bool bHasPromotion = false;
+			if (eUnitCombat != NO_UNITCOMBAT && kOwner.canUsePromotion(eLoopPromotion) && GC.getPromotionInfo(eLoopPromotion).getUnitCombat(eUnitCombat))
+			{
+				// The unit/profession combo can use the promotion in question. Now check if it's present
+				if (isHasRealPromotion(eLoopPromotion))
+				{
+					bHasPromotion = true;
+				}
+				else if (getFreePromotionCount(eLoopPromotion) > 0)
+				{
+					bHasPromotion = true;
+				}
+				else if (kOwner.hasFreePromotion(eLoopPromotion))
+				{
+					bHasPromotion = true;
+				}
+				else if (eUnitCombat != NO_UNITCOMBAT && kOwner.hasFreePromotion(eLoopPromotion, eUnitCombat))
+				{
+					bHasPromotion = true;
+				}
+				else if (eProfession != NO_PROFESSION && kOwner.hasFreePromotion(eLoopPromotion, eProfession))
+				{
+					bHasPromotion = true;
+				}
+			}
+
+			if (bHasPromotion)
+			{
+				bFoundAnyPromotions = true;
+				if (!m_ba_isPromotionApplied.get(eLoopPromotion))
+				{
+					m_ba_isPromotionApplied.set(true, eLoopPromotion);
+					processPromotion(eLoopPromotion, 1);
+				}
+			}
+			else
+			{
+				if (m_ba_isPromotionApplied.get(eLoopPromotion))
+				{
+					m_ba_isPromotionApplied.set(false, eLoopPromotion);
+					processPromotion(eLoopPromotion, -1);
+				}
+			}
+		}
+
+		if (!bFoundAnyPromotions)
+		{
+			// try to release the array
+			// See top check with unit combat to see why it's good to release the array if possible. There is more to it than just memory usage.
+			m_ba_isPromotionApplied.isEmpty();
+		}
 	}
 
-	CvPlayerAI &kOwner = GET_PLAYER(getOwnerINLINE());
-
-	PromotionTypes eLoopPromotion = ePromotion != NO_PROMOTION ? ePromotion : FIRST_PROMOTION;
-	PromotionTypes eLastPromotion = ePromotion != NO_PROMOTION ? ePromotion : static_cast<PromotionTypes>(GC.getNumPromotionInfos() - 1);
-
-	ProfessionTypes eProfession = getProfession();
-
-	bool bFoundAnyPromotions = false;
-
-	for (; eLoopPromotion <= eLastPromotion; ++eLoopPromotion)
+	if (iOldVisibilityRange != visibilityRange())
 	{
-		bool bHasPromotion = false;
-		if (eUnitCombat != NO_UNITCOMBAT && kOwner.canUsePromotion(eLoopPromotion) && GC.getPromotionInfo(eLoopPromotion).getUnitCombat(eUnitCombat))
-		{
-			// The unit/profession combo can use the promotion in question. Now check if it's present
-			if (isHasRealPromotion(eLoopPromotion))
-			{
-				bHasPromotion = true;
-			}
-			else if (getFreePromotionCount(eLoopPromotion) > 0)
-			{
-				bHasPromotion = true;
-			}
-			else if (kOwner.hasFreePromotion(eLoopPromotion))
-			{
-				bHasPromotion = true;
-			}
-			else if (eUnitCombat != NO_UNITCOMBAT && kOwner.hasFreePromotion(eLoopPromotion, eUnitCombat))
-			{
-				bHasPromotion = true;
-			}
-			else if (eProfession != NO_PROFESSION && kOwner.hasFreePromotion(eLoopPromotion, eProfession))
-			{
-				bHasPromotion = true;
-			}
-		}
-
-		if (bHasPromotion)
-		{
-			bFoundAnyPromotions = true;
-			if (!m_ba_isPromotionApplied.get(eLoopPromotion))
-			{
-				m_ba_isPromotionApplied.set(true, eLoopPromotion);
-				processPromotion(eLoopPromotion, 1);
-			}
-		}
-		else
-		{
-			if (m_ba_isPromotionApplied.get(eLoopPromotion))
-			{
-				m_ba_isPromotionApplied.set(false, eLoopPromotion);
-				processPromotion(eLoopPromotion, -1);
-			}
-		}
-	}
-
-	if (!bFoundAnyPromotions)
-	{
-		// try to release the array
-		// See top check with unit combat to see why it's good to release the array if possible. There is more to it than just memory usage.
-		m_ba_isPromotionApplied.isEmpty();
+		plot()->changeAdjacentSight(getTeam(), iOldVisibilityRange, false, this);
+		plot()->changeAdjacentSight(getTeam(), visibilityRange(), true, this);
 	}
 }
 

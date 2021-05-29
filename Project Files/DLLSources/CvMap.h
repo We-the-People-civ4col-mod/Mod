@@ -268,6 +268,8 @@ public:
 
 protected:
 
+	void resetVisibilityCache() const; // defined in CvPlot.cpp
+
 	void resetSavedData();
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);

@@ -473,6 +473,10 @@ void CvGame::uninit()
 // Initializes data members that are serialized.
 void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 {
+#ifndef CHECK_GLOBAL_CONSTANTS
+	GAME_IS_STARTING_UP = true;
+#endif
+
 	//--------------------------------
 	// Uninit class
 	uninit();

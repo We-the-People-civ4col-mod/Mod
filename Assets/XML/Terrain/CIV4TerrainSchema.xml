@@ -416,7 +416,8 @@
 	</ElementType>
 	<ElementType name="iCulture" content="textOnly" dt:type="int"/>
 	<ElementType name="iCultureRange" content="textOnly" dt:type="int"/>
-	<ElementType name="iVisibilityChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iPlotVisibilityChange" content="textOnly" dt:type="int"/>
+	<ElementType name="iUnitVisibilityChange" content="textOnly" dt:type="int"/>
 	<ElementType name="bBombardable" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bUpgradeRequiresFortify" content="textOnly" dt:type="boolean"/>
 	<ElementType name="ImprovementInfo" content="eltOnly">
@@ -464,7 +465,8 @@
 		<element type="bGraphicalOnly"/>
 		<element type="iCulture" minOccurs="0"/>
 		<element type="iCultureRange" minOccurs="0"/>
-		<element type="iVisibilityChange" minOccurs="0"/>
+		<element type="iPlotVisibilityChange" minOccurs="0"/>
+		<element type="iUnitVisibilityChange" minOccurs="0"/>
 		<element type="iSeeFrom" minOccurs="0"/>
 		<element type="iUnique" minOccurs="0"/>
 		<element type="bBombardable" minOccurs="0"/>

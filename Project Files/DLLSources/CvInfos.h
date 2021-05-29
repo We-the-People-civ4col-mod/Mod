@@ -2312,7 +2312,8 @@ public:
 	// Super Forts begin *XML*
 	int getCulture() const;
 	int getCultureRange() const;
-	int getVisibilityChange() const;
+	int getPlotVisibilityChange() const;
+	int getUnitVisibilityChange() const;
 	int getSeeFrom() const;
 	int getUniqueRange() const;
 	bool isBombardable() const;
@@ -2381,7 +2382,8 @@ protected:
 	// Super Forts begin *XML*
 	int m_iCulture;
 	int m_iCultureRange;
-	int m_iVisibilityChange;
+	int m_iPlotVisibilityChange;
+	int m_iUnitVisibilityChange;
 	int m_iSeeFrom;
 	int m_iUniqueRange;
 	bool m_bBombardable;

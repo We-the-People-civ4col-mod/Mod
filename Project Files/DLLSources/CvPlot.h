@@ -93,6 +93,8 @@ public:
 
 	int seeFromLevel() const;
 	int seeThroughLevel() const;
+	int getPlotVisibility() const;
+	int getUnitVisibilityBonus() const;
 	void changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, CvUnit* pUnit);
 	bool canSeePlot(CvPlot *plot, TeamTypes eTeam, int iRange, DirectionTypes eFacingDirection) const;
 	bool canSeeDisplacementPlot(TeamTypes eTeam, int dx, int dy, int originalDX, int originalDY, bool firstPlot, bool outerRing) const;
@@ -501,8 +503,6 @@ protected:
 	short m_iRiverCrossingCount;
 	short m_iDistanceToOcean;
 	short m_iCrumbs;
-	signed char m_seeFromLevelCache;
-	signed char m_seeThroughLevelCache;
 	// Super Forts begin *canal* *choke*
 	int m_iCanalValue;
 	int m_iChokeValue;
@@ -547,9 +547,15 @@ protected:
 	EnumMap<PlayerTypes, short> m_em_iCultureRangeForts; // Super Forts *culture*
 	EnumMap<PlayerTypes,   int> m_em_iFoundValue;
 	EnumMap<PlayerTypes,  char> m_em_iPlayerCityRadiusCount;
+
+	// keep all visibility variables together as they are usually accessed together
+	// this maximizes CPU cache usage, hence reducing memory latency slowdowns
+	signed char m_seeFromLevelCache;
+	signed char m_seeThroughLevelCache;
+	signed char m_iPlotVisibilityCache;
+	signed char m_iUnitVisibilityBonusCache;
 	EnumMap<TeamTypes  , short> m_em_iVisibilityCount;
 	EnumMap<TeamTypes  , PlayerTypes> m_em_eRevealedOwner;
-
 	TeamBoolArray m_pab_Revealed;
 	RevealedPlotDataArray m_aeRevealedImprovementRouteTypes;
 
@@ -596,20 +602,21 @@ protected:
 public:
 	void setYieldCache();
 	// Cache the computation of the max visibility range
-	static void setMaxVisibilityRangeCache();
 protected:
 	// plot visibility cache
 	void setSeeFromLevelCache();
 	void setSeeThroughLevelCache();
+	void setPlotVisibilityCache();
+	void setUnitVisibilityBonusCache();
 	int getSeeFromLevelUncached() const;
 	int getSeeThroughLevelUncached() const;
+	int getPlotVisibilityUncached() const;
+	int getUnitVisibilityBonusUncached() const;
 
 	bool hasYieldUncached() const;
 	bool m_bHasYield;
 	// CvPlot::hasYield cache - end - Nightinggale
 	void upgradeImprovement(ImprovementTypes eImprovementUpgrade, int iUpgradeRate);
-
-	static int iMaxVisibilityRangeCache;
 
 private:
 	void __template_declaration_func();
