@@ -5510,7 +5510,12 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 			// now we loop and spwan the Hostiles
 			for(int iI=0; iI<iActualHostileUnitsToSpawn; iI++)
 			{
-				CvUnit*  eHostileUnit= barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI);
+				CvUnit* eHostileUnit= barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI);
+				//treasures get loaded with Gold if configured in XML
+				if((eHostileUnit != NULL) && (iGold != 0) && eHostileUnit->getUnitInfo().isTreasure())
+				{
+					eHostileUnit->setYieldStored(iGold);
+				}
 			}
 		}
 	}
