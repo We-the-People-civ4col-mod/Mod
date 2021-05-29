@@ -55,7 +55,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_PACIFIC_TEXT</Tag>
-        <English>As your vessel sails away from land, you realise you have found the Pacific.[NEWLINE][NEWLINE]Not long ago your explorer peered into the distance in disbelief. Beyond the beach, an endless expanse of water stretched to the horizon. A sea as wide as the sky.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He was right,[COLOR_REVERT]" he murmurs, "[COLOR_SELECTED_TEXT]the governor was right.[COLOR_REVERT]" There is a sea route leading west from the New World, out into the endless expanse of a new ocean.[NEWLINE][NEWLINE]An ocean whose calm swells seem so peaceful, as if the thought of storms were just an old sailor's yarn. "[COLOR_SELECTED_TEXT]It shall be called the 'Pacific Ocean'. The 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>As your vessel sails away from land, you realise you have found the Pacific.[NEWLINE][NEWLINE]Not long ago your explorer peered into the distance in disbelief. Beyond the beach, an endless expanse of water stretched to the horizon. A sea as wide as the sky.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He was right,[COLOR_REVERT]" he murmurs, "[COLOR_SELECTED_TEXT]the governor was right.[COLOR_REVERT]" There is a sea route leading west from the New World, out into the endless expanse of a new ocean.[NEWLINE][NEWLINE]An ocean whose calm swells seem so peaceful, as if the thought of storms was just an old sailor's yarn. "[COLOR_SELECTED_TEXT]It shall be called the 'Pacific Ocean'. The 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Lorsque votre navire s'éloigne de la côte, vous réalisez que vous avez découvert l'Océan Pacifique. La route des Indes est enfin ouverte... Mais n'est-elle pas plus longue que Colomb l'imaginait ?[NEWLINE][NEWLINE]</French>
         <German>Ungläubig starrt Euer Entdecker in die Ferne. Jenseits der Küstenlinie dehnt sich eine schier endlose Wasserfläche bis zum Horizont. Ein Meer, so weit wie der Himmel. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er hatte recht,[COLOR_REVERT]" murmelt er, "[COLOR_SELECTED_TEXT]der Gouverneur hatte recht.[COLOR_REVERT]" Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen führt, hinaus in die endlose Weite eines neuen Ozeans. [NEWLINE][NEWLINE]Ein Ozean, dessen ruhiger Wellengang so friedlich wirkt, als wäre der Gedanke an Unwetter nur Seemannsgarn. "[COLOR_SELECTED_TEXT]Der 'Stille Ozean' soll er heißen. Der 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -69,7 +69,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ATLANTIC_HEAD</Tag>
-        <English>A dream of fame and glory</English>
+        <English>A Dream of Fame and Glory</English>
         <French>Vous rêvez d'un monde nouveau</French>
         <German>Ein Traum von Ruhm und Glorie</German>
     </TEXT>
@@ -105,13 +105,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING_HEAD</Tag>
-        <English>Housewarming</English>
+        <English>Your New Home</English>
         <French>Votre première colonie</French>
         <German>Richtfest</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUNDING_TEXT</Tag>
-        <English>Finding a suitable stretch of land with timber and a quiet bay for fishing, your colonists set about the task of establishing new homes in the New World.[NEWLINE][NEWLINE]The carpenters put aside their hammers, and you open the last barrel of brandy you brought from the old country.[NEWLINE][NEWLINE]Exhausted and satisfied, your people look at the first camp they have set up. It is not large, but it is a beginning.[NEWLINE][NEWLINE]You now have your first settlement in the New World. The brush will be cleared, fertile land will be cultivated.[NEWLINE][NEWLINE]You clear your throat and look around. Heads bow, and you raise your voice in thanksgiving to the Lord who watches over you.[NEWLINE][NEWLINE]</English>
+        <English>Finding a suitable stretch of land with timber and a quiet bay for fishing, your colonists set about the task of establishing new homes in the New World.[NEWLINE][NEWLINE]The carpenters put aside their hammers, and you open the last barrel of brandy you brought from the old country.[NEWLINE][NEWLINE]Exhausted and satisfied, your people look at the first camp they have set up. It is not large, but it is a beginning.[NEWLINE][NEWLINE]You now have your first settlement in the New World. The brush will be cleared; fertile land will be cultivated.[NEWLINE][NEWLINE]You clear your throat and look around. Heads bow, and you raise your voice in thanksgiving to the Lord who watches over you.[NEWLINE][NEWLINE]</English>
         <French>Vos colons ont découvert un lieu propice à l'établissement d'une colonie dans ce Nouveau Monde, riche en bois de construction et en gibier de toute sorte.[NEWLINE][NEWLINE]</French>
         <German>Die Zimmerleute legen ihre Hämmer beiseite, und Ihr lasst das letzte Fässchen Branntwein öffnen, das Ihr aus der alten Heimat mitgebracht habt.[NEWLINE][NEWLINE]Erschöpft und zufrieden blicken Eure Leute auf das erste Lager, das sie errichtet haben. Es ist nicht groß, aber es ist ein Anfang.[NEWLINE][NEWLINE]Ihr habt nun Eure erste Niederlassung in der Neuen Welt. Das Gestrüpp wird gerodet, das fruchtbare Land bestellt werden.[NEWLINE][NEWLINE]Ihr räuspert Euch und blickt in die Runde. Die Köpfe senken sich, und Ihr erhebt Eure Stimme zu einem Dankgebet an den Herrn, der über Euch wacht.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -123,7 +123,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_HEAD</Tag>
-        <English>Onward journey</English>
+        <English>The Second Settlement</English>
         <French>L'expansion commence !</French>
         <German>Weiterfahrt</German>
     </TEXT>
@@ -141,7 +141,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_HEAD</Tag>
-        <English>This land is blessed</English>
+        <English>This Land is Blessed</English>
         <French>Ce pays est donc béni !</French>
         <German>Dieses Land ist gesegnet</German>
     </TEXT>
@@ -159,13 +159,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
-        <English>The oracle</English>
+        <English>Native Suspicions</English>
         <French>« Mais que recherchent ces gens chez nous ? »</French>
         <German>Das Orakel</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_TEXT</Tag>
-        <English>You have founded six settlements in the New World! The Natives are now afraid they are losing their land.[NEWLINE][NEWLINE]The council is reverently silent as the blind old man enters the circle. The seer leans on a staff, his back hunched, his voice low and exhausted.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I have presented your concerns to the gods. Your fear that these new settlers cannot understand our world. They create village after village, as if they need to escape from each other.[NEWLINE][NEWLINE]I have asked the gods the question that burns in your heart. Shall we kill all the settlers? Well, this is the answer of the gods ...[COLOR_REVERT]" Tensely, the men lean forward.[NEWLINE][NEWLINE]</English>
+        <English>You have founded six settlements in the New World! The Natives are now afraid they're losing their land.[NEWLINE][NEWLINE]The council is reverently silent as the blind old man enters the circle. The seer leans on a staff, his back hunched, his voice low and exhausted.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I have presented your concerns to the gods. Your fear that these new settlers cannot understand our world. They create village after village, as if they need to escape from each other.[NEWLINE][NEWLINE]I have asked the gods the question that burns in your heart. Shall we kill all the settlers? Well, this is the answer of the gods ...[COLOR_REVERT]" Tensely, the men lean forward.[NEWLINE][NEWLINE]</English>
         <French>C'est la question que pose un jeune chasseur indigène au chamane de son village. Permettre à quelques désespérés de trouver refuge est une chose, les voir conquérir nos terres en est une autre. Ils viennent de fonder leur sixième colonie ![NEWLINE][NEWLINE]Le chamane répond : « Lorsque tu recueilles un bébé jaguar abandonnée, n'oublie pas qu'un jour il deviendra grand. »[NEWLINE][NEWLINE]</French>
         <German>Ehrfürchtig schweigt der Rat, als der blinde Alte den Kreis betritt. Der Orakelpriester stützt sich auf einen Stab, sein Rücken ist krumm, die Stimme leise und erschöpft.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich habe den Göttern Eure Sorgen vorgetragen. Eure Furcht, dass der Weiße Mann sich nicht fügen will in unsere Welt. Er gründet ein Dorf nach dem nächsten und nimmt mehr Platz, als ihm zusteht.[NEWLINE][NEWLINE]Ich habe den Göttern die Frage gestellt, die Euch im Herzen brennt. Sollen wir die Weißen töten? Nun, dies ist die Antwort der Götter ...[COLOR_REVERT]" Gespannt beugen sich die Männer vor.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -177,7 +177,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_HEAD</Tag>
-        <English>The answer of the gods</English>
+        <English>The Gods Answer</English>
         <French>Vous avez huit colonies dans le Nouveau Monde</French>
         <German>Die Antwort der Götter</German>
     </TEXT>
@@ -231,7 +231,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_HEAD</Tag>
-        <English>The house of God</English>
+        <English>The House of God</English>
         <French>Votre première église</French>
         <German>Das Haus Gottes</German>
     </TEXT>
@@ -269,7 +269,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_HEAD</Tag>
-        <English>The Godliness of the Governor</English>
+        <English>The Godly Governor</English>
         <French>Votre troisième église</French>
         <German>Die Gottesfurcht des Gouverneurs</German>
     </TEXT>
@@ -293,7 +293,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_TEXT</Tag>
-        <English>You have built your first cathedral.[NEWLINE][NEWLINE]The Governor's fear of God made it a reality! Or was it instead the secular influence of Mother Church? The good citizens will never know.[NEWLINE][NEWLINE]The huge cathedral, however... High above the rooftops of the city, its white towers shine in the sunshine and cast their shadows far across the New World.[NEWLINE][NEWLINE]The bishop has come to celebrate the new place of worship with a mass and is already saying the first solemn words to his flock before they, i.e. the missionaries and the nuns of the local monastery, leave again, to free the heathen children from the devil and lead them into the bosom of the church.[NEWLINE][NEWLINE]The towers of the huge cathedral will show them the way...[NEWLINE][NEWLINE]</English>
+        <English>You have built your first cathedral.[NEWLINE][NEWLINE]The Governor's fear of God made it a reality! Or was it instead the secular influence of Mother Church? The good citizens will never know.[NEWLINE][NEWLINE]The huge cathedral, however... High above the rooftops of the city, its white towers reflect the sunshine and cast their shadows far across the New World.[NEWLINE][NEWLINE]The bishop has come to celebrate the new place of worship with a mass and is already saying the first solemn words to his flock before they, the missionaries and the nuns of the local monastery, leave again to free the heathen children from the devil and lead them into the bosom of the church.[NEWLINE][NEWLINE]The towers of the huge cathedral will show them the way...[NEWLINE][NEWLINE]</English>
         <French>Le voyageur est encore à plusieurs lieues de notre colonie, mais deux tours de pierre se distingue déjà à l'horizon. « C'est donc elle, notre Cathédrale ! » lui dit son accompagnateur. « Oui », lui répond le voyageur « Et en tant qu'évêque, c'est une joie d'avoir été élu pour l'inaugurer ».[NEWLINE][NEWLINE]</French>
         <German>Die Gottesfurcht des Gouverneurs hat es Wirklichkeit werden lassen! Oder war es doch eher der weltliche Einfluss von Mutter Kirche? Dies werden die braven Bürger wohl nie erfahren.[NEWLINE][NEWLINE]Die riesige Kathedrale jedoch... Hoch über den Dächern der Stadt strahlen ihre weißen Türme im Sonnenschein und werfen Ihre Schatten bis weit in die Neue Welt hinein.[NEWLINE][NEWLINE]Der Bischof ist gekommen, um das neue Gotteshaus mit einer Messe zu feiern und spricht bereits die ersten feierlichen Worte zu seinen Schäfchen, bevor diese, d.h. die Missionare und die Nonnen des örtlichen Klosters, wieder aufbrechen, um die Heidenkinder vom Teufel zu befreien und in den Schoß der Kirche zu führen.[NEWLINE][NEWLINE]Die Türme der riesigen Kathedrale werden ihnen den Weg weisen...[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -305,13 +305,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_HEAD</Tag>
-        <English>Woodworking at its best</English>
+        <English>Woodworking At Its Best</English>
         <French>Votre troisième la scierie</French>
         <German>Holzverarbeitung vom Feinsten</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_TEXT</Tag>
-        <English>Things are moving forward in the colonies! The good citizens in the colonies now own three sawmills.[NEWLINE][NEWLINE]Thank God that the governor has been so prudent, because this flood of settlers will demand large quantities of timber well into the future.[NEWLINE][NEWLINE]</English>
+        <English>Things are moving forward in the colonies! The good citizens in the colonies now own three sawmills.[NEWLINE][NEWLINE]Thank God that the governor has been so prudent, because this flood of settlers will need massive quantities of timber well into the future.[NEWLINE][NEWLINE]</English>
         <French>You have built your third lumbermill. Our colonies need more timber. Praise Providence that our noble Governor is a craftsman![NEWLINE][NEWLINE]</French>
         <German>Es geht voran in den Kolonien! Drei Sägewerke nennen die braven Bürger in den Kolonien nun schon ihr Eigen.[NEWLINE][NEWLINE]Gott sei es gedankt, dass der Gouverneur so umsichtig war, denn die Flut der Siedler wird auch in Zukunft Bauholz in Mengen benötigen.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -329,7 +329,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER_TEXT</Tag>
-        <English>You have built your Cathedral of the Archbishop.[NEWLINE][NEWLINE]Great events cast their shadows ahead. One of the most massive structures in the New World has been built.[NEWLINE][NEWLINE]What walls, what towers! The Archbishop's cathedral shows even the last unconverted Native how the Lord God inspires people to great achievements.[NEWLINE][NEWLINE]The Archbishop has come to celebrate his new place of work with a Holy Mass and to give thanks to God for this place of worship with his fellow believers. Where better to recognize the power of God than here under these towers that reach into the clouds?[NEWLINE][NEWLINE]However,the Archbishop's sermon chooses not to mention how the good citizens of the colonies have paid for this towering building with their worldly deeds, and that the governor could only be "persuaded" to build it after massive pressure from Mother Church. Besides, it was only right and proper that the citizens should show their love for their parish priest by building a magnificent place of worship. How else might the Lord God be convinced of his devotion than through this cathedral...?![NEWLINE][NEWLINE]</English>
+        <English>You have built your Cathedral of the Archbishop.[NEWLINE][NEWLINE]Great events cast their shadows ahead. One of the most massive structures in the New World has been built.[NEWLINE][NEWLINE]What walls, what towers! The Archbishop's cathedral shows even the last unconverted Native how the Lord God inspires people to great achievements.[NEWLINE][NEWLINE]The Archbishop has come to celebrate his new place of work with a Holy Mass and to give thanks to God with his fellow believers for this center of worship. Where better to recognize the power of God than here under these towers that reach into the clouds?[NEWLINE][NEWLINE]However,the Archbishop's sermon prefers not to mention how the good citizens of the colonies have paid for this towering building with their worldly deeds, and that the governor could only be "persuaded" to build it after massive pressure from Mother Church. Besides, it was only right and proper that the citizens should show their love for their parish priest by building a magnificent place of worship. How else might the Lord God be convinced of his devotion than through this cathedral...?![NEWLINE][NEWLINE]</English>
         <French>You avec construit votre Cathédrale d'Archevêché. L'Archevêque est venu pour bénir ce monument magnifique, Dieu, la Saint-Eglise... et bien sûr son nouveau pouvoir ![NEWLINE][NEWLINE]</French>
         <German>Große Ereignisse werfen ihre Schatten voraus. Eines der gewaltigsten Bauwerke in der Neuen Welt ist errichtet worden.[NEWLINE][NEWLINE]Was für Mauern, was für Türme! Die Kathedrale des Erzbischofs zeigt auch dem letzten zweifelnden Indio, zu welch' großartigen Leistungen der Herrgott die Menschen bewegen kann.[NEWLINE][NEWLINE]Der Erzbischof ist gekommen, um seine neue Wirkungsstätte mit einer heiligen Messe zu feiern und mit seinen Glaubensbrüdern Gott für dieses Gotteshaus zu danken. Wo könnte man die Macht Gottes besser erkennen als hier unter diesen Türmen, die bis in die Wolken hineinragen?[NEWLINE][NEWLINE]Dass dieses riesige Bauwerk jedoch im Grunde nur durch allzu weltliches Handeln von den braven Bürgern der Kolonien bezahlt wurde und der Gouverneur erst durch massivem Druck von Mutter Kirche zu diesem Bau "überredet" werden konnte, verschweigt der Erzbischof in seiner Predigt dann doch lieber. Außerdem war es nur recht und billig, dass die Bürger dieser Gemeinde ihrem Pfarrer ein standesgemäßes Gotteshaus errichten. Wie sonst sollte der Herrgott von seiner Ergebenheit überzeugt werden, als durch diese Kathedrale...?![NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -377,13 +377,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_HEAD</Tag>
-        <English>Protector and protected</English>
+        <English>Protecting Your People</English>
         <French>Vous venez de construire votre troisième palissade</French>
         <German>Beschützer und Beschützte</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_TEXT</Tag>
-        <English>You have built your third fortification.[NEWLINE][NEWLINE]Straight, solid tree trunks, debarked and anchored in the ground, enclose and protect your settlements. Watch towers, from which watchful eyes suspiciously examine the surrounding countryside, rise above the houses.[NEWLINE][NEWLINE]The defences you erect in your cities protect your citizens - and earn you the respect of your subjects.[NEWLINE][NEWLINE]</English>
+        <English>You have built your third fortification.[NEWLINE][NEWLINE]Straight, solid tree trunks, debarked and anchored in the ground, enclose and protect your settlements. Watch towers, from which alert eyes suspiciously examine the surrounding countryside, rise above the houses.[NEWLINE][NEWLINE]The defences you erect in your cities protect your citizens - and earn you the respect of your subjects.[NEWLINE][NEWLINE]</English>
         <French>Le système de défense que nous construisons dans nos colonies apportent protection aux citoyens, et respect à votre égard.[NEWLINE][NEWLINE]</French>
         <German>Gerade, feste Baumstämme, entrindet und im Erdgrund verankert, umschließen und beschirmen die Siedlungen. Wachtürme, von denen aufmerksame Augenpaare misstrauisch das Umland mustern, erheben sich über den Häusern.[NEWLINE][NEWLINE]Die Verteidigungswerke, die Ihr in Euren Städten errichten lasst, bringen Euren Bürgern Schutz - und Euch den Respekt Eurer Untertanen.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -395,13 +395,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_HEAD</Tag>
-        <English>Peace on earth</English>
+        <English>Peace On Earth</English>
         <French>Huit Palissades</French>
         <German>Frieden auf Erden</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_TEXT</Tag>
-        <English>Defence works of stout timber surround your settlements. Your people are thankful that they can live in peace.[NEWLINE][NEWLINE]In more and more of your cities, solid walls and watchtowers provide protection for your citizens.[NEWLINE][NEWLINE]Truly, only God can take care of human happiness in the hereafter. But for this world you, the governor, are here.[NEWLINE][NEWLINE]You give your subjects peace on earth.[NEWLINE][NEWLINE]May your happiness never arouse the envy of others![NEWLINE][NEWLINE]Especially not the envy of a tyrant well known to you, who poses as your sovereign...[NEWLINE][NEWLINE]</English>
+        <English>Defence works of stout timber surround your settlements. Your people are thankful that they can live in peace.[NEWLINE][NEWLINE]In more and more of your cities, solid walls and watchtowers protect your citizens.[NEWLINE][NEWLINE]Truly, only God can take care of human happiness in the hereafter. But for this world you, the governor, are here.[NEWLINE][NEWLINE]You give your subjects peace on earth.[NEWLINE][NEWLINE]May your happiness never arouse the envy of others![NEWLINE][NEWLINE]Especially not the envy of a tyrant well known to you, who poses as your sovereign...[NEWLINE][NEWLINE]</English>
         <French>De plus en plus de nos villes sont protégés par des murs solides et des tours de garde. Le peuple vous remercie de lui apporter cette paix.[NEWLINE][NEWLINE]</French>
         <German>In immer mehr Eurer Städte sorgen feste Mauern und Wachtürme für den Schutz Eurer Bürger.[NEWLINE][NEWLINE]Fürwahr, für das Menschenglück im Jenseits kann nur Gott sorgen. Doch für das Diesseits seid Ihr, der Gouverneur, da.[NEWLINE][NEWLINE]Ihr schenkt Euren Untertanen Frieden auf Erden.[NEWLINE][NEWLINE]Möge Euer Glück niemals den Neid anderer wecken![NEWLINE][NEWLINE]Insbesondere nicht die Missgunst eines Euch wohlbekannten Tyrannen, der sich als Euer Landesherr aufspielt ...[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -413,13 +413,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_HEAD</Tag>
-        <English>An impregnable fortress</English>
+        <English>An Impregnable Fortress</English>
         <French>Votre premier grand bastion</French>
         <German>Eine uneinnehmbare Festung</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_TEXT</Tag>
-        <English>You have built your first great bastion.[NEWLINE][NEWLINE]The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks of the impregnability of this fortress.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first Great Bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have built your first great bastion.[NEWLINE][NEWLINE]The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks of the impregnability of this fortress.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first great bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Les artisans rangent leurs outils, le prêtre apporte sa bénédiction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilité de la forteresse.[NEWLINE][NEWLINE]Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majesté.[NEWLINE][NEWLINE]Au loin, alors que  le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse à l'oreille : « Espérons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises ».[NEWLINE][NEWLINE]</French>
         <German>Die Handwerker legen ihre Werkzeuge beiseite, der Pfarrer segnet die Mauern, die neue Wache zieht auf und der Kommandeur spricht von der Uneinnehmbarkeit dieser Festung.[NEWLINE][NEWLINE]Hoch über der Stadt ragt sie auf, stolz und mächtig - die erste Große Bastion dieser Festung verleiht ihr ein wahrlich majestätisches Aussehen.[NEWLINE][NEWLINE]Aus der Ferne lauscht der Gouverneur den Salutschüssen.[NEWLINE][NEWLINE]Seine Frau meint fragend zu ihm: "[COLOR_SELECTED_TEXT]Ob wir uns nun wirklich sicherer fühlen können? Wird eine so große Festung unsere Nachbarn nicht vielleicht doch eher provozieren?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
