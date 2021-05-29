@@ -62,6 +62,11 @@
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
@@ -74,10 +79,33 @@
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
@@ -88,7 +116,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
@@ -153,24 +190,51 @@
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
@@ -180,7 +244,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
@@ -245,28 +318,51 @@
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
@@ -276,7 +372,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
@@ -340,27 +445,52 @@
             <iWaveTurns>5</iWaveTurns>
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
@@ -370,7 +500,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
@@ -434,27 +573,52 @@
             <iWaveTurns>5</iWaveTurns>
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
@@ -464,7 +628,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
@@ -528,29 +701,52 @@
             <iWaveTurns>5</iWaveTurns>
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
@@ -560,7 +756,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
@@ -624,30 +829,52 @@
             <iWaveTurns>5</iWaveTurns>
             <Goodies>
                 <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_SCOUT</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
+                <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_TREASURE</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
                 <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_BURIAL_GROUNDS</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
+                <GoodyType>GOODY_HIGH_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
+                <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_MAP</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE</GoodyType>
                 <GoodyType>GOODY_HEALING</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_WEAK</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_HOSTILE_STRONG</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
-                <GoodyType>GOODY_WAR</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
+                <GoodyType>GOODY_HEALING</GoodyType>
                 <GoodyType>GOODY_NATIVE_SLAVE</GoodyType>
                 <GoodyType>GOODY_NATIVE_MERC</GoodyType>
                 <GoodyType>GOODY_COLONIST</GoodyType>
@@ -657,7 +884,16 @@
                 <GoodyType>GOODY_NATIVE_TRADER</GoodyType>
                 <GoodyType>GOODY_SHIPWRECKED</GoodyType>
                 <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
+                <GoodyType>GOODY_LOW_GOLD_SEA</GoodyType>
                 <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_MAP_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
+                <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_EXPERIENCE_SEA</GoodyType>
                 <GoodyType>GOODY_RUMORS_EL_DORADO</GoodyType>
                 <GoodyType>GOODY_RUMORS_FOUNTAIN_OF_YOUTH</GoodyType>
