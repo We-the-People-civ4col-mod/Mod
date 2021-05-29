@@ -2114,6 +2114,16 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		{
 			return false;
 		}
+		// not allow it on City Center Plot
+		if (isCity())
+		{
+			return false;
+		}
+		// not allow it on Water - to prevent issues with Large Rivers
+		if (isWater())
+		{
+			return false;
+		}
 		// only allow if there is a Road to Remove
 		if (getRouteType() == NO_ROUTE)
 		{
