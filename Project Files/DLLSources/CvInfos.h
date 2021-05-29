@@ -2163,7 +2163,14 @@ public:
 	bool isWar() const;
 	bool isWaterGoody() const; // R&R, ray, Goodies on Water
 	bool isUnique() const; // R&R, ray, Goody Enhancement
-
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
+	int getMinTurnValid() const;
+	int getRandNumHostilesSpawned() const;
+	bool isSpawnHostileUnitsAsXML() const;
+	bool isSpawnHostileAnimals() const;
+	bool isSpawnHostileNatives() const;
+	bool isSpawnHostileCriminals() const;
+	// WTP, ray, Unit spawning Goodies and Goody Huts - END
 	int getGoodyWeight(int iGoody) const;
 
 	const char* getSound() const;
@@ -2192,7 +2199,14 @@ protected:
 	bool m_bWar;
 	bool m_bWaterGoody; // R&R, ray, Goodies on Water
 	bool m_bUnique; // R&R, ray, Goody Enhancement
-
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
+	int m_iMinTurnValid;
+	int m_iRandNumHostilesSpawned;
+	bool m_bSpawnHostileUnitsAsXML;
+	bool m_bSpawnHostileAnimals;
+	bool m_bSpawnHostileNatives;
+	bool m_bSpawnHostileCriminals;
+	// WTP, ray, Unit spawning Goodies and Goody Huts - END
 	int* m_aGoodyWeights;
 
 	CvString m_szSound;

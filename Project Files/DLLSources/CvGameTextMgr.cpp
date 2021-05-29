@@ -6449,7 +6449,6 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		}
 		//WTP, ray, Large Rivers - END
 
-		//WTP, ray, Large Rivers
 		//WTP, Unit only Goodies
 		// START texts in Colopedia
 		if (info.isGoodyForSpawningUnits())

@@ -7724,6 +7724,14 @@ m_bBad(false),
 m_bWar(false),
 m_bWaterGoody(false), // R&R, ray, Goodies on Water
 m_bUnique(false), // R&R, ray, Goody Enhancement
+// WTP, ray, Unit spawning Goodies and Goody Huts - START
+m_iMinTurnValid(0),
+m_iRandNumHostilesSpawned(0),
+m_bSpawnHostileUnitsAsXML(false),
+m_bSpawnHostileAnimals(false),
+m_bSpawnHostileNatives(false),
+m_bSpawnHostileCriminals(false),
+// WTP, ray, Unit spawning Goodies and Goody Huts - END
 m_aGoodyWeights(NULL)
 {
 }
@@ -7808,6 +7816,33 @@ bool CvGoodyInfo::isUnique() const // R&R, ray, Goody Enhancement
 {
 	return m_bUnique;
 }
+// WTP, ray, Unit spawning Goodies and Goody Huts -START
+int CvGoodyInfo::getMinTurnValid() const
+{
+	return m_iMinTurnValid;
+}
+int CvGoodyInfo::getRandNumHostilesSpawned() const
+{
+	return m_iRandNumHostilesSpawned;
+}
+
+bool CvGoodyInfo::isSpawnHostileUnitsAsXML()const
+{
+	return m_bSpawnHostileUnitsAsXML;
+}
+bool CvGoodyInfo::isSpawnHostileAnimals()const
+{
+	return m_bSpawnHostileAnimals;
+}
+bool CvGoodyInfo::isSpawnHostileNatives()const
+{
+	return m_bSpawnHostileNatives;
+}
+bool CvGoodyInfo::isSpawnHostileCriminals()const
+{
+	return m_bSpawnHostileCriminals;
+}
+// WTP, ray, Unit spawning Goodies and Goody Huts -END
 int CvGoodyInfo::getGoodyWeight(int iGoody) const
 {
 	FAssert(iGoody >= 0 && iGoody < GC.getNumGoodyInfos());
@@ -7858,6 +7893,14 @@ bool CvGoodyInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCityGoodyWeight, "iCityGoodyWeight");
 	pXML->GetChildXmlValByName(&m_bWaterGoody, "bWaterGoody"); // R&R, ray, Goodies on Water
 	pXML->GetChildXmlValByName(&m_bUnique, "bUnique"); // // R&R, ray, Goody Enhancement
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
+	pXML->GetChildXmlValByName(&m_iMinTurnValid, "iMinTurnValid");
+	pXML->GetChildXmlValByName(&m_iRandNumHostilesSpawned, "iRandNumHostilesSpawned");
+	pXML->GetChildXmlValByName(&m_bSpawnHostileUnitsAsXML, "bSpawnHostileUnitsAsXML");
+	pXML->GetChildXmlValByName(&m_bSpawnHostileAnimals, "bSpawnHostileAnimals");
+	pXML->GetChildXmlValByName(&m_bSpawnHostileNatives, "bSpawnHostileNatives");
+	pXML->GetChildXmlValByName(&m_bSpawnHostileCriminals, "bSpawnHostileCriminals");
+	// WTP, ray, Unit spawning Goodies and Goody Huts - END
 	return true;
 }
 bool CvGoodyInfo::readPass2(CvXMLLoadUtility* pXML)

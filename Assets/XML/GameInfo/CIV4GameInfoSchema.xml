@@ -132,6 +132,12 @@
 	<ElementType name="iCityGoodyWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="bWaterGoody" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bUnique" content="textOnly" dt:type="boolean"/>
+	<ElementType name="iMinTurnValid" content="textOnly" dt:type="int"/>
+	<ElementType name="iRandNumHostilesSpawned" content="textOnly" dt:type="int"/>
+	<ElementType name="bSpawnHostileUnitsAsXML" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSpawnHostileAnimals" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSpawnHostileNatives" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bSpawnHostileCriminals" content="textOnly" dt:type="boolean"/>
 	<ElementType name="AnnounceText" content="textOnly"/>
 	<ElementType name="ChiefText" content="textOnly"/>
 	<ElementType name="iWeight" content="textOnly" dt:type="int"/>
@@ -165,6 +171,12 @@
 		<element type="iCityGoodyWeight"/>
 		<element type="bWaterGoody"/>
 		<element type="bUnique"/>
+		<element type="iMinTurnValid"/>
+		<element type="iRandNumHostilesSpawned"/>
+		<element type="bSpawnHostileUnitsAsXML"/>
+		<element type="bSpawnHostileAnimals"/>
+		<element type="bSpawnHostileNatives"/>
+		<element type="bSpawnHostileCriminals"/>
 		<element type="GoodyWeights"/>
 	</ElementType>
 	<ElementType name="GoodyInfos" content="eltOnly">

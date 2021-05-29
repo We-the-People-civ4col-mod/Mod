@@ -184,6 +184,14 @@ void CyInfoPythonInterface2()
 		.def("isBad", &CvGoodyInfo::isBad, "bool ()")
 		.def("isWaterGoody", &CvGoodyInfo::isWaterGoody, "bool ()") // R&R, ray, Goodies on Water
 		.def("isUnique", &CvGoodyInfo::isUnique, "bool ()") // R&R, ray, Goody Enhancement
+		// WTP, ray, Unit spawning Goodies and Goody Huts - START
+		.def("getMinTurnValid", &CvGoodyInfo::getMinTurnValid, "int ()")
+		.def("getRandNumHostilesSpawned", &CvGoodyInfo::getRandNumHostilesSpawned, "int ()")
+		.def("isSpawnHostileUnitsAsXML", &CvGoodyInfo::isSpawnHostileUnitsAsXML, "bool ()")
+		.def("isSpawnHostileAnimals", &CvGoodyInfo::isSpawnHostileAnimals, "bool ()")
+		.def("isSpawnHostileNatives", &CvGoodyInfo::isSpawnHostileNatives, "bool ()")
+		.def("isSpawnHostileCriminals", &CvGoodyInfo::isSpawnHostileCriminals, "bool ()")
+		// WTP, ray, Unit spawning Goodies and Goody Huts - END
 		;
 	python::class_<CvRouteInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvRouteInfo")
 		.def("getValue", &CvRouteInfo::getValue, "int ()")

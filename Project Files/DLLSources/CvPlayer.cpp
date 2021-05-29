@@ -5158,6 +5158,64 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	}
 	// R&R, ray, Goody Enhancement - END
 
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
+	// we have to catch invalid XML configurations first
+	if (kGoody.isSpawnHostileUnitsAsXML() || kGoody.isSpawnHostileAnimals() || kGoody.isSpawnHostileNatives() || kGoody.isSpawnHostileCriminals())
+	{
+		// we also do not trigger that stuff for AI - it is too hard / unfair for it
+		if(kGoody.getRandNumHostilesSpawned() == 0 || kGoody.getUnitClassType() == NO_UNITCLASS  || !isHuman())
+		{
+			return false;
+		}
+
+	}
+	// then we also check min turn - only if not 0
+	if (kGoody.getMinTurnValid() != 0)
+	{
+		int iMinTurnValid = kGoody.getMinTurnValid();
+		int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		int iCurrentTurn = GC.getGameINLINE().getGameTurn();
+
+		if (iCurrentTurn < (iMinTurnValid * iGameSpeedModifier))
+		{
+			return false;
+		}
+	}
+	// now we go and catch the other cases
+	// normal Unit should only spawned in Unit Goody Huts - allows to configure immersive spawning
+	if (kGoody.isSpawnHostileUnitsAsXML())
+	{
+		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningUnits())
+		{
+			return false;
+		}
+	}
+	// Wild Animal should only spawned in Animal Goody Huts - allows to configure immersive spawning
+	if (kGoody.isSpawnHostileAnimals())
+	{
+		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningHostileAnimals())
+		{
+			return false;
+		}
+	}
+	// Hostile Natives should only spawned in Hostile Native Goody Huts - allows to configure immersive spawning
+	if (kGoody.isSpawnHostileNatives())
+	{
+		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningHostileNatives())
+		{
+			return false;
+		}
+	}
+	// Hostile Criminals should only spawned in Hostile Criminal Goody Huts - allows to configure immersive spawning
+	if (kGoody.isSpawnHostileCriminals())
+	{
+		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningHostileCriminals())
+		{
+			return false;
+		}
+	}
+	// WTP, ray, Unit spawning Goodies and Goody Huts - END
+
 	return true;
 }
 
@@ -5351,21 +5409,27 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		pUnit->changeDamage(-(kGoody.getHealing()));
 	}
 
-	if (kGoody.getUnitClassType() != NO_UNITCLASS)
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
+	// this shall only trigger if we do not spawn hostiles instead - code below
+	if (!kGoody.isSpawnHostileUnitsAsXML() && !kGoody.isSpawnHostileAnimals() && !kGoody.isSpawnHostileNatives() && !kGoody.isSpawnHostileCriminals())
 	{
-		UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kGoody.getUnitClassType());
-
-		if (eUnit != NO_UNIT)
+		if (kGoody.getUnitClassType() != NO_UNITCLASS)
 		{
-			CvUnit* pGoodyUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kGoody.getUnitClassType());
 
-			//treasure
-			if((pGoodyUnit != NULL) && (iGold != 0) && pGoodyUnit->getUnitInfo().isTreasure())
+			if (eUnit != NO_UNIT)
 			{
-				pGoodyUnit->setYieldStored(iGold);
+				CvUnit* pGoodyUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE());
+
+				//treasure
+				if((pGoodyUnit != NULL) && (iGold != 0) && pGoodyUnit->getUnitInfo().isTreasure())
+				{
+					pGoodyUnit->setYieldStored(iGold);
+				}
 			}
 		}
 	}
+	// WTP, ray, Unit spawning Goodies and Goody Huts - END
 
 	if (kGoody.getTeachUnitClassType() != NO_UNITCLASS)
 	{
@@ -5414,6 +5478,36 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 		}
 	}
 	// R&R, ray, Goody Enhancement - FALSE
+
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
+	// code the logic here what these Goodies do
+	// is is actually all the same - the XML tags are just used for immersive spwaning config
+	if (kGoody.isSpawnHostileUnitsAsXML() || kGoody.isSpawnHostileAnimals() || kGoody.isSpawnHostileNatives() || kGoody.isSpawnHostileCriminals())
+	{	
+		// for safety
+		if (kGoody.getUnitClassType() != NO_UNITCLASS && GC.getGameINLINE().getBarbarianPlayer() != NO_PLAYER)
+		{
+			// we check how many Hostiles we spawn
+			int iRandomHostileUnitsToSpawn = kGoody.getRandNumHostilesSpawned();
+			int iActualHostileUnitsToSpawn = GC.getGameINLINE().getSorenRandNum(iRandomHostileUnitsToSpawn, "Randomize Hostile Units Spawned");
+			if (iActualHostileUnitsToSpawn == 0)
+			{
+				iActualHostileUnitsToSpawn = 1;
+			}
+
+			// we get UnitClass, Unit and Barbarian Player
+			int eHostileUnitClass = kGoody.getUnitClassType();
+			UnitTypes eUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eHostileUnitClass)));
+			CvPlayer& barbarianPlayer = GET_PLAYER(GC.getGameINLINE().getBarbarianPlayer());
+
+			// now we loop and spwan the Hostiles
+			for(int iI=0; iI<iActualHostileUnitsToSpawn; iI++)
+			{
+				CvUnit*  eHostileUnit= barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI);
+			}
+		}
+	}
+	// WTP, ray, Unit spawning Goodies and Goody Huts - END
 
 	return iReturnValue;
 }

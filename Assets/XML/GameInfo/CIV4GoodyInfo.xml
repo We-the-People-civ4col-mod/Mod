@@ -29,6 +29,12 @@
             <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -54,6 +60,12 @@
             <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -79,6 +91,12 @@
             <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -104,6 +122,12 @@
             <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -129,6 +153,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -154,6 +184,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -179,6 +215,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -204,6 +246,12 @@
             <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -229,6 +277,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -254,6 +308,12 @@
             <iCityGoodyWeight>1000</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -279,6 +339,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights>
                 <GoodyWeight>
                     <Type>GOODY_WAR</Type>
@@ -313,6 +379,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -338,6 +410,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -363,6 +441,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -388,6 +472,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -413,6 +503,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -438,6 +534,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>1</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -463,6 +565,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>1</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -488,6 +596,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>1</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -513,6 +627,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>1</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -538,6 +658,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>1</bUnique>
+            <iMinTurnValid>40</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -563,6 +689,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>1</bUnique>
+            <iMinTurnValid>50</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -588,6 +720,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>1</bWaterGoody>
             <bUnique>1</bUnique>
+            <iMinTurnValid>20</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -613,6 +751,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>1</bWaterGoody>
             <bUnique>1</bUnique>
+            <iMinTurnValid>10</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -638,6 +782,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
         <GoodyInfo>
@@ -663,6 +813,12 @@
             <iCityGoodyWeight>0</iCityGoodyWeight>
             <bWaterGoody>0</bWaterGoody>
             <bUnique>0</bUnique>
+            <iMinTurnValid>0</iMinTurnValid>
+            <iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+            <bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+            <bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+            <bSpawnHostileNatives>0</bSpawnHostileNatives>
+            <bSpawnHostileCriminals>0</bSpawnHostileCriminals>
             <GoodyWeights/>
         </GoodyInfo>
     </GoodyInfos>
