@@ -7986,7 +7986,8 @@ bool CvCity::canApplyEvent(EventTypes eEvent, const EventTriggeredData& kTrigger
 		return false;
 	}
 
-	if (kEvent.getFood() + ((100 + kEvent.getFoodPercent()) * getFood()) / 100 < 0)
+	// changed to make apply and can apply calculate using the same code (read: same result) - Nightinggale
+	if (kEvent.getFoodChange(this) > getFood())
 	{
 		return false;
 	}
@@ -8065,14 +8066,8 @@ void CvCity::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredD
 
 	if (kEvent.isCityEffect() || kEvent.isOtherPlayerCityEffect())
 	{
-		if (kEvent.getFood() != 0 || kEvent.getFoodPercent() != 0)
-		{
-			int iFoodQty = kEvent.getFood();
-			iFoodQty *= iGrowthPercent;
-			iFoodQty /=100;
-			iFoodQty += (kEvent.getFoodPercent() * getFood()) / 100;
-			changeFood( iFoodQty );
-		}
+		// changed to make apply and can apply calculate using the same code (read: same result) - Nightinggale
+		changeFood(kEvent.getFoodChange(this));
 
 		if (kEvent.getPopulationChange() != 0)
 		{

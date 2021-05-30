@@ -14846,6 +14846,26 @@ const wchar* CvEventInfo::getOtherPlayerPopup() const
 {
 	return m_szOtherPlayerPopup;
 }
+
+// changed to make apply and can apply calculate using the same code (read: same result) - Nightinggale
+int CvEventInfo::getFoodChange(const CvCity* pCity) const
+{
+	int iFood = getFood();
+
+	if (iFood != 0)
+	{
+		int iGrowthPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+		iFood *= iGrowthPercent;
+		iFood /= 100;
+	}
+
+	if (getFoodPercent())
+	{
+		iFood = (getFoodPercent() * pCity->getFood()) / 100;
+	}
+	return iFood;
+}
+
 void CvEventInfo::read(FDataStreamBase* stream)
 {
 	CvInfoBase::read(stream);

@@ -4471,6 +4471,11 @@ public:
 	const wchar* getQuestFailTextKey() const;
 	const wchar* getOtherPlayerPopup() const;
 	const wchar* getLocalInfoTextKey() const;
+
+	// functions to calculate indirect data
+	// useful for using the same code in canApply() and apply()
+	int getFoodChange(const CvCity* pCity) const;
+
 	void read(FDataStreamBase* );
 	void write(FDataStreamBase* );
 	bool read(CvXMLLoadUtility* pXML);

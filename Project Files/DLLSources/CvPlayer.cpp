@@ -13840,26 +13840,19 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 			}
 		}
 
-		if (kEvent.getFood() != 0)
+		// rewritten food changes to avoid negative food - Nightinggale
+		if (kEvent.getFood() != 0 || kEvent.getFoodPercent() != 0)
 		{
 			int iLoop;
-			int iFood = kEvent.getFood();
-			iFood *= iGrowthPercent;
-			iFood /= 100;
-			//Time is the issue
 			for (CvCity* pLoopCity = firstCity(&iLoop); NULL != pLoopCity; pLoopCity = nextCity(&iLoop))
 			{
-				pLoopCity->changeFood(iFood);
-			}
-		}
-
-		if (kEvent.getFoodPercent() != 0)
-		{
-			int iLoop;
-
-			for (CvCity* pLoopCity = firstCity(&iLoop); NULL != pLoopCity; pLoopCity = nextCity(&iLoop))
-			{
-				pLoopCity->changeFood((pLoopCity->getFood() * kEvent.getFoodPercent()) / 100);
+				// first get the food change
+				// it can't be lower than negative current amount as this protects against negative food stored
+				// note that there is no test to see if there is enough food prior to applying the event
+				// it wouldn't make sense to require all cities to have the needed amount as that would make negative
+				// amounts of food nearly impossible to trigger.
+				int iFoodChange = std::max(kEvent.getFoodChange(pLoopCity), -pLoopCity->getFood());
+				pLoopCity->changeFood(iFoodChange);
 			}
 		}
 
