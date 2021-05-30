@@ -5167,6 +5167,20 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 		{
 			return false;
 		}
+
+		// for Animals we also need to check the Terrain configured correctly for immersion:
+		UnitTypes eUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kGoody.getUnitClassType())));
+		if (eUnit != NO_UNIT)
+		{
+			CvUnitInfo& eAnmialInfo = GC.getUnitInfo(eUnit);
+			bool isAnimal = eAnmialInfo.isAnimal();
+			bool isNativeTerrain = eAnmialInfo.getTerrainNative(pPlot->getTerrainType());
+			if(isAnimal && !isNativeTerrain)
+			{
+				return false;
+			}
+		}
+
 	}
 	// then we also check min turn - only if not 0
 	if (kGoody.getMinTurnValid() != 0)
@@ -5176,47 +5190,6 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 		int iCurrentTurn = GC.getGameINLINE().getGameTurn();
 
 		if (iCurrentTurn < (iMinTurnValid * iGameSpeedModifier))
-		{
-			return false;
-		}
-	}
-	// now we go and catch the other cases
-	// normal Unit should only spawned in Unit Goody Huts - allows to configure immersive spawning
-	if (kGoody.isSpawnHostileUnitsAsXML())
-	{
-		if (!pPlot->isGoodyForSpawningUnits())
-		{
-			return false;
-		}
-	}
-	// Wild Animal should only spawned in Animal Goody Huts - allows to configure immersive spawning
-	if (kGoody.isSpawnHostileAnimals())
-	{
-		if (!pPlot->isGoodyForSpawningHostileAnimals())
-		{
-			return false;
-		}
-
-		// for Animals we also need to check the Terrain for immersion:
-		UnitTypes eUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kGoody.getUnitClassType())));
-		if(!GC.getUnitInfo(eUnit).getTerrainNative(pPlot->getTerrainType()))
-		{
-			return false;
-		}
-
-	}
-	// Hostile Natives should only spawned in Hostile Native Goody Huts - allows to configure immersive spawning
-	if (kGoody.isSpawnHostileNatives())
-	{
-		if (!pPlot->isGoodyForSpawningHostileNatives())
-		{
-			return false;
-		}
-	}
-	// Hostile Criminals should only spawned in Hostile Criminal Goody Huts - allows to configure immersive spawning
-	if (kGoody.isSpawnHostileCriminals())
-	{
-		if (!pPlot->isGoodyForSpawningHostileCriminals())
 		{
 			return false;
 		}
@@ -5552,6 +5525,13 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 			bool bCanTriggerUnitGoodies = pPlot->isGoodyForSpawningUnits();
 			//WTP, Unit only Goodies - START
 
+			// WTP, ray, Unit spawning Goodies and Goody Huts - START
+			// ok, we need to store Infos for "Hostile Goodies, because they will be removed after this
+			bool bCanTriggerHostileAnimalGoodies = pPlot->isGoodyForSpawningHostileAnimals();
+			bool bCanTriggerHostileNativesGoodies = pPlot->isGoodyForSpawningHostileNatives();
+			bool bCanTriggerHostileCriminalsGoodies = pPlot->isGoodyForSpawningHostileCriminals();
+			// WTP, ray, Unit spawning Goodies and Goody Huts - END
+
 			pPlot->removeGoody();
 
 			std::vector<int> aGoodyFactors(GC.getNumGoodyInfos(), 1);
@@ -5607,11 +5587,47 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 								}
 							}
 
+							// WTP, ray, Unit spawning Goodies and Goody Huts - START
+							else if (uGoody.isSpawnHostileUnitsAsXML())
+							{
+								if (bCanTriggerUnitGoodies)
+								{
+									bValid = true;
+								}
+							}
+							// Wild Animal should only spawned in Animal Goody Huts - allows to configure immersive spawning
+							else if (uGoody.isSpawnHostileAnimals())
+							{
+								if (bCanTriggerHostileAnimalGoodies)
+								{
+									bValid = true;
+								}
+							}
+							// Hostile Natives should only spawned in Hostile Native Goody Huts - allows to configure immersive spawning
+							else if (uGoody.isSpawnHostileNatives())
+							{
+								if (bCanTriggerHostileNativesGoodies)
+								{
+									bValid = true;
+								}
+							}
+							// Hostile Criminals should only spawned in Hostile Criminal Goody Huts - allows to configure immersive spawning
+							else if (uGoody.isSpawnHostileCriminals())
+							{
+								if (bCanTriggerHostileCriminalsGoodies)
+								{
+									bValid = true;
+								}
+							}
+							// WTP, ray, Unit spawning Goodies and Goody Huts - END
+
 							// in all other Cases Unit Goodies may only be triggered if bCanTriggerUnitGoodies 
+							// normal case for hostile and non-hostile Units
 							else if (bCanTriggerUnitGoodies)
 							{
 								bValid = true;
 							}
+
 						}
 
 						// Case: Goody gives other rewards
