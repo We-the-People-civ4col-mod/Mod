@@ -2549,16 +2549,17 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, pTriggeredData->m_szText);
 
 	bool bEventAvailable = false;
-	for (int i = 0; i < kTrigger.getNumEvents(); i++)
+	const InfoArray<EventTypes>& Events = kTrigger.getEvents();
+	for (int i = 0; i < Events.getLength(); i++)
 	{
-		if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canDoEvent((EventTypes)kTrigger.getEvent(i), *pTriggeredData))
+		if (GET_PLAYER(GC.getGameINLINE().getActivePlayer()).canDoEvent(Events.getEvent(i), *pTriggeredData))
 		{
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getEventInfo((EventTypes)kTrigger.getEvent(i)).getDescription(), GC.getEventInfo((EventTypes)kTrigger.getEvent(i)).getButton(), kTrigger.getEvent(i), WIDGET_CHOOSE_EVENT, kTrigger.getEvent(i), info.getData1());
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getEventInfo(Events.getEvent(i)).getDescription(), GC.getEventInfo(Events.getEvent(i)).getButton(), Events.getEvent(i), WIDGET_CHOOSE_EVENT, Events.getEvent(i), info.getData1());
 			bEventAvailable = true;
 		}
 		else
 		{
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getEventInfo((EventTypes)kTrigger.getEvent(i)).getDescription(), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_EVENT_UNAVAILABLE_BULLET")->getPath(), -1, WIDGET_CHOOSE_EVENT, kTrigger.getEvent(i), info.getData1(), false);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getEventInfo(Events.getEvent(i)).getDescription(), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_EVENT_UNAVAILABLE_BULLET")->getPath(), -1, WIDGET_CHOOSE_EVENT, Events.getEvent(i), info.getData1(), false);
 		}
 	}
 

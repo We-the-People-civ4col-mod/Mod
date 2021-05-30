@@ -13020,12 +13020,13 @@ int CvUnit::getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, boo
 		}
 	}
 
-	if (kTrigger.getNumUnitsRequired() > 0)
+	const InfoArray<UnitClassTypes>& ReqUnits = kTrigger.getUnitsRequired();
+	if (ReqUnits.getLength() > 0)
 	{
 		bool bFoundValid = false;
-		for (int i = 0; i < kTrigger.getNumUnitsRequired(); ++i)
+		for (int i = 0; i < ReqUnits.getLength(); ++i)
 		{
-			if (getUnitClassType() == kTrigger.getUnitRequired(i))
+			if (getUnitClassType() == ReqUnits.getUnitClass(i))
 			{
 				// WTP, ray, trying to fix wrong plot selection for Unit Events - START
 				if (kTrigger.isUnitsOnPlot())

@@ -13907,15 +13907,15 @@ CvEventTriggerInfo::CvEventTriggerInfo() :
 	m_iNumUnitsGlobal(0),
 	m_iNumBuildingsGlobal(0),
 	m_iNumPlotsRequired(0),
-	m_iPlotType(0),
+	m_ePlotType(PLOT_PEAK),
 	m_iOtherPlayerShareBorders(0),
-	m_iCivic(NO_CIVIC),
+	m_eCivic(NO_CIVIC),
 	m_iMinPopulation(0),
 	m_iMaxPopulation(0),
 	m_iMinMapLandmass(0),
 	m_iMinOurLandmass(0),
 	m_iMaxOurLandmass(0),
-	m_iMinDifficulty(NO_HANDICAP),
+	m_eMinDifficulty(NO_HANDICAP),
 	m_iUnitDamagedWeight(0),
 	m_iUnitDistanceWeight(0),
 	m_iUnitExperienceWeight(0),
@@ -13953,21 +13953,21 @@ int CvEventTriggerInfo::getProbability() const
 {
 	return m_iProbability;
 }
-int CvEventTriggerInfo::getUnitRequired(int i) const
+int CvEventTriggerInfo::PY_getUnitRequired(int i) const
 {
-	return m_aiUnitsRequired[i];
+	return m_info_UnitsRequired.getUnitClass(i);
 }
-int CvEventTriggerInfo::getNumUnitsRequired() const
+int CvEventTriggerInfo::PY_getNumUnitsRequired() const
 {
-	return (int)m_aiUnitsRequired.size();
+	return m_info_UnitsRequired.getLength();
 }
-int CvEventTriggerInfo::getBuildingRequired(int i) const
+int CvEventTriggerInfo::PY_getBuildingRequired(int i) const
 {
-	return m_aiBuildingsRequired[i];
+	return m_info_BuildingsRequired.getBuildingClass(i);
 }
-int CvEventTriggerInfo::getNumBuildingsRequired() const
+int CvEventTriggerInfo::PY_getNumBuildingsRequired() const
 {
-	return (int)m_aiBuildingsRequired.size();
+	return m_info_BuildingsRequired.getLength();
 }
 int CvEventTriggerInfo::getNumUnits() const
 {
@@ -13989,17 +13989,25 @@ int CvEventTriggerInfo::getNumPlotsRequired() const
 {
 	return m_iNumPlotsRequired;
 }
-int CvEventTriggerInfo::getPlotType() const
+PlotTypes CvEventTriggerInfo::getPlotType() const
 {
-	return m_iPlotType;
+	return m_ePlotType;
+}
+int CvEventTriggerInfo::PY_getPlotType() const
+{
+	return m_ePlotType;
 }
 int CvEventTriggerInfo::getOtherPlayerShareBorders() const
 {
 	return m_iOtherPlayerShareBorders;
 }
-int CvEventTriggerInfo::getCivic() const
+CivicTypes CvEventTriggerInfo::getCivic() const
 {
-	return m_iCivic;
+	return m_eCivic;
+}
+int CvEventTriggerInfo::PY_getCivic() const
+{
+	return m_eCivic;
 }
 int CvEventTriggerInfo::getMinPopulation() const
 {
@@ -14021,9 +14029,13 @@ int CvEventTriggerInfo::getMaxOurLandmass() const
 {
 	return m_iMaxOurLandmass;
 }
-int CvEventTriggerInfo::getMinDifficulty() const
+HandicapTypes CvEventTriggerInfo::getMinDifficulty() const
 {
-	return m_iMinDifficulty;
+	return m_eMinDifficulty;
+}
+int CvEventTriggerInfo::PY_getMinDifficulty() const
+{
+	return m_eMinDifficulty;
 }
 int CvEventTriggerInfo::getUnitDamagedWeight() const
 {
@@ -14041,53 +14053,85 @@ int CvEventTriggerInfo::getMinTreasury() const
 {
 	return m_iMinTreasury;
 }
-int CvEventTriggerInfo::getEvent(int i) const
+int CvEventTriggerInfo::PY_getEvent(int i) const
 {
-	return m_aiEvents[i];
+	return m_info_Events.getEvent(i);
 }
-int CvEventTriggerInfo::getNumEvents() const
+int CvEventTriggerInfo::PY_getNumEvents() const
 {
-	return (int)m_aiEvents.size();
+	return m_info_Events.getLength();
 }
-int CvEventTriggerInfo::getPrereqEvent(int i) const
+int CvEventTriggerInfo::PY_getPrereqEvent(int i) const
 {
-	return m_aiPrereqEvents[i];
+	return m_info_PrereqEvents.getEvent(i);
 }
-int CvEventTriggerInfo::getNumPrereqEvents() const
+int CvEventTriggerInfo::PY_getNumPrereqEvents() const
 {
-	return (int)m_aiPrereqEvents.size();
+	return m_info_PrereqEvents.getLength();
 }
-int CvEventTriggerInfo::getFeatureRequired(int i) const
+int CvEventTriggerInfo::PY_getFeatureRequired(int i) const
 {
-	return m_aiFeaturesRequired[i];
+	return m_info_FeaturesRequired.getFeature(i);
 }
-int CvEventTriggerInfo::getNumFeaturesRequired() const
+int CvEventTriggerInfo::PY_getNumFeaturesRequired() const
 {
-	return (int)m_aiFeaturesRequired.size();
+	return m_info_FeaturesRequired.getLength();
 }
-int CvEventTriggerInfo::getTerrainRequired(int i) const
+int CvEventTriggerInfo::PY_getTerrainRequired(int i) const
 {
-	return m_aiTerrainsRequired[i];
+	return m_info_TerrainsRequired.getTerrain(i);
 }
-int CvEventTriggerInfo::getNumTerrainsRequired() const
+int CvEventTriggerInfo::PY_getNumTerrainsRequired() const
 {
-	return (int)m_aiTerrainsRequired.size();
+	return m_info_TerrainsRequired.getLength();
 }
-int CvEventTriggerInfo::getImprovementRequired(int i) const
+int CvEventTriggerInfo::PY_getImprovementRequired(int i) const
 {
-	return m_aiImprovementsRequired[i];
+	return m_info_ImprovementsRequired.getImprovement(i);
 }
-int CvEventTriggerInfo::getNumImprovementsRequired() const
+int CvEventTriggerInfo::PY_getNumImprovementsRequired() const
 {
-	return (int)m_aiImprovementsRequired.size();
+	return m_info_ImprovementsRequired.getLength();
 }
-int CvEventTriggerInfo::getRouteRequired(int i) const
+int CvEventTriggerInfo::PY_getRouteRequired(int i) const
 {
-	return m_aiRoutesRequired[i];
+	return m_info_RoutesRequired.getRoute(i);
 }
-int CvEventTriggerInfo::getNumRoutesRequired() const
+int CvEventTriggerInfo::PY_getNumRoutesRequired() const
 {
-	return (int)m_aiRoutesRequired.size();
+	return m_info_RoutesRequired.getLength();
+}
+const InfoArray<UnitClassTypes>& CvEventTriggerInfo::getUnitsRequired() const
+{
+	return m_info_UnitsRequired;
+}
+const InfoArray<BuildingClassTypes>& CvEventTriggerInfo::getBuildingsRequired() const
+{
+	return m_info_BuildingsRequired;
+}
+const InfoArray<EventTypes>& CvEventTriggerInfo::getEvents() const
+{
+	return m_info_Events;
+}
+const InfoArray<EventTypes>& CvEventTriggerInfo::getPrereqEvents() const
+{
+	return m_info_PrereqEvents;
+}
+const InfoArray<FeatureTypes>& CvEventTriggerInfo::getFeaturesRequired() const
+{
+	return m_info_FeaturesRequired;
+}
+const InfoArray<TerrainTypes>& CvEventTriggerInfo::getTerrainsRequired() const
+{
+	return m_info_TerrainsRequired;
+}
+const InfoArray<ImprovementTypes>& CvEventTriggerInfo::getImprovementsRequired() const
+{
+	return m_info_ImprovementsRequired;
+}
+const InfoArray<RouteTypes>& CvEventTriggerInfo::getRoutesRequired() const
+{
+	return m_info_RoutesRequired;
 }
 bool CvEventTriggerInfo::isTutorial() const
 {
@@ -14237,75 +14281,20 @@ void CvEventTriggerInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iNumUnitsGlobal);
 	stream->Read(&m_iNumBuildingsGlobal);
 	stream->Read(&m_iNumPlotsRequired);
-	stream->Read(&m_iPlotType);
+	stream->Read(&m_ePlotType);
 	stream->Read(&m_iOtherPlayerShareBorders);
-	stream->Read(&m_iCivic);
+	stream->Read(&m_eCivic);
 	stream->Read(&m_iMinPopulation);
 	stream->Read(&m_iMaxPopulation);
 	stream->Read(&m_iMinMapLandmass);
 	stream->Read(&m_iMinOurLandmass);
 	stream->Read(&m_iMaxOurLandmass);
-	stream->Read(&m_iMinDifficulty);
+	stream->Read(&m_eMinDifficulty);
 	stream->Read(&m_iUnitDamagedWeight);
 	stream->Read(&m_iUnitDistanceWeight);
 	stream->Read(&m_iUnitExperienceWeight);
 	stream->Read(&m_iMinTreasury);
 	stream->Read(&iNumElements);
-	m_aiUnitsRequired.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiUnitsRequired.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiBuildingsRequired.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiBuildingsRequired.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiEvents.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiEvents.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiPrereqEvents.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiPrereqEvents.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiFeaturesRequired.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiFeaturesRequired.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiTerrainsRequired.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiTerrainsRequired.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiImprovementsRequired.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiImprovementsRequired.push_back(iElement);
-	}
-	stream->Read(&iNumElements);
-	m_aiRoutesRequired.clear();
-	for (int i = 0; i < iNumElements; ++i)
-	{
-		stream->Read(&iElement);
-		m_aiRoutesRequired.push_back(iElement);
-	}
 	// Begin EmperorFool: Events with Images
 	stream->ReadString(m_szEventArt);
 	// End EmperorFool: Events with Images
@@ -14366,59 +14355,19 @@ void CvEventTriggerInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iNumUnitsGlobal);
 	stream->Write(m_iNumBuildingsGlobal);
 	stream->Write(m_iNumPlotsRequired);
-	stream->Write(m_iPlotType);
+	stream->Write(m_ePlotType);
 	stream->Write(m_iOtherPlayerShareBorders);
-	stream->Write(m_iCivic);
+	stream->Write(m_eCivic);
 	stream->Write(m_iMinPopulation);
 	stream->Write(m_iMaxPopulation);
 	stream->Write(m_iMinMapLandmass);
 	stream->Write(m_iMinOurLandmass);
 	stream->Write(m_iMaxOurLandmass);
-	stream->Write(m_iMinDifficulty);
+	stream->Write(m_eMinDifficulty);
 	stream->Write(m_iUnitDamagedWeight);
 	stream->Write(m_iUnitDistanceWeight);
 	stream->Write(m_iUnitExperienceWeight);
 	stream->Write(m_iMinTreasury);
-	stream->Write(m_aiUnitsRequired.size());
-	for (std::vector<int>::iterator it = m_aiUnitsRequired.begin(); it != m_aiUnitsRequired.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiBuildingsRequired.size());
-	for (std::vector<int>::iterator it = m_aiBuildingsRequired.begin(); it != m_aiBuildingsRequired.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiEvents.size());
-	for (std::vector<int>::iterator it = m_aiEvents.begin(); it != m_aiEvents.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiPrereqEvents.size());
-	for (std::vector<int>::iterator it = m_aiPrereqEvents.begin(); it != m_aiPrereqEvents.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiFeaturesRequired.size());
-	for (std::vector<int>::iterator it = m_aiFeaturesRequired.begin(); it != m_aiFeaturesRequired.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiTerrainsRequired.size());
-	for (std::vector<int>::iterator it = m_aiTerrainsRequired.begin(); it != m_aiTerrainsRequired.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiImprovementsRequired.size());
-	for (std::vector<int>::iterator it = m_aiImprovementsRequired.begin(); it != m_aiImprovementsRequired.end(); ++it)
-	{
-		stream->Write(*it);
-	}
-	stream->Write(m_aiRoutesRequired.size());
-	for (std::vector<int>::iterator it = m_aiRoutesRequired.begin(); it != m_aiRoutesRequired.end(); ++it)
-	{
-		stream->Write(*it);
-	}
 	// Begin EmperorFool: Events with Images
 	stream->WriteString(m_szEventArt);
 	// End EmperorFool: Events with Images
@@ -14475,213 +14424,29 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iNumUnitsGlobal, "iNumUnitsGlobal");
 	pXML->GetChildXmlValByName(&m_iNumBuildingsGlobal, "iNumBuildingsGlobal");
 	pXML->GetChildXmlValByName(&m_iNumPlotsRequired, "iNumPlotsRequired");
-	pXML->GetChildXmlValByName(&m_iPlotType, "iPlotType");
+	pXML->GetEnum(getType(), m_ePlotType, "ePlotType", false);
+	pXML->GetEnum(getType(), m_eCivic, "eCivic", false);
 	pXML->GetChildXmlValByName(&m_iOtherPlayerShareBorders, "iOtherPlayerShareBorders");
 	pXML->GetChildXmlValByName(&m_iMinPopulation, "iMinPopulation");
 	pXML->GetChildXmlValByName(&m_iMaxPopulation, "iMaxPopulation");
 	pXML->GetChildXmlValByName(&m_iMinMapLandmass, "iMinMapLandmass");
 	pXML->GetChildXmlValByName(&m_iMinOurLandmass, "iMinOurLandmass");
 	pXML->GetChildXmlValByName(&m_iMaxOurLandmass, "iMaxOurLandmass");
-	pXML->GetChildXmlValByName(szTextVal, "MinDifficulty");
-	m_iMinDifficulty = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eMinDifficulty, "eMinDifficulty", false);
 	pXML->GetChildXmlValByName(&m_iUnitDamagedWeight, "iUnitDamagedWeight");
 	pXML->GetChildXmlValByName(&m_iUnitDistanceWeight, "iUnitDistanceWeight");
 	pXML->GetChildXmlValByName(&m_iUnitExperienceWeight, "iUnitExperienceWeight");
 	pXML->GetChildXmlValByName(&m_iMinTreasury, "iMinTreasury");
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"UnitsRequired"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiUnitsRequired.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiUnitsRequired.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BuildingsRequired"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiBuildingsRequired.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiBuildingsRequired.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	pXML->GetChildXmlValByName(szTextVal, "Civic");
-	m_iCivic = pXML->FindInInfoClass(szTextVal);
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"Events"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiEvents.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiEvents.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"PrereqEvents"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiPrereqEvents.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j=0;j<iNumSibs;j++)
-					{
-						m_aiPrereqEvents.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"FeaturesRequired"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiFeaturesRequired.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiFeaturesRequired.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"TerrainsRequired"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiTerrainsRequired.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiTerrainsRequired.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"ImprovementsRequired"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiImprovementsRequired.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiImprovementsRequired.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
-	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"RoutesRequired"))
-	{
-		if (pXML->SkipToNextVal())
-		{
-			int iNumSibs = gDLL->getXMLIFace()->GetNumChildren(pXML->GetXML());
-			m_aiRoutesRequired.clear();
-			if (0 < iNumSibs)
-			{
-				if (pXML->GetChildXmlVal(szTextVal))
-				{
-					for (int j = 0; j < iNumSibs; j++)
-					{
-						m_aiRoutesRequired.push_back(pXML->FindInInfoClass(szTextVal));
-						if (!pXML->GetNextXmlVal(&szTextVal))
-						{
-							break;
-						}
-					}
-					gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-				}
-			}
-		}
-		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
-	}
+
+	readXML(m_info_UnitsRequired, "UnitsRequired");
+	readXML(m_info_BuildingsRequired, "BuildingsRequired");
+	readXML(m_info_Events, "Events");
+	readXML(m_info_PrereqEvents, "PrereqEvents");
+	readXML(m_info_FeaturesRequired, "FeaturesRequired");
+	readXML(m_info_TerrainsRequired, "TerrainsRequired");
+	readXML(m_info_ImprovementsRequired, "ImprovementsRequired");
+	readXML(m_info_RoutesRequired, "RoutesRequired");
+
 	m_aszText.clear();
 	m_aiTextEra.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"TriggerTexts"))

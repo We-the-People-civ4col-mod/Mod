@@ -8795,13 +8795,14 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		}
 	}
 
-	if (kTrigger.getNumFeaturesRequired() > 0)
+	const InfoArray<FeatureTypes>& Features = kTrigger.getFeaturesRequired();
+	if (Features.getLength() > 0)
 	{
 		bool bFoundValid = false;
 
-		for (int i = 0; i < kTrigger.getNumFeaturesRequired(); ++i)
+		for (int i = 0; i < Features.getLength(); ++i)
 		{
-			if (kTrigger.getFeatureRequired(i) == getFeatureType())
+			if (Features.getFeature(i) == getFeatureType())
 			{
 				bFoundValid = true;
 				break;
@@ -8814,13 +8815,15 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		}
 	}
 
-	if (kTrigger.getNumTerrainsRequired() > 0)
+	
+	const InfoArray<TerrainTypes>& Terrains = kTrigger.getTerrainsRequired();
+	if (Terrains.getLength() > 0)
 	{
 		bool bFoundValid = false;
 
-		for (int i = 0; i < kTrigger.getNumTerrainsRequired(); ++i)
+		for (int i = 0; i < Terrains.getLength(); ++i)
 		{
-			if (kTrigger.getTerrainRequired(i) == getTerrainType())
+			if (Terrains.getTerrain(i) == getTerrainType())
 			{
 				bFoundValid = true;
 				break;
@@ -8833,13 +8836,15 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		}
 	}
 
-	if (kTrigger.getNumImprovementsRequired() > 0)
+	
+	const InfoArray<ImprovementTypes>& Improvements = kTrigger.getImprovementsRequired();
+	if (Improvements.getLength() > 0)
 	{
 		bool bFoundValid = false;
 
-		for (int i = 0; i < kTrigger.getNumImprovementsRequired(); ++i)
+		for (int i = 0; i < Improvements.getLength(); ++i)
 		{
-			if (kTrigger.getImprovementRequired(i) == getImprovementType())
+			if (Improvements.getImprovement(i) == getImprovementType())
 			{
 				bFoundValid = true;
 				break;
@@ -8852,15 +8857,16 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		}
 	}
 
-	if (kTrigger.getNumRoutesRequired() > 0)
+	const InfoArray<RouteTypes>& Routes = kTrigger.getRoutesRequired();
+	if (Routes.getLength() > 0)
 	{
 		bool bFoundValid = false;
 
 		if (NULL == getPlotCity())
 		{
-		for (int i = 0; i < kTrigger.getNumRoutesRequired(); ++i)
+		for (int i = 0; i < Routes.getLength(); ++i)
 		{
-			if (kTrigger.getRouteRequired(i) == getRouteType())
+			if (Routes.getRoute(i) == getRouteType())
 			{
 				bFoundValid = true;
 				break;
@@ -8903,13 +8909,14 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 	}
 
 
-	if (kTrigger.isPrereqEventCity() && kTrigger.getNumPrereqEvents() > 0)
+	const InfoArray<EventTypes>& ReqEvents = kTrigger.getPrereqEvents();
+	if (kTrigger.isPrereqEventCity() && ReqEvents.getLength() > 0)
 	{
 		bool bFoundValid = true;
 
-		for (int iI = 0; iI < kTrigger.getNumPrereqEvents(); ++iI)
+		for (int iI = 0; iI < ReqEvents.getLength(); ++iI)
 		{
-			const EventTriggeredData* pTriggeredData = GET_PLAYER(ePlayer).getEventOccured((EventTypes)kTrigger.getPrereqEvent(iI));
+			const EventTriggeredData* pTriggeredData = GET_PLAYER(ePlayer).getEventOccured(ReqEvents.getEvent(iI));
 			if (NULL == pTriggeredData || pTriggeredData->m_iPlotX != getX_INLINE() || pTriggeredData->m_iPlotY != getY_INLINE())
 			{
 				bFoundValid = false;

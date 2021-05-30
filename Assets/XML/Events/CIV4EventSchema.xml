@@ -19,14 +19,14 @@
 	<ElementType name="iRandomGold" content="textOnly" dt:type="int"/>
 	<ElementType name="iCulture" content="textOnly" dt:type="int"/>
 	<ElementType name="iHealth" content="textOnly" dt:type="int"/>
-	<ElementType name="Civic" content="textOnly"/>
+	<ElementType name="eCivic" content="textOnly"/>
 	<ElementType name="iMinPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxPopulation" content="textOnly" dt:type="int"/>
 	<ElementType name="iPopulationChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinMapLandmass" content="textOnly" dt:type="int"/>
 	<ElementType name="iMinOurLandmass" content="textOnly" dt:type="int"/>
 	<ElementType name="iMaxOurLandmass" content="textOnly" dt:type="int"/>
-	<ElementType name="MinDifficulty" content="textOnly"/>
+	<ElementType name="eMinDifficulty" content="textOnly"/>
 	<ElementType name="UnitsRequired" content="eltOnly">
 		<element type="UnitClass" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -105,7 +105,7 @@
 	<ElementType name="iBuildingChange" content="textOnly" dt:type="int"/>
 	<ElementType name="iNumBuildingsGlobal" content="textOnly" dt:type="int"/>
 	<ElementType name="iNumPlotsRequired" content="textOnly" dt:type="int"/>
-	<ElementType name="iPlotType" content="textOnly" dt:type="int"/>
+	<ElementType name="ePlotType" content="textOnly"/>
 	<ElementType name="FeaturesRequired" content="eltOnly">
 		<element type="FeatureType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -195,14 +195,14 @@
 		<element type="iWeight"/>
 		<element type="bProbabilityUnitMultiply"/>
 		<element type="bProbabilityBuildingMultiply"/>
-		<element type="Civic"/>
+		<element type="eCivic"/>
 		<element type="iMinTreasury"/>
 		<element type="iMinPopulation"/>
 		<element type="iMaxPopulation"/>
 		<element type="iMinMapLandmass"/>
 		<element type="iMinOurLandmass"/>
 		<element type="iMaxOurLandmass"/>
-		<element type="MinDifficulty"/>
+		<element type="eMinDifficulty"/>
 		<element type="UnitsRequired"/>
 		<element type="iNumUnits"/>
 		<element type="iNumUnitsGlobal"/>
@@ -215,7 +215,7 @@
 		<element type="iNumBuildingsGlobal"/>
 		<element type="iNumPlotsRequired"/>
 		<element type="bOwnPlot"/>
-		<element type="iPlotType"/>
+		<element type="ePlotType"/>
 		<element type="FeaturesRequired"/>
 		<element type="TerrainsRequired"/>
 		<element type="ImprovementsRequired"/>

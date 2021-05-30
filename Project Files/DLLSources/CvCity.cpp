@@ -7891,15 +7891,17 @@ int CvCity::getTriggerValue(EventTriggerTypes eTrigger) const
 		}
 	}
 
-	if (kTrigger.getNumBuildings() > 0 && kTrigger.getNumBuildingsRequired() > 0)
+	const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
+	if (kTrigger.getNumBuildings() > 0 && ReqBuildings.getLength() > 0)
 	{
 		bool bFoundValid = false;
 
-		for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
+		for (int i = 0; i < ReqBuildings.getLength(); ++i)
 		{
-			if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+			// the InfoArray won't be containing NO_BUILDINGCLASS
+			//if (ReqBuildings.getBuildingClass(i) != NO_BUILDINGCLASS)
 			{
-				BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(kTrigger.getBuildingRequired(i));
+				BuildingTypes eBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(ReqBuildings.getBuildingClass(i));
 				if (NO_BUILDING != eBuilding)
 				{
 					if (isHasRealBuilding(eBuilding))
@@ -7932,13 +7934,14 @@ int CvCity::getTriggerValue(EventTriggerTypes eTrigger) const
 		}
 	}
 
-	if (kTrigger.isPrereqEventCity() && kTrigger.getNumPrereqEvents() > 0)
+	const InfoArray<EventTypes>& ReqEvents = kTrigger.getPrereqEvents();
+	if (kTrigger.isPrereqEventCity() && ReqEvents.getLength() > 0)
 	{
 		bool bFoundValid = true;
 
-		for (int iI = 0; iI < kTrigger.getNumPrereqEvents(); ++iI)
+		for (int iI = 0; iI < ReqEvents.getLength(); ++iI)
 		{
-			if (!isEventOccured((EventTypes)kTrigger.getPrereqEvent(iI)))
+			if (!isEventOccured(ReqEvents.getEvent(iI)))
 			{
 				bFoundValid = false;
 				break;

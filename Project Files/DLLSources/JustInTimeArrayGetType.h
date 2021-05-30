@@ -189,6 +189,11 @@ static inline JITarrayTypes getJITarrayType(PlayerOptionTypes var)
 	return JIT_ARRAY_PLAYER_OPTION;
 }
 
+static inline JITarrayTypes getJITarrayType(PlotTypes var)
+{
+	return JIT_ARRAY_PLOT_TYPE;
+}
+
 static inline JITarrayTypes getJITarrayType(ProfessionTypes var)
 {
 	return JIT_ARRAY_PROFESSION;

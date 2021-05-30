@@ -504,27 +504,27 @@ bool isPlotEventTrigger(EventTriggerTypes eTrigger)
 			return true;
 		}
 
-		if (kTrigger.getNumFeaturesRequired() > 0)
+		if (kTrigger.getFeaturesRequired().getLength() > 0)
 		{
 			return true;
 		}
 
-		if (kTrigger.getNumTerrainsRequired() > 0)
+		if (kTrigger.getTerrainsRequired().getLength() > 0)
 		{
 			return true;
 		}
 
-		if (kTrigger.getNumImprovementsRequired() > 0)
+		if (kTrigger.getImprovementsRequired().getLength() > 0)
 		{
 			return true;
 		}
 
-		if (kTrigger.getNumRoutesRequired() > 0)
+		if (kTrigger.getRoutesRequired().getLength() > 0)
 		{
 			return true;
 		}
 
-		if (kTrigger.isUnitsOnPlot() && kTrigger.getNumUnitsRequired() > 0)
+		if (kTrigger.isUnitsOnPlot() && kTrigger.getUnitsRequired().getLength() > 0)
 		{
 			return true;
 		}

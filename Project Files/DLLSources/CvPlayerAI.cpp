@@ -12061,22 +12061,23 @@ EventTypes CvPlayerAI::AI_chooseEvent(int iTriggeredId)
 	int iBestValue = -MAX_INT;
 	EventTypes eBestEvent = NO_EVENT;
 
-	for (int i = 0; i < kTrigger.getNumEvents(); i++)
+	const InfoArray<EventTypes>& Events = kTrigger.getEvents();
+	for (int i = 0; i < Events.getLength(); i++)
 	{
 		int iValue = -MAX_INT;
-		if (kTrigger.getEvent(i) != NO_EVENT)
+		if (Events.getEvent(i) != NO_EVENT)
 		{
-			CvEventInfo& kEvent = GC.getEventInfo((EventTypes)kTrigger.getEvent(i));
-			if (canDoEvent((EventTypes)kTrigger.getEvent(i), *pTriggeredData))
+			CvEventInfo& kEvent = GC.getEventInfo(Events.getEvent(i));
+			if (canDoEvent(Events.getEvent(i), *pTriggeredData))
 			{
-				iValue = AI_eventValue((EventTypes)kTrigger.getEvent(i), *pTriggeredData);
+				iValue = AI_eventValue(Events.getEvent(i), *pTriggeredData);
 			}
 		}
 
 		if (iValue > iBestValue)
 		{
 			iBestValue = iValue;
-			eBestEvent = (EventTypes)kTrigger.getEvent(i);
+			eBestEvent = Events.getEvent(i);
 		}
 	}
 
