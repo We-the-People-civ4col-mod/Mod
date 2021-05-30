@@ -4327,6 +4327,10 @@ CvArea* CvPlot::area(DomainTypes eDomain) const
 	{
 		return getAdjacentLandPlot(true)->area();
 	}
+	else if (eDomain == DOMAIN_SEA && !isWater())
+	{
+		return getAdjacentSeaArea();
+	}
 
 	return area();
 }
@@ -4336,6 +4340,10 @@ int CvPlot::getArea(DomainTypes eDomain) const
 	if (eDomain == DOMAIN_LAND && getTerrainType() == TERRAIN_LARGE_RIVERS)
 	{
 		return getAdjacentLandPlot(true)->getArea();
+	}
+	else if (eDomain == DOMAIN_SEA && !isWater())
+	{
+		return getAdjacentSeaArea()->getID();
 	}
 	return m_iArea;
 }
@@ -4381,6 +4389,37 @@ CvPlot* CvPlot::getAdjacentLandPlot(bool bReturnSelfFallback)
 	// as it requires a land unit on a large river surrounded by only water
 	// it's included for completeness (read: future stability)
 	return bReturnSelfFallback ? this : NULL;
+}
+
+CvArea* CvPlot::getAdjacentSeaArea() const
+{
+	// return an area of a nearby water plot
+	// returned area is (top first if multiple)
+	// ocean
+	// lake
+	// this plot
+
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	int iRange = 1;
+
+	CvArea* pArea = area();
+
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL && pLoopPlot->isWater())
+		{
+			pArea = pLoopPlot->area();
+			if (!pArea->isLake())
+			{
+				return pArea;
+			}
+		}
+	}
+
+	return pArea;
 }
 //WTP, ray, Large Rivers - Nightinggale addition - end
 

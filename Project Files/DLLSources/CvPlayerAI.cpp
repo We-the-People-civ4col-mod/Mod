@@ -2545,6 +2545,12 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 	iCount = 0;
 	iBorderDanger = 0;
 
+	// use a target area instead of the current one
+	// This makes ships use the sea area from a plot next to it when they are in a land plot (city)
+	// Vanilla used the land plot in that case and that made the AI hide ships in native settlements to get away from dangerous land units
+	//    Nightinggale
+	CvArea* pTargetArea = pUnit->area();
+
 	if (iRange == -1)
 	{
 		iRange = DANGER_RANGE;
@@ -2558,7 +2564,7 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 
 			if (pLoopPlot != NULL)
 			{
-				if (pLoopPlot->area() == pPlot->area())
+				if (pLoopPlot->area() == pTargetArea)
 				{
 					iDistance = stepDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE());
 					if (atWar(pLoopPlot->getTeam(), getTeam()))

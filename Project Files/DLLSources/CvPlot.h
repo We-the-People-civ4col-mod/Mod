@@ -235,6 +235,7 @@ public:
 	int getArea(DomainTypes eDomain) const;
 	const CvPlot* getAdjacentLandPlot(bool bReturnSelfFallback) const;
 	CvPlot* getAdjacentLandPlot(bool bReturnSelfFallback);
+	CvArea* CvPlot::getAdjacentSeaArea() const;
 	//WTP, ray, Large Rivers - Nightinggale addition - end
 
 	//WTP, Nightinggale - Terrain locator - start
