@@ -5158,7 +5158,6 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	}
 	// R&R, ray, Goody Enhancement - END
 
-	// falsche Stelle !
 	// WTP, ray, Unit spawning Goodies and Goody Huts - START
 	// we have to catch invalid XML configurations first
 	if (kGoody.isSpawnHostileUnitsAsXML() || kGoody.isSpawnHostileAnimals() || kGoody.isSpawnHostileNatives() || kGoody.isSpawnHostileCriminals())
@@ -13089,15 +13088,16 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	}
 	else
 	{
-		if (kTrigger.getNumBuildings() > 0 && kTrigger.getNumBuildingsRequired() > 0)
+		const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
+		if (kTrigger.getNumBuildings() > 0 && ReqBuildings.getLength() > 0)
 		{
 			int iFoundValid = 0;
 
-			for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
+			for (int i = 0; i < ReqBuildings.getLength(); ++i)
 			{
-				if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+				//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 				{
-					iFoundValid += getBuildingClassCount((BuildingClassTypes)kTrigger.getBuildingRequired(i));
+					iFoundValid += getBuildingClassCount(ReqBuildings.getBuildingClass(i));
 				}
 			}
 
@@ -13167,12 +13167,13 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	{
 		if (NULL != pCity && NO_BUILDING == eBuilding)
 		{
+			const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
 			std::vector<BuildingTypes> aeBuildings;
-			for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
+			for (int i = 0; i < ReqBuildings.getLength(); ++i)
 			{
-				if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+				//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 				{
-					BuildingTypes eTestBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(kTrigger.getBuildingRequired(i));
+					BuildingTypes eTestBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(ReqBuildings.getBuildingClass(i));
 					if (NO_BUILDING != eTestBuilding && pCity->isHasRealBuilding(eTestBuilding))
 					{
 						aeBuildings.push_back(eTestBuilding);
@@ -13209,9 +13210,10 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	{
 		int iNumUnits = 0;	
 		
-		for (int i = 0; i < kTrigger.getNumUnitsRequired(); ++i)
+		const InfoArray<UnitClassTypes>& ReqUnits = kTrigger.getUnitsRequired();
+		for (int i = 0; i < ReqUnits.getLength(); ++i)
 		{
-			int iNumUnitsFound = getUnitClassCount((UnitClassTypes)kTrigger.getUnitRequired(i));
+			int iNumUnitsFound = getUnitClassCount(ReqUnits.getUnitClass(i));
 			iNumUnits = iNumUnits + iNumUnitsFound;					
 		}
 				
@@ -13268,11 +13270,12 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 
 			if (kLoopPlayer.isAlive())
 			{
-				for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
+				const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
+				for (int i = 0; i < ReqBuildings.getLength(); ++i)
 				{
-					if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+					//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 					{
-						iNumBuildings += getBuildingClassCount((BuildingClassTypes)kTrigger.getBuildingRequired(i));
+						iNumBuildings += getBuildingClassCount(ReqBuildings.getBuildingClass(i));
 					}
 				}
 			}
@@ -13375,7 +13378,7 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 		}
 		else if (0 == strcmp(kTrigger.getPythonCanDo(), "TriggerChance"))
 		{
-			const EventTypes eEvent = (EventTypes)kTrigger.getEvent(0);
+			const EventTypes eEvent = kTrigger.getEvents().getEvent(0);
 			const CvEventInfo& kEvent = GC.getEventInfo(eEvent);
 			if (GC.getGameINLINE().getSorenRandNum(1000, "(c) TAC 2010 Events") >= kEvent.getGenericParameter(3))
 			{
@@ -13617,16 +13620,17 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 
 	if (kEvent.isQuest())
 	{
-		for (int iTrigger = 0; iTrigger < GC.getNumEventTriggerInfos(); ++iTrigger)
+		for (EventTriggerTypes eTrigger = FIRST_EVENTTRIGGER; eTrigger < NUM_EVENTTRIGGER_TYPES; ++eTrigger)
 		{
-			CvEventTriggerInfo& kTrigger = GC.getEventTriggerInfo((EventTriggerTypes)iTrigger);
+			CvEventTriggerInfo& kTrigger = GC.getEventTriggerInfo(eTrigger);
 			if (!kTrigger.isRecurring())
 			{
-				for (int i = 0; i < kTrigger.getNumPrereqEvents(); ++i)
+				const InfoArray<EventTypes>& ReqEvents = kTrigger.getPrereqEvents();
+				for (int i = 0; i < ReqEvents.getLength(); ++i)
 				{
-					if (kTrigger.getPrereqEvent(i) == eEvent)
+					if (ReqEvents.getEvent(i) == eEvent)
 					{
-						if (isTriggerFired((EventTriggerTypes)iTrigger))
+						if (isTriggerFired(eTrigger))
 						{
 							return false;
 						}
@@ -14690,12 +14694,13 @@ int CvPlayer::getEventTriggerWeight(EventTriggerTypes eTrigger) const
 			return 0;
 		}
 	}
-	if (kTrigger.getNumPrereqEvents() > 0)
+	const InfoArray<EventTypes>& ReqEvents = kTrigger.getPrereqEvents();
+	if (ReqEvents.getLength() > 0)
 	{
 		bool bFoundValid = true;
-		for (int iI = 0; iI < kTrigger.getNumPrereqEvents(); iI++)
+		for (int iI = 0; iI < ReqEvents.getLength(); iI++)
 		{
-			if (NULL == getEventOccured((EventTypes)kTrigger.getPrereqEvent(iI)))
+			if (NULL == getEventOccured(ReqEvents.getEvent(iI)))
 			{
 				bFoundValid = false;
 				break;
@@ -14792,11 +14797,12 @@ int CvPlayer::getEventTriggerWeight(EventTriggerTypes eTrigger) const
 	if (kTrigger.isProbabilityBuildingMultiply() && kTrigger.getNumBuildings() > 0)
 	{
 		int iNumBuildings = 0;
-		for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
+		const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
+		for (int i = 0; i < ReqBuildings.getLength(); ++i)
 		{
-			if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+			//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 			{
-				iNumBuildings += getBuildingClassCount((BuildingClassTypes)kTrigger.getBuildingRequired(i));
+				iNumBuildings += getBuildingClassCount(ReqBuildings.getBuildingClass(i));
 			}
 		}
 
