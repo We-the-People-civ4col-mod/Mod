@@ -266,122 +266,122 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
-        <English>You have discovered a wounded Ranger who offers his services to us for our help.</English>
+        <English>You have discovered a wounded ranger who offers his services to us for our help.</English>
         <German>Ihr habt einen verwundetetn Ranger entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
-        <English>You have discovered a Native Trader who had lost his orientation and now wants to offer his services to you!</English>
+        <English>You have discovered a Native trader who had lost his orientation and now wants to offer his services to you!</English>
         <German>Ihr habt einen Uhreinwohnerhändler entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRAZY_SECT_OF_MISSIONARIES</Tag>
-        <English>Sir, we have found Christian Missionaries in the Wilderness that seem to have gone crazy. They prey to small yellow blue frogs in a pool of water.</English>
+        <English>Sir, we have found Christian missionaries in the wilderness who seem to have gone crazy. They pray to small yellow blue frogs in a pool of water.</English>
         <German>Sir, wir haben christliche Missionare in der Wildnis gefunden, die anscheinend verrückt sind. Sie beten kleine bunte Frösche in einem Tümpel an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HOSTILE_RANGER_IN_THE_WILDERNESS</Tag>
-        <English>Sir, we have found a Ranger in the Wilderness refusing to talk to us. When we approach anyways he attacked.</English>
+        <English>Sir, we have found a ranger in the wilderness who refuses to talk to us. Instead when we approach he attacks.</English>
         <German>Sir, wir haben einen Ranger in der Wildnis gefunden, der sich weigerte mit uns zu reden. Als wir uns dennoch näherten griff er uns an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SEVEN_CITIES_OF_CIBOLA</Tag>
-        <English>It seems we found the legendary golden city of Cibola. But other conquistadores seem to have found it before us and do not want to share its wealth.</English>
+        <English>We've found the legendary golden city of Cibola. Unfortunately other conquistadores got here before us. They don't want to share its wealth.</English>
         <German>Wir haben die legendäre goldene Stadt Cibola gefunden. Doch andere Conquistadores haben sie vor uns entdeckt und wollen den Reichtum nicht teilen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR_TREASURE_GUARD</Tag>
-        <English>Sir, we found a mysterious Mounted Conquistador carrying a small treasure. When we asked for his origin he simply attacked without warning.</English>
+        <English>Sir, we found a mysterious mounted conquistador carrying a small treasure. When we asked where he was from he immediately attacked.</English>
         <German>Sir, wir haben einen mysteriösen berittenen Conquistador entdeckt der einen kleinen Schatz bei sich trug. Als wir fragten woher er kam griff er uns an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVES_ON_WAR_PATH</Tag>
-        <English>As it seem the Natives in this village have been preparing to go on the War path. This is going to be a tough fight.</English>
+        <English>As it seem the Natives in this village have been preparing to go on the warpath. This is going to be a tough fight.</English>
         <German>So wie es scheint haben sich die Ureinwohner darauf vorbereitet auf den Kriegspfad zu gehen. Dies wird ein schwieriger Kampf.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_TREASURE_RUN</Tag>
-        <English>Sir, we seem to have found an undefended treasure train of our enemies. Catch them all before they can flee!</English>
+        <English>Sir, we've found an undefended treasure train belonging to our enemies. Don't let it escape!</English>
         <German>Sir, wir scheinen einen unverteidigten Schatzzug unserer Feinde entdeckt zu haben. Wir sollten Sie schnell fassen bevor sie fliehen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRIMINAL_CAMP</Tag>
-        <English>This seems to be a camp of criminals and outlaws. Let us teach them order and law!</English>
+        <English>This is nothing but a camp of criminals and outlaws. We'll show them law and order!</English>
         <German>Dies scheint ein Lager voller Krimineller und Gesetzloser zu sein. Lasst uns ihnen Recht und Gottesfürchtigkeit beibringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_MILITIA</Tag>
-        <English>Sir, it seems we have found a coward that fled from his duties from the colonial militia. Let us bring him to justice.</English>
+        <English>Sir, we've found a coward who deserted from the colonial militia. We must bring him to justice.</English>
         <German>Sir, es scheint wir haben einen Feigling gefunden, der vor seinen Pflichten in der Kolonialmiliz geflohen ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_NATIVE_SLAVES</Tag>
-        <English>Sir, we have found runaway Native Slaves. Let us catch them and bring them back to their owners.</English>
+        <English>Sir, we've found runaway Native slaves. Let us catch them so we can bring them back to their owners.</English>
         <German>Sir, wir haben entlaufene Ureinwohnersklaven gefunden. Lasst uns sie ihren rechtmäßigen Besitzern zurückbringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_AFRICAN_SLAVES</Tag>
-        <English>Sir, we have found runaway African Slaves. Let us catch them and bring them back to their owners.</English>
+        <English>Sir, we've found runaway African slaves. Let us catch them so we can them back to their owners.</English>
         <German>Sir, wir haben entlaufene Sklaven gefunden. Lasst uns sie ihren rechtmäßigen Besitzern zurückbringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_SERVANT</Tag>
-        <English>Sir, we have found a servant that fled the castigation of his Master. He was so scared that he even dared to attack us instead of being brought home.</English>
+        <English>Sir, we have found a servant who fled a harsh master. He was so scared that he attacked us rather than being brought home.</English>
         <German>Sir, wir haben einen Diener gefunden, der von den Züchtigungen seines Herrn geflohen ist. Er war so verängstigt nach Hause zu müssen, dass er uns angriff.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ARMED_NATIVE_SLAVES_COLONY</Tag>
-        <English>Sir, we have found a hidden colony of armed Native Slaves. How could they flee and where did they get those weapons from?</English>
+        <English>Sir, we've found a hidden colony of armed Native slaves. How did they flee? Where did they get those weapons?</English>
         <German>Sir, wir haben eine versteckte Kolonie von bewaffneten Ureinwohnersklaven gefunden. Wie konnten sie fliehen und woher haben sie diese Waffen?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ARMED_AFRICAN_SLAVES_COLONY</Tag>
-        <English>Sir, we have found a hidden colony of armed African Slaves. How could they flee and where did they get those weapons from?</English>
+        <English>Sir, we've found a hidden colony of armed African Slaves. How did they flee? Where did they get those weapons?</English>
         <German>Sir, wir haben eine versteckte Kolonie von bewaffneten Sklaven gefunden. Wie konnten sie fliehen und woher haben sie diese Waffen?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SCALP_HUNTER</Tag>
-        <English>Sir, we have met heavily armed Native Mercenaries. As it seems somebody has offered them a bounty for our scalps.</English>
+        <English>Sir, we have met heavily armed Native mercenaries. Apparently somebody promised them a bounty for our scalps.</English>
         <German>Sir, wir haben schwer bewaffnete Ureiwohnersöldner getroffen. Anscheinend hat man ihm ein Kopfgeld für unsere Scalps geboten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DAMAGED_WAGON_TRAIN</Tag>
-        <English>Sir, we have found a heavily damaged Wagon Train in the Wilderness. We could repair it but we found no traces of its owners.</English>
+        <English>Sir, we've found a heavily damaged wagon train in the wilderness. We can repair it but there's no trace of its owners.</English>
         <German>Sir, wir haben einen schwer beschädigten Wagenzug in der Wildnis gefunden. Wir konnten ihn reparieren, fanden aber keine Spuren seiner Besitzer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ESCAPING_SMUGGLING_SHIP</Tag>
-        <English>Sir, it seems that we have found the secret smuggling port of the local black market traders. They now try to flee with their ship.</English>
+        <English>Sir, we've found the secret smuggling port of the local black market traders. They're trying to flee with their ship.</English>
         <German>Sir, anscheinend haben wir den Schmugglerhafen der lokalen Schwarzmarkthändler gefunden. Sie versuchen nun mit ihrem wendigen Schiff zu entkommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ATTACKING_PIRATE_FRIGATE</Tag>
-        <English>Commander, we have found a still floating but unsavably damaged Ship showing signs of a a battle. It seems it has been attacked by Pirates.</English>
+        <English>Commander, we have found a half-sunk ship. It looks like it was attacked by pirates.</English>
         <German>Commader, wir haben ein noch treibendes aber unrettbar beschädigtes Schiff mit Spuren eines Kampfes entdeckt. Es wurde anscheinend von Piraten angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_WOLF_PACK</Tag>
-        <English>Sir, the cave we have found seems to be the home of a wolf pack. They returned from their hunt and now circle us ready to attack.</English>
+        <English>Sir, the cave we've found turns out to be the den of a wolf pack. They're back from their hunt, circling us, ready to attack.</English>
         <German>Sir, die Höhle, die wir betreten haben, scheint das Heim eines Wolfrudels zu sein. Sie sind nun von ihrer Jagd zurückgekehrt und unkreisen uns feindselig.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_GRIZZLY_GRIM</Tag>
-        <English>Sir, the cave we have found seems to be the home of a grizzly. It seems we have woken him from his sleep and he does not like that.</English>
+        <English>Sir, the cave we have found seems to be the home of a grizzly. We've wakened him from his sleep. He doesn't like that.</English>
         <German>Sir, die Höhle, die wir betreten haben, scheint das Heim eines Grizzlys zu sein. Er scheint es nicht zu mögen, dass wir ihn aus seinem Schlaf geweckt haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SEE_YOU_LATER_ALLIGATOR</Tag>
-        <English>Sir, we have found an alligator nest. These beasts seem to be hungry. We should better not get any closer if we do not want to become their lunch.</English>
+        <English>Sir, we have found an alligator nest. These beasts seem to be hungry. We better not get any closer if we don't want to become their lunch.</English>
         <German>Sir, wir haben ein Alligatornest gefunden. Diese Biester scheinen hungrig zu sein. Wir sollten uns ihnen daher nicht weiter nähern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MOTHER_BEAR</Tag>
-        <English>Sir we have stumbled across a black bear with its cub. The mother now charges at us to defend against the intruders.</English>
+        <English>Sir we stumbled across a black mother bear with her cubs. She's charging!.</English>
         <German>Sir, wir sind über einen Schwarzbärin mit ihrem Jungen gestolpert. Die Mutter stürmt nun auf uns zu um </German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_WHITE_HUNTER_IN_THE_SNOW</Tag>
-        <English>Sir, we have found the most gigantic Bear we have ever seen. It is white as Snow and incredibly fast and strong.</English>
+        <English>Sir, we have found the most gigantic bear we've ever seen. It is white as snow and incredibly fast and strong.</English>
         <German>Sir, wir haben den größten Bären aller Zeiten gefunden. Er ist weiß wie Schnee und unglaublich stark und schnell.</German>
     </TEXT>
     <TEXT>
@@ -396,27 +396,27 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COUGAR_IN_THE_NIGHT</Tag>
-        <English>Sir, the men at the campfire report to have heart silent noises in the gras. We think there is a big cat or other predator close by.</English>
+        <English>Sir, the men at the campfire report to have heard faint noises in the grass. We think a big cat or some other predator is close by.</English>
         <German>Sir, die Männer am Lagerfeuer berichten, dass sie leise Geräusche im Gras gehört haben. Wir vermuten eine Raubkatze oder ein anderes Raubtier in der Nähe.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_GREAT_WHITE</Tag>
-        <English>Sir, there are parts of a sunken ship and also dead bodies of sailors floating in the water. Their blood seems to have lured a great white.</English>
+        <English>Sir, there are remnants of a sunken ship along with dead sailors floating in the water. Their blood  has attracted a great white shark.</English>
         <German>Sir, es triben Teile eines gesunken Schiffes und auch Körper toter Seemänner im Wasser. Ihr Blut scheint einen Weissen Hai angelockt zu haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MOBY_DICK</Tag>
-        <English>Sir, something gigantic must have rammed and thus almost sunken that ship. But what could have been that huge?</English>
+        <English>Sir, something gigantic must have rammed and nearly sunk that ship. But what could have been that huge?</English>
         <German>Sir, irgendetwas riesiges scheint dieses Schiff gerammt und dadurch fast versenkt zu haben. Aber was kann so groß gewesen sein?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_KRAKEN_ARMS</Tag>
-        <English>Sir, it seems this ship has been ripped apart by incredible forces. One of our old sailors swears that this must have been a giant kraken.</English>
+        <English>Sir, it seems this ship has been ripped apart by incredible forces. One of our old sailors swears that this could only have been a giant kraken.</English>
         <German>Sir, es scheint dass dieses Schiff von unglaublichen Kräften auseinander gerissen wurde. Laut unsere Schiffsmannschaft, kann dies nur ein Riesenkrake gewesen sein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ORCA_SCHOOOL</Tag>
-        <English>Sir, the floating parts of this ship seem to have interested some orcas. Several of them swim around our ship without yet having attacked.</English>
+        <English>Sir, the debris from of this ship has interested some orcas. Several of them are swimming around our ship but they haven't attacked yet.</English>
         <German>Sir, die treibenden Schiffsteile scheinen einige Orcas angelockt zu haben. Mehrere von ihnen schwimmen um uns herum ohne bisher anzugreifen.</German>
     </TEXT>
 </Civ4GameText>
