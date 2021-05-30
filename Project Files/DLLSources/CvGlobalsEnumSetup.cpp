@@ -188,6 +188,11 @@ void CvGlobals::postXMLLoad(bool bFirst)
 			}
 			m_acUnitYieldDemandTypes.assign(aYields);
 		}
+
+		for (EventTriggerTypes eTrigger = FIRST_EVENTTRIGGER; eTrigger < NUM_EVENTTRIGGER_TYPES; ++eTrigger)
+		{
+			GC.getEventTriggerInfo(eTrigger).verifyTriggerSettings();
+		}
 	}
 
 #ifdef _DEBUG

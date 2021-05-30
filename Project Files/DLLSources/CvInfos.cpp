@@ -9781,6 +9781,24 @@ const CvArtInfoTerrain* CvTerrainInfo::getArtInfo() const
 {
 	return ARTFILEMGR.getTerrainArtInfo(getArtDefineTag());
 }
+
+bool CvTerrainInfo::canHavePlotType(PlotTypes ePlotType) const
+{
+	switch (ePlotType)
+	{
+	case NO_PLOT:
+		return true;
+	case PLOT_PEAK:
+	case PLOT_HILLS:
+	case PLOT_LAND:
+		return !isWater();
+	case PLOT_OCEAN:
+		return isWater();
+	}
+	BOOST_STATIC_ASSERT(NUM_PLOT_TYPES == 4);
+	return false;
+}
+
 //======================================================================================================
 //					CvInterfaceModeInfo
 //======================================================================================================
@@ -14531,6 +14549,312 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPythonCanDoUnit, "PythonCanDoUnit");
 	return true;
 }
+
+void CvEventTriggerInfo::verifyTriggerSettings() const
+{
+	// test that for each requirement, at least one combo allows it
+	// It doesn't test if all combos of requirements is allows
+	// example:
+	// terrain A allows feature A
+	// terrain B allows feature B
+	// terrain A doesn't allow feature B
+	// both terrains and both features will pass
+	// removing terrain B will make feature B fail as none of the required terrains allow feature B 
+	verifyTriggerSettings(getFeaturesRequired());
+	verifyTriggerSettings(getTerrainsRequired());
+	verifyTriggerSettings(getImprovementsRequired());
+	verifyTriggerSettings(getRoutesRequired());
+}
+
+template<typename T>
+void CvEventTriggerInfo::verifyTriggerSettings(const InfoArray<T>& kArray) const
+{
+	for (int i = 0; i < kArray.getLength(); ++i)
+	{
+		const T eVar = kArray.getWithTemplate(i, (T)0);
+
+		const char* szError = NULL;
+
+		if (GC.getInfo(eVar).isGraphicalOnly())
+		{
+			szError = "TXT_KEY_EVENT_TRIGGER_ERROR_GRAPHICAL_ONLY";
+		}
+		else
+		{
+			szError = verifyTriggerSettings(eVar);
+		}
+
+		if (szError != NULL)
+		{
+			CvWString arg1(getType());
+			CvWString arg2(GC.getInfo(eVar).getType());
+			CvWString arg3(szError);
+
+			CvString szDesc(gDLL->getText("TXT_KEY_EVENT_TRIGGER_ERROR", arg1.c_str(), arg2.c_str(), arg3.c_str()));
+			CvString szTitle(gDLL->getText("TXT_KEY_EVENT_TRIGGER_ERROR_TITLE"));
+
+			gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+		}
+
+	}
+}
+
+const char* CvEventTriggerInfo::verifyTriggerSettings(FeatureTypes eFeature) const
+{
+	if (getPlotType() == PLOT_PEAK)
+	{
+		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+	}
+
+	const CvFeatureInfo& kInfo = GC.getFeatureInfo(eFeature);
+
+	const InfoArray<TerrainTypes>& Terrains = getTerrainsRequired();
+	if (Terrains.getLength() > 0)
+	{
+		bool bValid = false;
+		for (int i = 0; i < Terrains.getLength(); ++i)
+		{
+			if (kInfo.isTerrain(Terrains.getTerrain(i)))
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN";
+		}
+	}
+	else if (getPlotType() != NO_PLOT)
+	{
+		bool bValid = false;
+		for (TerrainTypes eTerrain = FIRST_TERRAIN; eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
+		{
+			if (kInfo.isTerrain(eTerrain))
+			{
+				if (GC.getTerrainInfo(eTerrain).canHavePlotType(getPlotType()))
+				{
+					bValid = true;
+					break;
+				}
+			}
+		}
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN_PLOT_TYPE";
+		}
+	}
+
+	if (kInfo.isNoImprovement() && getImprovementsRequired().getLength() > 0)
+	{
+		return false;
+	}
+
+	const InfoArray<ImprovementTypes>& Improvements = getImprovementsRequired();
+	if (Improvements.getLength() > 0)
+	{
+		bool bValid = false;
+
+		for (int i = 0; i < Improvements.getLength(); ++i)
+		{
+			const CvImprovementInfo& kImprovement = GC.getInfo(Improvements.getImprovement(i));
+			if (kImprovement.getFeatureMakesValid(eFeature))
+			{
+				bValid = true;
+				break;
+			}
+		}
+
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_IMPROVEMENT";
+		}
+	}
+
+	return NULL;
+}
+const char* CvEventTriggerInfo::verifyTriggerSettings(TerrainTypes eTerrain) const
+{
+	const CvTerrainInfo& kInfo = GC.getInfo(eTerrain);
+
+	if (!kInfo.canHavePlotType(getPlotType()))
+	{
+		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+	}
+
+	if (kInfo.isWater() && getRoutesRequired().getLength() > 0)
+	{
+		return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_ROUTE";
+	}
+
+	const InfoArray<FeatureTypes>& Features = getFeaturesRequired();
+	if (Features.getLength() > 0)
+	{
+		bool bValid = false;
+		for (int i = 0; i < Features.getLength(); ++i)
+		{
+			if (GC.getFeatureInfo(Features.getFeature(i)).isTerrain((eTerrain)))
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE";
+		}
+	}
+
+	const InfoArray<ImprovementTypes>& Improvements = getImprovementsRequired();
+	if (Improvements.getLength() > 0)
+	{
+		bool bValid = false;
+
+		for (int i = 0; i < Improvements.getLength(); ++i)
+		{
+			const CvImprovementInfo& kImprovement = GC.getInfo(Improvements.getImprovement(i));
+			if (kImprovement.getTerrainMakesValid(eTerrain))
+			{
+				bValid = true;
+				break;
+			}
+		}
+
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_IMPROVEMENT";
+		}
+	}
+
+	return NULL;
+}
+const char* CvEventTriggerInfo::verifyTriggerSettings(ImprovementTypes eImprovement) const
+{
+	const CvImprovementInfo& kInfo = GC.getInfo(eImprovement);
+
+	PlotTypes ePlot = getPlotType();
+
+	if (ePlot != NO_PLOT)
+	{
+		if (kInfo.isRequiresFlatlands() && ePlot != PLOT_LAND)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		}
+		if (kInfo.isWater() && ePlot != PLOT_OCEAN)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		}
+		if (kInfo.isHillsMakesValid() && ePlot != PLOT_HILLS && ePlot != PLOT_PEAK)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		}
+	}
+
+	if (kInfo.isWater() && getRoutesRequired().getLength() > 0)
+	{
+		return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_ROUTE";
+	}
+
+	const InfoArray<FeatureTypes>& Features = getFeaturesRequired();
+	if (Features.getLength() > 0)
+	{
+		bool bValid = false;
+		for (int i = 0; i < Features.getLength(); ++i)
+		{
+			if (kInfo.getFeatureMakesValid(Features.getFeature(i)))
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE";
+		}
+	}
+
+	const InfoArray<TerrainTypes>& Terrains = getTerrainsRequired();
+	if (Terrains.getLength() > 0)
+	{
+		bool bValid = false;
+		for (int i = 0; i < Terrains.getLength(); ++i)
+		{
+			if (kInfo.getTerrainMakesValid(Terrains.getTerrain(i)))
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (!bValid)
+		{
+			if (kInfo.isHillsMakesValid())
+			{
+				// improvement wasn't allowed on any of the terrains, but it is allowed on any terrain with hills
+				// test all terrains to see if any can contain hills
+				for (int i = 0; i < Terrains.getLength(); ++i)
+				{
+					const CvTerrainInfo& kTerrain = GC.getInfo(Terrains.getTerrain(i));
+					if (kTerrain.canHavePlotType(PLOT_HILLS))
+					{
+						bValid = true;
+						break;
+					}
+				}
+			}
+			if (!bValid)
+			{
+				return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN";
+			}
+		}
+	}
+	if (kInfo.isRequiresFeature() && Features.getLength() == 0)
+	{
+		if (Terrains.getLength() > 0)
+		{
+			bool bValid = false;
+			for (int i = 0; i < Terrains.getLength() && !bValid; ++i)
+			{
+				const TerrainTypes eTerrain = Terrains.getTerrain(i);
+				if (kInfo.getTerrainMakesValid(eTerrain))
+				{
+					for (FeatureTypes eFeature = FIRST_FEATURE; eFeature < NUM_FEATURE_TYPES; ++eFeature)
+					{
+						if (kInfo.getFeatureMakesValid(eFeature))
+						{
+							const CvFeatureInfo& kFeature = GC.getFeatureInfo(eFeature);
+							if (!kFeature.isNoImprovement() && kFeature.isTerrain((eTerrain)))
+							{
+								bValid = true;
+								break;
+							}
+						}
+					}
+				}
+
+			}
+			if (!bValid)
+			{
+				return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE_TERRAIN";
+			}
+		}
+	}
+	
+	return NULL;
+}
+
+const char* CvEventTriggerInfo::verifyTriggerSettings(RouteTypes eRoute) const
+{
+	if (getPlotType() == PLOT_OCEAN)
+	{
+		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+	}
+
+	return NULL;
+}
+
+
+
+
 //////////////////////////////////////////////////////////////////////////
 //
 //	CvEventInfo

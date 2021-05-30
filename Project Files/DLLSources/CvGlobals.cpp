@@ -1267,6 +1267,13 @@ CvTerrainInfo& CvGlobals::getTerrainInfo(TerrainTypes eTerrainNum)
 	return *(m_paTerrainInfo[eTerrainNum]);
 }
 
+CvTerrainInfo& CvGlobals::getInfo(TerrainTypes eTerrainNum)
+{
+	FAssert(eTerrainNum > -1);
+	FAssert(eTerrainNum < (int)m_paTerrainInfo.size());
+	return *(m_paTerrainInfo[eTerrainNum]);
+}
+
 int CvGlobals::getNumBonusInfos()
 {
 	return (int)m_paBonusInfo.size();
@@ -1284,6 +1291,13 @@ CvBonusInfo& CvGlobals::getBonusInfo(BonusTypes eBonusNum)
 	return *(m_paBonusInfo[eBonusNum]);
 }
 
+CvBonusInfo& CvGlobals::getInfo(BonusTypes eBonusNum)
+{
+	FAssert(eBonusNum > -1);
+	FAssert(eBonusNum < (int)m_paBonusInfo.size());
+	return *(m_paBonusInfo[eBonusNum]);
+}
+
 int CvGlobals::getNumFeatureInfos()
 {
 	return (int)m_paFeatureInfo.size();
@@ -1295,6 +1309,13 @@ std::vector<CvFeatureInfo*>& CvGlobals::getFeatureInfo()	// For Moose - XML Load
 }
 
 CvFeatureInfo& CvGlobals::getFeatureInfo(FeatureTypes eFeatureNum)
+{
+	FAssert(eFeatureNum > -1);
+	FAssert(eFeatureNum < (int)m_paFeatureInfo.size());
+	return *(m_paFeatureInfo[eFeatureNum]);
+}
+
+CvFeatureInfo& CvGlobals::getInfo(FeatureTypes eFeatureNum)
 {
 	FAssert(eFeatureNum > -1);
 	FAssert(eFeatureNum < (int)m_paFeatureInfo.size());
@@ -1789,6 +1810,13 @@ CvRouteInfo& CvGlobals::getRouteInfo(RouteTypes eRouteNum)
 	return *(m_paRouteInfo[eRouteNum]);
 }
 
+CvRouteInfo& CvGlobals::getInfo(RouteTypes eRouteNum)
+{
+	FAssert(eRouteNum > -1);
+	FAssert(eRouteNum < GC.getNumRouteInfos());
+	return *(m_paRouteInfo[eRouteNum]);
+}
+
 int CvGlobals::getNumImprovementInfos()
 {
 	return (int)m_paImprovementInfo.size();
@@ -1800,6 +1828,13 @@ std::vector<CvImprovementInfo*>& CvGlobals::getImprovementInfo()	// For Moose - 
 }
 
 CvImprovementInfo& CvGlobals::getImprovementInfo(ImprovementTypes eImprovementNum)
+{
+	FAssert(eImprovementNum > -1);
+	FAssert(eImprovementNum < GC.getNumImprovementInfos());
+	return *(m_paImprovementInfo[eImprovementNum]);
+}
+
+CvImprovementInfo& CvGlobals::getInfo(ImprovementTypes eImprovementNum)
 {
 	FAssert(eImprovementNum > -1);
 	FAssert(eImprovementNum < GC.getNumImprovementInfos());

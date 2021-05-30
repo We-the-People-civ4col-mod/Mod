@@ -307,14 +307,17 @@ public:
 	DllExport int getNumTerrainInfos();
 	std::vector<CvTerrainInfo*>& getTerrainInfo();
 	DllExport CvTerrainInfo& getTerrainInfo(TerrainTypes eTerrainNum);
+	CvTerrainInfo& getInfo(TerrainTypes eTerrainNum);
 
 	DllExport int getNumBonusInfos();
 	DllExport std::vector<CvBonusInfo*>& getBonusInfo();
 	DllExport CvBonusInfo& getBonusInfo(BonusTypes eBonusNum);
+	CvBonusInfo& getInfo(BonusTypes eBonusNum);
 
 	DllExport int getNumFeatureInfos();
 	std::vector<CvFeatureInfo*>& getFeatureInfo();
 	DllExport CvFeatureInfo& getFeatureInfo(FeatureTypes eFeatureNum);
+	CvFeatureInfo& getInfo(FeatureTypes eFeatureNum);
 
 	DllExport int getNumCivilizationInfos();
 	DllExport std::vector<CvCivilizationInfo*>& getCivilizationInfo();
@@ -427,10 +430,12 @@ public:
 	DllExport int getNumRouteInfos();
 	std::vector<CvRouteInfo*>& getRouteInfo();
 	DllExport	CvRouteInfo& getRouteInfo(RouteTypes eRouteNum);
+	CvRouteInfo& getInfo(RouteTypes eRouteNum);
 
 	DllExport int getNumImprovementInfos();
 	DllExport std::vector<CvImprovementInfo*>& getImprovementInfo();
 	DllExport CvImprovementInfo& getImprovementInfo(ImprovementTypes eImprovementNum);
+	CvImprovementInfo& getInfo(ImprovementTypes eImprovementNum);
 
 	int getNumGoodyInfos();
 	std::vector<CvGoodyInfo*>& getGoodyInfo();

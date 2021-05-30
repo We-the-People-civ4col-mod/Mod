@@ -2782,6 +2782,9 @@ public:
 	// Other
 	DllExport const CvArtInfoTerrain* getArtInfo() const;
 	const char* getButton() const;
+
+	bool canHavePlotType(PlotTypes ePlotType) const;
+
 	bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
@@ -4318,7 +4321,17 @@ public:
 	void read(FDataStreamBase* );
 	void write(FDataStreamBase* );
 	bool read(CvXMLLoadUtility* pXML);
+
+	void verifyTriggerSettings() const;
+
 private:
+	template<typename T>
+	void verifyTriggerSettings(const InfoArray<T>&) const;
+	const char* verifyTriggerSettings(FeatureTypes) const;
+	const char* verifyTriggerSettings(TerrainTypes) const;
+	const char* verifyTriggerSettings(ImprovementTypes) const;
+	const char* verifyTriggerSettings(RouteTypes) const;
+
 	int m_iPercentGamesActive;
 	int m_iProbability;
 	int m_iNumUnits;
