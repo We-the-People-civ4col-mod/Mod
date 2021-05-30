@@ -5158,6 +5158,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	}
 	// R&R, ray, Goody Enhancement - END
 
+	// falsche Stelle !
 	// WTP, ray, Unit spawning Goodies and Goody Huts - START
 	// we have to catch invalid XML configurations first
 	if (kGoody.isSpawnHostileUnitsAsXML() || kGoody.isSpawnHostileAnimals() || kGoody.isSpawnHostileNatives() || kGoody.isSpawnHostileCriminals())
@@ -5184,7 +5185,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	// normal Unit should only spawned in Unit Goody Huts - allows to configure immersive spawning
 	if (kGoody.isSpawnHostileUnitsAsXML())
 	{
-		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningUnits())
+		if (!pPlot->isGoodyForSpawningUnits())
 		{
 			return false;
 		}
@@ -5192,7 +5193,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	// Wild Animal should only spawned in Animal Goody Huts - allows to configure immersive spawning
 	if (kGoody.isSpawnHostileAnimals())
 	{
-		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningHostileAnimals())
+		if (!pPlot->isGoodyForSpawningHostileAnimals())
 		{
 			return false;
 		}
@@ -5208,7 +5209,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	// Hostile Natives should only spawned in Hostile Native Goody Huts - allows to configure immersive spawning
 	if (kGoody.isSpawnHostileNatives())
 	{
-		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningHostileNatives())
+		if (!pPlot->isGoodyForSpawningHostileNatives())
 		{
 			return false;
 		}
@@ -5216,7 +5217,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 	// Hostile Criminals should only spawned in Hostile Criminal Goody Huts - allows to configure immersive spawning
 	if (kGoody.isSpawnHostileCriminals())
 	{
-		if (!GC.getImprovementInfo(pPlot->getImprovementType()).isGoodyForSpawningHostileCriminals())
+		if (!pPlot->isGoodyForSpawningHostileCriminals())
 		{
 			return false;
 		}
@@ -5491,8 +5492,12 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 	// is is actually all the same - the XML tags are just used for immersive spwaning config
 	if (kGoody.isSpawnHostileUnitsAsXML() || kGoody.isSpawnHostileAnimals() || kGoody.isSpawnHostileNatives() || kGoody.isSpawnHostileCriminals())
 	{	
+
+		int eHostileUnitClass = kGoody.getUnitClassType();
+		PlayerTypes barbarianPlayerTypes = GC.getGameINLINE().getBarbarianPlayer();
+
 		// for safety
-		if (kGoody.getUnitClassType() != NO_UNITCLASS && GC.getGameINLINE().getBarbarianPlayer() != NO_PLAYER)
+		if (eHostileUnitClass != NO_UNITCLASS && barbarianPlayerTypes != NO_PLAYER)
 		{
 			// we check how many Hostiles we spawn
 			int iRandomHostileUnitsToSpawn = kGoody.getRandNumHostilesSpawned();
@@ -5503,18 +5508,21 @@ int CvPlayer::receiveGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit)
 			}
 
 			// we get UnitClass, Unit and Barbarian Player
-			int eHostileUnitClass = kGoody.getUnitClassType();
 			UnitTypes eUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eHostileUnitClass)));
-			CvPlayer& barbarianPlayer = GET_PLAYER(GC.getGameINLINE().getBarbarianPlayer());
+			CvPlayer& barbarianPlayer = GET_PLAYER(barbarianPlayerTypes);
 
-			// now we loop and spwan the Hostiles
-			for(int iI=0; iI<iActualHostileUnitsToSpawn; iI++)
+			// check for eUnit to be safe
+			if (eUnit != NO_UNIT)
 			{
-				CvUnit* eHostileUnit= barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI);
-				//treasures get loaded with Gold if configured in XML
-				if((eHostileUnit != NULL) && (iGold != 0) && eHostileUnit->getUnitInfo().isTreasure())
+				// now we loop and spwan the Hostiles
+				for(int iI=0; iI<iActualHostileUnitsToSpawn; iI++)
 				{
-					eHostileUnit->setYieldStored(iGold);
+					CvUnit* eHostileUnit= barbarianPlayer.initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI);
+					//treasures get loaded with Gold if configured in XML
+					if((eHostileUnit != NULL) && (iGold != 0) && eHostileUnit->getUnitInfo().isTreasure())
+					{
+						eHostileUnit->setYieldStored(iGold);
+					}
 				}
 			}
 		}
@@ -13081,16 +13089,15 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	}
 	else
 	{
-		const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
-		if (kTrigger.getNumBuildings() > 0 && ReqBuildings.getLength() > 0)
+		if (kTrigger.getNumBuildings() > 0 && kTrigger.getNumBuildingsRequired() > 0)
 		{
 			int iFoundValid = 0;
 
-			for (int i = 0; i < ReqBuildings.getLength(); ++i)
+			for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
 			{
-				//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+				if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 				{
-					iFoundValid += getBuildingClassCount(ReqBuildings.getBuildingClass(i));
+					iFoundValid += getBuildingClassCount((BuildingClassTypes)kTrigger.getBuildingRequired(i));
 				}
 			}
 
@@ -13160,13 +13167,12 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	{
 		if (NULL != pCity && NO_BUILDING == eBuilding)
 		{
-			const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
 			std::vector<BuildingTypes> aeBuildings;
-			for (int i = 0; i < ReqBuildings.getLength(); ++i)
+			for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
 			{
-				//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+				if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 				{
-					BuildingTypes eTestBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(ReqBuildings.getBuildingClass(i));
+					BuildingTypes eTestBuilding = (BuildingTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationBuildings(kTrigger.getBuildingRequired(i));
 					if (NO_BUILDING != eTestBuilding && pCity->isHasRealBuilding(eTestBuilding))
 					{
 						aeBuildings.push_back(eTestBuilding);
@@ -13203,10 +13209,9 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 	{
 		int iNumUnits = 0;	
 		
-		const InfoArray<UnitClassTypes>& ReqUnits = kTrigger.getUnitsRequired();
-		for (int i = 0; i < ReqUnits.getLength(); ++i)
+		for (int i = 0; i < kTrigger.getNumUnitsRequired(); ++i)
 		{
-			int iNumUnitsFound = getUnitClassCount(ReqUnits.getUnitClass(i));
+			int iNumUnitsFound = getUnitClassCount((UnitClassTypes)kTrigger.getUnitRequired(i));
 			iNumUnits = iNumUnits + iNumUnitsFound;					
 		}
 				
@@ -13263,12 +13268,11 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 
 			if (kLoopPlayer.isAlive())
 			{
-				const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
-				for (int i = 0; i < ReqBuildings.getLength(); ++i)
+				for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
 				{
-					//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+					if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 					{
-						iNumBuildings += getBuildingClassCount(ReqBuildings.getBuildingClass(i));
+						iNumBuildings += getBuildingClassCount((BuildingClassTypes)kTrigger.getBuildingRequired(i));
 					}
 				}
 			}
@@ -13371,7 +13375,7 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 		}
 		else if (0 == strcmp(kTrigger.getPythonCanDo(), "TriggerChance"))
 		{
-			const EventTypes eEvent = kTrigger.getEvents().getEvent(0);
+			const EventTypes eEvent = (EventTypes)kTrigger.getEvent(0);
 			const CvEventInfo& kEvent = GC.getEventInfo(eEvent);
 			if (GC.getGameINLINE().getSorenRandNum(1000, "(c) TAC 2010 Events") >= kEvent.getGenericParameter(3))
 			{
@@ -13613,17 +13617,16 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 
 	if (kEvent.isQuest())
 	{
-		for (EventTriggerTypes eTrigger = FIRST_EVENTTRIGGER; eTrigger < NUM_EVENTTRIGGER_TYPES; ++eTrigger)
+		for (int iTrigger = 0; iTrigger < GC.getNumEventTriggerInfos(); ++iTrigger)
 		{
-			CvEventTriggerInfo& kTrigger = GC.getEventTriggerInfo(eTrigger);
+			CvEventTriggerInfo& kTrigger = GC.getEventTriggerInfo((EventTriggerTypes)iTrigger);
 			if (!kTrigger.isRecurring())
 			{
-				const InfoArray<EventTypes>& ReqEvents = kTrigger.getPrereqEvents();
-				for (int i = 0; i < ReqEvents.getLength(); ++i)
+				for (int i = 0; i < kTrigger.getNumPrereqEvents(); ++i)
 				{
-					if (ReqEvents.getEvent(i) == eEvent)
+					if (kTrigger.getPrereqEvent(i) == eEvent)
 					{
-						if (isTriggerFired(eTrigger))
+						if (isTriggerFired((EventTriggerTypes)iTrigger))
 						{
 							return false;
 						}
@@ -14687,13 +14690,12 @@ int CvPlayer::getEventTriggerWeight(EventTriggerTypes eTrigger) const
 			return 0;
 		}
 	}
-	const InfoArray<EventTypes>& ReqEvents = kTrigger.getPrereqEvents();
-	if (ReqEvents.getLength() > 0)
+	if (kTrigger.getNumPrereqEvents() > 0)
 	{
 		bool bFoundValid = true;
-		for (int iI = 0; iI < ReqEvents.getLength(); iI++)
+		for (int iI = 0; iI < kTrigger.getNumPrereqEvents(); iI++)
 		{
-			if (NULL == getEventOccured(ReqEvents.getEvent(iI)))
+			if (NULL == getEventOccured((EventTypes)kTrigger.getPrereqEvent(iI)))
 			{
 				bFoundValid = false;
 				break;
@@ -14790,12 +14792,11 @@ int CvPlayer::getEventTriggerWeight(EventTriggerTypes eTrigger) const
 	if (kTrigger.isProbabilityBuildingMultiply() && kTrigger.getNumBuildings() > 0)
 	{
 		int iNumBuildings = 0;
-		const InfoArray<BuildingClassTypes>& ReqBuildings = kTrigger.getBuildingsRequired();
-		for (int i = 0; i < ReqBuildings.getLength(); ++i)
+		for (int i = 0; i < kTrigger.getNumBuildingsRequired(); ++i)
 		{
-			//if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
+			if (kTrigger.getBuildingRequired(i) != NO_BUILDINGCLASS)
 			{
-				iNumBuildings += getBuildingClassCount(ReqBuildings.getBuildingClass(i));
+				iNumBuildings += getBuildingClassCount((BuildingClassTypes)kTrigger.getBuildingRequired(i));
 			}
 		}
 
