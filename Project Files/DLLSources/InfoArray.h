@@ -325,6 +325,7 @@ class InfoArray : virtual protected InfoArrayMod
 	, public InfoArrayToken<1, T1>
 	, public InfoArrayToken<2, T2>
 	, public InfoArrayToken<3, T3>
+	, public boost::noncopyable
 {
 	// classes, which somehow bypasses the compile time type check
 	// TODO remove as many as possible
