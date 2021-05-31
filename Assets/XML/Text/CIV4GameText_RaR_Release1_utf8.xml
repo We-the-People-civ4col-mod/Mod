@@ -6,16 +6,6 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SAVANNAH</Tag>
-        <English>Savannah</English>
-        <French>Savane</French>
-        <German>
-            <Text>Savanne</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_PROFESSION_CONQUISTADOR</Tag>
         <English>
             <Text>Conquistador:Conquistadores</Text>
@@ -28,244 +18,370 @@
             <Plural>0:1</Plural>
         </French>
         <German>
-            <Text>Conquistador:Conquistadores</Text>
+            <Text>Konquistador:Konquistadoren</Text>
             <Gender>Male</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Conquistador:Conquistadores</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_ACCEPTED</Tag>
-        <English>We have begun peace negotiations with %s1_nation in compliance with the wishes of our King.</English>
+        <English>As requested by His Majesty, we have agreed to peace negotiations with [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. The diplomats decided to stay after the negotiations.</English>
         <French>Conformément aux souhaits du Roi, nous avons accepté les négociations de paix avec %s1_nation.</French>
-        <German>Wie durch den König gewünscht, haben wir den Friedensverhandlungen mit %s1_nation zugestimmt. Die Diplomaten haben sich nach der Verhandlung entschieden zu bleiben.</German>
+        <German>Wie durch Seine Majestät gewünscht, haben wir den Friedensverhandlungen mit [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] zugestimmt. Die Diplomaten haben sich nach den Verhandlungen zum Bleiben entschieden.</German>
+        <Italian>Come auspicato dal nostro Re, abbiamo accettato negoziati di pace con %s1_nation</Italian>
+        <Spanish>Como deseado por nuestro Rey, hemos aceptado las negociaciones de paz con %s1_nation.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PEACE_DENIED</Tag>
-        <English>We refuse to negotiate peace with %s1_nation. The King is unhappy with our decision.</English>
+        <English>We refuse to negotiate peace with [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. His Majesty is displeased with our refusal to comply with His wishes.</English>
         <French>Nous avons rejeté les négociations de paix avec %s1_nation. Le Roi est mécontent.</French>
-        <German>Wir haben die Friedensverhandlungen mit %s1_nation abgelehnt.</German>
+        <German>Wir haben die Friedensverhandlungen mit [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT] abgelehnt. Seine Majestät ist unzufrieden ob unserer Weigerung, Seinen Wünschen nachzukommen.</German>
+        <Italian>Abbiamo rifiutato negoziati di pace con %s1_nation. Il re è infelice con la nostra decisione.</Italian>
+        <Spanish>Hemos rechazado las negociaciones de paz con %s1_nation. El Rey está satisfecho con nuestra decisión.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>ABANDONING_CITY</Tag>
-        <English>You are going to abandon this city.</English>
+        <English>Milord, if you make all the inhabitants of this settlement pack their belongings and send them away, the place will be abandoned and wiped off the map.</English>
         <French>Vous allez abandonner cette colonie.</French>
-        <German>Gouverneur, wenn Ihr alle Bewohner dieser Siedlung ihre Habseligkeiten packen lasst und sie fortschickt, wird der Ort verlassen sein und von der Karte getilgt werden.</German>
+        <German>Milord, wenn Ihr alle Bewohner dieser Siedlung ihre Habseligkeiten packen lasst und sie fortschickt, wird der Ort verlassen sein und von der Karte getilgt werden.</German>
+        <Italian>Avete intenzione di abbandonare questa città.</Italian>
+        <Spanish>Usted va a abandonar esta ciudad.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>CITY_ABANDONED</Tag>
-        <English>City %s1_city has been abandoned.</English>
+        <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]The last citizens have turned their backs on this town. The houses will fall into disrepair and soon no one will remember this place.</English>
         <French>La Colonie de %s1_city a été abandonnée.</French>
-        <German>Die letzten Bürger haben %s1_city den Rücken gekehrt. Die Hütten werden verfallen, und bald wird sich niemand mehr dieses Ortes entsinnen.</German>
+        <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die letzten Bürger haben der Stadt den Rücken gekehrt. Die Häuser werden verfallen, und schon bald wird sich niemand mehr dieses Ortes entsinnen.</German>
+        <Italian>City %s1_city è stato abbandonato.</Italian>
+        <Spanish>Ciudad %s1_city ha sido abandonado.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>NO_ABANDONING_CITY_BECAUSE_WAR</Tag>
-        <English>Abandoning a city is not possible during war.</English>
+        <English>Milord, there is a war going on and the settlers are afraid to give up the protective settlement.</English>
         <French>L'abandon d'une colonie est impossible en temps de guerre.</French>
-        <German>Gouverneur, es herrscht Krieg, und die Siedler fürchten sich, die schützende Siedlung aufzugeben.</German>
+        <German>Milord, es herrscht Krieg, und die Siedler fürchten sich, die schützende Siedlung aufzugeben.</German>
+        <Italian>Abbandonare la città non è possibile durante la guerra.</Italian>
+        <Spanish>El abandono de una ciudad no es posible durante la guerra.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>NO_TRADE_BECAUSE_BAD_BARGAIN</Tag>
-        <English>This city currently refuses to trade with you.</English>
+        <English>The [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] people refuse to trade with you at this time.</English>
         <French>Cette colonie refuse de commercer avec vous.</French>
-        <German>Das Volk der %s1_Civ möchte zur Zeit nicht mit euch handeln.</German>
+        <German>Das Volk der [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] möchte zur Zeit nicht mit euch handeln.</German>
+        <Italian>Questa città attualmente non vuole commerciare con voi.</Italian>
+        <Spanish>Esta ciudad actualmente no quiere negociar con usted.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>Debug</Tag>
         <English>Debug %d1_position %d2_value</English>
         <French>Debug %d1_position %d2_value</French>
         <German>Debug %d1_position %d2_value</German>
+        <Italian>Debug %d1_position %d2_value</Italian>
+        <Spanish>Debug %d1_position %d2_value</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! A %s3_BldngName was destroyed by the raiding party!</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! A %s3_BldngName was destroyed by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! [NUM1:Un:Une] %s3_BldngName [NUM1:a été détruit:a été détruite] par des ennemis infiltrés !</French>
-        <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
+        <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno distrutto [NUM1:un:una] %s3_BldngName!</Italian>
+        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han destruido [NUM1:un:una:unos:unas] %s3_BldngName!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PRODUCTION_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! All %s3_buildName progress has been destroyed by the raiding party!</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! All progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Toutes les progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
-        <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von gegnerischen Eindringlingen zerstört!</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
+        <Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
+        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los infiltrados enemigos han destruido todo el progreso [NUM1:del:de la:de los:de las] %s3_buildName!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TREASURY_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! %d3[ICON_GOLD] from our state treasury was looted by the raiding party!</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! %d3[ICON_GOLD] from our state treasury was looted by raiding party!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %d3[ICON_GOLD] de notre trésor a été pillée par des ennemis infiltrés !</French>
-        <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! Feindliche Eindringlingen haben einen %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Feindliche Eindringlinge haben %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
+        <Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno rubato %d3[ICON_GOLD] del nostro tesoro di stato!</Italian>
+        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! ¡Los enemigos infiltrados han saqueado %d3[ICON_GOLD] de nuestro tesoro!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SCALP_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! The raiders take scalps, with %s3_unit killed.</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid!  The raiders take scalps, with [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] killed.</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %s3_unit a subi des dégâts</French>
-        <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! %s3_unit Es hat Opfer gegeben</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Angreifer nehmen Skalps: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde getötet.</German>
+        <Italian>Raid %s1_civ_adjective a %s2_city! sono morti %s3_unit</Italian>
+        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! Se lamenta la pérdida de %s3_unit</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HARBOR_RAIDED</Tag>
-        <English>%s1_civ_adjective raid on %s2_city! Raiders attack the harbour, damaging your %s3_unit!</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! Raiders attack the harbour, damaging your [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</English>
         <French>Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! Votre %s3_unit a subi des dégâts !</French>
-        <German>%s2_city wurde Opfer eines %s1:2_civ_adjective Überfalls! %s3_unit beschädigt!</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1:2_civ_adjective Überfall! Räuber greifen Hafenanlagen an. Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde beschädigt!</German>
+        <Italian>Raid %s1_civ_adjective a %s2_city! La tua unità %s3_unit  è stata danneggiata!</Italian>
+        <Spanish>¡Una incursión de los %s1:3_civ_adjective en %s2_city! [NUM2:ha dañado:ha dañado:han dañado:han dañado] a [NUM1:vuestro:vuestra:vuestros:vuestras] %s3_unit!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NOTHING_RAIDED</Tag>
-        <English>%s1_civ_adjective raiding party wiped out in %s2_city! Nothing destroyed or stolen.</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raiding party wiped out! Nothing destroyed or stolen.</English>
         <French>%s1_civ_adjective raid anéanti en %s2_city! Rien n'a été détruit ou volé.</French>
-        <German>%s1_civ_adjective Stoßtrupp in %s2_city ausgelõscht! Keine ernstzunehmenden Schäden verursacht.</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Stoßtrupp ausgelöscht! Keine ernstzunehmenden Schäden verursacht.</German>
+        <Italian>%s1_civ_adjective gruppo di incursori spazzato via in %s2_city! Niente distrutto o rubato.</Italian>
+        <Spanish>%s1_civ_adjective partido de ataque acabó en %s2_city! Nada destruye o se lo roban.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
-        <English>%s1_civ_adjective raiding party captured in %s2_city! They will pay with labour for their crimes.</English>
+        <English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raiding party captured! They will pay with forced labour for their crimes.</English>
         <French>%s1_civ_adjective raid capturé en %s2_city! Ils paieront pour leurs crimes par le travail.</French>
-        <German>%s1_civ_adjective Stoßtrupp in %s2_city gefangen genommen! Sie werden ihre Verbrechen abarbeiten.</German>
+        <German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
+        <Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
+        <Spanish>%s1_civ_adjective grupo asaltante capturado en %s2_city! Pagarán con el trabajo de sus crímenes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
-        <English>The citadel of %s1_city has targetted an enemy ship with its cannons, sinking it!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur un navire ennemi et l'a coulé !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf ein feindliches Schiff abgefeuert und es versenkt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has targetted an enemy ship with its cannons, sinking it!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a coulé !</French>
+        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert und es versenkt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica e affondato it!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a un barco enemigo y hundido!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_SUNK_BAD</Tag>
-        <English>With its cannons the citadel of %s1_city has sunk our ship!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur notre navire et l'a coulé !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unser Schiff abgefeuert und es versenkt!</German>
+        <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]With its cannons the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has sunk our ship!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire et l'a coulé !</French>
+        <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert und es versenkt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave e affondata it!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco y hundido!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_GOOD</Tag>
-        <English>Using its cannons the citadel of %s1_city has damaged an enemy ship!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur un navire ennemi et l'a endommagé !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf ein feindliches Schiff abgefeuert und es beschädigt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Using its cannons the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has damaged an enemy ship!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a endommagé !</French>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert und es beschädigt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica e danneggiato it!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a un barco enemigo y dañado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our ship, damaging it!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur notre navire et l'a endommagé !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unser Schiff abgefeuert und es beschädigt!</German>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at our ship, damaging it!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire et l'a endommagé !</French>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert und es beschädigt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave e danneggiato it!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco y dañado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at an enemy ship but missed it!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur un navire ennemi, mais elle l'a raté !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf ein feindliches Schiff abgefeuert, dieses jedoch verfehlt!</German>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at an enemy ship but missed it!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi, mais elle l'a raté !</French>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf ein feindliches Schiff abgefeuert, dieses jedoch verfehlt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni ad una nave nemica, ma perso!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a un barco enemigo, pero lo perdimos!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_GOOD</Tag>
-        <English>The citadel of %s1_city fired its cannons at our ship but missed it!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur notre navire, mais l'a raté !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unser Schiff abgefeuert, dieses jedoch verfehlt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] fired its cannons at our ship but missed it!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur notre navire, mais l'a raté !</French>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert, dieses jedoch verfehlt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave, ma perso!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco, pero lo perdimos!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_GOOD</Tag>
-        <English>Cannon fire from the citadel of %s1_city has destroyed enemy troops!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur les troupes ennemies et les a détruites !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf feindliche Truppen abgefeuert und diese vernichtet!</German>
+        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]Cannon fire from the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has destroyed enemy troops!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a détruites !</French>
+        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert und diese vernichtet!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche e distrutti!</Italian>
+        <Spanish>La ciudadela de% s1_city ha disparado sus cañones contra las tropas enemigas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_DESTROYED_BAD</Tag>
-        <English>Cannons from %s1_city have destroyed our troops!</English>
-        <French>La citadelle de %s1_city a tiré ses canons à nos troupes et les a détruites !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unsere Truppen abgefeuert und diese vernichtet!</German>
+        <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]Cannons in the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have destroyed our troops!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes et les a détruites !</French>
+        <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unsere Truppen abgefeuert und diese vernichtet!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni alle nostre truppe e distrutti!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a nuestras tropas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_LAND_GOOD</Tag>
-        <English>Cannons in the %s1_city citadel have damaged enemy troops!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur les troupes ennemies et les a endommagées !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf feindliche Truppen abgefeuert und diesen Schaden zugefügt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Cannons in the citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have damaged enemy troops!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies et les a endommagées !</French>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert und diesen Schaden zugefügt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche e damaged!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones contra las tropas enemigas y les damamged!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_HIT_LAND_BAD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our troops and damaged them!</English>
-        <French>La citadelle de %s1_city a tiré ses canons à nos troupes et les a endommagées !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unsere Truppen abgefeuert und diesen Schaden zugefügt!</German>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at our troops and damaged them!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes et les a endommagées !</French>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unsere Truppen abgefeuert und diesen Schaden zugefügt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni alle nostre truppe e damaged!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a nuestras tropas y les damaged!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_LAND_BAD</Tag>
-        <English>The citadel of %s1_city missed the enemy troops with its cannons!</English>
-        <French>La citadelle de %s1_city a tiré ses canons sur les troupes ennemies, mais elle les a manquées !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf feindliche Truppen abgefeuert, diese jedoch verfehlt!</German>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] missed the enemy troops with its cannons!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur les troupes ennemies, mais elle les a manquées !</French>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf feindliche Truppen abgefeuert, diese jedoch verfehlt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni contro le truppe nemiche ma li perdere!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones contra las tropas enemigas, sino que los puedes perder!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTBOMB_MISS_LAND_GOOD</Tag>
-        <English>The citadel of %s1_city has fired its cannons at our troops to no effect!</English>
-        <French>La citadelle de %s1_city a tiré ses canons à nos troupes, mais elle les a manquées !</French>
-        <German>Die Zitadelle von %s1_city hat ihre Kannonen auf unsere Truppen abgefeuert, diese jedoch verfehlt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fired its cannons at our troops to no effect!</English>
+        <French>La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons à nos troupes, mais elle les a manquées !</French>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unsere Truppen abgefeuert, diese jedoch verfehlt!</German>
+        <Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni alle nostre truppe, ma li perdere!</Italian>
+        <Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones a nuestras tropas, sino que las pierda!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_DESTROYED_GOOD</Tag>
-        <English>The defenses of %s1_city have fired at enemy troops and destroyed them!</English>
-        <French>Les défenses de %s1_city ont tiré sur les troupes ennemies et les a détruites !</French>
-        <German>Die Verteidiger von %s1_city haben auf feindliche Truppen gefeuert und diese vernichtet!</German>
+        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at enemy troops and destroyed them!</English>
+        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies et les a détruites !</French>
+        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf feindliche Truppen gefeuert und diese vernichtet!</German>
+        <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato contro le truppe nemiche e distrutti!</Italian>
+        <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra las tropas enemigas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_DESTROYED_BAD</Tag>
-        <English>The defenses of %s1_city have fired at our troops and wiped them out!</English>
-        <French>Les défenses de %s1_city ont tiré sur nos troupes et les a détruites !</French>
-        <German>Die Verteidiger von %s1_city haben auf unsere Truppen gefeuert und diese vernichtet!</German>
+        <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at our troops and wiped them out!</English>
+        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes et les a détruites !</French>
+        <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf unsere Truppen gefeuert und diese vernichtet!</German>
+        <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato alle nostre truppe e distrutti!</Italian>
+        <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra nuestras tropas y los destruyó!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_HIT_LAND_GOOD</Tag>
-        <English>The defenses of %s1_city have fired at enemy troops and damaged them!</English>
-        <French>Les défenses de %s1_city ont tiré sur les troupes ennemies et les a endommagées !</French>
-        <German>Die Verteidiger von %s1_city haben auf feindliche Truppen gefeuert und diesen Schaden zugefügt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at enemy troops and damaged them!</English>
+        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies et les a endommagées !</French>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf feindliche Truppen gefeuert und diesen Schaden zugefügt!</German>
+        <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato contro le truppe nemiche e danneggiati!</Italian>
+        <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra las tropas enemigas y les dañado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_HIT_LAND_BAD</Tag>
-        <English>The defenses of %s1_city have fired at our troops and damaged them!</English>
-        <French>Les défenses de %s1_city ont tiré sur nos troupes et les a endommagées !</French>
-        <German>Die Verteidiger von %s1_city haben auf unsere Truppen gefeuert und diesen Schaden zugefügt!</German>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at our troops and damaged them!</English>
+        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes et les a endommagées !</French>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf unsere Truppen gefeuert und diesen Schaden zugefügt!</German>
+        <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato alle nostre truppe e danneggiati!</Italian>
+        <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra nuestras tropas y les dañado!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_MISS_LAND_BAD</Tag>
-        <English>Our defenses in %s1_city have fired at enemy troops but missed them!</English>
-        <French>Les défenses de %s1_city ont tiré sur les troupes ennemies, mais elle les a manquées !</French>
-        <German>Die Verteidiger von %s1_city haben auf feindliche Truppen gefeuert, diese jedoch verfehlt!</German>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Our defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] have fired at enemy troops but missed them!</English>
+        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur les troupes ennemies, mais elle les a manquées !</French>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Unsere Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben auf feindliche Truppen gefeuert, diese jedoch verfehlt!</German>
+        <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato contro le truppe nemiche ma li perdere!</Italian>
+        <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra tropas enemigas, sino que los puedes perder!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORTDEFENSE_MISS_LAND_GOOD</Tag>
-        <English>The defenses of %s1_city fired at our troops but did no damage!</English>
-        <French>Les défenses de %s1_city ont tiré sur nos troupes, mais elle les a manquées !</French>
-        <German>Die Verteidiger von %s1_city haben auf unsere Truppen gefeuert, diese jedoch verfehlt!</German>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The defenders of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] fired at our troops but did no damage!</English>
+        <French>Les défenses de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont tiré sur nos troupes, mais elle les a manquées !</French>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Verteidiger von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] feuerten auf unsere Truppen, verursachten aber keine Verluste!</German>
+        <Italian>Le difese di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno sparato alle nostre truppe, ma li perdere!</Italian>
+        <Spanish>Las defensas de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] han disparado contra nuestras tropas, sino que las pierda!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_NATIVES_POPUP_MISSION2</Tag>
-        <English>Chance of Success: %d1_success%%</English>
+        <English>Chance of Success : %d1_success%%</English>
         <French>Chances de réussir : %d1_success%%</French>
-        <German>Erfolgschance: %d1_success%%</German>
+        <German>Erfolgschance : %d1_success%%</German>
+        <Italian>Probabilità di Successo : %d1_success%%</Italian>
+        <Spanish>Probabilidad de éxito : %d1_success%%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_FAILED</Tag>
-        <English>Your missionary was unable to persuade the Natives in this village to see the evil of their white neighbours.</English>
+        <English>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Your missionary was unable to persuade the Natives in this village to see the evil of their white neighbours.</English>
         <French>Votre missionnaire n'a pas réussi à convaincre les autochtones de ce village de la méchanceté de leurs voisins.</French>
-        <German>Euer Missionar war bei dem Versuch, die Einwohner dieses Dorfes von der Bösartigkeit ihrer weissen Nachbarn zu überzeugen, nicht erfolgreich.</German>
+        <German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Euer Missionar war bei dem Versuch, die Einwohner dieses Dorfes von der Bösartigkeit ihrer weißen Nachbarn zu überzeugen, nicht erfolgreich.</German>
+        <Italian>Il tuo missionaria non è riuscita quando si cerca di convincere i nativi di questo villaggio della malvagità dei loro vicini bianchi.</Italian>
+        <Spanish>Su Misionero no tuvo éxito al tratar de convencer a los nativos de este pueblo de la maldad de sus vecinos blancos.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STIR_UP_SUCCESSFULL</Tag>
-        <English>Your missionary successfully convinced young Natives in this village to raid the evil white neighbours.</English>
+        <English>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Your missionary successfully convinced some young Natives in this village to raid their evil white neighbours.</English>
         <French>Votre missionnaire a réussi à convaincre certains jeunes indigènes de ce village d'aller piller leurs mauvais voisins.</French>
-        <German>Euer Missionar hat die Einwohner dieses Dorfes erfolgreich zu einem Überfall auf ihre bösen weißen Nachbarn überzeugt.</German>
+        <German>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Euer Missionar hat die Einwohner dieses Dorfes erfolgreich zu einem Überfall auf ihre bösen weißen Nachbarn überzeugt.</German>
+        <Italian>Il tuo Missionario convinto con successo alcuni giovani nativi di questo villaggio a razziare i loro vicini bianchi malvagi.</Italian>
+        <Spanish>Su Misionero convencido con éxito algunos jóvenes nativos de este pueblo para atacar a sus vecinos blancos malignos.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_PRISONERS</Tag>
-        <English>The Prisoners we have bought from our King have arrived in %s1_city, Mylord.</English>
+        <English>Milord, the [COLOR_UNIT_TEXT]prisoners[COLOR_REVERT] we have bought from our King have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Les prisonniers que nous avons achetés à notre roi sont arrivés en %s1_city, Mylord.</French>
-        <German>Die Gefangenen, die wir erworben haben, sind in %s1_city angekommen, Mylord.</German>
+        <German>Milord, die [COLOR_UNIT_TEXT]Gefangenen[COLOR_REVERT], die wir von unserem König erworben haben, sind nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gebracht worden.</German>
+        <Italian>I prigionieri che abbiamo comprato dal nostro re sono arrivati in %s1_city, mio signore.</Italian>
+        <Spanish>Los Prisioneros que hemos comprado a nuestro Rey han llegado %s1_city, Milord.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_NOBLE</Tag>
-        <English>The famous noble from Europe has arrived in %s1_city, Milord.</English>
+        <English>Milord, the [COLOR_UNIT_TEXT]famous noble[COLOR_REVERT] has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Le Noble célèbre est arrivé a%s1_city, Monseigneur.</French>
-        <German>Der berühmte Edelmann ist in %s1_city angekommen, Mylord.</German>
+        <German>Milord, der [COLOR_UNIT_TEXT]berühmte Edelmann[COLOR_REVERT] ist in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] angekommen.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_TRAINED_RANGERS</Tag>
+        <English>Milord, a new unit of [COLOR_UNIT_TEXT]rangers[COLOR_REVERT] awaits your commands in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
+        <French>Une nouvelle unité de gardes-forestiers attend vos ordres à %s1_city, Sir.</French>
+        <German>Milord, eine neue Einheit [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] erwartet Ihre Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_HIRED_CONQUISTADORS</Tag>
+        <English>Milord, the [COLOR_UNIT_TEXT]conquistadors[COLOR_REVERT] from Europe have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
+        <French>Les conquistadors venus d'Europe sont arrivés à %s1_city, Sir.</French>
+        <German>Milord, die [COLOR_UNIT_TEXT]Konquistadoren[COLOR_REVERT] aus Europe sind in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgeschifft worden.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BOUGHT_NATIVE_SLAVE</Tag>
+        <English>Milord, the [COLOR_UNIT_TEXT]Native slaves[COLOR_REVERT] we bought have been delivered to [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
+        <French>Les Esclaves indigènes que nous avons achetés sont arrivés à %s1_city, Sir.</French>
+        <German>Milord, die [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT], die wir gekauft haben, wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gebracht.</German>
+        <Italian>I nativi schiavi che abbiamo comprato sono stati consegnati a %s1_city, Mylord.</Italian>
+        <Spanish>Los esclavos nativos compramos han sido entregados a %s1_city, Mylord.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_BOUGHT_AFRICAN_SLAVE</Tag>
+        <English>Milord, the [COLOR_UNIT_TEXT]slaves[COLOR_REVERT] we bought from Africa have arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
+        <French>Les esclaves que nous avons acheté en Afrique sont arrivés en %s1_city, Sir.</French>
+        <German>Milord, die [COLOR_UNIT_TEXT]Sklaven aus Afrika[COLOR_REVERT] wurden nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert.</German>
+        <Italian>Gli schiavi che abbiamo comprato dall'Africa sono arrivati in %s1_city, Mylord.</Italian>
+        <Spanish>Los esclavos que compramos de África han llegado %s1_city, Mylord.</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACQUIRED_CONTINENTAL_GUARD</Tag>
+        <English>Milord, with the help of our European allies, we have successfully trained a [COLOR_UNIT_TEXT]Continental Guard[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
+        <French>Avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city, Sir.</French>
+        <German>Milord, mit der Hilfe unserer europäischen Alliierten haben wir erfolgreich eine [COLOR_UNIT_TEXT]Kontinentalgarde[COLOR_REVERT] in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ausgebildet.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
+        <English>Milord, the [COLOR_UNIT_TEXT]mortar[COLOR_REVERT] we have bought from our European allies has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
+        <French>Le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city, Sir.</French>
+        <German>Milord, der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT], den wir von unseren europäischen Alliierten gekauft haben, ist nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert worden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CIVILIZATION_TRAITS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Civilization Traits[COLOR_REVERT]</English>
         <French>[COLOR_FONT_RED]Profil de civilisation[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Civilization Traits[COLOR_REVERT]</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Zivilisations-Eigenschaften[COLOR_REVERT]</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Tratti di civiltà[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Rasgos de Civilización[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_LEADER_TRAITS</Tag>
         <English>[COLOR_HIGHLIGHT_TEXT]Leader Traits[COLOR_REVERT]</English>
         <French>[COLOR_FONT_RED]Profil du dirigeant[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Leader Traits[COLOR_REVERT]</German>
+        <German>[COLOR_HIGHLIGHT_TEXT]Anführer-Eigenschaften[COLOR_REVERT]</German>
+        <Italian>[COLOR_HIGHLIGHT_TEXT]Tratti da leader[COLOR_REVERT]</Italian>
+        <Spanish>[COLOR_HIGHLIGHT_TEXT]Rasgos de LÍder[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NO_REVEAL_MAP</Tag>
@@ -281,117 +397,33 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_RUNNING_OUT_OF_SPACE_NEW_CAPACITY</Tag>
-        <English>Storage capacity in %s1_city is almost at its limits, Milord.</English>
+        <English>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Storage capacity is almost at its limits.</English>
         <French>La capacité de stockage à %s1_city a presque atteint ses limites, Mylord.</French>
-        <German>Die Lagerhauskapazität in %s1_city ist fast an ihren Grenzen, Mylord.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_MERCANTILE_HELP</Tag>
-        <English>[ICON_BULLET]Market prices are less sensitive and the maximum tax rate is lower.</English>
-        <French>[ICON_BULLET]Les prix du marché sont moins fluctuants et le taux d'imposition maximal est plus faible</French>
-        <German>[ICON_BULLET]Marktpreise verändern sich nur halb so schnell und die Steuerobergrenze ist niedriger</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SEAFARERS_SHORT</Tag>
-        <English>Sea</English>
-        <French>Nav</French>
-        <German>See</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_UNDEMANDING_SHORT</Tag>
-        <English>Und</English>
-        <French>Peu</French>
-        <German>Gen</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_ADMINISTRATIVE_SHORT</Tag>
-        <English>Adm</English>
-        <French>Adm</French>
-        <German>Adm</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_PIONEER_SHORT</Tag>
-        <English>Pio</English>
-        <French>Pio</French>
-        <German>Pio</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_CAPITALIST_SHORT</Tag>
-        <English>Cap</English>
-        <French>Cap</French>
-        <German>Kap</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SOPHISTICATED_SHORT</Tag>
-        <English>Sop</English>
-        <French>Sop</French>
-        <German>Kult</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_EXPANSIVE_SHORT</Tag>
-        <English>Exp</English>
-        <French>Exp</French>
-        <German>Exp</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_ADMIRAL_SHORT</Tag>
-        <English>ExA</English>
-        <French>AmEx</French>
-        <German>ErfA</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_GENERAL_SHORT</Tag>
-        <English>ExG</English>
-        <French>GeEx</French>
-        <German>ErfG</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_AGRICULTURAL_SHORT</Tag>
-        <English>Agr</English>
-        <French>Agr</French>
-        <German>Landw</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_IMPERIALIST_SHORT</Tag>
-        <English>Imp</English>
-        <French>Imp</French>
-        <German>Imp</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_PATRIARCH_SHORT</Tag>
-        <English>Pat</English>
-        <French>Pat</French>
-        <German>Pat</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_GATHERER_SHORT</Tag>
-        <English>Gat</English>
-        <French>Gat</French>
-        <German>Sam</German>
+        <German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die Lagerhauskapazität ist fast an ihren Grenzen.</German>
+        <Italian>La capacità di storage in %s1_city è quasi al suo limite, Mylord.</Italian>
+        <Spanish>La capacidad de almacenamiento en %s1_city es casi en su límite, Mylord.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
         <English>[ICON_BULLET]%D1%% effect of Revolutionary Rate on Rebel [ICON_STRENGTH]</English>
         <French>[ICON_BULLET]%D1%% effet du sentiment de révolte sur la [ICON_STRENGTH]</French>
         <German>[ICON_BULLET]%D1%% Auswirkung von Revolutionsbereitschaft auf [ICON_STRENGTH] der Rebellen</German>
+        <Italian>Effetto [ICON_BULLET]%D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
+        <Spanish>[ICON_BULLET]%D1%% efecto de la Revolución de Cambio on Rebelde [ICON_STRENGTH]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TRAIT_TREASURE_MODIFIER</Tag>
         <English>[ICON_BULLET]%D1%% more [ICON_GOLD] when villages are captured</English>
         <French>[ICON_BULLET]Confère %D1%% [ICON_GOLD] quand des villages sont capturés</French>
-        <German>[ICON_BULLET]%D1%% mehr [ICON_GOLD], wenn Dörfer eingenommen werden</German>
+        <German>[ICON_BULLET]%D1%% mehr [ICON_GOLD] bei Eroberung von Siedlungen der Ureinwohner</German>
+        <Italian>[ICON_BULLET]Rende %D1%% [ICON_GOLD] quando vengono conquistati i villaggi</Italian>
+        <Spanish>[ICON_BULLET]Rinde %D1%% [ICON_GOLD] cuando se capturan aldeas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_SMUGGLERS</Tag>
-        <English>The smugglers we have hired await your orders in %s1_city, Milord.</English>
+        <English>Milord, the [COLOR_UNIT_TEXT]smugglers[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Les contrebandiers que nous avons recrutés attendent vos ordres à %s1_city, Sir.</French>
-        <German>Die angeheuerten Schmuggler erwarten in %s1_city Eure Befehle, Mylord.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_YIELD_BRIBE</Tag>
-        <English>[TAB]%d1%% Bribe: %d2[ICON_GOLD]</English>
-        <French>[TAB]%d1%% Pot-de-vin : %d2[ICON_GOLD]</French>
-        <German>[TAB]%d1%% Bestechung: %d2[ICON_GOLD]</German>
+        <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Schmuggler[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_SEE_RANGER</Tag>
@@ -399,63 +431,47 @@
         <French>[ICON_BULLET]Peut voir les gardes-forestiers.</French>
         <German>[ICON_BULLET]Kann Ranger sehen.</German>
     </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAINED_RANGERS</Tag>
-        <English>A new unit of rangers awaits your commands in %s1_city, Milord.</English>
-        <French>Une nouvelle unité de gardes-forestiers attend vos ordres à %s1_city, Sir.</French>
-        <German>Eine neue Einheit Rangers erwartet Ihre Befehle in %s1_city, Mylord.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HIRED_CONQUISTADORS</Tag>
-        <English>The conquistadors from Europe have arrived in %s1_city, Milord.</English>
-        <French>Les conquistadors venus d'Europe sont arrivés à %s1_city, Sir.</French>
-        <German>Conquistadores aus Europe sind in %s1_city angekommen, Mylord.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BOUGHT_NATIVE_SLAVE</Tag>
-        <English>The Native slaves we bought have been delivered to %s1_city, Milord.</English>
-        <French>Les Esclaves indigènes que nous avons achetés sont arrivés à %s1_city, Sir.</French>
-        <German>Die Ureinwohnersklaven die wir gekauft haben, wurden nach %s1_city geliefert, Mylord.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BOUGHT_AFRICAN_SLAVE</Tag>
-        <English>The slaves we bought from Africa have arrived in %s1_city, Milord.</English>
-        <French>Les esclaves que nous avons acheté en Afrique sont arrivés en %s1_city, Sir.</French>
-        <German>Die Sklaven aus Afrika wurden nach %s1_city geliefert, Mylord.</German>
-    </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships [COLOR_REVERT]are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots.</English>
-		<German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur geringfügig verteidigen.</German>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal ships[COLOR_REVERT] are built to move goods and people. They are small but fast, faster and more spacious than wagon trains. Because of their shallow draft they are unable to use ocean fields, so they can't sail to Europe. The small coastal ship has two slots for goods and people. The bigger one has three slots. Both can only defend themselves poorly.</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Küstensegler[COLOR_REVERT] sind eigens für den küstennahen Transport von Waren und Menschen gedacht. Sie sind zwar klein, dafür aber sehr wendig und außerdem deutlich geräumiger und schneller als ein Planwagen. Sie können nur in [COLOR_HIGHLIGHT_TEXT]Küstennähe[COLOR_REVERT] eingesetzt werden. Den Ozean kann man mit ihnen nicht befahren, so dass sie nicht nach Europa segeln können. Der Kleine Küstensegler hat zwei Frachtplätze, der große Küstensegler drei. Beide können sich nur schlecht verteidigen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Coastal shipping [COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
-		<German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und wendige - dafür aber recht geräumige Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der neuen Welt Schiffe zu bauen, mit denen Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln. </German>
+		<English>[COLOR_HIGHLIGHT_TEXT]Coastal Shipping[COLOR_REVERT] uses small yet capacious sailing vessels to move goods and people. These commercial boats begin to operate soon after colonies are established in the New World. Small ships designed for shallow water can't sail to Europe or Africa.</English>
+		<German>[COLOR_UNIT_TEXT]Küstenschifffahrt[COLOR_REVERT] wird, wie der Name schon sagt, nur nahe der Küste betrieben. Kleine und handliche - dafür aber recht geräumige - Segler eignen sich bestens dazu, bereits sehr früh nach der Landung in der Neuen Welt Schiffe gebaut zu werden, damit Waren schnell zwischen den Kolonien hin- und hertransportiert werden können, bis ein Straßennetz errichtet werden kann. Aufgrund ihrer geringen Größe können die Küstensegler nicht auf den Ozean hinaus fahren und auch nicht nach Europa oder Afrika segeln.</German>
 	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_CONSUMED_WITH_CHAR</Tag>
-        <English>Consumes: %s1_symbol_list</English>
+        <English>Consumes : %s1_symbol_list</English>
         <French>Consomme : %s1_symbol_list</French>
-        <German>Benötigt: %s1_symbol_list</German>
+        <German>Benötigt : %s1_symbol_list</German>
+        <Italian>Consuma : %s1_symbol_list</Italian>
+        <Spanish>Consume : %s1_symbol_list</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_YIELDS_CONVERSION</Tag>
         <English>[ICON_BULLET]Converts %s1_symbol_list into %F2_yield</English>
         <French>[ICON_BULLET]Convertit %s1_symbol_list en %F2_yield</French>
         <German>[ICON_BULLET]Wandelt %s1_symbol_list in %F2_yield um</German>
+        <Italian>[ICON_BULLET]Converte %s1_symbol_list in %F2_yield</Italian>
+        <Spanish>[ICON_BULLET]Convierte %s1_symbol_list en %F2_yield</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELDS_PRODUCED_WITH_CHAR</Tag>
-        <English>Produces: %s1_symbol_list</English>
+        <English>Produces : %s1_symbol_list</English>
         <French>Produit : %s1_symbol_list</French>
-        <German>Produziert: %s1_symbol_list</German>
+        <German>Produziert : %s1_symbol_list</German>
+        <Italian>Produce : %s1_symbol_list</Italian>
+        <Spanish>Produce : %s1_symbol_list</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHOOSE_PROFESSION_ITEMS</Tag>
         <English>%s1_comma_separated_list_of_yields_produced</English>
         <French>%s1_comma_separated_list_of_yields_produced</French>
         <German>%s1_comma_separated_list_of_yields_produced</German>
+        <Italian>%s1_comma_separated_list_of_yields_produced</Italian>
+        <Spanish>%s1_comma_separated_list_of_yields_produced</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_YIELD_DEMAND</Tag>
@@ -465,46 +481,43 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_DOMESTIC_SOLD</Tag>
-        <English>Goods worth %d2[ICON_GOLD] have been sold on the domestic market of %s1_city.</English>
-        <French>Marchandises d'une valeur de %d2[ICON_GOLD] ont été vendus sur le marché intérieur de %s1_city.</French>
-        <German>Auf dem Markt von %s1_city wurden Güter für %d2[ICON_GOLD] verkauft.</German>
+        <English>%s1_city : Goods worth %d2[ICON_GOLD] have been sold on the domestic market.</English>
+        <French>%s1_city : Marchandises d'une valeur de %d2[ICON_GOLD] ont été vendus sur le marché intérieur.</French>
+        <German>%s1_city : Auf dem Markt wurden Güter für %d2[ICON_GOLD] verkauft.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_INFO_YIELD</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Domestic Demand:[COLOR_REVERT] %d1 [NEWLINE] [COLOR_HIGHLIGHT_TEXT]Domestic Price:[COLOR_REVERT] %d2[ICON_GOLD]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Demande intérieure:[COLOR_REVERT] %d1 [NEWLINE] [COLOR_HIGHLIGHT_TEXT]Prix intérieur:[COLOR_REVERT] %d2[ICON_GOLD]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Heimische Nachfrage:[COLOR_REVERT] %d1 [NEWLINE] [COLOR_HIGHLIGHT_TEXT]Heimischer Preis:[COLOR_REVERT] %d2[ICON_GOLD]</German>
+        <English>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Domestic Demand : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Domestic Price : [COLOR_REVERT][TAB]%d2[ICON_GOLD][NEWLINE]</English>
+        <French>[COLOR_HIGHLIGHT_TEXT]Demande intérieure : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Prix intérieur : [COLOR_REVERT][TAB]%d2[ICON_GOLD]</French>
+        <German>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Lokale Nachfrage : [COLOR_REVERT][TAB]%d1[NEWLINE][COLOR_HIGHLIGHT_TEXT]Lokaler Preis : [COLOR_REVERT][TAB][TAB]%d2[ICON_GOLD][NEWLINE]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BOUGHT_BISHOP</Tag>
-        <English>The new bishop has arrived in %s1_city, Milord.</English>
+        <English>Milord, the newly appointed [COLOR_UNIT_TEXT]bishop[COLOR_REVERT] has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Le nouvel évêque est arrivé à %s1_city, Sir.</French>
-        <German>Der neue Bischof ist in %s1_city angekommen, Mylord.</German>
+        <German>Milord, der neu ernannte [COLOR_UNIT_TEXT]Bischof[COLOR_REVERT] ist in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] eingetroffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST</Tag>
-        <English>Teacher List Popup Screen</English>
+        <English>Teacher List Pop-up Screen</English>
         <French>Liste des formateurs</French>
-        <German>Ausbildungs Popup Screen</German>
+        <German>Ausbildungs-Screen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_TEXT</Tag>
-        <English>%s1_city can train the following units.
-Select how many units you want to be trained of each profession.</English>
-        <French>%s1_city peut former les unités suivantes.
-Sélectionner le nombre d'unités que vous souhaitez former pour chaque profession.</French>
-        <German>%s1_city kann die folgenden Einheiten ausbilden.
-Anzahl Einheiten festlegen, die für Beruf ausgebildet werden sollen.</German>
+        <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]We can train the following units. Select how many units you want to be trained of each profession.</English>
+        <French>%s1_city peut former les unités suivantes. Sélectionner le nombre d'unités que vous souhaitez former pour chaque profession.</French>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Wir können die folgenden Einheiten ausbilden. Legt die Anzahl der Einheiten fest, die in jedem Beruf ausgebildet werden sollen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_NO_SCHOOL_TEXT</Tag>
-        <English>%s1_city has no proper education system.</English>
+        <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]A proper education system is missing!</English>
         <French>%s1_city n'a pas d'infrastructure éducative.</French>
-        <German>%s1_city hat kein ausreichendes Ausbildungssystem.</German>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Es fehlt ein geeignetes Ausbildungssystem!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_RESET_ALL_TEXT</Tag>
-        <English>Reset All</English>
+        <English>Reset all</English>
         <French>Annuler tout</French>
         <German>Alles zurücksetzen</German>
     </TEXT>
@@ -519,27 +532,26 @@ Anzahl Einheiten festlegen, die für Beruf ausgebildet werden sollen.</German>
         <English>Repeat</English>
         <French>Répéter</French>
         <German>Wiederholen</German>
+        <Italian>Ripetere</Italian>
+        <Spanish>Repetir</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_POPUP_REPEAT_HELP</Tag>
-        <English>Orders a new unit automatically whenever no unit is trained.
-Multiple repeating units is possible and an equal number will be trained of each.</English>
-        <French>Commander une nouvelle unité automatiquement dès lors qu'aucune unité est en formation.
-Des répétitions multiples d'unités sont possibles et un nombre équivalent d'unités sera formé pour chaque catégorie.</French>
-        <German>Bildet eine weitere Einheit automatisch aus, wenn keine andere ausgebildet wird.
-Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
+        <English>Orders a new unit automatically whenever no unit is trained.[NEWLINE][NEWLINE]Multiple repeating units is possible and an equal number will be trained of each.</English>
+        <French>Commander une nouvelle unité automatiquement dès lors qu'aucune unité est en formation.[NEWLINE][NEWLINE]Des répétitions multiples d'unités sont possibles et un nombre équivalent d'unités sera formé pour chaque catégorie.</French>
+        <German>Bildet eine weitere Einheit automatisch aus, wenn gerade keine andere ausgebildet wird.[NEWLINE][NEWLINE]Mehrere sich wiederholende Einheiten sind möglich. Es wird jeweils eine gleichmässige Anzahl der verschiedenen Berufe ausgebildet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_TEACHER_LIST_NO_TEACHER</Tag>
-        <English>%s1_unit: no teacher</English>
-        <French>%s1_unit : pas de formateur</French>
-        <German>%s1_unit: kein Lehrer</German>
+        <English>%s1_unit : [COLOR_WARNING_TEXT]NO[COLOR_REVERT] teacher</English>
+        <French>%s1_unit : [COLOR_WARNING_TEXT]PAS[COLOR_REVERT] de formateur</French>
+        <German>%s1_unit : [COLOR_WARNING_TEXT]KEIN[COLOR_REVERT] Lehrer</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_CUSTOM_HOUSE</Tag>
-        <English>Custom House Popup Screen</English>
+        <English>Custom House Pop-up Screen</English>
         <French>Determiner les paramètres du poste de douane</French>
-        <German>Zollhaus Einstellungen</German>
+        <German>Zollhaus-Einstellungen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EDIT_CUSTOM_HOUSE_TEXT</Tag>
@@ -549,171 +561,317 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT</Tag>
-        <English>Choose goods to be sold by the Custom House, and select the mimimum amount of a specific yield to enable the Custom House to sell that amount in city %s1_city</English>
+        <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Choose goods to be sold by the local Custom House, and select mimimum amount of a specific yield to enable the Custom House to sell such yield here in this city.</English>
         <French>Sélectionner les biens que le poste de douane va vendre, ainsi que le seuil de marchandises qui déclenche la vente de celle-ci pour la colonie suivante: %s1_city</French>
-        <German>Wähle Güter, die auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle ab der das Zollhaus in %s1_city verkaufen soll.</German>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Wählen Sie die Güter aus, die durch das Zollhaus auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle, ab der das Zollhaus verkaufen darf.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT_NO_NEW_CAPACITY</Tag>
-        <English>New capacity not activated ! Settings will have no effect.</English>
+        <English>New capacity not activated! Settings will have no effect.</English>
         <French>La nouvelle capacité n'est pas activée ! Les paramètres n'auront aucun effet.</French>
-        <German>New Capacity nicht aktiviert ! Einstellungen haben keine Wirkung.</German>
+        <German>Neue Kapazität nicht aktiviert! Einstellungen haben keine Wirkung.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CUSTOM_HOUSE_NOT_BUILT_YET_POPUP_TEXT</Tag>
-        <English>You have not built a Custom House in %s1_city yet. Settings will be stored, but they will have no effect until you do build the Custom House.</English>
+        <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]You have not built a Custom House yet. Settings will be stored, but they will have no effect until you do build the Custom House.</English>
         <French>Vous n'avez pas encore de poste de douane à %s1_city. Les paramètres seront sauvegardés, mais ils n'auront aucun effet tant que vous n'aurez pas construit un poste de douane.</French>
-        <German>Es gibt noch kein Zollhaus in %s1_city. Einstellungen werden zwar gespeichert, sind aber noch nicht wirksam.</German>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Es gibt noch kein Zollhaus in der Stadt. Einstellungen werden zwar gespeichert, sind aber noch nicht wirksam.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_POPUP_NEVER_SELL</Tag>
         <English>Never Sell</English>
         <French>Ne jamais vendre</French>
         <German>Nicht verkaufen</German>
+        <Italian>Mai vendere</Italian>
+        <Spanish>Nunca Vender</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE</Tag>
-        <English>The custom house in %s3_city has sold %d1_number%F2_yield_icon for %d4[ICON_GOLD].</English>
-        <French>Le poste de douane de %s3_city a vendu %d1_number%F2_yield_icon pour %d4[ICON_GOLD].</French>
-        <German>Das Zollhaus in %s3_city hat %d1_number%F2_yield_icon für %d4[ICON_GOLD] verkauft.</German>
+        <English>%s3_city : The custom house has sold %d1_number%F2_yield_icon for %d4[ICON_GOLD].</English>
+        <French>%s3_city : Le poste de douane a vendu %d1_number%F2_yield_icon pour %d4[ICON_GOLD].</French>
+        <German>%s3_city : Das Zollhaus hat %d1_number%F2_yield_icon für %d4[ICON_GOLD] verkauft.</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE</Tag>
+        <English>%s1_city : The Custom House has sold goods for %d2[ICON_GOLD].</English>
+        <French>%s1_city : Le poste de douane a vendu des biens pour une valeur de %d2[ICON_GOLD].</French>
+        <German>%s1_city : Das Zollhaus hat Waren im Wert von %d2[ICON_GOLD] verkauft.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVES_NOT_WILLING_TO_TALK</Tag>
-        <English>Sire, the Natives in %s1_city are no longer willing to talk with us. Angry faces stare back at our men. [NEWLINE] We should return once our relations have improved.</English>
-        <French>Sir, les indigènes de %s1_city ne veulent pas nous parler. Des visages en colère fixent nos hommes du regard. [NEWLINE] Nous devrions revenir lorsque nos relations se seront améliorés.</French>
-        <German>Sire, die Wilden in %s1_city weigern sich mit uns zu sprechen. Lediglich wütende Gesicher begegnen uns. [NEWLINE] Wir sollten zurückkehren, wenn die Beziehungen sich wieder gebessert haben.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_WORLDBUILDER_RAR_AMERAYCA</Tag>
-        <English>Religion and Revolution (Gigantic): Optimized for playing Religion and Revolution. Not geographically or historically correct. Extremely big.</English>
-        <French>Religion and Revolution (Gigantesque): Optimisée pour jouer à Religion and Revolution. Ni géographiquement, ni historiquement correcte. Extrêmement grande.</French>
-        <German>Religion and Revolution (Gigantic): Optimized for playing Religion and Revolution. Not geographically or historically corret. Extremely big.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD</Tag>
-        <English>Religion and Revolution (Gigantic): Geographically correct map of the New World. Extremely big.</English>
-        <French>Religion and Revolution (Gigantesque): Carte géographiquement correcte des Amériques. Extrêmement grande.</French>
-        <German>Religion and Revolution (Gigantic): Geographically correct map of the New World. Extremely big.</German>
+        <English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] are no longer willing to talk with us. Angry faces stare back at our men.[NEWLINE]We should return once our relations have improved.</English>
+        <French>Sir, les indigènes de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ne veulent pas nous parler. Des visages en colère fixent nos hommes du regard.[NEWLINE]Nous devrions revenir lorsque nos relations se seront améliorés.</French>
+        <German>Milord, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] weigern sich, mit uns zu sprechen. Lediglich wütende Gesicher starren uns an.[NEWLINE]Wir sollten zurückkehren, wenn die Beziehungen sich wieder gebessert haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_NOT_FOUND_CITY</Tag>
-        <English>[ICON_BULLET]Cannot Found a New Settlement</English>
+        <English>[ICON_BULLET]Can not found a new settlement</English>
         <French>[ICON_BULLET]Ne peut pas fonder une nouvelle colonie</French>
         <German>[ICON_BULLET]Kann keine neue Siedlung gründen</German>
+        <Italian>[ICON_BULLET]Può fondare un nuovo insediamento</Italian>
+        <Spanish>[ICON_BULLET]Puede fundar un nuevo asentamiento</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET</Tag>
         <English>Domestic Market</English>
         <French>Marché intérieur</French>
-        <German>Heimischer Markt</German>
+        <German>Lokaler Markt</German>
+        <Italian>Domestic Market</Italian>
+        <Spanish>Mercado Interior</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_DEMAND</Tag>
         <English>Demand</English>
         <French>Demande</French>
         <German>Bedarf</German>
+        <Italian>Domanda</Italian>
+        <Spanish>Demanda</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_PRICE</Tag>
         <English>Price</English>
         <French>Prix</French>
         <German>Preis</German>
+        <Italian>Prezzo</Italian>
+        <Spanish>Precio</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_POPUP</Tag>
-        <English>Domestic Market (%s1_city)</English>
-        <French>Marché intérieur (%s1_city)</French>
-        <German>Heimischer Markt (%s1_city)</German>
+        <English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Domestic Market :</English>
+        <French>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Marché intérieur :</French>
+        <German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Lokaler Markt :</German>
+        <Italian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Mercato domestico :</Italian>
+        <Spanish>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Mercado Interior :</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STORED</Tag>
         <English>Stored</English>
         <French>En stock</French>
         <German>Lager</German>
+        <Italian>Stored</Italian>
+        <Spanish>Stored</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_FROM_HANDICAP</Tag>
-        <English>%D1 from Difficulty Level</English>
+        <English>%D1: (Difficulty Level)</English>
         <French>%D1: (niveau de difficulté)</French>
-        <German>%D1 durch Schwierigkeitsgrad</German>
+        <German>%D1: (Schwierigkeitsgrad)</German>
+        <Italian>%D1 per il livello di difficoltà</Italian>
+        <Spanish>%D1 por nivel de dificultad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_BASE_ATTITUDE</Tag>
+        <English>%D1: (Base Attitude)</English>
+        <French>%D1: (Attitude de base)</French>
+        <German>%D1: (Grundhaltung)</German>
+        <Italian>%D1: (atteggiamento iniziali)</Italian>
+        <Spanish>%D1: (actitud base)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_TOTAL_ATTITUDE</Tag>
+        <English>%D1: (Total Attitude)</English>
+        <French>%D1: (Attitude totale)</French>
+        <German>%D1: (Gesamthaltung)</German>
+        <Italian>%D1: (Total Attitude)</Italian>
+        <Spanish>%D1: (Total Attitude)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_LAND_TARGET</Tag>
+        <English>%D1: "Our close borders spark tensions."</English>
+        <French>%D1 : "Il y a des tensions le long de nos frontières."</French>
+        <German>%D1: "Eure Kolonien liegen bedrohlich nahe an unseren."</German>
+        <Italian>%D1: "C'è della tensione al confine."</Italian>
+        <Spanish>%D1: "Nuestras fronteras cerradas suscitan tensiones."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_WAR</Tag>
+        <English>%D1: "This war spoils our relationship."</English>
+        <French>%D1 : "Cette guerre nuit à nos relations."</French>
+        <German>%D1: "Dieser Krieg beeinträchtigt unsere Beziehungen!"</German>
+        <Italian>%D1: "Questa guerra rovina i nostri rapporti."</Italian>
+        <Spanish>%D1: "Esta guerra echa por tierra nuestras relaciones."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_PEACE</Tag>
+        <English>%D1: "Years of peace have strengthened our relations."</English>
+        <French>%D1 : "Des années de paix ont renforcé nos relations."</French>
+        <German>%D1: "Jahre des Friedens haben unsere Beziehungen gestärkt."</German>
+        <Italian>%D1: "I molti anni di pace hanno rinsaldato i nostri rapporti."</Italian>
+        <Spanish>%D1: "Años de paz han fortalecido nuestras relaciones."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_OPEN_BORDERS</Tag>
+        <English>%D1: "Our open borders have brought our people close together."</English>
+        <French>%D1 : "Le libre passage a rapproché nos deux peuples."</French>
+        <German>%D1: "Die Öffnung unserer Grenzen hat unsere Völker näher gebracht."</German>
+        <Italian>%D1: "Il nostro accordo di diritto di passaggio ha permesso ai nostri popoli di avvicinarsi"</Italian>
+        <Spanish>%D1: "La apertura de fronteras ha acercado más a nuestros pueblos."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_DEFENSIVE_PACT</Tag>
+        <English>%D1: "Our Defensive Pact proves that we are close friends."</English>
+        <French>%D1 : "Notre pacte de défense prouve la solidité de notre amitié."</French>
+        <German>%D1: "Unser Verteidigungsbündnis unterstreicht unsere freundschaftliche Verbundenheit."</German>
+        <Italian>%D1: "La nostra alleanza difensiva dimostra che siamo buoni amici."</Italian>
+        <Spanish>%D1: "Nuestro acuerdo de protección demuestra que somos muy amigos."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_DEFENSIVE_PACT</Tag>
+        <English>%D1: "We are upset that you have signed Defensive Pacts with our rivals."</English>
+        <French>%D1 : "Nous sommes contrariés d'apprendre que vous avez signé un pacte de défense avec nos ennemis."</French>
+        <German>%D1: "Wir schätzen es gar nicht, dass Ihr Verteidigungsbündnisse mit unseren Gegnern schließt!"</German>
+        <Italian>%D1: "Siamo sconvolti dal fatto che tu abbia firmato alleanze difensive con i nostri rivali."</Italian>
+        <Spanish>%D1: "Nos trastorna que hayáis firmado acuerdos de protección con nuestros rivales."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_SHARE_WAR</Tag>
+        <English>%D1: "Our mutual military struggle brings us closer together."</English>
+        <French>%D1 : "Notre engagement militaire commun nous rapproche."</French>
+        <German>%D1: "Unsere gemeinsamen militärischen Aktivitäten schweißen uns enger zusammen."</German>
+        <Italian>%D1: "I nostri reciproci aiuti militari ci rendono molto vicini l'un l'altro."</Italian>
+        <Spanish>%D1: "Nuestra mutua lucha militar nos acerca más."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_TRADE</Tag>
+        <English>%D1: "Our trade relations are gratifying."</English>
+        <French>%D1 : "Nos relations commerciales ont toujours été loyales et honnêtes."</French>
+        <German>%D1: "Unsere Handelsbeziehungen sind erfreulich."</German>
+        <Italian>%D1: "I nostri rapporti commerciali sono stati equi e onesti."</Italian>
+        <Spanish>%D1: "Nuestras relaciones comerciales han sido buenas y leales."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_TRADE</Tag>
+        <English>%D1: "You have traded with our worst enemies!"</English>
+        <French>%D1 : "Vous avez commercé avec nos ennemis jurés !"</French>
+        <German>%D1: "Ihr habt mit unseren Feinden Handel betrieben!"</German>
+        <Italian>%D1: "Hai commerciato con i nostri peggior nemici!"</Italian>
+        <Spanish>%D1: "¡Habéis comerciado con nuestros peores enemigos!"</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_MEMORY</Tag>
+        <English>%D1: %s2</English>
+        <French>%D1 : %s2</French>
+        <German>%D1: %s2</German>
+        <Italian>%D1: %s2</Italian>
+        <Spanish>%D1: %s2</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_STOLEN_LAND</Tag>
+        <English>%D1: "You have stolen our land!"</English>
+        <French>%D1: "Vous avez volé nos terres!"</French>
+        <German>%D1: "Ihr habt uns unser Land geraubt!"</German>
+        <Italian>%D1: "Hai rubato la nostra terra!"</Italian>
+        <Spanish>%D1: "¡Nos habéis arrebatado nuestra tierra!"</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_ALARM</Tag>
+        <English>%D1: "Your way of life is threatening to ours."</English>
+        <French>%D1 : "Votre mode de vie est une menace pour le nôtre."</French>
+        <German>%D1: "Eure Lebensweise ist eine Gefahr für uns."</German>
+        <Italian>%D1: "Il tuo stile di vita è una minaccia per il nostro".</Italian>
+        <Spanish>%D1: "Vuestro modo de vida amenaza el nuestro."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_NATIVE_ATTITUDE</Tag>
+        <English>%D1: "Your strange customs intrigue us."</English>
+        <French>%D1: "Vos coutumes nous intriguent."</French>
+        <German>%D1: "Eure seltsamen Sitten verwirren uns."</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_EXTRA_GOOD</Tag>
+        <English>%D1: "Past events have brought our people together."</English>
+        <French>%D1 : "Les événements passés prouvent qu'on peut vous faire confiance."</French>
+        <German>%D1: "Die vergangenen Ereignisse haben Eure guten Absichten bewiesen."</German>
+        <Italian>%D1: "Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
+        <Spanish>%D1: "Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_EXTRA_BAD</Tag>
+        <English>%D1: "Past events have driven our people apart."</English>
+        <French>%D1 : "Les événements passés prouvent qu'on ne peut vous faire confiance."</French>
+        <German>%D1: "Die vergangenen Ereignisse haben Eure schlechten Absichten bewiesen. "</German>
+        <Italian>%D1: "Gli eventi passati ci hanno dimostrato la tua natura malvagia."</Italian>
+        <Spanish>%D1: "Los acontecimientos pasados nos han demostrado vuestra maldad. "</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_LOST_WAR_ATTITUDE</Tag>
+        <English>%D1: "We lost a war against you."</English>
+        <French>%D1: "Nous avons perdu une guerre contre vous."</French>
+        <German>%D1: "Wir haben einen Krieg gegen Euch verloren."</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_TEAMSIZE_ATTITUDE</Tag>
+        <English>%D1: "You have too many allies." </English>
+        <French>%D1: "Vous avez trop d'alliés."</French>
+        <German>%D1: "Ihr habt zu viele Verbündete."</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_SAME_TEAM</Tag>
+        <English>%D1: "We're allies." </English>
+        <French>%D1: "Nous sommes alliés."</French>
+        <German>%D1: "Wir sind Verbündete."</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_SAME_RELIGION</Tag>
         <English>%D1: "We care for our brothers and sisters of the faith."</English>
         <French>%D1: "Nous nous préoccupons de ceux qui partagent notre foi."</French>
         <German>%D1: "Wir stehen zu unseren Glaubensbrüdern und -schwestern."</German>
+        <Italian>%D1: "Ci preoccupiamo dei nostri fratelli e delle nostre sorelle."</Italian>
+        <Spanish>%D1: "Nos preocupamos por nuestros hermanos y hermanas de fe."</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MISC_ATTITUDE_DIFFERENT_RELIGION</Tag>
-        <English>%D1: "We are upset that you have fallen under the sway of a heathen religion."</English>
-        <French>%D1: "Votre conversion à une religion païenne nous a profondément contrariés."</French>
+        <English>%D1: "We are upset that you have fallen under the sway of a heathen religion!"</English>
+        <French>%D1: "Votre conversion à une religion païenne nous a profondément contrariés !"</French>
         <German>%D1: "Wir sind entsetzt, dass Ihr in die Fänge einer heidnischen Religion geraten seid!"</German>
+        <Italian>%D1: "Siamo amareggiati del fatto che siate caduti schiavi di una religione empia."</Italian>
+        <Spanish>%D1: "Nos trastorna que hayáis caído bajo el influjo de una religión infiel."</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_ATTITUDE_REBEL</Tag>
+        <English>%D1: "The potential for rebellion is growing in the colonies!"</English>
+        <French>%D1 : "Vous commencez à devenir un poids pour mon armée."</French>
+        <German>%D1: "In den Kolonien wächst das Potential zur Rebellion!"</German>
+        <Italian>%D1: "Stai diventando un salasso, per il mio esercito".</Italian>
+        <Spanish>%D1: "Sois una sanguijuela de efectivos militares."</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WB_AI_ATTITUDE_Modifie_A_supprimer</Tag>
         <English>AI Attitude Weight</English>
         <French>Poids attitude IA</French>
         <German>Gewichtung KI-Haltung</German>
+        <Italian>Peso dell'atteggiamento dell'IA</Italian>
+        <Spanish>Peso de la actitud de la IA</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ADVANCED_START_POINTS_Modifie_A_supprimer</Tag>
-        <English>Advanced Start Base Points:</English>
+        <English>Advanced Start Base Points :</English>
         <French>Points de base du démarrage avancé :</French>
-        <German>Basispunkte für Fortgeschrittenen Start:</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_BASE_ATTITUDE</Tag>
-        <English>%D1: (Base Attitude) </English>
-        <French>%D1: (Attitude de base)</French>
-        <German>%D1: (Grundhaltung)</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_TOTAL_ATTITUDE</Tag>
-        <English>%D1: (Total Attitude) </English>
-        <French>%D1: (Attitude totale)</French>
-        <German>%D1: (Gesamthaltung)</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_NATIVE_ATTITUDE</Tag>
-        <English>%D1: "Your strange customs intrigue us."</English>
-        <French>%D1: "Vos coutumes nous intriguent"</French>
-        <German>%D1: "Eure seltsamen Sitten verwirren uns"</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_LOST_WAR_ATTITUDE</Tag>
-        <English>%D1: (Lost War Attitude) </English>
-        <French>%D1: "Nous avons perdu une guerre contre vous"</French>
-        <German>%D1: (Verlorene Kriege Haltung)</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_TEAMSIZE_ATTITUDE</Tag>
-        <English>%D1: "You have too many allies." </English>
-        <French>%D1: "Vous avez trop d'alliés"</French>
-        <German>%D1: "Ihr habt zu viele Verbündete"</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MISC_ATTITUDE_SAME_TEAM</Tag>
-        <English>%D1: "We're allies." </English>
-        <French>%D1: "Nous sommes alliés"</French>
-        <German>%D1: "Wir sind Verbündete"</German>
+        <German>Basispunkte für Fortgeschrittenen Start :</German>
+        <Italian>Punti iniziali Avvio avanzato :</Italian>
+        <Spanish>Puntos base del Inicio avanzado :</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_TAX_BAR</Tag>
-        <English>Yields traded (%d1/%d2%F3) [NEWLINE]Tax increase chance: %d4.%d5 % </English>
+        <English>Yields of goods sold in Europe and Africa (only 10% are taken into account) : %d1/%d2%F3[NEWLINE][NEWLINE]There is a [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] chance that His Majesty will raise your taxes on the next turn.</English>
         <French>Marchandises vendues (%d1/%d2%F3)[NEWLINE]Il y a %d4.%d5 % de chance que le roi augmente les impôts au tour suivant.</French>
-        <German>Güter gehandelt (%d1/%d2%F3) [NEWLINE]Chance auf Steuererhöhung: %d4.%d5 %</German>
+        <German>Erträge aus dem Verkauf von Gütern in Europe and Africa (nur 10% werden dabei berücksichtigt) : (%d1/%d2%F3)[NEWLINE][NEWLINE]Es besteht eine [COLOR_WARNING_TEXT]%d4.%d5%[COLOR_REVERT] Chance darauf, daß Seine Majestät Eure Steuern im nächsten Zug erhöht.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CURRENT_ERA</Tag>
-        <English>[COLOR_FONT_CREAM]Era:[COLOR_REVERT] %s1[NEWLINE]</English>
-        <French>[COLOR_FONT_CREAM]Époque :[COLOR_REVERT] %s1[NEWLINE]</French>
-        <German>[COLOR_FONT_CREAM]Zeitalter:[COLOR_REVERT] %s1[NEWLINE]</German>
+        <English>[COLOR_FONT_CREAM]Era : [COLOR_REVERT]%s1[NEWLINE]</English>
+        <French>[COLOR_FONT_CREAM]Époque : [COLOR_REVERT]%s1[NEWLINE]</French>
+        <German>[COLOR_FONT_CREAM]Zeitalter : [COLOR_REVERT]%s1[NEWLINE]</German>
+        <Italian>[COLOR_FONT_CREAM]Era : [COLOR_REVERT]%s1[NEWLINE]</Italian>
+        <Spanish>[COLOR_FONT_CREAM]Época : [COLOR_REVERT]%s1[NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_STRING</Tag>
         <English>%s1</English>
         <French>%s1</French>
         <German>%s1</German>
+        <Italian>%s1</Italian>
+        <Spanish>%s1</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_NATIVE</Tag>
@@ -724,26 +882,34 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
     <TEXT>
         <Tag>TXT_KEY_GROWTH</Tag>
         <English>%d1/%d2 (+ %d3)</English>
-        <French>&gt;%d1/%d2 (+ %d3)</French>
+        <French>%d1/%d2 (+ %d3)</French>
         <German>%d1/%d2 (+ %d3)</German>
+        <Italian>%d1/%d2 (+ %d3)</Italian>
+        <Spanish>%d1/%d2 (+ %d3)</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NUMBER</Tag>
         <English>%d1</English>
         <French>%d1</French>
         <German>%d1</German>
+        <Italian>%d1</Italian>
+        <Spanish>%d1</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PLOT_DAMAGE</Tag>
-        <English>Damage per Turn: %d1_Amt%%</English>
+        <English>Damage per Turn : %d1_Amt%%</English>
         <French>Dégâts par tour : %d1_Amt%%</French>
-        <German>Schaden pro Runde: %d1_Amt%%</German>
+        <German>Schaden pro Runde : %d1_Amt%%</German>
+        <Italian>Danno per turno : %d1_Amt%%</Italian>
+        <Spanish>Daño por turno : %d1_Amt%%</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FEATURE_MOVEMENT_COST</Tag>
-        <English>Movement Cost: %d1[ICON_MOVES]</English>
+        <English>Movement Cost : %d1[ICON_MOVES]</English>
         <French>Coût du mouvement : %d1[ICON_MOVES]</French>
-        <German>Fortbewegungskosten: %d1[ICON_MOVES]</German>
+        <German>Fortbewegungskosten : %d1[ICON_MOVES]</German>
+        <Italian>Costo movimento : %d1[ICON_MOVES]</Italian>
+        <Spanish>Coste del movimiento : %d1 [ICON_MOVES]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_ADVISOR_WAREHOUSE</Tag>
@@ -758,42 +924,30 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
             <Gender>Neuter</Gender>
             <Plural>0:1</Plural>
         </German>
+        <Italian>
+            <Text>Magazzino</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Almacén:Almacenes</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_TRADE_FINISHED</Tag>
-        <English>The Natives delivered the promised amount of %d1_yield_amount%F3_yield_icon to %s2_city.</English>
-        <French>Les indigènes ont livré le montant convenu de %d1_yield_amount%F3_yield_icon à %s2_city.</French>
-        <German>Die Ureinwohner haben die versprochenen %d1_yield_amount%F3_yield_icon nach %s2_city geliefert.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_GOOD</Tag>
-        <English>[ICON_BULLET]Strengthens relations and ends all wars with Europeans.</English>
-        <French>[ICON_BULLET]Renforce les relations et achève les guerres avec les européens.</French>
-        <German>[ICON_BULLET]Stärkt Beziehungen und beendet alle Kriege mit Europäern.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_BAD</Tag>
-        <English>[ICON_BULLET]Weakens relations with Europeans.</English>
-        <French>[ICON_BULLET]Affaiblit les relations avec les européens.</French>
-        <German>[ICON_BULLET]Schwächt Beziehungen zu Europäern.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_KING_ATTITUDE_GOOD</Tag>
-        <English>[ICON_BULLET]Strengthens relations with kings.</English>
-        <French>[ICON_BULLET]Renforce les relations avec le Roi.</French>
-        <German>[ICON_BULLET]Stärkt Beziehungen mit Königen.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_KING_ATTITUDE_BAD</Tag>
-        <English>[ICON_BULLET]Weakens relations with kings.</English>
-        <French>[ICON_BULLET]Affaiblit les relations avec le Roi.</French>
-        <German>[ICON_BULLET]Schwächt Beziehungen mit Königen.</German>
+        <English>Milord, the Natives delivered the promised amount of %d1_yield_amount%F3_yield_icon to [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
+        <French>Les indigènes ont livré le montant convenu de %d1_yield_amount%F3_yield_icon à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
+        <German>Milord, die Ureinwohner haben die versprochenen %d1_yield_amount%F3_yield_icon nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geliefert.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_REQUIRES_RIVER</Tag>
         <English>[COLOR_WARNING_TEXT]Requires[COLOR_REVERT] river</English>
         <French>[COLOR_WARNING_TEXT]Nécessite[COLOR_REVERT] un fleuve</French>
         <German>[COLOR_WARNING_TEXT]Erfordert[COLOR_REVERT] einen Fluss</German>
+        <Italian>[COLOR_WARNING_TEXT]Richiede[COLOR_REVERT] un fiume</Italian>
+        <Spanish>[COLOR_WARNING_TEXT]Requiere[COLOR_REVERT] un río</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMMAND_TAKE_TRAIN</Tag>
@@ -805,85 +959,21 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
         <Tag>TXT_KEY_COMMAND_TAKE_TRAIN_HELP</Tag>
         <English>The carriage will load this unit</English>
         <French>Le convoyeur va charger cette unité</French>
-        <German>Die Einheit wird im Frachtraum des Fuhrwerks verladen</German>
+        <German>Die Einheit wird auf Ladefläche des Fuhrwerks verladen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TRAVEL_RAILROAD_ONLY</Tag>
-        <English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires plastered country roads[COLOR_REVERT] to travel.</English>
-        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager.</French>
-        <German>[ICON_BULLET][COLOR_WARNING_TEXT]Erfordert gepflasterte Landstraße[COLOR_REVERT]  um fahren zu können.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
-        <English>You have discovered a runaway slave from a Native tribe.</English>
-        <French>Vous avez découvert un esclave fuyant une tribu indigène !</French>
-        <German>Ihr habt einen Ureinwohnersklaven entdeckt, der von seinem Stamm geflohen ist!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
-        <English>You have discovered a proud Native warrior who offers to join you!</English>
-        <French>Vous avez découvert un fier guerrier indigène qui propose de vous rejoindre !</French>
-        <German>Ihr habt einen stolzen Ureinwohnerkrieger entdeckt, der sich euch anschliesst!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_COLONIST</Tag>
-        <English>You have discovered a lost colonist from an earlier colony that failed!</English>
-        <French>Vous avez découvert un colon perdu d'une ancienne colonie !</French>
-        <German>Ihr habt einen verlorenen Kolonisten einer gescheiterten Kolonie entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
-        <English>You have discovered a lost conquistador who was separated from his fellows!</English>
-        <French>Vous avez découvert un conquistador perdu abandonné par les siens !</French>
-        <German>Ihr habt einen Conquistador entdeckt, der von seiner Truppe getrennt wurde!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
-        <English>You have discovered a lost missionary!</English>
-        <French>Vous avez découvert un missionnaire perdu !</French>
-        <German>Ihr habt einen verlaufenen Missionar entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
-        <English>You've discovered a survivor from a shipwreck!</English>
-        <French>Vous avez découvert les survivants d'un nauffrage !</French>
-        <German>Ihr habt einen Überlebenden eines Schiffsunglücks entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD_SEA</Tag>
-        <English>You have discovered gold in a shipwreck.</English>
-        <French>Vous avez découvert de l'or dans l'épave !</French>
-        <German>Ihr habt etwas Gold in den Überresten eines verunglückten Schiffes entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP_SEA</Tag>
-        <English>You have discovered a map in a shipwreck.</English>
-        <French>Vous avez découvert une carte dans l'épave !</French>
-        <German>Ihr habt eine Karte in den den Überresten eines verunglückten Schiffes entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE_SEA</Tag>
-        <English>The crew of your ship has gained some experience!</English>
-        <French>L'équipage de votre navire a gagné de l'expérience !</French>
-        <German>Die Crew eures Schiffes hat etwas Erfahrung gewonnen!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE</Tag>
-        <English>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</English>
-        <French>Le poste de douane de %s1_city a vendu des biens pour une valeur de %d2[ICON_GOLD].</French>
-        <German>Das Zollhaus von %s1_city hat Waren im Wert von %d2[ICON_GOLD] verkauft.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
-        <English>[ICON_BULLET]Native to %s1_Desc Terrain</English>
-        <French>[ICON_BULLET]Apparaît dans %s1_Desc</French>
-        <German>[ICON_BULLET]Native to %s1_Desc Terrain</German>
+        <English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] to travel</English>
+        <French>[ICON_BULLET][COLOR_WARNING_TEXT]Nécessite une route pavée[COLOR_REVERT] pour voyager</French>
+        <German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL</Tag>
         <English>[ICON_BULLET]Wild Animal</English>
         <French>[ICON_BULLET]Animal sauvage</French>
         <German>[ICON_BULLET]Wildes Tier</German>
+        <Italian>[ICON_BULLET]Wild Animal</Italian>
+        <Spanish>[ICON_BULLET]Wild Animal</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANIMAL_CANNOT_ENTER_PLAYER_TERRITORY</Tag>
@@ -895,25 +985,25 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
         <Tag>TXT_KEY_UNIT_ANIMAL_KILLING_REWARD</Tag>
         <English>[ICON_BULLET]Small reward when killed</English>
         <French>[ICON_BULLET]Offre des petites récompenses lorsqu'il est abattu</French>
-        <German>[ICON_BULLET]Kleine Belohung durch Tötung</German>
+        <German>[ICON_BULLET]Kleine Belohung für Tötung</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_TERRAIN_NATIVE</Tag>
-        <English>[ICON_BULLET]Native to %s1_Desc Terrain</English>
+        <English>[ICON_BULLET]Native to %s1_Desc terrain</English>
         <French>[ICON_BULLET]Indigène vers le terrain %s1_Desc</French>
-        <German>[ICON_BULLET]Beheimatet auf %s1_Desc Terrain</German>
+        <German>[ICON_BULLET]Heimisch auf %s1_Desc Terrain</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ANIMAL_REWARD</Tag>
-        <English>Once cleaned and dressed the %s1_animal you killed is worth %d2[ICON_GOLD] !</English>
+        <English>[COLOR_POSITIVE_TEXT]Successful hunting! [COLOR_REVERT]Once cleaned and dressed the %s1_animal you killed is worth %d2[ICON_GOLD]!</English>
         <French>Les restes de l'animal tué (%s1_animal) vous rapportent %d2[ICON_GOLD] !</French>
-        <German>Die Körperteile des getöteten %s1_animal sind %d2[ICON_GOLD] wert !</German>
+        <German>[COLOR_POSITIVE_TEXT]Erfolgreiche Jagd! [COLOR_REVERT]Die Körperteile [NUM1:des:der] getöteten [COLOR_UNIT_TEXT]%s1_animal[COLOR_REVERT] sind %d2[ICON_GOLD] wert!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ANIMALS_SPOTTED</Tag>
-        <English>Wild animals have been spotted near %s1_CityName!</English>
+        <English>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Wild animals have been spotted nearby!</English>
         <French>Des animaux sauvages ont été repérés près de %s1_CityName!</French>
-        <German>Ein Kundschafter meldet wilde Tiere in der Nähe von %s1_CityName.</German>
+        <German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Ein Kundschafter meldet wilde Tiere in der Nähe!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ANACONDA</Tag>
@@ -928,6 +1018,16 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </German>
+        <Italian>
+            <Text>Anaconda</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Anaconda</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
@@ -937,123 +1037,105 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_BUILDING_NATIONAL_WONDER</Tag>
-        <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]National Wonder[COLOR_REVERT]</English>
-        <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Merveille nationale[COLOR_REVERT]</French>
-        <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Nationales Wunder[COLOR_REVERT]</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_EL_DORADO</Tag>
-        <English>Rumours are spreading throughout Europe that you discovered the mythical city of El Dorado!</English>
-        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique El Dorado !</French>
-        <German>Gerüchte breiten sich in Europa aus, dass ihr die mystische Stadt El Dorado gefunden habt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
-        <English>In Europe there are rumours you've found a map showing the mythical Fountain of Youth!</English>
-        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé la mythique Fontaine de Jouvence !</French>
-        <German>Gerüchte breiten sich in Europa aus, dass ihr den mystischen Jungbrunnen gefunden habt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_PIRATE_TREASURE</Tag>
-        <English>In Europe rumours are spreading that you found a map to a huge pirate treasure!</English>
-        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique trésor de Barbe Noire !</French>
-        <German>Gerüchte breiten sich in Europa aus, dass ihr eine Karte zu einem riesigen Piratenschatz gefunden habt!</German>
+        <English>[ICON_BULLET][COLOR_CYAN]National Wonder[COLOR_REVERT]</English>
+        <French>[ICON_BULLET][COLOR_CYAN]Merveille nationale[COLOR_REVERT]</French>
+        <German>[ICON_BULLET][COLOR_CYAN]Nationales Wunder[COLOR_REVERT]</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_FEATURES</Tag>
         <English>[ICON_BULLET]Protects an area against raiding Natives, wild animals and other enemies.</English>
         <French>[ICON_BULLET]Protège une zone des raids indigènes, des animaux sauvages et d'autres ennemies.</French>
-        <German>[ICON_BULLET]Schützt ein Gebiet gegen Ureinwohnerüberfälle, Wilde Tiere und andere Gegner.</German>
+        <German>[ICON_BULLET]Schützt ein Gebiet vor Überfallen der Ureinwohner, Wilden Tiere und anderen Gegnern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES</Tag>
         <English>[ICON_BULLET]Might convert nearby Natives or convince them to bring gifts to your cities.</English>
         <French>[ICON_BULLET]permet de convertir des indigènes de passage et de les convaincre d'apporter des présents dans vos villes.</French>
-        <German>[ICON_BULLET]Kann in manchen Fällen Ureinwohner konvertieren oder sie überzeugen Geschenke zu liefern.</German>
+        <German>[ICON_BULLET]Kann in manchen Fällen Ureinwohner überzeugen, zu konvertieren oder Geschenke zu bringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT</Tag>
-        <English>Your fort was attacked by marauding Natives.</English>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Your Fort was attacked by marauding Natives.</English>
         <French>Votre fort a été attaqué par des indigènes lors d'un raid.</French>
-        <German>Euer Fort wurde durch einen Ureinwohnerüberfall angegriffen.</German>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Unser Fort wurde durch Ureinwohner überfallen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_NATIVE_RAID_ATTACKED_FORT_BUT_DEFEATED</Tag>
-        <English>Troops in your fort defeated Natives out on a raid.</English>
+        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The Troops in your fort defeated some Natives out on a raid.</English>
         <French>Les troupes de votre fort ont été vaincues par des indigènes lors d'un raid.</French>
-        <German>Euer Fort hat einen Ureinwohnerüberfall abgewehrt.</German>
+        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Die Besatzung eures Forts hat einen Überfall der Ureinwohner abgewehrt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_DESTROYED_GOOD</Tag>
-        <English>Our fort has fired at enemy troops and eliminated them!</English>
+        <English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]Our fort has fired at enemy troops and eliminated them!</English>
         <French>Un fort a tiré sur des troupes ennemies et les a détruites !</French>
-        <German>Ein Fort hat auf feindliche Truppen gefeuert und diese vernichtet!</German>
+        <German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Unser Fort hat auf feindliche Truppen gefeuert und diese vernichtet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_DESTROYED_BAD</Tag>
-        <English>A fort has fired at our troops and massacred them!</English>
+        <English>[COLOR_WARNING_TEXT]Defeat, Milord! [COLOR_REVERT]A fort has fired at our troops and massacred them!</English>
         <French>Un fort a tiré sur nos troupes et les a détruites !</French>
-        <German>Ein Fort hat auf unsere Truppen gefeuert und diese vernichtet!</German>
+        <German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Ein Fort hat auf unsere Truppen gefeuert und sie massakriert!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_HIT_LAND_GOOD</Tag>
-        <English>Our fort fired at enemy troops causing serious casualties!</English>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Our fort fired at enemy troops causing serious casualties!</English>
         <French>Un fort a tiré sur des troupes ennemies et les a endommagées !</French>
-        <German>Ein Fort hat auf feindliche Truppen gefeuert und diesen Schaden zugefügt!</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Unser Fort hat auf feindliche Truppen gefeuert und diesen Verluste zugefügt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_HIT_LAND_BAD</Tag>
-        <English>A fort has fired at our troops. We've suffered some casualties.</English>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]A fort has fired at our troops. We've suffered some casualties.</English>
         <French>Un fort a tiré sur vos troupes et les a endommagées !</French>
-        <German>Ein Fort hat auf unsere Truppen gefeuert und diesen Schaden zugefügt!</German>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Ein Fort hat auf unsere Truppen gefeuert und diesen Verluste zugefügt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_MISS_LAND_BAD</Tag>
-        <English>Our fort fired at enemy troops without effect.</English>
+        <English>[COLOR_WARNING_TEXT]Bad news, Milord! [COLOR_REVERT]Our fort fired at enemy troops without effect.</English>
         <French>Un fort a tiré sur des troupes ennemies, mais les a manquées !</French>
-        <German>Ein Fort hat auf feindliche Truppen gefeuert, diese jedoch verfehlt!</German>
+        <German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Unser Fort hat auf feindliche Truppen gefeuert, diesen aber anscheinend keine Verluste beigebracht!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_MISS_LAND_GOOD</Tag>
-        <English>A fort fired at our troops but we had no casualties.</English>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]A fort fired at our troops but we had no casualties.</English>
         <French>Un fort a tiré sur vos troupes, mais les a manquées !</French>
-        <German>Ein Fort hat auf unsere Truppen gefeuert, diese jedoch verfehlt!</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ein Fort hat auf unsere Truppen gefeuert, diesen aber keine Verluste beigebracht!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_FORT_IMPROVEMENT_KILLED_ANIMAL</Tag>
-        <English>Troops in a fort killed a dangerous animal that got inside! The remains are worth %d1[ICON_GOLD]!</English>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]The troops in a fort killed a dangerous animal that got inside! The remains are worth %d1[ICON_GOLD]!</English>
         <French>Les troupes en garde dans un fort ont tué un animal errant ! Ses restes ont été vendus pour %d1[ICON_GOLD]!</French>
-        <German>Die Truppen eines Forts haben ein herumwanderndes Tier getötet, dessen Körperteile %d2[ICON_GOLD] wert sind !</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Die Besatzung eines Forts hat ein herumwanderndes Tier getötet, dessen Körperteile %d2[ICON_GOLD] wert sind!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_APEASED_RAIDING_NATIVE</Tag>
-        <English>A monastery successfully deterred some young Natives from a raid!</English>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]A monastery successfully deterred some young Natives from a raid!</English>
         <French>Un monastère a calmé avec succès des jeunes indigènes partis pour un raid !</French>
-        <German>Ein Kolster hat erfolgreich eine Ureinwohner auf einem Raubzug befriedet.</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ein Kloster hat erfolgreich einen Ureinwohner von einem Raubzug abgehalten!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_GOT_PRESENT</Tag>
-        <English>Natives brought a monastery gifts worth %d1[ICON_GOLD]!</English>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]Natives brought a monastery gifts worth %d1[ICON_GOLD]!</English>
         <French>Des indigènes ont apportés des présents dans un monastère pour une valeur de %d1[ICON_GOLD]!</French>
-        <German>Ureinwohner haben einem Kloster Geschenke im Wert von %d1[ICON_GOLD] gebracht!</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ureinwohner haben einem Kloster Geschenke im Wert von %d1[ICON_GOLD] gebracht!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_MONASTERY_IMPROVEMENT_CONVERTED_NATIVE</Tag>
-        <English>A monastery has successfully converted a visiting Native!</English>
+        <English>[COLOR_POSITIVE_TEXT]Good news, Milord! [COLOR_REVERT]A monastery has successfully converted a visiting Native!</English>
         <French>Un monastère a converti avec succès des indigènes de passage !</French>
-        <German>Ein Kloster hat erfolgreich einen herumwandernden Ureinwohner konvertiert!</German>
+        <German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Ein Kloster hat erfolgreich einen Ureinwohner konvertiert!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_HIRED_PIRATES</Tag>
-        <English>The pirates we have hired await your orders in %s1_city, Mylord.</English>
+        <English>Milord, the [COLOR_UNIT_TEXT]pirates[COLOR_REVERT] we have hired await your orders in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
         <French>Les pirates que nous avons recrutés attendent vos ordres %s1_city, Sir.</French>
-        <German>Die angeheuerten Piraten erwarten in %s1_city Eure Befehle, Mylord.</German>
+        <German>Milord, die angeheuerten [COLOR_UNIT_TEXT]Piraten[COLOR_REVERT] erwarten Eure Befehle in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOLD_BY_ENTERTAINMENT</Tag>
-        <English>The %s1_building of %s2_city has generated %d3[ICON_GOLD].</English>
-        <French>Votre %s1_building à %s2_city a généré %d3[ICON_GOLD] de profit.</French>
-        <German>Das Gebäude %s1_building von %s2_city hat %d3[ICON_GOLD] Gewinn erwirtschaftet.</German>
+        <English>%s2_city : The %s1_building has generated %d3[ICON_GOLD]</English>
+        <French>Votre %s1_building à %s2_city a généré %d3[ICON_GOLD] de profit</French>
+        <German>%s2_city : Das Gebäude %s1_building hat %d3[ICON_GOLD] Gewinn erwirtschaftet</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ENTERTAINMENT_BUILDING</Tag>
@@ -1066,18 +1148,6 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
         <English>[ICON_BULLET]Increases generation of [ICON_GOLD] from %F1_yield</English>
         <French>[ICON_BULLET]Génère davantage de [ICON_GOLD] à partir de %F1_yield</French>
         <German>[ICON_BULLET]Erhöht die Rate von [ICON_GOLD] durch %F1_yield</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ACQUIRED_CONTINENTAL_GUARD</Tag>
-        <English>With the help of our European allies, we have successfully trained a Continental Guard in %s1_city, Milord.</English>
-        <French>Avec l'aide de nos alliés européens, nous avons formé avec succès une garde continental %s1_city, Sir.</French>
-        <German>Mit der Hilfe unserer europäischen Alliierten haben wir erfolgreich eine Kontinentalgarde in %s1_city ausgebildet, Mylord</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
-        <English>The mortar we have bought from our European allies has arrived in %s1_city, Milord.</English>
-        <French>Le mortier que nous avons acheté à nos alliés européens sont arrivés à %s1_city, Sir.</French>
-        <German>Der Mörser, den wir von unseren europäischen Alliierten gekauft haben, ist in %s1_city angekommen, Mylord</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_DOMESTIC_MARKET_BUILDING</Tag>
@@ -1099,108 +1169,239 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_LEVIED_MILITIA_FOR_PROTECTION</Tag>
-        <English>Milord, the city %s1_city has levied a settler's militia because they felt unprotected. [NEWLINE]To do so, they have taken food from storage and money from the treasury.</English>
-        <French>Sir, la ville de %s1_city  a levé une milice à partir de simples colons car ils ne se sentaient pas protéger. [NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>
-        <German>Mylord, die Stadt %s1_city hat eine Siedlermiliz ausgehoben, weil sie sich unzureichend geschützt fühlte. [NEWLINE]Dafür haben Sie Nahrung aus den Lagern und Gold aus der Schatzkammer entnommen.</German>
+        <English>Milord, the city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has levied a [COLOR_UNIT_TEXT]settler's militia[COLOR_REVERT] because they felt unprotected. [NEWLINE]To do so, they have taken food from the storage and money from the treasury.</English>
+        <French>Sire, la ville de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a levé une milice à partir de simples colons car ils ne se sentaient pas protéger. [NEWLINE]Ils ont pris de la nourriture et de l'argent pour la former.</French>
+        <German>Milord, die Stadt [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat eine [COLOR_UNIT_TEXT]Siedlermiliz[COLOR_REVERT] ausgehoben, weil sie sich unzureichend geschützt fühlte. [NEWLINE]Dafür haben sie Nahrung aus den Lagern und Gold aus der Schatzkammer entnommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CITY_UNREST_BECAUSE_MISSING_PROTECTION</Tag>
-        <English>Milord, there is unrest in city %s1_city because the population feels unprotected.</English>
+        <English>Milord, there is unrest in city [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] because the population feels unprotected.</English>
         <French>Sir, il y a des désordres civiles à city %s1_city car la population ne s'y sent pas protégée.</French>
-        <German>Mylord, in %s1_city gibt es Unruhen, weil die Bürger sich nicht ausreichend geschützt fühlen.</German>
+        <German>Milord, in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] gibt es Unruhen, weil die Bürger sich nicht ausreichend geschützt fühlen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_DEMAND</Tag>
         <English>Word about your generous donation to the Mother Church has spread.</English>
         <French>L'information concernant votre généreuse donation à l'Eglise se répand.</French>
-        <German>Die Kunde über eure grosszügige Spende an die Heilige Mutter Kirche verbreitet sich.</German>
+        <German>Die Kunde über Eure grosszügige Spende an die Heilige Mutter Kirche verbreitet sich.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_ATTITUDE_KING</Tag>
-        <English>[NEWLINE]The King is very pleased that prestige for his Nation has increased through your actions.</English>
+        <English>[NEWLINE]His Majesty is very pleased that prestige for his Nation has increased through your actions.</English>
         <French>[NEWLINE]Le Roi est heureux de voir le prestige de sa Nation augmenter au travers de vos actions.</French>
-        <German>[NEWLINE]Der König ist sehr erfreut über den Ruhm, den Eure Taten seiner Nation bescheren.</German>
+        <German>[NEWLINE]Seine Majestät ist sehr erfreut über das Ansehen, das Eure Taten seiner Nation bescheren.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_ATTITUDE_EUROPEANS</Tag>
         <English>[NEWLINE]Your prestige at other European Nations has grown.</English>
         <French>[NEWLINE]Votre prestige chez les autres Nations européennes a augmenté.</French>
-        <German>[NEWLINE]Euer Ansehen bei anderen europäischen Nationen ist gestiegen.</German>
-        <Italian>[NEWLINE]Your prestige at other Europeans Nations has grown.</Italian>
-        <Spanish>[NEWLINE]Your prestige at other Europeans Nations has grown.</Spanish>
+        <German>[NEWLINE]Euer Ansehen bei den anderen europäischen Nationen ist gestiegen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_IMMIGRATION</Tag>
-        <English>[NEWLINE]Immigration of faithful Christians to your colony has increased.</English>
+        <English>[NEWLINE]Emigration of faithful Christians to your colony has increased.</English>
         <French>[NEWLINE]L'immigration de chrétiens fidèles vers vos colonies a augmenté.</French>
-        <German>[NEWLINE]Die Immigration gläubiger Christen in die Kolonien ist gestiegen.</German>
-        <Italian>[NEWLINE]Immigration of faithful christians to your colony has increased.</Italian>
-        <Spanish>[NEWLINE]Immigration of faithful christiansto your colony has increased.</Spanish>
+        <German>[NEWLINE]Die Auswanderung gläubiger Christen in die Kolonien nimmt zu.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_REWARD_MISSIONARY</Tag>
         <English>[NEWLINE]A missionary hearing those words has spontaneously decided to join your cause.</English>
         <French>[NEWLINE]Un missionnaire ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
-        <German>[NEWLINE]Ein Missionar, der diese Worte hörte, hat spontan entschieden sich eurer Sache anzuschliessen.</German>
+        <German>[NEWLINE]Ein Missionar, der diese Worte hörte, hat spontan entschieden, sich Eurer Sache anzuschliessen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PAYED_CHURCH_REWARD_PREACHER</Tag>
         <English>[NEWLINE]A preacher hearing those words has spontaneously decided to join your cause.</English>
         <French>[NEWLINE]Un prêtre ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
-        <German>[NEWLINE]Ein Prediger, der diese Worte hörte, hat spontan entschieden sich eurer Sache anzuschliessen.</German>
+        <German>[NEWLINE]Ein Prediger, der diese Worte hörte, hat spontan entschieden, sich Eurer Sache anzuschliessen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_REFUSED_CHURCH_DEMAND</Tag>
         <English>Word about your refusal to help the poor and desperate has spread.</English>
         <French>Votre refus d'aider les pauvres et les désespérés choque l'opinion.</French>
-        <German>Die Kunde über eure Weigerung den Armen und Hilfsbedürftigen zu spenden verpreitet sich.</German>
+        <German>Die Kunde über Eure Weigerung, den Armen und Hilfsbedürftigen zu spenden, verbreitet sich.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_ATTITUDE_KING</Tag>
-        <English>[NEWLINE]The King is profoundly displeased by the loss of prestige for his nation through your actions.</English>
+        <English>[NEWLINE]His Majesty is profoundly displeased by the loss of prestige for his nation through your actions.</English>
         <French>[NEWLINE]Le Roi est très insatisfait de la perte du prestige de sa Nation au travers de vos actions.</French>
-        <German>[NEWLINE]Der König ist sehr unerfreut über den Verlust an Ansehen, den Eure Taten seiner Nation bescheren.</German>
+        <German>[NEWLINE]Seine Majestät ist nicht erfreut über den Verlust an Ansehen, den Eure Taten seiner Nation beschert haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_ATTITUDE_EUROPEANS</Tag>
         <English>[NEWLINE]Your prestige with other European nations has suffered.</English>
         <French>[NEWLINE]Votre prestige chez les autres Nations européeennes s'est dégradé.</French>
-        <German>[NEWLINE]Euer Ansehen bei anderen europäischen Nationen ist gefallen.</German>
+        <German>[NEWLINE]Euer Ansehen bei den anderen europäischen Nationen hat gelitten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_UNREST</Tag>
-        <English>[NEWLINE]Faithful citizens are marching in the streets of your capitol.</English>
+        <English>[NEWLINE]Faithful Christians are marching in the streets of your capitol.</English>
         <French>[NEWLINE]Les chrétiens fidèles de votre capitale marchent dans les rues.</French>
-        <German>[NEWLINE]Die Gläubigen demonstrieren auf den Strassen der Hauptstadt gegen Eure Handlung.</German>
+        <German>[NEWLINE]Gläubige Christen demonstrieren auf den Strassen der Hauptstadt gegen Euer Handeln.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_CHURCH_PENALTY_IMMIGRATION</Tag>
-        <English>[NEWLINE]Fewer faithful Christians choose to immigrate to your colony.</English>
+        <English>[NEWLINE]Fewer faithful Christians choose to emigrate to your colony.</English>
         <French>[NEWLINE]L'immigration de chrétiens fidèles vers vos colonies a diminué.</French>
-        <German>[NEWLINE]Die Immigration gläubiger Christen in die Kolonien ist gesunken.</German>
+        <German>[NEWLINE]Die Auswanderung gläubiger Christen in die Kolonien nimmt ab.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EUROPE_PRICE_HELP</Tag>
-        <English>[NEWLINE]Europe: </English>
-        <French>[NEWLINE]Europe : </French>
-        <German>[NEWLINE]Europa: </German>
+        <English>[NEWLINE]    Europe[TAB][TAB]</English>
+        <French>[NEWLINE]    Europe[TAB][TAB]</French>
+        <German>[NEWLINE]    Europa[TAB][TAB]</German>
+        <Italian>[NEWLINE]    Europa[TAB][TAB]</Italian>
+        <Spanish>[NEWLINE]    Europa[TAB][TAB]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_AFRICA_PRICE_HELP</Tag>
-        <English>[NEWLINE]Africa: </English>
-        <French>[NEWLINE]Afrique : </French>
-        <German>[NEWLINE]Afrika: </German>
+        <English>[NEWLINE]    Africa[TAB][TAB]</English>
+        <French>[NEWLINE]    Afrique[TAB][TAB]</French>
+        <German>[NEWLINE]    Afrika[TAB][TAB]</German>
+        <Italian>[NEWLINE]    Africa[TAB][TAB]</Italian>
+        <Spanish>[NEWLINE]    África[TAB][TAB]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_PORT_ROYAL_PRICE_HELP</Tag>
-        <English>[NEWLINE]Port Royal: </English>
-        <French>[NEWLINE]Port Royal: </French>
-        <German>[NEWLINE]Port Royal: </German>
+        <English>[NEWLINE]    Port Royal[TAB]</English>
+        <French>[NEWLINE]    Port Royal[TAB]</French>
+        <German>[NEWLINE]    Port Royal[TAB]</German>
+        <Italian>[NEWLINE]    Port Royal[TAB]</Italian>
+        <Spanish>[NEWLINE]    Port Royal[TAB]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_MISC_BRIBE_RATE</Tag>
-        <English>Tax Rate: %d1%% </English>
-        <French>Taux d'imposition : %d1%%</French>
-        <German>Steuersatz: %d1%%</German>
+        <Tag>TXT_KEY_TOTAL_CITY_HEALTH</Tag>
+        <English>Health of the City : %d1%F2_Icon</English>
+        <French>Santé de la ville : %d1%F2_Icon</French>
+        <German>Gesundheit der Stadt : %d1%F2_Icon</German>
+        <Italian>Salute della città : %d1 %F2_Icon</Italian>
+        <Spanish>Salud de la ciudad : %d1 %F2_Icon</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
+        <English>[ICON_BULLET]%D1%%%F2[TAB][TAB]from City Health</English>
+        <French>[ICON_BULLET]%D1%%%F2[TAB][TAB]par la santé de la ville</French>
+        <German>[ICON_BULLET]%D1%%%F2[TAB][TAB]durch Gesundheit der Stadt</German>
+        <Italian>[ICON_BULLET]%D1%%%F2 attraverso la salute della città</Italian>
+        <Spanish>[ICON_BULLET]%D1%%%F2 por la salud de la ciudad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HEALTH_POP_CHANGE</Tag>
+        <English>Population Change %s1 = %d2%F3</English>
+        <French>Changement de la %s1 sur la population = %d2%F3</French>
+        <German>Bevölkerung %s1 = %d2%F3</German>
+        <Italian>Popolazione %s1 = %d2%F3</Italian>
+        <Spanish>Población %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_YIELD_HEALTH_TOTAL_CHANGE</Tag>
+        <English>Total Change %s1 = %d2%F3</English>
+        <French>Changement de la %s1 total = %d2%F3</French>
+        <German>Gesamtänderung %s1 = %d2%F3</German>
+        <Italian>Variazione totale %s1 = %d2%F3</Italian>
+        <Spanish>Cambio total %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_CITY_HEALTH_TOTAL</Tag>
+        <English>City %s1 = %d2%F3</English>
+        <French>%s1 de la Ville = %d2%F3</French>
+        <German>Stadt %s1 = %d2%F3</German>
+        <Italian>Città %s1 = %d2%F3</Italian>
+        <Spanish>Ciudad %s1 = %d2%F3</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_PEDIA_BONUS_YIELD</Tag>
+        <English>%s1: %D2%F3 (with Resource [LINK=%s5]%s4[\LINK])</English>
+        <French>%s1 : %D2%F3 (avec Resource [LINK=%s5]%s4[\LINK])</French>
+        <German>%s1: %D2%F3 (mit Bonusressource [LINK=%s5]%s4[\LINK])</German>
+        <Italian>%s1: %D2%F3 (con Resource [LINK=%s5]%s4[\LINK])</Italian>
+        <Spanish>%s1: %D2 %F3 (con Resource [LINK=%s5]%s4[\LINK])</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_HEALTH_CITY</Tag>
+        <English>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</English>
+        <French>[ICON_BULLET]%D1 [ICON_HEALTHY] à %s2_city</French>
+        <German>[ICON_BULLET]%D1 [ICON_HEALTHY] in %s2_city</German>
+        <Italian>[ICON_BULLET]%D1 [ICON_HEALTHY] a %s2_city</Italian>
+        <Spanish>[ICON_BULLET]%D1 [ICON_HEALTHY] en %s2_city</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_EVENT_HEALTH</Tag>
+        <English>[ICON_BULLET]%D1 [ICON_HEALTH] in all settlements</English>
+        <French>[ICON_BULLET]%D1 [ICON_HEALTH] dans toutes les colonies</French>
+        <German>[ICON_BULLET]%D1 [ICON_HEALTH] in allen Siedlungen</German>
+        <Italian>[ICON_BULLET]%D1 [ICON_HEALTH] in tutti gli insediamenti</Italian>
+        <Spanish>[ICON_BULLET]%D1 [ICON_HEALTH] en todos los asentamientos</Spanish>
+    </TEXT>
+    <!--super forts-->
+    <TEXT>
+        <Tag>TXT_KEY_PLOT_FORTIFY_TO_UPGRADE</Tag>
+        <English>[SPACE](Must garrison to become %s1_ImpName)</English>
+        <French>[SPACE](Doit fortifier pour devenir 1 %s1_ImpName)</French>
+        <German>[SPACE](Muss befestigt sein, um zur Modernisierung %s1_ImpName zu werden)</German>
+        <Italian>[SPACE](Deve fortificare per diventare %s1_ImpName)</Italian>
+        <Spanish>[SPACE](Debe fortalecer para convertirse en [NUM1:un:una:unos:unas] %s1:1_ImpName)</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_PLOT_CULTURE</Tag>
+        <English>[ICON_BULLET]%D1_Change[ICON_CULTURE] for owner in plot</English>
+        <French>[ICON_BULLET]%D1_Change[ICON_CULTURE] pour le propriétaire dans la parcelle</French>
+        <German>[ICON_BULLET]%D1_Change[ICON_CULTURE] für Besitzer des Felds</German>
+        <Italian>[ICON_BULLET]%D1_Change[ICON_CULTURE] per il proprietario di complotto</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change[ICON_CULTURE] para el propietario de la parcela</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_CULTURE_RANGE</Tag>
+        <English>[ICON_BULLET]Influences plots within a distance of %d1_Num</English>
+        <French>[ICON_BULLET]Influences des parcelles dans un rayon de %d1_Num</French>
+        <German>[ICON_BULLET]Beeinflusst Felder im Radius von %d1_Num</German>
+        <Italian>[ICON_BULLET]Trame influenze entro una distanza di %d1_Num</Italian>
+        <Spanish>[ICON_BULLET]Influye en las parcelas dentro de una distancia de %d1_Num</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_BOMBARD</Tag>
+        <English>[ICON_BULLET]Can be bombarded</English>
+        <French>[ICON_BULLET]Peut-etre bombardes</French>
+        <German>[ICON_BULLET]Kann bombardiert werden</German>
+        <Italian>[ICON_BULLET]Puo essere bombardati</Italian>
+        <Spanish>[ICON_BULLET]Puede ser bombardeado</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_FORTIFY_TO_UPGRADE</Tag>
+        <English>[ICON_BULLET]A unit must guard it to upgrade</English>
+        <French>[ICON_BULLET]Une unite doit renforcer pour mettre a niveau</French>
+        <German>[ICON_BULLET]Eine Einheit muss befestigt sein zum Wachstum</German>
+        <Italian>[ICON_BULLET]Una unita deve fortificare l'aggiornamento</Italian>
+        <Spanish>[ICON_BULLET]Una unidad debe fortalecer para mejorar</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_VISIBILITY_RANGE</Tag>
+        <English>[ICON_BULLET]%D1_Change visibility range</English>
+        <French>[ICON_BULLET]Champ de vision %D1_Change</French>
+        <German>[ICON_BULLET]%D1_Change Sichtweite</German>
+        <Italian>[ICON_BULLET]%D1_Change raggio di visibilità</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change al alcance de la visibilidad</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_SEE_FROM</Tag>
+        <English>[ICON_BULLET]%D1_Change visibility height</English>
+        <French>[ICON_BULLET]%D1_Change Hauteur Visibilite</French>
+        <German>[ICON_BULLET]%D1_Change Sichthöhe</German>
+        <Italian>[ICON_BULLET]%D1_Change visibilita Altezza</Italian>
+        <Spanish>[ICON_BULLET]%D1_Change visibilidad Altura</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_IMPROVEMENT_UNIQUE_RANGE</Tag>
+        <English>[ICON_BULLET]Cannot build another within a distance of %d1_Num</English>
+        <French>[ICON_BULLET]Impossible de construire un autre a une distance de %d1_Num</French>
+        <German>[ICON_BULLET]Mindestabstand zu anderen Geländeverbesserungen desselben Typs von %d1_Num</German>
+        <Italian>[ICON_BULLET]Non e possibile costruire un altro ad una distanza di %d1_Num</Italian>
+        <Spanish>[ICON_BULLET]No se puede construir otro a una distancia de %d1_Num</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_MISC_CITY_REVOLTED_JOINED</Tag>
+        <English>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1_ImpName[COLOR_REVERT] has revolted and joined [COLOR_HIGHLIGHT_TEXT]%s2_CivDesc[COLOR_REVERT]</English>
+        <French>[ICON_BULLET]A %s1_ImpName s'est révolté et a rejoint %s2_CivDesc</French>
+        <German>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1_ImpName[COLOR_REVERT] hat rebelliert und trat [COLOR_HIGHLIGHT_TEXT]%s2_CivDesc[COLOR_REVERT] bei</German>
     </TEXT>
 </Civ4GameText>

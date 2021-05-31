@@ -21,36 +21,36 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_BURIAL_GROUNDS</Tag>
+        <English>You have discovered what appears to be native burial grounds. Do you wish to search for treasure?</English>
+        <French>Vous avez découvert ce qui semble être un cimetière indigène. Voulez-vous explorer ce trésor?</French>
+        <German>Ihr habt etwas entdeckt, das wie eine Grabstätte der Ureinwohner aussieht. Wollt Ihr nach Schätzen suchen?</German>
+        <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
+        <Spanish>Habéis descubierto lo que parecen ser Túmulos funerarios de los Nativos. ¿Queréis buscar tesoros?</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
-        <English>You have discovered a lost missionary!</English>
-        <French>Vous avez découvert un missionnaire perdu !</French>
-        <German>Ihr habt einen verlaufenen Missionar entdeckt!</German>
-        <Italian>You have discovered a lost missionary!</Italian>
-        <Spanish>You have discovered a lost missionary!</Spanish>
+        <English>You've discovered a lost [COLOR_UNIT_TEXT]missionary[COLOR_REVERT]!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]missionnaire[COLOR_REVERT] perdu !</French>
+        <German>Ihr habt einen verlaufenen [COLOR_UNIT_TEXT]Missionar[COLOR_REVERT] entdeckt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
-        <English>You have discovered a lost colonist from a former failed colony!</English>
-        <French>Vous avez découvert un colon perdu d'une ancienne colonie !</French>
-        <German>Ihr habt einen verlorenen Kolonisten einer gescheiterten Kolonie entdeckt!</German>
-        <Italian>You have discovered a lost colonist from a former failed colony!</Italian>
-        <Spanish>You have discovered a lost colonist from a former failed colony!</Spanish>
+        <English>You've discovered a lost [COLOR_UNIT_TEXT]colonist[COLOR_REVERT] from an earlier colony that failed!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]colon[COLOR_REVERT] perdu d'une ancienne colonie !</French>
+        <German>Ihr habt einen verlorenen [COLOR_UNIT_TEXT]Kolonisten[COLOR_REVERT] einer gescheiterten Kolonie entdeckt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
-        <English>You have discovered a lost conquistador who was separated from his fellows!</English>
-        <French>Vous avez découvert un conquistador perdu abandonné par les siens !</French>
-        <German>Ihr habt einen Conquistador entdeckt, der von seiner Truppe getrennt wurde!</German>
-        <Italian>You have discovered a lost conquistador who was separated from his fellows!</Italian>
-        <Spanish>You have discovered a lost conquistador who was separated from his fellows!</Spanish>
+        <English>You've discovered a lost [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] who was separated from his fellows!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] perdu abandonné par les siens !</French>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Konquistador[COLOR_REVERT] entdeckt, der von seiner Truppe getrennt wurde!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
-        <English>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</English>
-        <French>Vous avez découvert un navire flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
-        <German>Ihr habt ein steuerlos treibendes Schiff im offenen Meer entdeckt! Die gesamte Besatzung ist to. Es scheint als sei sie verdurstet.</German>
-        <Italian>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Italian>
-        <Spanish>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Spanish>
+        <English>You've discovered a [COLOR_UNIT_TEXT]ship[COLOR_REVERT] drifting on the sea! All the sailors are dead. They seem to have died of thirst.</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]navire[COLOR_REVERT] flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
+        <German>Ihr habt auf hoher See ein steuerlos dahintreibendes [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] entdeckt! Die gesamte Besatzung ist tot. Es sieht so aus, als ob alle verdurstet seien.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE</Tag>
@@ -58,11 +58,25 @@
         <French>Expérience</French>
         <German>Erfahrung</German>
         <Italian>Esperienza</Italian>
-        <Spanish>Experiencia:</Spanish>
+        <Spanish>Experiencia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE</Tag>
+        <English>The discovery has given your unit experience!</English>
+        <French>Cette découverte a conféré de l'expérience à votre unité !</French>
+        <German>Durch diese Entdeckung hat Eure Einheit an Erfahrung gewonnen!</German>
+        <Italian>La scoperta ha fatto crescere l'esperienza dell'unità!</Italian>
+        <Spanish>¡El descubrimiento le ha dado experiencia a la unidad!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE_SEA</Tag>
         <English>INTERFACE_PANE_EXPERIENCE</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE_SEA</Tag>
+        <English>The crew of your ship has gained some experience!</English>
+        <French>L'équipage de votre navire a gagné de l'expérience !</French>
+        <German>Die Crew eures Schiffes hat etwas Erfahrung gewonnen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HEALING</Tag>
@@ -85,32 +99,16 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_HEALING</Tag>
+        <English>A native tribe has healed your unit!</English>
+        <French>Une tribu indigène a soigné votre unité !</French>
+        <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
+        <Italian>Una tribù di nativi ha curato l'unità!</Italian>
+        <Spanish>¡Una tribu nativa ha curado a vuestra unidad!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_HIGH_GOLD</Tag>
         <English>TXT_KEY_TRADE_TITLE_GOLD</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_HOSTILE_STRONG</Tag>
-        <English>TXT_KEY_GOODY_HOSTILE_NATIVES</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
-        <English>Hostile Natives</English>
-        <French>
-            <Text>Indigène hostile:Indigènes hostiles</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Feindselige Ureinwohner</German>
-        <Italian>
-            <Text>Nativi ostili</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Nativos hostiles</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_LOW_GOLD</Tag>
@@ -137,8 +135,54 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD</Tag>
+        <English>You have discovered valuable artifacts!</English>
+        <French>Vous avez découvert de précieux artefacts !</French>
+        <German>Ihr habt wertvolle Artefakte entdeckt!</German>
+        <Italian>Hai scoperto preziosi manufatti!</Italian>
+        <Spanish>¡Habéis descubierto artefactos valiosos!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_LOW_GOLD_SEA</Tag>
         <English>TXT_KEY_TRADE_TITLE_GOLD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD_SEA</Tag>
+        <English>You've discovered some gold in a shipwreck!</English>
+        <French>Vous avez découvert de l'or dans l'épave !</French>
+        <German>Ihr habt etwas Gold in den Überresten eines verunglückten Schiffes entdeckt!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HOSTILE_STRONG</Tag>
+        <English>TXT_KEY_GOODY_HOSTILE_NATIVES</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
+        <English>Hostile Natives</English>
+        <French>
+            <Text>Indigène hostile:Indigènes hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Feindselige Ureinwohner</German>
+        <Italian>
+            <Text>Nativi ostili</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nativos hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
+        <English>You have offended the natives, who attack your unit in revenge!</English>
+        <French>Vous avez offensé les indigènes qui attaquent votre unité en représailles !</French>
+        <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
+        <Italian>Hai offeso i nativi, che attaccano la tua unità!</Italian>
+        <Spanish>¡Habéis ofendido a los Nativos, que atacan a vuestra unidad como venganza!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MAP</Tag>
@@ -165,48 +209,76 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP</Tag>
+        <English>Local hunters have carved a sketch of the surrounding area into the old masonry. What a helpful find!</English>
+        <French>Vous avez découvert une carte antique !</French>
+        <German>Einheimische Jäger haben in das alte Gemäuer eine Skizze der Umgebung eingeritzt. Welch hilfreicher Fund!</German>
+        <Italian>Hai scoperto un'antica mappa!</Italian>
+        <Spanish>¡Habéis descubierto un mapa antiguo!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
         <English>TXT_KEY_MAIN_MENU_MAP</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP_SEA</Tag>
+        <English>You've discovered a map in a shipwreck!</English>
+        <French>Vous avez découvert une carte dans l'épave !</French>
+        <German>Ihr habt eine Karte in den Überresten eines verunglückten Schiffes entdeckt!</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
-        <English>You have discovered a proud native warrior who offers to join you!</English>
-        <French>Vous avez découvert un fier guerrier indigène qui propose de vous rejoindre !</French>
-        <German>Ihr habt einen stolzen Ureinwohnerkrieger entdeckt, der sich euch anschliesst!</German>
-        <Italian>You have discovered a proud native warrior who offers to join you!</Italian>
-        <Spanish>You have discovered a proud native warrior who offers to join you!</Spanish>
+        <English>You've discovered a proud [COLOR_UNIT_TEXT]Native warrior[COLOR_REVERT] who offers to join you!</English>
+        <French>Vous avez découvert un fier [COLOR_UNIT_TEXT]guerrier indigène[COLOR_REVERT] qui propose de vous rejoindre !</French>
+        <German>Ihr habt einen stolzen [COLOR_UNIT_TEXT]Ureinwohner-Krieger[COLOR_REVERT] entdeckt, der sich euch anschliesst!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
-        <English>You have discovered a runaway slave from a native tribe!</English>
-        <French>Vous avez découvert un esclave fuyant une tribu indigène !</French>
-        <German>Ihr habt einen Ureinwohnersklaven entdeckt, der von seinem Stamm geflohen ist!</German>
-        <Italian>You have discovered a runaway slave from a native tribe!</Italian>
-        <Spanish>You have discovered a runaway slave from a native tribe!</Spanish>
+        <English>You've discovered a [COLOR_UNIT_TEXT]runaway slave[COLOR_REVERT] from a Native tribe.</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]esclave fuyant[COLOR_REVERT] une tribu indigène.</French>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT] entdeckt, der von seinem Stamm geflohen ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_EL_DORADO</Tag>
         <English>Rumours about El Dorado</English>
         <French>Rumeurs à propos de l'El Dorado</French>
         <German>Gerüchte über El Dorado</German>
-        <Italian>Rumors about El Dorado</Italian>
-        <Spanish>Rumors about El Dorado</Spanish>
+        <Italian>Voci su El Dorado</Italian>
+        <Spanish>Rumores sobre El Dorado</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_EL_DORADO</Tag>
+        <English>Rumours are spreading throughout Europe that you discovered the mythical city of [COLOR_SELECTED_TEXT]El Dorado[COLOR_REVERT]!</English>
+        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique [COLOR_SELECTED_TEXT]El Dorado[COLOR_REVERT] !</French>
+        <German>Gerüchte breiten sich in Europa aus, dass ihr die mystische Stadt [COLOR_SELECTED_TEXT]El Dorado[COLOR_REVERT] gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
         <English>Rumours about the Fountain of Youth</English>
         <French>Rumeurs à propos de la Fontaine de Jouvence</French>
         <German>Gerüchte über den Jungbrunnen</German>
-        <Italian>Rumors about the Fountain of Youth</Italian>
-        <Spanish>Rumors about the Fountain of Youth</Spanish>
+        <Italian>Voci sulla fontana della giovinezza</Italian>
+        <Spanish>Rumores sobre la Fuente de la Juventud</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
+        <English>In Europe there are rumours you've found a map showing the mythical [COLOR_SELECTED_TEXT]Fountain of Youth[COLOR_REVERT]!</English>
+        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé la mythique [COLOR_SELECTED_TEXT]Fontaine de Jouvence[COLOR_REVERT] !</French>
+        <German>Gerüchte breiten sich in Europa aus, dass ihr den mystischen [COLOR_SELECTED_TEXT]Jungbrunnen[COLOR_REVERT] gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_PIRATE_TREASURE</Tag>
         <English>Rumours about a Pirate Treasure</English>
         <French>Rumeurs à propos du trésor pirate</French>
-        <German>Gerüchte über über einen Piratenschatz</German>
-        <Italian>Rumors about a Pirate Treasure</Italian>
-        <Spanish>Rumors about a Pirate Treasure</Spanish>
+        <German>Gerüchte über einen Piratenschatz</German>
+        <Italian>Voci su un tesoro dei pirati</Italian>
+        <Spanish>Rumores sobre un tesoro pirata</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_PIRATE_TREASURE</Tag>
+        <English>In Europe rumours are spreading that you found a map to a huge [COLOR_SELECTED_TEXT]pirate treasure[COLOR_REVERT]!</English>
+        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique [COLOR_SELECTED_TEXT]trésor de Barbe Noire[COLOR_REVERT] !</French>
+        <German>Gerüchte breiten sich in Europa aus, dass ihr eine Karte zu einem riesigen [COLOR_SELECTED_TEXT]Piratenschatz[COLOR_REVERT] gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SCOUT</Tag>
@@ -233,12 +305,18 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_SCOUT</Tag>
+        <English>Your unit is now a [COLOR_UNIT_TEXT]Seasoned Scout[COLOR_REVERT].</English>
+        <French>Votre unité est à présent un [COLOR_UNIT_TEXT]Eclaireur aguerri[COLOR_REVERT].</French>
+        <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT].</German>
+        <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT].</Italian>
+        <Spanish>Vuestra unidad ahora es un [COLOR_UNIT_TEXT]Batidor curtido[COLOR_REVERT].</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
-        <English>You have discovered a survivor from a shipwreck!</English>
-        <French>Vous avez découvert les survivants d'un nauffrage !</French>
-        <German>Ihr habt einen Überlebenden eines Schiffsunglücks entdeckt!</German>
-        <Italian>You have discovered a survivor from a shipwreck!</Italian>
-        <Spanish>You have discovered a survivor from a shipwreck!</Spanish>
+        <English>You've discovered a [COLOR_UNIT_TEXT]survivor[COLOR_REVERT] from a shipwreck!</English>
+        <French>Vous avez découvert les [COLOR_UNIT_TEXT]survivants[COLOR_REVERT] d'un nauffrage !</French>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Überlebenden[COLOR_REVERT] eines Schiffsunglücks entdeckt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_TREASURE</Tag>
@@ -261,17 +339,33 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_TREASURE</Tag>
+        <English>You have discovered ancient treasure!</English>
+        <French>Vous avez découvert un trésor antique !</French>
+        <German>Ihr habt einen antiken Schatz entdeckt!</German>
+        <Italian>Hai scoperto un antico tesoro!</Italian>
+        <Spanish>¡Habéis descubierto un antiguo tesoro!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_WAR</Tag>
         <English>TXT_KEY_CONCEPT_WAR</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_WAR</Tag>
+        <English>You have gravely offended the natives, who declare war on you in revenge!</English>
+        <French>Vous avez offensé les indigènes qui vous déclarent la guerre en représailles !</French>
+        <German>Ihr habt die Ureinwohner beleidigt. Sie erklären Euch aus Rache den Krieg!</German>
+        <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
+        <Spanish>¡Habéis ofendido a los Nativos, que os declaran la guerra como represalia!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
-        <English>You have discovered a wounded Ranger who offers his services to us for our help.</English>
-        <German>Ihr habt einen verwundetetn Ranger entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
+        <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who offers his services to us for our help!</English>
+        <German>Ihr habt einen verwundeten [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
-        <English>You have discovered a Native Trader who had lost his orientation and now wants to offer his services to you!</English>
-        <German>Ihr habt einen Uhreinwohnerhändler entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet.</German>
+        <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had lost his orientation and now wants to offer his services to you!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet!</German>
     </TEXT>
 </Civ4GameText>
