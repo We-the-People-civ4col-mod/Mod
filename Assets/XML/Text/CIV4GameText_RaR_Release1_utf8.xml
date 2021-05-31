@@ -814,60 +814,6 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
         <German>[ICON_BULLET][COLOR_WARNING_TEXT]Erfordert gepflasterte Landstraße[COLOR_REVERT]  um fahren zu können.</German>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
-        <English>You have discovered a runaway slave from a Native tribe.</English>
-        <French>Vous avez découvert un esclave fuyant une tribu indigène !</French>
-        <German>Ihr habt einen Ureinwohnersklaven entdeckt, der von seinem Stamm geflohen ist!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
-        <English>You have discovered a proud Native warrior who offers to join you!</English>
-        <French>Vous avez découvert un fier guerrier indigène qui propose de vous rejoindre !</French>
-        <German>Ihr habt einen stolzen Ureinwohnerkrieger entdeckt, der sich euch anschliesst!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_COLONIST</Tag>
-        <English>You have discovered a lost colonist from an earlier colony that failed!</English>
-        <French>Vous avez découvert un colon perdu d'une ancienne colonie !</French>
-        <German>Ihr habt einen verlorenen Kolonisten einer gescheiterten Kolonie entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
-        <English>You have discovered a lost conquistador who was separated from his fellows!</English>
-        <French>Vous avez découvert un conquistador perdu abandonné par les siens !</French>
-        <German>Ihr habt einen Conquistador entdeckt, der von seiner Truppe getrennt wurde!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
-        <English>You have discovered a lost missionary!</English>
-        <French>Vous avez découvert un missionnaire perdu !</French>
-        <German>Ihr habt einen verlaufenen Missionar entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
-        <English>You've discovered a survivor from a shipwreck!</English>
-        <French>Vous avez découvert les survivants d'un nauffrage !</French>
-        <German>Ihr habt einen Überlebenden eines Schiffsunglücks entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD_SEA</Tag>
-        <English>You have discovered gold in a shipwreck.</English>
-        <French>Vous avez découvert de l'or dans l'épave !</French>
-        <German>Ihr habt etwas Gold in den Überresten eines verunglückten Schiffes entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP_SEA</Tag>
-        <English>You have discovered a map in a shipwreck.</English>
-        <French>Vous avez découvert une carte dans l'épave !</French>
-        <German>Ihr habt eine Karte in den den Überresten eines verunglückten Schiffes entdeckt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE_SEA</Tag>
-        <English>The crew of your ship has gained some experience!</English>
-        <French>L'équipage de votre navire a gagné de l'expérience !</French>
-        <German>Die Crew eures Schiffes hat etwas Erfahrung gewonnen!</German>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_GOODS_SOLD_CUSTOM_HOUSE_SINGLE_MESSAGE</Tag>
         <English>The Custom House of %s1_city has sold goods for %d2[ICON_GOLD].</English>
         <French>Le poste de douane de %s1_city a vendu des biens pour une valeur de %d2[ICON_GOLD].</French>
@@ -940,24 +886,6 @@ Eine gleichmässige Anzahl der verschiedenen Berufe wird ausgebildet.</German>
         <English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]National Wonder[COLOR_REVERT]</English>
         <French>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Merveille nationale[COLOR_REVERT]</French>
         <German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]Nationales Wunder[COLOR_REVERT]</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_EL_DORADO</Tag>
-        <English>Rumours are spreading throughout Europe that you discovered the mythical city of El Dorado!</English>
-        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique El Dorado !</French>
-        <German>Gerüchte breiten sich in Europa aus, dass ihr die mystische Stadt El Dorado gefunden habt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
-        <English>In Europe there are rumours you've found a map showing the mythical Fountain of Youth!</English>
-        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé la mythique Fontaine de Jouvence !</French>
-        <German>Gerüchte breiten sich in Europa aus, dass ihr den mystischen Jungbrunnen gefunden habt!</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_PIRATE_TREASURE</Tag>
-        <English>In Europe rumours are spreading that you found a map to a huge pirate treasure!</English>
-        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique trésor de Barbe Noire !</French>
-        <German>Gerüchte breiten sich in Europa aus, dass ihr eine Karte zu einem riesigen Piratenschatz gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_IMPROVEMENT_FORT_FEATURES</Tag>

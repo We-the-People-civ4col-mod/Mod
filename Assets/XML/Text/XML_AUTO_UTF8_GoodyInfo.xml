@@ -21,36 +21,36 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_BURIAL_GROUNDS</Tag>
+        <English>You have discovered what appears to be native burial grounds. Do you wish to search for treasure?</English>
+        <French>Vous avez découvert ce qui semble être un cimetière indigène. Voulez-vous explorer ce trésor?</French>
+        <German>Ihr habt etwas entdeckt, das wie eine Grabstätte der Ureinwohner aussieht. Wollt Ihr nach Schätzen suchen?</German>
+        <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
+        <Spanish>Habéis descubierto lo que parecen ser Túmulos funerarios de los Nativos. ¿Queréis buscar tesoros?</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_CHRISTIAN_MISSIONARY</Tag>
-        <English>You have discovered a lost missionary!</English>
-        <French>Vous avez découvert un missionnaire perdu !</French>
-        <German>Ihr habt einen verlaufenen Missionar entdeckt!</German>
-        <Italian>You have discovered a lost missionary!</Italian>
-        <Spanish>You have discovered a lost missionary!</Spanish>
+        <English>You've discovered a lost [COLOR_UNIT_TEXT]missionary[COLOR_REVERT]!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]missionnaire[COLOR_REVERT] perdu !</French>
+        <German>Ihr habt einen verlaufenen [COLOR_UNIT_TEXT]Missionar[COLOR_REVERT] entdeckt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COLONIST</Tag>
-        <English>You have discovered a lost colonist from a former failed colony!</English>
-        <French>Vous avez découvert un colon perdu d'une ancienne colonie !</French>
-        <German>Ihr habt einen verlorenen Kolonisten einer gescheiterten Kolonie entdeckt!</German>
-        <Italian>You have discovered a lost colonist from a former failed colony!</Italian>
-        <Spanish>You have discovered a lost colonist from a former failed colony!</Spanish>
+        <English>You've discovered a lost [COLOR_UNIT_TEXT]colonist[COLOR_REVERT] from an earlier colony that failed!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]colon[COLOR_REVERT] perdu d'une ancienne colonie !</French>
+        <German>Ihr habt einen verlorenen [COLOR_UNIT_TEXT]Kolonisten[COLOR_REVERT] einer gescheiterten Kolonie entdeckt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR</Tag>
-        <English>You have discovered a lost conquistador who was separated from his fellows!</English>
-        <French>Vous avez découvert un conquistador perdu abandonné par les siens !</French>
-        <German>Ihr habt einen Conquistador entdeckt, der von seiner Truppe getrennt wurde!</German>
-        <Italian>You have discovered a lost conquistador who was separated from his fellows!</Italian>
-        <Spanish>You have discovered a lost conquistador who was separated from his fellows!</Spanish>
+        <English>You've discovered a lost [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] who was separated from his fellows!</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]conquistador[COLOR_REVERT] perdu abandonné par les siens !</French>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Konquistador[COLOR_REVERT] entdeckt, der von seiner Truppe getrennt wurde!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
-        <English>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</English>
-        <French>Vous avez découvert un navire flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
-        <German>Ihr habt ein steuerlos treibendes Schiff im offenen Meer entdeckt! Die gesamte Besatzung ist to. Es scheint als sei sie verdurstet.</German>
-        <Italian>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Italian>
-        <Spanish>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Spanish>
+        <English>You've discovered a [COLOR_UNIT_TEXT]ship[COLOR_REVERT] drifting on the sea! All the sailors are dead. They seem to have died of thirst.</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]navire[COLOR_REVERT] flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
+        <German>Ihr habt auf hoher See ein steuerlos dahintreibendes [COLOR_UNIT_TEXT]Schiff[COLOR_REVERT] entdeckt! Die gesamte Besatzung ist tot. Es sieht so aus, als ob alle verdurstet seien.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE</Tag>
@@ -58,11 +58,25 @@
         <French>Expérience</French>
         <German>Erfahrung</German>
         <Italian>Esperienza</Italian>
-        <Spanish>Experiencia:</Spanish>
+        <Spanish>Experiencia</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE</Tag>
+        <English>The discovery has given your unit experience!</English>
+        <French>Cette découverte a conféré de l'expérience à votre unité !</French>
+        <German>Durch diese Entdeckung hat Eure Einheit an Erfahrung gewonnen!</German>
+        <Italian>La scoperta ha fatto crescere l'esperienza dell'unità!</Italian>
+        <Spanish>¡El descubrimiento le ha dado experiencia a la unidad!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE_SEA</Tag>
         <English>INTERFACE_PANE_EXPERIENCE</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE_SEA</Tag>
+        <English>The crew of your ship has gained some experience!</English>
+        <French>L'équipage de votre navire a gagné de l'expérience !</French>
+        <German>Die Crew eures Schiffes hat etwas Erfahrung gewonnen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HEALING</Tag>
@@ -85,32 +99,16 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_HEALING</Tag>
+        <English>A native tribe has healed your unit!</English>
+        <French>Une tribu indigène a soigné votre unité !</French>
+        <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
+        <Italian>Una tribù di nativi ha curato l'unità!</Italian>
+        <Spanish>¡Una tribu nativa ha curado a vuestra unidad!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_HIGH_GOLD</Tag>
         <English>TXT_KEY_TRADE_TITLE_GOLD</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_HOSTILE_STRONG</Tag>
-        <English>TXT_KEY_GOODY_HOSTILE_NATIVES</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
-        <English>Hostile Natives</English>
-        <French>
-            <Text>Indigène hostile:Indigènes hostiles</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Feindselige Ureinwohner</German>
-        <Italian>
-            <Text>Nativi ostili</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Nativos hostiles</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_LOW_GOLD</Tag>
@@ -137,8 +135,54 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD</Tag>
+        <English>You have discovered valuable artifacts!</English>
+        <French>Vous avez découvert de précieux artefacts !</French>
+        <German>Ihr habt wertvolle Artefakte entdeckt!</German>
+        <Italian>Hai scoperto preziosi manufatti!</Italian>
+        <Spanish>¡Habéis descubierto artefactos valiosos!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_LOW_GOLD_SEA</Tag>
         <English>TXT_KEY_TRADE_TITLE_GOLD</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD_SEA</Tag>
+        <English>You've discovered some gold in a shipwreck!</English>
+        <French>Vous avez découvert de l'or dans l'épave !</French>
+        <German>Ihr habt etwas Gold in den Überresten eines verunglückten Schiffes entdeckt!</German>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HOSTILE_STRONG</Tag>
+        <English>TXT_KEY_GOODY_HOSTILE_NATIVES</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
+        <English>Hostile Natives</English>
+        <French>
+            <Text>Indigène hostile:Indigènes hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>0:1</Plural>
+        </French>
+        <German>Feindselige Ureinwohner</German>
+        <Italian>
+            <Text>Nativi ostili</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Nativos hostiles</Text>
+            <Gender>Male</Gender>
+            <Plural>1</Plural>
+        </Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
+        <English>You have offended the natives, who attack your unit in revenge!</English>
+        <French>Vous avez offensé les indigènes qui attaquent votre unité en représailles !</French>
+        <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
+        <Italian>Hai offeso i nativi, che attaccano la tua unità!</Italian>
+        <Spanish>¡Habéis ofendido a los Nativos, que atacan a vuestra unidad como venganza!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MAP</Tag>
@@ -165,48 +209,76 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP</Tag>
+        <English>Local hunters have carved a sketch of the surrounding area into the old masonry. What a helpful find!</English>
+        <French>Vous avez découvert une carte antique !</French>
+        <German>Einheimische Jäger haben in das alte Gemäuer eine Skizze der Umgebung eingeritzt. Welch hilfreicher Fund!</German>
+        <Italian>Hai scoperto un'antica mappa!</Italian>
+        <Spanish>¡Habéis descubierto un mapa antiguo!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
         <English>TXT_KEY_MAIN_MENU_MAP</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP_SEA</Tag>
+        <English>You've discovered a map in a shipwreck!</English>
+        <French>Vous avez découvert une carte dans l'épave !</French>
+        <German>Ihr habt eine Karte in den Überresten eines verunglückten Schiffes entdeckt!</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_MERC</Tag>
-        <English>You have discovered a proud native warrior who offers to join you!</English>
-        <French>Vous avez découvert un fier guerrier indigène qui propose de vous rejoindre !</French>
-        <German>Ihr habt einen stolzen Ureinwohnerkrieger entdeckt, der sich euch anschliesst!</German>
-        <Italian>You have discovered a proud native warrior who offers to join you!</Italian>
-        <Spanish>You have discovered a proud native warrior who offers to join you!</Spanish>
+        <English>You've discovered a proud [COLOR_UNIT_TEXT]Native warrior[COLOR_REVERT] who offers to join you!</English>
+        <French>Vous avez découvert un fier [COLOR_UNIT_TEXT]guerrier indigène[COLOR_REVERT] qui propose de vous rejoindre !</French>
+        <German>Ihr habt einen stolzen [COLOR_UNIT_TEXT]Ureinwohner-Krieger[COLOR_REVERT] entdeckt, der sich euch anschliesst!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_SLAVE</Tag>
-        <English>You have discovered a runaway slave from a native tribe!</English>
-        <French>Vous avez découvert un esclave fuyant une tribu indigène !</French>
-        <German>Ihr habt einen Ureinwohnersklaven entdeckt, der von seinem Stamm geflohen ist!</German>
-        <Italian>You have discovered a runaway slave from a native tribe!</Italian>
-        <Spanish>You have discovered a runaway slave from a native tribe!</Spanish>
+        <English>You've discovered a [COLOR_UNIT_TEXT]runaway slave[COLOR_REVERT] from a Native tribe.</English>
+        <French>Vous avez découvert un [COLOR_UNIT_TEXT]esclave fuyant[COLOR_REVERT] une tribu indigène.</French>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Versklavten Ureinwohner[COLOR_REVERT] entdeckt, der von seinem Stamm geflohen ist.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_EL_DORADO</Tag>
         <English>Rumours about El Dorado</English>
         <French>Rumeurs à propos de l'El Dorado</French>
         <German>Gerüchte über El Dorado</German>
-        <Italian>Rumors about El Dorado</Italian>
-        <Spanish>Rumors about El Dorado</Spanish>
+        <Italian>Voci su El Dorado</Italian>
+        <Spanish>Rumores sobre El Dorado</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_EL_DORADO</Tag>
+        <English>Rumours are spreading throughout Europe that you discovered the mythical city of [COLOR_SELECTED_TEXT]El Dorado[COLOR_REVERT]!</English>
+        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique [COLOR_SELECTED_TEXT]El Dorado[COLOR_REVERT] !</French>
+        <German>Gerüchte breiten sich in Europa aus, dass ihr die mystische Stadt [COLOR_SELECTED_TEXT]El Dorado[COLOR_REVERT] gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
         <English>Rumours about the Fountain of Youth</English>
         <French>Rumeurs à propos de la Fontaine de Jouvence</French>
         <German>Gerüchte über den Jungbrunnen</German>
-        <Italian>Rumors about the Fountain of Youth</Italian>
-        <Spanish>Rumors about the Fountain of Youth</Spanish>
+        <Italian>Voci sulla fontana della giovinezza</Italian>
+        <Spanish>Rumores sobre la Fuente de la Juventud</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_FOUNTAIN_OF_YOUTH</Tag>
+        <English>In Europe there are rumours you've found a map showing the mythical [COLOR_SELECTED_TEXT]Fountain of Youth[COLOR_REVERT]!</English>
+        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé la mythique [COLOR_SELECTED_TEXT]Fontaine de Jouvence[COLOR_REVERT] !</French>
+        <German>Gerüchte breiten sich in Europa aus, dass ihr den mystischen [COLOR_SELECTED_TEXT]Jungbrunnen[COLOR_REVERT] gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUMORS_PIRATE_TREASURE</Tag>
         <English>Rumours about a Pirate Treasure</English>
         <French>Rumeurs à propos du trésor pirate</French>
-        <German>Gerüchte über über einen Piratenschatz</German>
-        <Italian>Rumors about a Pirate Treasure</Italian>
-        <Spanish>Rumors about a Pirate Treasure</Spanish>
+        <German>Gerüchte über einen Piratenschatz</German>
+        <Italian>Voci su un tesoro dei pirati</Italian>
+        <Spanish>Rumores sobre un tesoro pirata</Spanish>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_RUMORS_PIRATE_TREASURE</Tag>
+        <English>In Europe rumours are spreading that you found a map to a huge [COLOR_SELECTED_TEXT]pirate treasure[COLOR_REVERT]!</English>
+        <French>Des rumeurs se répandent en Europe selon lesquelles vous auriez trouvé le mythique [COLOR_SELECTED_TEXT]trésor de Barbe Noire[COLOR_REVERT] !</French>
+        <German>Gerüchte breiten sich in Europa aus, dass ihr eine Karte zu einem riesigen [COLOR_SELECTED_TEXT]Piratenschatz[COLOR_REVERT] gefunden habt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SCOUT</Tag>
@@ -233,12 +305,18 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_SCOUT</Tag>
+        <English>Your unit is now a [COLOR_UNIT_TEXT]Seasoned Scout[COLOR_REVERT]</English>
+        <French>Votre unité est à présent un [COLOR_UNIT_TEXT]Eclaireur aguerri[COLOR_REVERT]</French>
+        <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT]</German>
+        <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT]</Italian>
+        <Spanish>Vuestra unidad ahora es un [COLOR_UNIT_TEXT]Batidor curtido[COLOR_REVERT]</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_SHIPWRECKED</Tag>
-        <English>You have discovered a survivor from a shipwreck!</English>
-        <French>Vous avez découvert les survivants d'un nauffrage !</French>
-        <German>Ihr habt einen Überlebenden eines Schiffsunglücks entdeckt!</German>
-        <Italian>You have discovered a survivor from a shipwreck!</Italian>
-        <Spanish>You have discovered a survivor from a shipwreck!</Spanish>
+        <English>You've discovered a [COLOR_UNIT_TEXT]survivor[COLOR_REVERT] from a shipwreck!</English>
+        <French>Vous avez découvert les [COLOR_UNIT_TEXT]survivants[COLOR_REVERT] d'un nauffrage !</French>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Überlebenden[COLOR_REVERT] eines Schiffsunglücks entdeckt!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_TREASURE</Tag>
@@ -261,162 +339,178 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_TREASURE</Tag>
+        <English>You have discovered ancient treasure!</English>
+        <French>Vous avez découvert un trésor antique !</French>
+        <German>Ihr habt einen antiken Schatz entdeckt!</German>
+        <Italian>Hai scoperto un antico tesoro!</Italian>
+        <Spanish>¡Habéis descubierto un antiguo tesoro!</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_WAR</Tag>
         <English>TXT_KEY_CONCEPT_WAR</English>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_GOODY_ANNOUNCE_WAR</Tag>
+        <English>You have gravely offended the natives, who declare war on you in revenge!</English>
+        <French>Vous avez offensé les indigènes qui vous déclarent la guerre en représailles !</French>
+        <German>Ihr habt die Ureinwohner beleidigt. Sie erklären Euch aus Rache den Krieg!</German>
+        <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
+        <Spanish>Habéis ofendido a los Nativos, que os declaran la guerra como represalia.</Spanish>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_GOODY_RANGER</Tag>
-        <English>You have discovered a wounded ranger who offers his services to us for our help.</English>
-        <German>Ihr habt einen verwundetetn Ranger entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
+        <English>You have discovered a wounded [COLOR_UNIT_TEXT]ranger[COLOR_REVERT] who offers his services to us for our help.</English>
+        <German>Ihr habt einen verwundeten [COLOR_UNIT_TEXT]Ranger[COLOR_REVERT] entdeckt, der uns für unsere Hilfe seine Dienste anbietet!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVE_TRADER</Tag>
-        <English>You have discovered a Native trader who had lost his orientation and now wants to offer his services to you!</English>
-        <German>Ihr habt einen Uhreinwohnerhändler entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet.</German>
+        <English>You have discovered a [COLOR_UNIT_TEXT]Native trader[COLOR_REVERT] who had lost his orientation and now wants to offer his services to you!</English>
+        <German>Ihr habt einen [COLOR_UNIT_TEXT]Ureinwohnerhändler[COLOR_REVERT] entdeckt, der die Orientierung verloren hatte und Euch nun seine Dienste anbietet.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRAZY_SECT_OF_MISSIONARIES</Tag>
-        <English>Sir, we have found Christian missionaries in the wilderness who seem to have gone crazy. They pray to small yellow blue frogs in a pool of water.</English>
-        <German>Sir, wir haben christliche Missionare in der Wildnis gefunden, die anscheinend verrückt sind. Sie beten kleine bunte Frösche in einem Tümpel an.</German>
+        <English>Milord, we've found [COLOR_WARNING_TEXT]Christian missionaries[COLOR_REVERT] in the wilderness who seem to have gone crazy. They pray to small yellow blue frogs in a pool of water.</English>
+        <German>Milord, wir haben [COLOR_WARNING_TEXT]christliche Missionare[COLOR_REVERT] in der Wildnis gefunden, die anscheinend verrückt sind. Sie beten kleine bunte Frösche in einem Tümpel an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HOSTILE_RANGER_IN_THE_WILDERNESS</Tag>
-        <English>Sir, we have found a ranger in the wilderness who refuses to talk to us. Instead when we approach he attacks.</English>
-        <German>Sir, wir haben einen Ranger in der Wildnis gefunden, der sich weigerte mit uns zu reden. Als wir uns dennoch näherten griff er uns an.</German>
+        <English>Milord, we've found a [COLOR_WARNING_TEXT]ranger[COLOR_REVERT] in the wilderness who refuses to talk to us. Instead when we approach he attacks.</English>
+        <German>Milord, wir haben einen [COLOR_WARNING_TEXT]Ranger[COLOR_REVERT] in der Wildnis gefunden, der sich weigerte mit uns zu reden. Als wir uns näherten, griff er uns überraschend an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SEVEN_CITIES_OF_CIBOLA</Tag>
-        <English>We've found the legendary golden city of Cibola. Unfortunately other conquistadores got here before us. They don't want to share its wealth.</English>
-        <German>Wir haben die legendäre goldene Stadt Cibola gefunden. Doch andere Conquistadores haben sie vor uns entdeckt und wollen den Reichtum nicht teilen.</German>
+        <English>We've found the legendary golden city of [COLOR_SELECTED_TEXT]Cibola[COLOR_REVERT]. Unfortunately other [COLOR_WARNING_TEXT]conquistadores[COLOR_REVERT] got here before us. They don't want to share its wealth.</English>
+        <German>Wir haben die legendäre goldene Stadt [COLOR_SELECTED_TEXT]Cibola[COLOR_REVERT] gefunden. Leider haben andere [COLOR_WARNING_TEXT]Konquistadoren[COLOR_REVERT] sie vor uns entdeckt. Sie sind nicht bereit, deren Reichtümer zu teilen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CONQUISTADOR_TREASURE_GUARD</Tag>
-        <English>Sir, we found a mysterious mounted conquistador carrying a small treasure. When we asked where he was from he immediately attacked.</English>
-        <German>Sir, wir haben einen mysteriösen berittenen Conquistador entdeckt der einen kleinen Schatz bei sich trug. Als wir fragten woher er kam griff er uns an.</German>
+        <English>Milord, we found a mysterious [COLOR_WARNING_TEXT]mounted conquistador[COLOR_REVERT] carrying a small treasure. When we asked where he was from he immediately attacked.</English>
+        <German>Milord, wir haben einen mysteriösen [COLOR_WARNING_TEXT]Berittenen Konquistador[COLOR_REVERT] getroffen, der einen kleinen Schatz mit sich führte. Als wir fragten, von woher er kommt, griff er uns unverzüglich an.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_NATIVES_ON_WAR_PATH</Tag>
-        <English>As it seem the Natives in this village have been preparing to go on the warpath. This is going to be a tough fight.</English>
-        <German>So wie es scheint haben sich die Ureinwohner darauf vorbereitet auf den Kriegspfad zu gehen. Dies wird ein schwieriger Kampf.</German>
+        <English>As it seems the [COLOR_WARNING_TEXT]Natives[COLOR_REVERT] in this village have been preparing to go on the warpath. This is going to be a tough fight.</English>
+        <German>So wie es scheint, bereiten sich die [COLOR_WARNING_TEXT]Ureinwohner[COLOR_REVERT] dieser Siedlung darauf vor, auf den Kriegspfad zu gehen. Dies wird ein schwieriger Kampf werden.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_TREASURE_RUN</Tag>
-        <English>Sir, we've found an undefended treasure train belonging to our enemies. Don't let it escape!</English>
-        <German>Sir, wir scheinen einen unverteidigten Schatzzug unserer Feinde entdeckt zu haben. Wir sollten Sie schnell fassen bevor sie fliehen!</German>
+        <English>Milord, we've found an undefended [COLOR_WARNING_TEXT]treasure train[COLOR_REVERT] belonging to our enemies. Don't let it escape!</English>
+        <German>Milord, wir scheinen einen unverteidigten [COLOR_WARNING_TEXT]Schatzzug[COLOR_REVERT] unserer Feinde entdeckt zu haben. Wir sollten sie schnell fassen, bevor sie fliehen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_CRIMINAL_CAMP</Tag>
-        <English>This is nothing but a camp of criminals and outlaws. We'll show them law and order!</English>
-        <German>Dies scheint ein Lager voller Krimineller und Gesetzloser zu sein. Lasst uns ihnen Recht und Gottesfürchtigkeit beibringen.</German>
+        <English>This is nothing but a camp of [COLOR_WARNING_TEXT]criminals and outlaws[COLOR_REVERT]. We'll show them law and order!</English>
+        <German>Dies scheint ein Lager voller [COLOR_WARNING_TEXT]Krimineller und Gesetzloser[COLOR_REVERT] zu sein. Lasst uns ihnen Recht und Gottesfurcht beibringen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DESERTED_MILITIA</Tag>
-        <English>Sir, we've found a coward who deserted from the colonial militia. We must bring him to justice.</English>
-        <German>Sir, es scheint wir haben einen Feigling gefunden, der vor seinen Pflichten in der Kolonialmiliz geflohen ist.</German>
+        <English>Milord, we've found a [COLOR_WARNING_TEXT]coward[COLOR_REVERT] who deserted from the colonial militia. We must bring him to justice.</English>
+        <German>Milord, es scheint, wir haben einen [COLOR_WARNING_TEXT]Fahnenflüchtigen[COLOR_REVERT] gefunden, der feige vor seinen Pflichten in der Kolonialmiliz geflohen ist. Wir sollten ihn seiner gerechten Strafe zuführen, damit er wieder an seine Pflichten erinnert wird.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_NATIVE_SLAVES</Tag>
-        <English>Sir, we've found runaway Native slaves. Let us catch them so we can bring them back to their owners.</English>
-        <German>Sir, wir haben entlaufene Ureinwohnersklaven gefunden. Lasst uns sie ihren rechtmäßigen Besitzern zurückbringen.</German>
+        <English>Milord, we've found runaway [COLOR_WARNING_TEXT]Native slaves[COLOR_REVERT]. Let us catch them so we can bring them back to their owners.</English>
+        <German>Milord, wir haben entlaufene [COLOR_WARNING_TEXT]Versklavte Ureinwohner[COLOR_REVERT] gefunden. Wir sollten sie wieder einfangen und zu ihren rechtmäßigen Besitzern zurückbringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_AFRICAN_SLAVES</Tag>
-        <English>Sir, we've found runaway African slaves. Let us catch them so we can them back to their owners.</English>
-        <German>Sir, wir haben entlaufene Sklaven gefunden. Lasst uns sie ihren rechtmäßigen Besitzern zurückbringen.</German>
+        <English>Milord, we've found runaway [COLOR_WARNING_TEXT]African slaves[COLOR_REVERT]. Let us catch them so we can them back to their owners.</English>
+        <German>Milord, wir haben entlaufene [COLOR_WARNING_TEXT]Versklavte Afrikaner[COLOR_REVERT] gefunden. Wir sollten sie wieder einfangen und zu ihren rechtmäßigen Besitzern zurückbringen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_RUNAWAY_SERVANT</Tag>
-        <English>Sir, we have found a servant who fled a harsh master. He was so scared that he attacked us rather than being brought home.</English>
-        <German>Sir, wir haben einen Diener gefunden, der von den Züchtigungen seines Herrn geflohen ist. Er war so verängstigt nach Hause zu müssen, dass er uns angriff.</German>
+        <English>Milord, we've found an [COLOR_WARNING_TEXT]indentured servant[COLOR_REVERT] who fled a harsh master. He was so scared that he attacked us rather than being brought home.</English>
+        <German>Milord, wir haben einen [COLOR_WARNING_TEXT]Schuldknecht[COLOR_REVERT] gefunden, der von den Züchtigungen seines Herrn geflohen ist. Er war so verängstigt, wieder dorthin zurückgebracht zu werden, daß er uns angriff.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ARMED_NATIVE_SLAVES_COLONY</Tag>
-        <English>Sir, we've found a hidden colony of armed Native slaves. How did they flee? Where did they get those weapons?</English>
-        <German>Sir, wir haben eine versteckte Kolonie von bewaffneten Ureinwohnersklaven gefunden. Wie konnten sie fliehen und woher haben sie diese Waffen?</German>
+        <English>Milord, we've found a hidden village of runaway [COLOR_WARNING_TEXT]Native slaves[COLOR_REVERT], all well armed. How did they flee? Where did they get those weapons?</English>
+        <German>Milord, wir haben ein verstecktes Dorf von entlaufenen [COLOR_WARNING_TEXT]Versklavten Ureinwohnern[COLOR_REVERT] gefunden, die allesamt gut bewaffnet sind. Wie konnten sie fliehen und woher haben sie diese Waffen?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ARMED_AFRICAN_SLAVES_COLONY</Tag>
-        <English>Sir, we've found a hidden colony of armed African Slaves. How did they flee? Where did they get those weapons?</English>
-        <German>Sir, wir haben eine versteckte Kolonie von bewaffneten Sklaven gefunden. Wie konnten sie fliehen und woher haben sie diese Waffen?</German>
+        <English>Milord, we've found a hidden village of runaway [COLOR_WARNING_TEXT]African slaves[COLOR_REVERT], all well armed. How did they flee? Where did they get those weapons?</English>
+        <German>Milord, wir haben ein verstecktes Dorf von entlaufenen [COLOR_WARNING_TEXT]Versklavten Afrikanern[COLOR_REVERT] gefunden, die allesamt gut bewaffnet sind. Wie konnten sie fliehen? Und woher haben sie all diese Waffen?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SCALP_HUNTER</Tag>
-        <English>Sir, we have met heavily armed Native mercenaries. Apparently somebody promised them a bounty for our scalps.</English>
-        <German>Sir, wir haben schwer bewaffnete Ureiwohnersöldner getroffen. Anscheinend hat man ihm ein Kopfgeld für unsere Scalps geboten.</German>
+        <English>Milord, we've met heavily armed [COLOR_WARNING_TEXT]Native mercenaries[COLOR_REVERT]. Apparently somebody promised them a bounty for our scalps.</English>
+        <German>Milord, wir sind auf schwer bewaffnete [COLOR_WARNING_TEXT]Indianische Söldner[COLOR_REVERT] getroffen. Anscheinend hat man ihnen ein Kopfgeld für unsere Scalps geboten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_DAMAGED_WAGON_TRAIN</Tag>
-        <English>Sir, we've found a heavily damaged wagon train in the wilderness. We can repair it but there's no trace of its owners.</English>
-        <German>Sir, wir haben einen schwer beschädigten Wagenzug in der Wildnis gefunden. Wir konnten ihn reparieren, fanden aber keine Spuren seiner Besitzer</German>
+        <English>Milord, we've found a heavily damaged [COLOR_WARNING_TEXT]wagon train[COLOR_REVERT] in the wilderness. We can repair it but there's no trace of its owners.</English>
+        <German>Milord, wir haben einen aufgegebenen [COLOR_WARNING_TEXT]Planwagen[COLOR_REVERT] in der Wildnis gefunden, den wir mit einigem Aufwand reparieren konnten. Von den Besitzern fand sich keinerlei Spur mehr.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ESCAPING_SMUGGLING_SHIP</Tag>
-        <English>Sir, we've found the secret smuggling port of the local black market traders. They're trying to flee with their ship.</English>
-        <German>Sir, anscheinend haben wir den Schmugglerhafen der lokalen Schwarzmarkthändler gefunden. Sie versuchen nun mit ihrem wendigen Schiff zu entkommen.</German>
+        <English>Milord, we've found the secret smuggling port of the local [COLOR_WARNING_TEXT]black market traders[COLOR_REVERT]. They're trying to flee with their ship.</English>
+        <German>Milord, anscheinend haben wir das Versteck der lokalen [COLOR_WARNING_TEXT]Schwarzmarkthändler[COLOR_REVERT] gefunden. Anscheinend vollkommen überrascht, setzen sie eiligst Segel, um doch noch mit ihrem wendigen Schiff zu entkommen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ATTACKING_PIRATE_FRIGATE</Tag>
-        <English>Commander, we have found a half-sunk ship. It looks like it was attacked by pirates.</English>
-        <German>Commader, wir haben ein noch treibendes aber unrettbar beschädigtes Schiff mit Spuren eines Kampfes entdeckt. Es wurde anscheinend von Piraten angegriffen.</German>
+        <English>Milord, we've found a half-sunk ship. It looks like it was attacked by [COLOR_WARNING_TEXT]pirates[COLOR_REVERT].</English>
+        <German>Milord, wir haben ein noch treibendes, aber unrettbar beschädigtes Schiff mit Spuren eines Kampfes entdeckt. Es wurde anscheinend von [COLOR_WARNING_TEXT]Piraten[COLOR_REVERT] angegriffen.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_WOLF_PACK</Tag>
-        <English>Sir, the cave we've found turns out to be the den of a wolf pack. They're back from their hunt, circling us, ready to attack.</English>
-        <German>Sir, die Höhle, die wir betreten haben, scheint das Heim eines Wolfrudels zu sein. Sie sind nun von ihrer Jagd zurückgekehrt und unkreisen uns feindselig.</German>
+        <English>Milord, the cave we've found turns out to be the den of a [COLOR_WARNING_TEXT]wolf pack[COLOR_REVERT]. They're back from their hunt, circling us, ready to attack.</English>
+        <German>Milord, die Höhle, die wir betreten haben, scheint das Heim eines [COLOR_WARNING_TEXT]Wolfsrudels[COLOR_REVERT] zu sein. Sie sind nun von ihrer Jagd zurückgekehrt und kreisen uns immer mehr ein.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_GRIZZLY_GRIM</Tag>
-        <English>Sir, the cave we have found seems to be the home of a grizzly. We've wakened him from his sleep. He doesn't like that.</English>
-        <German>Sir, die Höhle, die wir betreten haben, scheint das Heim eines Grizzlys zu sein. Er scheint es nicht zu mögen, dass wir ihn aus seinem Schlaf geweckt haben.</German>
+        <English>Milord, the cave we've found seems to be the home of a [COLOR_WARNING_TEXT]grizzly[COLOR_REVERT]. We've wakened him from his sleep. He doesn't like that.</English>
+        <German>Milord, die Höhle, die wir betreten haben, scheint das Heim eines [COLOR_WARNING_TEXT]Grizzlys[COLOR_REVERT] zu sein. Er scheint es gar nicht zu mögen, dass wir ihn aus seinem Schlaf geweckt haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SEE_YOU_LATER_ALLIGATOR</Tag>
-        <English>Sir, we have found an alligator nest. These beasts seem to be hungry. We better not get any closer if we don't want to become their lunch.</English>
-        <German>Sir, wir haben ein Alligatornest gefunden. Diese Biester scheinen hungrig zu sein. Wir sollten uns ihnen daher nicht weiter nähern.</German>
+        <English>Milord, we've found an [COLOR_WARNING_TEXT]alligator nest[COLOR_REVERT]. These beasts seem to be hungry. We better not get any closer if we don't want to become their lunch.</English>
+        <German>Milord, wir haben ein ganzes Gelege von [COLOR_WARNING_TEXT]Alligatoren[COLOR_REVERT] gefunden. Diese Biester scheinen hungrig zu sein. Wir sollten uns ihnen daher nicht weiter nähern.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MOTHER_BEAR</Tag>
-        <English>Sir we stumbled across a black mother bear with her cubs. She's charging!.</English>
-        <German>Sir, wir sind über einen Schwarzbärin mit ihrem Jungen gestolpert. Die Mutter stürmt nun auf uns zu um </German>
+        <English>Milord, we stumbled across a [COLOR_WARNING_TEXT]black mother bear[COLOR_REVERT] with her cubs. She's charging!</English>
+        <German>Milord, wir sind über eine [COLOR_WARNING_TEXT]Schwarzbärin[COLOR_REVERT] mit ihrem Jungen gestolpert. Die Mutter stürmt nun auf uns zu, um uns anzugreifen!</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_WHITE_HUNTER_IN_THE_SNOW</Tag>
-        <English>Sir, we have found the most gigantic bear we've ever seen. It is white as snow and incredibly fast and strong.</English>
-        <German>Sir, wir haben den größten Bären aller Zeiten gefunden. Er ist weiß wie Schnee und unglaublich stark und schnell.</German>
+        <English>Milord, we've found the [COLOR_WARNING_TEXT]most gigantic bear[COLOR_REVERT] we've ever seen. It is white as snow and incredibly fast and strong.</English>
+        <German>Milord, wir haben den [COLOR_WARNING_TEXT]größten Bären aller Zeiten[COLOR_REVERT] gefunden. Er ist weiß wie Schnee, unglaublich stark und sehr schnell.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_LYNX_TRAIL</Tag>
-        <English>Sir, we have found a dead dear. Our scouts report that all footprints and traces point towards a lynx hunting in this area.</English>
-        <German>Sir, wir haben ein totes Reh gefunden. Unsere Späher berichten, dass die Fußabdrücke und andere Spuren auf einen Luchs hindeuten, der in dieser Gegend jagt.</German>
+        <English>Milord, we've found a dead dear. Our scouts report that all footprints and traces point towards a [COLOR_WARNING_TEXT]lynx[COLOR_REVERT] hunting in this area.</English>
+        <German>Milord, wir haben ein totes Reh gefunden. Unsere Späher berichten, dass die Spuren auf einen [COLOR_WARNING_TEXT]Luchs[COLOR_REVERT] hindeuten, der in dieser Gegend jagt.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_SHADOW_IN_THE_JUNGLE</Tag>
-        <English>Sir, our men report that they have seen a shadow moving in the trees. Maybe we should listen to them and get ready for an attack.</English>
-        <German>Sir, unsere Männer berichten über einen Schatten, der sich in den Bäumen bewegt. Wir sollten vielleicht auf sie hören und uns auf einen Angriff vorbereiten.</German>
+        <English>Milord, our men report that they have seen [COLOR_WARNING_TEXT]a shadow moving in the trees[COLOR_REVERT]. Maybe we should listen to them and get ready for an attack.</English>
+        <German>Milord, unsere Männer berichten über einen [COLOR_WARNING_TEXT]Schatten, der sich in den Bäumen bewegt[COLOR_REVERT]. Wir sollten vielleicht auf sie hören und uns auf einen Angriff vorbereiten.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_COUGAR_IN_THE_NIGHT</Tag>
-        <English>Sir, the men at the campfire report to have heard faint noises in the grass. We think a big cat or some other predator is close by.</English>
-        <German>Sir, die Männer am Lagerfeuer berichten, dass sie leise Geräusche im Gras gehört haben. Wir vermuten eine Raubkatze oder ein anderes Raubtier in der Nähe.</German>
+        <English>Milord, the men at the campfire report to have heard faint noises in the grass. We think a [COLOR_WARNING_TEXT]big cat[COLOR_REVERT] or some other predator is close by.</English>
+        <German>Milord, die Männer am Lagerfeuer berichten, daß sie leise Geräusche im Gras gehört haben. Wir vermuten eine [COLOR_WARNING_TEXT]Raubkatze[COLOR_REVERT] oder ein anderes Raubtier in der Nähe.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_GREAT_WHITE</Tag>
-        <English>Sir, there are remnants of a sunken ship along with dead sailors floating in the water. Their blood  has attracted a great white shark.</English>
-        <German>Sir, es triben Teile eines gesunken Schiffes und auch Körper toter Seemänner im Wasser. Ihr Blut scheint einen Weissen Hai angelockt zu haben.</German>
+        <English>Milord, there are remnants of a sunken ship along with dead sailors floating in the water. Their blood has attracted a [COLOR_WARNING_TEXT]great white shark[COLOR_REVERT].</English>
+        <German>Milord, zwischen den Wrackteilen eines gesunkenen Schiffes treiben auch die Körper toter Seeleute im Wasser. Ihr Blut scheint einen [COLOR_WARNING_TEXT]Weissen Hai[COLOR_REVERT] angelockt zu haben.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MOBY_DICK</Tag>
-        <English>Sir, something gigantic must have rammed and nearly sunk that ship. But what could have been that huge?</English>
-        <German>Sir, irgendetwas riesiges scheint dieses Schiff gerammt und dadurch fast versenkt zu haben. Aber was kann so groß gewesen sein?</German>
+        <English>Milord, something [COLOR_WARNING_TEXT]gigantic[COLOR_REVERT] must have rammed and nearly sunk that ship. But what could have been that huge?</English>
+        <German>Milord, irgendetwas [COLOR_WARNING_TEXT]Riesiges[COLOR_REVERT] scheint dieses Schiff gerammt und beinahe zum Kentern gebracht zu haben. Aber was kann so groß gewesen sein?</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_KRAKEN_ARMS</Tag>
-        <English>Sir, it seems this ship has been ripped apart by incredible forces. One of our old sailors swears that this could only have been a giant kraken.</English>
-        <German>Sir, es scheint dass dieses Schiff von unglaublichen Kräften auseinander gerissen wurde. Laut unsere Schiffsmannschaft, kann dies nur ein Riesenkrake gewesen sein.</German>
+        <English>Milord, it seems this ship has been ripped apart by incredible forces. One of our old sailors swears that this could only have been a [COLOR_WARNING_TEXT]giant kraken[COLOR_REVERT].</English>
+        <German>Milord, es scheint, dass dieses Schiff von unglaublichen Kräften auseinander gerissen wurde. Die alten Seebären in unserer Besatzung sind sich einig, daß dies nur ein außerordentlich [COLOR_WARNING_TEXT]großer Krake[COLOR_REVERT] gewesen sein kann.</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ORCA_SCHOOOL</Tag>
-        <English>Sir, the debris from of this ship has interested some orcas. Several of them are swimming around our ship but they haven't attacked yet.</English>
-        <German>Sir, die treibenden Schiffsteile scheinen einige Orcas angelockt zu haben. Mehrere von ihnen schwimmen um uns herum ohne bisher anzugreifen.</German>
+        <English>Milord, the debris from of a sunken ship has interested some [COLOR_WARNING_TEXT]orcas[COLOR_REVERT]. Several of them are swimming around our ship but they haven't attacked yet.</English>
+        <German>Milord, die treibenden Wrackteile eines gesunkenen Schiffes haben einige [COLOR_WARNING_TEXT]Orcas[COLOR_REVERT] angelockt. Mehrere von ihnen umkreisen unser Schiff, allerdings ohne uns anzugreifen.</German>
     </TEXT>
 </Civ4GameText>

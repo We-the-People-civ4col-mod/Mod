@@ -1130,14 +1130,6 @@
         <Spanish>[ICON_BULLET]Por valor de %d1 [ICON_GOLD]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_TREASURE</Tag>
-        <English>You have discovered ancient treasure!</English>
-        <French>Vous avez découvert un trésor antique !</French>
-        <German>Ihr habt einen antiken Schatz entdeckt!</German>
-        <Italian>Hai scoperto un antico tesoro!</Italian>
-        <Spanish>¡Habéis descubierto un antiguo tesoro!</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_UNIT_CARGO</Tag>
         <English>[ICON_BULLET]Can be transported by [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Peut être transporté par [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT]</French>
@@ -1536,70 +1528,6 @@
         <German>[ICON_BULLET]Bessere Ergebnisse durch antike Ruinen</German>
         <Italian>[ICON_BULLET]Migliori risultati dalle antiche rovine</Italian>
         <Spanish>[ICON_BULLET]Mejor resultado de las Ruinas antiguas</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD</Tag>
-        <English>You have discovered valuable artifacts!</English>
-        <French>Vous avez découvert de précieux artefacts !</French>
-        <German>Ihr habt wertvolle Artefakte entdeckt!</German>
-        <Italian>Hai scoperto preziosi manufatti!</Italian>
-        <Spanish>¡Habéis descubierto artefactos valiosos!</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP</Tag>
-        <English>You have discovered an ancient map!</English>
-        <French>Vous avez découvert une carte antique !</French>
-        <German>Einheimische Jäger haben in das alte Gemäuer eine Skizze der Umgebung eingeritzt. Welch hilfreicher Fund!</German>
-        <Italian>Hai scoperto un'antica mappa!</Italian>
-        <Spanish>¡Habéis descubierto un mapa antiguo!</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE</Tag>
-        <English>The discovery has given your unit experience!</English>
-        <French>Cette découverte a conféré de l'expérience à votre unité !</French>
-        <German>Durch diese Entdeckung hat Eure Einheit an Erfahrung gewonnen!</German>
-        <Italian>La scoperta ha fatto crescere l'esperienza dell'unità!</Italian>
-        <Spanish>¡El descubrimiento le ha dado experiencia a la unidad!</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_HEALING</Tag>
-        <English>A Native tribe has healed your unit!</English>
-        <French>Une tribu indigène a soigné votre unité !</French>
-        <German>Ein Ureinwohnerstamm hat Eure Einheit geheilt!</German>
-        <Italian>Una tribù di nativi ha curato l'unità!</Italian>
-        <Spanish>¡Una tribu nativa ha curado a vuestra unidad!</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_HOSTILE</Tag>
-        <English>You have offended the Natives, who attack your unit in revenge!</English>
-        <French>Vous avez offensé les indigènes qui attaquent votre unité en représailles !</French>
-        <German>Ihr habt die Ureinwohner beleidigt. Sie greifen Euch aus Rache an!</German>
-        <Italian>Hai offeso i nativi, che attaccano la tua unità!</Italian>
-        <Spanish>¡Habéis ofendido a los Nativos, que atacan a vuestra unidad como venganza!</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_BURIAL_GROUNDS</Tag>
-        <English>You have discovered what appear to be Native burial grounds. Do you wish to search for treasure?</English>
-        <French>Vous avez découvert ce qui semble être un cimetière indigène. Voulez-vous explorer ce trésor? </French>
-        <German>Ihr habt etwas entdeckt, das wie eine Ureinwohner-Grabstätte aussieht. Wollt Ihr nach Schätzen suchen?</German>
-        <Italian>Hai scoperto quello che sembra un cimitero dei nativi. Vuoi cercare dei tesori?</Italian>
-        <Spanish>Habéis descubierto lo que parecen ser Túmulos funerarios de los Nativos. ¿Queréis buscar tesoros?</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_WAR</Tag>
-        <English>You have gravely offended the Natives, who declare war on you in revenge!</English>
-        <French>Vous avez offensé les indigènes qui vous déclarent la guerre en représailles !</French>
-        <German>Ihr habt die Ureinwohner beleidigt. Sie erklären Euch aus Rache den Krieg!</German>
-        <Italian>Hai offeso i nativi, che ti dichiarano guerra!</Italian>
-        <Spanish>Habéis ofendido a los Nativos, que os declaran la guerra como represalia.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_GOODY_ANNOUNCE_SCOUT</Tag>
-        <English>Your unit is now a [COLOR_UNIT_TEXT]seasoned scout[COLOR_REVERT]</English>
-        <French>Votre unité est à présent un [COLOR_UNIT_TEXT]Eclaireur aguerri[COLOR_REVERT]</French>
-        <German>Eure Einheit ist jetzt ein [COLOR_UNIT_TEXT]Routinierter Späher[COLOR_REVERT]</German>
-        <Italian>La tua unità è ora uno [COLOR_UNIT_TEXT]scout esperto[COLOR_REVERT]</Italian>
-        <Spanish>Vuestra unidad ahora es un [COLOR_UNIT_TEXT]Batidor curtido[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_REBEL_MOD</Tag>

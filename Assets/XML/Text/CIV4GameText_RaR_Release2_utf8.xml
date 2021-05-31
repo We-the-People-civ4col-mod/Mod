@@ -126,14 +126,6 @@
         <Spanish>[COLOR_POSITIVE_TEXT]An unfree colonist has become free for his bravery in battle.[COLOR_REVERT]</Spanish>
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GOODY_DESERTED_SHIP</Tag>
-        <English>You have discovered a ship drifting on the sea! All the sailors are dead. They seem to have died of thirst.</English>
-        <French>Vous avez découvert un navire flottant sur les mers ! Tous les marins sont morts. Il semble par déshydratation.</French>
-        <German>Ihr habt ein steuerlos treibendes Schiff im offenen Meer entdeckt! Die gesamte Besatzung ist to. Es scheint als sei sie verdurstet.</German>
-        <Italian>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Italian>
-        <Spanish>You have discovered a ship floating in the seas! All sailors are dead. They seem to have died of thirst.</Spanish>
-    </TEXT>
-    <TEXT>
         <Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
         <English>Great Admiral: %d1_Curr/%d2_Need Experience</English>
         <French>Amiral illustre : %d1_Curr/%d2_Need expérience</French>
