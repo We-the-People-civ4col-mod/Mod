@@ -894,6 +894,23 @@ namespace
 		// Plot is considered safe if not filtered(i.e. rejected) by any of the above functions
 		return true;
 	}
+
+	// Utility function to quickly determine if the target plot is a sensible choice or not
+	bool AI_allowMove(const CvSelectionGroup& kGroup, const CvPlot& kDestinationPlot)
+	{
+		if (kDestinationPlot.isGoody())
+		{
+			// Popping a land goody in owned terrioritory may result in a war declaration
+			// unless the unit has the isNoBadGoodies flag set
+			if (kGroup.getDomainType() == DOMAIN_LAND && kDestinationPlot.isOwned())
+			{
+				if (!kGroup.getHeadUnit()->isNoBadGoodies())
+					return false;
+			}
+		}
+
+		return true;
+	}
 }
 
 int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
@@ -934,6 +951,9 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 		{
 			if (!isPlotSafe(*pSelectionGroup, iToX, iToY))
 				return FALSE;		
+
+			if (!AI_allowMove(*pSelectionGroup, kToPlot))
+				return FALSE;
 		}
 		// BETTER_BTS_AI_MOD: END
 	}
