@@ -1204,384 +1204,288 @@
         <English>Six ships of the line</English>
         <French>Six galions de guerre</French>
         <German>Sechs Linienschiffe</German>
-        <Italian>Six ships of the line</Italian>
-        <Spanish>Six ships of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_HEAD</Tag>
         <English>Majestic</English>
         <French>Six galions de guerre</French>
         <German>Majestätisch</German>
-        <Italian>Six ships of the line</Italian>
-        <Spanish>Six ships of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_TEXT</Tag>
-        <English>Six great battleships patrol the waves.[NEWLINE][NEWLINE]The glowing ball of the evening sun lights the firmament on fire as it sinks into the ocean.[NEWLINE][NEWLINE]Weary, the people trudge home from the day's work. The farmers leave the fields, the woodcutters the forest, the carpenters their workshops.[NEWLINE][NEWLINE]Before entering their homes they cast an awe-struck glance toward the sea. But it is not the brilliant sky that captivates them - it is instead the mighty warship gliding along the coast in majestic calm: one of six battleships which make you, the governor, the ruler of these shores.[NEWLINE][NEWLINE]</English>
+        <English>Six great battleships patrol the waves.[NEWLINE][NEWLINE]The glowing ball of the evening sun lights the firmament on fire as it sinks into the ocean.[NEWLINE][NEWLINE]Weary, the people trudge home from the day's work. Farmers leave the fields, woodcutters the forest, the carpenters their workshops.[NEWLINE][NEWLINE]Before entering their homes they cast an awe-struck glance toward the sea. It's not the brilliant sky that captivates them - it is instead the mighty warship gliding along the coast in majestic calm: one of six battleships which make you, the governor, the ruler of these shores.[NEWLINE][NEWLINE]</English>
         <French>Six galions de guerre arborent les mers battant le pavillon de nos colonies.[NEWLINE][NEWLINE]</French>
         <German>Der Glutball der Abendsonne entflammt das Firmament, bevor er in den Fluten versinkt.[NEWLINE][NEWLINE]Ermattet schreiten die Menschen vom vollbrachten Tagewerk nach Hause. Die Bauern verlassen die Felder, die Holzfäller den Forst, die Zimmermänner ihre Werkstätten.[NEWLINE][NEWLINE]Bevor sie ihre Heime betreten, werfen sie einen ehrfurchtsvoll staunenden Blick aufs Meer. Doch ist es nicht der Weltenbrand am Himmel, der sie bannt - es ist vielmehr der Anblick eines mächtigen Linienschiffes, das in majestätischer Ruhe die Küste entlang gleitet. Einem von nunmehr sechs Schlachtschiffen, mit denen Ihr, der Gouverneur, Euch zum Herrscher dieser Gestade aufschwingt.[NEWLINE][NEWLINE]</German>
-        <Italian>You have got six ships of the line.</Italian>
-        <Spanish>You have got six ships of the line.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE</Tag>
         <English>Twelve ships of the line</English>
         <French>Douze galions de guerre</French>
         <German>Zwölf Linienschiffe</German>
-        <Italian>Twelve ships of the line</Italian>
-        <Spanish>Twelve ships of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_HEAD</Tag>
-        <English>Bear hunting</English>
+        <English>Loaded For Bear</English>
         <French>Douze galions de guerre</French>
         <German>Bärenjagd</German>
-        <Italian>Twelve ships of the line</Italian>
-        <Spanish>Twelve ships of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_TEXT</Tag>
-        <English>Twelve great battleships strike fear into the hearts of your enemies.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That ship of the line is smaller than ours![COLOR_REVERT]" Frowning, the captain of the Royal Navy sets down his telescope. "[COLOR_SELECTED_TEXT]But many wolves can be dangerous to a bear.[COLOR_REVERT]"[NEWLINE][NEWLINE]He turns away from the railing and sees his spy, who has been listening to everything in the colony's coastal towns for the past few weeks.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You said they've already launched twelve of these ships of the line? Well, His Majesty won't like to hear that.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>Twelve great battleships strike fear into the hearts of your enemies.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That ship of the line is smaller than ours![COLOR_REVERT]" Frowning, the Royal Navy captain sets down his telescope. "[COLOR_SELECTED_TEXT]But many wolves can be dangerous to a bear.[COLOR_REVERT]"[NEWLINE][NEWLINE]He turns away from the railing and sees his spy, who has been listening to everything in the colony's coastal towns for the past few weeks.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You said they've already commissioned twelve of these ships of the line? His Majesty won't like to hear that.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez douze galions de guerre. Vos ennemis tremblent de peur.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Dieses Linienschiff ist kleiner als die unsrigen![COLOR_REVERT]" Stirnrunzelnd setzt der Kapitän der Königlichen Marine sein Fernrohr ab. "[COLOR_SELECTED_TEXT]Aber viele Füchse können einem Bären gefährlich werden.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er dreht sich von der Reling weg und mustert seinen Spion, der in den letzten Wochen in den Küstenstädten der Kolonie die Ohren gespitzt hatte.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr sagtet, sie hätten bereits zwölf dieser Linienschiffe vom Stapel laufen lassen? Nun, das wird Seine Majestät nicht gerne vernehmen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have got twelve great battleships. Your enemies are very impressed.</Italian>
-        <Spanish>You have got twelve great battleships. Your enemies are very impressed.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR</Tag>
         <English>Your first top ship of the line</English>
         <French>Votre premier vaisseau de guerre</French>
         <German>Euer erstes Linienschiff 1. Klasse</German>
-        <Italian>Your first first-rate ship of the line</Italian>
-        <Spanish>Your first first-rate ship of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR_HEAD</Tag>
-        <English>Your first three-decker</English>
+        <English>Your First Three-Decker</English>
         <French>Votre premier vaisseau de guerre</French>
         <German>Euer erster Dreidecker</German>
-        <Italian>Your first first-rate ship of the line</Italian>
-        <Spanish>Your first first-rate ship of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR_TEXT</Tag>
-        <English>Your navy has grown stronger again. The king has sent a first-rate ship of the line to defend his colonies against all enemies. This ship is the largest man-of-war in your fleet and should be used as your flagship![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A truly magnificent and powerful ship, Admiral. 100 guns, 950 crew, thick oak planks, a veritable fortress at sea. We can protect our colonies with this, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Maybe so, Colonel. But the ship is new and the crew is not yet very familiar with her. I'll have the captain practice with the guns every day starting today, and on all three decks.[NEWLINE][NEWLINE]Have your officers drill the marines vigorously. We'll know in a month's time whether we have the most powerful ship in these waters. But before that, we have a lot of work to do![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir. We will begin training the marines immediately.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>Your navy has grown stronger again. The King has sent a first-rate ship of the line to defend his colonies against all enemies. This ship is the largest man-of-war in your fleet and should be used as your flagship![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A truly magnificent and powerful ship, Admiral. 100 guns, 950 crew, thick oak planks, a veritable fortress at sea. We can protect our colonies with this, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Maybe so, Colonel. But the ship is new and the crew is not yet very familiar with her. I'll have the captain practice with the guns every day, starting today and on all three decks.[NEWLINE][NEWLINE]Have your officers drill the marines vigorously. We'll know in a month's time whether we have the most powerful ship in these waters. Before that we have a lot of work to do![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir. We will begin training the marines immediately.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Le Roi vous a envoyé un vaisseau de guerre pour défendre ses colonies contre nos ennemis. Un bâtiment d'une telle puissance vous fait un magnifique navire amiral.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Ein wahrlich herrliches und mächtiges Schiff, Admiral. 100 Kanonen, 950 Mann Besatzung, Planken so dick wie Eichen. Eine wahre Festung auf See. Damit können wir unsere Kolonien beschützen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mag sein, Colonel. Aber das Schiff ist neu und die Mannschaft ist noch nicht sehr vertraut mit ihr. Ich lasse den Kapitän ab heute täglich mit den Kanonen üben und zwar auf allen drei Decks.[NEWLINE][NEWLINE]Lassen Sie Ihre Offiziere die Seesoldaten ebenfalls kräftig drillen. In einem Monat sehen wir weiter, dann haben wir vielleicht das kampfkräftigste Schiff in diesen Gewässern. Aber vorher haben wir noch eine Menge Arbeit vor uns![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir. Wir werden sofort mit der Ausbildung der Seesoldaten beginnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>Your navy has grown stronger again. The king has sent a first-rate ship of the line to defend his colonies against all enemies. This ship is the largest man-of-war of your fleet and should be used as your flagship![NEWLINE][NEWLINE]</Italian>
-        <Spanish>Your navy has grown stronger again. The king has sent a first-rate ship of the line to defend his colonies against all enemies. This ship is the largest man-of-war of your fleet and should be used as your flagship![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC</Tag>
         <English>Five Native Mercenaries</English>
         <French>Cinq mercenaires indiens</French>
         <German>Fünf indianische Söldner</German>
-        <Italian>Five Native Mercenaries</Italian>
-        <Spanish>Five Native Mercenaries</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_HEAD</Tag>
-        <English>Not much fuss</English>
+        <English>Quiet and Deadly</English>
         <French>Cinq mercenaires indiens</French>
         <German>Nicht viel Federlesen</German>
-        <Italian>Five Native Mercenaries</Italian>
-        <Spanish>Five Native Mercenaries</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_TEXT</Tag>
-        <English>You have recruited five native mercenaries. Your European enemies offer cash for your scalps. Now you have local fighters to protect you.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]... and then they flutter away on their eagle wings, gurruuh![COLOR_REVERT]" Laughing, the young recruit staggers around the campfire, a chicken feather in his hand.[NEWLINE][NEWLINE]Just then a scarred soldier yanks the drunkard down to the ground. "[COLOR_SELECTED_TEXT]Hush, you fool, don't mock, you have no idea![COLOR_REVERT]" he snaps at him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Back at the Broken Horn, they took out one of the enemy's gun emplacements, five men! Only one shot was fired, their signal that the coast is clear now.[COLOR_REVERT]"[NEWLINE][NEWLINE]The veteran holds the young soldier tightly with one hand, picks up the chicken feather with the other and strokes it slowly across the boy's throat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Only one shot, otherwise silence.[COLOR_REVERT]"[NEWLINE][NEWLINE]The recruit looks uncertainly at his comrades; no one returns his weak smile.[NEWLINE][NEWLINE]</English>
+        <English>You've recruited five Native mercenaries. Your European enemies offer cash for your scalps. Now your own local fighters protect you.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]... and then they flutter away on their eagle wings, gurruuh![COLOR_REVERT]" Laughing, the young recruit staggers around the campfire, a chicken feather in his hand.[NEWLINE][NEWLINE]Just then a scarred soldier yanks the drunkard down to the ground. "[COLOR_SELECTED_TEXT]Hush, you fool, don't mock, you have no idea![COLOR_REVERT]" he snaps at him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Back at the Broken Horn, they took out one of the enemy's gun emplacements, five men! Only one shot was fired, their signal that the coast is clear now.[COLOR_REVERT]"[NEWLINE][NEWLINE]The veteran holds the young soldier tightly with one hand, picks up the chicken feather with the other and strokes it slowly across the boy's throat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Only one shot, otherwise silence start to finish.[COLOR_REVERT]"[NEWLINE][NEWLINE]The recruit looks uncertainly at his comrades; no one returns his weak smile.[NEWLINE][NEWLINE]</English>
         <French>Vous avez cinq mercenaires indiens. Voilà une force efficace mais discrète.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]... und dann flattern sie davon mit ihren Adlerschwingen, gurruuh![COLOR_REVERT]" Lachend torkelt der junge Rekrut um das Lagerfeuer, eine Hühnerfeder in der Hand.[NEWLINE][NEWLINE]Da reißt ein vernarbter Soldat den Trunkenbold zu Boden. "[COLOR_SELECTED_TEXT]Still, du Narr, spotte nicht, du hast ja keine Ahnung![COLOR_REVERT]", schnauzt er ihn an.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Damals am Gebrochenen Horn, da haben sie eine Geschützstellung des Feindes ausgeschaltet, zu fünft! Dabei fiel nur ein einziger Schuss, ihr Signal, dass die Luft jetzt rein ist.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Veteran drückt den Blassgewordenen mit einer Hand fest hinunter, hebt mit der anderen die Hühnerfeder auf und streicht mit ihr langsam über die Kehle des Jungen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nur ein Schuss, ansonsten Stille.[COLOR_REVERT]" Unsicher schaut der Rekrut zu den Kameraden, niemand erwidert sein schwaches Lächeln.[NEWLINE][NEWLINE]</German>
-        <Italian>You have got five native mercs. That is quite a task force.</Italian>
-        <Spanish>You have got five native mercs. That is quite a task force.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH</Tag>
         <English>First stagecoach</English>
         <French>Premiçre diligence</French>
         <German>Eure erste Postkutsche</German>
-        <Italian>First stagecoach</Italian>
-        <Spanish>First stagecoach</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH_HEAD</Tag>
-        <English>Faster than death</English>
+        <English>Up-To-Date Transportation</English>
         <French>Premiçre diligence</French>
         <German>Schneller als der Tod</German>
-        <Italian>First stagecoach</Italian>
-        <Spanish>First stagecoach</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH_TEXT</Tag>
-        <English>You have built a stagecoach. A bit of a bumpy ride, but it is quick.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What's all this pointless rushing, heaven knows, I would ...[COLOR_REVERT]", the rest is lost in a violent fit of coughing from the old farmer.[NEWLINE][NEWLINE]His son grips the reins of the ox team tighter and grins under his hat. The stagecoach thundering past is already disappearing into the distant heat shimmer, with only a cloud of dust still hanging lazily in the air.[NEWLINE][NEWLINE]Carefully, the boy pushes the cloth down: "[COLOR_SELECTED_TEXT]Without the stagecoach, the old doctor from the city would never have made it to mother in time. You know that, father![COLOR_REVERT]"[NEWLINE][NEWLINE]The old farmer spits noisily over his oxen and grumbles, "[COLOR_SELECTED_TEXT]Thanks to this wretched carriage, you'll get the priest to my deathbed in time.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You can count on it, father![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have built a stagecoach. A bit of a bumpy ride, but it's quick.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What's all this pointless rushing, heaven knows, I would ...[COLOR_REVERT]", the rest is lost in a violent fit of coughing from the old farmer.[NEWLINE][NEWLINE]His son grips the reins of the ox team tighter and grins under his hat. The stagecoach thundering past is already disappearing into the distant heat shimmer, with only a cloud of dust still hanging lazily in the air.[NEWLINE][NEWLINE]Carefully the boy pushes the cloth down: "[COLOR_SELECTED_TEXT]Without the stagecoach, the old doctor from the city would never have made it to mother in time. You know that, father![COLOR_REVERT]"[NEWLINE][NEWLINE]The old farmer spits noisily over his oxen and grumbles, "[COLOR_SELECTED_TEXT]Thanks to this wretched carriage, you'll get the priest to my deathbed in time.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You can count on it, father![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez une diligence. Ça va secouer les colons, mais la diligence est un moyen de transport rapide et sûr.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Was ist das nur für ein sinnloses Hasten, Himmel noch eins, ich würde ...[COLOR_REVERT]", der Rest geht in einem heftigen Hustenanfall des alten Bauern unter.[NEWLINE][NEWLINE]Sein Sohn packt die Zügel des Ochsengespanns fester und grinst unter seinem Staubtuch. Die vorbei gedonnerte Postkutsche verschwindet bereits im fernen Hitzeflimmern der Straße, nur die aufgewirbelte Staubwolke hängt noch träge in der Luft.[NEWLINE][NEWLINE]Vorsichtig schiebt der Junge das Tuch nach unten: "[COLOR_SELECTED_TEXT]Ohne die Postkutsche hätte es der alte Doktor aus der Stadt nie rechtzeitig zu Mutter geschafft, das weißt du, Vater![COLOR_REVERT]"[NEWLINE][NEWLINE]Geräuschvoll spuckt der alte Bauer über seine Ochsen und brummt: "[COLOR_SELECTED_TEXT]Dank dieses vermaledeiten Wagens wirst du mir noch rechtzeitig nen Pfaffen ans Sterbebett holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Worauf du dich verlassen kannst, Vater![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have got a stagecoach. It will rock your citizens bones, but it is quick.</Italian>
-        <Spanish>You have got a stagecoach. It will rock your citizens bones, but it is quick.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER</Tag>
         <English>Your first troop carrier</English>
         <French>Premier transport</French>
         <German>Euer erster Truppentransporter</German>
-        <Italian>First carrier</Italian>
-        <Spanish>First carrier</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER_HEAD</Tag>
-        <English>Up on ox'back</English>
+        <English>Your First Troop Carrier</English>
         <French>Premier transport</French>
         <German>Hoch zu Ochs'</German>
-        <Italian>First carrier</Italian>
-        <Spanish>First carrier</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER_TEXT</Tag>
-        <English>You have got a carrier. Don't let your lads march too far.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]My brother, well, he's up north with the 52nd Mounted, so that's why I enlisted in the first place.[NEWLINE][NEWLINE]Chasing the enemy with lightning speed, bullets and sabre, and then back like the wind before they know what hit them.[COLOR_REVERT]"[NEWLINE][NEWLINE]The lanky lad scratches his clean-shaven chin. "[COLOR_SELECTED_TEXT]And now you're sitting here with four other greenhorns in a glorified oxcart bouncing over the road, that's what I call bad luck.[COLOR_REVERT]"[NEWLINE][NEWLINE]The sergeant is about to slap the young man on the back when the next pothole throws the uniformed crowd into confusion.[NEWLINE][NEWLINE]Cursing, the men sort out their badly battered limbs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Keep him going like that,[COLOR_REVERT]" one of them yells, holding his bleeding nose, "[COLOR_SELECTED_TEXT]and he'll be roasting in the campfire tonight next to his oxes![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>"[COLOR_SELECTED_TEXT]My brother, well, he's up north with the 52nd Mounted, so that's why I enlisted in the first place.[NEWLINE][NEWLINE]Chasing the enemy with lightning speed, bullets and sabre, and then back like the wind before they know what hit them.[COLOR_REVERT]"[NEWLINE][NEWLINE]The lanky lad scratches his clean-shaven chin. "[COLOR_SELECTED_TEXT]And now you're sitting here with four other greenhorns in a glorified oxcart bouncing over the road, that's what I call bad luck.[COLOR_REVERT]"[NEWLINE][NEWLINE]The sergeant is about to slap the young man on the back when the next pothole throws the uniformed crowd into confusion.[NEWLINE][NEWLINE]Cursing, the men sort out their badly battered limbs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Keep him going like that,[COLOR_REVERT]" one of them yells, holding his bleeding nose, "[COLOR_SELECTED_TEXT]and he'll be roasting in the campfire tonight next to his oxen![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez un transport. Ne laissez pas vos gars trop s'éloigner.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Mein Bruder, also der ist im Norden bei den 52. Berittenen, also wegen dem hab ich mich überhaupt gemeldet.[NEWLINE][NEWLINE]Blitzschnell an den Feind jagen, mit Blei und Säbel drauf, und dann zurück wie der Wind, bevor die auch nur wissen, was sie da getroffen hat.[COLOR_REVERT]"[NEWLINE][NEWLINE]Versonnen kratzt der schmächtige Bursche sein glattrasiertes Kinn. "[COLOR_SELECTED_TEXT]Und nu sitzt du hier mit zwanzig anderen Grünschnäbeln im Ochsenkarren und wirst in der Etappe rumgeruckelt, das nenn ich Pech.[COLOR_REVERT]"[NEWLINE][NEWLINE]Tröstlich will der Feldwebel dem Jüngling auf den Rücken schlagen, als das nächste Schlagloch die uniformierte Schar durcheinander würfelt.[NEWLINE][NEWLINE]Fluchend sortieren die Männer ihre arg geschundenen Glieder.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Fahr er nur weiter so, [COLOR_REVERT]" brüllt einer, der sich die blutende Nase hält, "[COLOR_SELECTED_TEXT]und er brät heute im Lager neben seinen Zugtieren![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have got a carrier. Dont let your lads march too far.</Italian>
-        <Spanish>You have got a carrier. Dont let your lads march too far.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL</Tag>
         <English>Your first great general</English>
         <French>Premier général illustre</French>
         <German>Euer erster Großer General</German>
-        <Italian>First great general</Italian>
-        <Spanish>First great general</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL_HEAD</Tag>
-        <English>True greatness</English>
+        <English>The Test Of Greatness</English>
         <French>Premier général illustre</French>
         <German>Wahre Größe</German>
-        <Italian>First great general</Italian>
-        <Spanish>First great general</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL_TEXT</Tag>
         <English>Your first great general is awaiting your orders. Use him wisely![NEWLINE][NEWLINE]Excitedly you turn over the medal in your hands. The famous general is about to arrive. A short time later, a small man stands before you who, with his watery eyes, soft handshake and taut uniform, does not exactly correspond to your image of a war hero.[NEWLINE][NEWLINE]You pull yourself together and congratulate him; after all, he has led your cause to victory.[NEWLINE][NEWLINE]After the award ceremony, you watch from the window as he walks through the cheering crowd, in which there are conspicuously many wounded. Shaking your head, you turn away.[NEWLINE][NEWLINE]Then your gaze falls on the wounded man's bag, which he must have forgotten, and you realise why many of his soldiers are still capable of cheering.[NEWLINE][NEWLINE]You quickly open the window and join in the cheers.[NEWLINE][NEWLINE]</English>
         <French>Votre premier général illustre attend vos ordres, utilisez le avec sagesse ![NEWLINE][NEWLINE]</French>
         <German>Aufgeregt spielt Ihr mit dem Orden in Euren Händen, gleich soll der allerorten gerühmte General eintreffen. Wenig später steht ein kleiner Mann vor euch, der mit wässrigem Blick, weichem Händedruck und am Bauch spannender Uniform nicht gerade Eurem Bild eines Kriegshelden entspricht.[NEWLINE][NEWLINE]Ihr reißt Euch zusammen und gratuliert, letztlich hat er doch Eure Sache zu einem siegreichen Ende geführt.[NEWLINE][NEWLINE]Nach der Ordensverleihung verfolgt Ihr vom Fenster seinen Gang durch die jubelnde Menge, in der auffällig viele Verwundete zu sehen sind. Kopfschüttelnd wendet Ihr Euch ab.[NEWLINE][NEWLINE]Da fällt Euer Blick auf die Wundarzttasche, die der Gepriesene wohl vergaß, und Euch wird klar, warum viele seiner Soldaten des Jubelns noch fähig sind.[NEWLINE][NEWLINE]Schnell öffnet Ihr das Fenster und stimmt in die Hochrufe mit ein.[NEWLINE][NEWLINE]</German>
-        <Italian>Your first great general is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</Italian>
-        <Spanish>Your first great general is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_ADMIRAL</Tag>
         <English>Your first great admiral</English>
         <French>Votre premier Amiral illustre</French>
         <German>Euer erster Großer Admiral</German>
-        <Italian>First great admiral</Italian>
-        <Spanish>First great admiral</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_ADMIRAL_HEAD</Tag>
-        <English>The commander of the fleet</English>
+        <English>Commander Of The Fleet</English>
         <French>Votre premier Amiral illustre</French>
         <German>Der Befehlshaber der Flotte</German>
-        <Italian>First great admiral</Italian>
-        <Spanish>First great admiral</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_ADMIRAL_TEXT</Tag>
-        <English>Your first great admiral is awaiting your orders. Use him wisely![NEWLINE][NEWLINE]At last he has arrived! The Admiral long promised by the Crown, the new commander of your fleet![NEWLINE][NEWLINE]Can he turn your ragtag bunch into well-trained sailors able to hold their own against the weather, the pirates and the fleets of foreign rulers?[NEWLINE][NEWLINE]You sincerely hope so, because without a connection to home - without a fleet - this adventure in the New World will end all too quickly![NEWLINE][NEWLINE]</English>
+        <English>At last he has arrived! The Admiral long promised by the Crown, the new commander of your fleet![NEWLINE][NEWLINE]Can he turn your ragtag bunch into well-trained sailors able to hold their own against the weather, the pirates and the fleets of foreign rulers?[NEWLINE][NEWLINE]You sincerely hope so, because without a connection to home - without a fleet - this adventure in the New World will end all too quickly![NEWLINE][NEWLINE]</English>
         <French>Votre premier Amiral illustre est sous vos ordres, sachez l'utiliser avec sagesse ![NEWLINE][NEWLINE]</French>
         <German>Endlich ist er eingetroffen! Der von der Krone lang' versprochene Admiral, der neue Befehlshaber Eurer Flotte![NEWLINE][NEWLINE]Ist er der richtige Mann, um aus Eurem zusammengewürfelten Haufen gut ausgebildete Seeleute zu machen, die gegen das Wetter, die Piraten und die Flotten fremder Herrscher bestehen zu können?[NEWLINE][NEWLINE]Ihr hofft es inständig, denn ohne Anbindung an die Heimat - ohne Flotte - wäre das Abenteuer in der Neuen Welt nur allzu schnell wieder beendet![NEWLINE][NEWLINE]</German>
-        <Italian>Your first great admiral is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</Italian>
-        <Spanish>Your first great admiral is awaiting your orders, use him wisely![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES</Tag>
         <English>Many warehouses</English>
         <French>Trois entrepôts</French>
         <German>Viele Lagerhallen</German>
-        <Italian>Three Warehouses</Italian>
-        <Spanish>Three Warehouses</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES_HEAD</Tag>
-        <English>A matter of planning</English>
+        <English>Production Planning</English>
         <French>Trois entrepôts</French>
         <German>Eine Frage der Planung</German>
-        <Italian>Three Warehouses</Italian>
-        <Spanish>Three Warehouses</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES_TEXT</Tag>
         <English>You have built great warehouses which will help your colonists increase the wealth of your nation.[NEWLINE][NEWLINE]Astonished, the steward raises his head. "[COLOR_SELECTED_TEXT]Where shall we store the timber, my lord?[COLOR_REVERT]" the carter repeats his question. "[COLOR_SELECTED_TEXT]Well, where do you think, my good man?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's what I'm asking you, it's fifty stacks after all. It took eight wagons to carry it. If we unload it, the pile will block the main street of this village.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well,[COLOR_REVERT]" smiles the steward, "[COLOR_SELECTED_TEXT]why don't you put it in the warehouse we built with your last shipment?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez construit trois entrepôts. Ces entrepôts vont contribuer à l'accroissement des richesses du Nouveau Monde.[NEWLINE][NEWLINE]</French>
         <German>Erstaunt hebt der Verwalter den Kopf. "[COLOR_SELECTED_TEXT]Wo sollen wir das Bauholz lagern, mein Herr?[COLOR_REVERT]", wiederholt der Fuhrmann seine Frage. "[COLOR_SELECTED_TEXT]Na, wo wohl, guter Mann?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das frage ich Euch, es sind immerhin fünfzig Klafter. Acht Planwagen karrten ihn in unserem Tross heran. Wenn wir das abladen, versperrt der Stapel rasch die Hauptstraße dieses Dorfes.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun[COLOR_REVERT]", lächelt der Verwalter darob, "[COLOR_SELECTED_TEXT]dann schafft ihn doch in die Lagerhalle, die wir mit Eurer letzten Lieferung gebaut haben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have built some great warehouses which will help your colonists to increase the wealth oy your nation.</Italian>
-        <Spanish>You have built some great warehouses which will help your colonists to increase the wealth oy your nation.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE</Tag>
         <English>Your first weaver's house</English>
         <French>Première maison de tisserand</French>
         <German>Eure erste Weberei</German>
-        <Italian>Your first weavers house</Italian>
-        <Spanish>Your first weavers house</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_HEAD</Tag>
-        <English>Harvestman</English>
+        <English>Piecework</English>
         <French>Première maison de tisserand</French>
         <German>Weberknecht</German>
-        <Italian>Your first weavers house</Italian>
-        <Spanish>Your first weavers house</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_TEXT</Tag>
-        <English>Your colonists begin to produce cloth.[NEWLINE][NEWLINE]Incessantly, the hands and eyes of her five children dart back and forth, following the nimble movements on the loom.[NEWLINE][NEWLINE]The widow proudly shows you the first bale of finished cloth.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A decent job![COLOR_REVERT]" you congratulate her. "[COLOR_SELECTED_TEXT]I will get a good price for it. And you will be paid well.[COLOR_REVERT]" The good woman, her husband killed by wolves last winter while chopping wood in the nearby forest, looks at you expectantly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]On the first Saturday of every month, you shall be able to stop work early in the evening to tend to your husband's grave.[COLOR_REVERT]"[NEWLINE][NEWLINE]Gratefully, the brave woman beams at you.[NEWLINE][NEWLINE]On your way out, your boots accidentally scrunch an unsuspecting harvestman crawling across the threshold. You do not care.[NEWLINE][NEWLINE]</English>
+        <English>Your colonists begin to produce cloth.[NEWLINE][NEWLINE]Incessantly, the hands and eyes of her five children dart back and forth, following her nimble movements on the loom.[NEWLINE][NEWLINE]The widow proudly shows you the first bale of finished cloth.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A decent job![COLOR_REVERT]" you congratulate her. "[COLOR_SELECTED_TEXT]I will get a good price for it. And you will be paid well.[COLOR_REVERT]" The good woman, her husband killed by wolves last winter while chopping wood in the nearby forest, looks at you expectantly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]On the first Saturday of every month, you shall be able to stop work early in the evening to tend to your husband's grave.[COLOR_REVERT]"[NEWLINE][NEWLINE]Gratefully, the brave woman beams at you.[NEWLINE][NEWLINE]On your way out, your boots accidentally kick an unsuspecting urchin crawling across the threshold. You do not care.[NEWLINE][NEWLINE]</English>
         <French>Grâce à cette première maison, vos colons sont en mesure de produire du tissu.[NEWLINE][NEWLINE]</French>
         <German>Unablässig huschen Hände und Augen ihrer fünf Kinder hin und her, folgen den flinken Bewegungen des Webschiffs.[NEWLINE][NEWLINE]Die Witwe zeigt Euch stolz den ersten Ballen Stoff, der fertig wurde.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine anständige Arbeit![COLOR_REVERT]" lobt Ihr. "[COLOR_SELECTED_TEXT]Dafür werde ich einen guten Preis erzielen. Und Euch soll es auch nicht zum Schaden gereichen.[COLOR_REVERT]" Erwartungsfroh blickt Euch die gute Frau, deren Gatte im letzten Winter beim Holzhacken im nahen Wald von Wölfen angefallen wurde, an.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Jeden ersten Samstag im Monat sollt Ihr schon am frühen Abend mit der Arbeit aufhören können, um das Grab Eures Mannes zu pflegen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Dankbar strahlt Euch das wackere Weib an.[NEWLINE][NEWLINE]Beim Hinausgehen zertreten Eure Stiefel beiläufig einen arglosen Weberknecht, der über die Türschwelle krabbelt. Es kümmert Euch nicht.[NEWLINE][NEWLINE]</German>
-        <Italian>Your colonists begin to produce cloth.</Italian>
-        <Spanish>Your colonists begin to produce cloth.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE</Tag>
         <English>Three weavers' houses</English>
         <French>Trois maisons de tisserand</French>
         <German>Mehr Webereien</German>
-        <Italian>Three weavers houses</Italian>
-        <Spanish>Three weavers houses</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_HEAD</Tag>
-        <English>Material for stories</English>
+        <English>The Textile Business</English>
         <French>Trois maisons de tisserand</French>
         <German>Stoff für Geschichten</German>
-        <Italian>Three weavers houses</Italian>
-        <Spanish>Three weavers houses</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_TEXT</Tag>
         <English>Now your colonists have enough buildings to produce a lot of clothes.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I bet he sells the cloth to Europe![COLOR_REVERT]" says the first and waves at the barmaid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I bet he trades the cloth to the savages and gets gold nuggets for it,[COLOR_REVERT]" the second one counters and belches affirmatively.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Neither![COLOR_REVERT]" asserts the third, "[COLOR_SELECTED_TEXT]he has sails sewn from it and sends privateers out to sea! That's what I'd do, anyway, if I were the governor![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]But you're not,[COLOR_REVERT]" the buxom waitress interjects. "[COLOR_SELECTED_TEXT]You're just a weaver's servant like your drinking buddies. But I can tell you where all that cloth goes that you have to make ...[COLOR_REVERT]"[NEWLINE][NEWLINE]The three lean forward curiously.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Our good governor is having petticoats made out of it for me![COLOR_REVERT]" The weavers laugh and jeer.[NEWLINE][NEWLINE]</English>
         <French>Vos colons disposent dorénavant d'infrastructures leur permettant de produire des vêtements en quantité.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Ich wette, er verkauft das Tuch nach Europa![COLOR_REVERT]", meint der Erste und winkt nach der Schankmaid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Iwo, der tauscht den Stoff bei den Wilden ein und lässt sich Goldnuggets dafür geben[COLOR_REVERT]", hält der Zweite dagegen und rülpst bekräftigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Weder noch![COLOR_REVERT]", behauptet der Dritte, "[COLOR_SELECTED_TEXT]er lässt Segel daraus nähen und schickt Kaperfahrer aufs Meer! So würde ich es jedenfalls tun, wenn ich der Gouverneur wäre![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bist du aber nicht[COLOR_REVERT]", fährt die dralle Kellnerin dazwischen. "[COLOR_SELECTED_TEXT]Du bist nur ein Weberknecht wie deine Saufkumpane. Aber ich kann euch sagen, wohin all das Tuch geht, dass ihr fertigen müsst ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Die drei beugen sich neugierig vor.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Der feine Herr Gouverneur lässt mir Unterröcke daraus schneidern![COLOR_REVERT]" Die Weber feixen und johlen.[NEWLINE][NEWLINE]</German>
-        <Italian>Now your colonists have enough buildings to produce a lot of clothes.</Italian>
-        <Spanish>Now your colonists have enough buildings to produce a lot of clothes.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE</Tag>
         <English>Your first distillery</English>
         <French>Première distillerie</French>
         <German>Eure erste Rumbrennerei</German>
-        <Italian>Your first distillery</Italian>
-        <Spanish>Your first distillery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE_HEAD</Tag>
-        <English>Highbrow</English>
+        <English>A Dizzying Accomplishment</English>
         <French>Première distillerie</French>
         <German>Hochgeistiges</German>
-        <Italian>Your first distillery</Italian>
-        <Spanish>Your first distillery</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE_TEXT</Tag>
         <English>Your colonists begin to produce rum.[NEWLINE][NEWLINE]You wipe your sweaty brow. Hot fumes fill the still and your lungs. You feel slightly dizzy, but also cheerful.[NEWLINE][NEWLINE]A time of privation, sometimes of hardship, lies behind you. Tonight you will reward yourself with a small jug of your colony's first home-distilled rum.[NEWLINE][NEWLINE]</English>
         <French>Grâce à cette première distillerie, vos colons sont en mesure de produire du rhum.[NEWLINE][NEWLINE]</French>
         <German>Ihr wischt Euch die schwitzige Stirn. Heiße Dämpfe füllen die Brennerei und Eure Lungen. Leichter Schwindel packt Euch, aber auch Heiterkeit.[NEWLINE][NEWLINE]Eine Zeit der Entbehrungen, bisweilen der Not, liegt hinter Euch. Heute abend werdet Ihr Euch mit einem kleinen Krug des ersten selbstgebrannten Rums Eurer Kolonie belohnen.[NEWLINE][NEWLINE]</German>
-        <Italian>Your colonists begin to produce rum.</Italian>
-        <Spanish>Your colonists begin to produce rum.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE</Tag>
         <English>More distilleries</English>
         <French>Trois distilleries</French>
         <German>Mehr Brennereien</German>
-        <Italian>Three distilleries</Italian>
-        <Spanish>Three distilleries</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE_HEAD</Tag>
-        <English>Intoxication and profit</English>
+        <English>Intoxicating Success</English>
         <French>Trois distilleries</French>
         <German>Rausch und Reibach</German>
-        <Italian>Three distilleries</Italian>
-        <Spanish>Three distilleries</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE_TEXT</Tag>
         <English>Now your colonists have enough buildings to produce a lot of rum.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]And so I announce,[COLOR_REVERT]" the crier sounds across the marketplace, "[COLOR_SELECTED_TEXT]that our patron, the governor, in order to preserve the fear of God and decency, issues the edict that all consumption of intoxicating beverages is forbidden until further notice.[COLOR_REVERT]"[NEWLINE][NEWLINE]The settlers respond with a loud grumble. Fists are shaken sporadically.[NEWLINE][NEWLINE]But the commotion dies down when a troop of uniformed cavalry trots into the square and looks menacingly down at the crowd from their saddles.[NEWLINE][NEWLINE]You smile mockingly and draw the curtain of the carriage from which you have been watching the spectacle.[NEWLINE][NEWLINE]How useful it is to be pious, you think, when Christian purity ensures that the home-brewed rum is not drunk in the colony but can be sold in Europe at a greater profit.[NEWLINE][NEWLINE]</English>
         <French>Vos colons disposent dorénavant d'infrastructures leur permettant de produire du rhum en quantité.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Und so gebe ich kund[COLOR_REVERT]", tönt der Ausrufer über den Marktplatz, "[COLOR_SELECTED_TEXT]dass unser Schutzherr, der Gouverneur, zur Wahrung von Gottesfurcht und Anstand das Edikt erlässt, dass ein jeglicher Genuss berauschender Getränke bis auf weiteres untersagt ist.[COLOR_REVERT]"[NEWLINE][NEWLINE]Mit einem lauten Murren antworten die Siedler. Vereinzelt werden Fäuste geschüttelt.[NEWLINE][NEWLINE]Doch der Aufruhr verstummt, als ein Trupp Uniformierter auf den Platz trabt und drohend vom Sattel herunter in die Menge blickt.[NEWLINE][NEWLINE]Ihr lächelt spöttisch und zieht den Vorhang der Kutsche zu, von der aus Ihr das Spektakel betrachtet habt.[NEWLINE][NEWLINE]Wie nutzbringend es doch ist, fromm zu sein, denkt Ihr, wenn christliche Reinheit bewirkt, dass der selbstgebrannte Rum in der Kolonie nicht versoffen wird, sondern mit größerem Gewinn in Europa verkauft werden kann.[NEWLINE][NEWLINE]</German>
-        <Italian>Now your colonists have enough buildings to produce a lot of rum.</Italian>
-        <Spanish>Now your colonists have enough buildings to produce a lot of rum.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE</Tag>
         <English>Your first cigar production</English>
         <French>Première maison de cigarier</French>
         <German>Eure erste Zigarrenproduktion</German>
-        <Italian>Your first tobacconist's house</Italian>
-        <Spanish>Your first tobacconist's house</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_HEAD</Tag>
-        <English>Smoking stories</English>
+        <English>Smoking For Your Health</English>
         <French>Première maison de cigarier</French>
         <German>Rauchergeschichten</German>
-        <Italian>Your first tobacconist's house</Italian>
-        <Spanish>Your first tobacconist's house</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_TEXT</Tag>
         <English>Your colonists begin to produce cigars.[NEWLINE][NEWLINE]You have just inhaled the smoke deeply and now it is pouring out of your mouth and nose. Disgusting! you think.[NEWLINE][NEWLINE]Perhaps even unnatural? After all, smoke is supposed to come out of Satan's nostrils, too.[NEWLINE][NEWLINE]You sniff. It does not smell sulphurous. Perhaps it is not Beelzebub at work after all.[NEWLINE][NEWLINE]You remember what the Native interpreter told you. "[COLOR_SELECTED_TEXT]Tobacco soothes every ailment and refreshes the spirit[COLOR_REVERT]", he claimed. Maybe not a true story, but one that arouses curiosity.[NEWLINE][NEWLINE]You decide to tell it to the traders in Europe when you bring them the first cigars from the New World.[NEWLINE][NEWLINE]</English>
         <French>Grâce à cette première maison, vos colons sont en mesure de produire des cigares.[NEWLINE][NEWLINE]</French>
         <German>Eben habt Ihr den Qualm tief eingeatmet, jetzt quillt er Euch aus Mund und Nase wieder aus dem Leib. Widerwärtig! denkt Ihr.[NEWLINE][NEWLINE]Vielleicht auch widernatürlich? Immerhin soll auch Satan Rauch aus den Nüstern fahren.[NEWLINE][NEWLINE]Ihr schnuppert. Schwefelig riecht es nicht, vielleicht ist doch nicht der Beelzebub am Werke.[NEWLINE][NEWLINE]Ihr denkt daran, was Euch der eingeborene Dolmetscher erzählt hat. "[COLOR_SELECTED_TEXT]Tabak lindere jedes Leiden und erquicke den Geist[COLOR_REVERT]", hat er behauptet. Vielleicht keine wahre Geschichte, aber eine, die die Neugierde weckt.[NEWLINE][NEWLINE]Ihr beschließt, sie auch den Händlern in Europa zu erzählen, wenn Ihr ihnen die ersten Zigarren aus der Neuen Welt bringt.[NEWLINE][NEWLINE]</German>
-        <Italian>Your colonists begin to produce cigars.</Italian>
-        <Spanish>Your colonists begin to produce cigars.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE</Tag>
         <English>More cigars</English>
         <French>Plusieurs maisons de cigarier</French>
         <German>Mehr Zigarren</German>
-        <Italian>Several tobacconist's houses</Italian>
-        <Spanish>Several tobacconist's houses</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE_HEAD</Tag>
-        <English>A non-smoker as king</English>
+        <English>The King Condemns Smoking</English>
         <French>Plusieurs maison de cigarier</French>
         <German>Ein Nichtraucher als König</German>
-        <Italian>Several tobacconist's houses</Italian>
-        <Spanish>Several tobacconist's houses</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE_TEXT</Tag>
         <English>Now your colonists have enough buildings to produce a lot of cigars.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Governor, we are selling more tobacco in Europe than ever before,[COLOR_REVERT]" your trade envoy reports.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]However, in England, the sanctimonious King James has now ascended the throne. He himself has written a pamphlet that is circulating everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]Frowning, you take the pamphlet from your trade envoy and study it.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]One hears that the smoke alleviates fever, reduces drowsiness, sharpens the mind, grants sleep.[NEWLINE][NEWLINE]One reads that the smoke flies up into the winding cavities of the brain.[NEWLINE][NEWLINE]Well, put away this madness at last! It is disgusting by smell, harmful to the brain, detrimental to the lungs. The fumes of black smoke are the symbol of the brooding of hell![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vos colons disposent dorénavant d'infrastructures leur permettant de produire des cigares en quantité.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Herr Gouverneur, wir verkaufen mehr Tabak in Europa als je zuvor[COLOR_REVERT]", berichtet Euer Handelsgesandter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Doch in England hat nun der sittenstrenge König Jacobus den Thron bestiegen. Er hat höchstselbst ein Pamphlet verfasst, das überall kursiert.[COLOR_REVERT]"[NEWLINE][NEWLINE]Stirnrunzelnd nehmt Ihr Eurem Handelsgesandten die Flugschrift ab und studiert sie.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Man hört, der Rauch lindere Fieber, vermindere Schlaffheit, schärfe den Geist, gewähre Schlaf.[NEWLINE][NEWLINE]Man liest, der Rauch fliege in die windungsreichen Höhlen des Gehirns hinauf.[NEWLINE][NEWLINE]Nun, legt endlich diese Tollheit ab! Sie ist dem Geruch nach ekelhaft, für das Hirn schädlich, für die Lunge nachteilig. Die Dünste des schwarzen Rauchs sind Sinnbild des Höllenbrodems![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>Now your colonists have enough buildings to produce a lot of cigars.</Italian>
-        <Spanish>Now your colonists have enough buildings to produce a lot of cigars.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE</Tag>
         <English>Your first fur trader's house</English>
         <French>Premier atelier de fourreur</French>
         <German>Eure erste Pelzhändlerhütte</German>
-        <Italian>Your first fur trader's house</Italian>
-        <Spanish>Your first fur trader's house</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE_HEAD</Tag>
-        <English>Posthumous fame</English>
+        <English>The Mad Hatter</English>
         <French>Premier atelier de fourreur</French>
         <German>Nachruhm</German>
-        <Italian>Your first fur trader's house</Italian>
-        <Spanish>Your first fur trader's house</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE_TEXT</Tag>
         <English>Your colonists begin to produce furs.[NEWLINE][NEWLINE]It is hard to imagine that such a beautiful fur adorned such an ugly animal just a short time ago.[NEWLINE][NEWLINE]One that paddles through the rivers like an oversized water rat and builds hiding places in the undergrowth with its little feet.[NEWLINE][NEWLINE]The beaver is probably not stupid. But not clever enough to escape being skinned by your men.[NEWLINE][NEWLINE]The fur trader shows you the first coat he has made from the soft fur. You nod approvingly.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, Mr. Beaver![COLOR_REVERT]" you murmur, "[COLOR_SELECTED_TEXT]I'll make you famous in Europe![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Grâce à ce premier atelier, vos colons sont en mesure de produire des manteaux.[NEWLINE][NEWLINE]</French>
         <German>Kaum vorstellbar, dass ein solch schöner Pelz vor kurzem noch ein solch hässliches Tier geschmückt hat.[NEWLINE][NEWLINE]Eines, das wie eine übergroße Wasserratte durch die Flüsse paddelt und sich mit seinen Füßchen Verstecke im Gestrüpp baut.[NEWLINE][NEWLINE]Dumm ist er wohl nicht, der Gevatter Biber. Aber nicht klug genug, als dass er sich von Euren Männern nicht die Haut abziehen lassen müsste.[NEWLINE][NEWLINE]Der Pelzhändler zeigt Euch den ersten Mantel, den er aus dem weichen Pelz gefertigt hat. Ihr nickt wohlwollend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wohlan, Herr Biber![COLOR_REVERT]" murmelt Ihr, "[COLOR_SELECTED_TEXT]Ich mache Euch in Europa berühmt![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>Your colonists begin to produce furs.</Italian>
-        <Spanish>Your colonists begin to produce furs.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE</Tag>
