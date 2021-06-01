@@ -419,7 +419,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_TEXT</Tag>
-        <English>You have built your first great bastion.[NEWLINE][NEWLINE]The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks of the impregnability of this fortress.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first great bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have built your first great bastion.[NEWLINE][NEWLINE]The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks confidently of the fortress impregnability.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first great bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Les artisans rangent leurs outils, le prêtre apporte sa bénédiction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilité de la forteresse.[NEWLINE][NEWLINE]Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majesté.[NEWLINE][NEWLINE]Au loin, alors que  le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse à l'oreille : « Espérons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises ».[NEWLINE][NEWLINE]</French>
         <German>Die Handwerker legen ihre Werkzeuge beiseite, der Pfarrer segnet die Mauern, die neue Wache zieht auf und der Kommandeur spricht von der Uneinnehmbarkeit dieser Festung.[NEWLINE][NEWLINE]Hoch über der Stadt ragt sie auf, stolz und mächtig - die erste Große Bastion dieser Festung verleiht ihr ein wahrlich majestätisches Aussehen.[NEWLINE][NEWLINE]Aus der Ferne lauscht der Gouverneur den Salutschüssen.[NEWLINE][NEWLINE]Seine Frau meint fragend zu ihm: "[COLOR_SELECTED_TEXT]Ob wir uns nun wirklich sicherer fühlen können? Wird eine so große Festung unsere Nachbarn nicht vielleicht doch eher provozieren?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -431,13 +431,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_HEAD</Tag>
-        <English>An inkling of freedom</English>
+        <English>A Hint Of Freedom</English>
         <French>Cinquante cloches par tour</French>
         <German>Eine Ahnung von Freiheit</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_TEXT</Tag>
-        <English>Many people are proud to call themselves citizens of the New World.[NEWLINE][NEWLINE]More and more frequently, your citizens ring the bells of their assembly hall, expressing their desire for freedom.[NEWLINE][NEWLINE]You shake your head meekly. You still need the goodwill of your king. In the wilderness lurk predators, some on four and some on two legs.[NEWLINE][NEWLINE]Your subjects still must fear for their lives when they leave the protection of the settlements.[NEWLINE][NEWLINE]Only those who live in peace have the strength to go to war for freedom.[NEWLINE][NEWLINE]You know you need patience and staying power.[NEWLINE][NEWLINE]</English>
+        <English>Many people are proud to call themselves citizens of the New World.[NEWLINE][NEWLINE]More and more frequently your citizens ring the assembly hall bells, announcing their desire for freedom.[NEWLINE][NEWLINE]Meekly you shake your head. You still rely on the goodwill of your king. In the wilderness lurk predators, some on four legs and some on two.[NEWLINE][NEWLINE]Your subjects still fear for their lives when they venture outside the settlements.[NEWLINE][NEWLINE]Only those who live in peace have the strength to go to war for freedom.[NEWLINE][NEWLINE]You know you need patience and staying power.[NEWLINE][NEWLINE]</English>
         <French>Un population sans cesse croissante se dit fière d'être citoyenne du Nouveau Monde.[NEWLINE][NEWLINE]</French>
         <German>Immer häufiger lassen Eure Bürger die Glocken ihrer Versammlungshalle läuten und verleihen damit ihrem Wunsch nach Freiheit Ausdruck.[NEWLINE][NEWLINE]Ihr schüttelt milde Euer Haupt. Noch braucht Ihr das Wohlwollen Eures Königs. In der Wildnis verstecken sich Raubtiere, solche auf vier - und solche auf zwei Beinen.[NEWLINE][NEWLINE]Noch müssen Eure Untertanen um ihr Leben bangen, wenn sie den Schutz der Siedlungen verlassen.[NEWLINE][NEWLINE]Nur wer im Frieden lebt, hat die Kraft, für die Freiheit in den Krieg zu ziehen.[NEWLINE][NEWLINE]Ihr wisst, Ihr braucht Geduld und einen langen Atem.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -449,13 +449,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_HEAD</Tag>
-        <English>Flaming desire</English>
+        <English>Impatient for Freedom</English>
         <French>Deux cent cloches par tour</French>
         <German>Flammende Sehnsucht</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_TEXT</Tag>
-        <English>More and more people embrace the patriotism of a growing nation.[NEWLINE][NEWLINE]More and more citizens are ringing the bells of their assembly halls to sound the signal for freedom. Their clamour resounds throughout the land, throughout the New World - even across the ocean.[NEWLINE][NEWLINE]The distant king hears their clanging. You are aware of that.[NEWLINE][NEWLINE]His anger grows. The time is not far off when he will send for his generals to plan a war.[NEWLINE][NEWLINE]And you, governor, you will no longer hear the ringing of bells, but the sound of battle.[NEWLINE][NEWLINE]</English>
+        <English>More and more people embrace the patriotism of a growing nation.[NEWLINE][NEWLINE]Citizens are ringing the bells of their assembly halls to sound the signal for freedom. Their clamour resounds throughout the land, throughout the New World - even across the ocean.[NEWLINE][NEWLINE]The distant king hears their clanging. You are aware of that.[NEWLINE][NEWLINE]His anger grows. The time is not far off when he will send for his generals to plan a war.[NEWLINE][NEWLINE]And you, governor, you will no longer hear the ringing of bells, but the sound of battle.[NEWLINE][NEWLINE]</English>
         <French>Fiers de leur Histoire, le patriotisme d'une Nation grandissante emplie le coeur de nos citoyens...[NEWLINE][NEWLINE]</French>
         <German>Immer mehr Bürger lassen die Glocken ihrer Versammlungshallen läuten, um ein Zeichen für die Freiheit zu setzen. Ihr Klang erschallt durchs ganze Land, durch die ganze Neue Welt - sogar über den Ozean hinweg.[NEWLINE][NEWLINE]Der ferne König vernimmt ihr Schwingen, dessen seid Ihr Euch bewusst.[NEWLINE][NEWLINE]Sein Zorn wächst. Die Zeit ist nicht mehr fern, in der er seine Marschälle kommen lässt, um einen Krieg zu planen.[NEWLINE][NEWLINE]Und Ihr, Gouverneur, Ihr werdet dann nicht mehr Glockengeläute, sondern Schlachtenlärm hören.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -473,7 +473,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_TEXT</Tag>
-        <English>More and more people embrace the patriotism of a growing nation. The intention of the people in your colonies is definitely clear.[NEWLINE][NEWLINE]Across the rooftops of the cities the bells ring more and more often, calling for the freedom of a new nation.[NEWLINE][NEWLINE]People in the colonies, however, make their preparations for the revolution in secret - after all, this is nothing less than treason.[NEWLINE][NEWLINE]Conspiratorial meetings in the back rooms of pubs, drawing up secret plans for mobilisation in the event of war against the king, procuring money and weapons for the new continental army...[NEWLINE][NEWLINE]</English>
+        <English>It's common now for people to embrace the patriotism of a growing nation. Their intention is clear.[NEWLINE][NEWLINE]Across the rooftops of the cities the bells ring more and more often, calling out for the freedom of a new nation.[NEWLINE][NEWLINE]The colonists, however, make their revolutionary preparations secretly - after all, this is nothing less than treason.[NEWLINE][NEWLINE]Conspiratorial meetings in the back rooms of pubs, drawing up secret plans for mobilisation in the event of war against the king, procuring money and weapons for the new continental army...[NEWLINE][NEWLINE]</English>
         <French>Pour une part sans cesse plus importante de notre peuple américain, la Destinée Manifeste de notre Nation ne fait plus aucun doute. Saurez-vous en être à la hauteur ?[NEWLINE][NEWLINE]</French>
         <German>Während über den Dächern der Städte immer öfter die Glocken für die Freiheit einer neuen Nation läuten, treffen die Menschen in den Kolonien die Vorbereitungen für die Revolution jedoch im Verborgenen - schließlich handelt es sich hierbei um nichts weniger als Hochverrat.[NEWLINE][NEWLINE]Konspirative Treffen in den Hinterzimmern der Kneipen, Ausarbeitung geheimer Pläne für eine Mobilmachung im Falle eines Krieges gegen den König, Beschaffung von Geld und Waffen für die neue kontinentale Armee...[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -485,13 +485,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_HEAD</Tag>
-        <English>Pray in freedom</English>
+        <English>Freedom to Pray</English>
         <French>Dix croix par tour</French>
         <German>Bete in Freiheit</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_TEXT</Tag>
-        <English>Many people are preaching in the churches.[NEWLINE][NEWLINE]Not only God is respected in your church, but also the freedom of the word. Here men who had to remain silent in their old homeland can preach freely.[NEWLINE][NEWLINE]There the stubborn sovereign actively oppressed their faith.[NEWLINE][NEWLINE]Back in the old country word gets around. More and more people jostle on the harbour quays looking a place on an emigrant ship.[NEWLINE][NEWLINE]</English>
+        <English>Many people are preaching in the churches.[NEWLINE][NEWLINE]Not only is God respected, but also the freedom of the word. Here men who had to remain silent in their old homeland can preach freely.[NEWLINE][NEWLINE]There the stubborn sovereign actively oppressed their faith.[NEWLINE][NEWLINE]Back in the old country word gets around. More and more people jostle on the harbour quays looking a place on an emigrant ship.[NEWLINE][NEWLINE]</English>
         <French>Les croyants viennent en nombre dans les Églises.[NEWLINE][NEWLINE]</French>
         <German>Nicht nur Gott wird in Eurer Kirche Achtung gezollt, sondern auch der Freiheit des Wortes. Hier dürfen Männer frei predigen, die in ihrer alten Heimat schweigen mussten.[NEWLINE][NEWLINE]Ihre Konfession war dem sturen Landesherrn nicht erwünscht.[NEWLINE][NEWLINE]Das spricht sich zu Hause herum. Immer mehr Menschen drängeln auf den Hafenkais, um einen Platz auf einem Auswandererschiff zu finden.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -503,10 +503,9 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_HEAD</Tag>
-        <English>Choose your Lord</English>
+        <English>New Faiths Compete</English>
         <French>De nombreuses croix par tour</French>
-        <German>Wähle deinen Herrn</German>
-	    
+        <German>Wähle deinen Herrn</German>	    
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_TEXT</Tag>
@@ -522,13 +521,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EDUCATION_HEAD</Tag>
-        <English>Dreaming allowed</English>
+        <English>Dreaming Encouraged</English>
         <French>De nombreux étudiants</French>
         <German>Träumen erlaubt</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_EDUCATION_TEXT</Tag>
-        <English>More and more young people are becoming students and improving their abilities.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tell us what you see, you dreamer![COLOR_REVERT]"[NEWLINE][NEWLINE]The student is startled. As he gazes out the window the lecturer suddenly appears next to him and gently shakes his shoulder.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Uh, well ...[COLOR_REVERT]" he stammers, searching for an idea that will save him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I was admiring the splendour of this New World. And meditating on nature as God created it. And thinking about the nature of man, how he is born free, subject to no one.[NEWLINE][NEWLINE]No king should demand obedience from him, but only God.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, well,[COLOR_REVERT]" the lecturer replies, smiling, "[COLOR_SELECTED_TEXT]I guess we have the same dream.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>Young people are becoming students to improve their abilities.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tell us what you see, you dreamer![COLOR_REVERT]"[NEWLINE][NEWLINE]The student is startled. As he gazes out the window the lecturer suddenly appears next to him and gently shakes his shoulder.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Uh, well ...[COLOR_REVERT]" he stammers, searching for an idea that will save him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I was admiring the splendour of this New World. And meditating on nature as God created it. Thinking about the nature of man, how he is born free, subject to no one.[NEWLINE][NEWLINE]No king should demand obedience from him, but only God.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, well,[COLOR_REVERT]" the lecturer replies, smiling, "[COLOR_SELECTED_TEXT]I guess we have the same dream.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>De plus en plus de jeunes veulent se former pour apprendre de nouvelles compétences.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Erzähl uns doch mal, was du siehst, du Träumer![COLOR_REVERT]"[NEWLINE][NEWLINE]Erschrocken fährt der Student zusammen. Gerade hatte er noch aus dem Fenster geschaut, da steht unvermittelt die Dozentin neben ihm und rüttelt sanft an seiner Schulter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Äh, tja ...[COLOR_REVERT]", stammelt er und sucht nach einem Einfall, der ihn rettet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hinaus in die Lieblichkeit dieser Neuen Welt blickte ich. Und sann über die Natur nach, wie Gott sie erschaffen hat. Und über die Natur des Menschen. Dass er frei geboren ist und nicht als Untertan.[NEWLINE][NEWLINE]Und dass kein König von ihm Gehorsam verlangen sollte, sondern nur Gott.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So, so[COLOR_REVERT]", erwidert die Dozentin und muss lächeln, "[COLOR_SELECTED_TEXT]da haben wir wohl den gleichen Traum.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -540,7 +539,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_HEAD</Tag>
-        <English>Not alone in a foreign land</English>
+        <English>Old World Claims on the New</English>
         <French>Une autre puissance coloniale</French>
         <German>Nicht allein in der Fremde</German>
     </TEXT>
@@ -558,13 +557,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_HEAD</Tag>
-        <English>Family reunion overseas</English>
+        <English>Tense Encounters</English>
         <French>Vous avez contacté trois autre nations européennes</French>
         <German>Familientreffen in Übersee</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_TEXT</Tag>
-        <English>You have discovered many European colonies from other nations in the New World.[NEWLINE][NEWLINE]Friendly, the foreign officer waves his hat with the bobbing peacock feather. And you wave your own hat, just as friendly.[NEWLINE][NEWLINE]But your smile is only a masquerade. Once again you have encountered a foreign patrol. Once again you have encountered other Europeans who, like you, have set out for foreign lands.[NEWLINE][NEWLINE]This continent once seemed so infinitely large to you ...[NEWLINE][NEWLINE]</English>
+        <English>You have discovered many European colonies from other nations in the New World.[NEWLINE][NEWLINE]Friendly, the foreign officer waves his hat with the bobbing peacock feather. You wave your own hat, just as friendly.[NEWLINE][NEWLINE]But your smile is only a masquerade. Once again you have encountered a foreign patrol. Once again you have encountered other Europeans who, like you, have set out for foreign lands.[NEWLINE][NEWLINE]This continent once seemed so infinitely large to you ...[NEWLINE][NEWLINE]</English>
         <French>Il y a quantité d'autres colons européens dans le Nouveau Monde provenant de nombreuses Nations.[NEWLINE][NEWLINE]</French>
         <German>Freundlich schwenkt der fremde Offizier seinen Hut mit der wippenden Pfauenfeder. Und ebenso freundlich winkt Ihr mit Eurem Hut zurück.[NEWLINE][NEWLINE]Doch Euer Lächeln ist nur Maskerade. Wieder seid Ihr einer fremden Patrouille begegnet. Erneut seid Ihr auf andere Europäer gestoßen, die wie Ihr in die Fremde gezogen seid.[NEWLINE][NEWLINE]So unendlich weit schien Euch dieser Kontinent einst zu sein ...[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -576,7 +575,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_HEAD</Tag>
-        <English>It's getting crowded</English>
+        <English>It's Getting Crowded</English>
         <French>Vous avez contacté sept autres nations européennes</French>
         <German>Es wird eng</German>
     </TEXT>
@@ -594,13 +593,13 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_HEAD</Tag>
-        <English>First Natives met</English>
+        <English>First Natives Met</English>
         <French>Cette terre est donc habitée !</French>
         <German>Erste Wilde getroffen</German>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_TEXT</Tag>
-        <English>You have met the local Native people.[NEWLINE][NEWLINE]Cheerful eyes in brown, dirty faces. Young men with spears and bows, painted faces and alert curiosity. Young women grinding grains in clay jars and glancing furtively at you. Toothless old men hobbling trustingly towards you.[NEWLINE][NEWLINE]You suspected that this foreign land held wonders and dangers. But you would not have thought it possible that so many godless heathen children live here, without knowledge of the mercy of Jesus.[NEWLINE][NEWLINE]In the coming weeks you will tell them of the salvation that true Christian faith will give to their sin-laden souls.[NEWLINE][NEWLINE]And perhaps you can indeed save them from avarice for the treasures they surely hide, the gold your men hope to get from this unknown world.[NEWLINE][NEWLINE]</English>
+        <English>You have met the local Native people.[NEWLINE][NEWLINE]Cheerful children with brown dirty faces. Young men with spears and bows, painted faces and a wary curiosity.[NEWLINE][NEWLINE]Young women grind grain in clay jars while they glance furtively at you. Toothless old men hobble trustingly towards you.[NEWLINE][NEWLINE]You suspected that this foreign land held wonders and dangers. But you would not have thought it possible that so many godless heathen children live here, without knowledge of the mercy of Jesus.[NEWLINE][NEWLINE]In the coming weeks you will tell them of the salvation that true Christian faith will give to their sin-laden souls.[NEWLINE][NEWLINE]And perhaps you can indeed save them from avarice for the treasures they surely hide, the gold your men hope to get from this unknown world.[NEWLINE][NEWLINE]</English>
         <French>Les coutumes de ces indigènes semblent bien étranges, n'ont-ils jamais entendu parler de Dieu ? Sans doute faudrait-il envoyé des hommes pieux en mission pour mieux les connaître et leur apprendre la foi chrétienne.[NEWLINE][NEWLINE]</French>
         <German>Fröhliche Augen in braunen, schmutzigen Gesichtern. Junge Männer mit Speeren und Bögen, bemalten Gesichtern und einem kindlichen Staunen. Junge Frauen, die in Tonkrügen Körner mahlen und Euch verstohlen anblicken. Zahnlose Alte, die zutraulich heranhumpeln.[NEWLINE][NEWLINE]Ihr ahntet, dass dieses fremde Land Wunder und Gefahren birgt. Doch dass hier so viele gottlose Heidenkinder hausen, ohne Kenntnis von der Barmherzigkeit Jesu, das hättet Ihr nicht für möglich gehalten.[NEWLINE][NEWLINE]Ihr werdet Ihnen in den nächsten Wochen von der Erlösung berichten, die der wahre christliche Glaube ihren mit Sünde beladenen Seelen schenken wird.[NEWLINE][NEWLINE]Und vielleicht könnt Ihr sie auch tatsächlich erlösen - von den Schätzen, die sie gewisslich verstecken, dem Gold, das Eure Männer in diesem Teil der Welt zu erbeuten hoffen.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -618,7 +617,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_TEXT</Tag>
-        <English>You have made first contact with three Native nations.[NEWLINE][NEWLINE]With a smile, the Natives approach. They open their hands.[NEWLINE][NEWLINE]In the midday light of the sun, the silver amulets, the gold rings and the gemstone-decorated totem masks they offer you glisten.[NEWLINE][NEWLINE]A trapper who spent last winter with the heathens translates the words of their chief, who in exchange wants three iron hammers, a hemp sack with nails, a barrel of brandy and a blunderbuss.[NEWLINE][NEWLINE]You have to smile. Perhaps you can take the treasures of this foreign land without paying for them with the blood of your men.[NEWLINE][NEWLINE]</English>
+        <English>You have made first contact with three Native nations.[NEWLINE][NEWLINE]With a smile, some Natives approach. They open their hands.[NEWLINE][NEWLINE]In the midday light of the sun, the silver amulets, the gold rings and the gemstone-decorated totem masks they offer you glisten.[NEWLINE][NEWLINE]A trapper who spent last winter with the heathens translates the words of their chief, who in exchange wants three iron hammers, a hemp sack with nails, a barrel of brandy and a blunderbuss.[NEWLINE][NEWLINE]You have to smile. Perhaps you can take the treasures of this foreign land without paying for them with the blood of your men.[NEWLINE][NEWLINE]</English>
         <French>Ce Nouveau Monde est habité par des peuples aux cultures variées. Sans doute serait-il habile de jouer sur leurs différences à notre avantage...[NEWLINE][NEWLINE]</French>
         <German>Mit einem Lächeln nähern sich die Eingeborenen. Sie öffnen ihre Hände.[NEWLINE][NEWLINE]Im Mittagslicht der Sonne glitzern die silbernen Amulette, die Goldringe und edelsteingeschmückten Totemmasken, die sie Euch anbieten.[NEWLINE][NEWLINE]Ein Trapper, der den letzten Winter bei den Heiden verbracht hat, übersetzt die Worte ihres Häuptlings. Drei Eisenhämmer erbittet der Wilde im Tausch, ein Hanfsäckcken mit Nägeln, ein Fässchen Branntwein und eine Donnerbüchse.[NEWLINE][NEWLINE]Ihr müsst schmunzeln. Vielleicht könnt Ihr diesem fremden Land seine Schätze nehmen, ohne dafür mit dem Blut Eurer Männer zu zahlen.[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -654,7 +653,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_TEXT</Tag>
-        <English>You already have twenty different tribes on your map. How many more do you think might be added?[NEWLINE][NEWLINE]If you thought this vast land was essentially uninhabited, your scouts have proved you wrong.[NEWLINE][NEWLINE]What will contact with these different cultures bring? War or peace? Trade? Will the Church rid them of their superstitions and make them good Christians with the Bible in hand, or will you have to use your sword?[NEWLINE][NEWLINE]There is still a lot of work ahead of you, that much is certain...[NEWLINE][NEWLINE]</English>
+        <English>You already have twenty different tribes on your map. How many more do you think there could be?[NEWLINE][NEWLINE]If you imagined that this vast land was essentially uninhabited, your scouts have proved you wrong.[NEWLINE][NEWLINE]What will contact with these different cultures bring? War or peace? Trade? Will the Church rid them of their superstitions and make them good Christians with the Bible in hand, or will you have to use your sword?[NEWLINE][NEWLINE]There is still a lot of work ahead of you, that much is certain...[NEWLINE][NEWLINE]</English>
         <French>Du Nord au Sud, vos explorateurs parcourent les terres de cette immense continent. En trouverez-vous un jour les limites ?[NEWLINE][NEWLINE]</French>
         <German>Zwanzig verschiedene Stämme habt Ihr nun bereits auf Eurer Landkarte verzeichnet. Wieviele werden wohl noch hinzukommen? Wenn Ihr gedacht habt, dieses weite Land sei im Wesentlichen unbesiedelt, haben Euch Eure Scouts mittlerweile eines Besseren belehrt.[NEWLINE][NEWLINE]Was wird der Kontakt mit diesen unterschiedlichen Kulturen wohl bringen? Krieg oder Frieden? Handel? Wird die Kirche sie von ihrem Aberglauben befreien und sie mit der Bibel in der Hand zu guten Christenmenschen machen oder müsst Ihr dafür Euer Schwert einsetzen?[NEWLINE][NEWLINE]Es liegt noch viel Arbeit vor Euch, soviel ist jedenfalls sicher...[NEWLINE][NEWLINE]</German>
     </TEXT>
@@ -675,356 +674,268 @@
         <English>You have bought or sold goods for the first time.[NEWLINE][NEWLINE]Your ship's captain puts a leather pouch bulging with gold coins on the counter of the trading house.[NEWLINE][NEWLINE]The timid merchant does not bat an eyelid. For him, such transactions are as commonplace as the goose fat on his lunch sandwich.[NEWLINE][NEWLINE]For your captain, on the other hand, they are a burden. The gold may no longer be his responsibility, but now he has to carry back the precious cargo.[NEWLINE][NEWLINE]If a skull and crossbones flag appears on the horizon, the journey may have been in vain.[NEWLINE][NEWLINE]</English>
         <French>Vous avez déchargé vos premières marchandises.[NEWLINE][NEWLINE]</French>
         <German>Einen Lederbeutel, prall gefüllt mit Goldmünzen, legt Euer Schiffskapitän auf den Tresen des Kontors.[NEWLINE][NEWLINE]Der feiste Kaufmann zuckt mit keiner Wimper. Für ihn sind solche Geschäfte so alltäglich wie der Gänseschmalz auf seinem Mittagsbrot.[NEWLINE][NEWLINE]Für Euren Kapitän dagegen sind sie eine Last. Die Verantwortung für das Gold ist er los, doch nun gilt es, mit der kostbaren Fracht wieder unbeschadet heimzukommen.[NEWLINE][NEWLINE]Taucht eine Totenkopfflagge am Horizont auf, könnte die Reise vergeblich gewesen sein.[NEWLINE][NEWLINE]</German>
-        <Italian>You have bought or sold goods the first time.</Italian>
-        <Spanish>You have bought or sold goods the first time.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE</Tag>
         <English>1,000 goods traded</English>
         <French>Mille échanges commerciaux</French>
         <German>1.000 Waren gehandelt</German>
-        <Italian>Many trade agreements</Italian>
-        <Spanish>Many trade agreements</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_HEAD</Tag>
         <English>A Thousand Goods Traded</English>
         <French>Un millier d'échanges commerciaux</French>
         <German>Tausend Waren gehandelt</German>
-        <Italian>Many trade agreements</Italian>
-        <Spanish>Many trade agreements</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_TEXT</Tag>
         <English>You are a shrewd businessman with many deals.[NEWLINE][NEWLINE]The whispering in the pews falls silent. The preacher strides forward and begins the Lord's Prayer in a firm and pious voice.[NEWLINE][NEWLINE]You pull your hands out of your waistcoat pockets and fold them in prayer.[NEWLINE][NEWLINE]A murmur goes through the crowd. The preacher pauses. His eyes follow the looks of the citizens. They are glued to a sparkling gem, encircled by a golden ring. Your hand raised in prayer casually shows it to the faithful.[NEWLINE][NEWLINE]The preacher shakes his head disapprovingly.[NEWLINE][NEWLINE]You smile back calmly, knowing you are only revealing the wealth your trading skills have brought you.[NEWLINE][NEWLINE]</English>
         <French>Vos colonies ont déjà réalisées un millier d'échanges commerciaux, vous êtes un véritable homme d'affaires ![NEWLINE][NEWLINE]</French>
         <German>Das Tuscheln auf den Kirchenbänken verstummt. Der Prediger schreitet nach vorne und beginnt mit fester und frommer Stimme das Vaterunser.[NEWLINE][NEWLINE]Ihr zieht Eure Hände aus den Westentasche und faltet sie zum Gebet.[NEWLINE][NEWLINE]Ein Raunen geht durch die Menge. Der Prediger stutzt und folgt mit den Augen den Blicken der Bürger. Sie kleben an einem funkelnden Edelstein, groß wie ein Augapfel. Ein goldener Ring fasst ihn ein, Eure zum Gebet erhobene Hand zeigt ihn beiläufig den Gläubigen.[NEWLINE][NEWLINE]Der Prediger schüttelt missbilligend sein Haupt.[NEWLINE][NEWLINE]Ihr lächelt gelassen zurück, im Wissen, nur den Wohlstand zu offenbaren, den Euer Handelsgeschick Euch eingetragen hat.[NEWLINE][NEWLINE]</German>
-        <Italian>You are a real businessman with many deals.</Italian>
-        <Spanish>You are a real businessman with many deals.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE</Tag>
         <English>3,000 goods traded</English>
         <French>Trois mille échanges commerciaux</French>
         <German>3.000 Waren gehandelt</German>
-        <Italian>A large number of trade agreements</Italian>
-        <Spanish>A large number of trade agreements</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_HEAD</Tag>
         <English>Three Thousand Goods Traded</English>
         <French>Un très grand nombre d'échanges commerciaux</French>
         <German>Dreitausend Waren gehandelt</German>
-        <Italian>A large number of trade agreements</Italian>
-        <Spanish>A large number of trade agreements</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_TEXT</Tag>
         <English>You are a great merchant with many deals to your name.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Again?[COLOR_REVERT]" The old man raises his bushy brows. "[COLOR_SELECTED_TEXT]Weren't you here last month?[COLOR_REVERT]"[NEWLINE][NEWLINE]Your secretary nods calmly. "[COLOR_SELECTED_TEXT]And now you need one again?[COLOR_REVERT]" asks the shopkeeper. "[COLOR_SELECTED_TEXT]What happened to the account book I sold you?[COLOR_REVERT]"[NEWLINE][NEWLINE]Your secretary smiles. "[COLOR_SELECTED_TEXT]My master filled it up. The governor's business is going well.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vos colonies ont déjà réalisées trois mille échanges commerciaux. Vous êtes un homme d'affaires remarquable ![NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Schon wieder?[COLOR_REVERT]" Der alte Mann hebt seine buschigen Brauen. "[COLOR_SELECTED_TEXT]Wart Ihr nicht vergangenen Monat das letzte Mal hier?[COLOR_REVERT]"[NEWLINE][NEWLINE]Euer Sekretär nickt gelassen. "[COLOR_SELECTED_TEXT]Und jetzt braucht Ihr erneut eines?[COLOR_REVERT]", fragt der Ladenbesitzer. "[COLOR_SELECTED_TEXT]Was ist mit dem Kontobuch geschehen, das ich Euch verkauft hatte?[COLOR_REVERT]"[NEWLINE][NEWLINE]Euer Sekretär lächelt. "[COLOR_SELECTED_TEXT]Mein Herr hat es vollgeschrieben. Die Geschäfte des Gouverneurs gehen gut.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You are a great businessman with many deals.</Italian>
-        <Spanish>You are a great businessman with many deals.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE</Tag>
         <English>10,000 goods traded</English>
         <French>Dix mille échanges commerciaux</French>
         <German>10.000 Waren gehandelt</German>
-        <Italian>A very large number of trade agreements</Italian>
-        <Spanish>A very large number of trade agreements</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_HEAD</Tag>
         <English>Ten Thousand Goods Traded</English>
         <French>Dix mille échanges commerciaux !</French>
         <German>Zehntausend Waren gehandelt</German>
-        <Italian>A very large number of trade agreements</Italian>
-        <Spanish>A very large number of trade agreements</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_TEXT</Tag>
         <English>Are you a businessman? Nay, you are a banker to kings themselves![NEWLINE][NEWLINE]The six-horse carriage, crafted from the finest mahogany, proceeds at a walking pace up the busy boulevard to the government palace. A young market woman calls curiously to one of the garrison soldiers riding along with the carriage.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Who is so important,[COLOR_REVERT]" she asks him, "[COLOR_SELECTED_TEXT]that the High Lord sends his private carriage to fetch him from the harbour?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a merchant from Europe,[COLOR_REVERT]" the soldier calls back. "[COLOR_SELECTED_TEXT]He wants to do business with the governor.[COLOR_REVERT]"[NEWLINE][NEWLINE]He leans down from the saddle and murmurs confidentially "[COLOR_SELECTED_TEXT]This Jakob Fugger is said to be one of the richest men in the world.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He could be,[COLOR_REVERT]" the sutler returns with a smile, "[COLOR_SELECTED_TEXT]but he will probably be at most the second richest in the world.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vos colonies ont réalisées dix mille échanges commerciaux. Partout en Europe, les Rois sont impressionnés par votre réussite commerciale.[NEWLINE][NEWLINE]</French>
         <German>Sechsspännig ist die Kutsche aus edelstem Mahagoni, die im Schritttempo den belebten Boulevard zum Regierungspalast hinaufrollt. Ein junges Marktweib wendet sich voller Neugierde an einen der Garnisonssoldaten, der hoch zu Ross das Gefährt begleitet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wer ist denn so bedeutsam[COLOR_REVERT]", fragt sie ihn, "[COLOR_SELECTED_TEXT]dass der Hohe Herr seine private Kutsche schickt, ihn vom Hafen abzuholen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Es ist ein Kaufmann aus Europa[COLOR_REVERT]", ruft der Soldat zurück, "[COLOR_SELECTED_TEXT]er will mit dem Gouverneur Geschäfte machen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er beugt sich herab vom Sattel und raunt vertraulich "[COLOR_SELECTED_TEXT]Dieser Jakob Fugger soll einer der reichsten Männer der Welt sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er könnte[COLOR_REVERT]", gibt die Marketenderin lächelnd zurück, "[COLOR_SELECTED_TEXT]aber er wird wohl höchstens der zweitreichste der Welt sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You are a businessman? No. You are The Businessman!</Italian>
-        <Spanish>You are a businessman? No. You are The Businessman!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY</Tag>
         <English>Your first military victory</English>
         <French>Votre première victoire</French>
         <German>Euer erstes gewonnenes Gefecht</German>
-        <Italian>Your first military victory</Italian>
-        <Spanish>Your first military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_HEAD</Tag>
         <English>Gunsmoke</English>
         <French>Votre première victoire</French>
         <German>Ein Leben gegen das andere</German>
-        <Italian>Your first military victory</Italian>
-        <Spanish>Your first military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_TEXT</Tag>
         <English>You have won your first military victory.[NEWLINE][NEWLINE]A gust of wind approaches, as unexpected as if someone in heaven had heaved a sigh. The gunsmoke vanishes.[NEWLINE][NEWLINE]You now have a clear view of the enemy's misfortune, which is your own good fortune. The first battle is won![NEWLINE][NEWLINE]You take off your broad-brimmed hat and bow your head in gratitude.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Our Father,[COLOR_REVERT]" you say, "[COLOR_SELECTED_TEXT]Our Father who art in heaven, hallowed be Thy name...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>La fumée du fusil se dissippe. Dans une odeur de poudre, nos hommes restent à l'affut... Il n'y a plus de danger. Vos hommes ne s'en rendent pas encore compte, mais ils viennent de remporter la première victoire militaire de vos colonies.[NEWLINE][NEWLINE]</French>
         <German>Ein Windstoß fährt heran, so plötzlich, als habe jemand im Himmel einen Seufzer getan. Der Pulverrauch verfliegt.[NEWLINE][NEWLINE]Ihr habt nun freie Sicht auf das Unglück des Feindes, dass Euer Glück ist. Das erste Gefecht ist gewonnen![NEWLINE][NEWLINE]Ihr nehmt Euren breitkrempigen Hut ab und senkt dankbar das Haupt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vater unser[COLOR_REVERT]", sprecht Ihr, "[COLOR_SELECTED_TEXT]Vater unser im Himmel, geheiligt werde dein Name ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have won your first military victory.</Italian>
-        <Spanish>You have won your first military victory.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY</Tag>
         <English>Your tenth military victory</English>
         <French>Votre dixième victoire militaire</French>
         <German>Euer zehntes gewonnenes Gefecht</German>
-        <Italian>Your tenth military victory</Italian>
-        <Spanish>Your tenth military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_HEAD</Tag>
         <English>Ten Victories</English>
         <French>Dixième victoire militaire !</French>
         <German>Zehn siegreiche Gefechte</German>
-        <Italian>Your tenth military victory</Italian>
-        <Spanish>Your tenth military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_TEXT</Tag>
         <English>You have won your tenth military victory.[NEWLINE][NEWLINE]The messenger, dusty and sweaty, slides awkwardly off his horse. The guards catch him as he stumbles.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Where is the governor?[COLOR_REVERT]" gasps the young man. "[COLOR_SELECTED_TEXT]I have a message from his officers.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'll take you to him,[COLOR_REVERT]" says the sergeant of the palace guard, a grey-bearded, sinewy old man.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tell me,[COLOR_REVERT]" he says, talking as he walks, "[COLOR_SELECTED_TEXT]did we win the battle?[COLOR_REVERT]"[NEWLINE][NEWLINE]The messenger grins. "[COLOR_SELECTED_TEXT]Would I be here otherwise?[COLOR_REVERT]"[NEWLINE][NEWLINE]The midday sun smiles down on him.[NEWLINE][NEWLINE]</English>
         <French>« Où est le gouverneur ? », demande le messager en sueur, « J'ai un courrier de ses officiers. ». Le garde trépigne et ne peut s'empêcher de poser la question : « Dites-moi...Nous avons gagné la bataille ? ». Le messager sourit, « Serais-je ici autrement ? »[NEWLINE][NEWLINE]</French>
         <German>Staubig und verschwitzt ist der Bote. Er springt vom Pferd, stolpert, die Wachen können ihn gerade noch stützen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wo ist der Gouverneur?[COLOR_REVERT]" keucht der junge Mann. "[COLOR_SELECTED_TEXT]Ich habe eine Botschaft von seinen Offizieren.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich bringe dich zu ihm[COLOR_REVERT]", sagt der Feldwebel der Palastwache, ein graubärtiger, sehniger Alter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sag mir,[COLOR_REVERT]" spricht er bereits im Gehen, "[COLOR_SELECTED_TEXT]haben wir die Schlacht gewonnen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Bote schmunzelt. "[COLOR_SELECTED_TEXT]Wäre ich sonst hier?[COLOR_REVERT]"[NEWLINE][NEWLINE]Die Mittagssonne lacht ihn an.[NEWLINE][NEWLINE]</German>
-        <Italian>You have won your tenth military victory</Italian>
-        <Spanish>You have won your tenth military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY</Tag>
         <English>Your fortieth military victory</English>
         <French>Votre quarantième victoire militaire</French>
         <German>Euer vierzigstes gewonnenes Gefecht</German>
-        <Italian>Forty military victories</Italian>
-        <Spanish>Forty military victories</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_HEAD</Tag>
         <English>Blood Red</English>
         <French>Quarantième victoire militaire</French>
         <German>Blutrot</German>
-        <Italian>Forty military victories</Italian>
-        <Spanish>Forty military victories</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_TEXT</Tag>
-        <English>You have won forty military victories.[NEWLINE][NEWLINE]The sun burns on the far horizon, turning the sunset prairie red. Silently, your cavalry rides across the plain.[NEWLINE][NEWLINE]The men have no eye for the beauty of the landscape. They are already thinking with cold fury of the coming dawn when they will ride against the enemy city.[NEWLINE][NEWLINE]Protected by no ramparts, it's far from the battle front, believing itself safe from the distant horrors of war.[NEWLINE][NEWLINE]But with your cavalry you dispatch death to all corners of the New World - whose beauty and wealth should belong to one master only ... you.[NEWLINE][NEWLINE]</English>
+        <English>You have won forty military victories.[NEWLINE][NEWLINE]The sun burns on the far horizon, turning the sunset prairie red. Silently, your cavalry rides across the plain.[NEWLINE][NEWLINE]The men have no eye for the beauty of the landscape. They are already thinking with cold fury of the coming dawn when they will ride against the enemy city.[NEWLINE][NEWLINE]Unprotected by ramparts, far from the battle front, it believes itself safe from the distant horrors of war.[NEWLINE][NEWLINE]But with your cavalry you dispatch death to all corners of the New World - whose beauty and wealth should belong to one master only ... you.[NEWLINE][NEWLINE]</English>
         <French>Le soleil tombe à l'horizon, vos troupes, expérimentées, ne sont pas là pour admirer le paysage. Ils viennent d'apporter la 40ème victoire militaire à notre Empire.[NEWLINE][NEWLINE]</French>
         <German>Die Sonne verglüht am Horizont, ihr sterbendes Licht entflammt die Steppe. Schweigend reitet Euer Kavallerietrupp durch die Ebene.[NEWLINE][NEWLINE]Die Männer haben kein Auge für den Liebreiz der Landschaft. Sie denken bereits voller kaltem Grimm an den nächsten Morgen, in dessen Dämmerlicht sie in die Stadt des Feindes einreiten werden.[NEWLINE][NEWLINE]Durch keine Wälle geschützt, liegt sie im Hinterland und glaubt sich sicher vor den weit entfernten Schrecken des Krieges.[NEWLINE][NEWLINE]Doch mit Eurer Kavallerie entsendet Ihr den Tod in alle Winkel der Neuen Welt - deren Schönheit und Reichtum nur einem Herren gehören sollte ... Euch.[NEWLINE][NEWLINE]</German>
-        <Italian>You have won forty military victories.</Italian>
-        <Spanish>You have won forty military victories.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY</Tag>
         <English>Your seventieth military victory</English>
         <French>Votre soixante-dizième victoire militaire</French>
         <German>Euer siebzigstes gewonnenes Gefecht</German>
-        <Italian>Seventy military victories</Italian>
-        <Spanish>Seventy military victories</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_HEAD</Tag>
         <English>Playing the Hero</English>
         <French>Soixante-dizième victoire militaire</French>
         <German>Den Helden spielen</German>
-        <Italian>Seventy military victories</Italian>
-        <Spanish>Seventy military victories</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_TEXT</Tag>
         <English>You have won seventy military victories.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What is there honourable about it?[COLOR_REVERT]" the young soldier murmurs disgustedly to the veteran at his side. "[COLOR_SELECTED_TEXT]To ambush the enemy's wagons and slaughter their defenceless escort - I never dreamed of such heroic deeds when I volunteered to take up arms.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimly, the greybeard glares back at him. "[COLOR_SELECTED_TEXT]If the enemy runs out of provisions and ammunition, it will save the lives of many a man in our ranks - perhaps you too, laddie. If you need to be a hero, go home and play with your tin soldiers.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous venez de remporter votre soixante-dizième victoire militaire. Votre armée devient chaque jour plus grande, plus expérimentée, plus professionnelle.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Was soll denn daran ehrenhaft sein?[COLOR_REVERT]", raunt der junge Soldat angewidert dem Veteranen an seiner Seite zu. "[COLOR_SELECTED_TEXT]Den Tross des Feindes aus dem Hinterhalt zu überfallen und dessen wehrlose Eskorte abzuschlachten - von solchen Heldentaten hatte ich nicht geträumt, als ich mich freiwillig zu den Waffen meldete.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimmig mustert ihn der Graubart. "[COLOR_SELECTED_TEXT]Wenn dem Feind Proviant und Munition ausgehen, dann wird das so manchem in unseren Reihen das Leben retten - vielleicht auch dir, Bürschchen. Wenn du lieber den Helden spielen willst, dann geh nach Hause und misch dich unter deine Zinnsoldaten.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have won seventy military victories.</Italian>
-        <Spanish>You have won seventy military victories.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY</Tag>
         <English>Your hundredth military victory</English>
         <French>Centième victoire militaire</French>
         <German>Euer hundertstes gewonnenes Gefecht</German>
-        <Italian>Your hundredth military victory</Italian>
-        <Spanish>Your hundredth military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_HEAD</Tag>
         <English>War's Shadow</English>
         <French>Centième victoire militaire</French>
         <German>Im Schatten des Krieges</German>
-        <Italian>Your hundredth military victory</Italian>
-        <Spanish>Your hundredth military victory</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_TEXT</Tag>
-        <English>You have won your hundredth military victory. The New World trembles before you![NEWLINE][NEWLINE]It's early when the winter sun climbs back down into its tomb, and the moon stands guard over the deserted firmament.[NEWLINE][NEWLINE]Wearily, the soldier climbs the hill behind his parents' farm.[NEWLINE][NEWLINE]His battalion commander has granted home leave. The man's footsteps crunch in the snow and he feels chilled when he reaches the crest.[NEWLINE][NEWLINE]There's a lonely stone cross. The soldier unshoulders his rifle and stands for a moment, still and silent like the evening star.[NEWLINE][NEWLINE]After an eternity he swallows and whispers, "[COLOR_SELECTED_TEXT]You came home from the war before me, brother.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have won your hundredth military victory. The New World trembles before you![NEWLINE][NEWLINE]It's early when the winter sun sinks back down into its tomb and the moon stands guard over the deserted firmament.[NEWLINE][NEWLINE]Wearily, the soldier climbs the hill behind his parents' farm.[NEWLINE][NEWLINE]His battalion commander has granted home leave. The man's footsteps crunch in the snow and he feels chilled when he reaches the crest.[NEWLINE][NEWLINE]There's a lonely stone cross. The soldier unshoulders his rifle and stands for a moment, still and silent like the evening star.[NEWLINE][NEWLINE]After an eternity he swallows and whispers, "[COLOR_SELECTED_TEXT]You came home from the war before me, brother.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Déjà cent victoires au combat pour les troupes de vos colonies. Tout le monde sur le continent craint aujourd'hui vos armées, mais êtes-vous vraiment prêt à combattre contre n'importe quel adversaire ? Même s'il venait d'outre-Atlantique ?[NEWLINE][NEWLINE]</French>
         <German>Früh ist die Wintersonne herab in ihre Gruft gestiegen, und der Mond bewacht das verwaiste Firmament.[NEWLINE][NEWLINE]Müden Schritts erklimmt der Soldat den Hügel hinter dem Gehöft seiner Eltern.[NEWLINE][NEWLINE]Heimaturlaub hat ihm sein Bataillonskommandant gewährt. Die Schritte des Mannes knirschen im Schnee, und klamm ist ihm zumute, als er an der Kuppe anlangt.[NEWLINE][NEWLINE]Ein einsames Kreuz aus Stein steht dort. Der Soldat schultert sein Gewehr ab und steht bloß da, still und schweigend wie das Nachtgestirn.[NEWLINE][NEWLINE]Längst scheint die Ewigkeit angebrochen, als er schluckt und flüstert. "[COLOR_SELECTED_TEXT]Bist vor mir aus dem Krieg heimgekehrt, Bruderherz.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have won your hundredth military victory.</Italian>
-        <Spanish>You have won your hundredth military victory.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY</Tag>
         <English>Your tenth victorious naval action</English>
         <French>Your tenth military victory at sea</French>
         <German>Euer zehntes gewonnenes Seegefecht</German>
-        <Italian>Your tenth military victory at sea</Italian>
-        <Spanish>Your tenth military victory at sea</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY_HEAD</Tag>
         <English>Ten Victorious Naval Actions</English>
         <French>Your tenth military victory at sea</French>
         <German>Zehn siegreiche Seegefechte</German>
-        <Italian>Your tenth military victory at sea</Italian>
-        <Spanish>Your tenth military victory at sea</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY_TEXT</Tag>
         <English>You have won your tenth military victory at sea.[NEWLINE][NEWLINE]Gunwales are splintered, sails have been torn to shreds, men have fallen. The price of victory was once again far too high, the captain thinks to himself.[NEWLINE][NEWLINE]And yet success truly tastes better than failure. The captured ship will please the Admiral and the damage can be easily repaired in the shipyard.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]An extra ration of rum for the men![COLOR_REVERT]" he bellows to the boatswain across the deck.[NEWLINE][NEWLINE]The men cheer. How easy it is to please these poor devils, the captain thinks, and disappears into his cabin.[NEWLINE][NEWLINE]</English>
         <French>You have won your tenth military victory at sea.[NEWLINE][NEWLINE]</French>
         <German>Holz ist zersplittert, Segel wurden zerfetzt, Männer sind gefallen. Der Preis für den Sieg war wieder einmal viel zu hoch, denkt sich der Captain.[NEWLINE][NEWLINE]Und doch schmeckt der Erfolg wahrlich besser als der Misserfolg. Die eroberte Prise wird dem Admiral gut gefallen und die Schäden können in der Werft leicht behoben werden.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Extraration Rum für die Männer![COLOR_REVERT]" brüllt er dem Bootsmann über das Deck entgegen.[NEWLINE][NEWLINE]Die Männer jubeln. Wie leicht diese armen Teufel doch zufrieden zu stellen sind, denkt der Captain und verschwindet in seiner Kabine.[NEWLINE][NEWLINE]</German>
-        <Italian>You have won your tenth military victory at sea.</Italian>
-        <Spanish>You have won your tenth military victory at sea.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY</Tag>
         <English>Your thirtieth victorious naval action</English>
         <French>Your thirtieth military victory at sea</French>
         <German>Euer dreißigstes gewonnenes Seegefecht</German>
-        <Italian>Your thirtieth military victory at sea</Italian>
-        <Spanish>Your thirtieth military victory at sea</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY_HEAD</Tag>
-        <English>Thirty victorious naval actions</English>
+        <English>Thirty Naval Victories</English>
         <French>Your thirtieth military victory at sea</French>
         <German>Dreißig siegreiche Seegefechte</German>
-        <Italian>Your thirtieth military victory at sea</Italian>
-        <Spanish>Your thirtieth military victory at sea</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY_TEXT</Tag>
         <English>You have won your thirtieth military victory at sea.[NEWLINE][NEWLINE]The new epaulette gleams in the sunlight. Self-satisfied, the captain gazes across the small squadron he now commands.[NEWLINE][NEWLINE]The lords of the admiralty have been generous. But, after all, at sea he did put the fear of God into the enemy.[NEWLINE][NEWLINE]Was it worth it? Under his command too many sailors and marines have already fallen. And with the war looming, there are likely to be even more.[NEWLINE][NEWLINE]But what the hell. After all, nothing comes for free.[NEWLINE][NEWLINE]Not even death, for that costs one's own life, the captain thinks to himself as he invites his officers to dinner to celebrate their latest victory.[NEWLINE][NEWLINE]</English>
         <French>You have won your thirtieth military victory at sea.[NEWLINE][NEWLINE]</French>
         <German>Die neue Epaulette auf der Schulter glänzt im Sonnenlicht. Selbstzufrieden blickt der Captain über sein kleines Geschwader, das er nunmehr kommandiert.[NEWLINE][NEWLINE]Die Herren Admiräle waren großzügig. Aber schließlich war er es ja auch, der die Gegner auf See das Fürchten gelehrt hat.[NEWLINE][NEWLINE]Aber war es das wert? Zuviele Matrosen und Seesoldaten sind unter seinem Kommando schon gefallen. Und bei dem heraufziehenden Kampf dürften es sogar noch mehr werden.[NEWLINE][NEWLINE]Aber was soll's. Schließlich gibt es nichts umsonst.[NEWLINE][NEWLINE]Nicht einmal den Tod, denn der kostet das Leben, denkt sich der Captain und lädt seine Offiziere zum Dinner, um den neuesten Sieg gebührend zu feiern.[NEWLINE][NEWLINE]</German>
-        <Italian>You have won your thirtieth military victory at sea.</Italian>
-        <Spanish>You have won your thirtieth military victory at sea.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY</Tag>
         <English>Your fiftieth victorious naval action</English>
         <French>Votre cinquantième victoire militaire en mer</French>
         <German>Euer fünfzigstes gewonnenes Seegefecht</German>
-        <Italian>Your fiftieth military victory at sea</Italian>
-        <Spanish>Your fiftieth military victory at sea</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY_HEAD</Tag>
-        <English>Fifty victorious naval actions</English>
+        <English>Fifty Victories At Sea</English>
         <French>Votre cinquantième victoire militaire en mer</French>
         <German>Fünfzig siegreiche Seegefechte</German>
-        <Italian>Your fiftieth military victory at sea</Italian>
-        <Spanish>Your fiftieth military victory at sea</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY_TEXT</Tag>
         <English>You have won your fiftieth military victory at sea.[NEWLINE][NEWLINE]What a glorious fleet![NEWLINE][NEWLINE]Knowing that mastery of the sea is the key to success in the New World, you have built a navy second to none.[NEWLINE][NEWLINE]Strong enough to protect your colonies from pirates and privateers, powerful enough to defy your neighbours.[NEWLINE][NEWLINE]But will it be powerful enough to take on the king's fleet if need be?[NEWLINE][NEWLINE]Well, the day you find out is not as far away as you might think.[NEWLINE][NEWLINE]</English>
         <French>Vous avez remporté votre cinquantième victoire en mer. Quelle flotte glorieuse que la vôtre ![NEWLINE][NEWLINE]</French>
         <German>Was für eine Flotte![NEWLINE][NEWLINE]Wohlwissend, daß die Herrschaft über die See der Schlüssel zum Erfolg in der Neuen Welt ist, habt Ihr Euch eine Flotte aufgebaut, die ihresgleichen sucht.[NEWLINE][NEWLINE]Stark genug, um Eure Kolonien vor Piraten und Freibeutern zu schützen, mächtig genug, um Euren Nachbarn zu trotzen.[NEWLINE][NEWLINE]Aber wird sie auch kampfkräftig genug sein, um es notfalls mit der Flotte des Königs aufzunehmen?[NEWLINE][NEWLINE]Nun, der Tag an dem Ihr das herausfinden werdet, ist nicht mehr so fern wie Ihr vielleicht denkt.[NEWLINE][NEWLINE]</German>
-        <Italian>You have won your fiftieth military victory at sea. What a glorious fleet!</Italian>
-        <Spanish>You have won your fiftieth military victory at sea. What a glorious fleet!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON</Tag>
         <English>Your first galleon</English>
         <French>Votre premier Galion</French>
         <German>Eure erste Galeone</German>
-        <Italian>Your first galleon</Italian>
-        <Spanish>Your first galleon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_HEAD</Tag>
-        <English>A floating giant</English>
+        <English>A Floating Giant</English>
         <French>Votre premier Galion</French>
         <German>Ein schwimmender Riese</German>
-        <Italian>Your first galleon</Italian>
-        <Spanish>Your first galleon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_TEXT</Tag>
         <English>You are now in command of your first galleon.[NEWLINE][NEWLINE]The onlookers stand in disbelief as porters climb the ship's catwalk again and again. On their bent backs they haul bales, crates and barrels.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]How much does a galleon hold?[COLOR_REVERT]" calls a little boy curiously.[NEWLINE][NEWLINE]A grizzled mate leans down. "[COLOR_SELECTED_TEXT]As much as we can put into her,[COLOR_REVERT]" he says kindly.[NEWLINE][NEWLINE]</English>
         <French>Vous êtes maintenant aux commandes d'un somptueux galion.[NEWLINE][NEWLINE]</French>
         <German>Ungläubig stehen die Schaulustigen Spalier, als wieder und wieder Lastenträger über den Laufsteg das Schiff erklimmen. Auf ihren gebeugten Rücken schleppen sie Ballen, Kisten und Fässer.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wieviel passt denn in eine Galeone rein?[COLOR_REVERT]" kräht ein kleiner Junge neugierig.[NEWLINE][NEWLINE]Ein graubärtiger Maat beugt sich herab. "[COLOR_SELECTED_TEXT]Soviel, wie muss[COLOR_REVERT]", sagt er freundlich.[NEWLINE][NEWLINE]</German>
-        <Italian>You are commanding a galleon.</Italian>
-        <Spanish>You are commanding a galleon.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP</Tag>
         <English>Your first sloop</English>
         <French>Votre premier sloop</French>
         <German>Eure erste Sloop</German>
-        <Italian>Your first sloop</Italian>
-        <Spanish>Your first sloop</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP_HEAD</Tag>
-        <English>Your first sloop</English>
+        <English>Your First Sloop</English>
         <French>Votre premier sloop</French>
         <German>Eure erste Sloop</German>
-        <Italian>Your first sloop</Italian>
-        <Spanish>Your first sloop</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP_TEXT</Tag>
         <English>You are now in command of your first sloop.[NEWLINE][NEWLINE]From the window of your dining room you look down on the harbour as the sun rises - and yet another ship has moored at the quay.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A sloop, sir,[COLOR_REVERT]" your secretary tells you officiously. "[COLOR_SELECTED_TEXT]She is said to run a smooth 12 knots, sir, though she is not very big, nor can she carry many goods.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then what are we going to do with this thing? Has the Admiralty given us nothing but useless stuff again? Don't they know in Europe that we need ships to bring as many supplies and settlers as possible?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm...um...sir, the sloop is a fast reconnaissance ship that can spy on pirate hideouts or other colonies. With her shallow draft she can hide in small bays and even enter larger rivers. She will certainly serve us well, sir.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aha, well then ... where's the invoice for this sloop? Surely they'll want to make us pay for it?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Un sloop ? Ce navire conçu à l'origine en Angleterre vous râvit par la beauté qu'il dégage, toutes voiles levées.[NEWLINE][NEWLINE]</French>
         <German>Ihr blickt aus dem Fenster Eures Dienstzimmers auf den Hafen hinunter, über dem gerade die Sonne aufgeht - Und schon wieder hat ein Schiff am Kai festgemacht.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Sloop, Herr Gouverneur[COLOR_REVERT]" wie Euch Euer Sekretär dienstbeflissen berichtet. "[COLOR_SELECTED_TEXT]Sie soll glatte 12 Knoten laufen, Herr Gouverneur, obwohl sie nicht sehr groß ist und auch nicht viele Waren transportieren kann.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was sollen wir dann mit dem Ding? Hat uns die Admiralität wieder nur unnützes Zeug zuerkannt? Wissen die denn da in Europa nicht, dass wir hier Schiffe brauchen, die möglichst viele Versorgungsgüter und Siedler herschaffen können?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm...ähm...Herr Gouverneur, die Sloop ist ein schneller Aufklärer, die Piratennester und andere Kolonien hervorragend ausspionieren kann. Aufgrund ihres geringen Tiefgangs kann sie auch kleine Buchten anlaufen und sogar in größere Flüsse einlaufen. Sie wird uns sicher gute Dienste leisten, Herr Gouverneur.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aha, na dann ... her mit der Faktura für diese Sloop. Man wird uns doch sicher trotzdem dafür bezahlen lassen wollen?![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You are now in command of your first sloop.</Italian>
-        <Spanish>You are now in command of your first sloop.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CORVETTE</Tag>
         <English>Your first corvette</English>
         <French>Votre première corvette</French>
         <German>Euer erster Piratenjäger</German>
-        <Italian>Your first corvette</Italian>
-        <Spanish>Your first corvette</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CORVETTE_HEAD</Tag>
-        <English>Ready for hunting</English>
+        <English>Ready for the Hunt</English>
         <French>Prêt pour la chasse</French>
         <German>Die Jagd kann beginnen</German>
-        <Italian>Ready for hunting</Italian>
-        <Spanish>Ready for hunting</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CORVETTE_TEXT</Tag>
-        <English>You are now in command of your first corvette.[NEWLINE][NEWLINE]Beaming with joy, the shipyard manager hands you the papers. "[COLOR_SELECTED_TEXT]At last we have a fighting ship that can take on these speedy privateers so that our merchantmen can venture out to sea again, sir.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I believe you're right. But you are charging us top dollar,[COLOR_REVERT]" you say to the manager, half-joking.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]But sir, this class is the best, most up-to-date ship we can build,[COLOR_REVERT]" the designer protests firmly. "[COLOR_SELECTED_TEXT]Fast, manoeuvrable, well-armed and led, I'll wager, by a good captain; superior to any of these stinking pirate ships.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Let's hope you're right. Otherwise our government might have to think about contracting with another shipyard.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well...,[COLOR_REVERT]" the manager replies calmly, "[COLOR_SELECTED_TEXT]our shipyard is still the only one in the colony able to build at this level. Your only alternative would be Europe.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You are now in command of your first corvette.[NEWLINE][NEWLINE]Beaming with joy, the shipyard manager hands you the papers. "[COLOR_SELECTED_TEXT]At last we have a fighting ship that can take on these speedy privateers so that our merchantmen can venture out to sea again, sir.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I believe you're right. But you are charging us top dollar,[COLOR_REVERT]" you say to the manager, half-joking.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Please sir, this class is the best, most up-to-date ship we can build,[COLOR_REVERT]" the designer protests firmly. "[COLOR_SELECTED_TEXT]Fast, manoeuvrable, well-armed and led, I'll wager, by a good captain; superior to any of these stinking pirate ships.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Let's hope you're right. Otherwise our government might have to think about contracting with another shipyard.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well...,[COLOR_REVERT]" the manager replies calmly, "[COLOR_SELECTED_TEXT]our shipyard is still the only one in the colony able to build at this level. Your only alternative would be Europe.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Votre corvette, bateau d'attaque agile et rapide d'invention française, est prête pour le combat.[NEWLINE][NEWLINE]</French>
         <German>Freudestrahlend übergibt euch der Werftdirektor die Papiere. "[COLOR_SELECTED_TEXT]Endlich haben wir ein Schiff, dass es mit diesen schnellen und wendigen Kaperschiffen aufnehmen kann, so daß sich unsere Handelsfahrer können sich wieder aufs Meer wagen können, Herr Gouverneur.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das will ich meinen. Aber dafür berechnet Ihr uns ja auch den Höchstpreis,[COLOR_REVERT]" entgegnet Ihr dem Werftdirektor mit einem Schmunzeln.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aber Herr Gouverneur, diese Schiffsklasse ist das Beste, was wir zurzeit bauen können[COLOR_REVERT]", protestiert der Wertfdirektor entschieden. "[COLOR_SELECTED_TEXT]Schnell, wendig und gut bewaffnet und von einem guten Käpt'n geführt - da gehe ich jede Wette ein - jedem dieser stinkenden Piratenschiffe überlegen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hoffen wir das Beste, ansonsten könnte die Regierung es sich vielleicht überlegen, eine andere Werft zu beauftragen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun...,[COLOR_REVERT]" entgegnet der Werftdirektor gelassen, "[COLOR_SELECTED_TEXT]noch ist unsere Werft die einzige in dieser Kolonie, die solche Qualität herzustellen vermag. Es bliebe Euch dann nur Europa.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You are now in command of your first corvette.</Italian>
-        <Spanish>You are now in command of your first corvette.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE</Tag>
         <English>Your first brigantine</English>
         <French>Votre premier brigantin</French>
         <German>Eure erste Brigantine</German>
-        <Italian>Your first brigantine</Italian>
-        <Spanish>Your first brigantine</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE_HEAD</Tag>
-        <English>A well-behaved merchantman</English>
+        <English>A Capable Merchantman</English>
         <French>Votre premier brigantin</French>
         <German>Ein braver Handelsfahrer</German>
         <Italian>Your first brigantine</Italian>
@@ -1035,344 +946,258 @@
         <English>You are now in command of your first brigantine, a well-behaved and medium-sized merchantman.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Can you make out anything, boatswain...[COLOR_REVERT]" the captain asks excitedly, "[COLOR_SELECTED_TEXT]is it a damned privateer or one of our customs cutters? The company would resent it very much if I lost this wonderful new ship to the pirates on our first voyage.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm afraid I can't make anything out, sir. The sails are only partly above the horizon,[COLOR_REVERT]" the boatswain replies nervously.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Then up the mast with you, bosun - all the way to the top. You should be able to see the hull from up there.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir[COLOR_REVERT]", the boatswain answers with a tug on his cap, thinking to himself, 'We'll know in 10 minutes anyway. This ship can't escape. We're too heavily loaded.'[NEWLINE][NEWLINE]</English>
         <French>Vous êtes maintenant aux commandes de votre premier brigantin, un navire marchand de taille moyenne plutôt bien manoeuvrable.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Könnt Ihr irgend etwas erkennen, Bootsmann...[COLOR_REVERT]" fragt der Käpt'n aufgeregt, "[COLOR_SELECTED_TEXT]ist es ein verdammter Kaperer oder einer von unseren Zollkuttern? Die Kompanie würde es mir sehr übelnehmen, wenn ich dieses wunderbare neue Schiff gleich bei unserer ersten Fahrt an die Piraten verliere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich kann leider nichts erkennen, Sir. Die Segel sind noch nicht weit genug über der Kimm[COLOR_REVERT]", gibt der Bootsmann nervös zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann rauf mit Euch in den Mast, Bootsmann - bis ganz nach oben. Von dort oben solltet Ihr den Rumpf eigentlich bereits erkennen können.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir[COLOR_REVERT]", gibt der Bootsmann pflichtschuldig zurück und denkt sich "[COLOR_SELECTED_TEXT]In 10 Minuten wissen wir sowieso Bescheid. Entkommen können wir mit diesem Kahn eh' nicht mehr, dafür haben wir zu schwer geladen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You are now in command of your first brigantine, a well-behaved and medium-sized merchantman.[NEWLINE][NEWLINE]</Italian>
-        <Spanish>You are now in command of your first brigantine, a well-behaved and medium-sized merchantman.[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT</Tag>
         <English>Your second fishing boat</English>
         <French>Votre deuxième bateau de pêche</French>
         <German>Euer zweites Fischerboot</German>
-        <Italian>Your second fishing boat</Italian>
-        <Spanish>Your second fishing boat</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT_HEAD</Tag>
-        <English>Fresh fish on the table</English>
+        <English>Fresh Fish On The Table</English>
         <French>Les filets sont prêts à être déployés !</French>
         <German>Frischer Fisch auf den Tisch</German>
-        <Italian>Ready for sea-angling</Italian>
-        <Spanish>Ready for sea-angling</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT_TEXT</Tag>
-        <English>You are now in command of your second fishing boat. Your fishing fleet is growing![NEWLINE][NEWLINE]The fishermen can hardly believe their luck, as they pull one plump cod after another out of the water.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I told you right away, the new fishing boats from our shipyard will make us rich,[COLOR_REVERT]" the worker in the small boat rejoices. "[COLOR_SELECTED_TEXT]On the coast there are just too many of us fishermen, but out here it's like a land of milk and honey-I mean cod and herring. You only have to hold out your hand...and the fish jump into your open hands.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Your nose is about to jump into my closed fist,[COLOR_REVERT]" the helmsman roars from behind, "[COLOR_SELECTED_TEXT]if you don't stop chattering and the catch isn't in soon. We have to be back in the harbour before the market opens, or you'll eating all our cod yourself.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You are now in command of your second fishing boat. Your fishing fleet is growing![NEWLINE][NEWLINE]The fishermen can hardly believe their luck, as they pull one plump cod after another out of the water.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I told you right away, the new fishing boats from our shipyard will make us rich,[COLOR_REVERT]" the worker in the small boat rejoices. "[COLOR_SELECTED_TEXT]On the coast there are just too many of us fishermen, but out here it's like a land of milk and honey - I mean cod and herring. You only have to hold out your hands...and the fish jump right into them.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Your nose is about to jump into my closed fist,[COLOR_REVERT]" the helmsman roars from behind, "[COLOR_SELECTED_TEXT]if you don't stop chattering and the catch isn't in soon. We have to be back in the harbour before the market opens, or you'll eating all this cod yourself.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous disposez de votre deuxième bâteau de pêche. Votre flotte apte à la pêche en haute mer s'agrandit ![NEWLINE][NEWLINE]</French>
         <German>Die Fischer können ihr Glück kaum fassen, einen dicken Brocken nach dem anderen ziehen sie aus dem Wasser.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich hab's doch gleich gesagt, die neuen Fischerboote aus unser Werft werden uns reich machen,[COLOR_REVERT]" frohlockt der Fischer des kleinen Fischerbootes. "[COLOR_SELECTED_TEXT]An der Küste sind wir einfach zu viele Fischer, aber hier draußen ist es wie im Schlaraffenland. Man braucht nur die Hand aufzuhalten und schon springen einem die Fische in die Hände.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Deine Nase springt auch gleich in meine Faust,[COLOR_REVERT]" brüllt der Steuermann von hinten, "[COLOR_SELECTED_TEXT]wenn Du nicht aufhörst, zu schwätzen, und der Fang nicht bald eingebracht ist. Wir müssen wieder im Hafen sein, bevor der Markt öffnet, sonst kannst Du den ganzen schönen Kabeljau alleine essen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You are now in command of your second fishingboat. Your own fishing fleet is growing![NEWLINE][NEWLINE]</Italian>
-        <Spanish>You are now in command of your second fishingboat. Your own fishing fleet is growing![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN</Tag>
         <English>Your first West Indiaman</English>
         <French>Votre premier navire des Indes Occidentales</French>
         <German>Euer erster Westindienfahrer</German>
-        <Italian>Your first westindiaman</Italian>
-        <Spanish>Your first westindiaman</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_HEAD</Tag>
-        <English>A new class of ship</English>
+        <English>The West Indiaman</English>
         <French>Premier navire des Indes Occidentales</French>
         <German>Eine neue Schiffsklasse</German>
-        <Italian>Our first westindiaman</Italian>
-        <Spanish>Our first westindiaman</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]The storm astern is approaching fast. Let's hope we reach the colony before it hits, bosun. Our hold is filled to the brim with the best the Old World has to offer.[NEWLINE][NEWLINE]Have the topsails set, so that we don't lose the High Lords' profit in the deep sea,[COLOR_REVERT]" says the captain to his boatswain as he looks nervously at the pursuing cloud bank.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye aye, sir,[COLOR_REVERT]" answers the boatswain with a mild smile as he thinks to himself "[COLOR_SELECTED_TEXT]the High Lords' profit? Well, I can see you've taken a leaf out of their book too, friend, with those boxes in the aft cabin...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>« J'espère que nous allons atteindre la colonie avant que la tempête ne se lève. »[NEWLINE][NEWLINE]« Commandant, donnez l'ordre de monter les voiles hautes. Notre câle est remplie de marchandises en provenance d'Europe, nous ne pouvons nous permettre aucun risque de sombrer en mer. »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Hoffen wir, dass wir die Kolonie noch vor dem nächsten Sturm erreichen, Bootsmann, unsere Laderäume sind so groß wie eine Kiche und randvoll mit den besten Waren aus der Alten Welt.[NEWLINE][NEWLINE]Lassen Sie die Toppsegel setzen, damit wir den Profit der hohen Herren nicht doch noch im Meer versenken[COLOR_REVERT]", meint der Käpt'n zu seinem Bootsmann und blickt sorgenvoll zu der achteraus aufziehenden Wolkenbank.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir,[COLOR_REVERT]" gibt der Boostmann milde lächelnd zurück und denkt sich "[COLOR_SELECTED_TEXT]Den Profit der hohen Herren? Na, du wirst dir davon doch sicher auch eine schöne Scheibe abschneiden, Freundchen, wenn ich so an die Kisten in der Achterkajüte denke...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>"Hopefully we will reach the colony before the astern approaching storm.[NEWLINE][NEWLINE]Bosun, give order for setting the topsails immediately. Our hold is tightly filled with goods from Europe, We should not sink the profit of the lords into the sea."[NEWLINE][NEWLINE]</Italian>
-        <Spanish>"Hopefully we will reach the colony before the astern approaching storm.[NEWLINE][NEWLINE]Bosun, give order for setting the topsails immediately. Our hold is tightly filled with goods from Europe, We should not sink the profit of the lords into the sea."[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP</Tag>
         <English>You're a smuggler now!</English>
         <French>Alors comme ça on se lance dans la contrebande ?</French>
         <German>Ihr seid unter die Schmuggler gegangen!</German>
-        <Italian>You're a smuggler now!</Italian>
-        <Spanish>You're a smuggler now!</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP_HEAD</Tag>
-        <English>Dealing onshore</English>
+        <English>Dealing Close To The Vest</English>
         <French>Alors comme ça on se lance dans la contrebande ?</French>
         <German>Verhandlung am Strand</German>
-        <Italian>Dealing onshore</Italian>
-        <Spanish>Dealing onshore</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP_TEXT</Tag>
         <English>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]", offers the city treasurer.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]No, 1000[COLOR_REVERT]", answers the captain of the smuggler anchored inshore. "[COLOR_SELECTED_TEXT]Look at these precious goods! Where do you think we got them?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]All right, 900, otherwise we could have paid the taxes directly instead of hiring you and your ship[COLOR_REVERT]", argues the governor's agent.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hurry up! The dragoons will spot us![COLOR_REVERT]" shouts the militia officer nervously from the shadows.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]All right,[COLOR_REVERT]" the captain admits defeat, "[COLOR_SELECTED_TEXT]nice doing business with you,[COLOR_REVERT]" and accepts the bulging leather bag. "[COLOR_SELECTED_TEXT]Let's get out of here, boys,[COLOR_REVERT]" he calls to his men, "[COLOR_SELECTED_TEXT]we've got another appointment in an hour.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>« 800 », propose le trésorier de la ville.[NEWLINE][NEWLINE]- « Non 1000 », répond le contrebandier depuis son navire qui mouille au port. « Regardez donc la qualité de nos produits, vous croyez qu'on se les est procurés comment ? »[NEWLINE][NEWLINE]- « D'accord, 900, mais pas plus, sinon autant payer les taxes plutôt que d'avoir recours à vos services » explique le négociant.[NEWLINE][NEWLINE]- « Dépêchez-vous maintenant, on n'a plus le temps » intervient le milicien du port qui touche son bakchich.[NEWLINE][NEWLINE]- « Bon, ok pour 900 », répond le capitaine. « Allez les gars, on débarque la marchandise en vitesse pour ne pas prendre de retard ! »[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]", wagt sich der Stadtkämmerer vor.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nein, 1000[COLOR_REVERT]", gibt der Käpt'n des Schmugglers zurück, der unmittelbar vor der Küste Anker geworfen hat. "[COLOR_SELECTED_TEXT]Seht euch diese kostbaren Waren an, was glaubt ihr denn, wo die herkommen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also gut, 900, sonst hätten wir ja gleich die Steuern bezahlen können[COLOR_REVERT]", meint der Stellvertreter des Gouverneurs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr solltet euch besser beeilen, sonst entdecken uns die Dragoner![COLOR_REVERT]" ruft der Miliz-Offizier nervös dazwischen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also gut,[COLOR_REVERT]" gibt sich der Käpt'n geschlagen, "[COLOR_SELECTED_TEXT]schön mit Euch Geschäfte zu machen[COLOR_REVERT]", und nimmt den prall gefüllten Lederbeutel entgegen. "[COLOR_SELECTED_TEXT]Hau'n wir ab, Jungs,[COLOR_REVERT]" ruft er seinen Männern zu, "[COLOR_SELECTED_TEXT]in einer Stunde haben wir schon die nächste Verabredung.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>"800," offers the city treasurer.[NEWLINE][NEWLINE]"No, 1000," answers the captain of the smuggler who currently anchored inshore. "Look at this prodigious goods, what do you think where we gained them?"[NEWLINE][NEWLINE]"Alright, 900, otherwise we directly could have paid the taxes instead of hiring you and your ship," argues the governor's agent.[NEWLINE][NEWLINE]"Hurry up! Otherwise the dragoons may catch us all," shouts the militia officer nervously from the background.[NEWLINE][NEWLINE]"Ok, deal," agrees the captain and accepts the tightly filled bag from the agent. "Let's go boys, we are in a hurry for our next appointment."</Italian>
-        <Spanish>"800," offers the city treasurer.[NEWLINE][NEWLINE]"No, 1000," answers the captain of the smuggler who currently anchored inshore. "Look at this prodigious goods, what do you think where we gained them?"[NEWLINE][NEWLINE]"Alright, 900, otherwise we directly could have paid the taxes instead of hiring you and your ship," argues the governor's agent.[NEWLINE][NEWLINE]"Hurry up! Otherwise the dragoons may catch us all," shouts the militia officer nervously from the background.[NEWLINE][NEWLINE]"Ok, deal," agrees the captain and accepts the tightly filled bag from the agent. "Let's go boys, we are in a hurry for our next appointment.".</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON</Tag>
         <English>Three galleons</English>
         <French>Trois Galions</French>
         <German>Drei Galeonen</German>
-        <Italian>Three galleons</Italian>
-        <Spanish>Three galleons</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_HEAD</Tag>
-        <English>Forest and ocean</English>
+        <English>From Forest To Sea</English>
         <French>Trois Galions</French>
         <German>Wald und Wasser</German>
-        <Italian>Three galleons</Italian>
-        <Spanish>Three galleons</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_TEXT</Tag>
-        <English>You are commanding three galleons.[NEWLINE][NEWLINE]Suddenly the world shakes. Startled, the flying squirrel jumps off and sails over to the next tree.[NEWLINE][NEWLINE]The trunk it was hanging from trembles, then splinters and falls over with a crash. At its feet, the loggers grin.[NEWLINE][NEWLINE]More planks and beams for the nearby shipyard. Stout timber for solid decks and a strong keel - for the next galleon.[NEWLINE][NEWLINE]</English>
+        <English>You are commanding three galleons.[NEWLINE][NEWLINE]Suddenly the world shakes. Startled, the flying squirrel jumps off and sails over to the next tree.[NEWLINE][NEWLINE]The trunk it was hanging from trembles, then splinters and falls with a crash. At its feet, the loggers grin.[NEWLINE][NEWLINE]More planks and beams for the nearby shipyard. Stout timber for solid decks and a strong keel - for the next galleon.[NEWLINE][NEWLINE]</English>
         <French>Vous êtes maintenant aux commandes de trois magnifiques galions.[NEWLINE][NEWLINE]</French>
         <German>Plötzlich wackelt die Welt. Erschrocken springt das Flughörnchen ab und segelt hinüber zum nächsten Baum.[NEWLINE][NEWLINE]Der Stamm, an dem es eben noch hing, erzittert, dann neigt er sich und fällt krachend um. Zu seinen Füßen feixen die Waldarbeiter.[NEWLINE][NEWLINE]Etliche Klafter Holz mehr für die Werft in der nahen Stadt. Gutes Bauholz für feste Planken und einen strammen Kiel - für die nächste Galeone.[NEWLINE][NEWLINE]</German>
-        <Italian>You are commanding three galleons.</Italian>
-        <Spanish>You are commanding three galleons.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FRIGATES</Tag>
         <English>Five frigates</English>
         <French>Cinq frégates</French>
         <German>Fünf Fregatten</German>
-        <Italian>Five frigates</Italian>
-        <Spanish>Five frigates</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FRIGATES_HEAD</Tag>
-        <English>Wolf hunting</English>
+        <English>Wolfhounds</English>
         <French>Cinq frégates</French>
         <German>Wolfsjagd</German>
-        <Italian>Five frigates</Italian>
-        <Spanish>Five frigates</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FRIGATES_TEXT</Tag>
-        <English>You have five frigates to guard your merchant ships against enemies.[NEWLINE][NEWLINE]You shade your eyes with your hand and peer out across the harbour entrance. A warship lies in wait there. Its hull is narrow so that it can fly swiftly across the sea. The decks bristle with cannons, powder kegs are stacked in the armoury. Smaller merchant ships arrive from east and west, easy prey for such a fighter.[NEWLINE][NEWLINE]But the boats glide past unconcerned, for the captains have long since learned that they are approaching one of your frigates - the shepherd dogs protecting the lambs from the wolves.[NEWLINE][NEWLINE]</English>
+        <English>You have five frigates to guard your merchant ships against enemies.[NEWLINE][NEWLINE]You shade your eyes with your hand and peer out across the harbour entrance. A warship lies in wait there. Its hull is narrow so that it can fly swiftly across the sea. The decks bristle with cannon; powder kegs are stacked in the armoury. Smaller merchant ships arrive from east and west, easy prey for such a fighter.[NEWLINE][NEWLINE]But the boats glide past unconcerned, for the captains have long since learned that they are approaching one of your frigates - the shepherd dogs protecting the lambs from the wolves.[NEWLINE][NEWLINE]</English>
         <French>Vous dirigez cinq puissantes frégates. Votre flotte commence à faire parler d'elle dans l'Ancien comme dans le Nouveau Monde.[NEWLINE][NEWLINE]</French>
         <German>Ihr verschattet die Augen mit Eurer Hand und späht hinaus auf die Hafeneinfahrt. Ein Kriegsschiff liegt dort auf der Lauer. Sein Rumpf ist schmal, damit es schnell über die See fliegen kann. Die Decks starren vor Kanonen, in der Waffenkammer stapeln sich gewiß die Pulverfässer. Von Ost und West nähern sich kleinere Handelsschiffe, eine leichte Beute für einen solchen Jäger.[NEWLINE][NEWLINE]Doch die Boote gleiten unbesorgt näher, denn die Kapitäne haben längst erkannt, dass sie sich einer Eurer Fregatten nähern - den Schäferhunden, die die Lämmer vor den Wölfen schützen.[NEWLINE][NEWLINE]</German>
-        <Italian>You have five frigates to guard your merchant ships against enemies.</Italian>
-        <Spanish>You have five frigates to guard your merchant ships against enemies.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER</Tag>
         <English>Your first privateer</English>
         <French>Votre premier corsaire</French>
         <German>Euer erstes Kaperschiff</German>
-        <Italian>Your first privateer</Italian>
-        <Spanish>Your first privateer</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_HEAD</Tag>
         <English>Jolly Roger</English>
         <French>A l'abordage !</French>
         <German>Totenkopfflagge</German>
-        <Italian>Jolly Roger</Italian>
-        <Spanish>Jolly Roger</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_TEXT</Tag>
         <English>Formerly you were a gentleman. And now? A pirate.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gentlemen,[COLOR_REVERT]" the captain announces, "[COLOR_SELECTED_TEXT]the time has come.[COLOR_REVERT]"[NEWLINE][NEWLINE]He heaves the small chest onto the chart table in his cabin. Curious, the officers watch as he breaks the seal. "[COLOR_SELECTED_TEXT]As soon as our port is out of sight, we are to open this. Those are the governor's orders.[COLOR_REVERT]"[NEWLINE][NEWLINE]He flips open the lid and has to grin. "[COLOR_SELECTED_TEXT]Gentlemen, here's what will be on our flagpole.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Avant vous étiez un gentilhomme. Et maintenant? Un corsaire.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Meine Herren[COLOR_REVERT]", verkündet der Kapitän, "[COLOR_SELECTED_TEXT]es ist soweit.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er hievt die kleine Truhe auf den Kartentisch seiner Kajüte. Neugierig schauen die Offiziere zu, wie er das Siegel zerbricht. "[COLOR_SELECTED_TEXT]Sobald unser Hafen nicht mehr in Sicht ist, sollen wir dies öffnen. So lautet der Befehl des Gouverneurs.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er klappt den Deckel auf und muss grinsen. "[COLOR_SELECTED_TEXT]Meine Herren, dies soll wohl an den Flaggenmast.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>Formerly you were a gentleman. And now? A pirate.</Italian>
-        <Spanish>Formerly you were a gentleman. And now? A pirate.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER</Tag>
         <English>Three privateers</English>
         <French>Trois corsaires</French>
         <German>Drei Kaperschiffe</German>
-        <Italian>Three privateers</Italian>
-        <Spanish>Three privateers</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_HEAD</Tag>
-        <English>The pack is hunting</English>
+        <English>The Wolf Pack Hunts</English>
         <French>Trois corsaires</French>
         <German>Das Rudel jagt</German>
-        <Italian>Three privateers</Italian>
-        <Spanish>Three privateers</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_TEXT</Tag>
         <English>What's better than a pirate ship? Three of them.[NEWLINE][NEWLINE]With a fearful look, the captain evaluates the foreign ship that is chasing his merchantman. Full sails are set, but the privateer is still gaining on him.[NEWLINE][NEWLINE]He turns towards the bow and looks ahead. The fog bank in which he wants to hide his heavy ship is getting closer. "[COLOR_SELECTED_TEXT]We can make it,[COLOR_REVERT]" he murmurs.[NEWLINE][NEWLINE]But suddenly another ship breaks out of the fog, and it too carries the Jolly Roger on the mast. "[COLOR_SELECTED_TEXT]You wolves![COLOR_REVERT]" the captain shouts in helpless rage.[NEWLINE][NEWLINE]</English>
         <French>Quoi de mieux qu'un bateau corsaire ? Trois corsaires ![NEWLINE][NEWLINE]</French>
         <German>Mit angstvollem Blick taxiert der Kapitän das fremde Schiff, das seinen Handelskahn jagt. Vollzeug hat er setzen lassen, dennoch holt der Kaperfahrer auf.[NEWLINE][NEWLINE]Er dreht sich gen Bug und blickt voraus. Die Nebelbank, in der er seinen Pott verstecken will, rückt näher. "[COLOR_SELECTED_TEXT]Wir können es schaffen[COLOR_REVERT]", murmelt er.[NEWLINE][NEWLINE]Doch urplötzlich bricht ein anderes Schiff aus dem Nebel, und auch dieses führt die Totenkopfflagge am Mast. "[COLOR_SELECTED_TEXT]Ihr Wölfe![COLOR_REVERT]", schreit der Kapitän in hilfloser Wut hinüber.[NEWLINE][NEWLINE]</German>
-        <Italian>What's better than a pirate ship? Three of them.</Italian>
-        <Spanish>What's better than a pirate ship? Three of them.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER</Tag>
         <English>Five privateers</English>
         <French>Cinq corsaires</French>
         <German>Fünf Kaperschiffe</German>
-        <Italian>Five privateers</Italian>
-        <Spanish>Five privateers</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_HEAD</Tag>
-        <English>Fat booty</English>
+        <English>A Fat Prey</English>
         <French>Cinq corsaires</French>
         <German>Fette Beute</German>
-        <Italian>Five privateers</Italian>
-        <Spanish>Five privateers</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_TEXT</Tag>
-        <English>Your fleet of pirate ships is ruling the waves. No ship of your neighbours will be safe from your privateers.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A fat prey![COLOR_REVERT]" the harpooner shouts to the sailors at the oars. "[COLOR_SELECTED_TEXT]We'll have the whale in a moment. Pull, men, pull![COLOR_REVERT]"[NEWLINE][NEWLINE]But suddenly the oarsmen drop their blades. Pale with fright, they point over the harpooner's shoulder. He turns around - and swallows.[NEWLINE][NEWLINE]A privateer glides in, swift as a hawk. The pirates stand at the railing and grin down.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Don't let us interrupt your work, boys![COLOR_REVERT]" one of them shouts and laughs. "[COLOR_SELECTED_TEXT]We won't take the ship from you until you've filled its belly with oil. That should make a fat booty![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>Your fleet of pirate ships rules the waves. No ship of your neighbours is safe from your privateers.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A fat prey![COLOR_REVERT]" the harpooner shouts to the sailors at the oars. "[COLOR_SELECTED_TEXT]We'll have the whale in a moment. Pull, men, pull![COLOR_REVERT]"[NEWLINE][NEWLINE]But suddenly the oarsmen drop their blades. Pale with fright, they point over the harpooner's shoulder. He turns around - and swallows.[NEWLINE][NEWLINE]A privateer glides in, swift as a hawk. The pirates stand at the railing and grin down.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Don't let us interrupt your work, boys![COLOR_REVERT]" one of them shouts and laughs. "[COLOR_SELECTED_TEXT]We won't take the ship from you until you've filled its belly with oil. That should make a fat booty![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Votre flotte de corsaires règne sur les mers. Aucun navire étranger n'est en sécurité maintenant.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Eine fette Beute![COLOR_REVERT]", ruft der Harpunier den Matrosen an den Riemen zu. "[COLOR_SELECTED_TEXT]Gleich haben wir den Wal. Pullt, Männer, pullt![COLOR_REVERT]"[NEWLINE][NEWLINE]Doch plötzlich lassen die Ruderer die Blätter fallen. Schreckensbleich zeigen sie über die Schulter des Harpuniers. Der dreht sich um - und schluckt.[NEWLINE][NEWLINE]Ein Kaperschiff gleitet heran, geschwind wie ein Falke. Die Piraten stehen an der Reling und grinsen herab.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lasst Euch nicht bei der Arbeit stören, Jungs![COLOR_REVERT]", ruft einer und lacht. "[COLOR_SELECTED_TEXT]Wir nehmen Euch das Schiff erst weg, wenn ihr seinen Bauch mit Speck gefüllt habt. Das soll eine fette Beute geben![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>Your fleet of pirate ships is ruling the waves. No ship of your neighbours will be safe from your privateers.[NEWLINE][NEWLINE]</Italian>
-        <Spanish>Your fleet of pirate ships is ruling the waves. No ship of your neighbours will be safe from your privateers.[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE</Tag>
         <English>Pirates, the scum of the seas, are now under your command</English>
         <French>Première frégate pirate</French>
         <German>Piraten, den Abschaum der Meere, habt Ihr nun unter Eurem Befehl</German>
-        <Italian>First pirate frigate</Italian>
-        <Spanish>First pirate frigate</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE_HEAD</Tag>
-        <English>In the footsteps of Blackbeard</English>
+        <English>In Blackbeard's Footsteps</English>
         <French>Capitaine d'une frégate pirate</French>
         <German>Auf den Spuren Blackbeards</German>
-        <Italian>Captain of a pirate frigate</Italian>
-        <Spanish>Captain of a pirate frigate</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE_TEXT</Tag>
         <English>Captain of a pirate ship?[NEWLINE][NEWLINE]Take a good look at this scum, Governor? Are you sure you want to go down this road and lead these people?[NEWLINE][NEWLINE]On land, you'd hand every one of them over to the militia at once or, better still, hang them from the nearest tree.[NEWLINE][NEWLINE]On the other hand, it promises good profits to send out a crew that fears neither death nor the devil and is loyal to you as long as the rum keeps flowing...[NEWLINE][NEWLINE]</English>
         <French>Vous êtes aux commandes d'une frégate pirate maintenant ! Êtes-vous sûr de vouloir suivre ce chemin ?[NEWLINE][NEWLINE]</French>
         <German>Kapitän eines Piratenschiffes?[NEWLINE][NEWLINE]Seht Euch diesen Abschaum genau an, Gouverneur? Seid Ihr sicher, dass Ihr diesen Weg gehen und diese Leute anführen wollt?[NEWLINE][NEWLINE]An Land würdet Ihr jeden von denen sofort der Miliz übergeben oder besser gleich am nächsten Baum aufhängen.[NEWLINE][NEWLINE]Andererseits verspricht es gute Gewinne, eine Crew aufs Meer hinaus zu jagen, die weder Tod noch Teufel fürchtet und Euch treu ergeben ist, solange der Rum in Strömen fließt...[NEWLINE][NEWLINE]</German>
-        <Italian>You are in command of a pirate frigate now! Are you sure that you will take this way?[NEWLINE][NEWLINE]</Italian>
-        <Spanish>You are in command of a pirate frigate now! Are you sure that you will take this way?[NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE</Tag>
-        <English>Brethren of the coast</English>
+        <English>Brethren of the Coast</English>
         <French>Trois frégates pirates</French>
         <German>Brüder der Küste</German>
-        <Italian>Tre fregate pirata</Italian>
-        <Spanish>Tres fragatas piratas</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_HEAD</Tag>
-        <English>Brother of the Coast you may now call yourself - with three pirate frigates you spread fear and terror!</English>
+        <English>Brothers of the Coast</English>
         <French>Trois frégates pirates</French>
         <German>Bruder der Küste dürft Ihr euch nun nennen - mit drei Piratenfregatten verbreitet Ihr Angst und Schrecken!</German>
-        <Italian>Brothers of the coasts</Italian>
-        <Spanish>Brothers of the coasts</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_TEXT</Tag>
-        <English>Your pirates have begun to scourge the oceans in search of fame and plunder. The brothers of the coast strike again! Now you are one of them - you own three pirate frigates! May the Lord have mercy on you![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Fifteen men on the dead man's coffin, yo hoo. Fifteen men on the dead man's coffin, jo hoo...and a bottle of rum[COLOR_REVERT]" the captain hums to himself. The shanty from setting sail this morning just won't leave his head. Nervously, he looks through his telescope in search of the black sail that has been doggedly following his fully laden merchant ship since morning.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]One more stroke and we'll be safe.[COLOR_REVERT]"[NEWLINE][NEWLINE]But there...what is it? Two more sails to windward![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]We are all lost[COLOR_REVERT]" cries the captain fearfully, "[COLOR_SELECTED_TEXT]hide purses and women below decks![COLOR_REVERT]"[NEWLINE][NEWLINE]The Brethren of the Coast are striking again...[NEWLINE][NEWLINE]</English>
+        <English>Your pirates scourge the oceans in search of fame and plunder. The Brothers of the Coast strike again! Now you are one of them - you own three pirate frigates! May the Lord have mercy on you![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Fifteen men on the dead man's chest, yo ho ho and a bottle of rum[COLOR_REVERT]" the captain hums to himself. Since setting sail this morning the shanty just won't leave his head. Nervously, he looks through his telescope in search of the black sail that has been doggedly following his fully laden merchant ship all morning.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]One more stroke and we'll be safe.[COLOR_REVERT]"[NEWLINE][NEWLINE]But there...what is it? Two more sails to windward![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]We are all lost,[COLOR_REVERT]" cries the captain fearfully. "[COLOR_SELECTED_TEXT]Hide purses and women below decks![COLOR_REVERT]"[NEWLINE][NEWLINE]The Brothers of the Coast are here...[NEWLINE][NEWLINE]</English>
         <French>Vos pirates sont en train de devenir les maîtres des océans, à la recherche de gloire et butin.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Fünfzehn Mann auf des Totenmann's Kiste, johoo. Fünfzehn Mann auf des Totenmann's Kiste, johoo...und ne Buddel voll Rum[COLOR_REVERT]" summt der Käpt'n vor sich hin. Der Shanty vom Segelsetzen heute morgen will ihm einfach nicht aus dem Kopf. Nervös blickt er durch sein Fernrohr auf der Suche nach dem schwarzen Segel, dass sein voll beladenes Handelsschiff schon seit der Morgenwache hartnäckig verfolgt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ein Schlag noch, dann sind wir sicher.[COLOR_REVERT]"[NEWLINE][NEWLINE]Doch da...was ist das? Zwei weitere Segel in Luv![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wir sind alle verloren[COLOR_REVERT]" schreit der Käpt'n angstvoll auf, "[COLOR_SELECTED_TEXT]versteckt Geldbeutel und Frauen unter Deck![COLOR_REVERT]"[NEWLINE][NEWLINE]Die Brüder der Küste schlagen wieder zu...[NEWLINE][NEWLINE]</German>
-        <Italian>Your pirates have begun to scourge the oceans in search of fame and plunder. The brothers of the coasts strike again! Now you are one of them - You own three pirate frigates! May the Lord have mercy on you![NEWLINE][NEWLINE]</Italian>
-        <Spanish>Your pirates have begun to scourge the oceans in search of fame and plunder. The brothers of the coasts strike again! Now you are one of them - You own three pirate frigates! May the Lord have mercy on you![NEWLINE][NEWLINE]</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR</Tag>
         <English>Your first mortar</English>
         <French>Votre premier mortier</French>
         <German>Euer erster Mörser</German>
-        <Italian>Your first mortar</Italian>
-        <Spanish>Your first mortar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR_HEAD</Tag>
-        <English>Your first mortar is ready</English>
+        <English>Your First Mortar Is Ready</English>
         <French>Votre premier mortier</French>
         <German>Euer erster Mörser steht bereit</German>
-        <Italian>Your first mortar</Italian>
-        <Spanish>Your first mortar</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR_TEXT</Tag>
-        <English>You have a mortar now. And more options for diplomatic negotiations.[NEWLINE][NEWLINE]As you know, "War is the continuance of diplomacy by different means."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sir, the colonial army is now in possession of a truly terrifying weapon, previously used only in Europe. Our troops now have a mortar at their disposal. A siege gun that can shoot explosive projectiles across walls and crush anything within those walls. Any siege of a fortress will be shortened by this.[COLOR_REVERT]" The eager general does his best to make this weapon palatable to you.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a persuasive way to make our case,[COLOR_REVERT]" you agree, nodding your head. "[COLOR_SELECTED_TEXT]We'll test it at the next opportunity.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have a mortar now. And more options for diplomatic negotiations.[NEWLINE][NEWLINE]As you know, "War is the continuance of diplomacy by different means."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sir, the colonial army is now in possession of a truly terrifying weapon, previously used only in Europe. Our troops now have a mortar at their disposal. A siege gun that can shoot explosive projectiles across walls and crush anything within those walls. Any siege of a fortress will be shortened by this.[COLOR_REVERT]" The general is eager to make this weapon palatable to you.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a persuasive way to make our case,[COLOR_REVERT]" you agree, nodding your head. "[COLOR_SELECTED_TEXT]We'll test it at the next opportunity.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Vous avez un mortier maintenant. Cela vous offre de nouvelles options de négociation. Après tout, ne dit-on pas que la guerre est la poursuite de la diplomation par d'autres moyens ?[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Herr Gouverneur, unsere Armee ist nun im Besitz einer wahrlich schreckenerregenden Waffe, wie sie bislang nur in Europa verwendet wurde: unseren Truppen steht nun ein Mörser zur Verfügung. Ein Belagerungsgeschütz, dass Sprengstoffgeschosse über Mauern hinweg schießen kann und alles zermalmt, was sich innerhalb dieser Mauern befindet. Die Belagerung einer Festung oder eines Forts wird damit erheblich verkürzt,[COLOR_REVERT]" versucht der General Euch den Einsatz dieser Waffe schmackhaft zu machen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm, auf jeden Fall lassen sich damit unsere Argumente wirklich hervorragend vertreten,[COLOR_REVERT]" stimmt Ihr dem General kopfnickend zu. "[COLOR_SELECTED_TEXT]Wir werden das bei nächster Gelegenheit einmal testen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have a mortar now. And more options for diplomatic negotiations ...[NEWLINE][NEWLINE]as you know... "War is the continuance of diplomacy with different means."</Italian>
-        <Spanish>You have a mortar now. And more options for diplomatic negotiations ...[NEWLINE][NEWLINE]as you know... "War is the continuance of diplomacy with different means."</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON</Tag>
         <English>Your first heavy artillery</English>
         <French>Premier régiment de canon</French>
         <German>Eure erste Schwere Artillerie</German>
-        <Italian>Your first cannon</Italian>
-        <Spanish>Your first cannon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_HEAD</Tag>
-        <English>The first heavy artillery</English>
+        <English>Heavy Artillery</English>
         <French>Premier régiment de canon</French>
         <German>Erste Schwere Artillerie</German>
-        <Italian>Your first cannon</Italian>
-        <Spanish>Your first cannon</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_TEXT</Tag>
-        <English>You have a cannon. And more options for diplomatic negotiations ...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What does he want with that?[COLOR_REVERT]" the foreign secretary asks, aghast when he hears the message. "[COLOR_SELECTED_TEXT]Are we a threat to this man? Is he so afraid of us that he feels he must protect himself in this way?[COLOR_REVERT]"[NEWLINE][NEWLINE]Then he jumps up so abruptly that his powdered wig slips down his forehead and a white cloud rises. "[COLOR_SELECTED_TEXT]Or does he want us to be afraid of him?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>You have a cannon. And more options for diplomatic negotiations...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What does he want with that?[COLOR_REVERT]" the foreign secretary asks, aghast when he hears the message. "[COLOR_SELECTED_TEXT]Are we a threat to this man? Is he so afraid of us that he feels he must protect himself in this way?[COLOR_REVERT]"[NEWLINE][NEWLINE]Then he jumps up so abruptly that his powdered wig slips down his forehead and a white cloud rises. "[COLOR_SELECTED_TEXT]Or does he want us to be afraid of him?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Nos colonies disposent de leur premier régiment de canon dans le Nouveau Monde. Félicitations ![NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Was will er bloß damit?[COLOR_REVERT]", fragt der fremde Gouverneur entgeistert, als er die Botschaft vernommen hat. "[COLOR_SELECTED_TEXT]Sind wir diesem Mann eine Bedrohung? Fürchtet er sich so sehr vor uns, dass er glaubt, sich auf diese Weise schützen zu müssen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Dann springt er so abrupt auf, dass ihm die gepuderte Perücke in die Stirn rutscht und ein weißes Wölkchen aufsteigt. "[COLOR_SELECTED_TEXT]Oder will er, dass wir uns vor ihm fürchten?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>You have a cannon. And more options for diplomatic negotiations ...</Italian>
-        <Spanish>You have a cannon. And more options for diplomatic negotiations ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CANNON</Tag>
         <English>Six heavy artilleries</English>
         <French>Six régiments de canon</French>
         <German>Sechs Schwere Artillerie</German>
-        <Italian>Six cannons</Italian>
-        <Spanish>Six cannons</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CANNON_HEAD</Tag>
-        <English>Wishes</English>
+        <English>How To Get What We Want</English>
         <French>Six régiments de canos</French>
         <German>Wünsche</German>
-        <Italian>Six cannons</Italian>
-        <Spanish>Six cannons</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_CANNON_TEXT</Tag>
         <English>You have six cannons! Yeah. Let's give our neighbours a six-gun salute...[NEWLINE][NEWLINE]The foreign envoy tries to look confident as he sits in your reception room. But his red ears reveal how excited he is.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Governor,[COLOR_REVERT]" he begins, "[COLOR_SELECTED_TEXT]we have heard that you have procured six batteries of heavy artillery. We wish...[COLOR_REVERT]"[NEWLINE][NEWLINE]You interrupt him with a wave of your hand. "[COLOR_SELECTED_TEXT]You wish for something?[COLOR_REVERT]" you ask ironically. "[COLOR_SELECTED_TEXT]Well, you know about the guns. Therefore you know that now is the time for me to present my own wishes.[COLOR_REVERT]"[NEWLINE][NEWLINE]The envoy begins to sweat...[NEWLINE][NEWLINE]</English>
         <French>Vous avez six Canons! Que diriez-vous de faire tirer une sommation à 6 tons pour annoncer la nouvelle à nos voisins ?[NEWLINE][NEWLINE]</French>
         <German>Der fremde Gesandte versucht, blasiert aus der Wäsche zu schauen, als er in Eurem Empfangszimmer sitzt. Doch seine roten Ohren verraten, wie aufgeregt er ist.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr Gouverneur[COLOR_REVERT]", hebt er an, "[COLOR_SELECTED_TEXT]wir haben gehört, dass Ihr Euch sechs Batterien Schwere Artillerie beschafft habt. Wir wünschen ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Mit einer Handbewegung unterbrecht Ihr ihn. "[COLOR_SELECTED_TEXT]Ihr wünscht etwas?[COLOR_REVERT]", fragt Ihr mit mildem Spott, "[COLOR_SELECTED_TEXT]wohlan, Ihr wisst von den Geschützen. Also wisst Ihr auch, dass nun die Zeit gekommen ist, dass ich meine eigenen Wünsche vortrage.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Gesandte beginnt zu schwitzen...[NEWLINE][NEWLINE]</German>
-        <Italian>You have six cannons! Yeah. Let's make a party with the neighbors ...</Italian>
-        <Spanish>You have six cannons! Yeah. Let's make a party with the neighbors ...</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE</Tag>
         <English>Your first ship of the line</English>
         <French>Votre premier galion de guerre</French>
         <German>Euer Erstes Linienschiff</German>
-        <Italian>Your first ship of the line</Italian>
-        <Spanish>Your first ship of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_HEAD</Tag>
-        <English>A floating fortress</English>
+        <English>A Floating Fortress</English>
         <French>Votre premier galion de guerre</French>
         <German>Eine schwimmende Festung</German>
-        <Italian>Your first ship of the line</Italian>
-        <Spanish>Your first ship of the line</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_TEXT</Tag>
-        <English>Your navy has grown stronger. This ship of the line is a great battleship and a symbol of the power of your colonies.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sail in sight![COLOR_REVERT]" the ship's watch roars across the deck.[NEWLINE][NEWLINE]His comrades crane their heads. "[COLOR_SELECTED_TEXT]Booty again at last,[COLOR_REVERT]" laughs the buccaneer captain, a gigantic man with a grim look. He flashes his sabre through the air.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Men! It looks like a merchantman tacking ahead![COLOR_REVERT]"[NEWLINE][NEWLINE]Just then the ship's cook tugs at his sleeve. "[COLOR_SELECTED_TEXT]Captain![COLOR_REVERT]" he sputters, "[COLOR_SELECTED_TEXT]look![COLOR_REVERT]" With a trembling arm he points over the rail.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]The prize is changing course - it's heading straight for us![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+        <English>Your navy is much stronger now. This ship of the line is a great battleship and a symbol of the power of your colonies.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sail in sight![COLOR_REVERT]" the ship's watch roars across the deck.[NEWLINE][NEWLINE]His comrades crane their heads. "[COLOR_SELECTED_TEXT]Booty again at last,[COLOR_REVERT]" laughs the buccaneer captain, a gigantic man with a grim look. He flashes his sabre through the air.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Men! It looks like a merchantman tacking ahead![COLOR_REVERT]"[NEWLINE][NEWLINE]Just then the ship's cook tugs at his sleeve. "[COLOR_SELECTED_TEXT]Captain![COLOR_REVERT]" he sputters, "[COLOR_SELECTED_TEXT]look![COLOR_REVERT]" With a trembling arm he points over the rail.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]The prize is changing course - it's heading straight for us![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
         <French>Votre puissance maritime croît. Un galion de guerre est un superbe navire, symbole de la puissance de nos colonies.[NEWLINE][NEWLINE]</French>
         <German>"[COLOR_SELECTED_TEXT]Segel in Sicht![COLOR_REVERT]" brüllt der Ausguck über das Deck.[NEWLINE][NEWLINE]Seine Kameraden recken die Köpfe. "[COLOR_SELECTED_TEXT]Endlich wieder Beute[COLOR_REVERT]", lacht der Kapitän der Seeräuber, ein Hüne mit grimmigem Blick. Er stößt den Säbel in die Luft.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Männer! Dort kreuzt ein Handelschiff unseren Kurs![COLOR_REVERT]"[NEWLINE][NEWLINE]Da zupft der Smutje an seinem Ärmel. "[COLOR_SELECTED_TEXT]Käpt'n![COLOR_REVERT]" stottert er, "[COLOR_SELECTED_TEXT]seht![COLOR_REVERT]" Mit zitterndem Arm zeigt er über die Reling.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Prise ändert ihren Kurs - sie hält direkt auf uns zu![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
-        <Italian>Your navy has got stronger. This ship of the line is a great battleship and a symbol of the power of the colonies.</Italian>
-        <Spanish>Your navy has got stronger. This ship of the line is a great battleship and a symbol of the power of the colonies.</Spanish>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE</Tag>
