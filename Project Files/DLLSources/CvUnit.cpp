@@ -6295,6 +6295,13 @@ bool CvUnit::bombard()
 
 bool CvUnit::canPillage(const CvPlot* pPlot) const
 {
+	// WTP, ray, fix for pillaging Animals - START
+	if (getUnitInfo().isAnimal())
+	{
+		return false;
+	}
+	// WTP, ray, fix for pillaging Animals - END
+
 	if (!canAttack())
 	{
 		return false;
