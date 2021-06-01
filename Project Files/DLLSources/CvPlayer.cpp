@@ -8145,6 +8145,8 @@ bool CvPlayer::isAutoMoves() const
 
 void CvPlayer::setAutoMoves(bool bNewValue)
 {
+	MOD_PROFILE("CvPlayer::setAutoMoves");
+
 	if (isAutoMoves() != bNewValue)
 	{
 		m_bAutoMoves = bNewValue;
@@ -14274,6 +14276,8 @@ int CvPlayer::getEventCost(EventTypes eEvent, PlayerTypes eOtherPlayer, bool bRa
 
 void CvPlayer::doEvents()
 {
+	MOD_PROFILE("CvPlayer::doEvents");
+
 	if (GC.getGameINLINE().isOption(GAMEOPTION_NO_EVENTS))
 	{
 		return;
@@ -14668,6 +14672,15 @@ CvUnit* CvPlayer::pickTriggerUnit(EventTriggerTypes eTrigger, CvPlot* pPlot, boo
 int CvPlayer::getEventTriggerWeight(EventTriggerTypes eTrigger) const
 {
 	CvEventTriggerInfo& kTrigger = GC.getEventTriggerInfo(eTrigger);
+
+	// bail out if the player can't trigger due to civ category
+	// do this first as the check is virtually instant meaning there is no point in checking anything else if this fails
+	// particularly natives will reject events with this check, making natives checking event triggers more performant
+	//    Nightinggale
+	if (!kTrigger.canTriggerOnCivCategory(getCivCategoryTypes()))
+	{
+		return 0;
+	}
 
 	int gameSpeedMod =  GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent(); //XXX
 

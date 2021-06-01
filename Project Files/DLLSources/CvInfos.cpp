@@ -14119,6 +14119,10 @@ int CvEventTriggerInfo::PY_getNumRoutesRequired() const
 {
 	return m_info_RoutesRequired.getLength();
 }
+bool CvEventTriggerInfo::canTriggerOnCivCategory(CivCategoryTypes eCategory) const
+{
+	return m_emAllowedCivCategories.get(eCategory);
+}
 const InfoArray<UnitClassTypes>& CvEventTriggerInfo::getUnitsRequired() const
 {
 	return m_info_UnitsRequired;
@@ -14455,6 +14459,28 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iUnitDistanceWeight, "iUnitDistanceWeight");
 	pXML->GetChildXmlValByName(&m_iUnitExperienceWeight, "iUnitExperienceWeight");
 	pXML->GetChildXmlValByName(&m_iMinTreasury, "iMinTreasury");
+
+	{
+		// reads the required Civ Categories
+		// usage is random access and not looping meaning EnumMap will be faster than InfoArray during the game
+		// since EnumMap has no xml reading code, rely on InfoArray for reading and error messages
+		// copy contents here as there is currently no generic function to copy InfoArrays into bool EnumMaps
+
+		InfoArray<CivCategoryTypes> info_Categories;
+		readXML(info_Categories, "CivCategoriesRequired");
+		if (info_Categories.getLength() > 0)
+		{
+			for (int i = 0; i < info_Categories.getLength(); ++i)
+			{
+				m_emAllowedCivCategories.set(info_Categories.getCivCategory(i), true);
+			}
+		}
+		else
+		{
+			// no civ categories set in xml. Assume European only
+			m_emAllowedCivCategories.set(CIV_CATEGORY_EUROPEAN, true);
+		}
+	}
 
 	readXML(m_info_UnitsRequired, "UnitsRequired");
 	readXML(m_info_BuildingsRequired, "BuildingsRequired");

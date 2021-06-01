@@ -106,6 +106,10 @@
 	<ElementType name="iNumBuildingsGlobal" content="textOnly" dt:type="int"/>
 	<ElementType name="iNumPlotsRequired" content="textOnly" dt:type="int"/>
 	<ElementType name="ePlotType" content="textOnly"/>
+	<ElementType name="eRequiredCivCategory" content="textOnly"/>
+	<ElementType name="CivCategoriesRequired" content="eltOnly">
+		<element type="eRequiredCivCategory" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="FeaturesRequired" content="eltOnly">
 		<element type="FeatureType" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
@@ -190,6 +194,7 @@
 		<element type="TriggerTexts"/>
 		<element type="bTutorial"/>
 		<element type="bSinglePlayer"/>
+		<element type="CivCategoriesRequired" minOccurs="0"/>
 		<element type="EventArt"/>
 		<element type="iPercentGamesActive"/>
 		<element type="iWeight"/>

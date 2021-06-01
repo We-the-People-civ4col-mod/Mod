@@ -1274,7 +1274,7 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 
 void CvGame::update()
 {
-	PROFILE_FUNC();
+	MOD_PROFILE("CvGame::update");
 
 	if (!gDLL->GetWorldBuilderMode() || isInAdvancedStart())
 	{
@@ -5709,6 +5709,8 @@ void CvGame::updateWar()
 
 void CvGame::updateMoves()
 {
+	MOD_PROFILE("CvGame::updateMoves");
+
 	CvSelectionGroup* pLoopSelectionGroup;
 	std::vector<int> aiShuffle(MAX_PLAYERS);
 	int iLoop;

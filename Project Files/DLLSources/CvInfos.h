@@ -4276,6 +4276,7 @@ public:
 	int getUnitExperienceWeight() const;
 	int getMinTreasury() const;
 
+	bool canTriggerOnCivCategory(CivCategoryTypes eCategory) const;
 	const InfoArray<UnitClassTypes>& getUnitsRequired() const;
 	const InfoArray<BuildingClassTypes>& getBuildingsRequired() const;
 	const InfoArray<EventTypes>& getEvents() const;
@@ -4353,6 +4354,7 @@ private:
 	int m_iUnitDistanceWeight;
 	int m_iUnitExperienceWeight;
 	int m_iMinTreasury;
+	EnumMap<CivCategoryTypes, bool> m_emAllowedCivCategories;
 	InfoArray<UnitClassTypes> m_info_UnitsRequired;
 	InfoArray<BuildingClassTypes> m_info_BuildingsRequired;
 	InfoArray<EventTypes> m_info_Events;
