@@ -217,6 +217,10 @@
         </Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_EVENT_CARGOSPACE</Tag>
+        <English>Shipwright's Upgrade (Event)</English>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROMOTION_CHARGE</Tag>
         <English>Charge</English>
         <French>

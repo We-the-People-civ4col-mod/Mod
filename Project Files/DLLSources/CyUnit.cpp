@@ -544,11 +544,6 @@ int CyUnit::cargoSpace()
 {
 	return m_pUnit ? m_pUnit->cargoSpace() : -1;
 }
-void CyUnit::changeCargoSpace(int iChange)
-{
-	if (m_pUnit)
-		m_pUnit->changeCargoSpace(iChange);
-}
 bool CyUnit::isFull()
 {
 	return m_pUnit ? m_pUnit->isFull() : false;

@@ -102,6 +102,15 @@ bool CvInfoBase::isGraphicalOnly() const
 	return m_bGraphicalOnly;
 }
 
+bool CvInfoBase::hideFromPedia() const
+{
+	// split this question away from isGraphicalOnly
+	// default to vanilla behavior where they reply the same
+	// however individual classes can override this
+	//    Nightinggale
+	return m_bGraphicalOnly;
+}
+
 const char* CvInfoBase::getType() const
 {
 	if(m_szType.empty())
@@ -905,6 +914,7 @@ m_iCommandType(NO_COMMAND),
 m_iPillageChange(0),
 m_iUpgradeDiscount(0),
 m_iExperiencePercent(0),
+m_bHideFromPedia(false),
 m_bLeader(false),
 m_bBlitz(false),
 m_bAmphib(false),
@@ -945,6 +955,10 @@ CvPromotionInfo::~CvPromotionInfo()
 	SAFE_DELETE_ARRAY(m_abTerrainDoubleMove);
 	SAFE_DELETE_ARRAY(m_abFeatureDoubleMove);
 	SAFE_DELETE_ARRAY(m_abUnitCombat);
+}
+bool CvPromotionInfo::hideFromPedia() const
+{
+	return m_bHideFromPedia || isGraphicalOnly();
 }
 int CvPromotionInfo::getPrereqPromotion() const
 {
@@ -1304,6 +1318,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(szTextVal, "Sound");
 	setSound(szTextVal);
+	pXML->GetChildXmlValByName(&m_bHideFromPedia, "bHideFromPedia");
 	pXML->GetChildXmlValByName(&m_bLeader, "bLeader");
 	pXML->GetChildXmlValByName(&m_bBlitz, "bBlitz");
 	pXML->GetChildXmlValByName(&m_bAmphib, "bAmphib");

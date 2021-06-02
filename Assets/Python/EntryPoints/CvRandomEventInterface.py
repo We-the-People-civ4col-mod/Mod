@@ -1296,8 +1296,8 @@ def applyCargoSpace(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	if gc.getGame().getSorenRandNum(100, "(c) TAC 2010 Events") < event.getGenericParameter(3):
-		if event.getGenericParameter(1) > 0:
-			unit.changeCargoSpace(event.getGenericParameter(1))
+		if event.getGenericParameter(1) >= 0:
+			unit.changeFreePromotionCount(event.getGenericParameter(1), 1)
 			CyInterface().addImmediateMessage(localText.getText("TXT_KEY_EVENT_CARGOSPACE_SUCCESS", (unit.getName(),)), "")
 	else:
 		CyInterface().addImmediateMessage(localText.getText("TXT_KEY_EVENT_CARGOSPACE_FAILED", ()), "")
@@ -1311,8 +1311,9 @@ def helpCargoSpace(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	unit = player.getUnit(kTriggeredData.iUnitId)
 	szHelp = ""
-	if event.getGenericParameter(1) > 0:
-		szHelp = localText.getText("TXT_KEY_EVENT_CARGOSPACE_HELP", (event.getGenericParameter(1), unit.getName(), event.getGenericParameter(3)))
+	if event.getGenericParameter(1) >= 0:
+		iCargoSlots = gc.getPromotionInfo(event.getGenericParameter(1)).getCargoChange()
+		szHelp = localText.getText("TXT_KEY_EVENT_CARGOSPACE_HELP", (iCargoSlots, unit.getName(), event.getGenericParameter(3)))
 	if event.getGenericParameter(2) > 0:
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_IMMOBILE_UNIT", (event.getGenericParameter(2), unit.getName()))
 	return szHelp

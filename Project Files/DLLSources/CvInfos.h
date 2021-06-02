@@ -34,6 +34,7 @@ public:
 	DllExport virtual ~CvInfoBase();
 	virtual void reset();
 	DllExport bool isGraphicalOnly() const;
+	bool hideFromPedia() const;
 
 	DllExport const char* getType() const;
 	virtual const char* getButton() const;
@@ -219,6 +220,7 @@ public:
 	DllExport CvPromotionInfo();
 	virtual ~CvPromotionInfo();
 	PromotionTypes getIndex() const { return m_eIndex; }
+	bool hideFromPedia() const;
 	int getPrereqPromotion() const;
 	void setPrereqPromotion(int i);
 	int getPrereqOrPromotion1() const;
@@ -305,6 +307,7 @@ protected:
 	int m_iPillageChange;
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
+	bool m_bHideFromPedia;
 	bool m_bLeader;
 	bool m_bBlitz;
 	bool m_bAmphib;

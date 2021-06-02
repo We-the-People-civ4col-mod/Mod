@@ -154,7 +154,6 @@ public:
 	int /*SpecialUnitTypes*/ specialCargo();
 	int /*DomainTypes*/ domainCargo();
 	int cargoSpace();
-	void changeCargoSpace(int iChange);
 	bool isFull();
 	int cargoSpaceAvailable(int /*SpecialUnitTypes*/ eSpecialCargo, int /*DomainTypes*/ eDomainCargo);
 	bool hasCargo();
