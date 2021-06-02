@@ -7856,7 +7856,8 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 
 		if (GC.getBuildingInfo(eBuilding).isRiver())
 		{
-			if (!(plot()->isRiver()))
+			// WTP, fix for bRiver not considering Large Rivers
+			if (!(plot()->isRiver()) && !(plot()->getTerrainType() == TERRAIN_LARGE_RIVERS))
 			{
 				return false;
 			}
