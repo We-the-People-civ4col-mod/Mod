@@ -248,6 +248,7 @@ public:
 	int getCommandType() const;
 	void setCommandType(int iNewType);
 	int getPillageChange() const;
+	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
 	int getUpgradeDiscount() const;
 	int getExperiencePercent() const;
 
@@ -305,6 +306,7 @@ protected:
 	int m_iDomesticBonusPercent;	
 	int m_iCommandType;
 	int m_iPillageChange;
+	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals 
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
 	bool m_bHideFromPedia;

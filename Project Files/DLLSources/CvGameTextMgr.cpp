@@ -4431,6 +4431,15 @@ void CvGameTextMgr::parsePromotionHelp(CvWStringBuffer &szBuffer, PromotionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_PILLAGE_CHANGE_TEXT", kPromotion.getPillageChange()));
 	}
 
+	//WTP, ray, Animal Promotions increase gold from Animals - START
+	if (kPromotion.getAnimalGoldChange() != 0)
+	{
+		szBuffer.append(pcNewline);
+		szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_ANIMAL_GOLD_CHANGE_TEXT", kPromotion.getAnimalGoldChange()));
+	}
+
+	//WTP, ray, Animal Promotions increase gold from Animals - END
+
 	if (kPromotion.getUpgradeDiscount() != 0)
 	{
 		if (100 == kPromotion.getUpgradeDiscount())

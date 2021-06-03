@@ -816,6 +816,12 @@ int CyUnit::getPillageChange() const
 {
 	return m_pUnit ? m_pUnit->getPillageChange() : -1;
 }
+//WTP, ray, Animal Promotions increase gold from Animals - START
+int CyUnit::getAnimalGoldChange() const
+{
+	return m_pUnit ? m_pUnit->getAnimalGoldChange() : -1;
+}
+//WTP, ray, Animal Promotions increase gold from Animals - END
 int CyUnit::getUpgradeDiscount() const
 {
 	return m_pUnit ? m_pUnit->getUpgradeDiscount() : -1;

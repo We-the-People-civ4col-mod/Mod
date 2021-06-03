@@ -7759,6 +7759,16 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 		}
 	}
 	
+	//WTP, ray, Animal Promotions increase gold from Animals - START
+	if (kPromotion.getAnimalGoldChange() != 0)
+	{
+		if (eUnitAI == UNITAI_OFFENSIVE)
+		{
+			iValue += kPromotion.getAnimalGoldChange()  / 8; // not as valuable as Pillaging
+		}
+	}
+	//WTP, ray, Animal Promotions increase gold from Animals - END
+
 	if (kPromotion.getExperiencePercent() != 0)
 	{
 		if (eUnitAI == UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE)

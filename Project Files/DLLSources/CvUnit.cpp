@@ -1457,6 +1457,10 @@ void CvUnit::updateCombat(bool bQuick)
 			{
 				int iGoldRewardRandomBase = GC.getWILD_ANIMAL_REWARD_RANDOM_BASE();
 				int iGold = GC.getGameINLINE().getSorenRandNum(iGoldRewardRandomBase, "Animal Kill Reward");
+				//WTP, ray, Animal Promotions increase gold from Animals - START
+				//we now also apply the gold change from Promotions stored in the Unit
+				iGold += iGold * getAnimalGoldChange(); 				
+				//WTP, ray, Animal Promotions increase gold from Animals - END
 				GET_PLAYER(getOwnerINLINE()).changeGold(iGold);
 				szBuffer = gDLL->getText("TXT_KEY_ANIMAL_REWARD", pDefender->getUnitInfo().getDescription(), iGold);
 			}
@@ -10859,6 +10863,24 @@ void CvUnit::changePillageChange(int iChange)
 	}
 }
 
+//WTP, ray, Animal Promotions increase gold from Animals - START
+int CvUnit::getAnimalGoldChange() const
+{
+	return m_iAnimalGoldChange;
+}
+
+void CvUnit::changeAnimalGoldChange(int iChange)
+{
+	if (iChange != 0)
+	{
+		m_iAnimalGoldChange += iChange;
+
+		setInfoBarDirty(true);
+	}
+}
+//WTP, ray, Animal Promotions increase gold from Animals - END
+
+
 int CvUnit::getUpgradeDiscount() const
 {
 	return m_iUpgradeDiscount;
@@ -12458,6 +12480,7 @@ void CvUnit::processPromotion(PromotionTypes ePromotion, int iChange)
 	changeExtraHillsDefensePercent(GC.getPromotionInfo(ePromotion).getHillsDefensePercent() * iChange);
 	changeExtraDomesticBonusPercent(GC.getPromotionInfo(ePromotion).getDomesticBonusPercent() * iChange);	
 	changePillageChange(GC.getPromotionInfo(ePromotion).getPillageChange() * iChange);
+	changeAnimalGoldChange(GC.getPromotionInfo(ePromotion).getAnimalGoldChange() * iChange); //WTP, ray, Animal Promotions increase gold from Animals
 	changeUpgradeDiscount(GC.getPromotionInfo(ePromotion).getUpgradeDiscount() * iChange);
 	changeExperiencePercent(GC.getPromotionInfo(ePromotion).getExperiencePercent() * iChange);
 	changeCargoSpace(GC.getPromotionInfo(ePromotion).getCargoChange() * iChange);
@@ -12524,6 +12547,7 @@ void CvUnit::resetPromotions()
 	m_iExtraHillsDefensePercent = 0;
 	m_iExtraDomesticBonusPercent = 0;
 	m_iPillageChange = 0;
+	m_iAnimalGoldChange = 0; //WTP, ray, Animal Promotions increase gold from Animals 
 	m_iUpgradeDiscount = 0;
 	m_iExperiencePercent = 0;
 	m_iCargoCapacity = (NO_UNIT != m_eUnitType) ? m_pUnitInfo->getCargoSpace() : 0;

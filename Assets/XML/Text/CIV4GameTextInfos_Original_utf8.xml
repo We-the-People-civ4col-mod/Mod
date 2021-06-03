@@ -14399,6 +14399,11 @@
         <Spanish>[ICON_BULLET]Rinde un %D1_percent%% de [ICON_GOLD] en los saqueos</Spanish>
     </TEXT>
     <TEXT>
+        <Tag>TXT_KEY_PROMOTION_ANIMAL_GOLD_CHANGE_TEXT</Tag>
+        <English>[ICON_BULLET]Yields %D1_percent%% [ICON_GOLD] from killing wild animals</English>
+        <German>[ICON_BULLET]%D1_percent%% [ICON_GOLD] durch das Töten wilder Tiere</German>
+    </TEXT>
+    <TEXT>
         <Tag>TXT_KEY_PROMOTION_UPGRADE_DISCOUNT_FREE_TEXT</Tag>
         <English>[ICON_BULLET]Free upgrades</English>
         <French>[ICON_BULLET]Améliorations gratuites</French>

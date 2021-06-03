@@ -219,7 +219,8 @@ public:
 	int getExtraHillsDefensePercent();
 	int getExtraDomesticBonusPercent();	
 	int getPillageChange() const;
-	int getUpgradeDiscount() const;
+	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
+	int getUpgradeDiscount() const; 
 	int getExperiencePercent() const;
 	int getImmobileTimer() const;
 	void setImmobileTimer(int iNewValue);

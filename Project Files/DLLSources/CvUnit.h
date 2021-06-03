@@ -526,6 +526,8 @@ public:
 	void changeExtraDomesticBonusPercent(int iChange);		
 	int getPillageChange() const;
 	void changePillageChange(int iChange);
+	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
+	void changeAnimalGoldChange(int iChange); //WTP, ray, Animal Promotions increase gold from Animals
 	int getUpgradeDiscount() const;
 	void changeUpgradeDiscount(int iChange);
 	int getExperiencePercent() const;
@@ -817,6 +819,7 @@ protected:
 	int m_iExtraHillsDefensePercent;
 	int m_iExtraDomesticBonusPercent;	
 	int m_iPillageChange;
+	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
 	int m_iUpgradeDiscount;
 	int m_iExperiencePercent;
 	int m_iBaseCombat;

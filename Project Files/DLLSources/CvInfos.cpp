@@ -912,6 +912,7 @@ m_iHillsDefensePercent(0),
 m_iDomesticBonusPercent(0),	
 m_iCommandType(NO_COMMAND),
 m_iPillageChange(0),
+m_iAnimalGoldChange(0), //WTP, ray, Animal Promotions increase gold from Animals
 m_iUpgradeDiscount(0),
 m_iExperiencePercent(0),
 m_bHideFromPedia(false),
@@ -1064,6 +1065,12 @@ int CvPromotionInfo::getPillageChange() const
 {
 	return m_iPillageChange;
 }
+//WTP, ray, Animal Promotions increase gold from Animals - START
+int CvPromotionInfo::getAnimalGoldChange() const
+{
+	return m_iAnimalGoldChange;
+}
+//WTP, ray, Animal Promotions increase gold from Animals -EMD
 int CvPromotionInfo::getUpgradeDiscount() const
 {
 	return m_iUpgradeDiscount;
@@ -1205,6 +1212,7 @@ void CvPromotionInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iDomesticBonusPercent);	
 	stream->Read(&m_iCommandType);
 	stream->Read(&m_iPillageChange);
+	stream->Read(&m_iAnimalGoldChange); //WTP, ray, Animal Promotions increase gold from Animals
 	stream->Read(&m_iUpgradeDiscount);
 	stream->Read(&m_iExperiencePercent);
 
@@ -1282,6 +1290,7 @@ void CvPromotionInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iDomesticBonusPercent);	
 	stream->Write(m_iCommandType);
 	stream->Write(m_iPillageChange);
+	stream->Write(m_iAnimalGoldChange); //WTP, ray, Animal Promotions increase gold from Animals 
 	stream->Write(m_iUpgradeDiscount);
 	stream->Write(m_iExperiencePercent);
 	stream->Write(m_bLeader);
@@ -1344,6 +1353,7 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iHillsDefensePercent, "iHillsDefense");
 	pXML->GetChildXmlValByName(&m_iDomesticBonusPercent, "iDomesticBonus");	
 	pXML->GetChildXmlValByName(&m_iPillageChange, "iPillageChange");
+	pXML->GetChildXmlValByName(&m_iAnimalGoldChange, "iAnimalGoldChange"); //WTP, ray, Animal Promotions increase gold from Animals
 	pXML->GetChildXmlValByName(&m_iUpgradeDiscount, "iUpgradeDiscount");
 	pXML->GetChildXmlValByName(&m_iExperiencePercent, "iExperiencePercent");
 	pXML->SetVariableListTagPair(&m_aiTerrainAttackPercent, "TerrainAttacks", GC.getNumTerrainInfos(), 0);
