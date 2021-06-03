@@ -3808,7 +3808,11 @@ bool CvUnit::shouldLoadOnMove(const CvPlot* pPlot) const
 
 	if (m_pUnitInfo->getTerrainImpassable(pPlot->getTerrainType()))
 	{
-		return true;
+		//WTP, ray, fix for Transports catching Units on Large River - could happen on Fords and on Ferries
+		if (pPlot->getFeatureType() == NO_FEATURE && pPlot->getImprovementType() == NO_IMPROVEMENT)
+		{
+			return true;
+		}
 	}
 
 	return false;
