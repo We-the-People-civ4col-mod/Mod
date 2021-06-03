@@ -1257,11 +1257,12 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 
 			if (eBuilding != NO_BUILDING)
 			{
-				if (bTrade || !(GC.getBuildingInfo((BuildingTypes)iI).isNeverCapture()))
+				const CvBuildingInfo& kBuilding = GC.getBuildingInfo((BuildingTypes)iI);
+				if (bTrade || !(kBuilding.isNeverCapture()))
 				{
-					if (pNewCity->isValidBuildingLocation(eBuilding))
+					if (pNewCity->isValidBuildingLocation(kBuilding))
 					{
-						if (!bConquest || bRecapture || pNewCity->isHasRealBuilding(eBuilding) || GC.getGameINLINE().getSorenRandNum(100, "Capture Probability") < GC.getBuildingInfo((BuildingTypes)iI).getConquestProbability())
+						if (!bConquest || bRecapture || pNewCity->isHasRealBuilding(eBuilding) || GC.getGameINLINE().getSorenRandNum(100, "Capture Probability") < kBuilding.getConquestProbability())
 						{
 							bSetHasBuilding = true;
 						}

@@ -1675,7 +1675,7 @@ bool CvCity::canConstruct(BuildingTypes eBuilding, bool bContinue, bool bTestVis
 		return false;
 	}
 
-	if (!isValidBuildingLocation(eBuilding))
+	if (!isValidBuildingLocation(kBuilding))
 	{
 		return false;
 	}
@@ -7834,14 +7834,14 @@ bool CvCity::getCityBillboardBottomBarValues(float& fStored, float& fRate, float
 	return true;
 }
 
-bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
+bool CvCity::isValidBuildingLocation(const CvBuildingInfo& kBuilding) const
 {
 	// if both the river and water flags are set, we require one of the two conditions, not both
-	if (GC.getBuildingInfo(eBuilding).isWater())
+	if (kBuilding.isWater())
 	{
-		if (!GC.getBuildingInfo(eBuilding).isRiver() || !plot()->isRiver())
+		if (!kBuilding.isRiver() || !plot()->isRiver())
 		{
-			if (!isCoastal(GC.getBuildingInfo(eBuilding).getMinAreaSize()))
+			if (!isCoastal(kBuilding.getMinAreaSize()))
 			{
 				return false;
 			}
@@ -7849,15 +7849,16 @@ bool CvCity::isValidBuildingLocation(BuildingTypes eBuilding) const
 	}
 	else
 	{
-		if (area()->getNumTiles() < GC.getBuildingInfo(eBuilding).getMinAreaSize())
+		if (area()->getNumTiles() < kBuilding.getMinAreaSize())
 		{
 			return false;
 		}
 
-		if (GC.getBuildingInfo(eBuilding).isRiver())
+		if (kBuilding.isRiver())
 		{
 			// WTP, fix for bRiver not considering Large Rivers
-			if (!(plot()->isRiver()) && !(plot()->getTerrainType() == TERRAIN_LARGE_RIVERS))
+			// updated to use the newly added hasNearbyPlotWith - Nightinggale
+			if (!(plot()->isRiver()) && !(plot()->hasNearbyPlotWith(TERRAIN_LARGE_RIVERS)))
 			{
 				return false;
 			}

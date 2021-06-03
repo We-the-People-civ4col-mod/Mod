@@ -433,7 +433,7 @@ public:
 	bool isHasRealBuilding(BuildingTypes eIndex) const;
 	void setHasRealBuilding(BuildingTypes eIndex, bool bNewValue);
 	void setHasRealBuildingTimed(BuildingTypes eIndex, bool bNewValue, bool bFirst, PlayerTypes eOriginalOwner, int iOriginalTime);
-	bool isValidBuildingLocation(BuildingTypes eIndex) const;
+	bool isValidBuildingLocation(const CvBuildingInfo& kBuilding) const;
 	bool isHasFreeBuilding(BuildingTypes eIndex) const;
 	void setHasFreeBuilding(BuildingTypes eIndex, bool bNewValue);
 	bool isHasConceptualBuilding(BuildingTypes eIndex) const;

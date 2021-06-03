@@ -4436,7 +4436,7 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmpt
 	CvMap& kMap = GC.getMapINLINE();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
-	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, iRange)
 	{
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot != NULL)
@@ -4455,6 +4455,27 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray<T>& kInfo, int iRange, bool bEmpt
 				{
 					return true;
 				}
+			}
+		}
+	}
+	return false;
+}
+
+template <typename T>
+bool CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
+{
+	CvMap& kMap = GC.getMapINLINE();
+	const int iPlotX = getX_INLINE();
+	const int iPlotY = getY_INLINE();
+	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, iRange)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot != NULL)
+		{
+			const T eLoopVal = pLoopPlot->getVariable((T)0);
+			if (eVal == eLoopVal)
+			{
+				return true;
 			}
 		}
 	}
@@ -9822,6 +9843,12 @@ void CvPlot::__template_declaration_func()
 	InfoArray<TerrainTypes> f;
 	hasNearbyPlotWith(f);
 
+	hasNearbyPlotWith(NO_BONUS);
+	hasNearbyPlotWith(NO_FEATURE);
+	hasNearbyPlotWith(NO_IMPROVEMENT);
+	hasNearbyPlotWith(NO_PLOT);
+	hasNearbyPlotWith(NO_ROUTE);
+	hasNearbyPlotWith(NO_TERRAIN);
 }
 
 // setting up cache after loading a game
